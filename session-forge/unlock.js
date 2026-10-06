@@ -2,7 +2,7 @@
    The tools themselves are only in app.bin (AES-GCM). Without the code that file is unreadable. */
 (function () {
   "use strict";
-  var CFG = { salt: "tVM4bXNZ/OV06edBL2BXEQ==", iter: 250000, build: "202610060724-bf6674bc" };
+  var CFG = { salt: "tVM4bXNZ/OV06edBL2BXEQ==", iter: 250000, build: "202610060733-bf6674bc" };
   var LS = "du_session_forge_key_v1";
   var me = document.currentScript, PAGE = me.getAttribute("data-page"), ROOT = me.getAttribute("data-root") || "";
   var $ = function (id) { return document.getElementById(id); };

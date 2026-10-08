@@ -1,4 +1,4 @@
-const CACHE = "planetview-v4";
+const CACHE = "planetview-v8";
 const BASE = new URL("./", self.location).pathname;
 
 function under(suffix) {
@@ -42,7 +42,7 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
   if (event.request.method !== "GET") return;
-  if (url.pathname.startsWith(under("api/")) || url.pathname.startsWith("/__grok/")) return;
+  if (url.pathname.startsWith(under("api/"))) return;
 
   const shell = new URL("./", self.location).href;
 

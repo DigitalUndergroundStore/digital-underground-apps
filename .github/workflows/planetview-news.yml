@@ -1,0 +1,63 @@
+# Copy this file to digital-underground-apps at:
+#   .github/workflows/planetview-news.yml
+#
+# GitHub turns a scheduled workflow off after 60 days without a commit or
+# another event in the repository. A run that finds the same headlines does
+# not commit, so it does not count as activity. If news.json stays unchanged
+# for 60 days, the half-hour schedule stops until someone pushes any commit
+# or starts this workflow by hand (workflow_dispatch). Do not add empty
+# commits just to keep the schedule awake.
+
+name: PlanetView headlines
+
+on:
+  schedule:
+    # About every 30 minutes. GitHub may start a scheduled run late.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: planetview-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # Five fetches at 20s plus the 6/12/24/48s backoff. The job stops if a try hangs.
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch GDELT and write planetview/news.json
+        run: node scripts/update-planetview-news.mjs
+
+      - name: Commit when the headlines changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add planetview/news.json
+          if git diff --cached --quiet; then
+            echo "Headlines unchanged."
+            exit 0
+          fi
+          git commit -m "Update PlanetView headlines"
+          attempt=1
+          while [ "$attempt" -le 3 ]; do
+            if git pull --rebase && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Rebase and push failed (attempt ${attempt})."
+            if [ "$attempt" -eq 3 ]; then
+              exit 1
+            fi
+            sleep $((attempt * 5))
+            attempt=$((attempt + 1))
+          done

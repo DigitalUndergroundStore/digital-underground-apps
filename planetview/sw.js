@@ -1,4 +1,4 @@
-const CACHE = "planetview-v2";
+const CACHE = "planetview-v3";
 const BASE = new URL("./", self.location).pathname;
 
 function under(suffix) {
@@ -10,6 +10,7 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
+  // GitHub Pages serves several apps from one origin. Drop only this app's old caches.
   event.waitUntil(
     caches
       .keys()
@@ -31,6 +32,8 @@ function cacheable(url) {
     path.startsWith(under("geo/")) ||
     path.startsWith(under("moon-sites/")) ||
     path.startsWith(under("icons/")) ||
+    path.startsWith(under("assets/")) ||
+    path.startsWith(under("stories/")) ||
     path === under("manifest.webmanifest")
   );
 }
@@ -47,8 +50,10 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE).then((cache) => cache.put(shell, copy));
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE).then((cache) => cache.put(shell, copy));
+          }
           return response;
         })
         .catch(() => caches.match(shell)),

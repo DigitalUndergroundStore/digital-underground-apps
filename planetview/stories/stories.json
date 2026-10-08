@@ -1,0 +1,175 @@
+[
+  {
+    "id": "mauna-loa",
+    "title": "The Mauna Loa carbon dioxide record",
+    "place": "Mauna Loa Observatory, Hawaii",
+    "lat": 19.5362,
+    "lon": -155.5763,
+    "date": "1958-03-01",
+    "category": "climate",
+    "summary": "Continuous measurements of carbon dioxide in the air have been taken at Mauna Loa since March 1958.",
+    "body": [
+      "The Mauna Loa Observatory sits high on the island of Hawaii. In March 1958 Charles David Keeling began a continuous record of carbon dioxide in the atmosphere there. NOAA’s Global Monitoring Laboratory still keeps that record, known as the Keeling Curve.",
+      "The observatory was chosen because the air at that height is well mixed and far from large cities. The curve is one of the longest direct measurements of a greenhouse gas. This note is dated to the start of the record, not to a single daily reading."
+    ],
+    "sources": [
+      { "title": "NOAA Global Monitoring Laboratory — trends", "url": "https://gml.noaa.gov/ccgg/trends/" },
+      { "title": "NOAA — Mauna Loa Observatory", "url": "https://gml.noaa.gov/obop/mlo/" }
+    ]
+  },
+  {
+    "id": "yellowstone",
+    "title": "Yellowstone becomes a national park",
+    "place": "Yellowstone National Park, United States",
+    "lat": 44.428,
+    "lon": -110.5885,
+    "date": "1872-03-01",
+    "category": "land",
+    "summary": "On 1 March 1872 the United States set aside Yellowstone as a national park.",
+    "body": [
+      "President Ulysses S. Grant signed the Yellowstone National Park Protection Act on 1 March 1872. The law withdrew the land from settlement and set it apart as a public park.",
+      "The park lies on a volcanic plateau. The U.S. Geological Survey’s Yellowstone Volcano Observatory watches the caldera, the geysers, and the earthquakes that come with them."
+    ],
+    "sources": [
+      { "title": "National Park Service — establishment of Yellowstone", "url": "https://www.nps.gov/yell/learn/historyculture/yellowstoneestablishment.htm" },
+      { "title": "USGS — Yellowstone", "url": "https://www.usgs.gov/volcanoes/yellowstone" }
+    ]
+  },
+  {
+    "id": "chernobyl",
+    "title": "The Chernobyl accident",
+    "place": "Chernobyl Nuclear Power Plant, Ukraine",
+    "lat": 51.389,
+    "lon": 30.099,
+    "date": "1986-04-26",
+    "category": "history",
+    "summary": "On 26 April 1986 a reactor at the Chernobyl nuclear power plant was destroyed.",
+    "body": [
+      "In the early hours of 26 April 1986, reactor 4 at the Chernobyl nuclear power plant, north of Kyiv, was destroyed during a safety test. The International Atomic Energy Agency keeps a standing briefing on the accident and on the work that followed.",
+      "A concrete shelter was built over the ruined reactor, and later a larger confinement arch was slid into place. The site is still managed as a nuclear facility, not as an abandoned field."
+    ],
+    "sources": [
+      { "title": "IAEA — Chernobyl", "url": "https://www.iaea.org/newscenter/focus/chernobyl" }
+    ]
+  },
+  {
+    "id": "great-barrier-reef",
+    "title": "The Great Barrier Reef on the World Heritage List",
+    "place": "Great Barrier Reef, Australia",
+    "lat": -18.2871,
+    "lon": 147.6992,
+    "date": "1981",
+    "category": "ocean",
+    "summary": "UNESCO inscribed the Great Barrier Reef on the World Heritage List in 1981.",
+    "body": [
+      "In 1981 UNESCO added the Great Barrier Reef to the World Heritage List. The listed property runs along the Queensland coast and takes in the reef, the islands, and the waters around them.",
+      "The World Heritage entry describes a huge coral system rather than a single reef. Management of the property is shared by Australia and Queensland."
+    ],
+    "sources": [
+      { "title": "UNESCO World Heritage — Great Barrier Reef", "url": "https://whc.unesco.org/en/list/154/" }
+    ]
+  },
+  {
+    "id": "venice-mose",
+    "title": "Venice raises the MOSE barriers",
+    "place": "Venice, Italy",
+    "lat": 45.4371,
+    "lon": 12.3326,
+    "date": "2020-10-03",
+    "category": "engineering",
+    "summary": "On 3 October 2020 the MOSE flood barriers were raised together for the first time and held the lagoon above a high tide.",
+    "body": [
+      "Venice sits in a lagoon that floods when the Adriatic rises. MOSE is a set of mobile barriers at the lagoon inlets. On 3 October 2020 the barriers were raised together in an actual high tide, and the water in the city stayed down while the sea outside rose.",
+      "UNESCO lists Venice and its lagoon as a World Heritage property. The barriers are an engineering response to those floods, not a replacement for the historic city."
+    ],
+    "sources": [
+      { "title": "MOSE Venezia", "url": "https://www.mosevenezia.eu/" },
+      { "title": "UNESCO World Heritage — Venice and its Lagoon", "url": "https://whc.unesco.org/en/list/394/" }
+    ]
+  },
+  {
+    "id": "suez",
+    "title": "The Suez Canal opens",
+    "place": "Suez Canal, Egypt",
+    "lat": 30.585,
+    "lon": 32.265,
+    "date": "1869-11-17",
+    "category": "engineering",
+    "summary": "The Suez Canal opened to navigation on 17 November 1869.",
+    "body": [
+      "The Suez Canal cuts across the Isthmus of Suez and joins the Mediterranean Sea to the Red Sea. It opened to navigation on 17 November 1869.",
+      "The Suez Canal Authority’s history of the waterway dates the opening to that day. Ships no longer had to sail around Africa to pass between Europe and Asia."
+    ],
+    "sources": [
+      { "title": "Suez Canal Authority — canal history", "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalHistory.aspx" }
+    ]
+  },
+  {
+    "id": "serengeti",
+    "title": "Serengeti National Park",
+    "place": "Serengeti National Park, Tanzania",
+    "lat": -2.333,
+    "lon": 34.833,
+    "date": "1981",
+    "category": "land",
+    "summary": "UNESCO inscribed Serengeti National Park on the World Heritage List in 1981.",
+    "body": [
+      "Serengeti National Park covers a stretch of northern Tanzania. UNESCO inscribed it on the World Heritage List in 1981.",
+      "The listing cites the migration of large herds across the plains and the park’s place next to the Ngorongoro Conservation Area and the Maasai Mara. The pin sits on the park, not on a single camp."
+    ],
+    "sources": [
+      { "title": "UNESCO World Heritage — Serengeti National Park", "url": "https://whc.unesco.org/en/list/156/" }
+    ]
+  },
+  {
+    "id": "panama",
+    "title": "The Panama Canal opens",
+    "place": "Panama Canal",
+    "lat": 9.08,
+    "lon": -79.68,
+    "date": "1914-08-15",
+    "category": "engineering",
+    "summary": "The Panama Canal opened to commercial traffic on 15 August 1914.",
+    "body": [
+      "The Panama Canal joins the Atlantic and Pacific Oceans across the Isthmus of Panama. The SS Ancon made the first official transit on 15 August 1914.",
+      "The Panama Canal Authority’s history of the waterway uses that date for the opening. Locks lift ships over the continental divide instead of cutting a sea-level ditch the whole way."
+    ],
+    "sources": [
+      { "title": "Panama Canal Authority — history", "url": "https://pancanal.com/en/history-of-the-panama-canal/" }
+    ]
+  },
+  {
+    "id": "surtsey",
+    "title": "Surtsey rises from the sea",
+    "place": "Surtsey, Iceland",
+    "lat": 63.303,
+    "lon": -20.605,
+    "date": "1963-11-14",
+    "category": "earth",
+    "summary": "A volcanic eruption off Iceland began building the island of Surtsey on 14 November 1963.",
+    "body": [
+      "On 14 November 1963 a submarine eruption south of Iceland broke the surface and began building a new island. The island was named Surtsey.",
+      "UNESCO inscribed Surtsey as a natural World Heritage site in 2008. Access is limited so the new land can be studied as plants and animals arrive on their own."
+    ],
+    "sources": [
+      { "title": "UNESCO World Heritage — Surtsey", "url": "https://whc.unesco.org/en/list/1267/" }
+    ]
+  },
+  {
+    "id": "everest",
+    "title": "A joint height for Mount Everest",
+    "place": "Mount Everest",
+    "lat": 27.9881,
+    "lon": 86.925,
+    "date": "2020-12-08",
+    "category": "earth",
+    "summary": "On 8 December 2020 Nepal and China announced a joint height for Mount Everest of 8,848.86 metres.",
+    "body": [
+      "Mount Everest stands on the border of Nepal and China. On 8 December 2020 the two countries announced a shared survey result: 8,848.86 metres above sea level.",
+      "The figure includes the snow cap. Earlier surveys had differed by a metre or so. The 2020 announcement is the number both governments agreed to publish together."
+    ],
+    "sources": [
+      { "title": "BBC News — Mount Everest height", "url": "https://www.bbc.com/news/world-asia-55218443" }
+    ]
+  }
+]

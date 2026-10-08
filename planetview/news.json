@@ -1,6 +1,13 @@
 {
-  "updated": "2026-10-08T19:43:04.975Z",
+  "updated": "2026-10-08T19:45:19.475Z",
   "articles": [
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/8/man-city-charges-maresca-says-players-focused-on-liverpool-test?traffic_source=rss",
+      "title": "Man City charges: Maresca says players focused on Liverpool test",
+      "seendate": "20261008T191738Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
     {
       "url": "https://www.theguardian.com/us-news/live/2026/oct/08/uss-lincoln-san-diego-donald-trump-republicans-democrats-us-politics-latest-news",
       "title": "USS Lincoln arrives at San Diego base after record-breaking deployment, with families gathered to greet crew – live",
@@ -272,13 +279,6 @@
       "title": "Man City charges: Haaland says Premier League club must ‘stick together’",
       "seendate": "20261008T162152Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/08/ethiopia-drone-attack-against-eritrean-troops-in-tigray",
-      "title": "Ethiopia launches drone attack against Eritrean troops who crossed into Tigray",
-      "seendate": "20261008T161132Z",
-      "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     }
   ]

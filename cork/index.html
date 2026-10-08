@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Cork is an offline 501 darts scoreboard for two players." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0b0c0c" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="referrer" content="origin" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Cork" />
+  <title>Cork 501</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <style>
+    :root {
+      --bg: #0b0c0c;
+      --surf: #151615;
+      --elev: #232423;
+      --fg: #f4f1ea;
+      --mut: #c8c4bc;
+      --faint: #a39f96;
+      --acc: #f3efe6;
+      --accfg: #141413;
+      --line: rgba(244, 241, 234, 0.14);
+      --bad: #f0b2a8;
+      --ok: #9ddec0;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    [hidden] { display: none !important; }
+    html { color-scheme: dark; }
+    html, body { margin: 0; background: var(--bg); color: var(--fg); }
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      font-family: system-ui, "Segoe UI", sans-serif;
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+      padding-bottom: env(safe-area-inset-bottom);
+      overscroll-behavior: none;
+    }
+    body.lock { overflow: hidden; }
+    button, input { font: inherit; color: inherit; border: 0; background: none; }
+    button { cursor: pointer; touch-action: manipulation; }
+    button:disabled { opacity: 0.38; cursor: default; }
+    button:focus-visible, input:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+    input { font-size: 16px; min-width: 0; }
+    ::placeholder { color: var(--faint); }
+    .disp { font-family: "Arial Narrow", Impact, "Franklin Gothic Medium", sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+    .sr {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    .banner, .preview {
+      margin: 10px 12px 0;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #3a221e;
+      color: #f6ddd8;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .preview { margin: 0; background: #3a321c; color: #f3e2b0; grid-column: 1 / -1; }
+    .offline { margin: 0; color: var(--mut); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; grid-column: 1 / -1; }
+    .top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 6px 10px;
+      align-items: center;
+      padding: calc(10px + env(safe-area-inset-top)) 12px 8px;
+    }
+    .brand { min-width: 0; }
+    .meta { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mut); line-height: 1.35; }
+    h1 { margin: 0; font-size: clamp(28px, 7vw, 40px); line-height: 1; }
+    .actions { display: flex; gap: 6px; }
+    .ib {
+      min-height: 44px;
+      padding: 0 12px;
+      border-radius: 10px;
+      background: var(--surf);
+      color: var(--fg);
+    }
+    .board { display: grid; grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .rule { background: var(--line); }
+    .seat { min-width: 0; padding: 10px 8px 12px; }
+    .seat.on { background: var(--elev); box-shadow: inset 0 3px 0 var(--fg); }
+    .seat.busting { background: #2a1816; }
+    .seat.win { background: #132018; }
+    .who { text-align: center; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mut); }
+    .name {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      height: 36px;
+      font-family: "Arial Narrow", Impact, "Franklin Gothic Medium", sans-serif;
+    }
+    .remain { text-align: center; font-size: clamp(52px, 16vw, 92px); line-height: 0.9; margin: 2px 0; font-variant-numeric: tabular-nums; }
+    .seat.busting .remain { color: var(--bad); }
+    .seat.win .remain { color: var(--ok); }
+    .glance { min-height: 1.25em; text-align: center; font-size: 13px; color: var(--mut); padding: 0 4px; }
+    .glance.out { color: var(--fg); }
+    .glance.bogey, .glance.none { color: var(--bad); }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 8px; justify-items: center; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--mut); padding: 4px 4px 0; }
+    .stats b { color: var(--fg); font-weight: 650; font-variant-numeric: tabular-nums; }
+    .visits { max-height: min(22dvh, 150px); overflow: auto; margin-top: 6px; }
+    .visit { display: flex; justify-content: space-between; gap: 8px; padding: 3px 4px; font-size: 14px; color: var(--mut); }
+    .visit b { color: var(--fg); font-weight: 650; font-variant-numeric: tabular-nums; }
+    .visit.empty { justify-content: center; }
+    .pad { padding: 8px 10px calc(12px + env(safe-area-inset-bottom)); }
+    .hint { margin-bottom: 8px; padding: 10px 12px; border-radius: 12px; background: var(--surf); text-align: center; }
+    .hint:empty { display: none; }
+    .hint.out { color: var(--fg); font-size: 22px; font-family: "Arial Narrow", Impact, "Franklin Gothic Medium", sans-serif; }
+    .hint.bogey, .hint.none { color: var(--bad); font-size: 16px; }
+    .turn { display: flex; align-items: center; justify-content: space-between; gap: 8px; background: var(--surf); border-radius: 12px; padding: 8px 12px; margin-bottom: 8px; }
+    .typedwrap { display: flex; align-items: center; gap: 8px; }
+    #typed { font-size: 36px; min-width: 2ch; text-align: right; font-variant-numeric: tabular-nums; }
+    .keys { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+    .key {
+      min-height: 48px;
+      height: 52px;
+      border-radius: 10px;
+      background: var(--elev);
+      font-size: 22px;
+      font-family: "Arial Narrow", Impact, "Franklin Gothic Medium", sans-serif;
+    }
+    .key:active { background: #303230; }
+    .key.go { background: var(--acc); color: var(--accfg); font-size: 18px; }
+    .key.bad { background: #3a2220; color: #f0c2ba; font-size: 16px; font-family: system-ui, "Segoe UI", sans-serif; }
+    .qs { display: grid; grid-template-columns: repeat(auto-fit, minmax(58px, 1fr)); gap: 6px; margin-top: 6px; }
+    .q { min-height: 44px; border-radius: 8px; background: var(--surf); color: var(--mut); font-size: 15px; }
+    .q.hot { color: var(--fg); }
+    .q:active { background: var(--elev); }
+    #result { text-align: center; }
+    #resultTitle { margin: 4px 0; font-size: 32px; }
+    #resultSub { margin: 0 0 12px; color: var(--mut); }
+    .sheet { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.55); z-index: 5; display: flex; align-items: flex-end; justify-content: center; }
+    .card {
+      width: min(560px, 100%);
+      max-height: min(92dvh, 920px);
+      overflow: auto;
+      background: var(--surf);
+      border-radius: 20px 20px 0 0;
+      padding: 16px 16px calc(16px + env(safe-area-inset-bottom));
+    }
+    @media (min-width: 700px) {
+      .sheet { align-items: center; }
+      .card { border-radius: 20px; margin: 16px; }
+    }
+    .card h2 { margin: 0 0 8px; font-size: 28px; }
+    .row { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 14px; }
+    .chip { min-height: 40px; padding: 0 14px; border-radius: 999px; background: var(--elev); color: var(--mut); }
+    .chip.on { background: var(--acc); color: var(--accfg); }
+    .names { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+    .names label, .gate label { display: block; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mut); margin-bottom: 4px; }
+    .names input, .gate input {
+      width: 100%;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--elev);
+      padding: 0 12px;
+    }
+    .primary, .secondary { width: 100%; min-height: 52px; border-radius: 12px; font-size: 20px; }
+    .primary { background: var(--acc); color: var(--accfg); margin-top: 4px; position: sticky; bottom: 0; z-index: 1; }
+    .secondary { background: var(--elev); color: var(--fg); margin-top: 8px; }
+    .fine { color: var(--mut); font-size: 14px; line-height: 1.4; }
+    .statname { margin: 8px 0 6px; font-size: 22px; }
+    .statgrid { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; margin: 0 0 12px; }
+    .statgrid dt { color: var(--mut); }
+    .statgrid dd { margin: 0; font-variant-numeric: tabular-nums; }
+    .gate {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+    .gatecard { width: min(440px, 100%); }
+    .gate h1 { font-size: 56px; margin: 4px 0 12px; }
+    .gate input { font-size: 18px; letter-spacing: 0.04em; height: 56px; }
+    #gateMsg { min-height: 1.4em; color: var(--bad); }
+    .toast {
+      position: fixed;
+      left: 50%;
+      top: 18%;
+      transform: translateX(-50%);
+      display: none;
+      background: var(--acc);
+      color: var(--accfg);
+      padding: 10px 18px;
+      border-radius: 999px;
+      z-index: 9;
+      font-size: 22px;
+    }
+    .toast.on { display: block; }
+    .toast.bad { background: #8a3b32; color: #fff7f5; }
+    @media (min-height: 760px) {
+      .key { height: 64px; }
+      .visits { max-height: 180px; }
+    }
+    @media (min-width: 900px) and (min-height: 560px) {
+      body:not(.table) #app {
+        min-height: 100dvh;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(300px, 460px) minmax(0, 1fr);
+        grid-template-rows: auto minmax(0, 1fr);
+        grid-template-areas: "head head head" "p1 pad p2";
+      }
+      body:not(.table) .top { grid-area: head; }
+      body:not(.table) .board { display: contents; }
+      body:not(.table) #seat0 { grid-area: p1; }
+      body:not(.table) #seat1 { grid-area: p2; }
+      body:not(.table) .pad { grid-area: pad; align-self: center; }
+      body:not(.table) .rule { display: none; }
+      body:not(.table) .remain { font-size: clamp(72px, 8vw, 120px); }
+      body:not(.table) .seat { padding: 24px 18px; }
+    }
+    @media (orientation: landscape) and (max-height: 540px) {
+      body:not(.table) #app {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr);
+        grid-template-rows: auto minmax(0, 1fr);
+        grid-template-areas: "head head" "board pad";
+        min-height: 100dvh;
+      }
+      body:not(.table) .top { grid-area: head; }
+      body:not(.table) .board { grid-area: board; align-self: stretch; }
+      body:not(.table) .pad { grid-area: pad; align-self: end; }
+      body:not(.table) .key { height: 44px; }
+      body:not(.table) .visits { max-height: 16dvh; }
+    }
+    body.table #app {
+      min-height: 100dvh;
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto auto minmax(0, 1fr);
+      grid-template-areas: "far" "head" "pad" "near";
+    }
+    body.table .board { display: contents; }
+    body.table #seat0 {
+      grid-area: far;
+      transform: rotate(180deg);
+      padding-bottom: calc(12px + env(safe-area-inset-top));
+    }
+    body.table .top { grid-area: head; }
+    body.table .pad { grid-area: pad; }
+    body.table #seat1 { grid-area: near; }
+    body.table .rule { display: none; }
+    body.table .remain { font-size: clamp(44px, 12vw, 72px); }
+    body.table .visits { max-height: 16dvh; }
+    @media (prefers-reduced-motion: reduce) {
+      .toast { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div id="warn" class="banner" role="alert">
+    If this page stays blank, the browser blocked it. Open the Cork link from your receipt in Safari, Firefox, or Chrome. A downloaded file should be opened in Firefox or Safari, not Chrome's download viewer.
+  </div>
+  <div id="live" class="sr" aria-live="polite"></div>
+
+  <div id="gate" class="gate" hidden>
+    <div class="gatecard">
+      <p class="meta">Two-player darts</p>
+      <h1 class="disp">Cork</h1>
+      <p id="gateLoading">Opening Cork…</p>
+      <form id="gateForm" hidden>
+        <p>Enter the license key from your Gumroad receipt.</p>
+        <label for="licenseKey">License key</label>
+        <input id="licenseKey" name="license" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="done" inputmode="text" />
+        <button class="primary disp" type="submit" id="unlockBtn">Unlock</button>
+        <p id="gateMsg" role="alert"></p>
+        <p class="fine">Cork checks the key once with Gumroad. After that, this device works with no wifi, including from your home screen.</p>
+      </form>
+    </div>
+  </div>
+
+  <div id="app" hidden>
+    <header class="top">
+      <div class="brand">
+        <div class="meta" id="meta">501 · Double out · Leg 1</div>
+        <h1 class="disp">Cork</h1>
+      </div>
+      <div class="actions">
+        <button class="ib" type="button" id="undoBtn">Undo</button>
+        <button class="ib" type="button" id="menuBtn" aria-expanded="false" aria-controls="sheet">Menu</button>
+      </div>
+      <p id="preview" class="preview" hidden>Not for sale yet — the Gumroad product id in config.js is still the placeholder.</p>
+      <p id="offline" class="offline" hidden>Offline · saved on this device</p>
+    </header>
+
+    <div class="board">
+      <section class="seat on" id="seat0" aria-labelledby="who0">
+        <div class="who" id="who0">Left · to throw</div>
+        <label class="sr" for="name0">Left player name</label>
+        <input class="name" id="name0" maxlength="18" placeholder="Left" autocomplete="nickname" enterkeyhint="done" />
+        <div class="disp remain" id="rem0">501</div>
+        <div class="glance" id="glance0"></div>
+        <div class="stats">
+          <span>Avg <b id="avg0">—</b></span>
+          <span>Legs <b id="legs0">0</b></span>
+          <span>180s <b id="t1800">0</b></span>
+          <span>Last <b id="last0">—</b></span>
+        </div>
+        <div class="visits" id="log0"></div>
+      </section>
+      <div class="rule"></div>
+      <section class="seat" id="seat1" aria-labelledby="who1">
+        <div class="who" id="who1">Right</div>
+        <label class="sr" for="name1">Right player name</label>
+        <input class="name" id="name1" maxlength="18" placeholder="Right" autocomplete="nickname" enterkeyhint="done" />
+        <div class="disp remain" id="rem1">501</div>
+        <div class="glance" id="glance1"></div>
+        <div class="stats">
+          <span>Avg <b id="avg1">—</b></span>
+          <span>Legs <b id="legs1">0</b></span>
+          <span>180s <b id="t1801">0</b></span>
+          <span>Last <b id="last1">—</b></span>
+        </div>
+        <div class="visits" id="log1"></div>
+      </section>
+    </div>
+
+    <div class="pad">
+      <div id="hint" class="hint" role="status"></div>
+      <div id="entry">
+        <div class="turn">
+          <div>
+            <div class="meta" id="turnLbl">They scored</div>
+            <div class="disp" id="turnName">Left</div>
+          </div>
+          <div class="typedwrap">
+            <div class="disp" id="typed">0</div>
+            <button class="ib" type="button" id="clearBtn">Clear</button>
+          </div>
+        </div>
+        <div class="keys">
+          <button class="key" type="button" data-k="1">1</button>
+          <button class="key" type="button" data-k="2">2</button>
+          <button class="key" type="button" data-k="3">3</button>
+          <button class="key" type="button" data-k="4">4</button>
+          <button class="key" type="button" data-k="5">5</button>
+          <button class="key" type="button" data-k="6">6</button>
+          <button class="key" type="button" data-k="7">7</button>
+          <button class="key" type="button" data-k="8">8</button>
+          <button class="key" type="button" data-k="9">9</button>
+          <button class="key bad" type="button" id="bustBtn" aria-label="Bust this visit">Bust</button>
+          <button class="key" type="button" data-k="0">0</button>
+          <button class="key go" type="button" data-k="GO">Score it</button>
+        </div>
+        <div class="qs">
+          <button class="q" type="button" data-q="0">Miss</button>
+          <button class="q" type="button" data-q="26">26</button>
+          <button class="q" type="button" data-q="41">41</button>
+          <button class="q" type="button" data-q="45">45</button>
+          <button class="q" type="button" data-q="60">60</button>
+          <button class="q" type="button" data-q="81">81</button>
+          <button class="q" type="button" data-q="100">100</button>
+          <button class="q" type="button" data-q="140">140</button>
+          <button class="q hot" type="button" data-q="180">180</button>
+        </div>
+      </div>
+      <div id="result" hidden>
+        <h2 class="disp" id="resultTitle"></h2>
+        <p id="resultSub"></p>
+        <div class="meta" id="dartsLabel">Darts used</div>
+        <div class="row" id="dartsRow" role="group" aria-label="Darts used in the checkout">
+          <button class="chip" type="button" data-darts="1">1</button>
+          <button class="chip" type="button" data-darts="2">2</button>
+          <button class="chip" type="button" data-darts="3">3</button>
+        </div>
+        <button class="primary disp" type="button" id="nextLeg">Next leg</button>
+        <button class="secondary" type="button" id="resultNew">New match</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet" id="sheet" hidden>
+    <div class="card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+      <h2 class="disp" id="sheetTitle" tabindex="-1">Match</h2>
+      <div class="row" id="paneRow" role="group" aria-label="Menu section">
+        <button class="chip on" type="button" data-pane="setup">Setup</button>
+        <button class="chip" type="button" data-pane="stats">Stats</button>
+      </div>
+      <div id="setupPane">
+        <p class="fine" id="welcome">Names and the match stay on this device. No account, and no wifi after you have opened Cork once.</p>
+        <div class="names">
+          <div>
+            <label for="setName0">Left</label>
+            <input id="setName0" maxlength="18" placeholder="Left" autocomplete="nickname" enterkeyhint="next" />
+          </div>
+          <div>
+            <label for="setName1">Right</label>
+            <input id="setName1" maxlength="18" placeholder="Right" autocomplete="nickname" enterkeyhint="done" />
+          </div>
+        </div>
+        <div class="meta">Start score</div>
+        <div class="row" id="scoreRow" role="group" aria-label="Start score">
+          <button class="chip" type="button" data-s="301">301</button>
+          <button class="chip on" type="button" data-s="501">501</button>
+          <button class="chip" type="button" data-s="701">701</button>
+        </div>
+        <div class="meta">Finish</div>
+        <div class="row" id="outRow" role="group" aria-label="Finish rule">
+          <button class="chip on" type="button" data-o="1">Double out</button>
+          <button class="chip" type="button" data-o="0">Straight out</button>
+        </div>
+        <div class="meta">First to</div>
+        <div class="row" id="raceRow" role="group" aria-label="Match length">
+          <button class="chip" type="button" data-f="1">1 leg</button>
+          <button class="chip" type="button" data-f="2">2</button>
+          <button class="chip on" type="button" data-f="3">3</button>
+          <button class="chip" type="button" data-f="5">5</button>
+          <button class="chip" type="button" data-f="0">Open</button>
+        </div>
+        <div class="meta">Who throws first</div>
+        <div class="row" id="startRow" role="group" aria-label="Who throws first">
+          <button class="chip on" type="button" data-w="0">Left</button>
+          <button class="chip" type="button" data-w="1">Right</button>
+        </div>
+        <button class="primary disp" type="button" id="fresh">Start match</button>
+      </div>
+      <div id="statsPane" hidden>
+        <div id="statsBody"></div>
+      </div>
+      <div class="meta">On the table</div>
+      <div class="row">
+        <button class="chip" type="button" id="tableBtn" aria-pressed="false">Table flip</button>
+        <button class="chip" type="button" id="soundBtn" aria-pressed="false">Sounds</button>
+        <button class="chip" type="button" id="installBtn" hidden>Install</button>
+      </div>
+      <p class="fine" id="tableNote">Table flip turns the left player around, for a phone or tablet lying between you.</p>
+      <p class="fine" id="iosHint" hidden></p>
+      <p class="fine" id="licenseLine"></p>
+      <button class="secondary" type="button" id="closeSheet">Close</button>
+    </div>
+  </div>
+  <div class="toast disp" id="toast" role="status"></div>
+
+  <script src="config.js"></script>
+  <script src="scoring.js"></script>
+  <script src="checkouts.js"></script>
+  <script src="license.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

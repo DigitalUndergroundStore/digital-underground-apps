@@ -2,7 +2,7 @@
    The tool itself is only in app.bin (AES-GCM). Without the code that file is unreadable. */
 (function () {
   "use strict";
-  var CFG = { salt: "vKByLwoJgi1e3nPtR9205Q==", iter: 250000, build: "202610072058-64fc04e5" };
+  var CFG = { salt: "vKByLwoJgi1e3nPtR9205Q==", iter: 250000, build: "202610072232-e29fe0a9" };
   var LS = "du_hook_bank_key_v1";
   var me = document.currentScript, PAGE = me.getAttribute("data-page"), ROOT = me.getAttribute("data-root") || "";
   var $ = function (id) { return document.getElementById(id); };

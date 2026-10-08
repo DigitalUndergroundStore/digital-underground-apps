@@ -6,7 +6,7 @@ Phone versions of Digital Underground tools, served by GitHub Pages.
 - `due-desk/`: Due Desk v1.1 (assignment tracker).
 - `exam-desk/`: Exam Desk v1.1 (finals study toolkit).
 - `focus-gate/`: Focus Gate v1.1 (deep-work focus timer).
-- `hook-bank/`: Hook Bank v1.1 (social hook generator).
+- `hook-bank/`: Hook Bank v3.1 (social hook generator).
 - `invoice-desk/`: Invoice Desk v1.1 (invoice builder).
 - `launch-ledger/`: Launch Ledger v1.1 (money OS for solo operators).
 - `offer-desk/`: Offer Desk v1.1 (one-page offer builder).
@@ -18,6 +18,7 @@ Phone versions of Digital Underground tools, served by GitHub Pages.
 - `scope-lock/`: Scope Lock v1.1 (client brief generator).
 - `streak-kit/`: Streak Kit v1.1 (habit tracker).
 - `cork/`: maintained separately (not built by these scripts).
+- `planetview/`: maintained separately (not built by these scripts).
 
 Every app folder works the same way as `session-forge/`: the tool is only inside the encrypted `app.bin`, each product has its own buyer code (shipped in that product's "On your phone" PDF), and the HTML files are unlock screens.
 

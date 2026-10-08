@@ -2,7 +2,7 @@
    The tool itself is only in app.bin (AES-GCM). Without the code that file is unreadable. */
 (function () {
   "use strict";
-  var CFG = { salt: "Ty1H5kMWo1b0pfQScZKZSQ==", iter: 250000, build: "202610072343-304d5cc1" };
+  var CFG = { salt: "Ty1H5kMWo1b0pfQScZKZSQ==", iter: 250000, build: "202610080043-c80fdeb0" };
   var LS = "du_pantry_week_key_v1";
   var me = document.currentScript, PAGE = me.getAttribute("data-page"), ROOT = me.getAttribute("data-root") || "";
   var $ = function (id) { return document.getElementById(id); };
@@ -65,4 +65,5 @@
       store(LS, null); showForm("Please enter your buyer code again.");
     });
   } else { getBin().catch(function () {}); showForm(""); }
+  window.addEventListener("hashchange", function () { if (/code=/.test(location.hash)) location.reload(); });
 })();

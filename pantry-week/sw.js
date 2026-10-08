@@ -1,6 +1,6 @@
 /* Pantry Week offline cache. Only encrypted/app-shell files are cached; nothing here can read the tool. */
-var CACHE = "pantry-week-202610072343-304d5cc1";
-var FILES = ["index.html", "print/week.html", "unlock.js?v=202610072343-304d5cc1", "app.bin?v=202610072343-304d5cc1", "manifest.webmanifest", "icons/icon-180.png", "icons/icon-192.png", "icons/icon-512.png"];
+var CACHE = "pantry-week-202610080043-c80fdeb0";
+var FILES = ["index.html", "print/week.html", "unlock.js?v=202610080043-c80fdeb0", "app.bin?v=202610080043-c80fdeb0", "manifest.webmanifest", "icons/icon-180.png", "icons/icon-192.png", "icons/icon-512.png"];
 self.addEventListener("install", function (e) { e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FILES); }).then(function () { return self.skipWaiting(); })); });
 self.addEventListener("activate", function (e) { e.waitUntil(caches.keys().then(function (ks) { return Promise.all(ks.filter(function (k) { return k.indexOf("pantry-week-") === 0 && k !== CACHE; }).map(function (k) { return caches.delete(k); })); }).then(function () { return self.clients.claim(); })); });
 self.addEventListener("fetch", function (e) {

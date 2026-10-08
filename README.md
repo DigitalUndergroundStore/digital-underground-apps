@@ -11,7 +11,7 @@ Phone versions of Digital Underground tools, served by GitHub Pages.
 - `launch-ledger/`: Launch Ledger v1.1 (money OS for solo operators).
 - `offer-desk/`: Offer Desk v1.1 (one-page offer builder).
 - `packlane/`: Packlane v1.1 (travel packing lists).
-- `pantry-week/`: Pantry Week v1.1 (meal planner + shopping list).
+- `pantry-week/`: Pantry Week v2.0.1 (meal planner + shopping list).
 - `promo-lane/`: Promo Lane v1.1 (promo starter kit).
 - `rate-wire/`: Rate Wire v1.1 (freelance rate calculator).
 - `reply-forge/`: Reply Forge v1.1 (customer reply builder).

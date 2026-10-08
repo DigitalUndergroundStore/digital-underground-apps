@@ -1,6 +1,6 @@
 /* Cork's offline shell. Only this folder is cached, so a /cork/ install
    does not handle the rest of the site. Gumroad is never intercepted. */
-var CACHE = "cork-shell-v2";
+var CACHE = "cork-shell-v3";
 var SHELL = [
   "index.html",
   "Cork.html",

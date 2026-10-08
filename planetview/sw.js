@@ -1,4 +1,4 @@
-const CACHE = "planetview-v9";
+const CACHE = "planetview-v10-1";
 const BASE = new URL("./", self.location).pathname;
 
 function under(suffix) {

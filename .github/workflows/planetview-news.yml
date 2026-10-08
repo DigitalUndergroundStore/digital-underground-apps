@@ -12,8 +12,9 @@ name: PlanetView headlines
 
 on:
   schedule:
-    # About every 30 minutes. GitHub may start a scheduled run late.
-    - cron: "*/30 * * * *"
+    # Every 30 minutes, offset from :00 and :30. GitHub drops fewer of these
+    # than a top-of-the-hour cron, and may still start a run late.
+    - cron: "7,37 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,7 +27,8 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    # Five fetches at 20s plus the 6/12/24/48s backoff. The job stops if a try hangs.
+    # One GDELT query, spaced retries, then up to three RSS feeds.
+    # Each request aborts after 20s. The job stops if a try hangs.
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +37,7 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Fetch GDELT and write planetview/news.json
+      - name: Fetch headlines and write planetview/news.json
         run: node scripts/update-planetview-news.mjs
 
       - name: Commit when the headlines changed

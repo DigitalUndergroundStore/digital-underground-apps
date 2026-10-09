@@ -105,33 +105,33 @@
     from { transform: translate3d(0, 0, 0) scale(1); }
     to { transform: translate3d(22px, -16px, 0) scale(1.1); }
   }
-  .hero-copy { position: relative; z-index: 2; max-width: 40rem; }
-  .logo { width: 48px; height: auto; display: block; filter: drop-shadow(0 0 18px rgba(139, 92, 246, .55)); }
-  .hero-top {
-    display: flex; flex-wrap: wrap; align-items: center;
-    gap: 6px 8px; margin-top: 10px;
+  .hero-copy {
+    position: relative; z-index: 2; max-width: 40rem;
+    display: flex; flex-direction: column; align-items: flex-start;
   }
   .eyebrow {
-    margin: 0;
+    margin: 0 0 8px;
     font-size: 12px; font-weight: 700; letter-spacing: .16em;
     text-transform: uppercase; color: var(--cyan);
   }
   .trust--hero {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 5px;
-    list-style: none; margin: 0; padding: 0; flex: 1 1 12rem;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;
+    gap: 4px; width: 100%; max-width: 100%;
+    list-style: none; margin: 0 0 12px; padding: 0;
   }
   .trust--hero li {
-    min-height: 28px; display: inline-flex; align-items: center; gap: 5px;
-    padding: 0 8px; border-radius: 999px;
+    min-height: 22px; display: inline-flex; align-items: center; gap: 3px;
+    padding: 0 6px; border-radius: 999px;
     background: rgba(255, 255, 255, .06);
     border: 1px solid rgba(255, 255, 255, .12);
-    font-size: 11px; font-weight: 650; line-height: 1;
+    font-size: 10px; font-weight: 650; line-height: 1.15;
     backdrop-filter: blur(10px);
     white-space: nowrap;
+    flex: 0 1 auto;
   }
-  .trust--hero svg { width: 13px; height: 13px; color: var(--cyan); flex: 0 0 auto; }
+  .trust--hero svg { width: 11px; height: 11px; color: var(--cyan); flex: 0 0 auto; }
   h1 {
-    margin: 4px 0 0;
+    margin: 0;
     font-size: clamp(36px, 9vw, 68px);
     line-height: .98; letter-spacing: -.045em; font-weight: 700;
     text-wrap: balance;
@@ -351,12 +351,11 @@
     .hero-scrim {
       background: linear-gradient(90deg, rgba(7, 6, 15, .86) 0%, rgba(7, 6, 15, .64) 38%, rgba(7, 6, 15, .24) 100%);
     }
-    .logo { width: 68px; }
     h1 { font-size: 64px; }
     .tagline { font-size: 20px; margin-top: 14px; }
-    .hero-top { margin-top: 14px; gap: 10px 12px; }
-    .trust--hero li { min-height: 32px; padding: 0 10px; font-size: 12px; gap: 6px; }
-    .trust--hero svg { width: 14px; height: 14px; }
+    .trust--hero { margin-bottom: 14px; gap: 6px; }
+    .trust--hero li { min-height: 28px; padding: 0 10px; font-size: 12px; gap: 5px; }
+    .trust--hero svg { width: 13px; height: 13px; }
     .trust { margin-top: 20px; gap: 8px; }
     .trust li { min-height: 44px; padding: 0 14px; font-size: 14px; }
     .section-head { margin: 40px 0 16px; }
@@ -409,15 +408,12 @@
       <span class="orb orb-c"></span>
     </div>
     <div class="hero-copy">
-      <img class="logo" src="logo.png" width="351" height="284" alt="">
-      <div class="hero-top">
-        <p class="eyebrow">The store</p>
-        <ul class="trust trust--hero" aria-label="Store benefits">
-          <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5 6.2 11.5 13 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pay once</li>
-          <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v7M5 7.5 8 10.5 11 7.5M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Instant download</li>
-          <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Secure checkout</li>
-        </ul>
-      </div>
+      <ul class="trust trust--hero" aria-label="Store benefits">
+        <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5 6.2 11.5 13 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pay once</li>
+        <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v7M5 7.5 8 10.5 11 7.5M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Instant download</li>
+        <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Secure checkout</li>
+      </ul>
+      <p class="eyebrow">The store</p>
       <h1>Digital Underground</h1>
       <p class="tagline">Digital products designed around you: apps, guides &amp; AI tools. Pay once.</p>
     </div>

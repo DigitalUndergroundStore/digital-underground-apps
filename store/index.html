@@ -22,6 +22,15 @@
 <meta name="twitter:image" content="https://digitalundergroundstore.com/store/og.jpg">
 <meta name="twitter:image:alt" content="Digital Underground. Digital products designed around you: apps, guides and AI tools. Pay once.">
 <meta name="theme-color" content="#05040c">
+<script>
+(function () {
+  try {
+    if (sessionStorage.getItem("du-store-hero-panel") === "minimized") {
+      document.documentElement.classList.add("store-hero-panel-min");
+    }
+  } catch (e) {}
+})();
+</script>
 <style>
   :root {
     color-scheme: dark;
@@ -83,7 +92,60 @@
     width: min(100%, 28rem);
     background:
       linear-gradient(165deg, rgba(7, 6, 15, .94) 0%, rgba(7, 6, 15, .78) 38%, rgba(7, 6, 15, .35) 72%, transparent 100%);
+    transition: opacity .42s cubic-bezier(.4, 0, .2, 1), visibility .42s;
   }
+  .hero.is-panel-minimized .hero-text-backdrop,
+  html.store-hero-panel-min .hero-text-backdrop {
+    opacity: 0; visibility: hidden;
+  }
+  .hero-panel {
+    position: relative; z-index: 2;
+    width: min(100%, 22.5rem);
+    max-width: 82vw;
+    transition: opacity .42s cubic-bezier(.4, 0, .2, 1),
+      transform .42s cubic-bezier(.4, 0, .2, 1),
+      visibility .42s;
+  }
+  .hero.is-panel-minimized .hero-panel,
+  html.store-hero-panel-min .hero-panel {
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transform: translateY(-10px) scale(0.96);
+  }
+  .hero-panel-minimize {
+    position: absolute; top: 4px; right: 4px; z-index: 5;
+    width: 36px; height: 36px; padding: 0;
+    display: grid; place-items: center;
+    border-radius: 999px; border: 1px solid rgba(255, 255, 255, .22);
+    background: rgba(6, 4, 14, .75); color: #fff;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+  }
+  .hero-panel-minimize svg { width: 18px; height: 18px; display: block; }
+  .hero-panel-minimize:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+  .hero-panel-fab {
+    position: absolute; top: 16px; left: 16px; z-index: 4;
+    width: 52px; height: 52px; padding: 7px;
+    display: grid; place-items: center;
+    border-radius: 999px; border: 1px solid rgba(255, 255, 255, .22);
+    background: rgba(6, 4, 14, .72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    cursor: pointer;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .4);
+    opacity: 0; transform: scale(0.55);
+    pointer-events: none;
+    transition: opacity .42s cubic-bezier(.4, 0, .2, 1),
+      transform .42s cubic-bezier(.34, 1.2, .64, 1);
+  }
+  .hero-panel-fab img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .hero-panel-fab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .hero.is-panel-minimized .hero-panel-fab,
+  html.store-hero-panel-min .hero-panel-fab {
+    opacity: 1; transform: scale(1); pointer-events: auto;
+  }
+  .hero-panel-minimize[hidden] { display: none !important; }
   .aurora { position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .45; }
   .hero:has(.hero-film.is-playing) .aurora { opacity: 0; }
   .orb {
@@ -111,10 +173,11 @@
     to { transform: translate3d(22px, -16px, 0) scale(1.1); }
   }
   .hero-copy {
-    position: relative; z-index: 2;
-    width: min(100%, 22.5rem);
-    max-width: 82vw;
+    position: relative; z-index: 1;
+    width: 100%;
     display: flex; flex-direction: column; align-items: flex-start;
+    padding-top: 4px;
+    padding-right: 28px;
   }
   .hero-copy::before {
     content: "";
@@ -421,10 +484,11 @@
       width: min(58%, 36rem);
       background: linear-gradient(100deg, rgba(7, 6, 15, .92) 0%, rgba(7, 6, 15, .7) 42%, rgba(7, 6, 15, .22) 78%, transparent 100%);
     }
-    .hero-copy {
+    .hero-panel {
       width: min(38%, 28rem);
       max-width: none;
     }
+    .hero-panel-fab { top: 24px; left: 24px; width: 56px; height: 56px; }
     h1 { font-size: 64px; }
     .hero-copy::before { inset: -22px -32px -22px -24px; border-radius: 24px; }
     .hero-actions { margin-top: 22px; gap: 12px 18px; }
@@ -464,6 +528,7 @@
   }
   @media (prefers-reduced-motion: reduce) {
     .hero-film.is-playing { filter: none; }
+    .hero-panel, .hero-text-backdrop, .hero-panel-fab { transition: none !important; }
     .orb, .card, .shot, .cta { animation: none !important; transition: none !important; }
     .card:hover, .card:active { transform: none; }
     .card:hover .shot { transform: none; }
@@ -489,7 +554,14 @@
       <span class="orb orb-c"></span>
     </div>
     <div class="hero-text-backdrop" aria-hidden="true"></div>
-    <div class="hero-copy">
+    <button type="button" class="hero-panel-fab" aria-label="Show store info" aria-hidden="true" tabindex="-1">
+      <img src="logo.png" width="351" height="284" alt="">
+    </button>
+    <div class="hero-panel">
+      <button type="button" class="hero-panel-minimize" aria-label="Minimize">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4v4H4M16 20v-4h4M20 8h-4V4M4 16h4v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="hero-copy">
       <div class="hero-lead">
         <p class="eyebrow">The store</p>
         <ul class="trust--hero" aria-label="Pay once, instant download, secure checkout">
@@ -503,6 +575,7 @@
       <div class="hero-actions">
         <a class="hero-cta" href="#store-sections">Browse the store</a>
         <a class="hero-cta-secondary" href="#featured">Bestsellers</a>
+      </div>
       </div>
     </div>
     <button type="button" class="hero-sound" aria-label="Sound off" aria-pressed="false" hidden>
@@ -1171,6 +1244,38 @@
   </footer>
 </div>
 <script>
+(function () {
+  var PANEL_KEY = "du-store-hero-panel";
+  var heroHeader = document.querySelector("header.hero");
+  var panelMin = document.querySelector(".hero-panel-minimize");
+  var panelFab = document.querySelector(".hero-panel-fab");
+  function setHeroPanelMinimized(minimized) {
+    if (!heroHeader) return;
+    var on = !!minimized;
+    heroHeader.classList.toggle("is-panel-minimized", on);
+    if (panelFab) {
+      panelFab.setAttribute("aria-hidden", on ? "false" : "true");
+      panelFab.tabIndex = on ? 0 : -1;
+    }
+    if (panelMin) {
+      panelMin.hidden = on;
+      panelMin.setAttribute("aria-hidden", on ? "true" : "false");
+    }
+    try {
+      sessionStorage.setItem(PANEL_KEY, on ? "minimized" : "expanded");
+    } catch (e) {}
+  }
+  if (heroHeader && panelMin && panelFab) {
+    var startMin = document.documentElement.classList.contains("store-hero-panel-min");
+    try {
+      startMin = sessionStorage.getItem(PANEL_KEY) === "minimized";
+    } catch (e) {}
+    setHeroPanelMinimized(startMin);
+    document.documentElement.classList.remove("store-hero-panel-min");
+    panelMin.addEventListener("click", function () { setHeroPanelMinimized(true); });
+    panelFab.addEventListener("click", function () { setHeroPanelMinimized(false); });
+  }
+})();
 (function () {
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var hero = document.querySelector("video.hero-film");

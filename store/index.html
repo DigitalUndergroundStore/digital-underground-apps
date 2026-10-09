@@ -1070,6 +1070,7 @@
     if (!current || current.indexOf(next) === -1) {
       hero.poster = wideQ.matches ? "media/hero-169.jpg" : "media/hero-916.jpg";
       hero.src = next;
+      hero.load();
     }
     var start = function () {
       var pending = hero.play();

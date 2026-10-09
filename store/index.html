@@ -136,14 +136,22 @@
     -webkit-backdrop-filter: blur(14px);
     cursor: pointer;
     box-shadow: 0 10px 28px rgba(0, 0, 0, .4), inset 0 0 0 1px rgba(255, 255, 255, .06);
-    background-image: url("logo-chip.png");
-    background-repeat: no-repeat;
-    background-size: 88%;
-    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
     opacity: 0; transform: scale(0.55);
     pointer-events: none;
     transition: opacity .42s cubic-bezier(.4, 0, .2, 1),
       transform .42s cubic-bezier(.34, 1.2, .64, 1);
+  }
+  .hero-panel-fab img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    pointer-events: none;
   }
   .hero-panel-fab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
   .hero.is-panel-minimized .hero-panel-fab,
@@ -560,7 +568,7 @@
     </div>
     <div class="hero-text-backdrop" aria-hidden="true"></div>
     <button type="button" class="hero-panel-fab" aria-label="Show store info" aria-hidden="true" tabindex="-1">
-      <span class="sr">Digital Underground</span>
+      <img src="logo-chip.png" width="512" height="512" alt="" aria-hidden="true">
     </button>
     <div class="hero-panel">
       <button type="button" class="hero-panel-minimize" aria-label="Minimize">

@@ -1,2 +1,18 @@
+# Social link-preview bots may read any shared page (needed for preview cards)
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: meta-externalagent
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: Slackbot
+User-agent: Discordbot
+User-agent: WhatsApp
+User-agent: TelegramBot
+User-agent: Pinterestbot
+Allow: /
+
+# Search engines: storefront only; hosted apps stay out of search
 User-agent: *
+Allow: /$
+Allow: /store/
 Disallow: /

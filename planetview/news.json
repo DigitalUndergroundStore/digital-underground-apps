@@ -1,37 +1,233 @@
 {
-  "updated": "2026-10-09T19:27:26.265Z",
+  "updated": "2026-10-09T23:26:51.587Z",
   "articles": [
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
-      "title": "Trump announces deal with Putin to release Russian diesel",
-      "seendate": "20261009T192438Z",
-      "domain": "bbc.co.uk",
+      "url": "https://www.theguardian.com/us-news/live/2026/oct/09/pentagon-fort-hood-livestream-firing-squad-execution-reaction-backlash-pete-hegseth-donald-trump-mussolini-latest-news-updates",
+      "title": "Zelenskyy denounces Trump’s decision to lift diesel sanctions on Russia as ‘weak’ – US politics live",
+      "seendate": "20261009T230210Z",
+      "domain": "theguardian.com",
       "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.theguardian.com/education/2026/oct/10/ofsted-strikes-head-teachers-confidence",
+      "title": "Headteachers threaten strike ballots after losing confidence in Ofsted",
+      "seendate": "20261009T230140Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/10/women-with-pmos-should-get-subsidised-weight-loss-drugs-advocates-say",
+      "title": "Women with PMOS should get subsidised weight loss drugs, advocates say",
+      "seendate": "20261009T230041Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/mexico-investigates-video-said-to-show-cartel-members-fighting-for-ukraine?traffic_source=rss",
+      "title": "Mexico investigates video said to show cartel members fighting for Ukraine",
+      "seendate": "20261009T225015Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/09/panama-earthquake",
+      "title": "Powerful 7.6-magnitude earthquake hits Panama and triggers tsunami warnings",
+      "seendate": "20261009T224801Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Mexico"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/c5rmy73zr0rro?at_medium=RSS&at_campaign=rss",
       "title": "Commentator Katie Zacharia picked as new White House press secretary",
-      "seendate": "20261009T192233Z",
+      "seendate": "20261009T224121Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/oct/09/fort-hood-public-execution-us-iran",
-      "title": "Why a public execution will bring the US closer to Iranian values",
-      "seendate": "20261009T191618Z",
+      "url": "https://www.bbc.co.uk/news/articles/cj5ynwnye009o?at_medium=RSS&at_campaign=rss",
+      "title": "Three men found guilty of murdering two Australian surfer brothers and US friend",
+      "seendate": "20261009T215551Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+      "title": "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin'",
+      "seendate": "20261009T215428Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/trump-confirms-fort-hood-shooters-execution-will-be-by-firing-squad?traffic_source=rss",
+      "title": "Trump confirms Fort Hood shooter’s execution will be by firing squad",
+      "seendate": "20261009T215301Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&at_campaign=rss",
+      "title": "JD Vance casts doubt on firing squad execution and says he will not watch it",
+      "seendate": "20261009T215047Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/09/new-york-city-car-crash",
+      "title": "One person killed and nine injured in chain-reaction crash in New York City",
+      "seendate": "20261009T215002Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/us-news/live/2026/oct/09/pentagon-fort-hood-livestream-firing-squad-execution-reaction-backlash-pete-hegseth-donald-trump-mussolini-latest-news-updates",
-      "title": "Vance casts doubt on whether execution livestream ‘is actually going to happen’ as more Republicans join outcry – US politics live",
-      "seendate": "20261009T185736Z",
+      "url": "https://www.theguardian.com/us-news/2026/oct/09/katie-zacharia-new-white-house-press-secretary-trump",
+      "title": "Trump says he picked ‘devoted fan’ Katie Zacharia to be next press secretary",
+      "seendate": "20261009T213906Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/oct/09/vaccine-trial-guinea-bissau-rfk-jr",
+      "title": "Controversial vaccine trial touted by RFK Jr gets go-ahead in Guinea-Bissau",
+      "seendate": "20261009T213618Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/10/jake-callum-robinson-australian-surfers-carter-rhoad-mexico-murder-guilty-verdict-ntwnfb",
+      "title": "Three men found guilty of murders of Australian surfer brothers and US friend in Mexico",
+      "seendate": "20261009T213022Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/9/us-judge-rules-trump-administrations-use-of-voter-data-unlawful?traffic_source=rss",
+      "title": "US judge rules Trump administration’s use of voter data unlawful",
+      "seendate": "20261009T212901Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c620r39zdp9wo?at_medium=RSS&at_campaign=rss",
+      "title": "Powerful magnitude 7.7 earthquake hits Panama, damaging buildings",
+      "seendate": "20261009T212630Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/09/hurricane-isaias-gulf-coast",
+      "title": "Hurricane Isaias barrels toward Gulf coast as category 3 storm",
+      "seendate": "20261009T212204Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/9/afcon-may-stay-as-a-biennial-event-says-caf-chief-motsepe?traffic_source=rss",
+      "title": "Africa Cup of Nations may stay as a biennial event, says CAF chief Motsepe",
+      "seendate": "20261009T211742Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/09/marble-hill-new-york-city-ice-shooting-reaction",
+      "title": "New York City’s Marble Hill residents furious after ICE shooting: ‘Why do this?’",
+      "seendate": "20261009T210853Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/9/manchester-united-vs-tottenham-premier-league-teams-prediction-lineups?traffic_source=rss",
+      "title": "Manchester United vs Tottenham: Premier League – teams, prediction, lineups",
+      "seendate": "20261009T210400Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/oct/09/northern-ireland-secretary-chris-bryant-bans-drumcree-parade",
+      "title": "Northern Ireland secretary Chris Bryant bans Drumcree parade",
+      "seendate": "20261009T205800Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ireland"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue?traffic_source=rss",
+      "title": "UN envoy warns Yemen has returned to ‘full-scale war’, urges dialogue",
+      "seendate": "20261009T205601Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/9/how-will-spains-housing-crisis-impact-elections?traffic_source=rss",
+      "title": "How will Spain’s housing crisis affect elections?",
+      "seendate": "20261009T203911Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Spain"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/09/flydubai-co-pilot-planned-suicide-attack-on-israeli-airport-uae-prosecutors-say",
+      "title": "Flydubai co-pilot planned suicide attack on Israeli airport, UAE prosecutors say",
+      "seendate": "20261009T203811Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Arab Emirates"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/human-rights-veteran-navi-pillay-wins-2026-nobel-peace-prize?traffic_source=rss",
+      "title": "Human rights veteran Navi Pillay wins 2026 Nobel Peace Prize",
+      "seendate": "20261009T202930Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/economy/2026/10/9/rising-fuel-costs-slashed-deltas-profit-outlook-despite-strong-demand?traffic_source=rss",
+      "title": "Rising fuel costs slashed Delta’s profit outlook despite strong demand",
+      "seendate": "20261009T201715Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/9/flydubai-co-pilot-plotted-suicide-attack-on-israel-uae-says?traffic_source=rss",
+      "title": "Flydubai co-pilot plotted ‘suicide’ attack on Israel, UAE says",
+      "seendate": "20261009T201324Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cqm263x40y37o?at_medium=RSS&at_campaign=rss",
+      "title": "Thai Queen makes first solo flight in fighter jet",
+      "seendate": "20261009T194826Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Thailand"
+    },
+    {
+      "url": "https://www.aljazeera.com/economy/2026/10/9/trump-announces-russian-diesel-deal-amid-soaring-us-fuel-prices?traffic_source=rss",
+      "title": "Trump announces Russian diesel deal amid soaring US fuel prices",
+      "seendate": "20261009T194733Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/9/european-states-canada-japan-and-un-back-icc-against-us-sanctions?traffic_source=rss",
+      "title": "European states, Canada, Japan and UN back ICC against US sanctions",
+      "seendate": "20261009T193213Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits?traffic_source=rss",
+      "title": "Panama earthquake: Tsunami warnings issued after magnitude 7.7 quake",
+      "seendate": "20261009T192256Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Colombia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/injured-orangutan-rescued-from-indonesia-wildfires?traffic_source=rss",
+      "title": "Injured Orangutan rescued from Indonesia wildfires",
+      "seendate": "20261009T191456Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Indonesia"
     },
     {
       "url": "https://www.aljazeera.com/news/2026/10/9/katie-zacharia-offered-position-as-white-house-press-secretary?traffic_source=rss",
-      "title": "Katie Zacharia ‘offered’ position as White House press secretary",
+      "title": "Katie Zacharia selected to be next White House press secretary",
       "seendate": "20261009T184924Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
@@ -44,39 +240,11 @@
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&at_campaign=rss",
-      "title": "JD Vance casts doubt on firing squad execution and says he will not watch it",
-      "seendate": "20261009T184005Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/09/katie-zacharia-new-white-house-press-secretary-trump",
-      "title": "Trump picks conservative commentator Katie Zacharia to be next press secretary",
-      "seendate": "20261009T183116Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
       "url": "https://www.aljazeera.com/news/2026/10/9/barbaric-us-lawmakers-condemn-plan-to-livestream-nidal-hasans-execution?traffic_source=rss",
       "title": "‘Barbaric’: US lawmakers condemn plan to livestream Nidal Hasan’s execution",
       "seendate": "20261009T183058Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/09/abolish-ice-mamdani-aoc-new-york-shooting",
-      "title": "‘Abolish ICE’: Mamdani, AOC and other Democrats urge action after New York shooting",
-      "seendate": "20261009T182956Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/09/panama-earthquake",
-      "title": "Powerful 7.6-magnitude earthquake hits Panama and triggers tsunami warnings",
-      "seendate": "20261009T182926Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Mexico"
     },
     {
       "url": "https://www.aljazeera.com/economy/2026/10/9/ai-deepfake-ads-grow-more-popular-in-us-midterm-campaigns-blurring-truth?traffic_source=rss",
@@ -100,13 +268,6 @@
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/business/2026/oct/09/trump-investigate-lisa-cook-fed-governor",
-      "title": "Trump establishes committee to investigate Fed governor Lisa Cook",
-      "seendate": "20261009T180512Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
       "url": "https://www.theguardian.com/politics/2026/oct/09/nigel-farage-byelection-clacton-seat-speculation-5m-gift-inquiry",
       "title": "Parties prepare for byelection in Farage seat amid speculation over £5m gift inquiry",
       "seendate": "20261009T175217Z",
@@ -118,167 +279,6 @@
       "title": "Two Latvians arrested at RAF base in Cambridgeshire released on bail",
       "seendate": "20261009T174616Z",
       "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm9wz5kng0x1o?at_medium=RSS&at_campaign=rss",
-      "title": "Navi Pillay, former UN human rights chief, wins Nobel Peace Prize",
-      "seendate": "20261009T173710Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/jerusalem-daily-us-charity-to-use-ai-to-monitor-gaza-classrooms?traffic_source=rss",
-      "title": "Jerusalem Daily: US charity to use AI to monitor Gaza classrooms",
-      "seendate": "20261009T173705Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq78px5y1zmzo?at_medium=RSS&at_campaign=rss",
-      "title": "US immigration officials defend ICE agents who shot man in same car as child",
-      "seendate": "20261009T173609Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss",
-      "title": "Drone strike kills 30 people in Sudan’s Blue Nile region",
-      "seendate": "20261009T171943Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c68xzqqn4ekro?at_medium=RSS&at_campaign=rss",
-      "title": "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
-      "seendate": "20261009T171444Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/09/labour-byelection-winning-back-voters-on-left-greens",
-      "title": "Labour byelection win shows party starting to win back voters on left",
-      "seendate": "20261009T170819Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/palestinians-seek-protection-from-violent-settlers-during-olive-harvest?traffic_source=rss",
-      "title": "Palestinians seek protection from violent settlers during olive harvest",
-      "seendate": "20261009T170525Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/09/ed-davey-faces-growing-revolt-against-leadership-as-senior-lib-dem-mp-quits",
-      "title": "Ed Davey faces growing revolt against leadership as senior Lib Dem MP quits",
-      "seendate": "20261009T164629Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/powerful-tornado-rips-through-western-sicily?traffic_source=rss",
-      "title": "Powerful tornado rips through western Sicily",
-      "seendate": "20261009T163733Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/9/dhs-defends-ice-shooting-in-nyc-says-officers-believed-they-were-in-danger?traffic_source=rss",
-      "title": "DHS defends ICE shooting in NYC, says officers believed they were in danger",
-      "seendate": "20261009T163631Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
-      "title": "‘A Ceuta-style surge is possible’: Border tensions on NATO’s eastern flank",
-      "seendate": "20261009T163326Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/09/zack-polanski-future-as-green-party-leader-holborn-st-pancras-byelection-defeat",
-      "title": "Does Polanski have to go? Greens at the crossroads after Holborn and St Pancras",
-      "seendate": "20261009T163230Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&at_campaign=rss",
-      "title": "Man named Hitler Mussolini elected mayor in Peru",
-      "seendate": "20261009T163222Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/09/navanethem-navi-pillay-wins-nobel-peace-prize",
-      "title": "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
-      "seendate": "20261009T163009Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/cmy83pp3904vo?at_medium=RSS&at_campaign=rss",
-      "title": "Watch: 'I am Jane Doe' protests across US call for end to sexual violence",
-      "seendate": "20261009T161936Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/09/russian-military-blogger-mikhail-zvinchuk-rybar-arrested-montenegro",
-      "title": "Pro-Kremlin Russian military blogger Mikhail Zvinchuk arrested in Montenegro",
-      "seendate": "20261009T161025Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/9/thousands-rally-for-anti-austerity-protest-in-brussels-amid-clashes?traffic_source=rss",
-      "title": "Thousands rally for anti-austerity protest in Brussels amid clashes",
-      "seendate": "20261009T160729Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Belgium"
-    },
-    {
-      "url": "https://www.aljazeera.com/economy/2026/10/9/trump-launches-probe-into-federal-reserve-governor-lisa-cook?traffic_source=rss",
-      "title": "Trump launches probe into Federal Reserve Governor Lisa Cook",
-      "seendate": "20261009T160137Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/rogue-court-us-sanctions-icc-hours-after-ex-judge-wins-nobel-prize?traffic_source=rss",
-      "title": "‘Rogue court’: US sanctions ICC hours after ex-judge wins Nobel Prize",
-      "seendate": "20261009T155904Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/9/israeli-settler-attacks-target-palestinian-olive-harvest-in-west-bank?traffic_source=rss",
-      "title": "Israeli settler attacks target Palestinian olive harvest in West Bank",
-      "seendate": "20261009T152810Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/cq8ezdww6w0do?at_medium=RSS&at_campaign=rss",
-      "title": "Watch: Who is Nobel Peace Prize winner Navi Pillay?",
-      "seendate": "20261009T152633Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "South Africa"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/9/hurricane-isaias-strengthens-into-category-3-storm-with-us-in-its-sights?traffic_source=rss",
-      "title": "Hurricane Isaias strengthens into Category 3 storm with US in its sights",
-      "seendate": "20261009T152527Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&at_campaign=rss",
-      "title": "Ethiopia warns Eritrea it will defend itself after troops cross border",
-      "seendate": "20261009T152443Z",
-      "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
     }
   ]

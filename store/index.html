@@ -179,6 +179,56 @@
     transition: transform .6s ease;
   }
   .shot.pos-top { object-position: center 18%; }
+  .stage { position: relative; }
+  video.shot, video.preview {
+    width: 100%; height: 100%; object-fit: cover; object-position: center;
+    display: block; background: #120c22;
+  }
+  .hit {
+    position: absolute; inset: 0; z-index: 1;
+  }
+  .sound {
+    position: absolute; right: 8px; bottom: 8px; z-index: 2;
+    width: 44px; height: 44px; padding: 0;
+    display: grid; place-items: center;
+    border-radius: 999px; border: 1px solid rgba(255, 255, 255, .28);
+    background: rgba(6, 4, 14, .72); color: #fff;
+    cursor: pointer;
+  }
+  .sound svg { width: 20px; height: 20px; display: block; }
+  .sound .icon-on { display: none; }
+  .sound.is-on .icon-off { display: none; }
+  .sound.is-on .icon-on { display: block; }
+  .sound:focus-visible, .hit:focus-visible, a.info:focus-visible {
+    outline: 2px solid var(--cyan); outline-offset: 2px;
+  }
+  a.info { text-decoration: none; color: inherit; }
+  .sr {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  .reel-label {
+    margin: 0 0 10px; color: var(--cyan);
+    font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  }
+  .reels {
+    display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 2px 2px 16px; scrollbar-width: none;
+  }
+  .reels::-webkit-scrollbar { display: none; }
+  .reel { flex: 0 0 72%; scroll-snap-align: start; min-width: 0; }
+  .reel .stage {
+    aspect-ratio: 9 / 16; border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 16px 40px rgba(0, 0, 0, .28);
+    background: #120c22;
+  }
+  .reel-meta {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 8px;
+    margin-top: 8px; text-decoration: none; color: inherit;
+  }
+  .reel-meta strong { font-size: 14px; letter-spacing: -.02em; }
+  .reel-meta .price { min-height: 28px; font-size: 12px; }
   .plate {
     position: absolute; inset: 0;
     display: flex; flex-direction: column; justify-content: flex-end; gap: 6px;
@@ -267,6 +317,7 @@
     .orb-b { width: 520px; height: 360px; }
     .chips { margin: 0 -28px; padding: 12px 28px; }
     .strip .card { flex-basis: 48%; }
+    .reel { flex-basis: 220px; }
     .grid { grid-template-columns: 1fr 1fr; gap: 18px; }
     .tagline { font-size: 20px; }
   }
@@ -326,6 +377,49 @@
       <h2 id="featured-title">Featured</h2>
       <p>Bestsellers</p>
     </div>
+    <p class="reel-label" id="reels-title">See it in action</p>
+    <div class="reels">
+      <article class="reel">
+        <div class="stage">
+          <video class="preview" poster="media/nvmvyx.jpg" data-src="media/nvmvyx.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/nvmvyx" target="_blank" rel="noopener"><span class="sr">Invoice Desk</span></a>
+        </div>
+        <a class="reel-meta" href="https://kerzy.gumroad.com/l/nvmvyx" target="_blank" rel="noopener"><strong>Invoice Desk</strong><span class="price">CA$12</span></a>
+      </article>
+      <article class="reel">
+        <div class="stage">
+          <video class="preview" poster="media/idasqr.jpg" data-src="media/idasqr.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/idasqr" target="_blank" rel="noopener"><span class="sr">Streak Kit</span></a>
+        </div>
+        <a class="reel-meta" href="https://kerzy.gumroad.com/l/idasqr" target="_blank" rel="noopener"><strong>Streak Kit</strong><span class="price">CA$9</span></a>
+      </article>
+      <article class="reel">
+        <div class="stage">
+          <video class="preview" poster="media/omzql.jpg" data-src="media/omzql.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/omzql" target="_blank" rel="noopener"><span class="sr">Scope Lock</span></a>
+        </div>
+        <a class="reel-meta" href="https://kerzy.gumroad.com/l/omzql" target="_blank" rel="noopener"><strong>Scope Lock</strong><span class="price">CA$8</span></a>
+      </article>
+      <article class="reel">
+        <div class="stage">
+          <video class="preview" poster="media/jhagho.jpg" data-src="media/jhagho.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/jhagho" target="_blank" rel="noopener"><span class="sr">Pantry Week 2.0</span></a>
+        </div>
+        <a class="reel-meta" href="https://kerzy.gumroad.com/l/jhagho" target="_blank" rel="noopener"><strong>Pantry Week 2.0</strong><span class="price">CA$14.99</span></a>
+      </article>
+      <article class="reel">
+        <div class="stage">
+          <video class="preview" poster="media/jkpty.jpg" data-src="media/jkpty.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/jkpty" target="_blank" rel="noopener"><span class="sr">Winston — Hands-Free Kitchen Voice Assistant</span></a>
+        </div>
+        <a class="reel-meta" href="https://kerzy.gumroad.com/l/jkpty" target="_blank" rel="noopener"><strong>Winston — Hands-Free Kitchen Voice Assistant</strong><span class="price">CA$15</span></a>
+      </article>
+    </div>
     <div class="strip">
       <a class="card card-feature" href="https://kerzy.gumroad.com/l/oxnfvy" target="_blank" rel="noopener">
         <span class="cover">
@@ -341,20 +435,22 @@
           </span>
         </span>
       </a>
-      <a class="card card-feature" href="https://kerzy.gumroad.com/l/jhagho" target="_blank" rel="noopener">
-        <span class="cover">
-          <img class="shot" src="covers/jhagho.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+      <article class="card card-feature">
+        <div class="cover stage">
+          <video class="shot preview" poster="media/jhagho.jpg" data-src="media/jhagho.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/jhagho" target="_blank" rel="noopener"><span class="sr">Pantry Week 2.0</span></a>
           <span class="badge badge-ghost">Featured</span>
-        </span>
-        <span class="info">
+        </div>
+        <a class="info" href="https://kerzy.gumroad.com/l/jhagho" target="_blank" rel="noopener">
           <strong>Pantry Week 2.0</strong>
           <span class="blurb">A week of meals, planned in one place.</span>
           <span class="buyrow">
             <span class="price">CA$14.99</span>
             <span class="cta">Buy</span>
           </span>
-        </span>
-      </a>
+        </a>
+      </article>
       <a class="card card-feature" href="https://kerzy.gumroad.com/l/wcvgxo" target="_blank" rel="noopener">
         <span class="cover">
           <img class="shot" src="covers/wcvgxo.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
@@ -383,20 +479,22 @@
           </span>
         </span>
       </a>
-      <a class="card card-feature" href="https://kerzy.gumroad.com/l/jkpty" target="_blank" rel="noopener">
-        <span class="cover">
-          <img class="shot pos-top" src="covers/jkpty.webp" width="472" height="840" alt="" loading="lazy" decoding="async">
+      <article class="card card-feature">
+        <div class="cover stage">
+          <video class="shot preview" poster="media/jkpty.jpg" data-src="media/jkpty.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/jkpty" target="_blank" rel="noopener"><span class="sr">Winston — Hands-Free Kitchen Voice Assistant</span></a>
           <span class="badge badge-ghost">Featured</span>
-        </span>
-        <span class="info">
+        </div>
+        <a class="info" href="https://kerzy.gumroad.com/l/jkpty" target="_blank" rel="noopener">
           <strong>Winston — Hands-Free Kitchen Voice Assistant</strong>
           <span class="blurb">A kitchen voice that reads the steps while your hands are busy.</span>
           <span class="buyrow">
             <span class="price">CA$15</span>
             <span class="cta">Buy</span>
           </span>
-        </span>
-      </a>
+        </a>
+      </article>
     </div>
   </section>
   <section id="freelance" aria-labelledby="freelance-title">
@@ -405,34 +503,38 @@
       <p>Quotes, scope, invoices, and replies</p>
     </div>
     <div class="grid">
-      <a class="card" href="https://kerzy.gumroad.com/l/nvmvyx" target="_blank" rel="noopener">
-        <span class="cover">
-          <img class="shot" src="covers/nvmvyx.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+      <article class="card">
+        <div class="cover stage">
+          <video class="shot preview" poster="media/nvmvyx.jpg" data-src="media/nvmvyx.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/nvmvyx" target="_blank" rel="noopener"><span class="sr">Invoice Desk</span></a>
           <span class="badge">NEW</span>
-        </span>
-        <span class="info">
+        </div>
+        <a class="info" href="https://kerzy.gumroad.com/l/nvmvyx" target="_blank" rel="noopener">
           <strong>Invoice Desk</strong>
           <span class="blurb">Offline invoices for freelancers.</span>
           <span class="buyrow">
             <span class="price">CA$12</span>
             <span class="cta">Buy</span>
           </span>
-        </span>
-      </a>
-      <a class="card" href="https://kerzy.gumroad.com/l/omzql" target="_blank" rel="noopener">
-        <span class="cover">
-          <img class="shot" src="covers/omzql.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+        </a>
+      </article>
+      <article class="card">
+        <div class="cover stage">
+          <video class="shot preview" poster="media/omzql.jpg" data-src="media/omzql.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/omzql" target="_blank" rel="noopener"><span class="sr">Scope Lock</span></a>
           <span class="badge">NEW</span>
-        </span>
-        <span class="info">
+        </div>
+        <a class="info" href="https://kerzy.gumroad.com/l/omzql" target="_blank" rel="noopener">
           <strong>Scope Lock</strong>
           <span class="blurb">A client brief that holds the scope.</span>
           <span class="buyrow">
             <span class="price">CA$8</span>
             <span class="cta">Buy</span>
           </span>
-        </span>
-      </a>
+        </a>
+      </article>
       <a class="card" href="https://kerzy.gumroad.com/l/nlwvb" target="_blank" rel="noopener">
         <span class="cover">
           <img class="shot" src="covers/nlwvb.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
@@ -511,20 +613,22 @@
       <p>Habits, focus, and the week ahead</p>
     </div>
     <div class="grid">
-      <a class="card" href="https://kerzy.gumroad.com/l/idasqr" target="_blank" rel="noopener">
-        <span class="cover">
-          <img class="shot" src="covers/idasqr.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+      <article class="card">
+        <div class="cover stage">
+          <video class="shot preview" poster="media/idasqr.jpg" data-src="media/idasqr.mp4" width="720" height="1280" muted loop playsinline preload="none"></video>
+          <button class="sound" type="button" aria-label="Unmute" aria-pressed="false"><svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+          <a class="hit" href="https://kerzy.gumroad.com/l/idasqr" target="_blank" rel="noopener"><span class="sr">Streak Kit</span></a>
           <span class="badge">NEW</span>
-        </span>
-        <span class="info">
+        </div>
+        <a class="info" href="https://kerzy.gumroad.com/l/idasqr" target="_blank" rel="noopener">
           <strong>Streak Kit</strong>
           <span class="blurb">Daily streaks, kept on your phone. No account.</span>
           <span class="buyrow">
             <span class="price">CA$9</span>
             <span class="cta">Buy</span>
           </span>
-        </span>
-      </a>
+        </a>
+      </article>
       <a class="card" href="https://kerzy.gumroad.com/l/tckoc" target="_blank" rel="noopener">
         <span class="cover">
           <img class="shot" src="covers/tckoc.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
@@ -918,5 +1022,64 @@
     </ul>
   </footer>
 </div>
+<script>
+(function () {
+  var videos = document.querySelectorAll("video.preview");
+  if (!videos.length) return;
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function arm(v) {
+    if (v.getAttribute("src")) return;
+    v.src = v.getAttribute("data-src");
+    v.load();
+  }
+  function play(v) {
+    arm(v);
+    if (reduce) return;
+    var start = function () {
+      var pending = v.play();
+      if (pending && pending.catch) pending.catch(function () {});
+    };
+    if (v.readyState >= 2) start();
+    else v.addEventListener("canplay", start, { once: true });
+  }
+  if ("IntersectionObserver" in window) {
+    var watch = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) play(entry.target);
+        else entry.target.pause();
+      });
+    }, { threshold: 0.55 });
+    videos.forEach(function (v) { watch.observe(v); });
+  }
+  function setSound(btn, on) {
+    btn.classList.toggle("is-on", on);
+    btn.setAttribute("aria-pressed", on ? "true" : "false");
+    btn.setAttribute("aria-label", on ? "Mute" : "Unmute");
+  }
+  document.querySelectorAll(".sound").forEach(function (btn) {
+    btn.addEventListener("click", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      var stage = btn.closest(".stage");
+      var video = stage && stage.querySelector("video");
+      if (!video) return;
+      arm(video);
+      var unmute = video.muted;
+      videos.forEach(function (other) { other.muted = true; });
+      document.querySelectorAll(".sound").forEach(function (other) { setSound(other, false); });
+      video.muted = !unmute;
+      setSound(btn, unmute);
+      if (unmute) {
+        var start = function () {
+          var pending = video.play();
+          if (pending && pending.catch) pending.catch(function () {});
+        };
+        if (video.readyState >= 2) start();
+        else video.addEventListener("canplay", start, { once: true });
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>

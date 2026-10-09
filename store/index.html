@@ -56,9 +56,11 @@
   .hero {
     position: relative;
     overflow: hidden;
-    margin: 0 -16px 4px;
+    margin: 0 -16px 0;
     padding: 28px 18px 36px;
-    min-height: 640px;
+    min-height: 100svh;
+    min-height: 100dvh;
+    box-sizing: border-box;
     display: flex;
     align-items: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, .08);
@@ -351,9 +353,10 @@
   @media (min-width: 800px) {
     .wrap { padding: 0 28px 96px; }
     .hero {
-      margin: 0 -28px 12px;
+      margin: 0 -28px 0;
       padding: 56px 48px 48px;
-      min-height: 620px;
+      min-height: 100svh;
+      min-height: 100dvh;
       align-items: center;
     }
     .hero-scrim {

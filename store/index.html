@@ -126,20 +126,28 @@
   .hero-panel-minimize:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
   .hero-panel-fab {
     position: absolute; top: 16px; left: 16px; z-index: 4;
-    width: 52px; height: 52px; padding: 7px;
-    display: grid; place-items: center;
-    border-radius: 999px; border: 1px solid rgba(255, 255, 255, .22);
-    background: rgba(6, 4, 14, .72);
+    width: 52px; height: 52px; padding: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .28);
+    background: rgba(6, 4, 14, .85);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     cursor: pointer;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, .4);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .4), inset 0 0 0 1px rgba(255, 255, 255, .06);
     opacity: 0; transform: scale(0.55);
     pointer-events: none;
     transition: opacity .42s cubic-bezier(.4, 0, .2, 1),
       transform .42s cubic-bezier(.34, 1.2, .64, 1);
   }
-  .hero-panel-fab img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .hero-panel-fab img {
+    width: 100%; height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    transform: scale(1.48);
+  }
   .hero-panel-fab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
   .hero.is-panel-minimized .hero-panel-fab,
   html.store-hero-panel-min .hero-panel-fab {

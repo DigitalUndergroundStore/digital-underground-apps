@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import html
+import io
 import json
 import re
 from pathlib import Path
@@ -14,6 +15,7 @@ STORE = ROOT / "store"
 OUT = ROOT / "p"
 OG_DIR = OUT / "og"
 BASE = "https://digitalundergroundstore.com"
+OG_MAX_BYTES = 1_000_000
 
 PRODUCTS = [
     {"slug": "invoice-desk", "code": "nvmvyx", "name": "Invoice Desk", "price": "CA$19", "pitch": ["Offline invoices for freelancers."], "cover": "media/nvmvyx.jpg"},
@@ -112,7 +114,23 @@ def make_og_image(product: dict, dest: Path) -> None:
     draw.text((48, h - 120), title, fill=(245, 243, 255), font=font_title)
     draw.text((48, h - 62), product["price"], fill=(196, 181, 253), font=font_sub)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    canvas.save(dest, "JPEG", quality=88, optimize=True)
+    quality = 88
+    while quality >= 60:
+        buf = io.BytesIO()
+        canvas.save(buf, "JPEG", quality=quality, optimize=True, progressive=True)
+        data = buf.getvalue()
+        if len(data) <= OG_MAX_BYTES:
+            dest.write_bytes(data)
+            return
+        quality -= 6
+    dest.write_bytes(data)
+
+
+def price_amount_currency(price: str) -> tuple[str, str]:
+    if price.strip().lower() == "free":
+        return "0.00", "CAD"
+    m = re.search(r"(\d+(?:\.\d+)?)", price.replace(",", ""))
+    return (m.group(1) if m else "0.00"), "CAD"
 
 
 def cta_label(price: str) -> str:
@@ -133,6 +151,7 @@ def render_page(product: dict) -> str:
     if len(desc) > 200:
         desc = desc[:197] + "…"
     title = f"{name} — Digital Underground"
+    amount, currency = price_amount_currency(price)
     pitch_html = "\n".join(f'      <p class="pitch-line">{html.escape(line)}</p>' for line in pitch_lines)
     esc = html.escape
 
@@ -144,10 +163,13 @@ def render_page(product: dict) -> str:
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{page_url}">
+<meta property="og:site_name" content="Digital Underground">
 <meta property="og:title" content="{esc(name)}">
 <meta property="og:description" content="{esc(desc)}">
-<meta property="og:type" content="product">
+<meta property="og:type" content="website">
 <meta property="og:url" content="{page_url}">
+<meta property="product:price:amount" content="{esc(amount)}">
+<meta property="product:price:currency" content="{currency}">
 <meta property="og:image" content="{og_image}">
 <meta property="og:image:secure_url" content="{og_image}">
 <meta property="og:image:type" content="image/jpeg">

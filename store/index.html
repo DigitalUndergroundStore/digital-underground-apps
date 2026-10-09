@@ -57,11 +57,27 @@
     position: relative;
     overflow: hidden;
     margin: 0 -16px 4px;
-    padding: 20px 18px 16px;
+    padding: 28px 18px 36px;
+    min-height: 640px;
+    display: flex;
+    align-items: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, .08);
-    background: rgba(7, 6, 15, .42);
+    background: #07060f;
   }
-  .aurora { position: absolute; inset: 0; pointer-events: none; }
+  .hero-media { position: absolute; inset: 0; z-index: 0; background: #07060f; }
+  .hero-media picture, .hero-poster, .hero-film {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    background: #07060f;
+  }
+  .hero-scrim {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background:
+      linear-gradient(180deg, rgba(7, 6, 15, .78) 0%, rgba(7, 6, 15, .42) 46%, rgba(7, 6, 15, .8) 100%),
+      linear-gradient(90deg, rgba(7, 6, 15, .5), rgba(7, 6, 15, .12) 72%);
+  }
+  .aurora { position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .55; }
   .orb {
     position: absolute; border-radius: 50%;
     filter: blur(8px); opacity: .9;
@@ -86,7 +102,7 @@
     from { transform: translate3d(0, 0, 0) scale(1); }
     to { transform: translate3d(22px, -16px, 0) scale(1.1); }
   }
-  .hero-copy { position: relative; z-index: 1; max-width: 40rem; }
+  .hero-copy { position: relative; z-index: 2; max-width: 40rem; }
   .logo { width: 48px; height: auto; display: block; filter: drop-shadow(0 0 18px rgba(139, 92, 246, .55)); }
   .eyebrow {
     margin: 10px 0 0;
@@ -305,7 +321,15 @@
   .foot p { margin: 4px 0 0; color: var(--muted); font-size: 14px; max-width: 36rem; }
   @media (min-width: 800px) {
     .wrap { padding: 0 28px 96px; }
-    .hero { margin: 0 -28px 12px; padding: 52px 48px 44px; }
+    .hero {
+      margin: 0 -28px 12px;
+      padding: 56px 48px 48px;
+      min-height: 620px;
+      align-items: center;
+    }
+    .hero-scrim {
+      background: linear-gradient(90deg, rgba(7, 6, 15, .84) 0%, rgba(7, 6, 15, .62) 38%, rgba(7, 6, 15, .22) 100%);
+    }
     .logo { width: 68px; }
     h1 { font-size: 64px; }
     .tagline { font-size: 20px; margin-top: 14px; }
@@ -338,6 +362,7 @@
     .orb, .card, .shot, .cta { animation: none !important; transition: none !important; }
     .card:hover, .card:active { transform: none; }
     .card:hover .shot { transform: none; }
+    .hero-film { display: none !important; }
   }
 </style>
 </head>
@@ -345,6 +370,14 @@
 <a class="skip" href="#featured">Skip to products</a>
 <div class="wrap">
   <header class="hero">
+    <div class="hero-media">
+      <picture>
+        <source media="(min-width: 800px)" srcset="media/hero-169.jpg">
+        <img class="hero-poster" src="media/hero-916.jpg" width="720" height="1280" alt="">
+      </picture>
+      <video class="hero-film" poster="media/hero-916.jpg" width="720" height="1280" muted loop playsinline preload="none" data-src-narrow="media/hero-916.mp4" data-src-wide="media/hero-169.mp4" aria-hidden="true"></video>
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
     <div class="aurora" aria-hidden="true">
       <span class="orb orb-a"></span>
       <span class="orb orb-b"></span>
@@ -1024,9 +1057,41 @@
 </div>
 <script>
 (function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var hero = document.querySelector("video.hero-film");
+  var wideQ = window.matchMedia("(min-width: 800px)");
+  function heroFile() {
+    return hero.getAttribute(wideQ.matches ? "data-src-wide" : "data-src-narrow");
+  }
+  function playHero() {
+    if (!hero || reduce) return;
+    var next = heroFile();
+    var current = hero.getAttribute("src") || "";
+    if (!current || current.indexOf(next) === -1) {
+      hero.poster = wideQ.matches ? "media/hero-169.jpg" : "media/hero-916.jpg";
+      hero.src = next;
+    }
+    var start = function () {
+      var pending = hero.play();
+      if (pending && pending.catch) pending.catch(function () {});
+    };
+    if (hero.readyState >= 2) start();
+    else hero.addEventListener("canplay", start, { once: true });
+  }
+  if (hero && !reduce && "IntersectionObserver" in window) {
+    var heroWatch = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) playHero();
+        else hero.pause();
+      });
+    }, { threshold: 0.2 });
+    heroWatch.observe(hero);
+    if (wideQ.addEventListener) wideQ.addEventListener("change", function () {
+      if (hero.getAttribute("src")) playHero();
+    });
+  }
   var videos = document.querySelectorAll("video.preview");
   if (!videos.length) return;
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   function arm(v) {
     if (v.getAttribute("src")) return;
     v.src = v.getAttribute("data-src");

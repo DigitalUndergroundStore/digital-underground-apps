@@ -33,7 +33,8 @@
     --card: rgba(16, 12, 28, .92);
   }
   * { box-sizing: border-box; }
-  html { scroll-padding-top: 84px; }
+  html { scroll-padding-top: 84px; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   html, body { margin: 0; background: #07060f; color: var(--text); }
   body {
     font: 16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -74,8 +75,15 @@
     object-fit: cover;
     background: #07060f;
   }
-  .hero-film { opacity: 0; transition: opacity .35s ease; }
-  .hero-film.is-playing { opacity: 1; }
+  .hero-film { opacity: 0; transition: opacity .35s ease, filter .35s ease; }
+  .hero-film.is-playing { opacity: 1; filter: brightness(.9); }
+  .hero-text-backdrop {
+    position: absolute; z-index: 1; pointer-events: none;
+    left: 0; top: 0; bottom: 0;
+    width: min(100%, 28rem);
+    background:
+      linear-gradient(165deg, rgba(7, 6, 15, .94) 0%, rgba(7, 6, 15, .78) 38%, rgba(7, 6, 15, .35) 72%, transparent 100%);
+  }
   .aurora { position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .45; }
   .hero:has(.hero-film.is-playing) .aurora { opacity: 0; }
   .orb {
@@ -103,30 +111,44 @@
     to { transform: translate3d(22px, -16px, 0) scale(1.1); }
   }
   .hero-copy {
-    position: relative; z-index: 2; max-width: 40rem;
+    position: relative; z-index: 2;
+    width: min(100%, 22.5rem);
+    max-width: 82vw;
     display: flex; flex-direction: column; align-items: flex-start;
   }
   .hero-copy::before {
     content: "";
     position: absolute; z-index: -1;
-    inset: -14px -18px;
-    border-radius: 18px;
+    inset: -16px -20px -16px -16px;
+    border-radius: 20px;
     pointer-events: none;
-    background: linear-gradient(145deg, rgba(7, 6, 15, .9) 0%, rgba(7, 6, 15, .68) 50%, rgba(7, 6, 15, .42) 100%);
-    border: 1px solid rgba(255, 255, 255, .08);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, .35);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: linear-gradient(125deg, rgba(7, 6, 15, .96) 0%, rgba(7, 6, 15, .82) 55%, rgba(7, 6, 15, .45) 100%);
+    border: 1px solid rgba(255, 255, 255, .1);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, .45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  .hero-actions {
+    display: flex; flex-wrap: wrap; align-items: center;
+    gap: 10px 14px; margin-top: 18px; width: 100%;
   }
   .hero-cta {
-    margin-top: 18px;
     display: inline-flex; align-items: center; justify-content: center;
     min-height: 44px; padding: 0 22px; border-radius: 999px;
     background: linear-gradient(105deg, #6d28d9, #1e3a8a);
     color: #fff; font-size: 15px; font-weight: 700; text-decoration: none;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 8px 18px rgba(49, 20, 120, .35);
   }
-  .hero-cta:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .hero-cta-secondary {
+    min-height: 44px; padding: 0 4px;
+    display: inline-flex; align-items: center;
+    font-size: 14px; font-weight: 650; color: rgba(191, 232, 255, .92);
+    text-decoration: underline; text-decoration-color: rgba(191, 232, 255, .35);
+    text-underline-offset: 4px;
+  }
+  .hero-cta-secondary:hover { color: var(--cyan); text-decoration-color: rgba(191, 232, 255, .7); }
+  .hero-cta:focus-visible,
+  .hero-cta-secondary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
   .hero-sound[hidden] { display: none !important; }
   .hero-sound {
     position: absolute; right: 16px; bottom: 16px; z-index: 3;
@@ -393,10 +415,21 @@
       min-height: 100svh;
       min-height: 100dvh;
       align-items: center;
+      justify-content: flex-start;
+    }
+    .hero-text-backdrop {
+      width: min(58%, 36rem);
+      background: linear-gradient(100deg, rgba(7, 6, 15, .92) 0%, rgba(7, 6, 15, .7) 42%, rgba(7, 6, 15, .22) 78%, transparent 100%);
+    }
+    .hero-copy {
+      width: min(38%, 28rem);
+      max-width: none;
     }
     h1 { font-size: 64px; }
-    .hero-copy::before { inset: -20px -28px; border-radius: 22px; }
-    .hero-cta { margin-top: 22px; font-size: 16px; padding: 0 26px; }
+    .hero-copy::before { inset: -22px -32px -22px -24px; border-radius: 24px; }
+    .hero-actions { margin-top: 22px; gap: 12px 18px; }
+    .hero-cta { font-size: 16px; padding: 0 26px; }
+    .hero-cta-secondary { font-size: 15px; }
     .tagline { font-size: 20px; margin-top: 14px; }
     .hero-lead { margin-bottom: 16px; gap: 8px 6px; }
     .hero-lead .eyebrow { font-size: 12px; letter-spacing: .16em; line-height: 28px; }
@@ -430,6 +463,7 @@
     .card:hover .cta { filter: brightness(1.1); }
   }
   @media (prefers-reduced-motion: reduce) {
+    .hero-film.is-playing { filter: none; }
     .orb, .card, .shot, .cta { animation: none !important; transition: none !important; }
     .card:hover, .card:active { transform: none; }
     .card:hover .shot { transform: none; }
@@ -454,6 +488,7 @@
       <span class="orb orb-b"></span>
       <span class="orb orb-c"></span>
     </div>
+    <div class="hero-text-backdrop" aria-hidden="true"></div>
     <div class="hero-copy">
       <div class="hero-lead">
         <p class="eyebrow">The store</p>
@@ -465,14 +500,17 @@
       </div>
       <h1>Digital Underground</h1>
       <p class="tagline">Digital products designed around you: apps, guides &amp; AI tools. Pay once.</p>
-      <a class="hero-cta" href="#featured">Browse the store</a>
+      <div class="hero-actions">
+        <a class="hero-cta" href="#store-sections">Browse the store</a>
+        <a class="hero-cta-secondary" href="#featured">Bestsellers</a>
+      </div>
     </div>
     <button type="button" class="hero-sound" aria-label="Sound off" aria-pressed="false" hidden>
       <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
       <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
     </button>
   </header>
-  <nav class="chips" aria-label="Store sections">
+  <nav class="chips" id="store-sections" aria-label="Store sections">
     <a href="#featured">Featured</a>
     <a href="#freelance">Freelance</a>
     <a href="#focus">Focus &amp; life</a>

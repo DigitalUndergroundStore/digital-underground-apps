@@ -30,8 +30,11 @@
     --muted: #b7b0cc;
     --purple: #b07cff;
     --blue: #6ec8ff;
+    --card: rgba(12, 10, 22, .88);
+    --line: rgba(150, 90, 255, .38);
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: auto; }
   html, body { margin: 0; background: var(--bg); color: var(--text); }
   body {
     font: 16px/1.5 Inter, ui-sans-serif, system-ui, sans-serif;
@@ -41,73 +44,725 @@
       radial-gradient(720px 420px at 100% 0%, rgba(24, 72, 210, .32), transparent 55%),
       var(--bg);
   }
-  a { color: inherit; }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 64px; }
-  header { display: flex; align-items: center; gap: 14px; }
-  header img { width: 72px; height: auto; display: block; }
-  header p { margin: 0; letter-spacing: .16em; text-transform: uppercase; font-size: 12px; color: var(--blue); font-weight: 650; }
-  h1 { margin: 2px 0 0; font-size: 22px; letter-spacing: -.02em; }
-  .hero { padding: 36px 0 12px; }
-  .hero h2 { margin: 0 0 10px; font-size: clamp(32px, 6vw, 52px); line-height: 1.05; letter-spacing: -.03em; }
-  .hero p { margin: 0 0 22px; max-width: 38rem; color: var(--muted); font-size: 18px; }
-  .enter {
-    display: inline-flex; align-items: center; justify-content: center;
-    min-height: 56px; padding: 0 28px; border-radius: 999px;
-    background: linear-gradient(100deg, #7a3cff, #2f78ff);
-    color: #fff; font-weight: 750; font-size: 18px; text-decoration: none;
-    box-shadow: 0 0 28px rgba(120, 70, 255, .45);
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 22px 16px 72px; }
+  .hero { padding: 8px 0 4px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 64px; height: auto; display: block; }
+  .eyebrow {
+    margin: 0;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--blue);
+    font-weight: 700;
   }
-  .enter:focus-visible, .card:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
-  h3 { margin: 36px 0 14px; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--purple); }
-  .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-  @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+  h1 {
+    margin: 2px 0 0;
+    font-size: clamp(28px, 7vw, 44px);
+    line-height: 1.05;
+    letter-spacing: -.03em;
+  }
+  .tagline {
+    margin: 14px 0 0;
+    max-width: 36rem;
+    color: var(--muted);
+    font-size: 17px;
+  }
+  .chips {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    display: flex;
+    gap: 8px;
+    margin: 18px -16px 0;
+    padding: 10px 16px;
+    overflow-x: auto;
+    background: rgba(5, 4, 12, .94);
+    border-bottom: 1px solid rgba(150, 90, 255, .28);
+    backdrop-filter: blur(14px);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar { display: none; }
+  .chips a {
+    flex: 0 0 auto;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(176, 124, 255, .5);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    background: rgba(18, 12, 32, .8);
+  }
+  .chips a:hover, .chips a:focus-visible { border-color: var(--blue); color: var(--blue); }
+  section { scroll-margin-top: 72px; }
+  h2 {
+    margin: 28px 0 12px;
+    font-size: 13px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--purple);
+  }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
   .card {
-    display: block; text-decoration: none;
-    padding: 16px 16px 14px; border-radius: 16px;
-    background: rgba(12, 10, 22, .82);
-    border: 1px solid rgba(150, 90, 255, .38);
-    box-shadow: inset 0 0 0 1px rgba(80, 160, 255, .05);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 20px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    box-shadow: 0 0 0 1px rgba(80, 160, 255, .05), 0 18px 40px rgba(0, 0, 0, .28);
+    overflow: hidden;
   }
-  .card:hover { border-color: rgba(110, 200, 255, .7); }
-  .card strong { display: block; font-size: 17px; line-height: 1.3; }
-  .card span { display: block; margin-top: 6px; color: var(--muted); font-size: 14px; }
-  .price { margin-top: 10px; color: var(--blue); font-weight: 700; font-size: 14px; }
-  footer { margin-top: 28px; }
+  .card:hover { border-color: rgba(110, 200, 255, .75); }
+  .card:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+  .cover {
+    position: relative;
+    display: block;
+    margin: 10px 10px 0;
+    aspect-ratio: 16 / 10;
+    border-radius: 14px;
+    overflow: hidden;
+    background:
+      radial-gradient(80% 80% at 50% 0%, rgba(120, 70, 255, .22), transparent 70%),
+      #100b1c;
+  }
+  .cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: linear-gradient(100deg, #7a3cff, #2f78ff);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .08em;
+  }
+  .info { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px 14px; flex: 1; }
+  .info strong { font-size: 17px; line-height: 1.3; letter-spacing: -.01em; }
+  .blurb { color: var(--muted); font-size: 14px; }
+  .buyrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 8px;
+  }
+  .price { color: var(--blue); font-weight: 750; font-size: 15px; }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: linear-gradient(100deg, #7a3cff, #2f78ff);
+    color: #fff;
+    font-weight: 750;
+    font-size: 14px;
+    box-shadow: 0 0 18px rgba(120, 70, 255, .35);
+  }
+  footer { margin-top: 36px; color: var(--muted); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+  @media (min-width: 800px) {
+    .wrap { padding: 32px 24px 80px; }
+    .chips { margin-left: -24px; margin-right: -24px; padding-left: 24px; padding-right: 24px; }
+    .brand img { width: 76px; }
+    .grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .tagline { font-size: 18px; }
+  }
+  @media (hover: hover) {
+    .card:hover { box-shadow: 0 0 28px rgba(120, 70, 255, .28); }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <img src="logo.png" width="351" height="284" alt="Digital Underground">
-    <div>
-      <p>The store</p>
-      <h1>Digital Underground</h1>
+  <header class="hero">
+    <div class="brand">
+      <img src="logo.png" width="351" height="284" alt="">
+      <div>
+        <p class="eyebrow">The store</p>
+        <h1>Digital Underground</h1>
+      </div>
     </div>
+    <p class="tagline">Digital products designed around you: apps, guides &amp; AI tools. Pay once.</p>
   </header>
-  <section class="hero">
-    <h2>Digital products designed around you.</h2>
-    <p>Apps, guides, and AI tools. Pay once, then keep them.</p>
-    <a class="enter" href="https://kerzy.gumroad.com/">Enter the store</a>
+  <nav class="chips" aria-label="Store sections">
+    <a href="#freelance">Freelance</a>
+    <a href="#focus">Focus &amp; life</a>
+    <a href="#ai">AI tools</a>
+    <a href="#apps">Apps</a>
+    <a href="#bundles">Bundles</a>
+    <a href="#books">Books &amp; stories</a>
+    <a href="#free">Free downloads</a>
+  </nav>
+  <section id="freelance" aria-labelledby="freelance-title">
+    <h2 id="freelance-title">Freelance</h2>
+    <div class="grid">
+      <a class="card" href="https://kerzy.gumroad.com/l/nvmvyx" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/nvmvyx.webp" width="840" height="472" alt="" loading="eager" decoding="async" fetchpriority="high">
+          <span class="badge">NEW</span>
+        </span>
+        <span class="info">
+          <strong>Invoice Desk</strong>
+          <span class="blurb">Offline invoices for freelancers.</span>
+          <span class="buyrow">
+            <span class="price">CA$12</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/omzql" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/omzql.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          <span class="badge">NEW</span>
+        </span>
+        <span class="info">
+          <strong>Scope Lock</strong>
+          <span class="blurb">A client brief that holds the scope.</span>
+          <span class="buyrow">
+            <span class="price">CA$8</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/nlwvb" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/nlwvb.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          <span class="badge">NEW</span>
+        </span>
+        <span class="info">
+          <strong>Reply Forge</strong>
+          <span class="blurb">Customer replies you can send offline.</span>
+          <span class="buyrow">
+            <span class="price">CA$6</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/lqynfs" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/lqynfs.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          <span class="badge">NEW</span>
+        </span>
+        <span class="info">
+          <strong>ChatGPT Prompt Pack</strong>
+          <span class="blurb">30 prompts to create and sell digital products.</span>
+          <span class="buyrow">
+            <span class="price">CA$9</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/ppnorh" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/ppnorh.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Rate Wire</strong>
+          <span class="blurb">Hourly and day rates, figured before you quote.</span>
+          <span class="buyrow">
+            <span class="price">CA$7</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/bhrrtz" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/bhrrtz.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Offer Desk</strong>
+          <span class="blurb">A one-page offer you can send to a client.</span>
+          <span class="buyrow">
+            <span class="price">CA$14</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/iacbv" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/iacbv.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Launch Ledger</strong>
+          <span class="blurb">Income, kept in one ledger.</span>
+          <span class="buyrow">
+            <span class="price">CA$19</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/wcvgxo" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/wcvgxo.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Session Forge</strong>
+          <span class="blurb">An offline toolkit for running game sessions.</span>
+          <span class="buyrow">
+            <span class="price">CA$14.99+</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+    </div>
   </section>
-  <h3>Top of the store</h3>
-  <div class="grid">
-    <a class="card" href="https://kerzy.gumroad.com/l/nvmvyx"><strong>Invoice Desk</strong><span>Offline invoices for freelancers.</span><span class="price">CA$12</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/idasqr"><strong>Streak Kit</strong><span>Daily streaks, kept on your phone. No account.</span><span class="price">CA$9</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/omzql"><strong>Scope Lock</strong><span>A client brief that holds the scope.</span><span class="price">CA$8</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/lqynfs"><strong>ChatGPT Prompt Pack</strong><span>30 prompts to create and sell digital products.</span><span class="price">CA$9</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/nlwvb"><strong>Reply Forge</strong><span>Customer replies you can send offline.</span><span class="price">CA$6</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/wgjffu"><strong>Focus &amp; Habits Pack</strong><span>Habit tracker, focus gate, and an offline block puzzle. Three products, one price.</span><span class="price">CAD$17</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/lgvubv"><strong>AI Creator Bundle</strong><span>Prompt packs, a companion, and an audience growth toolkit.</span><span class="price">CAD$59</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/vvtib"><strong>Complete Freelance Suite</strong><span>Proposals, pricing, scope, invoicing, and client tools in one package.</span><span class="price">CAD$59</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/lggigy"><strong>Freelance Admin Stack</strong><span>Invoicing, replies, scope protection, and rate confidence.</span><span class="price">CAD$29</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/jkpty"><strong>Winston — Hands-Free Kitchen Voice Assistant</strong><span>A kitchen voice that reads the steps while your hands are busy.</span><span class="price">CAD$15</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/oxnfvy"><strong>PlanetView Live</strong><span>Photoreal Earth and a solar system you can fly, in the browser.</span><span class="price">CAD$12</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/fifcuh"><strong>Airhand (Early Access)</strong><span>Live radio, your music, and a timer, controlled from the camera.</span><span class="price">CAD$6.99</span></a>
-    <a class="card" href="https://kerzy.gumroad.com/l/fjmmi"><strong>Cork — Offline Darts Scoreboard</strong><span>Score for two sides. Pay once. No subscription.</span><span class="price">CAD$25</span></a>
-  </div>
-  <footer>
-    <a class="enter" href="https://kerzy.gumroad.com/">Enter the store</a>
-  </footer>
+  <section id="focus" aria-labelledby="focus-title">
+    <h2 id="focus-title">Focus &amp; life</h2>
+    <div class="grid">
+      <a class="card" href="https://kerzy.gumroad.com/l/idasqr" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/idasqr.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          <span class="badge">NEW</span>
+        </span>
+        <span class="info">
+          <strong>Streak Kit</strong>
+          <span class="blurb">Daily streaks, kept on your phone. No account.</span>
+          <span class="buyrow">
+            <span class="price">CA$9</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/tckoc" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/tckoc.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Focus Gate</strong>
+          <span class="blurb">A deep-work timer for one session at a time.</span>
+          <span class="buyrow">
+            <span class="price">CA$5</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/bxacp" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/bxacp.webp" width="840" height="821" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Bored Blocks</strong>
+          <span class="blurb">An offline block puzzle.</span>
+          <span class="buyrow">
+            <span class="price">CA$6.99</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/jhagho" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/jhagho.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Pantry Week 2.0</strong>
+          <span class="blurb">A week of meals, planned in one place.</span>
+          <span class="buyrow">
+            <span class="price">CA$14.99</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/hfyam" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/hfyam.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Box &amp; Go</strong>
+          <span class="blurb">A moving planner for the boxes and the list.</span>
+          <span class="buyrow">
+            <span class="price">CA$9</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/lchlou" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/lchlou.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Packlane</strong>
+          <span class="blurb">Packing lists for the trip you are taking.</span>
+          <span class="buyrow">
+            <span class="price">CA$2.99+</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+  <section id="ai" aria-labelledby="ai-title">
+    <h2 id="ai-title">AI tools</h2>
+    <div class="grid">
+      <a class="card" href="https://kerzy.gumroad.com/l/ozzrh" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/ozzrh.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>GrokMate</strong>
+          <span class="blurb">A voice assistant for questions while you work.</span>
+          <span class="buyrow">
+            <span class="price">CA$25</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/jsdrug" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/jsdrug.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Grok Prompt Pack</strong>
+          <span class="blurb">Prompts for writing, planning, and shipping work.</span>
+          <span class="buyrow">
+            <span class="price">CA$29</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/pgkgdc" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/pgkgdc.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>AI Audience Growth Toolkit</strong>
+          <span class="blurb">A playbook, a workbook, and a prompt pack.</span>
+          <span class="buyrow">
+            <span class="price">CA$19+</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+  <section id="apps" aria-labelledby="apps-title">
+    <h2 id="apps-title">Apps</h2>
+    <div class="grid">
+      <a class="card" href="https://kerzy.gumroad.com/l/jkpty" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/jkpty.webp" width="472" height="840" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Winston — Hands-Free Kitchen Voice Assistant</strong>
+          <span class="blurb">A kitchen voice that reads the steps while your hands are busy.</span>
+          <span class="buyrow">
+            <span class="price">CA$15</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/oxnfvy" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/oxnfvy.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>PlanetView Live</strong>
+          <span class="blurb">Photoreal Earth and a solar system you can fly, in the browser.</span>
+          <span class="buyrow">
+            <span class="price">CA$12</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/fifcuh" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/fifcuh.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Airhand (Early Access)</strong>
+          <span class="blurb">Live radio, your music, and a timer, controlled from the camera.</span>
+          <span class="buyrow">
+            <span class="price">CA$6.99</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/fjmmi" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/fjmmi.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Cork — Offline Darts Scoreboard</strong>
+          <span class="blurb">Score for two sides. Pay once. No subscription.</span>
+          <span class="buyrow">
+            <span class="price">CA$25</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+  <section id="bundles" aria-labelledby="bundles-title">
+    <h2 id="bundles-title">Bundles</h2>
+    <div class="grid">
+      <a class="card" href="https://kerzy.gumroad.com/l/wgjffu" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/wgjffu.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          <span class="badge">BUNDLE</span>
+        </span>
+        <span class="info">
+          <strong>Focus &amp; Habits Pack</strong>
+          <span class="blurb">Habit tracker, focus gate, and an offline block puzzle. Three products, one price.</span>
+          <span class="buyrow">
+            <span class="price">CA$17</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/lgvubv" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/lgvubv.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          <span class="badge">BUNDLE</span>
+        </span>
+        <span class="info">
+          <strong>AI Creator Bundle</strong>
+          <span class="blurb">Prompt packs, a companion, and an audience growth toolkit.</span>
+          <span class="buyrow">
+            <span class="price">CA$59</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/vvtib" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/vvtib.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          <span class="badge">BUNDLE</span>
+        </span>
+        <span class="info">
+          <strong>Complete Freelance Suite</strong>
+          <span class="blurb">Proposals, pricing, scope, invoicing, and client tools in one package.</span>
+          <span class="buyrow">
+            <span class="price">CA$59</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/lggigy" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/lggigy.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          <span class="badge">BUNDLE</span>
+        </span>
+        <span class="info">
+          <strong>Freelance Admin Stack</strong>
+          <span class="blurb">Invoicing, replies, scope protection, and rate confidence.</span>
+          <span class="buyrow">
+            <span class="price">CA$29</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+  <section id="books" aria-labelledby="books-title">
+    <h2 id="books-title">Books &amp; stories</h2>
+    <div class="grid">
+      <a class="card" href="https://kerzy.gumroad.com/l/jcazp" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/jcazp.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Null Harbor</strong>
+          <span class="blurb">A near-future thriller.</span>
+          <span class="buyrow">
+            <span class="price">CA$4.99</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/ygwhif" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/ygwhif.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>He Came Home Without Her</strong>
+          <span class="blurb">A domestic thriller.</span>
+          <span class="buyrow">
+            <span class="price">CA$4.99</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/sgrnpe" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/sgrnpe.webp" width="649" height="840" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Humanity X: Into The Stars</strong>
+          <span class="blurb">A science-fiction story.</span>
+          <span class="buyrow">
+            <span class="price">CA$9.99</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/umndpu" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/umndpu.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Humanity X: Off the Ground</strong>
+          <span class="blurb">A science-fiction story.</span>
+          <span class="buyrow">
+            <span class="price">CA$9.99</span>
+            <span class="cta">Buy</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/bukwxo" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/bukwxo.webp" width="378" height="350" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>The Brave Little Beaver</strong>
+          <span class="blurb">A short story for children.</span>
+          <span class="buyrow">
+            <span class="price">Free</span>
+            <span class="cta">Get it free</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/efouck" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/efouck.webp" width="339" height="319" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>The Day Ethan Chose Kindness</strong>
+          <span class="blurb">A short story for children.</span>
+          <span class="buyrow">
+            <span class="price">Free</span>
+            <span class="cta">Get it free</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/vlaqmh" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/vlaqmh.webp" width="368" height="335" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Tilly's Big Cleanup</strong>
+          <span class="blurb">A short story for children.</span>
+          <span class="buyrow">
+            <span class="price">Free</span>
+            <span class="cta">Get it free</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/vzfysf" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/vzfysf.webp" width="357" height="338" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>A New Friend – A Brighter Day</strong>
+          <span class="blurb">A short story for children.</span>
+          <span class="buyrow">
+            <span class="price">Free</span>
+            <span class="cta">Get it free</span>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+  <section id="free" aria-labelledby="free-title">
+    <h2 id="free-title">Free downloads</h2>
+    <div class="grid">
+      <a class="card" href="https://kerzy.gumroad.com/l/gfbgve" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/gfbgve.webp" width="840" height="472" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Due Desk</strong>
+          <span class="blurb">An assignment tracker for what is due.</span>
+          <span class="buyrow">
+            <span class="price">Free</span>
+            <span class="cta">Get it free</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/zpqpto" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/zpqpto.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Exam Desk</strong>
+          <span class="blurb">A toolkit for finals week.</span>
+          <span class="buyrow">
+            <span class="price">Free</span>
+            <span class="cta">Get it free</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/vusus" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/vusus.webp" width="600" height="600" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Hook Bank</strong>
+          <span class="blurb">Hooks for posts, ready to adapt.</span>
+          <span class="buyrow">
+            <span class="price">Free</span>
+            <span class="cta">Get it free</span>
+          </span>
+        </span>
+      </a>
+      <a class="card" href="https://kerzy.gumroad.com/l/mlrnfq" target="_blank" rel="noopener">
+        <span class="cover">
+          <img src="covers/mlrnfq.webp" width="840" height="474" alt="" loading="lazy" decoding="async">
+          
+        </span>
+        <span class="info">
+          <strong>Promo Lane</strong>
+          <span class="blurb">A promo kit for a launch.</span>
+          <span class="buyrow">
+            <span class="price">Free</span>
+            <span class="cta">Get it free</span>
+          </span>
+        </span>
+      </a>
+    </div>
+  </section>
+  <footer>Digital Underground</footer>
 </div>
 </body>
 </html>

@@ -450,6 +450,15 @@
   .info strong { font-size: 18px; line-height: 1.25; letter-spacing: -.02em; font-weight: 700; }
   .card-feature .info strong { font-size: 20px; }
   .blurb { color: var(--muted); font-size: 14px; line-height: 1.4; }
+  .product-share {
+    display: inline-flex; align-items: center; gap: 5px;
+    margin-top: 6px; font-size: 11px; font-weight: 600;
+    letter-spacing: .02em; color: var(--muted); text-decoration: none;
+    opacity: .88; align-self: flex-start;
+  }
+  .product-share:hover, .product-share:focus-visible { color: var(--cyan); opacity: 1; }
+  .product-share svg { width: 13px; height: 13px; flex-shrink: 0; opacity: .9; }
+  .reel .product-share { margin: 4px 0 0 2px; }
   .buyrow {
     display: flex; align-items: center; justify-content: space-between;
     gap: 10px; flex-wrap: wrap; margin-top: auto; padding-top: 10px;
@@ -1438,6 +1447,40 @@
       }
     });
   });
+})();
+(function () {
+  var CODE_RE = /gumroad\.com\/l\/([a-z0-9]+)/i;
+  var ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11v2h3l4 3V8l-4 3H7zm9-1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" fill="currentColor"/></svg>';
+  fetch("/p/index.json")
+    .then(function (r) { return r.json(); })
+    .then(function (map) {
+      var byCode = {};
+      Object.keys(map).forEach(function (slug) {
+        var row = map[slug];
+        byCode[row.gumroadCode] = row.shareUrl;
+      });
+      var done = new Set();
+      document.querySelectorAll('a[href*="gumroad.com/l/"]').forEach(function (a) {
+        var m = (a.getAttribute("href") || "").match(CODE_RE);
+        if (!m) return;
+        var code = m[1];
+        var shareUrl = byCode[code];
+        if (!shareUrl) return;
+        var host = a.closest(".info") || a.closest(".reel");
+        if (!host || done.has(host)) return;
+        done.add(host);
+        var link = document.createElement("a");
+        link.className = "product-share";
+        link.href = shareUrl;
+        link.innerHTML = ICON + " Share link";
+        if (host.classList.contains("reel")) {
+          host.appendChild(link);
+        } else {
+          host.appendChild(link);
+        }
+      });
+    })
+    .catch(function () {});
 })();
 </script>
 </body>

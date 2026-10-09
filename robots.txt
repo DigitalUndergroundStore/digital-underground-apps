@@ -29,8 +29,9 @@ Allow: /
 User-agent: Pinterestbot
 Allow: /
 
-# Search engines: storefront only; hosted apps stay out of search
+# Search engines: storefront + product share pages; hosted apps stay out of search
 User-agent: *
 Allow: /$
 Allow: /store/
+Allow: /p/
 Disallow: /

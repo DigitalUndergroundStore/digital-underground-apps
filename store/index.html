@@ -76,13 +76,8 @@
   }
   .hero-film { opacity: 0; transition: opacity .35s ease; }
   .hero-film.is-playing { opacity: 1; }
-  .hero-scrim {
-    position: absolute; inset: 0; z-index: 1; pointer-events: none;
-    background:
-      linear-gradient(180deg, rgba(7, 6, 15, .82) 0%, rgba(7, 6, 15, .5) 42%, rgba(7, 6, 15, .84) 100%),
-      linear-gradient(90deg, rgba(7, 6, 15, .72), rgba(7, 6, 15, .18) 72%);
-  }
   .aurora { position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .45; }
+  .hero:has(.hero-film.is-playing) .aurora { opacity: 0; }
   .orb {
     position: absolute; border-radius: 50%;
     filter: blur(8px); opacity: .9;
@@ -111,6 +106,43 @@
     position: relative; z-index: 2; max-width: 40rem;
     display: flex; flex-direction: column; align-items: flex-start;
   }
+  .hero-copy::before {
+    content: "";
+    position: absolute; z-index: -1;
+    inset: -14px -18px;
+    border-radius: 18px;
+    pointer-events: none;
+    background: linear-gradient(145deg, rgba(7, 6, 15, .9) 0%, rgba(7, 6, 15, .68) 50%, rgba(7, 6, 15, .42) 100%);
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .35);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  .hero-cta {
+    margin-top: 18px;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 44px; padding: 0 22px; border-radius: 999px;
+    background: linear-gradient(105deg, #6d28d9, #1e3a8a);
+    color: #fff; font-size: 15px; font-weight: 700; text-decoration: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 8px 18px rgba(49, 20, 120, .35);
+  }
+  .hero-cta:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .hero-sound {
+    position: absolute; right: 16px; bottom: 16px; z-index: 3;
+    width: 44px; height: 44px; padding: 0;
+    display: grid; place-items: center;
+    border-radius: 999px; border: 1px solid rgba(255, 255, 255, .22);
+    background: rgba(6, 4, 14, .62); color: #fff;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+  }
+  .hero-sound svg { width: 20px; height: 20px; display: block; }
+  .hero-sound .icon-on { display: none; }
+  .hero-sound.is-on .icon-off { display: none; }
+  .hero-sound.is-on .icon-on { display: block; }
+  .hero-sound:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
   .hero-lead {
     display: flex; flex-wrap: nowrap; align-items: center;
     gap: 6px; width: 100%; max-width: 100%;
@@ -145,10 +177,12 @@
     font-size: clamp(36px, 9vw, 68px);
     line-height: .98; letter-spacing: -.045em; font-weight: 700;
     text-wrap: balance;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, .65);
   }
   .tagline {
     margin: 10px 0 0; max-width: 34rem;
-    color: var(--muted); font-size: 16px; line-height: 1.4;
+    color: rgba(237, 233, 254, .92); font-size: 16px; line-height: 1.4;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, .55);
   }
   .trust {
     display: flex; flex-wrap: wrap; gap: 6px;
@@ -359,16 +393,16 @@
       min-height: 100dvh;
       align-items: center;
     }
-    .hero-scrim {
-      background: linear-gradient(90deg, rgba(7, 6, 15, .86) 0%, rgba(7, 6, 15, .64) 38%, rgba(7, 6, 15, .24) 100%);
-    }
     h1 { font-size: 64px; }
+    .hero-copy::before { inset: -20px -28px; border-radius: 22px; }
+    .hero-cta { margin-top: 22px; font-size: 16px; padding: 0 26px; }
     .tagline { font-size: 20px; margin-top: 14px; }
     .hero-lead { margin-bottom: 16px; gap: 8px 6px; }
     .hero-lead .eyebrow { font-size: 12px; letter-spacing: .16em; line-height: 28px; }
     .hero-lead .trust--hero { gap: 6px; }
     .hero-lead .trust--hero li { min-height: 0; padding: 5px 10px; font-size: 12px; gap: 5px; }
     .hero-lead .trust--hero svg { width: 13px; height: 13px; }
+    .hero-sound { right: 24px; bottom: 24px; }
     .trust { margin-top: 20px; gap: 8px; }
     .trust li { min-height: 44px; padding: 0 14px; font-size: 14px; }
     .section-head { margin: 40px 0 16px; }
@@ -414,7 +448,6 @@
       </picture>
       <video class="hero-film" width="720" height="1280" muted loop playsinline preload="none" data-src-narrow="media/hero-mobile.mp4" data-src-wide="media/hero-desktop.mp4" aria-hidden="true"></video>
     </div>
-    <div class="hero-scrim" aria-hidden="true"></div>
     <div class="aurora" aria-hidden="true">
       <span class="orb orb-a"></span>
       <span class="orb orb-b"></span>
@@ -431,7 +464,12 @@
       </div>
       <h1>Digital Underground</h1>
       <p class="tagline">Digital products designed around you: apps, guides &amp; AI tools. Pay once.</p>
+      <a class="hero-cta" href="#featured">Browse the store</a>
     </div>
+    <button type="button" class="hero-sound" aria-label="Sound off" aria-pressed="false" hidden>
+      <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+    </button>
   </header>
   <nav class="chips" aria-label="Store sections">
     <a href="#featured">Featured</a>
@@ -1097,10 +1135,50 @@
 (function () {
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var hero = document.querySelector("video.hero-film");
+  var heroSound = document.querySelector(".hero-sound");
   if (!hero) return;
   var wideQ = window.matchMedia("(min-width: 800px)");
+  var heroAudible = false;
+  var heroAudioProbe;
   function heroFile() {
     return hero.getAttribute(wideQ.matches ? "data-src-wide" : "data-src-narrow");
+  }
+  function setHeroSoundButtonVisible(show) {
+    if (!heroSound) return;
+    heroSound.hidden = !show;
+    if (!show) setHeroSound(false);
+  }
+  function detectHeroAudio() {
+    if (!heroSound || reduce) return;
+    var has = false;
+    if (hero.audioTracks && hero.audioTracks.length) has = hero.audioTracks.length > 0;
+    else if (typeof hero.mozHasAudio === "boolean") has = hero.mozHasAudio;
+    if (has) {
+      setHeroSoundButtonVisible(true);
+      return;
+    }
+    if (hero.webkitAudioDecodedByteCount !== undefined) {
+      if (heroAudioProbe) hero.removeEventListener("timeupdate", heroAudioProbe);
+      heroAudioProbe = function () {
+        if ((hero.webkitAudioDecodedByteCount || 0) > 0) {
+          setHeroSoundButtonVisible(true);
+          hero.removeEventListener("timeupdate", heroAudioProbe);
+          heroAudioProbe = null;
+        }
+      };
+      hero.addEventListener("timeupdate", heroAudioProbe);
+      return;
+    }
+    setHeroSoundButtonVisible(false);
+  }
+  function setHeroSound(on) {
+    heroAudible = !!on;
+    hero.muted = !heroAudible;
+    if (heroSound) {
+      heroSound.classList.toggle("is-on", heroAudible);
+      heroSound.setAttribute("aria-pressed", heroAudible ? "true" : "false");
+      heroSound.setAttribute("aria-label", heroAudible ? "Sound on" : "Sound off");
+    }
   }
   function playHero() {
     if (reduce) return;
@@ -1109,9 +1187,11 @@
     if (!current || current.indexOf(next) === -1) {
       hero.removeAttribute("poster");
       hero.classList.remove("is-playing");
+      setHeroSoundButtonVisible(false);
       hero.src = next;
       hero.load();
     }
+    hero.muted = !heroAudible;
     var start = function () {
       var pending = hero.play();
       if (pending && pending.catch) pending.catch(function () {});
@@ -1120,6 +1200,18 @@
     else hero.addEventListener("canplay", start, { once: true });
   }
   if (!reduce) {
+    hero.addEventListener("loadedmetadata", detectHeroAudio);
+    if (heroSound) {
+      heroSound.addEventListener("click", function () {
+        if (heroAudible) {
+          setHeroSound(false);
+          return;
+        }
+        setHeroSound(true);
+        hero.currentTime = 0;
+        playHero();
+      });
+    }
     hero.addEventListener("playing", function () {
       hero.classList.add("is-playing");
       hero.removeAttribute("poster");

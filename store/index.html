@@ -129,6 +129,7 @@
     width: 52px; height: 52px; padding: 0;
     overflow: hidden;
     border-radius: 50%;
+    isolation: isolate;
     border: 1px solid rgba(255, 255, 255, .28);
     background: rgba(6, 4, 14, .85);
     backdrop-filter: blur(14px);
@@ -141,12 +142,14 @@
       transform .42s cubic-bezier(.34, 1.2, .64, 1);
   }
   .hero-panel-fab img {
-    width: 100%; height: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 132%; height: 132%;
+    max-width: none;
     display: block;
     object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    transform: scale(1.48);
+    object-position: 50% 64%;
+    transform: translate(-50%, -50%);
   }
   .hero-panel-fab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
   .hero.is-panel-minimized .hero-panel-fab,

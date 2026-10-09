@@ -1,6 +1,174 @@
 {
-  "updated": "2026-10-08T21:54:24.018Z",
+  "updated": "2026-10-09T00:15:23.049Z",
   "articles": [
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/9/will-ethiopias-neighbours-intervene-as-tigray-war-escalates?traffic_source=rss",
+      "title": "Will Ethiopia’s neighbours intervene as Tigray war escalates?",
+      "seendate": "20261009T000833Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/9/iran-war-live-iranian-media-reports-massive-explosions-in-hormuz-strait?traffic_source=rss",
+      "title": "Iran war live: Iranian media reports ‘massive explosions’ in Hormuz Strait",
+      "seendate": "20261009T000021Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/09/sydney-public-square-controversy-state-government-intervention",
+      "title": "Plans for Sydney’s controversial new public square in doubt after NSW government intervention",
+      "seendate": "20261008T235953Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/live/2026/oct/08/uss-lincoln-san-diego-donald-trump-republicans-democrats-us-politics-latest-news",
+      "title": "USS Abraham Lincoln’s commanding officer addresses suicide attempts in strike group after record deployment – live",
+      "seendate": "20261008T235738Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/8/kenyan-patient-suspected-of-ebola-infection-tests-negative?traffic_source=rss",
+      "title": "Kenyan patient suspected of Ebola infection tests negative",
+      "seendate": "20261008T235342Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Kenya"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/08/nyc-shooting-federal-agent",
+      "title": "ICE agent shoots man in New York City with five-year-old in car, mayor says",
+      "seendate": "20261008T235237Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/8/hegseth-says-firing-squad-execution-of-fort-hood-shooter-will-be-public?traffic_source=rss",
+      "title": "Hegseth says firing squad execution of Fort Hood shooter will be ‘public’",
+      "seendate": "20261008T233644Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
+      "title": "Fort Hood attacker's execution by firing squad will be livestreamed, Pentagon says",
+      "seendate": "20261008T233557Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/8/man-city-charges-mourinho-jokes-premier-league-case-will-outlast-him?traffic_source=rss",
+      "title": "Man City charges: Mourinho jokes Premier League case will outlast him",
+      "seendate": "20261008T233134Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/08/hegseth-fort-hood-shooter-public-execution",
+      "title": "Pentagon says execution of Fort Hood shooter will be livestreamed",
+      "seendate": "20261008T231829Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq8rzjv8g7ejo?at_medium=RSS&at_campaign=rss",
+      "title": "Mark Zuckerberg has an image problem - so why is Meta's business booming?",
+      "seendate": "20261008T231402Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&at_campaign=rss",
+      "title": "Suspect linked to Monaco bomb attack on millionaire breaks silence to BBC",
+      "seendate": "20261008T231110Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/oct/09/fonagy-review-snowflakes-young-people-mental-health",
+      "title": "No ‘snowflakes’: mental health review says today’s youth have it harder and harms are real",
+      "seendate": "20261008T230132Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/oct/09/key-findings-fonagy-nhs-mental-health-adhd-autism",
+      "title": "NHS England mental health services review: what has it found and what does it recommend?",
+      "seendate": "20261008T230132Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/oct/09/nhs-fonagy-review-autism-adhd-mental-health-conditions-care",
+      "title": "NHS at risk of ‘system failures’ as demand for ADHD and autism care soars, inquiry finds",
+      "seendate": "20261008T230132Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/education/2026/oct/09/new-ofsted-inspection-regime-damaging-teachers-survey-says",
+      "title": "New Ofsted inspection regime damaging teachers, survey says",
+      "seendate": "20261008T230131Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/8/israel-kills-or-wounds-palestinian-every-90-minutes-in-gaza-since-ceasefire?traffic_source=rss",
+      "title": "Israel kills or wounds Palestinian every 90 minutes in Gaza since ceasefire",
+      "seendate": "20261008T225423Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/politics/2026/oct/08/polls-close-holborn-st-pancras-byelection-labour-greens",
+      "title": "Polls close in Holborn and St Pancras byelection as Labour hopes to retain seat",
+      "seendate": "20261008T224339Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/08/curtis-flowers-wrongful-conviction-mississippi-dead",
+      "title": "Curtis Flowers, US man wrongfully imprisoned for 22 years, dies aged 56",
+      "seendate": "20261008T223636Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/09/firmus-pulls-asx-float-datacentre-investor-doubt-australia",
+      "title": "Firmus pulls biggest ASX float since Telstra amid investor doubt about datacentre company",
+      "seendate": "20261008T223324Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/8/putin-pledges-russias-support-to-end-us-led-war-on-iran?traffic_source=rss",
+      "title": "Putin pledges Russia’s support to end US-led war on Iran",
+      "seendate": "20261008T223037Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/08/uss-abraham-lincoln-return-san-diego",
+      "title": "Thousands turn out to welcome weary USS Lincoln sailors after grueling deployment",
+      "seendate": "20261008T222555Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/8/bordeaux-relegated-to-french-sixth-tier-for-financial-irregularities?traffic_source=rss",
+      "title": "French giants Bordeaux relegated to sixth tier for financial irregularities",
+      "seendate": "20261008T221053Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/four-astronauts-return-to-earth-after-an-eight-month-space-mission?traffic_source=rss",
+      "title": "Four astronauts return to earth after an eight-month space mission",
+      "seendate": "20261008T215529Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
     {
       "url": "https://www.aljazeera.com/sports/2026/10/8/liverpool-vs-manchester-city-what-premier-league-charges-grate-reds-most?traffic_source=rss",
       "title": "What Man City charges anger Liverpool before Premier League game?",
@@ -9,32 +177,18 @@
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/oct/08/chris-murphy-pete-hegseth-iran-war-costs",
-      "title": "Democratic senator says Hegseth trying to hide costs of Iran war from US public",
-      "seendate": "20261008T214108Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/live/2026/oct/08/uss-lincoln-san-diego-donald-trump-republicans-democrats-us-politics-latest-news",
-      "title": "USS Abraham Lincoln’s commanding officer addresses suicide attempts in strike group after record deployment – live",
-      "seendate": "20261008T213248Z",
-      "domain": "theguardian.com",
+      "url": "https://www.bbc.co.uk/news/videos/cjx236wl9416o?at_medium=RSS&at_campaign=rss",
+      "title": "What Americans think about the death penalty",
+      "seendate": "20261008T214914Z",
+      "domain": "bbc.co.uk",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/08/two-latvian-men-arrested-raf-molesworth-cambridgeshire-us-nato",
-      "title": "Two Latvian men arrested at RAF base in Cambridgeshire used by US military",
-      "seendate": "20261008T212717Z",
+      "url": "https://www.theguardian.com/world/2026/oct/08/france-student-protests-schools-vow-to-continue",
+      "title": "French ministers scramble to appease students after 10 days of protests",
+      "seendate": "20261008T214723Z",
       "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/08/polls-close-holborn-st-pancras-byelection-labour-greens",
-      "title": "Polls close in Holborn and St Pancras byelection as Labour hopes to retain seat",
-      "seendate": "20261008T212229Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "sourcecountry": "France"
     },
     {
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/police-use-tear-gas-and-water-cannons-on-student-protestors-in-paris?traffic_source=rss",
@@ -100,13 +254,6 @@
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/oct/08/uss-abraham-lincoln-return-san-diego",
-      "title": "Thousands turn out to welcome weary USS Lincoln sailors after record-breaking deployment",
-      "seendate": "20261008T201819Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
       "url": "https://www.theguardian.com/world/2026/oct/08/thousands-to-march-in-madrid-after-death-of-evicted-pensioner-maricarmen",
       "title": "Thousands march in Madrid after death of evicted pensioner Maricarmen",
       "seendate": "20261008T201134Z",
@@ -114,25 +261,11 @@
       "sourcecountry": "Spain"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/oct/08/kimberly-guilfoyle-donor-wire-marco-rubio",
-      "title": "Trump donor accuses ‘grifter’ Kimberly Guilfoyle of $100,000 quid pro quo",
-      "seendate": "20261008T201025Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
       "url": "https://www.aljazeera.com/video/inside-story/2026/10/8/how-much-worse-can-yemens-humanitarian-crisis-become?traffic_source=rss",
       "title": "How much worse can Yemen’s humanitarian crisis become?",
       "seendate": "20261008T200608Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/08/hurricane-isaias-gulf-coast",
-      "title": "Hurricane Isaias forecast to bring dangerous storm surge, with millions under warnings in US",
-      "seendate": "20261008T200247Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
     },
     {
       "url": "https://www.aljazeera.com/features/2026/10/8/israeli-settlers-take-palestinian-olives-and-their-harvest-traditions?traffic_source=rss",
@@ -147,139 +280,6 @@
       "seendate": "20261008T194950Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/8/indias-cockroach-movement-says-members-detained-as-protests-continue?traffic_source=rss",
-      "title": "India’s Cockroach movement says members detained as protests continue",
-      "seendate": "20261008T194903Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/8/prosecutors-in-maradona-death-trial-seek-sentences-up-to-12-years?traffic_source=rss",
-      "title": "Prosecutors in Maradona death trial seek sentences up to 12 years",
-      "seendate": "20261008T194646Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Argentina"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/8/at-least-81-us-aircraft-worth-up-to-3-3bn-lost-or-damaged-in-iran-war?traffic_source=rss",
-      "title": "At least 81 US aircraft worth up to $3.3bn lost or damaged in Iran war",
-      "seendate": "20261008T194339Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/8/man-city-charges-maresca-says-players-focused-on-liverpool-test?traffic_source=rss",
-      "title": "Man City charges: Maresca says players focused on Liverpool test",
-      "seendate": "20261008T191738Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/8/gaza-playwright-award?traffic_source=rss",
-      "title": "‘War lives in me’: Gaza playwright Ali Abu Yasin wins English PEN award",
-      "seendate": "20261008T191233Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c3j4790elkx7o?at_medium=RSS&at_campaign=rss",
-      "title": "Protesters blame 'vulture funds' for Spain's housing crisis",
-      "seendate": "20261008T191006Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/8/philippines-ex-president-duterte-fit-to-stand-trial-icc-rules?traffic_source=rss",
-      "title": "Philippines ex-President Duterte fit to stand trial, ICC rules",
-      "seendate": "20261008T190608Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Philippines"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c9e8ld448km8o?at_medium=RSS&at_campaign=rss",
-      "title": "Adidas sues Australian label White Fox over four stripes design",
-      "seendate": "20261008T181728Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/08/royal-navy-serviceman-arrested-under-national-security-act",
-      "title": "Royal Navy sailor accused of spying for Russia appears in court",
-      "seendate": "20261008T181408Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/8/israel-opens-first-ever-pavilion-at-morocco-defence-show?traffic_source=rss",
-      "title": "Israel opens first-ever pavilion at Morocco defence show",
-      "seendate": "20261008T181114Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/8/colombian-embassy-to-open-in-jerusalem-israeli-fm-says?traffic_source=rss",
-      "title": "Colombian embassy to open in Jerusalem, Israeli FM says",
-      "seendate": "20261008T180706Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/08/cilia-flores-nicolas-maduro-new-york-court",
-      "title": "Nicolás Maduro and his wife indicted for alleged torture of US citizens",
-      "seendate": "20261008T180416Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/8/two-latvian-men-arrested-inside-uk-military-base-after-breach?traffic_source=rss",
-      "title": "Two Latvian men arrested inside UK military base after breach",
-      "seendate": "20261008T180120Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/science/2026/oct/09/astronomy-fast-radio-bursts-frb-radio-waves",
-      "title": "Astronomers detect mysterious burst of energy from a galaxy far, far away",
-      "seendate": "20261008T180025Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/8/hurricane-isaias-charges-towards-the-us-gulf-coast-with-dangerous-winds?traffic_source=rss",
-      "title": "Hurricane Isaias charges towards the US Gulf Coast with dangerous winds",
-      "seendate": "20261008T175807Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/08/israel-promotes-film-that-mimics-naza-documentary",
-      "title": "Israel promotes film that mimics NAZA documentary",
-      "seendate": "20261008T175235Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/08/france-student-protests-schools-vow-to-continue",
-      "title": "French students continue protests, saying ministers’ pledges not enough",
-      "seendate": "20261008T173921Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c5pvgn7xvxpzo?at_medium=RSS&at_campaign=rss",
-      "title": "Venezuela's ex-leader Nicolás Maduro charged with conspiracy to commit torture",
-      "seendate": "20261008T173859Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/08/martin-lewis-small-ideas-institute-public-improve-uk",
-      "title": "What would make your life easier? Martin Lewis asks public for ‘small ideas’ to improve UK",
-      "seendate": "20261008T172925Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
     }
   ]
 }

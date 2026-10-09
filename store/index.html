@@ -57,11 +57,30 @@
     position: relative;
     overflow: hidden;
     margin: 0 -16px 4px;
-    padding: 20px 18px 16px;
+    padding: 28px 18px 36px;
+    min-height: 640px;
+    display: flex;
+    align-items: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, .08);
-    background: rgba(7, 6, 15, .42);
+    background: #07060f;
   }
-  .aurora { position: absolute; inset: 0; pointer-events: none; }
+  .hero-media { position: absolute; inset: 0; z-index: 0; background: #07060f; }
+  .hero-poster-frame { display: none; position: absolute; inset: 0; }
+  .hero-poster, .hero-film {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    background: #07060f;
+  }
+  .hero-film { opacity: 0; transition: opacity .35s ease; }
+  .hero-film.is-playing { opacity: 1; }
+  .hero-scrim {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background:
+      linear-gradient(180deg, rgba(7, 6, 15, .82) 0%, rgba(7, 6, 15, .5) 42%, rgba(7, 6, 15, .84) 100%),
+      linear-gradient(90deg, rgba(7, 6, 15, .72), rgba(7, 6, 15, .18) 72%);
+  }
+  .aurora { position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .45; }
   .orb {
     position: absolute; border-radius: 50%;
     filter: blur(8px); opacity: .9;
@@ -86,13 +105,31 @@
     from { transform: translate3d(0, 0, 0) scale(1); }
     to { transform: translate3d(22px, -16px, 0) scale(1.1); }
   }
-  .hero-copy { position: relative; z-index: 1; max-width: 40rem; }
+  .hero-copy { position: relative; z-index: 2; max-width: 40rem; }
   .logo { width: 48px; height: auto; display: block; filter: drop-shadow(0 0 18px rgba(139, 92, 246, .55)); }
+  .hero-top {
+    display: flex; flex-wrap: wrap; align-items: center;
+    gap: 6px 8px; margin-top: 10px;
+  }
   .eyebrow {
-    margin: 10px 0 0;
+    margin: 0;
     font-size: 12px; font-weight: 700; letter-spacing: .16em;
     text-transform: uppercase; color: var(--cyan);
   }
+  .trust--hero {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 5px;
+    list-style: none; margin: 0; padding: 0; flex: 1 1 12rem;
+  }
+  .trust--hero li {
+    min-height: 28px; display: inline-flex; align-items: center; gap: 5px;
+    padding: 0 8px; border-radius: 999px;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .12);
+    font-size: 11px; font-weight: 650; line-height: 1;
+    backdrop-filter: blur(10px);
+    white-space: nowrap;
+  }
+  .trust--hero svg { width: 13px; height: 13px; color: var(--cyan); flex: 0 0 auto; }
   h1 {
     margin: 4px 0 0;
     font-size: clamp(36px, 9vw, 68px);
@@ -116,23 +153,6 @@
     backdrop-filter: blur(10px);
   }
   .trust svg { width: 16px; height: 16px; color: var(--cyan); flex: 0 0 auto; }
-  .hero-reel {
-    position: relative; z-index: 1;
-    margin: 16px auto 4px; max-width: 440px;
-    aspect-ratio: 4 / 5; overflow: hidden;
-    border-radius: 22px;
-    border: 1px solid rgba(191, 232, 255, .22);
-    background: #0c0818;
-    box-shadow: 0 0 0 1px rgba(109, 40, 217, .25), 0 18px 48px rgba(0, 0, 0, .45), 0 0 48px rgba(109, 40, 217, .3);
-    pointer-events: none;
-    -webkit-user-select: none; user-select: none;
-  }
-  .hero-reel img, .hero-reel video {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%; object-fit: cover; display: block;
-  }
-  .hero-reel video { opacity: 0; transition: opacity .5s ease; }
-  .hero-reel video.is-playing { opacity: 1; }
   .chips {
     position: sticky; top: 0; z-index: 5;
     display: flex; gap: 8px;
@@ -322,15 +342,25 @@
   .foot p { margin: 4px 0 0; color: var(--muted); font-size: 14px; max-width: 36rem; }
   @media (min-width: 800px) {
     .wrap { padding: 0 28px 96px; }
-    .hero { margin: 0 -28px 12px; padding: 52px 48px 44px; }
+    .hero {
+      margin: 0 -28px 12px;
+      padding: 56px 48px 48px;
+      min-height: 620px;
+      align-items: center;
+    }
+    .hero-scrim {
+      background: linear-gradient(90deg, rgba(7, 6, 15, .86) 0%, rgba(7, 6, 15, .64) 38%, rgba(7, 6, 15, .24) 100%);
+    }
     .logo { width: 68px; }
     h1 { font-size: 64px; }
     .tagline { font-size: 20px; margin-top: 14px; }
+    .hero-top { margin-top: 14px; gap: 10px 12px; }
+    .trust--hero li { min-height: 32px; padding: 0 10px; font-size: 12px; gap: 6px; }
+    .trust--hero svg { width: 14px; height: 14px; }
     .trust { margin-top: 20px; gap: 8px; }
     .trust li { min-height: 44px; padding: 0 14px; font-size: 14px; }
     .section-head { margin: 40px 0 16px; }
     .card-feature .cover { aspect-ratio: 4 / 3; }
-    .hero-reel { max-width: none; margin: 28px 0 0; aspect-ratio: 16 / 9; }
     .orb-a { width: 460px; height: 460px; }
     .orb-b { width: 520px; height: 360px; }
     .chips { margin: 0 -28px; padding: 12px 28px; }
@@ -338,13 +368,6 @@
     .reel { flex-basis: 220px; }
     .grid { grid-template-columns: 1fr 1fr; gap: 18px; }
     .tagline { font-size: 20px; }
-  }
-  @media (min-width: 1060px) {
-    .hero {
-      display: grid; align-items: center; gap: 36px;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
-    }
-    .hero-reel { margin: 0; }
   }
   @media (min-width: 1100px) {
     .strip .card { flex-basis: 38%; }
@@ -363,7 +386,8 @@
     .orb, .card, .shot, .cta { animation: none !important; transition: none !important; }
     .card:hover, .card:active { transform: none; }
     .card:hover .shot { transform: none; }
-    .hero-reel video { display: none; }
+    .hero-film { display: none !important; }
+    .hero-poster-frame { display: block; }
   }
 </style>
 </head>
@@ -371,6 +395,14 @@
 <a class="skip" href="#featured">Skip to products</a>
 <div class="wrap">
   <header class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <picture class="hero-poster-frame">
+        <source media="(min-width: 800px)" srcset="media/hero-desktop.jpg">
+        <img class="hero-poster" src="media/hero-mobile.jpg" width="720" height="900" alt="">
+      </picture>
+      <video class="hero-film" width="720" height="900" muted loop playsinline preload="none" data-src-narrow="media/hero-mobile.mp4" data-src-wide="media/hero-desktop.mp4" aria-hidden="true"></video>
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
     <div class="aurora" aria-hidden="true">
       <span class="orb orb-a"></span>
       <span class="orb orb-b"></span>
@@ -378,21 +410,16 @@
     </div>
     <div class="hero-copy">
       <img class="logo" src="logo.png" width="351" height="284" alt="">
-      <p class="eyebrow">The store</p>
+      <div class="hero-top">
+        <p class="eyebrow">The store</p>
+        <ul class="trust trust--hero" aria-label="Store benefits">
+          <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5 6.2 11.5 13 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pay once</li>
+          <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v7M5 7.5 8 10.5 11 7.5M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Instant download</li>
+          <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Secure checkout</li>
+        </ul>
+      </div>
       <h1>Digital Underground</h1>
       <p class="tagline">Digital products designed around you: apps, guides &amp; AI tools. Pay once.</p>
-    <ul class="trust">
-      <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5 6.2 11.5 13 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pay once</li>
-      <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v7M5 7.5 8 10.5 11 7.5M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Instant download</li>
-      <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Secure checkout</li>
-    </ul>
-    </div>
-    <div class="hero-reel" role="img" aria-label="Montage of PlanetView Live, Winston, Pantry Week, Session Forge, Airhand and more Digital Underground products">
-      <picture>
-        <source media="(min-width: 800px)" srcset="media/hero-desktop.jpg">
-        <img src="media/hero-mobile.jpg" width="720" height="900" alt="" decoding="async">
-      </picture>
-      <video class="hero-video" data-mobile="media/hero-mobile.mp4" data-desktop="media/hero-desktop.mp4" muted loop playsinline disablepictureinpicture disableremoteplayback preload="none" tabindex="-1" aria-hidden="true"></video>
     </div>
   </header>
   <nav class="chips" aria-label="Store sections">
@@ -1057,44 +1084,50 @@
 </div>
 <script>
 (function () {
-  var video = document.querySelector("video.hero-video");
-  if (!video) return;
-  var motion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  var wide = window.matchMedia("(min-width: 800px)");
-  var visible = false, armed = false;
-  function want() { return wide.matches ? video.getAttribute("data-desktop") : video.getAttribute("data-mobile"); }
-  function sync() {
-    if (motion.matches || !armed) {
-      video.pause();
-      return;
-    }
-    var src = want();
-    if (video.getAttribute("src") !== src) {
-      video.classList.remove("is-playing");
-      video.src = src;
-      video.load();
-    }
-    if (!visible) { video.pause(); return; }
-    var pending = video.play();
-    if (pending && pending.catch) pending.catch(function () {});
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var hero = document.querySelector("video.hero-film");
+  if (!hero) return;
+  var wideQ = window.matchMedia("(min-width: 800px)");
+  function heroFile() {
+    return hero.getAttribute(wideQ.matches ? "data-src-wide" : "data-src-narrow");
   }
-  video.muted = true;
-  video.addEventListener("playing", function () { video.classList.add("is-playing"); });
-  [motion, wide].forEach(function (q) {
-    if (q.addEventListener) q.addEventListener("change", sync);
-    else if (q.addListener) q.addListener(sync);
-  });
-  function arm() { armed = true; sync(); }
-  if ("IntersectionObserver" in window) {
-    new IntersectionObserver(function (entries) {
-      visible = entries[0].isIntersecting;
-      sync();
-    }, { threshold: 0.2 }).observe(video.parentNode);
-  } else {
-    visible = true;
+  function playHero() {
+    if (reduce) return;
+    var next = heroFile();
+    var current = hero.getAttribute("src") || "";
+    if (!current || current.indexOf(next) === -1) {
+      hero.removeAttribute("poster");
+      hero.classList.remove("is-playing");
+      hero.src = next;
+      hero.load();
+    }
+    var start = function () {
+      var pending = hero.play();
+      if (pending && pending.catch) pending.catch(function () {});
+    };
+    if (hero.readyState >= 2) start();
+    else hero.addEventListener("canplay", start, { once: true });
   }
-  if (document.readyState === "complete") arm();
-  else window.addEventListener("load", arm, { once: true });
+  if (!reduce) {
+    hero.addEventListener("playing", function () {
+      hero.classList.add("is-playing");
+      hero.removeAttribute("poster");
+    });
+    if ("IntersectionObserver" in window) {
+      var heroWatch = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) playHero();
+          else hero.pause();
+        });
+      }, { threshold: 0.2 });
+      heroWatch.observe(hero);
+      if (wideQ.addEventListener) wideQ.addEventListener("change", function () {
+        if (hero.getAttribute("src")) playHero();
+      });
+    } else {
+      playHero();
+    }
+  }
 })();
 (function () {
   var videos = document.querySelectorAll("video.preview");

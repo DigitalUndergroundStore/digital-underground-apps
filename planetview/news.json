@@ -1,12 +1,173 @@
 {
-  "updated": "2026-10-10T19:59:28.981Z",
+  "updated": "2026-10-10T23:27:10.546Z",
   "articles": [
     {
+      "url": "https://www.bbc.co.uk/news/articles/cmje5x80yg70o?at_medium=RSS&at_campaign=rss",
+      "title": "Four dead and thousands without power after Hurricane Isaias lashes US",
+      "seendate": "20261010T231955Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/10/liverpool-vs-man-city-top-5-battles-premier-league-matches-head-to-head?traffic_source=rss",
+      "title": "Liverpool vs Man City: the top five clashes between Premier League giants",
+      "seendate": "20261010T224308Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss",
+      "title": "Twelve killed in attack on airport in Saudi capital Riyadh",
+      "seendate": "20261010T224056Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/10/who-says-no-plague-case-registered-after-russian-lab-workers-death?traffic_source=rss",
+      "title": "WHO says no plague case registered after Russian lab worker’s death",
+      "seendate": "20261010T223429Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.theguardian.com/science/2026/oct/10/skies-across-the-uk-illuminated-by-the-northern-lights",
+      "title": "Skies across the UK illuminated by the northern lights",
+      "seendate": "20261010T223034Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
       "url": "https://www.theguardian.com/world/live/2026/oct/10/hurricane-isaias-gulf-coast-alabama-florida-louisiana-mississippi-latest-updates",
-      "title": "Hurricane Isaias latest updates: at least four people dead and hundreds of thousands without power",
-      "seendate": "20261010T193323Z",
+      "title": "Hurricane Isaias updates: at least four people dead and hundreds of thousands without power – as it happened",
+      "seendate": "20261010T221805Z",
       "domain": "theguardian.com",
       "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/10/yemeni-governments-military-says-its-forces-advancing-against-houthis?traffic_source=rss",
+      "title": "Yemeni government’s military says its forces advancing against Houthis",
+      "seendate": "20261010T221225Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/10/real-madrid-beat-villarreal-but-vinicius-sent-off-for-hair-pull?traffic_source=rss",
+      "title": "Real Madrid beat Villarreal 1-0 but Vinicius sent off for hair pull",
+      "seendate": "20261010T214020Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Spain"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/10/hundreds-of-doctors-demand-world-medical-association-suspend-israel?traffic_source=rss",
+      "title": "Hundreds of doctors demand World Medical Association suspend Israel",
+      "seendate": "20261010T211204Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/malawi-motorists-queue-for-days-as-fuel-shortage-bites?traffic_source=rss",
+      "title": "Malawi motorists queue for days as fuel shortage bites",
+      "seendate": "20261010T211038Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/10/hurricane-simon-strengthens-to-category-4-off-mexicos-pacific-coast?traffic_source=rss",
+      "title": "Hurricane Simon strengthens to Category 4 off Mexico’s Pacific coast",
+      "seendate": "20261010T211006Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Mexico"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/2026/10/10/yemens-houthis-release-video-of-drone-attacks-on-govt-forces?traffic_source=rss",
+      "title": "Yemen’s Houthis release video of drone attacks on gov’t forces",
+      "seendate": "20261010T210249Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/10/cottonwood-tree-toppling-trump-mexico-border-wall-arizona",
+      "title": "Despair after 200-year-old ‘grandmother’ tree toppled for Trump’s border wall: ‘It crushes your heart’",
+      "seendate": "20261010T205732Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Mexico"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwvgdpv642g5o?at_medium=RSS&at_campaign=rss",
+      "title": "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
+      "seendate": "20261010T205112Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/damage-seen-inside-saudi-airport-after-third-attack-this-week?traffic_source=rss",
+      "title": "Damage seen inside Saudi airport after third attack this week",
+      "seendate": "20261010T204319Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/10/ukraine-russia-strikes-war-trump-diesel-deal-zelenskyy",
+      "title": "Trump says Ukraine needs a new leader after diesel deal with Russia",
+      "seendate": "20261010T204255Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/philippines-volcano-erupts-creating-6km-high-ash-cloud?traffic_source=rss",
+      "title": "Philippines volcano erupts, creating 6km-high ash cloud",
+      "seendate": "20261010T203717Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Philippines"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/10/rubio-pledges-us-cooperation-in-marine-linked-murder-case?traffic_source=rss",
+      "title": "Rubio pledges US cooperation in Marine-linked murder case",
+      "seendate": "20261010T203036Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/israeli-attack-destroys-building-in-gaza-one-year-into?traffic_source=rss",
+      "title": "Israeli attack destroys building in Gaza one year into ‘ceasefire’",
+      "seendate": "20261010T201401Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/10/philadelphia-police-officer-killed",
+      "title": "Man with gun kills one Philadelphia police officer and injures another",
+      "seendate": "20261010T201234Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/10/why-is-the-trump-administration-trying-to-dismantle-the-icc?traffic_source=rss",
+      "title": "Why is the Trump administration trying to dismantle the ICC?",
+      "seendate": "20261010T195918Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/10/messi-returns-from-argentina-farewell-as-inter-miami-face-dc-united?traffic_source=rss",
+      "title": "Lionel Messi returns from Argentina farewell as Inter Miami face DC United",
+      "seendate": "20261010T195908Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/azerbaijan-school-pupils-protest-over-reported-hijab-restrictions?traffic_source=rss",
+      "title": "Azerbaijan school pupils protest over reported hijab restrictions",
+      "seendate": "20261010T194933Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/10/manchester-united-held-by-ten-man-tottenham-as-woes-for-both-continue?traffic_source=rss",
+      "title": "Manchester United held by ten-man Tottenham as woes for both continue",
+      "seendate": "20261010T194710Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.aljazeera.com/news/2026/10/10/trump-says-ukraine-needs-a-new-president-who-will-agree-to-end-the-war?traffic_source=rss",
@@ -30,6 +191,13 @@
       "sourcecountry": "Spain"
     },
     {
+      "url": "https://www.bbc.co.uk/news/videos/cwkg50dgpml7o?at_medium=RSS&at_campaign=rss",
+      "title": "Watch: 'Time for Ukraine to get a new president', says Trump",
+      "seendate": "20261010T192503Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
       "url": "https://www.aljazeera.com/sports/2026/10/10/ronaldo-suspended-by-portugal-fa-after-leaving-camp-and-criticizing-coach?traffic_source=rss",
       "title": "Ronaldo suspended by Portugal FA after leaving camp and criticising coach",
       "seendate": "20261010T192326Z",
@@ -44,13 +212,6 @@
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cmje5x80yg70o?at_medium=RSS&at_campaign=rss",
-      "title": "Four dead and thousands without power after Hurricane Isaias lashes US",
-      "seendate": "20261010T190817Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United States"
-    },
-    {
       "url": "https://www.theguardian.com/us-news/2026/oct/10/california-man-72-shoots-ice-officer-fresno-off-duty",
       "title": "US man shoots off-duty ICE agent who allegedly attacked him and daughter",
       "seendate": "20261010T190330Z",
@@ -59,7 +220,7 @@
     },
     {
       "url": "https://www.theguardian.com/australia-news/2026/oct/11/cpac-conference-pauline-hanson-angus-taylor-one-nation-liberals-cooperation-ntwnfb",
-      "title": "Hanson seems more and more like the de facto opposition leader. At CPAC, Angus Taylor warmed the seat for her",
+      "title": "Pauline Hanson seems more and more like the de facto opposition leader. At CPAC, Angus Taylor warmed the seat for her",
       "seendate": "20261010T190009Z",
       "domain": "theguardian.com",
       "sourcecountry": "Australia"
@@ -93,13 +254,6 @@
       "sourcecountry": "Israel"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss",
-      "title": "Several injured in attack on airport in Saudi capital Riyadh",
-      "seendate": "20261010T183710Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
       "url": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss",
       "title": "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza",
       "seendate": "20261010T182613Z",
@@ -115,7 +269,7 @@
     },
     {
       "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-      "title": "Attack on airport in Saudi capital, Riyadh, leaves several injured",
+      "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
       "seendate": "20261010T180846Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Saudi Arabia"
@@ -126,160 +280,6 @@
       "seendate": "20261010T174845Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o?at_medium=RSS&at_campaign=rss",
-      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
-      "seendate": "20261010T174426Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/10/pope-says-death-penalty-inadmissible-as-us-plans-to-livestream-execution?traffic_source=rss",
-      "title": "Pope says death penalty ‘inadmissible’ as US plans to livestream execution",
-      "seendate": "20261010T173818Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/video-shows-rare-albino-asian-black-bear?traffic_source=rss",
-      "title": "Video shows rare albino Asian black bear",
-      "seendate": "20261010T173737Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/10/man-suffers-serious-injury-after-jumping-into-zoo-tiger-enclosure",
-      "title": "Man dies after jumping into tiger enclosure at Yorkshire zoo",
-      "seendate": "20261010T171331Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/10/christa-pike-discharged-back-in-prison",
-      "title": "Christa Pike out of hospital and back in prison after botched execution attempt",
-      "seendate": "20261010T171029Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/10/christa-pike-discharged-from-hospital-and-returned-to-tennessee-prison?traffic_source=rss",
-      "title": "Christa Pike discharged from hospital and returned to Tennessee prison",
-      "seendate": "20261010T170837Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/celebrations-in-ethiopian-city-after-reported-eritrean?traffic_source=rss",
-      "title": "Celebrations in Ethiopian city after reported Eritrean ‘incursion’",
-      "seendate": "20261010T165456Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/10/thousands-in-london-express-support-for-palestinians-after-three-years-genocide",
-      "title": "Thousands gather in London to express support for Palestinians after three years of ‘genocide’",
-      "seendate": "20261010T165215Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/10/eritrea-urges-un-to-intervene-in-standoff-with?traffic_source=rss",
-      "title": "Eritrea urges UN to intervene in standoff with Ethiopia",
-      "seendate": "20261010T164125Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/10/yemen-government-allied-forces-recapture-bab-al-mandab-strait-houthis-taiz",
-      "title": "Dozens reported injured in Yemeni Houthi attack at Riyadh airport",
-      "seendate": "20261010T155412Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/10/nine-people-mass-shooting-pennsylvania",
-      "title": "Nine people, including children, dead after mass shooting in Pennsylvania",
-      "seendate": "20261010T154545Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/10/hurricane-isaias-leaves-two-dead-and-800000-without-power-in-us-southeast?traffic_source=rss",
-      "title": "Hurricane Isaias leaves two dead and 800,000 without power in US Southeast",
-      "seendate": "20261010T154536Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cqkgjrpmr47vo?at_medium=RSS&at_campaign=rss",
-      "title": "Nobel peace laureate says US sanctions on ICC 'unacceptable'",
-      "seendate": "20261010T152347Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/trump-accounts-free-money-but-who-gets-a-say?traffic_source=rss",
-      "title": "Trump Accounts: Free money, but who gets a say?",
-      "seendate": "20261010T152139Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/opinions/2026/10/10/with-or-without-hamas?traffic_source=rss",
-      "title": "With or without Hamas",
-      "seendate": "20261010T151941Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/10/three-injured-in-third-school-attack-in-poland-in-less-than-a-week?traffic_source=rss",
-      "title": "Three injured in third school attack in Poland in less than a week",
-      "seendate": "20261010T151355Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/10/liverpool-man-city-premier-league-isak-haaland-predictions-financial-breach?traffic_source=rss",
-      "title": "Liverpool vs Man City: Premier League – teams, prediction, Haaland, charges",
-      "seendate": "20261010T151122Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/society/2026/oct/10/vincent-chan-paedophile-nursery-worker-camden-council-warning-years-before-arrest",
-      "title": "Camden council was warned about paedophile nursery worker years before arrest",
-      "seendate": "20261010T150001Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cv8ezd246z1wo?at_medium=RSS&at_campaign=rss",
-      "title": "Woman injures three people in third Poland school knife attack in a week",
-      "seendate": "20261010T145855Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c8vgx9ew571wo?at_medium=RSS&at_campaign=rss",
-      "title": "Drone strike by Sudan paramilitary kills 41 near Ethiopian border, rights group says",
-      "seendate": "20261010T144932Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/10/ukraine-russia-strikes-war-trump-diesel-deal-zelenskyy",
-      "title": "Ukraine hit by deadly Russian strikes as ‘thanks’ for Trump diesel deal, Zelenskyy says",
-      "seendate": "20261010T144515Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/10/arsenal-beat-leeds-2-1-in-comeback-win-to-move-level-with-man-city-at-top?traffic_source=rss",
-      "title": "Arsenal beat Leeds 2-1 in comeback win to move level with Man City at top",
-      "seendate": "20261010T144239Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
     }
   ]
 }

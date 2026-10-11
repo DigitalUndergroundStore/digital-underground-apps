@@ -1,5 +1,11 @@
 # Pantry Week source changelog
 
+## 3.5.0 (2026-10-11)
+
+- **Library overhaul:** Replaced 24 gimmicky / bowl-style / random recipes with well-loved classics (cheeseburgers, lasagna, BBQ ribs, pork chops dinner, shepherd's pie, grilled cheese & tomato soup, sloppy joes, tacos, fajitas, pot roast, etc.). Existing keepers tagged `classic` / `collection-classic`. Total remains **248** recipes.
+- **Fill a simple week:** Strong preference for `classic` and familiar family dishes; de-prioritizes bowl-format titles.
+- **Photos:** Re-curated heroes for all replaced IDs via Openverse + CLIP vision gate (`scripts/vision-curate-photos.py`). Manifest: `library-v350-manifest.json`.
+
 ## 3.4.3 (2026-10-11)
 
 - **Pantry suggestions:** Canadian grocery synonym map (`pantry-normalize.js`) so “Cook from what you have” matches hamburger ↔ ground beef, white onion ↔ onion, ribs ↔ pork ribs, tortillas, pork chops, etc. List refreshes on every add/remove via existing render path.

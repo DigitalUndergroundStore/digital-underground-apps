@@ -1162,13 +1162,26 @@
     return false;
   }
 
+  function recipeClassicBoost(recipe) {
+    var tags = recipe.tags || [];
+    if (tags.indexOf("classic") !== -1 || tags.indexOf("collection-classic") !== -1) return 4.5;
+    if (tags.indexOf("canadian") !== -1) return 2.2;
+    if (tags.indexOf("collection-comfort") !== -1) return 1.8;
+    var name = String(recipe.name || "").toLowerCase();
+    if (/meatloaf|pot roast|shepherd|grilled cheese|cheeseburger|spaghetti|lasagna|chili|taco|fajita|roast chicken|pork chop|chicken parm|bbq|beef stew|chicken noodle|mac and cheese|butter chicken|tourtière|poutine|butter tart|pancake|omelette|fish and chips|sloppy joe|fried rice|stir.fry|bangers|meat sauce|burgers/.test(name)) {
+      return 3.5;
+    }
+    if (/\bbowl\b/i.test(name) && !/soup/i.test(name)) return -3;
+    return 0;
+  }
+
   function pickVariedRecipe(candidates, usedProteins, usedCuisines) {
     var best = null;
     var bestScore = -Infinity;
     candidates.forEach(function (recipe) {
       var protein = recipeProtein(recipe);
       var cuisine = recipeCuisine(recipe);
-      var score = Math.random();
+      var score = Math.random() + recipeClassicBoost(recipe);
       if (usedProteins.indexOf(protein) === -1) score += 2.2;
       if (usedCuisines.indexOf(cuisine) === -1) score += 1.6;
       if (score > bestScore) {
@@ -1403,7 +1416,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.4.3",
+    VERSION: "3.5.0",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,

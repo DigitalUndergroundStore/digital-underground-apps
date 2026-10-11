@@ -39,9 +39,8 @@
     });
     var pwa = "<link rel=\"stylesheet\" href=\"/assets/buyer/pwa-install.css\"><script src=\"/assets/buyer/pwa-install.js\" data-app-slug=\"pantry-week\" data-app-name=\"Pantry Week\" defer><\/script>";
     var duVer = "<script>window.__DU_APP_VERSION__=\"" + CFG.build + "\"><\/script><link rel=\"stylesheet\" href=\"/assets/buyer/pwa-update.css\"><script src=\"/assets/buyer/pwa-update.js\" data-sw-url=\"" + ROOT + "sw.js\" data-app-version=\"" + CFG.build + "\" data-app-label=\"Pantry Week\" defer><\/script>";
-    var skin = "<link rel=\"stylesheet\" href=\"" + ROOT + "skin/v3.css\"><script src=\"" + ROOT + "skin/v3.js\" defer><\/script>";
     var duAbout = "<script src=\"/assets/buyer/du-about-version.js\" defer><\/script>";
-    html = html.replace("</body>", pwa + duVer + skin + duAbout + "\n</body>");
+    html = html.replace("</body>", pwa + duVer + duAbout + "\n</body>");
     document.open(); document.write(html); document.close();
   }
   function netFail() { status("Couldn't load Pantry Week. Connect to the internet once to open it; after that it also works offline."); }

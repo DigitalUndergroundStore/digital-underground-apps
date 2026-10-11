@@ -27,11 +27,7 @@ Wait for a go. The Import feature is not live yet, so this cut does not show it.
 
 When Import recipes ships, add a scene of that screen. Keep the same music, the CAD$24 end card, and the full phone and tablet screens.
 
-The plain paper behind the devices is the background in the delivered videos. A motion prototype is in the capture page and stays off unless you pass `--motion`. It is a slow pan across blurred recipe photos from the app (pasta, chicken, salmon), with a warm veil and a few soft ingredient-colored shapes. The devices and the type stay sharp. Do not replace the delivered MP4s until that look is approved.
-
-```bash
-node render.mjs vertical --motion --preview --out=/tmp/pw-bg-preview
-```
+The next render uses the approved motion background by default: a slow pan across blurred recipe photos from the app (pasta, chicken, salmon), a warm veil, and a few soft ingredient-colored shapes. The devices, the full screens, and the type stay sharp. The music and the CAD$24 end card stay the same. The delivered MP4s are still the earlier paper-background cut. Do not replace those files until the next render, which also adds the Import recipes scene once that feature is live.
 
 ## Music
 

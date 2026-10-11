@@ -7,7 +7,6 @@ import { fileURLToPath } from "node:url";
 const root = path.dirname(fileURLToPath(import.meta.url));
 const format = process.argv[2] === "square" ? "square" : "vertical";
 const preview = process.argv.includes("--preview");
-const motion = process.argv.includes("--motion");
 const width = 1080;
 const height = format === "square" ? 1080 : 1920;
 const fps = 30;
@@ -33,11 +32,11 @@ const browser = await puppeteer.launch({
 const page = await browser.newPage();
 await page.setViewport({ width, height, deviceScaleFactor: 1 });
 await page.goto("file://" + path.join(root, "capture", "index.html"), { waitUntil: "networkidle0" });
-await page.evaluate((fmt, motion) => {
+await page.evaluate((fmt) => {
   document.documentElement.classList.toggle("square", fmt === "square");
-  document.documentElement.classList.toggle("motion", motion);
+  document.documentElement.classList.add("motion");
   document.body.style.height = fmt === "square" ? "1080px" : "1920px";
-}, format, motion);
+}, format);
 await page.evaluate(() => document.fonts.ready);
 await rm(outDir, { recursive: true, force: true });
 await mkdir(outDir, { recursive: true });

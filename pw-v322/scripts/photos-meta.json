@@ -1,0 +1,1490 @@
+{
+  "r1": {
+    "recipe": "Lemon Herb Chicken",
+    "file": "photos/r1.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r2": {
+    "recipe": "Veggie Scramble Toast",
+    "file": "photos/r2.webp",
+    "dish_type": "breakfast",
+    "generic_fallback": true
+  },
+  "r3": {
+    "recipe": "Chickpea Grain Bowls",
+    "file": "photos/r3.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": true
+  },
+  "r4": {
+    "recipe": "Tomato Basil Pasta",
+    "file": "photos/r4.webp",
+    "dish_type": "pasta",
+    "generic_fallback": false
+  },
+  "r5": {
+    "recipe": "Salmon & Broccoli Sheet Pan",
+    "file": "photos/r5.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r6": {
+    "recipe": "Overnight Oats Jars",
+    "file": "photos/r6.webp",
+    "dish_type": "breakfast",
+    "generic_fallback": false
+  },
+  "r7": {
+    "recipe": "Turkey Taco Skillet",
+    "file": "photos/r7.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r8": {
+    "recipe": "Caprese Chicken Salad",
+    "file": "photos/r8.webp",
+    "dish_type": "salad",
+    "generic_fallback": false
+  },
+  "r9": {
+    "recipe": "Black Bean Quesadillas",
+    "file": "photos/r9.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r10": {
+    "recipe": "Sausage & Pepper Pasta",
+    "file": "photos/r10.webp",
+    "dish_type": "pasta",
+    "generic_fallback": false
+  },
+  "r11": {
+    "recipe": "Greek Yogurt Parfaits",
+    "file": "photos/r11.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r12": {
+    "recipe": "Miso Ginger Soup + Tofu",
+    "file": "photos/r12.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r13": {
+    "recipe": "BLT Egg Sandwiches",
+    "file": "photos/r13.webp",
+    "dish_type": "sandwich",
+    "generic_fallback": false
+  },
+  "r14": {
+    "recipe": "Sheet Pan Fajitas",
+    "file": "photos/r14.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r15": {
+    "recipe": "Tuna White Bean Salad",
+    "file": "photos/r15.webp",
+    "dish_type": "salad",
+    "generic_fallback": false
+  },
+  "r16": {
+    "recipe": "Baked Potato Bar",
+    "file": "photos/r16.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r17": {
+    "recipe": "Peanut Noodle Bowls",
+    "file": "photos/r17.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r18": {
+    "recipe": "Shakshuka",
+    "file": "photos/r18.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r19": {
+    "recipe": "Pesto Gnocchi Skillet",
+    "file": "photos/r19.webp",
+    "dish_type": "pasta",
+    "generic_fallback": false
+  },
+  "r20": {
+    "recipe": "Turkey Chili",
+    "file": "photos/r20.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r21": {
+    "recipe": "Garlic Shrimp Skillet",
+    "file": "photos/r21.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r22": {
+    "recipe": "Veggie Fried Rice",
+    "file": "photos/r22.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r23": {
+    "recipe": "Hummus Crunch Wraps",
+    "file": "photos/r23.webp",
+    "dish_type": "pita_wrap",
+    "generic_fallback": false
+  },
+  "r24": {
+    "recipe": "Banana Oat Pancakes",
+    "file": "photos/r24.webp",
+    "dish_type": "breakfast",
+    "generic_fallback": false
+  },
+  "r25": {
+    "recipe": "Lemon Garlic Cod",
+    "file": "photos/r25.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r26": {
+    "recipe": "Black Bean Soup",
+    "file": "photos/r26.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r27": {
+    "recipe": "Caprese Toast",
+    "file": "photos/r27.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r28": {
+    "recipe": "Teriyaki Tofu Bowls",
+    "file": "photos/r28.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r29": {
+    "recipe": "Blended Tomato Soup",
+    "file": "photos/r29.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r30": {
+    "recipe": "Chicken Pita Pockets",
+    "file": "photos/r30.webp",
+    "dish_type": "pita_wrap",
+    "generic_fallback": false
+  },
+  "r31": {
+    "recipe": "Sweet Potato Hash",
+    "file": "photos/r31.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r32": {
+    "recipe": "Lentil Tacos",
+    "file": "photos/r32.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r33": {
+    "recipe": "Cucumber Chicken Salad",
+    "file": "photos/r33.webp",
+    "dish_type": "salad",
+    "generic_fallback": false
+  },
+  "r34": {
+    "recipe": "Mushroom Omelette",
+    "file": "photos/r34.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r35": {
+    "recipe": "Sesame Ginger Noodles",
+    "file": "photos/r35.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r36": {
+    "recipe": "White Bean Skillet",
+    "file": "photos/r36.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r37": {
+    "recipe": "Ginger Scallion Noodle Bowls",
+    "file": "photos/r37.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r38": {
+    "recipe": "Shakshuka for Two",
+    "file": "photos/r38.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r39": {
+    "recipe": "Peruvian Lime Chicken",
+    "file": "photos/r39.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r40": {
+    "recipe": "Coconut Curry Lentils",
+    "file": "photos/r40.webp",
+    "dish_type": "curry",
+    "generic_fallback": false
+  },
+  "r41": {
+    "recipe": "Korean Beef Lettuce Cups",
+    "file": "photos/r41.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r42": {
+    "recipe": "Moroccan Chickpea Stew",
+    "file": "photos/r42.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r43": {
+    "recipe": "Caprese Panini",
+    "file": "photos/r43.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r44": {
+    "recipe": "Thai Basil Pork",
+    "file": "photos/r44.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r45": {
+    "recipe": "Greek Lemon Orzo",
+    "file": "photos/r45.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r46": {
+    "recipe": "Harissa Roasted Cauliflower",
+    "file": "photos/r46.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r47": {
+    "recipe": "Breakfast Burrito Bowls",
+    "file": "photos/r47.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r48": {
+    "recipe": "Miso Butter Cod",
+    "file": "photos/r48.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r49": {
+    "recipe": "Vietnamese Lemongrass Tofu",
+    "file": "photos/r49.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r50": {
+    "recipe": "Spanish Garlic Shrimp",
+    "file": "photos/r50.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r51": {
+    "recipe": "Ethiopian Berbere Lentil Bowl",
+    "file": "photos/r51.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r52": {
+    "recipe": "Jamaican Jerk Chicken Skewers",
+    "file": "photos/r52.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r53": {
+    "recipe": "Turkish Eggplant Tomato Bake",
+    "file": "photos/r53.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r54": {
+    "recipe": "Sichuan Mapo Tofu",
+    "file": "photos/r54.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r55": {
+    "recipe": "Brazilian Black Bean Soup",
+    "file": "photos/r55.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r56": {
+    "recipe": "French Herb Omelette",
+    "file": "photos/r56.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r57": {
+    "recipe": "Caribbean Coconut Rice & Peas",
+    "file": "photos/r57.webp",
+    "dish_type": "rice",
+    "generic_fallback": false
+  },
+  "r58": {
+    "recipe": "Lebanese Fattoush Salad",
+    "file": "photos/r58.webp",
+    "dish_type": "salad",
+    "generic_fallback": false
+  },
+  "r59": {
+    "recipe": "Italian Sausage & Peppers",
+    "file": "photos/r59.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r60": {
+    "recipe": "Japanese Teriyaki Salmon",
+    "file": "photos/r60.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r61": {
+    "recipe": "Indian Saag Paneer",
+    "file": "photos/r61.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r62": {
+    "recipe": "Mexican Street Corn Salad",
+    "file": "photos/r62.webp",
+    "dish_type": "salad",
+    "generic_fallback": false
+  },
+  "r63": {
+    "recipe": "Southern Shrimp & Grits",
+    "file": "photos/r63.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r64": {
+    "recipe": "Chinese Egg Drop Soup",
+    "file": "photos/r64.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r65": {
+    "recipe": "Filipino Garlic Fried Rice",
+    "file": "photos/r65.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r66": {
+    "recipe": "Persian Herb Rice with Eggs",
+    "file": "photos/r66.webp",
+    "dish_type": "rice",
+    "generic_fallback": false
+  },
+  "r67": {
+    "recipe": "Cajun Red Beans & Rice",
+    "file": "photos/r67.webp",
+    "dish_type": "rice",
+    "generic_fallback": false
+  },
+  "r68": {
+    "recipe": "Swedish Meatball Skillet",
+    "file": "photos/r68.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r69": {
+    "recipe": "Tunisian Couscous Shakshuka",
+    "file": "photos/r69.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r70": {
+    "recipe": "Hawaiian Ahi Poke Bowls",
+    "file": "photos/r70.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r71": {
+    "recipe": "British Pea & Mint Soup",
+    "file": "photos/r71.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r72": {
+    "recipe": "Argentine Chimichurri Steak",
+    "file": "photos/r72.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r73": {
+    "recipe": "Malaysian Peanut Noodles",
+    "file": "photos/r73.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r74": {
+    "recipe": "Russian Beet Borscht",
+    "file": "photos/r74.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r75": {
+    "recipe": "Israeli Shakshuka Toast",
+    "file": "photos/r75.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r76": {
+    "recipe": "Cuban Mojo Pork Bowls",
+    "file": "photos/r76.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r77": {
+    "recipe": "Nepalese Dal Bhat",
+    "file": "photos/r77.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r78": {
+    "recipe": "Portuguese Kale Sausage Soup",
+    "file": "photos/r78.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r79": {
+    "recipe": "Indonesian Gado Gado",
+    "file": "photos/r79.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r80": {
+    "recipe": "German Mustard Schnitzel",
+    "file": "photos/r80.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r81": {
+    "recipe": "Colombian Bandeja Beans",
+    "file": "photos/r81.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r82": {
+    "recipe": "Egyptian Koshari",
+    "file": "photos/r82.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r83": {
+    "recipe": "Polish Pierogi Pan Fry",
+    "file": "photos/r83.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r84": {
+    "recipe": "Thai Green Curry Shrimp",
+    "file": "photos/r84.webp",
+    "dish_type": "curry",
+    "generic_fallback": false
+  },
+  "r85": {
+    "recipe": "Irish Colcannon",
+    "file": "photos/r85.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r86": {
+    "recipe": "Senegalese Peanut Stew",
+    "file": "photos/r86.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r87": {
+    "recipe": "Australian Lamb Chops",
+    "file": "photos/r87.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r88": {
+    "recipe": "Chilean Corn Casserole",
+    "file": "photos/r88.webp",
+    "dish_type": "baked_pasta",
+    "generic_fallback": false
+  },
+  "r89": {
+    "recipe": "Georgian Cheese Flatbread",
+    "file": "photos/r89.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r90": {
+    "recipe": "Honey Sesame Brussels Sprouts",
+    "file": "photos/r90.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r91": {
+    "recipe": "Smoked Paprika Paella",
+    "file": "photos/r91.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r92": {
+    "recipe": "Coconut Lime Rice Pudding",
+    "file": "photos/r92.webp",
+    "dish_type": "rice",
+    "generic_fallback": false
+  },
+  "r93": {
+    "recipe": "Dark Chocolate Avocado Mousse",
+    "file": "photos/r93.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r94": {
+    "recipe": "Berry Chia Parfait",
+    "file": "photos/r94.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r95": {
+    "recipe": "Banana Oat Pancakes",
+    "file": "photos/r95.webp",
+    "dish_type": "breakfast",
+    "generic_fallback": false
+  },
+  "r96": {
+    "recipe": "Lemon Ricotta Toast",
+    "file": "photos/r96.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r97": {
+    "recipe": "Spiced Apple Crisp",
+    "file": "photos/r97.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r98": {
+    "recipe": "No-Bake Almond Date Bites",
+    "file": "photos/r98.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r99": {
+    "recipe": "Mango Lassi Smoothie Bowls",
+    "file": "photos/r99.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r100": {
+    "recipe": "Tahini Banana Nice Cream",
+    "file": "photos/r100.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r101": {
+    "recipe": "Crispy Tofu Banh Mi Bowls",
+    "file": "photos/r101.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r102": {
+    "recipe": "Lamb Kofta with Yogurt",
+    "file": "photos/r102.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r103": {
+    "recipe": "Roasted Pepper Hummus Wraps",
+    "file": "photos/r103.webp",
+    "dish_type": "pita_wrap",
+    "generic_fallback": false
+  },
+  "r104": {
+    "recipe": "Chipotle Sweet Potato Tacos",
+    "file": "photos/r104.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r105": {
+    "recipe": "Creamy Tomato Tortellini",
+    "file": "photos/r105.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r106": {
+    "recipe": "Walnut Pesto Gnocchi",
+    "file": "photos/r106.webp",
+    "dish_type": "pasta",
+    "generic_fallback": false
+  },
+  "r107": {
+    "recipe": "Sheet-Pan Sausage & Fennel",
+    "file": "photos/r107.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r108": {
+    "recipe": "Baked Falafel Pitas",
+    "file": "photos/r108.webp",
+    "dish_type": "pita_wrap",
+    "generic_fallback": false
+  },
+  "r109": {
+    "recipe": "Cider-Glazed Pork Chops",
+    "file": "photos/r109.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r110": {
+    "recipe": "Mushroom Risotto",
+    "file": "photos/r110.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r111": {
+    "recipe": "Clam Linguine",
+    "file": "photos/r111.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r112": {
+    "recipe": "BBQ Chicken Flatbreads",
+    "file": "photos/r112.webp",
+    "dish_type": "bbq",
+    "generic_fallback": false
+  },
+  "r113": {
+    "recipe": "Zucchini Fritters",
+    "file": "photos/r113.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r114": {
+    "recipe": "Stuffed Bell Peppers",
+    "file": "photos/r114.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r115": {
+    "recipe": "Tuna Nicoise Salad",
+    "file": "photos/r115.webp",
+    "dish_type": "salad",
+    "generic_fallback": false
+  },
+  "r116": {
+    "recipe": "Chicken Tikka Lettuce Wraps",
+    "file": "photos/r116.webp",
+    "dish_type": "pita_wrap",
+    "generic_fallback": false
+  },
+  "r117": {
+    "recipe": "Pumpkin Coconut Soup",
+    "file": "photos/r117.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r118": {
+    "recipe": "Broccoli Cheddar Frittata",
+    "file": "photos/r118.webp",
+    "dish_type": "breakfast",
+    "generic_fallback": false
+  },
+  "r119": {
+    "recipe": "Sesame Soba Salad",
+    "file": "photos/r119.webp",
+    "dish_type": "salad",
+    "generic_fallback": false
+  },
+  "r120": {
+    "recipe": "Garlic Butter Steak Bites",
+    "file": "photos/r120.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r121": {
+    "recipe": "Coconut Curry Mussels",
+    "file": "photos/r121.webp",
+    "dish_type": "curry",
+    "generic_fallback": false
+  },
+  "r122": {
+    "recipe": "Spinach Artichoke Quesadillas",
+    "file": "photos/r122.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r123": {
+    "recipe": "Roasted Grape & Goat Cheese",
+    "file": "photos/r123.webp",
+    "dish_type": "breakfast",
+    "generic_fallback": false
+  },
+  "r124": {
+    "recipe": "Kimchi Fried Rice",
+    "file": "photos/r124.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r125": {
+    "recipe": "Cinnamon Pear Compote",
+    "file": "photos/r125.webp",
+    "dish_type": "dessert",
+    "generic_fallback": false
+  },
+  "r126": {
+    "recipe": "Midnight Chili Nachos",
+    "file": "photos/r126.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r127": {
+    "recipe": "Classic Tourti\u00e8re",
+    "file": "photos/r127.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r128": {
+    "recipe": "Shepherd's Pie",
+    "file": "photos/r128.webp",
+    "dish_type": "meat_pie",
+    "generic_fallback": false
+  },
+  "r129": {
+    "recipe": "Weeknight Butter Chicken",
+    "file": "photos/r129.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r130": {
+    "recipe": "Montreal Smoked Meat Sandwich",
+    "file": "photos/r130.webp",
+    "dish_type": "sandwich",
+    "generic_fallback": false
+  },
+  "r131": {
+    "recipe": "Toronto Peameal Bacon Sandwich",
+    "file": "photos/r131.webp",
+    "dish_type": "sandwich",
+    "generic_fallback": false
+  },
+  "r132": {
+    "recipe": "Weeknight Shortcut Poutine",
+    "file": "photos/r132.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r133": {
+    "recipe": "Canadian Split Pea Soup",
+    "file": "photos/r133.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r134": {
+    "recipe": "Maple-Glazed Salmon",
+    "file": "photos/r134.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r135": {
+    "recipe": "Maple-Dijon Pork Chops",
+    "file": "photos/r135.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r136": {
+    "recipe": "Dutch-Oven Pot Roast",
+    "file": "photos/r136.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r137": {
+    "recipe": "Hearty Beef Stew",
+    "file": "photos/r137.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r138": {
+    "recipe": "Sunday Roast Chicken with Root Vegetables",
+    "file": "photos/r138.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r139": {
+    "recipe": "Perogies with Sausage & Caramelized Onions",
+    "file": "photos/r139.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r140": {
+    "recipe": "Cabbage Rolls",
+    "file": "photos/r140.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r141": {
+    "recipe": "Classic Chicken Pot Pie",
+    "file": "photos/r141.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r142": {
+    "recipe": "Stovetop Mac and Cheese",
+    "file": "photos/r142.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r143": {
+    "recipe": "Canadian Hawaiian Pizza",
+    "file": "photos/r143.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r144": {
+    "recipe": "All-Beef Weeknight Chili",
+    "file": "photos/r144.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r145": {
+    "recipe": "Slow-Cooker Pulled Pork",
+    "file": "photos/r145.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r146": {
+    "recipe": "Oven BBQ Back Ribs",
+    "file": "photos/r146.webp",
+    "dish_type": "bbq",
+    "generic_fallback": false
+  },
+  "r147": {
+    "recipe": "Pan-Seared Steak with Mushrooms",
+    "file": "photos/r147.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r148": {
+    "recipe": "Weeknight Fish & Chips",
+    "file": "photos/r148.webp",
+    "dish_type": "fish_chips",
+    "generic_fallback": false
+  },
+  "r149": {
+    "recipe": "Nanaimo Bars",
+    "file": "photos/r149.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r150": {
+    "recipe": "Classic Butter Tarts",
+    "file": "photos/r150.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r151": {
+    "recipe": "Skillet Bannock",
+    "file": "photos/r151.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r152": {
+    "recipe": "Maple Apple Crisp",
+    "file": "photos/r152.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r153": {
+    "recipe": "Montreal-Style Bagels with Cream Cheese",
+    "file": "photos/r153.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r154": {
+    "recipe": "Maple Baked Beans",
+    "file": "photos/r154.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r155": {
+    "recipe": "Creamy Chicken and Dumplings",
+    "file": "photos/r155.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r156": {
+    "recipe": "Meatloaf with Pan Gravy",
+    "file": "photos/r156.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r157": {
+    "recipe": "Baked Ziti with Ricotta",
+    "file": "photos/r157.webp",
+    "dish_type": "baked_pasta",
+    "generic_fallback": false
+  },
+  "r158": {
+    "recipe": "Country Sausage Gravy & Biscuits",
+    "file": "photos/r158.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r159": {
+    "recipe": "Loaded Baked Potato Soup",
+    "file": "photos/r159.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r160": {
+    "recipe": "Tater Tot Hotdish",
+    "file": "photos/r160.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r161": {
+    "recipe": "Chicken and Wild Rice Casserole",
+    "file": "photos/r161.webp",
+    "dish_type": "baked_pasta",
+    "generic_fallback": false
+  },
+  "r162": {
+    "recipe": "Beef and Noodle Skillet Supper",
+    "file": "photos/r162.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r163": {
+    "recipe": "Garlic Shrimp Spaghetti",
+    "file": "photos/r163.webp",
+    "dish_type": "pasta",
+    "generic_fallback": false
+  },
+  "r164": {
+    "recipe": "Turkey Taco Skillet",
+    "file": "photos/r164.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r165": {
+    "recipe": "Lemon Herb Sheet-Pan Chicken",
+    "file": "photos/r165.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r166": {
+    "recipe": "Pork Stir-Fry with Peppers",
+    "file": "photos/r166.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r167": {
+    "recipe": "Caprese Chicken Cutlets",
+    "file": "photos/r167.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r168": {
+    "recipe": "Sausage and Broccoli Pasta",
+    "file": "photos/r168.webp",
+    "dish_type": "pasta",
+    "generic_fallback": false
+  },
+  "r169": {
+    "recipe": "Party Sliders with Caramelized Onions",
+    "file": "photos/r169.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r170": {
+    "recipe": "Big-Batch Baked Macaroni",
+    "file": "photos/r170.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r171": {
+    "recipe": "Sheet-Pan Fajita Feast",
+    "file": "photos/r171.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r172": {
+    "recipe": "Crowd-Pleasing Meatball Subs",
+    "file": "photos/r172.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r173": {
+    "recipe": "Slow-Cooker Beef Barbacoa",
+    "file": "photos/r173.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r174": {
+    "recipe": "Crockpot Chicken Tikka Masala",
+    "file": "photos/r174.webp",
+    "dish_type": "curry",
+    "generic_fallback": false
+  },
+  "r175": {
+    "recipe": "Slow-Cooker Lentil Curry",
+    "file": "photos/r175.webp",
+    "dish_type": "curry",
+    "generic_fallback": false
+  },
+  "r176": {
+    "recipe": "Set-and-Forget Chili",
+    "file": "photos/r176.webp",
+    "dish_type": "soup",
+    "generic_fallback": true
+  },
+  "r177": {
+    "recipe": "Honey Garlic Slow-Cooker Wings",
+    "file": "photos/r177.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r178": {
+    "recipe": "One-Pan Lemon Garlic Salmon",
+    "file": "photos/r178.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r179": {
+    "recipe": "Skillet Sausage and Peppers",
+    "file": "photos/r179.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r180": {
+    "recipe": "One-Pan Greek Chicken and Potatoes",
+    "file": "photos/r180.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r181": {
+    "recipe": "Shrimp and Orzo One-Pot",
+    "file": "photos/r181.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r182": {
+    "recipe": "Sheet-Pan Pork Chops and Apples",
+    "file": "photos/r182.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r183": {
+    "recipe": "Grilled Marinated Flank Steak",
+    "file": "photos/r183.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r184": {
+    "recipe": "BBQ Chicken Drumsticks",
+    "file": "photos/r184.webp",
+    "dish_type": "bbq",
+    "generic_fallback": false
+  },
+  "r185": {
+    "recipe": "Weeknight Minestrone",
+    "file": "photos/r185.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r186": {
+    "recipe": "Creamy Tomato Tortellini Soup",
+    "file": "photos/r186.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r187": {
+    "recipe": "Pub-Style Fish and Chips",
+    "file": "photos/r187.webp",
+    "dish_type": "fish_chips",
+    "generic_fallback": false
+  },
+  "r188": {
+    "recipe": "Shepherd's Pie Potato Bowls",
+    "file": "photos/r188.webp",
+    "dish_type": "meat_pie",
+    "generic_fallback": false
+  },
+  "r189": {
+    "recipe": "Beer-Battered Onion Rings",
+    "file": "photos/r189.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r190": {
+    "recipe": "Spaghetti and Meatballs",
+    "file": "photos/r190.webp",
+    "dish_type": "pasta",
+    "generic_fallback": false
+  },
+  "r191": {
+    "recipe": "Chicken Parmesan Skillet",
+    "file": "photos/r191.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r192": {
+    "recipe": "Cheesy Beef Enchiladas",
+    "file": "photos/r192.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r193": {
+    "recipe": "Loaded Nacho Supreme",
+    "file": "photos/r193.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r194": {
+    "recipe": "Sesame Ginger Stir-Fry",
+    "file": "photos/r194.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r195": {
+    "recipe": "Takeout-Style Fried Rice",
+    "file": "photos/r195.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r196": {
+    "recipe": "Miso Ramen Bowls",
+    "file": "photos/r196.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r197": {
+    "recipe": "Weekend French Toast Bake",
+    "file": "photos/r197.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r198": {
+    "recipe": "Savory Breakfast Burritos",
+    "file": "photos/r198.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r199": {
+    "recipe": "Turkey Avocado Club Wraps",
+    "file": "photos/r199.webp",
+    "dish_type": "pita_wrap",
+    "generic_fallback": true
+  },
+  "r200": {
+    "recipe": "Mediterranean Grain Lunch Bowls",
+    "file": "photos/r200.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r201": {
+    "recipe": "Baked Ziti with Sausage",
+    "file": "photos/r201.webp",
+    "dish_type": "baked_pasta",
+    "generic_fallback": false
+  },
+  "r202": {
+    "recipe": "Chicken Pot Pie Skillet",
+    "file": "photos/r202.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r203": {
+    "recipe": "Classic Meatloaf & Mash",
+    "file": "photos/r203.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r204": {
+    "recipe": "Creamy Chicken Alfredo",
+    "file": "photos/r204.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r205": {
+    "recipe": "Baked Mac and Cheese",
+    "file": "photos/r205.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r206": {
+    "recipe": "Tuna Noodle Casserole",
+    "file": "photos/r206.webp",
+    "dish_type": "baked_pasta",
+    "generic_fallback": false
+  },
+  "r207": {
+    "recipe": "One-Pan Lemon Herb Chicken",
+    "file": "photos/r207.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r208": {
+    "recipe": "Sheet Pan Sausage & Peppers",
+    "file": "photos/r208.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r209": {
+    "recipe": "Slow Cooker Pulled Pork",
+    "file": "photos/r209.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r210": {
+    "recipe": "Slow Cooker Chicken Tikka",
+    "file": "photos/r210.webp",
+    "dish_type": "curry",
+    "generic_fallback": false
+  },
+  "r211": {
+    "recipe": "One-Pan Shrimp Fajitas",
+    "file": "photos/r211.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r212": {
+    "recipe": "Slow Cooker Beef Chili",
+    "file": "photos/r212.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r213": {
+    "recipe": "Sticky BBQ Chicken Thighs",
+    "file": "photos/r213.webp",
+    "dish_type": "bbq",
+    "generic_fallback": false
+  },
+  "r214": {
+    "recipe": "Grilled Corn Ribs with Lime Butter",
+    "file": "photos/r214.webp",
+    "dish_type": "bbq",
+    "generic_fallback": true
+  },
+  "r215": {
+    "recipe": "BBQ Brisket Sandwiches",
+    "file": "photos/r215.webp",
+    "dish_type": "bbq",
+    "generic_fallback": false
+  },
+  "r216": {
+    "recipe": "Grilled BBQ Pork Chops",
+    "file": "photos/r216.webp",
+    "dish_type": "bbq",
+    "generic_fallback": false
+  },
+  "r217": {
+    "recipe": "Smoky BBQ Meatballs",
+    "file": "photos/r217.webp",
+    "dish_type": "bbq",
+    "generic_fallback": false
+  },
+  "r218": {
+    "recipe": "Charred BBQ Cauliflower Steaks",
+    "file": "photos/r218.webp",
+    "dish_type": "bbq",
+    "generic_fallback": false
+  },
+  "r219": {
+    "recipe": "Hearty Vegetable Minestrone",
+    "file": "photos/r219.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r220": {
+    "recipe": "Classic Chicken Noodle Soup",
+    "file": "photos/r220.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r221": {
+    "recipe": "Spicy Black Bean Soup",
+    "file": "photos/r221.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r222": {
+    "recipe": "Beef and Barley Stew",
+    "file": "photos/r222.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r223": {
+    "recipe": "Creamy Tomato Tortellini Soup",
+    "file": "photos/r223.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r224": {
+    "recipe": "Lentil Sausage Stew",
+    "file": "photos/r224.webp",
+    "dish_type": "soup",
+    "generic_fallback": false
+  },
+  "r225": {
+    "recipe": "Fish and Chips Tray Bake",
+    "file": "photos/r225.webp",
+    "dish_type": "fish_chips",
+    "generic_fallback": false
+  },
+  "r226": {
+    "recipe": "Shepherd's Pie Pub Style",
+    "file": "photos/r226.webp",
+    "dish_type": "meat_pie",
+    "generic_fallback": false
+  },
+  "r227": {
+    "recipe": "Bangers and Mash Bowls",
+    "file": "photos/r227.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r228": {
+    "recipe": "Pub Cheese Steak Skillet",
+    "file": "photos/r228.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r229": {
+    "recipe": "Crispy Chicken Tenders & Fries",
+    "file": "photos/r229.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r230": {
+    "recipe": "Mushroom Stout Pie",
+    "file": "photos/r230.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r231": {
+    "recipe": "Chicken Enchilada Bake",
+    "file": "photos/r231.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r232": {
+    "recipe": "Beef Burrito Bowls",
+    "file": "photos/r232.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r233": {
+    "recipe": "Queso Fundido Nachos",
+    "file": "photos/r233.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r234": {
+    "recipe": "Shrimp Tacos with Slaw",
+    "file": "photos/r234.webp",
+    "dish_type": "tacos",
+    "generic_fallback": false
+  },
+  "r235": {
+    "recipe": "Tex-Mex Stuffed Peppers",
+    "file": "photos/r235.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r236": {
+    "recipe": "Chipotle Lime Rice Bowls",
+    "file": "photos/r236.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r237": {
+    "recipe": "Sesame Ginger Stir-Fry Noodles",
+    "file": "photos/r237.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  },
+  "r238": {
+    "recipe": "Orange Chicken Skillet",
+    "file": "photos/r238.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r239": {
+    "recipe": "Pad Thai with Shrimp",
+    "file": "photos/r239.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r240": {
+    "recipe": "General Tso's Cauliflower",
+    "file": "photos/r240.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r241": {
+    "recipe": "Korean Beef Rice Bowls",
+    "file": "photos/r241.webp",
+    "dish_type": "grain_bowl",
+    "generic_fallback": false
+  },
+  "r242": {
+    "recipe": "Sweet & Sour Pork",
+    "file": "photos/r242.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r243": {
+    "recipe": "Everything Bagel Breakfast Casserole",
+    "file": "photos/r243.webp",
+    "dish_type": "baked_pasta",
+    "generic_fallback": false
+  },
+  "r244": {
+    "recipe": "Spinach Feta Breakfast Wraps",
+    "file": "photos/r244.webp",
+    "dish_type": "pita_wrap",
+    "generic_fallback": false
+  },
+  "r245": {
+    "recipe": "Turkey Club Lunch Boxes",
+    "file": "photos/r245.webp",
+    "dish_type": "default",
+    "generic_fallback": true
+  },
+  "r246": {
+    "recipe": "Mediterranean Tuna Salad Pitas",
+    "file": "photos/r246.webp",
+    "dish_type": "pita_wrap",
+    "generic_fallback": false
+  },
+  "r247": {
+    "recipe": "Caprese Panini Lunch",
+    "file": "photos/r247.webp",
+    "dish_type": "default",
+    "generic_fallback": false
+  },
+  "r248": {
+    "recipe": "Peanut Noodle Lunch Jars",
+    "file": "photos/r248.webp",
+    "dish_type": "stir_fry",
+    "generic_fallback": false
+  }
+}

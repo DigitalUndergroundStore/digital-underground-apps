@@ -1,0 +1,121 @@
+{
+  "soup": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Red_lentil_soup_bowl.jpg/960px-Red_lentil_soup_bowl.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Red lentil soup bowl",
+    "description": "Bowl of thick orange-red soup with herbs on a table"
+  },
+  "tacos": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Tacos_at_restaurant_Chalupa.jpg/960px-Tacos_at_restaurant_Chalupa.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Plated tacos",
+    "description": "Three tacos on a white plate with garnish"
+  },
+  "pita_wrap": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Liat_Portal_for_Foodie_Disorder_-_Chicken_salad_sandwich_with_Israeli_salad.jpg/960px-Liat_Portal_for_Foodie_Disorder_-_Chicken_salad_sandwich_with_Israeli_salad.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Stuffed pita sandwich plate",
+    "description": "Plated sandwich/pita-style lunch with salad"
+  },
+  "pasta": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Liat_Portal_for_Foodie_Disorder_-_Creamy_Tomato_Seafood_Pasta.jpg/960px-Liat_Portal_for_Foodie_Disorder_-_Creamy_Tomato_Seafood_Pasta.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Tomato pasta bowl",
+    "description": "Creamy red sauce pasta in a wide bowl"
+  },
+  "baked_pasta": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/A_Pasta_dish_with_meatballs_and_tomato_sauce.jpg/960px-A_Pasta_dish_with_meatballs_and_tomato_sauce.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY",
+    "title": "Baked pasta with sauce",
+    "description": "Cheesy baked pasta with tomato sauce on a plate"
+  },
+  "fish_chips": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Fish_and_chips_plate_with_peas.jpg/960px-Fish_and_chips_plate_with_peas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Fish and chips plate with peas",
+    "description": "Golden battered fish with chips on a plate"
+  },
+  "meat_pie": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Food_warmer_with_cauliflower_cheese_carrots_lasagne_shepherds_pie.jpg/960px-Food_warmer_with_cauliflower_cheese_carrots_lasagne_shepherds_pie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Food warmer with cauliflower cheese carrots lasagne shepherds pie.jpg",
+    "description": "Baked meat pie with mashed potato topping in a dish"
+  },
+  "grain_bowl": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Donburi_Rice_bowl_of_Chicken_Teriyaki_with_Tomato.jpg/960px-Donburi_Rice_bowl_of_Chicken_Teriyaki_with_Tomato.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY",
+    "title": "Rice grain bowl",
+    "description": "Rice bowl topped with protein and vegetables"
+  },
+  "salad": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Salad_bowl_in_Tampere.jpg/960px-Salad_bowl_in_Tampere.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Green salad bowl",
+    "description": "Fresh salad in a bowl"
+  },
+  "stir_fry": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Noodle_stir_fry_with_chicken%2C_shrimp%2C_and_broccoli_%2818471621051%29.jpg/960px-Noodle_stir_fry_with_chicken%2C_shrimp%2C_and_broccoli_%2818471621051%29.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY",
+    "title": "Stir-fry noodles plate",
+    "description": "Plated noodle stir-fry with vegetables"
+  },
+  "curry": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Food_Indian_butter_chicken_%2852843424475%29.jpg/960px-Food_Indian_butter_chicken_%2852843424475%29.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY",
+    "title": "Curry with rice",
+    "description": "Orange curry sauce with rice on a plate"
+  },
+  "breakfast": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Liat_Portal_for_Foodie_Disorder_-_Scrambled_Eggs_on_Whole_Grain_Toast_with_Yellow_Tomatoes.jpg/960px-Liat_Portal_for_Foodie_Disorder_-_Scrambled_Eggs_on_Whole_Grain_Toast_with_Yellow_Tomatoes.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Eggs on toast breakfast",
+    "description": "Scrambled eggs on toast, breakfast plate"
+  },
+  "bbq": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Angus_beef_steak_with_potato.jpg/960px-Angus_beef_steak_with_potato.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Grilled steak plate",
+    "description": "Grilled steak with potato sides"
+  },
+  "dessert": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fruit_Salad_Or_Fruit_Bowl.jpg/960px-Fruit_Salad_Or_Fruit_Bowl.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Fruit bowl dessert",
+    "description": "Colorful fruit in a bowl"
+  },
+  "sandwich": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Chicken_Fillet%2C_Scrambled_Egg_%26_Hash_Brown_Breakfast.jpg/960px-Chicken_Fillet%2C_Scrambled_Egg_%26_Hash_Brown_Breakfast.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY-SA",
+    "title": "Hot sandwich plate",
+    "description": "Plated sandwich-style lunch"
+  },
+  "rice": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chinese_vegetable_stir_fry_noodles.jpg/960px-Chinese_vegetable_stir_fry_noodles.jpg",
+    "source": "Wikimedia Commons",
+    "license": "CC BY",
+    "title": "Fried rice style plate",
+    "description": "Plated rice/noodle stir-fry"
+  },
+  "default": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Grilled_plated_salmon_fillet.jpg/960px-Grilled_plated_salmon_fillet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source": "Wikimedia Commons",
+    "license": "CC BY",
+    "title": "Grilled_plated_salmon_fillet.jpg",
+    "description": "Grilled fillet on a white plate"
+  }
+}

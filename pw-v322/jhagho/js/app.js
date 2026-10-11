@@ -40,7 +40,7 @@
     fill: null,
     importError: "",
     tabAnim: null,
-    smartChef: { variation: 0, servings: 4, result: null }
+    smartChef: { variation: 0, servings: 4, result: null, sessionHashes: [] }
   };
 
   const $ = (id) => document.getElementById(id);
@@ -609,14 +609,29 @@
     </li>`;
   }
 
+  function recordSmartChefResult(result) {
+    if (!result || result.error || !result.fingerprint || !window.PW_SMART_CHEF) return;
+    if (!ui.smartChef.sessionHashes) ui.smartChef.sessionHashes = [];
+    if (ui.smartChef.sessionHashes.indexOf(result.fingerprint) === -1) {
+      ui.smartChef.sessionHashes.push(result.fingerprint);
+    }
+    PW_SMART_CHEF.persistHash(result.fingerprint);
+    ui.smartChef.variation = result.variation;
+  }
+
   function refreshSmartChef(force) {
     if (!window.PW_SMART_CHEF) return;
-    if (!ui.smartChef) ui.smartChef = { variation: 0, servings: 4, result: null };
+    if (!ui.smartChef) ui.smartChef = { variation: 0, servings: 4, result: null, sessionHashes: [] };
+    if (!ui.smartChef.sessionHashes) ui.smartChef.sessionHashes = [];
     if (!force && ui.smartChef.result && !ui.smartChef.result.error) return;
+    const rejectHashes = ui.smartChef.sessionHashes.concat(PW_SMART_CHEF.loadHashes());
     ui.smartChef.result = PW_SMART_CHEF.generate(state.pantry, {
       variation: ui.smartChef.variation,
-      servings: ui.smartChef.servings
+      servings: ui.smartChef.servings,
+      existingRecipes: state.recipes,
+      rejectHashes: rejectHashes
     });
+    recordSmartChefResult(ui.smartChef.result);
   }
 
   function smartChefSectionHtml() {
@@ -669,7 +684,6 @@
   }
 
   function smartChefDraftRecipe() {
-    refreshSmartChef(true);
     const r = ui.smartChef && ui.smartChef.result;
     if (!r || r.error) return null;
     return PW.normalizeRecipe(PW.clone(r.recipe));
@@ -702,7 +716,10 @@
   }
 
   function bumpSmartChefPantry() {
-    if (ui.smartChef) ui.smartChef.result = null;
+    if (!ui.smartChef) return;
+    ui.smartChef.result = null;
+    ui.smartChef.sessionHashes = [];
+    ui.smartChef.variation = 0;
   }
 
   function addSmartChefMissingToList() {
@@ -1539,7 +1556,8 @@
     else if (action === "copy-list") copyOrShow("Shopping list", PW.listAsText(PW.buildShoppingList(state)));
     else if (action === "share-pantry") sharePantryMeals();
     else if (action === "smart-chef-again") {
-      ui.smartChef.variation = (ui.smartChef.variation || 0) + 1;
+      const prev = ui.smartChef.result;
+      ui.smartChef.variation = prev && prev.variation != null ? prev.variation + 1 : (ui.smartChef.variation || 0) + 1;
       refreshSmartChef(true);
       render();
     } else if (action === "smart-chef-save") {

@@ -501,15 +501,150 @@
     }
   ];
 
-  function generate(pantry, options) {
-    options = options || {};
-    var servings = options.servings || 4;
-    var variation = options.variation || 0;
-    var buckets = classifyPantry(pantry);
-    if (buckets.count < 2) {
-      return { error: "Add at least two pantry items (for example chicken and rice) so Smart Chef can build a recipe." };
+  var HASH_STORAGE_KEY = "pantry_week_smart_chef_hashes";
+  var HASH_CAP = 240;
+  var MAX_GENERATE_ATTEMPTS = 96;
+  var NAME_STOP = /\b(rustic|weeknight|quick|hearty|home style|home-style|cozy|ginger|savory|zesty|smoky|fragrant|mild|garlic)\b/gi;
+
+  function normalizeTitle(name) {
+    return String(name || "").toLowerCase().replace(NAME_STOP, " ").replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
+  }
+
+  function detectProteinFromRecipe(recipe) {
+    var found = "none";
+    (recipe.ingredients || []).forEach(function (ing) {
+      var k = stapleKey(ing.item);
+      LEX.protein.forEach(function (p) {
+        p.keys.forEach(function (key) {
+          if (k.indexOf(stapleKey(key)) !== -1 || stapleKey(key).indexOf(k) !== -1) found = p.label;
+        });
+      });
+    });
+    var n = normalizeTitle(recipe.name);
+    if (found === "none") {
+      if (n.indexOf("chicken") !== -1) found = "chicken";
+      else if (n.indexOf("beef") !== -1) found = "ground beef";
+      else if (n.indexOf("tofu") !== -1) found = "firm tofu";
+      else if (n.indexOf("shrimp") !== -1) found = "shrimp";
+      else if (n.indexOf("salmon") !== -1 || n.indexOf("fish") !== -1) found = "fish";
+      else if (n.indexOf("egg") !== -1) found = "eggs";
     }
-    var absurd = buckets.protein && buckets.protein.def.label === "fish" && buckets.starch && stapleKey(b.starch.name).indexOf("pasta") !== -1 && variation % 3 === 0;
+    return found;
+  }
+
+  function inferTemplateId(recipe) {
+    var n = normalizeTitle(recipe.name);
+    if (n.indexOf("stir fry") !== -1 || n.indexOf("stir-fry") !== -1) return "stir-fry";
+    if (n.indexOf("pasta") !== -1) return "pasta";
+    if (n.indexOf("sheet pan") !== -1) return "sheet-pan";
+    if (n.indexOf("soup") !== -1) return "soup";
+    if (n.indexOf("curry") !== -1) return "curry";
+    if (n.indexOf("bowl") !== -1) return "grain-bowl";
+    if (n.indexOf("taco") !== -1) return "tacos";
+    if (n.indexOf("frittata") !== -1) return "frittata";
+    if (n.indexOf("salad") !== -1) return "salad";
+    if (n.indexOf("fried rice") !== -1) return "fried-rice";
+    if (n.indexOf("casserole") !== -1) return "casserole";
+    if (n.indexOf("skillet") !== -1) return "skillet";
+    return "unknown";
+  }
+
+  function keyIngredientKeys(recipe) {
+    var keys = [];
+    (recipe.ingredients || []).forEach(function (ing) {
+      if (!ing.item) return;
+      var k = stapleKey(ing.item);
+      if (!k || STAPLES[k]) return;
+      if (keys.indexOf(k) === -1) keys.push(k);
+    });
+    keys.sort();
+    return keys.slice(0, 6);
+  }
+
+  function recipeSignature(recipe, templateId, profileId) {
+    return {
+      template: templateId || inferTemplateId(recipe),
+      profile: profileId || "",
+      protein: detectProteinFromRecipe(recipe),
+      title: normalizeTitle(recipe.name),
+      keys: keyIngredientKeys(recipe)
+    };
+  }
+
+  function signatureHash(sig) {
+    return [sig.template, sig.profile, sig.protein, sig.title, sig.keys.join(",")].join("::");
+  }
+
+  function tokenOverlap(a, b) {
+    var ta = a.split(" ").filter(Boolean);
+    var tb = b.split(" ").filter(Boolean);
+    if (!ta.length || !tb.length) return 0;
+    var inter = 0;
+    ta.forEach(function (t) { if (tb.indexOf(t) !== -1) inter += 1; });
+    return inter / Math.max(ta.length, tb.length);
+  }
+
+  function jaccard(a, b) {
+    var setA = {};
+    var setB = {};
+    a.forEach(function (x) { setA[x] = 1; });
+    b.forEach(function (x) { setB[x] = 1; });
+    var inter = 0;
+    var union = 0;
+    Object.keys(setA).forEach(function (k) {
+      union += 1;
+      if (setB[k]) inter += 1;
+    });
+    Object.keys(setB).forEach(function (k) {
+      if (!setA[k]) union += 1;
+    });
+    return union ? inter / union : 0;
+  }
+
+  function isNearDuplicate(sigA, sigB) {
+    if (signatureHash(sigA) === signatureHash(sigB)) return true;
+    if (sigA.template !== "unknown" && sigB.template !== "unknown" &&
+        sigA.template === sigB.template && sigA.protein === sigB.protein && sigA.profile === sigB.profile) {
+      return true;
+    }
+    if (sigA.protein === sigB.protein && sigA.protein !== "none" && tokenOverlap(sigA.title, sigB.title) >= 0.72) {
+      return true;
+    }
+    if (jaccard(sigA.keys, sigB.keys) >= 0.78 && sigA.protein === sigB.protein) return true;
+    if (sigA.title && sigB.title && sigA.title === sigB.title) return true;
+    return false;
+  }
+
+  function buildExistingSignatures(recipes) {
+    return (recipes || []).map(function (r) {
+      return recipeSignature(r, inferTemplateId(r), "");
+    });
+  }
+
+  function loadHashes() {
+    try {
+      var raw = localStorage.getItem(HASH_STORAGE_KEY);
+      if (!raw) return [];
+      var list = JSON.parse(raw);
+      return Array.isArray(list) ? list : [];
+    } catch (err) {
+      return [];
+    }
+  }
+
+  function persistHash(hash) {
+    if (!hash) return;
+    var list = loadHashes();
+    if (list.indexOf(hash) !== -1) return;
+    list.push(hash);
+    if (list.length > HASH_CAP) list = list.slice(list.length - HASH_CAP);
+    try {
+      localStorage.setItem(HASH_STORAGE_KEY, JSON.stringify(list));
+    } catch (err) { /* storage full */ }
+  }
+
+  function buildOne(pantry, buckets, variation, servings) {
+    var absurd = buckets.protein && buckets.protein.def.label === "fish" && buckets.starch && stapleKey(buckets.starch.name).indexOf("pasta") !== -1 && variation % 3 === 0;
     if (absurd) variation += 1;
     var template = pickTemplate(buckets, variation);
     var profile = pickProfile(template, variation);
@@ -529,6 +664,7 @@
       }),
       steps: built.steps
     };
+    var sig = recipeSignature(recipe, template.id, profile);
     return {
       recipe: recipe,
       templateId: template.id,
@@ -537,13 +673,52 @@
       profileLabel: PROFILES[profile].label,
       variation: variation,
       missing: missing,
-      ingredientMeta: built.ingredients
+      ingredientMeta: built.ingredients,
+      signature: sig,
+      fingerprint: signatureHash(sig)
+    };
+  }
+
+  function isRejected(result, rejectHashSet, existingSigs) {
+    if (rejectHashSet[result.fingerprint]) return true;
+    var i;
+    for (i = 0; i < existingSigs.length; i++) {
+      if (isNearDuplicate(result.signature, existingSigs[i])) return true;
+    }
+    return false;
+  }
+
+  function generate(pantry, options) {
+    options = options || {};
+    var servings = options.servings || 4;
+    var startVar = options.variation || 0;
+    var buckets = classifyPantry(pantry);
+    if (buckets.count < 2) {
+      return { error: "Add at least two pantry items (for example chicken and rice) so Smart Chef can build a recipe." };
+    }
+    var rejectHashSet = {};
+    (options.rejectHashes || []).forEach(function (h) { if (h) rejectHashSet[h] = 1; });
+    loadHashes().forEach(function (h) { if (h) rejectHashSet[h] = 1; });
+    var existingSigs = buildExistingSignatures(options.existingRecipes || []);
+
+    var attempt;
+    for (attempt = 0; attempt < MAX_GENERATE_ATTEMPTS; attempt++) {
+      var variation = startVar + attempt;
+      var result = buildOne(pantry, buckets, variation, servings);
+      if (!isRejected(result, rejectHashSet, existingSigs)) return result;
+      rejectHashSet[result.fingerprint] = 1;
+    }
+    return {
+      error: "Smart Chef could not find a new combination with your pantry. Add another protein or vegetable, or clear some saved creations."
     };
   }
 
   window.PW_SMART_CHEF = {
     generate: generate,
     classifyPantry: classifyPantry,
+    persistHash: persistHash,
+    loadHashes: loadHashes,
+    signatureHash: signatureHash,
     templates: TEMPLATE_DEFS.map(function (t) { return { id: t.id, name: t.shortName }; })
   };
 })();

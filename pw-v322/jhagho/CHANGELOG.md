@@ -3,6 +3,7 @@
 ## 3.2.3 (2026-10-11)
 
 - **Smart Chef (offline):** Pantry tab builds full recipes from pantry items using tested templates (stir-fry, pasta, skillet, sheet-pan, soup, curry, grain bowl, tacos, frittata, salad, fried rice, casserole) and flavor profiles (Italian, Asian, Mexican, Canadian comfort, Indian). Try another, save to **My creations**, add to plan, add missing items to the shopping list. No network or AI.
+- **Smart Chef uniqueness:** Rejects near-duplicates of library or saved recipes (name, protein, template, key ingredients). Session and `localStorage` hash history so Try another and future sessions do not repeat prior Smart Chef drafts.
 
 ## 3.2.1 (2026-10-11)
 

@@ -135,7 +135,8 @@
   var LEX = {
     protein: [
       { keys: ["chicken breast", "chicken thigh", "chicken"], label: "chicken", cookMin: 12, form: "diced" },
-      { keys: ["ground beef", "hamburger", "hamburger meat", "beef stew", "beef", "steak"], label: "ground beef", cookMin: 10, form: "crumbled" },
+      { keys: ["ground beef", "hamburger", "hamburger meat"], label: "ground beef", cookMin: 10, form: "crumbled" },
+      { keys: ["beef stew", "stewing beef", "pot roast", "beef roast", "chuck roast", "blade roast", "beef", "steak"], label: "pot roast", cookMin: 180, form: "cubed" },
       { keys: ["pork ribs", "ribs", "back ribs", "spare ribs"], label: "pork ribs", cookMin: 45, form: "whole rack" },
       { keys: ["pork chop", "pork chops"], label: "pork chops", cookMin: 14, form: "bone-in" },
       { keys: ["ground pork", "pork"], label: "pork", cookMin: 10, form: "diced" },
@@ -176,10 +177,21 @@
     var keys = Object.keys(have);
     var protein = null;
     var proteins = [];
+    var seenProtein = {};
     LEX.protein.forEach(function (p) {
+      if (seenProtein[p.label]) return;
+      var matched = false;
+      var display = p.label;
       p.keys.forEach(function (k) {
-        if (have[stapleKey(k)]) proteins.push({ def: p, name: have[stapleKey(k)] || p.label });
+        if (!haveItem(have, k)) return;
+        matched = true;
+        if (have[stapleKey(k)]) display = have[stapleKey(k)];
+        else if (window.PW_PANTRY_NORM && have[PW_PANTRY_NORM.canonPantryKey(k)]) display = have[PW_PANTRY_NORM.canonPantryKey(k)];
       });
+      if (matched) {
+        seenProtein[p.label] = 1;
+        proteins.push({ def: p, name: display });
+      }
     });
     if (proteins.length) {
       proteins.sort(function (a, b) {
@@ -219,8 +231,8 @@
 
   function proteinPriority(label) {
     var order = {
-      "pork ribs": 1, "pork chops": 2, "ground beef": 3, pork: 4, chicken: 5, "ground turkey": 6,
-      sausage: 7, bacon: 8, shrimp: 9, fish: 10, lamb: 11, beans: 20, "firm tofu": 25, eggs: 40
+      "pork ribs": 1, "pork chops": 2, "ground beef": 3, "pot roast": 4, pork: 5, chicken: 6, "ground turkey": 7,
+      sausage: 8, bacon: 9, shrimp: 10, fish: 11, lamb: 12, beans: 20, "firm tofu": 25, eggs: 40
     };
     return order[label] != null ? order[label] : 15;
   }
@@ -265,6 +277,38 @@
     return out;
   }
 
+  var CLASSIC_RANK = {
+    burger: 1,
+    "grilled-cheese": 2,
+    tacos: 3,
+    "bbq-ribs": 4,
+    "pan-chops": 5,
+    chili: 6,
+    meatloaf: 7,
+    pasta: 8,
+    "shepherds-pie": 9,
+    "pot-roast": 10,
+    "roast-chicken": 11,
+    "chicken-dinner": 12,
+    "stir-fry": 13,
+    soup: 14,
+    sandwich: 15,
+    hash: 16,
+    wrap: 17,
+    frittata: 18,
+    skillet: 19,
+    "sheet-pan": 20,
+    "fried-rice": 21,
+    casserole: 22,
+    salad: 26,
+    curry: 28,
+    "grain-bowl": 32
+  };
+
+  function templateRank(t) {
+    return CLASSIC_RANK[t.id] != null ? CLASSIC_RANK[t.id] : 40;
+  }
+
   function pickTemplate(buckets, variation) {
     var templates = TEMPLATE_DEFS.filter(function (t) {
       return t.fits(buckets);
@@ -274,8 +318,13 @@
         return t.id === "skillet" || t.id === "burger" || t.id === "wrap";
       });
     }
-    templates.sort(function (a, b) { return a.id.localeCompare(b.id); });
-    return templates[variation % templates.length];
+    templates.sort(function (a, b) {
+      return templateRank(a) - templateRank(b) || a.id.localeCompare(b.id);
+    });
+    var classicCutoff = 22;
+    var classicPool = templates.filter(function (t) { return templateRank(t) <= classicCutoff; });
+    var pool = variation < 56 && classicPool.length ? classicPool : templates;
+    return pool[variation % pool.length];
   }
 
   function bucketsForVariation(buckets, variation) {
@@ -295,7 +344,22 @@
   }
 
   function pickProfile(template, variation) {
-    var list = template.profiles || ["italian", "asian", "mexican", "canadian", "indian"];
+    var list = template.profiles || ["canadian", "italian"];
+    var rank = templateRank(template);
+    if (rank <= 22) {
+      if (template.id === "pasta" || template.id === "tacos" || template.id === "chili") {
+        if (list.indexOf("canadian") !== -1) return "canadian";
+        if (list.indexOf("italian") !== -1) return "italian";
+        if (list.indexOf("mexican") !== -1) return "mexican";
+      }
+      if (template.id === "stir-fry" || template.id === "fried-rice") {
+        if (variation >= 44 && list.indexOf("asian") !== -1) return "asian";
+        return list.indexOf("canadian") !== -1 ? "canadian" : list[0];
+      }
+      if (list.indexOf("canadian") !== -1) return "canadian";
+      return list[0];
+    }
+    if (variation < 56 && list.indexOf("canadian") !== -1) return "canadian";
     return list[variation % list.length];
   }
 
@@ -323,34 +387,115 @@
     return Math.round(scaled * 100) / 100;
   }
 
+  function hasPotatoes(buckets) {
+    if (buckets.starch && stapleKey(buckets.starch.name).indexOf("potato") !== -1) return true;
+    return buckets.vegSlow.some(function (v) { return stapleKey(v).indexOf("potato") !== -1; });
+  }
+
+  function hasCheese(buckets) {
+    return haveItem(buckets.have, "cheddar") || haveItem(buckets.have, "cheese");
+  }
+
+  function titleCaseProtein(label) {
+    if (!label) return "";
+    if (label === "ground beef") return "Ground Beef";
+    if (label === "pork chops") return "Pork Chops";
+    if (label === "pork ribs") return "Pork Ribs";
+    if (label === "pot roast") return "Pot Roast";
+    return label.charAt(0).toUpperCase() + label.slice(1);
+  }
+
   function buildName(template, profile, buckets, variation) {
-    var prof = PROFILES[profile];
-    var pre = prof.namePrefix[variation % prof.namePrefix.length];
-    var protein = buckets.protein ? buckets.protein.def.label : "Veggie";
-    protein = protein.charAt(0).toUpperCase() + protein.slice(1);
-    var veg = buckets.vegFast[0] ? String(buckets.vegFast[0]).split(" ")[0] : "";
-    veg = veg.charAt(0).toUpperCase() + veg.slice(1);
-    if (template.id === "frittata") return (veg || "Garden") + " & Cheddar Frittata";
-    if (template.id === "salad") return protein + " Salad with " + (veg || "Greens");
-    if (template.id === "soup") return protein + " & Vegetable Soup";
-    if (template.id === "fried-rice") return pre + " " + protein + " Fried Rice";
-    if (template.id === "burger") return "Classic " + protein + " Burgers";
-    if (template.id === "bbq-ribs") return pre + " BBQ " + protein;
-    if (template.id === "pan-chops") return "Pan-Seared " + protein;
-    if (template.id === "wrap") return protein + " " + (veg || "Veggie") + " Wraps";
-    if (template.id === "chili") return pre + " " + protein + " Chili";
-    if (template.id === "hash") return protein + " & " + (veg || "Potato") + " Hash";
-    if (template.id === "sandwich") return "Hot " + protein + " Sandwich";
-    if (template.id === "tacos") return protein + " Tacos";
-    if (template.id === "grain-bowl") return protein + " Rice Bowl";
-    if (template.id === "curry" && profile === "indian") return protein + " Coconut Curry";
-    return pre + " " + protein + " " + template.shortName;
+    var p = buckets.protein ? buckets.protein.def.label : "";
+    var potato = hasPotatoes(buckets);
+    var cheese = hasCheese(buckets);
+    var id = template.id;
+    var classic = {
+      burger: {
+        "ground beef": cheese ? "Classic Cheeseburgers" : "Classic Beef Burgers",
+        "ground turkey": "Turkey Burgers",
+        pork: "Pork Burgers"
+      },
+      "grilled-cheese": { default: "Grilled Cheese Sandwiches" },
+      tacos: {
+        "ground beef": "Ground Beef Tacos",
+        chicken: "Chicken Tacos",
+        "pork chops": "Pork Chop Tacos",
+        pork: "Pork Tacos",
+        "ground turkey": "Turkey Tacos",
+        "pork ribs": "BBQ Pork Tacos",
+        default: "Home-Style Tacos"
+      },
+      "bbq-ribs": { "pork ribs": "BBQ Baby Back Ribs" },
+      "pan-chops": {
+        "pork chops": potato ? "Pan-Fried Pork Chops with Mashed Potatoes" : "Pan-Fried Pork Chops with Vegetables"
+      },
+      chili: {
+        "ground beef": "Classic Beef Chili",
+        "ground turkey": "Turkey Chili",
+        pork: "Pork Chili"
+      },
+      meatloaf: {
+        "ground beef": potato ? "Classic Meatloaf with Roasted Potatoes" : "Classic Meatloaf",
+        "ground turkey": "Turkey Meatloaf"
+      },
+      pasta: {
+        "ground beef": "Spaghetti and Meat Sauce",
+        chicken: "Chicken Pasta with Tomato Sauce",
+        default: "Pasta with Tomato Sauce"
+      },
+      "shepherds-pie": { "ground beef": "Shepherd's Pie", "ground turkey": "Turkey Shepherd's Pie" },
+      "pot-roast": { "pot roast": "Pot Roast with Potatoes and Carrots" },
+      "roast-chicken": { chicken: "Roast Chicken with Potatoes and Vegetables" },
+      "chicken-dinner": {
+        chicken: potato ? "Chicken Dinner with Potatoes and Vegetables" : "Roast Chicken Thighs with Vegetables"
+      },
+      "stir-fry": {
+        chicken: "Chicken and Vegetable Stir-Fry",
+        "ground beef": "Beef and Vegetable Stir-Fry",
+        shrimp: "Shrimp Stir-Fry",
+        default: "Vegetable Stir-Fry"
+      },
+      soup: { default: p ? titleCaseProtein(p) + " and Vegetable Soup" : "Homestyle Vegetable Soup" },
+      sandwich: {
+        "ground beef": "Hot Beef Sandwich",
+        chicken: "Hot Chicken Sandwich",
+        eggs: "Fried Egg Sandwiches",
+        default: "Hot Sandwich"
+      },
+      hash: { default: p ? titleCaseProtein(p) + " and Potato Hash" : "Breakfast Hash" },
+      wrap: { default: p ? titleCaseProtein(p) + " Wraps" : "Veggie Wraps" },
+      frittata: { default: cheese ? "Cheddar and Vegetable Frittata" : "Vegetable Frittata" },
+      "fried-rice": { chicken: "Chicken Fried Rice", "ground beef": "Beef Fried Rice", default: "Egg Fried Rice" },
+      skillet: { default: p ? "Skillet " + titleCaseProtein(p) + " Dinner" : "Skillet Vegetable Dinner" },
+      "sheet-pan": {
+        chicken: "Sheet-Pan Chicken with Vegetables",
+        "pork chops": "Sheet-Pan Pork Chops with Potatoes",
+        "pork ribs": "Sheet-Pan BBQ Ribs with Vegetables",
+        "ground beef": "Sheet-Pan Meatballs with Vegetables",
+        default: "Sheet-Pan Dinner with Vegetables"
+      },
+      casserole: { default: p ? titleCaseProtein(p) + " Casserole" : "Baked Vegetable Casserole" },
+      salad: { default: p ? titleCaseProtein(p) + " Salad" : "Garden Salad" },
+      curry: { default: p ? titleCaseProtein(p) + " Curry" : "Vegetable Curry" },
+      "grain-bowl": { default: p ? titleCaseProtein(p) + " Rice Bowl" : "Rice Bowl" }
+    };
+    var map = classic[id];
+    if (map) {
+      if (p && map[p]) return map[p];
+      if (map.default) return map.default;
+    }
+    if (templateRank(template) <= 22) {
+      return template.shortName;
+    }
+    return titleCaseProtein(p || "Home") + " " + template.shortName;
   }
 
   function templateAllowsSauce(templateId, sauceItem) {
     if (!sauceItem) return false;
     var sk = stapleKey(sauceItem);
-    if (templateId === "frittata" || templateId === "salad" || templateId === "sandwich" || templateId === "burger" || templateId === "wrap") return false;
+    if (templateId === "frittata" || templateId === "salad" || templateId === "sandwich" || templateId === "burger" || templateId === "wrap" ||
+        templateId === "grilled-cheese" || templateId === "meatloaf") return false;
     if (sk.indexOf("broth") !== -1 && (templateId === "grain-bowl" || templateId === "tacos")) return false;
     if (sk.indexOf("peanut") !== -1) return templateId === "satay-stir-fry" || (templateId === "curry" && sk.indexOf("coconut") === -1);
     return true;
@@ -803,6 +948,167 @@
       }
     },
     {
+      id: "meatloaf",
+      shortName: "Meatloaf",
+      profiles: ["canadian"],
+      minutes: 55,
+      tags: ["dinner", "easy", "canadian"],
+      fits: function (b) {
+        return b.protein && (b.protein.def.label === "ground beef" || b.protein.def.label === "ground turkey");
+      },
+      build: function (b, profile, servings) {
+        var ings = [];
+        addMainProtein(ings, b.protein, servings);
+        if (haveItem(b.have, "egg") || haveItem(b.have, "eggs")) {
+          ings.push(ing(scaleQty(1, servings, 4), "", "egg", true));
+        }
+        if (haveItem(b.have, "bread")) {
+          ings.push(ing(scaleQty(0.5, servings, 4), "cup", "bread crumbs", true));
+        }
+        if (b.vegSlow[0] || hasPotatoes(b)) {
+          ings.push(ing(scaleQty(1.5, servings, 4), "lb", "potatoes", true));
+        }
+        addProfileIngredients(ings, profile, b.have, servings, "meatloaf");
+        var steps = [
+          "Mix ground meat with egg, crumbs, onion, and seasonings (5 minutes).",
+          "Shape into a loaf on a foil-lined baking sheet (2 minutes).",
+          "Bake at 375°F 45 minutes until cooked through (internal 160°F).",
+          "Rest 5 minutes. Serve with roasted potatoes if using."
+        ];
+        return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 55 };
+      }
+    },
+    {
+      id: "shepherds-pie",
+      shortName: "Shepherd's Pie",
+      profiles: ["canadian"],
+      minutes: 50,
+      tags: ["dinner", "easy", "canadian"],
+      fits: function (b) {
+        return b.protein && (b.protein.def.label === "ground beef" || b.protein.def.label === "ground turkey") &&
+          (hasPotatoes(b) || b.vegSlow.length);
+      },
+      build: function (b, profile, servings) {
+        var ings = [];
+        addMainProtein(ings, b.protein, servings);
+        ings.push(ing(scaleQty(2, servings, 4), "lb", "potatoes", true));
+        if (haveItem(b.have, "onion")) ings.push(ingFormatted(1, "", "onion", b.have, true));
+        ings.push(ing(scaleQty(1, servings, 4), "can", "crushed tomatoes", haveItem(b.have, "crushed tomatoes")));
+        if (haveItem(b.have, "cheddar")) ings.push(ing(scaleQty(0.5, servings, 4), "cup", "cheddar cheese", true));
+        addProfileIngredients(ings, profile, b.have, servings, "shepherds-pie");
+        var steps = [
+          "Boil potatoes until tender; mash with butter and salt (20 minutes).",
+          "Brown ground meat with onion; stir in tomatoes and simmer 10 minutes.",
+          "Spread meat in a baking dish; top with mashed potatoes.",
+          "Bake at 400°F 20 minutes until golden on top. Rest 5 minutes before serving."
+        ];
+        return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 50 };
+      }
+    },
+    {
+      id: "pot-roast",
+      shortName: "Pot Roast",
+      profiles: ["canadian"],
+      minutes: 150,
+      tags: ["dinner", "easy", "canadian"],
+      fits: function (b) {
+        return b.protein && b.protein.def.label === "pot roast" && (hasPotatoes(b) || b.vegSlow.length);
+      },
+      build: function (b, profile, servings) {
+        var ings = [];
+        ings.push(ing(scaleQty(2, servings, 4), "lb", b.protein.name, true));
+        ings.push(ing(scaleQty(1.5, servings, 4), "lb", "potatoes", true));
+        if (b.vegSlow.indexOf("carrot") !== -1 || haveItem(b.have, "carrot")) {
+          ings.push(ing(scaleQty(3, servings, 4), "", "carrots", haveItem(b.have, "carrot")));
+        } else {
+          ings.push(ing(scaleQty(2, servings, 4), "", "carrots", false));
+        }
+        if (haveItem(b.have, "onion")) ings.push(ingFormatted(1, "", "onion", b.have, true));
+        ings.push(ing(scaleQty(2, servings, 4), "cup", "beef broth", haveItem(b.have, "beef broth") || haveItem(b.have, "broth")));
+        addProfileIngredients(ings, profile, b.have, servings, "pot-roast");
+        var steps = [
+          "Season beef all over with salt and pepper (3 minutes).",
+          "Brown beef in a heavy pot with oil on all sides (8 minutes).",
+          "Add onion, carrots, potatoes, and broth. Bring to a simmer.",
+          "Cover and cook on low 2–2½ hours until beef is fork-tender. Slice and serve with vegetables and pan juices."
+        ];
+        return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 150 };
+      }
+    },
+    {
+      id: "roast-chicken",
+      shortName: "Roast Chicken",
+      profiles: ["canadian"],
+      minutes: 75,
+      tags: ["dinner", "easy", "canadian"],
+      fits: function (b) {
+        return b.protein && b.protein.def.label === "chicken" && (hasPotatoes(b) || b.vegSlow.length || b.vegFast.length);
+      },
+      build: function (b, profile, servings) {
+        var ings = [];
+        ings.push(ing(scaleQty(1, servings, 4), "", "whole chicken", haveItem(b.have, "chicken") || true));
+        if (hasPotatoes(b)) ings.push(ing(scaleQty(1.5, servings, 4), "lb", "potatoes", true));
+        b.vegFast.slice(0, 2).forEach(function (v) {
+          ings.push(ingFormatted(1, "", v, b.have, true));
+        });
+        addProfileIngredients(ings, profile, b.have, servings, "roast-chicken");
+        var steps = [
+          "Pat chicken dry; season inside and out (5 minutes).",
+          "Heat oven to 425°F. Toss potatoes and vegetables with oil and salt.",
+          "Roast chicken with vegetables 60–70 minutes until juices run clear (165°F in thigh).",
+          "Rest 10 minutes before carving. Serve with pan drippings."
+        ];
+        return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 75 };
+      }
+    },
+    {
+      id: "chicken-dinner",
+      shortName: "Chicken Dinner",
+      profiles: ["canadian"],
+      minutes: 45,
+      tags: ["dinner", "easy", "canadian"],
+      fits: function (b) {
+        return b.protein && b.protein.def.label === "chicken";
+      },
+      build: function (b, profile, servings) {
+        var ings = [];
+        ings.push(ing(scaleQty(1.5, servings, 4), "lb", b.protein.name, true));
+        if (hasPotatoes(b)) ings.push(ing(scaleQty(1, servings, 4), "lb", "potatoes", true));
+        b.vegFast.slice(0, 2).forEach(function (v) { ings.push(ingFormatted(1, "", v, b.have, true)); });
+        addProfileIngredients(ings, profile, b.have, servings, "chicken-dinner");
+        var steps = [
+          "Heat oven to 400°F (or use a large skillet on the stovetop).",
+          "Season chicken; sear skin-side down until golden (6 minutes).",
+          "Add potatoes and vegetables around chicken; roast or cover and cook 25–30 minutes until done.",
+          "Rest 5 minutes. Serve with cooking juices."
+        ];
+        return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 45 };
+      }
+    },
+    {
+      id: "grilled-cheese",
+      shortName: "Grilled Cheese",
+      profiles: ["canadian"],
+      minutes: 12,
+      tags: ["lunch", "easy", "canadian"],
+      fits: function (b) {
+        return haveItem(b.have, "bread") && (haveItem(b.have, "cheddar") || haveItem(b.have, "cheese"));
+      },
+      build: function (b, profile, servings) {
+        var ings = [];
+        ings.push(ing(scaleQty(8, servings, 4), "slice", "bread", true));
+        ings.push(ing(scaleQty(8, servings, 4), "slice", "cheddar cheese", true));
+        if (haveItem(b.have, "butter")) ings.push(ing(scaleQty(2, servings, 4), "tbsp", "butter", true));
+        var steps = [
+          "Butter one side of each bread slice (2 minutes).",
+          "Layer cheese between unbuttered sides.",
+          "Cook in a skillet over medium heat 3 minutes per side until golden and cheese melts.",
+          "Slice and serve hot."
+        ];
+        return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 12 };
+      }
+    },
+    {
       id: "hash",
       shortName: "Skillet Hash",
       profiles: ["canadian"],
@@ -907,6 +1213,12 @@
     if (n.indexOf("chili") !== -1) return "chili";
     if (n.indexOf("hash") !== -1) return "hash";
     if (n.indexOf("sandwich") !== -1) return "sandwich";
+    if (n.indexOf("meatloaf") !== -1) return "meatloaf";
+    if (n.indexOf("shepherd") !== -1) return "shepherds-pie";
+    if (n.indexOf("pot roast") !== -1) return "pot-roast";
+    if (n.indexOf("roast chicken") !== -1) return "roast-chicken";
+    if (n.indexOf("grilled cheese") !== -1) return "grilled-cheese";
+    if (n.indexOf("spaghetti") !== -1 || n.indexOf("meat sauce") !== -1) return "pasta";
     return "unknown";
   }
 
@@ -1051,23 +1363,30 @@
     };
   }
 
-  function failsSanity(result) {
+  var NOVELTY_NAME_RE = /\b(zesty|savory|savoury|fragrant|smoky|rustic|cozy|hearty|ginger|garlic|weeknight|quick)\b/i;
+
+  function failsSanity(result, variation) {
     var recipe = result.recipe;
-    var name = String(recipe.name || "").toLowerCase();
+    var name = String(recipe.name || "");
+    var nameL = name.toLowerCase();
     var tid = result.templateId;
+    var rank = CLASSIC_RANK[tid] != null ? CLASSIC_RANK[tid] : 40;
+    if (rank >= 28 && variation != null && variation < 56) return true;
+    if (NOVELTY_NAME_RE.test(name) && rank >= 20) return true;
+    if (/\bgrain bowl\b/i.test(name) && variation != null && variation < 56) return true;
     var items = (recipe.ingredients || []).map(function (i) { return stapleKey(i.item); }).join(" ");
     if (tid === "frittata" && items.indexOf("peanut butter") !== -1) return true;
     if (tid === "grain-bowl" && items.indexOf("bread") !== -1) return true;
     if (/clove.*onion|onion.*clove/.test(items) || /(\d+\s+clove).*onion/.test((recipe.ingredients || []).map(function (i) {
       return (i.qty || "") + " " + (i.unit || "") + " " + i.item;
     }).join(" ").toLowerCase())) return true;
-    if (name.indexOf("peanut") !== -1 && tid === "frittata") return true;
-    if (name.indexOf("grain bowl") !== -1 && items.indexOf("bread") !== -1) return true;
+    if (nameL.indexOf("peanut") !== -1 && tid === "frittata") return true;
+    if (nameL.indexOf("grain bowl") !== -1 && items.indexOf("bread") !== -1) return true;
     return false;
   }
 
-  function isRejected(result, rejectHashSet, existingSigs) {
-    if (failsSanity(result)) return true;
+  function isRejected(result, rejectHashSet, existingSigs, variation) {
+    if (failsSanity(result, variation)) return true;
     if (rejectHashSet[result.fingerprint]) return true;
     var i;
     for (i = 0; i < existingSigs.length; i++) {
@@ -1098,13 +1417,13 @@
       var variation = startVar + attempt;
       var result = buildOne(pantry, buckets, variation, servings);
       lastResult = result;
-      if (!isRejected(result, rejectHashSet, existingSigs)) return result;
+      if (!isRejected(result, rejectHashSet, existingSigs, variation)) return result;
       rejectHashSet[result.fingerprint] = 1;
     }
     if (lastResult && (buckets.protein || buckets.starch)) {
       for (var v = 1; v <= 12; v++) {
         var alt = variationOfResult(lastResult, v);
-        if (!isRejected(alt, rejectHashSet, existingSigs)) return alt;
+        if (!isRejected(alt, rejectHashSet, existingSigs, variation + v)) return alt;
       }
       return variationOfResult(lastResult, 1);
     }

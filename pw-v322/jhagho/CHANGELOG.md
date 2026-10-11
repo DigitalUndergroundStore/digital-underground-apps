@@ -4,6 +4,7 @@
 
 - **Pantry suggestions:** Canadian grocery synonym map (`pantry-normalize.js`) so “Cook from what you have” matches hamburger ↔ ground beef, white onion ↔ onion, ribs ↔ pork ribs, tortillas, pork chops, etc. List refreshes on every add/remove via existing render path.
 - **Smart Chef:** Ingredient roles and template rules (no peanut butter frittatas, bread not a grain-bowl base); proper units for onion, garlic, peanut butter; coherent subsets; natural titles; more templates (burgers, BBQ ribs, pan chops, wraps, chili, hash, sandwiches). Dedupe on protein + dish type + flavour profile; never errors when pantry has protein or starch — falls back to a variation.
+- **Smart Chef (Donald):** Classic home cooking first — cheeseburgers, pork chops, roast chicken, pot roast, meatloaf, spaghetti and meat sauce, shepherd's pie, grilled cheese, tacos, BBQ ribs, chili, stir-fry — with proper recipe names; grain bowls/curry/fusion deferred until classics are exhausted (`tools/audit-recipe-library.mjs` for library review).
 - **Test:** `tools/test-smart-chef-donald.mjs` — 20 sensible unique recipes from Donald’s pantry.
 
 ## 3.4.2 (2026-10-11)

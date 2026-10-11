@@ -98,6 +98,9 @@ for (let i = 0; i < 20; i++) {
   }
   try {
     sanityCheck(out.recipe, out.templateId);
+    if (i < 8 && /\b(zesty|grain bowl)\b/i.test(out.recipe.name)) {
+      throw new Error("novelty name in first 8: " + out.recipe.name);
+    }
   } catch (err) {
     failed++;
     console.error("FAIL sanity", i + 1, err.message);

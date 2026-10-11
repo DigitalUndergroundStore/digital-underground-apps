@@ -350,8 +350,8 @@
   function templateAllowsSauce(templateId, sauceItem) {
     if (!sauceItem) return false;
     var sk = stapleKey(sauceItem);
-    if (templateId === "frittata" || templateId === "salad") return false;
-    if (sk.indexOf("broth") !== -1 && (templateId === "grain-bowl" || templateId === "tacos" || templateId === "burger")) return false;
+    if (templateId === "frittata" || templateId === "salad" || templateId === "sandwich" || templateId === "burger" || templateId === "wrap") return false;
+    if (sk.indexOf("broth") !== -1 && (templateId === "grain-bowl" || templateId === "tacos")) return false;
     if (sk.indexOf("peanut") !== -1) return templateId === "satay-stir-fry" || (templateId === "curry" && sk.indexOf("coconut") === -1);
     return true;
   }

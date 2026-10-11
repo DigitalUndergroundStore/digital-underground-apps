@@ -29,9 +29,9 @@ PRODUCTS = [
         "pitch": ["A week of meals, planned in one place."],
         "cover": "media/jhagho.jpg",
         "shareVideo": {
-            "poster": "/store/media/jhagho.jpg",
-            "vertical": "/store/media/pantry-week-vertical.mp4",
-            "square": "/store/media/pantry-week-square.mp4",
+            "poster": "/store/media/jhagho.jpg?v=20261011b",
+            "vertical": "/store/media/pantry-week-vertical.mp4?v=20261011b",
+            "square": "/store/media/pantry-week-square.mp4?v=20261011b",
         },
     },
     {"slug": "winston", "code": "jkpty", "name": "Winston — Hands-Free Kitchen Voice Assistant", "price": "CA$19", "pitch": ["A kitchen voice that reads the steps while your hands are busy."], "cover": "media/jkpty.jpg"},

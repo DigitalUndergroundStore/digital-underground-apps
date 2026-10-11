@@ -258,7 +258,7 @@
     if (/lemon|lime|garlic|onion|broccoli|spinach|tomato|cucumber|avocado|lettuce|basil|cilantro|parsley|carrot|celery|mushroom|zucchini|kale|potato|banana|berr|cabbage|ginger|apple|salad|dill|scallion|chive|herb|greens|corn\b|beet|eggplant|fennel|pear|grape|mango|bok choy|lemongrass|Thai basil|Thai chili|brussels sprout|cauliflower|artichoke|pepper\b|yellow onion|mixed greens|green bean|roasted red pepper/.test(s)) {
       return "produce";
     }
-    if (/\b(chicken|turkey|beef|pork|bacon|sausage|salmon|cod|shrimp|tuna|fish|steak|lamb|mussels|sirloin|ground beef|ground pork|ground lamb|pork chops|chicken breast|chicken thighs|Italian sausage|sushi-grade tuna)\b/.test(s)) return "meat";
+    if (/\b(chicken|turkey|beef|pork|bacon|sausage|salmon|cod|shrimp|tuna|fish|steak|lamb|mussels|sirloin|roast beef|ground beef|ground pork|ground lamb|pork chops|chicken breast|chicken thighs|Italian sausage|sushi-grade tuna)\b/.test(s)) return "meat";
     if (/\b(milk|yogurt|cheese|cheddar|mozzarella|parmesan|feta|butter|cream|eggs?|tofu|ricotta|paneer|goat cheese|fresh mozzarella|heavy cream)\b/.test(s)) return "dairy";
     if (/frozen pierogi|frozen banana|frozen mango|ice cream/.test(s)) return "frozen";
     return "other";
@@ -865,6 +865,8 @@
       if (!(showQty > 0) && !showUnmeasured && !recipeUnmeasured && !row.extraUnmeasured) return;
       if (!(showQty > 0) && !recipeUnmeasured && !row.extraUnmeasured) return;
       var displayQty = showQty > 0 ? showQty : null;
+      var hasRecipe = recipeQty > 0 || recipeUnmeasured;
+      var hasExtra = row.extraQty > 0 || row.extraUnmeasured;
       items.push({
         key: row.key,
         item: row.item,
@@ -873,7 +875,8 @@
         label: formatLine(displayQty, row.unit, row.item),
         aisle: row.aisle,
         checked: isRowChecked(state, row, row.unit, displayQty),
-        fromExtra: row.extraQty > 0 || !!row.extraUnmeasured,
+        fromExtra: hasExtra,
+        extraOnly: hasExtra && !hasRecipe,
         kind: "item"
       });
     });
@@ -892,6 +895,13 @@
     var flat = [];
     aisles.forEach(function (aisle) { flat = flat.concat(aisle.items); });
     return { aisles: aisles, items: flat, excluded: excluded };
+  }
+
+  function removeManualExtra(state, item, unit) {
+    var key = mergeKey(item, unit || "");
+    state.extras = (state.extras || []).filter(function (extra) {
+      return mergeKey(extra.item, extra.unit) !== key;
+    });
   }
 
   function pantryHaveSet(pantry) {
@@ -1420,6 +1430,7 @@
     recipeById: recipeById,
     slotLabel: slotLabel,
     buildShoppingList: buildShoppingList,
+    removeManualExtra: removeManualExtra,
     formatPantryShareText: formatPantryShareText,
     suggestRecipes: suggestRecipes,
     parseRecipeText: parseRecipeText,

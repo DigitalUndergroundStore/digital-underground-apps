@@ -593,7 +593,39 @@ input[type="checkbox"] {
   flex: none;
 }
 .shop-row.done span { text-decoration: line-through; color: var(--faint); }
-.have, .remove-extra { flex: none; }
+.have { flex: none; }
+.shop-row__menu { position: relative; flex: none; }
+.shop-row__more {
+  list-style: none;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 1.25rem;
+  line-height: 1;
+  border-radius: 10px;
+}
+.shop-row__more::-webkit-details-marker { display: none; }
+.shop-row__more:hover,
+.shop-row__more:focus-visible { color: var(--ink); background: var(--bg-3); }
+.shop-row__menu-remove {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 4;
+  min-height: 44px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.shop-row--manual.shop-row--swiped { transform: translateX(-4px); }
 
 .pantry-list { list-style: none; margin: 0; padding: 0; }
 .pantry-list li {
@@ -848,7 +880,7 @@ details.paste summary { min-height: 44px; display: flex; align-items: center; cu
   body:not(.print-body) #extraForm,
   body:not(.print-body) #pantryForm,
   body:not(.print-body) .have,
-  body:not(.print-body) .remove-extra,
+  body:not(.print-body) .shop-row__menu,
   body:not(.print-body) .slot-row,
   body:not(.print-body) .colophon,
   body:not(.print-body) .search-row,

@@ -586,7 +586,7 @@
       <form id="extraForm" class="search-row">
         <div class="grow" style="flex:1">
           <label class="field" for="extraItem">Add an extra item</label>
-          <input id="extraItem" type="text" placeholder="paper towels, 2 lemons…" autocomplete="off" />
+          <input id="extraItem" type="text" placeholder="1 lb roast beef, paper towels, 2 lemons…" autocomplete="off" list="units" />
         </div>
         <button type="submit" class="primary">Add to list</button>
       </form>
@@ -595,17 +595,35 @@
     </section>`;
   }
 
+  function removeExtraItem(item, unit) {
+    PW.removeManualExtra(state, item, unit || "");
+    commit();
+    toast("Removed from the list.");
+  }
+
   function shopRow(item) {
     const checked = item.checked ? "checked" : "";
-    const extra = item.fromExtra
-      ? `<button type="button" class="remove-extra" data-action="remove-extra" data-item="${esc(item.item)}" data-unit="${esc(item.unit)}" aria-label="Remove ${esc(item.label)}">Remove</button>`
-      : (item.kind === "note" ? "" : `<button type="button" class="have" data-action="have" data-item="${esc(item.item)}" aria-label="Already have ${esc(item.label)}">Have it</button>`);
-    return `<li class="shop-row${item.checked ? " done" : ""}">
+    const manual = item.extraOnly;
+    const haveBtn = item.kind === "note"
+      ? ""
+      : `<button type="button" class="have" data-action="have" data-item="${esc(item.item)}" aria-label="Already have ${esc(item.label)}">Have it</button>`;
+    const menuBtn = manual
+      ? `<details class="shop-row__menu">
+          <summary class="shop-row__more" aria-label="More actions for ${esc(item.label)}">⋯</summary>
+          <button type="button" class="shop-row__menu-remove" data-action="remove-extra" data-item="${esc(item.item)}" data-unit="${esc(item.unit)}">Remove from list</button>
+        </details>`
+      : "";
+    const rowClass = `shop-row${item.checked ? " done" : ""}${manual ? " shop-row--manual" : ""}`;
+    const manualData = manual
+      ? ` data-manual="1" data-item="${esc(item.item)}" data-unit="${esc(item.unit || "")}"`
+      : "";
+    return `<li class="${rowClass}"${manualData}>
       <label class="check">
         <input type="checkbox" data-action="check" data-kind="${esc(item.kind)}" data-key="${esc(item.key)}" data-item="${esc(item.item || "")}" data-unit="${esc(item.unit || "")}" data-qty="${item.qty == null ? "" : esc(String(item.qty))}" ${checked} />
         <span>${esc(item.label)}</span>
       </label>
-      ${extra}
+      ${haveBtn}
+      ${menuBtn}
     </li>`;
   }
 
@@ -1587,10 +1605,9 @@
       commit();
       toast(cap(item) + " is in the pantry, so it stays off the list.");
     } else if (action === "remove-extra") {
-      const key = PW.mergeKey(btn.getAttribute("data-item"), btn.getAttribute("data-unit") || "");
-      state.extras = state.extras.filter((extra) => PW.mergeKey(extra.item, extra.unit) !== key);
-      commit();
-      toast("Removed from the list.");
+      const menu = btn.closest(".shop-row__menu");
+      if (menu) menu.open = false;
+      removeExtraItem(btn.getAttribute("data-item"), btn.getAttribute("data-unit") || "");
     } else if (action === "pantry-remove") {
       state.pantry = state.pantry.filter((entry) => entry.id !== id);
       bumpSmartChefPantry();
@@ -1712,6 +1729,47 @@
   document.addEventListener("submit", onSubmit);
   document.addEventListener("input", onInput);
   document.addEventListener("change", onChange);
+
+  let shopManualPress = null;
+  document.addEventListener("touchstart", (event) => {
+    const row = event.target.closest && event.target.closest(".shop-row--manual");
+    if (!row || event.target.closest(".shop-row__menu, .have, .check")) return;
+    const touch = event.touches[0];
+    shopManualPress = {
+      row,
+      x: touch.clientX,
+      y: touch.clientY,
+      timer: window.setTimeout(() => {
+        if (!shopManualPress || shopManualPress.row !== row) return;
+        removeExtraItem(row.getAttribute("data-item"), row.getAttribute("data-unit") || "");
+        shopManualPress = null;
+      }, 600)
+    };
+  }, { passive: true });
+  document.addEventListener("touchmove", (event) => {
+    if (!shopManualPress) return;
+    const touch = event.touches[0];
+    const dx = touch.clientX - shopManualPress.x;
+    const dy = touch.clientY - shopManualPress.y;
+    if (Math.abs(dx) > 10 || Math.abs(dy) > 10) {
+      window.clearTimeout(shopManualPress.timer);
+      if (dx < -72 && Math.abs(dy) < 48) {
+        removeExtraItem(
+          shopManualPress.row.getAttribute("data-item"),
+          shopManualPress.row.getAttribute("data-unit") || ""
+        );
+        shopManualPress = null;
+        return;
+      }
+      shopManualPress.row.classList.toggle("shop-row--swiped", dx < -36 && Math.abs(dy) < 48);
+    }
+  }, { passive: true });
+  document.addEventListener("touchend", () => {
+    if (!shopManualPress) return;
+    window.clearTimeout(shopManualPress.timer);
+    if (shopManualPress.row) shopManualPress.row.classList.remove("shop-row--swiped");
+    shopManualPress = null;
+  }, { passive: true });
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") { closeTop(); return; }
     if (!$("cook").hidden && event.target.tagName !== "INPUT" && event.target.tagName !== "TEXTAREA") {

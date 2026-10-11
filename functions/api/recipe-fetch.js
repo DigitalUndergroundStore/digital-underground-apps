@@ -8,6 +8,25 @@ const FETCH_TIMEOUT_MS = 8000;
 const RATE_LIMIT = 30;
 const RATE_WINDOW_MS = 60_000;
 
+/** Browser-like headers — many recipe sites return 403 to obvious bots. */
+const FETCH_HEADERS = {
+  "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  Accept:
+    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cache-Control": "no-cache",
+  Pragma: "no-cache",
+  "Sec-Fetch-Dest": "document",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-User": "?1",
+  "Upgrade-Insecure-Requests": "1",
+};
+
+const BLOCKED_HINT =
+  "That site blocked automatic fetching. Open the recipe in your browser, copy the text, and use Paste recipe text in Pantry Week instead.";
+
 /** @type {Map<string, { count: number, reset: number }>} */
 const rateByIp = new Map();
 
@@ -168,13 +187,14 @@ export async function onRequest(context) {
     // Follow redirects manually so every hop is re-checked against the private-host rules.
     let target = checked.url;
     for (let hop = 0; ; hop++) {
+      const pageOrigin = new URL(target).origin;
       response = await fetch(target, {
         method: "GET",
         redirect: "manual",
         signal: controller.signal,
         headers: {
-          Accept: "text/html,application/xhtml+xml",
-          "User-Agent": "PantryWeekRecipeFetch/1.0 (+https://digitalundergroundstore.com/pantry-week/)",
+          ...FETCH_HEADERS,
+          Referer: `${pageOrigin}/`,
         },
       });
       if (response.status < 300 || response.status > 399 || !response.headers.get("Location")) break;
@@ -197,7 +217,18 @@ export async function onRequest(context) {
   clearTimeout(timer);
 
   if (!response.ok) {
-    return json({ error: `Page returned HTTP ${response.status}.` }, 502);
+    const status = response.status;
+    if (status === 403 || status === 404 || status === 401 || status === 406 || status === 451) {
+      return json(
+        {
+          error: `${BLOCKED_HINT} (HTTP ${status}.)`,
+          httpStatus: status,
+          pasteTextInstead: true,
+        },
+        502
+      );
+    }
+    return json({ error: `Page returned HTTP ${status}. ${BLOCKED_HINT}`, pasteTextInstead: true }, 502);
   }
 
   const reader = response.body && response.body.getReader();

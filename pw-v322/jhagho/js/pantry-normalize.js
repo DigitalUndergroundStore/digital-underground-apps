@@ -88,11 +88,7 @@
       var sub = parts.slice(i).join(" ");
       if (CANON_BY_KEY[sub]) return CANON_BY_KEY[sub];
     }
-    for (var alias in CANON_BY_KEY) {
-      if (alias.length >= 4 && (k.indexOf(alias) !== -1 || alias.indexOf(k) !== -1)) {
-        return CANON_BY_KEY[alias];
-      }
-    }
+    /* No loose substring matching: it made honey match honey mustard, flour match flour tortilla, etc. */
     return k;
   }
 

@@ -258,7 +258,8 @@
     var out = [];
     var seen = {};
     list.forEach(function (row) {
-      var canon = window.PW_PANTRY_NORM ? PW_PANTRY_NORM.canonPantryKey(row.item) : stapleKey(row.item);
+      var base = String(row.item || "").replace(/,.*$/, "").replace(/^(medium|large|small)\s+/i, "");
+      var canon = window.PW_PANTRY_NORM ? PW_PANTRY_NORM.canonPantryKey(base) : stapleKey(base);
       var k = canon + "|" + String(row.unit || "");
       if (seen[k]) return;
       seen[k] = 1;
@@ -369,7 +370,8 @@
 
   function markPantry(ingredients, have) {
     return ingredients.map(function (row) {
-      var fp = haveItem(have, row.item) || STAPLES[stapleKey(row.item)];
+      var base = String(row.item || "").replace(/,.*$/, "").replace(/^(medium|large|small)\s+/i, "");
+      var fp = haveItem(have, row.item) || haveItem(have, base) || STAPLES[stapleKey(base)];
       return { qty: row.qty, unit: row.unit, item: row.item, fromPantry: fp };
     });
   }
@@ -426,9 +428,9 @@
         "pork ribs": "BBQ Pork Tacos",
         default: "Home-Style Tacos"
       },
-      "bbq-ribs": { "pork ribs": "BBQ Baby Back Ribs" },
+      "bbq-ribs": { "pork ribs": "Oven-Baked BBQ Ribs" },
       "pan-chops": {
-        "pork chops": potato ? "Pan-Fried Pork Chops with Mashed Potatoes" : "Pan-Fried Pork Chops with Vegetables"
+        "pork chops": potato ? "Pan-Fried Pork Chops with Mashed Potatoes" : (hasRealVeg(buckets) ? "Pan-Fried Pork Chops with Vegetables" : "Pan-Fried Pork Chops and Onions")
       },
       chili: {
         "ground beef": "Classic Beef Chili",
@@ -456,16 +458,20 @@
         shrimp: "Shrimp Stir-Fry",
         default: "Vegetable Stir-Fry"
       },
-      soup: { default: p ? titleCaseProtein(p) + " and Vegetable Soup" : "Homestyle Vegetable Soup" },
+      soup: { "ground beef": "Hamburger Soup", "pot roast": "Beef and Vegetable Soup", chicken: "Chicken Vegetable Soup", default: p ? titleCaseProtein(p) + " and Vegetable Soup" : "Homestyle Vegetable Soup" },
       sandwich: {
-        "ground beef": "Hot Beef Sandwich",
-        chicken: "Hot Chicken Sandwich",
+        "ground beef": "Hot Beef Sandwiches",
+        chicken: "Hot Chicken Sandwiches",
         eggs: "Fried Egg Sandwiches",
-        default: "Hot Sandwich"
+        "pork chops": "Pork Chop Sandwiches",
+        "pot roast": "Hot Roast Beef Sandwiches",
+        bacon: "Bacon and Cheddar Sandwiches",
+        fish: "Fish Sandwiches",
+        default: p ? titleCaseProtein(p) + " Sandwiches" : "Hot Sandwiches"
       },
       hash: { default: p ? titleCaseProtein(p) + " and Potato Hash" : "Breakfast Hash" },
       wrap: { default: p ? titleCaseProtein(p) + " Wraps" : "Veggie Wraps" },
-      frittata: { default: cheese ? "Cheddar and Vegetable Frittata" : "Vegetable Frittata" },
+      frittata: { default: hasRealVeg(buckets) ? (cheese ? "Cheddar and Vegetable Frittata" : "Vegetable Frittata") : (cheese ? "Cheddar and Onion Frittata" : "Onion Frittata") },
       "fried-rice": { chicken: "Chicken Fried Rice", "ground beef": "Beef Fried Rice", default: "Egg Fried Rice" },
       skillet: { default: p ? "Skillet " + titleCaseProtein(p) + " Dinner" : "Skillet Vegetable Dinner" },
       "sheet-pan": {
@@ -1262,6 +1268,7 @@
   }
 
   function signatureHash(sig) {
+    if (sig.name) return "name::" + sig.name;
     return [sig.template, sig.profile, sig.protein].join("::");
   }
 
@@ -1292,7 +1299,8 @@
   }
 
   function isNearDuplicate(sigA, sigB) {
-    return signatureHash(sigA) === signatureHash(sigB);
+    if (sigA.name && sigB.name) return sigA.name === sigB.name;
+    return [sigA.template, sigA.profile, sigA.protein].join("::") === [sigB.template, sigB.profile, sigB.protein].join("::");
   }
 
   function buildExistingSignatures(recipes) {
@@ -1323,11 +1331,66 @@
     } catch (err) { /* storage full */ }
   }
 
+  function hasRealVeg(b) {
+    var all = (b.vegFast || []).concat(b.vegSlow || []);
+    return all.some(function (v) { return stapleKey(v).indexOf("onion") === -1; });
+  }
+
+  /* Which proteins make a sensible classic for each template (others are skipped). */
+  var PAIR_OK = {
+    tacos: ["ground beef", "chicken", "pork", "ground turkey", "shrimp", "fish", "beans"],
+    wrap: ["ground beef", "chicken", "ground turkey", "pork", "shrimp", "beans"],
+    soup: ["ground beef", "chicken", "ground turkey", "sausage", "beans", "pot roast"],
+    "stir-fry": ["chicken", "ground beef", "pork", "shrimp", "firm tofu", "beans"],
+    "fried-rice": ["chicken", "ground beef", "pork", "shrimp", "eggs", "firm tofu"],
+    skillet: ["ground beef", "chicken", "sausage", "ground turkey", "pork", "beans"],
+    "sheet-pan": ["chicken", "sausage", "pork", "fish", "pork chops"],
+    casserole: ["ground beef", "chicken", "ground turkey", "sausage"],
+    sandwich: ["pork chops", "ground beef", "chicken", "eggs", "pot roast", "bacon", "fish"]
+  };
+  var PROTEIN_FREE = { "grilled-cheese": 1, frittata: 1 };
+
+  function pairAllowed(t, b) {
+    var p = b.protein ? b.protein.def.label : "";
+    if (PAIR_OK[t.id] && PAIR_OK[t.id].indexOf(p) === -1) return false;
+    if ((t.id === "stir-fry" || t.id === "sheet-pan" || t.id === "salad") && !hasRealVeg(b)) return false;
+    if (t.id === "hash" && !hasPotatoes(b)) return false;
+    return true;
+  }
+
+  function candidateList(buckets) {
+    if (buckets._candidates) return buckets._candidates;
+    var list = [];
+    var proteins = buckets.proteins && buckets.proteins.length ? buckets.proteins : [buckets.protein];
+    TEMPLATE_DEFS.slice().sort(function (a, b) {
+      return templateRank(a) - templateRank(b) || a.id.localeCompare(b.id);
+    }).forEach(function (t) {
+      if (templateRank(t) > 22) return;
+      var seen = 0;
+      proteins.forEach(function (prot) {
+        if (PROTEIN_FREE[t.id] && seen) return;
+        var b = bucketsForVariation(buckets, 0);
+        b.protein = prot;
+        if (!t.fits(b) || !pairAllowed(t, b)) return;
+        seen = 1;
+        list.push({ template: t, buckets: b });
+      });
+    });
+    buckets._candidates = list;
+    return list;
+  }
+
   function buildOne(pantry, buckets, variation, servings) {
-    buckets = bucketsForVariation(buckets, variation);
-    var absurd = buckets.protein && buckets.protein.def.label === "fish" && buckets.starch && stapleKey(buckets.starch.name).indexOf("pasta") !== -1 && variation % 3 === 0;
-    if (absurd) variation += 1;
-    var template = pickTemplate(buckets, variation);
+    var cands = candidateList(buckets);
+    var template;
+    if (cands.length) {
+      var c = cands[variation % cands.length];
+      template = c.template;
+      buckets = c.buckets;
+    } else {
+      buckets = bucketsForVariation(buckets, variation);
+      template = pickTemplate(buckets, variation);
+    }
     var profile = pickProfile(template, variation);
     var built = template.build(buckets, profile, servings);
     built.ingredients = dedupeIngredients(built.ingredients || []);
@@ -1349,6 +1412,7 @@
       steps: built.steps
     };
     var sig = recipeSignature(recipe, template.id, profile);
+    sig.name = normalizeTitle(name);
     return {
       recipe: recipe,
       templateId: template.id,
@@ -1377,9 +1441,10 @@
     var items = (recipe.ingredients || []).map(function (i) { return stapleKey(i.item); }).join(" ");
     if (tid === "frittata" && items.indexOf("peanut butter") !== -1) return true;
     if (tid === "grain-bowl" && items.indexOf("bread") !== -1) return true;
-    if (/clove.*onion|onion.*clove/.test(items) || /(\d+\s+clove).*onion/.test((recipe.ingredients || []).map(function (i) {
-      return (i.qty || "") + " " + (i.unit || "") + " " + i.item;
-    }).join(" ").toLowerCase())) return true;
+    /* Per ingredient line: "2 cloves garlic" followed by "1 onion" is fine; "2 cloves onion" is not. */
+    if ((recipe.ingredients || []).some(function (i) {
+      return /clove/i.test(String(i.unit || "") + " " + String(i.item || "")) && /onion/i.test(String(i.item || ""));
+    })) return true;
     if (nameL.indexOf("peanut") !== -1 && tid === "frittata") return true;
     if (nameL.indexOf("grain bowl") !== -1 && items.indexOf("bread") !== -1) return true;
     return false;

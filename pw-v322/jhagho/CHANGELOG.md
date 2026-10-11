@@ -3,7 +3,7 @@
 ## 3.3.0 (2026-10-11)
 
 - **Library:** 248 recipes (`r1`–`r248`) including batch 2 comfort dinners, one-pan, BBQ, soups, pub, Tex-Mex, takeout-style, and breakfasts/lunches.
-- **Photos:** Self-hosted WebP heroes for every catalog recipe (`photos/r{id}.webp`) plus offline Smart Chef template photos; hosted copies under `pantry-week/photos/`.
+- **Photos:** Self-hosted WebP heroes for all 248 recipes with Openverse + Wikimedia sourcing, CLIP vision gate, type-generic fallbacks when needed, and `scripts/photo-verification-log.jsonl` audit trail; hosted copies under `pantry-week/photos/`.
 - **Navigation:** Back/close on sheets and detail; Android/system back walks history; Plan root double-back toast (“Swipe back again to exit”); tab swipe with 24px edge guard.
 - **Plan:** Tappable meal cards with thumbnails; compact actions.
 - **More:** Settings with device-only note, app version, and remove buyer code; footer no longer shows build id or version.

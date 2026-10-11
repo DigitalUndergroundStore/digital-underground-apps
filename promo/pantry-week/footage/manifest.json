@@ -47,7 +47,7 @@
   {
     "name": "tap-have",
     "x": 0.865224358974359,
-    "y": 0.3975673874407583
+    "y": 0.4295579087677725
   },
   {
     "name": "phone-shop-before",
@@ -81,6 +81,31 @@
   },
   {
     "name": "phone-swipe-plan",
+    "w": 390,
+    "h": 844
+  },
+  {
+    "name": "tap-import-link",
+    "x": 0.5,
+    "y": 0.5013514514218009
+  },
+  {
+    "name": "phone-import-link",
+    "w": 390,
+    "h": 844
+  },
+  {
+    "name": "tap-import-add",
+    "x": 0.5,
+    "y": 0.6206494372037915
+  },
+  {
+    "name": "phone-import-preview",
+    "w": 390,
+    "h": 844
+  },
+  {
+    "name": "phone-import-saved",
     "w": 390,
     "h": 844
   },

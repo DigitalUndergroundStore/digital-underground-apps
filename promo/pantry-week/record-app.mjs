@@ -41,10 +41,13 @@ async function tidy(page) {
     document.getElementById("tipOk")?.click();
     const toast = document.getElementById("toast");
     if (toast) toast.hidden = true;
-    document.querySelectorAll("a, button, p, div").forEach((el) => {
-      if (el.childElementCount > 3) return;
-      const text = (el.innerText || "").replace(/\s+/g, " ").trim();
-      if (/^Update available/i.test(text) || /Tap to refresh/i.test(text)) el.remove();
+    document.querySelectorAll("a, button, p, div, span").forEach((el) => {
+      if ([...el.children].some((child) => /Mealime|Update available/i.test(child.textContent || ""))) return;
+      const text = (el.textContent || "").replace(/\s+/g, " ").trim();
+      if (/Mealime/i.test(text)) {
+        el.textContent = text.replace(/Mealime doesn't offer a bulk export — paste a recipe link or text instead\.?/i, "Paste a recipe link or text instead.").replace(/\s+/g, " ").trim();
+      }
+      if (text.length < 140 && /Update available|Tap to refresh/i.test(text)) el.remove();
     });
   });
 }
@@ -222,6 +225,53 @@ await shot(phone, "phone-swipe-recipes");
 await go(phone, "plan");
 await phone.evaluate(() => window.scrollTo(0, 0));
 await shot(phone, "phone-swipe-plan");
+
+const recipeUrl = "https://www.bbcgoodfood.com/recipes/easy-chicken-curry";
+await go(phone, "more");
+await phone.evaluate(() => document.querySelector('[data-action="open-import"]')?.click());
+await new Promise((r) => setTimeout(r, 350));
+await phone.evaluate((recipeUrl) => {
+  const input = document.getElementById("importLink");
+  if (!input) return;
+  input.value = recipeUrl;
+  input.dispatchEvent(new Event("input", { bubbles: true }));
+  input.scrollIntoView({ block: "center" });
+}, recipeUrl);
+await new Promise((r) => setTimeout(r, 200));
+const linkPoint = await pagePoint(phone, "#importLink");
+if (linkPoint) manifest.push({ name: "tap-import-link", ...linkPoint });
+await shot(phone, "phone-import-link");
+await phone.evaluate(() => {
+  const btn = [...document.querySelectorAll("button")].find((el) => /fetch recipe/i.test(el.innerText || ""));
+  if (btn) btn.click();
+});
+await phone.waitForFunction(() => /Easy chicken curry/.test(document.body.innerText || ""), { timeout: 20000 });
+await phone.evaluate(() => window.scrollTo(0, 0));
+await new Promise((r) => setTimeout(r, 200));
+const addPoint = await phone.evaluate(() => {
+  const btn = [...document.querySelectorAll("button")].find((el) => /add selected/i.test(el.innerText || ""));
+  if (!btn) return null;
+  const r = btn.getBoundingClientRect();
+  return { x: (r.x + r.width / 2) / window.innerWidth, y: (r.y + r.height / 2) / window.innerHeight };
+});
+if (addPoint) manifest.push({ name: "tap-import-add", ...addPoint });
+await shot(phone, "phone-import-preview");
+await phone.evaluate(() => {
+  const btn = [...document.querySelectorAll("button")].find((el) => /add selected/i.test(el.innerText || ""));
+  if (btn) btn.click();
+});
+await phone.waitForFunction(() => /Easy chicken curry/.test(document.body.innerText || "") && /Recipe box|imported/i.test(document.body.innerText || ""), { timeout: 10000 });
+await new Promise((r) => setTimeout(r, 400));
+await phone.evaluate(() => {
+  const onRecipes = /Recipe box/.test(document.body.innerText || "");
+  if (!onRecipes) document.querySelector('[data-action="nav"][data-view="recipes"]')?.click();
+});
+await new Promise((r) => setTimeout(r, 350));
+await phone.evaluate(() => {
+  const card = [...document.querySelectorAll(".recipe-card, article")].find((el) => /Easy chicken curry/i.test(el.innerText || ""));
+  if (card) card.scrollIntoView({ block: "center" });
+});
+await shot(phone, "phone-import-saved");
 
 const tablet = await browser.newPage();
 await unlock(tablet, 1100, 1400, 1.5);

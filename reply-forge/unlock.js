@@ -37,13 +37,25 @@
       var t = bundle.assets[p] || "";
       return /\.css$/.test(p) ? "<style>" + t + "</style>" : "<script>" + t + "<\/script>";
     });
+    var pwa = "<link rel=\"stylesheet\" href=\"/assets/buyer/pwa-install.css\"><script src=\"/assets/buyer/pwa-install.js\" data-app-slug=\"reply-forge\" data-app-name=\"Reply Forge\" defer><\/script>";
     var sw = "<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('" + ROOT + "sw.js').catch(function(){});}<\/script>";
-    html = html.replace("</body>", sw + "\n</body>");
+    html = html.replace("</body>", pwa + sw + "\n</body>");
     document.open(); document.write(html); document.close();
   }
   function netFail() { status("Couldn't load Reply Forge. Connect to the internet once to open it; after that it also works offline."); }
-  var hash = (location.hash.match(/(?:^#|&)code=([^&]+)/) || [])[1];
-  if (hash) { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} }
+  function takeCodeFromUrl() {
+    var fromHash = (location.hash.match(/(?:^#|[?&])code=([^&]+)/) || [])[1];
+    var fromSearch = null;
+    try { fromSearch = new URLSearchParams(location.search).get("code"); } catch (e) {}
+    if (fromHash || fromSearch) {
+      try {
+        var clean = location.pathname;
+        history.replaceState(null, "", clean);
+      } catch (e) {}
+    }
+    return fromHash || fromSearch;
+  }
+  var hash = takeCodeFromUrl();
   function tryCode(code, fromLink) {
     status("Unlocking…");
     return derive(decodeURIComponent(code)).then(function (raw) {

@@ -1,0 +1,27 @@
+.du-install { margin-top: 18px; }
+.du-install-btn {
+  width: 100%;
+  min-height: 50px;
+  font: inherit;
+  font-weight: 700;
+  color: #0b0f14;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(105deg, #c4b5fd, #7dd3fc);
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .35);
+}
+.du-install-btn:disabled { opacity: .55; cursor: default; }
+.du-ios-hint {
+  display: none;
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: rgba(0, 0, 0, .35);
+  font-size: .9rem;
+  line-height: 1.45;
+}
+.du-ios-hint.on { display: block; }
+.du-ios-hint ol { margin: 8px 0 0; padding-left: 1.2rem; }
+.du-ios-hint svg { display: block; margin: 10px auto 0; max-width: 220px; width: 100%; height: auto; opacity: .92; }

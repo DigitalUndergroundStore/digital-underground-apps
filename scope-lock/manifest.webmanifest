@@ -1,8 +1,8 @@
 {
  "name": "Scope Lock",
  "short_name": "Scope Lock",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/scope-lock/index.html",
+ "scope": "/scope-lock/",
  "display": "standalone",
  "background_color": "#0a0f14",
  "theme_color": "#0a0f14",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/scope-lock/",
+ "description": "Scope Lock \u2014 Digital Underground"
 }

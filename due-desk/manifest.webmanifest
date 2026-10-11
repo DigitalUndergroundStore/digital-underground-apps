@@ -1,8 +1,8 @@
 {
  "name": "Due Desk",
  "short_name": "Due Desk",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/due-desk/index.html",
+ "scope": "/due-desk/",
  "display": "standalone",
  "background_color": "#0b1220",
  "theme_color": "#0b1220",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/due-desk/",
+ "description": "Due Desk \u2014 Digital Underground"
 }

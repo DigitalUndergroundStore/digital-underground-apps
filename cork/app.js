@@ -800,6 +800,24 @@
     $("warn").hidden = true;
     showGate("");
     registerSW();
+    var fromHash = (location.hash.match(/(?:^#|[?&])code=([^&]+)/) || [])[1];
+    var fromSearch = null;
+    try { fromSearch = new URLSearchParams(location.search).get("code"); } catch (e) {}
+    var autoKey = fromHash || fromSearch;
+    if (autoKey) {
+      try { history.replaceState(null, "", location.pathname); } catch (e) {}
+      var key = decodeURIComponent(autoKey);
+      $("licenseKey").value = key;
+      CorkLicense.unlock(key).then(function (r) {
+        if (!r.ok) {
+          $("gateMsg").textContent = r.message || "That key didn't unlock Cork.";
+          return;
+        }
+        $("licenseKey").value = "";
+        showApp();
+        startGame();
+      });
+    }
   }
 
   try {

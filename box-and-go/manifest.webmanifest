@@ -1,8 +1,8 @@
 {
  "name": "Box & Go",
  "short_name": "Box & Go",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/box-and-go/index.html",
+ "scope": "/box-and-go/",
  "display": "standalone",
  "background_color": "#1c1410",
  "theme_color": "#1c1410",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/box-and-go/",
+ "description": "Box & Go \u2014 Digital Underground"
 }

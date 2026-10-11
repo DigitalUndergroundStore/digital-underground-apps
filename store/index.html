@@ -84,20 +84,9 @@
     object-fit: cover;
     background: #07060f;
   }
-  .hero-film { opacity: 0; transition: opacity .35s ease, filter .35s ease; }
-  .hero-film.is-playing { opacity: 1; filter: brightness(.9); }
-  .hero-text-backdrop {
-    position: absolute; z-index: 1; pointer-events: none;
-    left: 0; top: 0; bottom: 0;
-    width: min(100%, 28rem);
-    background:
-      linear-gradient(165deg, rgba(7, 6, 15, .94) 0%, rgba(7, 6, 15, .78) 38%, rgba(7, 6, 15, .35) 72%, transparent 100%);
-    transition: opacity .42s cubic-bezier(.4, 0, .2, 1), visibility .42s;
-  }
-  .hero.is-panel-minimized .hero-text-backdrop,
-  html.store-hero-panel-min .hero-text-backdrop {
-    opacity: 0; visibility: hidden;
-  }
+  .hero-film { opacity: 0; transition: opacity .35s ease; }
+  .hero-film.is-playing { opacity: 1; filter: none; }
+  .hero-text-backdrop { display: none; }
   .hero-panel {
     position: relative; z-index: 2;
     width: min(100%, 22.5rem);
@@ -188,14 +177,12 @@
   .hero-copy::before {
     content: "";
     position: absolute; z-index: -1;
-    inset: -16px -20px -16px -16px;
-    border-radius: 20px;
+    inset: -12px -16px -12px -12px;
+    border-radius: 18px;
     pointer-events: none;
-    background: linear-gradient(125deg, rgba(7, 6, 15, .96) 0%, rgba(7, 6, 15, .82) 55%, rgba(7, 6, 15, .45) 100%);
-    border: 1px solid rgba(255, 255, 255, .1);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, .45);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: rgba(7, 6, 15, .58);
+    border: 1px solid rgba(255, 255, 255, .12);
+    box-shadow: 0 10px 36px rgba(0, 0, 0, .28);
   }
   .hero-actions {
     display: flex; flex-wrap: wrap; align-items: center;
@@ -269,12 +256,17 @@
     font-size: clamp(36px, 9vw, 68px);
     line-height: .98; letter-spacing: -.045em; font-weight: 700;
     text-wrap: balance;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, .65);
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, .9),
+      0 4px 24px rgba(0, 0, 0, .75),
+      0 0 40px rgba(7, 6, 15, .85);
   }
   .tagline {
     margin: 10px 0 0; max-width: 34rem;
-    color: rgba(237, 233, 254, .92); font-size: 16px; line-height: 1.4;
-    text-shadow: 0 1px 12px rgba(0, 0, 0, .55);
+    color: rgba(237, 233, 254, .96); font-size: 16px; line-height: 1.4;
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, .85),
+      0 2px 16px rgba(0, 0, 0, .65);
   }
   .trust {
     display: flex; flex-wrap: wrap; gap: 6px;
@@ -495,17 +487,13 @@
       align-items: center;
       justify-content: flex-start;
     }
-    .hero-text-backdrop {
-      width: min(58%, 36rem);
-      background: linear-gradient(100deg, rgba(7, 6, 15, .92) 0%, rgba(7, 6, 15, .7) 42%, rgba(7, 6, 15, .22) 78%, transparent 100%);
-    }
     .hero-panel {
       width: min(38%, 28rem);
       max-width: none;
     }
     .hero-panel-fab { top: 24px; left: 24px; width: 56px; height: 56px; }
     h1 { font-size: 64px; }
-    .hero-copy::before { inset: -22px -32px -22px -24px; border-radius: 24px; }
+    .hero-copy::before { inset: -18px -28px -18px -20px; border-radius: 22px; }
     .hero-actions { margin-top: 22px; gap: 12px 18px; }
     .hero-cta { font-size: 16px; padding: 0 26px; }
     .hero-cta-secondary { font-size: 15px; }
@@ -542,8 +530,7 @@
     .card:hover .cta { filter: brightness(1.1); }
   }
   @media (prefers-reduced-motion: reduce) {
-    .hero-film.is-playing { filter: none; }
-    .hero-panel, .hero-text-backdrop, .hero-panel-fab { transition: none !important; }
+    .hero-panel, .hero-panel-fab { transition: none !important; }
     .orb, .card, .shot, .cta { animation: none !important; transition: none !important; }
     .card:hover, .card:active { transform: none; }
     .card:hover .shot { transform: none; }
@@ -568,7 +555,6 @@
       <span class="orb orb-b"></span>
       <span class="orb orb-c"></span>
     </div>
-    <div class="hero-text-backdrop" aria-hidden="true"></div>
     <button type="button" class="hero-panel-fab" aria-label="Show store info" aria-hidden="true" tabindex="-1">
       <img src="media/hero-chip.svg" srcset="media/hero-chip-156.png 156w, media/hero-chip-168.png 168w" sizes="(min-width: 800px) 56px, 52px" width="128" height="128" alt="" aria-hidden="true">
     </button>

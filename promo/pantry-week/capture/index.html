@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1080, initial-scale=1" />
+<title>Pantry Week promo capture</title>
+<style>
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+:root {
+  --paper: #f7f3ea;
+  --ink: #241c14;
+  --ink-soft: #3f342b;
+  --sage: #3e6b2c;
+  --sage-bright: #6b8f3c;
+  --mint: #e7f2d4;
+  --card: #fffdf8;
+  --line: #e4d8c6;
+  --safe: 264px;
+  --side: 72px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); }
+body {
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  font-family: Inter, "Noto Sans", sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+html.square body { height: 1080px; }
+#stage { position: relative; width: 1080px; height: 1920px; background: var(--paper); overflow: hidden; }
+html.square #stage { height: 1080px; }
+section {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: var(--paper);
+}
+.safe {
+  position: absolute;
+  left: var(--side);
+  right: var(--side);
+  top: var(--safe);
+  bottom: var(--safe);
+  display: flex;
+  flex-direction: column;
+}
+#hook .safe, #cta .safe { align-items: center; text-align: center; }
+html.debug .safe { outline: 4px solid #e23b3b; }
+.center { justify-content: center; }
+.col { justify-content: flex-start; }
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.display {
+  margin: 0;
+  font-family: Fraunces, "Liberation Serif", Georgia, serif;
+  font-weight: 650;
+  font-variation-settings: "opsz" 144, "wght" 650, "SOFT" 40, "WONK" 0;
+  font-size: 132px;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+.again {
+  margin: 28px 0 0;
+  font-family: Fraunces, "Liberation Serif", Georgia, serif;
+  font-weight: 560;
+  font-variation-settings: "opsz" 72, "wght" 560, "SOFT" 50, "WONK" 0;
+  font-size: 72px;
+  color: var(--sage);
+}
+.cap {
+  align-self: flex-start;
+  margin: 0 0 36px;
+  padding: 18px 32px 20px;
+  border-radius: 999px;
+  background: var(--sage);
+  color: #fff;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.apphead { margin: 0 0 22px; }
+.word {
+  margin: 0;
+  font-family: Fraunces, "Liberation Serif", Georgia, serif;
+  font-weight: 640;
+  font-variation-settings: "opsz" 72, "wght" 640, "SOFT" 30, "WONK" 0;
+  font-size: 76px;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.sub {
+  margin: 12px 0 0;
+  font-size: 32px;
+  font-weight: 650;
+  color: var(--ink-soft);
+}
+.filters { display: flex; gap: 14px; margin: 0 0 28px; flex-wrap: wrap; }
+.chip {
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 2px solid var(--line);
+  background: var(--card);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.chip.on { background: var(--mint); border-color: var(--sage-bright); color: var(--ink); }
+.cards { display: flex; flex-direction: column; gap: 22px; }
+.card {
+  position: relative;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 28px;
+  padding: 32px 200px 32px 32px;
+  box-shadow: 0 10px 28px rgba(36, 28, 20, 0.06);
+}
+.card.on { border-color: var(--sage); background: #f4f8ec; }
+.card h3 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+.card .meta { margin: 12px 0 0; font-size: 28px; font-weight: 650; color: var(--ink-soft); }
+.badge {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--sage);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 0;
+}
+.card.on .badge { opacity: 1; }
+.rows { display: flex; flex-direction: column; gap: 14px; }
+.row {
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 22px;
+  min-height: 108px;
+  padding: 0 24px;
+}
+.row .day {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.row .meal { font-size: 36px; font-weight: 700; letter-spacing: -0.02em; color: #6a5d52; }
+.row.filled .meal { color: var(--ink); }
+.row .tag {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sage);
+  background: var(--mint);
+  border-radius: 999px;
+  padding: 8px 12px;
+  opacity: 0;
+}
+.row.filled .tag { opacity: 1; }
+.aisle {
+  margin: 18px 0 8px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.item {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  min-height: 92px;
+  padding: 0 8px;
+  border-top: 2px solid var(--line);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.box {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--sage-bright);
+  border-radius: 8px;
+  background: #fff;
+}
+.item.have { color: var(--ink-soft); }
+.item.have .box { background: var(--sage); border-color: var(--sage); }
+.havebtn {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 16px;
+}
+.item.have .havebtn { background: var(--mint); border-color: var(--sage-bright); }
+.actions { display: flex; gap: 12px; margin-top: 18px; }
+.btn {
+  flex: 1;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 18px 12px;
+  border-radius: 999px;
+  border: 2px solid var(--sage);
+}
+.btn.solid { background: var(--sage); color: #fff; }
+.btn.ghost { background: var(--card); color: var(--ink); }
+.paper {
+  background: #fff;
+  border-radius: 18px;
+  padding: 48px 48px 40px;
+  box-shadow: 0 18px 50px rgba(36, 28, 20, 0.1);
+  border: 1px solid #efe6d8;
+}
+.paper h3 {
+  margin: 0 0 10px;
+  font-family: Fraunces, "Liberation Serif", Georgia, serif;
+  font-size: 64px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+}
+.paper .pline { margin: 0 0 22px; font-size: 30px; font-weight: 650; color: var(--ink-soft); }
+.paper .dline {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.paper .dline span:first-child { color: var(--sage); width: 72px; }
+.paper h4 {
+  margin: 22px 0 8px;
+  font-size: 22px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.paper .slist { margin: 0; font-size: 34px; font-weight: 700; line-height: 1.4; }
+.offline {
+  margin: 26px 0 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--sage);
+}
+.cta-block { text-align: center; }
+.cta-block .display { font-size: 104px; }
+.price {
+  margin: 22px 0 0;
+  font-family: Fraunces, "Liberation Serif", Georgia, serif;
+  font-weight: 700;
+  font-variation-settings: "opsz" 144, "wght" 700, "SOFT" 20, "WONK" 0;
+  font-size: 128px;
+  letter-spacing: -0.04em;
+  color: var(--sage);
+  line-height: 0.95;
+}
+.pay {
+  margin: 8px 0 0;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.url {
+  margin: 22px 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.fine { margin: 14px 0 0; font-size: 28px; font-weight: 650; color: var(--ink-soft); }
+.zoom { transform-origin: 50% 0; }
+#finger {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  margin-left: -36px;
+  margin-top: -36px;
+  border-radius: 50%;
+  background: rgba(62, 107, 44, 0.28);
+  border: 4px solid rgba(62, 107, 44, 0.9);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+html.square {
+  --safe: 276px;
+  --side: 64px;
+}
+html.square .display { font-size: 84px; }
+html.square .again { font-size: 48px; margin-top: 12px; }
+html.square .eyebrow { font-size: 20px; margin-bottom: 8px; }
+html.square .cap { font-size: 30px; padding: 10px 18px 12px; margin-bottom: 12px; }
+html.square .word { font-size: 40px; }
+html.square .sub { font-size: 20px; margin-top: 4px; }
+html.square .apphead { margin-bottom: 8px; }
+html.square .filters { margin-bottom: 8px; }
+html.square .chip { font-size: 18px; padding: 6px 12px; }
+html.square .card { padding: 12px 108px 12px 16px; border-radius: 18px; }
+html.square .card h3 { font-size: 30px; }
+html.square .card .meta { font-size: 18px; margin-top: 2px; }
+html.square .badge { font-size: 16px; padding: 8px 12px; }
+html.square .cards { gap: 8px; }
+html.square .rows { gap: 6px; }
+html.square .row { min-height: 48px; padding: 0 12px; border-radius: 14px; grid-template-columns: 64px 1fr auto; }
+html.square .row .day { font-size: 16px; }
+html.square .row .meal { font-size: 22px; }
+html.square .row .tag { font-size: 12px; padding: 4px 8px; }
+html.square .aisle { font-size: 16px; margin: 6px 0 2px; }
+html.square .item { min-height: 42px; font-size: 22px; }
+html.square .box { width: 22px; height: 22px; }
+html.square .havebtn { font-size: 14px; padding: 4px 8px; }
+html.square .actions { margin-top: 8px; }
+html.square .btn { font-size: 18px; padding: 8px; }
+html.square .paper { padding: 14px 18px; }
+html.square .paper h3 { font-size: 32px; }
+html.square .paper .pline, html.square .paper .slist, html.square .paper .dline { font-size: 18px; }
+html.square .paper .dline { padding: 2px 0; }
+html.square .paper h4 { margin: 8px 0 4px; font-size: 14px; }
+html.square .offline { font-size: 18px; margin-top: 8px; }
+html.square .cta-block .display { font-size: 64px; }
+html.square .price { font-size: 72px; margin-top: 6px; }
+html.square .pay { font-size: 32px; }
+html.square .url { font-size: 22px; margin-top: 10px; }
+html.square .fine { font-size: 18px; }
+html.square .hide-sq { display: none !important; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <section id="hook">
+    <div class="safe center">
+      <p class="eyebrow">Every night</p>
+      <h1 class="display">What's for<br>dinner?</h1>
+      <p class="again">Again?</p>
+    </div>
+  </section>
+
+  <section id="pick">
+    <div class="safe col">
+      <div class="cap">Pick the meals</div>
+      <div class="zoom" id="pickZoom">
+        <header class="apphead">
+          <p class="eyebrow">Offline meal planner</p>
+          <h2 class="word">Pantry Week</h2>
+          <p class="sub">30-minute dinners. Tap to add them.</p>
+        </header>
+        <div class="filters">
+          <span class="chip on">Quick</span>
+          <span class="chip">Vegetarian</span>
+          <span class="chip">Gluten-free</span>
+          <span class="chip hide-sq">Dairy-free</span>
+        </div>
+        <div class="cards" id="cards"></div>
+        <p class="sub hide-sq" style="margin-top:22px">36 recipes. Vegetarian, gluten-free, dairy-free and quick filters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="week">
+    <div class="safe col">
+      <div class="cap">The week fills in</div>
+      <div class="zoom" id="weekZoom">
+        <header class="apphead">
+          <p class="eyebrow">This week</p>
+          <h2 class="word" id="weekCount">0 dinners</h2>
+        </header>
+        <div class="rows" id="weekRows"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="list">
+    <div class="safe col">
+      <div class="cap">Shop by aisle</div>
+      <div class="zoom" id="listZoom">
+        <header class="apphead">
+          <p class="eyebrow">Shopping list</p>
+          <h2 class="word">Grouped by aisle</h2>
+          <p class="sub">Quantities combined by item.</p>
+        </header>
+        <div id="listBody"></div>
+        <div class="actions">
+          <div class="btn solid">Copy list as text</div>
+          <div class="btn ghost">Print</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="print">
+    <div class="safe col">
+      <div class="cap">Print it. Works offline.</div>
+      <div class="zoom" id="printZoom">
+        <div class="paper" id="paper"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="safe center">
+      <div class="cta-block">
+        <p class="eyebrow">Offline meal planner</p>
+        <h1 class="display">Pantry Week</h1>
+        <p class="price">CAD$24</p>
+        <p class="pay">Pay once.</p>
+        <p class="url">digitalundergroundstore.com</p>
+        <p class="fine">No subscription. No account.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="finger"></div>
+</div>
+<script>
+(function () {
+  var MEALS = [
+    { name: "Lemon chicken", meta: "30 min · Serves 4" },
+    { name: "Green bean skillet", meta: "30 min · Vegetarian" },
+    { name: "Tomato basil pasta", meta: "30 min · Vegetarian" }
+  ];
+  var WEEK = [
+    ["Mon", "Lemon chicken", ""],
+    ["Tue", "Green bean skillet", ""],
+    ["Wed", "Tomato basil pasta", ""],
+    ["Thu", "Lemon chicken", "Leftovers"],
+    ["Fri", "Tomato basil pasta", ""],
+    ["Sat", "Green bean skillet", ""],
+    ["Sun", "Lemon chicken", ""]
+  ];
+  var ITEMS = [
+    { aisle: "Produce", line: "1 cup basil", haveAt: 15.15 },
+    { aisle: "Produce", line: "1 lb green beans" },
+    { aisle: "Produce", line: "2 lemons" },
+    { aisle: "Dairy", line: "4 oz parmesan" },
+    { aisle: "Pantry", line: "1 lb spaghetti" },
+    { aisle: "Household", line: "Paper towels", extra: true }
+  ];
+
+  var cards = document.getElementById("cards");
+  MEALS.forEach(function (m, i) {
+    var el = document.createElement("article");
+    el.className = "card";
+    el.id = "card" + i;
+    el.innerHTML = "<h3>" + m.name + "</h3><p class=\"meta\">" + m.meta + "</p><div class=\"badge\">Added</div>";
+    cards.appendChild(el);
+  });
+  var weekRows = document.getElementById("weekRows");
+  WEEK.forEach(function (w, i) {
+    var el = document.createElement("div");
+    el.className = "row" + (i > 4 ? " hide-sq" : "");
+    el.id = "day" + i;
+    el.innerHTML = "<div class=\"day\">" + w[0] + "</div><div class=\"meal\">Add a dinner</div>" +
+      (w[2] ? "<div class=\"tag\">" + w[2] + "</div>" : "<div class=\"tag\"></div>");
+    weekRows.appendChild(el);
+  });
+  var listBody = document.getElementById("listBody");
+  var lastAisle = "";
+  ITEMS.forEach(function (item, i) {
+    if (item.aisle !== lastAisle) {
+      var h = document.createElement("div");
+      h.className = "aisle" + (item.aisle === "Household" ? " hide-sq" : "");
+      h.textContent = item.aisle;
+      listBody.appendChild(h);
+      lastAisle = item.aisle;
+    }
+    var row = document.createElement("div");
+    row.className = "item" + (item.extra ? " hide-sq" : "");
+    row.id = "item" + i;
+    row.innerHTML = "<div class=\"box\"></div><div>" + item.line + "</div><div class=\"havebtn\">Have it</div>";
+    listBody.appendChild(row);
+  });
+
+  var paper = document.getElementById("paper");
+  var days = WEEK.map(function (w) {
+    return "<div class=\"dline" + (WEEK.indexOf(w) > 3 ? " hide-sq" : "") + "\"><span>" + w[0] + "</span><span>" + w[1] + "</span></div>";
+  }).join("");
+  paper.innerHTML =
+    "<h3>Pantry Week</h3><p class=\"pline\">Seven dinners. One list.</p>" +
+    days +
+    "<h4>Shopping list</h4>" +
+    "<p class=\"slist\">Produce — basil, green beans, lemons<br>Dairy — parmesan<br>Pantry — spaghetti</p>" +
+    "<p class=\"offline\">Works offline. No account.</p>";
+
+  var finger = document.getElementById("finger");
+  function clamp(x) { return Math.max(0, Math.min(1, x)); }
+  function sceneOpacity(t, a, b, fadeIn, fadeOut) {
+    if (t < a || t > b) return 0;
+    var o = 1;
+    if (fadeIn && t < a + 0.18) o = (t - a) / 0.18;
+    if (fadeOut && t > b - 0.18) o = Math.min(o, (b - t) / 0.18);
+    return clamp(o);
+  }
+  function zoom(t, a, b) {
+    var p = clamp((t - a) / (b - a));
+    return 1 + 0.03 * p;
+  }
+  function pointAt(el, on) {
+    if (!on || !el) { finger.style.opacity = "0"; return; }
+    var r = el.getBoundingClientRect();
+    var stage = document.getElementById("stage").getBoundingClientRect();
+    finger.style.opacity = "1";
+    finger.style.left = (r.right - 70 - stage.left) + "px";
+    finger.style.top = (r.top + r.height * 0.55 - stage.top) + "px";
+  }
+
+  var PICK_AT = [2.55, 4.15, 5.75];
+  var WEEK_AT = [7.7, 8.25, 8.8, 9.35, 9.9, 10.45, 11.0];
+
+  window.renderAt = function (t) {
+    document.getElementById("hook").style.opacity = sceneOpacity(t, 0, 1.85, false, true);
+    document.getElementById("pick").style.opacity = sceneOpacity(t, 1.67, 7.45, true, true);
+    document.getElementById("week").style.opacity = sceneOpacity(t, 7.27, 12.65, true, true);
+    document.getElementById("list").style.opacity = sceneOpacity(t, 12.47, 18.25, true, true);
+    document.getElementById("print").style.opacity = sceneOpacity(t, 18.07, 21.65, true, true);
+    document.getElementById("cta").style.opacity = sceneOpacity(t, 21.47, 26.0, true, false);
+
+    document.getElementById("pickZoom").style.transform = "scale(" + zoom(t, 1.85, 7.45) + ")";
+    document.getElementById("weekZoom").style.transform = "scale(" + zoom(t, 7.45, 12.65) + ")";
+    document.getElementById("listZoom").style.transform = "scale(" + zoom(t, 12.65, 18.25) + ")";
+    document.getElementById("printZoom").style.transform = "scale(" + zoom(t, 18.25, 21.65) + ")";
+
+    var fingerTarget = null;
+    var fingerOn = false;
+    MEALS.forEach(function (_, i) {
+      var on = t >= PICK_AT[i];
+      document.getElementById("card" + i).classList.toggle("on", on);
+      if (t >= PICK_AT[i] - 0.05 && t < PICK_AT[i] + 0.38) {
+        fingerTarget = document.getElementById("card" + i);
+        fingerOn = true;
+      }
+    });
+
+    var filled = 0;
+    WEEK.forEach(function (w, i) {
+      var on = t >= WEEK_AT[i];
+      var row = document.getElementById("day" + i);
+      row.classList.toggle("filled", on);
+      row.querySelector(".meal").textContent = on ? w[1] : "Add a dinner";
+      if (on) filled++;
+    });
+    document.getElementById("weekCount").textContent = filled + (filled === 1 ? " dinner" : " dinners");
+
+    ITEMS.forEach(function (item, i) {
+      var on = item.haveAt && t >= item.haveAt;
+      document.getElementById("item" + i).classList.toggle("have", !!on);
+      if (item.haveAt && t >= item.haveAt - 0.05 && t < item.haveAt + 0.4) {
+        fingerTarget = document.getElementById("item" + i);
+        fingerOn = true;
+      }
+    });
+    pointAt(fingerTarget, fingerOn && t > 1.9 && t < 18);
+  };
+
+  if (location.hash.indexOf("debug") !== -1) document.documentElement.classList.add("debug");
+  window.renderAt(0);
+})();
+</script>
+</body>
+</html>

@@ -1,12 +1,12 @@
-# Pantry Week 3.4.0 promo
+# Pantry Week 3.4.2 promo
 
-HOLD. Do not re-record or render another cut until there is an explicit go that includes the final live build id. That next cut waits for v3.4.1 (imported photos) and v3.4.2 (the new app background). Keep this setup and the motion backdrop. Do not replace the delivered video files.
+Recorded from live build `202610111915-pw342`. The motion backdrop stays behind the devices. The Plan screen shows the app's own soft moving backdrop. Import keeps the recipe site's photo. The earlier promo files stay in place. This cut is a new pair of files.
 
 26-second vertical (1080×1920) and square (1080×1080) cuts. 30 fps H.264. The words on screen carry the story with the sound off.
 
 Price on screen is CAD$24. The store line is digitalundergroundstore.com. Gumroad is not shown.
 
-The pictures inside the phone and tablet are screen recordings of the live app at `https://digitalundergroundstore.com/pantry-week/` (v3.4.0). The app files in this repo are unchanged.
+The pictures inside the phone and tablet are screen recordings of the live app at `https://digitalundergroundstore.com/pantry-week/` (v3.4.2, build 202610111915-pw342). The app files in this repo are unchanged.
 
 ## Story
 
@@ -26,9 +26,9 @@ Captions sit below the top 250px and above the device. The phone and the tablet 
 
 ## This cut
 
-Import is the v3.4.0 screen: paste a recipe link, the preview fills with Easy chicken curry, then it is saved into the recipe box. The line on screen is "Switching apps? Bring your recipes."
+Import pastes the BBC Good Food easy chicken curry link. The preview fills with that page's photo, then the recipe is saved into the recipe box with the photo. The line on screen is "Switching apps? Bring your recipes."
 
-The background is the approved motion look. The devices and the full screens stay sharp. The earlier promo MP4s stay where they are. This cut is a new pair of files.
+The frame behind the devices is the approved motion look. On the Plan shot, the app's own soft backdrop drifts. The devices and the full screens stay sharp. Earlier promo MP4s stay where they are.
 
 ## Music
 
@@ -42,6 +42,6 @@ Feeling Happy by Ahjay Stelino. See `AUDIO-CREDITS.md`.
 cd promo/pantry-week
 npm install puppeteer-core
 node record-app.mjs /path/to/buyer-code.txt
-node render.mjs vertical --out=/tmp/pw-frames-vertical --encode --audio=audio/feeling-happy-bed.m4a --video=/tmp/pantry-week-promo-v340-vertical.mp4
-node render.mjs square --out=/tmp/pw-frames-square --encode --audio=audio/feeling-happy-bed.m4a --video=/tmp/pantry-week-promo-v340-square.mp4
+node render.mjs vertical --out=/tmp/pw-frames-vertical --encode --audio=audio/feeling-happy-bed.m4a --video=/tmp/pantry-week-promo-v342-vertical.mp4
+node render.mjs square --out=/tmp/pw-frames-square --encode --audio=audio/feeling-happy-bed.m4a --video=/tmp/pantry-week-promo-v342-square.mp4
 ```

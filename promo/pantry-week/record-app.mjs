@@ -119,6 +119,12 @@ async function go(page, view) {
 
 const phone = await browser.newPage();
 await unlock(phone, 390, 844, 2);
+const build = await phone.evaluate(() => ((document.body.innerText || "").match(/2026\d+-pw\d+/) || [""])[0]);
+console.log("build", build);
+if (build !== "202610111915-pw342") {
+  console.error("unexpected build");
+  process.exit(1);
+}
 
 await go(phone, "recipes");
 await photos(phone);
@@ -167,6 +173,8 @@ await phone.evaluate(() => {
   if (day) day.scrollIntoView({ block: "start" });
 });
 await shot(phone, "phone-week");
+await new Promise((r) => setTimeout(r, 1400));
+await shot(phone, "phone-week-b");
 
 await go(phone, "shop");
 await phone.evaluate(() => window.scrollTo(0, 180));
@@ -246,8 +254,18 @@ await phone.evaluate(() => {
   if (btn) btn.click();
 });
 await phone.waitForFunction(() => /Easy chicken curry/.test(document.body.innerText || ""), { timeout: 20000 });
-await phone.evaluate(() => window.scrollTo(0, 0));
-await new Promise((r) => setTimeout(r, 200));
+await phone.waitForFunction(() => [...document.querySelectorAll(".import-preview-thumb")].some((el) => /url\(/.test(getComputedStyle(el).backgroundImage || "")), { timeout: 8000 });
+await phone.evaluate(async () => {
+  const el = document.querySelector(".import-preview-thumb");
+  const match = (getComputedStyle(el).backgroundImage || "").match(/url\(["']?(.*?)["']?\)/);
+  if (!match) return;
+  await new Promise((resolve) => {
+    const img = new Image();
+    img.onload = img.onerror = () => resolve();
+    img.src = match[1];
+  });
+  window.scrollTo(0, 0);
+});
 const addPoint = await phone.evaluate(() => {
   const btn = [...document.querySelectorAll("button")].find((el) => /add selected/i.test(el.innerText || ""));
   if (!btn) return null;
@@ -267,9 +285,19 @@ await phone.evaluate(() => {
   if (!onRecipes) document.querySelector('[data-action="nav"][data-view="recipes"]')?.click();
 });
 await new Promise((r) => setTimeout(r, 350));
-await phone.evaluate(() => {
+await phone.waitForFunction(() => [...document.querySelectorAll("*")].some((el) => /easy-chicken-curry|immediate\.co\.uk/.test(getComputedStyle(el).backgroundImage || "")), { timeout: 8000 });
+await phone.evaluate(async () => {
   const card = [...document.querySelectorAll(".recipe-card, article")].find((el) => /Easy chicken curry/i.test(el.innerText || ""));
-  if (card) card.scrollIntoView({ block: "center" });
+  const photo = card && (card.querySelector(".card-photo") || card);
+  if (photo) photo.scrollIntoView({ block: "center" });
+  const bgEl = [...document.querySelectorAll("*")].find((el) => /easy-chicken-curry|immediate\.co\.uk/.test(getComputedStyle(el).backgroundImage || ""));
+  const match = bgEl && (getComputedStyle(bgEl).backgroundImage || "").match(/url\(["']?(.*?)["']?\)/);
+  if (!match) return;
+  await new Promise((resolve) => {
+    const img = new Image();
+    img.onload = img.onerror = () => resolve();
+    img.src = match[1];
+  });
 });
 await shot(phone, "phone-import-saved");
 

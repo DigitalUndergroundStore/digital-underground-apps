@@ -303,6 +303,7 @@ html.square .finger { width: 48px; height: 48px; }
     <img data-shot="phone-canadian" src="../footage/phone-canadian.png" alt="" />
     <img data-shot="phone-fill-choice" src="../footage/phone-fill-choice.png" alt="" />
     <img data-shot="phone-week" src="../footage/phone-week.png" alt="" />
+    <img data-shot="phone-week-b" src="../footage/phone-week-b.png" alt="" />
     <img data-shot="phone-shop" src="../footage/phone-shop.png" alt="" />
     <img data-shot="phone-shop-before" src="../footage/phone-shop-before.png" alt="" />
     <img data-shot="phone-shop-have" src="../footage/phone-shop-have.png" alt="" />
@@ -337,7 +338,7 @@ html.square .finger { width: 48px; height: 48px; }
     { a: 5.05, b: 6.45, shot: "phone-week", cap: "The week fills in" },
     { a: 6.35, b: 7.85, shot: "phone-shop", cap: "Shop by aisle" },
     { a: 7.75, b: 8.85, shot: "phone-shop-before", cap: "Shop by aisle",
-      tap: { t: 8.05, x: 0.865, y: 0.430 } },
+      tap: { t: 8.05, x: 0.865, y: 0.338 } },
     { a: 8.75, b: 9.65, shot: "phone-shop-have", cap: "Have it" },
     { a: 9.55, b: 10.85, shot: "phone-chef", cap: "Smart Chef" },
     { a: 10.75, b: 11.9, shot: "phone-share", cap: "Cook from what you have",
@@ -345,7 +346,7 @@ html.square .finger { width: 48px; height: 48px; }
     { a: 11.8, b: 13.55, shot: "phone-swipe-plan", swipeTo: "phone-swipe-recipes", cap: "Swipe between tabs" },
     { a: 13.45, b: 15.05, shot: "tablet-recipes", cap: "248 recipes", device: "tablet" },
     { a: 14.95, b: 16.55, shot: "phone-import-link", cap: "Switching apps? Bring your recipes.",
-      tap: { t: 15.35, x: 0.5, y: 0.501 } },
+      tap: { t: 15.35, x: 0.5, y: 0.504 } },
     { a: 16.45, b: 18.15, shot: "phone-import-preview", cap: "Switching apps? Bring your recipes.",
       tap: { t: 16.85, x: 0.5, y: 0.621 } },
     { a: 18.05, b: 21.15, shot: "phone-import-saved", cap: "Switching apps? Bring your recipes." }
@@ -371,7 +372,30 @@ html.square .finger { width: 48px; height: 48px; }
     screen.style.height = (base / aspect) + "px";
     var src = "../footage/" + beat.shot + ".png";
     if (shotImg.getAttribute("src") !== src) shotImg.src = src;
-    if (beat.swipeTo) {
+    shotImg.style.position = "relative";
+    shotImg.style.inset = "auto";
+    shotImg.style.height = "100%";
+    shotImg.style.opacity = "1";
+    shotImgB.style.position = "relative";
+    shotImgB.style.inset = "auto";
+    shotImgB.style.height = "100%";
+    shotImgB.style.opacity = "1";
+    track.style.height = "100%";
+    if (beat.drift) {
+      var driftSrc = "../footage/" + beat.drift + ".png";
+      if (shotImgB.getAttribute("src") !== driftSrc) shotImgB.src = driftSrc;
+      shotImgB.style.display = "block";
+      shotImg.style.position = "absolute";
+      shotImgB.style.position = "absolute";
+      shotImg.style.inset = "0";
+      shotImgB.style.inset = "0";
+      shotImg.style.width = "100%";
+      shotImgB.style.width = "100%";
+      track.style.width = "100%";
+      track.style.transform = "none";
+      shotImgB.style.opacity = String(eased);
+      finger.style.opacity = "0";
+    } else if (beat.swipeTo) {
       var srcB = "../footage/" + beat.swipeTo + ".png";
       if (shotImgB.getAttribute("src") !== srcB) shotImgB.src = srcB;
       shotImgB.style.display = "block";

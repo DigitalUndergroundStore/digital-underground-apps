@@ -15,6 +15,7 @@
     ["breakfast", "Breakfast"],
     ["lunch", "Lunch"],
     ["dinner", "Dinner"],
+    ["canadian", "Canadian"],
     ["snack", "Snacks"],
     ["dessert", "Desserts"],
     ["vegetarian", "Vegetarian"],
@@ -1137,7 +1138,7 @@
     }).join("");
     const filterNote = ui.filter !== "all"
       ? `Only recipes matching <strong>${esc(PW.tagLabel(ui.filter))}</strong> will be used.`
-      : "Recipes are picked at random from your full library (126 starters plus any you added).";
+      : "Recipes are picked at random from your full library (" + PW.STARTERS.length + " starters plus any you added).";
     $("fill").innerHTML = `<div class="modal-card sheet-card" role="document" data-sheet-body="1">
       ${sheetGrab()}
       ${modalChrome("fillTitle", "Fill the week", "Back")}

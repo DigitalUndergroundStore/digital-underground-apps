@@ -1364,6 +1364,7 @@
     if (tag === "vegan") return "Vegan";
     if (tag === "high-protein") return "High protein";
     if (tag === "quick") return "Quick (20 min)";
+    if (tag === "canadian") return "Canadian";
     if (tag === "budget") return "Budget";
     if (tag === "moderate") return "Moderate";
     if (tag === "splurge") return "Splurge";

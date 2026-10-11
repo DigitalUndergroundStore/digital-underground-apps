@@ -992,19 +992,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook the main ingredient 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 11 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -1058,11 +1053,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 17 minutes.",
-      "Serve over rice or with warm bread."
+      "Cut chicken thighs into chunks. Marinate with oil, garlic, paprika, and salt 10 minutes.",
+      "Thread onto skewers if using; heat grill or broiler to high.",
+      "Cook 23 minutes, turning once, until charred and cooked through.",
+      "Rest 3 minutes off heat.",
+      "Serve with rice and lime wedges."
     ]
   },
   {
@@ -1107,19 +1102,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook the main ingredient 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 20 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -1164,19 +1154,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook firm tofu 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 5 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -1352,10 +1337,10 @@
     ],
     "steps": [
       "Break up cold rice with your hands (2 minutes).",
-      "Heat oil in a wok over high heat. Fry garlic 30 seconds.",
-      "Add rice and soy sauce; toss 20 minutes until steaming.",
-      "Stir in scallions and salt off heat.",
-      "Squeeze lime over the rice and serve hot."
+      "Heat oil in a wok over high heat. Stir-fry garlic 30 seconds.",
+      "Add rice and soy sauce; toss 5 minutes until steaming and lightly crisp.",
+      "Fold in scallions, kimchi, or peas off heat as listed.",
+      "Squeeze lime over the top and serve hot."
     ]
   },
   {
@@ -1406,19 +1391,14 @@
         "qty": 0.25,
         "unit": "tsp",
         "item": "black pepper"
-      },
-      {
-        "qty": 4,
-        "unit": "oz",
-        "item": "feta cheese"
       }
     ],
     "steps": [
-      "Chop cucumber and halve tomatoes (4 minutes).",
-      "Whisk olive oil, lemon juice, salt, and pepper.",
-      "Toss greens and vegetables with dressing.",
-      "Crumble feta over the top.",
-      "Serve immediately while greens are crisp."
+      "Prep vegetables and protein as needed (5–6 minutes).",
+      "Whisk dressing ingredients until smooth.",
+      "Cook noodles or blanch beans if the recipe calls for it (4–8 minutes).",
+      "Toss everything with dressing just before serving.",
+      "Serve chilled or at room temperature within 15 minutes."
     ]
   },
   {
@@ -1462,19 +1442,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook italian sausage 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 12 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -1496,14 +1471,24 @@
         "item": "salmon"
       },
       {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
         "qty": 2,
         "unit": "tbsp",
-        "item": "olive oil"
+        "item": "maple syrup"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "onion"
+        "unit": "tbsp",
+        "item": "rice vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "vegetable oil"
       },
       {
         "qty": 2,
@@ -1512,26 +1497,16 @@
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
+        "unit": "tbsp",
+        "item": "ginger"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 6 minutes.",
-      "Serve over rice or with warm bread."
+      "Whisk soy sauce, maple syrup, vinegar, garlic, and ginger for teriyaki glaze.",
+      "Pat salmon dry. Heat oil in a skillet over medium-high.",
+      "Sear salmon 3 minutes skin-side up, then flip and brush with glaze.",
+      "Cook 4 more minutes until just opaque in the center.",
+      "Spoon extra glaze over the fish and serve with rice."
     ]
   },
   {
@@ -1577,19 +1552,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook paneer 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 14 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -1640,19 +1610,14 @@
         "qty": 0.25,
         "unit": "tsp",
         "item": "black pepper"
-      },
-      {
-        "qty": 4,
-        "unit": "oz",
-        "item": "feta cheese"
       }
     ],
     "steps": [
-      "Chop cucumber and halve tomatoes (4 minutes).",
-      "Whisk olive oil, lemon juice, salt, and pepper.",
-      "Toss greens and vegetables with dressing.",
-      "Crumble feta over the top.",
-      "Serve immediately while greens are crisp."
+      "Prep vegetables and protein as needed (5–6 minutes).",
+      "Whisk dressing ingredients until smooth.",
+      "Cook noodles or blanch beans if the recipe calls for it (4–8 minutes).",
+      "Toss everything with dressing just before serving.",
+      "Serve chilled or at room temperature within 15 minutes."
     ]
   },
   {
@@ -1696,19 +1661,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook shrimp 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 17 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -1932,19 +1892,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook the main ingredient 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 22 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -1988,19 +1943,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook ground beef 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 10 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -2017,11 +1967,21 @@
     "ingredients": [
       {
         "qty": 1,
-        "unit": "lb",
-        "item": "chicken breast"
+        "unit": "cup",
+        "item": "couscous"
       },
       {
-        "qty": 2,
+        "qty": 1,
+        "unit": "can",
+        "item": "crushed tomatoes"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "egg"
+      },
+      {
+        "qty": 1,
         "unit": "tbsp",
         "item": "olive oil"
       },
@@ -2031,32 +1991,22 @@
         "item": "onion"
       },
       {
-        "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
         "qty": 1,
         "unit": "tsp",
-        "item": "smoked paprika"
+        "item": "cumin"
       },
       {
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 8 minutes.",
-      "Serve over rice or with warm bread."
+      "Stir couscous with 1 cup boiling water and a pinch of salt; cover 5 minutes.",
+      "Dice onion. Cook in oil 4 minutes, add cumin, then tomatoes; simmer 8 minutes.",
+      "Make wells in the sauce and crack in eggs; cover 6 minutes until set.",
+      "Fluff couscous with a fork.",
+      "Serve shakshuka over couscous."
     ]
   },
   {
@@ -2081,41 +2031,41 @@
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
+        "unit": "cup",
+        "item": "cooked rice"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "onion"
+        "item": "avocado"
       },
       {
         "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "scallion"
       },
       {
         "qty": 1,
         "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
+        "item": "sesame seeds"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 5 minutes.",
-      "Serve over rice or with warm bread."
+      "Cut tuna into bite-size cubes. Toss with soy sauce and sesame oil; chill 10 minutes.",
+      "Cook or reheat rice. Slice avocado and scallions.",
+      "Divide rice among bowls.",
+      "Top with tuna, avocado, scallions, and sesame seeds.",
+      "Serve within 15 minutes while the fish is cold and fresh."
     ]
   },
   {
@@ -2231,11 +2181,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 12 minutes.",
-      "Serve over rice or with warm bread."
+      "Pat steak dry; season with salt and pepper.",
+      "Heat oil in a cast-iron skillet over high heat.",
+      "Sear steak 7 minutes per side for medium, less for rare.",
+      "Rest 5 minutes before slicing against the grain.",
+      "Spoon chimichurri or pan juices over the top and serve."
     ]
   },
   {
@@ -2463,19 +2413,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook pork chops 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 15 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -2522,19 +2467,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook the main ingredient 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 9 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -2614,52 +2554,47 @@
     ],
     "ingredients": [
       {
-        "qty": 4,
+        "qty": 2,
         "unit": "cup",
-        "item": "mixed greens"
+        "item": "cabbage"
       },
       {
         "qty": 1,
         "unit": "cup",
-        "item": "cherry tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "cucumber"
-      },
-      {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "olive oil"
+        "item": "green beans"
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "lemon juice"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "unit": "",
+        "item": "boiled egg"
       },
       {
         "qty": 0.25,
-        "unit": "tsp",
-        "item": "black pepper"
+        "unit": "cup",
+        "item": "peanut butter"
       },
       {
-        "qty": 4,
-        "unit": "oz",
-        "item": "feta cheese"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "lime juice"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "maple syrup"
       }
     ],
     "steps": [
-      "Chop cucumber and halve tomatoes (4 minutes).",
-      "Whisk olive oil, lemon juice, salt, and pepper.",
-      "Toss greens and vegetables with dressing.",
-      "Crumble feta over the top.",
-      "Serve immediately while greens are crisp."
+      "Prep vegetables and protein as needed (5–6 minutes).",
+      "Whisk dressing ingredients until smooth.",
+      "Cook noodles or blanch beans if the recipe calls for it (4–8 minutes).",
+      "Toss everything with dressing just before serving.",
+      "Serve chilled or at room temperature within 15 minutes."
     ]
   },
   {
@@ -2711,11 +2646,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 10 minutes.",
-      "Serve over rice or with warm bread."
+      "Pat protein or pierogi dry. Season with salt.",
+      "Heat oil in a wide skillet over medium-high.",
+      "Pan-fry 18 minutes per side until golden and cooked through.",
+      "Drain on a rack 2 minutes.",
+      "Serve with mustard, lemon, or sour cream."
     ]
   },
   {
@@ -2759,19 +2694,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook the main ingredient 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 14 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -2881,11 +2811,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 17 minutes.",
-      "Serve over rice or with warm bread."
+      "Pat protein or pierogi dry. Season with salt.",
+      "Heat oil in a wide skillet over medium-high.",
+      "Pan-fry 25 minutes per side until golden and cooked through.",
+      "Drain on a rack 2 minutes.",
+      "Serve with mustard, lemon, or sour cream."
     ]
   },
   {
@@ -2930,19 +2860,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook shrimp 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 8 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -2956,33 +2881,37 @@
       "vegetarian",
       "gluten-free",
       "budget",
+      "easy",
+      "vegetarian",
+      "gluten-free",
+      "budget",
       "easy"
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 1.5,
         "unit": "lb",
-        "item": "chicken breast"
+        "item": "potato"
       },
       {
-        "qty": 2,
+        "qty": 4,
+        "unit": "cup",
+        "item": "kale"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 4,
         "unit": "tbsp",
-        "item": "olive oil"
+        "item": "butter"
       },
       {
-        "qty": 1,
+        "qty": 4,
         "unit": "",
-        "item": "onion"
-      },
-      {
-        "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
+        "item": "scallion"
       },
       {
         "qty": 0.5,
@@ -2990,17 +2919,17 @@
         "item": "salt"
       },
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 7 minutes.",
-      "Serve over rice or with warm bread."
+      "Peel potatoes and cut into chunks. Boil in salted water 14 minutes until tender; drain.",
+      "Mash with milk, butter, salt, and pepper until creamy (3 minutes).",
+      "Wilt chopped kale in a dry pan 2 minutes.",
+      "Fold kale and sliced scallions into the mash.",
+      "Serve hot with an extra knob of butter if you like."
     ]
   },
   {
@@ -3046,19 +2975,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook the main ingredient 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 15 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -3104,19 +3028,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook ground lamb 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 17 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -3160,19 +3079,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook the main ingredient 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 22 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -3225,11 +3139,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 12 minutes.",
-      "Serve over rice or with warm bread."
+      "Heat oven to 450°F. Stretch dough on a oiled sheet pan.",
+      "Top with cheese, vegetables, and spices as listed.",
+      "Bake 18 minutes until the crust is golden and cheese bubbles.",
+      "Rest 2 minutes, then slice.",
+      "Serve hot."
     ]
   },
   {
@@ -3255,40 +3169,35 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "olive oil"
+        "item": "honey"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "onion"
-      },
-      {
-        "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
+        "unit": "tbsp",
+        "item": "soy sauce"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
+        "unit": "tbsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame seeds"
       },
       {
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 5 minutes.",
-      "Serve over rice or with warm bread."
+      "Heat oven to 425°F. Halve Brussels sprouts.",
+      "Toss with oil and salt on a sheet pan.",
+      "Roast 18 minutes until browned on the edges.",
+      "Whisk honey, soy sauce, and sesame oil; toss with sprouts 2 minutes.",
+      "Finish with sesame seeds and serve."
     ]
   },
   {
@@ -3340,11 +3249,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 20 minutes.",
-      "Serve over rice or with warm bread."
+      "Warm broth in a small pot. Toast rice in oil with onion 3 minutes.",
+      "Add garlic and paprika; stir 30 seconds.",
+      "Add broth ladle by ladle, stirring 26 minutes until rice is creamy.",
+      "Fold in vegetables or seafood during the last 5 minutes.",
+      "Rest 2 minutes off heat and serve from the pan."
     ]
   },
   {
@@ -3734,7 +3643,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "mixed berries"
+        "item": "frozen mango"
       },
       {
         "qty": 1,
@@ -3742,9 +3651,9 @@
         "item": "yogurt"
       },
       {
-        "qty": 0.25,
+        "qty": 0.5,
         "unit": "cup",
-        "item": "granola"
+        "item": "milk"
       },
       {
         "qty": 2,
@@ -3754,20 +3663,15 @@
       {
         "qty": 0.25,
         "unit": "tsp",
-        "item": "vanilla extract"
-      },
-      {
-        "qty": 0.25,
-        "unit": "tsp",
-        "item": "salt"
+        "item": "cardamom"
       }
     ],
     "steps": [
-      "Layer yogurt in serving glasses (1 minute).",
-      "Top with berries and drizzle honey.",
-      "Sprinkle granola over each glass.",
-      "Stir vanilla into any extra yogurt if desired.",
-      "Serve chilled within 10 minutes."
+      "Blend mango, yogurt, milk, honey, and cardamom 60 seconds until smooth.",
+      "Taste and add honey if needed.",
+      "Pour into bowls.",
+      "Top with extra yogurt and a pinch of cardamom.",
+      "Serve chilled immediately."
     ]
   },
   {
@@ -3834,42 +3738,62 @@
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "",
-        "item": "apple"
+        "qty": 14,
+        "unit": "oz",
+        "item": "firm tofu"
       },
       {
-        "qty": 0.5,
+        "qty": 2,
         "unit": "cup",
-        "item": "rolled oats"
-      },
-      {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "brown sugar"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "butter"
+        "item": "cooked rice"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "cinnamon"
+        "unit": "cup",
+        "item": "carrot"
       },
       {
-        "qty": 0.25,
+        "qty": 1,
+        "unit": "",
+        "item": "cucumber"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "rice vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "maple syrup"
+      },
+      {
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
       }
     ],
     "steps": [
-      "Heat oven to 375°F. Slice apples into a baking dish.",
-      "Mix oats, brown sugar, cinnamon, salt, and melted butter.",
-      "Scatter crumble over apples.",
-      "Bake 28 minutes until bubbling and golden.",
-      "Cool 5 minutes before serving."
+      "Press tofu 10 minutes, then cut into cubes. Julienne carrot and slice cucumber (5 minutes).",
+      "Whisk soy sauce, rice vinegar, maple syrup, and minced garlic for the dressing.",
+      "Heat oil in a skillet over medium-high. Pan-fry tofu 4 minutes per side until crisp.",
+      "Toss warm rice with half the dressing. Divide among bowls.",
+      "Top with tofu, vegetables, remaining dressing, and salt. Serve within 5 minutes."
     ]
   },
   {
@@ -3913,19 +3837,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook ground lamb 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 10 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -3948,42 +3867,42 @@
         "item": "tortilla"
       },
       {
+        "qty": 0.75,
+        "unit": "cup",
+        "item": "hummus"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "roasted red pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "spinach"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "cucumber"
+      },
+      {
         "qty": 2,
         "unit": "tbsp",
         "item": "olive oil"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "onion"
-      },
-      {
-        "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 5 minutes.",
-      "Serve over rice or with warm bread."
+      "Slice cucumber and drain roasted peppers.",
+      "Spread hummus over each tortilla.",
+      "Layer spinach, peppers, and cucumber; drizzle with oil and salt.",
+      "Roll tightly, tucking ends.",
+      "Slice in half and serve."
     ]
   },
   {
@@ -4174,8 +4093,8 @@
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
+        "unit": "",
+        "item": "fennel bulb"
       },
       {
         "qty": 1,
@@ -4184,13 +4103,8 @@
       },
       {
         "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
         "qty": 0.5,
@@ -4198,17 +4112,17 @@
         "item": "salt"
       },
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 12 minutes.",
-      "Serve over rice or with warm bread."
+      "Heat oven to 425°F. Slice fennel, onion, and sausage.",
+      "Toss on a sheet pan with oil, salt, and pepper.",
+      "Roast 22 minutes, stirring once, until sausage is browned and fennel is tender.",
+      "Rest 3 minutes.",
+      "Serve with crusty bread or over polenta."
     ]
   },
   {
@@ -4262,11 +4176,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 10 minutes.",
-      "Serve over rice or with warm bread."
+      "Mix falafel batter or thaw mix per package (3 minutes).",
+      "Shape balls and brush with oil.",
+      "Bake at 425°F 18 minutes, flipping once, until crisp.",
+      "Warm pitas in a dry skillet 1 minute per side.",
+      "Stuff with falafel, salad, and sauce; serve immediately."
     ]
   },
   {
@@ -4312,19 +4226,14 @@
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
       "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
+      "Heat oil in a skillet over medium-high. Cook pork chops 8–10 minutes until done.",
+      "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 14 minutes.",
-      "Serve over rice or with warm bread."
+      "Serve hot with any sides listed in the ingredients."
     ]
   },
   {
@@ -4377,11 +4286,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 17 minutes.",
-      "Serve over rice or with warm bread."
+      "Warm broth in a small pot. Toast rice in oil with onion 3 minutes.",
+      "Add garlic and paprika; stir 30 seconds.",
+      "Add broth ladle by ladle, stirring 23 minutes until rice is creamy.",
+      "Fold in vegetables or seafood during the last 5 minutes.",
+      "Rest 2 minutes off heat and serve from the pan."
     ]
   },
   {
@@ -4491,11 +4400,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 5 minutes.",
-      "Serve over rice or with warm bread."
+      "Heat oven to 450°F. Stretch dough on a oiled sheet pan.",
+      "Top with cheese, vegetables, and spices as listed.",
+      "Bake 10 minutes until the crust is golden and cheese bubbles.",
+      "Rest 2 minutes, then slice.",
+      "Serve hot."
     ]
   },
   {
@@ -4518,23 +4427,23 @@
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
+        "unit": "",
+        "item": "egg"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "onion"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "flour"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "parmesan"
       },
       {
         "qty": 2,
         "unit": "clove",
         "item": "garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
       },
       {
         "qty": 0.5,
@@ -4543,16 +4452,16 @@
       },
       {
         "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
+        "unit": "tbsp",
+        "item": "olive oil"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 5 minutes.",
-      "Serve over rice or with warm bread."
+      "Grate zucchini; squeeze out moisture (4 minutes).",
+      "Stir zucchini with eggs, flour, parmesan, garlic, and salt.",
+      "Heat oil in a skillet over medium. Scoop batter into patties.",
+      "Cook 3 minutes per side until golden.",
+      "Serve with yogurt or sour cream."
     ]
   },
   {
@@ -4605,11 +4514,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 20 minutes.",
-      "Serve over rice or with warm bread."
+      "Heat oven to 375°F. Halve peppers and remove seeds.",
+      "Brown filling ingredients in a skillet 8 minutes with onion and garlic.",
+      "Stuff peppers with the filling and add a splash of water to the dish.",
+      "Bake 26 minutes until peppers are tender.",
+      "Rest 5 minutes and serve."
     ]
   },
   {
@@ -4669,11 +4578,11 @@
       }
     ],
     "steps": [
-      "Chop cucumber and halve tomatoes (4 minutes).",
-      "Whisk olive oil, lemon juice, salt, and pepper.",
-      "Toss greens and vegetables with dressing.",
-      "Crumble feta over the top.",
-      "Serve immediately while greens are crisp."
+      "Prep vegetables and protein as needed (5–6 minutes).",
+      "Whisk dressing ingredients until smooth.",
+      "Cook noodles or blanch beans if the recipe calls for it (4–8 minutes).",
+      "Toss everything with dressing just before serving.",
+      "Serve chilled or at room temperature within 15 minutes."
     ]
   },
   {
@@ -4696,42 +4605,37 @@
         "item": "chicken thighs"
       },
       {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "yogurt"
+      },
+      {
         "qty": 2,
         "unit": "tbsp",
-        "item": "olive oil"
+        "item": "tikka paste"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "onion"
-      },
-      {
-        "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
+        "unit": "tbsp",
+        "item": "lemon juice"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
+        "unit": "head",
+        "item": "butter lettuce"
       },
       {
         "qty": 0.5,
         "unit": "tsp",
         "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 8 minutes.",
-      "Serve over rice or with warm bread."
+      "Cut chicken into strips. Toss with yogurt, tikka paste, lemon, and salt; rest 10 minutes.",
+      "Heat a grill pan over high heat. Cook chicken 3 minutes per side until charred.",
+      "Rest 3 minutes, then slice.",
+      "Separate lettuce leaves and rinse.",
+      "Spoon chicken into lettuce cups and serve."
     ]
   },
   {
@@ -4870,14 +4774,14 @@
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "cup",
-        "item": "mixed greens"
+        "qty": 8,
+        "unit": "oz",
+        "item": "soba noodles"
       },
       {
-        "qty": 1,
+        "qty": 2,
         "unit": "cup",
-        "item": "cherry tomatoes"
+        "item": "cabbage"
       },
       {
         "qty": 1,
@@ -4885,37 +4789,32 @@
         "item": "cucumber"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "olive oil"
-      },
-      {
         "qty": 2,
         "unit": "tbsp",
-        "item": "lemon juice"
+        "item": "soy sauce"
       },
       {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame oil"
       },
       {
-        "qty": 0.25,
-        "unit": "tsp",
-        "item": "black pepper"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "rice vinegar"
       },
       {
-        "qty": 4,
-        "unit": "oz",
-        "item": "feta cheese"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame seeds"
       }
     ],
     "steps": [
-      "Chop cucumber and halve tomatoes (4 minutes).",
-      "Whisk olive oil, lemon juice, salt, and pepper.",
-      "Toss greens and vegetables with dressing.",
-      "Crumble feta over the top.",
-      "Serve immediately while greens are crisp."
+      "Prep vegetables and protein as needed (5–6 minutes).",
+      "Whisk dressing ingredients until smooth.",
+      "Cook noodles or blanch beans if the recipe calls for it (4–8 minutes).",
+      "Toss everything with dressing just before serving.",
+      "Serve chilled or at room temperature within 15 minutes."
     ]
   },
   {
@@ -4969,11 +4868,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 5 minutes.",
-      "Serve over rice or with warm bread."
+      "Pat steak dry; season with salt and pepper.",
+      "Heat oil in a cast-iron skillet over high heat.",
+      "Sear steak 6 minutes per side for medium, less for rare.",
+      "Rest 5 minutes before slicing against the grain.",
+      "Spoon chimichurri or pan juices over the top and serve."
     ]
   },
   {
@@ -5027,11 +4926,11 @@
       }
     ],
     "steps": [
-      "Dice onion and mince garlic (4 minutes).",
-      "Heat oil in a skillet over medium-high. Cook main ingredient 8–10 minutes until done.",
-      "Add onion, garlic, paprika, and salt; cook 3 minutes.",
-      "Add a splash of water, cover, and simmer 5 minutes.",
-      "Serve over rice or with warm bread."
+      "Rinse mussels and discard any that stay open. Dice onion and garlic.",
+      "Cook onion in oil 4 minutes; add garlic, paprika, and coconut milk.",
+      "Bring to a simmer, add mussels, cover 5–6 minutes until shells open.",
+      "Discard any mussels that do not open.",
+      "Serve with broth and crusty bread."
     ]
   },
   {
@@ -5048,34 +4947,29 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 8,
         "unit": "",
-        "item": "sweet potato"
+        "item": "flour tortilla"
       },
       {
         "qty": 1,
         "unit": "can",
-        "item": "black beans"
+        "item": "artichoke hearts"
       },
       {
-        "qty": 8,
-        "unit": "",
-        "item": "corn tortilla"
+        "qty": 2,
+        "unit": "cup",
+        "item": "spinach"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chipotle powder"
-      },
-      {
-        "qty": 1,
+        "qty": 1.5,
         "unit": "cup",
         "item": "shredded cheese"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "salsa"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
         "qty": 0.5,
@@ -5084,11 +4978,11 @@
       }
     ],
     "steps": [
-      "Dice sweet potato; roast or sauté with chipotle and salt 12 minutes until tender.",
-      "Warm beans in a small pot 5 minutes.",
-      "Heat tortillas in a dry skillet 1 minute per side.",
-      "Fill tortillas with potato, beans, cheese, and salsa.",
-      "Serve while the filling is still warm."
+      "Drain and chop artichokes. Wilt spinach in a dry pan 2 minutes; squeeze out moisture.",
+      "Lay tortillas on a board. Spread spinach, artichokes, and cheese on half of each.",
+      "Fold tortillas closed and brush outsides with oil.",
+      "Cook in a skillet over medium heat 3 minutes per side until golden and melted.",
+      "Rest 1 minute, slice, and serve."
     ]
   },
   {

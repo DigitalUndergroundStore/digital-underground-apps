@@ -8,6 +8,34 @@ const FETCH_TIMEOUT_MS = 8000;
 const RATE_LIMIT = 30;
 const RATE_WINDOW_MS = 60_000;
 
+/** First attempt: the plain, honest request (works for BBC Good Food and most sites). */
+const PLAIN_HEADERS = {
+  Accept: "text/html,application/xhtml+xml",
+  "User-Agent": "PantryWeekRecipeFetch/1.0 (+https://digitalundergroundstore.com/pantry-week/)",
+};
+
+/** Retry only: browser-like headers, for sites that refuse the plain request. */
+const BROWSER_HEADERS = {
+  "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  Accept:
+    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Cache-Control": "no-cache",
+  Pragma: "no-cache",
+  "Sec-Fetch-Dest": "document",
+  "Sec-Fetch-Mode": "navigate",
+  "Sec-Fetch-Site": "none",
+  "Sec-Fetch-User": "?1",
+  "Upgrade-Insecure-Requests": "1",
+};
+
+/** HTTP statuses that suggest bot-blocking; these (or a page with no Recipe JSON-LD) trigger one browser-header retry. */
+const RETRY_STATUSES = new Set([401, 403, 404, 406, 451]);
+
+const BLOCKED_HINT =
+  "That site blocked automatic fetching. Open the recipe in your browser, copy the text, and use Paste recipe text in Pantry Week instead.";
+
 /** @type {Map<string, { count: number, reset: number }>} */
 const rateByIp = new Map();
 
@@ -136,6 +164,64 @@ function walkRecipeNodes(node, out) {
   }
 }
 
+/**
+ * One fetch attempt with the given headers. Redirects are followed manually so every hop
+ * is re-checked against the private-host rules.
+ * Returns { recipes, status } on a readable page, or { fatal: Response } / { status, failed: true }.
+ */
+async function attemptFetch(startUrl, headers, browserLike) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    let target = startUrl;
+    let response;
+    for (let hop = 0; ; hop++) {
+      const h = browserLike ? { ...headers, Referer: `${new URL(target).origin}/` } : headers;
+      response = await fetch(target, { method: "GET", redirect: "manual", signal: controller.signal, headers: h });
+      if (response.status < 300 || response.status > 399 || !response.headers.get("Location")) break;
+      if (hop >= 5) return { fatal: json({ error: "Too many redirects." }, 502) };
+      const next = validateTargetUrl(new URL(response.headers.get("Location"), target).toString());
+      if (next.error) return { fatal: json({ error: "That URL redirects somewhere that is not allowed." }, 400) };
+      target = next.url;
+    }
+
+    if (!response.ok) {
+      try { await response.body?.cancel(); } catch { /* ignore */ }
+      return { status: response.status, failed: true };
+    }
+
+    const reader = response.body && response.body.getReader();
+    if (!reader) return { status: response.status, failed: true, empty: true };
+
+    let received = 0;
+    const chunks = [];
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      received += value.byteLength;
+      if (received > MAX_BYTES) {
+        await reader.cancel();
+        return { fatal: json({ error: "Page is too large." }, 413) };
+      }
+      chunks.push(value);
+    }
+    const html = new TextDecoder("utf-8", { fatal: false }).decode(
+      chunks.length === 1 ? chunks[0] : concatUint8(chunks)
+    );
+    return { status: response.status, recipes: extractJsonLd(html) };
+  } catch (err) {
+    return { status: 0, failed: true, timeout: !!(err && err.name === "AbortError") };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function blockedResponse(status) {
+  const body = { error: status ? `${BLOCKED_HINT} (HTTP ${status}.)` : BLOCKED_HINT, pasteTextInstead: true };
+  if (status) body.httpStatus = status;
+  return json(body, 502);
+}
+
 export async function onRequest(context) {
   const { request } = context;
   if (request.method === "OPTIONS") {
@@ -161,77 +247,28 @@ export async function onRequest(context) {
   const checked = validateTargetUrl(body && body.url);
   if (checked.error) return json({ error: checked.error }, 400);
 
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-  let response;
-  try {
-    // Follow redirects manually so every hop is re-checked against the private-host rules.
-    let target = checked.url;
-    for (let hop = 0; ; hop++) {
-      response = await fetch(target, {
-        method: "GET",
-        redirect: "manual",
-        signal: controller.signal,
-        headers: {
-          Accept: "text/html,application/xhtml+xml",
-          "User-Agent": "PantryWeekRecipeFetch/1.0 (+https://digitalundergroundstore.com/pantry-week/)",
-        },
-      });
-      if (response.status < 300 || response.status > 399 || !response.headers.get("Location")) break;
-      if (hop >= 5) {
-        clearTimeout(timer);
-        return json({ error: "Too many redirects." }, 502);
-      }
-      const next = validateTargetUrl(new URL(response.headers.get("Location"), target).toString());
-      if (next.error) {
-        clearTimeout(timer);
-        return json({ error: "That URL redirects somewhere that is not allowed." }, 400);
-      }
-      target = next.url;
-    }
-  } catch (err) {
-    clearTimeout(timer);
-    const msg = err && err.name === "AbortError" ? "Request timed out." : "Could not fetch that URL.";
-    return json({ error: msg }, 502);
-  }
-  clearTimeout(timer);
-
-  if (!response.ok) {
-    return json({ error: `Page returned HTTP ${response.status}.` }, 502);
+  // 1) Plain request, exactly as before.
+  const first = await attemptFetch(checked.url, PLAIN_HEADERS, false);
+  if (first.fatal) return first.fatal;
+  if (first.recipes && first.recipes.length) {
+    return json({ recipe: first.recipes[0], recipes: first.recipes }, 200);
   }
 
-  const reader = response.body && response.body.getReader();
-  if (!reader) {
-    return json({ error: "Empty response." }, 502);
+  // 2) Retry once with browser-like headers only for bot-block statuses or a page without Recipe JSON-LD.
+  const retryable = (first.failed && RETRY_STATUSES.has(first.status)) || (!first.failed && first.recipes);
+  if (!retryable) {
+    if (first.timeout) return json({ error: `Request timed out. ${BLOCKED_HINT}`, pasteTextInstead: true }, 502);
+    return blockedResponse(first.status);
   }
-
-  let received = 0;
-  const chunks = [];
-  try {
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      received += value.byteLength;
-      if (received > MAX_BYTES) {
-        await reader.cancel();
-        return json({ error: "Page is too large." }, 413);
-      }
-      chunks.push(value);
-    }
-  } catch {
-    return json({ error: "Could not read the page." }, 502);
+  const second = await attemptFetch(checked.url, BROWSER_HEADERS, true);
+  if (second.fatal) return second.fatal;
+  if (second.recipes && second.recipes.length) {
+    return json({ recipe: second.recipes[0], recipes: second.recipes }, 200);
   }
-
-  const html = new TextDecoder("utf-8", { fatal: false }).decode(
-    chunks.length === 1 ? chunks[0] : concatUint8(chunks)
-  );
-
-  const recipes = extractJsonLd(html);
-  if (!recipes.length) {
-    return json({ error: "No schema.org Recipe JSON-LD found on that page." }, 404);
+  if (!second.failed && second.recipes) {
+    return json({ error: `No recipe data found on that page. ${BLOCKED_HINT}`, pasteTextInstead: true }, 404);
   }
-
-  return json({ recipe: recipes[0], recipes }, 200);
+  return blockedResponse(second.status || first.status);
 }
 
 function concatUint8(chunks) {

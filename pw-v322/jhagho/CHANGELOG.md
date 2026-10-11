@@ -1,5 +1,10 @@
 # Pantry Week source changelog
 
+## 3.3.1 (2026-10-11)
+
+- **Smart Chef:** Guard `built.tags` when saving drafts (`built.tags || template.tags || []`) so save never throws on templates that omit tags on the built object.
+- **Navigation:** Programmatic sheet/detail closes use `popHistorySilently()` so `history.back()` from Close/Cancel/Fill does not arm the Plan “Swipe back again to exit” toast.
+
 ## 3.3.0 (2026-10-11)
 
 - **Library:** 248 recipes (`r1`–`r248`) including batch 2 comfort dinners, one-pan, BBQ, soups, pub, Tex-Mex, takeout-style, and breakfasts/lunches.

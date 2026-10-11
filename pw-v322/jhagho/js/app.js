@@ -1,4 +1,4 @@
-/* Pantry Week v3.3.0 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.3.1 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -10,6 +10,7 @@
   const ICON_CLOSE = '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.42 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71 4.29 4.29 10.59 10.6 16.88 4.29z"/></svg>';
   let suppressHash = 0;
   let navDepth = 0;
+  let silentHistoryPop = 0;
   let planExitPending = false;
   let planExitTimer = null;
   const TAB_EDGE_PX = 24;
@@ -148,8 +149,17 @@
     syncHistory(false);
   }
 
+  function popHistorySilently() {
+    if (navDepth > 0) {
+      silentHistoryPop += 1;
+      history.back();
+    } else {
+      syncHistory(true);
+    }
+  }
+
   function navBack() {
-    if (navDepth > 0) history.back();
+    if (navDepth > 0) popHistorySilently();
     else handleSystemBack();
   }
 
@@ -160,7 +170,7 @@
       $("cook").innerHTML = "";
       releaseWakeLock();
       setInert();
-      syncHistory(true);
+      popHistorySilently();
       render();
       return;
     }
@@ -168,7 +178,7 @@
       ui.editor = null;
       $("editor").hidden = true;
       setInert();
-      syncHistory(true);
+      popHistorySilently();
       render();
       return;
     }
@@ -176,7 +186,7 @@
       ui.assign = null;
       $("assign").hidden = true;
       setInert();
-      syncHistory(true);
+      popHistorySilently();
       render();
       return;
     }
@@ -184,18 +194,18 @@
       ui.picker = null;
       $("picker").hidden = true;
       setInert();
-      syncHistory(true);
+      popHistorySilently();
       render();
       return;
     }
     if (!$("textDialog").hidden) {
       $("textDialog").hidden = true;
       setInert();
-      syncHistory(true);
+      popHistorySilently();
       return;
     }
     if (!$("fill").hidden) {
-      closeFill(false);
+      closeFill();
       return;
     }
     if (!$("tip").hidden) {
@@ -204,7 +214,7 @@
     }
     if (ui.detailId) {
       ui.detailId = null;
-      syncHistory(true);
+      popHistorySilently();
       render();
       window.scrollTo(0, 0);
       return;
@@ -1223,7 +1233,7 @@
     ui.picker = null;
     ui.assign = null;
     commit();
-    syncHistory(true);
+    popHistorySilently();
     toast(recipe.name + " is on " + PW.DAY_LABEL[day] + " " + slot + ".");
   }
 
@@ -1395,11 +1405,11 @@
     renderFill();
   }
 
-  function closeFill(syncHist) {
+  function closeFill() {
     ui.fill = null;
     $("fill").hidden = true;
     setInert();
-    if (syncHist !== false) syncHistory(true);
+    popHistorySilently();
   }
 
   function runFill() {
@@ -1429,7 +1439,7 @@
     $("fill").hidden = true;
     setInert();
     commit();
-    navBack();
+    popHistorySilently();
     toast("Week filled with a fresh mix. Tap any meal to swap it.");
   }
 
@@ -1738,6 +1748,7 @@
         $("cook").innerHTML = "";
         setInert();
         releaseWakeLock();
+        popHistorySilently();
         toast("That's the end of the recipe.");
       } else {
         ui.cook.step += 1;
@@ -1902,6 +1913,15 @@
   syncChrome();
   window.addEventListener("resize", syncChrome);
   window.addEventListener("popstate", (event) => {
+    if (silentHistoryPop > 0) {
+      silentHistoryPop -= 1;
+      if (navDepth > 0) navDepth -= 1;
+      if (event.state && event.state.pw) restoreSnapshot(event.state.pw);
+      else readHash();
+      render();
+      setInert();
+      return;
+    }
     if (planRootActive()) {
       if (!planExitPending) {
         armPlanExitToast();

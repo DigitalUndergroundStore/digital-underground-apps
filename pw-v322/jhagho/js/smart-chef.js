@@ -660,7 +660,7 @@
       minutes: built.minutes,
       servings: servings,
       photoKey: photoKey,
-      tags: built.tags.concat(["smart-chef"]),
+      tags: (built.tags || template.tags || []).concat(["smart-chef"]),
       ingredients: ingredients.map(function (i) {
         return { qty: i.qty, unit: i.unit, item: i.item };
       }),

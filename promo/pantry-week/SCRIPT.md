@@ -1,5 +1,7 @@
 # Pantry Week 3.4.0 promo
 
+HOLD. Do not re-record or render another cut until there is an explicit go that includes the final live build id. That next cut waits for v3.4.1 (imported photos) and v3.4.2 (the new app background). Keep this setup and the motion backdrop. Do not replace the delivered video files.
+
 26-second vertical (1080×1920) and square (1080×1080) cuts. 30 fps H.264. The words on screen carry the story with the sound off.
 
 Price on screen is CAD$24. The store line is digitalundergroundstore.com. Gumroad is not shown.

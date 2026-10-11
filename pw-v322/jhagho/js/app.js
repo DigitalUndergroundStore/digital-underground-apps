@@ -1,4 +1,4 @@
-/* Pantry Week v3.2.3 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.3.0 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -10,6 +10,10 @@
   const ICON_CLOSE = '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.42 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71 4.29 4.29 10.59 10.6 16.88 4.29z"/></svg>';
   let suppressHash = 0;
   let navDepth = 0;
+  let planExitPending = false;
+  let planExitTimer = null;
+  const TAB_EDGE_PX = 24;
+  const BUYER_LS_KEY = "du_pantry_week_key_v1";
   const FILTERS = [
     ["all", "All"],
     ["breakfast", "Breakfast"],
@@ -203,7 +207,26 @@
       syncHistory(true);
       render();
       window.scrollTo(0, 0);
+      return;
     }
+    if (ui.view !== "plan") {
+      go("plan", null);
+      syncHistory(true);
+      return;
+    }
+    armPlanExitToast();
+  }
+
+  function planRootActive() {
+    return ui.view === "plan" && !ui.detailId && !overlayOpen();
+  }
+
+  function armPlanExitToast() {
+    if (!planRootActive()) return;
+    planExitPending = true;
+    clearTimeout(planExitTimer);
+    planExitTimer = setTimeout(() => { planExitPending = false; }, 2800);
+    toast("Swipe back again to exit");
   }
 
   function appSemver() {
@@ -453,22 +476,42 @@
       </div>`;
     }
     const leftover = value.leftover ? "true" : "false";
-    const cookBtn = recipe
+    const thumb = recipe ? photoUrl(recipe) : "";
+    const openAttrs = recipe
+      ? `data-action="open-plan-recipe" data-day="${esc(day)}" data-slot="${esc(slot)}"`
+      : `data-action="open-slot" data-day="${esc(day)}" data-slot="${esc(slot)}"`;
+    const thumbHtml = thumb
+      ? `<span class="meal-card__thumb" style="background-image:url('${thumb.replace(/'/g, "%27")}')" role="img" aria-label=""></span>`
+      : `<span class="meal-card__thumb meal-card__thumb--empty" aria-hidden="true"></span>`;
+    const meta = `${value.servings} servings${recipe && recipe.minutes != null ? " · " + recipe.minutes + " min" : ""}`;
+    const cookRow = recipe
       ? `<button type="button" data-action="cook" data-id="${esc(recipe.id)}">Cook</button>`
       : "";
-    return `<div class="slot${value.leftover ? " leftover-on" : ""}">
+    return `<div class="slot slot--meal${value.leftover ? " leftover-on" : ""}">
       <p class="slot-kicker">${kicker}${value.leftover ? " · Leftovers" : ""}</p>
-      <button type="button" class="plain slot-name" data-action="open-slot" data-day="${day}" data-slot="${slot}">${esc(name)}</button>
+      <button type="button" class="meal-card plain" ${openAttrs}>
+        ${thumbHtml}
+        <span class="meal-card__text">
+          <span class="meal-card__name">${esc(name)}</span>
+          <span class="meal-card__meta">${esc(meta)}</span>
+        </span>
+        <span class="meal-card__chev" aria-hidden="true">›</span>
+      </button>
       <div class="slot-row">
         <button type="button" class="stepper" data-action="servings" data-day="${day}" data-slot="${slot}" data-dir="-1" aria-label="Fewer servings for ${PW.DAY_LABEL[day]} ${kicker}">−</button>
         <span class="servings">${value.servings} servings</span>
         <button type="button" class="stepper" data-action="servings" data-day="${day}" data-slot="${slot}" data-dir="1" aria-label="More servings for ${PW.DAY_LABEL[day]} ${kicker}">+</button>
       </div>
-      <div class="slot-actions">
-        <button type="button" data-action="leftover" data-day="${day}" data-slot="${slot}" aria-pressed="${leftover}">Leftovers</button>
-        <button type="button" data-action="again" data-day="${day}" data-slot="${slot}">Eat again tomorrow</button>
-        ${cookBtn}
-        <button type="button" data-action="clear-slot" data-day="${day}" data-slot="${slot}" aria-label="Clear ${PW.DAY_LABEL[day]} ${kicker}">Clear</button>
+      <div class="slot-actions slot-actions--compact">
+        <button type="button" class="icon-chip" data-action="leftover" data-day="${day}" data-slot="${slot}" aria-pressed="${leftover}" title="Leftovers" aria-label="Toggle leftovers for ${esc(name)}">♻</button>
+        <details class="slot-menu">
+          <summary class="icon-chip" aria-label="More actions for ${esc(name)}">⋯</summary>
+          <div class="slot-menu__panel">
+            <button type="button" data-action="again" data-day="${day}" data-slot="${slot}">Eat again tomorrow</button>
+            ${cookRow}
+            <button type="button" data-action="clear-slot" data-day="${day}" data-slot="${slot}">Clear meal</button>
+          </div>
+        </details>
       </div>
     </div>`;
   }
@@ -672,30 +715,45 @@
         <p class="empty">${esc(r && r.error ? r.error : "Could not build a recipe yet.")}</p>
       </section>`;
     }
-    const meta = r.ingredientMeta || [];
-    const ingRows = meta.map((row) => {
-      const staple = { salt: 1, "black pepper": 1, pepper: 1, water: 1, "olive oil": 1, oil: 1, butter: 1 };
-      const miss = !row.fromPantry && !staple[PW.stapleKey(row.item)];
-      return `<li class="smart-chef__ing${miss ? " smart-chef__ing--missing" : ""}">${esc(PW.formatLine(row.qty, row.unit, row.item))}${miss ? '<span class="smart-chef__need">need</span>' : ""}</li>`;
-    }).join("");
+    const recipe = smartChefDraftRecipe();
+    if (!recipe) {
+      return `<section class="smart-chef smart-chef--idle" aria-labelledby="smartChefTitle">${head}
+        <p class="empty">Could not build a recipe yet.</p>
+      </section>`;
+    }
+    ensureSmartChefInRecipes();
+    const badges = recipeBadges(recipe);
+    const hero = photoUrl(recipe);
+    const ings = recipe.ingredients.map((ing) => `<li>${esc(PW.formatLine(ing.qty, ing.unit, ing.item))}</li>`).join("");
+    const steps = recipe.steps.map((step) => `<li>${esc(step)}</li>`).join("");
     const missNote = r.missing && r.missing.length
       ? `<p class="smart-chef__missing">Not in pantry: <strong>${esc(r.missing.slice(0, 6).join(", "))}</strong></p>`
       : `<p class="smart-chef__missing smart-chef__missing--ok">Everything listed is in your pantry (staples like salt and oil assumed).</p>`;
-    const steps = r.recipe.steps.map((step) => `<li>${esc(step)}</li>`).join("");
     return `<section class="smart-chef" aria-labelledby="smartChefTitle">
       ${head}
-      <div class="smart-chef__recipe">
-        <p class="smart-chef__kicker">${esc(r.templateLabel)} · ${esc(r.profileLabel)}</p>
-        <h4 class="smart-chef__name">${esc(r.recipe.name)}</h4>
-        <p class="meta">${esc(timeLabel(r.recipe))} · ${r.recipe.servings} servings</p>
-        <ul class="smart-chef__ings">${ingRows}</ul>
+      <article class="recipe-card recipe-card--smart">
+        <button type="button" class="plain smart-chef__open" data-action="open-smart-chef-detail">
+          <div class="card-photo" style="background-image:url('${hero.replace(/'/g, "%27")}')" role="img" aria-label=""></div>
+          <div class="card-bar ${barClass(recipe)}"></div>
+          <div class="card-body">
+            <p class="smart-chef__kicker">${esc(r.templateLabel)} · ${esc(r.profileLabel)}</p>
+            <h4 class="smart-chef__name">${esc(recipe.name)}</h4>
+            <p class="meta">${esc(timeLabel(recipe))} · ${recipe.servings} servings</p>
+            ${badges ? `<p class="diet">${esc(badges)}</p>` : ""}
+          </div>
+        </button>
         ${missNote}
-        <ol class="smart-chef__steps">${steps}</ol>
-      </div>
+        <h4 class="smart-chef__subhead">Ingredients</h4>
+        <ul class="ing-list smart-chef__ings">${ings}</ul>
+        <h4 class="smart-chef__subhead">Steps</h4>
+        <ol class="step-list smart-chef__steps">${steps}</ol>
+      </article>
       <div class="smart-chef__actions toolbar">
         <button type="button" class="primary" data-action="smart-chef-save">Save to my recipes</button>
+        <button type="button" data-action="open-smart-chef-detail">View full recipe</button>
         <button type="button" data-action="smart-chef-plan">Add to plan</button>
         <button type="button" data-action="smart-chef-shop">Add missing to list</button>
+        <button type="button" data-action="smart-chef-cook">Cook</button>
         <button type="button" data-action="smart-chef-again">Try another</button>
       </div>
     </section>`;
@@ -704,7 +762,26 @@
   function smartChefDraftRecipe() {
     const r = ui.smartChef && ui.smartChef.result;
     if (!r || r.error) return null;
-    return PW.normalizeRecipe(PW.clone(r.recipe));
+    const draft = PW.normalizeRecipe(PW.clone(r.recipe));
+    if (r.templateId && r.profileId && window.PW_SMART_CHEF && PW_SMART_CHEF.photoKeyFor) {
+      draft.photoKey = PW_SMART_CHEF.photoKeyFor(r.templateId, r.profileId);
+    } else if (r.recipe.photoKey) {
+      draft.photoKey = r.recipe.photoKey;
+    }
+    return draft;
+  }
+
+  function openSmartChefDetail() {
+    const draft = ensureSmartChefInRecipes();
+    if (!draft) {
+      toast("Add more pantry items for Smart Chef to work with.");
+      return;
+    }
+    ui.view = "recipes";
+    ui.detailId = draft.id;
+    pushHistory();
+    render();
+    window.scrollTo(0, 0);
   }
 
   function ensureSmartChefInRecipes() {
@@ -803,16 +880,12 @@
 
   function moreHtml() {
     const ver = appSemver();
-    const build = appBuildId();
-    const buildLine = build ? `<p class="meta meta-faint">Build ${esc(build)}</p>` : "";
     const filterHint = ui.filter !== "all"
       ? `<p class="meta">Recipe filter active: <strong>${esc(PW.tagLabel(ui.filter))}</strong> (used when you fill the week).</p>`
       : "";
     return `<section>
-      <h2>Your data</h2>
-      <p class="lead">Pantry Week v${esc(ver)} stores this plan in the browser on this device (storage key <code>pantry_week_v2</code>). Nothing is uploaded. A backup file is the way to move it or keep a copy.</p>
-      <p class="meta du-app-version" data-du-version="${esc(ver)}">App version ${esc(ver)}</p>
-      ${buildLine}
+      <h2>More</h2>
+      <p class="lead">Back up or restore your plan. Nothing is uploaded — a backup file is how you move it to another device.</p>
       ${filterHint}
       <div class="toolbar">
         <button type="button" class="primary" data-action="download">Download backup</button>
@@ -831,6 +904,12 @@
       <div class="toolbar">
         <button type="button" data-action="restore">Add missing starter recipes</button>
       </div>
+      <section class="settings-block" data-du-settings aria-labelledby="settingsTitle">
+        <h3 id="settingsTitle">Settings</h3>
+        <p class="settings-note">Your plan is saved on this device only.</p>
+        <p class="meta du-app-version" data-du-version="${esc(ver)}">Pantry Week v${esc(ver)}</p>
+        <button type="button" class="settings-link" data-action="clear-buyer-code">Remove the buyer code from this device</button>
+      </section>
     </section>`;
   }
 
@@ -1495,7 +1574,30 @@
     const id = btn.getAttribute("data-id");
     if (action === "nav") go(btn.getAttribute("data-view"));
     else if (action === "nav-back") navBack();
-    else if (action === "open-slot") openPicker(day, slot);
+    else if (action === "open-plan-recipe") {
+      const value = state.week[day][slot];
+      const recipe = PW.recipeById(state, value.recipeId);
+      if (recipe) {
+        ui.view = "recipes";
+        ui.detailId = recipe.id;
+        pushHistory();
+        render();
+        window.scrollTo(0, 0);
+      } else {
+        openPicker(day, slot);
+      }
+    } else if (action === "open-smart-chef-detail") openSmartChefDetail();
+    else if (action === "smart-chef-cook") {
+      const draft = ensureSmartChefInRecipes();
+      if (draft) openCook(draft.id);
+    } else if (action === "clear-buyer-code") {
+      if (!confirm("Remove the buyer code from this device? You will need your PDF code to open Pantry Week again.")) return;
+      try {
+        localStorage.removeItem(BUYER_LS_KEY);
+        sessionStorage.removeItem(BUYER_LS_KEY);
+      } catch (err) { /* ignore */ }
+      toast("Buyer code removed. Reload the app to enter it again.");
+    } else if (action === "open-slot") openPicker(day, slot);
     else if (action === "fill") fillWeek();
     else if (action === "fill-scope") {
       const next = btn.getAttribute("data-scope");
@@ -1800,6 +1902,18 @@
   syncChrome();
   window.addEventListener("resize", syncChrome);
   window.addEventListener("popstate", (event) => {
+    if (planRootActive()) {
+      if (!planExitPending) {
+        armPlanExitToast();
+        suppressHash++;
+        history.pushState({ pw: navSnapshot(), planExitGuard: true }, "", navUrl());
+        navDepth += 1;
+        suppressHash--;
+        return;
+      }
+      planExitPending = false;
+      clearTimeout(planExitTimer);
+    }
     if (navDepth > 0) navDepth -= 1;
     if (event.state && event.state.pw) restoreSnapshot(event.state.pw);
     else readHash();
@@ -1848,12 +1962,16 @@
     return false;
   }
 
-  function tabSwipeAllowed(target) {
+  function tabSwipeAllowed(target, clientX) {
     if (!window.matchMedia("(max-width: 800px)").matches) return false;
     if (overlayOpen()) return false;
     if (ui.detailId) return false;
     if (!target || !target.closest) return false;
     if (!target.closest("#app")) return false;
+    if (typeof clientX === "number") {
+      const edge = TAB_EDGE_PX;
+      if (clientX < edge || clientX > window.innerWidth - edge) return false;
+    }
     if (isHorizontalScrollArea(target)) return false;
     return true;
   }
@@ -1872,7 +1990,7 @@
       sheetTouch = { y0: t.clientY, x0: t.clientX, locked: null };
       return;
     }
-    if (!tabSwipeAllowed(event.target)) return;
+    if (!tabSwipeAllowed(event.target, t.clientX)) return;
     tabTouch = { x0: t.clientX, y0: t.clientY, locked: null };
   }, { passive: true });
 

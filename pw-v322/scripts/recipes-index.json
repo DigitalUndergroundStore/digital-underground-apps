@@ -1,0 +1,506 @@
+[
+  {
+    "id": "r1",
+    "name": "Lemon Herb Chicken"
+  },
+  {
+    "id": "r2",
+    "name": "Veggie Scramble Toast"
+  },
+  {
+    "id": "r3",
+    "name": "Chickpea Grain Bowls"
+  },
+  {
+    "id": "r4",
+    "name": "Tomato Basil Pasta"
+  },
+  {
+    "id": "r5",
+    "name": "Salmon & Broccoli Sheet Pan"
+  },
+  {
+    "id": "r6",
+    "name": "Overnight Oats Jars"
+  },
+  {
+    "id": "r7",
+    "name": "Turkey Taco Skillet"
+  },
+  {
+    "id": "r8",
+    "name": "Caprese Chicken Salad"
+  },
+  {
+    "id": "r9",
+    "name": "Black Bean Quesadillas"
+  },
+  {
+    "id": "r10",
+    "name": "Sausage & Pepper Pasta"
+  },
+  {
+    "id": "r11",
+    "name": "Greek Yogurt Parfaits"
+  },
+  {
+    "id": "r12",
+    "name": "Miso Ginger Soup + Tofu"
+  },
+  {
+    "id": "r13",
+    "name": "BLT Egg Sandwiches"
+  },
+  {
+    "id": "r14",
+    "name": "Sheet Pan Fajitas"
+  },
+  {
+    "id": "r15",
+    "name": "Tuna White Bean Salad"
+  },
+  {
+    "id": "r16",
+    "name": "Baked Potato Bar"
+  },
+  {
+    "id": "r17",
+    "name": "Peanut Noodle Bowls"
+  },
+  {
+    "id": "r18",
+    "name": "Shakshuka"
+  },
+  {
+    "id": "r19",
+    "name": "Pesto Gnocchi Skillet"
+  },
+  {
+    "id": "r20",
+    "name": "Turkey Chili"
+  },
+  {
+    "id": "r21",
+    "name": "Garlic Shrimp Skillet"
+  },
+  {
+    "id": "r22",
+    "name": "Veggie Fried Rice"
+  },
+  {
+    "id": "r23",
+    "name": "Hummus Crunch Wraps"
+  },
+  {
+    "id": "r24",
+    "name": "Banana Oat Pancakes"
+  },
+  {
+    "id": "r25",
+    "name": "Lemon Garlic Cod"
+  },
+  {
+    "id": "r26",
+    "name": "Black Bean Soup"
+  },
+  {
+    "id": "r27",
+    "name": "Caprese Toast"
+  },
+  {
+    "id": "r28",
+    "name": "Teriyaki Tofu Bowls"
+  },
+  {
+    "id": "r29",
+    "name": "Blended Tomato Soup"
+  },
+  {
+    "id": "r30",
+    "name": "Chicken Pita Pockets"
+  },
+  {
+    "id": "r31",
+    "name": "Sweet Potato Hash"
+  },
+  {
+    "id": "r32",
+    "name": "Lentil Tacos"
+  },
+  {
+    "id": "r33",
+    "name": "Cucumber Chicken Salad"
+  },
+  {
+    "id": "r34",
+    "name": "Mushroom Omelette"
+  },
+  {
+    "id": "r35",
+    "name": "Sesame Ginger Noodles"
+  },
+  {
+    "id": "r36",
+    "name": "White Bean Skillet"
+  },
+  {
+    "id": "r37",
+    "name": "Ginger Scallion Noodle Bowls"
+  },
+  {
+    "id": "r38",
+    "name": "Shakshuka for Two"
+  },
+  {
+    "id": "r39",
+    "name": "Peruvian Lime Chicken"
+  },
+  {
+    "id": "r40",
+    "name": "Coconut Curry Lentils"
+  },
+  {
+    "id": "r41",
+    "name": "Korean Beef Lettuce Cups"
+  },
+  {
+    "id": "r42",
+    "name": "Moroccan Chickpea Stew"
+  },
+  {
+    "id": "r43",
+    "name": "Caprese Panini"
+  },
+  {
+    "id": "r44",
+    "name": "Thai Basil Pork"
+  },
+  {
+    "id": "r45",
+    "name": "Greek Lemon Orzo"
+  },
+  {
+    "id": "r46",
+    "name": "Harissa Roasted Cauliflower"
+  },
+  {
+    "id": "r47",
+    "name": "Breakfast Burrito Bowls"
+  },
+  {
+    "id": "r48",
+    "name": "Miso Butter Cod"
+  },
+  {
+    "id": "r49",
+    "name": "Vietnamese Lemongrass Tofu"
+  },
+  {
+    "id": "r50",
+    "name": "Spanish Garlic Shrimp"
+  },
+  {
+    "id": "r51",
+    "name": "Ethiopian Berbere Lentil Bowl"
+  },
+  {
+    "id": "r52",
+    "name": "Jamaican Jerk Chicken Skewers"
+  },
+  {
+    "id": "r53",
+    "name": "Turkish Eggplant Tomato Bake"
+  },
+  {
+    "id": "r54",
+    "name": "Sichuan Mapo Tofu"
+  },
+  {
+    "id": "r55",
+    "name": "Brazilian Black Bean Soup"
+  },
+  {
+    "id": "r56",
+    "name": "French Herb Omelette"
+  },
+  {
+    "id": "r57",
+    "name": "Caribbean Coconut Rice & Peas"
+  },
+  {
+    "id": "r58",
+    "name": "Lebanese Fattoush Salad"
+  },
+  {
+    "id": "r59",
+    "name": "Italian Sausage & Peppers"
+  },
+  {
+    "id": "r60",
+    "name": "Japanese Teriyaki Salmon"
+  },
+  {
+    "id": "r61",
+    "name": "Indian Saag Paneer"
+  },
+  {
+    "id": "r62",
+    "name": "Mexican Street Corn Salad"
+  },
+  {
+    "id": "r63",
+    "name": "Southern Shrimp & Grits"
+  },
+  {
+    "id": "r64",
+    "name": "Chinese Egg Drop Soup"
+  },
+  {
+    "id": "r65",
+    "name": "Filipino Garlic Fried Rice"
+  },
+  {
+    "id": "r66",
+    "name": "Persian Herb Rice with Eggs"
+  },
+  {
+    "id": "r67",
+    "name": "Cajun Red Beans & Rice"
+  },
+  {
+    "id": "r68",
+    "name": "Swedish Meatball Skillet"
+  },
+  {
+    "id": "r69",
+    "name": "Tunisian Couscous Shakshuka"
+  },
+  {
+    "id": "r70",
+    "name": "Hawaiian Ahi Poke Bowls"
+  },
+  {
+    "id": "r71",
+    "name": "British Pea & Mint Soup"
+  },
+  {
+    "id": "r72",
+    "name": "Argentine Chimichurri Steak"
+  },
+  {
+    "id": "r73",
+    "name": "Malaysian Peanut Noodles"
+  },
+  {
+    "id": "r74",
+    "name": "Russian Beet Borscht"
+  },
+  {
+    "id": "r75",
+    "name": "Israeli Shakshuka Toast"
+  },
+  {
+    "id": "r76",
+    "name": "Cuban Mojo Pork Bowls"
+  },
+  {
+    "id": "r77",
+    "name": "Nepalese Dal Bhat"
+  },
+  {
+    "id": "r78",
+    "name": "Portuguese Kale Sausage Soup"
+  },
+  {
+    "id": "r79",
+    "name": "Indonesian Gado Gado"
+  },
+  {
+    "id": "r80",
+    "name": "German Mustard Schnitzel"
+  },
+  {
+    "id": "r81",
+    "name": "Colombian Bandeja Beans"
+  },
+  {
+    "id": "r82",
+    "name": "Egyptian Koshari"
+  },
+  {
+    "id": "r83",
+    "name": "Polish Pierogi Pan Fry"
+  },
+  {
+    "id": "r84",
+    "name": "Thai Green Curry Shrimp"
+  },
+  {
+    "id": "r85",
+    "name": "Irish Colcannon"
+  },
+  {
+    "id": "r86",
+    "name": "Senegalese Peanut Stew"
+  },
+  {
+    "id": "r87",
+    "name": "Australian Lamb Chops"
+  },
+  {
+    "id": "r88",
+    "name": "Chilean Corn Casserole"
+  },
+  {
+    "id": "r89",
+    "name": "Georgian Cheese Flatbread"
+  },
+  {
+    "id": "r90",
+    "name": "Honey Sesame Brussels Sprouts"
+  },
+  {
+    "id": "r91",
+    "name": "Smoked Paprika Paella"
+  },
+  {
+    "id": "r92",
+    "name": "Coconut Lime Rice Pudding"
+  },
+  {
+    "id": "r93",
+    "name": "Dark Chocolate Avocado Mousse"
+  },
+  {
+    "id": "r94",
+    "name": "Berry Chia Parfait"
+  },
+  {
+    "id": "r95",
+    "name": "Banana Oat Pancakes"
+  },
+  {
+    "id": "r96",
+    "name": "Lemon Ricotta Toast"
+  },
+  {
+    "id": "r97",
+    "name": "Spiced Apple Crisp"
+  },
+  {
+    "id": "r98",
+    "name": "No-Bake Almond Date Bites"
+  },
+  {
+    "id": "r99",
+    "name": "Mango Lassi Smoothie Bowls"
+  },
+  {
+    "id": "r100",
+    "name": "Tahini Banana Nice Cream"
+  },
+  {
+    "id": "r101",
+    "name": "Crispy Tofu Banh Mi Bowls"
+  },
+  {
+    "id": "r102",
+    "name": "Lamb Kofta with Yogurt"
+  },
+  {
+    "id": "r103",
+    "name": "Roasted Pepper Hummus Wraps"
+  },
+  {
+    "id": "r104",
+    "name": "Chipotle Sweet Potato Tacos"
+  },
+  {
+    "id": "r105",
+    "name": "Creamy Tomato Tortellini"
+  },
+  {
+    "id": "r106",
+    "name": "Walnut Pesto Gnocchi"
+  },
+  {
+    "id": "r107",
+    "name": "Sheet-Pan Sausage & Fennel"
+  },
+  {
+    "id": "r108",
+    "name": "Baked Falafel Pitas"
+  },
+  {
+    "id": "r109",
+    "name": "Cider-Glazed Pork Chops"
+  },
+  {
+    "id": "r110",
+    "name": "Mushroom Risotto"
+  },
+  {
+    "id": "r111",
+    "name": "Clam Linguine"
+  },
+  {
+    "id": "r112",
+    "name": "BBQ Chicken Flatbreads"
+  },
+  {
+    "id": "r113",
+    "name": "Zucchini Fritters"
+  },
+  {
+    "id": "r114",
+    "name": "Stuffed Bell Peppers"
+  },
+  {
+    "id": "r115",
+    "name": "Tuna Nicoise Salad"
+  },
+  {
+    "id": "r116",
+    "name": "Chicken Tikka Lettuce Wraps"
+  },
+  {
+    "id": "r117",
+    "name": "Pumpkin Coconut Soup"
+  },
+  {
+    "id": "r118",
+    "name": "Broccoli Cheddar Frittata"
+  },
+  {
+    "id": "r119",
+    "name": "Sesame Soba Salad"
+  },
+  {
+    "id": "r120",
+    "name": "Garlic Butter Steak Bites"
+  },
+  {
+    "id": "r121",
+    "name": "Coconut Curry Mussels"
+  },
+  {
+    "id": "r122",
+    "name": "Spinach Artichoke Quesadillas"
+  },
+  {
+    "id": "r123",
+    "name": "Roasted Grape & Goat Cheese"
+  },
+  {
+    "id": "r124",
+    "name": "Kimchi Fried Rice"
+  },
+  {
+    "id": "r125",
+    "name": "Cinnamon Pear Compote"
+  },
+  {
+    "id": "r126",
+    "name": "Midnight Chili Nachos"
+  }
+]

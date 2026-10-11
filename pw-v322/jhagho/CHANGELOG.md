@@ -1,5 +1,15 @@
 # Pantry Week source changelog
 
+## 3.3.0 (2026-10-11)
+
+- **Library:** 248 recipes (`r1`–`r248`) including batch 2 comfort dinners, one-pan, BBQ, soups, pub, Tex-Mex, takeout-style, and breakfasts/lunches.
+- **Photos:** Self-hosted WebP heroes for every catalog recipe (`photos/r{id}.webp`) plus offline Smart Chef template photos; hosted copies under `pantry-week/photos/`.
+- **Navigation:** Back/close on sheets and detail; Android/system back walks history; Plan root double-back toast (“Swipe back again to exit”); tab swipe with 24px edge guard.
+- **Plan:** Tappable meal cards with thumbnails; compact actions.
+- **More:** Settings with device-only note, app version, and remove buyer code; footer no longer shows build id or version.
+- **Smart Chef:** Full recipe cards with offline hero photos; saved creations behave like library recipes.
+- **List:** Manual extras use **Have it**; remove via menu, swipe, or long-press.
+
 ## 3.2.3 (2026-10-11)
 
 - **Smart Chef (offline):** Pantry tab builds full recipes from pantry items using tested templates (stir-fry, pasta, skillet, sheet-pan, soup, curry, grain bowl, tacos, frittata, salad, fried rice, casserole) and flavor profiles (Italian, Asian, Mexican, Canadian comfort, Indian). Try another, save to **My creations**, add to plan, add missing items to the shopping list. No network or AI.

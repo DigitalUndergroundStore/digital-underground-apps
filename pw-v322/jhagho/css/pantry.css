@@ -491,6 +491,81 @@ label.field, .stack label {
 .tonight h3 { margin: 2px 0 0; font-family: var(--serif); font-size: 1.5rem; line-height: 1.2; }
 .slot-empty { width: 100%; color: var(--accent); border-style: dashed; justify-content: flex-start; }
 .slot-row, .slot-actions { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 4px; }
+.slot--meal .meal-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  min-height: 72px;
+}
+.meal-card__thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  flex: none;
+  background: center/cover no-repeat var(--bg-3);
+}
+.meal-card__thumb--empty { background: linear-gradient(135deg, var(--bg-3), var(--bg-4)); }
+.meal-card__text { flex: 1; min-width: 0; }
+.meal-card__name { display: block; font-family: var(--serif); font-size: 1.05rem; line-height: 1.2; }
+.meal-card__meta { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
+.meal-card__chev { color: var(--muted); font-size: 1.35rem; line-height: 1; flex: none; }
+.slot-actions--compact { justify-content: flex-end; }
+.icon-chip {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 10px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.slot-menu { position: relative; flex: none; }
+.slot-menu summary { list-style: none; cursor: pointer; }
+.slot-menu summary::-webkit-details-marker { display: none; }
+.slot-menu__panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 11rem;
+  padding: 8px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.slot-menu__panel button { width: 100%; justify-content: flex-start; }
+.settings-block {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.settings-block h3 { margin: 0 0 8px; font-size: 1rem; }
+.settings-note { margin: 0 0 8px; font-size: 0.88rem; color: var(--muted); }
+.settings-link {
+  margin: 8px 0 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+  min-height: 44px;
+}
+.recipe-card--smart { margin-top: 8px; }
+.recipe-card--smart .smart-chef__open { width: 100%; text-align: left; padding: 0; border: none; background: none; }
+.smart-chef__subhead { margin: 14px 0 6px; font-size: 0.95rem; }
 .servings { color: var(--muted); font-size: 0.92rem; min-width: 5.5rem; }
 .stepper { min-width: 44px; padding-left: 0; padding-right: 0; }
 .leftover-on { background: var(--bg-4); border-color: var(--accent); color: var(--accent); }

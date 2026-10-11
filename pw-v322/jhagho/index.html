@@ -38,9 +38,7 @@
       </header>
       <nav class="tabs" aria-label="Sections" id="tabs"></nav>
       <main id="main" class="main-view"></main>
-      <footer class="colophon">
-        <span id="footerVersion">Pantry Week</span> · Offline · Your plan stays on this device
-      </footer>
+      <footer class="colophon">Pantry Week · Offline</footer>
     </div>
   </div>
 
@@ -101,10 +99,6 @@
     (function () {
       var b = document.getElementById("du-preview");
       if (b && b.parentNode) b.parentNode.removeChild(b);
-      var sem = window.__DU_APP_SEMVER__ || window.__DU_APP_VERSION__ || "3.2.1";
-      if (/^\d{12}-/.test(String(sem))) sem = window.__DU_APP_SEMVER__ || "3.2.1";
-      var f = document.getElementById("footerVersion");
-      if (f) f.textContent = "Pantry Week v" + sem;
     })();
   </script>
   <noscript>

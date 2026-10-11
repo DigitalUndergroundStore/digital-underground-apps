@@ -653,11 +653,13 @@
     var ingredients = built.ingredients;
     var missing = missingList(ingredients);
     var id = "sc_" + (variation + "_" + template.id + "_" + profile).replace(/[^a-z0-9_]/gi, "");
+    var photoKey = template.id + "-" + profile;
     var recipe = {
       id: id,
       name: name,
       minutes: built.minutes,
       servings: servings,
+      photoKey: photoKey,
       tags: built.tags.concat(["smart-chef"]),
       ingredients: ingredients.map(function (i) {
         return { qty: i.qty, unit: i.unit, item: i.item };
@@ -713,12 +715,17 @@
     };
   }
 
+  function photoKeyFor(templateId, profileId) {
+    return String(templateId || "") + "-" + String(profileId || "");
+  }
+
   window.PW_SMART_CHEF = {
     generate: generate,
     classifyPantry: classifyPantry,
     persistHash: persistHash,
     loadHashes: loadHashes,
     signatureHash: signatureHash,
+    photoKeyFor: photoKeyFor,
     templates: TEMPLATE_DEFS.map(function (t) { return { id: t.id, name: t.shortName }; })
   };
 })();

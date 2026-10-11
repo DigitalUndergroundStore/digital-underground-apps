@@ -1,0 +1,307 @@
+[
+  {
+    "key": "casserole-asian",
+    "file": "photos/smart-chef/casserole-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Swiss_Chalet_Festive_Meal_-_Quarter_Chicken%2C_French_Fries%2C_Dinner_Roll%2C_Butter%2C_Cranberry_Sauce%2C_Stuffing%2C_Dipping_Sauce_-_December_2022.jpg"
+  },
+  {
+    "key": "casserole-canadian",
+    "file": "photos/smart-chef/casserole-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Swiss_Chalet_Festive_Meal_-_Quarter_Chicken%2C_French_Fries%2C_Dinner_Roll%2C_Butter%2C_Cranberry_Sauce%2C_Stuffing%2C_Dipping_Sauce_-_December_2022.jpg"
+  },
+  {
+    "key": "casserole-indian",
+    "file": "photos/smart-chef/casserole-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Swiss_Chalet_Festive_Meal_-_Quarter_Chicken%2C_French_Fries%2C_Dinner_Roll%2C_Butter%2C_Cranberry_Sauce%2C_Stuffing%2C_Dipping_Sauce_-_December_2022.jpg"
+  },
+  {
+    "key": "casserole-italian",
+    "file": "photos/smart-chef/casserole-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/-2019-12-22_Mushroom_Risotto_with_onion_and_herbs_finished_with_Parmesan_and_Mushroom%2C_Trimingham.JPG"
+  },
+  {
+    "key": "casserole-mexican",
+    "file": "photos/smart-chef/casserole-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Swiss_Chalet_Festive_Meal_-_Quarter_Chicken%2C_French_Fries%2C_Dinner_Roll%2C_Butter%2C_Cranberry_Sauce%2C_Stuffing%2C_Dipping_Sauce_-_December_2022.jpg"
+  },
+  {
+    "key": "curry-asian",
+    "file": "photos/smart-chef/curry-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Chicken_katsu_curry_rice_-_Korpan.jpg"
+  },
+  {
+    "key": "curry-canadian",
+    "file": "photos/smart-chef/curry-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Food_Indian_butter_chicken_%2852843424475%29.jpg"
+  },
+  {
+    "key": "curry-indian",
+    "file": "photos/smart-chef/curry-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Food_Indian_butter_chicken_%2852843424475%29.jpg"
+  },
+  {
+    "key": "curry-italian",
+    "file": "photos/smart-chef/curry-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Food_Indian_butter_chicken_%2852843424475%29.jpg"
+  },
+  {
+    "key": "curry-mexican",
+    "file": "photos/smart-chef/curry-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Food_Indian_butter_chicken_%2852843424475%29.jpg"
+  },
+  {
+    "key": "default",
+    "file": "photos/smart-chef/default.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "fried-rice-asian",
+    "file": "photos/smart-chef/fried-rice-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Chinese_vegetable_stir_fry_noodles.jpg"
+  },
+  {
+    "key": "fried-rice-canadian",
+    "file": "photos/smart-chef/fried-rice-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "fried-rice-indian",
+    "file": "photos/smart-chef/fried-rice-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Japanese_Style_Beef_Big_Rice_Bowl_in_Hong_Kong.jpg"
+  },
+  {
+    "key": "fried-rice-italian",
+    "file": "photos/smart-chef/fried-rice-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "fried-rice-mexican",
+    "file": "photos/smart-chef/fried-rice-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "frittata-asian",
+    "file": "photos/smart-chef/frittata-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Liat_Portal_for_Foodie_Disorder_-_Scrambled_eggs_with_spinach.jpg"
+  },
+  {
+    "key": "frittata-canadian",
+    "file": "photos/smart-chef/frittata-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/%22Breakfast_in_Bun%22_and_%22Mushrooms_Scrambled_Eggs%22_by_The_Old_Tram_Station%2C_Hull.jpg"
+  },
+  {
+    "key": "frittata-indian",
+    "file": "photos/smart-chef/frittata-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Liat_Portal_for_Foodie_Disorder_-_Scrambled_eggs_with_spinach.jpg"
+  },
+  {
+    "key": "frittata-italian",
+    "file": "photos/smart-chef/frittata-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Liat_Portal_for_Foodie_Disorder_-_Scrambled_eggs_with_spinach.jpg"
+  },
+  {
+    "key": "frittata-mexican",
+    "file": "photos/smart-chef/frittata-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Liat_Portal_for_Foodie_Disorder_-_Scrambled_eggs_with_spinach.jpg"
+  },
+  {
+    "key": "grain-bowl-asian",
+    "file": "photos/smart-chef/grain-bowl-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Donburi_Rice_bowl_of_Chicken_Teriyaki_with_Tomato.jpg"
+  },
+  {
+    "key": "grain-bowl-canadian",
+    "file": "photos/smart-chef/grain-bowl-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "grain-bowl-indian",
+    "file": "photos/smart-chef/grain-bowl-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Curry_rice_in_Korea.jpg"
+  },
+  {
+    "key": "grain-bowl-italian",
+    "file": "photos/smart-chef/grain-bowl-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "grain-bowl-mexican",
+    "file": "photos/smart-chef/grain-bowl-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Hot_bowl_%28Teriyaki_Mushroom%2C_Pacific_Coconut_Curry%2C_Rice%29_-_Island_Pok%C3%A9_2023-10-08.jpg"
+  },
+  {
+    "key": "pasta-asian",
+    "file": "photos/smart-chef/pasta-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Liat_Portal_for_Foodie_Disorder_-_Creamy_Tomato_Seafood_Pasta.jpg"
+  },
+  {
+    "key": "pasta-canadian",
+    "file": "photos/smart-chef/pasta-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/White_Sauce_Pasta_served_in_an_Aluminium_foil_container.jpg"
+  },
+  {
+    "key": "pasta-indian",
+    "file": "photos/smart-chef/pasta-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Liat_Portal_for_Foodie_Disorder_-_Creamy_Tomato_Seafood_Pasta.jpg"
+  },
+  {
+    "key": "pasta-italian",
+    "file": "photos/smart-chef/pasta-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Liat_Portal_for_Foodie_Disorder_-_Creamy_Tomato_Seafood_Pasta.jpg"
+  },
+  {
+    "key": "pasta-mexican",
+    "file": "photos/smart-chef/pasta-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Liat_Portal_for_Foodie_Disorder_-_Creamy_Tomato_Seafood_Pasta.jpg"
+  },
+  {
+    "key": "salad-asian",
+    "file": "photos/smart-chef/salad-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Salad_bowl_in_Tampere.jpg"
+  },
+  {
+    "key": "salad-canadian",
+    "file": "photos/smart-chef/salad-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Salad_bowl_in_Tampere.jpg"
+  },
+  {
+    "key": "salad-indian",
+    "file": "photos/smart-chef/salad-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Salad_bowl_in_Tampere.jpg"
+  },
+  {
+    "key": "salad-italian",
+    "file": "photos/smart-chef/salad-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Salad_bowl_in_Tampere.jpg"
+  },
+  {
+    "key": "salad-mexican",
+    "file": "photos/smart-chef/salad-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Liat_Portal_for_Foodie_Disorder_-_Chicken_salad_sandwich_with_Israeli_salad.jpg"
+  },
+  {
+    "key": "sheet-pan-asian",
+    "file": "photos/smart-chef/sheet-pan-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "sheet-pan-canadian",
+    "file": "photos/smart-chef/sheet-pan-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Liat_Portal_for_Foodie_Disorder_-_Roast_chicken_with_peas_and_green_salad.jpg"
+  },
+  {
+    "key": "sheet-pan-indian",
+    "file": "photos/smart-chef/sheet-pan-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "sheet-pan-italian",
+    "file": "photos/smart-chef/sheet-pan-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Roast_Chicken_with_Potato_Wedges.jpg"
+  },
+  {
+    "key": "sheet-pan-mexican",
+    "file": "photos/smart-chef/sheet-pan-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "skillet-asian",
+    "file": "photos/smart-chef/skillet-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/A_New_Zealand_beef_steak_with_corn_and_sausage_with_potatoes_with_dinner_set_in_caf%C3%A9_de_coral.jpg"
+  },
+  {
+    "key": "skillet-canadian",
+    "file": "photos/smart-chef/skillet-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/A_New_Zealand_beef_steak_with_corn_and_sausage_with_potatoes_with_dinner_set_in_caf%C3%A9_de_coral.jpg"
+  },
+  {
+    "key": "skillet-indian",
+    "file": "photos/smart-chef/skillet-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/A_New_Zealand_beef_steak_with_corn_and_sausage_with_potatoes_with_dinner_set_in_caf%C3%A9_de_coral.jpg"
+  },
+  {
+    "key": "skillet-italian",
+    "file": "photos/smart-chef/skillet-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Steak_Dinner_%2837335080850%29.jpg"
+  },
+  {
+    "key": "skillet-mexican",
+    "file": "photos/smart-chef/skillet-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Tacos_at_restaurant_Chalupa.jpg"
+  },
+  {
+    "key": "soup-asian",
+    "file": "photos/smart-chef/soup-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Red_lentil_soup_bowl.jpg"
+  },
+  {
+    "key": "soup-canadian",
+    "file": "photos/smart-chef/soup-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Red_lentil_soup_bowl.jpg"
+  },
+  {
+    "key": "soup-indian",
+    "file": "photos/smart-chef/soup-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Red_lentil_soup_bowl.jpg"
+  },
+  {
+    "key": "soup-italian",
+    "file": "photos/smart-chef/soup-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/French_lentil_soup_%2842460826544%29.jpg"
+  },
+  {
+    "key": "soup-mexican",
+    "file": "photos/smart-chef/soup-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Red_lentil_soup_bowl.jpg"
+  },
+  {
+    "key": "stir-fry-asian",
+    "file": "photos/smart-chef/stir-fry-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Noodle_stir_fry_with_chicken%2C_shrimp%2C_and_broccoli_%2818471621051%29.jpg"
+  },
+  {
+    "key": "stir-fry-canadian",
+    "file": "photos/smart-chef/stir-fry-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "stir-fry-indian",
+    "file": "photos/smart-chef/stir-fry-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "stir-fry-italian",
+    "file": "photos/smart-chef/stir-fry-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Grilled_plated_salmon_fillet.jpg"
+  },
+  {
+    "key": "stir-fry-mexican",
+    "file": "photos/smart-chef/stir-fry-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Stir-fried_spinach_and_ground_pork%281%29.jpg"
+  },
+  {
+    "key": "tacos-asian",
+    "file": "photos/smart-chef/tacos-asian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Tacos_at_restaurant_Chalupa.jpg"
+  },
+  {
+    "key": "tacos-canadian",
+    "file": "photos/smart-chef/tacos-canadian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Tacos_at_restaurant_Chalupa.jpg"
+  },
+  {
+    "key": "tacos-indian",
+    "file": "photos/smart-chef/tacos-indian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Tacos_at_restaurant_Chalupa.jpg"
+  },
+  {
+    "key": "tacos-italian",
+    "file": "photos/smart-chef/tacos-italian.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Tacos_at_restaurant_Chalupa.jpg"
+  },
+  {
+    "key": "tacos-mexican",
+    "file": "photos/smart-chef/tacos-mexican.webp",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Tacos_at_restaurant_Chalupa.jpg"
+  }
+]

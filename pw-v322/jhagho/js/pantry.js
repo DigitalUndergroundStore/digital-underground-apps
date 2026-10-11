@@ -352,7 +352,7 @@
     var servings = parseInt(raw.servings, 10);
     if (!servings || servings < 1) servings = 4;
     if (servings > 24) servings = 24;
-    return {
+    var out = {
       id: String(raw.id || uid("c_")),
       name: String(raw.name || "Untitled recipe").trim() || "Untitled recipe",
       minutes: minutes,
@@ -361,6 +361,8 @@
       ingredients: ingredients,
       steps: splitSteps(raw.steps)
     };
+    if (raw.photoKey) out.photoKey = String(raw.photoKey);
+    return out;
   }
 
   function normalizeSlot(raw, recipes) {
@@ -1390,7 +1392,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.2.3",
+    VERSION: "3.3.0",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,

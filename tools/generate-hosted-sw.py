@@ -85,7 +85,7 @@ def patch_unlock_updates(slug: str, version: str) -> None:
     # fix sw url for subpages handled via ROOT in existing sw register
     sw_url = '" + ROOT + "sw.js"'
     inj = (
-        f'    var duVer = "<script>window.__DU_APP_VERSION__=\\"{version}\\"><\\/script>'
+        f'    var duVer = "<script>window.__DU_APP_VERSION__=\\"{version}\\";<\\/script>'
         f'<link rel=\\"stylesheet\\" href=\\"/assets/buyer/pwa-update.css\\">'
         f'<script src=\\"/assets/buyer/pwa-update.js\\" data-sw-url=\\"" + ROOT + "sw.js\\" '
         f'data-app-version=\\"{version}\\" data-app-label=\\"{slug}\\" defer><\\/script>";\\n'

@@ -30,7 +30,7 @@ def patch_unlock(slug: str) -> None:
     if "pwa-update.js" in text and "duVer" in text:
         return
     du = (
-        f'    var duVer = "<script>window.__DU_APP_VERSION__=\\"{version}\\"><\\/script>'
+        f'    var duVer = "<script>window.__DU_APP_VERSION__=\\"{version}\\";<\\/script>'
         f'<link rel=\\"stylesheet\\" href=\\"/assets/buyer/pwa-update.css\\">'
         f'<script src=\\"/assets/buyer/pwa-update.js\\" data-sw-url=\\"" + ROOT + "sw.js\\" '
         f'data-app-version=\\"{version}\\" data-app-label=\\"{label}\\" defer><\\/script>";\\n'

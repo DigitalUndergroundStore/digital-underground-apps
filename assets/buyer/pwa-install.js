@@ -8,12 +8,20 @@
     window.navigator.standalone === true;
   if (standalone) return;
 
-  var btnWrap = document.getElementById("du-install");
-  var btn = document.getElementById("du-install-btn");
+  var bannerWrap = document.getElementById("du-install");
+  var bannerBtn = document.getElementById("du-install-btn");
+  var headerBtn = document.getElementById("du-install-header");
   var iosHint = document.getElementById("du-ios-hint");
-  if (!btnWrap || !btn) return;
+  var desktop = window.matchMedia("(min-width: 901px)").matches;
+  var installBtn = desktop && headerBtn ? headerBtn : bannerBtn;
+  var installWrap = desktop ? headerBtn : bannerWrap;
 
-  if (btnWrap.hasAttribute("hidden")) btnWrap.hidden = false;
+  if (!installBtn) return;
+
+  if (bannerWrap && desktop) bannerWrap.hidden = true;
+  if (headerBtn && !desktop) headerBtn.hidden = true;
+  if (installWrap && installWrap.hasAttribute("hidden")) installWrap.hidden = false;
+
   var deferred = null;
 
   function isIOS() {
@@ -21,18 +29,24 @@
   }
 
   function appUrl() {
-    var base = "https://digitalundergroundstore.com/" + slug + "/";
-    return base;
+    return "https://digitalundergroundstore.com/" + slug + "/";
+  }
+
+  function hideInstallUi() {
+    if (bannerWrap) bannerWrap.hidden = true;
+    if (headerBtn) headerBtn.hidden = true;
   }
 
   window.addEventListener("beforeinstallprompt", function (e) {
     e.preventDefault();
     deferred = e;
-    btn.textContent = "Install " + appName;
-    btn.disabled = false;
+    installBtn.textContent = desktop ? "Install app" : "Install " + appName;
+    installBtn.disabled = false;
   });
 
-  btn.addEventListener("click", function () {
+  window.addEventListener("appinstalled", hideInstallUi);
+
+  function onInstallClick() {
     if (deferred) {
       deferred.prompt();
       deferred.userChoice.then(function () { deferred = null; });
@@ -43,11 +57,16 @@
       return;
     }
     window.location.href = appUrl();
-  });
+  }
+
+  if (bannerBtn) bannerBtn.addEventListener("click", onInstallClick);
+  if (headerBtn) headerBtn.addEventListener("click", onInstallClick);
 
   if (isIOS()) {
-    btn.textContent = "Add to Home Screen";
+    installBtn.textContent = desktop ? "Add to Home Screen" : "Add to Home Screen";
+  } else if (desktop) {
+    installBtn.textContent = "Install app";
   } else {
-    btn.textContent = "Install " + appName;
+    installBtn.textContent = "Install " + appName;
   }
 })();

@@ -162,7 +162,8 @@ html.square .poster { left: 48px; right: 48px; }
   line-height: 0;
 }
 .tablet .screen { border-radius: 16px; background: #f7f1e6; }
-.screen img { width: 100%; height: 100%; display: block; }
+.track { display: flex; height: 100%; width: 100%; }
+.track img { height: 100%; flex: none; display: block; object-fit: fill; }
 .finger {
   position: absolute;
   width: 54px;
@@ -229,7 +230,10 @@ html.square .finger { width: 48px; height: 48px; }
       <div class="bezel">
         <div class="speaker"></div>
         <div class="screen" id="screen">
-          <img id="shotImg" alt="" />
+          <div class="track" id="track">
+            <img id="shotImg" alt="" />
+            <img id="shotImgB" alt="" />
+          </div>
           <div class="finger" id="finger"></div>
         </div>
       </div>
@@ -237,31 +241,21 @@ html.square .finger { width: 48px; height: 48px; }
   </div>
   <div id="preload">
     <img data-shot="phone-recipes" src="../footage/phone-recipes.png" alt="" />
-    <img data-shot="phone-picker" src="../footage/phone-picker.png" alt="" />
-    <img data-shot="phone-plan-two" src="../footage/phone-plan-two.png" alt="" />
-    <img data-shot="phone-plan-fill-btn" src="../footage/phone-plan-fill-btn.png" alt="" />
-    <img data-shot="phone-week-full" src="../footage/phone-week-full.png" alt="" />
+    <img data-shot="phone-canadian" src="../footage/phone-canadian.png" alt="" />
+    <img data-shot="phone-fill-choice" src="../footage/phone-fill-choice.png" alt="" />
+    <img data-shot="phone-week" src="../footage/phone-week.png" alt="" />
     <img data-shot="phone-shop" src="../footage/phone-shop.png" alt="" />
+    <img data-shot="phone-shop-before" src="../footage/phone-shop-before.png" alt="" />
     <img data-shot="phone-shop-have" src="../footage/phone-shop-have.png" alt="" />
-    <img data-shot="tablet-print" src="../footage/tablet-print.png" alt="" />
+    <img data-shot="phone-chef" src="../footage/phone-chef.png" alt="" />
+    <img data-shot="phone-share" src="../footage/phone-share.png" alt="" />
+    <img data-shot="phone-swipe-plan" src="../footage/phone-swipe-plan.png" alt="" />
+    <img data-shot="phone-swipe-recipes" src="../footage/phone-swipe-recipes.png" alt="" />
+    <img data-shot="tablet-recipes" src="../footage/tablet-recipes.png" alt="" />
   </div>
 </div>
 <script>
 (function () {
-  var phoneShots = {
-    "phone-recipes": [390, 844],
-    "phone-picker": [390, 844],
-    "phone-plan-two": [390, 844],
-    "phone-plan-fill-btn": [390, 844],
-    "phone-week-full": [390, 844],
-    "phone-shop": [390, 844],
-    "phone-shop-have": [390, 844]
-  };
-  var tabletShots = {
-    "tablet-print": [1100, 1400],
-    "tablet-week": [1100, 1400]
-  };
-
   function clamp(x) { return Math.max(0, Math.min(1, x)); }
   function fade(t, a, b, fadeIn, fadeOut) {
     if (t < a || t > b) return 0;
@@ -273,21 +267,26 @@ html.square .finger { width: 48px; height: 48px; }
   function lerp(a, b, p) { return a + (b - a) * p; }
 
   var beats = [
-    { a: 1.58, b: 3.15, shot: "phone-recipes", cap: "Pick the meals",
-      tap: { t: 2.35, x: 0.28, y: 0.585 } },
-    { a: 3.15, b: 4.7, shot: "phone-picker", cap: "Pick the meals",
-      tap: { t: 4.05, x: 0.5, y: 0.443 } },
-    { a: 4.7, b: 6.15, shot: "phone-plan-two", cap: "Pick the meals" },
-    { a: 6.15, b: 7.55, shot: "phone-plan-fill-btn", cap: "The week fills in",
-      tap: { t: 6.7, x: 0.26, y: 0.5 } },
-    { a: 7.55, b: 10.7, shot: "phone-week-full", cap: "The week fills in" },
-    { a: 10.7, b: 13.35, shot: "phone-shop", cap: "Shop by aisle" },
-    { a: 13.35, b: 16.15, shot: "phone-shop-have", cap: "Shop by aisle",
-      tap: { t: 13.7, x: 0.862, y: 0.5 } },
-    { a: 16.15, b: 21.15, shot: "tablet-print", cap: "Print it. Works offline.", device: "tablet" }
+    { a: 1.52, b: 3.35, shot: "phone-recipes", cap: "248 recipes",
+      tap: { t: 2.35, x: 0.19, y: 0.366 } },
+    { a: 3.25, b: 4.7, shot: "phone-canadian", cap: "Canadian meals" },
+    { a: 4.6, b: 6.45, shot: "phone-fill-choice", cap: "Fill a simple week",
+      tap: { t: 5.15, x: 0.5, y: 0.798 } },
+    { a: 6.35, b: 8.25, shot: "phone-week", cap: "The week fills in" },
+    { a: 8.15, b: 10.2, shot: "phone-shop", cap: "Shop by aisle" },
+    { a: 10.1, b: 11.85, shot: "phone-shop-before", cap: "Shop by aisle",
+      tap: { t: 10.45, x: 0.865, y: 0.398 } },
+    { a: 11.75, b: 13.15, shot: "phone-shop-have", cap: "Have it" },
+    { a: 13.05, b: 15.15, shot: "phone-chef", cap: "Smart Chef" },
+    { a: 15.05, b: 16.85, shot: "phone-share", cap: "Cook from what you have",
+      tap: { t: 15.55, x: 0.5, y: 0.826 } },
+    { a: 16.75, b: 19.15, shot: "phone-swipe-plan", swipeTo: "phone-swipe-recipes", cap: "Swipe between tabs" },
+    { a: 19.05, b: 21.15, shot: "tablet-recipes", cap: "248 recipes", device: "tablet" }
   ];
 
   var shotImg = document.getElementById("shotImg");
+  var shotImgB = document.getElementById("shotImgB");
+  var track = document.getElementById("track");
   var finger = document.getElementById("finger");
   var device = document.getElementById("device");
   var screen = document.getElementById("screen");
@@ -305,22 +304,44 @@ html.square .finger { width: 48px; height: 48px; }
     screen.style.height = (base / aspect) + "px";
     var src = "../footage/" + beat.shot + ".png";
     if (shotImg.getAttribute("src") !== src) shotImg.src = src;
-    var gentle = lerp(0.975, 1, eased);
+    if (beat.swipeTo) {
+      var srcB = "../footage/" + beat.swipeTo + ".png";
+      if (shotImgB.getAttribute("src") !== srcB) shotImgB.src = srcB;
+      shotImgB.style.display = "block";
+      shotImg.style.width = "50%";
+      shotImgB.style.width = "50%";
+      track.style.width = "200%";
+      var start = beat.a + 0.4;
+      var end = beat.b - 0.45;
+      var u = t <= start ? 0 : t >= end ? 1 : (t - start) / (end - start);
+      u = u * u * (3 - 2 * u);
+      track.style.transform = "translateX(" + (-u * 50) + "%)";
+      finger.style.opacity = u > 0 && u < 1 ? "1" : "0";
+      finger.style.left = ((0.72 - u * 0.4) * 100) + "%";
+      finger.style.top = "58%";
+      finger.style.transform = "translate(-50%,-50%) scale(0.9)";
+    } else {
+      shotImgB.style.display = "none";
+      shotImg.style.width = "100%";
+      track.style.width = "100%";
+      track.style.transform = "none";
+      var tap = beat.tap;
+      if (tap && t >= tap.t && t < tap.t + 0.42) {
+        var k = clamp((t - tap.t) / 0.42);
+        var tapScale = k < 0.35 ? lerp(1.35, 0.82, k / 0.35) : lerp(0.82, 1.05, (k - 0.35) / 0.65);
+        finger.style.opacity = String(k < 0.8 ? 1 : 1 - (k - 0.8) / 0.2);
+        finger.style.left = (tap.x * 100) + "%";
+        finger.style.top = (tap.y * 100) + "%";
+        finger.style.transform = "translate(-50%,-50%) scale(" + tapScale + ")";
+      } else {
+        finger.style.opacity = "0";
+      }
+    }
+    var gentle = lerp(0.985, 1, eased);
     var dw = device.offsetWidth;
     var dh = device.offsetHeight;
     var scale = Math.min(slot.clientWidth / dw, slot.clientHeight / dh) * gentle;
     device.style.transform = "translate(-50%, -50%) scale(" + scale + ")";
-    var tap = beat.tap;
-    if (tap && t >= tap.t && t < tap.t + 0.42) {
-      var u = clamp((t - tap.t) / 0.42);
-      var tapScale = u < 0.35 ? lerp(1.35, 0.82, u / 0.35) : lerp(0.82, 1.05, (u - 0.35) / 0.65);
-      finger.style.opacity = String(u < 0.8 ? 1 : 1 - (u - 0.8) / 0.2);
-      finger.style.left = (tap.x * 100) + "%";
-      finger.style.top = (tap.y * 100) + "%";
-      finger.style.transform = "translate(-50%,-50%) scale(" + tapScale + ")";
-    } else {
-      finger.style.opacity = "0";
-    }
   }
 
   window.renderAt = function (t) {
@@ -335,7 +356,7 @@ html.square .finger { width: 48px; height: 48px; }
     });
     slot.style.opacity = rig;
     var capEl = document.getElementById("cap");
-    capEl.style.opacity = rig > 0.4 && t < 20.9 ? String(Math.min(1, rig)) : "0";
+    capEl.style.opacity = rig > 0.4 && t < 21.05 ? String(Math.min(1, rig)) : "0";
     document.getElementById("capText").textContent = cap || "Pick the meals";
     if (active && rig > 0) showShot(active, t);
   };

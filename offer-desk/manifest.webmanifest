@@ -1,8 +1,8 @@
 {
  "name": "Offer Desk",
  "short_name": "Offer Desk",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/offer-desk/index.html",
+ "scope": "/offer-desk/",
  "display": "standalone",
  "background_color": "#0c0f14",
  "theme_color": "#0c0f14",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/offer-desk/",
+ "description": "Offer Desk \u2014 Digital Underground"
 }

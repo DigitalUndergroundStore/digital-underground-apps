@@ -1,8 +1,8 @@
 {
  "name": "Rate Wire",
  "short_name": "Rate Wire",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/rate-wire/index.html",
+ "scope": "/rate-wire/",
  "display": "standalone",
  "background_color": "#0a0e14",
  "theme_color": "#0a0e14",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/rate-wire/",
+ "description": "Rate Wire \u2014 Digital Underground"
 }

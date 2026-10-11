@@ -1,8 +1,8 @@
 {
  "name": "Reply Forge",
  "short_name": "Reply Forge",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/reply-forge/index.html",
+ "scope": "/reply-forge/",
  "display": "standalone",
  "background_color": "#0a0e14",
  "theme_color": "#0a0e14",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/reply-forge/",
+ "description": "Reply Forge \u2014 Digital Underground"
 }

@@ -1,6 +1,7 @@
 /**
  * Cloudflare Pages Function: fetch a public recipe URL and return schema.org Recipe JSON-LD.
  * POST { "url": "https://…" } → { "recipe": { … } }
+ * Failures use 4xx (422), not 502: the custom domain replaces 5xx bodies with a bare "error code: 502" page the app cannot parse.
  */
 
 const MAX_BYTES = 2 * 1024 * 1024;
@@ -179,7 +180,7 @@ async function attemptFetch(startUrl, headers, browserLike) {
       const h = browserLike ? { ...headers, Referer: `${new URL(target).origin}/` } : headers;
       response = await fetch(target, { method: "GET", redirect: "manual", signal: controller.signal, headers: h });
       if (response.status < 300 || response.status > 399 || !response.headers.get("Location")) break;
-      if (hop >= 5) return { fatal: json({ error: "Too many redirects." }, 502) };
+      if (hop >= 5) return { fatal: json({ error: "Too many redirects." }, 422) };
       const next = validateTargetUrl(new URL(response.headers.get("Location"), target).toString());
       if (next.error) return { fatal: json({ error: "That URL redirects somewhere that is not allowed." }, 400) };
       target = next.url;
@@ -219,7 +220,7 @@ async function attemptFetch(startUrl, headers, browserLike) {
 function blockedResponse(status) {
   const body = { error: status ? `${BLOCKED_HINT} (HTTP ${status}.)` : BLOCKED_HINT, pasteTextInstead: true };
   if (status) body.httpStatus = status;
-  return json(body, 502);
+  return json(body, 422);
 }
 
 export async function onRequest(context) {
@@ -257,7 +258,7 @@ export async function onRequest(context) {
   // 2) Retry once with browser-like headers only for bot-block statuses or a page without Recipe JSON-LD.
   const retryable = (first.failed && RETRY_STATUSES.has(first.status)) || (!first.failed && first.recipes);
   if (!retryable) {
-    if (first.timeout) return json({ error: `Request timed out. ${BLOCKED_HINT}`, pasteTextInstead: true }, 502);
+    if (first.timeout) return json({ error: `Request timed out. ${BLOCKED_HINT}`, pasteTextInstead: true }, 422);
     return blockedResponse(first.status);
   }
   const second = await attemptFetch(checked.url, BROWSER_HEADERS, true);

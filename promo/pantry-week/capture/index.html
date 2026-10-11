@@ -30,6 +30,47 @@ html.square body { height: 1080px; }
 #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
 html.square #stage { height: 1080px; }
 
+#backdrop { display: none; }
+html.motion #backdrop {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: #e7d3b4;
+}
+html.motion #stage { background: transparent; }
+.plate {
+  position: absolute;
+  left: -18%;
+  top: -18%;
+  width: 136%;
+  height: 136%;
+  object-fit: cover;
+  filter: blur(22px) saturate(1.25);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.wash {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    radial-gradient(ellipse at 50% 28%, rgba(255, 248, 236, 0.72) 0%, rgba(255, 248, 236, 0.28) 36%, rgba(255, 244, 226, 0.08) 68%),
+    linear-gradient(180deg, rgba(255, 248, 236, 0.34) 0%, rgba(246, 232, 210, 0.18) 46%, rgba(255, 244, 226, 0.32) 100%);
+}
+.orb {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.55;
+}
+.orb.herb { width: 180px; height: 180px; background: #7ea35a; left: -40px; top: 18%; }
+.orb.tomato { width: 120px; height: 120px; background: #d4653a; right: -20px; top: 62%; }
+.orb.yolk { width: 90px; height: 90px; background: #e7b23c; left: 12%; bottom: 8%; }
+.poster, .cap, .slot { z-index: 3; }
+
 .poster {
   position: absolute;
   left: 72px;
@@ -80,6 +121,15 @@ html.square .poster { left: 48px; right: 48px; }
 .pay { margin: 6px 0 0; font-size: 46px; font-weight: 800; }
 .url { margin: 18px 0 0; font-size: 32px; font-weight: 750; }
 .fine { margin: 10px 0 0; font-size: 26px; font-weight: 650; color: #3f342b; }
+html.motion .eyebrow,
+html.motion .display,
+html.motion .again,
+html.motion .price,
+html.motion .pay,
+html.motion .url,
+html.motion .fine {
+  text-shadow: 0 1px 0 rgba(255, 248, 236, 0.85), 0 0 22px rgba(255, 248, 236, 0.95);
+}
 
 .cap {
   position: absolute;
@@ -209,6 +259,15 @@ html.square .finger { width: 48px; height: 48px; }
 </head>
 <body>
 <div id="stage">
+  <div id="backdrop" aria-hidden="true">
+    <img class="plate" id="plateA" src="../bg/r8.webp" alt="" />
+    <img class="plate" id="plateB" src="../bg/r1.webp" alt="" />
+    <img class="plate" id="plateC" src="../bg/r3.webp" alt="" />
+    <span class="orb herb" id="orbHerb"></span>
+    <span class="orb tomato" id="orbTomato"></span>
+    <span class="orb yolk" id="orbYolk"></span>
+    <div class="wash"></div>
+  </div>
   <div class="poster" id="hook">
     <p class="eyebrow">Every night</p>
     <h1 class="display">What's for<br>dinner?</h1>
@@ -344,7 +403,33 @@ html.square .finger { width: 48px; height: 48px; }
     device.style.transform = "translate(-50%, -50%) scale(" + scale + ")";
   }
 
+  function movePlate(el, t, start, end, fromX, toX, fromY, toY) {
+    var fadeIn = 1.8;
+    var o = 0;
+    if (t >= start && t <= end) {
+      o = 1;
+      if (start > 0 && t < start + fadeIn) o = (t - start) / fadeIn;
+      if (end < 26 && t > end - fadeIn) o = Math.min(o, (end - t) / fadeIn);
+    }
+    var p = clamp((t - start) / (end - start));
+    var s = lerp(1.08, 1.18, p);
+    el.style.opacity = String(clamp(o));
+    el.style.transform = "translate(" + lerp(fromX, toX, p) + "%, " + lerp(fromY, toY, p) + "%) scale(" + s + ")";
+  }
+
+  function moveBackdrop(t) {
+    if (!document.documentElement.classList.contains("motion")) return;
+    movePlate(document.getElementById("plateA"), t, 0, 11.5, -2, 3, 1, -2);
+    movePlate(document.getElementById("plateB"), t, 8.2, 19.4, 2, -3, -1, 2);
+    movePlate(document.getElementById("plateC"), t, 16.2, 26, -1, 2, 2, -2);
+    var drift = Math.sin(t * 0.45);
+    document.getElementById("orbHerb").style.transform = "translate(" + (drift * 18) + "px, " + (t * 4) + "px)";
+    document.getElementById("orbTomato").style.transform = "translate(" + (-drift * 14) + "px, " + (-t * 3) + "px)";
+    document.getElementById("orbYolk").style.transform = "translate(" + (drift * 10) + "px, " + (Math.cos(t * 0.4) * 12) + "px)";
+  }
+
   window.renderAt = function (t) {
+    moveBackdrop(t);
     document.getElementById("hook").style.opacity = fade(t, 0, 1.72, false, true);
     document.getElementById("cta").style.opacity = fade(t, 21.0, 26.0, true, false);
     var rig = 0;

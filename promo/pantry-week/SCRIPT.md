@@ -21,6 +21,18 @@ The pictures inside the phone and tablet are screen recordings of the live app a
 
 Captions sit below the top 250px and above the device. The phone and the tablet are scaled to fit inside the frame. Each screenshot fills the device screen with no crop.
 
+## Next re-record
+
+Wait for a go. The Import feature is not live yet, so this cut does not show it.
+
+When Import recipes ships, add a scene of that screen. Keep the same music, the CAD$24 end card, and the full phone and tablet screens.
+
+The plain paper behind the devices is the background in the delivered videos. A motion prototype is in the capture page and stays off unless you pass `--motion`. It is a slow pan across blurred recipe photos from the app (pasta, chicken, salmon), with a warm veil and a few soft ingredient-colored shapes. The devices and the type stay sharp. Do not replace the delivered MP4s until that look is approved.
+
+```bash
+node render.mjs vertical --motion --preview --out=/tmp/pw-bg-preview
+```
+
 ## Music
 
 Feeling Happy by Ahjay Stelino. See `AUDIO-CREDITS.md`.

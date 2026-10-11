@@ -37,9 +37,9 @@
       var t = bundle.assets[p] || "";
       return /\.css$/.test(p) ? "<style>" + t + "</style>" : "<script>" + t + "<\/script>";
     });
+    var duVer = "<script>window.__DU_APP_VERSION__=\"202610072058-baa311ed\"><\/script><link rel=\"stylesheet\" href=\"/assets/buyer/pwa-update.css\"><script src=\"/assets/buyer/pwa-update.js\" data-sw-url=\"" + ROOT + "sw.js\" data-app-version=\"202610072058-baa311ed\" data-app-label=\"streak-kit\" defer><\/script>";
     var pwa = "<link rel=\"stylesheet\" href=\"/assets/buyer/pwa-install.css\"><script src=\"/assets/buyer/pwa-install.js\" data-app-slug=\"streak-kit\" data-app-name=\"Streak Kit\" defer><\/script>";
-    var sw = "<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('" + ROOT + "sw.js').catch(function(){});}<\/script>";
-    html = html.replace("</body>", pwa + sw + "\n</body>");
+    html = html.replace("</body>", pwa + duVer + "<script src=\"/assets/buyer/du-about-version.js\" defer><\/script>" + "\n</body>");
     document.open(); document.write(html); document.close();
   }
   function netFail() { status("Couldn't load Streak Kit. Connect to the internet once to open it; after that it also works offline."); }

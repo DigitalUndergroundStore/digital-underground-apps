@@ -1,16 +1,95 @@
-/* Rate Wire offline cache. Only encrypted/app-shell files are cached; nothing here can read the tool. */
-var CACHE = "rate-wire-202610072058-83ade6e0";
-var FILES = ["index.html", "unlock.js?v=202610072058-83ade6e0", "app.bin?v=202610072058-83ade6e0", "manifest.webmanifest", "icons/icon-180.png", "icons/icon-192.png", "icons/icon-512.png"];
-self.addEventListener("install", function (e) { e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(FILES); }).then(function () { return self.skipWaiting(); })); });
-self.addEventListener("activate", function (e) { e.waitUntil(caches.keys().then(function (ks) { return Promise.all(ks.filter(function (k) { return k.indexOf("rate-wire-") === 0 && k !== CACHE; }).map(function (k) { return caches.delete(k); })); }).then(function () { return self.clients.claim(); })); });
-self.addEventListener("fetch", function (e) {
-  var req = e.request; if (req.method !== "GET") return;
-  var url = new URL(req.url); if (url.origin !== location.origin || url.pathname.indexOf(new URL("./", location).pathname) !== 0) return;
-  e.respondWith(caches.open(CACHE).then(function (c) {
-    return c.match(req, { ignoreSearch: req.mode === "navigate" }).then(function (hit) {
-      var net = fetch(req).then(function (res) { if (res && res.ok && res.type === "basic") c.put(req, res.clone()); return res; });
-      if (hit) { net.catch(function () {}); return hit; }
-      return net.catch(function () { return req.mode === "navigate" ? c.match("index.html") : Response.error(); });
-    });
-  }));
+/* rate-wire offline shell — version 202610072058-83ade6e0. Regenerate: python3 tools/generate-hosted-sw.py */
+/* Hosted buyer app service worker — generated; do not edit by hand.
+   Regenerate with: python3 tools/generate-hosted-sw.py <slug> */
+var VERSION = "202610072058-83ade6e0";
+var CACHE = "rate-wire-" + VERSION;
+var PREFIX = "rate-wire-";
+var FILES = [
+ "index.html",
+ "unlock.js?v=202610072058-83ade6e0",
+ "app.bin?v=202610072058-83ade6e0",
+ "manifest.webmanifest",
+ "icons/icon-180.png",
+ "icons/icon-192.png",
+ "icons/icon-512.png",
+ "version.json"
+];
+
+function inScope(url) {
+  return url.origin === self.location.origin &&
+    url.pathname.indexOf(new URL("./", self.location).pathname) === 0;
+}
+
+self.addEventListener("install", function (event) {
+  event.waitUntil(
+    caches.open(CACHE).then(function (cache) {
+      return cache.addAll(FILES);
+    })
+  );
+});
+
+self.addEventListener("activate", function (event) {
+  event.waitUntil(
+    caches.keys().then(function (keys) {
+      return Promise.all(
+        keys.filter(function (k) {
+          return k.indexOf(PREFIX) === 0 && k !== CACHE;
+        }).map(function (k) {
+          return caches.delete(k);
+        })
+      );
+    }).then(function () {
+      return self.clients.claim();
+    })
+  );
+});
+
+self.addEventListener("message", function (event) {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
+
+self.addEventListener("fetch", function (event) {
+  var req = event.request;
+  if (req.method !== "GET") return;
+  var url = new URL(req.url);
+  if (!inScope(url)) return;
+
+  if (req.mode === "navigate") {
+    event.respondWith(
+      fetch(req).then(function (res) {
+        if (res && res.ok) {
+          var copy = res.clone();
+          caches.open(CACHE).then(function (c) {
+            c.put(req, copy);
+          }).catch(function () {});
+        }
+        return res;
+      }).catch(function () {
+        return caches.match("index.html");
+      })
+    );
+    return;
+  }
+
+  event.respondWith(
+    caches.open(CACHE).then(function (cache) {
+      return cache.match(req, { ignoreSearch: true }).then(function (hit) {
+        var net = fetch(req).then(function (res) {
+          if (res && res.ok && res.type === "basic") {
+            cache.put(req, res.clone());
+          }
+          return res;
+        });
+        if (hit) {
+          net.catch(function () {});
+          return hit;
+        }
+        return net.catch(function () {
+          return Response.error();
+        });
+      });
+    })
+  );
 });

@@ -22,4 +22,6 @@ Phone versions of Digital Underground tools, served by GitHub Pages.
 
 Every app folder works the same way as `session-forge/`: the tool is only inside the encrypted `app.bin`, each product has its own buyer code (shipped in that product's "On your phone" PDF), and the HTML files are unlock screens.
 
+**Shipping updates to installed PWAs:** see [docs/shipping-app-updates.md](docs/shipping-app-updates.md). Bump `CFG.build` in `unlock.js`, regenerate service workers with `python3 tools/generate-hosted-sw.py`, merge to `main`.
+
 `session-forge/` is built by `/workspace/session-forge/v2.1/tools/build-hosted.py`. Every other app folder, plus this README, is built by `/workspace/digital-underground/apps-site/tools/build-product.py`. The public root `index.html` redirects to `/store/`. The app list lives at `apps/index.html`. If a build script rewrites the root, put the app list back in `apps/` and restore the store redirect. Don't edit app folders by hand.

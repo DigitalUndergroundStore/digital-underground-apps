@@ -1,35 +1,37 @@
 # Pantry Week 2.0 promo
 
-Vertical and square cuts of the same 26-second story. Both are 30 fps H.264. On-screen words carry the story when the sound is off.
+26-second vertical (1080×1920) and square (1080×1080) cuts. 30 fps H.264. The words on screen carry the story with the sound off.
 
 Price on screen is CAD$24. The store line is digitalundergroundstore.com. Gumroad is not shown.
 
+The pictures inside the phone and tablet are screen recordings of the real Pantry Week app (`pantry-week/`), unlocked locally for the shoot. The app files in the repo are unchanged.
+
 ## Story
 
-| Time | Scene | On-screen words | What moves |
-| --- | --- | --- | --- |
-| 0.00–1.85 | Hook | What's for dinner? Again? | Type is on the first frame. No fade-in. |
-| 1.67–7.45 | Pick meals | Pick the meals | Three 30-minute dinners are tapped onto the week: Lemon chicken, Green bean skillet, Tomato basil pasta. Filters shown: Quick, Vegetarian, Gluten-free, Dairy-free. |
-| 7.27–12.65 | Week | The week fills in | Monday through Sunday fill in. Thursday is marked Leftovers. Counter runs up to 7 dinners. |
-| 12.47–18.25 | Shopping list | Shop by aisle | Produce, Dairy, Pantry, and an extra Household line. Quantities are already combined. Basil is marked Have it. Copy list as text and Print stay on screen. |
-| 18.07–21.65 | Print | Print it. Works offline. | A printable week plus the aisle list. |
-| 21.47–26.00 | End card | Pantry Week / CAD$24 / Pay once. / digitalundergroundstore.com / No subscription. No account. | Holds to the last frame. |
+| Time | On-screen words | What you see |
+| --- | --- | --- |
+| 0.00–1.72 | What's for dinner? Again? | Bright hook. Full type on the first frame. |
+| 1.58–6.15 | Pick the meals | Phone. Tap Tonight on Lemon Herb Chicken, then pick Tomato Basil Pasta for Monday dinner. |
+| 6.15–10.70 | The week fills in | Tap Fill a simple week. Monday shows Overnight Oats Jars, Chickpea Grain Bowls, and Lemon Herb Chicken. |
+| 10.70–16.15 | Shop by aisle | Phone shopping list, 86 to buy, grouped by aisle. Tap Have it on green beans. |
+| 16.15–21.15 | Print it. Works offline. | Tablet. The print sheet: this week's menu and the shopping list. |
+| 21.00–26.00 | Pantry Week, CAD$24, Pay once, digitalundergroundstore.com | End card. No subscription. No account. |
 
-Captions and body type sit inside a 264px inset on the vertical cut and a 276px inset on the square cut, clear of the top and bottom Reels bars.
+Captions sit below the top 250px. The end card is centered in that safe area.
 
-## Sample week
+## Music
 
-The capture uses one sample week so the shopping list matches the meals: basil, green beans, lemons, parmesan, spaghetti, plus paper towels as an extra item. Those produce lines are the same items shown on the current vertical ad. The 36-recipe count, 30-minute dinners, diet filters, leftovers, aisle totals, Have it, copy, print, and offline use are the v2.0 feature claims.
-
-The phone app in `pantry-week/` is the encrypted buyer build (`app.bin`). This folder does not change that app. `capture/index.html` is the walkthrough that was screen-recorded.
+Feeling Happy by Ahjay Stelino. See `AUDIO-CREDITS.md`. The bed is `audio/feeling-happy-bed.m4a`.
 
 ## Rebuild
+
+`record-app.mjs` drives the local app and writes PNGs. It reads the buyer code from a file you pass on the command line and does not print it. `render.mjs` composites those PNGs into the phone and tablet frames.
 
 ```bash
 cd promo/pantry-week
 npm install puppeteer-core
-node render.mjs vertical --out=/tmp/pw-frames-vertical
-node render.mjs square --out=/tmp/pw-frames-square
+# serve pantry-week/ at http://127.0.0.1:8765
+node record-app.mjs /path/to/buyer-code.txt
+node render.mjs vertical --out=/tmp/pw-frames-vertical --encode --audio=audio/feeling-happy-bed.m4a --video=/tmp/pantry-week-promo-vertical.mp4
+node render.mjs square --out=/tmp/pw-frames-square --encode --audio=audio/feeling-happy-bed.m4a --video=/tmp/pantry-week-promo-square.mp4
 ```
-
-`render.mjs` can also encode when given `--encode --audio=audio/feeling-happy-bed.m4a --video=...`.

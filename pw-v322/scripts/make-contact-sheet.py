@@ -13,10 +13,10 @@ WEBP_WORK = ROOT / "work" / "photos" / "webp"
 WEBP_HOSTED = ROOT / "jhagho" / "photos"
 OUT = Path("/opt/cursor/artifacts/pantry-week-v330-contact-sheet.png")
 
-COLS = 12
-CELL = 160
-LABEL_H = 32
-PAD = 8
+COLS = 8
+CELL = 220
+LABEL_H = 44
+PAD = 10
 
 _spec = importlib.util.spec_from_file_location("lar", SCRIPTS / "load-all-recipes.py")
 lar = importlib.util.module_from_spec(_spec)
@@ -40,7 +40,7 @@ def main() -> None:
     sheet = Image.new("RGB", (w, h), (24, 28, 32))
     draw = ImageDraw.Draw(sheet)
     try:
-        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 10)
+        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 12)
     except OSError:
         font = ImageFont.load_default()
     missing = 0
@@ -62,7 +62,7 @@ def main() -> None:
             missing += 1
             draw.rectangle([x0 + 2, y0 + 2, x0 + CELL - 2, y0 + CELL - 2], outline=(200, 80, 80), width=2)
             draw.text((x0 + 8, y0 + 70), "MISSING", fill=(255, 120, 120), font=font)
-        label = f"{rid} {name[:24]}"
+        label = f"{rid} {name[:32]}"
         draw.text((x0 + 2, y0 + CELL + 2), label, fill=(230, 230, 230), font=font)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     sheet.save(OUT, "PNG", optimize=True)

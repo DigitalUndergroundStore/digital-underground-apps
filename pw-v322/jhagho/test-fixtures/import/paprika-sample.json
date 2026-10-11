@@ -1,0 +1,9 @@
+{
+  "name": "Fixture Paprika Pasta",
+  "servings": "2",
+  "total_time": "25 min",
+  "categories": ["Dinner", "Italian"],
+  "ingredients": "8 oz spaghetti\n2 cloves garlic\n2 tbsp olive oil",
+  "directions": "Boil pasta.\nToss with garlic oil.",
+  "photo_url": "https://example.com/pasta.jpg"
+}

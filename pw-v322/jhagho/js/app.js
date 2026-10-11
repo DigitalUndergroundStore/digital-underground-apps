@@ -1,4 +1,4 @@
-/* Pantry Week v3.2.2 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.2.3 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -16,6 +16,7 @@
     ["lunch", "Lunch"],
     ["dinner", "Dinner"],
     ["canadian", "Canadian"],
+    ["my-creation", "My creations"],
     ["snack", "Snacks"],
     ["dessert", "Desserts"],
     ["vegetarian", "Vegetarian"],
@@ -38,7 +39,8 @@
     cook: null,
     fill: null,
     importError: "",
-    tabAnim: null
+    tabAnim: null,
+    smartChef: { variation: 0, servings: 4, result: null }
   };
 
   const $ = (id) => document.getElementById(id);
@@ -607,6 +609,119 @@
     </li>`;
   }
 
+  function refreshSmartChef(force) {
+    if (!window.PW_SMART_CHEF) return;
+    if (!ui.smartChef) ui.smartChef = { variation: 0, servings: 4, result: null };
+    if (!force && ui.smartChef.result && !ui.smartChef.result.error) return;
+    ui.smartChef.result = PW_SMART_CHEF.generate(state.pantry, {
+      variation: ui.smartChef.variation,
+      servings: ui.smartChef.servings
+    });
+  }
+
+  function smartChefSectionHtml() {
+    const head = `<div class="smart-chef__head">
+        <div>
+          <h3 id="smartChefTitle">Smart Chef</h3>
+          <p class="smart-chef__deck">Builds a full recipe from your pantry — offline, no AI.</p>
+        </div>
+        <span class="smart-chef__badge">Template kitchen</span>
+      </div>`;
+    if (!state.pantry.length) {
+      return `<section class="smart-chef smart-chef--idle" aria-labelledby="smartChefTitle">${head}
+        <p class="empty">Add a few pantry items above to generate a custom recipe.</p>
+      </section>`;
+    }
+    refreshSmartChef(false);
+    const r = ui.smartChef.result;
+    if (!r || r.error) {
+      return `<section class="smart-chef smart-chef--idle" aria-labelledby="smartChefTitle">${head}
+        <p class="empty">${esc(r && r.error ? r.error : "Could not build a recipe yet.")}</p>
+      </section>`;
+    }
+    const meta = r.ingredientMeta || [];
+    const ingRows = meta.map((row) => {
+      const staple = { salt: 1, "black pepper": 1, pepper: 1, water: 1, "olive oil": 1, oil: 1, butter: 1 };
+      const miss = !row.fromPantry && !staple[PW.stapleKey(row.item)];
+      return `<li class="smart-chef__ing${miss ? " smart-chef__ing--missing" : ""}">${esc(PW.formatLine(row.qty, row.unit, row.item))}${miss ? '<span class="smart-chef__need">need</span>' : ""}</li>`;
+    }).join("");
+    const missNote = r.missing && r.missing.length
+      ? `<p class="smart-chef__missing">Not in pantry: <strong>${esc(r.missing.slice(0, 6).join(", "))}</strong></p>`
+      : `<p class="smart-chef__missing smart-chef__missing--ok">Everything listed is in your pantry (staples like salt and oil assumed).</p>`;
+    const steps = r.recipe.steps.map((step) => `<li>${esc(step)}</li>`).join("");
+    return `<section class="smart-chef" aria-labelledby="smartChefTitle">
+      ${head}
+      <div class="smart-chef__recipe">
+        <p class="smart-chef__kicker">${esc(r.templateLabel)} · ${esc(r.profileLabel)}</p>
+        <h4 class="smart-chef__name">${esc(r.recipe.name)}</h4>
+        <p class="meta">${esc(timeLabel(r.recipe))} · ${r.recipe.servings} servings</p>
+        <ul class="smart-chef__ings">${ingRows}</ul>
+        ${missNote}
+        <ol class="smart-chef__steps">${steps}</ol>
+      </div>
+      <div class="smart-chef__actions toolbar">
+        <button type="button" class="primary" data-action="smart-chef-save">Save to my recipes</button>
+        <button type="button" data-action="smart-chef-plan">Add to plan</button>
+        <button type="button" data-action="smart-chef-shop">Add missing to list</button>
+        <button type="button" data-action="smart-chef-again">Try another</button>
+      </div>
+    </section>`;
+  }
+
+  function smartChefDraftRecipe() {
+    refreshSmartChef(true);
+    const r = ui.smartChef && ui.smartChef.result;
+    if (!r || r.error) return null;
+    return PW.normalizeRecipe(PW.clone(r.recipe));
+  }
+
+  function ensureSmartChefInRecipes() {
+    const draft = smartChefDraftRecipe();
+    if (!draft) return null;
+    const rid = ui.smartChef.result.recipe.id;
+    let idx = state.recipes.findIndex((r) => r.id === rid);
+    if (idx < 0) {
+      state.recipes.push(draft);
+      return draft;
+    }
+    state.recipes[idx] = draft;
+    return state.recipes[idx];
+  }
+
+  function saveSmartChefRecipe() {
+    const draft = ensureSmartChefInRecipes();
+    if (!draft) {
+      toast("Add more pantry items for Smart Chef to work with.");
+      return null;
+    }
+    if (draft.tags.indexOf("my-creation") === -1) draft.tags.push("my-creation");
+    draft.tags = draft.tags.filter((t) => t !== "smart-chef");
+    commit();
+    toast("Saved under My creations in Recipes.");
+    return draft;
+  }
+
+  function bumpSmartChefPantry() {
+    if (ui.smartChef) ui.smartChef.result = null;
+  }
+
+  function addSmartChefMissingToList() {
+    const r = ui.smartChef && ui.smartChef.result;
+    if (!r || r.error || !r.missing || !r.missing.length) {
+      toast("Nothing extra to add — you're covered.");
+      return;
+    }
+    let added = 0;
+    r.missing.forEach((item) => {
+      const key = PW.stapleKey(item);
+      if (state.extras.some((ex) => PW.stapleKey(ex.item) === key)) return;
+      state.extras.push({ id: PW.uid("x_"), qty: null, unit: "", item: item });
+      added += 1;
+    });
+    commit();
+    toast(added ? "Added " + added + " item(s) to the shopping list." : "Those items are already on your list.");
+  }
+
   function pantryHtml() {
     const items = state.pantry.length
       ? `<ul class="pantry-list">${state.pantry.map((item) => `<li><span>${esc(cap(item.item))}</span><button type="button" class="danger" data-action="pantry-remove" data-id="${esc(item.id)}" aria-label="Remove ${esc(item.item)} from pantry">Remove</button></li>`).join("")}</ul>`
@@ -645,6 +760,7 @@
         <button type="button" data-action="staples">I have salt, pepper, and olive oil</button>
       </div>
       ${items}
+      ${smartChefSectionHtml()}
       <h3>Cook from what you have</h3>
       ${suggest}
     </section>`;
@@ -1422,6 +1538,23 @@
     } else if (action === "paste") applyPaste();
     else if (action === "copy-list") copyOrShow("Shopping list", PW.listAsText(PW.buildShoppingList(state)));
     else if (action === "share-pantry") sharePantryMeals();
+    else if (action === "smart-chef-again") {
+      ui.smartChef.variation = (ui.smartChef.variation || 0) + 1;
+      refreshSmartChef(true);
+      render();
+    } else if (action === "smart-chef-save") {
+      saveSmartChefRecipe();
+    } else if (action === "smart-chef-shop") {
+      addSmartChefMissingToList();
+    } else if (action === "smart-chef-plan") {
+      const draft = ensureSmartChefInRecipes();
+      if (!draft) {
+        toast("Add more pantry items for Smart Chef to work with.");
+        return;
+      }
+      PW.save(state);
+      openAssign(draft.id);
+    }
     else if (action === "toggle-checked") { state.hideChecked = !state.hideChecked; commit(); }
     else if (action === "uncheck") {
       if (!Object.keys(state.checked).some((key) => state.checked[key])) { toast("Nothing is checked."); return; }
@@ -1442,6 +1575,7 @@
       toast("Removed from the list.");
     } else if (action === "pantry-remove") {
       state.pantry = state.pantry.filter((entry) => entry.id !== id);
+      bumpSmartChefPantry();
       commit();
     } else if (action === "staples") {
       let added = 0;
@@ -1450,6 +1584,7 @@
         state.pantry.push({ id: PW.uid("p_"), item: item });
         added += 1;
       });
+      bumpSmartChefPantry();
       commit();
       toast(added ? "Salt, pepper, and olive oil are marked as already at home." : "Those staples are already in the pantry.");
     } else if (action === "download") downloadBackup();
@@ -1492,6 +1627,7 @@
         return;
       }
       state.pantry.push({ id: PW.uid("p_"), item: parsed.item });
+      bumpSmartChefPantry();
       commit();
       toast(cap(parsed.item) + " added to the pantry.");
     } else if (form.id === "customForm") {

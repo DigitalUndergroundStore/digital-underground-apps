@@ -1274,6 +1274,8 @@
     if (filter && filter !== "all") {
       if (filter === "quick") {
         if (!(typeof recipe.minutes === "number" && recipe.minutes <= 20)) return false;
+      } else if (filter === "my-creation") {
+        if (recipe.tags.indexOf("my-creation") === -1) return false;
       } else if (recipe.tags.indexOf(filter) === -1) {
         return false;
       }
@@ -1365,6 +1367,7 @@
     if (tag === "high-protein") return "High protein";
     if (tag === "quick") return "Quick (20 min)";
     if (tag === "canadian") return "Canadian";
+    if (tag === "my-creation") return "My creation";
     if (tag === "budget") return "Budget";
     if (tag === "moderate") return "Moderate";
     if (tag === "splurge") return "Splurge";
@@ -1377,7 +1380,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.2.2",
+    VERSION: "3.2.3",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,

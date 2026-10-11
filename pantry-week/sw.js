@@ -13,9 +13,7 @@ var FILES = [
  "icons/icon-180.png",
  "icons/icon-192.png",
  "icons/icon-512.png",
- "version.json",
- "skin/v3.css",
- "skin/v3.js"
+ "version.json"
 ];
 
 function inScope(url) {

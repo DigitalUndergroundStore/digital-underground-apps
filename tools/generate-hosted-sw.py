@@ -51,7 +51,7 @@ def extract_files(sw_path: Path, build: str) -> list[str]:
             out.append(f"app.bin?v={build}")
         else:
             out.append(f)
-    extras = ["version.json", "skin/v3.css", "skin/v3.js"]
+    extras = ["version.json"]
     for e in extras:
         if (ROOT / sw_path.parent.name / e).is_file() and e not in out:
             out.append(e)

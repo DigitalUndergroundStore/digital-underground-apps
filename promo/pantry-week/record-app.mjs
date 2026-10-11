@@ -50,13 +50,13 @@ async function unlock(page, width, height, scale) {
   await prepare(page);
 }
 
-async function shot(page, name, note) {
+async function shot(page, name, note, fullPage) {
   await page.evaluate(() => {
     const t = document.getElementById("toast");
     if (t) t.hidden = true;
   });
   const file = path.join(out, name + ".png");
-  await page.screenshot({ path: file });
+  await page.screenshot({ path: file, fullPage: !!fullPage });
   const vp = page.viewport();
   manifest.push({ name, note: note || "", w: vp.width, h: vp.height, scale: vp.deviceScaleFactor });
   console.log("saved", name);
@@ -193,7 +193,9 @@ await shot(tablet, "tablet-shop", "tablet list");
 await tablet.goto("http://127.0.0.1:8765/print/week.html", { waitUntil: "networkidle0" });
 await tablet.waitForSelector("#week", { timeout: 15000 });
 await prepare(tablet);
-await shot(tablet, "tablet-print", "tablet print");
+const printHeight = await tablet.evaluate(() => Math.max(document.body.scrollHeight, document.documentElement.scrollHeight));
+console.log("print sheet height", printHeight);
+await shot(tablet, "tablet-print", "tablet print full sheet", true);
 
 writeFileSync(path.join(out, "manifest.json"), JSON.stringify(manifest, null, 2));
 await browser.close();

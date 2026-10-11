@@ -17,7 +17,7 @@ The pictures inside the phone and tablet are screen recordings of the real Pantr
 | 16.15–21.15 | Print it. Works offline. | Tablet. The print sheet: this week's menu and the shopping list. |
 | 21.00–26.00 | Pantry Week, CAD$24, Pay once, digitalundergroundstore.com | End card. No subscription. No account. |
 
-Captions sit below the top 250px. The end card is centered in that safe area.
+Captions sit below the top 250px and above the device, so they do not cover the app. The phone and the tablet are scaled to fit inside the frame with a margin. The screenshot fills the screen with no crop. The tablet shot is the full print sheet, from the title through the shopping list.
 
 ## Music
 

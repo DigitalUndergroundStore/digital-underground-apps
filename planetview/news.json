@@ -1,12 +1,159 @@
 {
-  "updated": "2026-10-11T20:10:40.949Z",
+  "updated": "2026-10-11T23:54:44.834Z",
   "articles": [
     {
       "url": "https://www.theguardian.com/australia-news/live/2026/oct/12/labor-anthony-albanese-greens-digital-duty-of-care-coalition-angus-taylor-one-nation-ntwnfb",
-      "title": "Politics live: Greens call for US execution live stream to be blocked; Flydubai pilot’s Australia links ‘disturbing’",
-      "seendate": "20261011T200439Z",
+      "title": "Australian politics live: Ryan ‘not bothered’ by possible Frydenberg return; Lambie accuses Labor of ‘financial coercion’ over FoI",
+      "seendate": "20261011T233940Z",
       "domain": "theguardian.com",
       "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/stage/2026/oct/12/sacha-baron-cohen-quentin-tarantinos-west-end-popinjay-cavalier",
+      "title": "Sacha Baron Cohen to star in Quentin Tarantino’s West End play The Popinjay Cavalier",
+      "seendate": "20261011T232710Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/pakistani-national-killed-second-houthi-strike-riyadh-airport?traffic_source=rss",
+      "title": "Pakistani national killed in second Houthi strike on Riyadh airport",
+      "seendate": "20261011T232046Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/11/us-homeland-security-secretary-sees-no-risk-from-livestreamed-execution?traffic_source=rss",
+      "title": "US Homeland Security secretary sees no ‘risk’ from livestreamed execution",
+      "seendate": "20261011T231705Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/oct/12/uk-strengthen-cyber-defences-minister-ai-firms-safety",
+      "title": "UK to strengthen cyber defences as minister calls for AI firms to increase safety efforts",
+      "seendate": "20261011T230139Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/oct/12/failure-fit-tags-offenders-unmonitored-england-wales",
+      "title": "Failure to fit tags left 5,000 offenders unmonitored in England and Wales, report finds",
+      "seendate": "20261011T230138Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/footage-shows-moment-russian-strike-hits-ukrainian-grocery-store?traffic_source=rss",
+      "title": "Footage shows moment Russian strike hits Ukrainian grocery store",
+      "seendate": "20261011T224923Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
+      "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
+      "seendate": "20261011T224558Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/12/boy-13-charged-mt-druitt-stabbing-death-ntwnfb",
+      "title": "Boy, 13, charged with murder after man stabbed to death in Sydney’s west",
+      "seendate": "20261011T223910Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/11/saudi-coalition-retaliation-houthi-attack-riyadh-airport",
+      "title": "Riyadh airport hit again after deadly Houthi missile attack, Saudi authorities say",
+      "seendate": "20261011T222850Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/houthi-strike-riyadh-international-airport-cctv-footage?traffic_source=rss",
+      "title": "CCTV shows moment of deadly Houthi strike on Riyadh airport",
+      "seendate": "20261011T222407Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
+      "title": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent",
+      "seendate": "20261011T213640Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqy43vrk8wv8o?at_medium=RSS&at_campaign=rss",
+      "title": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
+      "seendate": "20261011T211244Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Egypt"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/waves-crash-into-homes-as-excavators-try-to-protect-california-properties?traffic_source=rss",
+      "title": "Waves crash into homes as excavators try to protect California properties",
+      "seendate": "20261011T210341Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/11/uk-greens-leader-seeks-rule-change-after-party-declares-zionism-is-racism?traffic_source=rss",
+      "title": "UK Greens leader seeks rule change after party declares Zionism is racism",
+      "seendate": "20261011T205748Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cwvgde9vrdd9o?at_medium=RSS&at_campaign=rss",
+      "title": "Watch: What's behind Trump's energy ceasefire claim?",
+      "seendate": "20261011T205502Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/11/two-killed-near-israeli-occupied-area-in-south-lebanon?traffic_source=rss",
+      "title": "Two killed near Israeli-occupied area in south Lebanon",
+      "seendate": "20261011T204645Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/deadly-air-strike-kills-dozens-at-sudan-gold-mine-near-egypt-border?traffic_source=rss",
+      "title": "Deadly air strike kills dozens at Sudan gold mine near Egypt border",
+      "seendate": "20261011T204417Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Egypt"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/how-man-city-beat-liverpool-after-guilty-verdict?traffic_source=rss",
+      "title": "How Man City beat Liverpool after guilty verdict",
+      "seendate": "20261011T204109Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/zelenskyy-welcomes-us-announced-energy-ceasefire?traffic_source=rss",
+      "title": "Zelenskyy welcomes US-announced energy ceasefire",
+      "seendate": "20261011T202846Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/syrian-families-demand-release-of-detainees-held-by-israel?traffic_source=rss",
+      "title": "Syrian families demand release of detainees held by Israel",
+      "seendate": "20261011T202419Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/pakistan-suspends-imran-khans-party-led-provincial-government?traffic_source=rss",
+      "title": "Pakistan suspends Imran Khan’s party-led provincial government",
+      "seendate": "20261011T202113Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Pakistan"
     },
     {
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/saudi-health-minister-visits-survivors-of-deadly-riyadh-airport-attack?traffic_source=rss",
@@ -52,7 +199,7 @@
     },
     {
       "url": "https://www.theguardian.com/us-news/live/2026/oct/11/donald-trump-ukraine-russia-energy-ceasefire-diesel-latest-updates",
-      "title": "Zelenskyy signals surprise at Trump claim of Russia-Ukraine ‘energy ceasefire’ but would back it if Moscow does – live updates",
+      "title": "Zelenskyy signals surprise at Trump claim of Russia-Ukraine ‘energy ceasefire’ but would back it if Moscow does – as it happened",
       "seendate": "20261011T183654Z",
       "domain": "theguardian.com",
       "sourcecountry": "Russia"
@@ -133,153 +280,6 @@
       "seendate": "20261011T171450Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/who-will-represent-us-palestinians-react-to-election-delay?traffic_source=rss",
-      "title": "‘Who will represent us?’ Palestinians react to election delay",
-      "seendate": "20261011T170919Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/11/turkiye-highway-crash-kills-11-injures-27-after-tour-bus-hits-truck?traffic_source=rss",
-      "title": "Turkiye highway crash kills 11, injures 27 after tour bus hits truck",
-      "seendate": "20261011T170609Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/11/volkswagen-boss-backs-eu-plan-to-boost-domestic-european-industry",
-      "title": "Volkswagen boss backs EU plan to bolster domestic European industry",
-      "seendate": "20261011T165301Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/11/saudi-coalition-retaliation-houthi-attack-riyadh-airport",
-      "title": "Riyadh airport hit again after deadly Houthi missile attack, Saudi authorities say",
-      "seendate": "20261011T164905Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
-      "title": "Saudi capital airport hit by second Houthi strike in two days",
-      "seendate": "20261011T164137Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/football-fans-speak-about-citys-charges-as-they-face-liverpool?traffic_source=rss",
-      "title": "Football fans speak about City’s charges as they face Liverpool",
-      "seendate": "20261011T161845Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/11/poland-possible-plot-attack-prime-minister-donald-tusk",
-      "title": "Donald Tusk says man accused of plotting to kill him detained",
-      "seendate": "20261011T160125Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/11/at-least-five-people-missing-as-flash-floods-in-nepal-sweep-away-houses?traffic_source=rss",
-      "title": "At least five people missing as flash floods in Nepal sweep away houses",
-      "seendate": "20261011T160048Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/11/trump-russia-diesel-deal-putin-little-impact-prices",
-      "title": "Trump’s deal with Putin will have little impact on US diesel prices, experts say",
-      "seendate": "20261011T155625Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/tour-bus-crash-in-turkiye-leaves-at-least-11-dead?traffic_source=rss",
-      "title": "Tour bus crash in Turkiye leaves at least 11 dead",
-      "seendate": "20261011T155229Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/11/andy-burnham-russia-interfered-brexit-vote",
-      "title": "Andy Burnham says it is clear Russia interfered in Brexit referendum",
-      "seendate": "20261011T153315Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cr4g1pwxxlq1o?at_medium=RSS&at_campaign=rss",
-      "title": "Riyadh airport attacks another dangerous moment in already tense conflict",
-      "seendate": "20261011T153232Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&at_campaign=rss",
-      "title": "Children among 139 dead after boat capsizes off Djibouti, UN says",
-      "seendate": "20261011T153223Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/power-bank-fire-forces-plane-to-emergency-land-in-india?traffic_source=rss",
-      "title": "Power bank fire forces plane to emergency land in India",
-      "seendate": "20261011T152629Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/pope-leo-xiv-to-undergo-surgery-after-lump-found-in-lung?traffic_source=rss",
-      "title": "Pope Leo XIV to undergo surgery after lump found in lung",
-      "seendate": "20261011T152450Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ckp8gyd65z2go?at_medium=RSS&at_campaign=rss",
-      "title": "Poland stabbings driven by online glorification of violence, Tusk says",
-      "seendate": "20261011T151852Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.aljazeera.com/opinions/2026/10/11/how-the-icc-can-be-saved?traffic_source=rss",
-      "title": "How the ICC can be saved",
-      "seendate": "20261011T151535Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/11/trump-says-ukraine-russia-agree-to-energy-ceasefire-2?traffic_source=rss",
-      "title": "Trump says Ukraine and Russia agree to ‘energy ceasefire’",
-      "seendate": "20261011T151027Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/11/zack-polanski-signals-green-party-overhaul-after-row-over-zionism-vote",
-      "title": "Zack Polanski signals Green party overhaul after row over Zionism vote",
-      "seendate": "20261011T150029Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/11/pope-leo-to-undergo-surgery-to-remove-lung-nodule?traffic_source=rss",
-      "title": "Pope Leo to undergo surgery to remove lung nodule",
-      "seendate": "20261011T145938Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/11/ice-agent-strikes-man-with-car-texas",
-      "title": "ICE agent strikes man with vehicle during pursuit in Texas, officials say",
-      "seendate": "20261011T145452Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
     }
   ]
 }

@@ -1,6 +1,97 @@
 {
-  "updated": "2026-10-10T23:27:10.546Z",
+  "updated": "2026-10-11T02:07:45.516Z",
   "articles": [
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/10-10-clip-trump-weighs-joining-saudi-strikes-on-houthis-us?traffic_source=rss",
+      "title": "Trump ‘may’ join Saudi strikes on Houthis after Riyadh airport attack",
+      "seendate": "20261011T015902Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
+      "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
+      "seendate": "20261011T014129Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/11/man-dies-after-entering-tiger-enclosure-at-england-wildlife-park?traffic_source=rss",
+      "title": "Man dies after entering tiger enclosure at England wildlife park",
+      "seendate": "20261011T011618Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-sv-global-protests-for-gaza-solidarity-uk?traffic_source=rss",
+      "title": "Global pro-Palestinian protests one year after Gaza ‘ceasefire’",
+      "seendate": "20261011T011110Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss",
+      "title": "Twelve killed, more than 300 injured in Riyadh airport attack",
+      "seendate": "20261011T010207Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/11/ebola-spreads-in-eastern-drc-as-kenya-confirms-imported-case?traffic_source=rss",
+      "title": "Ebola spreads in eastern DRC as Kenya confirms imported case",
+      "seendate": "20261011T002350Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Kenya"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss",
+      "title": "Twelve killed in attack on airport in Saudi capital Riyadh",
+      "seendate": "20261011T002152Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/10/douglas-georgia-shooting-deaths",
+      "title": "Five people shot and killed in apparent murder-suicide, Georgia police say",
+      "seendate": "20261011T000155Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/11/iran-war-live-12-killed-in-riyadh-us-weighs-joining-fight-against-houthis?traffic_source=rss",
+      "title": "Iran war live: 12 killed in Riyadh, US weighs joining fight against Houthis",
+      "seendate": "20261011T000013Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/10/yemen-government-allied-forces-recapture-bab-al-mandab-strait-houthis-taiz",
+      "title": "Twelve killed and hundreds injured in Houthi attack at Riyadh airport",
+      "seendate": "20261010T233727Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cjzxl56q30k7o?at_medium=RSS&at_campaign=rss",
+      "title": "Inside the room: What it was like to be with Blackpink's Lisa as race scandal erupted",
+      "seendate": "20261010T233135Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/10/nine-people-mass-shooting-pennsylvania",
+      "title": "Nine people, including children, dead after mass shooting in Pennsylvania",
+      "seendate": "20261010T232452Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/10/isaias-weakens-to-post-tropical-cyclone",
+      "title": "Four dead as Isaias weakens to post-tropical cyclone after striking Florida panhandle",
+      "seendate": "20261010T232032Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmje5x80yg70o?at_medium=RSS&at_campaign=rss",
       "title": "Four dead and thousands without power after Hurricane Isaias lashes US",
@@ -14,13 +105,6 @@
       "seendate": "20261010T224308Z",
       "domain": "aljazeera.com",
       "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss",
-      "title": "Twelve killed in attack on airport in Saudi capital Riyadh",
-      "seendate": "20261010T224056Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Saudi Arabia"
     },
     {
       "url": "https://www.aljazeera.com/news/2026/10/10/who-says-no-plague-case-registered-after-russian-lab-workers-death?traffic_source=rss",
@@ -42,6 +126,13 @@
       "seendate": "20261010T221805Z",
       "domain": "theguardian.com",
       "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c680zlny0gk4o?at_medium=RSS&at_campaign=rss",
+      "title": "Young men live in fear of being snatched off the streets and sold to Myanmar's army",
+      "seendate": "20261010T221308Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.aljazeera.com/news/2026/10/10/yemeni-governments-military-says-its-forces-advancing-against-houthis?traffic_source=rss",
@@ -135,13 +226,6 @@
       "sourcecountry": "Israel"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/oct/10/philadelphia-police-officer-killed",
-      "title": "Man with gun kills one Philadelphia police officer and injures another",
-      "seendate": "20261010T201234Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
       "url": "https://www.aljazeera.com/video/inside-story/2026/10/10/why-is-the-trump-administration-trying-to-dismantle-the-icc?traffic_source=rss",
       "title": "Why is the Trump administration trying to dismantle the ICC?",
       "seendate": "20261010T195918Z",
@@ -177,13 +261,6 @@
       "sourcecountry": "Ukraine"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
-      "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
-      "seendate": "20261010T192828Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Russia"
-    },
-    {
       "url": "https://www.aljazeera.com/sports/2026/10/10/barcelona-beat-getafe-as-gordon-scores-his-first-goal?traffic_source=rss",
       "title": "Barcelona beat Getafe as Gordon scores his first goal",
       "seendate": "20261010T192622Z",
@@ -201,83 +278,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/10/ronaldo-suspended-by-portugal-fa-after-leaving-camp-and-criticizing-coach?traffic_source=rss",
       "title": "Ronaldo suspended by Portugal FA after leaving camp and criticising coach",
       "seendate": "20261010T192326Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/10/isaias-weakens-to-post-tropical-cyclone",
-      "title": "Four dead as Isaias weakens to post-tropical cyclone after striking Florida panhandle",
-      "seendate": "20261010T190854Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/10/california-man-72-shoots-ice-officer-fresno-off-duty",
-      "title": "US man shoots off-duty ICE agent who allegedly attacked him and daughter",
-      "seendate": "20261010T190330Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/oct/11/cpac-conference-pauline-hanson-angus-taylor-one-nation-liberals-cooperation-ntwnfb",
-      "title": "Pauline Hanson seems more and more like the de facto opposition leader. At CPAC, Angus Taylor warmed the seat for her",
-      "seendate": "20261010T190009Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/oct/11/universal-childcare-cost-family-planning-politics",
-      "title": "Albanese wants universal childcare to be his legacy. But paying for it isn’t as easy as ABC",
-      "seendate": "20261010T190007Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/oct/11/falling-international-student-numbers-australian-universities",
-      "title": "Falling international student numbers create ‘massive problems’ for Australian universities, expert warns",
-      "seendate": "20261010T190005Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/trump-calls-for-new-president-in-ukraine?traffic_source=rss",
-      "title": "Trump calls for new president in Ukraine",
-      "seendate": "20261010T185023Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/palestinians-still-being-killed-in-gaza-one-year-into?traffic_source=rss",
-      "title": "Palestinians still being killed in Gaza, one year into ‘ceasefire’",
-      "seendate": "20261010T183801Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss",
-      "title": "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza",
-      "seendate": "20261010T182613Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Germany"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c3y0e871rk4vo?at_medium=RSS&at_campaign=rss",
-      "title": "Expedition hopes to find aviator Amelia Earhart's plane on remote island",
-      "seendate": "20261010T182229Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
-      "title": "Attack on Riyadh airport kills 12, injures over 300, Saudi Arabia says",
-      "seendate": "20261010T180846Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/10/nine-killed-in-shooting-in-us-state-of-pennsylvania-including-two-children?traffic_source=rss",
-      "title": "Nine killed in shooting in US state of Pennsylvania, including two children",
-      "seendate": "20261010T174845Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     }

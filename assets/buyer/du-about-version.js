@@ -14,9 +14,7 @@
   }
 
   function tryInject() {
-    var targets = document.querySelectorAll(
-      "[data-settings], #settings, .settings, [aria-label*='Settings' i], footer, .about"
-    );
+    var targets = document.querySelectorAll("[data-du-settings], [data-settings], #settings, .settings");
     var r = row();
     if (targets.length) {
       targets[targets.length - 1].appendChild(r);

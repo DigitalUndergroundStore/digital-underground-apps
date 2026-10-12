@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" class="motion">
+<head>
+<meta charset="utf-8" />
+<title>Pantry Week promo</title>
+<style>
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+:root {
+  --paper: #f6f1e7;
+  --ink: #241c14;
+  --sage: #3e6b2c;
+  --safe: 270px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); }
+body {
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  font-family: Inter, "Noto Sans", sans-serif;
+  color: var(--ink);
+}
+html.square body { height: 1080px; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
+html.square #stage { height: 1080px; }
+
+#backdrop { display: none; }
+html.motion #backdrop {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: #e7d3b4;
+}
+html.motion #stage { background: transparent; }
+.plate {
+  position: absolute;
+  left: -18%;
+  top: -18%;
+  width: 136%;
+  height: 136%;
+  object-fit: cover;
+  filter: blur(22px) saturate(1.25);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.wash {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    radial-gradient(ellipse at 50% 28%, rgba(255, 248, 236, 0.72) 0%, rgba(255, 248, 236, 0.28) 36%, rgba(255, 244, 226, 0.08) 68%),
+    linear-gradient(180deg, rgba(255, 248, 236, 0.34) 0%, rgba(246, 232, 210, 0.18) 46%, rgba(255, 244, 226, 0.32) 100%);
+}
+.orb {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.55;
+}
+.orb.herb { width: 180px; height: 180px; background: #7ea35a; left: -40px; top: 18%; }
+.orb.tomato { width: 120px; height: 120px; background: #d4653a; right: -20px; top: 62%; }
+.orb.yolk { width: 90px; height: 90px; background: #e7b23c; left: 12%; bottom: 8%; }
+.poster, .cap, .slot { z-index: 3; }
+
+.poster {
+  position: absolute;
+  left: 72px;
+  right: 72px;
+  top: var(--safe);
+  bottom: var(--safe);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+}
+html.square .poster { left: 48px; right: 48px; }
+.eyebrow {
+  margin: 0 0 16px;
+  font-size: 26px;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.display {
+  margin: 0;
+  font-family: Fraunces, "Liberation Serif", Georgia, serif;
+  font-weight: 650;
+  font-variation-settings: "opsz" 144, "wght" 650, "SOFT" 40, "WONK" 0;
+  font-size: 124px;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+}
+.again {
+  margin: 22px 0 0;
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 560;
+  font-size: 68px;
+  color: var(--sage);
+}
+.price {
+  margin: 18px 0 0;
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 700;
+  font-size: 120px;
+  letter-spacing: -0.04em;
+  color: var(--sage);
+  line-height: 0.95;
+}
+.pay { margin: 6px 0 0; font-size: 46px; font-weight: 800; }
+.url { margin: 18px 0 0; font-size: 32px; font-weight: 750; }
+.fine { margin: 10px 0 0; font-size: 26px; font-weight: 650; color: #3f342b; }
+html.motion .eyebrow,
+html.motion .display,
+html.motion .again,
+html.motion .price,
+html.motion .pay,
+html.motion .url,
+html.motion .fine {
+  text-shadow: 0 1px 0 rgba(255, 248, 236, 0.85), 0 0 22px rgba(255, 248, 236, 0.95);
+}
+
+.cap {
+  position: absolute;
+  top: 272px;
+  left: 48px;
+  right: 48px;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.cap span {
+  background: var(--sage);
+  color: #fff;
+  font-size: 42px;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  padding: 16px 28px 18px;
+  border-radius: 999px;
+}
+
+.slot {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 380px;
+  bottom: 48px;
+  opacity: 0;
+}
+.device {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0 8px;
+  transform-origin: center center;
+}
+.bezel {
+  position: relative;
+  background: linear-gradient(165deg, #4a4a4e 0%, #1a1a1c 42%, #0c0c0e 100%);
+  box-shadow:
+    0 16px 36px rgba(36, 28, 20, 0.22),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.16);
+}
+.phone .bezel {
+  border-radius: 46px;
+  padding: 22px 14px 18px;
+}
+.tablet .bezel {
+  border-radius: 28px;
+  padding: 18px 16px 16px;
+}
+.side {
+  position: absolute;
+  width: 4px;
+  border-radius: 3px;
+  background: #2c2c2e;
+}
+.phone .side.left { left: 2px; top: 150px; height: 46px; }
+.phone .side.right { right: 2px; top: 190px; height: 78px; }
+.tablet .side { display: none; }
+.speaker {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 7px;
+  border-radius: 8px;
+  background: #070708;
+  z-index: 2;
+}
+.phone .speaker { width: 84px; }
+.tablet .speaker { width: 10px; height: 10px; border-radius: 50%; top: 7px; }
+.screen {
+  position: relative;
+  overflow: hidden;
+  background: #2a2218;
+  border-radius: 32px;
+  line-height: 0;
+}
+.tablet .screen { border-radius: 16px; background: #f7f1e6; }
+.track { display: flex; height: 100%; width: 100%; }
+.track img { height: 100%; flex: none; display: block; object-fit: fill; }
+.finger {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  margin: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.42);
+  border: 4px solid #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  z-index: 3;
+}
+.finger:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  border-radius: 50%;
+  background: #fff;
+}
+.tablet .finger {
+  background: rgba(62, 107, 44, 0.3);
+  border-color: #3e6b2c;
+}
+.tablet .finger:after { background: #3e6b2c; }
+
+html.square .display { font-size: 78px; }
+html.square .again { font-size: 46px; margin-top: 10px; }
+html.square .eyebrow { font-size: 18px; margin-bottom: 8px; }
+html.square .price { font-size: 72px; }
+html.square .pay { font-size: 32px; }
+html.square .url { font-size: 22px; }
+html.square .fine { font-size: 18px; }
+html.square .cap { top: 264px; }
+html.square .cap span { font-size: 28px; padding: 10px 16px 12px; }
+html.square .slot { left: 28px; right: 28px; top: 328px; bottom: 28px; }
+html.square .finger { width: 48px; height: 48px; }
+#preload { position: absolute; width: 0; height: 0; overflow: hidden; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="backdrop" aria-hidden="true">
+    <img class="plate" id="plateA" src="../bg/r8.webp" alt="" />
+    <img class="plate" id="plateB" src="../bg/r1.webp" alt="" />
+    <img class="plate" id="plateC" src="../bg/r3.webp" alt="" />
+    <span class="orb herb" id="orbHerb"></span>
+    <span class="orb tomato" id="orbTomato"></span>
+    <span class="orb yolk" id="orbYolk"></span>
+    <div class="wash"></div>
+  </div>
+  <div class="poster" id="hook">
+    <p class="eyebrow">Every night</p>
+    <h1 class="display">What's for<br>dinner?</h1>
+    <p class="again">Again?</p>
+  </div>
+  <div class="poster" id="cta">
+    <p class="eyebrow">Offline meal planner</p>
+    <h1 class="display">Pantry Week</h1>
+    <p class="price">CAD$24</p>
+    <p class="pay">Pay once.</p>
+    <p class="url">digitalundergroundstore.com</p>
+    <p class="fine">No subscription. No account.</p>
+  </div>
+  <div class="cap" id="cap"><span id="capText">Pick the meals</span></div>
+  <div class="slot" id="slot">
+    <div class="device phone" id="device">
+      <span class="side left"></span>
+      <span class="side right"></span>
+      <div class="bezel">
+        <div class="speaker"></div>
+        <div class="screen" id="screen">
+          <div class="track" id="track">
+            <img id="shotImg" alt="" />
+            <img id="shotImgB" alt="" />
+          </div>
+          <div class="finger" id="finger"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="preload">
+    <img data-shot="phone-recipes" src="../footage/phone-recipes.png" alt="" />
+    <img data-shot="phone-canadian" src="../footage/phone-canadian.png" alt="" />
+    <img data-shot="phone-fill-choice" src="../footage/phone-fill-choice.png" alt="" />
+    <img data-shot="phone-week" src="../footage/phone-week.png" alt="" />
+    <img data-shot="phone-week-b" src="../footage/phone-week-b.png" alt="" />
+    <img data-shot="phone-shop" src="../footage/phone-shop.png" alt="" />
+    <img data-shot="phone-shop-before" src="../footage/phone-shop-before.png" alt="" />
+    <img data-shot="phone-shop-have" src="../footage/phone-shop-have.png" alt="" />
+    <img data-shot="phone-chef" src="../footage/phone-chef.png" alt="" />
+    <img data-shot="phone-share" src="../footage/phone-share.png" alt="" />
+    <img data-shot="phone-swipe-plan" src="../footage/phone-swipe-plan.png" alt="" />
+    <img data-shot="phone-swipe-recipes" src="../footage/phone-swipe-recipes.png" alt="" />
+    <img data-shot="tablet-recipes" src="../footage/tablet-recipes.png" alt="" />
+    <img data-shot="phone-import-link" src="../footage/phone-import-link.png" alt="" />
+    <img data-shot="phone-import-preview" src="../footage/phone-import-preview.png" alt="" />
+    <img data-shot="phone-import-saved" src="../footage/phone-import-saved.png" alt="" />
+  </div>
+</div>
+<script>
+(function () {
+  function clamp(x) { return Math.max(0, Math.min(1, x)); }
+  function fade(t, a, b, fadeIn, fadeOut) {
+    if (t < a || t > b) return 0;
+    var edge = 0.24;
+    var o = 1;
+    if (fadeIn && t < a + edge) o = (t - a) / edge;
+    if (fadeOut && t > b - edge) o = Math.min(o, (b - t) / edge);
+    return clamp(o);
+  }
+  function lerp(a, b, p) { return a + (b - a) * p; }
+
+  var beats = [
+    { a: 1.38, b: 3.12, shot: "phone-recipes", cap: "248 recipes",
+      tap: { t: 2.25, x: 0.19, y: 0.366 } },
+    { a: 2.88, b: 4.62, shot: "phone-canadian", cap: "Canadian meals" },
+    { a: 4.38, b: 6.12, shot: "phone-fill-choice", cap: "Fill a simple week",
+      tap: { t: 5.25, x: 0.5, y: 0.798 } },
+    { a: 5.88, b: 7.62, shot: "phone-week", cap: "The week fills in" },
+    { a: 7.38, b: 9.12, shot: "phone-shop-before", cap: "Shop by aisle",
+      tap: { t: 8.25, x: 0.865, y: 0.338 } },
+    { a: 8.88, b: 10.62, shot: "phone-shop-have", cap: "Have it" },
+    { a: 10.38, b: 11.37, shot: "phone-chef", cap: "Smart Chef" },
+    { a: 11.13, b: 12.12, shot: "phone-share", cap: "Cook from what you have",
+      tap: { t: 11.40, x: 0.5, y: 0.826 } },
+    { a: 11.88, b: 13.62, shot: "phone-swipe-plan", swipeTo: "phone-swipe-recipes", cap: "Swipe between tabs" },
+    { a: 13.38, b: 15.12, shot: "tablet-recipes", cap: "248 recipes", device: "tablet" },
+    { a: 14.88, b: 16.62, shot: "phone-import-link", cap: "Switching apps? Bring your recipes.",
+      tap: { t: 15.75, x: 0.5, y: 0.504 } },
+    { a: 16.38, b: 18.12, shot: "phone-import-preview", cap: "Switching apps? Bring your recipes.",
+      tap: { t: 17.25, x: 0.5, y: 0.621 } },
+    { a: 17.88, b: 20.37, shot: "phone-import-saved", cap: "Switching apps? Bring your recipes." }
+  ];
+
+  var shotImg = document.getElementById("shotImg");
+  var shotImgB = document.getElementById("shotImgB");
+  var track = document.getElementById("track");
+  var finger = document.getElementById("finger");
+  var device = document.getElementById("device");
+  var screen = document.getElementById("screen");
+  var slot = document.getElementById("slot");
+
+  function showShot(beat, t) {
+    var p = clamp((t - beat.a) / (beat.b - beat.a));
+    var eased = p * p * (3 - 2 * p);
+    var tablet = beat.device === "tablet";
+    device.className = "device " + (tablet ? "tablet" : "phone");
+    var pre = document.querySelector('#preload img[data-shot="' + beat.shot + '"]');
+    var aspect = pre.naturalWidth / pre.naturalHeight;
+    var base = tablet ? 1100 : 390;
+    screen.style.width = base + "px";
+    screen.style.height = (base / aspect) + "px";
+    var src = "../footage/" + beat.shot + ".png";
+    if (shotImg.getAttribute("src") !== src) shotImg.src = src;
+    shotImg.style.position = "relative";
+    shotImg.style.inset = "auto";
+    shotImg.style.height = "100%";
+    shotImg.style.opacity = "1";
+    shotImgB.style.position = "relative";
+    shotImgB.style.inset = "auto";
+    shotImgB.style.height = "100%";
+    shotImgB.style.opacity = "1";
+    track.style.height = "100%";
+    if (beat.drift) {
+      var driftSrc = "../footage/" + beat.drift + ".png";
+      if (shotImgB.getAttribute("src") !== driftSrc) shotImgB.src = driftSrc;
+      shotImgB.style.display = "block";
+      shotImg.style.position = "absolute";
+      shotImgB.style.position = "absolute";
+      shotImg.style.inset = "0";
+      shotImgB.style.inset = "0";
+      shotImg.style.width = "100%";
+      shotImgB.style.width = "100%";
+      track.style.width = "100%";
+      track.style.transform = "none";
+      shotImgB.style.opacity = String(eased);
+      finger.style.opacity = "0";
+    } else if (beat.swipeTo) {
+      var srcB = "../footage/" + beat.swipeTo + ".png";
+      if (shotImgB.getAttribute("src") !== srcB) shotImgB.src = srcB;
+      shotImgB.style.display = "block";
+      shotImg.style.width = "50%";
+      shotImgB.style.width = "50%";
+      track.style.width = "200%";
+      var start = beat.a + 0.4;
+      var end = beat.b - 0.45;
+      var u = t <= start ? 0 : t >= end ? 1 : (t - start) / (end - start);
+      u = u * u * (3 - 2 * u);
+      track.style.transform = "translateX(" + (-u * 50) + "%)";
+      finger.style.opacity = u > 0 && u < 1 ? "1" : "0";
+      finger.style.left = ((0.72 - u * 0.4) * 100) + "%";
+      finger.style.top = "58%";
+      finger.style.transform = "translate(-50%,-50%) scale(0.9)";
+    } else {
+      shotImgB.style.display = "none";
+      shotImg.style.width = "100%";
+      track.style.width = "100%";
+      track.style.transform = "none";
+      var tap = beat.tap;
+      if (tap && t >= tap.t && t < tap.t + 0.42) {
+        var k = clamp((t - tap.t) / 0.42);
+        var tapScale = k < 0.35 ? lerp(1.35, 0.82, k / 0.35) : lerp(0.82, 1.05, (k - 0.35) / 0.65);
+        finger.style.opacity = String(k < 0.8 ? 1 : 1 - (k - 0.8) / 0.2);
+        finger.style.left = (tap.x * 100) + "%";
+        finger.style.top = (tap.y * 100) + "%";
+        finger.style.transform = "translate(-50%,-50%) scale(" + tapScale + ")";
+      } else {
+        finger.style.opacity = "0";
+      }
+    }
+    var gentle = lerp(0.985, 1, eased);
+    var dw = device.offsetWidth;
+    var dh = device.offsetHeight;
+    var scale = Math.min(slot.clientWidth / dw, slot.clientHeight / dh) * gentle;
+    device.style.transform = "translate(-50%, -50%) scale(" + scale + ")";
+  }
+
+  function movePlate(el, t, start, end, fromX, toX, fromY, toY) {
+    var fadeIn = 1.8;
+    var o = 0;
+    if (t >= start && t <= end) {
+      o = 1;
+      if (start > 0 && t < start + fadeIn) o = (t - start) / fadeIn;
+      if (end < 25 && t > end - fadeIn) o = Math.min(o, (end - t) / fadeIn);
+    }
+    var p = clamp((t - start) / (end - start));
+    var s = lerp(1.08, 1.18, p);
+    el.style.opacity = String(clamp(o));
+    el.style.transform = "translate(" + lerp(fromX, toX, p) + "%, " + lerp(fromY, toY, p) + "%) scale(" + s + ")";
+  }
+
+  function moveBackdrop(t) {
+    if (!document.documentElement.classList.contains("motion")) return;
+    movePlate(document.getElementById("plateA"), t, 0, 11.5, -2, 3, 1, -2);
+    movePlate(document.getElementById("plateB"), t, 8.2, 19.4, 2, -3, -1, 2);
+    movePlate(document.getElementById("plateC"), t, 16.2, 25, -1, 2, 2, -2);
+    var drift = Math.sin(t * 0.45);
+    document.getElementById("orbHerb").style.transform = "translate(" + (drift * 18) + "px, " + (t * 4) + "px)";
+    document.getElementById("orbTomato").style.transform = "translate(" + (-drift * 14) + "px, " + (-t * 3) + "px)";
+    document.getElementById("orbYolk").style.transform = "translate(" + (drift * 10) + "px, " + (Math.cos(t * 0.4) * 12) + "px)";
+  }
+
+  window.renderAt = function (t) {
+    moveBackdrop(t);
+    document.getElementById("hook").style.opacity = fade(t, 0, 1.62, false, true);
+    document.getElementById("cta").style.opacity = fade(t, 20.13, 25.0, true, false);
+    var rig = 0;
+    var cap = "";
+    var active = null;
+    beats.forEach(function (beat) {
+      var o = fade(t, beat.a, beat.b, true, true);
+      if (o > rig) { rig = o; active = beat; cap = beat.cap; }
+    });
+    slot.style.opacity = rig;
+    var capEl = document.getElementById("cap");
+    capEl.style.opacity = rig > 0.4 && t < 20.2 ? String(Math.min(1, rig)) : "0";
+    document.getElementById("capText").textContent = cap || "Pick the meals";
+    if (active && rig > 0) showShot(active, t);
+  };
+
+  window.renderAt(0);
+})();
+</script>
+</body>
+</html>

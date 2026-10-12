@@ -236,6 +236,63 @@ def first_image_file(wikitext: str) -> str | None:
     return None
 
 
+def wikibooks_page_image(title: str) -> str | None:
+    if not title.startswith("Cookbook:"):
+        title = "Cookbook:" + title.replace(" ", "_")
+    data = api(
+        API,
+        {
+            "action": "query",
+            "titles": title,
+            "prop": "pageimages",
+            "piprop": "original",
+        },
+    )
+    pages = data.get("query", {}).get("pages", {})
+    page = next(iter(pages.values()), {})
+    if page.get("missing"):
+        return None
+    return (page.get("original") or {}).get("source")
+
+
+def commons_search_image(name: str) -> str | None:
+    query = f"{name} food dish"
+    data = api(
+        COMMONS_API,
+        {
+            "action": "query",
+            "generator": "search",
+            "gsrsearch": f"filetype:bitmap {query}",
+            "gsrnamespace": 6,
+            "gsrlimit": 8,
+            "prop": "imageinfo",
+            "iiprop": "url|extmetadata",
+        },
+    )
+    for page in (data.get("query") or {}).get("pages", {}).values():
+        info = (page.get("imageinfo") or [{}])[0]
+        meta = info.get("extmetadata") or {}
+        lic = (meta.get("LicenseShortName") or {}).get("value", "")
+        if not ALLOWED_LICENSE.search(lic):
+            continue
+        url = info.get("url")
+        if url and url.startswith("https://"):
+            return url
+    return None
+
+
+def resolve_image_url(title: str, name: str, wikitext: str) -> str | None:
+    file_title = first_image_file(wikitext)
+    if file_title:
+        url, _ = commons_image_ok(file_title)
+        if url:
+            return url
+    url = wikibooks_page_image(title)
+    if url and url.startswith("https://"):
+        return url
+    return commons_search_image(name)
+
+
 def commons_image_ok(file_title: str) -> tuple[str | None, str | None]:
     if not file_title.startswith("File:"):
         file_title = "File:" + file_title
@@ -382,10 +439,7 @@ def main() -> None:
                 "sourceName": "Wikibooks Cookbook",
                 "sourceLicense": "CC BY-SA 4.0",
             }
-            file_title = first_image_file(wikitext)
-            img_url = None
-            if file_title:
-                img_url, _ = commons_image_ok(file_title)
+            img_url = resolve_image_url(title, name, wikitext)
             if not img_url:
                 continue
             dest = args.photos / f"{rid}.webp"

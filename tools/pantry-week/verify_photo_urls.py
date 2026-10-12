@@ -21,6 +21,7 @@ ORDER = [
     "recipes-batch3.js",
     "recipes-batch4.js",
     "recipes-batch5.js",
+    "recipes-batch6.js",
 ]
 
 

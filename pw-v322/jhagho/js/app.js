@@ -50,11 +50,22 @@
     import: null,
     tabAnim: null,
     smartChef: { variation: 0, servings: 4, result: null, sessionHashes: [] },
-    pantryCook: { key: "", rows: [], shown: 25 }
+    pantryCook: {
+      key: "",
+      rows: [],
+      shown: 8,
+      expanded: false,
+      flash: null,
+      flashTimer: null,
+      newIds: null,
+      spotlightItem: null,
+      smartChefByFp: {},
+      _prevIds: null
+    }
   };
 
-  const PANTRY_COOK_PAGE = 25;
-  let pantryCookObserver = null;
+  const PANTRY_COOK_TOP = 8;
+  let pantryCookFlashTimer = null;
 
   const $ = (id) => document.getElementById(id);
 
@@ -491,7 +502,6 @@
     else if ($("fill")) $("fill").hidden = true;
     setInert();
     syncBackdrop();
-    if (ui.view === "pantry") setupPantryCookScroll();
   }
 
   function pantryCookCacheKey() {
@@ -507,14 +517,113 @@
 
   function invalidatePantryCookCache() {
     ui.pantryCook.key = "";
+    if (window.PW_PANTRY_NORM && PW_PANTRY_NORM.invalidatePantryCaches) {
+      PW_PANTRY_NORM.invalidatePantryCaches();
+    }
+  }
+
+  function interleaveSmartChefIdeas(libraryRows) {
+    const out = libraryRows.slice();
+    if (!window.PW_SMART_CHEF || !state.pantry.length) return out;
+    ui.pantryCook.smartChefByFp = {};
+    const scRows = [];
+    const variations = [0, 5];
+    const existing = state.recipes.filter((x) => !(x.tags || []).includes("smart-chef"));
+    variations.forEach((variation) => {
+      const result = PW_SMART_CHEF.generate(state.pantry, {
+        variation,
+        servings: 4,
+        existingRecipes: existing,
+        rejectHashes: ui.smartChef.sessionHashes || []
+      });
+      if (result.error || !result.fingerprint) return;
+      const row = PW_PANTRY_MATCH.rowFromSmartChefResult(result, state.pantry, state.assumeStaples);
+      if (!row || row.matched < 1) return;
+      if (scRows.some((r) => r.smartChefFp === row.smartChefFp)) return;
+      ui.pantryCook.smartChefByFp[row.smartChefFp] = result;
+      scRows.push(row);
+    });
+    if (!scRows.length) return out;
+    const slots = [1, 4];
+    scRows.slice(0, 2).forEach((row, i) => {
+      const at = slots[i];
+      if (at <= out.length) out.splice(at, 0, row);
+      else out.push(row);
+    });
+    return out;
+  }
+
+  function finishPantryCookReaction() {
+    const pending = ui.pantryCook._prevIds;
+    if (!pending) return;
+    const prevIds = pending;
+    ui.pantryCook._prevIds = null;
+    invalidatePantryCookCache();
+    let rows = PW.suggestRecipes(state.recipes, state.pantry, state.assumeStaples);
+    if (ui.pantryCook.spotlightItem && PW_PANTRY_MATCH.applySpotlight) {
+      rows = PW_PANTRY_MATCH.applySpotlight(
+        rows,
+        ui.pantryCook.spotlightItem,
+        state.pantry,
+        state.assumeStaples,
+        (id) => PW.recipeById(state, id)
+      );
+    }
+    rows = interleaveSmartChefIdeas(rows);
+    ui.pantryCook.key = pantryCookCacheKey();
+    ui.pantryCook.rows = rows;
+    if (!ui.pantryCook.expanded) ui.pantryCook.shown = PANTRY_COOK_TOP;
+
+    const libIds = rows.filter((r) => r.kind !== "smart-chef").map((r) => r.id);
+    const newIds = new Set(libIds.filter((id) => !prevIds.has(id)));
+    const n = newIds.size;
+    if (n > 0) {
+      ui.pantryCook.newIds = newIds;
+      const word = n === 1 ? "match" : "matches";
+      ui.pantryCook.flash = `Updated — ${n} new ${word}`;
+      if (pantryCookFlashTimer) clearTimeout(pantryCookFlashTimer);
+      pantryCookFlashTimer = setTimeout(() => {
+        ui.pantryCook.flash = null;
+        ui.pantryCook.newIds = null;
+        pantryCookFlashTimer = null;
+        if (ui.view === "pantry") renderPantrySuggestList();
+      }, 2000);
+    } else {
+      ui.pantryCook.flash = "Updated";
+      if (pantryCookFlashTimer) clearTimeout(pantryCookFlashTimer);
+      pantryCookFlashTimer = setTimeout(() => {
+        ui.pantryCook.flash = null;
+        pantryCookFlashTimer = null;
+        if (ui.view === "pantry") renderPantrySuggestList();
+      }, 1600);
+    }
+  }
+
+  function preparePantryCookReaction(itemLabel, added) {
+    ensurePantryCookRows();
+    ui.pantryCook._prevIds = new Set(
+      (ui.pantryCook.rows || []).filter((r) => r.kind !== "smart-chef").map((r) => r.id)
+    );
+    ui.pantryCook.spotlightItem = added && itemLabel ? itemLabel : null;
+    ui.pantryCook.expanded = false;
   }
 
   function ensurePantryCookRows() {
     const key = pantryCookCacheKey();
     if (ui.pantryCook.key !== key) {
       ui.pantryCook.key = key;
-      ui.pantryCook.rows = PW.suggestRecipes(state.recipes, state.pantry, state.assumeStaples);
-      ui.pantryCook.shown = PANTRY_COOK_PAGE;
+      let rows = PW.suggestRecipes(state.recipes, state.pantry, state.assumeStaples);
+      if (ui.pantryCook.spotlightItem && PW_PANTRY_MATCH.applySpotlight) {
+        rows = PW_PANTRY_MATCH.applySpotlight(
+          rows,
+          ui.pantryCook.spotlightItem,
+          state.pantry,
+          state.assumeStaples,
+          (id) => PW.recipeById(state, id)
+        );
+      }
+      ui.pantryCook.rows = interleaveSmartChefIdeas(rows);
+      if (!ui.pantryCook.expanded) ui.pantryCook.shown = PANTRY_COOK_TOP;
     }
     return ui.pantryCook.rows;
   }
@@ -525,19 +634,40 @@
     return "suggest-badge suggest-badge--miss23";
   }
 
+  function pantryChipHtml(label, kind) {
+    const cls = kind === "miss" ? "pantry-chip pantry-chip--miss" : "pantry-chip pantry-chip--have";
+    return `<span class="${cls}">${esc(label)}</span>`;
+  }
+
   function pantrySuggestArticleHtml(idea) {
-    const recipe = PW.recipeById(state, idea.id);
+    const isSc = idea.kind === "smart-chef";
+    const recipe = isSc ? (idea.smartChefResult && idea.smartChefResult.recipe) : PW.recipeById(state, idea.id);
     const badge = `<span class="${pantrySuggestBadgeClass(idea.tier)}">${esc(idea.badge)}</span>`;
-    const miss = idea.missingItems && idea.missingItems.length
-      ? ` · need ${esc(idea.missingItems.slice(0, 3).join(", "))}`
+    const scBadge = isSc ? `<span class="suggest-badge suggest-badge--chef">Smart Chef</span>` : "";
+    const spotlight = idea.spotlight && idea.spotlightLabel
+      ? `<p class="pantry-spotlight">Uses your ${esc(cap(idea.spotlightLabel))}</p>`
       : "";
-    return `<article data-pantry-suggest-id="${esc(idea.id)}">
-      <div class="suggest-head">${badge}<h3>${esc(idea.name)}</h3></div>
-      <p class="meta">Uses ${idea.matched} pantry item${idea.matched === 1 ? "" : "s"}${idea.tier !== "ready" ? miss : ""}${recipe && recipe.minutes != null ? " · " + recipe.minutes + " min" : ""}</p>
+    const used = (idea.usedPantry || []).slice(0, 6).map((l) => pantryChipHtml(l, "have")).join("");
+    const missItems = (idea.missingItems || []).slice(0, 4);
+    const miss = missItems.length ? missItems.map((l) => pantryChipHtml(l, "miss")).join("") : "";
+    const chips = `<div class="pantry-chips">${used}${miss}</div>`;
+    const isNew = ui.pantryCook.newIds && ui.pantryCook.newIds.has(idea.id);
+    const newCls = isNew ? " pantry-suggest--new" : "";
+    const idAttr = isSc
+      ? `data-smart-chef-fp="${esc(idea.smartChefFp || "")}"`
+      : `data-id="${esc(idea.id)}"`;
+    const openAction = isSc ? "pantry-smart-chef-open" : "open-recipe";
+    const cookAction = isSc ? "pantry-smart-chef-cook" : "cook";
+    const tonightAction = isSc ? "pantry-smart-chef-plan" : "tonight";
+    return `<article class="pantry-suggest${newCls}" data-pantry-suggest-id="${esc(idea.id)}">
+      <div class="suggest-head">${badge}${scBadge}<h3>${esc(idea.name)}</h3></div>
+      ${spotlight}
+      ${chips}
+      <p class="meta">${idea.matched} from pantry${idea.missing ? ` · ${idea.missing} missing` : ""}${recipe && recipe.minutes != null ? ` · ${recipe.minutes} min` : ""}</p>
       <div class="inline">
-        <button type="button" class="primary" data-action="tonight" data-id="${esc(idea.id)}">Tonight</button>
-        <button type="button" data-action="cook" data-id="${esc(idea.id)}">Cook</button>
-        <button type="button" data-action="open-recipe" data-id="${esc(idea.id)}">Open</button>
+        <button type="button" class="primary" data-action="${tonightAction}" ${idAttr}>Tonight</button>
+        <button type="button" data-action="${cookAction}" ${idAttr}>Cook</button>
+        <button type="button" data-action="${openAction}" ${idAttr}>Open</button>
       </div>
     </article>`;
   }
@@ -549,22 +679,25 @@
     return "";
   }
 
-  function pantrySuggestListHtml(rows, limit) {
-    const slice = rows.slice(0, limit);
+  function pantrySuggestListHtml(rows, limit, expanded) {
+    const cap = expanded ? rows.length : Math.min(limit, rows.length);
+    const slice = rows.slice(0, cap);
     let html = "";
     let lastTier = "";
     slice.forEach((idea) => {
-      if (idea.tier !== lastTier) {
+      if (idea.kind !== "smart-chef" && idea.tier !== lastTier) {
         const label = pantrySuggestGroupLabel(idea.tier);
         if (label) html += `<h4 class="suggest-group">${esc(label)}</h4>`;
         lastTier = idea.tier;
       }
       html += pantrySuggestArticleHtml(idea);
     });
-    const more = rows.length > limit;
-    html += `<div id="pantrySuggestSentinel" class="pantry-suggest-sentinel"${more ? "" : " hidden"} aria-hidden="true"></div>`;
-    if (rows.length && limit >= rows.length) {
-      html += `<p class="meta pantry-suggest-end">${rows.length} recipe${rows.length === 1 ? "" : "s"}</p>`;
+    const libCount = rows.filter((r) => r.kind !== "smart-chef").length;
+    const total = rows.length;
+    if (!expanded && total > limit) {
+      html += `<button type="button" class="btn pantry-cook-more" data-action="pantry-cook-show-all">Show all (${total})</button>`;
+    } else if (total) {
+      html += `<p class="meta pantry-suggest-end">${libCount} library match${libCount === 1 ? "" : "es"}${total > libCount ? ` · ${total - libCount} Smart Chef idea${total - libCount === 1 ? "" : "s"}` : ""}</p>`;
     }
     return html;
   }
@@ -573,25 +706,25 @@
     const list = document.getElementById("pantrySuggestList");
     if (!list) return;
     const rows = ui.pantryCook.rows || [];
-    list.innerHTML = pantrySuggestListHtml(rows, ui.pantryCook.shown);
-    setupPantryCookScroll();
+    list.innerHTML = pantrySuggestListHtml(rows, ui.pantryCook.shown, ui.pantryCook.expanded);
+    const flash = document.getElementById("pantryCookFlash");
+    if (flash) {
+      flash.textContent = ui.pantryCook.flash || "";
+      flash.hidden = !ui.pantryCook.flash;
+    }
   }
 
-  function setupPantryCookScroll() {
-    if (pantryCookObserver) {
-      pantryCookObserver.disconnect();
-      pantryCookObserver = null;
-    }
-    const sentinel = document.getElementById("pantrySuggestSentinel");
-    if (!sentinel || sentinel.hasAttribute("hidden")) return;
-    pantryCookObserver = new IntersectionObserver((entries) => {
-      if (!entries[0] || !entries[0].isIntersecting) return;
-      const rows = ui.pantryCook.rows || [];
-      if (ui.pantryCook.shown >= rows.length) return;
-      ui.pantryCook.shown = Math.min(rows.length, ui.pantryCook.shown + PANTRY_COOK_PAGE);
-      renderPantrySuggestList();
-    }, { root: null, rootMargin: "240px 0px", threshold: 0 });
-    pantryCookObserver.observe(sentinel);
+  function pantrySmartChefResultFromBtn(btn) {
+    const fp = btn.getAttribute("data-smart-chef-fp");
+    return fp && ui.pantryCook.smartChefByFp ? ui.pantryCook.smartChefByFp[fp] : null;
+  }
+
+  function openPantrySmartChef(btn) {
+    const result = pantrySmartChefResultFromBtn(btn);
+    if (!result) return;
+    ui.smartChef.result = result;
+    ui.smartChef.variation = result.variation || 0;
+    openSmartChefDetail();
   }
 
   function tonightHtml() {
@@ -1033,25 +1166,17 @@
     const items = state.pantry.length
       ? `<ul class="pantry-list">${state.pantry.map((item) => `<li><span>${esc(cap(item.item))}</span><button type="button" class="danger" data-action="pantry-remove" data-id="${esc(item.id)}" aria-label="Remove ${esc(item.item)} from pantry">Remove</button></li>`).join("")}</ul>`
       : `<p class="empty">Nothing saved as already at home. Add an item, or tap Have it on the shopping list.</p>`;
-    const ideas = PW.suggestRecipes(state.recipes, state.pantry);
-    const shareBtn = state.pantry.length && ideas.length
+    if (ui.pantryCook._prevIds) finishPantryCookReaction();
+    else ensurePantryCookRows();
+    const rows = ui.pantryCook.rows || [];
+    const shareBtn = state.pantry.length && rows.length
       ? `<div class="toolbar pantry-share-row"><button type="button" class="primary" data-action="share-pantry">Share</button></div>`
       : "";
+    const flashBar = `<p id="pantryCookFlash" class="pantry-cook-flash" role="status"${ui.pantryCook.flash ? "" : " hidden"}>${esc(ui.pantryCook.flash || "")}</p>`;
     const suggest = !state.pantry.length
       ? ""
-      : (ideas.length
-        ? `${shareBtn}<div class="suggest">${ideas.map((idea) => {
-          const recipe = PW.recipeById(state, idea.id);
-          return `<article>
-            <h3>${esc(idea.name)}</h3>
-            <p class="meta">Uses ${idea.matched} pantry item${idea.matched === 1 ? "" : "s"} · missing ${idea.missing}${recipe && recipe.minutes != null ? " · " + recipe.minutes + " min" : ""}</p>
-            <div class="inline">
-              <button type="button" class="primary" data-action="tonight" data-id="${esc(idea.id)}">Tonight</button>
-              <button type="button" data-action="cook" data-id="${esc(idea.id)}">Cook</button>
-              <button type="button" data-action="open-recipe" data-id="${esc(idea.id)}">Open</button>
-            </div>
-          </article>`;
-        }).join("")}</div>`
+      : (rows.length
+        ? `${shareBtn}${flashBar}<div id="pantrySuggestList" class="suggest">${pantrySuggestListHtml(rows, ui.pantryCook.shown, ui.pantryCook.expanded)}</div>`
         : `<p class="empty">No close matches yet. Add a few more things you have, using the same names as the shopping list.</p>`);
     return `<section>
       <h2>Pantry</h2>
@@ -1456,7 +1581,7 @@
   }
 
   async function sharePantryMeals() {
-    const text = PW.formatPantryShareText(state.recipes, state.pantry);
+    const text = PW.formatPantryShareText(state.recipes, state.pantry, state.assumeStaples);
     if (!text) {
       toast("Add a few pantry items first so we can suggest meals to share.");
       return;
@@ -2022,6 +2147,25 @@
     } else if (action === "paste") applyPaste();
     else if (action === "copy-list") copyOrShow("Shopping list", PW.listAsText(PW.buildShoppingList(state)));
     else if (action === "share-pantry") sharePantryMeals();
+    else if (action === "pantry-cook-show-all") {
+      ui.pantryCook.expanded = true;
+      ui.pantryCook.shown = (ui.pantryCook.rows || []).length;
+      renderPantrySuggestList();
+    } else if (action === "pantry-smart-chef-open") {
+      openPantrySmartChef(btn);
+    } else if (action === "pantry-smart-chef-cook") {
+      const result = pantrySmartChefResultFromBtn(btn);
+      if (!result) return;
+      ui.smartChef.result = result;
+      const draft = ensureSmartChefInRecipes();
+      if (draft) openCook(draft.id);
+    } else if (action === "pantry-smart-chef-plan") {
+      const result = pantrySmartChefResultFromBtn(btn);
+      if (!result) return;
+      ui.smartChef.result = result;
+      const draft = ensureSmartChefInRecipes();
+      if (draft) openAssign(draft.id);
+    }
     else if (action === "theme-toggle") setTheme(currentTheme() === "dark" ? "light" : "dark");
     else if (action === "theme-set") setTheme(btn.getAttribute("data-theme"));
     else if (action === "smart-chef-reset") {
@@ -2059,6 +2203,7 @@
     } else if (action === "have") {
       const item = btn.getAttribute("data-item");
       if (!state.pantry.some((entry) => PW.stapleKey(entry.item) === PW.stapleKey(item))) {
+        preparePantryCookReaction(item, true);
         state.pantry.push({ id: PW.uid("p_"), item: item });
       }
       commit();
@@ -2068,11 +2213,14 @@
       if (menu) menu.open = false;
       removeExtraItem(btn.getAttribute("data-item"), btn.getAttribute("data-unit") || "");
     } else if (action === "pantry-remove") {
+      const removed = state.pantry.find((entry) => entry.id === id);
+      preparePantryCookReaction(removed ? removed.item : "", false);
       state.pantry = state.pantry.filter((entry) => entry.id !== id);
       bumpSmartChefPantry();
       commit();
     } else if (action === "staples") {
       let added = 0;
+      preparePantryCookReaction("staples", true);
       PW.STAPLES.forEach((item) => {
         if (state.pantry.some((entry) => PW.singularKey(entry.item) === PW.singularKey(item))) return;
         state.pantry.push({ id: PW.uid("p_"), item: item });
@@ -2138,6 +2286,7 @@
         toast("That's already in the pantry.");
         return;
       }
+      preparePantryCookReaction(parsed.item, true);
       state.pantry.push({ id: PW.uid("p_"), item: parsed.item });
       bumpSmartChefPantry();
       commit();

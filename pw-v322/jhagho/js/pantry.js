@@ -452,6 +452,7 @@
     var fillPrefs = src.fillPrefs && typeof src.fillPrefs === "object" ? src.fillPrefs : {};
     var scope = String(fillPrefs.scope || "dinner");
     if (scope !== "dinner" && scope !== "lunch_dinner" && scope !== "all") scope = "dinner";
+    var assume = src.assumeStaples && typeof src.assumeStaples === "object" ? src.assumeStaples : {};
     return {
       version: 2,
       recipes: recipes,
@@ -461,6 +462,9 @@
       checked: checked,
       extras: extras,
       pantry: pantry,
+      assumeStaples: window.PW_PANTRY_MATCH
+        ? PW_PANTRY_MATCH.normalizeAssume(assume)
+        : { flour: !!assume.flour, sugar: !!assume.sugar, butter: !!assume.butter },
       hideChecked: !!src.hideChecked,
       tipSeen: !!src.tipSeen,
       fillPrefs: { scope: scope, replaceAll: !!fillPrefs.replaceAll },
@@ -958,7 +962,12 @@
     return "";
   }
 
-  function suggestRecipes(recipes, pantry) {
+  function suggestRecipes(recipes, pantry, assumeStaples) {
+    if (window.PW_PANTRY_MATCH) {
+      return PW_PANTRY_MATCH.suggestFromPantry(recipes, pantry, assumeStaples, function (recipe) {
+        return recipeClassicBoost(recipe);
+      });
+    }
     var have = pantryHaveSet(pantry);
     if (!Object.keys(have).length) return [];
     var ignore = pantryStapleIgnore();
@@ -971,36 +980,34 @@
         matched: fit.matched,
         missing: fit.missing,
         missingItems: fit.missingItems,
-        total: fit.total
+        total: fit.total,
+        tier: fit.missing === 0 ? "ready" : (fit.missing === 1 ? "miss1" : "miss23"),
+        badge: fit.missing === 0 ? "Ready to cook" : ("Missing " + fit.missing),
+        ready: fit.missing === 0
       };
     }).filter(function (row) {
-      return row.matched >= 2 && row.missing <= 4 && row.total > 0;
+      return row.matched >= 2 && row.missing <= 3 && row.total > 0;
     }).sort(function (a, b) {
       return a.missing - b.missing || b.matched - a.matched || a.name.localeCompare(b.name);
-    }).slice(0, 8);
+    });
   }
 
-  function formatPantryShareText(recipes, pantry) {
-    var have = pantryHaveSet(pantry);
-    if (!Object.keys(have).length) return "";
-    var ignore = pantryStapleIgnore();
+  function formatPantryShareText(recipes, pantry, assumeStaples) {
+    if (!pantry || !pantry.length) return "";
+    var rows = suggestRecipes(recipes, pantry, assumeStaples);
+    if (!rows.length) return "";
+
     var ready = [];
     var near = [];
-    (recipes || []).forEach(function (recipe) {
-      var fit = recipePantryFit(recipe, have, ignore);
-      if (fit.total < 1) return;
-      if (fit.missing === 0 && fit.matched >= 1) ready.push({ recipe: recipe, fit: fit });
-      else if (fit.missing >= 1 && fit.missing <= 2 && fit.matched >= 1) near.push({ recipe: recipe, fit: fit });
+    var more = [];
+    rows.forEach(function (row) {
+      var recipe = recipeById({ recipes: recipes }, row.id);
+      if (!recipe) return;
+      var entry = { recipe: recipe, fit: row };
+      if (row.ready) ready.push(entry);
+      else if (row.missing <= 2) near.push(entry);
+      else more.push(entry);
     });
-    ready.sort(function (a, b) {
-      return (a.recipe.name || "").localeCompare(b.recipe.name || "");
-    });
-    near.sort(function (a, b) {
-      return a.fit.missing - b.fit.missing || (a.recipe.name || "").localeCompare(b.recipe.name || "");
-    });
-    ready = ready.slice(0, 10);
-    near = near.slice(0, 6);
-    if (!ready.length && !near.length) return "";
 
     function lineFor(entry, withMissing) {
       var recipe = entry.recipe;
@@ -1009,7 +1016,7 @@
       var head = "• " + recipe.name;
       if (time) head += " — " + time;
       if (blurb) head += " — " + blurb;
-      if (withMissing && entry.fit.missingItems.length) {
+      if (withMissing && entry.fit.missingItems && entry.fit.missingItems.length) {
         head += " (need: " + entry.fit.missingItems.slice(0, 3).join(", ") + ")";
       }
       return head;
@@ -1024,8 +1031,13 @@
       lines.push("Almost there (missing 1–2):");
       near.forEach(function (entry) { lines.push(lineFor(entry, true)); });
     }
+    if (more.length) {
+      lines.push("");
+      lines.push("More ideas:");
+      more.forEach(function (entry) { lines.push(lineFor(entry, true)); });
+    }
     var text = lines.join("\n");
-    if (text.length > 1800) text = text.slice(0, 1797) + "…";
+    if (text.length > 2400) text = text.slice(0, 2397) + "…";
     return text;
   }
 
@@ -1459,6 +1471,7 @@
     removeManualExtra: removeManualExtra,
     formatPantryShareText: formatPantryShareText,
     suggestRecipes: suggestRecipes,
+    recipeClassicBoost: recipeClassicBoost,
     parseRecipeText: parseRecipeText,
     fillSimpleWeek: fillSimpleWeek,
     slotsForFillScope: slotsForFillScope,

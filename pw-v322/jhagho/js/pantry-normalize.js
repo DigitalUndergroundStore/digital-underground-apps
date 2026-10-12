@@ -34,7 +34,8 @@
     ["egg", "eggs", "large egg", "large eggs"],
     ["cheddar", "cheddar cheese", "old cheddar", "medium cheddar"],
     ["bread", "sandwich bread", "white bread", "whole wheat bread"],
-    ["hamburger bun", "burger bun", "burger buns", "hamburger buns"],
+    ["hamburger bun", "burger bun", "burger buns", "hamburger buns", "buns"],
+    ["cheese", "cheddar cheese", "mozzarella", "mozzarella cheese", "swiss cheese", "monterey jack", "parmesan", "feta", "gouda"],
     ["rice", "white rice", "long grain rice", "jasmine rice", "basmati rice"],
     ["brown rice", "whole grain rice"],
     ["pasta", "spaghetti", "penne", "rotini", "macaroni"],
@@ -101,7 +102,18 @@
     return keys;
   }
 
+  var haveSetCache = { key: "", value: null };
+  var keysCache = {};
+
+  function pantryListKey(pantry) {
+    return (pantry || []).map(function (entry) {
+      return typeof entry === "string" ? entry : (entry && entry.item) || "";
+    }).join("\u0001");
+  }
+
   function pantryHaveSet(pantry) {
+    var key = pantryListKey(pantry);
+    if (haveSetCache.key === key && haveSetCache.value) return haveSetCache.value;
     var have = {};
     (pantry || []).forEach(function (entry) {
       var name = typeof entry === "string" ? entry : entry.item;
@@ -110,15 +122,56 @@
         have[k] = 1;
       });
     });
+    haveSetCache = { key: key, value: have };
     return have;
+  }
+
+  function keysForPantryItemCached(name) {
+    var k = stapleKey(name);
+    if (!k) return {};
+    if (keysCache[k]) return keysCache[k];
+    var all = keysForPantryItem(name);
+    keysCache[k] = all;
+    return all;
+  }
+
+  function isCheeseKey(k) {
+    return k && (k === "cheese" || k === "cheddar" || k === "mozzarella" || k.indexOf("cheese") !== -1);
+  }
+
+  function haveAnyCheese(have) {
+    var keys = Object.keys(have || {});
+    for (var i = 0; i < keys.length; i++) {
+      if (isCheeseKey(keys[i])) return true;
+    }
+    return false;
+  }
+
+  function ingredientLookupKeys(ingredientItem) {
+    var keys = {};
+    var raw = stapleKey(ingredientItem);
+    if (raw) keys[raw] = 1;
+    var canon = canonPantryKey(ingredientItem);
+    if (canon) keys[canon] = 1;
+    var base = String(ingredientItem || "").toLowerCase().replace(/,.*$/, "").trim();
+    base = base.replace(/^(medium|large|small)\s+/, "").replace(/\s+(minced|diced|sliced|chopped|grated)$/, "").trim();
+    if (base) {
+      keys[stapleKey(base)] = 1;
+      keys[canonPantryKey(base)] = 1;
+    }
+    return keys;
   }
 
   function pantryMatchesIngredient(ingredientItem, have) {
     if (!ingredientItem || !have) return false;
-    var canon = canonPantryKey(ingredientItem);
     var raw = stapleKey(ingredientItem);
-    if (have[canon] || have[raw]) return true;
-    if (canon && have[stapleKey(canon)]) return true;
+    var canon = canonPantryKey(ingredientItem);
+    if (isCheeseKey(canon) || isCheeseKey(raw) || /\bcheese\b/.test(raw)) return haveAnyCheese(have);
+    var keys = ingredientLookupKeys(ingredientItem);
+    var list = Object.keys(keys);
+    for (var i = 0; i < list.length; i++) {
+      if (have[list[i]]) return true;
+    }
     return false;
   }
 
@@ -129,7 +182,11 @@
   window.PW_PANTRY_NORM = {
     stapleKey: stapleKey,
     canonPantryKey: canonPantryKey,
-    keysForPantryItem: keysForPantryItem,
+    keysForPantryItem: keysForPantryItemCached,
+    invalidatePantryCaches: function () {
+      haveSetCache = { key: "", value: null };
+      keysCache = {};
+    },
     pantryHaveSet: pantryHaveSet,
     pantryMatchesIngredient: pantryMatchesIngredient,
     samePantryItem: samePantryItem,

@@ -846,6 +846,77 @@ input[type="checkbox"] {
   padding: 12px;
 }
 .suggest h3 { margin: 0 0 4px; font-family: var(--serif); font-size: 1.15rem; }
+.suggest-head { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
+.suggest-head h3 { flex: 1 1 100%; margin: 0; }
+.suggest-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.suggest-badge--ready { background: #1a3d2e; color: #d8f3e4; }
+.suggest-badge--miss1 { background: #3d2e1a; color: #f5e6c8; }
+.suggest-badge--miss23 { background: var(--bg-3); color: var(--muted); border: 1px solid var(--line); }
+.suggest-badge--chef { background: #2d4a6f; color: #e8f2ff; }
+.suggest-group { margin: 14px 0 6px; font-size: 0.85rem; color: var(--muted); font-weight: 700; }
+.pantry-chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0 4px; }
+.pantry-chip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pantry-chip--have { background: var(--accent-soft); color: var(--ink); border: 1px solid rgba(45, 159, 111, 0.25); }
+.pantry-chip--miss { background: var(--bg-3); color: var(--muted); border: 1px dashed var(--line-strong); }
+.pantry-spotlight {
+  margin: 0 0 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.pantry-cook-flash {
+  margin: 8px 0 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(45, 159, 111, 0.35);
+  font-weight: 700;
+  font-size: 0.9rem;
+  animation: pantry-flash-in 0.35s var(--ease);
+}
+.pantry-suggest--new {
+  animation: pantry-suggest-pop 0.45s var(--ease);
+  box-shadow: 0 0 0 2px rgba(45, 159, 111, 0.45);
+}
+@keyframes pantry-flash-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pantry-suggest-pop {
+  0% { transform: scale(0.98); }
+  40% { transform: scale(1.01); }
+  100% { transform: scale(1); }
+}
+.pantry-cook-more {
+  width: 100%;
+  margin-top: 8px;
+  min-height: 48px;
+  border-radius: 12px;
+  border: 1px dashed var(--line-strong);
+  background: var(--bg-2);
+  font-weight: 700;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pantry-cook-flash,
+  .pantry-suggest--new { animation: none; }
+}
 .inline { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
 
 .callout {

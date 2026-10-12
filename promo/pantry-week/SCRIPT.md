@@ -2,7 +2,7 @@
 
 Recorded from live build `202610111915-pw342`. The motion backdrop stays behind the devices. The Plan screen shows the app's own soft moving backdrop. Import keeps the recipe site's photo. The earlier promo files stay in place. This cut is a new pair of files.
 
-26-second vertical (1080×1920) and square (1080×1080) cuts. 30 fps H.264. The words on screen carry the story with the sound off.
+25.0-second vertical (1080×1920) and square (1080×1080) cuts. 30 fps H.264. The words on screen carry the story with the sound off. Cuts land on the music pulse, and the music fades out through the end card.
 
 Price on screen is CAD$24. The store line is digitalundergroundstore.com. Gumroad is not shown.
 
@@ -12,15 +12,14 @@ The pictures inside the phone and tablet are screen recordings of the live app a
 
 | Time | On-screen words | What you see |
 | --- | --- | --- |
-| 0.00–1.45 | What's for dinner? Again? | Hook, over the moving food backdrop. |
-| 1.40–3.75 | 248 recipes, then Canadian meals | Phone. Photo cards, tap the Canadian filter. |
-| 3.65–6.45 | Fill a simple week, then the week fills in | Dinners only, Lunch + dinner, All three meals. |
-| 6.35–9.65 | Shop by aisle, then Have it | Produce aisle, tap Have it. |
-| 9.55–11.90 | Smart Chef, then Cook from what you have | A built recipe, then the pantry matches and Share. |
-| 11.80–13.55 | Swipe between tabs | The plan slides to the recipe box. |
-| 13.45–15.05 | 248 recipes | Tablet. Canadian photo grid. |
-| 14.95–21.15 | Switching apps? Bring your recipes. | Paste a recipe link, the preview fills, then it is saved in the recipe box. |
-| 21.00–26.00 | Pantry Week, CAD$24, Pay once, digitalundergroundstore.com | End card. |
+| 0.00–1.50 | What's for dinner? Again? | Hook, over the moving food backdrop. |
+| 1.50–4.50 | 248 recipes, then Canadian meals | Phone. Photo cards, tap the Canadian filter. |
+| 4.50–7.50 | Fill a simple week, then the week fills in | Dinners only, Lunch + dinner, All three meals. |
+| 7.50–10.50 | Shop by aisle, then Have it | The list appears once. Tap Have it. |
+| 10.50–13.50 | Smart Chef, Share, then swipe | A built recipe, Share, then the plan slides to the recipe box. |
+| 13.50–15.00 | 248 recipes | Tablet. Canadian photo grid. |
+| 15.00–20.25 | Switching apps? Bring your recipes. | Paste a recipe link, the preview fills, then it is saved in the recipe box. |
+| 20.25–25.00 | Pantry Week, CAD$24, Pay once, digitalundergroundstore.com | End card. The music fades out here. |
 
 Captions sit below the top 250px and above the device. The phone and the tablet are scaled to fit inside the frame. Each screenshot fills the device screen with no crop.
 
@@ -28,7 +27,9 @@ Captions sit below the top 250px and above the device. The phone and the tablet 
 
 Import pastes the BBC Good Food easy chicken curry link. The preview fills with that page's photo, then the recipe is saved into the recipe box with the photo. The line on screen is "Switching apps? Bring your recipes."
 
-The frame behind the devices is the approved motion look. On the Plan shot, the app's own soft backdrop drifts. The devices and the full screens stay sharp. Earlier promo MP4s stay where they are.
+The frame behind the devices is the approved motion look. On the Plan shot, the app's own soft backdrop drifts. The devices and the full screens stay sharp. Earlier promo MP4s stay where they are. This 25.0s cut is a new pair of files named `pantry-week-promo-v342b`.
+
+A recipe-library update, 24 recipe swaps, is coming. `record-app.mjs` stays ready for a quick re-shoot of the recipe grid. Do not start that until the new build is named.
 
 ## Music
 
@@ -42,6 +43,6 @@ Feeling Happy by Ahjay Stelino. See `AUDIO-CREDITS.md`.
 cd promo/pantry-week
 npm install puppeteer-core
 node record-app.mjs /path/to/buyer-code.txt
-node render.mjs vertical --out=/tmp/pw-frames-vertical --encode --audio=audio/feeling-happy-bed.m4a --video=/tmp/pantry-week-promo-v342-vertical.mp4
-node render.mjs square --out=/tmp/pw-frames-square --encode --audio=audio/feeling-happy-bed.m4a --video=/tmp/pantry-week-promo-v342-square.mp4
+node render.mjs vertical --out=/tmp/pw-frames-vertical --encode --audio=audio/feeling-happy-bed-25.m4a --video=/tmp/pantry-week-promo-v342b-vertical.mp4
+node render.mjs square --out=/tmp/pw-frames-square --encode --audio=audio/feeling-happy-bed-25.m4a --video=/tmp/pantry-week-promo-v342b-square.mp4
 ```

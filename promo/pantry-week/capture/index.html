@@ -322,34 +322,34 @@ html.square .finger { width: 48px; height: 48px; }
   function clamp(x) { return Math.max(0, Math.min(1, x)); }
   function fade(t, a, b, fadeIn, fadeOut) {
     if (t < a || t > b) return 0;
+    var edge = 0.24;
     var o = 1;
-    if (fadeIn && t < a + 0.16) o = (t - a) / 0.16;
-    if (fadeOut && t > b - 0.16) o = Math.min(o, (b - t) / 0.16);
+    if (fadeIn && t < a + edge) o = (t - a) / edge;
+    if (fadeOut && t > b - edge) o = Math.min(o, (b - t) / edge);
     return clamp(o);
   }
   function lerp(a, b, p) { return a + (b - a) * p; }
 
   var beats = [
-    { a: 1.40, b: 2.95, shot: "phone-recipes", cap: "248 recipes",
-      tap: { t: 2.05, x: 0.19, y: 0.366 } },
-    { a: 2.85, b: 3.75, shot: "phone-canadian", cap: "Canadian meals" },
-    { a: 3.65, b: 5.15, shot: "phone-fill-choice", cap: "Fill a simple week",
-      tap: { t: 4.15, x: 0.5, y: 0.798 } },
-    { a: 5.05, b: 6.45, shot: "phone-week", cap: "The week fills in" },
-    { a: 6.35, b: 7.85, shot: "phone-shop", cap: "Shop by aisle" },
-    { a: 7.75, b: 8.85, shot: "phone-shop-before", cap: "Shop by aisle",
-      tap: { t: 8.05, x: 0.865, y: 0.338 } },
-    { a: 8.75, b: 9.65, shot: "phone-shop-have", cap: "Have it" },
-    { a: 9.55, b: 10.85, shot: "phone-chef", cap: "Smart Chef" },
-    { a: 10.75, b: 11.9, shot: "phone-share", cap: "Cook from what you have",
-      tap: { t: 11.05, x: 0.5, y: 0.826 } },
-    { a: 11.8, b: 13.55, shot: "phone-swipe-plan", swipeTo: "phone-swipe-recipes", cap: "Swipe between tabs" },
-    { a: 13.45, b: 15.05, shot: "tablet-recipes", cap: "248 recipes", device: "tablet" },
-    { a: 14.95, b: 16.55, shot: "phone-import-link", cap: "Switching apps? Bring your recipes.",
-      tap: { t: 15.35, x: 0.5, y: 0.504 } },
-    { a: 16.45, b: 18.15, shot: "phone-import-preview", cap: "Switching apps? Bring your recipes.",
-      tap: { t: 16.85, x: 0.5, y: 0.621 } },
-    { a: 18.05, b: 21.15, shot: "phone-import-saved", cap: "Switching apps? Bring your recipes." }
+    { a: 1.38, b: 3.12, shot: "phone-recipes", cap: "248 recipes",
+      tap: { t: 2.25, x: 0.19, y: 0.366 } },
+    { a: 2.88, b: 4.62, shot: "phone-canadian", cap: "Canadian meals" },
+    { a: 4.38, b: 6.12, shot: "phone-fill-choice", cap: "Fill a simple week",
+      tap: { t: 5.25, x: 0.5, y: 0.798 } },
+    { a: 5.88, b: 7.62, shot: "phone-week", cap: "The week fills in" },
+    { a: 7.38, b: 9.12, shot: "phone-shop-before", cap: "Shop by aisle",
+      tap: { t: 8.25, x: 0.865, y: 0.338 } },
+    { a: 8.88, b: 10.62, shot: "phone-shop-have", cap: "Have it" },
+    { a: 10.38, b: 11.37, shot: "phone-chef", cap: "Smart Chef" },
+    { a: 11.13, b: 12.12, shot: "phone-share", cap: "Cook from what you have",
+      tap: { t: 11.40, x: 0.5, y: 0.826 } },
+    { a: 11.88, b: 13.62, shot: "phone-swipe-plan", swipeTo: "phone-swipe-recipes", cap: "Swipe between tabs" },
+    { a: 13.38, b: 15.12, shot: "tablet-recipes", cap: "248 recipes", device: "tablet" },
+    { a: 14.88, b: 16.62, shot: "phone-import-link", cap: "Switching apps? Bring your recipes.",
+      tap: { t: 15.75, x: 0.5, y: 0.504 } },
+    { a: 16.38, b: 18.12, shot: "phone-import-preview", cap: "Switching apps? Bring your recipes.",
+      tap: { t: 17.25, x: 0.5, y: 0.621 } },
+    { a: 17.88, b: 20.37, shot: "phone-import-saved", cap: "Switching apps? Bring your recipes." }
   ];
 
   var shotImg = document.getElementById("shotImg");
@@ -441,7 +441,7 @@ html.square .finger { width: 48px; height: 48px; }
     if (t >= start && t <= end) {
       o = 1;
       if (start > 0 && t < start + fadeIn) o = (t - start) / fadeIn;
-      if (end < 26 && t > end - fadeIn) o = Math.min(o, (end - t) / fadeIn);
+      if (end < 25 && t > end - fadeIn) o = Math.min(o, (end - t) / fadeIn);
     }
     var p = clamp((t - start) / (end - start));
     var s = lerp(1.08, 1.18, p);
@@ -453,7 +453,7 @@ html.square .finger { width: 48px; height: 48px; }
     if (!document.documentElement.classList.contains("motion")) return;
     movePlate(document.getElementById("plateA"), t, 0, 11.5, -2, 3, 1, -2);
     movePlate(document.getElementById("plateB"), t, 8.2, 19.4, 2, -3, -1, 2);
-    movePlate(document.getElementById("plateC"), t, 16.2, 26, -1, 2, 2, -2);
+    movePlate(document.getElementById("plateC"), t, 16.2, 25, -1, 2, 2, -2);
     var drift = Math.sin(t * 0.45);
     document.getElementById("orbHerb").style.transform = "translate(" + (drift * 18) + "px, " + (t * 4) + "px)";
     document.getElementById("orbTomato").style.transform = "translate(" + (-drift * 14) + "px, " + (-t * 3) + "px)";
@@ -462,8 +462,8 @@ html.square .finger { width: 48px; height: 48px; }
 
   window.renderAt = function (t) {
     moveBackdrop(t);
-    document.getElementById("hook").style.opacity = fade(t, 0, 1.72, false, true);
-    document.getElementById("cta").style.opacity = fade(t, 21.0, 26.0, true, false);
+    document.getElementById("hook").style.opacity = fade(t, 0, 1.62, false, true);
+    document.getElementById("cta").style.opacity = fade(t, 20.13, 25.0, true, false);
     var rig = 0;
     var cap = "";
     var active = null;
@@ -473,7 +473,7 @@ html.square .finger { width: 48px; height: 48px; }
     });
     slot.style.opacity = rig;
     var capEl = document.getElementById("cap");
-    capEl.style.opacity = rig > 0.4 && t < 21.05 ? String(Math.min(1, rig)) : "0";
+    capEl.style.opacity = rig > 0.4 && t < 20.2 ? String(Math.min(1, rig)) : "0";
     document.getElementById("capText").textContent = cap || "Pick the meals";
     if (active && rig > 0) showShot(active, t);
   };

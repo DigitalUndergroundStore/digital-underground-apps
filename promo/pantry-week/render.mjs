@@ -10,7 +10,7 @@ const preview = process.argv.includes("--preview");
 const width = 1080;
 const height = format === "square" ? 1080 : 1920;
 const fps = 30;
-const duration = 26;
+const duration = 25;
 const frameCount = fps * duration;
 const outDir = process.argv.find((a) => a.startsWith("--out="))?.slice(6)
   || path.join("/tmp", `pw-frames-${format}`);

@@ -4067,7 +4067,7 @@
   },
   {
     "id": "r106",
-    "name": "Walnut Pesto",
+    "name": "Walnut Basil Pesto",
     "minutes": 15,
     "servings": 4,
     "tags": [
@@ -4102,6 +4102,11 @@
         "qty": 0.5,
         "unit": "cup",
         "item": "Parmesan cheese"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "basil pesto"
       }
     ],
     "steps": [

@@ -1,8 +1,8 @@
 {
  "name": "Launch Ledger",
  "short_name": "Launch Ledger",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/launch-ledger/index.html",
+ "scope": "/launch-ledger/",
  "display": "standalone",
  "background_color": "#0b0f14",
  "theme_color": "#0b0f14",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/launch-ledger/",
+ "description": "Launch Ledger \u2014 Digital Underground"
 }

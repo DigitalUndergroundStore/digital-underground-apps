@@ -21,7 +21,19 @@ PRODUCTS = [
     {"slug": "invoice-desk", "code": "nvmvyx", "name": "Invoice Desk", "price": "CA$19", "pitch": ["Offline invoices for freelancers."], "cover": "media/nvmvyx.jpg"},
     {"slug": "streak-kit", "code": "idasqr", "name": "Streak Kit", "price": "CA$9", "pitch": ["Daily streaks, kept on your phone.", "No account."], "cover": "media/idasqr.jpg"},
     {"slug": "scope-lock", "code": "omzql", "name": "Scope Lock", "price": "CA$12", "pitch": ["A client brief that holds the scope."], "cover": "media/omzql.jpg"},
-    {"slug": "pantry-week", "code": "jhagho", "name": "Pantry Week 2.0", "price": "CA$24", "pitch": ["A week of meals, planned in one place."], "cover": "media/jhagho.jpg"},
+    {
+        "slug": "pantry-week",
+        "code": "jhagho",
+        "name": "Pantry Week 2.0",
+        "price": "CA$24",
+        "pitch": ["A week of meals, planned in one place."],
+        "cover": "media/jhagho.jpg",
+        "shareVideo": {
+            "poster": "/store/media/jhagho.jpg?v=20261011b",
+            "vertical": "/store/media/pantry-week-vertical.mp4?v=20261011b",
+            "square": "/store/media/pantry-week-square.mp4?v=20261011b",
+        },
+    },
     {"slug": "winston", "code": "jkpty", "name": "Winston — Hands-Free Kitchen Voice Assistant", "price": "CA$19", "pitch": ["A kitchen voice that reads the steps while your hands are busy."], "cover": "media/jkpty.jpg"},
     {"slug": "planetview", "code": "oxnfvy", "name": "PlanetView Live", "price": "CA$24", "pitch": ["Photoreal Earth and a solar system you can fly, in the browser."], "cover": "covers/oxnfvy.webp"},
     {"slug": "session-forge", "code": "wcvgxo", "name": "Session Forge", "price": "CA$14.99+", "pitch": ["An offline toolkit for running game sessions."], "cover": "covers/wcvgxo.webp"},
@@ -139,6 +151,25 @@ def cta_label(price: str) -> str:
     return f"Get for {price}"
 
 
+def render_media_block(product: dict, slug: str) -> str:
+    video = product.get("shareVideo")
+    if not video:
+        return f"""    <div class="cover-wrap">
+      <img class="cover" src="/p/og/{slug}.jpg" width="1200" height="630" alt="">
+    </div>"""
+    poster = html.escape(video["poster"])
+    vert = html.escape(video["vertical"])
+    sq = html.escape(video["square"])
+    return f"""    <div class="cover-wrap cover-wrap--promo" data-share-promo>
+      <video class="share-promo share-promo--port" width="1080" height="1920" poster="{poster}" playsinline muted loop preload="metadata" data-src="{vert}"></video>
+      <video class="share-promo share-promo--sq" width="1080" height="1080" poster="{poster}" playsinline muted loop preload="none" data-src="{sq}"></video>
+      <button type="button" class="share-promo-sound" aria-label="Sound off" aria-pressed="false">
+        <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+    </div>"""
+
+
 def render_page(product: dict) -> str:
     slug = product["slug"]
     name = product["name"]
@@ -147,6 +178,12 @@ def render_page(product: dict) -> str:
     checkout = checkout_url(product["code"])
     page_url = f"{BASE}/p/{slug}/"
     og_image = f"{BASE}/p/og/{slug}.jpg"
+    media_block = render_media_block(product, slug)
+    promo_script = (
+        '\n<script src="/p/share-promo.js" defer></script>'
+        if product.get("shareVideo")
+        else ""
+    )
     desc = " ".join(pitch_lines)
     if len(desc) > 200:
         desc = desc[:197] + "…"
@@ -189,9 +226,7 @@ def render_page(product: dict) -> str:
     <a class="brand" href="/store/">Digital Underground</a>
   </header>
   <article class="card">
-    <div class="cover-wrap">
-      <img class="cover" src="/p/og/{slug}.jpg" width="1200" height="630" alt="">
-    </div>
+{media_block}
     <div class="body">
       <p class="eyebrow">Digital product</p>
       <h1>{esc(name)}</h1>
@@ -203,7 +238,7 @@ def render_page(product: dict) -> str:
       <p class="back"><a href="/store/">See all products</a></p>
     </div>
   </article>
-</main>
+</main>{promo_script}
 </body>
 </html>
 """

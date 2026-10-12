@@ -1,8 +1,8 @@
 {
  "name": "Hook Bank",
  "short_name": "Hook Bank",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/hook-bank/index.html",
+ "scope": "/hook-bank/",
  "display": "standalone",
  "background_color": "#0a0e14",
  "theme_color": "#0a0e14",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/hook-bank/",
+ "description": "Hook Bank \u2014 Digital Underground"
 }

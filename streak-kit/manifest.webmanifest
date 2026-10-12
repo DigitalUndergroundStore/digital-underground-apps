@@ -1,8 +1,8 @@
 {
  "name": "Streak Kit",
  "short_name": "Streak Kit",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/streak-kit/index.html",
+ "scope": "/streak-kit/",
  "display": "standalone",
  "background_color": "#0b1020",
  "theme_color": "#0b1020",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/streak-kit/",
+ "description": "Streak Kit \u2014 Digital Underground"
 }

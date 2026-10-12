@@ -37,13 +37,25 @@
       var t = bundle.assets[p] || "";
       return /\.css$/.test(p) ? "<style>" + t + "</style>" : "<script>" + t + "<\/script>";
     });
-    var sw = "<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('" + ROOT + "sw.js').catch(function(){});}<\/script>";
-    html = html.replace("</body>", sw + "\n</body>");
+    var duVer = "<script>window.__DU_APP_VERSION__=\"202610072058-0841a886\"><\/script><link rel=\"stylesheet\" href=\"/assets/buyer/pwa-update.css\"><script src=\"/assets/buyer/pwa-update.js\" data-sw-url=\"" + ROOT + "sw.js\" data-app-version=\"202610072058-0841a886\" data-app-label=\"invoice-desk\" defer><\/script>";
+    var pwa = "<link rel=\"stylesheet\" href=\"/assets/buyer/pwa-install.css\"><script src=\"/assets/buyer/pwa-install.js\" data-app-slug=\"invoice-desk\" data-app-name=\"Invoice Desk\" defer><\/script>";
+    html = html.replace("</body>", pwa + duVer + "<script src=\"/assets/buyer/du-about-version.js\" defer><\/script>" + "\n</body>");
     document.open(); document.write(html); document.close();
   }
   function netFail() { status("Couldn't load Invoice Desk. Connect to the internet once to open it; after that it also works offline."); }
-  var hash = (location.hash.match(/(?:^#|&)code=([^&]+)/) || [])[1];
-  if (hash) { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} }
+  function takeCodeFromUrl() {
+    var fromHash = (location.hash.match(/(?:^#|[?&])code=([^&]+)/) || [])[1];
+    var fromSearch = null;
+    try { fromSearch = new URLSearchParams(location.search).get("code"); } catch (e) {}
+    if (fromHash || fromSearch) {
+      try {
+        var clean = location.pathname;
+        history.replaceState(null, "", clean);
+      } catch (e) {}
+    }
+    return fromHash || fromSearch;
+  }
+  var hash = takeCodeFromUrl();
   function tryCode(code, fromLink) {
     status("Unlocking…");
     return derive(decodeURIComponent(code)).then(function (raw) {

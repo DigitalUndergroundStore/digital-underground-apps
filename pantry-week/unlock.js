@@ -2,7 +2,7 @@
    The tool itself is only in app.bin (AES-GCM). Without the code that file is unreadable. */
 (function () {
   "use strict";
-  var CFG = { salt: "Ty1H5kMWo1b0pfQScZKZSQ==", iter: 250000, build: "202610080043-c80fdeb0" };
+  var CFG = { salt: "Ty1H5kMWo1b0pfQScZKZSQ==", iter: 250000, build: "202610112051-pw360" };
   var LS = "du_pantry_week_key_v1";
   var me = document.currentScript, PAGE = me.getAttribute("data-page"), ROOT = me.getAttribute("data-root") || "";
   var $ = function (id) { return document.getElementById(id); };
@@ -37,13 +37,26 @@
       var t = bundle.assets[p] || "";
       return /\.css$/.test(p) ? "<style>" + t + "</style>" : "<script>" + t + "<\/script>";
     });
-    var sw = "<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('" + ROOT + "sw.js').catch(function(){});}<\/script>";
-    html = html.replace("</body>", sw + "\n</body>");
+    var pwa = "<link rel=\"stylesheet\" href=\"/assets/buyer/pwa-install.css\"><script src=\"/assets/buyer/pwa-install.js\" data-app-slug=\"pantry-week\" data-app-name=\"Pantry Week\" defer><\/script>";
+    var duVer = "<script>window.__DU_APP_VERSION__=\"" + CFG.build + "\";window.__DU_BUILD_ID__=\"" + CFG.build + "\";<\/script><link rel=\"stylesheet\" href=\"/assets/buyer/pwa-update.css\"><script src=\"/assets/buyer/pwa-update.js\" data-sw-url=\"" + ROOT + "sw.js\" data-app-version=\"" + CFG.build + "\" data-app-label=\"Pantry Week\" defer><\/script>";
+    // No du-about-version.js here: Pantry Week shows its version in More > Settings, and the script added a stray "Version …" line above the tab bar.
+    html = html.replace("</body>", pwa + duVer + "\n</body>");
     document.open(); document.write(html); document.close();
   }
   function netFail() { status("Couldn't load Pantry Week. Connect to the internet once to open it; after that it also works offline."); }
-  var hash = (location.hash.match(/(?:^#|&)code=([^&]+)/) || [])[1];
-  if (hash) { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} }
+  function takeCodeFromUrl() {
+    var fromHash = (location.hash.match(/(?:^#|[?&])code=([^&]+)/) || [])[1];
+    var fromSearch = null;
+    try { fromSearch = new URLSearchParams(location.search).get("code"); } catch (e) {}
+    if (fromHash || fromSearch) {
+      try {
+        var clean = location.pathname;
+        history.replaceState(null, "", clean);
+      } catch (e) {}
+    }
+    return fromHash || fromSearch;
+  }
+  var hash = takeCodeFromUrl();
   function tryCode(code, fromLink) {
     status("Unlocking…");
     return derive(decodeURIComponent(code)).then(function (raw) {

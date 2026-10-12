@@ -1,8 +1,8 @@
 {
  "name": "Session Forge \u2014 GM Toolkit",
  "short_name": "Session Forge",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/session-forge/index.html",
+ "scope": "/session-forge/",
  "display": "standalone",
  "background_color": "#120e0c",
  "theme_color": "#120e0c",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/session-forge/",
+ "description": "Session Forge \u2014 Digital Underground"
 }

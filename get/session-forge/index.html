@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Get Session Forge</title>
+<meta name="theme-color" content="#07060f">
+<link rel="stylesheet" href="/assets/buyer/pwa-install.css">
+<style>
+body{margin:0;background:#07060f;color:#f5f3ff;font:16px/1.5 system-ui,sans-serif}
+main{max-width:440px;margin:0 auto;padding:32px 20px 48px}
+h1{font-size:1.6rem;margin:0 0 8px}
+.lead{color:#c8c0da;margin:0 0 20px}
+.open{display:inline-flex;align-items:center;justify-content:center;min-height:52px;width:100%;margin-top:12px;border-radius:999px;background:linear-gradient(105deg,#6d28d9,#1e3a8a);color:#fff;font-weight:700;text-decoration:none}
+.alt{margin-top:22px;font-size:.92rem;color:#a8a0c0}
+.alt a{color:#bfe8ff}
+code{font-size:.9em;background:rgba(255,255,255,.08);padding:2px 6px;border-radius:6px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Session Forge</h1>
+  <p class="lead">One link. Tap Install. Works on phone, tablet, or computer.</p>
+  <div id="du-install">
+    <button type="button" id="du-install-btn" class="du-install-btn">Install Session Forge</button>
+    <div id="du-ios-hint" class="du-ios-hint">
+      <strong>iPhone / iPad</strong>
+      <ol><li>Open the app link below in Safari.</li><li>Share → Add to Home Screen.</li></ol>
+      <svg viewBox="0 0 240 80" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="12" width="224" height="56" rx="10" fill="none" stroke="currentColor" stroke-width="2" opacity=".5"/>
+  <text x="120" y="34" text-anchor="middle" font-size="11" fill="currentColor">Safari toolbar</text>
+  <rect x="150" y="42" width="52" height="18" rx="4" fill="currentColor" opacity=".35"/>
+  <text x="176" y="55" text-anchor="middle" font-size="9" fill="currentColor">Share</text>
+</svg>
+    </div>
+  </div>
+  <a class="open" id="open-app" href="https://digitalundergroundstore.com/session-forge/">Open Session Forge</a>
+  <p class="alt"><a href="https://kerzy.gumroad.com/l/wcvgxo">Download ZIP for PC</a> from your Gumroad library (optional).</p>
+  <p class="alt">Your unlock link looks like: <code>https://digitalundergroundstore.com/session-forge/#code=YOUR-CODE</code></p>
+</main>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  var code=q.get("code");
+  var app="https://digitalundergroundstore.com/session-forge/";
+  if(code) app+="#code="+encodeURIComponent(code);
+  document.getElementById("open-app").href=app;
+})();
+</script>
+<script src="/assets/buyer/pwa-install.js" data-app-slug="session-forge" data-app-name="Session Forge" defer></script>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/session-forge/sw.js").catch(function(){});</script>
+</body>
+</html>

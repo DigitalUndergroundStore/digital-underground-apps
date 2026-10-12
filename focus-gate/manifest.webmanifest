@@ -1,8 +1,8 @@
 {
  "name": "Focus Gate",
  "short_name": "Focus Gate",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/focus-gate/index.html",
+ "scope": "/focus-gate/",
  "display": "standalone",
  "background_color": "#070b12",
  "theme_color": "#070b12",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/focus-gate/",
+ "description": "Focus Gate \u2014 Digital Underground"
 }

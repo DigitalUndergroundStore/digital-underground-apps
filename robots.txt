@@ -34,4 +34,5 @@ User-agent: *
 Allow: /$
 Allow: /store/
 Allow: /p/
+Allow: /get/
 Disallow: /

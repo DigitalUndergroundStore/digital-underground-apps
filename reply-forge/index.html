@@ -35,11 +35,27 @@ button:disabled{opacity:.6}
     <button id="du-go" type="submit">Unlock</button>
     <div id="du-msg" role="status" aria-live="polite"></div>
     <div class="du-help">
-      <p>Your buyer code is in <strong>ON YOUR PHONE - START HERE.pdf</strong>, which came with your Reply Forge purchase on Gumroad or Payhip. Tapping the link in that PDF unlocks it automatically. You only need to do this once on each device.</p>
-      <p>Don't have Reply Forge yet? <a href="https://kerzy.gumroad.com/l/nlwvb">Gumroad</a> · <a href="https://payhip.com/b/kLeKf">Payhip</a></p>
+      <p><strong>Fastest setup:</strong> open your personal link from Gumroad (it includes your code), tap <strong>Install app</strong>, and you are done. Works offline after the first open.</p>
+      <p>Or enter your buyer code below. Install guide: <a href="https://digitalundergroundstore.com/get/reply-forge/">https://digitalundergroundstore.com/get/reply-forge/</a></p>
+      <p>Store: <a href="https://digitalundergroundstore.com/store/">digitalundergroundstore.com</a></p>
     </div>
   </form>
-  <noscript><p>Reply Forge needs JavaScript turned on.</p></noscript>
+  <div id="du-install" class="du-install" hidden>
+    <button type="button" id="du-install-btn" class="du-install-btn">Install app</button>
+    <div id="du-ios-hint" class="du-ios-hint">
+      <strong>iPhone / iPad</strong>
+      <ol>
+        <li>Tap <strong>Share</strong> in Safari.</li>
+        <li>Tap <strong>Add to Home Screen</strong>, then <strong>Add</strong>.</li>
+      </ol>
+    </div>
+  </div>
+  <noscript><p>This app needs JavaScript turned on.</p></noscript>
+  <link rel="stylesheet" href="/assets/buyer/pwa-install.css" />
+  <script src="/assets/buyer/pwa-install.js" data-app-slug="reply-forge" data-app-name="Reply Forge" defer></script>
+  <script>window.__DU_APP_VERSION__="202610072058-7c1a6472";</script>
+  <link rel="stylesheet" href="/assets/buyer/pwa-update.css" />
+  <script src="/assets/buyer/pwa-update.js" data-sw-url="./sw.js" data-app-version="202610072058-7c1a6472" data-app-label="Reply Forge" defer></script>
 </main>
 <script src="unlock.js?v=202610072058-7c1a6472" data-page="index.html" data-root=""></script>
 </body>

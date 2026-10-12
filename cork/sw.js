@@ -1,6 +1,6 @@
 /* Cork's offline shell. Only this folder is cached, so a /cork/ install
    does not handle the rest of the site. Gumroad is never intercepted. */
-var CACHE = "cork-shell-v3";
+var CACHE = "cork-shell-v4";
 var SHELL = [
   "index.html",
   "Cork.html",
@@ -22,13 +22,15 @@ function inApp(url) {
 }
 
 self.addEventListener("install", function (event) {
-  event.waitUntil(
-    caches.open(CACHE).then(function (cache) {
-      return cache.addAll(SHELL);
-    }).then(function () {
-      return self.skipWaiting();
-    })
-  );
+  event.waitUntil(caches.open(CACHE).then(function (cache) {
+    return cache.addAll(SHELL);
+  }));
+});
+
+self.addEventListener("message", function (event) {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
 });
 
 self.addEventListener("activate", function (event) {

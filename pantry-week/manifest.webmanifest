@@ -1,8 +1,8 @@
 {
  "name": "Pantry Week",
  "short_name": "Pantry Week",
- "start_url": "./index.html",
- "scope": "./",
+ "start_url": "/pantry-week/index.html",
+ "scope": "/pantry-week/",
  "display": "standalone",
  "background_color": "#2a2218",
  "theme_color": "#2a2218",
@@ -23,5 +23,7 @@
    "type": "image/png",
    "purpose": "maskable"
   }
- ]
+ ],
+ "id": "/pantry-week/",
+ "description": "Pantry Week \u2014 Digital Underground"
 }

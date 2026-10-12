@@ -119,6 +119,33 @@ for (let i = 0; i < 20; i++) {
   console.log("OK", i + 1, out.recipe.name, `[${out.templateId}/${out.profileId}]`, "missing:", out.missing.length);
 }
 
+const ribsPantry = [
+  { id: "p_ribs", item: "ribs" },
+  { id: "p_mustard", item: "mustard" },
+  { id: "p_bbq", item: "barbecue sauce" },
+  { id: "p_paprika", item: "paprika" },
+  { id: "p_sugar", item: "brown sugar" },
+  { id: "p_onion", item: "white onion" },
+].concat(DONALD_PANTRY.filter((p) => !["ribs", "mustard"].includes(p.item)));
+
+for (let attempt = 0; attempt < 30; attempt++) {
+  const ribs = SC.generate(ribsPantry, { variation: attempt, servings: 4, existingRecipes: [], rejectHashes: [] });
+  if (ribs.error) continue;
+  if (ribs.recipe.name.indexOf("BBQ") === -1 && ribs.templateId !== "bbq-ribs") continue;
+  const blob = (ribs.recipe.ingredients || []).map((i) => `${i.qty} ${i.unit} ${i.item}`).join(" | ");
+  if (/black bean/i.test(blob)) {
+    console.error("FAIL ribs recipe contains black beans:", blob);
+    process.exit(1);
+  }
+  const verrs = SC.validateTemplateRecipe(ribs.recipe, ribs.templateId);
+  if (verrs.length) {
+    console.error("FAIL ribs validation:", verrs, blob);
+    process.exit(1);
+  }
+  console.log("OK Oven-Baked BBQ Ribs pantry check:", ribs.recipe.name);
+  break;
+}
+
 if (failed) {
   console.error("\n" + failed + " failures");
   process.exit(1);

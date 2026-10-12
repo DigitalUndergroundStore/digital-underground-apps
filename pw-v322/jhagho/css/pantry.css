@@ -507,7 +507,34 @@ label.field, .stack label {
   text-transform: uppercase;
   color: var(--faint);
 }
-.smart-chef__name { margin: 4px 0 2px; font-family: var(--serif); font-size: 1.35rem; line-height: 1.2; }
+.smart-chef__title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 4px 0 2px;
+}
+.smart-chef__title-row--solo { justify-content: flex-end; margin: 0 0 8px; }
+.smart-chef__name { margin: 0; flex: 1 1 auto; font-family: var(--serif); font-size: 1.35rem; line-height: 1.2; min-width: 0; }
+.smart-chef__new-idea {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--bg-2);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.smart-chef__new-idea svg { flex: 0 0 auto; opacity: 0.85; }
+.smart-chef__actions--reset { margin-top: 8px; }
+.smart-chef__actions--reset button { width: 100%; }
 .smart-chef__ings {
   margin: 10px 0 8px;
   padding: 0;

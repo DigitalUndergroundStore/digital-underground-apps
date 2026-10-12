@@ -49,8 +49,12 @@
     importError: "",
     import: null,
     tabAnim: null,
-    smartChef: { variation: 0, servings: 4, result: null, sessionHashes: [] }
+    smartChef: { variation: 0, servings: 4, result: null, sessionHashes: [] },
+    pantryCook: { key: "", rows: [], shown: 25 }
   };
+
+  const PANTRY_COOK_PAGE = 25;
+  let pantryCookObserver = null;
 
   const $ = (id) => document.getElementById(id);
 
@@ -487,6 +491,107 @@
     else if ($("fill")) $("fill").hidden = true;
     setInert();
     syncBackdrop();
+    if (ui.view === "pantry") setupPantryCookScroll();
+  }
+
+  function pantryCookCacheKey() {
+    const asp = state.assumeStaples || {};
+    return JSON.stringify({
+      pantry: (state.pantry || []).map((p) => p.item),
+      flour: !!asp.flour,
+      sugar: !!asp.sugar,
+      butter: !!asp.butter,
+      recipes: (state.recipes || []).length
+    });
+  }
+
+  function invalidatePantryCookCache() {
+    ui.pantryCook.key = "";
+  }
+
+  function ensurePantryCookRows() {
+    const key = pantryCookCacheKey();
+    if (ui.pantryCook.key !== key) {
+      ui.pantryCook.key = key;
+      ui.pantryCook.rows = PW.suggestRecipes(state.recipes, state.pantry, state.assumeStaples);
+      ui.pantryCook.shown = PANTRY_COOK_PAGE;
+    }
+    return ui.pantryCook.rows;
+  }
+
+  function pantrySuggestBadgeClass(tier) {
+    if (tier === "ready") return "suggest-badge suggest-badge--ready";
+    if (tier === "miss1") return "suggest-badge suggest-badge--miss1";
+    return "suggest-badge suggest-badge--miss23";
+  }
+
+  function pantrySuggestArticleHtml(idea) {
+    const recipe = PW.recipeById(state, idea.id);
+    const badge = `<span class="${pantrySuggestBadgeClass(idea.tier)}">${esc(idea.badge)}</span>`;
+    const miss = idea.missingItems && idea.missingItems.length
+      ? ` · need ${esc(idea.missingItems.slice(0, 3).join(", "))}`
+      : "";
+    return `<article data-pantry-suggest-id="${esc(idea.id)}">
+      <div class="suggest-head">${badge}<h3>${esc(idea.name)}</h3></div>
+      <p class="meta">Uses ${idea.matched} pantry item${idea.matched === 1 ? "" : "s"}${idea.tier !== "ready" ? miss : ""}${recipe && recipe.minutes != null ? " · " + recipe.minutes + " min" : ""}</p>
+      <div class="inline">
+        <button type="button" class="primary" data-action="tonight" data-id="${esc(idea.id)}">Tonight</button>
+        <button type="button" data-action="cook" data-id="${esc(idea.id)}">Cook</button>
+        <button type="button" data-action="open-recipe" data-id="${esc(idea.id)}">Open</button>
+      </div>
+    </article>`;
+  }
+
+  function pantrySuggestGroupLabel(tier) {
+    if (tier === "ready") return "Ready to cook (have everything)";
+    if (tier === "miss1") return "Missing 1";
+    if (tier === "miss23") return "Missing 2–3";
+    return "";
+  }
+
+  function pantrySuggestListHtml(rows, limit) {
+    const slice = rows.slice(0, limit);
+    let html = "";
+    let lastTier = "";
+    slice.forEach((idea) => {
+      if (idea.tier !== lastTier) {
+        const label = pantrySuggestGroupLabel(idea.tier);
+        if (label) html += `<h4 class="suggest-group">${esc(label)}</h4>`;
+        lastTier = idea.tier;
+      }
+      html += pantrySuggestArticleHtml(idea);
+    });
+    const more = rows.length > limit;
+    html += `<div id="pantrySuggestSentinel" class="pantry-suggest-sentinel"${more ? "" : " hidden"} aria-hidden="true"></div>`;
+    if (rows.length && limit >= rows.length) {
+      html += `<p class="meta pantry-suggest-end">${rows.length} recipe${rows.length === 1 ? "" : "s"}</p>`;
+    }
+    return html;
+  }
+
+  function renderPantrySuggestList() {
+    const list = document.getElementById("pantrySuggestList");
+    if (!list) return;
+    const rows = ui.pantryCook.rows || [];
+    list.innerHTML = pantrySuggestListHtml(rows, ui.pantryCook.shown);
+    setupPantryCookScroll();
+  }
+
+  function setupPantryCookScroll() {
+    if (pantryCookObserver) {
+      pantryCookObserver.disconnect();
+      pantryCookObserver = null;
+    }
+    const sentinel = document.getElementById("pantrySuggestSentinel");
+    if (!sentinel || sentinel.hasAttribute("hidden")) return;
+    pantryCookObserver = new IntersectionObserver((entries) => {
+      if (!entries[0] || !entries[0].isIntersecting) return;
+      const rows = ui.pantryCook.rows || [];
+      if (ui.pantryCook.shown >= rows.length) return;
+      ui.pantryCook.shown = Math.min(rows.length, ui.pantryCook.shown + PANTRY_COOK_PAGE);
+      renderPantrySuggestList();
+    }, { root: null, rootMargin: "240px 0px", threshold: 0 });
+    pantryCookObserver.observe(sentinel);
   }
 
   function tonightHtml() {
@@ -768,6 +873,12 @@
     // Only ideas the user has seen and moved past (New idea) are remembered; pantry edits no longer burn ideas.
   }
 
+  const ICON_REFRESH = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.65 6.35A7.958 7.958 0 0 0 12 4V1L7 6l5 5V7c2.76 0 5 2.24 5 5 0 1.07-.34 2.07-.92 2.89l1.46 1.46A7.938 7.938 0 0 0 19 12c0-2.21-.9-4.21-2.35-5.65zM6 12c0-1.07.34-2.07.92-2.89L5.46 7.65A7.938 7.938 0 0 0 5 12c0 2.21.9 4.21 2.35 5.65l1.46-1.46A4.98 4.98 0 0 1 7 12zm7 7-5-5h3c0-2.76 2.24-5 5-5v3l5-5-5-5v3a7 7 0 0 0-7 7h3z"/></svg>';
+
+  function smartChefNewIdeaBtn() {
+    return `<button type="button" class="smart-chef__new-idea" data-action="smart-chef-again" aria-label="New idea" title="New idea">${ICON_REFRESH}<span>New idea</span></button>`;
+  }
+
   function smartChefSectionHtml() {
     const head = `<div class="smart-chef__head">
         <div>
@@ -783,21 +894,23 @@
     }
     refreshSmartChef(false);
     const r = ui.smartChef.result;
-    const retryBar = `<div class="smart-chef__actions toolbar">
-        <button type="button" class="primary" data-action="smart-chef-again">New idea</button>
+    const retryTop = `<div class="smart-chef__title-row smart-chef__title-row--solo">${smartChefNewIdeaBtn()}</div>`;
+    const resetBar = `<div class="smart-chef__actions toolbar smart-chef__actions--reset">
         <button type="button" data-action="smart-chef-reset">Reset Smart Chef history</button>
       </div>`;
     if (!r || r.error) {
       return `<section class="smart-chef smart-chef--idle" aria-labelledby="smartChefTitle">${head}
+        ${retryTop}
         <p class="empty">${esc(r && r.error ? r.error : "Could not build a recipe yet.")}</p>
-        ${retryBar}
+        ${resetBar}
       </section>`;
     }
     const recipe = smartChefDraftRecipe();
     if (!recipe) {
       return `<section class="smart-chef smart-chef--idle" aria-labelledby="smartChefTitle">${head}
+        ${retryTop}
         <p class="empty">Could not build a recipe yet.</p>
-        ${retryBar}
+        ${resetBar}
       </section>`;
     }
     ensureSmartChefInRecipes();
@@ -816,7 +929,10 @@
           <div class="card-bar ${barClass(recipe)}"></div>
           <div class="card-body">
             <p class="smart-chef__kicker">${esc(r.templateLabel)} · ${esc(r.profileLabel)}</p>
-            <h4 class="smart-chef__name">${esc(recipe.name)}</h4>
+            <div class="smart-chef__title-row">
+              <h4 class="smart-chef__name">${esc(recipe.name)}</h4>
+              ${smartChefNewIdeaBtn()}
+            </div>
             <p class="meta">${esc(timeLabel(recipe))} · ${recipe.servings} servings</p>
             ${badges ? `<p class="diet">${esc(badges)}</p>` : ""}
           </div>
@@ -833,9 +949,8 @@
         <button type="button" data-action="smart-chef-plan">Add to plan</button>
         <button type="button" data-action="smart-chef-shop">Add missing to list</button>
         <button type="button" data-action="smart-chef-cook">Cook</button>
-        <button type="button" data-action="smart-chef-again">New idea</button>
-        <button type="button" data-action="smart-chef-reset">Reset Smart Chef history</button>
       </div>
+      ${resetBar}
     </section>`;
   }
 

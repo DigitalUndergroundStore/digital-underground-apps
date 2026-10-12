@@ -128,6 +128,7 @@
 
   function ingFormatted(qty, unit, item, have, fromPantryOverride) {
     var row = formatPantryIngredient(item, qty, unit);
+    if (!row.unit && row.qty != null && row.qty !== "") row.unit = "each";
     var fp = fromPantryOverride != null ? fromPantryOverride : (haveItem(have, item) || STAPLES[stapleKey(row.item)]);
     return { qty: row.qty, unit: row.unit, item: row.item, fromPantry: fp };
   }
@@ -200,19 +201,39 @@
       protein = proteins[0];
     }
 
+    var proteinKeySet = {};
+    LEX.protein.forEach(function (p) {
+      p.keys.forEach(function (key) {
+        proteinKeySet[stapleKey(key)] = 1;
+        if (window.PW_PANTRY_NORM) proteinKeySet[PW_PANTRY_NORM.canonPantryKey(key)] = 1;
+      });
+      proteinKeySet[stapleKey(p.label)] = 1;
+    });
+
+    function pantryKeyMatchesLex(pantryKey, lexName) {
+      var v = stapleKey(lexName);
+      var k = stapleKey(pantryKey);
+      if (!k || !v) return false;
+      if (k === v) return true;
+      if (k.length > v.length && k.indexOf(v) === 0 && (k.length === v.length || k.charAt(v.length) === " ")) return true;
+      if (v.length > k.length && v.indexOf(k) === 0 && (v.length === k.length || v.charAt(k.length) === " ")) return true;
+      return false;
+    }
+
     var vegFast = [];
     var vegSlow = [];
     keys.forEach(function (k) {
+      if (proteinKeySet[k] || proteinKeySet[stapleKey(have[k] || k)]) return;
       if (CONDIMENT_KEYS[k] || isCondiment(have[k] || k)) return;
       if (k.indexOf("peanut butter") !== -1) return;
       LEX.vegFast.forEach(function (v) {
-        if (k.indexOf(stapleKey(v)) !== -1 || stapleKey(v).indexOf(k) !== -1) vegFast.push(have[k] || v);
+        if (pantryKeyMatchesLex(k, v)) vegFast.push(have[k] || v);
       });
       LEX.vegSlow.forEach(function (v) {
-        if (k.indexOf(stapleKey(v)) !== -1) vegFast.indexOf(have[k]) === -1 && vegSlow.push(have[k] || v);
+        if (pantryKeyMatchesLex(k, v) && vegFast.indexOf(have[k]) === -1) vegSlow.push(have[k] || v);
       });
       LEX.vegAllium.forEach(function (v) {
-        if (k.indexOf("onion") !== -1 && vegFast.indexOf(have[k]) === -1) vegFast.push(have[k] || "onion");
+        if (pantryKeyMatchesLex(k, v) && vegFast.indexOf(have[k]) === -1) vegFast.push(have[k] || "onion");
       });
     });
     vegFast = dedupe(vegFast).slice(0, 3);
@@ -244,7 +265,7 @@
       return;
     }
     if (protein.def.label === "pork chops") {
-      ings.push(ing(scaleQty(4, servings, 4), "", protein.name, true));
+      ings.push(ing(scaleQty(4, servings, 4), "each", protein.name, true));
       return;
     }
     if (protein.def.label === "pork ribs") {
@@ -501,7 +522,7 @@
     if (!sauceItem) return false;
     var sk = stapleKey(sauceItem);
     if (templateId === "frittata" || templateId === "salad" || templateId === "sandwich" || templateId === "burger" || templateId === "wrap" ||
-        templateId === "grilled-cheese" || templateId === "meatloaf") return false;
+        templateId === "grilled-cheese" || templateId === "meatloaf" || templateId === "bbq-ribs") return false;
     if (sk.indexOf("broth") !== -1 && (templateId === "grain-bowl" || templateId === "tacos")) return false;
     if (sk.indexOf("peanut") !== -1) return templateId === "satay-stir-fry" || (templateId === "curry" && sk.indexOf("coconut") === -1);
     return true;
@@ -522,14 +543,10 @@
       }
     }
     if (p.sauce && templateAllowsSauce(tid, p.sauce.item)) {
-      if (haveItem(have, p.sauce.item) || tid === "soup" || tid === "curry" || tid === "chili") {
-        list.push(ingFormatted(scaleQty(p.sauce.qty, servings, 4), p.sauce.unit, p.sauce.item, have, haveItem(have, p.sauce.item)));
-      }
+      list.push(ingFormatted(scaleQty(p.sauce.qty, servings, 4), p.sauce.unit, p.sauce.item, have, haveItem(have, p.sauce.item)));
     }
     p.season.forEach(function (s) {
-      if (haveItem(have, s) || STAPLES[stapleKey(s)]) {
-        list.push(ingFormatted(0.5, "tsp", s, have, haveItem(have, s) || !!STAPLES[stapleKey(s)]));
-      }
+      list.push(ingFormatted(0.5, "tsp", s, have, haveItem(have, s) || !!STAPLES[stapleKey(s)]));
     });
     list.push(ingFormatted(2, "tbsp", "olive oil", have, haveItem(have, "olive oil") || true));
     list.push(ing(0.5, "tsp", "salt", true));
@@ -549,7 +566,7 @@
         var ings = [];
         var p = b.protein;
         addMainProtein(ings, p, servings);
-        b.vegFast.forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegFast.forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         if (b.starch && stapleKey(b.starch.name).indexOf("rice") !== -1) {
           ings.push(ing(scaleQty(b.starch.def.qty, servings, 4), b.starch.def.unit, b.starch.name, true));
         }
@@ -573,7 +590,7 @@
         var ings = [];
         ings.push(ing(scaleQty(12, servings, 4), "oz", b.starch.name, true));
         if (b.protein) addMainProtein(ings, b.protein, servings);
-        b.vegFast.slice(0, 2).forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegFast.slice(0, 2).forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         addProfileIngredients(ings, profile, b.have, servings, "pasta");
         var steps = [
           "Boil a large pot of salted water; cook pasta 9–11 minutes until al dente (10 minutes). Reserve 1/2 cup pasta water.",
@@ -596,7 +613,7 @@
         var ings = [];
         addMainProtein(ings, b.protein, servings);
         b.vegSlow.concat(b.vegFast).slice(0, 3).forEach(function (v) {
-          ings.push(ing(scaleQty(1, servings, 4), "", v, true));
+          ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true));
         });
         addProfileIngredients(ings, profile, b.have, servings, "skillet");
         var steps = [
@@ -624,7 +641,7 @@
           ings.push(ing(scaleQty(1.25, servings, 4), "lb", b.protein.name, true));
         }
         (b.vegSlow.length ? b.vegSlow : b.vegFast).slice(0, 2).forEach(function (v) {
-          ings.push(ing(scaleQty(1, servings, 4), "", v, true));
+          ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true));
         });
         addProfileIngredients(ings, profile, b.have, servings, "sheet-pan");
         var steps = [
@@ -648,7 +665,7 @@
       build: function (b, profile, servings) {
         var ings = [];
         if (b.protein) addMainProtein(ings, b.protein, servings);
-        b.vegSlow.concat(b.vegFast).slice(0, 3).forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegSlow.concat(b.vegFast).slice(0, 3).forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         ings.push(ing(scaleQty(4, servings, 4), "cup", "chicken broth", haveItem(b.have, "chicken broth") || haveItem(b.have, "broth")));
         addProfileIngredients(ings, profile, b.have, servings, "soup");
         var steps = [
@@ -673,7 +690,7 @@
         var ings = [];
         if (b.protein) addMainProtein(ings, b.protein, servings);
         else ings.push(ing(scaleQty(1, servings, 4), "can", "chickpeas", haveItem(b.have, "chickpeas")));
-        b.vegFast.slice(0, 2).forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegFast.slice(0, 2).forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         if (b.starch && stapleKey(b.starch.name).indexOf("rice") !== -1) {
           ings.push(ing(scaleQty(1.5, servings, 4), "cup", b.starch.name, true));
         }
@@ -681,7 +698,7 @@
         var steps = [
           "Cook rice if serving with it (15 minutes covered).",
           "Sauté aromatics in oil 3 minutes. Add protein; cook " + (b.protein ? b.protein.def.cookMin : 5) + " minutes.",
-          "Stir in curry spices 30 seconds, then coconut milk and vegetables.",
+          "Stir in curry powder 30 seconds, then coconut milk and vegetables.",
           "Simmer 12 minutes until sauce thickens and protein is cooked.",
           "Finish with " + PROFILES[profile].finish + "."
         ];
@@ -699,12 +716,12 @@
         var ings = [];
         ings.push(ing(scaleQty(b.starch.def.qty, servings, 4), b.starch.def.unit, b.starch.name, true));
         if (b.protein) addMainProtein(ings, b.protein, servings);
-        b.vegFast.slice(0, 3).forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegFast.slice(0, 3).forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         addProfileIngredients(ings, profile, b.have, servings, "grain-bowl");
         var steps = [
           "Cook grain according to package (12–15 minutes).",
           b.protein ? "Season and sear " + b.protein.def.label + " in a skillet, " + b.protein.def.cookMin + " minutes." : "Roast or sauté vegetables with oil 8 minutes.",
-          "Warm sauce with spices 3 minutes.",
+          "Warm olive oil with cumin and chili powder 3 minutes.",
           "Divide grain among bowls; top with protein, vegetables, and sauce. Finish with " + PROFILES[profile].finish + "."
         ];
         return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 26 };
@@ -724,7 +741,7 @@
         var ings = [];
         addMainProtein(ings, b.protein, servings);
         ings.push(ing(scaleQty(8, servings, 4), "", "tortillas", true));
-        b.vegFast.slice(0, 2).forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegFast.slice(0, 2).forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         addProfileIngredients(ings, profile, b.have, servings, "tacos");
         var steps = [
           "Brown " + b.protein.def.label + " with spices in a skillet, " + b.protein.def.cookMin + " minutes.",
@@ -745,7 +762,7 @@
       build: function (b, profile, servings) {
         var ings = [];
         ings.push(ing(scaleQty(8, servings, 4), "", "eggs", true));
-        b.vegFast.concat(b.vegSlow).slice(0, 2).forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegFast.concat(b.vegSlow).slice(0, 2).forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         if (haveItem(b.have, "cheese") || haveItem(b.have, "cheddar")) {
           ings.push(ing(scaleQty(0.5, servings, 4), "cup", "cheddar cheese", true));
         }
@@ -769,7 +786,7 @@
       build: function (b, profile, servings) {
         var ings = [];
         if (b.protein) addMainProtein(ings, b.protein, servings);
-        b.vegFast.slice(0, 4).forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegFast.slice(0, 4).forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         ings.push(ing(2, "tbsp", "olive oil", true));
         ings.push(ing(1, "tbsp", "lemon juice", haveItem(b.have, "lemon")));
         addProfileIngredients(ings, profile, b.have, servings, "salad");
@@ -815,7 +832,7 @@
       build: function (b, profile, servings) {
         var ings = [];
         addMainProtein(ings, b.protein, servings);
-        b.vegSlow.slice(0, 2).forEach(function (v) { ings.push(ing(scaleQty(1, servings, 4), "", v, true)); });
+        b.vegSlow.slice(0, 2).forEach(function (v) { ings.push(ingFormatted(scaleQty(1, servings, 4), "each", v, b.have, true)); });
         if (b.starch) ings.push(ing(scaleQty(b.starch.def.qty, servings, 4), b.starch.def.unit, b.starch.name, true));
         if (haveItem(b.have, "cheese")) ings.push(ing(scaleQty(1, servings, 4), "cup", "cheddar cheese", true));
         addProfileIngredients(ings, profile, b.have, servings, "casserole");
@@ -865,14 +882,22 @@
       fits: function (b) { return b.protein && b.protein.def.label === "pork ribs"; },
       build: function (b, profile, servings) {
         var ings = [];
+        var have = b.have;
         addMainProtein(ings, b.protein, servings);
-        if (haveItem(b.have, "mustard")) ings.push(ingFormatted(2, "tbsp", "mustard", b.have, true));
-        b.vegFast.slice(0, 1).forEach(function (v) { ings.push(ingFormatted(1, "", v, b.have, true)); });
-        addProfileIngredients(ings, profile, b.have, servings, "bbq-ribs");
+        var bbqSauce = haveItem(have, "barbecue sauce") || haveItem(have, "bbq sauce");
+        ings.push(ing(scaleQty(1, servings, 4), "cup", "barbecue sauce", bbqSauce));
+        ings.push(ing(1, "tbsp", "brown sugar", haveItem(have, "brown sugar")));
+        ings.push(ing(1, "tsp", "paprika", haveItem(have, "paprika")));
+        if (haveItem(have, "mustard")) ings.push(ingFormatted(2, "tbsp", "mustard", have, true));
+        if (haveItem(have, "onion")) ings.push(ingFormatted(1, "", "onion", have, true));
+        ings.push(ing(1, "tsp", "salt", true));
+        ings.push(ing(0.5, "tsp", "black pepper", true));
+        ings.push(ingFormatted(1, "tbsp", "olive oil", have, haveItem(have, "olive oil") || true));
         var steps = [
-          "Rub ribs with mustard, salt, pepper, and spices (5 minutes).",
-          "Wrap tightly in foil. Bake at 300°F 2 hours until tender (or simmer in covered pot).",
-          "Unwrap, brush with sauce, and broil or grill 5 minutes to caramelize.",
+          "Mix barbecue sauce, brown sugar, paprika, mustard (if using), salt, and black pepper into a rub (5 minutes).",
+          "Coat ribs with the rub and olive oil. Wrap tightly in foil.",
+          "Bake at 300°F 2 hours until tender (or simmer in a covered pot).",
+          "Unwrap, brush with extra barbecue sauce, and broil or grill 5 minutes to caramelize.",
           "Rest 5 minutes, slice between bones, and serve."
         ];
         return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 75 };
@@ -919,9 +944,9 @@
         if (haveItem(b.have, "mustard")) ings.push(ingFormatted(1, "tbsp", "mustard", b.have, true));
         addProfileIngredients(ings, profile, b.have, servings, "wrap");
         var steps = [
-          "Cook " + b.protein.def.label + " with spices until done, " + b.protein.def.cookMin + " minutes.",
+          "Cook " + b.protein.def.label + " with onion and garlic until done, " + b.protein.def.cookMin + " minutes.",
           "Warm tortillas 30 seconds per side.",
-          "Fill with protein, vegetables, and sauce. Roll tightly and slice in half."
+          "Fill with protein, vegetables, and salsa. Roll tightly and slice in half."
         ];
         return { ingredients: markPantry(ings, b.have), steps: steps, minutes: 20 };
       }
@@ -1025,9 +1050,9 @@
         ings.push(ing(scaleQty(2, servings, 4), "lb", b.protein.name, true));
         ings.push(ing(scaleQty(1.5, servings, 4), "lb", "potatoes", true));
         if (b.vegSlow.indexOf("carrot") !== -1 || haveItem(b.have, "carrot")) {
-          ings.push(ing(scaleQty(3, servings, 4), "", "carrots", haveItem(b.have, "carrot")));
+          ings.push(ing(scaleQty(3, servings, 4), "each", "carrots", haveItem(b.have, "carrot")));
         } else {
-          ings.push(ing(scaleQty(2, servings, 4), "", "carrots", false));
+          ings.push(ing(scaleQty(2, servings, 4), "each", "carrots", false));
         }
         if (haveItem(b.have, "onion")) ings.push(ingFormatted(1, "", "onion", b.have, true));
         ings.push(ing(scaleQty(2, servings, 4), "cup", "beef broth", haveItem(b.have, "beef broth") || haveItem(b.have, "broth")));
@@ -1052,7 +1077,7 @@
       },
       build: function (b, profile, servings) {
         var ings = [];
-        ings.push(ing(scaleQty(1, servings, 4), "", "whole chicken", haveItem(b.have, "chicken") || true));
+        ings.push(ing(scaleQty(1, servings, 4), "each", "whole chicken", haveItem(b.have, "chicken") || true));
         if (hasPotatoes(b)) ings.push(ing(scaleQty(1.5, servings, 4), "lb", "potatoes", true));
         b.vegFast.slice(0, 2).forEach(function (v) {
           ings.push(ingFormatted(1, "", v, b.have, true));
@@ -1429,6 +1454,113 @@
 
   var NOVELTY_NAME_RE = /\b(zesty|savory|savoury|fragrant|smoky|rustic|cozy|hearty|ginger|garlic|weeknight|quick)\b/i;
 
+  var TEMPLATE_FORBIDDEN = {
+    "bbq-ribs": /black bean|kidney bean|chickpea|pasta|spaghetti|tortilla|quinoa|lettuce|salad greens/i,
+    burger: /black bean|kidney bean|chickpea|coconut milk|curry/i,
+    "pan-chops": /black bean|tortilla|salsa/i
+  };
+
+  function ingredientBlob(recipe) {
+    return (recipe.ingredients || []).map(function (ing) {
+      var k = stapleKey(ing.item);
+      if (window.PW_PANTRY_NORM) k += " " + PW_PANTRY_NORM.canonPantryKey(ing.item);
+      return k;
+    }).join(" ");
+  }
+
+  function hasProperUnit(ing) {
+    var unit = String(ing.unit || "").trim();
+    var item = String(ing.item || "").trim();
+    if (!item) return false;
+    if (unit) return true;
+    if (/^(medium|large|small)\s/i.test(item)) return true;
+    if (/\b(minced|diced|sliced|grated|chopped)\b/i.test(item)) return true;
+    if (ing.qty == null || ing.qty === "") return true;
+    var sk = stapleKey(item);
+    if (/^(egg|onion)$/.test(sk) || /bun|tortilla/.test(sk)) return true;
+    return false;
+  }
+
+  var STEP_VOCAB = [
+    { re: /\bsauce\b/i, need: function (b) { return /sauce|salsa|broth|tomato|coconut milk|crushed tomato|barbecue/.test(b); } },
+    { re: /\bspices\b/i, need: function (b) { return /paprika|cumin|chili|oregano|thyme|curry|garam|basil|ginger|brown sugar/.test(b); } },
+    { re: /\bseasonings\b/i, need: function (b) { return /salt|pepper|oregano|cumin|soy sauce|paprika|thyme|basil/.test(b); } },
+    { re: /\baromatics\b/i, need: function (b) { return /garlic|onion|ginger|scallion|shallot/.test(b); } }
+  ];
+
+  function validateTemplateRecipe(recipe, templateId) {
+    var errors = [];
+    (recipe.ingredients || []).forEach(function (ing) {
+      if (!hasProperUnit(ing)) errors.push("unitless: " + [ing.qty, ing.unit, ing.item].join(" ").trim());
+    });
+    var blob = ingredientBlob(recipe);
+    var forbidden = TEMPLATE_FORBIDDEN[templateId];
+    if (forbidden && forbidden.test(blob)) errors.push("off-role ingredient for " + templateId);
+    (recipe.steps || []).forEach(function (step, si) {
+      STEP_VOCAB.forEach(function (rule) {
+        if (rule.re.test(step) && !rule.need(blob)) {
+          errors.push("step " + (si + 1) + " references missing pantry item (" + rule.re.source + ")");
+        }
+      });
+    });
+    return errors;
+  }
+
+  function minimalPantryForTemplate(templateId) {
+    var base = ["onion", "garlic", "olive oil", "salt", "black pepper"];
+    var byId = {
+      "bbq-ribs": ["pork ribs", "barbecue sauce", "paprika", "brown sugar", "mustard"].concat(base),
+      burger: ["ground beef", "hamburger buns", "cheddar", "mustard"].concat(base),
+      "pan-chops": ["pork chops", "potato"].concat(base),
+      pasta: ["pasta", "ground beef", "crushed tomatoes"].concat(base),
+      chili: ["ground beef", "kidney beans", "crushed tomatoes"].concat(base),
+      tacos: ["ground beef", "tortillas", "salsa", "cheddar"].concat(base),
+      "stir-fry": ["chicken breast", "rice", "soy sauce", "bell pepper", "broccoli"].concat(base),
+      "fried-rice": ["rice", "eggs", "soy sauce", "peas"].concat(base),
+      frittata: ["eggs", "cheddar"].concat(base),
+      soup: ["chicken breast", "chicken broth", "carrot", "celery"].concat(base),
+      wrap: ["ground beef", "tortillas", "lettuce"].concat(base),
+      salad: ["chicken breast", "lettuce", "tomato", "cucumber", "bell pepper", "spinach"].concat(base),
+      casserole: ["ground beef", "pasta", "cheddar", "crushed tomatoes", "potato", "carrot"].concat(base),
+      sandwich: ["ground beef", "bread", "cheddar", "mustard"].concat(base),
+      "grain-bowl": ["rice", "chicken breast", "black beans", "corn"].concat(base),
+      curry: ["chicken breast", "coconut milk", "curry powder"].concat(base),
+      skillet: ["ground beef", "potato", "cheddar"].concat(base),
+      "sheet-pan": ["chicken breast", "potato", "broccoli"].concat(base),
+      meatloaf: ["ground beef", "bread", "eggs"].concat(base),
+      "shepherds-pie": ["ground beef", "potato"].concat(base),
+      "pot-roast": ["pot roast", "potato", "carrot"].concat(base),
+      "roast-chicken": ["whole chicken", "potato", "carrot"].concat(base),
+      "chicken-dinner": ["chicken breast", "rice", "broccoli"].concat(base),
+      hash: ["eggs", "potato", "bacon"].concat(base),
+      "grilled-cheese": ["bread", "cheddar", "tomato"].concat(base)
+    };
+    var list = byId[templateId] || ["chicken breast", "rice"].concat(base);
+    return list.map(function (item) { return { id: "t_" + item, item: item }; });
+  }
+
+  function validateAllTemplates() {
+    var failures = [];
+    TEMPLATE_DEFS.forEach(function (t) {
+      (t.profiles || ["canadian"]).forEach(function (profile) {
+        var pantry = minimalPantryForTemplate(t.id);
+        var buckets = classifyPantry(pantry);
+        if (!t.fits(buckets)) {
+          failures.push({ template: t.id, profile: profile, error: "minimal pantry does not fit template" });
+          return;
+        }
+        var built = t.build(buckets, profile, 4);
+        var recipe = {
+          ingredients: (built.ingredients || []).map(function (i) { return { qty: i.qty, unit: i.unit, item: i.item }; }),
+          steps: built.steps || []
+        };
+        var errs = validateTemplateRecipe(recipe, t.id);
+        if (errs.length) failures.push({ template: t.id, profile: profile, errors: errs, name: buildName(t, profile, buckets, 0) });
+      });
+    });
+    return failures;
+  }
+
   function failsSanity(result, variation) {
     var recipe = result.recipe;
     var name = String(recipe.name || "");
@@ -1447,6 +1579,7 @@
     })) return true;
     if (nameL.indexOf("peanut") !== -1 && tid === "frittata") return true;
     if (nameL.indexOf("grain bowl") !== -1 && items.indexOf("bread") !== -1) return true;
+    if (validateTemplateRecipe(recipe, tid).length) return true;
     return false;
   }
 
@@ -1508,6 +1641,8 @@
     loadHashes: loadHashes,
     signatureHash: signatureHash,
     photoKeyFor: photoKeyFor,
+    validateTemplateRecipe: validateTemplateRecipe,
+    validateAllTemplates: validateAllTemplates,
     templates: TEMPLATE_DEFS.map(function (t) { return { id: t.id, name: t.shortName }; })
   };
 })();

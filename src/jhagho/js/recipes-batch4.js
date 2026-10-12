@@ -164,7 +164,7 @@
       {
         "qty": 6,
         "unit": "clove",
-        "item": "s garlic"
+        "item": "garlic"
       }
     ],
     "steps": [
@@ -254,7 +254,7 @@
       {
         "qty": 2,
         "unit": "lb",
-        "item": "s ground beef"
+        "item": "ground beef"
       },
       {
         "qty": 1,
@@ -513,7 +513,7 @@
       {
         "qty": 3,
         "unit": "l",
-        "item": "arge fresh mozzarella balls"
+        "item": "Lrge fresh mozzarella balls"
       },
       {
         "qty": 24,
@@ -573,7 +573,7 @@
       {
         "qty": 4,
         "unit": "l",
-        "item": "arge eggs"
+        "item": "Lrge eggs"
       },
       {
         "qty": 1,
@@ -654,12 +654,12 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s butter"
+        "item": "butter"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s brown sugar"
+        "item": "brown sugar"
       },
       {
         "qty": 1,
@@ -698,7 +698,7 @@
       {
         "qty": 8,
         "unit": "lb",
-        "item": "s potatoes"
+        "item": "potatoes"
       },
       {
         "qty": null,
@@ -751,7 +751,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s butter or olive oil"
+        "item": "butter or olive oil"
       },
       {
         "qty": 2,
@@ -1100,9 +1100,9 @@
         "item": "chopped scallions"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "oil"
       },
       {
         "qty": 2,
@@ -1117,7 +1117,7 @@
       {
         "qty": 6,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 1,
@@ -1127,7 +1127,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge plantain"
+        "item": "Lrge plantain"
       },
       {
         "qty": null,
@@ -1167,17 +1167,17 @@
       {
         "qty": 250,
         "unit": "g",
-        "item": "rams (about 0.5 lb) ground veal"
+        "item": "(about 0.5 lb) ground veal"
       },
       {
         "qty": 250,
         "unit": "g",
-        "item": "rams ground pork"
+        "item": "ground pork"
       },
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge egg"
+        "item": "Lrge egg"
       },
       {
         "qty": 1,
@@ -1320,7 +1320,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge orange"
+        "item": "Lrge orange"
       },
       {
         "qty": 1,
@@ -1335,7 +1335,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge banana"
+        "item": "Lrge banana"
       },
       {
         "qty": 2,
@@ -1380,7 +1380,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s flour"
+        "item": "flour"
       },
       {
         "qty": 1,
@@ -1436,22 +1436,22 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s dried fava beans"
+        "item": "dried fava beans"
       },
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 3,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup olive oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "olive oil"
       },
       {
         "qty": null,
@@ -1515,7 +1515,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s wheat flour"
+        "item": "wheat flour"
       },
       {
         "qty": 1,
@@ -1676,7 +1676,7 @@
       {
         "qty": 1,
         "unit": "pinch",
-        "item": "of salt"
+        "item": "salt"
       },
       {
         "qty": 450,
@@ -1822,9 +1822,9 @@
         "item": "–3 oz dry sherry (you may substitute cognac instead)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup virgin olive oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "virgin olive oil"
       },
       {
         "qty": 3,
@@ -1871,7 +1871,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 1,
@@ -1879,9 +1879,9 @@
         "item": "evaporated milk or condensed milk"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup sugar (adjust according to taste)"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "sugar (adjust according to taste)"
       },
       {
         "qty": null,
@@ -1930,7 +1930,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s vegetable oil"
+        "item": "vegetable oil"
       },
       {
         "qty": 1,
@@ -1940,7 +1940,7 @@
       {
         "qty": 3,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -1975,7 +1975,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s beef or chicken broth"
+        "item": "beef or chicken broth"
       },
       {
         "qty": 1,
@@ -2030,17 +2030,17 @@
       {
         "qty": 4,
         "unit": "l",
-        "item": "arge onions, thinly sliced"
+        "item": "Lrge onions, thinly sliced"
       },
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s grated ginger"
+        "item": "grated ginger"
       },
       {
         "qty": 2,
@@ -2070,12 +2070,12 @@
       {
         "qty": 2,
         "unit": "lb",
-        "item": "s chicken pieces (preferably chicken thighs or drumsticks)"
+        "item": "chicken pieces (preferably chicken thighs or drumsticks)"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s vegetable oil"
+        "item": "vegetable oil"
       },
       {
         "qty": null,
@@ -2116,17 +2116,17 @@
       {
         "qty": 4,
         "unit": "slice",
-        "item": "s day-old French bread, cubed"
+        "item": "day-old French bread, cubed"
       },
       {
         "qty": 2,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 4,
         "unit": "tbsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": null,
@@ -2166,7 +2166,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -2424,7 +2424,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": null,
@@ -2766,7 +2766,7 @@
       {
         "qty": 6,
         "unit": "clove",
-        "item": "s garlic"
+        "item": "garlic"
       },
       {
         "qty": null,
@@ -2962,7 +2962,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s diced drained pimento"
+        "item": "diced drained pimento"
       },
       {
         "qty": 1,
@@ -3119,7 +3119,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s miso paste"
+        "item": "miso paste"
       },
       {
         "qty": 1,
@@ -3129,7 +3129,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s soup stock"
+        "item": "soup stock"
       },
       {
         "qty": 1,
@@ -3166,7 +3166,7 @@
       {
         "qty": 2,
         "unit": "slice",
-        "item": "s of bread"
+        "item": "of bread"
       },
       {
         "qty": null,
@@ -3216,7 +3216,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s pico de gallo"
+        "item": "pico de gallo"
       },
       {
         "qty": null,
@@ -3236,7 +3236,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": 1,
@@ -3283,7 +3283,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s (720 ml) dry milk powder"
+        "item": "(720 ml) dry milk powder"
       },
       {
         "qty": 1,
@@ -3337,14 +3337,14 @@
         "item": "½ cup powdered milk"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup white granulated sugar"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "white granulated sugar"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s cornstarch"
+        "item": "cornstarch"
       },
       {
         "qty": null,
@@ -3400,12 +3400,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s wheat flour"
+        "item": "wheat flour"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s powdered milk"
+        "item": "powdered milk"
       },
       {
         "qty": 1,
@@ -3505,7 +3505,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s soy sauce"
+        "item": "soy sauce"
       },
       {
         "qty": 100,
@@ -3576,7 +3576,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s soft-boiled red kidney beans"
+        "item": "soft-boiled red kidney beans"
       },
       {
         "qty": null,
@@ -3586,12 +3586,12 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s evaporated milk"
+        "item": "evaporated milk"
       },
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s sweetened condensed milk"
+        "item": "sweetened condensed milk"
       },
       {
         "qty": null,
@@ -3680,7 +3680,7 @@
       {
         "qty": 4,
         "unit": "tbsp",
-        "item": "s Scotch whiskey"
+        "item": "Scotch whiskey"
       },
       {
         "qty": 1,
@@ -3690,7 +3690,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s oatmeal, toasted in a 375°F (200°C) oven for 10 minutes"
+        "item": "oatmeal, toasted in a 375°F (200°C) oven for 10 minutes"
       }
     ],
     "steps": [
@@ -3776,7 +3776,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge bunch of fresh herbs (coriander leaf, thyme, parsley, celery)"
+        "item": "Lrge bunch of fresh herbs (coriander leaf, thyme, parsley, celery)"
       },
       {
         "qty": 2,
@@ -3852,9 +3852,9 @@
         "item": "⅓ cup nata de coco (coconut gel in syrup)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup kaong in syrup"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "kaong in syrup"
       },
       {
         "qty": 1,
@@ -3958,7 +3958,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": 1,
@@ -3968,7 +3968,7 @@
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s of garlic, minced"
+        "item": "of garlic, minced"
       },
       {
         "qty": 1,
@@ -3983,7 +3983,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s tomato paste"
+        "item": "tomato paste"
       },
       {
         "qty": 1,
@@ -4028,7 +4028,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s water or chicken broth"
+        "item": "water or chicken broth"
       },
       {
         "qty": null,
@@ -4083,7 +4083,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s flour OR 1 egg"
+        "item": "flour OR 1 egg"
       }
     ],
     "steps": [
@@ -4119,7 +4119,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s coconut milk"
+        "item": "coconut milk"
       },
       {
         "qty": null,
@@ -4228,7 +4228,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s whole milk"
+        "item": "whole milk"
       },
       {
         "qty": null,
@@ -4243,7 +4243,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s flour"
+        "item": "flour"
       },
       {
         "qty": 4,
@@ -4386,7 +4386,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s jam"
+        "item": "jam"
       }
     ],
     "steps": [
@@ -4431,7 +4431,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s dry mustard"
+        "item": "dry mustard"
       },
       {
         "qty": 1,
@@ -4441,12 +4441,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s cider vinegar"
+        "item": "cider vinegar"
       },
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s salt"
+        "item": "salt"
       },
       {
         "qty": 1,
@@ -4486,7 +4486,7 @@
       {
         "qty": 225,
         "unit": "g",
-        "item": "rams (1 cup) all-purpose flour"
+        "item": "(1 cup) all-purpose flour"
       },
       {
         "qty": 2.5,
@@ -4532,7 +4532,7 @@
       {
         "qty": 400,
         "unit": "g",
-        "item": "rams (14 ounces) dried soybeans"
+        "item": "(14 ounces) dried soybeans"
       },
       {
         "qty": null,
@@ -4542,7 +4542,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s cider vinegar"
+        "item": "cider vinegar"
       },
       {
         "qty": 1,
@@ -4583,17 +4583,17 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s (950 ml) unbleached all-purpose flour"
+        "item": "(950 ml) unbleached all-purpose flour"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s salt"
+        "item": "salt"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s lard or vegetable shortening"
+        "item": "lard or vegetable shortening"
       },
       {
         "qty": 1,
@@ -4603,7 +4603,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s baking powder (optional, for thicker and chewier tortillas)"
+        "item": "baking powder (optional, for thicker and chewier tortillas)"
       }
     ],
     "steps": [
@@ -4761,7 +4761,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s (20 mL) water"
+        "item": "(20 mL) water"
       },
       {
         "qty": 1,
@@ -4771,7 +4771,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s (720 ml) all-purpose flour"
+        "item": "(720 ml) all-purpose flour"
       },
       {
         "qty": null,
@@ -4799,9 +4799,9 @@
         "item": "egg beaten"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup (60 ml) melted butter"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "(60 ml) melted butter"
       },
       {
         "qty": 1,
@@ -4842,7 +4842,7 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s (45 ml) vegetable oil"
+        "item": "(45 ml) vegetable oil"
       },
       {
         "qty": 1,
@@ -4930,12 +4930,12 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s raw dried chickpeas (or skip the soaking and cooking steps, and use 7 cups of drained tinned/canned chickpeas)"
+        "item": "raw dried chickpeas (or skip the soaking and cooking steps, and use 7 cups of drained tinned/canned chickpeas)"
       },
       {
         "qty": 9,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 1,
@@ -4955,7 +4955,7 @@
       {
         "qty": 12,
         "unit": "clove",
-        "item": "s of garlic (peeled and roughly chopped)"
+        "item": "of garlic (peeled and roughly chopped)"
       },
       {
         "qty": null,
@@ -5013,42 +5013,42 @@
       {
         "qty": 250,
         "unit": "g",
-        "item": "rams khoa (concentrated milk solids)"
+        "item": "khoa (concentrated milk solids)"
       },
       {
         "qty": 500,
         "unit": "g",
-        "item": "rams sugar"
+        "item": "sugar"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams almonds"
+        "item": "almonds"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams cashews"
+        "item": "cashews"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams pistachios"
+        "item": "pistachios"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams raisins"
+        "item": "raisins"
       },
       {
         "qty": 250,
         "unit": "g",
-        "item": "rams ghee"
+        "item": "ghee"
       },
       {
         "qty": 10,
         "unit": "g",
-        "item": "rams cardamom"
+        "item": "cardamom"
       },
       {
         "qty": 500,
@@ -5090,7 +5090,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s parboiled short-grain rice"
+        "item": "parboiled short-grain rice"
       },
       {
         "qty": 1,
@@ -5100,7 +5100,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s non-iodised salt"
+        "item": "non-iodised salt"
       },
       {
         "qty": 1,
@@ -5110,7 +5110,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s chlorine-free water for fermenting (see note)"
+        "item": "chlorine-free water for fermenting (see note)"
       },
       {
         "qty": null,
@@ -5259,7 +5259,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s (8 ml) sake"
+        "item": "(8 ml) sake"
       },
       {
         "qty": 1,
@@ -5340,12 +5340,12 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s of butter"
+        "item": "butter"
       },
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge onion, sliced finely"
+        "item": "Lrge onion, sliced finely"
       },
       {
         "qty": null,
@@ -5360,17 +5360,17 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s of grated ginger"
+        "item": "grated ginger"
       },
       {
         "qty": 1,
         "unit": "tsp",
-        "item": "of ground turmeric"
+        "item": "ground turmeric"
       },
       {
         "qty": 1,
         "unit": "tbsp",
-        "item": "of ground coriander"
+        "item": "ground coriander"
       },
       {
         "qty": 2,
@@ -5431,7 +5431,7 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s oil"
+        "item": "oil"
       },
       {
         "qty": null,
@@ -5543,7 +5543,7 @@
       {
         "qty": 1,
         "unit": "pinch",
-        "item": "of salt"
+        "item": "salt"
       },
       {
         "qty": null,
@@ -5605,9 +5605,9 @@
         "item": "eveled tbsp salt"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "¼ cups of water"
+        "qty": 2.25,
+        "unit": "cup",
+        "item": "of water"
       },
       {
         "qty": null,
@@ -5703,12 +5703,12 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup gram flour"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "gram flour"
       },
       {
         "qty": null,
@@ -5723,7 +5723,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s of vegetable oil/ghee for deep frying"
+        "item": "vegetable oil/ghee for deep frying"
       }
     ],
     "steps": [
@@ -5798,7 +5798,7 @@
       {
         "qty": 14.5,
         "unit": "oz",
-        "item": "s (411 g) canned tomatoes, diced or torn apart"
+        "item": "(411 g) canned tomatoes, diced or torn apart"
       },
       {
         "qty": null,
@@ -5813,7 +5813,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s cooked and chopped turkey or chicken"
+        "item": "cooked and chopped turkey or chicken"
       },
       {
         "qty": 1,
@@ -5862,7 +5862,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge egg"
+        "item": "Lrge egg"
       },
       {
         "qty": 1,
@@ -5922,7 +5922,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s wheat flour"
+        "item": "wheat flour"
       },
       {
         "qty": 1,
@@ -6058,27 +6058,27 @@
       {
         "qty": 454,
         "unit": "g",
-        "item": "rams kadaif pastry"
+        "item": "kadaif pastry"
       },
       {
         "qty": 340,
         "unit": "g",
-        "item": "rams melted butter"
+        "item": "melted butter"
       },
       {
         "qty": 325,
         "unit": "g",
-        "item": "rams white sugar"
+        "item": "white sugar"
       },
       {
         "qty": 225,
         "unit": "g",
-        "item": "rams mozzarella cheese"
+        "item": "mozzarella cheese"
       },
       {
         "qty": 140,
         "unit": "g",
-        "item": "rams cream cheese"
+        "item": "cream cheese"
       },
       {
         "qty": 2,
@@ -6098,7 +6098,7 @@
       {
         "qty": 84,
         "unit": "g",
-        "item": "rams chopped walnuts"
+        "item": "chopped walnuts"
       }
     ],
     "steps": [
@@ -6139,7 +6139,7 @@
       {
         "qty": 6,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": null,
@@ -6172,9 +6172,9 @@
         "item": "onion, sliced"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup cooking oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "cooking oil"
       },
       {
         "qty": 1,
@@ -6277,7 +6277,7 @@
       {
         "qty": 2,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -6386,9 +6386,9 @@
         "item": "(300 g) all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup (70 g) butter"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "(70 g) butter"
       },
       {
         "qty": 120,
@@ -6713,7 +6713,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": null,
@@ -6721,9 +6721,9 @@
         "item": "½ tablespoon turmeric powder"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup chopped cashew nuts"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "chopped cashew nuts"
       },
       {
         "qty": 10,
@@ -6796,12 +6796,12 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "of all-purpose wheat flour"
+        "item": "all-purpose wheat flour"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "¼ cup of water"
+        "qty": 2.25,
+        "unit": "cup",
+        "item": "of water"
       },
       {
         "qty": 1,
@@ -6866,7 +6866,7 @@
       {
         "qty": 3,
         "unit": "clove",
-        "item": "s garlic"
+        "item": "garlic"
       },
       {
         "qty": 1,
@@ -6922,12 +6922,12 @@
       {
         "qty": 500,
         "unit": "g",
-        "item": "rams (1 lb) lean beef, finely minced"
+        "item": "(1 lb) lean beef, finely minced"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s clarified butter or olive oil"
+        "item": "clarified butter or olive oil"
       },
       {
         "qty": 1,
@@ -7023,7 +7023,7 @@
       {
         "qty": 1,
         "unit": "pinch",
-        "item": "of salt"
+        "item": "salt"
       },
       {
         "qty": 2,
@@ -7061,7 +7061,7 @@
       {
         "qty": 6,
         "unit": "cup",
-        "item": "s (700 g) cake flour"
+        "item": "(700 g) cake flour"
       },
       {
         "qty": 1,
@@ -7170,7 +7170,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s water (for mixing)"
+        "item": "water (for mixing)"
       },
       {
         "qty": 2,
@@ -7259,22 +7259,22 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s tomato paste"
+        "item": "tomato paste"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s vegetable oil"
+        "item": "vegetable oil"
       },
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge onion, thinly sliced"
+        "item": "Lrge onion, thinly sliced"
       },
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -7360,7 +7360,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s white, all-purpose wheat flour (optional: try using some sorghum flour)"
+        "item": "white, all-purpose wheat flour (optional: try using some sorghum flour)"
       },
       {
         "qty": 2,
@@ -7421,7 +7421,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s medium-thick coconut milk"
+        "item": "medium-thick coconut milk"
       },
       {
         "qty": 1,
@@ -7467,7 +7467,7 @@
       {
         "qty": 4,
         "unit": "l",
-        "item": "arge eggs"
+        "item": "Lrge eggs"
       },
       {
         "qty": null,
@@ -7523,7 +7523,7 @@
       {
         "qty": 6,
         "unit": "cup",
-        "item": "s (750 g) peanuts"
+        "item": "(750 g) peanuts"
       },
       {
         "qty": null,
@@ -7533,7 +7533,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s sugar"
+        "item": "sugar"
       },
       {
         "qty": null,
@@ -7985,7 +7985,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "of wheat flour or sorghum flour"
+        "item": "wheat flour or sorghum flour"
       },
       {
         "qty": 1,
@@ -8040,7 +8040,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge onion, chopped"
+        "item": "Lrge onion, chopped"
       },
       {
         "qty": 1,
@@ -8122,12 +8122,12 @@
       {
         "qty": 2,
         "unit": "l",
-        "item": "arge potatoes, sliced"
+        "item": "Lrge potatoes, sliced"
       },
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge or 2 small white onions, diced"
+        "item": "Lrge or 2 small white onions, diced"
       },
       {
         "qty": null,
@@ -8324,12 +8324,12 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge onion, finely chopped"
+        "item": "Lrge onion, finely chopped"
       },
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge tomato, diced"
+        "item": "Lrge tomato, diced"
       },
       {
         "qty": 6,
@@ -8456,7 +8456,7 @@
       {
         "qty": 8,
         "unit": "cup",
-        "item": "s boiled and mashed russet potatoes, still hot"
+        "item": "boiled and mashed russet potatoes, still hot"
       },
       {
         "qty": null,
@@ -8466,17 +8466,17 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s unbleached flour"
+        "item": "unbleached flour"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s granulated sugar"
+        "item": "granulated sugar"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s salt"
+        "item": "salt"
       },
       {
         "qty": 1,
@@ -8524,12 +8524,12 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s cornstarch"
+        "item": "cornstarch"
       },
       {
         "qty": null,
@@ -8549,7 +8549,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s butter"
+        "item": "butter"
       },
       {
         "qty": 4,
@@ -8594,7 +8594,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge or 2 small lemons, juiced"
+        "item": "Lrge or 2 small lemons, juiced"
       },
       {
         "qty": null,
@@ -8602,9 +8602,9 @@
         "item": "½ cup salt"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup red chile powder"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "red chile powder"
       },
       {
         "qty": null,
@@ -8737,9 +8737,9 @@
         "item": "⅓ cup (80 ml) milk"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup (60 ml) vegetable oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "(60 ml) vegetable oil"
       },
       {
         "qty": null,
@@ -8757,9 +8757,9 @@
         "item": "¾ cups (300 g) all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup (60 g) white granulated sugar"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "(60 g) white granulated sugar"
       },
       {
         "qty": 2,
@@ -8950,7 +8950,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s chicken bouillon cube"
+        "item": "chicken bouillon cube"
       },
       {
         "qty": 2,
@@ -8970,7 +8970,7 @@
       {
         "qty": 5,
         "unit": "clove",
-        "item": "s of garlic"
+        "item": "of garlic"
       },
       {
         "qty": null,
@@ -8985,7 +8985,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s tomato paste"
+        "item": "tomato paste"
       },
       {
         "qty": 2,
@@ -9099,9 +9099,9 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup oil for frying"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "oil for frying"
       },
       {
         "qty": 1,
@@ -9111,7 +9111,7 @@
       {
         "qty": 4,
         "unit": "lb",
-        "item": "s (1.8 kg) chicken, cut in pieces"
+        "item": "(1.8 kg) chicken, cut in pieces"
       },
       {
         "qty": null,
@@ -9136,22 +9136,22 @@
       {
         "qty": 2,
         "unit": "clove",
-        "item": "s of garlic, chopped"
+        "item": "of garlic, chopped"
       },
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s rice"
+        "item": "rice"
       },
       {
-        "qty": 5,
-        "unit": "",
-        "item": "¼ cups chicken stock or water"
+        "qty": 5.25,
+        "unit": "cup",
+        "item": "chicken stock or water"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup tomato paste"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "tomato paste"
       },
       {
         "qty": 1,
@@ -9212,7 +9212,7 @@
       {
         "qty": 1,
         "unit": "pinch",
-        "item": "of cinnamon (optional)"
+        "item": "cinnamon (optional)"
       },
       {
         "qty": 120,
@@ -9267,17 +9267,17 @@
       {
         "qty": 3,
         "unit": "lb",
-        "item": "s (900 g) beef tenderloin or other tender steak"
+        "item": "(900 g) beef tenderloin or other tender steak"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup red wine (e.g. Burgundy)"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "red wine (e.g. Burgundy)"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s crushed garlic"
+        "item": "crushed garlic"
       },
       {
         "qty": 2,
@@ -9302,12 +9302,12 @@
       {
         "qty": 1,
         "unit": "tbsp",
-        "item": "of vinegar"
+        "item": "vinegar"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s of soy sauce"
+        "item": "soy sauce"
       },
       {
         "qty": null,
@@ -9361,7 +9361,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s active dry yeast"
+        "item": "active dry yeast"
       },
       {
         "qty": 1,
@@ -9371,7 +9371,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -9414,12 +9414,12 @@
       {
         "qty": 2,
         "unit": "package",
-        "item": "s (4½ tsp) active dry yeast"
+        "item": "(4½ tsp) active dry yeast"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup lukewarm water"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "lukewarm water"
       },
       {
         "qty": null,
@@ -9629,12 +9629,12 @@
       {
         "qty": 6,
         "unit": "l",
-        "item": "arge eggs, lightly beaten"
+        "item": "Lrge eggs, lightly beaten"
       },
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s shredded beef filling"
+        "item": "shredded beef filling"
       },
       {
         "qty": 10,
@@ -9649,7 +9649,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s (8 ounces) shredded cheddar or Monterey Jack Cheese"
+        "item": "(8 ounces) shredded cheddar or Monterey Jack Cheese"
       },
       {
         "qty": null,
@@ -9685,9 +9685,9 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup water"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "water"
       },
       {
         "qty": null,
@@ -9734,7 +9734,7 @@
       {
         "qty": 4,
         "unit": "tbsp",
-        "item": "s vegetable oil"
+        "item": "vegetable oil"
       },
       {
         "qty": 2,
@@ -9754,7 +9754,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s crushed tomatoes"
+        "item": "crushed tomatoes"
       },
       {
         "qty": 4,
@@ -9844,7 +9844,7 @@
       {
         "qty": 2,
         "unit": "lb",
-        "item": "s stew beef"
+        "item": "stew beef"
       },
       {
         "qty": null,
@@ -9869,7 +9869,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s tomato paste"
+        "item": "tomato paste"
       },
       {
         "qty": 1,
@@ -9925,24 +9925,24 @@
         "item": "½ cup tomato paste"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup olive oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "olive oil"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup fresh parsley, finely chopped"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "fresh parsley, finely chopped"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup fresh mint leaves, finely chopped"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "fresh mint leaves, finely chopped"
       },
       {
         "qty": 2,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -10003,12 +10003,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s cornstarch"
+        "item": "cornstarch"
       },
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s coconut milk"
+        "item": "coconut milk"
       },
       {
         "qty": 1,
@@ -10031,9 +10031,9 @@
         "item": "corn kernels (optional)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup toasted coconut flakes (optional)"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "toasted coconut flakes (optional)"
       }
     ],
     "steps": [
@@ -10196,14 +10196,14 @@
         "item": "itre milk"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup all-purpose flour"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup semolina flour"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "semolina flour"
       },
       {
         "qty": null,
@@ -10293,12 +10293,12 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s garam masala"
+        "item": "garam masala"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s Malvani Special Masala"
+        "item": "Malvani Special Masala"
       },
       {
         "qty": null,
@@ -10342,9 +10342,9 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup red onion, diced"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "red onion, diced"
       },
       {
         "qty": 1,
@@ -10483,22 +10483,22 @@
       {
         "qty": 15,
         "unit": "oz",
-        "item": "s (425 g) canned potatoes, or 2 small boiled potatoes"
+        "item": "(425 g) canned potatoes, or 2 small boiled potatoes"
       },
       {
         "qty": 28,
         "unit": "oz",
-        "item": "s (794 g) canned tomatoes in juice, or 2 large tomatoes and tomato juice"
+        "item": "(794 g) canned tomatoes in juice, or 2 large tomatoes and tomato juice"
       },
       {
         "qty": 6.5,
         "unit": "oz",
-        "item": "s (184 g) canned chopped clams, minimum"
+        "item": "(184 g) canned chopped clams, minimum"
       },
       {
         "qty": 2,
         "unit": "stalk",
-        "item": "s of celery"
+        "item": "of celery"
       }
     ],
     "steps": [
@@ -10605,7 +10605,7 @@
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s of garlic, minced"
+        "item": "of garlic, minced"
       },
       {
         "qty": 500,
@@ -10673,32 +10673,32 @@
       {
         "qty": 6,
         "unit": "tbsp",
-        "item": "s virgin olive oil"
+        "item": "virgin olive oil"
       },
       {
         "qty": 225,
         "unit": "g",
-        "item": "rams (8 ounces) Spanish onion, diced"
+        "item": "(8 ounces) Spanish onion, diced"
       },
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s garlic, thinly sliced"
+        "item": "garlic, thinly sliced"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s fresh thyme leaves (or ½ teaspoon dried)"
+        "item": "fresh thyme leaves (or ½ teaspoon dried)"
       },
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s fresh basil leaves (or 1 teaspoon dried)"
+        "item": "fresh basil leaves (or 1 teaspoon dried)"
       },
       {
         "qty": 85,
         "unit": "g",
-        "item": "rams (3 ounces) red bell pepper, diced"
+        "item": "(3 ounces) red bell pepper, diced"
       },
       {
         "qty": 1.3,
@@ -10809,7 +10809,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s uncooked rice"
+        "item": "uncooked rice"
       },
       {
         "qty": 1,
@@ -10871,22 +10871,22 @@
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams powdered ginger"
+        "item": "powdered ginger"
       },
       {
         "qty": 25,
         "unit": "g",
-        "item": "rams cloves"
+        "item": "cloves"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams whole black peppercorns"
+        "item": "whole black peppercorns"
       },
       {
         "qty": 60,
         "unit": "g",
-        "item": "rams whole cinnamon, broken small, or 40 grams ground cinnamon"
+        "item": "whole cinnamon, broken small, or 40 grams ground cinnamon"
       },
       {
         "qty": null,
@@ -10896,7 +10896,7 @@
       {
         "qty": 35,
         "unit": "g",
-        "item": "rams green cardamom pods"
+        "item": "green cardamom pods"
       }
     ],
     "steps": [
@@ -11069,7 +11069,7 @@
       {
         "qty": 3,
         "unit": "lb",
-        "item": "s (1 quart) honey"
+        "item": "(1 quart) honey"
       },
       {
         "qty": 1,
@@ -11149,17 +11149,17 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s green/spring onion, minced"
+        "item": "green/spring onion, minced"
       },
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s fresh ginger, minced"
+        "item": "fresh ginger, minced"
       },
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s cilantro, chopped"
+        "item": "cilantro, chopped"
       }
     ],
     "steps": [
@@ -11194,7 +11194,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge onion, chopped"
+        "item": "Lrge onion, chopped"
       },
       {
         "qty": 1,
@@ -11270,7 +11270,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s lemon juice"
+        "item": "lemon juice"
       },
       {
         "qty": null,
@@ -11371,7 +11371,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 2,
@@ -11471,12 +11471,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s fresh chopped or grated okra (or 1½ cups dried okra)"
+        "item": "fresh chopped or grated okra (or 1½ cups dried okra)"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s ground crayfish"
+        "item": "ground crayfish"
       },
       {
         "qty": null,
@@ -11517,12 +11517,12 @@
       {
         "qty": 2,
         "unit": "l",
-        "item": "arge dried catfish"
+        "item": "Lrge dried catfish"
       },
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge dawa dawa lump"
+        "item": "Lrge dawa dawa lump"
       },
       {
         "qty": 2,
@@ -11542,7 +11542,7 @@
       {
         "qty": 2,
         "unit": "l",
-        "item": "arge stock cube"
+        "item": "Lrge stock cube"
       },
       {
         "qty": null,
@@ -11557,7 +11557,7 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s kuka (baobab leaf) powder"
+        "item": "kuka (baobab leaf) powder"
       },
       {
         "qty": 2,
@@ -11603,7 +11603,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s stock cube (e.g., Maggi)"
+        "item": "stock cube (e.g., Maggi)"
       },
       {
         "qty": null,
@@ -11613,7 +11613,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge onion, chopped"
+        "item": "Lrge onion, chopped"
       },
       {
         "qty": 2,
@@ -11670,7 +11670,7 @@
       {
         "qty": 2,
         "unit": "l",
-        "item": "arge chunks meat"
+        "item": "Lrge chunks meat"
       },
       {
         "qty": 1,
@@ -11680,7 +11680,7 @@
       {
         "qty": 2,
         "unit": "piece",
-        "item": "s fresh red chile pepper, puréed"
+        "item": "fresh red chile pepper, puréed"
       },
       {
         "qty": 2,
@@ -11757,12 +11757,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s peeled and chunked pumpkin"
+        "item": "peeled and chunked pumpkin"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s groundnut paste (optional)"
+        "item": "groundnut paste (optional)"
       },
       {
         "qty": 1,
@@ -11917,7 +11917,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s flour"
+        "item": "flour"
       },
       {
         "qty": 2,
@@ -11972,27 +11972,27 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s fresh or frozen jute mallow (molokhia) leaves"
+        "item": "fresh or frozen jute mallow (molokhia) leaves"
       },
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s vegetable or chicken broth"
+        "item": "vegetable or chicken broth"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge onion, finely chopped"
+        "item": "Lrge onion, finely chopped"
       },
       {
         "qty": 3,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -12053,7 +12053,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -12076,19 +12076,19 @@
         "item": "instant yeast"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "¼ cups warm water"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "warm water"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup vegetable oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "vegetable oil"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup melted butter"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "melted butter"
       }
     ],
     "steps": [
@@ -12185,7 +12185,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s maize kernels (fresh or frozen)"
+        "item": "maize kernels (fresh or frozen)"
       },
       {
         "qty": 1,
@@ -12195,7 +12195,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s pumpkin leaves, spinach, or kale, chopped"
+        "item": "pumpkin leaves, spinach, or kale, chopped"
       },
       {
         "qty": 1,
@@ -12282,7 +12282,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s (450 g) plain flour"
+        "item": "(450 g) plain flour"
       },
       {
         "qty": 1,
@@ -12297,7 +12297,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s salt"
+        "item": "salt"
       },
       {
         "qty": null,
@@ -12337,9 +12337,9 @@
         "item": "½ cup unsalted butter (European style cultured)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup white granulated sugar"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "white granulated sugar"
       },
       {
         "qty": 5,
@@ -12352,9 +12352,9 @@
         "item": "egg beaten"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "¼ cups graham wafer crumbs"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "graham wafer crumbs"
       },
       {
         "qty": null,
@@ -12406,12 +12406,12 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s maggi (stock cube)"
+        "item": "maggi (stock cube)"
       },
       {
         "qty": 3,
         "unit": "l",
-        "item": "arge onion, sliced"
+        "item": "Lrge onion, sliced"
       },
       {
         "qty": null,
@@ -12421,7 +12421,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s shelled and peeled peanuts"
+        "item": "shelled and peeled peanuts"
       },
       {
         "qty": 4,
@@ -12486,7 +12486,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s plain white flour"
+        "item": "plain white flour"
       },
       {
         "qty": 1,
@@ -12506,7 +12506,7 @@
       {
         "qty": 3,
         "unit": "oz",
-        "item": "s salt pork, diced"
+        "item": "salt pork, diced"
       },
       {
         "qty": 1,
@@ -12555,7 +12555,7 @@
       {
         "qty": 3,
         "unit": "lb",
-        "item": "s California long white potatoes"
+        "item": "California long white potatoes"
       },
       {
         "qty": 3,
@@ -12573,9 +12573,9 @@
         "item": "¾ cup mayonnaise"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup sweet pickle juice (from jar of pickles)"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "sweet pickle juice (from jar of pickles)"
       },
       {
         "qty": 1,
@@ -12649,7 +12649,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -12659,7 +12659,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": 1,
@@ -12677,9 +12677,9 @@
         "item": "½ cup grated Romano cheese"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup chopped fresh basil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "chopped fresh basil"
       },
       {
         "qty": 1,
@@ -12729,7 +12729,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s cornmeal"
+        "item": "cornmeal"
       },
       {
         "qty": 1,
@@ -12791,7 +12791,7 @@
       {
         "qty": 2,
         "unit": "l",
-        "item": "arge onions, chopped"
+        "item": "Lrge onions, chopped"
       },
       {
         "qty": null,
@@ -12956,7 +12956,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -12976,7 +12976,7 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s sugar"
+        "item": "sugar"
       },
       {
         "qty": 1,
@@ -12986,7 +12986,7 @@
       {
         "qty": 1,
         "unit": "l",
-        "item": "arge egg"
+        "item": "Lrge egg"
       },
       {
         "qty": null,
@@ -13093,7 +13093,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s brown beans or honey beans"
+        "item": "brown beans or honey beans"
       },
       {
         "qty": null,
@@ -13103,7 +13103,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 8,
@@ -13223,22 +13223,22 @@
       {
         "qty": 5,
         "unit": "l",
-        "item": "arge fresh tomatoes"
+        "item": "Lrge fresh tomatoes"
       },
       {
         "qty": 4,
         "unit": "l",
-        "item": "arge bell peppers"
+        "item": "Lrge bell peppers"
       },
       {
         "qty": 4,
         "unit": "l",
-        "item": "arge scotch bonnet chile peppers"
+        "item": "Lrge scotch bonnet chile peppers"
       },
       {
         "qty": 2,
         "unit": "l",
-        "item": "arge onions"
+        "item": "Lrge onions"
       },
       {
         "qty": 5,
@@ -13343,7 +13343,7 @@
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s garlic (optional)"
+        "item": "garlic (optional)"
       },
       {
         "qty": null,
@@ -13428,9 +13428,9 @@
         "item": "½ tsp salt"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "¼ cups warm milk"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "warm milk"
       }
     ],
     "steps": [
@@ -13486,7 +13486,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s vegetable oil or palm oil"
+        "item": "vegetable oil or palm oil"
       },
       {
         "qty": 1,
@@ -13501,7 +13501,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s parboiled rice"
+        "item": "parboiled rice"
       }
     ],
     "steps": [
@@ -13537,7 +13537,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 2,
@@ -13635,7 +13635,7 @@
       {
         "qty": 6,
         "unit": "piece",
-        "item": "s of ponmo (cow skin), properly cleaned and cut into small pieces"
+        "item": "of ponmo (cow skin), properly cleaned and cut into small pieces"
       },
       {
         "qty": 1,
@@ -13695,7 +13695,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s of ginger/garlic/onion paste"
+        "item": "ginger/garlic/onion paste"
       },
       {
         "qty": 1,
@@ -13705,7 +13705,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s ground crayfish"
+        "item": "ground crayfish"
       }
     ],
     "steps": [
@@ -13810,7 +13810,7 @@
       {
         "qty": 2,
         "unit": "piece",
-        "item": "s of Chinese cabbage"
+        "item": "of Chinese cabbage"
       },
       {
         "qty": 1,
@@ -13830,7 +13830,7 @@
       {
         "qty": 2,
         "unit": "piece",
-        "item": "s of saba"
+        "item": "of saba"
       }
     ],
     "steps": [

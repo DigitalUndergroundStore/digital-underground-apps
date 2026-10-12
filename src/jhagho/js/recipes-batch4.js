@@ -111,7 +111,7 @@
   },
   {
     "id": "r451",
-    "name": "Fred Steak Marinade",
+    "name": "Boiled Cucumber and Grated Coconut (Pachadi)",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -124,58 +124,54 @@
       {
         "qty": 1,
         "unit": "",
-        "item": "½ cup brewed coffee"
+        "item": "cucumber (large variety, with dark green and yellow skin)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup grated coconut"
       },
       {
         "qty": 1,
-        "unit": "cup",
-        "item": "red wine"
+        "unit": "tsp",
+        "item": "cumin seeds (jeera)"
       },
       {
-        "qty": null,
+        "qty": 1,
+        "unit": "tsp",
+        "item": "mustard seeds"
+      },
+      {
+        "qty": 1,
         "unit": "",
-        "item": "½ cup olive oil"
+        "item": "–2 dried red chillies"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup molasses"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup Balsamic vinegar"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup Tamari sauce"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup Worcestershire sauce"
-      },
-      {
-        "qty": 2,
+        "qty": 1,
         "unit": "tbsp",
-        "item": "chili powder"
+        "item": "oil"
       },
       {
-        "qty": 6,
-        "unit": "clove",
-        "item": "s garlic"
+        "qty": null,
+        "unit": "",
+        "item": "Salt according to taste"
       }
     ],
     "steps": [
-      "Combine all ingredients together to make marinade (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Use to marinate meat.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Skin the cucumber (3 minutes).",
+      "Cut in half along the length and remove the central core of seeds (3 minutes).",
+      "Discard the seeds (3 minutes).",
+      "Grate the cucumber (3 minutes).",
+      "Alternatively, cut into very small pieces (3 minutes).",
+      "Cook the cucumber in the microwave for about 4–5 min (3 minutes).",
+      "Meanwhile, make a fine paste from the grated coconut and the cumin seeds (3 minutes).",
+      "In a deep pan (kadhai), heat the oil (3 minutes).",
+      "Add the mustard seeds and red chillies, and let them splutter (3 minutes).",
+      "Add the cooked cucumber and the coconut paste and salt to taste (3 minutes).",
+      "Mix well and let it cook on slow fire (3 minutes).",
+      "Do not allow it to boil—it just needs to be warmed (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fred_Steak_Marinade",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Boiled_Cucumber_and_Grated_Coconut_%28Pachadi%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -254,7 +250,7 @@
       {
         "qty": 2,
         "unit": "lb",
-        "item": "s ground beef"
+        "item": "ground beef"
       },
       {
         "qty": 1,
@@ -427,14 +423,10 @@
     ],
     "steps": [
       "Preheat the oven to 200°C (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Dip the chicken into the beaten, then dip it into the crushed onions (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Make sure the chicken is well-coated, then transfer to parchment-lined baking sheet (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Bake the chicken for 20 minutes or until it's no longer pink on the inside (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve hot."
+      "Serve hot (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:French_Onioned_Chicken",
     "sourceName": "Wikibooks Cookbook",
@@ -512,8 +504,8 @@
       },
       {
         "qty": 3,
-        "unit": "l",
-        "item": "arge fresh mozzarella balls"
+        "unit": "",
+        "item": "Lrge fresh mozzarella balls"
       },
       {
         "qty": 24,
@@ -572,8 +564,8 @@
     "ingredients": [
       {
         "qty": 4,
-        "unit": "l",
-        "item": "arge eggs"
+        "unit": "",
+        "item": "Lrge eggs"
       },
       {
         "qty": 1,
@@ -654,12 +646,12 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s butter"
+        "item": "butter"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s brown sugar"
+        "item": "brown sugar"
       },
       {
         "qty": 1,
@@ -698,7 +690,7 @@
       {
         "qty": 8,
         "unit": "lb",
-        "item": "s potatoes"
+        "item": "potatoes"
       },
       {
         "qty": null,
@@ -751,7 +743,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s butter or olive oil"
+        "item": "butter or olive oil"
       },
       {
         "qty": 2,
@@ -771,12 +763,10 @@
     ],
     "steps": [
       "Melt the butter in the pan over low to medium heat (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Crack open the eggs into the pan and let fry until the yolks begin to harden at the edges (indicated by a lightening in the yolk color) (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Using the spatula, flip the eggs over and allow to cook 10 seconds for over-easy, 30 seconds for over-medium, or up to 1 minute for over-hard (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add salt and pepper to taste, and serve."
+      "Add salt and pepper to taste, and serve (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Eggs",
     "sourceName": "Wikibooks Cookbook",
@@ -822,14 +812,10 @@
     ],
     "steps": [
       "Slice the tomatoes ¼–½ inch (0.75–1.25 cm) thick (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Salt and pepper tomato slices to taste (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Dip slices in cornmeal and shallow fry in hot grease or oil over medium heat for about 3 minutes or until golden on bottom (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Gently turn over, and fry the other side (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve by themselves or, for a elegant addition, add a little goat cheese."
+      "Serve by themselves or, for a elegant addition, add a little goat cheese (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Green_Tomatoes",
     "sourceName": "Wikibooks Cookbook",
@@ -1062,12 +1048,10 @@
     ],
     "steps": [
       "Slice unripe plantain into small rounds, then season with ground pepper and salt to taste (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Heat enough vegetable oil in a pan for deep-frying (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Deep-fry plantain, ensuring all sides are golden and cooked (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Remove from oil, and serve hot with fried yam and egg sauce."
+      "Remove from oil, and serve hot with fried yam and egg sauce (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Unripe_Plantain_%28Nigerian_Green_Plantain%29",
     "sourceName": "Wikibooks Cookbook",
@@ -1100,9 +1084,9 @@
         "item": "chopped scallions"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "oil"
       },
       {
         "qty": 2,
@@ -1117,7 +1101,7 @@
       {
         "qty": 6,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 1,
@@ -1126,8 +1110,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge plantain"
+        "unit": "",
+        "item": "Lrge plantain"
       },
       {
         "qty": null,
@@ -1155,75 +1139,71 @@
   },
   {
     "id": "r468",
-    "name": "Frikadeller (Danish Meatballs)",
+    "name": "Tomato Curry",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian",
+      "collection-indian"
     ],
     "ingredients": [
       {
-        "qty": 250,
-        "unit": "g",
-        "item": "rams (about 0.5 lb) ground veal"
-      },
-      {
-        "qty": 250,
-        "unit": "g",
-        "item": "rams ground pork"
-      },
-      {
         "qty": 1,
-        "unit": "l",
-        "item": "arge egg"
+        "unit": "",
+        "item": "apple, grated"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "onion, finely chopped"
+        "item": "onion, chopped"
       },
       {
-        "qty": 20,
+        "qty": 2,
         "unit": "",
-        "item": "% by volume (about ¾ cup) of bread crumbs"
+        "item": "tomatoes, sliced"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Pepper to taste"
+        "qty": 2,
+        "unit": "oz",
+        "item": "(55 g) butter"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Salt to taste"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Minced garlic (optional)"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "(5 ml) curry powder"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Ground parsley to taste"
+        "item": "Milk"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Butter"
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Boiled rice"
       }
     ],
     "steps": [
-      "Mix all ingredients except butter together (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Shape mixture into small patties (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Fry in hot skillet with lots of butter.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Fry apple and onion in the butter until blended (3 minutes).",
+      "Mix curry powder in a little milk, and stir in (3 minutes).",
+      "Season with salt and pepper (3 minutes).",
+      "Fry tomatoes in a separate pan (3 minutes).",
+      "Cover them with the curry mixture, and serve within a wall of boiled rice (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Frikadeller_%28Danish_Meatballs%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tomato_Curry",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1267,14 +1247,10 @@
     ],
     "steps": [
       "Combine all fruits with pear juice in a blender (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Purée until smooth (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Divide the fruit mixture between ice pop molds, and insert the sticks (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Freeze the molds until completely solid (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Unmold the ice pops, and serve immediately."
+      "Unmold the ice pops, and serve immediately (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fruit_Ice_Pops",
     "sourceName": "Wikibooks Cookbook",
@@ -1319,8 +1295,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge orange"
+        "unit": "",
+        "item": "Lrge orange"
       },
       {
         "qty": 1,
@@ -1334,8 +1310,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge banana"
+        "unit": "",
+        "item": "Lrge banana"
       },
       {
         "qty": 2,
@@ -1380,7 +1356,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s flour"
+        "item": "flour"
       },
       {
         "qty": 1,
@@ -1436,22 +1412,22 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s dried fava beans"
+        "item": "dried fava beans"
       },
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 3,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup olive oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "olive oil"
       },
       {
         "qty": null,
@@ -1515,7 +1491,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s wheat flour"
+        "item": "wheat flour"
       },
       {
         "qty": 1,
@@ -1676,7 +1652,7 @@
       {
         "qty": 1,
         "unit": "pinch",
-        "item": "of salt"
+        "item": "salt"
       },
       {
         "qty": 450,
@@ -1777,14 +1753,10 @@
     ],
     "steps": [
       "Soak beans overnight, or, bring them to a boil and let sit for 1 hour (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "In a Dutch oven or large pot, sauté onions and garlic in olive oil on medium heat until onions are translucent (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add red pepper, and sauté for a few minutes more (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add beans and enough water to cover all ingredients (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add spices, bring to a boil, then lower heat and cover, stirring occasionally until done (1–2 hours, depending on the age of your beans)."
+      "Add spices, bring to a boil, then lower heat and cover, stirring occasionally until done (1–2 hours, depending on the age of your beans) (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gallo_Pinto_%28Costa_Rican_Rice_and_Beans%29",
     "sourceName": "Wikibooks Cookbook",
@@ -1822,9 +1794,9 @@
         "item": "–3 oz dry sherry (you may substitute cognac instead)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup virgin olive oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "virgin olive oil"
       },
       {
         "qty": 3,
@@ -1871,7 +1843,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 1,
@@ -1879,9 +1851,9 @@
         "item": "evaporated milk or condensed milk"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup sugar (adjust according to taste)"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "sugar (adjust according to taste)"
       },
       {
         "qty": null,
@@ -1930,7 +1902,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s vegetable oil"
+        "item": "vegetable oil"
       },
       {
         "qty": 1,
@@ -1940,7 +1912,7 @@
       {
         "qty": 3,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -1975,7 +1947,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s beef or chicken broth"
+        "item": "beef or chicken broth"
       },
       {
         "qty": 1,
@@ -2029,18 +2001,18 @@
     "ingredients": [
       {
         "qty": 4,
-        "unit": "l",
-        "item": "arge onions, thinly sliced"
+        "unit": "",
+        "item": "Lrge onions, thinly sliced"
       },
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s grated ginger"
+        "item": "grated ginger"
       },
       {
         "qty": 2,
@@ -2070,12 +2042,12 @@
       {
         "qty": 2,
         "unit": "lb",
-        "item": "s chicken pieces (preferably chicken thighs or drumsticks)"
+        "item": "chicken pieces (preferably chicken thighs or drumsticks)"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s vegetable oil"
+        "item": "vegetable oil"
       },
       {
         "qty": null,
@@ -2116,17 +2088,17 @@
       {
         "qty": 4,
         "unit": "slice",
-        "item": "s day-old French bread, cubed"
+        "item": "day-old French bread, cubed"
       },
       {
         "qty": 2,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 4,
         "unit": "tbsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": null,
@@ -2166,7 +2138,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -2206,14 +2178,10 @@
     ],
     "steps": [
       "Mix the flour, salt, vanilla, eggs, and sugar in a bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "In another bowl, mix the lukewarm milk with the yeast, and stir until all of the yeast has dissolved (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour the liquid mixture into the flour, and knead everything together with the softened butter (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "If the dough is too sticky, add more flour (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Cover the dough and leave it to rise for one hour until it has doubled its size."
+      "Cover the dough and leave it to rise for one hour until it has doubled its size (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Germkn%C3%B6del_%28Plum_and_Poppy_Seed_Dumpling%29",
     "sourceName": "Wikibooks Cookbook",
@@ -2221,76 +2189,81 @@
   },
   {
     "id": "r483",
-    "name": "Ghavoot (Iranian Nut and Seed Powder)",
+    "name": "Thai Green Curry Paste",
     "minutes": 45,
-    "servings": 4,
+    "servings": 3,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "vegetarian"
+      "vegetarian",
+      "collection-indian"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "Coffee beans"
+        "qty": 16,
+        "unit": "g",
+        "item": "reen piri-piri chilli-peppers, chopped"
       },
       {
-        "qty": null,
+        "qty": 2,
         "unit": "",
-        "item": "Cinnamon"
+        "item": "branches lemongrass, smashed"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Sesame seeds"
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic, pressed"
       },
       {
-        "qty": null,
+        "qty": 3,
         "unit": "",
-        "item": "Cottonseeds"
+        "item": "scallions, chopped"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Nigella seeds"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "grated ginger root"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Poppy seeds"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "coriander seed"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Chickpeas"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "caraway seed"
       },
       {
-        "qty": null,
+        "qty": 4,
         "unit": "",
-        "item": "Walnuts"
+        "item": "whole cloves"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Almonds"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "nutmeg"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Pistachio nuts"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "trassi"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "oil"
       }
     ],
     "steps": [
-      "Grind and roast each component (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add an equal weight of sugar; grind everything together (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve as powder, or blend it with milk or hot water.",
+      "Grind the green chilli peppers, garlic, lemongrass, and scallions in a mortar (3 minutes).",
+      "Add the remaining ingredients except for the oil, and keep grinding to a fluid paste (3 minutes).",
+      "Mix in the oil (3 minutes).",
+      "Store in an airtight container in the refrigerator for up to 1 month (3 minutes).",
       "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ghavoot_%28Iranian_Nut_and_Seed_Powder%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Thai_Green_Curry_Paste",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2424,7 +2397,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": null,
@@ -2766,7 +2739,7 @@
       {
         "qty": 6,
         "unit": "clove",
-        "item": "s garlic"
+        "item": "garlic"
       },
       {
         "qty": null,
@@ -2865,7 +2838,7 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate",
       "vegetarian"
@@ -2924,14 +2897,10 @@
     ],
     "steps": [
       "Combine tomatoes, cucumbers, onions, peppers, and olives in a deep bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add enough olive oil, vinegar or lemon juice, and salt to taste (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Toss the ingredients for half a minute (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Place a feta cheese slice on top and season with a splash of olive oil (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Top with a sprig of oregano if desired."
+      "Top with a sprig of oregano if desired (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Greek_Salad",
     "sourceName": "Wikibooks Cookbook",
@@ -2939,7 +2908,7 @@
   },
   {
     "id": "r492",
-    "name": "Green Bean Casserole with Pimento",
+    "name": "Green Leaf Juice",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -2950,35 +2919,43 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "can",
-        "item": "(about 14.5 oz / 410 g) French-style green beans, drained"
+        "qty": 120,
+        "unit": "ml",
+        "item": "(½ cup) freshly-squeezed lime juice"
       },
       {
-        "qty": 1,
-        "unit": "can",
-        "item": "or jar (about 15 oz / 430 g) small whole onions, drained"
+        "qty": 490,
+        "unit": "g",
+        "item": "(17 oz / ½ each) pineapple"
       },
       {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "s diced drained pimento"
+        "qty": 238,
+        "unit": "g",
+        "item": "(8 oz / 6 leaves) Swiss chard or collard greens"
       },
       {
-        "qty": 1,
-        "unit": "can",
-        "item": "(10.75 oz / 305 g) condensed cream of mushroom soup"
+        "qty": 124,
+        "unit": "g",
+        "item": "(4 oz / 1 bunch) fresh cilantro"
+      },
+      {
+        "qty": 26,
+        "unit": "g",
+        "item": "(1 oz / 1 piece) fresh ginger root"
       }
     ],
     "steps": [
-      "In a lightly buttered 1½-quart casserole dish, combine green beans, onions, diced pimento, and mushroom soup (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Combine topping ingredients; sprinkle over the top of the casserole (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Bake, uncovered, at for 25–30 minutes.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Squeeze the lime juice into the container where the juice extractor dispenses the juice (3 minutes).",
+      "Cut the pineapple, removing the outer spiny flesh, the top, the bottom and the pithy core (3 minutes).",
+      "Cut the pineapple into long thin strips that can be easily inserted into the juice extractor (3 minutes).",
+      "Run the pineapple through the juice extractor (3 minutes).",
+      "Tear the greens into smaller pieces that can be put into the juice extractor easily (3 minutes).",
+      "Run the greens through the juice extractor (3 minutes).",
+      "Run the cilantro through the juice extractor (3 minutes).",
+      "Run the ginger root through the juice extractor (3 minutes).",
+      "Stir the juice mixture well, and serve the green juice over ice (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Bean_Casserole_with_Pimento",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Leaf_Juice",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3119,7 +3096,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s miso paste"
+        "item": "miso paste"
       },
       {
         "qty": 1,
@@ -3129,7 +3106,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s soup stock"
+        "item": "soup stock"
       },
       {
         "qty": 1,
@@ -3166,7 +3143,7 @@
       {
         "qty": 2,
         "unit": "slice",
-        "item": "s of bread"
+        "item": "of bread"
       },
       {
         "qty": null,
@@ -3216,7 +3193,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s pico de gallo"
+        "item": "pico de gallo"
       },
       {
         "qty": null,
@@ -3236,7 +3213,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": 1,
@@ -3283,7 +3260,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s (720 ml) dry milk powder"
+        "item": "(720 ml) dry milk powder"
       },
       {
         "qty": 1,
@@ -3337,14 +3314,14 @@
         "item": "½ cup powdered milk"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup white granulated sugar"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "white granulated sugar"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s cornstarch"
+        "item": "cornstarch"
       },
       {
         "qty": null,
@@ -3400,12 +3377,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s wheat flour"
+        "item": "wheat flour"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s powdered milk"
+        "item": "powdered milk"
       },
       {
         "qty": 1,
@@ -3505,7 +3482,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s soy sauce"
+        "item": "soy sauce"
       },
       {
         "qty": 100,
@@ -3576,7 +3553,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s soft-boiled red kidney beans"
+        "item": "soft-boiled red kidney beans"
       },
       {
         "qty": null,
@@ -3586,12 +3563,12 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s evaporated milk"
+        "item": "evaporated milk"
       },
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s sweetened condensed milk"
+        "item": "sweetened condensed milk"
       },
       {
         "qty": null,
@@ -3680,7 +3657,7 @@
       {
         "qty": 4,
         "unit": "tbsp",
-        "item": "s Scotch whiskey"
+        "item": "Scotch whiskey"
       },
       {
         "qty": 1,
@@ -3690,7 +3667,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s oatmeal, toasted in a 375°F (200°C) oven for 10 minutes"
+        "item": "oatmeal, toasted in a 375°F (200°C) oven for 10 minutes"
       }
     ],
     "steps": [
@@ -3775,8 +3752,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge bunch of fresh herbs (coriander leaf, thyme, parsley, celery)"
+        "unit": "",
+        "item": "Lrge bunch of fresh herbs (coriander leaf, thyme, parsley, celery)"
       },
       {
         "qty": 2,
@@ -3806,14 +3783,10 @@
     ],
     "steps": [
       "With a damp cloth, wipe the banana leaves (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Heat the banana leaves over a flame (gas cooker, camping fire, etc) (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "The leaves should turn softer and darker, with a distinctive smoky smell (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Cut the hard rim without shredding the leaves (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Cut in 30 cm segments along the transversal veins."
+      "Cut in 30 cm segments along the transversal veins (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hallaca_%28Venezuelan_Stuffed_Corn_Dough%29",
     "sourceName": "Wikibooks Cookbook",
@@ -3852,9 +3825,9 @@
         "item": "⅓ cup nata de coco (coconut gel in syrup)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup kaong in syrup"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "kaong in syrup"
       },
       {
         "qty": 1,
@@ -3884,12 +3857,10 @@
     ],
     "steps": [
       "Cover the bottoms of two serving bowls or glasses with a layer of shaved ice (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Top the ice with the chickpeas, mung beans, nata de coco, kaong, and ube jam (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Top with ube ice cream and leche flan, then pour the evaporated milk over everything (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Sprinkle with pinipig, if using."
+      "Sprinkle with pinipig, if using (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Halo-Halo_%28Filipino_Layered_Dessert%29",
     "sourceName": "Wikibooks Cookbook",
@@ -3958,7 +3929,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": 1,
@@ -3968,7 +3939,7 @@
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s of garlic, minced"
+        "item": "of garlic, minced"
       },
       {
         "qty": 1,
@@ -3983,7 +3954,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s tomato paste"
+        "item": "tomato paste"
       },
       {
         "qty": 1,
@@ -4028,7 +3999,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s water or chicken broth"
+        "item": "water or chicken broth"
       },
       {
         "qty": null,
@@ -4083,7 +4054,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s flour OR 1 egg"
+        "item": "flour OR 1 egg"
       }
     ],
     "steps": [
@@ -4119,7 +4090,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s coconut milk"
+        "item": "coconut milk"
       },
       {
         "qty": null,
@@ -4139,14 +4110,10 @@
     ],
     "steps": [
       "Mix coconut milk with sugar and salt over a medium heat (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Slowly add cornstarch and stir until thickened (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour into a pan or square form (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Cool for 1 hour or until fully set (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Unmold and cut into squares."
+      "Unmold and cut into squares (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Haupia_%28Hawaiian_Coconut_Pudding%29",
     "sourceName": "Wikibooks Cookbook",
@@ -4202,12 +4169,10 @@
     ],
     "steps": [
       "Combine the water, tea bag, rosemary, sage, and ginger (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Boil briefly, then remove from heat and let steep for 5–10 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Filter the tea to remove solids, and mix in the sugar and the lemon juice (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Cool and serve."
+      "Cool and serve (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hawthorn_Tea",
     "sourceName": "Wikibooks Cookbook",
@@ -4228,7 +4193,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s whole milk"
+        "item": "whole milk"
       },
       {
         "qty": null,
@@ -4243,7 +4208,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s flour"
+        "item": "flour"
       },
       {
         "qty": 4,
@@ -4386,7 +4351,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s jam"
+        "item": "jam"
       }
     ],
     "steps": [
@@ -4431,7 +4396,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s dry mustard"
+        "item": "dry mustard"
       },
       {
         "qty": 1,
@@ -4441,12 +4406,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s cider vinegar"
+        "item": "cider vinegar"
       },
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s salt"
+        "item": "salt"
       },
       {
         "qty": 1,
@@ -4486,7 +4451,7 @@
       {
         "qty": 225,
         "unit": "g",
-        "item": "rams (1 cup) all-purpose flour"
+        "item": "(1 cup) all-purpose flour"
       },
       {
         "qty": 2.5,
@@ -4532,7 +4497,7 @@
       {
         "qty": 400,
         "unit": "g",
-        "item": "rams (14 ounces) dried soybeans"
+        "item": "(14 ounces) dried soybeans"
       },
       {
         "qty": null,
@@ -4542,7 +4507,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s cider vinegar"
+        "item": "cider vinegar"
       },
       {
         "qty": 1,
@@ -4583,17 +4548,17 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s (950 ml) unbleached all-purpose flour"
+        "item": "(950 ml) unbleached all-purpose flour"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s salt"
+        "item": "salt"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s lard or vegetable shortening"
+        "item": "lard or vegetable shortening"
       },
       {
         "qty": 1,
@@ -4603,7 +4568,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s baking powder (optional, for thicker and chewier tortillas)"
+        "item": "baking powder (optional, for thicker and chewier tortillas)"
       }
     ],
     "steps": [
@@ -4761,7 +4726,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s (20 mL) water"
+        "item": "(20 mL) water"
       },
       {
         "qty": 1,
@@ -4771,7 +4736,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s (720 ml) all-purpose flour"
+        "item": "(720 ml) all-purpose flour"
       },
       {
         "qty": null,
@@ -4799,9 +4764,9 @@
         "item": "egg beaten"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup (60 ml) melted butter"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "(60 ml) melted butter"
       },
       {
         "qty": 1,
@@ -4842,7 +4807,7 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s (45 ml) vegetable oil"
+        "item": "(45 ml) vegetable oil"
       },
       {
         "qty": 1,
@@ -4930,12 +4895,12 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s raw dried chickpeas (or skip the soaking and cooking steps, and use 7 cups of drained tinned/canned chickpeas)"
+        "item": "raw dried chickpeas (or skip the soaking and cooking steps, and use 7 cups of drained tinned/canned chickpeas)"
       },
       {
         "qty": 9,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 1,
@@ -4955,7 +4920,7 @@
       {
         "qty": 12,
         "unit": "clove",
-        "item": "s of garlic (peeled and roughly chopped)"
+        "item": "of garlic (peeled and roughly chopped)"
       },
       {
         "qty": null,
@@ -5013,42 +4978,42 @@
       {
         "qty": 250,
         "unit": "g",
-        "item": "rams khoa (concentrated milk solids)"
+        "item": "khoa (concentrated milk solids)"
       },
       {
         "qty": 500,
         "unit": "g",
-        "item": "rams sugar"
+        "item": "sugar"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams almonds"
+        "item": "almonds"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams cashews"
+        "item": "cashews"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams pistachios"
+        "item": "pistachios"
       },
       {
         "qty": 100,
         "unit": "g",
-        "item": "rams raisins"
+        "item": "raisins"
       },
       {
         "qty": 250,
         "unit": "g",
-        "item": "rams ghee"
+        "item": "ghee"
       },
       {
         "qty": 10,
         "unit": "g",
-        "item": "rams cardamom"
+        "item": "cardamom"
       },
       {
         "qty": 500,
@@ -5090,7 +5055,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s parboiled short-grain rice"
+        "item": "parboiled short-grain rice"
       },
       {
         "qty": 1,
@@ -5100,7 +5065,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s non-iodised salt"
+        "item": "non-iodised salt"
       },
       {
         "qty": 1,
@@ -5110,7 +5075,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s chlorine-free water for fermenting (see note)"
+        "item": "chlorine-free water for fermenting (see note)"
       },
       {
         "qty": null,
@@ -5259,7 +5224,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s (8 ml) sake"
+        "item": "(8 ml) sake"
       },
       {
         "qty": 1,
@@ -5340,12 +5305,12 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s of butter"
+        "item": "butter"
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge onion, sliced finely"
+        "unit": "",
+        "item": "Lrge onion, sliced finely"
       },
       {
         "qty": null,
@@ -5360,17 +5325,17 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s of grated ginger"
+        "item": "grated ginger"
       },
       {
         "qty": 1,
         "unit": "tsp",
-        "item": "of ground turmeric"
+        "item": "ground turmeric"
       },
       {
         "qty": 1,
         "unit": "tbsp",
-        "item": "of ground coriander"
+        "item": "ground coriander"
       },
       {
         "qty": 2,
@@ -5431,7 +5396,7 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s oil"
+        "item": "oil"
       },
       {
         "qty": null,
@@ -5507,12 +5472,10 @@
     ],
     "steps": [
       "Peel and finely grate the mangoes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Combine the grated mango evenly with the rest of the ingredients (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Spread the mixture in a shallow, wide-mouthed jar and cover with a thin cloth (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Keep the mixture in the sun for 5 days until the syrup attains a single thread consistency, stirring thrice daily."
+      "Keep the mixture in the sun for 5 days until the syrup attains a single thread consistency, stirring thrice daily (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Mango%2C_Chilli_Powder%2C_and_Cumin_Condiment_%28Chhundo%29",
     "sourceName": "Wikibooks Cookbook",
@@ -5543,7 +5506,7 @@
       {
         "qty": 1,
         "unit": "pinch",
-        "item": "of salt"
+        "item": "salt"
       },
       {
         "qty": null,
@@ -5605,9 +5568,9 @@
         "item": "eveled tbsp salt"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "¼ cups of water"
+        "qty": 2.25,
+        "unit": "cup",
+        "item": "of water"
       },
       {
         "qty": null,
@@ -5703,12 +5666,12 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup gram flour"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "gram flour"
       },
       {
         "qty": null,
@@ -5723,7 +5686,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s of vegetable oil/ghee for deep frying"
+        "item": "vegetable oil/ghee for deep frying"
       }
     ],
     "steps": [
@@ -5798,7 +5761,7 @@
       {
         "qty": 14.5,
         "unit": "oz",
-        "item": "s (411 g) canned tomatoes, diced or torn apart"
+        "item": "(411 g) canned tomatoes, diced or torn apart"
       },
       {
         "qty": null,
@@ -5813,7 +5776,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s cooked and chopped turkey or chicken"
+        "item": "cooked and chopped turkey or chicken"
       },
       {
         "qty": 1,
@@ -5861,8 +5824,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge egg"
+        "unit": "",
+        "item": "Lrge egg"
       },
       {
         "qty": 1,
@@ -5922,7 +5885,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s wheat flour"
+        "item": "wheat flour"
       },
       {
         "qty": 1,
@@ -6058,27 +6021,27 @@
       {
         "qty": 454,
         "unit": "g",
-        "item": "rams kadaif pastry"
+        "item": "kadaif pastry"
       },
       {
         "qty": 340,
         "unit": "g",
-        "item": "rams melted butter"
+        "item": "melted butter"
       },
       {
         "qty": 325,
         "unit": "g",
-        "item": "rams white sugar"
+        "item": "white sugar"
       },
       {
         "qty": 225,
         "unit": "g",
-        "item": "rams mozzarella cheese"
+        "item": "mozzarella cheese"
       },
       {
         "qty": 140,
         "unit": "g",
-        "item": "rams cream cheese"
+        "item": "cream cheese"
       },
       {
         "qty": 2,
@@ -6098,7 +6061,7 @@
       {
         "qty": 84,
         "unit": "g",
-        "item": "rams chopped walnuts"
+        "item": "chopped walnuts"
       }
     ],
     "steps": [
@@ -6139,7 +6102,7 @@
       {
         "qty": 6,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": null,
@@ -6172,9 +6135,9 @@
         "item": "onion, sliced"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup cooking oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "cooking oil"
       },
       {
         "qty": 1,
@@ -6277,7 +6240,7 @@
       {
         "qty": 2,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -6386,9 +6349,9 @@
         "item": "(300 g) all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup (70 g) butter"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "(70 g) butter"
       },
       {
         "qty": 120,
@@ -6713,7 +6676,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": null,
@@ -6721,9 +6684,9 @@
         "item": "½ tablespoon turmeric powder"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup chopped cashew nuts"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "chopped cashew nuts"
       },
       {
         "qty": 10,
@@ -6796,12 +6759,12 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "of all-purpose wheat flour"
+        "item": "all-purpose wheat flour"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "¼ cup of water"
+        "qty": 2.25,
+        "unit": "cup",
+        "item": "of water"
       },
       {
         "qty": 1,
@@ -6866,7 +6829,7 @@
       {
         "qty": 3,
         "unit": "clove",
-        "item": "s garlic"
+        "item": "garlic"
       },
       {
         "qty": 1,
@@ -6922,12 +6885,12 @@
       {
         "qty": 500,
         "unit": "g",
-        "item": "rams (1 lb) lean beef, finely minced"
+        "item": "(1 lb) lean beef, finely minced"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s clarified butter or olive oil"
+        "item": "clarified butter or olive oil"
       },
       {
         "qty": 1,
@@ -7023,7 +6986,7 @@
       {
         "qty": 1,
         "unit": "pinch",
-        "item": "of salt"
+        "item": "salt"
       },
       {
         "qty": 2,
@@ -7033,14 +6996,10 @@
     ],
     "steps": [
       "Combine all ingredients in a saucepan (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Bring to a boil, stirring until the sugar has dissolved (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Turn the heat down, and simmer for 5–8 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Cool the syrup to room temperature (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Divide it into 2 containers, and place in the refrigerator to chill overnight."
+      "Divide it into 2 containers, and place in the refrigerator to chill overnight (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Koeksisters_%28Fried_Braided_Pastry_in_Syrup%29",
     "sourceName": "Wikibooks Cookbook",
@@ -7061,7 +7020,7 @@
       {
         "qty": 6,
         "unit": "cup",
-        "item": "s (700 g) cake flour"
+        "item": "(700 g) cake flour"
       },
       {
         "qty": 1,
@@ -7170,7 +7129,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s water (for mixing)"
+        "item": "water (for mixing)"
       },
       {
         "qty": 2,
@@ -7259,22 +7218,22 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s tomato paste"
+        "item": "tomato paste"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s vegetable oil"
+        "item": "vegetable oil"
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge onion, thinly sliced"
+        "unit": "",
+        "item": "Lrge onion, thinly sliced"
       },
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -7360,7 +7319,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s white, all-purpose wheat flour (optional: try using some sorghum flour)"
+        "item": "white, all-purpose wheat flour (optional: try using some sorghum flour)"
       },
       {
         "qty": 2,
@@ -7421,7 +7380,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s medium-thick coconut milk"
+        "item": "medium-thick coconut milk"
       },
       {
         "qty": 1,
@@ -7466,8 +7425,8 @@
     "ingredients": [
       {
         "qty": 4,
-        "unit": "l",
-        "item": "arge eggs"
+        "unit": "",
+        "item": "Lrge eggs"
       },
       {
         "qty": null,
@@ -7523,7 +7482,7 @@
       {
         "qty": 6,
         "unit": "cup",
-        "item": "s (750 g) peanuts"
+        "item": "(750 g) peanuts"
       },
       {
         "qty": null,
@@ -7533,7 +7492,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s sugar"
+        "item": "sugar"
       },
       {
         "qty": null,
@@ -7985,7 +7944,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "of wheat flour or sorghum flour"
+        "item": "wheat flour or sorghum flour"
       },
       {
         "qty": 1,
@@ -8039,8 +7998,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge onion, chopped"
+        "unit": "",
+        "item": "Lrge onion, chopped"
       },
       {
         "qty": 1,
@@ -8121,13 +8080,13 @@
       },
       {
         "qty": 2,
-        "unit": "l",
-        "item": "arge potatoes, sliced"
+        "unit": "",
+        "item": "Lrge potatoes, sliced"
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge or 2 small white onions, diced"
+        "unit": "",
+        "item": "Lrge or 2 small white onions, diced"
       },
       {
         "qty": null,
@@ -8323,13 +8282,13 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge onion, finely chopped"
+        "unit": "",
+        "item": "Lrge onion, finely chopped"
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge tomato, diced"
+        "unit": "",
+        "item": "Lrge tomato, diced"
       },
       {
         "qty": 6,
@@ -8456,7 +8415,7 @@
       {
         "qty": 8,
         "unit": "cup",
-        "item": "s boiled and mashed russet potatoes, still hot"
+        "item": "boiled and mashed russet potatoes, still hot"
       },
       {
         "qty": null,
@@ -8466,17 +8425,17 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s unbleached flour"
+        "item": "unbleached flour"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s granulated sugar"
+        "item": "granulated sugar"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s salt"
+        "item": "salt"
       },
       {
         "qty": 1,
@@ -8501,7 +8460,7 @@
   },
   {
     "id": "r573",
-    "name": "Lemon Meringue Pie (American)",
+    "name": "Green Bean Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -8512,65 +8471,44 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "",
-        "item": "½ cups (360 ml) cold water"
+        "qty": 8,
+        "unit": "cup",
+        "item": "cooked green beans"
       },
       {
         "qty": 1,
         "unit": "cup",
-        "item": "(240 g) white granulated sugar"
+        "item": "milk"
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "s all-purpose flour"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "s cornstarch"
+        "unit": "",
+        "item": "⅔ cups canned French fried onions, divided into 2 equal portions"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup (120 ml) lemon juice (from about 2 lemons or bottled lemon juice)"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "lemon zest (from about 2 lemons)"
+        "item": "¼ teaspoon ground black pepper"
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "s butter"
+        "unit": "can",
+        "item": "(21 ounces) cream of mushroom soup"
       },
       {
-        "qty": 4,
-        "unit": "",
-        "item": "egg yolks, beaten"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅛ teaspoon ground turmeric"
+        "qty": 2,
+        "unit": "tsp",
+        "item": "soy sauce"
       }
     ],
     "steps": [
-      "Prepare and bake Grandma's Pie Crust or a ready-made refrigerated or frozen pie crust (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Let cool.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat oven to 350°F (175°C) (3 minutes).",
+      "Stir together beans, milk, ½ of onions, pepper, soup, and soy sauce in a 3-quart casserole dish (3 minutes).",
+      "Bake until hot, about 25 minutes (3 minutes).",
+      "Sprinkle top with rest of onions (3 minutes).",
+      "Bake another 5 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lemon_Meringue_Pie_%28American%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Bean_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8593,8 +8531,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge or 2 small lemons, juiced"
+        "unit": "",
+        "item": "Lrge or 2 small lemons, juiced"
       },
       {
         "qty": null,
@@ -8602,9 +8540,9 @@
         "item": "½ cup salt"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup red chile powder"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "red chile powder"
       },
       {
         "qty": null,
@@ -8737,9 +8675,9 @@
         "item": "⅓ cup (80 ml) milk"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup (60 ml) vegetable oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "(60 ml) vegetable oil"
       },
       {
         "qty": null,
@@ -8757,9 +8695,9 @@
         "item": "¾ cups (300 g) all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup (60 g) white granulated sugar"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "(60 g) white granulated sugar"
       },
       {
         "qty": 2,
@@ -8950,7 +8888,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s chicken bouillon cube"
+        "item": "chicken bouillon cube"
       },
       {
         "qty": 2,
@@ -8970,7 +8908,7 @@
       {
         "qty": 5,
         "unit": "clove",
-        "item": "s of garlic"
+        "item": "of garlic"
       },
       {
         "qty": null,
@@ -8985,7 +8923,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s tomato paste"
+        "item": "tomato paste"
       },
       {
         "qty": 2,
@@ -9036,7 +8974,7 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate"
     ],
@@ -9074,14 +9012,10 @@
     ],
     "steps": [
       "Remove the meat from the bone (if needed), and dice it (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Heat a little oil in a large saucepan (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the meat, and brown it (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the chopped onions, carrots, and water or meat stock, and as many potatoes as possible (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Simmer until everything is cooked."
+      "Simmer until everything is cooked (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Liverpool_Lamb_and_Vegetable_Soup_%28Scouse%29",
     "sourceName": "Wikibooks Cookbook",
@@ -9099,9 +9033,9 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup oil for frying"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "oil for frying"
       },
       {
         "qty": 1,
@@ -9111,7 +9045,7 @@
       {
         "qty": 4,
         "unit": "lb",
-        "item": "s (1.8 kg) chicken, cut in pieces"
+        "item": "(1.8 kg) chicken, cut in pieces"
       },
       {
         "qty": null,
@@ -9136,22 +9070,22 @@
       {
         "qty": 2,
         "unit": "clove",
-        "item": "s of garlic, chopped"
+        "item": "of garlic, chopped"
       },
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s rice"
+        "item": "rice"
       },
       {
-        "qty": 5,
-        "unit": "",
-        "item": "¼ cups chicken stock or water"
+        "qty": 5.25,
+        "unit": "cup",
+        "item": "chicken stock or water"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup tomato paste"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "tomato paste"
       },
       {
         "qty": 1,
@@ -9212,7 +9146,7 @@
       {
         "qty": 1,
         "unit": "pinch",
-        "item": "of cinnamon (optional)"
+        "item": "cinnamon (optional)"
       },
       {
         "qty": 120,
@@ -9267,17 +9201,17 @@
       {
         "qty": 3,
         "unit": "lb",
-        "item": "s (900 g) beef tenderloin or other tender steak"
+        "item": "(900 g) beef tenderloin or other tender steak"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup red wine (e.g. Burgundy)"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "red wine (e.g. Burgundy)"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s crushed garlic"
+        "item": "crushed garlic"
       },
       {
         "qty": 2,
@@ -9302,12 +9236,12 @@
       {
         "qty": 1,
         "unit": "tbsp",
-        "item": "of vinegar"
+        "item": "vinegar"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s of soy sauce"
+        "item": "soy sauce"
       },
       {
         "qty": null,
@@ -9361,7 +9295,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s active dry yeast"
+        "item": "active dry yeast"
       },
       {
         "qty": 1,
@@ -9371,7 +9305,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -9414,12 +9348,12 @@
       {
         "qty": 2,
         "unit": "package",
-        "item": "s (4½ tsp) active dry yeast"
+        "item": "(4½ tsp) active dry yeast"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup lukewarm water"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "lukewarm water"
       },
       {
         "qty": null,
@@ -9628,13 +9562,13 @@
       },
       {
         "qty": 6,
-        "unit": "l",
-        "item": "arge eggs, lightly beaten"
+        "unit": "",
+        "item": "Lrge eggs, lightly beaten"
       },
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s shredded beef filling"
+        "item": "shredded beef filling"
       },
       {
         "qty": 10,
@@ -9649,7 +9583,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s (8 ounces) shredded cheddar or Monterey Jack Cheese"
+        "item": "(8 ounces) shredded cheddar or Monterey Jack Cheese"
       },
       {
         "qty": null,
@@ -9659,14 +9593,10 @@
     ],
     "steps": [
       "Heat butter in large skillet over medium-high heat (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add eggs; cook, stirring frequently, for 2–3 minutes or until eggs just begin to set (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Stir in shredded beef filling (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Cook, stirring occasionally, for 2 to 3 minutes or until eggs are cooked and beef is heated through (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve eggs with tortillas, beans, cheese, and salsa."
+      "Serve eggs with tortillas, beans, cheese, and salsa (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Machacado_con_Huevo_%28Eggs_with_Shredded_Beef%29",
     "sourceName": "Wikibooks Cookbook",
@@ -9685,9 +9615,9 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup water"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "water"
       },
       {
         "qty": null,
@@ -9734,7 +9664,7 @@
       {
         "qty": 4,
         "unit": "tbsp",
-        "item": "s vegetable oil"
+        "item": "vegetable oil"
       },
       {
         "qty": 2,
@@ -9754,7 +9684,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s crushed tomatoes"
+        "item": "crushed tomatoes"
       },
       {
         "qty": 4,
@@ -9832,8 +9762,8 @@
   },
   {
     "id": "r590",
-    "name": "Maffé (West African Peanut Stew) III",
-    "minutes": 15,
+    "name": "Cuban Sandwich",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
@@ -9842,58 +9772,66 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "lb",
-        "item": "s stew beef"
+        "qty": 1,
+        "unit": "l",
+        "item": "oaf Cuban bread"
       },
       {
-        "qty": null,
+        "qty": 1,
+        "unit": "oz",
+        "item": "regular prepared mustard"
+      },
+      {
+        "qty": 4,
         "unit": "",
-        "item": "½ cup peanut butter"
+        "item": "dill pickles"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "water"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "black pepper"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": 5,
+        "unit": "slice",
+        "item": "boiled ham or Virginia ham"
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "s tomato paste"
+        "unit": "slice",
+        "item": "roast pork"
+      },
+      {
+        "qty": 2,
+        "unit": "slice",
+        "item": "Genoa salami"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "onion"
+        "unit": "slice",
+        "item": "imported Swiss cheese"
       },
       {
-        "qty": null,
+        "qty": 1,
+        "unit": "oz",
+        "item": "butter"
+      },
+      {
+        "qty": 2,
         "unit": "",
-        "item": "Garlic (optional)"
+        "item": "ham croquetas"
       }
     ],
     "steps": [
-      "Boil meat in a pot with salt and onion (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Fry the meat in a pan of oil (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Blend together the tomato, pepper, and garlic until smooth (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Pour the blended mixture into a pot and add the peanut paste (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Stir until thick."
+      "Cut Cuban bread to desired size—a common size is 7 inches (3 minutes).",
+      "Next, slice open the bread down the middle (3 minutes).",
+      "On the topside of the bread spread mustard evenly across (3 minutes).",
+      "Place 4 pickles on top of the mustard (3 minutes).",
+      "Place 1 slice of Swiss cheese on top of the pickles (3 minutes).",
+      "Slice ham to desired thickness (3 minutes).",
+      "The recommended size is 1 ½ ounces per slice, the thinner the better (3 minutes).",
+      "Fold each slice of ham in half and place evenly on bottom of bread (3 minutes).",
+      "On top of the ham, place slices of roast pork and salami (3 minutes).",
+      "Join both halves of the sandwich (3 minutes).",
+      "Transfer the sandwich to a sandwich grill if you have one, or a waffle iron if not (3 minutes).",
+      "Close the grill, smashing the sandwich (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maff%C3%A9_%28West_African_Peanut_Stew%29_III",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cuban_Sandwich_II",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9925,24 +9863,24 @@
         "item": "½ cup tomato paste"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup olive oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "olive oil"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup fresh parsley, finely chopped"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "fresh parsley, finely chopped"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup fresh mint leaves, finely chopped"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "fresh mint leaves, finely chopped"
       },
       {
         "qty": 2,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -10003,12 +9941,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s cornstarch"
+        "item": "cornstarch"
       },
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s coconut milk"
+        "item": "coconut milk"
       },
       {
         "qty": 1,
@@ -10031,9 +9969,9 @@
         "item": "corn kernels (optional)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup toasted coconut flakes (optional)"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "toasted coconut flakes (optional)"
       }
     ],
     "steps": [
@@ -10196,14 +10134,14 @@
         "item": "itre milk"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup all-purpose flour"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup semolina flour"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "semolina flour"
       },
       {
         "qty": null,
@@ -10293,12 +10231,12 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s garam masala"
+        "item": "garam masala"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s Malvani Special Masala"
+        "item": "Malvani Special Masala"
       },
       {
         "qty": null,
@@ -10330,67 +10268,86 @@
   },
   {
     "id": "r597",
-    "name": "Mango Avocado Salsa",
+    "name": "Mirliton Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian",
-      "collection-mexican"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 6,
         "unit": "",
-        "item": "¼ cup red onion, diced"
+        "item": "medium mirliton (chayote squash), halved lengthwise"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "jalapeño pepper, seeded and minced"
+        "item": "medium yellow onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "–3 stalks celery, sliced or diced"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "small bunch of cilantro, chopped (about 1 cup, packed)"
+        "item": "medium to large green bell pepper, diced"
       },
       {
-        "qty": 3,
+        "qty": 2,
         "unit": "",
-        "item": "Hass avocados, peeled, cored, and diced"
+        "item": "–3 cloves garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "(500 g) whole shrimp, peeled OR ½ lb (250 g) ground beef (optional)"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "ripe mango, peeled, cored, and diced (about 1 cup)"
+        "item": "bay leaf"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "Salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper to taste"
+        "item": "Pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Juice of 1 lime"
+        "item": "Parsley"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Bread crumbs"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "stick (½ cup / 113 g) butter (olive oil may be substituted)"
       }
     ],
     "steps": [
-      "Combine all ingredients in a medium bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Mix well with a spoon and serve with tortilla chips or use it as toppings for another dish.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Sauté onion, celery, and garlic in butter over medium heat, adding garlic to sauté just before onion, celery, and garlic are fully softened (3 minutes).",
+      "Add shrimp or beef to pan until beef is lightly browned or until shrimp is just turning pink (3 minutes).",
+      "Skip this step if you aren't adding meat (3 minutes).",
+      "Incorporate mirliton and bay leaf and allow to simmer for 5–10 minutes (3 minutes).",
+      "Remove from heat and add salt, pepper, and parsley to taste (3 minutes).",
+      "Pour mixture into a casserole dish and cover with bread crumbs (3 minutes).",
+      "Bake in the oven at 350°F (175°C) until the mirliton is bubbling and the bread crumbs are browned (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mango_Avocado_Salsa",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mirliton_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10483,22 +10440,22 @@
       {
         "qty": 15,
         "unit": "oz",
-        "item": "s (425 g) canned potatoes, or 2 small boiled potatoes"
+        "item": "(425 g) canned potatoes, or 2 small boiled potatoes"
       },
       {
         "qty": 28,
         "unit": "oz",
-        "item": "s (794 g) canned tomatoes in juice, or 2 large tomatoes and tomato juice"
+        "item": "(794 g) canned tomatoes in juice, or 2 large tomatoes and tomato juice"
       },
       {
         "qty": 6.5,
         "unit": "oz",
-        "item": "s (184 g) canned chopped clams, minimum"
+        "item": "(184 g) canned chopped clams, minimum"
       },
       {
         "qty": 2,
         "unit": "stalk",
-        "item": "s of celery"
+        "item": "of celery"
       }
     ],
     "steps": [
@@ -10605,7 +10562,7 @@
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s of garlic, minced"
+        "item": "of garlic, minced"
       },
       {
         "qty": 500,
@@ -10645,14 +10602,10 @@
     ],
     "steps": [
       "If using dried mushrooms, soak them in hot water for 10 minutes while preparing the rest of the ingredients, then slice before adding later (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Sauté onion with ginger and crushed chili (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add minced meat and garlic, and fry until brown (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Mix in other ingredients (including sliced mushrooms), lower heat, and simmer for 5–10 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve over steamed jasmine rice."
+      "Serve over steamed jasmine rice (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mapo_Tofu",
     "sourceName": "Wikibooks Cookbook",
@@ -10673,32 +10626,32 @@
       {
         "qty": 6,
         "unit": "tbsp",
-        "item": "s virgin olive oil"
+        "item": "virgin olive oil"
       },
       {
         "qty": 225,
         "unit": "g",
-        "item": "rams (8 ounces) Spanish onion, diced"
+        "item": "(8 ounces) Spanish onion, diced"
       },
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s garlic, thinly sliced"
+        "item": "garlic, thinly sliced"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s fresh thyme leaves (or ½ teaspoon dried)"
+        "item": "fresh thyme leaves (or ½ teaspoon dried)"
       },
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s fresh basil leaves (or 1 teaspoon dried)"
+        "item": "fresh basil leaves (or 1 teaspoon dried)"
       },
       {
         "qty": 85,
         "unit": "g",
-        "item": "rams (3 ounces) red bell pepper, diced"
+        "item": "(3 ounces) red bell pepper, diced"
       },
       {
         "qty": 1.3,
@@ -10809,7 +10762,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s uncooked rice"
+        "item": "uncooked rice"
       },
       {
         "qty": 1,
@@ -10857,57 +10810,108 @@
   },
   {
     "id": "r605",
-    "name": "Masala Chai I",
+    "name": "Meatloaf Dinner",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian",
-      "collection-indian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 100,
-        "unit": "g",
-        "item": "rams powdered ginger"
-      },
-      {
-        "qty": 25,
-        "unit": "g",
-        "item": "rams cloves"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "rams whole black peppercorns"
-      },
-      {
-        "qty": 60,
-        "unit": "g",
-        "item": "rams whole cinnamon, broken small, or 40 grams ground cinnamon"
+        "qty": null,
+        "unit": "",
+        "item": "½ pound ground sirloin"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ seed of nutmeg, crushed"
+        "item": "½ pound ground chuck"
       },
       {
-        "qty": 35,
-        "unit": "g",
-        "item": "rams green cardamom pods"
+        "qty": 6,
+        "unit": "oz",
+        "item": "garlic croûtons, coarsely crushed"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp freshly-ground black pepper"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "ketchup"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "⅛ tsp red pepper flakes"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "egg, beaten"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "rosemary, finely chopped"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "thyme, finely chopped"
+      },
+      {
+        "qty": 6,
+        "unit": "clove",
+        "item": "garlic, smashed and chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ large onion, diced"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "carrots, peeled and diced"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ red bell pepper, diced"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "strips thick cut bacon, cut into 6 pieces and crisp-cooked"
       }
     ],
     "steps": [
-      "Combine all of the spices, and blend well in an electric grinder (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Store the powder in a clean container at room temperature; you only need a small quantity for each cup of chai, and a full recipe will keep you stocked full of chai for months.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Heat a large stainless steel straight-sided sauté pan over medium high heat (3 minutes).",
+      "Add the bacon drippings, garlic, and vegetables (3 minutes).",
+      "Sauté until vegetables are lightly browned around edges (3 minutes).",
+      "Remove vegetables and set aside until cool (3 minutes).",
+      "Mix remaining meatloaf ingredients and sautéed vegetables but leave out the bacon (3 minutes).",
+      "Shape with a loaf pan and place on an ungreased, unlined baking pan (3 minutes).",
+      "Insert a probe thermometer at a 45 degree angle into the center of the loaf (3 minutes).",
+      "Bake the loaf at 325°F until internal temperature reaches 155°F (3 minutes).",
+      "Keep warm on a different pan than the one you used to cook it (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Masala_Chai_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Meatloaf_Dinner",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10951,12 +10955,10 @@
     ],
     "steps": [
       "Fill a tall, narrow glass with the ice cubes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour the coffee over the ice (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the lemon juice and sugar to taste (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add the lemon slice or wedge as a final touch if desired."
+      "Add the lemon slice or wedge as a final touch if desired (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mazagran_%28Algerian_Iced_Coffee%29",
     "sourceName": "Wikibooks Cookbook",
@@ -11069,7 +11071,7 @@
       {
         "qty": 3,
         "unit": "lb",
-        "item": "s (1 quart) honey"
+        "item": "(1 quart) honey"
       },
       {
         "qty": 1,
@@ -11149,17 +11151,17 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s green/spring onion, minced"
+        "item": "green/spring onion, minced"
       },
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s fresh ginger, minced"
+        "item": "fresh ginger, minced"
       },
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s cilantro, chopped"
+        "item": "cilantro, chopped"
       }
     ],
     "steps": [
@@ -11193,8 +11195,8 @@
     "ingredients": [
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge onion, chopped"
+        "unit": "",
+        "item": "Lrge onion, chopped"
       },
       {
         "qty": 1,
@@ -11270,7 +11272,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s lemon juice"
+        "item": "lemon juice"
       },
       {
         "qty": null,
@@ -11371,7 +11373,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 2,
@@ -11471,12 +11473,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s fresh chopped or grated okra (or 1½ cups dried okra)"
+        "item": "fresh chopped or grated okra (or 1½ cups dried okra)"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s ground crayfish"
+        "item": "ground crayfish"
       },
       {
         "qty": null,
@@ -11516,13 +11518,13 @@
     "ingredients": [
       {
         "qty": 2,
-        "unit": "l",
-        "item": "arge dried catfish"
+        "unit": "",
+        "item": "Lrge dried catfish"
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge dawa dawa lump"
+        "unit": "",
+        "item": "Lrge dawa dawa lump"
       },
       {
         "qty": 2,
@@ -11541,8 +11543,8 @@
       },
       {
         "qty": 2,
-        "unit": "l",
-        "item": "arge stock cube"
+        "unit": "",
+        "item": "Lrge stock cube"
       },
       {
         "qty": null,
@@ -11557,7 +11559,7 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s kuka (baobab leaf) powder"
+        "item": "kuka (baobab leaf) powder"
       },
       {
         "qty": 2,
@@ -11603,7 +11605,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s stock cube (e.g., Maggi)"
+        "item": "stock cube (e.g., Maggi)"
       },
       {
         "qty": null,
@@ -11612,8 +11614,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge onion, chopped"
+        "unit": "",
+        "item": "Lrge onion, chopped"
       },
       {
         "qty": 2,
@@ -11669,8 +11671,8 @@
       },
       {
         "qty": 2,
-        "unit": "l",
-        "item": "arge chunks meat"
+        "unit": "",
+        "item": "Lrge chunks meat"
       },
       {
         "qty": 1,
@@ -11680,7 +11682,7 @@
       {
         "qty": 2,
         "unit": "piece",
-        "item": "s fresh red chile pepper, puréed"
+        "item": "fresh red chile pepper, puréed"
       },
       {
         "qty": 2,
@@ -11757,12 +11759,12 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s peeled and chunked pumpkin"
+        "item": "peeled and chunked pumpkin"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s groundnut paste (optional)"
+        "item": "groundnut paste (optional)"
       },
       {
         "qty": 1,
@@ -11859,14 +11861,10 @@
     ],
     "steps": [
       "In a large bowl, mix sunflower oil, garlic cloves, soup powder, and lemonade for 3 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "In a small bowl, mix boiling water, diced jalapeño peppers, and ketchup for 5 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Combine both mixtures, and continue mixing for 2 ½ minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add rice vermicelli to the bowl; cover it and wait for 10 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Top it with toppings as desired."
+      "Top it with toppings as desired (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mohingha_%28Burmese_Fish_Noodle_Soup%29",
     "sourceName": "Wikibooks Cookbook",
@@ -11917,7 +11915,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s flour"
+        "item": "flour"
       },
       {
         "qty": 2,
@@ -11972,27 +11970,27 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s fresh or frozen jute mallow (molokhia) leaves"
+        "item": "fresh or frozen jute mallow (molokhia) leaves"
       },
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s vegetable or chicken broth"
+        "item": "vegetable or chicken broth"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge onion, finely chopped"
+        "unit": "",
+        "item": "Lrge onion, finely chopped"
       },
       {
         "qty": 3,
         "unit": "clove",
-        "item": "s garlic, minced"
+        "item": "garlic, minced"
       },
       {
         "qty": 1,
@@ -12053,7 +12051,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -12076,19 +12074,19 @@
         "item": "instant yeast"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "¼ cups warm water"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "warm water"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup vegetable oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "vegetable oil"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup melted butter"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "melted butter"
       }
     ],
     "steps": [
@@ -12154,12 +12152,10 @@
     ],
     "steps": [
       "Slice bread loaf in half horizontally and spread each cut side with olive spread (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "For the authentic Central Grocery muffuletta, layer bottom half of the loaf with salami, ham, Swiss cheese, provolone, mortadella, and a second layer of salami (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Cover with top half of the loaf and press down (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Quarter the muffuletta and serve or wrap the muffuletta tightly in plastic wrap to save for later."
+      "Quarter the muffuletta and serve or wrap the muffuletta tightly in plastic wrap to save for later (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Muffuletta_Sandwich",
     "sourceName": "Wikibooks Cookbook",
@@ -12185,7 +12181,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s maize kernels (fresh or frozen)"
+        "item": "maize kernels (fresh or frozen)"
       },
       {
         "qty": 1,
@@ -12195,7 +12191,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s pumpkin leaves, spinach, or kale, chopped"
+        "item": "pumpkin leaves, spinach, or kale, chopped"
       },
       {
         "qty": 1,
@@ -12282,7 +12278,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "s (450 g) plain flour"
+        "item": "(450 g) plain flour"
       },
       {
         "qty": 1,
@@ -12297,7 +12293,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s salt"
+        "item": "salt"
       },
       {
         "qty": null,
@@ -12321,64 +12317,80 @@
   },
   {
     "id": "r627",
-    "name": "Nanaimo Bars I",
+    "name": "Tuna Melt Fishcakes",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup unsalted butter (European style cultured)"
+        "qty": 200,
+        "unit": "g",
+        "item": "tuna in olive oil"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup white granulated sugar"
+        "qty": 200,
+        "unit": "g",
+        "item": "ricotta cheese"
       },
       {
-        "qty": 5,
+        "qty": 2,
+        "unit": "",
+        "item": "eggs"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "capers"
+      },
+      {
+        "qty": 100,
+        "unit": "g",
+        "item": "breadcrumbs"
+      },
+      {
+        "qty": 50,
+        "unit": "g",
+        "item": "grated parmesan cheese"
+      },
+      {
+        "qty": 1,
         "unit": "tbsp",
-        "item": "cocoa"
+        "item": "chopped parsley or basil"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "egg beaten"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "¼ cups graham wafer crumbs"
+        "unit": "l",
+        "item": "emon, zested and juiced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cups finely-chopped almonds"
+        "item": "Olive oil"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "coconut"
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Pepper"
       }
     ],
     "steps": [
-      "Melt first 3 ingredients in top of double boiler (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add egg and stir to cook and thicken (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Remove from heat (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Stir in crumbs, coconut, and nuts (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Press firmly into an ungreased 8 x 8-inch cake pan."
+      "Preheat oven to 180ºC before beginning preparation (3 minutes).",
+      "In a bowl beat the eggs and mix in well the drained tuna with the ricotta (3 minutes).",
+      "Add a little salt and pepper, the lemon zest, basil or parsley, Parmesan and half the bread crumbs (3 minutes).",
+      "Distribute a trickle of olive oil in an ovenproof dish (3 minutes).",
+      "Work the ingredients well and, with the help of two spoons, form medium-sized balls to be covered in the other half of the breadcrumbs and lay them in the ovenproof dish (3 minutes).",
+      "Bake in the oven for 25–30 minutes and serve warm or cold drizzling with lemon juice and accompanied by a green salad (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nanaimo_Bars_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tuna_Melt_Fishcakes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12406,12 +12418,12 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s maggi (stock cube)"
+        "item": "maggi (stock cube)"
       },
       {
         "qty": 3,
-        "unit": "l",
-        "item": "arge onion, sliced"
+        "unit": "",
+        "item": "Lrge onion, sliced"
       },
       {
         "qty": null,
@@ -12421,7 +12433,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s shelled and peeled peanuts"
+        "item": "shelled and peeled peanuts"
       },
       {
         "qty": 4,
@@ -12486,7 +12498,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s plain white flour"
+        "item": "plain white flour"
       },
       {
         "qty": 1,
@@ -12506,7 +12518,7 @@
       {
         "qty": 3,
         "unit": "oz",
-        "item": "s salt pork, diced"
+        "item": "salt pork, diced"
       },
       {
         "qty": 1,
@@ -12555,7 +12567,7 @@
       {
         "qty": 3,
         "unit": "lb",
-        "item": "s California long white potatoes"
+        "item": "California long white potatoes"
       },
       {
         "qty": 3,
@@ -12573,9 +12585,9 @@
         "item": "¾ cup mayonnaise"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup sweet pickle juice (from jar of pickles)"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "sweet pickle juice (from jar of pickles)"
       },
       {
         "qty": 1,
@@ -12649,7 +12661,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -12659,7 +12671,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s olive oil"
+        "item": "olive oil"
       },
       {
         "qty": 1,
@@ -12677,9 +12689,9 @@
         "item": "½ cup grated Romano cheese"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup chopped fresh basil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "chopped fresh basil"
       },
       {
         "qty": 1,
@@ -12729,7 +12741,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s cornmeal"
+        "item": "cornmeal"
       },
       {
         "qty": 1,
@@ -12759,14 +12771,10 @@
     ],
     "steps": [
       "Combine the flour, cornmeal, pepper, salt, sugar, ginger, and paprika in a bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the chicken pieces, and rub the mixture into them well so they are completely coated (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Set in the fridge, and allow the chicken to rest for 1 hour (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Arrange the chicken pieces on a baking tray or on a grill (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Grill or bake until cooked through (about 45 minutes baking at 375°F)."
+      "Grill or bake until cooked through (about 45 minutes baking at 375°F) (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Barbecued_Chicken_Wings",
     "sourceName": "Wikibooks Cookbook",
@@ -12790,8 +12798,8 @@
       },
       {
         "qty": 2,
-        "unit": "l",
-        "item": "arge onions, chopped"
+        "unit": "",
+        "item": "Lrge onions, chopped"
       },
       {
         "qty": null,
@@ -12928,14 +12936,10 @@
     ],
     "steps": [
       "Cut each ripe plantain into 6 small pieces (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Toss with salt and chile-tomato purée to taste (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Heat ½ cup of oil in a frying pan (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the 6 plantain pieces, and deep fry until all sides are golden brown (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve with jollof rice or bean porridge."
+      "Serve with jollof rice or bean porridge (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Dodo_%28Fried_Ripe_Plantain%29",
     "sourceName": "Wikibooks Cookbook",
@@ -12956,7 +12960,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s all-purpose flour"
+        "item": "all-purpose flour"
       },
       {
         "qty": 1,
@@ -12976,7 +12980,7 @@
       {
         "qty": 3,
         "unit": "tbsp",
-        "item": "s sugar"
+        "item": "sugar"
       },
       {
         "qty": 1,
@@ -12985,8 +12989,8 @@
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "arge egg"
+        "unit": "",
+        "item": "Lrge egg"
       },
       {
         "qty": null,
@@ -13093,7 +13097,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s brown beans or honey beans"
+        "item": "brown beans or honey beans"
       },
       {
         "qty": null,
@@ -13103,7 +13107,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 8,
@@ -13155,9 +13159,9 @@
   },
   {
     "id": "r639",
-    "name": "Nigerian Fruit Skewer",
+    "name": "Yam Casserole",
     "minutes": 45,
-    "servings": 4,
+    "servings": 10,
     "tags": [
       "dinner",
       "medium",
@@ -13166,45 +13170,68 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "Pineapple, peeled"
+        "qty": 2,
+        "unit": "can",
+        "item": "(2 lb + 8 oz / 900 g) yams or sweet potatoes, drained (or 4 lb / 1.8 kg cooked, peeled, and sliced yams)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pear, peeled"
+        "item": "⅔ cup orange juice"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "grated orange rind"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Apple, peeled"
+        "item": "½ cup bourbon"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground ginger"
+      },
+      {
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "butter, melted"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pawpaw, peeled"
+        "item": "⅓ cup packed brown sugar"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "egg yolks"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Watermelon"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Banana, peeled"
+        "item": "Fresh pepper to taste"
       }
     ],
     "steps": [
-      "Cut all the fruit into small chunks (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Thread the fruit chunks onto a skewer.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "In mixing bowl with electric mixer, beat yams (3 minutes).",
+      "Add in remaining main ingredients, beating until mixture is light and fluffy (3 minutes).",
+      "Butter a 12-inch porcelain quiche dish or a shallow 2 quart casserole dish (7x11 inches / 18 x 28 cm) (3 minutes).",
+      "Pour in yam mixture, smoothing top evenly (3 minutes).",
+      "Make praline topping by mixing all ingredients together in small bowl (3 minutes).",
+      "Spread evenly over the yams (3 minutes).",
+      "May be refrigerated covered overnight (3 minutes).",
+      "Bake at 350°F (180°C) for 45–50 minutes or until golden brown and bubbly (3 minutes).",
+      "Remove from oven and let stand 10 minutes before serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Fruit_Skewer",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Yam_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13222,23 +13249,23 @@
     "ingredients": [
       {
         "qty": 5,
-        "unit": "l",
-        "item": "arge fresh tomatoes"
+        "unit": "",
+        "item": "Lrge fresh tomatoes"
       },
       {
         "qty": 4,
-        "unit": "l",
-        "item": "arge bell peppers"
+        "unit": "",
+        "item": "Lrge bell peppers"
       },
       {
         "qty": 4,
-        "unit": "l",
-        "item": "arge scotch bonnet chile peppers"
+        "unit": "",
+        "item": "Lrge scotch bonnet chile peppers"
       },
       {
         "qty": 2,
-        "unit": "l",
-        "item": "arge onions"
+        "unit": "",
+        "item": "Lrge onions"
       },
       {
         "qty": 5,
@@ -13343,7 +13370,7 @@
       {
         "qty": 4,
         "unit": "clove",
-        "item": "s garlic (optional)"
+        "item": "garlic (optional)"
       },
       {
         "qty": null,
@@ -13428,9 +13455,9 @@
         "item": "½ tsp salt"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "¼ cups warm milk"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "warm milk"
       }
     ],
     "steps": [
@@ -13486,7 +13513,7 @@
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "s vegetable oil or palm oil"
+        "item": "vegetable oil or palm oil"
       },
       {
         "qty": 1,
@@ -13501,7 +13528,7 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "s parboiled rice"
+        "item": "parboiled rice"
       }
     ],
     "steps": [
@@ -13537,7 +13564,7 @@
       {
         "qty": 4,
         "unit": "cup",
-        "item": "s water"
+        "item": "water"
       },
       {
         "qty": 2,
@@ -13635,7 +13662,7 @@
       {
         "qty": 6,
         "unit": "piece",
-        "item": "s of ponmo (cow skin), properly cleaned and cut into small pieces"
+        "item": "of ponmo (cow skin), properly cleaned and cut into small pieces"
       },
       {
         "qty": 1,
@@ -13695,7 +13722,7 @@
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "s of ginger/garlic/onion paste"
+        "item": "ginger/garlic/onion paste"
       },
       {
         "qty": 1,
@@ -13705,7 +13732,7 @@
       {
         "qty": 4,
         "unit": "tsp",
-        "item": "s ground crayfish"
+        "item": "ground crayfish"
       }
     ],
     "steps": [
@@ -13810,7 +13837,7 @@
       {
         "qty": 2,
         "unit": "piece",
-        "item": "s of Chinese cabbage"
+        "item": "of Chinese cabbage"
       },
       {
         "qty": 1,
@@ -13830,7 +13857,7 @@
       {
         "qty": 2,
         "unit": "piece",
-        "item": "s of saba"
+        "item": "of saba"
       }
     ],
     "steps": [

@@ -10,6 +10,7 @@
  */
 
 import { sanitizeDishQuery, shapeCookbookPages, wikibooksSearchUrl } from "../_lib/cookbook-search.js";
+import { wikimediaApiJson } from "../_lib/wikimedia-api.js";
 
 const RATE_LIMIT = 20;
 const RATE_WINDOW_MS = 60_000;
@@ -78,18 +79,11 @@ export async function onRequest(context) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
-    const response = await fetch(wikibooksSearchUrl(query), {
-      headers: {
-        Accept: "application/json",
-        "User-Agent": USER_AGENT,
-        "Api-User-Agent": USER_AGENT,
-      },
-      signal: controller.signal,
-    });
+    const response = await wikimediaApiJson(wikibooksSearchUrl(query), { userAgent: USER_AGENT, signal: controller.signal });
     if (!response.ok) {
       return json({ error: "Recipe search is unavailable right now.", results: [] }, 422);
     }
-    const data = await response.json();
+    const data = response.data;
     const pages = data && data.query && data.query.pages;
     return json({
       query,

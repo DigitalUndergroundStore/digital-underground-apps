@@ -1,3 +1,5 @@
+import { safeWikimediaImage } from "./wikimedia-api.js";
+
 /**
  * Shape a Wikimedia Cookbook search (titles, URLs, thumbnails only).
  * The recipe body is not requested and not stored.
@@ -60,7 +62,7 @@ export function shapeCookbookPages(pages) {
     }
     if (seen.has(url)) return;
     seen.add(url);
-    const image = page.thumbnail && /^https?:\/\//i.test(page.thumbnail.source || "") ? page.thumbnail.source : "";
+    const image = safeWikimediaImage(page.thumbnail && page.thumbnail.source);
     out.push({
       title,
       url,

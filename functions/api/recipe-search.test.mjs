@@ -1,16 +1,16 @@
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
 
 async function load(rel) {
-  const src = fs.readFileSync(path.join(dir, rel), "utf8");
-  return import("data:text/javascript," + encodeURIComponent(src));
+  return import(pathToFileURL(path.join(dir, rel)).href);
 }
 
 const search = await load("../_lib/cookbook-search.js");
 const wiki = await load("../_lib/wiki-recipe.js");
+const wm = await load("../_lib/wikimedia-api.js");
 let failed = 0;
 function check(name, cond) {
   if (!cond) {
@@ -67,6 +67,15 @@ check("time and yield", recipe.totalTime === "PT45M" && recipe.recipeYield === "
 check("image kept", recipe.image.indexOf("https://") === 0);
 check("page without a recipe is skipped", wiki.wikiToSchema("Cookbook:Pork", "==Notes==\nJust a category page.") == null);
 
+check("allowlist: Wikibooks API", wm.isAllowedWikimediaApiUrl("https://en.wikibooks.org/w/api.php?action=query"));
+check("allowlist: rejects http", !wm.isAllowedWikimediaApiUrl("http://en.wikibooks.org/w/api.php"));
+check("allowlist: rejects lookalike host", !wm.isAllowedWikimediaApiUrl("https://en.wikibooks.org.evil.com/w/api.php"));
+check("allowlist: rejects userinfo/port", !wm.isAllowedWikimediaApiUrl("https://x@en.wikibooks.org/w/api.php") && !wm.isAllowedWikimediaApiUrl("https://en.wikibooks.org:8443/w/api.php"));
+check("allowlist: rejects metadata IP", !wm.isAllowedWikimediaApiUrl("https://169.254.169.254/w/api.php"));
+check("allowlist: rejects non-API path", !wm.isAllowedWikimediaApiUrl("https://en.wikibooks.org/wiki/Cookbook:Lasagna"));
+check("search URL is allowlisted", wm.isAllowedWikimediaApiUrl(search.wikibooksSearchUrl("x&host=evil.com")));
+check("thumbnail: only https upload.wikimedia.org", wm.safeWikimediaImage("https://upload.wikimedia.org/a.jpg") && !wm.safeWikimediaImage("http://169.254.169.254/x.jpg"));
+check("title: other host rejected", wiki.cookbookTitleFromUrl("https://evil.com/wiki/Cookbook:Lasagna") === "");
 if (failed) {
   console.error(failed + " failed");
   process.exit(1);

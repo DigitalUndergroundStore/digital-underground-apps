@@ -7,6 +7,7 @@
  */
 
 import { cookbookTitleFromUrl, wikiToSchema, wikitextFromApiPage } from "../_lib/wiki-recipe.js";
+import { safeWikimediaImage, wikimediaApiJson } from "../_lib/wikimedia-api.js";
 
 const MAX_BYTES = 2 * 1024 * 1024;
 const FETCH_TIMEOUT_MS = 8000;
@@ -297,19 +298,12 @@ async function fetchCookbookRecipe(title) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
-    const response = await fetch(api.toString(), {
-      headers: {
-        Accept: "application/json",
-        "User-Agent": PLAIN_HEADERS["User-Agent"],
-        "Api-User-Agent": PLAIN_HEADERS["User-Agent"],
-      },
-      signal: controller.signal,
-    });
+    const response = await wikimediaApiJson(api.toString(), { userAgent: PLAIN_HEADERS["User-Agent"], signal: controller.signal });
     if (!response.ok) return null;
-    const data = await response.json();
+    const data = response.data;
     const page = data && data.query && data.query.pages && data.query.pages[0];
     const wikitext = wikitextFromApiPage(page);
-    const image = page && page.thumbnail && page.thumbnail.source;
+    const image = safeWikimediaImage(page && page.thumbnail && page.thumbnail.source);
     return wikiToSchema(title, wikitext, image);
   } catch {
     return null;

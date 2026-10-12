@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-du-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2a2218" />
+  <meta name="robots" content="noindex" />
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="../icons/icon-180.png" />
+  <meta name="apple-mobile-web-app-title" content="Pantry Week" />
+  <meta name="color-scheme" content="light" />
+  <title>Print — Pantry Week</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232a2218'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%239bbf7a'/%3E%3C/svg%3E" />
+  <!--SF_ASSET:css/pantry.css-->
+</head>
+<body class="print-body">
+  <div class="page">
+    <p class="print-actions no-print">
+      <button type="button" class="primary" id="printBtn">Print / Save PDF</button>
+      <a class="btn" href="../index.html">Back to Pantry Week</a>
+    </p>
+    <h1>This week's menu</h1>
+    <p class="lead" id="dated"></p>
+    <div id="week"></div>
+    <h2>Shopping list</h2>
+    <div id="shop"></div>
+    <p class="note">Pantry Week v2.0.1 · Printed from this device · Nothing is uploaded</p>
+  </div>
+  <!--SF_ASSET:js/recipes.js-->
+  <!--SF_ASSET:js/v1-originals.js-->
+  <!--SF_ASSET:js/pantry-normalize.js-->
+  <!--SF_ASSET:js/pantry.js-->
+  <script>
+    (function () {
+      var PW = window.PW;
+
+      function add(parent, tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text != null) node.textContent = text;
+        parent.appendChild(node);
+        return node;
+      }
+
+      function stateForPrint() {
+        var snap = null;
+        try {
+          if (typeof window.name === "string" && window.name.indexOf("PWPRINT:") === 0) {
+            var raw = window.name.slice("PWPRINT:".length);
+            window.name = "";
+            var data = JSON.parse(raw);
+            if (data && data.recipes && data.week) snap = PW.normalize(data);
+          }
+        } catch (err) {
+          try { window.name = ""; } catch (e2) { /* fall through to saved data */ }
+        }
+        if (PW.storage()) return PW.load();
+        if (snap) return snap;
+        return PW.load();
+      }
+
+      function build() {
+        var state = stateForPrint();
+        var when = "";
+        try {
+          when = new Date().toLocaleDateString(undefined, { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+        } catch (err) { /* date is optional */ }
+        document.getElementById("dated").textContent = "Week of " + (PW.weekOfLabel() || "this week") + (when ? " · " + when : "");
+
+        var week = document.getElementById("week");
+        PW.DAYS.forEach(function (day) {
+          var article = add(week, "article", "print-day");
+          var title = PW.DAY_LABEL[day];
+          if (day === PW.todayKey()) title += " · Today";
+          add(article, "h2", null, title);
+          var meals = add(article, "div", "print-meals");
+          PW.SLOTS.forEach(function (slotName) {
+            var slot = state.week[day][slotName];
+            var box = add(meals, "div");
+            var kicker = PW.SLOT_LABEL[slotName];
+            if (slot.leftover) kicker += " · Leftovers";
+            add(box, "p", "kicker", kicker);
+            var name = PW.slotLabel(state, slot);
+            add(box, "p", "meal-name", name || "—");
+            if (name) add(box, "p", "meta", (slot.servings || 4) + " servings");
+          });
+        });
+
+        var shop = document.getElementById("shop");
+        var list = PW.buildShoppingList(state);
+        if (!list.items.length) {
+          add(shop, "p", "empty", "No groceries yet.");
+        } else {
+          list.aisles.forEach(function (aisle) {
+            add(shop, "h3", null, aisle.label);
+            var ul = add(shop, "ul", "shop-print");
+            aisle.items.forEach(function (item) {
+              add(ul, "li", null, (item.checked ? "☑ " : "☐ ") + item.label);
+            });
+          });
+        }
+        if (list.excluded.length) {
+          var home = list.excluded.map(function (item) {
+            return item.charAt(0).toUpperCase() + item.slice(1);
+          }).join(", ");
+          add(shop, "p", "note", "Already at home: " + home + ".");
+        }
+      }
+
+      document.getElementById("printBtn").addEventListener("click", function () { window.print(); });
+      try { build(); }
+      catch (err) {
+        var box = document.getElementById("week");
+        if (box) box.textContent = "This sheet could not be built. Open Pantry Week and use Print again.";
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var b = document.getElementById("du-preview");
+      if (b && b.parentNode) b.parentNode.removeChild(b);
+    })();
+  </script>
+</body>
+</html>

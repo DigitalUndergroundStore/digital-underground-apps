@@ -2693,8 +2693,8 @@
       }
     ],
     "steps": [
-      "Heat the oven to 425°F (218°C).",
-      "Trim the bases of the Brussels sprouts, pull off loose leaves, and wash and dry them.",
+      "Turn the oven to 425°F (218°C).",
+      "Cut the hard stem off each Brussels sprout, pull away any loose leaves, then rinse and dry them.",
       "Halve the Brussels sprouts. Quarter any that are very large.",
       "Toss the Brussels sprouts with the olive oil until each piece has a thin coat and none are dripping.",
       "Season with the salt and the black pepper. Spread them on a baking sheet in a single layer.",
@@ -3368,13 +3368,13 @@
       }
     ],
     "steps": [
-      "Chop the dates. Combine them with the white sugar and the water in a saucepan.",
-      "Cook over low heat, stirring, for 10 minutes until the dates thicken into a paste. Cool the pan.",
+      "Chop the dates. Put them in a small pot with the white sugar and the water.",
+      "Simmer on low, stirring the whole time, about 10 minutes, until the dates become a thick paste. Set the pot aside to cool.",
       "Beat the butter, the shortening, and the brown sugar together until creamy.",
       "Stir the flour, the salt, the baking soda, and the quick-cooking oatmeal into that mixture to make a crumbly dough.",
       "Grease a small baking pan. Press half of the crumb mixture into an even layer.",
       "Spread the cooled date filling over the crumbs. Crumble the rest of the dough on top and press it lightly.",
-      "Bake at 400°F (200°C) for 25 minutes until the top is light brown. Cut into bars while still warm."
+      "Bake at 400°F (200°C) for 25 minutes, until the top turns pale gold. Slice into bars before the pan cools."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -4067,7 +4067,7 @@
   },
   {
     "id": "r106",
-    "name": "Pesto II",
+    "name": "Walnut Pesto",
     "minutes": 15,
     "servings": 4,
     "tags": [
@@ -4091,7 +4091,7 @@
       {
         "qty": 3,
         "unit": "cup",
-        "item": "fresh basil for pesto"
+        "item": "fresh basil"
       },
       {
         "qty": 4,
@@ -4105,11 +4105,11 @@
       }
     ],
     "steps": [
-      "Put a generous splash of the olive oil in a blender and start it running so the blades stay wet.",
-      "Drop in the fresh basil for pesto a handful at a time, adding more olive oil whenever the puree stalls.",
+      "Pour a generous splash of the olive oil into a blender and turn it on so the blades stay wet.",
+      "Add the fresh basil a handful at a time. Pour in more olive oil whenever the puree stalls.",
       "Add the walnuts and blend until they disappear into the green puree.",
       "Add the garlic and the rest of the olive oil. Blend until the sauce is fluid and the garlic is fully ground.",
-      "Add the Parmesan cheese and pulse just until it is mixed. The flavor should still be mostly fresh basil for pesto.",
+      "Add the Parmesan cheese and pulse just until it is mixed. The flavor should still be mostly fresh basil.",
       "Scrape the pesto into a bowl. It should look glossy and thick enough to cling to a spoon."
     ],
     "libraryRev": 2,
@@ -4120,7 +4120,7 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "adapted": true,
       "original": false,
-      "note": "Walnuts chosen instead of pine nuts. Gnocchi is not in this pesto, so the name follows the source. Amounts were set for about 1 cup, enough for 4 servings, because the page left them open. Garlic scaled from 7 cloves to 4 for that smaller batch.",
+      "note": "Shown as Walnut Pesto; the Wikibooks title is Pesto II. Walnuts chosen instead of pine nuts. Gnocchi is not in this pesto, so the name follows the source. Amounts were set for about 1 cup, enough for 4 servings, because the page left them open. Garlic scaled from 7 cloves to 4 for that smaller batch.",
       "sources": [
         {
           "title": "Cookbook:Pesto II",
@@ -4546,7 +4546,7 @@
     "ingredients": [
       {
         "qty": 2,
-        "unit": "thigh",
+        "unit": "piece",
         "item": "chicken thighs"
       },
       {
@@ -4556,7 +4556,7 @@
       },
       {
         "qty": 2,
-        "unit": "breast",
+        "unit": "piece",
         "item": "chicken breasts"
       },
       {

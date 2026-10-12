@@ -1,0 +1,55 @@
+__notoc__
+{{Recipe summary
+| Cuisine = Moroccan
+| Origin = 2000s
+| Yield = ~15-20 kofta, depending on size
+| Time = 45 minutes
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+The origin of this particular recipe for lamb kofta is uncertain; this version is a family-developed recipe, though the ingredients match other recipes found online (e.g. [https://www.thespruceeats.com/kefta-kebab-recipe-moroccan-ground-beef-2394668][https://www.seriouseats.com/jeff-koehlers-moroccan-grilled-lamb-kefta-brochettes-recipe][https://cooking.nytimes.com/recipes/1022578-moroccan-kefta]), which are cited as Moroccan. It is intended to be cooked via open flame or coals as opposed to in a pan.
+
+== Ingredients ==
+
+* 1 [[Cookbook:Pound|lb]] ground/minced [[Cookbook:Lamb and Mutton|lamb]]
+* 3 [[Cookbook:Ounce|oz]] lamb or other solid and flavorful [[Cookbook:Oil and Fat|fat]] (optional), [[Cookbook:Chopping|chopped]]
+* 1 [[Cookbook:Each|ea]] white or yellow [[Cookbook:Onion|onion]], [[Cookbook:Mince|minced]] or [[Cookbook:Grater|grated]]
+* 2 [[Cookbook:Teaspoon|tsp]] ground sweet [[Cookbook:Paprika|paprika]]
+* 1 tsp ground [[Cookbook:Cumin|cumin]]
+* 1 tsp ground [[Cookbook:Cinnamon|cinnamon]]
+* 1 [[Cookbook:Pinch|pinch]] ground [[Cookbook:Cayenne Pepper|cayenne]]
+* 1 tsp [[Cookbook:Salt|salt]]
+* ¼ tsp ground [[Cookbook:Pepper|pepper]]
+* ¼ [[Cookbook:Cup|cup]] chopped fresh [[Cookbook:Parsley|parsley]]
+* ¼ cup chopped fresh [[Cookbook:Cilantro|cilantro]]
+* 1 tbsp chopped fresh [[Cookbook:Mint|spearmint]]
+
+== Procedure ==
+
+# Preheat a [[Cookbook:Broiler|broiler]] or [[Cookbook:Grill|grill]] to moderate-high heat.
+# Combine all the ingredients in a [[Cookbook:Mixing Bowl|mixing bowl]]. Use your hands to mix just until everything is combined and evenly distributed.
+# Use a spoon or your hands to scoop out portions of approximately 2–3 tablespoons. Use your hands to shape the meat mixture into oblong shapes about 2–3 inches (5–8 cm) in length.
+# If using an oven broiler, transfer the kofta onto a rack over a rimmed [[Cookbook:Baking Sheet|baking sheet]] to catch the drippings, and place them under the broiler. If grilling, arrange the kofta directly on the grill rack.
+# Broil or grill for a handful of minutes on each side, flipping halfway. You're looking for the outside to be slightly browned, and the inside should be cooked through but not dry.
+# Remove from the heat, and set aside to cool slightly before serving.
+
+== Notes, tips, and variations ==
+
+* After chopping the onion, use your hands, a towel, and/or a [[Cookbook:Strainer|strainer]] to squeeze out and discard as much liquid as you can before adding the onion the meat; leaving too much liquid can make it watery.
+* Substituting smoked paprika for half of the listed quantity of sweet paprika adds a greater depth of flavor and is recommended if you can access this spice.
+* If desired, you can use the same volume of parsley instead of the cilantro, for a total of ½ cup parsley.
+* You can also thread the kofta on [[Cookbook:Skewer|skewers]], which will make them easier to flip and handle.
+
+[[Category:Recipes using lamb and mutton]]
+[[Category:Recipes using onion]]
+[[Category:Recipes using paprika]]
+[[Category:Recipes using cumin]]
+[[Category:Recipes using cinnamon]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using parsley]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using mint]]

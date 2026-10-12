@@ -1,0 +1,38 @@
+{{recipesummary|category=Breakfast recipes|servings=About 4|time=30 minutes|difficulty=2}}
+
+{{recipe}} | [[Cookbook:Breakfast|Breakfast]]
+
+'''Biscuits and gravy''' is a dish enjoyed nearly everywhere in the United States, though it is most commonly associated with the southern states. It is a staple breakfast of most US diners.
+
+Traditionally this breakfast is served on a plate.  A common serving is two biscuits, each halved, insides face up, covered in gravy.  Common side dishes are strips of bacon, hash browns, or grits.
+
+This recipe relies on this [[Cookbook:Baking Powder Biscuit|biscuit recipe]].
+==Ingredients==
+*1 [[Cookbook:Pound|lb]] (500 [[Cookbook:g|g]]) ground [[Cookbook:Sausage|breakfast sausage]]
+*3 [[Cookbook:Tablespoon|tbsp]] (15 [[Cookbook:mL|mL]]) [[Cookbook:Bacon|bacon]] grease
+*¼ [[Cookbook:Cup|cup]] (60 mL) [[Cookbook:Flour|flour]]
+*3 cup (720 mL) [[Cookbook:Milk|milk]]
+*½ [[Cookbook:Teaspoon|tsp]] (2.5 mL) [[Cookbook:Salt|salt]]
+*¼ tbsp (4 mL) ground [[Cookbook:Pepper|black pepper]]
+==Procedure==
+
+=== '''Biscuits''' ===
+#Make [[Cookbook:Baking Powder Biscuit|'cut' biscuit]] dough.
+#Place the cut biscuits in the [[Cookbook:Oven|oven]] when you add the bacon grease to the skillet in the gravy procedure below (step 3).
+#Remove from oven after 10 to 12 minutes; the  biscuits should be warm when served with the gravy.
+'''Gravy'''
+#Brown the sausage in a large [[Cookbook:Frying Pan|skillet]].
+#Remove the browned sausage from the skillet and reserve in a bowl, being careful to leave as much of the drippings as possible in the pan.
+#Add the bacon grease to the skillet, and place the skillet on low to medium-low heat.
+#Once the bacon grease is up to temperature, mix the flour into the grease.
+#Add the milk slowly, mixing as you pour.
+#Bring to a gentle [[Cookbook:Boiling|boil]], stirring constantly scraping the bottom and edges of the skillet. Stirring keeps the gravy from becoming too lumpy or burnt.
+#Continue stirring until the gravy has nearly reached the desired consistency, usually about 10 minutes.
+#Add the browned sausage held in reserve.
+#Remove from heat and allow to set for 1 minute.
+#Serve with biscuits.
+
+[[Category:Breakfast recipes|{{PAGENAME}}]]
+[[Category:Southern U.S. recipes|{{PAGENAME}}]]
+[[Category:Recipes using wheat flour]]
+[[Category:Recipes using cow milk]]

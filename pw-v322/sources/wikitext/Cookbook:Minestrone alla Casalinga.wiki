@@ -1,0 +1,35 @@
+{{Recipe summary
+| Category = Soup recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+{{decameron}}
+
+== Ingredients ==
+
+* [[Cookbook:Vegetable|Vegetables]]
+* [[Cookbook:Butter|Butter]]
+* [[Cookbook:Stock|Stock]]
+* 4 [[Cookbook:Ounce|oz]] uncooked [[Cookbook:Rice|rice]]
+* 2–3 spoonfuls condiment for seasoning minestrone
+* [[Cookbook:Grating|Grated]] [[Cookbook:Cheese|cheese]]
+
+== Procedure ==
+
+# [[Cookbook:Blanching|Blanch]] vegetables in [[Cookbook:Boiling|boiling]] salted water, then drain them and [[Cookbook:Frying|fry]] in butter.
+# Add plenty of good stock, and put over low heat.
+# Boil rice in stock until well-done. Add the stock and vegetables.
+# Season with minestrone seasoning condiment, and serve with grated cheese handed separately.
+
+== Notes, tips, and variations ==
+
+* All sorts of vegetables will serve for this dish.
+
+[[Category:Recipes for soup]]
+[[Category:Recipes using vegetables]]
+[[Category:Recipes using rice]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using cheese]]
+[[Category:Recipes using broth and stock]]

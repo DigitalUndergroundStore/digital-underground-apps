@@ -1,0 +1,39 @@
+{{Recipe summary
+| Difficulty = 3
+| Image = [[File:Shakshoka.jpg|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Middle Eastern cuisines|Middle Eastern cuisines]]
+==Ingredients==
+* 6 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Olive oil|olive oil]]
+* 1 tbsp sweet [[Cookbook:Paprika|paprika]]
+* 6 cloves [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+* 1 large [[Cookbook:Bell Pepper|sweet red pepper]], [[Cookbook:Dice|diced]]
+* 1 [[Cookbook:Chiles|chile pepper]] (red or green), [[Cookbook:Chopping|chopped]]
+* 6 ripe[[Cookbook: Tomato| tomatoes]] diced
+* Ground [[Cookbook:Pepper|black pepper]]
+* [[Cookbook:Salt|Salt]] to taste
+* 6 [[Cookbook:Egg|eggs ]]
+
+==Procedure==
+# On a high heat, heat the oil for about ½ minute. Add the paprika and blend well.
+# Add the garlic and peppers, and turn to low flame. Cook for about 10 minutes, until the peppers have slightly softened.
+# Add the tomatoes and bring to a [[Cookbook:Boiling|boil]], then season to taste with salt and pepper.
+# Make 6 dents in the mixture. Into each dent, put an egg yolk, and spread the egg whites around.
+# Continue to cook on low until the egg whites have coagulated.
+
+==Notes, tips, and variations==
+* Serve the shakshouka with black bread and fresh [[Cookbook:Parsley|parsley]]. 
+* You may also add pieces of sausage to the mixture.
+* In an Egyptian variation, a little sugar is added to the tomato sauce, and the eggs are scrambled into the liquid—this can be eaten hot or cold.
+
+[[Category:Middle Eastern recipes]]
+[[Category:Turkish recipes]]
+[[Category:Israeli recipes]]
+[[Category:Recipes using egg]]
+[[Category:Pan fried recipes]]
+[[Category:Recipes using red bell pepper]]
+[[Category:Recipes using tomato]]
+[[Category:Vegetarian recipes]]
+[[Category:Recipes using chile]]
+[[Category:Recipes using garlic]]

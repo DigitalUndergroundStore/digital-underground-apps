@@ -1,0 +1,54 @@
+__NOTOC__
+{{Recipe summary
+| Category = Stew recipes
+| Difficulty = 3
+| Image = [[File:Cookbook-beef-stew.jpg|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Meat Recipes|Meat Recipes]]
+
+'''Beef stew''' has chunks of softened beef and vegetables in a thick sauce. It is often served with [[Cookbook:Corn Bread|cornbread]] or [[Cookbook:Biscuit|biscuits]].
+
+==Ingredients==
+*2 [[Cookbook:Pound|lb]] (900 [[Cookbook:Gram|g]]) [[Cookbook:Beef|beef]]
+*½ [[Cookbook:Cup|cup]] [[Cookbook:Flour|flour]]
+*¼ [[Cookbook:Cup|cup]] [[Cookbook:Oil|oil]]
+*1 [[Cookbook:Bay_Leaf|bay leaf]]
+*1 [[Cookbook:Teaspoon|tsp]] (5 [[Cookbook:Milliliter|ml]]) [[Cookbook:Marjoram|marjoram]]
+*1 [[Cookbook:Teaspoon|tsp]] (5 ml) [[Cookbook:Oregano|oregano]]
+*46 [[Cookbook:Fluid_Ounce|fl oz]] (5 ¾ [[Cookbook:Cup|cup]], 1.36 [[Cookbook:L|L]], or 1 large can) tomato juice
+*10 ½ [[Cookbook:Ounce|oz]] (298 [[Cookbook:g|g]], about 1 ¼ [[Cookbook:Cup|cup]], or 300 [[Cookbook:mL|mL]]) double-strength beef [[Cookbook:Broth|broth]]
+*2–4 russet [[Cookbook:Potato|potatoes]], or other large non-sweet white baking potatoes
+*4 large [[Cookbook:Carrot|carrots]]
+*4 stalks of [[Cookbook:Celery|celery]]
+
+==Procedure==
+#Cut the beef into chunks about 1 [[Cookbook:Inch|inch]] (2.5 cm) across.
+#Put the beef and flour in a container, such as a plastic bag, and shake or squish until the beef is well-coated. Use more flour for a thicker stew, or less for a thinner stew.
+#Put oil into a wide pot and heat it.
+#In several batches, brown the beef in the pot with the oil.
+#Return the browned beef to the pot, along with all the spices, tomato juice, and the double-strength beef broth.
+#Cover the pot, then [[Cookbook:Simmering|simmer]] for at least an hour to soften the beef. Stir the stew every few minutes to prevent the beef from burning on the bottom of the pot.
+#Peel the carrots, and cut them into pieces about the same size as the beef. Add them to the stew, and simmer a bit more, stirring every few minutes. 
+#Cut the other vegetables likewise, add to stew, and simmer a bit more, stirring.
+#When all the vegetables are soft but not yet falling apart, remove the bay leaf and serve the stew.
+
+==Notes, tips, and variations==
+
+* Try adding other vegetables such as [[Cookbook:Turnip|turnips]], [[Cookbook:Parsnip|parsnips]], and frozen [[Cookbook:Corn|corn]]. Note that turnips mush quickly.
+
+==See also==
+* [[Cookbook:Beef Stew 2]]
+
+[[Category:Recipes using beef]]
+[[Category:Recipes for stew]]
+[[Category:Boiled recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes with images]]
+[[Category:Recipes using bay leaf]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using wheat flour]]
+[[Category:Recipes using beef broth and stock]]
+[[Category:Recipes using tomato juice]]
+[[Category:Recipes using marjoram]]

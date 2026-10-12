@@ -1,0 +1,30 @@
+{{Recipe summary
+| Category = Chicken recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 1 [[Cookbook:Each|ea]]. (3 [[Cookbook:Pound|lbs]]) broiler/fryer [[Cookbook:Chicken|chicken]], giblets removed
+* ¼ [[Cookbook:Cup|cup]] [[Cookbook:Country Roast Chicken Seasoning|Country Roast Chicken Seasoning]]
+* 3 sprigs [[Cookbook:Rosemary|rosemary]]
+* 8 sprigs [[Cookbook:Thyme|thyme]]
+* 1 large [[Cookbook:Lemon|lemon]], [[Cookbook:Slicing|sliced]] thinly
+* 1 large lemon, cut in wedges
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Butter|butter]]
+
+== Procedure ==
+#Loosen skin from chicken. Rub flesh with chicken seasoning.
+#Place lemon slices in the bottom of a roasting pan and place chicken on top.
+#Stuff chicken cavity with thyme, rosemary, and lemon wedges.
+#Place 1 tbsp butter under the skin of each breast.
+#Insert an oven-safe probe [[Cookbook:Thermometer|thermometer]] into the breast but not touching the butter.
+#[[Cookbook:Baking|Bake]] in a 325°F [[Cookbook:Oven|oven]] until breast internal temperature reaches 165°F and thigh meat reaches 170°F.
+#Cover with [[Cookbook:Aluminium Foil|foil]] and let rest 10 minutes; serve.
+
+[[Category:Recipes using whole chicken]]
+[[Category:Recipes using lemon]]
+[[Category:Roasted recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using butter]]

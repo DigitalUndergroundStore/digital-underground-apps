@@ -1,0 +1,60 @@
+__NOTOC__{{Recipe summary
+| Category = Pork recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+'''Jing du or sweet-and-sour pork''' is a Chinese dish of fried and glazed pork.
+== Ingredients ==
+
+=== Meat ===
+*1 America's cut [[Cookbook:Pork|pork]] (boneless [[Cookbook:Pork#Loin|loin]] roast) per person, cut in 1-[[Cookbook:Inch|inch]] squares and pounded flat
+
+=== Marinade ===
+*3 [[Cookbook:Tablespoon|tbsp]] dry [[Cookbook:Sherry|sherry]] or Chinese rice [[Cookbook:Wine|wine]]
+*2 tbsp [[Cookbook:Soy Sauce|soy sauce]]
+*2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Cornstarch|cornstarch]]
+
+=== Sauce ===
+* ¼ cup [[Cookbook:Ketchup|catsup]]
+* 2 tbsp [[Cookbook:Rice Vinegar|rice vinegar]]
+* 1 tbsp [[Cookbook:Soy Sauce|soy sauce]]
+* 1 tbsp [[Cookbook:Worcestershire Sauce|Worcestershire sauce]]
+* ½ tsp hot pepper or chili-garlic sauce
+* 1 tbsp [[Cookbook:Sugar|sugar]]
+* 1 [[Cookbook:Egg|egg]], lightly beaten
+* 2 tsp [[Cookbook:Cornstarch|cornstarch]]
+* ¼ cup extra-light [[Cookbook:Olive Oil|olive oil]] or [[Cookbook:Vegetable oil|vegetable oil]]
+* 1 tsp minced [[Cookbook:Ginger|ginger]]
+* 1 tsp minced [[Cookbook:Garlic|garlic]]
+* 1 tbsp [[Cookbook:Cilantro|cilantro]] (optional)
+
+== Procedure ==
+#Mix the marinade ingredients in a large bowl and add the meat. Mix well to cover the meat and refrigerate for 2 hours (or overnight).
+#Combine sauce ingredients and set aside.
+#Remove pork from refrigerator and remove excess liquid (if any).
+#Beat egg and cornstarch and cover meat mixing well.
+#Place 2 tbsp oil in a [[Cookbook:Wok|wok]] and cook half the meat until no longer pink when slashed (about 2 minutes).
+#Remove meat, add remaining oil, and cook remaining meat.
+#Set cooked meat aside and discard pan drippings.
+#Add ginger and garlic to wok, stirring and cooking until fragrant.
+#Return pork to wok quickly stirring and add the sauce (stand back when adding sauce or it will really clear your sinuses).
+#Stir meat and sauce until meat is well covered, serve immediately.
+
+== Notes, tips, and variations ==
+
+* Extra light olive oil is used to avoid adding olive oil flavor to the dish.
+
+[[Category:Recipes using pork|{{PAGENAME}}]]
+[[Category:Recipes for sauces and condiments]]
+[[Category:Stir fry recipes]]
+[[Category:Chinese recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using sugar]]
+[[Category:Recipes using chile paste and sauce]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using cornstarch]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using fresh ginger]]
+[[Category:Recipes using vegetable oil]]

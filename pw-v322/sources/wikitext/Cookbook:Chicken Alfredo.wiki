@@ -1,0 +1,50 @@
+{{Recipe summary
+| Category = Pasta recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+'''Chicken alfredo''' works with all types of [[Cookbook:Pasta|pasta]] and [[Cookbook:Noodle|noodles]] and can be modified for use with a variety of sauces. It is great for family dinners and recommended to serve with [[Cookbook:Garlic bread|garlic bread]].
+
+==Ingredients==
+* 1 [[Cookbook:Pound|pound]] (450 [[Cookbook:Gram|g]]) boneless [[cookbook:chicken|chicken]] breasts
+* 1 [[Cookbook:Cup|cup]] [[Cookbook:Cream|cream]] or [[Cookbook:Half and Half|half and half]]
+* 2 [[Cookbook:Tablespoon|tablespoons]] [[Cookbook:Flour|white flour]]
+* ¼ cup [[Cookbook:Chopping|chopped]] [[cookbook:onion|onion]] or [[Cookbook:Shallot|shallot]]
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[cookbook:Thyme|thyme]]
+* ¼ teaspoon [[cookbook:oregano|oregano]]
+* ½ teaspoon [[Cookbook:Garlic Powder|garlic powder]]
+* 1 tablespoon [[cookbook:parsley|parsley]], chopped
+* ½ teaspoon [[Cookbook:Red Pepper|red pepper]]
+* ½ cup [[Cookbook:Grating|grated]] [[cookbook:Parmesan Cheese|Parmesan cheese]]
+* 1 tablespoon cooking [[cookbook:oil|oil]]
+* ½ cup [[Cookbook:Lemon Juice|lemon juice]]
+* 1 tablespoon [[cookbook:butter|butter]]
+* 2 cups [[cookbook:pasta|fettuccini pasta]]
+
+==Procedure==
+#Heat up oil slightly in a [[Cookbook:Frying Pan|frying pan]] over a medium flame. 
+#[[Cookbook:Sautéing|Sauté]] chicken breasts and shallots in hot oil for 5 minutes or until golden brown.  Add lemon juice to chicken and cook for an additional 10 minutes. Remove chicken from flame. Reserve juices. Transfer chicken into a [[Cookbook:Baking Dish|casserole dish]]. 
+#Melt butter in clean frying pan. Add flour to butter and stir for about 3 minutes.
+#Slowly add half and half, stirring continuously. Add all spices and seasonings to sauce.
+#Stir in reserved juices and keep stirring. Reduce heat and slowly stir in Parmesan cheese. 
+#Keep stirring until a smooth consistency is achieved. Pour sauce over chicken in [[Cookbook:Casserole#Enameled Cast Iron|casserole dish]]. 
+#Cover and [[Cookbook:Baking|bake]] for 20 minutes at 350°F (175°C).
+#While chicken is cooking, prepare pasta. When chicken is done, serve immediately.
+
+==Notes, tips, and variations==
+* The thyme and oregano can be replaced by 1 teaspoon [[cookbook:za'atar|zaatar]].
+
+[[Category:Recipes using chicken breast]]
+[[Category:Recipes using pasta and noodles]]
+[[Category:Recipes for pasta sauce]]
+[[Category:Baked recipes]]
+[[Category:Boiled recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using parmesan]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes using cream]]
+[[Category:Recipes using half and half]]
+[[Category:Recipes using all-purpose flour]]

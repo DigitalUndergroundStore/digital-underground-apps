@@ -1,0 +1,41 @@
+{{Recipe summary
+| Category = Egg recipes
+| Servings = 2
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Cuisine of the United States|US Cuisine]] | [[Cookbook:Breakfast|Breakfast]] | [[Cookbook:Omelet Recipes|Omelet Recipes]]
+
+The '''Denver omelet''' is a bit like the [[Cookbook:Spanish Omelet|Spanish omelet]], but with different non-[[Cookbook:Egg|egg]] ingredients.
+
+== Ingredients ==
+*4 large [[Cookbook:Egg|eggs]]
+*1 [[Cookbook:Cup|cup]] [[Cookbook:Chop|chopped]] [[Cookbook:Onion|onion]]
+*½ cup chopped red [[Cookbook:Bell Pepper|bell peppers]]
+*½ cup chopped green bell peppers
+*½ cup [[Cookbook:Dice|diced]] cooked [[Cookbook:Ham|ham]]
+*8 slices cooked [[Cookbook:Bacon|bacon]], drained and crumbled
+*2 [[Cookbook:Tablespoon|tablespoons]] [[Cookbook:Butter|butter]]
+*½ [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Salt|salt]]
+*½ teaspoon [[Cookbook:Pepper|pepper]]
+*a couple drops of your favorite [[Cookbook:Hot Sauce|hot sauce]] (optional) 
+      
+==Procedure==
+#Melt butter in a large [[Cookbook:Skillet|skillet]] or on a [[Cookbook:Griddle|griddle]].
+#[[Cookbook:Sauté|Sauté]] onion, bell pepper, ham and bacon in the butter until the onion starts to become translucent.
+#In a small bowl, [[Cookbook:Whipping|whip]] the eggs lightly. Add salt, pepper, and hot sauce if desired. 
+#Slowly stir the eggs into the mixture in the skillet.
+#Lightly [[Cookbook:Browning|brown]] on one side.
+#Flip over and lightly brown other side.
+
+[[Category:Breakfast recipes]]
+[[Category:Recipes using egg]]
+[[Category:Recipes for omelettes]]
+[[Category:United States recipes]]
+[[Category:Pan fried recipes]]
+[[Category:Recipes using bacon]]
+[[Category:Recipes using red bell pepper]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using ham]]
+[[Category:Recipes using hot sauce]]

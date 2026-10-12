@@ -1,0 +1,38 @@
+{{recipesummary|category=Pot Pie recipes|servings=4 persons|time=1.5 hours|difficulty=2}}
+__NOTOC__
+{{recipe}} | [[Cookbook:Cuisine of Canada|Canadian recipes]]
+
+'''Pâté Chinois''' ('''Chinese Pie'''), sometimes known as [[Cookbook:Shepherd's Pie|shepherd's pie]], is a simple dish made from layered hamburger, creamed corn, and mashed potatoes. 
+
+==Ingredients==
+*1 [[Cookbook:Pound|pound]] (450 [[Cookbook:Gram|g]]) lean ground [[Cookbook:Beef|hamburger]] [[Cookbook:Meat|meat]]
+*3–4 [[Cookbook:Cup|cups]] [[Cookbook:Mashed Potatoes|mashed potatoes]]
+*12 [[Cookbook:Ounce|oz]] (341 [[Cookbook:Milliliter|ml]] or 1 can) [[Cookbook:Creamed Corn|creamed corn]]
+*[[Cookbook:Salt|Salt]], [[Cookbook:Pepper|pepper]], and [[Cookbook:Butter|butter]] to taste
+*1–2 cups shredded [[Cookbook:Cheddar Cheese|Cheddar]] or Mexican blend [[Cookbook:Cheese|cheese]] (optional, amount depends on how much cheese you want)
+
+==Procedure==
+#Preheat the [[Cookbook:Oven|oven]] to 350&deg;F (175&deg;C)
+#In a large [[Cookbook:Frying Pan|skillet]], brown the hamburger meat until it is no longer pink
+#In a medium [[Cookbook:Baking Pan|baking pan]], evenly layer the meat on the bottom, then corn. Spread a layer of potatoes.
+#If using, sprinkle cheese on top.
+#[[Cookbook:Baking|Bake]] in the oven for about 30 minutes, or until the cheese is melted.
+
+==Notes, tips, and variations==
+* Possible toppings include paprika, parsley, ketchup or green tomato chow-chow (ketchup vert).
+* Other variations include frying the meat with a diced onion, as well as using an equal combination of creamed corn and regular corn.
+* See also [[Cookbook:Shepherd's Pie|Shepherd's Pie]] and [[Cookbook:Shepherds Pie (Pâté Chinois)|Pâté chinois]].
+
+==Warnings==
+*Always follow safe handling guidelines when using raw meat.
+
+[[Category:Recipes using corn]]
+[[Category:Recipes for pot pie]]
+[[Category:Recipes using potato]]
+[[Category:Recipes for casserole]]
+[[Category:Canadian recipes]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using cheese]]

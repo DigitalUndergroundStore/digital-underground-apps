@@ -1,0 +1,53 @@
+{{Recipesummary|
+| Category = Meat recipes
+| Time = Over 2 hours
+| Difficulty = 3
+| Rating = 3
+| Image = [[File:Making Steak and Ale pies for the weekend events (7318950220).jpg|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Meat_Recipes|Meat recipes]] | [[Cookbook:Cuisine of the United Kingdom|Cuisine of the United Kingdom]]
+
+==Ingredients==
+* 900 [[Cookbook:Gram|g]] (2 [[Cookbook:Pound|lb]]) good [[Cookbook:Beef|beef]] stewing steak, at room temperature
+* [[Cookbook:Vegetable oil|Vegetable oil]]
+* 1 medium [[Cookbook:Onion|onion]], peeled and [[Cookbook:Dice|diced]]
+* 1 [[Cookbook:Tablespoon|tbsp]] (15 [[Cookbook:Milliliter|ml]]) [[Cookbook:Flour|plain flour]]
+* {{convert|1|tbsp|abbr=on}} [[Cookbook:Worcestershire Sauce|Worcestershire sauce]]
+* 1 handful fresh [[Cookbook:Thyme|thyme]], [[Cookbook:Marjoram|marjoram]] and chopped [[Cookbook:Parsley|parsley]]
+* 1 [[Cookbook:Teaspoon|tsp]] (5 [[Cookbook:Milliliter|ml]]) English [[Cookbook:Mustard|mustard]]
+* 1 [[Cookbook:Bay Leaf|bay leaf]]
+* [[Cookbook:Salt|Salt]]
+* Cracked [[Cookbook:Pepper|black pepper]]
+* 150 ml (5.1 US [[Cookbook:Ounce|oz]]) [[Cookbook:Stock|beef stock]]
+* 125 ml (4.2 US oz) [[Cookbook:Beer#Ale|ale]]
+* {{convert|450|g|lb|0|abbr=on}} [[Cookbook:Puff Pastry|puff pastry]]
+
+==Procedure==
+# Cut the beef into cubes about {{convert|2.5|cm|0|abbr=on}} square.
+# Heat oil in a saucepan and fry the onion, without letting it colour.
+# Add beef, making sure the meat is at room temperature first, and cook until medium brown.
+# Stir in the flour and cook until dark brown (about 1 minute)
+# Add Worcestershire sauce, thyme, marjoram, mustard, bay leaf and seasoning.
+# Slowly add beef stock and ale, then bring to the boil.
+# Simmer gently until beef is almost tender, approximately 1 ½ hours.
+# Preheat oven to {{convert|200|°C|-2}}.
+# Remove meat from heat, skim off any fat, adjust seasoning and add fresh chopped parsley.
+# Place in [[Cookbook:Pie and Tart Pans|pie dish]] or individual dishes. Cover pie dish (or dishes) with the pastry and trim edges.
+# Bake for 20–25 minutes or until pastry is well-risen and golden brown.
+
+[[Category:Recipes using beef]]
+[[Category:Recipes using beer]]
+[[Category:Recipes for pot pie]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:English recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes for pies and tarts]]
+[[Category:Recipes using bay leaf]]
+[[Category:Recipes using puff pastry]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using beef broth and stock]]
+[[Category:Recipes using vegetable oil]]
+[[Category:Recipes using marjoram]]
+[[Category:Recipes using English mustard]]

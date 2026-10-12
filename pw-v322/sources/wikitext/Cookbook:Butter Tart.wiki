@@ -1,0 +1,75 @@
+{{recipesummary|category=Recipes for dessert| Yield = 24 tarts|time=70 minutes|difficulty=2}}
+__NOTOC__
+{{recipe}} | [[Cookbook:North American cuisines|North American Cuisines]] | [[Cookbook:Cuisine of Canada|Canadian Cuisine]] | [[Cookbook:Cuisine of Ontario|Cuisine of Ontario]] | [[Cookbook:Desserts| Desserts]]
+
+'''Butter tarts (tartes au sucre)''' are an extremely common dessert in Canada. Many versions are made; some are gooey while some are not, and different nuts, fruits, and other fillings can be used. Similar tarts can be found in the culinary traditions of [[Cookbook:Scottish cuisine|Scotland]] and [[Cookbook:Cuisine of France|France]].
+
+== Ingredients ==
+
+=== Dough ===
+
+* 1 [[Cookbook:Cup|cup]] [[Cookbook:Shortening|shortening]]
+* 1 large [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Butter|butter]] or [[Cookbook:Margarine|margarine]]
+* ¾ cup boiling water
+* 3 ½ cups [[Cookbook:Pastry Flour|pastry flour]] or 3 cups [[Cookbook:Flour|all-purpose flour]]
+* 2 teaspoons [[Cookbook:Baking Powder|baking powder]]
+* ¼ teaspoon [[Cookbook:Salt|salt]]
+
+=== Filling ===
+
+* 2 [[Cookbook:Egg|eggs]]
+* 1 ½ cups [[Cookbook:Brown Sugar|brown sugar]]
+* ½ cup [[Cookbook:Corn Syrup|corn syrup]]
+* 3 [[Cookbook:Tablespoon|tablespoons]] [[Cookbook:Butter|butter]], melted
+* 1 cup [[Cookbook:Currant|currants]] or [[Cookbook:Raisin|raisins]]
+* ½ cup [[Cookbook:Chopping|chopped]] [[Cookbook:Walnut|walnuts]]
+* 2 teaspoons [[Cookbook:Vinegar|vinegar]]
+* 1 [[Cookbook:Pinch|pinch]] of salt
+* ½ teaspoon [[Cookbook:Vanilla Extract|vanilla extract]]
+
+== Procedure ==
+
+=== Dough ===
+
+# [[Cookbook:Beating|Beat]] the shortening, butter, and hot water together until creamy. 
+# While still warm, sift in the flour, baking powder, and salt. Mix gently until a [[Cookbook:Dough|dough]] forms. Try not to [[Cookbook:Kneading|knead]] it while forming it into a large ball. 
+# Separate the dough into two equal portions and chill 20 to 40 minutes.
+# Divide the dough into two dozen equal balls. [[Cookbook:Dough#Rolling|Roll]] each ball into a flat disc.
+
+=== Tarts ===
+
+# Preheat [[Cookbook:Oven|oven]] to 350°F (175˚C).
+# Beat the eggs well. Add sugar, syrup, and melted butter and beat again.
+# Add the currants, walnuts, vinegar, salt, and vanilla extract and mix vigorously.
+# Put a small amount of cornmeal into small [[Cookbook:Pie and Tart Pans|tartlet pans]], or count out 24 cupcake papers.
+# Fit the flat circles of pie crust into the pans, or fit them into cupcake papers and insert them into the pans.
+# Fill the shells ⅔ full with the prepared filling.
+# [[Cookbook:Baking|Bake]] until the pastry is light brown (about 20 minutes).
+# Remove from the oven and let cool.
+
+== Notes, tips, and variations ==
+
+* For runnier tarts, cook for 15 to 17 minutes. You can also adjust the filling ingredients to 1 cup of corn syrup and 1 cup of brown sugar.
+* Try replacing the currants with [[Cookbook:Coconut|coconut]], or omit entirely.
+* Try replacing the walnuts with [[Cookbook:Pecan|pecans]], or omit entirely.
+* Try drizzling 4 oz (120 g) melted [[Cookbook:Chocolate|chocolate]] over the cooked tarts.
+* This recipe (both the tarts and the pie crust) is a century-old recipe from rural North Western Ontario.
+* If the top of the tart hasn't frothed while baking and formed a cream coloured crunchy top it means there was too much time between when you beat the mixture and when it started baking. If you have to do multiple batches in the oven with the same mixture, be sure to keep the batter cool and keep stirring it to make sure the second batch has the traditional crispy top.
+
+== Links ==
+
+* Recipe source: http://www.boutell.com/vegetarian/butter-tarts.html
+
+[[Category:Recipes for dessert|{{PAGENAME}}]]
+[[Category:Canadian recipes|{{PAGENAME}}]]
+[[Category:Recipes for pies and tarts|{{PAGENAME}}]]
+[[Category:Baking recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using baking powder]]
+[[Category:Recipes using brown sugar]]
+[[Category:Recipes using corn syrup]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using pastry flour]]
+[[Category:Recipes using margarine]]

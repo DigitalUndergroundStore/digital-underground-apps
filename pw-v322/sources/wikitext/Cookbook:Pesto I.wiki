@@ -1,0 +1,55 @@
+__NOTOC__{{recipesummary
+| category = Sauce recipes
+| time = 45 minutes
+| difficulty = 3
+| Image = [[File:Fresh Pesto.jpeg|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Sauces|Sauces]]
+
+'''Pesto'''  is a [[Cookbook:Sauce|sauce]] that originates in the city of Genoa in the Liguria region of northern Italy (''pesto alla genovese''). It can be used as a sauce for pasta or meat, or can be used as an ingredient in a variety of dishes. One classic use is to spread the pesto onto slices of bread before toasting. The word "pesto" derives from the Italian for pestle, ''pestello''.
+
+This recipe substitutes [[Cookbook:Romano Cheese|Romano cheese]] for the usual [[Cookbook:Parmesan Cheese|Parmesan]].{{see also|Cookbook:Pesto}}
+
+==Ingredients==
+[[Image:Pesto Ingredients.jpeg|thumb|308x308px|Pesto ingredients]]
+*4 [[Cookbook:Ounce|oz]] (100 [[Cookbook:g|g]]) fresh [[Cookbook:Basil|basil]]
+*About 8 [[Cookbook:Ounce|oz]] (200 g) [[Cookbook:Olive Oil|extra virgin olive oil]]
+*⅓ [[Cookbook:Cup|cup]] freshly grated [[Cookbook:Pecorino Romano Cheese|Pecorino Romano]] or [[Cookbook:Parmigiano Reggiano|Parmigiano-Reggiano]] cheese or a 1:1 mixture.
+*¼ cup [[Cookbook:Pine Nut|pine nuts]] or nut of choice (optional)
+*4 cloves [[Cookbook:Garlic|garlic]]
+*Freshly ground [[Cookbook:Salt|salt]] and [[Cookbook:Pepper|pepper]] (to taste)
+
+==Procedure==
+
+# Preheat the oven to [[Cookbook:Oven_temperatures|425 °F (220 °C)]]. 
+# If using, [[Cookbook:Roasting_nuts|toast]] the pine nuts in an ovenproof pan for 10–15 minutes, checking every 5 minutes to prevent excessive browning or burning.
+# In a small frying pan (skillet), heat 2 tbsp of the olive oil on medium heat. 
+# Crush the garlic and [[Cookbook:Sautéing|sauté]] in the oil until soft, about 2–3 minutes.
+# Combine the basil, garlic, cheese, pine nuts and oil in a [[Cookbook:Mortar and Pestle|mortar and pestle]] until it forms a smooth paste, or use a [[Cookbook:Food Processor|food processor]] or [[Cookbook:Blender|blender]] and chop finely, slowly adding the oil to reach the paste-like consistency.
+
+==Notes, tips and variations==
+* The sauce can be used immediately, when covered with a thin layer of olive oil and refrigerated in an airtight container for one week, or when frozen for several months. The cheese can be omitted to allow longer storage, as it is the most likely ingredient to spoil. Grated cheese can then be added before use.
+* It's possible to store pesto in jars for longer periods, but it's advisable to add a little extra olive oil on top of the filled jar, otherwise the top of your pesto will turn brown as it oxidizes in the air.
+* Traditionally, a [[Cookbook:Mortar and Pestle|mortar and pestle]] is used to make the sauce. The crushing action of the mortar and pestle produces a more intense flavor than the chopping action of a food processor. When using a food processor, you can simulate the additional flavor given by the mortar and pestle method by placing the basil leaves in a plastic bag and crushing them with a rubber mallet or rolling pin prior to use.
+* Good quality [[Cookbook:Parmesan Cheese|Parmesan cheese]] may replace the Pecorino for a milder taste. Crumbled feta cheese also works well for a different taste.
+* A common change to the recipe is to replace some or all of the pine nuts with sunflower seeds, [[Cookbook:Walnut|walnuts]], [[Cookbook:Pistachio|pistachios]], or [[Cookbook:Almond|almonds]].  This significantly reduces the cost of the sauce.  Besides being cheaper, it is also necessary for people with nut allergies.
+* For a creamy sauce, take 2 tablespoons of the pesto in a pan and heat on medium-low. Add 1 cup light [[Cookbook:Cream|cream]] and bring to a simmer. Use for pasta.
+* The pine nuts can be replaced with an equal quantity of sun-dried [[Cookbook:Tomato|tomatoes]].
+* You may change the taste by changing the base of the pesto from basil to other easily obtained herbs/vegetables. Some variations include using [[Cookbook:Cilantro|cilantro]] (coriander, for a more aromatic taste) or [[Cookbook:Spinach|spinach]] (more "bang for your buck", as spinach is much cheaper than basil, yet still has its own distinct flavor).
+* Try to mix up the standard basil/garlic combo by introducing shallots (sweet onions) into the mix, as they add a slight sweet taste to the paste.
+* Mix fresh chives, marjoram, and thyme with the basil to produce something akin to Valdostano-style pesto.
+* Another variant replaces the basil with equal parts of leaf parsley and spring onions. [[Cookbook:Arugula|Arugula]] may also be substituted for basil with surprising, spicy results.
+* For another variation of a creamy sauce, add [[Cookbook:Cream Cheese|cream cheese]] to the recipe.
+* A vegan variant can be made by mixing walnuts, fresh basil, olive oil and small amounts (such as a table spoon per cup) of white miso paste.
+
+[[Category:Recipes for pesto|{{PAGENAME}}]]
+[[Category:Recipes for pasta sauce|{{PAGENAME}}]]
+[[Category:Featured recipes|{{PAGENAME}}]]
+[[Category:Italian recipes|{{PAGENAME}}]]
+[[Category:Recipes using basil]]
+[[Category:Recipes with images|{{PAGENAME}}]]
+[[Category:Recipes_with_metric_units|{{PAGENAME}}]]
+[[Category:Recipes using garlic]]
+
+[[fr:Livre de cuisine/Pesto]]

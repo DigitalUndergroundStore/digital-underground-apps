@@ -1,0 +1,33 @@
+{{Recipe summary
+| Category = Lamb recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 4 thick-cut bone-in [[Cookbook:Lamb|lamb]] loin chops
+* 1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Rosemary|rosemary]], finely [[Cookbook:Chopping|chopped]]
+* 2 tsp [[Themes in Literature/Isolation and Community/Much Madness|thyme]], finely chopped
+* [[Cookbook:Salt|Salt]]
+* Freshly-ground [[Cookbook:Black Pepper|black pepper]]
+* 1 [[Cookbook:Tablespoon|Tbsp]] smoked [[Cookbook:Paprika|paprika]]
+* ½ head [[Cookbook:Garlic|garlic]]
+* 4 tsp [[Cookbook:Cayenne Pepper|cayenne pepper]]
+* [[Cookbook:Olive Oil|Olive oil]]
+
+== Procedure ==
+#Rub the cut side of the halved garlic head all over lamb chops. [[Cookbook:Brush|Brush]] with olive oil and rub seasonings into meat. Refrigerate for at least 1 hour.
+#[[Cookbook:Grilling|Grill]] chops over high heat for 1 ½ minutes. Rotate 90° and cook for another 1 ½ minutes. Flip and repeat these steps on the other side of the chops.
+#Move meat to medium heat and cook, turning often, until internal temperature reaches 140°F for medium rare.
+#Remove and let rest 7 minutes. Serve warm.
+
+[[Category:Recipes using lamb]]
+[[Category:Recipes using rosemary]]
+[[Category:Recipes using thyme]]
+[[Category:Grilled recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using garlic]]

@@ -1,0 +1,34 @@
+{{recipesummary|category=Beef recipes|servings=6|time=Prep: 12 minutes <br/>Cooking: 20 minutes|difficulty=2}}
+
+{{recipe}} | [[Cookbook:Tex-Mex cuisine|Tex-Mex cuisine]]
+
+'''Taco casserole''' is a casserole with taco ingredients.
+
+==Ingredients==
+*1 [[Cookbook:Pound|pound]] (450 [[Cookbook:Gram|g]]) [[Cookbook:Beef|ground beef]]
+*1 taco seasoning packet
+*3 [[Cookbook:Tablespoon|tablespoons]] [[Cookbook:Chili Powder|chili powder]]
+*3 tablespoons [[Cookbook:Garlic Powder|garlic powder]]
+*8 [[Cookbook:Ounce|ounces]] (225 g) tomato sauce
+*3 [[Cookbook:Tortilla|tortillas]] in bits
+*3 [[Cookbook:Cup|cups]] shredded [[Cookbook:Cheese|cheese]]
+
+==Procedure==
+#Brown the ground beef in [[Cookbook:Frying Pan|skillet]] on medium heat.
+#Drain the ground beef.
+#Dump the ground beef back in the skillet.
+#While on medium heat mix in the taco seasoning, the chili powder, the garlic powder, and the tomato sauce.
+#[[Cookbook:Simmering|Simmer]] for 5 minutes, stirring occasionally. 
+#Mix the ground beef mixture, tortilla bits, and the cheese together in a [[Cookbook:Baking Dish|casserole dish]].
+#[[Cookbook:Baking|Bake]] in oven at [[Cookbook:Oven Temperatures|375°F]] (190°C) for 20 minutes.
+#Serve hot.
+
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using tortilla]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Tex-Mex recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes using cheese]]
+[[Category:Recipes using chili powder]]
+[[Category:Recipes using garlic powder]]

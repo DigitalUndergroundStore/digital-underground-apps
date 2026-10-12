@@ -1,0 +1,52 @@
+{{recipesummary
+|Category = Indian recipes
+|Servings = 4 to 6
+|Image = [[Image:Butter_Chicken_with_Naan.JPG|300px]]
+}}
+{{recipe}} | [[Cookbook:Cuisine of India|Cuisine of India]]
+
+'''Butter chicken''' or '''murgh makhani''' is an [[Cookbook:Cuisine of India|Indian]] dish popular in countries all over the world where Indian restaurants are found. The dish was invented by accident at Moti Mahal Restaurant in Daryaganj, New Delhi. While the dish's general recipe is well known, the actual flavor can vary from restaurant to restaurant even within Delhi.
+
+The dish is made by [[Cookbook:Marinating|marinating]] chicken overnight in a yoghurt and [[Cookbook:Spices and herbs|spice]] mixture. The chicken is then roasted or baked.
+
+A sauce is made from butter, tomatoes, [[cookbook:almond|almond]]s and various spices, usually including the famous tandoori masala spice mix, and sometimes cream. Once the sauce is prepared, the marinated and roasted chicken is chopped and added to it.
+
+{{see also|Cookbook:Chicken Tikka Masala}}
+
+==Ingredients==
+
+*400–500 [[Cookbook:Gram|g]] of skinless, boneless [[Cookbook:Chicken|chicken]] thighs or breasts (with the bone, this will probably be 800 g)
+*50 g [[Cookbook:Tandoori masala|tandoori masala]] powder
+*½ [[Cookbook:Cup|cup]] of unsweetened [[Cookbook:Yogurt|yoghurt]]
+*1 small [[Cookbook:Lemon|lemon]] or [[Cookbook:Lime|lime]], juiced
+*2 [[Cookbook:Tablespoon|tablespoons]] of [[Cookbook:Butter|butter]]
+*1 large [[Cookbook:Onion|onion]], [[Cookbook:Slicing|sliced]] finely
+*¼ [[Cookbook:Teaspoon|teaspoon]] of [[Cookbook:Cinnamon|cinnamon]] (optional)
+*2–3 cloves of crushed [[Cookbook:Garlic|garlic]]
+*2 teaspoons of grated [[Cookbook:Ginger|ginger]]
+*1 teaspoon of ground [[Cookbook:Turmeric|turmeric]]
+*1 tablespoon of ground [[Cookbook:Coriander|coriander]]
+*2–3 teaspoons of [[Cookbook:Chiles|chile]] powder
+*100–200 g [[Cookbook:Tomato Paste|tomato paste]]
+*100 g [[Cookbook:Cream|full cream]]
+==Procedure==
+# Trim and cut the chicken into small cubes. If you prefer chicken on the bone, cut long thin slices laterally into the chicken.
+# In a big bowl combine the tandoori powder, yogurt, lemon juice, and chicken. Massage this well with your hands so that all the chicken is evenly covered in the Tandoori powder. Cover and put aside for at least ½ an hour.
+# Heat a large [[Cookbook:Saucepan|saucepan]] or [[Cookbook:Frying Pan|frying pan]] until evenly hot.  
+# In the pan melt 2 tablespoons of butter until it is frothy. Add the onions and the cinnamon to the pan and [[Cookbook:Frying|fry]] lightly. When the onions are soft and starting to brown, stir in the crushed garlic and ginger. Then add the turmeric, chili, and coriander, and sauté over a medium heat.  
+# Add the chicken and [[Cookbook:Sautéing|sauté]], stirring constantly until the chicken has turned white. This doesn't take long, so make sure you don't overcook the chicken.
+# Mix in the tomato paste. Add the cream and heat through. After adding the cream and stirring, you may add additional tandoori masala. About 3–5 [[Cookbook:Tablespoon|tablespoons]] is generally sufficient.
+# Cover and simmer for just over 10 minutes. 
+
+[[Category:Indian recipes]]
+[[Category:Recipes using chicken]]
+[[Category:Gluten-free recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using chile]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using lime juice]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes using coriander]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using fresh ginger]]

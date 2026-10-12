@@ -1,0 +1,36 @@
+{{recipesummary|category=Pasta recipes|servings=4|time=20 minutes|difficulty=2
+}}{{recipe}} | [[Cookbook:Pasta|Pasta]]
+'''Skillet lasagna''' is a lasagne-style casserole that tastes just like real lasagne, but is ready a lot faster.
+
+== Ingredients ==
+__NOTOC__
+* 1 [[Cookbook:Pound|pound]] (450 [[Cookbook:Gram|g]]) lean [[Cookbook:Ground Beef|ground beef]]
+* 1 jar (26 [[Cookbook:Ounce|oz]]/740 g) [[Cookbook:Spaghetti Sauce|pasta sauce]]
+* 1 [[Cookbook:Cup|cup]] ({{convert|125|g|oz|abbr=on|disp=s}}) shredded [[Cookbook:Mozzarella Cheese|mozzarella cheese]]
+* 1 [[Cookbook:Dice|diced]] [[Cookbook:Bell Pepper|green bell pepper]]
+* 1 cup (250 [[Cookbook:Milliliter|ml]]/8.5 oz) [[Cookbook:Water|water]]
+* ⅓ cup ({{convert|80|ml|USoz|abbr=on|disp=s}}) Italian [[Cookbook:Salad dressing|salad dressing]]
+* 10 uncooked lasagne [[Cookbook:Pasta|noodles]], broken into squares
+* 1 clove [[Cookbook:Garlic|garlic]]
+
+==Procedure==
+
+=== Preparing the noodles===
+# Boil one clove of garlic in a saucepan of water.
+# Add noodles and cook until tender.
+
+=== Preparing the Meat===
+# Meanwhile, brown the ground beef in heavy skillet. Drain grease.
+# Add pasta sauce, water, dressing, and bell pepper. 
+# Stir until well combined and bell pepper is tender. 
+# Cover and let simmer over medium heat for 5 minutes.
+# Drain noodles and add to meat. Stir until well combined. 
+# Cover and let stand under low heat for 5 minutes. 
+# Add cheese and stir well, then turn off heat and let cool.
+
+[[Category:Recipes for lasagne]]
+[[Category:Pan fried recipes]]
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using pasta]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using low-moisture mozzarella]]

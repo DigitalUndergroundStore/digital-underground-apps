@@ -1,0 +1,72 @@
+__NOTOC__
+{{recipesummary|category=Soup recipes|servings=6|time=2–3 hours|difficulty=3
+}}
+{{recipe}} | [[Cookbook:Cuisine of the United States|American cuisine]] | [[Cookbook:Cuisine of Mexico|Mexican cuisine]] | [[Cookbook:Vegetarian cuisine|Vegetarian Cuisine]] | [[Cookbook:beans|Beans]] | [[Cookbook:Soups|Soups]]
+
+==Ingredients==
+
+=== Soup ===
+* 1 [[Cookbook:Pound|pound]] dried [[Cookbook:Black Bean|black beans]]
+* 2 [[Cookbook:Tablespoon|tablespoons]] [[Cookbook:Vegetable Oil|vegetable oil]]
+* 2 [[Cookbook:Onion|large onions]], [[Cookbook:Dice|finely diced]]
+* 4–6 [[Cookbook:Garlic|cloves garlic]], [[Cookbook:Mince|minced]]
+* 6 [[Cookbook:Cup|cups]] [[Cookbook:Water|cold water]]
+* 1 cup peeled, seeded, and [[Cookbook:Chopping|chopped]] [[Cookbook:Tomato|tomato]] (fresh or canned)
+* 1 small sprig fresh or dried [[Cookbook:Epazote|epazote]] (optional)
+* 1 tablespoon finely-chopped canned [[Cookbook:Chipotle Pepper|chipotle chile]] (or ¼ teaspoon [[Cookbook:Cayenne Pepper|cayenne pepper]] or to taste)
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Cumin|ground cumin seed]]
+* 1 teaspoon [[Cookbook:Coriander|ground coriander]]
+* 2 teaspoons [[Cookbook:Salt|salt]]
+
+=== Salsa ===
+* 1 large tomato, finely diced
+* 3 medium [[Cookbook:Tomatillo|tomatillos]], husks removed and finely diced
+* 1 small red onion, very finely diced
+* 1 serrano or [[Cookbook:Jalapeño|jalapeño]] [[Cookbook:Chiles|chile]], very finely diced
+* ¼ cup roughly-[[Cookbook:Chopping|chopped]] fresh [[Cookbook:Cilantro|cilantro leaves]]
+* [[Cookbook:Salt|Salt]], to taste
+* [[Cookbook:Crème Fraiche|Crème fraîche]] or [[Cookbook:Sour Cream|sour cream]], for [[Cookbook:Garnish|garnish]]
+
+==Procedure==
+
+=== Soup ===
+# Pick over the beans to remove any debris. Soak if desired and drain.
+# In a deep, heavy-based pot, heat oil over medium heat.
+# Add onions and cook until translucent, about 5 minutes.
+# Add beans, garlic and water.
+# Bring to a [[Cookbook:Boil|boil]], skimming any foam that rises to the surface.
+# Reduce to a [[Cookbook:simmer|simmer]] and when the beans are soft, after about 1 hour, add tomato, epazote, chipotle chile, cumin, coriander and salt.
+# Cook until the beans start to break down and broth begins to thicken.
+# Taste for seasoning; add salt and pepper if needed.
+
+=== Salsa ===
+# In a small bowl, combine tomato, tomatillo, onion, jalapeño and cilantro.
+# Taste for seasoning and add salt as needed.
+
+=== Serving ===
+# Ladle soup into individual serving bowls.
+# Garnish each with a spoonful of crème fraîche and salsa.
+
+== Notes, tips, and variations ==
+
+* If you're serving this soup immediately, you can thicken it by [[Cookbook:Puree|pureeing]] a cup or two of the beans in a [[Cookbook:Blender|blender]] or [[Cookbook:Food Processor|food processor]] and then recombining them with the rest of the soup. If refrigerated overnight, the soup will thicken on its own.
+* The salsa will taste best if assembled no more than an hour before serving.
+* Epazote is an herb that looks like a weed and is regularly used in Mexican cooking. If you can't find it, use an equal amount of cilantro.
+* Tomatillos look like rock hard tomatoes with papery skin. Look for them canned in the Hispanic section of your market, if you can't find fresh. They will be perfectly acceptable.
+* Crème fraîche is similar to sour cream, but richer. Look for it in the fancy cheese section.
+
+[[Category:United States recipes]]
+[[Category:Mexican recipes|{{PAGENAME}}]]
+[[Category:Recipes for soup|{{PAGENAME}}]]
+[[Category:Vegetarian recipes|{{PAGENAME}}]]
+[[Category:Recipes using black bean|{{PAGENAME}}]]
+[[Category:Recipes using tomato|{{PAGENAME}}]]
+[[Category:Boiled recipes]]
+[[Category:Recipes using serrano chile]]
+[[Category:Recipes using jalapeño chile]]
+[[Category:Recipes using chipotle chile]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using coriander]]
+[[Category:Recipes using crème fraîche]]
+[[Category:Recipes using ground cumin]]
+[[Category:Recipes using vegetable oil]]

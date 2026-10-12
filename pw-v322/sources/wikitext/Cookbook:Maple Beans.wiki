@@ -1,0 +1,46 @@
+{{recipesummary|category=Bean recipes|time=7 hours|difficulty=2}}
+
+{{recipe}} | [[Cookbook:North American cuisines|North American Cuisines]] | [[Cookbook:Cuisine of Ontario|Cuisine of Ontario]]
+
+'''Maple beans''' is a modification of the standard [[Cookbook:Baked Beans | Baked Beans]] made throughout much of Europe and North America. This variant is common through south and central Quebec as well as most of Ontario and can be purchased in cans across Canada.
+
+==Ingredients==
+
+* 625 [[Cookbook:Milliliter|ml]] (2 ½ [[Cookbook:Cup|cups]]) small dried white beans
+* 2 L (8 cups) water
+* 1 large sweet [[Cookbook:Onion|onion]], finely diced
+* 250 ml (1 cup) [[Cookbook:Maple Syrup|maple syrup]]
+* 30 ml (2 [[Cookbook:Tablespoon|Tbsp]]) dark [[Cookbook:Brown Sugar|brown sugar]]
+* 30 ml (2 Tbsp) [[Cookbook:Butter|butter]]
+* 2 ml (½ [[Cookbook:Teaspoon|tsp]]) dry [[Cookbook:Mustard|mustard]]
+* 5 ml (½ tsp) ground [[Cookbook:Pepper|pepper]]
+* 5 ml (1 tsp) [[Cookbook:Salt|salt]]
+* 6 slices side [[Cookbook:Bacon|bacon]] OR 60 ml (¼ cup) bacon runoff
+==Procedure==
+
+# Wash beans and place in a [[Cookbook:Saucepan|saucepan]] with the water. Cover and bring to a [[Cookbook:Boiling|boil]], checking regularly.
+# When water has reached the boiling point, time for 5 minutes and remove from heat. Let sit for 1 hour, covered.
+# After the hour, return beans and water to heat and bring to a [[Cookbook:Simmering|simmer]], still covered. Simmer for 45 minutes.
+# Strain beans and water through a [[Cookbook:Colander|colander]], collecting the liquids in a bowl for later use.
+# Combine the onion, salt, mustard, and maple syrup. Add 625 ml (2 ½ cups) of the aforementioned bean-water to the mix and blend well.
+# Finely slice the bacon, place in roast pan/casserole dish, and cover with the beans, pouring the liquid mixture over top.
+# Cover and [[Cookbook:Baking|bake]] for 3 hours at 165°C (325°F), adding 125 ml (½ cup) of bean-water at the 2 ½ hour mark.
+# Melt butter and combine with brown sugar. Pour over the baked beans and bake, uncovered, until liquid is no longer visible.
+
+==Notes, tips, and variations==
+
+* You can substitute [[Cookbook:Honey|honey]] or molasses for the maple syrup; maple is used for it's flavouring as much as its sweetness.
+* Margarine or vegetable oil will do as well as butter for this; butter was used traditionally and is thus listed.
+* This is often served with [[Cookbook:Ham |ham]] and [[Cookbook:Sweet Cornbread |sweet cornbread]].
+
+[[Category:Recipes using white bean]]
+[[Category:Recipes using maple syrup]]
+[[Category:Boiled recipes]]
+[[Category:Baked recipes]]
+[[Category:Side dish recipes]]
+[[Category:Canadian recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes using bacon]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using dark brown sugar]]
+[[Category:Recipes using mustard powder]]

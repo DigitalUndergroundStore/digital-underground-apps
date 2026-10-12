@@ -1,0 +1,27 @@
+{{Recipe summary
+| Yield = 4 burritos
+| Servings = 2–4
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Breakfast|Breakfast]] |  [[Cookbook:Southwestern cuisine|Southwestern cuisine]] | [[Cookbook:Cuisine of the United States|Cuisine of the United States]]
+
+==Ingredients==
+* 8 [[Cookbook:Egg|eggs]] either [[Cookbook:Scrambled Eggs|scrambled]], [[Cookbook:Fried Eggs|sunny-side up]], or [[Cookbook:Poaching|poached]]
+* 4 large [[Cookbook:Flour Tortilla|flour burrito skins]]
+* 8 strips of cooked [[Cookbook:Bacon|bacon]] or 1 [[Cookbook:Pound|lb]] (400 [[Cookbook:g|grams]]) cooked breakfast [[Cookbook:Sausage|sausage]]
+* 1 full order of [[Cookbook:Hash Browns|hash browns]]
+* [[Cookbook:Hollandaise Sauce|Hollandaise sauce]], [[Cookbook:Cheese|cheese]], [[Cookbook:Salt|salt]], and [[Cookbook:Pepper|pepper]] to taste
+
+==Procedure==
+# Place one-quarter of the hash browns in a tortilla.
+# On top of this place 2 strips of bacon or one quarter of the breakfast sausage.
+# Add two eggs, cheese, salt, and pepper. 
+# Roll up the tortilla to enclose everything. If you used poached or sunny-side up eggs you can squeeze the burritos to pop the egg yolks and then work the yolk around to form a [[Cookbook:Sauce|sauce]].
+
+[[Category:Recipes for burritos|{{PAGENAME}}]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using potato|{{PAGENAME}}]]
+[[Category:Recipes using bacon|{{PAGENAME}}]]
+[[Category:Breakfast recipes|{{PAGENAME}}]]
+[[Category:Recipes using cheese]]

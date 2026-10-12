@@ -1,0 +1,45 @@
+{{recipesummary|category=Breakfast recipes|servings=1|time=10 minutes|difficulty=3|energy=2210 kJ (526 kCal)}}
+__NOTOC__
+{{recipe}} | [[Cookbook:Breakfast Recipes|Breakfast Recipes]] | [[Cookbook:Omelet Recipes|Omelet Recipes]]
+
+A '''French omelette''' is a dish consisting of fried beaten eggs, often with an added filling. The center of the omelette should be just barely cooked, and a little runny. The outside should be cooked, but not browned (or only slightly browned). The center will continue to cook after the omelette is removed from the pan, so be sure to eat it right away.
+
+==Ingredients==
+
+* 4 [[Cookbook:Egg|eggs]]
+* [[Cookbook:Salt|Salt]]
+* [[Cookbook:Pepper|Pepper]]
+* [[Cookbook:Oil|Oil]] and [[Cookbook:Butter|butter]]
+
+==Procedure==
+
+# Loosely [[Cookbook:Beating|beat]] the eggs. Season the mixture with some salt and pepper.
+# Heat a [[Cookbook:Frying Pan|frying pan]]. Add oil and a small amount of butter when the pan starts to get hot. Enough to coat the pan entirely, but no more. Remove any excess oil.
+# Let the pan get as hot as you can, without burning the butter, and keep the flame high.
+# Pour the egg mixture into the pan and quickly tilt the pan to let it spread around the bottom.
+# With a spoon or [[Cookbook:Spatula|spatula]], pull the solidified edges towards the center and tilt the pan to let the egg mixture fill the gap again. Keep repeating this (quickly) until there's not enough liquid egg left to fill the gap. The top of the omelette should still be liquid.
+# Turn the heat down a little lower to fold the egg. Use a spatula to pry the edges loose from the pan. When the omelette is completely loose from the pan. Fold one part over the other. You can fold half of the omelette over the other half, or fold one third of the omelette inwards and then fold the remaining flap over that, to create a thicker, less wide omelette.
+# Slide the omelette onto the plate.
+
+== Notes, tips, and variations ==
+
+* The center of a good omelette should just be a little runny. When serving omelettes to children, pregnant women, or elderly or ill people, give the omelette a little more time to cook.
+* To decrease the amount of eggs used, use fewer eggs, and add some [[Cookbook:Milk|milk]].
+* Omelettes are often cooked with extra ingredients, or a 'filling'. How ingredients should be added depends on the ingredient. Some ingredients, like cheese, can be added to the egg mixture. Some should be fried before making the omelette (possibly in the same pan as the omelette, before adding the eggs). To use the ingredients more as a filling, than as a part of the mixture, add them to the omelette just before folding. There are many ingredients and fillings that can be used in omelettes. Some suggestions include:
+** Cooked [[Cookbook:Bacon|bacon]].
+** Any kind of [[Cookbook:Cheese|cheese]].
+** [[Cookbook:Broccoli|Broccoli]].
+** [[Cookbook:Olive|Olives]].
+** [[Cookbook:Chopping|Chopped]] [[Cookbook:Tomato|tomatoes]], optionally with seeds removed
+** [[Cookbook:Ham|Ham]], [[Cookbook:Salami|salami]], or [[Cookbook:Prosciutto|prosciutto]].
+** [[Cookbook:Sautéing|Sautéed]] [[Cookbook:Mushrooms|Mushrooms]].
+
+== References ==
+* http://www.food.gov.uk/multimedia/pdfs/week4recipes.pdf (Energy Values)
+
+[[Category:Recipes using egg]]
+[[Category:Breakfast recipes|French Omelette]]
+[[Category:Recipes for omelettes|French Omelette]]
+[[Category:Pan fried recipes]]
+[[Category:French recipes|{{PAGENAME}}]]
+[[Category:Recipes using butter]]

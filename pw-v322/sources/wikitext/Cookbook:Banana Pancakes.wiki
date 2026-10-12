@@ -1,0 +1,51 @@
+__notoc__
+{{Recipe summary
+| Category = Pancake recipes
+| Servings = 4–6
+| Difficulty = 3
+}}
+
+{{Recipe}}
+
+==Ingredients==
+
+=== Wet ===
+* 40 [[Cookbook:Gram|grams]] unsalted [[Cookbook:Butter|butter]]
+* 3 medium-size ripe [[Cookbook:Banana|bananas]]
+* 3 standard [[Cookbook:Egg|eggs]]
+* 375 [[Cookbook:Milliliter|ml]] whole [[Cookbook:Milk|milk]]
+
+=== Dry ===
+* 300 [[Cookbook:Gram|grams]] [[Cookbook:Self-rising Flour|self-raising flour]] (or 300 grams [[Cookbook:All-purpose flour|all-purpose flour]] + 1 [[Cookbook:Tablespoon|tablespoon]] [[Cookbook:Baking Powder|baking powder]])
+* 1 [[Cookbook:Teaspoon|tsp]] ground [[Cookbook:Cinnamon|cinnamon]]
+* 1 [[Cookbook:Pinch|pinch]] [[Cookbook:Salt|salt]]
+* 3 [[Cookbook:Tablespoon|tbsp]] soft [[Cookbook:Brown Sugar|brown sugar]]
+
+==Procedure==
+# Melt the butter in a medium-size heat-safe [[Cookbook:Mixing Bowl|mixing bowl]].
+# Add the bananas, and mash the bananas and butter together with a [[Cookbook:Potato Masher|potato masher]].
+# Add the eggs and continue to mash until smooth.
+# Gradually stir in the milk with a wooden spoon.
+# In a separate large bowl, [[Cookbook:Whisk|whisk]] together the dry ingredients.
+# Slowly mix the wet ingredients into the dry to get a [[Cookbook:Batter|batter]]. 
+# Heat a nonstick [[Cookbook:Frying Pan|skillet]] over medium heat.
+# For each round of frying, grease the pan with a little extra butter. Pour about ⅓ cup of batter onto the pan for each pancake, making sure they don't run into each other.
+# Cook the pancakes on on medium-low heat for about 3 minutes on each side until the side is lightly browned. You can tell if it's time to turn the pancake if you can see bubbles on the other side.
+# Flip the pancakes using a spatula, and cook through on the other side.
+# Remove the pancakes from the pan, and repeat the cooking process with the remaining batter.
+
+== Notes, tips, and variations ==
+
+* If using salted butter, omit the extra salt in the ingredients.
+
+[[Category:Recipes for pancakes]]
+[[Category:Vegetarian recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using banana]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using self-raising flour]]
+[[Category:Recipes using whole milk]]
+[[Category:Recipes using cinnamon]]
+[[Category:Recipes using brown sugar]]

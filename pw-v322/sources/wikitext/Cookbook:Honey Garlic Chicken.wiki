@@ -1,0 +1,27 @@
+{{Recipe summary
+| Category = Chicken recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+==Ingredients==
+
+* 2 [[Cookbook:Chicken#Breast|chicken breasts]]
+* [[Cookbook:Olive Oil|Olive oil]]
+* [[Cookbook:Honey|Honey]]
+* ¼–½ clove of [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+
+==Procedure==
+# Chop chicken into small pieces. 
+# Coat [[Cookbook:Frying Pan|frying pan]] with a thin layer of olive oil.
+# Add chicken pieces to frying pan.
+# Cover the chicken with honey and add garlic.
+# Cook over medium heat until the mixture thickens and darkens and the chicken is cooked. Don't let it go on too long or the sauce can burn.
+
+[[Category:Recipes using chicken breast]]
+[[Category:Recipes using honey]]
+[[Category:Pan fried recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using olive oil]]

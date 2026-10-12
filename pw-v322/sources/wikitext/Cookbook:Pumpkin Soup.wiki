@@ -1,0 +1,32 @@
+{{Recipe summary
+| Category = Soup recipes
+| Difficulty = 1
+}}
+
+{{recipe}} | [[Cookbook:Soups|Soups]]
+
+==Ingredients==
+*2 [[Cookbook:Onion|onions]], [[Cookbook:Chopping|chopped]]
+*[[Cookbook:Carrot|Carrots]], [[Cookbook:Dice|diced]]
+*[[Cookbook:Potato|Potatoes]], diced
+*[[Cookbook:Zucchini|Zucchinis]] (courgettes), diced
+*[[Cookbook:Oil and Fat|Oil]] for frying
+*200 [[Cookbook:Gram|g]] chopped [[Cookbook:Pumpkin|pumpkin]]
+*[[Cookbook:Chickpea|Chickpeas]], soaked '''or''' canned and drained
+*Water
+
+==Procedure==
+#[[Cookbook:Frying|Fry]] [[Cookbook:Onion|onions]], [[Cookbook:Carrot|carrots]], [[Cookbook:Potato|potatoes]], and [[Cookbook:Zucchini|zucchinis]] in a spoonful of oil.
+#Add [[Cookbook:Pumpkin|pumpkin]] and [[Cookbook:Chickpea|chickpeas]].
+#Cover with hot water and [[Cookbook:Simmering|simmer]]. The soup is ready when the carrots are soft.
+
+==See also ==
+* [[Cookbook:Pumpkin Soup with Curry|Pumpkin Soup with Curry]]
+* [[Cookbook:Spiced Pumpkin Soup|Spiced Pumpkin Soup]]
+
+[[Category:Vegetarian recipes]]
+[[Category:Recipes using pumpkin]]
+[[Category:European recipes]]
+[[Category:Recipes for soup]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using chickpea]]

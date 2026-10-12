@@ -1,0 +1,62 @@
+__NOTOC__{{Recipe summary
+| Category = Chicken recipes
+| Difficulty = 3
+}}
+
+{{recipe}} | [[Cookbook:Southern cuisine|Southern cuisine (USA)]] | [[Cookbook:Fried Chicken|Fried Chicken]] 
+
+'''Fried chicken''' is a Southern main meal in the [[Cookbook:Cuisine of the United States|USA]], served often at "Sunday dinner" ("dinner" being the midday meal for many Southerners) or church "suppers" ("supper" being the term for the evening meal). Recipes are legion; every family has one handed down. 
+
+== Ingredients ==
+
+=== Chicken ===
+*1 whole [[Cookbook:Chicken|chicken]]
+*2 [[Cookbook:Cup|cups]] [[Cookbook:Buttermilk|buttermilk]]
+*1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Mustard|mustard powder]]
+*1 tsp [[Cookbook:Cayenne pepper|cayenne powder]]
+*2 tsp cracked [[Cookbook:Pepper|black peppercorns]]
+*1 tsp [[Cookbook:Cinnamon|cinnamon]]
+*1 [[Cookbook:Tablespoon|tablespoon]] [[Cookbook:Oregano|oregano]]
+*1 tablespoon [[Cookbook:Parsley|parsley]]
+*1 tsp [[Cookbook:Paprika|paprika]]
+*[[Cookbook:Flour|Flour]] seasoned with herbs and spices (e.g. pepper, cayenne, salt, ground coriander, cinnamon, thyme, oregano)
+*Oil (e.g. peanut or corn oil)
+
+=== Gravy ===
+* [[Cookbook:Oil|Oil]]
+* 1 small [[Cookbook:Onion|onion]] (or [[Cookbook:Green onion|shallots]]), [[Cookbook:Chopping|chopped]]
+* 1 [[Cookbook:Garlic|clove of garlic]]
+* 3–4 tablespoons [[Cookbook:Flour|flour]]
+* 3 cups [[Cookbook:Stock|chicken stock]] (or 2 cups stock + 1 cup [[Cookbook:Cream|cream]])
+* [[Cookbook:Salt|Salt]]
+* [[Cookbook:Pepper|Pepper]]
+
+== Procedure ==
+
+=== Chicken ===
+# Cut the chicken into 8–10 pieces.
+# Combine the buttermilk and spices, and [[Cookbook:Marinating|marinate]] the chicken pieces for 4 hours in the mixture.
+# Take each chicken piece out of the marinade and allow it to drip dry for a few seconds. Then, dredge it in seasoned flour. An easy way to dredge involves putting flour and seasonings in a small plastic bag, dropping the piece in, and shaking.
+# Let the pieces rest (separately; do not stack) for about 10 minutes. Then dredge them again. The first dredging absorbs the buttermilk marinade. The second dredging gives a seasoned flour outer coat.
+# Heat the oil in a deep, wide pan. When oil is smoking hot, drop chicken pieces into the pan, and be careful to not overcrowd (pieces should not touch; fry in multiple batches). After 3 or 4 minutes, turn the chicken, and reduce the heat. Let the chicken fry for 20–25 minutes, turning the pieces every few minutes. When the chicken is a deep golden-brown, and the juices run clear, it's done. The chicken will continue to cook after being removed from the pan, so err on the side of "just about done".
+# Drain the chicken on [[Cookbook:Paper Towel|absorbent paper]] or cloth. If you are not serving the chicken immediately, place it in a lightly-warmed [[Cookbook:Oven|oven]], uncovered, separately (not stacked).
+
+===Gravy===
+# Pour off the accumulated oil from the pan, reserving 3–4 tablespoons and all the flour and chicken residue. Keeping the pan on medium flame, add the chopped onion and garlic. [[Cookbook:Sautéing|Sauté]] for a few minutes. Whisk in 3–4 tablespoons of flour, and keep stirring until the mixture becomes light to medium brown. Do not burn.
+# [[Cookbook:Whisk|Whisk]] in 3 cups of chicken stock. [[Cookbook:Simmering|Simmer]] over low heat, covered, for 15 minutes. Salt and pepper to taste.
+# Serve chicken with [[Cookbook:Rice|rice]] and some green vegetables. Spoon gravy over rice and chicken.
+
+== Notes, tips, and variations ==
+
+* The spice mix isn't fixed. You can use more or less as desired.
+
+[[Category:Southern U.S. recipes]]
+[[Category:Recipes using whole chicken]]
+[[Category:Recipes for gravy]]
+[[Category:Deep fried recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using buttermilk]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using wheat flour]]
+[[Category:Recipes using chicken broth and stock]]
+[[Category:Recipes using mustard powder]]

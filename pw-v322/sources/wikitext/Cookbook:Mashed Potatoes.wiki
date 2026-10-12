@@ -1,0 +1,33 @@
+{{Recipe summary
+| Category = Potato recipes
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+{{1881}}
+
+== Ingredients ==
+* About 1 [[Cookbook:kilogram|kg]]/2¼ [[Cookbook:Pound|lb]] [[Cookbook:Potato#Starchy|starchy (floury) potatoes]]
+* 60 [[Cookbook:gram|g]]/4 [[Cookbook:tablespoon|tablespoons]] [[Cookbook:Butter|butter]]
+* 60 [[Cookbook:milliliter|ml]]/¼ [[Cookbook:cup|cup]] [[Cookbook:Milk|milk]], [[Cookbook:Cream|half-and-half, or light cream]]
+* [[Cookbook:Salt|Salt]]
+* [[Cookbook:Pepper|Pepper]]
+* [[Cookbook:Nutmeg|Nutmeg]] (optional)
+
+== Procedure ==
+# Peel the potatoes and dice them into pieces about 2–3 [[Cookbook:centimeter|cm]]/1 [[Cookbook:inch|inch]] thick.
+# Place the potatoes with about 1 tablespoon of salt into a pot and add about 1.5 [[Cookbook:liter|liters]]/1½ [[Cookbook:quart|quarts]] of water.
+# [[Cookbook:Boiling|Boil]] the potatoes for about 15–20 minutes or until tender, then drain.
+# Either:
+## Put through a [[Cookbook:Potato-ricer|potato ricer]], then stir in the butter and milk or cream; or
+## Add the butter and milk or cream, then mash with a [[Cookbook:Potato Masher|potato masher]].
+# Add salt, pepper and (if you like) nutmeg to taste.
+# Serve hot. Yields 4 servings.
+
+== Notes, tips, and variations ==
+* You can use an [[Cookbook:Mixer#Hand mixer|electric hand mixer]] rather than a potato masher or ricer if you prefer, but if you do, be sure to keep it on LOW and do not overbeat the potatoes, or they will become gummy.
+* '''Onion mashed potatoes:''' Prepare some boiled onions, rub them through a [[Cookbook:Sieve|sieve]], and mix them with potatoes.
+
+[[Category:Recipes using potato]]
+[[Category:Recipes using butter]]

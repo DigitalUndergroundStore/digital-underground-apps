@@ -1,0 +1,34 @@
+{{Recipe summary
+| Category = Seafood recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 36 jumbo [[Cookbook:Shrimp|shrimp]], peeled and deveined
+* Kosher [[Cookbook:Salt|salt]]
+* Freshly-ground [[Cookbook:Black Pepper|black pepper]]
+* 1 ¼ [[Cookbook:Cup|cups]] unsalted [[Cookbook:Butter|butter]], divided
+* 1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Olive Oil|olive oil]]
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Mincing|minced]] [[Cookbook:Garlic|garlic]]
+* ½ [[Cookbook:Shallot|shallot]], finely minced
+* 2 [[Cookbook:Lemon|lemons]], juiced
+* Splash of [[Cookbook:Heavy Cream|heavy cream]]
+
+== Procedure ==
+#Season shrimp liberally with kosher salt and freshly ground black pepper. Set aside.
+#Melt 2 tbsp butter with olive oil in a large [[Cookbook:Sauté Pan|sauté pan]] over medium high heat. Add garlic and cook, stirring, until garlic is golden.
+#Add shrimp and cook, [[Cookbook:Mixing#Tossing|tossing]] occasionally, until shrimp turns pink and opaque. Keep warm.
+#In a large [[Cookbook:Saucepan|saucepan]], melt 2 tbsp butter over medium heat. Add shallot and cook for 30 seconds.
+#Add lemon juice, heavy cream, and remaining butter. Cook until heated through and butter has melted. Check for taste and adjust seasoning if desired.
+#Spoon sauce over shrimp and serve warm.
+
+[[Category:Recipes using shrimp]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes for sauces and condiments]]
+[[Category:Sautéed recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using heavy cream]]

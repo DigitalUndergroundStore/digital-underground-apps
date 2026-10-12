@@ -1,0 +1,74 @@
+{{Incomplete recipe|reason=missing quantities with insufficient guidance to compensate}}__NOTOC__
+{{recipesummary|category=Salad recipes|servings=4|time=40 minutes|difficulty=4
+| Energy = 1.01 mcal per serving
+}}
+{{recipe}} | [[Cookbook:Cuisine of Indonesia|Indonesian Cuisine]]
+
+'''Gado-gado''' is a [[Cookbook:Vegetable|vegetable]] [[Cookbook:Salad|salad]] with a [[Cookbook:Peanut Sauce|peanut sauce]] dressing.
+
+== Ingredients ==
+
+=== Peanut sauce ===
+* 1 [[Cookbook:Gram|g]] [[Cookbook:Terasi|terasi]] (fermented prawn paste)
+* [[Cookbook:Vegetable oil|Vegetable oil]]
+* 300 g [[Cookbook:Peanut|peanuts]]
+* Fresh or dried [[Cookbook:Chiles|chile pepper]]
+* 1 clove [[Cookbook:Garlic|garlic]]
+* [[Cookbook:Salt|Salt]]
+* 125 g [[Cookbook:Gula Jawa|gula jawa]] (Indonesian palm sugar)
+* 4 [[Cookbook:Shallot|shallots]]
+* [[Cookbook:Sugar|Sugar]]
+* Fresh [[Cookbook:Lime|lime]] juice or [[Cookbook:Rice vinegar|rice vinegar]]
+
+=== Salad ===
+* [[Cookbook:Hard Boiled Eggs|Hard-boiled eggs]], [[Cookbook:Slicing|sliced]]
+* Whole [[Cookbook:Potato|potato]]es, [[Cookbook:Steaming|steamed]] or [[Cookbook:Boiling|boiled]]
+* [[Cookbook: Vegetable|Mixed vegetables]] (e.g. [[Cookbook:Cabbage|cabbage]], [[Cookbook:Bean Sprout|bean sprouts]], [[Cookbook:Cucumber|cucumber]], [[Cookbook:Chayote|chayote]], [[Cookbook:Water Spinach|water spinach]], [[Cookbook:Asparagus bean|asparagus bean]], [[Cookbook:Spinach|spinach]])
+* [[Cookbook:Deep frying|Deep fried]] [[Cookbook:Tofu|soybean cake]]
+* Deep fried [[Cookbook:Tempeh|tempeh]]
+* Deep fried kerupuk (fish or [[Cookbook:Prawn Cracker|prawn crackers]])
+* Deep fried [[Cookbook:Shallot|shallot]]
+
+== Procedure ==
+
+=== Peanut sauce ===
+#[[Cookbook:Frying|Fry]] prawn paste with vegetable oil until fragrant.
+#Fry the peanuts until golden brown. Remove from the pan and leave to cool, then drain off all but a little of the excess oil.
+#Grind the peanuts to a paste.
+# Add ground chili pepper, garlic, salt, sugar, and prawn paste to the peanut paste. Grind to mix.
+# Put peanut paste in a pan, add some water to dissolve (use [[Cookbook:Coconut Milk|coconut milk]] for a richer taste).
+# Add additional sugar into the peanut sauce to taste, and bring to the [[Cookbook:Boiling|boil]].
+# [[Cookbook:Simmering|Simmer]] peanut sauce until thick, and season with the lime juice or vinegar.
+
+=== Salad ===
+# Remove the skin from the boiled potatoes. [[Cookbook:Deep Fat Frying|Deep fry]] the potatoes until golden brown, then slice.
+# Wash, shred, or [[Cookbook:Chop|chop]] cabbage, spinach, and water spinach.
+# [[Cookbook:Boiling|Boil]] water in a pan. Add cabbage, and cook until tender. Drain.
+# Use strained boiling water to boil the spinach and water spinach, one after another. Drain.
+# [[Cookbook:Blanching|Blanch]] bean sprouts for about 30 seconds. Drain.
+# Peel chayote, wash, slice, and boil until tender.
+# Wash and slice cucumber.
+# Place the salad, sliced potatoes, fried tofu, fried tempeh, and eggs in a large plate, either randomly or in layers.
+# Pour the peanut sauce over the salad.
+# Spread deep fried shallots on top, and serve with kerupuk.
+
+== Notes, tips, and variations ==
+* Prawn crackers are non-vegetarian. You can substitute them with ''kerupuk sayur'' or ''emping'' if you wish this dish to be completely vegetarian.
+* Add some ''kecap manis'' (Malay/Indonesian sweet [[Cookbook:Soy sauce|soy sauce]]) to taste.
+* You may substitute the peanut sauce recipe for the procedure here.
+* [[Cookbook:Cashew|cashew nuts]] is secret ingredient to make peanut sauce tastes richer.
+* Some cooks like to [[Cookbook:Blanching|blanche]] or [[Cookbook:Steaming|steam]] the cabbage, cauliflower, and carrots rather than serve them raw.
+* Use chunky [[Cookbook:Peanut_Butter|peanut butter]] as substitute for ground peanuts.
+* Use [[Cookbook:Hot Sauce|chili sauce]] to substitute fresh or dried [[Cookbook:Chili Pepper|chili pepper]].
+* [[Cookbook:Cauliflower|Cauliflower]], [[Cookbook:Green Bean|green beans]], [[Cookbook:Watercress|watercress]], [[Cookbook:Carrot|carrots]], [[Cookbook:Tomato|tomato]]es, or [[Cookbook:Pea|peas]] are sometimes included but less common.
+
+[[Category:Recipes using vegetables|Gado-gado]]
+[[Category:Recipes using peanut]]
+[[Category:Recipes for salad|Gado-gado]]
+[[Category:Indonesian recipes|Gado-gado]]
+[[Category:Recipes using chile]]
+[[Category:Recipes using lime juice]]
+[[Category:Recipes using hard-cooked egg]]
+[[Category:Recipes using garlic]]
+
+[[id:Resep:Gado Gado]]

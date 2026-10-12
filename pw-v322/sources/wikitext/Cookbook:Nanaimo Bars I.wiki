@@ -1,0 +1,59 @@
+__NOTOC__{{Recipe summary
+| Category = Recipes for dessert
+| Difficulty = 3
+| Image = [[File:Nanaimo bar.JPG|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Dessert|Desserts]]
+
+'''Nanaimo Bars''' are a layered chocolate and [[Cookbook:Custard|custard]] dessert named after the mining town, Nanaimo, British Columbia, Canada. This winning recipe was submitted by Joyce Hardcastle in 1986 when the City of Nanaimo and Harbour Park Mall had a contest to find the best Nanaimo Bar recipe. Variations of this recipe include using different nuts and/or adding flavours to the custard layer.
+
+== Ingredients ==
+
+=== Bottom layer ===
+* ½ [[Cookbook:Cup|cup]] unsalted [[Cookbook:butter|butter]] (European style cultured)
+* ¼ cup white granulated [[Cookbook:sugar|sugar]]
+* 5 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:cocoa|cocoa]]
+* 1 [[Cookbook:egg|egg]] beaten
+* 1¼ cups [[Cookbook:Graham Cracker|graham wafer]] crumbs
+* ½ cups finely-[[Cookbook:Chopping|chopped]] [[Cookbook:almond|almonds]]
+* 1 cup [[Cookbook:coconut|coconut]]
+
+=== Middle layer ===
+* ½ cup unsalted [[Cookbook:butter|butter]]
+* 2 tbsp and 2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:cream|cream]]
+* 2 tbsp vanilla [[Cookbook:Custard Powder|custard powder]]
+* 2 cups [[Cookbook:Powdered Sugar|icing sugar]]
+
+=== Top layer ===
+* 4 squares (4 oz) semi-sweet [[Cookbook:chocolate|chocolate]]
+* 2 tbsp unsalted [[Cookbook:butter|butter]]
+
+== Procedure ==
+
+=== Bottom layer ===
+#Melt first 3 ingredients in top of [[Cookbook:Double Boiler|double boiler]].
+#Add egg and stir to cook and thicken.
+#Remove from heat. Stir in crumbs, coconut, and nuts.
+#Press firmly into an ungreased 8 x 8-inch [[Cookbook:Cake Pan|cake pan]].
+
+=== Middle layer ===
+#[[Cookbook:Creaming|Cream]] butter, cream, custard powder, and icing sugar together well. [[Cookbook:Beating|Beat]] until light. 
+#Spread over bottom layer.
+
+=== Top layer ===
+#Melt chocolate and butter over low heat. Cool. 
+#Once cool, but still liquid, pour over second layer and chill in refrigerator.
+#Once set, cut into squares and serve. Enjoy.
+
+[[Category:Canadian recipes]]
+[[Category:Recipes using almond]]
+[[Category:Recipes for dessert]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using powdered sugar]]
+[[Category:Recipes using granulated sugar]]
+[[Category:Recipes using dark chocolate]]
+[[Category:Recipes using cocoa powder]]
+[[Category:Recipes using coconut]]
+[[Category:Recipes using custard powder]]
+[[Category:Recipes using egg]]

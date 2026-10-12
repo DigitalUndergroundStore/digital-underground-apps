@@ -1,0 +1,57 @@
+__NOTOC__
+{{recipesummary
+| Category = Argentine recipes
+| Servings = 2
+| Time = Cooking: 1 hour 15 minutes<br>Resting: Overnight to 3 days
+| Difficulty = 1
+| Image = [[File:Chimichurri3.jpg|300px]]
+| Rating = 1
+}}{{Recipe}}
+
+'''Chimichurri''' is a South American [[Cookbook:Sauces|sauce]] for meats, consisting primarily of oil, vinegar, parsley, red chilli, and herbs. There are many different variants of chimichurri, and every cook will have their own private recipe. Chimichurri can be used as a marinade or sauce for grilled or roasted meats, or as a dipping sauce for [[Cookbook:Empanadas|empanadas]].
+
+== Ingredients ==
+
+* 100 [[Cookbook:Milliliter|ml]] [[Cookbook:Olive oil|olive oil]]
+* 50 ml white [[Cookbook:Wine vinegar|wine vinegar]]
+* 50 ml [[Cookbook:Water|water]]
+* 1 bunch flat-leaf [[Cookbook:Parsley|parsley]], [[Cookbook:Chopping|chopped]]
+* 1 medium [[Cookbook:Onion|onion]], finely chopped
+* 4 cloves [[Cookbook:Garlic|garlic]], finely minced
+* [[Cookbook:Red pepper flakes|Red chile flakes]], to taste
+* 1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Oregano|oregano]]
+* 1 tbsp [[Cookbook:Paprika|paprika]]
+* 1 tbsp [[Cookbook:Salt|sea salt]] flakes
+* 1 [[Cookbook:Tsp|tsp]] ground [[Cookbook:Pepper|black pepper]]
+
+=== Optional ingredients ===
+Depending on taste you can add any combination of the following:
+
+* 1 tbsp [[Cookbook:Thyme|thyme]], finely chopped
+* 1 tsp [[Cookbook:Lemon|lemon]] juice
+* 1 tsp [[Cookbook:Bay leaf|bay leaf]], small flakes
+* 1 tbsp [[Cookbook:Coriander|coriander]], finely chopped
+* ½ green [[Cookbook:Bell Pepper|bell pepper]], seeded and finely chopped
+
+== Procedure ==
+
+# Combine all the ingredients except the oil, vinegar and water in a large bowl and mix together well, ensuring all the herbs and spices (especially the salt) are distributed evenly.
+# Allow to rest for 30 minutes.
+# Bring the vinegar and water to the [[Cookbook:Boiling|boil]], add to the other ingredients and mix well. This helps to soften the taste of the onion and garlic.
+# Allow to rest for 30 minutes.
+# Add the oil and mix well. If the liquid part doesn't cover the ingredients add oil water and vinegar in a 2:1:1 ratio to cover them.
+# Transfer to an air-tight container and refrigerate overnight at least, or better, for a few days.
+# When needed, remove from refrigerator about 30 minutes ahead of time to allow the oil to thin out again. Stir well and serve.
+
+== Notes, tips, and variations ==
+
+* For red chimichurri, use 50 ml red wine vinegar instead of white wine vinegar, and add 1 peeled, seeded, finely chopped tomato and ½ red bell pepper, seeded and finely chopped, instead of green pepper.
+
+[[Category:Argentine recipes]]
+[[Category:Vegetarian recipes]]
+[[Category:Recipes using olive oil]]
+[[Category:Recipes using parsley]]
+[[Category:Recipes using vinegar]]
+[[Category:Recipes using bay leaf]]
+[[Category:Recipes using chile flake]]
+[[Category:Recipes using lemon juice]]

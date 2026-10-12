@@ -1,0 +1,47 @@
+__NOTOC__{{Recipe summary
+| Category = Vegetable recipes
+| Servings = 2
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+'''Shakshuka''' is a popular Middle Eastern dish with many variations. It is vegetarian-friendly.
+
+==Ingredients==
+* 1 whole yellow [[Cookbook:Onion|onion]]
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Oil and Fat|oil]]
+* 4–5 plum [[Cookbook:Tomato|tomatoes]]
+* 2 [[Cookbook:Egg|eggs]]
+* [[Cookbook:Bell Pepper|Bell pepper]] (red or green)
+* 1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Basil|basil]] or black [[Cookbook:Pepper|pepper]]
+* [[Cookbook:Cayenne Pepper|Cayenne pepper]], [[Cookbook:Paprika|paprika]], and [[Cookbook:Turmeric|turmeric]] to taste
+
+==Equipment==
+* 1 [[Cookbook:Frying Pan|frying pan]]
+* 1 [[Cookbook:Cutting Board|cutting board]]
+* 1 kitchen [[Cookbook:Knife|knife]]
+
+==Procedure==
+# Peel and [[Cookbook:Chop|chop]] the onion. [[Cookbook:Fry|Fry]] it in the oil until it turns translucent.
+# Chop the tomatoes and pepper, and add to the onion in the pan.
+# Add herbs and spices. Cover and let cook until the tomatoes are evenly cooked through (around 25 minutes on low heat).
+# With a wooden spoon, make two holes in the onion-tomato mix.
+# Break and pour each egg into its own hole. Cover and let cook until the eggs are firm (around 5 more minutes).
+# Serve with bread.
+
+== Notes, tips, and variations ==
+Variations can include:
+* Tuna and garlic
+* Cheese on top
+* Bread inside
+
+[[Category:Recipes using tomato]]
+[[Category:Vegetarian recipes]]
+[[Category:Recipes using onion]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using bell pepper]]
+[[Category:Pan fried recipes]]
+[[Category:Israeli recipes]]
+[[Category:Recipes using basil]]
+[[Category:Recipes using cayenne]]

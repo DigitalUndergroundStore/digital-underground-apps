@@ -1,0 +1,37 @@
+{{Recipe summary
+| Category = Pork recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+== Ingredients ==
+* 1 [[Cookbook:Cup|cup]] [[Cookbook:Salt|salt]]
+* ¾ cup [[Cookbook:Honey|honey]]
+* 2 cups apple [[Cookbook:Cider Vinegar|cider vinegar]], heated
+* 4 sprigs fresh [[Cookbook:Rosemary|rosemary]], finely [[Cookbook:Chopping|chopped]]
+* 10 sprigs fresh [[Cookbook:Thyme|thyme]], finely chopped
+* 1 ½ [[Cookbook:Tablespoon|tablespoons]] [[Cookbook:Cayenne Pepper|cayenne pepper]]
+* 2 tablespoons [[Cookbook:Mincing|minced]] [[Cookbook:Garlic|garlic]]
+* 2 [[Cookbook:Pound|pounds]] ice
+* 4 thick-cut [[Cookbook:Pork|pork]] rib chops
+* 2 [[Cookbook:Tablespoon|tablespoons]] black [[Cookbook:Peppercorn|peppercorns]], cracked
+* 1 tablespoon smoked [[Cookbook:Paprika|paprika]]
+* 1 tablespoon ancho [[Cookbook:Chiles|chile]] powder
+
+== Procedure ==
+#Combine honey, salt, vinegar, rosemary, thyme, cayenne pepper, and minced garlic in a plastic zip-top bag. Add ice, and shake the bag until ice is mostly melted and mixture has cooled down.
+#Insert pork chops into the bag, and refrigerate for 1–2 hours.
+#Combine cracked peppercorns, paprika, and chili powder.
+#Take the pork out of the mixture and pat dry with [[Cookbook:Paper Towel|paper towels]]. Discard remaining marinade.
+#Rub pepper mixture on both sides of each pork chop.
+#Quickly grease a high-heat [[Cookbook:Grill|grill]] with a flame-resistant towel soaked in oil and tied with twine.
+#[[Cookbook:Grilling|Grill]] pork chops, covered, 2 minutes. Rotate 90 degrees, and cook for another 2 minutes. Flip and repeat this process on the other side.
+#Move to a plate and let rest, uncovered, for 5 minutes. Serve warm.
+
+[[Category:Recipes using pork chop]]
+[[Category:Grilled recipes]]
+[[Category:Recipes using ancho chile]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using paprika]]
+[[Category:Recipes using honey]]

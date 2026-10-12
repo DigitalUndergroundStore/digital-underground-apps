@@ -1,0 +1,27 @@
+{{recipesummary|category=Recipes for dessert|time=5 minutes|difficulty=1}}
+
+{{recipe}} | [[Cookbook:Dessert]] | [[Cookbook:Vegan cuisine|Vegan]]
+
+This surprisingly delicious '''chocolate mousse''' [[Cookbook:Dessert|dessert]] is easily made from three New World plants, namely [[Cookbook:Avocado|avocado]], [[Cookbook:Cocoa|cocoa]] and agave.
+
+The avocados should be ''very'' ripe, to the point where the navel almost - or even just - starts to mold.
+
+==Ingredients==
+
+* [[Cookbook:Avocado|Avocado(s)]]
+* [[Cookbook:Cocoa|Cocoa powder]]
+* [[Cookbook:Agave Syrup|Agave syrup]]
+
+==Procedure==
+
+#Peel the avocados and remove the pit.
+#Break down the fleshy parts of the avocados using a [[Cookbook:Fork|fork]] or [[Cookbook:Mixer|mixer]]; depending on the desired texture.
+#Add the cocoa powder and [[Cookbook:Mixing|mix]].
+#Add agave syrup to taste, and mix some more.
+#Serve.
+
+[[Category:Recipes using avocado]]
+[[Category:Recipes using cocoa powder]]
+[[Category:Recipes for dessert|{{PAGENAME}}]]
+[[Category:Vegan recipes|{{PAGENAME}}]]
+[[Category:Recipes using agave]]

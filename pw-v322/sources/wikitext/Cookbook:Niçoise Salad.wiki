@@ -1,0 +1,51 @@
+{{Recipe summary
+| Servings = 6
+| Difficulty = 2
+| Image = [[File:Salade nicoise.jpg|300px]]
+}}
+
+{{recipe}}
+__NOTOC__
+
+'''Niçoise salad''' (pronounced ni-swaz) sometimes referred to as '''salade niçoise''', is a type of French salad. As suggested by the name, it is a specialty of the region of Nice in France and is composed of raw vegetables, hard boiled eggs, anchovies and tuna, and olive oil.
+
+Contrary to what is sometimes seen in restaurants, the classic niçoise salad does not contain rice, potatoes, cheese, pasta, or cooked vegetables.
+
+==Ingredients==
+* 10 medium [[Cookbook:Tomato|tomatoes]]
+* 1 large [[Cookbook:Cucumber|cucumber]]
+* 200 [[Cookbook:Gram|g]] small fresh [[Cookbook:Broad Bean|broad (fava) beans]] or [[Cookbook:Green Bean|green beans]]
+* 12 small fresh [[Cookbook:Artichoke|artichokes]], cut into rounds
+* 2 green [[Cookbook:Bell Pepper|bell peppers]]
+* 6 small white [[Cookbook:Onion|onions]]
+* 6 [[Cookbook:Basil|basil]] leaves, finely [[Cookbook:Chopping|chopped]]
+* 1 [[Cookbook:Garlic|garlic]] clove 
+* 3 [[Cookbook:Hard Boiled Eggs|hard-boiled eggs]]
+* 12 [[Cookbook:Anchovy|anchovy]] fillets, or 300 g [[Cookbook:Tuna|tuna]] steak
+* 100 g black [[Cookbook:Olive|olives]]
+* 1 handful of [[Cookbook:Caper|capers]]
+* [[Cookbook:Olive Oil|Olive oil]]
+* [[Cookbook:Salt|Salt]] to taste
+* [[Cookbook:Pepper|Pepper]] to taste
+
+==Procedure==
+#Cut the tomatoes in quarters and salt them lightly once. Cut the eggs into quarters or slices. Cut the anchovies into 3–4 chunks (if using tuna, cut into similarly sized pieces). Peel the cucumber and finely slice it. Cut the green peppers into thin rings, and do the same with the onions.
+#Cut the garlic in two and rub the sides and bottom of a large salad bowl with it. [[Cookbook:Mixing#Tossing|Toss]] all the ingredients except the tomatoes into the bowl.
+#Drain the tomatoes, re-salt lightly and add to salad. In a separate bowl, mix 6 spoonfuls of olive oil with the basil, pepper, and salt and pour over salad. Refrigerate before serving.
+
+== External links ==
+* [http://www.mediterrasian.com/delicious_recipes_salade_nicoise.htm Salade Nicoise recipe]
+
+[[Category:Recipes using caper]]
+[[Category:Recipes using tomato]]
+[[Category:Recipes using tuna]]
+[[Category:Recipes for salad]]
+[[Category:French recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes with images]]
+[[Category:Recipes using anchovy]]
+[[Category:Recipes using artichoke]]
+[[Category:Recipes using basil]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using cucumber]]
+[[Category:Recipes using hard-cooked egg]]

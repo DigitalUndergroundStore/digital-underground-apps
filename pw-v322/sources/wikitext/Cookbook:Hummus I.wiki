@@ -1,0 +1,47 @@
+{{Recipe summary
+| Category = Dip recipes
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Middle Eastern cuisines|Middle Eastern cuisines]] | [[Cookbook:Hummus|Hummus]]
+__NOTOC__
+==Ingredients==
+* 1 [[Cookbook:Cup|cup]] dry [[Cookbook:Chickpea|chickpeas]]
+* [[Cookbook:Water|Water]]
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Baking Soda|baking soda]]
+* 2–3 cloves of [[Cookbook:Garlic|garlic]]
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Salt|salt]]
+* [[Cookbook:Tahini|Tahini]] and water, to make a paste
+* Ground [[Cookbook:Cumin|cumin]]
+* Fresh, coarsely-cut [[Cookbook:Cilantro|coriander leaves]]
+* Salt to taste
+
+==Procedure==
+#The night before you plan to cook, combine the chickpeas, 2.5 cups of water, and baking soda. Leave to [[Cookbook:Soaking Beans|soak]] for 6–12 hours.
+#Rinse.
+#Add the rinsed chickpeas to 3 cups of water, along with the garlic and 1 teaspoon of salt. Bring to a [[Cookbook:Boiling|boil]]. After about 45 minutes, they should swell enough for their skins to come off. Give it a stir, and use a slotted spoon to remove as many of the skins as you can from the water.
+# Cover the pot and continue cooking for about 2 hours, or until they almost dissolve to a paste.
+# Pour out the water. If desired, some can be reserved to add later, for extra flavor.
+# Mash the chickpeas by pressing them through a pasta [[Cookbook:Sieve|sieve]] or use a [[Cookbook:Food Processor|food processor]].
+# Let it cool for 10 minutes.
+# Add tahini and water until you get the right consistency.
+# Season with salt, ground cumin, and coriander leaves.
+
+==Notes, tips, and variations==
+
+* Fresh [[Cookbook:Lemon Juice|lemon juice]] can be substituted for some of the water
+* Some cooks add tahini concentrate and lemon juice, instead of diluted tahini.
+* Serve with any combination of [[Cookbook:Olive Oil|olive oil]], [[Cookbook:Tahini|tahini]], [[Cookbook:Za'atar|za'atar]], roast [[Cookbook:Pine Nut|pine nuts]], and/or [[Cookbook:French Fries|French fries]].
+
+[[Category:Middle Eastern recipes]]
+[[Category:Vegan recipes]]
+[[Category:Side dish recipes]]
+[[Category:Recipes using chickpea]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using tahini]]
+[[Category:Boiled recipes]]
+[[Category:Naturally gluten-free recipes]]
+[[Category:Recipes using baking soda]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using ground cumin]]
+[[Category:Recipes for hummus]]

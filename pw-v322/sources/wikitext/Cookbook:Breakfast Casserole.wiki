@@ -1,0 +1,36 @@
+{{Recipe summary
+| Category = Casserole recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 5 small [[Cookbook:Sausage|sausage]] links, cooked and finely [[Cookbook:Chopping|chopped]]
+* 4 standard [[Cookbook:Egg|eggs]], beaten
+* ½ [[Cookbook:Teaspoon|tsp]] [[Cookbook:Salt|salt]]
+* ½ tsp freshly-ground black [[Cookbook:Pepper|pepper]]
+* 2 [[Cookbook:Cup|cups]] finely-crumbled [[Cookbook:Cornbread|cornbread]]
+* 1 cup [[Cookbook:Ricotta|ricotta]] cheese
+* 1 cup shredded [[Cookbook:Monterey Jack Cheese|Monterrey Jack cheese]]
+* ¼ cup unsalted [[Cookbook:Butter|butter]]
+* 8 slices cooked [[Cookbook:Bacon|bacon]], crumbled
+* ½ cup dry [[Cookbook:Bread Crumb|breadcrumbs]]
+
+== Procedure ==
+#Combine sausage and bacon. In another bowl, combine ricotta, eggs, butter, salt, pepper, and cornbread.
+#In a greased large roasting pan, place just enough cornbread mixture to cover the bottom. Add just enough meat mixture to cover that layer, and repeat the layering until all mixtures have been used.
+#Combine Monterey Jack and breadcrumbs. Sprinkle evenly over layers and [[Cookbook:Baking|bake]] at 375°F (190°C) for 30–35 minutes or until browned and bubbly on top.
+#Serve warm.
+
+[[Category:Recipes using egg]]
+[[Category:Recipes using ricotta]]
+[[Category:Recipes using bacon]]
+[[Category:Breakfast recipes]]
+[[Category:Recipes using sausage]]
+[[Category:Recipes for casserole]]
+[[Category:Baked recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using bread crumb]]
+[[Category:Recipes using monterey jack]]

@@ -1,0 +1,37 @@
+{{recipesummary|category=Soup recipes|servings=Varies|time=2 hours|difficulty=2}} 
+
+{{recipe}} | [[Cookbook:Meat Recipes|Meat]] | [[Cookbook:Soup|Soup]]
+
+No specific quantities or measurements are described here in any detail—just ingredients and method. 
+
+== Ingredients ==
+* [[Cookbook:Chicken|Chicken]] thighs, boneless (easiest)
+* [[Cookbook:Carrot|Carrots]], [[Cookbook:Chopping|chopped]] into bite-sized chunks
+* [[Cookbook:Celery|Celery]], cross-cut into 5–10 [[Cookbook:Mm|mm]] [[Cookbook:Slicing|slices]]
+* Liquid [[Cookbook:Chicken Stock|chicken stock]], or 2–3 vegetable [[Cookbook:Bouillon Cube|stock cubes]]
+* [[Cookbook:Dill|Dill]] (either dried dill leaf tips, or 1 bunch finely-chopped fresh dill)
+* Water
+* [[Cookbook:Salt|Salt]]
+
+== Procedure ==
+
+# Put chicken into cold or room-temperature water in a pot on the stove and set heat to bring it to a boil. As it heats up, a surface foam develops prior to the boil. We want a clear soup broth, so use a big spoon or small [[Cookbook:Sieve|strainer]] to skim the foam and other "debris" away into a container. Discard the foam.
+# Remove chicken thighs from the pot and [[Cookbook:Chopping|chop]] them into roughly bite-size pieces on a chopping board. The chicken may tend to fall apart anyway as you handle it. While chicken is out of the pot, it's a good time to clear the broth further if desired.
+# Add the chicken pieces back into the pot.
+# Add carrots, celery, dill, and stock to the pot. Adjust heat to bring back to a [[Cookbook:Simmering|simmer]].
+# Simmer for at least 30 minutes (an hour is better, hours even better) to cook the chicken and mix the flavors.
+# Lightly salt to taste; individual diners can add more salt to their bowls if desired.
+
+== Notes, tips, and variations ==
+
+* Serve with [[Cookbook:Noodle|noodles]] of choice that have been cooked separately and drained, and added to individual bowls of soup. Add rice vermicelli noodles, which cook in two minutes, to bowls when serving. [[Cookbook:Barley|Barley]] can also be used in place of noodles.
+* For a thicker broth, somewhat like a [[Cookbook:Stew|stew]]: take a cup of the finished soup, stir in some [[Cookbook:Flour|flour]], and then stir the mixture back into the soup.
+* You can use legs, or thighs with bones, process on a cutting board by removing bones, gristle, etc., and cut meat into small chunks.
+
+[[Category:Recipes for soup]]
+[[Category:Recipes using chicken thigh]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using dill]]
+[[Category:Recipes using chicken broth and stock]]

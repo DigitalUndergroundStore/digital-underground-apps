@@ -1,0 +1,112 @@
+{{recipesummary
+| category = Breakfast recipes
+| Yield = 2–3 slices
+| time = ~10 minutes
+| difficulty = 2
+| Image = [[File:Frenchtoast.jpg|300px]]
+}}
+
+{{Nutrition Summary|
+|ServingSize= 1 slice (85 g)
+|Servings=    2-3
+|Cals=        190
+|FatCals=     40
+|TotalFat=    4.4 g
+|SatFat=      1.8 g
+|Cholesterol= 25 mg
+|Sodium=      220 mg
+|Carbs=       31.5 g
+|Fiber=       1.8 g
+|Sugars=      2.7 g
+|Protein=     6.2 g
+|VitaminA=    2%
+|VitaminC=    1%
+|Calcium=     6%
+|Iron=        3%
+}}
+
+__NOTOC__{{recipe}} | [[Cookbook:Vegetarian cuisine|Vegetarian]] | [[Cookbook:Breakfast|Breakfast]]
+
+'''French toast''', sometimes referred to as "eggy bread" in the United Kingdom, is a common [[Cookbook:Breakfast|breakfast]] or [[Cookbook:Dessert|dessert]] item made by [[Cookbook:Frying|frying]] a piece of [[Cookbook:Bread|bread]] soaked in an [[Cookbook:Egg|egg]] [[Cookbook:Batter|batter]]. French toast was developed as a way to use day-old stale bread. The literal translation of ''pain perdu'' is lost bread, referring to old or stale bread. When lacking stale bread, [[Cookbook:Toasting|toasting]] your bread lightly will help it absorb more of the egg and milk batter.
+
+French toast is usually served with toppings similar to those used for [[Cookbook:Pancake|pancakes]], [[Cookbook:Waffle|waffles]], and [[Cookbook:Toast|toast]]. It can also be served as part of a fried breakfast with savory foods like sausages, tomato (or ketchup), baked beans, fried mushrooms etc.
+
+This recipe is easily scalable.
+
+==Ingredients==
+
+=== French toast ===
+* 1 [[Cookbook:Egg|egg]] 
+* About ¼ [[Cookbook:Cup|cup]] (60 ml / 2 oz) [[Cookbook:Milk|milk]] or [[Cookbook:Cream|cream]] (more for softer, less eggy French toast; less for firmer, more eggy toast)
+* 2–3 slices [[Cookbook:Bread|bread]] (see notes)
+*[[Cookbook:Butter|Butter]], [[Cookbook:Margarine|margarine]], or [[Cookbook:Oil|cooking oil]]
+
+=== Optional flavorings ===
+*½ [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Vanilla|vanilla]] extract or similar
+*¼–1 teaspoon [[Cookbook:Nutmeg|nutmeg]], [[Cookbook:Cinnamon|cinnamon]] or other powdered [[Cookbook:Spice|spices]] suitable for sweet foods
+*½ teaspoon [[Cookbook:Sugar|sugar]]  or honey
+*¼ teaspoon [[Cookbook:Salt|salt]] 
+*¼ teaspoon [[Cookbook:Pepper|pepper]]
+
+=== Suggested toppings ===
+* [[Cookbook:Maple Syrup|Maple syrup]]
+* [[Cookbook:Jam|Jam]], [[Cookbook:Jelly|jelly]], fruit syrup
+* [[Cookbook:Whipped Cream|Whipped cream]]
+* [[Cookbook:Powdered Sugar|Powdered sugar]]
+* [[Cookbook:Nut|Nuts]]
+* [[Cookbook:Honey|Honey]]
+* [[Cookbook:Bacon|Bacon]]
+* [[Cookbook:Raspberry|Raspberries]], [[Cookbook:Strawberry|strawberries]], [[Cookbook:Blueberry|blueberries]], and/or [[Cookbook:Banana|bananas]]
+
+==Procedure==
+#Whisk the eggs, milk, and optional ingredients in a bowl until fully combined and no streaks of egg white remain.
+#Heat up a [[Cookbook:Frying Pan|frying pan]], [[Cookbook:Skillet|skillet]], or [[Cookbook:Griddle|griddle]] to medium-low heat.
+#Grease the pan with butter, margarine, or cooking spray.
+#Soak each side of the bread in the egg mixture only until it is coated and has absorbed a little of the mixture. (See the Notes below for which breads work best.)
+#Make sure the bread is not falling apart. Soft breads need only a quick dip; sturdier breads can soak a few seconds longer.
+#Cook, turning once, until both sides of the bread are [[Cookbook:Browning|browned]] and the inside is cooked through.
+#Serve on plates, with toppings as desired.
+
+==Notes, tips, and variations==
+
+* The goal is to get both sides of the French toast nicely browned, while making sure the center is cooked. Using excessive heat could scorch the outside of the toast while leaving the inside undercooked.
+
+* If making a small batch, soak the two slices until almost all of the mixture has been absorbed. If the bowl is small, place the two slices on top of each other, and keep switching and flipping them, so that all four sides will absorb the mixture.
+
+* The cooking process is too short to use most raw [[Cookbook:Spices|spices]], but some fresh [[Cookbook:Herbs|herbs]] might be very tasty.
+
+* If using sandwich bread, a plastic sandwich container may be used for the egg-milk mixture. This allows maximum use of the mixture, as the container is a good size and shape.
+
+* Toast your bread before dipping it into the mix to create a solid base.
+* The following types of bread are good used for French toast. Hard crust breads are recommended. Softer breads will create a soggy toast.
+** Sourdough
+**Challah
+**Schiacciata
+**Portuguese sweet bread ("Massa Suvada"). This bread will take your french toast to new heights.
+**Whole-wheat raisin bread or schiacciata.
+**King's Hawaiian Sweet Bread
+**Panettone (bread with raisin, but may be too sweet for some)
+**Brioche (weaved bread)
+**Chinese bakery loaves of bread. Ask to get it cut thick or uncut.
+[[Category:Breakfast recipes|French Toast]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using bread]]
+[[Category:Pan fried recipes]]
+[[Category:Vegetarian recipes|French Toast]]
+[[Category:Featured recipes|{{PAGENAME}}]]
+[[Category:Recipes with metric units|{{PAGENAME}}]]
+[[Category:Recipes for dessert|{{PAGENAME}}]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using cream]]
+
+[[ko:프렌치 토스트]]
+
+==References==
+*[http://www.makefrenchtoast.com/how-to-make-french-toast.html How to make toast] ([https://web.archive.org/web/20131104121635/http://www.makefrenchtoast.com/how-to-make-french-toast.html archive]) Recommended bread types.
+*{{YouTube|DRyTaSflfqo|World's Best French Toast Recipe|link= no }}
+* {{YouTube|sAfoOQnhjUw|How to Make French Toast|link= no }}
+[[Category:Recipes using sugar]]
+[[Category:Recipes using cooking spray]]
+[[Category:Recipes using fruit preserves]]
+[[Category:Recipes using maple syrup]]

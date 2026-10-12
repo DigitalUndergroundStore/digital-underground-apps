@@ -1,0 +1,68 @@
+__NOTOC__
+{{recipesummary|category=Sandwich recipes
+| Yield = 1 sandwich|servings=1 or more|time=5 minutes|difficulty=1
+| Image = [[Image:Grilled Cheese with hoisin.jpg|300px]]
+}}
+{{recipe}} | [[Cookbook:Sandwiches|Sandwiches]] | [[Cookbook:Cuisine of the United States|US Cuisine]]
+
+A '''grilled cheese sandwich''' is a simple hot [[Cookbook:Sandwiches|sandwich]] filled with melted [[Cookbook:Cheese|cheese]]. The key variable is the ratio of cheese to bread; this depends on the thickness and density of the bread, and the amount of cheese used, and varies according to taste; generally more cheese is preferred, so that the bread doesn't overwhelm the cheese. The goal is to get a nicely browned [[Cookbook:Sandwiches|sandwich]] with melted cheese in the middle.
+
+Grated cheese is recommended for more even melting. If mixing the grated cheese with chopped onions or other ingredients, it is easiest to grate the cheese into a bowl, mix with additional ingredients, and then spoon onto sandwiches; otherwise it can be messy.
+
+Grilled cheese sandwiches are often served with [[Cookbook:Soup|soups]], such as tomato soup.
+
+== Ingredients ==
+*2 slices of [[Cookbook:Bread|bread]]
+*[[Cookbook:Butter|Butter]] 
+*1–3 slices of easy-to-melt [[Cookbook:Cheese|cheese]], such as [[Cookbook:Cheddar Cheese|cheddar]], gouda, Limberger, [[Cookbook:American Cheese|American]] (or shredded cheese to taste)
+* Other ingredients as necessary (see variations below)
+
+== Procedure ==
+=== Stove-top method ===
+
+# Heat a [[Cookbook:Skillet|skillet]], [[Cookbook:Frying Pan|frying pan]] or [[Cookbook:Griddle|griddle]] over medium heat. 
+# Spread [[Cookbook:Butter|butter]] on the [[Cookbook:Bread|bread]], and place both pieces of bread, butter side down, in the skillet. 
+# When the butter sides of both have browned (check periodically), flip one over and place cheese on top, then place the other slice of bread on top of the cheese (again, butter side down). 
+# Compress the sandwich by pressing on it with a [[Cookbook:Spatula|spatula]]. 
+# Once the bottom side of the sandwich is browned sufficiently, flip the sandwich over. When both sides are browned, take off heat, cut, and serve.
+
+=== Oven method ===
+
+# Preheat [[Cookbook:Oven|oven]] to 150°C (300°F).
+# Spread [[Cookbook:Butter|butter]] on both sides of the [[Cookbook:Bread|bread]] slices.
+# Sandwich the cheese and fillings between the bread slices, and transfer the sandwiches to a [[Cookbook:Baking Sheet|baking sheet]].
+# [[Cookbook:Baking|Bake]] for 10–15 minutes, flip, and bake another 5–10 minutes or to taste.
+
+== Notes, tips, and variations ==
+
+* Try spreading both sides of the bread with [[Cookbook:Mayonnaise|mayonnaise]], [[Cookbook:Mustard|mustard]], [[Cookbook:Barbecue Sauce|barbecue sauce]], [[Cookbook:Ketchup|ketchup]], and/or aioli.
+* Try layering other ingredients with sliced cheese, such as [[Cookbook:Ham|ham]], [[Cookbook:Tomato|tomato]], shredded cooked [[Poker/Hold'em|pork]], [[Cookbook:Salami|salami]], etc.
+* If using shredded cheese, try mixing in various ingredients such as diced onion, garlic, leeks, shallots, pickles, crumbled bacon, pepper, thyme, cumin, etc.
+* [http://www.kappacasein.com/ Kappacasein] of Borough Market uses cheddar cheese and sourdough bread, and mixes in onions, leek, and garlic. The bread is sliced ~6–8 mm thick and cooked in a flat sandwich press until the entire surface is crisp.
+* It is common practice at the Ma-Ka-Ja-Wan Scout Reservation in Pearson, WI to substitute a garlic-flavored spread for the butter.
+* You can also make open-faced baked sandwiches; in these, the exposed cheese tends to puff and bubble. If you only heat from above (via radiant heat), you will melt the cheese and leave the bread untoasted or lightly toasted, which may be desired; however, you should generally heat from both sides.
+* To get evenly melted cheese, and avoid burnt bread, cook over low heat on the stove—this gives the cheese time to warm up and melt, rather than scorching the bread before the cheese warms up.
+* [[Cookbook:Margarine|Margarine]] can be used instead of butter, but it is not recommended, as direct heating tends to negatively affect the taste of margarine.
+* Using a specialized sandwich maker is useful as it circumvents the need to flip, provides attractive browning marks, and seals in the sandwich.
+* If you prefer soggy bread, melt the butter in a pan, and grill or roast in that. If you prefer crisp bread, spread butter on the bread, and toast on a grate or cook in a ridged indoor grill, so the fat runs away.
+
+== See also ==
+*[[Cookbook:Toasted Cheese Sandwich|Toasted Cheese Sandwich]]
+*[[Cookbook:Cheese on Toast|Cheese on Toast]]
+*[[Cookbook:Toast|Toast]]
+*[[Cookbook:Monte Cristo Sandwich|Monte Cristo Sandwich]]
+
+== External links ==
+* [http://www.epicurious.com/recipes/food/views/Grilled-Cheese-Sandwich-40040 Grilled Cheese Sandwich], Epicurious, September 1996, by Marion Cunningham, The Fannie Farmer Cookbook
+* [http://www.cooks.com/rec/search/0,1-0,grilled_cheese_sandwich,FF.html Recipes at Cooks.com]
+* [http://www.cooksillustrated.com/recipes/detail.asp?docid=5465 Classic Grilled Cheese Sandwiches], 1998
+* [http://www.cooksillustrated.com/recipes/detail.asp?docid=7071  Oven Grilled Cheese for a Crowd], 2005
+
+[[Category:Recipes for sandwiches]]
+[[Category:Recipes using cheese]]
+[[Category:Pan fried recipes]]
+[[Category:Broiled recipes]]
+[[Category:United States recipes]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using bread]]

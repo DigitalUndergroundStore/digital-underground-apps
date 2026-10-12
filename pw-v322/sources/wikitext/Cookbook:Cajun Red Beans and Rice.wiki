@@ -1,0 +1,39 @@
+{{recipe}}
+
+{{Recipe Summary|category=Louisiana recipes|servings=6 people for 2-3 days|time=4+ hours|difficulty=3}}
+
+==Ingredients==
+* 1 [[Cookbook:Pound|pound]] dry red beans (e.g. [[Cookbook:Kidney Bean|kidney]] or [[Cookbook:Cowpea|cowpea]])
+* 6 [[Cookbook:Each|ea]]. (3½–4 pounds / 1.5–2 [[Cookbook:Kilogram|kg]]) large [[Cookbook:Ham|ham]] hocks
+* 2 [[Cookbook:Cup|cups]] (½ stalk) finely-[[Cookbook:Chopping|chopped]] [[Cookbook:Celery|celery]]
+* 2 cups (1 ea.) finely-chopped [[Cookbook:Onion|onions]]
+* 2 cups (1 ea.) finely-chopped [[Cookbook:Bell Pepper|bell peppers]]
+* 5 [[Cookbook:Bay Leaf|bay leaves]]
+* 3 Tbsp ''Paul Prudhomme's Seafood Magic'', or a similar spice
+* 1 Tbsp [[Cookbook:Tabasco Sauce|tabasco sauce]] or similar [[Cookbook:Hot Sauce|hot sauce]]
+* 4 cups cooked [[Cookbook:Rice|rice]]
+
+==Procedure==
+# Cover beans with water, and let soak overnight. Drain.
+# Place ham hocks, celery, onions, bell peppers, bay leaves, and seasoning into a large [[Cookbook:Saucepan|saucepan]] with 10 cups water. Cover and bring to [[Cookbook:Boiling|boil]].  
+# [[Cookbook:Simmering|Simmer]] until meat is fork tender, about an hour after boiling starts, stirring occasionally.  
+# Remove ham hocks from pan and set aside. Skim fat from pan and discard.
+# Remove a significant fraction of liquid from pan, add drained beans, and add back just enough liquid to cover beans. Simmer beans until they just begin to break up and the liquid starts to become creamy, about 45 minutes. Stir frequently. Add back liquid as needed to keep beans covered. If beans begin to scorch, do not stir; transfer mixture to another pan without scraping scorched beans into new pot.
+# Add ham hocks and cook 45 minutes more, and serve immediately.
+# On a heated serving platter, mound ¾ cup rice per serving at one end of platter, place ham hocks at other end, and put 1 cup beans per serving in middle.
+
+
+
+[[Category:Recipes using pulses]]
+[[Category:Recipes using ham]]
+[[Category:Recipes using rice]]
+[[Category:Southern U.S. recipes]]
+[[Category:Louisiana recipes]]
+[[Category:Main course recipes]]
+[[Category:Side dish recipes]]
+[[Category:Boiled recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using bell pepper]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using hot sauce]]
+[[Category:Recipes using kidney bean]]

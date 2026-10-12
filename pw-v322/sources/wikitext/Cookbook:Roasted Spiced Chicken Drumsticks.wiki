@@ -1,0 +1,40 @@
+__NOTOC__{{recipe summary
+| category = Chicken recipes
+| servings = 4
+| time = Prep: 10
+minutes</br>Cooking: 20 minutes</br>Total: 30 minutes
+| difficulty = 3
+| image = [[File:Barbecued chicken drumsticks-01.jpg|300px]]
+| energy = 
+| note = 
+}}
+{{recipe}}
+
+== Ingredients ==
+*1½ [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Paprika|paprika]]
+*1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Onion Powder|onion powder]]
+*½ [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Chili Powder|chilli powder]]
+*1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Salt|salt]]
+*1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Olive Oil|olive oil]]
+*6 [[Cookbook:Chicken|chicken]] drumsticks
+
+== Equipment ==
+*[[Cookbook:Oven|Oven]]
+*[[Cookbook:Paper Towel|Paper towels]]
+*[[Cookbook:Baking Dish|Baking dish]]
+
+== Procedure ==
+#Combine the paprika, onion powder, chili powder, and salt together in a bowl.
+#Preheat oven to 400°F.
+#Pat the chicken dry with paper towels. 
+#Coat the chicken with oil and the prepared spice blend, ensuring all sides are well-coated. Transfer to a baking dish.
+#Bake the chicken drumsticks until the skin is brown and crispy (about 25 minutes).
+#Serve hot.
+
+[[Category:Recipes using chicken]]
+[[Category:Recipes using paprika]]
+[[Category:Recipes using onion powder]]
+[[Category:Recipes using chili powder]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using olive oil]]
+[[Category:Baked recipes]]

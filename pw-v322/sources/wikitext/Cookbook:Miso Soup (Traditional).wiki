@@ -1,0 +1,47 @@
+__NOTOC__{{Recipe summary
+| Category = Soup recipes
+| Difficulty = 1
+}}
+
+{{Recipe}}
+
+This recipe is for a traditional miso soup. [[Cookbook:Wakame|Wakame]] with [[Cookbook:Tofu|tofu]] is a standard and popular combination, especially at restaurants.
+
+== Ingredients ==
+
+=== Broth ===
+* 90–94% by volume [[Cookbook:Dashi|dashi]] (consider using instant dashi mix)
+* 6–10% by volume [[Cookbook:Miso|miso]] (red, white, or a combination)
+
+=== Garnish ===
+Any 2–3 of the following items that contrast in color, flavor, buoyancy, shape, texture, etc:
+
+* Finely sliced and [[Cookbook:Deep Fat Fry|deep-fried]] [[Cookbook:Tofu|tofu]] (agedashi tofu)
+* Cubed raw silky [[Cookbook:Tofu|tofu]] ('''recommended''')
+* [[Cookbook:Wakame|Wakame]] seaweed ('''recommended''')
+* [[Cookbook:Konbu|Konbu]] (kelp), perhaps left over from making dashi
+* [[Cookbook:Spinach|Spinach]]
+* Sliced [[Cookbook:Scallion|scallion]] ('''recommended''')
+* Grated [[Cookbook:Daikon|daikon]] radish
+* Boiled and finely cubed [[Cookbook:Potato|potato]]
+* [[Cookbook:Clam|Clams]] (asari or shijimi)
+* Grated [[Cookbook:Eggplant|eggplant]]
+* [[Cookbook:Shrimp|Shrimp]]
+* [[Cookbook:Mushroom|Mushrooms]]
+
+== Procedure ==
+# Put dashi in a pot.
+# Add any garnish that needs cooking.
+# Heat the dashi, letting it [[Cookbook:Simmer|simmer]] to cook any garnish that needs cooking. Do not bring to a rolling [[Cookbook:Boil|boil]], as this degrades the flavor.
+# Add any garnish that does not need cooking, and remove from heat.
+# Add the miso to the soup. Avoid boiling the miso; some nuances of the flavor will be lost.
+
+== Notes, tips, and variations ==
+
+* While certainly a traditional food, miso soup is also suited to modern interpretations. Using oil leftover from frying bacon and adding caramelized onion and cabbage produces a soup notably different from the traditional variety, and can add new interest to a classic dish. A small quantity of freshly ground black pepper added just before serving rounds out this method very well.
+
+[[Category:Japanese recipes]]
+[[Category:Recipes for soup]]
+[[Category:Recipes using seaweed]]
+[[Category:Recipes using white radish]]
+[[Category:Recipes using miso]]

@@ -1,0 +1,33 @@
+{{Recipe summary
+| Category = Dumpling recipes
+| Difficulty = 3
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+* 2 [[Cookbook:Cup|cups]] [[Cookbook:All-purpose flour|all-purpose flour]]
+* 1 [[Cookbook:Egg|egg]] (optional)
+* ½ [[Cookbook:Teaspoon|tsp]] [[Cookbook:Salt|salt]]
+* [[Cookbook:Water|Water]]
+* Pierogi filling, such as [[Cookbook:Pierogie Filling:Saurkraut Filling|sauerkraut filling]] or [[Cookbook:Pierogie Filling:Cheese Filling|cheese filling]]
+* [[Cookbook:Butter|Butter]]
+
+== Procedure ==
+# [[Cookbook:Sifting|Sift]] and measure flour with salt into a large bowl.
+# Slightly beat egg with fork, and add egg to flour mixture.
+# Mix in enough water to make a [[Cookbook:Dough|dough]] that's soft enough to roll out with a [[Cookbook:Rolling Pin|rolling pin]] but not so dry that it spits and cracks.
+# [[Cookbook:Dough#Rolling|Roll out]] dough on a floured bread board to about the thickness of a cracker.
+# Use a large rimmed glass or a big biscuit cutter to cut rounds approximately 3–4 inches in diameter.
+# Fill each round with a generous spoonful of filling, and fold dough in half to make a half-moon.
+# Pinch and seal the edge of the dough with fingers then gently fold and pinch edge to make a ruffled edge with about ¼-inch folds. 
+# Drop each pierogi into a large pot of [[Cookbook:Boiling|boiling]] salted water and boil until they float to the top. Remove each carefully with a slotted spoon.
+# [[Cookbook:Frying|Fry]] the pierogi in a [[Cookbook:Frying Pan|skillet]] with melted butter until golden brown.
+# Serve warm or cold.
+
+[[Category:Dumpling recipes]]
+[[Category:Polish recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using all-purpose flour]]

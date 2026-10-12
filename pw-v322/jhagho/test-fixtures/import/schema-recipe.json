@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+  "name": "Fixture Lentil Soup",
+  "recipeYield": "4",
+  "totalTime": "PT45M",
+  "recipeIngredient": [
+    "1 tbsp olive oil",
+    "1 onion, diced",
+    "2 cups vegetable broth",
+    "1 cup dried lentils"
+  ],
+  "recipeInstructions": [
+    { "@type": "HowToStep", "text": "Sauté onion in oil until soft." },
+    { "@type": "HowToStep", "text": "Add broth and lentils; simmer 35 minutes." }
+  ],
+  "image": "https://example.com/lentil.jpg"
+}

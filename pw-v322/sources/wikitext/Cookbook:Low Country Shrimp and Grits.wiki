@@ -1,0 +1,52 @@
+{{Recipe summary
+| Category = American recipes
+| Difficulty = 3
+}}
+
+{{recipe}} | [[Cookbook:Seafood|Seafood]] | [[Cookbook:North American cuisines|North American cuisines]] | [[Cookbook:Cuisine of the United States|United States cuisine]] | [[Cookbook:Southern cuisine|Southern cuisine]]
+
+==Ingredients==
+*3–4 strips thick smoky [[Cookbook:Bacon|bacon]], cut into 1-[[Cookbook:Inch|inch]] pieces
+*½ [[Cookbook:Onion|onion]], [[Cookbook:Mince|minced]]
+*2–3 cloves [[Cookbook:Garlic|garlic]], minced
+*1 [[Cookbook:Pound|lb]] large [[Cookbook:Shrimp|shrimp]], peeled (use peels to make stock)
+*[[Cookbook:Salt|Salt]]
+*1 [[Cookbook:Pint|pint]] heavy [[Cookbook:Cream|cream]], divided
+*2–2½ [[Cookbook:Cup|cups]] [[Cookbook:Shrimp|shrimp]] [[Cookbook:Stock|stock]]
+*[[Cookbook:Butter|Butter]]
+*[[Cookbook:Pepper|Black pepper]]
+*[[Cookbook:Cayenne Pepper|Cayenne]] pepper
+*[[Cookbook:Paprika|Paprika]]
+*[[Cookbook:Red pepper flakes|Chile flakes]]
+*[[Cookbook:Lime|Lime]] juice
+*1 recipe coarse grain [[Cookbook:Hominy Grits|hominy grits]], timed to finish when shrimp are ready to serve
+*3–4 [[Cookbook:Scallion|scallions]], [[Cookbook:Slicing|sliced]]
+
+==Procedure==
+#[[Cookbook:Frying|Fry]] bacon in a pan until not too crisp; remove and reserve.
+#[[Cookbook:Sautéing|Sauté]] onion and garlic in bacon fat until just softened (about 2–3 minutes).
+#Lightly season shrimp with salt and add to the pan; sauté until about half-cooked and just turning pink. Remove and reserve with the bacon.
+#[[Cookbook:Deglazing|Deglaze]] pan with sherry.
+#Add 1 cup (250 ml) cream, bring to [[Cookbook:Boiling|boil]], and reduce.
+#Add 1 cup shrimp stock, bring to a high [[Cookbook:Simmering|simmer]], and reduce. The liquid should thicken; if necessary, add floured butter at this point ([[Cookbook:Beurre Manié|beurre manié]]).
+#Season sauce with salt, pepper, chili flakes, cayenne, and paprika
+#Add bacon and shrimp to the sauce, and cook gently until shrimp are just done.
+#Add lime juice.
+#Serve over grits, and [[Cookbook:Garnish|garnish]] with scallions.
+
+== Notes, tips, and variations ==
+
+* Make the shrimp stock with shrimp peels and parts, dried shrimp flakes, mirepoix, and peppercorns.
+* The scallions can be replaced with minced chives.
+
+[[Category:United States recipes]]
+[[Category:Recipes using bacon|{{PAGENAME}}]]
+[[Category:Recipes using shrimp]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using chile flake]]
+[[Category:Recipes using lime juice]]
+[[Category:Recipes using hominy]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using heavy cream]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using shrimp broth and stock]]

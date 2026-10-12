@@ -1,0 +1,43 @@
+__NOTOC__{{Recipe summary
+| Category = Recipes for dessert
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+
+=== '''Filling''' ===
+* 2–4 [[Cookbook:Apple|apples]]
+* 2 [[Cookbook:Pear|pears]]
+* 1 [[Cookbook:Pinch|pinch]] of [[Cookbook:Sugar|sugar]] (optional)
+* 1 pinch of ground [[Cookbook:Cinnamon|cinnamon]] (optional)
+
+=== '''Topping''' ===
+* ¼ [[Cookbook:Cup|cup]] [[Cookbook:All-purpose flour|all-purpose flour]]
+* ¾ cup [[Cookbook:Brown Sugar|brown sugar]]
+* ¼ cup [[Cookbook:Margarine|margarine]] or [[Cookbook:Butter|butter]]
+* ½ cup rolled [[Cookbook:Oats|oats]]
+* Dash of [[Cookbook:Salt|salt]]
+
+== Procedure ==
+# Preheat [[Cookbook:Oven|oven]] to [[Cookbook:Oven Temperatures|375 °F]].
+# Grease bottom of large [[Cookbook:Baking Dish|casserole dish]] with some margarine.
+# Combine filling ingredients together and pour into casserole dish.
+# Combine topping ingredients together.
+# Layer topping on top of apple/pear mixture.
+# [[Cookbook:Baking|Bake]] uncovered in the middle of the preheated oven for 35–40 minutes, until bubbling and lightly brown on top.
+
+== Notes, tips, and variations ==
+* Topping amount may be doubled if desired.
+* You may substitute more apples for the pears if desired.
+
+[[Category:Recipes using apple]]
+[[Category:Recipes using pear]]
+[[Category:Recipes using oat]]
+[[Category:Recipes for dessert]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using brown sugar]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using margarine]]

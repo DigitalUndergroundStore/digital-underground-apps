@@ -1,0 +1,33 @@
+{{recipesummary|category=Meat recipes|servings=5–6|time=Prep: 15 minutes<br/>Baking: 45–55 minutes|difficulty=1
+}}
+{{recipe}} | [[Cookbook:Meat Recipes|Meat Recipes]] | [[Cookbook:Midwestern cuisine|Midwestern U.S cuisine]]
+
+==Ingredients==
+* 2 [[Cookbook:Egg|eggs]]
+* ½ [[Cookbook:Cup|cup]] (120 [[Cookbook:Milliliter|ml]]) [[Cookbook:Water|water]]
+* 2 [[Cookbook:Tablespoon|tablespoons]] [[Cookbook:Soy Sauce|soy sauce]]
+* 1 small [[Cookbook:Onion|onion]], [[Cookbook:Dice|diced]]
+* 2 [[Cookbook:Pound|lbs]] (900 [[Cookbook:Gram|g]]) ground [[Cookbook:Beef|beef]]
+* 8 [[Cookbook:Ounce|oz]] (220 g) package of pre-made [[Cookbook:Stuffing|stuffing]] (e.g. Stove Top or Paxo)
+* [[Cookbook:Salt|Salt]] to taste
+* [[Cookbook:Pepper|Pepper]] to taste
+
+==Special equipment==
+* Small bowl for mixing egg mixture
+* Very large bowl for mixing meat mixture
+
+==Procedure==
+#Preheat [[Cookbook:Oven|oven]] to [[Cookbook:Oven_temperatures|350°F]] (180°C).
+#Beat eggs, water, and approximately soy sauce together in a bowl and set aside.
+#Get a large bowl and mix the ground beef and stuffing together. Make sure to use your hands and combine the mixture well, as this is the most important step.
+#Slowly work the egg mixture into the meat and stuffing, once again making sure to combine all ingredients well.
+#Pick up the big ball of meat and pack in hands until you have formed a loaf. Place in ungreased loaf pan.
+#[[Cookbook:Baking|Bake]], uncovered, on the center rack of the oven for 45–55 minutes until center of meatloaf is browned. 
+#Drain excess grease off side of pan and let stand 5–10 minutes before cutting and serving.
+
+[[Category:Recipes using ground beef]]
+[[Category:Midwestern U.S. recipes|Meat loaf]]
+[[Category:Recipes_with_metric_units|{{PAGENAME}}]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using egg]]

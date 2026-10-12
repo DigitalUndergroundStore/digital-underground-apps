@@ -1,0 +1,13 @@
+{
+  "title": "Fixture Mela Bowl",
+  "servings": 3,
+  "totalTime": "20 min",
+  "ingredients": [
+    { "name": "brown rice", "amount": "1", "unit": "cup" },
+    { "name": "black beans", "amount": "1", "unit": "can" }
+  ],
+  "instructions": [
+    { "text": "Cook rice." },
+    { "text": "Warm beans and serve over rice." }
+  ]
+}

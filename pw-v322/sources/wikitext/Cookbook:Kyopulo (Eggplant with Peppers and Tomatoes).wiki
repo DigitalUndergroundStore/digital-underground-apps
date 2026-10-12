@@ -1,0 +1,29 @@
+{{Recipe summary
+| Category = Vegetable recipes
+| Difficulty = 2
+| Image = [[File:Kyopoolu bg.jpg|300px]]
+}}{{recipe}} | [[Cookbook:Cuisine of Bulgaria|Bulgarian cuisine]]
+
+'''Kyopulo''' or '''kyopolou''' is a type of Bulgarian relish or spread, made of eggplant, peppers, and tomatoes.
+
+== Ingredients ==
+* 2–3 [[Cookbook:Eggplant|aubergines]]
+* 4–5 [[Cookbook:Bell Pepper|bell peppers]]
+* 2–3 [[Cookbook:Tomato|tomatoes]], [[Cookbook:Dice|diced]] or grated
+* 3–4 cloves [[Cookbook:Garlic|garlic]], crushed
+* [[Cookbook:Sunflower Oil|Sunflower oil]]
+* [[Cookbook:Vinegar|Vinegar]]
+* [[Cookbook:Salt|Salt]]
+* [[Cookbook:Parsley|Parsley]], finely [[Cookbook:Chopping|chopped]]
+
+== Procedure ==
+# [[Cookbook:Roasting|Roast]] the aubergines and peppers on a hot plate. Remove the skins, and cut into small pieces.
+# Add the tomatoes, then the crushed garlic.
+# Mix with a wooden spoon, then add oil, vinegar, and salt to taste. Beat together well.
+# Pour into a plate and top with finely chopped parsley.
+
+[[Category:Recipes using eggplant]]
+[[Category:Bulgarian recipes]]
+[[Category:Vegan recipes]]
+[[Category:Recipes using bell pepper]]
+[[Category:Recipes using garlic]]

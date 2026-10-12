@@ -1,0 +1,37 @@
+{{Recipe summary
+| Category = Bread recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+A recipe from Nova Scotia that is called both '''Scottish bannock''' and '''Irish soda bread'''.
+
+==Ingredients==
+* 4 [[Cookbook:Cup|cups]] (950 [[Cookbook:Milliliter|ml]]) [[cookbook:Flour|whole wheat flour]]
+* ½ cup (120 ml) white granulated [[cookbook:sugar|sugar]]
+* 2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Baking Soda|baking soda]]
+* 1 tsp [[cookbook:salt|salt]]
+* 1½ cups (360 ml) [[cookbook:buttermilk|buttermilk]]
+* 4 [[Cookbook:Tablespoon|tbsp]] [[cookbook:butter|butter]], cut into [[Cookbook:Pea|pea]]-sized cubes
+
+==Procedure==
+# Preheat [[Cookbook:Oven|oven]] to 350°F (180°C)
+# Combine dry ingredients. Rub in butter until crumbly.
+# Mix in buttermilk to make a soft, workable [[Cookbook:Dough|dough]]. [[Cookbook:Kneading|Knead]] dough briefly.
+# Make dough into a disc about 3 inches thick. Cut an X shape in dough with a knife (1 cm or so deep). Transfer to an oiled or [[Cookbook:Parchment Paper|parchment]]-lined [[Cookbook:Baking Sheet|baking sheet]].
+# [[Cookbook:Baking|Bake]] at 350°F (180°C) for 50–70 minutes (depending on your oven) until a [[Cookbook:Skewer|skewer]] stuck in comes out with no "gooeyness" on it
+# Let cool 5–10 minutes after taking from the oven, then break apart with your hands into serving-sized chunks.
+
+== Notes, tips, and variations ==
+
+* Optionally mix in [[Cookbook:Blueberry|blueberries]], [[Cookbook:Raisin|raisins]], or [[Cookbook:Cinnamon|cinnamon]] to taste.
+
+[[Category:Recipes for bread]]
+[[Category:Recipes_with_metric_units|Metric Recipes]]
+[[Category:Baking recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using baking soda]]
+[[Category:Recipes using white sugar]]
+[[Category:Recipes using buttermilk]]
+[[Category:Recipes using whole-wheat flour]]

@@ -1,0 +1,26 @@
+{{Recipe summary
+| Category = Meat recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 1 pound [[Cookbook:Beef#Loin|filet mignon]], pounded flat
+* [[Cookbook:Olive Oil|Olive oil]]
+* [[Cookbook:Salt|Salt]]
+* Freshly ground [[Cookbook:Black Pepper|black pepper]]
+* 1 small [[Cookbook:Onion|onion]], [[Cookbook:Julienne|julienned]]
+* Hoagie rolls, almost halved
+* [[Cookbook:Processed Cheese|American cheese]] slices, torn
+
+== Procedure ==
+#Drizzle filet with olive oil and season with salt and black pepper. [[Cookbook:Searing|Sear]] in a [[Cookbook:Cast Iron|cast-iron]] [[Cookbook:Skillet|skillet]] over medium heat for 6 minutes per side. Remove and let rest 7 minutes before slicing into bite-size pieces. Keep warm. 
+#[[Cookbook:Mixing#Tossing|Toss]] onion with a little olive oil and [[Cookbook:Sautéing|sauté]] in same pan until lightly browned around edges.
+#To serve, place a big scoop of steak into a hoagie roll. Top with onion and torn cheese. Serve.
+
+[[Category:Recipes using beef loin]]
+[[Category:Recipes using processed cheese]]
+[[Category:Recipes for sandwiches]]
+[[Category:Pan fried recipes]]
+[[Category:United States recipes]]

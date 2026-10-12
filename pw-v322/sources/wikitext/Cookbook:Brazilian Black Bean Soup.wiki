@@ -1,0 +1,37 @@
+{{Recipe summary
+| Category = Soup recipes
+| Servings = 4–6
+}}
+
+{{recipe}} | [[Cookbook:Vegan cuisine|Vegan Cuisine]]
+
+==Ingredients==
+*2 [[Cookbook:Cup|cups]] dried [[cookbook:Black Bean|black beans]]
+*8 cups [[cookbook:water|water]]
+*4 cloves [[cookbook:garlic|garlic]], [[Cookbook:Mincing|minced]]
+*¼ cup [[Cookbook:Dice|diced]] [[cookbook:Onion|white onion]]
+*¼ cup [[Cookbook:Chopping|chopped]] [[cookbook:Green onion|green onion]]
+*2 whole [[cookbook:clove|cloves]]
+*½ [[Cookbook:Teaspoon|teaspoon]] ground [[cookbook:cumin|cumin]]
+*1 [[Cookbook:Tablespoon|tablespoon]] caribe or another ground [[cookbook:Chili Pepper|hot pepper]]
+*Juice of 1 [[cookbook:lime|lime]]
+*[[cookbook:salt|Salt]] to taste
+*[[cookbook:pepper|Pepper]] to taste
+
+==Procedure==
+# Place beans in a large pan and cover with water. Bring to a [[cookbook:boil|boil]] and remove from heat. Cover and let stand for 1 hour. [[cookbook:Simmer|Simmer]] for 2 hours and drain.
+# Place beans in a large pan and add 8 cups water, garlic, salt, white onions, cumin, ground chili and lime juice. Tie cloves in [[Cookbook:Cheesecloth|cheesecloth]] for easy removal if desired. Bring to a boil; reduce heat, cover and simmer for 2 hours or until beans are tender and soup is thick.
+# Mix in green onions and serve with lime wedge.
+
+[[Category:Vegan recipes|{{PAGENAME}}]]
+[[Category:Recipes for soup|{{PAGENAME}}]]
+[[Category:Recipes using black bean|{{PAGENAME}}]]
+[[Category:Brazilian recipes|{{PAGENAME}}]]
+[[Category:Boiled recipes]]
+[[Category:Recipes using lime juice]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using onion]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using ground cumin]]
+[[Category:Recipes using green onion]]

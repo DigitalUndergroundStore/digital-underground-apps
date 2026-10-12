@@ -1,0 +1,51 @@
+__NOTOC__{{recipesummary
+| Category = Chinese recipes
+| Servings = 2
+| Time = 30 minutes
+| Rating = 2
+| Image = [[Image:Mapo tofu.JPG|300px]]
+}}{{recipe}} | [[Cookbook:Cuisine of China|Cuisine of China]]
+
+'''Mápó dòufu''' (麻婆豆腐), also romanized as '''mapo tofu''', is a classic spicy tofu and meat dish from the Szechuan province of China. It is a very flavourful, easy-to-prepare, and spicy dish.
+
+==Ingredients==
+* 1 [[Cookbook:Onion|onion]], [[Cookbook:Slicing|sliced]]
+* 1 small piece of [[Cookbook:Ginger|ginger]], [[Cookbook:Mince|minced]] (about 2 [[Cookbook:Teaspoon|tsp]])
+* 1–2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Chile Flakes|crushed dried chile pepper]]
+* 200 [[Cookbook:Gram|g]] (7 [[Cookbook:Ounce|oz]]) [[Cookbook:Mincing|minced]] [[Cookbook:Beef|beef]], or  [[Cookbook:Pork|pork]]
+* 4 cloves of [[Cookbook:Garlic|garlic]], minced
+* 500 g (1 [[Cookbook:Pound|lb]]) [[Cookbook:Tofu|silken tofu]], [[Cookbook:Cube|cubed]]
+* 2 [[Cookbook:Tablespoon|tbsp]] chili bean paste (la doubanjiang)
+* 1 tbsp [[Cookbook:Szechuan Pepper|Szechuan pepper]], roasted and ground
+* 1 tbsp [[Cookbook:Soy Sauce|soy sauce]]
+* 1 tbsp rice [[Cookbook:Wine|wine]]
+* 3–4 [[Cookbook:Green onion|green onions]], cut into 2 cm (1 inch) pieces
+* 2–3 [[Cookbook:Mushroom|mushrooms]] (tree ears preferred; optional)
+
+==Procedure==
+
+# If using dried mushrooms, soak them in hot water for 10 minutes while preparing the rest of the ingredients, then slice before adding later.
+# [[Cookbook:Sautéing|Sauté]] onion with ginger and crushed chili.
+# Add minced meat and garlic, and fry until brown.
+# Mix in other ingredients (including sliced mushrooms), lower heat, and [[Cookbook:Simmering|simmer]] for 5–10 minutes.
+# Serve over steamed [[Cookbook:Rice|jasmine rice]].
+
+==Notes, tips and variations==
+* Some extra chili pepper can be substituted for Szechuan pepper, but the taste and feeling will be different. Szechuan pepper has a numbing sensation, not heat.
+* A little ground [[Cookbook:Coriander|coriander]] and [[Cookbook:Cumin|cumin]] is very nice in this dish, especially if you cannot find Szechuan pepper easily.
+* A [[Cookbook:Bell Pepper|red bell pepper]], a tomato, and fresh [[Cookbook:Cilantro|coriander leaves]] are all welcome additions, though not traditional.
+* The meal is just as good with whole [[Cookbook:Legume|beans]] instead of tofu.
+* A vegan/vegetarian version of this meal can be made by substituting the meat with [[Cookbook:Textured_Vegetable_Protein|textured vegetable protein (TVP)]] or [[Cookbook:Ground_Tofu|ground tofu]] (e.g. Shiok Food's Vegetarian Ma Po Tofu<ref>[https://madmancooks.com/2004/09/14/recipe-ma-po-tofu/ Shiok Food's Vegetarian Ma Po Tofu], [http://shiokfood.com/notes/archives/000016.html original URL], [https://web.archive.org/web/20110925063054/http://shiokfood.com/notes/archives/000016.html archived original URL]</ref>)
+
+== External links ==
+[[Category:Chinese recipes]]
+[[Category:Recipes using tofu]]
+[[Category:Recipes using chile flake]]
+[[Category:Recipes using ground pork]]
+[[Category:Recipes using ground beef]]
+[[Category:Gluten-free recipes]]
+[[Category:Recipes_with_metric_units|{{PAGENAME}}]]
+
+[[Category:Recipes using garlic]]
+[[Category:Recipes using fresh ginger]]
+[[Category:Recipes using mushroom]]

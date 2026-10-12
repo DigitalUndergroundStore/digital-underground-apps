@@ -1,0 +1,25 @@
+{{Recipe summary
+| Category = Pork recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+== Ingredients ==
+
+* 4 thick-cut bone-in [[Cookbook:Pork|pork]] rib chops
+* [[Cookbook:Grill Seasoning|Grill Seasoning for Chops]], as needed
+* ½ [[Cookbook:Cup|cup]] [[Cookbook:Apple Cider|apple cider]]
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Cider Vinegar|cider vinegar]]
+* 1 tbsp [[Cookbook:Worcestershire Sauce|Worcestershire sauce]]
+
+== Procedure ==
+#Rub seasoning on pork chops. Refrigerate for 30 minutes.
+#Meanwhile, combine remaining ingredients in a large [[Cookbook:Saucepan|saucepan]]. Bring to a [[Cookbook:Boiling|boil]] over medium heat, and cook until reduced by ⅓. Remove from heat and set aside.
+#[[Cookbook:Grilling|Grill]] pork chops over high heat for 2 minutes, covered. Brush with cider mixture, rotate 90°, and cook for 2 minutes. Flip and repeat 1 more time.
+#Remove and let rest for 7 minutes. Serve with remaining cider mixture.
+
+[[Category:Recipes using pork chop|{{PAGENAME}}]]
+[[Category:Grilled recipes|{{PAGENAME}}]]
+[[Category:Recipes using apple]]
+[[Category:Recipes using apple cider]]

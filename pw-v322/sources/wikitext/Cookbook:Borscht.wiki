@@ -1,0 +1,59 @@
+__NOTOC__
+{{recipesummary
+| Category = Soup recipes
+| Servings = about 6
+| Time = 75 minutes
+| Rating = 2
+<!--| Energy      = -->| Image = [[Image:Borscht.jpg|300px]]
+}}{{recipe}} | [[Cookbook:Cuisine of Ukraine|Ukrainian Cuisine]] | [[Cookbook:Soups|Soups]]
+
+'''Borscht or borshch''' is a hearty beetroot [[Cookbook:Vegetables|vegetable]] [[Cookbook:Soup|soup]] that originates from Ukraine. The soup is part of the local culinary heritage of many Eastern and Central European nations. It is also a staple dish in Eastern Europe, and made its way into United States cuisine by way of Jewish immigrants (as well as other Eastern Europeans).
+
+Recipes of borscht vary, but beetroot is an essential ingredient.
+
+==Ingredients==
+===Soup===
+*1½ [[Cookbook:Cup|cups]] thinly-[[Cookbook:Slicing|sliced]] [[Cookbook:Potato|potato]]es (about 3 small potatoes)
+*1 cup thinly-sliced [[Cookbook:Beet|beet]]s.
+*4 cups water
+*1–2 [[Cookbook:Tablespoon|tablespoons]] [[Cookbook:Butter|butter]]
+*1½ cups [[Cookbook:Chopping|chopped]] [[Cookbook:Onion|onion]] (about ⅓ of a large onion)
+*1½ [[Cookbook:Teaspoon|teaspoons]] [[Cookbook:Salt|salt]]
+*1 stalk [[Cookbook:Celery|celery]], chopped
+*1 medium [[Cookbook:Carrot|carrot]], chopped
+*3–4 cups shredded [[Cookbook:Cabbage|cabbage]] (about ⅓ of a large cabbage)
+*a little fresh-ground [[Cookbook:Pepper|black pepper]]
+*1 teaspoon [[Cookbook:Dill|dill]] weed
+*1–2 tablespoons [[Cookbook:Cider vinegar|cider vinegar]]
+*1–2 tablespoons [[Cookbook:Brown Sugar|brown sugar]] or [[Cookbook:Honey|honey]]
+*1 cup [[Cookbook:Tomato|tomato]] purée or ¼ to ½ cup [[Cookbook:Tomato Paste|tomato paste]]
+
+===Garnish===
+*[[Cookbook:Sour cream|Sour cream]] or [[Cookbook:Yogurt|yogurt]]
+*Dill weed
+
+==Procedure==
+#Place the potatoes, beets, and water in a medium-sized [[Cookbook:Saucepan|saucepan]]. Cover and cook over medium heat until tender (20–30 minutes). While that is cooking, proceed with the recipe.
+#Melt the butter in a [[Cookbook:Dutch oven|Dutch oven]]/[[Cookbook:Stock pot|soup pot]]. Add the onion and salt. Cook over medium heat, stirring occasionally, until the onions are translucent (8–10 minutes).
+#Add the celery, carrots, cabbage, and 2 cups of the water in which the potatoes and beets are cooking. Cover and cook over medium heat until the vegetables are tender (8–10 minutes).
+#Add the remaining soup ingredients (including the potatoes, beets, and the rest of the water in which they are cooking). Cover and [[Cookbook:Simmering|simmer]] for at least 15 more minutes. Correct the seasonings. If it is too thin, let it simmer uncovered, and maybe add a little more tomato paste. 
+#Serve hot, topped with sour cream or yoghurt and sprinkled with dill. If desired the sour cream or yoghurt can be served with the soup and used as a condiment to taste.
+
+==Notes, tips, and variations==
+*A sour environment is essential for the authentic taste and preservation of the red color, but excessive amount of [[Wikipedia:acetic acid|acetic acid]] from the vinegar (esp. distilled) causes a sharp restaurant smell and taste. The cider vinegar can be replaced with sauerkraut or extra tomatoes.
+*[[Cookbook:Ukrainian Cabbage Soup (Kapusniak)|Ukrainian Cabbage Soup (Kapusniak)]]
+*[[Cookbook:Montreal Russian Borscht|Montreal Russian Borscht]]
+
+[[Category:Recipes for soup|Borscht]]
+[[Category:Vegetarian recipes|Borscht]]
+[[Category:Russian recipes|Borscht]]
+[[Category:Recipes for borscht|Borscht]]
+[[Category:Recipes using beet|{{PAGENAME}}]]
+[[Category:Recipes using cabbage|{{PAGENAME}}]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using dill]]
+[[Category:Recipes using honey]]
+[[Category:Recipes using brown sugar]]
+[[Category:Kosher for Passover recipes]]

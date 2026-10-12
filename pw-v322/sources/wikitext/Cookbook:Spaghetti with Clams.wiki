@@ -1,0 +1,59 @@
+__NOTOC__
+{{recipesummary
+| category = Italian recipes
+| servings = 6
+| time = 30 minutes
+| difficulty = 1
+| Image = [[Image:Spaghetti vongole 2.jpg|300px]]<br>Above: with tomatoes; Below: without<br>[[Image:Spaghetti alle vongole.jpg|300px]]
+}}
+{{recipe}} | [[Cookbook:Cuisine of Italy|Cuisine of Italy]] | [[Cookbook:Pasta Recipes|Pasta Recipes]] | [[cookbook:Clam|Clam recipes]]
+
+'''''Spaghetti alle vongole''''' (spaghetti with clams) originated in Naples and is very popular throughout the surrounding Campania region in addition to [[wikipedia:Rome|Rome]]. Italians prepare this dish two ways: with tomatoes (''in rosso'') and without (''in bianco'').<ref>[http://www.italiantourism.com/vongole.html Info on ''Spaghetti alle vongole'' on Italiantourism.com]</ref>
+
+The below recipe is based on the one found in the recipe book published by ''La Accademia Italiana della Cucina'' (The Academy of Italian Cuisine).<ref>[http://www.accademiaitalianacucina.it/inglese/indricette.html ''La Accademia Italiana della Cucina'']</ref> It differs from the Academy's recipe only in that it includes clam broth and canned clams in addition to the traditional ingredients. For an Americanized version that includes white wine, see the recipe for [[cookbook:Spaghetti with clams in white wine sauce|spaghetti with clams in white wine sauce]].
+
+==Ingredients==
+* 4 [[Cookbook:Liter|liters]] (1 [[Cookbook:Gallon|gallon]]) water
+* [[Cookbook:Salt|Salt]], to taste
+* 450 [[Cookbook:Gram|g]] (1 [[Cookbook:Pound|lb]]) dry [[Cookbook:Spaghetti|spaghetti]]
+* [[cookbook:Olive Oil|Olive oil]]
+* 20 g (¾ [[Cookbook:Ounce|oz]]) [[cookbook:garlic|garlic]], [[Cookbook:Mince|minced]]
+* 1 [[Cookbook:Kilogram|kg]] (2 lb) live [[Cookbook:Clam|clams]]
+* 225 g (8 oz) [[Cookbook:Dice|diced]] plum [[Cookbook:tomato|tomatoes]] (see notes)
+* 225 g (8 oz) canned, shelled clams, thoroughly rinsed (optional)
+* 120 [[Cookbook:Milliliter|ml]] (4 oz) bottled clam [[cookbook:broth|broth]] (optional)
+* 1 handful of [[Cookbook:parsley|parsley]], [[Cookbook:Mince|minced]]
+* [[Cookbook:Pepperoncini|Peperoncino]] or, less commonly, [[cookbook:Pepper|black pepper]] to taste
+
+==Procedure==
+#[[Cookbook:Boiling|Boil]] the water in a large pot with a tablespoon of salt.
+#Add the spaghetti once the water starts boiling. Cook until the pasta is ''[[Cookbook:al dente|al dente]]''. This should take 7–8 minutes.
+#Pour olive oil into a large, wide pan so that it barely covers the bottom and heat the oil.
+#Add the garlic, along with the peperoncino, and sauté until golden brown. This should take about a minute. Be careful not to burn the garlic. 
+#Add the live clams and diced tomatoes.
+#Put the lid on the pan and cook for about eight minutes. Shake the pan every minute or so to help the clams open. Throw out those that don't.
+#Drain the spaghetti and put it in the pan with the live clams and tomatoes. Reduce the heat to low.
+#Add the canned clams and clam broth to the pan.
+#Season with salt (and pepper, if the peperoncino is not used) to taste and [[Cookbook:Mixing#Tossing|toss]] until the pasta is well coated with tomatoes and oil. Add another tablespoon of olive oil if you like.
+#Sprinkle with chopped parsley.
+#Serve hot.
+
+==Notes, tips, and variations==
+
+* See more information on cooking with live clams on [[Cookbook:Clam|their ingredient page]].
+* Resist the urge to add cheese. This recipe is intended as a light summer dish.
+* Omit the tomatoes to make ''spaghetti alle vongole'' ''in bianco''.
+
+==References==
+{{reflist}}
+
+[[Category:Italian recipes]]
+[[Category:Recipes using clam]]
+[[Category:Recipes using pasta and noodles]]
+[[Category:Featured recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes using garlic]]
+
+[[it:Libro di cucina/Ricette/Spaghetti alle vongole]]
+[[Category:Pescatarian recipes]]
+[[Category:Halal recipes]]

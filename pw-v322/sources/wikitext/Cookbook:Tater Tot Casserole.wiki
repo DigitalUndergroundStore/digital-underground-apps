@@ -1,0 +1,29 @@
+{{recipesummary|category=Meat recipes|servings=6|time=1 hour 10 minutes|difficulty=2}}
+
+{{recipe}} | [[Cookbook:Meat Recipes|Meat Recipes]] | [[Cookbook:Midwestern cuisine|Midwestern U.S. cuisine]]
+
+'''Tater tot casserole''' is another easy and tasty casserole.
+
+==Ingredients==
+*1–2 [[Cookbook:Pound|pounds]] (0.45–0.91 [[Cookbook:Kilogram|kg]]) [[Cookbook:Beef|ground beef]]
+*1 can [[Cookbook:Cream of Mushroom Soup|cream of mushroom soup]] or cream of chicken soup
+*½ bag of [[Cookbook:Tater Tots|tater tots]] (approximately)
+
+==Procedure==
+#Brown hamburger and drain.
+#Mix in cream of mushroom or cream of chicken soup.
+#Put mixture in [[Cookbook:Baking Dish|casserole dish]] and cover the top with one layer of tater tots.
+#[[Cookbook:Baking|Bake]] at {{convert|350|F}} for 1 hour or until done.
+
+==Notes, tips, and variations==
+
+* Try adding peas or other vegetables.
+* A can of cheddar cheese soup is also a great way to make a meaty, cheesy casserole!
+* Shortly before the dish is ready, sprinkle the top with some grated cheddar cheese also.
+
+[[Category:Recipes for casserole]]
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using potato]]
+[[Category:Main course recipes]]
+[[Category:Midwestern U.S. recipes]]
+[[Category:Kid-friendly recipes]]

@@ -458,7 +458,7 @@
     "ingredients": [
       {
         "qty": 4,
-        "unit": "breast",
+        "unit": "piece",
         "item": "chicken breast"
       },
       {
@@ -2620,7 +2620,7 @@
     "ingredients": [
       {
         "qty": 4,
-        "unit": "breast",
+        "unit": "piece",
         "item": "chicken breast"
       },
       {
@@ -3107,7 +3107,7 @@
       "Brush both faces with 3 tbsp olive oil and season with 1 tsp smoked paprika, 1/2 tsp cumin, and 1/2 tsp salt.",
       "Grill 5 minutes per side until the faces are charred and a knife meets slight resistance in the stem.",
       "Brush 1/2 cup barbecue sauce over the steaks and grill 2 minutes more until the sauce turns sticky and dark at the edges.",
-      "Chop 2 tbsp parsley.",
+      "Chop the parsley so the leaves are small enough to scatter.",
       "Scatter the parsley over the cauliflower steaks and serve while they are still hot from the grill."
     ],
     "libraryRev": 2,
@@ -3194,7 +3194,7 @@
   },
   {
     "id": "r220",
-    "name": "Chicken Soup I",
+    "name": "Chicken Soup",
     "minutes": 50,
     "servings": 6,
     "tags": [
@@ -3259,7 +3259,7 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "adapted": true,
       "original": false,
-      "note": "Renamed because the page has no noodles. Amounts were unmeasured and set for 6 servings. Salt was unmeasured and set to 1 tsp. Chicken is simmered to 165°F (74°C).",
+      "note": "Named Chicken Soup because the page has no noodles. The Wikibooks title is Chicken Soup I. Amounts were unmeasured and set for 6 servings. Salt was unmeasured and set to 1 tsp. Chicken is simmered to 165°F (74°C).",
       "sources": [
         {
           "title": "Cookbook:Chicken Soup I",
@@ -5645,7 +5645,7 @@
   },
   {
     "id": "r246",
-    "name": "Tuna Salad (1940)",
+    "name": "Tuna Salad with Apple and Egg",
     "minutes": 75,
     "servings": 4,
     "tags": [
@@ -5723,7 +5723,7 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "adapted": true,
       "original": false,
-      "note": "Renamed because the page does not list pitas, so the salad is not stuffed into bread. Doubled from one can toward 4 servings. Black pepper was unmeasured and set to 1/2 tsp. The 1-hour chill is included in the time.",
+      "note": "The Wikibooks page is Tuna Salad (1940). Renamed because the page does not list pitas, so the salad is not stuffed into bread. Doubled from one can toward 4 servings. Black pepper was unmeasured and set to 1/2 tsp. The 1-hour chill is included in the time.",
       "sources": [
         {
           "title": "Cookbook:Tuna Salad (1940)",

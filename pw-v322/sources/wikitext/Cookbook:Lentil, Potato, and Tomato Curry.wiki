@@ -1,0 +1,41 @@
+{{Recipe summary
+| Category = Stew recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+This creates a healthy, inexpensive and easy stew with depths of flavor. This recipe is fairly low on the heat scale, but feel free to add more cayenne pepper to up its spiciness. It is excellent served with chapatis or rice.
+
+==Ingredients==
+* 1 [[Cookbook:Cup|cup]] [[Cookbook:Lentil|red split lentils]]
+* 4 cups water
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Salt|salt]]
+* 1 [[Cookbook:Bay Leaf|bay leaf]]
+* 1 [[Cookbook:Tablespoon|tablespoon]] [[Cookbook:Margarine|margarine]] or [[Cookbook:Butter|butter]]
+* 1 tablespoon [[Cookbook:Olive Oil|olive oil]]
+* 2 large [[Cookbook:Potato|potatoes]], cut into ½ inch [[Cookbook:Cube|cubes]]
+* 1 teaspoon [[Cookbook:turmeric|turmeric]]
+* ½ teaspoon [[Cookbook:Cayenne Pepper|cayenne pepper]]
+* 28 [[Cookbook:Ounce|ounces]] canned diced [[Cookbook:Tomato|tomatoes]]
+* 2 teaspoons [[Cookbook:garam masala|garam masala]]
+* 1 teaspoon [[Cookbook:Honey|honey]] or [[Cookbook:Sugar|sugar]]
+==Procedure==
+# In a large pot, combine and cook water, lentils, salt and bay leaf. 
+# In a large [[Cookbook:Frying Pan|frying pan]], combine potatoes, turmeric, cayenne pepper, olive oil and margarine. [[Cookbook:Frying|Fry]] for 5–10 minutes. 
+# Add potato mixture to the pot with the lentils along with all remaining ingredients. Cook until the potatoes are soft and tender.
+# Remove bay leaf before serving.
+[[Category:Recipes using potato]]
+[[Category:Recipes using red lentil]]
+[[Category:Recipes using tomato]]
+[[Category:Recipes for curry]]
+[[Category:Recipes for stew]]
+[[Category:Indian recipes]]
+[[Category:Boiled recipes]]
+[[Category:Recipes using bay leaf]]
+[[Category:Recipes using sugar]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using garam masala]]
+[[Category:Recipes using honey]]
+[[Category:Vegetarian recipes]]
+[[Category:Recipes using margarine]]

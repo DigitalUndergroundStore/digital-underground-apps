@@ -1,0 +1,42 @@
+__NOTOC__{{Recipesummary
+| Category = Beef recipes
+| Servings = 
+| Time = 45 minutes
+| Rating = 2
+| Difficulty = 2
+| Image = [[Image:chinese_pie.jpg|300px]]
+}}{{recipe|Pate chinois}} | [[Cookbook:Meat Recipes|Meat Recipes]]
+
+'''Pâté chinois (Chinese pie)''' is a traditional French Canadian main course, and is often served during the cold months of the year. It is typically served with pickled [[Cookbook:Beet|beets]].
+
+==Ingredients==
+*8 medium fresh whole white [[Cookbook:Potato|potatoes]]
+*2 [[Cookbook:Pound|lbs]] ground [[Cookbook:Beef|beef]]
+*1 small yellow or Spanish [[Cookbook:Onion|onion]], [[Cookbook:Chopping|chopped]]
+*1 small green [[Cookbook:Bell Pepper|bell pepper]] (optional), chopped
+*1 can (15 [[Cookbook:Ounce|oz]]) whole kernel [[Cookbook:Corn|corn]], drained, or [[Cookbook:Creamed Corn|creamed sweet corn]] with sauce  
+*2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Butter|butter]]
+*½ [[Cookbook:Cup|cup]] [[Cookbook:Milk|milk]]
+*[[Cookbook:Salt|Salt]]
+*[[Cookbook:Pepper|Pepper]]
+
+==Procedure==  
+#[[Cookbook:Boiling|Boil]] potatoes in lightly salted water until soft, drain. Mash potatoes, adding 2 tbsp butter and just enough milk to achieve a spreadable consistency. Set aside.
+#Brown ground beef with onions and peppers. Drain fat and put ground beef mixture in bottom of [[Cookbook:Baking Dish|casserole dish]]. 
+#Mix creamed corn and whole kernel corn, then spread over beef.
+#Spread the mashed potatoes across the top to form a 'crust'.  Lightly sprinkle with paprika, and salt/pepper to taste, and make tracks with a fork, if desired. 
+#[[Cookbook:Baking|Bake]] uncovered at 400°F until the potatoes are golden brown (approximately 30 minutes).
+#Serve hot with a generous portion of sliced chilled pickled beets.
+
+== Notes, tips, and variations ==
+
+* Mix ½ cup grated [[Cookbook:Parmesan Cheese|Parmesan cheese]] with potatoes, or place shredded sharp [[Cookbook:Cheddar Cheese|cheddar cheese]] on top of potatoes before cooking.
+* See also [[Cookbook:Shepherd's Pie|Shepherd's Pie]].
+
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using potato|Pate chinois]]
+[[Category:Canadian recipes|Pate chinois]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using corn]]
+[[Category:Recipes using milk]]

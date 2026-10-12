@@ -1,0 +1,38 @@
+{{recipesummary
+| Category = Italian recipes
+| Servings = 6
+| Time = 40 minutes
+| Difficulty = 2
+| Rating = 2
+}}
+{{recipe}} | [[Cookbook:Cuisine of Italy|Cuisine of Italy]]
+
+== Ingredients ==
+* 500 [[Cookbook:Gram|g]] (18 [[Cookbook:Ounce|oz]]/1½ [[Cookbook:Pound|lb]]) minced [[Cookbook:Veal|veal]] meat
+* ¼ [[Cookbook:Teaspoon|tsp]] [[Cookbook:Oregano|oregano]]
+* ¼ tsp [[Cookbook:Parsley|parsley]]
+* 1 clove of [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+* 1 large [[Cookbook:Egg|egg]]
+* 125 g (4 oz/¼ [[Cookbook:Cup|cup]]) [[Cookbook:Bread Crumb|breadcrumbs]]
+* 30 g (1 oz/1 [[Cookbook:Tablespoon|Tbsp]]) grated [[Cookbook:Parmesan Cheese|Parmesan cheese]]
+* [[Cookbook:Salt|Salt]] to taste
+* [[Cookbook:Pepper|Pepper]] to taste
+* [[Cookbook:Olive Oil|Olive oil]] for frying
+
+== Procedure ==
+# Mix all ingredients together in a large bowl. Using your hands, squeeze all ingredients.
+# Heat a large [[Cookbook:Frying Pan|skillet]] over medium heat and drizzle on a little olive oil. Preheat [[Cookbook:Oven|oven]] to 175°C (350°F) in the meantime.
+# Use your hands to roll meat into bite sized balls.
+# Place the meatballs in the skillet and cook uncovered for 3 minutes, then roll them over and cook another 3 minutes.
+# Transfer the meatballs onto a [[Cookbook:Baking Sheet|baking sheet]] and [[Cookbook:Baking|bake]] in the oven for 20–25 minutes.
+
+[[Category:Italian recipes]]
+[[Category:Recipes using veal]]
+[[Category:Recipes using bread crumb]]
+[[Category:Recipes using parmesan]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using parsley]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using oregano]]

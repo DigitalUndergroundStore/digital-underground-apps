@@ -1,0 +1,4698 @@
+{
+  "r1": {
+    "id": "r1",
+    "name": "Lemon Herb Chicken",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Garlic Lemon Chicken"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Sheet-pan green beans and a 165°F/74°C cue added.",
+    "sources": [
+      {
+        "title": "Cookbook:Garlic Lemon Chicken",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGarlic_Lemon_Chicken",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r2": {
+    "id": "r2",
+    "name": "Veggie Scramble Toast",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Scrambled Eggs with Vegetables"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Served on toast; toast is called out as the base.",
+    "sources": [
+      {
+        "title": "Cookbook:Scrambled Eggs with Vegetables",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AScrambled_Eggs_with_Vegetables",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r3": {
+    "id": "r3",
+    "name": "Classic Cheeseburgers",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Cheeseburgers"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Doneness temperature and rest added.",
+    "sources": [
+      {
+        "title": "Cookbook:Cheeseburgers",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACheeseburgers",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r4": {
+    "id": "r4",
+    "name": "Tomato Basil Pasta",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Fresh Pasta with Mozzarella, Tomato and Basil"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded and scaled for four.",
+    "sources": [
+      {
+        "title": "Cookbook:Fresh Pasta with Mozzarella, Tomato and Basil",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFresh_Pasta_with_Mozzarella%2C_Tomato_and_Basil",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r5": {
+    "id": "r5",
+    "name": "Salmon & Broccoli Sheet Pan",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Honey Mustard Salmon"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Broccoli kept only if the source includes it; otherwise the name follows the source.",
+    "sources": [
+      {
+        "title": "Cookbook:Honey Mustard Salmon",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AHoney_Mustard_Salmon",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r6": {
+    "id": "r6",
+    "name": "Overnight Oats Jars",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No Wikibooks page for overnight oats. Baked Oatmeal is a different dish and was not cited."
+  },
+  "r7": {
+    "id": "r7",
+    "name": "Turkey Taco Skillet",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Taco Meat"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Ground turkey used in place of the source meat. Skillet service disclosed.",
+    "sources": [
+      {
+        "title": "Cookbook:Taco Meat",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATaco_Meat",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r8": {
+    "id": "r8",
+    "name": "Caprese Chicken Salad",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Caprese Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Cooked chicken added and the salad method kept.",
+    "sources": [
+      {
+        "title": "Cookbook:Caprese Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACaprese_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r9": {
+    "id": "r9",
+    "name": "Black Bean Quesadillas",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Quesadilla"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Black beans included only when the source does; otherwise the filling follows the source.",
+    "sources": [
+      {
+        "title": "Cookbook:Quesadilla",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AQuesadilla",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r10": {
+    "id": "r10",
+    "name": "Sausage & Pepper Pasta",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Simple Italian Sausage Spaghetti Dinner"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded from the sausage spaghetti method.",
+    "sources": [
+      {
+        "title": "Cookbook:Simple Italian Sausage Spaghetti Dinner",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASimple_Italian_Sausage_Spaghetti_Dinner",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r11": {
+    "id": "r11",
+    "name": "Greek Yogurt Parfaits",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No Wikibooks page for a yogurt parfait. Greek Yogurt Sauce is a sauce, not a parfait."
+  },
+  "r12": {
+    "id": "r12",
+    "name": "Miso Ginger Soup + Tofu",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Miso Soup (Traditional)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Tofu and ginger kept when the source includes them.",
+    "sources": [
+      {
+        "title": "Cookbook:Miso Soup (Traditional)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMiso_Soup_(Traditional)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r13": {
+    "id": "r13",
+    "name": "BLT Egg Sandwiches",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:BLT Sandwich"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Fried egg added on the BLT.",
+    "sources": [
+      {
+        "title": "Cookbook:BLT Sandwich",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABLT_Sandwich",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r14": {
+    "id": "r14",
+    "name": "Sheet Pan Fajitas",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Fajitas"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Cooked on a sheet pan instead of a skillet.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Fajitas",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Fajitas",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r15": {
+    "id": "r15",
+    "name": "Tuna White Bean Salad",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Tuna Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "White beans included only when the source lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:Tuna Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r16": {
+    "id": "r16",
+    "name": "Baked Potato Bar",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Baked Potatoes"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Toppings limited to ingredients in the source.",
+    "sources": [
+      {
+        "title": "Cookbook:Baked Potatoes",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Potatoes",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r17": {
+    "id": "r17",
+    "name": "Spaghetti and Meat Sauce",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Spaghetti with Bolognese Meat Sauce"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded. Beef cooked to 160°F/71°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Spaghetti with Bolognese Meat Sauce",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASpaghetti_with_Bolognese_Meat_Sauce",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r18": {
+    "id": "r18",
+    "name": "Shakshuka",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Shakshuka I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Eggs cooked until the whites set.",
+    "sources": [
+      {
+        "title": "Cookbook:Shakshuka I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AShakshuka_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r19": {
+    "id": "r19",
+    "name": "Pesto Gnocchi Skillet",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pesto I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pesto tossed with gnocchi; potato gnocchi stands in for the pasta the sauce dresses.",
+    "sources": [
+      {
+        "title": "Cookbook:Pesto I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APesto_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r20": {
+    "id": "r20",
+    "name": "Turkey Chili",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chili with Meat"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Ground turkey used in place of the source meat.",
+    "sources": [
+      {
+        "title": "Cookbook:Chili with Meat",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChili_with_Meat",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r21": {
+    "id": "r21",
+    "name": "Garlic Shrimp Skillet",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Gambas al Ajillo (Garlic Shrimp)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Shrimp cooked until opaque.",
+    "sources": [
+      {
+        "title": "Cookbook:Gambas al Ajillo (Garlic Shrimp)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGambas_al_Ajillo_(Garlic_Shrimp)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r22": {
+    "id": "r22",
+    "name": "Veggie Fried Rice",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Fried Rice (Vegetarian)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded from the vegetarian fried rice.",
+    "sources": [
+      {
+        "title": "Cookbook:Fried Rice (Vegetarian)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Rice_(Vegetarian)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r23": {
+    "id": "r23",
+    "name": "Hummus Crunch Wraps",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Hummus I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Wrapped in flatbread using the hummus from the source.",
+    "sources": [
+      {
+        "title": "Cookbook:Hummus I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AHummus_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r24": {
+    "id": "r24",
+    "name": "Banana Oat Pancakes",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Banana Pancakes"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Oats included only when the source lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:Banana Pancakes",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Pancakes",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r25": {
+    "id": "r25",
+    "name": "Lemon Garlic Cod",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No lemon-garlic cod page. Baked Lemon Thyme Halibut and Coconut Crusted Baked Cod are different dishes."
+  },
+  "r26": {
+    "id": "r26",
+    "name": "Black Bean Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Black Bean Soup"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded and scaled.",
+    "sources": [
+      {
+        "title": "Cookbook:Black Bean Soup",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABlack_Bean_Soup",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r27": {
+    "id": "r27",
+    "name": "Caprese Toast",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Caprese Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Assembled on toast.",
+    "sources": [
+      {
+        "title": "Cookbook:Caprese Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACaprese_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r28": {
+    "id": "r28",
+    "name": "Homestyle Lasagna",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Traditional Lasagne"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded. Pasta baked until bubbling.",
+    "sources": [
+      {
+        "title": "Cookbook:Traditional Lasagne",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATraditional_Lasagne",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r29": {
+    "id": "r29",
+    "name": "Blended Tomato Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Herbed Tomato Soup"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Blended as the source directs.",
+    "sources": [
+      {
+        "title": "Cookbook:Herbed Tomato Soup",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AHerbed_Tomato_Soup",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r30": {
+    "id": "r30",
+    "name": "Chicken Pita Pockets",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Greek Chicken Wrap"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Greek Chicken Wrap",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGreek_Chicken_Wrap",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r31": {
+    "id": "r31",
+    "name": "Sweet Potato Hash",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No sweet-potato hash page. Hash Browns and Baked Sweet Potatoes are different dishes."
+  },
+  "r32": {
+    "id": "r32",
+    "name": "Lentil Tacos",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Vegetarian Soft Tacos"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Vegetarian Soft Tacos",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AVegetarian_Soft_Tacos",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r33": {
+    "id": "r33",
+    "name": "Cucumber Chicken Salad",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Simple Chicken Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Cucumber included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Simple Chicken Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASimple_Chicken_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r34": {
+    "id": "r34",
+    "name": "Mushroom Omelette",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Basic Omelet"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Mushrooms included only when the source lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:Basic Omelet",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABasic_Omelet",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r35": {
+    "id": "r35",
+    "name": "Sesame Ginger Noodles",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Sesame Noodle Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Sesame Noodle Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASesame_Noodle_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r36": {
+    "id": "r36",
+    "name": "White Bean Skillet",
+    "newName": "Italian White Bean Soup",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Italian White Bean Soup"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Cooked as a skillet only if the source is a skillet; otherwise the name follows the soup.",
+    "sources": [
+      {
+        "title": "Cookbook:Italian White Bean Soup",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AItalian_White_Bean_Soup",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r37": {
+    "id": "r37",
+    "name": "Beef and Broccoli Stir-Fry",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Beef Stir-Fry"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Broccoli included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Beef Stir-Fry",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABeef_Stir-Fry",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r38": {
+    "id": "r38",
+    "name": "Shakshuka for Two",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Shakshuka II"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Scaled for two.",
+    "sources": [
+      {
+        "title": "Cookbook:Shakshuka II",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AShakshuka_II",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r39": {
+    "id": "r39",
+    "name": "Peruvian Lime Chicken",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No pollo a la brasa or Peruvian lime-chicken page. Ají de Gallina is a different dish."
+  },
+  "r40": {
+    "id": "r40",
+    "name": "Coconut Curry Lentils",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Tadka Dhal (Spiced Lentil Curry) I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Coconut milk included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Tadka Dhal (Spiced Lentil Curry) I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATadka_Dhal_(Spiced_Lentil_Curry)_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r41": {
+    "id": "r41",
+    "name": "Korean Beef Lettuce Cups",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Bulgogi"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Served in lettuce cups.",
+    "sources": [
+      {
+        "title": "Cookbook:Bulgogi",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABulgogi",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r42": {
+    "id": "r42",
+    "name": "Moroccan Chickpea Stew",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chickpea Stew"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Chickpea Stew",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChickpea_Stew",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r43": {
+    "id": "r43",
+    "name": "Caprese Panini",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Caprese Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pressed as a sandwich.",
+    "sources": [
+      {
+        "title": "Cookbook:Caprese Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACaprese_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r44": {
+    "id": "r44",
+    "name": "Thai Basil Pork",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pad Kra Pao Gai (Thai Basil Chicken Stir Fry)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pork used in place of chicken and cooked to 145°F/63°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Pad Kra Pao Gai (Thai Basil Chicken Stir Fry)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APad_Kra_Pao_Gai_(Thai_Basil_Chicken_Stir_Fry)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r45": {
+    "id": "r45",
+    "name": "Greek Lemon Orzo",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Orzo Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Orzo Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AOrzo_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r46": {
+    "id": "r46",
+    "name": "Breakfast Burritos",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Breakfast Burrito"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Breakfast Burrito",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABreakfast_Burrito",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r47": {
+    "id": "r47",
+    "name": "Classic Beef Chili",
+    "newName": "Cincinnati-Style Chili",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Cincinnati-Style Chili"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Name follows the Cincinnati chili the source describes.",
+    "sources": [
+      {
+        "title": "Cookbook:Cincinnati-Style Chili",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACincinnati-Style_Chili",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r48": {
+    "id": "r48",
+    "name": "Miso Butter Cod",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No miso-butter cod page."
+  },
+  "r49": {
+    "id": "r49",
+    "name": "Vietnamese Lemongrass Tofu",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No lemongrass tofu page. Tofu in Spiced Coconut Sauce is a different dish."
+  },
+  "r50": {
+    "id": "r50",
+    "name": "Spanish Garlic Shrimp",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Garlic Shrimp with Lemon Butter Sauce"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Garlic Shrimp with Lemon Butter Sauce",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGarlic_Shrimp_with_Lemon_Butter_Sauce",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r51": {
+    "id": "r51",
+    "name": "BBQ Baby Back Ribs",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Baby Back Ribs"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Ribs cooked until tender.",
+    "sources": [
+      {
+        "title": "Cookbook:Baby Back Ribs",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABaby_Back_Ribs",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r52": {
+    "id": "r52",
+    "name": "Jamaican Jerk Chicken Skewers",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Jamaican Jerk Chicken"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Cut for skewers when the source is pieces. Chicken to 165°F/74°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Jamaican Jerk Chicken",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AJamaican_Jerk_Chicken",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r53": {
+    "id": "r53",
+    "name": "Turkish Eggplant Tomato Bake",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Kyopulo (Eggplant with Peppers and Tomatoes)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Baked as the source directs.",
+    "sources": [
+      {
+        "title": "Cookbook:Kyopulo (Eggplant with Peppers and Tomatoes)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AKyopulo_(Eggplant_with_Peppers_and_Tomatoes)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r54": {
+    "id": "r54",
+    "name": "Sichuan Mapo Tofu",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Mapo Tofu"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Mapo Tofu",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMapo_Tofu",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r55": {
+    "id": "r55",
+    "name": "Brazilian Black Bean Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Brazilian Black Bean Soup"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Dried black beans kept. Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Brazilian Black Bean Soup",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABrazilian_Black_Bean_Soup",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r56": {
+    "id": "r56",
+    "name": "French Herb Omelette",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:French Omelette"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Herbs included when the source lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:French Omelette",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFrench_Omelette",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r57": {
+    "id": "r57",
+    "name": "Caribbean Coconut Rice & Peas",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Jamaican Rice and Peas"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Jamaican Rice and Peas",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AJamaican_Rice_and_Peas",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r58": {
+    "id": "r58",
+    "name": "Lebanese Fattoush Salad",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Fattoush"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Fattoush",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFattoush",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r59": {
+    "id": "r59",
+    "name": "Italian Sausage & Peppers",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Sweet Italian Sausage Skillet"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded. Sausage cooked through.",
+    "sources": [
+      {
+        "title": "Cookbook:Sweet Italian Sausage Skillet",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASweet_Italian_Sausage_Skillet",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r60": {
+    "id": "r60",
+    "name": "Japanese Teriyaki Salmon",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Teriyaki Salmon"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Salmon cooked to 145°F/63°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Teriyaki Salmon",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATeriyaki_Salmon",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r61": {
+    "id": "r61",
+    "name": "Indian Saag Paneer",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No saag paneer or palak paneer page. Matar Paneer is peas, not spinach."
+  },
+  "r62": {
+    "id": "r62",
+    "name": "Mexican Street Corn Salad",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No elote, esquites, or Mexican street-corn page."
+  },
+  "r63": {
+    "id": "r63",
+    "name": "Southern Shrimp & Grits",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Low Country Shrimp and Grits"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Low Country Shrimp and Grits",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ALow_Country_Shrimp_and_Grits",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r64": {
+    "id": "r64",
+    "name": "Chinese Egg Drop Soup",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No Chinese egg-drop page. Stracciatella is an Italian soup and was not cited as egg drop."
+  },
+  "r65": {
+    "id": "r65",
+    "name": "Filipino Garlic Fried Rice",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No sinangag page. Com Chien is Vietnamese fried rice and was not cited as garlic fried rice."
+  },
+  "r66": {
+    "id": "r66",
+    "name": "Pan-Fried Pork Chops with Mashed Potatoes",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pan-Seared Pork Chops",
+      "Cookbook:Mashed Potatoes"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Chops and mash from the two sources. Pork to 145°F/63°C, then rested.",
+    "sources": [
+      {
+        "title": "Cookbook:Pan-Seared Pork Chops",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APan-Seared_Pork_Chops",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Cookbook:Mashed Potatoes",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMashed_Potatoes",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r67": {
+    "id": "r67",
+    "name": "Cajun Red Beans & Rice",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Cajun Red Beans and Rice"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Rice from the source is cooked, not omitted.",
+    "sources": [
+      {
+        "title": "Cookbook:Cajun Red Beans and Rice",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACajun_Red_Beans_and_Rice",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r68": {
+    "id": "r68",
+    "name": "Swedish Meatball Skillet",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Swedish Meatballs I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded. Meatballs to 160°F/71°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Swedish Meatballs I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASwedish_Meatballs_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r69": {
+    "id": "r69",
+    "name": "Grilled Cheese & Tomato Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Grilled Cheese Sandwich",
+      "Cookbook:Creamy Tomato and Bean Soup"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Sandwich and soup from the two sources.",
+    "sources": [
+      {
+        "title": "Cookbook:Grilled Cheese Sandwich",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Cheese_Sandwich",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Cookbook:Creamy Tomato and Bean Soup",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACreamy_Tomato_and_Bean_Soup",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r70": {
+    "id": "r70",
+    "name": "Sloppy Joe Sandwiches",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Sloppy Joes"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Beef to 160°F/71°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Sloppy Joes",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASloppy_Joes",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r71": {
+    "id": "r71",
+    "name": "British Pea & Mint Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Erwtensoep (Split Pea Soup)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Mint included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Erwtensoep (Split Pea Soup)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AErwtensoep_(Split_Pea_Soup)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r72": {
+    "id": "r72",
+    "name": "Argentine Chimichurri Steak",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chimichurri",
+      "Cookbook:Char-Grilled Strip Steak"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Steak cooked, then dressed with the chimichurri.",
+    "sources": [
+      {
+        "title": "Cookbook:Chimichurri",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChimichurri",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Cookbook:Char-Grilled Strip Steak",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChar-Grilled_Strip_Steak",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r73": {
+    "id": "r73",
+    "name": "Malaysian Peanut Noodles",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No Malaysian peanut-noodle page. Gado-gado is a salad and was kept for r79."
+  },
+  "r74": {
+    "id": "r74",
+    "name": "Russian Beet Borscht",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Borscht"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Borscht",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABorscht",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r75": {
+    "id": "r75",
+    "name": "Roast Chicken Dinner",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Roast Chicken"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Chicken to 165°F/74°C in the thigh.",
+    "sources": [
+      {
+        "title": "Cookbook:Roast Chicken",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ARoast_Chicken",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r76": {
+    "id": "r76",
+    "name": "Shepherd's Pie",
+    "newName": "French Canadian Shepherd's Pie",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:French Canadian Shepherd's Pie (Pâté Chinois)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Beef base kept and named for the source.",
+    "sources": [
+      {
+        "title": "Cookbook:French Canadian Shepherd's Pie (Pâté Chinois)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFrench_Canadian_Shepherd's_Pie_(P%C3%A2t%C3%A9_Chinois)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r77": {
+    "id": "r77",
+    "name": "Nepalese Dal Bhat",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Dal Makhani (Black Gram with Cream)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Rice included only when the source serves it.",
+    "sources": [
+      {
+        "title": "Cookbook:Dal Makhani (Black Gram with Cream)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ADal_Makhani_(Black_Gram_with_Cream)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r78": {
+    "id": "r78",
+    "name": "Portuguese Kale Sausage Soup",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No caldo verde page."
+  },
+  "r79": {
+    "id": "r79",
+    "name": "Indonesian Gado Gado",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Gado-gado (Indonesian Salad with Peanut Sauce)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Gado-gado (Indonesian Salad with Peanut Sauce)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGado-gado_(Indonesian_Salad_with_Peanut_Sauce)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r80": {
+    "id": "r80",
+    "name": "German Mustard Schnitzel",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No schnitzel page."
+  },
+  "r81": {
+    "id": "r81",
+    "name": "Colombian Bandeja Beans",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No bandeja paisa page. Portuguese Feijoada is a different stew."
+  },
+  "r82": {
+    "id": "r82",
+    "name": "Egyptian Koshari",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Koshari (Egyptian Rice with Pasta and Lentils)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Koshari (Egyptian Rice with Pasta and Lentils)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AKoshari_(Egyptian_Rice_with_Pasta_and_Lentils)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r83": {
+    "id": "r83",
+    "name": "Polish Pierogi Pan Fry",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pierogi I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pan-fried after boiling, as a pierogi finish.",
+    "sources": [
+      {
+        "title": "Cookbook:Pierogi I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APierogi_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r84": {
+    "id": "r84",
+    "name": "Thai Green Curry Shrimp",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Shrimp Curry"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Name follows this shrimp curry if it is not a Thai green curry.",
+    "sources": [
+      {
+        "title": "Cookbook:Shrimp Curry",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AShrimp_Curry",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r85": {
+    "id": "r85",
+    "name": "Irish Colcannon",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Colcannon"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Colcannon",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AColcannon",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r86": {
+    "id": "r86",
+    "name": "Senegalese Peanut Stew",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Maffé (West African Peanut Stew) I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Peanuts from the source kept.",
+    "sources": [
+      {
+        "title": "Cookbook:Maffé (West African Peanut Stew) I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMaff%C3%A9_(West_African_Peanut_Stew)_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r87": {
+    "id": "r87",
+    "name": "Australian Lamb Chops",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Grilled Lamb Chops"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Lamb cooked and rested.",
+    "sources": [
+      {
+        "title": "Cookbook:Grilled Lamb Chops",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Lamb_Chops",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r88": {
+    "id": "r88",
+    "name": "Chilean Corn Casserole",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No pastel de choclo page."
+  },
+  "r89": {
+    "id": "r89",
+    "name": "Georgian Cheese Flatbread",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Khachapuri (Georgian Cheese Bread)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Cheese filling from the source kept.",
+    "sources": [
+      {
+        "title": "Cookbook:Khachapuri (Georgian Cheese Bread)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AKhachapuri_(Georgian_Cheese_Bread)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r90": {
+    "id": "r90",
+    "name": "Honey Sesame Brussels Sprouts",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Roasted Brussels Sprouts"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Honey and sesame included only when the source lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:Roasted Brussels Sprouts",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ARoasted_Brussels_Sprouts",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r91": {
+    "id": "r91",
+    "name": "Smoked Paprika Paella",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Paella de Marisco"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Paella de Marisco",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APaella_de_Marisco",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r92": {
+    "id": "r92",
+    "name": "Coconut Lime Rice Pudding",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Rice Pudding"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Coconut and lime included only when the source lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:Rice Pudding",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ARice_Pudding",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r93": {
+    "id": "r93",
+    "name": "Dark Chocolate Avocado Mousse",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chocolate Mousse (Vegan)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Used only when the page is an avocado or chocolate mousse; otherwise flipped to original after the fetch.",
+    "sources": [
+      {
+        "title": "Cookbook:Chocolate Mousse (Vegan)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChocolate_Mousse_(Vegan)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r94": {
+    "id": "r94",
+    "name": "Berry Chia Parfait",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No chia pudding or berry parfait page."
+  },
+  "r95": {
+    "id": "r95",
+    "name": "Banana Oat Pancakes",
+    "newName": "Banana Nutmeg Pancakes",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Banana Nutmeg Pancakes"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Distinct from the plain banana pancakes.",
+    "sources": [
+      {
+        "title": "Cookbook:Banana Nutmeg Pancakes",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Nutmeg_Pancakes",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r96": {
+    "id": "r96",
+    "name": "Lemon Ricotta Toast",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No lemon ricotta toast page."
+  },
+  "r97": {
+    "id": "r97",
+    "name": "Spiced Apple Crisp",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Apple Crisp I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Apple Crisp I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AApple_Crisp_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r98": {
+    "id": "r98",
+    "name": "No-Bake Almond Date Bites",
+    "newName": "Date Bars",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Date Bars"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "No-bake bites replaced with the sourced date bars.",
+    "sources": [
+      {
+        "title": "Cookbook:Date Bars",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ADate_Bars",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r99": {
+    "id": "r99",
+    "name": "Homestyle Chicken Noodle Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Soup with Pasta"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Soup with Pasta",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Soup_with_Pasta",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r100": {
+    "id": "r100",
+    "name": "Tahini Banana Nice Cream",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No tahini banana ice or nice-cream page."
+  },
+  "r101": {
+    "id": "r101",
+    "name": "Mediterranean Chicken and Rice",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Arroz con Pollo (Rice and Chicken)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded. Chicken to 165°F/74°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Arroz con Pollo (Rice and Chicken)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AArroz_con_Pollo_(Rice_and_Chicken)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r102": {
+    "id": "r102",
+    "name": "Lamb Kofta with Yogurt",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Lamb Kofta"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Yogurt included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Lamb Kofta",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ALamb_Kofta",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r103": {
+    "id": "r103",
+    "name": "Roasted Pepper Hummus Wraps",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Hummus (Greek)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Wrapped, using this hummus rather than Hummus I.",
+    "sources": [
+      {
+        "title": "Cookbook:Hummus (Greek)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AHummus_(Greek)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r104": {
+    "id": "r104",
+    "name": "Chipotle Sweet Potato Tacos",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No chipotle sweet-potato taco page. Vegetarian Soft Tacos is used for r32."
+  },
+  "r105": {
+    "id": "r105",
+    "name": "Creamy Tomato Tortellini",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No creamy tomato tortellini page. Tortellini in Sweet Potato Sauce is a different dish."
+  },
+  "r106": {
+    "id": "r106",
+    "name": "Walnut Pesto Gnocchi",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pesto II"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Walnuts included only when this pesto lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:Pesto II",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APesto_II",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r107": {
+    "id": "r107",
+    "name": "Sheet-Pan Sausage & Fennel",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No sausage-and-fennel page."
+  },
+  "r108": {
+    "id": "r108",
+    "name": "Baked Falafel Pitas",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Falafel"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Baked if the source bakes; otherwise fried as written. Pita from the source only.",
+    "sources": [
+      {
+        "title": "Cookbook:Falafel",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFalafel",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r109": {
+    "id": "r109",
+    "name": "Cider-Glazed Pork Chops",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Apple Glazed Pork Chops"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded. Pork to 145°F/63°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Apple Glazed Pork Chops",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AApple_Glazed_Pork_Chops",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r110": {
+    "id": "r110",
+    "name": "Mushroom Risotto",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Risotto ai Funghi"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Stock and mushrooms from the source kept.",
+    "sources": [
+      {
+        "title": "Cookbook:Risotto ai Funghi",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ARisotto_ai_Funghi",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r111": {
+    "id": "r111",
+    "name": "Clam Linguine",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Spaghetti with Clams"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Clams from the source kept.",
+    "sources": [
+      {
+        "title": "Cookbook:Spaghetti with Clams",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASpaghetti_with_Clams",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r112": {
+    "id": "r112",
+    "name": "BBQ Chicken Flatbreads",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Barbecue Chicken",
+      "Cookbook:Simple Flatbread"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Chicken is cooked, then served on the flatbread. No unlisted cheese.",
+    "sources": [
+      {
+        "title": "Cookbook:Barbecue Chicken",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABarbecue_Chicken",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Cookbook:Simple Flatbread",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASimple_Flatbread",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r113": {
+    "id": "r113",
+    "name": "Zucchini Fritters",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No zucchini fritter page. Zucchini Pie and Zucchini Bread are different dishes."
+  },
+  "r114": {
+    "id": "r114",
+    "name": "Stuffed Bell Peppers",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Stuffed Peppers"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Peppers from the source kept.",
+    "sources": [
+      {
+        "title": "Cookbook:Stuffed Peppers",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AStuffed_Peppers",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r115": {
+    "id": "r115",
+    "name": "Tuna Nicoise Salad",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Niçoise Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Tuna, egg, potato, and beans kept when the source lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:Niçoise Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ANi%C3%A7oise_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r116": {
+    "id": "r116",
+    "name": "Chicken Tikka Lettuce Wraps",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Tikka"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Served in lettuce.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Tikka",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Tikka",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r117": {
+    "id": "r117",
+    "name": "Pumpkin Coconut Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pumpkin Soup"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Coconut included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Pumpkin Soup",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APumpkin_Soup",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r118": {
+    "id": "r118",
+    "name": "Broccoli Cheddar Frittata",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No broccoli cheddar frittata page. Asparagus Frittata was not relabelled as broccoli."
+  },
+  "r119": {
+    "id": "r119",
+    "name": "Sesame Soba Salad",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No soba page. Sesame Noodle Salad is used for the sesame noodle recipes."
+  },
+  "r120": {
+    "id": "r120",
+    "name": "Garlic Butter Steak Bites",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Steak and Mushrooms"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Garlic butter included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Steak and Mushrooms",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASteak_and_Mushrooms",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r121": {
+    "id": "r121",
+    "name": "Coconut Curry Mussels",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No coconut-curry mussel page. Moules marinière is a different dish."
+  },
+  "r122": {
+    "id": "r122",
+    "name": "Spinach Artichoke Quesadillas",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Spinach Artichoke Dip",
+      "Cookbook:Quesadilla"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Dip cooked, then folded into the quesadilla.",
+    "sources": [
+      {
+        "title": "Cookbook:Spinach Artichoke Dip",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASpinach_Artichoke_Dip",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Cookbook:Quesadilla",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AQuesadilla",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r123": {
+    "id": "r123",
+    "name": "Roasted Grape & Goat Cheese",
+    "newName": "Baked Brie in Puff Pastry",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Baked Brie in Puff Pastry"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Odd roasted-grape snack replaced with baked brie.",
+    "sources": [
+      {
+        "title": "Cookbook:Baked Brie in Puff Pastry",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Brie_in_Puff_Pastry",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r124": {
+    "id": "r124",
+    "name": "Kimchi Fried Rice",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No kimchi fried rice page. Cabbage Kimchi is the pickle, not the rice dish."
+  },
+  "r125": {
+    "id": "r125",
+    "name": "Cinnamon Pear Compote",
+    "newName": "Apple-Pear Crumble",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Apple-Pear Crumble"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Compote replaced with the sourced crumble.",
+    "sources": [
+      {
+        "title": "Cookbook:Apple-Pear Crumble",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AApple-Pear_Crumble",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r126": {
+    "id": "r126",
+    "name": "Bangers and Mash",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Bangers and Mash"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Sausages cooked through.",
+    "sources": [
+      {
+        "title": "Cookbook:Bangers and Mash",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABangers_and_Mash",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r127": {
+    "id": "r127",
+    "name": "Classic Tourtière",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No tourtière page in the Wikibooks cookbook category."
+  },
+  "r128": {
+    "id": "r128",
+    "name": "Shepherd's Pie",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Shepherd's Pie I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Lamb base when the source is lamb.",
+    "sources": [
+      {
+        "title": "Cookbook:Shepherd's Pie I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AShepherd's_Pie_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r129": {
+    "id": "r129",
+    "name": "Weeknight Butter Chicken",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Indian Butter Chicken I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded. Chicken to 165°F/74°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Indian Butter Chicken I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AIndian_Butter_Chicken_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r130": {
+    "id": "r130",
+    "name": "Montreal Smoked Meat Sandwich",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No Montreal smoked-meat sandwich page. Montreal Steak Seasoning is a spice mix and was not cited."
+  },
+  "r131": {
+    "id": "r131",
+    "name": "Toronto Peameal Bacon Sandwich",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No peameal bacon sandwich page."
+  },
+  "r132": {
+    "id": "r132",
+    "name": "Weeknight Shortcut Poutine",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Poutine"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Poutine",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APoutine",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r133": {
+    "id": "r133",
+    "name": "Canadian Split Pea Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pea Soup (Québécois Style)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Pea Soup (Québécois Style)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APea_Soup_(Qu%C3%A9b%C3%A9cois_Style)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r134": {
+    "id": "r134",
+    "name": "Maple-Glazed Salmon",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Maple Syrup Planked Salmon"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Salmon to 145°F/63°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Maple Syrup Planked Salmon",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMaple_Syrup_Planked_Salmon",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r135": {
+    "id": "r135",
+    "name": "Maple-Dijon Pork Chops",
+    "newName": "Chipotle Maple Pork Tenderloin",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Chipotle Maple Glazed Pork Tenderloin"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Maple-Dijon chops had no page; this maple pork is the sourced dish.",
+    "sources": [
+      {
+        "title": "Cookbook:Chipotle Maple Glazed Pork Tenderloin",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChipotle_Maple_Glazed_Pork_Tenderloin",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r136": {
+    "id": "r136",
+    "name": "Dutch-Oven Pot Roast",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Classic Pot Roast"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Beef cooked until fork-tender.",
+    "sources": [
+      {
+        "title": "Cookbook:Classic Pot Roast",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AClassic_Pot_Roast",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r137": {
+    "id": "r137",
+    "name": "Hearty Beef Stew",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Beef Stew I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Beef Stew I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABeef_Stew_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r138": {
+    "id": "r138",
+    "name": "Sunday Roast Chicken with Root Vegetables",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Country Roast Chicken"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Root vegetables included when the source lists them.",
+    "sources": [
+      {
+        "title": "Cookbook:Country Roast Chicken",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACountry_Roast_Chicken",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r139": {
+    "id": "r139",
+    "name": "Perogies with Sausage & Caramelized Onions",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pierogi II"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Sausage included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Pierogi II",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APierogi_II",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r140": {
+    "id": "r140",
+    "name": "Cabbage Rolls",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Cabbage Rolls in Tomato Sauce (Holubtsi)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Cabbage Rolls in Tomato Sauce (Holubtsi)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACabbage_Rolls_in_Tomato_Sauce_(Holubtsi)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r141": {
+    "id": "r141",
+    "name": "Classic Chicken Pot Pie",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Pot Pie I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Pot Pie I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Pot_Pie_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r142": {
+    "id": "r142",
+    "name": "Stovetop Mac and Cheese",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Macaroni and Cheese I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Stovetop method.",
+    "sources": [
+      {
+        "title": "Cookbook:Macaroni and Cheese I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMacaroni_and_Cheese_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r143": {
+    "id": "r143",
+    "name": "Canadian Hawaiian Pizza",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No Hawaiian pizza page. Family Pizza and Kid-Friendly Pizza were not assumed to be ham and pineapple."
+  },
+  "r144": {
+    "id": "r144",
+    "name": "All-Beef Weeknight Chili",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chili Colorado"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Chili Colorado",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChili_Colorado",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r145": {
+    "id": "r145",
+    "name": "Slow-Cooker Pulled Pork",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pulled Pork Sandwiches"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pork cooked until it shreds.",
+    "sources": [
+      {
+        "title": "Cookbook:Pulled Pork Sandwiches",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APulled_Pork_Sandwiches",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r146": {
+    "id": "r146",
+    "name": "Oven BBQ Back Ribs",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Maple Barbecue Baby Back Ribs"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Oven barbecue ribs.",
+    "sources": [
+      {
+        "title": "Cookbook:Maple Barbecue Baby Back Ribs",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMaple_Barbecue_Baby_Back_Ribs",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r147": {
+    "id": "r147",
+    "name": "Pan-Seared Steak with Mushrooms",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Steak and Mushrooms"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Distinct write-up from r120 only if this id is the one that keeps the page; r120 shares it and both follow the source.",
+    "sources": [
+      {
+        "title": "Cookbook:Steak and Mushrooms",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASteak_and_Mushrooms",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r148": {
+    "id": "r148",
+    "name": "Weeknight Fish & Chips",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Fish and Chips"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Fish cooked through.",
+    "sources": [
+      {
+        "title": "Cookbook:Fish and Chips",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFish_and_Chips",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r149": {
+    "id": "r149",
+    "name": "Nanaimo Bars",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Nanaimo Bars I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Nanaimo Bars I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ANanaimo_Bars_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r150": {
+    "id": "r150",
+    "name": "Classic Butter Tarts",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Butter Tart"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Butter Tart",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AButter_Tart",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r151": {
+    "id": "r151",
+    "name": "Skillet Bannock",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Scottish Wheat Bannock Bread"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Skillet bake as the source allows.",
+    "sources": [
+      {
+        "title": "Cookbook:Scottish Wheat Bannock Bread",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AScottish_Wheat_Bannock_Bread",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r152": {
+    "id": "r152",
+    "name": "Maple Apple Crisp",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Apple Crisp II"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Maple included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Apple Crisp II",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AApple_Crisp_II",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r153": {
+    "id": "r153",
+    "name": "Montreal-Style Bagels with Cream Cheese",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No Montreal-style bagel page. Plain Bagels is a different method and was not cited as Montreal."
+  },
+  "r154": {
+    "id": "r154",
+    "name": "Maple Baked Beans",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Maple Beans"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Maple Beans",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMaple_Beans",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r155": {
+    "id": "r155",
+    "name": "Creamy Chicken and Dumplings",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken and Dumplings"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Chicken to 165°F/74°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken and Dumplings",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_and_Dumplings",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r156": {
+    "id": "r156",
+    "name": "Meatloaf with Pan Gravy",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Meatloaf I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Meatloaf to 160°F/71°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Meatloaf I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMeatloaf_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r157": {
+    "id": "r157",
+    "name": "Baked Ziti with Ricotta",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Baked Ziti"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Ricotta included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Baked Ziti",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Ziti",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r158": {
+    "id": "r158",
+    "name": "Country Sausage Gravy & Biscuits",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Biscuits and Gravy"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Biscuits and Gravy",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABiscuits_and_Gravy",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r159": {
+    "id": "r159",
+    "name": "Loaded Baked Potato Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Cheesy Potato Soup"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Cheesy Potato Soup",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACheesy_Potato_Soup",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r160": {
+    "id": "r160",
+    "name": "Tater Tot Hotdish",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Tater Tot Casserole"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Tater Tot Casserole",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATater_Tot_Casserole",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r161": {
+    "id": "r161",
+    "name": "Chicken and Wild Rice Casserole",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No chicken and wild rice casserole page."
+  },
+  "r162": {
+    "id": "r162",
+    "name": "Beef and Noodle Skillet Supper",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Hamburger Skillet Dinner"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Beef to 160°F/71°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Hamburger Skillet Dinner",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AHamburger_Skillet_Dinner",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r163": {
+    "id": "r163",
+    "name": "Garlic Shrimp Spaghetti",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Garlic Shrimp Scampi Pasta"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Garlic Shrimp Scampi Pasta",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGarlic_Shrimp_Scampi_Pasta",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r164": {
+    "id": "r164",
+    "name": "Turkey Taco Skillet",
+    "newName": "Taco Casserole",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Taco Casserole"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Duplicate turkey taco skillet replaced with the sourced casserole.",
+    "sources": [
+      {
+        "title": "Cookbook:Taco Casserole",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATaco_Casserole",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r165": {
+    "id": "r165",
+    "name": "Lemon Herb Sheet-Pan Chicken",
+    "newName": "Baked Chicken Breasts",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Baked Chicken Breasts"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Lemon-herb sheet pan had a twin; this is the baked-breast dish.",
+    "sources": [
+      {
+        "title": "Cookbook:Baked Chicken Breasts",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Chicken_Breasts",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r166": {
+    "id": "r166",
+    "name": "Pork Stir-Fry with Peppers",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No pork-and-pepper stir-fry page. Steak and Pepper Stir-Fry is beef."
+  },
+  "r167": {
+    "id": "r167",
+    "name": "Caprese Chicken Cutlets",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No caprese chicken cutlet page. Chicken Parmesan is r191."
+  },
+  "r168": {
+    "id": "r168",
+    "name": "Sausage and Broccoli Pasta",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No sausage-and-broccoli pasta page."
+  },
+  "r169": {
+    "id": "r169",
+    "name": "Party Sliders with Caramelized Onions",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Grilled Sliders"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Grilled Sliders",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Sliders",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r170": {
+    "id": "r170",
+    "name": "Big-Batch Baked Macaroni",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Macaroni and Cheese II"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Big-batch bake from this macaroni and cheese.",
+    "sources": [
+      {
+        "title": "Cookbook:Macaroni and Cheese II",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMacaroni_and_Cheese_II",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r171": {
+    "id": "r171",
+    "name": "Sheet-Pan Fajita Feast",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Beef Fajitas"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Sheet-pan feast scaled up.",
+    "sources": [
+      {
+        "title": "Cookbook:Beef Fajitas",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABeef_Fajitas",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r172": {
+    "id": "r172",
+    "name": "Crowd-Pleasing Meatball Subs",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Italian Meatballs"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Served in rolls when the source includes bread.",
+    "sources": [
+      {
+        "title": "Cookbook:Italian Meatballs",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AItalian_Meatballs",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r173": {
+    "id": "r173",
+    "name": "Slow-Cooker Beef Barbacoa",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No barbacoa page. Cochinita pibil is a different braise."
+  },
+  "r174": {
+    "id": "r174",
+    "name": "Crockpot Chicken Tikka Masala",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Tikka Masala"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Slow cooker disclosed against the source method.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Tikka Masala",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Tikka_Masala",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r175": {
+    "id": "r175",
+    "name": "Slow-Cooker Lentil Curry",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Lentil, Potato, and Tomato Curry"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Slow cooker disclosed.",
+    "sources": [
+      {
+        "title": "Cookbook:Lentil, Potato, and Tomato Curry",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ALentil%2C_Potato%2C_and_Tomato_Curry",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r176": {
+    "id": "r176",
+    "name": "Set-and-Forget Chili",
+    "newName": "Black Bean Chili",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Black Bean Chili"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Vague set-and-forget chili replaced with black bean chili.",
+    "sources": [
+      {
+        "title": "Cookbook:Black Bean Chili",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABlack_Bean_Chili",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r177": {
+    "id": "r177",
+    "name": "Honey Garlic Slow-Cooker Wings",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Honey BBQ Hot Wings"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Slow cooker disclosed. Chicken to 165°F/74°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Honey BBQ Hot Wings",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AHoney_BBQ_Hot_Wings",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r178": {
+    "id": "r178",
+    "name": "One-Pan Lemon Garlic Salmon",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Grilled Salmon with Lemon Butter Sauce"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "One-pan bake disclosed if the source grills.",
+    "sources": [
+      {
+        "title": "Cookbook:Grilled Salmon with Lemon Butter Sauce",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Salmon_with_Lemon_Butter_Sauce",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r179": {
+    "id": "r179",
+    "name": "Skillet Sausage and Peppers",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Sweet Italian Sausage Skillet"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Same sausage-and-peppers source as r59, written as the skillet supper.",
+    "sources": [
+      {
+        "title": "Cookbook:Sweet Italian Sausage Skillet",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASweet_Italian_Sausage_Skillet",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r180": {
+    "id": "r180",
+    "name": "One-Pan Greek Chicken and Potatoes",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No Greek chicken and potatoes page. Greek Chicken Wrap is a wrap."
+  },
+  "r181": {
+    "id": "r181",
+    "name": "Shrimp and Orzo One-Pot",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No shrimp and orzo page. Orzo Salad is a salad and is used for r45."
+  },
+  "r182": {
+    "id": "r182",
+    "name": "Sheet-Pan Pork Chops and Apples",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Apple Glazed Pork Chops"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Sheet-pan disclosure against r109.",
+    "sources": [
+      {
+        "title": "Cookbook:Apple Glazed Pork Chops",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AApple_Glazed_Pork_Chops",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r183": {
+    "id": "r183",
+    "name": "Grilled Marinated Flank Steak",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pepper Crusted Flank Steak"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Marinated and grilled. Rest before slicing.",
+    "sources": [
+      {
+        "title": "Cookbook:Pepper Crusted Flank Steak",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APepper_Crusted_Flank_Steak",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r184": {
+    "id": "r184",
+    "name": "BBQ Chicken Drumsticks",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Roasted Spiced Chicken Drumsticks"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Chicken to 165°F/74°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Roasted Spiced Chicken Drumsticks",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ARoasted_Spiced_Chicken_Drumsticks",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r185": {
+    "id": "r185",
+    "name": "Weeknight Minestrone",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Minestrone alla Casalinga"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Minestrone alla Casalinga",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMinestrone_alla_Casalinga",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r186": {
+    "id": "r186",
+    "name": "Creamy Tomato Tortellini Soup",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No creamy tomato tortellini soup page."
+  },
+  "r187": {
+    "id": "r187",
+    "name": "Pub-Style Fish and Chips",
+    "newName": "Steak and Ale Pie",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Steak and Ale Pie"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Third fish-and-chips id replaced with a sourced pub pie.",
+    "sources": [
+      {
+        "title": "Cookbook:Steak and Ale Pie",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASteak_and_Ale_Pie",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r188": {
+    "id": "r188",
+    "name": "Ground Beef Tacos",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Tacos"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Ground beef to 160°F/71°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Tacos",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATacos",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r189": {
+    "id": "r189",
+    "name": "Beer-Battered Onion Rings",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Onion Rings"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Onion Rings",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AOnion_Rings",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r190": {
+    "id": "r190",
+    "name": "Spaghetti and Meatballs",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Spaghetti and Meatballs"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Meatballs to 160°F/71°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Spaghetti and Meatballs",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASpaghetti_and_Meatballs",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r191": {
+    "id": "r191",
+    "name": "Chicken Parmesan Skillet",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Parmesan"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Chicken to 165°F/74°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Parmesan",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Parmesan",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r192": {
+    "id": "r192",
+    "name": "Cheesy Beef Enchiladas",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Enchiladas Rojas"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Enchiladas Rojas",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AEnchiladas_Rojas",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r193": {
+    "id": "r193",
+    "name": "Loaded Nacho Supreme",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Nachos"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Nachos",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ANachos",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r194": {
+    "id": "r194",
+    "name": "Sesame Ginger Stir-Fry",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No sesame-ginger vegetable stir-fry page."
+  },
+  "r195": {
+    "id": "r195",
+    "name": "Takeout-Style Fried Rice",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Fried Rice"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Chicken cooked before it is fried with the rice.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Fried Rice",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Fried_Rice",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r196": {
+    "id": "r196",
+    "name": "Chicken Fajitas",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Fajitas"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Skillet method. Sheet-pan variant is r14.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Fajitas",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Fajitas",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r197": {
+    "id": "r197",
+    "name": "Weekend French Toast Bake",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:French Toast"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Baked as a tray when the source is pan-fried; method change disclosed.",
+    "sources": [
+      {
+        "title": "Cookbook:French Toast",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFrench_Toast",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r198": {
+    "id": "r198",
+    "name": "Savory Breakfast Burritos",
+    "newName": "Smoked Salmon Breakfast Burrito",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Smoked Salmon Breakfast Burrito"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Duplicate breakfast burrito replaced with this sourced burrito.",
+    "sources": [
+      {
+        "title": "Cookbook:Smoked Salmon Breakfast Burrito",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASmoked_Salmon_Breakfast_Burrito",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r199": {
+    "id": "r199",
+    "name": "Turkey Avocado Club Wraps",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No turkey avocado club page."
+  },
+  "r200": {
+    "id": "r200",
+    "name": "Pork Fried Rice",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:BBQ Pork Fried Rice"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pork cooked before it goes into the rice.",
+    "sources": [
+      {
+        "title": "Cookbook:BBQ Pork Fried Rice",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABBQ_Pork_Fried_Rice",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r201": {
+    "id": "r201",
+    "name": "Baked Ziti with Sausage",
+    "newName": "Skillet Lasagna",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Skillet Lasagna"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Duplicate baked ziti replaced with skillet lasagna.",
+    "sources": [
+      {
+        "title": "Cookbook:Skillet Lasagna",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASkillet_Lasagna",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r202": {
+    "id": "r202",
+    "name": "Chicken Pot Pie Skillet",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Pot Pie II"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Skillet disclosure if the source is a pie.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Pot Pie II",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Pot_Pie_II",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r203": {
+    "id": "r203",
+    "name": "Classic Meatloaf & Mash",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Meatloaf II",
+      "Cookbook:Mashed Potatoes"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Meatloaf to 160°F/71°C, served with the mash.",
+    "sources": [
+      {
+        "title": "Cookbook:Meatloaf II",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMeatloaf_II",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Cookbook:Mashed Potatoes",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMashed_Potatoes",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r204": {
+    "id": "r204",
+    "name": "Creamy Chicken Alfredo",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Alfredo"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Chicken cooked, then sauced.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Alfredo",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Alfredo",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r205": {
+    "id": "r205",
+    "name": "Baked Mac and Cheese",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Macaroni and Cheese (Baked)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Macaroni and Cheese (Baked)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMacaroni_and_Cheese_(Baked)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r206": {
+    "id": "r206",
+    "name": "Tuna Noodle Casserole",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Tuna Noodle Casserole"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Tuna Noodle Casserole",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Noodle_Casserole",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r207": {
+    "id": "r207",
+    "name": "One-Pan Lemon Herb Chicken",
+    "newName": "Roast Chicken with 40 Cloves of Garlic",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:40 Cloves in a Roast Chicken"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Duplicate lemon chicken replaced with the 40-clove roast.",
+    "sources": [
+      {
+        "title": "Cookbook:40 Cloves in a Roast Chicken",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3A40_Cloves_in_a_Roast_Chicken",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r208": {
+    "id": "r208",
+    "name": "Sheet Pan Sausage & Peppers",
+    "newName": "Chicken and Andouille Sausage Gumbo",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Chicken and Andouille Sausage Gumbo"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Duplicate sausage-and-peppers sheet pan replaced with gumbo.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken and Andouille Sausage Gumbo",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_and_Andouille_Sausage_Gumbo",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r209": {
+    "id": "r209",
+    "name": "Slow Cooker Pulled Pork",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pulled Pork Sandwiches"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Slow cooker disclosed against the source method.",
+    "sources": [
+      {
+        "title": "Cookbook:Pulled Pork Sandwiches",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APulled_Pork_Sandwiches",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r210": {
+    "id": "r210",
+    "name": "Slow Cooker Chicken Tikka",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Tikka"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Slow cooker disclosed. Lettuce-wrap variant is r116.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Tikka",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Tikka",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r211": {
+    "id": "r211",
+    "name": "One-Pan Shrimp Fajitas",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No shrimp fajita page."
+  },
+  "r212": {
+    "id": "r212",
+    "name": "Slow Cooker Beef Chili",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chili with Meat"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Slow cooker beef chili from the same chili page as r20, which uses turkey.",
+    "sources": [
+      {
+        "title": "Cookbook:Chili with Meat",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChili_with_Meat",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r213": {
+    "id": "r213",
+    "name": "Sticky BBQ Chicken Thighs",
+    "newName": "Honey Garlic Chicken",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Honey Garlic Chicken"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Sticky barbecue thighs replaced with honey garlic chicken.",
+    "sources": [
+      {
+        "title": "Cookbook:Honey Garlic Chicken",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AHoney_Garlic_Chicken",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r214": {
+    "id": "r214",
+    "name": "Grilled Corn Ribs with Lime Butter",
+    "newName": "Corn on the Cob",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Corn on the Cob with Husks"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Corn ribs replaced with corn on the cob.",
+    "sources": [
+      {
+        "title": "Cookbook:Corn on the Cob with Husks",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACorn_on_the_Cob_with_Husks",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r215": {
+    "id": "r215",
+    "name": "BBQ Brisket Sandwiches",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Barbecue Beef Brisket Sandwiches"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Brisket cooked until sliceable.",
+    "sources": [
+      {
+        "title": "Cookbook:Barbecue Beef Brisket Sandwiches",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABarbecue_Beef_Brisket_Sandwiches",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r216": {
+    "id": "r216",
+    "name": "Grilled BBQ Pork Chops",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Grilled Pork Chops"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pork to 145°F/63°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Grilled Pork Chops",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Pork_Chops",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r217": {
+    "id": "r217",
+    "name": "Smoky BBQ Meatballs",
+    "newName": "German Meatballs",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:German Meatballs"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "No barbecue-meatball page. These are the sourced meatballs.",
+    "sources": [
+      {
+        "title": "Cookbook:German Meatballs",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AGerman_Meatballs",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r218": {
+    "id": "r218",
+    "name": "Charred BBQ Cauliflower Steaks",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No barbecue cauliflower steak page. Gobi Bhagi and Cauliflower Cheese are different dishes."
+  },
+  "r219": {
+    "id": "r219",
+    "name": "Hearty Vegetable Minestrone",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Minestrone alla Capucina"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Minestrone alla Capucina",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMinestrone_alla_Capucina",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r220": {
+    "id": "r220",
+    "name": "Classic Chicken Noodle Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Chicken Soup I"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Chicken Soup I",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Soup_I",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r221": {
+    "id": "r221",
+    "name": "Spicy Black Bean Soup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Black Bean Soup with Tomato-Tomatillo Salsa"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Black Bean Soup with Tomato-Tomatillo Salsa",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABlack_Bean_Soup_with_Tomato-Tomatillo_Salsa",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r222": {
+    "id": "r222",
+    "name": "Beef and Barley Stew",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Beef and Barley Stew"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Beef and Barley Stew",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABeef_and_Barley_Stew",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r223": {
+    "id": "r223",
+    "name": "Creamy Tomato Tortellini Soup",
+    "newName": "Creamy Tomato and Bean Soup",
+    "original": false,
+    "replaced": true,
+    "pages": [
+      "Cookbook:Creamy Tomato and Bean Soup"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Duplicate tortellini soup replaced with this soup.",
+    "sources": [
+      {
+        "title": "Cookbook:Creamy Tomato and Bean Soup",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACreamy_Tomato_and_Bean_Soup",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r224": {
+    "id": "r224",
+    "name": "Lentil Sausage Stew",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Lentil and Sausage Stew"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Lentil and Sausage Stew",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ALentil_and_Sausage_Stew",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r225": {
+    "id": "r225",
+    "name": "Fish and Chips Tray Bake",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Fish and Chips"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Oven tray instead of a deep fryer. Same source as r148.",
+    "sources": [
+      {
+        "title": "Cookbook:Fish and Chips",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFish_and_Chips",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r226": {
+    "id": "r226",
+    "name": "Shepherd's Pie Pub Style",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Shepherd's Pie II"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Shepherd's Pie II",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AShepherd's_Pie_II",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r227": {
+    "id": "r227",
+    "name": "Tuna Noodle Casserole",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Tuna Noodle Casserole"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Same sourced casserole as r206. Wording rewritten separately.",
+    "sources": [
+      {
+        "title": "Cookbook:Tuna Noodle Casserole",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Noodle_Casserole",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r228": {
+    "id": "r228",
+    "name": "Pub Cheese Steak Skillet",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Philly Cheesesteak"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Philly Cheesesteak",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APhilly_Cheesesteak",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r229": {
+    "id": "r229",
+    "name": "Crispy Chicken Tenders & Fries",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Fried Chicken"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Tenders cut from the fried-chicken method.",
+    "sources": [
+      {
+        "title": "Cookbook:Fried Chicken",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Chicken",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r230": {
+    "id": "r230",
+    "name": "Mushroom Stout Pie",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No mushroom stout pie page. Steak and Ale Pie is beef and is used for r187."
+  },
+  "r231": {
+    "id": "r231",
+    "name": "Chicken Enchilada Bake",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No chicken enchilada page. Enchiladas Rojas is used for r192."
+  },
+  "r232": {
+    "id": "r232",
+    "name": "Crispy Fried Chicken Dinner",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Buttermilk Fried Chicken with Pan Gravy"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded. Chicken to 165°F/74°C.",
+    "sources": [
+      {
+        "title": "Cookbook:Buttermilk Fried Chicken with Pan Gravy",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AButtermilk_Fried_Chicken_with_Pan_Gravy",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r233": {
+    "id": "r233",
+    "name": "Queso Fundido Nachos",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Killer Queso Dip",
+      "Cookbook:Nachos"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Queso from the dip, served over the nachos.",
+    "sources": [
+      {
+        "title": "Cookbook:Killer Queso Dip",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AKiller_Queso_Dip",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "title": "Cookbook:Nachos",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ANachos",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r234": {
+    "id": "r234",
+    "name": "Shrimp Tacos with Slaw",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No shrimp taco page."
+  },
+  "r235": {
+    "id": "r235",
+    "name": "Tex-Mex Stuffed Peppers",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Meat and Rice-Stuffed Bell Peppers"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Meat and Rice-Stuffed Bell Peppers",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMeat_and_Rice-Stuffed_Bell_Peppers",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r236": {
+    "id": "r236",
+    "name": "Ham and Cheese Omelette",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Denver Omelet"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Ham and cheese omelette from the Denver omelet.",
+    "sources": [
+      {
+        "title": "Cookbook:Denver Omelet",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ADenver_Omelet",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r237": {
+    "id": "r237",
+    "name": "Sesame Ginger Stir-Fry Noodles",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Sesame Noodle Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Reworded.",
+    "sources": [
+      {
+        "title": "Cookbook:Sesame Noodle Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASesame_Noodle_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r238": {
+    "id": "r238",
+    "name": "Orange Chicken Skillet",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No orange chicken page. General Tso's Chicken is a different dish and was not relabelled."
+  },
+  "r239": {
+    "id": "r239",
+    "name": "Pad Thai with Shrimp",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Pad Thai"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Shrimp cooked until opaque.",
+    "sources": [
+      {
+        "title": "Cookbook:Pad Thai",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3APad_Thai",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r240": {
+    "id": "r240",
+    "name": "Waffles with Maple Syrup",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Waffles"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Maple syrup included when the source serves it.",
+    "sources": [
+      {
+        "title": "Cookbook:Waffles",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AWaffles",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r241": {
+    "id": "r241",
+    "name": "Maple-Glazed Salmon",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Maple Planked Salmon with Rum Glaze"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Distinct maple salmon from r134.",
+    "sources": [
+      {
+        "title": "Cookbook:Maple Planked Salmon with Rum Glaze",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3AMaple_Planked_Salmon_with_Rum_Glaze",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r242": {
+    "id": "r242",
+    "name": "Sweet & Sour Pork",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Sweet and Sour Chinese Pork"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pork cooked through.",
+    "sources": [
+      {
+        "title": "Cookbook:Sweet and Sour Chinese Pork",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ASweet_and_Sour_Chinese_Pork",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r243": {
+    "id": "r243",
+    "name": "Everything Bagel Breakfast Casserole",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Breakfast Casserole"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Everything-bagel topping included only when the source lists it.",
+    "sources": [
+      {
+        "title": "Cookbook:Breakfast Casserole",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ABreakfast_Casserole",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r244": {
+    "id": "r244",
+    "name": "Spinach Feta Breakfast Wraps",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No spinach-feta breakfast wrap page."
+  },
+  "r245": {
+    "id": "r245",
+    "name": "Turkey Club Lunch Boxes",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No turkey club sandwich page."
+  },
+  "r246": {
+    "id": "r246",
+    "name": "Mediterranean Tuna Salad Pitas",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Tuna Salad (1940)"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Stuffed into pitas.",
+    "sources": [
+      {
+        "title": "Cookbook:Tuna Salad (1940)",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Salad_(1940)",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r247": {
+    "id": "r247",
+    "name": "Caprese Panini Lunch",
+    "newName": null,
+    "original": false,
+    "replaced": false,
+    "pages": [
+      "Cookbook:Caprese Salad"
+    ],
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Pressed as a panini, separate write-up from r43.",
+    "sources": [
+      {
+        "title": "Cookbook:Caprese Salad",
+        "url": "https://en.wikibooks.org/wiki/Cookbook%3ACaprese_Salad",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "r248": {
+    "id": "r248",
+    "name": "Club Sandwich Lunch",
+    "newName": null,
+    "original": true,
+    "replaced": false,
+    "pages": [],
+    "licence": "original",
+    "note": "No club sandwich page."
+  }
+}

@@ -1,0 +1,38 @@
+{{Recipe summary
+| Category = Burrito recipes
+| Servings = 5
+| Difficulty = 1
+}}
+
+{{recipe}}
+==Ingredients==
+*5 corn/wheat [[Cookbook:Tortilla|tortillas]]
+*1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Canola Oil|canola oil]]
+*6 [[Cookbook:Egg White|egg whites]]
+*2 [[Cookbook:Egg Yolk|egg yolks]]
+*¼ [[Cookbook:Cup|cup]] [[Cookbook:Milk|milk]]
+*1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Lemon Juice|lemon juice]]
+*1 [[Cookbook:Tsp|tsp]] [[Cookbook:Pepper|black pepper]]
+*¼ cup [[Cookbook:Smoked Salmon|smoked salmon]] [[Cookbook:Cream Cheese|cream cheese]] spread
+
+==Procedure==
+#In a small bowl, [[Cookbook:Whisk|whisk]] together eggs, milk, lemon juice, and pepper.
+#In [[Cookbook:Sauté pan|sauté pan]] over medium heat, add oil to coat the pan, add egg mixture to scramble.
+#Toast the tortillas in a cast iron [[Cookbook:Frying Pan|skillet]] over medium heat. Spread cream spread in a circle with 2 inches from the edge of tortilla. Add eggs.
+#Wrap and enjoy.
+
+==Notes, tips, and variations==
+
+* [[Cookbook:Whole Wheat Flour|Whole-wheat]] tortillas add more fiber/complex carbs!
+* Spring mix lettuce can be added to liven it up a bit.
+
+[[Category:Recipes for burritos]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using salmon]]
+[[Category:Breakfast recipes]]
+[[Category:Pan fried recipes]]
+[[Category:United States recipes]]
+[[Category:Recipes using cream cheese]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes using canola oil]]
+[[Category:Recipes using cow milk]]

@@ -1,0 +1,31 @@
+{{recipesummary|category=Sausage recipes|servings=4–6 persons|time=45 minutes|difficulty=2}}
+
+{{recipe}} | [[Cookbook:Cuisine of Italy|Cuisine of Italy]] | [[Cookbook:Meat|Sausage]]
+
+== Ingredients ==
+* 2 [[Cookbook:Cup|cups]] (480 [[Cookbook:Milliliter|ml]]) rotini or other spiral [[Cookbook:Pasta|pasta]]
+* 12 [[Cookbook:Ounce|oz]] (330 [[Cookbook:Gram|g]]) sweet Italian [[Cookbook:Sausage|sausage]] links
+* 14.5 oz (410 g) Italian-style stewed [[Cookbook:Tomato|tomatoes]]
+* 14.5 oz (410 g) cut green Italian beans, drained
+* 2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Vegetable oil|cooking oil]]
+* 6 oz (170 g) [[Cookbook:Tomato Paste|tomato paste]]
+* 1 cup (240 ml) [[Cookbook:Chicken|chicken]] [[Cookbook:Broth|broth]]
+* 2 oz (55 g) shredded [[Cookbook:Provolone Cheese|provolone]] or [[Cookbook:Mozzarella Cheese|mozzarella]]
+
+== Procedure ==
+# Cook pasta and drain.
+# Meanwhile, brown sliced sausage in hot oil in large [[Cookbook:Frying Pan|skillet]] for 5 minutes, then drain away the fat.
+# Stir in undrained tomatoes, tomato paste, broth, and drained beans. Bring to [[Cookbook:Boiling|boil]], then reduce heat. [[Cookbook:Simmering|Simmer]], covered, 10 minutes.
+# Stir in cooked pasta.
+# Sprinkle with cheese.
+
+[[Category:Recipes using sausage]]
+[[Category:Italian recipes]]
+[[Category:Recipes using pasta and noodles]]
+[[Category:Pan fried recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes using provolone]]
+[[Category:Recipes using low-moisture mozzarella]]
+[[Category:Recipes using chicken broth and stock]]
+[[Category:Recipes using green bean]]

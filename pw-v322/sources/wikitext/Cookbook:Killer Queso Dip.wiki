@@ -1,0 +1,38 @@
+__NOTOC__
+{{Recipe summary
+| Category = Dip recipes
+| Yield = 3 cups
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Southwestern cuisine|Southwestern cuisine]] | [[Cookbook:Tex-Mex cuisine|Tex-Mex cuisine]]
+
+'''Queso''' (literally "cheese" in Spanish), also known as '''chile con queso''', is a common dip found in [[Cookbook:Southwestern cuisine|southwestern]] and [[Cookbook:Tex-Mex cuisine|Tex-Mex]] cooking.
+
+== Ingredients ==
+* 1 [[Cookbook:pound|lb]] (450 [[Cookbook:Gram|g]]) hot pork [[Cookbook:sausage|sausage]]
+*1 lb (450 g) [[Cookbook:Velveeta|Velveeta]] cheese
+* 10 [[Cookbook:ounce|oz]] (280 g) canned [[Cookbook:Tomato|tomato]]es stewed with green [[Cookbook:Chiles|chiles]] (e.g. Rotel brand)
+* [[Cookbook:Tortilla Chip|Tortilla chips]] or fritos for serving
+
+== Procedure ==
+
+=== Saucepan method ===
+# Brown sausage in [[Cookbook:Saucepan|saucepan]] and drain grease.
+# Add cubed cheese, diced tomatoes, and diced chilies.
+# Heat over low, stirring until cheese is melted and ingredients are well blended.
+
+=== Slow cooker method ===
+# Brown sausage in a [[Cookbook:Skillet|skillet]] and drain grease.
+# In a [[Cookbook:Slow Cooker|slow cooker]], melt cheese with tomatoes and chilies, stirring.
+# Add browned sausage. Stir until well melted and mixed.
+
+[[Category:Southwestern recipes]]
+[[Category:Tex-Mex recipes]]
+[[Category:Slow cooker recipes]]
+[[Category:Recipes using processed cheese]]
+[[Category:Recipes using sausage]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Microwave recipes]]
+[[Category:Recipes for dip]]
+[[Category:Recipes using chile]]

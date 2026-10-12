@@ -1,0 +1,47 @@
+{{recipesummary
+| Category = Pasta recipes
+| Cuisine = Italian-American
+| Servings = 8
+| Time = 45–60 minutes
+| difficulty = 2
+| Rating = 
+| Image = [[Image:Baked Ziti.jpg|300px]]
+}}{{recipe}}
+
+'''Baked ziti''' is a type of casserole in Italian-American cuisine. It consists primarily of pasta and various cheeses in a tomato-based sauce.
+
+==Ingredients==
+*1 [[Cookbook:Pound|lb]] (450 [[Cookbook:Gram|g]]) ziti or other [[cookbook:pasta|pasta]]
+*1 ½ [[Cookbook:Cup|cups]] (360 [[Cookbook:Milliliter|ml]]) [[Cookbook:Marinara Sauce|marinara sauce]]
+*1 lb (450 g) [[Cookbook:Grater|grated]] [[cookbook:mozzarella|mozzarella]]
+*½ lb (225 g) [[cookbook:ricotta|ricotta]]
+*4 [[Cookbook:Ounce|oz]] (110 g) grated [[cookbook:Parmesan Cheese|Parmesan cheese]]
+*1 [[cookbook:egg|egg]], beaten
+*3 [[Cookbook:Tablespoon|tbsp]] [[cookbook:basil|basil]], [[Cookbook:Chopping|chopped]] fine
+*2 tbsp [[cookbook:oregano|oregano]], chopped fine
+*3 tbsp Italian [[cookbook:parsley|parsley]], chopped fine
+*½ [[Cookbook:Cup|cup]] (120 [[Cookbook:Milliliter|ml]]) [[cookbook:Bread Crumb|bread crumbs]]
+*1 [[Cookbook:Pinch|pinch]] crushed [[Cookbook:Red pepper flakes|red pepper flakes]] (optional)
+*[[cookbook:salt|Salt]]
+*[[cookbook:pepper|Pepper]]
+
+== Procedure ==
+# Preheat [[Cookbook:Oven|oven]] to 425 °F (225 °C).  Coat a large [[Cookbook:Baking Dish|baking dish]] with olive oil.
+# Mix ricotta, egg, basil, oregano, parsley and about half of the mozzarella and Parmesan in a large bowl until well incorporated. Season with salt and pepper.
+# Cook ziti in a large pot of salted water until [[Cookbook:Al dente|al dente]]. Drain well.
+# In a large bowl or pot, toss ziti with marinara sauce and red pepper flakes until noodles are covered. Stir in ricotta mixture and fold until it begins to melt. Pour mixture into greased dish and spread it out with a spoon.
+# Sprinkle remaining mozzarella and Parmesan over the top, then sprinkle bread crumbs over cheese.
+# [[Cookbook:Baking|Bake]] at 425 °F (225 °C) for 20 minutes or until cheese on top turns golden and begins to bubble.       
+
+[[Category:Recipes using pasta]]
+[[Category:Recipes using pasta and noodles]]
+[[Category:Italian recipes]]
+[[Category:Baked recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using chile flake]]
+[[Category:Recipes using bread crumb]]
+[[Category:Recipes using parsley]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using low-moisture mozzarella]]

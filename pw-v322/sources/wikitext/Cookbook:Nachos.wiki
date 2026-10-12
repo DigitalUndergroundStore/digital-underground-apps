@@ -1,0 +1,28 @@
+{{Recipe summary
+| Category = Tex-Mex recipes
+| Difficulty = 1
+}}
+
+{{recipe}} | [[Cookbook:Tex-Mex cuisine|Tex-Mex Cuisine]] | [[Cookbook:Southwestern cuisine|Southwestern U.S. Cuisine]]
+
+'''Nachos''' are a dish of tortilla chips served hot with cheese and various toppings.
+
+==Ingredients==
+* 12 [[Cookbook:Ounce|ounces]] (~350 [[Cookbook:Gram|g]]) [[Cookbook:Tortilla Chip|tortilla chips]]
+* 1 [[Cookbook:Pound|pound]] (450 g) [[Cookbook:Cheddar Cheese|cheddar cheese]], [[Cookbook:Grating|grated]]
+* ⅓ [[Cookbook:Cup|cup]] [[Cookbook:Chopping|chopped]] canned peeled green [[Cookbook:Chiles|chiles]] (optional)
+* ½ cup chopped [[Cookbook:Onion|onion]] (optional)
+
+==Procedure==
+# Preheat the [[Cookbook:Oven|oven]] to 400°F (200°C). Lay the tortilla chips on a [[Cookbook:Baking Sheet|cookie sheet]].
+# [[Cookbook:Mixing#Tossing|Toss]] together the cheese, chilies, and onion, and sprinkle over the tortilla chips.
+# [[Cookbook:Baking|Bake]] for about 2 minutes until the cheese has melted.
+# Serve hot.
+
+[[Category:Inexpensive recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using cheddar]]
+[[Category:Tex-Mex recipes]]
+[[Category:Southwestern recipes]]
+[[Category:Appetizer recipes]]
+[[Category:Recipes using chile]]

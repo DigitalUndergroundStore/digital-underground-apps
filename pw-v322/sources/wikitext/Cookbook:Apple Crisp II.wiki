@@ -1,0 +1,32 @@
+{{Recipe summary
+| Category = Recipes for dessert
+| Servings = 8
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+* 4 [[Cookbook:Cup|cups]] [[Cookbook:Slicing|sliced]] [[Cookbook:Apple|apples]]
+* 1 [[Cookbook:Tablespoon|tablespoon]] [[Cookbook:Lemon Juice|lemon juice]]
+* ⅓ cup [[Cookbook:All-purpose flour|all-purpose flour]]
+* ½ cup [[Cookbook:Brown Sugar|brown sugar]]
+* 1 cup [[Cookbook:Rolled Oats|rolled oats]]
+* ½ [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Salt|salt]]
+* 1 teaspoon [[Cookbook:Cinnamon|cinnamon]]
+* ¼ cup melted [[Cookbook:Margarine|margarine]] or [[Cookbook:Butter|butter]]
+
+== Procedure ==
+# Put apple slices in shallow 9-inch (23 cm) pan.
+# Sprinkle the apples with lemon juice.
+# Combine all dry ingredients with butter and mix until crumbly. Sprinkle all this over apples.
+# [[Cookbook:Baking|Bake]] at 375 °F (190 °C) for 30 minutes.
+
+[[Category:Recipes for dessert]]
+[[Category:Recipes using apple]]
+[[Category:Recipes using brown sugar]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using margarine]]

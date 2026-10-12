@@ -1,0 +1,33 @@
+{{Recipe summary
+| Category = Meat recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+== Ingredients ==
+*1.5–2 [[Cookbook:Ounce|ounces]] (50 [[Cookbook:Gram|g]]) white [[Cookbook:Parboil|parboiled]] [[Cookbook:Rice|rice]] 
+*1 [[Cookbook:Pound|pound]] (500 g) ground [[Cookbook:Meat and Poultry|meat]] (either [[Cookbook:Beef|beef]], [[Cookbook:Lamb|lamb]], or [[Cookbook:Pork|pork]])
+*6 large red [[Cookbook:Bell Pepper|bell peppers]]
+*1 [[Cookbook:Egg|egg]]
+*[[Cookbook:Salt|Salt]], [[Cookbook:Pepper|pepper]], [[Cookbook:Paprika|paprika]]
+*[[Cookbook:Oil and Fat|Oil]]
+
+== Procedure ==
+# Cook the rice.
+# Turn on the [[Cookbook:Oven|oven]] to preheat at 390°F (200°C), while placing a [[Cookbook:Baking Dish|baking dish]] with the bottom covered in oil (or water or thin tomato sauce) inside.
+# Cut out the stems and the seeds of the peppers so that the peppers form a cup.
+# Mix the rice, the egg and the ground beef and spice everything with salt, pepper and paprika.
+# Fill the peppers, set them into the baking dish, and bake for 45 minutes.
+# Serve with green salad and tomato sauce. 
+
+[[Category:Recipes using pepper]]
+[[Category:Recipes using rice]]
+[[Category:Recipes using paprika]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Vegetarian recipes]]
+[[Category:Halal recipes]]
+[[Category:European recipes]]
+[[Category:Recipes using red bell pepper]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using meat]]

@@ -1,0 +1,69 @@
+{{recipesummary|category=Soup recipes|servings=12|time=Soaking: Overnight<br>Cooking: 2 hours|difficulty=2
+}}
+
+{{recipe}} | [[Cookbook:Tex-Mex cuisine|Tex-Mex cuisine]] | [[Cookbook:Soups|Soups]]
+
+This recipe for '''black bean soup''' is a blend of beans and vegetables inspired by Tex-Mex cuisine.{{Nutrition Summary|
+|ServingSize=2 cups
+|Servings=about 12
+|Cals=390
+|FatCals=47 (12%)
+|TotalFat=6 g
+|SatFat=3 g
+|Cholesterol=8 mg
+|Sodium=214 mg
+|Carbs=65 g
+|Fiber=16 g
+|Sugars=4 g
+|Protein=22 g
+|VitaminA=?%
+|VitaminC=?%
+|Calcium=%
+|Iron=?%
+}}
+
+==Ingredients==
+* 6 [[Cookbook:Cup|cups]] dried [[Cookbook:Black Bean|black beans]]
+* 5 [[Cookbook:Bay Leaf|bay leaves]]
+* 1 red [[Cookbook:Bell Pepper|bell pepper]], [[Cookbook:Dice|diced]]
+* 1 green bell pepper, diced
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Chili Powder|chili powder]]
+* 1 teaspoon [[Cookbook:Cumin|cumin]]
+* 7 [[Cookbook:Clove|cloves]] [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+* 1 or 2 [[Cookbook:Jalapeño|jalapeños]], finely-[[Cookbook:Chopping|chopped]] (to taste)
+* 1½ large [[Cookbook:Onion|onions]], diced
+* 1 [[Cookbook:Tablespoon|tablespoon]] [[Cookbook:Wine vinegar|red wine vinegar]]
+* [[Cookbook:Salt|Salt]] and [[Cookbook:Pepper|pepper]] to taste
+* ½ cup chopped [[Cookbook:Cilantro|cilantro]]
+* 1 cup [[Cookbook:Sour Cream|sour cream]] for [[Cookbook:Garnish|garnish]]
+
+==Procedure==
+# Pick over the beans.
+# Place in large [[Cookbook:Bean pot|bean pot]] and add [[Cookbook:Water|water]] to cover by at least 2 [[Cookbook:Inch|inches]] (~5 cm).
+# [[Cookbook:Soaking Beans|Soak]] overnight, then change water.
+# Bring beans to a [[Cookbook:Boiling|boil]]. Reduce heat, then [[Cookbook:Simmering|simmer]] until beans start to soften, around ½ hour.
+# Add bay leaves, bell peppers, chili powder, cumin, garlic, jalapeños, onions, and red wine vinegar.
+# Add salt and pepper to taste.
+# Simmer ½ to 1 hour, until beans are soft.
+# Take out bay leaves.
+# Stir in cilantro.
+# Add some sour cream.
+# Serve.
+
+[[Category:Inexpensive recipes]]
+[[Category:Southwestern recipes]]
+[[Category:Tex-Mex recipes]]
+[[Category:Camping recipes]]
+[[Category:Recipes for soup]]
+[[Category:Slow cooker recipes]]
+[[Category:Recipes using black bean]]
+[[Category:Vegetarian recipes]]
+[[Category:Boiled recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using red bell pepper]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using chili powder]]
+[[Category:Recipes using jalapeño chile]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using cumin]]

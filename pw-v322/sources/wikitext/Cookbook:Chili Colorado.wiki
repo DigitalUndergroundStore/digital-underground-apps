@@ -1,0 +1,35 @@
+{{Recipe summary
+| Category = Stew recipes
+| Time = 3.5 hours
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+==Ingredients==
+
+* 9 New Mexico dry [[Cookbook:Chili Pepper|chiles]], washed, with stems and seeds removed
+* 3 [[Cookbook:cup|cup]]s water
+* 5 [[Cookbook:pound|pound]]s boneless [[Cookbook:beef|beef]] chuck roast, trimmed of fat
+* ½ cup all-purpose [[Cookbook:flour|flour]]
+* 1 [[Cookbook:tablespoon|tablespoon]] kosher [[Cookbook:salt|salt]]
+* 1 tablespoon black [[Cookbook:pepper|pepper]]
+* 3 tablespoons [[Cookbook:olive Oil|olive oil]]
+* 1 large yellow [[Cookbook:onion|onion]], [[Cookbook:Chopping|chopped]]
+* 2 cups beef [[Cookbook:stock|stock]] or water
+
+==Procedure==
+
+#Place chiles and 3 cups water into a medium stockpot, and bring to a [[Cookbook:Boiling|boil]]. Remove from heat and steep for 30 minutes to soften. [[Cookbook:Straining|Strain]] into a bowl, reserving the cooking liquid.
+#Place the chiles and some of the liquid into a [[Cookbook:Blender|blender]], and [[Cookbook:Puréeing|purée]] until smooth. Add more liquid as necessary to form a smooth sauce. Pass sauce through a fine mesh strainer to remove any seeds and the tough skins; set aside.
+#Cut the beef into 1–2-[[Cookbook:Inch|inch]] chunks. In a medium bowl, combine flour, salt, and pepper. [[Cookbook:Dredging|Dredge]] the beef chunks in the seasoned flour; set aside.
+#Heat olive oil in a large pot over medium heat. [[Cookbook:Sautéing|Sauté]] onion until tender and translucent, about 5 minutes. Add beef chunks a few at a time, so as not to overcrowd the pot, and cook until evenly brown. Remove cooked meat, and continue browning remaining meat.
+#Return reserved cooked meat to the pot. Stir in pureed chile mixture. Add beef stock to just cover beef chunks, or to personal preference. Bring to a boil over medium heat.
+#Reduce heat to lowest setting, and [[Cookbook:Simmering|simmer]] for 3 hours, or until meat is tender. If necessary, adjust with more stock during cooking.
+
+[[Category:Recipes using beef chuck]]
+[[Category:Recipes for chili|{{PAGENAME}}]]
+[[Category:Recipes using New Mexico chile]]
+[[Category:Boiled recipes]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using beef broth and stock]]

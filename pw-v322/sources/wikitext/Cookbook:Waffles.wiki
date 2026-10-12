@@ -1,0 +1,36 @@
+{{recipesummary|category=Breakfast recipes
+| Yield = 3 ea. 4-section waffles|time=Prep: 10 minutes<br>Cooking: 5 minutes per waffle|difficulty=2
+}}
+{{recipe}} | [[Cookbook:Breakfast Recipes|Breakfast Waffle Recipe]]
+
+==Ingredients==
+* 1 [[Cookbook:Tablespoon|tablespoon]] white granulated [[Cookbook:Sugar|sugar]]
+* 1 tablespoon [[Cookbook:Baking Powder|baking powder]]
+* 1½ [[Cookbook:Cup|cup]]s (360 [[Cookbook:Milliliter|ml]]) [[Cookbook:Milk|milk]]
+* ½ cup (120 ml) [[Cookbook:Vegetable Oil|vegetable oil]]
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Salt|salt]]
+* 2 [[Cookbook:Eggs|eggs]], [[Cookbook:Separate|separated]]
+* 1¾ cups (420 ml) [[Cookbook:Flour|flour]]
+
+==Procedure==
+
+# Lightly [[Cookbook:Brush|brush]] grids of [[Cookbook:Waffle Iron|waffle iron]] with oil, close waffle iron, and preheat according to manufacturer's directions.
+# In small bowl, [[Cookbook:Beat|beat]] egg whites until stiff (but not dry) and set aside.
+# In large bowl, beat egg yolks until thick and lemon-colored.
+# Continue beating, adding milk and oil.
+# Add dry ingredients, beat until smooth, and fold in egg whites.
+# Pour 1 cup (240 ml) of batter on heated grid, close unit and cook according to manufacturer's directions.
+
+==Notes, tips, and variations==
+
+* Spread ¾ cup (180 ml) batter, then quickly cover surface of batter with thinly sliced apples. Close cover and cook as usual.
+
+
+[[Category:Vegetarian recipes]]
+[[Category:Breakfast recipes]]
+[[Category:Recipes for waffles]]
+[[Category:Recipes using baking powder]]
+[[Category:Recipes using white sugar]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using wheat flour]]
+[[Category:Recipes using vegetable oil]]

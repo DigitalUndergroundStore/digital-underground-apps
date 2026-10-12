@@ -1,0 +1,31 @@
+{{Recipe summary
+| Category = Macaroni and cheese recipes
+| Servings = 4–6
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+* ½ [[Cookbook:Cup|cup]] (8 [[Cookbook:Tablespoon|tbsp]] / 1 stick / 125 [[Cookbook:Gram|g]] / 4.4 [[Cookbook:Ounce|oz]]) [[Cookbook:Butter|butter]]
+* ½ cup (70 g / 2.5 oz) [[Cookbook:Flour|flour]]
+* 4 cups (1 L / 1.1 quart) [[Cookbook:Milk|milk]], heated
+* 1 cup (125 g / 4.4 oz) [[Cookbook:Cheddar Cheese|cheddar cheese]]
+* 1 cup (125 g / 4.4 oz) [[Cookbook:Parmesan Cheese|Parmesan]] or [[Cookbook:Monterey Jack Cheese|Monterey Jack cheese]]
+* ½ [[Cookbook:Teaspoon|tsp]] [[Cookbook:Cayenne pepper|cayenne pepper]], or to taste
+* 1 [[Cookbook:Pound|pound]] (450 g) [[Cookbook:Macaroni|macaroni]] noodles, [[Cookbook:Boiled Pasta|boiled and drained]]
+
+== Procedure ==
+# Make a [[Cookbook:Roux|roux]] using the butter and flour.
+# Add the heated milk, and [[Cookbook:Whisk|whisk]] until smooth to complete the [[Cookbook:White Sauce|white sauce]].
+# Mix in the cheese and cayenne pepper.
+# Mix the cheese sauce into the cooked macaroni noodles until well-coated.
+
+[[Category:Recipes for macaroni and cheese]]
+[[Category:Recipes using pasta and noodles]]
+[[Category:Recipes using cheddar]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using wheat flour]]
+[[Category:Recipes using cow milk]]
+[[Category:Recipes using monterey jack]]

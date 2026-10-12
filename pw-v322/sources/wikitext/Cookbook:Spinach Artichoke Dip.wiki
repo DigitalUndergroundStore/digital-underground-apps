@@ -1,0 +1,43 @@
+{{Recipe summary
+| Category = Dip recipes
+| Difficulty = 1
+}}
+
+{{recipe}}
+
+Formal or informal, '''spinach artichoke dip''' is a great appetizer at any party. It is quick and easy taking very little time to prepare. The dip may be served with a variety or crackers, breads, or chips. 
+
+==Ingredients==
+* 16 [[Cookbook:Ounce|ounces]] (450 [[Cookbook:Gram|g]]) [[Cookbook:Cream Cheese|cream cheese]]
+* ¾ [[Cookbook:Cup|cup]] (180 [[Cookbook:Milliliter|ml]]) heavy [[Cookbook:Cream|cream]] (use half milk, if desired) 
+*⅓ [[Cookbook:Cup|cup]] (80 ml) grated [[Cookbook:Parmesan Cheese|Parmesan cheese]] 
+*¼ [[Cookbook:Teaspoon|teaspoon]] (60 ml) [[Cookbook:garlic|garlic powder]] 
+* 16 [[Cookbook:Ounce|ounces]] (450 g) frozen cut leaf [[Cookbook:spinach|spinach]], thawed and well drained 
+* 1 can quartered [[Cookbook:artichoke|artichoke hearts]], rinsed and well-drained
+*⅔ [[Cookbook:Cup|cup]] (160 ml) shredded [[Cookbook:Monterey Jack Cheese|Monterey Jack cheese]]
+*1 [[Cookbook:Cup|cup]] prepared (240 ml) [[Cookbook:salsa|salsa]] 
+* Crackers or [[Cookbook:Tortilla Chip|tortilla chips]], for serving
+
+==Procedure==
+#In a [[Cookbook:Food Processor|food processor]] fitted with a metal blade, process the cream cheese, cream, Parmesan cheese, and garlic powder until smooth and creamy. Add the spinach and process until thoroughly mixed. Add the artichokes and process just until coarsely chopped.
+#Turn the mixture into a 3½-quart electric [[Cookbook:Slow Cooker|slow cooker]]; smooth the top.
+#Cover and cook on the high heat setting for 1¼–1½ hours, until hot in the center. Sprinkle the top evenly with the Jack cheese and spoon the salsa in a ring around the inside edges of the slow cooker. Cover and continue heating on high 15 minutes longer, or until the cheese is melted. 
+#Reduce the heat to the low setting and serve warm with crackers or tortilla chips for dipping. Refrigerate any leftovers.
+
+==Notes, tips, and variations==
+*This dip is best served hot but may also be served chilled.
+*If served in a bread bowl, pieces may be broken off and used as dipping tools for further enjoyment. 
+*Other condiments that go great with this dip include sides of salsa, guacamole, or sour cream. 
+*This is great appetizer for vegetarians, and vegan cream cheese may be substituted if need be.
+
+[[Category:Side dish recipes]]
+[[Category:Slow cooker recipes]]
+[[Category:Recipes using artichoke]]
+[[Category:Recipes using spinach]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes for dip]]
+[[Category:Appetizer recipes]]
+[[Category:Recipes using cream cheese]]
+[[Category:Parmesan recipes]]
+[[Category:Recipes using monterey jack]]
+[[Category:Recipes using garlic powder]]

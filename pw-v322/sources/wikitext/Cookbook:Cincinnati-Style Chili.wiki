@@ -1,0 +1,50 @@
+{{Recipe summary
+| Category = Stew recipes
+| Difficulty = 1
+}}
+
+{{recipe}}
+
+==Ingredients==
+* 2 [[Cookbook:Pound|pounds]] ground [[Cookbook:Beef|beef]]
+* 1 [[Cookbook:Quart|quart]] cold water
+* 1 can (6 [[Cookbook:Ounce|ounces]]) [[Cookbook:Tomato Paste|tomato paste]]
+* 2 medium [[Cookbook:Onion|onions]], finely [[Cookbook:Chopping|chopped]]
+* 2 cloves of [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+* 1 [[Cookbook:Tablespoon|tablespoon]] [[Cookbook:Vinegar|vinegar]]
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Worcestershire Sauce|Worcestershire sauce]]
+* 3 tablespoons [[Cookbook:Chili Powder|chili powder]]
+* 1 tablespoon salt
+* 1 teaspoon [[Cookbook:Cumin|cumin]]
+* ½ teaspoon [[Cookbook:Oregano|oregano]]
+* ½ teaspoon [[Cookbook:Cayenne Pepper|cayenne pepper]]
+* ½ teaspoon [[Cookbook:Black Pepper|black pepper]]
+* ½ teaspoon [[Cookbook:Cinnamon|cinnamon]]
+* ½ teaspoon [[Cookbook:Allspice|allspice]]
+* ¼ teaspoon [[Cookbook:Marjoram|marjoram]]
+* ⅛ teaspoon ground [[Cookbook:Clove|cloves]]
+* 2 [[Cookbook:Bay Leaf|bay leaves]]
+
+==Procedure==
+#Crumble the raw ground beef into the cold water.
+#Add remaining ingredients and spices. Stir well, breaking the meat up before cooking.
+#Cover and [[Cookbook:Simmering|simmer]] over low heat for two hours, stirring occasionally.
+#Cool, then refrigerate and remove solidified grease.
+#Reheat and serve as desired.
+
+== Notes, tips, and variations ==
+
+* Serve over spaghetti. Top with cheese to make a Three-way, top with onions and cheese to make a Four-way, top with cooked pinto beans, onions and cheese to make a Five-way. May also be used as hot dog sauce with mustard and minced onions to make a Coney, adding shredded cheese to make a Cheese Coney.
+
+[[Category:Recipes for chili]]
+[[Category:Recipes using ground beef]]
+[[Category:Midwestern U.S. recipes]]
+[[Category:Boiled recipes]]
+[[Category:Refrigerated recipes]]
+[[Category:Recipes using allspice]]
+[[Category:Recipes using chile]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using chili powder]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using cumin]]
+[[Category:Recipes using marjoram]]

@@ -1,0 +1,55 @@
+__NOTOC__
+{{Recipe summary
+| Category = Pork recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+There are two methods here: the traditional smoking, and the oven smoking method. Both of them produce mouthwatering, fall-off-the-bone ribs.
+
+== Ingredients ==
+* 2 slabs baby back [[Cookbook:Pork|pork]] ribs (also known as back ribs, loin ribs, back loin ribs)
+* ¼ [[Cookbook:Cup|cup]] [[Cookbook:Paprika|paprika]] (if you're doing the oven method, use smoked paprika)
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Garlic|garlic powder]]
+* 2 tbsp [[Cookbook:Chili Powder|chili powder]]
+* 2 tbsp [[Cookbook:Cayenne Pepper|cayenne pepper]]
+* 1½ cups [[Cookbook:Tomato Paste|tomato paste]]
+* ¼ cup [[Cookbook:Molasses|molasses]]
+* ½ cup dark [[Cookbook:Brown Sugar|brown sugar]], divided
+* ¼ cup apple [[Cookbook:Cider Vinegar|cider vinegar]]
+* 1 tbsp salt
+* 1 tbsp black [[Cookbook:Peppercorn|peppercorns]], cracked
+* Several pounds each hickory and applewood chunks, or chips if using oven method
+
+== Procedure ==
+
+=== Prep ===
+
+# Combine ¼ cup of the brown sugar, chili powder, garlic powder, cayenne, salt, and pepper. Rub meat side of ribs with this mixture and refrigerate for at least 1 hour.
+# Combine remaining ingredients in a large [[Cookbook:Saucepan|saucepan]] and bring to a boil over high heat. Cook until reduced by half. Set aside.
+
+===Cooking===
+
+==== Oven procedure ====
+#Place a ¼ cup each hickory and applewood chunks in the bottom of a roasting pan. Place a rack in the pan and place ribs on the rack.
+#Cover roasting pan with [[Cookbook:Aluminium Foil|aluminum foil]] and place in the center of a 200°F [[Cookbook:Oven|oven]] and cook 6 hours, brushing with sauce every hour.
+#Take ribs and remove foil. Brush meat side liberally with sauce and place under a preheated [[Cookbook:Broiler|broiler]] until well browned.
+#Slice into 1-rib portions and serve warm with remaining sauce.
+
+==== Traditional procedure ====
+#Place enough hickory and applewood into the firebox of your friendly neighborhood smoker to keep the temperature around 200°F.
+#Place ribs in smoker and cook 6 hours, brushing with sauce every hour.
+#Brush meat side liberally with sauce and place meat side down on a high grill until well browned.
+#Remove, slice into 1-rib portions, and serve with remaining sauce.
+
+[[Category:Recipes using pork]]
+[[Category:Baked recipes]]
+[[Category:Recipes for spice mixes]]
+[[Category:Smoked recipes]]
+[[Category:Barbecue recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using dark brown sugar]]
+[[Category:Recipes using chili powder]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using molasses]]

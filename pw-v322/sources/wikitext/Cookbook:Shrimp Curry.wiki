@@ -1,0 +1,30 @@
+{{Recipe summary
+| Category = Shrimp recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+== Ingredients ==
+*1 [[Cookbook:Pound|pound]] peeled, deveined jumbo [[Cookbook:Shrimp|shrimp]], heads removed
+*½ [[Cookbook:Onion|onion]], finely [[Cookbook:Dice|diced]]
+*1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Mince|minced]] [[Cookbook:Garlic|garlic]]
+*1 tbsp [[Cookbook:Vegetable oil|vegetable oil]]
+*1 tbsp [[Cookbook:Curry Powder|curry powder]]
+*½ [[Cookbook:Cup|cup]] chicken [[Cookbook:Broth|broth]]
+*1 heaping tbsp red curry paste
+*1 tbsp [[Cookbook:Clarified Butter|ghee]]
+
+== Procedure ==
+#Heat oil in a large stainless steel [[Cookbook:Sauté Pan|sauté pan]] over medium high heat. Add shrimp and sauté just until bright pink. Remove and keep warm.
+#Melt ghee in same pan. Add vegetables and sauté until browned around edges.
+#Add remaining ingredients and shrimp and [[Cookbook:Mixing#Tossing|toss]] to coat. Reduce heat to medium low and cook until shrimp are heated through.
+#Remove and serve.
+
+[[Category:Recipes using shrimp]]
+[[Category:Recipes using curry powder]]
+[[Category:Pan fried recipes]]
+[[Category:Main course recipes]]
+[[Category:Indian recipes]]
+[[Category:Recipes using chicken broth and stock]]
+[[Category:Recipes using vegetable oil]]

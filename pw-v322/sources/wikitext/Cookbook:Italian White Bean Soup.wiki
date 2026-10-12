@@ -1,0 +1,44 @@
+{{Recipe summary
+| Category = Soup recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+{{decameron}}
+
+==Ingredients==
+* 1 [[Cookbook:Pound|pound]] dried white [[Cookbook:Beans|beans]] (haricot or flagelot, not lima or butter beans)
+* [[Cookbook:Salt|Salt]]
+* [[Cookbook:Butter|Butter]]
+* 1 [[Cookbook:Carrot|carrot]]
+* 1 [[Cookbook:Onion|onion]], halved
+* 2 [[Cookbook:Leek|leeks]], in chunks
+* 1 stalk [[Cookbook:Celery|celery]]
+* [[Cookbook:Chicken|Chicken]] or [[Cookbook:Veal|veal]] [[Cookbook:Stock|stock]]
+* 3 [[Cookbook:Egg Yolk|egg yolks]]
+* 1 cup [[Cookbook:Cream|cream]]
+* [[Cookbook:Peas|Peas]], [[Cookbook:Boiling|boiled]]
+* [[Cookbook:Crouton|Croûtons]]
+==Procedure==
+# Soak beans in water for 12 hours, then drain them.
+# Add the drained beans to a stock pot with a little salt, butter, carrot, onion, two leeks, and a stick of celery.
+# Cover with water, and [[Cookbook:Simmering|simmer]] until the vegetables are well cooked.
+# Drain the beans and vegetables, discarding the vegetables.
+# [[Cookbook:Puréeing|Purée]] the beans, adding stock as necessary to get a smooth consistency.
+# Transfer purée to a pot, and add stock to get the desired consistency. Bring to a [[Cookbook:Boiling|boil]], and keep hot until serving.
+# Combine the egg yolks with the cream, and add this to the soup.
+# Transfer the soup to a warm tureen, add some boiled green peas, and serve with fried croûtons handed separately.
+
+[[Category:Recipes for soup]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using cream]]
+[[Category:Recipes using onion]]
+[[Category:Recipes using leek]]
+[[Category:Recipes using egg yolk]]
+[[Category:Recipes using peas]]
+[[Category:Recipes using croutons]]
+[[Category:Recipes using chicken broth and stock]]
+[[Category:Recipes using veal broth and stock]]

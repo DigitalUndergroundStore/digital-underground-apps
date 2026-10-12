@@ -1,0 +1,57 @@
+{{recipesummary|category=Meat recipes|servings=6–12|time=½ hour|difficulty=2
+}}
+{{recipe}} | [[Cookbook:Cuisine of the United States|American cuisine]] | [[Cookbook:Tex-Mex cuisine|Tex-Mex cuisine]] | [[Cookbook:Cuisine of Mexico|Mexican cuisine]] 
+
+The original contributor of this recipe noted the following anecdote:<blockquote>''When I visited [[W:San Antonio|San Antonio]], Texas, years ago, my cousin took me to the Texas Folklife Festival, where he introduced me to fajitas, telling me that they were originated by poor people who cut "beef skirts" (skirt steak) across the grain to make this tough cut much more tender.''</blockquote>__NOTOC__
+==Ingredients==
+
+=== Marinade ===
+*½ [[Cookbook:Cup|cup]] [[Cookbook:Olive Oil|olive oil]]
+*⅓ cup [[Cookbook:Soy Sauce|soy sauce]]
+*Juice of 2 [[Cookbook:Lime|limes]]
+*1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Red pepper flakes|red pepper flakes]]
+*½ tsp freshly-ground [[Cookbook:Cumin|cumin]]
+*4 [[Cookbook:Green Onion|green onions]], [[Cookbook:Chopping|chopped]]
+*3 [[Cookbook:Tablespoon|Tbsp]] dark [[Cookbook:Brown Sugar|brown sugar]]
+
+=== Fajitas ===
+* 1 [[Cookbook:Each|ea]]. (2.25 [[Cookbook:Pound|lb]] / 1 [[Cookbook:Kilogram|kg]]) inside [[Cookbook:Beef#Plate|skirt steak]], cut into 3 equal pieces
+
+* 1 Tbsp [[Cookbook:Vegetable oil|vegetable oil]]
+* 4 small [[Cookbook:Onion|onions]], wedged
+* 2 small red and green [[Cookbook:Bell Pepper|bell peppers]], [[Cookbook:Slicing|sliced]]
+
+=== Serving ===
+* [[Cookbook:Tortilla|Tortillas]]
+* [[Cookbook:Salsa Fresca|Salsa fresca]]
+* [[Cookbook:Chunky Guacamole|Chunky guacamole]]
+* Lime wedges
+
+==Procedure==
+#Combine olive oil, soy sauce, lime juice, red pepper flakes, cumin, green onion, and brown sugar in a [[Cookbook:Blender|blender]]. Blend until smooth.
+#Pour marinade into a gallon size zip-top plastic bag. Add skirt steak and seal, removing as much air as possible. Refrigerate for at least 1 hour, preferably 24 hours or more. 
+#Remove steak from marinade and place down as close as possible to coals of a preheated charcoal [[Cookbook:Grill|grill]]. Cook one side until the internal temperature is 125°F (51°C).  Flip and allow to cook until the internal temperature is at least 145°F (63°C) in the thickest part. These temperatures are enough to safely cook the meat, you may like it more well done.
+#Remove and cover immediately, allowing at least 3 minutes to rest. You may wish to immediately wrap tightly with [[Cookbook:Aluminium Foil|aluminum foil]] and remove to a low heat area of the grill or a low heat oven to keep ready for less-than-immediate use.
+#Meanwhile, place a 9–10-[[Cookbook:Inch|inch]] (23–25 [[Cookbook:Centimetre (cm)|cm]]) cast-iron [[Cookbook:Frying Pan|skillet]] down on the coals (or a stove).
+#Once pan has heated, toss sliced peppers and onions with vegetable oil. Place in the skillet and cook for at least 2–3 minutes. They should be cooked to a moderately soft state on high heat with some browning evident. A small amount of water can be added, and the pan covered, to partially [[Cookbook:Steaming|steam]] the vegetables if desired. Remove and keep warm. 
+#[[Cookbook:Slicing|Slice]] steak as thinly as possible across the grain.
+#Serve fajitas with tortillas, salsa, guacamole, and lime wedges (see notes).
+
+== Notes, tips, and variations ==
+
+* The onion and bell pepper are often mixed with the sliced meat in one dish and allowed to marinate together.
+* The tortillas and other ingredients are typically served on separate dishes.
+* For those who may not know, the eater is expected to assemble the various components of the dish as they prefer—there is no need for the cook to do further assembly. The tortillas are used as wrap for the other ingredients, topped with a squirt of lime juice, if desired.
+
+[[Category:Inexpensive recipes]]
+[[Category:Recipes using beef]]
+[[Category:Tex-Mex recipes]]
+[[Category:Camping recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using red bell pepper]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using dark brown sugar]]
+[[Category:Recipes using chile flake]]
+[[Category:Recipes using lime juice]]
+[[Category:Recipes using ground cumin]]
+[[Category:Recipes using vegetable oil]]

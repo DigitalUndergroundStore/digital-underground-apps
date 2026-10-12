@@ -1,0 +1,27 @@
+{{Recipe summary
+| Category = Fish recipes
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Seafood|Seafood]]
+
+This is a simple recipe that takes no more than 40 minutes from fridge to table.
+
+==Ingredients==
+* 1 [[Cookbook:Salmon|salmon]] fillet (whatever size you like)
+* 3 parts [[Cookbook:Honey|honey]]
+* 2 parts coarse-grained [[Cookbook:Mustard|mustard]]
+
+==Procedure==
+# Preheat [[Cookbook:Oven|oven]] to 350°F/180°C.
+# Wash and pat dry the salmon fillet. Remove the pin bones (if there are any), and cut salmon into portions if desired.
+# Mix honey and mustard, and adjust mixture to taste.
+# Spread mixture generously over and under the salmon.
+# Cook in oven on top rack for about 15–18 minutes (depending on how you like your salmon cooked).
+# Finish under [[Cookbook:Broiling|broiler]] for 2–3 minutes, but remove before glaze starts to char.
+
+[[Category:Recipes using salmon]]
+[[Category:Recipes using prepared mustard|{{PAGENAME}}]]
+[[Category:Recipes using honey]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]

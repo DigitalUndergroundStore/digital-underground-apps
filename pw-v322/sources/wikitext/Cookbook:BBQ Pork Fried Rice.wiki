@@ -1,0 +1,67 @@
+__NOTOC__
+{{Recipesummary|category=Rice recipes|servings=4|time=1 hour|difficulty=3| Energy = 360 kcal}}
+
+{{Recipe}} | [[Cookbook:Cuisine of China|Cuisine of China]]
+
+==Ingredients==
+
+=== Pork ===
+* 1 piece (750 [[Cookbook:Gram|g]]) boneless [[Cookbook:Pork#Loin|pork loin]], cut into 30 pieces
+
+* 50 [[Cookbook:Milliliter|ml]] [[Cookbook:Barbecue Sauce|barbeque sauce]]
+* 15 ml light [[Cookbook:Soy sauce|soy sauce]]
+* 30 ml [[Cookbook:Hoisin Sauce|hoisin sauce]]
+* 5 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Sugar|sugar]]
+* 2½ tbsp [[Cookbook:Salt|salt]]
+
+=== Fried rice ===
+* 6½ [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Olive Oil|olive oil]]
+* 5 tbsp [[Cookbook:Sesame Oil|sesame oil]]
+* 7 cloves [[Cookbook:Garlic|garlic]], [[Cookbook:Mincing|minced]]
+* 5 [[Cookbook:Centimetre (cm)|cm]] piece of [[Cookbook:Ginger|ginger]], minced
+* 5 red [[Cookbook:Chilli|chillies]], minced
+* 6 [[Cookbook:Scallion|scallion]], cut into 2 cm pieces
+* 4 [[Cookbook:Egg|eggs]], mixed
+* 1000 g cooked [[Cookbook:Rice|rice]]
+* 4 tbsp salted [[Cookbook:Soy sauce|soy sauce]]
+* 2 tbsp chicken [[Cookbook:Dehydrated Broth|bouillon powder]]
+* 1½ tbsp [[Cookbook:Oyster sauce|oyster sauce]]
+* 2 tbsp [[Cookbook:Salt|salt]]
+* 20 g [[Cookbook:Jalapeño|jalapeño]]
+
+=== Garnish ===
+* Shredded [[Cookbook:Cabbage|cabbage]]
+* [[Cookbook:Tomato|Tomato]]
+* [[Cookbook:Pickle|Pickles]]
+* Shredded [[Cookbook:Lettuce|lettuce]]
+* [[Cookbook:Cucumber|Cucumber]]
+* 3 [[Cookbook:Egg|eggs]], cooked into an [[Cookbook:Omelette|omelette]] and sliced 1 cm thick (as garnish)
+
+==Procedure==
+
+=== '''Pork''' ===
+# Combine the barbecue sauce, soy sauce, hoisin sauce, sugar, and salt to make the marinade.
+# Place the pork into the sauce mixture. Cover with plastic wrap, and refrigerate for 25 minutes. Make sure the sauce in the bowl is really absorbed.
+# Transfer the pork to a baking pan, and [[Cookbook:Baking|bake]] for 20 minutes at {{#invoke:temperature|c|200}}. When finished, put the pork onto a plate.
+
+=== '''Fried rice''' ===
+# Heat the olive oil and sesame oil in a medium [[Cookbook:Wok|wok]]. Fry the garlic, red chillies, ginger and scallion, then stir briefly for 1 minute. Add the mixed egg and rice.
+# Add the grilled pork, salted soy sauce, chicken powder, oyster sauce, salt and jalapeño. Stir until mixed.
+# Serve hot with garnishes. 
+
+[[Category:Recipes for fried rice]]
+[[Category:Recipes using pork]]
+[[Category:Recipes using egg]]
+[[Category:Chinese recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Inexpensive recipes]]
+[[Category:Barbecue recipes]]
+[[Category:Recipes using sugar]]
+[[Category:Recipes using cabbage]]
+[[Category:Recipes using cucumber]]
+[[Category:Recipes using dehydrated broth]]
+[[Category:Recipes using fresh ginger]]
+[[Category:Recipes using green onion]]
+[[Category:Recipes using hoisin sauce]]
+[[Category:Recipes using jalapeño chile]]
+[[Category:Recipes using lettuce]]

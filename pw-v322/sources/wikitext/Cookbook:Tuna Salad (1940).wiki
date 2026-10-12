@@ -1,0 +1,38 @@
+{{Recipe summary
+| Category = Salad recipes
+| Difficulty = 1
+}}
+
+{{recipe}}
+
+This classic '''tuna salad''' recipe is from the 1940's U.S.
+
+==Ingredients==
+*1 can (6–9½­ oz / ~170–270 g) [[Cookbook:Tuna|tuna]]
+*¼ [[Cookbook:Apple|apple]], finely [[Cookbook:Chopping|chopped]]
+*½ stalk [[Cookbook:Celery|celery]], finely chopped
+*¼ [[Cookbook:Cup|cup]] [[Cookbook:Mayonnaise|mayonnaise]] (low fat can work)
+*1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Lemon Juice|lemon juice]]
+*½ [[Cookbook:Each|ea]]. chopped [[Cookbook:Green Onion|green onion]] or ½ tsp dried chopped white or yellow [[Cookbook:Onion|onion]]
+*1 [[Cookbook:Hard Boiled Eggs|hard boiled egg]], chopped (or two hard boiled egg whites and a bit of oil olive oil to make up the difference)
+*Ground [[Cookbook:Black Pepper|black pepper]] to taste
+*[[Cookbook:Paprika|Paprika]] (optional)
+*[[Cookbook:Lettuce|Lettuce]] (optional)
+
+==Procedure==
+#Drain and squeeze tuna dry, discarding liquid or reserving for some other use.
+#Combine tuna, apple, celery, mayonnaise, lemon juice, green onion, egg, and pepper.
+#Refrigerate 1 hour or more.  
+#Sprinkle with paprika and trim with lettuce, if desired.
+
+[[Category:Recipes using tuna]]
+[[Category:Recipes for salad]]
+[[Category:Refrigerated recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using apple]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes using hard-cooked egg]]
+[[Category:Recipes using green onion]]
+[[Category:Recipes using lettuce]]
+[[Category:Recipes using mayonnaise]]

@@ -1,0 +1,56 @@
+__NOTOC__
+{{recipesummary|category=Fish recipes|servings=4|time=30 minutes|difficulty=2
+| Image = [[Image:Beer Battered Fish and Chips.jpg|300px]]
+}}
+{{recipe}} | [[Cookbook:Cuisine of the United Kingdom|British Cuisine]] | [[Cookbook:Cuisine of New Zealand|New Zealand]]
+
+'''Fish and chips''' is a popular dish in England, New Zealand and Australia. The traditional [[Cookbook:Fish|fish]] in England is [[Cookbook:Cod|cod]], though this is likely to fall apart or fail to cook in the middle.
+
+==Ingredients==
+
+=== Fish ===
+*125 [[Cookbook:Gram|g]] (4 [[Cookbook:Ounce|oz]]) [[Cookbook:All-purpose flour|plain flour]] 
+*125 g (4 oz) [[Cookbook:Cornstarch|corn flour]] (cornstarch)
+*[[Cookbook:Salt|Salt]]
+*Enough cold water to form a [[Cookbook:Batter|batter]]
+*4 [[Cookbook:Cod|cod]]/[[Cookbook:Haddock|haddock]]/[[Cookbook:Monkfish|monkfish]] (or any other suitable flaky fish) fillets
+
+=== Chips ===
+*4 white [[Cookbook:Potato|potatoes]], Maris Piper preferably
+*1 [[Cookbook:Liter|litre]] (1¾ [[Cookbook:Pint|pint]]) [[Cookbook:Vegetable oil|vegetable oil]] for deep-frying
+*Sea salt
+
+=== Serving ===
+*1 [[Cookbook:Lemon|lemon]], wedged
+*Sprig of [[Cookbook:Parsley|parsley]], to garnish
+*Sea salt
+*[[Cookbook:Malt vinegar|Malt Vinegar]]
+[[Image:Freidora.jpg|thumb|A [[w:deep fryer|deep fryer]] is the safest way to make fish and chips, just as they do at the chipper.]]
+==Procedure==
+#Preheat the [[Cookbook:Vegetable Oil|vegetable oil]] in a deep fryer to 180°C (350°F), or until a cube of bread browns in 15 seconds when added to the oil.
+#Peel the [[Cookbook:Potato|potatoes]] and cut into thick wedges. [[Cookbook:Deep Fat Frying|Deep-fry]] the potatoes in batches for 6–8 minutes or until they are crisp and golden.
+#Remove from the oil, and drain on [[Cookbook:Paper Towel|kitchen paper]]. Sprinkle with sea salt and keep warm.
+#In a bowl, whisk together the plain flour, corn flour, salt, and enough cold water to form a [[Cookbook:Batter|batter]].
+#Cut the fish into thick slices, then coat in the batter.
+#Deep fry the fish in batches for 5–6 minutes, depending on the size of the fish. Remove and drain on kitchen paper.
+#Transfer the fish and chips to serving plates and garnish with lemon wedges and sprig of parsley. Or for a fun, traditional twist, place the fried fish and chips on brown paper or newsprint.
+#Top with [[Cookbook:Salt|salt]] and/or [[Cookbook:Vinegar|vinegar]]. Typically the lemon wedges are squeezed over the fish and the vinegar is sprinkled on the chips. Also can be served with [[Cookbook:Pickle|pickles]], pickled [[Cookbook:Onion|onions]], [[Cookbook:Tartar Sauce|tartar sauce]], pickled [[Cookbook:Egg|eggs]], and [[Cookbook:Mushy Peas|mushy peas]].
+
+==Warnings==
+[[File:Chip-pan-fire.jpg|thumb|[[w:Chip pan|Chip pans]] are extremely dangerous, and are a leading cause of kitchen fires; this demonstrates a simulation of a chip pan fire.]]
+
+* Fish and chips involves [[Cookbook:Deep Fat Frying|deep frying]] and can be dangerous and should only be performed with care. It is a leading cause of house fires in England, and further, may spill hot oil, causing severe burns.
+
+{{Wikipedia|Fish and chips}}
+
+[[Category:Recipes using fish]]
+[[Category:Recipes using potato]]
+[[Category:Deep fried recipes]]
+[[Category:English recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using lemon]]
+[[Category:Recipes using cod]]
+[[Category:Recipes using cornstarch]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using vegetable oil]]
+[[Category:Recipes using haddock]]

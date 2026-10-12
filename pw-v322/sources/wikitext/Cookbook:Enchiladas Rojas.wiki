@@ -1,0 +1,64 @@
+__NOTOC__{{Recipe summary
+| Category = Tex-Mex recipes
+| Difficulty = 3
+}}
+
+{{recipe}} | [[Cookbook:Cuisine of Mexico|Mexican cuisine]] | [[Cookbook:Tex-Mex cuisine|Tex-Mex cuisine]]
+==Ingredients==
+* 6 dried ''ancho'' [[Cookbook:Chiles|chilies]]
+*1–2 [[Cookbook:Cup|cups]] [[Cookbook:Boiling|boiling]] water
+*6 tomatoes, peeled, seeded and coarsely-[[Cookbook:Chopping|chopped]] OR 2 cups canned Roma tomatoes, drained and chopped
+*½ cup [[Cookbook:Dice|diced]] [[Cookbook:Onion|onions]]
+*1 [[Cookbook:Teaspoon|tsp]] finely-[[Cookbook:Chopping|chopped]] [[Cookbook:Garlic|garlic]]
+*½ tsp [[Cookbook:Epazote|epazote]], crumbled
+*[[Cookbook:Sugar|Sugar]]
+*[[Cookbook:Salt|Salt]]
+*¼ tsp freshly-ground [[Cookbook:Black Pepper|black pepper]]
+*5 [[Cookbook:Tablespoon|Tbsp]] [[Cookbook:Olive Oil|olive oil]]
+*2 [[Cookbook:Egg|eggs]]
+*1 cup [[Cookbook:Cream|cream]] or [[Cookbook:Half and Half|half-and-half]]
+*6 ''chorizo'' [[Cookbook:Sausage|sausages]], skinned and [[Cookbook:Chopping|chopped]] OR ¾ [[Cookbook:Pound|lb]] spiced pork, chicken or turkey sausage, skinned and chopped
+*1 cup crumbled queso blanco OR freshly-grated [[Cookbook:Parmesan Cheese|Parmesan cheese]]
+*12 [[Cookbook:Tortilla|tortillas]]
+*½ cup chopped [[Cookbook:Green Onion|green onions]]
+
+==Procedure==
+
+# Soak the chilies in boiling water for 30 minutes.
+# Wearing gloves, stem, seed and cut the chilies into small pieces.
+# Put the chilies and 1 cup of soaking water in a [[Cookbook:Blender|blender]] and [[Cookbook:Puréeing|purée]] at high speed for 20 seconds.
+# Add the tomatoes, onions, garlic, epazote, sugar, salt, and black pepper and blend to a smooth purée.
+# In a [[Cookbook:Frying Pan|frying pan]], add 1 tablespoon of olive oil and heat over high heat for 3 minutes.
+# Pour in the tomato sauce and cook for 5 minutes, stirring frequently. Remove from the heat.
+#In a small bowl, beat the eggs with the cream or half-and-half until well blended.
+# Slowly pour the egg and cream into the pan with the sauce, stirring constantly. Cover and set aside.
+#In another frying pan, [[Cookbook:Frying|fry]] the sausage meat over moderate heat for 5 minutes or so, until they are lightly browned.
+# With a slotted spoon, remove the sausage from the pan and drain on [[Cookbook:Paper Towel|paper towels]]. Discard the fat in the frying pan.
+# Place the sausages in a small bowl and stir in 3 tablespoons of sauce and ½ cup cheese.
+#Heat the [[Cookbook:Oven|oven]] to 350°F.
+# In a heavy frying pan, fry the tortillas, one at a time, in very hot olive oil as follows:
+##Dip a tortilla in the tomato sauce.
+##Fry for a minute each side in the pan.
+##Remove the tortilla to a warm plate and place about ¼ cup of sausage mixture in the centre.
+##Roll up the tortilla with the filling inside.
+#Place filled tortillas in a [[Cookbook:Baking Dish|baking dish]], seam side down. Pour the rest of the tomato sauce over them.
+#Sprinkle the top with the green onions and ½ cup cheese.
+#[[Cookbook:Baking|Bake]] for about 15 minutes or until the cheese has melted and the top has browned lightly.
+==Notes, tips, and variations==
+* Always wear glove when handling hot chillies and do not touch your face or eyes when doing so.
+* 3 cups of leftover cooked chicken or pork may be substituted for the sausage; in this case, do not brown it but add it to the tomato sauce directly.
+
+[[Category:Recipes using ancho chile]]
+[[Category:Recipes for enchiladas]]
+[[Category:Recipes for sauces and condiments]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Mexican recipes|{{PAGENAME}}]]
+[[Category:Tex-Mex recipes]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using sugar]]
+[[Category:Recipes using chorizo]]
+[[Category:Recipes using cream]]
+[[Category:Recipes using half and half]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using parmesan]]

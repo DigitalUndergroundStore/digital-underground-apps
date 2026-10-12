@@ -1,0 +1,34 @@
+{{Recipe summary
+| Category = Pork recipes
+| Difficulty = 3
+}}
+
+{{recipe}} 
+
+These ribs have beaten some of the best BBQ joints around, including Famous Dave's and Roscoe's, in local competitions.
+
+== Ingredients ==
+
+* 2 slabs baby-back [[Cookbook:Pork|pork]] ribs
+* [[Cookbook:Rib Rub|Rib Rub]]
+* [[Cookbook:Maple Barbecue Sauce|Maple Barbecue Sauce]]
+* Hickory and applewood chunks
+
+== Procedure ==
+#Remove membrane on the bottom of the ribs. Season both sides liberally with rib rub and refrigerate at least 1 hour.
+#Place enough hickory and applewood chunks in the firebox of a [[Cookbook:Smoker|smoker]] to keep the temperature around 200 °F (95 °C).
+#Place ribs in smoker and cook, brushing with barbecue sauce every 1½ hours for 4 hours or until very tender, changing chunks as needed.
+#[[Cookbook:Brush|Brush]] meat side of ribs liberally with sauce and place meat side down on a very, very hot [[Cookbook:Grill|grill]] until well browned and slightly charred.
+#Slice into one-rib portions and serve with additional sauce.
+
+[[Category:Recipes using pork]]
+[[Category:Barbecue recipes]]
+[[Category:Main course recipes]]
+[[Category:United States recipes]]
+[[Category:Smoked recipes]]
+[[Category:Recipes with metric units]]
+
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using paprika]]
+[[Category:Grilled recipes]]
+[[Category:Recipes using maple]]

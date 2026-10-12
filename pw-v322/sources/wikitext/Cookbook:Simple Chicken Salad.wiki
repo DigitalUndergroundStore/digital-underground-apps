@@ -1,0 +1,25 @@
+{{Recipe summary
+| Category = Salad recipes
+| Difficulty = 1
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 1 [[Cookbook:Pound|pound]] [[Cookbook:Chicken|chicken]], cooked and [[Cookbook:Dice|diced]]
+* 1 spoonful [[Cookbook:Mayonnaise|mayonnaise]]
+* 1 handful freshly-cut [[Cookbook:Lettuce|lettuce]]
+* Cooked [[Cookbook:Bacon|bacon]], diced
+* 1 [[Cookbook:Teaspoon|teaspoon]] dressing
+* 1 teaspoon [[Cookbook:Mincing|minced]] [[Cookbook:Garlic|garlic]]
+
+== Procedure ==
+
+# [[Cookbook:Mixing#Tossing|Toss]] together all ingredients until well-combined.
+# Serve cool or at room temperature.
+
+[[Category:Recipes using chicken]]
+[[Category:Recipes for salad]]
+[[Category:Recipes using bacon]]
+[[Category:Recipes using lettuce]]
+[[Category:Recipes using mayonnaise]]

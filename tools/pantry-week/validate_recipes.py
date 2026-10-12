@@ -17,6 +17,7 @@ ORDER = [
     "recipes-batch2.js",
     "recipes-batch3.js",
     "recipes-batch4.js",
+    "recipes-batch5.js",
 ]
 
 
@@ -66,8 +67,15 @@ def main() -> None:
         if len(ings) < 4:
             errors.append(f"{rid}: only {len(ings)} ingredients")
         if rid and int(str(rid).replace("r", "")) >= 249:
-            if not r.get("sourceUrl"):
+            if r.get("original"):
+                if r.get("sourceUrl"):
+                    errors.append(f"{rid}: original recipe should not carry a source URL")
+            elif not r.get("sourceUrl"):
                 errors.append(f"{rid}: missing sourceUrl")
+            elif int(str(rid).replace("r", "")) >= 649:
+                licence = r.get("sourceLicense") or ""
+                if "share-alike" not in licence.lower() and "CC BY-SA" not in licence:
+                    errors.append(f"{rid}: licence not recorded as share-alike")
     root = Path(__file__).resolve().parents[2]
     photos = root / "pantry-week" / "photos"
     photos_js = root / "src" / "jhagho" / "js" / "photos.js"

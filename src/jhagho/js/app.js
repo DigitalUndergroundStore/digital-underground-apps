@@ -966,8 +966,9 @@
     if (!recipe) return "";
     if (recipe.sourceUrl) {
       const license = recipe.sourceLicense ? ` (${esc(recipe.sourceLicense)})` : "";
-      return `<p class="source-credit">From <a href="${esc(recipe.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(recipe.sourceName || "source")}</a>${license}</p>`;
+      return `<p class="source-credit">Adapted from <a href="${esc(recipe.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(recipe.sourceName || "source")}</a>${license}</p>`;
     }
+    if (recipe.original) return `<p class="source-credit">Original Pantry Week recipe</p>`;
     if (recipe.sourceName) return `<p class="source-credit">${esc(recipe.sourceName)}</p>`;
     return "";
   }
@@ -1261,7 +1262,7 @@
     }
     if (r.sourceUrl) {
       const license = r.sourceLicense ? ` (${esc(r.sourceLicense)})` : "";
-      return `<p class="smart-chef__source">From <a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(r.sourceName || "source")}</a>${license}</p>`;
+      return `<p class="smart-chef__source">Adapted from <a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(r.sourceName || "source")}</a>${license}</p>`;
     }
     if (r.sourceName) return `<p class="smart-chef__source">${esc(r.sourceName)}</p>`;
     return "";
@@ -1728,6 +1729,7 @@
         <div class="cook-top__main">
           <p class="cook-kicker">Step ${cook.step + 1} of ${recipe.steps.length}</p>
           <h2 id="cookTitle">${esc(recipe.name)}</h2>
+          ${sourceCreditHtml(recipe)}
         </div>
         ${iconBtn("nav-back", "Close", ICON_CLOSE)}
       </div>
@@ -1844,6 +1846,7 @@
       sourceUrl: recipe && recipe.sourceUrl ? recipe.sourceUrl : "",
       sourceName: recipe && recipe.sourceName ? recipe.sourceName : "",
       sourceLicense: recipe && recipe.sourceLicense ? recipe.sourceLicense : "",
+      original: !!(recipe && recipe.original),
       photoNote: "",
       photoBusy: false,
       ocrText: "",
@@ -1981,7 +1984,8 @@
       photoKey: ed.photoKey || "",
       sourceUrl: ed.sourceUrl || "",
       sourceName: ed.sourceName || "",
-      sourceLicense: ed.sourceLicense || ""
+      sourceLicense: ed.sourceLicense || "",
+      original: !!ed.original
     });
     if (ui.import && ui.import.editIndex != null) {
       const rowIdx = ui.import.editIndex;

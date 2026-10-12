@@ -364,8 +364,9 @@
     if (raw.photoKey) out.photoKey = String(raw.photoKey);
     if (raw.photoUrl && /^https?:\/\//i.test(String(raw.photoUrl))) out.photoUrl = String(raw.photoUrl).trim();
     if (raw.sourceUrl && /^https?:\/\//i.test(String(raw.sourceUrl))) out.sourceUrl = String(raw.sourceUrl).trim();
-    if (raw.sourceName) out.sourceName = String(raw.sourceName).trim().slice(0, 80);
+    if (raw.sourceName) out.sourceName = String(raw.sourceName).trim().slice(0, 140);
     if (raw.sourceLicense) out.sourceLicense = String(raw.sourceLicense).trim().slice(0, 40);
+    if (raw.original) out.original = true;
     return out;
   }
 
@@ -1431,7 +1432,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.8.1",
+    VERSION: "3.9.0",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,

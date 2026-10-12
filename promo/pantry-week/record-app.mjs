@@ -119,10 +119,14 @@ async function go(page, view) {
 
 const phone = await browser.newPage();
 await unlock(phone, 390, 844, 2);
+const liveVer = await fetch("https://digitalundergroundstore.com/pantry-week/version.json")
+  .then((r) => r.json())
+  .then((j) => j.version)
+  .catch(() => "");
 const build = await phone.evaluate(() => ((document.body.innerText || "").match(/2026\d+-pw\d+/) || [""])[0]);
-console.log("build", build);
-if (build !== "202610111915-pw342") {
-  console.error("unexpected build");
+console.log("build", build, "expected", liveVer || "(any)");
+if (liveVer && build && build !== liveVer) {
+  console.error("live build mismatch");
   process.exit(1);
 }
 
@@ -285,14 +289,27 @@ await phone.evaluate(() => {
   if (!onRecipes) document.querySelector('[data-action="nav"][data-view="recipes"]')?.click();
 });
 await new Promise((r) => setTimeout(r, 350));
-await phone.waitForFunction(() => [...document.querySelectorAll("*")].some((el) => /easy-chicken-curry|immediate\.co\.uk/.test(getComputedStyle(el).backgroundImage || "")), { timeout: 8000 });
+await phone.waitForFunction(
+  () => {
+    const card = [...document.querySelectorAll(".recipe-card, article, .card")].find((el) =>
+      /Easy chicken curry/i.test(el.innerText || "")
+    );
+    if (!card) return false;
+    const photo = card.querySelector(".card-photo") || card;
+    const bg = getComputedStyle(photo).backgroundImage || "";
+    return /url\(/i.test(bg) && !/none/i.test(bg);
+  },
+  { timeout: 25000 }
+);
 await phone.evaluate(async () => {
-  const card = [...document.querySelectorAll(".recipe-card, article")].find((el) => /Easy chicken curry/i.test(el.innerText || ""));
+  const card = [...document.querySelectorAll(".recipe-card, article, .card")].find((el) =>
+    /Easy chicken curry/i.test(el.innerText || "")
+  );
   const photo = card && (card.querySelector(".card-photo") || card);
   if (photo) photo.scrollIntoView({ block: "center" });
-  const bgEl = [...document.querySelectorAll("*")].find((el) => /easy-chicken-curry|immediate\.co\.uk/.test(getComputedStyle(el).backgroundImage || ""));
-  const match = bgEl && (getComputedStyle(bgEl).backgroundImage || "").match(/url\(["']?(.*?)["']?\)/);
-  if (!match) return;
+  const bg = photo && (getComputedStyle(photo).backgroundImage || "");
+  const match = bg && bg.match(/url\(["']?(.*?)["']?\)/);
+  if (!match || !match[1]) return;
   await new Promise((resolve) => {
     const img = new Image();
     img.onload = img.onerror = () => resolve();

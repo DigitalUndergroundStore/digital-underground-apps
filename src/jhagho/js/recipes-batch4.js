@@ -5570,7 +5570,7 @@
       {
         "qty": 2.25,
         "unit": "cup",
-        "item": "of water"
+        "item": "water"
       },
       {
         "qty": null,
@@ -6764,7 +6764,7 @@
       {
         "qty": 2.25,
         "unit": "cup",
-        "item": "of water"
+        "item": "water"
       },
       {
         "qty": 1,

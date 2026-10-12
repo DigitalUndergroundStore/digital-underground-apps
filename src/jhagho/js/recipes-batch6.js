@@ -210,7 +210,7 @@
   },
   {
     "id": "r852",
-    "name": "Tibetan Meat Momos",
+    "name": "Tuna Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -220,75 +220,43 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "ground or minced chicken, turkey, lamb, or pork"
+        "qty": 3,
+        "unit": "can",
+        "item": "of tuna in water"
       },
       {
         "qty": 1,
-        "unit": "cup",
-        "item": "finely-chopped onion"
+        "unit": "can",
+        "item": "each of cream of celery soup, cream of chicken soup, and cream of mushroom soup (substitute cream of potato if you don't like mushrooms)"
       },
       {
-        "qty": null,
+        "qty": 1,
+        "unit": "bag",
+        "item": "of frozen vegetables (peas, carrots, and corn)"
+      },
+      {
+        "qty": 1,
         "unit": "",
-        "item": "½ cup finely-chopped shallots or spring onions"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup cilantro, chopped"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup diced tomatoes"
+        "item": "Lrge bag of egg noodles"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "garlic paste"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ginger paste"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ teaspoon turmeric (optional)"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "coriander powder"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "ghee or butter"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt to taste"
+        "unit": "can",
+        "item": "of fried onion rings, 1 packet potato chips, or 1 small packet corn flakes"
       }
     ],
     "steps": [
-      "Combine all filling ingredients (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Mix well, and adjust seasoning according to taste.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Cook egg noodles as directed on package (3 minutes).",
+      "While boiling water, preheat oven to 400°F (3 minutes).",
+      "Drain egg noodles (3 minutes).",
+      "Mix together all ingredients except fried onion rings (3 minutes).",
+      "Put in a casserole dish or a 9 x 13 x 2-inch pan (3 minutes).",
+      "Bake for 20 minutes (3 minutes).",
+      "Sprinkle fried onion topping on top of baked casserole (3 minutes).",
+      "Bake for an additional 3 minutes, or until fried onion is slightly brown (3 minutes).",
+      "Let cool for 5 minutes and serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tibetan_Meat_Momos",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tuna_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -680,14 +648,10 @@
     ],
     "steps": [
       "Combine flour and baking soda, then sift it together (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Beat the eggs and sugar together in a bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Then add milk, alternating it with the flour mixture (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Mix it enough to dissolve the sugar, but do not beat until fluffy (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Set aside to rest for 5 minutes."
+      "Set aside to rest for 5 minutes (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tokyo_Pancake_%28Khanom_Tokyo%29",
     "sourceName": "Wikibooks Cookbook",
@@ -695,91 +659,130 @@
   },
   {
     "id": "r858",
-    "name": "Tomato Juice",
+    "name": "Fruit Salad with Orange Juice",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "can",
-        "item": "(12 oz / 340 g) unsalted, canned tomato paste"
-      },
-      {
-        "qty": 30,
+        "qty": null,
         "unit": "",
-        "item": "fl oz (3 cans / 890 ml) water"
+        "item": "Apples"
       },
       {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "distilled white vinegar"
+        "qty": null,
+        "unit": "",
+        "item": "Bananas"
       },
       {
-        "qty": 3,
-        "unit": "tsp",
-        "item": "black pepper"
+        "qty": null,
+        "unit": "",
+        "item": "Oranges"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Maraschino cherries"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Orange juice"
       }
     ],
     "steps": [
-      "Add tomato paste, water, vinegar, and black pepper to container (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Shake or stir vigorously (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve or store several days in a suitable container in refrigerator.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Peel the apples and bananas (3 minutes).",
+      "Dice them into small pieces (3 minutes).",
+      "Peel and separate the orange sections (3 minutes).",
+      "Cut sections into smaller pieces if desired (3 minutes).",
+      "Cut the cherries into halves or quarters, depending on the size (3 minutes).",
+      "Pour a bit of the cherry juice in bowl (3 minutes).",
+      "Mix everything together, and add orange juice as desired (3 minutes).",
+      "If desired, refrigerate prior to serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tomato_Juice",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fruit_Salad_with_Orange_Juice",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r859",
-    "name": "Tonkatsu",
-    "minutes": 45,
-    "servings": 4,
+    "name": "Booyah (Chicken Vegetable Stew)",
+    "minutes": 180,
+    "servings": 12,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "Soy sauce"
+        "item": "Lrge roasting chicken"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "green beans"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "(1 pound) diced carrot"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "peas"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "diced cabbage"
+      },
+      {
+        "qty": 4,
+        "unit": "stalk",
+        "item": "celery"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "tomato sauce (or 1 quart whole tomatoes)"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "Lrge onion, diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "peeled and diced potatoes (optional)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Sugar"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Worcestershire sauce"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Ketchup"
+        "item": "Salt to taste"
       }
     ],
     "steps": [
-      "Combine the soy sauce, sugar, Worcestershire, and ketchup (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Beat with fork until consistent (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "If desired, chill sauce for a half hour to thicken.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Place chicken in a large pot and cover with water (3 minutes).",
+      "Simmer until chicken is well done (3 minutes).",
+      "Remove chicken from broth and skim off fat (3 minutes).",
+      "Add remaining ingredients to broth (3 minutes).",
+      "Remove chicken meat from bones and skin (3 minutes).",
+      "Cut meat into small pieces and add to broth (3 minutes).",
+      "Add salt and water to taste (3 minutes).",
+      "Cover and let simmer for at least 3 hours (3 minutes).",
+      "It tastes best when cooked all day (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tonkatsu",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Booyah_%28Chicken_Vegetable_Stew%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -816,7 +819,7 @@
       },
       {
         "qty": 2,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge cloves of garlic, sliced"
       },
       {
@@ -1052,8 +1055,8 @@
   },
   {
     "id": "r864",
-    "name": "Tubani (Nigerian Corn and Soybean Fritter)",
-    "minutes": 15,
+    "name": "Hanjin Ligidi (Nigerian Lollipops)",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
@@ -1063,50 +1066,40 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "corn"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "soy beans"
-      },
-      {
-        "qty": 4,
+        "qty": null,
         "unit": "",
-        "item": "spoonfuls of kuka (baobab leaf powder)"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small piece potash"
+        "item": "Tsamiya (tamarind)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup chilli pepper"
+        "item": "Water"
       },
       {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "stock cube"
+        "qty": null,
+        "unit": "",
+        "item": "Sugar"
       },
       {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "vegetable oil for frying"
+        "qty": null,
+        "unit": "",
+        "item": "Flavoring of choice"
       }
     ],
     "steps": [
-      "Blend all the ingredients together, adding water as needed to make a smooth dough (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Mold the dough into your desired shape (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Fry the dough in vegetable oil.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Shape food-safe paper or aluminum foil into cones (3 minutes).",
+      "Clean any dirt or dust from the tsamiya (3 minutes).",
+      "Wash the tsamiya in a clean bowl of water and drain it thoroughly (3 minutes).",
+      "Soak the tsamiya in hot water for about 5 minutes (3 minutes).",
+      "Transfer the tsamiya soaking liquid to a pot over medium heat (3 minutes).",
+      "Gradually stir in sugar, making sure it dissolves, until it becomes very thick (3 minutes).",
+      "Stir in your desired flavoring and/or coloring (3 minutes).",
+      "Divide the syrup between the prepared cones (3 minutes).",
+      "Let cool slightly, then insert a toothpick or other stick (3 minutes).",
+      "Let set and harden completely (3 minutes).",
+      "Unmold and serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tubani_%28Nigerian_Corn_and_Soybean_Fritter%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hanjin_Ligidi_%28Nigerian_Lollipops%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1234,7 +1227,7 @@
     "ingredients": [
       {
         "qty": 8,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge (burrito-size, about 12-inch) flour tortillas."
       },
       {
@@ -1535,14 +1528,10 @@
     ],
     "steps": [
       "Drain yogurt in a sieve or a cheesecloth for about 3 hours prior to using it (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Drain the cucumber and salt it to further remove moisture (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Combine yogurt, garlic, olive oil, and lemon juice in a bowl and cover and refrigerate for 1 hour or more (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "After refrigerating, add dill and cucumber into bowl and mix with a whisk until smooth (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add pepper and salt to taste."
+      "Add pepper and salt to taste (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tzatziki",
     "sourceName": "Wikibooks Cookbook",
@@ -1561,17 +1550,17 @@
     ],
     "ingredients": [
       {
-        "qty": 4,
+        "qty": 4.0,
         "unit": "",
         "item": "ears of fresh sweet corn"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "",
         "item": "fresh peppers"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
         "item": "onion"
       },
@@ -1598,12 +1587,10 @@
     ],
     "steps": [
       "Blend together the corn, pepper, onion, and crayfish with a small amount of water (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Transfer the mixture to a bowl, and stir in salt and palm oil to taste (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour the mixture into a mold (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Place in boiling water, and steam for 45 minutes."
+      "Place in boiling water, and steam for 45 minutes (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ukpo_Oka_%28Nigerian_Corn_Pudding%29",
     "sourceName": "Wikibooks Cookbook",
@@ -1637,7 +1624,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge or 2 medium beets, peeled and julienne"
       },
       {
@@ -1865,7 +1852,7 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "slice",
         "item": "bread"
       },
@@ -1892,12 +1879,10 @@
     ],
     "steps": [
       "Toast the bread slices (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Spread butter thickly and evenly on bread (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Spread Vegemite a little less thickly, and evenly on bread (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add cheese and onion."
+      "Add cheese and onion (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Vegemite_Sandwich",
     "sourceName": "Wikibooks Cookbook",
@@ -1986,7 +1971,7 @@
       },
       {
         "qty": 8,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge eggs, beaten"
       },
       {
@@ -2234,14 +2219,10 @@
     ],
     "steps": [
       "Beat the eggs in a mixer (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the milk, brown sugar, cardamom, and cloves to the beaten eggs (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Mix well (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Transfer the mixture to a pot and steam for 20 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add the cashews."
+      "Add the cashews (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Watalappam_%28Sri_Lankan_Coconut_Custard%29",
     "sourceName": "Wikibooks Cookbook",
@@ -2598,7 +2579,7 @@
       },
       {
         "qty": 3,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge onions, julienned"
       },
       {
@@ -2785,7 +2766,7 @@
       },
       {
         "qty": 3,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge onions, thinly sliced"
       },
       {
@@ -2993,12 +2974,12 @@
     ],
     "ingredients": [
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "tbsp",
         "item": "corn oil"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
         "item": "minced or finely-chopped garlic"
       },
@@ -3033,34 +3014,32 @@
         "item": "½ cup (100 g) beaten egg"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "cup",
         "item": "(600 g) cooked jasmine rice"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "tbsp",
         "item": "salt"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "tbsp",
         "item": "pepper"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
         "item": "jalapeno, diced (optional)"
       }
     ],
     "steps": [
       "Heat the oil in a non-stick skillet, and fry the garlic until golden brown (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the bacon, prawn, and char siu, then cook slightly for 5 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the scallion, peas, and egg, and cook until all cooked (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Stir in the rice, salt, pepper and jalapeno."
+      "Stir in the rice, salt, pepper and jalapeno (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Yeung_Chow_Fried_Rice",
     "sourceName": "Wikibooks Cookbook",
@@ -3366,66 +3345,76 @@
   },
   {
     "id": "r896",
-    "name": "Zhug I",
+    "name": "Vitello Tonnato (Veal with Tuna Sauce)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": 1,
-        "unit": "tbsp",
-        "item": "cumin"
+        "unit": "piece",
+        "item": "of fillet of veal"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground black pepper"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "caraway seed"
-      },
-      {
-        "qty": 3,
+        "qty": 2,
         "unit": "",
-        "item": "–4 pods of cardamom"
+        "item": "bay leaves"
       },
       {
-        "qty": 4,
+        "qty": 1,
         "unit": "",
-        "item": "red, very hot dried cayenne peppers, stems removed"
+        "item": "bouquet garni of mixed herbs"
       },
       {
         "qty": 1,
-        "unit": "head",
-        "item": "of fresh garlic, peeled"
+        "unit": "jar",
+        "item": "(400 grams) mayonnaise (it's not worth making your own for this one)"
       },
       {
         "qty": 1,
-        "unit": "bunch",
-        "item": "of fresh coriander (cilantro)"
+        "unit": "",
+        "item": "tin (200 grams) good quality tuna in olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "l",
+        "item": "emon, juiced"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Pepper"
       },
       {
         "qty": null,
         "unit": "",
         "item": "Salt"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "small jar of single cream (in reserve)"
       }
     ],
     "steps": [
-      "Grind and blend all the above ingredients together (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Store in a sealed jar.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Simmer the veal for about 15 minutes in water with the bay leaves and bouquet garni (3 minutes).",
+      "Remove from the water once cooked, wrap it in either clingfilm or aluminium foil, and place in the fridge for 3 hours until quite cool, or preferably overnight (3 minutes).",
+      "It is important you don't try to do this whilst the veal is even slightly warm as it will mess up the sauce (3 minutes).",
+      "Turn the mayonnaise and the tin of tuna into a blender and blend until it is a smooth paste (3 minutes).",
+      "Add the juice of the lemon, a large pinch of pepper, and a normal pinch of salt, and blend again (3 minutes).",
+      "The sauce should not be runny, but neither should it be too stiff (3 minutes).",
+      "So that it becomes a pourable consistency, add a few spoonfuls of the cream (3 minutes).",
+      "Now take the cooked veal out of its wrapping and using a sharp knife slice as thin as you can possibly make them and arrange on a large serving dish (3 minutes).",
+      "If you have a mallet, cover the slices of veal in foil and bash away at them until they are as thin as possible! (3 minutes).",
+      "Take the sauce and pour it over the veal so that the veal becomes completely covered in the sauce (3 minutes).",
+      "Not too thick, not too thin (3 minutes).",
+      "Decorate with capers (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Zhug_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Vitello_Tonnato_%28Veal_with_Tuna_Sauce%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3726,7 +3715,7 @@
       },
       {
         "qty": 2,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge russet potatoes, cubed"
       },
       {
@@ -3869,7 +3858,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge cucumber"
       },
       {
@@ -3983,7 +3972,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge onion, chopped"
       },
       {
@@ -4186,12 +4175,12 @@
     ],
     "ingredients": [
       {
-        "qty": 12,
+        "qty": 12.0,
         "unit": "",
         "item": "chipotle peppers or smoked, dried jalapeño peppers (most co-ops can get these for you, or try the specialty produce section of your grocery store)"
       },
       {
-        "qty": 4,
+        "qty": 4.0,
         "unit": "cup",
         "item": "(0.95 L) water"
       },
@@ -4211,12 +4200,12 @@
         "item": "(60 ml) ketchup"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "clove",
         "item": "garlic, crushed or sliced"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "pinch",
         "item": "cumin, oregano"
       },
@@ -4228,12 +4217,10 @@
     ],
     "steps": [
       "Combine all ingredients in a heavy saucepan (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Cook over a very low heat for 1–2 hours until the chiles are very soft and the liquid has been reduced to about 1 cup (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Alternatively, cook in a slow cooker overnight (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Beat with a mortar and pestle, or put in blender to puree for a thick sauce."
+      "Beat with a mortar and pestle, or put in blender to puree for a thick sauce (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Adobo_Sauce",
     "sourceName": "Wikibooks Cookbook",
@@ -4522,14 +4509,10 @@
     ],
     "steps": [
       "Place all ingredients in a very large blender or food processor (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Blend for 1 minute, or until thoroughly combined and mixture is smooth (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour sauce into a large bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Use when grilling chicken or other poultry or meat; brush lightly over the chicken (or meat) during the last few minutes of grilling (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "This sauce is also great for dipping; set some sauce aside for passing at the table."
+      "This sauce is also great for dipping; set some sauce aside for passing at the table (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Alabama_White_Sauce",
     "sourceName": "Wikibooks Cookbook",
@@ -4763,7 +4746,7 @@
       },
       {
         "qty": 5,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge hard boiled eggs, chopped"
       },
       {
@@ -4865,14 +4848,10 @@
     ],
     "steps": [
       "Combine the baking mix, egg, brown sugar, and spices in a bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Rub the butter into the base mixture with your fingers (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "The mixture should not be sticky (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Line an 8 by 8-inch (20 by 20 cm) baking pan with parchment paper (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Press the base mixture into the bottom of the baking pan (you might want to press it up the sides a little)."
+      "Press the base mixture into the bottom of the baking pan (you might want to press it up the sides a little) (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Bars",
     "sourceName": "Wikibooks Cookbook",
@@ -4990,14 +4969,10 @@
     ],
     "steps": [
       "Put apple slices in shallow 9-inch (23 cm) pan (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Sprinkle the apples with lemon juice (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Combine all dry ingredients with butter and mix until crumbly (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Sprinkle all this over apples (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Bake at 375 °F (190 °C) for 30 minutes."
+      "Bake at 375 °F (190 °C) for 30 minutes (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Crisp_II",
     "sourceName": "Wikibooks Cookbook",
@@ -5016,39 +4991,37 @@
     ],
     "ingredients": [
       {
-        "qty": 8,
+        "qty": 8.0,
         "unit": "oz",
         "item": "(225 g) plain flour"
       },
       {
-        "qty": 4,
+        "qty": 4.0,
         "unit": "oz",
         "item": "(110 g) margarine"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "oz",
         "item": "(55 g) lard"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "pinch",
         "item": "salt"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
         "item": "cold water"
       }
     ],
     "steps": [
       "Rub flour, margarine, lard, and salt together until the mixture has the consistency of fine breadcrumbs (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Gently mix in 2 tablespoons water to make a soft but firm dough (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Divide dough in half, then roll each half out on floured surface to the size you want your pie (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Use one crust to line your pie pan."
+      "Use one crust to line your pie pan (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Pie_II",
     "sourceName": "Wikibooks Cookbook",
@@ -5109,14 +5082,10 @@
     ],
     "steps": [
       "Beat sugar and egg until smooth (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Beat in flour, baking powder, salt, and vanilla (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Stir walnuts or hickory nuts and apples into the mixture (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour into a greased Dutch oven or 9 x 9-inch pan (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Bake at 325°F (160°C) for 30 minutes."
+      "Bake at 325°F (160°C) for 30 minutes (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Pudding",
     "sourceName": "Wikibooks Cookbook",
@@ -5199,60 +5168,102 @@
   },
   {
     "id": "r922",
-    "name": "Apricot Chicken Salad",
+    "name": "Indian Butter Chicken",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "lunch",
+      "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "collection-indian"
     ],
     "ingredients": [
       {
+        "qty": 400.0,
+        "unit": "",
+        "item": "–500 g of skinless, boneless chicken thighs or breasts (with the bone, this will probably be 800 g)"
+      },
+      {
+        "qty": 50.0,
+        "unit": "g",
+        "item": "tandoori masala powder"
+      },
+      {
         "qty": null,
         "unit": "",
-        "item": "Shredded cooked chicken (about 2 small drumsticks)"
+        "item": "½ cup of unsweetened yoghurt"
       },
       {
-        "qty": 1,
-        "unit": "stalk",
-        "item": "celery, chopped"
-      },
-      {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
-        "item": "medium apple, finely chopped"
+        "item": "small lemon or lime, juiced"
       },
       {
-        "qty": 1,
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "honey"
+        "item": "butter"
       },
       {
-        "qty": 3,
+        "qty": 1.0,
         "unit": "",
-        "item": "dried apricots, chopped"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Strained plain yogurt"
+        "item": "Lrge onion, sliced finely"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Hot paprika (optional)"
+        "item": "¼ teaspoon of cinnamon (optional)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "–3 cloves of crushed garlic"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "grated ginger"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "ground turmeric"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "ground coriander"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "–3 teaspoons of chile powder"
+      },
+      {
+        "qty": 100.0,
+        "unit": "",
+        "item": "–200 g tomato paste"
+      },
+      {
+        "qty": 100.0,
+        "unit": "g",
+        "item": "full cream"
       }
     ],
     "steps": [
-      "Combine shredded chicken, apricots, apple and celery (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add yogurt, honey, and hot paprika powder, along with any other desired seasonings (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Mix well.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Trim and cut the chicken into small cubes (3 minutes).",
+      "If you prefer chicken on the bone, cut long thin slices laterally into the chicken (3 minutes).",
+      "In a big bowl combine the tandoori powder, yogurt, lemon juice, and chicken (3 minutes).",
+      "Massage this well with your hands so that all the chicken is evenly covered in the Tandoori powder (3 minutes).",
+      "Cover and put aside for at least ½ an hour (3 minutes).",
+      "Heat a large saucepan or frying pan until evenly hot (3 minutes).",
+      "In the pan melt 2 tablespoons of butter until it is frothy (3 minutes).",
+      "Add the onions and the cinnamon to the pan and fry lightly (3 minutes).",
+      "When the onions are soft and starting to brown, stir in the crushed garlic and ginger (3 minutes).",
+      "Then add the turmeric, chili, and coriander, and sauté over a medium heat (3 minutes).",
+      "Add the chicken and sauté, stirring constantly until the chicken has turned white (3 minutes).",
+      "This doesn't take long, so make sure you don't overcook the chicken (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apricot_Chicken_Salad",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Butter_Chicken_I",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5330,7 +5341,7 @@
   },
   {
     "id": "r924",
-    "name": "Arroz con Gandules (Puerto Rican Rice and Pigeon Peas)",
+    "name": "Tembleque (Puerto Rican Coconut Pudding)",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -5341,55 +5352,60 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(16 oz) of coconut milk"
+      },
+      {
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(16 oz) of coconut cream"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "medium yellow onions, cut into large chunks"
+        "item": "½ cup heavy whipping cream"
       },
       {
-        "qty": 3,
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "cornstarch or rice flour"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "–4 Italian frying peppers (also known as cubanelle peppers)"
+        "item": "½ tsp orange blossom water (optional)"
       },
       {
-        "qty": 16,
+        "qty": null,
         "unit": "",
-        "item": "–20 cloves garlic, peeled"
+        "item": "¾ cup white granulated sugar"
       },
       {
-        "qty": 1,
-        "unit": "l",
-        "item": "Lrge bunch cilantro macho or common cilantro, washed (with roots if possible but just the leaves and stems are fine)"
+        "qty": 1.0,
+        "unit": "pinch",
+        "item": "salt"
       },
       {
-        "qty": 10,
+        "qty": null,
         "unit": "",
-        "item": "–12 ají dulce chile peppers, seeded (e.g. ají cachucha, quechucha, ajicito, or ají gustoso)"
-      },
-      {
-        "qty": 10,
-        "unit": "l",
-        "item": "eaves of culantro (recao), or another handful of cilantro"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "–4 ripe plum tomatoes, seeded, cored and cut into chunks or roasted then skin and seeds removed"
-      },
-      {
-        "qty": 1,
-        "unit": "l",
-        "item": "Lrge red bell pepper, cored, seeded and cut into large chunks or roasted first then seeds and some skin removed"
+        "item": "Ground cinnamon for garnish"
       }
     ],
     "steps": [
-      "Add chopped onions to blender, and blend until liquefied (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "With the motor running, add the remaining sofrito ingredients one at a time and process until smooth (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Remove and reserve 3 cups of sofrito for rice.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Put sugar, coconut milk, coconut cream, and (3 minutes).",
+      "salt, into a saucepan (3 minutes).",
+      "Cook until sugar devolves and the milk starts to simmer (3 minutes).",
+      "Mix 3 tablespoons or more of cold heavy whipping cream into the corn starch (3 minutes).",
+      "Whip until all the cornstarch is diluted but still thick (3 minutes).",
+      "You want a smooth thick paste with no lumps (3 minutes).",
+      "When milk starts to simmer, add the remaining heavy whipping cream and cornstarch mixture into the saucepan (3 minutes).",
+      "Keep the heat on low and stir constantly until the pudding thickens (3 minutes).",
+      "Pour into pudding cups or small bowls (3 minutes).",
+      "Cool in the fridge for 2 hours (3 minutes).",
+      "To serve, flip the pudding bowls onto a plate to remove the pudding, then sprinkle cinnamon on top (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Arroz_con_Gandules_%28Puerto_Rican_Rice_and_Pigeon_Peas%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tembleque_%28Puerto_Rican_Coconut_Pudding%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5573,7 +5589,7 @@
       },
       {
         "qty": 2,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge onions, chopped"
       },
       {
@@ -5697,14 +5713,10 @@
     ],
     "steps": [
       "Beat the eggs, the sugar, the salt, and the vanilla together (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Scald the milk and add it very slowly, stirring constantly (see tempering) (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour the mixture into a greased or buttered baking dish or several small greased heat-proof molds (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Place the baking dish or the molds in a pan of water in a slow oven (300–325°F / 150–160°C) and bake for between 30 and 40 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Test if the custard is cooked with a knife, which will come out clean when the custard is thoroughly baked."
+      "Test if the custard is cooked with a knife, which will come out clean when the custard is thoroughly baked (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Custard",
     "sourceName": "Wikibooks Cookbook",
@@ -5744,7 +5756,7 @@
       },
       {
         "qty": 4,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge cloves garlic, minced"
       },
       {
@@ -5941,14 +5953,10 @@
     ],
     "steps": [
       "Heat oven to 350 °F (180 °C) (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Layer sliced onion and apple in a baking dish that can be covered; drizzle honey and half the caraway over apple and onion slices (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Season meat with garlic salt and pepper; spread top of meat with Dijon (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Sprinkle remainder of caraway (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Cover and bake for one hour."
+      "Cover and bake for one hour (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
@@ -6206,7 +6214,7 @@
   },
   {
     "id": "r937",
-    "name": "Banana Cream I",
+    "name": "Banana Cream",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -6254,14 +6262,10 @@
     ],
     "steps": [
       "Whip the cream in a mixing bowl until stiff peaks form (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pass the bananas through a fine sieve in another bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the stiffly-whipped cream and the liqueur, and mix lightly together (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Dissolve the gelatine in the 1 tbsp warm water, stir in the sugar, and when sufficiently cool mix lightly with the cream mixture, adding food coloring drop by drop until a pale pink colour is obtained (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Pour into the prepared mould, and chill until set."
+      "Pour into the prepared mould, and chill until set (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Cream_I",
     "sourceName": "Wikibooks Cookbook",
@@ -6333,14 +6337,10 @@
     ],
     "steps": [
       "Cut banana in 2 cm slices (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add milk, cream, garam masala (or curry) powder, chili, and lemon (add some salt) to the bananas (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Melt butter, add cumin seeds and turmeric, and cook at medium low for a couple of minutes until a fragrant smell develops (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add bananas and their sauce (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Cook on a gentle flame until ready (depends on banana's ripeness)&#8212;do not overcook."
+      "Cook on a gentle flame until ready (depends on banana's ripeness)&#8212;do not overcook (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Curry",
     "sourceName": "Wikibooks Cookbook",
@@ -6551,14 +6551,10 @@
     ],
     "steps": [
       "Combine all ingredients together and bring to a boil (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Reduce heat and simmer 10 to 15 minutes, until it thickens slightly (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Arrange chicken pieces or pork chops in a greased baking dish (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour half of sauce over and bake at 350°F (175°C) for 30 to 40 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Pour remaining sauce over before serving."
+      "Pour remaining sauce over before serving (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Barbecue_Sauce_%28Sweet%29",
     "sourceName": "Wikibooks Cookbook",
@@ -7208,7 +7204,7 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate"
     ],
@@ -7246,14 +7242,10 @@
     ],
     "steps": [
       "Place the onions and root vegetables in a large stock pot (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the beef and the beef stock on top (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Bring to a simmer over low heat for 30 minutes, stirring well (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "When the beef and vegetables look cooked, add the vegetable broth and salt (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Bring back to a simmer and serve."
+      "Bring back to a simmer and serve (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beef_Gravy_Soup",
     "sourceName": "Wikibooks Cookbook",
@@ -7399,7 +7391,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge or 2 small bay leaves"
       }
     ],
@@ -7467,61 +7459,76 @@
   },
   {
     "id": "r955",
-    "name": "Beer Batter",
+    "name": "Dorowot Fitfit (Ethiopian Chicken Stew Salad)",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 2.0,
+        "unit": "lb",
+        "item": "chicken pieces (legs, thighs, or a whole chicken cut into pieces)"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "berbere spice blend"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "Lrge onion, finely chopped"
+      },
+      {
+        "qty": 3.0,
+        "unit": "clove",
+        "item": "of garlic, minced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "ginger, grated"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 1.0,
         "unit": "cup",
-        "item": "cornstarch"
+        "item": "chicken broth"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup flour"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ teaspoon garlic salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ teaspoon paprika"
-      },
-      {
-        "qty": 0.16666666666666666,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 0.16666666666666666,
-        "unit": "tsp",
-        "item": "pepper"
-      },
-      {
-        "qty": 8,
-        "unit": "oz",
-        "item": "(225 ml) beer"
+        "item": "Salt, to taste"
       }
     ],
     "steps": [
-      "Stir together dry ingredients (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Stir in beer (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Mix together thoroughly.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "In a large pot, heat the olive oil and butter over medium heat (3 minutes).",
+      "Add the finely chopped onion and sauté until it becomes soft and translucent (3 minutes).",
+      "Stir in the minced garlic and grated ginger, and cook for another minute until fragrant (3 minutes).",
+      "Add the berbere spice blend to the pot and mix well to coat the onions, garlic, and ginger with the spices (3 minutes).",
+      "Add the chicken pieces to the pot and cook until they are browned on all sides (3 minutes).",
+      "Pour in the chicken broth and season with salt to taste (3 minutes).",
+      "Bring the mixture to a simmer, then reduce the heat to low, cover the pot, and let simmer for about 45 minutes to 1 hour, or until the chicken is tender and cooked through (3 minutes).",
+      "Remove the cooked chicken pieces from the pot and set them aside to cool slightly (3 minutes).",
+      "Once cooled, shred the chicken into bite-sized pieces (3 minutes).",
+      "Return the shredded chicken to the pot with the remaining sauce (3 minutes).",
+      "Stir well to coat the chicken with the flavorful sauce (3 minutes).",
+      "Adjust the seasoning if needed (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beer_Batter",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Dorowot_Fitfit_%28Ethiopian_Chicken_Stew_Salad%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7583,81 +7590,86 @@
   },
   {
     "id": "r957",
-    "name": "Berbere",
+    "name": "Zimbabwean Chicken and Vegetable Soup",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1.0,
         "unit": "",
-        "item": "¼ tsp ground allspice"
+        "item": "onion, diced"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp ground cinnamon"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp ground cloves"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp ground cardamom seed"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp ground coriander seed"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp ground fenugreek seed"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp ground nutmeg"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground ginger"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground black pepper"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "Tbs salt"
-      },
-      {
-        "qty": 2,
+        "qty": 4.0,
         "unit": "cup",
-        "item": "chile flakes"
+        "item": "vegetable stock, divided"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup peanut butter"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "canned diced tomatoes, with juices"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon crushed red pepper flakes, or more to taste"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "finely chopped cabbage"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "chopped sweet potato"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "peeled and chopped carrot"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "peeled and chopped turnip"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "chopped okra"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "chopped cooked chicken, or to taste"
       }
     ],
     "steps": [
-      "Roast everything except the pepper, chili and salt, in a heavy saucepan or cast-iron frying pan for about 5 minutes on a low heat (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Stir in the pepper, chili and salt, and keep stirring for another 10 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Store in a glass jar, away from sunlight.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Heat the olive oil in the pot over medium heat (3 minutes).",
+      "Add the onion, and sauté for about 5 minutes until translucent (3 minutes).",
+      "Stir ½ cup of the vegetable stock and the peanut butter into the onions until the mixture looks smooth (3 minutes).",
+      "Stir in the remaining vegetable stock, diced tomatoes with their liquid, and crushed red pepper flakes; simmer for 30 minutes, stirring frequently (3 minutes).",
+      "Stir in the cabbage, sweet potato, carrot, and turnip (3 minutes).",
+      "Simmer, stirring, until the vegetables become soft (about 30 minutes) (3 minutes).",
+      "Stir in the okra and chicken, and simmer for about 30 additional minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Berbere",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Zimbabwean_Chicken_and_Vegetable_Soup",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7816,14 +7828,10 @@
     ],
     "steps": [
       "Beat together the eggs, butter, and sugar until very creamy (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Combine the flour, nutmeg, and caraway seeds (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the dry mixture to the egg mixture, and beat for 1 hour (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Transfer to a pan, and bake for 1 hour (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Let cool and unmold."
+      "Let cool and unmold (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Biscuit_Cake",
     "sourceName": "Wikibooks Cookbook",
@@ -8158,46 +8166,101 @@
   },
   {
     "id": "r964",
-    "name": "Black Pepper Syrup",
+    "name": "Beef and Guinness Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "ground black pepper"
+        "unit": "kg",
+        "item": "(2.5 lbs) of round beef"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "–5 medium onions"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "–5 stalks of celery"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "–5 medium carrots"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "bottle (500 ml) Guinness or other stout"
+      },
+      {
+        "qty": 500,
+        "unit": "ml",
+        "item": "(16 oz) of tomato sauce (can use canned chopped tomato, but for a richer sauce use bottles of tomato sauce. Do NOT use ketchup!)"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "small handful of fresh thyme"
+      },
+      {
+        "qty": 2,
+        "unit": "clove",
+        "item": "of garlic, crushed and sliced thin"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "bay leaves"
       },
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "(60 ml) water"
+        "item": "of plain flour"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(60 ml) granulated white sugar"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "peppercorns (can add more to taste)"
       },
       {
         "qty": 1,
         "unit": "tsp",
-        "item": "lemon juice (optional)"
+        "item": "salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Approximately 1 litre (1 quart) of stock"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Olive oil"
       }
     ],
     "steps": [
-      "Combine pepper, water, sugar and lemon in a saucepan, and heat slowly until the sugar dissolves and the mixture is a light-brown colour (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Remove from heat and let cool for 1 hour.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Trim the meat of excess fat, and cut into 1-inch pieces (3 minutes).",
+      "Cut your vegetables into small, similarly sized pieces (3 minutes).",
+      "Keep the carrots big enough (about ½-inch cuts), and none so big as you wouldn't want to find it later and think \"that's a bloody big bit of carrot\" (3 minutes).",
+      "Freshly grind your pepper to a fine powder in a pestle and mortar (3 minutes).",
+      "Take your time with this (3 minutes).",
+      "Then add a teaspoon of salt, and set half of this aside for your champ potato (3 minutes).",
+      "Then add the other half to the ¼ cup of flour and mix well to get seasoned flour (3 minutes).",
+      "Then mix this in a big bowl with your beef (3 minutes).",
+      "Add another small glug of olive oil to the pan (3 minutes).",
+      "Add the onion and turn to medium-low heat (3 minutes).",
+      "Cook for a few minutes, add celery and garlic, and continue to cook until they all soften and the onion has started going golden (3 minutes).",
+      "Add the carrot and continue for another few minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Black_Pepper_Syrup",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beef_and_Guinness_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8274,7 +8337,7 @@
       },
       {
         "qty": 2,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge egg whites, at room temperature"
       },
       {
@@ -8590,7 +8653,7 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "l",
         "item": "oaf of Italian or French bread, sliced ½ inch (1.25 cm) thick on the bias"
       },
@@ -8622,12 +8685,10 @@
     ],
     "steps": [
       "Toast the bread slices in a toaster oven, under a broiler, or on a grill, until they turn golden (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Immediately rub the bread with the cut side of the garlic (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Sprinkle with salt and black pepper, and drizzle generously with extra-virgin olive oil (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve warm topped with whatever combinations of seasonal ingredients you choose."
+      "Serve warm topped with whatever combinations of seasonal ingredients you choose (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bruschetta",
     "sourceName": "Wikibooks Cookbook",
@@ -8717,7 +8778,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge teaspoon butter or margarine"
       },
       {
@@ -8831,7 +8892,7 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate",
       "vegetarian"
@@ -8843,34 +8904,32 @@
         "item": "½ head (500 grams) white cabbage"
       },
       {
-        "qty": 100,
+        "qty": 100.0,
         "unit": "ml",
         "item": "rapeseed oil"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
         "item": "white vinegar"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "pinch",
         "item": "salt"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "pinch",
         "item": "coarsely-ground pepper"
       }
     ],
     "steps": [
       "Slice the cabbage finely (about 1–2 mm thick) (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Make a dressing of oil, vinegar, salt, and pepper (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Toss the cabbage with the dressing (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Put the salad in the fridge overnight."
+      "Put the salad in the fridge overnight (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cabbage_Salad",
     "sourceName": "Wikibooks Cookbook",
@@ -8889,12 +8948,12 @@
     ],
     "ingredients": [
       {
-        "qty": 4,
+        "qty": 4.0,
         "unit": "",
         "item": "medium sweet potatoes, peeled and sliced"
       },
       {
-        "qty": 4,
+        "qty": 4.0,
         "unit": "g",
         "item": "ranny Smith apples, peeled, cored, and sliced"
       },
@@ -8904,29 +8963,27 @@
         "item": "½ cup raisins"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
         "item": "honey"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "tbsp",
         "item": "apple juice or cider"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "tbsp",
         "item": "melted butter"
       }
     ],
     "steps": [
       "Arrange sliced sweet potatoes, apples, and raisins in a greased 2-quart baking dish (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Mix the liquids and butter together (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Pour over the dish's contents (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Cover with foil and bake at 350°F for 30 to 45 minutes, until sweet potatoes are tender and glazed."
+      "Cover with foil and bake at 350°F for 30 to 45 minutes, until sweet potatoes are tender and glazed (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Candied_Sweet_Potatoes",
     "sourceName": "Wikibooks Cookbook",
@@ -9426,7 +9483,7 @@
     ],
     "ingredients": [
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "lb",
         "item": "(1.36 kg) raw cassava, peeled and grated"
       },
@@ -9446,12 +9503,12 @@
         "item": "½ tsp (2.5 ml) ground nutmeg"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tsp",
         "item": "(10 ml) vanilla extract"
       },
       {
-        "qty": 4,
+        "qty": 4.0,
         "unit": "tbsp",
         "item": "(60 ml) melted butter or coconut oil"
       },
@@ -9461,19 +9518,17 @@
         "item": "¾ cup (180 ml) brown sugar"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "cup",
         "item": "(720 ml) unsweetened evaporated milk or coconut milk"
       }
     ],
     "steps": [
       "Preheat the oven to 350°F (180°C) (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Combine all the ingredients together, mixing well to incorporate (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Transfer the mixture to a baking dish (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Bake the cassava pone for 60 minutes until firm and golden."
+      "Bake the cassava pone for 60 minutes until firm and golden (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cassava_Pone",
     "sourceName": "Wikibooks Cookbook",
@@ -9572,7 +9627,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge tomato, chopped"
       },
       {
@@ -9892,7 +9947,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge onion, chopped"
       },
       {
@@ -9981,51 +10036,64 @@
   },
   {
     "id": "r993",
-    "name": "Cheese Ravioli Filling",
+    "name": "Six Layer Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": 2,
+        "unit": "cup",
+        "item": "diced potatoes"
+      },
+      {
         "qty": 1,
-        "unit": "",
-        "item": "½ cups ricotta or cottage cheese"
+        "unit": "cup",
+        "item": "carrots diced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ cup freshly-grated Parmigiano Reggiano"
+        "item": "½ cup diced onion"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup raw rice"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "ground beef"
+      },
+      {
+        "qty": 10,
+        "unit": "oz",
+        "item": "canned tomato soup (you may also use homemade tomato sauce)"
       },
       {
         "qty": 2,
-        "unit": "tsp",
-        "item": "finely-chopped onion"
+        "unit": "cup",
+        "item": "water"
       },
       {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "egg"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "½ tsp salt"
+        "item": "salt and pepper"
       }
     ],
     "steps": [
-      "Stir all the ingredients together in a bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Set aside while you roll the dough.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
+      "Spread layers of raw vegetables and rice in a 9x9-inch baking dish in the order mentioned above and crumble raw hamburger on the top (3 minutes).",
+      "Mix the soup and water and pour over all (3 minutes).",
+      "Add salt and pepper on top (3 minutes).",
+      "Bake about 1.5–2 hours at 350°F (3 minutes).",
       "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cheese_Ravioli_Filling",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Six_Layer_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10431,70 +10499,59 @@
   },
   {
     "id": "r1000",
-    "name": "Chicken Barbecue Sauce",
+    "name": "Peanut Curry Sauce",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "collection-indian"
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "(30 mL) peanut oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "(5 mL) walnut oil"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "(30 mL) mild chili sauce (the kind just slightly hotter than ketchup)"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "(5 mL) Worcestershire sauce (see below for vegetarian alternative)"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "(5 mL) teriyaki marinade"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "(10 mL) tandoori powder"
-      },
-      {
-        "qty": 2,
-        "unit": "ml",
-        "item": "ground white pepper"
-      },
-      {
-        "qty": 2,
-        "unit": "ml",
-        "item": "herbal salt"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "small, dried, crunched piri-piri chile pepper"
+        "item": "¾ cup (about 170 ml) roasted peanuts (unsalted)"
+      },
+      {
+        "qty": 4.0,
+        "unit": "cup",
+        "item": "(about 1 L) coconut milk (unsweetened)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "(about 30 ml) red curry paste"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "(about 30 ml) sugar"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "(about 45 ml) lemon juice"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tsp",
+        "item": "(about 15 ml) fish sauce"
       }
     ],
     "steps": [
-      "Mix everything together in a small mixing bowl (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Use a brush to apply a thick layer of the sauce to your favorite chicken parts or vegetarian alternative (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Barbecue chicken over fire, charcoal or in the oven.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Chop or grind peanuts into a fine meal (3 minutes).",
+      "Heat half the coconut milk in a medium saucepan on high heat, and add red curry paste (3 minutes).",
+      "Stir until curry paste is dissolved and then continue to heat on high for 10–12 minutes (not stirring) until the oil from the coconut milk has risen to the top (3 minutes).",
+      "Decrease heat to medium-high and add ground peanuts (3 minutes).",
+      "Stir and add the rest of the coconut milk, bring to a full boil then decrease heat, and add the sugar, lemon juice and fish sauce (3 minutes).",
+      "Continue to cook (stirring occasionally) for 15–20 minutes, until the sauce has thickened and the oil has risen to the surface again (3 minutes).",
+      "Take off heat and let set for about ½ hour (3 minutes).",
+      "Stir to blend in the oil that has risen, the sauce should be not quite as thick as peanut butter (3 minutes).",
+      "If it seems too thick add about a teaspoon of water or coconut milk (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Barbecue_Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Peanut_Curry_Sauce",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10650,7 +10707,7 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "clove",
         "item": "garlic"
       },
@@ -10682,12 +10739,10 @@
     ],
     "steps": [
       "Grate the garlic clove, then combine with the paprika, olive oil, salt, and pepper (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Mix the chicken into the marinade (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "If desired, let marinate (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Cook the chicken in a non-stick skillet until the chicken is golden and cooked through."
+      "Cook the chicken in a non-stick skillet until the chicken is golden and cooked through (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Gyros",
     "sourceName": "Wikibooks Cookbook",
@@ -10885,7 +10940,7 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate"
     ],
@@ -10911,27 +10966,27 @@
         "item": "½ cup (120 ml) condensed cream of mushroom soup"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "",
         "item": "hard boiled eggs, peeled and chopped"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "tbsp",
         "item": "chopped fresh parsley"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "tsp",
         "item": "lemon juice"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
         "item": "½ teaspoon salt or less, to taste"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "tsp",
         "item": "pepper"
       },
@@ -10941,12 +10996,12 @@
         "item": "¼ teaspoon dry mustard"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "cup",
         "item": "(700 g) cooked rice, cooled"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "cup",
         "item": "(480 g) cooked chicken, cooled and chopped"
       },
@@ -10956,7 +11011,7 @@
         "item": "(60 g) grated carrot"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
         "item": "green onion, chopped"
       },
@@ -10968,12 +11023,10 @@
     ],
     "steps": [
       "In the serving bowl, whisk or mix mayonnaise, yoghurt, cream of mushroom soup, lemon juice, salt, pepper, and dry mustard until smooth (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add remaining ingredients and mix well using a spoon or fork (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Refrigerate for at least half an hour (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Top with a sprig of parsley and serve."
+      "Top with a sprig of parsley and serve (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Rice_Salad",
     "sourceName": "Wikibooks Cookbook",
@@ -11147,12 +11200,12 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge yellow onion, diced"
       },
       {
         "qty": 3,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge cloves garlic, minced"
       },
       {
@@ -11521,7 +11574,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge pinch salt (optional)"
       },
       {
@@ -11560,76 +11613,101 @@
   },
   {
     "id": "r1014",
-    "name": "Chili Mix",
+    "name": "Sweet and Sour Fish Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup lemon juice"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "(heaping) tbsp tomato paste"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "sugar"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp turmeric"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "–3 tbsp vegetable oil"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "–3 medium onions, sliced to make 1 cup"
+      },
+      {
+        "qty": 2,
+        "unit": "g",
+        "item": "reen bell peppers, sliced"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "chile pepper, finely chopped"
+      },
+      {
+        "qty": 6,
+        "unit": "",
+        "item": "medium tomatoes, sliced"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "–3 garlic cloves, thinly sliced"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp black pepper"
+      },
+      {
+        "qty": 500,
+        "unit": "",
+        "item": "–700 g white fish fillet (e.g., cod, haddock, hake, pollock)"
+      },
+      {
         "qty": 2,
         "unit": "tbsp",
-        "item": "chili powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "dehydrated onion (minced or powdered)"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "seasoning salt"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "cumin powder"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "–2 teaspoons ground red cayenne pepper or crushed/powdered ancho chilli pepper"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried oregano"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground black pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon dehydrated garlic (minced or powdered)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon ground cinnamon"
+        "item": "finely-chopped parsley or cilantro sprig (optional)"
       }
     ],
     "steps": [
-      "Mix all ingredients and store in an airtight jar (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Use 1–3 tablespoons of Chili Mix per 1 lb of meat (to taste).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine lemon juice, tomato paste, sugar and turmeric in small bowl, mix until smooth (3 minutes).",
+      "Set this sauce aside (3 minutes).",
+      "Preheat oven to 350°F (3 minutes).",
+      "Heat the oil in a large pot (3 minutes).",
+      "Add the onions, and sauté until golden-brown and they begin to loosen their moisture (3 minutes).",
+      "Then, remove using a slotted spoon, and layer in a oven-proof dish (3 minutes).",
+      "In the same oil, sauté the bell and chili peppers for 2 minutes or until softened, transfer using a slotted spoon to oven-proof dish, layering over the onions (3 minutes).",
+      "Layer half of the raw tomatoes over the peppers (3 minutes).",
+      "Spread the garlic over the tomatoes, and season with half of the salt and pepper (3 minutes).",
+      "In the same oil, sauté the fish for 1 minute, then transfer to dish, place on top of tomatoes, season with remaining salt and pepper (3 minutes).",
+      "Top the fish with the remaining tomato slices (3 minutes).",
+      "Spread the lemon-tomato-paste sauce over the top layer (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chili_Mix",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sweet_and_Sour_Fish_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -11788,79 +11866,77 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "lb",
         "item": "ground meat (e.g. beef, pork, turkey)"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "can",
         "item": "(29 ounces) tomato sauce"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "can",
         "item": "(29 ounces) kidney beans (with liquid)"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "can",
         "item": "(29 ounces) black beans (with liquid)"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "can",
         "item": "(29 ounces) pinto beans (with liquid)"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "can",
         "item": "(29 ounces) diced tomatoes"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "cup",
         "item": "water"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
         "item": "medium onion, diced"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "stalk",
         "item": "celery, diced"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "tsp",
         "item": "cumin powder"
       },
       {
-        "qty": 3,
+        "qty": 3.0,
         "unit": "tbsp",
         "item": "chili powder"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tsp",
         "item": "black pepper"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tsp",
         "item": "salt"
       }
     ],
     "steps": [
       "Cook the ground meat in a large pot on medium-high heat (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Drain off and discard the fat (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add all remaining ingredients in order and bring to a boil (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Reduce to low heat and simmer for 2 to 3 hours, stir every 15 minutes."
+      "Reduce to low heat and simmer for 2 to 3 hours, stir every 15 minutes (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chili_with_Meat",
     "sourceName": "Wikibooks Cookbook",
@@ -11996,14 +12072,10 @@
     ],
     "steps": [
       "Put the rice in a pan and add the bouillon or water (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Bring to a boil (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Turn down the heat and leave over low heat for 1 hour and 45 minutes to 2 hours, or until all the rice has turned into a mash (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add soy sauce and sesame oil and flavor with white pepper (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Finally, add the toppings according to personal preference."
+      "Finally, add the toppings according to personal preference (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chinese_Rice_Porridge_%28Congee%29",
     "sourceName": "Wikibooks Cookbook",
@@ -12077,46 +12149,74 @@
   },
   {
     "id": "r1021",
-    "name": "Chocolate Milkshake",
+    "name": "Chicken Mull",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
-        "unit": "cup",
-        "item": "vanilla ice cream"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "chocolate milk"
-      },
-      {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "–3 heaping tablespoons chocolate powder"
+        "item": "Whole chicken or equivalent amount of chicken parts as desired"
       },
       {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "medium-sized chocolates"
+        "item": "½ gallon (about 2 liters) whole milk"
+      },
+      {
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(12 oz / 350 ml) evaporated milk"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "stick (½ cup / 110 g) of butter"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "–2 cans (14–28 oz / 430–860 ml) chicken broth (if using boneless, skinless chicken parts)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Ground black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Saltines"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Hot sauce"
       }
     ],
     "steps": [
-      "Pour all ingredients into the blender and blend until well mixed (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Adjust the consistency as desired with ice cream and chocolate milk (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Stir in crushed Oreo cookies if desired.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "In a large pot, simmer chicken or parts until completely cooked (3 minutes).",
+      "Turn heat to medium, then remove chicken from water and allow to cool (3 minutes).",
+      "Remove chicken from bone if using whole chicken or bone-in parts (3 minutes).",
+      "Using a meat grinder, grind the cooked chicken (3 minutes).",
+      "Alternatively, cut into small pieces (3 minutes).",
+      "Add chicken back to chicken stock (3 minutes).",
+      "If using skinless chicken parts, add chicken broth (3 minutes).",
+      "Add butter, evaporated milk, and enough milk to fill the pot (3 minutes).",
+      "Season with salt and pepper to taste, and stir well (3 minutes).",
+      "Serve in bowls, adding hot sauce as desired, with crumbled saltines mixed in (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chocolate_Milkshake",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Mull",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12178,46 +12278,66 @@
   },
   {
     "id": "r1023",
-    "name": "Chocolate Sauce",
-    "minutes": 45,
+    "name": "Doro Dabo (Ethiopian Chicken with Spiced Bread)",
+    "minutes": 60,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "",
-        "item": "½ oz butter"
+        "qty": 4.0,
+        "unit": "cup",
+        "item": "all-purpose flour"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "½ oz caster sugar"
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "active dry yeast"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "½ fluid oz (70 ml) double cream"
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "sugar"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "warm water"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "niter kibbeh (Ethiopian spiced clarified butter), or regular butter/oil"
+      },
+      {
+        "qty": 1.0,
         "unit": "",
-        "item": "½ oz plain chocolate"
+        "item": "egg, beaten (for egg wash)"
       }
     ],
     "steps": [
-      "Melt all the ingredients in a saucepan and allow to bubble for a while until the mixture darkens in colour slightly (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Be careful not to let the chocolate burn (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Remove from the heat and allow to cool until it thickens.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "In a large mixing bowl, combine the all-purpose flour, yeast, sugar, and salt (3 minutes).",
+      "Mix well (3 minutes).",
+      "Make a well in the center of the dry ingredients and gradually add warm water and niter kibbeh (3 minutes).",
+      "Stir until a dough forms (3 minutes).",
+      "Transfer the dough to a lightly floured surface and knead for about 8–10 minutes, or until the dough is smooth and elastic (3 minutes).",
+      "Shape the dough into a ball and place it in a greased bowl (3 minutes).",
+      "Cover the bowl with plastic wrap or a clean kitchen towel and let the dough rise in a warm place for about 1 hour, or until it has doubled in size (3 minutes).",
+      "Once the dough has risen, preheat the oven to 375°F (190°C) (3 minutes).",
+      "Punch down the dough to release any air bubbles, and transfer it to a lightly floured surface (3 minutes).",
+      "Knead for a few more minutes (3 minutes).",
+      "Divide the dough into two equal portions (3 minutes).",
+      "Take one portion and shape it into a round loaf, flattening it slightly (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chocolate_Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Doro_Dabo_%28Ethiopian_Chicken_with_Spiced_Bread%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12290,7 +12410,7 @@
     "ingredients": [
       {
         "qty": 3,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge leaves Romaine lettuce"
       },
       {
@@ -12383,56 +12503,50 @@
   },
   {
     "id": "r1027",
-    "name": "Coconut Chutney (North Indian)",
+    "name": "Tuna Rice Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": 2,
-        "unit": "cup",
-        "item": "shredded fresh coconut"
+        "unit": "can",
+        "item": "(12 ounces / 300 g) tuna"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "–2 split green chillies"
+        "unit": "package",
+        "item": "(10 ounces / 280 g) frozen peas, cooked"
       },
       {
-        "qty": 5,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup chopped cilantro"
+        "qty": 3,
+        "unit": "cup",
+        "item": "cooked rice"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ teaspoon salt"
+        "item": "¾ cup (6 ounces / 180 ml) water"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup water"
+        "qty": 1,
+        "unit": "can",
+        "item": "(10 ounces / 280 g) cheddar cheese soup"
       }
     ],
     "steps": [
-      "Grind all ingredients well in a blender (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Serve within 2 days.",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat oven to 400°F (200°C) (3 minutes).",
+      "In large bowl, combine tuna, peas, and rice, and mix well (3 minutes).",
+      "In another large bowl, combine cheddar cheese soup and water (3 minutes).",
+      "Place soup mixture in bowl with tuna mixture (3 minutes).",
+      "Place combined mixture in greased casserole dish (3 minutes).",
+      "Bake in a preheated 400°F (200°C) oven for 20 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coconut_Chutney_%28North_Indian%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tuna_Rice_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12557,7 +12671,7 @@
   },
   {
     "id": "r1030",
-    "name": "Coconut Rice (Indian)",
+    "name": "Indian Moong Dal",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -12569,34 +12683,24 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "oil"
+        "qty": null,
+        "unit": "",
+        "item": "½ cup moong dal"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "black mustard seed"
+        "qty": 3.0,
+        "unit": "g",
+        "item": "reen chiles"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup fresh/frozen grated coconut or dry coconut flakes"
+        "item": "½ tsp turmeric powder"
       },
       {
-        "qty": 2,
+        "qty": 1.0,
         "unit": "",
-        "item": "dry red chiles"
-      },
-      {
-        "qty": 7,
-        "unit": "",
-        "item": "–10 curry leaves"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chana dhal"
+        "item": "½ cups water"
       },
       {
         "qty": null,
@@ -12604,25 +12708,32 @@
         "item": "Salt to taste"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "A few cashews"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "cooking oil or ghee"
       },
       {
-        "qty": 5,
+        "qty": 1.0,
         "unit": "",
-        "item": "–7 cups of cooked, cooled white long-grain rice (light and fluffy)"
+        "item": "sprig curry leaves"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "jeera (cumin)"
       }
     ],
     "steps": [
-      "Heat the oil with the mustard seeds in a covered sauté pan (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "When the mustard seeds have finished popping, add everything but the rice, and lightly toast in the oil until golden (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add the seasonings to the cooked rice, mix well, and serve.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine the dal, green chillies, turmeric powder, and water in a pressure cooker (3 minutes).",
+      "Cook for 15 minutes, then leave the pressure cooker to release steam on its own (3 minutes).",
+      "Open the pressure cooker and mash the cooked dal (3 minutes).",
+      "Add salt to taste (3 minutes).",
+      "Add more water if it is too thick and heat over a medium heat (3 minutes).",
+      "Heat oil or ghee in a frying pan, then add jeera and curry leaves (3 minutes).",
+      "After it splutters, pour it over the cooked dal (3 minutes).",
+      "Serve hot with rice or rotis (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coconut_Rice_%28Indian%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Moong_Dal",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12693,27 +12804,27 @@
     ],
     "ingredients": [
       {
-        "qty": 550,
+        "qty": 550.0,
         "unit": "g",
         "item": "sausages"
       },
       {
-        "qty": 250,
+        "qty": 250.0,
         "unit": "g",
         "item": "bacon, chopped into 3 cm pieces"
       },
       {
-        "qty": 300,
+        "qty": 300.0,
         "unit": "ml",
         "item": "chicken stock or water"
       },
       {
-        "qty": 6,
+        "qty": 6.0,
         "unit": "",
         "item": "medium-sized potatoes"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "",
         "item": "medium onions"
       },
@@ -12730,12 +12841,10 @@
     ],
     "steps": [
       "Completely submerge bacon, onions, and sausages in broth, then boil for about 5 minutes (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the potatoes, cutting into bite-sized pieces if necessary, then add the rest of the stock (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Return to the boil and simmer for about 1 hour, or until the potatoes have started to disintegrate, thickening the broth (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add salt and pepper to serve."
+      "Add salt and pepper to serve (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coddle",
     "sourceName": "Wikibooks Cookbook",
@@ -13038,14 +13147,10 @@
     ],
     "steps": [
       "Combine the spirit or gum arabic water and oils together in a small cup, mixing well (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Set aside (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Combine the hot water, caffeine, caramel coloring, green tea extract, vanilla extract, lime juice, citric acid, sugar, and ¼ tsp (1.25 ml) of the oil mixture in a heat-safe container (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Stir well to dissolve and make a syrup (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "To make the finished soda, combine 1 volume of syrup with 5 volumes of carbonated water."
+      "To make the finished soda, combine 1 volume of syrup with 5 volumes of carbonated water (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cola_II",
     "sourceName": "Wikibooks Cookbook",
@@ -13053,87 +13158,86 @@
   },
   {
     "id": "r1036",
-    "name": "Cola V",
+    "name": "Bouchée à la Reine",
     "minutes": 45,
-    "servings": 4,
+    "servings": 2,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 20,
+        "qty": 4,
         "unit": "",
-        "item": "mg caffeine (optional)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp (2.5 ml) cocktail bitters"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp (2.5 ml) powdered cinnamon"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp (2.5 ml) powdered nutmeg"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "vanilla extract"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ in. wide strip of lemon peel cut around the fruit's circumference"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ in. wide strip of lemon peel cut around the fruit's circumference"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ in. wide strip of orange peel cut around the fruit's circumference"
+        "item": "vol-au-vent shells"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "cinnamon stick"
+        "item": "shallot, chopped"
       },
       {
-        "qty": null,
+        "qty": 2,
         "unit": "",
-        "item": "½ cup (120 ml) water"
+        "item": "Lrge chicken or turkey breasts"
+      },
+      {
+        "qty": 4,
+        "unit": "oz",
+        "item": "small or medium button mushrooms"
+      },
+      {
+        "qty": 2,
+        "unit": "oz",
+        "item": "butter"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "flour"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "egg yolk"
       },
       {
         "qty": 1,
         "unit": "cup",
-        "item": "(240 ml) coconut sugar"
+        "item": "crème fraîche (or heavy cream)"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "bouquet garni"
+      },
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "chicken stock"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Carbonated water, as needed"
+        "item": "Pepper"
       }
     ],
     "steps": [
-      "Boil all of the ingredients except for the vanilla extract and bitters in a pot until it becomes sticky (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Strain out the solids (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Add the vanilla extract and bitters (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "To make the finished soda, combine 1 volume of syrup with 5 volumes of carbonated water."
+      "Place the chicken stock and the bouquet garni in a saucepan (3 minutes).",
+      "Bring to a boil and allow to infuse 10–11 minutes (3 minutes).",
+      "Cut the chicken breasts into small dice (3 minutes).",
+      "Wash the mushrooms rapidly and cut in halves or quarters depending on the size (3 minutes).",
+      "In a sauteuse (or a frying pan), melt the butter on a medium-high heat and add the chopped shallot (3 minutes).",
+      "Cook for about 1 minute stirring (3 minutes).",
+      "Add the flour and cook 1 petite minute, mixing with a whisk or a wooden spoon, without browning (3 minutes).",
+      "Add the chicken stock little by little and cook for 2 minutes, stirring (3 minutes).",
+      "Add the diced chicken and the mushrooms and cook for 5–6 minutes, stirring from time to time (3 minutes).",
+      "Preheat the oven to 350°F (gas mark 6) and bake the vol-au-vent shells for 5–10 minutes or as directed by the manufacturer, without burning them (3 minutes).",
+      "In a bowl, mix the cream with the egg yolk (3 minutes).",
+      "Increase the heat under the sauteuse and add the egg yolk/cream mixture, beating to combine well with the sauce and lower the heat as soon as it reaches a boil (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cola_V",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bouch%C3%A9e_%C3%A0_la_Reine",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13314,27 +13418,27 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "bunch",
         "item": "of coriander leaf (cilantro)"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "",
         "item": "or so green chillies"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "tsp",
         "item": "cumin seeds or ground cumin (optional)"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
         "item": "small onion"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "pinch",
         "item": "salt"
       },
@@ -13346,12 +13450,10 @@
     ],
     "steps": [
       "Wash the coriander (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Finely chop the onion, chillies, and coriander (3 minutes).",
-      "Continue with the next step (2 minutes).",
       "Add the salt, juice, and cumin (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Blend to a fine paste."
+      "Blend to a fine paste (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coriander_Chutney",
     "sourceName": "Wikibooks Cookbook",
@@ -13390,7 +13492,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge corn muffin, or ⅔ cup coarse crumbs"
       },
       {
@@ -13527,7 +13629,7 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge egg"
       },
       {
@@ -13638,7 +13740,7 @@
   },
   {
     "id": "r1044",
-    "name": "Cottage Cheese Pancakes",
+    "name": "Whole Wheat Pancakes",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -13649,50 +13751,59 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "cup",
-        "item": "(240 g) cottage cheese"
+        "item": "(130 g) whole wheat flour"
       },
       {
-        "qty": 6,
-        "unit": "",
-        "item": "eggs"
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "(14 g) common granulated sugar"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "(8 g) baking powder"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (120 g) flour"
+        "item": "¼ teaspoon (5.5 g) salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "(250 ml) milk"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "(30 ml) oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon salt"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(60 ml) vegetable oil"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(60 ml) milk"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon vanilla extract"
+        "item": "additional oil for frying"
       }
     ],
     "steps": [
-      "Place all ingredients in a blender, and blend for 1 minute (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Pour about ¼ cup (60 g) batter for each pancake on a griddle sprayed with cooking spray or lightly coated with vegetable oil (3 minutes).",
-      "Continue with the next step (2 minutes).",
-      "Let cook until golden on both sides.",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Mix the dry ingredients in one bowl (3 minutes).",
+      "In another bowl, beat the egg, then add the other wet (liquid) ingredients (3 minutes).",
+      "This includes the 2 tablespoons of oil (3 minutes).",
+      "Mix the dry and wet ingredients together, well enough to eliminate dry spots but no more (3 minutes).",
+      "Heat a frying pan to medium heat, and grease it with some oil (3 minutes).",
+      "The pan is hot enough when a drop of water dances around rather than simply boiling away (3 minutes).",
+      "With a spoon, pour a pancake about 10 cm (4 inches) in diameter, using about 60 ml (¼ cup) of batter (3 minutes).",
+      "The pancake will bubble (3 minutes).",
+      "When the bubbling settles down and the edges are slightly dry, flip the pancake (3 minutes).",
+      "When the pancake looks golden and done, remove it and start another one (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cottage_Cheese_Pancakes",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Whole_Wheat_Pancakes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13804,12 +13915,12 @@
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge lemon, sliced thinly"
       },
       {
         "qty": 1,
-        "unit": "l",
+        "unit": "",
         "item": "Lrge lemon, cut in wedges"
       },
       {

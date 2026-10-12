@@ -38,6 +38,35 @@ check("minutes from the intro", shaped[0].minutes === 45);
 check("source and license", shaped[0].source === "Wikibooks" && shaped[0].license === "CC BY-SA");
 check("extract is not returned", shaped[0].extract == null);
 check("search url stays on wikibooks", search.wikibooksSearchUrl("pork chops").startsWith("https://en.wikibooks.org/w/api.php"));
+check("search asks for categories", search.wikibooksSearchUrl("pork").includes("cllimit=500"));
+const mixed = search.shapeCookbookPages([
+  {
+    title: "Cookbook:Pork Chops Cacciatore",
+    fullurl: "https://en.wikibooks.org/wiki/Cookbook:Pork_Chops_Cacciatore",
+    categories: [{ title: "Category:Italian recipes" }, { title: "Category:Recipes" }],
+  },
+  {
+    title: "Cookbook:Cuisine of Italy",
+    fullurl: "https://en.wikibooks.org/wiki/Cookbook:Cuisine_of_Italy",
+    categories: [{ title: "Category:Cuisines" }, { title: "Category:European cuisines" }],
+  },
+  {
+    title: "Cookbook:Pasta",
+    fullurl: "https://en.wikibooks.org/wiki/Cookbook:Pasta",
+    categories: [{ title: "Category:Ingredients" }],
+  },
+  {
+    title: "Cookbook:Breakfast",
+    fullurl: "https://en.wikibooks.org/wiki/Cookbook:Breakfast",
+    categories: [{ title: "Category:Breakfast recipes" }, { title: "Category:Cookbook pages with recipe lists" }],
+  },
+  {
+    title: "Cookbook:Cuisine of France",
+    fullurl: "https://en.wikibooks.org/wiki/Cookbook:Cuisine_of_France",
+  },
+]);
+check("overview and ingredient pages are left out", mixed.length === 1 && mixed[0].title === "Pork Chops Cacciatore");
+check("a dish title without categories is still a result", search.isCookbookRecipePage("Cookbook:Apple Glazed Pork Chops", []) === true);
 
 const title = wiki.cookbookTitleFromUrl("https://en.wikibooks.org/wiki/Cookbook:Pork_Chops_Cacciatore");
 check("cookbook title", title === "Cookbook:Pork Chops Cacciatore");

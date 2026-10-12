@@ -68,11 +68,16 @@ def main() -> None:
         if rid and int(str(rid).replace("r", "")) >= 249:
             if not r.get("sourceUrl"):
                 errors.append(f"{rid}: missing sourceUrl")
-    photos = Path(__file__).resolve().parents[2] / "pantry-week" / "photos"
+    root = Path(__file__).resolve().parents[2]
+    photos = root / "pantry-week" / "photos"
+    photos_js = root / "src" / "jhagho" / "js" / "photos.js"
+    by_id = set(re.findall(r'"(r\d+)":\s*"photos/', photos_js.read_text(encoding="utf-8")))
     for r in recipes:
         rid = r.get("id")
         if not rid:
             continue
+        if rid not in by_id:
+            errors.append(f"{rid}: missing photos.js map")
         p = photos / f"{rid}.webp"
         if not p.is_file():
             errors.append(f"{rid}: missing photo {p.name}")

@@ -64,6 +64,7 @@ def recipe_count(assets: dict) -> int:
         "js/recipes-batch3.js",
         "js/recipes-batch4.js",
         "js/recipes-batch5.js",
+        "js/recipes-batch6.js",
     ]
     paths = [n for n in order if n in assets]
     paths += sorted(set(js_files) - set(paths))

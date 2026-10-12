@@ -32,11 +32,11 @@ export async function wikimediaApiJson(url, { userAgent, signal } = {}) {
   if (!isAllowedWikimediaApiUrl(url)) throw new Error("Blocked non-Wikimedia API URL");
   const response = await fetch(url, {
     method: "GET",
-    redirect: "error",
+    redirect: "manual", // Workers support follow|manual; any 3xx is treated as a failure below
     signal,
     headers: { Accept: "application/json", "User-Agent": userAgent, "Api-User-Agent": userAgent },
   });
-  if (!response.ok) return { ok: false, status: response.status, data: null };
+  if (response.status >= 300 || !response.ok) return { ok: false, status: response.status, data: null };
   const len = Number(response.headers.get("Content-Length") || 0);
   if (len > MAX_BYTES) return { ok: false, status: 413, data: null };
   const text = await response.text();

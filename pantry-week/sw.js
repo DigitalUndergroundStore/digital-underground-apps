@@ -1,19 +1,20 @@
-/* pantry-week offline shell — version 202610111950-pw343. Regenerate: python3 tools/generate-hosted-sw.py */
+/* pantry-week offline shell — version 202610112021-pw344. Regenerate: python3 tools/generate-hosted-sw.py */
 /* Hosted buyer app service worker — generated; do not edit by hand.
    Regenerate with: python3 tools/generate-hosted-sw.py <slug> */
-var VERSION = "202610111950-pw343";
+var VERSION = "202610112021-pw344";
 var CACHE = "pantry-week-" + VERSION;
 var PREFIX = "pantry-week-";
 var FILES = [
  "index.html",
  "print/week.html",
- "unlock.js?v=202610111950-pw343",
- "app.bin?v=202610111950-pw343",
+ "unlock.js?v=202610112021-pw344",
+ "app.bin?v=202610112021-pw344",
  "manifest.webmanifest",
  "icons/icon-180.png",
  "icons/icon-192.png",
  "icons/icon-512.png",
- "version.json"
+ "version.json",
+ "images/backdrop-food.webp"
 ];
 
 function inScope(url) {

@@ -30,11 +30,17 @@ async function main() {
     viewport: { width: 412, height: 915 },
   });
   const page = await context.newPage();
+  page.on("dialog", (dialog) => dialog.accept());
   await page.goto(`${origin}/pantry-week/#code=${encodeURIComponent(code)}`, {
     waitUntil: "networkidle",
     timeout: 120000,
   });
   await page.waitForSelector("#main h2", { timeout: 60000 });
+  const tip = page.locator("#tip");
+  if (await tip.isVisible().catch(() => false)) {
+    await page.click("#tipOk");
+    await tip.waitFor({ state: "hidden", timeout: 5000 });
+  }
 
   await page.evaluate(() => {
     const PW = window.PW;
@@ -80,11 +86,30 @@ async function main() {
     }
   }
 
-  await page.click('button[data-action="fill"]');
-  await page.waitForSelector('button[data-action="fill-run"]', { timeout: 10000 });
-  await page.click('button[data-scope="all"]');
-  await page.click('button[data-action="fill-run"]');
-  await page.waitForTimeout(800);
+  async function runFillAll() {
+    await page.evaluate(() => {
+      const tab = document.querySelector('button[data-tab="plan"]');
+      if (tab) tab.click();
+    });
+    await page.click('button[data-action="fill"]');
+    await page.waitForSelector('button[data-action="fill-run"]', { timeout: 10000 });
+    await page.click('button[data-scope="all"]');
+    await page.check("#fillReplaceAll");
+    await page.click('button[data-action="fill-run"]');
+    await page.waitForTimeout(800);
+  }
+
+  const fillSignatures = [];
+  for (let i = 0; i < 3; i++) {
+    await runFillAll();
+    const sig = await page.$$eval(".slot .meal-card__name", (nodes) =>
+      nodes.map((n) => n.textContent.trim()).sort().join("|")
+    );
+    fillSignatures.push(sig);
+  }
+  if (new Set(fillSignatures).size < 2) {
+    errs.push("fill: identical recipe mix across 3 Fill a simple week runs");
+  }
 
   const filled = await page.$$eval(".slot", (nodes) =>
     nodes
@@ -95,26 +120,26 @@ async function main() {
       }))
   );
 
-  const mealType = (name) => {
-    const n = name.toLowerCase();
-    if (/parfait|pancake|waffle|omelette|scramble|granola|oatmeal|french toast|muffin|breakfast|shakshuka/i.test(n)) {
-      return "breakfast";
-    }
-    if (/\blunch\b|sandwich|panini|wrap/i.test(n)) return "lunch";
-    return "dinner";
-  };
-
-  for (const s of filled) {
-    const row = (s.kicker || "").split("·")[0].trim().toLowerCase();
-    if (!row || !s.name) continue;
-    const guess = mealType(s.name);
-    if (row === "breakfast" && guess === "dinner" && !/hash|toast/i.test(s.name)) {
-      errs.push(`fill: breakfast slot has ${s.name}`);
-    }
-    if (row === "dinner" && guess === "breakfast") {
-      errs.push(`fill: dinner slot has ${s.name}`);
-    }
-  }
+  const slotErrs = await page.evaluate(() => {
+    const PW = window.PW;
+    const state = PW.load();
+    const bad = [];
+    const slotFromKicker = (k) => (k || "").split("·")[0].trim().toLowerCase();
+    document.querySelectorAll(".slot").forEach((node) => {
+      const kicker = node.querySelector(".slot-kicker")?.textContent?.trim() || "";
+      const slot = slotFromKicker(kicker);
+      if (!["breakfast", "lunch", "dinner"].includes(slot)) return;
+      const name = node.querySelector(".meal-card__name")?.textContent?.trim();
+      if (!name) return;
+      const recipe = state.recipes.find((r) => r.name === name);
+      if (!recipe) return;
+      if (!PW.recipeFitsSlot(recipe, slot)) {
+        bad.push(`${slot}: ${recipe.name}`);
+      }
+    });
+    return bad;
+  });
+  for (const e of slotErrs) errs.push(`fill slot fit: ${e}`);
 
   await browser.close();
   console.log(JSON.stringify({ errs, slots, filledCount: filled.length }, null, 2));

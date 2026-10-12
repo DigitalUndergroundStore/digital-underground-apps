@@ -951,7 +951,8 @@ var PW_STARTERS = [
       "Spread the mayonnaise on one side of each slice of bread.",
       "On four slices, layer the lettuce, the tomato rounds, and the bacon. Grind or sprinkle the black pepper over the bacon.",
       "Close each sandwich with the remaining bread, mayonnaise side in.",
-      "Cut the sandwiches in half and eat them while the bacon is still warm."
+      "Cut the sandwiches in half and eat them while the bacon is still warm.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -1131,7 +1132,8 @@ var PW_STARTERS = [
       "Stir in the mayonnaise, the Dijon mustard, the soy sauce, the salt, and the black pepper until the salad holds together.",
       "Cover and chill 10 minutes so the flavors settle.",
       "Taste and stir once more so the Dijon mustard is even.",
-      "Spoon the tuna salad onto plates. It should be cold and thick enough to mound."
+      "Spoon the tuna salad onto plates. It should be cold and thick enough to mound.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -1438,7 +1440,7 @@ var PW_STARTERS = [
   },
   {
     "id": "r19",
-    "name": "Pesto",
+    "name": "Basil Pesto",
     "minutes": 25,
     "servings": 4,
     "tags": [
@@ -1483,6 +1485,11 @@ var PW_STARTERS = [
         "qty": 0.5,
         "unit": "tsp",
         "item": "black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "basil pesto"
       }
     ],
     "steps": [
@@ -2713,7 +2720,8 @@ var PW_STARTERS = [
       "Add the ground beef substitute and the water. Cook 10 to 12 minutes so the water nearly cooks off and the crumbles are hot through.",
       "Warm the refried beans in a small pot over low heat, stirring, until they are steaming, about 5 minutes.",
       "Heat a second pan over medium-low heat. Warm each flour tortilla about 30 seconds per side, until flexible and spotted.",
-      "Set out the remaining onion, the tomato, the lettuce, the Colby-Jack cheese, and the sour cream. Fill the tortillas with the crumbles and the refried beans and add the toppings at the table."
+      "Set out the remaining onion, the tomato, the lettuce, the Colby-Jack cheese, and the sour cream. Fill the tortillas with the crumbles and the refried beans and add the toppings at the table.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -3048,6 +3056,7 @@ var PW_STARTERS = [
       "Drain the pot. Discard the carrot, the onion, the leeks, and the celery. Puree the beans, adding the chicken stock until the puree is smooth.",
       "Return the puree to the pot, bring it to a gentle boil, and keep it hot.",
       "Whisk the egg yolks with the cream. Stir that into the hot soup off the boil so the yolks thicken it without scrambling. Cook over low heat 2 minutes, stirring, until the soup coats a spoon.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish).",
       "Boil the peas 3 minutes until they are bright, then stir them into the soup. Serve with the croutons on the side."
     ],
     "libraryRev": 2,

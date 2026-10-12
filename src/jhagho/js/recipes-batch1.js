@@ -1007,7 +1007,8 @@
       "Cover and simmer 60 minutes, stirring often so the beef does not catch. It should be starting to soften.",
       "Peel the carrots and cut them, the potatoes, and the celery into chunks about the size of the beef.",
       "Add the carrots and simmer 15 minutes. Add the potatoes and the celery and simmer 15 minutes more, until the vegetables are soft but still hold their shape and the beef is fork-tender.",
-      "Discard the bay leaf before ladling the stew."
+      "Discard the bay leaf before ladling the stew.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -1574,7 +1575,8 @@
       "Brown the beef chuck in batches so the pot is not crowded. Return all the meat to the pot.",
       "Stir in the chile puree and the beef stock, just enough to barely cover the chunks. Bring it to a boil.",
       "Turn the heat to the lowest setting and simmer about 2 1/2 hours, until the beef chuck is easy to cut with a spoon.",
-      "Add a splash more beef stock only if the sauce cooks down too far. Rest 10 minutes before serving."
+      "Add a splash more beef stock only if the sauce cooks down too far. Rest 10 minutes before serving.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -2983,7 +2985,8 @@
       "Stir in the all-purpose flour and cook 2 minutes.",
       "Whisk in the chicken broth a little at a time. Add the potatoes and the milk. Simmer until the potatoes are tender, about 15 minutes.",
       "Season with the salt and the black pepper. Stir in half the bacon, cover, and simmer 10 minutes.",
-      "Stir in the cheddar cheese until it melts. Ladle the soup and top it with the remaining bacon and the chives."
+      "Stir in the cheddar cheese until it melts. Ladle the soup and top it with the remaining bacon and the chives.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -4161,6 +4164,7 @@
       "Put the beef chuck and the bay leaves in a slow cooker and pour the sauce over the meat.",
       "Cover and cook on low for 8 hours, until the beef chuck shreds when pressed with a fork.",
       "Discard the bay leaves. Shred the beef chuck in the sauce.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish).",
       "Taste and leave it juicy. This pot serves 8."
     ],
     "libraryRev": 2,
@@ -6459,7 +6463,8 @@
       "Pour in the egg mixture and scramble 4 minutes, stirring, until the curds are set and no liquid egg remains.",
       "Toast 4 flour tortillas in a dry skillet over medium heat for 1 minute per side until flexible and spotted.",
       "Spread 1/4 cup smoked salmon cream cheese in a band down the center of each tortilla, leaving a border.",
-      "Spoon the eggs onto the smoked salmon cream cheese, fold the sides in, and roll the tortillas closed."
+      "Spoon the eggs onto the smoked salmon cream cheese, fold the sides in, and roll the tortillas closed.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -6540,6 +6545,7 @@
       "Warm 4 flour tortillas in a dry skillet over medium heat for 20 seconds per side until pliable.",
       "Spread 1/4 cup mayonnaise over the tortillas.",
       "Layer 12 oz sliced turkey, the bacon, 4 slice tomato, and 4 leaf lettuce on the mayonnaise, then spoon on the avocado.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish).",
       "Roll the wraps tightly, slice each in half, and serve within a few minutes so the tortillas stay soft."
     ],
     "libraryRev": 2,

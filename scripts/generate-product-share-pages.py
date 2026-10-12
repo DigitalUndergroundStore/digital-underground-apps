@@ -26,7 +26,10 @@ PRODUCTS = [
         "code": "jhagho",
         "name": "Pantry Week 2.0",
         "price": "CA$24",
-        "pitch": ["A week of meals, planned in one place."],
+        "pitch": [
+            "248 recipes with open-licence sources credited.",
+            "Plan the week, shop by aisle, cook offline.",
+        ],
         "cover": "media/jhagho.jpg",
         "shareVideo": {
             "poster": "/store/media/jhagho.jpg?v=20261011b",

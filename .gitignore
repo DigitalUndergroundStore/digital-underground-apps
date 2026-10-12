@@ -1,0 +1,4 @@
+node_modules/
+secrets/
+/tmp/
+__pycache__/

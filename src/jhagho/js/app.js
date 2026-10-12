@@ -1,4 +1,4 @@
-/* Pantry Week v3.10.0 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.10.1 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -1535,7 +1535,10 @@
   function renderPicker() {
     const picker = ui.picker;
     const title = PW.DAY_LABEL[picker.day] + " " + PW.SLOT_LABEL[picker.slot].toLowerCase();
-    const matches = state.recipes.filter((recipe) => PW.recipeMatches(recipe, picker.query, picker.filter));
+    const matches = state.recipes.filter((recipe) => {
+      if (!PW.recipeFitsSlot(recipe, picker.slot)) return false;
+      return PW.recipeMatches(recipe, picker.query, picker.filter);
+    });
     const rows = matches.length
       ? matches.map((recipe) => `<button type="button" class="pick-row" data-action="pick" data-id="${esc(recipe.id)}"><span class="pick-name">${esc(recipe.name)}</span><span class="pick-meta">${esc(timeLabel(recipe))}</span></button>`).join("")
       : `<p class="empty">No recipes match.</p>`;
@@ -1571,7 +1574,11 @@
 
   function renderPickerList() {
     if (!$("pickerList") || !ui.picker) return;
-    const matches = state.recipes.filter((recipe) => PW.recipeMatches(recipe, ui.picker.query, ui.picker.filter));
+    const slot = ui.picker.slot;
+    const matches = state.recipes.filter((recipe) => {
+      if (!PW.recipeFitsSlot(recipe, slot)) return false;
+      return PW.recipeMatches(recipe, ui.picker.query, ui.picker.filter);
+    });
     $("pickerList").innerHTML = matches.length
       ? matches.map((recipe) => `<button type="button" class="pick-row" data-action="pick" data-id="${esc(recipe.id)}"><span class="pick-name">${esc(recipe.name)}</span><span class="pick-meta">${esc(timeLabel(recipe))}</span></button>`).join("")
       : `<p class="empty">No recipes match.</p>`;
@@ -1820,7 +1827,8 @@
   function openAssign(id) {
     const recipe = PW.recipeById(state, id);
     if (!recipe) return;
-    ui.assign = { recipeId: id, day: PW.todayKey(), slot: "dinner", servings: recipe.servings || 4 };
+    const mealSlot = PW.recipeMealType(recipe);
+    ui.assign = { recipeId: id, day: PW.todayKey(), slot: mealSlot, servings: recipe.servings || 4 };
     pushHistory();
     renderAssign();
     const day = $("assignDay");
@@ -1868,6 +1876,11 @@
   function assignRecipe(id, day, slot, servings) {
     const recipe = PW.recipeById(state, id);
     if (!recipe || !state.week[day]) return;
+    if (!PW.recipeFitsSlot(recipe, slot)) {
+      const meal = PW.recipeMealType(recipe);
+      toast(recipe.name + " is a " + PW.SLOT_LABEL[meal] + " meal. Use a " + PW.SLOT_LABEL[meal].toLowerCase() + " slot.");
+      return;
+    }
     const current = state.week[day][slot];
     if ((current.recipeId || current.custom) && current.recipeId !== id) {
       const label = PW.slotLabel(state, current);

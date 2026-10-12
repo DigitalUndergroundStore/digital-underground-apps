@@ -43,11 +43,33 @@ process.stdout.write(JSON.stringify(ctx.PW_STARTERS));
     return json.loads(out)
 
 
+def meal_tags(tags: list) -> list[str]:
+    meals = ("breakfast", "lunch", "dinner")
+    return [t for t in (tags or []) if t in meals]
+
+
 def main() -> None:
     recipes = load_recipes()
     ids = set()
     names = set()
     errors = []
+    import tempfile
+
+    check_meals = Path(__file__).resolve().parent / "check-meals.mjs"
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as tf:
+        json.dump(recipes, tf)
+        meal_json = tf.name
+    meal_errors = json.loads(
+        subprocess.check_output(
+            ["node", str(check_meals), meal_json],
+            text=True,
+        )
+    )
+    Path(meal_json).unlink(missing_ok=True)
+    errors.extend(meal_errors[:20])
+    if len(meal_errors) > 20:
+        errors.append(f"... {len(meal_errors)} meal category errors total")
+
     for r in recipes:
         rid = r.get("id")
         num = int(str(rid).replace("r", "")) if rid and str(rid).startswith("r") else 0

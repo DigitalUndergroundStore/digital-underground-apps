@@ -352,9 +352,13 @@
     var servings = parseInt(raw.servings, 10);
     if (!servings || servings < 1) servings = 4;
     if (servings > 24) servings = 24;
+    var name = String(raw.name || "Untitled recipe").trim() || "Untitled recipe";
+    if (window.PW_MEAL && typeof window.PW_MEAL.scrubMealTags === "function") {
+      tags = window.PW_MEAL.scrubMealTags(tags, { name: name, tags: tags, minutes: minutes, ingredients: ingredients });
+    }
     var out = {
       id: String(raw.id || uid("c_")),
-      name: String(raw.name || "Untitled recipe").trim() || "Untitled recipe",
+      name: name,
       minutes: minutes,
       servings: servings,
       tags: tags,
@@ -1168,13 +1172,22 @@
     return ["dinner"];
   }
 
+  function recipeMealType(recipe) {
+    if (window.PW_MEAL && typeof window.PW_MEAL.inferMealCategory === "function") {
+      return window.PW_MEAL.inferMealCategory(recipe);
+    }
+    var tags = recipe && recipe.tags || [];
+    if (tags.indexOf("breakfast") !== -1) return "breakfast";
+    if (tags.indexOf("lunch") !== -1) return "lunch";
+    return "dinner";
+  }
+
   function recipeFitsSlot(recipe, slot) {
+    if (window.PW_MEAL && typeof window.PW_MEAL.recipeFitsMealSlot === "function") {
+      return window.PW_MEAL.recipeFitsMealSlot(recipe, slot);
+    }
     var tags = recipe.tags || [];
-    if (tags.indexOf(slot) !== -1) return true;
-    if (slot === "dinner" && tags.indexOf("lunch") !== -1) return true;
-    if (slot === "lunch" && tags.indexOf("snack") !== -1) return true;
-    if (slot === "breakfast" && (tags.indexOf("dessert") !== -1 || tags.indexOf("snack") !== -1)) return false;
-    return false;
+    return tags.indexOf(slot) !== -1;
   }
 
   function recipeClassicBoost(recipe) {
@@ -1431,7 +1444,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.10.0",
+    VERSION: "3.10.1",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,
@@ -1481,6 +1494,8 @@
     recipeClassicBoost: recipeClassicBoost,
     parseRecipeText: parseRecipeText,
     fillSimpleWeek: fillSimpleWeek,
+    recipeMealType: recipeMealType,
+    recipeFitsSlot: recipeFitsSlot,
     slotsForFillScope: slotsForFillScope,
     weekHasMeals: weekHasMeals,
     weeksEqual: weeksEqual,

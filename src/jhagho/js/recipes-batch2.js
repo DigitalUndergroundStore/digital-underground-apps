@@ -1169,7 +1169,7 @@
     "minutes": 45,
     "servings": 8,
     "tags": [
-      "dinner",
+      "lunch",
       "collection-soup",
       "vegetarian",
       "budget",
@@ -1308,7 +1308,7 @@
     "minutes": 35,
     "servings": 6,
     "tags": [
-      "dinner",
+      "lunch",
       "collection-soup",
       "vegetarian",
       "vegan",
@@ -1443,7 +1443,7 @@
     "minutes": 30,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "collection-soup",
       "vegetarian",
       "moderate",

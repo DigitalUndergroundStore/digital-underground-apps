@@ -196,7 +196,22 @@ def display_name(title: str) -> str:
 
 def pick_tags(name: str, ingredients: list[dict]) -> list[str]:
     blob = name + " " + " ".join(i["item"] for i in ingredients)
-    tags = ["dinner", "medium", "moderate"]
+    meal = "dinner"
+    if re.search(
+        r"\b(breakfast|brunch|pancake|waffle|omelette|omelet|scramble|parfait|granola|"
+        r"oatmeal|french toast|smoothie|shakshuka|hash|frittata|porridge|congee|muffin|"
+        r"dosa|crepe|bagel)\b",
+        name,
+        re.I,
+    ):
+        meal = "breakfast"
+    elif re.search(
+        r"\b(lunch|sandwich|panini|wrap|soup|chowder|pho|ramen|bowl|salad|quesadilla)\b",
+        name,
+        re.I,
+    ):
+        meal = "lunch"
+    tags = [meal, "medium", "moderate"]
     if not MEAT.search(blob):
         tags.extend(["vegetarian"])
     if re.search(r"\b(pasta|spaghetti|lasagna|risotto)\b", blob, re.I):

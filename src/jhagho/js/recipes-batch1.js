@@ -210,7 +210,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "dinner",
       "canadian",
       "high-protein",
       "splurge",
@@ -268,7 +267,6 @@
     "servings": 4,
     "tags": [
       "breakfast",
-      "lunch",
       "canadian",
       "moderate",
       "easy"
@@ -378,7 +376,6 @@
     "servings": 8,
     "tags": [
       "lunch",
-      "dinner",
       "canadian",
       "gluten-free",
       "budget",
@@ -963,7 +960,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "canadian",
       "vegetarian",
       "budget",
@@ -1026,7 +1022,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "canadian",
       "moderate",
       "easy"
@@ -1384,6 +1379,7 @@
     "minutes": 45,
     "servings": 16,
     "tags": [
+      "dinner",
       "dessert",
       "snack",
       "canadian",
@@ -1447,6 +1443,7 @@
     "minutes": 40,
     "servings": 12,
     "tags": [
+      "dinner",
       "dessert",
       "snack",
       "canadian",
@@ -1563,6 +1560,7 @@
     "minutes": 45,
     "servings": 8,
     "tags": [
+      "dinner",
       "dessert",
       "canadian",
       "vegetarian",
@@ -1626,7 +1624,6 @@
     "servings": 4,
     "tags": [
       "breakfast",
-      "lunch",
       "canadian",
       "vegetarian",
       "moderate",
@@ -1684,7 +1681,6 @@
     "servings": 8,
     "tags": [
       "dinner",
-      "lunch",
       "canadian",
       "vegetarian",
       "gluten-free",
@@ -1934,7 +1930,6 @@
     "servings": 6,
     "tags": [
       "breakfast",
-      "dinner",
       "collection-comfort",
       "high-protein",
       "budget",
@@ -1987,7 +1982,6 @@
     "servings": 6,
     "tags": [
       "lunch",
-      "dinner",
       "collection-comfort",
       "vegetarian",
       "moderate",
@@ -2734,7 +2728,6 @@
     "minutes": 45,
     "servings": 8,
     "tags": [
-      "lunch",
       "dinner",
       "collection-crowd",
       "high-protein",
@@ -3473,7 +3466,6 @@
     "servings": 6,
     "tags": [
       "lunch",
-      "dinner",
       "collection-soup",
       "vegetarian",
       "budget",
@@ -3536,7 +3528,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "dinner",
       "collection-soup",
       "vegetarian",
       "moderate",
@@ -3707,6 +3698,7 @@
     "minutes": 32,
     "servings": 6,
     "tags": [
+      "dinner",
       "snack",
       "collection-pub",
       "vegetarian",
@@ -3935,8 +3927,8 @@
     "minutes": 28,
     "servings": 6,
     "tags": [
-      "snack",
       "dinner",
+      "snack",
       "collection-texmex",
       "high-protein",
       "budget",
@@ -4057,7 +4049,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "collection-asian",
       "dairy-free",
       "budget",
@@ -4114,7 +4105,7 @@
     "minutes": 25,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "collection-asian",
       "dairy-free",
       "moderate",

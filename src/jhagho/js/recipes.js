@@ -3,60 +3,60 @@
 
 var PW_STARTERS = [
   {
-    id: "r1",
-    name: "Lemon Herb Chicken",
-    minutes: 30,
-    servings: 4,
-    tags: [
+    "id": "r1",
+    "name": "Lemon Herb Chicken",
+    "minutes": 30,
+    "servings": 4,
+    "tags": [
       "dinner",
       "dairy-free",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1.5,
-        unit: "lb",
-        item: "chicken thighs"
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "chicken thighs"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "lemon"
+        "qty": 2,
+        "unit": "",
+        "item": "lemon"
       },
       {
-        qty: 4,
-        unit: "clove",
-        item: "garlic"
+        "qty": 4,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "oregano"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "oregano"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "black pepper"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       },
       {
-        qty: 1,
-        unit: "lb",
-        item: "green beans"
+        "qty": 1,
+        "unit": "lb",
+        "item": "green beans"
       }
     ],
-    steps: [
+    "steps": [
       "Heat the oven to 425°F. Trim the green beans.",
       "Toss the chicken and beans with the oil, garlic, oregano, salt, and pepper on a sheet pan.",
       "Cut one lemon into wedges and add them to the pan. Squeeze the other lemon over the top.",
@@ -65,54 +65,54 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r2",
-    name: "Veggie Scramble Toast",
-    minutes: 15,
-    servings: 4,
-    tags: [
+    "id": "r2",
+    "name": "Veggie Scramble Toast",
+    "minutes": 15,
+    "servings": 4,
+    "tags": [
       "breakfast",
       "vegetarian",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 6,
-        unit: "",
-        item: "egg"
+        "qty": 6,
+        "unit": "",
+        "item": "egg"
       },
       {
-        qty: 4,
-        unit: "cup",
-        item: "spinach"
+        "qty": 4,
+        "unit": "cup",
+        "item": "spinach"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "cherry tomatoes"
+        "qty": 1,
+        "unit": "cup",
+        "item": "cherry tomatoes"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "butter"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "butter"
       },
       {
-        qty: 4,
-        unit: "slice",
-        item: "bread"
+        "qty": 4,
+        "unit": "slice",
+        "item": "bread"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "black pepper"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       }
     ],
-    steps: [
+    "steps": [
       "Toast the bread.",
       "Melt the butter in a wide pan. Cook the tomatoes and spinach for 2 minutes, until the spinach wilts.",
       "Beat the eggs with the salt and pepper. Pour them in and stir gently until just set.",
@@ -120,12 +120,11 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r3",
-    name: "Chickpea Grain Bowls",
-    minutes: 25,
-    servings: 4,
-    tags: [
-      "lunch",
+    "id": "r3",
+    "name": "Chickpea Grain Bowls",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "dairy-free",
@@ -133,54 +132,54 @@ var PW_STARTERS = [
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 2,
-        unit: "can",
-        item: "chickpeas"
+        "qty": 2,
+        "unit": "can",
+        "item": "chickpeas"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "quinoa"
+        "qty": 1,
+        "unit": "cup",
+        "item": "quinoa"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "cucumber"
+        "qty": 1,
+        "unit": "",
+        "item": "cucumber"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "tomato"
+        "qty": 2,
+        "unit": "",
+        "item": "tomato"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "parsley"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "parsley"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lemon"
+        "qty": 1,
+        "unit": "",
+        "item": "lemon"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "tahini"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "tahini"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Rinse the quinoa and simmer it in 2 cups of water for 15 minutes. Rest it off the heat, covered.",
       "Drain the chickpeas. Warm them in a skillet with 1 tablespoon of oil and a pinch of salt.",
       "Chop the cucumber, tomatoes, and parsley.",
@@ -189,64 +188,64 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r4",
-    name: "Tomato Basil Pasta",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r4",
+    "name": "Tomato Basil Pasta",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 12,
-        unit: "oz",
-        item: "pasta"
+        "qty": 12,
+        "unit": "oz",
+        "item": "pasta"
       },
       {
-        qty: 28,
-        unit: "oz",
-        item: "canned crushed tomatoes"
+        "qty": 28,
+        "unit": "oz",
+        "item": "canned crushed tomatoes"
       },
       {
-        qty: 3,
-        unit: "clove",
-        item: "garlic"
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "yellow onion"
+        "qty": 1,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "basil"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "basil"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "parmesan"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "parmesan"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "red pepper flakes"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "red pepper flakes"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Boil the pasta in salted water until just tender. Save 1/2 cup of the pasta water.",
       "Warm the oil and cook the chopped onion for 4 minutes. Add the garlic and pepper flakes for 30 seconds.",
       "Pour in the tomatoes and salt. Simmer 8 minutes.",
@@ -255,55 +254,55 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r5",
-    name: "Salmon & Broccoli Sheet Pan",
-    minutes: 25,
-    servings: 4,
-    tags: [
+    "id": "r5",
+    "name": "Salmon & Broccoli Sheet Pan",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
       "dinner",
       "dairy-free",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 4,
-        unit: "fillet",
-        item: "salmon"
+        "qty": 4,
+        "unit": "fillet",
+        "item": "salmon"
       },
       {
-        qty: 2,
-        unit: "head",
-        item: "broccoli"
+        "qty": 2,
+        "unit": "head",
+        "item": "broccoli"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "garlic powder"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "garlic powder"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lemon"
+        "qty": 1,
+        "unit": "",
+        "item": "lemon"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "black pepper"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       }
     ],
-    steps: [
+    "steps": [
       "Heat the oven to 425°F. Cut the broccoli into florets.",
       "Toss the broccoli with the oil, garlic powder, salt, and pepper. Roast 10 minutes.",
       "Season the salmon. Move the broccoli aside and add the salmon to the pan.",
@@ -312,49 +311,49 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r6",
-    name: "Overnight Oats Jars",
-    minutes: 10,
-    servings: 4,
-    tags: [
+    "id": "r6",
+    "name": "Overnight Oats Jars",
+    "minutes": 10,
+    "servings": 4,
+    "tags": [
       "breakfast",
       "vegetarian",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 2,
-        unit: "cup",
-        item: "rolled oats"
+        "qty": 2,
+        "unit": "cup",
+        "item": "rolled oats"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "milk"
+        "qty": 2,
+        "unit": "cup",
+        "item": "milk"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "chia seeds"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "chia seeds"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "honey"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "mixed berries"
+        "qty": 2,
+        "unit": "cup",
+        "item": "mixed berries"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "peanut butter"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "peanut butter"
       }
     ],
-    steps: [
+    "steps": [
       "Stir the oats, milk, chia seeds, and honey in a bowl.",
       "Divide the mixture into four jars.",
       "Cover and chill at least 4 hours, or overnight.",
@@ -362,65 +361,65 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r7",
-    name: "Turkey Taco Skillet",
-    minutes: 25,
-    servings: 4,
-    tags: [
+    "id": "r7",
+    "name": "Turkey Taco Skillet",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
       "dinner",
       "dairy-free",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1,
-        unit: "lb",
-        item: "ground turkey"
+        "qty": 1,
+        "unit": "lb",
+        "item": "ground turkey"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "taco seasoning"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "taco seasoning"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "bell pepper"
+        "qty": 2,
+        "unit": "",
+        "item": "bell pepper"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "yellow onion"
+        "qty": 1,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "frozen corn"
+        "qty": 1,
+        "unit": "cup",
+        "item": "frozen corn"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "rice"
+        "qty": 1,
+        "unit": "cup",
+        "item": "rice"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "salsa"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "salsa"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "lettuce"
+        "qty": 2,
+        "unit": "cup",
+        "item": "lettuce"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Start the rice in 2 cups of water with a pinch of salt.",
       "Chop the onion and peppers. Brown the turkey with the onion in a skillet, breaking it up.",
       "Add the peppers, corn, taco seasoning, and salsa. Cook 6 minutes.",
@@ -429,59 +428,59 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r8",
-    name: "Caprese Chicken Salad",
-    minutes: 15,
-    servings: 4,
-    tags: [
+    "id": "r8",
+    "name": "Caprese Chicken Salad",
+    "minutes": 15,
+    "servings": 4,
+    "tags": [
       "lunch",
       "gluten-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1,
-        unit: "",
-        item: "rotisserie chicken"
+        "qty": 1,
+        "unit": "",
+        "item": "rotisserie chicken"
       },
       {
-        qty: 8,
-        unit: "oz",
-        item: "mozzarella"
+        "qty": 8,
+        "unit": "oz",
+        "item": "mozzarella"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "cherry tomatoes"
+        "qty": 2,
+        "unit": "cup",
+        "item": "cherry tomatoes"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "basil"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "basil"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "balsamic glaze"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "balsamic glaze"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 4,
-        unit: "cup",
-        item: "mixed greens"
+        "qty": 4,
+        "unit": "cup",
+        "item": "mixed greens"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Cut the mozzarella and tomatoes into bite-size pieces. Tear the basil.",
       "Toss the chicken, mozzarella, tomatoes, and basil with the oil and salt.",
       "Pile the greens into bowls.",
@@ -489,54 +488,54 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r9",
-    name: "Black Bean Quesadillas",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r9",
+    "name": "Black Bean Quesadillas",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "lunch",
       "vegetarian",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 8,
-        unit: "",
-        item: "flour tortilla"
+        "qty": 8,
+        "unit": "",
+        "item": "flour tortilla"
       },
       {
-        qty: 2,
-        unit: "can",
-        item: "black beans"
+        "qty": 2,
+        "unit": "can",
+        "item": "black beans"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "cheddar"
+        "qty": 2,
+        "unit": "cup",
+        "item": "cheddar"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "cumin"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "salsa"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "salsa"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "avocado"
+        "qty": 2,
+        "unit": "",
+        "item": "avocado"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Drain the beans and mash them with the cumin and salt.",
       "Spread beans and cheddar on four tortillas. Top with the other four.",
       "Cook each quesadilla in a dry skillet over medium heat, 2 to 3 minutes a side, until the cheese melts.",
@@ -544,53 +543,53 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r10",
-    name: "Sausage & Pepper Pasta",
-    minutes: 30,
-    servings: 4,
-    tags: [
+    "id": "r10",
+    "name": "Sausage & Pepper Pasta",
+    "minutes": 30,
+    "servings": 4,
+    "tags": [
       "dinner",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1,
-        unit: "lb",
-        item: "italian sausage"
+        "qty": 1,
+        "unit": "lb",
+        "item": "italian sausage"
       },
       {
-        qty: 12,
-        unit: "oz",
-        item: "penne"
+        "qty": 12,
+        "unit": "oz",
+        "item": "penne"
       },
       {
-        qty: 3,
-        unit: "",
-        item: "bell pepper"
+        "qty": 3,
+        "unit": "",
+        "item": "bell pepper"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "yellow onion"
+        "qty": 1,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 24,
-        unit: "oz",
-        item: "marinara sauce"
+        "qty": 24,
+        "unit": "oz",
+        "item": "marinara sauce"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "parmesan"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "parmesan"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Boil the penne in salted water until tender.",
       "Slice the sausage, peppers, and onion.",
       "Brown the sausage in a wide pan. Add the peppers and onion and cook 6 minutes.",
@@ -599,39 +598,39 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r11",
-    name: "Greek Yogurt Parfaits",
-    minutes: 10,
-    servings: 4,
-    tags: [
+    "id": "r11",
+    "name": "Greek Yogurt Parfaits",
+    "minutes": 10,
+    "servings": 4,
+    "tags": [
       "breakfast",
       "vegetarian",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 32,
-        unit: "oz",
-        item: "greek yogurt"
+        "qty": 32,
+        "unit": "oz",
+        "item": "greek yogurt"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "granola"
+        "qty": 2,
+        "unit": "cup",
+        "item": "granola"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "honey"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
       },
       {
-        qty: 3,
-        unit: "cup",
-        item: "mixed berries"
+        "qty": 3,
+        "unit": "cup",
+        "item": "mixed berries"
       }
     ],
-    steps: [
+    "steps": [
       "Spoon a layer of yogurt into each jar or bowl.",
       "Add a layer of berries, then granola.",
       "Repeat the layers until the jars are full.",
@@ -639,60 +638,60 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r12",
-    name: "Miso Ginger Soup + Tofu",
-    minutes: 25,
-    servings: 4,
-    tags: [
-      "dinner",
+    "id": "r12",
+    "name": "Miso Ginger Soup + Tofu",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
+      "lunch",
       "vegetarian",
       "dairy-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 3,
-        unit: "tbsp",
-        item: "miso paste"
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "miso paste"
       },
       {
-        qty: 14,
-        unit: "oz",
-        item: "firm tofu"
+        "qty": 14,
+        "unit": "oz",
+        "item": "firm tofu"
       },
       {
-        qty: 3,
-        unit: "",
-        item: "green onion"
+        "qty": 3,
+        "unit": "",
+        "item": "green onion"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "spinach"
+        "qty": 2,
+        "unit": "cup",
+        "item": "spinach"
       },
       {
-        qty: 8,
-        unit: "oz",
-        item: "mushrooms"
+        "qty": 8,
+        "unit": "oz",
+        "item": "mushrooms"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "ginger"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "ginger"
       },
       {
-        qty: 6,
-        unit: "cup",
-        item: "vegetable broth"
+        "qty": 6,
+        "unit": "cup",
+        "item": "vegetable broth"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "sesame oil"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame oil"
       }
     ],
-    steps: [
+    "steps": [
       "Slice the mushrooms, tofu, and green onions. Grate the ginger.",
       "Simmer the broth, ginger, and mushrooms for 8 minutes.",
       "Turn off the heat. Whisk the miso with a ladle of broth, then stir it back in. Do not boil the miso.",
@@ -701,54 +700,54 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r13",
-    name: "BLT Egg Sandwiches",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r13",
+    "name": "BLT Egg Sandwiches",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "breakfast",
       "dairy-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 4,
-        unit: "",
-        item: "egg"
+        "qty": 4,
+        "unit": "",
+        "item": "egg"
       },
       {
-        qty: 8,
-        unit: "slice",
-        item: "bacon"
+        "qty": 8,
+        "unit": "slice",
+        "item": "bacon"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "tomato"
+        "qty": 2,
+        "unit": "",
+        "item": "tomato"
       },
       {
-        qty: 4,
-        unit: "",
-        item: "lettuce"
+        "qty": 4,
+        "unit": "",
+        "item": "lettuce"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "mayonnaise"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "mayonnaise"
       },
       {
-        qty: 4,
-        unit: "",
-        item: "english muffin"
+        "qty": 4,
+        "unit": "",
+        "item": "english muffin"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "black pepper"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       }
     ],
-    steps: [
+    "steps": [
       "Cook the bacon in a skillet until crisp. Set it aside and pour off most of the fat.",
       "Fry the eggs in the same pan. Season with pepper.",
       "Split and toast the muffins. Slice the tomatoes.",
@@ -757,59 +756,59 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r14",
-    name: "Sheet Pan Fajitas",
-    minutes: 30,
-    servings: 4,
-    tags: [
+    "id": "r14",
+    "name": "Sheet Pan Fajitas",
+    "minutes": 30,
+    "servings": 4,
+    "tags": [
       "dinner",
       "dairy-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1.5,
-        unit: "lb",
-        item: "chicken breast"
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "chicken breast"
       },
       {
-        qty: 3,
-        unit: "",
-        item: "bell pepper"
+        "qty": 3,
+        "unit": "",
+        "item": "bell pepper"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "yellow onion"
+        "qty": 2,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "fajita seasoning"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "fajita seasoning"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "lime"
+        "qty": 2,
+        "unit": "",
+        "item": "lime"
       },
       {
-        qty: 8,
-        unit: "",
-        item: "flour tortilla"
+        "qty": 8,
+        "unit": "",
+        "item": "flour tortilla"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "cilantro"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "cilantro"
       }
     ],
-    steps: [
+    "steps": [
       "Heat the oven to 425°F.",
       "Slice the chicken, peppers, and onions into strips.",
       "Toss everything except the tortillas, lime, and cilantro with the oil and seasoning.",
@@ -818,65 +817,65 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r15",
-    name: "Tuna White Bean Salad",
-    minutes: 12,
-    servings: 4,
-    tags: [
+    "id": "r15",
+    "name": "Tuna White Bean Salad",
+    "minutes": 12,
+    "servings": 4,
+    "tags": [
       "lunch",
       "dairy-free",
       "gluten-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 3,
-        unit: "can",
-        item: "tuna"
+        "qty": 3,
+        "unit": "can",
+        "item": "tuna"
       },
       {
-        qty: 1,
-        unit: "can",
-        item: "cannellini beans"
+        "qty": 1,
+        "unit": "can",
+        "item": "cannellini beans"
       },
       {
-        qty: 0.5,
-        unit: "",
-        item: "red onion"
+        "qty": 0.5,
+        "unit": "",
+        "item": "red onion"
       },
       {
-        qty: 2,
-        unit: "stalk",
-        item: "celery"
+        "qty": 2,
+        "unit": "stalk",
+        "item": "celery"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lemon"
+        "qty": 1,
+        "unit": "",
+        "item": "lemon"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "dijon mustard"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dijon mustard"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "parsley"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "parsley"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Drain the tuna and beans.",
       "Finely chop the onion, celery, and parsley.",
       "Stir the oil, lemon juice, mustard, and salt.",
@@ -885,55 +884,55 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r16",
-    name: "Baked Potato Bar",
-    minutes: 30,
-    servings: 4,
-    tags: [
+    "id": "r16",
+    "name": "Baked Potato Bar",
+    "minutes": 30,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 4,
-        unit: "",
-        item: "russet potato"
+        "qty": 4,
+        "unit": "",
+        "item": "russet potato"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "broccoli"
+        "qty": 2,
+        "unit": "cup",
+        "item": "broccoli"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "cheddar"
+        "qty": 1,
+        "unit": "cup",
+        "item": "cheddar"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "sour cream"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "sour cream"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "chives"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "chives"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "butter"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "butter"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Scrub the potatoes and prick them with a fork.",
       "Microwave on high for 8 to 10 minutes, turning once, until a knife slides in easily.",
       "While they cook, steam or microwave the broccoli until tender.",
@@ -942,12 +941,11 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r17",
-    name: "Peanut Noodle Bowls",
-    minutes: 20,
-    servings: 4,
-    tags: [
-      "lunch",
+    "id": "r17",
+    "name": "Peanut Noodle Bowls",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "dairy-free",
@@ -955,49 +953,49 @@ var PW_STARTERS = [
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 12,
-        unit: "oz",
-        item: "rice noodles"
+        "qty": 12,
+        "unit": "oz",
+        "item": "rice noodles"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "peanut butter"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "peanut butter"
       },
       {
-        qty: 3,
-        unit: "tbsp",
-        item: "tamari"
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "tamari"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "lime"
+        "qty": 2,
+        "unit": "",
+        "item": "lime"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "honey"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "honey"
       },
       {
-        qty: 2,
-        unit: "clove",
-        item: "garlic"
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "cucumber"
+        "qty": 1,
+        "unit": "",
+        "item": "cucumber"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "carrot"
+        "qty": 2,
+        "unit": "",
+        "item": "carrot"
       }
     ],
-    steps: [
+    "steps": [
       "Boil the rice noodles until tender. Rinse them under cold water.",
       "Whisk the peanut butter, tamari, lime juice, honey, and garlic with 1/3 cup warm water.",
       "Slice the cucumber. Shred or slice the carrots.",
@@ -1006,67 +1004,66 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r18",
-    name: "Shakshuka",
-    minutes: 25,
-    servings: 4,
-    tags: [
+    "id": "r18",
+    "name": "Shakshuka",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
       "breakfast",
-      "dinner",
       "vegetarian",
       "dairy-free",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 6,
-        unit: "",
-        item: "egg"
+        "qty": 6,
+        "unit": "",
+        "item": "egg"
       },
       {
-        qty: 28,
-        unit: "oz",
-        item: "canned crushed tomatoes"
+        "qty": 28,
+        "unit": "oz",
+        "item": "canned crushed tomatoes"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "bell pepper"
+        "qty": 1,
+        "unit": "",
+        "item": "bell pepper"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "yellow onion"
+        "qty": 1,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 3,
-        unit: "clove",
-        item: "garlic"
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "cumin"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "paprika"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Chop the onion and pepper. Warm the oil and cook them for 5 minutes.",
       "Add the garlic, cumin, and paprika. Stir 30 seconds.",
       "Pour in the tomatoes and salt. Simmer 8 minutes until thickened.",
@@ -1075,49 +1072,49 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r19",
-    name: "Pesto Gnocchi Skillet",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r19",
+    "name": "Pesto Gnocchi Skillet",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1.5,
-        unit: "lb",
-        item: "gnocchi"
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "gnocchi"
       },
       {
-        qty: 0.75,
-        unit: "cup",
-        item: "pesto"
+        "qty": 0.75,
+        "unit": "cup",
+        "item": "pesto"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "cherry tomatoes"
+        "qty": 2,
+        "unit": "cup",
+        "item": "cherry tomatoes"
       },
       {
-        qty: 3,
-        unit: "cup",
-        item: "spinach"
+        "qty": 3,
+        "unit": "cup",
+        "item": "spinach"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "parmesan"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "parmesan"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       }
     ],
-    steps: [
+    "steps": [
       "Warm the oil in a wide skillet over medium-high heat.",
       "Add the gnocchi in one layer. Cook without stirring until the undersides are golden, then toss.",
       "Add the tomatoes and cook 2 minutes, until they start to burst.",
@@ -1126,65 +1123,65 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r20",
-    name: "Turkey Chili",
-    minutes: 30,
-    servings: 4,
-    tags: [
-      "dinner",
+    "id": "r20",
+    "name": "Turkey Chili",
+    "minutes": 30,
+    "servings": 4,
+    "tags": [
+      "lunch",
       "dairy-free",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1,
-        unit: "lb",
-        item: "ground turkey"
+        "qty": 1,
+        "unit": "lb",
+        "item": "ground turkey"
       },
       {
-        qty: 2,
-        unit: "can",
-        item: "kidney beans"
+        "qty": 2,
+        "unit": "can",
+        "item": "kidney beans"
       },
       {
-        qty: 28,
-        unit: "oz",
-        item: "canned crushed tomatoes"
+        "qty": 28,
+        "unit": "oz",
+        "item": "canned crushed tomatoes"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "yellow onion"
+        "qty": 1,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "chili powder"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "chili powder"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "cumin"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "chicken broth"
+        "qty": 1,
+        "unit": "cup",
+        "item": "chicken broth"
       },
       {
-        qty: 3,
-        unit: "clove",
-        item: "garlic"
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Chop the onion. Brown the turkey with the onion in a pot, breaking it up.",
       "Add the garlic, chili powder, and cumin. Stir 30 seconds.",
       "Add the beans, tomatoes, broth, and salt.",
@@ -1193,55 +1190,55 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r21",
-    name: "Garlic Shrimp Skillet",
-    minutes: 15,
-    servings: 4,
-    tags: [
+    "id": "r21",
+    "name": "Garlic Shrimp Skillet",
+    "minutes": 15,
+    "servings": 4,
+    "tags": [
       "dinner",
       "dairy-free",
       "gluten-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1,
-        unit: "lb",
-        item: "shrimp"
+        "qty": 1,
+        "unit": "lb",
+        "item": "shrimp"
       },
       {
-        qty: 4,
-        unit: "clove",
-        item: "garlic"
+        "qty": 4,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lemon"
+        "qty": 1,
+        "unit": "",
+        "item": "lemon"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "parsley"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "parsley"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "red pepper flakes"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "red pepper flakes"
       }
     ],
-    steps: [
+    "steps": [
       "Pat the shrimp dry and season with salt.",
       "Warm the oil over medium-high heat. Cook the shrimp 1 to 2 minutes a side, until pink. Move them to a plate.",
       "Add the garlic and pepper flakes to the pan for 30 seconds.",
@@ -1250,12 +1247,11 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r22",
-    name: "Veggie Fried Rice",
-    minutes: 30,
-    servings: 4,
-    tags: [
-      "lunch",
+    "id": "r22",
+    "name": "Veggie Fried Rice",
+    "minutes": 30,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "dairy-free",
@@ -1263,49 +1259,49 @@ var PW_STARTERS = [
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1,
-        unit: "cup",
-        item: "rice"
+        "qty": 1,
+        "unit": "cup",
+        "item": "rice"
       },
       {
-        qty: 3,
-        unit: "",
-        item: "egg"
+        "qty": 3,
+        "unit": "",
+        "item": "egg"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "frozen peas"
+        "qty": 1,
+        "unit": "cup",
+        "item": "frozen peas"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "carrot"
+        "qty": 2,
+        "unit": "",
+        "item": "carrot"
       },
       {
-        qty: 3,
-        unit: "",
-        item: "green onion"
+        "qty": 3,
+        "unit": "",
+        "item": "green onion"
       },
       {
-        qty: 2,
-        unit: "tbsp",
-        item: "tamari"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "tamari"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "sesame oil"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sesame oil"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       }
     ],
-    steps: [
+    "steps": [
       "Cook the rice in 2 cups of water, then spread it out so the steam escapes.",
       "Dice the carrots and slice the green onions. Scramble the eggs in the olive oil and set them aside.",
       "In the same pan, cook the carrots and peas for 3 minutes.",
@@ -1314,60 +1310,60 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r23",
-    name: "Hummus Crunch Wraps",
-    minutes: 15,
-    servings: 4,
-    tags: [
+    "id": "r23",
+    "name": "Hummus Crunch Wraps",
+    "minutes": 15,
+    "servings": 4,
+    "tags": [
       "lunch",
       "vegetarian",
       "dairy-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 4,
-        unit: "",
-        item: "flour tortilla"
+        "qty": 4,
+        "unit": "",
+        "item": "flour tortilla"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "hummus"
+        "qty": 1,
+        "unit": "cup",
+        "item": "hummus"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "cucumber"
+        "qty": 1,
+        "unit": "",
+        "item": "cucumber"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "tomato"
+        "qty": 2,
+        "unit": "",
+        "item": "tomato"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "spinach"
+        "qty": 2,
+        "unit": "cup",
+        "item": "spinach"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "carrot"
+        "qty": 1,
+        "unit": "",
+        "item": "carrot"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lemon"
+        "qty": 1,
+        "unit": "",
+        "item": "lemon"
       }
     ],
-    steps: [
+    "steps": [
       "Slice the cucumber and tomatoes. Shred the carrot.",
       "Stir the hummus with the lemon juice and oil.",
       "Spread hummus on each tortilla.",
@@ -1376,55 +1372,55 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r24",
-    name: "Banana Oat Pancakes",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r24",
+    "name": "Banana Oat Pancakes",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "breakfast",
       "vegetarian",
       "dairy-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 2,
-        unit: "",
-        item: "banana"
+        "qty": 2,
+        "unit": "",
+        "item": "banana"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "rolled oats"
+        "qty": 1,
+        "unit": "cup",
+        "item": "rolled oats"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "egg"
+        "qty": 2,
+        "unit": "",
+        "item": "egg"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "baking powder"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "baking powder"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "olive oil"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "mixed berries"
+        "qty": 1,
+        "unit": "cup",
+        "item": "mixed berries"
       }
     ],
-    steps: [
+    "steps": [
       "Blend or mash the bananas with the oats, eggs, baking powder, and salt until mostly smooth.",
       "Rest the batter 3 minutes so the oats soften.",
       "Warm a lightly oiled skillet over medium heat.",
@@ -1433,55 +1429,55 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r25",
-    name: "Lemon Garlic Cod",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r25",
+    "name": "Lemon Garlic Cod",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "dinner",
       "dairy-free",
       "gluten-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 4,
-        unit: "fillet",
-        item: "cod"
+        "qty": 4,
+        "unit": "fillet",
+        "item": "cod"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "lemon"
+        "qty": 2,
+        "unit": "",
+        "item": "lemon"
       },
       {
-        qty: 3,
-        unit: "clove",
-        item: "garlic"
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 1,
-        unit: "lb",
-        item: "green beans"
+        "qty": 1,
+        "unit": "lb",
+        "item": "green beans"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "black pepper"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       }
     ],
-    steps: [
+    "steps": [
       "Heat the oven to 425°F.",
       "Toss the green beans with half the oil, salt, and pepper on a sheet pan. Roast 8 minutes.",
       "Stir the remaining oil with the garlic and the juice of one lemon.",
@@ -1490,67 +1486,66 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r26",
-    name: "Black Bean Soup",
-    minutes: 25,
-    servings: 4,
-    tags: [
+    "id": "r26",
+    "name": "Black Bean Soup",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
       "lunch",
-      "dinner",
       "vegetarian",
       "dairy-free",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 3,
-        unit: "can",
-        item: "black beans"
+        "qty": 3,
+        "unit": "can",
+        "item": "black beans"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "yellow onion"
+        "qty": 1,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 3,
-        unit: "clove",
-        item: "garlic"
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 2,
-        unit: "tsp",
-        item: "cumin"
+        "qty": 2,
+        "unit": "tsp",
+        "item": "cumin"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "vegetable broth"
+        "qty": 2,
+        "unit": "cup",
+        "item": "vegetable broth"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lime"
+        "qty": 1,
+        "unit": "",
+        "item": "lime"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "cilantro"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "cilantro"
       }
     ],
-    steps: [
+    "steps": [
       "Chop the onion. Warm the oil and cook the onion 5 minutes.",
       "Add the garlic and cumin for 30 seconds.",
       "Add the drained beans, broth, and salt. Simmer 10 minutes.",
@@ -1559,55 +1554,54 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r27",
-    name: "Caprese Toast",
-    minutes: 12,
-    servings: 4,
-    tags: [
+    "id": "r27",
+    "name": "Caprese Toast",
+    "minutes": 12,
+    "servings": 4,
+    "tags": [
       "breakfast",
-      "lunch",
       "vegetarian",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 4,
-        unit: "slice",
-        item: "bread"
+        "qty": 4,
+        "unit": "slice",
+        "item": "bread"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "tomato"
+        "qty": 2,
+        "unit": "",
+        "item": "tomato"
       },
       {
-        qty: 8,
-        unit: "oz",
-        item: "mozzarella"
+        "qty": 8,
+        "unit": "oz",
+        "item": "mozzarella"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "basil"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "basil"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "balsamic glaze"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "balsamic glaze"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Toast the bread.",
       "Slice the tomatoes and mozzarella.",
       "Layer tomato, mozzarella, and torn basil on the toast.",
@@ -1615,60 +1609,60 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r28",
-    name: "Teriyaki Tofu Bowls",
-    minutes: 25,
-    servings: 4,
-    tags: [
+    "id": "r28",
+    "name": "Teriyaki Tofu Bowls",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "dairy-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 14,
-        unit: "oz",
-        item: "firm tofu"
+        "qty": 14,
+        "unit": "oz",
+        "item": "firm tofu"
       },
       {
-        qty: 3,
-        unit: "tbsp",
-        item: "soy sauce"
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "honey"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "honey"
       },
       {
-        qty: 2,
-        unit: "clove",
-        item: "garlic"
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "ginger"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ginger"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "rice"
+        "qty": 1,
+        "unit": "cup",
+        "item": "rice"
       },
       {
-        qty: 3,
-        unit: "cup",
-        item: "broccoli"
+        "qty": 3,
+        "unit": "cup",
+        "item": "broccoli"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       }
     ],
-    steps: [
+    "steps": [
       "Start the rice in 2 cups of water.",
       "Press the tofu dry and cut it into cubes. Stir the soy sauce, honey, garlic, and ginger together.",
       "Brown the tofu in the oil for 6 minutes.",
@@ -1677,57 +1671,56 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r29",
-    name: "Blended Tomato Soup",
-    minutes: 25,
-    servings: 4,
-    tags: [
+    "id": "r29",
+    "name": "Blended Tomato Soup",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
       "lunch",
-      "dinner",
       "vegetarian",
       "dairy-free",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 28,
-        unit: "oz",
-        item: "canned crushed tomatoes"
+        "qty": 28,
+        "unit": "oz",
+        "item": "canned crushed tomatoes"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "yellow onion"
+        "qty": 1,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 3,
-        unit: "clove",
-        item: "garlic"
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "vegetable broth"
+        "qty": 2,
+        "unit": "cup",
+        "item": "vegetable broth"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "basil"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "basil"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Chop the onion. Cook it in the oil for 5 minutes. Add the garlic for 30 seconds.",
       "Add the tomatoes, broth, and salt. Simmer 10 minutes.",
       "Turn off the heat and stir in the basil.",
@@ -1736,64 +1729,64 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r30",
-    name: "Chicken Pita Pockets",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r30",
+    "name": "Chicken Pita Pockets",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "lunch",
       "dairy-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1,
-        unit: "lb",
-        item: "chicken breast"
+        "qty": 1,
+        "unit": "lb",
+        "item": "chicken breast"
       },
       {
-        qty: 4,
-        unit: "",
-        item: "pita"
+        "qty": 4,
+        "unit": "",
+        "item": "pita"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "lettuce"
+        "qty": 2,
+        "unit": "cup",
+        "item": "lettuce"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "tomato"
+        "qty": 2,
+        "unit": "",
+        "item": "tomato"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "cucumber"
+        "qty": 1,
+        "unit": "",
+        "item": "cucumber"
       },
       {
-        qty: 3,
-        unit: "tbsp",
-        item: "tahini"
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "tahini"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lemon"
+        "qty": 1,
+        "unit": "",
+        "item": "lemon"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Slice the chicken. Season with salt and cook in the oil, 4 minutes a side, until cooked through.",
       "Chop the lettuce, tomato, and cucumber.",
       "Stir the tahini with the lemon juice and 2 tablespoons of water.",
@@ -1802,62 +1795,61 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r31",
-    name: "Sweet Potato Hash",
-    minutes: 25,
-    servings: 4,
-    tags: [
+    "id": "r31",
+    "name": "Sweet Potato Hash",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
       "breakfast",
-      "dinner",
       "vegetarian",
       "dairy-free",
       "gluten-free",
       "medium",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 2,
-        unit: "",
-        item: "sweet potato"
+        "qty": 2,
+        "unit": "",
+        "item": "sweet potato"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "bell pepper"
+        "qty": 1,
+        "unit": "",
+        "item": "bell pepper"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "yellow onion"
+        "qty": 1,
+        "unit": "",
+        "item": "yellow onion"
       },
       {
-        qty: 4,
-        unit: "",
-        item: "egg"
+        "qty": 4,
+        "unit": "",
+        "item": "egg"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "paprika"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "black pepper"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       }
     ],
-    steps: [
+    "steps": [
       "Dice the sweet potato, pepper, and onion into small pieces.",
       "Warm the oil in a skillet. Cook the sweet potato with a lid on for 8 minutes, stirring twice.",
       "Add the pepper, onion, paprika, salt, and pepper. Cook 5 minutes more.",
@@ -1866,11 +1858,11 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r32",
-    name: "Lentil Tacos",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r32",
+    "name": "Lentil Tacos",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "dairy-free",
@@ -1878,49 +1870,49 @@ var PW_STARTERS = [
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 2,
-        unit: "can",
-        item: "lentils"
+        "qty": 2,
+        "unit": "can",
+        "item": "lentils"
       },
       {
-        qty: 8,
-        unit: "",
-        item: "corn tortilla"
+        "qty": 8,
+        "unit": "",
+        "item": "corn tortilla"
       },
       {
-        qty: 0.5,
-        unit: "cup",
-        item: "salsa"
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "salsa"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "cabbage"
+        "qty": 2,
+        "unit": "cup",
+        "item": "cabbage"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lime"
+        "qty": 1,
+        "unit": "",
+        "item": "lime"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "chili powder"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chili powder"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
-    steps: [
+    "steps": [
       "Drain the lentils. Warm the oil and stir in the chili powder for 15 seconds.",
       "Add the lentils, salsa, and salt. Cook 5 minutes, mashing a few lentils so they hold together.",
       "Shred the cabbage and toss it with the lime juice.",
@@ -1929,64 +1921,64 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r33",
-    name: "Cucumber Chicken Salad",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r33",
+    "name": "Cucumber Chicken Salad",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "lunch",
       "gluten-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 1,
-        unit: "lb",
-        item: "chicken breast"
+        "qty": 1,
+        "unit": "lb",
+        "item": "chicken breast"
       },
       {
-        qty: 1,
-        unit: "cup",
-        item: "greek yogurt"
+        "qty": 1,
+        "unit": "cup",
+        "item": "greek yogurt"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "cucumber"
+        "qty": 1,
+        "unit": "",
+        "item": "cucumber"
       },
       {
-        qty: 2,
-        unit: "clove",
-        item: "garlic"
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "lemon"
+        "qty": 1,
+        "unit": "",
+        "item": "lemon"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "parsley"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "parsley"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 4,
-        unit: "cup",
-        item: "mixed greens"
+        "qty": 4,
+        "unit": "cup",
+        "item": "mixed greens"
       }
     ],
-    steps: [
+    "steps": [
       "Season the chicken with half the salt. Cook it in the oil, 5 minutes a side, until cooked through. Rest, then slice.",
       "Grate or mince the garlic. Chop the cucumber and parsley.",
       "Stir the yogurt, garlic, lemon juice, parsley, and the rest of the salt.",
@@ -1995,50 +1987,50 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r34",
-    name: "Mushroom Omelette",
-    minutes: 15,
-    servings: 2,
-    tags: [
+    "id": "r34",
+    "name": "Mushroom Omelette",
+    "minutes": 15,
+    "servings": 2,
+    "tags": [
       "breakfast",
       "vegetarian",
       "gluten-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 4,
-        unit: "",
-        item: "egg"
+        "qty": 4,
+        "unit": "",
+        "item": "egg"
       },
       {
-        qty: 8,
-        unit: "oz",
-        item: "mushrooms"
+        "qty": 8,
+        "unit": "oz",
+        "item": "mushrooms"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "butter"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "butter"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "spinach"
+        "qty": 2,
+        "unit": "cup",
+        "item": "spinach"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "black pepper"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
       }
     ],
-    steps: [
+    "steps": [
       "Slice the mushrooms. Cook them in half the butter until they brown, then add the spinach until it wilts. Season and set aside.",
       "Beat the eggs with the salt and pepper.",
       "Melt the rest of the butter in the pan over medium-low heat. Pour in the eggs.",
@@ -2047,66 +2039,65 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r35",
-    name: "Sesame Ginger Noodles",
-    minutes: 20,
-    servings: 4,
-    tags: [
-      "lunch",
+    "id": "r35",
+    "name": "Sesame Ginger Noodles",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "dairy-free",
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 12,
-        unit: "oz",
-        item: "noodles"
+        "qty": 12,
+        "unit": "oz",
+        "item": "noodles"
       },
       {
-        qty: 3,
-        unit: "tbsp",
-        item: "soy sauce"
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "sesame oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame oil"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "ginger"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "ginger"
       },
       {
-        qty: 2,
-        unit: "clove",
-        item: "garlic"
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "carrot"
+        "qty": 2,
+        "unit": "",
+        "item": "carrot"
       },
       {
-        qty: 1,
-        unit: "",
-        item: "cucumber"
+        "qty": 1,
+        "unit": "",
+        "item": "cucumber"
       },
       {
-        qty: 2,
-        unit: "",
-        item: "green onion"
+        "qty": 2,
+        "unit": "",
+        "item": "green onion"
       },
       {
-        qty: 1,
-        unit: "tsp",
-        item: "honey"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "honey"
       }
     ],
-    steps: [
+    "steps": [
       "Boil the noodles until tender. Reserve 1/4 cup of the cooking water, then drain.",
       "Stir the soy sauce, sesame oil, ginger, garlic, and honey.",
       "Slice the cucumber, carrots, and green onions.",
@@ -2115,11 +2106,11 @@ var PW_STARTERS = [
     ]
   },
   {
-    id: "r36",
-    name: "White Bean Skillet",
-    minutes: 20,
-    servings: 4,
-    tags: [
+    "id": "r36",
+    "name": "White Bean Skillet",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
       "dinner",
       "vegetarian",
       "dairy-free",
@@ -2127,49 +2118,49 @@ var PW_STARTERS = [
       "easy",
       "moderate"
     ],
-    ingredients: [
+    "ingredients": [
       {
-        qty: 2,
-        unit: "can",
-        item: "cannellini beans"
+        "qty": 2,
+        "unit": "can",
+        "item": "cannellini beans"
       },
       {
-        qty: 2,
-        unit: "cup",
-        item: "cherry tomatoes"
+        "qty": 2,
+        "unit": "cup",
+        "item": "cherry tomatoes"
       },
       {
-        qty: 3,
-        unit: "clove",
-        item: "garlic"
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic"
       },
       {
-        qty: 4,
-        unit: "cup",
-        item: "spinach"
+        "qty": 4,
+        "unit": "cup",
+        "item": "spinach"
       },
       {
-        qty: 1,
-        unit: "tbsp",
-        item: "olive oil"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        qty: 0.5,
-        unit: "tsp",
-        item: "salt"
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
-        qty: 0.25,
-        unit: "tsp",
-        item: "red pepper flakes"
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "red pepper flakes"
       },
       {
-        qty: 0.25,
-        unit: "cup",
-        item: "parsley"
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "parsley"
       }
     ],
-    steps: [
+    "steps": [
       "Warm the oil and cook the garlic and pepper flakes for 30 seconds.",
       "Add the tomatoes and salt. Cook 4 minutes, until they soften.",
       "Add the drained beans and stir for 3 minutes.",

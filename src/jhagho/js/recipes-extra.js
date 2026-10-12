@@ -76,7 +76,6 @@
     "servings": 2,
     "tags": [
       "breakfast",
-      "lunch",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -216,7 +215,6 @@
     "minutes": 28,
     "servings": 4,
     "tags": [
-      "dinner",
       "lunch",
       "vegan",
       "gluten-free",
@@ -291,7 +289,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -359,7 +356,6 @@
     "minutes": 30,
     "servings": 4,
     "tags": [
-      "dinner",
       "lunch",
       "vegetarian",
       "gluten-free",
@@ -562,7 +558,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "vegetarian",
       "moderate",
       "easy"
@@ -629,7 +624,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -823,7 +817,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "vegan",
       "dairy-free",
       "budget",
@@ -954,7 +947,6 @@
     "minutes": 29,
     "servings": 4,
     "tags": [
-      "dinner",
       "lunch",
       "vegan",
       "gluten-free",
@@ -1171,7 +1163,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "dinner",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -1516,7 +1507,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -1678,7 +1668,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "dinner",
       "vegetarian",
       "dairy-free",
       "budget",
@@ -1741,7 +1730,6 @@
     "servings": 4,
     "tags": [
       "breakfast",
-      "lunch",
       "dairy-free",
       "budget",
       "easy"
@@ -1798,7 +1786,6 @@
     "servings": 4,
     "tags": [
       "breakfast",
-      "dinner",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -1959,7 +1946,7 @@
     "minutes": 26,
     "servings": 4,
     "tags": [
-      "dinner",
+      "breakfast",
       "vegetarian",
       "budget",
       "easy"
@@ -2015,7 +2002,6 @@
     "minutes": 20,
     "servings": 4,
     "tags": [
-      "lunch",
       "dinner",
       "dairy-free",
       "gluten-free",
@@ -2195,7 +2181,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "vegan",
       "dairy-free",
       "budget",
@@ -2257,7 +2242,6 @@
     "minutes": 35,
     "servings": 4,
     "tags": [
-      "lunch",
       "dinner",
       "vegetarian",
       "gluten-free",
@@ -2430,7 +2414,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -2483,7 +2466,6 @@
     "minutes": 30,
     "servings": 4,
     "tags": [
-      "dinner",
       "lunch",
       "high-protein",
       "budget",
@@ -2545,7 +2527,6 @@
     "minutes": 25,
     "servings": 4,
     "tags": [
-      "lunch",
       "dinner",
       "vegetarian",
       "gluten-free",
@@ -2711,7 +2692,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "lunch",
       "vegetarian",
       "vegan",
       "budget",
@@ -2824,7 +2804,7 @@
     "minutes": 26,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "dairy-free",
       "high-protein",
       "moderate",
@@ -2881,10 +2861,6 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy",
-      "vegetarian",
-      "gluten-free",
-      "budget",
       "easy"
     ],
     "ingredients": [
@@ -2938,7 +2914,7 @@
     "minutes": 33,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -3095,8 +3071,8 @@
     "minutes": 30,
     "servings": 4,
     "tags": [
-      "snack",
       "lunch",
+      "snack",
       "vegetarian",
       "moderate",
       "medium"
@@ -3262,6 +3238,7 @@
     "minutes": 25,
     "servings": 4,
     "tags": [
+      "dinner",
       "dessert",
       "vegetarian",
       "gluten-free",
@@ -3314,6 +3291,7 @@
     "minutes": 15,
     "servings": 4,
     "tags": [
+      "dinner",
       "dessert",
       "vegetarian",
       "gluten-free",
@@ -3527,6 +3505,7 @@
     "minutes": 35,
     "servings": 4,
     "tags": [
+      "dinner",
       "dessert",
       "vegetarian",
       "budget",
@@ -3578,6 +3557,7 @@
     "minutes": 20,
     "servings": 4,
     "tags": [
+      "dinner",
       "snack",
       "dessert",
       "vegan",
@@ -3680,6 +3660,7 @@
     "minutes": 15,
     "servings": 4,
     "tags": [
+      "breakfast",
       "dessert",
       "snack",
       "vegan",
@@ -3730,7 +3711,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "dinner",
       "vegan",
       "dairy-free",
       "budget",
@@ -4131,7 +4111,6 @@
     "minutes": 28,
     "servings": 4,
     "tags": [
-      "lunch",
       "dinner",
       "vegetarian",
       "vegan",
@@ -4356,7 +4335,6 @@
     "minutes": 22,
     "servings": 4,
     "tags": [
-      "lunch",
       "dinner",
       "high-protein",
       "moderate",
@@ -4528,7 +4506,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "dinner",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -4591,7 +4568,6 @@
     "minutes": 26,
     "servings": 4,
     "tags": [
-      "dinner",
       "lunch",
       "gluten-free",
       "high-protein",
@@ -4645,7 +4621,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "dinner",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -4709,7 +4684,6 @@
     "servings": 4,
     "tags": [
       "breakfast",
-      "dinner",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -4881,7 +4855,7 @@
     "minutes": 22,
     "servings": 2,
     "tags": [
-      "dinner",
+      "lunch",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -4991,6 +4965,7 @@
     "minutes": 20,
     "servings": 4,
     "tags": [
+      "dinner",
       "snack",
       "dessert",
       "vegetarian",
@@ -5044,7 +5019,6 @@
     "minutes": 16,
     "servings": 4,
     "tags": [
-      "lunch",
       "dinner",
       "vegetarian",
       "dairy-free",
@@ -5102,8 +5076,8 @@
     "minutes": 20,
     "servings": 4,
     "tags": [
-      "dessert",
       "breakfast",
+      "dessert",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -5155,8 +5129,8 @@
     "minutes": 28,
     "servings": 4,
     "tags": [
+      "lunch",
       "snack",
-      "dinner",
       "high-protein",
       "budget",
       "easy"

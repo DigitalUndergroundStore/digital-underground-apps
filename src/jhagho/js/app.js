@@ -1,4 +1,4 @@
-/* Pantry Week v3.10.1 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.10.2 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -1025,8 +1025,8 @@
         return `<section class="aisle"><h3 class="aisle-name">${esc(PW.AISLE_LABEL[id])}</h3><ul class="shop-list">${rows}</ul></section>`;
       }).join("");
     }
-    const home = list.excluded.length
-      ? `<p class="callout">Already at home, so left off the list: ${esc(list.excluded.map(cap).join(", "))}.</p>`
+    const homeNote = list.excluded.length
+      ? `<p class="shop-summary shop-summary--home">${list.excluded.length} pantry item${list.excluded.length === 1 ? "" : "s"} left off this list. Manage them on Pantry.</p>`
       : "";
     return `<section>
       <h2>Shopping list</h2>
@@ -1044,7 +1044,7 @@
         </div>
         <button type="submit" class="primary">Add to list</button>
       </form>
-      ${home}
+      ${homeNote}
       ${body}
     </section>`;
   }

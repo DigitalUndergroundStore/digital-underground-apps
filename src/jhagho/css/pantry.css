@@ -807,6 +807,7 @@ label.field, .stack label {
 .ing-list li, .step-list li { margin: 6px 0; }
 
 .shop-summary { color: var(--muted); margin: 0 0 8px; }
+.shop-summary--home { margin-top: 4px; }
 .aisle { margin: 8px 0 16px; }
 .aisle-name {
   position: sticky;

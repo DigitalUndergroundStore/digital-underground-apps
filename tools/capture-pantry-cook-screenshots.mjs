@@ -20,15 +20,21 @@ await page.evaluate(() => {
   const p = document.getElementById("du-preview");
   if (p) p.style.display = "none";
 });
-await page.click('[data-action="nav"][data-view="pantry"]');
-await new Promise((r) => setTimeout(r, 400));
+await page.evaluate(() => {
+  location.hash = "#pantry";
+});
+await page.waitForSelector("#pantryItem", { timeout: 30000 });
+await new Promise((r) => setTimeout(r, 500));
 
 async function addItem(name) {
-  await page.evaluate((n) => {
-    document.getElementById("pantryItem").value = n;
-  }, name);
+  await page.waitForSelector("#pantryItem");
+  await page.type("#pantryItem", name, { delay: 20 });
   await page.click("#pantryForm button[type=submit]");
-  await new Promise((r) => setTimeout(r, 600));
+  await page.evaluate(() => {
+    const el = document.getElementById("pantryItem");
+    if (el) el.value = "";
+  });
+  await new Promise((r) => setTimeout(r, 700));
 }
 
 for (const item of ["ground beef", "hamburger buns", "cheddar", "onion", "pork chops"]) {

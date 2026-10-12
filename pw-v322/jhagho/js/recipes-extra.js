@@ -944,7 +944,8 @@
       "Warm the flour tortillas in a dry skillet about 20 seconds per side so they bend without cracking.",
       "Warm the hollandaise sauce over low heat, stirring, for 2 minutes. Grate or slice the cheese if it is in a block.",
       "On each flour tortilla, layer a cup of hash browns, two slices of bacon, two eggs, a quarter of the cheese, and a spoon of hollandaise sauce.",
-      "Roll each tortilla tightly so the filling stays inside. The eggs should be fully set before the burritos are closed."
+      "Roll each tortilla tightly so the filling stays inside. The eggs should be fully set before the burritos are closed.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -6544,7 +6545,7 @@
   },
   {
     "id": "r106",
-    "name": "Walnut Pesto",
+    "name": "Walnut Basil Pesto",
     "minutes": 15,
     "servings": 4,
     "tags": [
@@ -6579,6 +6580,11 @@
         "qty": 0.5,
         "unit": "cup",
         "item": "Parmesan cheese"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "basil pesto"
       }
     ],
     "steps": [

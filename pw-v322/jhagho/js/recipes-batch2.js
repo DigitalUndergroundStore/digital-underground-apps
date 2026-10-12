@@ -496,6 +496,11 @@
         "qty": 2,
         "unit": "cup",
         "item": "panko bread crumbs"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "cheddar cheese"
       }
     ],
     "steps": [
@@ -506,6 +511,7 @@
       "Stir in three quarters of 1.5 lb sharp cheddar, 2 tsp salt, and 1 tsp black pepper until the cheddar melts.",
       "Fold in the elbow macaroni and pour it into a large casserole. Top with the remaining sharp cheddar.",
       "Melt 6 tbsp butter for crumbs, toss with 2 cup panko bread crumbs, and scatter the crumbs over the casserole.",
+      "Sprinkle cheese over the top and melt until bubbly.",
       "Bake 30 minutes until the top is browned and the center is bubbling. Rest 10 minutes."
     ],
     "libraryRev": 2,
@@ -2110,7 +2116,8 @@
       "Pour in the rest of 8 cup beef broth and 4 cup water. Simmer on low for 90 minutes until the beef is starting to soften.",
       "Stir in 1 cup barley and simmer 30 minutes.",
       "Add 4 medium potatoes cubed, 1 lb mushrooms sliced, 1 package frozen green beans, 1 can diced tomatoes, 1 can tomato paste, 4 large carrots cut into chunks, and 1 tbsp Worcestershire sauce.",
-      "Simmer 45 minutes more, until the beef is fork-tender and the barley is plump. Chop 1 bunch parsley and stir it in just before ladling."
+      "Simmer 45 minutes more, until the beef is fork-tender and the barley is plump. Chop 1 bunch parsley and stir it in just before ladling.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -2347,7 +2354,8 @@
       "Melt 3 tbsp butter in a small pot over medium heat, stir in 3 tbsp flour, and cook 3 minutes, stirring, until the roux is light brown.",
       "Whisk in 2 cup water for sauce and let it bubble for 2 minutes.",
       "Stir in 1 tbsp tomato paste, 2 tbsp red wine vinegar, 1 tsp honey, 1 tsp salt, and 1/2 tsp black pepper.",
-      "Pour the sauce into the lentils, mix, and hold on low heat 5 minutes until the stew is evenly thick. The scalded sausage should be hot in the center."
+      "Pour the sauce into the lentils, mix, and hold on low heat 5 minutes until the stew is evenly thick. The scalded sausage should be hot in the center.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -3410,7 +3418,8 @@
       "Add 1 cup onion, 1/2 cup red bell pepper, 1/2 cup green bell pepper, 1/2 cup cooked ham, and the bacon. Cook 4 minutes until the onion turns translucent.",
       "Beat 4 eggs with 1/2 tsp salt, 1/2 tsp black pepper, and 1/2 tsp hot sauce.",
       "Pour the eggs into the skillet and cook over medium heat for 3 minutes until the bottom is lightly browned and the top is almost set.",
-      "Flip the omelet and cook 2 minutes more until the second side is set and no liquid egg remains."
+      "Flip the omelet and cook 2 minutes more until the second side is set and no liquid egg remains.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -4206,7 +4215,8 @@
       "Spread 1/4 cup mayonnaise on the cut sides of the ciabatta rolls.",
       "Layer 12 oz sliced turkey, 8 slice Swiss cheese, the bacon, lettuce, and tomato.",
       "Sprinkle 1/4 tsp salt over the tomato.",
-      "Close the rolls, cut them in half, and pack them for lunch while the bacon is still crisp."
+      "Close the rolls, cut them in half, and pack them for lunch while the bacon is still crisp.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish)."
     ],
     "libraryRev": 2,
     "attribution": {
@@ -4290,6 +4300,7 @@
       "Stir the tuna with the apple, celery, 1/2 cup mayonnaise, 2 tsp lemon juice, green onion, hard-boiled eggs, and 1/2 tsp black pepper.",
       "Cover the bowl and refrigerate 1 hour so the flavors settle. That chill is included in the time.",
       "Spoon the salad onto 4 leaf lettuce.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish).",
       "Dust 1/2 tsp paprika over the top and serve cold."
     ],
     "libraryRev": 2,
@@ -4444,6 +4455,7 @@
       "Spread 3 tbsp mayonnaise on one side of each slice of toast.",
       "Build two stacks: toast, 4 oz turkey breast split between them, bacon, 2 slice cheddar cheese, then another toast, then 4 slice tomato and 2 leaf lettuce, then the last toast.",
       "Press each stack gently so the layers hold.",
+      "Cook until the protein reaches 165°F in the thickest part (or 145°F for fish).",
       "Cut the sandwiches into quarters, spear each quarter, and serve while the toast is still crisp."
     ],
     "libraryRev": 2,

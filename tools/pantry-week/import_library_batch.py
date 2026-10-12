@@ -22,7 +22,9 @@ MEAT = re.compile(
 )
 QTY_RE = re.compile(
     r"^(\d+\s+\d+/\d+|\d+/\d+|\d+\.\d+|\d+)\s*"
-    r"(cup|cups|tbsp|tablespoon|tablespoons|tsp|teaspoon|teaspoons|oz|ounce|ounces|lb|pound|pounds|g|gram|grams|kg|ml|l|liter|litre|clove|cloves|can|cans|slice|slices|piece|pieces|head|bunch|pinch|stalk|package|jar|bag|lb\.|oz\.)?\s*(.*)$",
+    r"(cup|cups|tbsp|tablespoon|tablespoons|tsp|teaspoon|teaspoons|oz|ounce|ounces|lb|pound|pounds|"
+    r"\bg\b|gram|grams|kg|ml|\bl\b|liter|litre|clove|cloves|can|cans|slice|slices|piece|pieces|"
+    r"head|bunch|pinch|stalk|package|jar|bag|lb\.|oz\.)?\s*(.*)$",
     re.I,
 )
 ALLOWED_LICENSE = re.compile(

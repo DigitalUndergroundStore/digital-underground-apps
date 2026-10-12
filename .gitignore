@@ -2,3 +2,4 @@ node_modules/
 secrets/
 /tmp/
 __pycache__/
+tests/shots*/

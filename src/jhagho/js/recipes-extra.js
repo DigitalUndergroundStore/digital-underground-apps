@@ -6793,37 +6793,41 @@
     "ingredients": [
       {
         "qty": 4,
-        "unit": "chop",
-        "item": "pork rib chops"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "grill seasoning"
-      },
-      {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "apple cider"
+        "unit": "",
+        "item": "pork chops"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "cider vinegar"
+        "item": "olive oil"
       },
       {
         "qty": 1,
-        "unit": "tbsp",
-        "item": "Worcestershire sauce"
+        "unit": "",
+        "item": "onion"
+      },
+      {
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
       }
     ],
     "steps": [
-      "Rub the grill seasoning over the pork rib chops. Refrigerate them for 30 minutes.",
-      "Meanwhile, combine the apple cider, the cider vinegar, and the Worcestershire sauce in a saucepan. Boil over medium heat until the liquid reduces by about one third, about 8 minutes. Take it off the heat.",
-      "Heat a grill to high. Cook the pork rib chops, covered, for 2 minutes.",
-      "Brush with the cider mixture, rotate the pork rib chops a quarter turn, and cook 2 minutes more.",
-      "Flip and repeat the brush-and-turn pattern until the center of a pork rib chop reaches 145°F (63°C).",
-      "Rest the pork rib chops for 3 minutes. Serve with the remaining cider mixture."
+      "Dice the onion and mince the garlic (about 4 minutes).",
+      "Heat the olive oil in a skillet over medium-high heat. Cook the pork chops 8 to 10 minutes per side until the center reaches 145°F (63°C). Rest 3 minutes.",
+      "Add the onion, garlic, smoked paprika, and salt to the pan. Cook 3 minutes until the onion softens.",
+      "Add a splash of water, cover, and simmer 14 minutes until the pork is tender and the pan has a light glaze.",
+      "Serve hot with any sides you like."
     ],
     "libraryRev": 2,
     "attribution": {

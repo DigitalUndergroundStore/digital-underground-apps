@@ -185,34 +185,29 @@ var PW_STARTERS = [
     "photoKey": "r3",
     "ingredients": [
       {
-        "qty": 8,
-        "unit": "oz",
-        "item": "chuck"
-      },
-      {
-        "qty": 8,
-        "unit": "oz",
-        "item": "sirloin"
-      },
-      {
         "qty": 1,
-        "unit": "tbsp",
-        "item": "steak rub"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "olive oil"
+        "unit": "lb",
+        "item": "ground beef"
       },
       {
         "qty": 4,
         "unit": "whole",
-        "item": "hamburger bun"
+        "item": "hamburger buns"
       },
       {
         "qty": 4,
         "unit": "slice",
-        "item": "pepper jack cheese"
+        "item": "cheddar cheese"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "onion"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "mustard"
       }
     ],
     "steps": [

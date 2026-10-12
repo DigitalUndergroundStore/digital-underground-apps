@@ -616,6 +616,39 @@ label.field, .stack label {
   margin: 8px 0 14px;
 }
 .tonight h3 { margin: 2px 0 0; font-family: var(--serif); font-size: 1.5rem; line-height: 1.2; }
+.tonight__open {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 2px 0 10px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 12px;
+}
+.tonight__open:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.tonight__open:active { opacity: 0.92; }
+.tonight__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.tonight__title {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.tonight__meta { font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+.tonight__chev {
+  flex: none;
+  color: var(--muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  transform: translateX(2px);
+}
+.tonight__toolbar { margin-top: 4px; padding-top: 10px; border-top: 1px solid var(--line); }
 .slot-empty { width: 100%; color: var(--accent); border-style: dashed; justify-content: flex-start; }
 .slot-row, .slot-actions { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 4px; }
 .slot--meal .meal-card {
@@ -1057,8 +1090,49 @@ details.paste summary { min-height: 44px; display: flex; align-items: center; cu
 }
 .cook-bar { margin-top: auto; display: flex; gap: 8px; }
 .cook-bar button { flex: 1; min-height: 52px; font-size: 1.05rem; }
-.cook details { background: var(--bg-2); border-radius: 12px; padding: 8px 12px; }
-.cook summary { min-height: 44px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
+.cook .cook-ingredients {
+  flex: none;
+  margin: 4px 0 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  background: var(--bg-2);
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+.cook .cook-ingredients summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.cook .cook-ingredients summary::-webkit-details-marker { display: none; }
+.cook-ingredients__icon {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.cook-ingredients__text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.cook-ingredients__label { font-size: 1rem; line-height: 1.2; }
+.cook-ingredients__hint { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+.cook-ingredients__chev {
+  flex: none;
+  font-size: 1.35rem;
+  color: var(--muted);
+  transition: transform 0.2s var(--ease);
+}
+.cook .cook-ingredients[open] .cook-ingredients__chev { transform: rotate(90deg); }
+.cook-ingredients__list { margin: 0; padding: 0 14px 12px 14px; border-top: 1px solid var(--line); }
 
 .toast {
   position: fixed;

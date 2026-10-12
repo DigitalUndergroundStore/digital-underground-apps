@@ -740,10 +740,20 @@
       </section>`;
     }
     const cook = recipe ? `<button type="button" class="primary" data-action="cook" data-id="${esc(recipe.id)}">Cook tonight</button>` : "";
+    const meta = recipe && recipe.minutes != null ? `<span class="tonight__meta">${recipe.minutes} min</span>` : "";
+    const openLabel = recipe
+      ? `Open ${name} recipe`
+      : `Open ${name}`;
     return `<section class="tonight">
-      <p class="slot-kicker">Tonight · ${PW.DAY_LABEL[day]} dinner</p>
-      <h3>${esc(name)}</h3>
-      <div class="toolbar">${cook}<button type="button" data-action="open-slot" data-day="${day}" data-slot="dinner">Change</button></div>
+      <button type="button" class="tonight__open plain" data-action="open-plan-recipe" data-day="${day}" data-slot="dinner" aria-label="${esc(openLabel)}">
+        <span class="tonight__body">
+          <span class="slot-kicker">Tonight · ${PW.DAY_LABEL[day]} dinner</span>
+          <span class="tonight__title">${esc(name)}</span>
+          ${meta}
+        </span>
+        <span class="tonight__chev" aria-hidden="true">›</span>
+      </button>
+      <div class="toolbar tonight__toolbar">${cook}<button type="button" data-action="open-slot" data-day="${day}" data-slot="dinner">Change</button></div>
     </section>`;
   }
 
@@ -1531,6 +1541,8 @@
     const step = recipe.steps[cook.step] || "";
     const ings = recipe.ingredients.map((ing) => `<li>${esc(PW.formatLine(ing.qty, ing.unit, ing.item))}</li>`).join("");
     const last = cook.step >= recipe.steps.length - 1;
+    const ingCount = recipe.ingredients.length;
+    const ingOpen = !!cook.ingredientsOpen;
     $("cook").innerHTML = `<div class="cook-top cook-top--chrome">
         ${iconBtn("nav-back", "Close cook mode", ICON_BACK)}
         <div class="cook-top__main">
@@ -1539,9 +1551,18 @@
         </div>
         ${iconBtn("nav-back", "Close", ICON_CLOSE)}
       </div>
-      <details>
-        <summary>Ingredients</summary>
-        <ul class="ing-list">${ings}</ul>
+      <details class="cook-ingredients"${ingOpen ? " open" : ""}>
+        <summary>
+          <span class="cook-ingredients__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/></svg>
+          </span>
+          <span class="cook-ingredients__text">
+            <span class="cook-ingredients__label">Ingredients</span>
+            <span class="cook-ingredients__hint">${ingCount} item${ingCount === 1 ? "" : "s"} · tap to ${ingOpen ? "hide" : "show"}</span>
+          </span>
+          <span class="cook-ingredients__chev" aria-hidden="true">›</span>
+        </summary>
+        <ul class="ing-list cook-ingredients__list">${ings}</ul>
       </details>
       <p class="step-text" id="cookStep" tabindex="-1">${esc(step)}</p>
       <div class="cook-bar">
@@ -1551,6 +1572,16 @@
     $("cook").hidden = false;
     setInert();
     requestWakeLock();
+    const ingPanel = $("cook").querySelector(".cook-ingredients");
+    if (ingPanel) {
+      ingPanel.addEventListener("toggle", () => {
+        cook.ingredientsOpen = ingPanel.open;
+        const hint = ingPanel.querySelector(".cook-ingredients__hint");
+        if (hint) {
+          hint.textContent = `${ingCount} item${ingCount === 1 ? "" : "s"} · tap to ${ingPanel.open ? "hide" : "show"}`;
+        }
+      });
+    }
     const live = $("cookStep");
     if (live) live.focus();
   }
@@ -1643,7 +1674,7 @@
       toast("This recipe has no steps yet. Edit it to add some.");
       return;
     }
-    ui.cook = { id: id, step: 0 };
+    ui.cook = { id: id, step: 0, ingredientsOpen: false };
     pushHistory();
     renderCook();
   }

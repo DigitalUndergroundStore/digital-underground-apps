@@ -34,6 +34,23 @@ for (const r of recipes) {
   if (!PW.recipeFitsSlot(r, meals[0])) errs.push(`${r.id}: fits own slot`);
 }
 
+const runIdSets = [];
+for (let run = 0; run < 8; run++) {
+  const w = PW.fillSimpleWeek(PW.blankWeek(), recipes, { scope: "all", replaceAll: true });
+  const ids = [];
+  for (const day of PW.DAYS) {
+    for (const slot of PW.SLOTS) {
+      const cell = w[day][slot];
+      if (cell && cell.recipeId) ids.push(cell.recipeId);
+    }
+  }
+  runIdSets.push(ids.sort().join("|"));
+}
+const uniqueRuns = new Set(runIdSets);
+if (uniqueRuns.size < 2) {
+  errs.push(`fillSimpleWeek: identical across ${runIdSets.length} runs (randomness)`);
+}
+
 const week = PW.fillSimpleWeek(PW.blankWeek(), recipes, { scope: "all", replaceAll: true });
 for (const day of PW.DAYS) {
   for (const slot of PW.SLOTS) {

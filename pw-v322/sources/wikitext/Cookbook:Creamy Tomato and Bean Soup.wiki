@@ -1,0 +1,58 @@
+__notoc__
+{{recipesummary
+| category = Soup recipes
+| servings = 8
+| time = 45 minutes
+| difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Soups|Soups]]
+
+This recipe for '''creamy tomato bean soup''' uses mostly canned ingredients which means that it is faster to prepare than if using fresh tomatoes and dry beans. This [[Cookbook:blend|blended]] soup is [[cookbook:vegetarian|vegetarian]] and hearty enough to be eaten as a main course in a meal. This soup can also be made [[cookbook:vegan|vegan]] by omitting the cream cheese.
+
+==Ingredients==
+* 1 tbsp [[Cookbook:olive oil|olive oil]] or [[Cookbook:oil|neutral cooking oil]]
+* 1 medium yellow [[Cookbook:Onion|onion]], roughly [[Cookbook:chop|chopped]]
+* [[cookbook:salt|Salt]] and [[cookbook:black pepper|pepper]] to taste
+* 1 can (15 [[Cookbook:ounce|oz]] / 425 [[Cookbook:gram|g]]) [[Cookbook:Common Bean|white beans]], with liquid
+* 5–10 cloves [[Cookbook:garlic|garlic]] (according to preference), peeled and cut in half
+* ½ tsp dried [[Cookbook:oregano|oregano]]
+* 2 leaves fresh [[Cookbook:sage|sage]], torn in half by hand
+* 2 cans (30 oz / 850 g) crushed or diced [[Cookbook:tomato|tomatoes]]
+* 1 can (6 oz / 170 g) [[Cookbook:Tomato Paste|tomato paste]]
+* 1 [[Cookbook:Pinch|pinch]] of [[Cookbook:crushed red pepper|crushed red pepper]]
+* 1 [[cookbook:cup|cup]] (237 [[cookbook:milliliter|ml]]) water
+* 8 oz (225 g) [[Cookbook:Cream Cheese|cream cheese]]
+* 10–20 leaves of fresh [[cookbook:basil|basil]], [[Cookbook:chiffonade|chiffonaded]] or torn to strips by hand
+
+==Special equipment==
+* [[Cookbook:Blender|Blender]]
+
+==Procedure==
+# Heat the oil in a large pot over medium heat for about 30 seconds or until it begins to shimmer.
+# Add onions to the large pot of oil, and season with salt and pepper. Cook about 2 minutes until softened, stirring occasionally to prevent burning.
+# Add the beans with their liquid, garlic, oregano, and sage. [[cookbook:simmer|Simmer]] for 3–5 minutes.
+# Add the tomatoes, tomato paste, red pepper, and water. Simmer an additional 5–10 minutes, stirring occasionally.
+# Remove from heat, stir in the cream cheese. and break up any large piece with the stirring utensil.
+# Let the soup cool for 1–2 minutes, then use either a [[Cookbook:Blender|blender]] or stick blender to [[cookbook:purée|purée]] the soup.
+# Return the puréed soup to the stove at the lowest heat setting for an additional 10–15 minutes, stirring often to prevent burning.
+# Just before serving, stir in fresh basil leaves, reserving a handful to [[Cookbook:garnish|garnish]] each bowl.
+
+==Notes, tips, and variations==
+* Be sure to add the basil at the end as it loses flavor during cooking.
+* Many types of white bean will work, such as navy, great northern, or cannellini.
+
+[[Category:Recipes using olive oil]]
+[[Category:Recipes using onion]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using common bean]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using oregano]]
+[[Category:Recipes using sage]]
+[[Category:Recipes using tomato]]
+[[Category:Recipes using tomato paste]]
+[[Category:Recipes using chile flake]]
+[[Category:Recipes using cream cheese]]
+[[Category:Recipes using basil]]
+[[Category:Recipes for soup]]

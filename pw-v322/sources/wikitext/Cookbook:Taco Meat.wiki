@@ -1,0 +1,34 @@
+{{Recipe summary
+| Category = Meat recipes
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Meat Recipes|Meat Recipes]] | [[Cookbook:Tex-Mex cuisine|Tex-Mex cuisine]]
+==Ingredients==
+
+* 1 [[Cookbook:Pound|pound]] (about 500 g) ground [[Cookbook:Beef|beef]] or [[Cookbook:Turkey|turkey]]
+* 1 medium [[Cookbook:Onion|onion]], finely [[Cookbook:Chop|chopped]] (or 1 ½ [[Cookbook:Teaspoon|teaspoons]] [[Cookbook:Onion Powder|onion powder]])
+* 1 medium [[Cookbook:Tomato|tomato]], [[Cookbook:Chop|chopped]] (or 1 small can of tomato sauce)
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Chili_powder|chili powder]] (or ⅓ [[Cookbook:Teaspoon|teaspoon]] each [[Cookbook:Oregano|oregano]], [[Cookbook:Cumin|cumin]], [[Cookbook:Garlic_Powder|garlic powder]])
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Oregano|oregano]] (ground or leaf)
+* ¼ [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Cumin|cumin]]
+* 1 dash (⅛ [[Cookbook:Teaspoon|teaspoon]] or less) [[Cookbook:Pepper|pepper]]
+
+==Procedure==
+# Brown [[Cookbook:Beef|beef]] and [[Cookbook:Onion|onion]] together. Drain grease.
+# Add the rest of the ingredients to the browned meat.  
+# Stir well.  
+# Heat this mixture thoroughly.  
+# Add more tomato sauce if the mixture is dry.  
+# Cover and [[Cookbook:Simmer|simmer]] for 20 minutes, or less if the mixture begins to dry out.
+
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using cumin]]
+[[Category:Recipes using tomato]]
+[[Category:Pan fried recipes]]
+[[Category:Tex-Mex recipes]]
+[[Category:Mexican recipes]]
+[[Category:Inexpensive recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes using meat]]
+[[Category:Recipes using chili powder]]

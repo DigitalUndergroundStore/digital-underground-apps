@@ -1,0 +1,44 @@
+__NOTOC__
+{{recipesummary|category=Main course recipes|servings=2–4|time=15–20 minutes|difficulty=3|Image=[[Image:Poutine.JPG|300px]]}}
+{{recipe}} | [[Cookbook:Cuisine of Canada|Canadian Cuisine]] | [[Cookbook:Cuisine_of_Quebec|Quebecois Cuisine]] | [[Cookbook:Side dishes| Side Dishes]]
+
+'''Poutine''' is common dish throughout the Quebec, Ontario, and Atlantic regions of Canada, made of [[Cookbook:French Fries|French fries]], [[Cookbook:Cheese Curds|cheese curds]], and [[Cookbook:Gravy|gravy]]. This recipe uses pre-canned gravy and fries the potatoes from scratch.
+
+==Ingredients==
+*1 [[Cookbook:L|L]] [[Cookbook:Vegetable oil|vegetable oil]] for [[Cookbook:Deep Fat Frying|deep frying]]
+*1 can (290 [[Cookbook:g|g]]) of poutine sauce (French: ''mélange à sauce poutine'') or gravy
+*5 medium [[Cookbook:Potato|potatoes]]
+*2 [[Cookbook:Cup|cups]] fresh [[Cookbook:Cheese Curds|cheddar cheese curds]] or [[Cookbook:Mozzarella Cheese|mozzarella]]
+
+==Equipment==
+*1 deep fat fryer or large stove pot to fry the potatoes
+*1 saucepan or cup suitable for warming gravy
+*1 serving dish, with enough depth to act as a basket for the fried potatoes
+
+==Procedure==
+# [[Cookbook:Slicing|Slice]] potatoes into finger-width fries and rinse them well to remove any dirt.
+# Begin warming gravy, keep the temperature low enough for a slow heating.
+# Heat oil to 185°C (365°F).
+# Cook sliced potatoes in the oil for about 5 minutes.
+# Following a first frying to cook the potatoes, they are often removed and then fried again for about 1 minute to crisp the outside.
+# Remove the fries from the oil; optionally place them on a [[Cookbook:Paper Towel|paper towel]] mat to absorb excess oil.
+# Move the fries to a serving dish and put room-temperature cheese curds over the fries.
+# Pour the gravy over the top; the dish should be served before the cheese curds start to melt.
+==Notes, tips, and variations==
+* Fresh cheddar cheese curds (preferably less than one day old) and crispy fries are considered essential to heighten the dynamic contrasts in texture, temperature and viscosity for which the dish is known. Air and moisture seep out of the curds over time, which alters their acidity level and causes proteins to lose their elasticity. This causes the curds to lose their complex texture and squeakiness. Food safety practices require refrigerating curds more than a day old, but this suppresses the properties of their texture. Because fresh curds are not always available, [[Cookbook:Mozzarella Cheese|mozzarella cheese]] may be an unavoidable substitute.
+* The sauce is traditionally a light and thin chicken gravy. A light gravy will more easily coat all the fries, emulsifying into the remaining frying oil and unifying the dish. A ''sauce brune'' which is a combination of chicken and beef stock may also be used.
+* The high dynamic contrasts make eating poutine a rich sensory experience. Even small variations—relative temperatures, the size of the curds, the oil used for frying, or spices in the gravy—can result in a distinctly different poutine.
+*Restaurants that specialize in poutine, called ''poutineries'', often have dozens of varieties, most of which add a meat topping with the gravy adjusted for balance.
+*There are many internationally inspired variants which replace some or all of the ingredients but maintain the contrasts of a crispy element, a dairy-like element, and a unifying sauce:
+** Replacing gravy with [[Cookbook:Salsa | salsa]], the cheese curds with [[Cookbook:Sour Cream |sour cream]], adding diced onions and tomatoes turns poutine into mexipoutine, an item also carried by the likes of Taco Bell under the name "Fries Supreme".
+** Replacing the gravy with [[Cookbook:Marinara Sauce |marinara sauce]], adding either loose lean ground beef or crumbled sausage and replacing the cheese curds with mozzarella cheese changes the dish to poutine Italiano, served in several fast food restaurants in Toronto, Ontario.
+
+[[Category:Recipes for sauces and condiments]]
+[[Category:Canadian recipes]]
+[[Category:Side dish recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using potato]]
+[[Category:Recipes using cheese curd]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using vegetable oil]]
+[[Category:Recipes using low-moisture mozzarella]]

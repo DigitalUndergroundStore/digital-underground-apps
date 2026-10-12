@@ -1,0 +1,54 @@
+__NOTOC__{{recipesummary|category=Chicken recipes|servings=4|time=30 minutes|difficulty=2|Image=[[Image:Chicken Tikka with some salad.jpg|300px|The cooked Chicken Tikka]]}}{{recipe}} | [[Cookbook:Meat_Recipes|Meat recipes]] | [[Cookbook:Cuisine_of_India|Cuisine of India]]
+
+'''Chicken tikka''' is a chicken dish originating in the Punjab region of the [[Cookbook:Cuisine of India|Indian Subcontinent]] made by baking [[Cookbook:Chicken|chicken]] which has been [[Cookbook:Marinating|marinated]] in [[Cookbook:Spices and herbs|spices]] and [[Cookbook:Yogurt|yoghurt]]. It should not be confused with [[Cookbook:Chicken Tikka Masala|Chicken Tikka Masala]] (of which it is an ingredient). It is traditionally cooked on [[Cookbook:Skewer|skewers]] in a [[Cookbook:Tandoor|tandoor]] and is usually boneless. It is tasty when served with yellow rice and a spicy salad.
+
+==Ingredients==
+*675 [[Cookbook:g|g]] (1.5 [[Cookbook:Pound|lb]]) skinless and boneless [[Cookbook:Chicken#Breast|chicken breast]], [[Cookbook:Dice|diced]] into cubes
+*1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Mustard|mustard]] seed oil (see notes)
+*50 [[Cookbook:mL|ml]] (2 [[Cookbook:Fluid Ounce|fl oz]]) [[Cookbook:Milk|milk]]
+*150 [[Cookbook:mL|ml]] (5 [[Cookbook:Fluid Ounce|fl oz]]) natural [[Cookbook:Yogurt|yoghurt]]
+*2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Lemon Juice|lemon juice]]
+*1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Tomato Paste|tomato paste]]
+*2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Chopping|chopped]] fresh [[Cookbook:Cilantro|cilantro]] (coriander leaves)
+*4 large cloves of [[Cookbook:Garlic|garlic]], finely [[Cookbook:Chop|chopped]]
+*1–4 chopped fresh red [[Cookbook:Chili Pepper|chillis]] (depending on strength of the chillis and the desired strength of the marinade)
+*2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Paprika|paprika]]
+*2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Garam Masala|garam masala]]
+*1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Cumin|cumin]] powder
+*½ [[Cookbook:Teaspoon|tsp]] [[Cookbook:Turmeric|turmeric]]
+* 1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Salt|salt]] (use rock salt for best results)
+
+==Procedure==
+#Add all of the ingredients except the chicken to a non-metallic [[Cookbook:Mixing Bowl|mixing bowl]], and mix well.
+#Add the chicken and mix until fully coated.
+#Ideally, the chicken should now be left in a refrigerator to [[Cookbook:Marinating|marinate]] for at least 24 hours. It may not be safe to leave chicken which has previously been frozen for longer than 24 hours, but fresh chicken should be left to marinate for 48 hours for best results. If you do not wish to leave the chicken to marinate, simply continue to the next step.
+#For best results, place on skewers and cook in a [[Cookbook:Tandoor|tandoor]] or ceramic pot oven. The chicken can also be cooked on skewers under a medium [[Cookbook:Grilling|grill]] for 5–8 minutes on each side or barbecued (cooking times depend on the temperature of the barbecue). Always ensure the chicken is cooked throughout before serving. It should come apart easily when pressed down with the side of a fork.
+#Serve with [[Cookbook:Naan|naan]], with [[Cookbook:Rice|rice]] or use in a [[Cookbook:Chicken Tikka Masala|Chicken Tikka Masala]].
+
+==Notes, tips, and variations==
+*Mustard seed oil is considered unfit for human consumption in many parts of the world and is therefore not readily available. A poor alternative can be made by crackling 1 [[Cookbook:Teaspoon|tsp]] of [[Cookbook:Mustard|mustard]] seeds in approximately 2 [[Cookbook:Tablespoon|tbs]] of very hot [[Cookbook:Vegetable Oil|vegetable]] or [[Cookbook:Olive Oil|olive oil]]. Allow to cool then use in place of mustard seed oil.
+*It is possible to make a tikka with almost any meat, the most commonly used other than chicken being [[Cookbook:Lamb|lamb]] and [[Cookbook:Mutton|mutton]].
+*Tikka can be served either as main meal or as an appetiser.
+*Powdered or dried ingredients can be substituted for fresh, but at the expense of taste.
+*Some people prefer to make tikka with meat on-the-bone for improved flavour.
+
+==Bibliography==
+*  ''Curry Club Tandoori and Tikka Dishes'', Piatkus, London — {{ISBN|0749912839}} (1993)		
+* ''India: Food & Cooking'', New Holland, London — {{ISBN|978-1845376192}} (2007)
+
+[[Category:Indian recipes|{{PAGENAME}}]]
+[[Category:Pakistani recipes|{{PAGENAME}}]]
+[[Category:Afghan recipes|{{PAGENAME}}]]
+[[Category:Pashtun recipes|{{PAGENAME}}]]
+[[Category:Punjabi recipes|{{PAGENAME}}]]
+[[Category:Recipes using chicken breast]]
+[[Category:Appetizer recipes|{{PAGENAME}}]]
+[[Category:Recipes_with_metric_units|{{PAGENAME}}]]
+[[Category:Featured recipes|{{PAGENAME}}]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes using garam masala]]
+[[Category:Recipes using ground cumin]]
+[[Category:Recipes using milk]]
+[[Category:Recipes using mustard oil]]

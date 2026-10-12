@@ -1,0 +1,33 @@
+{{Recipe summary
+| Category = Fish recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 4 [[Cookbook:Each|ea]]. (24 [[Cookbook:Ounce|ounces]]) skin-on Coho [[Cookbook:Salmon|salmon]] fillets
+* [[Cookbook:Olive Oil|Olive oil]]
+* [[Cookbook:Salt|Salt]]
+* Freshly-ground [[Cookbook:Black Pepper|black pepper]]
+* 1 stick unsalted [[Cookbook:Butter|butter]], softened
+* ½ [[Cookbook:Lemon|lemon]], juiced
+* A flame-resistant towel tied with twine and soaked in oil
+
+== Procedure ==
+#[[Cookbook:Brush|Brush]] salmon with olive oil and sprinkle liberally with salt and freshly ground black pepper. Set aside.
+#Heat a large chimney starter's worth of charcoal briquets. Once hot, disperse evenly around the bottom of the grill and reapply the grate.
+#Quickly grease the grate with the towel. Add salmon fillets, skin side down, and cook, covered, turning often, until fish is pink throughout and flakes easily when tested with a fork.
+#Remove and keep warm.
+#[[Cookbook:Folding|Fold]] together lemon and butter. Melt over medium heat in a large [[Cookbook:Saucepan|saucepan]].
+#Drizzle butter over salmon fillets and serve warm.
+
+== Notes, tips, and variations ==
+
+* Adding your flavorings to the butter before you melt it is a great trick to keep butter sauces from separating. Adding cream is also a good way.
+
+[[Category:Recipes using salmon]]
+[[Category:Recipes using lemon juice]]
+[[Category:Grilled recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using butter]]

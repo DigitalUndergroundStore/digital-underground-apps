@@ -1,0 +1,68 @@
+{{recipesummary|category=Italian recipes|servings=4|time=2 hours|difficulty=3
+| Image = [[Image:Spaghetti Bolognese.jpg|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Meat_Recipes|Meat recipes]] | [[Cookbook:Cuisine of Italy|Cuisine of Italy]]
+
+This northern Italian meat sauce, or Ragu Bolognese, is wonderful on [[Cookbook:Pasta|pasta]] with freshly grated [[Cookbook:Cheese|Parmesan cheese]], or as filling for lasagne. 
+
+==Ingredients==
+*¼ [[Cookbook:Pound|lb]] (125 [[Cookbook:Gram|g]]) [[Cookbook:Ham|ham]] or [[Cookbook:Bacon|bacon]], cut into cubes
+*1 lb (450 g) [[Cookbook:Beef|beef]] lean or medium ground 
+*1 [[Cookbook:Tablespoon|tablespoon]] (15 [[Cookbook:ML|ml]]) [[Cookbook:Olive Oil|olive oil]]
+*1 [[Cookbook:Cup|cup]] (225 ml) coarsely [[Cookbook:Chopping|chopped]] [[Cookbook:Onion|onion]]
+*¼ cup (50 ml) coarsely chopped [[Cookbook:Celery|celery]]
+*¼ cup (50 ml) coarsely chopped [[Cookbook:Carrot|carrot]]
+*¼ cup (50 ml) coarsely chopped [[Cookbook:Fennel|fennel]] bulb, if available
+*¼ cup (50 ml) [[Cookbook:Butter|butter]] 
+*1 cup (225 ml) canned plum [[Cookbook:Tomato|tomato]]
+*½ cup (125 ml) red [[Cookbook:Wine|wine]]
+*2 cups (500 ml) beef [[Cookbook:Stock|stock]] (preferably fresh, but canned beef stock will do)
+*¼ cup (50 ml) [[Cookbook:Tomato Paste|tomato paste]]
+*1 strip of [[Cookbook:lemon rind|lemon rind]] 
+*1 [[cookbook:Bay Leaf|bay leaf]]
+*1 lb (450 g) spaghetti pasta, preferably made from durum wheat
+*1 cup Parmesan cheese for garnish, preferably freshly grated Reggiano Parmesan 
+*[[Cookbook:Salt|Salt]] to taste
+*Fresh ground [[Cookbook:Pepper|pepper]] to taste
+
+==Procedure==
+#Mix the coarsely chopped onion, carrot, celery and fennel (optional) together and finely [[Cookbook:Chopping|chop]] them (this is called a battuto in Italian, or a finely chopped mixture of vegetables and herbs to flavour a dish).
+#Cut the ham or bacon into little cubes and sauté in a heavy [[Cookbook:Saucepan|saucepan]].
+#Add the butter and allow it to melt. Then, add the battuto.
+#Cook, stirring occasionally until very lightly browned. Add this mixture to a heavy pot.
+#Heat the olive oil in the [[Cookbook:Skillet|skillet]] the battuto was browned in and when the oil is hot, add the beef and stir to break up lumps, cooking until well browned.
+#Add to the battuto in the pot.
+#Add the wine to the skillet the beef was in and stir on high heat, scraping any brown bits stuck to the pan.
+#Add the tomato paste and stock and stir until well mixed and add this mixture to the pot.
+#Drain and coarsely chop the plum tomatoes and add them to the pot.
+#Add the bay leaf and lemon rind. Bring the pot to a boil, then reduce to a gentle [[Cookbook:Simmering|simmer]], with bubbles barely breaking the surface.
+#Simmer, stirring occasionally for an hour (or more), until thick.
+#Add pepper and salt to taste.
+#When the sauce is ready, bring a gallon (4 litres) of water to a full boil over high heat in a large pot
+#Add the pasta, give it a brisk stir to ensure it is all covered by water and not clumped together. Cook for about 10–12 minutes, or until [[Cookbook:al dente|al dente]] (firm but not hard, there should still be a bit of 'bite' when chewing pasta, rather than soggy and mushy).
+#Drain the pasta well and serve immediately.
+#Remove the bay leaf and lemon rind, then spoon the Bolognese sauce over the pasta and have guests garnish with the grated Parmesan cheese.
+
+==Notes, tips, and variations==
+* This is a great recipe for making in large quantities and freezing. If making bulk recipes, be sure to simmer for hours, or even a full day, occasionally stirring up from the bottom of the large pot to ensure the contents at the bottom does not burn, adding stock as needed to keep the right consistency. The goal is to have the flavours mix and make the home smell delicious!
+*Never rinse pasta with water. To ensure there is no excess starch from the pasta, choose a high quality durum wheat pasta and boil it in lots of water.
+
+[[Category:Italian recipes]]
+[[Category:Recipes using ground beef]]
+[[Category:Recipes for pasta sauce]]
+[[Category:Boiled recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes using bacon]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using bay leaf]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using lemon zest]]
+[[Category:Recipes using fennel bulb]]
+[[Category:Recipes using beef broth and stock]]
+[[Category:Recipes using ham]]
+
+[[id:Resep:Spaghetti bolognaise]]
+[[de:Kochbuch/ Spagetti Bolognese]]

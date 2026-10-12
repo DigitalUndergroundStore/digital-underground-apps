@@ -1,0 +1,46 @@
+{{Recipe summary
+| Category = Chicken recipes
+| Servings = 4
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Meat Recipes|Meat]]
+
+'''Chicken Parmesan''' is a classic Italian dish, which is wonderful served over [[cookbook:pasta|pasta]] or on a [[Cookbook:Sandwiches|sandwich]]. This is a fairly simple recipe made mostly with ingredients already on hand.
+
+==Ingredients==
+* 6 [[Cookbook:Chicken|chicken breast halves]], flattened to ½-inch thickness
+* ½ [[Cookbook:Cup|cup]] [[Cookbook:Flour|all purpose flour]]
+* 2 [[Cookbook:Egg|eggs]]
+* 1½ cups Italian seasoned [[Cookbook:Bread Crumb|bread crumbs]]
+* ½ cup [[Cookbook:Grating|grated]] [[cookbook:Parmesan Cheese|Parmesan cheese]], divided
+* ½ [[Cookbook:Teaspoon|tsp]] [[Cookbook:Salt|salt]]
+* ½ tsp [[Cookbook:Pepper|black pepper]], freshly-ground if possible
+* [[Cookbook:Olive Oil|Olive oil]]
+* 1 jar (16 oz) [[Cookbook:Spaghetti Sauce|spaghetti sauce]] (or make it fresh)
+* 1 package [[Cookbook:Slicing|sliced]] [[cookbook:Mozzarella Cheese|mozzarella cheese]]
+
+==Procedure==
+# Preheat the [[Cookbook:Oven|oven]] to 350°F (175°C).
+# Mix the breadcrumbs, salt, black pepper, and half the Parmesan cheese in a [[Cookbook:Mixing Bowl|mixing bowl]].
+# [[cookbook:Beat|Beat]] the eggs in a small bowl.
+# On the [[Cookbook:Cooktop|stove]], heat olive oil in a large [[Cookbook:Frying Pan|frying pan]] over medium-high heat
+# Take each chicken breast and dip it into the flour, then into the eggs, then into the breadcrumb mixture. Make sure to coat it thoroughly.
+# [[cookbook:Pan fry|Pan fry]] the chicken breasts lightly in the olive oil until brown on both sides. You do not need to cook them through, just [[cookbook:brown|brown]] them. Once brown, the breadcrumbs should stick to the outside.
+# Pour half a jar of pasta sauce into a shallow [[Cookbook:Baking Dish|baking dish]], then lay the chicken out in the pan. Pour the rest of the sauce on top.
+# Sprinkle the remaining grated Parmesan cheese over the chicken.
+# Place the dish in the oven and [[Cookbook:Baking|bake]] for 30 minutes at 350°F (175°C).
+# Remove and add a slice of mozzarella cheese to each chicken breast.
+# Return to the oven for 10 more minutes to melt the mozzarella.
+# Serve with [[cookbook:pasta|pasta]].
+
+[[Category:Recipes using chicken breast]]
+[[Category:Recipes using parmesan]]
+[[Category:Baked recipes]]
+[[Category:Pan fried recipes]]
+[[Category:Italian recipes|Chicken Parmesan]]
+[[Category:Main course recipes]]
+[[Category:Recipes using bread crumb]]
+[[Category:Recipes using low-moisture mozzarella]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using all-purpose flour]]

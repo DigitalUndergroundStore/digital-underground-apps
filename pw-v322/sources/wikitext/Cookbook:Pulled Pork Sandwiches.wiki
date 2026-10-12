@@ -1,0 +1,40 @@
+{{Recipe summary
+| Category = Sandwich recipes
+| Difficulty = 3
+}}
+
+{{recipe}} 
+[[Category:Recipes using pork]]
+[[Category:Barbecue recipes]] [[Category:Smoked recipes]]
+
+Please don't try to do this in the oven 'cause you'll just ruin it.
+
+== Ingredients ==
+* 2 [[Cookbook:Quart|quarts]] water
+* 12 [[Cookbook:Ounce|ounces]] [[Cookbook:Pickling Salt|pickling salt]]
+* ¾ [[Cookbook:Cup|cup]] [[Cookbook:Honey|honey]]
+* 6–8 [[Cookbook:Pound|lb]] Boston [[Cookbook:Pork|pork]] butt, trimmed
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Paprika|paprika]]
+* 2 tbsp [[Cookbook:Black Pepper|black pepper]]
+* 3 tbsp dehydrated [[Cookbook:Lemon|lemon]] peel
+* 2 tbsp [[Cookbook:Cayenne Pepper|cayenne pepper]] (more if you like)
+* 1 ½ tbsp dried [[Cookbook:Rosemary|rosemary]]
+* 3 tbsp dark [[Cookbook:Brown Sugar|brown sugar]]
+* Several lbs apple wood
+* Hamburger buns for serving
+
+== Procedure ==
+#Combine water, salt, and honey in a 6-quart cooler. Add pork and refrigerate or place a large bag of ice on top for 8–12 hours.
+#Remove pork from brine and pat dry with [[Cookbook:Paper Towel|paper towels]]. Combine remaining seasonings and rub on pork.
+#Light a few chunks of apple wood and place in the firebox of a smoker. Keep temperature in smoker around 210°F.
+#Place in a [[Cookbook:Smoker|smoker]] and cook for 8–12 hours, changing wood as needed. The meat should be tender at this point—if not, continue smoking.
+#Let rest 1 hour, then shred with two forks. Serve on hamburger buns.
+
+[[Category:Recipes for sandwiches]]
+[[Category:Recipes using dark brown sugar]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using rosemary]]
+[[Category:Recipes using paprika]]
+[[Category:Recipes using honey]]
+[[Category:Recipes using dehydrated lemon zest]]

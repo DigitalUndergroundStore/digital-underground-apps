@@ -1,0 +1,25 @@
+{{Recipe summary
+| Category = Bread recipes
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+* [[Cookbook:All-purpose flour|All-purpose flour]]
+
+* Water
+* [[Cookbook:Vegetable oil|Vegetable oil]] 
+
+== Procedure ==
+# Take 2 handfuls of flour and put in a bowl. Using a spoon, make a well in the middle.
+# Fill the well halfway with vegetable oil and the other half with water.
+# [[Cookbook:Folding|Fold]] in the flour and mix until a [[Cookbook:Dough|dough]] comes together in the bowl.
+# Let rest for 1 hour.
+# Divide dough into 4 parts. Taking 1 piece of dough, flatten it with your palms and then stretch the dough until it is thin as a tissue.
+# Cook on a pan or other hot surface until small to medium bubbles appear on the surface.
+# Flip onto other side (with your hand or spatula) to let cook for 30–40 seconds more.
+# Repeat cooking steps until all the dough is used up.
+
+[[Category:Recipes for flatbread]]
+[[Category:Recipes using all-purpose flour]]

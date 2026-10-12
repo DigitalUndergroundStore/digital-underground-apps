@@ -1,0 +1,36 @@
+{{Recipe summary
+| Category = Chicken recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+Like BBQ and like hot wings? This combines both that in one dish!
+
+== Ingredients ==
+* 24 [[Cookbook:Chicken#Wing|chicken wingettes]]
+* [[Cookbook:Salt|Salt]]
+* [[Cookbook:Black Pepper|Black pepper]]
+* ½ [[Cookbook:Cup|cup]] [[Cookbook:Tomato Paste|tomato paste]]
+* 2 [[Cookbook:Tablespoon|Tbsp]] [[Cookbook:Honey|honey]]
+* 2 Tbsp [[Cookbook:Cider Vinegar|cider vinegar]]
+* 2 Tbsp [[Cookbook:Hot Sauce|hot sauce]]
+* [[Cookbook:Oil and Fat|Oil]] for [[Cookbook:Deep Fat Frying|deep frying]]
+
+== Procedure ==
+#Sprinkle wings with salt and black pepper. 
+#Heat oil to 350°F (175°C).
+#[[Cookbook:Deep Fat Frying|Deep fry]] wings in batches for 11–12 minutes. Drain on a [[Cookbook:Cooling Rack|cooling rack]].
+#Combine liquid ingredients except for oil.
+#Bring to a [[Cookbook:Boiling|boil]] over medium high heat until reduced to 10 Tbsp.
+#Remove from heat and let rest for 5 minutes.
+#[[Cookbook:Mixing#Tossing|Toss]] wings with sauce; serve warm.
+
+[[Category:Recipes using chicken wing]]
+[[Category:Deep fried recipes]]
+[[Category:Appetizer recipes]]
+[[Category:Main course recipes]]
+[[Category:Side dish recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using honey]]
+[[Category:Recipes using hot sauce]]

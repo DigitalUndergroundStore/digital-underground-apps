@@ -1,0 +1,59 @@
+__NOTOC__
+{{Recipe summary
+| Category = Chicken recipes
+| Difficulty = 2
+| Image = [[File:Barbecue chicken-03.jpg|300px]]
+}}
+
+{{recipe}}
+== Ingredients ==
+
+* 2 each [[Cookbook:Chicken|chicken]] thighs, legs, and breasts
+
+=== Brine ===
+
+* 1 [[Cookbook:Cup|cup]] [[Cookbook:Salt|salt]]
+* 1 [[Cookbook:Quart|quart]] water
+* ½ cup dark [[Cookbook:Brown Sugar|brown sugar]]
+* 4 cloves [[Cookbook:Garlic|garlic]], minced
+* 2 [[Cookbook:Tablespoon|tbsp]] finely grated lemon zest
+* 1 quart salt-free [[Cookbook:Chicken Broth|chicken broth]]
+
+=== Sauce ===
+
+* 1 cup [[Cookbook:Tomato Paste|tomato paste]]
+* ¼ cup [[Cookbook:Honey|honey]]
+* ¼ cup apple [[Cookbook:Cider Vinegar|cider vinegar]]
+* 2 tbsp [[Cookbook:Worcestershire Sauce|Worcestershire sauce]]
+
+=== Rub ===
+
+* 2 tbsp [[Cookbook:Paprika|paprika]]
+* 2 tbsp smoked paprika
+* 1 ½ [[Cookbook:Teaspoon|tsp]] dried [[Cookbook:Rosemary|rosemary]]
+* 1 ½ tsp dried [[Cookbook:Thyme|thyme]]
+* 1 ½ tbsp [[Cookbook:Cayenne Pepper|cayenne pepper]]
+* ½ tbsp coarsely-ground [[Cookbook:Black Pepper|black pepper]]
+* 2 tbsp dark brown sugar
+
+== Procedure ==
+#Combine all brine ingredients in a 2-[[Cookbook:Gallon|gallon]] zip-top bag. Insert chicken and refrigerate for 2 hours.
+#Combine sauce ingredients and bring to a [[Cookbook:Boiling|boil]] over medium high heat until reduced by half.
+#Quickly swab the [[Cookbook:Grill|grill]] with an oiled towel tied with twine to lube.
+#Combine Rub ingredients and massage all over chicken. Refrigerate for 30 minutes.
+#Grill chicken over a preheated charcoal grill, turning often, for 10 minutes. Cook, turning often and brushing with sauce when turned, until internal temperature reaches 165°F in the breast and 170°F for the dark meat.
+#Cover with foil and let rest 7 minutes. Meanwhile, boil remaining sauce for 5 minutes and place in a squirt bottle. Serve chicken with sauce on the side.
+
+[[Category:Recipes using chicken]]
+[[Category:Barbecue recipes]]
+[[Category:Grilled recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using dark brown sugar]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using paprika]]
+[[Category:Recipes using rosemary]]
+[[Category:Recipes using thyme]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using chicken broth and stock]]
+[[Category:Recipes using honey]]
+[[Category:Recipes using lemon zest]]

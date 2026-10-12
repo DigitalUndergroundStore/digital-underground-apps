@@ -1,0 +1,30 @@
+__NOTOC__{{Recipe summary
+| Category = Meat recipes
+| Difficulty = 3
+}}
+
+{{recipe}} 
+
+If you've ever had ''Steak au Poivre'', this is going to look pretty similar, except it's grilled and there is no pan sauce.
+
+== Ingredients ==
+*¼ [[Cookbook:Cup|cup]] [[Cookbook:Peppercorn|peppercorns]], cracked
+*[[Cookbook:Salt|Salt]]
+*¾ [[Cookbook:Teaspoon|tsp]] [[Cookbook:Cayenne Pepper|cayenne pepper]]
+*1½ [[Cookbook:Tablespoon|tbsp]] smoked [[Cookbook:Paprika|paprika]]
+*1 [[Cookbook:Each|ea]]. (1 [[Cookbook:Pound|pound]]) [[Cookbook:Beef#Flank|flank steak]]
+*[[Cookbook:Dijon Mustard|Dijon mustard]]
+
+== Procedure ==
+#Combine the peppercorns, salt, cayenne, and paprika. Set aside.
+#[[Cookbook:Brush|Brush]] steak with mustard. Apply seasoning mixture and gently massage into meat.
+#[[Cookbook:Grilling|Grill]] over high heat until marked on both sides. Lower heat to medium and cook, turning often, until internal temperature reaches 140 °F for medium rare.
+#Remove and let rest, uncovered, for 7 minutes. 
+#[[Cookbook:Slicing|Slice]] as thinly as humanly possible across the grain and serve warm.
+
+[[Category:Recipes using beef flank]]
+[[Category:Recipes using pepper]]
+[[Category:Grilled recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using Dijon mustard]]

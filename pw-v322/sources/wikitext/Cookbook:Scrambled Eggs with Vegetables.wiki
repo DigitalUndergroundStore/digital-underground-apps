@@ -1,0 +1,33 @@
+{{Recipe summary
+| Category = Egg recipes
+| Servings = 2
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+* [[Cookbook:Oil and Fat|Oil]]
+* 2 medium [[Cookbook:Tomato|tomatoes]], [[Cookbook:Chopping|chopped]]
+* 1 medium [[Cookbook:Cucumber|cucumber]], chopped
+* 2 [[Cookbook:Pinch|pinches]] [[Cookbook:Salt|salt]]
+* 3–4 [[Cookbook:Egg|eggs]]
+* ½ small [[Cookbook:Onion|onion]], chopped
+
+== Procedure ==
+
+# Heat a [[Cookbook:Frying Pan|frying pan]] over medium heat, and add oil.
+# Add tomato and cucumber to the pan. Cook for 2 minutes, stirring occasionally. Add salt.
+# [[Cookbook:Beating|Beat]] the eggs with the onion and additional salt if desired. Transfer mixture to the pan.
+# Cook eggs and vegetables, turning every 30 seconds until cooked to taste.
+# Serve.
+
+== Notes, tips, and variations ==
+
+* If desired, you can fry the eggs and vegetables separately.
+
+[[Category:Recipes using egg]]
+[[Category:Recipes using cucumber]]
+[[Category:Recipes using tomato]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using onion]]

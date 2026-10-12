@@ -1,0 +1,29 @@
+{{Recipe summary
+| Category = Meat recipes
+| Difficulty = 2
+}}
+
+{{recipe}} 
+
+== Ingredients ==
+* 1½ [[Cookbook:Cup|cups]] sliced [[Cookbook:Button Mushroom|button mushrooms]]
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Butter|butter]]
+* 4 [[Cookbook:Each|ea]]. (24–32 [[Cookbook:Ounce|ounces]]) New York strip [[Cookbook:Beef|steaks]], trimmed of excess fat
+* [[Cookbook:Salt|Salt]]
+* Freshly-ground [[Cookbook:Black Pepper|black pepper]]
+* [[Cookbook:Olive Oil|Olive oil]]
+* 2 [[Cookbook:Teaspoon|tsp]] freshly-[[Cookbook:Mince|minced]] [[Cookbook:Garlic|garlic]]
+* ¼ [[Cookbook:Cup|cup]] [[Cookbook:Dice|diced]] [[Cookbook:Onion|onion]]
+
+== Procedure ==
+#[[Cookbook:Brush|Brush]] steak with olive oil. Season liberally on both sides with salt and freshly ground black pepper.
+#Preheat [[Cookbook:Grill|grill]]. Add steaks and cook 4–5 minutes per side for medium rare, rotating 90 degrees halfway to create grill marks.
+#While steak is grilling, prepare mushrooms. Melt butter in a large straight-sided [[Cookbook:Sauté Pan|sauté pan]] over medium high heat. Add garlic and keep it moving until golden. Add onion and mushrooms and cook, [[Cookbook:Mixing#Tossing|tossing]] occasionally, until mushrooms are as browned as you like.
+#Serve steaks with sautéed mushrooms and desired sides.
+
+[[Category:Recipes using beef loin]]
+[[Category:Recipes using common mushroom]]
+[[Category:Grilled recipes]]
+[[Category:Sautéed recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using butter]]

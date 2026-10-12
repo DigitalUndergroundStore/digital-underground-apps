@@ -1,0 +1,27 @@
+{{Recipe summary
+| Category = Soup recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+'''Minestra alla Capucina''' is an [[Cookbook:Cuisine of Italy|Italian recipe]] of soup in which ''Cappuccina'' [[Cookbook:Lettuce|lettuce]] is used.
+
+==Ingredients==  
+* [[Cookbook:Anchovy|Anchovy]], scaled
+* [[Cookbook:Butter|Butter]]
+* 1 small [[Cookbook:Onion|onion]], cut across
+* 4 [[Cookbook:Ounce|oz]] [[Cookbook:Boiling|boiled]] [[Cookbook:Rice|rice]]
+* [[Cookbook:Stock|Stock]]
+
+==Procedure==
+#Pound anchovy. 
+#[[Cookbook:Frying|Fry]] it in butter with the onion and rice until the rice is golden brown. 
+#Remove the onion and season with salt.
+#Gradually add some stock, cooking until the dish is of the consistency of rice pudding.
+
+[[Category:Italian recipes|Minestrone alla Capucina]]
+[[Category:Recipes for soup|{{PAGENAME}}]]
+[[Category:Recipes using rice|{{PAGENAME}}]]
+[[Category:Recipes using anchovy]]
+[[Category:Recipes using butter]]

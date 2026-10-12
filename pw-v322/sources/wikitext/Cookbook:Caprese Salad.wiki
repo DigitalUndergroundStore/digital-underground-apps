@@ -1,0 +1,32 @@
+{{Recipe summary
+| Category = Salad recipes
+| Servings = 1–2
+| Difficulty = 1
+}}
+
+{{recipe}}
+
+'''Caprese salad''' is a delicious Italian dish made with [[Cookbook:Tomato|tomato]] and [[Cookbook:Mozzarella Cheese|mozzarella]] cheese. It is quite simple but tastes great and looks attractive.
+
+== Ingredients ==
+* 1 medium [[Cookbook:Tomato|tomato]]
+* A few [[Cookbook:Basil|basil]] leaves
+* about ¾ the weight of [[Cookbook:Mozzarella Cheese|Mozzarella cheese]] as the tomato, [[Cookbook:Slicing|sliced]]
+* [[Cookbook:Olive Oil|Olive oil]]
+* [[Cookbook:Vinegar|Balsamic vinegar]]
+* [[Cookbook:Italian Seasoning|Italian seasoning]] or [[Cookbook:Oregano|oregano]] and [[Cookbook:Pepper|pepper]] (optional)
+
+== Procedure ==
+
+# Cut the tomato into about 5 slices. 
+# Put a slice of mozzarella cheese on top of each tomato slice.
+# Cut a horizontal slit halfway through each slice.
+# Put a basil leaf on top of each one.
+# Sprinkle herbs over each slice.
+# Drizzle some vinegar and olive oil on top. Do not mix the vinegar and olive oil.
+# Eat fresh. 
+
+[[Category:Italian recipes]]
+[[Category:Recipes using tomato]]
+[[Category:Recipes using fresh mozzarella]]
+[[Category:Recipes using basil]]

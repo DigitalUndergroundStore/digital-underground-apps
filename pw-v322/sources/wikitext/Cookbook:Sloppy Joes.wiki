@@ -1,0 +1,36 @@
+{{recipesummary|category=Beef recipes|servings=8|time=Prep: 10 minutes <br/>Cooking: 20 minutes|difficulty=2
+}}{{recipe}}
+
+'''Sloppy joes''' are loosemeat sandwiches that have roots in the cuisine of the Midwestern United States.
+
+==Ingredients==
+*1 [[Cookbook:Pound|pound]] (450 [[Cookbook:Gram|g]]) ground [[Cookbook:Beef|beef]]
+*1 [[Cookbook:Cup|cup]] [[Cookbook:Ketchup|ketchup]]
+*1 cup [[Cookbook:Barbecue Sauce|barbecue sauce]]
+*1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Garlic Powder|garlic powder]]
+*1 tbsp [[Cookbook:Chili Powder|chili powder]]
+*¼ cup chopped [[Cookbook:Onion|onion]] (optional)
+*¼ cup chopped green [[Cookbook:Bell Pepper|bell pepper]] (optional)
+
+==Procedure==
+#Brown the ground beef, onions, and peppers in [[Cookbook:Frying Pan|skillet]] on medium heat.
+#Drain the liquid from the mixture.
+#Place the ground beef back on the skillet.
+#While on medium heat mix in the ketchup, barbecue sauce, garlic powder, and chili powder in any order.
+#[[Cookbook:Simmering|Simmer]] for 20 minutes.
+#Serve over sliced, toasted hamburger buns.
+
+==See also==
+* [[Cookbook:Meatless Sloppy Joes|Meatless Sloppy Joes]]
+
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using barbecue sauce]]
+[[Category:Pan fried recipes]]
+[[Category:Recipes for sandwiches]]
+[[Category:Midwestern U.S. recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using chili powder]]
+[[Category:Recipes using garlic powder]]
+[[Category:Recipes using ketchup]]

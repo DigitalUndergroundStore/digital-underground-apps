@@ -1,0 +1,22 @@
+{{Recipe summary
+| Category = Pork recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 4 thick-cut bone-in [[Cookbook:Pork|pork]] rib chops
+* ½ [[Cookbook:Cup|cup]] [[Cookbook:Chop Rub|Chop Rub]]
+* [[Cookbook:Cider Vinegar|Cider vinegar]], as needed
+* 1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Olive Oil|olive oil]]
+
+== Procedure ==
+#[[Cookbook:Brush|Brush]] pork chops with cider vinegar. Season each pork chop with the chop rub, pressing lightly.
+#Heat oil in a very large oven-proof cast iron or stainless steel [[Cookbook:Frying Pan|skillet]] over medium high heat. Add pork chops and [[Cookbook:Searing|sear]] for 3 minutes per side.
+#Insert an oven-safe probe [[Cookbook:Thermometer|thermometer]] into one pork chop and place pan in a 350°F [[Cookbook:Oven|oven]]. [[Cookbook:Baking|Bake]] until internal temperature reaches 145°F.
+#Remove and let rest for 5 minutes; serve.
+
+[[Category:Recipes using pork chop]]
+[[Category:Pan fried recipes]]
+[[Category:Main course recipes]]

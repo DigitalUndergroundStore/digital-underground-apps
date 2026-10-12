@@ -1,0 +1,25 @@
+{{Recipe summary
+| Category = Corn recipes
+| Difficulty = 2
+}}
+
+{{recipe}}| [[Cookbook:Cooking techniques|Cooking techniques]] | [[Cookbook:Camp Cooking|Camp Cooking]]
+
+Corn can be roasted over the fire or on the grill without using tinfoil by simply leaving the husks on. Soaking in advance prevents the husks from burning. Each ear of corn serves 1. 
+
+==Ingredients==
+*[[cookbook:Maize|Corn on the cob]], with husks left on 
+*[[cookbook:Butter|Butter]] (optional)
+*[[cookbook:salt|Salt]] (optional)
+
+==Procedure==
+#Carefully peel back husk without detaching it and remove silk. 
+#Replace husks and soak ears in cold water for ½ hour. 
+#Place corn on [[cookbook:grilling|grill]] or on a rack above an open fire. 
+#Cook for about 15 minutes, turning occasionally to ensure even cooking. 
+#Serve with butter and salt. 
+
+[[Category:Recipes using corn|{{PAGENAME}}]]
+[[Category:Grilled recipes]]
+[[Category:Baked recipes]]
+[[Category:Side dish recipes]]

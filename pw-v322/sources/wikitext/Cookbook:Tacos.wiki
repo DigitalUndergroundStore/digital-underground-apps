@@ -1,0 +1,58 @@
+__NOTOC__
+{{Recipe summary
+| Category = Tex-Mex recipes
+| Difficulty = 2
+| Image = [[File:BeefBarbTacos.JPG|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Meat Recipes|Meat Recipes]] | [[Cookbook:Cuisine of Mexico|Mexican Cuisine]] | [[Cookbook:Tex-Mex cuisine|Tex-Mex Cuisine]]
+
+A '''taco''' is a traditional Mexican food consisting of a small hand-sized corn- or wheat-based tortilla topped with a filling.
+
+==Ingredients==
+
+=== Base ingredients ===
+* Ground, finely [[Cookbook:Slicing|sliced]], or [[Cookbook:Chopping|chopped]] [[Cookbook:Beef|beef]]
+* [[Cookbook:Tortilla|Corn tortillas]] or ready-made taco shells
+* 1–4 [[Cookbook:Teaspoon|tsp]] per [[Cookbook:Pound|pound]] (450 g) of beef of [[Cookbook:Cumin|cumin]]
+* [[Cookbook:Chili powder|Chili powder]], to taste
+
+=== Optional ingredients ===
+* [[Cookbook:Black Olive|Black olives]] 
+* Shredded mild [[Cookbook:Cheddar Cheese|cheddar cheese]], if desired
+* Fresh [[Cookbook:Tomato|tomatoes]]
+* Chopped [[Cookbook:Cilantro|cilantro]]
+* Fresh [[Cookbook:Spinach|spinach]], shredded or diced
+* [[Cookbook:Mushroom|Mushrooms]]
+* [[Cookbook:Salsa|Salsa]], or [[Cookbook:Hot Sauce|hot sauce]], as hot as you would like
+* [[Cookbook:Sour cream|Sour cream]]
+* Chopped [[Cookbook:Lettuce|lettuce]] or shredded [[Cookbook:Cabbage|cabbage]]
+* Chopped [[Cookbook:Tomato|tomato]]
+* Chopped [[Cookbook:Onion|onion]]
+
+==Procedure==
+#If you would like to have 'build-your-own' tacos, dice the optional ingredients your desire as needed and place in separate bowls for use on the table. 
+#Place the beef in a wide pan on a large burner. Ground beef will need to be broken up as it cooks; chopped or sliced beef needs to be stir-fried and may require oil. When using high-fat ground beef, you may wish to drain and very, very lightly rinse the beef in a colander, or add water to float the fat, cool to solidify the fat, remove the fat, drain the water, and reheat. If you are using ground beef, which is quite alright, also see the [[Cookbook:Taco Meat|Taco Meat]] recipe.
+#Add lots of cumin to the beef. Cumin is the magic ingredient that makes a taco taste like a taco. You may also add a bit of salt, a bit of chili powder and/or diced onion.
+#Prepare the outside covering:
+#* Pre-made shells can be reheated in the [[Cookbook:Microwave|microwave]] as the package directs. 
+#* Plain corn tortillas can be used for soft tacos, although, for soft tacos, either a double layer of corn tortillas or a single layer of flour tortilla works best. The tortillas should be microwaved, covered, in 15+ second stages, flipping between stages, until warm, and kept covered and warm prior to use.
+#* You could make your own hard taco shells from corn tortillas, but rest very well assured that soft corn tortilla tacos are absolutely the most traditional.  If you need hard shells and can not find them pre-made, you may, with great effort and use of your time, use a [[Cookbook:Deep Fat Frying|deep-fat]] process, going one at a time and using a large spoon to form the shells into the normal U shape. Pan frying in ¼ inch to ½ inch of oil will also work; be sure not to let the tortillas stiffen prior to being bent into the U shape you desire.
+#Place hot beef into a hard shell or down the middle of a warm soft tortilla (two for corn). A very simple, and quite authentic, taco would be to then add a sprinkling of finely diced onion and cilantro into the inside of the taco, fold the tortilla over (if soft) and serve with lime quarters for squeezing into the taco. See [[Cookbook:Tacos de Bistec|Tacos de Bistec]]. 
+# You may also continue on to place cheese onto the beef. The heat of the beef should slightly melt the cheese. You may wish to microwave the taco a bit, especially if the cheese is cold or if you are using low-fat cheese.
+# Add other toppings as the cook desires. 
+# Serve the tacos with a small or large assortment of items that people can add. Traditionally, in a restaurant, this would amount to only pico de gallo or a hot sauce. However, 'build-your-own' tacos with a good assortment of items to add can add a bit of fun to a gathering or family dinner.
+
+
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using cilantro]]
+[[Category:Main course recipes]]
+[[Category:Side dish recipes]]
+[[Category:Mexican recipes]]
+[[Category:Southwestern recipes]]
+[[Category:Tex-Mex recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes with images]]
+[[Category:Recipes for tacos]]
+[[Category:Recipes using cheddar]]
+[[Category:Recipes using chili powder]]

@@ -1,0 +1,40 @@
+{{recipesummary|category=Rice recipes|servings=5|time=1 hour|difficulty=3}}
+{{nutritionsummary|1/5 of recipe (400 g)|5|173|80|8.9 g|1.1 g|5 mg|2913 mg|20.7 g|8.9 g|14.2 g|2.5 g|67%|21%|9%|12%}}
+{{recipe}} | [[Cookbook:Rice|Rice]] | [[Cookbook:Fried rice|Fried rice]]
+
+==Ingredients==
+
+* 2 packs (8 [[Cookbook:Each|ea]]./800 [[Cookbook:Gram|g]]/1.8 [[Cookbook:Pound|lb]]) [[Cookbook:Carrot|carrots]], cut into {{convert/3|5|x|1|x|1|cm|in|abbr=on}} pieces
+* 1 pack ({{convert|200|g|oz|abbr=on|disp=s}}) [[Cookbook:Bean Sprout|bean sprouts]], soaked in hot water and drained
+* 1 pack ({{convert|200|g|oz|abbr=on|disp=s}}) [[Cookbook:Broccoli|broccoli florets]], soaked in hot water and drained
+* 1 pack ({{convert|200|g|oz|abbr=on|disp=s}}) [[Cookbook:Mushroom|mushrooms]], quartered and soaked in hot water
+* ½ pack ({{convert|250|g|oz|abbr=on|disp=s}}) [[Cookbook:Cabbage|cabbage]], cut into {{convert|2|cm|in|abbr=on}} pieces
+* 4 [[Cookbook:Scallion|scallions]], cut into {{convert|1.5|cm|in|abbr=on}} pieces
+* 3 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Oil|corn oil]]
+* 3 cloves [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+* ¼ big [[Cookbook:Onion|onion]], [[Cookbook:Chopping|chopped]]
+* 1 cup ({{convert|100|g|oz|abbr=on|disp=s}}) cooked [[Cookbook:Rice|rice]]
+* 2 tbsp [[Cookbook:Salt|salt]]
+* 1½ tbsp light [[Cookbook:Soy sauce|soy sauce]]
+* 1 tbsp vegetarian [[Cookbook:Oyster sauce|oyster sauce]] substitute (or omit)
+* 1 tbsp [[Cookbook:Pepper|pepper]]
+
+==Procedure==
+
+# Heat the oil in a [[Cookbook:Non-stick|non-stick]] [[Cookbook:Frying Pan|pan]], add onion and garlic, and [[Cookbook:Stir-frying|stir-fry]] for 25 seconds until fragrant.
+# Add the rice, all the vegetables, some salt, light soy sauce, oyster sauce and pepper. Stir until mixed well.
+# Serve.
+
+[[Category:Recipes using rice]]
+[[Category:Recipes for fried rice]]
+[[Category:Vegetarian recipes]]
+[[Category:Recipes using bean sprout]]
+[[Category:Recipes using broccoli]]
+[[Category:Recipes using cabbage]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using corn oil]]
+[[Category:Recipes using green onion]]
+[[Category:Recipes using mushroom]]

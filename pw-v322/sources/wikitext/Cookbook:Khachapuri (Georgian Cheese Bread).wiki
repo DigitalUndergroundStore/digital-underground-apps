@@ -1,0 +1,47 @@
+__NOTOC__{{Recipe summary
+| Category = Bread recipes
+| Difficulty = 3
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+
+=== Dough ===
+* ½ [[Cookbook:Cup|cup]] warm water
+* 1 packet (¼ [[Cookbook:Ounce|oz]]) active dry [[Cookbook:Yeast|yeast]]
+* 1 [[Cookbook:Tablespoon|Tbsp]] white granulated [[Cookbook:Sugar|sugar]]
+* 3 [[Cookbook:Egg|eggs]]
+* 2 cups [[Cookbook:Flour|flour]], plus more to dust counter top, hands, etc.
+
+=== Filling ===
+* 3 [[Cookbook:Egg|eggs]]
+* 8 [[Cookbook:Ounce|oz]] [[Cookbook:Feta Cheese|feta cheese]], grated or cut into small pieces
+* 12 oz smoked [[Cookbook:Provolone Cheese|provolone cheese]], grated or cut into small pieces
+* 2 oz grated [[Cookbook:Parmesan Cheese|Parmesan cheese]], grated or cut into small pieces
+
+== Procedure ==
+
+# Add sugar to warm water in a large bowl. Add yeast and wait 5 minutes.
+# Add eggs, flour, and salt. Mix with fork until [[Cookbook:Dough|dough]] becomes too stiff.
+# [[Cookbook:Kneading|Knead]] with hands until smooth, approximately five minutes, on floured surface. Add flour as needed if dough sticks to your hands.
+# Let dough rise in greased bowl for 30 minutes in a warm place or until doubled in size. Punch down dough, and let it rise again.
+# While dough is rising, mix ingredients for filling in separate bowl.
+# Preheat [[Cookbook:Oven|oven]] to 350°F.
+# When dough is ready, divide in half. With a [[Cookbook:Rolling Pin|rolling pin]], flatten dough until it is the size and shape of your cookie sheet. Carefully lay flattened dough on greased cookie sheet.
+# Cover dough with cheese filling prepared as above, spreading evenly to within ½ inch of the edge of dough. Roll out the remaining dough to the same size as shape. Cover cheese filling with second layer of dough. Moisten the edges of the dough with water and press to seal.
+# [[Cookbook:Baking|Bake]] at 350°F for 10 minutes. Butter the top layer of dough liberally. Return Khachapuri to oven and continue cooking until dough is golden brown.
+# Cut with a [[Cookbook:Pizza Cutter|pizza cutter]] or knife. Serve hot, cold, or reheated in the microwave!
+
+== Notes, tips, and variations ==
+
+* In Georgia, khachapuri is often made with homemade cheese. If you're feeling ambitious, find a simple cheese recipe and give it a shot! Also, if you would prefer not to make your own dough, a refrigerated tube of French bread dough (e.g. Pillsbury) work nicely as well.
+
+[[Category:Georgian recipes]]
+[[Category:Recipes for bread]]
+[[Category:Recipes using feta]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using granulated sugar]]
+[[Category:Recipes using provolone]]
+[[Category:Recipes using parmesan]]
+[[Category:Recipes using wheat flour]]

@@ -1,0 +1,65 @@
+__NOTOC__
+{{recipesummary|category=Pasta recipes|servings=8|time=1 hour|difficulty=2
+| Image = [[Image:SpaghettiandMeatballs.jpg|300px]]
+}}
+{{recipe}} | [[Cookbook:Cuisine of the United States|Cuisine of The United States]] | [[Cookbook:Pasta Recipes|Pasta Recipes]]
+{{nutritionsummary|1/8 of recipe (600 g)|8|789|131|14.5 g|6.3 g|107 mg|896 mg|96.5 g|5.8 g|10.2 g|68.2 g|52%|66%|30%|45%}}
+Most food historians agree that the union of '''spaghetti with meatballs''' is an American culinary invention with Italian roots. In the vast majority of cases, Old World-[[Cookbook:Cuisine of Italy|Italian cuisine]] calls for mixing heavy meat sauces with [[w:fettuccine|fettuccine]] and [[w:Tagliatelle|tagliatelle]] but not spaghetti.<ref>[http://culinariaitalia.wordpress.com/2008/06/29/ragu-alla-bolognese-authentic-recipe/ Info on pasta and meat sauce dishes on Wordpress.com]</ref>
+
+== Ingredients ==
+
+=== Pasta ===
+*3 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Salt|salt]]
+*1 ½ [[Cookbook:Gallon|gallons]] (5.76 [[Cookbook:Liter|liters]]) water
+*1 [[Cookbook:Pound|pound]] (454 [[Cookbook:Gram|g]]) dry [[Cookbook:Spaghetti|spaghetti]]
+
+=== Meatballs ===
+*2 pounds (907 g) ground [[Cookbook:Beef#Chuck|chuck]]
+*2 pounds (907 g) ground [[Cookbook:Pork|pork]] shoulder
+*12 [[Cookbook:Ounce|oz]] (340 g) seasoned [[Cookbook:Bread Crumb|bread crumbs]]
+*1 [[Cookbook:Cup|cup]] (240 [[Cookbook:Milliliter|ml]]) grated [[Cookbook:Parmesan Cheese|Parmesan cheese]] or [[Cookbook:Pecorino Romano Cheese|Romano cheese]]
+*¾ cup (180 ml) fresh [[Cookbook:parsley|parsley]], [[Cookbook:Mince|minced]]
+*4 [[Cookbook:Egg|eggs]]
+*1 ½ tbsp finely-[[Cookbook:Mince|minced]] [[cookbook:garlic|garlic]]
+*½ [[Cookbook:Teaspoon|tsp]] [[cookbook:garlic powder|garlic powder]] 
+*½ tsp [[Cookbook:Onion Powder|onion powder]]
+*½ tsp [[cookbook:Pepper|black pepper]]
+*½ tsp [[Cookbook:Salt|salt]]
+*[[cookbook:Olive Oil|Olive oil]]
+*3 [[Cookbook:Garlic|garlic]] cloves
+
+=== Sauce ===
+*½ [[Cookbook:Teaspoon|tsp]] crushed [[Cookbook:Red pepper flakes|red pepper flakes]]
+*4 cloves garlic, crushed or [[Cookbook:Chopping|chopped]]
+*1 small [[Cookbook:Onion|onion]], finely chopped 
+*1 [[Cookbook:Cup|cup]] (240 [[Cookbook:Milliliter|ml]]) [[cookbook:beef|beef]] [[cookbook:stock|stock]] 
+*28 [[Cookbook:Ounce|oz]] (794 [[Cookbook:Gram|g]]) crushed [[cookbook:tomato|tomatoes]]
+*1 handful chopped flat-leaf [[Cookbook:Parsley|parsley]]
+*10 leaves fresh [[cookbook:basil|basil]], torn or thinly sliced
+
+== Procedure ==
+#Fill your largest pot with 1½ gallons of water along with 3 tablespoons of salt. Place it over high heat on the stove.
+#Combine ground meat, bread crumbs, grated cheese, minced parsley and lightly beaten eggs (add eggs one at a time while stirring ingredients together). Sprinkle with minced garlic, 2 tablespoons of olive oil and seasonings. Then mix well until everything is combined.
+#Form meat mixture into meatballs, using an ice cream scoop or your hands, pressing lightly, just enough so that meat holds together, but not so much that the meat is very compressed or the meatballs will be tough and dry.
+#In a heavy [[Cookbook:Frying Pan|skillet]], heat olive oil over medium low heat. Add whole garlic cloves. Turn the garlic cloves to color them on all sides, then when lightly browned, press them into the oil; as they brown, remove them.
+#As soon as the oil is hot, add the meatballs to the skillet, leaving about 1½ inches between them so that they can be easily turned. Turn them often using a [[Cookbook:Spatula|spatula]] or large spoon so that they don't stick. Make sure there is enough oil in the pan (about ½ inch). You don't need extra virgin olive oil for this—any good quality Italian olive oil will do.
+#When the meatballs are browned well on all sides, remove from the pan and drain on [[Cookbook:Paper Towel|paper towels]]. Then add the next batch to the pan and continue until all are cooked.
+#Add the pasta to the water now boiling in your pot and cook until [[Cookbook:al dente|''al dente'']]. This should take about 12 minutes.
+#Add pepper flakes, garlic and finely chopped onion in the same oil you used to cook the meatballs. [[Cookbook:Sautéing|Sauté]] 5–7 minutes, until onion bits are soft. Add beef stock, crushed tomatoes, and herbs. Bring to a [[Cookbook:Simmering|simmer]] and cook for about 10 minutes. 
+#[[Cookbook:Mixing#Tossing|Toss]] hot, drained pasta with a few ladles of the sauce. Turn meatballs in remaining sauce. 
+#Place pasta on dinner plates. Top with meatballs, sauce and extra grated cheese.
+
+==References==
+{{reflist}}
+
+[[Category:Recipes using pasta and noodles]]
+[[Category:Featured recipes]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using basil]]
+[[Category:Recipes using parmesan]]
+[[Category:Recipes using pecorino]]
+[[Category:Recipes using chile flake]]
+[[Category:Recipes using bread crumb]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using beef broth and stock]]

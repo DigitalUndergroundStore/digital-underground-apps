@@ -1,0 +1,27 @@
+{{Recipe summary
+| Category = Chicken recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+This is a really easy chicken recipe for those people that don't have much experience in the kitchen.
+
+== Ingredients ==
+
+* 4 boneless skinless [[Cookbook:Chicken|chicken]] breasts
+* Kosher [[Cookbook:Salt|salt]]
+* Freshly-ground [[Cookbook:Black Pepper|black pepper]]
+* [[Cookbook:Olive Oil|Olive oil]]
+* Finely-grated [[Cookbook:Lemon|lemon]] [[Cookbook:Zest|zest]]
+
+== Procedure ==
+#[[Cookbook:Brush|Brush]] both sides of chicken with olive oil. Sprinkle both sides liberally with kosher salt, freshly ground black pepper, and finely grated lemon zest.
+#Place chicken on a 13x9-[[Cookbook:Inch|inch]] [[Cookbook:Baking Pan|baking pan]]. Insert a probe [[Cookbook:Thermometer|thermometer]] into one of the chicken breasts and [[Cookbook:Baking|bake]] in the center of a 400°F (200°C) [[Cookbook:Oven|oven]] until internal temperature reaches 165°F (75°C).
+#Remove to a plate and let rest 5 minutes. Serve warm.
+
+[[Category:Easy recipes]]
+[[Category:Recipes using chicken breast]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using lemon zest]]

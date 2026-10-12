@@ -1,0 +1,38 @@
+{{recipesummary|category=Meat recipes
+| Yield = 1 loaf|servings=4|time=1.5–2 hours|difficulty=2
+}}
+{{recipe}} | [[Cookbook:Meat Recipes|Meat Recipes]] | [[Cookbook:Midwestern cuisine|Midwestern U.S. cuisine]]
+
+==Ingredients==
+*2 [[Cookbook:Pound|lbs]] (900 [[Cookbook:Gram|g]]) [[Cookbook:Ground Beef|ground beef]]
+*2 [[Cookbook:Egg|egg]]s
+*1 clove [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+*1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Salt|salt]]
+*¼ teaspoon ground [[Cookbook:Allspice|allspice]]
+*Sprinkle of [[Cookbook:Curry Powder|curry powder]]
+*1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Worcestershire Sauce|Worcestershire sauce]]
+*1 [[Cookbook:Onion|onion]], [[Cookbook:Chopping|chopped]]
+*1–2 [[Cookbook:Celery|celery]] stalks, chopped
+*1 [[Cookbook:Cup|cup]] (240 g) [[Cookbook:Cracker|cracker]] crumbs
+*1–2 cans of mushroom soup
+
+==Procedure==
+#Combine the ground beef, eggs, minced garlic, salt, allspice, curry powder, and Worcestershire sauce.
+#Mix in the chopped onion, celery, and cracker crumbs.
+#Press the mixture into a standard [[Cookbook:Loaf Pan|loaf pan]].
+#Bake at [[Cookbook:Oven_temperatures|400°F]] (200°C) for about 10–20 minutes until browned on top.
+#Tilt the pan, and drain off any accumulated grease. Add the mushroom soup on top.
+#Bake another 1.5–2 hours until cooked through.
+
+[[Category:Recipes using ground beef]]
+[[Category:Midwestern U.S. recipes]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using allspice]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using crackers]]
+[[Category:Recipes using curry powder]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using onion]]

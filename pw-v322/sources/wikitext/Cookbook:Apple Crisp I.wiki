@@ -1,0 +1,47 @@
+__NOTOC__
+{{Recipe summary
+| Category = Recipes for dessert
+| Difficulty = 2
+| Image = [[File:Apple-crisp.jpg|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Cuisine of the United States|United States]] | [[Cookbook:Dessert|Dessert]]
+
+'''Apple crisp''' is a [[Cookbook:Dessert|dessert]] made up of a [[Cookbook:Baking|baked]] [[Cookbook:Apple|apple]] filling and a crispy crumb topping. It is similar to [[Cookbook:Cobbler|cobbler]], which has a [[Cookbook:Biscuit|biscuit]]-like ([[Cookbook:Cuisine of the United States|USA]] biscuit that is) or [[Cookbook:Cake|cake]]-like topping. It is also similar to a crumble, and the terms 'crisp' and 'crumble' may occasionally be used interchangeably. According to some traditions, crisp toppings are more likely to contain oats and/or nuts, while crumbles typically do not contain these ingredients. Cool room temperature is required to create a nice crisp topping. To serve apple crisp, spoon it into a bowl and, optionally, add [[Cookbook:Vanilla|vanilla]] [[Cookbook:Vanilla Ice Cream|ice cream]]. It also goes well with a glass of [[Cookbook:Milk|milk]].
+
+== Ingredients ==
+* 6 [[Cookbook:Cup|cups]] [[Cookbook:Slicing|sliced]] and cored [[Cookbook:Apple|baking apples]] (for example, Granny Smith)
+* ½ cup (100 [[Cookbook:Gram|g]]) all-purpose [[Cookbook:Flour|flour]]
+* ½ cup (100 g) [[Cookbook:rolled oats|rolled oats]]
+* ¾ [[Cookbook:Teaspoon|teaspoon]] (3 g) [[Cookbook:Cinnamon|cinnamon]]
+* ⅓ cup (75 g) cold [[Cookbook:Butter|butter]] or cold [[Cookbook:Margarine|margarine]]
+* ⅔–¾ cup (120–150 g) [[Cookbook:Brown Sugar|brown sugar]]
+
+== Procedure ==
+# In a medium bowl stir together flour, brown sugar, and oatmeal. If the room temperature is a bit warm, you should cool this mixture in the fridge.
+# Prepare the apples. This should be completed before mixing butter into the topping. It is helpful to choose apples that do not brown quickly; Granny Smith apples are a good choice. Do not use Red Delicious apples; they turn to mush. Place the apples into a 9-[[Cookbook:Inch|inch]] (23 [[Cookbook:Centimetre (cm)|cm]]) square [[Cookbook:Baking Dish|baking dish]]; glass is best.
+# Add the butter or margarine to the topping. Mix it via a slicing action, so that the butter or margarine forms tiny little chunks and does not melt or smear. A pair of butter knives, used like scissors, is good for this. You must work quickly once you start this step.
+# Sprinkle the topping onto the apples. You may pat it down just a bit.
+# [[Cookbook:Baking|Bake]] for about 30 minutes in a [[Cookbook:Oven temperatures|375 °F]] (190°C) [[Cookbook:Oven|oven]]. Do not remove the crisp before the top is dark brown. Black spots indicate burning. It is better to burn a few small spots, which you can then remove, than to risk undercooking the topping.
+
+==Notes, tips, and variations==
+* Any type of apple may be used, baking or sweet, or a mixture of types.
+* Cooked apple dishes are a good use for substandard apples, e.g. damaged, wrinkled & windfall.
+* Crisps can be made with most any sort of fruit. [[Cookbook:Pineapple|Pineapple]] is a good choice.
+* Some fruits, especially peaches, go better in a [[Cookbook:Cobbler|cobbler]].
+* Raisins can be added to the apples at the beginning, and ½ teaspoon of powdered ginger, or a sprinkling of nutmeg can also be put in.
+* [[Cookbook:Mixed Spice|Mixed spice]] is a perfect addition to apple dishes. This is more popular in Britain than the US.
+
+[[Category:Recipes using apple]]
+[[Category:Recipes using oat]]
+[[Category:Baking recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes with images]]
+[[Category:Vegetarian recipes]]
+[[Category:Kosher recipes]]
+[[Category:Recipes for dessert]]
+[[Category:Recipes using brown sugar]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using margarine]]

@@ -1,0 +1,38 @@
+{{Recipe summary
+| Category = Sandwich recipes
+| Yield = 8 sliders
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+'''Sliders''' are small hamburgers, typically only about 2 inches (5 cm) across.
+
+== Ingredients ==
+* 1 [[Cookbook:Pound|pound]] ground [[Cookbook:Beef#Chuck|chuck]]
+* 1 pound ground [[Cookbook:Beef#Loin|sirloin]]
+* 1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Salt|salt]]
+* 1 tsp freshly-ground [[Cookbook:Black Pepper|black pepper]]
+* 2 tsp [[Cookbook:Garlic Powder|garlic powder]]
+* 2 tsp dried [[Cookbook:Rosemary|rosemary]]
+* [[Cookbook:Olive Oil|Olive oil]]
+* 8 [[Cookbook:Each|ea]]. 3-[[Cookbook:Inch|inch]] hamburger or potato buns, split in half
+* [[Cookbook:Mayonnaise|Mayonnaise]]
+
+== Procedure ==
+#Preheat [[Cookbook:Oven|oven]] to 250°F and a grill or grill pan to 350°F.
+#Toast buns in hot oven. Set aside.
+#Combine salt, pepper, garlic powder, and rosemary. Set aside.
+#Combine chuck and sirloin, and place on a [[Cookbook:Parchment Paper|parchment]]-lined [[Cookbook:Baking Sheet|sheet pan]]. Cover with a sheet of [[Cookbook:Plastic Wrap|plastic wrap]] and [[Cookbook:Dough#Rolling|roll out]] until the meat fills the pan.
+#Remove plastic and, using a [[Cookbook:Pizza Cutter|pizza cutter]] or wheel, cut into 16 equal squares.
+#[[Cookbook:Brush|Brush]] patties with olive oil and season on both sides with seasoning mixture.
+#Cook patties on the preheated grill for 2–3 minutes per side.
+#Spread buns with mayonnaise. Place a patty on top of a bun half and top with the other half. Serve warm.
+
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using garlic powder]]
+[[Category:Recipes for hamburgers]]
+[[Category:Grilled recipes]]
+[[Category:Pan fried recipes]]
+[[Category:United States recipes]]
+[[Category:Recipes using mayonnaise]]

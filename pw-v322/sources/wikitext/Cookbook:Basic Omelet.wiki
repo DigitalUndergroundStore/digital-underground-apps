@@ -1,0 +1,80 @@
+__NOTOC__
+{{Recipe summary
+| Category = Egg recipes
+| Difficulty = 3
+| Image = [[File:Omelet With Fixings.jpg|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Breakfast Recipes|Breakfast Recipes]] | [[Cookbook:Omelet Recipes|Omelet Recipes]]
+
+An '''omelet''' or '''omelette''' is a breakfast food consisting of an egg-based wrapper around a filling of your choice. Omelettes take little time to complete. Always ensure your fillings are either pre-cooked, able to be finished in the time available, or edible when raw but warmed.
+
+==Ingredients==
+
+=== Omelet base ===
+* 2 [[Cookbook:Egg|eggs]] and 2 [[cookbook:Egg White|egg white]]s for a typical (6-inch/15 cm) pan
+* [[Cookbook:Oil|oil]]
+
+=== Fillings (suggested) ===
+* Pre-cooked [[Cookbook:Bacon|bacon]]
+* [[Cookbook:Broccoli|Broccoli]] or most other seasonal vegetables
+* [[Cookbook:Black Olive|Black olives]]
+* Chopped [[Cookbook:Tomato|tomatoes]], optionally with the seeds and pulp removed
+* [[cookbook:Pan Frying|Pan-fried]] [[cookbook:garlic|garlic]], [[cookbook:mushroom|mushroom]]s, and [[cookbook:fennel|fennel]]
+* [[cookbook:zucchini|Zucchini]] and [[cookbook:leek|leek]]s
+* [[cookbook:cheese|Cheese]], e.g. [[cookbook:Cheddar Cheese|cheddar]], [[cookbook:Pecorino Romano Cheese|Pecorino Romano]], goat's chevre and fresh herbs (e.g. [[cookbook:basil|basil]])
+* Any blue cheese
+* [[cookbook:spinach|Spinach]], goat cheese, and [[cookbook:Pine Nut|pinenut]]s
+* [[cookbook:Sautéing|Sautéed]] spinach
+* [[cookbook:pancetta|Pancetta]]
+* Wood-fired or lightly [[cookbook:Roasting|roasted]] baby [[cookbook:potato|potato]]es and fresh [[cookbook:herb|herb]]s
+* Wood-fired baby potatoes, mushrooms, and [[cookbook:Brie Cheese|Brie]]
+* Spanish sausage, mushrooms, and blue cheese
+* [[Cookbook:Smoked Salmon|Smoked salmon]], crispy potatoes and herb [[cookbook:Sour Cream|sour cream]]
+* Smoked salmon, Brie, and fresh herbs
+* [[Cookbook:Shrimp|Prawns]] and Brie with [[Cookbook:Fennel|fennel]] confit
+* Pancetta, bocconcini, and basil
+* [[Cookbook:Feta Cheese|Feta cheese]], [[Cookbook:Garlic|garlic]], and cheddar cheese
+
+==Procedure==
+An omelette can be served folded in half or thirds.
+
+===If you only have a normal frying pan===
+#Chop up the filling.
+#Mix the eggs well. You may add [[Cookbook:Milk|milk]] to thin them (up to 1 Tbsp for each egg).
+#Pour the eggs into a cool (i.e. room temperature) [[Cookbook:Frying Pan|frying pan]].
+#Heat the pan, stirring constantly.
+#Stop stirring as soon as solid egg begins to form.
+#As the egg solidifies, pry it loose around the edges.
+#If you didn't stir enough earlier, you may have difficulty solidifying the egg on top. In this case, you may pry up an edge while tilting the pan to let liquid egg flow under the solid egg. It is best to avoid this problem though.
+#Keep loosening the egg from the edges until you can slide it around.
+#Now you need to flip the egg without ripping it. If you have a very wide turner (or two smaller ones), you can use that. Otherwise, you'll have to flip the egg in the air. To do so, rapidly move the pan away from you then up, back toward you a bit, and then very rapidly downward. Catch the egg in the pan.
+#Place filling on the egg.
+#When the egg is done, wrap it around the filling. Serve.
+
+===If you have a large flat professional-style cooktop===
+#Chop up the filling.
+#Mix the eggs well. You may add milk or cream to thin them.
+#Heat your griddle (you're doing this without a pan, on the cooktop).
+#Pour the eggs onto the griddle, using a spiral motion to spread them wide and thin.
+#When the egg has set, gently add fillings on top.
+#Using a large (3 x 12-[[Cookbook:Inch|inch]], or 75 x 300 [[Cookbook:Mm|mm]]) [[Cookbook:Spatula|turner]], fold the egg over the filling.
+#When you think the bottom has cooked, flip the omelette over to cook the other side.
+
+==Notes, tips, and variations==
+*Before non-stick coating became common, many cooks would keep a special omelette pan which would not be used for any other purpose. '''It is important to use a very clean pan, especially if it is not a "non-stick" pan'''. If keeping a pan solely for omelettes, after cooking, wipe well with a clean cloth or paper-towel and then apply a thin coating of clean vegetable oil.
+*You can use 3 eggs and a dash of milk or [[Cookbook:Cream|cream]] instead of the 2 eggs and 2 egg whites.
+*Try frying the omelette in [[Cookbook:Butter|butter]].
+*After folding the omelette, you can top with grated cheddar and place frying pan under a grill until the cheese begins to brown.
+*You can garnish with [[Cookbook:Cream Cheese|cream cheese]], sour cream, or other thickened dairy product  along with a fragrant sprig of a fresh herb or edible flower.
+*Try frying the omelet in excess oil and butter (covering the top).
+*Put the entire frying pan under a pre-heated grill to melt cheese before folding, and make the top go golden.
+*To increase protein content, one can add additional egg whites (which are mostly protein) separating out the egg yolk (which has a grams of fat to protein ratio of 1:1)
+* Cottage cheese or quark are possible high-protein alternatives to cheese as fillings.
+
+[[Category:Recipes for omelettes|{{PAGENAME}}]]
+[[Category:Recipes using egg]]
+[[Category:Breakfast recipes|{{PAGENAME}}]]
+
+[[hy:Եփութուխ:Ձվածեղ]]
+[[nl:Kookboek/Omelet]]

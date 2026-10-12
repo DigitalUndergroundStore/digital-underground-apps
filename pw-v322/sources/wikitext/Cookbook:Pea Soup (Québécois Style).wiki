@@ -1,0 +1,85 @@
+__notoc__
+{{Recipe summary
+|Category = Soup recipes
+|Difficulty = 3
+|image = [[File:Quebecois Pea Soup.png|alt=Quebecois-style pea soup. The soup is yellow with shredded ham-hock, garnished with green parsley and specks of black pepper.|300px|A serving bowl of Quebecois-style pea soup. ]]
+|Servings = 6–8
+|Time = Prep: 40 minutes<br>Cooking: 3.5–4 hours (plus optional soaking time for peas)
+}}
+
+{{Recipe
+|name=Pea Soup (Québécois Style)
+|image=
+|time=Prep: 30 min; Cook: 3.5–4 h; Total: 4–5 h (plus optional soaking time for peas)
+|servings=6–8
+|summary=Traditional Québécois pea soup made with yellow split peas, smoked ham hocks, and seasoned with thyme and bay leaf. Optional miso adds extra umami.
+}}
+
+This [[Cookbook:Soup|soup]] recipe attempts to capture the key elements of traditional Québécois pea soup, which is an historic part of the Cuisine of Quebec. Although pea soup is present in many European cuisines, Québécois pea soup has several distinctions: the base employs a simple mirepoix of celery, carrot, and onion, only yellow split peas are used, the soup is seasoned with thyme, and when a meat is added, it is ham. 
+
+One optional modern adjustment in this recipe is to add two tablespoons of miso, which enhances the umami.
+
+==Ingredients==
+
+===Broth===
+* 2 [[Cookbook:Each|ea]]. (1.5–2 [[Cookbook:Pound|lbs]] / 700–900 [[Cookbook:Gram|g]]) raw [[Cookbook:ham|ham]] hocks, on the bone
+* 1 large [[Cookbook:Onion|onion]], halved
+* 1 [[Cookbook:Carrot|carrot]], cut into large chunks
+* 1 stalk [[Cookbook:Celery|celery]] (optional)
+* 2 sprigs fresh [[Cookbook:Thyme|thyme]] (or 1 tsp dried)
+* 1 [[Cookbook:Bay Leaf|bay leaf]]
+* 8–10 whole black [[Cookbook:Peppercorn|peppercorns]]
+* 10 [[Cookbook:Cup|cups]] (2.4 L) cold water
+
+===Soup===
+* 2 cups (400 g) dried yellow split [[Cookbook:Pea|peas]], soaked overnight and drained
+* 1 large [[Cookbook:Onion|onion]], finely [[Cookbook:Dice|diced]]
+* 2 medium [[Cookbook:Carrot|carrot]], diced
+* 1 stalk [[Cookbook:Celery|celery]], diced (optional)
+* 2 cloves [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+* 1 tsp fresh thyme leaves
+* 2–3 Tbsp [[Cookbook:Miso|miso]] paste (optional)
+* Freshly ground [[Cookbook:Pepper|black pepper]], to taste
+* [[Cookbook:Salt|Salt]]
+
+===Optional garnish===
+* Chopped [[Cookbook:Parsley|parsley]]
+* Drizzle of olive or canola oil
+
+==Procedure==
+
+# Preheat oven to 200 °C (400 °F). [[Cookbook:Roasting|Roast]] ham hocks 30–40 min until browned, turning once partway through.
+# In a large pot, combine roasted ham hocks, onion, carrot, celery, thyme, bay leaf, peppercorns, and water.
+# Bring to a [[Cookbook:Boiling|boil]], then reduce to [[Cookbook:Simmering|simmer]], skimming off any foam that rises to the top.
+# Simmer 2.5–3 hours until meat is tender and broth is flavorful.
+# Remove ham hocks and cool slightly. Remove skin, bone, and excess fat from ham; shred meat into bite-sized pieces.
+# Strain the broth and discard solids. You should have about 8 cups.
+# Return strained broth to pot, and add soaked split peas, diced onion, carrot, celery, garlic, and thyme leaves.
+# Bring to gentle simmer and cook 60–75 minutes until peas are very tender.
+# If using miso, dissolve paste in ½ cup hot broth (do not boil miso directly) and stir into soup.
+# Add shredded ham and simmer 10–15 minutes.
+# Add salt and black pepper to taste.
+# For rustic soup, leave as is. For creamier texture, blend ⅓–½ of the soup with an immersion [[Cookbook:Blender|blender]] and stir to combine.
+# Ladle hot soup into bowls. Serve with crusty rye, sourdough, or brown bread and optional drizzle of olive oil, canola oil, or sprinkle of parsley.
+
+== Notes, tips, and variations ==
+* The finished soup keeps for 5 days in the refrigerator. It also freezes well for up to 3 months; reheat gently and add water or broth if too thick.
+* For a simpler recipe, substitute cubes of baked ham for the ham hocks
+
+== See also ==
+
+* [[Cookbook:Erwtensoep (Split Pea Soup)|Erwtensoep (Split Pea Soup)]]
+* [[Cookbook:Yellow Split Pea Soup|Yellow Split Pea Soup]]
+
+[[Category:Recipes for soup]]
+[[Category:Recipes using ham]]
+[[Category:Recipes using onion]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using thyme]]
+[[Category:Recipes using bay leaf]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using miso]]
+[[Category:Recipes using parsley]]

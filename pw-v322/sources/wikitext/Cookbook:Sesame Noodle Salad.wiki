@@ -1,0 +1,35 @@
+{{Recipe summary
+| Category = Noodle recipes
+| Difficulty = 1
+}}
+
+{{recipe}}
+
+From the original recipe contributor:<blockquote>"The salad recipe reminds me of those quiet and peaceful Sunday brunches at the local corner bakery and is an attempt to duplicate the bakery's original, secret recipe."</blockquote>
+
+== Ingredients ==
+
+*  16 [[Cookbook:Oz|oz]] (1 [[Cookbook:Pound|lb]]) [[Cookbook:Pasta|angel hair pasta]]
+*  ⅛ [[Cookbook:Cup|cup]] [[Cookbook:Sesame Oil|sesame oil]]
+*  [[Cookbook:Olive Oil|Olive oil]], if needed
+*  1 [[Cookbook:Tablespoon|tbsp]] table [[Cookbook:Salt|salt]]
+*  1 [[Cookbook:Cup|cup]] or more finely-[[Cookbook:Chopping|chopped]] fresh [[Cookbook:Cilantro|cilantro]]
+*  ½ cup chopped fresh [[Cookbook:Scallion|scallions]]
+*  1 ½ cups thinly-[[Cookbook:Slicing|sliced]] fresh [[Cookbook:Carrot|carrots]]
+
+== Procedure ==
+
+#  Cook angel hair pasta according to package instructions, then drain.
+#  Add sesame oil, olive oil, and salt (to taste) to drained pasta
+#  Toss in cilantro, scallions, and carrots.
+#  Chill before serving.
+
+[[Category:Recipes using pasta]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes for pasta salad]]
+[[Category:Recipes using pasta and noodles]]
+[[Category:Recipes using sesame]]
+[[Category:Refrigerated recipes]]
+[[Category:Recipes using sesame oil]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using green onion]]

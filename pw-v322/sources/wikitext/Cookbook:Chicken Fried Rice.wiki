@@ -1,0 +1,41 @@
+{{Recipesummary|category=Rice recipes|servings=5|time=30 minutes|difficulty=2|energy=220 Kcal}}
+{{Recipe}}
+
+==Ingredients==
+
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Butter|butter]]
+* 3 cloves [[Cookbook:Garlic|garlic]], crushed and [[Cookbook:Mince|minced]]
+* 2 red [[Cookbook:Chiles|chiles]], cut into 1 [[Cookbook:Centimetre (cm)|cm]] pieces
+* 2 [[Cookbook:Scallion|scallion]], cut into 1 cm pieces
+* 200 g [[Cookbook:Carrot|carrot]]
+* 200 g minced raw [[Cookbook:Chicken|chicken]]
+* 1 cup (550 g) cooked [[Cookbook:Rice|rice]]
+* 2 tbsp [[Cookbook:Oyster sauce|oyster sauce]]
+* 1¼ tbsp [[Cookbook:Worcestershire Sauce|Worcestershire sauce]]
+* 1 tbsp [[Cookbook:Salt|salt]]
+* 1 tbsp [[Cookbook:Pepper|pepper]]
+
+=== Sides (optional) ===
+* [[Cookbook:Cucumber|Cucumber]]
+* [[Cookbook:Tomato|Tomato]]
+* [[Cookbook:Fried Eggs|Fried egg]]
+* [[Cookbook:Pickle|Pickles]]
+
+==Procedure==
+
+# Melt the butter in a non-stick [[Cookbook:Frying Pan|pan]]. [[Cookbook:Frying|Fry]] the garlic, chilli, and scallion, stirring, for 15 seconds.
+# Add the chicken and carrot. Cook until the chicken changes color from pink to white.
+# Add the rice, then the oyster sauce, Worcestershire sauce, salt, and pepper. Continue to cook until well-combined.
+# Serve hot with the sides.
+
+[[Category:Recipes using rice]]
+[[Category:Recipes for fried rice]]
+[[Category:Recipes using ground chicken]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using chile]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using oyster sauce]]
+[[Category:Recipes using worcestershire sauce]]
+[[Category:Recipes using cucumber]]
+[[Category:Recipes using green onion]]

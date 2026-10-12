@@ -1,0 +1,57 @@
+__NOTOC__
+{{recipesummary
+| Category = Potato recipes
+| Servings = 1 serving
+| Time = 15–60 minutes
+| Rating = 1
+| Energy = 
+| Difficulty = 1
+| Image = [[Image:Microwaved potatoes.JPG|300px]]
+}}{{recipe}} | [[Cookbook:Cooking techniques|Cooking techniques]] | [[Cookbook:Camp Cooking|Camp Cooking]] | [[Cookbook:Microwaving|Microwave Cooking]]
+
+Potatoes are perfect for camping—they don't take up space in the cooler, and cooked in foil they are easy to prepare.    
+
+==Ingredients==
+* 1 large baking [[cookbook:potato|potato]] 
+* Cooking [[cookbook:oil|oil]] 
+* [[cookbook:salt|Salt]]
+* [[cookbook:butter|Butter]] or [[cookbook:Sour Cream|sour cream]] (optional)
+
+==Procedure==
+
+=== Cleaning and Preparation ===
+You must prepare your potatoes before using a method below, or the potatoes may cook incorrectly or explode itself.
+
+# Scrub potato on all sides to clean the surface.
+# Pierce skin of potato with a fork or small-tipped object to create holes for inside pressure.
+
+===Camping variation=== 
+#Clean and prepare potatoes as above.
+#Cook over medium-hot coals for 45 minutes or until soft.
+#Serve with salt and butter or sour cream.
+
+===Microwave variation===
+# Clean and prepare potatoes as above, but wrap them in plastic wrap, not foil. Be sure to poke the potato with a fork to make sure it is cooked evenly and does not explode in the microwave due to pressure.
+# Place a piece of paper towel in the [[Cookbook:Microwave|microwave]], and microwave potatoes on high for 8 minutes. Potatoes will be extremely hot when finished. 
+# Cut potato into four and serve with toppings of your choice.
+
+===Oven variation===
+# Preheat [[Cookbook:Oven|oven]] to 190°C (375°F).
+# Clean and prepare potatoes as above.
+# Place the potatoes in the oven.
+# Cook for 1 hour.
+# Remove when cooked. Puncture potato and separate skin from flesh.
+
+== Notes, tips, and variations ==
+
+* Other possible toppings include spicy [[cookbook:beans|beans]], [[cookbook:avocado|avocado]], [[cookbook:salsa|salsa]], [[Cookbook:Bacon|bacon]] bits, [[Cookbook:Mushroom|mushrooms]] grated [[cookbook:cheese|cheese]]... or whatever is left in the fridge!
+
+== Warnings ==
+* When cooking is initially completed, handle the hot potato with care.
+
+[[Category:Recipes using potato|{{PAGENAME}}]]
+[[Category:Baked recipes]]
+[[Category:Camping recipes|{{PAGENAME}}]]
+[[Category:Microwave recipes]]
+[[Category:Side dish recipes]]
+[[Category:Vegan recipes]]

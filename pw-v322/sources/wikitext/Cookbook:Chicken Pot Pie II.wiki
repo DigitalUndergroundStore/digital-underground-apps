@@ -1,0 +1,48 @@
+{{Recipe summary
+| Category = Pie recipes
+| Difficulty = 3
+}}
+
+{{recipe}} | [[Cookbook:Meat Recipes|Meat Recipes]]
+
+==Ingredients==
+*1 package [[Cookbook:Pie Crust|pie crust]]s
+*⅓ [[Cookbook:Cup|cup]] [[Cookbook:Margarine|margarine]] or [[Cookbook:Butter|butter]]
+*⅓ cup [[Cookbook:Chopping|chopped]] [[Cookbook:Onion|onion]]
+*⅓ cup all-purpose [[Cookbook:Flour|flour]]
+*½ [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Salt|salt]]
+*¼ teaspoon [[Cookbook:Pepper|pepper]]
+*1 ½ cups [[Cookbook:Chicken Broth|chicken broth]]
+*⅔ cup [[Cookbook:Milk|milk]]
+*3 cups [[Cookbook:Chicken|chicken]], cooked
+*1 cup frozen [[Cookbook:Corn|corn]], thawed
+*1 cup frozen [[Cookbook:Pea|pea]]s, thawed
+
+==Procedure==
+#Heat [[Cookbook:Oven|oven]] to 425°[[Cookbook:Fahrenheit|F]].
+#Prepare pie crusts as directed on package for a two-crust pie in a 9-[[Cookbook:Inch|inch]] [[Cookbook:Pie and Tart Pans|pie pan]].
+#In a medium [[Cookbook:Saucepan|saucepan]], melt margarine over medium heat.
+#Add onion; cook 2 minutes or until tender.
+#Stir in flour, salt, and pepper until well-blended.
+#Gradually stir in broth and milk; cook, stirring constantly, until bubbly and thickened.
+#Add chicken, corn, and peas; remove from heat.
+#Spoon chicken mixture into crust-lined pan.
+#Top with second crust and [[Cookbook:Pie Crust Edges|flute]]; cut slits in several places.
+#[[Cookbook:Baking|Bake]] for 30 to 40 minutes or until crust is golden-brown.
+#Let stand 5 minutes before serving.
+
+==See also==
+*[[Cookbook:Chicken Pot Pie I]]
+
+[[Category:United States recipes]]
+[[Category:Recipes using chicken|Chicken Pot Pie II]]
+[[Category:Recipes for pot pie|Chicken Pot Pie II]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using corn]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using chicken broth and stock]]
+[[Category:Recipes using margarine]]
+[[Category:Recipes using cow milk]]

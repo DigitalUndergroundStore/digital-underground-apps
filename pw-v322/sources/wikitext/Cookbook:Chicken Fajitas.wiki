@@ -1,0 +1,35 @@
+{{Recipe summary
+| Category = Chicken recipes
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Tex-Mex cuisine|Tex-Mex cuisine]]
+
+==Ingredients==
+*1 Tbsp [[Cookbook:Olive Oil|olive oil]]
+*1–2 [[Cookbook:Pound|lb]] (½–1 [[Cookbook:Kilogram|kg]]) skinless, boneless [[Cookbook:Chicken|chicken]] breast
+*1 red [[Cookbook:Bell Pepper|bell pepper]]
+*1 green bell pepper
+*½ yellow [[Cookbook:Onion|onion]]
+*1 [[Cookbook:Teaspoon|tsp]] ground [[Cookbook:Cumin|cumin]] (or to taste)
+*1 Tbsp [[Cookbook:Red pepper flakes|crushed red pepper]] (or to taste)
+
+==Procedure==
+#Cut chicken into roughly 1x1-inch (2.5 x 2.5 cm) pieces.
+#[[Cookbook:Marinating|Marinate]] the chicken with a spoonful of turmeric, salt and black pepper.
+#Cook chicken in olive oil, cumin and red pepper over high heat in a large [[Cookbook:Skillet|skillet]] or [[Cookbook:Wok|wok]].
+#While meat is cooking, [[Cookbook:Chopping|chop]]/[[Cookbook:Julienne|julienne]] vegetables peppers and onion).
+#When meat is completely cooked, add vegetables, stirring frequently so that all are evenly cooked.
+#Remove from heat when vegetables are soft.
+#Serve with [[Cookbook:Tortilla|tortilla]] shells and toppings such as [[Cookbook:Cheese|cheese]], [[Cookbook:Sour Cream|sour cream]], [[Cookbook:Lettuce|lettuce]], [[Cookbook:Tomato|tomato]], onions, and/or [[Cookbook:Guacamole|guacamole]].
+
+[[Category:Tex-Mex recipes]]
+[[Category:Recipes using chicken breast]]
+[[Category:Recipes using onion]]
+[[Category:Pan fried recipes]]
+[[Category:Recipes using tortilla]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using red bell pepper]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using chile flake]]
+[[Category:Recipes using ground cumin]]

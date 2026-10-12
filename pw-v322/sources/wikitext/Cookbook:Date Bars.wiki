@@ -1,0 +1,48 @@
+{{Recipe summary
+| Category = Recipes for dessert
+| Difficulty = 3
+| Image = [[File:CookbookDatebar.jpg|300px]]
+}}
+
+{{recipe}}| [[Cookbook:Cuisine of the United States|Cuisine of the United States]] | [[Cookbook:Dessert|Dessert]]
+
+'''Date bars''' have crumbly upper and lower surfaces with a [[Cookbook:Date|date]] filling in the middle. Also see the [[Cookbook:Date Squares|Date Squares]] recipe.
+
+==Ingredients==
+
+*¼ [[Cookbook:Cup|cup]] white granulated [[Cookbook:Sugar|sugar]]
+*3 cups (1 [[Cookbook:Pound|pound]]) cut-up [[Cookbook:Date|dates]]
+*1½ cup water
+*¼ cup [[Cookbook:Shortening|shortening]]
+*½ cup [[Cookbook:Butter|butter]] or [[Cookbook:Margarine|margarine]]
+*1 cup [[Cookbook:Brown Sugar|brown sugar]]
+*½ [[Cookbook:Teaspoon|tsp]] [[Cookbook:Baking Soda|baking soda]]
+*1¾ cup [[Cookbook:Flour|flour]]
+*1½ cup quick-cooking [[Cookbook:Oatmeal|oatmeal]]
+*1 tsp [[Cookbook:Salt|salt]]
+
+==Procedure==
+
+#Mix the dates, sugar, and water in a [[Cookbook:Saucepan|saucepan]].
+#Cook over low heat, stirring constantly for about 10 minutes or until thickened. Cool.
+#[[Cookbook:Creaming|Cream]] together the butter, shortening, and brown sugar in a separate container.
+#Mix the flour, salt, baking soda, and oats into the crumble crust mix.
+#Grease a 13x9-inch pan.
+#Evenly press half of the crumble mixture into the bottom of the pan.
+#Spread the date filling on top.
+#Evenly place remaining crumble mixture into the pan, pressing lightly.
+#[[Cookbook:Baking|Bake]] for 25 to 30 minutes at [[Cookbook:Oven temperatures|400°F]], or until light brown.
+#Cut into bars while still warm.
+
+[[Category:Recipes for cookies]]
+[[Category:Recipes for dessert]]
+[[Category:Recipes using date]]
+[[Category:Baking recipes]]
+[[Category:Recipes with images]]
+[[Category:Recipes using butter]]
+[[Category:Recipes for bars]]
+[[Category:Recipes using baking soda]]
+[[Category:Recipes using brown sugar]]
+[[Category:Recipes using granulated sugar]]
+[[Category:Recipes using wheat flour]]
+[[Category:Recipes using margarine]]

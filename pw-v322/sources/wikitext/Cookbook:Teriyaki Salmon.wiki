@@ -1,0 +1,42 @@
+{{Recipe summary
+| Category = Fish recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 4 [[Cookbook:Each|ea]]. (24 [[Cookbook:Ounce|ounces]]) wild [[Cookbook:Salmon|salmon]] filets with skin, pin bones removed
+* ½ [[Cookbook:Cup|cup]] [[Cookbook:Soy Sauce|soy sauce]]
+* 1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Mince|minced]] [[Cookbook:Ginger|ginger]]
+* 2 [[Cookbook:Teaspoon|tsp]] minced [[Cookbook:Garlic|garlic]]
+* 2 tbsp rice [[Cookbook:Wine vinegar|wine vinegar]]
+* 1 ½ tsp [[Cookbook:Grater|grated]] [[Cookbook:Lemon|lemon]] [[Cookbook:Zest|zest]]
+* 1 tbsp light [[Cookbook:Brown Sugar|brown sugar]]
+* 2 Thai bird [[Cookbook:Chiles|chiles]], stemmed
+* [[Cookbook:Sesame Oil|Sesame oil]]
+
+== Equipment ==
+* Kettle grill
+* Large chimney starter
+* Natural chunk or hardwood lump charcoal
+* Kitchen towel tied into a roll and soaked in vegetable oil
+* Gallon-size resealable plastic bags
+* [[Cookbook:Paper Towel|Paper towels]]
+
+== Procedure ==
+#Combine all ingredients except salmon in a [[Cookbook:Blender|blender]] until smooth. Pour into a plastic bag and add salmon. Toss to coat, seal, removing as much air as possible, and refrigerate up to 4 hours.
+#Remove salmon from marinade and pat dry with paper towels. [[Cookbook:Brush|Brush]] all sides with oil.
+#Preheat 4½ pounds charcoal in starter. Once hot, disperse evenly around bottom of grill. Reapply grate and once hot, swab with towel.
+#Add salmon to hottest part of grill skin side up, and cook 3–5 minutes per side for medium, rotating 90 degrees halfway to make grill marks.
+#Remove to a plate and cover tightly with [[Cookbook:Aluminium Foil|aluminum foil]]. Let rest 5 minutes before serving.
+
+[[Category:Recipes using salmon]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using fresh ginger]]
+[[Category:Grilled recipes]]
+[[Category:Main course recipes]]
+[[Category:Japanese recipes]]
+[[Category:Recipes using light brown sugar]]
+[[Category:Recipes using bird chile]]
+[[Category:Recipes using lemon zest]]

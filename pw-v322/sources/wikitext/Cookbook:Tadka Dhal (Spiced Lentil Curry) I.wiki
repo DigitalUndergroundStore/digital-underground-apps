@@ -1,0 +1,45 @@
+{{Recipe summary
+| Category = Indian recipes
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Cuisine of India|Cuisine of India]]
+
+== Ingredients ==
+* 4 [[Cookbook:Each|ea]]. (400 [[Cookbook:Gram|g]]) medium [[Cookbook:Onion|onions]], [[Cookbook:Chopping|chopped]] as fine as possible
+* 1 small [[Cookbook:Chili Pepper|chilli]]
+* 2 large [[Cookbook:Garlic|cloves of garlic]], chopped finely or crushed
+* [[Cookbook:Ginger|Ginger]] (about the same as the garlic in size), finely chopped 
+* 250 g split [[Cookbook:Lentil|red lentils]]
+* 3 tins, chopped [[Cookbook:Tomato|tomatoes]]
+* 1 [[Cookbook:Bouillon Cube|stock cube]]
+* [[Cookbook:Water|Water]] as necessary
+* 12 whole [[Cookbook:Cardamom|cardamom pods]]
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Garam Masala|garam masala]]
+* 1 teaspoon [[Cookbook:Paprika|paprika]]
+* 12 grinds of the [[Cookbook:Pepper|black pepper]]
+* ¼ teaspoon [[Cookbook:Mustard|mustard seed]]
+* Fresh [[Cookbook:Chili Pepper|chilli]] to taste
+
+== Procedure ==
+
+# Cook the ingredients in the order listed, giving the onions some time before adding everything else. 
+# Put the lid on and cook until the lentils are cooked to your preference.
+
+==See also==
+*[[Cookbook:Methi Tadka Dal|Methi Tadka Dal]]
+*[[Cookbook:Tadka dhal|Tadka dhal]]
+
+[[Category:Recipes using red lentil]]
+[[Category:Recipes using onion]]
+[[Category:Recipes using cardamom]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Indian recipes]]
+[[Category:Recipes for dal]]
+[[Category:Recipes using dehydrated broth]]
+[[Category:Recipes using paprika]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using garam masala]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using fresh ginger]]
+[[Category:Recipes using mustard seed]]

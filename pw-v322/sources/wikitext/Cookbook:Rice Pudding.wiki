@@ -1,0 +1,43 @@
+{{Recipe summary
+| Category = Pudding recipes
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Dessert|Dessert]] | [[Cookbook:Rice|Rice]]
+
+This is a simple '''rice pudding''' recipe, dating to at least 1965, in Columbus Ohio USA.  
+
+== Ingredients ==
+*2.8 [[Cookbook:Liter|liters]] (12 [[Cookbook:Cup|cups]] or 94 [[Cookbook:Fluid Ounce|fl oz]] or ¾ [[Cookbook:Gallon|gallon]]) [[Cookbook:Milk|milk]]
+*4 [[Cookbook:Eggs|eggs]]
+*155 [[Cookbook:Gram|g]] (⅔ [[Cookbook:Cup|cup]] / 5 ½ [[Cookbook:Ounce|oz]]) white granulated [[Cookbook:Sugar|sugar]]
+*680 g (3 cups / 24 oz) cooked [[Cookbook:Rice|rice]] (brown rice works as well as, if not better than, white rice)
+*220 g (1 cup / 8 oz) [[Cookbook:Raisin|raisins]] or [[Cookbook:Zante currant|Zante currants]], if desired
+*[[Cookbook:Cinnamon|Cinnamon]], to taste
+*[[Cookbook:Nutmeg|Nutmeg]], to taste
+*[[Cookbook:Vanilla Extract|Vanilla extract]], to taste
+*⅛ [[Cookbook:Teaspoon|tsp]] ground [[Cookbook:Cardamom|cardamom]] or to taste (optional)
+
+== Procedure ==
+#Preheat the [[Cookbook:Oven|oven]] to [[Cookbook:Oven temperatures|165°C (325°F or Gas Mark 3)]].
+#Mix milk, eggs, sugar in a large (about 3-liter or 3-[[Cookbook:Quart|quart]]) [[Cookbook:Baking Dish|casserole dish]] until thoroughly mixed and frothy.  
+#Mix in cinnamon, nutmeg and vanilla.  
+#Mix in rice, then put in raisins. Do not mix in raisins, or they will all wind up on the bottom!
+#Place casserole in a larger [[Cookbook:Baking Pan|baking pan]] with about 2.5 [[Cookbook:Centimeter|cm]] (1 [[Cookbook:Inch|inch]]) of water. This will keep the bottom from cooking too fast and burning.
+#[[Cookbook:Baking|Bake]] in oven until set (about 1.5 hours).
+
+==Notes, tips, and variations==
+
+* Putting less milk than rice in the dish will cause the milk to evaporate, thus creating a rice dish, rather than a pudding. For every cup of rice, 0.5–1 liter (2–3 cups or 16–20 fl oz or ¼ gallon) of milk should be added.
+
+[[Category:Recipes using rice]]
+[[Category:Dessert recipes]]
+[[Category:Recipes using raisin]]
+[[Category:Baking recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes for rice pudding]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using granulated sugar]]
+[[Category:Recipes using cardamom]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using milk]]

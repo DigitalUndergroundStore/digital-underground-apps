@@ -1,0 +1,56 @@
+__NOTOC__{{Recipe summary
+| Category = Sandwich recipes
+| Difficulty = 2
+| Image = [[File:Quesadilla.jpg|300px]]
+}}
+
+{{recipe}} | [[Cookbook:Appetizers|Appetizers]] | [[Cookbook:Cuisine of Mexico|Mexico]] | [[Cookbook:Southwestern cuisine|Southwestern U.S. cuisine]] | [[Cookbook:Tex-Mex cuisine|Tex-Mex cuisine]]
+
+Similar to a sandwich, the amount of ingredients for a '''quesadilla''' depends on how many you are serving and how big you want to make a particular quesadilla. Here are ingredients for one serving using the typical size of tortillas most commonly available in stores in the southwestern U.S. (and in many other areas and countries). Other locally available thin flat breads may work instead of work of tortillas, but please know, the tortillas are intended to be similar to a 'wrap' to allow the eating of the filling.
+
+==Ingredients==
+
+=== Base ===
+*2 flour [[Cookbook:Tortilla|tortillas]], 6 [[Cookbook:Inch|inches]] (15 [[Cookbook:Centimetre (cm)|cm]]) in diameter
+*⅓ [[Cookbook:Cup|cup]] [[Cookbook:Grating|grated]] meltable [[Cookbook:cheese|cheese]] (preferably a [[Cookbook:Monterey Jack Cheese|Monterey Jack]] and [[Cookbook:Cheddar Cheese|cheddar]] blend or a Tex Mex blend) 
+*¼ cup filling (see options below)
+*[[Cookbook:Cooking Spray|Cooking spray]]
+
+=== Fillings ===
+*[[Cookbook:Salsa|Salsa]]
+* [[Cookbook:Sarza Criolla|Sarza criolla]]
+* [[Cookbook:Chiles|Chile peppers]]
+* [[Cookbook:Chopping|Chopped]] [[Cookbook:Tomato|tomatoes]] and [[Cookbook:Cilantro|cilantro]]
+* Cooked [[Cookbook:Meat and Poultry|meat or seafood]]
+* Fresh [[Cookbook:Spinach|spinach]], washed and torn into small pieces
+* Canned [[Cookbook:Black Bean|black beans]], rinsed and well drained
+
+== Procedure ==
+#Warm both tortillas in the [[Cookbook:Microwave|microwave]] to the point of flexibility, keeping one warm.
+#Preheat a [[Cookbook:Frying Pan|frying pan]] or [[Cookbook:Griddle|griddle]] over medium-low heat. Grease with oil or cooking spray, and place one of the tortillas in the pan.
+#Sprinkle the shredded cheese over the tortilla.
+#Top the cheese with any combination of the fillings, ideally warmed and very well drained. Make sure they are evenly distributed across the tortilla.
+# Allow the cheese to melt. The tortilla may brown in spots but it should not be cooked to the point of changing color substantially.
+#Press the other tortilla over the top of the tortilla in the pan, making sure it sticks a bit.
+#Flip the quesadilla and allow to warm until it joins as a unit.
+#Remove from pan and cut in eight wedges.
+#Eat immediately, or remove to a fairly low-temperature 'keep warm' area, below the melting temperature of the cheese.
+==Notes, tips, and variations==
+
+* Quesadillas are not usually not very good re-heated.
+* In some regions of Mexico a quesadilla is a simple corn tortilla with cheese, non-fried.
+* One traditional quesadilla filling consists of grilled chicken, beef, or pork, finely minced, sprinkled with a teaspoon of finely minced onion and half of teaspoon of cilantro, with a small amount of some lime squeezed on top.
+* Corn tortillas can be used in a pinch at home, but they may not hold together or work as well as flour tortillas.
+* See [[Cookbook:Crab Quesadillas with Mango Salsa|Crab Quesadillas with Mango Salsa]] for a variation.
+
+[[Category:Recipes using cheese]]
+[[Category:Recipes using cilantro]]
+[[Category:Mexican recipes]]
+[[Category:Southwestern recipes]]
+[[Category:Tex-Mex recipes]]
+[[Category:Appetizer recipes]]
+[[Category:Recipes for sandwiches]]
+[[Category:Recipes for quesadillas]]
+[[Category:Recipes using chile]]
+[[Category:Recipes using cooking spray]]
+[[Category:Recipes using monterey jack]]

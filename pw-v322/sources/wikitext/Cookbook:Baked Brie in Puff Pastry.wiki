@@ -1,0 +1,27 @@
+{{Recipe summary
+| Category = Cheese recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+This dish is perfect for your next dinner party. To reheat, place in an aluminum foil pouch and warm in a 200 °F [[Cookbook:Oven|oven]].
+
+== Ingredients ==
+*1 block (10 ounces) [[Cookbook:Brie Cheese|Brie cheese]], rind removed and brought to room temperature
+*1 sheet [[Cookbook:Puff Pastry|puff pastry]], thawed
+*1 [[Cookbook:Egg|egg]], beaten
+*1 [[Cookbook:Teaspoon|tsp]] salt
+*1 tsp freshly-ground [[Cookbook:Pepper|black pepper]]
+
+== Procedure ==
+#Place block of cheese in the middle of sheet of pastry.
+#Trim off about ½ inch of pastry, and fold pastry over cheese. When you reach the last fold, brush the fold with beaten egg to seal the pastry together.
+#Brush top with egg and [[Cookbook:Baking|bake]] at 375 °F for 15 minutes.
+#Cool 10 minutes and serve.
+
+[[Category:Baked recipes]]
+[[Category:Recipes using brie]]
+[[Category:Recipes for pastries]]
+[[Category:Recipes using puff pastry]]
+[[Category:Recipes using egg]]

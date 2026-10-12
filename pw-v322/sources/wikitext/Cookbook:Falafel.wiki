@@ -1,0 +1,43 @@
+{{Recipe summary
+| Difficulty = 3
+| Image = [[File:Bowl of falafel.jpg|300px]]
+}}
+
+{{recipe}}
+
+'''Falafel''' is a fritter popular in Mediterranean cuisine.  It is typically fried, but may also be baked.  It always consists of one or more types of beans; usually [[Cookbook:Fava Bean|fava bean]]s or [[Cookbook:Chickpea|chickpea]]s. In some regional varieties [[Cookbook:Parsley|parsley]] is added too.
+
+All other ingredients may vary, depending on flavor preferences or preparation technique.
+
+==Ingredients==
+* 2 [[cookbook:cup|cup]]s (480 [[cookbook:gram|g]]) [[cookbook:chickpea|chickpea]]s, drained
+* 4 cloves of [[cookbook:garlic|garlic]], peeled and [[Cookbook:Slicing|sliced]]
+* 4 [[Cookbook:Tablespoon|tablespoon]] parsley, [[Cookbook:Chopping|chopped]]
+* 1 [[cookbook:onion|onion]], cut into chunks
+* 1 [[cookbook:teaspoon|teaspoon]] (0.25 g) ground [[cookbook:coriander|coriander]]<ref>http://samfusionz-recipes.tripod.com/id127.html</ref>
+* 1 teaspoon (0.75 g) ground [[cookbook:cumin|cumin]]
+* 1 teaspoon (0.46 g) [[cookbook:cayenne pepper|cayenne pepper]]
+* 1 teaspoon [[Cookbook:Baking Powder|baking powder]]
+* 6 tablespoon [[Cookbook:Flour|flour]]
+* ½ cup [[cookbook:vegetable oil|vegetable oil]] ([[w:sunflower|sunflower]] or [[w:corn oil|corn oil]]) for frying
+
+==Procedure==
+[[File:Falafel dinner.jpg|thumb|A dinner of falafel, pita and hummus|308x308px]]
+#The night before, place the chickpeas in a bowl and cover with water (they will expand, so cover with at least a couple of inches). Drain, rinse, and dry before using. This will be about 4 cups' worth, all of which gets used.
+#In a [[Cookbook:Food Processor|food processor]] or [[Cookbook:Blender|blender]] [[Cookbook:Puréeing|purée]] chickpeas. To the chickpeas add the other ingredients (except oil); process until well mixed.
+#Shape into balls, using about 1 tablespoon for each.
+#Heat oil in a medium [[Cookbook:Skillet|skillet]] over medium-high heat. Add balls, and brown on all sides.
+#Serve with [[Cookbook:pita|pita]].
+
+==References==
+<references/>
+
+[[Category:Recipes using chickpea]]
+[[Category:Deep fried recipes]]
+[[Category:Side dish recipes]]
+[[Category:Recipes using baking powder]]
+[[Category:Recipes using coriander]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using wheat flour]]
+[[Category:Recipes using ground cumin]]
+[[Category:Recipes using vegetable oil]]

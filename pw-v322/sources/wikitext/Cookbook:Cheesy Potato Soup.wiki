@@ -1,0 +1,48 @@
+{{Recipe summary
+| Category = Soup recipes
+| Difficulty = 3
+}}
+
+{{Recipe}}
+
+This recipe for '''cheesy potato soup''' makes a thick and creamy soup, garnished with cheese and chives.
+
+== Ingredients ==
+
+* [[Cookbook:Bacon|Bacon]], [[Cookbook:Chopping|chopped]]
+* [[Cookbook:Butter|Butter]]
+* [[Cookbook:Onion|Onion]], finely chopped
+* 3 [[Cookbook:Clove|cloves]] [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+* ¼ cup [[Cookbook:All-purpose flour|all-purpose flour]]
+* Chicken [[Cookbook:Broth|broth]]
+* [[Cookbook:Potato|Potatoes]], [[Cookbook:Dice|diced]]
+* [[Cookbook:Milk|Milk]]
+* [[Cookbook:Salt|Salt]]
+* Ground [[Cookbook:Pepper|black pepper]]
+* Shredded [[Cookbook:Cheddar Cheese|cheddar cheese]]
+* Chives, chopped
+
+== Equipment ==
+
+* [[Cookbook:Paper Towel|Paper towels]]
+* [[Cookbook:Immersion Blender|Immersion blender]]
+* [[Cookbook: Stock Pot|Pot]]
+* [[Cookbook: Knife|Knife]]
+
+== Procedure ==
+# [[Cookbook:Frying|Fry]] the bacon over medium heat until brown and crispy. If the bacon is lean, add 1 tsp oil when frying. Remove from the heat, and drain on [[Cookbook:Paper Towel|paper towels]].
+# Add butter and chopped onion to the same pan. Cook for 2 minutes over medium heat until aromatic.
+# Add the minced garlic, and cook for another few minutes until the onion is softened.
+# Stir in the flour, and cook for a few minutes to remove the raw flavor.
+# Gradually stir in the chicken broth to avoid lumps. Mix in the diced potatoes and a dash of milk, and simmer until the potatoes are tender.
+# If desired, you can blend half of the soup with an [[Cookbook:Immersion Blender|immersion blender]] and stir it into the rest of the soup. This will give the soup a creamy, thick consistency.
+# Season with salt and ground pepper, then mix in the sour cream and half of the crispy bacon. Cover the pan and [[Cookbook:Simmering|simmer]] for 10 minutes.
+# Mix in the cheddar cheese, and serve hot, [[Cookbook:Garnish|garnished]] with the remaining bacon bits and chopped chives.
+
+[[Category:Recipes using potato]]
+[[Category:Recipes for soup]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using bacon]]
+[[Category:Recipes using cheddar]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using chicken broth and stock]]

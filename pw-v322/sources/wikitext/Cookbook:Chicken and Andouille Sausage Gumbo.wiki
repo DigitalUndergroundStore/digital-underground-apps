@@ -1,0 +1,45 @@
+{{recipesummary|category=Stew recipes|servings=12|time=3–4 hours|difficulty=3|
+}}
+
+{{recipe}} | [[Cookbook:North American cuisines|North American Cuisines]]
+
+'''Chicken and andouille sausage gumbo''' is a soup or[[Cookbook:Stews | stew]] which is is prepared using[[Cookbook:Roux | roux]].
+
+== Ingredients ==
+* about 2 [[Cookbook:Pound|lbs]] (1 [[Cookbook:Kilogram|kg]]) [[Cookbook:Chicken|chicken]] breasts
+* 1 [[Cookbook:Cup|cup]] (240 [[Cookbook:Milliliter|ml]]) [[Cookbook:Canola Oil|canola oil]]
+* 1 cup (240 g) [[Cookbook:All-purpose flour|all-purpose flour]]
+* 2 [[Cookbook:Bell pepper|bell peppers]], [[Cookbook:Chopping|chopped]] into ¼-[[Cookbook:Inch|inch]] pieces
+* 1 large [[Cookbook:Onion|onion]], chopped into ¼-inch pieces
+* 4 stalks of [[Cookbook:Celery|celery]], chopped into ¼-inch pieces
+* [[Cookbook:Chicken Stock|Chicken stock]] or equivalent
+* about ½ lb (¼ kg) Andouille [[Cookbook:Sausage|sausage]] or other spicy sausage
+* [[Cookbook:Cayenne Pepper |Cayenne pepper]] to taste
+* [[Cookbook:Salt |Salt]] to taste
+
+== Procedure ==
+# Brown outside of chicken breasts in small amount of oil then set aside.
+# Make a [[Cookbook:Roux|roux]] from the flour in a large [[Cookbook:Saucepan|saucepan]].
+# Add peppers, onions, and celery to roux. Cook until softened.
+# Slowly stir in water, and bring to a simmer.
+# Cut up browned chicken breasts, add to gumbo, and cook until done.
+# Slice up sausage and add ½ hour after the chicken.
+# Season to taste with cayenne and salt.
+# Serve in a bowl with a little rice and green onions on top.
+
+== Notes, tips, and variations ==
+*Hot sauce can be added to taste.
+*[[Cookbook:Filé|Filé]] may be added to thicken individual servings as served.
+*Home-made chicken stock is preferable to store-bought.
+*Gumbo will be better if left over night and eaten the next day.
+
+[[Category:Louisiana recipes]]
+[[Category:Recipes using chicken breast]]
+[[Category:Recipes using sausage]]
+[[Category:Recipes_with_metric_units]]
+[[Category:Recipes using bell pepper]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using chicken broth and stock]]
+[[Category:Recipes using canola oil]]

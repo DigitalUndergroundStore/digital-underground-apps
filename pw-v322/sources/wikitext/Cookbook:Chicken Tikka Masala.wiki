@@ -1,0 +1,55 @@
+__NOTOC__
+{{recipesummary
+| category = Chicken recipes
+| servings = 4
+| time = 1 hour
+| difficulty = 3
+| Image = [[Image:Chicken Tikka Masala Curry.png|300px]]
+}}
+{{recipe}} | [[Cookbook:Meat_Recipes|Meat recipes]] | [[Cookbook:Cuisine of the United Kingdom|Cuisine of the United Kingdom]]
+
+'''Chicken tikka masala''' is a dish based on chunks of [[Cookbook:Cuisine of India|Indian]]-style roasted chicken ([[Cookbook:Chicken Tikka|Chicken Tikka]]) cooked in a [[Cookbook:Tomato|tomato]] [[Cookbook:Curry|curry]] sauce, originating in India. There is no standard recipe for chicken tikka masala; a survey found that, of 48 different recipes, the only common ingredient was chicken.<ref>{{cite web |author= BBC E-Cyclopedia | url=http://news.bbc.co.uk/1/hi/special_report/1999/02/99/e-cyclopedia/1285804.stm | title=Chicken tikka masala: Spice and easy does it |accessdate=28 September 2007 |url-status=dead |archive-url=https://web.archive.org/web/20070716024029/http://news.bbc.co.uk/1/hi/special_report/1999/02/99/e-cyclopedia/1285804.stm |archive-date=16 July 2007}}</ref> The sauce usually includes tomato and either [[Cookbook:Cream|cream]] or [[Cookbook:Coconut|coconut cream]] and various spices.
+
+==Ingredients==
+*675 [[Cookbook:g|g]] (1.5 [[Cookbook:Pound|lb]]) cooked [[Cookbook:Chicken Tikka|Chicken Tikka]]
+*2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Mustard|mustard]] seed oil (see notes)
+*4 large cloves of [[Cookbook:Garlic|garlic]], finely [[Cookbook:Chopping|chopped]]
+*200 [[Cookbook:g|g]] (7 [[Cookbook:Ounce|oz]]) [[Cookbook:Onion|onions]], finely chopped (optional)
+*1 tin (28 [[Cookbook:Ounce|oz]]) plum [[Cookbook:Tomato|tomatoes]], chopped
+*1–4 chopped fresh green [[Cookbook:Chiles|chiles]] (depending on strength of the chiles and the desired strength of the sauce)
+*2 [[Cookbook:Tablespoon|tbsp]] chopped fresh [[Cookbook:Cilantro|cilantro]] (coriander leaves)
+*50 [[Cookbook:mL|ml]] (4 [[Cookbook:Fluid Ounce|fl oz]]) single [[Cookbook:Cream|cream]]
+*1 [[Cookbook:Tablespoon|tbsp]] malt [[Cookbook:Vinegar|vinegar]] or tamarind extract
+*2 [[Cookbook:Tablespoon|tbsp]] curry paste
+*2 [[Cookbook:Tablespoon|tbs]]<nowiki/>p [[Cookbook:Tandoori masala|tandoori masala paste]]
+*1 [[Cookbook:Tablespoon|tbs]]<nowiki/>p [[Cookbook:Tomato Paste|tomato paste]]
+*1 [[Cookbook:Tablespoon|tbs]]<nowiki/>p [[Cookbook:Garam Masala|garam masala]]
+
+==Procedure==
+#Heat the oil in a [[Cookbook:Wok|wok]] or large [[Cookbook:Frying Pan|frying pan]].
+#Add the garlic and onions and [[Cookbook:Stir-frying|stir-fry]] until browned.
+#Add the curry pastes and mix well, adding a little water or yogurt.
+#Add the cooked chicken tikka, and [[Cookbook:Stir-frying|stir-fry]] for two minutes to heat through.
+#Add the tomatoes, vinegar, tomato paste, and chilies and [[Cookbook:Simmering|simmer]] for five minutes. Add more extra water if needed.
+#Add the cream, garam masala, and chopped cilantro and [[Cookbook:Simmering|simmer]] for a few times.
+#Garnish with fresh coriander and serve with [[Cookbook:Naan|Naan]], [[Cookbook:Rice|rice]] coloured yellow with [[Cookbook:Turmeric|turmeric]], [[Cookbook:Onion|onion]] [[Cookbook:Bahjis|bahjis]] and/or a glass of white [[Cookbook:Wine|wine]].
+
+==Notes, tips, and variations==
+*[[w:Mustard oil|Mustard seed oil]] is considered inappropriate for human consumption in many parts of the world and is therefore not always available. A poor alternative can be made by crackling ½ [[Cookbook:Teaspoon|tsp]] of [[Cookbook:Mustard|mustard]] seeds in approximately 2 [[Cookbook:Tablespoon|tbsp]] of very hot [[Cookbook:Vegetable oil|vegetable]] or [[Cookbook:Olive Oil|olive oil]]. Allow to cool, then use in place of mustard seed oil.
+*Powdered or concentrated ingredients can be substituted for fresh ones but at the amount of taste.
+
+==References==
+<references />
+[[Category:Recipes for curry|{{PAGENAME}}]]
+[[Category:Indian recipes|{{PAGENAME}}]]
+[[Category:Pakistani recipes|{{PAGENAME}}]]
+[[Category:English recipes|{{PAGENAME}}]]
+[[Category:Recipes using chicken|{{PAGENAME}}]]
+[[Category:Main course recipes]]
+[[Category:Featured recipes|{{PAGENAME}}]]
+[[Category:Recipes using chile]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using light cream]]
+[[Category:Recipes using garam masala]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using mustard oil]]

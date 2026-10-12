@@ -1,0 +1,50 @@
+{{Recipe summary
+| Category = Cabbage recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+==Ingredients==
+* 12 [[Cookbook:Cabbage|cabbage]] leaves
+* ½ [[Cookbook:Cup|cup]] chopped [[Cookbook:Onion|onion]]
+* 2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Salt|salt]]
+* 1 tsp [[Cookbook:Pepper|pepper]]
+* ½ cup [[Cookbook:Milk|milk]]
+* 1 [[Cookbook:Pound|lb]] (about 500 [[Cookbook:Gram|g]]) ground [[Cookbook:Beef|beef]]
+* ¾ cup cooked [[Cookbook:Rice|rice]]
+* 1 [[Cookbook:Egg|egg]]
+
+=== Sauce ===
+* 1 can [[Cookbook:Tomato Paste|tomato paste]]
+* 1 can chopped [[Cookbook:Tomato|tomatoes]]
+* ½ cup water
+* 2 [[Cookbook:Tablespoon|Tbsp]] [[Cookbook:Vinegar|vinegar]]
+* 3 Tbsp [[Cookbook:Sugar|sugar]]
+* 2 Tbsp [[Cookbook:Cornstarch|cornstarch]] mixed with ½ cup cold water
+
+==Procedure==
+# Preheat [[Cookbook:Oven|oven]] to 350°F (175°C).
+# Put cabbage into pot of boiling water, cover, let sit for three minutes, then drain.
+# Combine ground beef, milk, egg, rice, onion, pepper, and salt. Divide into twelve portions.
+# Place 1 meat portion on each cabbage leaf.
+# Roll leaf around filling and fasten with [[Cookbook:Toothpick|toothpick]].
+# Place the rolls in a [[Cookbook:Baking Dish|baking dish]].
+# Combine tomato paste, tomatoes, sugar, water, and vinegar, then pour over cabbage rolls.
+# Cover baking dish, and [[Cookbook:Baking|bake]] at 350°F (175C) for 40 minutes.
+# Remove cabbage rolls from pan, and take out toothpicks. Place on the serving dish
+# Add cornstarch and water to sauce mixture and stir together. Warm, if needed, to allow the cornstarch mixture to thicken the sauce.
+# Pour the completed sauce over the rolls on the serving dish.
+# Garnish as desired and serve.
+
+[[Category:Recipes using cabbage]]
+[[Category:Recipes using ground beef]]
+[[Category:Recipes using rice]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Ukrainian recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using granulated sugar]]
+[[Category:Recipes using cornstarch]]
+[[Category:Recipes using cow milk]]

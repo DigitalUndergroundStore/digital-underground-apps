@@ -1,0 +1,39 @@
+{{Recipe summary
+| Category = Pasta recipes
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Pasta|Pasta]]
+
+This recipe, originally contributed by Rich Osborne, is a delicious and quick dish for a sunny day, or to bring back a little memory of summer. The combination of flavours (egg pasta, milky mozzarella, sweet tomato and spicy basil) is just wonderful. 
+
+The key here is to prepare all the ingredients except the pasta ahead of time and let them soak together. You can stand the prepared bowl of ingredients in a sink full of hot water, so that the mozzarella starts to soften and the juices from the tomatoes start to run.
+
+==Ingredients==
+
+*250 [[Cookbook:g|g]] fresh egg [[Cookbook:Pasta|pasta]]
+*2 [[Cookbook:Mozzarella Cheese|mozzarella]] balls (cow or buffalo)
+*About 10–15 small [[Cookbook:Tomato|tomatoes]] or 4–5 larger tomatoes (you need about the same amount as the mozzarella)
+*A good handful (about 15–20) of [[Cookbook:Basil|basil]] leaves 
+*Extra-virgin [[Cookbook:Olive Oil|olive oil]]
+*[[Cookbook:Salt|Salt]]
+*Black [[Cookbook:Pepper|pepper]]
+
+==Procedure==
+
+#Chop the mozzarella and the tomatoes roughly, and put them in a large dish. You're looking to create small cube shapes between 1 [[Cookbook:Centimetre (cm)|cm]] and 1 [[Cookbook:Inch|inch]].
+#Tear up the basil, and sprinkle it over the mozzarella and tomatoes.
+#Drizzle on lots of olive oil (at least 3 [[Cookbook:Tablespoon|tablespoons]]). 
+#Add a good amount of salt and just a little black pepper. The salt will start to leech moisture out from the other ingredients and create a sauce. 
+#When you're ready, [[Cookbook:Boiling|boil]] the egg pasta until [[Cookbook:Al dente|al dente]]. Drain the pasta and then pour, still hot, over the other ingredients. 
+#Stir the pasta up, coating everything really well, and serve. 
+
+== Notes, tips, and variations ==
+
+* This recipe also works well with [[Cookbook:Brie Cheese|brie]] instead of mozzarella.
+[[Category:Recipes using pasta|{{PAGENAME}}]]
+[[Category:Recipes using basil|{{PAGENAME}}]]
+[[Category:Recipes using fresh mozzarella|{{PAGENAME}}]]
+[[Category:Recipes using tomato|{{PAGENAME}}]]
+
+[[nl:Kookboek/Pasta met mozzarella, tomaten en basilicum]]

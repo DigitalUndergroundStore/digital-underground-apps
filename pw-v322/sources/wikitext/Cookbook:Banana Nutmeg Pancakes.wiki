@@ -1,0 +1,60 @@
+{{recipesummary
+| category = Pancake recipes
+| yield = 8 ea. 4-inch pancakes
+| time = Prep: 10 minutes<br/>Cooking: 5 minutes per skillet
+| difficulty = 2
+}}{{recipe}} | [[Cookbook:Cuisine of the United States|American cuisine]] | [[Cookbook:Breakfast Recipes|Breakfast Cuisine]] | [[Cookbook:Vegetarian cuisine|Vegetarian Cuisine]]
+==Ingredients==
+* 1 [[Cookbook:Cup|cup]] all-purpose bleached [[Cookbook:Flour|flour]]
+* 2 [[Cookbook:Teaspoon|teaspoons]] [[Cookbook:Sugar|sugar]]
+* ½ teaspoon [[Cookbook:Salt|salt]]
+* ½ teaspoon [[Cookbook:Baking Powder|baking powder]]
+* ¼ teaspoon [[Cookbook:Baking Soda|baking soda]]
+* ½ teaspoon [[Cookbook:Nutmeg|nutmeg]]
+* ¾ cup [[Cookbook:Buttermilk|buttermilk]]
+* ¼ cup [[Cookbook:Milk|milk]]
+* 1 large [[Cookbook:Egg|egg]]
+* 2 [[Cookbook:Tablespoon|tablespoon]] unsalted [[Cookbook:Butter|butter]], melted
+* 1 teaspoon [[Cookbook:Vanilla|vanilla extract]]
+* [[Cookbook:Vegetable oil|Vegetable oil]] for brushing [[Cookbook:Griddle|griddle]]
+* 2 small [[Cookbook:Banana|bananas]], thinly [[Cookbook:Slicing|sliced]]
+
+==Procedure==
+# Heat a large non-stick [[Cookbook:Skillet|skillet]] or griddle over low heat while preparing ingredients.
+# Mix flour, sugar, salt, baking powder, and baking soda in medium bowl.
+# [[Cookbook:Whisk|Whisk]] nutmeg into dry ingredients.
+# [[Cookbook:Microwave Oven|Microwave]] buttermilk and milk in a 2-cup Pyrex measuring cup to room temperature, 20 to 30 seconds.
+# Whisk in egg, butter, and vanilla.
+# Add wet ingredients to dry ingredients and whisk until just mixed.
+# Return batter to measuring cup, stirring in a teaspoon or two of [[Cookbook:Water|water]], if necessary, to make a thick, but pourable batter.
+# Increase heat to medium and generously brush skillet or griddle with oil.
+# When oil starts to spider, but before it starts to smoke, pour batter, about ¼ cup at a time. Work in batches, if necessary, to avoid overcrowding.
+# Drop 5 or 6 slices of banana over the uncooked side of each pancake as it cooks.
+# When pancake bottoms are golden brown and tops start to bubble, 2 to 3 minutes, flip pancakes.
+# Cook until pancakes are golden brown on remaining side.
+# Repeat, brushing skillet or griddle with oil.
+# Serve hot.
+
+==Notes, tips, and variations==
+* Use all-purpose bleached flour to make a tender pancake.
+* If using salted butter, reduce salt to ¼ teaspoon.
+* You can substitute a tablespoon of lemon juice (or vinegar) in milk for the buttermilk.
+* Pancake batter should pour, not glug! On the other hand, runny batter makes thin, oddly shaped pancakes that frequently collide on the griddle. Stir in a touch more flour into thin batter. For batter that's too thick, whisk in water, a teaspoon at a time.
+* The temperature of the pan or griddle is important: too hot and the pancakes are dark and raw; too cool and they're blond and hard. For tender, golden brown pancakes, heat the pan or griddle on low while you make the batter. Then increase the heat to medium and generously brush the pan or griddle with oil. It's ready when the oil starts to shimmer and, in any skillet or griddle other than non-stick, sends out tendrils that resemble and octopus or spider. But if the pan starts to smoke, set it down off the burner until the smoking subsides and the oil cools a bit.
+* This recipe easily doubles for a crowd.
+
+[[Category:Inexpensive recipes]]
+[[Category:Breakfast recipes]]
+[[Category:Recipes for pancakes]]
+[[Category:Recipes using banana]]
+[[Category:Recipes using nutmeg]]
+[[Category:Vegetarian recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using baking powder]]
+[[Category:Recipes using baking soda]]
+[[Category:Recipes using granulated sugar]]
+[[Category:Recipes using buttermilk]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using all-purpose flour]]
+[[Category:Recipes using vegetable oil]]
+[[Category:Recipes using cow milk]]

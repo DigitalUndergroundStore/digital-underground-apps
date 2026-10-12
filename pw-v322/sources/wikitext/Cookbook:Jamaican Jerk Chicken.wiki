@@ -1,0 +1,49 @@
+{{Recipe summary
+| Category = Chicken recipes
+| Servings = 4
+| Difficulty = 3
+}}
+
+{{recipe}} | [[Cookbook:Cuisine of Jamaica|Jamaican cuisine]]
+__NOTOC__
+==Ingredients==
+* ½ [[Cookbook:Teaspoon|tsp]] ground [[Cookbook:Allspice|allspice]]
+* 1 tsp [[Cookbook:Salt|salt]]
+* 1 tsp [[Cookbook:Black Pepper|black pepper]]
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Cayenne Pepper|cayenne pepper]]
+* ½ tsp ground [[Cookbook:Ginger|ginger]]
+* 1 tsp ground [[Cookbook:Cinnamon|cinnamon]]
+* ¼ tsp freshly-grated [[Cookbook:Nutmeg|nutmeg]]
+* ½ tbsp dried [[Cookbook:Thyme|thyme]]
+* 2 tbsp dehydrated [[Cookbook:Lemon|lemon]] peel
+* 3 tbsp dark [[Cookbook:Rum|rum]]
+* 4 boneless skinless [[Cookbook:Chicken#Breast|chicken breasts]]
+* ¼ cup brown [[Cookbook:Mustard|mustard]]
+
+== Procedure ==
+#Combine rum and mustard, and rub all over chicken.
+#Combine remaining ingredients and rub all over chicken. Refrigerate for at least 1 hour, but it is better to [[Cookbook:Marinating|marinate]] overnight.
+#Place chicken on a greased, preheated charcoal [[Cookbook:Grill|grill]]. Cook, turning constantly until internal temperature reaches 165°F. Remove and let rest for 10 minutes.
+#Serve.
+
+==Notes, tips, and variations==
+
+* The spices always included allspice because the berries of the pimento tree are the source of allspice.
+* When cooking the meat, barbecue is by far the best technique—failing that, oven bake. [[Cookbook:Basting|Basting]] with beer is worth trying.
+* Serve with rice and peas.
+
+==Warnings==
+
+* See the [[Cookbook:Chili Pepper#Precautions|chili pepper]] warnings.
+
+
+[[Category:Jamaican recipes]]
+[[Category:Recipes using chicken breast]]
+[[Category:Grilled recipes]]
+[[Category:Recipes using rum]]
+[[Category:Recipes using allspice]]
+[[Category:Recipes using ground cinnamon]]
+[[Category:Recipes using dehydrated lemon zest]]
+[[Category:Recipes using cayenne]]
+[[Category:Recipes using ground ginger]]
+[[Category:Recipes using brown mustard]]

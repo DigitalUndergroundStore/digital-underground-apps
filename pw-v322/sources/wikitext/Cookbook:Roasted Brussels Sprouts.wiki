@@ -1,0 +1,34 @@
+{{Recipe summary
+| Category = Vegetable recipes
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+
+* [[Cookbook:Brussels Sprout|Brussels sprouts]]
+* [[Cookbook:Olive Oil|Olive oil]]
+* [[Cookbook:Salt|Salt]]
+* Ground [[Cookbook:Pepper|black pepper]]
+
+== Procedure ==
+
+# Preheat the [[Cookbook:Oven|oven]] to 425°F (218°C).
+# Trim the bases of the sprouts, discard any loose outer leaves, and wash and dry them.
+# Halve the sprouts with a sharp [[Cookbook:Knife|knife]]—you can quarter any really big ones—and transfer them to a [[Cookbook:Mixing Bowl|mixing bowl]].
+# Drizzle the sprouts with some olive oil and [[Cookbook:Mixing#Tossing|toss]] to coat. You should add enough oil so that all the sprouts are thinly coated, but not so much that they're dripping with oil.
+# Season the sprouts with a pinch of salt and pepper. Don't over-salt them, as the sprouts will lose water in the oven.
+# Spread the sprouts on [[Cookbook:Baking Sheet|baking sheets]] so that they're all in a single layer—double-layering them will cause them to [[Cookbook:Steaming|steam]] not brown.
+# Roast the sprouts in the oven until they are browned on the outside and tender to your preference. Use a [[Cookbook:Spatula|spatula]] to stir/flip them periodically through the cooking process to make sure they brown evenly.
+# Remove from the oven and adjust the seasoning to taste.
+
+== Notes, tips, and variations ==
+
+* For additional flavor, toss the finished sprouts with some grated [[Cookbook:Parmesan Cheese|parmesan cheese]].
+
+[[Category:Roasted recipes]]
+[[Category:Recipes using brussels sprout]]
+[[Category:Recipes using olive oil]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using pepper]]

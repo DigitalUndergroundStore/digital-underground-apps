@@ -1,0 +1,58 @@
+{{recipesummary
+| Category = Chicken recipes
+| Difficulty = 3
+| Image = [[File:Arroz-con-Pollo.jpg|300px]]
+| Time = 1 hour
+}}
+
+{{recipe}} | [[Cookbook:Rice Recipes|Rice Recipes]] | [[Cookbook:Cuisine of Puerto Rico|Cuisine of Puerto Rico]] | [[Cookbook:Cuisine of Cuba|Cuisine of Cuba]]
+
+'''''Arroz con pollo''''' (trans: rice with chicken) is a traditional dish common throughout Spain and [[w:Latin America|Latin America]] especially in Cuba, Panama, Peru, Puerto Rico, Costa Rica, and the Dominican Republic. It resembles Spanish [[cookbook:Paella Valenciana|paella]], both in its ingredients and cooking technique, and may very well be a New World adaptation of it.
+
+Common ingredients for ''arroz con pollo'' include rice, vegetables, fresh herbs and chicken.
+
+==Ingredients==
+*1 [[Cookbook:Each|ea]]. (1.3–1.8 [[Cookbook:Kilogram|kg]]) [[Cookbook:Chicken|chicken]], cut into serving pieces
+*[[cookbook:salt|Salt]] to taste
+*[[cookbook:pepper|Pepper]] [[wikt:to taste|to taste]]
+*[[cookbook:Olive Oil|Olive oil]]
+*4 [[wikt:clove|cloves]] of fresh [[Cookbook:garlic|garlic]], [[wikt:minced|minced]]
+*1 medium [[cookbook:onion|onion]], [[wikt:chopped|chopped]]
+*225 [[Cookbook:Gram|g]] [[Cookbook:Dice|diced]] [[Cookbook:Bell Pepper|red bell pepper]]
+*425 g (1 [[wikt:can|can]]) [[wikt:diced|diced]] [[cookbook:Tomato|tomatoes]]
+* 7.5 g (½ [[Cookbook:Tablespoon|tablespoon]]) sweet [[Cookbook:paprika|paprika]]
+* 14 g (½ oz) chopped [[Cookbook:cilantro|cilantro]]
+* 1.4 [[Cookbook:Liter|liter]] (6 [[Cookbook:Cup|cups]]) [[Cookbook:Stock|chicken stock]]
+*8 [[cookbook:saffron|saffron]] threads or 1 [[Cookbook:Teaspoon|teaspoon]] [[w:food coloring|food coloring]] for yellow rice
+* 370 g (2 cups) medium or long-grain [[Cookbook:rice|rice]]
+* 225 g (8 [[Cookbook:Ounce|oz]]) [[Cookbook:peas|canned peas]] ([[wikt:thoroughly|thoroughly]] [[wikt:drained|drained]])
+
+==Procedure==
+#Season the chicken with two [[Cookbook:Pinch|pinches]] of salt and a pinch of pepper.
+#Pour enough olive oil into a large [[Cookbook:Frying Pan|skillet]] to just barely cover the bottom.
+#[[Cookbook:Sauté|Sauté]] chicken in oil until brown. There are two ways to proceed from here: either remove the chicken from the skillet or keep it there.
+#Sauté garlic until brown. Be careful, garlic burns easily.
+#Add the onion, bell pepper, tomatoes and paprika. Sauté until the vegetables are tender.
+#Transfer the ingredients to a large stewing pot.
+#Add the cilantro, bouillon and saffron (or food coloring). Bring to a rolling [[Cookbook:boil|boil]]. 
+#Add the rice and mix well. Simmer over medium heat until the rice is cooked and the liquid is absorbed. Add more broth or water if the liquid evaporates before the rice is cooked.
+#Add the chicken to the pot (if you removed it previously) and cover it with rice. Wait two to three minutes to allow the chicken to warm.
+#Sprinkle peas on top of the rice.
+
+==External Links==
+Below are some more ''arroz con pollo'' recipes:
+*[http://www.inmamaskitchen.com/RECIPES/RECIPES/poultry/arrozconpollo.html Recipe on In Mama's Kitchen website]
+*[http://www.elise.com/recipes/archives/004302arroz_con_pollo.php Recipe on Simply Recipes website]
+*[http://allrecipes.com/Recipe/Chicken-with-Rice-Arroz-con-Pollo/Detail.aspx Recipe on Allrecipes website]
+*[http://allrecipes.com/Recipe/Arroz-con-Pollo-II/Detail.aspx Recipe on Allrecipes website (alternate)]
+
+[[Category:Cuban recipes]]
+[[Category:Puerto Rican recipes]]
+[[Category:Recipes using whole chicken]]
+[[Category:Recipes using rice]]
+[[Category:Main course recipes]]
+[[Category:Recipes using red bell pepper]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using food coloring]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using chicken broth and stock]]

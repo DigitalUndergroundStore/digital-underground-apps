@@ -1,0 +1,60 @@
+{{Recipe summary
+| Category = Stew recipes
+| Servings = 6
+| Difficulty = 2
+}}
+
+{{recipe}} | [[Cookbook:Chickpea|Chickpea]]
+
+This dish is a chickpea-vegetable [[Cookbook:Curry|curry]], which will make a full meal when served with [[Cookbook:Rice|rice]].
+
+==Ingredients==
+
+* 150 [[Cookbook:Gram|g]] of dry or 500 g of cooked [[Cookbook:Chickpea|chickpeas]]
+
+* 2–3 [[Cookbook:Each|ea]]. (2–3 [[Cookbook:Cup|cups]]) [[Cookbook:Chopping|chopped]] medium [[Cookbook:Onion|onions]]
+* 2 cups of vegetable [[Cookbook:Broth|broth]]
+
+* 2–3 cups chopped [[Cookbook:Zucchini|zucchini]]
+* 6–8 medium [[Cookbook:Tomato|tomatoes]], chopped, or 2–3 cups of canned tomatoes
+* 1 green [[Cookbook:Bell Pepper|bell pepper]], chopped
+* 1 [[Cookbook:Chiles|chile pepper]], finely chopped
+* 4–6 cloves [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+
+* 4 [[Cookbook:Tablespoon|Tbsp]] crunchy, unsweetened [[Cookbook:Peanut Butter|peanut butter]]
+* 1 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Coriander|coriander]]
+* 1 tsp [[Cookbook:Turmeric|turmeric]]
+* 1 tsp [[Cookbook:Cumin|cumin]]
+* ½ tsp [[Cookbook:Salt|salt]]
+* ½ tsp [[Cookbook:Pepper|black pepper]]
+* 1 tsp [[Cookbook:Soy Sauce|soy sauce]] (optional, can use salt)
+
+* 2 Tbsp [[Cookbook:Cilantro|cilantro]] sprig, finely chopped (optional, for garnish) 
+
+== Procedure ==
+
+# If using dry chickpeas, wash, then soak for 12 hours, then cook 40–50 minutes until soft or for 8–10 minutes in a [[Cookbook:Pressure Cooker|pressure cooker]]. If using a pressure cooker, do not depressurize but let the cool down; depressurizing causes the chickpeas to break open.
+# Cook onions in the broth until softened.
+# Add zucchini, tomatoes, bell pepper, chili pepper, and garlic and cook for 10–15 minutes, until peppers and zucchini are soft.
+# Start [[Cookbook:Boiling|boiling]] the rice.
+# Add chickpeas, peanut butter, spices, and soy sauce. Keep [[Cookbook:Simmering|simmering]] for 5–10 more minutes.
+# Sprinkle with cilantro garnish if desired, then serve immediately.
+
+== Notes, tips, and variations ==
+
+* If a very thick sauce is desired, cook longer. The zucchini will disintegrate, thickening the sauce.
+* If you used dry chickpeas, use the cooking water and broth half and half, instead of pure broth.
+* The [[Cookbook:Chili Pepper|chili pepper]] can be replaced by [[Cookbook:Chili Powder|chili powder]] or completely omitted if a less spicy dish is desired.
+* To get a stronger taste, use up to 2 tsp each of coriander, turmeric, cumin.
+* Add 2 tsp [[Cookbook:Garam Masala|garam masala]] for a more authentic taste.
+
+[[Category:Recipes using chickpea]]
+[[Category:Recipes for stew]]
+[[Category:Vegan recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using chile]]
+[[Category:Recipes using cilantro]]
+[[Category:Recipes using coriander]]
+[[Category:Recipes using cumin]]
+[[Category:Recipes using vegetable broth and stock]]

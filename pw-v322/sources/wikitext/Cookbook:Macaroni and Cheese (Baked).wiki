@@ -1,0 +1,59 @@
+__NOTOC__
+{{Recipe summary
+| Category = Pasta recipes
+| Difficulty = 3
+}}
+
+{{recipe}} | [[Cookbook:Pasta|Pasta]] 
+
+== Ingredients ==
+
+=== Base ===
+* ½ [[Cookbook:Pound|lb]] (227 [[Cookbook:Gram|g]]) dry elbow [[Cookbook:Macaroni|macaroni]]
+* 3 [[Cookbook:Tablespoon|Tbsp]] [[Cookbook:Butter|butter]]
+* 3 Tbsp [[Cookbook:Flour|flour]]
+* 1 Tbsp [[Cookbook:Mustard#dry mustard|powdered mustard]]
+* 3 [[Cookbook:Cup|cups]] [[Cookbook:Milk|milk]]
+* 1 [[Cookbook:Red onion|red onion]], finely [[Cookbook:Chopping|chopped]]
+* 2 [[Cookbook:Teaspoon|tsp]] [[Cookbook:Tabasco Sauce|Tabasco]] pepper sauce
+* 1 [[Cookbook:Bay Leaf|bay leaf]]
+* ½ tsp [[Cookbook:Paprika|paprika]]
+* 1 standard [[Cookbook:Egg|egg]]
+* 12 [[Cookbook:Ounce|oz]] (340 [[Cookbook:Gram|g]]) [[Cookbook:Cheddar Cheese|sharp cheddar]], [[Cookbook:Grate|shredded]]
+* 1 tsp [[Cookbook:Salt|salt]]
+* Fresh black [[Cookbook:Pepper|pepper]]
+
+=== Topping ===
+* 3 Tbsp butter
+* 1 cup panko [[Cookbook:Bread Crumb|bread crumbs]]
+
+== Procedure ==
+# Preheat [[Cookbook:Oven|oven]] to 350 °[[Cookbook:F|F]].
+# In a large pot of [[Cookbook:Boiling|boiling]], salted water, cook the pasta until it is [[Cookbook:Al Dente|al dente]].
+# While the pasta is cooking, melt the butter in a separate pot. 
+# [[Cookbook:Whisk|Whisk]] in the flour and mustard and keep it moving for about five minutes. Make sure it is free of lumps.
+# Stir in the milk, onion, bay leaf, and paprika. [[Cookbook:Simmering|Simmer]] for ten minutes and remove the bay leaf.
+# [[Cookbook:Tempering|Temper]] in the egg.
+# Stir in ¾ of the cheese.
+# Season with salt and pepper.
+# [[Cookbook:Folding|Fold]] the macaroni into the mix and pour into a 2-[[Cookbook:Quart|quart]] [[Cookbook:Baking Dish|casserole dish]].
+# Top with remaining cheese.
+# Melt the butter in a [[Cookbook:Sauté Pan|sauté pan]], add breadcrumbs, and [[Cookbook:Mixing#Tossing|toss]] to coat.
+# Top the macaroni with the bread crumbs.
+# [[Cookbook:Baking|Bake]] for 30 minutes.
+# Remove from oven and rest for 10 minutes before serving.
+
+[[Category:Recipes using pasta and noodles]]
+[[Category:Recipes using cheddar]]
+[[Category:Vegetarian recipes]]
+[[Category:Boiled recipes]]
+[[Category:Baked recipes]]
+[[Category:Side dish recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes for macaroni and cheese]]
+[[Category:Recipes using bay leaf]]
+[[Category:Recipes using bread crumb]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using wheat flour]]
+[[Category:Recipes using cow milk]]
+[[Category:Recipes using mustard powder]]

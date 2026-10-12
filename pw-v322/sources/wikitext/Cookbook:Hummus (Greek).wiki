@@ -1,0 +1,55 @@
+{{recipesummary
+| category = Side dish recipes
+| time = 1–24 hours
+| difficulty = 3
+| image = [[Image:Hummus.jpg|300px]]
+| energy = 1400 [[Cookbook:Calorie|kJ]] (338 [[Cookbook:Calorie|kcal]]) per serving
+}}
+{{recipe}} | [[Cookbook:Cuisine of the Mediterranean|Mediterranean cuisine]] | [[Cookbook:Cuisine of Greece|Greek Cuisine]] | [[Cookbook:Hummus|Hummus]]
+__NOTOC__
+
+'''Hummus''' is a nutritious dip originating from the Middle East. It is called ''revythosaláta'' (ρεβυθοσαλάτα) in Greek.
+==Ingredients==
+* 3 [[Cookbook:Cup|cups]] raw dried [[Cookbook:Chickpea|chickpeas]] (or skip the soaking and cooking steps, and use 7 cups of drained tinned/canned chickpeas)
+* 9 cups water
+* 1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Oil|cooking oil]]
+* ¾ cup (175 [[Cookbook:g|g]]) [[Cookbook:Tahini|tahini]] (ground sesame seeds)
+* ¾ cup (175 [[Cookbook:g|g]]) freshly squeezed [[Cookbook:Lemon Juice|lemon juice]]
+* 12 cloves of [[Cookbook:Garlic|garlic]] (peeled and roughly chopped)
+* ½ cup extra virgin [[Cookbook:Olive Oil|olive oil]]
+* 1 tbsp [[Cookbook:Salt|salt]]
+* ½ [[Cookbook:Teaspoon|tsp]] freshly-ground black [[Cookbook:Pepper|pepper]]
+{{Nutrition Summary|ServingSize=100 g|Cals=950 [[Cookbook:Calorie|kJ]] (227 [[Cookbook:Calorie|kcal]])|Protein=7.4 g|TotalFat=12.8 g|SatFat=1.3 g|Carbs=23.5 g|Sugars=4.1 g|Fiber=5.8 g|Sodium=430 [[Cookbook:mg|mg]]}}
+
+==Procedure==
+# Soak the chickpeas in water overnight, then drain.
+# Gently [[Cookbook:Simmering|simmer]] the chickpeas with the 9 cups water (generously salted) and the tablespoon of oil until very soft, but still whole (about 3 hours, or 10 minutes + cooling time if using a pressure cooker).
+# Drain the chickpeas, and reserve a few cups of the cooking liquid (you will need it later).
+# Rinse the chickpeas with plenty of cold water. While doing so, gently rub them between your hands to release the skins—they should float away with the rinsing water. After several changes of water, and removing a majority of the skins, drain the chickpeas again.
+# Using a [[Cookbook:Food processor|food processor]] (or other means), mix the lemon juice with the tahini.
+# [[Cookbook:Purée|Purée]] (or mash) the chickpeas in batches, using the lemon juice and tahini mixture, the olive oil, and the cooking liquid as required to maintain the desired consistency (add the garlic to the batch with the olive oil, and process until smooth).
+# In a large bowl, using a spoon, mix the salt and pepper into the other blended ingredients (add additional cooking liquid, if still too thick).
+
+==Notes, tips, and variations==
+* 1–2 tablespoons of [[Cookbook:Asafoetida|asafoetida]] (hing) powder can be used to substitute for the garlic, which may otherwise be omitted.
+* Use a pot that will hold several times the volume of the chickpeas and the water for cooking the chickpeas, because they will foam (the tablespoon of oil minimises that, however).
+* Use olive oil instead of the reserved cooking liquid to thin the hummus. Alternatively, mix in a tablespoon of olive oil into a serving before eating.
+* It's particularly good when eaten with sliced French stick ([[Cookbook:Bread|bread]]), and it is traditionally eaten with [http://en.wikipedia.org/wiki/Pita pita] bread. It is also a nutritionally sound alternative to most other dips.
+* Hummus freezes really well, so consider making a double batch, and then freezing most of it in containers small enough to hold two servings (they can be defrosted overnight in the refrigerator, as needed).
+* Hummus is NOT a traditional Greek dish—it derives from Cyprus and the Middle East. Chickpeas in the traditional Greek cuisine (at least in Attica and Cyclades) are usually eaten only as soup.
+
+
+[[Category:Greek recipes|{{PAGENAME}}]]
+[[Category:Mediterranean recipes|{{PAGENAME}}]]
+[[Category:Breakfast recipes|{{PAGENAME}}]]
+[[Category:Vegan recipes|{{PAGENAME}}]]
+[[Category:Side dish recipes|{{PAGENAME}}]]
+[[Category:Recipes using chickpea|{{PAGENAME}}]]
+[[Category:Recipes using garlic]]
+[[Category:Recipes using tahini]]
+[[Category:Boiled recipes]]
+[[Category:Featured recipes|{{PAGENAME}}]]
+[[Category:Naturally gluten-free recipes|{{PAGENAME}}]]
+[[Category:Kid-friendly recipes]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes for hummus]]

@@ -1,0 +1,53 @@
+__NOTOC__
+{{Recipe summary
+| Category = Salad recipes
+| Servings = 2–4
+| Difficulty = 1
+}}
+
+{{recipe}} | [[Cookbook:Salad Recipes|Salad Recipes]]
+
+==Ingredients==
+=== Variation I ===
+* 1 large can (12 [[Cookbook:Ounce|oz]]) [[Cookbook:Tuna|tuna]]
+* 1 can [[Cookbook:Water Chestnut|water chestnuts]], drained and [[Cookbook:Chopping|chopped]]
+* ½ small [[Cookbook:Onion|onion]], chopped
+* 1–2 stalks [[Cookbook:Celery|celery]], chopped
+* ½ [[Cookbook:Cup|cup]] [[Cookbook:Carrot|carrot]], shredded
+* ½ cup [[Cookbook:Mayonnaise|mayonnaise]]
+* 1 [[Cookbook:Tablespoon|tablespoon]] [[Cookbook:Dijon Mustard|Dijon mustard]]
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Soy Sauce|soy sauce]]
+* [[Cookbook:Salt|Salt]] to taste
+* [[Cookbook:Pepper|Pepper]] to taste
+
+=== Variation II ===
+* 1 can [[Cookbook:Tuna|tuna]], drained
+* 2 tablespoons [[Cookbook:Mayonnaise|mayonnaise]]
+* ¼ small [[Cookbook:Onion|onion]], chopped
+
+=== Variation III ===
+* 1 large can (12 oz) [[Cookbook:Tuna|tuna]]
+*2 cups [[Cookbook:Mayonnaise|mayonnaise]]
+* 1 large bag shredded [[Cookbook:Cheddar Cheese|cheddar cheese]]
+*3 [[Cookbook:Grape|grapes]], chopped
+*4/3 [[Cookbook:Hot Dog|hot dogs]], roughly chopped
+*4 bags tater-tots, just barely defrosted
+
+==Procedure==
+#Mix all ingredients in a bowl.
+#Chill before serving.
+#Serve on toast.
+
+[[Category:Recipes using tuna]]
+[[Category:Recipes for salad]]
+[[Category:Refrigerated recipes]]
+[[Category:Recipes for sandwiches]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using celery]]
+[[Category:Recipes using cheddar]]
+[[Category:Recipes using grape]]
+[[Category:Recipes using hot dog]]
+[[Category:Recipes using mayonnaise]]
+[[Category:Recipes using Dijon mustard]]
+
+[[sr:Кувар:Салата са туњевином]]

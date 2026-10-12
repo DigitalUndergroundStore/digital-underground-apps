@@ -1,0 +1,55 @@
+{{recipesummary|category=Pasta recipes|servings=8|time=1½ hours|difficulty=3}}{{recipe}}
+{{nutritionsummary|1/8 of recipe (425 g)|8|581|242|26.9 g|12.1 g|207 mg|1189 mg|54.2 g|9.1 g|8.1 g|24.5 g|43%|38%|47%|29%}}
+__NOTOC__
+== Ingredients ==
+* 2 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Olive Oil|olive oil]]
+* 1 large [[Cookbook:Onion|onion]], finely [[Cookbook:Chopping|chopped]]
+* 2 [[Cookbook:Carrot|carrots]], finely chopped 
+* 2 [[Cookbook:Celery|celery]] stalks, finely chopped 
+* 1½ [[Cookbook:Pound|lb]] (680 [[Cookbook:Gram|g]]) ground [[Cookbook:Beef|beef]]
+* 4 cloves [[Cookbook:Garlic|garlic]], [[Cookbook:Mincing|minced]]
+* 1 can (28 [[Cookbook:Ounce|oz]]/800 g) crushed [[Cookbook:Tomato|tomatoes]]
+* 10–15 [[Cookbook:Basil|basil]] leaves, chopped or torn
+* ½ [[Cookbook:Teaspoon|tsp]] dried [[Cookbook:Oregano|oregano]]
+* ¼ tsp [[Cookbook:Pepper|black pepper]]
+* 1 tsp [[Cookbook:Salt|salt]]
+* ½ tsp white granulated [[Cookbook:Sugar|sugar]]
+* 225 [[Cookbook:Milliliter|ml]] dry red [[Cookbook:Wine|wine]]
+* 1 pack of lasagne [[Cookbook:Pasta|pasta]] sheets
+* 1½ [[Cookbook:Pint|pints]] (850 ml) [[Cookbook:Béchamel Sauce|béchamel sauce]]
+* Finely-grated [[Cookbook:Parmesan Cheese|parmesan]]
+
+== Equipment ==
+* Small nonstick [[Cookbook:Saucepan|saucepan]]
+* [[Cookbook:Dutch Oven|Dutch oven]]
+* Rectangular [[Cookbook:Baking Dish|baking dish]]
+
+== Procedure ==
+# Heat the olive oil in a Dutch oven over medium high heat until shimmering. Add in ground beef and cook, breaking it up with a wooden spoon, until all liquid had evaporated and meat begins to sizzle (10–15 minutes).
+# Stir in wine, scraping the pot to loosen the fond. [[Cookbook:Simmering|Simmer]] until wine has evaporated. 
+# Add the crushed tomatoes, bring to a simmer, cover, and simmer for 20 minutes. Meanwhile, prepare the béchamel sauce.
+# Preheat the [[Cookbook:Oven|oven]] to 375°F/190°C.
+# Mix the basil, oregano, salt, and pepper into the ragu.
+# Place a thin layer of ragu in the base of the [[Cookbook:Baking Dish|ovenproof dish]] and cover with a single layer of pasta sheets. Spread a layer of béchamel sauce over the pasta. Repeat this until you run out of meat, making sure that you have enough béchamel sauce left to cover the top layer of pasta.
+# Sprinkle grated parmesan over the pasta.
+# Place the dish in the oven on the top shelf and cook for about 45 minutes, or until the top is lightly browned and the sauce is bubbling.
+# Serve.
+
+== Notes, tips, and variations ==
+* Leaner beef will produce a superior flavor, as it produces less fat.  
+* Goat cheese works well in the béchamel sauce. 
+* Look for San Marzano canned tomatoes. They’re more expensive, but are better quality. 
+* Fresh basil and pepper are recommended.
+* You can substitute the ground beef with other meats.
+
+[[Category:Recipes for lasagne]]
+[[Category:Recipes using pasta]]
+[[Category:Recipes using tomato]]
+[[Category:Recipes using ground beef]]
+[[Category:Baked recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes with metric units]]
+[[Category:Recipes using basil]]
+[[Category:Recipes using granulated sugar]]
+[[Category:Recipes using carrot]]
+[[Category:Recipes using celery]]

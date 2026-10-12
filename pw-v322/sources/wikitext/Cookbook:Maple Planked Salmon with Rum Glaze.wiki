@@ -1,0 +1,29 @@
+{{Recipe summary
+| Category = Salmon recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+== Ingredients ==
+* 1 side (1.5–2 [[Cookbook:Pound|lb]]) of sockeye [[Cookbook:Salmon|salmon]]
+* [[Cookbook:Salmon|Salt]]
+* Freshly-ground [[Cookbook:Pepper|black pepper]]
+* 1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Olive Oil|olive oil]]
+* ½ [[Cookbook:Cup|cup]] dark [[Cookbook:Rum|rum]]
+* 1 large untreated maple plank, soaked in water for at least 1 hour
+
+== Procedure ==
+#[[Cookbook:Brush|Brush]] salmon with oil. Sprinkle liberally with salt and freshly ground black pepper.
+#Place salmon on plank. Heat [[Cookbook:Grill|grill]] to medium on one burner.
+#Bring rum to a [[Cookbook:Boiling|boil]] in a [[Cookbook:Saucepan|saucepan]] over high heat. Remove from heat and ignite. Boil until reduced to ¼ cup.
+#Place plank on indirect heat and cook for 20 minutes, brushing often with rum.
+#Let rest 5 minutes. Serve.
+
+[[Category:Recipes using salmon]]
+[[Category:Recipes using rum]]
+[[Category:Grilled recipes]]
+[[Category:Main course recipes]]
+[[Category:Recipes using pepper]]
+[[Category:Recipes using salt]]
+[[Category:Recipes using maple]]

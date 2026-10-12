@@ -1,0 +1,37 @@
+{{Recipe summary
+| Category = Fried recipes
+| Difficulty = 3
+| Image = [[File:OnionRings.JPG|300px]]
+}}
+
+{{recipe}}
+[[File:OnionRingBatter.JPG|thumb|Onion rings covered in milk mixture|308x308px]] 
+
+'''Onion rings''' are a type of fast food commonly found in the [[Cookbook:Cuisine of the United States|United States]], [[Cookbook:Cuisine of Canada|Canada]], [[Cookbook:Cuisine of the United Kingdom|United Kingdom]], [[Cookbook:Cuisine of Australia|Australia]], and other places. The rings are made from slices of onion, coated with [[Cookbook:Batter|batter]], breadcrumbs, flour, or other cooking substance and deep-fried until golden-brown and served as an [[Cookbook:Appetizers|appetizer]].
+
+==Ingredients==
+*5 medium [[Cookbook:Onion|white onions]], [[Cookbook:Slicing|sliced]] into rings
+*1 [[Cookbook:Cup|cup]] [[Cookbook:Milk|milk]]
+*3 [[Cookbook:Egg|eggs]], beaten
+*[[Cookbook:Salt|Salt]], to taste
+*2 cups powdered [[Cookbook:Pancake|pancake]] mix
+*[[Cookbook:Parsley|Parsley]] sprigs, for [[Cookbook:Garnish|garnish]]
+
+==Procedure==
+#Separate the sliced onions into rings.
+#Combine milk, eggs and salt to taste in mixing bowl.
+#Soak onion rings in mixture 30 minutes.
+#Place pancake mix in shallow bowl.
+#Remove onion rings from milk mixture then dip in pancake mix.
+#[[Cookbook:Deep Fat Frying|Deep-fry]] rings in 375°F (190°C) oil until golden brown.
+#Remove from the oil, and place on [[Cookbook:Paper Towel|paper towels]].
+#To create an onion loaf, continue with the following steps:
+##Pack fried onion rings loosely, without pressing, into 8 x 4-inch [[Cookbook:Loaf Pan|loaf pan]].
+##[[Cookbook:Baking|Bake]] in a 400°F (200°C) oven for 10-15 minutes.
+##Turn onto serving plate and garnish with parsley.
+[[Category:Appetizer recipes]]
+[[Category:Deep fried recipes]]
+[[Category:Recipes using onion]]
+[[Category:Recipes with images]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using cow milk]]

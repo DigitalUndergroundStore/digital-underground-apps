@@ -1,0 +1,29 @@
+{{Recipe summary
+| Category = Macaroni and cheese recipes
+| Difficulty = 2
+}}
+
+{{Recipe}}
+
+== Ingredients ==
+* 8 [[Cookbook:Ounce|oz]] [[Cookbook:Macaroni|elbow macaroni]]
+* [[Cookbook:Salt|Salt]] to taste
+* ½ [[Cookbook:Cup|cup]] [[Cookbook:Milk|milk]]
+* ½ cup [[Cookbook:Cheese|cheese]] (of the chef's preference), [[Cookbook:Grating|grated]]
+* ¼ cup [[Cookbook:Butter|butter]]
+* 1 [[Cookbook:Egg|egg]]
+* dash of dried [[Cookbook:Parsley|parsley]] and [[Cookbook:Oregano|oregano]]
+
+== Procedure ==
+# Fill a pot with water, and add macaroni and salt. Bring to [[Cookbook:Boiling|boil]], stirring occasionally.
+# While waiting for the pasta to cook, heat the milk in a pot. Stir the grated cheese into milk. This should create a basic cheese sauce. If too thin, add more grated cheese; if too thick, add more milk.
+# When pasta becomes tender (chef's discretion), drain. 
+# Melt the butter in a pot, and stir in the drained macaroni until pasta is completely coated. Crack the raw egg into the mixture, and stir until completely incorporated. Add cheese sauce and herbs. 
+# Stir well, and serve hot.
+
+[[Category:Recipes for macaroni and cheese]]
+[[Category:Recipes using pasta and noodles]]
+[[Category:Recipes using cheese]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using cow milk]]

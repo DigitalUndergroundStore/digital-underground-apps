@@ -1,0 +1,57 @@
+__NOTOC__
+{{recipesummary
+| category = Dumpling recipes
+| time = 75–90 minutes
+| difficulty = 3
+| Image = [[Image:Ruskie.jpg|300px]]
+}}
+{{recipe}}  |  [[Cookbook:Cuisine of Poland|Cuisine of Poland]]
+
+'''Pierogi''' are Polish dumplings that are typically filled with potatoes, cheese, meat, sauerkraut and mushrooms, or wild fruits (strawberries, blueberries, etc.).
+
+== Ingredients ==
+*  1 [[Cookbook:Tablespoon|tbsp]] [[Cookbook:Salt|salt]] 
+*  ½ [[Cookbook:Cup|cup]] cold water
+*  1–2 large [[Cookbook:Egg|eggs]] 
+*  3½ cups [[Cookbook:All-purpose flour|all-purpose flour]], plus extra for rolling dough
+*  ~1 cup water
+*  1½ tbsp unsalted [[Cookbook:Butter|butter]], melted
+* 1 recipe [[Cookbook:Pierogie Filling:Saurkraut Filling|sauerkraut filling]] or [[Cookbook:Pierogie Filling:Cheese Filling|cheese filling]]
+
+== Procedure ==
+
+=== Dough ===
+# Place flour in a large bowl.
+# In a measuring cup, combine the salt, eggs, and the ½ cup cold water, and beat well with a fork. Add those ingredients to flour and mix with your hands until blended. 
+# Slowly mix in the remaining water (you do not have to add the entire cup, just keep adding until the dough feels wet). 
+# Add the butter and [[Cookbook:Kneading|knead]] until there are no lumps and it feels very smooth. This should take 15 minutes.  
+# Cover and refrigerate the dough for at least 1 hour, but for best results let it sit in the refrigerator for at least 24 hours.
+
+=== Assembly ===
+# Divide the dough into thirds and [[Cookbook:Dough#Rolling|roll out]] each on a lightly floured surface until the dough is approximately ⅛ [[Cookbook:Inch|inch]] thick.
+# With a cup or glass, cut as many circles as possible out of the dough, but do not lift them off the work surface.
+# Carefully lift each circle of dough from the table (a [[Cookbook:Spatula|spatula]] helps) and put between 1 tsp and 1 tbsp of filling in its center. The amount varies depending on the size of the glass that was used to cut the dough. 
+# For each circle, fold dough over to form a half-moon shape, and pinch edges closed, making sure there are no air pockets.
+# Repeat for the remaining dough.
+
+=== Boiling ===
+# Place no more than ⅓ of the pierogi at a time in [[Cookbook:Boiling|boiling]] salted water for 5–10 minutes.  
+# Drain in [[Cookbook:Colander|colander]] and lightly rinse with cold water—this will prevent them from sticking together. 
+# Serve immediately or [[Cookbook:Frying|fry]] in butter.  
+
+== Notes, tips, and variations ==
+* These will freeze well for up to 6 weeks. Prior to boiling them, place each dumplings on a sheet of [[Cookbook:Parchment Paper|parchment paper]] or a floured sheet of wax paper, being careful not to have them touching. Stack sheets on top of each other and place in an airtight freezer bag.
+* A standard recipe for mashed potatoes can also be used as filling.
+
+[[Category:Polish recipes]]
+[[Category:Dumpling recipes]]
+[[Category:Vegetarian recipes]]
+[[Category:Boiled recipes]]
+[[Category:Recipes using butter]]
+[[Category:Recipes using egg]]
+[[Category:Recipes using all-purpose flour]]
+
+
+[[fr:Livre de cuisine/Pierogi]]
+[[it:Libro di cucina/Ricette/Pierogi]]
+[[sv:Kokboken/Recept/Piroger]]

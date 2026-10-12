@@ -1,0 +1,45 @@
+{{Recipe summary
+| Category = Salad recipes
+| Difficulty = 2
+}}
+
+{{recipe}}
+
+'''Fattoush''' is a Lebanese salad, good for hot weather. The recipe uses two unusual ingredients: [[Cookbook:Sumac|sumac]] and [[Cookbook:Purslane|purslane]]. Ground sumac consists of the red sumac berries, and it used in Middle Eastern, particularly Lebanese, cooking. Purslane is a succulent with a lemony flavor, and it makes a nice salad green.
+==Ingredients==
+
+* ½ [[Cookbook:Cup|cup]] [[Cookbook:Water|water]]
+* 1 [[Cookbook:Teaspoon|teaspoon]] [[Cookbook:Cornstarch|cornstarch]]
+* ⅓ cup [[Cookbook:Lemon Juice|lemon juice]]
+* 2 cloves [[Cookbook:Garlic|garlic]], [[Cookbook:Mince|minced]]
+* 2 [[Cookbook:Teaspoon|teaspoons]] [[Cookbook:Sumac|sumac]] powder
+* [[Cookbook:Salt|Salt]] to taste
+* Ground [[Cookbook:Black Pepper|black pepper]] to taste
+* 1 head [[Cookbook:Romaine Lettuce|romaine lettuce]], torn into bite-size pieces
+* 1 medium [[Cookbook:Cucumber|cucumber]], [[Cookbook:Dice|diced]]
+* 2 large [[Cookbook:Tomato|tomatoes]], diced
+* 4 [[Cookbook:Green Onion|green onions]], [[Cookbook:Chopping|chopped]]
+* ¼ cup chopped fresh flat-leaf [[Cookbook:Parsley|parsley]]
+* ¼ cup chopped fresh [[Cookbook:Mint|mint]]
+* 1 green [[Cookbook:Bell Pepper|bell pepper]], seeded and chopped
+* 1 cup chopped [[Cookbook:Purslane|purslane]]
+* ½ package (5 [[Cookbook:Ounce|ounces]]) [[Cookbook:Arugula|arugula]] (rocket)
+* 4 [[Cookbook:Pita|pita]] rounds, toasted and torn into pieces
+
+==Procedure==
+#Mix the water and cornstarch in a small [[Cookbook:Saucepan|saucepan]] over medium-high heat until thickened. 
+#Remove from heat, and mix in lemon juice, garlic, sumac, salt, and pepper. 
+#Refrigerate until ready to use.
+#In a large bowl, toss together the lettuce, cucumber, tomatoes, green onions, parsley, mint, bell pepper, purslane, and arugula. 
+#Toss with the dressing, and serve with pita.
+
+== Notes, tips, and variations ==
+
+* If purslane is unavailable, [[Cookbook:Watercress|watercress]], parsley, or [[Cookbook:Arugula|arugula]] may be substituted.
+
+[[Category:Recipes for salad]]
+[[Category:Recipes using green bell pepper]]
+[[Category:Recipes using lemon juice]]
+[[Category:Recipes using cornstarch]]
+[[Category:Recipes using lettuce]]
+[[Category:Recipes using mint]]

@@ -1,0 +1,36 @@
+{{Recipe summary
+| Category = Thai recipes
+| Difficulty = 3
+}}
+
+{{recipe}}
+
+One of the most well known dishes in Thailand is '''pad kra pao gai (ผัดกะเพราไก่)''', a spicy stir fry containing basil and chicken. Most places, from small street food stalls to big restaurants, serve Pad Kra Pao Gai. One reason why the dish is famous is because the recipe does not require many ingredients. It is cheap and tasty, and it is quick and easy to cook. It is best served with hot jasmine rice and topped with a fried egg.
+
+== Ingredients ==
+*1½ [[Cookbook:Tablespoon|tablespoons]] cooking [[Cookbook:Oil and Fat|oil]]
+*5–10 Thai [[Cookbook:Chiles|chillis]]
+*5 cloves [[Cookbook:Garlic|garlic]], finely [[Cookbook:Chopping|chopped]]
+*500 g lean minced [[Cookbook:Chicken|chicken]]
+*125 g [[Cookbook:Green Bean|green beans]], finely chopped 
+*2 tablespoons [[Cookbook:Fish Sauce|fish sauce]]
+*3 tablespoons [[Cookbook:Oyster sauce|oyster sauce]]
+*1 [[Cookbook:Pinch|pinch]] of [[Cookbook:Sugar|sugar]]
+*15–20 Thai or sweet [[Cookbook:Basil|basil]] leaves
+
+== Procedure ==
+
+# Add the oil to a pan over high heat. Wait until the oil has heated up.
+# One the oil is hot, add the chillis and garlic to the pan and [[Cookbook:Stir-frying|stir fry]] for roughly 10 seconds.
+#Add the minced chicken, and stir fry with a spatula.
+#When the chicken is nearly done add the green beans.
+#Add the fish sauce, oyster sauce, and sugar. Stir fry for 2 minutes.
+#Turn the heat off, add basil, and stir for 5 seconds.
+#Serve with rice and a fried egg on top.
+
+[[Category:Thai recipes]]
+[[Category:Recipes using ground chicken]]
+[[Category:Recipes using basil]]
+[[Category:Recipes using sugar]]
+[[Category:Recipes using fish sauce]]
+[[Category:Recipes using green bean]]

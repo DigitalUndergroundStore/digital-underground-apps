@@ -1,0 +1,4463 @@
+/* Pantry Week — batch 2 library r201–r248, rebuilt from open-licence sources */
+"use strict";
+(function () {
+  if (typeof PW_STARTERS === 'undefined') return;
+  var extra = [
+  {
+    "id": "r201",
+    "name": "Skillet Lasagna",
+    "minutes": 45,
+    "servings": 8,
+    "tags": [
+      "dinner",
+      "collection-comfort",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 1.25,
+        "unit": "lb",
+        "item": "lean ground beef"
+      },
+      {
+        "qty": 32,
+        "unit": "oz",
+        "item": "pasta sauce"
+      },
+      {
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "mozzarella cheese"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "green bell pepper"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "Italian salad dressing"
+      },
+      {
+        "qty": 12,
+        "unit": "piece",
+        "item": "lasagna noodles"
+      },
+      {
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
+      }
+    ],
+    "steps": [
+      "Boil 2 clove garlic in a saucepan of water, then add 12 lasagna noodles and cook 8 minutes until tender. Drain them. Reserve 1.25 cup water from the pot for the sauce.",
+      "Brown 1.25 lb lean ground beef in a heavy skillet over medium-high heat for 8 minutes, until no pink remains and the meat reaches 160°F (71°C). Drain the fat.",
+      "Dice 1 green bell pepper. Add 32 oz pasta sauce, the reserved water, 1/2 cup Italian salad dressing, and the green bell pepper to the beef.",
+      "Stir over medium heat for 6 minutes until the green bell pepper is tender.",
+      "Cover and simmer 5 minutes more so the sauce thickens slightly.",
+      "Fold the drained lasagna noodles into the meat sauce. Cover and keep on low heat for 5 minutes until the noodles drink up some sauce.",
+      "Stir in 1.5 cup mozzarella cheese, turn off the heat, and let the skillet stand 3 minutes until the mozzarella cheese melts into the sauce."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Skillet Lasagna",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASkillet_Lasagna",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Duplicate baked ziti replaced with skillet lasagna. Scaled about one quarter larger for 8 servings. Ground beef is cooked to 160°F (71°C). The garlic-boiling water supplies the measured water for the sauce.",
+      "sources": [
+        {
+          "title": "Cookbook:Skillet Lasagna",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ASkillet_Lasagna",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r202",
+    "name": "Chicken Pot Pie Skillet",
+    "minutes": 55,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-comfort",
+      "moderate",
+      "classic",
+      "collection-classic"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "package",
+        "item": "pie crusts"
+      },
+      {
+        "qty": 0.33,
+        "unit": "cup",
+        "item": "butter"
+      },
+      {
+        "qty": 0.33,
+        "unit": "cup",
+        "item": "onion"
+      },
+      {
+        "qty": 0.33,
+        "unit": "cup",
+        "item": "all-purpose flour"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "chicken broth"
+      },
+      {
+        "qty": 0.67,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "cooked chicken"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "corn"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "peas"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 425°F (220°C). Press one pie crust from the package into an oven-safe skillet, letting the edge hang over the rim.",
+      "Melt 1/3 cup butter in a saucepan over medium heat. Cook 1/3 cup onion for 2 minutes until it turns translucent.",
+      "Stir in 1/3 cup all-purpose flour, 1/2 tsp salt, and 1/4 tsp black pepper and cook 1 minute until the paste is smooth.",
+      "Whisk in 1.5 cup chicken broth and 2/3 cup milk. Cook 4 minutes, stirring, until the sauce bubbles and thickens.",
+      "Fold in 3 cup cooked chicken, 1 cup corn, and 1 cup peas. Take the pan off the heat.",
+      "Spoon the filling into the skillet lined with one of the pie crusts. Cover with the second of the pie crusts, pinch the edges, and cut three vents.",
+      "Bake 35 minutes until the pie crusts are deep gold. Rest 5 minutes. The cooked chicken was already done; the bake heats the filling through."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Chicken Pot Pie II",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Pot_Pie_II",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Cooked in an oven-safe skillet instead of a pie pan. The filling and both crusts are the same foods as the pie. Chicken is already cooked in the ingredient list.",
+      "sources": [
+        {
+          "title": "Cookbook:Chicken Pot Pie II",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Pot_Pie_II",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r203",
+    "name": "Classic Meatloaf & Mash",
+    "minutes": 80,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-comfort",
+      "budget",
+      "classic",
+      "collection-classic"
+    ],
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "whole",
+        "item": "eggs"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "small",
+        "item": "onion"
+      },
+      {
+        "qty": 2,
+        "unit": "lb",
+        "item": "ground beef"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "stuffing mix"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 3,
+        "unit": "lb",
+        "item": "potatoes"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 0.33,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "fine salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "white pepper"
+      },
+      {
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "nutmeg"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 350°F (180°C). Dice 1 small onion. Beat 2 eggs with 1/2 cup water and 2 tbsp soy sauce.",
+      "Mix 2 lb ground beef with 8 oz stuffing mix and the onion until the stuffing disappears into the meat.",
+      "Work in the egg mixture, 1 tsp salt, and 1/2 tsp black pepper. Shape a loaf and set it in a loaf pan.",
+      "Bake uncovered about 65 minutes, until the center reaches 160°F (71°C). Drain the fat and rest the loaf 10 minutes.",
+      "Meanwhile peel 3 lb potatoes, cut them into chunks, and boil them in salted water for 18 minutes until a knife slides in easily. Drain.",
+      "Mash the potatoes with 6 tbsp butter, 1/3 cup milk, 1 tsp fine salt, 1/2 tsp white pepper, and 1/4 tsp nutmeg until creamy.",
+      "Slice the meatloaf and serve it beside the mashed potatoes."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Meatloaf II and Cookbook:Mashed Potatoes",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMeatloaf_II",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Meatloaf is baked to 160°F (71°C) and served with the mash. Salt and pepper on the meatloaf page were unmeasured and set to 1 tsp and 1/2 tsp. Mashed potatoes scaled from 4 servings to 6. Potato salt and pepper were unmeasured and set to 1 tsp fine salt and 1/2 tsp white pepper. Optional nutmeg is included.",
+      "sources": [
+        {
+          "title": "Cookbook:Meatloaf II",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AMeatloaf_II",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "title": "Cookbook:Mashed Potatoes",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AMashed_Potatoes",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r204",
+    "name": "Creamy Chicken Alfredo",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-comfort",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "chicken breast"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "cream"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "white flour"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "shallot"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "thyme"
+      },
+      {
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "oregano"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "garlic powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "parsley"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "red pepper"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "Parmesan cheese"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cooking oil"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "lemon juice"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "fettuccine"
+      }
+    ],
+    "steps": [
+      "Heat 1 tbsp cooking oil in a frying pan over medium heat. Chop 1/4 cup shallot.",
+      "Cook 1 lb chicken breast and the shallot for 6 minutes until the chicken is golden outside. Add 1/2 cup lemon juice and cook 8 minutes more, until the thickest piece reaches 165°F (74°C). Move the chicken to a baking dish and keep the pan juices.",
+      "Melt 1 tbsp butter in a clean pan over medium heat. Stir in 2 tbsp white flour and cook 3 minutes until the paste smells lightly toasted.",
+      "Whisk in 1 cup cream. Add 1 tsp thyme, 1/4 tsp oregano, 1/2 tsp garlic powder, 1 tbsp parsley, and 1/2 tsp red pepper.",
+      "Stir in the reserved juices, then lower the heat and add 1/2 cup Parmesan cheese. Stir until the sauce is smooth.",
+      "Pour the sauce over the chicken. Cover and bake at 350°F (175°C) for 20 minutes until the sauce is bubbling.",
+      "Boil 8 oz fettuccine in a pot of water for 10 minutes until tender. Serve the chicken and sauce over the fettuccine."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Chicken Alfredo",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Alfredo",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Chicken is cooked to 165°F (74°C) before it is sauced and baked. Shallot was chosen over onion. Fettuccine is 8 oz, matching the page's 2 cups of dry pasta.",
+      "sources": [
+        {
+          "title": "Cookbook:Chicken Alfredo",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Alfredo",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r205",
+    "name": "Baked Mac and Cheese",
+    "minutes": 65,
+    "servings": 8,
+    "tags": [
+      "dinner",
+      "collection-comfort",
+      "vegetarian",
+      "budget",
+      "classic",
+      "collection-classic"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "elbow macaroni"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "flour"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "powdered mustard"
+      },
+      {
+        "qty": 6,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 1,
+        "unit": "large",
+        "item": "red onion"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Tabasco sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "leaf",
+        "item": "bay leaf"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 2,
+        "unit": "whole",
+        "item": "eggs"
+      },
+      {
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "sharp cheddar"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "butter for crumbs"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "panko bread crumbs"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 350°F (175°C). Boil 1 lb elbow macaroni in a large pot of water until just tender, about 8 minutes, then drain.",
+      "Melt 6 tbsp butter in a pot over medium heat. Whisk in 6 tbsp flour and 2 tbsp powdered mustard and cook 5 minutes until the paste is lump-free.",
+      "Stir in 6 cup milk, 1 large red onion finely chopped, 2 bay leaf, and 1 tsp paprika. Simmer 10 minutes, then lift out the bay leaf.",
+      "Beat 2 eggs in a bowl, whisk in a ladle of the hot milk, then stir that back into the pot along with 1 tbsp Tabasco sauce.",
+      "Stir in three quarters of 1.5 lb sharp cheddar, 2 tsp salt, and 1 tsp black pepper until the cheddar melts.",
+      "Fold in the elbow macaroni and pour it into a large casserole. Top with the remaining sharp cheddar.",
+      "Melt 6 tbsp butter for crumbs, toss with 2 cup panko bread crumbs, and scatter the crumbs over the casserole.",
+      "Bake 30 minutes until the top is browned and the center is bubbling. Rest 10 minutes."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Macaroni and Cheese (Baked)",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMacaroni_and_Cheese_(Baked)",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Doubled from 1/2 lb pasta to 1 lb for 8 servings. Black pepper was unmeasured and set to 1 tsp for the doubled batch. Tabasco is stirred in with the tempered eggs.",
+      "sources": [
+        {
+          "title": "Cookbook:Macaroni and Cheese (Baked)",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AMacaroni_and_Cheese_(Baked)",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r206",
+    "name": "Tuna Noodle Casserole",
+    "minutes": 40,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-comfort",
+      "budget"
+    ],
+    "ingredients": [
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "tuna"
+      },
+      {
+        "qty": 0.75,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "egg noodles"
+      },
+      {
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "frozen peas"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of mushroom soup"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dry bread crumbs"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "dried minced onion"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "hot sauce"
+      },
+      {
+        "qty": 4,
+        "unit": "oz",
+        "item": "cheese"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 400°F (200°C). Cook enough egg noodles to yield 3 cup, then drain.",
+      "Flake 12 oz tuna into a 2-quart baking dish.",
+      "Stir in 3/4 cup milk, the egg noodles, 1.5 cup frozen peas, 1 can cream of mushroom soup, 2 tsp dried minced onion, and 1 tsp hot sauce.",
+      "Bake 25 minutes until the casserole is bubbling at the edges and the peas are hot.",
+      "Melt 1 tbsp butter and mix it with 2 tbsp dry bread crumbs.",
+      "Scatter the crumbs and 4 oz cheese over the top.",
+      "Bake 5 minutes more until the cheese melts and the crumbs turn gold."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Tuna Noodle Casserole",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Noodle_Casserole",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Scaled down from two 12-oz pouches and two large cans of soup to 12 oz tuna and 1 can of soup for 6 servings. Both the buttered crumbs and the cheese go on at the end.",
+      "sources": [
+        {
+          "title": "Cookbook:Tuna Noodle Casserole",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Noodle_Casserole",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r207",
+    "name": "Roast Chicken with 40 Cloves of Garlic",
+    "minutes": 110,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-one-pan",
+      "moderate",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "whole",
+        "item": "chicken"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "country roast chicken seasoning"
+      },
+      {
+        "qty": 40,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "large",
+        "item": "lemon"
+      },
+      {
+        "qty": 0.5,
+        "unit": "bunch",
+        "item": "thyme"
+      },
+      {
+        "qty": 5,
+        "unit": "sprig",
+        "item": "rosemary"
+      },
+      {
+        "qty": 0.5,
+        "unit": "bunch",
+        "item": "flat-leaf parsley"
+      }
+    ],
+    "steps": [
+      "Loosen the skin on 1 whole chicken and push 1/4 cup country roast chicken seasoning onto the flesh beneath it. Refrigerate at least 1 hour; that rest is not counted in the cook time.",
+      "Tie the legs together. Microwave 40 clove garlic on low for 6 minutes until the cloves smell sweet and give slightly when pressed, then stuff them into the cavity.",
+      "Heat the oven to 375°F (190°C). Rub the chicken with 2 tbsp olive oil.",
+      "Lay 1/2 bunch thyme, 5 sprig rosemary, and 1/2 bunch flat-leaf parsley in a roasting pan and cover them with thin slices of 1 large lemon.",
+      "Set the chicken breast-side up on the lemon and herbs. Roast 45 minutes at 375°F (190°C).",
+      "Raise the heat to 425°F (220°C) and roast about 40 minutes more, until the thigh and the breast both read 165°F (74°C) and the juices at the thigh run clear.",
+      "Rest the chicken 10 minutes before carving."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:40 Cloves in a Roast Chicken",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3A40_Cloves_in_a_Roast_Chicken",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Duplicate lemon chicken replaced with the 40-clove roast. Olive oil was unmeasured and set to 2 tbsp. The 1-hour seasoning rest is excluded from the minutes. Chicken is roasted to 165°F (74°C).",
+      "sources": [
+        {
+          "title": "Cookbook:40 Cloves in a Roast Chicken",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3A40_Cloves_in_a_Roast_Chicken",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r208",
+    "name": "Chicken and Andouille Sausage Gumbo",
+    "minutes": 90,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "budget",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "chicken breast"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "canola oil"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "all-purpose flour"
+      },
+      {
+        "qty": 1,
+        "unit": "large",
+        "item": "bell pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "onion"
+      },
+      {
+        "qty": 2,
+        "unit": "stalk",
+        "item": "celery"
+      },
+      {
+        "qty": 4,
+        "unit": "cup",
+        "item": "chicken stock"
+      },
+      {
+        "qty": 4,
+        "unit": "oz",
+        "item": "andouille sausage"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "cayenne pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Cut 1 lb chicken breast into chunks. Brown the outside in 1 tbsp of the canola oil over medium-high heat for 4 minutes, then set it aside. It will finish in the pot.",
+      "Whisk the remaining canola oil and 1/2 cup all-purpose flour in a heavy pot over medium heat. Cook about 20 minutes, stirring, until the roux is a deep peanut brown.",
+      "Chop 1 large bell pepper, 1 medium onion, and 2 stalk celery. Stir them into the roux and cook 8 minutes until they soften.",
+      "Slowly whisk in 4 cup chicken stock and bring the pot to a simmer.",
+      "Add the chicken and cook 15 minutes at a gentle simmer until the center reaches 165°F (74°C).",
+      "Slice 4 oz andouille sausage and add it. Simmer 20 minutes until the sausage is heated through and the gumbo has thickened.",
+      "Season with 1/2 tsp cayenne pepper and 1 tsp salt. Ladle into bowls."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Chicken and Andouille Sausage Gumbo",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_and_Andouille_Sausage_Gumbo",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Duplicate sausage-and-peppers sheet pan replaced with gumbo. Scaled to about half for 4 servings. Chicken stock was unmeasured and set to 4 cups. Cayenne and salt were unmeasured and set to 1/2 tsp and 1 tsp. Chicken is cooked to 165°F (74°C). Rice and green onions from the serving line are not in the ingredient list and were left off.",
+      "sources": [
+        {
+          "title": "Cookbook:Chicken and Andouille Sausage Gumbo",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_and_Andouille_Sausage_Gumbo",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r209",
+    "name": "Slow Cooker Pulled Pork",
+    "minutes": 480,
+    "servings": 10,
+    "tags": [
+      "dinner",
+      "collection-slow-cooker",
+      "collection-bbq",
+      "budget",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 5,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "pickling salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "honey"
+      },
+      {
+        "qty": 5,
+        "unit": "lb",
+        "item": "pork butt"
+      },
+      {
+        "qty": 4,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 4,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dehydrated lemon peel"
+      },
+      {
+        "qty": 4,
+        "unit": "tsp",
+        "item": "cayenne pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "dried rosemary"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dark brown sugar"
+      },
+      {
+        "qty": 10,
+        "unit": "piece",
+        "item": "hamburger buns"
+      }
+    ],
+    "steps": [
+      "Stir 5 cup water, 8 oz pickling salt, and 1/2 cup honey until the pickling salt dissolves. Submerge 5 lb pork butt and refrigerate 8 to 12 hours. That brine is excluded from the cook time.",
+      "Pat the pork butt dry. Mix 4 tsp paprika, 4 tsp black pepper, 2 tbsp dehydrated lemon peel, 4 tsp cayenne pepper, 1 tbsp dried rosemary, and 2 tbsp dark brown sugar, and rub the mixture over the meat.",
+      "Set the rubbed pork butt in a slow cooker. Cover and cook on low for 8 hours; the meat releases enough liquid to braise itself.",
+      "The pork is ready when it is well above 145°F (63°C), about 195°F (90°C) in the center, and it shreds when pulled with two forks.",
+      "Rest 15 minutes, then shred, discarding large pieces of fat.",
+      "Spoon the shredded pork onto 10 hamburger buns."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Pulled Pork Sandwiches",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APulled_Pork_Sandwiches",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Slow cooker used instead of an apple-wood smoker. Apple wood was dropped because a slow cooker cannot burn it. Scaled from a 6–8 lb butt to 5 lb for 10 servings. The overnight brine is excluded from the minutes. Pork is cooked until it shreds, about 195°F (90°C).",
+      "sources": [
+        {
+          "title": "Cookbook:Pulled Pork Sandwiches",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3APulled_Pork_Sandwiches",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r210",
+    "name": "Slow Cooker Chicken Tikka",
+    "minutes": 240,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-slow-cooker",
+      "moderate",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "chicken breast"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "mustard seed oil"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 0.67,
+        "unit": "cup",
+        "item": "plain yogurt"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "lemon juice"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "tomato paste"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "cilantro"
+      },
+      {
+        "qty": 4,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 2,
+        "unit": "piece",
+        "item": "red chile"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "garam masala"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin powder"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "turmeric"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Chop 4 clove garlic and 2 piece red chile. Stir them with 1 tbsp mustard seed oil, 1/4 cup milk, 2/3 cup plain yogurt, 2 tbsp lemon juice, 1 tbsp tomato paste, 2 tbsp cilantro, 2 tsp paprika, 2 tsp garam masala, 1 tsp cumin powder, 1/2 tsp turmeric, and 1 tsp salt.",
+      "Cut 1.5 lb chicken breast into cubes and coat them in that marinade. Refrigerate overnight if you can; the overnight wait is not included in the minutes.",
+      "Transfer the chicken and all of the marinade to a slow cooker.",
+      "Cover and cook on low for 4 hours.",
+      "Check that the cubes reach 165°F (74°C) and break apart when pressed with a fork.",
+      "Spoon the chicken tikka into bowls with the sauce from the pot."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Chicken Tikka",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Tikka",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Slow cooker instead of a tandoor or grill. The lettuce-wrap variant is a different recipe. Overnight marinade is excluded from the minutes. Chicken is cooked to 165°F (74°C). Naan and rice are not in the ingredient list and were left off.",
+      "sources": [
+        {
+          "title": "Cookbook:Chicken Tikka",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Tikka",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r211",
+    "name": "One-Pan Shrimp Fajitas",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-one-pan",
+      "collection-texmex",
+      "moderate",
+      "easy",
+      "classic",
+      "collection-classic",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "shrimp"
+      },
+      {
+        "qty": 3,
+        "unit": "medium",
+        "item": "bell pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "red onion"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "fajita seasoning"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 6,
+        "unit": "piece",
+        "item": "flour tortillas"
+      },
+      {
+        "qty": 1,
+        "unit": "whole",
+        "item": "lime"
+      },
+      {
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Peel 1 lb shrimp. Slice 3 bell pepper and 1 red onion.",
+      "Toss the shrimp, bell pepper, and red onion with 2 tbsp olive oil, 2 tbsp fajita seasoning, and 1/4 tsp salt.",
+      "Heat a large skillet over high heat until very hot, about 2 minutes.",
+      "Spread the shrimp and vegetables in the skillet and cook 4 minutes without stirring, then stir and cook 3 minutes more until the shrimp are opaque and reach 145°F (63°C) and the peppers are charred at the edges.",
+      "Warm 6 flour tortillas in a dry skillet over medium heat for 30 seconds per side until they bend easily.",
+      "Cut 1 lime into wedges, squeeze some over the filling, and serve the shrimp and peppers in the tortillas with the remaining wedges."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No shrimp fajita page.",
+      "sources": []
+    }
+  },
+  {
+    "id": "r212",
+    "name": "Slow Cooker Beef Chili",
+    "minutes": 360,
+    "servings": 8,
+    "tags": [
+      "dinner",
+      "collection-slow-cooker",
+      "budget",
+      "classic",
+      "collection-classic",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "ground beef"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "tomato sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "kidney beans"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "black beans"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "pinto beans"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "diced tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 1,
+        "unit": "small",
+        "item": "onion"
+      },
+      {
+        "qty": 1,
+        "unit": "stalk",
+        "item": "celery"
+      },
+      {
+        "qty": 1.5,
+        "unit": "tsp",
+        "item": "cumin powder"
+      },
+      {
+        "qty": 1.5,
+        "unit": "tbsp",
+        "item": "chili powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Brown 1 lb ground beef in a skillet over medium-high heat for 8 minutes, until no pink remains and the meat reaches 160°F (71°C). Drain the fat.",
+      "Dice 1 small onion and 1 stalk celery.",
+      "Put the beef, onion, and celery into a slow cooker with 1 can tomato sauce, 1 can kidney beans with their liquid, 1 can black beans with their liquid, and 1 can pinto beans with their liquid.",
+      "Add 1 can diced tomatoes, 1 cup water, 1.5 tsp cumin powder, 1.5 tbsp chili powder, 1 tsp black pepper, and 1 tsp salt.",
+      "Cover and cook on low for 6 hours, stirring once or twice if you are nearby.",
+      "The chili is done when the beans are soft and the sauce is thick enough to coat a spoon."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Chili with Meat",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChili_with_Meat",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Slow cooker beef chili from the same chili page as the turkey version in another recipe. Ground beef is used and cooked to 160°F (71°C). Halved from the very large stovetop batch to 8 servings. The long simmer happens in the slow cooker instead of on the stove.",
+      "sources": [
+        {
+          "title": "Cookbook:Chili with Meat",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AChili_with_Meat",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r213",
+    "name": "Honey Garlic Chicken",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "budget",
+      "easy",
+      "classic",
+      "collection-classic",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "piece",
+        "item": "chicken breast"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "honey"
+      },
+      {
+        "qty": 4,
+        "unit": "clove",
+        "item": "garlic"
+      }
+    ],
+    "steps": [
+      "Cut 4 chicken breast into bite-size pieces. Mince 4 clove garlic.",
+      "Coat a frying pan with 2 tbsp olive oil and heat it over medium heat until the oil shimmers.",
+      "Add the chicken and cook 4 minutes, stirring, until the outside loses its raw color.",
+      "Pour in 1/4 cup honey and add the garlic.",
+      "Cook over medium heat for 8 minutes, stirring often, until the sauce turns darker and thick and the chicken reaches 165°F (74°C).",
+      "Take the pan off the heat before the honey smells bitter."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Honey Garlic Chicken",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AHoney_Garlic_Chicken",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Sticky barbecue thighs replaced with honey garlic chicken. Scaled from 2 breasts to 4. Olive oil was unmeasured and set to 2 tbsp. Honey was unmeasured and set to 1/4 cup. The page lists a fraction of a garlic clove; it is raised to 4 cloves so four breasts taste of garlic. Chicken is cooked to 165°F (74°C).",
+      "sources": [
+        {
+          "title": "Cookbook:Honey Garlic Chicken",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AHoney_Garlic_Chicken",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r214",
+    "name": "Corn on the Cob",
+    "minutes": 50,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-bbq",
+      "collection-grill",
+      "vegetarian",
+      "budget",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "ear",
+        "item": "corn"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Peel the husks of 4 ear corn back without tearing them off, and pull away the silk.",
+      "Fold the husks back over the kernels. Soak the ears in cold water for 30 minutes.",
+      "Heat a grill to medium, about 400°F (200°C).",
+      "Lay the corn on the grill and cook 15 minutes, turning every few minutes, until the kernels are hot and a few husk edges char.",
+      "Pull the husks back. Spread 2 tbsp butter over the hot kernels.",
+      "Sprinkle 1 tsp salt over the buttered corn and serve."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Corn on the Cob with Husks",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACorn_on_the_Cob_with_Husks",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Corn ribs replaced with corn on the cob. Butter and salt were optional and unmeasured; they are set to 2 tbsp and 1 tsp. The 30-minute soak is included in the time.",
+      "sources": [
+        {
+          "title": "Cookbook:Corn on the Cob with Husks",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ACorn_on_the_Cob_with_Husks",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r215",
+    "name": "BBQ Brisket Sandwiches",
+    "minutes": 600,
+    "servings": 8,
+    "tags": [
+      "dinner",
+      "collection-bbq",
+      "moderate",
+      "classic",
+      "collection-classic",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "lb",
+        "item": "mesquite chunks"
+      },
+      {
+        "qty": 5,
+        "unit": "lb",
+        "item": "beef brisket"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "vinegar mixture"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "Dijon mustard"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "barbecue rub"
+      },
+      {
+        "qty": 8,
+        "unit": "piece",
+        "item": "hamburger buns"
+      }
+    ],
+    "steps": [
+      "Heat a smoker to 250°F (120°C) and set 2 lb mesquite chunks in the firebox so they smolder.",
+      "Trim the fat cap on 5 lb beef brisket to about 1/4 inch. Seal the brisket in a foil pouch with 1/4 cup vinegar mixture, 2 tbsp Worcestershire sauce, and 2 tbsp honey.",
+      "Smoke the pouch for 5 hours, replacing mesquite chunks as they burn down.",
+      "Open the pouch, spread 1/2 cup Dijon mustard over the brisket, and press 1/2 cup barbecue rub into the surface.",
+      "Return the brisket to the smoker, unwrapped, for about 5 hours more, until it is sliceable and the thickest point reads about 200°F (93°C).",
+      "Rest 20 minutes. Slice across the grain, chop roughly, and pile the meat into 8 hamburger buns. Shake the remaining vinegar mixture over the sandwiches."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Barbecue Beef Brisket Sandwiches",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABarbecue_Beef_Brisket_Sandwiches",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Scaled from an 8–10 lb brisket to 5 lb for 8 servings, and the smoke time is shortened to about 10 hours so the smaller cut still becomes sliceable. Brisket is cooked to about 200°F (93°C). Vinegar mixture and barbecue rub are kept as the blends named on the page.",
+      "sources": [
+        {
+          "title": "Cookbook:Barbecue Beef Brisket Sandwiches",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ABarbecue_Beef_Brisket_Sandwiches",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r216",
+    "name": "Grilled BBQ Pork Chops",
+    "minutes": 100,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-bbq",
+      "collection-grill",
+      "moderate",
+      "classic",
+      "collection-classic",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "salt"
+      },
+      {
+        "qty": 0.75,
+        "unit": "cup",
+        "item": "honey"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "apple cider vinegar"
+      },
+      {
+        "qty": 4,
+        "unit": "sprig",
+        "item": "rosemary"
+      },
+      {
+        "qty": 10,
+        "unit": "sprig",
+        "item": "thyme"
+      },
+      {
+        "qty": 1.5,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "garlic"
+      },
+      {
+        "qty": 2,
+        "unit": "lb",
+        "item": "ice"
+      },
+      {
+        "qty": 4,
+        "unit": "chop",
+        "item": "pork chops"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "black peppercorns"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "ancho chile powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "oil"
+      }
+    ],
+    "steps": [
+      "Warm 2 cup apple cider vinegar, then mix it with 1 cup salt, 3/4 cup honey, chopped 4 sprig rosemary, chopped 10 sprig thyme, 1.5 tbsp cayenne pepper, and 2 tbsp minced garlic in a zip-top bag.",
+      "Add 2 lb ice and shake until the ice mostly melts and the brine is cool. This takes about 5 minutes.",
+      "Add 4 pork chops, seal the bag, and refrigerate 90 minutes. Discard the brine afterward and pat the chops dry.",
+      "Crack 2 tbsp black peppercorns and mix them with 1 tbsp smoked paprika and 1 tbsp ancho chile powder. Rub both sides of each pork chop.",
+      "Oil the grill grate with 1 tbsp oil and heat the grill to high.",
+      "Grill the pork chops covered, 2 minutes, rotate them, cook 2 minutes more, then flip and repeat until the center reaches 145°F (63°C).",
+      "Rest the pork chops uncovered for 5 minutes, which covers the 3-minute rest, then serve."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Grilled Pork Chops",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Pork_Chops",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Pork is grilled to 145°F (63°C) and rested 5 minutes. Grill oil was unmeasured and set to 1 tbsp. The 90-minute brine is included in the time. The overnight-length brine on other pork recipes is not used here.",
+      "sources": [
+        {
+          "title": "Cookbook:Grilled Pork Chops",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Pork_Chops",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r217",
+    "name": "German Meatballs",
+    "minutes": 55,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "budget",
+      "classic",
+      "collection-classic"
+    ],
+    "ingredients": [
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "ground beef"
+      },
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "ground pork"
+      },
+      {
+        "qty": 1,
+        "unit": "large",
+        "item": "onion"
+      },
+      {
+        "qty": 8,
+        "unit": "fillet",
+        "item": "anchovy fillets"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "capers"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "Riesling"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "crème fraîche"
+      },
+      {
+        "qty": 1.5,
+        "unit": "tbsp",
+        "item": "mixed herbs"
+      },
+      {
+        "qty": 2,
+        "unit": "whole",
+        "item": "eggs"
+      },
+      {
+        "qty": 3,
+        "unit": "slice",
+        "item": "brown bread"
+      },
+      {
+        "qty": 3,
+        "unit": "whole",
+        "item": "lemon"
+      },
+      {
+        "qty": 3,
+        "unit": "whole",
+        "item": "lime"
+      },
+      {
+        "qty": 3,
+        "unit": "piece",
+        "item": "whole cloves"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "flour"
+      },
+      {
+        "qty": 6,
+        "unit": "cup",
+        "item": "water"
+      }
+    ],
+    "steps": [
+      "Chop 1 large onion and cook it in a dry skillet over medium heat for 6 minutes until translucent but not browned. Soak 3 slice brown bread in a little of the water, then squeeze it.",
+      "Mix the onion and bread with 12 oz ground beef, 12 oz ground pork, 8 anchovy fillets chopped fine, 2 eggs, 1.5 tbsp mixed herbs, 1 tsp salt, and 1/2 tsp black pepper.",
+      "Roll meatballs about 3/4 inch wide.",
+      "Bring 6 cup water to a simmer with the juice of 3 lemon, 3 piece whole cloves, and 1 tbsp olive oil.",
+      "Lower the meatballs into the simmer, in batches if needed, and cook until they float, about 4 minutes. Lift them out. They will finish in the sauce.",
+      "Whisk 3 tbsp flour with a splash of the cooking liquid. Stir that paste, 1 cup Riesling, and 1 cup crème fraîche into the pot. Simmer 8 minutes until the sauce thickens.",
+      "Return the meatballs and cook 10 minutes more, until the center reaches 160°F (71°C). Stir in 3 tbsp capers and the zest of 3 lime in the last minute.",
+      "Lift the meatballs out, strain the sauce, then return both to the pot and warm 2 minutes before serving."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:German Meatballs",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AGerman_Meatballs",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "No barbecue-meatball page. These are the sourced meatballs. Scaled about one and a half times for 6 servings. Salt and black pepper were unmeasured and set to 1 tsp and 1/2 tsp. Olive oil is 1 tbsp. Poaching water was set to 6 cups. Meatballs finish at 160°F (71°C). A splash of the cooking water binds the flour.",
+      "sources": [
+        {
+          "title": "Cookbook:German Meatballs",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AGerman_Meatballs",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r218",
+    "name": "Charred BBQ Cauliflower Steaks",
+    "minutes": 28,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-bbq",
+      "collection-grill",
+      "vegetarian",
+      "vegan",
+      "budget",
+      "easy",
+      "classic",
+      "collection-classic",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "head",
+        "item": "cauliflower"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "barbecue sauce"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "parsley"
+      }
+    ],
+    "steps": [
+      "Heat a grill to medium-high, about 425°F (220°C). Slice 2 head cauliflower lengthwise into 1-inch steaks, keeping the core attached so they hold together.",
+      "Brush both faces with 3 tbsp olive oil and season with 1 tsp smoked paprika, 1/2 tsp cumin, and 1/2 tsp salt.",
+      "Grill 5 minutes per side until the faces are charred and a knife meets slight resistance in the stem.",
+      "Brush 1/2 cup barbecue sauce over the steaks and grill 2 minutes more until the sauce turns sticky and dark at the edges.",
+      "Chop the parsley so the leaves are small enough to scatter.",
+      "Scatter the parsley over the cauliflower steaks and serve while they are still hot from the grill."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No barbecue cauliflower steak page. Gobi Bhagi and Cauliflower Cheese are different dishes.",
+      "sources": []
+    }
+  },
+  {
+    "id": "r219",
+    "name": "Minestrone alla Capucina",
+    "minutes": 35,
+    "servings": 8,
+    "tags": [
+      "dinner",
+      "collection-soup",
+      "budget",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "fillet",
+        "item": "anchovy"
+      },
+      {
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 2,
+        "unit": "medium",
+        "item": "onion"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 4,
+        "unit": "cup",
+        "item": "stock"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Rinse 4 anchovy fillets and mash them with the side of a knife.",
+      "Melt 4 tbsp butter in a saucepan over medium heat.",
+      "Add the anchovy, 2 medium onion sliced into rounds, and 3 cup cooked rice. Cook 6 minutes, stirring, until the rice turns gold at the edges and the anchovy dissolves.",
+      "Lift out the onion slices. Stir in 1 tsp salt.",
+      "Add 4 cup stock a ladle at a time, letting the rice absorb each addition over medium-low heat.",
+      "Simmer about 15 minutes until the pot is as thick as a soft rice pudding and the rice is fully hot."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Minestrone alla Capucina",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMinestrone_alla_Capucina",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Renamed because this page is anchovy, butter, onion, rice, and stock, not a vegetable minestrone. Scaled up for 8 servings. Butter and stock were unmeasured and set to 4 tbsp and 4 cups. Salt is called for in the method and set to 1 tsp.",
+      "sources": [
+        {
+          "title": "Cookbook:Minestrone alla Capucina",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AMinestrone_alla_Capucina",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r220",
+    "name": "Chicken Soup",
+    "minutes": 50,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-soup",
+      "budget",
+      "classic",
+      "collection-classic",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 6,
+        "unit": "thigh",
+        "item": "boneless chicken thighs"
+      },
+      {
+        "qty": 4,
+        "unit": "medium",
+        "item": "carrots"
+      },
+      {
+        "qty": 4,
+        "unit": "stalk",
+        "item": "celery"
+      },
+      {
+        "qty": 4,
+        "unit": "cup",
+        "item": "chicken stock"
+      },
+      {
+        "qty": 1,
+        "unit": "bunch",
+        "item": "dill"
+      },
+      {
+        "qty": 6,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Put 6 boneless chicken thighs into 6 cup cold water in a pot. Bring it slowly toward a boil over medium heat, skimming the foam that rises, about 12 minutes.",
+      "Lift the chicken thighs out and cut them into bite-size pieces. Return the pieces to the pot.",
+      "Chop 4 medium carrots and slice 4 stalk celery. Chop 1 bunch dill.",
+      "Add the carrots, celery, dill, and 4 cup chicken stock. Return the pot to a simmer.",
+      "Simmer 30 minutes, until the carrots are tender and the chicken thighs read 165°F (74°C).",
+      "Stir in 1 tsp salt. The broth should taste lightly seasoned, and the chicken should be fully cooked through."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Chicken Soup I",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Soup_I",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Named Chicken Soup because the page has no noodles. The Wikibooks title is Chicken Soup I. Amounts were unmeasured and set for 6 servings. Salt was unmeasured and set to 1 tsp. Chicken is simmered to 165°F (74°C).",
+      "sources": [
+        {
+          "title": "Cookbook:Chicken Soup I",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Soup_I",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r221",
+    "name": "Spicy Black Bean Soup",
+    "minutes": 90,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-soup",
+      "vegetarian",
+      "vegan",
+      "budget",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "dried black beans"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 2,
+        "unit": "large",
+        "item": "onion"
+      },
+      {
+        "qty": 5,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 6,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "tomato"
+      },
+      {
+        "qty": 1,
+        "unit": "sprig",
+        "item": "epazote"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "chipotle chile"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "coriander"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1,
+        "unit": "large",
+        "item": "tomato"
+      },
+      {
+        "qty": 3,
+        "unit": "medium",
+        "item": "tomatillos"
+      },
+      {
+        "qty": 1,
+        "unit": "small",
+        "item": "red onion"
+      },
+      {
+        "qty": 1,
+        "unit": "piece",
+        "item": "jalapeño"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "cilantro"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "fine salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      }
+    ],
+    "steps": [
+      "Pick through 1 lb dried black beans, rinse them, and drain. An overnight soak is optional and is not counted here.",
+      "Heat 2 tbsp vegetable oil in a heavy pot over medium heat. Dice 2 large onion and cook them 5 minutes until translucent.",
+      "Add the black beans, 5 clove garlic minced, and 6 cup water. Bring to a boil, skimming foam, then simmer about 60 minutes until the beans are soft.",
+      "Stir in 1 cup chopped tomato, 1 sprig epazote, 1 tbsp chipotle chile, 1 tsp cumin, 1 tsp coriander, 2 tsp salt, and 1/2 tsp black pepper. Simmer 15 minutes until some beans break down and the broth thickens.",
+      "Dice 1 large tomato, 3 medium tomatillos, 1 small red onion, and 1 jalapeño. Chop 1/4 cup cilantro and toss them with 1/2 tsp fine salt.",
+      "Ladle the soup into bowls and top each with a spoonful of the tomato, tomatillo, red onion, jalapeño, and cilantro salsa."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Black Bean Soup with Tomato-Tomatillo Salsa",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABlack_Bean_Soup_with_Tomato-Tomatillo_Salsa",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Optional crème fraîche was left off so the soup stays dairy-free and vegan. Black pepper is mentioned in the method and set to 1/2 tsp. Fine salt for the salsa was unmeasured and set to 1/2 tsp. An optional bean soak is excluded from the 90 minutes.",
+      "sources": [
+        {
+          "title": "Cookbook:Black Bean Soup with Tomato-Tomatillo Salsa",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ABlack_Bean_Soup_with_Tomato-Tomatillo_Salsa",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r222",
+    "name": "Beef and Barley Stew",
+    "minutes": 180,
+    "servings": 8,
+    "tags": [
+      "dinner",
+      "collection-soup",
+      "moderate",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 3,
+        "unit": "lb",
+        "item": "beef stew meat"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "flour"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "white onion"
+      },
+      {
+        "qty": 3,
+        "unit": "stalk",
+        "item": "celery"
+      },
+      {
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 8,
+        "unit": "cup",
+        "item": "beef broth"
+      },
+      {
+        "qty": 4,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "barley"
+      },
+      {
+        "qty": 4,
+        "unit": "medium",
+        "item": "potatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "mushrooms"
+      },
+      {
+        "qty": 1,
+        "unit": "package",
+        "item": "frozen green beans"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "diced tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "tomato paste"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 4,
+        "unit": "large",
+        "item": "carrots"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "thyme"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "marjoram"
+      },
+      {
+        "qty": 1,
+        "unit": "bunch",
+        "item": "parsley"
+      }
+    ],
+    "steps": [
+      "Toss 3 lb beef stew meat with 1/4 cup flour, 1 tsp salt, 1/2 tsp black pepper, and 1 tsp paprika.",
+      "Heat 2 tbsp vegetable oil in a large pot over medium-high heat and brown the beef on all sides, about 8 minutes. Add a splash of the beef broth to lift the browned bits.",
+      "Dice 1 white onion and 3 stalk celery, and halve 3 clove garlic. Cook them in the pot for 4 minutes until the onion softens. Add 1 tsp thyme and 2 tsp marjoram.",
+      "Pour in the rest of 8 cup beef broth and 4 cup water. Simmer on low for 90 minutes until the beef is starting to soften.",
+      "Stir in 1 cup barley and simmer 30 minutes.",
+      "Add 4 medium potatoes cubed, 1 lb mushrooms sliced, 1 package frozen green beans, 1 can diced tomatoes, 1 can tomato paste, 4 large carrots cut into chunks, and 1 tbsp Worcestershire sauce.",
+      "Simmer 45 minutes more, until the beef is fork-tender and the barley is plump. Chop 1 bunch parsley and stir it in just before ladling."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Beef and Barley Stew",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABeef_and_Barley_Stew",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Water to cover was set at 4 cups, and two cartons of broth are written as 8 cups. Salt, pepper, and paprika were unmeasured and set to 1 tsp, 1/2 tsp, and 1 tsp. Worcestershire was a slug and is set to 1 tbsp. The second method's bay leaf is not in the ingredient list and was left out. Beef is simmered until fork-tender.",
+      "sources": [
+        {
+          "title": "Cookbook:Beef and Barley Stew",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ABeef_and_Barley_Stew",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r223",
+    "name": "Creamy Tomato and Bean Soup",
+    "minutes": 40,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-soup",
+      "vegetarian",
+      "moderate",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "yellow onion"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "white beans"
+      },
+      {
+        "qty": 6,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "dried oregano"
+      },
+      {
+        "qty": 2,
+        "unit": "leaf",
+        "item": "sage"
+      },
+      {
+        "qty": 2,
+        "unit": "can",
+        "item": "crushed tomatoes"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "tomato paste"
+      },
+      {
+        "qty": 1,
+        "unit": "pinch",
+        "item": "crushed red pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "cream cheese"
+      },
+      {
+        "qty": 12,
+        "unit": "leaf",
+        "item": "basil"
+      }
+    ],
+    "steps": [
+      "Set a heavy Dutch oven on a medium burner and warm 1 tbsp olive oil for about half a minute, until the surface ripples.",
+      "Add 1 medium yellow onion chopped roughly, 1 tsp salt, and 1/2 tsp black pepper. Cook 3 minutes until the onion softens.",
+      "Add 1 can white beans with their liquid, 6 clove garlic halved, 1/2 tsp dried oregano, and 2 leaf sage. Simmer 4 minutes.",
+      "Stir in 2 can crushed tomatoes, 1 can tomato paste, 1 pinch crushed red pepper, and 1 cup water. Simmer 8 minutes, stirring a few times.",
+      "Take the pot off the heat and stir in 8 oz cream cheese until the lumps disappear.",
+      "Blend the soup until smooth, then return it to the lowest heat for 12 minutes, stirring often so the bottom does not catch.",
+      "Tear 12 leaf basil, stir most of it into the soup, and save a few leaves for the top of each bowl."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Creamy Tomato and Bean Soup",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACreamy_Tomato_and_Bean_Soup",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Duplicate tortellini soup replaced with this soup. Salt and pepper were unmeasured and set to 1 tsp and 1/2 tsp. Garlic is 6 cloves, inside the page's 5–10 range. The batch is served as 4 generous bowls.",
+      "sources": [
+        {
+          "title": "Cookbook:Creamy Tomato and Bean Soup",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ACreamy_Tomato_and_Bean_Soup",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r224",
+    "name": "Lentil Sausage Stew",
+    "minutes": 70,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-soup",
+      "budget"
+    ],
+    "ingredients": [
+      {
+        "qty": 250,
+        "unit": "g",
+        "item": "brown lentils"
+      },
+      {
+        "qty": 4,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "carrot"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "onion"
+      },
+      {
+        "qty": 3,
+        "unit": "medium",
+        "item": "potatoes"
+      },
+      {
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 4,
+        "unit": "link",
+        "item": "scalded sausage"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "smoked pork belly"
+      },
+      {
+        "qty": 2,
+        "unit": "leaf",
+        "item": "bay leaf"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "flour"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "water for sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "tomato paste"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "red wine vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      }
+    ],
+    "steps": [
+      "Rinse 250 g brown lentils and simmer them in 4 cup water over low heat for 30 minutes.",
+      "Dice 1 carrot and 1 onion, peel and chunk 3 potatoes, and crush 2 clove garlic. Add them with 4 link scalded sausage, 8 oz smoked pork belly, and 2 bay leaf.",
+      "Cook 20 minutes more, until the potatoes are tender and the smoked pork belly is hot through. Keep the pot warm.",
+      "Melt 3 tbsp butter in a small pot over medium heat, stir in 3 tbsp flour, and cook 3 minutes, stirring, until the roux is light brown.",
+      "Whisk in 2 cup water for sauce and let it bubble for 2 minutes.",
+      "Stir in 1 tbsp tomato paste, 2 tbsp red wine vinegar, 1 tsp honey, 1 tsp salt, and 1/2 tsp black pepper.",
+      "Pour the sauce into the lentils, mix, and hold on low heat 5 minutes until the stew is evenly thick. The scalded sausage should be hot in the center."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Lentil and Sausage Stew",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ALentil_and_Sausage_Stew",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Sauce water is 2 cups, close to the page's half litre. Pepper was unmeasured and set to 1/2 tsp. Salt is 1 tsp as the page suggests. Scalded sausage is heated through in the stew.",
+      "sources": [
+        {
+          "title": "Cookbook:Lentil and Sausage Stew",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ALentil_and_Sausage_Stew",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r225",
+    "name": "Fish and Chips Tray Bake",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-pub",
+      "moderate",
+      "classic",
+      "collection-classic",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "plain flour"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "cornstarch"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.75,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 4,
+        "unit": "fillet",
+        "item": "cod"
+      },
+      {
+        "qty": 4,
+        "unit": "medium",
+        "item": "potatoes"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "sea salt"
+      },
+      {
+        "qty": 1,
+        "unit": "whole",
+        "item": "lemon"
+      },
+      {
+        "qty": 2,
+        "unit": "sprig",
+        "item": "parsley"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "malt vinegar"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 425°F (220°C). Peel 4 medium potatoes and cut them into thick wedges. Toss with 2 tbsp vegetable oil and 1 tsp sea salt.",
+      "Roast the potatoes on a tray for 30 minutes, turning once, until the edges are crisp and the centers are tender.",
+      "Whisk 1 cup plain flour, 1 cup cornstarch, 1 tsp salt, and 3/4 cup cold water into a thick batter.",
+      "Cut 4 cod fillets into thick pieces, pat them dry, and coat them in the batter. Set them on a second oiled tray using the remaining vegetable oil.",
+      "Bake the cod 16 minutes, until the coating is gold and the thickest piece reaches 145°F (63°C) and flakes.",
+      "Plate the cod and potatoes with wedges of 1 lemon and 2 sprig parsley. Sprinkle 2 tbsp malt vinegar over the potatoes."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Fish and Chips",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFish_and_Chips",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Oven tray instead of a deep fryer, same source foods as the fried version in another recipe. The litre of frying oil is reduced to 3 tbsp for the trays. Salt in the batter was unmeasured and set to 1 tsp. Cod was chosen. Fish is baked to 145°F (63°C).",
+      "sources": [
+        {
+          "title": "Cookbook:Fish and Chips",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AFish_and_Chips",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r226",
+    "name": "Shepherd's Pie Pub Style",
+    "minutes": 55,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-pub",
+      "moderate",
+      "classic",
+      "collection-classic",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "ground beef"
+      },
+      {
+        "qty": 5,
+        "unit": "cup",
+        "item": "mashed potatoes"
+      },
+      {
+        "qty": 18,
+        "unit": "oz",
+        "item": "creamed corn"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "cheddar cheese"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 350°F (175°C).",
+      "Brown 1.5 lb ground beef in a skillet over medium-high heat for 8 minutes, until no pink remains and the meat reaches 160°F (71°C). Drain the fat. Season with 1 tsp salt and 1/2 tsp black pepper.",
+      "Spread the beef in a baking dish. Spoon 18 oz creamed corn over it in an even layer.",
+      "Spread 5 cup mashed potatoes over the corn and dot with 2 tbsp butter.",
+      "Sprinkle 1.5 cup cheddar cheese across the potatoes.",
+      "Bake 30 minutes until the cheddar cheese is melted and the edges bubble.",
+      "Rest 5 minutes, then scoop out servings."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Shepherd's Pie II",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AShepherd's_Pie_II",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Scaled from 1 lb beef to 1.5 lb for 6 servings. Salt, pepper, and butter were unmeasured and set to 1 tsp, 1/2 tsp, and 2 tbsp. Ground beef is cooked to 160°F (71°C). Cheddar is included.",
+      "sources": [
+        {
+          "title": "Cookbook:Shepherd's Pie II",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AShepherd's_Pie_II",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r227",
+    "name": "Tuna Noodle Casserole",
+    "minutes": 40,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "classic",
+      "budget",
+      "collection-classic"
+    ],
+    "photoKey": "r227",
+    "ingredients": [
+      {
+        "qty": 10,
+        "unit": "oz",
+        "item": "tuna"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "cooked egg noodles"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "frozen peas"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "condensed mushroom soup"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried onion"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 6,
+        "unit": "oz",
+        "item": "sliced cheese"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 375°F (190°C). Have 3 cup cooked egg noodles ready and still warm.",
+      "Drain and flake 10 oz tuna in a mixing bowl.",
+      "Fold in 1 cup milk, the cooked egg noodles, 2 cup frozen peas, 1 can condensed mushroom soup, and 1 tsp dried onion until the noodles are coated.",
+      "Spread the mixture in a buttered casserole, using 1 tbsp butter on the dish.",
+      "Cover with 6 oz sliced cheese.",
+      "Bake 30 minutes until the condensed mushroom soup is bubbling around the edges and the sliced cheese has melted into a sheet.",
+      "Let the casserole stand 5 minutes so it holds a scoop."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Tuna Noodle Casserole",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Noodle_Casserole",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Same sourced casserole as another recipe, with separate wording and a cheese-only top instead of crumbs. Scaled to 10 oz tuna and 1 can of soup for 6 servings. Hot sauce and bread crumbs from the page were left off this version.",
+      "sources": [
+        {
+          "title": "Cookbook:Tuna Noodle Casserole",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Noodle_Casserole",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r228",
+    "name": "Pub Cheese Steak Skillet",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-pub",
+      "moderate",
+      "easy"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "filet mignon"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "small",
+        "item": "onion"
+      },
+      {
+        "qty": 4,
+        "unit": "piece",
+        "item": "hoagie rolls"
+      },
+      {
+        "qty": 8,
+        "unit": "slice",
+        "item": "American cheese"
+      }
+    ],
+    "steps": [
+      "Pound 1 lb filet mignon to an even thickness. Rub it with 1 tbsp olive oil, 1 tsp salt, and 1/2 tsp black pepper.",
+      "Lay the filet in a preheated heavy skillet and cook it over a moderate burner about 4 minutes on each face, until the center reaches 135°F (57°C) for medium.",
+      "Rest the steak 5 minutes, then slice it into bite-size strips.",
+      "Julienne 1 small onion, toss it with any oil left in the skillet, and cook over medium heat for 5 minutes until the edges brown.",
+      "Split 4 hoagie rolls and fill each with a heap of the sliced filet.",
+      "Top with the onion and 8 slice American cheese torn into pieces so the warm steak softens the cheese."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Philly Cheesesteak",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APhilly_Cheesesteak",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Reworded skillet cheesesteak on hoagie rolls. Olive oil, salt, and black pepper were unmeasured and set to 1 tbsp, 1 tsp, and 1/2 tsp. Steak is cooked to medium, 135°F (57°C), then rested.",
+      "sources": [
+        {
+          "title": "Cookbook:Philly Cheesesteak",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3APhilly_Cheesesteak",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r229",
+    "name": "Fried Chicken",
+    "minutes": 150,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-pub",
+      "budget"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "onion powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "garlic powder"
+      },
+      {
+        "qty": 1,
+        "unit": "whole",
+        "item": "fryer chicken"
+      },
+      {
+        "qty": 4,
+        "unit": "cup",
+        "item": "buttermilk"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "salt"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "flour"
+      },
+      {
+        "qty": 8,
+        "unit": "cup",
+        "item": "oil"
+      }
+    ],
+    "steps": [
+      "Mix 1 tsp black pepper, 1 tsp paprika, 1 tsp onion powder, and 1 tsp garlic powder. Cut 1 whole fryer chicken into serving pieces, including breast strips.",
+      "Stir 1/2 cup salt into 4 cup buttermilk until it dissolves. Roll the chicken in the spice mix, then submerge it in the buttermilk. Refrigerate 2 hours. That soak is included in the time.",
+      "Drain the chicken and dredge it in 2 cup flour, shaking off loose flour.",
+      "Heat 8 cup oil to 360°F (182°C) in a deep pot.",
+      "Fry the thicker pieces first, turning once, until the crust is deep gold and every piece reaches 165°F (74°C). Breasts and strips need about 10 minutes; thighs closer to 13.",
+      "Drain the fried chicken on a rack set over a sheet pan for 5 minutes before serving."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Fried Chicken",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Chicken",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Renamed because the page has no potatoes, so fries are not included. Pieces are cut from a fryer, including strips from the breast. Seasoning amounts were examples on the page and are set to 1 tsp each. Frying oil was unmeasured and set to 8 cups. The 2-hour buttermilk soak uses the page's 1/2 cup salt and is included in the time. Chicken is fried to 165°F (74°C).",
+      "sources": [
+        {
+          "title": "Cookbook:Fried Chicken",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AFried_Chicken",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r230",
+    "name": "Mushroom Stout Pie",
+    "minutes": 60,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-pub",
+      "vegetarian",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "cremini mushrooms"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "yellow onion"
+      },
+      {
+        "qty": 2,
+        "unit": "medium",
+        "item": "carrot"
+      },
+      {
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "stout"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "vegetable broth"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "all-purpose flour"
+      },
+      {
+        "qty": 1,
+        "unit": "package",
+        "item": "puff pastry"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "thyme"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      }
+    ],
+    "steps": [
+      "Slice 1.5 lb cremini mushrooms. Dice 1 yellow onion and 2 carrot. Mince 2 clove garlic.",
+      "Melt 2 tbsp butter in a wide pot over medium heat. Cook the onion, carrot, and garlic for 6 minutes until the onion is soft.",
+      "Add the cremini mushrooms and 1 tsp thyme. Cook 8 minutes until the mushrooms give up their liquid and the pan looks dry again.",
+      "Sprinkle 3 tbsp all-purpose flour over the vegetables and stir 1 minute.",
+      "Pour in 1 cup stout and 2 cup vegetable broth. Add 1 tsp salt and 1/2 tsp black pepper. Simmer 12 minutes until the gravy coats a spoon.",
+      "Heat the oven to 400°F (200°C). Spoon the filling into a baking dish and cover it with 1 package puff pastry. Cut a few slits.",
+      "Bake 22 minutes until the puff pastry is puffed and deep gold. Rest 5 minutes."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No mushroom stout pie page. Steak and Ale Pie is beef and is used for r187.",
+      "sources": []
+    }
+  },
+  {
+    "id": "r231",
+    "name": "Chicken Enchilada Bake",
+    "minutes": 45,
+    "servings": 8,
+    "tags": [
+      "dinner",
+      "collection-texmex",
+      "moderate",
+      "classic",
+      "collection-classic",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "lb",
+        "item": "cooked chicken"
+      },
+      {
+        "qty": 12,
+        "unit": "piece",
+        "item": "corn tortillas"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "enchilada sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "Mexican cheese blend"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "yellow onion"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "black beans"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "sour cream"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 375°F (190°C). Dice 1 yellow onion and drain 1 can black beans.",
+      "Shred 2 lb cooked chicken and toss it with 1 cup enchilada sauce, 1/2 tsp cumin, and 1/2 tsp salt.",
+      "Stir 1/2 cup sour cream into the remaining enchilada sauce.",
+      "Spread a thin layer of that sauce in a baking dish. Lay 4 corn tortillas over it.",
+      "Add half the chicken, half the black beans, half the yellow onion, and 2/3 cup Mexican cheese blend. Repeat the tortillas, filling, and cheese, then finish with the last 4 corn tortillas.",
+      "Pour the rest of the sauce over the top and scatter the remaining Mexican cheese blend.",
+      "Bake 25 minutes until the sauce bubbles and the cheese is melted. Rest 5 minutes."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No chicken enchilada page. Enchiladas Rojas is used for r192.",
+      "sources": []
+    }
+  },
+  {
+    "id": "r232",
+    "name": "Crispy Fried Chicken Dinner",
+    "minutes": 300,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "classic",
+      "moderate",
+      "collection-classic"
+    ],
+    "photoKey": "r232",
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "whole",
+        "item": "chicken"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "buttermilk"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "mustard powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cayenne powder"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cinnamon"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "oregano"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "parsley"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "flour"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "ground coriander"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "thyme"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "oil"
+      },
+      {
+        "qty": 1,
+        "unit": "small",
+        "item": "onion"
+      },
+      {
+        "qty": 1,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "flour for gravy"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "chicken stock"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "fine salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "white pepper"
+      }
+    ],
+    "steps": [
+      "Cut 1 whole chicken into 8 pieces. Stir 2 cup buttermilk with 1 tsp mustard powder, 1 tsp cayenne powder, 2 tsp black pepper, 1 tsp cinnamon, 1 tbsp oregano, 1 tbsp parsley, and 1 tsp paprika. Marinate the chicken in that mixture for 4 hours. The marinade is included in the time.",
+      "Mix 1 cup flour with 1 tsp salt, 1/2 tsp ground coriander, and 1/2 tsp thyme. Dredge each piece, rest 10 minutes, and dredge again.",
+      "Heat 3 cup oil in a wide deep pan over medium-high heat until it shimmers. Fry the chicken in batches, starting skin side down, about 4 minutes, then lower the heat and fry 20 minutes more, turning often, until the crust is deep gold and the meat reaches 165°F (74°C).",
+      "Drain the chicken on a rack. Pour off the oil, leaving about 3 tbsp and the browned bits.",
+      "Chop 1 small onion and 1 clove garlic. Cook them in the pan over medium heat for 3 minutes.",
+      "Whisk in 3 tbsp flour for gravy and stir until the paste is light brown, about 3 minutes. Whisk in 3 cup chicken stock.",
+      "Simmer the gravy covered on low for 15 minutes. Season with 1/2 tsp fine salt and 1/2 tsp white pepper. Serve the fried chicken with the gravy."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Buttermilk Fried Chicken with Pan Gravy",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AButtermilk_Fried_Chicken_with_Pan_Gravy",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Reworded. Chicken is fried to 165°F (74°C). The 4-hour buttermilk marinade is included in the minutes. Oil was unmeasured and set to 3 cups for shallow frying. Gravy salt and pepper were unmeasured and set to 1/2 tsp each. Rice and extra vegetables named only as a serving idea were left off.",
+      "sources": [
+        {
+          "title": "Cookbook:Buttermilk Fried Chicken with Pan Gravy",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AButtermilk_Fried_Chicken_with_Pan_Gravy",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r233",
+    "name": "Queso Fundido Nachos",
+    "minutes": 25,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "collection-texmex",
+      "budget",
+      "easy",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "hot pork sausage"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "Velveeta cheese"
+      },
+      {
+        "qty": 10,
+        "unit": "oz",
+        "item": "canned tomatoes with green chiles"
+      },
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "corn tortilla chips"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "cheddar cheese"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "onion"
+      }
+    ],
+    "steps": [
+      "Brown 1 lb hot pork sausage in a skillet over medium heat for 8 minutes, breaking it up, until no pink remains and it reaches 160°F (71°C). Drain the fat.",
+      "Cube 1 lb Velveeta cheese. Add it to the sausage with 10 oz canned tomatoes with green chiles.",
+      "Cook over low heat for 6 minutes, stirring, until the Velveeta cheese melts and the mixture is smooth.",
+      "Heat the oven to 400°F (200°C). Spread 12 oz corn tortilla chips on a baking sheet.",
+      "Chop 1/2 cup onion and grate 8 oz cheddar cheese.",
+      "Spoon the sausage queso over the corn tortilla chips, then scatter the cheddar cheese and onion on top.",
+      "Bake 3 minutes until the cheddar cheese melts. Serve while the queso is still fluid."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Killer Queso Dip and Cookbook:Nachos",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AKiller_Queso_Dip",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Queso from the dip, served over the nachos. Sausage is cooked to 160°F (71°C). Cheddar and onion come from the nacho page; the optional canned chiles on that page are covered by the tomato-chile can in the dip. Corn tortilla chips are used once.",
+      "sources": [
+        {
+          "title": "Cookbook:Killer Queso Dip",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AKiller_Queso_Dip",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "title": "Cookbook:Nachos",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ANachos",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r234",
+    "name": "Shrimp Tacos with Slaw",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-texmex",
+      "moderate",
+      "easy",
+      "classic",
+      "collection-classic",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "shrimp"
+      },
+      {
+        "qty": 8,
+        "unit": "piece",
+        "item": "corn tortillas"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "cabbage"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "mayonnaise"
+      },
+      {
+        "qty": 1,
+        "unit": "whole",
+        "item": "lime"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chili powder"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Shred 2 cup cabbage. Juice half of 1 lime into the cabbage, stir in 1/4 cup mayonnaise and a pinch of the salt, and let the slaw sit.",
+      "Toss 1 lb shrimp with 1 tsp chili powder and the rest of the 1/2 tsp salt.",
+      "Heat 2 tbsp vegetable oil in a skillet over medium-high heat.",
+      "Cook the shrimp 2 minutes per side until they are opaque and reach 145°F (63°C).",
+      "Warm 8 corn tortillas in a dry skillet over medium heat for 30 seconds per side until flexible.",
+      "Fill the corn tortillas with the shrimp and cabbage slaw, and serve with the remaining lime wedges."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No shrimp taco page.",
+      "sources": []
+    }
+  },
+  {
+    "id": "r235",
+    "name": "Tex-Mex Stuffed Peppers",
+    "minutes": 50,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-texmex",
+      "gluten-free",
+      "moderate",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "medium",
+        "item": "bell peppers"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "ground beef"
+      },
+      {
+        "qty": 16,
+        "unit": "oz",
+        "item": "tomato sauce"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "uncooked rice"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "water for the pot"
+      }
+    ],
+    "steps": [
+      "Cut the tops off 4 bell peppers, pull out the seeds, and rinse the peppers. Save the tops.",
+      "Simmer 1/2 cup uncooked rice in 1 cup water for 15 minutes until the water is absorbed and the rice is tender. Set it aside.",
+      "Cook 1 lb ground beef in a skillet over medium-high heat for 8 minutes, until no pink remains and it reaches 160°F (71°C). Drain the fat. Season with 1 tsp salt and 1/2 tsp black pepper.",
+      "Mix the rice, the beef, and 1 tbsp of the tomato sauce.",
+      "Stuff the bell peppers with that mixture and set the tops back on.",
+      "Stand the peppers in a pot. Pour in the remaining tomato sauce and any leftover filling. Add 2 cup water for the pot so the liquid comes about two-thirds up the peppers.",
+      "Cover and cook over medium heat for 25 minutes, until the bell peppers are soft and the filling is hot."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Meat and Rice-Stuffed Bell Peppers",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMeat_and_Rice-Stuffed_Bell_Peppers",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Scaled to 4 peppers. The page's tomato-sauce line is garbled as 5 L and 16 ounces; 16 oz is used. Salt and pepper were unmeasured and set to 1 tsp and 1/2 tsp. Rice water is 1 cup, and 2 cups more water go in the pot. Ground beef is cooked to 160°F (71°C).",
+      "sources": [
+        {
+          "title": "Cookbook:Meat and Rice-Stuffed Bell Peppers",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AMeat_and_Rice-Stuffed_Bell_Peppers",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r236",
+    "name": "Denver Omelet",
+    "minutes": 20,
+    "servings": 2,
+    "tags": [
+      "breakfast",
+      "classic",
+      "easy",
+      "budget",
+      "collection-classic",
+      "gluten-free"
+    ],
+    "photoKey": "r236",
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "large",
+        "item": "eggs"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "onion"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "red bell pepper"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "green bell pepper"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "cooked ham"
+      },
+      {
+        "qty": 8,
+        "unit": "slice",
+        "item": "bacon"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "hot sauce"
+      }
+    ],
+    "steps": [
+      "Cook 8 slice bacon in a skillet over medium heat for 6 minutes until crisp. Drain and crumble it. Dice the cooked ham if it is not already in small pieces.",
+      "Melt 2 tbsp butter in a large skillet over medium heat.",
+      "Add 1 cup onion, 1/2 cup red bell pepper, 1/2 cup green bell pepper, 1/2 cup cooked ham, and the bacon. Cook 4 minutes until the onion turns translucent.",
+      "Beat 4 eggs with 1/2 tsp salt, 1/2 tsp black pepper, and 1/2 tsp hot sauce.",
+      "Pour the eggs into the skillet and cook over medium heat for 3 minutes until the bottom is lightly browned and the top is almost set.",
+      "Flip the omelet and cook 2 minutes more until the second side is set and no liquid egg remains."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Denver Omelet",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ADenver_Omelet",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Renamed because the page is a Denver omelet with ham, bacon, and peppers, and it does not list cheese. Hot sauce was optional and is set to 1/2 tsp. Eggs are cooked until set.",
+      "sources": [
+        {
+          "title": "Cookbook:Denver Omelet",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ADenver_Omelet",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r237",
+    "name": "Sesame Noodle Salad",
+    "minutes": 35,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-asian",
+      "vegetarian",
+      "budget",
+      "classic",
+      "collection-classic",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "angel hair pasta"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sesame oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "cilantro"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "scallions"
+      },
+      {
+        "qty": 0.75,
+        "unit": "cup",
+        "item": "carrots"
+      }
+    ],
+    "steps": [
+      "Boil 8 oz angel hair pasta in a pot of water for about 4 minutes until tender. Drain it well.",
+      "Toss the angel hair pasta with 1 tbsp sesame oil, 1 tbsp olive oil, and 1/2 tsp salt while it is still warm.",
+      "Chop 1/2 cup cilantro and 1/4 cup scallions. Slice 3/4 cup carrots into thin coins or matchsticks.",
+      "Fold the cilantro, scallions, and carrots through the pasta.",
+      "Spread the salad in a shallow bowl so it cools faster.",
+      "Chill 20 minutes, until the noodles are cold and the carrots are still crisp, then serve."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Sesame Noodle Salad",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASesame_Noodle_Salad",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Renamed because the page is a cold sesame noodle salad and does not list ginger. Halved from 16 oz pasta to 8 oz for 4 servings. Olive oil was optional and set to 1 tbsp. Salt was a full tablespoon on the large batch and is set to 1/2 tsp here. The chill is included in the time.",
+      "sources": [
+        {
+          "title": "Cookbook:Sesame Noodle Salad",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ASesame_Noodle_Salad",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r238",
+    "name": "Orange Chicken Skillet",
+    "minutes": 30,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-asian",
+      "moderate",
+      "easy",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "chicken breast"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "orange juice"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cornstarch"
+      },
+      {
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 2,
+        "unit": "piece",
+        "item": "scallion"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Cut 1.5 lb chicken breast into cubes and toss with 1/2 tsp salt. Mince 2 clove garlic and slice 2 scallion.",
+      "Heat 1 tbsp vegetable oil in a skillet over medium-high heat.",
+      "Sear the chicken 8 minutes, turning, until it is browned and the center reaches 165°F (74°C).",
+      "Whisk 1/2 cup orange juice, 2 tbsp soy sauce, 2 tbsp honey, 1 tbsp cornstarch, and the garlic.",
+      "Pour the sauce into the skillet and simmer 4 minutes over medium heat until it turns glossy and coats the chicken.",
+      "Scatter the scallion over the orange chicken and take the pan off the heat."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No orange chicken page. General Tso's Chicken is a different dish and was not relabelled.",
+      "sources": []
+    }
+  },
+  {
+    "id": "r239",
+    "name": "Pad Thai with Shrimp",
+    "minutes": 40,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-asian",
+      "moderate",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "rice noodles"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "fish sauce"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "white vinegar"
+      },
+      {
+        "qty": 0.67,
+        "unit": "cup",
+        "item": "tamarind juice"
+      },
+      {
+        "qty": 0.67,
+        "unit": "cup",
+        "item": "palm sugar"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 4,
+        "unit": "clove",
+        "item": "garlic"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dried red chili flakes"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "shrimp"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "carrots"
+      },
+      {
+        "qty": 1,
+        "unit": "small",
+        "item": "white onion"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "red bell pepper"
+      },
+      {
+        "qty": 4,
+        "unit": "whole",
+        "item": "eggs"
+      },
+      {
+        "qty": 8,
+        "unit": "piece",
+        "item": "green onions"
+      },
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "bean sprouts"
+      },
+      {
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "peanuts"
+      },
+      {
+        "qty": 1,
+        "unit": "whole",
+        "item": "lime"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "cilantro"
+      }
+    ],
+    "steps": [
+      "Soak 1 lb rice noodles in warm water for 20 minutes, then drain.",
+      "Stir 1/2 cup fish sauce, 6 tbsp white vinegar, 2/3 cup tamarind juice, and 2/3 cup palm sugar in a small bowl.",
+      "Chop 4 clove garlic. Heat 1/2 cup vegetable oil in a wok over high heat and cook the garlic with 2 tbsp dried red chili flakes for 1 minute until fragrant.",
+      "Add 1 lb shrimp and cook 3 minutes until the shrimp are opaque and reach 145°F (63°C).",
+      "Add 1 cup shredded carrots, 1 small white onion sliced, and 1 red bell pepper sliced. Cook 3 minutes until the vegetables soften.",
+      "Add the rice noodles. Crack 4 eggs over them, let the eggs set for 30 seconds, then stir them through the noodles.",
+      "Pour in the fish-sauce mixture, lower the heat to medium, and toss 2 minutes. Add 8 green onions and 12 oz bean sprouts and stir-fry 2 minutes more.",
+      "Chop 1.5 cup peanuts and 1/4 cup cilantro. Serve the pad thai with the peanuts, cilantro, and wedges of 1 lime."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Pad Thai",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3APad_Thai",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Doubled toward 4 servings. Shrimp was chosen and is cooked until opaque at 145°F (63°C). Chili flakes are kept at 2 tbsp rather than doubled, so the pan stays edible. White vinegar and palm sugar were chosen. Carrots, white onion, and red bell pepper are the vegetables named on the page. The noodle soak is included in the time.",
+      "sources": [
+        {
+          "title": "Cookbook:Pad Thai",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3APad_Thai",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r240",
+    "name": "Waffles",
+    "minutes": 25,
+    "servings": 4,
+    "tags": [
+      "breakfast",
+      "classic",
+      "easy",
+      "moderate",
+      "collection-classic",
+      "vegetarian"
+    ],
+    "photoKey": "r240",
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "baking powder"
+      },
+      {
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 2,
+        "unit": "whole",
+        "item": "eggs"
+      },
+      {
+        "qty": 1.75,
+        "unit": "cup",
+        "item": "flour"
+      }
+    ],
+    "steps": [
+      "Brush a waffle iron with 1 tsp of the vegetable oil, close it, and heat it until the indicator shows it is ready.",
+      "Separate 2 eggs. Beat the whites until they hold stiff peaks, about 2 minutes, and set them aside.",
+      "Beat the yolks in a large bowl until they look thick and pale yellow.",
+      "Keep beating while you pour in 1.5 cup milk and the rest of the vegetable oil.",
+      "Add 1 tbsp sugar, 1 tbsp baking powder, 1 tsp salt, and 1.75 cup flour. Beat until the batter is smooth, then fold in the egg whites.",
+      "Pour about 1 cup of batter onto the hot iron, close it, and cook until the waffle is deep gold and crisp, usually 4 minutes. Repeat with the remaining batter."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Waffles",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AWaffles",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Renamed because this waffle page does not list maple syrup, so syrup was not added. A teaspoon of the measured vegetable oil brushes the iron; the rest goes into the batter.",
+      "sources": [
+        {
+          "title": "Cookbook:Waffles",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AWaffles",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r241",
+    "name": "Maple Planked Salmon with Rum Glaze",
+    "minutes": 90,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "classic",
+      "canadian",
+      "moderate",
+      "collection-classic",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "photoKey": "r241",
+    "ingredients": [
+      {
+        "qty": 1.5,
+        "unit": "lb",
+        "item": "sockeye salmon"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "dark rum"
+      },
+      {
+        "qty": 1,
+        "unit": "piece",
+        "item": "maple plank"
+      }
+    ],
+    "steps": [
+      "Soak 1 maple plank in water for 1 hour so it does not scorch. That soak is included in the time.",
+      "Brush 1.5 lb sockeye salmon with 1 tbsp olive oil and season both sides with 1 tsp salt and 1/2 tsp black pepper.",
+      "Lay the salmon on the maple plank. Heat a grill to medium on one burner, leaving the other side cooler.",
+      "Boil 1/2 cup dark rum in a small saucepan over high heat until it reduces to 1/4 cup, about 5 minutes. Take it off the heat.",
+      "Set the plank over the cooler side of the grill and cook 20 minutes, brushing often with the reduced dark rum, until the thickest part of the salmon reaches 145°F (63°C) and the flesh flakes.",
+      "Rest the salmon 5 minutes, then serve it on the plank."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Maple Planked Salmon with Rum Glaze",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3AMaple_Planked_Salmon_with_Rum_Glaze",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Renamed to the source dish because the glaze on the page is dark rum, not maple syrup; the maple is the plank. Distinct from the other maple salmon recipe. Salt and black pepper were unmeasured and set to 1 tsp and 1/2 tsp. Salmon is cooked to 145°F (63°C). The plank soak is included in the time.",
+      "sources": [
+        {
+          "title": "Cookbook:Maple Planked Salmon with Rum Glaze",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3AMaple_Planked_Salmon_with_Rum_Glaze",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r242",
+    "name": "Sweet & Sour Pork",
+    "minutes": 150,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "collection-asian",
+      "moderate",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "piece",
+        "item": "pork loin"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "dry sherry"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 4,
+        "unit": "tsp",
+        "item": "cornstarch"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "ketchup"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "rice vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "chili-garlic sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "whole",
+        "item": "egg"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ginger"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "garlic"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cilantro"
+      }
+    ],
+    "steps": [
+      "Cut 4 piece pork loin into 1-inch squares and pound them thin. Mix with 3 tbsp dry sherry and 2 tbsp soy sauce. Refrigerate 2 hours. That marinade is included in the time.",
+      "Stir 2 tsp cornstarch with 1/4 cup ketchup, 2 tbsp rice vinegar, 1 tbsp soy sauce, 1 tbsp Worcestershire sauce, 1/2 tsp chili-garlic sauce, and 1 tbsp sugar. Set that sauce aside.",
+      "Beat 1 egg with the remaining 2 tsp cornstarch and coat the pork.",
+      "Heat 2 tbsp vegetable oil in a wok over medium-high heat. Cook half the pork about 3 minutes until the center reaches 145°F (63°C). Remove it. Add the remaining vegetable oil and cook the rest of the pork the same way. Rest the pork 3 minutes.",
+      "Wipe the wok, then cook 1 tsp minced ginger and 1 tsp minced garlic over medium heat for 30 seconds until fragrant.",
+      "Return the pork, pour in the sauce, and stir 1 minute until every piece is coated and the sauce looks glossy.",
+      "Chop 1 tbsp cilantro and scatter it over the pork."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Sweet and Sour Chinese Pork",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ASweet_and_Sour_Chinese_Pork",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Pork is cooked to 145°F (63°C) and rested 3 minutes. Dry sherry was chosen. The 2-hour marinade is included in the minutes; an overnight marinade is not required. Cilantro is included. Soy sauce is split between the marinade and the sauce.",
+      "sources": [
+        {
+          "title": "Cookbook:Sweet and Sour Chinese Pork",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ASweet_and_Sour_Chinese_Pork",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r243",
+    "name": "Breakfast Casserole",
+    "minutes": 55,
+    "servings": 8,
+    "tags": [
+      "breakfast",
+      "collection-breakfast",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 5,
+        "unit": "link",
+        "item": "sausage links"
+      },
+      {
+        "qty": 4,
+        "unit": "whole",
+        "item": "eggs"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "cornbread"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "ricotta cheese"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "Monterey Jack cheese"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "butter"
+      },
+      {
+        "qty": 8,
+        "unit": "slice",
+        "item": "bacon"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "dry breadcrumbs"
+      }
+    ],
+    "steps": [
+      "Cook 5 sausage links in a skillet over medium heat for 8 minutes until browned and 160°F (71°C). Chop them fine. Cook 8 slice bacon until crisp, about 6 minutes, and crumble it.",
+      "Heat the oven to 375°F (190°C). Beat 4 eggs with 1/2 tsp salt, 1/2 tsp black pepper, 1 cup ricotta cheese, 1/4 cup butter melted, and 2 cup finely crumbled cornbread.",
+      "Grease a roasting pan. Spread a layer of the cornbread mixture, then a layer of the sausage and bacon.",
+      "Repeat those layers until the cornbread mixture and the meat are used up.",
+      "Mix 1 cup Monterey Jack cheese with 1/2 cup dry breadcrumbs and sprinkle the blend over the top.",
+      "Bake 35 minutes until the top is browned and bubbling and a knife in the center comes out without liquid egg.",
+      "Rest 5 minutes, then cut into squares."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Breakfast Casserole",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ABreakfast_Casserole",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Renamed because the page does not list an everything-bagel topping, so none was added. Sausage and bacon are cooked in the method to 160°F for the sausage before they are layered. Cornbread is used already crumbled, as the page lists it.",
+      "sources": [
+        {
+          "title": "Cookbook:Breakfast Casserole",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ABreakfast_Casserole",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r244",
+    "name": "Spinach Feta Breakfast Wraps",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
+      "breakfast",
+      "collection-breakfast",
+      "vegetarian",
+      "budget",
+      "easy"
+    ],
+    "ingredients": [
+      {
+        "qty": 6,
+        "unit": "large",
+        "item": "eggs"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "baby spinach"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "feta"
+      },
+      {
+        "qty": 4,
+        "unit": "piece",
+        "item": "flour tortillas"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "medium",
+        "item": "tomato"
+      }
+    ],
+    "steps": [
+      "Slice 2 tomato. Warm 4 flour tortillas in a dry skillet over medium heat for 20 seconds per side until flexible.",
+      "Melt 1 tbsp butter in a skillet over medium heat. Add 2 cup baby spinach and cook 2 minutes until wilted. Move the spinach to a plate.",
+      "Melt the remaining butter in the same skillet. Beat 6 eggs with 1/4 tsp salt and 1/4 tsp black pepper and pour them in.",
+      "Scramble the eggs over medium heat for 4 minutes until they are set and no liquid remains.",
+      "Fold 1/2 cup feta into the eggs and take the pan off the heat.",
+      "Fill the flour tortillas with the eggs, baby spinach, and tomato, then roll them closed and serve."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No spinach-feta breakfast wrap page.",
+      "sources": []
+    }
+  },
+  {
+    "id": "r245",
+    "name": "Turkey Club Lunch Boxes",
+    "minutes": 20,
+    "servings": 4,
+    "tags": [
+      "lunch",
+      "collection-lunch",
+      "moderate",
+      "easy"
+    ],
+    "ingredients": [
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "sliced turkey"
+      },
+      {
+        "qty": 8,
+        "unit": "slice",
+        "item": "Swiss cheese"
+      },
+      {
+        "qty": 4,
+        "unit": "slice",
+        "item": "bacon"
+      },
+      {
+        "qty": 4,
+        "unit": "piece",
+        "item": "ciabatta rolls"
+      },
+      {
+        "qty": 1,
+        "unit": "medium",
+        "item": "tomato"
+      },
+      {
+        "qty": 0.5,
+        "unit": "head",
+        "item": "lettuce"
+      },
+      {
+        "qty": 0.25,
+        "unit": "cup",
+        "item": "mayonnaise"
+      },
+      {
+        "qty": 0.25,
+        "unit": "tsp",
+        "item": "salt"
+      }
+    ],
+    "steps": [
+      "Cook 4 slice bacon in a skillet over medium heat for 6 minutes until crisp. Drain it.",
+      "Slice 4 ciabatta rolls and 1 tomato. Tear 1/2 head lettuce into leaves.",
+      "Spread 1/4 cup mayonnaise on the cut sides of the ciabatta rolls.",
+      "Layer 12 oz sliced turkey, 8 slice Swiss cheese, the bacon, lettuce, and tomato.",
+      "Sprinkle 1/4 tsp salt over the tomato.",
+      "Close the rolls, cut them in half, and pack them for lunch while the bacon is still crisp."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No turkey club sandwich page.",
+      "sources": []
+    }
+  },
+  {
+    "id": "r246",
+    "name": "Tuna Salad with Apple and Egg",
+    "minutes": 75,
+    "servings": 4,
+    "tags": [
+      "lunch",
+      "collection-lunch",
+      "budget",
+      "gluten-free",
+      "dairy-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "can",
+        "item": "tuna"
+      },
+      {
+        "qty": 0.5,
+        "unit": "medium",
+        "item": "apple"
+      },
+      {
+        "qty": 1,
+        "unit": "stalk",
+        "item": "celery"
+      },
+      {
+        "qty": 0.5,
+        "unit": "cup",
+        "item": "mayonnaise"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "lemon juice"
+      },
+      {
+        "qty": 1,
+        "unit": "piece",
+        "item": "green onion"
+      },
+      {
+        "qty": 2,
+        "unit": "whole",
+        "item": "hard-boiled eggs"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 4,
+        "unit": "leaf",
+        "item": "lettuce"
+      }
+    ],
+    "steps": [
+      "Drain 2 can tuna and press out the liquid.",
+      "Chop 1/2 apple, 1 stalk celery, 1 green onion, and 2 hard-boiled eggs. Peel and chop the eggs after boiling them 10 minutes and cooling them in cold water.",
+      "Stir the tuna with the apple, celery, 1/2 cup mayonnaise, 2 tsp lemon juice, green onion, hard-boiled eggs, and 1/2 tsp black pepper.",
+      "Cover the bowl and refrigerate 1 hour so the flavors settle. That chill is included in the time.",
+      "Spoon the salad onto 4 leaf lettuce.",
+      "Dust 1/2 tsp paprika over the top and serve cold."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Tuna Salad (1940)",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Salad_(1940)",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "The Wikibooks page is Tuna Salad (1940). Renamed because the page does not list pitas, so the salad is not stuffed into bread. Doubled from one can toward 4 servings. Black pepper was unmeasured and set to 1/2 tsp. The 1-hour chill is included in the time.",
+      "sources": [
+        {
+          "title": "Cookbook:Tuna Salad (1940)",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Salad_(1940)",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r247",
+    "name": "Caprese Salad",
+    "minutes": 15,
+    "servings": 4,
+    "tags": [
+      "lunch",
+      "collection-lunch",
+      "vegetarian",
+      "moderate",
+      "easy",
+      "gluten-free"
+    ],
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "medium",
+        "item": "tomato"
+      },
+      {
+        "qty": 12,
+        "unit": "leaf",
+        "item": "basil"
+      },
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "mozzarella cheese"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "balsamic vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "oregano"
+      },
+      {
+        "qty": 0.5,
+        "unit": "tsp",
+        "item": "black pepper"
+      }
+    ],
+    "steps": [
+      "Slice 4 medium tomato into rounds. Slice 12 oz mozzarella cheese into pieces about the same width.",
+      "Lay a slice of mozzarella cheese on each tomato slice.",
+      "Tuck 12 leaf basil between the tomato and the mozzarella cheese.",
+      "Sprinkle 1 tsp oregano and 1/2 tsp black pepper over the stacks.",
+      "Drizzle 2 tbsp balsamic vinegar over the salad, then drizzle 2 tbsp olive oil beside it so the two stay separate.",
+      "Serve within a few minutes, while the tomato is still cool and the mozzarella cheese is soft."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "Cookbook:Caprese Salad",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook%3ACaprese_Salad",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted": true,
+      "original": false,
+      "note": "Pressed-panini idea was not used because the page lists no bread. This is a separate write-up of the salad. Scaled from 1 tomato to 4. Olive oil and balsamic vinegar were unmeasured and set to 2 tbsp each. Oregano and black pepper stand in for the optional Italian seasoning and are set to 1 tsp and 1/2 tsp.",
+      "sources": [
+        {
+          "title": "Cookbook:Caprese Salad",
+          "url": "https://en.wikibooks.org/wiki/Cookbook%3ACaprese_Salad",
+          "licence": "CC BY-SA 4.0",
+          "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      ]
+    }
+  },
+  {
+    "id": "r248",
+    "name": "Club Sandwich Lunch",
+    "minutes": 20,
+    "servings": 2,
+    "tags": [
+      "lunch",
+      "classic",
+      "easy",
+      "moderate",
+      "collection-classic"
+    ],
+    "photoKey": "r248",
+    "ingredients": [
+      {
+        "qty": 6,
+        "unit": "slice",
+        "item": "bread"
+      },
+      {
+        "qty": 4,
+        "unit": "oz",
+        "item": "turkey breast"
+      },
+      {
+        "qty": 4,
+        "unit": "slice",
+        "item": "bacon"
+      },
+      {
+        "qty": 2,
+        "unit": "slice",
+        "item": "cheddar cheese"
+      },
+      {
+        "qty": 4,
+        "unit": "slice",
+        "item": "tomato"
+      },
+      {
+        "qty": 2,
+        "unit": "leaf",
+        "item": "lettuce"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "mayonnaise"
+      }
+    ],
+    "steps": [
+      "Cook 4 slice bacon in a skillet over medium heat for 6 minutes, turning once, until crisp. Drain it.",
+      "Toast 6 slice bread until the surfaces are dry and gold, about 2 minutes.",
+      "Spread 3 tbsp mayonnaise on one side of each slice of toast.",
+      "Build two stacks: toast, 4 oz turkey breast split between them, bacon, 2 slice cheddar cheese, then another toast, then 4 slice tomato and 2 leaf lettuce, then the last toast.",
+      "Press each stack gently so the layers hold.",
+      "Cut the sandwiches into quarters, spear each quarter, and serve while the toast is still crisp."
+    ],
+    "libraryRev": 2,
+    "attribution": {
+      "sourceTitle": "",
+      "sourceUrl": "",
+      "licence": "original",
+      "licenceUrl": "",
+      "adapted": false,
+      "original": true,
+      "note": "No club sandwich page.",
+      "sources": []
+    }
+  }
+];
+  for (var i = 0; i < extra.length; i++) PW_STARTERS.push(extra[i]);
+})();

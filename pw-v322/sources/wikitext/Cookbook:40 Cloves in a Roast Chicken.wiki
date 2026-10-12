@@ -1,0 +1,38 @@
+{{Recipe summary
+| Time = 2 hours
+| Difficulty = 3
+}}
+{{recipe}}
+[[Category:Recipes using garlic]]
+
+== Ingredients ==
+
+* 1 [[Cookbook:Each|ea]]. (3–4 [[Cookbook:Pound|pounds]]) broiler/fryer [[Cookbook:Chicken|chicken]]
+* ¼ [[Cookbook:Cup|cup]] [[Cookbook:Country Roast Chicken Seasoning|Country Roast Chicken Seasoning]]
+* 40 cloves [[Cookbook:Garlic|garlic]], smashed
+* [[Cookbook:Olive Oil|Olive oil]]
+* 1 large [[Cookbook:Lemon|lemon]], thinly [[Cookbook:Slicing|sliced]]
+* ½ bunch [[Cookbook:Thyme|thyme]]
+* 5 sprigs [[Cookbook:Rosemary|rosemary]]
+* ½ bunch flat-leaf [[Cookbook:Parsley|parsley]]
+
+== Special equipment ==
+
+* 1 reusable organic cotton produce bag (optional)
+
+== Procedure ==
+#Rub the Country Roast Chicken Seasoning under the skin of the chicken. Refrigerate for at least 1 hour.
+#Tie the chicken's legs together and wing tips under the back with butcher's twine.
+#Heat garlic in a microwave on low for 6 minutes.
+#In this step, work quickly. If using a bag, place garlic in and stuff it in the cavity. If not, just stuff it in.
+#Coat chicken with olive oil. Place herbs in the bottom of a roasting pan and put lemon slices on top.
+#Put chicken breast side up on top and [[Cookbook:Baking|bake]] in an [[Cookbook:Oven|oven]] for 45 minutes at  375°F (190°C).
+#Turn the temperature up to 425°F (220°C) and bake for 45 more minutes or until the internal temperature in both the thigh and breast reaches 165°F (75°C) and the juices run clear.
+#Let rest for 10 minutes and serve.
+
+[[Category:Recipes using whole chicken]]
+[[Category:Recipes using lemon]]
+
+[[Category:Recipes using thyme]]
+[[Category:Recipes using rosemary]]
+[[Category:Recipes using parsley]]

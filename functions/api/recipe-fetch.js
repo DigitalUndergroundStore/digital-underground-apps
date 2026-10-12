@@ -2,7 +2,11 @@
  * Cloudflare Pages Function: fetch a public recipe URL and return schema.org Recipe JSON-LD.
  * POST { "url": "https://…" } → { "recipe": { … } }
  * Failures use 4xx (422), not 502: the custom domain replaces 5xx bodies with a bare "error code: 502" page the app cannot parse.
+ * Wikibooks Cookbook pages have no JSON-LD. For a single Cookbook: URL we read that page
+ * through the Wikimedia API and return one Recipe object. Nothing is stored.
  */
+
+import { cookbookTitleFromUrl, wikiToSchema, wikitextFromApiPage } from "../_lib/wiki-recipe.js";
 
 const MAX_BYTES = 2 * 1024 * 1024;
 const FETCH_TIMEOUT_MS = 8000;
@@ -248,6 +252,13 @@ export async function onRequest(context) {
   const checked = validateTargetUrl(body && body.url);
   if (checked.error) return json({ error: checked.error }, 400);
 
+  const cookbookTitle = cookbookTitleFromUrl(checked.url);
+  if (cookbookTitle) {
+    const wiki = await fetchCookbookRecipe(cookbookTitle);
+    if (wiki) return json({ recipe: wiki, recipes: [wiki] }, 200);
+    return json({ error: `No recipe data found on that page. ${BLOCKED_HINT}`, pasteTextInstead: true }, 404);
+  }
+
   // 1) Plain request, exactly as before.
   const first = await attemptFetch(checked.url, PLAIN_HEADERS, false);
   if (first.fatal) return first.fatal;
@@ -270,6 +281,41 @@ export async function onRequest(context) {
     return json({ error: `No recipe data found on that page. ${BLOCKED_HINT}`, pasteTextInstead: true }, 404);
   }
   return blockedResponse(second.status || first.status);
+}
+
+async function fetchCookbookRecipe(title) {
+  const api = new URL("https://en.wikibooks.org/w/api.php");
+  api.searchParams.set("action", "query");
+  api.searchParams.set("titles", title);
+  api.searchParams.set("prop", "revisions|pageimages");
+  api.searchParams.set("rvprop", "content");
+  api.searchParams.set("rvslots", "main");
+  api.searchParams.set("piprop", "thumbnail");
+  api.searchParams.set("pithumbsize", "800");
+  api.searchParams.set("format", "json");
+  api.searchParams.set("formatversion", "2");
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const response = await fetch(api.toString(), {
+      headers: {
+        Accept: "application/json",
+        "User-Agent": PLAIN_HEADERS["User-Agent"],
+        "Api-User-Agent": PLAIN_HEADERS["User-Agent"],
+      },
+      signal: controller.signal,
+    });
+    if (!response.ok) return null;
+    const data = await response.json();
+    const page = data && data.query && data.query.pages && data.query.pages[0];
+    const wikitext = wikitextFromApiPage(page);
+    const image = page && page.thumbnail && page.thumbnail.source;
+    return wikiToSchema(title, wikitext, image);
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 function concatUint8(chunks) {

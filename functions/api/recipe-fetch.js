@@ -257,7 +257,9 @@ export async function onRequest(context) {
   if (cookbookTitle) {
     const wiki = await fetchCookbookRecipe(cookbookTitle);
     if (wiki) return json({ recipe: wiki, recipes: [wiki] }, 200);
-    return json({ error: `No recipe data found on that page. ${BLOCKED_HINT}`, pasteTextInstead: true }, 404);
+    // 200 + noRecipe: the page exists but is not a recipe (e.g. an ingredient page). Not a transport error,
+    // so the app and Smart Chef's quiet web lookups get no console 4xx noise.
+    return json({ error: `No recipe data found on that page. ${BLOCKED_HINT}`, pasteTextInstead: true, noRecipe: true }, 200);
   }
 
   // 1) Plain request, exactly as before.

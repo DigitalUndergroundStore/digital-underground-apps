@@ -300,11 +300,17 @@ def patch_photos_js(photos_path: Path, mapping: dict[str, str]) -> None:
         lines.append(f'  "{rid}": "{rel}",')
     if not lines:
         return
+    ids = [int(m.group(1)) for m in re.finditer(r'"r(\d+)":\s*"photos/', text)]
+    anchor = f"r{max(ids)}" if ids else "r248"
+    anchor_line = f'  "{anchor}": "photos/{anchor}.webp"'
+    if anchor_line not in text:
+        raise SystemExit(f"photos.js anchor missing: {anchor}")
     text = text.replace(
-        '  "r248": "photos/r248.webp"',
-        '  "r248": "photos/r248.webp",\n' + "\n".join(lines),
+        anchor_line,
+        anchor_line + ",\n" + "\n".join(lines),
         1,
     )
+    text = re.sub(r",\s*,", ",", text)
     photos_path.write_text(text, encoding="utf-8")
 
 
@@ -316,6 +322,7 @@ def main() -> None:
     ap.add_argument("--photos", type=Path, default=Path("pantry-week/photos"))
     ap.add_argument("--existing-names", type=Path, default=Path("/tmp/existing-names.json"))
     ap.add_argument("--batch-file", default="js/recipes-batch3.js")
+    ap.add_argument("--gapfrom", default="", help="Cookbook namespace allpages continue title")
     args = ap.parse_args()
 
     existing = {n.lower() for n in json.loads(args.existing_names.read_text())}
@@ -325,7 +332,7 @@ def main() -> None:
 
     recipes: list[dict] = []
     photo_map: dict[str, str] = {}
-    gapfrom = "A"
+    gapfrom = args.gapfrom or "A"
     next_id = args.start_id
     target = args.count
 
@@ -413,6 +420,7 @@ def main() -> None:
         "start": args.start_id,
         "end": end_id,
         "batch_file": args.batch_file,
+        "gapfrom": gapfrom,
     }
     Path("/tmp/library-batch-meta.json").write_text(json.dumps(meta, indent=2))
     print(json.dumps(meta))

@@ -1204,19 +1204,20 @@
   }
 
   function pickVariedRecipe(candidates, usedProteins, usedCuisines) {
-    if (!candidates.length) return null;
-    shuffleInPlace(candidates);
-    var fallback = null;
-    for (var i = 0; i < candidates.length; i++) {
-      var recipe = candidates[i];
+    var best = null;
+    var bestScore = -Infinity;
+    candidates.forEach(function (recipe) {
       var protein = recipeProtein(recipe);
       var cuisine = recipeCuisine(recipe);
-      var freshProtein = usedProteins.indexOf(protein) === -1;
-      var freshCuisine = usedCuisines.indexOf(cuisine) === -1;
-      if (freshProtein && freshCuisine) return recipe;
-      if (!fallback && (freshProtein || freshCuisine)) fallback = recipe;
-    }
-    return fallback || candidates[0];
+      var score = Math.random() + recipeClassicBoost(recipe);
+      if (usedProteins.indexOf(protein) === -1) score += 2.2;
+      if (usedCuisines.indexOf(cuisine) === -1) score += 1.6;
+      if (score > bestScore) {
+        bestScore = score;
+        best = recipe;
+      }
+    });
+    return best;
   }
 
   function fillSimpleWeek(week, recipes, options) {
@@ -1443,7 +1444,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.11.1",
+    VERSION: "3.11.2",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,

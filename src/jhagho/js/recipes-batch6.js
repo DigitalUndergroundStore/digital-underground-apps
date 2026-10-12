@@ -8223,7 +8223,7 @@
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "of plain flour"
+        "item": "plain flour"
       },
       {
         "qty": 2,

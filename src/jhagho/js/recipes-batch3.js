@@ -1112,7 +1112,7 @@
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "of grated Parmesan cheese"
+        "item": "grated Parmesan cheese"
       },
       {
         "qty": null,
@@ -3789,7 +3789,7 @@
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "of ground spicy red chili"
+        "item": "ground spicy red chili"
       },
       {
         "qty": 2,
@@ -11874,12 +11874,12 @@
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "of water"
+        "item": "water"
       },
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "of white granulated sugar"
+        "item": "white granulated sugar"
       },
       {
         "qty": 2,

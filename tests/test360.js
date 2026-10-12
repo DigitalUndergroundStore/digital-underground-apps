@@ -48,6 +48,8 @@ async function main() {
     if (!/Wikibooks/i.test(credit || "")) errs.push("import: missing Wikibooks credit");
   }
 
+  await page.locator('[data-action="nav"][data-view="recipes"]').click();
+  await dismissTip(page);
   await page.locator('[data-action="new-recipe"]').click();
   await page.locator('[data-action="photo-library"]').click();
   const file = path.join(__dirname, "test-recipe-card.png");

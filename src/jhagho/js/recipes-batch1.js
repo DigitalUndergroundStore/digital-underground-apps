@@ -2263,62 +2263,73 @@
   },
   {
     "id": "r164",
-    "name": "Turkey Taco Skillet",
-    "minutes": 24,
+    "name": "Swedish Meatballs",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
-      "collection-weeknight",
-      "dairy-free",
-      "gluten-free",
-      "high-protein",
-      "budget",
-      "easy"
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "ground turkey"
+        "qty": 200.0,
+        "unit": "",
+        "item": "–300 ml (¾–1¼ cups) liquid, such as water, milk or cream"
       },
       {
-        "qty": 1,
-        "unit": "can",
-        "item": "black beans"
+        "qty": 50.0,
+        "unit": "ml",
+        "item": "(¼ cup) dried bread crumbs"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "salsa"
+        "qty": 250.0,
+        "unit": "g",
+        "item": "(9 oz) ground beef"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin"
+        "qty": 250.0,
+        "unit": "g",
+        "item": "(9 oz) ground pork"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chili powder"
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "frozen corn"
+        "qty": 1.0,
+        "unit": "",
+        "item": "small onion, finely chopped or grated"
       },
       {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Butter for frying"
       }
     ],
     "steps": [
-      "Brown turkey with spices and salt 8 minutes.",
-      "Add beans, salsa, and corn; simmer 10 minutes.",
-      "Stir occasionally and adjust salt.",
-      "Cook 4 more minutes until thickened.",
-      "Serve with rice or tortillas within 5 minutes. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
-    ]
+      "Combine the liquid and bread crumbs in a bowl, and let it sit for 7–8 minutes (3 minutes).",
+      "Mix in the ground beef, ground pork, egg, onion, salt, and pepper (3 minutes).",
+      "Shape the mixture into round meatballs, approximately 2–3 centimeters (1 inch) in diameter (3 minutes).",
+      "Pan fry the meatballs on medium heat in a frying pan with butter for approximately 3–5 minutes (3 minutes).",
+      "Fry them on all sides until they are brown and not pink in the middle (3 minutes).",
+      "Shaking the pan occasionally will help the meatballs cook evenly (3 minutes).",
+      "Serve them with mashed potatoes with a veal based brown sauce made with cream and lingonberry preserve or cranberry preserve (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Swedish_Meatballs_I",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r165",
@@ -3015,61 +3026,53 @@
   },
   {
     "id": "r177",
-    "name": "Honey Garlic Slow-Cooker Wings",
-    "minutes": 240,
-    "servings": 6,
+    "name": "Beer-can Chicken",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
-      "snack",
-      "collection-slow-cooker",
-      "dairy-free",
-      "moderate",
-      "easy"
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
-        "unit": "lb",
-        "item": "chicken wings"
+        "qty": 1.0,
+        "unit": "",
+        "item": "recipe spice rub (or use your own recipe)"
       },
       {
-        "qty": 0.33,
-        "unit": "cup",
-        "item": "honey"
+        "qty": 2.0,
+        "unit": "",
+        "item": "bay leaves, crumbled"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "soy sauce"
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(12 ounces / ~355 ml) of beer"
       },
       {
-        "qty": 4,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "cornstarch"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ginger"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": 3.0,
+        "unit": "",
+        "item": "–4 pound (1.5–2 kg) chicken (dressed)"
       }
     ],
     "steps": [
-      "Whisk honey, soy, garlic, ginger, and salt (2 minutes).",
-      "Toss wings in sauce in slow cooker.",
-      "Cook on low 4 hours.",
-      "Broil on a sheet pan 6 minutes until crisp.",
-      "Thicken remaining sauce with cornstarch 3 minutes and toss wings."
-    ]
+      "Poke holes all over chicken to let fat run out during cooking (3 minutes).",
+      "Rub chicken thoroughly with spice rub: inside and out, and then under skin as far as you can reach (3 minutes).",
+      "Set aside chicken (3 minutes).",
+      "Remove upper racks from oven (3 minutes).",
+      "Preheat oven to 350°F (180°C) (3 minutes).",
+      "When oven preheated, take a healthy drink of the beer, leaving about 9–10 ounces (3 minutes).",
+      "Crumble bay leaves into beer, in beer can (3 minutes).",
+      "Insert beer can firmly into chicken cavity (3 minutes).",
+      "Place chicken upright in shallow heatproof pan (3 minutes).",
+      "Bake chicken upright for 1–1.5 hours until thickest part is 165°F (73°C) (3 minutes).",
+      "When removing chicken from oven, keep upright (3 minutes).",
+      "Rest chicken upright 15 minutes before removing beer can (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beer-can_Chicken",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r178",

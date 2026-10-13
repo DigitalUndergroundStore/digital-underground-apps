@@ -1,0 +1,218 @@
+[
+  {
+    "id": "r177",
+    "reason": "restore_classic",
+    "oldName": "Honey Garlic Slow-Cooker Wings",
+    "newName": "Beer-can Chicken",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beer-can_Chicken",
+    "photo": "kept"
+  },
+  {
+    "id": "r296",
+    "reason": "restore_classic",
+    "oldName": "Barbecue Wings",
+    "newName": "Fried Green Tomatoes",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Green_Tomatoes",
+    "photo": "kept"
+  },
+  {
+    "id": "r338",
+    "reason": "restore_classic",
+    "oldName": "Honey BBQ Hot Wings",
+    "newName": "Green Bean Casserole",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Bean_Casserole",
+    "photo": "kept"
+  },
+  {
+    "id": "r365",
+    "reason": "restore_classic",
+    "oldName": "Midwestern Chicken Wings",
+    "newName": "Baked Custard",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Custard",
+    "photo": "kept"
+  },
+  {
+    "id": "r654",
+    "reason": "wing_cull",
+    "oldName": "Hickory Maple Glazed Wings",
+    "newName": "Deviled Eggs",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Deviled_Eggs",
+    "photo": "changed"
+  },
+  {
+    "id": "r785",
+    "reason": "wing_cull",
+    "oldName": "Tequila Lime Hot Wings",
+    "newName": "Lobster Bisque",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lobster_Bisque",
+    "photo": "kept"
+  },
+  {
+    "id": "r797",
+    "reason": "wing_cull",
+    "oldName": "Campfire Barbecue Chicken Wings",
+    "newName": "Apple Fritters",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Fritters",
+    "photo": "kept"
+  },
+  {
+    "id": "r798",
+    "reason": "wing_cull",
+    "oldName": "Hickory BBQ Chicken Wings",
+    "newName": "Bourbon Apples",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bourbon_Apples",
+    "photo": "kept"
+  },
+  {
+    "id": "r815",
+    "reason": "wing_cull",
+    "oldName": "Honey Lime Chicken Wings",
+    "newName": "Corn Pone",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Corn_Pone",
+    "photo": "kept"
+  },
+  {
+    "id": "r824",
+    "reason": "wing_cull",
+    "oldName": "Smoky Chipotle Glazed Hot Wings",
+    "newName": "Waldorf Salad",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Waldorf_Salad",
+    "photo": "kept"
+  },
+  {
+    "id": "r841",
+    "reason": "wing_cull",
+    "oldName": "Spicy Fried Wings",
+    "newName": "Stuffed Peppers",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stuffed_Peppers",
+    "photo": "changed"
+  },
+  {
+    "id": "r164",
+    "reason": "dedupe_near_title",
+    "oldName": "Turkey Taco Skillet",
+    "newName": "Swedish Meatballs",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Swedish_Meatballs_I",
+    "photo": "changed"
+  },
+  {
+    "id": "r778",
+    "reason": "dedupe_near_title",
+    "oldName": "Shakshuka I",
+    "newName": "Mashed Potatoes",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mashed_Potatoes",
+    "photo": "kept"
+  },
+  {
+    "id": "r95",
+    "reason": "dedupe_near_title",
+    "oldName": "Banana Oat Pancakes",
+    "newName": "Spanish Rice",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spanish_Rice",
+    "photo": "changed"
+  },
+  {
+    "id": "r781",
+    "reason": "dedupe_near_title",
+    "oldName": "Shepherd's Pie I",
+    "newName": "Hoppin John",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hoppin_John",
+    "photo": "kept"
+  },
+  {
+    "id": "r209",
+    "reason": "dedupe_near_title",
+    "oldName": "Slow Cooker Pulled Pork",
+    "newName": "Nachos",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nachos",
+    "photo": "kept"
+  },
+  {
+    "id": "r223",
+    "reason": "dedupe_near_title",
+    "oldName": "Creamy Tomato Tortellini Soup",
+    "newName": "Au Jus Sandwich",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Au_Jus_Sandwich",
+    "photo": "kept"
+  },
+  {
+    "id": "r264",
+    "reason": "dedupe_near_title",
+    "oldName": "Apple Crisp I",
+    "newName": "Sirniki (Russian Cheese Fritters)",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sirniki_%28Russian_Cheese_Fritters%29",
+    "photo": "kept"
+  },
+  {
+    "id": "r395",
+    "reason": "dedupe_near_title",
+    "oldName": "Cr\u00eapes I",
+    "newName": "Six Layer Casserole",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Six_Layer_Casserole",
+    "photo": "kept"
+  },
+  {
+    "id": "r304",
+    "reason": "dedupe_near_title",
+    "oldName": "Beef Stew I",
+    "newName": "Thai Red Curry Paste",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Thai_Red_Curry_Paste",
+    "photo": "kept"
+  },
+  {
+    "id": "r368",
+    "reason": "dedupe_near_title",
+    "oldName": "Chocolate Chip Cookies III",
+    "newName": "Tomato Curry",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tomato_Curry",
+    "photo": "kept"
+  },
+  {
+    "id": "r386",
+    "reason": "dedupe_near_title",
+    "oldName": "Cornbread I",
+    "newName": "Thai Green Curry Paste",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Thai_Green_Curry_Paste",
+    "photo": "kept"
+  },
+  {
+    "id": "r527",
+    "reason": "dedupe_near_title",
+    "oldName": "Indian Butter Chicken I",
+    "newName": "Indian Beans",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Beans",
+    "photo": "changed"
+  },
+  {
+    "id": "r534",
+    "reason": "dedupe_near_title",
+    "oldName": "Jambalaya I",
+    "newName": "Potato and Chicken Stew (Ajiaco)",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Potato_and_Chicken_Stew_%28Ajiaco%29",
+    "photo": "kept"
+  },
+  {
+    "id": "r599",
+    "reason": "dedupe_near_title",
+    "oldName": "Manhattan Clam Chowder I",
+    "newName": "Spaghetti with Clams in White Wine Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spaghetti_with_Clams_in_White_Wine_Sauce",
+    "photo": "kept"
+  },
+  {
+    "id": "r914",
+    "reason": "dedupe_near_title",
+    "oldName": "American Potato Salad I",
+    "newName": "Alfajores (Latin American Sandwich Cookies)",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Alfajores_%28Latin_American_Sandwich_Cookies%29",
+    "photo": "kept"
+  },
+  {
+    "id": "r961",
+    "reason": "dedupe_near_title",
+    "oldName": "Biscuits III",
+    "newName": "Dog Biscuits",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Dog_Biscuits",
+    "photo": "changed"
+  }
+]

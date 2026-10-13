@@ -448,75 +448,65 @@
   },
   {
     "id": "r654",
-    "name": "Hickory Maple Glazed Wings",
+    "name": "Deviled Eggs",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 36,
+        "qty": 6.0,
         "unit": "",
-        "item": "chicken wingettes or 18 whole chicken wings, tips removed and halved"
+        "item": "Large Hard-boiled eggs, halved lengthwise (if not already prepared, add 10-15 mins to prep time.)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp hickory smoke powder"
-      },
-      {
-        "qty": 1,
+        "qty": 3.0,
         "unit": "tbsp",
-        "item": "salt"
+        "item": "s of mayonnaise or creamy salad dressing"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "tbsp",
-        "item": "black pepper"
+        "item": "of granulated sugar"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "of mustard"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "of vinegar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Maple syrup as needed plus 6 tbsp"
+        "item": "Salt to taste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Cornmeal as needed"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "Smoky Chipotle Hot Sauce"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "minced garlic"
+        "item": "Pepper to taste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tbsp finely-grated lemon zest"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Oil for deep frying"
+        "item": "Paprika (optional)"
       }
     ],
     "steps": [
-      "Season chicken with salt and pepper (3 minutes).",
-      "Dip chicken in maple syrup, then dredge in cornmeal (3 minutes).",
-      "Heat oil to 350°F, add chicken pieces, and deep fry for 12 minutes (3 minutes).",
-      "Drain on a cooling rack (3 minutes).",
-      "Combine 6 tbsp maple syrup with remaining ingredients (3 minutes).",
-      "Add wings and toss to coat (3 minutes)."
+      "Extract yolks from the halved eggs and place the yolks in a bowl, being careful not to break the whites (3 minutes).",
+      "Mash yolks with a fork and mix in the remaining ingredients (3 minutes).",
+      "Spoon the mixture back into the egg white halves (3 minutes).",
+      "(Optional) Garnish with a light sprinkling of paprika (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hickory_Maple_Glazed_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Deviled_Eggs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5470,7 +5460,7 @@
   },
   {
     "id": "r726",
-    "name": "Peanut Butter Sandwich",
+    "name": "Quesadilla",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -5482,44 +5472,40 @@
     "ingredients": [
       {
         "qty": 2.0,
-        "unit": "slice",
-        "item": "s of bread"
+        "unit": "",
+        "item": "flour tortillas, 6 inches (15 cm) in diameter"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Butter, soft"
+        "item": "⅓ cup grated meltable cheese (preferably a Monterey Jack and cheddar blend or a Tex Mex blend)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Peanut butter"
+        "item": "¼ cup filling (see options below)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Honey"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Preserves (jam)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Very cold milk"
+        "item": "Cooking spray"
       }
     ],
     "steps": [
-      "Toast and butter the bread slices (3 minutes).",
-      "Combine the peanut butter, honey, and butter (3 minutes).",
-      "Spread over one slice of toasted bread (3 minutes).",
-      "Spread preserves (jam) over the other slice (3 minutes).",
-      "Put both halves of sandwich together (3 minutes).",
-      "Cut in half and serve with milk (3 minutes)."
+      "Warm both tortillas in the microwave to the point of flexibility, keeping one warm (3 minutes).",
+      "Preheat a frying pan or griddle over medium-low heat (3 minutes).",
+      "Grease with oil or cooking spray, and place one of the tortillas in the pan (3 minutes).",
+      "Sprinkle the shredded cheese over the tortilla (3 minutes).",
+      "Top the cheese with any combination of the fillings, ideally warmed and very well drained (3 minutes).",
+      "Make sure they are evenly distributed across the tortilla (3 minutes).",
+      "Allow the cheese to melt (3 minutes).",
+      "The tortilla may brown in spots but it should not be cooked to the point of changing color substantially (3 minutes).",
+      "Press the other tortilla over the top of the tortilla in the pan, making sure it sticks a bit (3 minutes).",
+      "Flip the quesadilla and allow to warm until it joins as a unit (3 minutes).",
+      "Remove from pan and cut in eight wedges (3 minutes).",
+      "Eat immediately, or remove to a fairly low-temperature 'keep warm' area, below the melting temperature of the cheese (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Peanut_Butter_Sandwich",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Quesadilla",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9059,73 +9045,58 @@
   },
   {
     "id": "r778",
-    "name": "Shakshuka I",
+    "name": "Mashed Potatoes",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "breakfast",
+      "dinner",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 6,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sweet paprika"
-      },
-      {
-        "qty": 6,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "Lrge sweet red pepper, diced"
+        "item": "About 1 kg/2¼ lb starchy (floury) potatoes"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "chile pepper (red or green), chopped"
+        "qty": 60.0,
+        "unit": "g",
+        "item": "/4 tablespoons butter"
       },
       {
-        "qty": 6,
-        "unit": "",
-        "item": "ripe tomatoes diced"
+        "qty": 60.0,
+        "unit": "ml",
+        "item": "/¼ cup milk, half-and-half, or light cream"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Ground black pepper"
+        "item": "Salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "Pepper"
       },
       {
-        "qty": 6,
+        "qty": null,
         "unit": "",
-        "item": "eggs"
+        "item": "Nutmeg (optional)"
       }
     ],
     "steps": [
-      "On a high heat, heat the oil for about ½ minute (3 minutes).",
-      "Add the paprika and blend well (3 minutes).",
-      "Add the garlic and peppers, and turn to low flame (3 minutes).",
-      "Cook for about 10 minutes, until the peppers have slightly softened (3 minutes).",
-      "Add the tomatoes and bring to a boil, then season to taste with salt and pepper (3 minutes).",
-      "Make 6 dents in the mixture (3 minutes).",
-      "Into each dent, put an egg yolk, and spread the egg whites around (3 minutes).",
-      "Continue to cook on low until the egg whites have coagulated."
+      "Peel the potatoes and dice them into pieces about 2–3 cm/1 inch thick (3 minutes).",
+      "Place the potatoes with about 1 tablespoon of salt into a pot and add about 1.5 liters/1½ quarts of water (3 minutes).",
+      "Boil the potatoes for about 15–20 minutes or until tender, then drain (3 minutes).",
+      "Put through a potato ricer, then stir in the butter and milk or cream; or (3 minutes).",
+      "Add the butter and milk or cream, then mash with a potato masher (3 minutes).",
+      "Add salt, pepper and (if you like) nutmeg to taste (3 minutes).",
+      "Serve hot (3 minutes).",
+      "Yields 4 servings (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shakshuka_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mashed_Potatoes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9280,7 +9251,7 @@
   },
   {
     "id": "r781",
-    "name": "Shepherd's Pie I",
+    "name": "Hoppin John",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -9290,76 +9261,54 @@
     ],
     "ingredients": [
       {
-        "qty": 30,
-        "unit": "g",
-        "item": "(1 oz) lard (optional)"
+        "qty": 6.0,
+        "unit": "slice",
+        "item": "s bacon, diced"
       },
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "(450 g) minced or ground lamb or beef"
-      },
-      {
-        "qty": 3,
-        "unit": "lb",
-        "item": "(1.3 kg) powdery old potatoes, such as King Edwards"
-      },
-      {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
-        "item": "Lrge or 2 small onions"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "flour"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "(300 ml) beef stock (alternatively, bouillon cubes can be used, or gravy powder, if the flour is omitted)"
+        "item": "medium onion, diced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Cheese, grated (optional)"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "handful of mixed vegetables such as sweetcorn or carrots (optional)"
+        "item": "½ cup diced celery"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Mixed herbs"
+        "item": "½ cup diced bell pepper"
       },
       {
-        "qty": null,
+        "qty": 4.0,
         "unit": "",
-        "item": "Milk"
+        "item": "½ cups water"
       },
       {
-        "qty": null,
+        "qty": 2.0,
         "unit": "",
-        "item": "Butter"
+        "item": "packs long grain rice (3–4 cups cooked)"
+      },
+      {
+        "qty": 3.0,
+        "unit": "can",
+        "item": "s black-eyed peas"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "jalapeños, seeded and diced (about ½ cup)"
       }
     ],
     "steps": [
-      "Heat oil in a pan and brown the mince (3 minutes).",
-      "Where lean meat is used, there may be no need to use additional oil (3 minutes).",
-      "Finely chop the onion and lightly fry in a little butter with a small amount of salt until clear (3 minutes).",
-      "Add the onions to the mince, mixed herbs, and some pepper (3 minutes).",
-      "Sprinkle the flour over the mixture, stir, and cook for 3–4 minutes (if using gravy powder, omit this step) (3 minutes).",
-      "Cover with lamb or beef stock (or add water and beef bouillon/gravy powder) and simmer for 30 minutes (3 minutes).",
-      "Test the savoury mince for seasoning (3 minutes).",
-      "If gravy is not used, additional salt may be needed (3 minutes).",
-      "Meanwhile: (3 minutes).",
-      "Peel, chop and boil the potatoes for 20 minutes until cooked (3 minutes).",
-      "Once the meat is cooked, skim off the excess fat, then reduce the savoury mince until the liquid is level with the mince and onions (3 minutes).",
-      "Drain the potatoes until completely dry. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
+      "Brown bacon in large Dutch oven, remove, and reserve 2 tablespoons of grease in pan (3 minutes).",
+      "Add onion, celery, and bell pepper, and sauté 5 minutes (3 minutes).",
+      "Add rice and seasoning packet, water, and black-eyed peas; cover and simmer 25 minutes (3 minutes).",
+      "Add bacon and jalapeños, cover and heat 5–10 minutes more (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shepherd%27s_Pie_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hoppin_John",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9629,7 +9578,7 @@
   },
   {
     "id": "r785",
-    "name": "Tequila Lime Hot Wings",
+    "name": "Lobster Bisque",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -9639,9 +9588,49 @@
     ],
     "ingredients": [
       {
-        "qty": 36.0,
+        "qty": 1.0,
         "unit": "",
-        "item": "chicken wingettes"
+        "item": "½ cups cooked lobster tail meat"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s chicken broth"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s heavy cream"
+      },
+      {
+        "qty": 12.0,
+        "unit": "",
+        "item": "sprigs fresh dill"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup freshly-squeezed lemon juice"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup finely-diced celery"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "large onion, finely diced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "minced garlic"
       },
       {
         "qty": null,
@@ -9651,38 +9640,26 @@
       {
         "qty": null,
         "unit": "",
-        "item": "Black pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¾ cup tequila"
-      },
-      {
-        "qty": 6.0,
-        "unit": "tbsp",
-        "item": "freshly-squeezed lime juice"
+        "item": "Freshly-ground black pepper"
       },
       {
         "qty": 3.0,
-        "unit": "tbsp",
-        "item": "hot sauce"
-      },
-      {
-        "qty": null,
         "unit": "",
-        "item": "Oil for deep frying"
+        "item": "bay leaves"
       }
     ],
     "steps": [
-      "Sprinkle wingettes with salt and black pepper (3 minutes).",
-      "Heat oil to 350°F (3 minutes).",
-      "Fry wings in batches for 12 minutes (3 minutes).",
-      "Drain on a rack (3 minutes).",
-      "Combine remaining ingredients and boil over high heat until reduced by ⅓ (3 minutes).",
-      "Toss wings with sauce mixture and serve warm (3 minutes)."
+      "Heat oil in a large pot over medium high heat (3 minutes).",
+      "Add celery, onion, and garlic and sauté until garlic is golden and onions are translucent (3 minutes).",
+      "Add remaining ingredients, 1 tsp salt, and freshly ground black pepper (3 minutes).",
+      "Remove bay leaves and reserve (3 minutes).",
+      "Purée soup until smooth using an immersion blender (3 minutes).",
+      "Add bay leaves and bring to a boil (3 minutes).",
+      "Reduce heat to medium low and cook 10 minutes (3 minutes).",
+      "Remove bay leaves and ladle into individual bowls (3 minutes).",
+      "Grind on some black pepper and sprinkle with some dill, if desired, before serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tequila_Lime_Hot_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lobster_Bisque",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10563,100 +10540,135 @@
   },
   {
     "id": "r797",
-    "name": "Campfire Barbecue Chicken Wings",
+    "name": "Apple Fritters",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 24.0,
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "peeled and chopped apple"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "chicken wingettes"
+        "item": "½ cup granulated sugar"
       },
       {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "cayenne pepper"
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs, beaten"
       },
       {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "salt"
+        "qty": null,
+        "unit": "",
+        "item": "Flour"
       },
       {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "black pepper"
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup unsalted butter, divided"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "⅛ tsp kosher salt"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "½ quarts (2.5 liters) peanut or canola oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Powdered sugar"
       }
     ],
     "steps": [
-      "Combine cayenne, salt, and pepper, and toss with wings (3 minutes).",
-      "Refrigerate (3 minutes).",
-      "Combine sauce ingredients (3 minutes).",
-      "Heat in a microwave until warm and well mixed (3 minutes).",
-      "Allow to cool (3 minutes).",
-      "Brush wings on all sides with about ¾ of the sauce (or just put ¾ of the sauce in a ziplock with the wings) and refrigerate as long as possible (3 minutes).",
-      "Grill until internal temperature reaches 165 °F (3 minutes).",
-      "Remove to a plate and cover (3 minutes).",
-      "Let rest 5 minutes before serving with the remaining ¼ of the sauce (3 minutes)."
+      "Run the apple, sugar, eggs, butter, and salt in the food processor until a thick paste forms (3 minutes).",
+      "Roll paste into 3-inch balls (3 minutes).",
+      "Dredge balls in flour (3 minutes).",
+      "Set aside for 2–3 minutes (3 minutes).",
+      "Heat oil to 375°F (190°C) (3 minutes).",
+      "Add paste balls and fry until golden brown and cooked through (3 minutes).",
+      "Drain fritters on a cooling rack (3 minutes).",
+      "Dust with powdered sugar before serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Campfire_Barbecue_Chicken_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Fritters",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r798",
-    "name": "Hickory BBQ Chicken Wings",
+    "name": "Bourbon Apples",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 24.0,
+        "qty": 1.0,
         "unit": "",
-        "item": "chicken wings, tips removed, cut in half at the joint"
-      },
-      {
-        "qty": 10.0,
-        "unit": "tbsp",
-        "item": "barbecue sauce"
+        "item": "Honeycrisp apple, cored, peeled, and sliced into 12ths"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tsp hickory-flavored liquid smoke"
+        "item": "¾ cup bourbon"
       },
       {
         "qty": 2.0,
-        "unit": "",
-        "item": "½ quarts peanut or canola oil"
+        "unit": "tbsp",
+        "item": "unsalted butter, melted"
       },
       {
-        "qty": 3.0,
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "freshly squeezed lemon juice"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "tbs hickory-flavored seasoning"
+        "item": "¼ cup white granulated sugar"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp freshly ground allspice"
+      },
+      {
+        "qty": 2.0,
+        "unit": "clove",
+        "item": "s, freshly ground"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp freshly ground cinnamon"
       }
     ],
     "steps": [
-      "Combine sauce and liquid smoke (3 minutes).",
-      "Set aside (3 minutes).",
-      "Season chicken evenly with seasoning (3 minutes).",
-      "Set aside (3 minutes).",
-      "Heat oil to 350°F (3 minutes).",
-      "Add chicken, and working in batches, deep fry for 10–12 minutes or golden brown, crisp, and cooked through to 165°F (3 minutes).",
-      "Remove chicken and drain on a cooling rack (3 minutes).",
-      "Toss with sauce mixture (3 minutes).",
-      "Serve warm with blue cheese dressing (3 minutes)."
+      "Coat apples with butter and lemon (3 minutes).",
+      "Combine sugar, allspice, cloves, and cinnamon (3 minutes).",
+      "Sprinkle over apples and toss to coat (3 minutes).",
+      "Preheat a small stainless steel skillet over medium high heat (3 minutes).",
+      "Add apples and sauté until lightly browned (3 minutes).",
+      "Add bourbon to pan and deglaze (3 minutes).",
+      "Bring to a boil, and cook, stirring occasionally, until apples are fork tender (3 minutes).",
+      "Serve immediately (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hickory_BBQ_Chicken_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bourbon_Apples",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -11852,29 +11864,20 @@
   },
   {
     "id": "r815",
-    "name": "Honey Lime Chicken Wings",
+    "name": "Corn Pone",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 32.0,
+        "qty": 1.0,
         "unit": "",
-        "item": "chicken wingettes"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup freshly-squeezed lime juice"
-      },
-      {
-        "qty": 3.0,
-        "unit": "tbsp",
-        "item": "honey"
+        "item": "qt water"
       },
       {
         "qty": null,
@@ -11882,48 +11885,25 @@
         "item": "Cornmeal"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Poultry shake"
-      },
-      {
-        "qty": 3.0,
-        "unit": "",
-        "item": "eggs, beaten"
+        "qty": 1.0,
+        "unit": "oz",
+        "item": "butter"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ cup chipotle hot sauce"
-      },
-      {
-        "qty": 5.0,
-        "unit": "clove",
-        "item": "s garlic, smashed and minced"
-      },
-      {
-        "qty": 4.0,
-        "unit": "",
-        "item": "–5 drops red food coloring"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Oil for deep frying"
+        "item": "Salt (optional)"
       }
     ],
     "steps": [
-      "Dip chicken in beaten eggs (3 minutes).",
-      "Season liberally with poultry shake (3 minutes).",
-      "Dredge chicken in cornmeal (3 minutes).",
-      "Let rest 2–3 minutes (3 minutes).",
-      "Deep fry in batches at 350°F (175°C) for 11–12 minutes (3 minutes).",
-      "Drain on a cooling rack (3 minutes).",
-      "Meanwhile, combine remaining ingredients in a large nonreactive bowl (3 minutes).",
-      "Add wings and toss to coat (3 minutes).",
-      "Serve warm (3 minutes)."
+      "Put on the water in a pot, and as soon as it boils stir in enough cornmeal to make a very thin batter (3 minutes).",
+      "Beat it frequently while it is boiling for 10 minutes; remove from the heat, pour it in a pan, and add the butter and salt to taste (3 minutes).",
+      "When the batter is lukewarm, stir in enough corn meal to make it quite thick (3 minutes).",
+      "Let rise overnight (3 minutes).",
+      "Pat the dough out into small cakes (3 minutes).",
+      "Butter a baking tin and bake in a moderate oven or butter a cake pan, fill it ¾ full, and bake (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Honey_Lime_Chicken_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Corn_Pone",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12446,54 +12426,77 @@
   },
   {
     "id": "r824",
-    "name": "Smoky Chipotle Glazed Hot Wings",
+    "name": "Waldorf Salad",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 24.0,
+        "qty": 1.0,
         "unit": "",
-        "item": "chicken wingettes"
+        "item": "large Granny Smith apple"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "large Red Delicious apple"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "of lemon juice"
+      },
+      {
+        "qty": 80.0,
+        "unit": "g",
+        "item": "(⅓ cup or 3 oz) raisins"
+      },
+      {
+        "qty": 80.0,
+        "unit": "g",
+        "item": "(⅓ cup or 3 oz) chopped walnuts"
+      },
+      {
+        "qty": 80.0,
+        "unit": "g",
+        "item": "(⅓ cup or 3 oz) chopped celery"
       },
       {
         "qty": 2.0,
-        "unit": "tsp",
-        "item": "soy sauce"
+        "unit": "tbsp",
+        "item": "s mayonnaise"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "white granulated sugar"
       },
       {
         "qty": 6.0,
-        "unit": "tbsp",
-        "item": "Smoky Chipotle Hot Sauce"
-      },
-      {
-        "qty": 6.0,
-        "unit": "tbsp",
-        "item": "butter, melted"
-      },
-      {
-        "qty": 3.0,
-        "unit": "clove",
-        "item": "s garlic, minced"
-      },
-      {
-        "qty": null,
         "unit": "",
-        "item": "Oil for deep frying"
+        "item": "large leaves lettuce"
+      },
+      {
+        "qty": 10.0,
+        "unit": "",
+        "item": "halved maraschino cherries"
       }
     ],
     "steps": [
-      "Heat oil to 350°F (3 minutes).",
-      "Fry wings in batches for 12 minutes each batch (3 minutes).",
-      "Drain on a rack (3 minutes).",
-      "Combine remaining ingredients, add wings, and toss to coat (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Slice the apples into wedges, and place in a bowl (3 minutes).",
+      "Pour lemon juice on the apple wedges, and ensure a light coating to prevent browning (3 minutes).",
+      "Plump the raisins by placing them in warm water for 5 minutes, then drain well (3 minutes).",
+      "Mix celery, raisins, and walnuts into the bowl of apple wedges (3 minutes).",
+      "Mix the mayonnaise and sugar together, then pour into the apple mixture, ensuring a light coating on all items (3 minutes).",
+      "Chill for at least 30 minutes (3 minutes).",
+      "Place 3 lettuce leaves on a large plate and three on another, place half of the mixture on each set of leaves, and sprinkle 5 cherries on each salad (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smoky_Chipotle_Glazed_Hot_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Waldorf_Salad",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13722,7 +13725,7 @@
   },
   {
     "id": "r841",
-    "name": "Spicy Fried Wings",
+    "name": "Stuffed Peppers",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -13732,68 +13735,45 @@
     ],
     "ingredients": [
       {
-        "qty": 12.0,
+        "qty": 1.5,
         "unit": "",
-        "item": "whole chicken wings, tips removed and cut in half"
+        "item": "–2 ounces (50 g) white parboiled rice"
+      },
+      {
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "(500 g) ground meat (either beef, lamb, or pork)"
+      },
+      {
+        "qty": 6.0,
+        "unit": "",
+        "item": "large red bell peppers"
       },
       {
         "qty": 1.0,
         "unit": "",
-        "item": "½ tbsp cayenne pepper"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "lemon pepper"
+        "item": "egg"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tbsp black pepper"
+        "item": "Salt, pepper, paprika"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tbsp salt"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "egg, beaten"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "finely grated lemon zest"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Cornmeal, as needed, for dredging"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Vegetable oil for deep frying"
+        "item": "Oil"
       }
     ],
     "steps": [
-      "Combine all seasonings except lemon zest and then sprinkle over chicken (3 minutes).",
-      "Refrigerate for at least 1 hour (3 minutes).",
-      "Combine egg and lemon zest in a pie plate and place cornmeal in another pie plate (3 minutes).",
-      "Heat oil to 350°F (3 minutes).",
-      "Dip chicken into egg mixture and then dredge in cornmeal (3 minutes).",
-      "Fry in batches for 11–12 minutes (3 minutes).",
-      "Drain on a rack (3 minutes).",
-      "Please don't use paper towels unless you want greasy chicken (3 minutes).",
-      "Sprinkle with red pepper flake for hotter wings, but this is completely optional (3 minutes)."
+      "Cook the rice (3 minutes).",
+      "Turn on the oven to preheat at 390°F (200°C), while placing a baking dish with the bottom covered in oil (or water or thin tomato sauce) inside (3 minutes).",
+      "Cut out the stems and the seeds of the peppers so that the peppers form a cup (3 minutes).",
+      "Mix the rice, the egg and the ground beef and spice everything with salt, pepper and paprika (3 minutes).",
+      "Fill the peppers, set them into the baking dish, and bake for 45 minutes (3 minutes).",
+      "Serve with green salad and tomato sauce (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spicy_Fried_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stuffed_Peppers",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },

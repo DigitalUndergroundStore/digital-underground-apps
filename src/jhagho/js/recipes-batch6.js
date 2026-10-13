@@ -1568,65 +1568,75 @@
   },
   {
     "id": "r870",
-    "name": "Chipotle BBQ Sauce",
+    "name": "Greek Salad",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
-        "unit": "can",
-        "item": "s chipotle in adobo including all of adobo sauce"
-      },
-      {
-        "qty": 1.0,
+        "qty": null,
         "unit": "",
-        "item": "bottle ketchup"
-      },
-      {
-        "qty": 1.0,
-        "unit": "cup",
-        "item": "molasses"
+        "item": "Red tomatoes, chopped"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ cup Worcestershire sauce"
+        "item": "Cucumber, sliced into rounds"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup soy sauce"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "all-purpose flour"
+        "item": "Red or white onions, sliced into half-moons"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ cup cider vinegar"
+        "item": "Green bell peppers, cut into small pieces"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Greek olives"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Extra-virgin or virgin olive oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Vinegar or lemon juice"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Feta cheese"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Oregano"
       }
     ],
     "steps": [
-      "Whisk together oil and flour and cook on medium heat, stirring constantly until light blonde color is achieved (3 minutes).",
-      "Add remaining ingredients and bring to a boil; reduce heat to low and cook 15 minutes (3 minutes).",
-      "Cool for 15 minutes and purée in batches until smooth (3 minutes).",
-      "Store in nonreactive container for up to 1 week (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine tomatoes, cucumbers, onions, peppers, and olives in a deep bowl (3 minutes).",
+      "Add enough olive oil, vinegar or lemon juice, and salt to taste (3 minutes).",
+      "Toss the ingredients for half a minute (3 minutes).",
+      "Place a feta cheese slice on top and season with a splash of olive oil (3 minutes).",
+      "Top with a sprig of oregano if desired (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chipotle_BBQ_Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Greek_Salad",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2301,7 +2311,7 @@
   },
   {
     "id": "r880",
-    "name": "Eastern North Carolina Barbecue Sauce",
+    "name": "Banana Pancakes",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -2312,44 +2322,41 @@
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 40.0,
+        "unit": "g",
+        "item": "s unsalted butter"
+      },
+      {
+        "qty": 3.0,
         "unit": "",
-        "item": "¾ gallons apple cider vinegar"
+        "item": "medium-size ripe bananas"
       },
       {
-        "qty": null,
+        "qty": 3.0,
         "unit": "",
-        "item": "⅛ cup salt"
+        "item": "standard eggs"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup ground black pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup red pepper flakes"
-      },
-      {
-        "qty": 1.0,
-        "unit": "cup",
-        "item": "molasses"
-      },
-      {
-        "qty": 2.0,
-        "unit": "cup",
-        "item": "s honey"
+        "qty": 375.0,
+        "unit": "ml",
+        "item": "whole milk"
       }
     ],
     "steps": [
-      "Start with apple cider vinegar in saucepan over medium heat (3 minutes).",
-      "Add salt, ground black pepper, crushed red pepper, molasses, and honey (3 minutes).",
-      "Let mixture heat up, but not quite boil (3 minutes).",
-      "Mix well (3 minutes).",
-      "Return sauce to the jug that the vinegar came in to cool (3 minutes)."
+      "Melt the butter in a medium-size heat-safe mixing bowl (3 minutes).",
+      "Add the bananas, and mash the bananas and butter together with a potato masher (3 minutes).",
+      "Add the eggs and continue to mash until smooth (3 minutes).",
+      "Gradually stir in the milk with a wooden spoon (3 minutes).",
+      "In a separate large bowl, whisk together the dry ingredients (3 minutes).",
+      "Slowly mix the wet ingredients into the dry to get a batter (3 minutes).",
+      "Heat a nonstick skillet over medium heat (3 minutes).",
+      "For each round of frying, grease the pan with a little extra butter (3 minutes).",
+      "Pour about ⅓ cup of batter onto the pan for each pancake, making sure they don't run into each other (3 minutes).",
+      "Cook the pancakes on on medium-low heat for about 3 minutes on each side until the side is lightly browned (3 minutes).",
+      "You can tell if it's time to turn the pancake if you can see bubbles on the other side (3 minutes).",
+      "Flip the pancakes using a spatula, and cook through on the other side (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Eastern_North_Carolina_Barbecue_Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Pancakes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3194,8 +3201,8 @@
   },
   {
     "id": "r892",
-    "name": "Fried Eggs",
-    "minutes": 45,
+    "name": "Apple Bars",
+    "minutes": 60,
     "servings": 4,
     "tags": [
       "dinner",
@@ -3205,34 +3212,49 @@
     ],
     "ingredients": [
       {
-        "qty": 2.0,
-        "unit": "tsp",
-        "item": "s butter or olive oil"
-      },
-      {
-        "qty": 2.0,
-        "unit": "",
-        "item": "–3 large eggs, depending on appetite"
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "(240 ml) commercially-prepared baking mix or biscuit mix"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "¼ cup brown sugar"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg"
+      },
+      {
+        "qty": 1.0,
+        "unit": "oz",
+        "item": "(30 g) butter"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper to taste (optional)"
+        "item": "½ teaspoon cinnamon powder"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon powdered ginger"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon ground nutmeg"
       }
     ],
     "steps": [
-      "Melt the butter in the pan over low to medium heat (3 minutes).",
-      "Crack open the eggs into the pan and let fry until the yolks begin to harden at the edges (indicated by a lightening in the yolk color) (3 minutes).",
-      "Using the spatula, flip the eggs over and allow to cook 10 seconds for over-easy, 30 seconds for over-medium, or up to 1 minute for over-hard (3 minutes).",
-      "Add salt and pepper to taste, and serve (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine the baking mix, egg, brown sugar, and spices in a bowl (3 minutes).",
+      "Rub the butter into the base mixture with your fingers (3 minutes).",
+      "The mixture should not be sticky (3 minutes).",
+      "Line an 8 by 8-inch (20 by 20 cm) baking pan with parchment paper (3 minutes).",
+      "Press the base mixture into the bottom of the baking pan (you might want to press it up the sides a little) (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Eggs",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Bars",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3678,62 +3700,47 @@
   },
   {
     "id": "r899",
-    "name": "Gravy (Vegetarian)",
+    "name": "Homemade Pie Crust",
     "minutes": 45,
-    "servings": 2,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 4.0,
-        "unit": "tbsp",
-        "item": "s canola oil"
+        "qty": 225.0,
+        "unit": "g",
+        "item": "s (1 cup) all-purpose flour"
       },
       {
-        "qty": 4.0,
-        "unit": "tbsp",
-        "item": "s all-purpose flour"
+        "qty": 2.5,
+        "unit": "ml",
+        "item": "(½ teaspoon) salt"
       },
       {
-        "qty": 2.0,
-        "unit": "cup",
-        "item": "s milk"
+        "qty": 230.0,
+        "unit": "ml",
+        "item": "(1 cup) cold vegetable shortening"
       },
       {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "s imitation bacon bits (Bacos are soy based)"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt or seasoning salt to taste"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Pepper to taste"
+        "qty": 30.0,
+        "unit": "ml",
+        "item": "(2 tablespoons) cold water (add 15 ml of water as needed)"
       }
     ],
     "steps": [
-      "Heat oil in frying pan over medium heat (3 minutes).",
-      "Add flour, stirring constantly, and allow to cook until slightly browned (3 minutes).",
-      "This creates a roux (3 minutes).",
-      "Slowly add milk, whisking continuously to remove any lumps (3 minutes).",
-      "Add imitation bacon bits, and continue to cook until gravy thickens (3 minutes).",
-      "When thickened, remove from heat and stir in butter (3 minutes).",
-      "Season with salt and pepper to taste (3 minutes).",
-      "Serve over biscuits (3 minutes)."
+      "Combine flour and salt in medium bowl (3 minutes).",
+      "Cut in vegetable shortening with a pastry blender or two knives, until mixture is crumbly (3 minutes).",
+      "Sprinkle with cold water; mix just until mixture holds together (3 minutes).",
+      "Shape dough into a ball; place on lightly floured surface (3 minutes).",
+      "Roll out dough to 3 mm (⅛ inch) thickness (3 minutes).",
+      "Line pie plate with pastry (3 minutes).",
+      "Trim around perimeter for 2 cm (1 inch) overhang to fold under and crimp as desired (see pie crust edges below) (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gravy_%28Vegetarian%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Homemade_Pie_Crust",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4606,97 +4613,52 @@
   },
   {
     "id": "r911",
-    "name": "Crab Meat Canapé",
+    "name": "Turkey Wrap",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate",
-      "vegetarian"
+      "collection-mexican"
     ],
     "ingredients": [
       {
+        "qty": 8.0,
+        "unit": "",
+        "item": "large (burrito-size, about 12-inch) flour tortillas."
+      },
+      {
         "qty": 1.0,
-        "unit": "cup",
-        "item": "Béchamel Sauce Louisiannaise"
+        "unit": "can",
+        "item": "(6 ounces) tomato paste"
+      },
+      {
+        "qty": 6.0,
+        "unit": "oz",
+        "item": "s (net drained weight) black olives"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "White pepper to taste"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "small bunch green onions, chopped"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "butter, room temperature"
-      },
-      {
-        "qty": 1.0,
-        "unit": "lb",
-        "item": "(about 0.5 kg) jumbo or regular-size fresh white lump crab meat (from the body only, not the claws)"
-      },
-      {
-        "qty": 2.0,
-        "unit": "",
-        "item": "egg yolks"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "fine breadcrumbs"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tsp",
-        "item": "Parmesan cheese"
-      },
-      {
-        "qty": 4.0,
-        "unit": "slice",
-        "item": "s toast"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tsp",
-        "item": "flat-leaf parsley, finely chopped"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "lemon, cut into wedges"
+        "item": "Several cups of cooked turkey"
       }
     ],
     "steps": [
-      "Pick over crabmeat carefully with your fingers to assure the absence of crab shell (3 minutes).",
-      "This is necessary (3 minutes).",
-      "Sauté green onions in butter over medium heat until soft (3 minutes).",
-      "Do not allow onions to brown (3 minutes).",
-      "Add white lumpfish crab meat, then fold in béchamel sauce (3 minutes).",
-      "When mixture begins to simmer, remove from heat and fold in beaten egg yolks (3 minutes).",
-      "Refrigerate mixture for 10 minutes in order to form canapés (3 minutes).",
-      "Or, let stay in refrigerator overnight until ready to use (3 minutes).",
-      "Preheat oven to 350 °F (190 °C) (3 minutes).",
-      "Combine breadcrumbs and Parmesan cheese in a mixing bowl (3 minutes).",
-      "Trim the ends of the toast (3 minutes).",
-      "Place trimmed toast on a baking sheet and spoon refrigerated crabmeat mixture onto toast using an ice-cream scoop (3 minutes)."
+      "Cut the olives in half (3 minutes).",
+      "Cut the turkey into ¾-inch chunks (3 minutes).",
+      "Mix the olives and tomato paste (3 minutes).",
+      "Mix in turkey, adding as much as will be covered by the paste (3 minutes).",
+      "Optionally, warm the mixture (3 minutes).",
+      "Place some of the mixture on a tortilla (3 minutes).",
+      "Wrap the tortilla around the mixture (3 minutes).",
+      "Place the finished wrap on an ungreased cookie sheet, with the exposed edge (flap) downward to prevent the wrap from coming undone before it is cooked (3 minutes).",
+      "Keep making wraps as needed (3 minutes).",
+      "Place the cookie sheet in an oven set to 350°F (3 minutes).",
+      "Remove the wraps when they start to brown, which should be about 15 minutes (3 minutes).",
+      "Let the wraps cool a bit on the outside while heat sinks into the inside (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Crab_Meat_Canap%C3%A9",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Turkey_Wrap",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4834,7 +4796,7 @@
   },
   {
     "id": "r914",
-    "name": "American Potato Salad I",
+    "name": "Basic French Macarons",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -4845,76 +4807,51 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "lb",
-        "item": "(3–4 ea.) medium russet potatoes"
+        "qty": 125.0,
+        "unit": "g",
+        "item": "icing sugar"
       },
       {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "plus ½ teaspoon salt"
+        "qty": 125.0,
+        "unit": "g",
+        "item": "almond flour"
       },
       {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "distilled white vinegar"
+        "qty": 125.0,
+        "unit": "g",
+        "item": "white superfine sugar"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "medium rib of celery"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¾ teaspoon celery seed"
+        "qty": 90.0,
+        "unit": "g",
+        "item": "(3 ea.) egg whites"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ cup mayonnaise"
+        "item": "Food coloring (concentrated variety)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ teaspoon powdered mustard"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "minced onion"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "minced fresh parsley leaves"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ teaspoon ground black pepper"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "sweet pickle relish"
+        "item": "Filling as desired (see notes)"
       }
     ],
     "steps": [
-      "Peel and cut potatoes into ¾ inch cubes (3 minutes).",
-      "Cover potatoes with an inch of water in a large saucepan and bring to a boil (3 minutes).",
-      "Add 1 tablespoon salt to boiling water and reduce heat to medium (3 minutes).",
-      "Simmer about 8 minutes, stirring gently once or twice, until potatoes are tender (3 minutes).",
-      "Taste a piece—don't overcook (3 minutes).",
-      "Drain potatoes and place in a large bowl (3 minutes).",
-      "Toss potatoes gently with vinegar using a rubber spatula (3 minutes).",
-      "Cool potatoes (3 minutes).",
-      "They must be no more than barely warm to mix (3 minutes).",
-      "Chop celery fine (3 minutes).",
-      "Stir together celery, celery seeds, mayonnaise, dry mustard, onion, parsley, pepper, and ½ teaspoon salt (3 minutes).",
-      "Gently fold together dressing mix and potatoes."
+      "Combine the almond flour and icing sugar (3 minutes).",
+      "Sift to remove lumps, and set aside (3 minutes).",
+      "Add the superfine sugar to the egg whites, and whip them to stiff peaks (3 minutes).",
+      "Add the food coloring to the egg whites and continue beating until incorporated (3 minutes).",
+      "Use a wooden spoon or rubber spatula to fold the almond flour mixture into the meringue in 3 batches (3 minutes).",
+      "Mix until you get a lava-like batter (see notes) (3 minutes).",
+      "Transfer the batter to a pastry bag fitted with an 8 mm round nozzle (3 minutes).",
+      "Pipe 3 cm rounds on a baking sheet lined with baking paper (3 minutes).",
+      "Tap the sheet lightly on your work surface to even and flatten the mixture (3 minutes).",
+      "Leave to air-dry for 30 minutes until a film forms on the surface of the cookies (3 minutes).",
+      "Bake for 12 minutes at 150°C with convection (3 minutes).",
+      "Remove from the oven and let cool completely (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:American_Potato_Salad_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Basic_French_Macarons",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8357,53 +8294,68 @@
   },
   {
     "id": "r961",
-    "name": "Biscuits III",
+    "name": "Banana Chip Muffins",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "breakfast",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(175 g/6.2 oz) all-purpose flour"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "() caster sugar"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "butter, softened"
-      },
-      {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
-        "item": "egg yolk"
+        "item": "¾ cup (250 g / 8.8 oz) all-purpose flour"
       },
       {
-        "qty": 2,
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (110 g / 3.9 oz) granulated sugar"
+      },
+      {
+        "qty": 1.0,
         "unit": "tbsp",
-        "item": "milk"
+        "item": "baking powder"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (40 g / 1.4 oz) semisweet chocolate chips"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup (60 ml / 2 fl oz) cooking oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup (60 ml / 2 oz) milk"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "(250 g / 8.8 oz / 3 ea.) mashed ripe bananas"
       }
     ],
     "steps": [
-      "Preheat the oven to  (3 minutes).",
-      "Grease a baking pan (3 minutes).",
-      "Beat the egg and milk together in a bowl (3 minutes).",
-      "Mix the other ingredients into the egg mixture to form a soft dough (3 minutes).",
-      "Roll out the dough to and cut out into very thin biscuits with a round cookie cutter (3 minutes).",
-      "Place the biscuits on the baking pan (3 minutes).",
-      "Bake for 6 minutes until golden (3 minutes).",
-      "Take the biscuits out of the oven and leave them to cool."
+      "Measure flour, sugar, baking powder, salt, and chocolate chips into a mixing bowl (3 minutes).",
+      "Make a well in the center (3 minutes).",
+      "Beat egg in a small mixing bowl until frothy (3 minutes).",
+      "Mix in cooking oil, milk, and banana (3 minutes).",
+      "Pour into well in flour mixture (3 minutes).",
+      "Stir just to moisten—the batter will be lumpy (3 minutes).",
+      "Fill greased muffin cups ¾ full (3 minutes).",
+      "Bake at 400 °F (205 °C) for 15 to 20 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Biscuits_III",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Chip_Muffins",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },

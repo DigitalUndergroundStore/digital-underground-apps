@@ -3393,59 +3393,81 @@
   },
   {
     "id": "r95",
-    "name": "Banana Oat Pancakes",
-    "minutes": 22,
+    "name": "Spanish Rice",
+    "minutes": 45,
     "servings": 4,
     "tags": [
-      "breakfast",
-      "vegetarian",
-      "budget",
-      "easy"
+      "dinner",
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "cup",
-        "item": "rolled oats"
+        "item": "s uncooked rice"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "banana"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "egg"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "milk"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "baking powder"
-      },
-      {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "maple syrup"
+        "item": "unsalted butter"
       },
       {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup fresh cilantro, finely chopped (optional)"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "green bell pepper, finely minced"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "serrano chiles, finely minced"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup shredded cooked chicken or pork"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "onion, finely minced"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "½ cups chicken broth"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "bay leaves"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup minced chorizo, casing removed"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "minced garlic"
       }
     ],
     "steps": [
-      "Blend oats, banana, eggs, milk, baking powder, and salt until smooth, 2 minutes.",
-      "Heat a lightly oiled skillet over medium.",
-      "Pour 1/4 cup batter per pancake; cook 2 minutes per side.",
-      "Keep warm in a low oven while you finish the batch.",
-      "Serve with maple syrup."
-    ]
+      "Melt butter in a large pot over medium high heat (3 minutes).",
+      "Add onion, chiles, garlic, meats, and rice, and cook until chorizo and rice are golden brown (3 minutes).",
+      "Add broth and bay leaves (3 minutes).",
+      "Bring to a boil and cook until liquid has evaporated and rice is tender (3 minutes).",
+      "Sprinkle with cilantro before serving, if desired (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spanish_Rice",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r96",

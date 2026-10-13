@@ -544,71 +544,47 @@
   },
   {
     "id": "r209",
-    "name": "Slow Cooker Pulled Pork",
-    "minutes": 480,
-    "servings": 10,
+    "name": "Nachos",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
-      "collection-slow-cooker",
-      "collection-bbq",
-      "high-protein",
-      "budget",
-      "easy"
+      "medium",
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 3,
+        "qty": 12.0,
+        "unit": "oz",
+        "item": "s (~350 g) tortilla chips"
+      },
+      {
+        "qty": 1.0,
         "unit": "lb",
-        "item": "pork shoulder"
+        "item": "(450 g) cheddar cheese, grated"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "barbecue sauce"
-      },
-      {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "apple cider vinegar"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "brown sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "yellow onion"
+        "item": "⅓ cup chopped canned peeled green chiles (optional)"
       },
       {
-        "qty": 3,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "black pepper"
+        "qty": null,
+        "unit": "",
+        "item": "½ cup chopped onion (optional)"
       }
     ],
     "steps": [
-      "Slice onion and mince garlic (4 minutes).",
-      "Rub pork with paprika, salt, and pepper; place in slow cooker with onion and garlic.",
-      "Whisk sauce, vinegar, and brown sugar; pour over pork.",
-      "Cook on low 8 hours until shreddable.",
-      "Shred meat, toss with cooking juices, and serve on buns or plates."
-    ]
+      "Preheat the oven to 400°F (200°C) (3 minutes).",
+      "Lay the tortilla chips on a cookie sheet (3 minutes).",
+      "Toss together the cheese, chilies, and onion, and sprinkle over the tortilla chips (3 minutes).",
+      "Bake for about 2 minutes until the cheese has melted (3 minutes).",
+      "Serve hot (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nachos",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r210",
@@ -1439,65 +1415,73 @@
   },
   {
     "id": "r223",
-    "name": "Creamy Tomato Tortellini Soup",
-    "minutes": 30,
+    "name": "Au Jus Sandwich",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
-      "collection-soup",
-      "vegetarian",
-      "moderate",
-      "easy"
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 12,
-        "unit": "oz",
-        "item": "cheese tortellini"
-      },
-      {
-        "qty": 1,
-        "unit": "can",
-        "item": "crushed tomatoes"
-      },
-      {
-        "qty": 3,
-        "unit": "cup",
-        "item": "vegetable broth"
-      },
-      {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "heavy cream"
-      },
-      {
-        "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "Italian seasoning"
-      },
-      {
-        "qty": 2,
+        "qty": 3.0,
         "unit": "tbsp",
-        "item": "basil"
+        "item": "s flour"
       },
       {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": null,
+        "unit": "",
+        "item": "roast or other cut of beef"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "beef bouillon cube"
+      },
+      {
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(~2 cups / 16 oz / 470 ml) beef consommé, bouillon cube equivalent, or additional roast beef"
+      },
+      {
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(~2 cups / 16 oz / 470 ml) French onion soup"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "(2 sticks / 250 g / 8.8 oz) butter"
+      },
+      {
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(16 oz / 470 ml) beer (optional)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Spices (e.g. salt, pepper) (optional)"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "French/sandwich/hoagie rolls"
       }
     ],
     "steps": [
-      "Mince garlic (1 minute).",
-      "Simmer tomatoes, broth, garlic, and seasoning 8 minutes.",
-      "Add tortellini; cook 5 minutes until floating.",
-      "Stir in cream and salt off heat.",
-      "Top with basil and serve."
-    ]
+      "Combine all the ingredients except the rolls in a slow cooker or crock pot (3 minutes).",
+      "Let the mixture simmer for at least six hours (3 minutes).",
+      "This step is critical because it makes the meat tender (3 minutes).",
+      "Serve beef on split rolls (3 minutes).",
+      "You can either pre-dip the sandwich, or serve with a bowl of meat drippings (3 minutes).",
+      "When serving the drippings separately, remove the beef shreds from the juices and serve with a small bowl of meat drippings on the side (3 minutes).",
+      "Dip the sandwiches in the drippings as you eat (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Au_Jus_Sandwich",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r224",

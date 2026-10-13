@@ -1099,62 +1099,101 @@
   },
   {
     "id": "r264",
-    "name": "Apple Crisp I",
+    "name": "Arroz con Pollo (Rice and Chicken)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 6,
-        "unit": "cup",
-        "item": "sliced and cored baking apples (for example, Granny Smith)"
+        "qty": 1.0,
+        "unit": "",
+        "item": "ea. (1.3–1.8 kg) chicken, cut into serving pieces"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (100 g) all-purpose flour"
+        "item": "Salt to taste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (100 g) rolled oats"
+        "item": "Pepper to taste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ teaspoon (3 g) cinnamon"
+        "item": "Olive oil"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup (75 g) cold butter or cold margarine"
+        "qty": 4.0,
+        "unit": "clove",
+        "item": "s of fresh garlic, minced"
       },
       {
-        "qty": null,
+        "qty": 1.0,
         "unit": "",
-        "item": "⅔–¾ cup (120–150 g) brown sugar"
+        "item": "medium onion, chopped"
+      },
+      {
+        "qty": 225.0,
+        "unit": "g",
+        "item": "diced red bell pepper"
+      },
+      {
+        "qty": 425.0,
+        "unit": "g",
+        "item": "(1 can) diced tomatoes"
+      },
+      {
+        "qty": 7.5,
+        "unit": "g",
+        "item": "(½ tablespoon) sweet paprika"
+      },
+      {
+        "qty": 14.0,
+        "unit": "g",
+        "item": "(½ oz) chopped cilantro"
+      },
+      {
+        "qty": 1.4,
+        "unit": "l",
+        "item": "(6 cups) chicken stock"
+      },
+      {
+        "qty": 8.0,
+        "unit": "",
+        "item": "saffron threads or 1 teaspoon food coloring for yellow rice"
+      },
+      {
+        "qty": 370.0,
+        "unit": "g",
+        "item": "(2 cups) medium or long-grain rice"
+      },
+      {
+        "qty": 225.0,
+        "unit": "g",
+        "item": "(8 oz) canned peas (thoroughly drained)"
       }
     ],
     "steps": [
-      "In a medium bowl stir together flour, brown sugar, and oatmeal (3 minutes).",
-      "If the room temperature is a bit warm, you should cool this mixture in the fridge (3 minutes).",
-      "Prepare the apples (3 minutes).",
-      "This should be completed before mixing butter into the topping (3 minutes).",
-      "It is helpful to choose apples that do not brown quickly; Granny Smith apples are a good choice (3 minutes).",
-      "Do not use Red Delicious apples; they turn to mush (3 minutes).",
-      "Place the apples into a 9-inch (23 cm) square baking dish; glass is best (3 minutes).",
-      "Add the butter or margarine to the topping (3 minutes).",
-      "Mix it via a slicing action, so that the butter or margarine forms tiny little chunks and does not melt or smear (3 minutes).",
-      "A pair of butter knives, used like scissors, is good for this (3 minutes).",
-      "You must work quickly once you start this step (3 minutes).",
-      "Sprinkle the topping onto the apples."
+      "Season the chicken with two pinches of salt and a pinch of pepper (3 minutes).",
+      "Pour enough olive oil into a large skillet to just barely cover the bottom (3 minutes).",
+      "Sauté chicken in oil until brown (3 minutes).",
+      "There are two ways to proceed from here: either remove the chicken from the skillet or keep it there (3 minutes).",
+      "Sauté garlic until brown (3 minutes).",
+      "Be careful, garlic burns easily (3 minutes).",
+      "Add the onion, bell pepper, tomatoes and paprika (3 minutes).",
+      "Sauté until the vegetables are tender (3 minutes).",
+      "Transfer the ingredients to a large stewing pot (3 minutes).",
+      "Add the cilantro, bouillon and saffron (or food coloring) (3 minutes).",
+      "Bring to a rolling boil (3 minutes).",
+      "Add the rice and mix well (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Crisp_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Arroz_con_Pollo_%28Rice_and_Chicken%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1345,45 +1384,54 @@
   },
   {
     "id": "r268",
-    "name": "Switchel (Ginger Water)",
+    "name": "Baked Pork Chops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
-        "unit": "cup",
-        "item": "(about 240 ml) sugar"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "(15 ml) ground ginger"
+        "qty": 3.0,
+        "unit": "",
+        "item": "–4 bone-in pork chops, ¼ inch (6 mm) thin"
       },
       {
         "qty": 1.0,
         "unit": "",
-        "item": "quart (1 liter) water"
+        "item": "medium apple, cored and sliced thin"
       },
       {
         "qty": 1.0,
-        "unit": "cup",
-        "item": "(about 240 ml) apple cider vinegar"
+        "unit": "",
+        "item": "medium onion, sliced thin"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "(15 ml) honey"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "(15 ml) caraway seed (can be salvaged from the bag your rye bread comes in)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Garlic salt, black pepper, and Dijon mustard, to taste"
       }
     ],
     "steps": [
-      "Dissolve sugar/syrup and ground ginger in the water (3 minutes).",
-      "Stir in the apple cider vinegar (3 minutes).",
-      "Chill or serve over ice cubes (3 minutes).",
-      "Shake well before serving (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Heat oven to 350 °F (180 °C) (3 minutes).",
+      "Layer sliced onion and apple in a baking dish that can be covered; drizzle honey and half the caraway over apple and onion slices (3 minutes).",
+      "Season meat with garlic salt and pepper; spread top of meat with Dijon (3 minutes).",
+      "Sprinkle remainder of caraway (3 minutes).",
+      "Cover and bake for one hour (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Switchel_%28Ginger_Water%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1562,64 +1610,63 @@
   },
   {
     "id": "r272",
-    "name": "Six Layer Casserole",
+    "name": "Prime Rib Dinner",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
-        "unit": "cup",
-        "item": "s diced potatoes"
-      },
-      {
         "qty": 1.0,
-        "unit": "cup",
-        "item": "carrots diced"
+        "unit": "",
+        "item": "prime-grade 4-bone standing rib roast from the loin end, bones removed"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup diced onion"
+        "item": "Salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup raw rice"
+        "item": "Freshly ground black pepper"
       },
       {
-        "qty": 1.0,
-        "unit": "lb",
-        "item": "ground beef"
-      },
-      {
-        "qty": 10.0,
-        "unit": "oz",
-        "item": "canned tomato soup (you may also use homemade tomato sauce)"
+        "qty": 4.0,
+        "unit": "tsp",
+        "item": "thyme, finely chopped"
       },
       {
         "qty": 2.0,
-        "unit": "cup",
-        "item": "s water"
+        "unit": "tsp",
+        "item": "rosemary, finely chopped"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "salt and pepper"
+        "item": "Olive oil"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "garlic powder"
       }
     ],
     "steps": [
-      "Spread layers of raw vegetables and rice in a 9x9-inch baking dish in the order mentioned above and crumble raw hamburger on the top (3 minutes).",
-      "Mix the soup and water and pour over all (3 minutes).",
-      "Add salt and pepper on top (3 minutes).",
-      "Bake about 1.5–2 hours at 350°F (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Bring a large pot of salted water to a boil (3 minutes).",
+      "Add potatoes and cook for 10 minutes (3 minutes).",
+      "Shock potatoes in a bowl of ice water (3 minutes).",
+      "Place on a cooling rack and let dry for 2 hours (3 minutes).",
+      "Toss parsnips and potatoes with olive oil (3 minutes).",
+      "Sprinkle liberally with salt and freshly ground black pepper (3 minutes).",
+      "Bake at 450°F for 25 minutes (3 minutes).",
+      "Keep warm in a different oven than the prime rib (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Six_Layer_Casserole",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Prime_Rib_Dinner",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1993,101 +2040,49 @@
   },
   {
     "id": "r278",
-    "name": "Mincemeat",
+    "name": "French Toast",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "breakfast",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 6.0,
+        "qty": 1.0,
         "unit": "",
-        "item": "–8 pounds (2.7–3.6 kg/about 30 ea.) Baldwin apples"
+        "item": "egg"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "stew beef (neck, plate, etc.)"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "whole lemon, seeds removed"
-      },
-      {
-        "qty": 2.0,
-        "unit": "cup",
-        "item": "s (160 g/5.6 oz) seedless black raisins"
-      },
-      {
-        "qty": 4.0,
-        "unit": "cup",
-        "item": "s (900 g/2 lb) sugar"
+        "item": "About ¼ cup (60 ml / 2 oz) milk or cream (more for softer, less eggy French toast; less for firmer, more eggy toast)"
       },
       {
         "qty": 2.0,
         "unit": "",
-        "item": "½ tsp ground cinnamon"
+        "item": "–3 slices bread (see notes)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tsp ground nutmeg"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp ground cloves"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "dried coffee (regular or decaffeinated)"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 1.0,
-        "unit": "cup",
-        "item": "(250 ml/8.5 oz) cider vinegar"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "½ cups (375 ml/12.7 oz) meat stock"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "½ cups (500 g/1.1 lb) sorghum molasses or regular molasses"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp ground black pepper"
+        "item": "Butter, margarine, or cooking oil"
       }
     ],
     "steps": [
-      "Core apples; remove the seeds, but don’t peel (3 minutes).",
-      "Cube meat and cover with water (3 minutes).",
-      "Simmer until tender; this may take up to an hour (3 minutes).",
-      "Remove meat and cook the stock down to the amount needed, or thicken slightly with cornstarch (3 minutes).",
-      "Run meat through a food mill (medium or coarse blade), or grind to an equivalent fineness in a food processor (3 minutes).",
-      "Cut lemon in half and remove seeds (3 minutes).",
-      "Purée the whole lemon in a blender, rind and all, with some of the liquid ingredients, or process as finely as possible in a food processor (3 minutes).",
-      "Grind the apples (or process using a coarse blade—but not too fine) (3 minutes).",
-      "Combine the apple, meat, and raisins in a large, heavy-bottomed pot (3 minutes).",
-      "Add the sugar, spices, liquids, and lemon purée to the meat and apples (3 minutes).",
-      "Use hot meat stock to rinse the last of the molasses into the mixture (3 minutes).",
-      "Stir thoroughly (3 minutes)."
+      "Whisk the eggs, milk, and optional ingredients in a bowl until fully combined and no streaks of egg white remain (3 minutes).",
+      "Heat up a frying pan, skillet, or griddle to medium-low heat (3 minutes).",
+      "Grease the pan with butter, margarine, or cooking spray (3 minutes).",
+      "Soak each side of the bread in the egg mixture only until it is coated and has absorbed a little of the mixture (3 minutes).",
+      "(See the Notes below for which breads work best.) (3 minutes).",
+      "Make sure the bread is not falling apart (3 minutes).",
+      "Soft breads need only a quick dip; sturdier breads can soak a few seconds longer (3 minutes).",
+      "Cook, turning once, until both sides of the bread are browned and the inside is cooked through (3 minutes).",
+      "Serve on plates, with toppings as desired (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mincemeat",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:French_Toast",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2152,104 +2147,103 @@
   },
   {
     "id": "r280",
-    "name": "Milk Toast",
+    "name": "Hash Browns",
     "minutes": 45,
-    "servings": 4,
+    "servings": 2,
     "tags": [
-      "dinner",
+      "breakfast",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 2.0,
         "unit": "",
-        "item": "pint (570 ml) milk, part cream if the person is not forbidden that"
-      },
-      {
-        "qty": 4.0,
-        "unit": "slice",
-        "item": "s good bread, freshly toasted"
+        "item": "potatoes, washed"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Sweet butter, if allowed"
+        "item": "½ onion, finely chopped (optional)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt"
+        "item": "Cooking oil (canola is good&mdash;see smoke point information)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Pepper"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s flour OR 1 egg"
       }
     ],
     "steps": [
-      "Heat the milk to the simmering point (3 minutes).",
-      "Generously butter the toast slices (3 minutes).",
-      "Heat a pretty bowl, deeper than it is wide (3 minutes).",
-      "Break the hot buttered toast into it, pour the steaming but not boiling milk over it, sprinkle a little salt and pepper on the top, and serve at once (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Grate the raw potatoes with a cheese grater, place them into a bowl and cover completely with water (3 minutes).",
+      "Let sit for 10 minutes (3 minutes).",
+      "Drain the grated potatoes well; if this is not done thoroughly the potatoes will steam instead of fry (3 minutes).",
+      "Mix in chopped onions by hand (3 minutes).",
+      "Mix the egg OR flour into the hash brown mixture evenly (3 minutes).",
+      "This will allow the hash browns to stay together when frying (3 minutes).",
+      "Place a large frying pan on medium-high heat and add enough oil to provide a thin coating over the entire bottom of the pan (3 minutes).",
+      "When the oil has come up to temperature apply a large handful of potatoes to the pan and reshape into a patty that is about ¼–½ inch (6–12 mm) thick (3 minutes).",
+      "The thinner the patty, the crispier the hash browns will be throughout (3 minutes).",
+      "Flip when they are crisp and brown on the cooking side (3 minutes).",
+      "They should also stick together nicely before they are flipped (3 minutes).",
+      "This should take about 5–8 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Milk_Toast_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hash_Browns",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r281",
-    "name": "Red Devils",
+    "name": "Tacos",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "collection-mexican"
     ],
     "ingredients": [
       {
         "qty": null,
         "unit": "",
-        "item": "Bread, sliced"
+        "item": "Ground, finely sliced, or chopped beef"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "American cheese, sliced"
+        "item": "Corn tortillas or ready-made taco shells"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "–4 tsp per pound (450 g) of beef of cumin"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Tomato, sliced"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Onion, diced"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Bacon"
+        "item": "Chili powder, to taste"
       }
     ],
     "steps": [
-      "Place bacon in a sheet pan (3 minutes).",
-      "Set the broiler to 'low' (3 minutes).",
-      "Pre-cook the bacon under the broiler until it is about halfway done (3 minutes).",
-      "While bacon cooks, place white bread on a sheet, one slice per diner (3 minutes).",
-      "Place a slice of American cheese on each slice of bread (3 minutes).",
-      "Place the tomato slices on each sandwich (3 minutes).",
-      "Sprinkle a small amount of onion onto each sandwich (3 minutes).",
-      "Place a strip of half-cooked bacon on each sandwich (3 minutes).",
-      "Place the cookie sheet under broiler, set to maximum temperature, and broil for approximately 3–4 minutes (3 minutes).",
-      "You must check on them often to prevent burning (3 minutes).",
-      "Remove once the bread is toasted, the cheese is golden at the edges, and the bacon is fully cooked (3 minutes)."
+      "If you would like to have 'build-your-own' tacos, dice the optional ingredients your desire as needed and place in separate bowls for use on the table (3 minutes).",
+      "Add lots of cumin to the beef (3 minutes).",
+      "Cumin is the magic ingredient that makes a taco taste like a taco (3 minutes).",
+      "You may also add a bit of salt, a bit of chili powder and/or diced onion (3 minutes).",
+      "Prepare the outside covering: (3 minutes).",
+      "* Pre-made shells can be reheated in the microwave as the package directs (3 minutes).",
+      "* Plain corn tortillas can be used for soft tacos, although, for soft tacos, either a double layer of corn tortillas or a single layer of flour tortilla works best (3 minutes).",
+      "The tortillas should be microwaved, covered, in 15+ second stages, flipping between stages, until warm, and kept covered and warm prior to use (3 minutes).",
+      "Place hot beef into a hard shell or down the middle of a warm soft tortilla (two for corn) (3 minutes).",
+      "A very simple, and quite authentic, taco would be to then add a sprinkling of finely diced onion and cilantro into the inside of the taco, fold the tortilla over (if soft) and serve with lime quarters for squeezing into the taco (3 minutes).",
+      "See Tacos de Bistec (3 minutes).",
+      "You may also continue on to place cheese onto the beef (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Red_Devils",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tacos",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2492,51 +2486,97 @@
   },
   {
     "id": "r286",
-    "name": "Rhubarb Marmalade",
+    "name": "Baked Ziti",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "vegetarian"
+      "vegetarian",
+      "collection-italian"
     ],
     "ingredients": [
       {
         "qty": 1.0,
-        "unit": "",
-        "item": "lemon, juiced"
-      },
-      {
-        "qty": 2.0,
-        "unit": "",
-        "item": "oranges, juiced"
-      },
-      {
-        "qty": 4.0,
         "unit": "lb",
-        "item": "s rhubarb, cut into small pieces"
+        "item": "(450 g) ziti or other pasta"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ cups (360 ml) marinara sauce"
       },
       {
         "qty": 1.0,
         "unit": "lb",
-        "item": "raisins"
+        "item": "(450 g) grated mozzarella"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ lb (225 g) ricotta"
+      },
+      {
+        "qty": 4.0,
+        "unit": "oz",
+        "item": "(110 g) grated Parmesan cheese"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg, beaten"
       },
       {
         "qty": 3.0,
-        "unit": "lb",
-        "item": "s sugar"
+        "unit": "tbsp",
+        "item": "basil, chopped fine"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "oregano, chopped fine"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "Italian parsley, chopped fine"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (120 ml) bread crumbs"
+      },
+      {
+        "qty": 1.0,
+        "unit": "pinch",
+        "item": "crushed red pepper flakes (optional)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Pepper"
       }
     ],
     "steps": [
-      "Combine the lemon juice, orange juice, and rhubarb (3 minutes).",
-      "Chop lemon and orange rind along with raisins; add to rhubarb mixture (3 minutes).",
-      "Mix all and let stand for 30 minutes (3 minutes).",
-      "Add sugar and bring to a boil, then simmer for 1 hour, stirring often (3 minutes).",
-      "When the mixture gets thick, pour into glasses or crock (3 minutes).",
-      "When cool, seal (3 minutes)."
+      "Preheat oven to 425 °F (225 °C) (3 minutes).",
+      "Coat a large baking dish with olive oil (3 minutes).",
+      "Mix ricotta, egg, basil, oregano, parsley and about half of the mozzarella and Parmesan in a large bowl until well incorporated (3 minutes).",
+      "Season with salt and pepper (3 minutes).",
+      "Cook ziti in a large pot of salted water until al dente (3 minutes).",
+      "Drain well (3 minutes).",
+      "In a large bowl or pot, toss ziti with marinara sauce and red pepper flakes until noodles are covered (3 minutes).",
+      "Stir in ricotta mixture and fold until it begins to melt (3 minutes).",
+      "Pour mixture into greased dish and spread it out with a spoon (3 minutes).",
+      "Sprinkle remaining mozzarella and Parmesan over the top, then sprinkle bread crumbs over cheese (3 minutes).",
+      "Bake at 425 °F (225 °C) for 20 minutes or until cheese on top turns golden and begins to bubble (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Rhubarb_Marmalade",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Ziti",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3120,7 +3160,7 @@
   },
   {
     "id": "r295",
-    "name": "Betty's Salad",
+    "name": "Roast Potatoes",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -3132,102 +3172,88 @@
       {
         "qty": null,
         "unit": "",
-        "item": "½ package fresh spinach"
+        "item": "Potatoes"
       },
       {
-        "qty": 6.0,
+        "qty": null,
         "unit": "",
-        "item": "hard boiled eggs, sliced"
+        "item": "Oil, fat (goose or duck), or lard"
       },
       {
-        "qty": 1.0,
-        "unit": "can",
-        "item": "bean sprouts, drained"
-      },
-      {
-        "qty": 1.0,
+        "qty": null,
         "unit": "",
-        "item": "–2 cans water chestnuts, drained and sliced (optional, depending on the recipe you follow)"
+        "item": "Salt (optional)"
       },
       {
-        "qty": 1.0,
-        "unit": "lb",
-        "item": "fried bacon, crumbled"
+        "qty": null,
+        "unit": "",
+        "item": "Water"
       }
     ],
     "steps": [
-      "Layer the salad ingredients in the order listed (3 minutes).",
-      "Mix all the dressing ingredients in blender (3 minutes).",
-      "Pour over salad (3 minutes).",
-      "Store salad in fridge (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat the oven to 220&#176;C (425&#176;F, gas mark 7) (3 minutes).",
+      "Peel the potatoes, and slice them into quarters or eighths depending on the size of the potato (3 minutes).",
+      "Smaller pieces tend to make crispier roast potatoes, and larger pieces tend to make softer ones (3 minutes).",
+      "Put the potatoes in a saucepan of water, and add a pinch of salt if you wish (3 minutes).",
+      "Cover, bring the contents to the boil, and allow to simmer for 10 minutes to parboil the potatoes prior to roasting (3 minutes).",
+      "Drain the potatoes, either removing with a slotted spoon or with a metal colander (3 minutes).",
+      "Replace the lid and shake the potatoes vigorously for 20–30 seconds (3 minutes).",
+      "Lightly coat potatoes with oil or fat, such as by hand tossing in a bowl, and place in tin (3 minutes).",
+      "A deep tin is safer than a shallow tin, as shallow tins tip easily, spilling any loose oil (3 minutes).",
+      "Sprinkle salt over the top of the potatoes (3 minutes).",
+      "Place in oven, then roast for 20–50 minutes—tastes and ovens differ—or until the potatoes are golden brown (3 minutes).",
+      "Remove them from the oven (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Betty%27s_Salad",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roast_Potatoes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r296",
-    "name": "Barbecue Wings",
+    "name": "Fried Green Tomatoes",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 24,
+        "qty": 4.0,
         "unit": "",
-        "item": "chicken wings, tips removed, cut in half at the joint"
+        "item": "–6 green tomatoes"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "barbecue sauce"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "paprika"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "lemon pepper"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "salt"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "black peppercorns, cracked"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "½ tbsp ground cayenne pepper (optional)"
+        "item": "Salt"
       },
       {
-        "qty": 0.5,
+        "qty": null,
         "unit": "",
-        "item": "x3 hickory wood chips"
+        "item": "Pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Yellow cornmeal"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Vegetable or olive oil"
       }
     ],
     "steps": [
-      "Combine seasonings and toss with wings (3 minutes).",
-      "Brush wings on all sides with sauce and refrigerate as long as possible (3 minutes).",
-      "Preheat 4 ½ pounds charcoal in the chimney (3 minutes).",
-      "Disperse evenly around bottom of grill, then reapply grate (3 minutes).",
-      "Add chicken and cook, turning often, until internal temperature reaches 165°F (3 minutes).",
-      "Remove to a plate and cover tightly with aluminum foil (3 minutes).",
-      "Let rest 5 minutes before serving."
+      "Slice the tomatoes ¼–½ inch (0.75–1.25 cm) thick (3 minutes).",
+      "Salt and pepper tomato slices to taste (3 minutes).",
+      "Dip slices in cornmeal and shallow fry in hot grease or oil over medium heat for about 3 minutes or until golden on bottom (3 minutes).",
+      "Gently turn over, and fry the other side (3 minutes).",
+      "Serve by themselves or, for a elegant addition, add a little goat cheese (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Barbecue_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Green_Tomatoes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3477,7 +3503,7 @@
   },
   {
     "id": "r300",
-    "name": "Toasted Baguette Slices with Pecan Butter, Brie and Apples",
+    "name": "Shortbread",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -3488,64 +3514,38 @@
     ],
     "ingredients": [
       {
-        "qty": 24.0,
-        "unit": "",
-        "item": "ea. ¼-inch (0.5 cm) French bread baguette slices"
-      },
-      {
-        "qty": 6.0,
-        "unit": "tbsp",
-        "item": "(about 90 ml) melted butter"
-      },
-      {
-        "qty": 4.0,
-        "unit": "oz",
-        "item": "(140 g) chopped pecans"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "(15 ml) peanut oil"
+        "qty": 380.0,
+        "unit": "g",
+        "item": "(1 ½ cup / 13 ½ oz) all-purpose flour"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "¼ tsp salt"
       },
       {
-        "qty": 4.0,
-        "unit": "oz",
-        "item": "(140 g) cream cheese, room temperature"
+        "qty": 220.0,
+        "unit": "g",
+        "item": "(1 cup / 8 oz) butter"
       },
       {
-        "qty": 1.0,
-        "unit": "",
-        "item": "apple, cut into 24 slices"
-      },
-      {
-        "qty": 8.0,
-        "unit": "oz",
-        "item": "(280 g) chilled brie cheese, trimmed and sliced into 24 pieces"
-      },
-      {
-        "qty": 24.0,
-        "unit": "",
-        "item": "pecan halves"
+        "qty": 110.0,
+        "unit": "g",
+        "item": "(½ cup / 4 oz) white granulated sugar"
       }
     ],
     "steps": [
-      "Place baguette slices on cookie sheet and brush with melted butter (3 minutes).",
-      "Bake for 8 minutes or until golden brown in a 400°F (250°C) oven (3 minutes).",
-      "Remove and allow to cool (3 minutes).",
-      "Blend pecans and oil in processor or blender to smooth paste (3 minutes).",
-      "Season with salt (3 minutes).",
-      "Spread cream cheese on toasted bread, then top with apple slices and brie slices (3 minutes).",
-      "Spread pecan butter over top of each one (3 minutes).",
-      "Top with pecan half (3 minutes).",
-      "Place back on cookie sheet, and bake until cheese melts slightly (about 1 minute) (3 minutes).",
-      "Serve and enjoy (3 minutes)."
+      "Preheat the oven to 140°C (275°F or Gas Mark 1) (3 minutes).",
+      "Cream the butter with the sugar until light and fluffy (3 minutes).",
+      "Sift the flour and salt into the mixture and work into the fat and sugar until completely amalgamated (3 minutes).",
+      "Shape the dough into a ball and roll out to about 1.3 cm (½ inch) thick (3 minutes).",
+      "The dough may need to be chilled for 10–15 minutes for easier handling (3 minutes).",
+      "Cut into squares or rectangles and prick the tops with a fork in two parallel lines (3 minutes).",
+      "Bake in the oven for 30–40 minutes or until the shortbread is lightly browned (3 minutes).",
+      "Leave them on a cooling rack to cool (3 minutes).",
+      "Store in a cool place in an airtight container (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Toasted_Baguette_Slices_with_Pecan_Butter%2C_Brie_and_Apples",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shortbread",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3785,86 +3785,49 @@
   },
   {
     "id": "r304",
-    "name": "Beef Stew I",
-    "minutes": 45,
+    "name": "Fried Plantain and Egg",
+    "minutes": 30,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "lb",
-        "item": "(900 g) beef"
+        "qty": null,
+        "unit": "",
+        "item": "Plantain"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup flour"
+        "item": "Vegetable oil"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "oil"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "bay leaf"
+        "item": "Egg"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "(5 ml) marjoram"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "(5 ml) oregano"
-      },
-      {
-        "qty": 46,
+        "qty": null,
         "unit": "",
-        "item": "fl oz (5 ¾ cup, 1.36 L, or 1 large can) tomato juice"
-      },
-      {
-        "qty": 10,
-        "unit": "",
-        "item": "½ oz (298 g, about 1 ¼ cup, or 300 mL) double-strength beef broth"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "–4 russet potatoes, or other large non-sweet white baking potatoes"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "Lrge carrots"
-      },
-      {
-        "qty": 4,
-        "unit": "stalk",
-        "item": "of celery"
+        "item": "Salt"
       }
     ],
     "steps": [
-      "Cut the beef into chunks about 1 inch (2.5 cm) across (3 minutes).",
-      "Put the beef and flour in a container, such as a plastic bag, and shake or squish until the beef is well-coated (3 minutes).",
-      "Use more flour for a thicker stew, or less for a thinner stew (3 minutes).",
-      "Put oil into a wide pot and heat it (3 minutes).",
-      "In several batches, brown the beef in the pot with the oil (3 minutes).",
-      "Return the browned beef to the pot, along with all the spices, tomato juice, and the double-strength beef broth (3 minutes).",
-      "Cover the pot, then simmer for at least an hour to soften the beef (3 minutes).",
-      "Stir the stew every few minutes to prevent the beef from burning on the bottom of the pot (3 minutes).",
-      "Peel the carrots, and cut them into pieces about the same size as the beef (3 minutes).",
-      "Add them to the stew, and simmer a bit more, stirring every few minutes (3 minutes).",
-      "Cut the other vegetables likewise, add to stew, and simmer a bit more, stirring (3 minutes).",
-      "When all the vegetables are soft but not yet falling apart, remove the bay leaf and serve the stew."
+      "Peel and slice the plantain (3 minutes).",
+      "Season with salt and toss to mix (3 minutes).",
+      "Heat a little oil in a frying pan (3 minutes).",
+      "When hot, add the plantain (3 minutes).",
+      "Cook, turning occasionally, until browned (3 minutes).",
+      "Remove the plantain and set aside (3 minutes).",
+      "Whisk the egg with a pinch of salt (3 minutes).",
+      "Add the egg to the pan, and cook like scrambled eggs (3 minutes).",
+      "Serve the eggs and plantain together (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beef_Stew_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Plantain_and_Egg",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6554,67 +6517,55 @@
   },
   {
     "id": "r338",
-    "name": "Honey BBQ Hot Wings",
+    "name": "Green Bean Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 24,
+        "qty": 8.0,
+        "unit": "cup",
+        "item": "s cooked green beans"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 2.0,
         "unit": "",
-        "item": "chicken wingettes"
+        "item": "⅔ cups canned French fried onions, divided into 2 equal portions"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt"
+        "item": "¼ teaspoon ground black pepper"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Black pepper"
+        "qty": 2.0,
+        "unit": "can",
+        "item": "s (21 ounces) cream of mushroom soup"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup tomato paste"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "honey"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "cider vinegar"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "hot sauce"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Oil for deep frying"
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "s soy sauce"
       }
     ],
     "steps": [
-      "Sprinkle wings with salt and black pepper (3 minutes).",
-      "Heat oil to 350°F (175°C) (3 minutes).",
-      "Deep fry wings in batches for 11–12 minutes (3 minutes).",
-      "Drain on a cooling rack (3 minutes).",
-      "Combine liquid ingredients except for oil (3 minutes).",
-      "Bring to a boil over medium high heat until reduced to 10 Tbsp (3 minutes).",
-      "Remove from heat and let rest for 5 minutes (3 minutes).",
-      "Toss wings with sauce; serve warm (3 minutes)."
+      "Preheat oven to 350°F (175°C) (3 minutes).",
+      "Stir together beans, milk, ½ of onions, pepper, soup, and soy sauce in a 3-quart casserole dish (3 minutes).",
+      "Bake until hot, about 25 minutes (3 minutes).",
+      "Sprinkle top with rest of onions (3 minutes).",
+      "Bake another 5 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Honey_BBQ_Hot_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Bean_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8658,51 +8609,55 @@
   },
   {
     "id": "r365",
-    "name": "Midwestern Chicken Wings",
-    "minutes": 180,
-    "servings": 6,
+    "name": "Baked Custard",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "fresh ginger, minced"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 12,
-        "unit": "oz",
-        "item": "apricot preserves (not preserved apricots, not apricot jelly)"
-      },
-      {
-        "qty": 4,
+        "qty": 4.0,
         "unit": "",
-        "item": "–5 pounds chicken wings"
+        "item": "eggs"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (120 g) white granulated sugar"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "vanilla extract"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "quart (946 ml) milk"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "butter or shortening"
       }
     ],
     "steps": [
-      "Place all ingredients except chicken into a bowl and mix to make a marinade (3 minutes).",
-      "Marinate the chicken in the refrigerator with the marinade for at least 3 hours (3 minutes).",
-      "A plastic bag sealed tight without much air or free space is believed to provide the best marinating (3 minutes).",
-      "As with many marinating recipes, the longer the better (3 minutes).",
-      "Clean and preheat grill to medium heat (3 minutes).",
-      "Place wings on grill (3 minutes).",
-      "Turn 1–4 times over the next 20 minutes (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
+      "Beat the eggs, the sugar, the salt, and the vanilla together (3 minutes).",
+      "Scald the milk and add it very slowly, stirring constantly (see tempering) (3 minutes).",
+      "Pour the mixture into a greased or buttered baking dish or several small greased heat-proof molds (3 minutes).",
+      "Place the baking dish or the molds in a pan of water in a slow oven (300–325°F / 150–160°C) and bake for between 30 and 40 minutes (3 minutes).",
+      "Test if the custard is cooked with a knife, which will come out clean when the custard is thoroughly baked (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Midwestern_Chicken_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Custard",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8873,11 +8828,11 @@
   },
   {
     "id": "r368",
-    "name": "Chocolate Chip Cookies III",
+    "name": "Oatmeal Raisin Cookies",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "breakfast",
       "medium",
       "moderate",
       "vegetarian"
@@ -8886,37 +8841,37 @@
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup butter, softened"
+        "item": "¾ cup butter, applesauce, equal parts butter and vegetable oil, or shortening"
       },
       {
-        "qty": null,
+        "qty": 1.0,
         "unit": "",
-        "item": "½ cup white sugar"
+        "item": "¼ cup brown sugar, firmly packed"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "packed brown sugar"
-      },
-      {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
         "item": "egg"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "vanilla"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "flour"
-      },
-      {
         "qty": null,
         "unit": "",
-        "item": "½ tsp salt"
+        "item": "⅓ cup water or milk"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tsp vanilla"
+      },
+      {
+        "qty": 3.0,
+        "unit": "cup",
+        "item": "raw oats (rolled or quick/old fashioned)"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "all-purpose flour"
       },
       {
         "qty": null,
@@ -8926,21 +8881,34 @@
       {
         "qty": null,
         "unit": "",
-        "item": "Hershey's Chipits semisweet chocolate chips"
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ tsp cinnamon"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "raisins"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¾ cup walnuts, chopped"
       }
     ],
     "steps": [
-      "Cream butter and sugar in a bowl until well combined (3 minutes).",
-      "Mix in egg and vanilla (3 minutes).",
-      "Combine flour, salt, and baking soda (3 minutes).",
-      "Mix this dry mix into the wet mix (3 minutes).",
-      "Fold in chocolate chips (3 minutes).",
-      "Scoop cookies onto a parchment-lined baking sheet (3 minutes).",
-      "Bake at 350°F until golden brown (3 minutes).",
-      "Cool slightly, then remove from baking sheet (3 minutes).",
-      "Cool fully."
+      "Heat oven to 350°F (3 minutes).",
+      "Lightly grease cookie sheet with oil, shortening, or butter (3 minutes).",
+      "Combine your choice of fat (butter, apple sauce, butter/vegetable oil mix, or shortening), brown sugar, egg, milk, and vanilla; beat with mixer on high speed to blend well (3 minutes).",
+      "Combine oats, flour, baking soda, salt and cinnamon; add to shortening mixture and combine until just blended (3 minutes).",
+      "Stir in raisins and nuts (3 minutes).",
+      "Drop by rounded tablespoonfuls onto greased cookie sheet, 2 inches apart (3 minutes).",
+      "Bake for 10–13 minutes, or until lightly browned (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chocolate_Chip_Cookies_III",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Oatmeal_Raisin_Cookies",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10200,9 +10168,9 @@
   },
   {
     "id": "r386",
-    "name": "Cornbread I",
-    "minutes": 45,
-    "servings": 4,
+    "name": "Banana Cake",
+    "minutes": 120,
+    "servings": 8,
     "tags": [
       "dinner",
       "medium",
@@ -10211,69 +10179,76 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 2.0,
         "unit": "cup",
-        "item": "(140 g / 4.9 oz) cornmeal"
+        "item": "s all-purpose flour"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(140 g / 4.9 oz) all-purpose flour"
-      },
-      {
-        "qty": 4,
-        "unit": "tsp",
-        "item": "baking powder"
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ teaspoons baking powder"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tsp salt"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(250 ml / 8.5 fl oz) milk"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "ea. (50 g) egg"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(60 g / 2.1 oz) shortening, melted"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(55 g / 1.9 oz) white granulated sugar (optional)"
+        "item": "½ teaspoon baking soda"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ of a can whole corn kernels, drained (optional)"
+        "item": "½ teaspoon salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ ea. onion, finely chopped (optional)"
+        "item": "½ teaspoon ground cinnamon"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup unsalted butter, softened"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "granulated sugar"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "standard eggs"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ teaspoons vanilla extract"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "ripe bananas, mashed"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup buttermilk"
       }
     ],
     "steps": [
-      "Preheat oven to  (3 minutes).",
-      "Grease an baking pan (3 minutes).",
-      "Combine cornmeal, flour, baking powder, salt, and sugar in a large mixing bowl (3 minutes).",
-      "Add egg, milk, and shortening (3 minutes).",
-      "Beat until fairly smooth (about a minute) (3 minutes).",
-      "If using corn and/or onion, fold in these ingredients (3 minutes).",
-      "Pour the mixture into the baking pan (3 minutes).",
-      "Bake for 20–25 minutes or until a toothpick inserted in center comes out clean (3 minutes).",
-      "If corn is added to batter, increase time by ~50% (3 minutes).",
-      "Serve hot!."
+      "Preheat the oven to 350°F (175°C) (3 minutes).",
+      "Grease and flour a 9-inch round cake pan (3 minutes).",
+      "In a medium bowl, whisk together the flour, baking powder, baking soda, salt, and ground cinnamon (3 minutes).",
+      "Set aside (3 minutes).",
+      "In a large mixing bowl, cream together the softened butter and granulated sugar until light and fluffy (3 minutes).",
+      "Beat in the eggs, one at a time, followed by the vanilla extract (3 minutes).",
+      "Add the mashed bananas to the butter mixture and mix until well combined (3 minutes).",
+      "Gradually add the dry ingredient mixture to the banana mixture, alternating with the buttermilk (3 minutes).",
+      "Begin and end with the dry ingredients, mixing just until combined after each addition (3 minutes).",
+      "Be careful not to overmix (3 minutes).",
+      "Pour the batter into the prepared cake pan and smooth the top with a spatula (3 minutes).",
+      "Bake for 45–50 minutes, or until a toothpick inserted into the center of the cake comes out clean (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cornbread_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Cake",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10880,57 +10855,76 @@
   },
   {
     "id": "r395",
-    "name": "Crêpes I",
+    "name": "Asparagus Frittata",
     "minutes": 45,
-    "servings": 12,
+    "servings": 4,
     "tags": [
-      "dinner",
+      "breakfast",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 220,
-        "unit": "g",
-        "item": "(1 cup / 8 oz) plain flour"
-      },
-      {
-        "qty": 345,
-        "unit": "ml",
-        "item": "(1 ½ cup / 12 fl oz) milk"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "eggs"
-      },
-      {
-        "qty": 2,
+        "qty": 1.0,
         "unit": "tbsp",
-        "item": "oil or melted butter"
+        "item": "olive oil"
       },
       {
-        "qty": 1,
+        "qty": 2.0,
+        "unit": "",
+        "item": "garlic cloves, minced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "bunch",
+        "item": "of fresh asparagus, trimmed and chopped"
+      },
+      {
+        "qty": 8.0,
+        "unit": "",
+        "item": "large eggs"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tsp",
+        "item": "s milk (whole fat milk is best, but part skim would be fine)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "s chopped fresh basil or 1 teaspoon dried basil"
+      },
+      {
+        "qty": 1.0,
         "unit": "pinch",
-        "item": "salt"
+        "item": "of salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "pinch",
+        "item": "of ground black pepper"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "s grated Parmesan cheese"
       }
     ],
     "steps": [
-      "Put the flour at the bottom of a mixing bowl and make a hole in the middle where you put the eggs, the melted butter, the salt and a bit of milk (3 minutes).",
-      "Mix well by hand, slowly combining the liquid with the flour to get a thick paste (3 minutes).",
-      "Continue mixing and slowly add the rest of the milk, mixing well to avoid making lumps (3 minutes).",
-      "Allow to stand, perhaps for several hours, whilst the gluten rests—this is very important for the final texture (3 minutes).",
-      "Heat a crêpe pan (non-stick recommended) or skillet (3 minutes).",
-      "A drop of water can be used to test the pan temperature: too cold, and the water will sit on the pan, too hot and it will vanish immediately (3 minutes).",
-      "At the right temperature, the water will seem to \"dance\" on the pan (3 minutes).",
-      "Grease the pan with some butter (3 minutes).",
-      "Pour in some batter while tilting the pan to make the crêpe as thin as possible (3 minutes).",
-      "Cook for 30–60 seconds until the cooked side looks like the surface of the moon, then flip it over to cook the other side; with some practice, you can flip it in the air by swinging the pan (3 minutes).",
-      "See the whole-wheat pancakes recipe for air-flipping instructions (3 minutes).",
-      "Serve with maple syrup, caster sugar, jam, spreads, etc."
+      "In a bowl, beat together the eggs, milk, basil, salt and pepper (3 minutes).",
+      "Set aside (3 minutes).",
+      "Preheat broiler/oven to 350°F (175°C) (3 minutes).",
+      "Heat the olive oil in the heat-safe skillet over medium heat (3 minutes).",
+      "When the oil is hot, add the garlic and sauté until fragrant, about a minute (3 minutes).",
+      "Add the chopped asparagus and sauté for about 5 minutes until it begins to become tender (3 minutes).",
+      "Pour the egg mixture into the skillet and cook about 4 minutes or until bubbles begin to form in the center of the eggs (3 minutes).",
+      "Sprinkle the Parmesan cheese on top of the eggs, and immediately transfer the pan to the oven (3 minutes).",
+      "Cook under the broiler until the top puffs and browns, about 3 minutes (3 minutes).",
+      "Remove the pan from the oven (careful, it will be hot) and cut the frittata into wedges (3 minutes).",
+      "Serve immediately with crusty bread and fresh fruit for a light spring dinner (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cr%C3%AApes_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Asparagus_Frittata",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12055,49 +12049,64 @@
   },
   {
     "id": "r411",
-    "name": "20-Minute Beef Stroganoff",
+    "name": "Corn Chowder",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "wide egg noodles (figures are for yolk-free noodles)"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "butter or margarine"
       },
       {
         "qty": 1.0,
-        "unit": "tsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1.0,
-        "unit": "package",
-        "item": "() sliced mushrooms"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "large (1 cup/) coarsely-chopped onion"
-      },
-      {
-        "qty": 1.0,
-        "unit": "package",
-        "item": "() prepared beef tips with gravy"
+        "unit": "cup",
+        "item": "chopped onion"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ cup () skim milk"
+        "item": "½ cup chopped celery"
       },
       {
         "qty": 1.0,
-        "unit": "can",
-        "item": "() condensed cream of mushroom soup (figures are for fat-free)"
+        "unit": "",
+        "item": "½ cups diced, pared potatoes, cut in ½-inch cubes"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s corn, fresh or frozen"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ cups water"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "chicken bouillon cubes"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon thyme"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "milk"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "light cream"
       },
       {
         "qty": null,
@@ -12108,40 +12117,16 @@
         "qty": null,
         "unit": "",
         "item": "Pepper to taste"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tsp",
-        "item": "bottled minced garlic"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ teaspoon (or more to taste) mild or hot paprika"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup () sour cream (figures are for reduced-fat)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ cup () finely-chopped fresh parsley"
       }
     ],
     "steps": [
-      "Prepare noodles according to package directions and drain (3 minutes).",
-      "As the noodles are boiling, warm oil in very deep skillet or Dutch oven over medium heat (3 minutes).",
-      "Add mushrooms and onions and cook until onion is soft, about 3 minutes (3 minutes).",
-      "Add beef tips, milk, and mushroom soup (3 minutes).",
-      "Add salt and pepper to taste and stir well (3 minutes).",
-      "Reduce heat to simmer and stir in garlic, paprika, and sour cream (3 minutes).",
-      "Simmer lightly, without letting it boil (that will curdle it) (3 minutes).",
-      "When noodles are finished and drained, serve with noodles on serving plate or individual plates, with sauce over it (3 minutes).",
-      "Garnish with parsley (3 minutes)."
+      "In a medium saucepan, melt butter; add onion and celery and cook until tender (3 minutes).",
+      "Add potatoes, corn, salt, pepper, water, bouillon cubes, and thyme (3 minutes).",
+      "Cover and simmer for 15 minutes, or until potatoes and corn are tender (3 minutes).",
+      "Add milk and cream (3 minutes).",
+      "Heat through (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:20-Minute_Beef_Stroganoff",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Corn_Chowder_I",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12488,62 +12473,53 @@
   },
   {
     "id": "r417",
-    "name": "Quick and Easy Beef Stroganoff",
+    "name": "Bangers and Mash",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
         "qty": 2.0,
-        "unit": "package",
-        "item": "s (around 1.5–2 lb / 750–1000 g) bite-size beef"
+        "unit": "",
+        "item": "–3 good British butcher's sausages per person"
       },
       {
-        "qty": 1.0,
-        "unit": "can",
-        "item": "(8 oz / 250 g) cream of mushroom soup"
+        "qty": 2.0,
+        "unit": "",
+        "item": "medium-to-large potatoes per person (Maris piper potatoes are good.)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ can (4 oz / 125 ml) beef broth"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "tub (8 oz / 250 g) sour cream"
-      },
-      {
-        "qty": 1.0,
-        "unit": "bag",
-        "item": "(16 oz / 500 g) egg noodles"
+        "item": "A little vegetable oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "Some butter or margarine"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper to taste"
+        "item": "A splash of milk"
       }
     ],
     "steps": [
-      "Cook egg noodles in a large pot according to directions (3 minutes).",
-      "While egg noodles cook, season the beef with salt and pepper and brown the meat in a skillet unless it is already cooked (3 minutes).",
-      "Low and slow makes a tender product (3 minutes).",
-      "If meat is already cooked, heat the meat in the microwave or in a skillet (3 minutes).",
-      "Drain egg noodles (3 minutes).",
-      "Mix cream of mushroom soup, beef broth, and sour cream in the pot used for the egg noodles (3 minutes).",
-      "Season the sauce with salt and pepper keeping in mind that many of the ingredients contain plenty of salt (3 minutes).",
-      "Add noodle mixture with beef and serve (3 minutes)."
+      "Put a large heavy frying pan on a hob over a medium heat (3 minutes).",
+      "Put in a little vegetable oil (if desired) and let it warm up (3 minutes).",
+      "Then place the sausages in a single layer in the frying pan (3 minutes).",
+      "Let them fry a minute or so, then turn them over, fry another minute, turn them around again, to try and get a bit of colour all over (3 minutes).",
+      "Once they've been in the hot pan for 5 minutes or so, turn the heat right down to low (3 minutes).",
+      "Let them fry very gently for the next 25 minutes, turning them over every 5 or 10 minutes so they get cooked evenly (3 minutes).",
+      "You can cook them for longer than this (even up to about an hour on a very low heat) (3 minutes).",
+      "Always make sure the sausages are cooked all the way through (no pinkness should remain) (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Quick_and_Easy_Beef_Stroganoff",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bangers_and_Mash",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },

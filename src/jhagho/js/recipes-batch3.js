@@ -191,7 +191,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "mexican"
+      "american"
     ],
     "ingredients": [
       {
@@ -359,7 +359,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -432,7 +432,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "italian"
+      "other"
     ],
     "ingredients": [
       {
@@ -595,7 +595,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -641,7 +641,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "mexican"
+      "american"
     ],
     "ingredients": [
       {
@@ -693,7 +693,7 @@
       "dinner",
       "medium",
       "moderate",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {
@@ -934,7 +934,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "british"
     ],
     "ingredients": [
       {
@@ -1002,7 +1002,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1091,7 +1091,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1159,7 +1159,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "caribbean"
     ],
     "ingredients": [
       {
@@ -1404,7 +1404,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1458,7 +1458,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1516,7 +1516,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1568,7 +1568,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "french"
     ],
     "ingredients": [
       {
@@ -1699,7 +1699,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1764,7 +1764,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2261,7 +2261,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2369,7 +2369,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2815,7 +2815,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3001,7 +3001,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3181,7 +3181,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3326,7 +3326,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3380,7 +3380,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3524,7 +3524,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3689,7 +3689,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3770,7 +3770,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3831,7 +3831,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -4001,7 +4001,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "caribbean"
     ],
     "ingredients": [
       {
@@ -4049,7 +4049,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "chinese"
+      "thai"
     ],
     "ingredients": [
       {
@@ -4256,7 +4256,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -4335,7 +4335,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "indian"
     ],
     "ingredients": [
       {
@@ -4445,7 +4445,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "korean"
     ],
     "ingredients": [
       {
@@ -4655,7 +4655,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -4758,7 +4758,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -4870,7 +4870,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -4931,7 +4931,7 @@
       "dinner",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -5114,7 +5114,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -5275,7 +5275,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "french"
     ],
     "ingredients": [
       {
@@ -5363,7 +5363,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "mediterranean"
+      "other"
     ],
     "ingredients": [
       {
@@ -5648,7 +5648,7 @@
       "dinner",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -5704,7 +5704,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -5798,7 +5798,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -5978,7 +5978,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "chinese"
+      "other"
     ],
     "ingredients": [
       {
@@ -6271,7 +6271,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -6609,7 +6609,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -6677,7 +6677,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "chinese"
+      "thai"
     ],
     "ingredients": [
       {
@@ -6847,7 +6847,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "chinese"
+      "korean"
     ],
     "ingredients": [
       {
@@ -6945,7 +6945,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -7039,7 +7039,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -7863,7 +7863,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -7979,7 +7979,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -8120,7 +8120,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -8425,7 +8425,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -8822,7 +8822,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -8970,7 +8970,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -9027,7 +9027,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -9109,7 +9109,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -9198,7 +9198,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -9287,7 +9287,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -9366,7 +9366,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -9760,7 +9760,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -9827,7 +9827,7 @@
       "dinner",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10058,7 +10058,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "chinese"
+      "american"
     ],
     "ingredients": [
       {
@@ -10158,7 +10158,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10222,7 +10222,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10275,7 +10275,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10431,7 +10431,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10490,7 +10490,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10553,7 +10553,7 @@
       "dinner",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10614,7 +10614,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10792,7 +10792,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -10934,7 +10934,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -11008,7 +11008,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -11107,7 +11107,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "french"
     ],
     "ingredients": [
       {
@@ -11316,7 +11316,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -11479,7 +11479,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -11537,7 +11537,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -11818,7 +11818,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -12154,7 +12154,7 @@
       "dinner",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -12476,7 +12476,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -12637,7 +12637,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -12809,7 +12809,7 @@
       "lunch",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -12963,7 +12963,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -13311,7 +13311,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -13415,7 +13415,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -13499,7 +13499,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -13597,7 +13597,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -13767,7 +13767,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -13855,7 +13855,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -13939,7 +13939,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -14131,7 +14131,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -14194,7 +14194,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -14288,7 +14288,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -14477,7 +14477,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -14724,7 +14724,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -15008,7 +15008,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -15085,7 +15085,7 @@
       "dinner",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -15147,7 +15147,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -15360,7 +15360,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {

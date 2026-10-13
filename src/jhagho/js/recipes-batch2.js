@@ -85,7 +85,7 @@
       "collection-comfort",
       "moderate",
       "medium",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -374,7 +374,7 @@
       "collection-comfort",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -788,7 +788,7 @@
       "high-protein",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1378,7 +1378,7 @@
       "vegan",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2191,7 +2191,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -2914,7 +2914,7 @@
       "high-protein",
       "moderate",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2979,7 +2979,7 @@
       "vegetarian",
       "budget",
       "easy",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {
@@ -3109,7 +3109,7 @@
       "high-protein",
       "budget",
       "easy",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {

@@ -40,7 +40,8 @@ if (await tipDismiss.count()) {
     await page.waitForTimeout(300);
   } catch { /* no tip */ }
 }
-const skipFill = process.argv.includes("--no-fill") || process.argv.includes("--filter-ui");
+const skipFill = process.argv.includes("--no-fill");
+let filterShot = "";
 if (!skipFill) {
   const fill = page.locator('button[data-action="fill"]');
   if (await fill.count()) {
@@ -52,43 +53,32 @@ if (!skipFill) {
     }
   }
 }
-await page.evaluate(() => window.scrollTo(0, document.querySelector(".days")?.offsetTop || 400));
-await page.waitForTimeout(400);
-const shot = `${outDir}/plan-mobile.png`;
-await page.screenshot({ path: shot, fullPage: false });
-let filterShot = "";
-if (process.argv.includes("--filter-ui")) {
-  const panelBtn = page.locator('[data-action="plan-cuisine-panel"]');
-  if (await panelBtn.count()) {
-    await panelBtn.first().click();
-    await page.waitForTimeout(350);
-    filterShot = `${outDir}/plan-filter-mobile.png`;
-    await page.screenshot({ path: filterShot, fullPage: false });
-    const italian = page.locator('[data-cuisine="italian"]');
-    if (await italian.count()) await italian.first().click();
-    await page.waitForTimeout(250);
-    const fill = page.locator('[data-action="fill"]');
-    if (await fill.count()) {
-      try {
-        await fill.first().click({ timeout: 5000 });
-        await page.waitForTimeout(400);
-        const run = page.locator('[data-action="fill-run"]');
-        if (await run.count()) {
-          await run.first().click();
-          await page.waitForTimeout(1200);
-        }
-      } catch { /* sheet may differ */ }
-    }
-    await page.evaluate(() => window.scrollTo(0, document.querySelector(".days")?.offsetTop || 400));
-    await page.waitForTimeout(400);
-    const filled = `${outDir}/plan-filled-filter-mobile.png`;
-    await page.screenshot({ path: filled, fullPage: false });
-    filterShot = filled;
+if (process.argv.includes("--filter-ui") || process.argv.includes("--canadian-fill")) {
+  const canadianOnly = process.argv.includes("--canadian-fill");
+  filterShot = `${outDir}/${canadianOnly ? "fill-sheet-canadian-chips" : "fill-sheet-cuisine-chips"}.png`;
+  await page.screenshot({ path: filterShot, fullPage: false });
+  const cuisine = page.locator(`[data-cuisine="${canadianOnly ? "canadian" : "italian"}"]`);
+  if (await cuisine.count()) await cuisine.first().click();
+  await page.waitForTimeout(250);
+  const run = page.locator('[data-action="fill-run"]');
+  if (await run.count()) {
+    await run.first().click();
+    await page.waitForTimeout(1400);
   }
+  await page.evaluate(() => window.scrollTo(0, document.querySelector(".days")?.offsetTop || 400));
+  await page.waitForTimeout(400);
+  const filled = `${outDir}/${canadianOnly ? "plan-canadian-fill-week" : "plan-filled-filter-mobile"}.png`;
+  await page.screenshot({ path: filled, fullPage: false });
+  filterShot = filled;
+} else if (!skipFill) {
+  await page.evaluate(() => window.scrollTo(0, document.querySelector(".days")?.offsetTop || 400));
+  await page.waitForTimeout(400);
 }
+const shot = `${outDir}/plan-mobile.png`;
+if (!filterShot) await page.screenshot({ path: shot, fullPage: false });
 console.log(JSON.stringify({
   url: origin,
-  shot,
+  shot: filterShot || shot,
   filterShot,
   version: await page.evaluate(() => window.__DU_APP_SEMVER__),
 }));

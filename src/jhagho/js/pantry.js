@@ -1,4 +1,4 @@
-/* Pantry Week v3.12.0 — data, shopping list, migration. No network. */
+/* Pantry Week v3.12.1 — data, shopping list, migration. No network. */
 "use strict";
 
 (function () {
@@ -1120,7 +1120,8 @@
 
   var PLAN_CUISINE_TAGS = [
     "canadian", "american", "italian", "mexican", "chinese", "indian",
-    "british", "french", "mediterranean", "other"
+    "british", "french", "mediterranean", "japanese", "thai", "korean",
+    "greek", "middle_eastern", "caribbean", "african", "other"
   ];
   var PLAN_CUISINE_KEY = "pantry_week_plan_cuisines_v1";
 
@@ -1315,33 +1316,27 @@
     shuffleInPlace(targets);
 
     var cuisineFilters = Array.isArray(opts.cuisineFilters) ? opts.cuisineFilters : [];
-    var cuisineFallbacks = 0;
+    var unfilledSlots = 0;
 
     targets.forEach(function (target) {
-      function slotCandidates(strictCuisine, allowReuse) {
+      function slotCandidates(allowReuse) {
         return list.filter(function (recipe) {
           if (!recipeMatches(recipe, query, filter)) return false;
           if (!recipePlanEligible(recipe)) return false;
           if (!recipeFitsSlot(recipe, target.slot)) return false;
-          if (strictCuisine && cuisineFilters.length && !recipeMatchesPlanCuisines(recipe, cuisineFilters)) return false;
+          if (cuisineFilters.length && !recipeMatchesPlanCuisines(recipe, cuisineFilters)) return false;
           if (!allowReuse && usedIds[recipe.id]) return false;
           return true;
         });
       }
       if (replaceAll) out[target.day][target.slot] = blankSlot();
-      var candidates = slotCandidates(true, false);
-      if (!candidates.length) {
-        candidates = slotCandidates(false, false);
-      }
-      if (!candidates.length) {
-        candidates = slotCandidates(true, true);
-      }
-      if (!candidates.length && cuisineFilters.length) {
-        candidates = slotCandidates(false, true);
-        if (candidates.length) cuisineFallbacks += 1;
-      }
+      var candidates = slotCandidates(false);
+      if (!candidates.length) candidates = slotCandidates(true);
       var pick = pickVariedRecipe(candidates, usedProteins, usedCuisines);
-      if (!pick) return;
+      if (!pick) {
+        if (cuisineFilters.length) unfilledSlots += 1;
+        return;
+      }
       out[target.day][target.slot] = {
         recipeId: pick.id,
         custom: "",
@@ -1353,7 +1348,7 @@
       usedCuisines.push(recipeCuisine(pick));
     });
     if (opts.returnMeta) {
-      return { week: out, cuisineFallbacks: cuisineFallbacks };
+      return { week: out, unfilledSlots: unfilledSlots };
     }
     return out;
   }
@@ -1507,6 +1502,13 @@
     if (tag === "british") return "British";
     if (tag === "french") return "French";
     if (tag === "mediterranean") return "Mediterranean";
+    if (tag === "japanese") return "Japanese";
+    if (tag === "thai") return "Thai";
+    if (tag === "korean") return "Korean";
+    if (tag === "greek") return "Greek";
+    if (tag === "middle_eastern") return "Middle Eastern";
+    if (tag === "caribbean") return "Caribbean";
+    if (tag === "african") return "African";
     if (tag === "other") return "Other";
     if (tag === "my-creation") return "My creation";
     if (tag === "budget") return "Budget";
@@ -1522,7 +1524,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.12.0",
+    VERSION: "3.12.1",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,

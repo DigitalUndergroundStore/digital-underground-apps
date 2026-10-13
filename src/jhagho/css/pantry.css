@@ -620,6 +620,13 @@ label.field, .stack label {
   font-weight: 700;
 }
 .plan-toolbar__secondary { margin: 0; }
+.plan-cuisine--sheet {
+  margin: 14px 0 4px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
 .plan-cuisine {
   padding: 12px 12px 10px;
   border-radius: 16px;

@@ -89,6 +89,13 @@ def main() -> None:
         "british",
         "french",
         "mediterranean",
+        "japanese",
+        "thai",
+        "korean",
+        "greek",
+        "middle_eastern",
+        "caribbean",
+        "african",
         "other",
     }
     for r in recipes:

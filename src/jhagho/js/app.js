@@ -1,4 +1,4 @@
-/* Pantry Week v3.12.0 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.12.1 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -27,6 +27,13 @@
     ["british", "British"],
     ["french", "French"],
     ["mediterranean", "Mediterranean"],
+    ["japanese", "Japanese"],
+    ["thai", "Thai"],
+    ["korean", "Korean"],
+    ["greek", "Greek"],
+    ["middle_eastern", "Middle Eastern"],
+    ["caribbean", "Caribbean"],
+    ["african", "African"],
     ["other", "Other"]
   ];
   let planCuisineFilters = PW.loadPlanCuisineFilters();
@@ -66,8 +73,6 @@
     editor: null,
     cook: null,
     fill: null,
-    planCuisineOpen: false,
-    pickerCuisineRelaxed: false,
     importError: "",
     import: null,
     tabAnim: null,
@@ -394,7 +399,7 @@
     return counts;
   }
 
-  function planCuisinePanelHtml() {
+  function planCuisineChipsHtml() {
     const counts = planCuisineCountMap();
     const allOn = !planCuisineActive();
     const chips = PLAN_CUISINES.map(([id, label]) => {
@@ -404,8 +409,8 @@
     const summary = planCuisineActive()
       ? `${planCuisineFilters.length} cuisine${planCuisineFilters.length === 1 ? "" : "s"} selected`
       : "All cuisines";
-    return `<div class="plan-cuisine${ui.planCuisineOpen ? " plan-cuisine--open" : ""}">
-      <p class="plan-cuisine__summary">${esc(summary)} · Fill and swap use these filters</p>
+    return `<div class="plan-cuisine plan-cuisine--sheet">
+      <p class="plan-cuisine__summary">${esc(summary)} · Fill and swap use only these cuisines</p>
       <div class="plan-cuisine__chips" role="group" aria-label="Cuisine filters">
         <button type="button" class="plan-cuisine-chip plan-cuisine-chip--all${allOn ? " is-on" : ""}" data-action="plan-cuisine-all" aria-pressed="${allOn ? "true" : "false"}">All</button>
         ${chips}
@@ -875,11 +880,7 @@
       <div class="plan-toolbar">
         <div class="plan-toolbar__row">
           <button type="button" class="primary" data-action="fill">Fill the week</button>
-          <button type="button" class="plan-filter-btn${planCuisineActive() ? " plan-filter-btn--active" : ""}" data-action="plan-cuisine-panel" aria-expanded="${ui.planCuisineOpen ? "true" : "false"}">
-            Filter${planCuisineActive() ? ` <span class="plan-filter-btn__badge">${planCuisineFilters.length}</span>` : ""}
-          </button>
         </div>
-        ${ui.planCuisineOpen ? planCuisinePanelHtml() : ""}
         <div class="toolbar plan-toolbar__secondary">
           <button type="button" data-action="repeat">Repeat week</button>
           <button type="button" data-action="copy-last">Copy last week</button>
@@ -1611,29 +1612,23 @@
     </section>`;
   }
 
-  function pickerMatches(relaxed) {
+  function pickerMatches() {
     const picker = ui.picker;
     if (!picker) return [];
-    const useRelaxed = relaxed || ui.pickerCuisineRelaxed;
     return state.recipes.filter((recipe) => {
       if (!PW.recipeFitsSlot(recipe, picker.slot)) return false;
       if (!PW.recipeMatches(recipe, picker.query, picker.filter)) return false;
-      return recipePassesPlanCuisine(recipe, useRelaxed);
+      return recipePassesPlanCuisine(recipe, false);
     });
   }
 
   function renderPicker() {
     const picker = ui.picker;
     const title = PW.DAY_LABEL[picker.day] + " " + PW.SLOT_LABEL[picker.slot].toLowerCase();
-    let matches = pickerMatches(false);
-    let cuisineNotice = "";
-    if (!matches.length && planCuisineActive()) {
-      ui.pickerCuisineRelaxed = true;
-      matches = pickerMatches(true);
-      cuisineNotice = `<p class="plan-cuisine-notice" role="status">Not enough matches for your cuisine filters — showing all cuisines for this meal.</p>`;
-    } else {
-      ui.pickerCuisineRelaxed = false;
-    }
+    const matches = pickerMatches();
+    const cuisineNotice = !matches.length && planCuisineActive()
+      ? `<p class="plan-cuisine-notice" role="status">No recipes match your cuisine filters for this meal. Clear filters in Fill the week or pick another slot.</p>`
+      : "";
     const rows = matches.length
       ? matches.map((recipe) => `<button type="button" class="pick-row" data-action="pick" data-id="${esc(recipe.id)}"><span class="pick-name">${esc(recipe.name)}</span><span class="pick-meta">${esc(timeLabel(recipe))}</span></button>`).join("")
       : `<p class="empty">No recipes match.</p>`;
@@ -1670,13 +1665,7 @@
 
   function renderPickerList() {
     if (!$("pickerList") || !ui.picker) return;
-    let matches = pickerMatches(false);
-    if (!matches.length && planCuisineActive()) {
-      ui.pickerCuisineRelaxed = true;
-      matches = pickerMatches(true);
-    } else if (matches.length) {
-      ui.pickerCuisineRelaxed = false;
-    }
+    const matches = pickerMatches();
     $("pickerList").innerHTML = matches.length
       ? matches.map((recipe) => `<button type="button" class="pick-row" data-action="pick" data-id="${esc(recipe.id)}"><span class="pick-name">${esc(recipe.name)}</span><span class="pick-meta">${esc(timeLabel(recipe))}</span></button>`).join("")
       : `<p class="empty">No recipes match.</p>`;
@@ -1916,7 +1905,6 @@
 
   function openPicker(day, slot) {
     ui.picker = { day, slot, query: "", filter: ui.filter === "all" ? slot : ui.filter };
-    ui.pickerCuisineRelaxed = false;
     pushHistory();
     renderPicker();
     const input = $("pickerSearch");
@@ -2215,6 +2203,7 @@
       <p class="meta">${filterNote}</p>
       <p class="field-label">Which meals?</p>
       <div class="segmented" role="group" aria-label="Meals to fill">${segments}</div>
+      ${planCuisineChipsHtml()}
       <label class="check-row">
         <input type="checkbox" id="fillReplaceAll"${prefs.replaceAll ? " checked" : ""} />
         <span>Replace meals already on the plan (not just empty slots)</span>
@@ -2271,9 +2260,9 @@
     commit();
     popHistorySilently();
     let fillMsg = "Week filled with a fresh mix. Tap Swap on any meal to change it.";
-    const fallbacks = fillResult.cuisineFallbacks || 0;
-    if (fallbacks) {
-      fillMsg += ` ${fallbacks} slot${fallbacks === 1 ? "" : "s"} pulled from outside your cuisine filters.`;
+    const unfilled = fillResult.unfilledSlots || 0;
+    if (unfilled) {
+      fillMsg += ` ${unfilled} slot${unfilled === 1 ? "" : "s"} left empty — not enough recipes for your cuisine filters (only matching cuisines are used).`;
     }
     toast(fillMsg);
   }
@@ -2443,20 +2432,19 @@
       } catch (err) { /* ignore */ }
       toast("Buyer code removed. Reload the app to enter it again.");
     } else if (action === "open-slot") openPicker(day, slot);
-    else if (action === "plan-cuisine-panel") {
-      ui.planCuisineOpen = !ui.planCuisineOpen;
-      render();
-    } else if (action === "plan-cuisine-all") {
+    else if (action === "plan-cuisine-all") {
       planCuisineFilters = [];
       PW.savePlanCuisineFilters(planCuisineFilters);
-      render();
+      if (ui.fill) renderFill();
+      else render();
     } else if (action === "plan-cuisine-toggle") {
       const cuisine = btn.getAttribute("data-cuisine");
       const idx = planCuisineFilters.indexOf(cuisine);
       if (idx >= 0) planCuisineFilters.splice(idx, 1);
       else planCuisineFilters.push(cuisine);
       PW.savePlanCuisineFilters(planCuisineFilters);
-      render();
+      if (ui.fill) renderFill();
+      else render();
     } else if (action === "fill") fillWeek();
     else if (action === "fill-scope") {
       const next = btn.getAttribute("data-scope");

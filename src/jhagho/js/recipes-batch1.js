@@ -1425,7 +1425,7 @@
       "dinner",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2025,7 +2025,7 @@
       "high-protein",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2080,7 +2080,7 @@
       "vegetarian",
       "moderate",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2140,7 +2140,7 @@
       "high-protein",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2200,7 +2200,7 @@
       "high-protein",
       "moderate",
       "medium",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2260,7 +2260,7 @@
       "high-protein",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2379,7 +2379,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2695,7 +2695,7 @@
       "high-protein",
       "moderate",
       "medium",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2755,7 +2755,7 @@
       "vegetarian",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2938,7 +2938,7 @@
       "high-protein",
       "moderate",
       "easy",
-      "mexican"
+      "other"
     ],
     "ingredients": [
       {
@@ -3122,7 +3122,7 @@
       "high-protein",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3180,7 +3180,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3354,7 +3354,7 @@
       "high-protein",
       "moderate",
       "easy",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {
@@ -3475,7 +3475,7 @@
       "gluten-free",
       "moderate",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3885,7 +3885,7 @@
       "dinner",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -4575,7 +4575,7 @@
       "gluten-free",
       "moderate",
       "easy",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {

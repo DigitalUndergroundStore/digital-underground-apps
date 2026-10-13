@@ -139,7 +139,7 @@ var PW_STARTERS = [
       "gluten-free",
       "medium",
       "moderate",
-      "other"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -639,7 +639,7 @@ var PW_STARTERS = [
       "vegetarian",
       "easy",
       "moderate",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {
@@ -683,7 +683,7 @@ var PW_STARTERS = [
       "dairy-free",
       "medium",
       "moderate",
-      "other"
+      "japanese"
     ],
     "ingredients": [
       {
@@ -941,7 +941,7 @@ var PW_STARTERS = [
       "gluten-free",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1068,7 +1068,7 @@ var PW_STARTERS = [
       "gluten-free",
       "medium",
       "moderate",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -1192,7 +1192,7 @@ var PW_STARTERS = [
       "gluten-free",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1388,7 +1388,7 @@ var PW_STARTERS = [
       "dairy-free",
       "easy",
       "moderate",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -1453,7 +1453,7 @@ var PW_STARTERS = [
       "dairy-free",
       "easy",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1574,7 +1574,7 @@ var PW_STARTERS = [
       "gluten-free",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1702,7 +1702,7 @@ var PW_STARTERS = [
       "dairy-free",
       "medium",
       "moderate",
-      "other"
+      "japanese"
     ],
     "ingredients": [
       {
@@ -1768,7 +1768,7 @@ var PW_STARTERS = [
       "gluten-free",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1827,7 +1827,7 @@ var PW_STARTERS = [
       "dairy-free",
       "easy",
       "moderate",
-      "other"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -2028,7 +2028,7 @@ var PW_STARTERS = [
       "gluten-free",
       "easy",
       "moderate",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {

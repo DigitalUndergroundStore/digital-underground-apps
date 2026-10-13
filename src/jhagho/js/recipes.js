@@ -9,6 +9,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "medium",
@@ -71,6 +73,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "easy",
       "moderate"
@@ -126,6 +130,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",
@@ -194,6 +200,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "easy",
       "moderate"
@@ -260,6 +268,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "medium",
@@ -317,6 +327,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "easy",
       "moderate"
@@ -367,6 +379,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "medium",
@@ -434,6 +448,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "gluten-free",
       "easy",
       "moderate"
@@ -494,6 +510,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "easy",
       "moderate"
@@ -549,6 +567,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -604,6 +624,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "easy",
       "moderate"
@@ -644,6 +666,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "medium",
@@ -706,6 +730,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "easy",
       "moderate"
@@ -762,6 +788,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "medium",
       "moderate"
@@ -823,6 +851,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "easy",
@@ -890,6 +920,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "medium",
@@ -947,6 +979,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",
@@ -1010,6 +1044,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",
@@ -1078,6 +1114,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "easy",
       "moderate"
@@ -1129,6 +1167,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "medium",
@@ -1196,6 +1236,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "easy",
@@ -1253,6 +1295,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",
@@ -1316,6 +1360,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "easy",
@@ -1378,6 +1424,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "easy",
@@ -1435,6 +1483,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "easy",
@@ -1492,6 +1542,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",
@@ -1560,6 +1612,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "easy",
       "moderate"
@@ -1615,6 +1669,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "medium",
@@ -1677,6 +1733,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",
@@ -1735,6 +1793,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "easy",
       "moderate"
@@ -1801,6 +1861,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",
@@ -1864,6 +1926,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",
@@ -1927,6 +1991,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "gluten-free",
       "easy",
       "moderate"
@@ -1993,6 +2059,8 @@ var PW_STARTERS = [
     "servings": 2,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "easy",
@@ -2045,6 +2113,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "easy",
@@ -2112,6 +2182,8 @@ var PW_STARTERS = [
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "gluten-free",

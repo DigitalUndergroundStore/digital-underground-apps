@@ -1182,6 +1182,13 @@
     return "dinner";
   }
 
+  function recipePlanEligible(recipe) {
+    if (window.PW_MEAL && typeof window.PW_MEAL.recipePlanEligible === "function") {
+      return window.PW_MEAL.recipePlanEligible(recipe);
+    }
+    return true;
+  }
+
   function recipeFitsSlot(recipe, slot) {
     if (window.PW_MEAL && typeof window.PW_MEAL.recipeFitsMealSlot === "function") {
       return window.PW_MEAL.recipeFitsMealSlot(recipe, slot);
@@ -1203,6 +1210,23 @@
     return 0;
   }
 
+  function pickWeighted(pool) {
+    if (!pool.length) return null;
+    var total = 0;
+    var weights = pool.map(function (recipe) {
+      var w = 1 + Math.max(0, recipeClassicBoost(recipe)) * 0.42;
+      if ((recipe.tags || []).indexOf("canadian") !== -1) w += 0.35;
+      total += w;
+      return w;
+    });
+    var roll = Math.random() * total;
+    for (var i = 0; i < pool.length; i++) {
+      roll -= weights[i];
+      if (roll <= 0) return pool[i];
+    }
+    return pool[pool.length - 1];
+  }
+
   function pickVariedRecipe(candidates, usedProteins, usedCuisines) {
     if (!candidates || !candidates.length) return null;
     var pool = candidates.filter(function (recipe) {
@@ -1214,7 +1238,7 @@
       });
     }
     if (!pool.length) pool = candidates;
-    return pool[Math.floor(Math.random() * pool.length)];
+    return pickWeighted(pool);
   }
 
   function fillSimpleWeek(week, recipes, options) {
@@ -1260,6 +1284,7 @@
       if (replaceAll) out[target.day][target.slot] = blankSlot();
       var candidates = list.filter(function (recipe) {
         if (!recipeMatches(recipe, query, filter)) return false;
+        if (!recipePlanEligible(recipe)) return false;
         if (!recipeFitsSlot(recipe, target.slot)) return false;
         if (usedIds[recipe.id]) return false;
         return true;
@@ -1267,6 +1292,7 @@
       if (!candidates.length) {
         candidates = list.filter(function (recipe) {
           if (!recipeMatches(recipe, query, filter)) return false;
+          if (!recipePlanEligible(recipe)) return false;
           if (!recipeFitsSlot(recipe, target.slot)) return false;
           return true;
         });
@@ -1441,7 +1467,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.11.7",
+    VERSION: "3.11.8",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,
@@ -1488,7 +1514,7 @@
     pantryHaveSet: pantryHaveSet,
     pantryStapleIgnore: pantryStapleIgnore,
     recipeClassicBoost: recipeClassicBoost,
-    recipeClassicBoost: recipeClassicBoost,
+    recipePlanEligible: recipePlanEligible,
     parseRecipeText: parseRecipeText,
     fillSimpleWeek: fillSimpleWeek,
     recipeMealType: recipeMealType,

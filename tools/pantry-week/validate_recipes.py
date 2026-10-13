@@ -56,6 +56,7 @@ def main() -> None:
     import tempfile
 
     check_meals = Path(__file__).resolve().parent / "check-meals.mjs"
+    check_consistency = Path(__file__).resolve().parent / "check-recipe-consistency.mjs"
     with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as tf:
         json.dump(recipes, tf)
         meal_json = tf.name
@@ -65,10 +66,18 @@ def main() -> None:
             text=True,
         )
     )
+    consistency = json.loads(
+        subprocess.check_output(
+            ["node", str(check_consistency), meal_json],
+            text=True,
+        )
+    )
     Path(meal_json).unlink(missing_ok=True)
     errors.extend(meal_errors[:20])
     if len(meal_errors) > 20:
         errors.append(f"... {len(meal_errors)} meal category errors total")
+    non_meal = int(consistency.get("nonMealCount") or 0)
+    print(f"plan_non_meals={non_meal}", file=sys.stderr)
 
     for r in recipes:
         rid = r.get("id")

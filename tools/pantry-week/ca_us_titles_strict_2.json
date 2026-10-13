@@ -1125,5 +1125,136 @@
       "medium",
       "moderate"
     ]
+  },
+  {
+    "title": "Cookbook:Veggie Salad",
+    "name": "Veggie Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Montreal Russian Borscht",
+    "name": "Montreal Russian Borscht",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Sweet Potato Crisp",
+    "name": "Sweet Potato Crisp",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Smothered Okra",
+    "name": "Smothered Okra",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:B\u00e9chamel Sauce (Louisiannaise)",
+    "name": "B\u00e9chamel Sauce (Louisiannaise)",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Barbecue Wings",
+    "name": "Barbecue Wings",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Cucumber, Tomato, and Onion Salad",
+    "name": "Cucumber, Tomato, and Onion Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Fit-fit (Ethiopian Bread Salad)",
+    "name": "Fit-fit (Ethiopian Bread Salad)",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Egg Pie",
+    "name": "Egg Pie",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Sesame Noodle Salad",
+    "name": "Sesame Noodle Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian",
+      "collection-italian"
+    ]
+  },
+  {
+    "title": "Cookbook:Grilled Vegetable Sandwich",
+    "name": "Grilled Vegetable Sandwich",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Vegemite Sandwich",
+    "name": "Vegemite Sandwich",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
   }
 ]

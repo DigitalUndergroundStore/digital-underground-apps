@@ -10,6 +10,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -77,6 +79,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -188,6 +192,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -277,18 +283,20 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "lb",
         "item": "(450 g) crabmeat or imitation crabmeat"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "Italian-style breadcrumbs"
       },
@@ -298,17 +306,17 @@
         "item": "¼ cup mayonnaise"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "ground mustard"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "Worcestershire sauce"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg"
       },
@@ -323,7 +331,7 @@
         "item": "Pepper to taste"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "cup",
         "item": "s vegetable oil"
       }
@@ -348,33 +356,35 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 110.0,
+        "qty": 110,
         "unit": "g",
         "item": "(120 ml / ½ cup / 4 oz) peanut butter"
       },
       {
-        "qty": 110.0,
+        "qty": 110,
         "unit": "g",
         "item": "(120 ml / ½ cup / 4 oz) white granulated sugar"
       },
       {
-        "qty": 110.0,
+        "qty": 110,
         "unit": "g",
         "item": "(120 ml / ½ cup / 4 oz) brown sugar"
       },
       {
-        "qty": 110.0,
+        "qty": 110,
         "unit": "g",
         "item": "(120 ml / ½ cup / 4 oz) butter or margarine, melted"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg"
       },
@@ -384,7 +394,7 @@
         "item": "½ teaspoon vanilla essence"
       },
       {
-        "qty": 280.0,
+        "qty": 280,
         "unit": "g",
         "item": "(300 ml / 1 ¼ cup / 10 oz) all-purpose flour"
       },
@@ -418,6 +428,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -523,6 +535,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -573,13 +587,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "cup",
         "item": "s sliced, peeled, and cored baking apples"
       },
@@ -589,12 +605,12 @@
         "item": "⅔ cup white granulated sugar"
       },
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "tbsp",
         "item": "water (divided into 4 and 2)"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "cornstarch"
       }
@@ -617,6 +633,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -713,7 +731,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -807,6 +827,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -887,6 +909,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -952,43 +976,45 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "standard eggs"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "pinch",
         "item": "salt"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "pinch",
         "item": "ground black pepper"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "pinch",
         "item": "ground nutmeg (optional)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "milk"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "butter or olive oil"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "heaping handful of fresh spinach"
       },
@@ -1038,6 +1064,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -1054,27 +1082,27 @@
         "item": "Salt (optional; add only if butter is unsalted)"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "baking powder"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "self-raising flour"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "milk"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "white granulated sugar"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "fresh fruit (e.g. peaches, blackberries, cherries, etc.)"
       }
@@ -1104,12 +1132,14 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "ea. (1.3–1.8 kg) chicken, cut into serving pieces"
       },
@@ -1129,22 +1159,22 @@
         "item": "Olive oil"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "clove",
         "item": "s of fresh garlic, minced"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "medium onion, chopped"
       },
       {
-        "qty": 225.0,
+        "qty": 225,
         "unit": "g",
         "item": "diced red bell pepper"
       },
       {
-        "qty": 425.0,
+        "qty": 425,
         "unit": "g",
         "item": "(1 can) diced tomatoes"
       },
@@ -1154,7 +1184,7 @@
         "item": "(½ tablespoon) sweet paprika"
       },
       {
-        "qty": 14.0,
+        "qty": 14,
         "unit": "g",
         "item": "(½ oz) chopped cilantro"
       },
@@ -1164,17 +1194,17 @@
         "item": "(6 cups) chicken stock"
       },
       {
-        "qty": 8.0,
+        "qty": 8,
         "unit": "",
         "item": "saffron threads or 1 teaspoon food coloring for yellow rice"
       },
       {
-        "qty": 370.0,
+        "qty": 370,
         "unit": "g",
         "item": "(2 cups) medium or long-grain rice"
       },
       {
-        "qty": 225.0,
+        "qty": 225,
         "unit": "g",
         "item": "(8 oz) canned peas (thoroughly drained)"
       }
@@ -1191,7 +1221,7 @@
       "Transfer the ingredients to a large stewing pot (3 minutes).",
       "Add the cilantro, bouillon and saffron (or food coloring) (3 minutes).",
       "Bring to a rolling boil (3 minutes).",
-      "Add the rice and mix well (3 minutes)."
+      "Add the rice and mix well (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Arroz_con_Pollo_%28Rice_and_Chicken%29",
     "sourceName": "Wikibooks Cookbook",
@@ -1204,6 +1234,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -1274,6 +1306,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -1338,13 +1372,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "",
         "item": "sweet potatoes"
       },
@@ -1354,12 +1390,12 @@
         "item": "½ cup margarine"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "brown sugar"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "vanilla extract"
       },
@@ -1389,32 +1425,34 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "–4 bone-in pork chops, ¼ inch (6 mm) thin"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "medium apple, cored and sliced thin"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "medium onion, sliced thin"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "(15 ml) honey"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "(15 ml) caraway seed (can be salvaged from the bag your rye bread comes in)"
       },
@@ -1442,6 +1480,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -1453,12 +1493,12 @@
         "item": "½ cup (about 120 ml) granulated sugar"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "(15 ml) cornstarch"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "cup",
         "item": "s (950 ml) sliced peeled peaches"
       },
@@ -1468,7 +1508,7 @@
         "item": "¼ teaspoon ground cinnamon"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "(5 ml) lemon juice"
       }
@@ -1491,57 +1531,59 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "",
         "item": "–8 medium Idaho potatoes"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "lb",
         "item": "butter"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "large diced leeks (white and yellow parts only)"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "bunch",
         "item": "diced shallots (white bases only) or green onions"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ tbsp chicken bouillon or add homemade stock"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "white pepper"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "white wine"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ quarts heavy whipping cream"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "quart milk"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "shallot tops"
       }
@@ -1569,13 +1611,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 8.0,
+        "qty": 8,
         "unit": "oz",
         "item": "(2 sticks / 230 g) of butter, unsalted and softened to room temperature"
       },
@@ -1590,7 +1634,7 @@
         "item": "Salt"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "lb",
         "item": "(450 g) fettuccine egg noodles"
       }
@@ -1615,13 +1659,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "prime-grade 4-bone standing rib roast from the loin end, bones removed"
       },
@@ -1636,12 +1682,12 @@
         "item": "Freshly ground black pepper"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "tsp",
         "item": "thyme, finely chopped"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "rosemary, finely chopped"
       },
@@ -1651,7 +1697,7 @@
         "item": "Olive oil"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "garlic powder"
       }
@@ -1677,17 +1723,19 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "medium potatoes, sliced"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "onion, sliced"
       },
@@ -1702,17 +1750,17 @@
         "item": "½ pound bulk sausage"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg, beaten"
       },
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "",
         "item": "soda crackers, crumbled"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "chili powder"
       },
@@ -1753,12 +1801,14 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(6 ounces) water-packed tuna, drained and flaked"
       },
@@ -1778,22 +1828,22 @@
         "item": "¼ cup mayonnaise"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "hamburger buns, split"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "mozzarella cheese slices"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "tomato slices"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "lettuce leaves"
       }
@@ -1818,13 +1868,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "lb",
         "item": "s (1300 g / about 8 cups) peeled, cored, and chopped apples"
       },
@@ -1834,12 +1886,12 @@
         "item": "½ cup water"
       },
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "tbsp",
         "item": "s white granulated sugar"
       },
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "tbsp",
         "item": "s sugar substitute"
       },
@@ -1874,6 +1926,8 @@
     "servings": 8,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian",
@@ -1886,17 +1940,17 @@
         "item": "½ cup mayonnaise"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "dry mustard"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "sugar"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "s cider vinegar"
       },
@@ -1911,7 +1965,7 @@
         "item": "Pepper to taste"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "lb",
         "item": "elbow macaroni pasta, cooked, drained, and chilled"
       },
@@ -1944,6 +1998,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -2045,13 +2101,15 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg"
       },
@@ -2061,7 +2119,7 @@
         "item": "About ¼ cup (60 ml / 2 oz) milk or cream (more for softer, less eggy French toast; less for firmer, more eggy toast)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "–3 slices bread (see notes)"
       },
@@ -2093,43 +2151,45 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-mexican"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(12 oz) chili"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(10 oz) condensed cream of chicken soup"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(10 oz) condensed cream of celery soup"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "cup",
         "item": "s cooked chicken, shredded"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ cups salsa"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "package",
         "item": "corn tortillas"
       },
       {
-        "qty": 8.0,
+        "qty": 8,
         "unit": "oz",
         "item": "cheddar cheese, shredded"
       }
@@ -2152,13 +2212,15 @@
     "servings": 2,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "potatoes, washed"
       },
@@ -2173,7 +2235,7 @@
         "item": "Cooking oil (canola is good&mdash;see smoke point information)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "s flour OR 1 egg"
       }
@@ -2203,6 +2265,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-mexican"
@@ -2219,7 +2283,7 @@
         "item": "Corn tortillas or ready-made taco shells"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "–4 tsp per pound (450 g) of beef of cumin"
       },
@@ -2254,28 +2318,30 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "(5 ml) salt"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "(15 ml) olive oil"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "artichoke"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "lemon"
       }
@@ -2303,13 +2369,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "Scotch fillet steak (thickly-cut)"
       },
@@ -2339,7 +2407,7 @@
         "item": "Olive oil (optional)"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "–4 oysters"
       },
@@ -2378,7 +2446,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -2435,6 +2505,8 @@
     "servings": 12,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -2491,6 +2563,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian",
@@ -2498,17 +2572,17 @@
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "lb",
         "item": "(450 g) ziti or other pasta"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ cups (360 ml) marinara sauce"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "lb",
         "item": "(450 g) grated mozzarella"
       },
@@ -2518,27 +2592,27 @@
         "item": "½ lb (225 g) ricotta"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "oz",
         "item": "(110 g) grated Parmesan cheese"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg, beaten"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tbsp",
         "item": "basil, chopped fine"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "oregano, chopped fine"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tbsp",
         "item": "Italian parsley, chopped fine"
       },
@@ -2548,7 +2622,7 @@
         "item": "½ cup (120 ml) bread crumbs"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "pinch",
         "item": "crushed red pepper flakes (optional)"
       },
@@ -2587,17 +2661,19 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "lb",
         "item": "s (~1 kg) potatoes"
       },
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "slice",
         "item": "s of bacon"
       },
@@ -2607,7 +2683,7 @@
         "item": "½ cup (120 g) finely-chopped yellow onion"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "s white granulated sugar"
       },
@@ -2617,7 +2693,7 @@
         "item": "½ teaspoon celery seed"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "hard boiled eggs"
       },
@@ -2632,17 +2708,17 @@
         "item": "½ cup (120 ml) vinegar"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "(240 ml) water"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "fresh parsley"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ teaspoon salt"
       },
@@ -2679,13 +2755,15 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "ea. (250 g / 8.8 oz) carrots, shredded"
       },
@@ -2695,12 +2773,12 @@
         "item": "½ cup (40 g / 1.4 oz) raisins"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "lemon, zested and juiced"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "orange, zested and juiced"
       },
@@ -2728,6 +2806,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -2777,6 +2857,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -2855,6 +2937,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -2880,27 +2964,27 @@
         "item": "½ cup (120 ml) condensed cream of mushroom soup"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "hard boiled eggs, peeled and chopped"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "chopped fresh parsley"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "lemon juice"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ teaspoon salt or less, to taste"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "pepper"
       },
@@ -2910,12 +2994,12 @@
         "item": "¼ teaspoon dry mustard"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "cup",
         "item": "s (700 g) cooked rice, cooled"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "cup",
         "item": "s (480 g) cooked chicken, cooled and chopped"
       },
@@ -2925,7 +3009,7 @@
         "item": "¼ cup (60 g) grated carrot"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "s green onion, chopped"
       },
@@ -2953,6 +3037,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -3028,6 +3114,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -3099,6 +3187,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -3165,6 +3255,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -3215,13 +3307,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "–6 green tomatoes"
       },
@@ -3264,6 +3358,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -3423,13 +3519,15 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "tomato paste"
       },
@@ -3439,7 +3537,7 @@
         "item": "¾ cup heavy cream"
       },
       {
-        "qty": 18.0,
+        "qty": 18,
         "unit": "oz",
         "item": "tomato juice"
       },
@@ -3449,17 +3547,17 @@
         "item": "½ cup chicken broth"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "kosher salt, divided"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "freshly-ground black pepper"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "Roma tomatoes, diced"
       },
@@ -3469,7 +3567,7 @@
         "item": "Extra-virgin olive oil"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "ea. ½-inch thick slices either French or Italian crusty white bread, cut on the bias"
       },
@@ -3479,7 +3577,7 @@
         "item": "½ tsp garlic powder"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "large bunches fresh basil"
       }
@@ -3508,13 +3606,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 380.0,
+        "qty": 380,
         "unit": "g",
         "item": "(1 ½ cup / 13 ½ oz) all-purpose flour"
       },
@@ -3524,12 +3624,12 @@
         "item": "¼ tsp salt"
       },
       {
-        "qty": 220.0,
+        "qty": 220,
         "unit": "g",
         "item": "(1 cup / 8 oz) butter"
       },
       {
-        "qty": 110.0,
+        "qty": 110,
         "unit": "g",
         "item": "(½ cup / 4 oz) white granulated sugar"
       }
@@ -3567,27 +3667,27 @@
         "item": "½ cup (118 ml / 108 g) butter"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "(237 ml / 225 g) white granulated sugar"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "eggs"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "(110 g) white all-purpose flour"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "baking soda"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "ground cinnamon"
       },
@@ -3628,6 +3728,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -3723,6 +3825,8 @@
     "servings": 5,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -3790,6 +3894,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -3838,6 +3944,8 @@
     "servings": 2,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -3932,6 +4040,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -4037,7 +4147,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -4113,6 +4225,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -4219,6 +4333,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -4270,6 +4386,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -4345,6 +4463,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -4419,6 +4539,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -4520,6 +4642,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -4785,6 +4909,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -4894,6 +5020,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -4965,6 +5093,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -5049,6 +5179,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -5134,6 +5266,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -5304,6 +5438,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -5476,6 +5612,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -5566,6 +5704,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -5621,7 +5761,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -5689,6 +5831,8 @@
     "servings": 2,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -5741,6 +5885,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -5802,6 +5948,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -5909,6 +6057,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -5966,6 +6116,8 @@
     "servings": 12,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -6020,7 +6172,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -6113,6 +6267,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -6166,6 +6322,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -6262,6 +6420,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -6346,7 +6506,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -6412,6 +6574,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -6522,23 +6686,25 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 8.0,
+        "qty": 8,
         "unit": "cup",
         "item": "s cooked green beans"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "milk"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "⅔ cups canned French fried onions, divided into 2 equal portions"
       },
@@ -6548,12 +6714,12 @@
         "item": "¼ teaspoon ground black pepper"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "can",
         "item": "s (21 ounces) cream of mushroom soup"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "s soy sauce"
       }
@@ -6576,6 +6742,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -6671,6 +6839,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -6760,7 +6930,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -6830,6 +7002,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -6874,6 +7048,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -6924,7 +7100,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian",
@@ -7015,6 +7193,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -7070,6 +7250,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -7163,6 +7345,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -7238,6 +7422,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -7338,6 +7524,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -7402,6 +7590,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -7466,7 +7656,9 @@
     "minutes": 40,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian",
@@ -7552,6 +7744,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -7602,6 +7796,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -7667,6 +7863,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -7781,6 +7979,8 @@
     "servings": 12,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -7867,6 +8067,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -7973,7 +8175,9 @@
     "minutes": 90,
     "servings": 8,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -8085,6 +8289,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -8170,6 +8376,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -8269,6 +8477,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -8361,6 +8571,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -8467,6 +8679,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -8525,85 +8739,82 @@
   },
   {
     "id": "r364",
-    "name": "Chimichurri",
+    "name": "Montreal Russian Borscht",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 100,
-        "unit": "ml",
-        "item": "olive oil"
-      },
-      {
-        "qty": 50,
-        "unit": "ml",
-        "item": "white wine vinegar"
-      },
-      {
-        "qty": 50,
-        "unit": "ml",
-        "item": "water"
+        "qty": 7,
+        "unit": "l",
+        "item": "s water"
       },
       {
         "qty": 1,
-        "unit": "bunch",
-        "item": "flat-leaf parsley, chopped"
+        "unit": "can",
+        "item": "stewed tomatoes, or an equivalent amount of fresh tomatoes"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "medium onion, finely chopped"
-      },
-      {
-        "qty": 4,
-        "unit": "clove",
-        "item": "garlic, finely minced"
+        "item": "small can tomato paste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Red chile flakes, to taste"
+        "item": "Sugar to taste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt, to taste"
       },
       {
         "qty": 1,
-        "unit": "tbsp",
-        "item": "oregano"
+        "unit": "",
+        "item": "large onion, thinly sliced"
       },
       {
         "qty": 1,
-        "unit": "tbsp",
-        "item": "paprika"
+        "unit": "",
+        "item": "–2 cloves garlic"
+      },
+      {
+        "qty": 5,
+        "unit": "",
+        "item": "–6 medium beets, peeled and julienned"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "medium carrots, peeled and julienned"
       },
       {
         "qty": 1,
-        "unit": "tbsp",
-        "item": "sea salt flakes"
+        "unit": "",
+        "item": "potato, julienned (optional)"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground black pepper"
+        "qty": null,
+        "unit": "",
+        "item": "&frac12; large white cabbage, shredded"
       }
     ],
     "steps": [
-      "Combine all the ingredients except the oil, vinegar and water in a large bowl and mix together well, ensuring all the herbs and spices (especially the salt) are distributed evenly (3 minutes).",
-      "Allow to rest for 30 minutes (3 minutes).",
-      "Bring the vinegar and water to the boil, add to the other ingredients and mix well (3 minutes).",
-      "This helps to soften the taste of the onion and garlic (3 minutes).",
-      "Allow to rest for 30 minutes (3 minutes).",
-      "Add the oil and mix well (3 minutes).",
-      "If the liquid part doesn't cover the ingredients add oil water and vinegar in a 2:1:1 ratio to cover them (3 minutes).",
-      "Transfer to an air-tight container and refrigerate overnight at least, or better, for a few days (3 minutes).",
-      "When needed, remove from refrigerator about 30 minutes ahead of time to allow the oil to thin out again (3 minutes).",
-      "Stir well and serve."
+      "Fill large stock pot with water (3 minutes).",
+      "Add can stewed tomatoes, tomato paste, sugar, salt, onion, garlic, and beets, and boil for 20 minutes (3 minutes).",
+      "Add carrots, cabbage, and potato (3 minutes).",
+      "Return to a boil and cook for 1.5 hours (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chimichurri",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Montreal_Russian_Borscht",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8614,13 +8825,15 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "eggs"
       },
@@ -8635,12 +8848,12 @@
         "item": "¼ teaspoon salt"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "vanilla extract"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "quart (946 ml) milk"
       },
@@ -8668,6 +8881,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -8747,6 +8962,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -8833,6 +9050,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -8844,12 +9063,12 @@
         "item": "¾ cup butter, applesauce, equal parts butter and vegetable oil, or shortening"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "¼ cup brown sugar, firmly packed"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg"
       },
@@ -8859,17 +9078,17 @@
         "item": "⅓ cup water or milk"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ tsp vanilla"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "cup",
         "item": "raw oats (rolled or quick/old fashioned)"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "all-purpose flour"
       },
@@ -8889,7 +9108,7 @@
         "item": "¼ tsp cinnamon"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "raisins"
       },
@@ -8919,6 +9138,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -8997,6 +9218,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -9071,6 +9294,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -9131,6 +9356,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -9191,7 +9418,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian",
@@ -9288,6 +9517,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -9374,6 +9605,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -9536,6 +9769,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -9590,7 +9825,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -9701,6 +9938,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -9797,6 +10036,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -9856,6 +10097,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -9906,7 +10149,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -9964,7 +10209,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -10056,6 +10303,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -10111,33 +10360,35 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "dried black eyed peas"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(500 grams) green peas"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "small onion, chopped"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "medium carrots, diced"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "stalk",
         "item": "celery, chopped"
       },
@@ -10179,12 +10430,12 @@
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "cup",
         "item": "s all-purpose flour"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ teaspoons baking powder"
       },
@@ -10209,22 +10460,22 @@
         "item": "½ cup unsalted butter, softened"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "granulated sugar"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "standard eggs"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ teaspoons vanilla extract"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "ripe bananas, mashed"
       },
@@ -10259,6 +10510,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -10329,6 +10582,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -10430,6 +10685,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -10480,6 +10737,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-italian"
@@ -10566,6 +10825,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -10640,6 +10901,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -10736,6 +10999,8 @@
     "servings": 2,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -10796,33 +11061,35 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-italian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "–2 cans (12 ounces / 300 g) tuna"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "(240 g) uncooked macaroni, or other short pasta"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "of peas"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "of mushrooms"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "s minced onion"
       },
@@ -10832,7 +11099,7 @@
         "item": "⅛ cup (30 ml) milk"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(10.75 ounces / 305 g) cream of mushroom or cheddar cheese soup"
       },
@@ -10860,53 +11127,55 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "olive oil"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "garlic cloves, minced"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "bunch",
         "item": "of fresh asparagus, trimmed and chopped"
       },
       {
-        "qty": 8.0,
+        "qty": 8,
         "unit": "",
         "item": "large eggs"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tsp",
         "item": "s milk (whole fat milk is best, but part skim would be fine)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "s chopped fresh basil or 1 teaspoon dried basil"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "pinch",
         "item": "of salt"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "pinch",
         "item": "of ground black pepper"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tbsp",
         "item": "s grated Parmesan cheese"
       }
@@ -10935,6 +11204,8 @@
     "servings": 12,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -11054,6 +11325,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -11110,6 +11383,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -11198,6 +11473,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian",
@@ -11309,7 +11586,9 @@
     "minutes": 105,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -11386,6 +11665,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -11451,6 +11732,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -11594,83 +11877,68 @@
   },
   {
     "id": "r405",
-    "name": "Date Nut Bars",
+    "name": "Barbecue Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": 24,
+        "unit": "",
+        "item": "chicken wings, tips removed, cut in half at the joint"
+      },
+      {
         "qty": 1,
-        "unit": "cup",
-        "item": "nuts (e.g., pecans), ground"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "seeded dates, ground"
-      },
-      {
-        "qty": null,
         "unit": "",
-        "item": "½ cup white granulated sugar"
+        "item": "¼ cups barbecue sauce"
       },
       {
-        "qty": 3,
-        "unit": "",
-        "item": "egg whites"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "paprika"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon salt"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "lemon pepper"
       },
       {
         "qty": 1,
         "unit": "tbsp",
-        "item": "cream"
+        "item": "salt"
       },
       {
         "qty": 1,
-        "unit": "cup",
-        "item": "flour"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "baking powder"
+        "unit": "tbsp",
+        "item": "black peppercorns, cracked"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "½ cup confectioner's sugar"
+        "item": "½ tbsp ground cayenne pepper (optional)"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "lemon juice"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "vanilla extract"
+        "qty": 0.5,
+        "unit": "",
+        "item": "x3 hickory wood chips"
       }
     ],
     "steps": [
-      "Grind the nuts and dates; sift in the granular sugar (3 minutes).",
-      "In another bowl, whip egg whites until stiff (3 minutes).",
-      "Gradually add the sugar mixture, whipping constantly (3 minutes).",
-      "Fold in the cream (3 minutes).",
-      "Sift the flour, then re-sift the flour with the baking powder (3 minutes).",
-      "Fold into the egg mixture (3 minutes).",
-      "Grease and flour a baking sheet (3 minutes).",
-      "Pat dough ½-inch thick on the baking sheet, and bake for 10 minutes at 350°F (175°C)."
+      "Combine seasonings and toss with wings (3 minutes).",
+      "Brush wings on all sides with sauce and refrigerate as long as possible (3 minutes).",
+      "Preheat 4 ½ pounds charcoal in the chimney (3 minutes).",
+      "Disperse evenly around bottom of grill, then reapply grate (3 minutes).",
+      "Add chicken and cook, turning often, until internal temperature reaches 165°F (3 minutes).",
+      "Remove to a plate and cover tightly with aluminum foil (3 minutes).",
+      "Let rest 5 minutes before serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Date_Nut_Bars",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Barbecue_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -11681,6 +11949,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -11809,12 +12079,14 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "lb",
         "item": "s (900 g) beef chuck roast"
       },
@@ -11829,17 +12101,17 @@
         "item": "½ teaspoon (2.5 ml) ground black pepper"
       },
       {
-        "qty": 8.0,
+        "qty": 8,
         "unit": "tbsp",
         "item": "s (110 g) butter"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "green onions (white parts only), sliced"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "tbsp",
         "item": "s (60 ml) all-purpose flour"
       },
@@ -11849,12 +12121,12 @@
         "item": "s (300 ml) condensed beef broth"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "(5 ml) prepared mustard"
       },
       {
-        "qty": 6.0,
+        "qty": 6,
         "unit": "oz",
         "item": "s (150 g) sliced canned mushrooms, drained"
       },
@@ -11902,6 +12174,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian",
@@ -11988,7 +12262,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -12054,17 +12330,19 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "butter or margarine"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "chopped onion"
       },
@@ -12074,22 +12352,22 @@
         "item": "½ cup chopped celery"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ cups diced, pared potatoes, cut in ½-inch cubes"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "cup",
         "item": "s corn, fresh or frozen"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ cups water"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "chicken bouillon cubes"
       },
@@ -12099,12 +12377,12 @@
         "item": "¼ teaspoon thyme"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "milk"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "light cream"
       },
@@ -12137,6 +12415,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -12208,6 +12488,8 @@
     "servings": 9,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -12263,6 +12545,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -12316,6 +12600,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -12478,18 +12764,20 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "–3 good British butcher's sausages per person"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "medium-to-large potatoes per person (Maris piper potatoes are good.)"
       },
@@ -12530,6 +12818,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -12620,6 +12910,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -12805,6 +13097,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -12886,6 +13180,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -12986,6 +13282,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -13066,7 +13364,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -13163,6 +13463,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -13312,7 +13614,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -13399,6 +13703,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -13479,6 +13785,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -13570,6 +13878,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -13665,23 +13975,25 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "white granulated sugar"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "baking powder"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ cups (360 ml) milk"
       },
@@ -13691,17 +14003,17 @@
         "item": "½ cup (120 ml) vegetable oil"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "salt"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "eggs, separated"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "¾ cups (420 ml) flour"
       }
@@ -13724,7 +14036,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -13815,6 +14129,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -13875,6 +14191,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -13940,6 +14258,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -13993,7 +14313,9 @@
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -14074,6 +14396,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-indian"
@@ -14144,6 +14468,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -14230,6 +14556,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -14308,6 +14636,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -14369,6 +14699,8 @@
     "servings": 3,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -14431,6 +14763,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
@@ -14500,6 +14834,8 @@
     "servings": 3,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -14645,6 +14981,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "vegetarian"
@@ -14700,6 +15038,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate",
       "collection-italian"
@@ -14796,6 +15136,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],

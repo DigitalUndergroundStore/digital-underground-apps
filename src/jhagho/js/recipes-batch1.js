@@ -10,6 +10,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "moderate",
       "medium"
@@ -76,6 +78,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "high-protein",
       "moderate",
@@ -143,6 +147,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "gluten-free",
       "moderate",
@@ -210,6 +216,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "canadian",
       "high-protein",
       "splurge",
@@ -267,6 +275,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "canadian",
       "moderate",
       "easy"
@@ -323,7 +333,8 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "snack",
+      "main-meal",
+      "main-meal",
       "canadian",
       "vegetarian",
       "budget",
@@ -376,6 +387,8 @@
     "servings": 8,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "canadian",
       "gluten-free",
       "budget",
@@ -443,6 +456,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "gluten-free",
@@ -502,6 +517,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "gluten-free",
@@ -566,6 +583,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "high-protein",
       "moderate",
@@ -632,7 +651,9 @@
     "minutes": 95,
     "servings": 6,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "gluten-free",
@@ -702,6 +723,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "gluten-free",
@@ -771,6 +794,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "moderate",
       "easy"
@@ -827,6 +852,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "gluten-free",
       "moderate",
@@ -894,6 +921,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "moderate",
       "medium"
@@ -960,6 +989,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "vegetarian",
       "budget",
@@ -1022,6 +1053,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "moderate",
       "easy"
@@ -1077,7 +1110,9 @@
     "minutes": 40,
     "servings": 6,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "gluten-free",
@@ -1147,6 +1182,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "gluten-free",
@@ -1206,6 +1243,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "high-protein",
@@ -1264,6 +1303,8 @@
     "servings": 2,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "gluten-free",
@@ -1323,6 +1364,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "dairy-free",
       "moderate",
@@ -1380,8 +1423,6 @@
     "servings": 16,
     "tags": [
       "dinner",
-      "dessert",
-      "snack",
       "canadian",
       "vegetarian",
       "moderate",
@@ -1444,8 +1485,8 @@
     "servings": 12,
     "tags": [
       "dinner",
-      "dessert",
-      "snack",
+      "main-meal",
+      "main-meal",
       "canadian",
       "vegetarian",
       "budget",
@@ -1503,7 +1544,8 @@
     "servings": 6,
     "tags": [
       "breakfast",
-      "snack",
+      "main-meal",
+      "main-meal",
       "canadian",
       "vegetarian",
       "budget",
@@ -1561,7 +1603,6 @@
     "servings": 8,
     "tags": [
       "dinner",
-      "dessert",
       "canadian",
       "vegetarian",
       "budget",
@@ -1624,6 +1665,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "canadian",
       "vegetarian",
       "moderate",
@@ -1681,6 +1724,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "canadian",
       "vegetarian",
       "gluten-free",
@@ -1744,6 +1789,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "moderate",
@@ -1811,6 +1858,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "budget",
@@ -1873,6 +1922,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "vegetarian",
       "moderate",
@@ -1930,6 +1981,8 @@
     "servings": 6,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "budget",
@@ -1982,6 +2035,8 @@
     "servings": 6,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "vegetarian",
       "moderate",
@@ -2039,6 +2094,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "budget",
@@ -2096,6 +2153,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "moderate",
@@ -2153,6 +2212,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "budget",
@@ -2210,6 +2271,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-weeknight",
       "dairy-free",
       "high-protein",
@@ -2268,37 +2331,39 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 200.0,
+        "qty": 200,
         "unit": "",
         "item": "–300 ml (¾–1¼ cups) liquid, such as water, milk or cream"
       },
       {
-        "qty": 50.0,
+        "qty": 50,
         "unit": "ml",
         "item": "(¼ cup) dried bread crumbs"
       },
       {
-        "qty": 250.0,
+        "qty": 250,
         "unit": "g",
         "item": "(9 oz) ground beef"
       },
       {
-        "qty": 250.0,
+        "qty": 250,
         "unit": "g",
         "item": "(9 oz) ground pork"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "small onion, finely chopped or grated"
       },
@@ -2325,7 +2390,7 @@
       "Pan fry the meatballs on medium heat in a frying pan with butter for approximately 3–5 minutes (3 minutes).",
       "Fry them on all sides until they are brown and not pink in the middle (3 minutes).",
       "Shaking the pan occasionally will help the meatballs cook evenly (3 minutes).",
-      "Serve them with mashed potatoes with a veal based brown sauce made with cream and lingonberry preserve or cranberry preserve (3 minutes)."
+      "Serve them with mashed potatoes with a veal based brown sauce made with cream and lingonberry preserve or cranberry preserve (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Swedish_Meatballs_I",
     "sourceName": "Wikibooks Cookbook",
@@ -2338,6 +2403,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-weeknight",
       "dairy-free",
       "gluten-free",
@@ -2397,6 +2464,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-weeknight",
       "dairy-free",
       "moderate",
@@ -2454,6 +2523,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-weeknight",
       "high-protein",
       "moderate",
@@ -2511,6 +2582,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-weeknight",
       "moderate",
       "easy"
@@ -2567,7 +2640,8 @@
     "servings": 12,
     "tags": [
       "dinner",
-      "snack",
+      "main-meal",
+      "main-meal",
       "collection-crowd",
       "high-protein",
       "moderate",
@@ -2625,6 +2699,8 @@
     "servings": 12,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-crowd",
       "vegetarian",
       "budget",
@@ -2682,6 +2758,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-crowd",
       "dairy-free",
       "gluten-free",
@@ -2740,6 +2818,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-crowd",
       "high-protein",
       "moderate",
@@ -2797,6 +2877,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-slow-cooker",
       "dairy-free",
       "gluten-free",
@@ -2856,6 +2938,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-slow-cooker",
       "gluten-free",
       "moderate",
@@ -2912,7 +2996,9 @@
     "minutes": 300,
     "servings": 8,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "collection-slow-cooker",
       "vegan",
       "gluten-free",
@@ -2971,7 +3057,9 @@
     "minutes": 420,
     "servings": 10,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "collection-slow-cooker",
       "dairy-free",
       "gluten-free",
@@ -3031,27 +3119,29 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "recipe spice rub (or use your own recipe)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "bay leaves, crumbled"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(12 ounces / ~355 ml) of beer"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "–4 pound (1.5–2 kg) chicken (dressed)"
       }
@@ -3081,6 +3171,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-one-pan",
       "dairy-free",
       "gluten-free",
@@ -3135,6 +3227,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-one-pan",
       "high-protein",
       "budget",
@@ -3192,6 +3286,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-one-pan",
       "dairy-free",
       "gluten-free",
@@ -3251,6 +3347,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-one-pan",
       "dairy-free",
       "moderate",
@@ -3308,6 +3406,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-one-pan",
       "dairy-free",
       "gluten-free",
@@ -3366,6 +3466,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-grill",
       "dairy-free",
       "gluten-free",
@@ -3420,6 +3522,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-grill",
       "dairy-free",
       "gluten-free",
@@ -3469,6 +3573,8 @@
     "servings": 6,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-soup",
       "vegetarian",
       "budget",
@@ -3531,6 +3637,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-soup",
       "vegetarian",
       "moderate",
@@ -3588,6 +3696,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-pub",
       "dairy-free",
       "moderate",
@@ -3645,6 +3755,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-pub",
       "high-protein",
       "moderate",
@@ -3702,7 +3814,6 @@
     "servings": 6,
     "tags": [
       "dinner",
-      "snack",
       "collection-pub",
       "vegetarian",
       "budget",
@@ -3760,6 +3871,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-italian",
       "high-protein",
       "moderate",
@@ -3817,6 +3930,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-italian",
       "high-protein",
       "moderate",
@@ -3874,6 +3989,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-texmex",
       "high-protein",
       "moderate",
@@ -3931,7 +4048,6 @@
     "servings": 6,
     "tags": [
       "dinner",
-      "snack",
       "collection-texmex",
       "high-protein",
       "budget",
@@ -3989,6 +4105,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "dairy-free",
       "vegan",
@@ -4052,6 +4170,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "dairy-free",
       "budget",
@@ -4109,6 +4229,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "dairy-free",
       "moderate",
@@ -4166,6 +4288,8 @@
     "servings": 8,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "collection-breakfast",
       "vegetarian",
       "moderate",
@@ -4223,6 +4347,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "collection-breakfast",
       "high-protein",
       "budget",
@@ -4280,6 +4406,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-lunch",
       "high-protein",
       "moderate",
@@ -4337,6 +4465,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-lunch",
       "vegetarian",
       "gluten-free",

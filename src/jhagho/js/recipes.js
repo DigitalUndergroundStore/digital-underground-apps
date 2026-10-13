@@ -14,7 +14,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -77,7 +78,8 @@ var PW_STARTERS = [
       "main-meal",
       "vegetarian",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -136,7 +138,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -204,7 +207,8 @@ var PW_STARTERS = [
       "main-meal",
       "vegetarian",
       "easy",
-      "moderate"
+      "moderate",
+      "italian"
     ],
     "ingredients": [
       {
@@ -273,7 +277,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -331,7 +336,8 @@ var PW_STARTERS = [
       "main-meal",
       "vegetarian",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -384,7 +390,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -452,7 +459,8 @@ var PW_STARTERS = [
       "main-meal",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "italian"
     ],
     "ingredients": [
       {
@@ -514,7 +522,8 @@ var PW_STARTERS = [
       "main-meal",
       "vegetarian",
       "easy",
-      "moderate"
+      "moderate",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -570,7 +579,8 @@ var PW_STARTERS = [
       "main-meal",
       "main-meal",
       "medium",
-      "moderate"
+      "moderate",
+      "italian"
     ],
     "ingredients": [
       {
@@ -628,7 +638,8 @@ var PW_STARTERS = [
       "main-meal",
       "vegetarian",
       "easy",
-      "moderate"
+      "moderate",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -671,7 +682,8 @@ var PW_STARTERS = [
       "vegetarian",
       "dairy-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -734,7 +746,8 @@ var PW_STARTERS = [
       "main-meal",
       "dairy-free",
       "easy",
-      "moderate"
+      "moderate",
+      "british"
     ],
     "ingredients": [
       {
@@ -792,7 +805,8 @@ var PW_STARTERS = [
       "main-meal",
       "dairy-free",
       "medium",
-      "moderate"
+      "moderate",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -856,7 +870,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -925,7 +940,8 @@ var PW_STARTERS = [
       "vegetarian",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -985,7 +1001,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1050,7 +1067,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -1118,7 +1136,8 @@ var PW_STARTERS = [
       "main-meal",
       "vegetarian",
       "easy",
-      "moderate"
+      "moderate",
+      "italian"
     ],
     "ingredients": [
       {
@@ -1172,7 +1191,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1241,7 +1261,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1301,7 +1322,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "chinese"
     ],
     "ingredients": [
       {
@@ -1365,7 +1387,8 @@ var PW_STARTERS = [
       "vegetarian",
       "dairy-free",
       "easy",
-      "moderate"
+      "moderate",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -1429,7 +1452,8 @@ var PW_STARTERS = [
       "vegetarian",
       "dairy-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1488,7 +1512,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1548,7 +1573,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1616,7 +1642,8 @@ var PW_STARTERS = [
       "main-meal",
       "vegetarian",
       "easy",
-      "moderate"
+      "moderate",
+      "italian"
     ],
     "ingredients": [
       {
@@ -1674,7 +1701,8 @@ var PW_STARTERS = [
       "vegetarian",
       "dairy-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1739,7 +1767,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1797,7 +1826,8 @@ var PW_STARTERS = [
       "main-meal",
       "dairy-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1867,7 +1897,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -1932,7 +1963,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -1995,7 +2027,8 @@ var PW_STARTERS = [
       "main-meal",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -2064,7 +2097,8 @@ var PW_STARTERS = [
       "vegetarian",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -2118,7 +2152,8 @@ var PW_STARTERS = [
       "vegetarian",
       "dairy-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -2188,7 +2223,8 @@ var PW_STARTERS = [
       "dairy-free",
       "gluten-free",
       "easy",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {

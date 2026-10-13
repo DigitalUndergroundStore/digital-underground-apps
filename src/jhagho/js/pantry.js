@@ -1,4 +1,4 @@
-/* Pantry Week v3.4 — data, shopping list, migration. No network. */
+/* Pantry Week v3.12.0 — data, shopping list, migration. No network. */
 "use strict";
 
 (function () {
@@ -1118,6 +1118,12 @@
     };
   }
 
+  var PLAN_CUISINE_TAGS = [
+    "canadian", "american", "italian", "mexican", "chinese", "indian",
+    "british", "french", "mediterranean", "other"
+  ];
+  var PLAN_CUISINE_KEY = "pantry_week_plan_cuisines_v1";
+
   var CUISINE_WORDS = [
     "thai", "korean", "mexican", "italian", "indian", "greek", "japanese", "chinese", "vietnamese",
     "moroccan", "ethiopian", "jamaican", "turkish", "sichuan", "brazilian", "french", "caribbean",
@@ -1158,12 +1164,40 @@
     return "other";
   }
 
-  function recipeCuisine(recipe) {
-    var name = String(recipe.name || "").toLowerCase();
-    for (var i = 0; i < CUISINE_WORDS.length; i++) {
-      if (name.indexOf(CUISINE_WORDS[i]) !== -1) return CUISINE_WORDS[i];
+  function recipePlanCuisine(recipe) {
+    var tags = recipe && recipe.tags || [];
+    for (var i = 0; i < PLAN_CUISINE_TAGS.length; i++) {
+      if (tags.indexOf(PLAN_CUISINE_TAGS[i]) !== -1) return PLAN_CUISINE_TAGS[i];
     }
-    return "general";
+    return "other";
+  }
+
+  function recipeMatchesPlanCuisines(recipe, selected) {
+    var list = selected || [];
+    if (!list.length) return true;
+    return list.indexOf(recipePlanCuisine(recipe)) !== -1;
+  }
+
+  function loadPlanCuisineFilters() {
+    try {
+      var raw = storage().getItem(PLAN_CUISINE_KEY);
+      if (!raw) return [];
+      var parsed = JSON.parse(raw);
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter(function (id) { return PLAN_CUISINE_TAGS.indexOf(id) !== -1; });
+    } catch (err) {
+      return [];
+    }
+  }
+
+  function savePlanCuisineFilters(list) {
+    try {
+      storage().setItem(PLAN_CUISINE_KEY, JSON.stringify(list || []));
+    } catch (err) { /* ignore */ }
+  }
+
+  function recipeCuisine(recipe) {
+    return recipePlanCuisine(recipe);
   }
 
   function slotsForFillScope(scope) {
@@ -1280,22 +1314,31 @@
     });
     shuffleInPlace(targets);
 
+    var cuisineFilters = Array.isArray(opts.cuisineFilters) ? opts.cuisineFilters : [];
+    var cuisineFallbacks = 0;
+
     targets.forEach(function (target) {
-      if (replaceAll) out[target.day][target.slot] = blankSlot();
-      var candidates = list.filter(function (recipe) {
-        if (!recipeMatches(recipe, query, filter)) return false;
-        if (!recipePlanEligible(recipe)) return false;
-        if (!recipeFitsSlot(recipe, target.slot)) return false;
-        if (usedIds[recipe.id]) return false;
-        return true;
-      });
-      if (!candidates.length) {
-        candidates = list.filter(function (recipe) {
+      function slotCandidates(strictCuisine, allowReuse) {
+        return list.filter(function (recipe) {
           if (!recipeMatches(recipe, query, filter)) return false;
           if (!recipePlanEligible(recipe)) return false;
           if (!recipeFitsSlot(recipe, target.slot)) return false;
+          if (strictCuisine && cuisineFilters.length && !recipeMatchesPlanCuisines(recipe, cuisineFilters)) return false;
+          if (!allowReuse && usedIds[recipe.id]) return false;
           return true;
         });
+      }
+      if (replaceAll) out[target.day][target.slot] = blankSlot();
+      var candidates = slotCandidates(true, false);
+      if (!candidates.length) {
+        candidates = slotCandidates(false, false);
+      }
+      if (!candidates.length) {
+        candidates = slotCandidates(true, true);
+      }
+      if (!candidates.length && cuisineFilters.length) {
+        candidates = slotCandidates(false, true);
+        if (candidates.length) cuisineFallbacks += 1;
       }
       var pick = pickVariedRecipe(candidates, usedProteins, usedCuisines);
       if (!pick) return;
@@ -1309,6 +1352,9 @@
       usedProteins.push(recipeProtein(pick));
       usedCuisines.push(recipeCuisine(pick));
     });
+    if (opts.returnMeta) {
+      return { week: out, cuisineFallbacks: cuisineFallbacks };
+    }
     return out;
   }
 
@@ -1453,6 +1499,15 @@
     if (tag === "high-protein") return "High protein";
     if (tag === "quick") return "Quick (20 min)";
     if (tag === "canadian") return "Canadian";
+    if (tag === "american") return "American";
+    if (tag === "italian") return "Italian";
+    if (tag === "mexican") return "Mexican";
+    if (tag === "chinese") return "Chinese";
+    if (tag === "indian") return "Indian";
+    if (tag === "british") return "British";
+    if (tag === "french") return "French";
+    if (tag === "mediterranean") return "Mediterranean";
+    if (tag === "other") return "Other";
     if (tag === "my-creation") return "My creation";
     if (tag === "budget") return "Budget";
     if (tag === "moderate") return "Moderate";
@@ -1467,7 +1522,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.11.9",
+    VERSION: "3.12.0",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,
@@ -1517,6 +1572,12 @@
     recipePlanEligible: recipePlanEligible,
     parseRecipeText: parseRecipeText,
     fillSimpleWeek: fillSimpleWeek,
+    PLAN_CUISINE_TAGS: PLAN_CUISINE_TAGS,
+    PLAN_CUISINE_KEY: PLAN_CUISINE_KEY,
+    recipePlanCuisine: recipePlanCuisine,
+    recipeMatchesPlanCuisines: recipeMatchesPlanCuisines,
+    loadPlanCuisineFilters: loadPlanCuisineFilters,
+    savePlanCuisineFilters: savePlanCuisineFilters,
     recipeMealType: recipeMealType,
     recipeFitsSlot: recipeFitsSlot,
     slotsForFillScope: slotsForFillScope,

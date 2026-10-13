@@ -14,7 +14,8 @@
       "main-meal",
       "dairy-free",
       "moderate",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -83,7 +84,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -158,7 +160,8 @@
       "gluten-free",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -228,7 +231,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "indian"
     ],
     "ingredients": [
       {
@@ -303,7 +307,8 @@
       "gluten-free",
       "high-protein",
       "moderate",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -372,7 +377,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -445,7 +451,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "easy"
+      "easy",
+      "italian"
     ],
     "ingredients": [
       {
@@ -509,7 +516,8 @@
       "dairy-free",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -577,7 +585,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -647,7 +656,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -711,7 +721,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy"
+      "easy",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -781,7 +792,8 @@
       "gluten-free",
       "high-protein",
       "splurge",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -845,7 +857,8 @@
       "vegan",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "canadian"
     ],
     "ingredients": [
       {
@@ -915,7 +928,8 @@
       "gluten-free",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -980,7 +994,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -1035,7 +1050,8 @@
       "gluten-free",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -1094,7 +1110,8 @@
       "vegetarian",
       "gluten-free",
       "moderate",
-      "hard"
+      "hard",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -1148,7 +1165,8 @@
       "vegan",
       "dairy-free",
       "budget",
-      "medium"
+      "medium",
+      "chinese"
     ],
     "ingredients": [
       {
@@ -1203,7 +1221,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -1267,7 +1286,8 @@
       "vegetarian",
       "gluten-free",
       "moderate",
-      "easy"
+      "easy",
+      "french"
     ],
     "ingredients": [
       {
@@ -1327,7 +1347,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -1387,7 +1408,8 @@
       "vegan",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -1445,7 +1467,8 @@
       "main-meal",
       "high-protein",
       "moderate",
-      "easy"
+      "easy",
+      "italian"
     ],
     "ingredients": [
       {
@@ -1499,7 +1522,8 @@
       "dairy-free",
       "high-protein",
       "splurge",
-      "easy"
+      "easy",
+      "canadian"
     ],
     "ingredients": [
       {
@@ -1558,7 +1582,8 @@
       "vegetarian",
       "gluten-free",
       "moderate",
-      "medium"
+      "medium",
+      "indian"
     ],
     "ingredients": [
       {
@@ -1612,7 +1637,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy"
+      "easy",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -1670,7 +1696,8 @@
       "main-meal",
       "high-protein",
       "splurge",
-      "medium"
+      "medium",
+      "american"
     ],
     "ingredients": [
       {
@@ -1724,7 +1751,8 @@
       "vegetarian",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "chinese"
     ],
     "ingredients": [
       {
@@ -1787,7 +1815,8 @@
       "main-meal",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "chinese"
     ],
     "ingredients": [
       {
@@ -1846,7 +1875,8 @@
       "vegetarian",
       "gluten-free",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -1906,7 +1936,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "american"
     ],
     "ingredients": [
       {
@@ -1959,7 +1990,8 @@
       "main-meal",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -2012,7 +2044,8 @@
       "main-meal",
       "vegetarian",
       "budget",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -2072,7 +2105,8 @@
       "gluten-free",
       "high-protein",
       "splurge",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -2131,7 +2165,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy"
+      "easy",
+      "british"
     ],
     "ingredients": [
       {
@@ -2191,7 +2226,8 @@
     "tags": [
       "lunch",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -2299,7 +2335,8 @@
       "vegan",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "canadian"
     ],
     "ingredients": [
       {
@@ -2363,7 +2400,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -2426,7 +2464,8 @@
       "main-meal",
       "vegetarian",
       "budget",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -2486,7 +2525,8 @@
       "gluten-free",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -2541,7 +2581,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "indian"
     ],
     "ingredients": [
       {
@@ -2594,7 +2635,8 @@
       "main-meal",
       "high-protein",
       "budget",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -2658,7 +2700,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "medium"
+      "medium",
+      "canadian"
     ],
     "ingredients": [
       {
@@ -2716,7 +2759,8 @@
       "main-meal",
       "high-protein",
       "moderate",
-      "hard"
+      "hard",
+      "other"
     ],
     "ingredients": [
       {
@@ -2774,7 +2818,8 @@
       "main-meal",
       "high-protein",
       "budget",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -2828,7 +2873,8 @@
       "vegetarian",
       "vegan",
       "budget",
-      "hard"
+      "hard",
+      "other"
     ],
     "ingredients": [
       {
@@ -2886,7 +2932,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -2945,7 +2992,8 @@
       "dairy-free",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "indian"
     ],
     "ingredients": [
       {
@@ -2996,7 +3044,8 @@
       "lunch",
       "medium",
       "moderate",
-      "collection-indian"
+      "collection-indian",
+      "indian"
     ],
     "ingredients": [
       {
@@ -3105,7 +3154,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -3160,7 +3210,8 @@
       "gluten-free",
       "high-protein",
       "splurge",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -3213,7 +3264,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "hard"
+      "hard",
+      "other"
     ],
     "ingredients": [
       {
@@ -3266,7 +3318,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -3323,7 +3376,8 @@
       "main-meal",
       "main-meal",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -3385,7 +3439,8 @@
       "main-meal",
       "high-protein",
       "splurge",
-      "hard"
+      "hard",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -3444,7 +3499,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -3496,7 +3552,8 @@
       "main-meal",
       "main-meal",
       "medium",
-      "moderate"
+      "moderate",
+      "american"
     ],
     "ingredients": [
       {
@@ -3547,7 +3604,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -3599,7 +3657,8 @@
       "main-meal",
       "main-meal",
       "medium",
-      "moderate"
+      "moderate",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -3680,7 +3739,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -3731,7 +3791,8 @@
       "dinner",
       "medium",
       "moderate",
-      "vegetarian"
+      "vegetarian",
+      "other"
     ],
     "ingredients": [
       {
@@ -3776,7 +3837,8 @@
       "main-meal",
       "main-meal",
       "medium",
-      "moderate"
+      "moderate",
+      "american"
     ],
     "ingredients": [
       {
@@ -3830,7 +3892,8 @@
       "main-meal",
       "main-meal",
       "medium",
-      "moderate"
+      "moderate",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -3912,7 +3975,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "canadian"
     ],
     "ingredients": [
       {
@@ -3961,7 +4025,8 @@
       "vegan",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "canadian"
     ],
     "ingredients": [
       {
@@ -4034,7 +4099,8 @@
       "main-meal",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -4088,7 +4154,8 @@
       "vegan",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -4147,7 +4214,8 @@
       "vegetarian",
       "gluten-free",
       "budget",
-      "easy"
+      "easy",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -4205,7 +4273,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "easy"
+      "easy",
+      "italian"
     ],
     "ingredients": [
       {
@@ -4263,7 +4332,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "easy"
+      "easy",
+      "italian"
     ],
     "ingredients": [
       {
@@ -4321,7 +4391,8 @@
       "main-meal",
       "high-protein",
       "moderate",
-      "easy"
+      "easy",
+      "italian"
     ],
     "ingredients": [
       {
@@ -4375,7 +4446,8 @@
       "vegetarian",
       "vegan",
       "budget",
-      "medium"
+      "medium",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -4435,7 +4507,8 @@
       "gluten-free",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -4489,7 +4562,8 @@
       "vegetarian",
       "gluten-free",
       "splurge",
-      "hard"
+      "hard",
+      "italian"
     ],
     "ingredients": [
       {
@@ -4548,7 +4622,8 @@
       "dairy-free",
       "high-protein",
       "splurge",
-      "medium"
+      "medium",
+      "italian"
     ],
     "ingredients": [
       {
@@ -4606,7 +4681,8 @@
       "main-meal",
       "high-protein",
       "moderate",
-      "easy"
+      "easy",
+      "italian"
     ],
     "ingredients": [
       {
@@ -4673,7 +4749,8 @@
       "lunch",
       "medium",
       "moderate",
-      "vegetarian"
+      "vegetarian",
+      "other"
     ],
     "ingredients": [
       {
@@ -4731,7 +4808,8 @@
       "high-protein",
       "gluten-free",
       "moderate",
-      "medium"
+      "medium",
+      "other"
     ],
     "ingredients": [
       {
@@ -4791,7 +4869,8 @@
       "gluten-free",
       "high-protein",
       "moderate",
-      "easy"
+      "easy",
+      "mediterranean"
     ],
     "ingredients": [
       {
@@ -4855,7 +4934,8 @@
       "gluten-free",
       "high-protein",
       "moderate",
-      "medium"
+      "medium",
+      "indian"
     ],
     "ingredients": [
       {
@@ -4910,7 +4990,8 @@
       "gluten-free",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -4974,7 +5055,8 @@
       "vegetarian",
       "gluten-free",
       "moderate",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -5033,7 +5115,8 @@
       "vegan",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -5090,7 +5173,8 @@
       "main-meal",
       "main-meal",
       "medium",
-      "moderate"
+      "moderate",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -5148,7 +5232,8 @@
       "gluten-free",
       "high-protein",
       "splurge",
-      "medium"
+      "medium",
+      "indian"
     ],
     "ingredients": [
       {
@@ -5206,7 +5291,8 @@
       "main-meal",
       "vegetarian",
       "moderate",
-      "easy"
+      "easy",
+      "mexican"
     ],
     "ingredients": [
       {
@@ -5260,7 +5346,8 @@
       "vegetarian",
       "gluten-free",
       "moderate",
-      "easy"
+      "easy",
+      "other"
     ],
     "ingredients": [
       {
@@ -5314,7 +5401,8 @@
       "vegetarian",
       "dairy-free",
       "budget",
-      "easy"
+      "easy",
+      "chinese"
     ],
     "ingredients": [
       {
@@ -5371,7 +5459,8 @@
       "main-meal",
       "main-meal",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {
@@ -5448,7 +5537,8 @@
     "tags": [
       "lunch",
       "medium",
-      "moderate"
+      "moderate",
+      "other"
     ],
     "ingredients": [
       {

@@ -79,8 +79,23 @@ def main() -> None:
     non_meal = int(consistency.get("nonMealCount") or 0)
     print(f"plan_non_meals={non_meal}", file=sys.stderr)
 
+    cuisine_tags = {
+        "canadian",
+        "american",
+        "italian",
+        "mexican",
+        "chinese",
+        "indian",
+        "british",
+        "french",
+        "mediterranean",
+        "other",
+    }
     for r in recipes:
         rid = r.get("id")
+        plan_cuisines = [t for t in (r.get("tags") or []) if t in cuisine_tags]
+        if len(plan_cuisines) != 1:
+            errors.append(f"{rid}: plan cuisine tags {plan_cuisines!r}")
         num = int(str(rid).replace("r", "")) if rid and str(rid).startswith("r") else 0
         if rid in ids:
             errors.append(f"duplicate id {rid}")

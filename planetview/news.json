@@ -1,19 +1,131 @@
 {
-  "updated": "2026-10-12T22:34:26.964Z",
+  "updated": "2026-10-13T03:09:09.647Z",
   "articles": [
     {
+      "url": "https://www.theguardian.com/world/2026/oct/13/argentina-iguazu-falls-temporarily-closed-el-nino-water-levels",
+      "title": "Argentina temporarily closes Iguazu Falls after El Niño-fuelled surge in water levels",
+      "seendate": "20261013T030348Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Argentina"
+    },
+    {
       "url": "https://www.theguardian.com/australia-news/live/2026/oct/13/labor-anthony-albanese-charity-boost-greens-ukraine-coalition-one-nation-ntwnfb",
-      "title": "Australia politics live: PM urged to call Trump about execution livestream; Robert Pether speaks after Iraq prison release",
-      "seendate": "20261012T222434Z",
+      "title": "Australian politics live: Shoebridge calls AI committee a ‘farce’ after letter ‘vetted’ by PM’s staffer; fire ants in Sydney’s inner west",
+      "seendate": "20261013T025334Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/13/beau-lamarre-condon-double-trial-dna-evidence-scrutinised-bullet-hole-ntwnfb",
+      "title": "Bullet hole in door and DNA evidence scrutinised in Beau Lamarre-Condon double murder trial",
+      "seendate": "20261013T025247Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/13/unprecedented-cyberattack-hits-french-supermarkets-causing-food-losses?traffic_source=rss",
+      "title": "‘Unprecedented’ cyberattack hits French supermarkets, causing food losses",
+      "seendate": "20261013T023710Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/13/australia-fuel-prices-rise-imf-rba-us-oil-interest-rates",
+      "title": "‘Clear and present danger’: fuel prices could rise by 30c a litre across Australia under IMF scenario",
+      "seendate": "20261013T020049Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/oct/13/imf-global-economy-world-economic-outlook-uk-gdp-forecast-2026",
+      "title": "IMF warns global economy ‘could soon test the limits of resilience’",
+      "seendate": "20261013T020011Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/13/ethiopias-tigray-war-where-do-the-uae-and-saudi-arabia-stand?traffic_source=rss",
+      "title": "Ethiopia’s Tigray war: Where do the UAE and Saudi Arabia stand?",
+      "seendate": "20261013T014625Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&at_campaign=rss",
+      "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
+      "seendate": "20261013T012602Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/13/yvonne-whear-body-found-in-stockyard-trough-missing-woman-murwillumbah-ntwnfb",
+      "title": "Body found in stockyard trough confirmed to be missing 73-year-old Yvonne Whear",
+      "seendate": "20261013T001737Z",
       "domain": "theguardian.com",
       "sourcecountry": "Ukraine"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=RSS&at_campaign=rss",
       "title": "Breaking Bad actor RJ Mitte dies aged 34",
-      "seendate": "20261012T222411Z",
+      "seendate": "20261013T001225Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/13/iran-war-live-trump-says-houthis-misbehaving-as-riyadh-flights-halted?traffic_source=rss",
+      "title": "Iran war live: Trump says Houthis ‘misbehaving’ as Riyadh flights halted",
+      "seendate": "20261013T000000Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/12/houthi-missile-attack-targets-saudi-capital-riyadh-for-third-day-in-a-row?traffic_source=rss",
+      "title": "Houthi missile attack targets Saudi capital Riyadh for third day in a row",
+      "seendate": "20261012T235405Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/13/six-flags-georgia-death-rollercoaster",
+      "title": "One dead and more injured after incident on Six Flags rollercoaster in US",
+      "seendate": "20261012T235155Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/12/two-deaths-reported-as-hurricane-simon-storm-rachel-batter-mexicos-coast?traffic_source=rss",
+      "title": "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast",
+      "seendate": "20261012T230950Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Mexico"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/12/us-archbishop-says-catholics-in-army-should-not-participate-in-firing-squad?traffic_source=rss",
+      "title": "US archbishop says Catholics in army should not participate in firing squad",
+      "seendate": "20261012T230516Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/education/2026/oct/13/english-councils-catastrophic-send-debts-forecast-2028",
+      "title": "English councils warn of ‘catastrophic’ Send debts forecast to hit £10bn by 2028",
+      "seendate": "20261012T230107Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/13/queensland-ombudsman-backs-away-from-calls-to-close-youth-prison-so-unsuitable-some-children-self-harm-to-get-transferred-ntwnfb",
+      "title": "Queensland prison where children self-harm to get transferred ‘more suitable’ than police watch houses: ombudsman",
+      "seendate": "20261012T230007Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/12/poland-says-two-turks-arrested-over-russia-linked-starlink-station-fire?traffic_source=rss",
+      "title": "Poland says two Turks arrested over Russia-linked Starlink station fire",
+      "seendate": "20261012T224400Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Poland"
     },
     {
       "url": "https://www.aljazeera.com/news/2026/10/12/why-the-cornell-gang-rape-case-has-raised-concerns-about-fraternity-culture?traffic_source=rss",
@@ -58,13 +170,6 @@
       "sourcecountry": "Ukraine"
     },
     {
-      "url": "https://www.theguardian.com/australia-news/2026/oct/13/australia-us-execution-livestream-julie-inman-grant-esafety",
-      "title": "Australia may risk a diplomatic spat with the Trump administration if it limits the viewing of a US execution",
-      "seendate": "20261012T211946Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
       "url": "https://www.aljazeera.com/news/2026/10/12/why-do-irans-oil-intermediaries-owe-the-government-billions?traffic_source=rss",
       "title": "Why do Iran’s oil ‘intermediaries’ owe the government billions?",
       "seendate": "20261012T211658Z",
@@ -73,7 +178,7 @@
     },
     {
       "url": "https://www.theguardian.com/culture/2026/oct/12/rj-mitte-breaking-bad-actor-death",
-      "title": "RJ Mitte, actor best known for Breaking Bad role, dies aged 34",
+      "title": "RJ Mitte, actor best known for Breaking Bad, dies aged 34",
       "seendate": "20261012T211044Z",
       "domain": "theguardian.com",
       "sourcecountry": "United States"
@@ -105,13 +210,6 @@
       "seendate": "20261012T210128Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&at_campaign=rss",
-      "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
-      "seendate": "20261012T205409Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Saudi Arabia"
     },
     {
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/israel-demolitions-in-negev-displace-400-palestinians?traffic_source=rss",
@@ -150,7 +248,7 @@
     },
     {
       "url": "https://www.theguardian.com/film/2026/oct/12/selma-blair-arrested-jfk-plane-incident",
-      "title": "Selma Blair arrested at JFK after she allegedly attacked flight attendants",
+      "title": "Selma Blair charged with assault of police officer and nurse after allegedly attacking flight attendants",
       "seendate": "20261012T200354Z",
       "domain": "theguardian.com",
       "sourcecountry": "United States"
@@ -180,104 +278,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/us-rep-ilhan-omars-home-searched-by-immigration-agents?traffic_source=rss",
       "title": "US Rep. Ilhan Omar’s home searched by immigration agents",
       "seendate": "20261012T193711Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/12/nato-says-will-do-anything-and-everything-if-alliance-is-attacked?traffic_source=rss",
-      "title": "NATO says will do ‘anything and everything’ if alliance is attacked",
-      "seendate": "20261012T192741Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/12/andy-burnham-britain-eu-brexit-reset",
-      "title": "Andy Burnham promises ‘serious dialogue’ over UK’s relationship with EU",
-      "seendate": "20261012T191511Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Belgium"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/12/pope-leo-to-undergo-surgery-to-remove-lung-nodule-in-rome?traffic_source=rss",
-      "title": "Pope Leo to undergo surgery to remove lung nodule in Rome",
-      "seendate": "20261012T190644Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Italy"
-    },
-    {
-      "url": "https://www.aljazeera.com/economy/2026/10/12/cuba-forges-ahead-with-renewable-energy-plans-amid-us-oil-blockade?traffic_source=rss",
-      "title": "Cuba forges ahead with renewable energy plans amid US oil blockade",
-      "seendate": "20261012T185240Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/12/uk-blames-iran-for-airbase-plot-sanctions-two-iranian-nationals?traffic_source=rss",
-      "title": "UK blames Iran for airbase plot, sanctions two Iranian nationals",
-      "seendate": "20261012T185118Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/crq5nzxv9q4yo?at_medium=RSS&at_campaign=rss",
-      "title": "Fridges in French supermarkets hit by cyber attack",
-      "seendate": "20261012T183132Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/uk-pm-says-raf-base-incidents-likely-coordinated-by-iran?traffic_source=rss",
-      "title": "UK PM says RAF base incidents ‘likely coordinated’ by Iran",
-      "seendate": "20261012T182442Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/12/egypts-press-union-chief-rejects-pressure-over-detained-journalists?traffic_source=rss",
-      "title": "Egypt’s press union chief rejects pressure over detained journalists",
-      "seendate": "20261012T182144Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Egypt"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/12/security-high-profile-public-figures-reviewed-ann-widdecombe",
-      "title": "Mahmood orders urgent security review after killing of Ann Widdecombe",
-      "seendate": "20261012T182023Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/12/uk-pm-andy-burnham-met-man-city-chairman-during-time-as-manchester-mayor?traffic_source=rss",
-      "title": "UK PM Andy Burnham met Man City chairman during time as Manchester mayor",
-      "seendate": "20261012T181510Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/12/stolen-renoir-paintings-found-behind-wall-in-france-following-arrests?traffic_source=rss",
-      "title": "Stolen Renoir paintings found behind wall in France following arrests",
-      "seendate": "20261012T181035Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/12/ethiopian-troops-capture-adwa-without-a-fight-witnesses-say?traffic_source=rss",
-      "title": "Ethiopian forces enter strategic Tigray town of Adwa, witnesses say",
-      "seendate": "20261012T180141Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/12/democrats-reaction-ilhan-omar-federal-raid-home-trump",
-      "title": "Democrats rebuke federal raid of Ilhan Omar’s home: ‘rogue abuse of power’",
-      "seendate": "20261012T175728Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/12/zohran-mamdani-orders-use-of-force-review-for-new-york-city-police?traffic_source=rss",
-      "title": "Zohran Mamdani orders use-of-force review for New York City police",
-      "seendate": "20261012T175006Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     }

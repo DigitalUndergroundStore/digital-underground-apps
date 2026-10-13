@@ -2088,7 +2088,7 @@
       "Stir well to incorporate the spices (3 minutes).",
       "Bring the soup to a boil, then reduce the heat to low (3 minutes).",
       "Cover the pot and let it simmer for about 1–1.5 hours, or until the meat is tender and the flavors have melded together (3 minutes).",
-      "Taste the soup and adjust the seasoning if needed."
+      "Taste the soup and adjust the seasoning if needed. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gambian_Caldo_%28Seafood_soup%29",
     "sourceName": "Wikibooks Cookbook",
@@ -2173,7 +2173,7 @@
       "Cover the skillet and let the chicken simmer in the marinade for about 20–25 minutes, or until the chicken is cooked through and tender (3 minutes).",
       "Occasionally, turn the chicken pieces and stir the onions to prevent burning and ensure even cooking (3 minutes).",
       "Once the chicken is cooked, transfer it to a serving dish and garnish with freshly chopped parsley or cilantro (3 minutes).",
-      "Serve the yassa poulet hot with steamed rice or couscous."
+      "Serve the yassa poulet hot with steamed rice or couscous. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gambian_Yassa_Poulet",
     "sourceName": "Wikibooks Cookbook",
@@ -3308,7 +3308,7 @@
   },
   {
     "id": "r497",
-    "name": "Guacamole I",
+    "name": "Guacamole",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -3838,7 +3838,7 @@
       "Rinse the beef caps in cold water (3 minutes).",
       "Turn them inside out and soak them in 2 quarts of cold water with the salt and vinegar for ½ hour (3 minutes).",
       "Drain them and rinse very well, inside and out (3 minutes).",
-      "Divide the meat mixture into three parts."
+      "Divide the meat mixture into three parts. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Haggis",
     "sourceName": "Wikibooks Cookbook",
@@ -4073,7 +4073,7 @@
       "If adding optional ingredients, either season the outside or mix into the beef before forming the patties (3 minutes).",
       "Overworking the beef will result in mushy meat that won't stick together, so only mix the minimum necessary and do so by hand (3 minutes).",
       "Let the burger rest for several minutes before serving to let the juices cool down and not burst out at first bite (3 minutes).",
-      "Serve each burger on a bun, optionally with relish, sliced pickles, ketchup, mayonnaise, mustard, ranch dressing, cheese, lettuce, tomatoes and/or onions."
+      "Serve each burger on a bun, optionally with relish, sliced pickles, ketchup, mayonnaise, mustard, ranch dressing, cheese, lettuce, tomatoes and/or onions. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hamburger",
     "sourceName": "Wikibooks Cookbook",
@@ -4182,7 +4182,7 @@
       "Reduce the heat to low, cover the pot with a lid, and let simmer for about 1 hour, or until the chicken is tender and cooked through (3 minutes).",
       "Taste and adjust the seasoning if needed (3 minutes).",
       "Serve the hot, garnished with freshly chopped parsley (3 minutes).",
-      "Accompany with bread or couscous to soak up the flavorful sauce."
+      "Accompany with bread or couscous to soak up the flavorful sauce. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Harissa_bil_Djaj_%28Libyan_Chicken_Harissa%29",
     "sourceName": "Wikibooks Cookbook",
@@ -5558,7 +5558,7 @@
       "When the onions are soft and starting to brown, stir in the crushed garlic and ginger (3 minutes).",
       "Then add the turmeric, chili, and coriander, and sauté over a medium heat (3 minutes).",
       "Add the chicken and sauté, stirring constantly until the chicken has turned white (3 minutes).",
-      "This doesn't take long, so make sure you don't overcook the chicken."
+      "This doesn't take long, so make sure you don't overcook the chicken. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Butter_Chicken_I",
     "sourceName": "Wikibooks Cookbook",
@@ -6518,7 +6518,7 @@
       "Add the chicken parts to the wok, and brown them (3 minutes).",
       "Add the shallots, lemongrass, kaffir lime leaves, and salam leaves to the wok, and sauté for another minute (3 minutes).",
       "Add the coconut milk and bring to a light boil (3 minutes).",
-      "Simmer on low heat for 10 minutes."
+      "Simmer on low heat for 10 minutes. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kari_Ayam_%28Indonesian_Chicken_Curry%29",
     "sourceName": "Wikibooks Cookbook",
@@ -6690,7 +6690,7 @@
       "Add the eggs, mustard, parsley, pepper, curry powder, and enough cream to make everything just slightly creamy (3 minutes).",
       "Mix it all up, gently and thoroughly (chopsticks are perfect for this) (3 minutes).",
       "Season with salt to taste (3 minutes).",
-      "Serve immediately or later—it keeps well."
+      "Serve immediately or later—it keeps well. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kedgeree_%28Rice_and_Smoked_Fish%29",
     "sourceName": "Wikibooks Cookbook",
@@ -6838,7 +6838,7 @@
     "steps": [
       "Combine the batter ingredients to make a smooth batter (3 minutes).",
       "Mix well with a whisk to ensure there are no lumps (3 minutes).",
-      "Heat a wok or pan over medium-low heat, and add 2–3 teaspoons of oil (3 minutes).",
+      "Heat a wok or pan over medium-low heat, and add 2–3 teaspoon of oil (3 minutes).",
       "Add the batter to the wok (3 minutes).",
       "Begin stirring the batter continuously to prevent the formation of lumps during cooking (3 minutes).",
       "Continue stirring until the mixture thickens almost to a dough (3 minutes).",
@@ -8231,7 +8231,7 @@
       "Simmer 6 minutes (3 minutes).",
       "Add chicken and green beans (3 minutes).",
       "Simmer for 10–15 minutes (3 minutes).",
-      "Remove from heat (3 minutes)."
+      "Remove from heat (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pennsylvania_Pot_Pie",
     "sourceName": "Wikibooks Cookbook",
@@ -9194,7 +9194,7 @@
       "Let simmer for about 10 minutes (3 minutes).",
       "Add the shrimp and cook for about 5 minutes (3 minutes).",
       "Adjust the stew with water, broth, and/or bouillon cubes if needed (3 minutes).",
-      "Enjoy with any complimentary dish of your choice."
+      "Enjoy with any complimentary dish of your choice. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Liberian_Chicken_Gravy",
     "sourceName": "Wikibooks Cookbook",
@@ -10492,7 +10492,7 @@
       "Add the paste and salt, then mix well (3 minutes).",
       "Add water according to the desired level of consistency and bring to a boil (3 minutes).",
       "Cover and cook on low level for about 25 minute(s) or until the chicken pieces are tender and fully cooked (3 minutes).",
-      "Garnish with finely-chopped coriander leaves."
+      "Garnish with finely-chopped coriander leaves. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Malvani_Chicken_Curry",
     "sourceName": "Wikibooks Cookbook",
@@ -11835,7 +11835,7 @@
       "Add the deboned fish, cover, and cook 5 minutes over medium heat (3 minutes).",
       "Stir in beef, and add salt to taste (3 minutes).",
       "Cook for 2 minutes (3 minutes).",
-      "Serve with tuwo shinkafa or tuwo masara."
+      "Serve with tuwo shinkafa or tuwo masara. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Miyan_Kuka_%28Baobab_Leaf_Soup%29",
     "sourceName": "Wikibooks Cookbook",
@@ -12286,7 +12286,7 @@
       "Stir to incorporate the spices (3 minutes).",
       "Bring the soup to a gentle boil, then reduce the heat to low and let it simmer for about 20–30 minutes, allowing the flavors to meld together (3 minutes).",
       "Remove the soup from the heat (3 minutes).",
-      "Optionally, squeeze the juice of a lemon into the soup and stir well to enhance the flavors."
+      "Optionally, squeeze the juice of a lemon into the soup and stir well to enhance the flavors. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Molokhia_%28Egyptian_Jute_Mallow_Soup%29",
     "sourceName": "Wikibooks Cookbook",
@@ -12467,7 +12467,7 @@
       "Drain excess water if necessary (3 minutes).",
       "Mash all the ingredients together until well combined (3 minutes).",
       "Season with salt to taste (3 minutes).",
-      "Serve hot with beef stew, chicken stew, or grilled meat."
+      "Serve hot with beef stew, chicken stew, or grilled meat. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mukimo",
     "sourceName": "Wikibooks Cookbook",
@@ -13658,7 +13658,7 @@
       "Keep warm (3 minutes).",
       "Toss onion with a little olive oil and sauté in same pan until lightly browned around edges (3 minutes).",
       "To serve, place a big scoop of steak into a hoagie roll (3 minutes).",
-      "Top with onion and torn cheese (3 minutes)."
+      "Top with onion and torn cheese (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Philly_Cheesesteak",
     "sourceName": "Wikibooks Cookbook",

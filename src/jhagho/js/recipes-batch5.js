@@ -110,7 +110,7 @@
   },
   {
     "id": "r650",
-    "name": "Oatmeal Chocolate Chip Cookies III",
+    "name": "Oatmeal Chocolate Chip Cookies",
     "minutes": 45,
     "servings": 12,
     "tags": [
@@ -187,7 +187,7 @@
   },
   {
     "id": "r651",
-    "name": "Oatmeal Cookies I",
+    "name": "Oatmeal Cookies",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -1086,7 +1086,7 @@
       "Richly brown the shanks on both of the cut sides, then place them in the roasting pan on top of the vegetables (3 minutes).",
       "Place the wine in the skillet and boil until reduced by one-half, deglazing the bottom of the pan (3 minutes).",
       "Pour this over the veal shanks (3 minutes).",
-      "Heat the beef broth to a boil in the skillet, whisking in the tomato paste and anchovies."
+      "Heat the beef broth to a boil in the skillet, whisking in the tomato paste and anchovies. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ossobuco_Alla_Milanese",
     "sourceName": "Wikibooks Cookbook",
@@ -2194,7 +2194,7 @@
       "Add water immediately to cover the meat (3 minutes).",
       "Add the sour cream and heavy cream to the gravy and stir (3 minutes).",
       "Add fresh chopped parsley on the top (3 minutes).",
-      "Serve with dumplings, rice or mashed potatoes and salad."
+      "Serve with dumplings, rice or mashed potatoes and salad. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Paprika_Chicken",
     "sourceName": "Wikibooks Cookbook",
@@ -2561,7 +2561,7 @@
       "Cook until the egg is browned on the bottom (3 minutes).",
       "Flip the egg over to cook on the other side (3 minutes).",
       "Place a ball of the fried rice mixture in the center of the omelette (3 minutes).",
-      "Fold up the 4 edges of the omelette to enclose the rice."
+      "Fold up the 4 edges of the omelette to enclose the rice. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pattaya_Fried_Rice",
     "sourceName": "Wikibooks Cookbook",
@@ -3349,7 +3349,7 @@
   },
   {
     "id": "r695",
-    "name": "Pierogi I",
+    "name": "Pierogi",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -4300,7 +4300,7 @@
       "In a casserole pan add the parboiled spare ribs, garlic bulb, ginseng root, shitake mushrooms, reserved liquid and additional water (to cover the meat) (3 minutes).",
       "Wrap cinnamon, star anise, white and black peppercorns in cheesecloth, tie with string, and add to the pan (3 minutes).",
       "Gradually bring to a boil, then cover and reduce heat to simmer until pork is very tender (about 45–60 minutes); occasionally skim off fat from the surface (3 minutes).",
-      "When the meat is almost falling off the bones; discard spice bag, season with salt and pepper and add dark soy sauce and sugar."
+      "When the meat is almost falling off the bones; discard spice bag, season with salt and pepper and add dark soy sauce and sugar. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pork_Spare_Rib_Soup_%28Bah_Kut_Teh%29",
     "sourceName": "Wikibooks Cookbook",
@@ -4722,7 +4722,7 @@
       "Cook over low heat stirring constantly until warmed through (3 minutes).",
       "Add the potato and carrot mixture (3 minutes).",
       "Stir in the parsley and thyme and heat through (3 minutes).",
-      "Serve hot."
+      "Serve hot. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Potato_Soup",
     "sourceName": "Wikibooks Cookbook",
@@ -5118,7 +5118,7 @@
   },
   {
     "id": "r721",
-    "name": "Pumpkin Bread I",
+    "name": "Pumpkin Bread",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -5828,7 +5828,7 @@
       }
     ],
     "steps": [
-      "Pre-heat an oven to 375°F (190°C) (3 minutes).",
+      "preheat an oven to 375°F (190°C) (3 minutes).",
       "Butter a muffin pan or cupcake pan (3 minutes).",
       "Place the dry ingredients in one bowl, and the wet ingredients in a different bowl (3 minutes).",
       "Mix the ingredients in each bowl, then combine the mixtures to make a batter (3 minutes).",
@@ -6046,7 +6046,7 @@
   },
   {
     "id": "r735",
-    "name": "Ratatouille I",
+    "name": "Ratatouille",
     "minutes": 45,
     "servings": 3,
     "tags": [
@@ -6448,7 +6448,7 @@
   },
   {
     "id": "r741",
-    "name": "Rhubarb Crumble I",
+    "name": "Rhubarb Crumble",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -7331,7 +7331,7 @@
   },
   {
     "id": "r754",
-    "name": "Roasted Brined Turkey I",
+    "name": "Roasted Brined Turkey",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -7382,7 +7382,7 @@
       "Transfer the brine to a 5-US-gallon (19 L) bucket, and stir in the ice water (3 minutes).",
       "Remove the neck and giblets from turkey, and place the turkey in the bucket of brine (3 minutes).",
       "If the brine won't cover turkey, add a little more water (3 minutes).",
-      "Chill the turkey in the brine for 6–24 hours."
+      "Chill the turkey in the brine for 6–24 hours. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roasted_Brined_Turkey_I",
     "sourceName": "Wikibooks Cookbook",
@@ -8886,7 +8886,7 @@
       "Add salt, chicken broth powder, and sugar to taste (3 minutes).",
       "Put in the crackers and boiled chicken pieces, then stir until cooked (3 minutes).",
       "Add the instant noodles, and stir again until everything is well-cooked (3 minutes).",
-      "Pour it into a bowl according to your preferred portion."
+      "Pour it into a bowl according to your preferred portion. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Seblak",
     "sourceName": "Wikibooks Cookbook",
@@ -9268,7 +9268,7 @@
       "Meanwhile: (3 minutes).",
       "Peel, chop and boil the potatoes for 20 minutes until cooked (3 minutes).",
       "Once the meat is cooked, skim off the excess fat, then reduce the savoury mince until the liquid is level with the mince and onions (3 minutes).",
-      "Drain the potatoes until completely dry."
+      "Drain the potatoes until completely dry. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shepherd%27s_Pie_I",
     "sourceName": "Wikibooks Cookbook",
@@ -9735,7 +9735,7 @@
       "Cut up browned chicken breasts, add to gumbo, and cook until done (3 minutes).",
       "Slice up sausage and add ½ hour after the chicken (3 minutes).",
       "Season to taste with cayenne and salt (3 minutes).",
-      "Serve in a bowl with a little rice and green onions on top (3 minutes)."
+      "Serve in a bowl with a little rice and green onions on top (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_and_Andouille_Sausage_Gumbo",
     "sourceName": "Wikibooks Cookbook",
@@ -10252,7 +10252,7 @@
   },
   {
     "id": "r794",
-    "name": "Snickerdoodles IV",
+    "name": "Snickerdoodles",
     "minutes": 60,
     "servings": 12,
     "tags": [
@@ -11733,7 +11733,7 @@
       "Wring out a cloth in hot water, flour it and tie up the pudding; put it int boiling water and let it boil for at least 4 hours (3 minutes).",
       "If the water diminishes, always replenish with hot water from a jug, as the pudding should be kept covered all the time, and not allowed to stop boiling (3 minutes).",
       "When the cloth is removed, cut out a round piece in the top of the crust, to prevent the pudding bursting, and send it to table in the basin, either in an ornamental dish or with a napkin pinned round it (3 minutes).",
-      "Serve quickly."
+      "Serve quickly. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Steak_and_Kidney_Pudding",
     "sourceName": "Wikibooks Cookbook",
@@ -12015,7 +12015,7 @@
   },
   {
     "id": "r819",
-    "name": "Stracciatella I",
+    "name": "Stracciatella",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -12544,7 +12544,7 @@
       "Stir until the duck meat changes color (3 minutes).",
       "Add the rice, and then the soy sauce, habanero, black pepper, and salt (3 minutes).",
       "Stir until well-mixed (3 minutes).",
-      "Serve hot (3 minutes)."
+      "Serve hot (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Duck_Fried_Rice",
     "sourceName": "Wikibooks Cookbook",

@@ -75,7 +75,7 @@
       "Check for seasoning, adding more fish sauce or soy sauce if needed (3 minutes).",
       "Leave the curry to sit for a few minutes so the sauce becomes creamier (3 minutes).",
       "You will also taste the true flavours of the curry paste ingredients when it's slightly cooler (3 minutes).",
-      "Serve with lots of fragrant Thai jasmine rice."
+      "Serve with lots of fragrant Thai jasmine rice. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Thai_Green_Curry_with_Chicken",
     "sourceName": "Wikibooks Cookbook",
@@ -523,7 +523,7 @@
   },
   {
     "id": "r856",
-    "name": "Tofu Scramble I",
+    "name": "Tofu Scramble",
     "minutes": 20,
     "servings": 2,
     "tags": [
@@ -780,7 +780,7 @@
       "Cut meat into small pieces and add to broth (3 minutes).",
       "Add salt and water to taste (3 minutes).",
       "Cover and let simmer for at least 3 hours (3 minutes).",
-      "It tastes best when cooked all day (3 minutes)."
+      "It tastes best when cooked all day (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Booyah_%28Chicken_Vegetable_Stew%29",
     "sourceName": "Wikibooks Cookbook",
@@ -1267,7 +1267,7 @@
       "Place 2–3 tablespoons of filling near the base of each cabbage leaf (3 minutes).",
       "Fold in the sides and roll up tightly to enclose the filling (3 minutes).",
       "Repeat with the remaining filling and cabbage leaves (3 minutes).",
-      "Prepare the sauce by mixing the crushed tomatoes, tomato paste, canola oil, paprika, and apple cider vinegar in a bowl or large measuring cup."
+      "Prepare the sauce by mixing the crushed tomatoes, tomato paste, canola oil, paprika, and apple cider vinegar in a bowl or large measuring cup. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Turkey_%26_Barley_Cabbage_Rolls_with_Fresh_Dill",
     "sourceName": "Wikibooks Cookbook",
@@ -2279,7 +2279,7 @@
       "Take the steamer off the heat after 15 minutes, and rinse the contents in cold water to remove any remaining undesirable particles and any bitterness that the yam may occasionally have (3 minutes).",
       "Any clumps that may have developed are also broken up by the water (3 minutes).",
       "It might require two washes (3 minutes).",
-      "After letting it drain for a few minutes, toss with 3 teaspoons of oil and your preferred amount of salt (3 minutes).",
+      "After letting it drain for a few minutes, toss with 3 teaspoon of oil and your preferred amount of salt (3 minutes).",
       "Place the mixture in the steamer back over the boiling water."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Wasawasa_%28Yam_Couscous%29",
@@ -2489,7 +2489,7 @@
   },
   {
     "id": "r883",
-    "name": "Welsh Fruit Bread (Bara Brith) I",
+    "name": "Welsh Fruit Bread (Bara Brith)",
     "minutes": 45,
     "servings": 2,
     "tags": [
@@ -2939,7 +2939,7 @@
       "To the pot, add the onions and remaining marinade (3 minutes).",
       "Cook on medium heat for 5 minutes until browned (3 minutes).",
       "Return the browned chicken pieces to the sweet caramelized onions (3 minutes).",
-      "Add the chicken broth, and simmer for 20 minutes over medium heat until the chicken is fully cooked."
+      "Add the chicken broth, and simmer for 20 minutes over medium heat until the chicken is fully cooked. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Yassa_Poulet_%28Senegalese_Chicken%29",
     "sourceName": "Wikibooks Cookbook",
@@ -3546,7 +3546,7 @@
       "If you have a mallet, cover the slices of veal in foil and bash away at them until they are as thin as possible! (3 minutes).",
       "Take the sauce and pour it over the veal so that the veal becomes completely covered in the sauce (3 minutes).",
       "Not too thick, not too thin (3 minutes).",
-      "Decorate with capers (3 minutes)."
+      "Decorate with capers (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Vitello_Tonnato_%28Veal_with_Tuna_Sauce%29",
     "sourceName": "Wikibooks Cookbook",
@@ -3810,7 +3810,7 @@
       "Add ½–⅓ cups (120-80 ml) of water to the sauté pan and continue stirring (3 minutes).",
       "When the potatoes are cooked, add the prepared sour cucumber preparation to the stock pot and mix them well (3 minutes).",
       "Boil for 3–5 minutes and season the soup to taste (3 minutes).",
-      "If you like, mix some soup with cream or sour cream in a small cup and add it to the pan, or a smaller amount to each individual serving."
+      "If you like, mix some soup with cream or sour cream in a small cup and add it to the pan, or a smaller amount to each individual serving. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Zupa_Og%C3%B3rkowa_%28Polish_Cucumber_Soup%29",
     "sourceName": "Wikibooks Cookbook",
@@ -4615,7 +4615,7 @@
       "Blend for 1 minute, or until thoroughly combined and mixture is smooth (3 minutes).",
       "Pour sauce into a large bowl (3 minutes).",
       "Use when grilling chicken or other poultry or meat; brush lightly over the chicken (or meat) during the last few minutes of grilling (3 minutes).",
-      "This sauce is also great for dipping; set some sauce aside for passing at the table (3 minutes)."
+      "This sauce is also great for dipping; set some sauce aside for passing at the table (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Alabama_White_Sauce",
     "sourceName": "Wikibooks Cookbook",
@@ -5384,7 +5384,7 @@
       "When the onions are soft and starting to brown, stir in the crushed garlic and ginger (3 minutes).",
       "Then add the turmeric, chili, and coriander, and sauté over a medium heat (3 minutes).",
       "Add the chicken and sauté, stirring constantly until the chicken has turned white (3 minutes).",
-      "This doesn't take long, so make sure you don't overcook the chicken (3 minutes)."
+      "This doesn't take long, so make sure you don't overcook the chicken (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Butter_Chicken_I",
     "sourceName": "Wikibooks Cookbook",
@@ -7112,7 +7112,7 @@
       "In the last minute of cooking, lay a slice of cheese on top of each patty (3 minutes).",
       "Cover and let the cheese melt slightly (3 minutes).",
       "Lightly toast the hamburger buns (3 minutes).",
-      "Sandwich the patties in the buns, topping with lettuce, tomato, and ketchup as desired."
+      "Sandwich the patties in the buns, topping with lettuce, tomato, and ketchup as desired. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beef_Burgers_with_Onion",
     "sourceName": "Wikibooks Cookbook",
@@ -7239,7 +7239,7 @@
       "Immediately cover and reduce heat to a minimum and allow to cook for 10 minutes (3 minutes).",
       "Turn off heat and allow to rest for 10 minutes (3 minutes).",
       "Add lemon juice to the rice (3 minutes).",
-      "Fluff with a spoon or fork."
+      "Fluff with a spoon or fork. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beef_Curry",
     "sourceName": "Wikibooks Cookbook",
@@ -7638,7 +7638,7 @@
       "Once cooled, shred the chicken into bite-sized pieces (3 minutes).",
       "Return the shredded chicken to the pot with the remaining sauce (3 minutes).",
       "Stir well to coat the chicken with the flavorful sauce (3 minutes).",
-      "Adjust the seasoning if needed (3 minutes)."
+      "Adjust the seasoning if needed (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Dorowot_Fitfit_%28Ethiopian_Chicken_Stew_Salad%29",
     "sourceName": "Wikibooks Cookbook",
@@ -7779,7 +7779,7 @@
       "Stir in the remaining vegetable stock, diced tomatoes with their liquid, and crushed red pepper flakes; simmer for 30 minutes, stirring frequently (3 minutes).",
       "Stir in the cabbage, sweet potato, carrot, and turnip (3 minutes).",
       "Simmer, stirring, until the vegetables become soft (about 30 minutes) (3 minutes).",
-      "Stir in the okra and chicken, and simmer for about 30 additional minutes (3 minutes)."
+      "Stir in the okra and chicken, and simmer for about 30 additional minutes (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Zimbabwean_Chicken_and_Vegetable_Soup",
     "sourceName": "Wikibooks Cookbook",
@@ -7889,7 +7889,7 @@
       "Add yogurt, tomatoes, spices, fried onions, whole green chillies, mint, 2 elachi (cardamom) pods, and 1 piece of tuj (cinnamon) to the chicken (3 minutes).",
       "Allow to marinate for at least 1 hour (3 minutes).",
       "Meanwhile, boil masoor in salted water until done (3 minutes).",
-      "Drain off in colander."
+      "Drain off in colander. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Biryani",
     "sourceName": "Wikibooks Cookbook",
@@ -8425,7 +8425,7 @@
       "Remove the chicken and place in a serving dish (3 minutes).",
       "Garnish with parsley (3 minutes).",
       "Strain the broth (3 minutes).",
-      "Serve the chicken with clarified butter and the hot broth on the side."
+      "Serve the chicken with clarified butter and the hot broth on the side. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Boiled_Chicken_with_Broth",
     "sourceName": "Wikibooks Cookbook",
@@ -9113,7 +9113,7 @@
       "Place the ground beef back on the skillet (3 minutes).",
       "While on medium heat mix in the ketchup, barbecue sauce, garlic powder, and chili powder in any order (3 minutes).",
       "Simmer for 20 minutes (3 minutes).",
-      "Serve over sliced, toasted hamburger buns (3 minutes)."
+      "Serve over sliced, toasted hamburger buns (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sloppy_Joes",
     "sourceName": "Wikibooks Cookbook",
@@ -10649,7 +10649,7 @@
       "Slowly add half and half, stirring continuously (3 minutes).",
       "Add all spices and seasonings to sauce (3 minutes).",
       "Stir in reserved juices and keep stirring (3 minutes).",
-      "Reduce heat and slowly stir in Parmesan cheese."
+      "Reduce heat and slowly stir in Parmesan cheese. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Alfredo",
     "sourceName": "Wikibooks Cookbook",
@@ -10767,7 +10767,7 @@
       "While meat is cooking, chop/julienne vegetables peppers and onion) (3 minutes).",
       "When meat is completely cooked, add vegetables, stirring frequently so that all are evenly cooked (3 minutes).",
       "Remove from heat when vegetables are soft (3 minutes).",
-      "Serve with tortilla shells and toppings such as cheese, sour cream, lettuce, tomato, onions, and/or guacamole."
+      "Serve with tortilla shells and toppings such as cheese, sour cream, lettuce, tomato, onions, and/or guacamole. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Fajitas",
     "sourceName": "Wikibooks Cookbook",
@@ -10847,7 +10847,7 @@
       "Cook until the chicken changes color from pink to white (3 minutes).",
       "Add the rice, then the oyster sauce, Worcestershire sauce, salt, and pepper (3 minutes).",
       "Continue to cook until well-combined (3 minutes).",
-      "Serve hot with the sides."
+      "Serve hot with the sides. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Fried_Rice",
     "sourceName": "Wikibooks Cookbook",
@@ -11121,7 +11121,7 @@
       "Fold tortillas over, forming a semicircle, to cover the mixture (3 minutes).",
       "Heat a large sauté pan or skillet over medium-high heat (3 minutes).",
       "Add just enough butter to make a very thin layer on the bottom of the pan (3 minutes).",
-      "Cook the quesadillas in the butter until cheese is melted and tortillas are browned on both sides, about 3 minutes per side."
+      "Cook the quesadillas in the butter until cheese is melted and tortillas are browned on both sides, about 3 minutes per side. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Quesadilla",
     "sourceName": "Wikibooks Cookbook",
@@ -11179,7 +11179,7 @@
       "You can also park it overnight, but in this case you should reduce the salt to ⅓ cup (3 minutes).",
       "Shortly before you want to cook the chicken, remove it from the buttermilk and drain (3 minutes).",
       "Roll it around in flour so that it is well covered in flour (3 minutes).",
-      "Shake off the excess flour (3 minutes)."
+      "Shake off the excess flour (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Chicken",
     "sourceName": "Wikibooks Cookbook",
@@ -11187,7 +11187,7 @@
   },
   {
     "id": "r1007",
-    "name": "Chicken Soup I",
+    "name": "Chicken Soup",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -11244,7 +11244,7 @@
       "Add carrots, celery, dill, and stock to the pot (3 minutes).",
       "Adjust heat to bring back to a simmer (3 minutes).",
       "Simmer for at least 30 minutes (an hour is better, hours even better) to cook the chicken and mix the flavors (3 minutes).",
-      "Lightly salt to taste; individual diners can add more salt to their bowls if desired."
+      "Lightly salt to taste; individual diners can add more salt to their bowls if desired. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Soup_I",
     "sourceName": "Wikibooks Cookbook",
@@ -11308,7 +11308,7 @@
       "Skim the fat that's consolidated by the ice (3 minutes).",
       "Add the rest of the ingredients, simmer for 40 minutes, then rest for 10 minutes (3 minutes).",
       "Gently strain stock so as to not push impurities through mesh (3 minutes).",
-      "Bring back to heat and cook down to 4 ½ quarts."
+      "Bring back to heat and cook down to 4 ½ quarts. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Soup_with_Dumplings",
     "sourceName": "Wikibooks Cookbook",
@@ -11419,7 +11419,7 @@
       "Reduce heat to medium, and add the onion, garlic, thyme, basil, and rosemary (3 minutes).",
       "Sauté until onions begin to brown, about 5 minutes (3 minutes).",
       "Increase heat to high and add broth and water (3 minutes).",
-      "Bring the broth to a simmer."
+      "Bring the broth to a simmer. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Soup_with_Pasta",
     "sourceName": "Wikibooks Cookbook",
@@ -12367,7 +12367,7 @@
       "If using skinless chicken parts, add chicken broth (3 minutes).",
       "Add butter, evaporated milk, and enough milk to fill the pot (3 minutes).",
       "Season with salt and pepper to taste, and stir well (3 minutes).",
-      "Serve in bowls, adding hot sauce as desired, with crumbled saltines mixed in (3 minutes)."
+      "Serve in bowls, adding hot sauce as desired, with crumbled saltines mixed in (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Mull",
     "sourceName": "Wikibooks Cookbook",
@@ -13017,7 +13017,7 @@
       "The first dredging absorbs the buttermilk marinade (3 minutes).",
       "The second dredging gives a seasoned flour outer coat (3 minutes).",
       "Drain the chicken on absorbent paper or cloth (3 minutes).",
-      "If you are not serving the chicken immediately, place it in a lightly-warmed oven, uncovered, separately (not stacked) (3 minutes)."
+      "If you are not serving the chicken immediately, place it in a lightly-warmed oven, uncovered, separately (not stacked) (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Buttermilk_Fried_Chicken_with_Pan_Gravy",
     "sourceName": "Wikibooks Cookbook",
@@ -13450,7 +13450,7 @@
   },
   {
     "id": "r1038",
-    "name": "Coq au Vin I",
+    "name": "Coq au Vin",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -13528,7 +13528,7 @@
       "Brown onions and carrots (3 minutes).",
       "Put chicken into large casserole on medium-high heat along with onions, carrots and mushrooms (3 minutes).",
       "Combine wine, garlic, and basil; pour over chicken (3 minutes).",
-      "Cover the casserole, cook until chicken is ready (1–1.5 hours), stirring occasionally."
+      "Cover the casserole, cook until chicken is ready (1–1.5 hours), stirring occasionally. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coq_au_Vin_I",
     "sourceName": "Wikibooks Cookbook",

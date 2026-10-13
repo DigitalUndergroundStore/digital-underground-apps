@@ -277,7 +277,7 @@
       "Slice chicken; sear in 1 tbsp butter 8 minutes until cooked through.",
       "Melt remaining butter; sauté garlic 30 seconds.",
       "Add cream and simmer 3 minutes; stir in Parmesan until silky.",
-      "Toss pasta, chicken, pepper, salt, and splash of pasta water; garnish with parsley."
+      "Toss pasta, chicken, pepper, salt, and splash of pasta water; garnish with parsley. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -674,7 +674,7 @@
       "Stir yogurt with tikka paste and salt.",
       "Layer onion, chicken, tomatoes, and aromatics in the slow cooker.",
       "Spoon yogurt mixture over chicken.",
-      "Cook on low 5 hours; garnish with cilantro and serve with rice."
+      "Cook on low 5 hours; garnish with cilantro and serve with rice. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -920,7 +920,7 @@
       "Brush with half the melted butter; grill over medium-high heat 10 minutes, turning.",
       "Mix remaining butter with lime zest, chili, and salt.",
       "Drizzle lime butter over hot corn.",
-      "Finish with cilantro and serve immediately."
+      "Finish with cilantro and serve immediately. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -1299,7 +1299,7 @@
       "Simmer chicken in broth with vegetables, bay, thyme, and salt 18 minutes.",
       "Remove chicken; shred and return to pot.",
       "Add noodles; cook 8 minutes until tender.",
-      "Discard bay leaves and serve hot."
+      "Discard bay leaves and serve hot. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -1809,7 +1809,7 @@
       "Sear steak in oil over high heat 4 minutes.",
       "Add onion and pepper; cook 5 minutes until soft.",
       "Top with cheese; cover 2 minutes to melt.",
-      "Stuff rolls or serve skillet-style immediately."
+      "Stuff rolls or serve skillet-style immediately. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -2467,7 +2467,7 @@
       "Sear chicken in oil 8 minutes until browned.",
       "Whisk juice, soy, honey, cornstarch, and garlic.",
       "Pour sauce over chicken; simmer 6 minutes until glossy.",
-      "Garnish with scallions and serve over rice."
+      "Garnish with scallions and serve over rice. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -2925,7 +2925,7 @@
       "Slice rolls and tomatoes (3 minutes).",
       "Spread mayo on rolls; layer turkey, cheese, bacon, lettuce, and tomato.",
       "Season with salt.",
-      "Cut in half and pack for lunch."
+      "Cut in half and pack for lunch. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {

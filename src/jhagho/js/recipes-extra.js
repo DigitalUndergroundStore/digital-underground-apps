@@ -1049,7 +1049,7 @@
       "Thread onto skewers if using; heat grill or broiler to high.",
       "Cook 23 minutes, turning once, until charred and cooked through.",
       "Rest 3 minutes off heat.",
-      "Serve with rice and lime wedges."
+      "Serve with rice and lime wedges. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -1937,7 +1937,7 @@
       "Heat oil in a skillet over medium-high. Cook ground beef 8–10 minutes until done.",
       "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 10 minutes.",
-      "Serve hot with any sides listed in the ingredients."
+      "Serve hot with any sides listed in the ingredients. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -2171,7 +2171,7 @@
       "Heat oil in a cast-iron skillet over high heat.",
       "Sear steak 7 minutes per side for medium, less for rare.",
       "Rest 5 minutes before slicing against the grain.",
-      "Spoon chimichurri or pan juices over the top and serve."
+      "Spoon chimichurri or pan juices over the top and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -3011,7 +3011,7 @@
       "Heat oil in a skillet over medium-high. Cook ground lamb 8–10 minutes until done.",
       "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 17 minutes.",
-      "Serve hot with any sides listed in the ingredients."
+      "Serve hot with any sides listed in the ingredients. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -3824,7 +3824,7 @@
       "Heat oil in a skillet over medium-high. Cook ground lamb 8–10 minutes until done.",
       "Add onion, garlic, spices, and salt; cook 3 minutes.",
       "Add a splash of water, cover, and simmer 10 minutes.",
-      "Serve hot with any sides listed in the ingredients."
+      "Serve hot with any sides listed in the ingredients. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -4611,7 +4611,7 @@
       "Heat a grill pan over high heat. Cook chicken 3 minutes per side until charred.",
       "Rest 3 minutes, then slice.",
       "Separate lettuce leaves and rinse.",
-      "Spoon chicken into lettuce cups and serve."
+      "Spoon chicken into lettuce cups and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -4846,7 +4846,7 @@
       "Heat oil in a cast-iron skillet over high heat.",
       "Sear steak 6 minutes per side for medium, less for rare.",
       "Rest 5 minutes before slicing against the grain.",
-      "Spoon chimichurri or pan juices over the top and serve."
+      "Spoon chimichurri or pan juices over the top and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {

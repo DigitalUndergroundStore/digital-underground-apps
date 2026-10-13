@@ -391,8 +391,8 @@
   },
   {
     "id": "r455",
-    "name": "French Onioned Chicken",
-    "minutes": 15,
+    "name": "Ginger Peach Glazed BBQ Ribs",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
@@ -401,34 +401,53 @@
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 2,
         "unit": "",
-        "item": "Egg, beaten"
+        "item": "slabs St. Louis style/cut pork spareribs"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "Barbecue Rub"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "minced fresh ginger"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "peach preserves"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "cider vinegar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Boneless chicken breast"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "French-fried onions, crushed"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Paprika (optional)"
+        "item": "Dry applewood chunks"
       }
     ],
     "steps": [
-      "Preheat the oven to 200°C (3 minutes).",
-      "Dip the chicken into the beaten, then dip it into the crushed onions (3 minutes).",
-      "Make sure the chicken is well-coated, then transfer to parchment-lined baking sheet (3 minutes).",
-      "Bake the chicken for 20 minutes or until it's no longer pink on the inside (3 minutes).",
-      "Serve hot (3 minutes)."
+      "Season ribs with the Barbecue Rub (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Place applewood in the firebox of a 250°F smoker or in the coal area of a 250°F charcoal grill set for indirect heat (3 minutes).",
+      "Combine remaining ingredients and bring to a boil over high heat until reduced by ⅓ (3 minutes).",
+      "Cover tightly and set aside (3 minutes).",
+      "Place ribs in smoker/on top of grill grate and cook, brushing often with preserve mixture, for 5–6 hours (3 minutes).",
+      "Brush ribs generously with preserve mixture and place on a medium high grill and cook, repeatedly brushing side facing you, until well browned (3 minutes).",
+      "Repeat one more time (3 minutes).",
+      "Remove and let rest 10 minutes; slice into 1-rib portions and serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:French_Onioned_Chicken",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ginger_Peach_Glazed_BBQ_Ribs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -730,7 +749,7 @@
   },
   {
     "id": "r461",
-    "name": "Fried Eggs",
+    "name": "Cornbread Stuffed Zucchini",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -741,34 +760,61 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "butter or olive oil"
+        "qty": 4,
+        "unit": "",
+        "item": "small zucchini, halved lengthwise"
       },
       {
         "qty": 2,
-        "unit": "",
-        "item": "–3 large eggs, depending on appetite"
+        "unit": "cup",
+        "item": "crumbled cornbread, divided"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "½ tsp salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper to taste (optional)"
+        "item": "½ tsp freshly-ground black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup cream cheese"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "eggs, separated"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ cups grated Monterey Jack cheese"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "⅛ tsp cream of tartar"
       }
     ],
     "steps": [
-      "Melt the butter in the pan over low to medium heat (3 minutes).",
-      "Crack open the eggs into the pan and let fry until the yolks begin to harden at the edges (indicated by a lightening in the yolk color) (3 minutes).",
-      "Using the spatula, flip the eggs over and allow to cook 10 seconds for over-easy, 30 seconds for over-medium, or up to 1 minute for over-hard (3 minutes).",
-      "Add salt and pepper to taste, and serve (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Scoop out the column of seeds in zucchini halves using a teaspoon or a grapefruit spoon (3 minutes).",
+      "Set aside (3 minutes).",
+      "Combine 1 cup cornbread with salt, pepper, egg yolks, and cream cheese (3 minutes).",
+      "Set aside (3 minutes).",
+      "Whip egg whites to stiff peaks with cream of tartar (3 minutes).",
+      "Stir in ¼ of the egg whites (3 minutes).",
+      "Gently fold in remaining egg whites (3 minutes).",
+      "Place enough mixture to fill the column in the zucchini (3 minutes).",
+      "Combine remaining cornbread and Monterrey Jack cheese (3 minutes).",
+      "Sprinkle over top of each zucchini half (3 minutes).",
+      "Bake in a 400°F oven for 30–35 minutes or until browned and bubbly on top (3 minutes).",
+      "Serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Eggs",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cornbread_Stuffed_Zucchini",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1015,7 +1061,7 @@
   },
   {
     "id": "r466",
-    "name": "Fried Unripe Plantain (Nigerian Green Plantain)",
+    "name": "American Marinara Sauce",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -1028,12 +1074,62 @@
       {
         "qty": null,
         "unit": "",
-        "item": "Unripe plantain, peeled"
+        "item": "Extra-virgin olive oil (preferably Italian, if not Italian then Tunisian, French, and Greek are advisable)"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "almond oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Ground pepper"
+        "item": "½ head of garlic (or less), minced"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dried oregano"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dried thyme"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dried red chile flakes"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "(240 g) fresh basil, finely torn or roughly chopped and reserved"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "medium to large onions (preferably red or yellow), diced"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "yellow bell pepper, cut into strips"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large can plus 1 small can whole tomatoes, crushed by hand with juices"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large can crushed tomatoes"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (120 ml), plus more as needed, white table wine"
       },
       {
         "qty": null,
@@ -1043,17 +1139,27 @@
       {
         "qty": null,
         "unit": "",
-        "item": "Vegetable oil"
+        "item": "Ground black pepper to taste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Freshly-grated Parmigiano-Reggiano to taste"
       }
     ],
     "steps": [
-      "Slice unripe plantain into small rounds, then season with ground pepper and salt to taste (3 minutes).",
-      "Heat enough vegetable oil in a pan for deep-frying (3 minutes).",
-      "Deep-fry plantain, ensuring all sides are golden and cooked (3 minutes).",
-      "Remove from oil, and serve hot with fried yam and egg sauce (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Heat the olive oil and almond oil in an oversized pan (3 minutes).",
+      "Add onion, garlic, and bell pepper, and sweat (3 minutes).",
+      "Deglaze pan with white wine, then add tomatoes (3 minutes).",
+      "Grind dried herbs and red pepper flakes with a mortar and pestle (3 minutes).",
+      "Add this mixture and the unreserved fresh basil to the pan (3 minutes).",
+      "Simmer for an hour (or more if necessary), stirring occasionally (3 minutes).",
+      "Add wine until desired consistency is achieved (3 minutes).",
+      "Add salt and pepper to taste (3 minutes).",
+      "Add al dente pasta to pan with sauce and combine using tongs (3 minutes).",
+      "Plate and garnish with fresh basil and Parmigiano-Reggiano (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Unripe_Plantain_%28Nigerian_Green_Plantain%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:American_Marinara_Sauce_II",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2075,46 +2181,78 @@
   },
   {
     "id": "r481",
-    "name": "Garlic Croutons I",
+    "name": "Tangy Lemon Battered Fried Chicken",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "slice",
-        "item": "day-old French bread, cubed"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "granulated garlic"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground ginger"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
       },
       {
         "qty": 2,
-        "unit": "clove",
-        "item": "garlic, minced"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "olive oil"
+        "unit": "",
+        "item": "ea. chicken thighs, legs, and boneless breasts"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "Freshly-squeezed lemon juice"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cornmeal as needed for dredging"
+      },
+      {
+        "qty": 16,
+        "unit": "oz",
+        "item": "vegetable shortening"
       }
     ],
     "steps": [
-      "Pour the olive oil into a shallow bowl over the garlic and let it soak (3 minutes).",
-      "Soaking it longer will yield more garlic flavor (3 minutes).",
-      "Preheat the oven to 350 °F (~180 °C) (3 minutes).",
-      "Strain the olive oil into a frying pan and fry the bread cubes in it, tossing to coat with oil (3 minutes).",
-      "Spread the bread cubes on a baking sheet and sprinkle with salt (3 minutes).",
-      "Bake for 10 minutes or until crispy and dry."
+      "Combine paprika, salt, pepper, granulated garlic, ginger, and cayenne (3 minutes).",
+      "Moisten chicken with lemon juice and coat with seasoning mixture (3 minutes).",
+      "Dredge chicken in cornmeal and let rest 2–3 minutes only (3 minutes).",
+      "Melt shortening in a large cast iron skillet; heat to 350°F, watching carefully to prevent burning (3 minutes).",
+      "Place legs and breasts around the edges, then place thighs in the center (3 minutes).",
+      "Fry for 12 minutes, then flip to the other side and fry another 12 minutes (3 minutes).",
+      "Drain on a cooling or oven rack (3 minutes).",
+      "Please don't use paper towels, which will make your chicken greasy (3 minutes).",
+      "Sprinkle with black pepper; serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Garlic_Croutons_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tangy_Lemon_Battered_Fried_Chicken",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2189,81 +2327,76 @@
   },
   {
     "id": "r483",
-    "name": "Thai Green Curry Paste",
+    "name": "Macaroni and Cheese (Vegan)",
     "minutes": 45,
-    "servings": 3,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
       "vegetarian",
-      "collection-indian"
+      "collection-italian"
     ],
     "ingredients": [
       {
-        "qty": 16,
-        "unit": "g",
-        "item": "reen piri-piri chilli-peppers, chopped"
+        "qty": 1,
+        "unit": "lb",
+        "item": "dry macaroni pasta"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup margarine"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup flour"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "nutritional yeast flakes"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "½ cups water or rice milk, boiling"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp garlic powder"
+      },
+      {
+        "qty": 1,
+        "unit": "pinch",
+        "item": "turmeric"
       },
       {
         "qty": 2,
-        "unit": "",
-        "item": "branches lemongrass, smashed"
-      },
-      {
-        "qty": 3,
-        "unit": "clove",
-        "item": "garlic, pressed"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "scallions, chopped"
-      },
-      {
-        "qty": 1,
         "unit": "tbsp",
-        "item": "grated ginger root"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "coriander seed"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "caraway seed"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "whole cloves"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "nutmeg"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "trassi"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "oil"
+        "item": "soy sauce"
       }
     ],
     "steps": [
-      "Grind the green chilli peppers, garlic, lemongrass, and scallions in a mortar (3 minutes).",
-      "Add the remaining ingredients except for the oil, and keep grinding to a fluid paste (3 minutes).",
-      "Mix in the oil (3 minutes).",
-      "Store in an airtight container in the refrigerator for up to 1 month (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Bring 4 quarts of water to a boil, add salt to taste, and add the macaroni (3 minutes).",
+      "Melt the margarine over low heat (3 minutes).",
+      "Beat in flour with a wire whisk (3 minutes).",
+      "Continue to beat over medium heat until mixture is smooth and bubbly (3 minutes).",
+      "Whisk in the 3 ½ cups water (3 minutes).",
+      "Then, add salt, garlic powder, soy sauce, and turmeric to the liquid (3 minutes).",
+      "The sauce should cook until it thickens and bubbles (3 minutes).",
+      "When that happens, beat in nutritional yeast flakes; if the sauce is too thick, add more water (3 minutes).",
+      "When the macaroni is cooked, drain and add the sauce (3 minutes).",
+      "Serve immediately (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Thai_Green_Curry_Paste",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_and_Cheese_%28Vegan%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3298,57 +3431,80 @@
   },
   {
     "id": "r499",
-    "name": "Gullisuwa (Nigerian Milk Balls)",
-    "minutes": 30,
-    "servings": 4,
+    "name": "Original Texas-Style Chili",
+    "minutes": 45,
+    "servings": 6,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup powdered milk"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "white granulated sugar"
+        "qty": 3,
+        "unit": "lb",
+        "item": "(1.3 ) beef or other meat"
       },
       {
         "qty": 2,
+        "unit": "oz",
+        "item": "(55 ) beef kidney suet"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "chile pods, skinned and blistered, or sun-dried chiles"
+      },
+      {
+        "qty": 1,
         "unit": "tbsp",
-        "item": "cornstarch"
+        "item": "dried oregano"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Vanilla powder"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "crushed cumin seeds"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Water"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "salt"
       },
       {
-        "qty": null,
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cayenne pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Tabasco sauce (optional but frequently included)"
+      },
+      {
+        "qty": 2,
         "unit": "",
-        "item": "Vegetable oil"
+        "item": "garlic cloves, chopped (or more, to taste)"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "heaping tablespoons masa harina"
       }
     ],
     "steps": [
-      "Combine powdered milk, sugar, cornstarch, and vanilla powder in a bowl (3 minutes).",
-      "Mix thoroughly (3 minutes).",
-      "Mix in enough water to form a dough (3 minutes).",
-      "Grease your hands with vegetable oil, and roll the dough into small balls (3 minutes).",
-      "Deep fry the dough in a pan of hot vegetable oil until browned all over (3 minutes).",
-      "Use spoon to remove the fritters from the oil and drain in a sieve (3 minutes).",
-      "Serve fresh."
+      "Sear beef in a little cooking oil (not lard) until lightly browned (3 minutes).",
+      "Add the seared beef, suet, and chile pods to a large iron skillet or pot (at least four quarts), and enough water (the reserved \"pepper water\" if you prepared the pods yourself) to keep the meat from burning (3 minutes).",
+      "Bring to a boil, then lower heat, cover, and simmer about 30 minutes (3 minutes).",
+      "Take pot off the stove and add spices and garlic (3 minutes).",
+      "Put back on the stove, bring to a boil again, lower heat, and simmer another hour, keeping the lid on as much as possible (3 minutes).",
+      "Stir when necessary, but remember that too much stirring will tear the meat (3 minutes).",
+      "Add a little more water if anything seems seriously in danger of burning (but as little water as possible) (3 minutes).",
+      "Take pot off the stove and skim off all or most of the grease (3 minutes).",
+      "Mix in masa harina, which \"tightens\" or thickens the chili con carne and adds a subtle tamale-like flavor (3 minutes).",
+      "Simmer about 30 minutes more, until meat is done (3 minutes).",
+      "Do a lot of tasting during this time, (1) to adjust the seasoning, and (2) just because a chili cook should do a lot of tasting (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gullisuwa_%28Nigerian_Milk_Balls%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Original_Texas-Style_Chili",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3794,7 +3950,7 @@
   },
   {
     "id": "r505",
-    "name": "Halo-Halo (Filipino Layered Dessert)",
+    "name": "Adult Macaroni and Cheese",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -3805,64 +3961,72 @@
     ],
     "ingredients": [
       {
+        "qty": null,
+        "unit": "",
+        "item": "½ pound (227 g) elbow macaroni"
+      },
+      {
+        "qty": 6,
+        "unit": "oz",
+        "item": "(170 g) heavy cream"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp (2.5 ml) kosher salt, plus more for the water"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (60 g / 2.1 oz) grated Fontina"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (60 g / 2.1 oz) grated Gruyere"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (150 g / 5.3 oz) mascarpone cheese"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (150 g / 5.3 oz) cream cheese"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "thin slices Swiss cheese, julienned"
+      },
+      {
         "qty": 1,
         "unit": "",
-        "item": "½ cup shaved ice"
+        "item": "¼ sticks (150 g / 5.3 oz) unsalted butter, divided"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup chickpeas in syrup"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup red mung beans in syrup"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup nata de coco (coconut gel in syrup)"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "kaong in syrup"
-      },
-      {
-        "qty": 1,
+        "qty": 2,
         "unit": "tbsp",
-        "item": "ube jam (sweet purple yam paste)"
+        "item": "(30 ml) all-purpose flour"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "scoops ube ice cream"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "ea. 2 inch cubes leche flan"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup evaporated milk"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Pinipig (toasted flattened rice), for serving (optional)"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "(5 ml) tabasco sauce"
       }
     ],
     "steps": [
-      "Cover the bottoms of two serving bowls or glasses with a layer of shaved ice (3 minutes).",
-      "Top the ice with the chickpeas, mung beans, nata de coco, kaong, and ube jam (3 minutes).",
-      "Top with ube ice cream and leche flan, then pour the evaporated milk over everything (3 minutes).",
-      "Sprinkle with pinipig, if using (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "In a gallon (~3.8 L) of salted boiling water, cook macaroni to al dente (3 minutes).",
+      "Strain into a colander and rinse with cold water (3 minutes).",
+      "While pasta is cooking, in a heavy saucepan, melt 2 tbsp butter over medium heat (3 minutes).",
+      "Once bubbling ceases, whisk in flour and cook, whisking continuously, until blonde (3 minutes).",
+      "Add remaining ingredients except butter (3 minutes).",
+      "Once cheese is melted and sauce is smooth, add 1 tbsp butter, whisking continuously until melted (3 minutes).",
+      "Repeat until all butter has been used (3 minutes).",
+      "Gently fold in macaroni and serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Halo-Halo_%28Filipino_Layered_Dessert%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Adult_Macaroni_and_Cheese",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4077,51 +4241,74 @@
   },
   {
     "id": "r509",
-    "name": "Haupia (Hawaiian Coconut Pudding)",
+    "name": "Barbecue Beef Brisket Sandwiches",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
-        "unit": "cup",
-        "item": "coconut milk"
-      },
-      {
         "qty": null,
         "unit": "",
-        "item": "½ cup white granulated sugar"
+        "item": "Large mesquite chunks, as needed"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "dash salt"
+        "item": "ea. (8–10 lb) beef brisket"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup cornstarch"
+        "item": "½ cup vinegar mixture from North Carolina-Style BBQ Ribs, plus more for serving"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "honey"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "Dijon mustard"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "Barbecue Rub"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Hamburger buns for serving"
       }
     ],
     "steps": [
-      "Mix coconut milk with sugar and salt over a medium heat (3 minutes).",
-      "Slowly add cornstarch and stir until thickened (3 minutes).",
-      "Pour into a pan or square form (3 minutes).",
-      "Cool for 1 hour or until fully set (3 minutes).",
-      "Unmold and cut into squares (3 minutes)."
+      "Place mesquite into the firebox of a 250°F smoker (3 minutes).",
+      "Trim fat cap to ¼ inch (3 minutes).",
+      "Place brisket into a large foil pouch and pour in vinegar mixture, Worcestershire sauce, and honey (3 minutes).",
+      "Place pouch in smoker and cook for 6 hours, changing chunks as needed (3 minutes).",
+      "Remove brisket from pouch, spread mustard evenly on it, and massage Rub into meat (3 minutes).",
+      "Place brisket back into smoker and cook for 10 hours, changing chunks as needed (3 minutes).",
+      "Separate brisket halves along fat line (3 minutes).",
+      "Slice across the grain as thinly as humanly possible, chop roughly, and place serving portion in halved buns (3 minutes).",
+      "Place some vinegar mixture into a squirt bottle and serve with sandwiches (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Haupia_%28Hawaiian_Coconut_Pudding%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Barbecue_Beef_Brisket_Sandwiches",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r510",
-    "name": "Hawthorn Tea",
+    "name": "Macaroni and Cheese",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -4132,49 +4319,55 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "l",
-        "item": "water"
+        "qty": 8,
+        "unit": "oz",
+        "item": "elbow macaroni"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt to taste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup milk"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup cheese (of the chef's preference), grated"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "butter"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "hawthorn tea bag"
+        "item": "egg"
       },
       {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "one small sprig rosemary (just the leaves)"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "one small sprig sage (just the leaves)"
-      },
-      {
-        "qty": 7,
-        "unit": "",
-        "item": "thin slices of fresh ginger"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "soupspoons sugar"
-      },
-      {
-        "qty": 5,
-        "unit": "",
-        "item": "soupspoons lemon juice"
+        "item": "dash of dried parsley and oregano"
       }
     ],
     "steps": [
-      "Combine the water, tea bag, rosemary, sage, and ginger (3 minutes).",
-      "Boil briefly, then remove from heat and let steep for 5–10 minutes (3 minutes).",
-      "Filter the tea to remove solids, and mix in the sugar and the lemon juice (3 minutes).",
-      "Cool and serve (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Fill a pot with water, and add macaroni and salt (3 minutes).",
+      "Bring to boil, stirring occasionally (3 minutes).",
+      "While waiting for the pasta to cook, heat the milk in a pot (3 minutes).",
+      "Stir the grated cheese into milk (3 minutes).",
+      "This should create a basic cheese sauce (3 minutes).",
+      "If too thin, add more grated cheese; if too thick, add more milk (3 minutes).",
+      "When pasta becomes tender (chef's discretion), drain (3 minutes).",
+      "Melt the butter in a pot, and stir in the drained macaroni until pasta is completely coated (3 minutes).",
+      "Crack the raw egg into the mixture, and stir until completely incorporated (3 minutes).",
+      "Add cheese sauce and herbs (3 minutes).",
+      "Stir well, and serve hot (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hawthorn_Tea",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_and_Cheese_II",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5429,7 +5622,7 @@
   },
   {
     "id": "r529",
-    "name": "Indian Mango, Chilli Powder, and Cumin Condiment (Chhundo)",
+    "name": "Vancouver Cheesecake",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -5440,44 +5633,54 @@
     ],
     "ingredients": [
       {
+        "qty": 500,
+        "unit": "ml",
+        "item": "cream cheese, softened to room temperature"
+      },
+      {
+        "qty": 125,
+        "unit": "ml",
+        "item": "ricotta cheese"
+      },
+      {
+        "qty": 6,
+        "unit": "",
+        "item": "large eggs"
+      },
+      {
+        "qty": 250,
+        "unit": "ml",
+        "item": "whipping cream"
+      },
+      {
+        "qty": 80,
+        "unit": "ml",
+        "item": "white sugar"
+      },
+      {
+        "qty": 5,
+        "unit": "ml",
+        "item": "lemon juice"
+      },
+      {
         "qty": 1,
-        "unit": "kg",
-        "item": "(2.25 lbs) mangoes, deseeded"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "red chile powder"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "cumin powder"
-      },
-      {
-        "qty": 25,
-        "unit": "g",
-        "item": "(4 tsp) salt"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "turmeric powder"
-      },
-      {
-        "qty": 600,
-        "unit": "g",
-        "item": "(1.25 lbs) sugar"
+        "unit": "",
+        "item": "vanilla bean, or 10 ml pure vanilla extract"
       }
     ],
     "steps": [
-      "Peel and finely grate the mangoes (3 minutes).",
-      "Combine the grated mango evenly with the rest of the ingredients (3 minutes).",
-      "Spread the mixture in a shallow, wide-mouthed jar and cover with a thin cloth (3 minutes).",
-      "Keep the mixture in the sun for 5 days until the syrup attains a single thread consistency, stirring thrice daily (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat oven to 160°C (3 minutes).",
+      "Beat the cream cheese and ricotta together until smooth, continue beating as you mix in the sugar, then the eggs (3 minutes).",
+      "Slowly beat in the whipping cream (3 minutes).",
+      "Add lemon juice (3 minutes).",
+      "To add the bean, using a sharp knife, slice down the length of the bean, peel open and scrape down the bean to collect the contents (3 minutes).",
+      "Using a spatula or second knife, scrape the contents of the bean into the mixture (3 minutes).",
+      "Pour into large baking pan, or series of loaf pans (3 minutes).",
+      "Bake at 150°C for 45 minutes or so, slightly less time in loaf pans (3 minutes).",
+      "The cake should still be jelly-like in the centre when done (3 minutes).",
+      "Remove and allow to cool, then refrigerate for a minimum of 4 hours (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Mango%2C_Chilli_Powder%2C_and_Cumin_Condiment_%28Chhundo%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Vancouver_Cheesecake",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6802,9 +7005,9 @@
   },
   {
     "id": "r549",
-    "name": "Kilishi (Nigerian Beef Jerky)",
+    "name": "Texas Brisket Sandwiches",
     "minutes": 45,
-    "servings": 10,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
@@ -6812,62 +7015,81 @@
     ],
     "ingredients": [
       {
-        "qty": 250,
+        "qty": 1,
         "unit": "",
-        "item": "–300 g beef, trimmed of fat and sliced very thin"
+        "item": "ea. (8 pounds) beef brisket, trimmed to ¼ inch of fat"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "black peppercorns, cracked"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ tsp salt"
+        "item": "¾ cup apple cider vinegar"
       },
       {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "small piece (about 1 inch) fresh ginger"
-      },
-      {
-        "qty": 3,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "stock cube"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground cloves"
+        "item": "¾ cup yellow mustard, divided"
       },
       {
         "qty": 2,
+        "unit": "tsp",
+        "item": "cayenne pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "paprika"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "hot sauce"
+      },
+      {
+        "qty": 9,
         "unit": "",
-        "item": "–3 tbsp water (as needed)"
+        "item": "hamburger buns"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried cayenne pepper seeds"
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "molasses"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "suya spice"
+        "qty": null,
+        "unit": "",
+        "item": "Large mesquite chunks"
       }
     ],
     "steps": [
-      "Rub salt on both sides of the beef slices and let sit for 10 minutes (3 minutes).",
-      "Lay the slices flat on a baking sheet (3 minutes).",
-      "Bake in a preheated oven at 250°C (482°F) for 15 minutes, turning every 5 minutes (3 minutes).",
-      "Pound or blend the ginger and garlic into a paste (3 minutes).",
-      "In a bowl, mix the paste with the stock cube, cloves, cayenne seeds, suya spice, and a few tablespoons of water to form a marinade (3 minutes).",
-      "Rub the marinade onto the partially baked meat slices, coating them well (3 minutes).",
-      "Return the slices to the oven and bake for another 10–15 minutes, flipping occasionally until fully dry and slightly crispy (3 minutes).",
-      "Remove from the oven and let cool before serving or storing."
+      "Combine hot sauce, molasses, vinegar, and ¼ cup mustard (3 minutes).",
+      "Pour into a spray bottle and set aside (3 minutes).",
+      "Coat brisket with ½ cup of the mustard (3 minutes).",
+      "Set aside (3 minutes).",
+      "Combine seasonings and salt (3 minutes).",
+      "Press mixture into both sides of brisket (3 minutes).",
+      "Refrigerate overnight (3 minutes).",
+      "The next day, heat up a smoker to 200°F with the mesquite chunks (3 minutes).",
+      "Add brisket and cook 9 hours, spraying every 3 hours with vinegar mixture, and changing wood as needed to keep temperature at 200°F (3 minutes).",
+      "Remove brisket from smoker and let rest ½ hour (3 minutes).",
+      "Separate along the fat line and slice thinly across the grain (3 minutes).",
+      "Finely chop slices and toss with remaining vinegar mixture (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kilishi_%28Nigerian_Beef_Jerky%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Texas_Brisket_Sandwiches",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7540,107 +7762,152 @@
   },
   {
     "id": "r559",
-    "name": "Kunun Tsamiya (Nigerian Powdered Millet and Tsamiya Drink)",
-    "minutes": 20,
-    "servings": 4,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate",
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "cloves"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "handful dried ginger"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "tier (16 cups) millet"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "A few pieces of dried pepper"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "water"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Tamarind"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Sugar"
-      }
-    ],
-    "steps": [
-      "Grind together ginger, cloves, millet, and pepper until smooth, and transfer to a bowl (3 minutes).",
-      "Mix in enough water to get a paste (3 minutes).",
-      "Combine the tamarind and water in a pot (3 minutes).",
-      "Set on fire, and allow to boil for few minutes (3 minutes).",
-      "Slowly add the boiled water into the bowl of millet paste, stirring continuously so that it is lump-free and smooth (3 minutes).",
-      "Add sugar to taste and serve."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kunun_Tsamiya_%28Nigerian_Powdered_Millet_and_Tsamiya_Drink%29",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r560",
-    "name": "Kuwese U Logo (Nigerian Fried Cassava)",
+    "name": "Texas Style Chicken Fried Steak",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 3,
         "unit": "",
-        "item": "Cassava"
+        "item": "beef cube steaks, ½-inch thick"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "freshly ground black pepper, divided"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "bacon drippings, divided"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "chicken broth"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "whole milk, combined with ¼ cup heavy cream"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "eggs, beaten"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Groundnut oil"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt to taste"
+        "item": "All-purpose flour, plus 3 tbsp"
       }
     ],
     "steps": [
-      "Cut cassava into your desired size and shape, then rinse with water (3 minutes).",
-      "Dry well (3 minutes).",
-      "Blend pepper and pour on sliced cassava (3 minutes).",
-      "Toss to coat (3 minutes).",
-      "Heat the oil in a deep frying pan (3 minutes).",
-      "Deep-fry the cassava in the hot oil until tender (3 minutes).",
-      "Remove from the oil and serve hot, sprinkled with salt."
+      "Season steaks with salt and 2 tbsp freshly ground black pepper (3 minutes).",
+      "In a pie plate, combine eggs with paprika and cayenne (3 minutes).",
+      "Dip steaks into egg mixture (3 minutes).",
+      "In another pie plate, place some all-purpose flour (3 minutes).",
+      "Dredge battered steaks with flour (3 minutes).",
+      "Move to a cooling rack and let rest 10–15 minutes (3 minutes).",
+      "Wash this once you start frying, or get a clean one (3 minutes).",
+      "Heat a 12 inch cast-iron skillet over medium high heat (3 minutes).",
+      "Once hot, pour in 2 tbsp drippings (3 minutes).",
+      "Add steaks in a triangle formation around the edges of the pan (3 minutes).",
+      "Fry for 4 minutes per side (3 minutes).",
+      "Remove steaks from pan and drain on a cooling rack above a sheet pan (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kuwese_U_Logo_%28Nigerian_Fried_Cassava%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Texas_Style_Chicken_Fried_Steak",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r560",
+    "name": "Cajun Red Beans and Rice",
+    "minutes": 15,
+    "servings": 6,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "dry red beans (e.g. kidney or cowpea)"
+      },
+      {
+        "qty": 6,
+        "unit": "",
+        "item": "ea. (3½–4 pounds / 1.5–2 kg) large ham hocks"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "(½ stalk) finely-chopped celery"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "(1 ea.) finely-chopped onions"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "(1 ea.) finely-chopped bell peppers"
+      },
+      {
+        "qty": 5,
+        "unit": "",
+        "item": "bay leaves"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "Paul Prudhomme's Seafood Magic, or a similar spice"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "tabasco sauce or similar hot sauce"
+      },
+      {
+        "qty": 4,
+        "unit": "cup",
+        "item": "cooked rice"
+      }
+    ],
+    "steps": [
+      "Cover beans with water, and let soak overnight (3 minutes).",
+      "Place ham hocks, celery, onions, bell peppers, bay leaves, and seasoning into a large saucepan with 10 cups water (3 minutes).",
+      "Cover and bring to boil (3 minutes).",
+      "Simmer until meat is fork tender, about an hour after boiling starts, stirring occasionally (3 minutes).",
+      "Remove ham hocks from pan and set aside (3 minutes).",
+      "Skim fat from pan and discard (3 minutes).",
+      "Add ham hocks and cook 45 minutes more, and serve immediately (3 minutes).",
+      "On a heated serving platter, mound ¾ cup rice per serving at one end of platter, place ham hocks at other end, and put 1 cup beans per serving in middle (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cajun_Red_Beans_and_Rice",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7916,7 +8183,7 @@
   },
   {
     "id": "r565",
-    "name": "Lahoh (Spongy Flatbread) I",
+    "name": "Pennsylvania Pot Pie",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -7927,56 +8194,46 @@
     ],
     "ingredients": [
       {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "semolina"
-      },
-      {
         "qty": 2,
         "unit": "",
-        "item": "½ cups lukewarm water, divided"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "cold water"
-      },
-      {
-        "qty": 3,
-        "unit": "cup",
-        "item": "wheat flour or sorghum flour"
+        "item": "½ cups flour"
       },
       {
         "qty": 1,
         "unit": "tsp",
-        "item": "rock salt"
+        "item": "salt"
       },
       {
-        "qty": 2,
+        "qty": 1,
         "unit": "tsp",
-        "item": "dried yeast"
+        "item": "ground pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "shortening"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Dab of margarine or vegetable oil for greasing pan"
+        "item": "⅓ cup plus 1 tbsp cold water"
       }
     ],
     "steps": [
-      "Combine semolina and ½ cup of lukewarm water in a bowl, then bring the mixture to a boil in saucepan (3 minutes).",
-      "Remove from heat, place in a bowl, and leave to thicken (3 minutes).",
-      "Stir cold water into the semolina mixture (3 minutes).",
-      "Stir in rock salt until fully dissolved into the mixture (3 minutes).",
-      "Stir in the wheat flour and yeast (3 minutes).",
-      "Mix in another 2 cups of lukewarm water until you get a thin batter (3 minutes).",
-      "Cover the batter and let it rest until it is risen and bubbly (3 minutes).",
-      "Grease a skillet or frying pan with a little margarine, and heat over medium heat (3 minutes).",
-      "Ladle some batter into the pan, and let it spread out (3 minutes).",
-      "A tiny bit of flour sprinkled in the pan helps prevent sticking (3 minutes).",
-      "Cook the batter until the top surface is covered with air pockets like a sponge (3 minutes).",
-      "Flip to the other side, and cook for about 5 seconds."
+      "Boil chicken in water until tender (3 minutes).",
+      "Meanwhile, prepare noodle dough following the first 5 steps of the Flaky Pie Crust procedure, using the ingredients above (3 minutes).",
+      "Sugar and butter are replaced with pepper and shortening, respectively (3 minutes).",
+      "On a floured board, roll dough about twice as thick as ordinary pie crust (about a 9-inch circle or 8 x 10-inch rectangle) (3 minutes).",
+      "Cut dough into roughly 2-inch squares (3 minutes).",
+      "Remove chicken from broth (3 minutes).",
+      "Shred chicken, discarding bones and skin (3 minutes).",
+      "Stir pot pie squares into boiling broth a few at a time, being careful not to let them stick together (3 minutes).",
+      "Simmer 6 minutes (3 minutes).",
+      "Add chicken and green beans (3 minutes).",
+      "Simmer for 10–15 minutes (3 minutes).",
+      "Remove from heat (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lahoh_%28Spongy_Flatbread%29_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pennsylvania_Pot_Pie",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8514,74 +8771,49 @@
   },
   {
     "id": "r574",
-    "name": "Lemon Pickle I",
+    "name": "Chicken Pot Pie",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 12,
-        "unit": "",
-        "item": "small or 6 large lemons (thin skins preferred)"
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "Lrge or 2 small lemons, juiced"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup salt"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "red chile powder"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup sugar"
-      },
-      {
-        "qty": 3,
-        "unit": "tsp",
-        "item": "turmeric powder"
+        "unit": "can",
+        "item": "cream of mushroom soup"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "fenugreek seed"
+        "unit": "can",
+        "item": "mixed vegetables"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "black mustard seed"
+        "unit": "can",
+        "item": "white chunk chicken"
       },
       {
-        "qty": null,
+        "qty": 2,
         "unit": "",
-        "item": "¼ tsp asafoetida powder (omit for gluten-free version)"
+        "item": "frozen pie crusts, thawed"
       }
     ],
     "steps": [
-      "Wash the lemons and dry them well, leaving no water on the lemons (3 minutes).",
-      "Trim off the stalk and any odd bits (3 minutes).",
-      "Cut the lemons in to small pieces about 2 cm (¾ inch) on each side, and place in a bowl (3 minutes).",
-      "Dry-roast the fenugreek, black mustard, and asafoetida together in a pan on a medium heat for about 5 minutes (3 minutes).",
-      "Don't burn them! (3 minutes).",
-      "Grind the roasted spices in a grinder or a mortar and pestle (3 minutes).",
-      "Add the ground spices, turmeric powder, salt, sugar and chili powder to the bowl and mix together well (3 minutes).",
-      "Pack the mixture into a 2 litre (2 quart) jar, or use a couple of smaller jars (3 minutes).",
-      "Don't fill quite to the top—allow at least 1 cm space."
+      "Mix soup, vegetables, and chicken in a large bowl (3 minutes).",
+      "Pour mixture into one of the pie crusts (3 minutes).",
+      "Cover with other pie crust and press around edges to seal (3 minutes).",
+      "Cut several small slits in top of pie (3 minutes).",
+      "Bake at 375 °F for 30–40 minutes or until golden brown (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lemon_Pickle_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Pot_Pie_I",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10917,7 +11149,7 @@
   },
   {
     "id": "r606",
-    "name": "Mazagran (Algerian Iced Coffee)",
+    "name": "Sweet Cornbread",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -10928,39 +11160,58 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "Ice cubes"
-      },
-      {
         "qty": 1,
         "unit": "cup",
-        "item": "brewed black coffee"
+        "item": "(140 g / 4.9 oz) cornmeal"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Freshly-squeezed lemon juice"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Sugar or other sweetener"
+        "qty": 2,
+        "unit": "cup",
+        "item": "(275 g / 9.7 oz) all-purpose flour"
       },
       {
         "qty": 1,
-        "unit": "l",
-        "item": "emon slice or wedge (optional)"
+        "unit": "",
+        "item": "½ teaspoons baking powder"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (160 g / 5.6 oz) maple syrup"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (90 g / 3.2 oz) brown sugar"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (125 g / 4.4 oz) butter, softened"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "eggs"
       }
     ],
     "steps": [
-      "Fill a tall, narrow glass with the ice cubes (3 minutes).",
-      "Pour the coffee over the ice (3 minutes).",
-      "Add the lemon juice and sugar to taste (3 minutes).",
-      "Add the lemon slice or wedge as a final touch if desired (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "In a large bowl beat eggs lightly to break the yolks as one would for scrambled eggs, then mix in the butter (3 minutes).",
+      "Soften the butter beforehand if you must by heating it a little (3 minutes).",
+      "The butter/egg mixture should be loose (3 minutes).",
+      "Add the sugar and maple syrup, mix well, then add the salt to the liquid mixture (3 minutes).",
+      "Mix the cornmeal and baking powder, then blend them into the liquids (3 minutes).",
+      "Slowly add the flour as needed to reach a proper cake batter texture (3 minutes).",
+      "This should be softer than a cookie dough, able to stick to the mixing spoon and come off in blobs (3 minutes).",
+      "You may not need all of the flour, or may even need a little more based on your eggs and how closely you measured (3 minutes).",
+      "Pour into a greased pan, put into an oven heated to 200°C (400°F), and let bake for between 15–25 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mazagran_%28Algerian_Iced_Coffee%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sweet_Cornbread",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -11249,49 +11500,54 @@
   },
   {
     "id": "r611",
-    "name": "Meringue Cookies I",
+    "name": "Chipotle Fried Chicken",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "",
-        "item": "egg whites"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(250 ml) superfine sugar, powdered sugar, or granulated sugar (ideally a mixture of 50% superfine and 50% powdered sugar)"
-      },
-      {
         "qty": 2,
-        "unit": "tsp",
-        "item": "lemon juice"
+        "unit": "",
+        "item": "ea. skinless chicken thighs, legs, and boneless skinless chicken breasts"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon vanilla extract (optional)"
+        "item": "½ cup adobo sauce"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "freshly-squeezed lime juice"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cornmeal as needed"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "vegetable shortening"
       }
     ],
     "steps": [
-      "Whip whites of eggs until stiff and dry (3 minutes).",
-      "Add lemon juice (3 minutes).",
-      "Gradually add sugar and continue beating until mixture holds shape and is very shiny (3 minutes).",
-      "Test to make sure the sugar is wholly solved and no grains remain (this can take longer or shorter depending on the sugar used) (3 minutes).",
-      "Add vanilla (3 minutes).",
-      "Drop meringue by spoonfuls on unglazed paper (3 minutes).",
-      "Bake in a slow oven 80–90 minutes, depending on size (3 minutes).",
-      "Use very low heat, as meringues should dry rather than bake and should be dry and only very slightly colored, when finished (3 minutes).",
-      "Let cool before serving."
+      "Combine adobo sauce and lime juice and pour over chicken (3 minutes).",
+      "Refrigerate overnight (3 minutes).",
+      "Remove chicken from adobo mixture (3 minutes).",
+      "Combine the seasoning ingredients, and sprinkle over chicken (3 minutes).",
+      "Dredge chicken in cornmeal (3 minutes).",
+      "Let rest for 2–3 minutes (3 minutes).",
+      "Meanwhile, heat shortening in a large cast-iron skillet to 350°F (3 minutes).",
+      "Place breasts and legs around the edges, then place thighs in the center (3 minutes).",
+      "Cook for 12 minutes per side (3 minutes).",
+      "Drain on a cooling rack and serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Meringue_Cookies_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chipotle_Fried_Chicken",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12724,65 +12980,71 @@
   },
   {
     "id": "r632",
-    "name": "Nigerian Barbecued Chicken Wings",
+    "name": "Cheesy Mascarpone Cornbread Stuffing",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "flour"
+        "qty": 2,
+        "unit": "",
+        "item": "½ cups cornbread, crumbled"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¾ cup mascarpone cheese, divided"
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "cornmeal"
+        "unit": "cup",
+        "item": "heavy cream, whipped to soft peaks"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "black pepper"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ginger powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "paprika powder"
-      },
-      {
-        "qty": 10,
+        "qty": null,
         "unit": "",
-        "item": "chicken wingettes"
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sage, sliced thinly"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "egg yolks, beaten"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "butter, melted"
       }
     ],
     "steps": [
-      "Combine the flour, cornmeal, pepper, salt, sugar, ginger, and paprika in a bowl (3 minutes).",
-      "Add the chicken pieces, and rub the mixture into them well so they are completely coated (3 minutes).",
-      "Set in the fridge, and allow the chicken to rest for 1 hour (3 minutes).",
-      "Arrange the chicken pieces on a baking tray or on a grill (3 minutes).",
-      "Grill or bake until cooked through (about 45 minutes baking at 375°F) (3 minutes)."
+      "Combine all ingredients except for cream and ¼ cup mascarpone cheese (3 minutes).",
+      "Gently fold in cream (3 minutes).",
+      "Bake in a 350°F (175°C) oven for 30–35 minutes (3 minutes).",
+      "Spread remaining cheese on top and place under a preheated broiler until browned and bubbly (3 minutes).",
+      "Cool 10 minutes; serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Barbecued_Chicken_Wings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cheesy_Mascarpone_Cornbread_Stuffing",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r633",
-    "name": "Nigerian Bean Porridge",
+    "name": "Not Quite Eggs Benedict",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -12792,67 +13054,82 @@
     ],
     "ingredients": [
       {
+        "qty": 2,
+        "unit": "",
+        "item": "eggs"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "milk"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "chopped parsley"
+      },
+      {
         "qty": null,
         "unit": "",
-        "item": "Dried beans (honey beans/black-eyedpeas/Nigerian brown beans)"
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Black pepper"
+      },
+      {
+        "qty": 4,
+        "unit": "slice",
+        "item": "bacon"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "butter, melted"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cold water"
       },
       {
         "qty": 2,
         "unit": "",
-        "item": "Lrge onions, chopped"
+        "item": "–3 tsp lemon juice"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Palm oil"
+        "item": "Cayenne pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Maggi (bouillon cube)"
+        "item": "Crusty bread"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Ground crayfish"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "A few pieces of fresh tomato"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Fresh scotch bonnet or habanero pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Smoked panla fish"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "maple syrup (optional)"
       }
     ],
     "steps": [
-      "Pick over the beans to remove stones and other unwanted items (3 minutes).",
-      "Put the beans in a clean bowl, and run under clean running water to wash them (3 minutes).",
-      "Boil water in a pot, and add the beans (3 minutes).",
-      "Boil for 5 minutes, then strain and let run under cold water (3 minutes).",
-      "Fully drain the beans (3 minutes).",
-      "Add the parboiled beans, chopped onion, palm oil, and bouillon cube to a pot (3 minutes).",
-      "Cover with water, and simmer until the beans are tender (3 minutes).",
-      "Blend the crayfish, tomatoes, and pepper into a smooth paste (3 minutes).",
-      "Heat a pan (3 minutes).",
-      "Add the tomato paste, panla fish, and salt/bouillon to taste (3 minutes).",
-      "Fry for 5–7 minutes (3 minutes).",
-      "When the beans are soft and the water is reduced, stir in the fried paste and panla fish."
+      "Separate eggs (3 minutes).",
+      "Mix whites with milk and parsley, then add salt and pepper (3 minutes).",
+      "Beat with a fork until slightly bubbly (3 minutes).",
+      "Set aside (3 minutes).",
+      "Cook bacon on medium-high heat in a large, nonstick skillet and set on paper towels or napkins to drain (3 minutes).",
+      "Pour off all but 1-2 tablespoons fat (3 minutes).",
+      "Turn heat down to medium-low and add egg whites (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Bean_Porridge",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Not_Quite_Eggs_Benedict",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r634",
-    "name": "Nigerian Custard",
+    "name": "Texas Style Barbecue Ribs",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -12863,174 +13140,161 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "Checkers custard powder"
+        "qty": 1,
+        "unit": "cup",
+        "item": "apple cider vinegar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Cold water"
+        "item": "⅓ cup honey"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Boiling water"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "Worcestershire sauce"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Sugar"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Milk (preferably Hollandia brand)"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
       }
     ],
     "steps": [
-      "Place the custard powder in a bowl (3 minutes).",
-      "Stir in a small amount of cold water until smooth and lump-free (3 minutes).",
-      "Gradually stir in boiling water (3 minutes).",
-      "Allow the custard to set (3 minutes).",
-      "If it is too thick or hard, stir in water to your desired consistency (3 minutes).",
-      "Stir in milk and sugar (3 minutes).",
-      "Serve."
+      "Combine all Mop ingredients and place in a spray bottle (3 minutes).",
+      "Combine all Rub ingredients and massage into pork (3 minutes).",
+      "Refrigerate pork overnight (3 minutes).",
+      "The next day, place hickory chunks into the firebox of a smoker (3 minutes).",
+      "Heat to 225°F (3 minutes).",
+      "Place ribs in smoker and cook, spraying with Mop often (3 minutes).",
+      "Grill ribs on high, turning often, spraying grilled side every time it's turned, until well browned on both sides (3 minutes).",
+      "Remove and let rest 7 minutes (3 minutes).",
+      "Slice into one rib portions and place in a large stainless steel bowl (3 minutes).",
+      "Pour in about ½ cup of Mop and toss to coat ribs (3 minutes).",
+      "Serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Custard",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Texas_Style_Barbecue_Ribs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r635",
-    "name": "Nigerian Dodo (Fried Ripe Plantain)",
+    "name": "Southern Fried Chicken Sliders",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": 4,
         "unit": "",
-        "item": "ripe plantains"
+        "item": "ea. boneless skinless chicken breasts"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon salt"
+        "item": "Poultry shake"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup puréed chile pepper mixed with tomatoes"
+        "item": "Cornmeal"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup vegetable oil"
+        "item": "Melted butter"
+      },
+      {
+        "qty": 6,
+        "unit": "",
+        "item": "ea. 1-inch buns, split in half"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "½ quarts peanut oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Freshly-ground black pepper"
       }
     ],
     "steps": [
-      "Cut each ripe plantain into 6 small pieces (3 minutes).",
-      "Toss with salt and chile-tomato purée to taste (3 minutes).",
-      "Heat ½ cup of oil in a frying pan (3 minutes).",
-      "Add the 6 plantain pieces, and deep fry until all sides are golden brown (3 minutes).",
-      "Serve with jollof rice or bean porridge (3 minutes)."
+      "Brush cut sides of buns with melted butter, and season with salt and freshly ground black pepper (3 minutes).",
+      "Toast cut side down in a hot pan (3 minutes).",
+      "Set aside (3 minutes).",
+      "Coat chicken with melted butter (3 minutes).",
+      "Season liberally with poultry shake and dredge in cornmeal (3 minutes).",
+      "Let rest 2–3 minutes (3 minutes).",
+      "Heat oil to 350°F (3 minutes).",
+      "Add chicken breasts and fry, 1 at a time, about 10 minutes (3 minutes).",
+      "Drain on a cooling rack (3 minutes).",
+      "Cut chicken into portions that fit the buns (3 minutes).",
+      "Place 1 chicken piece on each bottom half of a bun and top with the other half (3 minutes).",
+      "Serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Dodo_%28Fried_Ripe_Plantain%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Southern_Fried_Chicken_Sliders",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r636",
-    "name": "Nigerian Egg Roll",
+    "name": "Easy Chili",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": 30,
+        "unit": "oz",
+        "item": "medium or dark red kidney beans"
+      },
+      {
+        "qty": 30,
+        "unit": "oz",
+        "item": "crushed tomatoes"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½–1 lb cooked ground beef, turkey, or equivalent portion of vegetarian ground beef substitute"
+      },
+      {
         "qty": 2,
-        "unit": "cup",
-        "item": "all-purpose flour"
-      },
-      {
-        "qty": 1,
         "unit": "tsp",
-        "item": "baking powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "nutmeg"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ teaspoon salt"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "unsalted butter"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "Lrge egg"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup evaporated milk or whole milk"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Vegetable oil for deep frying"
-      },
-      {
-        "qty": 6,
-        "unit": "",
-        "item": "hard-boiled eggs, peeled"
+        "item": "chili powder, or use chili-flavored kidney beans above"
       }
     ],
     "steps": [
-      "Combine the flour, baking powder, nutmeg, salt, and sugar in a bowl (3 minutes).",
-      "Mix in the butter until crumbly (3 minutes).",
-      "Mix in the egg and evaporated milk to make a dough (3 minutes).",
-      "Cover the dough with plastic wrap, and leave to rest for about 5–10 minutes (3 minutes).",
-      "While the dough is resting, preheat several inches of vegetable oil in a pot to 350–375°F (medium heat) (3 minutes).",
-      "Divide the dough into six parts, flouring your palms to prevent the dough from sticking (3 minutes).",
-      "Flatten each piece of dough with your hands (3 minutes).",
-      "Place one boiled egg on the dough, and wrap the dough around the egg to completely enclose it (3 minutes).",
-      "Pinch the dough to tightly seal it around the egg (3 minutes).",
-      "Repeat this process until all the eggs are wrapped (3 minutes).",
-      "Carefully transfer the egg rolls to the preheated oil, and fry until golden brown (3 minutes).",
-      "Remove the egg rolls from the oil, and place on paper towels to remove excess oil."
+      "Combine all ingredients in a pot (3 minutes).",
+      "Cook on medium heat for 15 minutes (3 minutes).",
+      "Taste kidney beans for flavor to determine when done (3 minutes).",
+      "Serve with crackers, shredded cheese, and your favorite spices (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Egg_Roll",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Easy_Chili",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r637",
-    "name": "Nigerian Egg Stew",
-    "minutes": 15,
-    "servings": 2,
+    "name": "Pedernales River Chili",
+    "minutes": 45,
+    "servings": 10,
     "tags": [
       "lunch",
       "medium",
@@ -13039,65 +13303,39 @@
     ],
     "ingredients": [
       {
+        "qty": 4,
+        "unit": "lb",
+        "item": "(1.8 ) coarse-ground meat (venison preferred)"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large onion, chopped"
+      },
+      {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "palm oil"
+        "unit": "clove",
+        "item": "garlic, finely chopped"
       },
       {
         "qty": 1,
         "unit": "tsp",
-        "item": "ground chile pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ medium onion, chopped"
+        "item": "dried oregano (preferable to fresh oregano, which grows wild in central Texas)"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "Maggi cube, crushed"
+        "unit": "tsp",
+        "item": "powdered cumin"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Salt, to taste"
+        "qty": 6,
+        "unit": "tsp",
+        "item": "chili powder (or more, to taste)"
       },
       {
         "qty": 2,
-        "unit": "",
-        "item": "eggs"
-      }
-    ],
-    "steps": [
-      "Heat palm oil in a frying pan over medium heat (3 minutes).",
-      "Add the chile pepper, chopped onion, crushed Maggi cube, and salt (3 minutes).",
-      "Stir and cook for 2–3 minutes (3 minutes).",
-      "In a separate bowl, beat the eggs (3 minutes).",
-      "Pour into the pan and stir gently to scramble (3 minutes).",
-      "Cook for another 2–3 minutes, or until eggs are fully set but still moist (3 minutes).",
-      "Serve with boiled yam, cocoyam, or potatoes."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Egg_Stew",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r638",
-    "name": "Nigerian Ewa Agoyin",
-    "minutes": 45,
-    "servings": 4,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate",
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "qty": 4,
-        "unit": "cup",
-        "item": "brown beans or honey beans"
+        "unit": "can",
+        "item": "(16-oz/500g) whole tomatoes"
       },
       {
         "qty": null,
@@ -13107,53 +13345,74 @@
       {
         "qty": 2,
         "unit": "cup",
-        "item": "water"
-      },
+        "item": "(470 ml) hot water"
+      }
+    ],
+    "steps": [
+      "Brown meat, onion, and garlic in a large skillet (3 minutes).",
+      "Add rest of ingredients and bring to a boil (3 minutes).",
+      "Lower heat, cover, and simmer for about an hour (3 minutes).",
+      "Skim off grease (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pedernales_River_Chili",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r638",
+    "name": "Jailhouse Chili",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
       {
-        "qty": 8,
-        "unit": "",
-        "item": "–10 dried red chile peppers"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "onion"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "palm oil"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "seasoning cube"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "spoon ground crayfish"
+        "qty": 25,
+        "unit": "lb",
+        "item": "(11 ) coarse-ground beef"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "A little garlic or ginger"
+        "item": "½ lb (225 ) cumin"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ lb (110 ) chili powder"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "⅛ lb (55 ) paprika"
       },
       {
         "qty": 2,
         "unit": "",
-        "item": "–3 teaspoons locusts beans"
+        "item": "handfuls crushed dried red chile peppers"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ lb (225 ) finely-chopped garlic"
       }
     ],
     "steps": [
-      "Cook the beans in plenty of water until they become extremely soft and mushy (3 minutes).",
-      "Stir or lightly mash the cooked beans until you get a smooth, thick, porridge-like texture (3 minutes).",
-      "Season with salt to taste, and set aside (3 minutes).",
-      "thumbBlend or grind dried pepper and fry it with chopped onions in a pot or pan.{{Recipe summary (3 minutes).",
-      "Add salt and seasoning cubes if desired, and continue frying until the oil rises and the sauce is well cooked (3 minutes).",
-      "Spoon the hot pepper sauce over the mashed beans and serve."
+      "Sear beef in a little cooking oil (not lard) until lightly browned (3 minutes).",
+      "Drop the seared beef and chili peppers in a large stock pot, and add enough water to keep the meat from burning (3 minutes).",
+      "Bring to a boil, then lower heat, cover, and simmer about 30 minutes (3 minutes).",
+      "Take pot off the stove and add spices and garlic (3 minutes).",
+      "Put back on the stove, bring to a boil again, lower heat, and simmer another 90 minutes, keeping the lid on as much as possible (3 minutes).",
+      "Stir when necessary, but remember that too much stirring will tear the meat (3 minutes).",
+      "Add a little more water if anything seems seriously in danger of burning (but as little water as possible) (3 minutes).",
+      "Take pot off the stove and skim off all or most of the grease (3 minutes).",
+      "Serve hot (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Ewa_Agoyin",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Jailhouse_Chili",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13237,390 +13496,78 @@
   },
   {
     "id": "r640",
-    "name": "Nigerian Jollof Rice",
+    "name": "Barbecue Prime Rib",
     "minutes": 45,
-    "servings": 5,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "collection-indian"
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 5,
-        "unit": "",
-        "item": "Lrge fresh tomatoes"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "Lrge bell peppers"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "Lrge scotch bonnet chile peppers"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "Lrge onions"
-      },
-      {
-        "qty": 5,
-        "unit": "",
-        "item": "–10 pieces beef or chicken"
-      },
-      {
-        "qty": 300,
-        "unit": "ml",
-        "item": "groundnut oil"
-      },
-      {
         "qty": 1,
         "unit": "",
-        "item": "medium onion, diced"
-      },
-      {
-        "qty": 150,
-        "unit": "g",
-        "item": "tomato purée"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "–4 stock cubes"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "bay leaves"
+        "item": "ea. 4-bone standing rib roast, prime grade"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tsp curry powder"
+        "item": "Prime Rib seasoning, as needed"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅓ tsp thyme"
+        "item": "Canola oil, as needed"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Cinnamon"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Ginger"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Garlic"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Ground crayfish"
+        "item": "Large mesquite chunks"
       }
     ],
     "steps": [
-      "Blend together the tomatoes, peppers, and the 2 large onions and set aside (3 minutes).",
-      "Boil, then deep-fry the meat (3 minutes).",
-      "Set aside (3 minutes).",
-      "Put a 2-liter pot on the fire and allow any residual water in it to dry (3 minutes).",
-      "Add the groundnut oil and let it heat up (3 minutes).",
-      "Add the diced onion and tomato purée (3 minutes).",
-      "Stir constantly for 3–5 minutes then add the blended pepper mixture (3 minutes).",
-      "Add about 200 ml of the reserved meat stock, stock cubes, bay leaves, curry powder, thyme, cinnamon, ginger, garlic, and crayfish (3 minutes).",
-      "Stir for about 10 minutes (3 minutes).",
-      "Add about 1.2 liters of water and allow to boil (3 minutes).",
-      "While waiting for the mixture to boil, wash the rice about 3–4 times or until the water is clear, then drain in a sieve (3 minutes).",
-      "When the pot boils, add the rice and season with salt."
+      "Coat roast with oil (3 minutes).",
+      "Shake on seasoning and massage into meat (3 minutes).",
+      "Place dry mesquite chunks into firebox of a 250°F smoker (3 minutes).",
+      "Insert a probe thermometer into center of roast and set for 118°F (3 minutes).",
+      "Place roast into smoker and lower heat to 200°F (3 minutes).",
+      "Cook until internal temperature is achieved, changing mesquite as needed (3 minutes).",
+      "Remove and grill on high heat for 7 minutes or until desired crust is achieved (3 minutes).",
+      "Remove and let rest 10 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Jollof_Rice",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Barbecue_Prime_Rib",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r641",
-    "name": "Nigerian Peppered Turkey Wings",
-    "minutes": 45,
-    "servings": 4,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate"
-    ],
-    "ingredients": [
-      {
-        "qty": 6,
-        "unit": "",
-        "item": "turkey wings"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "small onions, peeled"
-      },
-      {
-        "qty": 4,
-        "unit": "clove",
-        "item": "garlic (optional)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon ginger"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "stock cube, crushed"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried thyme"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "medium red bell peppers"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup vegetable oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "salt or to taste"
-      }
-    ],
-    "steps": [
-      "Wash the turkey wings and put in a pot with 1 onion, garlic, ginger, stock cube, and thyme (3 minutes).",
-      "Cover with water and bring the mixture to a simmer (3 minutes).",
-      "Cook until the water dries up, then bake in the oven at 200°C (3 minutes).",
-      "Blend the bell pepper and remaining onion to get a smooth paste (3 minutes).",
-      "Heat a small amount of vegetable oil in a pot (3 minutes).",
-      "Add the pepper paste, and simmer until thickened and losing its raw flavor (3 minutes).",
-      "Season with salt (3 minutes).",
-      "Add the turkey wings to the sauce, and toss to coat."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Peppered_Turkey_Wings",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r642",
-    "name": "Nigerian Puff Puff",
+    "name": "Macaroni and Cheese (Microwaved)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "qty": 400,
-        "unit": "g",
-        "item": "(2 cups) plain flour"
-      },
-      {
-        "qty": 30,
-        "unit": "g",
-        "item": "(¼ cup) white granulated sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground nutmeg"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "instant yeast"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp salt"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "warm milk"
-      }
-    ],
-    "steps": [
-      "Sift the flour into a bowl, and mix in the nutmeg, yeast, sugar, and salt (3 minutes).",
-      "If using fresh or active-dry yeast, dissolve it in a small amount of warm water with a pinch of sugar (3 minutes).",
-      "Let it get foamy before mixing it into the flour (3 minutes).",
-      "If using instant yeast, mix it directly into the flour mixture (3 minutes).",
-      "Using your hands, mix small amounts of lukewarm water into the flour until all of the ingredients are thoroughly combined (3 minutes).",
-      "The mixture should be smooth but not runny—i.e (3 minutes).",
-      "it should not pour (3 minutes).",
-      "Cover the bowl with thin plastic film, and allow it to rise for about 45 minutes until doubled in volume (3 minutes).",
-      "Add oil to a deep pot to a depth of at least 3 inches (3 minutes).",
-      "Heat the oil over medium heat (3 minutes).",
-      "Put a small piece of dough in the oil to see if it's hot enough—if the dough sizzles and rises to the surface of the oil, it is ready to fry the puff puff (3 minutes).",
-      "If the oil isn't hot enough, the batter will sink to the bottom and remain there."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Puff_Puff",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r643",
-    "name": "Nigerian Rice and Beans Jollof",
-    "minutes": 45,
-    "servings": 4,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate",
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "dried beans"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "fresh chiles"
-      },
-      {
-        "qty": 5,
-        "unit": "",
-        "item": "medium tomatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "medium onion, chopped"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "vegetable oil or palm oil"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "stock cube"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "salt or to taste"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "parboiled rice"
-      }
-    ],
-    "steps": [
-      "Rinse the beans, and boil in water until tender (3 minutes).",
-      "Drain the cooked beans (3 minutes).",
-      "Grind together the chiles, tomatoes, and onions to make a purée (3 minutes).",
-      "Heat a thin layer of oil in a pan, and add the purée (3 minutes).",
-      "Season with stock cube and salt, and simmer for 3 minutes (3 minutes).",
-      "Stir in the parboiled rice and beans, and cook for 5 minutes (3 minutes).",
-      "Serve with beef, chicken, or moin-moin."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Rice_and_Beans_Jollof",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r644",
-    "name": "Nigerian Tiger Nut Milk (Kunun Aya)",
-    "minutes": 45,
-    "servings": 4,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate",
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "tiger nuts"
-      },
-      {
-        "qty": 4,
-        "unit": "cup",
-        "item": "water"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "–3 dates, pitted (optional)"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "-inch (2.5 cm) piece of fresh ginger, peeled"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Sweetener of choice (e.g., honey or sugar), to taste"
-      }
-    ],
-    "steps": [
-      "Rinse and soak the tiger nuts in 2 cups of water for at least 24 hours to soften (3 minutes).",
-      "Drain and blend the soaked tiger nuts with the dates and ginger, adding water as needed to form a smooth paste (3 minutes).",
-      "Strain the blended mixture using a fine mesh sieve or cheesecloth to remove the chaff (3 minutes).",
-      "Dilute the extracted milk with the remaining water to the desired consistency (3 minutes).",
-      "Add your preferred sweetener to taste, and stir well (3 minutes).",
-      "Serve chilled (3 minutes).",
-      "Refrigerate leftovers and consume within 1–2 days."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Tiger_Nut_Milk_%28Kunun_Aya%29",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r645",
-    "name": "Nigerian Tomato Omelette",
-    "minutes": 45,
-    "servings": 4,
-    "tags": [
-      "breakfast",
-      "medium",
-      "moderate",
-      "vegetarian"
+      "vegetarian",
+      "collection-italian"
     ],
     "ingredients": [
       {
         "qty": null,
         "unit": "",
-        "item": "Eggs"
+        "item": "Uncooked macaroni pasta"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Tomatoes, diced"
+        "item": "Cheese, grated"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Vegetable oil"
+        "item": "½ cup milk"
       },
       {
         "qty": null,
@@ -13631,124 +13578,337 @@
         "qty": null,
         "unit": "",
         "item": "Pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Chives, chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Water"
       }
     ],
     "steps": [
-      "Heat some oil in a pan over high heat (3 minutes).",
-      "Add the tomatoes, and fry until well-heated (3 minutes).",
-      "Beat the eggs, and stir in the cooked tomato (3 minutes).",
-      "Return the mixture to the pan over medium-low heat, making sure it is evenly spread across the pan (3 minutes).",
-      "Cook until the egg is sturdy enough to flip (3 minutes).",
-      "Flip the omelette to the other side, and cook until the bottom is golden (3 minutes).",
-      "Serve hot with bread or jollof rice."
+      "Add macaroni in a bowl and add water for the macaroni to absorb (3 minutes).",
+      "Cook in the microwave for 3 minutes (3 minutes).",
+      "Remove from the microwave (3 minutes).",
+      "Add cheese and milk then stir (3 minutes).",
+      "Insert into the microwave again for 30 seconds (3 minutes).",
+      "Add salt and pepper (3 minutes).",
+      "Add chives for garnish (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Tomato_Omelette",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_and_Cheese_%28Microwaved%29",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r642",
+    "name": "Philly Cheesesteak",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "filet mignon, pounded flat"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Olive oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Freshly ground black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "small onion, julienned"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Hoagie rolls, almost halved"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "American cheese slices, torn"
+      }
+    ],
+    "steps": [
+      "Drizzle filet with olive oil and season with salt and black pepper (3 minutes).",
+      "Sear in a cast-iron skillet over medium heat for 6 minutes per side (3 minutes).",
+      "Remove and let rest 7 minutes before slicing into bite-size pieces (3 minutes).",
+      "Keep warm (3 minutes).",
+      "Toss onion with a little olive oil and sauté in same pan until lightly browned around edges (3 minutes).",
+      "To serve, place a big scoop of steak into a hoagie roll (3 minutes).",
+      "Top with onion and torn cheese (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Philly_Cheesesteak",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r643",
+    "name": "Southern Barbecue Ribs",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "slabs St. Louis style/cut pork spareribs"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "Barbecue Rub"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "Kansas City Barbecue Sauce"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Apple wood chunks"
+      }
+    ],
+    "steps": [
+      "Season ribs with the barbecue rub (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Place chunks into the firebox of a 250°F smoker or the coal area of a 250°F charcoal grill set for indirect heat (3 minutes).",
+      "Place ribs into food box or on top of the grate of the charcoal grill, cover, and cook, basting often with sauce, for 5–6 hours (3 minutes).",
+      "Brush sauce generously on top and bottom of ribs then place on a medium high grill, continually brushing with sauce until well browned, then flip and repeat 1 more time (3 minutes).",
+      "Place remaining sauce into a squirt bottle (3 minutes).",
+      "Meanwhile, remove ribs and let rest for 10 minutes (3 minutes).",
+      "Serve with sauce in a squirt bottle (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Southern_Barbecue_Ribs",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r644",
+    "name": "Maple Syrup Planked Salmon",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "salmon steaks or individual fillets (preferably wild-caught)"
+      },
+      {
+        "qty": 4,
+        "unit": "tbsp",
+        "item": "(60 ml) fresh lemon juice, divided"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "(10 ml) pure maple syrup"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "(30 ml) grapeseed oil (or other neutral oil)"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp (7 g) chipotle powder (chipotle barbecue sauce may be substituted for this)"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "(5 g) crushed dried rosemary"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "scallions, thinly sliced for garnish"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      }
+    ],
+    "steps": [
+      "Completely immerse cedar planks in water for several hours or overnight (3 minutes).",
+      "Heat grill to medium-high (3 minutes).",
+      "Mix 2 tablespoons (30 ml) lemon juice, the oil, rosemary, maple syrup, and half of the chipotle powder in a small bowl (3 minutes).",
+      "Coat the salmon with the mixture and let rest at room temperature for 20 minutes (3 minutes).",
+      "Mix the remaining lemon juice with the remaining chipotle powder with a fork and set aside as a garnish (3 minutes).",
+      "Place plank(s) on grill and close lid (3 minutes).",
+      "Allow plank to heat for a couple minutes (3 minutes).",
+      "Lightly sprinkle salt on plank(s) (3 minutes).",
+      "Put salmon on plank, keeping fish at least an inch from the edge of the plank (in the case of fillets, place skin-side down) (3 minutes).",
+      "Reduce heat to low and close lid (3 minutes).",
+      "Grill for roughly 15 minutes without turning or moving salmon until desired \"doneness\" is reached (3 minutes).",
+      "Generally, salmon should be cooked until the flesh loses its transparency and the meat can easily be broken with a fork (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Syrup_Planked_Salmon",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r645",
+    "name": "Banana Bread with Walnuts",
+    "minutes": 45,
+    "servings": 2,
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "qty": 490,
+        "unit": "g",
+        "item": "all-purpose flour"
+      },
+      {
+        "qty": 5,
+        "unit": "",
+        "item": "½+⅛ tsp baking powder"
+      },
+      {
+        "qty": 1,
+        "unit": "pinch",
+        "item": "salt"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "butter, softened"
+      },
+      {
+        "qty": 320,
+        "unit": "g",
+        "item": "turbinado sugar"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "ea. (200 g) eggs"
+      },
+      {
+        "qty": 950,
+        "unit": "g",
+        "item": "mashed banana"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "½ cups walnuts, coarsely chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Turbinado sugar for sprinkling"
+      }
+    ],
+    "steps": [
+      "Combine the flour, baking powder, and salt (3 minutes).",
+      "Cream the butter and sugar together until light and fluffy (3 minutes).",
+      "Whisk the eggs, and gradually beat them into the butter mixture (3 minutes).",
+      "Mix in one third of the flour mixture, followed by half the banana (3 minutes).",
+      "Continue alternating in this way until all the dry mixture and mashed banana is incorporated (3 minutes).",
+      "Stir in the walnuts (3 minutes).",
+      "Grease and line 2 loaf pans (3 minutes).",
+      "Divide batter evenly between pans (3 minutes).",
+      "Sprinkle the tops with additional turbinado sugar (3 minutes).",
+      "Bake at 350°F for at least 1 hour (3 minutes).",
+      "After this point, check the banana bread every 10 minutes or so until it is done (3 minutes).",
+      "It will be browned, and a skewer inserted into the center of the loaf should come out clean with no more than moist crumbs attached (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Bread_with_Walnuts",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r646",
-    "name": "Nigerian Yam and Potato Porridge",
+    "name": "Chocolate and Banana Bread",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "breakfast",
       "medium",
       "moderate",
-      "vegetarian",
-      "collection-indian"
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 6,
-        "unit": "piece",
-        "item": "of ponmo (cow skin), properly cleaned and cut into small pieces"
-      },
-      {
         "qty": 1,
-        "unit": "",
-        "item": "½ cups water"
+        "unit": "kg",
+        "item": "strong bread flour"
       },
       {
-        "qty": 4,
-        "unit": "",
-        "item": "seasoning cubes (e.g. Maggi)"
+        "qty": 21,
+        "unit": "g",
+        "item": "dried yeast"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Garlic, minced"
-      },
-      {
-        "qty": 15,
-        "unit": "",
-        "item": "scotch bonnet chile peppers (atarodo)"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "cooking spoons of palm oil"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "cooking spoons of vegetable oil"
-      },
-      {
-        "qty": 6,
-        "unit": "",
-        "item": "medium-sized onions, 3 chopped and 3 sliced"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "curry powder"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "¼ teaspoons salt"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "medium-sized yam, peeled and sliced into 4 pieces of 10 cm diameter and 2–2.5-inch thickness"
-      },
-      {
-        "qty": 5,
-        "unit": "",
-        "item": "medium-sized sweet potatoes, peeled and sliced 2–2.5-inch thick"
+        "qty": 650,
+        "unit": "ml",
+        "item": "tepid water"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "ginger/garlic/onion paste"
+        "item": "salt"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "sachet of tomato paste"
-      },
-      {
-        "qty": 4,
-        "unit": "tsp",
-        "item": "ground crayfish"
+        "qty": 35,
+        "unit": "g",
+        "item": "granulated sugar"
       }
     ],
     "steps": [
-      "Place the ponmo in a pot with water, 2 seasoning cubes, garlic, and salt to taste (3 minutes).",
-      "Boil until the ponmo becomes soft, which should take about 10 minutes (3 minutes).",
-      "Blend the chile peppers until about 70% smooth (3 minutes).",
-      "Heat a dry frying pan over medium heat (3 minutes).",
-      "Pour 1 cooking spoon of palm oil and ½ spoon of vegetable oil into the pan, and heat them for about 2 minutes (3 minutes).",
-      "Add one-third of the finely chopped onions to the pan and fry them, stirring continuously for approximately 2 minutes (3 minutes).",
-      "Add the blended peppers, curry powder, ½ teaspoon of salt, and pepper (3 minutes).",
-      "Let the mixture fry for about 8 minutes (3 minutes).",
-      "Add the cooked ponmo to the pan and stir to combine (3 minutes).",
-      "Reduce the heat to low and simmer, covered, for approximately 5 minutes (3 minutes).",
-      "Keep warm until time to serve."
+      "Preheat oven 180°C (3 minutes).",
+      "Mix all the dry ingredients together, add the water, and mix well with your hands (3 minutes).",
+      "Work into a large pliable ball (3 minutes).",
+      "Cut in half (3 minutes).",
+      "Roll the first half of the ball out on a floured board, to about ½ inch thick, 12–15 inches wide, and as long as you can get it within those dimensions (3 minutes).",
+      "Spread nutella thickly and evenly down and across the dough, leaving an inch or so free on all sides (3 minutes).",
+      "Cover the chocolate spread with the banana slices (3 minutes).",
+      "Sprinkle with chopped nuts and chocolate chips if desired (3 minutes).",
+      "Take one of the long sides of the dough and roll it inwards, forming a spiral log (3 minutes).",
+      "Make sure the filling stays \"tucked in\" (3 minutes).",
+      "Arrange the bread on a baking tray, either laid out straight or curled around on itself, whichever you prefer (3 minutes).",
+      "Brush lightly with olive oil (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Yam_and_Potato_Porridge",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chocolate_and_Banana_Bread",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },

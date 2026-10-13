@@ -1055,51 +1055,111 @@
   },
   {
     "id": "r864",
-    "name": "Hanjin Ligidi (Nigerian Lollipops)",
+    "name": "Seafood Gumbo",
     "minutes": 45,
-    "servings": 4,
+    "servings": 10,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": null,
         "unit": "",
-        "item": "Tsamiya (tamarind)"
+        "item": "¾ cup vegetable oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Water"
+        "item": "¾ cup flour"
+      },
+      {
+        "qty": 10,
+        "unit": "oz",
+        "item": "okra (optional)"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "onion, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "celery, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ cups bell pepper, chopped"
+      },
+      {
+        "qty": 6,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 6,
+        "unit": "cup",
+        "item": "shrimp stock or water"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "clam juice (optional)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Sugar"
+        "item": "½ tsp oregano"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Flavoring of choice"
+        "item": "½ tsp thyme"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "bay leaves"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½–1 tsp cayenne pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Black pepper to taste"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "fresh chopped parsley"
       }
     ],
     "steps": [
-      "Shape food-safe paper or aluminum foil into cones (3 minutes).",
-      "Clean any dirt or dust from the tsamiya (3 minutes).",
-      "Wash the tsamiya in a clean bowl of water and drain it thoroughly (3 minutes).",
-      "Soak the tsamiya in hot water for about 5 minutes (3 minutes).",
-      "Transfer the tsamiya soaking liquid to a pot over medium heat (3 minutes).",
-      "Gradually stir in sugar, making sure it dissolves, until it becomes very thick (3 minutes).",
-      "Stir in your desired flavoring and/or coloring (3 minutes).",
-      "Divide the syrup between the prepared cones (3 minutes).",
-      "Let cool slightly, then insert a toothpick or other stick (3 minutes).",
-      "Let set and harden completely (3 minutes).",
-      "Unmold and serve (3 minutes)."
+      "Heat oil in a 6–8 quart pot, then gradually whisk in the flour (3 minutes).",
+      "Cook over medium heat for 20 minutes until very dark reddish brown (3 minutes).",
+      "Stir constantly, especially towards the end (3 minutes).",
+      "The best roux is quite dark, but don’t let it burn (3 minutes).",
+      "Stir the onion, celery, bell pepper, and garlic into the roux (3 minutes).",
+      "Cook 10 minutes (or 15 minutes if using okra) (3 minutes).",
+      "Slowly and gradually whisk in the shrimp stock (3 minutes).",
+      "Add the clam juice, oregano, thyme, bay leaves, salt, cayenne, pepper, and parsley (3 minutes).",
+      "Simmer 15 minutes (3 minutes).",
+      "Add the Andouille sausage, and simmer for another 30–40 minutes (3 minutes).",
+      "Add the shrimp, oysters, and crawfish at the end, and simmer just until cooked through (3 minutes).",
+      "Top with chopped green onions (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hanjin_Ligidi_%28Nigerian_Lollipops%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Seafood_Gumbo",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1390,9 +1450,9 @@
   },
   {
     "id": "r869",
-    "name": "Twice-Baked Potatoes I",
+    "name": "Frito Pie Chili",
     "minutes": 45,
-    "servings": 4,
+    "servings": 8,
     "tags": [
       "dinner",
       "medium",
@@ -1400,76 +1460,96 @@
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "",
-        "item": "medium russet potatoes"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "(30 ml) vegetable oil"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "(475 ml) chopped onions"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Vegetable oil to rub on potato skins"
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cayenne pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "lb",
+        "item": "(900 g) beef bottom round, cut into &#189;-inch (13 mm) cubes"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "(5 ml) chili powder"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "(10 ml) ground cumin"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Crushed red chile peppers"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "(10 ml) dried oregano"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "butter"
+        "item": "(30 ml) chopped garlic"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "(710 ml) crushed tomatoes"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup milk (or less)"
+        "item": "&#189; cup (120 ml) tomato paste"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup sour cream"
-      },
-      {
-        "qty": 4,
-        "unit": "oz",
-        "item": "shredded cheddar cheese"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "A pinch of ground black pepper"
+        "qty": 2,
+        "unit": "cup",
+        "item": "(475 ml) beef stock"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "bell pepper (optional), chopped"
+        "item": "&#189; Tbsp (22 ml) masa"
       },
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "Green onions (optional), chopped"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Bacon (optional), chopped"
+        "item": "&#189; Tbsp (22 ml) flour"
       }
     ],
     "steps": [
-      "Preheat oven to 400°F (200°C) (3 minutes).",
-      "Rub potato skins with vegetable oil to ensure crispness (3 minutes).",
-      "Bake potatoes for 1 hour until done (3 minutes).",
-      "Carefully remove potatoes from oven and cool for 10 minutes (3 minutes).",
-      "Cut potatoes in half lengthwise and scoop out pulp with a small spoon, leaving only a potato shell (3 minutes).",
-      "Mash potato pulp with a fork until smooth (3 minutes).",
-      "Add remaining ingredients until well combined (3 minutes).",
-      "It is better if the mixture is a bit stiff, rather than entirely wet (3 minutes).",
-      "Adjust the amount of milk accordingly (3 minutes).",
-      "Spoon (or pipe) the mixture into the empty potato shells (3 minutes).",
-      "If desired, top the potatoes with bell pepper, onions, and/or bacon (3 minutes).",
-      "Increase oven setting to broil."
+      "In a large saucepan, heat the vegetable oil (3 minutes).",
+      "When the oil is hot, add the onions and sauté for 3 to 5 minutes, or until the vegetables start to wilt (3 minutes).",
+      "Season with salt and cayenne (3 minutes).",
+      "Stir in the beef, chili powder, cumin, crushed red pepper, and oregano (3 minutes).",
+      "Brown the meat for 5 to 6 minutes (3 minutes).",
+      "Stir in the garlic, tomatoes, tomato paste, and beef stock (3 minutes).",
+      "Bring the liquid up to a boil and reduce to a simmer (3 minutes).",
+      "Simmer the liquid, uncovered for 1 hour, stirring occasionally, or until the beef is tender (3 minutes).",
+      "Skim off the fat occasionally (3 minutes).",
+      "Mix the masa and flour together with a little liquid from the stock pot (3 minutes).",
+      "Slowly stir in the masa slurry and continue to cook for 30 minutes, stirring occasionally (3 minutes).",
+      "Adjust salt, cayenne and other spices as needed (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Twice-Baked_Potatoes_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Frito_Pie_Chili",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1539,7 +1619,7 @@
   },
   {
     "id": "r871",
-    "name": "Ukpo Oka (Nigerian Corn Pudding)",
+    "name": "Skillet Cornbread",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -1550,49 +1630,61 @@
     ],
     "ingredients": [
       {
-        "qty": 4.0,
+        "qty": null,
         "unit": "",
-        "item": "ears of fresh sweet corn"
+        "item": "¾ cup white all-purpose flour"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
-        "item": "fresh peppers"
+        "item": "½ tsp baking powder"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
-        "item": "onion"
+        "item": "–2 tbsp white sugar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅓ teaspoon ground crayfish"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup water"
+        "item": "¾ tsp salt"
       },
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "palm oil"
+        "item": "yellow or white cornmeal"
       },
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "⅓ teaspoon salt"
+        "item": "egg"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "–3 tbsp melted butter or pan drippings"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "milk or buttermilk"
       }
     ],
     "steps": [
-      "Blend together the corn, pepper, onion, and crayfish with a small amount of water (3 minutes).",
-      "Transfer the mixture to a bowl, and stir in salt and palm oil to taste (3 minutes).",
-      "Pour the mixture into a mold (3 minutes).",
-      "Place in boiling water, and steam for 45 minutes (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat the oven to 425°F (220°C) (3 minutes).",
+      "Grease the skillet with bacon drippings (ideal) or oil (3 minutes).",
+      "Butter isn't recommended, since it can burn when you preheat the skillet (3 minutes).",
+      "Preheat the skillet until the drippings/oil is smoking (3 minutes).",
+      "This ensures a good crust on the bottom of the cornbread (3 minutes).",
+      "In a bowl, sift together the flour, baking powder, sugar, and salt (3 minutes).",
+      "Thoroughly mix the sifted ingredients together and add the corn meal (3 minutes).",
+      "In a second bowl, beat the egg well (3 minutes).",
+      "Add the melted butter (or pan drippings) and the milk and continue to beat until well mixed (3 minutes).",
+      "Pour the wet ingredients into the dry ingredients and mix using fast strokes (3 minutes).",
+      "Take care not to overmix (3 minutes).",
+      "Pour the batter into the skillet and place in the oven (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ukpo_Oka_%28Nigerian_Corn_Pudding%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Skillet_Cornbread",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1841,50 +1933,70 @@
   },
   {
     "id": "r875",
-    "name": "Vegemite Sandwich",
+    "name": "Chocolate Bourbon Pecan Pie",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "lunch",
+      "dinner",
       "medium",
       "moderate",
       "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
-        "unit": "slice",
-        "item": "bread"
+        "qty": 6,
+        "unit": "",
+        "item": "eggs"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Butter"
+        "item": "½ cup half-and-half"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "loosely-packed brown sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "dark corn syrup"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Vegemite"
+        "item": "½ cup good bourbon"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "⅓ cups chocolate chips"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "½ cups pecan pieces"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Sliced cheese (optional)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Sliced onion (optional)"
+        "item": "Pastry dough for 9-inch pie (commercial or your own)"
       }
     ],
     "steps": [
-      "Toast the bread slices (3 minutes).",
-      "Spread butter thickly and evenly on bread (3 minutes).",
-      "Spread Vegemite a little less thickly, and evenly on bread (3 minutes).",
-      "Add cheese and onion (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat oven to 350°F (175°C) (3 minutes).",
+      "Beat eggs until yellow and creamy, in a large bowl (3 minutes).",
+      "Whisk in half-and-half, sugar, and syrup, until smooth (3 minutes).",
+      "Stir in bourbon, chocolate chips, and pecans (3 minutes).",
+      "Oil a springform pan lightly (3 minutes).",
+      "Roll out the pastry dough and press it into a pan, pressing out any air bubbles (3 minutes).",
+      "Pour mixture into oiled springform pan (3 minutes).",
+      "Put pie on a baking sheet with a raised edge or border (3 minutes).",
+      "Bake until only the center is sightly jiggly, about 2 hours (3 minutes).",
+      "Do not remove the pie from the mold until absolutely cooled, at least an hour (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Vegemite_Sandwich",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chocolate_Bourbon_Pecan_Pie",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2964,7 +3076,7 @@
   },
   {
     "id": "r891",
-    "name": "Yeung Chow Fried Rice",
+    "name": "Low Country Shrimp and Grits",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -2974,74 +3086,96 @@
     ],
     "ingredients": [
       {
-        "qty": 3.0,
-        "unit": "tbsp",
-        "item": "corn oil"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "minced or finely-chopped garlic"
+        "qty": 3,
+        "unit": "",
+        "item": "–4 strips thick smoky bacon, cut into 1-inch pieces"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (100 g) bacon, diced"
+        "item": "½ onion, minced"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "–3 cloves garlic, minced"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "large shrimp, peeled (use peels to make stock)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (100 g) prawn, diced"
+        "item": "Salt"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(50 g) Char siu (barbecued pork), diced"
+        "qty": 1,
+        "unit": "",
+        "item": "pint heavy cream, divided"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "–2½ cups shrimp stock"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅛ cup (25 g) scallion, diced"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(50 g) peas"
+        "item": "Butter"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (100 g) beaten egg"
+        "item": "Black pepper"
       },
       {
-        "qty": 3.0,
-        "unit": "cup",
-        "item": "(600 g) cooked jasmine rice"
+        "qty": null,
+        "unit": "",
+        "item": "Cayenne pepper"
       },
       {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "salt"
+        "qty": null,
+        "unit": "",
+        "item": "Paprika"
       },
       {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "pepper"
+        "qty": null,
+        "unit": "",
+        "item": "Chile flakes"
       },
       {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "jalapeno, diced (optional)"
+        "qty": null,
+        "unit": "",
+        "item": "Lime juice"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "recipe coarse grain hominy grits, timed to finish when shrimp are ready to serve"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "–4 scallions, sliced"
       }
     ],
     "steps": [
-      "Heat the oil in a non-stick skillet, and fry the garlic until golden brown (3 minutes).",
-      "Add the bacon, prawn, and char siu, then cook slightly for 5 minutes (3 minutes).",
-      "Add the scallion, peas, and egg, and cook until all cooked (3 minutes).",
-      "Stir in the rice, salt, pepper and jalapeno (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Fry bacon in a pan until not too crisp; remove and reserve (3 minutes).",
+      "Sauté onion and garlic in bacon fat until just softened (about 2–3 minutes) (3 minutes).",
+      "Lightly season shrimp with salt and add to the pan; sauté until about half-cooked and just turning pink (3 minutes).",
+      "Remove and reserve with the bacon (3 minutes).",
+      "Deglaze pan with sherry (3 minutes).",
+      "Add 1 cup (250 ml) cream, bring to boil, and reduce (3 minutes).",
+      "Add 1 cup shrimp stock, bring to a high simmer, and reduce (3 minutes).",
+      "The liquid should thicken; if necessary, add floured butter at this point (beurre manié) (3 minutes).",
+      "Season sauce with salt, pepper, chili flakes, cayenne, and paprika (3 minutes).",
+      "Add bacon and shrimp to the sauce, and cook gently until shrimp are just done (3 minutes).",
+      "Add lime juice (3 minutes).",
+      "Serve over grits, and garnish with scallions (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Yeung_Chow_Fried_Rice",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Low_Country_Shrimp_and_Grits",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3945,97 +4079,70 @@
   },
   {
     "id": "r904",
-    "name": "Nkwobi (Nigerian Spicy Cow Foot)",
-    "minutes": 60,
-    "servings": 2,
+    "name": "Southern Clam Chowder",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "Cow feet"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt, to taste"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Seasoning cubes"
+        "item": "quart clams, canned or fresh"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "Lrge onion, chopped"
+        "item": "quart rich milk, scalded"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Ugba (optional)"
+        "item": "¼ pound salt pork"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Potash"
+        "item": "Salt to taste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Palm oil"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Ground crayfish"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Ground Cameroon pepper, to taste"
+        "item": "Pepper to taste"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "garlic powder"
+        "unit": "",
+        "item": "quart diced potatoes"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Butter, if desired"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "ground ginger"
-      },
-      {
-        "qty": null,
         "unit": "",
-        "item": "Sliced utazi leaves"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Sliced onions"
+        "item": "onion, diced or chopped"
       }
     ],
     "steps": [
-      "Cut the cow feet into small pieces, and remove all the bigger bones (3 minutes).",
-      "Place the cow feet in a pot, along with the salt, seasoning cubes, and chopped onions (3 minutes).",
-      "Add just enough water to cover the meat (3 minutes).",
-      "Simmer until the meat is tender (3 minutes).",
-      "Add small amounts of water as necessary, but there should be little to no liquid left in the pot once the meat is done (3 minutes).",
-      "In a separate pot, boil the ugba separately for just 3 minutes (3 minutes).",
-      "Drain (3 minutes).",
-      "Dissolve the potash in a cup of water, and strain it into a separate pot (3 minutes).",
-      "Add the palm oil to the potash water, and stir well until thick and yellow (3 minutes).",
-      "Add the crayfish, boiled ugba, Cameroon pepper, seasoning cube, and salt to the palm oil mixture (3 minutes).",
-      "Stir well (3 minutes).",
-      "Add your cooked meat, and stir to coat with the palm oil mixture."
+      "Remove black parts from clams, saving the liquor (3 minutes).",
+      "Cut pork into small pieces and fry until crisp and golden brown, then remove small pieces of pork from the fat (3 minutes).",
+      "Discard fat (3 minutes).",
+      "Add potatoes and onion, with just enough hot water to be seen through the potatoes (3 minutes).",
+      "Cook over low heat-just simmer-until done (3 minutes).",
+      "When potatoes are done, add clams and pork and cook for 2 minutes after coming to a boil (3 minutes).",
+      "Longer cooking will make the clams tough (3 minutes).",
+      "Remove chowder from heat and let stand for few minutes, then add hot milk, the clam liquor and seasoning to taste (3 minutes).",
+      "If seasonings are added before hot milk, the chowder may curdle (3 minutes).",
+      "Serve hot (3 minutes).",
+      "May add butter to each bowl for extra taste (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nkwobi_%28Nigerian_Spicy_Cow_Foot%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Southern_Clam_Chowder",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4164,65 +4271,61 @@
   },
   {
     "id": "r907",
-    "name": "Adobo Sauce",
+    "name": "Biscuits and Gravy",
     "minutes": 45,
     "servings": 4,
     "tags": [
-      "dinner",
+      "breakfast",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 12.0,
-        "unit": "",
-        "item": "chipotle peppers or smoked, dried jalapeño peppers (most co-ops can get these for you, or try the specialty produce section of your grocery store)"
+        "qty": 1,
+        "unit": "lb",
+        "item": "(500 g) ground breakfast sausage"
       },
       {
-        "qty": 4.0,
-        "unit": "cup",
-        "item": "(0.95 L) water"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup (120 ml) onion, diced"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup (80 ml) apple cider vinegar"
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "(15 mL) bacon grease"
       },
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "(60 ml) ketchup"
+        "item": "(60 mL) flour"
       },
       {
-        "qty": 3.0,
-        "unit": "clove",
-        "item": "garlic, crushed or sliced"
-      },
-      {
-        "qty": 1.0,
-        "unit": "pinch",
-        "item": "cumin, oregano"
+        "qty": 3,
+        "unit": "cup",
+        "item": "(720 mL) milk"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "½ tsp (2.5 mL) salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ tbsp (4 mL) ground black pepper"
       }
     ],
     "steps": [
-      "Combine all ingredients in a heavy saucepan (3 minutes).",
-      "Cook over a very low heat for 1–2 hours until the chiles are very soft and the liquid has been reduced to about 1 cup (3 minutes).",
-      "Alternatively, cook in a slow cooker overnight (3 minutes).",
-      "Beat with a mortar and pestle, or put in blender to puree for a thick sauce (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Make 'cut' biscuit dough (3 minutes).",
+      "Place the cut biscuits in the oven when you add the bacon grease to the skillet in the gravy procedure below (step 3) (3 minutes).",
+      "Remove from oven after 10 to 12 minutes; the biscuits should be warm when served with the gravy (3 minutes).",
+      "Brown the sausage in a large skillet (3 minutes).",
+      "Remove the browned sausage from the skillet and reserve in a bowl, being careful to leave as much of the drippings as possible in the pan (3 minutes).",
+      "Add the bacon grease to the skillet, and place the skillet on low to medium-low heat (3 minutes).",
+      "Once the bacon grease is up to temperature, mix the flour into the grease (3 minutes).",
+      "Add the milk slowly, mixing as you pour (3 minutes).",
+      "Bring to a gentle boil, stirring constantly scraping the bottom and edges of the skillet (3 minutes).",
+      "Stirring keeps the gravy from becoming too lumpy or burnt (3 minutes).",
+      "Continue stirring until the gravy has nearly reached the desired consistency, usually about 10 minutes (3 minutes).",
+      "Add the browned sausage held in reserve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Adobo_Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Biscuits_and_Gravy",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4586,47 +4689,67 @@
   },
   {
     "id": "r913",
-    "name": "Almond Milk I",
+    "name": "Hot Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": 3,
+        "unit": "oz",
+        "item": "(85 g) butter, melted"
+      },
+      {
+        "qty": 3,
+        "unit": "oz",
+        "item": "(85 g) hot sauce"
+      },
+      {
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Oil for deep frying"
+      },
+      {
+        "qty": 12,
+        "unit": "",
+        "item": "whole chicken wings, tip removed and cut in half"
+      },
+      {
         "qty": 1,
-        "unit": "cup",
-        "item": "() almonds"
+        "unit": "tbsp",
+        "item": "seasoned salt"
       },
       {
-        "qty": 4,
-        "unit": "cup",
-        "item": "() water"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Dates (optional)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt (optional)"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper"
       }
     ],
     "steps": [
-      "Soak the almonds in the water overnight (3 minutes).",
-      "They should swell and become supple (3 minutes).",
-      "Grind the soaked almonds and water in a blender (3 minutes).",
-      "Blend in a pinch of salt and a few dates if desired (3 minutes).",
-      "Strain the almond mixture through a fine filter to remove the almond solids (3 minutes).",
-      "Folded cheesecloth or a nut milk bag work well (3 minutes).",
-      "Use the almond milk immediately or chill."
+      "To make the sauce, combine melted butter, hot sauce, minced garlic, and soy sauce in a stainless steel bowl (3 minutes).",
+      "Preheat oil to 350°F (180°C) (3 minutes).",
+      "Combine seasoning salt, pepper, and wings (3 minutes).",
+      "Toss to coat (3 minutes).",
+      "Fry wings in batches in oil for 11 minutes (3 minutes).",
+      "Drain on a rack (3 minutes).",
+      "Do not use paper towels—they will make the food greasy (3 minutes).",
+      "Toss wings with sauce and serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Almond_Milk_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hot_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4991,27 +5114,27 @@
     ],
     "ingredients": [
       {
-        "qty": 8.0,
+        "qty": 8,
         "unit": "oz",
         "item": "(225 g) plain flour"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "oz",
         "item": "(110 g) margarine"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "oz",
         "item": "(55 g) lard"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "pinch",
         "item": "salt"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "cold water"
       }
@@ -5179,12 +5302,12 @@
     ],
     "ingredients": [
       {
-        "qty": 400.0,
+        "qty": 400,
         "unit": "",
         "item": "–500 g of skinless, boneless chicken thighs or breasts (with the bone, this will probably be 800 g)"
       },
       {
-        "qty": 50.0,
+        "qty": 50,
         "unit": "g",
         "item": "tandoori masala powder"
       },
@@ -5194,17 +5317,17 @@
         "item": "½ cup of unsweetened yoghurt"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "small lemon or lime, juiced"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "butter"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "Lrge onion, sliced finely"
       },
@@ -5214,37 +5337,37 @@
         "item": "¼ teaspoon of cinnamon (optional)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "–3 cloves of crushed garlic"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "grated ginger"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "ground turmeric"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "ground coriander"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "–3 teaspoons of chile powder"
       },
       {
-        "qty": 100.0,
+        "qty": 100,
         "unit": "",
         "item": "–200 g tomato paste"
       },
       {
-        "qty": 100.0,
+        "qty": 100,
         "unit": "g",
         "item": "full cream"
       }
@@ -5352,12 +5475,12 @@
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(16 oz) of coconut milk"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(16 oz) of coconut cream"
       },
@@ -5382,7 +5505,7 @@
         "item": "¾ cup white granulated sugar"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "pinch",
         "item": "salt"
       },
@@ -6997,63 +7120,52 @@
   },
   {
     "id": "r948",
-    "name": "Beef Carpaccio I",
+    "name": "No-Bake Cheesecake",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 400,
+        "qty": 75,
         "unit": "g",
-        "item": "high quality beef fillet"
+        "item": "(5 Tbsp + 1 tsp) butter"
       },
       {
-        "qty": 90,
+        "qty": 200,
+        "unit": "g",
+        "item": "(7 oz) tennis biscuits or digestive biscuits, crushed to fine crumbs"
+      },
+      {
+        "qty": 540,
+        "unit": "g",
+        "item": "(19 oz) cream cheese, softened to room temperature"
+      },
+      {
+        "qty": 750,
+        "unit": "g",
+        "item": "(26.4 oz) tinned sweetened condensed milk"
+      },
+      {
+        "qty": 10,
         "unit": "ml",
-        "item": "extra-virgin olive oil"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small handful pine kernels, for toasting"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "Parmesan, for shaving"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "dash of truffle oil, for drizzling (optional)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Black pepper"
+        "item": "(2 tsp) lemon juice"
       }
     ],
     "steps": [
-      "Cut the beef fillet into extremely thin slices (about 2 mm) (3 minutes).",
-      "Lay a piece of cling film on the work surface, place the sliced beef on top and place another layer of film over (3 minutes).",
-      "Flatten the slices with the back of a knife (3 minutes).",
-      "Pour a small puddle of olive oil onto a large plate and place a layer of beef over it (3 minutes).",
-      "Season with the salt and pepper and continue making layers with all the beef (3 minutes).",
-      "Cover the plate with cling film and leave to marinate for half an hour (3 minutes).",
-      "Meanwhile toast the pine nuts in a dry frying pan (3 minutes).",
-      "Transfer the beef onto individual plates (3 minutes).",
-      "Cover with pine nuts, shavings of Parmesan and a dash of truffle oil if you have any."
+      "Combine melted butter with biscuit crumbs (3 minutes).",
+      "Press into a pie dish to make a crust (3 minutes).",
+      "Beat cream cheese until smooth and fluffy (3 minutes).",
+      "Beat lemon juice and condensed milk together (3 minutes).",
+      "Mix the condensed milk mixture into beaten cream cheese until thoroughly combined (3 minutes).",
+      "Pour filling into the prepared pie dish (3 minutes).",
+      "Refrigerate for minimum of 24 hours until set (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beef_Carpaccio_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:No-Bake_Cheesecake",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7469,42 +7581,42 @@
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "lb",
         "item": "chicken pieces (legs, thighs, or a whole chicken cut into pieces)"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tbsp",
         "item": "berbere spice blend"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "Lrge onion, finely chopped"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "clove",
         "item": "of garlic, minced"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "ginger, grated"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "olive oil"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "butter"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "chicken broth"
       },
@@ -7600,17 +7712,17 @@
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "olive oil"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "onion, diced"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "cup",
         "item": "vegetable stock, divided"
       },
@@ -7620,7 +7732,7 @@
         "item": "½ cup peanut butter"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "cup",
         "item": "canned diced tomatoes, with juices"
       },
@@ -7630,32 +7742,32 @@
         "item": "¼ teaspoon crushed red pepper flakes, or more to taste"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "finely chopped cabbage"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "chopped sweet potato"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "peeled and chopped carrot"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "peeled and chopped turnip"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "chopped okra"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "chopped cooked chicken, or to taste"
       }
@@ -8642,7 +8754,7 @@
   },
   {
     "id": "r971",
-    "name": "Bruschetta",
+    "name": "Layered Pecan Pie",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -8653,44 +8765,52 @@
     ],
     "ingredients": [
       {
-        "qty": 1.0,
-        "unit": "l",
-        "item": "oaf of Italian or French bread, sliced ½ inch (1.25 cm) thick on the bias"
+        "qty": 1,
+        "unit": "package",
+        "item": "(8 ounces) cream cheese"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ head garlic"
+        "item": "⅓ cup white granulated sugar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Kosher salt or sea salt"
+        "item": "¼ teaspoon salt"
       },
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "Freshly-ground black pepper"
+        "item": "egg"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Extra-virgin olive oil"
+        "qty": 1,
+        "unit": "tsp",
+        "item": "vanilla extract"
       },
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "Toppings of your choice (see examples below)"
+        "item": "ea. 9-inch unbaked pie shell, or single homemade pie crust"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "chopped pecans"
       }
     ],
     "steps": [
-      "Toast the bread slices in a toaster oven, under a broiler, or on a grill, until they turn golden (3 minutes).",
-      "Immediately rub the bread with the cut side of the garlic (3 minutes).",
-      "Sprinkle with salt and black pepper, and drizzle generously with extra-virgin olive oil (3 minutes).",
-      "Serve warm topped with whatever combinations of seasonal ingredients you choose (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat oven to 375°F (3 minutes).",
+      "Combine the cream cheese, sugar, and salt; beat until smooth (3 minutes).",
+      "Add egg and vanilla, beating well after each (3 minutes).",
+      "Spoon mixture into unbaked pie shell (3 minutes).",
+      "Sprinkle with pecans (3 minutes).",
+      "Combine 3 eggs, corn syrup, remaining sugar, and vanilla; beat well (3 minutes).",
+      "Pour this mixture over pecans (3 minutes).",
+      "Bake for 35–40 minutes or until set (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bruschetta",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Layered_Pecan_Pie",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8888,104 +9008,114 @@
   },
   {
     "id": "r975",
-    "name": "Cabbage Salad",
+    "name": "BBQ Pork Fried Rice",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ head (500 grams) white cabbage"
+        "qty": 1,
+        "unit": "piece",
+        "item": "(750 g) boneless pork loin, cut into 30 pieces"
       },
       {
-        "qty": 100.0,
+        "qty": 50,
         "unit": "ml",
-        "item": "rapeseed oil"
+        "item": "barbeque sauce"
       },
       {
-        "qty": 2.0,
+        "qty": 15,
+        "unit": "ml",
+        "item": "light soy sauce"
+      },
+      {
+        "qty": 30,
+        "unit": "ml",
+        "item": "hoisin sauce"
+      },
+      {
+        "qty": 5,
         "unit": "tbsp",
-        "item": "white vinegar"
+        "item": "sugar"
       },
       {
-        "qty": 1.0,
-        "unit": "pinch",
-        "item": "salt"
-      },
-      {
-        "qty": 1.0,
-        "unit": "pinch",
-        "item": "coarsely-ground pepper"
+        "qty": 2,
+        "unit": "",
+        "item": "½ tbsp salt"
       }
     ],
     "steps": [
-      "Slice the cabbage finely (about 1–2 mm thick) (3 minutes).",
-      "Make a dressing of oil, vinegar, salt, and pepper (3 minutes).",
-      "Toss the cabbage with the dressing (3 minutes).",
-      "Put the salad in the fridge overnight (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine the barbecue sauce, soy sauce, hoisin sauce, sugar, and salt to make the marinade (3 minutes).",
+      "Place the pork into the sauce mixture (3 minutes).",
+      "Cover with plastic wrap, and refrigerate for 25 minutes (3 minutes).",
+      "Make sure the sauce in the bowl is really absorbed (3 minutes).",
+      "Transfer the pork to a baking pan, and bake for 20 minutes at  (3 minutes).",
+      "When finished, put the pork onto a plate (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cabbage_Salad",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:BBQ_Pork_Fried_Rice",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r976",
-    "name": "Candied Sweet Potatoes",
+    "name": "Sloppy Joes",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 4.0,
-        "unit": "",
-        "item": "medium sweet potatoes, peeled and sliced"
+        "qty": 1,
+        "unit": "lb",
+        "item": "(450 g) ground beef"
       },
       {
-        "qty": 4.0,
-        "unit": "g",
-        "item": "ranny Smith apples, peeled, cored, and sliced"
+        "qty": 1,
+        "unit": "cup",
+        "item": "ketchup"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup raisins"
+        "qty": 1,
+        "unit": "cup",
+        "item": "barbecue sauce"
       },
       {
-        "qty": 2.0,
+        "qty": 1,
         "unit": "tbsp",
-        "item": "honey"
+        "item": "garlic powder"
       },
       {
-        "qty": 3.0,
+        "qty": 1,
         "unit": "tbsp",
-        "item": "apple juice or cider"
+        "item": "chili powder"
       },
       {
-        "qty": 3.0,
-        "unit": "tbsp",
-        "item": "melted butter"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "chopped onion (optional)"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "chopped green bell pepper (optional)"
       }
     ],
     "steps": [
-      "Arrange sliced sweet potatoes, apples, and raisins in a greased 2-quart baking dish (3 minutes).",
-      "Mix the liquids and butter together (3 minutes).",
-      "Pour over the dish's contents (3 minutes).",
-      "Cover with foil and bake at 350°F for 30 to 45 minutes, until sweet potatoes are tender and glazed (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Brown the ground beef, onions, and peppers in skillet on medium heat (3 minutes).",
+      "Drain the liquid from the mixture (3 minutes).",
+      "Place the ground beef back on the skillet (3 minutes).",
+      "While on medium heat mix in the ketchup, barbecue sauce, garlic powder, and chili powder in any order (3 minutes).",
+      "Simmer for 20 minutes (3 minutes).",
+      "Serve over sliced, toasted hamburger buns (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Candied_Sweet_Potatoes",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sloppy_Joes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9472,7 +9602,7 @@
   },
   {
     "id": "r984",
-    "name": "Cassava Pone",
+    "name": "Meatless Sloppy Joes",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -9483,54 +9613,54 @@
     ],
     "ingredients": [
       {
-        "qty": 3.0,
-        "unit": "lb",
-        "item": "(1.36 kg) raw cassava, peeled and grated"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp (2.5 ml) ground cinnamon"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp (2.5 ml) ground black pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp (2.5 ml) ground nutmeg"
-      },
-      {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
-        "item": "(10 ml) vanilla extract"
-      },
-      {
-        "qty": 4.0,
-        "unit": "tbsp",
-        "item": "(60 ml) melted butter or coconut oil"
+        "item": "olive oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ cup (180 ml) brown sugar"
+        "item": "½ onion, chopped"
       },
       {
-        "qty": 3.0,
+        "qty": null,
+        "unit": "",
+        "item": "½ green bell pepper, chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "⅓ cup shredded carrot"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "of chili beans, undrained"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ cups cooked brown rice"
+      },
+      {
+        "qty": 1.25,
         "unit": "cup",
-        "item": "(720 ml) unsweetened evaporated milk or coconut milk"
+        "item": "hickory-smoked barbecue sauce, or to your preference"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Hamburger buns"
       }
     ],
     "steps": [
-      "Preheat the oven to 350°F (180°C) (3 minutes).",
-      "Combine all the ingredients together, mixing well to incorporate (3 minutes).",
-      "Transfer the mixture to a baking dish (3 minutes).",
-      "Bake the cassava pone for 60 minutes until firm and golden (3 minutes).",
+      "Add olive oil to pan over medium-high heat (3 minutes).",
+      "Add onions, bell pepper, and carrots and cook for 3–4 minutes (3 minutes).",
+      "Add rice, chili beans, and barbecue sauce and cook for approximately 10–15 minutes, stirring frequently to heat thoroughly (3 minutes).",
+      "Serve on hamburger buns (3 minutes).",
       "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cassava_Pone",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Meatless_Sloppy_Joes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10036,70 +10166,7 @@
   },
   {
     "id": "r993",
-    "name": "Six Layer Casserole",
-    "minutes": 45,
-    "servings": 4,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate"
-    ],
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "diced potatoes"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "carrots diced"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup diced onion"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup raw rice"
-      },
-      {
-        "qty": 1,
-        "unit": "lb",
-        "item": "ground beef"
-      },
-      {
-        "qty": 10,
-        "unit": "oz",
-        "item": "canned tomato soup (you may also use homemade tomato sauce)"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "water"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "salt and pepper"
-      }
-    ],
-    "steps": [
-      "Spread layers of raw vegetables and rice in a 9x9-inch baking dish in the order mentioned above and crumble raw hamburger on the top (3 minutes).",
-      "Mix the soup and water and pour over all (3 minutes).",
-      "Add salt and pepper on top (3 minutes).",
-      "Bake about 1.5–2 hours at 350°F (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Six_Layer_Casserole",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r994",
-    "name": "Cheese Sauce I",
+    "name": "Chipotle Chili",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -10110,56 +10177,147 @@
     ],
     "ingredients": [
       {
+        "qty": null,
+        "unit": "",
+        "item": "½ tbsp vegetable oil"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large sweet onion, coarsely chopped"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "small red onion, coarsely chopped"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "–10 garlic cloves, minced"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "–4 leftover hamburger patties, grilled and chilled"
+      },
+      {
+        "qty": 4,
+        "unit": "tsp",
+        "item": "ground cumin"
+      },
+      {
         "qty": 2,
-        "unit": "",
-        "item": "½ tablespoons butter"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "½ tablespoons flour"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "heavy whipping cream or ½ cup whole milk, hot"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "cream cheese"
+        "unit": "tsp",
+        "item": "chili powder"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup grated cheddar cheese"
+        "item": "½ tsp salt"
       },
       {
-        "qty": null,
+        "qty": 4,
         "unit": "",
-        "item": "⅓ cup grated mozzarella cheese"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon mustard (optional)"
+        "item": "–5 small sweet chiles"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "½–2 pinches of salt"
+        "item": "small can of chipotle chiles in adobo sauce"
+      },
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "(330 ml) hoppy beer (recipe developed with Lagunitas IPA)"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large can (14.5 oz / 411 g) of chopped tomatoes, or more"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "small can of tomato paste"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "(14.5 oz / 411 g) black beans, drained and rinsed"
+      },
+      {
+        "qty": 1,
+        "unit": "can",
+        "item": "(14.5 oz / 411 g) dark kidney beans, drained and rinsed"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "tableside additions such as sour cream, shredded cheese, Fritos, Cheese-its, etc."
       }
     ],
     "steps": [
-      "Melt the butter in a saucepan (3 minutes).",
-      "Add the flour and whisk together over medium heat for 2–3 minutes, to make a white roux (3 minutes).",
-      "Do not allow to brown (3 minutes).",
-      "Remove from heat and allow to cool nearly to room temperature (3 minutes).",
-      "Gradually add hot heavy whipping cream to the roux, whisking to combine (3 minutes).",
-      "This will also work with a hot roux and room temperature heavy cream or milk (3 minutes).",
-      "Add the salt, cheese, and mustard, then heat till just simmering and cheese has melted."
+      "Using a food processor, grind the leftover hamburger patties into a coarse powder (3 minutes).",
+      "In a bowl, mix the ground hamburgers with the cumin, chili powder, and salt (3 minutes).",
+      "Set aside (3 minutes).",
+      "Don't bother cleaning the food processor after grinding the meat (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cheese_Sauce_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chipotle_Chili",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r994",
+    "name": "White Chocolate Cheesecake",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ],
+    "ingredients": [
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "shortbread crumbs"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "ground almonds"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "white granulated sugar"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "⅛ teaspoon almond extract"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "melted butter"
+      }
+    ],
+    "steps": [
+      "Mix ingredients for the crust (shortbread crumbs, ground almonds, sugar, almond extract, and melted butter) and press into the bottom of a springform pan (3 minutes).",
+      "Bake at 200°C degrees for 5–6 minutes (3 minutes).",
+      "Remove from oven and cool (3 minutes).",
+      "When cool, grease the sides of the pan lightly (3 minutes).",
+      "Melt and cool the chocolate (3 minutes).",
+      "Mix together cream cheeses, then add eggs, one at a time (3 minutes).",
+      "Mix in sugar, flour, vanilla, and almond extract (3 minutes).",
+      "Stir 1 cup of mixture into the chocolate, then mix all (3 minutes).",
+      "Pour into the pan and bake at 160°C for 40 minutes (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:White_Chocolate_Cheesecake",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10515,27 +10673,27 @@
         "item": "¾ cup (about 170 ml) roasted peanuts (unsalted)"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "cup",
         "item": "(about 1 L) coconut milk (unsweetened)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "(about 30 ml) red curry paste"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "(about 30 ml) sugar"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tbsp",
         "item": "(about 45 ml) lemon juice"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tsp",
         "item": "(about 15 ml) fish sauce"
       }
@@ -10697,9 +10855,9 @@
   },
   {
     "id": "r1003",
-    "name": "Chicken Gyros",
+    "name": "New Mexico Chili Verde",
     "minutes": 45,
-    "servings": 4,
+    "servings": 5,
     "tags": [
       "dinner",
       "medium",
@@ -10707,44 +10865,79 @@
     ],
     "ingredients": [
       {
-        "qty": 1.0,
-        "unit": "clove",
-        "item": "garlic"
+        "qty": 2,
+        "unit": "",
+        "item": "green bell peppers, chopped (not frequently used in New Mexico)"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "large, mild green chile peppers"
+      },
+      {
+        "qty": 5,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large can (16 oz) stewed tomatoes"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "pork bouillon granules"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "dried oregano"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "whole cumin seeds"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "coriander"
+      },
+      {
+        "qty": 8,
+        "unit": "oz",
+        "item": "ground pork"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large onion, chopped"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "butter or margarine"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Smoked paprika"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Olive oil"
-      },
-      {
-        "qty": 1.3,
-        "unit": "lb",
-        "item": "(~590 grams) chicken breast, diced"
+        "item": "⅓ cup (240 ml) all-purpose flour"
       }
     ],
     "steps": [
-      "Grate the garlic clove, then combine with the paprika, olive oil, salt, and pepper (3 minutes).",
-      "Mix the chicken into the marinade (3 minutes).",
-      "If desired, let marinate (3 minutes).",
-      "Cook the chicken in a non-stick skillet until the chicken is golden and cooked through (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine bell peppers, chili peppers, water, tomatoes, bouillon, oregano, cumin, and coriander in a large pot (3 minutes).",
+      "Cook over medium heat until peppers are tender (3 minutes).",
+      "Meanwhile, cook pork and onion in a skillet over medium heat, stirring occasionally, about ten minutes, or until pork is browned and crumbly (3 minutes).",
+      "Drain pork and add to chile mixture (3 minutes).",
+      "Simmer for 20 minutes (3 minutes).",
+      "Heat butter in the skillet over medium-low heat (3 minutes).",
+      "Add flour (3 minutes).",
+      "Cook, stirring frequently, until flour browns, about 2 minutes (3 minutes).",
+      "Add flour mixture to chile (3 minutes).",
+      "Continue cooking and stirring until thickened to preference (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Gyros",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:New_Mexico_Chili_Verde",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10936,7 +11129,7 @@
   },
   {
     "id": "r1006",
-    "name": "Chicken Rice Salad",
+    "name": "Fried Chicken",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -10948,87 +11141,47 @@
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (120 ml) mayonnaise"
+        "item": "Dry ground seasonings as desired (e.g. pepper, paprika, onion powder, garlic powder, etc.)"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(120 ml) plain yoghurt"
+        "qty": 1,
+        "unit": "",
+        "item": "fryer chicken, cut up (see notes below)"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "quart buttermilk"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (120 g) walnuts, chopped"
+        "item": "½ cup salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (120 ml) condensed cream of mushroom soup"
-      },
-      {
-        "qty": 3.0,
-        "unit": "",
-        "item": "hard boiled eggs, peeled and chopped"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tbsp",
-        "item": "chopped fresh parsley"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tsp",
-        "item": "lemon juice"
-      },
-      {
-        "qty": 1.0,
-        "unit": "",
-        "item": "½ teaspoon salt or less, to taste"
-      },
-      {
-        "qty": 1.0,
-        "unit": "tsp",
-        "item": "pepper"
+        "item": "Flour"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon dry mustard"
-      },
-      {
-        "qty": 3.0,
-        "unit": "cup",
-        "item": "(700 g) cooked rice, cooled"
-      },
-      {
-        "qty": 2.0,
-        "unit": "cup",
-        "item": "(480 g) cooked chicken, cooled and chopped"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(60 g) grated carrot"
-      },
-      {
-        "qty": 2.0,
-        "unit": "tbsp",
-        "item": "green onion, chopped"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup (120 g) celery, chopped"
+        "item": "A quantity of oil suitable for the desired cooking method (see notes below)"
       }
     ],
     "steps": [
-      "In the serving bowl, whisk or mix mayonnaise, yoghurt, cream of mushroom soup, lemon juice, salt, pepper, and dry mustard until smooth (3 minutes).",
-      "Add remaining ingredients and mix well using a spoon or fork (3 minutes).",
-      "Refrigerate for at least half an hour (3 minutes).",
-      "Top with a sprig of parsley and serve (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine all seasonings in desired quantities to make a spice rub (3 minutes).",
+      "Pour the buttermilk into a bowl and dissolve in the salt (3 minutes).",
+      "Piece by piece, roll the chicken around in the spice rub (3 minutes).",
+      "Submerge each chicken piece in the buttermilk (3 minutes).",
+      "Cover the bowl of buttermilk and chicken and refrigerate (3 minutes).",
+      "You can get by with as few as two hours if you are in a hurry, but the flavor will suffer (3 minutes).",
+      "You can also park it overnight, but in this case you should reduce the salt to ⅓ cup (3 minutes).",
+      "Shortly before you want to cook the chicken, remove it from the buttermilk and drain (3 minutes).",
+      "Roll it around in flour so that it is well covered in flour (3 minutes).",
+      "Shake off the excess flour (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Rice_Salad",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Chicken",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -11866,67 +12019,67 @@
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "lb",
         "item": "ground meat (e.g. beef, pork, turkey)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "can",
         "item": "(29 ounces) tomato sauce"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "can",
         "item": "(29 ounces) kidney beans (with liquid)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "can",
         "item": "(29 ounces) black beans (with liquid)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "can",
         "item": "(29 ounces) pinto beans (with liquid)"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "can",
         "item": "(29 ounces) diced tomatoes"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "cup",
         "item": "water"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "medium onion, diced"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "stalk",
         "item": "celery, diced"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tsp",
         "item": "cumin powder"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tbsp",
         "item": "chili powder"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "black pepper"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "salt"
       }
@@ -12169,17 +12322,17 @@
         "item": "½ gallon (about 2 liters) whole milk"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(12 oz / 350 ml) evaporated milk"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "stick (½ cup / 110 g) of butter"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "–2 cans (14–28 oz / 430–860 ml) chicken broth (if using boneless, skinless chicken parts)"
       },
@@ -12288,37 +12441,37 @@
     ],
     "ingredients": [
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "cup",
         "item": "all-purpose flour"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "active dry yeast"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "sugar"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "salt"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "warm water"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "niter kibbeh (Ethiopian spiced clarified butter), or regular butter/oil"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg, beaten (for egg wash)"
       }
@@ -12615,7 +12768,7 @@
   },
   {
     "id": "r1029",
-    "name": "Coconut Pudding I",
+    "name": "Lime and Mascarpone Cheesecake",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -12626,46 +12779,40 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 500,
+        "unit": "g",
+        "item": "mascarpone cheese or plain cream cheese"
+      },
+      {
+        "qty": 4,
         "unit": "",
-        "item": "tender (young) coconuts, flesh scooped out"
+        "item": "limes (preferably unwaxed)"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "tender (young) coconut water"
+        "qty": 200,
+        "unit": "g",
+        "item": "ginger nut biscuits, crushed or ground in a food processor"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "China grass (agar) strands"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "milk"
+        "qty": 50,
+        "unit": "g",
+        "item": "butter"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup condensed milk"
+        "item": "Icing sugar to taste"
       }
     ],
     "steps": [
-      "Purée the young coconut flesh in a blender, and keep aside (3 minutes).",
-      "In a saucepan, combine the tender coconut water and china-grass strands (3 minutes).",
-      "Heat gently until the china-grass strands melt completely (3 minutes).",
-      "In the meantime, heat milk and condensed milk in another saucepan over medium heat (3 minutes).",
-      "Let it come to a boil (3 minutes).",
-      "To the boiled milk, add the melted china-grass mixture, and combine well (3 minutes).",
-      "Remove from the flame and let it cool down for at least 5 minutes (3 minutes).",
-      "Add the pureed tender coconut to the cooled milk mixture, and mix everything well (3 minutes).",
-      "Pour the mixture into a cake pan or stainless steel pan (3 minutes).",
-      "Place the pudding in the freezer for about 15 minutes or until it begins to set (3 minutes).",
-      "Remove the pudding from the freezer and place it in the refrigerator until fully set (3 minutes).",
-      "Using a knife, gently cut the pudding and serve it in dessert bowls."
+      "Melt the butter in a saucepan and add the biscuit crumbs (3 minutes).",
+      "Press firmly into a 20 cm diameter loose-bottomed pan and put aside (3 minutes).",
+      "Put the mascarpone in a bowl and beat until firm (3 minutes).",
+      "Add the juice of 3 of the limes and the grated or zested rind of all 4 into the cheese (3 minutes).",
+      "Stir, adding icing sugar to taste (3 minutes).",
+      "Spread the cheese mixture over the biscuit base and chill for an hour or so before serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coconut_Pudding_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lime_and_Mascarpone_Cheesecake",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12688,7 +12835,7 @@
         "item": "½ cup moong dal"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "g",
         "item": "reen chiles"
       },
@@ -12698,7 +12845,7 @@
         "item": "½ tsp turmeric powder"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "½ cups water"
       },
@@ -12708,17 +12855,17 @@
         "item": "Salt to taste"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "cooking oil or ghee"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "sprig curry leaves"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tsp",
         "item": "jeera (cumin)"
       }
@@ -12794,7 +12941,7 @@
   },
   {
     "id": "r1032",
-    "name": "Coddle",
+    "name": "Buttermilk Fried Chicken with Pan Gravy",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -12804,49 +12951,75 @@
     ],
     "ingredients": [
       {
-        "qty": 550.0,
-        "unit": "g",
-        "item": "sausages"
-      },
-      {
-        "qty": 250.0,
-        "unit": "g",
-        "item": "bacon, chopped into 3 cm pieces"
-      },
-      {
-        "qty": 300.0,
-        "unit": "ml",
-        "item": "chicken stock or water"
-      },
-      {
-        "qty": 6.0,
+        "qty": 1,
         "unit": "",
-        "item": "medium-sized potatoes"
+        "item": "whole chicken"
       },
       {
-        "qty": 2.0,
-        "unit": "",
-        "item": "medium onions"
+        "qty": 2,
+        "unit": "cup",
+        "item": "buttermilk"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "mustard powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cayenne powder"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "cracked black peppercorns"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "cinnamon"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "oregano"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "parsley"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "paprika"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt"
+        "item": "Flour seasoned with herbs and spices (e.g. pepper, cayenne, salt, ground coriander, cinnamon, thyme, oregano)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper"
+        "item": "Oil (e.g. peanut or corn oil)"
       }
     ],
     "steps": [
-      "Completely submerge bacon, onions, and sausages in broth, then boil for about 5 minutes (3 minutes).",
-      "Add the potatoes, cutting into bite-sized pieces if necessary, then add the rest of the stock (3 minutes).",
-      "Return to the boil and simmer for about 1 hour, or until the potatoes have started to disintegrate, thickening the broth (3 minutes).",
-      "Add salt and pepper to serve (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Cut the chicken into 8–10 pieces (3 minutes).",
+      "Combine the buttermilk and spices, and marinate the chicken pieces for 4 hours in the mixture (3 minutes).",
+      "Take each chicken piece out of the marinade and allow it to drip dry for a few seconds (3 minutes).",
+      "Then, dredge it in seasoned flour (3 minutes).",
+      "An easy way to dredge involves putting flour and seasonings in a small plastic bag, dropping the piece in, and shaking (3 minutes).",
+      "Let the pieces rest (separately; do not stack) for about 10 minutes (3 minutes).",
+      "Then dredge them again (3 minutes).",
+      "The first dredging absorbs the buttermilk marinade (3 minutes).",
+      "The second dredging gives a seasoned flour outer coat (3 minutes).",
+      "Drain the chicken on absorbent paper or cloth (3 minutes).",
+      "If you are not serving the chicken immediately, place it in a lightly-warmed oven, uncovered, separately (not stacked) (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coddle",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Buttermilk_Fried_Chicken_with_Pan_Gravy",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12953,102 +13126,58 @@
   },
   {
     "id": "r1034",
-    "name": "Cola I",
+    "name": "Maple Planked Salmon with Rum Glaze",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "½ ea. lemon, peel removed"
+        "item": "side (1.5–2 lb) of sockeye salmon"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ ea. orange, peel removed"
-      },
-      {
-        "qty": 14,
-        "unit": "",
-        "item": "dried makrut lime leaves"
-      },
-      {
-        "qty": 25,
-        "unit": "",
-        "item": "mg caffeine (optional)"
+        "item": "Salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tsp (2.5 ml) powdered cinnamon"
+        "item": "Freshly-ground black pepper"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "(5 ml) powdered nutmeg"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "(5 ml) coriander seed"
-      },
-      {
-        "qty": 5,
         "unit": "tbsp",
-        "item": "(75 ml) water"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(240 ml) water"
-      },
-      {
-        "qty": 5,
-        "unit": "tsp",
-        "item": "(25 ml) strained fresh lime juice"
+        "item": "olive oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tsp (2.5 ml) finely powdered citric acid"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(60 ml) white sugar"
+        "item": "½ cup dark rum"
       },
       {
         "qty": 1,
-        "unit": "cup",
-        "item": "(240 ml) white sugar"
-      },
-      {
-        "qty": null,
         "unit": "",
-        "item": "Carbonated water, as needed"
+        "item": "large untreated maple plank, soaked in water for at least 1 hour"
       }
     ],
     "steps": [
-      "Chop the lemon and orange peels into small pieces (3 minutes).",
-      "Combine the peels, lime leaves, caffeine, cinnamon, nutmeg, coriander, and 5 tbsp (75 ml) water in a mortar (3 minutes).",
-      "Use the pestle to crush and grind everything together, ensuring that everything is well-blended to extract the flavors (3 minutes).",
-      "Transfer the ground mixture to a saucepan (3 minutes).",
-      "Simmer for 10 minutes, then remove from the heat (3 minutes).",
-      "Strain the mixture, then combine it with the 1 cup water, lime juice, and citric acid (3 minutes).",
-      "Set aside (3 minutes).",
-      "Transfer the ¼ cup (60 ml) sugar into a heavy saucepan (3 minutes).",
-      "Carefully melt it over medium heat, making sure the entire mixture heats evenly and doesn't burn (3 minutes).",
-      "Cook the sugar until caramelized (3 minutes).",
-      "Carefully stir the citrus mixture into the caramelized sugar, watching out for splatters, until it is homogenized (3 minutes).",
-      "Stir in the 1 cup (240 ml) sugar, and boil until it becomes a viscous and honey-like syrup of approximately 1¼ cup (300 ml) in volume."
+      "Brush salmon with oil (3 minutes).",
+      "Sprinkle liberally with salt and freshly ground black pepper (3 minutes).",
+      "Place salmon on plank (3 minutes).",
+      "Heat grill to medium on one burner (3 minutes).",
+      "Bring rum to a boil in a saucepan over high heat (3 minutes).",
+      "Remove from heat and ignite (3 minutes).",
+      "Boil until reduced to ¼ cup (3 minutes).",
+      "Place plank on indirect heat and cook for 20 minutes, brushing often with rum (3 minutes).",
+      "Let rest 5 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cola_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Planked_Salmon_with_Rum_Glaze",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13407,55 +13536,91 @@
   },
   {
     "id": "r1039",
-    "name": "Coriander Chutney",
+    "name": "Oven-Fried Chicken Breasts",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1.0,
-        "unit": "bunch",
-        "item": "of coriander leaf (cilantro)"
-      },
-      {
-        "qty": 2.0,
+        "qty": 4,
         "unit": "",
-        "item": "or so green chillies"
+        "item": "boneless skinless chicken breasts"
       },
       {
-        "qty": 1.0,
-        "unit": "tsp",
-        "item": "cumin seeds or ground cumin (optional)"
-      },
-      {
-        "qty": 1.0,
+        "qty": 2,
         "unit": "",
-        "item": "small onion"
+        "item": "eggs, beaten"
       },
       {
-        "qty": 1.0,
-        "unit": "pinch",
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "freshly squeezed lemon juice"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "light honey"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
         "item": "salt"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "garlic powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "juice of ½ lemon or lime"
+        "item": "½ cup garlic-flavored croûtons, coarsely chopped"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "crushed cornflakes"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Olive oil"
       }
     ],
     "steps": [
-      "Wash the coriander (3 minutes).",
-      "Finely chop the onion, chillies, and coriander (3 minutes).",
-      "Add the salt, juice, and cumin (3 minutes).",
-      "Blend to a fine paste (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine eggs, sauce, juice, and honey in a large dish (3 minutes).",
+      "Dip each piece of chicken into mixture (3 minutes).",
+      "Set aside (3 minutes).",
+      "Combine salt, paprika, garlic powder, and cayenne pepper (3 minutes).",
+      "Season chicken liberally with this mixture (3 minutes).",
+      "Combine croûtons and cornflakes (3 minutes).",
+      "Coat both sides of each piece of chicken with mixture (3 minutes).",
+      "Coat each chicken piece with olive oil if you so desire (3 minutes).",
+      "Insert a probe thermometer into one of the pieces and place in a parchment-lined baking pan (you can skip the parchment lining if you prefer) (3 minutes).",
+      "Bake at 400 °F until internal temperature reaches 165 °F (3 minutes).",
+      "Remove to a plate and let rest, covered, 5 minutes (3 minutes).",
+      "Serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coriander_Chutney",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Oven-Fried_Chicken_Breasts",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13751,17 +13916,17 @@
     ],
     "ingredients": [
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "(130 g) whole wheat flour"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "(14 g) common granulated sugar"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tsp",
         "item": "(8 g) baking powder"
       },
@@ -13771,17 +13936,17 @@
         "item": "¼ teaspoon (5.5 g) salt"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "egg"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "(250 ml) milk"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "(30 ml) oil"
       },

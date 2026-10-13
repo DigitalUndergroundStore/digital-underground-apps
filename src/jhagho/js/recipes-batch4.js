@@ -61,51 +61,70 @@
   },
   {
     "id": "r450",
-    "name": "Fleischnacka (Alsatian Meat and Pasta Roll)",
+    "name": "Whole Wheat Waffles",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "vegetarian",
-      "collection-italian"
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "flour"
+        "qty": 1.0,
+        "unit": "",
+        "item": "¼ cups whole wheat flour"
       },
       {
-        "qty": 4,
-        "unit": "",
-        "item": "ea. eggs"
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "wheat germ"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s white granulated sugar"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "baking powder"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "nutmeg"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s milk"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt"
+        "item": "½ cup vegetable oil"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "water"
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs"
       }
     ],
     "steps": [
-      "Mix together the flour and eggs, then add the water and salt (3 minutes).",
-      "Knead the dough until smooth and set aside for 1 hour (3 minutes).",
-      "Mince the onion, parsley, and garlic (3 minutes).",
-      "Mix into the minced meat along with the eggs, nutmeg, salt and pepper (3 minutes).",
-      "Roll out the dough into a rectangle (3 minutes).",
-      "Spread the meat filling evenly over the dough and roll up into a cylinder (3 minutes).",
-      "Seal the edge with water and cut into slices (not too thick) (3 minutes).",
-      "Brown the slices in oil (3 minutes).",
-      "Add the stock (and wine if used), and cook for 20 minutes (3 minutes).",
-      "Serve with a green salad."
+      "Heat waffle iron according to the manufacturer's directions (3 minutes).",
+      "Combine dry ingredients and mix well (3 minutes).",
+      "Add milk, vegetable oil, and eggs, and mix until smooth (3 minutes).",
+      "Pour 1 cup of batter onto the oiled waffle iron, and cook according to the manufacturer's directions (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fleischnacka_%28Alsatian_Meat_and_Pasta_Roll%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Whole_Wheat_Waffles",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -453,7 +472,7 @@
   },
   {
     "id": "r456",
-    "name": "French Toast",
+    "name": "Stuffed French Toast",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -464,38 +483,58 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 4.0,
+        "unit": "slice",
+        "item": "s (⅔ inch thick) stale brioche bread"
+      },
+      {
+        "qty": 1.0,
         "unit": "",
-        "item": "egg"
+        "item": "egg, beaten"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "cream cheese"
+      },
+      {
+        "qty": 1.0,
+        "unit": "pinch",
+        "item": "salt"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "unsalted butter, divided"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "About ¼ cup (60 ml / 2 oz) milk or cream (more for softer, less eggy French toast; less for firmer, more eggy toast)"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "–3 slices bread (see notes)"
+        "item": "¼ cup heavy cream"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Butter, margarine, or cooking oil"
+        "item": "¼ cup granulated sugar"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "pure vanilla extract"
       }
     ],
     "steps": [
-      "Whisk the eggs, milk, and optional ingredients in a bowl until fully combined and no streaks of egg white remain (3 minutes).",
-      "Heat up a frying pan, skillet, or griddle to medium-low heat (3 minutes).",
-      "Grease the pan with butter, margarine, or cooking spray (3 minutes).",
-      "Soak each side of the bread in the egg mixture only until it is coated and has absorbed a little of the mixture (3 minutes).",
-      "(See the Notes below for which breads work best.) (3 minutes).",
-      "Make sure the bread is not falling apart (3 minutes).",
-      "Soft breads need only a quick dip; sturdier breads can soak a few seconds longer (3 minutes).",
-      "Cook, turning once, until both sides of the bread are browned and the inside is cooked through (3 minutes).",
-      "Serve on plates, with toppings as desired."
+      "Spread cream cheese on half the bread (3 minutes).",
+      "Press into sort of a sandwich and set aside (3 minutes).",
+      "Combine egg, vanilla, cream, sugar, and salt in a pie pan (3 minutes).",
+      "Add bread \"sandwiches\" to mixture and coat both sides (3 minutes).",
+      "Melt 1 tbsp butter in a small nonstick skillet heated between medium and medium high (3 minutes).",
+      "Add 1 \"sandwich\" to pan and cook until golden brown on both sides (3 minutes).",
+      "Remove from pan (3 minutes).",
+      "Melt remaining butter and repeat (3 minutes).",
+      "Serve immediately with maple syrup, powdered sugar, whipped cream, or fresh fruit (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:French_Toast",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stuffed_French_Toast",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -820,7 +859,7 @@
   },
   {
     "id": "r462",
-    "name": "Fried Green Tomatoes",
+    "name": "Monte Cristo Burgers",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -831,9 +870,9 @@
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "",
-        "item": "–6 green tomatoes"
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "80/20 ground chuck"
       },
       {
         "qty": null,
@@ -843,27 +882,59 @@
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper"
+        "item": "Freshly-ground black pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Yellow cornmeal"
+        "item": "Olive oil"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "hamburger buns, halved"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Vegetable or olive oil"
+        "item": "Few shots of hot sauce"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg, beaten"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "heavy cream"
+      },
+      {
+        "qty": 4.0,
+        "unit": "slice",
+        "item": "s cheese"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Nonstick cooking spray"
       }
     ],
     "steps": [
-      "Slice the tomatoes ¼–½ inch (0.75–1.25 cm) thick (3 minutes).",
-      "Salt and pepper tomato slices to taste (3 minutes).",
-      "Dip slices in cornmeal and shallow fry in hot grease or oil over medium heat for about 3 minutes or until golden on bottom (3 minutes).",
-      "Gently turn over, and fry the other side (3 minutes).",
-      "Serve by themselves or, for a elegant addition, add a little goat cheese (3 minutes)."
+      "Preheat oven to 200°F (3 minutes).",
+      "Combine the egg, hot sauce, and cream in a pie plate (3 minutes).",
+      "Dip cut sides of buns into egg mixture (3 minutes).",
+      "Move to a cooling rack and let sit 10 minutes (3 minutes).",
+      "Heat a medium nonstick skillet over medium heat (3 minutes).",
+      "Grease with cooking spray (3 minutes).",
+      "Add buns, one at a time, and cook until browned on cut side (3 minutes).",
+      "Move to a clean plate and repeat until all buns have been cooked (3 minutes).",
+      "Keep warm in the oven (3 minutes).",
+      "Form beef into 4 equal patties (3 minutes).",
+      "Brush both sides with olive oil and sprinkle both sides liberally with salt and freshly ground black pepper (3 minutes).",
+      "Heat about 28 charcoal briquets in a large chimney starter (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Green_Tomatoes",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Monte_Cristo_Burgers",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -921,8 +992,8 @@
   },
   {
     "id": "r464",
-    "name": "Fried Plantain and Egg",
-    "minutes": 30,
+    "name": "Green Bean Casserole (Vegan)",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
@@ -934,36 +1005,74 @@
       {
         "qty": null,
         "unit": "",
-        "item": "Plantain"
+        "item": "¼ cup nutritional yeast"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Vegetable oil"
+        "item": "½ tsp crushed red pepper"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "red onion, sliced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "coconut oil"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ cups water"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ cups mushroom, chopped"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ lb green beans"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s chopped parsnips"
+      },
+      {
+        "qty": 3.0,
+        "unit": "clove",
+        "item": "s garlic, minced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Egg"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt"
+        "item": "Pepper to taste"
       }
     ],
     "steps": [
-      "Peel and slice the plantain (3 minutes).",
-      "Season with salt and toss to mix (3 minutes).",
-      "Heat a little oil in a frying pan (3 minutes).",
-      "When hot, add the plantain (3 minutes).",
-      "Cook, turning occasionally, until browned (3 minutes).",
-      "Remove the plantain and set aside (3 minutes).",
-      "Whisk the egg with a pinch of salt (3 minutes).",
-      "Add the egg to the pan, and cook like scrambled eggs (3 minutes).",
-      "Serve the eggs and plantain together."
+      "In a wide-bottomed saucepan, add ½ tablespoon of coconut oil and set to low heat (3 minutes).",
+      "Add the onions and cook for 30 minutes (3 minutes).",
+      "Stir occasionally to caramelize (3 minutes).",
+      "If the onions look dry, splash a bit of water into the pan (3 minutes).",
+      "Put the parsnips in a steamer for about 10 minutes (3 minutes).",
+      "Set aside and let them cool (3 minutes).",
+      "Remove the ends of the green beans and cut them into 2-inch (5 cm) pieces (3 minutes).",
+      "Steam them for 8 minutes (3 minutes).",
+      "Set them aside in an 8×8-inch (200×200 mm) baking dish (3 minutes).",
+      "Once the onions have caramelized, set them aside (3 minutes).",
+      "Sauté the mushrooms in the same pan for one minute (3 minutes).",
+      "Add garlic, and stir for 5 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Plantain_and_Egg",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Bean_Casserole_%28Vegan%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1245,120 +1354,119 @@
   },
   {
     "id": "r468",
-    "name": "Tomato Curry",
+    "name": "Double Hamburgers",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian",
-      "collection-indian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "",
-        "item": "apple, grated"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "onion, chopped"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "tomatoes, sliced"
-      },
-      {
-        "qty": 2,
-        "unit": "oz",
-        "item": "(55 g) butter"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "(5 ml) curry powder"
+        "qty": 500.0,
+        "unit": "g",
+        "item": "(1.1 lb) minced (ground) beef"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Milk"
+        "item": "Herbs and spices (optional; see suggestions)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt"
+        "item": "Cheese (optional; see suggestions)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Black pepper"
+        "item": "Salad (lettuce, spinach, alfalfa sprouts, tomato, onion etc; optional)"
       },
       {
-        "qty": null,
+        "qty": 1.0,
         "unit": "",
-        "item": "Boiled rice"
+        "item": "hamburger bun per burger"
       }
     ],
     "steps": [
-      "Fry apple and onion in the butter until blended (3 minutes).",
-      "Mix curry powder in a little milk, and stir in (3 minutes).",
-      "Season with salt and pepper (3 minutes).",
-      "Fry tomatoes in a separate pan (3 minutes).",
-      "Cover them with the curry mixture, and serve within a wall of boiled rice (3 minutes)."
+      "Remove the ground beef from the package and shape by hand into burgers (3 minutes).",
+      "You should get 4–6 burgers from the listed quantity of beef (3 minutes).",
+      "If adding optional ingredients, either season the outside or mix into the beef before forming the patties (3 minutes).",
+      "Overworking the beef will result in mushy meat that won't stick together, so only mix the minimum necessary and do so by hand (3 minutes).",
+      "Fry or grill the burgers for about 4–5 minutes on each side for burgers that aren't too thick (3 minutes).",
+      "Let the burger rest for several minutes before serving to let the juices cool down and not burst out at first bite (3 minutes).",
+      "Serve each burger on a bun (sesame seed usually), optionally with relish, sliced pickles, ketchup, mayonnaise, mustard, ranch dressing, cheese, lettuce, tomatoes and/or onions (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tomato_Curry",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Double_Hamburgers",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r469",
-    "name": "Fruit Ice Pops",
+    "name": "Deluxe Burgers",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 1.0,
         "unit": "",
-        "item": "Mango, peeled and diced"
+        "item": "½ pound ground beef"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Peach, peeled and diced"
+        "item": "½ teaspoon garlic salt"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "finely chopped onion"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Strawberries"
+        "item": "½ teaspoon pepper"
+      },
+      {
+        "qty": 6.0,
+        "unit": "",
+        "item": "strips of bacon, cooked well done and crumbled"
+      },
+      {
+        "qty": 4.0,
+        "unit": "oz",
+        "item": "(1 cup) shredded cheddar cheese"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Watermelon, diced"
+        "item": "¼ cup mayonnaise"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pear, juiced"
+        "item": "⅓ cup canned sliced mushrooms"
+      },
+      {
+        "qty": 6.0,
+        "unit": "",
+        "item": "split hamburger buns"
       }
     ],
     "steps": [
-      "Combine all fruits with pear juice in a blender (3 minutes).",
-      "Purée until smooth (3 minutes).",
-      "Divide the fruit mixture between ice pop molds, and insert the sticks (3 minutes).",
-      "Freeze the molds until completely solid (3 minutes).",
-      "Unmold the ice pops, and serve immediately (3 minutes)."
+      "Mix beef, garlic salt, onion, and pepper thoroughly in a bowl (3 minutes).",
+      "Shape hamburger mixture into 6 patties, about ¾-inch thick (3 minutes).",
+      "Mix bacon, cheese, mayonnaise, and mushrooms together and store in the refrigerator or cooler (3 minutes).",
+      "Cook burgers on the grill, covered, for 5 or 7 minutes on each side (3 minutes).",
+      "During the last 3 minutes, put ¼ cup cheese mixture on top of each burger (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fruit_Ice_Pops",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Deluxe_Burgers",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1791,80 +1899,45 @@
   },
   {
     "id": "r476",
-    "name": "Gallo Pinto (Costa Rican Rice and Beans)",
+    "name": "Beef Burgers with Chipotle Mayo",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "package",
-        "item": "(450 g / 16 oz) dry beans (black beans preferred)"
+        "qty": 6.0,
+        "unit": "tbsp",
+        "item": "mayonnaise"
       },
       {
-        "qty": 1,
-        "unit": "",
-        "item": "onion, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "red pepper, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "bulb garlic, minced"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "bay leaves"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "chipotle purée"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Olive oil"
+        "item": "Salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Pepper to taste"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "–2 whole dried or fresh hot peppers (optional)"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "–2 cups uncooked rice (you can use the same amount of rice than beans; this is, 3 cups of beans for 3 cups of rice)."
+        "item": "Black pepper"
       }
     ],
     "steps": [
-      "Soak beans overnight, or, bring them to a boil and let sit for 1 hour (3 minutes).",
-      "In a Dutch oven or large pot, sauté onions and garlic in olive oil on medium heat until onions are translucent (3 minutes).",
-      "Add red pepper, and sauté for a few minutes more (3 minutes).",
-      "Add beans and enough water to cover all ingredients (3 minutes).",
-      "Add spices, bring to a boil, then lower heat and cover, stirring occasionally until done (1–2 hours, depending on the age of your beans) (3 minutes)."
+      "Mix all ingredients for the chipotle mayo and refrigerate until needed (3 minutes).",
+      "Shape ground chuck into 4 patties (3 minutes).",
+      "Sprinkle patties with kosher salt, black pepper, and cayenne pepper (3 minutes).",
+      "Place patties on a well-oiled medium grill and cook until internal temperature reaches 160°F (>70°C) for medium doneness (3 minutes).",
+      "If using cheese, place on patties and cover for 1 minute to melt the cheese (3 minutes).",
+      "Spread chipotle mayo onto buns and sandwich the burgers with the halves (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gallo_Pinto_%28Costa_Rican_Rice_and_Beans%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Beef_Burgers_with_Chipotle_Mayo",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2258,70 +2331,46 @@
   },
   {
     "id": "r482",
-    "name": "Germknödel (Plum and Poppy Seed Dumpling)",
+    "name": "Pan-Seared Pork Chops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 4.0,
+        "unit": "",
+        "item": "thick-cut bone-in pork rib chops"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup Chop Rub"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cider vinegar, as needed"
+      },
+      {
+        "qty": 1.0,
         "unit": "tbsp",
-        "item": "active dry yeast"
-      },
-      {
-        "qty": 4,
-        "unit": "cup",
-        "item": "all-purpose flour"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup white sugar"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup softened butter"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "lukewarm milk"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "egg yolk"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "egg"
-      },
-      {
-        "qty": 1,
-        "unit": "package",
-        "item": "vanilla sugar or 1 tbsp vanilla extract"
+        "item": "olive oil"
       }
     ],
     "steps": [
-      "Mix the flour, salt, vanilla, eggs, and sugar in a bowl (3 minutes).",
-      "In another bowl, mix the lukewarm milk with the yeast, and stir until all of the yeast has dissolved (3 minutes).",
-      "Pour the liquid mixture into the flour, and knead everything together with the softened butter (3 minutes).",
-      "If the dough is too sticky, add more flour (3 minutes).",
-      "Cover the dough and leave it to rise for one hour until it has doubled its size (3 minutes)."
+      "Brush pork chops with cider vinegar (3 minutes).",
+      "Season each pork chop with the chop rub, pressing lightly (3 minutes).",
+      "Heat oil in a very large oven-proof cast iron or stainless steel skillet over medium high heat (3 minutes).",
+      "Add pork chops and sear for 3 minutes per side (3 minutes).",
+      "Insert an oven-safe probe thermometer into one pork chop and place pan in a 350°F oven (3 minutes).",
+      "Bake until internal temperature reaches 145°F (3 minutes).",
+      "Remove and let rest for 5 minutes; serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Germkn%C3%B6del_%28Plum_and_Poppy_Seed_Dumpling%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pan-Seared_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2967,75 +3016,63 @@
   },
   {
     "id": "r491",
-    "name": "Greek Salad",
+    "name": "Ertesuppe (Pea Soup)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 16.0,
+        "unit": "oz",
+        "item": "split yellow Swedish peas"
+      },
+      {
+        "qty": 12.0,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 2.0,
         "unit": "",
-        "item": "Red tomatoes, chopped"
+        "item": "–3 lb smoked pork butt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "large yellow onion, peeled and chopped"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Cucumber, sliced into rounds"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Red or white onions, sliced into half-moons"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Green bell peppers, cut into small pieces"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Greek olives"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Extra-virgin or virgin olive oil"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Vinegar or lemon juice"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Feta cheese"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Oregano"
+        "item": "¼ teaspoon thyme"
       }
     ],
     "steps": [
-      "Combine tomatoes, cucumbers, onions, peppers, and olives in a deep bowl (3 minutes).",
-      "Add enough olive oil, vinegar or lemon juice, and salt to taste (3 minutes).",
-      "Toss the ingredients for half a minute (3 minutes).",
-      "Place a feta cheese slice on top and season with a splash of olive oil (3 minutes).",
-      "Top with a sprig of oregano if desired (3 minutes)."
+      "Soak the dry peas overnight in about 4 cups of cold water (3 minutes).",
+      "Add 8 cups of water to the peas and soaking water (3 minutes).",
+      "Simmer the peas in a pot until soft (3 minutes).",
+      "In a separate pot, boil the smoked butt for 40 minutes per pound (3 minutes).",
+      "Cut the smoked butt into small cubes, and add to the softened pea stock (3 minutes).",
+      "Add the onion and half the salt and pepper (3 minutes).",
+      "Adjust to taste, and mix in the thyme (3 minutes).",
+      "Cook for at least 5 minutes together, adding water from the meat if the stock is too thick (3 minutes).",
+      "Cook longer if it is too thin (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Greek_Salad",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ertesuppe_%28Pea_Soup%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3155,52 +3192,91 @@
   },
   {
     "id": "r494",
-    "name": "Green Tea and Berry Pavlovas",
+    "name": "Grilled Pork Chops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "",
-        "item": "ea. egg whites"
-      },
-      {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "cup",
-        "item": "white granulated sugar"
+        "item": "salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Tiny pinch of salt"
+        "item": "¾ cup honey"
       },
       {
-        "qty": 1,
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s apple cider vinegar, heated"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "sprigs fresh rosemary, finely chopped"
+      },
+      {
+        "qty": 10.0,
+        "unit": "",
+        "item": "sprigs fresh thyme, finely chopped"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tablespoons cayenne pepper"
+      },
+      {
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "matcha powder, sifted"
+        "item": "s minced garlic"
+      },
+      {
+        "qty": 2.0,
+        "unit": "lb",
+        "item": "s ice"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "thick-cut pork rib chops"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s black peppercorns, cracked"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "ancho chile powder"
       }
     ],
     "steps": [
-      "Bring an inch or two of water to a simmer in a pot (3 minutes).",
-      "Whisk together the egg whites, sugar, and salt in a clean heat-safe mixing bowl (3 minutes).",
-      "Place the bowl of egg whites over the simmering water (3 minutes).",
-      "The bottom of the bowl should not touch the water itself (3 minutes).",
-      "Stir the mixture until all the sugar is dissolved (3 minutes).",
-      "Rub a little bit between your fingers—it should be warm, and you shouldn't feel any grains (3 minutes).",
-      "Make sure not to go too far and let the whites coagulate, since you don't want them to cook (3 minutes).",
-      "Remove the bowl from the pot (3 minutes).",
-      "Use a mixer to whip the egg whites to stiff peaks (3 minutes).",
-      "Beat in the matcha for about 30 seconds (3 minutes).",
-      "Then, use a rubber spatula to make sure everything is well-incorporated and even (3 minutes).",
-      "Line a baking sheet with parchment paper."
+      "Combine honey, salt, vinegar, rosemary, thyme, cayenne pepper, and minced garlic in a plastic zip-top bag (3 minutes).",
+      "Add ice, and shake the bag until ice is mostly melted and mixture has cooled down (3 minutes).",
+      "Insert pork chops into the bag, and refrigerate for 1–2 hours (3 minutes).",
+      "Combine cracked peppercorns, paprika, and chili powder (3 minutes).",
+      "Take the pork out of the mixture and pat dry with paper towels (3 minutes).",
+      "Discard remaining marinade (3 minutes).",
+      "Rub pepper mixture on both sides of each pork chop (3 minutes).",
+      "Quickly grease a high-heat grill with a flame-resistant towel soaked in oil and tied with twine (3 minutes).",
+      "Grill pork chops, covered, 2 minutes (3 minutes).",
+      "Rotate 90 degrees, and cook for another 2 minutes (3 minutes).",
+      "Flip and repeat this process on the other side (3 minutes).",
+      "Move to a plate and let rest, uncovered, for 5 minutes (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Tea_and_Berry_Pavlovas",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Grilled_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3380,52 +3456,71 @@
   },
   {
     "id": "r498",
-    "name": "Gulab Jamun (Fried Milk Balls in Syrup)",
+    "name": "Slow Cooker Pork Chops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
-        "unit": "cup",
-        "item": "(720 ml) dry milk powder"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(240 ml) Bisquick baking mix"
+        "qty": 4.0,
+        "unit": "",
+        "item": "thick cut pork rib chops"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "A little over ¾ cup (200 ml) warm milk"
+        "item": "Chop rub"
       },
       {
-        "qty": 2,
+        "qty": null,
+        "unit": "",
+        "item": "Olive oil"
+      },
+      {
+        "qty": 8.0,
+        "unit": "",
+        "item": "dried apple rings"
+      },
+      {
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "butter, melted"
+        "item": "apple cider vinegar"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup white wine"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup Worcestershire sauce"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "firmly packed dark brown sugar"
       }
     ],
     "steps": [
-      "Preheat canola oil 1.5–2 inches (4–5 cm) deep in a small saucepan over medium heat (3 minutes).",
-      "Combine the milk powder, Bisquick, and melted butter in a metal bowl (3 minutes).",
-      "Slowly add the warmed milk, 2 Tbsp at a time (3 minutes).",
-      "Use a wooden spoon to mix the dry ingredients into a dough ball (3 minutes).",
-      "Continue adding milk until all dry ingredients have been incorporated (3 minutes).",
-      "The dough should be firm and moist, but not sticky (3 minutes).",
-      "If you put too much milk, add a bit more dry mixture (maintaining the ratio of 3 parts milk powder to 1 part bisquick) (3 minutes).",
-      "Roll into evenly sized balls (if they are not even, they will not cook at the same rate) (3 minutes).",
-      "Since the balls dry out quickly, do not wait more than a few minutes before frying (3 minutes).",
-      "Drop a few balls into the oil—don't overfill the pan, since they will get larger as they cook (3 minutes).",
-      "They will sink to the bottom, then float to the top of the oil (3 minutes).",
-      "Stir regularly to keep them browning evenly."
+      "Brush chops with olive oil and season liberally with chop rub (3 minutes).",
+      "Set aside (3 minutes).",
+      "Heat a large stainless steel or cast iron skillet over high heat (3 minutes).",
+      "Add pork chops and cook until browned and slightly charred on both sides (3 minutes).",
+      "Remove and set aside (3 minutes).",
+      "Place pan back on heat and deglaze with white wine (3 minutes).",
+      "Pour out wine and reserve (3 minutes).",
+      "Place apples in the bottom of a crockpot (3 minutes).",
+      "Place pork chops on top and drizzle with remaining ingredients (3 minutes).",
+      "Cook on low 7–8 hours (3 minutes).",
+      "Drain apples and pork into a large saucepan (3 minutes).",
+      "Bring liquid to a boil over high heat until reduced by half (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gulab_Jamun_%28Fried_Milk_Balls_in_Syrup%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Slow_Cooker_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3846,105 +3941,53 @@
   },
   {
     "id": "r504",
-    "name": "Hallaca (Venezuelan Stuffed Corn Dough)",
+    "name": "Wine Glazed Pork Chops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": 4.0,
+        "unit": "",
+        "item": "thick cut bone-in pork rib chops"
+      },
+      {
         "qty": null,
         "unit": "",
-        "item": "Olive oil"
+        "item": "½ cup Chop Rub"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "annatto seeds (also called \"achiote\" or \"onoto\")"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin seeds"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "black peppercorns"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "coriander seeds"
-      },
-      {
-        "qty": 4,
+        "qty": null,
         "unit": "",
-        "item": "white onions, sliced"
+        "item": "Cider vinegar, as needed"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "red wine"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "vegetable stock cube"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "mushroom stock cube"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "marmite"
-      },
-      {
-        "qty": 2,
-        "unit": "l",
-        "item": "eeks, green and white parts cut in 1-inch chunks"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "Lrge bunch of fresh herbs (coriander leaf, thyme, parsley, celery)"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "packets of spring onions, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "head",
-        "item": "of garlic, halved"
-      },
-      {
-        "qty": 1,
-        "unit": "jar",
-        "item": "of green olives"
-      },
-      {
-        "qty": 1,
-        "unit": "jar",
-        "item": "of capers"
-      },
-      {
-        "qty": 1,
-        "unit": "kg",
-        "item": "instant polenta meal (coarse corn meal)"
+        "item": "¼ cup butter, divided"
       }
     ],
     "steps": [
-      "With a damp cloth, wipe the banana leaves (3 minutes).",
-      "Heat the banana leaves over a flame (gas cooker, camping fire, etc) (3 minutes).",
-      "The leaves should turn softer and darker, with a distinctive smoky smell (3 minutes).",
-      "Cut the hard rim without shredding the leaves (3 minutes).",
-      "Cut in 30 cm segments along the transversal veins (3 minutes)."
+      "Brush pork chops generously with cider vinegar (3 minutes).",
+      "Season pork with chop rub, patting down slightly (3 minutes).",
+      "Bring wine to a boil over high heat in a large saucepan, and ignite it (3 minutes).",
+      "Cook until reduced by half (3 minutes).",
+      "Add butter, 1 tbsp at a time while whisking, until all butter has melted (3 minutes).",
+      "Grill pork chops over high heat 2 minutes, brushing with wine mixture, then rotate 90° and cook for 2 minutes, brushing (3 minutes).",
+      "Flip to the other side and repeat 1 more time (3 minutes).",
+      "Remove and let rest 5 minutes (3 minutes).",
+      "Serve with remaining wine mixture (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hallaca_%28Venezuelan_Stuffed_Corn_Dough%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Wine_Glazed_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4190,9 +4233,9 @@
   },
   {
     "id": "r508",
-    "name": "Hash Browns",
+    "name": "Orange French Toast",
     "minutes": 45,
-    "servings": 2,
+    "servings": 4,
     "tags": [
       "breakfast",
       "medium",
@@ -4201,41 +4244,55 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 6.0,
         "unit": "",
-        "item": "potatoes, washed"
+        "item": "eggs, lightly beaten"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ onion, finely chopped (optional)"
+        "item": "¾ cup orange juice"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Cooking oil (canola is good&mdash;see smoke point information)"
+        "item": "½ cup half-and-half cream"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "flour OR 1 egg"
+        "item": "s sugar"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "vanilla extract"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ teaspoon grated orange peel"
+      },
+      {
+        "qty": 8.0,
+        "unit": "",
+        "item": "thick slices cinnamon bread"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup butter, melted"
       }
     ],
     "steps": [
-      "Grate the raw potatoes with a cheese grater, place them into a bowl and cover completely with water (3 minutes).",
-      "Let sit for 10 minutes (3 minutes).",
-      "Drain the grated potatoes well; if this is not done thoroughly the potatoes will steam instead of fry (3 minutes).",
-      "Mix in chopped onions by hand (3 minutes).",
-      "Mix the egg OR flour into the hash brown mixture evenly (3 minutes).",
-      "This will allow the hash browns to stay together when frying (3 minutes).",
-      "Place a large frying pan on medium-high heat and add enough oil to provide a thin coating over the entire bottom of the pan (3 minutes).",
-      "When the oil has come up to temperature apply a large handful of potatoes to the pan and reshape into a patty that is about ¼–½ inch (6–12 mm) thick (3 minutes).",
-      "The thinner the patty, the crispier the hash browns will be throughout (3 minutes).",
-      "Flip when they are crisp and brown on the cooking side (3 minutes).",
-      "They should also stick together nicely before they are flipped (3 minutes).",
-      "This should take about 5–8 minutes."
+      "In a shallow bowl, combine the eggs, orange juice, half-and-half, sugar, vanilla, and orange peel (3 minutes).",
+      "Dip both sides of bread into egg mixture; let soak for 5 minutes (3 minutes).",
+      "Place in a greased baking pan (3 minutes).",
+      "Cover and refrigerate overnight (3 minutes).",
+      "Uncover, and drizzle with butter (3 minutes).",
+      "Bake at for 35–40 minutes or until browned (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hash_Browns",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Orange_French_Toast",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4631,98 +4688,151 @@
   },
   {
     "id": "r515",
-    "name": "Homemade Pie Crust",
+    "name": "Apple Stuffed Pork Chops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 225,
-        "unit": "g",
-        "item": "(1 cup) all-purpose flour"
+        "qty": 4.0,
+        "unit": "",
+        "item": "thick-cut bone-in pork rib chops"
       },
       {
-        "qty": 2.5,
-        "unit": "ml",
-        "item": "(½ teaspoon) salt"
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup freshly-squeezed lemon juice"
       },
       {
-        "qty": 230,
-        "unit": "ml",
-        "item": "(1 cup) cold vegetable shortening"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "dark honey"
       },
       {
-        "qty": 30,
-        "unit": "ml",
-        "item": "(2 tablespoons) cold water (add 15 ml of water as needed)"
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tsp kosher salt"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s Apple Stuffing"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup Chop Rub"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "A heat-proof towel tied with twine and soaked with oil"
       }
     ],
     "steps": [
-      "Combine flour and salt in medium bowl (3 minutes).",
-      "Cut in vegetable shortening with a pastry blender or two knives, until mixture is crumbly (3 minutes).",
-      "Sprinkle with cold water; mix just until mixture holds together (3 minutes).",
-      "Shape dough into a ball; place on lightly floured surface (3 minutes).",
-      "Roll out dough to 3 mm (⅛ inch) thickness (3 minutes).",
-      "Line pie plate with pastry (3 minutes).",
-      "Trim around perimeter for 2 cm (1 inch) overhang to fold under and crimp as desired (see pie crust edges below)."
+      "Combine lemon juice, honey, and salt in a gallon-size zip-top bag (3 minutes).",
+      "Add pork chops, take as much air out as possible, and seal bag (3 minutes).",
+      "Refrigerate 24 hours (3 minutes).",
+      "Take pork out of marinade (3 minutes).",
+      "Using a narrow boning knife, make an incision in the side of the chop until you hit bone (3 minutes).",
+      "Sweep the knife up and make the hole slightly larger (3 minutes).",
+      "Repeat with remaining pork chops (3 minutes).",
+      "Using a bagel slicer helps to stabilize the chops while cutting (3 minutes).",
+      "Place the apple stuffing inside a gallon size zip top plastic bag (3 minutes).",
+      "Snip a small hole in the corner (3 minutes).",
+      "Place snipped corner inside incision in one of the pork chops (3 minutes).",
+      "Squeeze to dispense (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Homemade_Pie_Crust",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Stuffed_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r516",
-    "name": "Homemade Tempeh",
+    "name": "Hickory Smoked Pork Chops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 400,
-        "unit": "g",
-        "item": "(14 ounces) dried soybeans"
+        "qty": 4.0,
+        "unit": "",
+        "item": "thick-cut pork rib chops"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Water"
+        "item": "¾ cup honey"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s hot apple cider vinegar"
+      },
+      {
+        "qty": 2.0,
+        "unit": "lb",
+        "item": "s ice"
+      },
+      {
+        "qty": 1.0,
         "unit": "tbsp",
-        "item": "cider vinegar"
+        "item": "cayenne pepper"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "tempeh starter (or ragi tempe)"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s paprika"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s ancho chile powder"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "black peppercorns, cracked"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Olive oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Soaked hickory chunks"
       }
     ],
     "steps": [
-      "Cover soybeans with water, and soak overnight or at least 12 hours (3 minutes).",
-      "Remove the hulls (i.e (3 minutes).",
-      "skins) from the beans by rubbing between both hands (see notes) (3 minutes).",
-      "Skim off most of the hulls either by washing them away or by using a skimmer or strainer (3 minutes).",
-      "Some hulls may be left behind without affecting tempeh quality (3 minutes).",
-      "Cook beans until just tender, not mushy; undercooked is best for tempeh (see notes) (3 minutes).",
-      "Drain beans, and spread to dry somewhere with airflow (see notes) (3 minutes).",
-      "Collect beans into a bowl, and mix in the cider vinegar (3 minutes).",
-      "This acidifies the beans slightly, inhibiting unwanted spoilage organisms during fermentation (3 minutes).",
-      "Sprinkle the tempeh starter over the beans and mix in well (see notes) (3 minutes).",
-      "Pack the beans loosely into banana leaves, zip-lock bags, or shallow dishes for incubating (3 minutes).",
-      "Zip-lock bags must be punctured at roughly 1 cm (&frac12; inch) intervals to keep oxygen up to the fermenting beans."
+      "Combine salt, honey, and vinegar in a gallon-size zip-top bag (3 minutes).",
+      "Add ice and shake until ice is mostly melted and mixture has cooled (3 minutes).",
+      "Insert pork chops and brine in the refrigerator for 1–2 hours (3 minutes).",
+      "Drain pork and pat dry with paper towels (3 minutes).",
+      "Discard remaining brine (3 minutes).",
+      "Combine remaining seasonings and rub on both sides of each pork chop (3 minutes).",
+      "Get your smoker ready (3 minutes).",
+      "Place chunks in the firebox and keep the smoker at around 250°F (3 minutes).",
+      "Brush with olive oil and grill on high just until marked (3 minutes).",
+      "Flip and repeat 1 more time (3 minutes).",
+      "Move to smoker and insert a probe thermometer into one of the chopes (3 minutes).",
+      "Cover and cook until internal temperature reaches 140°F for medium rare, 155°F for medium, and 165°F for toast (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Homemade_Tempeh",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hickory_Smoked_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6373,48 +6483,81 @@
   },
   {
     "id": "r540",
-    "name": "Karelian Pasties (Karjalanpiirakat)",
+    "name": "Molasses-Glazed Pork Chops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 500,
-        "unit": "ml",
-        "item": "boiling water"
-      },
-      {
-        "qty": 300,
-        "unit": "ml",
-        "item": "short-grain white rice"
-      },
-      {
-        "qty": 900,
-        "unit": "ml",
-        "item": "milk"
-      },
-      {
-        "qty": 1,
+        "qty": 4.0,
         "unit": "",
-        "item": "½ tsp salt"
+        "item": "thick-cut pork rib chops"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "dried rosemary"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp ground ginger"
+      },
+      {
+        "qty": 6.0,
+        "unit": "oz",
+        "item": "molasses"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "garlic powder"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¾ tsp cayenne pepper"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "cider vinegar"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "limes, juiced"
       }
     ],
     "steps": [
-      "Mix the rice into the boiling water (3 minutes).",
-      "Boil until the water has saturated the rice (3 minutes).",
-      "Add the milk, and stir the filling for a few minutes (3 minutes).",
-      "Reduce heat and agitate the porridge (3 minutes).",
-      "Cook for about 40 minutes (3 minutes).",
-      "Stir the porridge every now and then (3 minutes).",
-      "When the porridge is ready, it will seem thick (3 minutes).",
-      "Mix in the salt, and cool the porridge."
+      "Place pork chops in a large zip-top bag (3 minutes).",
+      "Combine liquid ingredients and pour into bag (3 minutes).",
+      "Marinate in the fridge for at least 30 minutes (3 minutes).",
+      "Take pork out of marinade (3 minutes).",
+      "Combine dry seasonings and rub on pork (3 minutes).",
+      "Heat your grill as high as it will go (3 minutes).",
+      "Boil marinade for 10 minutes (3 minutes).",
+      "Place pork on grill and cook 2 minutes, brushing with marinade, before rotating 90 degrees to get nice grill marks (3 minutes).",
+      "Cook another 2 minutes, brushing (3 minutes).",
+      "Flip to the other side and repeat (3 minutes).",
+      "Remove from grill and let rest for 10 minutes (3 minutes).",
+      "Serve with additional marinade (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Karelian_Pasties_%28Karjalanpiirakat%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Molasses-Glazed_Pork_Chops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6698,49 +6841,81 @@
   },
   {
     "id": "r544",
-    "name": "Kesra (Algerian Semolina Flatbread)",
+    "name": "Garlic Pork Chops with Black Mushrooms",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 450,
-        "unit": "g",
-        "item": "fine semolina"
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "pork broth"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
+        "unit": "oz",
+        "item": "dried black chanterelle mushrooms"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup rice wine vinegar"
+      },
+      {
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "salt"
+        "item": "s soy sauce"
       },
       {
-        "qty": 240,
-        "unit": "g",
-        "item": "warm water"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s honey"
       },
       {
-        "qty": 30,
-        "unit": "g",
-        "item": "sunflower oil"
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon hot-pepper flakes"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "s sesame oil"
+      },
+      {
+        "qty": 4.0,
+        "unit": "clove",
+        "item": "s garlic, minced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "minced fresh ginger"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "boneless pork chops, ½-inch thick"
       }
     ],
     "steps": [
-      "Combine the semolina and salt in a mixing bowl (3 minutes).",
-      "Add the oil and mix everything to obtain a sand-like texture (3 minutes).",
-      "Gradually add water by kneading the dough to incorporate it well for about 10 minutes (3 minutes).",
-      "The dough is ready when it is well collected and no longer sticks to the edges of the bowl or to your hands (3 minutes).",
-      "Cover the bowl with plastic wrap and let it rest for at least 30 minutes (3 minutes).",
-      "Divide the dough into small parts of around 190 g (normally 4 for this recipe) (3 minutes).",
-      "Using a rolling pin, roll out the pieces while keeping a round shape (3 minutes).",
-      "Delicately prick the kesra all over with a fork (3 minutes).",
-      "Cook each kesra using a griddle or frying pan for about 4–5 minutes on both sides."
+      "Bring the chicken broth to a boil in a small saucepan (3 minutes).",
+      "Add the dried mushrooms, and simmer over low heat for about 10 minutes (3 minutes).",
+      "In a small bowl, stir together the vinegar, soy sauce, honey, and red pepper flakes (3 minutes).",
+      "Set aside (3 minutes).",
+      "Heat the sesame oil in a large non-stick skillet over medium heat (3 minutes).",
+      "Add the pork chops, and brown for about 2 minutes on each side (3 minutes).",
+      "Add the garlic and ginger; cook and stir until fragrant (3 minutes).",
+      "Stir in the soy sauce mixture, and bring to a boil (3 minutes).",
+      "Reduce the heat to low, and simmer for 5 minutes, uncovered (3 minutes).",
+      "Remove the mushrooms from the pan using a slotted spoon, and slice into thin strips (3 minutes).",
+      "Stir the mushrooms and chicken broth into the pan with the pork chops, and simmer uncovered over low heat until the sauce has reduced by about ⅓, and the pork chops are cooked through (3 minutes).",
+      "To serve, place pork chops onto serving plates, and spoon mushroom sauce over them (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kesra_%28Algerian_Semolina_Flatbread%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Garlic_Pork_Chops_with_Black_Mushrooms",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7175,55 +7350,81 @@
   },
   {
     "id": "r551",
-    "name": "Koeksisters (Fried Braided Pastry in Syrup)",
+    "name": "Roast Pork Loin with Gravy",
     "minutes": 45,
-    "servings": 3,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "kg",
-        "item": "white granulated sugar"
-      },
-      {
-        "qty": 500,
-        "unit": "ml",
-        "item": "(2 cups) water"
-      },
-      {
-        "qty": 3,
+        "qty": 1.0,
         "unit": "",
-        "item": "cm long piece of fresh ginger, peeled and bruised OR 2–3 sticks of cinnamon (optional)"
+        "item": "boneless pork loin roast"
       },
       {
-        "qty": 1,
-        "unit": "ml",
-        "item": "(pinch) cream of tartar"
-      },
-      {
-        "qty": 1,
-        "unit": "pinch",
+        "qty": 1.0,
+        "unit": "cup",
         "item": "salt"
       },
       {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "½ tsp lemon juice"
+        "item": "¾ cup honey"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "cracked black peppercorns"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s apple cider vinegar, brought to a boil"
+      },
+      {
+        "qty": 10.0,
+        "unit": "",
+        "item": "sprigs fresh thyme, finely chopped"
+      },
+      {
+        "qty": 2.0,
+        "unit": "lb",
+        "item": "s ice"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Olive oil"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "all-purpose flour"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup chicken broth"
       }
     ],
     "steps": [
-      "Combine all ingredients in a saucepan (3 minutes).",
-      "Bring to a boil, stirring until the sugar has dissolved (3 minutes).",
-      "Turn the heat down, and simmer for 5–8 minutes (3 minutes).",
-      "Cool the syrup to room temperature (3 minutes).",
-      "Divide it into 2 containers, and place in the refrigerator to chill overnight (3 minutes)."
+      "Combine salt, honey, vinegar, peppercorns, thyme, and ice (3 minutes).",
+      "Pour into a gallon-size zip-top bag and add roast (3 minutes).",
+      "Refrigerate 3–3½ hours (3 minutes).",
+      "Drain roast and pat dry with paper towels (3 minutes).",
+      "Coat roast liberally with olive oil (3 minutes).",
+      "Place on a roasting rack set in a large roasting pan (3 minutes).",
+      "Insert a probe thermometer and bake in the center of a 425°F oven until internal temperature reaches 140°F (3 minutes).",
+      "Pour drippings from pan and reserve (3 minutes).",
+      "Keep roast warm at 200°F (3 minutes).",
+      "Skim fat from drippings and pour 2 tablespoons into a large saucepan (3 minutes).",
+      "Heat over medium high heat (3 minutes).",
+      "Add flour and cook, whisking continuously, until mixture turns blond in color (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Koeksisters_%28Fried_Braided_Pastry_in_Syrup%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roast_Pork_Loin_with_Gravy",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8717,55 +8918,75 @@
   },
   {
     "id": "r573",
-    "name": "Green Bean Casserole",
+    "name": "Lemon Rosemary Pork Tenderloin",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 8,
-        "unit": "cup",
-        "item": "cooked green beans"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "milk"
-      },
-      {
-        "qty": 2,
+        "qty": 1.0,
         "unit": "",
-        "item": "⅔ cups canned French fried onions, divided into 2 equal portions"
+        "item": "medium onion, finely chopped"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "olive or canola oil"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "lemon juice"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "minced fresh rosemary"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "minced fresh thyme"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "grated lemon peel"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "garlic clove, minced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon ground black pepper"
+        "item": "½ teaspoon salt"
       },
       {
-        "qty": 2,
-        "unit": "can",
-        "item": "(21 ounces) cream of mushroom soup"
+        "qty": null,
+        "unit": "",
+        "item": "½ teaspoon pepper"
       },
       {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "soy sauce"
+        "qty": 2.0,
+        "unit": "",
+        "item": "ea. (2 lb / 900 g) pork tenderloins"
       }
     ],
     "steps": [
-      "Preheat oven to 350°F (175°C) (3 minutes).",
-      "Stir together beans, milk, ½ of onions, pepper, soup, and soy sauce in a 3-quart casserole dish (3 minutes).",
-      "Bake until hot, about 25 minutes (3 minutes).",
-      "Sprinkle top with rest of onions (3 minutes).",
-      "Bake another 5 minutes (3 minutes)."
+      "Combine the chopped onion, oil, lemon juice, rosemary, thyme, lemon peel, minced garlic, salt, and pepper (3 minutes).",
+      "Rub this mixture over tenderloins (3 minutes).",
+      "Let the tenderloins marinate, refrigerated, for as long as you want, or just immediately proceed with cooking (3 minutes).",
+      "Place the meat on a rack in a shallow roasting pan (3 minutes).",
+      "Bake uncovered at 400°F (205°C) or until a meat thermometer reads 160°F (70°C) (3 minutes).",
+      "Cover with foil and let stand 10 minutes before slicing (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Bean_Casserole",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lemon_Rosemary_Pork_Tenderloin",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9202,7 +9423,7 @@
   },
   {
     "id": "r579",
-    "name": "Liverpool Lamb and Vegetable Soup (Scouse)",
+    "name": "Chicken Soup with Cream and Lemon",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -9212,44 +9433,91 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "A cheap cut of lamb or mutton (such as breast or forequarter)"
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s shredded cooked chicken"
+      },
+      {
+        "qty": 3.0,
+        "unit": "cup",
+        "item": "s chicken broth"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "A little oil"
+        "item": "¼ cup freshly-squeezed lemon juice"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "lemon zest, finely grated"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "minced garlic"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Onions, chopped"
+        "item": "Kosher salt, to taste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Carrots, chopped"
+        "item": "Freshly ground black pepper, to taste"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "medium onion, finely diced"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "ribs celery, chopped"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Water or meat stock"
+        "item": "½ cup heavy cream"
+      },
+      {
+        "qty": 12.0,
+        "unit": "",
+        "item": "sprigs fresh thyme"
+      },
+      {
+        "qty": 5.0,
+        "unit": "",
+        "item": "sprigs fresh rosemary"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Potatoes, diced"
+        "item": "½ large carrot, finely diced"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "bay leaves"
       }
     ],
     "steps": [
-      "Remove the meat from the bone (if needed), and dice it (3 minutes).",
-      "Heat a little oil in a large saucepan (3 minutes).",
-      "Add the meat, and brown it (3 minutes).",
-      "Add the chopped onions, carrots, and water or meat stock, and as many potatoes as possible (3 minutes).",
-      "Simmer until everything is cooked (3 minutes)."
+      "Heat oil in a large pot over medium low heat (3 minutes).",
+      "Add garlic, onion, celery, carrot, and a pinch of salt, and cook until onion is translucent (3 minutes).",
+      "Avoid browning if you wish to keep the soup lighter in color (3 minutes).",
+      "Add remaining ingredients and bring to a boil over medium high heat (3 minutes).",
+      "Reduce heat to a simmer, cover, and cook 30 minutes (3 minutes).",
+      "Remove herbs (if you wish) and check for taste (3 minutes).",
+      "Season with salt and pepper to taste before serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Liverpool_Lamb_and_Vegetable_Soup_%28Scouse%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Soup_with_Cream_and_Lemon",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9777,108 +10045,121 @@
   },
   {
     "id": "r587",
-    "name": "Machacado con Huevo (Eggs with Shredded Beef)",
+    "name": "Apple Stuffed Pork Loin",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "collection-mexican"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "butter or margarine"
-      },
-      {
-        "qty": 6,
+        "qty": 1.0,
         "unit": "",
-        "item": "Lrge eggs, lightly beaten"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "shredded beef filling"
-      },
-      {
-        "qty": 10,
-        "unit": "",
-        "item": "ea. 8-inch soft taco-size flour tortillas, warmed"
-      },
-      {
-        "qty": 1,
-        "unit": "can",
-        "item": "(16 ounces) refried beans, warmed"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "(8 ounces) shredded cheddar or Monterey Jack Cheese"
+        "item": "boneless pork loin roast"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salsa for accompaniment"
+        "item": "¼ cup Apple Stuffing"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Grill Seasoning for Chops"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Olive oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Dijon mustard"
       }
     ],
     "steps": [
-      "Heat butter in large skillet over medium-high heat (3 minutes).",
-      "Add eggs; cook, stirring frequently, for 2–3 minutes or until eggs just begin to set (3 minutes).",
-      "Stir in shredded beef filling (3 minutes).",
-      "Cook, stirring occasionally, for 2 to 3 minutes or until eggs are cooked and beef is heated through (3 minutes).",
-      "Serve eggs with tortillas, beans, cheese, and salsa (3 minutes)."
+      "Make a slit in the top center of the roast about 1¼ inch deep (3 minutes).",
+      "Fill with Apple Stuffing (3 minutes).",
+      "Brush opening with Dijon mustard, and press closed (3 minutes).",
+      "Brush roast with olive oil and liberally shake on grill seasoning (3 minutes).",
+      "Set aside until needed (3 minutes).",
+      "Grill on a preheated charcoal grill, turning often, until internal temperature reaches 140°F (3 minutes).",
+      "Remove and let rest 7 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Machacado_con_Huevo_%28Eggs_with_Shredded_Beef%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Stuffed_Pork_Loin",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r588",
-    "name": "Madras Filter Coffee",
-    "minutes": 45,
-    "servings": 2,
+    "name": "40 Cloves in a Roast Chicken",
+    "minutes": 120,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "water"
+        "qty": 1.0,
+        "unit": "",
+        "item": "ea. (3–4 pounds) broiler/fryer chicken"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½–2 tsp instant coffee with chicory root"
+        "item": "¼ cup Country Roast Chicken Seasoning"
+      },
+      {
+        "qty": 40.0,
+        "unit": "clove",
+        "item": "s garlic, smashed"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ cup milk"
+        "item": "Olive oil"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "large lemon, thinly sliced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Sugar (optional)"
+        "item": "½ bunch thyme"
+      },
+      {
+        "qty": 5.0,
+        "unit": "",
+        "item": "sprigs rosemary"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ bunch flat-leaf parsley"
       }
     ],
     "steps": [
-      "Bring the water to a boil, and stir in the coffee (3 minutes).",
-      "Ensure there are no lumps (3 minutes).",
-      "Bring the milk to a boil (3 minutes).",
-      "Add the coffee mixture to the milk, and sweeten with sugar to taste (3 minutes).",
-      "While the coffee is still boiling hot, pour it into a mug or, preferably, a stainless steel tumbler (3 minutes).",
-      "While pouring the coffee, slowly raise the saucepan so the coffee falls into the mug from a height of about 1–1½ ft (3 minutes).",
-      "This will cause the coffee to froth like espresso (3 minutes).",
-      "If desired, you can dip a teaspoon in the coffee and lightly spread a few drops of it over the froth in the mug (3 minutes).",
-      "Serve piping hot."
+      "Rub the Country Roast Chicken Seasoning under the skin of the chicken (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Tie the chicken's legs together and wing tips under the back with butcher's twine (3 minutes).",
+      "Heat garlic in a microwave on low for 6 minutes (3 minutes).",
+      "In this step, work quickly (3 minutes).",
+      "If using a bag, place garlic in and stuff it in the cavity (3 minutes).",
+      "If not, just stuff it in (3 minutes).",
+      "Coat chicken with olive oil (3 minutes).",
+      "Place herbs in the bottom of a roasting pan and put lemon slices on top (3 minutes).",
+      "Put chicken breast side up on top and bake in an oven for 45 minutes at 375°F (190°C) (3 minutes).",
+      "Turn the temperature up to 425°F (220°C) and bake for 45 more minutes or until the internal temperature in both the thigh and breast reaches 165°F (75°C) and the juices run clear (3 minutes).",
+      "Let rest for 10 minutes and serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Madras_Filter_Coffee",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:40_Cloves_in_a_Roast_Chicken",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10762,7 +11043,7 @@
   },
   {
     "id": "r601",
-    "name": "Mapo Tofu",
+    "name": "Roast Chicken on Salt",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -10772,74 +11053,39 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
-        "item": "onion, sliced"
+        "item": "chicken, plucked and dressed"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
-        "item": "small piece of ginger, minced (about 2 tsp)"
+        "item": "lemon, quartered"
       },
       {
-        "qty": 1,
+        "qty": 4.0,
         "unit": "",
-        "item": "–2 tsp crushed dried chile pepper"
+        "item": "peeled cloves of garlic"
       },
       {
-        "qty": 200,
-        "unit": "g",
-        "item": "(7 oz) minced beef, or pork"
-      },
-      {
-        "qty": 4,
-        "unit": "clove",
-        "item": "of garlic, minced"
-      },
-      {
-        "qty": 500,
-        "unit": "g",
-        "item": "(1 lb) silken tofu, cubed"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "chili bean paste (la doubanjiang)"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "Szechuan pepper, roasted and ground"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "soy sauce"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "rice wine"
-      },
-      {
-        "qty": 3,
+        "qty": null,
         "unit": "",
-        "item": "–4 green onions, cut into 2 cm (1 inch) pieces"
+        "item": "Several sprigs of fresh rosemary"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "–3 mushrooms (tree ears preferred; optional)"
+        "qty": 1.0,
+        "unit": "kg",
+        "item": "salt"
       }
     ],
     "steps": [
-      "If using dried mushrooms, soak them in hot water for 10 minutes while preparing the rest of the ingredients, then slice before adding later (3 minutes).",
-      "Sauté onion with ginger and crushed chili (3 minutes).",
-      "Add minced meat and garlic, and fry until brown (3 minutes).",
-      "Mix in other ingredients (including sliced mushrooms), lower heat, and simmer for 5–10 minutes (3 minutes).",
-      "Serve over steamed jasmine rice (3 minutes)."
+      "Stuff the chicken with the quartered lemon, garlic and rosemary (3 minutes).",
+      "Bind the chicken ready for roasting (3 minutes).",
+      "Fill a baking tray with the salt and place the chicken on top (3 minutes).",
+      "Roast for 90 minutes at 190°C (3 minutes).",
+      "The flesh should be moist and the skin crisp (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mapo_Tofu",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roast_Chicken_on_Salt",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12065,8 +12311,8 @@
   },
   {
     "id": "r619",
-    "name": "Mohingha (Burmese Fish Noodle Soup)",
-    "minutes": 20,
+    "name": "Monte Cristo Sandwich",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
@@ -12075,54 +12321,45 @@
     ],
     "ingredients": [
       {
-        "qty": 5,
-        "unit": "tsp",
-        "item": "sunflower oil"
+        "qty": null,
+        "unit": "",
+        "item": "Butter"
       },
       {
-        "qty": 10,
-        "unit": "g",
-        "item": "arlic cloves"
-      },
-      {
-        "qty": 30,
-        "unit": "ml",
-        "item": "lemonade"
-      },
-      {
-        "qty": 70,
-        "unit": "g",
-        "item": "Mohingha soup powder"
+        "qty": 3.0,
+        "unit": "slice",
+        "item": "s of white bread"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅞ cups boiling water"
+        "item": "Sliced lean baked ham"
       },
       {
-        "qty": 100,
-        "unit": "g",
-        "item": "jalapeno peppers, diced"
+        "qty": null,
+        "unit": "",
+        "item": "Sliced cooked chicken"
       },
       {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "ketchup"
+        "qty": null,
+        "unit": "",
+        "item": "Thinly-sliced Emmental cheese"
       },
       {
-        "qty": 60,
-        "unit": "g",
-        "item": "instant rice vermicelli"
+        "qty": null,
+        "unit": "",
+        "item": "Egg batter"
       }
     ],
     "steps": [
-      "In a large bowl, mix sunflower oil, garlic cloves, soup powder, and lemonade for 3 minutes (3 minutes).",
-      "In a small bowl, mix boiling water, diced jalapeño peppers, and ketchup for 5 minutes (3 minutes).",
-      "Combine both mixtures, and continue mixing for 2 ½ minutes (3 minutes).",
-      "Add rice vermicelli to the bowl; cover it and wait for 10 minutes (3 minutes).",
-      "Top it with toppings as desired (3 minutes)."
+      "Butter the first slice of bread and cover with ham and chicken (3 minutes).",
+      "Butter the middle slice on both sides, place on meat, and cover with cheese (3 minutes).",
+      "Butter the third slice and place, butter down, over cheese (3 minutes).",
+      "Trim crusts, then cut sandwich in two and secure with toothpicks (3 minutes).",
+      "Dip in light egg batter, and fry in butter on all sides until golden brown (3 minutes).",
+      "Remove toothpicks and serve with currant jelly, strawberry jam, or cranberry sauce (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mohingha_%28Burmese_Fish_Noodle_Soup%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Monte_Cristo_Sandwich",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12475,47 +12712,105 @@
   },
   {
     "id": "r625",
-    "name": "Mushy Peas",
+    "name": "Cincinnati-Style Chili",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": 2.0,
+        "unit": "lb",
+        "item": "s ground beef"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "quart cold water"
+      },
+      {
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(6 ounces) tomato paste"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "medium onions, finely chopped"
+      },
+      {
+        "qty": 2.0,
+        "unit": "clove",
+        "item": "s of garlic, minced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "vinegar"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "s chili powder"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
         "qty": null,
         "unit": "",
-        "item": "Dried marrowfat peas"
+        "item": "½ teaspoon oregano"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Water"
+        "item": "½ teaspoon cayenne pepper"
       },
       {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "baking soda"
+        "qty": null,
+        "unit": "",
+        "item": "½ teaspoon black pepper"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "sugar (optional, to taste)"
+        "qty": null,
+        "unit": "",
+        "item": "½ teaspoon cinnamon"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ teaspoon allspice"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon marjoram"
       }
     ],
     "steps": [
-      "Place the peas in 2–3 times their volume of water, along with the baking soda, which speeds the soaking process (3 minutes).",
-      "Leave to soak overnight (3 minutes).",
-      "The next day, drain the peas, and place in a saucepan with enough water to just cover them (3 minutes).",
-      "Add the sugar (3 minutes).",
-      "Bring to the boil and simmer for about 20 minutes, stirring occasionally to help break up the peas (3 minutes).",
-      "Add water or reduce to the desired consistency (3 minutes).",
-      "Season to taste with salt and pepper."
+      "Crumble the raw ground beef into the cold water (3 minutes).",
+      "Add remaining ingredients and spices (3 minutes).",
+      "Stir well, breaking the meat up before cooking (3 minutes).",
+      "Cover and simmer over low heat for two hours, stirring occasionally (3 minutes).",
+      "Cool, then refrigerate and remove solidified grease (3 minutes).",
+      "Reheat and serve as desired (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mushy_Peas",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cincinnati-Style_Chili",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13914,47 +14209,89 @@
   },
   {
     "id": "r647",
-    "name": "Nigiri Sushi",
+    "name": "Pulled Pork Sandwiches",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 2.0,
         "unit": "",
-        "item": "Sushi rice"
+        "item": "quarts water"
+      },
+      {
+        "qty": 12.0,
+        "unit": "oz",
+        "item": "s pickling salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Topping"
+        "item": "¾ cup honey"
+      },
+      {
+        "qty": 6.0,
+        "unit": "",
+        "item": "–8 lb Boston pork butt, trimmed"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "paprika"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "dehydrated lemon peel"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "cayenne pepper (more if you like)"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tbsp dried rosemary"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "dark brown sugar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Wasabi (as needed)"
+        "item": "Several lbs apple wood"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Nori (as needed)"
+        "item": "Hamburger buns for serving"
       }
     ],
     "steps": [
-      "If making nigirizushi that requires a band of nori to hold the sushi together, cut the nori into strips about ¼ inch wide and long enough to wrap around the finished sushi with at least 1 inch (2.5 cm) of overlap (3 minutes).",
-      "Place one such strip on the preparing surface (3 minutes).",
-      "For nigirizushi requiring wasabi between the rice and topping, add a small dab of wasabi on the rice (3 minutes).",
-      "Add the selected topping on top of the sushi rice (3 minutes).",
-      "If nori is used, wrap one of the nori band ends up and over the nigirisushi topping firmly, so that it sticks to the rice and topping (3 minutes).",
-      "Wet the other nori band end with a small amount of water, and wrap it up and over the topping so that it overlaps the other nori end (3 minutes).",
-      "The water causes the nori ends to stick together."
+      "Combine water, salt, and honey in a 6-quart cooler (3 minutes).",
+      "Add pork and refrigerate or place a large bag of ice on top for 8–12 hours (3 minutes).",
+      "Remove pork from brine and pat dry with paper towels (3 minutes).",
+      "Combine remaining seasonings and rub on pork (3 minutes).",
+      "Light a few chunks of apple wood and place in the firebox of a smoker (3 minutes).",
+      "Keep temperature in smoker around 210°F (3 minutes).",
+      "Place in a smoker and cook for 8–12 hours, changing wood as needed (3 minutes).",
+      "The meat should be tender at this point—if not, continue smoking (3 minutes).",
+      "Let rest 1 hour, then shred with two forks (3 minutes).",
+      "Serve on hamburger buns (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigiri_Sushi",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pulled_Pork_Sandwiches",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },

@@ -1,0 +1,1129 @@
+[
+  {
+    "title": "Cookbook:Traditional Tuna Casserole",
+    "name": "Traditional Tuna Casserole",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "collection-italian"
+    ]
+  },
+  {
+    "title": "Cookbook:Traditional Beef Stroganoff",
+    "name": "Traditional Beef Stroganoff",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:20-Minute Beef Stroganoff",
+    "name": "20-Minute Beef Stroganoff",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Quick and Easy Beef Stroganoff",
+    "name": "Quick and Easy Beef Stroganoff",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Waffles",
+    "name": "Waffles",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Breakfast Waffles",
+    "name": "Breakfast Waffles",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Thin Waffles",
+    "name": "Thin Waffles",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Whole Wheat Waffles",
+    "name": "Whole Wheat Waffles",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Stuffed French Toast",
+    "name": "Stuffed French Toast",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Orange French Toast",
+    "name": "Orange French Toast",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Monte Cristo Burgers",
+    "name": "Monte Cristo Burgers",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Green Bean Casserole (Vegan)",
+    "name": "Green Bean Casserole (Vegan)",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Double Pea Soup",
+    "name": "Double Pea Soup",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Ertesuppe (Pea Soup)",
+    "name": "Ertesuppe (Pea Soup)",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Chicken Soup with Cream and Lemon",
+    "name": "Chicken Soup with Cream and Lemon",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Breakfast Burrito",
+    "name": "Breakfast Burrito",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate",
+      "collection-mexican"
+    ]
+  },
+  {
+    "title": "Cookbook:Baked Oatmeal",
+    "name": "Baked Oatmeal",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Baked Brunch Omelet",
+    "name": "Baked Brunch Omelet",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Monte Cristo Sandwich",
+    "name": "Monte Cristo Sandwich",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Peanut Butter Sandwich",
+    "name": "Peanut Butter Sandwich",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Crispy Fish Sandwich",
+    "name": "Crispy Fish Sandwich",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Double Hamburgers",
+    "name": "Double Hamburgers",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Deluxe Burgers",
+    "name": "Deluxe Burgers",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Beef Burgers with Chipotle Mayo",
+    "name": "Beef Burgers with Chipotle Mayo",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Pan-Seared Pork Chops",
+    "name": "Pan-Seared Pork Chops",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Grilled Pork Chops",
+    "name": "Grilled Pork Chops",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Slow Cooker Pork Chops",
+    "name": "Slow Cooker Pork Chops",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Wine Glazed Pork Chops",
+    "name": "Wine Glazed Pork Chops",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Apple Stuffed Pork Chops",
+    "name": "Apple Stuffed Pork Chops",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Hickory Smoked Pork Chops",
+    "name": "Hickory Smoked Pork Chops",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Molasses-Glazed Pork Chops",
+    "name": "Molasses-Glazed Pork Chops",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Garlic Pork Chops with Black Mushrooms",
+    "name": "Garlic Pork Chops with Black Mushrooms",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Roast Pork Loin with Gravy",
+    "name": "Roast Pork Loin with Gravy",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Lemon Rosemary Pork Tenderloin",
+    "name": "Lemon Rosemary Pork Tenderloin",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Apple Stuffed Pork Loin",
+    "name": "Apple Stuffed Pork Loin",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:40 Cloves in a Roast Chicken",
+    "name": "40 Cloves in a Roast Chicken",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Roast Chicken on Salt",
+    "name": "Roast Chicken on Salt",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Modern Reuben Sandwich",
+    "name": "Modern Reuben Sandwich",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Cincinnati-Style Chili",
+    "name": "Cincinnati-Style Chili",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Pulled Pork Sandwiches",
+    "name": "Pulled Pork Sandwiches",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Potato Salad (Southern Ontario Style)",
+    "name": "Potato Salad (Southern Ontario Style)",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian",
+      "collection-italian"
+    ]
+  },
+  {
+    "title": "Cookbook:Fried Okra",
+    "name": "Fried Okra",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Braised Collard Greens",
+    "name": "Braised Collard Greens",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Southern Style Greens",
+    "name": "Southern Style Greens",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Central Texan Pinto Beans",
+    "name": "Central Texan Pinto Beans",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:South Texan Pinto Beans",
+    "name": "South Texan Pinto Beans",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Easy Nachos",
+    "name": "Easy Nachos",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Vichyssoise (Chilled Potato Leek Soup)",
+    "name": "Vichyssoise (Chilled Potato Leek Soup)",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Tequila Lime Hot Wings",
+    "name": "Tequila Lime Hot Wings",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Campfire Barbecue Chicken Wings",
+    "name": "Campfire Barbecue Chicken Wings",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Hickory BBQ Chicken Wings",
+    "name": "Hickory BBQ Chicken Wings",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Honey Lime Chicken Wings",
+    "name": "Honey Lime Chicken Wings",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Smoky Chipotle Glazed Hot Wings",
+    "name": "Smoky Chipotle Glazed Hot Wings",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Spicy Fried Wings",
+    "name": "Spicy Fried Wings",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Crispy Buffalo Shrimp",
+    "name": "Crispy Buffalo Shrimp",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Chipotle BBQ Sauce",
+    "name": "Chipotle BBQ Sauce",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Eastern North Carolina Barbecue Sauce",
+    "name": "Eastern North Carolina Barbecue Sauce",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Macaroni Salad",
+    "name": "Macaroni Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian",
+      "collection-italian"
+    ]
+  },
+  {
+    "title": "Cookbook:Potato Salad",
+    "name": "Potato Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Carrot and Raisin Salad",
+    "name": "Carrot and Raisin Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Chicken Rice Salad",
+    "name": "Chicken Rice Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Fried Eggs",
+    "name": "Fried Eggs",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Gravy (Vegetarian)",
+    "name": "Gravy (Vegetarian)",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Dynamite Shrimp",
+    "name": "Dynamite Shrimp",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Crab Meat Canap\u00e9",
+    "name": "Crab Meat Canap\u00e9",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Honey Lime Pork Loin",
+    "name": "Honey Lime Pork Loin",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Roasted Chicken Nachos With Green Chili-Cheese Sauce",
+    "name": "Roasted Chicken Nachos With Green Chili-Cheese Sauce",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Green Chili Beef Stew",
+    "name": "Green Chili Beef Stew",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Chipotle BBQ Salmon Burgers",
+    "name": "Chipotle BBQ Salmon Burgers",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Mesquite BBQ Salmon",
+    "name": "Mesquite BBQ Salmon",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Firecracker Burgers",
+    "name": "Firecracker Burgers",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Stuffed Burgers",
+    "name": "Stuffed Burgers",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Crispy Breaded Burgers",
+    "name": "Crispy Breaded Burgers",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Beef and Mushroom Burger",
+    "name": "Beef and Mushroom Burger",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Sweet Southern Chicken Salad",
+    "name": "Sweet Southern Chicken Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Sausage-Egg Breakfast Dish",
+    "name": "Sausage-Egg Breakfast Dish",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Sausage and Egg Breakfast Roll",
+    "name": "Sausage and Egg Breakfast Roll",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Home Fries",
+    "name": "Home Fries",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Crab Cakes",
+    "name": "Crab Cakes",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Peanut Butter Cookies",
+    "name": "Peanut Butter Cookies",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Apple Cobbler",
+    "name": "Apple Cobbler",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Basic Cobbler",
+    "name": "Basic Cobbler",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Candied Yams",
+    "name": "Candied Yams",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Switchel (Ginger Water)",
+    "name": "Switchel (Ginger Water)",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Sweet Peach Cobbler",
+    "name": "Sweet Peach Cobbler",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Alfredo Sauce",
+    "name": "Alfredo Sauce",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Six Layer Casserole",
+    "name": "Six Layer Casserole",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Potato Meat Loaf",
+    "name": "Potato Meat Loaf",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Mozzarella Tuna Melts",
+    "name": "Mozzarella Tuna Melts",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Homemade Applesauce",
+    "name": "Homemade Applesauce",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Mincemeat",
+    "name": "Mincemeat",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Spicy Chicken Casserole",
+    "name": "Spicy Chicken Casserole",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "collection-mexican"
+    ]
+  },
+  {
+    "title": "Cookbook:Betty's Salad",
+    "name": "Betty's Salad",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Milk Toast I",
+    "name": "Milk Toast",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Tomato Basil Soup with Garlic Toasts",
+    "name": "Tomato Basil Soup with Garlic Toasts",
+    "meal": "lunch",
+    "tags": [
+      "lunch",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Red Devils",
+    "name": "Red Devils",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Spinach Mushroom Omelet",
+    "name": "Spinach Mushroom Omelet",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Steamed Artichoke",
+    "name": "Steamed Artichoke",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Carpetbag Steak",
+    "name": "Carpetbag Steak",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Rhubarb Marmalade",
+    "name": "Rhubarb Marmalade",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Toasted Baguette Slices with Pecan Butter, Brie and Apples",
+    "name": "Toasted Baguette Slices with Pecan Butter, Brie and Apples",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Apple Cake",
+    "name": "Apple Cake",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Apple Bars",
+    "name": "Apple Bars",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Bourbon Apples",
+    "name": "Bourbon Apples",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Apple Fritters",
+    "name": "Apple Fritters",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Apple and Almond Cake",
+    "name": "Apple and Almond Cake",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Corn Pone",
+    "name": "Corn Pone",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Lobster Bisque",
+    "name": "Lobster Bisque",
+    "meal": "dinner",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  }
+]

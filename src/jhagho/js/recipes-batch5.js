@@ -747,52 +747,50 @@
   },
   {
     "id": "r658",
-    "name": "French Omelette",
+    "name": "Breakfast Burrito",
     "minutes": 45,
-    "servings": 4,
+    "servings": 2,
     "tags": [
       "breakfast",
       "medium",
       "moderate",
-      "vegetarian"
+      "collection-mexican"
     ],
     "ingredients": [
       {
-        "qty": 4,
+        "qty": 8.0,
         "unit": "",
-        "item": "eggs"
+        "item": "eggs either scrambled, sunny-side up, or poached"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "large flour burrito skins"
+      },
+      {
+        "qty": 8.0,
+        "unit": "",
+        "item": "strips of cooked bacon or 1 lb (400 grams) cooked breakfast sausage"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "full order of hash browns"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Oil and butter"
+        "item": "Hollandaise sauce, cheese, salt, and pepper to taste"
       }
     ],
     "steps": [
-      "Loosely beat the eggs (3 minutes).",
-      "Season the mixture with some salt and pepper (3 minutes).",
-      "Heat a frying pan (3 minutes).",
-      "Add oil and a small amount of butter when the pan starts to get hot (3 minutes).",
-      "Enough to coat the pan entirely, but no more (3 minutes).",
-      "Remove any excess oil (3 minutes).",
-      "Let the pan get as hot as you can, without burning the butter, and keep the flame high (3 minutes).",
-      "Pour the egg mixture into the pan and quickly tilt the pan to let it spread around the bottom (3 minutes).",
-      "With a spoon or spatula, pull the solidified edges towards the center and tilt the pan to let the egg mixture fill the gap again (3 minutes).",
-      "Keep repeating this (quickly) until there's not enough liquid egg left to fill the gap (3 minutes).",
-      "The top of the omelette should still be liquid (3 minutes).",
-      "Turn the heat down a little lower to fold the egg (3 minutes)."
+      "Place one-quarter of the hash browns in a tortilla (3 minutes).",
+      "On top of this place 2 strips of bacon or one quarter of the breakfast sausage (3 minutes).",
+      "Add two eggs, cheese, salt, and pepper (3 minutes).",
+      "Roll up the tortilla to enclose everything (3 minutes).",
+      "If you used poached or sunny-side up eggs you can squeeze the burritos to pop the egg yolks and then work the yolk around to form a sauce (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:French_Omelette",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Breakfast_Burrito",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2417,7 +2415,7 @@
   },
   {
     "id": "r681",
-    "name": "Pastry for Cornish Pasties",
+    "name": "Fried Okra",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -2428,37 +2426,44 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "(450 g) flour"
+        "qty": null,
+        "unit": "",
+        "item": "Fresh okra"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ lb (225 g) mixture of lard, butter, and/or suet (equal ratios)"
-      },
-      {
-        "qty": 1,
-        "unit": "pinch",
-        "item": "salt"
+        "item": "Cultured buttermilk or plain milk"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Water"
+        "item": "Flour"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Spices as desired (e.g. salt, pepper, cayenne, thyme, etc.)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Corn meal"
       }
     ],
     "steps": [
-      "Combine the dry ingredients, then gradually mix in enough water to make a stiff dough (3 minutes).",
-      "Roll dough to about a ¼ inch thick (3 minutes).",
-      "Cut out rounds with a tea plate—or other round object about 6in across (3 minutes).",
-      "Lay rounds on a pastry-board with half the round propped on a rolling-pin (3 minutes).",
-      "Add the filling, and fold dough over filling (3 minutes).",
-      "Dampen the edges with water, and press to seal (3 minutes).",
-      "Crimp the edges, then make slit in middle of each pasty (3 minutes).",
-      "Place on baking sheet, bake in hot oven (450 °F) until golden-brown."
+      "Wash and drain a couple of handfuls of fresh okra (3 minutes).",
+      "Cut each okra into three or four slices, about ¾–1 inch (2–2.5 cm) long (3 minutes).",
+      "Discard the stem (3 minutes).",
+      "Soak the okra in buttermilk or plain milk, drain, then dredge in seasoned flour and corn meal (3 minutes).",
+      "A quick way to do this is to put ½ cup flour and 1 cup of corn meal in a plastic bag, add the spices you like, put in the okra, and shake (3 minutes).",
+      "Let the okra rest a few minutes (3 minutes).",
+      "If any pieces look soggy, dredge them again in a flour/corn meal mix (3 minutes).",
+      "Deep fry the okra in hot oil until a light to medium brown (3 minutes).",
+      "They're done in 2–3 minutes (3 minutes).",
+      "Drain, and enjoy! (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pastry_for_Cornish_Pasties",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Okra",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3410,52 +3415,55 @@
   },
   {
     "id": "r696",
-    "name": "Pig's Trotters and Ginger Vinegar Stew",
+    "name": "Braised Collard Greens",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 4,
+        "qty": 2.0,
         "unit": "",
-        "item": "pigs trotters"
+        "item": "ham hocks"
       },
       {
-        "qty": 12,
-        "unit": "",
-        "item": "Lrge eggs"
-      },
-      {
-        "qty": 500,
-        "unit": "g",
-        "item": "ginger root"
+        "qty": 2.0,
+        "unit": "clove",
+        "item": "s of garlic"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Enough sweet black vinegar to cover your other ingredients"
+        "item": "Sea salt to taste"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "quarts water"
+      },
+      {
+        "qty": 2.0,
+        "unit": "lb",
+        "item": "s collard greens"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "white vinegar"
       }
     ],
     "steps": [
-      "Hard boil the eggs, refresh and set aside to cool (3 minutes).",
-      "Wash, peel and thickly slice the ginger, bruise with the flat of a knife (3 minutes).",
-      "Fry the ginger at high heat with oil and salt for about 5 minutes (3 minutes).",
-      "Set aside (3 minutes).",
-      "Remove the hair from trotters (singe with an open flame and then scrape away with a knife, if you have a chef's blowtorch use that; otherwise carefully use a gas hob) (3 minutes).",
-      "Bring a pan of hot water to the boil and blanche the trotters (3 minutes).",
-      "Remove the trotters from the water once the skin has tightened and the exterior of the trotters has changed colour, refresh wth cold water until cooled, and put aside to drain (3 minutes).",
-      "Once mostly dry (help them along with a clean cloth) section the trotters first across the joints and then lengthwise (3 minutes).",
-      "Rub the trotters well with salt and heat up a frying pan or wok (3 minutes).",
-      "Brown the trotters in their own fat (3 minutes).",
-      "Place the ginger and trotters into the earthernware pot, then add the sweet vinegar (3 minutes).",
-      "Bring to a boil and lower the heat and simmer for about 20 minutes."
+      "Place ham hocks, garlic cloves and a healthy pinch of sea salt in the 2 quarts of water, and slowly bring to a boil in a large stew pot until the ham hocks become tender (3 minutes).",
+      "Meanwhile, wash the greens thoroughly with cold water to remove dirt, and then wash them once in the vinegar (do not pat dry after vinegar wash) (3 minutes).",
+      "Next, remove the stems and shred the leaves into thin strips (3 minutes).",
+      "When the water is boiling, add the greens by the handful and turn the temperature down to medium (3 minutes).",
+      "Simmer the greens uncovered until they are quite tender and the broth has reduced (3 minutes).",
+      "Serve with hot pepper vinegar, Tabasco, or red pepper flakes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pig%27s_Trotters_and_Ginger_Vinegar_Stew",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Braised_Collard_Greens",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5338,52 +5346,56 @@
   },
   {
     "id": "r724",
-    "name": "Puttu (Steamed Rice Flour and Coconut)",
+    "name": "Southern Style Greens",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "",
-        "item": "medium-sized coconut"
+        "qty": 2.0,
+        "unit": "lb",
+        "item": "s assorted dark leafy greens, such as mustard, collard, and rainbow chard"
       },
       {
-        "qty": 4,
-        "unit": "cup",
-        "item": "puttu powder (rice flour)"
+        "qty": 8.0,
+        "unit": "",
+        "item": "rashers bacon, cut into about ½-inch pieces"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "bacon fat (optional)"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tsp salt (optional)"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tsp freshly-ground black pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Water (enough to moisten the flour)"
+        "item": "½ cup chicken broth"
       }
     ],
     "steps": [
-      "Grate the coconut flesh finely (3 minutes).",
-      "Mix the puttu powder and salt in a wide bowl (3 minutes).",
-      "Add half of the grated coconut (3 minutes).",
-      "Rub the mixture with your fingertips, sprinkling in water until it is moist and develops a coarse texture (3 minutes).",
-      "Leave the mixture for an hour if the flour is ready made, as it absorbs more water (3 minutes).",
-      "Check the consistency of the flour (3 minutes).",
-      "One should be able to make a ball out of the flour that can be easily crumbled (3 minutes).",
-      "Adjust the water content accordingly (3 minutes).",
-      "Spread a little coconut over the bottom of the puttu vessel (puttu kutti), and fill it with the moist flour (3 minutes).",
-      "Layer it with coconut (3 minutes).",
-      "Steam it on the puttu vessel or on the pressure cooker nozzle (3 minutes).",
-      "In a few minutes, steam will start escaping through the top of the puttu vessel."
+      "Cook bacon to slightly less than done in a large stainless steel pot (3 minutes).",
+      "If desired, pour 1 tbsp bacon fat back into pot (3 minutes).",
+      "Add greens, and sauté over medium-high heat for 7 minutes (3 minutes).",
+      "Add remaining ingredients and lower heat to medium low (3 minutes).",
+      "Cook for 45 minutes (3 minutes).",
+      "Defat if needed (3 minutes).",
+      "Serve warm, with a vinegar-based, clear hot sauce to accompany (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Puttu_%28Steamed_Rice_Flour_and_Coconut%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Southern_Style_Greens",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5458,7 +5470,7 @@
   },
   {
     "id": "r726",
-    "name": "Quesadilla",
+    "name": "Peanut Butter Sandwich",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -5469,41 +5481,45 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "",
-        "item": "flour tortillas, 6 inches (15 cm) in diameter"
+        "qty": 2.0,
+        "unit": "slice",
+        "item": "s of bread"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅓ cup grated meltable cheese (preferably a Monterey Jack and cheddar blend or a Tex Mex blend)"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "filling (see options below)"
+        "item": "Butter, soft"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Cooking spray"
+        "item": "Peanut butter"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Honey"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Preserves (jam)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Very cold milk"
       }
     ],
     "steps": [
-      "Warm both tortillas in the microwave to the point of flexibility, keeping one warm (3 minutes).",
-      "Preheat a frying pan or griddle over medium-low heat (3 minutes).",
-      "Grease with oil or cooking spray, and place one of the tortillas in the pan (3 minutes).",
-      "Sprinkle the shredded cheese over the tortilla (3 minutes).",
-      "Top the cheese with any combination of the fillings, ideally warmed and very well drained (3 minutes).",
-      "Make sure they are evenly distributed across the tortilla (3 minutes).",
-      "Allow the cheese to melt (3 minutes).",
-      "The tortilla may brown in spots but it should not be cooked to the point of changing color substantially (3 minutes).",
-      "Press the other tortilla over the top of the tortilla in the pan, making sure it sticks a bit (3 minutes).",
-      "Flip the quesadilla and allow to warm until it joins as a unit (3 minutes).",
-      "Remove from pan and cut in eight wedges (3 minutes).",
-      "Eat immediately, or remove to a fairly low-temperature 'keep warm' area, below the melting temperature of the cheese."
+      "Toast and butter the bread slices (3 minutes).",
+      "Combine the peanut butter, honey, and butter (3 minutes).",
+      "Spread over one slice of toasted bread (3 minutes).",
+      "Spread preserves (jam) over the other slice (3 minutes).",
+      "Put both halves of sandwich together (3 minutes).",
+      "Cut in half and serve with milk (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Quesadilla",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Peanut_Butter_Sandwich",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5725,47 +5741,65 @@
   },
   {
     "id": "r730",
-    "name": "Ragi Dosa (South Indian Millet and Rice Pancake)",
+    "name": "Baked Oatmeal",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "breakfast",
       "medium",
       "moderate",
-      "vegetarian",
-      "collection-indian"
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 3.0,
         "unit": "cup",
-        "item": "ragi (finger millet)"
+        "item": "s (720 g) quick-cooking oats"
       },
       {
-        "qty": 2,
+        "qty": 1.0,
         "unit": "cup",
-        "item": "rice"
+        "item": "(240 g) brown sugar"
       },
       {
-        "qty": 1,
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "s baking powder"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "ground cinnamon"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1.0,
         "unit": "cup",
-        "item": "urad dal"
+        "item": "(240 ml) milk"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt, to taste"
+        "item": "½ cup (120 g) butter (melted)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs"
       }
     ],
     "steps": [
-      "Soak ragi, rice and urad dal separately in water for 5 hours (3 minutes).",
-      "Grind the soaked rice with water first and next with urad dal and ragi (both) with water (3 minutes).",
-      "Mix up all the ground batter (3 minutes).",
-      "Leave it for about 10 hours to ferment (3 minutes).",
-      "After 10 hours put some salt as per your taste to the batter and water if needed (3 minutes).",
-      "Take a cup of batter and spread it onto a hot tava."
+      "Mix the ingredients and pour them into a 9-inch (20 cm) baking pan (3 minutes).",
+      "They can also be carefully mixed in the pan (3 minutes).",
+      "Bake at 350 °F (175 °C) for 40–45 minutes (3 minutes).",
+      "Serve hot, cold, with or without milk (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ragi_Dosa_%28South_Indian_Millet_and_Rice_Pancake%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Oatmeal",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6122,52 +6156,66 @@
   },
   {
     "id": "r736",
-    "name": "Red Bean Paste",
+    "name": "Central Texan Pinto Beans",
     "minutes": 45,
-    "servings": 4,
+    "servings": 10,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 200,
-        "unit": "ml",
-        "item": "dried adzuki beans"
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "(450 g) dry pinto beans"
+      },
+      {
+        "qty": 8.0,
+        "unit": "cup",
+        "item": "s water"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "ground black pepper"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "ham bone or a rough equivalent of salt bacon"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "–2 bay leaves"
+      },
+      {
+        "qty": 5.0,
+        "unit": "cup",
+        "item": "s water"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Water as needed for soaking and boiling"
-      },
-      {
-        "qty": 150,
-        "unit": "ml",
-        "item": "sugar"
-      },
-      {
-        "qty": 75,
-        "unit": "ml",
-        "item": "vegetable or peanut oil for frying"
+        "item": "A very small amount (3 oz / ~90 g) of that day's brewed coffee (optional)"
       }
     ],
     "steps": [
-      "Wash the beans, checking for and removing any that are damaged or diseased (3 minutes).",
-      "Soak the beans in cold water for at least 4 hours or, preferably, overnight (3 minutes).",
-      "This softens the beans slightly and reduces the cooking time greatly (3 minutes).",
-      "Drain the beans and rinse once soaked (3 minutes).",
-      "Place into a small saucepan and cover with water (3 minutes).",
-      "Bring to the boil (3 minutes).",
-      "Simmer the beans for 1½–2 hours, until soft and disintegrating slightly (3 minutes).",
-      "Longer boiling will result in a smoother paste (3 minutes).",
-      "Remember to top up the water occasionally so the beans don't boil dry and burn (3 minutes).",
-      "Drain away the water (3 minutes).",
-      "Depending on the desired texture, mash the beans by hand (coarse) or in a blender (fine) until they are as you want (3 minutes).",
-      "Note that the paste is very thick, so if using a blender, it is easier to do it a bit at a time."
+      "Wash beans carefully and soak overnight in 8 cups of water (3 minutes).",
+      "Drain and refill with 5 cups of water (3 minutes).",
+      "Add all the other ingredients (3 minutes).",
+      "Bring to a boil and simmer at least 1 hour, or until tender (3 minutes).",
+      "Remove bay leaves (3 minutes).",
+      "Do not drain prior to serving, the liquid is an important aspect of the dish (3 minutes).",
+      "Can be served using slotted spoon, to allow draining, or with a ladle into small side-dish bowls (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Red_Bean_Paste",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Central_Texan_Pinto_Beans",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6569,47 +6617,76 @@
   },
   {
     "id": "r743",
-    "name": "Rice Bubble Cake",
+    "name": "South Texan Pinto Beans",
     "minutes": 45,
-    "servings": 4,
+    "servings": 10,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 100,
-        "unit": "g",
-        "item": "(4 oz) butter"
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "(450 g) dry pinto beans"
       },
       {
-        "qty": 6,
-        "unit": "tbsp",
-        "item": "sugar"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "heaped tsp honey"
-      },
-      {
-        "qty": 5,
+        "qty": 8.0,
         "unit": "cup",
-        "item": "rice cereal"
+        "item": "s water"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tbsp paprika OR ½ tsp each of paprika and pepper"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tbsp granulated or brown sugar"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "salt OR 2 tsp salt and a ham hock"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tbsp chili powder"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ tsp (or more) garlic powder"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tbsp dehydrated onion OR ½ small onion, finely diced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "–2 bay leaves"
+      },
+      {
+        "qty": 5.0,
+        "unit": "cup",
+        "item": "s water"
       }
     ],
     "steps": [
-      "Add the first three ingredients to a large saucepan (large enough to later add the rice cereal) and melt over a medium heat (3 minutes).",
-      "Bring the mixture to the boil and allow it to turn over for about 4 minutes or until the mixture starts to turn brown (3 minutes).",
-      "Stir occasionally (3 minutes).",
-      "Remove from the heat and add the rice cereal (3 minutes).",
-      "Stir well to evenly mix everything together (3 minutes).",
-      "Press the mixture into a lined tin (buttered) (3 minutes).",
-      "Before it sets too hard, cut into even squares."
+      "Wash beans carefully and soak overnight in 8 cups of water (3 minutes).",
+      "Drain and refill with 5 cups of water (3 minutes).",
+      "Add all the other ingredients (3 minutes).",
+      "Bring to a boil and simmer at least an hour, or until tender (3 minutes).",
+      "Remove bay leaves (3 minutes).",
+      "Do not drain prior to serving, as the liquid is an important aspect of the dish (3 minutes).",
+      "It can be served using slotted spoon, to allow draining, or with a ladle into small side-dish bowls (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Rice_Bubble_Cake",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:South_Texan_Pinto_Beans",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7196,51 +7273,45 @@
   },
   {
     "id": "r752",
-    "name": "Roast Potatoes",
+    "name": "Easy Nachos",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "Potatoes"
+        "qty": 12.0,
+        "unit": "oz",
+        "item": "(360 g) tortilla chips"
+      },
+      {
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "(450 g) cheddar cheese, grated"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Oil, fat (goose or duck), or lard"
+        "item": "⅓ cup (80 ml) chopped canned peeled green chiles (optional)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt (optional)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Water"
+        "item": "½ cup (about 120 ml) chopped onion (optional)"
       }
     ],
     "steps": [
-      "Preheat the oven to 220&#176;C (425&#176;F, gas mark 7) (3 minutes).",
-      "Peel the potatoes, and slice them into quarters or eighths depending on the size of the potato (3 minutes).",
-      "Smaller pieces tend to make crispier roast potatoes, and larger pieces tend to make softer ones (3 minutes).",
-      "Put the potatoes in a saucepan of water, and add a pinch of salt if you wish (3 minutes).",
-      "Cover, bring the contents to the boil, and allow to simmer for 10 minutes to parboil the potatoes prior to roasting (3 minutes).",
-      "Drain the potatoes, either removing with a slotted spoon or with a metal colander (3 minutes).",
-      "Replace the lid and shake the potatoes vigorously for 20–30 seconds (3 minutes).",
-      "Lightly coat potatoes with oil or fat, such as by hand tossing in a bowl, and place in tin (3 minutes).",
-      "A deep tin is safer than a shallow tin, as shallow tins tip easily, spilling any loose oil (3 minutes).",
-      "Sprinkle salt over the top of the potatoes (3 minutes).",
-      "Place in oven, then roast for 20–50 minutes—tastes and ovens differ—or until the potatoes are golden brown (3 minutes).",
-      "Remove them from the oven."
+      "Preheat the oven to 400°F (200°C) (3 minutes).",
+      "Lay the tortilla chips on a cookie sheet (3 minutes).",
+      "Toss together the cheese, chilies and onion; sprinkle over the tortilla chips (3 minutes).",
+      "Bake for about 2 minutes, or until the cheese has melted (3 minutes).",
+      "Serve hot (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roast_Potatoes",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Easy_Nachos",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7767,49 +7838,67 @@
   },
   {
     "id": "r761",
-    "name": "Russian-style Waffle Cake",
-    "minutes": 180,
-    "servings": 2,
+    "name": "Baked Brunch Omelet",
+    "minutes": 45,
+    "servings": 8,
     "tags": [
       "breakfast",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 6,
+        "qty": null,
+        "unit": "",
+        "item": "½ loaf (1 pound) white bread, cut into cubes"
+      },
+      {
+        "qty": 680.0,
+        "unit": "g",
+        "item": "cheddar cheese, shredded"
+      },
+      {
+        "qty": 135.0,
+        "unit": "g",
+        "item": "cubed cooked ham"
+      },
+      {
+        "qty": 8.0,
         "unit": "",
         "item": "eggs"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "white granulated sugar"
+        "qty": 475.0,
+        "unit": "ml",
+        "item": "milk"
       },
       {
-        "qty": 200,
+        "qty": 1.0,
         "unit": "g",
-        "item": "butter, melted"
+        "item": "salt"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "all-purpose flour"
+        "qty": 1.0,
+        "unit": "",
+        "item": "dash hot pepper sauce, or to taste"
+      },
+      {
+        "qty": 25.0,
+        "unit": "g",
+        "item": "chopped green onion"
       }
     ],
     "steps": [
-      "Crack the eggs into a mixing bowl, and add the sugar (3 minutes).",
-      "Gradually stir the flour into the egg mixture (3 minutes).",
-      "Then, gradually mix in the melted butter (3 minutes).",
-      "Heat the waffle iron according to the manufacturer's directions until it is ready (3 minutes).",
-      "Ladle a sufficient amount of batter onto the waffle iron—it should just barely cover the surface (3 minutes).",
-      "Close the iron, and cook until the waffle is medium-brown (about 2 minutes) (3 minutes).",
-      "Remove the cooked waffle from the iron (3 minutes).",
-      "Repeat the waffle cooking process until you have used up all the waffle batter (3 minutes).",
-      "Let the waffles cool."
+      "Preheat oven to 350 °F (175 °C) (3 minutes).",
+      "Lightly grease a 9x13-inch (23 x 33 cm) baking pan (3 minutes).",
+      "Place half of the bread cubes on bottom of baking pan (3 minutes).",
+      "Sprinkle with half of the ham and then half of the cheese; repeat (3 minutes).",
+      "In a large bowl, beat together eggs, milk, salt, hot sauce and green onions (3 minutes).",
+      "Pour egg mixture into pan (3 minutes).",
+      "Place pan on top of a baking sheet with a rim and place in oven (3 minutes).",
+      "Pour water into baking sheet and bake for 60 minutes, or until eggs have set (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Russian-style_Waffle_Cake",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Brunch_Omelet",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9440,138 +9529,160 @@
   },
   {
     "id": "r784",
-    "name": "Salata Hara (Libyan Spicy Salad)",
+    "name": "Crispy Fish Sandwich",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 4.0,
         "unit": "",
-        "item": "red bell peppers, roasted, peeled, and finely chopped"
+        "item": "fresh or frozen tilapia fillets, thawed if frozen"
       },
       {
-        "qty": 1,
-        "unit": "g",
-        "item": "reen bell pepper, finely chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "hot chile pepper (such as jalapeno , finely chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "tomato, finely chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small onion, finely chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "clove",
-        "item": "of garlic, minced"
-      },
-      {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "tbsp",
-        "item": "lemon juice"
+        "item": "salt"
       },
       {
-        "qty": 2,
+        "qty": 1.0,
         "unit": "tbsp",
-        "item": "olive oil"
+        "item": "freshly-ground black pepper"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground cumin"
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "garlic powder"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tbsp cayenne pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ teaspoon ground cayenne pepper (adjust according to spice preference)"
+        "item": "Cornmeal"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt, to taste"
+        "item": "Freshly-squeezed lemon juice"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper, to taste"
+        "item": "Olive oil"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "ea. 3-inch ciabatta buns, split in half"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "½ quarts peanut, canola, corn, safflower, or soybean oil"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "mayonnaise"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "small jalapeño, finely minced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Fresh chopped parsley or cilantro for garnish"
+        "item": "¼ dill pickle, finely chopped"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "arugula"
       }
     ],
     "steps": [
-      "In a mixing bowl, combine the roasted and chopped red bell peppers, green bell pepper, hot chili pepper, tomato, onion, and garlic (3 minutes).",
-      "In a small bowl, whisk together the lemon juice, olive oil, cumin, cayenne pepper, salt, and pepper (3 minutes).",
-      "Pour the dressing over the vegetables and toss well to coat all the ingredients (3 minutes).",
-      "Cover the bowl with plastic wrap and refrigerate for at least 30 minutes to allow the flavors to meld together (3 minutes).",
-      "Before serving, garnish the salad with chopped parsley or cilantro (3 minutes)."
+      "Season fish with salt, pepper, garlic powder, and cayenne (3 minutes).",
+      "Dredge fish in cornmeal and dip in lemon juice (3 minutes).",
+      "Dredge again in cornmeal and let sit 2–3 minutes (3 minutes).",
+      "Heat oil to 350°F (3 minutes).",
+      "Working carefully, add fish (3 minutes).",
+      "Fry 2 at a time for three minutes (3 minutes).",
+      "Drain on a cooling rack set in a sheet pan (3 minutes).",
+      "Repeat with remaining fish (3 minutes).",
+      "Brush cut sides of bun with olive oil (3 minutes).",
+      "Season with kosher salt and freshly-ground black pepper (3 minutes).",
+      "Place cut side down on a grill pan preheated over medium high heat (3 minutes).",
+      "Cook until marked and toasted (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Salata_Hara_%28Libyan_Spicy_Salad%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Crispy_Fish_Sandwich",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r785",
-    "name": "Shortbread",
+    "name": "Tequila Lime Hot Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 380,
-        "unit": "g",
-        "item": "(1 ½ cup / 13 ½ oz) all-purpose flour"
+        "qty": 36.0,
+        "unit": "",
+        "item": "chicken wingettes"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ tsp salt"
+        "item": "Salt"
       },
       {
-        "qty": 220,
-        "unit": "g",
-        "item": "(1 cup / 8 oz) butter"
+        "qty": null,
+        "unit": "",
+        "item": "Black pepper"
       },
       {
-        "qty": 110,
-        "unit": "g",
-        "item": "(½ cup / 4 oz) white granulated sugar"
+        "qty": null,
+        "unit": "",
+        "item": "¾ cup tequila"
+      },
+      {
+        "qty": 6.0,
+        "unit": "tbsp",
+        "item": "freshly-squeezed lime juice"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "hot sauce"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Oil for deep frying"
       }
     ],
     "steps": [
-      "Preheat the oven to 140°C (275°F or Gas Mark 1) (3 minutes).",
-      "Cream the butter with the sugar until light and fluffy (3 minutes).",
-      "Sift the flour and salt into the mixture and work into the fat and sugar until completely amalgamated (3 minutes).",
-      "Shape the dough into a ball and roll out to about 1.3 cm (½ inch) thick (3 minutes).",
-      "The dough may need to be chilled for 10–15 minutes for easier handling (3 minutes).",
-      "Cut into squares or rectangles and prick the tops with a fork in two parallel lines (3 minutes).",
-      "Bake in the oven for 30–40 minutes or until the shortbread is lightly browned (3 minutes).",
-      "Leave them on a cooling rack to cool (3 minutes).",
-      "Store in a cool place in an airtight container."
+      "Sprinkle wingettes with salt and black pepper (3 minutes).",
+      "Heat oil to 350°F (3 minutes).",
+      "Fry wings in batches for 12 minutes (3 minutes).",
+      "Drain on a rack (3 minutes).",
+      "Combine remaining ingredients and boil over high heat until reduced by ⅓ (3 minutes).",
+      "Toss wings with sauce mixture and serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shortbread",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tequila_Lime_Hot_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10452,100 +10563,100 @@
   },
   {
     "id": "r797",
-    "name": "Sour Mashed Sweet Potato",
+    "name": "Campfire Barbecue Chicken Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 500,
-        "unit": "g",
-        "item": "sweet potato or other vegetables"
-      },
-      {
-        "qty": 2,
+        "qty": 24.0,
         "unit": "",
-        "item": "cm (1 inch) piece of ginger"
+        "item": "chicken wingettes"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "non-iodised salt"
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp kefir or 1 tsp yoghurt"
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "black pepper"
       }
     ],
     "steps": [
-      "Peel and roast the sweet potato or other vegetables (3 minutes).",
-      "Ideally, this would be an extra piece of sweet potato, pumpkin, taro, etc (3 minutes).",
-      "tossed into the oven with other food being roasted for a main meal (3 minutes).",
-      "A 500 g piece of sweet potato will roast nicely in 1½ hours at 150°C (300°F), or less at a higher temperature (3 minutes).",
-      "Allow the vegetables to cool to about room temperature (3 minutes).",
-      "Mash the vegetables in a bowl (3 minutes).",
-      "Try to break up all large pieces, but don't be too fussy—a few little lumps won't bother anyone! (3 minutes).",
-      "Peel the ginger, and mash it in a mortar and pestle or mince it in a food processor (3 minutes).",
-      "Add it to the bowl and mix well (3 minutes).",
-      "Add the salt and kefir or yoghurt, and mix in well (3 minutes).",
-      "Try to get a smooth consistency, but don't be too concerned about the odd lump (3 minutes).",
-      "Pack the mash into a crock or jar, where it can ferment."
+      "Combine cayenne, salt, and pepper, and toss with wings (3 minutes).",
+      "Refrigerate (3 minutes).",
+      "Combine sauce ingredients (3 minutes).",
+      "Heat in a microwave until warm and well mixed (3 minutes).",
+      "Allow to cool (3 minutes).",
+      "Brush wings on all sides with about ¾ of the sauce (or just put ¾ of the sauce in a ziplock with the wings) and refrigerate as long as possible (3 minutes).",
+      "Grill until internal temperature reaches 165 °F (3 minutes).",
+      "Remove to a plate and cover (3 minutes).",
+      "Let rest 5 minutes before serving with the remaining ¼ of the sauce (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sour_Mashed_Sweet_Potato",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Campfire_Barbecue_Chicken_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r798",
-    "name": "Spaetzle",
+    "name": "Hickory BBQ Chicken Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 500,
-        "unit": "g",
-        "item": "flour"
+        "qty": 24.0,
+        "unit": "",
+        "item": "chicken wings, tips removed, cut in half at the joint"
       },
       {
-        "qty": 5,
-        "unit": "",
-        "item": "eggs"
-      },
-      {
-        "qty": 150,
-        "unit": "",
-        "item": "–200 ml water"
+        "qty": 10.0,
+        "unit": "tbsp",
+        "item": "barbecue sauce"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt"
+        "item": "½ tsp hickory-flavored liquid smoke"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "½ quarts peanut or canola oil"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "tbs hickory-flavored seasoning"
       }
     ],
     "steps": [
-      "Combine all ingredients using hands or an electrical mixer (3 minutes).",
-      "Add enough water to make a dough that is slightly sticky, but still elastic and stiff (3 minutes).",
-      "Beat long enough for bubbles to rise (3 minutes).",
-      "Boil a large pot with salted water (3 minutes).",
-      "If using only a board, sweep a spoon of dough over the kitchen board with the grater (3 minutes).",
-      "Cut/grate small pieces of the dough with the grater into the hot water (3 minutes).",
-      "If using a spaetzle-maker, put a spoon of dough into the maker and press through the holes into the water (3 minutes).",
-      "The spaetzle are done when they rise and swim on the water surface (3 minutes).",
-      "Remove spaetzle from the water with a slotted spoon and put into a lightly oiled bowl."
+      "Combine sauce and liquid smoke (3 minutes).",
+      "Set aside (3 minutes).",
+      "Season chicken evenly with seasoning (3 minutes).",
+      "Set aside (3 minutes).",
+      "Heat oil to 350°F (3 minutes).",
+      "Add chicken, and working in batches, deep fry for 10–12 minutes or golden brown, crisp, and cooked through to 165°F (3 minutes).",
+      "Remove chicken and drain on a cooling rack (3 minutes).",
+      "Toss with sauce mixture (3 minutes).",
+      "Serve warm with blue cheese dressing (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spaetzle",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hickory_BBQ_Chicken_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -11741,46 +11852,78 @@
   },
   {
     "id": "r815",
-    "name": "Steak and Wine Pie",
+    "name": "Honey Lime Chicken Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "butter or margarine, cut into small cubes"
-      },
-      {
-        "qty": 5,
-        "unit": "tbsp",
-        "item": "all-purpose flour"
-      },
-      {
-        "qty": 1,
+        "qty": 32.0,
         "unit": "",
-        "item": "handful dry Italian seasoning"
+        "item": "chicken wingettes"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "½ cup freshly-squeezed lime juice"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cornmeal"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Poultry shake"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "eggs, beaten"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup chipotle hot sauce"
+      },
+      {
+        "qty": 5.0,
+        "unit": "clove",
+        "item": "s garlic, smashed and minced"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "–5 drops red food coloring"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Oil for deep frying"
       }
     ],
     "steps": [
-      "Combine the flour, salt, and Italian seasoning in a shallow bowl, and mix to distribute well (3 minutes).",
-      "Mix in the butter until solid, firm dough lumps form (3 minutes).",
-      "If mixing by hand, pinch and clasp them together until a ball can be formed (3 minutes).",
-      "Dust a work surface and the dough ball with a little flour to prevent sticking (3 minutes).",
-      "Flatten dough with a rolling pin until it forms a thin disk large enough to be draped over the pie plate or bowl (3 minutes).",
-      "Freeze the dough for 20 minutes, or for the duration of filling prep and cooking."
+      "Dip chicken in beaten eggs (3 minutes).",
+      "Season liberally with poultry shake (3 minutes).",
+      "Dredge chicken in cornmeal (3 minutes).",
+      "Let rest 2–3 minutes (3 minutes).",
+      "Deep fry in batches at 350°F (175°C) for 11–12 minutes (3 minutes).",
+      "Drain on a cooling rack (3 minutes).",
+      "Meanwhile, combine remaining ingredients in a large nonreactive bowl (3 minutes).",
+      "Add wings and toss to coat (3 minutes).",
+      "Serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Steak_and_Wine_Pie",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Honey_Lime_Chicken_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12303,60 +12446,54 @@
   },
   {
     "id": "r824",
-    "name": "Stroopwafels",
+    "name": "Smoky Chipotle Glazed Hot Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "package",
-        "item": "(¼ ounce) active dry yeast"
+        "qty": 24.0,
+        "unit": "",
+        "item": "chicken wingettes"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 6.0,
+        "unit": "tbsp",
+        "item": "Smoky Chipotle Hot Sauce"
+      },
+      {
+        "qty": 6.0,
+        "unit": "tbsp",
+        "item": "butter, melted"
+      },
+      {
+        "qty": 3.0,
+        "unit": "clove",
+        "item": "s garlic, minced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup warm water"
-      },
-      {
-        "qty": 4,
-        "unit": "cup",
-        "item": "all-purpose flour"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "unsalted butter"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp ground cinnamon"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup white sugar"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "Lrge eggs"
+        "item": "Oil for deep frying"
       }
     ],
     "steps": [
-      "Preheat a Pizzelle iron (3 minutes).",
-      "Dissolve the yeast in the warm water (3 minutes).",
-      "Add the butter to the flour, then mix in the sugar, cinnamon, eggs, and yeast mixture (3 minutes).",
-      "Mix well and set aside to rise for 30–60 minutes (3 minutes).",
-      "Roll dough into 12 small balls, squeeze each ball into the preheated pizzelle iron, and cook for about 30 seconds (3 minutes)."
+      "Heat oil to 350°F (3 minutes).",
+      "Fry wings in batches for 12 minutes each batch (3 minutes).",
+      "Drain on a rack (3 minutes).",
+      "Combine remaining ingredients, add wings, and toss to coat (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stroopwafels",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smoky_Chipotle_Glazed_Hot_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13585,52 +13722,78 @@
   },
   {
     "id": "r841",
-    "name": "Tacos",
+    "name": "Spicy Fried Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "collection-mexican"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 12.0,
         "unit": "",
-        "item": "Ground, finely sliced, or chopped beef"
+        "item": "whole chicken wings, tips removed and cut in half"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ tbsp cayenne pepper"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "lemon pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Corn tortillas or ready-made taco shells"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "–4 tsp per pound (450 g) of beef of cumin"
+        "item": "½ tbsp black pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Chili powder, to taste"
+        "item": "½ tbsp salt"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg, beaten"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "finely grated lemon zest"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cornmeal, as needed, for dredging"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Vegetable oil for deep frying"
       }
     ],
     "steps": [
-      "If you would like to have 'build-your-own' tacos, dice the optional ingredients your desire as needed and place in separate bowls for use on the table (3 minutes).",
-      "Add lots of cumin to the beef (3 minutes).",
-      "Cumin is the magic ingredient that makes a taco taste like a taco (3 minutes).",
-      "You may also add a bit of salt, a bit of chili powder and/or diced onion (3 minutes).",
-      "Prepare the outside covering: (3 minutes).",
-      "* Pre-made shells can be reheated in the microwave as the package directs (3 minutes).",
-      "* Plain corn tortillas can be used for soft tacos, although, for soft tacos, either a double layer of corn tortillas or a single layer of flour tortilla works best (3 minutes).",
-      "The tortillas should be microwaved, covered, in 15+ second stages, flipping between stages, until warm, and kept covered and warm prior to use (3 minutes).",
-      "Place hot beef into a hard shell or down the middle of a warm soft tortilla (two for corn) (3 minutes).",
-      "A very simple, and quite authentic, taco would be to then add a sprinkling of finely diced onion and cilantro into the inside of the taco, fold the tortilla over (if soft) and serve with lime quarters for squeezing into the taco (3 minutes).",
-      "See Tacos de Bistec (3 minutes).",
-      "You may also continue on to place cheese onto the beef."
+      "Combine all seasonings except lemon zest and then sprinkle over chicken (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Combine egg and lemon zest in a pie plate and place cornmeal in another pie plate (3 minutes).",
+      "Heat oil to 350°F (3 minutes).",
+      "Dip chicken into egg mixture and then dredge in cornmeal (3 minutes).",
+      "Fry in batches for 11–12 minutes (3 minutes).",
+      "Drain on a rack (3 minutes).",
+      "Please don't use paper towels unless you want greasy chicken (3 minutes).",
+      "Sprinkle with red pepper flake for hotter wings, but this is completely optional (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tacos",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spicy_Fried_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13975,49 +14138,80 @@
   },
   {
     "id": "r847",
-    "name": "Tattie Scones",
+    "name": "Crispy Buffalo Shrimp",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "kg",
-        "item": "floury potatoes (e.g. Yukon gold)"
+        "qty": 2.0,
+        "unit": "lb",
+        "item": "s medium shrimp with tails, peeled and deveined"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Butter"
+        "item": "Freshly-squeezed lemon juice"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt and pepper"
+        "item": "Cornmeal"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Flour"
+        "item": "⅓ cup melted unsalted butter"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "freshly-ground black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "⅓ cup hot sauce"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 3.0,
+        "unit": "clove",
+        "item": "s garlic, smashed and very finely minced"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "½ quarts peanut oil"
       }
     ],
     "steps": [
-      "Cook potatoes in salted boiling water until tender, drain them well and put them back into the hot pot to dry them out a bit (3 minutes).",
-      "Mash them well with lots of butter and salt and pepper, but no milk or other liquid (3 minutes).",
-      "Let them cool (3 minutes).",
-      "When the potatoes are cold, stir in flour and a little more melted butter to make a smooth dough (3 minutes).",
-      "Roll out to a thickness of about 5 mm, and cut into 3-inch (7.5 cm) wedges (3 minutes).",
-      "Cook in a lightly-buttered frying pan until golden, about 1–2 minutes a side (3 minutes).",
-      "Serve the potato scones right away with cold butter to spread on top, or store them in the fridge until you want to use them, reheating them in a well-buttered frying pan (3 minutes).",
-      "Some people are content to eat them cold with butter, or heat them in a toaster for buttering (3 minutes).",
-      "They also freeze very, very well."
+      "Combine butter, hot sauce, soy, and garlic (3 minutes).",
+      "Set aside (3 minutes).",
+      "Dip shrimp into lemon juice (3 minutes).",
+      "Sprinkle with salt and pepper (3 minutes).",
+      "Dredge shrimp into cornmeal (3 minutes).",
+      "Let rest 2–3 minutes (3 minutes).",
+      "Heat oil to 375°F (3 minutes).",
+      "Fry shrimp in batches until golden brown, about 2 minutes (3 minutes).",
+      "Drain on a cooling rack (3 minutes).",
+      "Toss shrimp in butter mixture (3 minutes).",
+      "Serve warm with blue cheese dressing, if desired (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tattie_Scones",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Crispy_Buffalo_Shrimp",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },

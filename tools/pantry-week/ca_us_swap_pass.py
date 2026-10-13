@@ -216,6 +216,15 @@ def swap_out_score(r: dict, dup_photos: dict[str, list[str]]) -> tuple[int, list
     return score, issues
 
 
+def swap_eligible_pass2(score: int, issues: list[str]) -> bool:
+    """Donald swap #2: weakest remaining slots (r249+), excluding pass #1 ids."""
+    if score < 4:
+        return False
+    if "keep_na_classic" in issues:
+        return False
+    return True
+
+
 def swap_eligible(score: int, issues: list[str], relaxed: bool = False) -> bool:
     if relaxed:
         if score < 6:
@@ -244,9 +253,14 @@ def swap_eligible(score: int, issues: list[str], relaxed: bool = False) -> bool:
     return hard or score >= 14
 
 
-def discover_pool(existing_names: set[str], existing_urls: set[str]) -> list[dict]:
-    if STRICT_TITLES.is_file():
-        raw = json.loads(STRICT_TITLES.read_text(encoding="utf-8"))
+def discover_pool(
+    existing_names: set[str],
+    existing_urls: set[str],
+    titles_path: Path | None = None,
+) -> list[dict]:
+    strict = titles_path or STRICT_TITLES
+    if strict.is_file():
+        raw = json.loads(strict.read_text(encoding="utf-8"))
         entries: list[dict] = []
         for row in raw:
             title = row["title"]
@@ -341,7 +355,29 @@ def main() -> None:
         action="store_true",
         help="second-pass eligibility (more slots, still skips protected classics)",
     )
+    ap.add_argument(
+        "--pass2",
+        action="store_true",
+        help="CA/US swap pass #2 (score>=4, exclude --exclude-ids, use --titles-file)",
+    )
+    ap.add_argument(
+        "--titles-file",
+        type=Path,
+        default=None,
+        help="Wikibooks strict pool JSON (default: ca_us_titles_strict.json)",
+    )
+    ap.add_argument(
+        "--exclude-ids",
+        type=Path,
+        default=None,
+        help="Recipe ids to never swap (one r### per line, or swap #1 audit markdown)",
+    )
     args = ap.parse_args()
+
+    exclude_ids: set[str] = set()
+    if args.exclude_ids and args.exclude_ids.is_file():
+        text = args.exclude_ids.read_text(encoding="utf-8")
+        exclude_ids.update(re.findall(r"\br\d+\b", text))
 
     recipes = load_all_recipes()
     name_index: dict[str, str] = {}
@@ -358,7 +394,7 @@ def main() -> None:
             targets.append((score, r, issues))
     targets.sort(key=lambda x: -x[0])
 
-    pool = discover_pool(existing_names, existing_urls)
+    pool = discover_pool(existing_names, existing_urls, titles_path=args.titles_file)
     used_titles: set[str] = set()
     used_names: set[str] = set()
     pool_by_meal: dict[str, list[dict]] = {"breakfast": [], "lunch": [], "dinner": []}
@@ -394,12 +430,15 @@ def main() -> None:
         return None
 
     for score, old, issues in targets:
-        if not swap_eligible(score, issues, relaxed=args.relaxed):
+        if args.pass2:
+            if not swap_eligible_pass2(score, issues):
+                continue
+        elif not swap_eligible(score, issues, relaxed=args.relaxed):
             continue
         if swapped >= args.min_count:
             break
         rid = old["id"]
-        if rid in done_ids:
+        if rid in exclude_ids or rid in done_ids:
             continue
         if PROTECT_CLASSICS.search(old.get("name") or ""):
             continue
@@ -423,7 +462,7 @@ def main() -> None:
             continue
         new_meal = infer_meal(new)
         tags = [t for t in (new.get("tags") or []) if str(t).lower() not in ("breakfast", "lunch", "dinner")]
-        tags = [old_meal] + tags
+        tags = [new_meal] + tags
         new["tags"] = tags
 
         batch = batch_file_for_rid(rid)

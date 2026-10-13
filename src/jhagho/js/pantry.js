@@ -1444,7 +1444,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.11.2",
+    VERSION: "3.11.3",
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,

@@ -5,129 +5,76 @@
   var extra = [
   {
     "id": "r249",
-    "name": "A Nice Cup of Tea",
-    "minutes": 15,
-    "servings": 2,
+    "name": "Memphis-Style BBQ Ribs",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 32,
+        "qty": 1,
         "unit": "",
-        "item": "fl oz (1 L) hot water"
+        "item": "slab pork spareribs"
       },
       {
-        "qty": 3,
-        "unit": "",
-        "item": "–5 measures of loose tea leaves or 3–5 tea bags"
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "Rib Rub"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "tomato paste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Sweetener, such as sugar or honey, to taste"
+        "item": "½ cup molasses"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "apple cider vinegar"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "soy sauce"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Milk or lemon juice to taste"
+        "item": "Hickory chunks"
       }
     ],
     "steps": [
-      "Pour freshly-drawn water into a tea kettle, and heat it to your desired temperature (3 minutes).",
-      "An electric kettle is fast and convenient (3 minutes).",
-      "Pour some hot tap water into your teapot and let stand for about several seconds to a minute to pre-warm it (3 minutes).",
-      "Alternately, you can swish some of the hotter boiling water from your kettle around in the teapot for a few seconds (3 minutes).",
-      "Pour out this water before adding the tea to the teapot (3 minutes).",
-      "If using loose tea, place it into an infuser, then into the teapot (3 minutes).",
-      "If using teabags, place them into the teapot (3 minutes).",
-      "When the water reaches the preferred temperature, pour it from the tea kettle into the teapot (3 minutes).",
-      "As you pour, try to avoid pouring directly onto the tea (especially important for green and white teas) to avoid scalding the leaves (3 minutes).",
-      "Allow the tea to infuse quietly (i.e (3 minutes).",
-      "do not stir the teapot or \"dunk the teabag\") (3 minutes).",
-      "Agitating the tea releases more of the bitter compounds and degrades the taste."
+      "Season spareribs with rib rub (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Place chunks in smoker or charcoal grill set for indirect heat at 250°F (120°C) (3 minutes).",
+      "Combine liquid ingredients and bring to a boil over high heat (3 minutes).",
+      "Reduce liquid by ⅓ (3 minutes).",
+      "Place spareribs into smoker or grill for 4–5 hours, basting occasionally with sauce (3 minutes).",
+      "Brush remaining sauce on top of ribs and place on a medium-high grill until browned (3 minutes).",
+      "The internal temperature of the ribs before removing from the grill needs to be at least 145°F (63°C) (3 minutes).",
+      "Let rest for 10 minutes, covered, and carve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:A_Nice_Cup_of_Tea",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Memphis-Style_BBQ_Ribs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r250",
-    "name": "Thai Red Curry Paste",
+    "name": "Barbecue Meatloaf",
     "minutes": 45,
-    "servings": 3,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate",
-      "collection-indian"
-    ],
-    "ingredients": [
-      {
-        "qty": 12,
-        "unit": "",
-        "item": "small red Thai chiles, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "branch of lemongrass"
-      },
-      {
-        "qty": 3,
-        "unit": "clove",
-        "item": "of garlic, pressed"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small onion"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "grated ginger root"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "freshly chopped cilantro, leaves and stems"
-      },
-      {
-        "qty": 1,
-        "unit": "pinch",
-        "item": "ground cumin"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "trassi (shrimp paste)"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "oil"
-      }
-    ],
-    "steps": [
-      "Grind the red chiles, garlic, lemongrass, and onion in a mortar (3 minutes).",
-      "Add the remaining ingredients except for the oil, and keep grinding to make a fluid paste (3 minutes).",
-      "Mix in the oil (3 minutes).",
-      "Store in an airtight container in the refrigerator for up to 1 month (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Thai_Red_Curry_Paste",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r251",
-    "name": "Abula (Nigerian Three Stews)",
-    "minutes": 45,
-    "servings": 2,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
@@ -136,55 +83,190 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "dried beans"
+        "qty": 18,
+        "unit": "oz",
+        "item": "ground chuck"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "Lrge pieces of meat, cut into pieces"
+        "qty": 18,
+        "unit": "oz",
+        "item": "ground sirloin"
+      },
+      {
+        "qty": 6,
+        "unit": "oz",
+        "item": "garlic-flavored croutons"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup palm oil"
+        "item": "½ teaspoon ground black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ teaspoon cayenne pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "chili powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "dried thyme"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ onion, roughly chopped"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "onion"
+        "item": "carrot, peeled and broken"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "whole cloves garlic"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ red bell pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ teaspoon salt"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "egg"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup barbecue sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tbsp Worcestershire sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Tabasco or something that tastes like it"
+      }
+    ],
+    "steps": [
+      "Heat oven to 325 °F (3 minutes).",
+      "In a food processor bowl, combine croutons, black pepper, cayenne pepper, chili powder, and thyme (3 minutes).",
+      "Pulse until the mixture is of a fine texture (3 minutes).",
+      "Place this mixture into a large bowl and set aside (3 minutes).",
+      "Combine the onion, carrot, garlic, and red pepper in the food processor bowl (3 minutes).",
+      "Pulse until the mixture is finely-chopped, but not pureed (3 minutes).",
+      "Combine the vegetable mixture, ground sirloin, and ground chuck with the bread crumb mixture (3 minutes).",
+      "Season the meat mixture with the salt, and add the egg (3 minutes).",
+      "Combine thoroughly, but avoid squeezing the meat (3 minutes).",
+      "Pack this mixture into a 10-inch loaf pan to mold the shape of the meatloaf (3 minutes).",
+      "Onto a parchment paper-lined baking sheet, turn the meatloaf out of the pan onto the center of the tray (3 minutes).",
+      "Insert a temperature probe at a 45 degree angle into the top of the meatloaf (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Barbecue_Meatloaf",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r251",
+    "name": "Smoking Shrimp Creole",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "canola oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¾ cup chopped onion"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "small seeded green bell pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "small celery rib, thinly sliced"
       },
       {
         "qty": 2,
         "unit": "tsp",
-        "item": "ground crayfish"
+        "item": "finely chopped garlic"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Salt to taste"
+        "qty": 1,
+        "unit": "can",
+        "item": "(14 ounces) crushed tomatoes"
       },
       {
         "qty": 2,
         "unit": "",
-        "item": "dryfish"
+        "item": "bay leaf"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground paprika"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼–½ ground chipotle chili"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¾ pound small or medium shrimp, shelled"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Freshly-ground black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "cooked long-grain brown rice"
       }
     ],
     "steps": [
-      "Soak the beans in water overnight (3 minutes).",
-      "Remove and discard the skins (3 minutes).",
-      "Boil the beans in fresh water until very soft (3 minutes).",
-      "Drain well (3 minutes).",
-      "Blend the beans to a purée using a blender (3 minutes).",
-      "Set aside (3 minutes).",
-      "Boil the meat in a pot of water with onions and spices (3 minutes).",
-      "Remove the meat and set aside (3 minutes).",
-      "Heat a small amount of palm oil in a pot (3 minutes).",
-      "Add the blended beans, crayfish, salt, boiled meat, and dryfish (3 minutes).",
-      "Cook until the fish is softened."
+      "Heat the oil in a medium skillet over medium-high heat (3 minutes).",
+      "Sauté the onion, celery, pepper, and garlic until the onion is translucent, 4–5 minutes (3 minutes).",
+      "Add the tomatoes, bay leaves, paprika, and chipotle chili (3 minutes).",
+      "Simmer the sauce, uncovered, until it is thick, 15–20 minutes, stirring it 2–3 times (3 minutes).",
+      "Add the shrimp and cook, uncovered, until they are pink and firm, 5–7 minutes, depending on their size (3 minutes).",
+      "Season to taste with salt and pepper (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Abula_%28Nigerian_Three_Stews%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smoking_Shrimp_Creole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -439,52 +521,51 @@
   },
   {
     "id": "r255",
-    "name": "Akamu (Nigerian Pudding)",
-    "minutes": 15,
-    "servings": 2,
+    "name": "Cajun Burger",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": null,
         "unit": "",
-        "item": "Akamu paste, broken into lumps"
+        "item": "½ cup (about 120 ml) mayonnaise"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Hot water"
+        "item": "Cajun seasoning"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Evaporated milk"
+        "qty": 1,
+        "unit": "lb",
+        "item": "(450 g) ground beef"
       },
       {
-        "qty": null,
+        "qty": 4,
+        "unit": "slice",
+        "item": "pepper jack cheese"
+      },
+      {
+        "qty": 4,
         "unit": "",
-        "item": "Sugar"
+        "item": "hamburger buns, split in half"
       }
     ],
     "steps": [
-      "Fill a large basin halfway with the akamu lumps (3 minutes).",
-      "Because akamu rises during preparation, use a bowl large enough to hold the meal in its elevated position (3 minutes).",
-      "If in doubt, use a large bowl and allow plenty of time (3 minutes).",
-      "Crush the ogi lumps with a spoon into very little pieces (3 minutes).",
-      "Mix in small amounts of cold water until the mixture is smooth and has the consistency of evaporated milk (3 minutes).",
-      "Bring a large pot of water to a boil (3 minutes).",
-      "Stir the mixture thoroughly just before the water boils, as some akamu may have accumulated at the bottom of the basin (3 minutes).",
-      "Once the water has reached a boil, carefully but steadily stir it into the akamu mixture (3 minutes).",
-      "Stop stirring as soon as the mixture starts to set, and reduce the flow of water you're pouring to the bare minimum until the akamu has entirely set (3 minutes).",
-      "Thoroughly whisk the mixture (3 minutes).",
-      "Add additional water as desired if the mixture is too thick (3 minutes).",
-      "Stir in evaporated milk and a pinch of sugar to taste."
+      "Combine mayonnaise and 1 Tbsp cajun seasoning (3 minutes).",
+      "Refrigerate until needed (3 minutes).",
+      "Form meat into 4 equal patties, ½ inch (1.25 cm) thick (3 minutes).",
+      "Sprinkle liberally on both sides with seasoning (3 minutes).",
+      "Preheat grill (3 minutes).",
+      "Add burgers and cook, turning often, until desired doneness is achieved (165°F) (3 minutes).",
+      "Spread mayo on buns and place the burgers in (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Akamu_%28Nigerian_Pudding%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cajun_Burger",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -546,58 +627,57 @@
   },
   {
     "id": "r257",
-    "name": "Algerian Couscous with Meat and Vegetables",
+    "name": "Chipotle BBQ Ribs",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 500,
-        "unit": "g",
-        "item": "(about 2½ cups) fine or medium couscous"
+        "qty": 1,
+        "unit": "",
+        "item": "slab pork spareribs"
       },
       {
         "qty": 2,
+        "unit": "cup",
+        "item": "Chipotle BBQ Sauce"
+      },
+      {
+        "qty": 6,
         "unit": "tbsp",
-        "item": "olive oil"
+        "item": "Chipotle BBQ Rub"
       },
       {
-        "qty": 500,
-        "unit": "ml",
-        "item": "(2 cups) warm water"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "molasses"
       },
       {
-        "qty": 250,
-        "unit": "ml",
-        "item": "(1 cup) water mixed with 1 teaspoon salt"
+        "qty": null,
+        "unit": "",
+        "item": "Hickory chunks"
       }
     ],
     "steps": [
-      "To hydrate the couscous, mix the couscous with olive oil and a little salt in a large bowl (3 minutes).",
-      "Rub the grains between your hands to coat them evenly with oil (3 minutes).",
-      "Gradually add the warm water while stirring to moisten the couscous (3 minutes).",
-      "Let it sit for 10 minutes to absorb the water (3 minutes).",
-      "Transfer the couscous to a couscoussier (a traditional steamer) or a fine-mesh steamer basket (3 minutes).",
-      "Steam over simmering water for 20 minutes, fluffing the couscous with a fork every 10 minutes to prevent clumping (3 minutes).",
-      "If you don’t have a steamer, you can use a colander placed over a pot of boiling water, covered with a lid (3 minutes).",
-      "After the first steam, transfer the couscous back to a large bowl (3 minutes).",
-      "Gradually sprinkle the salted water over the couscous while using your hands or a fork to break up any clumps (3 minutes).",
-      "This step ensures the couscous is evenly seasoned and moist (3 minutes).",
-      "Let the couscous cool for 10–15 minutes (3 minutes).",
-      "This allows the grains to absorb the salted water and prepares them for the second steam."
+      "Season ribs with BBQ rub (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Combine BBQ sauce with molasses (3 minutes).",
+      "Place hickory chunks into a 325–350°F smoker or in a charcoal grill set for indirect heat at 325–350°F (3 minutes).",
+      "Place ribs into smoker or grill and cook for 3–4 hours, brushing with molasses mixture often (3 minutes).",
+      "Brush ribs with remaining sauce and place on a medium-high grill and sear until well-browned (3 minutes).",
+      "Let sit for 15 minutes; serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Algerian_Couscous_with_Meat_and_Vegetables",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chipotle_BBQ_Ribs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r258",
-    "name": "Algerian Mint Tea",
+    "name": "Eastern North Carolina Barbecued Pig",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -608,148 +688,210 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "dried green tea (optional)"
-      },
-      {
-        "qty": 1,
-        "unit": "bunch",
-        "item": "of fresh mint leaves"
-      },
-      {
-        "qty": 10,
-        "unit": "",
-        "item": "sugar cubes (optional)"
+        "qty": 80,
+        "unit": "lb",
+        "item": "pig (butchered with head removed)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Water"
+        "item": "Salt"
+      },
+      {
+        "qty": 40,
+        "unit": "lb",
+        "item": "charcoal (for charcoal cooking option)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Your favorite vinegar-based Eastern NC sauce"
       }
     ],
     "steps": [
-      "Boil water in a saucepan (3 minutes).",
-      "Put 2 tsp of dried green tea in the teapot (3 minutes).",
-      "Pour half a glass of boiling water into the teapot, stir and then empty the water to rinse the tea and get rid of its sour aftertaste (3 minutes).",
-      "Fill the teapot with boiling water and then add the fresh mint leaves, which should have been rinsed carefully beforehand (3 minutes).",
-      "Add the sugar cubes to the teapot then leave it on low to medium heat for a few minutes (3 minutes).",
-      "The tea is ready when the water comes to a boil."
+      "Salt hams, ribs/midsection and shoulders liberally and place skin side up on either a gas or charcoal grill or a BBQ pit (3 minutes).",
+      "Keep lid closed, and aim for a heat of approximately 275–350°F (3 minutes).",
+      "Allow 1 hour per 10 pounds cooking time (gas or charcoal) (3 minutes).",
+      "2 hours before being done, place pig with the skin side down (3 minutes).",
+      "As soon as it is flipped, pour BBQ sauce on meat side (3 minutes).",
+      "Close lid and allow skin to crisp (3 minutes).",
+      "The pig will be done to perfection when the ham bone can be twisted freely (3 minutes).",
+      "Lift lid and allow guests to pick/pull meat, or the chef can remove meat and chop to their liking on a chopping block (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Algerian_Mint_Tea",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Eastern_North_Carolina_Barbecued_Pig",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r259",
-    "name": "Alkubus (Nigerian Steamed Bread)",
+    "name": "Texas Easy Chili",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": 3,
+        "unit": "lb",
+        "item": "chuck roast or ground beef, cubed or formed into small meatballs"
+      },
+      {
         "qty": 2,
+        "unit": "tbsp",
+        "item": "oil"
+      },
+      {
+        "qty": 2,
+        "unit": "clove",
+        "item": "of garlic, minced"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "chili powder"
+      },
+      {
+        "qty": 5,
+        "unit": "tbsp",
+        "item": "flour"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "dried oregano"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "ground cumin"
+      },
+      {
+        "qty": 3,
         "unit": "cup",
-        "item": "wheat flour"
+        "item": "tomato juice or V8"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "instant yeast"
+        "qty": 3,
+        "unit": "",
+        "item": "beef bouillon cubes"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ teaspoon salt"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "baking powder"
+        "item": "Salt to taste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup water"
+        "item": "Black pepper to taste"
       },
       {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "vegetable oil"
+        "qty": null,
+        "unit": "",
+        "item": "Lime wedges"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Sour cream"
       }
     ],
     "steps": [
-      "Sift the flour into a mixing bowl (3 minutes).",
-      "Mix in the yeast, salt, and baking powder (3 minutes).",
-      "Mix in the water to make a dough, and knead it until cohesive and fully combined (3 minutes).",
-      "Cover the dough and let rise for 1 hour (3 minutes).",
-      "Gently deflate the dough (3 minutes).",
-      "Grease a cooking mold, and transfer the dough to the mold (3 minutes).",
-      "Cover the mold and place it in a steamer setup (3 minutes).",
-      "Steam until cooked through and a skewer inserted into the center comes out clean (3 minutes).",
-      "Remove from the heat and let cool (3 minutes).",
-      "Unmold the steamed bread and serve."
+      "Cut chuck roast into bite-size pieces or form ground beef into small meatballs (1 inch / 25 mm in size) (3 minutes).",
+      "Fry beef in cooking oil until outside is browned (3 minutes).",
+      "Add minced garlic and cook for 2 minutes (3 minutes).",
+      "Combine chili powder, flour, oregano and cumin in bowl and mix well (3 minutes).",
+      "Sprinkle mixture over cooking beef and stir until beef is well coated with spice mixture (3 minutes).",
+      "Cook for 1 minute (3 minutes).",
+      "Add tomato juice and bullion cubes (3 minutes).",
+      "Stir for about 15 seconds (3 minutes).",
+      "Simmer for 45 minutes, stirring occasionally (3 minutes).",
+      "Remove from heat and add salt and black pepper to taste (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Alkubus_%28Nigerian_Steamed_Bread%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Texas_Easy_Chili",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r260",
-    "name": "Ambrosia Fruit Salad",
+    "name": "Meatloaf",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "cup",
-        "item": "mandarin oranges, drained"
-      },
-      {
-        "qty": 2,
+        "qty": 1,
         "unit": "can",
-        "item": "of pineapple, drained"
+        "item": "(400–425 g/14–15 oz) chickpeas or other beans"
       },
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "grapes"
+        "qty": 400,
+        "unit": "g",
+        "item": "(14 oz) mixed ground beef and pork"
       },
       {
-        "qty": 3,
-        "unit": "cup",
-        "item": "whipped cream"
+        "qty": 240,
+        "unit": "ml",
+        "item": "(1 cup) milk"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ tsp ground black pepper"
       },
       {
         "qty": 1,
-        "unit": "cup",
-        "item": "sour cream"
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
       },
       {
-        "qty": 6,
+        "qty": null,
         "unit": "",
-        "item": "–8 cups miniature marshmallows"
+        "item": "¼ tsp garlic powder"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ tsp dried sage"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "Dijon or other prepared mustard"
+      },
+      {
+        "qty": 75,
+        "unit": "g",
+        "item": "(¾ cup) rolled oats"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Tomato ketchup"
       }
     ],
     "steps": [
-      "Mix the mandarin oranges, pineapple, and grapes in a large bowl (3 minutes).",
-      "Fold in the whipped cream, sour cream, and marshmallows (3 minutes).",
-      "Chill for at least an hour (3 minutes).",
-      "Stir again before serving (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat the oven to 180°C (350°F) (3 minutes).",
+      "Drain the chickpeas or white beans, reserving the liquid (3 minutes).",
+      "Mash the peas or beans to a paste (3 minutes).",
+      "Combine the mashed peas/beans, the liquid from the can, the meat, milk, salt, pepper, Worcestershire, garlic powder, sage, mustard, and oats in a large bowl and mix thoroughly (3 minutes).",
+      "Pour the mixture into an ungreased loaf pan; spread ketchup on top (3 minutes).",
+      "Bake at 180°C (350°F) for 1–1¼ hours (3 minutes).",
+      "Allow to stand for 15 minutes or so after removing it from the oven before cutting into it (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ambrosia_Fruit_Salad",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Meatloaf_V",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1088,46 +1230,65 @@
   },
   {
     "id": "r266",
-    "name": "Arancini (Italian Fried Rice Balls)",
+    "name": "Yeasted Cornbread",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "vegetarian",
-      "collection-italian"
+      "vegetarian"
     ],
     "ingredients": [
       {
         "qty": 1,
-        "unit": "lb",
-        "item": "of arborio rice (this is the type of rice used to make risotto)"
+        "unit": "cup",
+        "item": "warm water"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "active dry yeast"
       },
       {
         "qty": 4,
-        "unit": "oz",
-        "item": "of fresh mozzarella, grated"
+        "unit": "tbsp",
+        "item": "white granulated sugar"
       },
       {
-        "qty": 1.25,
+        "qty": 1,
         "unit": "cup",
-        "item": "grated Parmesan cheese"
+        "item": "yellow cornmeal"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Ground black pepper"
+        "item": "½ cup white flour"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup whole wheat flour"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Additional water, as necessary"
       }
     ],
     "steps": [
-      "Boil the rice in salted water until soft (3 minutes).",
-      "Drain it well (3 minutes).",
-      "Mix in the grated cheese and some freshly ground black pepper (3 minutes).",
-      "Let it cool (3 minutes).",
+      "Mix water, yeast, and sugar (3 minutes).",
+      "Let this sit for a few minutes until it bubbles (3 minutes).",
+      "Stir in the rest of the ingredients, adding water until it is pourable (3 minutes).",
+      "Bake in a greased 9×9-inch pan at 350°F (175°C, gas mark 4) for 25 minutes or until the edges turn golden brown (3 minutes).",
       "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Arancini_%28Italian_Fried_Rice_Balls%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Yeasted_Cornbread",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1927,8 +2088,8 @@
   },
   {
     "id": "r277",
-    "name": "Aubergine and Onion Vegetable Pie",
-    "minutes": 40,
+    "name": "Grilled Mesquite Meatloaf",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
@@ -1938,39 +2099,91 @@
     ],
     "ingredients": [
       {
-        "qty": 250,
-        "unit": "g",
-        "item": "(1 cup) flour"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "(0.4 cups) medium-soft butter (leave it out for a half-hour before making the crust)"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "egg"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Lukewarm water"
+        "item": "½ large onion, diced"
       },
       {
         "qty": 1,
-        "unit": "pinch",
-        "item": "salt"
+        "unit": "tsp",
+        "item": "salt, plus a pinch"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "minced garlic"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup diced celery"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "(450 g) ground chuck (20% fat)"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "lemons, juiced"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "freshly-ground black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp red pepper flakes"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup panko breadcrumbs"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "ketchup"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ pound (225 g) charcoal briquets"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "soaked mesquite chips"
       }
     ],
     "steps": [
-      "Add the flour to a large bowl (3 minutes).",
-      "Add the butter, and rub it into the dough with your fingers until the pastry is nearly consistent in texture (3 minutes).",
-      "Add the egg, then some water bit by bit while working the pastry with your hands until it becomes soft and smooth (3 minutes).",
-      "It should not be sticky, and it should look shiny and medium-yellow (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Heat oil in a large sauté pan over medium-high heat (3 minutes).",
+      "Add onion and a pinch of kosher salt, and cook until translucent (3 minutes).",
+      "Add garlic and cook until garlic reaches a golden color (3 minutes).",
+      "Add celery and cook until lightly browned around edges (3 minutes).",
+      "Set aside until cool (3 minutes).",
+      "Mix together ground chuck, onion mixture, lemon juice, pepper, red pepper flakes, Worcestershire sauce, and breadcrumbs (3 minutes).",
+      "Shape into a 3½ x 7½-inch loaf about 2 inches thick (3 minutes).",
+      "Brush with ketchup and set aside (3 minutes).",
+      "Heat charcoal in a large chimney starter (3 minutes).",
+      "Once hot, evenly distribute around the bottom of the grill and mix with mesquite (3 minutes).",
+      "Reapply the grate and place the loaf on top (3 minutes).",
+      "Grill, covered, turning often, until internal temperature reaches 160°F (72˚C) (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Aubergine_and_Onion_Vegetable_Pie",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Grilled_Mesquite_Meatloaf",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2803,134 +3016,128 @@
   },
   {
     "id": "r289",
-    "name": "Banana Pudding",
-    "minutes": 40,
-    "servings": 4,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate",
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(240 ml) milk"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "+ 2 Tablespoons (200 g + 25 g) granulated sugar"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "(10 g) butter"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ teaspoon salt"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "vanilla extract or vanilla sugar"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "eggs, separated"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "(15 g) cornstarch"
-      },
-      {
-        "qty": 14,
-        "unit": "",
-        "item": "–20 vanilla wafers or ladyfingers"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(60 ml) lemon juice"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "ripe bananas"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "(10 g) shredded unsweetened coconut"
-      }
-    ],
-    "steps": [
-      "In a saucepan, stir together the milk, 1 cup (200 g) of sugar, butter, salt, and vanilla extract and cook over medium heat until the butter melts (3 minutes).",
-      "Whisk the egg yolks in a separate container (a coffee mug will do), then whisk two tablespoons of the hot milk mixture into the egg yolks to temper them so they don’t curdle (3 minutes).",
-      "When the egg mixture is smooth, whisk it into the milk mixture (3 minutes).",
-      "Add 2 tablespoons of cold water to the cornstarch and stir until smooth; then whisk it into the milk mixture and cook until thickened, stirring constantly so it doesn’t burn (3 minutes).",
-      "Remove the custard from heat (3 minutes)."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Pudding",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r290",
-    "name": "Banana Split",
+    "name": "North Carolina-Style BBQ Ribs",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": 1,
         "unit": "",
-        "item": "banana"
+        "item": "slab pork spareribs"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "Rib Rub"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "scoop vanilla ice cream"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "scoop strawberry ice cream"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "scoop chocolate ice cream"
+        "unit": "cup",
+        "item": "apple cider vinegar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Chocolate sauce"
+        "item": "⅓ cup honey"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Whipped cream (optional)"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
       }
     ],
     "steps": [
-      "Split the banana in 2 parts and put them side by side (3 minutes).",
-      "Place vanilla ice-cream in middle and strawberry and chocolate ice-creams on the side (3 minutes).",
-      "Pour some chocolate sauce over them (3 minutes).",
-      "Top with whipped cream if desired (3 minutes).",
-      "Serve immediately (3 minutes)."
+      "Season ribs with Rib Rub and refrigerate for at least 1 hour (3 minutes).",
+      "Combine remaining ingredients and place in a spray bottle (3 minutes).",
+      "Place ribs in a 250°F smoker or a charcoal grill set for indirect heat at 250°F (3 minutes).",
+      "Cook for 5–6 hours, spraying often with vinegar mixture (3 minutes).",
+      "Spray heavily with vinegar mixture and place on a high grill, turning and spraying constantly until well browned (3 minutes).",
+      "Remove and let rest 15 minutes; serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Split_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:North_Carolina-Style_BBQ_Ribs",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r290",
+    "name": "Backyard BBQ Chicken",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "boneless skinless chicken breasts and drumsticks"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "kosher salt"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "lemon pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp garlic powder"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dark brown sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ cups tomato paste"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "honey"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "apple cider vinegar"
+      }
+    ],
+    "steps": [
+      "Combine dry ingredients and rub onto chicken (3 minutes).",
+      "Refrigerate 1 hour (3 minutes).",
+      "Combine liquid ingredients, bring to a boil, and simmer until reduced by ⅓ (3 minutes).",
+      "Place on medium grill, and turn often, brushing with sauce when turned until interior temperature reaches  (3 minutes).",
+      "Let rest for 10 minutes; serve (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Backyard_BBQ_Chicken",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3068,55 +3275,72 @@
   },
   {
     "id": "r293",
-    "name": "Banoffee Pie",
+    "name": "Boston Baked Beans",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 9,
-        "unit": "oz",
-        "item": "(250 g / 16 ea.) gingernut (or digestive) biscuits"
-      },
-      {
-        "qty": 10,
-        "unit": "oz",
-        "item": "(275 g / 2¼ sticks) butter"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "tin (400 g / 14 oz) sweetened condensed milk"
-      },
-      {
         "qty": 6,
-        "unit": "oz",
-        "item": "(175 g / ¾ cup) caster sugar"
+        "unit": "",
+        "item": "rashers thick cut bacon, sliced (or 5 drops liquid smoke)"
+      },
+      {
+        "qty": 4,
+        "unit": "cup",
+        "item": "canned kidney beans, rinsed and drained"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ pint (150 ml / ⅔ cup) double cream"
+        "item": "½ cup molasses"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "blackstrap molasses, plus more as needed"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "dark brown sugar"
       },
       {
         "qty": 2,
+        "unit": "tbsp",
+        "item": "dark rum"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "bananas"
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "dry mustard"
       }
     ],
     "steps": [
-      "Crush the biscuits into crumbs with the end of a rolling pin (3 minutes).",
-      "This is best done inside a freezer bag to avoid spillage and loss (3 minutes).",
-      "Melt two-fifths of the butter (about 4 oz) in a large saucepan (3 minutes).",
-      "Once melted, take off the heat and mix in the biscuit crumbs (3 minutes).",
-      "Press into the bottom of an 8-inch (20 cm) loose-bottomed pie tin, and transfer to the fridge to chill (3 minutes)."
+      "Cook bacon (3 minutes).",
+      "Separate the meat from the fat, and chop the bacon (3 minutes).",
+      "Place 1 tbsp of the bacon fat into a large stainless steel pan (3 minutes).",
+      "Add kidney beans and sauté over medium-high heat (3 minutes).",
+      "Add rum and tilt to ignite (3 minutes).",
+      "If you do not have a gas stove, simply light with a fire stick (3 minutes).",
+      "Add remaining ingredients and chopped bacon and fold to combine (3 minutes).",
+      "Bake in a 325°F oven for 1 ½ hours, adding blackstrap molasses occasionally to prevent drying (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banoffee_Pie",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Boston_Baked_Beans",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4866,70 +5090,110 @@
   },
   {
     "id": "r316",
-    "name": "Blue Cheese Dressing",
+    "name": "Classic Pot Roast",
     "minutes": 45,
-    "servings": 3,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "(30 ml) lemon juice or vinegar (cider or white wine)"
+        "qty": 1,
+        "unit": "",
+        "item": "ea. (2 ½ pounds / 1.1 kg) bottom round roast"
       },
       {
-        "qty": 0.6666666666666666,
+        "qty": null,
+        "unit": "",
+        "item": "½ cup beef broth"
+      },
+      {
+        "qty": 6,
+        "unit": "",
+        "item": "–8 cloves garlic, smashed and minced"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Kosher salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Freshly-ground black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup red wine"
+      },
+      {
+        "qty": 1.25,
         "unit": "cup",
-        "item": "(160 ml) buttermilk"
+        "item": "tomato juice"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "carrots, peeled and cut into ¾-inch (2 cm) pieces"
       },
       {
         "qty": 1,
+        "unit": "",
+        "item": "large onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "fresh rosemary, finely chopped"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "fresh thyme, finely chopped"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "fresh oregano, finely chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup olive oil, divided"
+      },
+      {
+        "qty": 1.25,
         "unit": "cup",
-        "item": "(230 g) mayonnaise"
+        "item": "balsamic vinegar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ cup (180 g) sour cream"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp black pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp garlic powder"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp onion powder"
+        "item": "⅓–½ cup all-purpose flour"
       },
       {
         "qty": 4,
-        "unit": "oz",
-        "item": "(115 g) any variety of blue cheese"
+        "unit": "",
+        "item": "red-skinned potatoes, quartered"
       }
     ],
     "steps": [
-      "Combine all ingredients except the blue cheese and whisk until smooth and homogeneous (3 minutes).",
-      "Dice the blue cheese into approximately ½ inch (1 cm) cubes (3 minutes).",
-      "Most blue cheese is crumbly, so you'll wind up with a lot of crumbs as well as larger chunks (3 minutes).",
-      "Pour the mayonnaise mixture into a serving container and stir in the cubes and crumbs of cheese (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Season roast liberally with kosher salt and freshly-ground black pepper (3 minutes).",
+      "In a 6-quart (6-liter) Dutch oven, heat ¼ cup olive oil over medium-high heat (3 minutes).",
+      "Add roast and cook until browned on all sides (3 minutes).",
+      "Remove roast to a plate and keep warm (3 minutes).",
+      "Add remaining oil and vegetables (3 minutes).",
+      "Cook until onions are lightly browned around edges (3 minutes).",
+      "Remove vegetables and keep warm (3 minutes).",
+      "Deglaze pan with broth and add remaining ingredients (3 minutes).",
+      "Reduce heat to low, then add vegetables and beef (3 minutes).",
+      "Cover and place into a 225°F (110°C) oven and cook 6 hours (3 minutes).",
+      "Serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Blue_Cheese_Dressing",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Classic_Pot_Roast",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5607,7 +5871,7 @@
   },
   {
     "id": "r325",
-    "name": "Brigadeiro (Brazilian Chocolate Fudge)",
+    "name": "Brown Butter Biscuits",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -5619,37 +5883,45 @@
     "ingredients": [
       {
         "qty": 1,
-        "unit": "can",
-        "item": "(395 g) of sweetened condensed milk"
+        "unit": "",
+        "item": "stick (125 g/4.4 oz) butter"
       },
       {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 3,
-        "unit": "tbsp",
-        "item": "cocoa powder"
+        "qty": null,
+        "unit": "",
+        "item": "½ cup () superfine sugar"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "box (482 g) of chocolate sprinkles"
+        "item": "egg"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "vanilla extract"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "½ cups () self-rising flour"
       }
     ],
     "steps": [
-      "In a heavy saucepan, combine the milk, cocoa powder, and butter (3 minutes).",
-      "Stir to dissolve the chocolate (3 minutes).",
-      "Put over low heat and stir constantly to avoid formation of lumps (3 minutes).",
-      "Continue stirring for 10–12 minutes, or until you are able to see the bottom of the pot for one second when you scratch it side-to-side with the spoon (3 minutes).",
-      "The more you cook, the harder the resulting candy will be—it may vary from liquid fudge to hard candy (3 minutes).",
-      "Allow mixture to cool (3 minutes).",
-      "Butter your hands, and roll the mixture into small balls (around 2 cm in diameter) (3 minutes).",
-      "Alternatively, you can use two metal spoons to shape the candies (3 minutes).",
-      "Roll them in the chocolate sprinkles."
+      "Preheat the oven to  (3 minutes).",
+      "Line 2 baking sheets (3 minutes).",
+      "Melt the butter in a pan over a medium heat for 3–5 minutes until the surface is foamy (3 minutes).",
+      "Leave it to cool for 5 minutes (3 minutes).",
+      "Whisk in the sugar until dissolved (3 minutes).",
+      "Leave it to cool for 10–15 minutes until lukewarm (3 minutes).",
+      "Beat in the eggs and vanilla (3 minutes).",
+      "Fold in the flour until combined (3 minutes).",
+      "Roll the dough into 20 balls and place on the prepared baking sheets (3 minutes).",
+      "Flatten the biscuits with a fork (3 minutes).",
+      "Bake for 12–14 minutes until golden (3 minutes).",
+      "Transfer the biscuits to a wire rack and leave it to cool (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Brigadeiro_%28Brazilian_Chocolate_Fudge%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Brown_Butter_Biscuits",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5835,50 +6107,108 @@
   },
   {
     "id": "r329",
-    "name": "Bubble Tea",
+    "name": "Spicy Roast Brisket",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 1,
+        "unit": "kg",
+        "item": "(2 pound) piece of beef brisket"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "sliced or coarsely-chopped onions"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "thinly sliced stalk of celery"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "minced garlic cloves"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "toasted, ground cumin seeds"
+      },
+      {
         "qty": null,
         "unit": "",
-        "item": "½ cup (125 ml) cooked boba tapioca pearls"
+        "item": "½ tsp cracked black peppercorns"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(250 ml) crushed ice"
+        "qty": 2,
+        "unit": "tsp",
+        "item": "dry mustard powder"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(250 ml) very strong chilled black tea"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(250 ml) milk, to taste"
+        "qty": 2,
+        "unit": "tsp",
+        "item": "dried oregano leaves"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Honey or granulated sugar, to taste"
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "diced tomatoes, fresh or canned"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼–½ cup beef stock"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "red wine vinegar"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "brown sugar"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "bay leaves"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "bell pepper, green or red, thinly sliced"
       }
     ],
     "steps": [
-      "Place pearls in a large glass (3 minutes).",
-      "Combine all remaining ingredients in a cocktail shaker (3 minutes).",
-      "Shake vigorously until mixture is frothy (3 minutes).",
-      "Pour into glass and serve with large-diameter straws (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Heat oil in large heavy pot, add brisket, and brown on all sides (3 minutes).",
+      "Push meat to the side (3 minutes).",
+      "Add onions and celery, and cook over medium heat until softened (3 minutes).",
+      "Add garlic, cumin, peppercorns, mustard, oregano, salt, and stir in (3 minutes).",
+      "Add tomatoes, beef stock, vinegar, sugar, and bay leaves (3 minutes).",
+      "Add the tomato juice if desired (3 minutes).",
+      "Add 1 cup of boiling water, cover pot, and cook for 2 hours on low heat (3 minutes).",
+      "Inspect regularly to make sure there is enough liquid, adding water if necessary (3 minutes).",
+      "30 minutes before serving, add bell and chili peppers (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bubble_Tea",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spicy_Roast_Brisket",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6088,74 +6418,54 @@
   },
   {
     "id": "r333",
-    "name": "Bulgogi",
-    "minutes": 45,
+    "name": "Cream Cheese American Buttercream",
+    "minutes": 15,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
         "qty": 1,
-        "unit": "lb",
-        "item": "(450 g) beef suitable for grilling, sliced as thin as possible"
+        "unit": "cup",
+        "item": "(225 g) block-style cream cheese, cold"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "stick (113 g) unsalted butter, cold"
       },
       {
         "qty": 3,
-        "unit": "g",
-        "item": "reen onions, sliced on the bias"
-      },
-      {
-        "qty": 4,
         "unit": "",
-        "item": "button mushrooms (optional), sliced"
+        "item": "½ cups (425 g) powdered sugar"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ onion (optional), thinly sliced"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¾ cup soy sauce"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "white granulated sugar"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(4 tbsp) sesame oil"
-      },
-      {
-        "qty": 4,
+        "qty": 1,
         "unit": "tsp",
-        "item": "pepper"
+        "item": "vanilla extract"
       },
       {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "–2 tbsp minced garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "mirin (optional)"
+        "item": "¼ teaspoon salt"
       }
     ],
     "steps": [
-      "Combine all the ingredients in a big bowl (3 minutes).",
-      "Marinate for at least 30 minutes, but marinating overnight will get the best flavor and tenderization (3 minutes).",
-      "Grill the beef (3 minutes).",
-      "Serve with rice (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Put the cream cheese in a bowl and mix just enough to smooth out lumps (3 minutes).",
+      "Do not overmix (3 minutes).",
+      "Set aside (3 minutes).",
+      "Cream the butter in another bowl until smooth and creamy (3 minutes).",
+      "Beat in powdered sugar in 3–4 batches (3 minutes).",
+      "It may look crumbly at first, but don't worry—it will come together into a ball, like a dough (3 minutes).",
+      "Beat in salt and vanilla (3 minutes).",
+      "Add all of cream cheese and mix in until smooth (3 minutes).",
+      "Do not overmix, as it can make the frosting runny (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bulgogi",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cream_Cheese_American_Buttercream",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6257,25 +6567,49 @@
   },
   {
     "id": "r335",
-    "name": "Butter Tea",
+    "name": "Cornbread and Chicken Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "regular black tea leaves (preferably Nepalese or Indian)"
+        "qty": 2,
+        "unit": "cup",
+        "item": "shredded cooked chicken"
       },
       {
         "qty": 3,
         "unit": "cup",
-        "item": "whole milk (or 1½ cup half-and-half + 1½ cup water)"
+        "item": "cornbread, crumbled finely"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ tsp salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ tsp freshly-ground black pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "minced garlic"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ large onion, finely diced"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "shredded Monterey Jack cheese, divided"
       },
       {
         "qty": 2,
@@ -6283,19 +6617,36 @@
         "item": "unsalted butter"
       },
       {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "olive oil"
+      },
+      {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "⅔ cup dried breadcrumbs"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "unsalted melted butter"
       }
     ],
     "steps": [
-      "Boil tea with milk for 2–10 minutes, depending upon the strength of tea desired (3 minutes).",
-      "Strain into tea cups (3 minutes).",
-      "Add butter and salt (3 minutes).",
-      "Stir thoroughly, ideally by carefully using a blender, and serve (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "In a large straight-sided stainless steel sauté pan set over medium-high heat, melt butter with olive oil (3 minutes).",
+      "Add onion and cook until onion is translucent (3 minutes).",
+      "Add garlic and sauté until golden (3 minutes).",
+      "Remove and set aside until cool (3 minutes).",
+      "Combine chicken with onion mixture along with the salt, pepper, and 1 cup cheese (3 minutes).",
+      "Set aside (3 minutes).",
+      "Place enough cornbread in the bottom of a parchment-lined high-sided roasting pan to lightly coat the bottom (3 minutes).",
+      "Place a layer of chicken mixture on top and repeat until all has been used up (3 minutes).",
+      "Combine remaining ingredients and sprinkle over top layer (3 minutes).",
+      "Cover with foil and place in the center of a 375°F oven 20 minutes (3 minutes).",
+      "Remove foil and bake for 15 more minutes or until browned and bubbly on top (3 minutes).",
+      "Serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Butter_Tea",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cornbread_and_Chicken_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6476,7 +6827,7 @@
   },
   {
     "id": "r338",
-    "name": "Börek (Turkish Filled Pastries)",
+    "name": "Honey BBQ Hot Wings",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -6486,41 +6837,57 @@
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 24,
         "unit": "",
-        "item": "Peynirli börek (white cheese filling)"
+        "item": "chicken wingettes"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Kıymalı börek (minced meat filling)"
+        "item": "Salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Tavuklu börek (chicken filling)"
+        "item": "Black pepper"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Ispanaklı börek (spinach filling)"
+        "item": "½ cup tomato paste"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "cider vinegar"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "hot sauce"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Oil for deep frying"
       }
     ],
     "steps": [
-      "Remove the phyllo sheets from the container (3 minutes).",
-      "Unfold carefully so as not to break them (3 minutes).",
-      "Lay them flat and cover with a clean, damp tea towel to prevent them from drying out—this is important (3 minutes).",
-      "Working quickly, cut the phyllo into lengthwise thirds (step 1 in the diagram) (3 minutes).",
-      "Lay one of these out and cover the other two with the damp tea towel (3 minutes).",
-      "Brush the strip of phyllo with the melted butter (3 minutes).",
-      "Place a heaped teaspoonful of filling on one end of the strip (step 2 in the diagram) (3 minutes).",
-      "Fold the right lower corner upward over the filling to form a triangle (step 3 in the diagram) (3 minutes).",
-      "Now fold the right upper corner over to the left (step 4 in the diagram) (3 minutes).",
-      "Continue folding in this manner until you reach the end of the strip (3 minutes).",
-      "Trim of any excess dough and seal the edges by rubbing a damp finger over the dough and pressing the edge of the triangle where the strip ends (3 minutes).",
-      "Fry in oil at 340°F until golden brown or bake at 350°F for 15 minutes."
+      "Sprinkle wings with salt and black pepper (3 minutes).",
+      "Heat oil to 350°F (175°C) (3 minutes).",
+      "Deep fry wings in batches for 11–12 minutes (3 minutes).",
+      "Drain on a cooling rack (3 minutes).",
+      "Combine liquid ingredients except for oil (3 minutes).",
+      "Bring to a boil over medium high heat until reduced to 10 Tbsp (3 minutes).",
+      "Remove from heat and let rest for 5 minutes (3 minutes).",
+      "Toss wings with sauce; serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:B%C3%B6rek_%28Turkish_Filled_Pastries%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Honey_BBQ_Hot_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6780,45 +7147,45 @@
   },
   {
     "id": "r342",
-    "name": "Calamansi Juice Drink",
+    "name": "Maple Barbecue Baby Back Ribs",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
+        "qty": 2,
         "unit": "",
-        "item": "or 4 calamansi"
-      },
-      {
-        "qty": 1,
-        "unit": "g",
-        "item": "lass cold water"
+        "item": "slabs baby-back pork ribs"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ tablespoon granulated sugar"
+        "item": "Rib Rub"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Ice cubes (optional)"
+        "item": "Maple Barbecue Sauce"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Hickory and applewood chunks"
       }
     ],
     "steps": [
-      "Halve the calamansi with a sharp knife (3 minutes).",
-      "Use your hands to squeeze the juice from the calamansi (3 minutes).",
-      "Combine the juice with the cold water in a glass (3 minutes).",
-      "Stir in sugar until dissolved (3 minutes).",
-      "Add ice cubes (3 minutes)."
+      "Remove membrane on the bottom of the ribs (3 minutes).",
+      "Season both sides liberally with rib rub and refrigerate at least 1 hour (3 minutes).",
+      "Place enough hickory and applewood chunks in the firebox of a smoker to keep the temperature around 200 °F (95 °C) (3 minutes).",
+      "Place ribs in smoker and cook, brushing with barbecue sauce every 1½ hours for 4 hours or until very tender, changing chunks as needed (3 minutes).",
+      "Brush meat side of ribs liberally with sauce and place meat side down on a very, very hot grill until well browned and slightly charred (3 minutes).",
+      "Slice into one-rib portions and serve with additional sauce (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Calamansi_Juice_Drink",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Barbecue_Baby_Back_Ribs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7113,65 +7480,76 @@
   },
   {
     "id": "r347",
-    "name": "Carrot Salad",
-    "minutes": 45,
+    "name": "Chili Colorado",
+    "minutes": 240,
     "servings": 4,
     "tags": [
       "lunch",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 9,
         "unit": "",
-        "item": "Carrots (about 4 medium sized)"
+        "item": "New Mexico dry chiles, washed, with stems and seeds removed"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "water"
+      },
+      {
+        "qty": 5,
+        "unit": "lb",
+        "item": "boneless beef chuck roast, trimmed of fat"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Almond oil"
+        "item": "½ cup all-purpose flour"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "White balsalmic vinegar (or a mix of two parts red wine vinegar to one part balsamic vinegar)"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "kosher salt"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Coarse salt"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Freshly-ground pepper"
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "olive oil"
       },
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "Pine nuts"
+        "item": "large yellow onion, chopped"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Fresh greens like matzumi or baby Chinese mustard, or even Boston lettuce (optional)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Chives (optional)"
+        "qty": 2,
+        "unit": "cup",
+        "item": "beef stock or water"
       }
     ],
     "steps": [
-      "Julliene the carrots (or grate them if julienning is not feasible) (3 minutes).",
-      "Coat with about 1–2 tablespoons of almond oil (3 minutes).",
-      "Sprinkle generously with vinegar, salt, and pepper (3 minutes).",
-      "Add a hefty serving of pine nuts (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Place chiles and 3 cups water into a medium stockpot, and bring to a boil (3 minutes).",
+      "Remove from heat and steep for 30 minutes to soften (3 minutes).",
+      "Strain into a bowl, reserving the cooking liquid (3 minutes).",
+      "Place the chiles and some of the liquid into a blender, and purée until smooth (3 minutes).",
+      "Add more liquid as necessary to form a smooth sauce (3 minutes).",
+      "Pass sauce through a fine mesh strainer to remove any seeds and the tough skins; set aside (3 minutes).",
+      "Cut the beef into 1–2-inch chunks (3 minutes).",
+      "In a medium bowl, combine flour, salt, and pepper (3 minutes).",
+      "Dredge the beef chunks in the seasoned flour; set aside (3 minutes).",
+      "Heat olive oil in a large pot over medium heat (3 minutes).",
+      "Sauté onion until tender and translucent, about 5 minutes (3 minutes).",
+      "Add beef chunks a few at a time, so as not to overcrowd the pot, and cook until evenly brown (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Carrot_Salad",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chili_Colorado",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7541,47 +7919,66 @@
   },
   {
     "id": "r353",
-    "name": "Chapati",
+    "name": "Hickory BBQ Chicken",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
+        "qty": 2,
+        "unit": "",
+        "item": "each boneless skinless chicken thighs, drumsticks, and breasts"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Hickory BBQ Rub"
+      },
+      {
+        "qty": 1,
         "unit": "cup",
-        "item": "whole wheat flour"
+        "item": "salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste (about 1 teaspoon)"
+        "item": "¾ cup honey"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Warm water as required (about 1 ½ cups)"
+        "qty": 2,
+        "unit": "cup",
+        "item": "hot apple cider vinegar"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Ghee (clarified butter; optional)"
+        "qty": 1,
+        "unit": "lb",
+        "item": "ice"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "homemade barbecue sauce"
       }
     ],
     "steps": [
-      "Knead together the flour and water, starting with only a slight dribble of water and adding more as you go until the dough becomes smooth but not too sticky (3 minutes).",
-      "Cover dough, and let rest for at least 5 minutes (3 minutes).",
-      "Divide dough into balls and roll out into disks, slightly thicker than denim material; sprinkle with flour as you roll (3 minutes).",
-      "Place a non-oiled pan over moderately high heat and test its surface temperature by holding your hand over it (3 minutes).",
-      "When very hot, put a chapati on the pan and press it flat with a spatula or dry cloth to make it rise up (3 minutes).",
-      "Flip and repeat so it becomes lightly browned on both sides (3 minutes).",
-      "If desired, brush with ghee."
+      "Combine salt, honey, and vinegar in a gallon size zip-top bag until salt has dissolved (3 minutes).",
+      "Add ice and shake until ice is almost completely melted and mixture has cooled down (3 minutes).",
+      "Insert chicken pieces and refrigerate 1½–2 hours, turning once (3 minutes).",
+      "Place a good amount of hickory chips in the bottom of a large roasting pan (3 minutes).",
+      "Place a roasting rack in that pan (3 minutes).",
+      "Set aside (3 minutes).",
+      "Drain chicken and discard mixture (3 minutes).",
+      "Pat dry with paper towels and season chicken liberally on both sides with rub (3 minutes).",
+      "Gently pat into meat and refrigerate for at least 1 hour (more rub will stick if you wear gloves) (3 minutes).",
+      "Toss chicken pieces in barbecue sauce (3 minutes).",
+      "Place on the prepared roasting pan and insert 1 probe thermometer into one of the breasts and one into the thighs (3 minutes).",
+      "Bake in the center of a 375°F oven until both the thigh and the breast's internal temperature reach 165°F (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chapati",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hickory_BBQ_Chicken",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8534,46 +8931,51 @@
   },
   {
     "id": "r365",
-    "name": "Chip Butty",
-    "minutes": 45,
-    "servings": 4,
+    "name": "Midwestern Chicken Wings",
+    "minutes": 180,
+    "servings": 6,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "Chips from a chip shop or homemade"
+        "qty": 2,
+        "unit": "clove",
+        "item": "garlic, minced"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Sliced white bread, or pita bread for kebab-shop style"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "fresh ginger, minced"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Butter"
+        "qty": 1,
+        "unit": "cup",
+        "item": "soy sauce"
       },
       {
-        "qty": null,
+        "qty": 12,
+        "unit": "oz",
+        "item": "apricot preserves (not preserved apricots, not apricot jelly)"
+      },
+      {
+        "qty": 4,
         "unit": "",
-        "item": "Ketchup or a brown sauce (optional)"
+        "item": "–5 pounds chicken wings"
       }
     ],
     "steps": [
-      "Make sure the chips are not too greasy and have been well drained (3 minutes).",
-      "Take two slices of bread (the heel works best) and butter both on one side, then apply ketchup and spread evenly over the bread (3 minutes).",
-      "Add chips in a manner akin to herringbone floor tiling, making sure to minimise any gaps (3 minutes).",
-      "You can add multiple layers (3 minutes).",
-      "Put both slices of bread together, then put the assembled sandwich on a flat surface and slap it hard several times with with an open hand to crush the filling (3 minutes).",
-      "Eat immediately!."
+      "Place all ingredients except chicken into a bowl and mix to make a marinade (3 minutes).",
+      "Marinate the chicken in the refrigerator with the marinade for at least 3 hours (3 minutes).",
+      "A plastic bag sealed tight without much air or free space is believed to provide the best marinating (3 minutes).",
+      "As with many marinating recipes, the longer the better (3 minutes).",
+      "Clean and preheat grill to medium heat (3 minutes).",
+      "Place wings on grill (3 minutes).",
+      "Turn 1–4 times over the next 20 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chip_Butty",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Midwestern_Chicken_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8969,55 +9371,61 @@
   },
   {
     "id": "r371",
-    "name": "Chocolate Sour-Cream Icing",
+    "name": "North Carolina Style BBQ Chicken",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(240 g) chocolate chips"
+        "qty": 3,
+        "unit": "",
+        "item": "each skinless bone-in chicken thighs and drumsticks"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Barbecue rub"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup apple cider vinegar"
       },
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "(60 g) butter"
+        "item": "honey"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup (120 g) sour cream"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "vanilla extract"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp salt"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "–3 cup (240–700 g) icing sugar"
+        "unit": "cup",
+        "item": "soaked hickory chips"
       }
     ],
     "steps": [
-      "Melt the chocolate and butter together in a double boiler (3 minutes).",
-      "Remove mixture from the heat, then stir in the sour cream, vanilla extract, and salt (3 minutes).",
-      "Slowly beat or stir in the icing sugar until the mixture has the desired consistency (3 minutes).",
-      "An icing will be thinner and require less icing sugar than a thicker frosting (3 minutes).",
-      "Spread mixture on the cake of your choice (3 minutes)."
+      "Season chicken liberally with the barbecue rub (3 minutes).",
+      "Gently massage into meat and refrigerate for at least 1 hour (3 minutes).",
+      "Meanwhile, combine the vinegar, honey, and Worcestershire sauce (3 minutes).",
+      "Place enough charcoal briquets to fill the charcoal compartment of a large chimney starter (3 minutes).",
+      "Wad up some oil-moistened newspaper, stick under the compartment, and light (3 minutes).",
+      "Wait 15 minutes (3 minutes).",
+      "Once coals are heated, disperse evenly along the bottom of the grill (3 minutes).",
+      "Toss in soaked hickory chunks and reapply the grate (3 minutes).",
+      "Grill chicken over medium low, turning often and brushing with vinegar mixture when turned, until internal temperature reaches 165°F (3 minutes).",
+      "Remove and let rest for 7 minutes (3 minutes).",
+      "While chicken is resting, boil remaining vinegar mixture on high for 5 minutes (3 minutes).",
+      "Drizzle over chicken and serve warm (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chocolate_Sour-Cream_Icing",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:North_Carolina_Style_BBQ_Chicken",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9593,46 +10001,97 @@
   },
   {
     "id": "r379",
-    "name": "Cocoa-Coconut Bites",
+    "name": "Barbecue Fried Rice",
     "minutes": 45,
-    "servings": 12,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 2,
         "unit": "",
-        "item": "⅓ cup (45 g) coconut oil"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(25 g) unsweetened cocoa powder"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅛ cup + 1 tsp (30 ml + 1 tsp) maple syrup"
+        "item": "½ tbsp olive oil"
       },
       {
         "qty": 1,
-        "unit": "pinch",
-        "item": "salt"
+        "unit": "",
+        "item": "½ tbsp sesame oil"
+      },
+      {
+        "qty": 3,
+        "unit": "clove",
+        "item": "red onion, minced"
+      },
+      {
+        "qty": 3,
+        "unit": "clove",
+        "item": "garlic, minced"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "red chillies, cut into 1 cm pieces"
+      },
+      {
+        "qty": 200,
+        "unit": "g",
+        "item": "minced pork"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "carrot, diced"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ horseradish, cut into matchsticks"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "scallions, cut into 1 cm pieces"
+      },
+      {
+        "qty": 500,
+        "unit": "g",
+        "item": "cooked rice"
+      },
+      {
+        "qty": 25,
+        "unit": "ml",
+        "item": "barbeque sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "black soy sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tbsp salt"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tbsp pepper"
       }
     ],
     "steps": [
-      "Melt the coconut oil in a small saucepan over low heat (3 minutes).",
-      "Once melted, transfer to a bowl and whisk in unsweetened cacao powder, maple syrup, and salt until smooth and lump-free (3 minutes).",
-      "Pour the chocolate mix into small chocolate molds (3 minutes).",
-      "You can also use a regular baking tray (3 minutes).",
-      "Place them in the freezer/fridge to harden for a few hours (3 minutes).",
-      "If using a regular baking tray, cut the chocolate into pieces with a sharp knife."
+      "Heat the olive oil and sesame oil in a non-stick pan (3 minutes).",
+      "Fry the garlic and red onion until fragrant (3 minutes).",
+      "Stir until the garlic and red onion are golden brown (3 minutes).",
+      "Add the red chilli and pork (3 minutes).",
+      "Stir until the pork changes color (3 minutes).",
+      "Add horseradish, scallion, rice, barbecue sauce, black soy sauce, salt, and pepper (3 minutes).",
+      "Stir until well-mixed (3 minutes).",
+      "Serve with toppings as desired (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cocoa-Coconut_Bites",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Barbecue_Fried_Rice",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9748,94 +10207,150 @@
   },
   {
     "id": "r382",
-    "name": "Coconut Rice (Nasi Lemak)",
+    "name": "Yellow Split Pea Soup",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 6,
-        "unit": "cup",
-        "item": "(1450 ml) basmati rice"
+        "qty": 1,
+        "unit": "lb",
+        "item": "(½ kilogram) dry yellow split peas"
       },
       {
-        "qty": 7,
-        "unit": "cup",
-        "item": "(1680 ml) coconut milk"
-      },
-      {
-        "qty": null,
+        "qty": 2,
         "unit": "",
-        "item": "Salt"
+        "item": "chicken or beef bouillon cubes"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "–2 pandan leaves tied in a knot (optional)"
+        "item": "small onion, chopped"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "medium carrot, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "stalk",
+        "item": "celery, chopped"
+      },
+      {
+        "qty": 6,
+        "unit": "cup",
+        "item": "(1½ liters) water"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "of fresh ginger root (optional)"
+        "item": "Salt and pepper to taste"
       }
     ],
     "steps": [
-      "Rinse the rice and set it aside (3 minutes).",
-      "Meanwhile put the coconut milk on the stove, and add the salt (3 minutes).",
-      "Add the rice, pandan leaves, and ginger (3 minutes).",
-      "Let it simmer until the coconut milk evaporates (3 minutes).",
-      "Cover it with lid and let it sit for about 15 minutes until it is well cooked (3 minutes)."
+      "Soak split peas up to six hours in cold water if you wish (3 minutes).",
+      "This is not necessary, but will shorten cooking time (3 minutes).",
+      "Put all ingredients into a 6 or 8 quart stock pot or Dutch oven (3 minutes).",
+      "Bring to a boil, then simmer covered until peas are tender, 1–2 hours (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coconut_Rice_%28Nasi_Lemak%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Yellow_Split_Pea_Soup",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r383",
-    "name": "Coleslaw",
+    "name": "Chili Cornbread Casserole",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": 4,
+        "unit": "",
+        "item": "strips bacon, cut in small pieces"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tablespoons brown sugar"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "¼ teaspoons chili powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "instant coffee"
+      },
+      {
+        "qty": 2,
+        "unit": "tsp",
+        "item": "cumin"
+      },
+      {
+        "qty": 1,
         "unit": "tbsp",
-        "item": "mayonnaise or 2 dL olive oil"
+        "item": "diced jalapeños (canned)"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "oregano"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ teaspoons paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large onion, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "¼ pounds hamburger meat"
+      },
+      {
+        "qty": 1,
+        "unit": "lb",
+        "item": "beef, cut into small pieces"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼&ndash;½ cup (about 50–100ml) cider vinegar (optional)"
+        "item": "Black pepper"
       },
       {
         "qty": 1,
-        "unit": "head",
-        "item": "white cabbage"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "medium red onion, thinly sliced"
+        "unit": "can",
+        "item": "(15-ounces) diced tomatoes"
       }
     ],
     "steps": [
-      "If adding cider vinegar, add it to the mayonnaise and mix together well (3 minutes).",
-      "Slice or shred the cabbage, as coarsely or finely as desired (3 minutes).",
-      "In a large bowl, mix cabbage and onion together with mayonnaise (3 minutes).",
-      "Set aside to allow the flavours to merge at least 20 minutes but preferably for a couple of hours (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Fry bacon at medium-high heat in big skillet (3 minutes).",
+      "Lower heat to medium and add the brown sugar, chili powder, coffee, cumin, jalapeños, oregano, and paprika (3 minutes).",
+      "Cook 3 minutes, stirring constantly (3 minutes).",
+      "Add onion and cook until soft, about 5 minutes, stirring frequently (3 minutes).",
+      "Add beef pieces and hamburger meat, and cook until lightly done (maybe 8 or 10 minutes) (3 minutes).",
+      "While beef is cooking, start on cornbread (3 minutes).",
+      "Add tomatoes to skillet and cook 1 minute, stirring deeply to keep anything from sticking to the bottom (3 minutes).",
+      "Adjust seasoning as necessary, and remove from heat (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coleslaw_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chili_Cornbread_Casserole",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10439,9 +10954,9 @@
   },
   {
     "id": "r392",
-    "name": "Croissant",
-    "minutes": 240,
-    "servings": 6,
+    "name": "Macaroni and Cheese (Baked)",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "breakfast",
       "medium",
@@ -10450,24 +10965,59 @@
     ],
     "ingredients": [
       {
-        "qty": 1.25,
+        "qty": null,
+        "unit": "",
+        "item": "½ lb (227 g) dry elbow macaroni"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "flour"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "powdered mustard"
+      },
+      {
+        "qty": 3,
         "unit": "cup",
-        "item": "warm milk (about 110°F or 45°C)"
+        "item": "milk"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "red onion, finely chopped"
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "active dry yeast"
+        "unit": "tsp",
+        "item": "Tabasco pepper sauce"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "white granulated sugar"
+        "qty": 1,
+        "unit": "",
+        "item": "bay leaf"
       },
       {
-        "qty": 4,
-        "unit": "cup",
-        "item": "all-purpose flour, more for dusting"
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "standard egg"
+      },
+      {
+        "qty": 12,
+        "unit": "oz",
+        "item": "(340 g) sharp cheddar, shredded"
       },
       {
         "qty": 1,
@@ -10475,24 +11025,26 @@
         "item": "salt"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "unsalted butter, cold"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "egg (for egg wash)"
+        "item": "Fresh black pepper"
       }
     ],
     "steps": [
-      "In a bowl, combine warm milk, active dry yeast, and sugar (3 minutes).",
-      "Let it sit for about 5 minutes until it becomes frothy (3 minutes).",
-      "In a large mixing bowl, combine flour and salt (3 minutes).",
-      "Gradually add the yeast mixture and mix until a dough forms (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat oven to 350 °F (3 minutes).",
+      "In a large pot of boiling, salted water, cook the pasta until it is al dente (3 minutes).",
+      "While the pasta is cooking, melt the butter in a separate pot (3 minutes).",
+      "Whisk in the flour and mustard and keep it moving for about five minutes (3 minutes).",
+      "Make sure it is free of lumps (3 minutes).",
+      "Stir in the milk, onion, bay leaf, and paprika (3 minutes).",
+      "Simmer for ten minutes and remove the bay leaf (3 minutes).",
+      "Temper in the egg (3 minutes).",
+      "Stir in ¾ of the cheese (3 minutes).",
+      "Season with salt and pepper (3 minutes).",
+      "Fold the macaroni into the mix and pour into a 2-quart casserole dish (3 minutes).",
+      "Top with remaining cheese (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Croissant",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_and_Cheese_%28Baked%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12270,45 +12822,91 @@
   },
   {
     "id": "r419",
-    "name": "Egg Butter",
+    "name": "Backyard Barbecue Ribs",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
+        "qty": 1,
         "unit": "",
-        "item": "eggs"
+        "item": "slab pork spareribs"
       },
       {
-        "qty": 4,
+        "qty": 2,
         "unit": "tbsp",
-        "item": "butter, softened"
+        "item": "dark brown sugar"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tbsp dried rosemary"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "garlic powder"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "tomato paste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "½ cup molasses"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "Worcestershire sauce"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "cider vinegar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Pepper to taste"
+        "item": "Hickory chunks"
       }
     ],
     "steps": [
-      "Hard-boil the eggs (about 10 minutes) (3 minutes).",
-      "Chop the eggs into small pieces (larger pieces of egg white often fail to mix with butter) (3 minutes).",
-      "Mix chopped eggs with butter (3 minutes).",
-      "Add salt and pepper (3 minutes).",
-      "Use as sandwich spread (3 minutes)."
+      "Combine dry seasoning and rub on pork ribs (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Place hickory chunks in a 250 °F (120 °C) smoker or a 250 °F (120 °C) charcoal grill set for indirect heat (3 minutes).",
+      "Combine remaining ingredients, bring to a boil over high heat, and simmer until reduced by ¾ (3 minutes).",
+      "Place ribs in smoker/grill and cook 5–6 hours (3 minutes).",
+      "Brush ribs with tomato mixture and place on a high grill, turning and brushing often until well browned (3 minutes).",
+      "Remove and let sit for 10 minutes; serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Egg_Butter",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Backyard_Barbecue_Ribs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },

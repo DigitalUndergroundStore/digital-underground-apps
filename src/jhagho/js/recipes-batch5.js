@@ -368,97 +368,7 @@
   },
   {
     "id": "r653",
-    "name": "Ofe Egusi",
-    "minutes": 105,
-    "servings": 4,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate"
-    ],
-    "ingredients": [
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "ground egusi (melon seeds)"
-      },
-      {
-        "qty": 500,
-        "unit": "g",
-        "item": "assorted meat (beef, goat meat, or chicken)"
-      },
-      {
-        "qty": 200,
-        "unit": "g",
-        "item": "stockfish, soaked"
-      },
-      {
-        "qty": 200,
-        "unit": "g",
-        "item": "dried fish, cleaned"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "palm oil"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "ground crayfish"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "medium onion, chopped"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "seasoning cubes"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Pepper, to taste"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt, to taste"
-      },
-      {
-        "qty": 1,
-        "unit": "bunch",
-        "item": "bitterleaf or spinach (optional, for variation)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Ogiri (optional, for traditional flavor)"
-      }
-    ],
-    "steps": [
-      "Wash and cook the assorted meat with onion, seasoning cubes, and salt until tender (3 minutes).",
-      "Add stockfish and continue cooking until soft (3 minutes).",
-      "In a bowl, mix ground egusi with a small amount of water to form a thick paste (3 minutes).",
-      "Heat palm oil in a pot (do not bleach), then add a little onion if desired (3 minutes).",
-      "Scoop small portions of the egusi paste into the hot oil and allow it to fry lightly without stirring too much (3 minutes).",
-      "Gradually add meat stock and stir gently to form a thick base (3 minutes).",
-      "Add dried fish, crayfish, pepper, and ogiri (if using) (3 minutes).",
-      "Allow the soup to simmer for 10–15 minutes (3 minutes).",
-      "Add vegetables (bitterleaf or spinach) and stir gently (3 minutes).",
-      "Adjust seasoning with salt and seasoning cubes (3 minutes).",
-      "Simmer for another 3–5 minutes, then remove from heat (3 minutes).",
-      "Serve hot."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ofe_Egusi",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r654",
-    "name": "Ofe Oha (Oha Leaf Soup)",
+    "name": "Maple Beans",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -468,86 +378,151 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cocoyam (or cocoyam paste)"
-      },
-      {
-        "qty": 1,
-        "unit": "bunch",
-        "item": "fresh oha leaves, sliced"
-      },
-      {
-        "qty": 500,
-        "unit": "g",
-        "item": "assorted meat (beef, goat meat, or chicken)"
-      },
-      {
-        "qty": 200,
-        "unit": "g",
-        "item": "stockfish, soaked"
-      },
-      {
-        "qty": 200,
-        "unit": "g",
-        "item": "dried fish, cleaned"
+        "qty": 625,
+        "unit": "ml",
+        "item": "(2 ½ cups) small dried white beans"
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "ground crayfish"
+        "unit": "l",
+        "item": "(8 cups) water"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "medium onion, chopped"
+        "item": "large sweet onion, finely diced"
+      },
+      {
+        "qty": 250,
+        "unit": "ml",
+        "item": "(1 cup) maple syrup"
+      },
+      {
+        "qty": 30,
+        "unit": "ml",
+        "item": "(2 Tbsp) dark brown sugar"
+      },
+      {
+        "qty": 30,
+        "unit": "ml",
+        "item": "(2 Tbsp) butter"
       },
       {
         "qty": 2,
-        "unit": "",
-        "item": "seasoning cubes"
+        "unit": "ml",
+        "item": "(½ tsp) dry mustard"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Pepper, to taste"
+        "qty": 5,
+        "unit": "ml",
+        "item": "(½ tsp) ground pepper"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Salt, to taste"
+        "qty": 5,
+        "unit": "ml",
+        "item": "(1 tsp) salt"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "palm oil"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Ogiri (optional, for traditional flavor)"
+        "qty": 6,
+        "unit": "slice",
+        "item": "side bacon OR 60 ml (¼ cup) bacon runoff"
       }
     ],
     "steps": [
-      "Wash and cook the assorted meat with onion, seasoning cubes, and salt until tender (3 minutes).",
-      "Add stockfish and continue cooking until soft (3 minutes).",
-      "In a separate pot, cook cocoyam until soft, then pound or blend into a smooth paste (3 minutes).",
-      "Add the cocoyam paste into the meat stock to thicken the soup, stirring well to avoid lumps (3 minutes).",
-      "Add palm oil and allow the soup to cook for 5–10 minutes (3 minutes).",
-      "Add dried fish, ground crayfish, and pepper (3 minutes).",
-      "Stir and allow to simmer (3 minutes).",
-      "Add ogiri if using, then adjust seasoning with salt and seasoning cubes (3 minutes).",
-      "Finally, add the sliced oha leaves and stir gently (3 minutes).",
-      "Allow to simmer for 3–5 minutes (do not overcook the leaves to preserve flavor) (3 minutes).",
-      "Remove from heat and serve hot."
+      "Wash beans and place in a saucepan with the water (3 minutes).",
+      "Cover and bring to a boil, checking regularly (3 minutes).",
+      "When water has reached the boiling point, time for 5 minutes and remove from heat (3 minutes).",
+      "Let sit for 1 hour, covered (3 minutes).",
+      "After the hour, return beans and water to heat and bring to a simmer, still covered (3 minutes).",
+      "Simmer for 45 minutes (3 minutes).",
+      "Strain beans and water through a colander, collecting the liquids in a bowl for later use (3 minutes).",
+      "Combine the onion, salt, mustard, and maple syrup (3 minutes).",
+      "Add 625 ml (2 ½ cups) of the aforementioned bean-water to the mix and blend well (3 minutes).",
+      "Finely slice the bacon, place in roast pan/casserole dish, and cover with the beans, pouring the liquid mixture over top (3 minutes).",
+      "Cover and bake for 3 hours at 165°C (325°F), adding 125 ml (½ cup) of bean-water at the 2 ½ hour mark (3 minutes).",
+      "Melt butter and combine with brown sugar (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ofe_Oha_%28Oha_Leaf_Soup%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Beans",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r654",
+    "name": "Hickory Maple Glazed Wings",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 36,
+        "unit": "",
+        "item": "chicken wingettes or 18 whole chicken wings, tips removed and halved"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ tsp hickory smoke powder"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Maple syrup as needed plus 6 tbsp"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cornmeal as needed"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "Smoky Chipotle Hot Sauce"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "minced garlic"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tbsp finely-grated lemon zest"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Oil for deep frying"
+      }
+    ],
+    "steps": [
+      "Season chicken with salt and pepper (3 minutes).",
+      "Dip chicken in maple syrup, then dredge in cornmeal (3 minutes).",
+      "Heat oil to 350°F, add chicken pieces, and deep fry for 12 minutes (3 minutes).",
+      "Drain on a cooling rack (3 minutes).",
+      "Combine 6 tbsp maple syrup with remaining ingredients (3 minutes).",
+      "Add wings and toss to coat (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hickory_Maple_Glazed_Wings",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r655",
-    "name": "Okonomiyaki (Japanese Savory Pancake)",
+    "name": "Maple-Glazed BBQ Ribs",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -558,180 +533,215 @@
     "ingredients": [
       {
         "qty": 1,
-        "unit": "cup",
-        "item": "all-purpose flour (or yam flour if you can get it)"
+        "unit": "",
+        "item": "slab pork spareribs"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "dark brown sugar"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "smoked paprika"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "cayenne pepper"
       },
       {
         "qty": 1,
         "unit": "cup",
-        "item": "water (or stock)"
+        "item": "maple syrup"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "eggs"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¾ cup finely sliced cabbage (about 2 inches long by ¼ inch wide)"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "–3 green onions, chopped into ¼\" rounds (use white part and freshest bit of green part)"
+        "qty": 1,
+        "unit": "cup",
+        "item": "white wine"
       },
       {
         "qty": 1.25,
         "unit": "cup",
-        "item": "mozzarella cheese (optional; other cheese may be substituted)"
+        "item": "Worcestershire sauce"
       },
       {
-        "qty": 10,
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 3,
+        "unit": "tbsp",
+        "item": "cider vinegar"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "small slices of chicken, bacon or beef (your choice)"
+        "item": "Hickory wood chunks"
       }
     ],
     "steps": [
-      "Mix flour, water and eggs until smooth (about 25–30 strokes with a spoon or whisk; do not overmix.) (3 minutes).",
-      "Gently fold in cabbage, green onions and cheese (3 minutes).",
-      "Heat a griddle or non-stick frying pan over medium heat (3 minutes).",
-      "When pan is hot, add 1 tablespoon oil (3 minutes).",
-      "Add ⅓ cup of batter and flatten slightly (3 minutes).",
-      "Fry for 2–3 minutes (3 minutes).",
-      "When pancake is golden brown on bottom, add toppings (chicken, bacon or beef, or other topping of your choice), and press into the batter slightly (3 minutes).",
-      "Turn the pancake and fry for five minutes or until golden brown on other side (3 minutes).",
-      "Turn once more and fry topping side up for another minute (3 minutes).",
-      "To serve, place the okonomiyaki on a plate, top with bottled sauce, nori, and/or bonito flakes (3 minutes).",
-      "Enjoy!."
+      "Combine seasonings and rub on pork ribs (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Place hickory chunks into a 350°F (175˚C) smoker or a charcoal grill set for indirect heat at 350°F (3 minutes).",
+      "Combine liquid ingredients and bring to a boil over high heat until reduced by half (3 minutes).",
+      "Place ribs in smoker/grill and cook, basting often with maple syrup mixture, for 3–4 hours (3 minutes).",
+      "Brush ribs with remaining mixture and place on a medium high grill until well browned (3 minutes).",
+      "Rest 15 minutes; serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Okonomiyaki_%28Japanese_Savory_Pancake%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple-Glazed_BBQ_Ribs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r656",
-    "name": "Okpa (Boiled Bambara Bean Pudding)",
-    "minutes": 45,
-    "servings": 12,
-    "tags": [
-      "dinner",
-      "medium",
-      "moderate",
-      "vegetarian"
-    ],
-    "ingredients": [
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Banana leaves or food- and heat-safe plastic bags"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "cigar cups (450 g / 1 lb) of okpa flour (ground bambara beans)"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "small stock cubes, crushed"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt, to taste"
-      },
-      {
-        "qty": 15,
-        "unit": "tbsp",
-        "item": "palm oil"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Habanero pepper, to taste"
-      },
-      {
-        "qty": 1.2,
-        "unit": "l",
-        "item": "lukewarm water"
-      }
-    ],
-    "steps": [
-      "Thoroughly wash the banana leaves using water and salt (3 minutes).",
-      "Sift the okpa flour into a large bowl, and mix in the crushed stock cubes and salt (3 minutes).",
-      "Add the palm oil, and mix very well with a wooden spoon (3 minutes).",
-      "Start adding the lukewarm water to the mixed okpa flour, mixing very well until there are no lumps (3 minutes).",
-      "After ensuring that there are no lumps, add enough lukewarm water so that the okpa will not be hard as stone when it is done (3 minutes).",
-      "Stir in the sliced habanero pepper, and adjust the seasoning as needed (3 minutes).",
-      "Scoop some okpa mixture into transparent nylon or banana leaves—avoid adding too much—and tie them closed (3 minutes).",
-      "Set some water to boil on the stove in a big pot (3 minutes).",
-      "Ensure the water is boiling before putting in your okpa (3 minutes).",
-      "Boil the okpa for about 1 hour before checking it (3 minutes).",
-      "The okpa will be solid when fully cooked (3 minutes).",
-      "Serve with custard, oatmeal, or pap."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Okpa_%28Boiled_Bambara_Bean_Pudding%29",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r657",
-    "name": "Okpo Ogede (Plantain Moi-Moi)",
+    "name": "Maple Glazed Chicken Breasts",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": 4,
         "unit": "",
-        "item": "overripe plantains"
+        "item": "boneless skinless chicken breasts"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "plantain flour"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "medium sized onion"
+        "item": "½ cup Grade B Amber maple syrup (Grade A Dark Amber would be okay too.)"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "chicken broth"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "ground crayfish"
+        "item": "Worcestershire sauce"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅓ cup water"
+        "item": "Melted butter"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "salt"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "freshly-ground black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "lemon pepper"
+      }
+    ],
+    "steps": [
+      "Combine maple syrup, sauce, and broth in a small saucepan over medium-high heat (3 minutes).",
+      "Bring to a boil and cook until reduced by ⅓ (3 minutes).",
+      "Set aside (3 minutes).",
+      "Combine salt, pepper, and lemon pepper (3 minutes).",
+      "Brush chicken with melted butter and press seasoning mixture into both sides of each chicken breast (3 minutes).",
+      "Place chicken in a shallow roasting pan (3 minutes).",
+      "Insert a probe thermometer into one of the pieces and roast at 375°F (190°C) until internal temperature reaches 165°F (74°C) (3 minutes).",
+      "Brush top of chicken pieces with maple mixture (3 minutes).",
+      "Remove while your broiler heats up (3 minutes).",
+      "Place chicken under your preheated broiler until top is well browned and slightly charred (3 minutes).",
+      "Remove to a plate and cover with aluminum foil (3 minutes).",
+      "Let rest 7 minutes before serving with remaining maple mixture (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Glazed_Chicken_Breasts",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r657",
+    "name": "Chipotle Maple Glazed Pork Tenderloin",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "pork tenderloin, trimmed of silver skin"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "chipotle chiles in adobo sauce, finely minced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "½ cup maple syrup"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "freshly-squeezed lime juice"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "finely-grated lime zest"
       },
       {
         "qty": 1,
         "unit": "tsp",
-        "item": "palm oil or to taste"
+        "item": "garlic powder"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tsp freshly-ground black pepper"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "honey"
       }
     ],
     "steps": [
-      "Blend the plantains, plantain flour, onion, and crayfish together with a little water (3 minutes).",
-      "Transfer the mixture to a bowl, then mix in salt and palm oil (3 minutes).",
-      "Divide the mixture between molds, such as ramekins or aluminum pouches (3 minutes).",
-      "Place the filled molds in a steamer basket over boiling water (3 minutes).",
-      "Cook until set (3 minutes).",
-      "Serve with custard, oatmeal, and/or cooked ground corn (akamu)."
+      "Combine lime, garlic, salt, honey, and pepper in a gallon size zip-top bag (3 minutes).",
+      "Add pork and refrigerate 24 hours (3 minutes).",
+      "In 24 hours, drain pork (3 minutes).",
+      "Set aside (3 minutes).",
+      "Heat 4 ½ pounds of natural chunk charcoal in a large chimney starter according to accompanying directions (3 minutes).",
+      "Once coals have heated, disperse evenly around the bottom of the grill (3 minutes).",
+      "Reapply grill grate and swab grate with an oil-soaked towel (3 minutes).",
+      "Add pork to hottest part of grill and cook 1 ½ minutes (3 minutes).",
+      "Rotate 90 degrees and cook another 1 ½ minutes (3 minutes).",
+      "Repeat 12 times or until internal temperature reaches 140°F for medium rare (3 minutes).",
+      "While pork cooks, combine chipotle and maple syrup (3 minutes).",
+      "Set aside (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Okpo_Ogede_%28Plantain_Moi-Moi%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chipotle_Maple_Glazed_Pork_Tenderloin",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -915,7 +925,7 @@
   },
   {
     "id": "r661",
-    "name": "OpenCola",
+    "name": "Maple Barbecue Sauce",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -926,67 +936,49 @@
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 2,
         "unit": "",
-        "item": "¾ tsp (3.50 mL) orange oil"
+        "item": "quarts ketchup"
       },
       {
-        "qty": null,
+        "qty": 1,
         "unit": "",
-        "item": "½ tsp (2.75 mL) lime oil"
+        "item": "½ cups maple syrup (preferably a dark grade)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp (1.25 mL) cassia oil"
+        "qty": 1,
+        "unit": "cup",
+        "item": "apple cider vinegar"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp (1 mL) lemon oil"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp (1 mL) nutmeg oil"
-      },
-      {
-        "qty": 0.25,
-        "unit": "ml",
-        "item": "(5 drops) coriander oil"
-      },
-      {
-        "qty": 0.25,
-        "unit": "ml",
-        "item": "(5 drops) neroli oil"
-      },
-      {
-        "qty": 0.25,
-        "unit": "ml",
-        "item": "(5 drops) lavender oil"
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "Hickory BBQ Rub"
       },
       {
         "qty": 2,
-        "unit": "tsp",
-        "item": "(10.0 g / 10 mL) food-grade gum arabic"
+        "unit": "tbsp",
+        "item": "yellow mustard"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅔ teaspoon (3 mL) water"
+        "item": "½ cup Worcestershire sauce"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "habanero chiles, stemmed"
       }
     ],
     "steps": [
-      "Mix oils together in a cup (3 minutes).",
-      "Add gum arabic, and mix with a spoon (3 minutes).",
-      "Add water and mix well (3 minutes).",
-      "A mixer may be used for this step, mixing for 4–5 minutes (3 minutes).",
-      "You can also transfer to a blender for this step (3 minutes).",
-      "Store this mixture in a sealed glass jar in a refrigerator or at room temperature (3 minutes).",
-      "Please note that this mixture will separate (3 minutes).",
-      "The gum arabic is essential to this part of the recipe, as you are mixing oil and water."
+      "Combine all ingredients in a large saucepan or pot (3 minutes).",
+      "Bring to a boil over high heat and cook until liquid has reduced by ⅓ (3 minutes).",
+      "Remove chiles and discard (3 minutes).",
+      "Keep refrigerated in an airtight container for up to 3 weeks (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:OpenCola",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Barbecue_Sauce",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1102,151 +1094,108 @@
   },
   {
     "id": "r663",
-    "name": "Otong Soup",
-    "minutes": 60,
-    "servings": 2,
+    "name": "Grilled Peaches with Vanilla Maple Sauce",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 20,
-        "unit": "",
-        "item": "okra pods"
-      },
-      {
         "qty": 4,
         "unit": "",
-        "item": "scotch bonnet chile peppers"
-      },
-      {
-        "qty": 10,
-        "unit": "piece",
-        "item": "beef"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "onion, puréed"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small stock cube"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "palm oil"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small bunch ikong ubong (ugu leaves)"
+        "item": "ripe yellow peaches, halved and pitted"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ teaspoon salt"
+        "item": "Granulated sugar"
       },
       {
-        "qty": 2,
+        "qty": null,
+        "unit": "",
+        "item": "½ cup maple syrup"
+      },
+      {
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "pure vanilla extract"
+      },
+      {
+        "qty": 1.25,
         "unit": "cup",
-        "item": "water"
+        "item": "unsalted butter, melted"
+      },
+      {
+        "qty": 1,
+        "unit": "pinch",
+        "item": "salt"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "peach nectar"
       }
     ],
     "steps": [
-      "Purée the okra and chile pepper with a blender (3 minutes).",
-      "Boil the meat with the blended onion, stock cube, and other spices to taste (3 minutes).",
-      "Add the okra purée and a little palm oil (3 minutes).",
-      "Cook the mixture until it boils (3 minutes).",
-      "Stir in the uziza and ugu leaves (3 minutes).",
-      "Remove from the heat, and let rest for 2 minutes (3 minutes).",
-      "Season with salt to taste, and serve."
+      "Combine all ingredients except peaches and sugar (3 minutes).",
+      "Bring to a boil over high heat in a large saucepan, and simmer until reduced by half (3 minutes).",
+      "Dip cut side of peaches into hot mixture (3 minutes).",
+      "Sprinkle cut side liberally with sugar (3 minutes).",
+      "Place peaches cut-side down on a high-heat grill until marked and slightly charred (3 minutes).",
+      "Serve warm with remaining sauce (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Otong_Soup",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Grilled_Peaches_with_Vanilla_Maple_Sauce",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r664",
-    "name": "Owo Soup",
-    "minutes": 50,
-    "servings": 2,
+    "name": "Maple Cumin Glazed Grilled Bananas",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": null,
+        "qty": 4,
         "unit": "",
-        "item": "Fresh tomatoes"
+        "item": "bananas, peeled and halved lengthwise"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Fresh pepper"
+        "item": "½ cup maple syrup"
       },
       {
-        "qty": 500,
-        "unit": "g",
-        "item": "goat meat, bushmeat, or assorted meat, washed"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small onion, chopped"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "dark rum"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Seasoning/stock cubes"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "handful dried fish, washed with hot water"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Ground crayfish"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tsp potash (akaun), ground to a powder"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Palm oil"
+        "item": "½ tsp ground cumin"
       }
     ],
     "steps": [
-      "Blend the tomatoes and pepper to a paste (3 minutes).",
-      "Combine the meat, onions, seasoning cube, and salt in a pot (3 minutes).",
-      "Cook for about 3 minutes in its own juices (3 minutes).",
-      "Cover meat with water, and simmer until tender (3 minutes).",
-      "Add the dried fish, tomato-pepper paste, and ground crayfish to the meat (3 minutes).",
-      "Add about a cup of water and stir (3 minutes).",
-      "Let simmer for 10 minutes, stirring to prevent burning (3 minutes).",
-      "Dissolve the potash powder in 4 tablespoons of hot water (3 minutes).",
-      "Strain the mixture carefully, and mix the liquid into the soup (3 minutes).",
-      "Turn off the heat, and allow the soup to cool for about 10 minutes (3 minutes).",
-      "Return to the heat, and gradually stir in the palm oil (3 minutes).",
-      "Remove from the heat, and serve with plantains, yam, or any swallow of choice."
+      "Spray bananas and cold grill grate with nonstick cooking spray (3 minutes).",
+      "Place a large saucepan over high heat and add rum (3 minutes).",
+      "Once flames have died, remove from heat and whisk in remaining ingredients (3 minutes).",
+      "Place bananas cut side down on the preheated grill, and brush with rum mixture (3 minutes).",
+      "Cook for 2 minutes, then flip and brush grilled side with more rum mixture (3 minutes).",
+      "Cook other side until well browned (3 minutes).",
+      "Flip and cook just until browned (3 minutes).",
+      "Remove and serve (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Owo_Soup",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Cumin_Glazed_Grilled_Bananas",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3084,65 +3033,82 @@
   },
   {
     "id": "r690",
-    "name": "Percolator Punch",
+    "name": "Macaroni Pie",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "vegetarian"
+      "vegetarian",
+      "collection-italian"
     ],
     "ingredients": [
       {
-        "qty": 2.25,
-        "unit": "cup",
-        "item": "pineapple juice"
+        "qty": 1,
+        "unit": "package",
+        "item": "(225 grams / 8 oz) dried macaroni pasta"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "eggs"
       },
       {
         "qty": 2,
         "unit": "cup",
-        "item": "cranberry juice"
+        "item": "grated cheese"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "¾ cups water"
+        "item": "½ cups evaporated milk"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "small onion, finely chopped"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "carrot, grated"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon salt"
+        "item": "¼ tsp white pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "tsp",
+        "item": "prepared yellow mustard"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "pat of unsalted butter, melted"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup brown sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "cloves"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "allspice"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "sticks cinnamon"
+        "item": "Breadcrumbs"
       }
     ],
     "steps": [
-      "Place the pineapple juice, cranberry juice, water, and salt in the bottom reservoir of the percolator (3 minutes).",
-      "Place the brown sugar, cloves, allspice, and cinnamon in the top compartment (3 minutes).",
-      "Heat for 10 minutes (3 minutes).",
-      "Serve hot (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Boil macaroni in salted water until tender; drain (3 minutes).",
+      "Beat eggs until fluffy (3 minutes).",
+      "Combine macaroni, eggs, cheese, milk, onion, carrot, salt, white pepper, mustard, and butter (3 minutes).",
+      "Pour into a greased baking dish and sprinkle shredded cheese and bread crumbs evenly on top (3 minutes).",
+      "Bake at 175°C (350°F) until firm (about 30 minutes) (3 minutes).",
+      "A fork or metal skewer should come out dry when you press it all the way through the pie (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Percolator_Punch",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_Pie",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -3204,7 +3170,7 @@
   },
   {
     "id": "r692",
-    "name": "Sirniki (Russian Cheese Fritters)",
+    "name": "Southern Cornbread",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -3215,39 +3181,41 @@
     ],
     "ingredients": [
       {
-        "qty": 500,
-        "unit": "g",
-        "item": "cottage cheese"
-      },
-      {
         "qty": 2,
-        "unit": "",
-        "item": "eggs"
-      },
-      {
-        "qty": 6,
-        "unit": "tbsp",
-        "item": "flour"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "sugar"
+        "unit": "cup",
+        "item": "yellow or white self-rising corn meal"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "salt"
+        "unit": "",
+        "item": "large egg"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "¼–1½ cups buttermilk or whole milk"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "olive oil or vegetable oil"
       }
     ],
     "steps": [
-      "Mix cottage cheese, eggs, flour, sugar and salt (3 minutes).",
-      "Take piece of paste, make round, flat shape and put on warm frying pan with oil or melted butter (3 minutes).",
-      "Wait until it becomes gold colour and flip (3 minutes).",
-      "When it is brown on both sides you can eat it (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Preheat the oven to 425°F (3 minutes).",
+      "If using cast-iron skillet, place it in the oven to heat (3 minutes).",
+      "Do not preheat other types of skillets or baking pans (3 minutes).",
+      "If using non-cast-iron skillet or baking pan, coat with a non-stick spray (3 minutes).",
+      "Beat egg in the bowl (3 minutes).",
+      "Stir in buttermilk and oil (3 minutes).",
+      "Stir in the cornmeal and mix until just moistened (3 minutes).",
+      "The batter will be somewhat lumpy (3 minutes).",
+      "Take care not to overmix (3 minutes).",
+      "Pour the batter into the skillet and place in the oven (3 minutes).",
+      "Bake until crust is a light golden brown and a toothpick inserted into the center comes out clean (3 minutes).",
+      "For an 8-inch skillet this can be 25–30 minutes; for a 10-inch skillet or an 8x8-inch baking pan about 20–25 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sirniki_%28Russian_Cheese_Fritters%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Southern_Cornbread",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5942,50 +5910,85 @@
   },
   {
     "id": "r733",
-    "name": "Rasam (Tamarind and Tomato Soup)",
+    "name": "Buffalo Chicken Sandwich",
     "minutes": 45,
-    "servings": 4,
+    "servings": 2,
     "tags": [
       "lunch",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
+        "qty": null,
+        "unit": "",
+        "item": "Oil for frying"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup flour"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ teaspoon salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup milk"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "boneless skinless chicken breast, pounded flat"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "hamburger bun"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "leaf green leaf lettuce"
+      },
+      {
         "qty": 2,
-        "unit": "tsp",
-        "item": "oil or ghee"
+        "unit": "",
+        "item": "tomato slices"
       },
       {
         "qty": 1,
+        "unit": "",
+        "item": "red onion sliced (if it's strong, only use a few rings)"
+      },
+      {
+        "qty": 2,
         "unit": "tbsp",
-        "item": "coriander seeds"
+        "item": "hot sauce"
       },
       {
-        "qty": 3,
+        "qty": null,
         "unit": "",
-        "item": "–4 dried red chillies"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cumin seeds"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small pinch asafoetida"
+        "item": "Blue cheese dressing"
       }
     ],
     "steps": [
-      "Fry the all the ingredients together, adding asafoetida last, in a skillet with oil or ghee (3 minutes).",
-      "Toast until the spices start to brown slightly (3 minutes).",
-      "Grind everything to a powder (3 minutes).",
-      "Note that coriander seed is very difficult to powder (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Heat just enough oil to cover chicken to 350 °F (175°C) in a large frying pan or a deep-fryer (3 minutes).",
+      "Stir together flour and salt (3 minutes).",
+      "Dredge chicken in milk, then flour mixture, again in milk, then flour a second time (3 minutes).",
+      "Refrigerate chicken for 10–15 minutes (3 minutes).",
+      "Deep fry chicken in oil for 10 minutes or until golden brown (3 minutes).",
+      "Drain on a rack (3 minutes).",
+      "Toast or grill the face of the bun (3 minutes).",
+      "Put chicken in a bowl with a lid (3 minutes).",
+      "Add hot sauce, put lid on, and shake gently to coat (3 minutes).",
+      "Put chicken on bun and top with lettuce and tomato (3 minutes).",
+      "Serve open face, with blue cheese dressing on the side (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Rasam_%28Tamarind_and_Tomato_Soup%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Buffalo_Chicken_Sandwich",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7995,7 +7998,7 @@
   },
   {
     "id": "r765",
-    "name": "Salmon with Rice and Sauce",
+    "name": "Turkey Biscuit",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -8005,49 +8008,50 @@
     ],
     "ingredients": [
       {
-        "qty": 250,
-        "unit": "g",
-        "item": "Atlantic salmon fillet (fresh or thawed)"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "dl (300 ml) uncooked jasmine rice"
-      },
-      {
-        "qty": 5.75,
-        "unit": "",
-        "item": "dl (575 ml) water"
+        "qty": 4,
+        "unit": "cup",
+        "item": "cooked turkey meat, chopped"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "dl (100 ml) crème fraîche"
+        "item": "large onion, chopped"
       },
       {
-        "qty": 0.5,
+        "qty": 1,
+        "unit": "can",
+        "item": "cream of chicken soup"
+      },
+      {
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "ranch dressing"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "dl (50 ml) hot sauce"
+        "item": "½ cup milk"
       },
       {
-        "qty": 100,
-        "unit": "g",
-        "item": "carrots"
+        "qty": null,
+        "unit": "",
+        "item": "¾ cup shredded cheddar cheese"
       },
       {
-        "qty": 100,
-        "unit": "g",
-        "item": "frozen peas"
+        "qty": 1,
+        "unit": "package",
+        "item": "frozen biscuit dough"
       }
     ],
     "steps": [
-      "If using frozen salmon, put the plastic-packaged fillets in the sink or a larger pot (3 minutes).",
-      "Fill up the sink or pot with 40°C water so that the plastic salmon package floats (3 minutes).",
-      "Let soak until thawed (3 minutes).",
-      "Prepare the oven and set it to 170°C with heat source top and bottom (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Sauté the onion until tender (3 minutes).",
+      "Combine in a small bowl the all the other ingredients except the cheese and biscuits (3 minutes).",
+      "Stir this mixture, then place it into a baking dish, and bake for 15 minutes at 350°F until it is quite warm throughout (3 minutes).",
+      "Remove the baked mixture from the oven and sprinkle the shredded cheese on it (3 minutes).",
+      "Add a layer of frozen biscuits on top of this (3 minutes).",
+      "Bake for about 20–30 minutes longer (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Salmon_with_Rice_and_Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Turkey_Biscuit",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9662,124 +9666,184 @@
   },
   {
     "id": "r787",
-    "name": "Simple Spaghetti",
+    "name": "Chicken and Andouille Sausage Gumbo",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian",
-      "collection-italian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2.25,
-        "unit": "l",
-        "item": "(10 cups) water"
+        "qty": null,
+        "unit": "",
+        "item": "about 2 lbs (1 kg) chicken breasts"
       },
       {
-        "qty": 8,
-        "unit": "oz",
-        "item": "(224 g) spaghetti"
-      },
-      {
-        "qty": 2.5,
+        "qty": 1,
         "unit": "cup",
-        "item": "(24 oz) pasta sauce (optional but recommended)"
+        "item": "(240 ml) canola oil"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "(240 g) all-purpose flour"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "bell peppers, chopped into ¼-inch pieces"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "large onion, chopped into ¼-inch pieces"
+      },
+      {
+        "qty": 4,
+        "unit": "stalk",
+        "item": "of celery, chopped into ¼-inch pieces"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt (optional but recommended)"
+        "item": "Chicken stock or equivalent"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Vegetable oil (optional but recommended)"
+        "item": "about ½ lb (¼ kg) Andouille sausage or other spicy sausage"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cayenne pepper to taste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt to taste"
       }
     ],
     "steps": [
-      "On a stovetop, bring the water to a boil on high heat after adding salt and vegetable oil (see tips below) (3 minutes).",
-      "Reduce heat to medium and add the pasta (3 minutes).",
-      "While the spaghetti is cooking, pour desired amount of sauce into pan and set stove to medium (3 minutes).",
-      "When the sauce begins to bubble, reduce the heat to its lowest setting and cover (3 minutes).",
-      "Once the pasta is ready, carefully drain it through a colander into a sink (3 minutes).",
-      "Serve sauce over pasta in bowls."
+      "Brown outside of chicken breasts in small amount of oil then set aside (3 minutes).",
+      "Make a roux from the flour in a large saucepan (3 minutes).",
+      "Add peppers, onions, and celery to roux (3 minutes).",
+      "Cook until softened (3 minutes).",
+      "Slowly stir in water, and bring to a simmer (3 minutes).",
+      "Cut up browned chicken breasts, add to gumbo, and cook until done (3 minutes).",
+      "Slice up sausage and add ½ hour after the chicken (3 minutes).",
+      "Season to taste with cayenne and salt (3 minutes).",
+      "Serve in a bowl with a little rice and green onions on top (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Simple_Spaghetti",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_and_Andouille_Sausage_Gumbo",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r788",
-    "name": "Simple Tarragon Quiche",
+    "name": "Manhattan Clam Chowder",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 5,
-        "unit": "",
-        "item": "eggs"
+        "qty": 2,
+        "unit": "jar",
+        "item": "(23 ounces) clams or 2 packages (24 ounces) frozen clams"
       },
       {
         "qty": 1,
-        "unit": "",
-        "item": "⅓ cup (320 ml) cream (approximately 30% fat)"
+        "unit": "cup",
+        "item": "sliced celery"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chopped fresh tarragon"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "dash ground nutmeg"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "chopped parsley"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅛ teaspoon ground pepper"
+        "item": "¼ pound salt pork, diced"
       },
       {
         "qty": 1,
         "unit": "",
-        "item": "prepared frozen pie crust"
+        "item": "bay leaf"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "medium onions, diced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ cup (180 ml) freshly-grated Swiss cheese"
+        "item": "¼ teaspoon thyme"
+      },
+      {
+        "qty": 2,
+        "unit": "cup",
+        "item": "chopped tomatoes"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "medium potatoes, diced"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ quarts water"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "diced raw carrots"
+      },
+      {
+        "qty": 8,
+        "unit": "",
+        "item": "–10 soda crackers"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt to taste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Pepper to taste"
       }
     ],
     "steps": [
-      "Preheat oven to 375&deg;F (190&deg;C) (3 minutes).",
-      "Place the eggs, cream, tarragon, nutmeg, salt, and pepper in a blender; blend as briefly as possible until they form a homogeneous mixture (3 minutes).",
-      "In the pie crust, create alternating layers of the shredded cheese and the mixture from the blender until the crust is full (3 minutes).",
-      "Bake the quiche for 35–40 minutes; a toothpick or fork inserted into its middle should come out \"clean\" (3 minutes).",
-      "Remove the quiche from the oven, and let it cool for at least 20 minutes before serving (3 minutes)."
+      "Strain the clam juice (3 minutes).",
+      "Put the clams through food chopper, using the coarse blade (3 minutes).",
+      "Fry pork in a heavy iron pot (3 minutes).",
+      "Remove pork, and sauté onions in the fat until tender and lightly browned (3 minutes).",
+      "Add tomatoes and cook for 5 minutes (3 minutes).",
+      "Add water, carrots, celery, and herbs (3 minutes).",
+      "Cover pot and gently simmer for 1½ hours (3 minutes).",
+      "Add clams, strained clam juice, and potatoes; cook until potatoes are tender (3 minutes).",
+      "Season with salt and pepper to taste (3 minutes).",
+      "Bring to a boil, pour over crumbled soda crackers in individual plates, and serve at once (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Simple_Tarragon_Quiche",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Manhattan_Clam_Chowder_II",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r789",
-    "name": "Sinasir (Nigerian Rice Pancake)",
-    "minutes": 40,
-    "servings": 3,
+    "name": "Hominy Grits",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "breakfast",
       "medium",
@@ -9788,59 +9852,36 @@
     ],
     "ingredients": [
       {
-        "qty": 3,
+        "qty": 5,
         "unit": "cup",
-        "item": "uncooked short-grain rice"
+        "item": "water"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Water"
+        "qty": 1,
+        "unit": "cup",
+        "item": "hominy grits"
       },
       {
         "qty": 1,
         "unit": "tbsp",
-        "item": "yeast"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¾ cup sugar"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "onions, chopped"
+        "item": "butter"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "baking powder (optional)"
-      },
-      {
-        "qty": 2,
         "unit": "tbsp",
-        "item": "vegetable oil"
+        "item": "honey, brown sugar, or maple syrup (optional)"
       }
     ],
     "steps": [
-      "Place the rice in a bowl, and cover it with about 1 inch of water (3 minutes).",
-      "Soak for several hours (3 minutes).",
-      "Blend the soaked and parboiled rice in a blender until you get a smooth batter, adding water as necessary (3 minutes).",
-      "Transfer the batter to a bowl, then mix in the yeast and sugar (3 minutes).",
-      "Cover and let ferment at room temperature for a few hours (3 minutes).",
-      "Mix in onion, salt, and baking powder (3 minutes).",
-      "Heat a non-stick frying pan, and grease with a thin layer of oil (3 minutes).",
-      "Scoop in enough batter to make a thin layer in the pan (3 minutes).",
-      "Cook until the bottom is browned and the pancake is cooked through (3 minutes).",
-      "Remove the pancake, and repeat the greasing and cooking process with the remaining batter."
+      "Bring water to a rapid boil in a saucepan (3 minutes).",
+      "Gradually stir in the hominy grits (3 minutes).",
+      "Reduce heat to low (3 minutes).",
+      "Stir in the butter (3 minutes).",
+      "Cook for 20 minutes, or until the water is absorbed (3 minutes).",
+      "If desired, sweeten with honey, brown sugar, maple syrup, or jelly (3 minutes).",
+      "Serve while hot (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sinasir_%28Nigerian_Rice_Pancake%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hominy_Grits",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12038,7 +12079,7 @@
   },
   {
     "id": "r820",
-    "name": "Strawberry Daiquiri",
+    "name": "Classic American Apple Pie",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -12049,70 +12090,52 @@
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "Strawberry juice, for rim"
+        "qty": 12,
+        "unit": "oz",
+        "item": "all-purpose flour"
       },
       {
-        "qty": null,
+        "qty": 8,
+        "unit": "oz",
+        "item": "cold butter, cut into ½-inch pieces"
+      },
+      {
+        "qty": 5,
         "unit": "",
-        "item": "Sugar, for rim"
+        "item": "–7 tbsp applejack (apple brandy) or hard cider"
       },
       {
         "qty": 1,
-        "unit": "oz",
-        "item": "light rum"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ oz strawberry schnapps"
-      },
-      {
-        "qty": 1,
-        "unit": "oz",
-        "item": "lime juice"
-      },
-      {
-        "qty": 2,
         "unit": "tsp",
-        "item": "powdered sugar"
+        "item": "table salt"
       },
       {
-        "qty": 2,
-        "unit": "oz",
-        "item": "fresh or frozen strawberries"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Crushed ice"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Whipped cream, for garnish"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Fresh strawberry, for garnish"
+        "qty": 1,
+        "unit": "tbsp",
+        "item": "sugar"
       }
     ],
     "steps": [
-      "Rim a glass in strawberry juice and sugar (3 minutes).",
-      "Shake rum, schnapps, lime juice, powdered sugar, strawberries, and crushed ice in a cocktail shaker (3 minutes).",
-      "Pour into the rimmed glass (3 minutes).",
-      "Garnish with whipped cream and a whole fresh strawberry (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Combine dough ingredients to get a mealy dough (3 minutes).",
+      "Split in half by weight, shape into 2 disks, and chill for 1 hour (3 minutes).",
+      "Toss apples with ¼ cup sugar and place in a colander set over a large bowl (3 minutes).",
+      "Let drain for 1 ½ hours (3 minutes).",
+      "Transfer liquid from bowl into a saucepan, and bring to a boil over medium high heat (3 minutes).",
+      "Cook until reduced to 2 tbsp (3 minutes).",
+      "Set aside (3 minutes).",
+      "Toss apples with remaining filling ingredients (3 minutes).",
+      "Set aside (3 minutes).",
+      "Roll out both disks of crust into rough circles (3 minutes).",
+      "Place one inside a 9 ½–10-inch tart pan and attach (3 minutes).",
+      "Add apples to the crust in a concentric circle, starting from the outside and working to the inside, making the center slightly taller than the outside (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Strawberry_Daiquiri",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Classic_American_Apple_Pie",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r821",
-    "name": "Super Foamy Milkshake",
+    "name": "Grits with Cheese",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -12123,34 +12146,47 @@
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "(2 grams) locust bean gum powder"
+        "qty": 4,
+        "unit": "cup",
+        "item": "water"
       },
       {
         "qty": 1,
-        "unit": "tbsp",
-        "item": "(10 grams) inulin powder"
+        "unit": "cup",
+        "item": "grits"
       },
       {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "(10 grams) sweet whey powder"
+        "qty": null,
+        "unit": "",
+        "item": "½–1 tsp salt"
       },
       {
-        "qty": 200,
-        "unit": "ml",
-        "item": "skimmed milk"
+        "qty": null,
+        "unit": "",
+        "item": "Black pepper to taste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Butter or margarine"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Grated cheddar cheese"
       }
     ],
     "steps": [
-      "Mix the locust bean gum powder, inulin powder, and sweet whey powder together (3 minutes).",
-      "Add the resulting powder to the skimmed milk (3 minutes).",
-      "Using an electric mixer, whip for 2 minutes until the product has turned to a fine foam (3 minutes).",
-      "While whipping, move the whisks up and down so that air gets whipped into the shake (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Bring the water to a boil in a 1–2 quart saucepan (3 minutes).",
+      "Add the grits, stirring constantly (3 minutes).",
+      "Reduce heat to low, stirring occasionally until until grits begin to thicken (3 minutes).",
+      "Cover and continue to cook on low heat for about 5–6 minutes (3 minutes).",
+      "Stir occasionally to avoid sticking (3 minutes).",
+      "If the grits become too thick, stir in a small amount of water (3 minutes).",
+      "Adjust the seasoning before serving, adding black pepper to taste (3 minutes).",
+      "Serve with a pat of margarine, butter, or grated cheese on top (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Super_Foamy_Milkshake",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Grits_with_Cheese",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13728,45 +13764,81 @@
   },
   {
     "id": "r844",
-    "name": "Tapenade",
+    "name": "Shrimp and Cheese Grits",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 6,
+        "qty": 3,
         "unit": "",
-        "item": "cured anchovies"
+        "item": "–4 strips thickened smoked bacon, diced"
       },
       {
         "qty": 1,
-        "unit": "tbsp",
-        "item": "capers, rinsed and drained"
+        "unit": "lb",
+        "item": "large shrimp"
+      },
+      {
+        "qty": 6,
+        "unit": "",
+        "item": "servings of grits"
       },
       {
         "qty": 1,
         "unit": "cup",
-        "item": "(240 ml) pitted black olives"
+        "item": "shredded sharp cheddar cheese"
+      },
+      {
+        "qty": 1.25,
+        "unit": "cup",
+        "item": "butter"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Extra-virgin olive oil"
+        "item": "½ large sweet onion, cut into thin strips"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ yellow bell pepper, cut into strips"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ red bell pepper, cut into strips"
+      },
+      {
+        "qty": 2,
+        "unit": "",
+        "item": "–3 cloves garlic, minced"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼–½ teaspoon hot sauce, or to taste (optional)"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "juice of one lime"
       }
     ],
     "steps": [
-      "Blend the anchovies, capers and olives (3 minutes).",
-      "For this a blender is better than the traditional mortar and pestle (3 minutes).",
-      "Mix in a few tablespoons olive oil until smooth (3 minutes).",
-      "Serve on toast as an amuse-bouche, or with boiled eggs, with goat cheese and roasted peppers, or on potato gnocchi (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Fry bacon until crisp, remove and set aside (3 minutes).",
+      "Sauté onions, garlic, and peppers in bacon grease, add lime juice and hot sauce and set aside (3 minutes).",
+      "Prepare grits per the directions on box (3 minutes).",
+      "Add cheese and butter when done cooking to allow for them to melt, then set aside (3 minutes).",
+      "Stir when done melting (3 minutes).",
+      "Sauté the shrimp until they turn pink, about 2–3 minutes (3 minutes).",
+      "Place the grits and cheese in large serving container and place the shrimp down the center of the container (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tapenade",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shrimp_and_Cheese_Grits",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13951,83 +14023,85 @@
   },
   {
     "id": "r848",
-    "name": "Tempe Mendoan I",
+    "name": "Pork Pot Pie",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 100,
-        "unit": "g",
-        "item": "rice flour"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "wheat flour"
-      },
-      {
         "qty": 2,
-        "unit": "clove",
-        "item": "of garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "piece",
-        "item": "shallot, ground"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "coriander, ground"
+        "unit": "",
+        "item": "Pillsbury pie crusts"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ tsp white pepper, ground"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 125,
-        "unit": "ml",
-        "item": "water"
-      },
-      {
-        "qty": 2,
-        "unit": "piece",
-        "item": "green onion, thinly sliced"
-      },
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "tempeh, size 10&times;15 cm"
+        "item": "⅓ cup margarine (or butter)"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ ml cooking oil"
+        "item": "⅓ cup onion, chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "⅓ cup all-purpose flour"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ teaspoon salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon pepper"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ cups pork broth"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "⅔ cup milk"
+      },
+      {
+        "qty": 3,
+        "unit": "cup",
+        "item": "pork, cooked"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "frozen corn, thawed"
+      },
+      {
+        "qty": 1,
+        "unit": "cup",
+        "item": "frozen peas, thawed"
       }
     ],
     "steps": [
-      "Combine rice flour, wheat flour, garlic, shallot, coriander, pepper, salt, water, and green onion to make a thin batter (3 minutes).",
-      "Dip each piece of tempeh into the batter, and coat entirely (3 minutes).",
-      "Warm the oil in a frying pan, and put it on the stove until hot (3 minutes).",
-      "Put each piece of coated tempeh into hot oil (3 minutes).",
-      "Fry the tempeh until hardened and well done (3 minutes).",
-      "Don't wait until it becomes yellow and crispy (3 minutes).",
-      "Remove the tempeh from the oil, letting the oil drip from the tempeh so that there is not much oil on it (3 minutes).",
-      "Serve tempeh with soy bean sauce and sliced small chilies."
+      "Heat oven to 425°F (3 minutes).",
+      "Prepare pie crusts as directed on package for two-crust pie using 9-inch pie pan (3 minutes).",
+      "In a medium saucepan, melt margarine over medium heat (3 minutes).",
+      "Add onion; cook 2 minutes or until tender (3 minutes).",
+      "Stir in flour, salt, and pepper until well-blended (3 minutes).",
+      "Gradually stir in broth and milk; cook, stirring constantly, until bubbly and thickened (3 minutes).",
+      "Add pork, corn, and peas; remove from heat (3 minutes).",
+      "Spoon pork mixture into crust-lined pan (3 minutes).",
+      "Top with second crust and flute; cut three slits on top (3 minutes).",
+      "Bake for 30–40 minutes or until crust is golden-brown (3 minutes).",
+      "Let stand 5 minutes before serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tempe_Mendoan_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pork_Pot_Pie",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   }

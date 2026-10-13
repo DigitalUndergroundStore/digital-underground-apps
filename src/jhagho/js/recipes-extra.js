@@ -2185,61 +2185,107 @@
   },
   {
     "id": "r72",
-    "name": "Argentine Chimichurri Steak",
-    "minutes": 30,
-    "servings": 2,
+    "name": "Estofado de Pollo (Chicken Stew)",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
-      "dinner",
-      "dairy-free",
-      "gluten-free",
-      "high-protein",
-      "splurge",
-      "medium"
+      "lunch",
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "sirloin steak"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
-        "item": "onion"
+        "item": "whole chicken, cut into pieces (breast cut into 4 pieces)"
       },
       {
-        "qty": 2,
+        "qty": 3.0,
+        "unit": "",
+        "item": "large carrots, cut into thirds and sliced lengthwise"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "large onion, diced"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "large potatoes, cut into 4 pieces each"
+      },
+      {
+        "qty": 2.0,
         "unit": "clove",
-        "item": "garlic"
+        "item": "s garlic, chopped"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
+        "unit": "",
+        "item": "medium Roma tomato, chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup frozen peas"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup oil"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Pepper to taste"
+      },
+      {
+        "qty": 1.0,
         "unit": "tsp",
-        "item": "smoked paprika"
+        "item": "ground cumin"
       },
       {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup dry white wine"
       },
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
+        "qty": 1.0,
+        "unit": "",
+        "item": "quart (1 liter) water"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "chicken boullion cubes"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "yellow chile pepper (aji amarillo), seeded and thinly sliced lengthwise"
       }
     ],
     "steps": [
-      "Pat steak dry; season with salt and pepper.",
-      "Heat oil in a cast-iron skillet over high heat.",
-      "Sear steak 7 minutes per side for medium, less for rare.",
-      "Rest 5 minutes before slicing against the grain.",
-      "Spoon chimichurri or pan juices over the top and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
-    ]
+      "In large Dutch oven, heat the oil and sauté onion and garlic (3 minutes).",
+      "Once onion begins to soften, add chopped tomato and chicken pieces (3 minutes).",
+      "Slightly brown the chicken pieces (3 minutes).",
+      "Season with salt, pepper, and cumin (3 minutes).",
+      "Once chicken has lightly browned, add the water, bouillon cubes and wine (3 minutes).",
+      "Cover and allow chicken to simmer over medium-low heat for at least 30 minutes (3 minutes).",
+      "Add the carrots, potatoes, and peas (3 minutes).",
+      "Taste broth, as more cumin or salt and pepper may be needed (3 minutes).",
+      "Add just enough water to simmer vegetables if needed (3 minutes).",
+      "Once vegetables are done, remove from heat and allow to sit uncovered for 5 minutes (3 minutes).",
+      "Serve with white, steamed rice (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Estofado_de_Pollo_%28Chicken_Stew%29",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r73",
@@ -2943,60 +2989,108 @@
   },
   {
     "id": "r85",
-    "name": "Irish Colcannon",
-    "minutes": 25,
-    "servings": 4,
+    "name": "Chicken and Black-eyed Pea Stew",
+    "minutes": 45,
+    "servings": 6,
     "tags": [
-      "dinner",
-      "vegetarian",
-      "gluten-free",
-      "budget",
-      "easy"
+      "lunch",
+      "medium",
+      "moderate",
+      "collection-indian"
     ],
     "ingredients": [
       {
-        "qty": 1.5,
-        "unit": "lb",
-        "item": "potato"
-      },
-      {
-        "qty": 4,
+        "qty": 1.0,
         "unit": "cup",
-        "item": "kale"
+        "item": "of dry black-eyed peas (or about 2 cups canned)"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "milk"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 4,
+        "qty": 2.0,
         "unit": "",
-        "item": "scallion"
+        "item": "–3 tbsp vegetable oil or chicken fat"
       },
       {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": 2.0,
+        "unit": "",
+        "item": "medium (~2 cups) chopped white or red onions"
       },
       {
-        "qty": 0.25,
+        "qty": 2.0,
+        "unit": "",
+        "item": "ea. (~2 cups) chopped carrots"
+      },
+      {
+        "qty": 1.0,
+        "unit": "stalk",
+        "item": "(~½–1 cup) chopped celery including the leaves"
+      },
+      {
+        "qty": 6.0,
+        "unit": "clove",
+        "item": "s garlic, minced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "–2 tbsp minced ginger"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp salt"
+      },
+      {
+        "qty": 1.0,
         "unit": "tsp",
-        "item": "black pepper"
+        "item": "black pepper, preferably freshly-crushed peppercorns"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "uncooked long-grained rice, preferably brown rice"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s chicken stock, canned tomato liquid, water, or vegetable stock"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s canned tomatoes (crushed or diced), or 1 pound diced fresh tomatoes."
+      },
+      {
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "bone-in chicken meat (e.g. two chicken legs)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "medium to hot chile peppers (optional)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "curry powder stirred into the juice of ½ lemon"
       }
     ],
     "steps": [
-      "Peel potatoes and cut into chunks. Boil in salted water 14 minutes until tender; drain.",
-      "Mash with milk, butter, salt, and pepper until creamy (3 minutes).",
-      "Wilt chopped kale in a dry pan 2 minutes.",
-      "Fold kale and sliced scallions into the mash.",
-      "Serve hot with an extra knob of butter if you like."
-    ]
+      "If using dry black-eyed peas, wash them, then cook for 20 minutes or until al dente (3 minutes).",
+      "When done, drain (3 minutes).",
+      "Meanwhile, sauté onions, carrots, and celery in oil for 5 minutes (3 minutes).",
+      "Add garlic, ginger, salt, and pepper, and sauté for 2 more minutes (3 minutes).",
+      "Stir rice into vegetable mix (3 minutes).",
+      "Add stock and tomatoes, then bring to a boil (3 minutes).",
+      "Add the cooked black-eyed peas (3 minutes).",
+      "Add meat, cook a further 5 minutes, turn heat to low, and let simmer for 30–40 minutes (3 minutes).",
+      "The stew is ready when the rice is soft (3 minutes).",
+      "Add chili peppers and curry-lemon paste, then cook for 10 more minutes (3 minutes).",
+      "Serve hot (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_and_Black-eyed_Pea_Stew",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r86",
@@ -3630,54 +3724,47 @@
   },
   {
     "id": "r97",
-    "name": "Spiced Apple Crisp",
-    "minutes": 35,
+    "name": "Fried Eggs",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
-      "vegetarian",
-      "budget",
-      "medium"
+      "medium",
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 4,
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "s butter or olive oil"
+      },
+      {
+        "qty": 2.0,
         "unit": "",
-        "item": "apple"
+        "item": "–3 large eggs, depending on appetite"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "rolled oats"
+        "qty": null,
+        "unit": "",
+        "item": "Salt to taste"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "brown sugar"
-      },
-      {
-        "qty": 4,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cinnamon"
-      },
-      {
-        "qty": 0.25,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": null,
+        "unit": "",
+        "item": "Pepper to taste (optional)"
       }
     ],
     "steps": [
-      "Heat oven to 375°F. Slice apples into a baking dish.",
-      "Mix oats, brown sugar, cinnamon, salt, and melted butter.",
-      "Scatter crumble over apples.",
-      "Bake 28 minutes until bubbling and golden.",
-      "Cool 5 minutes before serving."
-    ]
+      "Melt the butter in the pan over low to medium heat (3 minutes).",
+      "Crack open the eggs into the pan and let fry until the yolks begin to harden at the edges (indicated by a lightening in the yolk color) (3 minutes).",
+      "Using the spatula, flip the eggs over and allow to cook 10 seconds for over-easy, 30 seconds for over-medium, or up to 1 minute for over-hard (3 minutes).",
+      "Add salt and pepper to taste, and serve (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Eggs",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r98",
@@ -4579,59 +4666,58 @@
   },
   {
     "id": "r113",
-    "name": "Zucchini Fritters",
-    "minutes": 20,
+    "name": "Peanut Butter Sandwich",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
-      "vegetarian",
-      "budget",
-      "easy"
+      "medium",
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 2.0,
+        "unit": "slice",
+        "item": "s of bread"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "zucchini"
+        "item": "Butter, soft"
       },
       {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "egg"
+        "item": "Peanut butter"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "flour"
+        "qty": null,
+        "unit": "",
+        "item": "Honey"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "parmesan"
+        "qty": null,
+        "unit": "",
+        "item": "Preserves (jam)"
       },
       {
-        "qty": 2,
-        "unit": "clove",
-        "item": "garlic"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
+        "qty": null,
+        "unit": "",
+        "item": "Very cold milk"
       }
     ],
     "steps": [
-      "Grate zucchini; squeeze out moisture (4 minutes).",
-      "Stir zucchini with eggs, flour, parmesan, garlic, and salt.",
-      "Heat oil in a skillet over medium. Scoop batter into patties.",
-      "Cook 3 minutes per side until golden.",
-      "Serve with yogurt or sour cream."
-    ]
+      "Toast and butter the bread slices (3 minutes).",
+      "Combine the peanut butter, honey, and butter (3 minutes).",
+      "Spread over one slice of toasted bread (3 minutes).",
+      "Spread preserves (jam) over the other slice (3 minutes).",
+      "Put both halves of sandwich together (3 minutes).",
+      "Cut in half and serve with milk (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Peanut_Butter_Sandwich",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r114",
@@ -5356,59 +5442,51 @@
   },
   {
     "id": "r126",
-    "name": "Midnight Chili Nachos",
-    "minutes": 28,
+    "name": "Betty's Salad",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "lunch",
-      "high-protein",
-      "budget",
-      "easy"
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 12,
-        "unit": "oz",
-        "item": "tortilla chips"
+        "qty": null,
+        "unit": "",
+        "item": "½ package fresh spinach"
       },
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "ground beef"
+        "qty": 6.0,
+        "unit": "",
+        "item": "hard boiled eggs, sliced"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "can",
-        "item": "kidney beans"
+        "item": "bean sprouts, drained"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "shredded cheddar"
+        "qty": 1.0,
+        "unit": "",
+        "item": "–2 cans water chestnuts, drained and sliced (optional, depending on the recipe you follow)"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "salsa"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "chili powder"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "fried bacon, crumbled"
       }
     ],
     "steps": [
-      "Brown beef with chili powder and salt 8 minutes; drain excess fat.",
-      "Stir in beans and simmer 5 minutes.",
-      "Spread chips on a sheet pan; top with beef and cheese.",
-      "Bake at 400°F 6 minutes until cheese melts.",
-      "Spoon salsa over the nachos and serve right away."
-    ]
+      "Layer the salad ingredients in the order listed (3 minutes).",
+      "Mix all the dressing ingredients in blender (3 minutes).",
+      "Pour over salad (3 minutes).",
+      "Store salad in fridge (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Betty%27s_Salad",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   }
 ];
   for (var i = 0; i < extra.length; i++) PW_STARTERS.push(extra[i]);

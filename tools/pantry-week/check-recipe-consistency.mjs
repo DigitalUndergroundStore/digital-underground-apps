@@ -18,15 +18,6 @@ vm.createContext(ctx);
 vm.runInContext(mealSrc + "\nglobal.window = global;", ctx);
 
 const STOP = new Set([
-  "salt",
-  "pepper",
-  "water",
-  "oil",
-  "butter",
-  "sugar",
-  "flour",
-  "garlic",
-  "onion",
   "optional",
   "fresh",
   "large",
@@ -35,17 +26,30 @@ const STOP = new Set([
   "chopped",
   "with",
   "taste",
+  "divided",
+  "finely",
+  "ground",
+  "stick",
+  "cup",
+  "teaspoon",
+  "tablespoon",
 ]);
 
 function tokens(item) {
   return String(item || "")
     .toLowerCase()
-    .match(/[a-z]{4,}/g)
+    .match(/[a-z]{3,}/g)
     ?.filter((w) => !STOP.has(w)) || [];
 }
 
 function ingredientInSteps(item, blob) {
-  for (const w of tokens(item)) {
+  const plain = String(item || "").trim().toLowerCase();
+  if (/^(salt|pepper|sugar|water|oil|butter|flour|garlic|onion)(\s+to\s+taste)?\.?$/i.test(plain)) {
+    return true;
+  }
+  const words = tokens(item);
+  if (!words.length) return true;
+  for (const w of words) {
     if (blob.includes(w)) return true;
   }
   return false;

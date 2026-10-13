@@ -1,0 +1,116 @@
+[
+  {
+    "title": "Cookbook:Estofado de Pollo (Chicken Stew)",
+    "name": "Estofado de Pollo (Chicken Stew)",
+    "meal": "lunch",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Chicken and Black-eyed Pea Stew",
+    "name": "Chicken and Black-eyed Pea Stew",
+    "meal": "lunch",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "collection-indian"
+    ]
+  },
+  {
+    "title": "Cookbook:Keralan Vegetable Stew",
+    "name": "Keralan Vegetable Stew",
+    "meal": "lunch",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate",
+      "vegetarian",
+      "collection-indian"
+    ]
+  },
+  {
+    "title": "Cookbook:Liberian Palm Oil Stew",
+    "name": "Liberian Palm Oil Stew",
+    "meal": "lunch",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Liberian Eggplant Stew",
+    "name": "Liberian Eggplant Stew",
+    "meal": "lunch",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Domoda (Gambian Peanut Stew)",
+    "name": "Domoda (Gambian Peanut Stew)",
+    "meal": "lunch",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Saka-Saka (Cassava Leaf Stew)",
+    "name": "Saka-Saka (Cassava Leaf Stew)",
+    "meal": "lunch",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Bacon Cheese Omelet",
+    "name": "Bacon Cheese Omelet",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Potato Omelet",
+    "name": "Potato Omelet",
+    "meal": "breakfast",
+    "tags": [
+      "breakfast",
+      "medium",
+      "moderate",
+      "vegetarian"
+    ]
+  },
+  {
+    "title": "Cookbook:Hashbrown Casserole",
+    "name": "Hashbrown Casserole",
+    "meal": "breakfast",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  },
+  {
+    "title": "Cookbook:Portable Eggs Benedict",
+    "name": "Portable Eggs Benedict",
+    "meal": "breakfast",
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ]
+  }
+]

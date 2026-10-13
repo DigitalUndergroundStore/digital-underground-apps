@@ -1,4 +1,4 @@
-const CACHE = "planetview-v15-2";
+const CACHE = "planetview-v1-deck";
 const BASE = new URL("./", self.location).pathname;
 
 function under(suffix) {
@@ -33,6 +33,7 @@ function cacheable(url) {
     path.startsWith(under("moon-sites/")) ||
     path.startsWith(under("icons/")) ||
     path.startsWith(under("assets/")) ||
+    path.startsWith(under("audio/")) ||
     path.startsWith(under("stories/")) ||
     path === under("manifest.webmanifest")
   );

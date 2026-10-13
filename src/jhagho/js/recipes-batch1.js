@@ -200,7 +200,7 @@
       "Melt 1 tablespoon butter in a skillet; sear chicken 6 minutes until lightly browned.",
       "Add onion and garlic; cook 4 minutes. Stir in tomato paste and garam masala 1 minute.",
       "Pour in coconut milk and remaining butter; simmer 15 minutes until sauce thickens.",
-      "Season with salt and serve over warm rice within 5 minutes."
+      "Season with salt and serve over warm rice within 5 minutes. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -257,7 +257,7 @@
       "Butter one side of each bread slice (2 minutes).",
       "Layer mustard, brisket, sauerkraut, and cheese on unbuttered sides.",
       "Grill sandwiches in a skillet over medium heat 4 minutes per side until crisp.",
-      "Rest 1 minute, slice, and serve with pepper if desired."
+      "Rest 1 minute, slice, and serve with pepper if desired. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -1801,7 +1801,7 @@
       "Sauté diced vegetables in butter 6 minutes.",
       "Return broth and chicken; simmer 10 minutes.",
       "Drop spoonfuls of flour-milk dough into simmering pot; cover 12 minutes.",
-      "Season with salt and rest 5 minutes before ladling."
+      "Season with salt and rest 5 minutes before ladling. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -2317,7 +2317,7 @@
       "Add beans, salsa, and corn; simmer 10 minutes.",
       "Stir occasionally and adjust salt.",
       "Cook 4 more minutes until thickened.",
-      "Serve with rice or tortillas within 5 minutes."
+      "Serve with rice or tortillas within 5 minutes. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -2490,7 +2490,7 @@
       "Sear in oil 4 minutes per side until cooked through.",
       "Top with tomato and mozzarella; cover 3 minutes to melt.",
       "Scatter basil and drizzle balsamic.",
-      "Rest 2 minutes and serve."
+      "Rest 2 minutes and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -2892,7 +2892,7 @@
       "Add chicken, tomatoes, onion, garlic, garam masala, and salt to slow cooker.",
       "Cook on low 6 hours.",
       "Stir in cream; cook on high 15 minutes.",
-      "Serve over rice within 10 minutes."
+      "Serve over rice within 10 minutes. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -3407,7 +3407,7 @@
       "Coat steak and rest 15 minutes at room temperature.",
       "Grill over high heat 4 minutes per side.",
       "Rest 8 minutes against the grain.",
-      "Slice thin and serve."
+      "Slice thin and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -3861,7 +3861,7 @@
       "Pan-fry in oil 4 minutes per side.",
       "Pour sauce over chicken; simmer covered 8 minutes.",
       "Top with mozzarella; melt 3 minutes.",
-      "Rest 2 minutes and serve."
+      "Rest 2 minutes and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -4324,7 +4324,7 @@
       "Mash avocado with salt (2 minutes).",
       "Spread mayo on tortillas; layer turkey, bacon, tomato, and avocado.",
       "Roll tightly (3 minutes).",
-      "Slice in half and serve."
+      "Slice in half and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {

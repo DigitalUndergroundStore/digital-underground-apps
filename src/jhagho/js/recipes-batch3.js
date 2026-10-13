@@ -408,7 +408,7 @@
       "Add 1–2 pieces of bay leaf (3 minutes).",
       "Cook until the sauce has largely evaporated; some take this to an extreme and cook until the sauce has thickened and adhered to the chicken, which begins to make a popping noise due to the high, direct heat (3 minutes).",
       "Serve over hot steamed rice (3 minutes).",
-      "May be eaten with tomato slices in fish sauce, tapsilog, soy sauce, vinegar, hotdog, etc."
+      "May be eaten with tomato slices in fish sauce, tapsilog, soy sauce, vinegar, hotdog, etc. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Adobo_Chicken_%28Philippine%29",
     "sourceName": "Wikibooks Cookbook",
@@ -513,7 +513,7 @@
       "When the water starts to boil, let the rice cook in a closed pot very slowly for about 20 minutes or until the water has completely evaporated (hint: to cook \"peruvian\" rice: cook a cup of rice in two cups of water) (3 minutes).",
       "Back to the Ají de Gallina: add the chopped pecans, grated cheese, and chicken pieces (3 minutes).",
       "Cook until it has a thick creamy texture (3 minutes).",
-      "About five minutes before serving, add the evaporated milk and continue cooking on low heat."
+      "About five minutes before serving, add the evaporated milk and continue cooking on low heat. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Aj%C3%AD_de_Gallina_%28Peruvian_Chili_Chicken%29",
     "sourceName": "Wikibooks Cookbook",
@@ -809,7 +809,7 @@
       "Add tomato juice and bullion cubes (3 minutes).",
       "Stir for about 15 seconds (3 minutes).",
       "Simmer for 45 minutes, stirring occasionally (3 minutes).",
-      "Remove from heat and add salt and black pepper to taste (3 minutes)."
+      "Remove from heat and add salt and black pepper to taste (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Texas_Easy_Chili",
     "sourceName": "Wikibooks Cookbook",
@@ -897,7 +897,7 @@
   },
   {
     "id": "r261",
-    "name": "Anzac Biscuits I",
+    "name": "Anzac Biscuits",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -1386,7 +1386,7 @@
       "Transfer the ingredients to a large stewing pot (3 minutes).",
       "Add the cilantro, bouillon and saffron (or food coloring) (3 minutes).",
       "Bring to a rolling boil (3 minutes).",
-      "Add the rice and mix well."
+      "Add the rice and mix well. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Arroz_con_Pollo_%28Rice_and_Chicken%29",
     "sourceName": "Wikibooks Cookbook",
@@ -1614,7 +1614,7 @@
       "Toss to coat (3 minutes).",
       "Arrange on 4 serving plates (3 minutes).",
       "Top with mango, if desired (3 minutes).",
-      "Serve with crackers."
+      "Serve with crackers. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Asian-Inspired_Chicken_Salad",
     "sourceName": "Wikibooks Cookbook",
@@ -1715,7 +1715,7 @@
       "Cook until reduced by half (3 minutes).",
       "Let cool before using (3 minutes).",
       "Grill duck on the preheated grill 4–5 minutes, brushing liberally with sauce once or twice (3 minutes).",
-      "Flip and cook another 3–4 minutes, brushing liberally with glaze once or twice, for medium rare."
+      "Flip and cook another 3–4 minutes, brushing liberally with glaze once or twice, for medium rare. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Asian_Grilled_Duck_Breasts",
     "sourceName": "Wikibooks Cookbook",
@@ -2655,7 +2655,7 @@
   },
   {
     "id": "r284",
-    "name": "Baingan Bartha (South Indian Eggplant with Coconut and Chili) I",
+    "name": "Baingan Bartha (South Indian Eggplant with Coconut and Chili)",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -3135,7 +3135,7 @@
       "Refrigerate 1 hour (3 minutes).",
       "Combine liquid ingredients, bring to a boil, and simmer until reduced by ⅓ (3 minutes).",
       "Place on medium grill, and turn often, brushing with sauce when turned until interior temperature reaches  (3 minutes).",
-      "Let rest for 10 minutes; serve (3 minutes)."
+      "Let rest for 10 minutes; serve (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Backyard_BBQ_Chicken",
     "sourceName": "Wikibooks Cookbook",
@@ -3620,7 +3620,7 @@
       "Place spare ribs on a roasting rack (3 minutes).",
       "Roast ribs for 45 minutes (3 minutes).",
       "Raise oven temperature to Oven Temperatures|, and roast for 15 more minutes (3 minutes).",
-      "Serve hot or cold."
+      "Serve hot or cold. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Barbecued_Spare_Ribs",
     "sourceName": "Wikibooks Cookbook",
@@ -3827,7 +3827,7 @@
       "Blend well (3 minutes).",
       "Throw in the tomatoes and salt to taste (3 minutes).",
       "Turn the flame down to medium and cover for ten minutes (3 minutes).",
-      "This will form a spicy gravy to which you can add any mixture of vegetables or boiled eggs or fried fish or chicken or lamb/goat."
+      "This will form a spicy gravy to which you can add any mixture of vegetables or boiled eggs or fried fish or chicken or lamb/goat. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Basic_Indian_Tomato_Gravy",
     "sourceName": "Wikibooks Cookbook",
@@ -4926,7 +4926,7 @@
       "Stir in reserved sauce until thickened, adding more liquid as needed (3 minutes).",
       "Season velouté to taste (3 minutes).",
       "Pour over bison (3 minutes).",
-      "Serve with toasted bread, wild mushrooms, and wild rice."
+      "Serve with toasted bread, wild mushrooms, and wild rice. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bison_%C3%A0_la_Grecque",
     "sourceName": "Wikibooks Cookbook",
@@ -5986,7 +5986,7 @@
       "Meanwhile, crush garlic into a bowl with some soy sauce and mix in the chicken meat cubes (3 minutes).",
       "Let marinate (3 minutes).",
       "Fry the marinated meat with oil (3 minutes).",
-      "Add the cooked meat to the curry pot, then season with basil, salt, and fish sauce to taste (3 minutes)."
+      "Add the cooked meat to the curry pot, then season with basil, salt, and fish sauce to taste (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Green_Chicken_Curry_with_Coconut_Milk",
     "sourceName": "Wikibooks Cookbook",
@@ -6206,7 +6206,7 @@
       "Add the tomato juice if desired (3 minutes).",
       "Add 1 cup of boiling water, cover pot, and cook for 2 hours on low heat (3 minutes).",
       "Inspect regularly to make sure there is enough liquid, adding water if necessary (3 minutes).",
-      "30 minutes before serving, add bell and chili peppers (3 minutes)."
+      "30 minutes before serving, add bell and chili peppers (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spicy_Roast_Brisket",
     "sourceName": "Wikibooks Cookbook",
@@ -8394,7 +8394,7 @@
       "After the onions turn golden brown add the marinated chicken (3 minutes).",
       "Add curry powder, coconut yogurt and turn to a low heat (3 minutes).",
       "Leave to cook for 35–40 minutes (3 minutes).",
-      "Finely chop fresh coriander and a dash of lemon juice to the curry."
+      "Finely chop fresh coriander and a dash of lemon juice to the curry. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Curry",
     "sourceName": "Wikibooks Cookbook",
@@ -8479,7 +8479,7 @@
       "Season again with salt and pepper—this is called \"layering\" in cooking (3 minutes).",
       "Add the elbow macaroni and cook for 7 minutes or so (3 minutes).",
       "The macaroni will have absorbed some of the salt by now, so season again with salt (3 minutes).",
-      "Add the carrots and cabbage."
+      "Add the carrots and cabbage. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Sopas",
     "sourceName": "Wikibooks Cookbook",
@@ -8578,7 +8578,7 @@
       "The chicken can also be cooked on skewers under a medium grill for 5–8 minutes on each side or barbecued (cooking times depend on the temperature of the barbecue) (3 minutes).",
       "Always ensure the chicken is cooked throughout before serving (3 minutes).",
       "It should come apart easily when pressed down with the side of a fork (3 minutes).",
-      "Serve with naan, with rice or use in a Chicken Tikka Masala."
+      "Serve with naan, with rice or use in a Chicken Tikka Masala. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Tikka",
     "sourceName": "Wikibooks Cookbook",
@@ -8670,7 +8670,7 @@
       "Add the tomatoes, vinegar, tomato paste, and chilies and simmer for five minutes (3 minutes).",
       "Add more extra water if needed (3 minutes).",
       "Add the cream, garam masala, and chopped cilantro and simmer for a few times (3 minutes).",
-      "Garnish with fresh coriander and serve with Naan, rice coloured yellow with turmeric, onion bahjis and/or a glass of white wine."
+      "Garnish with fresh coriander and serve with Naan, rice coloured yellow with turmeric, onion bahjis and/or a glass of white wine. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Tikka_Masala",
     "sourceName": "Wikibooks Cookbook",
@@ -8973,7 +8973,7 @@
       "As with many marinating recipes, the longer the better (3 minutes).",
       "Clean and preheat grill to medium heat (3 minutes).",
       "Place wings on grill (3 minutes).",
-      "Turn 1–4 times over the next 20 minutes (3 minutes)."
+      "Turn 1–4 times over the next 20 minutes (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Midwestern_Chicken_Wings",
     "sourceName": "Wikibooks Cookbook",
@@ -9060,7 +9060,7 @@
   },
   {
     "id": "r367",
-    "name": "Chocolate Chip Cookies I",
+    "name": "Chocolate Chip Cookies",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -9740,7 +9740,7 @@
   },
   {
     "id": "r376",
-    "name": "Christmas Pudding I",
+    "name": "Christmas Pudding",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -10148,7 +10148,7 @@
       "Let marinate, turning occasionally, for at least 3 hours, or overnight is possible—the longer the better (3 minutes).",
       "Place the chicken pieces on a barbecue, an electric grill, or even in the oven (3 minutes).",
       "Cook until done, making sure you coat the chicken with plenty of the marinade as you cook (3 minutes).",
-      "You should aim for a nice crispy skin."
+      "You should aim for a nice crispy skin. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coconut_Chicken",
     "sourceName": "Wikibooks Cookbook",
@@ -10736,7 +10736,7 @@
       "Beat the cooled sauce into the mayonnaise with the apricot purée (3 minutes).",
       "Whip the cream to stiff peaks, and fold into the mixture (3 minutes).",
       "Season with salt and pepper, and a little lemon juice if necessary (3 minutes).",
-      "Fold in the chicken pieces, garnish with watercress, and serve."
+      "Fold in the chicken pieces, garnish with watercress, and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Coronation_Chicken",
     "sourceName": "Wikibooks Cookbook",
@@ -10872,7 +10872,7 @@
       "Switch to medium heat and cook until the cooking liquid is slightly thickened, flipping the mushrooms a couple times (3 minutes).",
       "Sprinkle Parmesan cheese over the mushrooms and gently stir until the cheese is melted (3 minutes).",
       "Taste and add more salt if desired (3 minutes).",
-      "Toss the cooked pasta into the skillet."
+      "Toss the cooked pasta into the skillet. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Creamy_Mushroom_Pasta",
     "sourceName": "Wikibooks Cookbook",
@@ -11472,7 +11472,7 @@
       "Cook for about 10–15 minutes, then flip the pieces and continue grilling for another 10–15 minutes, or until the chicken is cooked through and nicely charred (3 minutes).",
       "While grilling, use a basting brush to brush any remaining marinade onto the chicken for added flavor and moisture (3 minutes).",
       "Once cooked, remove the chicken from the grill and let it rest for a few minutes (3 minutes).",
-      "Garnish the dajaj mashwi with fresh chopped parsley or cilantro, and serve it with lemon wedges on the side."
+      "Garnish the dajaj mashwi with fresh chopped parsley or cilantro, and serve it with lemon wedges on the side. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Dajaj_Mashwi_%28Libyan_Grilled_Chicken%29",
     "sourceName": "Wikibooks Cookbook",
@@ -11660,7 +11660,7 @@
       "Let marinate 5–10 minutes (3 minutes).",
       "Heat olive oil in a pot (3 minutes).",
       "Add the chicken mixture, and cook for 30–60 minutes (3 minutes).",
-      "Serve with bulla cakes (3 minutes)."
+      "Serve with bulla cakes (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Jamaican_Curry_Chicken_with_Bullga",
     "sourceName": "Wikibooks Cookbook",
@@ -13007,7 +13007,7 @@
   },
   {
     "id": "r421",
-    "name": "Eggplant Parmesan (Melanzane alla Parmigiana) I",
+    "name": "Eggplant Parmesan (Melanzane alla Parmigiana)",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -13180,7 +13180,7 @@
       "Take a cabbage leaf and place a small portion of the meat and rice mixture in the center (3 minutes).",
       "Fold the sides of the leaf over the filling and roll it tightly, similar to a burrito (3 minutes).",
       "Secure the roll with toothpicks or tie it with cooking twine (3 minutes).",
-      "Repeat this process with the remaining cabbage leaves and filling."
+      "Repeat this process with the remaining cabbage leaves and filling. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Egyptian_Cabbage_Rolls_%28Mahshi_Malfoof%29",
     "sourceName": "Wikibooks Cookbook",
@@ -13442,7 +13442,7 @@
       "Place the meatball skewers on the grill or grill pan and cook for about 10–12 minutes, turning them occasionally to ensure even cooking (3 minutes).",
       "The meatballs should be browned and cooked through (3 minutes).",
       "Once cooked, remove the meatball skewers from the grill or grill pan and transfer them to a serving platter (3 minutes).",
-      "Serve the kofta hot, garnished with fresh parsley or cilantro."
+      "Serve the kofta hot, garnished with fresh parsley or cilantro. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Egyptian_Meatballs_%28Kofta%29",
     "sourceName": "Wikibooks Cookbook",
@@ -14981,7 +14981,7 @@
       "Add the tomato paste (3 minutes).",
       "Cook, stirring, for 1 minute to cook it down slightly (3 minutes).",
       "Return the cooked hot dogs to the pan, along with the banana ketchup, tomato sauce, chicken stock, and soy sauce (3 minutes).",
-      "Stir to combine well."
+      "Stir to combine well. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Filipino-style_Spaghetti",
     "sourceName": "Wikibooks Cookbook",

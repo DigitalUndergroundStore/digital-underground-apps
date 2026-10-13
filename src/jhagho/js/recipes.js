@@ -424,7 +424,7 @@ var PW_STARTERS = [
       "Chop the onion and peppers. Brown the turkey with the onion in a skillet, breaking it up.",
       "Add the peppers, corn, taco seasoning, and salsa. Cook 6 minutes.",
       "Taste and add a pinch of salt if you want it.",
-      "Serve over the rice with a handful of lettuce."
+      "Serve over the rice with a handful of lettuce. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -484,7 +484,7 @@ var PW_STARTERS = [
       "Cut the mozzarella and tomatoes into bite-size pieces. Tear the basil.",
       "Toss the chicken, mozzarella, tomatoes, and basil with the oil and salt.",
       "Pile the greens into bowls.",
-      "Top with the chicken mixture and drizzle with balsamic glaze."
+      "Top with the chicken mixture and drizzle with balsamic glaze. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -1186,7 +1186,7 @@ var PW_STARTERS = [
       "Add the garlic, chili powder, and cumin. Stir 30 seconds.",
       "Add the beans, tomatoes, broth, and salt.",
       "Simmer 15 minutes, uncovered, until it thickens.",
-      "Taste and add salt if you want it. Leftovers keep for 3 days."
+      "Taste and add salt if you want it. Leftovers keep for 3 days. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -1791,7 +1791,7 @@ var PW_STARTERS = [
       "Chop the lettuce, tomato, and cucumber.",
       "Stir the tahini with the lemon juice and 2 tablespoons of water.",
       "Warm the pitas and split them open.",
-      "Fill with chicken and vegetables. Drizzle with the tahini sauce."
+      "Fill with chicken and vegetables. Drizzle with the tahini sauce. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {
@@ -1983,7 +1983,7 @@ var PW_STARTERS = [
       "Grate or mince the garlic. Chop the cucumber and parsley.",
       "Stir the yogurt, garlic, lemon juice, parsley, and the rest of the salt.",
       "Toss the sliced chicken with half the sauce.",
-      "Serve over greens with the cucumber and the rest of the sauce."
+      "Serve over greens with the cucumber and the rest of the sauce. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ]
   },
   {

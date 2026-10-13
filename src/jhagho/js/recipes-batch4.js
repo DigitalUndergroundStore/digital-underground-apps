@@ -5575,102 +5575,50 @@
   },
   {
     "id": "r527",
-    "name": "Indian Butter Chicken I",
+    "name": "Fruit Ice Pops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "collection-indian"
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 400,
+        "qty": null,
         "unit": "",
-        "item": "–500 g of skinless, boneless chicken thighs or breasts (with the bone, this will probably be 800 g)"
-      },
-      {
-        "qty": 50,
-        "unit": "g",
-        "item": "tandoori masala powder"
+        "item": "Mango, peeled and diced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup of unsweetened yoghurt"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "small lemon or lime, juiced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "butter"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "Lrge onion, sliced finely"
+        "item": "Peach, peeled and diced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon of cinnamon (optional)"
+        "item": "Strawberries"
       },
       {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "–3 cloves of crushed garlic"
+        "item": "Watermelon, diced"
       },
       {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "grated ginger"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ground turmeric"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "ground coriander"
-      },
-      {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "–3 teaspoons of chile powder"
-      },
-      {
-        "qty": 100,
-        "unit": "",
-        "item": "–200 g tomato paste"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "full cream"
+        "item": "Pear, juiced"
       }
     ],
     "steps": [
-      "Trim and cut the chicken into small cubes (3 minutes).",
-      "If you prefer chicken on the bone, cut long thin slices laterally into the chicken (3 minutes).",
-      "In a big bowl combine the tandoori powder, yogurt, lemon juice, and chicken (3 minutes).",
-      "Massage this well with your hands so that all the chicken is evenly covered in the Tandoori powder (3 minutes).",
-      "Cover and put aside for at least ½ an hour (3 minutes).",
-      "Heat a large saucepan or frying pan until evenly hot (3 minutes).",
-      "In the pan melt 2 tablespoons of butter until it is frothy (3 minutes).",
-      "Add the onions and the cinnamon to the pan and fry lightly (3 minutes).",
-      "When the onions are soft and starting to brown, stir in the crushed garlic and ginger (3 minutes).",
-      "Then add the turmeric, chili, and coriander, and sauté over a medium heat (3 minutes).",
-      "Add the chicken and sauté, stirring constantly until the chicken has turned white (3 minutes).",
-      "This doesn't take long, so make sure you don't overcook the chicken. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
+      "Combine all fruits with pear juice in a blender (3 minutes).",
+      "Purée until smooth (3 minutes).",
+      "Divide the fruit mixture between ice pop molds, and insert the sticks (3 minutes).",
+      "Freeze the molds until completely solid (3 minutes).",
+      "Unmold the ice pops, and serve immediately (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Butter_Chicken_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fruit_Ice_Pops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6022,95 +5970,84 @@
   },
   {
     "id": "r534",
-    "name": "Jambalaya I",
+    "name": "Atomic Fudge Cake",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "",
-        "item": "bay leaf"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon savory"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ teaspoon salt"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "dried basil"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "thyme"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "½ teaspoons cumin"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup chopped celery"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½ tablespoon butter"
-      },
-      {
-        "qty": 14.5,
-        "unit": "oz",
-        "item": "(411 g) canned tomatoes, diced or torn apart"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅔ cup long-grain rice"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "½ cups chicken broth"
-      },
-      {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "cup",
-        "item": "cooked and chopped turkey or chicken"
+        "item": "s (470 ml) white sugar"
       },
       {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "",
-        "item": "small can of sliced mushrooms (optional), drained"
+        "item": "¾ cup (415 ml) flour"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "¾ cups (415 ml) baking cocoa powder"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ teaspoon (7 ml) baking soda"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ teaspoon (7 ml) baking powder"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "salt (5ml)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "(235 ml) milk"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (120 ml) vegetable oil"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "s (10 ml) vanilla extract"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "(235 ml) boiling water"
       }
     ],
     "steps": [
-      "Mix the salt, savory, basil, thyme, and cumin together, then grind them to a powder (3 minutes).",
-      "Prepare the canned tomatoes: tear them up, remove the stem ends, remove the seeds, etc (3 minutes).",
-      "Keep the juice (3 minutes).",
-      "Heat a wide pan with a lid (3 minutes).",
-      "Lightly fry the celery in the butter (3 minutes).",
-      "Soften the celery but do not brown it (3 minutes).",
-      "Add everything to the pan (3 minutes).",
-      "You can add the basil, meat, and mushrooms later if you prefer (3 minutes).",
-      "Bring to a boil, then cover and simmer for about 20 minutes (3 minutes).",
-      "The rice will absorb the liquid (3 minutes).",
-      "Discard the bay leaf."
+      "Mix the dry ingredients well in a large bowl (3 minutes).",
+      "For better texture, sift the dry ingredients together with a sieve or sifter (3 minutes).",
+      "Add the eggs, milk, vanilla, and vegetable oil, and mix well (3 minutes).",
+      "Add the water, and mix it until it has a lot of little bubbles (3 minutes).",
+      "This batter will be very thin (3 minutes).",
+      "Pour into two greased 9-inch round baking pans (3 minutes).",
+      "Bake in a preheated oven at 180°C for 30 minutes (about 20 minutes for a convection oven), or until a cake tester comes out clean (3 minutes).",
+      "Remember not to over-bake the cake, as it may become really dry and lose all its moisture (3 minutes).",
+      "Cool the cakes completely, then unmold them (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Jambalaya_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Atomic_Fudge_Cake",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10941,47 +10878,67 @@
   },
   {
     "id": "r599",
-    "name": "Manhattan Clam Chowder I",
+    "name": "Austrian Napkin Dumpling (Serviettenknödel)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate"
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 15,
+        "qty": 8.8,
         "unit": "oz",
-        "item": "(425 g) canned potatoes, or 2 small boiled potatoes"
+        "item": "(250 g) stale French or Italian bread, cut into crouton-sized cubes"
       },
       {
-        "qty": 28,
-        "unit": "oz",
-        "item": "(794 g) canned tomatoes in juice, or 2 large tomatoes and tomato juice"
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs"
       },
       {
-        "qty": 6.5,
-        "unit": "oz",
-        "item": "(184 g) canned chopped clams, minimum"
+        "qty": 1.0,
+        "unit": "",
+        "item": "¼ cups (300 ml) milk (preferably whole milk)"
       },
       {
-        "qty": 2,
-        "unit": "stalk",
-        "item": "of celery"
+        "qty": 4.0,
+        "unit": "tbsp",
+        "item": "(60 g) butter"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup (60 g) finely-chopped onion (1 medium-sized onion)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "(1 large dash) salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½–1 bunch chopped broad-leaf parsley"
       }
     ],
     "steps": [
-      "Core the tomatoes (3 minutes).",
-      "Remove the pale parts and the seeds; the \"meat\" of the tomato will be what will be used (3 minutes).",
-      "For canned tomatoes, a strainer will be helpful (3 minutes).",
-      "Chop all non-clam ingredients to match the clams in size (3 minutes).",
-      "If desired add spices (3 minutes).",
-      "Suggestions offered include dill seed, basil, thyme, celery seed, tarragon, marjoram, and/or fresh cilantro (3 minutes).",
-      "Alternatively, oregano can be used in lieu of the marjoram (3 minutes).",
-      "Cook the chowder, without boiling, until the celery begins to soften."
+      "Mix the milk, eggs and salt together (3 minutes).",
+      "Combine the mixture with the bread cubes and the parsley in a large mixing bowl, coating as much of the bread as possible with the mixture (3 minutes).",
+      "Let the mixture rest (3 minutes).",
+      "Chop and sauté the onions (3 minutes).",
+      "Cool enough to not cook the eggs, add them to the bread mixture, and mix thoroughly (3 minutes).",
+      "Let the mixture rest for an hour, mixing it through once or twice during the hour (3 minutes).",
+      "The object here is to coat the cubes with the liquid mixture on all sides to allow them to absorb as much liquid as possible; this is especially necessary if your bread is more than a few days old (3 minutes).",
+      "Wet a fresh cotton dishcloth, tea towel, or cloth napkin (3 minutes).",
+      "Some cooks brush the top side of the cloth with melted butter for more flavor, but this is not necessary (3 minutes).",
+      "Completely unfold the dishcloth and place the bread mass in the middle of the cloth (3 minutes).",
+      "Next, form the bread mass into a 3-inch (~6 cm) thick log (3 minutes).",
+      "Roll bread log up tightly in the cloth and tie off the ends of cloth with a short length of string or twine (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Manhattan_Clam_Chowder_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Austrian_Napkin_Dumpling_%28Serviettenkn%C3%B6del%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },

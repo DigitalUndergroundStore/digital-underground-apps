@@ -85,7 +85,7 @@
       "gluten-free",
       "budget",
       "easy",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -308,7 +308,7 @@
       "high-protein",
       "moderate",
       "easy",
-      "other"
+      "korean"
     ],
     "ingredients": [
       {
@@ -378,7 +378,7 @@
       "gluten-free",
       "budget",
       "easy",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -517,7 +517,7 @@
       "high-protein",
       "moderate",
       "medium",
-      "other"
+      "thai"
     ],
     "ingredients": [
       {
@@ -586,7 +586,7 @@
       "vegetarian",
       "moderate",
       "easy",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {
@@ -657,7 +657,7 @@
       "dairy-free",
       "budget",
       "easy",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -793,7 +793,7 @@
       "high-protein",
       "splurge",
       "medium",
-      "other"
+      "japanese"
     ],
     "ingredients": [
       {
@@ -995,7 +995,7 @@
       "dairy-free",
       "budget",
       "medium",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -1051,7 +1051,7 @@
       "high-protein",
       "moderate",
       "medium",
-      "other"
+      "caribbean"
     ],
     "ingredients": [
       {
@@ -1111,7 +1111,7 @@
       "gluten-free",
       "moderate",
       "hard",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -1222,7 +1222,7 @@
       "dairy-free",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -1348,7 +1348,7 @@
       "dairy-free",
       "budget",
       "easy",
-      "other"
+      "caribbean"
     ],
     "ingredients": [
       {
@@ -1409,7 +1409,7 @@
       "dairy-free",
       "budget",
       "easy",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -1816,7 +1816,7 @@
       "dairy-free",
       "budget",
       "easy",
-      "chinese"
+      "other"
     ],
     "ingredients": [
       {
@@ -1876,7 +1876,7 @@
       "gluten-free",
       "moderate",
       "medium",
-      "other"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -2045,7 +2045,7 @@
       "vegetarian",
       "budget",
       "easy",
-      "mediterranean"
+      "african"
     ],
     "ingredients": [
       {
@@ -2106,7 +2106,7 @@
       "high-protein",
       "splurge",
       "medium",
-      "other"
+      "japanese"
     ],
     "ingredients": [
       {
@@ -2227,7 +2227,7 @@
       "lunch",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -2465,7 +2465,7 @@
       "vegetarian",
       "budget",
       "easy",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -2526,7 +2526,7 @@
       "high-protein",
       "moderate",
       "medium",
-      "other"
+      "caribbean"
     ],
     "ingredients": [
       {
@@ -2874,7 +2874,7 @@
       "vegan",
       "budget",
       "hard",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -2993,7 +2993,7 @@
       "high-protein",
       "moderate",
       "medium",
-      "indian"
+      "thai"
     ],
     "ingredients": [
       {
@@ -3155,7 +3155,7 @@
       "dairy-free",
       "budget",
       "medium",
-      "other"
+      "african"
     ],
     "ingredients": [
       {
@@ -3265,7 +3265,7 @@
       "vegetarian",
       "moderate",
       "hard",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3377,7 +3377,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3605,7 +3605,7 @@
       "gluten-free",
       "budget",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -3792,7 +3792,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -4100,7 +4100,7 @@
       "high-protein",
       "moderate",
       "medium",
-      "other"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -4155,7 +4155,7 @@
       "dairy-free",
       "budget",
       "easy",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -4447,7 +4447,7 @@
       "vegan",
       "budget",
       "medium",
-      "mediterranean"
+      "middle_eastern"
     ],
     "ingredients": [
       {
@@ -4508,7 +4508,7 @@
       "high-protein",
       "moderate",
       "medium",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -4750,7 +4750,7 @@
       "medium",
       "moderate",
       "vegetarian",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -4870,7 +4870,7 @@
       "high-protein",
       "moderate",
       "easy",
-      "mediterranean"
+      "greek"
     ],
     "ingredients": [
       {
@@ -5056,7 +5056,7 @@
       "gluten-free",
       "moderate",
       "easy",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -5402,7 +5402,7 @@
       "dairy-free",
       "budget",
       "easy",
-      "chinese"
+      "korean"
     ],
     "ingredients": [
       {
@@ -5460,7 +5460,7 @@
       "main-meal",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {
@@ -5538,7 +5538,7 @@
       "lunch",
       "medium",
       "moderate",
-      "other"
+      "american"
     ],
     "ingredients": [
       {

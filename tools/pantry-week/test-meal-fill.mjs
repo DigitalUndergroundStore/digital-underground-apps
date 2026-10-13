@@ -114,6 +114,31 @@ if (!g || PW.recipeMealType(g) !== "breakfast") errs.push("Greek Yogurt Parfaits
 if (!s || PW.recipeMealType(s) !== "dinner") errs.push("Garlic Shrimp meal");
 if (!a || PW.recipeMealType(a) !== "dinner") errs.push("Ají de Gallina meal");
 
+const CANADIAN_RUNS = 24;
+for (let run = 0; run < CANADIAN_RUNS; run++) {
+  const fillResult = PW.fillSimpleWeek(PW.blankWeek(), recipes, {
+    scope: "dinner",
+    replaceAll: true,
+    cuisineFilters: ["canadian"],
+    returnMeta: true,
+  });
+  const week = fillResult.week || fillResult;
+  for (const day of PW.DAYS) {
+    const cell = week[day].dinner;
+    if (!cell || !cell.recipeId) continue;
+    const recipe = recipes.find((r) => r.id === cell.recipeId);
+    if (!recipe) {
+      errs.push(`canadian fill: missing ${cell.recipeId}`);
+      continue;
+    }
+    if (PW.recipePlanCuisine(recipe) !== "canadian") {
+      errs.push(
+        `canadian fill run ${run}: ${recipe.id} ${recipe.name} tagged ${PW.recipePlanCuisine(recipe)}`
+      );
+    }
+  }
+}
+
 console.log(
   JSON.stringify(
     {

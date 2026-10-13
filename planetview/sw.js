@@ -1,4 +1,4 @@
-const CACHE = "planetview-v15-3d";
+const CACHE = "planetview-v15-2";
 const BASE = new URL("./", self.location).pathname;
 
 function under(suffix) {
@@ -6,22 +6,7 @@ function under(suffix) {
 }
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE).then((cache) =>
-      cache.addAll([
-        under("version.json"),
-        under("manifest.webmanifest"),
-        under("icons/icon-192.png"),
-        under("icons/icon-512.png"),
-      ]),
-    ),
-  );
-});
-
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
-  }
+  event.waitUntil(self.skipWaiting());
 });
 
 self.addEventListener("activate", (event) => {

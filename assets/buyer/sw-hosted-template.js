@@ -10,7 +10,13 @@ function inScope(url) {
     url.pathname.indexOf(new URL("./", self.location).pathname) === 0;
 }
 
+function isNetworkFirstAsset(url) {
+  var path = url.pathname;
+  return /\/app\.bin$/i.test(path) || /\/unlock\.js$/i.test(path) || /\/version\.json$/i.test(path);
+}
+
 self.addEventListener("install", function (event) {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
       return cache.addAll(FILES);
@@ -58,6 +64,25 @@ self.addEventListener("fetch", function (event) {
         return res;
       }).catch(function () {
         return caches.match("index.html");
+      })
+    );
+    return;
+  }
+
+  if (isNetworkFirstAsset(url)) {
+    event.respondWith(
+      fetch(req).then(function (res) {
+        if (res && res.ok && res.type === "basic") {
+          var copy = res.clone();
+          caches.open(CACHE).then(function (c) {
+            c.put(req, copy);
+          }).catch(function () {});
+        }
+        return res;
+      }).catch(function () {
+        return caches.open(CACHE).then(function (cache) {
+          return cache.match(req, { ignoreSearch: true });
+        });
       })
     );
     return;

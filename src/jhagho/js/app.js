@@ -1,4 +1,4 @@
-/* Pantry Week v3.12.1 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.12.2 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {

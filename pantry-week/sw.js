@@ -1,14 +1,14 @@
-/* pantry-week offline shell — version 202610132250-pw3121. Regenerate: python3 tools/generate-hosted-sw.py */
+/* pantry-week offline shell — version 202610132340-pw3122. Regenerate: python3 tools/generate-hosted-sw.py */
 /* Hosted buyer app service worker — generated; do not edit by hand.
    Regenerate with: python3 tools/generate-hosted-sw.py <slug> */
-var VERSION = "202610132250-pw3121";
+var VERSION = "202610132340-pw3122";
 var CACHE = "pantry-week-" + VERSION;
 var PREFIX = "pantry-week-";
 var FILES = [
  "index.html",
  "print/week.html",
- "unlock.js?v=202610132250-pw3121",
- "app.bin?v=202610132250-pw3121",
+ "unlock.js?v=202610132340-pw3122",
+ "app.bin?v=202610132340-pw3122",
  "manifest.webmanifest",
  "icons/icon-180.png",
  "icons/icon-192.png",
@@ -22,7 +22,13 @@ function inScope(url) {
     url.pathname.indexOf(new URL("./", self.location).pathname) === 0;
 }
 
+function isNetworkFirstAsset(url) {
+  var path = url.pathname;
+  return /\/app\.bin$/i.test(path) || /\/unlock\.js$/i.test(path) || /\/version\.json$/i.test(path);
+}
+
 self.addEventListener("install", function (event) {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
       return cache.addAll(FILES);
@@ -70,6 +76,25 @@ self.addEventListener("fetch", function (event) {
         return res;
       }).catch(function () {
         return caches.match("index.html");
+      })
+    );
+    return;
+  }
+
+  if (isNetworkFirstAsset(url)) {
+    event.respondWith(
+      fetch(req).then(function (res) {
+        if (res && res.ok && res.type === "basic") {
+          var copy = res.clone();
+          caches.open(CACHE).then(function (c) {
+            c.put(req, copy);
+          }).catch(function () {});
+        }
+        return res;
+      }).catch(function () {
+        return caches.open(CACHE).then(function (cache) {
+          return cache.match(req, { ignoreSearch: true });
+        });
       })
     );
     return;

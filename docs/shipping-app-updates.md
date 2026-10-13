@@ -56,8 +56,9 @@ In-app data keys live inside `app.bin` source. When changing schema, add a **mig
 ## Service worker strategy
 
 - **Navigation (`index.html`)**: network-first, fall back to cache (fresh shell when online).
-- **Other shell assets**: stale-while-revalidate (fast offline, background refresh).
-- **Install**: new worker waits until the user taps the update toast (`SKIP_WAITING`), so open tabs are not cut off mid-task.
+- **`app.bin`, `unlock.js`, `version.json`**: network-first when online (offline falls back to cache). Prevents stale recipe bundles on installed PWAs.
+- **Other shell assets**: stale-while-revalidate (cache hit, background refresh).
+- **Install**: worker calls `skipWaiting()` after precache; toast still posts `SKIP_WAITING` for manual refresh. `pwa-update.js` compares live `version.json` to the embedded build id.
 
 ## PlanetView & Cork
 

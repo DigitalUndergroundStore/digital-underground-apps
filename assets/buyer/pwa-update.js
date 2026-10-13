@@ -41,6 +41,46 @@
   }
 
   var swUrl = script.getAttribute("data-sw-url") || "./sw.js";
+  var versionUrl = (function () {
+    try {
+      var base = new URL(swUrl, window.location.href);
+      base.search = "";
+      base.hash = "";
+      if (!/\/$/.test(base.pathname)) {
+        base.pathname = base.pathname.replace(/[^/]+$/, "");
+      }
+      return new URL("version.json", base).href;
+    } catch (e) {
+      return "version.json";
+    }
+  })();
+
+  function applyWaitingWorker(reg) {
+    if (reg.waiting) reg.waiting.postMessage({ type: "SKIP_WAITING" });
+  }
+
+  function checkDeployedVersion(reg) {
+    fetch(versionUrl, { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) return null;
+        return r.json();
+      })
+      .then(function (payload) {
+        if (!payload || !payload.version) return;
+        var live = String(payload.version);
+        var local = String(version || window.__DU_APP_VERSION__ || "");
+        if (!local || live === local) return;
+        reg.update().catch(function () {});
+        if (reg.waiting && navigator.serviceWorker.controller) {
+          showToast(reg);
+          applyWaitingWorker(reg);
+        } else if (!navigator.serviceWorker.controller) {
+          window.location.reload();
+        }
+      })
+      .catch(function () {});
+  }
+
   navigator.serviceWorker.register(swUrl).then(function (reg) {
     if (reg.waiting && navigator.serviceWorker.controller) showToast(reg);
     reg.addEventListener("updatefound", function () {
@@ -52,8 +92,13 @@
         }
       });
     });
+    checkDeployedVersion(reg);
     setInterval(function () {
       reg.update().catch(function () {});
+      checkDeployedVersion(reg);
     }, 60 * 60 * 1000);
+    setInterval(function () {
+      checkDeployedVersion(reg);
+    }, 5 * 60 * 1000);
   }).catch(function () {});
 })();

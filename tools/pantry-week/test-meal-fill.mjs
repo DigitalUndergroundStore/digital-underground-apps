@@ -34,21 +34,55 @@ for (const r of recipes) {
   if (!PW.recipeFitsSlot(r, meals[0])) errs.push(`${r.id}: fits own slot`);
 }
 
+const RUNS = 48;
 const runIdSets = [];
-for (let run = 0; run < 8; run++) {
+const idRunHits = new Map();
+for (let run = 0; run < RUNS; run++) {
   const w = PW.fillSimpleWeek(PW.blankWeek(), recipes, { scope: "all", replaceAll: true });
   const ids = [];
+  const seenInWeek = new Set();
   for (const day of PW.DAYS) {
     for (const slot of PW.SLOTS) {
       const cell = w[day][slot];
-      if (cell && cell.recipeId) ids.push(cell.recipeId);
+      if (cell && cell.recipeId) {
+        ids.push(cell.recipeId);
+        if (seenInWeek.has(cell.recipeId)) {
+          errs.push(`fillSimpleWeek: duplicate ${cell.recipeId} in one week (run ${run})`);
+        }
+        seenInWeek.add(cell.recipeId);
+        idRunHits.set(cell.recipeId, (idRunHits.get(cell.recipeId) || 0) + 1);
+      }
     }
   }
   runIdSets.push(ids.sort().join("|"));
 }
 const uniqueRuns = new Set(runIdSets);
-if (uniqueRuns.size < 2) {
-  errs.push(`fillSimpleWeek: identical across ${runIdSets.length} runs (randomness)`);
+const minUniqueWeeks = Math.max(12, Math.floor(RUNS * 0.65));
+if (uniqueRuns.size < minUniqueWeeks) {
+  errs.push(
+    `fillSimpleWeek: only ${uniqueRuns.size}/${RUNS} unique weeks (need >= ${minUniqueWeeks})`
+  );
+}
+const distinctRecipes = idRunHits.size;
+const minDistinct = Math.min(180, Math.floor(recipes.length * 0.12));
+if (distinctRecipes < minDistinct) {
+  errs.push(
+    `fillSimpleWeek: only ${distinctRecipes} distinct recipes across ${RUNS} runs (need >= ${minDistinct})`
+  );
+}
+let dominated = null;
+let dominatedHits = 0;
+for (const [id, hits] of idRunHits) {
+  if (hits > dominatedHits) {
+    dominatedHits = hits;
+    dominated = id;
+  }
+}
+const maxShare = dominatedHits / (RUNS * PW.DAYS.length * PW.SLOTS.length);
+if (maxShare > 0.08) {
+  errs.push(
+    `fillSimpleWeek: recipe ${dominated} in ${dominatedHits} slots (${(maxShare * 100).toFixed(1)}% of fills, max 8%)`
+  );
 }
 
 const week = PW.fillSimpleWeek(PW.blankWeek(), recipes, { scope: "all", replaceAll: true });
@@ -74,5 +108,19 @@ if (!g || PW.recipeMealType(g) !== "breakfast") errs.push("Greek Yogurt Parfaits
 if (!s || PW.recipeMealType(s) !== "dinner") errs.push("Garlic Shrimp meal");
 if (!a || PW.recipeMealType(a) !== "dinner") errs.push("Ají de Gallina meal");
 
-console.log(JSON.stringify({ errs, filledSlots: PW.DAYS.length * PW.SLOTS.length }, null, 2));
+console.log(
+  JSON.stringify(
+    {
+      errs,
+      filledSlots: PW.DAYS.length * PW.SLOTS.length,
+      recipeCount: recipes.length,
+      fillRuns: RUNS,
+      uniqueWeeks: uniqueRuns.size,
+      distinctRecipesAcrossRuns: distinctRecipes,
+      topRecipeSlotShare: maxShare,
+    },
+    null,
+    2
+  )
+);
 process.exit(errs.length ? 1 : 0);

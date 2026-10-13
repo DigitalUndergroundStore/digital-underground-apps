@@ -28,9 +28,12 @@ const PW = ctx.PW;
 const recipes = ctx.PW_STARTERS;
 const errs = [];
 
+const PW_MEAL = ctx.PW_MEAL;
+
 for (const r of recipes) {
   const meals = (r.tags || []).filter((t) => ["breakfast", "lunch", "dinner"].includes(t));
   if (meals.length !== 1) errs.push(`${r.id}: tags ${meals.join(",")}`);
+  if (!PW_MEAL.recipePlanEligible(r)) continue;
   if (!PW.recipeFitsSlot(r, meals[0])) errs.push(`${r.id}: fits own slot`);
 }
 
@@ -97,6 +100,9 @@ for (const day of PW.DAYS) {
     }
     if (!PW.recipeFitsSlot(recipe, slot)) {
       errs.push(`${day} ${slot}: ${recipe.name} (${PW.recipeMealType(recipe)})`);
+    }
+    if (!PW_MEAL.recipePlanEligible(recipe)) {
+      errs.push(`${day} ${slot}: non-meal ${recipe.name}`);
     }
   }
 }

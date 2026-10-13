@@ -10,6 +10,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "moderate",
@@ -77,6 +79,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "moderate",
       "medium"
@@ -148,6 +152,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "budget",
@@ -220,6 +226,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "high-protein",
       "moderate",
@@ -287,6 +295,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "vegetarian",
       "budget",
@@ -354,6 +364,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-comfort",
       "budget",
       "easy"
@@ -420,6 +432,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-one-pan",
       "high-protein",
       "gluten-free",
@@ -488,6 +502,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-one-pan",
       "budget",
       "easy"
@@ -555,12 +571,12 @@
     ],
     "ingredients": [
       {
-        "qty": 12.0,
+        "qty": 12,
         "unit": "oz",
         "item": "s (~350 g) tortilla chips"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "lb",
         "item": "(450 g) cheddar cheese, grated"
       },
@@ -593,6 +609,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-slow-cooker",
       "dairy-free",
       "moderate",
@@ -660,6 +678,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-one-pan",
       "collection-texmex",
       "high-protein",
@@ -722,7 +742,9 @@
     "minutes": 360,
     "servings": 8,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "collection-slow-cooker",
       "high-protein",
       "budget",
@@ -790,6 +812,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-bbq",
       "collection-grill",
       "high-protein",
@@ -853,6 +877,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-bbq",
       "collection-grill",
       "vegetarian",
@@ -906,6 +932,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-bbq",
       "high-protein",
       "moderate",
@@ -968,6 +996,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-bbq",
       "collection-grill",
       "high-protein",
@@ -1026,6 +1056,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-bbq",
       "high-protein",
       "budget",
@@ -1088,6 +1120,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-bbq",
       "collection-grill",
       "vegetarian",
@@ -1146,6 +1180,8 @@
     "servings": 8,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-soup",
       "vegetarian",
       "budget",
@@ -1217,7 +1253,9 @@
     "minutes": 40,
     "servings": 6,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "collection-soup",
       "high-protein",
       "budget",
@@ -1285,6 +1323,8 @@
     "servings": 6,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-soup",
       "vegetarian",
       "vegan",
@@ -1352,7 +1392,9 @@
     "minutes": 90,
     "servings": 8,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "collection-soup",
       "high-protein",
       "moderate",
@@ -1420,12 +1462,14 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "tbsp",
         "item": "s flour"
       },
@@ -1435,27 +1479,27 @@
         "item": "roast or other cut of beef"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "beef bouillon cube"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(~2 cups / 16 oz / 470 ml) beef consommé, bouillon cube equivalent, or additional roast beef"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(~2 cups / 16 oz / 470 ml) French onion soup"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "cup",
         "item": "(2 sticks / 250 g / 8.8 oz) butter"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "can",
         "item": "(16 oz / 470 ml) beer (optional)"
       },
@@ -1465,7 +1509,7 @@
         "item": "Spices (e.g. salt, pepper) (optional)"
       },
       {
-        "qty": 4.0,
+        "qty": 4,
         "unit": "",
         "item": "French/sandwich/hoagie rolls"
       }
@@ -1489,7 +1533,9 @@
     "minutes": 50,
     "servings": 6,
     "tags": [
-      "dinner",
+      "lunch",
+      "main-meal",
+      "main-meal",
       "collection-soup",
       "high-protein",
       "budget",
@@ -1557,6 +1603,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-pub",
       "moderate",
       "medium"
@@ -1618,6 +1666,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-pub",
       "high-protein",
       "moderate",
@@ -1685,6 +1735,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-pub",
       "budget",
       "easy"
@@ -1741,6 +1793,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-pub",
       "high-protein",
       "moderate",
@@ -1803,6 +1857,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-pub",
       "high-protein",
       "budget",
@@ -1865,6 +1921,8 @@
     "servings": 6,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-pub",
       "vegetarian",
       "moderate",
@@ -1932,6 +1990,8 @@
     "servings": 8,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-texmex",
       "high-protein",
       "moderate",
@@ -1999,6 +2059,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-texmex",
       "high-protein",
       "budget",
@@ -2128,6 +2190,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-texmex",
       "high-protein",
       "moderate",
@@ -2190,6 +2254,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-texmex",
       "high-protein",
       "gluten-free",
@@ -2258,6 +2324,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-texmex",
       "vegetarian",
       "budget",
@@ -2325,6 +2393,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "takeout-style",
       "vegetarian",
@@ -2393,6 +2463,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "takeout-style",
       "high-protein",
@@ -2461,6 +2533,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "takeout-style",
       "high-protein",
@@ -2529,6 +2603,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "takeout-style",
       "vegetarian",
@@ -2597,6 +2673,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "takeout-style",
       "high-protein",
@@ -2665,6 +2743,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "collection-asian",
       "takeout-style",
       "high-protein",
@@ -2733,6 +2813,8 @@
     "servings": 8,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "collection-breakfast",
       "high-protein",
       "moderate",
@@ -2795,6 +2877,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "collection-breakfast",
       "vegetarian",
       "budget",
@@ -2857,6 +2941,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-lunch",
       "high-protein",
       "moderate",
@@ -2919,6 +3005,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-lunch",
       "high-protein",
       "budget",
@@ -2986,6 +3074,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-lunch",
       "vegetarian",
       "moderate",
@@ -3048,6 +3138,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "collection-lunch",
       "vegetarian",
       "vegan",

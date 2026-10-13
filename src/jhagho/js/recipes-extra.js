@@ -10,6 +10,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "moderate",
       "easy"
@@ -76,6 +78,8 @@
     "servings": 2,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -148,6 +152,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -216,6 +222,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -289,6 +297,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -357,6 +367,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -429,7 +441,8 @@
     "servings": 2,
     "tags": [
       "lunch",
-      "snack",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "easy"
@@ -491,6 +504,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "high-protein",
       "moderate",
@@ -558,6 +573,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "easy"
@@ -624,6 +641,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -687,6 +706,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -754,6 +775,8 @@
     "servings": 2,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -817,6 +840,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegan",
       "dairy-free",
       "budget",
@@ -884,7 +909,8 @@
     "servings": 2,
     "tags": [
       "dinner",
-      "snack",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -948,6 +974,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -1001,6 +1029,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -1059,6 +1089,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -1111,6 +1143,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegan",
       "dairy-free",
       "budget",
@@ -1163,6 +1197,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -1226,6 +1262,8 @@
     "servings": 2,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -1283,6 +1321,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -1341,6 +1381,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "vegan",
       "dairy-free",
@@ -1399,6 +1441,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "moderate",
       "easy"
@@ -1450,6 +1494,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "high-protein",
       "splurge",
@@ -1507,6 +1553,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -1559,7 +1607,8 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "snack",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -1617,6 +1666,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "splurge",
       "medium"
@@ -1668,6 +1719,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "budget",
@@ -1730,6 +1783,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "budget",
       "easy"
@@ -1786,6 +1841,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -1843,6 +1900,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -1896,6 +1955,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "moderate",
       "medium"
@@ -1947,6 +2008,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "budget",
       "easy"
@@ -2003,6 +2066,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -2061,6 +2126,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -2181,6 +2248,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegan",
       "dairy-free",
       "budget",
@@ -2243,6 +2312,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -2305,6 +2376,8 @@
     "servings": 2,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "budget",
       "easy"
@@ -2361,6 +2434,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -2414,6 +2489,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -2467,6 +2544,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "budget",
       "easy"
@@ -2528,6 +2607,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -2585,6 +2666,8 @@
     "servings": 2,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "moderate",
       "hard"
@@ -2641,6 +2724,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "budget",
       "medium"
@@ -2692,6 +2777,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "vegan",
       "budget",
@@ -2749,6 +2836,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "medium"
@@ -2805,6 +2894,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "high-protein",
       "moderate",
@@ -2857,7 +2948,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "snack",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -2915,6 +3005,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -2968,6 +3060,8 @@
     "servings": 2,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -3021,6 +3115,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "hard"
@@ -3072,7 +3168,8 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "snack",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "medium"
@@ -3124,57 +3221,64 @@
   },
   {
     "id": "r90",
-    "name": "Honey Sesame Brussels Sprouts",
-    "minutes": 22,
+    "name": "Tequila Lime Hot Wings",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
-      "snack",
-      "vegan",
-      "gluten-free",
-      "dairy-free",
-      "budget",
-      "easy"
+      "main-meal",
+      "main-meal",
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "Brussels sprouts"
+        "qty": 36,
+        "unit": "",
+        "item": "chicken wingettes"
       },
       {
-        "qty": 2,
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¾ cup tequila"
+      },
+      {
+        "qty": 6,
         "unit": "tbsp",
-        "item": "honey"
+        "item": "freshly-squeezed lime juice"
       },
       {
-        "qty": 1,
+        "qty": 3,
         "unit": "tbsp",
-        "item": "soy sauce"
+        "item": "hot sauce"
       },
       {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sesame oil"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sesame seeds"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": null,
+        "unit": "",
+        "item": "Oil for deep frying"
       }
     ],
     "steps": [
-      "Heat oven to 425°F. Halve Brussels sprouts.",
-      "Toss with oil and salt on a sheet pan.",
-      "Roast 18 minutes until browned on the edges.",
-      "Whisk honey, soy sauce, and sesame oil; toss with sprouts 2 minutes.",
-      "Finish with sesame seeds and serve."
-    ]
+      "Sprinkle wingettes with salt and black pepper (3 minutes).",
+      "Heat oil to 350°F (3 minutes).",
+      "Fry wings in batches for 12 minutes (3 minutes).",
+      "Drain on a rack (3 minutes).",
+      "Combine remaining ingredients and boil over high heat until reduced by ⅓ (3 minutes).",
+      "Toss wings with sauce mixture and serve warm (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tequila_Lime_Hot_Wings",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r91",
@@ -3183,6 +3287,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "splurge",
       "hard"
@@ -3239,7 +3345,8 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "dessert",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -3287,56 +3394,52 @@
   },
   {
     "id": "r93",
-    "name": "Dark Chocolate Avocado Mousse",
-    "minutes": 15,
+    "name": "Campfire Barbecue Chicken Wings",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
-      "dessert",
-      "vegetarian",
-      "gluten-free",
-      "moderate",
-      "easy"
+      "main-meal",
+      "main-meal",
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 24,
         "unit": "",
-        "item": "avocado"
+        "item": "chicken wingettes"
       },
       {
-        "qty": 4,
-        "unit": "oz",
-        "item": "dark chocolate"
-      },
-      {
-        "qty": 3,
+        "qty": 1,
         "unit": "tbsp",
-        "item": "maple syrup"
+        "item": "cayenne pepper"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "cocoa powder"
-      },
-      {
-        "qty": 0.25,
-        "unit": "tsp",
+        "qty": 1,
+        "unit": "tbsp",
         "item": "salt"
       },
       {
         "qty": 1,
-        "unit": "tsp",
-        "item": "vanilla extract"
+        "unit": "tbsp",
+        "item": "black pepper"
       }
     ],
     "steps": [
-      "Melt chocolate gently in a microwave or double boiler, 2 minutes.",
-      "Scoop avocado into a food processor.",
-      "Blend with chocolate, maple syrup, cocoa, salt, and vanilla 2 minutes until silky.",
-      "Chill 10 minutes in the fridge.",
-      "Spoon into cups and serve cold."
-    ]
+      "Combine cayenne, salt, and pepper, and toss with wings (3 minutes).",
+      "Refrigerate (3 minutes).",
+      "Combine sauce ingredients (3 minutes).",
+      "Heat in a microwave until warm and well mixed (3 minutes).",
+      "Allow to cool (3 minutes).",
+      "Brush wings on all sides with about ¾ of the sauce (or just put ¾ of the sauce in a ziplock with the wings) and refrigerate as long as possible (3 minutes).",
+      "Grill until internal temperature reaches 165 °F (3 minutes).",
+      "Remove to a plate and cover (3 minutes).",
+      "Let rest 5 minutes before serving with the remaining ¼ of the sauce (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Campfire_Barbecue_Chicken_Wings",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r94",
@@ -3345,7 +3448,8 @@
     "servings": 2,
     "tags": [
       "breakfast",
-      "snack",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -3398,17 +3502,19 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "medium",
       "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "cup",
         "item": "s uncooked rice"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "tbsp",
         "item": "unsalted butter"
       },
@@ -3418,12 +3524,12 @@
         "item": "¼ cup fresh cilantro, finely chopped (optional)"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "green bell pepper, finely minced"
       },
       {
-        "qty": 2.0,
+        "qty": 2,
         "unit": "",
         "item": "serrano chiles, finely minced"
       },
@@ -3433,17 +3539,17 @@
         "item": "½ cup shredded cooked chicken or pork"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "",
         "item": "onion, finely minced"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "½ cups chicken broth"
       },
       {
-        "qty": 3.0,
+        "qty": 3,
         "unit": "",
         "item": "bay leaves"
       },
@@ -3453,7 +3559,7 @@
         "item": "¼ cup minced chorizo, casing removed"
       },
       {
-        "qty": 1.0,
+        "qty": 1,
         "unit": "tbsp",
         "item": "minced garlic"
       }
@@ -3476,7 +3582,8 @@
     "servings": 2,
     "tags": [
       "breakfast",
-      "snack",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "easy"
@@ -3528,7 +3635,6 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "dessert",
       "vegetarian",
       "budget",
       "medium"
@@ -3575,106 +3681,136 @@
   },
   {
     "id": "r98",
-    "name": "No-Bake Almond Date Bites",
-    "minutes": 20,
+    "name": "Hickory BBQ Chicken Wings",
+    "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
-      "snack",
-      "dessert",
-      "vegan",
-      "gluten-free",
-      "dairy-free",
-      "budget",
-      "easy"
+      "main-meal",
+      "main-meal",
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "dates"
+        "qty": 24,
+        "unit": "",
+        "item": "chicken wings, tips removed, cut in half at the joint"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "almonds"
+        "qty": 10,
+        "unit": "tbsp",
+        "item": "barbecue sauce"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tsp hickory-flavored liquid smoke"
       },
       {
         "qty": 2,
-        "unit": "tbsp",
-        "item": "cocoa powder"
+        "unit": "",
+        "item": "½ quarts peanut or canola oil"
       },
       {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "coconut oil"
-      },
-      {
-        "qty": 0.25,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "shredded coconut"
+        "qty": 3,
+        "unit": "",
+        "item": "tbs hickory-flavored seasoning"
       }
     ],
     "steps": [
-      "Soak dates in hot water 5 minutes; drain.",
-      "Pulse almonds in a processor until coarse.",
-      "Add dates, cocoa, coconut oil, and salt; blend 2 minutes until sticky.",
-      "Roll into 12 balls.",
-      "Coat in shredded coconut and chill 10 minutes."
-    ]
+      "Combine sauce and liquid smoke (3 minutes).",
+      "Set aside (3 minutes).",
+      "Season chicken evenly with seasoning (3 minutes).",
+      "Set aside (3 minutes).",
+      "Heat oil to 350°F (3 minutes).",
+      "Add chicken, and working in batches, deep fry for 10–12 minutes or golden brown, crisp, and cooked through to 165°F (3 minutes).",
+      "Remove chicken and drain on a cooling rack (3 minutes).",
+      "Toss with sauce mixture (3 minutes).",
+      "Serve warm with blue cheese dressing (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hickory_BBQ_Chicken_Wings",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r99",
-    "name": "Mango Lassi Smoothie Bowls",
-    "minutes": 15,
-    "servings": 2,
+    "name": "Honey Lime Chicken Wings",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
-      "breakfast",
-      "snack",
-      "vegetarian",
-      "gluten-free",
-      "budget",
-      "easy"
+      "dinner",
+      "main-meal",
+      "main-meal",
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "frozen mango"
+        "qty": 32,
+        "unit": "",
+        "item": "chicken wingettes"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "yogurt"
+        "qty": null,
+        "unit": "",
+        "item": "½ cup freshly-squeezed lime juice"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "milk"
-      },
-      {
-        "qty": 2,
+        "qty": 3,
         "unit": "tbsp",
         "item": "honey"
       },
       {
-        "qty": 0.25,
-        "unit": "tsp",
-        "item": "cardamom"
+        "qty": null,
+        "unit": "",
+        "item": "Cornmeal"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Poultry shake"
+      },
+      {
+        "qty": 3,
+        "unit": "",
+        "item": "eggs, beaten"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup chipotle hot sauce"
+      },
+      {
+        "qty": 5,
+        "unit": "clove",
+        "item": "s garlic, smashed and minced"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "–5 drops red food coloring"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Oil for deep frying"
       }
     ],
     "steps": [
-      "Blend mango, yogurt, milk, honey, and cardamom 60 seconds until smooth.",
-      "Taste and add honey if needed.",
-      "Pour into bowls.",
-      "Top with extra yogurt and a pinch of cardamom.",
-      "Serve chilled immediately."
-    ]
+      "Dip chicken in beaten eggs (3 minutes).",
+      "Season liberally with poultry shake (3 minutes).",
+      "Dredge chicken in cornmeal (3 minutes).",
+      "Let rest 2–3 minutes (3 minutes).",
+      "Deep fry in batches at 350°F (175°C) for 11–12 minutes (3 minutes).",
+      "Drain on a cooling rack (3 minutes).",
+      "Meanwhile, combine remaining ingredients in a large nonreactive bowl (3 minutes).",
+      "Add wings and toss to coat (3 minutes).",
+      "Serve warm (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Honey_Lime_Chicken_Wings",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r100",
@@ -3683,8 +3819,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
-      "dessert",
-      "snack",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -3733,6 +3869,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegan",
       "dairy-free",
       "budget",
@@ -3805,6 +3943,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "moderate",
       "medium"
@@ -3856,7 +3996,8 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "snack",
+      "main-meal",
+      "main-meal",
       "vegan",
       "dairy-free",
       "budget",
@@ -3914,6 +4055,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "budget",
@@ -3971,6 +4114,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "easy"
@@ -4027,6 +4172,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "easy"
@@ -4083,6 +4230,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "moderate",
       "easy"
@@ -4134,6 +4283,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "vegan",
       "budget",
@@ -4191,6 +4342,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -4244,6 +4397,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "splurge",
@@ -4301,6 +4456,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "high-protein",
       "splurge",
@@ -4358,6 +4515,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "moderate",
       "easy"
@@ -4394,17 +4553,28 @@
         "item": "salt"
       },
       {
-        "qty": 2,
+        "qty": 0.5,
         "unit": "cup",
-        "item": "cooked rice"
+        "item": "barbecue sauce"
+      },
+      {
+        "qty": 4,
+        "unit": "",
+        "item": "naan or flatbread rounds"
+      },
+      {
+        "qty": 1.5,
+        "unit": "cup",
+        "item": "shredded mozzarella"
       }
     ],
     "steps": [
-      "Heat oven to 450°F. Stretch dough on a oiled sheet pan.",
-      "Top with cheese, vegetables, and spices as listed.",
-      "Bake 10 minutes until the crust is golden and cheese bubbles.",
-      "Rest 2 minutes, then slice.",
-      "Serve hot."
+      "Heat oven to 425°F. Toss chicken thighs with olive oil, smoked paprika, and salt.",
+      "Roast chicken 18–20 minutes until cooked through; rest 5 minutes and slice or shred.",
+      "Warm barbecue sauce in a small pan with minced garlic for 2 minutes.",
+      "Sauté sliced onion in a skillet over medium heat until softened, about 6 minutes.",
+      "Place flatbreads on a baking sheet, top with mozzarella, chicken, onions, and barbecue sauce.",
+      "Bake 8–10 minutes until cheese melts and edges crisp; slice and serve hot."
     ]
   },
   {
@@ -4414,7 +4584,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "snack",
       "vegetarian",
       "budget",
       "easy"
@@ -4471,6 +4640,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "high-protein",
       "gluten-free",
       "moderate",
@@ -4528,6 +4699,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -4591,6 +4764,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "gluten-free",
       "high-protein",
       "moderate",
@@ -4643,6 +4818,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegan",
       "gluten-free",
       "dairy-free",
@@ -4706,6 +4883,8 @@
     "servings": 4,
     "tags": [
       "breakfast",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -4763,6 +4942,8 @@
     "servings": 4,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "vegan",
       "dairy-free",
       "budget",
@@ -4815,61 +4996,58 @@
   },
   {
     "id": "r120",
-    "name": "Garlic Butter Steak Bites",
-    "minutes": 20,
-    "servings": 2,
+    "name": "Smoky Chipotle Glazed Hot Wings",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
-      "dairy-free",
-      "gluten-free",
-      "high-protein",
-      "splurge",
-      "easy"
+      "main-meal",
+      "main-meal",
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "sirloin steak"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "olive oil"
-      },
-      {
-        "qty": 1,
+        "qty": 24,
         "unit": "",
-        "item": "onion"
+        "item": "chicken wingettes"
       },
       {
         "qty": 2,
+        "unit": "tsp",
+        "item": "soy sauce"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "Smoky Chipotle Hot Sauce"
+      },
+      {
+        "qty": 6,
+        "unit": "tbsp",
+        "item": "butter, melted"
+      },
+      {
+        "qty": 3,
         "unit": "clove",
-        "item": "garlic"
+        "item": "s garlic, minced"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "smoked paprika"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "cooked rice"
+        "qty": null,
+        "unit": "",
+        "item": "Oil for deep frying"
       }
     ],
     "steps": [
-      "Pat steak dry; season with salt and pepper.",
-      "Heat oil in a cast-iron skillet over high heat.",
-      "Sear steak 6 minutes per side for medium, less for rare.",
-      "Rest 5 minutes before slicing against the grain.",
-      "Spoon chimichurri or pan juices over the top and serve. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
-    ]
+      "Heat oil to 350°F (3 minutes).",
+      "Fry wings in batches for 12 minutes each batch (3 minutes).",
+      "Drain on a rack (3 minutes).",
+      "Combine remaining ingredients, add wings, and toss to coat (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smoky_Chipotle_Glazed_Hot_Wings",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r121",
@@ -4878,6 +5056,8 @@
     "servings": 2,
     "tags": [
       "lunch",
+      "main-meal",
+      "main-meal",
       "dairy-free",
       "gluten-free",
       "high-protein",
@@ -4936,7 +5116,8 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "snack",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "moderate",
       "easy"
@@ -4988,8 +5169,8 @@
     "servings": 4,
     "tags": [
       "dinner",
-      "snack",
-      "dessert",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "gluten-free",
       "moderate",
@@ -5042,6 +5223,8 @@
     "servings": 4,
     "tags": [
       "dinner",
+      "main-meal",
+      "main-meal",
       "vegetarian",
       "dairy-free",
       "budget",
@@ -5094,56 +5277,82 @@
   },
   {
     "id": "r125",
-    "name": "Cinnamon Pear Compote",
-    "minutes": 20,
+    "name": "Spicy Fried Wings",
+    "minutes": 45,
     "servings": 4,
     "tags": [
-      "breakfast",
-      "dessert",
-      "vegetarian",
-      "gluten-free",
-      "budget",
-      "easy"
+      "dinner",
+      "main-meal",
+      "main-meal",
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 4,
+        "qty": 12,
         "unit": "",
-        "item": "pear"
+        "item": "whole chicken wings, tips removed and cut in half"
+      },
+      {
+        "qty": 1,
+        "unit": "",
+        "item": "½ tbsp cayenne pepper"
       },
       {
         "qty": 2,
         "unit": "tbsp",
-        "item": "honey"
+        "item": "lemon pepper"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cinnamon"
+        "qty": null,
+        "unit": "",
+        "item": "½ tbsp black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ tbsp salt"
       },
       {
         "qty": 1,
         "unit": "tbsp",
-        "item": "butter"
+        "item": "smoked paprika"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "water"
+        "qty": 1,
+        "unit": "",
+        "item": "egg, beaten"
       },
       {
-        "qty": 0.25,
-        "unit": "tsp",
-        "item": "salt"
+        "qty": 2,
+        "unit": "tbsp",
+        "item": "finely grated lemon zest"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cornmeal, as needed, for dredging"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Vegetable oil for deep frying"
       }
     ],
     "steps": [
-      "Peel and dice pears.",
-      "Melt butter in a saucepan. Add pears, water, honey, cinnamon, and salt.",
-      "Simmer 12 minutes until tender and syrupy.",
-      "Rest 2 minutes off heat.",
-      "Serve over yogurt or oatmeal."
-    ]
+      "Combine all seasonings except lemon zest and then sprinkle over chicken (3 minutes).",
+      "Refrigerate for at least 1 hour (3 minutes).",
+      "Combine egg and lemon zest in a pie plate and place cornmeal in another pie plate (3 minutes).",
+      "Heat oil to 350°F (3 minutes).",
+      "Dip chicken into egg mixture and then dredge in cornmeal (3 minutes).",
+      "Fry in batches for 11–12 minutes (3 minutes).",
+      "Drain on a rack (3 minutes).",
+      "Please don't use paper towels unless you want greasy chicken (3 minutes).",
+      "Sprinkle with red pepper flake for hotter wings, but this is completely optional (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spicy_Fried_Wings",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r126",
@@ -5152,7 +5361,6 @@
     "servings": 4,
     "tags": [
       "lunch",
-      "snack",
       "high-protein",
       "budget",
       "easy"

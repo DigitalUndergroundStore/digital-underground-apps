@@ -1,4 +1,4 @@
-/* Pantry Week v3.11.9 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.12.0 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -10,6 +10,26 @@
   const TAB_ORDER = ["plan", "recipes", "shop", "pantry", "more"];
   const ICON_BACK = '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>';
   const ICON_CLOSE = '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.42 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71 4.29 4.29 10.59 10.6 16.88 4.29z"/></svg>';
+  const ICON_SERVINGS = '<svg class="meal-meta__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a5 5 0 0 0-5 5v1H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-2V8a5 5 0 0 0-5-5Zm-3 6V8a3 3 0 0 1 6 0v1H9Z"/></svg>';
+  const ICON_TIME = '<svg class="meal-meta__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 2a8 8 0 1 1-8 8 8 8 0 0 1 8-8Zm-.75 3v5.25l4.5 2.7.75-1.23-3.75-2.25V7Z"/></svg>';
+  const SLOT_ICONS = {
+    breakfast: '<svg class="slot-label__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 10h16v2H4v-2Zm2 4h12v2H6v-2Zm8-8 2 2H8l2-2h8Z"/></svg>',
+    lunch: '<svg class="slot-label__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 8h16v2H4V8Zm0 4h10v2H4v-2Zm12 0h4v6h-4v-6Z"/></svg>',
+    dinner: '<svg class="slot-label__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 3h12v2H6V3Zm0 4h12v14H6V7Zm2 2v10h8V9H8Z"/></svg>'
+  };
+  const PLAN_CUISINES = [
+    ["canadian", "Canadian"],
+    ["american", "American"],
+    ["italian", "Italian"],
+    ["mexican", "Mexican"],
+    ["chinese", "Chinese"],
+    ["indian", "Indian"],
+    ["british", "British"],
+    ["french", "French"],
+    ["mediterranean", "Mediterranean"],
+    ["other", "Other"]
+  ];
+  let planCuisineFilters = PW.loadPlanCuisineFilters();
   let suppressHash = 0;
   let navDepth = 0;
   let silentHistoryPop = 0;
@@ -46,6 +66,8 @@
     editor: null,
     cook: null,
     fill: null,
+    planCuisineOpen: false,
+    pickerCuisineRelaxed: false,
     importError: "",
     import: null,
     tabAnim: null,
@@ -350,6 +372,53 @@
 
   function timeLabel(recipe) {
     return recipe.minutes != null ? recipe.minutes + " min" : "Time varies";
+  }
+
+  function planCuisineActive() {
+    return planCuisineFilters && planCuisineFilters.length;
+  }
+
+  function recipePassesPlanCuisine(recipe, relaxed) {
+    if (relaxed || !planCuisineActive()) return true;
+    return PW.recipeMatchesPlanCuisines(recipe, planCuisineFilters);
+  }
+
+  function planCuisineCountMap() {
+    const counts = {};
+    PLAN_CUISINES.forEach(([id]) => { counts[id] = 0; });
+    state.recipes.forEach((recipe) => {
+      if (!PW.recipePlanEligible(recipe)) return;
+      const id = PW.recipePlanCuisine(recipe);
+      counts[id] = (counts[id] || 0) + 1;
+    });
+    return counts;
+  }
+
+  function planCuisinePanelHtml() {
+    const counts = planCuisineCountMap();
+    const allOn = !planCuisineActive();
+    const chips = PLAN_CUISINES.map(([id, label]) => {
+      const on = planCuisineFilters.indexOf(id) !== -1;
+      return `<button type="button" class="plan-cuisine-chip${on ? " is-on" : ""}" data-action="plan-cuisine-toggle" data-cuisine="${esc(id)}" aria-pressed="${on ? "true" : "false"}">${esc(label)} <span class="plan-cuisine-chip__count">${counts[id] || 0}</span></button>`;
+    }).join("");
+    const summary = planCuisineActive()
+      ? `${planCuisineFilters.length} cuisine${planCuisineFilters.length === 1 ? "" : "s"} selected`
+      : "All cuisines";
+    return `<div class="plan-cuisine${ui.planCuisineOpen ? " plan-cuisine--open" : ""}">
+      <p class="plan-cuisine__summary">${esc(summary)} · Fill and swap use these filters</p>
+      <div class="plan-cuisine__chips" role="group" aria-label="Cuisine filters">
+        <button type="button" class="plan-cuisine-chip plan-cuisine-chip--all${allOn ? " is-on" : ""}" data-action="plan-cuisine-all" aria-pressed="${allOn ? "true" : "false"}">All</button>
+        ${chips}
+      </div>
+    </div>`;
+  }
+
+  function mealMetaHtml(value, recipe) {
+    const parts = [`${ICON_SERVINGS}<span>${value.servings} servings</span>`];
+    if (recipe && recipe.minutes != null) {
+      parts.push(`${ICON_TIME}<span>${recipe.minutes} min</span>`);
+    }
+    return `<span class="meal-card__meta meal-card__meta--icons">${parts.join("")}</span>`;
   }
 
   function preview(recipe) {
@@ -803,11 +872,19 @@
       <h2>The week</h2>
       ${tonightHtml()}
       <p class="lead">Week of ${esc(PW.weekOfLabel())}. Tap a meal to pick a recipe. Servings scale the list, and leftovers are not added twice.</p>
-      <div class="toolbar">
-        <button type="button" class="primary" data-action="fill">Fill a simple week</button>
-        <button type="button" data-action="repeat">Repeat week</button>
-        <button type="button" data-action="copy-last">Copy last week</button>
-        <button type="button" data-action="clear-week">Clear week</button>
+      <div class="plan-toolbar">
+        <div class="plan-toolbar__row">
+          <button type="button" class="primary" data-action="fill">Fill the week</button>
+          <button type="button" class="plan-filter-btn${planCuisineActive() ? " plan-filter-btn--active" : ""}" data-action="plan-cuisine-panel" aria-expanded="${ui.planCuisineOpen ? "true" : "false"}">
+            Filter${planCuisineActive() ? ` <span class="plan-filter-btn__badge">${planCuisineFilters.length}</span>` : ""}
+          </button>
+        </div>
+        ${ui.planCuisineOpen ? planCuisinePanelHtml() : ""}
+        <div class="toolbar plan-toolbar__secondary">
+          <button type="button" data-action="repeat">Repeat week</button>
+          <button type="button" data-action="copy-last">Copy last week</button>
+          <button type="button" data-action="clear-week">Clear week</button>
+        </div>
       </div>
       <div class="days">${days}</div>
     </section>`;
@@ -818,9 +895,10 @@
     const recipe = PW.recipeById(state, value.recipeId);
     const name = PW.slotLabel(state, value);
     const kicker = PW.SLOT_LABEL[slot];
+    const slotIcon = SLOT_ICONS[slot] || "";
     if (!name) {
-      return `<div class="slot">
-        <p class="slot-kicker">${kicker}</p>
+      return `<div class="slot slot--empty slot--${esc(slot)}">
+        <p class="slot-label"><span class="slot-label__accent" aria-hidden="true"></span>${slotIcon}<span class="slot-label__text">${kicker}</span></p>
         <button type="button" class="slot-empty" data-action="open-slot" data-day="${day}" data-slot="${slot}">Add ${kicker.toLowerCase()}</button>
       </div>`;
     }
@@ -829,38 +907,39 @@
     const openAttrs = recipe
       ? `data-action="open-plan-recipe" data-day="${esc(day)}" data-slot="${esc(slot)}"`
       : `data-action="open-slot" data-day="${esc(day)}" data-slot="${esc(slot)}"`;
-    const thumbHtml = thumb
-      ? `<span class="meal-card__thumb" style="background-image:url('${thumb.replace(/'/g, "%27")}')" role="img" aria-label=""></span>`
-      : `<span class="meal-card__thumb meal-card__thumb--empty" aria-hidden="true"></span>`;
-    const meta = `${value.servings} servings${recipe && recipe.minutes != null ? " · " + recipe.minutes + " min" : ""}`;
+    const heroStyle = thumb ? ` style="background-image:url('${thumb.replace(/'/g, "%27")}')"` : "";
     const cookRow = recipe
       ? `<button type="button" data-action="cook" data-id="${esc(recipe.id)}">Cook</button>`
       : "";
-    return `<div class="slot slot--meal${value.leftover ? " leftover-on" : ""}">
-      <p class="slot-kicker">${kicker}${value.leftover ? " · Leftovers" : ""}</p>
-      <button type="button" class="meal-card plain" ${openAttrs}>
-        ${thumbHtml}
-        <span class="meal-card__text">
+    const leftoverBadge = value.leftover ? '<span class="slot-label__tag">Leftovers</span>' : "";
+    return `<div class="slot slot--meal slot--${esc(slot)}${value.leftover ? " leftover-on" : ""}">
+      <p class="slot-label"><span class="slot-label__accent" aria-hidden="true"></span>${slotIcon}<span class="slot-label__text">${kicker}</span>${leftoverBadge}</p>
+      <button type="button" class="meal-card meal-card--plan plain" ${openAttrs}>
+        <span class="meal-card__hero${thumb ? "" : " meal-card__hero--empty"}"${heroStyle} role="img" aria-label=""></span>
+        <span class="meal-card__body">
           <span class="meal-card__name">${esc(name)}</span>
-          <span class="meal-card__meta">${esc(meta)}</span>
+          ${mealMetaHtml(value, recipe)}
         </span>
         <span class="meal-card__chev" aria-hidden="true">›</span>
       </button>
-      <div class="slot-row">
-        <button type="button" class="stepper" data-action="servings" data-day="${day}" data-slot="${slot}" data-dir="-1" aria-label="Fewer servings for ${PW.DAY_LABEL[day]} ${kicker}">−</button>
-        <span class="servings">${value.servings} servings</span>
-        <button type="button" class="stepper" data-action="servings" data-day="${day}" data-slot="${slot}" data-dir="1" aria-label="More servings for ${PW.DAY_LABEL[day]} ${kicker}">+</button>
-      </div>
-      <div class="slot-actions slot-actions--compact">
-        <button type="button" class="icon-chip" data-action="leftover" data-day="${day}" data-slot="${slot}" aria-pressed="${leftover}" title="Leftovers" aria-label="Toggle leftovers for ${esc(name)}">♻</button>
-        <details class="slot-menu">
-          <summary class="icon-chip" aria-label="More actions for ${esc(name)}">⋯</summary>
-          <div class="slot-menu__panel">
-            <button type="button" data-action="again" data-day="${day}" data-slot="${slot}">Eat again tomorrow</button>
-            ${cookRow}
-            <button type="button" data-action="clear-slot" data-day="${day}" data-slot="${slot}">Clear meal</button>
-          </div>
-        </details>
+      <div class="slot-foot">
+        <div class="servings-stepper" role="group" aria-label="Servings for ${esc(name)}">
+          <button type="button" class="servings-stepper__btn" data-action="servings" data-day="${day}" data-slot="${slot}" data-dir="-1" aria-label="Fewer servings">−</button>
+          <span class="servings-stepper__val" data-servings-for="${day}-${slot}">${value.servings}</span>
+          <button type="button" class="servings-stepper__btn" data-action="servings" data-day="${day}" data-slot="${slot}" data-dir="1" aria-label="More servings">+</button>
+        </div>
+        <div class="slot-foot__actions">
+          <button type="button" class="slot-foot__btn" data-action="open-slot" data-day="${day}" data-slot="${slot}">Swap</button>
+          <button type="button" class="slot-foot__btn slot-foot__btn--icon" data-action="leftover" data-day="${day}" data-slot="${slot}" aria-pressed="${leftover}" title="Leftovers" aria-label="Toggle leftovers for ${esc(name)}">♻</button>
+          <details class="slot-menu">
+            <summary class="slot-foot__btn slot-foot__btn--icon" aria-label="More actions for ${esc(name)}">⋯</summary>
+            <div class="slot-menu__panel">
+              <button type="button" data-action="again" data-day="${day}" data-slot="${slot}">Eat again tomorrow</button>
+              ${cookRow}
+              <button type="button" data-action="clear-slot" data-day="${day}" data-slot="${slot}">Clear meal</button>
+            </div>
+          </details>
+        </div>
       </div>
     </div>`;
   }
@@ -1532,13 +1611,29 @@
     </section>`;
   }
 
+  function pickerMatches(relaxed) {
+    const picker = ui.picker;
+    if (!picker) return [];
+    const useRelaxed = relaxed || ui.pickerCuisineRelaxed;
+    return state.recipes.filter((recipe) => {
+      if (!PW.recipeFitsSlot(recipe, picker.slot)) return false;
+      if (!PW.recipeMatches(recipe, picker.query, picker.filter)) return false;
+      return recipePassesPlanCuisine(recipe, useRelaxed);
+    });
+  }
+
   function renderPicker() {
     const picker = ui.picker;
     const title = PW.DAY_LABEL[picker.day] + " " + PW.SLOT_LABEL[picker.slot].toLowerCase();
-    const matches = state.recipes.filter((recipe) => {
-      if (!PW.recipeFitsSlot(recipe, picker.slot)) return false;
-      return PW.recipeMatches(recipe, picker.query, picker.filter);
-    });
+    let matches = pickerMatches(false);
+    let cuisineNotice = "";
+    if (!matches.length && planCuisineActive()) {
+      ui.pickerCuisineRelaxed = true;
+      matches = pickerMatches(true);
+      cuisineNotice = `<p class="plan-cuisine-notice" role="status">Not enough matches for your cuisine filters — showing all cuisines for this meal.</p>`;
+    } else {
+      ui.pickerCuisineRelaxed = false;
+    }
     const rows = matches.length
       ? matches.map((recipe) => `<button type="button" class="pick-row" data-action="pick" data-id="${esc(recipe.id)}"><span class="pick-name">${esc(recipe.name)}</span><span class="pick-meta">${esc(timeLabel(recipe))}</span></button>`).join("")
       : `<p class="empty">No recipes match.</p>`;
@@ -1553,6 +1648,7 @@
         <label class="field" for="pickerSearch">Search recipes</label>
         <input id="pickerSearch" type="search" value="${esc(picker.query)}" placeholder="Search" />
         <div class="filters" role="toolbar" aria-label="Filters">${chips(picker.filter, "pfilter")}</div>
+        ${cuisineNotice}
       </div>
       <div class="picker-list" id="pickerList">${rows}</div>
       <form id="customForm" class="picker-custom">
@@ -1574,11 +1670,13 @@
 
   function renderPickerList() {
     if (!$("pickerList") || !ui.picker) return;
-    const slot = ui.picker.slot;
-    const matches = state.recipes.filter((recipe) => {
-      if (!PW.recipeFitsSlot(recipe, slot)) return false;
-      return PW.recipeMatches(recipe, ui.picker.query, ui.picker.filter);
-    });
+    let matches = pickerMatches(false);
+    if (!matches.length && planCuisineActive()) {
+      ui.pickerCuisineRelaxed = true;
+      matches = pickerMatches(true);
+    } else if (matches.length) {
+      ui.pickerCuisineRelaxed = false;
+    }
     $("pickerList").innerHTML = matches.length
       ? matches.map((recipe) => `<button type="button" class="pick-row" data-action="pick" data-id="${esc(recipe.id)}"><span class="pick-name">${esc(recipe.name)}</span><span class="pick-meta">${esc(timeLabel(recipe))}</span></button>`).join("")
       : `<p class="empty">No recipes match.</p>`;
@@ -1818,6 +1916,7 @@
 
   function openPicker(day, slot) {
     ui.picker = { day, slot, query: "", filter: ui.filter === "all" ? slot : ui.filter };
+    ui.pickerCuisineRelaxed = false;
     pushHistory();
     renderPicker();
     const input = $("pickerSearch");
@@ -2147,7 +2246,7 @@
     const scope = scopeBtn ? scopeBtn.getAttribute("data-scope") : (state.fillPrefs && state.fillPrefs.scope) || "dinner";
     const replaceAll = $("fillReplaceAll") && $("fillReplaceAll").checked;
     state.fillPrefs = { scope, replaceAll };
-    const options = { scope, replaceAll, filter: ui.filter, query: ui.query };
+    const options = { scope, replaceAll, filter: ui.filter, query: ui.query, cuisineFilters: planCuisineFilters, returnMeta: true };
     const targets = PW.slotsForFillScope ? PW.slotsForFillScope(scope) : ["dinner"];
     let touchesFilled = false;
     if (!replaceAll) {
@@ -2164,13 +2263,19 @@
     } else if (touchesFilled && !replaceAll) {
       /* only empty slots — no confirm */
     }
-    state.week = PW.fillSimpleWeek(state.week, state.recipes, options);
+    const fillResult = PW.fillSimpleWeek(state.week, state.recipes, options);
+    state.week = fillResult.week || fillResult;
     ui.fill = null;
     $("fill").hidden = true;
     setInert();
     commit();
     popHistorySilently();
-    toast("Week filled with a fresh mix. Tap any meal to swap it.");
+    let fillMsg = "Week filled with a fresh mix. Tap Swap on any meal to change it.";
+    const fallbacks = fillResult.cuisineFallbacks || 0;
+    if (fallbacks) {
+      fillMsg += ` ${fallbacks} slot${fallbacks === 1 ? "" : "s"} pulled from outside your cuisine filters.`;
+    }
+    toast(fillMsg);
   }
 
   function fillWeek() {
@@ -2338,7 +2443,21 @@
       } catch (err) { /* ignore */ }
       toast("Buyer code removed. Reload the app to enter it again.");
     } else if (action === "open-slot") openPicker(day, slot);
-    else if (action === "fill") fillWeek();
+    else if (action === "plan-cuisine-panel") {
+      ui.planCuisineOpen = !ui.planCuisineOpen;
+      render();
+    } else if (action === "plan-cuisine-all") {
+      planCuisineFilters = [];
+      PW.savePlanCuisineFilters(planCuisineFilters);
+      render();
+    } else if (action === "plan-cuisine-toggle") {
+      const cuisine = btn.getAttribute("data-cuisine");
+      const idx = planCuisineFilters.indexOf(cuisine);
+      if (idx >= 0) planCuisineFilters.splice(idx, 1);
+      else planCuisineFilters.push(cuisine);
+      PW.savePlanCuisineFilters(planCuisineFilters);
+      render();
+    } else if (action === "fill") fillWeek();
     else if (action === "fill-scope") {
       const next = btn.getAttribute("data-scope");
       state.fillPrefs = Object.assign({}, state.fillPrefs || {}, { scope: next });
@@ -2354,6 +2473,9 @@
       value.servings = Math.min(24, Math.max(1, (value.servings || 1) + dir));
       state = PW.normalize(state);
       PW.save(state);
+      const stepper = btn.closest(".servings-stepper");
+      const stepVal = stepper && stepper.querySelector(".servings-stepper__val");
+      if (stepVal) stepVal.textContent = String(state.week[day][slot].servings);
       const label = btn.parentElement && btn.parentElement.querySelector(".servings");
       if (label) label.textContent = state.week[day][slot].servings + " servings";
     } else if (action === "leftover") {

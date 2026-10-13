@@ -1,4 +1,4 @@
-/* Pantry Week v3.12.2 — data, shopping list, migration. No network. */
+/* Pantry Week v3.12.3 — data, shopping list, migration. No network. */
 "use strict";
 
 (function () {
@@ -19,6 +19,8 @@
   };
   var KEY = "pantry_week_v2";
   var KEY_V1 = "pantry_week_v1";
+  /* Bump when bundled starter catalog changes (tags, content). Triggers localStorage refresh. */
+  var BUNDLED_CATALOG_VERSION = "plan-cuisine-v2";
 
   var UNIT_MAP = {
     cup: "cup", cups: "cup",
@@ -475,7 +477,8 @@
       hideChecked: !!src.hideChecked,
       tipSeen: !!src.tipSeen,
       fillPrefs: { scope: scope, replaceAll: !!fillPrefs.replaceAll },
-      legacy: src.legacy && typeof src.legacy === "object" ? src.legacy : null
+      legacy: src.legacy && typeof src.legacy === "object" ? src.legacy : null,
+      bundledCatalogVersion: src.bundledCatalogVersion != null ? String(src.bundledCatalogVersion) : ""
     };
   }
 
@@ -500,6 +503,57 @@
   function starterById(id) {
     for (var i = 0; i < STARTERS.length; i++) if (STARTERS[i].id === id) return STARTERS[i];
     return null;
+  }
+
+  function recipeContentSignature(recipe) {
+    if (!recipe) return "";
+    return JSON.stringify({
+      name: recipe.name,
+      minutes: recipe.minutes,
+      servings: recipe.servings,
+      ingredients: recipe.ingredients || [],
+      steps: recipe.steps || [],
+      photoKey: recipe.photoKey || null,
+      photoUrl: recipe.photoUrl || null
+    });
+  }
+
+  function syncBundledRecipes(state) {
+    if (!STARTERS.length || !state) return state;
+    var catalogVersion = String(state.bundledCatalogVersion || "");
+    var needsCatalogRefresh = catalogVersion !== BUNDLED_CATALOG_VERSION;
+    var recipes = state.recipes || [];
+    var next = [];
+    recipes.forEach(function (saved) {
+      var starter = starterById(saved.id);
+      if (!starter) {
+        next.push(saved);
+        return;
+      }
+      if (!needsCatalogRefresh) {
+        next.push(saved);
+        return;
+      }
+      var bundledNorm = normalizeRecipe(clone(starter));
+      if (recipeContentSignature(saved) !== recipeContentSignature(bundledNorm)) {
+        next.push(saved);
+        return;
+      }
+      next.push(bundledNorm);
+    });
+    var ids = {};
+    next.forEach(function (r) { ids[r.id] = 1; });
+    var added = false;
+    STARTERS.forEach(function (starter) {
+      if (ids[starter.id]) return;
+      next.push(normalizeRecipe(clone(starter)));
+      ids[starter.id] = 1;
+      added = true;
+    });
+    if (!needsCatalogRefresh && !added) return state;
+    state.recipes = next;
+    state.bundledCatalogVersion = BUNDLED_CATALOG_VERSION;
+    return normalize(state);
   }
 
   function migrationItemMatch(oldItem, newItem) {
@@ -627,7 +681,8 @@
       pantry: [],
       hideChecked: false,
       tipSeen: false,
-      legacy: null
+      legacy: null,
+      bundledCatalogVersion: BUNDLED_CATALOG_VERSION
     });
   }
 
@@ -673,27 +728,21 @@
       }
     }
     if (!state) state = freshState();
-    state = ensureStarterRecipes(state);
+    var beforeCatalog = String(state.bundledCatalogVersion || "");
+    state = syncBundledRecipes(state);
+    var catalogRefreshed = beforeCatalog !== BUNDLED_CATALOG_VERSION &&
+      String(state.bundledCatalogVersion || "") === BUNDLED_CATALOG_VERSION;
+    if (catalogRefreshed && store) {
+      try { store.setItem(KEY, JSON.stringify(state)); } catch (e4) { /* ignore */ }
+    }
     PW.lastWarning = warning;
     PW.lastMigrated = migratedFlag;
+    PW.lastCatalogRefresh = catalogRefreshed;
     return state;
   }
 
   function ensureStarterRecipes(state) {
-    if (!STARTERS.length) return state;
-    var recipes = state.recipes || [];
-    var ids = {};
-    recipes.forEach(function (r) { ids[r.id] = 1; });
-    var added = false;
-    STARTERS.forEach(function (starter) {
-      if (ids[starter.id]) return;
-      recipes.push(normalizeRecipe(clone(starter)));
-      ids[starter.id] = 1;
-      added = true;
-    });
-    if (!added) return state;
-    state.recipes = recipes;
-    return normalize(state);
+    return syncBundledRecipes(state);
   }
 
   function save(state) {
@@ -1524,7 +1573,8 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.12.2",
+    VERSION: "3.12.3",
+    BUNDLED_CATALOG_VERSION: BUNDLED_CATALOG_VERSION,
     KEY: KEY,
     KEY_V1: KEY_V1,
     DAYS: DAYS,
@@ -1596,6 +1646,8 @@
     metaTags: metaTags,
     tagLabel: tagLabel,
     ensureStarterRecipes: ensureStarterRecipes,
+    syncBundledRecipes: syncBundledRecipes,
+    recipeContentSignature: recipeContentSignature,
     storage: storage
   };
 

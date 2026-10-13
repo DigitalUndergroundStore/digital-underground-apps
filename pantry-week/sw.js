@@ -1,14 +1,14 @@
-/* pantry-week offline shell — version 202610132340-pw3122. Regenerate: python3 tools/generate-hosted-sw.py */
+/* pantry-week offline shell — version 202610140100-pw3123. Regenerate: python3 tools/generate-hosted-sw.py */
 /* Hosted buyer app service worker — generated; do not edit by hand.
    Regenerate with: python3 tools/generate-hosted-sw.py <slug> */
-var VERSION = "202610132340-pw3122";
+var VERSION = "202610140100-pw3123";
 var CACHE = "pantry-week-" + VERSION;
 var PREFIX = "pantry-week-";
 var FILES = [
  "index.html",
  "print/week.html",
- "unlock.js?v=202610132340-pw3122",
- "app.bin?v=202610132340-pw3122",
+ "unlock.js?v=202610140100-pw3123",
+ "app.bin?v=202610140100-pw3123",
  "manifest.webmanifest",
  "icons/icon-180.png",
  "icons/icon-192.png",

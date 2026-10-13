@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "ca_us_titles_strict_2.json"
 
 NA = re.compile(
-    r"(american|canadian|usa|u\.s\.|new england|southern|cajun|creole|texas|philly|buffalo|"
+    r"(american|canadian|\busa\b|u\.s\.|new england|southern|cajun|creole|texas|philly|buffalo|"
     r"kansas|bbq|barbecue|maple|poutine|tourti|nanaimo|clam chowder|boston|manhattan|montreal|"
     r"beaver|peameal|jambalaya|gumbo|grits|cornbread|biscuit|meatloaf|pot roast|macaroni|"
     r"thanksgiving|pumpkin pie|pecan pie|sloppy joe|chili|fried chicken|pot pie|shepherd|"

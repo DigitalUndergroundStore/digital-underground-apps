@@ -1418,65 +1418,64 @@
   },
   {
     "id": "r149",
-    "name": "Nanaimo Bars",
+    "name": "Gravy (Vegetarian)",
     "minutes": 45,
-    "servings": 16,
+    "servings": 2,
     "tags": [
       "dinner",
-      "canadian",
-      "vegetarian",
-      "moderate",
-      "medium"
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 0.5,
+        "qty": 4.0,
+        "unit": "tbsp",
+        "item": "s canola oil"
+      },
+      {
+        "qty": 4.0,
+        "unit": "tbsp",
+        "item": "s all-purpose flour"
+      },
+      {
+        "qty": 2.0,
         "unit": "cup",
+        "item": "s milk"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s imitation bacon bits (Bacos are soy based)"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
         "item": "butter"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "sugar"
+        "qty": null,
+        "unit": "",
+        "item": "Salt or seasoning salt to taste"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "graham cracker crumbs"
-      },
-      {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "walnut"
-      },
-      {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "coconut"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "powdered sugar"
-      },
-      {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "custard powder"
-      },
-      {
-        "qty": 4,
-        "unit": "oz",
-        "item": "dark chocolate"
+        "qty": null,
+        "unit": "",
+        "item": "Pepper to taste"
       }
     ],
     "steps": [
-      "Melt 1/4 cup butter; mix with sugar, crumbs, walnuts, and coconut (4 minutes). Press into a lined 8-inch pan.",
-      "Chill base 15 minutes in the freezer.",
-      "Beat remaining butter with custard powder and powdered sugar 4 minutes; spread on base.",
-      "Chill 15 minutes more.",
-      "Melt chocolate; spread on top and chill 10 minutes until set. Cut into bars."
-    ]
+      "Heat oil in frying pan over medium heat (3 minutes).",
+      "Add flour, stirring constantly, and allow to cook until slightly browned (3 minutes).",
+      "This creates a roux (3 minutes).",
+      "Slowly add milk, whisking continuously to remove any lumps (3 minutes).",
+      "Add imitation bacon bits, and continue to cook until gravy thickens (3 minutes).",
+      "When thickened, remove from heat and stir in butter (3 minutes).",
+      "Season with salt and pepper to taste (3 minutes).",
+      "Serve over biscuits (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gravy_%28Vegetarian%29",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r150",
@@ -1598,65 +1597,99 @@
   },
   {
     "id": "r152",
-    "name": "Maple Apple Crisp",
+    "name": "Crab Meat Canapé",
     "minutes": 45,
-    "servings": 8,
+    "servings": 4,
     "tags": [
       "dinner",
-      "canadian",
-      "vegetarian",
-      "budget",
-      "easy"
+      "medium",
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 6,
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "Béchamel Sauce Louisiannaise"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "apple"
+        "item": "Salt to taste"
       },
       {
-        "qty": 0.33,
-        "unit": "cup",
-        "item": "maple syrup"
+        "qty": null,
+        "unit": "",
+        "item": "White pepper to taste"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cinnamon"
+        "qty": 1.0,
+        "unit": "",
+        "item": "small bunch green onions, chopped"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "rolled oats"
-      },
-      {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "brown sugar"
-      },
-      {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "flour"
-      },
-      {
-        "qty": 6,
+        "qty": 2.0,
         "unit": "tbsp",
         "item": "butter"
       },
       {
-        "qty": 0.25,
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "butter, room temperature"
+      },
+      {
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "(about 0.5 kg) jumbo or regular-size fresh white lump crab meat (from the body only, not the claws)"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "egg yolks"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "fine breadcrumbs"
+      },
+      {
+        "qty": 2.0,
         "unit": "tsp",
-        "item": "salt"
+        "item": "Parmesan cheese"
+      },
+      {
+        "qty": 4.0,
+        "unit": "slice",
+        "item": "s toast"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "flat-leaf parsley, finely chopped"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "lemon, cut into wedges"
       }
     ],
     "steps": [
-      "Heat oven to 375°F. Slice apples and toss with maple syrup and cinnamon (6 minutes).",
-      "Spread apples in a buttered baking dish.",
-      "Mix oats, brown sugar, flour, salt, and melted butter until clumpy (4 minutes).",
-      "Scatter topping over apples.",
-      "Bake 30 minutes until bubbling. Cool 5 minutes before serving."
-    ]
+      "Pick over crabmeat carefully with your fingers to assure the absence of crab shell (3 minutes).",
+      "This is necessary (3 minutes).",
+      "Sauté green onions in butter over medium heat until soft (3 minutes).",
+      "Do not allow onions to brown (3 minutes).",
+      "Add white lumpfish crab meat, then fold in béchamel sauce (3 minutes).",
+      "When mixture begins to simmer, remove from heat and fold in beaten egg yolks (3 minutes).",
+      "Refrigerate mixture for 10 minutes in order to form canapés (3 minutes).",
+      "Or, let stay in refrigerator overnight until ready to use (3 minutes).",
+      "Preheat oven to 350 °F (190 °C) (3 minutes).",
+      "Combine breadcrumbs and Parmesan cheese in a mixing bowl (3 minutes).",
+      "Trim the ends of the toast (3 minutes).",
+      "Place trimmed toast on a baking sheet and spoon refrigerated crabmeat mixture onto toast using an ice-cream scoop (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Crab_Meat_Canap%C3%A9",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r153",
@@ -3809,60 +3842,66 @@
   },
   {
     "id": "r189",
-    "name": "Beer-Battered Onion Rings",
-    "minutes": 32,
-    "servings": 6,
+    "name": "Six Layer Casserole",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
-      "collection-pub",
-      "vegetarian",
-      "budget",
-      "medium"
+      "medium",
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 3,
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s diced potatoes"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "carrots diced"
+      },
+      {
+        "qty": null,
         "unit": "",
-        "item": "sweet onion"
+        "item": "½ cup diced onion"
       },
       {
-        "qty": 1,
+        "qty": null,
+        "unit": "",
+        "item": "½ cup raw rice"
+      },
+      {
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "ground beef"
+      },
+      {
+        "qty": 10.0,
+        "unit": "oz",
+        "item": "canned tomato soup (you may also use homemade tomato sauce)"
+      },
+      {
+        "qty": 2.0,
         "unit": "cup",
-        "item": "flour"
+        "item": "s water"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "beer"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "baking powder"
-      },
-      {
-        "qty": 0.5,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 3,
-        "unit": "cup",
-        "item": "vegetable oil"
-      },
-      {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "ranch dressing"
+        "qty": null,
+        "unit": "",
+        "item": "salt and pepper"
       }
     ],
     "steps": [
-      "Slice onions into rings and separate (4 minutes).",
-      "Whisk flour, beer, baking powder, and salt.",
-      "Heat oil to 350°F (6 minutes).",
-      "Dip rings in batter; fry in batches 3 minutes until golden.",
-      "Drain 2 minutes and serve with ranch."
-    ]
+      "Spread layers of raw vegetables and rice in a 9x9-inch baking dish in the order mentioned above and crumble raw hamburger on the top (3 minutes).",
+      "Mix the soup and water and pour over all (3 minutes).",
+      "Add salt and pepper on top (3 minutes).",
+      "Bake about 1.5–2 hours at 350°F (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Six_Layer_Casserole",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r190",
@@ -4043,60 +4082,77 @@
   },
   {
     "id": "r193",
-    "name": "Loaded Nacho Supreme",
-    "minutes": 28,
-    "servings": 6,
+    "name": "Toasted Baguette Slices with Pecan Butter, Brie and Apples",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
-      "collection-texmex",
-      "high-protein",
-      "budget",
-      "easy"
+      "medium",
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "ground beef"
+        "qty": 24.0,
+        "unit": "",
+        "item": "ea. ¼-inch (0.5 cm) French bread baguette slices"
       },
       {
-        "qty": 12,
+        "qty": 6.0,
+        "unit": "tbsp",
+        "item": "(about 90 ml) melted butter"
+      },
+      {
+        "qty": 4.0,
         "unit": "oz",
-        "item": "tortilla chips"
+        "item": "(140 g) chopped pecans"
       },
       {
-        "qty": 1,
-        "unit": "can",
-        "item": "refried beans"
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "(15 ml) peanut oil"
       },
       {
-        "qty": 1.5,
-        "unit": "cup",
-        "item": "shredded cheddar"
+        "qty": null,
+        "unit": "",
+        "item": "Salt to taste"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "salsa"
+        "qty": 4.0,
+        "unit": "oz",
+        "item": "(140 g) cream cheese, room temperature"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "taco seasoning"
+        "qty": 1.0,
+        "unit": "",
+        "item": "apple, cut into 24 slices"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "pickled jalapeño"
+        "qty": 8.0,
+        "unit": "oz",
+        "item": "(280 g) chilled brie cheese, trimmed and sliced into 24 pieces"
+      },
+      {
+        "qty": 24.0,
+        "unit": "",
+        "item": "pecan halves"
       }
     ],
     "steps": [
-      "Brown beef with taco seasoning 7 minutes.",
-      "Warm beans 4 minutes.",
-      "Spread chips on a sheet pan; layer beans, beef, and cheese.",
-      "Bake at 400°F 8 minutes until cheese melts.",
-      "Top with salsa and jalapeños; serve immediately."
-    ]
+      "Place baguette slices on cookie sheet and brush with melted butter (3 minutes).",
+      "Bake for 8 minutes or until golden brown in a 400°F (250°C) oven (3 minutes).",
+      "Remove and allow to cool (3 minutes).",
+      "Blend pecans and oil in processor or blender to smooth paste (3 minutes).",
+      "Season with salt (3 minutes).",
+      "Spread cream cheese on toasted bread, then top with apple slices and brie slices (3 minutes).",
+      "Spread pecan butter over top of each one (3 minutes).",
+      "Top with pecan half (3 minutes).",
+      "Place back on cookie sheet, and bake until cheese melts slightly (about 1 minute) (3 minutes).",
+      "Serve and enjoy (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Toasted_Baguette_Slices_with_Pecan_Butter%2C_Brie_and_Apples",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r194",

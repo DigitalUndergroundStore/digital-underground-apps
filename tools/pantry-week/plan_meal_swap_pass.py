@@ -11,6 +11,26 @@ import time
 from pathlib import Path
 
 from build_ca_us_strict2 import BAD  # type: ignore
+from build_plan_meal_titles import NOT_MEAL  # type: ignore
+
+PLAN_SWAP_REJECT = re.compile(
+    r"(bulgarian|kebapcheta|jangjorim|kik alicha|erwtensoep|ginger biscuit|"
+    r"split pea stew|mango and yellow split pea|quail egg and chili|stoofvlees|"
+    r"hachee|flemish|eurasian|dutch beef|veggie salad|kanda \(peanut|ajiaco|"
+    r"green eggs and ham)",
+    re.I,
+)
+
+PLAN_FOREIGN = re.compile(
+    r"\b(dutch|flemish|bulgarian|korean|ethiopian|belgian|eurasian|german|french|"
+    r"italian|mexican|indian|chinese|japanese|thai|vietnamese|filipino|peruvian|"
+    r"brazilian|turkish|greek|spanish|portuguese|hungarian|polish|austrian|swiss|"
+    r"norwegian|danish|finnish|russian|ukrainian|moroccan|lebanese|persian|afghan|"
+    r"pakistani|malaysian|indonesian|singaporean|taiwanese|algerian|nigerian|"
+    r"filipino|peruvian|latin american|maghrebi|stroganoff|russian|liberian|gambian|"
+    r"domoda|saka.saka|kanda|peanut stew)\b",
+    re.I,
+)
 from ca_us_swap_pass import (  # type: ignore
     API,
     OBSCURE_OUT,
@@ -88,19 +108,51 @@ def replace_in_library(batch_file: str, rid: str, recipe: dict) -> None:
 ROOT = Path(__file__).resolve().parents[2]
 
 INLINE_SEARCH = {
-    "breakfast": ["pancakes", "waffle", "omelette", "french toast", "breakfast casserole", "scrambled eggs"],
-    "lunch": ["sandwich", "chicken soup", "minestrone", "tuna melt", "grilled cheese", "club sandwich"],
+    "breakfast": [
+        "american pancakes",
+        "waffle breakfast",
+        "omelette american",
+        "french toast",
+        "breakfast casserole",
+        "scrambled eggs",
+        "hash browns",
+        "eggs benedict",
+        "bacon and eggs",
+        "oatmeal breakfast",
+    ],
+    "lunch": [
+        "american sandwich",
+        "chicken soup",
+        "clam chowder",
+        "tuna melt",
+        "grilled cheese",
+        "club sandwich",
+        "blt sandwich",
+        "reuben sandwich",
+        "chicken salad sandwich",
+        "corn chowder",
+    ],
     "dinner": [
-        "meatloaf",
+        "american meatloaf",
         "pot roast",
-        "fried chicken",
+        "southern fried chicken",
         "macaroni and cheese",
         "chicken pot pie",
         "beef stew",
         "pork chops",
         "lasagna",
-        "chili",
-        "tacos",
+        "chili american",
+        "beef tacos",
+        "maple salmon",
+        "thanksgiving turkey",
+        "pulled pork",
+        "bbq ribs",
+        "shepherd pie",
+        "turkey dinner",
+        "meatballs american",
+        "spaghetti meatballs",
+        "canadian tourtiere",
+        "poutine dinner",
     ],
 }
 
@@ -154,9 +206,18 @@ def acceptable_replacement(recipe: dict) -> bool:
     if not plan_eligible(recipe):
         return False
     blob = (recipe.get("name") or "") + " " + (recipe.get("sourceUrl") or "")
-    if POOL_REJECT.search(blob) or BAD.search(blob) or OBSCURE_OUT.search(blob):
+    if (
+        POOL_REJECT.search(blob)
+        or BAD.search(blob)
+        or OBSCURE_OUT.search(blob)
+        or NOT_MEAL.search(blob)
+        or PLAN_SWAP_REJECT.search(blob)
+        or (PLAN_FOREIGN.search(blob) and not re.search(r"\b(american|canadian|usa|u\.s\.)\b", blob, re.I))
+    ):
         return False
-    if not US_CA_HINT.search(blob):
+    from build_ca_us_strict2 import NA as NA_HINT  # noqa: PLC0415
+
+    if not (US_CA_HINT.search(blob) or NA_HINT.search(blob)):
         return False
     steps = recipe.get("steps") or []
     if len(steps) < 4:
@@ -248,9 +309,7 @@ def main() -> None:
     swapped = 0
     for old in targets:
         rid = old["id"]
-        if PROTECT_CLASSICS.search(old.get("name") or ""):
-            log.append({"id": rid, "status": "skipped", "reason": "protected", "kind": bad[rid]})
-            continue
+        # Non-meals leave the library even when the title matches PROTECT_CLASSICS (e.g. desserts).
         old_meal = meal_tags(old.get("tags") or []) or infer_meal(old)
         entry = next_pool_item(old_meal)
         if not entry:

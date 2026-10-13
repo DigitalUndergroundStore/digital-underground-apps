@@ -560,7 +560,7 @@
   },
   {
     "id": "r209",
-    "name": "Nachos",
+    "name": "Smothered Okra",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -571,34 +571,62 @@
     ],
     "ingredients": [
       {
-        "qty": 12,
-        "unit": "oz",
-        "item": "s (~350 g) tortilla chips"
-      },
-      {
-        "qty": 1,
+        "qty": 1.0,
         "unit": "lb",
-        "item": "(450 g) cheddar cheese, grated"
+        "item": "(450 g) okra, washed"
+      },
+      {
+        "qty": 4.0,
+        "unit": "",
+        "item": "–5 medium tomatoes, diced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅓ cup chopped canned peeled green chiles (optional)"
+        "item": "&frac12; medium-large yellow onion, diced"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "–3 stalks celery, sliced or diced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "green bell pepper, diced"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "–3 cloves garlic, sliced or diced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "stick (&frac12; lb / 113 g) butter"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup chopped onion (optional)"
+        "item": "Salt, to taste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Pepper, to taste"
       }
     ],
     "steps": [
-      "Preheat the oven to 400°F (200°C) (3 minutes).",
-      "Lay the tortilla chips on a cookie sheet (3 minutes).",
-      "Toss together the cheese, chilies, and onion, and sprinkle over the tortilla chips (3 minutes).",
-      "Bake for about 2 minutes until the cheese has melted (3 minutes).",
-      "Serve hot (3 minutes)."
+      "Remove okra tips and heads, and slice into &frac14;–&frac12; inch wide pieces (3 minutes).",
+      "Sauté onion, celery, and bell pepper in butter until soft over medium heat, adding garlic to sauté shortly before the onion is soft (3 minutes).",
+      "Add okra and tomatoes (3 minutes).",
+      "Stir a few times to incorporate (3 minutes).",
+      "If the mixture seems a bit dry, add a small amount of water (3 minutes).",
+      "Simmer over medium heat until the okra is no longer sticky and stringy (3 minutes).",
+      "The okra will change to a darker green color (3 minutes).",
+      "Serve over rice or freeze to use in your next gumbo (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nachos",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smothered_Okra",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2123,65 +2151,90 @@
   },
   {
     "id": "r233",
-    "name": "Queso Fundido Nachos",
-    "minutes": 25,
-    "servings": 6,
+    "name": "Bulgur Burgers",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
-      "collection-texmex",
-      "vegetarian",
-      "budget",
-      "easy"
+      "medium",
+      "moderate",
+      "vegetarian"
     ],
     "ingredients": [
       {
-        "qty": 12,
-        "unit": "oz",
-        "item": "tortilla chips"
-      },
-      {
-        "qty": 1,
+        "qty": 3.0,
         "unit": "cup",
-        "item": "Monterey Jack cheese"
+        "item": "s water"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "cheddar cheese"
+        "qty": 2.0,
+        "unit": "clove",
+        "item": "s garlic"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "salsa"
+        "qty": 1.0,
+        "unit": "",
+        "item": "½ cups bulghur"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "pickled jalapeños"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s vegetable oil"
       },
       {
-        "qty": 0.5,
-        "unit": "cup",
-        "item": "sour cream"
+        "qty": null,
+        "unit": "",
+        "item": "½ cup scallions, chopped"
       },
       {
-        "qty": 0.25,
-        "unit": "cup",
-        "item": "cilantro"
+        "qty": null,
+        "unit": "",
+        "item": "½ cup carrots, grated"
       },
       {
-        "qty": 1,
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup fresh parsley, chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup tahini"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s tomato paste"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s soy sauce"
+      },
+      {
+        "qty": 1.0,
         "unit": "tsp",
-        "item": "cumin"
+        "item": "Dijon mustard"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "dash ground black pepper"
       }
     ],
     "steps": [
-      "Spread chips on a sheet pan (2 minutes).",
-      "Sprinkle cheeses and cumin over chips.",
-      "Bake at 400°F 8 minutes until melted.",
-      "Top with salsa, jalapeños, sour cream, and cilantro.",
-      "Serve immediately while crisp."
-    ]
+      "Bring the water to a boil (3 minutes).",
+      "While it is heating, use a heavy pan or skillet to sauté the garlic and bulghur in the oil on medium-high heat for 2 minutes, stirring frequently (3 minutes).",
+      "Add the boiling water to the skillet (3 minutes).",
+      "Return to a boil, cover, and reduce heat to low (3 minutes).",
+      "Simmer for 15 to 20 minutes, until all of the water is absorbed and the bulghur is soft but still chewy (3 minutes).",
+      "When the bulghur is ready, stir in the scallions, carrots, parsley, tahini, tomato paste, soy sauce, mustard, and pepper (3 minutes).",
+      "With moistened hands, form the bulghur mixture into 6 to 8 burgers (3 minutes).",
+      "Cook the patties in a lightly-oiled heavy skillet on medium-low heat for about 10 minutes, flipping the burgers once when the outside is crunchy, or bake on an oiled baking sheet for 20 minutes at 375 °F (190 °C) (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bulgur_Burgers",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r234",

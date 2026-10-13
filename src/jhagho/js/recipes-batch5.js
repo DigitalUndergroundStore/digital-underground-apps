@@ -94,6 +94,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: honey; granulated sugar; cloves, ground; nutmeg; cardamom; cinnamon; ground ginger; Grated zest of 1 orange; Grated zest of 1 lemon; chopped hazelnuts; lemon flavoring; orange flavoring; Gingerbread wafers; packet of baking powder. Follow the times and temperatures below.",
       "Bring the honey and sugar to the boil in a saucepan while stirring (3 minutes).",
       "Remove from the heat and let cool (3 minutes).",
       "Sift the flour into a bowl (3 minutes).",
@@ -176,14 +177,13 @@
       }
     ],
     "steps": [
-      "Preheat oven to 375°F (3 minutes).",
+      "Gather, prep, and measure: stick butter, softened; ⅓ cup white granulated sugar; ½ cup brown sugar; egg; ½ tsp vanilla extract; ½ tsp salt; ½ tsp baking soda; plus 2 tbsp flour; rolled oats (oatmeal); ½ cup chocolate chips. Follow the times and temperatures below.",
+      "Preheat oven to 375°F (3 minutes), adding the egg, adding the egg, adding the egg, adding the egg, adding the egg, adding the egg.",
       "Cream together butter and sugars (3 minutes).",
       "Add egg and vanilla and mix (3 minutes).",
       "Add salt, baking soda, and flour; mix (3 minutes).",
       "Mix in oatmeal (3 minutes).",
-      "Mix in chocolate chips (3 minutes).",
-      "Scoop cookies onto a greased or parchment-lined baking sheet (3 minutes).",
-      "Bake 9–11 minutes at 375°F."
+      "Mix in chocolate chips (3 minutes). Scoop cookies onto a greased or parchment-lined baking sheet (3 minutes). Bake 9–11 minutes at 375°F."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Oatmeal_Chocolate_Chip_Cookies_III",
     "sourceName": "Wikibooks Cookbook",
@@ -260,7 +260,8 @@
       }
     ],
     "steps": [
-      "Using a mixer, cream together the shortening, brown sugar, white sugar, egg, water and vanilla until light and fluffy (about 10 minutes on high) (3 minutes).",
+      "Gather, prep, and measure: ¾ cup (180 g) shortening; (240 g) brown sugar; ½ cup (120 g) white sugar; egg; (60 ml) water; vanilla; (700 g) rolled oats; (240 g) all-purpose flour; ½ teaspoon baking soda; ¼ teaspoon salt; raisins (optional). Follow the times and temperatures below.",
+      "Using a mixer, cream together the shortening, brown sugar, white sugar, egg, water and vanilla until light and fluffy (about 10 minutes on high) (3 minutes), adding the egg, adding the egg, adding the egg, adding the egg, adding the egg, adding the egg.",
       "In a mixing bowl, mix together the oats, flour, baking soda, and salt (3 minutes).",
       "Add dry ingredients into wet, mix well using mixer (3 minutes).",
       "Stir in raisins if using (3 minutes).",
@@ -357,6 +358,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: all-purpose flour; ¾ cup unsweetened cocoa powder; ¼ teaspoon salt; unsalted room temperature butter, cut into cubes; dark bittersweet chocolate, chopped; ¾ cup white chocolate chips; Lrge eggs, at room temperature; ½ cup superfine or granulated sugar; (10 ounces) oatmeal stout beer (room temperature); semi-sweet chocolate chips; (8 ounces) cream cheese, softened; ⅓ cup superfine or granulated sugar; ½ teaspoon vanilla extract; Lrge egg. Follow the times and temperatures below.",
       "Preheat the oven to 375°F (3 minutes).",
       "Line a 9 x 13-inch baking pan with nonstick foil (or grease and flour, or parchment paper…your call) (3 minutes).",
       "In a medium bowl, whisk together flour, cocoa powder, and salt until evenly combined (3 minutes).",
@@ -367,8 +369,7 @@
       "Add melted chocolate mixture, beating until combined (3 minutes).",
       "Beat reserved flour mixture into melted chocolate mixture (3 minutes).",
       "Whisk in stout beer (3 minutes).",
-      "The batter will seem a bit thin (3 minutes).",
-      "Pour into prepared baking pan."
+      "The batter will seem a bit thin (3 minutes). Pour into prepared baking pan."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Oatmeal_Stout_Brownies",
     "sourceName": "Wikibooks Cookbook",
@@ -439,6 +440,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (2 ½ cups) small dried white beans; (8 cups) water; large sweet onion, finely diced; (1 cup) maple syrup; (2 Tbsp) dark brown sugar; (2 Tbsp) butter; (½ tsp) dry mustard; (½ tsp) ground pepper; (1 tsp) salt; side bacon OR 60 ml (¼ cup) bacon runoff. Follow the times and temperatures below.",
       "Wash beans and place in a saucepan with the water (3 minutes).",
       "Cover and bring to a boil, checking regularly (3 minutes).",
       "When water has reached the boiling point, time for 5 minutes and remove from heat (3 minutes).",
@@ -449,8 +451,7 @@
       "Combine the onion, salt, mustard, and maple syrup (3 minutes).",
       "Add 625 ml (2 ½ cups) of the aforementioned bean-water to the mix and blend well (3 minutes).",
       "Finely slice the bacon, place in roast pan/casserole dish, and cover with the beans, pouring the liquid mixture over top (3 minutes).",
-      "Cover and bake for 3 hours at 165°C (325°F), adding 125 ml (½ cup) of bean-water at the 2 ½ hour mark (3 minutes).",
-      "Melt butter and combine with brown sugar (3 minutes)."
+      "Cover and bake for 3 hours at 165°C (325°F), adding 125 ml (½ cup) of bean-water at the 2 ½ hour mark (3 minutes). Melt butter and combine with brown sugar (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Beans",
     "sourceName": "Wikibooks Cookbook",
@@ -512,6 +513,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Large Hard-boiled eggs, halved lengthwise (if not already prepared, add 10-15 mins to prep time.); s of mayonnaise or creamy salad dressing; of granulated sugar; of mustard; of vinegar; Salt to taste; Pepper to taste; Paprika (optional). Follow the times and temperatures below.",
       "Extract yolks from the halved eggs and place the yolks in a bowl, being careful not to break the whites (3 minutes).",
       "Mash yolks with a fork and mix in the remaining ingredients (3 minutes).",
       "Spoon the mixture back into the egg white halves (3 minutes).",
@@ -592,6 +594,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: slab pork spareribs; dark brown sugar; smoked paprika; cayenne pepper; maple syrup; white wine; Worcestershire sauce; soy sauce; cider vinegar; Hickory wood chunks. Follow the times and temperatures below.",
       "Combine seasonings and rub on pork ribs (3 minutes).",
       "Refrigerate for at least 1 hour (3 minutes).",
       "Place hickory chunks into a 350°F (175˚C) smoker or a charcoal grill set for indirect heat at 350°F (3 minutes).",
@@ -859,6 +862,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (½ cup) uncooked Japanese-style short grain rice; Filling of choice, such as any of the following:; Umeboshi (pickled plums), stones removed; Canned tuna, mixed with mayonnaise and seasoned to taste with chopped leeks, soy sauce, or chilies; sour or salty flavours work well.; Cooked salmon; Cooked egg; Katsuobushi, moistened with a small amount of soy sauce; Nori sheets. Follow the times and temperatures below.",
       "Cook the rice according to package or rice cooker directions (3 minutes).",
       "Let cool just enough to handle with your hands (3 minutes).",
       "While the rice is cooking, prepare your fillings (3 minutes).",
@@ -875,7 +879,7 @@
   },
   {
     "id": "r660",
-    "name": "Onion Rings",
+    "name": "Potato Omelet",
     "minutes": 45,
     "servings": 4,
     "tags": [
@@ -886,57 +890,56 @@
     ],
     "ingredients": [
       {
-        "qty": 5,
+        "qty": 5.0,
         "unit": "",
-        "item": "medium white onions, sliced into rings"
+        "item": "eggs"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "milk"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "eggs, beaten"
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "white granulated sugar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt, to taste"
-      },
-      {
-        "qty": 2,
-        "unit": "cup",
-        "item": "powdered pancake mix"
+        "item": "¼ teaspoon salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Parsley sprigs, for garnish"
+        "item": "¼ teaspoon pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup (125 ml) milk"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "–2 tablespoons of butter or margarine (optional)"
       }
     ],
     "steps": [
-      "Separate the sliced onions into rings (3 minutes).",
-      "Combine milk, eggs and salt to taste in mixing bowl (3 minutes).",
-      "Soak onion rings in mixture 30 minutes (3 minutes).",
-      "Place pancake mix in shallow bowl (3 minutes).",
-      "Remove onion rings from milk mixture then dip in pancake mix (3 minutes).",
-      "Deep-fry rings in 375°F (190°C) oil until golden brown (3 minutes).",
-      "Remove from the oil, and place on paper towels (3 minutes).",
-      "To create an onion loaf, continue with the following steps: (3 minutes).",
-      "Pack fried onion rings loosely, without pressing, into 8 x 4-inch loaf pan (3 minutes).",
-      "Bake in a 400°F (200°C) oven for 10-15 minutes (3 minutes).",
-      "Turn onto serving plate and garnish with parsley."
+      "In a bowl beat together eggs, sugar, salt and pepper (3 minutes).",
+      "Mix in milk (3 minutes).",
+      "Heat up two frying pans to a medium temperature (3 minutes).",
+      "Use butter, margarine, or cooking spray to grease each pan (3 minutes).",
+      "Add chopped potatoes to one pan (3 minutes).",
+      "Cook potatoes until light brown, then add onions (3 minutes).",
+      "Add half of egg mixture to the other pan (3 minutes).",
+      "Cook omelet mixture until it starts to set (about 1 minute) (3 minutes).",
+      "Add onions, potatoes, and cheese on top of partially set omelet (3 minutes).",
+      "Fold plain side of omelet over the filling and cook for an additional 30 seconds (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Onion_Rings",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Potato_Omelet",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r661",
-    "name": "Maple Barbecue Sauce",
-    "minutes": 45,
+    "name": "Easy Scrambled Eggs",
+    "minutes": 15,
     "servings": 4,
     "tags": [
       "dinner",
@@ -946,49 +949,39 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "quarts ketchup"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "½ cups maple syrup (preferably a dark grade)"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "apple cider vinegar"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "Hickory BBQ Rub"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "yellow mustard"
+        "item": "Eggs"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup Worcestershire sauce"
+        "item": "Butter, margarine, oil or cooking spray (enough to coat pan)"
       },
       {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "habanero chiles, stemmed"
+        "item": "Salt to taste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Pepper to taste"
       }
     ],
     "steps": [
-      "Combine all ingredients in a large saucepan or pot (3 minutes).",
-      "Bring to a boil over high heat and cook until liquid has reduced by ⅓ (3 minutes).",
-      "Remove chiles and discard (3 minutes).",
-      "Keep refrigerated in an airtight container for up to 3 weeks (3 minutes).",
-      "Taste and adjust seasoning before serving (1 minute)."
+      "Heat frying pan (non-stick or well-seasoned cast iron is preferable) to medium, and add enough butter, oil, or cooking spray to coat bottom (3 minutes).",
+      "Crack desired number of eggs into a bowl (3 minutes).",
+      "Add milk or water to eggs, if desired (3 minutes).",
+      "Season with salt and pepper to taste (other herbs and spices may be used as well) (3 minutes).",
+      "Beat eggs gently with fork or whisk for 15–20 seconds (3 minutes).",
+      "It is not necessary to make a completely uniform mixture (3 minutes).",
+      "Add egg mixture to heated, greased pan (3 minutes).",
+      "With a spatula or spoon (avoid metal tools if using teflon pan), continuously and gently scrape cooked egg from pan (3 minutes).",
+      "The length of time and the frequency with which you scrape will determine the consistency of the eggs and is a matter of personal preference (3 minutes).",
+      "The time will vary from 30 seconds to 3 or more minutes depending on number and type of eggs, size and heat of pan, and personal preference (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Barbecue_Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Easy_Scrambled_Eggs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -1087,6 +1080,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: veal hind shank, about 2.5–4 centimeters (1–1½ inches) thick; medium onion, chopped fine; ribs celery with leaves, chopped fine; medium carrot, chopped fine; garlic, minced; (1 cup) dry white wine or white vermouth; About 480 ml (2 cups) meat broth; tomato paste; anchovy fillets, mashed; ½ teaspoon dried thyme; –3 bay leaves; strips lemon peel; Fresh ground pepper. Follow the times and temperatures below.",
       "Preheat oven to  (3 minutes).",
       "If the butcher has not done so, tie the shanks around the middle with kitchen twine; this will keep them from falling apart during cooking (3 minutes).",
       "Choose a heavy, covered roasting pan or Dutch oven which will just accommodate the veal shanks in one layer (3 minutes).",
@@ -1097,8 +1091,7 @@
       "Lightly flour the veal shanks and slip them into the oil (3 minutes).",
       "Richly brown the shanks on both of the cut sides, then place them in the roasting pan on top of the vegetables (3 minutes).",
       "Place the wine in the skillet and boil until reduced by one-half, deglazing the bottom of the pan (3 minutes).",
-      "Pour this over the veal shanks (3 minutes).",
-      "Heat the beef broth to a boil in the skillet, whisking in the tomato paste and anchovies. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
+      "Pour this over the veal shanks (3 minutes). Heat the beef broth to a boil in the skillet, whisking in the tomato paste and anchovies. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ossobuco_Alla_Milanese",
     "sourceName": "Wikibooks Cookbook",
@@ -1155,6 +1148,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ripe yellow peaches, halved and pitted; Granulated sugar; ½ cup maple syrup; pure vanilla extract; unsalted butter, melted; peach nectar. Follow the times and temperatures below.",
       "Combine all ingredients except peaches and sugar (3 minutes).",
       "Bring to a boil over high heat in a large saucepan, and simmer until reduced by half (3 minutes).",
       "Dip cut side of peaches into hot mixture (3 minutes).",
@@ -1202,6 +1196,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: bananas, peeled and halved lengthwise; ½ cup maple syrup; dark rum; ½ tsp ground cumin. Follow the times and temperatures below.",
       "Spray bananas and cold grill grate with nonstick cooking spray (3 minutes).",
       "Place a large saucepan over high heat and add rum (3 minutes).",
       "Once flames have died, remove from heat and whisk in remaining ingredients (3 minutes).",
@@ -1367,6 +1362,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (½ pound) chicken wings; (½ pound) of any of the following: frozen seafood mix, fish heads, whole crabs, shrimp heads, smelts; medium onion; reen bell pepper; arlic cloves; iters (1 gallon) Water; bay leaves. Follow the times and temperatures below.",
       "Fill a pan with about 1 inch of water (3 minutes).",
       "Bring to a slow boil and add the mussels (3 minutes).",
       "Cover the pan and wait about 2 minutes (3 minutes).",
@@ -1377,8 +1373,7 @@
       "Put the half shells with meat in the fridge until you're ready to put them on the paella (3 minutes).",
       "Cut the onion and bell pepper into quarters and place them in a large pot with the rest of the broth ingredients including the water from cooking the mussels (3 minutes).",
       "Boil it down until you've got about ½ gallon of broth (3 minutes).",
-      "Occasionally press the ingredients against the bottom of the pot with the potato masher to squeeze out their flavors (3 minutes).",
-      "Strain the broth and set aside."
+      "Occasionally press the ingredients against the bottom of the pot with the potato masher to squeeze out their flavors (3 minutes). Strain the broth and set aside."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Paella_Roja",
     "sourceName": "Wikibooks Cookbook",
@@ -1479,6 +1474,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (17.5 ounces) chicken; (17.5 ounces) rabbit or duck; (0.75 ounce) salt; (10 ounces) chopped green bell peppers (optional); garlic (optional); sweet paprika; (17.5 ounces) diced or grated tomatoes; iters (2 quarts) water (preferably hard water); boiled snails (optional); (4.5 ounces) large haricot beans (canned or fresh); (3.5 ounces) small haricot beans (canned or fresh); (4.5 ounces) fresh runner beans or green beans; –10 threads of saffron and/or 1½ teaspoons yellow food coloring (see notes); (14 ounces) calasparra rice, bomba rice, or pearl rice; –8 branches of fresh rosemary. Follow the times and temperatures below.",
       "Clean the snails, poultry and rabbit thoroughly (3 minutes).",
       "Cut the poultry and rabbit into small pieces and salt them generously (3 minutes).",
       "Pour olive oil in a paellera and, when hot, sauté the poultry and rabbit pieces until golden brown (3 minutes).",
@@ -1489,8 +1485,7 @@
       "Sauté until the tomatoes become dark and pulpy and the mixture has reduced a bit (3 minutes).",
       "Add the water and bring it to a rolling boil (3 minutes).",
       "Then add the snails, fresh haricot beans (if canned, continue reading to see when to add these), runner beans, and saffron (and/or food coloring) (3 minutes).",
-      "Allow the mixture to boil for 10 minutes over a high flame (3 minutes).",
-      "Sweep a rosemary branch through the broth for no longer than 30 seconds and then remove it."
+      "Allow the mixture to boil for 10 minutes over a high flame (3 minutes). Sweep a rosemary branch through the broth for no longer than 30 seconds and then remove it."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Paella_Valenciana",
     "sourceName": "Wikibooks Cookbook",
@@ -1576,6 +1571,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: bay leaf; ½ teaspoon savory; ½ teaspoon salt; dried basil; thyme; ½ teaspoons cumin; ⅓ cup chopped celery; ½ tablespoon butter; (411 g) canned tomatoes, diced or torn apart; ⅔ cup long-grain rice; ½ cups chicken broth; cooked and chopped turkey or chicken; small can of sliced mushrooms (optional), drained. Follow the times and temperatures below.",
       "Mix the salt, savory, basil, thyme, and cumin together, then grind them to a powder (3 minutes).",
       "Prepare the canned tomatoes: tear them up, remove the stem ends, remove the seeds, etc (3 minutes).",
       "Keep the juice (3 minutes).",
@@ -1653,6 +1649,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: whole milkfish; medium carrot, sliced; medium bitter melon (ampalaya), sliced; garlic, slightly pressed; Lrge green chiles, halved; peppercorns; (¾ cup) vinegar; ½ cup water. Follow the times and temperatures below.",
       "Clean the milkfish by removing the scales, gallbladder, and gills (3 minutes).",
       "Do not remove the intestines and liver (3 minutes).",
       "Using scissors or a knife, remove the fins and tails (3 minutes).",
@@ -1759,6 +1756,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: meat (e.g. stew beef), cut into ½-inch cubes; ½ teaspoon salt or to taste; Lrge onions, chopped; Lrge garlic cloves, finely minced; medium-size dried red chile pepper, ground; Lrge fresh tomatoes, diced; tomato paste; frozen tilapia or cod fillet (or other firm white fish; optional); -inch square piece of salted cod; palm oil or vegetable oil; mixed chopped greens (e.g. kale, spinach, or mustard leaves); smoked fish (e.g. mackerel); ½ cup agushi seeds; fresh bay leaves (optional); Ground dried shrimp (optional). Follow the times and temperatures below.",
       "Combine the beef, 1 cup water, and salt (3 minutes).",
       "Sprinkle some of the onions, garlic, and red pepper over the beef (3 minutes).",
       "Bring to a boil over medium heat, then cover and cook for about 15 minutes (3 minutes).",
@@ -1769,8 +1767,7 @@
       "If you notice the sauce is boiling you can reduce the heat (3 minutes).",
       "Gently put in the smoked fish into the saucepan, and let it simmer uncovered (3 minutes).",
       "Grind the agushi seed in a blender with an equal amount of water (3 minutes).",
-      "Transfer the mixture to the saucepan along with the bay leaves (3 minutes).",
-      "Try to avoid stirring the contents at this point, and leave the saucepan to simmer for about another 10 minutes."
+      "Transfer the mixture to the saucepan along with the bay leaves (3 minutes). Try to avoid stirring the contents at this point, and leave the saucepan to simmer for about another 10 minutes."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Palaver_Sauce",
     "sourceName": "Wikibooks Cookbook",
@@ -1880,6 +1877,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Lrge slice of salty, brined white cheese (e.g. feta, sirene); olive oil (not extra virgin); Lrge lemon wedge; A small amount of flour (optional); Pita or other bread (optional). Follow the times and temperatures below.",
       "Heat a small frying pan over medium-high heat (3 minutes).",
       "While the pan heats, cut the cheese into slices of the desired size and thickness (3 minutes).",
       "Thicker slices will take longer to melt through and may result in burning, while thinner ones will have less chance to brown (3 minutes).",
@@ -1942,6 +1940,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (1 cup or 8 oz) wheat flour (white, whole grain or 1:1 mix of white and whole grain); ½ tsp baking powder; (1 cup or 8 fl oz) milk (substitute buttermilk or 1:1 mix of milk and buttermilk); egg, separated; white sugar (optional; this will add a sweetness to your pancakes and is recommended if you are not using any sauces, syrups or ingredient such as bananas or blueberries that will add natural sugars to the mix). Follow the times and temperatures below.",
       "In a large bowl, mix dry ingredients together until well-blended (3 minutes).",
       "Add milk and mix well until smooth (3 minutes).",
       "Separate the egg, placing the whites in a medium bowl and the yolks in the batter (3 minutes).",
@@ -2135,6 +2134,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: black gram flour; cracked black pepper; ground cumin seeds; ½ tsp salt; water (or more if needed); Oil for frying. Follow the times and temperatures below.",
       "Mix together the flour, pepper, cumin, and salt (3 minutes).",
       "Add water and knead the dough until it is smooth (3 minutes).",
       "You may have to add some water, depending on the flour (3 minutes).",
@@ -2228,6 +2228,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ea. (2-3 pounds) chicken; medium onions, chopped; –4 tablespoons sweet (not hot) paprika; –7 tablespoons olive oil; sour cream; ¼–½ cup heavy cream; Fresh green parsley; –7 whole black peppercorns; reen bell pepper (optional); &frac12; red bell pepper (optional); carrot (optional), thinly sliced; onion (optional), thinly sliced. Follow the times and temperatures below.",
       "Cut the chicken into eight pieces (3 minutes).",
       "Add the oil to a medium sauté pan (3 minutes).",
       "Sauté the onions for about 3–4 minutes or until they turn yellow (3 minutes).",
@@ -2308,6 +2309,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: medium onions, chopped; minced meat; –450 g canned chopped tomatoes; ⅓ cup tomato paste; ½ cup water; dry white wine; beef stock powder; ½ teaspoon cinnamon powder; egg, beaten lightly. Follow the times and temperatures below.",
       "Heat olive oil in pan (3 minutes).",
       "Add the chopped onions and sauté until translucent (3 minutes).",
       "Add the minced meat, and cook until well browned (3 minutes).",
@@ -2381,6 +2383,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: medium swede (rutabaga, yellow turnip) or similar root vegetable, peeled, cut into chunks, and then thinly sliced; Lrge potatoes, prepared same as the swede; medium onions, halved and thinly sliced; (900 g) beef round (skirt), sliced across the grain into roughly 1x2 cm strips; Pastry for Cornish Pasties; plain flour (optional); milk (optional); Salt to taste; Pepper to taste. Follow the times and temperatures below.",
       "Preheat oven to 400°F 200°C Gas Mark 6 (3 minutes).",
       "Lightly dust the prepared meat in seasoned flour (optional but makes a thicker gravy of the enclosed juices) (3 minutes).",
       "Divide the pastry into 4 equal portions (3 minutes).",
@@ -2391,8 +2394,7 @@
       "Bring the other half of the dough over the top of the mixture (3 minutes).",
       "Pinch and twist to seal the dough around the edges (3 minutes).",
       "Make a couple of small slashes in the top of the pastry to allow steam to escape (3 minutes).",
-      "Brush pasties with the remaining milk (optional) (3 minutes).",
-      "Place the pasties on a lightly-greased baking tray (or a double thickness of aluminium foil directly onto the oven shelf)."
+      "Brush pasties with the remaining milk (optional) (3 minutes). Place the pasties on a lightly-greased baking tray (or a double thickness of aluminium foil directly onto the oven shelf)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pasties",
     "sourceName": "Wikibooks Cookbook",
@@ -2449,6 +2451,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: baking powder; curd cheese (e.g. quark or farmer cheese); egg white; Jam (or nut cream). Follow the times and temperatures below.",
       "Mix the flour with the baking powder, and rub in the butter (3 minutes).",
       "Then, add the curd and the salt, and knead it into dough (3 minutes).",
       "Let the dough rest in the fridge for 1 hour (3 minutes).",
@@ -2609,6 +2612,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: olive oil (2 tbsp for frying and 1 tbsp for making an omelette); garlic, minced; red chillies, cut in dice; shallots, sliced finely; chicken fillets, cut in pieces; (250 g / 8.8 oz) green peas; carrot, diced; scallion, cut in dice; (300 g / 11 oz) cooked rice; tomato sauce; nam pla (fish sauce); ½ tbsp pepper; small jalapeno, minced; eggs for making omelette. Follow the times and temperatures below.",
       "Heat the oil in a non-stick pan (3 minutes).",
       "When the oil is hot, fry the garlic and shallots, stirring until brown and fragrant (3 minutes).",
       "Add the chicken pieces, carrot, green peas, and red chilli (3 minutes).",
@@ -2619,8 +2623,7 @@
       "Beat the eggs, and pour into the pan (3 minutes).",
       "Cook until the egg is browned on the bottom (3 minutes).",
       "Flip the egg over to cook on the other side (3 minutes).",
-      "Place a ball of the fried rice mixture in the center of the omelette (3 minutes).",
-      "Fold up the 4 edges of the omelette to enclose the rice. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
+      "Place a ball of the fried rice mixture in the center of the omelette (3 minutes). Fold up the 4 edges of the omelette to enclose the rice. Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pattaya_Fried_Rice",
     "sourceName": "Wikibooks Cookbook",
@@ -2692,6 +2695,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: egg whites; (9 oz) caster sugar; (1 tsp) vinegar; (1 tsp) vanilla extract; cornstarch (optional); Heavy cream; Powdered sugar to taste; Cut fruit and/or berries. Follow the times and temperatures below.",
       "Whip the egg whites and salt to a very stiff consistency (3 minutes).",
       "Add water and beat again before folding in caster sugar, vanilla and vinegar (3 minutes).",
       "Whip until the mixture holds its shape and stands in sharp peaks (3 minutes).",
@@ -2782,8 +2786,8 @@
   },
   {
     "id": "r685",
-    "name": "Peach Pie",
-    "minutes": 45,
+    "name": "Stir-fried tomato and scrambled eggs",
+    "minutes": 15,
     "servings": 4,
     "tags": [
       "dinner",
@@ -2793,50 +2797,48 @@
     ],
     "ingredients": [
       {
-        "qty": 4,
-        "unit": "cup",
-        "item": "flour"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sugar"
-      },
-      {
-        "qty": 2,
-        "unit": "tsp",
-        "item": "salt"
-      },
-      {
-        "qty": 1,
+        "qty": 2.0,
         "unit": "",
-        "item": "¾ cups shortening"
+        "item": "tomatoes"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup ice water"
+        "item": "Salt to taste"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "vinegar"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "egg"
+        "item": "Neutral oil, as needed"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Sugar"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "–2 scallions, chopped"
       }
     ],
     "steps": [
-      "Mix flour, sugar, and salt together (3 minutes).",
-      "Add shortening and mix until crumbly (3 minutes).",
-      "Beat together ice water, vinegar, and egg and cut into flour mix (3 minutes).",
-      "Divide into 4 balls (3 minutes).",
-      "Wrap and refrigerate for ½ hour before rolling out (3 minutes).",
-      "Line a pie dish with the rolled-out crust, and crimp the edges."
+      "Gather, prep, and measure: tomatoes; eggs; Salt to taste; Neutral oil, as needed; –2 scallions, chopped. Follow the times and temperatures below.",
+      "Make a cross-shaped cut on the top of the tomatoes and blanch in boiling water (3 minutes).",
+      "After a short period of time, put the tomatoes in ice water to shock them and remove the skins (3 minutes).",
+      "Cut the tomatoes into chunks and set aside (3 minutes).",
+      "Whisk together the eggs, season to taste with a pinch of salt, and scramble them in a skillet with a little oil (3 minutes).",
+      "Set aside after cooking process is finished (3 minutes).",
+      "Heat a little oil oil in a separate skillet, add the scallions, and sauté briefly (3 minutes).",
+      "Add the tomatoes to the scallions, and stir-fry until the tomatoes release their juices (3 minutes).",
+      "Add the scrambled eggs to the pan with the scallions and tomatoes, and let everything simmer to reduce the tomato juice (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Peach_Pie",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stir-fried_tomato_and_scrambled_eggs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -2891,6 +2893,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ½ cup (120 ml) peanut butter; (60 ml) honey; ¼ teaspoon salt; brown sugar; vanilla; (300 ml) whole wheat pastry flour (other flours likely work fine). Follow the times and temperatures below.",
       "Preheat oven to 375°F (3 minutes).",
       "Cream all ingredients except flour together (3 minutes).",
       "Add flour and mix sparingly—it should be dry enough to form into balls by hand without sticking (3 minutes).",
@@ -3085,6 +3088,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: shallot; cm fresh ginger; cm fresh turmeric; fresh chile pepper; dlenut; tamarind; ½ tsp salt. Follow the times and temperatures below.",
       "Grind together all the ingredients for the spice paste (3 minutes).",
       "Scale and clean the fish (3 minutes).",
       "Take out the intestines but not the eggs (3 minutes).",
@@ -3095,8 +3099,7 @@
       "Put kemangi leaves, salam leaves and sliced lemon grass for the flavor (3 minutes).",
       "Wrap the fish in banana leaves or aluminum foil (3 minutes).",
       "Steam over medium heat for 30 minutes (3 minutes).",
-      "Use pressure cooker for faster cooking time and better taste (3 minutes).",
-      "Let it cool and grill the wrapped fish over charcoal fire."
+      "Use pressure cooker for faster cooking time and better taste (3 minutes). Let it cool and grill the wrapped fish over charcoal fire."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pepes_Ikan_%28Indonesian_Steamed_Fish%29",
     "sourceName": "Wikibooks Cookbook",
@@ -3174,6 +3177,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (225 grams / 8 oz) dried macaroni pasta; eggs; grated cheese; ½ cups evaporated milk; small onion, finely chopped; carrot, grated; ¼ tsp white pepper; prepared yellow mustard; pat of unsalted butter, melted; Breadcrumbs. Follow the times and temperatures below.",
       "Boil macaroni in salted water until tender; drain (3 minutes).",
       "Beat eggs until fluffy (3 minutes).",
       "Combine macaroni, eggs, cheese, milk, onion, carrot, salt, white pepper, mustard, and butter (3 minutes).",
@@ -3279,18 +3283,13 @@
       }
     ],
     "steps": [
-      "Preheat the oven to 425°F (3 minutes).",
+      "Gather, prep, and measure: yellow or white self-rising corn meal; large egg; ¼–1½ cups buttermilk or whole milk; olive oil or vegetable oil. Follow the times and temperatures below.",
+      "Preheat the oven to 425°F (3 minutes), adding the large egg.",
       "If using cast-iron skillet, place it in the oven to heat (3 minutes).",
       "Do not preheat other types of skillets or baking pans (3 minutes).",
       "If using non-cast-iron skillet or baking pan, coat with a non-stick spray (3 minutes).",
       "Beat egg in the bowl (3 minutes).",
-      "Stir in buttermilk and oil (3 minutes).",
-      "Stir in the cornmeal and mix until just moistened (3 minutes).",
-      "The batter will be somewhat lumpy (3 minutes).",
-      "Take care not to overmix (3 minutes).",
-      "Pour the batter into the skillet and place in the oven (3 minutes).",
-      "Bake until crust is a light golden brown and a toothpick inserted into the center comes out clean (3 minutes).",
-      "For an 8-inch skillet this can be 25–30 minutes; for a 10-inch skillet or an 8x8-inch baking pan about 20–25 minutes (3 minutes)."
+      "Stir in buttermilk and oil (3 minutes). Stir in the cornmeal and mix until just moistened (3 minutes). The batter will be somewhat lumpy (3 minutes). Take care not to overmix (3 minutes). Pour the batter into the skillet and place in the oven (3 minutes). Bake until crust is a light golden brown and a toothpick inserted into the center comes out clean (3 minutes). For an 8-inch skillet this can be 25–30 minutes; for a 10-inch skillet or an 8x8-inch baking pan about 20–25 minutes (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Southern_Cornbread",
     "sourceName": "Wikibooks Cookbook",
@@ -3479,6 +3478,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ½ cup cold water; –2 large eggs; ½ cups all-purpose flour, plus extra for rolling dough; ~1 cup water; ½ tbsp unsalted butter, melted; recipe sauerkraut filling or cheese filling. Follow the times and temperatures below.",
       "Place flour in a large bowl (3 minutes).",
       "In a measuring cup, combine the salt, eggs, and the ½ cup cold water, and beat well with a fork (3 minutes).",
       "Add those ingredients to flour and mix with your hands until blended (3 minutes).",
@@ -3644,6 +3644,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ½ cup toor dal; handfuls of methi leaves (only the leaves without the tender stem); tomatoes; big onion; turmeric powder; –2 green chillis, sliced; whole black peppercorns; small dollop of butter; small piece of ginger (optional); spoonfuls ghee; ½ small spoon of mustard seeds; ½ small spoon of zheera (cumin); arlic cloves, sliced; red chillis; –8 curry leaves. Follow the times and temperatures below.",
       "Mix all above and put them in an Indian cooker (pressure cooker) (3 minutes).",
       "Wait until the dal is cooked (4 whistles) (3 minutes).",
       "Heat the ghee in a pan, and add the mustard seeds, zheera, garlic, red chillis, and curry leaves (3 minutes).",
@@ -3734,6 +3735,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (30 ml) vegetable oil; medium garlic cloves, minced; small (4 ounces / 115 g) yellow onion, finely chopped; plum tomatoes (about 8 ounces / 225 g), cored and chopped; (¼ cup / 60 g) bagoong alamang; ea. (about 8 ounces / 225 g) bitter melon, halved lengthwise, seeded, and sliced ¼ inch thick; small (about 8 ounces / 225 g) sweet potato, peeled, quartered, and cut into ¼-inch slices; (225 g) string beans, stem ends trimmed and beans cut into 2-inch lengths; medium (about 6 ounces / 170 g) eggplant, halved lengthwise, and sliced ½ inch thick; (225 g) okra, caps trimmed, pods cut in half on the bias; Cooked white rice, for serving. Follow the times and temperatures below.",
       "Heat a skillet over medium heat (3 minutes).",
       "Add the oil, then garlic to the pan (3 minutes).",
       "Sauté briefly until aromatic (3 minutes).",
@@ -3920,6 +3922,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: chopped fresh human placenta; chopped broccoli; egg whites; thyme; oil for frying. Follow the times and temperatures below.",
       "Wash the placenta well, in a colander, then shake it to drain (3 minutes).",
       "(it will still leak juices) (3 minutes).",
       "Stir the egg whites with a fork until they are without lumps (3 minutes).",
@@ -4039,6 +4042,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: French bread; Thinly sliced meat (ham, turkey, roast beef, etc.), fried seafood (shrimp, oysters, fish, etc.), etc.; Lettuce, tomatoes, pickles, etc.; Sliced cheese; Mayonnaise, mustard, gravy, etc.. Follow the times and temperatures below.",
       "Slice the bread along one side so that it folds open like a book (3 minutes).",
       "Open the bread and add the cheese, shredded lettuce, and meat (3 minutes).",
       "Add condiments to your liking (3 minutes).",
@@ -4110,6 +4114,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: thick pohe (flattened rice); rai (mustard seeds); ¼ tsp haldi (turmeric powder); asafoetida powder; Indian green chiles, finely chopped; ½ medium-size onion, finely chopped; sprigs of cilantro (coriander); Salt to taste. Follow the times and temperatures below.",
       "Moisten the pohe with cold water by putting in a bowl and holding under a slow running tap (3 minutes).",
       "Mix by hand, then drain excess water and set aside (take care not to soak too long or the pohe would turn pasty) (3 minutes).",
       "Heat the oil in a frying pan until medium hot (3 minutes).",
@@ -4120,8 +4125,7 @@
       "Cover and cook for 2 minutes (3 minutes).",
       "The onions should turn soft but not brown (3 minutes).",
       "The pohe that was kept aside should have absorbed the excess moisture by now (3 minutes).",
-      "Mix the pohe by hand so that the flakes do not stick together and add to the frying pan (3 minutes).",
-      "Add salt to taste and stir the contents of the fry pay so that the yellow color of the turmeric is spread evenly through the pohe."
+      "Mix the pohe by hand so that the flakes do not stick together and add to the frying pan (3 minutes). Add salt to taste and stir the contents of the fry pay so that the yellow color of the turmeric is spread evenly through the pohe."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pohe_%28Spiced_Flattened_Rice%29",
     "sourceName": "Wikibooks Cookbook",
@@ -4198,6 +4202,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: softened unsalted butter; ½ cup warm whole milk; ¼ tsp vanilla extract; eggs; dry yeast; all-purpose flour; Enough oil for deep frying (see notes); Roughly 2½ cups jelly, jam, or custard, for filling (optional); Powdered sugar, for dusting (optional). Follow the times and temperatures below.",
       "Whisk together the sugar, butter, milk, vanilla, salt, and eggs (3 minutes).",
       "Then, whisk in the yeast (3 minutes).",
       "While continuously stirring, add the flour ½ cup at a time until the mixture is a firm dough (3 minutes).",
@@ -4208,8 +4213,7 @@
       "The exact size the circles should be is entirely up to your preference; the final product will have only a slightly larger diameter (3 minutes).",
       "You can roll out the excess dough again to cut more pączki (3 minutes).",
       "Let the dough rounds rise for about 30 minutes or until they've doubled in size (3 minutes).",
-      "Heat oil to about 350°F in a deep pot or pan (3 minutes).",
-      "Carefully spoon or slide a few pączki into the oil at a time to deep fry them until golden-brown."
+      "Heat oil to about 350°F in a deep pot or pan (3 minutes). Carefully spoon or slide a few pączki into the oil at a time to deep fry them until golden-brown."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Polish_Doughnuts_%28Paczki%29",
     "sourceName": "Wikibooks Cookbook",
@@ -4217,56 +4221,82 @@
   },
   {
     "id": "r706",
-    "name": "Popcorn",
+    "name": "Spaghetti Bake",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "vegetarian"
+      "collection-italian"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup unpopped popcorn kernels"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "fine salt (non-iodized for those who prefer it)"
-      },
-      {
-        "qty": 6,
-        "unit": "tbsp",
-        "item": "clarified butter, divided"
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "(450 g) ground turkey or beef"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Finely chopped herbs, such as rosemary and/or thyme (optional)"
+        "item": "½ onion, chopped"
+      },
+      {
+        "qty": 1.0,
+        "unit": "jar",
+        "item": "(26 oz / 730 g) spaghetti sauce"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "Italian seasoning"
+      },
+      {
+        "qty": 1.0,
+        "unit": "package",
+        "item": "(8 oz / 225 g) cream cheese"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s cottage cheese"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Cayenne pepper (optional)"
+        "item": "½ cup light sour cream"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "box (16 oz . 500 g) of spaghetti noodles"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Brewer's yeast (optional)"
+        "item": "⅛ cup bread crumbs"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup Parmesan cheese"
       }
     ],
     "steps": [
-      "Heat a large stainless steel bowl (or cast-iron skillet) over medium heat (3 minutes).",
-      "Once hot, add 1 tsp clarified butter, salt, and popcorn kernels and cover with perforated aluminum foil or spatter screen (3 minutes).",
-      "Cook, shaking the pan continuously with tongs, for 45 seconds to 1 minute, or until popping slows to about 3 seconds between pops (3 minutes).",
-      "Move popped corn to a large serving bowl, leaving any unpopped kernels behind (3 minutes).",
-      "Toss with melted butter, salt, and any optional seasonings (3 minutes).",
-      "Serve warm."
+      "Preheat oven to 350°F (180°C) (3 minutes).",
+      "Sauté ground meat with onion (3 minutes).",
+      "When cooked through, mix in spaghetti sauce and seasoning (3 minutes).",
+      "Combine cream cheese, cottage cheese, and sour cream; mix well (3 minutes).",
+      "Cook spaghetti noodles according to package directions (3 minutes).",
+      "Spray 3-quart baking dish with cooking spray (3 minutes).",
+      "Layer half the spaghetti noodles on the bottom of the dish (3 minutes).",
+      "Spoon cheese mixture on top of noodles (3 minutes).",
+      "Layer remaining noodles on top of cheese mixture (3 minutes).",
+      "Spread meat mixture on top of second noodle layer (3 minutes).",
+      "Mix bread crumbs and Parmesan cheese and sprinkle on top (3 minutes).",
+      "Bake 30 minutes until bubbly and heated through (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Popcorn",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spaghetti_Bake",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -4989,6 +5019,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (6.5 ea.) medium tomatoes, diced or puréed; big cauliflower cut into chunks; –5 potatoes, peeled and cut into cubes; emon, juiced; –5 tablespoons of ghee or vegetable oil; cumin seeds (jeera); ground curcuma (turmeric); ground coriander; –2 tablespoons ground chilli; –4 tablespoons garam masala; sprigs of mint. Follow the times and temperatures below.",
       "Heat the ghee/oil in frying pan, wok, or karahi (an Indian utensil specially used for frying purposes) (3 minutes).",
       "Add cumin seeds and wait until they turn a light brown color (3 minutes).",
       "Add the spices (except for garam masala) and the tomatoes (3 minutes).",
@@ -5056,6 +5087,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Lrge potatoes, peeled and sliced; hard boiled eggs; hogao with 6 sliced fried pork sausages; of white bread; ½ cup milk; mozzarella cheese; Parmesan cheese; Thyme (optional). Follow the times and temperatures below.",
       "Boil potatoes until tender (20 minutes).",
       "Cut bread into small squares and wet with milk (3 minutes).",
       "Grease a 9 x 13-inch (about 25 x 32-cm) Pyrex baking dish (3 minutes).",
@@ -5119,9 +5151,9 @@
   },
   {
     "id": "r719",
-    "name": "Princess Cake",
+    "name": "Creamy Cornstarch Scrambled Eggs",
     "minutes": 45,
-    "servings": 4,
+    "servings": 2,
     "tags": [
       "dinner",
       "medium",
@@ -5130,43 +5162,41 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 3.0,
         "unit": "",
-        "item": "dl whipping cream"
+        "item": "large eggs"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "egg yolks"
-      },
-      {
-        "qty": 2,
+        "qty": 3.0,
         "unit": "tbsp",
-        "item": "cornstarch"
+        "item": "unsalted butter"
       },
       {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "sugar"
-      },
-      {
-        "qty": null,
+        "qty": 1.0,
         "unit": "",
-        "item": "½ teaspoon vanilla powder"
+        "item": "½ tbsp whole milk"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "¾ tbsp cornstarch or potato starch"
       }
     ],
     "steps": [
-      "For the vanilla cream, combine the cream, yolks, cornstarch, and sugar (3 minutes).",
-      "Heat over a double boiler to just below cooking point (3 minutes).",
-      "Whip it for a while as it is bubbling (but not boiling) (3 minutes).",
-      "Let it cool off for some minutes and then mix in the vanilla powder (3 minutes).",
-      "Put the vanilla cream between the layers of cake (3 minutes).",
-      "Frost the top of the cake with the whipped cream, shaping the top to make it thick and domed (3 minutes).",
-      "If you want to have jam in the cake, replace one of the layers of vanilla cream with jam (3 minutes).",
-      "Cover the whole cake with the marzipan like on the picture and dust the top with powdered sugar (3 minutes).",
-      "Chill until serving."
+      "In a cup, whisk together the milk and cornstarch until it is free of lumps (3 minutes).",
+      "Add the cornstarch mixture to your eggs, and beat until smooth (3 minutes).",
+      "Season with salt (3 minutes).",
+      "Heat a non-stick skillet over high heat until hot, then add the butter—it should sizzle right away (3 minutes).",
+      "Wait until the butter’s melted and bubbly, but before it browns (3 minutes).",
+      "Add the beaten eggs (3 minutes).",
+      "Wait without stirring anything, until the edges of the eggs start to bubble up (about 3 seconds) (3 minutes).",
+      "Remove the skillet from the heat (3 minutes).",
+      "Start stirring the eggs, making 1 full circle per second, for about 11–12 seconds (3 minutes).",
+      "The eggs will have absorbed all the butter but remain partially undercooked (3 minutes).",
+      "Do not wait until they look fully cooked! (3 minutes).",
+      "Transfer them onto a plate (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Princess_Cake",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Creamy_Cornstarch_Scrambled_Eggs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5231,6 +5261,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (17.5 ounces) frozen puff pastry sheets, thawed; ½ cup chopped walnuts; chopped pecans; chopped hazelnuts; raisins; flaked coconut; white sugar, divided; milk; ½ cup heavy cream. Follow the times and temperatures below.",
       "Preheat oven to 350°F (175°C) (3 minutes).",
       "Butter a 9x13-inch baking dish (3 minutes).",
       "Place the pastry sheets in the baking dish and place the dish in the oven (3 minutes).",
@@ -5241,8 +5272,7 @@
       "In a bowl, combine walnuts, pecans, hazelnuts, raisins, coconut and ¼ cup sugar (3 minutes).",
       "Break cooked pastry into pieces and stir into nut mixture (3 minutes).",
       "Spread mixture evenly in a 9x13 inch dish (3 minutes).",
-      "Bring milk and ½ cup sugar to a boil in a medium saucepan over medium heat (3 minutes).",
-      "Pour over nut mixture."
+      "Bring milk and ½ cup sugar to a boil in a medium saucepan over medium heat (3 minutes). Pour over nut mixture."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Puff_Pastry_with_Nuts_and_Whipped_Cream_%28Om_Ali%29",
     "sourceName": "Wikibooks Cookbook",
@@ -5319,6 +5349,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: &frac12; cups (840 ml) flour; baking soda; &frac12; teaspoons salt; cinnamon; nutmeg; ⅛ teaspoon cloves; (720 ml) white granulated sugar; ¾ cup (180 ml) vegetable oil; eggs; &#8532; cups (160 ml) water; (30 oz / 850 g) pumpkin purée. Follow the times and temperatures below.",
       "Preheat oven to 180°C (350°F) (3 minutes).",
       "Sift dry ingredients together (3 minutes).",
       "Mix pumpkin, water, oil, and eggs together in another bowl (3 minutes).",
@@ -5333,9 +5364,9 @@
   },
   {
     "id": "r722",
-    "name": "Pumpkin Pie",
+    "name": "Scrambled Eggs with Vegetables",
     "minutes": 45,
-    "servings": 4,
+    "servings": 2,
     "tags": [
       "dinner",
       "medium",
@@ -5344,69 +5375,47 @@
     ],
     "ingredients": [
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "(480 ml) milk, scalded"
+        "qty": null,
+        "unit": "",
+        "item": "Oil"
       },
       {
-        "qty": 2,
-        "unit": "cup",
-        "item": "(450 g) cooked and puréed pumpkin (or plain canned pumpkin)"
+        "qty": 2.0,
+        "unit": "",
+        "item": "medium tomatoes, chopped"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(240 ml) maple syrup"
+        "qty": 1.0,
+        "unit": "",
+        "item": "medium cucumber, chopped"
+      },
+      {
+        "qty": 2.0,
+        "unit": "pinch",
+        "item": "es salt"
+      },
+      {
+        "qty": 3.0,
+        "unit": "",
+        "item": "–4 eggs"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅛ cup (30 g) sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "flour"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "&frac12; tsp salt"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "ginger"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "cinnamon"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp nutmeg (optional)"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "Lrge eggs, beaten"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "unbaked 9-inch pie shell"
+        "item": "½ small onion, chopped"
       }
     ],
     "steps": [
-      "Preheat oven to 350°F (180°C) (3 minutes).",
-      "Blend all ingredients except the pie shell together to make the filling (3 minutes).",
-      "Pour the filling into the unbaked pie shell (3 minutes).",
-      "Bake in the preheated oven for 45 minutes (3 minutes).",
-      "Let cool and serve (3 minutes)."
+      "Gather, prep, and measure: medium tomatoes, chopped; medium cucumber, chopped; es salt; –4 eggs; ½ small onion, chopped. Follow the times and temperatures below.",
+      "Heat a frying pan over medium heat, and add oil (3 minutes).",
+      "Add tomato and cucumber to the pan (3 minutes).",
+      "Cook for 2 minutes, stirring occasionally (3 minutes).",
+      "Add salt (3 minutes).",
+      "Beat the eggs with the onion and additional salt if desired (3 minutes).",
+      "Transfer mixture to the pan (3 minutes).",
+      "Cook eggs and vegetables, turning every 30 seconds until cooked to taste (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pumpkin_Pie_I",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Scrambled_Eggs_with_Vegetables",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5461,6 +5470,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (60 g) whole-wheat flour; (60 g) plain white flour; fine semolina; ¼ tsp salt; vegetable oil for the dough; About 500 ml (1 pint) vegetable oil for deep frying; Water to mix the dough. Follow the times and temperatures below.",
       "Put all the dry ingredients into a bowl (3 minutes).",
       "Add salt and drizzle the 1 tbsp oil over top (3 minutes).",
       "Mix well (3 minutes).",
@@ -5517,6 +5527,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: s assorted dark leafy greens, such as mustard, collard, and rainbow chard; rashers bacon, cut into about ½-inch pieces; bacon fat (optional); ½ tsp salt (optional); ½ tsp freshly-ground black pepper; ½ cup chicken broth. Follow the times and temperatures below.",
       "Cook bacon to slightly less than done in a large stainless steel pot (3 minutes).",
       "If desired, pour 1 tbsp bacon fat back into pot (3 minutes).",
       "Add greens, and sauté over medium-high heat for 7 minutes (3 minutes).",
@@ -5585,6 +5596,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: milk; (½ cup / 85 g) white sugar; Zest of 1 lemon; (4 Tbsp / 55 g) butter; (about 4 cups / 170 g) freshly-grated bread crumbs; eggs, separated; raspberry jam, or jam of choice; vanilla sugar. Follow the times and temperatures below.",
       "Heat the milk, sugar, lemon zest and butter until just below the boil (3 minutes).",
       "Pour onto the bread crumbs and allow the whole to cool slightly, about 10 minutes (3 minutes).",
       "Beat the egg yolks and stir into the bread crumb and milk mixture (3 minutes).",
@@ -5703,7 +5715,8 @@
       }
     ],
     "steps": [
-      "Chop or dice everything you want to put in (3 minutes).",
+      "Gather, prep, and measure: About 200–300 g cheese; Various chopped herbs; Any kind of cooked chicken, pork, or beef (optional); Any kind of sausage or hot dogs (optional); Vegetables (optional), such as tomatoes, peppers, small hot pepper, mushrooms, cooked potatoes; Fresh greens (optional), such as parsley, dill, celery leaves; egg. Follow the times and temperatures below.",
+      "Chop or dice everything you want to put in (3 minutes), adding the egg, adding the egg, adding the egg, adding the egg, adding the egg, adding the egg.",
       "Alternate layers of cheese, meat, and vegetables in a baking dish (3 minutes).",
       "Finish with cheese on top (3 minutes).",
       "Bake in the oven at 200 °C (375 °F) for 20 minutes or until the cheese is melted (3 minutes).",
@@ -5716,158 +5729,103 @@
   },
   {
     "id": "r728",
-    "name": "Radish Pie",
+    "name": "Scrambled Eggs with Sausage",
     "minutes": 45,
-    "servings": 4,
+    "servings": 2,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 2.0,
         "unit": "",
-        "item": "–2 bunches red radishes"
+        "item": "–4 sausages"
       },
       {
-        "qty": 1,
+        "qty": 4.0,
         "unit": "",
-        "item": "–2 tbsp olive oil"
+        "item": "eggs"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "(60 ml) butter, divided"
-      },
-      {
-        "qty": 8,
-        "unit": "oz",
-        "item": "(227 g) phyllo dough"
-      },
-      {
-        "qty": 1,
+        "qty": 2.0,
         "unit": "",
-        "item": "red onion, chopped"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "dry sherry wine"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "Lrge eggs"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "yolk"
+        "item": "–3 pinches salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¾ cup (177 ml) heavy cream"
-      },
-      {
-        "qty": 4,
-        "unit": "oz",
-        "item": "(113 g) fresh goat cheese"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¾ cup (177 ml) broken walnut pieces"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "⅓ cup (80 ml) fresh Italian parsley"
+        "item": "Chopped vegetables (optional)"
       }
     ],
     "steps": [
-      "Preheat oven to 350°F (175°C) (3 minutes).",
-      "Wash the radishes well, remove and discard tops (3 minutes).",
-      "Put radishes into a small baking dish and drizzle with olive oil (3 minutes).",
-      "Bake for about an hour (3 minutes).",
-      "Let them cool and then cut into small cubes (3 minutes).",
-      "Use half the butter to grease a pie pan, and then line it with pieces of phyllo dough, covering the pan evenly (3 minutes).",
-      "Tuck any stray bits under to make a nice edge (3 minutes).",
-      "Heat the remaining butter in a large pan and sauté the onion in it for about 5 minutes (3 minutes).",
-      "Add the wine and diced radishes, then cook for another minute (3 minutes).",
-      "Remove from heat and pour into the pastry shell (3 minutes).",
-      "In a bowl, mix together the eggs and cream, and then pour over the vegetables in the pie crust (3 minutes).",
-      "Crumble the goat cheese over the cream."
+      "Add the sausages to a hot frying pan (3 minutes).",
+      "Fry, turning, until sausage is cooked through (3 minutes).",
+      "Beat the eggs with the salt (3 minutes).",
+      "Transfer egg mixture to pan along with vegetables, if using (3 minutes).",
+      "Fry for 30–60 seconds (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Radish_Pie",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Scrambled_Eggs_with_Sausage",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
   {
     "id": "r729",
-    "name": "Radish Tart",
+    "name": "Machacado con Huevo (Eggs with Shredded Beef)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
       "moderate",
-      "vegetarian"
+      "collection-mexican"
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "butter or margarine"
+      },
+      {
+        "qty": 6.0,
+        "unit": "",
+        "item": "large eggs, lightly beaten"
+      },
+      {
+        "qty": 2.0,
         "unit": "cup",
-        "item": "all-purpose flour"
+        "item": "s shredded beef filling"
+      },
+      {
+        "qty": 10.0,
+        "unit": "",
+        "item": "ea. 8-inch soft taco-size flour tortillas, warmed"
+      },
+      {
+        "qty": 1.0,
+        "unit": "can",
+        "item": "(16 ounces) refried beans, warmed"
+      },
+      {
+        "qty": 2.0,
+        "unit": "cup",
+        "item": "s (8 ounces) shredded cheddar or Monterey Jack Cheese"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup cold butter"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "(4 oz) shredded Edam, Gouda, or Gruyere cheese, divided (Cheddar is also acceptable)"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "heavy cream, divided"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "egg yolks"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "¼ tsp salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "½–1 small bunch of red radishes"
+        "item": "Salsa for accompaniment"
       }
     ],
     "steps": [
-      "Preheat oven to 425°F (220°C) (3 minutes).",
-      "Sift and measure flour into a bowl (3 minutes).",
-      "Cut in the butter until the particles are coarse (3 minutes).",
-      "Stir in half of the cheese (3 minutes).",
-      "Pour in ¼ cup of the cream; toss the mixture with a fork until all parts are moistened (3 minutes).",
-      "Turn the dough into a 9-inch round pie pan (3 minutes).",
-      "With floured fingers, press the mixture into the bottom and sides of the pan, then prick the shell with a floured fork (3 minutes).",
-      "Bake the pie shell for 10–12 minutes (3 minutes).",
-      "The sides will slip down a little during baking (3 minutes).",
-      "Cool on a wire rack (3 minutes).",
-      "Lower the oven temperature to 375°F (190°C) (3 minutes).",
-      "Sprinkle the remaining cheese evenly over the bottom of the cooled pie shell."
+      "Heat butter in large skillet over medium-high heat (3 minutes).",
+      "Add eggs; cook, stirring frequently, for 2–3 minutes or until eggs just begin to set (3 minutes).",
+      "Stir in shredded beef filling (3 minutes).",
+      "Cook, stirring occasionally, for 2 to 3 minutes or until eggs are cooked and beef is heated through (3 minutes).",
+      "Serve eggs with tortillas, beans, cheese, and salsa (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Radish_Tart",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Machacado_con_Huevo_%28Eggs_with_Shredded_Beef%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -5927,6 +5885,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: s (720 g) quick-cooking oats; (240 g) brown sugar; s baking powder; ground cinnamon; (240 ml) milk; ½ cup (120 g) butter (melted); eggs. Follow the times and temperatures below.",
       "Mix the ingredients and pour them into a 9-inch (20 cm) baking pan (3 minutes).",
       "They can also be carefully mixed in the pan (3 minutes).",
       "Bake at 350 °F (175 °C) for 40–45 minutes (3 minutes).",
@@ -5998,15 +5957,13 @@
       }
     ],
     "steps": [
-      "preheat an oven to 375°F (190°C) (3 minutes).",
+      "Gather, prep, and measure: (240 g) whole wheat flour; (240 g) rolled oats (traditional slow type); ⅓ cup (80 g) white granulated sugar; (10 ml) baking powder; egg; ¾ cup (180 ml) milk; (60 ml) oil; ½–1 cup (120–240g) raisins; Butter for the pan. Follow the times and temperatures below.",
+      "preheat an oven to 375°F (190°C) (3 minutes), adding the egg, adding the (60 ml) oil, adding the egg, adding the (60 ml) oil, adding the egg, adding the (60 ml) oil, adding the egg, adding the (60 ml) oil, adding the egg, adding the (60 ml) oil, adding the egg, adding the (60 ml) oil.",
       "Butter a muffin pan or cupcake pan (3 minutes).",
       "Place the dry ingredients in one bowl, and the wet ingredients in a different bowl (3 minutes).",
       "Mix the ingredients in each bowl, then combine the mixtures to make a batter (3 minutes).",
       "Spoon batter into the pan (3 minutes).",
-      "Bake for 20 minutes, or until brown with crispy edges (3 minutes).",
-      "Immediately flip the muffins upside-down using a butter knife (3 minutes).",
-      "Leave them in the hot pan to prevent condensation from ruining the surface (3 minutes).",
-      "Muffins are best served hot!."
+      "Bake for 20 minutes, or until brown with crispy edges (3 minutes). Immediately flip the muffins upside-down using a butter knife (3 minutes). Leave them in the hot pan to prevent condensation from ruining the surface (3 minutes). Muffins are best served hot!."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Raisin_Oatmeal_Muffins",
     "sourceName": "Wikibooks Cookbook",
@@ -6068,6 +6025,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ⅛ cup grated cucumber (about 1 inch of cucumber); ½ cup plain yogurt; –3 mint leaves, chopped; cilantro leaves, chopped; –2 tbsp finely chopped or minced onions (optional); Salt (coarse salt preferred); Chile powder; Ground cumin. Follow the times and temperatures below.",
       "Squeeze the grated cucumber to remove and discard excess liquid (3 minutes).",
       "Stir the cucumber into the yogurt (3 minutes).",
       "Add chopped mint, cilantro, and onion (3 minutes).",
@@ -6150,6 +6108,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Oil for frying; ½ cup flour; ½ teaspoon salt; ½ cup milk; boneless skinless chicken breast, pounded flat; hamburger bun; leaf green leaf lettuce; tomato slices; red onion sliced (if it's strong, only use a few rings); hot sauce; Blue cheese dressing. Follow the times and temperatures below.",
       "Heat just enough oil to cover chicken to 350 °F (175°C) in a large frying pan or a deep-fryer (3 minutes).",
       "Stir together flour and salt (3 minutes).",
       "Dredge chicken in milk, then flour mixture, again in milk, then flour a second time (3 minutes).",
@@ -6168,53 +6127,86 @@
   },
   {
     "id": "r734",
-    "name": "Raspberry Almond Shortbread Bars",
+    "name": "Riz Gras (West African Fried Rice)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "cup",
-        "item": "almond flour"
+        "item": "s long-grain rice"
       },
       {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "coconut oil"
+        "item": "s vegetable oil"
       },
       {
-        "qty": 1,
-        "unit": "pinch",
-        "item": "salt"
+        "qty": 1.0,
+        "unit": "",
+        "item": "onion, chopped"
       },
       {
-        "qty": 1,
+        "qty": 2.0,
+        "unit": "clove",
+        "item": "s of garlic, minced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "mixed vegetables (carrots, peas, corn, bell peppers, etc.), diced"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "cooked meat (chicken, shrimp, beef, or tofu; optional), diced"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs, lightly beaten"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "s soy sauce"
+      },
+      {
+        "qty": 1.0,
         "unit": "tsp",
-        "item": "vanilla extract"
+        "item": "sesame oil"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅓ cup maple syrup"
+        "item": "Salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Chopped green onions"
       }
     ],
     "steps": [
-      "Preheat the oven to 180°C (3 minutes).",
-      "Combine all of the crust ingredients together until everything is evenly mixed (3 minutes).",
-      "Dough should be crumbly but still form a dough when pressed together (3 minutes).",
-      "Spread the dough onto a greased baking tray(what size?) (3 minutes).",
-      "Press down slightly with a spatula until the layer is evenly spread over the bottom of the tray (3 minutes).",
-      "Prick the crust all over with a fork (3 minutes).",
-      "Bake for approximately 15 minutes in the preheated oven (3 minutes).",
-      "Remove from the oven and set aside."
+      "Gather, prep, and measure: s long-grain rice; s vegetable oil; onion, chopped; s of garlic, minced; mixed vegetables (carrots, peas, corn, bell peppers, etc.), diced; cooked meat (chicken, shrimp, beef, or tofu; optional), diced; eggs, lightly beaten; s soy sauce; sesame oil; Chopped green onions. Follow the times and temperatures below.",
+      "Rinse the rice thoroughly under cold water until the water runs clear (3 minutes).",
+      "In a pot, add the rinsed rice and the appropriate amount of water, following the package instructions (3 minutes).",
+      "Bring the water to a boil, then reduce the heat to low, cover with a tight-fitting lid, and let the rice simmer for the recommended cooking time (usually around 15–20 minutes or as per package instructions) (3 minutes).",
+      "Once cooked, fluff the rice with a fork and set it aside (3 minutes).",
+      "Heat a small amount of vegetable oil in the skillet or wok over medium heat (3 minutes).",
+      "Pour the lightly beaten eggs into the pan, and scramble them until cooked through (3 minutes).",
+      "Remove the scrambled eggs from the pan, and set them aside (3 minutes).",
+      "In the same skillet or wok, add more vegetable oil if needed, and heat it over medium-high heat (3 minutes).",
+      "Add the onion and garlic, and sauté until the onion turns translucent and the garlic is fragrant (3 minutes).",
+      "Add the mixed vegetables and cooked meat (if using) to the skillet, and stir-fry until they are tender and heated through (3 minutes).",
+      "Add the cooked rice to the skillet and stir-fry with the vegetables and meat until everything is well combined (3 minutes). Pour the soy sauce, and oyster sauce (if using) over the rice mixture and mix well to evenly coat the rice (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Raspberry_Almond_Shortbread_Bars",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Riz_Gras_%28West_African_Fried_Rice%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6279,6 +6271,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: garlic, or to taste; eggplant (aubergine); bell pepper (green, red, yellow or a combination); zucchini (courgettes); medium tomatoes, ripe (juicy), peeled and seeded; salt and pepper to taste; Herbes de Provence to taste or 1 small bunch basil (optional), chiffoned. Follow the times and temperatures below.",
       "Put a large casserole on the stove on medium heat (3 minutes).",
       "When the casserole is hot, add enough olive oil to just cover the bottom (3 minutes).",
       "Cut the zucchini and eggplant into ½ inch slices (3 minutes).",
@@ -6289,8 +6282,7 @@
       "Cut the green pepper into strips or dice, as preferred (3 minutes).",
       "Add some additional oil if needed, and cook the onions and peppers slowly for about 10 minutes until tender but not brown (3 minutes).",
       "Stir in the garlic (3 minutes).",
-      "Peel and seed the tomatoes (3 minutes).",
-      "Dice them or cut them into quarters, add to the casserole."
+      "Peel and seed the tomatoes (3 minutes). Dice them or cut them into quarters, add to the casserole."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ratatouille_I",
     "sourceName": "Wikibooks Cookbook",
@@ -6351,6 +6343,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (450 g) dry pinto beans; s water; ground black pepper; ham bone or a rough equivalent of salt bacon; –2 bay leaves; s water; A very small amount (3 oz / ~90 g) of that day's brewed coffee (optional). Follow the times and temperatures below.",
       "Wash beans carefully and soak overnight in 8 cups of water (3 minutes).",
       "Drain and refill with 5 cups of water (3 minutes).",
       "Add all the other ingredients (3 minutes).",
@@ -6429,67 +6422,106 @@
   },
   {
     "id": "r738",
-    "name": "Reindling (Austrian Yeasted Easter Cake)",
+    "name": "Tuna Fried Rice",
     "minutes": 45,
-    "servings": 2,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2.25,
+        "qty": 1.0,
         "unit": "cup",
-        "item": "(500 g) all-purpose flour"
+        "item": "basmati rice, prepared as a firm and dry pilav"
       },
       {
-        "qty": 5,
-        "unit": "tsp",
-        "item": "(40 g) yeast"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "½ cup milk"
+        "item": "Olive oil"
       },
       {
-        "qty": 2,
+        "qty": 1.0,
+        "unit": "",
+        "item": "medium red onion, finely chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ cup or more shredded cabbage"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "handful of bean sprouts"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Red pepper paste"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Hot paprika"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "miso"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½–¾ tbsp honey"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Tabasco to taste"
+      },
+      {
+        "qty": 1.0,
+        "unit": "can",
+        "item": "good-quality tuna"
+      },
+      {
+        "qty": 2.0,
         "unit": "",
         "item": "eggs"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅓–½ cup (70–90 g) white sugar (depending on taste)"
+        "item": "Salt, if needed"
       },
       {
-        "qty": 1,
-        "unit": "g",
-        "item": "enerous pinch of salt"
+        "qty": null,
+        "unit": "",
+        "item": "Chopped scallions"
       },
       {
-        "qty": 8,
-        "unit": "tbsp",
-        "item": "(120 g) butter"
+        "qty": null,
+        "unit": "",
+        "item": "Katsuobushi"
       }
     ],
     "steps": [
-      "Mix the flour with the yeast, and add a dash of the milk and sugar so that you get a smooth mixture (3 minutes).",
-      "Cover it with a piece of cloth and let it rest in a warm place for half an hour (3 minutes).",
-      "Add the rest of the milk and the sugar, the eggs, the butter, and salt (3 minutes).",
-      "Work it into a smooth dough (3 minutes).",
-      "Let it rest for 10 minutes (3 minutes).",
-      "Roll out the dough so that it is roughly as thick as your thumb (3 minutes).",
-      "For the filling, melt the butter and spread it on the dough (3 minutes).",
-      "Mix the sugar with the cinnamon, and sprinkle this over the dough (3 minutes).",
-      "Then add the raisins and nuts (3 minutes).",
-      "Roll the dough up tightly and put it into a greased cake pan (3 minutes).",
-      "Again, let it rest for 20 minutes (3 minutes).",
-      "Finally, sprinkle little bits of butter on the cake."
+      "Gather, prep, and measure: basmati rice, prepared as a firm and dry pilav; medium red onion, finely chopped; ½ cup or more shredded cabbage; handful of bean sprouts; Red pepper paste; Hot paprika; miso; ½–¾ tbsp honey; Tabasco to taste; good-quality tuna; eggs; Salt, if needed; Chopped scallions; Katsuobushi. Follow the times and temperatures below.",
+      "Prepare a pilaf-style rice (3 minutes).",
+      "This should be dry with little fat or excess moisture (3 minutes).",
+      "Sauté the onion in 1 tbsp olive oil (3 minutes).",
+      "Add the cabbage and bean sprouts (3 minutes).",
+      "Stir in red pepper paste and paprika (3 minutes).",
+      "Add the cooked rice (3 minutes).",
+      "Add the miso and honey, and combine thoroughly (3 minutes).",
+      "Add Tabasco if desired (3 minutes).",
+      "Mix in the tuna (3 minutes).",
+      "Move the rice to one side of the skillet and crack in the eggs (3 minutes).",
+      "When they are ready, mix the scrambled eggs in with the rice (3 minutes). Garnish with katsuobushi and scallions before serving (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Reindling_%28Austrian_Yeasted_Easter_Cake%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tuna_Fried_Rice",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -6563,6 +6595,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: shallots; ginger; turmeric; young galangal; ground fresh red chile pepper; ½ pod dried nutmeg; dlenuts; ½ tbsp salt; gula jawa (Indonesian palm sugar). Follow the times and temperatures below.",
       "Using a food processor, grind together all the ingredients for the spice paste (3 minutes).",
       "Marinate meat with the spice paste for at least 1 hour (3 minutes).",
       "Heat the coconut milk over low heat until some oil rises to the surface (at least 20 minutes) (3 minutes).",
@@ -6834,6 +6867,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (450 g) dry pinto beans; s water; ½ tbsp paprika OR ½ tsp each of paprika and pepper; ½ tbsp granulated or brown sugar; salt OR 2 tsp salt and a ham hock; ½ tbsp chili powder; ¼ tsp (or more) garlic powder; ½ tbsp dehydrated onion OR ½ small onion, finely diced; –2 bay leaves; s water. Follow the times and temperatures below.",
       "Wash beans carefully and soak overnight in 8 cups of water (3 minutes).",
       "Drain and refill with 5 cups of water (3 minutes).",
       "Add all the other ingredients (3 minutes).",
@@ -7087,6 +7121,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (110 g) unsweetened baking chocolate; ⅔ cup (160 g / 1.6 dl) solid fat (e.g. margarine, butter, shortening, or lard); (450 g / 2.7 dl) baking sugar; eggs; vanilla; (300 g / 3 dl) flour; baking powder; (240 g / 2.4 dl) coarsely chopped nuts (½ inch / 1 cm walnuts work well). Follow the times and temperatures below.",
       "Heat oven to 175 °C (350 °F) (3 minutes).",
       "Melt chocolate and margarine in a double boiler, or (carefully) in a saucepan on low heat, stirring often (3 minutes).",
       "Remove from heat (3 minutes).",
@@ -7220,6 +7255,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: arborio, vialone nano, or carnaroli risotto rice; salted butter; small (150 g) white onion, finely chopped; Lrge clove garlic, minced; ½ litre chicken stock; fresh porcini mushrooms,or about 50 g dried; small bunch of flat-leaved parsley; white, dry wine; freshly grated Parmesan Reggiano cheese. Follow the times and temperatures below.",
       "If using dried mushrooms, soak them for at least 20 minutes in 200 ml warm water (3 minutes).",
       "Even if the instructions on the packet say they should be soaked for less time, ignore them and soak for at least 20 minutes (3 minutes).",
       "Once they have reconstituted properly, chop about ½ of them into small pieces and roughly chop the rest (3 minutes).",
@@ -7230,8 +7266,7 @@
       "If they do burn, throw them away and start over (3 minutes).",
       "Now add the rice and swirl it around in the pan until it is also coated in the butter (3 minutes).",
       "Leave for about 30 seconds (3 minutes).",
-      "Again it should not even come close to burning (3 minutes).",
-      "Now splash in the wine—it should fizz and steam dramatically—and wait for it to evaporate."
+      "Again it should not even come close to burning (3 minutes). Now splash in the wine—it should fizz and steam dramatically—and wait for it to evaporate."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Risotto_ai_Funghi",
     "sourceName": "Wikibooks Cookbook",
@@ -7380,6 +7415,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ⅓ cups uncooked brown rice; small butternut squash, peeled and chopped; Ground pepper; ½ cup finely sliced biltong; onion roasted seeds (or plain roasted seeds); cubed or ribboned cucumber; fresh chopped parsley or mint; feta cheese (optional). Follow the times and temperatures below.",
       "Preheat oven to 180°C (3 minutes).",
       "Cook brown rice according to packet instructions (3 minutes).",
       "Drain and set aside (3 minutes).",
@@ -7445,9 +7481,9 @@
   },
   {
     "id": "r752",
-    "name": "Easy Nachos",
+    "name": "Fried Pita Bread with Eggs",
     "minutes": 45,
-    "servings": 4,
+    "servings": 2,
     "tags": [
       "dinner",
       "medium",
@@ -7456,34 +7492,41 @@
     ],
     "ingredients": [
       {
-        "qty": 12,
-        "unit": "oz",
-        "item": "(360 g) tortilla chips"
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "extra-virgin olive oil"
       },
       {
-        "qty": 1,
-        "unit": "lb",
-        "item": "(450 g) cheddar cheese, grated"
+        "qty": 1.0,
+        "unit": "",
+        "item": "pita bread"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅓ cup (80 ml) chopped canned peeled green chiles (optional)"
+        "item": "Salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup (about 120 ml) chopped onion (optional)"
+        "item": "Black pepper"
       }
     ],
     "steps": [
-      "Preheat the oven to 400°F (200°C) (3 minutes).",
-      "Lay the tortilla chips on a cookie sheet (3 minutes).",
-      "Toss together the cheese, chilies and onion; sprinkle over the tortilla chips (3 minutes).",
-      "Bake for about 2 minutes, or until the cheese has melted (3 minutes).",
+      "Gather, prep, and measure: extra-virgin olive oil; pita bread; eggs. Follow the times and temperatures below.",
+      "In a heavy skillet, heat the oil at medium-low temperature (3 minutes).",
+      "Tear the pita into small pieces, and add to the hot oil (3 minutes).",
+      "Cook, stirring frequently, until the bread is lightly browned and crispy (3 minutes).",
+      "Add the eggs and scramble them with the bread (3 minutes).",
+      "Season with salt and ground black pepper to taste (3 minutes).",
       "Serve hot (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Easy_Nachos",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Pita_Bread_with_Eggs",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -7557,6 +7600,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: crumbled cornbread; freshly-ground black pepper; dried/rubbed sage; dried apples, diced; ¾ cup walnuts, roughly chopped; buttermilk; dried cherries, stemmed and finely chopped; egg yolks, beaten; stick butter, softened and whipped; ½ cups shredded cooked chicken or turkey. Follow the times and temperatures below.",
       "Combine stuffing ingredients in a bowl and mix well (3 minutes).",
       "Preheat oven to 325°F (3 minutes).",
       "Place the rack in the lowest position of the oven (3 minutes).",
@@ -7567,8 +7611,7 @@
       "Fill the body cavity with stuffing (3 minutes).",
       "Place a meat thermometer in the thickest part of one thigh (3 minutes).",
       "Position an aluminum foil tent over the turkey (3 minutes).",
-      "Place the turkey in the oven and pour 2 cups of stock into the bottom of the roasting pan (3 minutes).",
-      "Roast the turkey for 2½ hours, basting the entire turkey every 30 minutes with the juices on the bottom of the pan."
+      "Place the turkey in the oven and pour 2 cups of stock into the bottom of the roasting pan (3 minutes). Roast the turkey for 2½ hours, basting the entire turkey every 30 minutes with the juices on the bottom of the pan."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roast_Turkey_with_Stuffing",
     "sourceName": "Wikibooks Cookbook",
@@ -7624,6 +7667,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ½ US gallon (8 cups) water; (600 g / 1.3 lb) salt; ½ cup (85 g / 3 oz) firmly packed light brown sugar; peppercorns; US gallons (7.6 L / 32 cups) of ice water (50% ice); turkey; (½ stick) unsalted butter. Follow the times and temperatures below.",
       "Combine the ½ gallon water, salt, brown sugar, and peppercorns (3 minutes).",
       "Bring to a boil and cook about 3 minutes until everything is dissolved (3 minutes).",
       "Transfer the brine to a 5-US-gallon (19 L) bucket, and stir in the ice water (3 minutes).",
@@ -7690,6 +7734,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: bottle (12 oz) lager beer; (1.5 kg) pork; medium potatoes; caraway seeds; salt (or to taste); freshly-milled black pepper (or to taste); garlic, crushed; medium-sized yellow onions. Follow the times and temperatures below.",
       "Preheat the oven to 170–190°C (3 minutes).",
       "Wash the meat thoroughly and pat it dry with a paper towel (3 minutes).",
       "For a crispy crunch on top of the meat, cut a diamond pattern (each about 1 inch long) into the fat side (3 minutes).",
@@ -7700,8 +7745,7 @@
       "Now roast the meat in the oven at 220°C for about 1 hour (3 minutes).",
       "As soon as the potatoes are soft, take them out of the dish and cover them with foil (3 minutes).",
       "Then turn the fat side of the meat up, sprinkle it again with caraway seeds and thinly sliced onions (3 minutes).",
-      "Roast it for another 30–45 minutes, basting it frequently with juices from the dish or beer (3 minutes).",
-      "If there is not enough liquid, you may add water."
+      "Roast it for another 30–45 minutes, basting it frequently with juices from the dish or beer (3 minutes). If there is not enough liquid, you may add water."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roasted_Pork_with_Potatoes_and_Onions_%28Schweinsbraten%29",
     "sourceName": "Wikibooks Cookbook",
@@ -7805,6 +7849,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ea. (1–1&frac12; pounds) medium-large eggplant (any variety); ½ large or 1 medium onion, finely diced or grated; sunflower oil; ½ tsp salt; –2 tablespoons mayonnaise (optional). Follow the times and temperatures below.",
       "Roast the eggplants (3 minutes).",
       "This can be done in a variety of ways, but the flesh should be fully cooked and the skin should be burned and falling off easily (3 minutes).",
       "An effective method is to prick the eggplants and place them in a preheated 400 °F oven until the skin is charred and a fork easily pierces the vegetable all the way through (3 minutes).",
@@ -7885,6 +7930,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: boiled beef (preferably flank steak, but any meat with long threads will do); ⅓ cup olive oil; arlic cloves; reen bell pepper; red bell pepper; ½ cup tomato sauce; bay leaf; red cooking wine or beer. Follow the times and temperatures below.",
       "Cut the meat in pieces, not too small, not too big (3 minutes).",
       "Using a pressure cooker, boil the meat for about 15 minutes (3 minutes).",
       "Add a teaspoon of olive oil to the water to avoid foaming; also, add a teaspoon of salt (3 minutes).",
@@ -7942,6 +7988,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: wheat flour; standard eggs; fine salt; A few drops of food coloring (desired color; optional). Follow the times and temperatures below.",
       "Combine all the ingredients in a blender, and blend until you get a well-combined batter (3 minutes).",
       "Over-blending will produce excess foam (3 minutes).",
       "Let the batter rest for 30 minutes (3 minutes).",
@@ -8079,6 +8126,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ½ loaf (1 pound) white bread, cut into cubes; cheddar cheese, shredded; cubed cooked ham; eggs; milk; dash hot pepper sauce, or to taste; chopped green onion. Follow the times and temperatures below.",
       "Preheat oven to 350 °F (175 °C) (3 minutes).",
       "Lightly grease a 9x13-inch (23 x 33 cm) baking pan (3 minutes).",
       "Place half of the bread cubes on bottom of baking pan (3 minutes).",
@@ -8143,6 +8191,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: eggs, separated; ½ cup (120 ml) white granulated sugar; (240 ml) flour; (240 ml) confectioner's sugar; (135 ml) butter; (4 ml) vanilla extract; ½ oz (130 g) dark chocolate. Follow the times and temperatures below.",
       "Butter a 9 in (22 cm) pan and line bottom with parchment paper (3 minutes).",
       "Preheat oven to 325°F (163°C or Gas Mark 3) (3 minutes).",
       "Melt chocolate in microwave, remove, and let cool, while stirring often (3 minutes).",
@@ -8210,6 +8259,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ¾ cup (170 g) butter; ½ oz (180 g) semi-sweet chocolate; ¾ cup (170 g) white granulated sugar; egg yolks; (120 g) flour; egg whites, stiffly whipped; apricot jam. Follow the times and temperatures below.",
       "Preheat the oven to 275°F (140°C) (3 minutes).",
       "Beat butter until creamy (3 minutes).",
       "Melt chocolate (3 minutes).",
@@ -8220,8 +8270,7 @@
       "Grease and butter 8–9-inch cake tin (3 minutes).",
       "Pour mixture in (3 minutes).",
       "Bake in oven about 1 hour (3 minutes).",
-      "Test with toothpick or straw (3 minutes).",
-      "Remove to a board; cool."
+      "Test with toothpick or straw (3 minutes). Remove to a board; cool."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sachertorte_%28Original_Version%29",
     "sourceName": "Wikibooks Cookbook",
@@ -8331,6 +8380,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: cooked turkey meat, chopped; large onion, chopped; cream of chicken soup; ranch dressing; ½ cup milk; ¾ cup shredded cheddar cheese; frozen biscuit dough. Follow the times and temperatures below.",
       "Sauté the onion until tender (3 minutes).",
       "Combine in a small bowl the all the other ingredients except the cheese and biscuits (3 minutes).",
       "Stir this mixture, then place it into a baking dish, and bake for 15 minutes at 350°F until it is quite warm throughout (3 minutes).",
@@ -8457,6 +8507,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (2 lb) fresh tomatoes; Lrge capsicum (bell pepper); –6 fresh chiles; fresh red onion; –4 cloves of garlic; of fresh cilantro (coriander leaf, Chinese parsley); –2 teaspoons non-iodised salt; spices to taste (optional). Follow the times and temperatures below.",
       "Clean and dry a large (1 litre) preserves jar and a large bowl (3 minutes).",
       "Dice the tomatoes (3 minutes).",
       "Quarter and slice the capsicum (3 minutes).",
@@ -8467,8 +8518,7 @@
       "Mix all ingredients together in the bowl with salt and (optional) spices; mix well! (3 minutes).",
       "Pack tightly into the jar, leaving 1 cm space at the top (3 minutes).",
       "Cover the jar with a cloth or cling-wrap (3 minutes).",
-      "Sit the jar in a bowl or on a plate, so that any juice that might overflow will be collected and won't make a mess (3 minutes).",
-      "Leave to ferment at room temperature."
+      "Sit the jar in a bowl or on a plate, so that any juice that might overflow will be collected and won't make a mess (3 minutes). Leave to ferment at room temperature."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Salsa_%28Fermented%29",
     "sourceName": "Wikibooks Cookbook",
@@ -8614,6 +8664,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ¼ kg potatoes; Green peas combined; onions, sliced; reen chiles, chopped; Spices (optional); mint leaves; sprigs of cilantro (coriander); Maida (all-purpose flour); Olive oil or vegetable oil; Vegetable oil, for deep frying. Follow the times and temperatures below.",
       "Steam the potatoes and peas separately (3 minutes).",
       "Cut the potatoes into small pieces (3 minutes).",
       "Heat a dash of olive oil in a frying pan (3 minutes).",
@@ -8624,8 +8675,7 @@
       "Mix the flour with enough water to make a stiff dough (3 minutes).",
       "Knead in 1 tablespoon of oil and a pinch of table salt (3 minutes).",
       "Knead it well (3 minutes).",
-      "Roll dough into even-sized balls (about 3.5 cm in diameter) and roll them out into circles using a rolling pin (3 minutes).",
-      "Cut each circle in half to make semi-circles."
+      "Roll dough into even-sized balls (about 3.5 cm in diameter) and roll them out into circles using a rolling pin (3 minutes). Cut each circle in half to make semi-circles."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Samosa",
     "sourceName": "Wikibooks Cookbook",
@@ -8633,162 +8683,156 @@
   },
   {
     "id": "r770",
-    "name": "Sandwich Layer-Cake",
-    "minutes": 45,
-    "servings": 4,
-    "tags": [
-      "lunch",
-      "medium",
-      "moderate"
-    ],
-    "ingredients": [
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "–4 eggs"
-      },
-      {
-        "qty": 1,
-        "unit": "kg",
-        "item": "(~2.25 lbs) shrimp with shells on"
-      },
-      {
-        "qty": 4.5,
-        "unit": "",
-        "item": "dl (450 ml / 1 pint) cottage cheese"
-      },
-      {
-        "qty": 4,
-        "unit": "",
-        "item": "dl (400 ml) mayonnaise"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "dl (100 ml) sour cream"
-      },
-      {
-        "qty": 2,
-        "unit": "l",
-        "item": "oaves white sandwich bread"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Salt"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Black pepper"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Sprigs of dill or slices of lemon or lime for garnish"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Chopped dill or parsley for garnish"
-      }
-    ],
-    "steps": [
-      "Boil the eggs until hard, and peel the shrimp (3 minutes).",
-      "Set aside some shrimp (about ⅓) for garnishing (3 minutes).",
-      "Chop the remaining shrimp, which will be used for filling (3 minutes).",
-      "Mix 1 dl mayonnaise with 1 dl sour cream in a cup or bowl, place in the refrigerator (3 minutes).",
-      "Mix the remaining mayonnaise with the cottage cheese in another bowl together with the chopped shrimp; this is the filling (3 minutes).",
-      "Cut the bread lengthwise to make eight 1 cm thick slices (3 minutes).",
-      "Discard the top and bottom slice (3 minutes).",
-      "Place two slices next to each other, preferably on a cutting board (3 minutes).",
-      "Spread one third of the filling on top of the bread slices (3 minutes).",
-      "Add two more bread slices on top (3 minutes).",
-      "Spread half of the remaining filling and repeat for the final layer (3 minutes).",
-      "The cake should now have four layers of bread with three layers of filling between them."
-    ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sandwich_Layer-Cake",
-    "sourceName": "Wikibooks Cookbook",
-    "sourceLicense": "CC BY-SA 4.0"
-  },
-  {
-    "id": "r771",
-    "name": "Saucepan Fudge Crackle Cookies",
+    "name": "Chicken Marsala",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "flour"
+        "qty": 3.0,
+        "unit": "",
+        "item": "sprigs rosemary, finely chopped"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "baking powder"
+        "qty": 6.0,
+        "unit": "",
+        "item": "sprigs thyme, finely chopped"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ teaspoon salt"
+        "item": "All-purpose flour"
       },
       {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "margarine"
-      },
-      {
-        "qty": 3,
-        "unit": "oz",
-        "item": "unsweetened baking chocolate"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "white granulated sugar"
-      },
-      {
-        "qty": 2,
+        "qty": 2.0,
         "unit": "",
-        "item": "eggs"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "vanilla extract"
+        "item": "boneless skinless chicken breasts"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup coarsely chopped nuts (for example, ½-inch walnut pieces)"
+        "item": "Kosher salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Additional sugar for coating"
+        "item": "Freshly-ground black pepper"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "eggs, beaten"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "olive oil"
+      },
+      {
+        "qty": 1.0,
+        "unit": "cup",
+        "item": "dry marsala wine"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup chicken broth"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "tomato paste"
       }
     ],
     "steps": [
-      "Combine the flour, baking powder, and salt (3 minutes).",
-      "In a 3-quart saucepan on low heat, melt together the margarine and chocolate (3 minutes).",
-      "Remove the chocolate mixture from the heat (3 minutes).",
-      "Into the chocolate mixture, mix the eggs, sugar, vanilla, and nuts (3 minutes).",
-      "Mix the flour mixture into the chocolate mixture (3 minutes).",
-      "Cover and refrigerate until firm (3 minutes).",
-      "Overnight would be good (3 minutes).",
-      "Make 1½-inch balls of the mixture (3 minutes).",
-      "As you make them, roll them in coarse sugar and place them onto a cool, ungreased, insulated cookie sheet (3 minutes).",
-      "Be sure to allow room for expansion (3 minutes).",
-      "Bake at 300°F for 20 minutes (3 minutes).",
-      "Immediately remove the cookies from the cookie sheet."
+      "Combine ¼–½ cup (depending on how thick you like it) all-purpose flour with rosemary and thyme in a gallon size zip-top bag (3 minutes).",
+      "Set aside (3 minutes).",
+      "Pound chicken breasts flat under a water-spritzed sheet of plastic wrap with a pie plate and a heavy food can, or pound down lightly with a tenderizing hammer (3 minutes).",
+      "Depending on the size of the chicken breasts, you may first wish to cut them vertically or horizontally to achieve the desired serving sizes and shapes (3 minutes).",
+      "Season each piece with kosher salt and freshly ground black pepper (3 minutes).",
+      "Dip each piece of chicken into eggs then toss in seasoned flour (3 minutes).",
+      "Heat oil in large stainless steel skillet over medium high heat (don't even think about using a nonstick surface) (3 minutes).",
+      "Add chicken breasts and cook until deeply browned on each side (3 minutes).",
+      "Remove and keep warm (3 minutes).",
+      "Add marsala to pan and ignite either by tilting or fire stick/lighter (3 minutes).",
+      "Whisk to loosen browned bits until reduced by ¾ (3 minutes).",
+      "Add broth and tomato paste to pan and whisk to combine (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Saucepan_Fudge_Crackle_Cookies",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Marsala_II",
+    "sourceName": "Wikibooks Cookbook",
+    "sourceLicense": "CC BY-SA 4.0"
+  },
+  {
+    "id": "r771",
+    "name": "Baked Cabbage and Bacon",
+    "minutes": 45,
+    "servings": 4,
+    "tags": [
+      "dinner",
+      "medium",
+      "moderate"
+    ],
+    "ingredients": [
+      {
+        "qty": 1.0,
+        "unit": "head",
+        "item": "of green cabbage, sliced and/or diced"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Bacon, chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Butter"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Parsley"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Grated cheese"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Cayenne pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "½ onion, roughly chopped"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Salt"
+      }
+    ],
+    "steps": [
+      "Gather, prep, and measure: of green cabbage, sliced and/or diced; Bacon, chopped; Parsley; egg; Grated cheese; Cayenne pepper; ½ onion, roughly chopped. Follow the times and temperatures below.",
+      "Boil the cabbage until tender (3 minutes), adding the egg, adding the egg, adding the egg, adding the egg, adding the egg, adding the egg.",
+      "Fry the chopped bacon in butter (3 minutes).",
+      "Combine the cooked cabbage, bacon, parsley, egg, cheese, cayenne, and chopped onion (3 minutes).",
+      "Season to taste with salt (3 minutes).",
+      "Transfer mixture to a glass baking dish (3 minutes).",
+      "Bake 15 minutes at 180˚C (3 minutes). Serve with toasted bread (3 minutes)."
+    ],
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Cabbage_and_Bacon",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -8862,63 +8906,84 @@
   },
   {
     "id": "r773",
-    "name": "Seafood Cocktail Sauce",
+    "name": "Mushroom Caps Stuffed with Bacon and Cheese",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": null,
-        "unit": "",
-        "item": "½ cup ketchup"
+        "qty": 3.0,
+        "unit": "oz",
+        "item": "(⅓ cup/85 g) cream cheese"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup Heinz Chili Sauce (optional, and can be substituted with ketchup)"
+        "item": "¼ teaspoon Worcestershire Sauce"
       },
       {
-        "qty": 1,
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup () diced green onions"
+      },
+      {
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "lemon juice"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "Worcestershire sauce"
+        "item": "s diced green peppers"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "~¼ tsp Tabasco sauce"
+        "item": "Chopped mushroom stems"
       },
       {
-        "qty": 1,
-        "unit": "pinch",
-        "item": "coarsely ground black pepper"
+        "qty": 2.0,
+        "unit": "slice",
+        "item": "s cooked bacon, chopped"
       },
       {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "–3 tbsp prepared grated horseradish"
+        "item": "½ cup () bread crumbs"
+      },
+      {
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "butter"
+      },
+      {
+        "qty": 2.0,
+        "unit": "",
+        "item": "dozen mushrooms"
       }
     ],
     "steps": [
-      "Combine all ingredients except horseradish (3 minutes).",
-      "Taste and adjust flavors to your liking (3 minutes).",
-      "Some recipes call for the addition of celery salt or garlic juice (3 minutes).",
-      "Add a tablespoon at a time to get it to the taste you prefer (3 minutes).",
-      "If your grated horseradish is fresh (a fresh bottle from the store), the recipe amount may be too much for your liking; if it is older, the recipe amount may not be enough (3 minutes).",
-      "Refrigerate until cold (3 minutes).",
-      "Place cold sauce into serving dish (3 minutes).",
-      "Serve with seafood."
+      "Gather, prep, and measure: (⅓ cup/85 g) cream cheese; ¼ teaspoon Worcestershire Sauce; ¼ teaspoon salt; ¼ teaspoon pepper; ¼ cup () diced green onions; s diced green peppers; Chopped mushroom stems; s cooked bacon, chopped; ½ cup () bread crumbs; dozen mushrooms. Follow the times and temperatures below.",
+      "Preheat oven to 325°F (about 160–165°C) (3 minutes).",
+      "Soften cream cheese and put in food processor (3 minutes).",
+      "Add Worcestershire sauce, salt, and pepper; pulse until mixed (3 minutes).",
+      "Fold in chopped bacon, chopped mushroom stems, diced green onions, and green peppers (3 minutes).",
+      "Set stuffing aside (3 minutes).",
+      "Mix bread crumbs with just enough butter to hold together (3 minutes).",
+      "Stuff mushroom caps with stuffing (3 minutes).",
+      "Top with bread crumbs (3 minutes).",
+      "Bake for 5 minutes (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Seafood_Cocktail_Sauce",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mushroom_Caps_Stuffed_with_Bacon_and_Cheese",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9013,6 +9078,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: squid tubes; peeled king prawns; scallops; Balsamic vinegar; Oregano; About 1 L fish stock/broth; (14 oz) risotto rice (see notes); onion, finely-chopped; of garlic, minced; lass of dry white wine; Parsley, finely chopped; (1 ounce) butter, cubed. Follow the times and temperatures below.",
       "Cut the squids into strips or rings (3 minutes).",
       "In a bowl marinade the squids, the prawns, and the scallops with some oil, balsamic vinegar, oregano, salt, and pepper (3 minutes).",
       "Let it marinate for half hour in the fridge while you are cooking the rice (3 minutes).",
@@ -9023,8 +9089,7 @@
       "Stir in the rice, and cook until it has a transparent look for not more than 2 minutes (3 minutes).",
       "Add some salt and pepper and the wine (3 minutes).",
       "As the wine cooks away you will see the remaining liquid getting thicker as it is absorbing the starch from the rice (3 minutes).",
-      "When it is more or less gone, add some hot stock (3 minutes).",
-      "Do not add too much stock all at once."
+      "When it is more or less gone, add some hot stock (3 minutes). Do not add too much stock all at once."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Seafood_Risotto",
     "sourceName": "Wikibooks Cookbook",
@@ -9197,77 +9262,51 @@
   },
   {
     "id": "r777",
-    "name": "Semolina Pudding",
+    "name": "Grand Union Bacon",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "l",
-        "item": "iter of milk"
+        "qty": 1.0,
+        "unit": "",
+        "item": "egg"
       },
       {
-        "qty": 1,
-        "unit": "pinch",
-        "item": "salt"
+        "qty": 3.0,
+        "unit": "",
+        "item": "drops Tabasco sauce"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Grated lemon zest"
+        "item": "Bacon strips (very thin and lean)"
       },
       {
-        "qty": 1,
-        "unit": "pinch",
-        "item": "ground cinnamon"
-      },
-      {
-        "qty": 125,
-        "unit": "g",
-        "item": "(¼ liter) of soft wheat semolina flour"
-      },
-      {
-        "qty": 100,
-        "unit": "g",
-        "item": "of white granulated sugar"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "packet of vanilla sugar"
+        "item": "Very fine cracker crumbs or dust"
       },
       {
-        "qty": 30,
-        "unit": "g",
-        "item": "of butter or 1 tbsp of nutty-tasting cold-pressed cooking oil (hazelnut oil, walnut oil, poppy seed oil, rapeseed oil)"
-      },
-      {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "egg yolk"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "egg white, whipped to soft peaks"
+        "item": "Butter"
       }
     ],
     "steps": [
-      "Bring the milk, salt, lemon zest, and grated cinnamon to a boil in a large saucepan (3 minutes).",
-      "Stir in the semolina (3 minutes).",
-      "Cook over low heat, stirring constantly, until the swollen (this happens very quickly) (3 minutes).",
-      "Stir in the sugar, vanilla sugar, and butter (3 minutes).",
-      "Remove the porridge from the heat (3 minutes).",
-      "If desired, stir in whisked egg yolk and/or fold in whipped egg whites (3 minutes).",
-      "Serve."
+      "Gather, prep, and measure: egg; drops Tabasco sauce; Bacon strips (very thin and lean); Very fine cracker crumbs or dust. Follow the times and temperatures below.",
+      "Beat the egg with the Tabasco sauce (3 minutes), adding the egg, adding the egg, adding the egg, adding the egg, adding the egg, adding the egg.",
+      "Dip bacon in the egg mixture, and roll in cracker dust (3 minutes).",
+      "Add butter to a frying pan over medium heat (3 minutes).",
+      "When pan is well heated, add the bacon (3 minutes).",
+      "Fry until golden brown (3 minutes).",
+      "Flip bacon over, cook the other side, and serve on a napkin (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Semolina_Pudding",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Grand_Union_Bacon",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -9472,6 +9511,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: pork shoulder; vodka; honey; prepared mustard; Pieces of onion, red or green bell pepper, bacon, sausage, cucumber, baby mushrooms. Follow the times and temperatures below.",
       "Mix the honey, mustard, vodka, salt and pepper in a deep bowl and soak the meat pieces in it (3 minutes).",
       "Leave the bowl in the refrigerator for 3 hours (3 minutes).",
       "Arrange the meat pieces on wooden or metal skewers, putting some pieces of bacon, sausage, pepper, onion, mushrooms, cucumber, according to your preference, between the pieces of meat (3 minutes).",
@@ -9801,6 +9841,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: fresh or frozen tilapia fillets, thawed if frozen; freshly-ground black pepper; garlic powder; ½ tbsp cayenne pepper; Cornmeal; Freshly-squeezed lemon juice; ea. 3-inch ciabatta buns, split in half; ½ quarts peanut, canola, corn, safflower, or soybean oil; mayonnaise; small jalapeño, finely minced; ¼ dill pickle, finely chopped; arugula. Follow the times and temperatures below.",
       "Season fish with salt, pepper, garlic powder, and cayenne (3 minutes).",
       "Dredge fish in cornmeal and dip in lemon juice (3 minutes).",
       "Dredge again in cornmeal and let sit 2–3 minutes (3 minutes).",
@@ -9811,8 +9852,7 @@
       "Repeat with remaining fish (3 minutes).",
       "Brush cut sides of bun with olive oil (3 minutes).",
       "Season with kosher salt and freshly-ground black pepper (3 minutes).",
-      "Place cut side down on a grill pan preheated over medium high heat (3 minutes).",
-      "Cook until marked and toasted (3 minutes)."
+      "Place cut side down on a grill pan preheated over medium high heat (3 minutes). Cook until marked and toasted (3 minutes)."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Crispy_Fish_Sandwich",
     "sourceName": "Wikibooks Cookbook",
@@ -9893,6 +9933,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ½ cups cooked lobster tail meat; s chicken broth; s heavy cream; sprigs fresh dill; ¼ cup freshly-squeezed lemon juice; ¼ cup finely-diced celery; large onion, finely diced; minced garlic; Freshly-ground black pepper; bay leaves. Follow the times and temperatures below.",
       "Heat oil in a large pot over medium high heat (3 minutes).",
       "Add celery, onion, and garlic and sauté until garlic is golden and onions are translucent (3 minutes).",
       "Add remaining ingredients, 1 tsp salt, and freshly ground black pepper (3 minutes).",
@@ -9983,6 +10024,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: boneless skinless chicken thighs, cut into 1 ½-inch cubes; canola oil; Lrge onion, finely diced; red curry paste; Thai chiles, stemmed; fish sauce; chicken broth; ½ cup tomato paste; red potatoes, cut into 2-inch cubes; minced garlic; Chopped parsley. Follow the times and temperatures below.",
       "Dredge chicken in flour (3 minutes).",
       "Set aside (3 minutes).",
       "Heat oil in a 6-quart cast-iron Dutch oven (3 minutes).",
@@ -10063,6 +10105,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: about 2 lbs (1 kg) chicken breasts; (240 ml) canola oil; (240 g) all-purpose flour; bell peppers, chopped into ¼-inch pieces; large onion, chopped into ¼-inch pieces; of celery, chopped into ¼-inch pieces; Chicken stock or equivalent; about ½ lb (¼ kg) Andouille sausage or other spicy sausage; Cayenne pepper to taste; Salt to taste. Follow the times and temperatures below.",
       "Brown outside of chicken breasts in small amount of oil then set aside (3 minutes).",
       "Make a roux from the flour in a large saucepan (3 minutes).",
       "Add peppers, onions, and celery to roux (3 minutes).",
@@ -10162,6 +10205,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (23 ounces) clams or 2 packages (24 ounces) frozen clams; sliced celery; chopped parsley; ¼ pound salt pork, diced; bay leaf; medium onions, diced; ¼ teaspoon thyme; chopped tomatoes; medium potatoes, diced; ½ quarts water; diced raw carrots; –10 soda crackers; Salt to taste; Pepper to taste. Follow the times and temperatures below.",
       "Strain the clam juice (3 minutes).",
       "Put the clams through food chopper, using the coarse blade (3 minutes).",
       "Fry pork in a heavy iron pot (3 minutes).",
@@ -10310,6 +10354,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Sampaloc (tamarind) fruits or ready-to-use tamarind paste; onion, chopped; –6 tomatoes, quartered; ½–1 kg pork belly, cubed; taro root, diced or sliced into chunks; –4 horseradish, sliced; string beans, cut in 1-inch pieces; –3 onions, quartered; kangkung (water spinach) leaves or other leafy yet crunchy vegetable even when cooked.; fish sauce; MSG (optional); reen chiles (e.g. serrano or any other fragrant and mild variety). Follow the times and temperatures below.",
       "If using whole tamarind, boil it in water until the shells crack, then work the flesh away from the seeds and strain, reserving all the liquid for the soup (3 minutes).",
       "Skip this process if using packed tamarind base (3 minutes).",
       "Sauté the chopped onions in another large pot (3 minutes).",
@@ -10320,8 +10365,7 @@
       "The soup should to thicken at this point (3 minutes).",
       "Add the horseradish, and simmer until tender-crunchy (3 minutes).",
       "Add the string beans, quartered onions, and water spinach (3 minutes).",
-      "Simmer for another 2–3 minutes (3 minutes).",
-      "Check to make sure all ingredients were cooked enough, then add the tamarind pack if using."
+      "Simmer for another 2–3 minutes (3 minutes). Check to make sure all ingredients were cooked enough, then add the tamarind pack if using."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sinigang_%28Philippine_Sour_Soup%29",
     "sourceName": "Wikibooks Cookbook",
@@ -10417,6 +10461,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ½ kilo pork head; grilled liver, diced; ½ kilo of pig's heart, grilled and minced; ½ kilo of pig's lungs, grilled and minced; ½ kilo of pig's intestines, grilled and minced; small onions, minced; red pepper, minced; garlic, minced; hot chile pepper, minced; oil from the pork fat; vinegar (sukang iloko would be good); ½ tbsp liquid seasoning; brown sugar; beef stock. Follow the times and temperatures below.",
       "Grill pork head to remove hair (3 minutes).",
       "Boil pork head until tender (3 minutes).",
       "Take out all the meat and dice (3 minutes).",
@@ -10511,6 +10556,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: cooked millet; walnuts, lightly toasted and finely chopped; extra-virgin olive oil, divided; ears of corn, off the cob; scallions, thinly sliced; riced cauliflower; ½ tsp salt, divided; gluten-free baked tofu, teriyaki flavor, diced into ¼-inch squares (optional); –2 tsp chipotle pepper in adobo sauce, chopped; ½ tsp salt; ¼ tsp black pepper; radishes, thinly sliced; fresh chives, thinly sliced. Follow the times and temperatures below.",
       "Cook the millet per the package instructions using water or vegetable stock (3 minutes).",
       "Once cooked, remove from the pan and place in a medium size mixing bowl (3 minutes).",
       "Set aside (3 minutes).",
@@ -10521,8 +10567,7 @@
       "Place a large sauté pan oven medium-high heat (3 minutes).",
       "Add 1 tablespoon olive oil (3 minutes).",
       "When hot, but not smoking, add the corn (3 minutes).",
-      "Add ½ teaspoon of salt and stir to incorporate (3 minutes).",
-      "Cook until the corn is a vibrant yellow color, about 4–5 minutes."
+      "Add ½ teaspoon of salt and stir to incorporate (3 minutes). Cook until the corn is a vibrant yellow color, about 4–5 minutes."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smokey_Millet_Super_Grain_Bowl_With_Crispy_Tofu",
     "sourceName": "Wikibooks Cookbook",
@@ -10727,6 +10772,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (2 cups) chickpea flour; (2 cups) water; Black pepper to taste; 2–3 decent grinds of a grinder should do. Follow the times and temperatures below.",
       "Heat oven as high as it can go—around 300°C / 570°F is traditional, but do whatever your oven can manage that gets close to this (3 minutes).",
       "If using a cast-iron pan, get it into the oven at the start so that it is hot when the batter goes into it (3 minutes).",
       "Whisk all the ingredients together well, ensuring there are no lumps (3 minutes).",
@@ -10792,6 +10838,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: eggs; (230 g) shortening or butter; Vanilla, to taste; (200 g) white granulated sugar; (10 g) baking powder; –3 cups (250–375 g) flour. Follow the times and temperatures below.",
       "In a large bowl, beat eggs lightly to break the yolks as one would for scrambled eggs, then mix in the shortening (3 minutes).",
       "If using butter, soften it slightly beforehand by heating it a little (3 minutes).",
       "The shortening/egg mixture should be loose (3 minutes).",
@@ -10806,68 +10853,58 @@
   },
   {
     "id": "r797",
-    "name": "Apple Fritters",
+    "name": "Bacon-Wrapped Scallops",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 1.0,
+        "unit": "",
+        "item": "quart (1 liter) vegetable oil for frying"
+      },
+      {
+        "qty": 1.0,
         "unit": "cup",
-        "item": "peeled and chopped apple"
+        "item": "teriyaki glaze"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ cup granulated sugar"
+        "item": "½ cup soy sauce"
       },
       {
-        "qty": 2,
-        "unit": "",
-        "item": "eggs, beaten"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Flour"
+        "qty": 2.0,
+        "unit": "tbsp",
+        "item": "s sugar"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "¼ cup unsalted butter, divided"
+        "item": "½ pound (225 g) bacon"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "⅛ tsp kosher salt"
-      },
-      {
-        "qty": 2,
-        "unit": "",
-        "item": "½ quarts (2.5 liters) peanut or canola oil"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Powdered sugar"
+        "qty": 1.0,
+        "unit": "lb",
+        "item": "(20–30 ea. / 450 g) of scallops"
       }
     ],
     "steps": [
-      "Run the apple, sugar, eggs, butter, and salt in the food processor until a thick paste forms (3 minutes).",
-      "Roll paste into 3-inch balls (3 minutes).",
-      "Dredge balls in flour (3 minutes).",
-      "Set aside for 2–3 minutes (3 minutes).",
-      "Heat oil to 375°F (190°C) (3 minutes).",
-      "Add paste balls and fry until golden brown and cooked through (3 minutes).",
-      "Drain fritters on a cooling rack (3 minutes).",
-      "Dust with powdered sugar before serving (3 minutes)."
+      "Gather, prep, and measure: quart (1 liter) vegetable oil for frying; teriyaki glaze; ½ cup soy sauce; s sugar; ½ pound (225 g) bacon; (20–30 ea. / 450 g) of scallops. Follow the times and temperatures below.",
+      "Heat oil in a deep-fryer or other pot to 350 °F (180 °C), making sure that the pot is large enough that the oil doesn't fill it more than halfway (3 minutes).",
+      "Combine teriyaki glaze, soy sauce and sugar in a medium bowl (3 minutes).",
+      "Set aside (3 minutes).",
+      "Cut bacon strips in half lengthwise (3 minutes).",
+      "Wrap each scallop with one of these half strips of bacon, and secure by skewering with a wooden toothpick (3 minutes).",
+      "Working in batches so as not to crowd the fryer, fry the scallops until golden brown, about 4 minutes (3 minutes).",
+      "Remove from oil, drain briefly and toss in the soy-teriyaki sauce (3 minutes).",
+      "Serve immediately (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Fritters",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bacon-Wrapped_Scallops",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -10927,6 +10964,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Honeycrisp apple, cored, peeled, and sliced into 12ths; ¾ cup bourbon; unsalted butter, melted; freshly squeezed lemon juice; ¼ cup white granulated sugar; ½ tsp freshly ground allspice; s, freshly ground; ½ tsp freshly ground cinnamon. Follow the times and temperatures below.",
       "Coat apples with butter and lemon (3 minutes).",
       "Combine sugar, allspice, cloves, and cinnamon (3 minutes).",
       "Sprinkle over apples and toss to coat (3 minutes).",
@@ -11134,6 +11172,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (21 ounces) uncooked spaghetti; extra-virgin olive oil; (4 ounces) unsalted anchovy fillets, crushed into a paste (omit anchovies for Neapolitan version); of garlic, finely chopped; (7 ounces) black olives, pitted and chopped; salted capers, washed well and coarsely chopped; –3 small dried chile peppers, chopped (optional); (roughly 2 pounds) plum tomatoes, peeled and puréed; chopped parsley; Salt to taste. Follow the times and temperatures below.",
       "Put the olive oil, garlic, and anchovy paste in a skillet over medium heat (3 minutes).",
       "Before the garlic browns, add the olives, capers, tomato sauce, and chile peppers (3 minutes).",
       "Add 2–3 pinches of salt, mixing over high heat (3 minutes).",
@@ -11244,6 +11283,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: ¼ lb (125 g) ham or bacon, cut into cubes; (450 g) beef lean or medium ground; (15 ml) olive oil; (225 ml) coarsely chopped onion; (50 ml) coarsely chopped celery; (50 ml) coarsely chopped carrot; (50 ml) coarsely chopped fennel bulb, if available; (50 ml) butter; (225 ml) canned plum tomato; ½ cup (125 ml) red wine; (500 ml) beef stock (preferably fresh, but canned beef stock will do); (50 ml) tomato paste; strip of lemon rind; bay leaf; (450 g) spaghetti pasta, preferably made from durum wheat; Parmesan cheese for garnish, preferably freshly grated Reggiano Parmesan. Follow the times and temperatures below.",
       "Mix the coarsely chopped onion, carrot, celery and fennel (optional) together and finely chop them (this is called a battuto in Italian, or a finely chopped mixture of vegetables and herbs to flavour a dish) (3 minutes).",
       "Cut the ham or bacon into little cubes and sauté in a heavy saucepan (3 minutes).",
       "Add the butter and allow it to melt (3 minutes).",
@@ -11254,8 +11294,7 @@
       "Add to the battuto in the pot (3 minutes).",
       "Add the wine to the skillet the beef was in and stir on high heat, scraping any brown bits stuck to the pan (3 minutes).",
       "Add the tomato paste and stock and stir until well mixed and add this mixture to the pot (3 minutes).",
-      "Drain and coarsely chop the plum tomatoes and add them to the pot (3 minutes).",
-      "Add the bay leaf and lemon rind."
+      "Drain and coarsely chop the plum tomatoes and add them to the pot (3 minutes). Add the bay leaf and lemon rind."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spaghetti_with_Bolognese_Meat_Sauce",
     "sourceName": "Wikibooks Cookbook",
@@ -11332,6 +11371,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: iters (1 gallon) water; Salt, to taste; (1 lb) dry spaghetti; (¾ oz) garlic, minced; (2 lb) live clams; (8 oz) diced plum tomatoes (see notes); (8 oz) canned, shelled clams, thoroughly rinsed (optional); (4 oz) bottled clam broth (optional); handful of parsley, minced; Peperoncino or, less commonly, black pepper to taste. Follow the times and temperatures below.",
       "Boil the water in a large pot with a tablespoon of salt (3 minutes).",
       "Add the spaghetti once the water starts boiling (3 minutes).",
       "Cook until the pasta is al dente (3 minutes).",
@@ -11342,8 +11382,7 @@
       "Be careful not to burn the garlic (3 minutes).",
       "Add the live clams and diced tomatoes (3 minutes).",
       "Put the lid on the pan and cook for about eight minutes (3 minutes).",
-      "Shake the pan every minute or so to help the clams open (3 minutes).",
-      "Throw out those that don't."
+      "Shake the pan every minute or so to help the clams open (3 minutes). Throw out those that don't."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spaghetti_with_Clams",
     "sourceName": "Wikibooks Cookbook",
@@ -11445,6 +11484,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (2 lbs) fresh spinach or 580 g (20 oz) frozen, thawed, and drained spinach; Lrge onion, finely chopped; extra-virgin olive oil; chopped scallions; ½ cup minced fresh parsley; minced fresh dill; ¼ tsp freshly ground nutmeg; lemon juice; ¾ cup crumbled feta cheese; ¾ cup small curd cottage cheese; freshly grated parmesan cheese; eggs, beaten; –20 sheets phyllo pastry; ⅔ cup clarified butter; ¼ tsp freshly-ground black pepper; ½ tsp salt (or to taste). Follow the times and temperatures below.",
       "Preheat oven to 180°C (350°F) (3 minutes).",
       "Wash the spinach, remove large stems, and chop (3 minutes).",
       "Place in a steamer over boiling water and steam for 2 minutes, or until wilted and reduced in volume (3 minutes).",
@@ -11455,8 +11495,7 @@
       "Remove from heat (3 minutes).",
       "Stir in parsley, dill, nutmeg, salt and pepper (3 minutes).",
       "Add the cheeses, spinach, and lemon juice to the skillet (3 minutes).",
-      "Mix (3 minutes).",
-      "Add eggs and mix again gently."
+      "Mix (3 minutes). Add eggs and mix again gently."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spanakopita",
     "sourceName": "Wikibooks Cookbook",
@@ -11503,6 +11542,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (450 g) waxy potatoes; Lrge white/Spanish onion (optional); About 1 liter oil (olive oil preferred); eggs. Follow the times and temperatures below.",
       "Peel and slice potatoes (3 minutes).",
       "The slices should be quite thin (3 minutes).",
       "Meanwhile, heat the oil on a low heat in a large sauté pan (3 minutes).",
@@ -11513,8 +11553,7 @@
       "Fry it lightly in frying pan, stirring frequently for a few minutes or until sweet (3 minutes).",
       "Or you can simply add them to the potatoes for the last five minutes of cooking (3 minutes).",
       "Beat the eggs in a large bowl and add salt (3 minutes).",
-      "Add the hot cooked potatoes and onion to the egg in the bowl, gently mix the potatoes and onion into the egg and leave it for five minutes (3 minutes).",
-      "This starts the egg cooking and helps cover the potato slices in egg so it all sticks together nicely."
+      "Add the hot cooked potatoes and onion to the egg in the bowl, gently mix the potatoes and onion into the egg and leave it for five minutes (3 minutes). This starts the egg cooking and helps cover the potato slices in egg so it all sticks together nicely."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spanish_Omelet",
     "sourceName": "Wikibooks Cookbook",
@@ -11571,6 +11610,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: light brown sugar; table salt; speculaas spices; self-raising flour; egg, beaten. Follow the times and temperatures below.",
       "Cream together the butter, sugar, salt, and spices until you have a soft mass (3 minutes).",
       "Add the egg and flours, and mix into a soft dough (3 minutes).",
       "If desired, let the dough rest for 2 days in the fridge (3 minutes).",
@@ -11581,8 +11621,7 @@
       "Flip the mold over, and smack it forcefully face-down on the kitchen worktop (3 minutes).",
       "This should get the speculaas out of the template (3 minutes).",
       "Arrange the speculaas on a well-buttered baking sheet, leaving enough space between them to allow for spreading (3 minutes).",
-      "Bake the speculaas in a 170°C oven (3 minutes).",
-      "Small cookies will take 20 minutes, while larger ones can take 30 minutes or more."
+      "Bake the speculaas in a 170°C oven (3 minutes). Small cookies will take 20 minutes, while larger ones can take 30 minutes or more."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Speculaas_%28Dutch_Spiced_Cookies%29",
     "sourceName": "Wikibooks Cookbook",
@@ -11639,6 +11678,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Spelt; Leek; Oat flakes; Onions; Cumin; Chillies. Follow the times and temperatures below.",
       "Grind the spelt coarsely (if you have entire corns) (3 minutes).",
       "Soak the spelt with oat flakes in some water, in order to get a viscous substance (3 minutes).",
       "The burgers will be more compact if you add more oat flakes (3 minutes).",
@@ -11729,75 +11769,70 @@
   },
   {
     "id": "r809",
-    "name": "Spinach Fritters",
-    "minutes": 30,
-    "servings": 12,
+    "name": "Kipspek (Bacon-wrapped Chicken)",
+    "minutes": 45,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "Greek yogurt"
-      },
-      {
-        "qty": 1,
-        "unit": "cup",
-        "item": "wheat flour"
-      },
-      {
-        "qty": 3,
+        "qty": 1.0,
         "unit": "",
-        "item": "handfuls of spinach and rocket leaves"
-      },
-      {
-        "qty": 3,
-        "unit": "",
-        "item": "eggs"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "baking powder"
-      },
-      {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "minced garlic"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "olive oil"
+        "item": "–2 chicken breasts, cubed"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "Salt"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Ground black pepper to taste"
+        "item": "Black pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Bacon strips"
+      },
+      {
+        "qty": 1.0,
+        "unit": "",
+        "item": "–2 eggs"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Fine powdery breadcrumbs"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Toothpicks"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Oil"
       }
     ],
     "steps": [
-      "Combine the yogurt, flour, minced garlic, olive oil, salt and pepper in the mixing bowl (3 minutes).",
-      "Chop the spinach and rocket leaves, and add them to the mixing bowl (3 minutes).",
-      "Mix in the baking powder (3 minutes).",
-      "Preheat a frying pan, and grease with olive oil (3 minutes).",
-      "Dollop spoonfuls of batter on the pan to make a few fritters about 3 cm apart from each other (3 minutes).",
-      "Cook fritters until the bottoms of the fritters are golden brown (3 minutes).",
-      "Flip the fritters with a spatula, and cook until the second side is golden brown (3 minutes).",
-      "Remove from the pan (3 minutes).",
-      "Repeat the cooking steps until all the batter is used up (3 minutes).",
-      "Enjoy and share with friends and family!."
+      "Gather, prep, and measure: –2 chicken breasts, cubed; Bacon strips; –2 eggs; Fine powdery breadcrumbs; Toothpicks. Follow the times and temperatures below.",
+      "Season the chicken with salt and pepper (3 minutes).",
+      "Wrap each cube of chicken in a strip of bacon (3 minutes).",
+      "To make sure the bacon doesn't roll off the chicken, stick a toothpick from one end to the other (3 minutes).",
+      "Roll the kipspek in the breadcrumbs (3 minutes).",
+      "Whisk the eggs, and dip each kipspek in the eggs (3 minutes).",
+      "Roll the kipspek through the breadcrumbs once again (3 minutes).",
+      "Leave them for about half an hour to dry out the surface (3 minutes).",
+      "Heat the oil in a deep pot (3 minutes).",
+      "Fry the kipspeks until they're golden brown all over (3 minutes).",
+      "Serve with ketchup or mustard—don't forget to remove the toothpick before taking a bite (3 minutes). Cook poultry to 165°F (74°C), ground meats to 160°F (71°C), and whole cuts of pork, beef, or lamb to 145°F (63°C) with a rest before serving."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spinach_Fritters",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kipspek_%28Bacon-wrapped_Chicken%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -11912,15 +11947,13 @@
       }
     ],
     "steps": [
-      "Beat butter and sugar until light (3 minutes).",
+      "Gather, prep, and measure: ⅔ cup confectioners' sugar; egg; egg yolk; almond, vanilla, or lemon extract; unbleached unsifted flour; ¼ tsp salt; ½ tsp baking powder. Follow the times and temperatures below.",
+      "Beat butter and sugar until light (3 minutes), adding the egg, adding the egg, adding the egg, adding the egg, adding the egg, adding the egg.",
       "Beat in egg, egg yolk and extract (3 minutes).",
       "Sift flour, salt, and baking powder together; gradually add flour mixture to eggs (3 minutes).",
       "Chill dough for ½ hour (3 minutes).",
       "Press ¼ of the dough into a cookie press (3 minutes).",
-      "Keep remaining dough chilled (3 minutes).",
-      "Shape cookies onto a greased baking sheet (3 minutes).",
-      "Bake in oven at for 7–10 minutes or until done (3 minutes).",
-      "Cool on wire racks and store in airtight tins."
+      "Keep remaining dough chilled (3 minutes). Shape cookies onto a greased baking sheet (3 minutes). Bake in oven at for 7–10 minutes or until done (3 minutes). Cool on wire racks and store in airtight tins."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spritzgeback_%28German_Spritz_Butter_Cookies%29",
     "sourceName": "Wikibooks Cookbook",
@@ -12087,18 +12120,13 @@
       }
     ],
     "steps": [
-      "Cut the beef into cubes about square (3 minutes).",
+      "Gather, prep, and measure: (2 lb) good beef stewing steak, at room temperature; medium onion, peeled and diced; (15 ml) plain flour; Worcestershire sauce; handful fresh thyme, marjoram and chopped parsley; (5 ml) English mustard; bay leaf; Cracked black pepper; (5.1 US oz) beef stock; (4.2 US oz) ale; puff pastry. Follow the times and temperatures below.",
+      "Cut the beef into cubes about square (3 minutes), adding the (4.2 US oz) ale, adding the (4.2 US oz) ale, adding the (4.2 US oz) ale, adding the (4.2 US oz) ale, adding the (4.2 US oz) ale, adding the (4.2 US oz) ale.",
       "Heat oil in a saucepan and fry the onion, without letting it colour (3 minutes).",
       "Add beef, making sure the meat is at room temperature first, and cook until medium brown (3 minutes).",
       "Stir in the flour and cook until dark brown (about 1 minute) (3 minutes).",
       "Add Worcestershire sauce, thyme, marjoram, mustard, bay leaf and seasoning (3 minutes).",
-      "Slowly add beef stock and ale, then bring to the boil (3 minutes).",
-      "Simmer gently until beef is almost tender, approximately 1 ½ hours (3 minutes).",
-      "Preheat oven to  (3 minutes).",
-      "Remove meat from heat, skim off any fat, adjust seasoning and add fresh chopped parsley (3 minutes).",
-      "Place in pie dish or individual dishes (3 minutes).",
-      "Cover pie dish (or dishes) with the pastry and trim edges (3 minutes).",
-      "Bake for 20–25 minutes or until pastry is well-risen and golden brown."
+      "Slowly add beef stock and ale, then bring to the boil (3 minutes). Simmer gently until beef is almost tender, approximately 1 ½ hours (3 minutes). Preheat oven to  (3 minutes). Remove meat from heat, skim off any fat, adjust seasoning and add fresh chopped parsley (3 minutes). Place in pie dish or individual dishes (3 minutes). Cover pie dish (or dishes) with the pastry and trim edges (3 minutes). Bake for 20–25 minutes or until pastry is well-risen and golden brown."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Steak_and_Ale_Pie",
     "sourceName": "Wikibooks Cookbook",
@@ -12145,6 +12173,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: (2 lb) rump steak; kidneys; Suet-crust. Follow the times and temperatures below.",
       "Cut the steak into about 2.5 cm (1 inch) squares (3 minutes).",
       "Cut each kidney into 8 pieces (3 minutes).",
       "Line the basin with crust, leaving a small piece of crust to overlap the edge (3 minutes).",
@@ -12429,6 +12458,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: pack (500 g) Hong Kong-style egg noodles, rehydrated and boiled if needed; garlic, crushed; fishballs, cut into 1 cm pieces; shrimp, shells removed; cabbage, cut into bite-sized pieces; scallions, cut into 1 cm pieces; bean sprouts, rinsed in hot water; light soy sauce; fried onion. Follow the times and temperatures below.",
       "Heat the oil in a non-stick pan, add the garlic, and fry for about 10 seconds until golden brown (3 minutes).",
       "Add the fishball and shrimp (3 minutes).",
       "Stir fry until the shrimp and fishball just begin to change color (3 minutes).",
@@ -12497,6 +12527,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: chicken broth; Lrge eggs; ½ cup shredded parmesan cheese; ~¼ cup fresh chopped parsley; ~1 tsp black pepper to taste; ~½ tsp nutmeg (optional); Semolina (optional); Red chile flakes, or chile powder (optional). Follow the times and temperatures below.",
       "Put the broth in a large pot, and bring to a boil (3 minutes).",
       "Separately, combine eggs, cheese, and parsley, and beat until the cheese and parsley are moistened (3 minutes).",
       "Once the broth is at a rolling boil, use a whisk to set the fluid whirling (3 minutes).",
@@ -12510,57 +12541,49 @@
   },
   {
     "id": "r820",
-    "name": "Classic American Apple Pie",
+    "name": "Tofu Bacon (Vegan)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 12,
-        "unit": "oz",
-        "item": "all-purpose flour"
-      },
-      {
-        "qty": 8,
-        "unit": "oz",
-        "item": "cold butter, cut into ½-inch pieces"
-      },
-      {
-        "qty": 5,
+        "qty": 1.0,
         "unit": "",
-        "item": "–7 tbsp applejack (apple brandy) or hard cider"
+        "item": "block extra-firm tofu"
       },
       {
-        "qty": 1,
-        "unit": "tsp",
-        "item": "table salt"
-      },
-      {
-        "qty": 1,
+        "qty": 3.0,
         "unit": "tbsp",
-        "item": "sugar"
+        "item": "vegetable oil"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "soy sauce or tamari"
+      },
+      {
+        "qty": 3.0,
+        "unit": "tbsp",
+        "item": "nutritional yeast flakes"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Liquid smoke (optional)"
       }
     ],
     "steps": [
-      "Combine dough ingredients to get a mealy dough (3 minutes).",
-      "Split in half by weight, shape into 2 disks, and chill for 1 hour (3 minutes).",
-      "Toss apples with ¼ cup sugar and place in a colander set over a large bowl (3 minutes).",
-      "Let drain for 1 ½ hours (3 minutes).",
-      "Transfer liquid from bowl into a saucepan, and bring to a boil over medium high heat (3 minutes).",
-      "Cook until reduced to 2 tbsp (3 minutes).",
-      "Set aside (3 minutes).",
-      "Toss apples with remaining filling ingredients (3 minutes).",
-      "Set aside (3 minutes).",
-      "Roll out both disks of crust into rough circles (3 minutes).",
-      "Place one inside a 9 ½–10-inch tart pan and attach (3 minutes).",
-      "Add apples to the crust in a concentric circle, starting from the outside and working to the inside, making the center slightly taller than the outside (3 minutes)."
+      "Slice the tofu into thin strips like traditional bacon (3 minutes).",
+      "Fry strips in a pan on medium heat, turning once, until crispy and golden brown on each side (3 minutes).",
+      "Add soy sauce and one to two drops of liquid smoke, and toss with the tofu bacon slices (3 minutes).",
+      "Coat with nutritional yeast, and remove from heat (3 minutes).",
+      "Taste and adjust seasoning before serving (1 minute)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Classic_American_Apple_Pie",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tofu_Bacon_%28Vegan%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12610,6 +12633,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: grits; ½–1 tsp salt; Black pepper to taste; Butter or margarine; Grated cheddar cheese. Follow the times and temperatures below.",
       "Bring the water to a boil in a 1–2 quart saucepan (3 minutes).",
       "Add the grits, stirring constantly (3 minutes).",
       "Reduce heat to low, stirring occasionally until until grits begin to thicken (3 minutes).",
@@ -12625,57 +12649,55 @@
   },
   {
     "id": "r822",
-    "name": "Strawberry Pie",
+    "name": "Angels on Horseback (Bacon-wrapped Oysters)",
     "minutes": 45,
-    "servings": 6,
+    "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
         "qty": null,
         "unit": "",
-        "item": "Pillsbury pie crust"
+        "item": "½ cup dry white wine"
       },
       {
-        "qty": 1,
-        "unit": "cup",
-        "item": "sliced strawberries"
-      },
-      {
-        "qty": 1.25,
-        "unit": "cup",
-        "item": "water"
+        "qty": 1.0,
+        "unit": "clove",
+        "item": "garlic, minced"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "⅔ cup white granulated sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "tbsp",
-        "item": "lemon juice"
+        "item": "Salt to taste"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Whipped cream"
+        "item": "Pepper to taste"
+      },
+      {
+        "qty": 12.0,
+        "unit": "",
+        "item": "shucked oysters"
+      },
+      {
+        "qty": 6.0,
+        "unit": "slice",
+        "item": "s lean bacon"
       }
     ],
     "steps": [
-      "Place your strawberries in a saucepan and add water, sugar, and lemon juice (3 minutes).",
-      "Bring to a boil and stir occasionally until thick and syrupy (3 minutes).",
-      "Arrange the pie crust in a pie pan (unless the pie crust comes with a pan) (3 minutes).",
-      "Pour filling into the pie crust (3 minutes).",
-      "Bake in the oven at 350°F for 60 minutes or until golden brown (3 minutes).",
-      "Remove pie, and let it cool (3 minutes).",
-      "Serve with whipped cream on top."
+      "Mix the wine, garlic, salt, and pepper together (3 minutes).",
+      "Add the oysters and marinate 10 to 20 minutes (3 minutes).",
+      "Preheat the broiler (3 minutes).",
+      "Cut each bacon slice in half and wrap each oyster with a piece of bacon, securing with a toothpick (3 minutes).",
+      "Broil on both sides until the bacon is crisp (3 minutes).",
+      "You may also cook them on an outdoor or rangetop grill (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Strawberry_Pie",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Angels_on_Horseback_%28Bacon-wrapped_Oysters%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -12995,6 +13017,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: sesame oil; garlic, minced; red chillies, sliced 1 cm thick; reen chillies, sliced 1 cm thick; scallions (white part only), sliced thin; bean sprouts, soaked in hot water; fresh parsley; Duck meat, sliced 1 cm thick; cooked rice; light soy sauce; habanero; ½ tbsp salt. Follow the times and temperatures below.",
       "Heat the butter and sesame oil in a non-stick frying pan over medium-high heat (3 minutes).",
       "Add the garlic, chillies, and scallion (3 minutes).",
       "Fry, stirring, for 15 seconds until fragrant (3 minutes).",
@@ -13084,6 +13107,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Batch of thin, freshly-picked grape leaves (choose only the thinnest leaves); uncooked rice, rinsed; Turmeric; Dried mint leaves; raisins; Fresh dill, finely chopped; Parsley; Green onions (scallions); Cooking oil; emon. Follow the times and temperatures below.",
       "Soak leaves in boiling hot water to soften, about 15 minutes (3 minutes).",
       "Combine the rice, turmeric, pepper, salt, mint, raisins, dill, parsley and green onions (3 minutes).",
       "Place some of the rice mixture on a leaf, close to one end (3 minutes).",
@@ -13175,6 +13199,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: –4 winter squashes, depending on size (red kuri, blue hubbard, acorn, or other round-ish winter squash); ½ cups rice pilaf mix; almond oil; ½ cups slivered almonds; Red pepper flakes; small yellow onion, diced; red bell pepper (optional); Water or broth; –4 cloves garlic; grated cheese (gruyère or appenzeller). Follow the times and temperatures below.",
       "Cut off the top of the squash and dig out the soft insides and seeds (3 minutes).",
       "Throw away the insides and seeds (3 minutes).",
       "Coat the squash, inside and out, with a thin layer of olive oil (3 minutes).",
@@ -13236,6 +13261,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: Beef, sliced thin; napa cabbage; Green onions; Firm tofu; Shiitake mushrooms; Spinach; Shirataki noodles. Follow the times and temperatures below.",
       "Wash the vegetables, and cut them into large pieces (3 minutes).",
       "Soak the mushrooms in warm water for 15 minutes (3 minutes).",
       "Mix the sauce ingredients in a small bowl (3 minutes).",
@@ -13253,77 +13279,77 @@
   },
   {
     "id": "r830",
-    "name": "Summer Pudding",
+    "name": "Bacon and Egg Stuffed Tomatoes",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 1,
+        "qty": 6.0,
         "unit": "",
-        "item": "punnet strawberries, large ones halved"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "punnet raspberries"
+        "item": "large tomatoes, washed"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ punnet blackcurrants"
+        "item": "Salt and pepper to taste"
+      },
+      {
+        "qty": 6.0,
+        "unit": "slice",
+        "item": "s bacon, cooked and crumbled; or 4 tablespoons bacon bits"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "½ punnet redcurrants"
+        "item": "¾ cups diced celery"
       },
       {
-        "qty": 1,
-        "unit": "l",
-        "item": "oaf of white, pappy sort of bread or brioche, crusts removed and sliced"
-      },
-      {
-        "qty": 2,
-        "unit": "tbsp",
-        "item": "caster sugar"
-      },
-      {
-        "qty": 1,
-        "unit": "l",
-        "item": "ime, finely zested"
-      },
-      {
-        "qty": 2,
+        "qty": 6.0,
         "unit": "",
-        "item": "–3 mint leaves, finely chopped"
+        "item": "hard boiled eggs"
       },
       {
-        "qty": 1,
+        "qty": null,
         "unit": "",
-        "item": "bottle of the best quality blackcurrant cordial you can find, in reserve"
+        "item": "⅓ cup mayonnaise"
+      },
+      {
+        "qty": 2.0,
+        "unit": "tsp",
+        "item": "chopped fresh parsley"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon salt"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "¼ teaspoon pepper"
+      },
+      {
+        "qty": null,
+        "unit": "",
+        "item": "Paprika"
       }
     ],
     "steps": [
-      "Liberally butter the inside a pudding bowl about 5 inches in diameter (3 minutes).",
-      "The bowl should preferably not be greater in diameter that the size of your pieces of sliced bread (3 minutes).",
-      "If you are worried about getting the whole thing out of the bowl in one piece, line the bowl first with some cling film (3 minutes).",
-      "It's a fiddly job, but ensures you get a perfect shape at the end (3 minutes).",
-      "Combine the blackcurrants, redcurrants, mint leaves, lime zest, sugar, and about 3 tbsp water (3 minutes).",
-      "Poach them for about 5 minutes on the lowest possible heat setting of your stove (3 minutes).",
-      "Add the strawberries and poach for another minute (3 minutes).",
-      "Turn the heat off and add the raspberries (3 minutes).",
-      "Leave to cool (3 minutes).",
-      "Using the prepared bowl as a guide, cut a circle out of the white bread the same diameter as the top of the bowl (3 minutes).",
-      "Do the same with the bottom of the bowl (3 minutes).",
-      "Using a sharp knife, slice the bread into squares or oblongs, roughly the same height as the bowl, which will be used to line the inside of the bowl."
+      "Cut tops from tomatoes (3 minutes).",
+      "Scoop out pulp, leaving shells intact (3 minutes).",
+      "Chop tomato pulp (3 minutes).",
+      "Drain tomato shells and sprinkle cavities with salt and pepper (3 minutes).",
+      "Combine tomato pulp, bacon, celery, eggs, mayonnaise, parsley, and measured salt and pepper (3 minutes).",
+      "Stir well (3 minutes).",
+      "Fill tomato shell with bacon and egg mixture (3 minutes).",
+      "Sprinkle with paprika (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Summer_Pudding",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bacon_and_Egg_Stuffed_Tomatoes",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -13387,6 +13413,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: rice wafers (rice paper, tapioca sheet); –8 prawns; cooked pork or chicken meat; cooked rice vermicelli; cucumber, sliced into fingers; eaves of leafy lettuce (e.g. romaine/cos, mignonette, etc.); eaves of Chinese cabbage, halved lengthways; Fresh herbs, to taste (e.g. coriander, basil, mint); Warm water. Follow the times and temperatures below.",
       "Dip a rice wafer into the warm water and remove immediately when it is completely wet—it only needs to be in the water for a few seconds (3 minutes).",
       "Lay the rice wafer on a board or plate (3 minutes).",
       "Arrange a portion of the ingredients near the edge of the rice wafer in a neat pile, with the fingers of cucumber roughly parallel to the edge of the wafer (3 minutes).",
@@ -13451,6 +13478,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: black tea; oolong tea; yerba mate; itres (5 cups) just-boiled water; sugar or maple syrup (optional); milk or fruit juice (optional); ½ cup ice (optional). Follow the times and temperatures below.",
       "Place tea bags in French press or coffee pot (3 minutes).",
       "Make sure to keep the strings taut to prevent the paper weights from falling in (3 minutes).",
       "Pour the hot water into French press (3 minutes).",
@@ -13532,6 +13560,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: bacon drippings or vegetable oil; –4 pounds of beef chunks; ½ tablespoons butter; ½ tablespoons vinegar; brown sugar; ½ tablespoons dry mustard; ¾ teaspoons salt; ¾ cup water; –3 bottles chili sauce; dash of tobacco (optional). Follow the times and temperatures below.",
       "Add the bacon drippings/vegetable oil to a skillet over high heat (3 minutes).",
       "Add the beef to the skillet, and brown the meat on all sides (3 minutes).",
       "Do not cook completely through (3 minutes).",
@@ -13542,8 +13571,7 @@
       "Simmer for 10 minutes (3 minutes).",
       "Combine all ingredients in a slow cooker (3 minutes).",
       "Stir together (3 minutes).",
-      "Cook on low for 2½–3½ hours (3 minutes).",
-      "Serve with mashed potatoes and honey carrots."
+      "Cook on low for 2½–3½ hours (3 minutes). Serve with mashed potatoes and honey carrots."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sweet_Beef",
     "sourceName": "Wikibooks Cookbook",
@@ -13595,6 +13623,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: medium sweet potato; (14.3 g) honey; ½ tsp (2.5 g) salt; ¼ tsp (1.25 g) smoked paprika (optional); (5 g) flavorless oil (such as canola oil); ½ tbsp (7.15 g) unsalted butter. Follow the times and temperatures below.",
       "Peel the sweet potato, then chop it into 1 cm (0.4 in) cubes (3 minutes).",
       "The pieces of sweet potato don't need to be exactly 1 cm on each side, but they should all be around that size to ensure even cooking (3 minutes).",
       "Discard the peel (3 minutes).",
@@ -13605,8 +13634,7 @@
       "There shouldn't be any sweet potato chunks on top of each other (3 minutes).",
       "Pour the honey mixture over the potatoes and stir until it's evenly distributed across all of the potato pieces (3 minutes).",
       "Cook for about 10 minutes, stirring the sweet potatoes every other minute (3 minutes).",
-      "It's important to stir the potato pieces in order to prevent them from burning on one side, but stirring them too frequently won't allow them to brown sufficiently, which is why it's important to stir once every 2 minutes or so (3 minutes).",
-      "Serve topped with extra salt to your liking and enjoy!."
+      "It's important to stir the potato pieces in order to prevent them from burning on one side, but stirring them too frequently won't allow them to brown sufficiently, which is why it's important to stir once every 2 minutes or so (3 minutes). Serve topped with extra salt to your liking and enjoy!."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sweet_Potatoes_Saut%C3%A9ed_with_Honey",
     "sourceName": "Wikibooks Cookbook",
@@ -13702,18 +13730,13 @@
       }
     ],
     "steps": [
-      "Rinse the Basmati rice thoroughly and soak it in water for about 30 minutes (3 minutes).",
+      "Gather, prep, and measure: Basmati rice; onion, thinly sliced; ghee; ¼ teaspoon whole cumin seeds; ½ tablespoon ginger-garlic paste; reen cardamom pods; -inch cinnamon stick, broken into pieces; bay leaves; s; black peppercorns; Salt to taste; –5 green chiles; Kewra water (pandan flower extract); rose water; Your choice of meat (e.g. chicken, lamb, or beef). Follow the times and temperatures below.",
+      "Rinse the Basmati rice thoroughly and soak it in water for about 30 minutes (3 minutes), adding the s, adding the s, adding the s, adding the s, adding the s, adding the s.",
       "Drain the rice and set it aside (3 minutes).",
       "In a large, heavy-bottomed pan or pot, heat the ghee over medium heat (3 minutes).",
       "Add the whole cumin seeds, ginger-garlic paste, sliced onion, green cardamom, cinnamon pieces, bay leaves, cloves, and black peppercorns (3 minutes).",
       "Sauté until the onions turn golden brown and aromatic (3 minutes).",
-      "Add your meat to the pan and cook until it's no longer pink (3 minutes).",
-      "Add the drained rice to the pan and stir well, ensuring it's coated with the flavorful mixture (3 minutes).",
-      "Pour in enough water to cover the rice (typically about 4 cups of water for 2 cups of rice) (3 minutes).",
-      "Season with salt according to your taste (3 minutes).",
-      "Bring the mixture to a boil, then reduce the heat to low, cover the pot, and let it simmer for about 15–20 minutes or until the rice is cooked and the water is absorbed (3 minutes).",
-      "While the rice is cooking, make shallow cuts (slits) on the green chilies to release their flavor (3 minutes).",
-      "Once the rice is done, remove it from heat and let it sit, covered, for a few more minutes to allow the flavors to meld."
+      "Add your meat to the pan and cook until it's no longer pink (3 minutes). Add the drained rice to the pan and stir well, ensuring it's coated with the flavorful mixture (3 minutes). Pour in enough water to cover the rice (typically about 4 cups of water for 2 cups of rice) (3 minutes). Season with salt according to your taste (3 minutes). Bring the mixture to a boil, then reduce the heat to low, cover the pot, and let it simmer for about 15–20 minutes or until the rice is cooked and the water is absorbed (3 minutes). While the rice is cooking, make shallow cuts (slits) on the green chilies to release their flavor (3 minutes). Once the rice is done, remove it from heat and let it sit, covered, for a few more minutes to allow the flavors to meld."
     ],
     "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sylheti_Biryani",
     "sourceName": "Wikibooks Cookbook",
@@ -13775,78 +13798,51 @@
   },
   {
     "id": "r837",
-    "name": "Sylheti Onion and Rice Fritters",
+    "name": "Flammekueche (Bacon and Onion Flatbread)",
     "minutes": 45,
     "servings": 4,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 2,
+        "qty": null,
         "unit": "",
-        "item": "medium-sized onions, chopped"
-      },
-      {
-        "qty": 1,
-        "unit": "",
-        "item": "thumb-sized piece of ginger"
-      },
-      {
-        "qty": 570,
-        "unit": "ml",
-        "item": "boiling water"
+        "item": "¼ cup all-purpose flour"
       },
       {
         "qty": null,
         "unit": "",
-        "item": "Salt to taste"
+        "item": "¼ cup moderately hot water, about 110 °F (45 °C)"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Turmeric powder"
+        "qty": 1.0,
+        "unit": "tbsp",
+        "item": "sugar"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Panch puran (optional)"
-      },
-      {
-        "qty": 300,
-        "unit": "g",
-        "item": "rice flour"
-      },
-      {
-        "qty": 120,
-        "unit": "g",
-        "item": "ground rice"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Chopped coriander (optional)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Water"
+        "qty": 1.0,
+        "unit": "package",
+        "item": "yeast"
       }
     ],
     "steps": [
-      "Blend the onions, ginger, and garlic, then add them to a saucepan with the boiling water (3 minutes).",
-      "Season the mixture with salt and turmeric powder (3 minutes).",
-      "Optionally incorporate panch puran (3 minutes).",
-      "Stir plain flour, rice flour, and/or ground rice into the saucepan, forming a spongy, soft paste (3 minutes).",
-      "Once the paste is fully cooked, remove it from the saucepan and let it cool (3 minutes).",
-      "Knead the paste on a floured surface until it comes together into a dough (3 minutes).",
-      "Flatten or roll out the dough, then cut out pieces (3 minutes).",
-      "Deep fry the dough pieces in hot oil, then drain and serve."
+      "Mix the starter ingredients together in a small bowl, cover tightly, and set aside in a warm place for 30 minutes (3 minutes).",
+      "When the starter is light and bubbly, mix the beer and milk into the mixture (3 minutes).",
+      "Put the flour and salt into a food processor, then, with the motor running, add the yeast mixture through the feeding tube (3 minutes).",
+      "Process the dough until it forms a ball (3 minutes).",
+      "Add very small amounts of additional flour or milk if necessary (3 minutes).",
+      "Process the ball until it is smooth, elastic, and warm, about 45 seconds to 1 minute (3 minutes).",
+      "Butter a medium-sized bowl, roll the ball around in the butter, then cover and let rise in a warm place until doubled (3 minutes).",
+      "Punch down and let rise a second time (3 minutes).",
+      "While the dough is rising, heat 1 tablespoon of the oil in a nonstick skillet (3 minutes).",
+      "Add the onion and cook, stirring, over low heat for 5 minutes or until golden brown (3 minutes).",
+      "Let cool (3 minutes).",
+      "Combine the crème fraîche, salt, pepper, and nutmeg (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sylheti_Onion_and_Rice_Fritters",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Flammekueche_%28Bacon_and_Onion_Flatbread%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -14051,6 +14047,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: all-purpose wheat flour; whole-wheat flour; dried yeast. Follow the times and temperatures below.",
       "Mix the dry ingredients together (3 minutes).",
       "Add olive oil, then gradually knead in enough water to make a dough (3 minutes).",
       "Knead for 10 minutes (3 minutes).",
@@ -14110,7 +14107,8 @@
       }
     ],
     "steps": [
-      "Cook the rice (3 minutes).",
+      "Gather, prep, and measure: –2 ounces (50 g) white parboiled rice; (500 g) ground meat (either beef, lamb, or pork); large red bell peppers; egg; Salt, pepper, paprika. Follow the times and temperatures below.",
+      "Cook the rice (3 minutes), adding the egg, adding the egg, adding the egg, adding the egg, adding the egg, adding the egg.",
       "Turn on the oven to preheat at 390°F (200°C), while placing a baking dish with the bottom covered in oil (or water or thin tomato sauce) inside (3 minutes).",
       "Cut out the stems and the seeds of the peppers so that the peppers form a cup (3 minutes).",
       "Mix the rice, the egg and the ground beef and spice everything with salt, pepper and paprika (3 minutes).",
@@ -14182,6 +14180,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: red or green bird's eye chiles; shallots; palm sugar, thinly sliced; ea. tamarind pods; of Sumedang tofu or tofu pong; kecap manis; Salt to taste. Follow the times and temperatures below.",
       "Grind the chiles, garlic, and shallots together, then set aside (3 minutes).",
       "Combine the palm sugar, tamarind, and water in a saucepan (3 minutes).",
       "Boil the mixture until all the ingredients dissolve and form a syrup (3 minutes).",
@@ -14196,58 +14195,45 @@
   },
   {
     "id": "r843",
-    "name": "Tamina (Algerian Semolina Honey Dessert)",
+    "name": "Rumaki (Bacon-wrapped Chicken Liver and Water Chestnut)",
     "minutes": 45,
-    "servings": 4,
+    "servings": 12,
     "tags": [
       "dinner",
       "medium",
-      "moderate",
-      "vegetarian"
+      "moderate"
     ],
     "ingredients": [
       {
-        "qty": 500,
-        "unit": "g",
-        "item": "semolina (medium-grind)"
+        "qty": null,
+        "unit": "",
+        "item": "¼ cup soy sauce"
       },
       {
-        "qty": 250,
-        "unit": "g",
-        "item": "melted butter"
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "fresh minced ginger"
       },
       {
-        "qty": 250,
-        "unit": "g",
-        "item": "honey"
-      },
-      {
-        "qty": 1,
+        "qty": 2.0,
         "unit": "tbsp",
-        "item": "orange blossom water (mazhar)"
+        "item": "dry sherry"
       },
       {
-        "qty": null,
-        "unit": "",
-        "item": "Ground cinnamon (for decoration)"
-      },
-      {
-        "qty": null,
-        "unit": "",
-        "item": "Dragées or almonds (for final decoration)"
+        "qty": 1.0,
+        "unit": "tsp",
+        "item": "sugar"
       }
     ],
     "steps": [
-      "Toast the semolina in a frying pan or in a cast iron dish until it takes on a nice golden color (3 minutes).",
-      "Remove from the heat, and let it completely cool down (3 minutes).",
-      "Melt the butter and honey in a saucepan, and add orange blossom water (3 minutes).",
-      "Gradually add the cooled semolina while mixing (3 minutes).",
-      "Cook for 3–5 minutes while stirring to combine everything well (3 minutes).",
-      "Pour the tamina on a plate without waiting too long, and even out the surface (3 minutes).",
-      "Sprinkle with cinnamon and garnish with almonds or dragées (3 minutes).",
-      "Let cool and serve."
+      "Combine soy sauce, ginger, sherry and sugar in a small bowl (3 minutes).",
+      "Add the chicken livers and water chestnut pieces and marinate them in the refrigerator for at least ½ hour (3 minutes).",
+      "Place 1 chicken liver piece and 1 chestnut piece in the center of each bacon piece, wrap, and secure with a toothpick (3 minutes).",
+      "Place the rumaki on a broiler pan or shallow baking pan and broil, about 5–6 inches from the heat, until the bacon is crisp, about 10–15 minutes (3 minutes).",
+      "Or, you may bake the appetizers in a 375°F oven for 20–25 minutes (3 minutes).",
+      "Serve hot (3 minutes)."
     ],
-    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tamina_%28Algerian_Semolina_Honey_Dessert%29",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Rumaki_%28Bacon-wrapped_Chicken_Liver_and_Water_Chestnut%29",
     "sourceName": "Wikibooks Cookbook",
     "sourceLicense": "CC BY-SA 4.0"
   },
@@ -14533,6 +14519,7 @@
       }
     ],
     "steps": [
+      "Gather, prep, and measure: s medium shrimp with tails, peeled and deveined; Freshly-squeezed lemon juice; Cornmeal; ⅓ cup melted unsalted butter; freshly-ground black pepper; ⅓ cup hot sauce; soy sauce; s garlic, smashed and very finely minced; ½ quarts peanut oil. Follow the times and temperatures below.",
       "Combine butter, hot sauce, soy, and garlic (3 minutes).",
       "Set aside (3 minutes).",
       "Dip shrimp into lemon juice (3 minutes).",

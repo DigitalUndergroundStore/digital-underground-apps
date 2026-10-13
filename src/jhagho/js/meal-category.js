@@ -22,7 +22,7 @@
 
   var SOUP_NAME = /\b(soup|chowder|bisque|stew|chili|curry|gumbo|ragout)\b/i;
 
-  var DESSERT_NAME = /\b(cookie|brownie|mousse|(?<!pot )(?<!shepherd'?s )(?<!chicken )pie\b|crisp|(?<!butter )tart\b|bars\b|(?<!rice )pudding|cake|nice cream|nanaimo|fudge|truffle|cheesecake|cupcake|icing|frosting|compote|butter tart|turnover|scone\b(?!.*soup)|gelato|sorbet|lollipop|candy|fritter.*dessert)\b/i;
+  var DESSERT_NAME = /\b(cookie|brownie|mousse|(?<!pot )(?<!shepherd'?s )(?<!chicken )pie\b|crisp|(?<!butter )tart\b|bars\b|(?<!rice )pudding|cake|nice cream|nanaimo|fudge|truffle|cheesecake|cupcake|icing|frosting|compote|butter tart|turnover|scone\b(?!.*soup)|gelato|sorbet|lollipop|candy|fritter.*dessert|ginger biscuits?|shortbread|biscotti)\b/i;
 
   var DRINK_NAME = /\b(smoothie\b(?! bowl)|lassi\b|lemonade|cocktail|mocktail|punch\b|latte\b|espresso\b|milkshake|frappe|bubble tea|iced tea|hot chocolate drink|mulled wine|eggnog\b|horchata|agua fresca)\b/i;
 

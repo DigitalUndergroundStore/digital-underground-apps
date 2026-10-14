@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>List your project — Community — Digital Underground</title>
+<meta name="description" content="Submit your app or digital product to the Digital Underground community marketplace. Free to list; pending review.">
+<link rel="canonical" href="https://digitalundergroundstore.com/community/submit/">
+<meta name="theme-color" content="#05040c">
+<link rel="stylesheet" href="../community.css">
+<script src="/community/turnstile.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-top">
+    <a class="brand" href="/store/">
+      <img src="/store/logo.png" width="80" height="65" alt="">
+      <strong>Digital Underground</strong>
+    </a>
+    <nav aria-label="Site">
+      <a href="/store/">Store</a>
+      <a href="/community/">Community</a>
+      <a class="cta" href="/community/submit/" aria-current="page">List your project</a>
+    </nav>
+  </div>
+  <header class="page-head">
+    <h1>List your project</h1>
+    <p>Tell us about your app or digital product. Submissions stay <strong>pending</strong> until we approve them. Checkout stays on your site — we only link out.</p>
+  </header>
+  <div id="msg" class="form-msg" hidden role="status"></div>
+  <form class="stack" id="form" novalidate>
+    <label class="hp" aria-hidden="true">Leave blank<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <label>Project name<input name="name" required maxlength="120" autocomplete="organization"></label>
+    <label>Project URL (https)<input name="projectUrl" type="url" required inputmode="url" placeholder="https://…" autocomplete="url"></label>
+    <label>Maker / studio name<input name="makerName" required maxlength="80" autocomplete="name"></label>
+    <label>Contact email<input name="email" type="email" required autocomplete="email"></label>
+    <label>X handle (optional)<input name="xHandle" maxlength="16" placeholder="handle without @"></label>
+    <label>Category
+      <select name="category" required>
+        <option value="">Choose…</option>
+        <option value="apps">Apps</option>
+        <option value="ai-tools">AI tools</option>
+        <option value="books">Books</option>
+        <option value="templates">Templates</option>
+        <option value="other">Other</option>
+      </select>
+    </label>
+    <label>Price label<input name="priceLabel" maxlength="40" placeholder="Free, $9, CA$24, etc."></label>
+    <label>Short pitch (max 280)<textarea name="pitchShort" required maxlength="280" rows="3"></textarea></label>
+    <label>Longer description<textarea name="descriptionLong" required maxlength="4000" rows="6"></textarea></label>
+    <label>Image URL (https)<input name="imageUrl" type="url" inputmode="url" placeholder="https://…/cover.png"></label>
+    <label>Or upload image (max ~750 KB)
+      <input name="imageFile" type="file" accept="image/jpeg,image/png,image/webp,image/gif">
+    </label>
+    <label class="check">
+      <input type="checkbox" name="terms" required value="1">
+      <span>I own or represent this project, the link is safe, and I agree this is a free listing with link-out only (no payments through Digital Underground).</span>
+    </label>
+    <div id="turnstile-slot" hidden></div>
+    <button type="submit">Submit for review</button>
+  </form>
+  <section class="faq" aria-labelledby="faq-submit">
+    <h2 id="faq-submit">Before you submit</h2>
+    <details open>
+      <summary>What we reject</summary>
+      <p>Spam, adult content, crypto scams, malware, and misleading listings. We may remove listings at any time.</p>
+    </details>
+  </section>
+  <footer class="foot">
+    <p><a href="/community/">← Community marketplace</a></p>
+  </footer>
+</div>
+<script>
+(function () {
+  var form = document.getElementById("form");
+  var msg = document.getElementById("msg");
+  var fileInput = form.querySelector('[name="imageFile"]');
+  var urlInput = form.querySelector('[name="imageUrl"]');
+
+  function show(text, ok) {
+    msg.hidden = false;
+    msg.textContent = text;
+    msg.className = "form-msg " + (ok ? "ok" : "err");
+  }
+
+  function readFileAsDataUrl(file) {
+    return new Promise(function (resolve, reject) {
+      var r = new FileReader();
+      r.onload = function () { resolve(r.result); };
+      r.onerror = reject;
+      r.readAsDataURL(file);
+    });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    msg.hidden = true;
+    var fd = new FormData(form);
+    if (fd.get("website")) {
+      show("Submission rejected.", false);
+      return;
+    }
+    var payload = {
+      name: fd.get("name"),
+      projectUrl: fd.get("projectUrl"),
+      makerName: fd.get("makerName"),
+      email: fd.get("email"),
+      xHandle: fd.get("xHandle"),
+      category: fd.get("category"),
+      priceLabel: fd.get("priceLabel"),
+      pitchShort: fd.get("pitchShort"),
+      descriptionLong: fd.get("descriptionLong"),
+      imageUrl: fd.get("imageUrl"),
+      terms: fd.get("terms") === "1"
+    };
+    var turnstileToken = window.__duTurnstileToken;
+    if (turnstileToken) payload.turnstileToken = turnstileToken;
+
+    var file = fileInput.files && fileInput.files[0];
+    var run = file
+      ? readFileAsDataUrl(file).then(function (data) {
+          payload.imageData = data;
+          delete payload.imageUrl;
+        })
+      : Promise.resolve();
+
+    if (!file && !(payload.imageUrl && String(payload.imageUrl).trim())) {
+      show("Add an image URL or upload a cover image.", false);
+      return;
+    }
+
+    run.then(function () {
+      return fetch("/api/community/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+    }).then(function (res) {
+      return res.json().then(function (data) {
+        return { res: res, data: data };
+      });
+    }).then(function (out) {
+      if (out.res.ok && out.data.ok) {
+        show(out.data.message || "Submitted — thank you!", true);
+        form.reset();
+        if (window.__duTurnstileReset) window.__duTurnstileReset();
+        return;
+      }
+      show(out.data.error || "Something went wrong. Try again later.", false);
+    }).catch(function () {
+      show("Network error. Try again.", false);
+    });
+  });
+
+  fileInput.addEventListener("change", function () {
+    if (fileInput.files && fileInput.files[0]) urlInput.value = "";
+  });
+})();
+</script>
+</body>
+</html>

@@ -3,20 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Developer Marketplace moderation — Digital Underground</title>
+<title>Moderation — Developer Marketplace — Digital Underground</title>
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="community.css">
 </head>
 <body>
 <div class="wrap">
+  <div class="site-top">
+    <a class="brand" href="/store/">
+      <img src="/store/logo.png" width="80" height="65" alt="">
+      <strong>Digital Underground</strong>
+    </a>
+    <nav aria-label="Site">
+      <a href="/community/">Developer Marketplace</a>
+    </nav>
+  </div>
   <header class="page-head">
-    <h1>Developer Marketplace moderation</h1>
-    <p>Protected queue. Set <code>COMMUNITY_ADMIN_TOKEN</code> in Cloudflare Pages, then paste the token below (stored only in this browser session).</p>
+    <h1>Moderation</h1>
+    <p>Protected queue. Paste the admin token below (stored only in this browser session).</p>
   </header>
-  <label>Admin token
-    <input type="password" id="token" autocomplete="off" style="max-width:28rem;width:100%">
-  </label>
-  <p><button type="button" id="load">Load pending</button></p>
+  <form class="stack" id="token-form" onsubmit="return false;">
+    <label>Admin token
+      <input type="password" id="token" autocomplete="off">
+    </label>
+    <p><button type="button" id="load" class="admin-load">Load pending</button></p>
+  </form>
   <div class="admin-list" id="list" aria-live="polite"></div>
   <footer class="foot"><p><a href="/community/">← Developer Marketplace</a></p></footer>
 </div>

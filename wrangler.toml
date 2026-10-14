@@ -9,3 +9,6 @@ pages_build_output_dir = "."
 [[kv_namespaces]]
 binding = "COMMUNITY_KV"
 id = "5e086a24647c419f8ac5577b85a0c651"
+
+[ai]
+binding = "AI"

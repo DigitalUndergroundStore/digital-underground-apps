@@ -4,10 +4,11 @@ import {
   getKv,
   json,
   notifySubmission,
-  savePendingListing,
+  saveListing,
   validateSubmission,
   verifyTurnstile,
 } from "../../_lib/community.js";
+import { screenListing } from "../../_lib/community-screening.js";
 
 export async function onRequest(context) {
   const { request, env } = context;
@@ -51,23 +52,50 @@ export async function onRequest(context) {
     );
   }
 
+  let listing = validated.listing;
   try {
-    await savePendingListing(kv, validated.listing);
+    const screen = await screenListing(env, listing);
+    listing.status = screen.decision;
+    listing.screening = {
+      reasons: screen.reasons,
+      detail: screen.detail,
+      screenedAt: Date.now(),
+    };
+  } catch (e) {
+    console.error("community screening error", e);
+    listing.status = "pending";
+    listing.screening = {
+      reasons: ["Automatic screening failed; queued for human review."],
+      screenedAt: Date.now(),
+    };
+  }
+
+  try {
+    await saveListing(kv, listing);
   } catch (e) {
     console.error("community submit kv error", e);
     return json({ error: "Could not save submission." }, 500);
   }
 
   try {
-    await notifySubmission(env, validated.listing);
+    await notifySubmission(env, listing, request);
   } catch (e) {
     console.error("community notify error", e);
   }
 
+  const messages = {
+    approved:
+      "Thanks — your project passed review and is live on the community marketplace.",
+    rejected:
+      "Thanks for submitting. This listing did not pass our automated checks. Contact us if you think that is a mistake.",
+    pending:
+      "Thanks — your project is in the review queue. We will email you when it is live.",
+  };
+
   return json({
     ok: true,
-    id: validated.listing.id,
-    message:
-      "Thanks — your project is in the review queue. We will email you when it is live (if we have mail configured).",
+    id: listing.id,
+    status: listing.status,
+    message: messages[listing.status] || messages.pending,
   });
 }

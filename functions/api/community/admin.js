@@ -84,6 +84,19 @@ export async function onRequest(context) {
       return json({ ok: true, deleted: email.toLowerCase() });
     }
 
+    if (action === "delete_creator") {
+      // Remove a creator account (its manage link stops working) and unlink it from contacts.
+      const acct = await getAccount(kv, String(body.creatorId || ""));
+      if (!acct) return json({ error: "Creator not found." }, 404);
+      await kv.delete("creator:" + acct.id);
+      if (body.email) await unlinkContact(kv, String(body.email), acct.id, body.listingIds || []);
+      return json({ ok: true, deleted: acct.id });
+    }
+    if (action === "unlink_contact_listing") {
+      await unlinkContact(kv, String(body.email || ""), "", [String(body.id || "")]);
+      return json({ ok: true });
+    }
+
     const id = typeof body.id === "string" ? body.id.trim() : "";
     if (!id) return json({ error: "Missing listing id." }, 400);
 
@@ -117,11 +130,20 @@ export async function onRequest(context) {
       return json({ ok: true, deleted: id });
     }
     return json(
-      { error: "Unknown action. Use approve, reject, delete, issue_creator_token, backfill_contacts, or delete_contact." },
+      { error: "Unknown action. Use approve, reject, delete, issue_creator_token, delete_creator, unlink_contact_listing, backfill_contacts, or delete_contact." },
       400
     );
   } catch (e) {
     console.error("community admin action error", e);
     return json({ error: "Action failed." }, 500);
   }
+}
+
+async function unlinkContact(kv, email, creatorId, listingIds) {
+  const key = "contact:" + email.trim().toLowerCase();
+  const row = await kv.get(key, "json");
+  if (!row) return;
+  if (creatorId && Array.isArray(row.creatorIds)) row.creatorIds = row.creatorIds.filter((x) => x !== creatorId);
+  if (Array.isArray(row.listingIds)) row.listingIds = row.listingIds.filter((x) => !listingIds.includes(x));
+  await kv.put(key, JSON.stringify(row));
 }

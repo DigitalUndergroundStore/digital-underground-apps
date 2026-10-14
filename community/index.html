@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community marketplace — Digital Underground</title>
+<meta name="description" content="Browse indie apps, AI tools, books, and templates from makers. Free to list; checkout stays on the maker's site.">
+<link rel="canonical" href="https://digitalundergroundstore.com/community/">
+<meta property="og:title" content="Community marketplace — Digital Underground">
+<meta property="og:description" content="Indie digital products from makers worldwide. Link-out listings; we do not process payments.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digitalundergroundstore.com/community/">
+<meta property="og:image" content="https://digitalundergroundstore.com/store/og.jpg">
+<meta name="theme-color" content="#05040c">
+<link rel="stylesheet" href="community.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="site-top">
+    <a class="brand" href="/store/">
+      <img src="/store/logo.png" width="80" height="65" alt="">
+      <strong>Digital Underground</strong>
+    </a>
+    <nav aria-label="Site">
+      <a href="/store/">Store</a>
+      <a href="/community/" aria-current="page">Community</a>
+      <a class="cta" href="/community/submit/">List your project</a>
+    </nav>
+  </div>
+  <header class="page-head">
+    <h1>Community marketplace</h1>
+    <p>Apps, AI tools, books, and templates from independent makers. Free to list — checkout and delivery stay on the maker's own site (Gumroad, Stripe, App Store, or their website).</p>
+  </header>
+  <div class="search-row">
+    <input type="search" id="q" placeholder="Search projects…" autocomplete="off" aria-label="Search projects">
+  </div>
+  <div class="chips" id="cats" role="tablist" aria-label="Categories">
+    <button type="button" class="is-on" data-cat="all">All</button>
+    <button type="button" data-cat="apps">Apps</button>
+    <button type="button" data-cat="ai-tools">AI tools</button>
+    <button type="button" data-cat="books">Books</button>
+    <button type="button" data-cat="templates">Templates</button>
+    <button type="button" data-cat="other">Other</button>
+  </div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+  <p class="empty" id="empty" hidden>No listings match yet. <a href="/community/submit/">List your project</a> — we review every submission.</p>
+  <section class="faq" aria-labelledby="faq-title">
+    <h2 id="faq-title">FAQ</h2>
+    <details>
+      <summary>Is it free to list?</summary>
+      <p>Yes. Listing in the community marketplace is free. We do not take a cut of sales — buyers pay you on your own checkout.</p>
+    </details>
+    <details>
+      <summary>How does review work?</summary>
+      <p>Submissions are held as pending until we approve them. We look for legitimate digital products and filter spam, scams, and malware. Typical review is a few days.</p>
+    </details>
+    <details>
+      <summary>Do you handle payments?</summary>
+      <p>No. This is link-out only. The Visit button sends people to your Gumroad, Stripe, App Store, or site with <code>?ref=digitalunderground</code> when possible. Digital Underground does not process payouts for community listings.</p>
+    </details>
+  </section>
+  <footer class="foot">
+    <p><a href="/store/">← Back to the DU store</a> · <a href="/community/submit/">List your project</a></p>
+  </footer>
+</div>
+<script>
+(function () {
+  var CAT_LABELS = {
+    apps: "Apps",
+    "ai-tools": "AI tools",
+    books: "Books",
+    templates: "Templates",
+    other: "Other"
+  };
+  var all = [];
+  var cat = "all";
+  var grid = document.getElementById("grid");
+  var empty = document.getElementById("empty");
+  var qInput = document.getElementById("q");
+
+  function esc(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+  }
+
+  function makerLine(row) {
+    var x = row.xHandle ? '<a href="https://x.com/' + esc(row.xHandle) + '" target="_blank" rel="noopener">@' + esc(row.xHandle) + "</a>" : "";
+    if (x) return esc(row.makerName) + " · " + x;
+    return esc(row.makerName);
+  }
+
+  function render() {
+    var q = (qInput.value || "").trim().toLowerCase();
+    var items = all.filter(function (row) {
+      if (cat !== "all" && row.category !== cat) return false;
+      if (!q) return true;
+      var hay = [row.name, row.makerName, row.pitchShort, row.category].join(" ").toLowerCase();
+      return hay.indexOf(q) >= 0;
+    });
+    grid.innerHTML = "";
+    if (!items.length) {
+      empty.hidden = false;
+      return;
+    }
+    empty.hidden = true;
+    items.forEach(function (row) {
+      var art = document.createElement("article");
+      art.className = "card";
+      var img = row.imageUrl
+        ? '<img class="shot" src="' + esc(row.imageUrl) + '" alt="" loading="lazy" decoding="async">'
+        : '<div class="shot" style="background:linear-gradient(145deg,#2a1248,#0c0816)"></div>';
+      art.innerHTML =
+        img +
+        '<div class="info">' +
+        '<strong>' + esc(row.name) + "</strong>" +
+        '<span class="maker">' + makerLine(row) + "</span>" +
+        '<span class="blurb">' + esc(row.pitchShort) + "</span>" +
+        '<div class="buyrow">' +
+        '<span class="price">' + esc(row.priceLabel || "See site") + "</span>" +
+        '<a class="cta" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener">Visit</a>' +
+        "</div></div>";
+      grid.appendChild(art);
+    });
+  }
+
+  document.getElementById("cats").addEventListener("click", function (e) {
+    var btn = e.target.closest("button[data-cat]");
+    if (!btn) return;
+    cat = btn.getAttribute("data-cat");
+    document.querySelectorAll("#cats button").forEach(function (b) {
+      b.classList.toggle("is-on", b === btn);
+    });
+    render();
+  });
+  qInput.addEventListener("input", render);
+
+  Promise.all([
+    fetch("/community/listings.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }),
+    fetch("/api/community/listings").then(function (r) { return r.ok ? r.json() : { listings: [] }; }).catch(function () { return { listings: [] }; })
+  ]).then(function (parts) {
+    var staticList = Array.isArray(parts[0]) ? parts[0] : [];
+    var apiList = parts[1] && Array.isArray(parts[1].listings) ? parts[1].listings : [];
+    var byId = {};
+    staticList.concat(apiList).forEach(function (row) {
+      if (row && row.id) byId[row.id] = row;
+    });
+    all = Object.keys(byId).map(function (k) { return byId[k]; });
+    all.sort(function (a, b) { return (a.name || "").localeCompare(b.name || ""); });
+    render();
+  });
+})();
+</script>
+</body>
+</html>

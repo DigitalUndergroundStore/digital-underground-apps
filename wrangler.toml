@@ -1,0 +1,7 @@
+# Cloudflare Pages — optional Wrangler config for local `wrangler pages dev`.
+# Bind COMMUNITY_KV in the Pages dashboard (Settings → Functions → KV namespace bindings).
+# See docs/community-marketplace.md.
+
+name = "digital-underground-apps"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "."

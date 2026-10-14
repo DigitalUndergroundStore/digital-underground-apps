@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community moderation — Digital Underground</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="community.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="page-head">
+    <h1>Community moderation</h1>
+    <p>Protected queue. Set <code>COMMUNITY_ADMIN_TOKEN</code> in Cloudflare Pages, then paste the token below (stored only in this browser session).</p>
+  </header>
+  <label>Admin token
+    <input type="password" id="token" autocomplete="off" style="max-width:28rem;width:100%">
+  </label>
+  <p><button type="button" id="load">Load pending</button></p>
+  <div class="admin-list" id="list" aria-live="polite"></div>
+  <footer class="foot"><p><a href="/community/">← Community</a></p></footer>
+</div>
+<script>
+(function () {
+  var KEY = "du-community-admin-token";
+  var tokenInput = document.getElementById("token");
+  var list = document.getElementById("list");
+  try {
+    var saved = sessionStorage.getItem(KEY);
+    if (saved) tokenInput.value = saved;
+  } catch (e) {}
+
+  function headers() {
+    var t = tokenInput.value.trim();
+    try { sessionStorage.setItem(KEY, t); } catch (e) {}
+    return {
+      Authorization: "Bearer " + t,
+      "Content-Type": "application/json"
+    };
+  }
+
+  function esc(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  }
+
+  function renderPending(rows) {
+    list.innerHTML = "";
+    if (!rows.length) {
+      list.innerHTML = "<p class=\"empty\">No pending submissions.</p>";
+      return;
+    }
+    rows.forEach(function (row) {
+      var el = document.createElement("div");
+      el.className = "admin-item";
+      el.innerHTML =
+        "<strong>" + esc(row.name) + "</strong> · " + esc(row.makerName) +
+        "<br><a href=\"" + esc(row.projectUrl) + "\" target=\"_blank\" rel=\"noopener\">" + esc(row.projectUrl) + "</a>" +
+        "<br><span class=\"blurb\">" + esc(row.pitchShort) + "</span>" +
+        "<br><small>" + esc(row.id) + " · " + esc(row.email) + "</small>" +
+        '<div class="actions">' +
+        '<button type="button" class="approve" data-id="' + esc(row.id) + '" data-action="approve">Approve</button>' +
+        '<button type="button" class="reject" data-id="' + esc(row.id) + '" data-action="reject">Reject</button>' +
+        '<button type="button" data-id="' + esc(row.id) + '" data-action="delete">Delete</button>' +
+        "</div>";
+      list.appendChild(el);
+    });
+  }
+
+  function act(action, id) {
+    return fetch("/api/community/admin", {
+      method: "POST",
+      headers: headers(),
+      body: JSON.stringify({ action: action, id: id })
+    }).then(function (r) { return r.json().then(function (d) { return { r: r, d: d }; }); });
+  }
+
+  list.addEventListener("click", function (e) {
+    var btn = e.target.closest("button[data-action]");
+    if (!btn) return;
+    act(btn.getAttribute("data-action"), btn.getAttribute("data-id")).then(function (out) {
+      if (!out.r.ok) {
+        alert(out.d.error || "Failed");
+        return;
+      }
+      document.getElementById("load").click();
+    });
+  });
+
+  document.getElementById("load").addEventListener("click", function () {
+    fetch("/api/community/admin", { headers: headers() })
+      .then(function (r) { return r.json().then(function (d) { return { r: r, d: d }; }); })
+      .then(function (out) {
+        if (!out.r.ok) {
+          alert(out.d.error || "Unauthorized");
+          return;
+        }
+        renderPending(out.d.pending || []);
+      });
+  });
+})();
+</script>
+</body>
+</html>

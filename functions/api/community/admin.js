@@ -31,7 +31,6 @@ export async function onRequest(context) {
   if (request.method === "GET") {
     try {
       if (queryAction === "contacts") {
-        await backfillContactsFromListings(kv);
         const rows = await listContacts(kv);
         const csv = contactsToCsv(rows);
         return new Response(csv, {

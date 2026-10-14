@@ -388,7 +388,14 @@ async function sendCommunityEmail(env, { to, subject, text }) {
       },
       body: JSON.stringify({ from, to: [to], subject, text }),
     });
-    return { sent: res.ok, status: res.status, provider: "resend" };
+    const out = { sent: res.ok, status: res.status, provider: "resend" };
+    if (!res.ok) {
+      try {
+        out.detail = (await res.text()).slice(0, 300);
+      } catch (_) {}
+    }
+    console.log("community notify resend", out.sent, out.status);
+    return out;
   }
   if (env?.COMMUNITY_MAILCHANNELS === "1") {
     const fromEmail =

@@ -77,10 +77,12 @@ export async function onRequest(context) {
     return json({ error: "Could not save submission." }, 500);
   }
 
+  let notify = { sent: false, reason: "not_attempted" };
   try {
-    await notifySubmission(env, listing, request);
+    notify = await notifySubmission(env, listing, request);
   } catch (e) {
     console.error("community notify error", e);
+    notify = { sent: false, error: "notify_threw" };
   }
 
   const messages = {
@@ -97,5 +99,6 @@ export async function onRequest(context) {
     id: listing.id,
     status: listing.status,
     message: messages[listing.status] || messages.pending,
+    notify,
   });
 }

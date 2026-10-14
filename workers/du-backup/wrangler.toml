@@ -1,0 +1,16 @@
+name = "du-backup"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+account_id = "89c87c2f93e2a2f89147d44259d5d542"
+
+# Daily at 07:15 UTC
+[triggers]
+crons = ["15 7 * * *"]
+
+[[kv_namespaces]]
+binding = "COMMUNITY_KV"
+id = "5e086a24647c419f8ac5577b85a0c651"
+
+[[kv_namespaces]]
+binding = "COMMUNITY_BACKUP_KV"
+id = "846affa91d604455bbc6c73cf950b560"

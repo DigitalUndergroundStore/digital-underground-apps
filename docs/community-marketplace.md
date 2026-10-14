@@ -78,3 +78,43 @@ If `RESEND_API_KEY` is not set, submissions are stored only (no email).
 - **Email magic link (off):** `POST /api/community/creator-login`. Enable with env `COMMUNITY_MAGIC_LINK=1` only after a sending domain is verified in Resend and `COMMUNITY_NOTIFY_FROM` uses it. Response is identical whether or not the email exists.
 - **Creator API:** `GET/POST /api/community/creator` — list, `edit` (re-screened with the same rules as new submissions), `unpublish`, `republish` (re-screened), `delete`, `support` (Resend → COMMUNITY_NOTIFY_EMAIL, reply-to = listing email, 5/creator/UTC day). Edits: 20/listing/day + 30 writes/IP/hour.
 - **Analytics:** `POST /api/community/track {i,v,c}`; one KV key per UTC day `stats:YYYYMMDD` (1 write per beacon). Impressions once per listing per browser session; detail views (`/community/p/?id=`) and Visit clicks exact. KV free tier = 1,000 writes/day, so heavy traffic (>~700 beacons/day) would start to fail writes (counts drop silently, site unaffected).
+
+## Backups (du-backup Worker)
+
+Free, self-running Cloudflare Worker (`workers/du-backup`) — no bot required after deploy.
+
+| Piece | Detail |
+|-------|--------|
+| Source | `COMMUNITY_KV` (`worker-du-community`, id `5e086a24647c419f8ac5577b85a0c651`) — listings, contacts, creator/stats keys |
+| Destination | `COMMUNITY_BACKUP_KV` (`worker-du-community-backup`, id `846affa91d604455bbc6c73cf950b560`) |
+| Schedule | Cron `15 7 * * *` (07:15 UTC daily) |
+| Snapshot key | `snapshot:YYYY-MM-DD` (plain JSON, or gzip+base64 wrapper if large) |
+| Retention | Last **60** daily snapshots; older pruned automatically |
+| Monday email | Resend → store inbox with contacts CSV + listings JSON attachments; subject `Digital Underground weekly backup YYYY-MM-DD` |
+| From | `onboarding@resend.dev` (override with `BACKUP_NOTIFY_FROM`) |
+
+### Secrets on the Worker
+
+- `RESEND_API_KEY` (required for Monday email)
+- `BACKUP_ADMIN_TOKEN` or reuse `COMMUNITY_ADMIN_TOKEN` (Bearer for `POST /run`)
+- Optional: `BACKUP_NOTIFY_EMAIL`, `BACKUP_NOTIFY_FROM`
+
+### Manual snapshot / test email
+
+```bash
+cd workers/du-backup
+npx wrangler deploy   # from repo; uses wrangler 3
+curl -sS -X POST "https://du-backup.<workers.dev>/run?email=1" \
+  -H "Authorization: Bearer $BACKUP_ADMIN_TOKEN"
+```
+
+Local scheduled test: `npx wrangler dev --test-scheduled` (from `workers/du-backup`).
+
+### Restore (admin only — never auto-runs)
+
+```bash
+node scripts/restore-backup.mjs --date YYYY-MM-DD          # dry-run
+node scripts/restore-backup.mjs --date YYYY-MM-DD --write  # apply into COMMUNITY_KV
+```
+
+Contacts CSV export (live admin): `GET /api/community/admin?action=contacts` with Bearer admin token.

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Owner Dashboard — Digital Underground</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#05040c">
+<link rel="stylesheet" href="/owner/owner.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="/store/">
+      <img src="/store/logo.png" width="72" height="58" alt="">
+      <span>Digital Underground</span>
+    </a>
+    <button type="button" class="btn ghost" id="logout-btn" hidden>Sign out</button>
+  </div>
+
+  <section id="view-login" class="login-box">
+    <h1>Owner login</h1>
+    <p class="muted">Enter your passcode. You’ll stay signed in on this phone for 30 days.</p>
+    <div id="login-msg" class="msg err hidden" role="status"></div>
+    <label class="field">Passcode
+      <input id="passcode" type="password" autocomplete="current-password" placeholder="four words" enterkeyhint="go">
+    </label>
+    <button type="button" class="btn block" id="login-btn">Sign in</button>
+  </section>
+
+  <section id="view-home" class="panel">
+    <h1>Owner home</h1>
+    <p class="muted" id="home-sub">Marketplace at a glance</p>
+    <div class="card-grid" id="home-cards"></div>
+    <div id="home-today"></div>
+  </section>
+
+  <section id="view-queue" class="panel">
+    <button type="button" class="back" data-go="home">← Home</button>
+    <h1>Review queue</h1>
+    <div class="tabs">
+      <button type="button" class="is-on" data-tab="pending">Needs review</button>
+      <button type="button" data-tab="all">All listings</button>
+    </div>
+    <div id="queue-list" class="list"></div>
+  </section>
+
+  <section id="view-contacts" class="panel">
+    <button type="button" class="back" data-go="home">← Home</button>
+    <h1>Contacts</h1>
+    <label class="field">Search
+      <input id="contact-q" type="search" placeholder="Name or email" autocomplete="off">
+    </label>
+    <p><a class="btn block" id="csv-btn" href="/api/owner/contacts?format=csv">Download CSV</a></p>
+    <div id="contact-list" class="list"></div>
+  </section>
+
+  <section id="view-support" class="panel">
+    <button type="button" class="back" data-go="home">← Home</button>
+    <h1>Support inbox</h1>
+    <div class="tabs">
+      <button type="button" class="is-on" data-sup="open">Open</button>
+      <button type="button" data-sup="done">Done</button>
+    </div>
+    <div id="support-list" class="list"></div>
+  </section>
+
+  <section id="view-analytics" class="panel">
+    <button type="button" class="back" data-go="home">← Home</button>
+    <h1>Analytics</h1>
+    <p class="muted">Last 30 days — views & clicks</p>
+    <div class="chart" id="chart" aria-hidden="true"></div>
+    <div id="analytics-list" class="list"></div>
+  </section>
+
+  <section id="view-backups" class="panel">
+    <button type="button" class="back" data-go="home">← Home</button>
+    <h1>Backups</h1>
+    <p class="muted" id="backup-meta">Checking…</p>
+    <div class="item actions" style="display:flex;flex-wrap:wrap;gap:8px">
+      <button type="button" class="btn" id="backup-now">Back up now</button>
+      <a class="btn ghost" href="/api/owner/backup-download?kind=csv">Download contacts CSV</a>
+      <a class="btn ghost" href="/api/owner/backup-download?kind=json">Download listings JSON</a>
+    </div>
+    <div id="backup-list" class="list" style="margin-top:14px"></div>
+    <p class="small">Restore stays script-only: <code>node scripts/restore-backup.mjs --date YYYY-MM-DD</code></p>
+  </section>
+
+  <section id="view-links" class="panel">
+    <button type="button" class="back" data-go="home">← Home</button>
+    <h1>Quick links</h1>
+    <div class="links">
+      <a href="https://gumroad.com/login" target="_blank" rel="noopener">Gumroad <span>↗</span></a>
+      <a href="https://dash.cloudflare.com/" target="_blank" rel="noopener">Cloudflare <span>↗</span></a>
+      <a href="https://mail.proton.me/" target="_blank" rel="noopener">Proton Mail <span>↗</span></a>
+      <a href="https://resend.com/emails" target="_blank" rel="noopener">Resend <span>↗</span></a>
+      <a href="https://x.com/DigUnderStore" target="_blank" rel="noopener">X @DigUnderStore <span>↗</span></a>
+      <a href="/planetview/" target="_blank" rel="noopener">PlanetView <span>↗</span></a>
+      <a href="/pantry-week/" target="_blank" rel="noopener">Pantry Week <span>↗</span></a>
+      <a href="/community/" target="_blank" rel="noopener">Developer Marketplace <span>↗</span></a>
+    </div>
+  </section>
+</div>
+<script src="/owner/owner.js"></script>
+</body>
+</html>

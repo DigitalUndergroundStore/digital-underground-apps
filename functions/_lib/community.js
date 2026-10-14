@@ -490,7 +490,7 @@ export async function notifySubmission(env, listing, request) {
   } else if (approveLink && rejectLink) {
     lines.push("Override (7-day links):", `Approve: ${approveLink}`, `Reject: ${rejectLink}`, "");
   }
-  lines.push("Admin UI: https://digitalundergroundstore.com/community/admin.html");
+  lines.push("Admin UI: https://digitalundergroundstore.com/owner/");
 
   const subject = `[Community] ${statusLabel(status)}: ${listing.name}`;
   return sendCommunityEmail(env, { to, subject, text: lines.join("\n") });

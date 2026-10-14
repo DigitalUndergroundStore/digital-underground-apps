@@ -23,6 +23,7 @@ import {
   takeEditBudget,
   takeSupportBudget,
 } from "../../_lib/creator.js";
+import { storeSupportMessage } from "../../_lib/owner.js";
 
 /** Per-IP burst limit for creator write actions (per isolate). */
 const ipHits = new Map();
@@ -102,9 +103,21 @@ export async function onRequest(context) {
         if (r?.email) { replyTo = r.email; break; }
       }
     }
+    try {
+      await storeSupportMessage(kv, {
+        subject,
+        message,
+        replyTo,
+        creatorId: acct.id,
+        listingId: listing?.id || "",
+        listingName: listing?.name || "",
+      });
+    } catch (e) {
+      console.error("support kv store error", e);
+    }
     const out = await sendSupportEmail(env, { acct, replyTo, subject, message, listing });
-    if (!out.sent) return json({ error: "Could not send right now. Email digitalunderground.store@proton.me instead." }, 502);
-    return json({ ok: true, message: "Sent, we'll reply by email." });
+    if (!out.sent) return json({ ok: true, message: "Saved in your Owner inbox. Email delivery failed — we'll still see it there.", stored: true, emailed: false });
+    return json({ ok: true, message: "Sent, we'll reply by email.", stored: true, emailed: true });
   }
 
   const id = typeof body.id === "string" ? body.id.trim() : "";

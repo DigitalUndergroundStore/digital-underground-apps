@@ -288,6 +288,67 @@ export default {
       );
     }
 
+    if (request.method === "GET" && url.pathname === "/snapshots") {
+      if (!adminOk(request, env)) return unauthorized();
+      const names = await listAllKeys(env.COMMUNITY_BACKUP_KV, SNAPSHOT_PREFIX);
+      const snapshots = names
+        .map((n) => ({ key: n, date: n.slice(SNAPSHOT_PREFIX.length) }))
+        .sort((a, b) => a.date.localeCompare(b.date));
+      return new Response(JSON.stringify({ snapshots }), {
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
+    if (request.method === "GET" && (url.pathname === "/snapshot/latest" || url.pathname.startsWith("/snapshot/"))) {
+      if (!adminOk(request, env)) return unauthorized();
+      let date = url.pathname.slice("/snapshot/".length);
+      if (date === "latest" || !date) {
+        const names = await listAllKeys(env.COMMUNITY_BACKUP_KV, SNAPSHOT_PREFIX);
+        const dates = names.map((n) => n.slice(SNAPSHOT_PREFIX.length)).sort();
+        date = dates.length ? dates[dates.length - 1] : "";
+      }
+      if (!date) {
+        return new Response(JSON.stringify({ error: "no_snapshot" }), {
+          status: 404,
+          headers: { "Content-Type": "application/json" },
+        });
+      }
+      const raw = await env.COMMUNITY_BACKUP_KV.get(SNAPSHOT_PREFIX + date, "text");
+      if (!raw) {
+        return new Response(JSON.stringify({ error: "not_found" }), {
+          status: 404,
+          headers: { "Content-Type": "application/json" },
+        });
+      }
+      let parsed = JSON.parse(raw);
+      let full = parsed;
+      if (parsed.encoding === "gzip+base64" && parsed.body) {
+        const bin = atob(parsed.body);
+        const u8 = new Uint8Array(bin.length);
+        for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+        const stream = new Blob([u8]).stream().pipeThrough(new DecompressionStream("gzip"));
+        const text = await new Response(stream).text();
+        full = JSON.parse(text);
+      }
+      const { contacts, listings, index } = extractContactsAndListings(full.keys || {});
+      const contactsCsv = contactsToCsv(contacts);
+      const listingsJson = JSON.stringify({ date: full.date || date, index, listings }, null, 2);
+      if (url.searchParams.get("export") === "1") {
+        return new Response(
+          JSON.stringify({
+            date: full.date || date,
+            contactsCsv,
+            listingsJson,
+            keyCount: full.keyCount,
+          }),
+          { headers: { "Content-Type": "application/json" } }
+        );
+      }
+      return new Response(JSON.stringify(full), {
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
     if (request.method === "POST" && (url.pathname === "/run" || url.pathname === "/backup")) {
       if (!adminOk(request, env)) return unauthorized();
       const forceEmail =

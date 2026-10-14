@@ -118,3 +118,12 @@ node scripts/restore-backup.mjs --date YYYY-MM-DD --write  # apply into COMMUNIT
 ```
 
 Contacts CSV export (live admin): `GET /api/community/admin?action=contacts` with Bearer admin token.
+
+## Owner Dashboard
+
+Mobile-first control panel at **https://digitalundergroundstore.com/owner/** (replaces `/community/admin.html`).
+
+- **Login:** owner passcode (4 words). Hash is Pages secret `OWNER_PASS_HASH`; session cookie lasts 30 days (`OWNER_SESSION_SECRET`).
+- **Also:** Bearer `COMMUNITY_ADMIN_TOKEN` still works on `/api/community/admin` and `/api/owner/*` for Gerold/tools.
+- **Sections:** Home overview, Review queue, Contacts CSV, Support inbox, Analytics (30-day), Backups (trigger + download), Quick links.
+- Plain passcode (agents only): `/home/box/.secrets/owner-dashboard-passcode.txt` (chmod 600) — never commit or print.

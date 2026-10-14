@@ -38,6 +38,12 @@ a { color: inherit; -webkit-tap-highlight-color: transparent; }
   background: rgba(255, 255, 255, .04);
   text-decoration: none; font-size: 14px; font-weight: 650;
 }
+@media (max-width: 420px) {
+  .site-top nav a { padding: 0 10px; font-size: 12px; }
+  .page-head h1 { font-size: clamp(28px, 8vw, 40px); word-break: break-word; }
+  .card .buyrow { flex-wrap: wrap; }
+}
+
 .site-top nav a:hover { border-color: rgba(191, 232, 255, .7); color: var(--cyan); }
 .site-top nav a.cta {
   background: linear-gradient(105deg, #6d28d9, #1e3a8a);

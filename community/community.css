@@ -269,3 +269,4 @@ form button[type="submit"] {
 @media (min-width: 860px) { .detail { grid-template-columns: 1.2fr 1fr; } }
 .detail img { width: 100%; border-radius: 20px; aspect-ratio: 16/10; object-fit: cover; background: #120c22; }
 .detail .desc { white-space: pre-wrap; color: var(--muted); }
+[hidden] { display: none !important; }

@@ -80,6 +80,18 @@ export function sanitizeText(raw, maxLen) {
   return s.length > maxLen ? s.slice(0, maxLen) : s;
 }
 
+export function isValidEmail(raw) {
+  if (!raw || typeof raw !== "string") return false;
+  const s = raw.trim().toLowerCase();
+  if (!s || s.length > 120) return false;
+  // Practical RFC-ish check: local@domain.tld, no spaces
+  return /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$/.test(s);
+}
+
+export function normalizeEmail(raw) {
+  return isValidEmail(raw) ? String(raw).trim().toLowerCase() : "";
+}
+
 export function isHttpsUrl(raw) {
   if (!raw || typeof raw !== "string") return false;
   try {
@@ -127,7 +139,7 @@ export function validateSubmission(body) {
   const name = sanitizeText(body.name, 120);
   const projectUrl = typeof body.projectUrl === "string" ? body.projectUrl.trim() : "";
   const makerName = sanitizeText(body.makerName, 80);
-  const email = sanitizeText(body.email, 120);
+  const email = normalizeEmail(body.email);
   const category = typeof body.category === "string" ? body.category.trim() : "";
   const priceLabel = sanitizeText(body.priceLabel ?? body.price, 40) || "See site";
   const pitchShort = sanitizeText(body.pitchShort ?? body.shortDescription, MAX_DESC_SHORT);
@@ -138,7 +150,7 @@ export function validateSubmission(body) {
   if (!name) return { error: "Project name is required.", status: 400 };
   if (!isHttpsUrl(projectUrl)) return { error: "Project URL must be a valid https link.", status: 400 };
   if (!makerName) return { error: "Maker name is required.", status: 400 };
-  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  if (!email) {
     return { error: "A valid email is required.", status: 400 };
   }
   if (!CATEGORIES.includes(category)) {
@@ -447,4 +459,114 @@ export async function notifySubmission(env, listing, request) {
 
   const subject = `[Community] ${statusLabel(status)}: ${listing.name}`;
   return sendCommunityEmail(env, { to, subject, text: lines.join("\n") });
+}
+
+
+const CONTACT_PREFIX = "contact:";
+const CONTACT_SOURCE = "developer-marketplace";
+
+export function contactKey(email) {
+  const e = normalizeEmail(email);
+  return e ? CONTACT_PREFIX + e : null;
+}
+
+export async function upsertContact(kv, { email, name, listingId }) {
+  const normalized = normalizeEmail(email);
+  if (!kv || !normalized) return null;
+  const key = CONTACT_PREFIX + normalized;
+  const now = Date.now();
+  let row = await kv.get(key, "json");
+  if (!row || typeof row !== "object") {
+    row = {
+      email: normalized,
+      name: "",
+      listingIds: [],
+      first_seen: now,
+      last_seen: now,
+      source: CONTACT_SOURCE,
+    };
+  }
+  if (name && typeof name === "string") {
+    const n = sanitizeText(name, 80);
+    if (n) row.name = n;
+  }
+  row.email = normalized;
+  row.last_seen = now;
+  if (!row.first_seen) row.first_seen = now;
+  row.source = row.source || CONTACT_SOURCE;
+  const ids = Array.isArray(row.listingIds) ? row.listingIds.filter(Boolean) : [];
+  if (listingId && !ids.includes(listingId)) ids.push(listingId);
+  row.listingIds = ids;
+  await kv.put(key, JSON.stringify(row));
+  return row;
+}
+
+export async function getContact(kv, email) {
+  const key = contactKey(email);
+  if (!kv || !key) return null;
+  const row = await kv.get(key, "json");
+  return row && typeof row === "object" ? row : null;
+}
+
+export async function deleteContact(kv, email) {
+  const key = contactKey(email);
+  if (!kv || !key) return false;
+  await kv.delete(key);
+  return true;
+}
+
+export async function listContacts(kv) {
+  if (!kv) return [];
+  const out = [];
+  let cursor;
+  do {
+    const page = await kv.list({ prefix: CONTACT_PREFIX, cursor, limit: 1000 });
+    for (const key of page.keys || []) {
+      const name = key.name || key;
+      const row = await kv.get(name, "json");
+      if (row && typeof row === "object" && row.email) out.push(row);
+    }
+    cursor = page.list_complete ? undefined : page.cursor;
+  } while (cursor);
+  out.sort((a, b) => (a.email || "").localeCompare(b.email || ""));
+  return out;
+}
+
+export async function backfillContactsFromListings(kv) {
+  if (!kv) return { upserted: 0 };
+  const index = await kvGetIndex(kv);
+  const ids = [...new Set([...(index.pending || []), ...(index.approved || []), ...(index.rejected || [])])];
+  let upserted = 0;
+  for (const id of ids) {
+    const row = await kvGetListing(kv, id);
+    if (!row || !row.email) continue;
+    await upsertContact(kv, { email: row.email, name: row.makerName, listingId: row.id });
+    upserted += 1;
+  }
+  return { upserted, scanned: ids.length };
+}
+
+function csvEscape(value) {
+  const s = value == null ? "" : String(value);
+  if (/[",\n\r]/.test(s)) return '"' + s.replace(/"/g, '""') + '"';
+  return s;
+}
+
+export function contactsToCsv(rows) {
+  const header = ["email", "name", "listing_ids", "first_seen", "last_seen", "source"];
+  const lines = [header.join(",")];
+  for (const row of rows || []) {
+    const ids = Array.isArray(row.listingIds) ? row.listingIds.join(" ") : "";
+    lines.push(
+      [
+        csvEscape(row.email),
+        csvEscape(row.name),
+        csvEscape(ids),
+        csvEscape(row.first_seen),
+        csvEscape(row.last_seen),
+        csvEscape(row.source || CONTACT_SOURCE),
+      ].join(",")
+    );
+  }
+  return lines.join("\n") + "\n";
 }

@@ -45,7 +45,10 @@
     <label>Project name<input name="name" required maxlength="120" autocomplete="organization"></label>
     <label>Project URL (https)<input name="projectUrl" type="url" required inputmode="url" placeholder="https://…" autocomplete="url"></label>
     <label>Maker / studio name<input name="makerName" required maxlength="80" autocomplete="name"></label>
-    <label>Contact email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Your email (we'll contact you about your listing)
+      <input name="email" type="email" required autocomplete="email" inputmode="email" maxlength="120" placeholder="you@example.com">
+    </label>
+    <p class="field-hint consent-hint">By submitting, you agree we may email you about your listing and Digital Underground updates. Unsubscribe anytime.</p>
     <label>X handle (optional)<input name="xHandle" maxlength="16" placeholder="handle without @"></label>
     <label>Category
       <select name="category" required>
@@ -141,6 +144,15 @@
       show("Add an image URL or upload a cover image.", false);
       return;
     }
+
+    var emailVal = String(payload.email || "").trim().toLowerCase();
+    var emailOk = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$/.test(emailVal);
+    if (!emailOk) {
+      show("Enter a valid email so we can contact you about your listing.", false);
+      form.querySelector('[name="email"]').focus();
+      return;
+    }
+    payload.email = emailVal;
 
     run.then(function () {
       return fetch("/api/community/submit", {

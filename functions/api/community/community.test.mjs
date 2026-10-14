@@ -1,6 +1,9 @@
 import {
   appendRefParam,
+  contactsToCsv,
+  isValidEmail,
   normalizeXHandle,
+  publicListing,
   validateSubmission,
 } from "../../_lib/community.js";
 
@@ -44,6 +47,47 @@ const honeypot = validateSubmission({
   terms: true,
 });
 check("honeypot", honeypot.error && honeypot.status === 400);
+
+const badEmail = validateSubmission({
+  name: "Test App",
+  projectUrl: "https://example.com/app",
+  makerName: "Maker",
+  email: "not-an-email",
+  category: "apps",
+  pitchShort: "Short pitch",
+  descriptionLong: "Longer text",
+  imageUrl: "https://example.com/cover.png",
+  terms: true,
+});
+check("reject bad email", badEmail.error && badEmail.status === 400);
+
+check("isValidEmail ok", isValidEmail("Maker@Example.com") === true);
+check("isValidEmail bad", isValidEmail("nope") === false);
+
+const pub = publicListing({
+  id: "cm_x",
+  name: "N",
+  makerName: "M",
+  email: "secret@example.com",
+  category: "apps",
+  priceLabel: "Free",
+  pitchShort: "p",
+  imageUrl: "https://example.com/i.png",
+  projectUrl: "https://example.com",
+  visitUrl: "https://example.com/?ref=digitalunderground",
+});
+check("publicListing strips email", !("email" in pub) && !JSON.stringify(pub).includes("secret@"));
+
+const csv = contactsToCsv([{
+  email: "a@example.com",
+  name: "A",
+  listingIds: ["cm_1"],
+  first_seen: 1,
+  last_seen: 2,
+  source: "developer-marketplace",
+}]);
+check("csv header", csv.startsWith("email,name,listing_ids,"));
+check("csv row", csv.includes("a@example.com") && csv.includes("cm_1"));
 
 if (failed) {
   process.exit(1);

@@ -196,3 +196,11 @@ form button[type="submit"] {
 }
 .card .shot { background-size: cover; background-position: center; }
 .wrap { overflow-x: clip; }
+
+.admin-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.admin-load.secondary {
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(196, 181, 253, .4);
+  color: var(--text);
+}
+.consent-hint { margin-top: -6px; }

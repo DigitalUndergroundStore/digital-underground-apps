@@ -5,6 +5,7 @@ import {
   json,
   notifySubmission,
   saveListing,
+  upsertContact,
   validateSubmission,
   verifyTurnstile,
 } from "../../_lib/community.js";
@@ -75,6 +76,16 @@ export async function onRequest(context) {
   } catch (e) {
     console.error("community submit kv error", e);
     return json({ error: "Could not save submission." }, 500);
+  }
+
+  try {
+    await upsertContact(kv, {
+      email: listing.email,
+      name: listing.makerName,
+      listingId: listing.id,
+    });
+  } catch (e) {
+    console.error("community contact upsert error", e);
   }
 
   let notify = { sent: false, reason: "not_attempted" };

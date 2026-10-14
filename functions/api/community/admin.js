@@ -1,8 +1,12 @@
 import {
   adminAuthorized,
+  backfillContactsFromListings,
+  contactsToCsv,
+  deleteContact,
   deleteListing,
   getKv,
   json,
+  listContacts,
   listPending,
   setListingStatus,
 } from "../../_lib/community.js";
@@ -21,8 +25,24 @@ export async function onRequest(context) {
     return json({ error: "COMMUNITY_KV is not bound." }, 503);
   }
 
+  const url = new URL(request.url);
+  const queryAction = url.searchParams.get("action") || "";
+
   if (request.method === "GET") {
     try {
+      if (queryAction === "contacts") {
+        await backfillContactsFromListings(kv);
+        const rows = await listContacts(kv);
+        const csv = contactsToCsv(rows);
+        return new Response(csv, {
+          status: 200,
+          headers: {
+            "Content-Type": "text/csv; charset=utf-8",
+            "Content-Disposition": 'attachment; filename="developer-marketplace-contacts.csv"',
+            "Cache-Control": "no-store",
+          },
+        });
+      }
       const pending = await listPending(kv);
       return json({ pending });
     } catch (e) {
@@ -43,10 +63,21 @@ export async function onRequest(context) {
   }
 
   const action = body.action;
-  const id = typeof body.id === "string" ? body.id.trim() : "";
-  if (!id) return json({ error: "Missing listing id." }, 400);
-
   try {
+    if (action === "backfill_contacts") {
+      const result = await backfillContactsFromListings(kv);
+      return json({ ok: true, ...result });
+    }
+    if (action === "delete_contact") {
+      const email = typeof body.email === "string" ? body.email.trim() : "";
+      if (!email) return json({ error: "Missing email." }, 400);
+      await deleteContact(kv, email);
+      return json({ ok: true, deleted: email.toLowerCase() });
+    }
+
+    const id = typeof body.id === "string" ? body.id.trim() : "";
+    if (!id) return json({ error: "Missing listing id." }, 400);
+
     if (action === "approve") {
       const row = await setListingStatus(kv, id, "approved");
       if (!row) return json({ error: "Listing not found." }, 404);
@@ -61,7 +92,10 @@ export async function onRequest(context) {
       await deleteListing(kv, id);
       return json({ ok: true, deleted: id });
     }
-    return json({ error: "Unknown action. Use approve, reject, or delete." }, 400);
+    return json(
+      { error: "Unknown action. Use approve, reject, delete, backfill_contacts, or delete_contact." },
+      400
+    );
   } catch (e) {
     console.error("community admin action error", e);
     return json({ error: "Action failed." }, 500);

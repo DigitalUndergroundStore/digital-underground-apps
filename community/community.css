@@ -43,6 +43,18 @@ a { color: inherit; -webkit-tap-highlight-color: transparent; }
   background: linear-gradient(105deg, #6d28d9, #1e3a8a);
   border-color: transparent; color: #fff;
 }
+.site-top nav .cta-wrap {
+  display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px;
+}
+.launch-badge {
+  display: inline-flex; align-items: center;
+  min-height: 26px; padding: 0 9px; border-radius: 999px;
+  background: rgba(6, 4, 14, .72);
+  border: 1px solid rgba(255, 255, 255, .22);
+  color: var(--cyan);
+  font-size: 11px; font-weight: 750; letter-spacing: .04em;
+  white-space: nowrap;
+}
 .page-head { margin: 12px 0 20px; }
 .page-head h1 {
   margin: 0; font-size: clamp(32px, 6vw, 48px);

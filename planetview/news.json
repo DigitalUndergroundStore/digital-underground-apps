@@ -1,6 +1,258 @@
 {
-  "updated": "2026-10-14T17:57:27.049Z",
+  "updated": "2026-10-14T21:34:53.721Z",
   "articles": [
+    {
+      "url": "https://www.theguardian.com/us-news/live/2026/oct/14/donald-trump-us-midterms-arizona-montana-politics-latest-news-updates",
+      "title": "Trump tries to rally support for Republican candidates as top Super Pac for Senate Democrats pours millions into key races – live",
+      "seendate": "20261014T211907Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/live/2026/oct/15/anthony-albanese-labor-pauline-hanson-monoculture-victorian-election-coalition-angus-taylor-ntwnfb",
+      "title": "Australian politics live: Canavan denies he walked out on EU trade meeting; AEC warns about ‘emerging’ risk of AI in voting",
+      "seendate": "20261014T211830Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/14/volodymyr-zelenskyy-feels-betrayed-by-donald-trump-over-starlink-access",
+      "title": "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
+      "seendate": "20261014T210852Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
+      "title": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+      "seendate": "20261014T205524Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/14/west-indies-beat-india-to-level-series-as-hope-continues-record-run?traffic_source=rss",
+      "title": "West Indies beat India to level T20 series as Hope continues record run",
+      "seendate": "20261014T205225Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/14/ex-fiance-nancy-mace-sex-crimes-speech",
+      "title": "Ex-fiance of Nancy Mace and two others charged with sex crimes she detailed in House speech",
+      "seendate": "20261014T204948Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/israeli-quadcopter-drone-drops-bomb-in-lebanon?traffic_source=rss",
+      "title": "Israeli quadcopter drone drops bomb in Lebanon",
+      "seendate": "20261014T204746Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/14/families-of-trinidadian-men-killed-in-us-boat-strike-demand-accountability?traffic_source=rss",
+      "title": "Families of Trinidadian men killed in US boat strike demand accountability",
+      "seendate": "20261014T204259Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/c65yngxdzdd5o?at_medium=RSS&at_campaign=rss",
+      "title": "Why Zelensky's meeting with Burnham matters",
+      "seendate": "20261014T204103Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/sky-turns-orange-as-wildfires-rage-across-indonesia?traffic_source=rss",
+      "title": "Sky turns orange as wildfires rage across Indonesia",
+      "seendate": "20261014T203959Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Indonesia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/14/worlds-oldest-shipwreck-found-off-coast-of-turkiye?traffic_source=rss",
+      "title": "World’s oldest shipwreck found off coast of Turkiye",
+      "seendate": "20261014T203320Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/woman-rescued-after-being-swept-away-by-istanbul-flash-flood?traffic_source=rss",
+      "title": "Woman rescued after being swept away by Istanbul flash flood",
+      "seendate": "20261014T202950Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Turkey"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq80zk5k2ep4o?at_medium=RSS&at_campaign=rss",
+      "title": "Student protesters attack government buildings in Tirana",
+      "seendate": "20261014T202905Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/14/mexico-to-force-meta-tiktok-and-x-to-better-protect-minors-on-platform?traffic_source=rss",
+      "title": "Mexico to force Meta, TikTok, and X to better protect minors on platform",
+      "seendate": "20261014T202741Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Mexico"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/14/infantino-faces-fifa-rebels-in-zurich-after-failed-world-cup-stake-sale?traffic_source=rss",
+      "title": "Infantino faces FIFA rebels in Zurich after failed World Cup stake sale",
+      "seendate": "20261014T202530Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Switzerland"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/houthi-attacks-disrupt-travel-plans-for-mecca-pilgrims?traffic_source=rss",
+      "title": "Houthi attacks disrupt travel plans for Mecca pilgrims",
+      "seendate": "20261014T202504Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/russia-attack-hits-kyiv-after-reported-intelligence-lapse?traffic_source=rss",
+      "title": "Russia attack hits Kyiv after reported intelligence lapse",
+      "seendate": "20261014T201457Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/14/barcola-scores-hat-trick-as-liverpool-hit-lask-for-six?traffic_source=rss",
+      "title": "Barcola scores hat-trick as Liverpool hit LASK for six",
+      "seendate": "20261014T201220Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/14/spanish-ngo-halts-mediterranean-rescue-operations-citing-fuel-prices?traffic_source=rss",
+      "title": "Spanish NGO halts Mediterranean rescue operations, citing fuel prices",
+      "seendate": "20261014T201015Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Spain"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/14/how-will-a-new-alliance-affect-the-conflict-in-eastern-drc?traffic_source=rss",
+      "title": "How will a new alliance affect the conflict in eastern DRC?",
+      "seendate": "20261014T195416Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/14/us-lifts-sanctions-on-venezuelas-top-legislator?traffic_source=rss",
+      "title": "US lifts sanctions on Venezuela’s top legislator",
+      "seendate": "20261014T195303Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqkgk4zg54reo?at_medium=RSS&at_campaign=rss",
+      "title": "Why is Starlink internet so important on the battlefield in Ukraine?",
+      "seendate": "20261014T195204Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/politics/2026/oct/14/reform-uk-councillors-and-candidates-filmed-making-racist-and-extreme-comments",
+      "title": "Reform UK councillors and candidates filmed making racist and extreme comments",
+      "seendate": "20261014T193616Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/sally-rooneys-books-pulled-from-uk-over-palestine-action-support?traffic_source=rss",
+      "title": "Sally Rooney’s books pulled from UK over Palestine Action support",
+      "seendate": "20261014T192327Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/14/israel-trump-peace-board-gaza-base",
+      "title": "Israel blocks construction of key Gaza base created by Trump peace board",
+      "seendate": "20261014T191952Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/worlds-oldest-known-shipwreck-found-in-turkiye?traffic_source=rss",
+      "title": "World’s oldest known shipwreck found in Turkiye",
+      "seendate": "20261014T191748Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/oct/14/openai-london-staff-earnings-2million-per-person",
+      "title": "OpenAI’s London staff receive average of £2.3m per person annually",
+      "seendate": "20261014T191514Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/14/bangladesh-arrests-two-for-luring-locals-to-fight-for-russia-in-ukraine?traffic_source=rss",
+      "title": "Bangladesh arrests two for luring locals to fight for Russia in Ukraine",
+      "seendate": "20261014T190251Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/oct/14/zimbabwean-author-simbarashe-kundizeza-denies-ai-story",
+      "title": "Zimbabwean author Simbarashe Kundizeza denies using AI to write prize-winning story",
+      "seendate": "20261014T190129Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-starlink-civilian-casualties-death-toll",
+      "title": "In Ukraine, civilian casualties were already rising. Restrictions on Starlink will only worsen the death toll",
+      "seendate": "20261014T185434Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/14/israels-former-security-chief-sues-netanyahu-for-october-7-defamation?traffic_source=rss",
+      "title": "Israel’s former security chief sues Netanyahu for October 7 defamation",
+      "seendate": "20261014T183903Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/14/jellyfish-cloud-spacex-rocket-launch",
+      "title": "SpaceX rocket launch causes stunning ‘jellyfish cloud’ visible off US east coast",
+      "seendate": "20261014T181525Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/10/14/real-madrids-vinicius-banned-for-clasico-after-hair-pull-red-card?traffic_source=rss",
+      "title": "Real Madrid’s Vinicius banned for Clasico after hair-pull red card",
+      "seendate": "20261014T180346Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Spain"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/oct/14/russell-brand-was-ruthless-calculated-and-manipulative-sexual-predator-court-told",
+      "title": "Russell Brand was ruthless, calculated and manipulative sexual predator, court told",
+      "seendate": "20261014T180135Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/ck78pj2qy42po?at_medium=RSS&at_campaign=rss",
+      "title": "What if you could turn off your algorithm? Australia is about to try",
+      "seendate": "20261014T180054Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/2026/10/14/aje-onl-pp-nord-stream-141125?traffic_source=rss",
+      "title": "How six Ukrainian divers could have blown up Russia’s $20bn pipelines",
+      "seendate": "20261014T180044Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Russia"
+    },
     {
       "url": "https://www.theguardian.com/us-news/2026/oct/14/great-white-shark-huntington-beach",
       "title": "Southern California beach closes after sighting of great white shark ‘exhibiting aggressive behavior’",
@@ -16,13 +268,6 @@
       "sourcecountry": "India"
     },
     {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/14/russell-brand-was-ruthless-calculated-and-manipulative-sexual-predator-court-told",
-      "title": "Russell Brand was ruthless, calculated and manipulative sexual predator, court told",
-      "seendate": "20261014T173919Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
       "url": "https://www.aljazeera.com/news/2026/10/14/ex-uk-army-chef-jailed-for-terror-related-offence?traffic_source=rss",
       "title": "Ex-UK army chef jailed for ‘terror’-related offence",
       "seendate": "20261014T173209Z",
@@ -30,256 +275,11 @@
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/us-news/live/2026/oct/14/donald-trump-us-midterms-arizona-montana-politics-latest-news-updates",
-      "title": "DoJ threatens California over alleged noncitizen voting as Trump tries to rally support for Republicans – US politics live",
-      "seendate": "20261014T172318Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
       "url": "https://www.bbc.co.uk/news/articles/cw5yn8rn04ljo?at_medium=RSS&at_campaign=rss",
       "title": "Kenya confirms second Ebola case - a relative of the first victim",
       "seendate": "20261014T172301Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "Kenya"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/14/student-protests-tirana-albania-police-clashes",
-      "title": "Student protests in Albania turn violent as demonstrators clash with police",
-      "seendate": "20261014T172121Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/media/2026/oct/14/the-archers-cast-radio-bbc-decision-new-studio-birmingham",
-      "title": "The Archers cast ‘angry’ at BBC decision to scrap new Birmingham studio",
-      "seendate": "20261014T171239Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/14/saudi-tennis-slam-with-alcaraz-djokovic-postponed-amid-houthi-attacks?traffic_source=rss",
-      "title": "Saudi tennis ‘slam’ with Alcaraz, Djokovic postponed amid Houthi attacks",
-      "seendate": "20261014T171157Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/palestinian-collective-uses-art-to-connect-gaza-and-the-west-bank?traffic_source=rss",
-      "title": "Palestinian collective uses art to connect Gaza and the West Bank",
-      "seendate": "20261014T171120Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/live/2026/oct/14/pmqs-andy-burnham-kemi-badenoch-zelenskyy-uk-politics-latest-news",
-      "title": "Burnham tells Zelenskyy’s UK’s support for Ukraine ‘will not change’ – as it happened",
-      "seendate": "20261014T170658Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/14/container-ship-sinks-strait-of-hormuz-surge-iranian-attacks-iran-us-midterm-elections",
-      "title": "Two container ships sink near strait of Hormuz amid surge in Iranian attacks",
-      "seendate": "20261014T170542Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/settlers-attack-palestinian-mosque-near-occupied-east-jerusalem?traffic_source=rss",
-      "title": "Settlers attack Palestinian mosque near occupied East Jerusalem",
-      "seendate": "20261014T170501Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/14/kenyas-health-ministry-confirms-second-ebola-case?traffic_source=rss",
-      "title": "Kenya’s health ministry confirms second Ebola case",
-      "seendate": "20261014T170319Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Kenya"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/14/ukraine-accuses-elon-musks-spacex-of-throttling-starlink-terminals?traffic_source=rss",
-      "title": "Ukraine accuses Elon Musk’s SpaceX of throttling Starlink terminals",
-      "seendate": "20261014T170231Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/14/uks-incoherent-approach-to-china-plagued-by-a-lack-of-expertise-report-says",
-      "title": "UK’s ‘incoherent’ approach to China plagued by lack of expertise, report says",
-      "seendate": "20261014T170014Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.theguardian.com/football/2026/oct/14/bev-craig-manchester-city-trade-trip-india-to-promote-uk-tourism",
-      "title": "Manchester City staff invited on government trade trip to India",
-      "seendate": "20261014T170008Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/14/uk-sanctions-powers-action-supporters-israeli-settlements",
-      "title": "New UK sanctions powers will enable action against supporters of illegal Israeli settlements",
-      "seendate": "20261014T165125Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/14/suspected-israeli-online-operations-cause-alarm-in-iran-and-lebanon?traffic_source=rss",
-      "title": "Suspected Israeli online operations cause alarm in Iran and Lebanon",
-      "seendate": "20261014T165112Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/oct/14/land-farmed-organically-england-share-10-pc-2036-plan-food-climate",
-      "title": "Plan unveiled to increase share of land farmed organically in England to 10%",
-      "seendate": "20261014T164915Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&at_campaign=rss",
-      "title": "Netflix to lay off 1,000 staff in steepest cuts since 2022",
-      "seendate": "20261014T164732Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/ai-in-politics-is-albania-the-eus-testing-ground?traffic_source=rss",
-      "title": "AI in politics: Is Albania the EU’s testing ground?",
-      "seendate": "20261014T164641Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/economy/2026/10/14/tehran-municipality-accused-of-overstep-after-launching-welfare-projects?traffic_source=rss",
-      "title": "Tehran municipality accused of ‘overstep’ after launching welfare projects",
-      "seendate": "20261014T164142Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/14/cornell-president-fraternity-sexual-assault-interview",
-      "title": "Cornell president acknowledges he knew about fraternity sexual assault but didn’t follow up",
-      "seendate": "20261014T163010Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/14/fire-erupts-at-albanias-education-ministry-as-protests-enter-third-day?traffic_source=rss",
-      "title": "Fire erupts at Albania’s Education Ministry as protests enter third day",
-      "seendate": "20261014T162320Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/14/at-least-two-security-officials-killed-near-irans-critical-chabahar-port?traffic_source=rss",
-      "title": "At least two security officials killed near Iran’s critical Chabahar port",
-      "seendate": "20261014T162204Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/media/2026/oct/14/sir-trevor-phillips-london-cbs-news",
-      "title": "Sir Trevor Phillips encouraged CBS News colleagues to tell critics to ‘fuck off’",
-      "seendate": "20261014T162059Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
-      "title": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-      "seendate": "20261014T161846Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/14/us-social-security-benefits-to-rise-by-3-6-percent-in-2027?traffic_source=rss",
-      "title": "US Social Security benefits to rise by 3.6 percent in 2027",
-      "seendate": "20261014T161039Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/14/social-security-increase-cost-of-living",
-      "title": "Trump administration promises social security recipients 3.6% increase in 2027",
-      "seendate": "20261014T160835Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/14/un-official-warns-of-looming-food-crisis-as-hormuz-fertiliser-plan-stalls?traffic_source=rss",
-      "title": "UN official warns of looming food crisis as Hormuz fertiliser plan stalls",
-      "seendate": "20261014T160809Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq98z59xdny5o?at_medium=RSS&at_campaign=rss",
-      "title": "Burnham says he wants to 'repair bridges' between Ukraine and US",
-      "seendate": "20261014T155657Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm04054ykqqqo?at_medium=RSS&at_campaign=rss",
-      "title": "Toilet paper and secret recorders: What we know about the arrest of the Saudi OpenAI engineer",
-      "seendate": "20261014T155404Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/jerusalem-daily-un-demands-israel-do-more-to-stop-settler-violence?traffic_source=rss",
-      "title": "Jerusalem Daily: UN demands Israel do more to stop settler violence",
-      "seendate": "20261014T154954Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/14/ronaldos-among-three-saudi-arabia-games-postponed-due-to-houthi-attacks?traffic_source=rss",
-      "title": "Ronaldo’s among three Saudi Arabia games postponed due to Houthi attacks",
-      "seendate": "20261014T154947Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/14/pope-leo-recovery-lung-cancer-surgery-progressing-as-planned",
-      "title": "Pope Leo’s recovery from lung cancer surgery ‘progressing as planned’",
-      "seendate": "20261014T154805Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cke8r4nmy36qo?at_medium=RSS&at_campaign=rss",
-      "title": "What we know about the deadly Six Flags rollercoaster incident in Georgia",
-      "seendate": "20261014T154646Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/crkg7q97z078o?at_medium=RSS&at_campaign=rss",
-      "title": "Container ship hit by projectile sinks in Strait of Hormuz, Singapore says",
-      "seendate": "20261014T153419Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Singapore"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/oct/14/mont-blanc-loses-metre-height",
-      "title": "Mont Blanc, the ‘roof of Europe’, loses more than a metre of height in a year",
-      "seendate": "20261014T153352Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/economy/2026/10/14/us-inflation-rises-before-midterm-elections-fuelling-rate-hike-fears?traffic_source=rss",
-      "title": "US inflation rises before midterm elections, fuelling rate hike fears",
-      "seendate": "20261014T153129Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
     }
   ]
 }

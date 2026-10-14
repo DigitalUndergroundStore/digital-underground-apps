@@ -245,10 +245,75 @@ export async function listPending(kv) {
 }
 
 export async function savePendingListing(kv, listing) {
+  const row = { ...listing, status: listing.status || "pending" };
+  return saveListing(kv, row);
+}
+
+/** Save listing and place id in the index bucket matching listing.status. */
+export async function saveListing(kv, listing) {
+  const status = listing.status || "pending";
+  listing.status = status;
   const index = await kvGetIndex(kv);
-  if (!index.pending.includes(listing.id)) index.pending.push(listing.id);
+  index.pending = index.pending.filter((x) => x !== listing.id);
+  index.approved = index.approved.filter((x) => x !== listing.id);
+  index.rejected = index.rejected.filter((x) => x !== listing.id);
+  if (status === "approved") index.approved.push(listing.id);
+  else if (status === "rejected") index.rejected.push(listing.id);
+  else index.pending.push(listing.id);
   await kvPutListing(kv, listing);
   await kvSaveIndex(kv, index);
+  return listing;
+}
+
+const EMAIL_LINK_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+
+export function communitySiteOrigin(env, request) {
+  const fromEnv = env?.COMMUNITY_SITE_URL;
+  if (fromEnv && typeof fromEnv === "string") return fromEnv.replace(/\/$/, "");
+  if (request) {
+    try {
+      return new URL(request.url).origin;
+    } catch {
+      /* ignore */
+    }
+  }
+  return "https://digitalundergroundstore.com";
+}
+
+async function hmacHex(secret, message) {
+  const key = await crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(secret),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"]
+  );
+  const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(message));
+  return [...new Uint8Array(sig)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+export async function signEmailModerationLink(env, request, id, action) {
+  const token = env?.COMMUNITY_ADMIN_TOKEN;
+  if (!token || !id || !action) return null;
+  const exp = String(Date.now() + EMAIL_LINK_TTL_MS);
+  const payload = `${id}:${action}:${exp}`;
+  const sig = await hmacHex(token, payload);
+  const origin = communitySiteOrigin(env, request);
+  const q = new URLSearchParams({ id, action, exp, sig });
+  return `${origin}/api/community/moderate-link?${q.toString()}`;
+}
+
+export async function verifyEmailModerationToken(env, { id, action, exp, sig }) {
+  const token = env?.COMMUNITY_ADMIN_TOKEN;
+  if (!token) return { ok: false, error: "Admin token not configured." };
+  if (!id || !action || !exp || !sig) return { ok: false, error: "Missing link parameters." };
+  if (action !== "approve" && action !== "reject") return { ok: false, error: "Invalid action." };
+  const expMs = Number(exp);
+  if (!Number.isFinite(expMs) || expMs < Date.now()) return { ok: false, error: "This link has expired." };
+  const payload = `${id}:${action}:${exp}`;
+  const expected = await hmacHex(token, payload);
+  if (expected !== sig) return { ok: false, error: "Invalid signature." };
+  return { ok: true };
 }
 
 export async function setListingStatus(kv, id, status) {
@@ -305,34 +370,74 @@ export async function verifyTurnstile(env, token, ip) {
   return { ok: true };
 }
 
-export async function notifySubmission(env, listing) {
+function statusLabel(status) {
+  if (status === "approved") return "Approved (live)";
+  if (status === "rejected") return "Rejected";
+  return "Pending review";
+}
+
+async function sendCommunityEmail(env, { to, subject, text }) {
   const apiKey = env?.RESEND_API_KEY;
-  const to = env?.COMMUNITY_NOTIFY_EMAIL || "digitalunderground.store@proton.me";
-  if (!apiKey) return { sent: false, reason: "no_mail_configured" };
   const from = env?.COMMUNITY_NOTIFY_FROM || "Digital Underground <notify@digitalundergroundstore.com>";
-  const body = {
-    from,
-    to: [to],
-    subject: `[Community] New listing: ${listing.name}`,
-    text: [
-      `Project: ${listing.name}`,
-      `URL: ${listing.projectUrl}`,
-      `Maker: ${listing.makerName} (${listing.email})`,
-      `Category: ${listing.category}`,
-      `ID: ${listing.id}`,
-      "",
-      listing.pitchShort,
-      "",
-      "Moderate via /community/admin.html or the admin API.",
-    ].join("\n"),
-  };
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
-  });
-  return { sent: res.ok, status: res.status };
+  if (apiKey) {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ from, to: [to], subject, text }),
+    });
+    return { sent: res.ok, status: res.status, provider: "resend" };
+  }
+  if (env?.COMMUNITY_MAILCHANNELS === "1") {
+    const fromEmail =
+      typeof env.COMMUNITY_MAIL_FROM === "string"
+        ? env.COMMUNITY_MAIL_FROM
+        : "notify@digitalundergroundstore.com";
+    const res = await fetch("https://api.mailchannels.net/tx/v1/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        personalizations: [{ to: [{ email: to }] }],
+        from: { email: fromEmail, name: "Digital Underground Community" },
+        subject,
+        content: [{ type: "text/plain", value: text }],
+      }),
+    });
+    return { sent: res.ok, status: res.status, provider: "mailchannels" };
+  }
+  return { sent: false, reason: "no_mail_configured" };
+}
+
+export async function notifySubmission(env, listing, request) {
+  const to = env?.COMMUNITY_NOTIFY_EMAIL || "digitalunderground.store@proton.me";
+  const status = listing.status || "pending";
+  const reasons = Array.isArray(listing.screening?.reasons) ? listing.screening.reasons : [];
+  const approveLink = await signEmailModerationLink(env, request, listing.id, "approve");
+  const rejectLink = await signEmailModerationLink(env, request, listing.id, "reject");
+
+  const lines = [
+    `Community submission: ${listing.name}`,
+    `Result: ${statusLabel(status)}`,
+    `ID: ${listing.id}`,
+    `Project URL: ${listing.projectUrl}`,
+    `Maker: ${listing.makerName} (${listing.email})`,
+    `Category: ${listing.category}`,
+    "",
+    listing.pitchShort,
+    "",
+  ];
+  if (reasons.length) {
+    lines.push("Screening notes:", ...reasons.map((r) => `- ${r}`), "");
+  }
+  if (status === "pending" && approveLink && rejectLink) {
+    lines.push("One-tap moderation (7-day links):", `Approve: ${approveLink}`, `Reject: ${rejectLink}`, "");
+  } else if (approveLink && rejectLink) {
+    lines.push("Override (7-day links):", `Approve: ${approveLink}`, `Reject: ${rejectLink}`, "");
+  }
+  lines.push("Admin UI: https://digitalundergroundstore.com/community/admin.html");
+
+  const subject = `[Community] ${statusLabel(status)}: ${listing.name}`;
+  return sendCommunityEmail(env, { to, subject, text: lines.join("\n") });
 }

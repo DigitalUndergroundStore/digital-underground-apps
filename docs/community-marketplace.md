@@ -23,12 +23,25 @@ Optional static seed: `community/listings.json` (approved listings only; merged 
 1. Create a KV namespace: `npx wrangler kv namespace create COMMUNITY_KV`
 2. Put the returned id in `wrangler.toml` under `[[kv_namespaces]]` → `id` (and `preview_id` for preview).
 3. In **Cloudflare Pages** → project **digital-underground** → **Settings** → **Functions** → **KV namespace bindings**, add binding name `COMMUNITY_KV` to that namespace (production + preview).
-4. **Environment variables** (encrypted):
-   - `COMMUNITY_ADMIN_TOKEN` — long random string for moderation API
+4. **Workers AI** binding: variable name `AI` (add `[ai]` in `wrangler.toml`; mirror in Pages → Settings → Functions → **Workers AI**).
+5. **Environment variables** (encrypted):
+   - `COMMUNITY_ADMIN_TOKEN` — long random string for moderation API and signed email links
    - Optional: `TURNSTILE_SECRET_KEY` + set `siteKey` in `community/turnstile-config.json` (never commit the secret)
    - Optional: `RESEND_API_KEY`, `COMMUNITY_NOTIFY_FROM`, `COMMUNITY_NOTIFY_EMAIL` (defaults to digitalunderground.store@proton.me)
+   - Optional: `COMMUNITY_MAILCHANNELS=1` and `COMMUNITY_MAIL_FROM` (MailChannels; requires DNS on your domain)
+   - Optional: `COMMUNITY_SITE_URL` (origin for email moderation links)
 
 Redeploy after bindings change.
+
+## Automated screening
+
+On `POST /api/community/submit`, Pages Functions run:
+
+1. **Rules** — blocklist (adult, scam, crypto pump, gambling, malware, piracy, drugs, weapons), https project URL, live URL must return 2xx.
+2. **Workers AI** — `@cf/meta/llama-guard-3-8b` on listing text; `@cf/llava-hf/llava-1.5-7b-hf` on logo/cover image.
+3. **Outcome** — clean → `approved` (live); clear violations → `rejected` with reasons; uncertain or AI errors → `pending`.
+
+Donald gets one email per submission (when mail is configured) with the result and 7-day signed **Approve** / **Reject** links (`GET /api/community/moderate-link`).
 
 ## Moderation
 

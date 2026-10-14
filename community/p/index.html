@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listing — Developer Marketplace — Digital Underground</title>
+<meta name="description" content="An indie project on the Digital Underground Developer Marketplace.">
+<meta name="theme-color" content="#05040c">
+<link rel="stylesheet" href="../community.css">
+<script src="/community/track.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="site-top">
+    <a class="brand" href="/store/">
+      <img src="/store/logo.png" width="80" height="65" alt="">
+      <strong>Digital Underground</strong>
+    </a>
+    <nav aria-label="Site">
+      <a href="/store/">Store</a>
+      <a href="/community/">Developer Marketplace</a>
+      <a href="/community/dashboard/">Creator dashboard</a>
+      <span class="cta-wrap"><a class="cta" href="/community/submit/">List your project</a></span>
+    </nav>
+  </div>
+  <div id="out"><p class="muted">Loading…</p></div>
+  <footer class="foot"><p><a href="/community/">← Developer Marketplace</a></p></footer>
+</div>
+<script>
+(function () {
+  function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+  var id = new URLSearchParams(location.search).get("id") || "";
+  var out = document.getElementById("out");
+  fetch("/api/community/listing?id=" + encodeURIComponent(id)).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+    if (!d || !d.listing) { out.innerHTML = '<p class="empty">This listing is not available. <a href="/community/">Browse the marketplace</a>.</p>'; return; }
+    var l = d.listing;
+    document.title = l.name + " — Developer Marketplace — Digital Underground";
+    var x = l.xHandle ? ' · <a href="https://x.com/' + esc(l.xHandle) + '" target="_blank" rel="noopener">@' + esc(l.xHandle) + "</a>" : "";
+    out.innerHTML =
+      '<header class="page-head"><h1>' + esc(l.name) + '</h1><p>' + esc(l.makerName) + x + "</p></header>" +
+      '<div class="detail"><img src="' + esc(l.imageUrl) + '" alt="">' +
+      '<div class="dash-panel"><p>' + esc(l.pitchShort) + "</p>" +
+      (l.tags && l.tags.length ? '<div class="tags">' + l.tags.map(function (t) { return "<span>" + esc(t) + "</span>"; }).join("") + "</div>" : "") +
+      '<p class="desc">' + esc(l.descriptionLong) + "</p>" +
+      '<div class="card"><div class="info"><div class="buyrow"><span class="price">' + esc(l.priceLabel || "See site") + '</span>' +
+      '<a class="cta" data-out="' + esc(l.id) + '" href="' + esc(l.visitUrl || l.projectUrl) + '" target="_blank" rel="noopener">Visit</a></div></div></div></div></div>';
+    if (window.duTrack) duTrack.view(l.id);
+  });
+})();
+</script>
+</body>
+</html>

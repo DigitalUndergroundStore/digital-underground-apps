@@ -9,6 +9,13 @@ import {
   validateSubmission,
   verifyTurnstile,
 } from "../../_lib/community.js";
+import {
+  attachListing,
+  authCreator,
+  dashboardUrl,
+  issueAccountToken,
+  linkContactToCreator,
+} from "../../_lib/creator.js";
 import { screenListing } from "../../_lib/community-screening.js";
 
 export async function onRequest(context) {
@@ -71,8 +78,24 @@ export async function onRequest(context) {
     };
   }
 
+  // Existing creator (submitting from the dashboard) or a brand-new account.
+  let acct = null;
+  let newToken = null;
+  try {
+    acct = await authCreator(request, env, kv);
+    if (!acct) {
+      const issued = await issueAccountToken(kv, null);
+      acct = issued.acct;
+      newToken = issued.token;
+    }
+    listing.creatorId = acct.id;
+  } catch (e) {
+    console.error("community creator account error", e);
+  }
+
   try {
     await saveListing(kv, listing);
+    if (acct) await attachListing(kv, acct, listing.id);
   } catch (e) {
     console.error("community submit kv error", e);
     return json({ error: "Could not save submission." }, 500);
@@ -86,6 +109,13 @@ export async function onRequest(context) {
     });
   } catch (e) {
     console.error("community contact upsert error", e);
+  }
+  if (acct) {
+    try {
+      await linkContactToCreator(kv, listing.email, acct.id);
+    } catch (e) {
+      console.error("community contact link error", e);
+    }
   }
 
   let notify = { sent: false, reason: "not_attempted" };
@@ -111,5 +141,7 @@ export async function onRequest(context) {
     status: listing.status,
     message: messages[listing.status] || messages.pending,
     notify,
+    ...(newToken ? { dashboardUrl: dashboardUrl(env, request, newToken) } : {}),
+    existingAccount: !!acct && !newToken,
   });
 }

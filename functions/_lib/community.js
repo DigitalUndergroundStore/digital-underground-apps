@@ -145,6 +145,7 @@ export function validateSubmission(body) {
   const pitchShort = sanitizeText(body.pitchShort ?? body.shortDescription, MAX_DESC_SHORT);
   const descriptionLong = sanitizeText(body.descriptionLong ?? body.longDescription, MAX_DESC_LONG);
   const xHandle = normalizeXHandle(body.xHandle ?? body.twitter);
+  const tags = normalizeTags(body.tags);
   const terms = body.terms === true || body.terms === "true" || body.termsAccepted === true;
 
   if (!name) return { error: "Project name is required.", status: 400 };
@@ -178,10 +179,23 @@ export function validateSubmission(body) {
     pitchShort,
     descriptionLong,
     imageUrl: img.imageUrl,
+    tags,
     createdAt: now,
     updatedAt: now,
   };
   return { listing };
+}
+
+/** Up to 6 short lowercase tags from an array or comma-separated string. */
+export function normalizeTags(raw) {
+  const list = Array.isArray(raw) ? raw : typeof raw === "string" ? raw.split(",") : [];
+  const out = [];
+  for (const t of list) {
+    const s = String(t || "").toLowerCase().replace(/[^a-z0-9 +#.-]/g, "").replace(/\s+/g, " ").trim().slice(0, 24);
+    if (s && !out.includes(s)) out.push(s);
+    if (out.length >= 6) break;
+  }
+  return out;
 }
 
 export function publicListing(row) {
@@ -196,7 +210,13 @@ export function publicListing(row) {
     imageUrl: row.imageUrl,
     visitUrl: row.visitUrl || appendRefParam(row.projectUrl),
     projectUrl: row.projectUrl,
+    tags: Array.isArray(row.tags) ? row.tags : [],
   };
+}
+
+/** Public detail view (adds long description). Never includes email or creator ids. */
+export function publicListingDetail(row) {
+  return { ...publicListing(row), descriptionLong: row.descriptionLong || "" };
 }
 
 const INDEX_KEY = "community:index";
@@ -208,12 +228,13 @@ export function getKv(env) {
 export async function kvGetIndex(kv) {
   const raw = await kv.get(INDEX_KEY, "json");
   if (!raw || typeof raw !== "object") {
-    return { pending: [], approved: [], rejected: [] };
+    return { pending: [], approved: [], rejected: [], unpublished: [] };
   }
   return {
     pending: Array.isArray(raw.pending) ? raw.pending : [],
     approved: Array.isArray(raw.approved) ? raw.approved : [],
     rejected: Array.isArray(raw.rejected) ? raw.rejected : [],
+    unpublished: Array.isArray(raw.unpublished) ? raw.unpublished : [],
   };
 }
 
@@ -269,8 +290,10 @@ export async function saveListing(kv, listing) {
   index.pending = index.pending.filter((x) => x !== listing.id);
   index.approved = index.approved.filter((x) => x !== listing.id);
   index.rejected = index.rejected.filter((x) => x !== listing.id);
+  index.unpublished = index.unpublished.filter((x) => x !== listing.id);
   if (status === "approved") index.approved.push(listing.id);
   else if (status === "rejected") index.rejected.push(listing.id);
+  else if (status === "unpublished") index.unpublished.push(listing.id);
   else index.pending.push(listing.id);
   await kvPutListing(kv, listing);
   await kvSaveIndex(kv, index);
@@ -292,7 +315,7 @@ export function communitySiteOrigin(env, request) {
   return "https://digitalundergroundstore.com";
 }
 
-async function hmacHex(secret, message) {
+export async function hmacHex(secret, message) {
   const key = await crypto.subtle.importKey(
     "raw",
     new TextEncoder().encode(secret),
@@ -324,7 +347,7 @@ export async function verifyEmailModerationToken(env, { id, action, exp, sig }) 
   if (!Number.isFinite(expMs) || expMs < Date.now()) return { ok: false, error: "This link has expired." };
   const payload = `${id}:${action}:${exp}`;
   const expected = await hmacHex(token, payload);
-  if (expected !== sig) return { ok: false, error: "Invalid signature." };
+  if (!timingSafeEqualStr(expected, sig)) return { ok: false, error: "Invalid signature." };
   return { ok: true };
 }
 
@@ -335,11 +358,13 @@ export async function setListingStatus(kv, id, status) {
   index.pending = index.pending.filter((x) => x !== id);
   index.approved = index.approved.filter((x) => x !== id);
   index.rejected = index.rejected.filter((x) => x !== id);
+  index.unpublished = index.unpublished.filter((x) => x !== id);
   listing.status = status;
   listing.updatedAt = Date.now();
   if (status === "approved") index.approved.push(id);
   else if (status === "pending") index.pending.push(id);
   else if (status === "rejected") index.rejected.push(id);
+  else if (status === "unpublished") index.unpublished.push(id);
   await kvPutListing(kv, listing);
   await kvSaveIndex(kv, index);
   return listing;
@@ -350,17 +375,27 @@ export async function deleteListing(kv, id) {
   index.pending = index.pending.filter((x) => x !== id);
   index.approved = index.approved.filter((x) => x !== id);
   index.rejected = index.rejected.filter((x) => x !== id);
+  index.unpublished = index.unpublished.filter((x) => x !== id);
   await kvDeleteListing(kv, id);
   await kvSaveIndex(kv, index);
+}
+
+export function timingSafeEqualStr(a, b) {
+  const ea = new TextEncoder().encode(String(a ?? ""));
+  const eb = new TextEncoder().encode(String(b ?? ""));
+  let diff = ea.length ^ eb.length;
+  const n = Math.max(ea.length, eb.length);
+  for (let i = 0; i < n; i++) diff |= (ea[i] || 0) ^ (eb[i] || 0);
+  return diff === 0;
 }
 
 export function adminAuthorized(request, env) {
   const token = env?.COMMUNITY_ADMIN_TOKEN;
   if (!token || typeof token !== "string") return false;
   const auth = request.headers.get("Authorization") || "";
-  if (auth === `Bearer ${token}`) return true;
+  if (auth.startsWith("Bearer ") && timingSafeEqualStr(auth.slice(7), token)) return true;
   const header = request.headers.get("X-Community-Admin-Token");
-  return header === token;
+  return header ? timingSafeEqualStr(header, token) : false;
 }
 
 export async function verifyTurnstile(env, token, ip) {
@@ -388,7 +423,7 @@ function statusLabel(status) {
   return "Pending review";
 }
 
-async function sendCommunityEmail(env, { to, subject, text }) {
+export async function sendCommunityEmail(env, { to, subject, text, replyTo }) {
   const apiKey = env?.RESEND_API_KEY;
   const from = env?.COMMUNITY_NOTIFY_FROM || "Digital Underground <notify@digitalundergroundstore.com>";
   if (apiKey) {
@@ -398,7 +433,7 @@ async function sendCommunityEmail(env, { to, subject, text }) {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ from, to: [to], subject, text }),
+      body: JSON.stringify({ from, to: [to], subject, text, ...(replyTo ? { reply_to: replyTo } : {}) }),
     });
     const out = { sent: res.ok, status: res.status, provider: "resend" };
     if (!res.ok) {
@@ -535,7 +570,7 @@ export async function listContacts(kv) {
 export async function backfillContactsFromListings(kv) {
   if (!kv) return { upserted: 0 };
   const index = await kvGetIndex(kv);
-  const ids = [...new Set([...(index.pending || []), ...(index.approved || []), ...(index.rejected || [])])];
+  const ids = [...new Set([...(index.pending || []), ...(index.approved || []), ...(index.rejected || []), ...(index.unpublished || [])])];
   let upserted = 0;
   for (const id of ids) {
     const row = await kvGetListing(kv, id);

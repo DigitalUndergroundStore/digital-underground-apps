@@ -30,6 +30,7 @@
     <nav aria-label="Site">
       <a href="/store/">Store</a>
       <a href="/community/" aria-current="page">Developer Marketplace</a>
+      <a href="/community/dashboard/">Creator dashboard</a>
       <span class="cta-wrap">
         <a class="cta" href="/community/submit/">List your project</a>
         <span class="launch-badge">List your products for free</span>
@@ -67,11 +68,20 @@
       <summary>Do you handle payments?</summary>
       <p>No. This is link-out only. The Visit button sends people to your Gumroad, Stripe, App Store, or site with <code>?ref=digitalunderground</code> when possible. Digital Underground does not process payouts for Developer Marketplace listings.</p>
     </details>
+    <details>
+      <summary>How do I edit my listing or see analytics?</summary>
+      <p>Open your <a href="/community/dashboard/">Creator dashboard</a> with the private link shown after you submit. You can edit, unpublish, or delete listings and see views, clicks, and click-through rate.</p>
+    </details>
+    <details>
+      <summary>Lost your dashboard link?</summary>
+      <p>Lost your link? Email <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you used on your listing.</p>
+    </details>
   </section>
   <footer class="foot">
     <p><a href="/store/">← Back to the DU store</a> · <a href="/community/submit/">List your project</a></p>
   </footer>
 </div>
+<script src="/community/track.js"></script>
 <script>
 (function () {
   var CAT_LABELS = {
@@ -120,14 +130,15 @@
       art.innerHTML =
         img +
         '<div class="info">' +
-        '<strong>' + esc(row.name) + "</strong>" +
+        '<a class="title" href="/community/p/?id=' + encodeURIComponent(row.id) + '"><strong>' + esc(row.name) + "</strong></a>" +
         '<span class="maker">' + makerLine(row) + "</span>" +
         '<span class="blurb">' + esc(row.pitchShort) + "</span>" +
         '<div class="buyrow">' +
         '<span class="price">' + esc(row.priceLabel || "See site") + "</span>" +
-        '<a class="cta" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener">Visit</a>' +
+        '<a class="cta" data-out="' + esc(row.id) + '" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener">Visit</a>' +
         "</div></div>";
       grid.appendChild(art);
+      if (window.duTrack) duTrack.observe(art, row.id);
     });
   }
 

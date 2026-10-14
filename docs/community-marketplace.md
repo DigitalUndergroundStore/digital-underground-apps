@@ -70,3 +70,11 @@ List pending: `GET /api/community/admin` with the same Bearer token.
 ## Mail
 
 If `RESEND_API_KEY` is not set, submissions are stored only (no email).
+
+## Creator dashboard (`/community/dashboard/`)
+
+- **Access:** on submit, a per-creator manage token (`ca_….<secret>`) is generated; only SHA-256(secret) is stored at `creator:{id}`. The confirmation screen shows the private link `/community/dashboard/?k=…` with a copy button. API auth: `Authorization: Creator <token>` (constant-time compare, generic 401).
+- **Admin backfill / lost link:** `POST /api/community/admin {"action":"issue_creator_token","id":"cm_…"}` creates or rotates the link (old link stops working) and returns it once.
+- **Email magic link (off):** `POST /api/community/creator-login`. Enable with env `COMMUNITY_MAGIC_LINK=1` only after a sending domain is verified in Resend and `COMMUNITY_NOTIFY_FROM` uses it. Response is identical whether or not the email exists.
+- **Creator API:** `GET/POST /api/community/creator` — list, `edit` (re-screened with the same rules as new submissions), `unpublish`, `republish` (re-screened), `delete`, `support` (Resend → COMMUNITY_NOTIFY_EMAIL, reply-to = listing email, 5/creator/UTC day). Edits: 20/listing/day + 30 writes/IP/hour.
+- **Analytics:** `POST /api/community/track {i,v,c}`; one KV key per UTC day `stats:YYYYMMDD` (1 write per beacon). Impressions once per listing per browser session; detail views (`/community/p/?id=`) and Visit clicks exact. KV free tier = 1,000 writes/day, so heavy traffic (>~700 beacons/day) would start to fail writes (counts drop silently, site unaffected).

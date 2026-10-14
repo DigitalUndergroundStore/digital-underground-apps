@@ -1,0 +1,170 @@
+import {
+  appendRefParam,
+  clientIp,
+  deleteListing,
+  getKv,
+  isHttpsUrl,
+  json,
+  kvGetListing,
+  normalizeTags,
+  sanitizeText,
+  saveListing,
+} from "../../_lib/community.js";
+import { screenListing } from "../../_lib/community-screening.js";
+import {
+  authCreator,
+  creatorListing,
+  ownedListing,
+  purgeStats,
+  putAccount,
+  readStats,
+  screenSupportMessage,
+  sendSupportEmail,
+  takeEditBudget,
+  takeSupportBudget,
+} from "../../_lib/creator.js";
+
+/** Per-IP burst limit for creator write actions (per isolate). */
+const ipHits = new Map();
+function ipAllowed(ip, limit = 30, windowMs = 60 * 60 * 1000) {
+  const now = Date.now();
+  let b = ipHits.get(ip);
+  if (!b || now > b.reset) ipHits.set(ip, (b = { n: 0, reset: now + windowMs }));
+  b.n += 1;
+  if (ipHits.size > 5000) ipHits.clear();
+  return b.n <= limit;
+}
+
+const UNAUTH = () => json({ error: "This dashboard link is not valid. Lost your link? Email digitalunderground.store@proton.me" }, 401);
+
+async function rescreen(env, row) {
+  try {
+    const s = await screenListing(env, row);
+    row.screening = { reasons: s.reasons, detail: s.detail, screenedAt: Date.now() };
+    return s.decision;
+  } catch (e) {
+    console.error("creator rescreen error", e);
+    row.screening = { reasons: ["Automatic screening failed; queued for human review."], screenedAt: Date.now() };
+    return "pending";
+  }
+}
+
+export async function onRequest(context) {
+  const { request, env } = context;
+  const kv = getKv(env);
+  if (!kv) return json({ error: "Storage not configured." }, 503);
+  const acct = await authCreator(request, env, kv);
+  if (!acct) return UNAUTH();
+
+  if (request.method === "GET") {
+    const rows = [];
+    for (const id of acct.listingIds || []) {
+      const row = await kvGetListing(kv, id);
+      if (row && row.creatorId === acct.id) rows.push(row);
+    }
+    rows.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+    const stats = await readStats(kv, rows.map((r) => r.id));
+    return json({
+      listings: rows.map(creatorListing),
+      stats,
+      supportLeftToday: Math.max(0, 5 - (acct.support?.day === new Date().toISOString().slice(0, 10).replace(/-/g, "") ? acct.support.n : 0)),
+    });
+  }
+  if (request.method !== "POST") return json({ error: "Use GET or POST." }, 405);
+  if (!ipAllowed(clientIp(request))) return json({ error: "Too many changes. Try again later." }, 429);
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return json({ error: "Invalid JSON body." }, 400);
+  }
+  const action = body.action;
+
+  if (action === "support") {
+    const subject = sanitizeText(body.subject, 120);
+    const message = sanitizeText(body.message, 4000);
+    if (!subject || !message) return json({ error: "Add a subject and a message." }, 400);
+    const flagged = screenSupportMessage(subject, message);
+    if (flagged) return json({ error: flagged }, 400);
+    let listing = null;
+    if (body.listingId) {
+      listing = await ownedListing(kv, acct, String(body.listingId));
+      if (!listing) return json({ error: "Pick one of your listings." }, 400);
+    }
+    if (!takeSupportBudget(acct)) return json({ error: "Daily message limit reached (5). Email digitalunderground.store@proton.me instead." }, 429);
+    await putAccount(kv, acct);
+    // Reply-to: the email on the selected listing, else the most recent listing's email.
+    let replyTo = listing?.email || "";
+    if (!replyTo) {
+      for (const id of [...(acct.listingIds || [])].reverse()) {
+        const r = await kvGetListing(kv, id);
+        if (r?.email) { replyTo = r.email; break; }
+      }
+    }
+    const out = await sendSupportEmail(env, { acct, replyTo, subject, message, listing });
+    if (!out.sent) return json({ error: "Could not send right now. Email digitalunderground.store@proton.me instead." }, 502);
+    return json({ ok: true, message: "Sent, we'll reply by email." });
+  }
+
+  const id = typeof body.id === "string" ? body.id.trim() : "";
+  const row = await ownedListing(kv, acct, id);
+  if (!row) return json({ error: "Listing not found." }, 404);
+
+  if (action === "delete") {
+    await deleteListing(kv, id);
+    acct.listingIds = (acct.listingIds || []).filter((x) => x !== id);
+    await putAccount(kv, acct);
+    context.waitUntil(purgeStats(kv, id).catch(() => {}));
+    return json({ ok: true, deleted: id });
+  }
+
+  if (!takeEditBudget(row)) return json({ error: "Daily change limit reached for this listing. Try tomorrow." }, 429);
+
+  if (action === "unpublish") {
+    row.status = "unpublished";
+    row.updatedAt = Date.now();
+    await saveListing(kv, row);
+    return json({ ok: true, listing: creatorListing(row) });
+  }
+
+  if (action === "republish") {
+    if (row.status !== "unpublished") return json({ error: "Listing is not unpublished." }, 400);
+    row.status = await rescreen(env, row);
+    row.updatedAt = Date.now();
+    await saveListing(kv, row);
+    return json({ ok: true, listing: creatorListing(row) });
+  }
+
+  if (action === "edit") {
+    const f = body.fields || {};
+    const name = sanitizeText(f.name, 120);
+    const pitchShort = sanitizeText(f.pitchShort, 280);
+    const descriptionLong = sanitizeText(f.descriptionLong, 4000);
+    const projectUrl = typeof f.projectUrl === "string" ? f.projectUrl.trim() : "";
+    const imageUrl = typeof f.imageUrl === "string" ? f.imageUrl.trim() : "";
+    if (!name) return json({ error: "Title is required." }, 400);
+    if (!pitchShort || !descriptionLong) return json({ error: "Both descriptions are required." }, 400);
+    if (!isHttpsUrl(projectUrl)) return json({ error: "Link must be a valid https URL." }, 400);
+    if (imageUrl && imageUrl !== "(uploaded image)" && !isHttpsUrl(imageUrl)) {
+      return json({ error: "Image URL must be https." }, 400);
+    }
+    row.name = name;
+    row.pitchShort = pitchShort;
+    row.descriptionLong = descriptionLong;
+    row.projectUrl = projectUrl;
+    row.visitUrl = appendRefParam(projectUrl);
+    if (imageUrl && imageUrl !== "(uploaded image)") row.imageUrl = imageUrl;
+    if (!row.imageUrl) return json({ error: "Add an image URL." }, 400);
+    row.tags = normalizeTags(f.tags);
+    const decision = await rescreen(env, row);
+    // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
+    row.status = row.status === "unpublished" && decision !== "rejected" ? "unpublished" : decision;
+    row.updatedAt = Date.now();
+    row.editedByCreatorAt = row.updatedAt;
+    await saveListing(kv, row);
+    return json({ ok: true, listing: creatorListing(row) });
+  }
+
+  return json({ error: "Unknown action." }, 400);
+}

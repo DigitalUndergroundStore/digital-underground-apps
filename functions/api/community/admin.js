@@ -9,7 +9,17 @@ import {
   listContacts,
   listPending,
   setListingStatus,
+  kvGetListing,
+  kvPutListing,
 } from "../../_lib/community.js";
+import {
+  attachListing,
+  dashboardUrl,
+  getAccount,
+  issueAccountToken,
+  linkContactToCreator,
+  purgeStats,
+} from "../../_lib/creator.js";
 
 export async function onRequest(context) {
   const { request, env } = context;
@@ -87,12 +97,27 @@ export async function onRequest(context) {
       if (!row) return json({ error: "Listing not found." }, 404);
       return json({ ok: true, listing: row });
     }
+    if (action === "issue_creator_token") {
+      // Create (or rotate) the manage link for a listing's creator. Returned once; not stored.
+      const row = await kvGetListing(kv, id);
+      if (!row) return json({ error: "Listing not found." }, 404);
+      const existing = row.creatorId ? await getAccount(kv, row.creatorId) : null;
+      const { acct, token } = await issueAccountToken(kv, existing);
+      if (!existing) {
+        row.creatorId = acct.id;
+        await kvPutListing(kv, row);
+      }
+      await attachListing(kv, acct, row.id);
+      await linkContactToCreator(kv, row.email, acct.id);
+      return json({ ok: true, creatorId: acct.id, dashboardUrl: dashboardUrl(env, request, token) });
+    }
     if (action === "delete") {
       await deleteListing(kv, id);
+      try { await purgeStats(kv, id); } catch (_) {}
       return json({ ok: true, deleted: id });
     }
     return json(
-      { error: "Unknown action. Use approve, reject, delete, backfill_contacts, or delete_contact." },
+      { error: "Unknown action. Use approve, reject, delete, issue_creator_token, backfill_contacts, or delete_contact." },
       400
     );
   } catch (e) {

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>Creator dashboard — Developer Marketplace — Digital Underground</title>
+<meta name="theme-color" content="#05040c">
+<link rel="stylesheet" href="../community.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="site-top">
+    <a class="brand" href="/store/">
+      <img src="/store/logo.png" width="80" height="65" alt="">
+      <strong>Digital Underground</strong>
+    </a>
+    <nav aria-label="Site">
+      <a href="/store/">Store</a>
+      <a href="/community/">Developer Marketplace</a>
+      <a href="/community/dashboard/" aria-current="page">Creator dashboard</a>
+      <span class="cta-wrap"><a class="cta" href="/community/submit/">List your project</a></span>
+    </nav>
+  </div>
+  <header class="page-head">
+    <h1>Creator dashboard</h1>
+    <p>Manage your listings and see how they perform. This page is private to your link — keep it safe.</p>
+  </header>
+
+  <div id="gate" class="dash-panel" hidden>
+    <h2>Open your private link</h2>
+    <p class="muted">Your dashboard opens from the private link shown when you submitted a listing. There are no passwords.</p>
+    <p class="muted">Lost your link? Email <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you listed with.</p>
+    <form id="magic" class="stack" hidden>
+      <label>Or get a sign-in link by email<input name="email" type="email" required autocomplete="email"></label>
+      <button type="submit">Email me a link</button>
+      <div class="form-msg" id="magic-msg" hidden></div>
+    </form>
+  </div>
+
+  <div id="app" hidden>
+    <div class="dash-summary" id="summary"></div>
+    <section class="dash-panel">
+      <div class="dash-head">
+        <h2>Last 30 days</h2>
+        <select id="chart-pick" aria-label="Listing for chart"></select>
+      </div>
+      <div id="chart" class="chart" role="img" aria-label="30-day views and clicks chart"></div>
+      <p class="legend"><span class="sw sw-v"></span>Views <span class="sw sw-c"></span>Clicks <span class="muted">· UTC days · views = card impressions (once per visitor session) + detail page views</span></p>
+    </section>
+    <div class="dash-head"><h2>Your listings</h2><a class="cta small" href="/community/submit/?as=creator">+ Submit a new listing</a></div>
+    <div id="msg" class="form-msg" hidden role="status"></div>
+    <div id="list" class="dash-list"></div>
+
+    <section class="dash-panel" id="support" aria-labelledby="support-title">
+      <h2 id="support-title">Digital Underground Support</h2>
+      <p class="muted">Questions about a listing, review, or analytics? We reply by email to the address on your listing.</p>
+      <form id="support-form" class="stack">
+        <label>Listing (optional)<select name="listingId"><option value="">— None —</option></select></label>
+        <label>Subject<input name="subject" required maxlength="120"></label>
+        <label>Message<textarea name="message" required maxlength="4000" rows="5"></textarea></label>
+        <button type="submit">Send to support</button>
+        <div class="form-msg" id="support-msg" hidden role="status"></div>
+      </form>
+      <p class="muted small">Or email <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a>.</p>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <p><a href="/community/">← Developer Marketplace</a> · Lost your link? Email <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a></p>
+  </footer>
+</div>
+
+<template id="tpl">
+  <article class="dash-item">
+    <div class="dash-row">
+      <img class="thumb" alt="">
+      <div class="dash-meta">
+        <strong class="t"></strong>
+        <span class="badge"></span>
+        <p class="reason muted"></p>
+        <div class="kpis"></div>
+      </div>
+    </div>
+    <div class="actions">
+      <button type="button" data-a="edit">Edit</button>
+      <a class="view" target="_blank" rel="noopener">View</a>
+      <button type="button" data-a="unpublish">Unpublish</button>
+      <button type="button" data-a="republish">Republish</button>
+      <button type="button" data-a="delete" class="danger">Delete</button>
+    </div>
+    <form class="stack edit" hidden>
+      <label>Title<input name="name" required maxlength="120"></label>
+      <label>Link (https)<input name="projectUrl" type="url" required></label>
+      <label>Short description (max 280)<textarea name="pitchShort" required maxlength="280" rows="3"></textarea></label>
+      <label>Long description<textarea name="descriptionLong" required maxlength="4000" rows="6"></textarea></label>
+      <label>Image URL (https)<input name="imageUrl" type="url"></label>
+      <label>Tags (comma-separated, up to 6)<input name="tags" maxlength="160"></label>
+      <p class="field-hint">Edits are re-screened automatically. Clean edits stay live; edge cases go back to review.</p>
+      <div class="actions"><button type="submit" class="primary">Save changes</button><button type="button" data-a="cancel">Cancel</button></div>
+    </form>
+  </article>
+</template>
+
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var hash = new URLSearchParams(location.hash.slice(1));
+  var auth = "";
+  if (params.get("k")) auth = "Creator " + params.get("k");
+  else if (hash.get("m")) auth = "Magic " + hash.get("m");
+  var data = null;
+
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+  function api(method, body) {
+    return fetch("/api/community/creator", {
+      method: method,
+      headers: Object.assign({ Authorization: auth }, body ? { "Content-Type": "application/json" } : {}),
+      body: body ? JSON.stringify(body) : undefined
+    }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { d._status = r.status; return d; }); });
+  }
+  function show(el, text, ok) { el.hidden = false; el.textContent = text; el.className = "form-msg " + (ok ? "ok" : "err"); }
+  function ctr(t) { return t.i ? ((t.c / t.i) * 100).toFixed(1) + "%" : "—"; }
+  var LABEL = { approved: "Live", pending: "Pending review", rejected: "Rejected", unpublished: "Unpublished" };
+
+  function gate() {
+    $("gate").hidden = false;
+    fetch("/api/community/creator-login", { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" })
+      .then(function (r) { return r.json(); }).then(function (d) { if (d.enabled) $("magic").hidden = false; }).catch(function () {});
+  }
+
+  function chart(days) {
+    var W = 600, H = 180, P = 24, n = days.length;
+    var max = 1;
+    days.forEach(function (d) { max = Math.max(max, d.i + d.v, d.c); });
+    var bw = (W - P * 2) / n;
+    var bars = "", pts = [];
+    days.forEach(function (d, k) {
+      var x = P + k * bw, views = d.i + d.v;
+      var h = (views / max) * (H - P * 2);
+      bars += '<rect x="' + (x + 1).toFixed(1) + '" y="' + (H - P - h).toFixed(1) + '" width="' + Math.max(1, bw - 2).toFixed(1) + '" height="' + h.toFixed(1) + '" rx="2" class="bv"><title>' + d.d.slice(4, 6) + "/" + d.d.slice(6) + ": " + views + " views, " + d.c + " clicks</title></rect>";
+      pts.push((x + bw / 2).toFixed(1) + "," + (H - P - (d.c / max) * (H - P * 2)).toFixed(1));
+    });
+    var first = days[0] ? days[0].d : "", last = days[n - 1] ? days[n - 1].d : "";
+    return '<svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none">' +
+      '<line x1="' + P + '" y1="' + (H - P) + '" x2="' + (W - P) + '" y2="' + (H - P) + '" class="ax"/>' +
+      '<text x="' + P + '" y="14" class="lbl">' + max + "</text>" + bars +
+      '<polyline points="' + pts.join(" ") + '" class="lc"/>' +
+      '<text x="' + P + '" y="' + (H - 6) + '" class="lbl">' + first.slice(4, 6) + "/" + first.slice(6) + "</text>" +
+      '<text x="' + (W - P) + '" y="' + (H - 6) + '" text-anchor="end" class="lbl">' + last.slice(4, 6) + "/" + last.slice(6) + "</text></svg>";
+  }
+
+  function drawChart() {
+    var id = $("chart-pick").value;
+    var days = [];
+    if (id === "all") {
+      Object.keys(data.stats).forEach(function (k) {
+        data.stats[k].days.forEach(function (d, i) {
+          if (!days[i]) days[i] = { d: d.d, i: 0, v: 0, c: 0 };
+          days[i].i += d.i; days[i].v += d.v; days[i].c += d.c;
+        });
+      });
+    } else if (data.stats[id]) days = data.stats[id].days;
+    $("chart").innerHTML = days.length ? chart(days) : '<p class="muted">No data yet.</p>';
+  }
+
+  function render() {
+    var tot = { i: 0, v: 0, c: 0 };
+    Object.keys(data.stats).forEach(function (k) { var t = data.stats[k].totals; tot.i += t.i; tot.v += t.v; tot.c += t.c; });
+    $("summary").innerHTML =
+      '<div class="kpi"><b>' + data.listings.length + "</b><span>Listings</span></div>" +
+      '<div class="kpi"><b>' + tot.i + "</b><span>Impressions</span></div>" +
+      '<div class="kpi"><b>' + tot.v + "</b><span>Detail views</span></div>" +
+      '<div class="kpi"><b>' + tot.c + "</b><span>Clicks</span></div>" +
+      '<div class="kpi"><b>' + ctr(tot) + "</b><span>CTR (clicks ÷ impressions)</span></div>";
+    var pick = $("chart-pick"), cur = pick.value || "all";
+    pick.innerHTML = '<option value="all">All listings</option>' + data.listings.map(function (l) { return '<option value="' + esc(l.id) + '">' + esc(l.name) + "</option>"; }).join("");
+    pick.value = cur; if (!pick.value) pick.value = "all";
+    drawChart();
+    var sel = $("support-form").listingId;
+    var sv = sel.value;
+    sel.innerHTML = '<option value="">— None —</option>' + data.listings.map(function (l) { return '<option value="' + esc(l.id) + '">' + esc(l.name) + "</option>"; }).join("");
+    sel.value = sv;
+
+    var list = $("list");
+    list.innerHTML = "";
+    if (!data.listings.length) list.innerHTML = '<p class="empty">No listings yet. <a href="/community/submit/?as=creator">Submit one</a>.</p>';
+    data.listings.forEach(function (l) {
+      var node = $("tpl").content.firstElementChild.cloneNode(true);
+      var t = (data.stats[l.id] || { totals: { i: 0, v: 0, c: 0 } }).totals;
+      node.querySelector(".thumb").src = l.imagePreview || "/community/og.jpg";
+      node.querySelector(".t").textContent = l.name;
+      var b = node.querySelector(".badge"); b.textContent = LABEL[l.status] || l.status; b.className = "badge st-" + l.status;
+      node.querySelector(".reason").textContent = (l.status === "rejected" || l.status === "pending") && l.reasons.length ? "Reason: " + l.reasons.join(" ") : "";
+      node.querySelector(".kpis").innerHTML = "<span>" + t.i + " impressions</span><span>" + t.v + " views</span><span>" + t.c + " clicks</span><span>CTR " + ctr(t) + "</span>";
+      var view = node.querySelector(".view");
+      if (l.status === "approved") view.href = "/community/p/?id=" + encodeURIComponent(l.id); else view.remove();
+      node.querySelector('[data-a="unpublish"]').hidden = l.status === "unpublished";
+      node.querySelector('[data-a="republish"]').hidden = l.status !== "unpublished";
+      var form = node.querySelector("form.edit");
+      form.name.value = l.name; form.projectUrl.value = l.projectUrl; form.pitchShort.value = l.pitchShort;
+      form.descriptionLong.value = l.descriptionLong; form.imageUrl.value = l.imageUrl; form.tags.value = (l.tags || []).join(", ");
+      if (l.imageUrl === "(uploaded image)") { form.imageUrl.type = "text"; }
+      node.addEventListener("click", function (e) {
+        var btn = e.target.closest("button[data-a]"); if (!btn) return;
+        var a = btn.getAttribute("data-a");
+        if (a === "edit") { form.hidden = !form.hidden; return; }
+        if (a === "cancel") { form.hidden = true; return; }
+        if (a === "delete" && !confirm("Delete \"" + l.name + "\" permanently? This also removes its analytics.")) return;
+        if (a === "unpublish" && !confirm("Hide \"" + l.name + "\" from the marketplace?")) return;
+        act({ action: a, id: l.id }, btn);
+      });
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        act({ action: "edit", id: l.id, fields: {
+          name: form.name.value, projectUrl: form.projectUrl.value, pitchShort: form.pitchShort.value,
+          descriptionLong: form.descriptionLong.value, imageUrl: form.imageUrl.value, tags: form.tags.value } }, form.querySelector("button[type=submit]"));
+      });
+      list.appendChild(node);
+    });
+  }
+
+  function act(body, btn) {
+    btn.disabled = true; var old = btn.textContent; btn.textContent = "Working…";
+    api("POST", body).then(function (d) {
+      btn.disabled = false; btn.textContent = old;
+      if (!d.ok) { show($("msg"), d.error || "Something went wrong.", false); return; }
+      var note = body.action === "delete" ? "Listing deleted." : d.listing ? "Saved — status: " + (LABEL[d.listing.status] || d.listing.status) + "." : "Done.";
+      show($("msg"), note, true);
+      load();
+    }).catch(function () { btn.disabled = false; btn.textContent = old; show($("msg"), "Network error.", false); });
+  }
+
+  function load() {
+    return api("GET").then(function (d) {
+      if (d._status === 401) { $("app").hidden = true; gate(); return; }
+      data = d; $("app").hidden = false; render();
+    });
+  }
+
+  $("chart-pick").addEventListener("change", drawChart);
+  $("support-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = e.target, m = $("support-msg"), btn = f.querySelector("button");
+    btn.disabled = true;
+    api("POST", { action: "support", subject: f.subject.value, message: f.message.value, listingId: f.listingId.value })
+      .then(function (d) {
+        btn.disabled = false;
+        if (d.ok) { show(m, "Sent, we'll reply by email.", true); f.reset(); } else show(m, d.error || "Could not send.", false);
+      }).catch(function () { btn.disabled = false; show(m, "Network error.", false); });
+  });
+  $("magic").addEventListener("submit", function (e) {
+    e.preventDefault();
+    fetch("/api/community/creator-login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: e.target.email.value }) })
+      .then(function (r) { return r.json(); }).then(function (d) { show($("magic-msg"), d.message, true); });
+  });
+
+  // Remember the link in this browser so "Submit a new listing" stays on the same account.
+  if (auth) { try { sessionStorage.setItem("du_creator_auth", auth); } catch (_) {} }
+  if (!auth) { try { auth = sessionStorage.getItem("du_creator_auth") || ""; } catch (_) {} }
+  if (!auth) gate(); else load();
+})();
+</script>
+</body>
+</html>

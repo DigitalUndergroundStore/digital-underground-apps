@@ -15,6 +15,7 @@
 <meta name="twitter:title" content="List your project — Developer Marketplace — Digital Underground">
 <meta name="twitter:description" content="List your products for free on Digital Underground. Checkout stays on your site.">
 <meta name="twitter:image" content="https://digitalundergroundstore.com/community/og.jpg">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="../community.css">
 <script src="/community/turnstile.js" defer></script>
@@ -29,6 +30,7 @@
     <nav aria-label="Site">
       <a href="/store/">Store</a>
       <a href="/community/">Developer Marketplace</a>
+      <a href="/community/dashboard/">Creator dashboard</a>
       <span class="cta-wrap">
         <a class="cta" href="/community/submit/" aria-current="page">List your project</a>
         <span class="launch-badge">List your products for free</span>
@@ -63,6 +65,7 @@
     <label>Price label<input name="priceLabel" maxlength="40" placeholder="Free, $9, CA$24, etc."></label>
     <label>Short pitch (max 280)<textarea name="pitchShort" required maxlength="280" rows="3"></textarea></label>
     <label>Longer description<textarea name="descriptionLong" required maxlength="4000" rows="6"></textarea></label>
+    <label>Tags (optional, comma-separated, up to 6)<input name="tags" maxlength="160" placeholder="productivity, mac, ai"></label>
     <label>Logo or cover image URL (https)<input name="imageUrl" type="url" inputmode="url" placeholder="https://…/cover.png"></label>
     <p class="field-hint">Shown on your listing card. Square logo or 16:9 screenshot works best.</p>
     <label>Or upload your logo or cover image (max ~750 KB)
@@ -92,6 +95,32 @@
   var msg = document.getElementById("msg");
   var fileInput = form.querySelector('[name="imageFile"]');
   var urlInput = form.querySelector('[name="imageUrl"]');
+  var creatorAuth = "";
+  if (/[?&]as=creator\b/.test(location.search)) {
+    try { creatorAuth = sessionStorage.getItem("du_creator_auth") || ""; } catch (_) {}
+  }
+  if (creatorAuth) {
+    var note = document.createElement("p");
+    note.className = "form-msg ok";
+    note.innerHTML = 'Submitting under your creator account. <a href="/community/dashboard/">Back to dashboard</a>';
+    form.parentNode.insertBefore(note, form);
+  }
+
+  function showSaveLink(url) {
+    var box = document.createElement("div");
+    box.className = "save-link";
+    box.innerHTML = '<strong>Save this link — it is the only way to manage your listing.</strong>' +
+      '<p class="muted small">This private link opens your Creator dashboard (edit, unpublish, analytics). Anyone with it can manage your listing, so keep it private. Bookmark it or store it in your password manager. Lost it? Email digitalunderground.store@proton.me.</p>' +
+      '<div class="row"><input readonly aria-label="Your private dashboard link"><button type="button">Copy link</button><a>Open dashboard</a></div>';
+    var input = box.querySelector("input"); input.value = url;
+    box.querySelector("a").href = url;
+    box.querySelector("button").addEventListener("click", function (e) {
+      var b = e.target;
+      (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { b.textContent = "Copied ✓"; }, function () { input.select(); document.execCommand("copy"); b.textContent = "Copied ✓"; });
+    });
+    msg.appendChild(box);
+    try { sessionStorage.setItem("du_creator_auth", "Creator " + new URL(url).searchParams.get("k")); } catch (_) {}
+  }
 
   function show(text, ok) {
     msg.hidden = false;
@@ -127,6 +156,7 @@
       pitchShort: fd.get("pitchShort"),
       descriptionLong: fd.get("descriptionLong"),
       imageUrl: fd.get("imageUrl"),
+      tags: fd.get("tags"),
       terms: fd.get("terms") === "1"
     };
     var turnstileToken = window.__duTurnstileToken;
@@ -157,7 +187,7 @@
     run.then(function () {
       return fetch("/api/community/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: creatorAuth ? { "Content-Type": "application/json", Authorization: creatorAuth } : { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
       });
     }).then(function (res) {
@@ -167,7 +197,10 @@
     }).then(function (out) {
       if (out.res.ok && out.data.ok) {
         show(out.data.message || "Submitted — thank you!", true);
+        if (out.data.dashboardUrl) showSaveLink(out.data.dashboardUrl);
+        else if (out.data.existingAccount) msg.insertAdjacentHTML("beforeend", ' <a href="/community/dashboard/">Back to your dashboard</a>');
         form.reset();
+        msg.scrollIntoView({ behavior: "smooth", block: "start" });
         if (window.__duTurnstileReset) window.__duTurnstileReset();
         return;
       }

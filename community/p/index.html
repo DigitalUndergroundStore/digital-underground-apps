@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Listing — Developer Marketplace — Digital Underground</title>
 <meta name="description" content="An indie project on the Digital Underground Developer Marketplace.">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="../community.css">
+<link rel="stylesheet" href="detail.css?v=2">
 <script src="/community/track.js"></script>
 </head>
-<body>
+<body class="dt">
 <div class="wrap">
   <div class="site-top">
     <a class="brand" href="/store/">
@@ -19,31 +20,70 @@
     <nav aria-label="Site">
       <a href="/store/">Store</a>
       <a href="/community/">Developer Marketplace</a>
-      <a href="/community/dashboard/" class="login-btn">Creator login</a>
+      <a href="/community/dashboard/" class="login-btn">Creator dashboard</a>
       <span class="cta-wrap"><a class="cta" href="/community/submit/">List your project</a></span>
     </nav>
   </div>
-  <div id="out"><p class="muted">Loading…</p></div>
+  <nav class="crumb" aria-label="Breadcrumb"><a href="/community/">Developer Marketplace</a><span aria-hidden="true">›</span><span id="crumb-name">Listing</span></nav>
+  <main id="out" aria-busy="true">
+    <div class="dt-head"><div class="skel" style="width:72px;height:72px;flex:none"></div><div style="flex:1"><div class="skel" style="height:26px;width:70%"></div><div class="skel" style="height:15px;width:40%;margin-top:10px"></div></div></div>
+    <div class="skel" style="height:48px;margin-top:18px"></div>
+    <div class="skel" style="aspect-ratio:16/9;margin-top:20px;border-radius:18px"></div>
+  </main>
   <footer class="foot"><p><a href="/community/">← Developer Marketplace</a></p></footer>
 </div>
+<div class="sticky-cta" id="sticky" aria-hidden="true"></div>
 <script>
 (function () {
-  function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;"); }
+  function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+  var EXT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>';
+  var SHARE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v14"/></svg>';
+  var CATS = { apps: "App", "ai-tools": "AI tool", books: "Book", templates: "Template", other: "Other" };
   var id = new URLSearchParams(location.search).get("id") || "";
   var out = document.getElementById("out");
-  fetch("/api/community/listing?id=" + encodeURIComponent(id)).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
-    if (!d || !d.listing) { out.innerHTML = '<p class="empty">This listing is not available. <a href="/community/">Browse the marketplace</a>.</p>'; return; }
-    var l = d.listing;
+  function paras(t) { return String(t || "").split(/\n{2,}/).map(function (p) { return "<p>" + esc(p).replace(/\n/g, "<br>") + "</p>"; }).join(""); }
+  function media(l) {
+    var v = l.video;
+    if (v && v.kind === "youtube" || v && v.kind === "vimeo") return '<div class="media"><iframe src="' + esc(v.src) + '" title="' + esc(l.name) + ' video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>';
+    if (v && v.kind === "file") return '<div class="media"><video controls playsinline preload="metadata" poster="' + esc(l.imageUrl) + '"><source src="' + esc(v.src) + '" type="' + esc(v.type) + '"></video></div>';
+    return '<div class="media"><img class="bg" src="' + esc(l.imageUrl) + '" alt="" aria-hidden="true"><img class="fg" src="' + esc(l.imageUrl) + '" alt="' + esc(l.name) + ' preview"></div>';
+  }
+  fetch("/api/community/listing?id=" + encodeURIComponent(id)).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (d) {
+    out.removeAttribute("aria-busy");
+    if (!d || !d.listing) { out.innerHTML = '<div class="notfound"><h1>This listing isn\'t available</h1><p>It may have been unpublished or is still in review.</p><a class="btn2 primary" style="flex:none" href="/community/">Browse the marketplace</a></div>'; return; }
+    var l = d.listing, href = esc(l.visitUrl || l.projectUrl), price = esc(l.priceLabel || "See site");
     document.title = l.name + " — Developer Marketplace — Digital Underground";
+    document.getElementById("crumb-name").textContent = l.name;
+    var host = ""; try { host = new URL(l.projectUrl).hostname.replace(/^www\./, ""); } catch (_) {}
     var x = l.xHandle ? ' · <a href="https://x.com/' + esc(l.xHandle) + '" target="_blank" rel="noopener">@' + esc(l.xHandle) + "</a>" : "";
+    var tags = (l.tags || []).map(function (t) { return '<span class="chip2">#' + esc(t) + "</span>"; }).join("");
     out.innerHTML =
-      '<header class="page-head"><h1>' + esc(l.name) + '</h1><p>' + esc(l.makerName) + x + "</p></header>" +
-      '<div class="detail"><img src="' + esc(l.imageUrl) + '" alt="">' +
-      '<div class="dash-panel"><p>' + esc(l.pitchShort) + "</p>" +
-      (l.tags && l.tags.length ? '<div class="tags">' + l.tags.map(function (t) { return "<span>" + esc(t) + "</span>"; }).join("") + "</div>" : "") +
-      '<p class="desc">' + esc(l.descriptionLong) + "</p>" +
-      '<div class="card"><div class="info"><div class="buyrow"><span class="price">' + esc(l.priceLabel || "See site") + '</span>' +
-      '<a class="cta" data-out="' + esc(l.id) + '" href="' + esc(l.visitUrl || l.projectUrl) + '" target="_blank" rel="noopener">Visit</a></div></div></div></div></div>';
+      '<div class="dt-grid"><div>' +
+        '<header class="dt-head"><img class="dt-logo" src="' + esc(l.imageUrl) + '" alt="" width="72" height="72"><div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + esc(l.makerName) + x + "</p></div></header>" +
+        '<p class="dt-pitch">' + esc(l.pitchShort) + "</p>" +
+        '<div class="chips2"><span class="chip2 price">' + price + "</span>" + (l.category ? '<span class="chip2 cat">' + esc(CATS[l.category] || l.category) + "</span>" : "") + tags + "</div>" +
+        '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit ' + (host ? esc(host) : "site") + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button></div>" +
+        media(l) +
+        '<section class="panel"><h2>About</h2><div class="prose">' + paras(l.descriptionLong || l.pitchShort) + "</div></section>" +
+      '</div><aside class="side">' +
+        '<section class="panel"><h2>Details</h2><dl class="facts">' +
+          "<div><dt>Price</dt><dd>" + price + "</dd></div>" +
+          (l.category ? "<div><dt>Category</dt><dd>" + esc(CATS[l.category] || l.category) + "</dd></div>" : "") +
+          "<div><dt>Maker</dt><dd>" + esc(l.makerName) + "</dd></div>" +
+          (host ? "<div><dt>Website</dt><dd>" + esc(host) + "</dd></div>" : "") +
+        '</dl><a class="btn2 primary" style="width:100%;margin-top:14px" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit site' + EXT + "</a></section>" +
+        '<p class="muted small" style="margin:12px 4px 0">Listed free on the Digital Underground Developer Marketplace. Purchases happen on the maker\'s site.</p>' +
+      "</aside></div>";
+    var st = document.getElementById("sticky");
+    st.innerHTML = '<div class="s-meta"><b>' + esc(l.name) + "</b><span>" + price + '</span></div><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener" tabindex="-1">Visit' + EXT + "</a>";
+    var cta = document.getElementById("cta");
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { var show = !e[0].isIntersecting && e[0].boundingClientRect.top < 0; st.classList.toggle("show", show); st.setAttribute("aria-hidden", String(!show)); }).observe(cta);
+    document.getElementById("share").addEventListener("click", function () {
+      var u = location.origin + "/community/p/?id=" + encodeURIComponent(l.id);
+      if (navigator.share) { navigator.share({ title: l.name, text: l.pitchShort, url: u }).catch(function () {}); return; }
+      (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(function () { var t = document.createElement("div"); t.className = "toast2"; t.setAttribute("role", "status"); t.textContent = "Link copied"; document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2200); }).catch(function () {});
+    });
+    document.querySelectorAll(".dt-logo, .media img").forEach(function (im) { im.onerror = function () { im.onerror = null; im.src = "/community/og.jpg"; }; });
     if (window.duTrack) duTrack.view(l.id);
   });
 })();

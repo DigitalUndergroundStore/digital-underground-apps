@@ -31,7 +31,7 @@
     <nav aria-label="Site">
       <a href="/store/">Store</a>
       <a href="/community/">Developer Marketplace</a>
-      <a href="/community/dashboard/" class="login-btn">Creator login</a>
+      <a href="/community/dashboard/" class="login-btn">Creator dashboard</a>
       <span class="cta-wrap">
         <a class="cta" href="/community/submit/" aria-current="page">List your project</a>
         <span class="launch-badge">List your products for free</span>
@@ -79,6 +79,8 @@
     <label>Or upload your logo or cover image (max ~750 KB)
       <input name="imageFile" type="file" accept="image/jpeg,image/png,image/webp,image/gif">
     </label>
+    <label>Demo video (optional)<input name="videoUrl" type="url" inputmode="url" maxlength="500" placeholder="https://youtu.be/… or https://…/demo.mp4"></label>
+    <p class="field-hint">YouTube, Vimeo, or a direct .mp4/.webm link (max 50 MB). Shown on your listing page after a quick review.</p>
     <label class="check">
       <input type="checkbox" name="terms" required value="1">
       <span>I own or represent this project, the link is safe, and I agree this is a free listing with link-out only (no payments through Digital Underground).</span>
@@ -175,6 +177,7 @@
       descriptionLong: fd.get("descriptionLong"),
       imageUrl: fd.get("imageUrl"),
       tags: fd.get("tags"),
+      videoUrl: fd.get("videoUrl"),
       terms: fd.get("terms") === "1"
     };
     var turnstileToken = window.__duTurnstileToken;
@@ -226,7 +229,7 @@
     }).then(function (out) {
       if (out.res.ok && out.data.ok) {
         show(out.data.message || "Submitted — thank you!", true);
-        if (out.data.newAccount) msg.insertAdjacentHTML("beforeend", ' <br>Your creator account is ready and you are logged in on this device. <a href="/community/dashboard/">Open your dashboard</a>. Next time, use <strong>Creator login</strong> with your email and password.');
+        if (out.data.newAccount) msg.insertAdjacentHTML("beforeend", ' <br>Your creator account is ready and you are logged in on this device. <a href="/community/dashboard/">Open your dashboard</a>. Next time, use <strong>Creator dashboard</strong> with your email and password.');
         else if (out.data.signedIn) msg.insertAdjacentHTML("beforeend", ' Added to your creator account. <a href="/community/dashboard/">Open your dashboard</a>');
         else if (out.data.attachedUnclaimed) msg.insertAdjacentHTML("beforeend", ' We added it to your existing creator account. Open your private dashboard link once to set your password, or email support.');
         try { localStorage.setItem("du_creator_email", payload.email); } catch (_) {}

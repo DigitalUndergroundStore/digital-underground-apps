@@ -7,6 +7,7 @@ import {
   json,
   kvGetListing,
   normalizeTags,
+  normalizeVideoUrl,
   sanitizeText,
   saveListing,
 } from "../../_lib/community.js";
@@ -204,6 +205,11 @@ export async function onRequest(context) {
     if (imageUrl && imageUrl !== "(uploaded image)") row.imageUrl = imageUrl;
     if (!row.imageUrl) return json({ error: "Add an image URL." }, 400);
     row.tags = normalizeTags(f.tags);
+    if (f.videoUrl !== undefined) {
+      const vid = normalizeVideoUrl(f.videoUrl);
+      if (vid.error) return json({ error: vid.error }, 400);
+      row.videoUrl = vid.videoUrl;
+    }
     const decision = await rescreen(env, row);
     // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
     row.status = row.status === "unpublished" && decision !== "rejected" ? "unpublished" : decision;

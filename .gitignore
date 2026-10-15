@@ -1,2 +1,4 @@
 secrets/
 **/SECRET-pantry-week-buyer-code.txt
+.dev.vars
+.wrangler/

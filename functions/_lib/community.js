@@ -102,6 +102,37 @@ export function isHttpsUrl(raw) {
   }
 }
 
+/**
+ * Optional listing video: YouTube, Vimeo, or a direct https .mp4/.webm file.
+ * Returns { videoUrl: "" } when empty, { videoUrl } when valid, { error } otherwise.
+ */
+export const MAX_VIDEO_BYTES = 50 * 1024 * 1024;
+export function normalizeVideoUrl(raw) {
+  const s = typeof raw === "string" ? raw.trim() : "";
+  if (!s) return { videoUrl: "" };
+  if (!isHttpsUrl(s) || s.length > 500) return { error: "Video link must be an https YouTube, Vimeo, or .mp4/.webm URL." };
+  return videoEmbed(s) ? { videoUrl: s } : { error: "Video link must be a YouTube or Vimeo page, or a direct .mp4/.webm file." };
+}
+/** { kind: "youtube"|"vimeo"|"file", src, type? } for a stored video URL, or null. */
+export function videoEmbed(url) {
+  let u;
+  try { u = new URL(url); } catch { return null; }
+  if (u.protocol !== "https:") return null;
+  const host = u.hostname.replace(/^www\.|^m\./, "");
+  let m;
+  if (host === "youtu.be" && (m = u.pathname.match(/^\/([\w-]{11})/))) return { kind: "youtube", src: `https://www.youtube-nocookie.com/embed/${m[1]}?rel=0` };
+  if (host === "youtube.com" || host === "youtube-nocookie.com") {
+    const v = u.searchParams.get("v");
+    if (v && /^[\w-]{11}$/.test(v)) return { kind: "youtube", src: `https://www.youtube-nocookie.com/embed/${v}?rel=0` };
+    if ((m = u.pathname.match(/^\/(?:embed|shorts|live)\/([\w-]{11})/))) return { kind: "youtube", src: `https://www.youtube-nocookie.com/embed/${m[1]}?rel=0` };
+    return null;
+  }
+  if ((host === "vimeo.com" || host === "player.vimeo.com") && (m = u.pathname.match(/(?:^|\/)(\d{6,12})(?:\/|$)/))) return { kind: "vimeo", src: `https://player.vimeo.com/video/${m[1]}?dnt=1` };
+  const ext = u.pathname.toLowerCase().match(/\.(mp4|webm)$/);
+  if (ext) return { kind: "file", src: u.href, type: "video/" + ext[1] };
+  return null;
+}
+
 export function parseImageField(body) {
   const url = body?.imageUrl;
   if (url && typeof url === "string" && isHttpsUrl(url)) {
@@ -163,6 +194,8 @@ export function validateSubmission(body) {
 
   const img = parseImageField(body);
   if (img.error) return { error: img.error, status: 400 };
+  const vid = normalizeVideoUrl(body.videoUrl);
+  if (vid.error) return { error: vid.error, status: 400 };
 
   const now = Date.now();
   const listing = {
@@ -179,6 +212,7 @@ export function validateSubmission(body) {
     pitchShort,
     descriptionLong,
     imageUrl: img.imageUrl,
+    videoUrl: vid.videoUrl,
     tags,
     createdAt: now,
     updatedAt: now,
@@ -216,7 +250,8 @@ export function publicListing(row) {
 
 /** Public detail view (adds long description). Never includes email or creator ids. */
 export function publicListingDetail(row) {
-  return { ...publicListing(row), descriptionLong: row.descriptionLong || "" };
+  const video = row.videoUrl ? videoEmbed(row.videoUrl) : null;
+  return { ...publicListing(row), descriptionLong: row.descriptionLong || "", video };
 }
 
 const INDEX_KEY = "community:index";
@@ -361,6 +396,8 @@ export async function setListingStatus(kv, id, status) {
   index.unpublished = index.unpublished.filter((x) => x !== id);
   listing.status = status;
   listing.updatedAt = Date.now();
+  // A human approval also signs off the current video, so later clean edits stay live.
+  if (status === "approved" && listing.videoUrl) listing.videoApprovedUrl = listing.videoUrl;
   if (status === "approved") index.approved.push(id);
   else if (status === "pending") index.pending.push(id);
   else if (status === "rejected") index.rejected.push(id);

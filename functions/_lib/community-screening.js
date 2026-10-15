@@ -36,6 +36,7 @@ export function submissionTextBundle(listing) {
     listing.makerName,
     listing.priceLabel,
     listing.xHandle,
+    listing.videoUrl,
   ].filter(Boolean);
   const haystack = parts.join("\n");
   return { text: haystack, haystack: haystack.toLowerCase() };
@@ -222,7 +223,8 @@ export async function screenListing(env, listing) {
       ? { decision: "approved", reasons: [], skipped: true }
       : await runImageGuard(ai, listing.imageUrl);
 
-  const merged = mergeScreenResults([block, urlCheck, textGuard, imageGuard]);
+  const videoCheck = await checkVideo(listing);
+  const merged = mergeScreenResults([block, urlCheck, textGuard, imageGuard, videoCheck]);
   return {
     decision: merged.decision,
     reasons: merged.reasons,
@@ -231,6 +233,7 @@ export async function screenListing(env, listing) {
       url: urlCheck,
       textGuard,
       imageGuard,
+      videoCheck,
       screenedAt: Date.now(),
     },
   };
@@ -296,4 +299,30 @@ function base64ToBytes(b64) {
   const out = new Uint8Array(binary.length);
   for (let i = 0; i < binary.length; i++) out[i] = binary.charCodeAt(i);
   return out;
+}
+
+/**
+ * Video screening. We can't run the AI guard on video frames, so a new or changed
+ * video always goes to a quick human review (status pending). Once a moderator
+ * approves, that exact URL is remembered (videoApprovedUrl) and later edits stay live.
+ * Direct files must be reachable, video/* and at most 50 MB.
+ */
+export async function checkVideo(listing) {
+  const url = listing && listing.videoUrl;
+  if (!url) return { decision: "approved", reasons: [] };
+  const reasons = [];
+  if (/\.(mp4|webm)(\?|#|$)/i.test(new URL(url).pathname)) {
+    try {
+      const res = await fetch(url, { method: "HEAD", redirect: "follow", cf: { cacheTtl: 0 } });
+      const type = res.headers.get("content-type") || "";
+      const len = Number(res.headers.get("content-length") || 0);
+      if (!res.ok) return { decision: "rejected", reasons: ["Video file could not be loaded (HTTP " + res.status + ")."] };
+      if (type && !/^video\/(mp4|webm)/i.test(type) && !/octet-stream/i.test(type)) return { decision: "rejected", reasons: ["Video link is not an mp4 or webm file."] };
+      if (len > 50 * 1024 * 1024) return { decision: "rejected", reasons: ["Video file is over 50 MB."] };
+    } catch {
+      return { decision: "pending", reasons: ["Video file could not be checked automatically; queued for review."] };
+    }
+  }
+  if (url !== listing.videoApprovedUrl) reasons.push("New video: queued for a quick human review.");
+  return { decision: reasons.length ? "pending" : "approved", reasons };
 }

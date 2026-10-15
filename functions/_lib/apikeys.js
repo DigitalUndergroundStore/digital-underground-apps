@@ -77,8 +77,10 @@ export async function authKey(request, kv) {
   const hash = await sha256Hex("du-apikey-v1:" + m[1]);
   const rec = await kv.get("apikey:" + hash, "json");
   if (!rec || rec.revoked) return null;
+  // The apikey record is the source of truth (revoking deletes it). Don't also require the account's key list:
+  // KV is eventually consistent, so a just-written account record can read stale for ~60s.
   const acct = await getAccount(kv, rec.creatorId);
-  if (!acct || !(acct.apiKeys || []).some((x) => x.id === rec.id)) return null;
+  if (!acct) return null;
   return { acct, key: rec };
 }
 

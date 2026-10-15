@@ -61,7 +61,10 @@ export async function onRequest(context) {
 
   if (request.method === "POST") {
     if (!acct.email) return out({ error: "Add an email to your creator account (Creator dashboard) before using the API." }, 400, rlh);
-    const v = validateSubmission({ ...b, email: acct.email, makerName: b.makerName || acct.name || "", website: "" });
+    let makerName = b.makerName || acct.name || "";
+    if (!makerName) for (const lid of acct.listingIds || []) { const r = await ownedListing(kv, acct, lid); if (r && r.makerName) { makerName = r.makerName; break; } }
+    if (!makerName) return out({ error: "makerName is required (your name or studio)." }, 400, rlh);
+    const v = validateSubmission({ ...b, email: acct.email, makerName, website: "" });
     if (v.error) return out({ error: v.error }, v.status || 400, rlh);
     const listing = v.listing;
     listing.creatorId = acct.id;

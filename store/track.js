@@ -4,8 +4,10 @@
   if (navigator.webdriver || /bot|crawl|spider/i.test(navigator.userAgent)) return;
   var first = false;
   try { first = !sessionStorage.getItem("du_store_s"); sessionStorage.setItem("du_store_s", "1"); } catch (_) {}
-  var ref = "";
+  var ref = "", fwd = null;
+  try { fwd = sessionStorage.getItem("du_ref"); if (fwd !== null) sessionStorage.removeItem("du_ref"); } catch (_) {}
   try { var r = document.referrer ? new URL(document.referrer) : null; ref = r && r.host !== location.host ? r.hostname.replace(/^www\./, "") : r ? "internal" : "direct"; } catch (_) { ref = "direct"; }
+  if (fwd !== null && (ref === "internal" || ref === "direct")) ref = fwd === location.hostname.replace(/^www\./, "") ? "internal" : fwd; // arrived via the / redirect
   var data = { pv: 1, s: first ? 1 : 0, m: matchMedia("(max-width: 767px)").matches ? 1 : 0, path: location.pathname, ref: ref, clicks: [] };
   function send() {
     if (!data.pv && !data.clicks.length) return;

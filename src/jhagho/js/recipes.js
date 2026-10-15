@@ -1,4 +1,4 @@
-/* Pantry Week v3.13.0 — original starter recipes. No copied text. */
+/* Pantry Week v3.14.0 — original starter recipes. No copied text. */
 "use strict";
 
 var PW_STARTERS = [
@@ -11,10 +11,11 @@ var PW_STARTERS = [
       "tags": [
         "dinner",
         "main-meal",
-        "dairy-free",
         "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -60,10 +61,12 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Heat the oven to 425°F. Trim the green beans.",
+        "Heat the oven to 425°F (220°C).",
+        "Trim the green beans.",
         "Toss the chicken and beans with the oil, garlic, oregano, salt, and pepper on a sheet pan.",
-        "Cut one lemon into wedges and add them to the pan. Squeeze the other lemon over the top.",
-        "Roast 25 minutes, until the chicken is cooked through and the beans have browned.",
+        "Cut one lemon into wedges and add them to the pan.",
+        "Squeeze the other lemon over the top.",
+        "Roast 25 minutes, until the chicken is cooked through and the beans have browned. The chicken is done at 165°F (74°C) inside.",
         "Rest 3 minutes. Spoon the pan juices over the chicken."
       ]
     },
@@ -77,8 +80,9 @@ var PW_STARTERS = [
         "breakfast",
         "main-meal",
         "vegetarian",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -120,8 +124,10 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Toast the bread.",
-        "Melt the butter in a wide pan. Cook the tomatoes and spinach for 2 minutes, until the spinach wilts.",
-        "Beat the eggs with the salt and pepper. Pour them in and stir gently until just set.",
+        "Melt the butter in a wide pan.",
+        "Cook the tomatoes and spinach for 2 minutes, until the spinach wilts.",
+        "Beat the eggs with the salt and pepper.",
+        "Pour them in and stir gently until just set.",
         "Spoon the scramble onto the toast and serve right away."
       ]
     },
@@ -135,10 +141,12 @@ var PW_STARTERS = [
         "dinner",
         "main-meal",
         "vegetarian",
-        "dairy-free",
+        "vegan",
         "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "middle_eastern"
       ],
       "ingredients": [
@@ -189,11 +197,13 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Rinse the quinoa and simmer it in 2 cups of water for 15 minutes. Rest it off the heat, covered.",
+        "Rinse the quinoa and simmer it in 2 cups of water for 15 minutes.",
+        "Rest it off the heat, covered.",
         "Drain the chickpeas. Warm them in a skillet with 1 tablespoon of oil and a pinch of salt.",
         "Chop the cucumber, tomatoes, and parsley.",
         "Stir the tahini with the lemon juice, the rest of the oil, the salt, and a splash of water.",
-        "Build bowls of quinoa, chickpeas, and vegetables. Spoon the dressing over the top."
+        "Build bowls of quinoa, chickpeas, and vegetables.",
+        "Spoon the dressing over the top."
       ]
     },
     {
@@ -206,8 +216,8 @@ var PW_STARTERS = [
         "dinner",
         "main-meal",
         "vegetarian",
-        "easy",
-        "moderate",
+        "medium",
+        "budget",
         "italian"
       ],
       "ingredients": [
@@ -258,8 +268,10 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Boil the pasta in salted water until just tender. Save 1/2 cup of the pasta water.",
-        "Warm the oil and cook the chopped onion for 4 minutes. Add the garlic and pepper flakes for 30 seconds.",
+        "Boil the pasta in salted water until just tender.",
+        "Save 1/2 cup of the pasta water.",
+        "Warm the oil and cook the chopped onion for 4 minutes.",
+        "Add the garlic and pepper flakes for 30 seconds.",
         "Pour in the tomatoes and salt. Simmer 8 minutes.",
         "Toss the pasta with the sauce, adding pasta water if it looks thick.",
         "Tear in the basil and top with parmesan."
@@ -274,10 +286,11 @@ var PW_STARTERS = [
       "tags": [
         "dinner",
         "main-meal",
-        "dairy-free",
         "gluten-free",
-        "medium",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "splurge",
         "american"
       ],
       "ingredients": [
@@ -318,7 +331,8 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Heat the oven to 425°F. Cut the broccoli into florets.",
+        "Heat the oven to 425°F (220°C).",
+        "Cut the broccoli into florets.",
         "Toss the broccoli with the oil, garlic powder, salt, and pepper. Roast 10 minutes.",
         "Season the salmon. Move the broccoli aside and add the salmon to the pan.",
         "Roast 12 minutes more, until the salmon flakes.",
@@ -336,7 +350,7 @@ var PW_STARTERS = [
         "main-meal",
         "vegetarian",
         "easy",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -387,10 +401,11 @@ var PW_STARTERS = [
       "tags": [
         "dinner",
         "main-meal",
-        "dairy-free",
         "gluten-free",
-        "medium",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
         "mexican"
       ],
       "ingredients": [
@@ -442,7 +457,8 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Start the rice in 2 cups of water with a pinch of salt.",
-        "Chop the onion and peppers. Brown the turkey with the onion in a skillet, breaking it up.",
+        "Chop the onion and peppers.",
+        "Brown the turkey with the onion in a skillet, breaking it up. The turkey is done at 165°F (74°C) inside.",
         "Add the peppers, corn, taco seasoning, and salsa. Cook 6 minutes.",
         "Taste and add a pinch of salt if you want it.",
         "Serve over the rice with a handful of lettuce."
@@ -458,6 +474,7 @@ var PW_STARTERS = [
         "lunch",
         "main-meal",
         "gluten-free",
+        "high-protein",
         "easy",
         "moderate",
         "italian"
@@ -521,8 +538,9 @@ var PW_STARTERS = [
         "lunch",
         "main-meal",
         "vegetarian",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "mexican"
       ],
       "ingredients": [
@@ -564,7 +582,8 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Drain the beans and mash them with the cumin and salt.",
-        "Spread beans and cheddar on four tortillas. Top with the other four.",
+        "Spread beans and cheddar on four tortillas.",
+        "Top with the other four.",
         "Cook each quesadilla in a dry skillet over medium heat, 2 to 3 minutes a side, until the cheese melts.",
         "Cut into wedges. Serve with salsa and sliced avocado."
       ]
@@ -578,8 +597,8 @@ var PW_STARTERS = [
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
-        "moderate",
+        "easy",
+        "budget",
         "italian"
       ],
       "ingredients": [
@@ -622,7 +641,8 @@ var PW_STARTERS = [
       "steps": [
         "Boil the penne in salted water until tender.",
         "Slice the sausage, peppers, and onion.",
-        "Brown the sausage in a wide pan. Add the peppers and onion and cook 6 minutes.",
+        "Brown the sausage in a wide pan.",
+        "Add the peppers and onion and cook 6 minutes.",
         "Pour in the marinara and simmer 5 minutes.",
         "Toss with the pasta and parmesan."
       ]
@@ -638,7 +658,7 @@ var PW_STARTERS = [
         "main-meal",
         "vegetarian",
         "easy",
-        "moderate",
+        "budget",
         "greek"
       ],
       "ingredients": [
@@ -680,9 +700,12 @@ var PW_STARTERS = [
         "lunch",
         "main-meal",
         "vegetarian",
+        "vegan",
+        "gluten-free",
         "dairy-free",
-        "medium",
-        "moderate",
+        "high-protein",
+        "easy",
+        "budget",
         "japanese"
       ],
       "ingredients": [
@@ -744,9 +767,11 @@ var PW_STARTERS = [
       "tags": [
         "breakfast",
         "main-meal",
+        "gluten-free",
         "dairy-free",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "british"
       ],
       "ingredients": [
@@ -787,10 +812,12 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Cook the bacon in a skillet until crisp. Set it aside and pour off most of the fat.",
+        "Cook the bacon in a skillet until crisp.",
+        "Set it aside and pour off most of the fat.",
         "Fry the eggs in the same pan. Season with pepper.",
         "Split and toast the muffins. Slice the tomatoes.",
-        "Spread mayonnaise on the muffins. Stack lettuce, tomato, bacon, and an egg.",
+        "Spread mayonnaise on the muffins.",
+        "Stack lettuce, tomato, bacon, and an egg.",
         "Close the sandwiches and serve warm."
       ]
     },
@@ -804,7 +831,8 @@ var PW_STARTERS = [
         "dinner",
         "main-meal",
         "dairy-free",
-        "medium",
+        "high-protein",
+        "easy",
         "moderate",
         "mexican"
       ],
@@ -851,10 +879,10 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Heat the oven to 425°F.",
+        "Heat the oven to 425°F (220°C).",
         "Slice the chicken, peppers, and onions into strips.",
         "Toss everything except the tortillas, lime, and cilantro with the oil and seasoning.",
-        "Roast 20 minutes, stirring once, until the chicken is cooked.",
+        "Roast 20 minutes, stirring once, until the chicken is cooked. The chicken is done at 165°F (74°C) inside.",
         "Warm the tortillas. Serve with lime wedges and cilantro."
       ]
     },
@@ -867,10 +895,11 @@ var PW_STARTERS = [
       "tags": [
         "lunch",
         "main-meal",
-        "dairy-free",
         "gluten-free",
+        "dairy-free",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -939,8 +968,8 @@ var PW_STARTERS = [
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "medium",
-        "moderate",
+        "easy",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -998,10 +1027,10 @@ var PW_STARTERS = [
         "dinner",
         "main-meal",
         "vegetarian",
-        "dairy-free",
         "gluten-free",
+        "dairy-free",
         "easy",
-        "moderate",
+        "budget",
         "thai"
       ],
       "ingredients": [
@@ -1047,7 +1076,8 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Boil the rice noodles until tender. Rinse them under cold water.",
+        "Boil the rice noodles until tender.",
+        "Rinse them under cold water.",
         "Whisk the peanut butter, tamari, lime juice, honey, and garlic with 1/3 cup warm water.",
         "Slice the cucumber. Shred or slice the carrots.",
         "Toss the noodles with the sauce.",
@@ -1064,10 +1094,11 @@ var PW_STARTERS = [
         "breakfast",
         "main-meal",
         "vegetarian",
-        "dairy-free",
         "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "middle_eastern"
       ],
       "ingredients": [
@@ -1118,9 +1149,11 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Chop the onion and pepper. Warm the oil and cook them for 5 minutes.",
+        "Chop the onion and pepper.",
+        "Warm the oil and cook them for 5 minutes.",
         "Add the garlic, cumin, and paprika. Stir 30 seconds.",
-        "Pour in the tomatoes and salt. Simmer 8 minutes until thickened.",
+        "Pour in the tomatoes and salt.",
+        "Simmer 8 minutes until thickened.",
         "Make six wells and crack an egg into each.",
         "Cover and cook 5 minutes, until the whites are set and the yolks are still soft."
       ]
@@ -1136,7 +1169,7 @@ var PW_STARTERS = [
         "main-meal",
         "vegetarian",
         "easy",
-        "moderate",
+        "budget",
         "italian"
       ],
       "ingredients": [
@@ -1173,7 +1206,8 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Warm the oil in a wide skillet over medium-high heat.",
-        "Add the gnocchi in one layer. Cook without stirring until the undersides are golden, then toss.",
+        "Add the gnocchi in one layer.",
+        "Cook without stirring until the undersides are golden, then toss.",
         "Add the tomatoes and cook 2 minutes, until they start to burst.",
         "Stir in the spinach and pesto until the spinach wilts.",
         "Shower with parmesan and serve."
@@ -1188,10 +1222,11 @@ var PW_STARTERS = [
       "tags": [
         "lunch",
         "main-meal",
-        "dairy-free",
         "gluten-free",
-        "medium",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1242,11 +1277,12 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Chop the onion. Brown the turkey with the onion in a pot, breaking it up.",
+        "Chop the onion. Brown the turkey with the onion in a pot, breaking it up. The turkey is done at 165°F (74°C) inside.",
         "Add the garlic, chili powder, and cumin. Stir 30 seconds.",
         "Add the beans, tomatoes, broth, and salt.",
         "Simmer 15 minutes, uncovered, until it thickens.",
-        "Taste and add salt if you want it. Leftovers keep for 3 days."
+        "Taste and add salt if you want it.",
+        "Leftovers keep for 3 days."
       ]
     },
     {
@@ -1258,10 +1294,11 @@ var PW_STARTERS = [
       "tags": [
         "dinner",
         "main-meal",
-        "dairy-free",
         "gluten-free",
-        "easy",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
         "american"
       ],
       "ingredients": [
@@ -1303,7 +1340,9 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Pat the shrimp dry and season with salt.",
-        "Warm the oil over medium-high heat. Cook the shrimp 1 to 2 minutes a side, until pink. Move them to a plate.",
+        "Warm the oil over medium-high heat.",
+        "Cook the shrimp 1 to 2 minutes a side, until pink.",
+        "Move them to a plate.",
         "Add the garlic and pepper flakes to the pan for 30 seconds.",
         "Squeeze in the lemon. Return the shrimp and toss.",
         "Chop the parsley, scatter it over the shrimp, and serve."
@@ -1319,10 +1358,11 @@ var PW_STARTERS = [
         "dinner",
         "main-meal",
         "vegetarian",
-        "dairy-free",
         "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "chinese"
       ],
       "ingredients": [
@@ -1369,9 +1409,11 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Cook the rice in 2 cups of water, then spread it out so the steam escapes.",
-        "Dice the carrots and slice the green onions. Scramble the eggs in the olive oil and set them aside.",
+        "Dice the carrots and slice the green onions.",
+        "Scramble the eggs in the olive oil and set them aside.",
         "In the same pan, cook the carrots and peas for 3 minutes.",
-        "Add the rice and tamari. Press and toss until the rice is hot.",
+        "Add the rice and tamari.",
+        "Press and toss until the rice is hot.",
         "Return the eggs, add the sesame oil and green onions, and toss once more."
       ]
     },
@@ -1385,9 +1427,10 @@ var PW_STARTERS = [
         "lunch",
         "main-meal",
         "vegetarian",
+        "vegan",
         "dairy-free",
         "easy",
-        "moderate",
+        "budget",
         "middle_eastern"
       ],
       "ingredients": [
@@ -1451,8 +1494,9 @@ var PW_STARTERS = [
         "main-meal",
         "vegetarian",
         "dairy-free",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1509,10 +1553,11 @@ var PW_STARTERS = [
       "tags": [
         "dinner",
         "main-meal",
-        "dairy-free",
         "gluten-free",
-        "easy",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1553,11 +1598,13 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Heat the oven to 425°F.",
+        "Heat the oven to 425°F (220°C).",
         "Toss the green beans with half the oil, salt, and pepper on a sheet pan. Roast 8 minutes.",
         "Stir the remaining oil with the garlic and the juice of one lemon.",
-        "Lay the cod on the beans. Spoon the garlic mixture over the fish.",
-        "Roast 10 minutes, until the cod flakes. Serve with the second lemon, cut into wedges."
+        "Lay the cod on the beans.",
+        "Spoon the garlic mixture over the fish.",
+        "Roast 10 minutes, until the cod flakes.",
+        "Serve with the second lemon, cut into wedges."
       ]
     },
     {
@@ -1570,10 +1617,12 @@ var PW_STARTERS = [
         "lunch",
         "main-meal",
         "vegetarian",
-        "dairy-free",
+        "vegan",
         "gluten-free",
-        "medium",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1642,7 +1691,7 @@ var PW_STARTERS = [
         "main-meal",
         "vegetarian",
         "easy",
-        "moderate",
+        "budget",
         "italian"
       ],
       "ingredients": [
@@ -1700,8 +1749,9 @@ var PW_STARTERS = [
         "main-meal",
         "vegetarian",
         "dairy-free",
-        "medium",
-        "moderate",
+        "high-protein",
+        "easy",
+        "budget",
         "japanese"
       ],
       "ingredients": [
@@ -1748,7 +1798,8 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Start the rice in 2 cups of water.",
-        "Press the tofu dry and cut it into cubes. Stir the soy sauce, honey, garlic, and ginger together.",
+        "Press the tofu dry and cut it into cubes.",
+        "Stir the soy sauce, honey, garlic, and ginger together.",
         "Brown the tofu in the oil for 6 minutes.",
         "Add the broccoli and 2 tablespoons of water. Cover 3 minutes.",
         "Pour in the sauce and toss until it glazes the tofu. Serve over rice."
@@ -1764,10 +1815,11 @@ var PW_STARTERS = [
         "lunch",
         "main-meal",
         "vegetarian",
-        "dairy-free",
+        "vegan",
         "gluten-free",
-        "medium",
-        "moderate",
+        "dairy-free",
+        "easy",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1808,7 +1860,8 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Chop the onion. Cook it in the oil for 5 minutes. Add the garlic for 30 seconds.",
+        "Chop the onion. Cook it in the oil for 5 minutes.",
+        "Add the garlic for 30 seconds.",
         "Add the tomatoes, broth, and salt. Simmer 10 minutes.",
         "Turn off the heat and stir in the basil.",
         "Blend until smooth. A hand blender in the pot is easiest.",
@@ -1825,6 +1878,7 @@ var PW_STARTERS = [
         "lunch",
         "main-meal",
         "dairy-free",
+        "high-protein",
         "easy",
         "moderate",
         "middle_eastern"
@@ -1877,11 +1931,12 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Slice the chicken. Season with salt and cook in the oil, 4 minutes a side, until cooked through.",
+        "Slice the chicken. Season with salt and cook in the oil, 4 minutes a side, until cooked through. The chicken is done at 165°F (74°C) inside.",
         "Chop the lettuce, tomato, and cucumber.",
         "Stir the tahini with the lemon juice and 2 tablespoons of water.",
         "Warm the pitas and split them open.",
-        "Fill with chicken and vegetables. Drizzle with the tahini sauce."
+        "Fill with chicken and vegetables.",
+        "Drizzle with the tahini sauce."
       ]
     },
     {
@@ -1894,10 +1949,11 @@ var PW_STARTERS = [
         "breakfast",
         "main-meal",
         "vegetarian",
-        "dairy-free",
         "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1944,8 +2000,10 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Dice the sweet potato, pepper, and onion into small pieces.",
-        "Warm the oil in a skillet. Cook the sweet potato with a lid on for 8 minutes, stirring twice.",
-        "Add the pepper, onion, paprika, salt, and pepper. Cook 5 minutes more.",
+        "Warm the oil in a skillet.",
+        "Cook the sweet potato with a lid on for 8 minutes, stirring twice.",
+        "Add the pepper, onion, paprika, salt, and pepper.",
+        "Cook 5 minutes more.",
         "Make four wells and crack in the eggs.",
         "Cover and cook until the eggs are set the way you like."
       ]
@@ -1960,10 +2018,12 @@ var PW_STARTERS = [
         "dinner",
         "main-meal",
         "vegetarian",
-        "dairy-free",
+        "vegan",
         "gluten-free",
+        "dairy-free",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "mexican"
       ],
       "ingredients": [
@@ -2010,7 +2070,8 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Drain the lentils. Warm the oil and stir in the chili powder for 15 seconds.",
-        "Add the lentils, salsa, and salt. Cook 5 minutes, mashing a few lentils so they hold together.",
+        "Add the lentils, salsa, and salt.",
+        "Cook 5 minutes, mashing a few lentils so they hold together.",
         "Shred the cabbage and toss it with the lime juice.",
         "Warm the tortillas in a dry pan.",
         "Fill the tortillas with lentils and cabbage."
@@ -2026,7 +2087,8 @@ var PW_STARTERS = [
         "lunch",
         "main-meal",
         "gluten-free",
-        "easy",
+        "high-protein",
+        "medium",
         "moderate",
         "greek"
       ],
@@ -2078,8 +2140,10 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Season the chicken with half the salt. Cook it in the oil, 5 minutes a side, until cooked through. Rest, then slice.",
-        "Grate or mince the garlic. Chop the cucumber and parsley.",
+        "Season the chicken with half the salt.",
+        "Cook it in the oil, 5 minutes a side, until cooked through. Rest, then slice. The chicken is done at 165°F (74°C) inside.",
+        "Grate or mince the garlic.",
+        "Chop the cucumber and parsley.",
         "Stir the yogurt, garlic, lemon juice, parsley, and the rest of the salt.",
         "Toss the sliced chicken with half the sauce.",
         "Serve over greens with the cucumber and the rest of the sauce."
@@ -2096,8 +2160,9 @@ var PW_STARTERS = [
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -2133,11 +2198,14 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Slice the mushrooms. Cook them in half the butter until they brown, then add the spinach until it wilts. Season and set aside.",
+        "Slice the mushrooms. Cook them in half the butter until they brown, then add the spinach until it wilts.",
+        "Season and set aside.",
         "Beat the eggs with the salt and pepper.",
-        "Melt the rest of the butter in the pan over medium-low heat. Pour in the eggs.",
+        "Melt the rest of the butter in the pan over medium-low heat.",
+        "Pour in the eggs.",
         "Let the eggs set, lifting the edges so uncooked egg runs under.",
-        "Add the mushrooms to one half, fold, and slide onto plates. This recipe makes two omelettes. Repeat if the pan is small."
+        "Add the mushrooms to one half, fold, and slide onto plates. This recipe makes two omelettes.",
+        "Repeat if the pan is small."
       ]
     },
     {
@@ -2152,7 +2220,7 @@ var PW_STARTERS = [
         "vegetarian",
         "dairy-free",
         "easy",
-        "moderate",
+        "budget",
         "chinese"
       ],
       "ingredients": [
@@ -2203,7 +2271,8 @@ var PW_STARTERS = [
         }
       ],
       "steps": [
-        "Boil the noodles until tender. Reserve 1/4 cup of the cooking water, then drain.",
+        "Boil the noodles until tender.",
+        "Reserve 1/4 cup of the cooking water, then drain.",
         "Stir the soy sauce, sesame oil, ginger, garlic, and honey.",
         "Slice the cucumber, carrots, and green onions.",
         "Toss the noodles with the sauce, adding a splash of cooking water if they look dry.",
@@ -2220,10 +2289,12 @@ var PW_STARTERS = [
         "dinner",
         "main-meal",
         "vegetarian",
-        "dairy-free",
+        "vegan",
         "gluten-free",
+        "dairy-free",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -2270,7 +2341,8 @@ var PW_STARTERS = [
       ],
       "steps": [
         "Warm the oil and cook the garlic and pepper flakes for 30 seconds.",
-        "Add the tomatoes and salt. Cook 4 minutes, until they soften.",
+        "Add the tomatoes and salt.",
+        "Cook 4 minutes, until they soften.",
         "Add the drained beans and stir for 3 minutes.",
         "Add the spinach and stir until it wilts.",
         "Finish with parsley and serve."

@@ -12,7 +12,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "canadian"
       ],
@@ -76,9 +78,9 @@
       "steps": [
         "Combine seasonings and rub on pork ribs.",
         "Refrigerate for at least 1 hour.",
-        "Place hickory chunks into a 350°F (175˚C) smoker or a charcoal grill set for indirect heat at 350°F.",
+        "Place hickory chunks into a 350°F (175˚C) smoker or a charcoal grill set for indirect heat at 350°F (175°C).",
         "Combine liquid ingredients and bring to a boil over high heat until reduced by half.",
-        "Place ribs in smoker/grill and cook, basting often with maple syrup mixture, for 3–4 hours",
+        "Place ribs in smoker/grill and cook, basting often with maple syrup mixture, for 3–4 hours.",
         "Brush ribs with remaining mixture and place on a medium high grill until well browned.",
         "Rest 15 minutes; serve."
       ],
@@ -95,7 +97,8 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "high-protein",
+        "medium",
         "moderate",
         "american"
       ],
@@ -142,12 +145,17 @@
         }
       ],
       "steps": [
-        "Combine maple syrup, sauce, and broth in a small saucepan over medium-high heat. Bring to a boil and cook until reduced by ⅓. Set aside.",
-        "Combine salt, pepper, and lemon pepper. Brush chicken with melted butter and press seasoning mixture into both sides of each chicken breast.",
-        "Place chicken in a shallow roasting pan. Insert a probe thermometer into one of the pieces and roast at 375°F (190°C) until internal temperature reaches 165°F (74°C).",
-        "Brush top of chicken pieces with maple mixture. Remove while your broiler heats up.",
-        "Place chicken under your preheated broiler until top is well browned and slightly charred.",
-        "Remove to a plate and cover with aluminum foil. Let rest 7 minutes before serving with remaining maple mixture."
+        "Combine maple syrup, sauce, and broth in a small saucepan over medium-high heat.",
+        "Bring to a boil and cook until reduced by ⅓. Set aside.",
+        "Combine salt, pepper, and lemon pepper.",
+        "Brush chicken with melted butter and press seasoning mixture into both sides of each chicken breast.",
+        "Place chicken in a shallow roasting pan.",
+        "Insert a probe thermometer into one of the pieces and roast at 375°F (190°C) until internal temperature reaches 165°F (74°C).",
+        "Brush top of chicken pieces with maple mixture.",
+        "Remove while the broiler heats up.",
+        "Place chicken under the preheated broiler until top is well browned and slightly charred.",
+        "Remove to a plate and cover with aluminum foil.",
+        "Let rest 7 minutes before serving with remaining maple mixture."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maple_Glazed_Chicken_Breasts",
       "sourceName": "Wikibooks Cookbook",
@@ -163,8 +171,10 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -191,7 +201,7 @@
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "milk (125 ml)"
+          "item": "milk"
         },
         {
           "qty": 1.0,
@@ -211,7 +221,7 @@
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "shredded cheese (50 g)"
+          "item": "shredded cheese"
         }
       ],
       "steps": [
@@ -238,8 +248,8 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
-        "moderate",
+        "hard",
+        "splurge",
         "italian"
       ],
       "ingredients": [
@@ -281,12 +291,12 @@
         {
           "qty": 240.0,
           "unit": "ml",
-          "item": "dry white wine or white vermouth (1 cup)"
+          "item": "dry white wine or white vermouth"
         },
         {
           "qty": 480.0,
           "unit": "ml",
-          "item": "meat broth (2 cups)"
+          "item": "meat broth"
         },
         {
           "qty": 3.0,
@@ -352,8 +362,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -400,7 +412,7 @@
         {
           "qty": 14.5,
           "unit": "oz",
-          "item": "canned tomatoes, diced or torn apart (411 g)"
+          "item": "canned tomatoes, diced or torn apart"
         },
         {
           "qty": 0.6667,
@@ -426,8 +438,10 @@
       "steps": [
         "Mix the salt, savory, basil, thyme, and cumin together, then grind them to a powder.",
         "Prepare the canned tomatoes: tear them up, remove the stem ends, remove the seeds, etc. Keep the juice.",
-        "Heat a wide pan with a lid. Lightly fry the celery in the butter. Soften the celery but do not brown it.",
-        "Add everything to the pan. You can add the basil, meat, and mushrooms later if you prefer.",
+        "Heat a wide pan with a lid.",
+        "Lightly fry the celery in the butter.",
+        "Soften the celery but do not brown it.",
+        "Add everything to the pan.",
         "Bring to a boil, then cover and simmer for about 20 minutes. The rice will absorb the liquid.",
         "Discard the bay leaf."
       ],
@@ -444,9 +458,13 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
         "medium",
-        "moderate",
-        "other"
+        "budget",
+        "southeast_asian"
       ],
       "ingredients": [
         {
@@ -487,7 +505,7 @@
         {
           "qty": 180.0,
           "unit": "ml",
-          "item": "vinegar (¾ cup)"
+          "item": "vinegar"
         },
         {
           "qty": 0.5,
@@ -501,12 +519,15 @@
         }
       ],
       "steps": [
-        "Clean the milkfish by removing the scales, gallbladder, and gills. Do not remove the intestines and liver. Using scissors or a knife, remove the fins and tails. Rinse and cut diagonally into 5 pieces, then pat dry.",
+        "Clean the milkfish by removing the scales, gallbladder, and gills. Do not remove the intestines and liver.",
+        "Using scissors or a knife, remove the fins and tails.",
+        "Rinse and cut diagonally into 5 pieces, then pat dry.",
         "Combine the carrots, bitter melon, garlic, and chilies in a heavy pot.",
-        "Arrange the sliced milkfish on top of the veggies. Sprinkle with salt and peppercorns.",
+        "Arrange the sliced milkfish on top of the veggies.",
+        "Sprinkle with salt and peppercorns.",
         "Pour vinegar and water into the pot, cover, and boil for 5–8 minutes.",
         "Reduce the heat, and simmer gently for another 8–10 minutes.",
-        "Remove from heat and serve with garlic or fried rice. Enjoy!"
+        "Remove from heat and serve with garlic or fried rice."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Paksiw_na_Bangus_(Milkfish_Stewed_in_Vinegar)",
       "sourceName": "Wikibooks Cookbook",
@@ -521,10 +542,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "vegan",
         "vegetarian",
+        "vegan",
+        "dairy-free",
         "medium",
-        "moderate",
+        "budget",
         "chinese"
       ],
       "ingredients": [
@@ -560,10 +582,16 @@
         }
       ],
       "steps": [
-        "In a medium saucepan, bring about 2 quarts water to a rapid boil. Add noodles and cook for about 3 minutes. Check the noodles. You want the outside of the noodles to be soft but still a bit firm on the inside.",
-        "Remove the noodles from the heat, drain, and rinse under cold running water. Stir a few drops of oil into the noodles to prevent them from sticking together.",
-        "Heat up sesame oil in a large nonstick pan, a wok, or a cast iron skillet over high heat. Add mushrooms and bok choy. Sauté until the bok choy starts to wilt, about 2 minutes.",
-        "Switch to medium heat. Add cooked noodles to the pan, followed by dark soy sauce and coconut aminos. Stir fry everything together until the noodles get an even brown color.",
+        "In a medium saucepan, bring about 2 quarts water to a rapid boil.",
+        "Add noodles and cook for about 3 minutes. Check the noodles.",
+        "You want the outside of the noodles to be soft but still a bit firm on the inside.",
+        "Remove the noodles from the heat, drain, and rinse under cold running water.",
+        "Stir a few drops of oil into the noodles to prevent them from sticking together.",
+        "Heat up sesame oil in a large nonstick pan, a wok, or a cast iron skillet over high heat.",
+        "Add mushrooms and bok choy.",
+        "Sauté until the bok choy starts to wilt, about 2 minutes.",
+        "Switch to medium heat. Add cooked noodles to the pan, followed by dark soy sauce and coconut aminos.",
+        "Stir-fry everything together until the noodles get an even brown color.",
         "Serve immediately!"
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pan-Fried_Shanghai_Noodles",
@@ -579,10 +607,11 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "vegan",
         "vegetarian",
-        "easy",
-        "moderate",
+        "vegan",
+        "dairy-free",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -620,8 +649,10 @@
       "steps": [
         "Mix all dry ingredients: flour, baking powder, sugar, and salt.",
         "Mix soy milk into the dry ingredients.",
-        "Heat a griddle until water sprinkled on it quickly evaporates. Spread a thin film of oil on the griddle.",
-        "Pour pancake batter on griddle to form 4- to 5-inch circles. Bubbles should start forming.",
+        "Heat a griddle until water sprinkled on it quickly evaporates.",
+        "Spread a thin film of oil on the griddle.",
+        "Pour pancake batter on griddle to form 4- to 5-inch circles.",
+        "Bubbles should start forming.",
         "When the underside is light brown, flip the pancake.",
         "When the other side is light brown, serve."
       ],
@@ -638,8 +669,10 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -694,7 +727,8 @@
         "In a separate bowl, whisk together the milk, eggs, and melted butter.",
         "Gradually pour the wet ingredients into the dry ingredients, whisking until well combined and no lumps remain.",
         "Heat a non-stick skillet or griddle over medium heat and lightly grease it with butter or cooking spray.",
-        "Pour ¼ cup of the pancake batter onto the skillet for each pancake. Cook until bubbles form on the surface, then flip and cook for an additional 1–2 minutes, or until golden brown.",
+        "Pour ¼ cup of the pancake batter onto the skillet for each pancake.",
+        "Cook until bubbles form on the surface, then flip and cook for an additional 1–2 minutes, or until golden brown.",
         "Repeat the process with the remaining batter, adding more butter or cooking spray as needed.",
         "Stack the pancakes on a serving plate and drizzle generously with honey.",
         "Garnish with toasted sesame seeds, if desired."
@@ -712,8 +746,12 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "chinese"
       ],
       "ingredients": [
@@ -752,7 +790,8 @@
         "Make a cross-shaped cut on the top of the tomatoes and blanch in boiling water.",
         "After a short period of time, put the tomatoes in ice water to shock them and remove the skins.",
         "Cut the tomatoes into chunks and set aside.",
-        "Whisk together the eggs, season to taste with a pinch of salt, and scramble them in a skillet with a little oil. Set aside after cooking process is finished.",
+        "Whisk together the eggs, season to taste with a pinch of salt, and scramble them in a skillet with a little oil.",
+        "Set aside after cooking process is finished.",
         "Heat a little oil oil in a separate skillet, add the scallions, and sauté briefly.",
         "Add the tomatoes to the scallions, and stir-fry until the tomatoes release their juices.",
         "Add the scrambled eggs to the pan with the scallions and tomatoes, and let everything simmer to reduce the tomato juice."
@@ -770,15 +809,16 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "lb",
-          "item": "ground beef (450 g)"
+          "item": "ground beef"
         },
         {
           "qty": 1.0,
@@ -798,7 +838,7 @@
         {
           "qty": 8.0,
           "unit": "oz",
-          "item": "tomato sauce (225 g)"
+          "item": "tomato sauce"
         },
         {
           "qty": 3.0,
@@ -812,7 +852,7 @@
         }
       ],
       "steps": [
-        "Brown the ground beef in skillet on medium heat.",
+        "Brown the ground beef in skillet on medium heat. Ground meat is done at 160°F (71°C) inside.",
         "Drain the ground beef.",
         "Dump the ground beef back in the skillet.",
         "While on medium heat mix in the taco seasoning, the chili powder, the garlic powder, and the tomato sauce.",
@@ -834,7 +874,7 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "medium",
         "budget",
         "american"
       ],
@@ -842,17 +882,17 @@
         {
           "qty": 1.0,
           "unit": "package",
-          "item": "italian sausage (20 ounces)"
+          "item": "italian sausage"
         },
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "meat-flavored spaghetti sauce (26½ ounces)"
+          "item": "meat-flavored spaghetti sauce"
         },
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "tomato paste (6 ounces)"
+          "item": "tomato paste"
         },
         {
           "qty": 0.5,
@@ -892,15 +932,17 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "high-protein",
+        "medium",
+        "budget",
         "caribbean"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "package",
-          "item": "dried macaroni pasta (225 grams / 8 oz)"
+          "item": "dried macaroni pasta"
         },
         {
           "qty": 2.0,
@@ -958,7 +1000,8 @@
         "Beat eggs until fluffy.",
         "Combine macaroni, eggs, cheese, milk, onion, carrot, salt, white pepper, mustard, and butter.",
         "Pour into a greased baking dish and sprinkle shredded cheese and bread crumbs evenly on top.",
-        "Bake at 175°C (350°F) until firm (about 30 minutes). A fork or metal skewer should come out dry when you press it all the way through the pie."
+        "Bake at 175°C (350°F (175°C)) until firm (about 30 minutes).",
+        "A fork or metal skewer should come out dry when you press it all the way through the pie."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_Pie",
       "sourceName": "Wikibooks Cookbook",
@@ -974,8 +1017,9 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "medium",
-        "moderate",
+        "high-protein",
+        "hard",
+        "budget",
         "canadian"
       ],
       "ingredients": [
@@ -1017,7 +1061,8 @@
       ],
       "steps": [
         "Place flour in a large bowl.",
-        "In a measuring cup, combine the salt, eggs, and the ½ cup cold water, and beat well with a fork. Add those ingredients to flour and mix with your hands until blended.",
+        "In a measuring cup, combine the salt, eggs, and the ½ cup cold water, and beat well with a fork.",
+        "Add those ingredients to flour and mix with the hands until blended.",
         "Slowly mix in the remaining water (you do not have to add the entire cup, just keep adding until the dough feels wet).",
         "Add the butter and knead until there are no lumps and it feels very smooth. This should take 15 minutes.",
         "Cover and refrigerate the dough for at least 1 hour, but for best results let it sit in the refrigerator for at least 24 hours.",
@@ -1043,7 +1088,7 @@
       "tags": [
         "lunch",
         "main-meal",
-        "medium",
+        "hard",
         "moderate",
         "italian"
       ],
@@ -1086,7 +1131,7 @@
         {
           "qty": 0.5,
           "unit": "can",
-          "item": "hunt's Family Favorites Pizza sauce (15 oz)"
+          "item": "hunt's Family Favorites Pizza sauce"
         },
         {
           "qty": 1.0,
@@ -1121,9 +1166,11 @@
       ],
       "steps": [
         "Dissolve yeast and sugar in 1 cup warm water.",
-        "Combine 3 cups of flour, olive oil, one tsp of salt, and the yeast-water mixture. Knead for 15 minutes, adding more flour until dough is no longer very sticky.",
-        "Coat dough with a little oil (about 1 tsp) and place it into a large bowl. Cover with plastic wrap and let rest for 45 minutes until the dough is twice its original size.",
-        "Meanwhile, preheat oven to 350°F / 175°C for at least 30 minutes).",
+        "Combine 3 cups of flour, olive oil, one tsp of salt, and the yeast-water mixture.",
+        "Knead for 15 minutes, adding more flour until dough is no longer very sticky.",
+        "Coat dough with a little oil (about 1 tsp) and place it into a large bowl.",
+        "Cover with plastic wrap and let rest for 45 minutes until the dough is twice its original size.",
+        "Meanwhile, preheat oven to 350°F (175°C) / 175°C for at least 30 minutes).",
         "Gently deflate dough in order to eliminate air bubbles.",
         "Cut dough into 2 pieces (you can freeze dough to bake later for up to a month).",
         "Roll out dough to form a rounded pizza crust.",
@@ -1131,7 +1178,7 @@
         "Bake 10 minutes.",
         "Take out of the oven, add mozzarella cheese, pepperoni, and mushrooms.",
         "Return to the oven and bake until cheese melts.",
-        "Cut into eight slices, and enjoy!"
+        "Cut into eight slices!"
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pizza_Vanegas",
       "sourceName": "Wikibooks Cookbook",
@@ -1198,11 +1245,12 @@
         }
       ],
       "steps": [
-        "Heat a dash of oil in a frying pan over low heat. Add the onion and diced bell peppers, and cook, stirring, for half an hour.",
+        "Heat a dash of oil in a frying pan over low heat.",
+        "Add the onion and diced bell peppers, and cook, stirring, for half an hour.",
         "Stretch and roll the pizza dough out to about 8–12 inches (20–30 cm) in diameter, and place in a pizza pan or on a sheet pan.",
         "Top the dough with the tomatoes, then the cooked onion-pepper mixture.",
         "Scatter the cheeses evenly over top, then arrange the 4 reserved pepper rings decoratively on top.",
-        "Bake for 10 minutes at 220°C (430°F), then top with the chorizo and bake for another 5 minutes."
+        "Bake for 10 minutes at 220°C (430°F (220°C)), then top with the chorizo and bake for another 5 minutes."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pizza_with_Peppers",
       "sourceName": "Wikibooks Cookbook",
@@ -1218,48 +1266,51 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "gluten-free",
-        "easy",
-        "moderate",
+        "vegan",
+        "dairy-free",
+        "medium",
+        "budget",
         "canadian"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "light buckwheat flour (120 g)"
+          "item": "light buckwheat flour"
         },
         {
           "qty": 0.75,
           "unit": "cup",
-          "item": "unbleached all-purpose flour (or gluten-free blend) (90 g)"
+          "item": "unbleached all-purpose flour (or gluten-free blend)"
         },
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "baking powder (15 ml)"
+          "item": "baking powder"
         },
         {
           "qty": 0.75,
           "unit": "tsp",
-          "item": "salt (3.75 ml)"
+          "item": "salt"
         },
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "cold water (240 ml)"
+          "item": "cold water"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "hot water (not boiling) (120 ml)"
+          "item": "hot water (not boiling)"
         }
       ],
       "steps": [
         "In a large mixing bowl, whisk together buckwheat flour, all-purpose flour, baking powder, and salt.",
-        "Stir in cold water gradually to form a thick paste. Mix until just combined.",
+        "Stir in cold water gradually to form a thick paste.",
+        "Mix until just combined.",
         "Slowly add hot water, whisking vigorously to create a smooth, lump-free batter. The consistency should be thinner than pancake batter but thicker than cream.",
-        "Let the batter rest at room temperature for 15–30 minutes. Bubbles should begin to form.",
+        "Let the batter rest at room temperature for 15–30 minutes.",
+        "Bubbles should begin to form.",
         "Heat a dry cast iron skillet over medium-high heat until hot but not smoking.",
         "Stir the batter briefly. Ladle about ¼ cup into the center of the pan and spread thinly with the back of the ladle.",
         "Cook on one side only until the top is dry and full of holes. Do not flip.",
@@ -1278,15 +1329,16 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "budget",
+        "high-protein",
+        "hard",
+        "moderate",
         "american"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "lb",
-          "item": "ground turkey or beef (450 g)"
+          "item": "ground turkey or beef"
         },
         {
           "qty": 0.5,
@@ -1296,7 +1348,7 @@
         {
           "qty": 1.0,
           "unit": "jar",
-          "item": "spaghetti sauce (26 oz / 730 g)"
+          "item": "spaghetti sauce"
         },
         {
           "qty": 2.0,
@@ -1306,7 +1358,7 @@
         {
           "qty": 1.0,
           "unit": "package",
-          "item": "cream cheese (8 oz / 225 g)"
+          "item": "cream cheese"
         },
         {
           "qty": 2.0,
@@ -1336,7 +1388,8 @@
       ],
       "steps": [
         "Preheat oven to 350°F (180°C).",
-        "Sauté ground meat with onion. When cooked through, mix in spaghetti sauce and seasoning.",
+        "Sauté ground meat with onion. The meat is done at 165°F (74°C) inside.",
+        "When cooked through, mix in spaghetti sauce and seasoning.",
         "Combine cream cheese, cottage cheese, and sour cream; mix well.",
         "Cook spaghetti noodles according to package directions.",
         "Spray 3-quart baking dish with cooking spray.",
@@ -1360,9 +1413,11 @@
       "tags": [
         "lunch",
         "main-meal",
+        "dairy-free",
+        "high-protein",
         "medium",
         "moderate",
-        "other"
+        "southeast_asian"
       ],
       "ingredients": [
         {
@@ -1373,7 +1428,7 @@
         {
           "qty": 1.5,
           "unit": "lb",
-          "item": "pork spareribs, cut into 2-inch (5 cm) pieces (680 g)"
+          "item": "pork spareribs, cut into 2-inch (5 cm) pieces"
         },
         {
           "qty": 1.0,
@@ -1432,7 +1487,8 @@
         }
       ],
       "steps": [
-        "Soak dried shitake mushrooms in 240 ml boiling water to reconstitute. Slice into strips when soft; reserve liquid for cooking.",
+        "Soak dried shitake mushrooms in 240 ml boiling water to reconstitute.",
+        "Slice into strips when soft; reserve liquid for cooking.",
         "In a stockpot, cover spareribs with cold water, then parboil ribs until froth rises to the surface.",
         "Drain, briefly rinse spareribs under cold running water, and drain again.",
         "In a casserole pan add the parboiled spare ribs, garlic bulb, ginseng root, shitake mushrooms, reserved liquid and additional water (to cover the meat).",
@@ -1453,9 +1509,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
-        "other"
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "european"
       ],
       "ingredients": [
         {
@@ -1493,7 +1551,8 @@
         "Cook the potatoes for about 15–20 minutes.",
         "Peel the potatoes and the eggs.",
         "Slice the potatoes, eggs, and sausage.",
-        "Put a little olive oil in a baking dish. Arrange alternating layers of potatoes, eggs, and salt or sausage in the dish.",
+        "Put a little olive oil in a baking dish.",
+        "Arrange alternating layers of potatoes, eggs, and salt or sausage in the dish.",
         "Drizzle olive oil over the filling, and top with sour cream.",
         "Bake in a preheated oven at 200°C for about 35 minutes."
       ],
@@ -1510,8 +1569,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1573,8 +1633,13 @@
       ],
       "steps": [
         "Cook onion in butter until tender.",
-        "Bring the diced potatoes, carrots, water and chicken bouillon in another stock pot to a boil. Simmer about 10 minutes or until tender. Add ground black pepper.",
-        "Add the flour to the cooked onions to make a paste. Stir in the milk. Cook over low heat stirring constantly until warmed through. Add the potato and carrot mixture. Stir in the parsley and thyme and heat through. Serve hot."
+        "Bring the diced potatoes, carrots, water and chicken bouillon in another stock pot to a boil.",
+        "Simmer about 10 minutes or until tender.",
+        "Add ground black pepper.",
+        "Add the flour to the cooked onions to make a paste.",
+        "Stir in the milk. Cook over low heat stirring constantly until warmed through.",
+        "Add the potato and carrot mixture.",
+        "Stir in the parsley and thyme and heat through. Serve hot."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Potato_Soup",
       "sourceName": "Wikibooks Cookbook",
@@ -1589,8 +1654,9 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1632,7 +1698,8 @@
       ],
       "steps": [
         "Peel and dice the cold, already boiled, potatoes; make the cubes about 1–2 cm across.",
-        "Mix the flour with the milk in a saucepan. Be sure to make a smooth mix without lumps; it may help to add just a little bit of milk at the time until a smooth thick substance forms, then add the rest of the milk.",
+        "Mix the flour with the milk in a saucepan.",
+        "Be sure to make a smooth mix without lumps; it may help to add just a little bit of milk at the time until a smooth thick substance forms, then add the rest of the milk.",
         "Add the butter, and bring the sauce to a boil.",
         "Add the potatoes and boil gently for 5 minutes.",
         "Add salt, pepper, and dill to taste.",
@@ -1658,7 +1725,7 @@
         "vegetarian",
         "gluten-free",
         "medium",
-        "moderate",
+        "budget",
         "indian"
       ],
       "ingredients": [
@@ -1724,7 +1791,7 @@
         }
       ],
       "steps": [
-        "Heat the ghee/oil in frying pan, wok, or karahi (an Indian utensil specially used for frying purposes)",
+        "Heat the ghee/oil in frying pan, wok, or karahi (an Indian utensil specially used for frying purposes).",
         "Add cumin seeds and wait until they turn a light brown color.",
         "Add the spices (except for garam masala) and the tomatoes.",
         "When the mixture turns oily, add the vegetables.",
@@ -1744,9 +1811,10 @@
       "tags": [
         "dinner",
         "main-meal",
+        "high-protein",
         "medium",
         "moderate",
-        "other"
+        "european"
       ],
       "ingredients": [
         {
@@ -1794,7 +1862,8 @@
         "Boil potatoes until tender (20 minutes).",
         "Cut bread into small squares and wet with milk.",
         "Grease a 9 x 13-inch (about 25 x 32-cm) Pyrex baking dish.",
-        "Put a layer of potato, then a layer of hogao and sausage, a layer of sliced egg, a layer of wet bread and a layer of mozzarella cheese. Optionally, add thyme to the hogao.",
+        "Put a layer of potato, then a layer of hogao and sausage, a layer of sliced egg, a layer of wet bread and a layer of mozzarella cheese.",
+        "Optionally, add thyme to the hogao.",
         "Repeat with another layer of potato, wet bread, and Parmesan cheese.",
         "Bake 30 minutes at 350°F (175°C), and serve."
       ],
@@ -1811,8 +1880,10 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
+        "gluten-free",
         "medium",
-        "moderate",
+        "budget",
         "canadian"
       ],
       "ingredients": [
@@ -1824,7 +1895,7 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "poutine sauce (French: mélange à sauce poutine) or gravy (290 g)"
+          "item": "poutine sauce (French: mélange à sauce poutine) or gravy"
         },
         {
           "qty": 5.0,
@@ -1840,7 +1911,7 @@
       "steps": [
         "Slice potatoes into finger-width fries and rinse them well to remove any dirt.",
         "Begin warming gravy, keep the temperature low enough for a slow heating.",
-        "Heat oil to 185°C (365°F).",
+        "Heat oil to 185°C (365°F (185°C)).",
         "Cook sliced potatoes in the oil for about 5 minutes.",
         "Following a first frying to cook the potatoes, they are often removed and then fried again for about 1 minute to crisp the outside.",
         "Remove the fries from the oil; optionally place them on a paper towel mat to absorb excess oil.",
@@ -1860,8 +1931,11 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1893,10 +1967,12 @@
       ],
       "steps": [
         "In a cup, whisk together the milk and cornstarch until it is free of lumps.",
-        "Add the cornstarch mixture to your eggs, and beat until smooth. Season with salt.",
+        "Add the cornstarch mixture to the eggs, and beat until smooth. Season with salt.",
         "Heat a non-stick skillet over high heat until hot, then add the butter—it should sizzle right away.",
-        "Wait until the butter’s melted and bubbly, but before it browns. Add the beaten eggs. Wait without stirring anything, until the edges of the eggs start to bubble up (about 3 seconds).",
-        "Remove the skillet from the heat. Start stirring the eggs, making 1 full circle per second, for about 11–12 seconds. The eggs will have absorbed all the butter but remain partially undercooked. Do not wait until they look fully cooked!",
+        "Wait until the butter’s melted and bubbly, but before it browns.",
+        "Add the beaten eggs. Wait without stirring anything, until the edges of the eggs start to bubble up (about 3 seconds).",
+        "Remove the skillet from the heat.",
+        "Start stirring the eggs, making 1 full circle per second, for about 11–12 seconds. The eggs will have absorbed all the butter but remain partially undercooked. Do not wait until they look fully cooked!",
         "Transfer them onto a plate.",
         "Season with black pepper to taste and serve."
       ],
@@ -1913,8 +1989,12 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1951,8 +2031,10 @@
       ],
       "steps": [
         "Heat a frying pan over medium heat, and add oil.",
-        "Add tomato and cucumber to the pan. Cook for 2 minutes, stirring occasionally. Add salt.",
-        "Beat the eggs with the onion and additional salt if desired. Transfer mixture to the pan.",
+        "Add tomato and cucumber to the pan.",
+        "Cook for 2 minutes, stirring occasionally. Add salt.",
+        "Beat the eggs with the onion and additional salt if desired.",
+        "Transfer mixture to the pan.",
         "Cook eggs and vegetables, turning every 30 seconds until cooked to taste.",
         "Serve."
       ],
@@ -1969,9 +2051,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "high-protein",
+        "medium",
         "moderate",
-        "other"
+        "european"
       ],
       "ingredients": [
         {
@@ -2017,10 +2100,11 @@
       ],
       "steps": [
         "Chop or dice everything you want to put in.",
-        "Alternate layers of cheese, meat, and vegetables in a baking dish. Finish with cheese on top.",
-        "Bake in the oven at 200 °C (375 °F) for 20 minutes or until the cheese is melted.",
-        "Break the egg on top and put back in the oven for another 5–10 minutes depending on how well-done you like your eggs.",
-        "Serve with fresh bread or toast. Enjoy!"
+        "Alternate layers of cheese, meat, and vegetables in a baking dish.",
+        "Finish with cheese on top.",
+        "Bake in the oven at 200°C (375°F (190°C)) for 20 minutes or until the cheese is melted.",
+        "Break the egg on top and put back in the oven for another 5–10 minutes depending on how well-done you like the eggs.",
+        "Serve with fresh bread or toast."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gyuveche_(Bulgarian_Casserole)_II",
       "sourceName": "Wikibooks Cookbook",
@@ -2035,8 +2119,11 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -2062,9 +2149,11 @@
         }
       ],
       "steps": [
-        "Add the sausages to a hot frying pan. Fry, turning, until sausage is cooked through.",
+        "Add the sausages to a hot frying pan.",
+        "Fry, turning, until sausage is cooked through.",
         "Beat the eggs with the salt.",
-        "Transfer egg mixture to pan along with vegetables, if using. Fry for 30–60 seconds.",
+        "Transfer egg mixture to pan along with vegetables, if using.",
+        "Fry for 30–60 seconds.",
         "Serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Scrambled_Eggs_with_Sausage",
@@ -2080,6 +2169,7 @@
       "tags": [
         "breakfast",
         "main-meal",
+        "high-protein",
         "easy",
         "moderate",
         "mexican"
@@ -2108,12 +2198,12 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "refried beans, warmed (16 ounces)"
+          "item": "refried beans, warmed"
         },
         {
           "qty": 2.0,
           "unit": "cup",
-          "item": "shredded cheddar or Monterey Jack Cheese (8 ounces)"
+          "item": "shredded cheddar or Monterey Jack Cheese"
         },
         {
           "qty": null,
@@ -2124,7 +2214,8 @@
       "steps": [
         "Heat butter in large skillet over medium-high heat.",
         "Add eggs; cook, stirring frequently, for 2–3 minutes or until eggs just begin to set.",
-        "Stir in shredded beef filling. Cook, stirring occasionally, for 2 to 3 minutes or until eggs are cooked and beef is heated through.",
+        "Stir in shredded beef filling.",
+        "Cook, stirring occasionally, for 2 to 3 minutes or until eggs are cooked and beef is heated through.",
         "Serve eggs with tortillas, beans, cheese, and salsa."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Machacado_con_Huevo_(Eggs_with_Shredded_Beef)",
@@ -2141,20 +2232,21 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
         {
           "qty": 3.0,
           "unit": "cup",
-          "item": "quick-cooking oats (720 g)"
+          "item": "quick-cooking oats"
         },
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "brown sugar (240 g)"
+          "item": "brown sugar"
         },
         {
           "qty": 2.0,
@@ -2174,12 +2266,12 @@
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "milk (240 ml)"
+          "item": "milk"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "butter (melted) (120 g)"
+          "item": "butter (melted)"
         },
         {
           "qty": 2.0,
@@ -2189,7 +2281,7 @@
       ],
       "steps": [
         "Mix the ingredients and pour them into a 9-inch (20 cm) baking pan. They can also be carefully mixed in the pan.",
-        "Bake at 350 °F (175 °C) for 40–45 minutes.",
+        "Bake at 350°F (175°C) for 40–45 minutes.",
         "Serve hot, cold, with or without milk."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Oatmeal",
@@ -2205,10 +2297,12 @@
       "tags": [
         "dinner",
         "main-meal",
-        "vegan",
         "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
         "medium",
-        "moderate",
+        "budget",
         "french"
       ],
       "ingredients": [
@@ -2284,10 +2378,13 @@
       "tags": [
         "lunch",
         "main-meal",
-        "vegan",
         "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "mediterranean"
       ],
       "ingredients": [
@@ -2329,8 +2426,11 @@
       ],
       "steps": [
         "Pick over the lentils to remove any debris if needed. Rinse well.",
-        "Heat the olive oil in a large pan over medium heat. Once oil is hot, add the onion and carrots. Sauté for a few minutes, until the vegetables have started to soften, then add the garlic.",
-        "Add the lentils, bay leaf, and water to the pot. Simmer over low-medium heat for 20–30 minutes until lentils are softened.",
+        "Heat the olive oil in a large pan over medium heat.",
+        "Once oil is hot, add the onion and carrots.",
+        "Sauté for a few minutes, until the vegetables have started to soften, then add the garlic.",
+        "Add the lentils, bay leaf, and water to the pot.",
+        "Simmer over low-medium heat for 20–30 minutes until lentils are softened.",
         "Serve hot."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Red_Lentil_Soup",
@@ -2346,20 +2446,21 @@
       "tags": [
         "lunch",
         "main-meal",
+        "high-protein",
         "easy",
-        "budget",
+        "moderate",
         "american"
       ],
       "ingredients": [
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "sliced corned beef (or try using pastrami) (225 g)"
+          "item": "sliced corned beef (or try using pastrami)"
         },
         {
           "qty": 0.25,
           "unit": "cup",
-          "item": "drained sauerkraut (60 ml)"
+          "item": "drained sauerkraut"
         },
         {
           "qty": 2.0,
@@ -2413,8 +2514,10 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "medium",
+        "budget",
         "african"
       ],
       "ingredients": [
@@ -2480,13 +2583,13 @@
         }
       ],
       "steps": [
-        "Preheat oven to 180°C",
+        "Preheat oven to 180°C.",
         "Cook brown rice according to packet instructions.",
         "Drain and set aside.",
         "Toss butternut, olive oil and seasoning into a roasting pan.",
         "Roast butternut until cooked through and slightly charred.",
         "Stir through rice, butternut, bilton, roasted seeds, cucumber, feta and herbs.",
-        "Serve tossed with your favourite vinaigrette, or honey mustard dressing."
+        "Serve tossed with the favourite vinaigrette, or honey mustard dressing."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roast_Butternut,_Biltong_and_Brown_Rice_Salad",
       "sourceName": "Wikibooks Cookbook",
@@ -2501,8 +2604,11 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "middle_eastern"
       ],
       "ingredients": [
@@ -2552,6 +2658,8 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "high-protein",
         "hard",
         "moderate",
         "american"
@@ -2560,17 +2668,17 @@
         {
           "qty": 0.5,
           "unit": "",
-          "item": "US gallon (8 cups) water"
+          "item": "US gallon water"
         },
         {
           "qty": 2.0,
           "unit": "cup",
-          "item": "salt (600 g / 1.3 lb)"
+          "item": "salt"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "firmly packed light brown sugar (85 g / 3 oz)"
+          "item": "firmly packed light brown sugar"
         },
         {
           "qty": 2.0,
@@ -2580,7 +2688,7 @@
         {
           "qty": 2.0,
           "unit": "",
-          "item": "US gallons (7.6 L / 32 cups) of ice water (50% ice)"
+          "item": "US gallons of ice water (50% ice)"
         },
         {
           "qty": null,
@@ -2594,12 +2702,12 @@
         }
       ],
       "steps": [
+        "Preheat the oven to 500°F (260°C), and move a rack to the lowest level of the oven. You'll drop the temperature later, but start it hot to get a crispier, more flavorful skin. The effect will be to keep the fat from melting and rolling down the side of the turkey, which is only going to dry it out.",
         "Combine the ½ gallon water, salt, brown sugar, and peppercorns. Bring to a boil and cook about 3 minutes until everything is dissolved.",
         "Transfer the brine to a 5-US-gallon (19 L) bucket, and stir in the ice water.",
         "Remove the neck and giblets from turkey, and place the turkey in the bucket of brine. If the brine won't cover turkey, add a little more water.",
         "Chill the turkey in the brine for 6–24 hours.",
-        "Preheat the oven to 500°F (260°C), and move a rack to the lowest level of the oven. You'll drop the temperature later, but start it hot to get a crispier, more flavorful skin. The effect will be to keep the fat from melting and rolling down the side of the turkey, which is only going to dry it out.",
-        "Place the turkey drumstick side-down on a roasting tray (with slots to allow drippings through into a pan), or on a rack sitting in a pan.",
+        "Place the turkey drumstick side-down on a roasting tray (with slots to allow drippings through into a pan), or on a rack sitting in a pan. The turkey is done at 165°F (74°C) inside.",
         "Attach the wings to the bird by imagining you were twisting someone's arm behind their back. Do this with both wings. Once you figure out the right twist, you'll find that the tips of the wings will stay firmly in place near the center of the back of the turkey (near its backbone).",
         "Coat the turkey skin with the butter.",
         "Place the turkey in the preheated oven, and roast for about 30 minutes.",
@@ -2621,8 +2729,11 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -2658,11 +2769,12 @@
         }
       ],
       "steps": [
+        "Preheat oven to 400°F (205°C).",
         "Combine the paprika, onion powder, chili powder, and salt together in a bowl.",
-        "Preheat oven to 400°F.",
         "Pat the chicken dry with paper towels.",
-        "Coat the chicken with oil and the prepared spice blend, ensuring all sides are well-coated. Transfer to a baking dish.",
-        "Bake the chicken drumsticks until the skin is brown and crispy (about 25 minutes).",
+        "Coat the chicken with oil and the prepared spice blend, ensuring all sides are well-coated.",
+        "Transfer to a baking dish.",
+        "Bake the chicken drumsticks until the skin is brown and crispy (about 25 minutes). The chicken is done at 165°F (74°C) inside.",
         "Serve hot."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roasted_Spiced_Chicken_Drumsticks",
@@ -2678,15 +2790,16 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
         {
           "qty": 0.5,
           "unit": "",
-          "item": "loaf (1 pound) white bread, cut into cubes"
+          "item": "loaf white bread, cut into cubes"
         },
         {
           "qty": 680.0,
@@ -2725,10 +2838,14 @@
         }
       ],
       "steps": [
-        "Preheat oven to 350 °F (175 °C). Lightly grease a 9x13-inch (23 x 33 cm) baking pan.",
-        "Place half of the bread cubes on bottom of baking pan. Sprinkle with half of the ham and then half of the cheese; repeat.",
-        "In a large bowl, beat together eggs, milk, salt, hot sauce and green onions. Pour egg mixture into pan.",
-        "Place pan on top of a baking sheet with a rim and place in oven. Pour water into baking sheet and bake for 60 minutes, or until eggs have set."
+        "Preheat oven to 350°F (175°C).",
+        "Lightly grease a 9x13-inch (23 x 33 cm) baking pan.",
+        "Place half of the bread cubes on bottom of baking pan.",
+        "Sprinkle with half of the ham and then half of the cheese; repeat.",
+        "In a large bowl, beat together eggs, milk, salt, hot sauce and green onions.",
+        "Pour egg mixture into pan.",
+        "Place pan on top of a baking sheet with a rim and place in oven.",
+        "Pour water into baking sheet and bake for 60 minutes, or until eggs have set."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Baked_Brunch_Omelet",
       "sourceName": "Wikibooks Cookbook",
@@ -2743,15 +2860,17 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "mediterranean"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "lb",
-          "item": "tomato (450 g)"
+          "item": "tomato"
         },
         {
           "qty": 1.0,
@@ -2761,12 +2880,12 @@
         {
           "qty": 1.0,
           "unit": "oz",
-          "item": "white bread (50 g)"
+          "item": "white bread"
         },
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "vinegar (30 ml)"
+          "item": "vinegar"
         },
         {
           "qty": null,
@@ -2815,7 +2934,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -2888,11 +3009,18 @@
       ],
       "steps": [
         "Combine ¼–½ cup (depending on how thick you like it) all-purpose flour with rosemary and thyme in a gallon size zip-top bag. Set aside.",
-        "Pound chicken breasts flat under a water-spritzed sheet of plastic wrap with a pie plate and a heavy food can, or pound down lightly with a tenderizing hammer. Depending on the size of the chicken breasts, you may first wish to cut them vertically or horizontally to achieve the desired serving sizes and shapes. Season each piece with kosher salt and freshly ground black pepper.",
+        "Pound chicken breasts flat under a water-spritzed sheet of plastic wrap with a pie plate and a heavy food can, or pound down lightly with a tenderizing hammer.",
+        "Depending on the size of the chicken breasts, you may first wish to cut them vertically or horizontally to achieve the desired serving sizes and shapes.",
+        "Season each piece with kosher salt and freshly ground black pepper.",
         "Dip each piece of chicken into eggs then toss in seasoned flour.",
-        "Heat oil in large stainless steel skillet over medium high heat (don't even think about using a nonstick surface). Add chicken breasts and cook until deeply browned on each side. Remove and keep warm.",
-        "Add marsala to pan and ignite either by tilting or fire stick/lighter. Whisk to loosen browned bits until reduced by ¾.",
-        "Add broth and tomato paste to pan and whisk to combine. Add chicken breasts and lower heat to medium low heat. Simmer for 7 minutes.",
+        "Heat oil in large stainless steel skillet over medium high heat (don't even think about using a nonstick surface).",
+        "Add chicken breasts and cook until deeply browned on each side. The chicken is done at 165°F (74°C) inside.",
+        "Remove and keep warm.",
+        "Add marsala to pan and ignite either by tilting or fire stick/lighter.",
+        "Whisk to loosen browned bits until reduced by ¾.",
+        "Add broth and tomato paste to pan and whisk to combine.",
+        "Add chicken breasts and lower heat to medium low heat.",
+        "Simmer for 7 minutes.",
         "Serve warm with garlic bread and some espresso."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Marsala_II",
@@ -2908,8 +3036,11 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "medium",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "splurge",
         "african"
       ],
       "ingredients": [
@@ -2931,7 +3062,7 @@
         {
           "qty": 500.0,
           "unit": "g",
-          "item": "beef or lamb, cut into small cubes (1 lb)"
+          "item": "beef or lamb, cut into small cubes"
         },
         {
           "qty": 2.0,
@@ -2981,13 +3112,16 @@
       ],
       "steps": [
         "Heat the olive oil in a large skillet or frying pan over medium heat.",
-        "Add the chopped onion and minced garlic. Sauté until the onion becomes translucent and fragrant.",
+        "Add the chopped onion and minced garlic.",
+        "Sauté until the onion becomes translucent and fragrant.",
         "Add the cubed meat to the skillet and cook until browned on all sides.",
-        "Add the diced bell peppers and tomatoes to the skillet. Stir well to combine.",
-        "Sprinkle the cumin, paprika, cayenne pepper (if using), salt, and pepper over the ingredients in the skillet. Stir to evenly distribute the spices.",
+        "Add the diced bell peppers and tomatoes to the skillet.",
+        "Stir well to combine.",
+        "Sprinkle the cumin, paprika, cayenne pepper (if using), salt, and pepper over the ingredients in the skillet.",
+        "Stir to evenly distribute the spices.",
         "Reduce the heat to low, cover the skillet with a lid, and let the mixture simmer for about 15–20 minutes, or until the meat is tender and the flavors have melded together.",
         "Using a spoon, create small wells in the sauce and carefully crack the eggs into each well.",
-        "Cover the skillet again and let the shakshuka cook for an additional 5–7 minutes, or until the eggs are cooked to your desired level of doneness.",
+        "Cover the skillet again and let the shakshuka cook for an additional 5–7 minutes, or until the eggs are cooked to the desired level of doneness.",
         "Garnish with freshly chopped parsley or cilantro."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shakshuka_bil_Lahm_(Libyan_Meat_Shakshuka)",
@@ -3003,6 +3137,8 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
         "medium",
         "budget",
         "american"
@@ -3046,7 +3182,7 @@
         {
           "qty": 3.0,
           "unit": "",
-          "item": "jalapeños, seeded and diced (about ½ cup)"
+          "item": "jalapeños, seeded and diced"
         }
       ],
       "steps": [
@@ -3068,7 +3204,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
+        "gluten-free",
+        "high-protein",
+        "medium",
         "splurge",
         "french"
       ],
@@ -3135,11 +3273,15 @@
         }
       ],
       "steps": [
-        "Heat oil in a large pot over medium high heat. Add celery, onion, and garlic and sauté until garlic is golden and onions are translucent.",
-        "Add remaining ingredients, 1 tsp salt, and freshly ground black pepper. Remove bay leaves and reserve.",
+        "Heat oil in a large pot over medium high heat.",
+        "Add celery, onion, and garlic and sauté until garlic is golden and onions are translucent.",
+        "Add remaining ingredients, 1 tsp salt, and freshly ground black pepper.",
+        "Remove bay leaves and reserve.",
         "Purée soup until smooth using an immersion blender.",
-        "Add bay leaves and bring to a boil. Reduce heat to medium low and cook 10 minutes.",
-        "Remove bay leaves and ladle into individual bowls. Grind on some black pepper and sprinkle with some dill, if desired, before serving."
+        "Add bay leaves and bring to a boil.",
+        "Reduce heat to medium low and cook 10 minutes.",
+        "Remove bay leaves and ladle into individual bowls.",
+        "Grind on some black pepper and sprinkle with some dill, if desired, before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lobster_Bisque",
       "sourceName": "Wikibooks Cookbook",
@@ -3154,6 +3296,8 @@
       "tags": [
         "dinner",
         "main-meal",
+        "dairy-free",
+        "high-protein",
         "medium",
         "moderate",
         "american"
@@ -3222,9 +3366,13 @@
       ],
       "steps": [
         "Dredge chicken in flour. Set aside.",
-        "Heat oil in a 6-quart cast-iron Dutch oven. Add 6 chicken pieces and cook until browned on all sides. Repeat until all chicken has been browned, then remove from pot.",
-        "Sauté onion in remaining oil until translucent and slightly browned around edges. Mix in the curry paste, chiles, fish sauce, broth, tomato paste, potatoes, and garlic.",
-        "Return the chicken to the pot. Cover tightly and place in 250°F oven for 4½ hours, or until chicken is cooked through and tender.",
+        "Heat oil in a 6-quart cast-iron Dutch oven.",
+        "Add 6 chicken pieces and cook until browned on all sides. The chicken is done at 165°F (74°C) inside.",
+        "Repeat until all chicken has been browned, then remove from pot.",
+        "Sauté onion in remaining oil until translucent and slightly browned around edges.",
+        "Mix in the curry paste, chiles, fish sauce, broth, tomato paste, potatoes, and garlic.",
+        "Return the chicken to the pot.",
+        "Cover tightly and place in 250°F (120°C) oven for 4½ hours, or until chicken is cooked through and tender.",
         "Sprinkle individual serving bowls with chopped parsley and serve warm."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spicy_Chicken_Stew",
@@ -3240,7 +3388,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -3248,17 +3398,17 @@
         {
           "qty": 2.0,
           "unit": "lb",
-          "item": "chicken breasts (1 kg)"
+          "item": "chicken breasts"
         },
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "canola oil (240 ml)"
+          "item": "canola oil"
         },
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "all-purpose flour (240 g)"
+          "item": "all-purpose flour"
         },
         {
           "qty": 2.0,
@@ -3283,7 +3433,7 @@
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "andouille sausage or other spicy sausage (¼ kg)"
+          "item": "andouille sausage or other spicy sausage"
         },
         {
           "qty": null,
@@ -3302,7 +3452,7 @@
         }
       ],
       "steps": [
-        "Brown outside of chicken breasts in small amount of oil then set aside.",
+        "Brown outside of chicken breasts in small amount of oil then set aside. The chicken is done at 165°F (74°C) inside.",
         "Make a roux from the flour in a large saucepan.",
         "Add peppers, onions, and celery to roux. Cook until softened.",
         "Slowly stir in water, and bring to a simmer.",
@@ -3324,7 +3474,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
+        "dairy-free",
+        "high-protein",
+        "medium",
         "moderate",
         "american"
       ],
@@ -3332,7 +3484,7 @@
         {
           "qty": 2.0,
           "unit": "jar",
-          "item": "clams or 2 packages (24 ounces) frozen clams (23 ounces)"
+          "item": "clams or 2 packages frozen clams"
         },
         {
           "qty": 1.0,
@@ -3426,8 +3578,9 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -3474,9 +3627,12 @@
       "tags": [
         "lunch",
         "main-meal",
-        "medium",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
-        "other"
+        "southeast_asian"
       ],
       "ingredients": [
         {
@@ -3556,15 +3712,18 @@
         }
       ],
       "steps": [
-        "If using whole tamarind, boil it in water until the shells crack, then work the flesh away from the seeds and strain, reserving all the liquid for the soup. Skip this process if using packed tamarind base.",
+        "If using whole tamarind, boil it in water until the shells crack, then work the flesh away from the seeds and strain, reserving all the liquid for the soup.",
+        "Skip this process if using packed tamarind base.",
         "Sauté the chopped onions in another large pot.",
         "Add the tomato and pork to the onions, and sauté until the pork is no longer pink.",
         "Add enough water or boiled tamarind stock to cover the contents of the pot. Boil until tender.",
         "Add taro root, and simmer until soft and tender. The soup should to thicken at this point.",
         "Add the horseradish, and simmer until tender-crunchy.",
-        "Add the string beans, quartered onions, and water spinach. Simmer for another 2–3 minutes.",
+        "Add the string beans, quartered onions, and water spinach.",
+        "Simmer for another 2–3 minutes.",
         "Check to make sure all ingredients were cooked enough, then add the tamarind pack if using.",
-        "Add fish sauce, salt, pepper, and MSG to taste. Top with green chillies.",
+        "Add fish sauce, salt, pepper, and MSG to taste.",
+        "Top with green chillies.",
         "Serve hot."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sinigang_(Philippine_Sour_Soup)",
@@ -3580,11 +3739,13 @@
       "tags": [
         "lunch",
         "main-meal",
-        "vegan",
         "vegetarian",
+        "vegan",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
-        "other"
+        "budget",
+        "american"
       ],
       "ingredients": [
         {
@@ -3659,8 +3820,8 @@
         }
       ],
       "steps": [
+        "Preheat the oven to 350°F (175°C). Lightly toast the walnuts until fragrant, about 8 minutes. Set aside to cool. When cool enough to handle, finely chop and add to the cooked millet.",
         "Cook the millet per the package instructions using water or vegetable stock. Once cooked, remove from the pan and place in a medium size mixing bowl. Set aside.",
-        "Preheat the oven to 350°F. Lightly toast the walnuts until fragrant, about 8 minutes. Set aside to cool. When cool enough to handle, finely chop and add to the cooked millet.",
         "Place a large sauté pan oven medium-high heat. Add 1 tablespoon olive oil. When hot, but not smoking, add the corn. Add ½ teaspoon of salt and stir to incorporate. Cook until the corn is a vibrant yellow color, about 4–5 minutes. Add the scallions and cook an additional 30 seconds. Remove form the heat and place in the bowl with the millet.",
         "Place the pan you used for the corn back on a medium-high heat. Add an additional 1 tablespoon of olive oil. When hot, add the cauliflower rice, ½ teaspoon salt and cook, stirring occasionally, until cooked through and beginning to brown. Remove from the heat and add to the millet mixture.",
         "Wipe out the pan and add 2 tablespoons olive oil. When hot, add the diced tofu and remaining ½ teaspoon salt and cook, stirring occasionally as needed until the tofu begins to brown and get crispy, about 7–8 minutes. Remove from the heat and add to the millet-mixture.",
@@ -3680,8 +3841,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "medium",
+        "budget",
         "italian"
       ],
       "ingredients": [
@@ -3714,7 +3878,8 @@
       "steps": [
         "Boil spaghetti in sufficiently salted water until al dente.",
         "Peel cloves of garlic and crush them gently with the heel of hand.",
-        "Heat 2–3 mm olive oil in a pan. Add garlic, and cook until it takes on a golden color. Take care not to let the garlic get too dark, as it will become bitter.",
+        "Heat 2–3 mm olive oil in a pan.",
+        "Add garlic, and cook until it takes on a golden color. Take care not to let the garlic get too dark, as it will become bitter.",
         "Remove garlic from the oil.",
         "Drain the finished spaghetti and add to the pan with olive oil.",
         "Spice with pepper, mix everything, and serve with parsley."
@@ -3732,15 +3897,16 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "italian"
       ],
       "ingredients": [
         {
           "qty": 450.0,
           "unit": "g",
-          "item": "spaghetti (1 pound)"
+          "item": "spaghetti"
         },
         {
           "qty": 225.0,
@@ -3755,12 +3921,12 @@
         {
           "qty": 178.0,
           "unit": "ml",
-          "item": "grated Pecorino Romano cheese (¾ cup)"
+          "item": "grated Pecorino Romano cheese"
         },
         {
           "qty": 178.0,
           "unit": "ml",
-          "item": "grated Parmigiano-Reggiano cheese (¾ cup)"
+          "item": "grated Parmigiano-Reggiano cheese"
         },
         {
           "qty": 3.0,
@@ -3782,9 +3948,12 @@
         "Dice the guanciale or pancetta into 2.5 cm (1-inch) pieces.",
         "Bring a big pot of water to a boil and add salt to taste when it begins to simmer.",
         "Cook the spaghetti until it is al dente and drain it, reserving 1 cup of water.",
-        "While spaghetti is cooking, heat the olive oil in a large skillet over a medium-high heat. When the oil is hot, add the pancetta and cook for about 10 minutes over a low flame until the pancetta has rendered most of its fat but is still chewy and barely browned.",
-        "In a bowl, slowly whisk about ½ cup of the pasta water into the egg yolks. Add the grated cheese and mix thoroughly with a fork.",
-        "Strain the spaghetti and transfer it immediately to the skillet with the pancetta. Toss it and turn off the heat.",
+        "While spaghetti is cooking, heat the olive oil in a large skillet over a medium-high heat.",
+        "When the oil is hot, add the pancetta and cook for about 10 minutes over low heat until the pancetta has rendered most of its fat but is still chewy and barely browned.",
+        "In a bowl, slowly whisk about ½ cup of the pasta water into the egg yolks.",
+        "Add the grated cheese and mix thoroughly with a fork.",
+        "Strain the spaghetti and transfer it immediately to the skillet with the pancetta.",
+        "Toss it and turn off the heat.",
         "Add the egg and cheese mixture to the pasta while stirring in the remaining pasta water to help thin the sauce and create an emulsion.",
         "Add the pepper and toss all the ingredients to coat the pasta."
       ],
@@ -3801,7 +3970,8 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "dairy-free",
+        "medium",
         "moderate",
         "italian"
       ],
@@ -3809,7 +3979,7 @@
         {
           "qty": 600.0,
           "unit": "g",
-          "item": "uncooked spaghetti (21 ounces)"
+          "item": "uncooked spaghetti"
         },
         {
           "qty": 4.0,
@@ -3819,7 +3989,7 @@
         {
           "qty": 115.0,
           "unit": "g",
-          "item": "unsalted anchovy fillets, crushed into a paste (omit anchovies for Neapolitan version) (4 ounces)"
+          "item": "unsalted anchovy fillets, crushed into a paste (omit anchovies for Neapolitan version)"
         },
         {
           "qty": 5.0,
@@ -3829,7 +3999,7 @@
         {
           "qty": 200.0,
           "unit": "g",
-          "item": "black olives, pitted and chopped (7 ounces)"
+          "item": "black olives, pitted and chopped"
         },
         {
           "qty": 2.0,
@@ -3860,9 +4030,12 @@
       "steps": [
         "Put the olive oil, garlic, and anchovy paste in a skillet over medium heat.",
         "Before the garlic browns, add the olives, capers, tomato sauce, and chile peppers.",
-        "Add 2–3 pinches of salt, mixing over high heat. Then lower the heat and allow to simmer for 15 to 20 minutes.",
-        "Meanwhile, cook the spaghetti in salted water (at least 4 quarts of water per pound of spaghetti being cooked). Strain it when it's al dente.",
-        "Place pasta in a large serving bowl, and coat it with sauce. Then, sprinkle it with chopped parsley.",
+        "Add 2–3 pinches of salt, mixing over high heat.",
+        "Lower the heat and allow to simmer for 15 to 20 minutes.",
+        "Meanwhile, cook the spaghetti in salted water (at least 4 quarts of water per pound of spaghetti being cooked).",
+        "Strain it when it's al dente.",
+        "Place pasta in a large serving bowl, and coat it with sauce.",
+        "Sprinkle it with chopped parsley.",
         "Mix and serve hot."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spaghetti_alla_Puttanesca",
@@ -3878,7 +4051,8 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "dairy-free",
+        "hard",
         "moderate",
         "italian"
       ],
@@ -3896,7 +4070,7 @@
         {
           "qty": 450.0,
           "unit": "g",
-          "item": "dry spaghetti (1 lb)"
+          "item": "dry spaghetti"
         },
         {
           "qty": null,
@@ -3906,27 +4080,27 @@
         {
           "qty": 20.0,
           "unit": "g",
-          "item": "garlic, minced (¾ oz)"
+          "item": "garlic, minced"
         },
         {
           "qty": 1.0,
           "unit": "kg",
-          "item": "live clams (2 lb)"
+          "item": "live clams"
         },
         {
           "qty": 225.0,
           "unit": "g",
-          "item": "diced plum tomatoes (see notes) (8 oz)"
+          "item": "diced plum tomatoes (see notes)"
         },
         {
           "qty": 225.0,
           "unit": "g",
-          "item": "canned, shelled clams, thoroughly rinsed (optional) (8 oz)"
+          "item": "canned, shelled clams, thoroughly rinsed (optional)"
         },
         {
           "qty": 120.0,
           "unit": "ml",
-          "item": "bottled clam broth (optional) (4 oz)"
+          "item": "bottled clam broth (optional)"
         },
         {
           "qty": 1.0,
@@ -3941,14 +4115,19 @@
       ],
       "steps": [
         "Boil the water in a large pot with a tablespoon of salt.",
-        "Add the spaghetti once the water starts boiling. Cook until the pasta is al dente. This should take 7–8 minutes.",
+        "Add the spaghetti once the water starts boiling.",
+        "Cook until the pasta is al dente. This should take 7–8 minutes.",
         "Pour olive oil into a large, wide pan so that it barely covers the bottom and heat the oil.",
         "Add the garlic, along with the peperoncino, and sauté until golden brown. This should take about a minute. Be careful not to burn the garlic.",
         "Add the live clams and diced tomatoes.",
-        "Put the lid on the pan and cook for about eight minutes. Shake the pan every minute or so to help the clams open. Throw out those that don't.",
-        "Drain the spaghetti and put it in the pan with the live clams and tomatoes. Reduce the heat to low.",
+        "Put the lid on the pan and cook for about eight minutes.",
+        "Shake the pan every minute or so to help the clams open.",
+        "Throw out those that don't.",
+        "Drain the spaghetti and put it in the pan with the live clams and tomatoes.",
+        "Reduce the heat to low.",
         "Add the canned clams and clam broth to the pan.",
-        "Season with salt (and pepper, if the peperoncino is not used) to taste and toss until the pasta is well coated with tomatoes and oil. Add another tablespoon of olive oil if you like.",
+        "Season with salt (and pepper, if the peperoncino is not used) to taste and toss until the pasta is well coated with tomatoes and oil.",
+        "Add another tablespoon of olive oil if desired.",
         "Sprinkle with chopped parsley.",
         "Serve hot."
       ],
@@ -3965,15 +4144,17 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "greek"
       ],
       "ingredients": [
         {
           "qty": 900.0,
           "unit": "g",
-          "item": "fresh spinach or 580 g (20 oz) frozen, thawed, and drained spinach (2 lbs)"
+          "item": "fresh spinach or 580 g frozen, thawed, and drained spinach (2 lbs)"
         },
         {
           "qty": 1.0,
@@ -4052,7 +4233,7 @@
         }
       ],
       "steps": [
-        "Preheat oven to 180°C (350°F).",
+        "Preheat oven to 180°C (350°F (175°C)).",
         "Wash the spinach, remove large stems, and chop. Place in a steamer over boiling water and steam for 2 minutes, or until wilted and reduced in volume. Drain, pressing out any liquid with the back of a spoon.",
         "Heat the oil in a large skillet. Add onion and cook over medium heat until slightly tender. Add scallions and cook until limp. Remove from heat. Stir in parsley, dill, nutmeg, salt and pepper.",
         "Add the cheeses, spinach, and lemon juice to the skillet. Mix. Add eggs and mix again gently.",
@@ -4075,15 +4256,19 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "medium",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "budget",
         "mediterranean"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "lb",
-          "item": "waxy potatoes (450 g)"
+          "item": "waxy potatoes"
         },
         {
           "qty": 1.0,
@@ -4134,15 +4319,17 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
         "chinese"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "",
-          "item": "pack (500 g) Hong Kong-style egg noodles, rehydrated and boiled if needed"
+          "item": "pack Hong Kong-style egg noodles, rehydrated and boiled if needed"
         },
         {
           "qty": 2.0,
@@ -4207,10 +4394,12 @@
       ],
       "steps": [
         "Heat the oil in a non-stick pan, add the garlic, and fry for about 10 seconds until golden brown.",
-        "Add the fishball and shrimp. Stir fry until the shrimp and fishball just begin to change color.",
-        "Add the cabbage and scallion, and stir fry at least until all ingredients are hot.",
-        "Add the noodles, and stir fry until all ingredients are hot.",
-        "Add the bean sprouts, light soy sauce, salt, sugar and pepper. Mix well and stir fry (perhaps on reduced heat) until all ingredients are hot, taking care to not cook so long as to overly wilt the bean sprouts.",
+        "Add the fishball and shrimp.",
+        "Stir-fry until the shrimp and fishball just begin to change color.",
+        "Add the cabbage and scallion, and stir-fry at least until all ingredients are hot.",
+        "Add the noodles, and stir-fry until all ingredients are hot.",
+        "Add the bean sprouts, light soy sauce, salt, sugar and pepper.",
+        "Mix well and stir-fry (perhaps on reduced heat) until all ingredients are hot, taking care to not cook so long as to overly wilt the bean sprouts.",
         "Serve immediately with fried onion."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stir_Fried_Seafood_with_Noodles",
@@ -4226,8 +4415,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "italian"
       ],
       "ingredients": [
@@ -4293,8 +4483,10 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -4333,7 +4525,8 @@
         "Bring the water to a boil in a 1–2 quart saucepan.",
         "Add the grits, stirring constantly.",
         "Reduce heat to low, stirring occasionally until until grits begin to thicken.",
-        "Cover and continue to cook on low heat for about 5–6 minutes. Stir occasionally to avoid sticking. If the grits become too thick, stir in a small amount of water.",
+        "Cover and continue to cook on low heat for about 5–6 minutes.",
+        "Stir occasionally to avoid sticking. If the grits become too thick, stir in a small amount of water.",
         "Adjust the seasoning before serving, adding black pepper to taste.",
         "Serve with a pat of margarine, butter, or grated cheese on top."
       ],
@@ -4350,8 +4543,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "splurge",
         "chinese"
       ],
       "ingredients": [
@@ -4427,8 +4621,11 @@
         }
       ],
       "steps": [
-        "Heat the butter and sesame oil in a non-stick frying pan over medium-high heat. Add the garlic, chillies, and scallion. Fry, stirring, for 15 seconds until fragrant.",
-        "Add the duck meat, bean sprouts, and parsley. Stir until the duck meat changes color.",
+        "Heat the butter and sesame oil in a non-stick frying pan over medium-high heat. The duck is done at 165°F (74°C) inside.",
+        "Add the garlic, chillies, and scallion.",
+        "Fry, stirring, for 15 seconds until fragrant.",
+        "Add the duck meat, bean sprouts, and parsley.",
+        "Stir until the duck meat changes color.",
         "Add the rice, and then the soy sauce, habanero, black pepper, and salt. Stir until well-mixed.",
         "Serve hot."
       ],
@@ -4446,7 +4643,9 @@
         "breakfast",
         "main-meal",
         "gluten-free",
-        "easy",
+        "dairy-free",
+        "high-protein",
+        "medium",
         "budget",
         "american"
       ],
@@ -4525,7 +4724,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "gluten-free",
+        "high-protein",
+        "medium",
         "moderate",
         "chinese"
       ],
@@ -4597,9 +4798,13 @@
         }
       ],
       "steps": [
-        "Add the bacon drippings/vegetable oil to a skillet over high heat. Add the beef to the skillet, and brown the meat on all sides. Do not cook completely through. Transfer meat to the slow cooker.",
-        "In a skillet, melt the butter. Add the onions, and fry until they begin to become transparent.",
-        "Combine all the ingredients except the meat in the skillet. Simmer for 10 minutes.",
+        "Add the bacon drippings/vegetable oil to a skillet over high heat.",
+        "Add the beef to the skillet, and brown the meat on all sides. Do not cook completely through.",
+        "Transfer meat to the slow cooker.",
+        "In a skillet, melt the butter.",
+        "Add the onions, and fry until they begin to become transparent.",
+        "Combine all the ingredients except the meat in the skillet.",
+        "Simmer for 10 minutes.",
         "Combine all ingredients in a slow cooker. Stir together.",
         "Cook on low for 2½–3½ hours.",
         "Serve with mashed potatoes and honey carrots."
@@ -4618,8 +4823,11 @@
         "lunch",
         "main-meal",
         "vegetarian",
-        "easy",
-        "moderate",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "medium",
+        "budget",
         "indian"
       ],
       "ingredients": [
@@ -4653,7 +4861,8 @@
         "Heat vegetable oil in a large pan or wok over medium heat.",
         "Add the finely chopped onion and sauté until it turns translucent.",
         "Add the leftover cooked rice to the pan and stir well.",
-        "Season with salt according to your taste. Be cautious as the rice might already have some salt from the previous meal.",
+        "Season with salt according to the taste.",
+        "Be cautious as the rice might already have some salt from the previous meal.",
         "Cook for a few minutes, stirring occasionally, until the rice is heated through and starts to turn slightly crispy.",
         "Once done, remove from heat.",
         "Garnish with fresh cilantro leaves if desired."
@@ -4671,9 +4880,11 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "high-protein",
         "medium",
         "moderate",
-        "other"
+        "european"
       ],
       "ingredients": [
         {
@@ -4738,9 +4949,12 @@
         }
       ],
       "steps": [
-        "Heat the lard in a pot, then add the pork and sauté it for about 3 minutes. Take out the pork and set it aside on a plate.",
+        "Heat the lard in a pot, then add the pork and sauté it for about 3 minutes.",
+        "Take out the pork and set it aside on a plate.",
         "Put the finely chopped onions into the casserole and fry until they become golden brown.",
-        "Stir in the tomato purée and paprika, and add some water or stock. Then add the meat, bay leaves and garlic; pour in more water or stock and season with salt and pepper. Reduce the heat and cook for about 30 minutes.",
+        "Stir in the tomato purée and paprika, and add some water or stock.",
+        "Add the meat, bay leaves and garlic; pour in more water or stock and season with salt and pepper.",
+        "Reduce the heat and cook for about 30 minutes.",
         "Add the sauerkraut, and cook for another 40 minutes.",
         "Add the sour cream, mix it thoroughly with the goulash, and serve it on warm plates."
       ],
@@ -4757,9 +4971,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "vegetarian",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
         "american"
       ],
       "ingredients": [
@@ -4771,7 +4987,7 @@
         {
           "qty": 1.0,
           "unit": "lb",
-          "item": "ground meat (either beef, lamb, or pork) (500 g)"
+          "item": "ground meat (either beef, lamb, or pork)"
         },
         {
           "qty": 6.0,
@@ -4800,7 +5016,7 @@
         }
       ],
       "steps": [
-        "Cook the rice.",
+        "Cook the rice. Ground meat is done at 160°F (71°C) inside.",
         "Turn on the oven to preheat at 390°F (200°C), while placing a baking dish with the bottom covered in oil (or water or thin tomato sauce) inside.",
         "Cut out the stems and the seeds of the peppers so that the peppers form a cup.",
         "Mix the rice, the egg and the ground beef and spice everything with salt, pepper and paprika.",
@@ -4821,8 +5037,9 @@
         "breakfast",
         "main-meal",
         "gluten-free",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "splurge",
         "american"
       ],
       "ingredients": [
@@ -4885,7 +5102,8 @@
       "steps": [
         "Fry bacon until crisp, remove and set aside.",
         "Sauté onions, garlic, and peppers in bacon grease, add lime juice and hot sauce and set aside.",
-        "Prepare grits per the directions on box. Add cheese and butter when done cooking to allow for them to melt, then set aside.",
+        "Prepare grits per the directions on box.",
+        "Add cheese and butter when done cooking to allow for them to melt, then set aside.",
         "Stir when done melting.",
         "Sauté the shrimp until they turn pink, about 2–3 minutes.",
         "Place the grits and cheese in large serving container and place the shrimp down the center of the container."
@@ -4903,8 +5121,10 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "hard",
+        "budget",
         "french"
       ],
       "ingredients": [
@@ -4970,9 +5190,16 @@
         }
       ],
       "steps": [
-        "Cut the onion into half moons and brown it in a bit of olive oil. Make it nice and crispy. Once it's done, put it aside in a bowl and squirt a bit of lemon juice on it.",
-        "As the onion is cooking, wash the lettuce thoroughly. Soak it several times. Nothing is worse than gritty lettuce in a salad. Break the lettuce into bite-size pieces and drop them in your spinner under running water. Once it's washed, spin it until it's dry. Wet lettuce will dilute the dressing.",
-        "Once the lettuce is dry, put it in a bowl. Add the onions, walnuts, orange and cheese.",
+        "Cut the onion into half moons and brown it in a bit of olive oil.",
+        "Make it nice and crispy.",
+        "Once it's done, put it aside in a bowl and squirt a bit of lemon juice on it.",
+        "As the onion is cooking, wash the lettuce thoroughly.",
+        "Soak it several times. Nothing is worse than gritty lettuce in a salad.",
+        "Break the lettuce into bite-size pieces and drop them in the spinner under running water.",
+        "Once it's washed, spin it until it's dry.",
+        "Wet lettuce will dilute the dressing.",
+        "Once the lettuce is dry, put it in a bowl.",
+        "Add the onions, walnuts, orange and cheese.",
         "To make the dressing, just mix the ingredients in a jar and give them a good shake.",
         "Toss everything together in a big bowl and serve."
       ],
@@ -4989,6 +5216,7 @@
       "tags": [
         "dinner",
         "main-meal",
+        "high-protein",
         "medium",
         "moderate",
         "american"
@@ -5051,7 +5279,7 @@
         }
       ],
       "steps": [
-        "Heat oven to 425°F.",
+        "Heat oven to 425°F (220°C).",
         "Prepare pie crusts as directed on package for two-crust pie using 9-inch pie pan.",
         "In a medium saucepan, melt margarine over medium heat.",
         "Add onion; cook 2 minutes or until tender.",

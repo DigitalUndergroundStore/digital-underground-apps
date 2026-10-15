@@ -12,10 +12,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-comfort",
-        "high-protein",
-        "moderate",
         "medium",
+        "budget",
+        "collection-comfort",
         "italian"
       ],
       "ingredients": [
@@ -70,7 +69,7 @@
         "Brown sausage in oil 8 minutes; add minced garlic 1 minute.",
         "Stir in marinara and oregano; simmer 5 minutes.",
         "Fold pasta, ricotta, and half the mozzarella into the sauce.",
-        "Transfer to a baking dish, top with remaining cheese, and bake at 375°F 20 minutes until bubbly."
+        "Transfer to a baking dish, top with remaining cheese, and bake at 375°F (190°C) 20 minutes until bubbly."
       ]
     },
     {
@@ -82,9 +81,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-comfort",
-        "moderate",
+        "high-protein",
         "medium",
+        "budget",
+        "collection-comfort",
         "american"
       ],
       "ingredients": [
@@ -141,10 +141,10 @@
       ],
       "steps": [
         "Dice chicken and vegetables.",
-        "Sear chicken in butter 10 minutes until browned.",
+        "Sear chicken in butter 10 minutes until browned. The chicken is done at 165°F (74°C) inside.",
         "Stir in flour 1 minute; whisk in broth and milk until thick, 6 minutes.",
         "Add peas, carrots, thyme, and salt; simmer 5 minutes.",
-        "Top with pastry, slit vents, and bake at 400°F 15 minutes until golden."
+        "Top with pastry, slit vents, and bake at 400°F (205°C) 15 minutes until golden."
       ]
     },
     {
@@ -156,10 +156,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-comfort",
         "high-protein",
-        "budget",
         "medium",
+        "budget",
+        "collection-comfort",
         "american"
       ],
       "ingredients": [
@@ -217,7 +217,7 @@
       "steps": [
         "Peel and cube potatoes; boil 18 minutes until tender.",
         "Mix beef, breadcrumbs, egg, grated onion, Worcestershire, and half the ketchup.",
-        "Shape loaf on a sheet pan; bake at 375°F 35 minutes.",
+        "Shape loaf on a sheet pan; bake at 375°F (190°C) 35 minutes. Ground meat is done at 160°F (71°C) inside.",
         "Brush top with remaining ketchup; bake 10 minutes more.",
         "Mash potatoes with butter, milk, and salt; slice meatloaf and serve."
       ]
@@ -231,10 +231,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-comfort",
         "high-protein",
-        "moderate",
         "easy",
+        "moderate",
+        "collection-comfort",
         "italian"
       ],
       "ingredients": [
@@ -286,7 +286,7 @@
       ],
       "steps": [
         "Cook pasta in salted water 9 minutes; reserve 0.5 cup pasta water.",
-        "Slice chicken; sear in 1 tbsp butter 8 minutes until cooked through.",
+        "Slice chicken; sear in 1 tbsp butter 8 minutes until cooked through. The chicken is done at 165°F (74°C) inside.",
         "Melt remaining butter; sauté garlic 30 seconds.",
         "Add cream and simmer 3 minutes; stir in Parmesan until silky.",
         "Toss pasta, chicken, pepper, salt, and splash of pasta water; garnish with parsley."
@@ -301,10 +301,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-comfort",
         "vegetarian",
+        "medium",
         "budget",
-        "easy",
+        "collection-comfort",
         "american"
       ],
       "ingredients": [
@@ -359,7 +359,7 @@
         "Make roux with butter and flour 2 minutes.",
         "Whisk in milk; simmer 6 minutes until thick.",
         "Stir in cheeses, mustard, paprika, and salt off heat.",
-        "Combine with pasta; bake at 375°F 20 minutes until browned."
+        "Combine with pasta; bake at 375°F (190°C) 20 minutes until browned."
       ]
     },
     {
@@ -371,9 +371,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-comfort",
+        "high-protein",
+        "medium",
         "budget",
-        "easy",
+        "collection-comfort",
         "american"
       ],
       "ingredients": [
@@ -428,7 +429,7 @@
         "Melt butter; whisk in flour 1 minute, then milk until thick, 5 minutes.",
         "Fold in tuna, peas, cheese, and salt.",
         "Spread in a dish; top with breadcrumbs.",
-        "Bake at 375°F 18 minutes until crisp on top."
+        "Bake at 375°F (190°C) 18 minutes until crisp on top."
       ]
     },
     {
@@ -440,11 +441,12 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-one-pan",
-        "high-protein",
         "gluten-free",
-        "moderate",
-        "easy",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "collection-one-pan",
         "american"
       ],
       "ingredients": [
@@ -497,8 +499,8 @@
       "steps": [
         "Halve potatoes and trim beans.",
         "Toss potatoes with oil, oregano, garlic, salt, and pepper on a sheet pan.",
-        "Roast at 425°F 15 minutes; nestle chicken and lemon slices among potatoes.",
-        "Roast 18 minutes until chicken reaches 165°F.",
+        "Roast at 425°F (220°C) 15 minutes; nestle chicken and lemon slices among potatoes.",
+        "Roast 18 minutes until chicken reaches 165°F (74°C).",
         "Scatter green beans on the pan; roast 5 minutes more and serve."
       ]
     },
@@ -511,9 +513,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-one-pan",
-        "budget",
+        "gluten-free",
+        "dairy-free",
         "easy",
+        "budget",
+        "collection-one-pan",
         "italian"
       ],
       "ingredients": [
@@ -561,7 +565,7 @@
       "steps": [
         "Slice sausage, peppers, and onion.",
         "Toss with oil, seasoning, garlic, salt, and flakes on a sheet pan.",
-        "Roast at 425°F 22 minutes, stirring once halfway.",
+        "Roast at 425°F (220°C) 22 minutes, stirring once halfway.",
         "Broil 2 minutes for char if desired.",
         "Serve straight from the pan within 5 minutes."
       ]
@@ -575,10 +579,11 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "high-protein",
+        "hard",
+        "budget",
         "collection-slow-cooker",
-        "dairy-free",
-        "moderate",
-        "easy",
         "indian"
       ],
       "ingredients": [
@@ -636,7 +641,7 @@
       "steps": [
         "Dice onion; mince garlic and ginger.",
         "Stir yogurt with tikka paste and salt.",
-        "Layer onion, chicken, tomatoes, and aromatics in the slow cooker.",
+        "Layer onion, chicken, tomatoes, and aromatics in the slow cooker. The chicken is done at 165°F (74°C) inside.",
         "Spoon yogurt mixture over chicken.",
         "Cook on low 5 hours; garnish with cilantro and serve with rice."
       ]
@@ -650,11 +655,12 @@
       "tags": [
         "dinner",
         "main-meal",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "splurge",
         "collection-one-pan",
         "collection-texmex",
-        "high-protein",
-        "moderate",
-        "easy",
         "mexican"
       ],
       "ingredients": [
@@ -716,10 +722,12 @@
       "tags": [
         "lunch",
         "main-meal",
-        "collection-slow-cooker",
+        "gluten-free",
+        "dairy-free",
         "high-protein",
-        "budget",
-        "easy",
+        "hard",
+        "moderate",
+        "collection-slow-cooker",
         "american"
       ],
       "ingredients": [
@@ -770,7 +778,7 @@
         }
       ],
       "steps": [
-        "Brown beef with onion 10 minutes; drain excess fat.",
+        "Brown beef with onion 10 minutes; drain excess fat. Ground meat is done at 160°F (71°C) inside.",
         "Add garlic, chili powder, and cumin; cook 1 minute.",
         "Transfer to slow cooker with beans, tomatoes, broth, and salt.",
         "Cook on low 6 hours.",
@@ -786,11 +794,13 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "collection-bbq",
         "collection-grill",
-        "high-protein",
-        "budget",
-        "easy",
         "american"
       ],
       "ingredients": [
@@ -838,7 +848,7 @@
       "steps": [
         "Pat chicken dry; season with paprika, garlic powder, and salt.",
         "Whisk sauce, honey, and vinegar.",
-        "Grill or bake chicken at 400°F 25 minutes, basting with sauce every 8 minutes.",
+        "Grill or bake chicken at 400°F (205°C) 25 minutes, basting with sauce every 8 minutes. The chicken is done at 165°F (74°C) inside.",
         "Glaze once more; cook 5 minutes until sticky.",
         "Rest 3 minutes, garnish with scallions, and serve."
       ]
@@ -852,10 +862,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-bbq",
+        "dairy-free",
         "high-protein",
+        "hard",
         "moderate",
-        "medium",
+        "collection-bbq",
         "american"
       ],
       "ingredients": [
@@ -901,8 +912,8 @@
         }
       ],
       "steps": [
-        "Rub brisket with paprika, garlic powder, salt, and brown sugar.",
-        "Slow cook with broth at 300°F 6 hours covered until tender.",
+        "Rub brisket with paprika, garlic powder, salt, and brown sugar. Ground meat is done at 160°F (71°C) inside.",
+        "Slow cook with broth at 300°F (150°C) 6 hours covered until tender.",
         "Shred meat; toss with barbecue sauce.",
         "Toast buns 3 minutes.",
         "Pile brisket on buns and serve within 10 minutes."
@@ -917,11 +928,13 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "moderate",
         "collection-bbq",
         "collection-grill",
-        "high-protein",
-        "moderate",
-        "easy",
         "american"
       ],
       "ingredients": [
@@ -963,7 +976,7 @@
       ],
       "steps": [
         "Rub chops with oil, paprika, sugar, salt, and pepper.",
-        "Grill over medium heat 6 minutes per side.",
+        "Grill over medium heat 6 minutes per side. The pork is done at 145°F (63°C) inside; rest 3 minutes.",
         "Brush with barbecue sauce; grill 2 minutes more.",
         "Rest 3 minutes before serving.",
         "Serve with extra sauce on the side."
@@ -978,10 +991,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-bbq",
+        "dairy-free",
         "high-protein",
+        "medium",
         "budget",
-        "easy",
+        "collection-bbq",
         "american"
       ],
       "ingredients": [
@@ -1033,7 +1047,7 @@
       ],
       "steps": [
         "Mix beef, breadcrumbs, egg, garlic, paprika, and salt.",
-        "Roll 18 meatballs; bake at 400°F 15 minutes.",
+        "Roll 18 meatballs; bake at 400°F (205°C) 15 minutes. Ground meat is done at 160°F (71°C) inside.",
         "Simmer sauce and brown sugar 3 minutes.",
         "Toss meatballs in sauce 5 minutes until glazed.",
         "Serve hot as sliders or over rice."
@@ -1048,11 +1062,14 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "easy",
+        "budget",
         "collection-bbq",
         "collection-grill",
-        "vegetarian",
-        "budget",
-        "easy",
         "american"
       ],
       "ingredients": [
@@ -1101,81 +1118,6 @@
       ]
     },
     {
-      "id": "r219",
-      "name": "Hearty Vegetable Minestrone",
-      "minutes": 45,
-      "servings": 8,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "collection-soup",
-        "vegetarian",
-        "budget",
-        "easy",
-        "italian"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "yellow onion"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "carrot"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "celery stalk"
-        },
-        {
-          "qty": 3,
-          "unit": "clove",
-          "item": "garlic"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "cannellini beans"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "diced tomatoes"
-        },
-        {
-          "qty": 6,
-          "unit": "cup",
-          "item": "vegetable broth"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "small pasta"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "italian seasoning"
-        }
-      ],
-      "steps": [
-        "Dice onion, carrot, and celery.",
-        "Sauté vegetables in oil 8 minutes; add garlic 1 minute.",
-        "Pour in broth, tomatoes, beans, and seasoning; simmer 15 minutes.",
-        "Add pasta; cook 9 minutes until tender.",
-        "Adjust salt and serve with olive oil drizzle."
-      ]
-    },
-    {
       "id": "r220",
       "name": "Classic Chicken Noodle Soup",
       "minutes": 40,
@@ -1184,10 +1126,11 @@
       "tags": [
         "lunch",
         "main-meal",
-        "collection-soup",
+        "dairy-free",
         "high-protein",
-        "budget",
-        "easy",
+        "medium",
+        "moderate",
+        "collection-soup",
         "american"
       ],
       "ingredients": [
@@ -1239,86 +1182,10 @@
       ],
       "steps": [
         "Dice vegetables.",
-        "Simmer chicken in broth with vegetables, bay, thyme, and salt 18 minutes.",
+        "Simmer chicken in broth with vegetables, bay, thyme, and salt 18 minutes. The chicken is done at 165°F (74°C) inside.",
         "Remove chicken; shred and return to pot.",
         "Add noodles; cook 8 minutes until tender.",
         "Discard bay leaves and serve hot."
-      ]
-    },
-    {
-      "id": "r221",
-      "name": "Spicy Black Bean Soup",
-      "minutes": 35,
-      "servings": 6,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "collection-soup",
-        "vegetarian",
-        "vegan",
-        "budget",
-        "easy",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "can",
-          "item": "black beans"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "yellow onion"
-        },
-        {
-          "qty": 3,
-          "unit": "clove",
-          "item": "garlic"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "bell pepper"
-        },
-        {
-          "qty": 4,
-          "unit": "cup",
-          "item": "vegetable broth"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "cumin"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "chili powder"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "lime juice"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "olive oil"
-        }
-      ],
-      "steps": [
-        "Dice onion and pepper; mince garlic.",
-        "Sauté aromatics in oil 6 minutes.",
-        "Add beans, broth, cumin, chili, and salt; simmer 12 minutes.",
-        "Blend half the soup smooth; return to pot.",
-        "Finish with lime juice and serve."
       ]
     },
     {
@@ -1330,10 +1197,11 @@
       "tags": [
         "lunch",
         "main-meal",
-        "collection-soup",
+        "dairy-free",
         "high-protein",
-        "moderate",
         "medium",
+        "moderate",
+        "collection-soup",
         "american"
       ],
       "ingredients": [
@@ -1400,7 +1268,8 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -1423,22 +1292,22 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "beef consommé, bouillon cube equivalent, or additional roast beef (~2 cups / 16 oz / 470 ml)"
+          "item": "beef consommé, bouillon cube equivalent, or additional roast beef"
         },
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "french onion soup (~2 cups / 16 oz / 470 ml)"
+          "item": "french onion soup"
         },
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "butter (2 sticks / 250 g / 8.8 oz)"
+          "item": "butter"
         },
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "beer (optional) (16 oz / 470 ml)"
+          "item": "beer (optional)"
         },
         {
           "qty": null,
@@ -1452,9 +1321,12 @@
         }
       ],
       "steps": [
-        "Combine all the ingredients except the rolls in a slow cooker or crock pot. Let the mixture simmer for at least six hours. This step is critical because it makes the meat tender.",
+        "Combine all the ingredients except the rolls in a slow cooker or crock pot.",
+        "Let the mixture simmer for at least six hours. This step is critical because it makes the meat tender.",
         "Serve beef on split rolls.",
-        "You can either pre-dip the sandwich, or serve with a bowl of meat drippings. When serving the drippings separately, remove the beef shreds from the juices and serve with a small bowl of meat drippings on the side. Dip the sandwiches in the drippings as you eat."
+        "You can either pre-dip the sandwich, or serve with a bowl of meat drippings.",
+        "When serving the drippings separately, remove the beef shreds from the juices and serve with a small bowl of meat drippings on the side.",
+        "Dip the sandwiches in the drippings as you eat."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Au_Jus_Sandwich",
       "sourceName": "Wikibooks Cookbook",
@@ -1469,10 +1341,12 @@
       "tags": [
         "lunch",
         "main-meal",
-        "collection-soup",
+        "gluten-free",
+        "dairy-free",
         "high-protein",
-        "budget",
         "medium",
+        "budget",
+        "collection-soup",
         "italian"
       ],
       "ingredients": [
@@ -1539,9 +1413,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-pub",
-        "moderate",
+        "dairy-free",
+        "high-protein",
         "medium",
+        "budget",
+        "collection-pub",
         "british"
       ],
       "ingredients": [
@@ -1587,81 +1463,11 @@
         }
       ],
       "steps": [
-        "Cut potatoes into thick fries; toss with oil and salt; roast at 425°F 25 minutes.",
+        "Cut potatoes into thick fries; toss with oil and salt; roast at 425°F (220°C) 25 minutes.",
         "Whisk flour, baking powder, and beer into batter.",
         "Pat fish dry; dip in batter and place on a greased rack.",
         "Bake fish alongside fries 12 minutes until crisp.",
         "Serve with malt vinegar immediately."
-      ]
-    },
-    {
-      "id": "r226",
-      "name": "Shepherd's Pie Pub Style",
-      "minutes": 55,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "collection-pub",
-        "high-protein",
-        "moderate",
-        "medium",
-        "british"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "ground lamb"
-        },
-        {
-          "qty": 2,
-          "unit": "lb",
-          "item": "russet potatoes"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "yellow onion"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "frozen peas"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "tomato paste"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "beef broth"
-        },
-        {
-          "qty": 4,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "whole milk"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "salt"
-        }
-      ],
-      "steps": [
-        "Boil potatoes 18 minutes; mash with butter, milk, and half the salt.",
-        "Brown lamb with onion 10 minutes; stir in tomato paste and broth.",
-        "Simmer 8 minutes; fold in peas.",
-        "Spread lamb in a baking dish; top with mashed potatoes.",
-        "Bake at 400°F 15 minutes until golden."
       ]
     },
     {
@@ -1673,9 +1479,11 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "moderate",
         "collection-pub",
-        "budget",
-        "easy",
         "british"
       ],
       "ingredients": [
@@ -1732,10 +1540,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-pub",
         "high-protein",
-        "moderate",
         "easy",
+        "splurge",
+        "collection-pub",
         "british"
       ],
       "ingredients": [
@@ -1797,10 +1605,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-pub",
+        "dairy-free",
         "high-protein",
+        "medium",
         "budget",
-        "easy",
+        "collection-pub",
         "british"
       ],
       "ingredients": [
@@ -1846,10 +1655,10 @@
         }
       ],
       "steps": [
-        "Bake fries per package 18 minutes at 425°F.",
+        "Bake fries per package 18 minutes at 425°F (220°C).",
         "Season flour with paprika and salt; beat eggs.",
         "Coat tenders in flour, egg, then panko.",
-        "Bake on a rack 15 minutes until crisp and 165°F inside.",
+        "Bake on a rack 15 minutes until crisp and 165°F (74°C) inside.",
         "Serve with fries and ranch."
       ]
     },
@@ -1862,10 +1671,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-pub",
         "vegetarian",
-        "moderate",
         "medium",
+        "budget",
+        "collection-pub",
         "british"
       ],
       "ingredients": [
@@ -1920,7 +1729,7 @@
         "Sauté vegetables in butter 10 minutes.",
         "Stir in flour 1 minute; add stout and broth; simmer 12 minutes.",
         "Spoon filling into a dish; cover with pastry and brush with butter.",
-        "Bake at 400°F 20 minutes until puffed and golden."
+        "Bake at 400°F (205°C) 20 minutes until puffed and golden."
       ]
     },
     {
@@ -1932,10 +1741,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-texmex",
+        "gluten-free",
         "high-protein",
-        "moderate",
-        "easy",
+        "medium",
+        "budget",
+        "collection-texmex",
         "mexican"
       ],
       "ingredients": [
@@ -1986,11 +1796,13 @@
         }
       ],
       "steps": [
-        "Heat the oven to 375°F. Dice the onion and drain the beans.",
+        "Heat the oven to 375°F (190°C).",
+        "Dice the onion and drain the beans.",
         "Shred the chicken and toss it with half the enchilada sauce, the cumin, and the salt.",
         "Layer the tortillas, chicken, beans, onion, and half the cheese in a baking dish.",
         "Pour the remaining sauce on top and sprinkle with the rest of the cheese.",
-        "Bake 22 minutes until bubbly. Serve with the sour cream."
+        "Bake 22 minutes until bubbly.",
+        "Serve with the sour cream."
       ]
     },
     {
@@ -2002,10 +1814,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-texmex",
+        "gluten-free",
         "high-protein",
-        "budget",
         "easy",
+        "budget",
+        "collection-texmex",
         "mexican"
       ],
       "ingredients": [
@@ -2056,7 +1869,7 @@
         }
       ],
       "steps": [
-        "Brown beef with chili powder and salt 8 minutes.",
+        "Brown beef with chili powder and salt 8 minutes. Ground meat is done at 160°F (71°C) inside.",
         "Warm beans and corn 4 minutes.",
         "Divide rice among bowls.",
         "Top with beef, beans, corn, salsa, and cheese.",
@@ -2072,10 +1885,11 @@
       "tags": [
         "lunch",
         "main-meal",
-        "vegan",
         "vegetarian",
-        "hard",
-        "moderate",
+        "vegan",
+        "dairy-free",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -2143,10 +1957,12 @@
       "steps": [
         "Bring the water to a boil.",
         "While it is heating, use a heavy pan or skillet to sauté the garlic and bulghur in the oil on medium-high heat for 2 minutes, stirring frequently.",
-        "Add the boiling water to the skillet. Return to a boil, cover, and reduce heat to low.",
+        "Add the boiling water to the skillet.",
+        "Return to a boil, cover, and reduce heat to low.",
         "Simmer for 15 to 20 minutes, until all of the water is absorbed and the bulghur is soft but still chewy.",
-        "When the bulghur is ready, stir in the scallions, carrots, parsley, tahini, tomato paste, soy sauce, mustard, and pepper. With moistened hands, form the bulghur mixture into 6 to 8 burgers.",
-        "Cook the patties in a lightly-oiled heavy skillet on medium-low heat for about 10 minutes, flipping the burgers once when the outside is crunchy, or bake on an oiled baking sheet for 20 minutes at 375 °F (190 °C)."
+        "When the bulghur is ready, stir in the scallions, carrots, parsley, tahini, tomato paste, soy sauce, mustard, and pepper.",
+        "With moistened hands, form the bulghur mixture into 6 to 8 burgers.",
+        "Cook the patties in a lightly-oiled heavy skillet on medium-low heat for about 10 minutes, flipping the burgers once when the outside is crunchy, or bake on an oiled baking sheet for 20 minutes at 375°F (190°C)."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bulgur_Burgers",
       "sourceName": "Wikibooks Cookbook",
@@ -2161,10 +1977,12 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-texmex",
+        "gluten-free",
+        "dairy-free",
         "high-protein",
-        "moderate",
         "easy",
+        "splurge",
+        "collection-texmex",
         "mexican"
       ],
       "ingredients": [
@@ -2226,11 +2044,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-texmex",
-        "high-protein",
         "gluten-free",
-        "moderate",
+        "high-protein",
         "medium",
+        "budget",
+        "collection-texmex",
         "mexican"
       ],
       "ingredients": [
@@ -2282,10 +2100,10 @@
       ],
       "steps": [
         "Halve peppers and remove seeds.",
-        "Brown turkey with cumin, chili, and salt 8 minutes.",
+        "Brown turkey with cumin, chili, and salt 8 minutes. The turkey is done at 165°F (74°C) inside.",
         "Stir in rice, tomatoes, and corn; cook 5 minutes.",
         "Stuff peppers; top with cheese.",
-        "Bake at 375°F 28 minutes until peppers are tender."
+        "Bake at 375°F (190°C) 28 minutes until peppers are tender."
       ]
     },
     {
@@ -2297,10 +2115,12 @@
       "tags": [
         "dinner",
         "main-meal",
-        "collection-texmex",
         "vegetarian",
-        "budget",
+        "gluten-free",
+        "high-protein",
         "easy",
+        "budget",
+        "collection-texmex",
         "mexican"
       ],
       "ingredients": [
@@ -2367,11 +2187,12 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
+        "dairy-free",
+        "easy",
+        "budget",
         "collection-asian",
         "takeout-style",
-        "vegetarian",
-        "budget",
-        "easy",
         "chinese"
       ],
       "ingredients": [
@@ -2429,7 +2250,8 @@
       "steps": [
         "Cook the noodles 4 minutes, then drain.",
         "Slice the pepper. Whisk the soy sauce, sesame oil, rice vinegar, honey, and ginger.",
-        "Heat the vegetable oil in a wok over high heat. Stir-fry the broccoli and pepper for 5 minutes.",
+        "Heat the vegetable oil in a wok over high heat.",
+        "Stir-fry the broccoli and pepper for 5 minutes.",
         "Add the noodles and sauce and toss for 4 minutes over high heat.",
         "Slice the scallions, scatter them over, and serve."
       ]
@@ -2443,11 +2265,12 @@
       "tags": [
         "dinner",
         "main-meal",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "moderate",
         "collection-asian",
         "takeout-style",
-        "high-protein",
-        "moderate",
-        "easy",
         "chinese"
       ],
       "ingredients": [
@@ -2504,7 +2327,7 @@
       ],
       "steps": [
         "Cube chicken; season with salt.",
-        "Sear chicken in oil 8 minutes until browned.",
+        "Sear chicken in oil 8 minutes until browned. The chicken is done at 165°F (74°C) inside.",
         "Whisk juice, soy, honey, cornstarch, and garlic.",
         "Pour sauce over chicken; simmer 6 minutes until glossy.",
         "Garnish with scallions and serve over rice."
@@ -2519,11 +2342,13 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "splurge",
         "collection-asian",
         "takeout-style",
-        "high-protein",
-        "moderate",
-        "medium",
         "chinese"
       ],
       "ingredients": [
@@ -2590,11 +2415,13 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "medium",
+        "budget",
         "collection-asian",
         "takeout-style",
-        "vegetarian",
-        "moderate",
-        "medium",
         "chinese"
       ],
       "ingredients": [
@@ -2645,8 +2472,10 @@
         }
       ],
       "steps": [
-        "Heat the oven to 425°F. Cut the cauliflower into florets.",
-        "Toss the florets with the oil, then with the cornstarch. Roast 15 minutes, until crisp at the edges.",
+        "Heat the oven to 425°F (220°C).",
+        "Cut the cauliflower into florets.",
+        "Toss the florets with the oil, then with the cornstarch.",
+        "Roast 15 minutes, until crisp at the edges.",
         "Mince the garlic. Simmer the soy sauce, vinegar, hoisin, sugar, and garlic for 4 minutes.",
         "Toss the cauliflower in the sauce for 3 minutes over low heat.",
         "Slice the scallions, scatter them over, and serve."
@@ -2661,11 +2490,12 @@
       "tags": [
         "dinner",
         "main-meal",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
         "collection-asian",
         "takeout-style",
-        "high-protein",
-        "budget",
-        "easy",
         "chinese"
       ],
       "ingredients": [
@@ -2716,7 +2546,7 @@
         }
       ],
       "steps": [
-        "Brown beef 6 minutes; drain excess fat.",
+        "Brown beef 6 minutes; drain excess fat. Ground meat is done at 160°F (71°C) inside.",
         "Stir in soy, sugar, garlic, ginger, and gochujang 4 minutes.",
         "Drizzle sesame oil.",
         "Divide rice among bowls; top with beef.",
@@ -2732,11 +2562,13 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
         "collection-asian",
         "takeout-style",
-        "high-protein",
-        "moderate",
-        "medium",
         "chinese"
       ],
       "ingredients": [
@@ -2788,7 +2620,7 @@
       ],
       "steps": [
         "Cube pork; season with salt.",
-        "Stir-fry pork in oil 6 minutes until browned.",
+        "Stir-fry pork in oil 6 minutes until browned. The pork is done at 145°F (63°C) inside; rest 3 minutes.",
         "Whisk vinegar, ketchup, sugar, and cornstarch with 0.25 cup water.",
         "Add sauce, pineapple, and sliced pepper; simmer 6 minutes.",
         "Serve over rice within 5 minutes."
@@ -2803,10 +2635,10 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "collection-breakfast",
         "high-protein",
-        "moderate",
-        "easy",
+        "medium",
+        "budget",
+        "collection-breakfast",
         "american"
       ],
       "ingredients": [
@@ -2856,7 +2688,7 @@
         "Whisk eggs, milk, cream cheese, salt, and pepper.",
         "Layer bagels, bacon, and cheese in a dish.",
         "Pour egg mixture over; soak 10 minutes.",
-        "Bake at 375°F 25 minutes until set."
+        "Bake at 375°F (190°C) 25 minutes until set."
       ]
     },
     {
@@ -2868,10 +2700,11 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "collection-breakfast",
         "vegetarian",
-        "budget",
+        "high-protein",
         "easy",
+        "budget",
+        "collection-breakfast",
         "greek"
       ],
       "ingredients": [
@@ -2933,10 +2766,10 @@
       "tags": [
         "lunch",
         "main-meal",
-        "collection-lunch",
         "high-protein",
-        "moderate",
         "easy",
+        "moderate",
+        "collection-lunch",
         "italian"
       ],
       "ingredients": [
@@ -2982,7 +2815,7 @@
         }
       ],
       "steps": [
-        "Cook bacon 6 minutes until crisp.",
+        "Cook bacon 6 minutes until crisp. The turkey is done at 165°F (74°C) inside.",
         "Slice rolls and tomatoes.",
         "Spread mayo on rolls; layer turkey, cheese, bacon, lettuce, and tomato.",
         "Season with salt.",
@@ -2998,10 +2831,10 @@
       "tags": [
         "lunch",
         "main-meal",
-        "collection-lunch",
         "high-protein",
-        "budget",
         "easy",
+        "moderate",
+        "collection-lunch",
         "greek"
       ],
       "ingredients": [
@@ -3068,11 +2901,12 @@
       "tags": [
         "lunch",
         "main-meal",
-        "collection-lunch",
         "vegetarian",
         "vegan",
-        "budget",
+        "dairy-free",
         "easy",
+        "budget",
+        "collection-lunch",
         "canadian"
       ],
       "ingredients": [

@@ -12,8 +12,10 @@
       "tags": [
         "breakfast",
         "main-meal",
+        "vegetarian",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -82,8 +84,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
         "canadian"
       ],
       "ingredients": [
@@ -110,7 +114,7 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "whole kernel corn, drained, or creamed sweet corn with sauce (15 oz)"
+          "item": "whole kernel corn, drained, or creamed sweet corn with sauce"
         },
         {
           "qty": 2.0,
@@ -139,11 +143,14 @@
         }
       ],
       "steps": [
-        "Boil potatoes in lightly salted water until soft, drain. Mash potatoes, adding 2 tbsp butter and just enough milk to achieve a spreadable consistency. Set aside.",
-        "Brown ground beef with onions and peppers. Drain fat and put ground beef mixture in bottom of casserole dish.",
+        "Boil potatoes in lightly salted water until soft, drain.",
+        "Mash potatoes, adding 2 tbsp butter and just enough milk to achieve a spreadable consistency. Set aside.",
+        "Brown ground beef with onions and peppers. Ground meat is done at 160°F (71°C) inside.",
+        "Drain fat and put ground beef mixture in bottom of casserole dish.",
         "Mix creamed corn and whole kernel corn, then spread over beef.",
-        "Spread the mashed potatoes across the top to form a 'crust'. Lightly sprinkle with paprika, and salt/pepper to taste, and make tracks with a fork, if desired.",
-        "Bake uncovered at 400°F until the potatoes are golden brown (approximately 30 minutes).",
+        "Spread the mashed potatoes across the top to form a 'crust'.",
+        "Lightly sprinkle with paprika, and salt/pepper to taste, and make tracks with a fork, if desired.",
+        "Bake uncovered at 400°F (205°C) until the potatoes are golden brown (approximately 30 minutes).",
         "Serve hot with a generous portion of sliced chilled pickled beets."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:French_Canadian_Shepherd's_Pie_(P%C3%A2t%C3%A9_Chinois)",
@@ -159,7 +166,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -201,11 +210,14 @@
         }
       ],
       "steps": [
-        "Season ribs with the Barbecue Rub. Refrigerate for at least 1 hour.",
-        "Place applewood in the firebox of a 250°F smoker or in the coal area of a 250°F charcoal grill set for indirect heat.",
-        "Combine remaining ingredients and bring to a boil over high heat until reduced by ⅓. Cover tightly and set aside.",
+        "Season ribs with the Barbecue Rub.",
+        "Refrigerate for at least 1 hour.",
+        "Place applewood in the firebox of a 250°F (120°C) smoker or in the coal area of a 250°F (120°C) charcoal grill set for indirect heat.",
+        "Combine remaining ingredients and bring to a boil over high heat until reduced by ⅓.",
+        "Cover tightly and set aside.",
         "Place ribs in smoker/on top of grill grate and cook, brushing often with preserve mixture, for 5–6 hours.",
-        "Brush ribs generously with preserve mixture and place on a medium high grill and cook, repeatedly brushing side facing you, until well browned. Repeat one more time.",
+        "Brush ribs generously with preserve mixture and place on a medium high grill and cook, repeatedly brushing side facing you, until well browned.",
+        "Repeat one more time.",
         "Remove and let rest 10 minutes; slice into 1-rib portions and serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ginger_Peach_Glazed_BBQ_Ribs",
@@ -221,8 +233,10 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -273,9 +287,12 @@
         }
       ],
       "steps": [
-        "Spread cream cheese on half the bread. Press into sort of a sandwich and set aside.",
-        "Combine egg, vanilla, cream, sugar, and salt in a pie pan. Add bread \"sandwiches\" to mixture and coat both sides.",
-        "Melt 1 tbsp butter in a small nonstick skillet heated between medium and medium high. Add 1 \"sandwich\" to pan and cook until golden brown on both sides.",
+        "Spread cream cheese on half the bread.",
+        "Press into sort of a sandwich and set aside.",
+        "Combine egg, vanilla, cream, sugar, and salt in a pie pan.",
+        "Add bread \"sandwiches\" to mixture and coat both sides.",
+        "Melt 1 tbsp butter in a small nonstick skillet heated between medium and medium high.",
+        "Add 1 \"sandwich\" to pan and cook until golden brown on both sides.",
         "Remove from pan. Melt remaining butter and repeat.",
         "Serve immediately with maple syrup, powdered sugar, whipped cream, or fresh fruit."
       ],
@@ -292,8 +309,10 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "medium",
-        "moderate",
+        "gluten-free",
+        "high-protein",
+        "hard",
+        "budget",
         "french"
       ],
       "ingredients": [
@@ -345,15 +364,21 @@
       ],
       "steps": [
         "In a large bowl, whisk together the eggs, salt, pepper, milk and nutmeg, until even and glossy.",
-        "Place half the butter in the skillet on medium heat. Swirl the pan to coat evenly with butter.",
+        "Place half the butter in the skillet on medium heat.",
+        "Swirl the pan to coat evenly with butter.",
         "Add ham and cook until deep brown.",
-        "Stir in kale for 30 seconds, or until slightly wilted but still crunchy. Set aside the ham and greens.",
+        "Stir in kale for 30 seconds, or until slightly wilted but still crunchy.",
+        "Set aside the ham and greens.",
         "Add the remainder of the butter to the skillet over low heat.",
-        "Pour egg mixture into the skillet, moving skillet to create a flat, even layer. Heat until the eggs have begun to set, with some fluff on top.",
+        "Pour egg mixture into the skillet, moving skillet to create a flat, even layer.",
+        "Heat until the eggs have begun to set, with some fluff on top.",
         "Scatter the ham and kale evenly over the top of the eggs.",
-        "Lay the Gruyère slices over the open omelet. Heat until the edges of the cheese have melted slightly.",
-        "Gently push the edges of the omelet less than half a centimeter toward the center of the skillet with two spatulas, making sure not to break it. Turn the heat off.",
-        "Use the spatulas to lift half the omelet and fold over the other half. Move the entire omelet carefully onto a plate and serve."
+        "Lay the Gruyère slices over the open omelet.",
+        "Heat until the edges of the cheese have melted slightly.",
+        "Gently push the edges of the omelet less than half a centimeter toward the center of the skillet with two spatulas, making sure not to break it.",
+        "Turn the heat off.",
+        "Use the spatulas to lift half the omelet and fold over the other half.",
+        "Move the entire omelet carefully onto a plate and serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fribourg_Omelet",
       "sourceName": "Wikibooks Cookbook",
@@ -368,8 +393,11 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -401,8 +429,11 @@
       ],
       "steps": [
         "Peel potatoes, and slice into small or large wedges.",
-        "Heat oil in a pan to about 350°F. Fry potatoes in oil until they are light brown. Once done, salt the potatoes to desired level.",
-        "Fry the chicken for about 5 minutes. Drain the oil or move the chicken to a different pan.",
+        "Heat oil in a pan to about 350°F (175°C).",
+        "Fry potatoes in oil until they are light brown.",
+        "Once done, salt the potatoes to desired level.",
+        "Fry the chicken for about 5 minutes. The chicken is done at 165°F (74°C) inside.",
+        "Drain the oil or move the chicken to a different pan.",
         "Salt the chicken, add ¾ cup of water and let simmer for 15–20 minutes.",
         "Combine chicken and potatoes (potatoes on top).",
         "Add cumin and let simmer for about 20 minutes."
@@ -420,8 +451,10 @@
       "tags": [
         "lunch",
         "main-meal",
+        "vegetarian",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -477,12 +510,12 @@
         }
       ],
       "steps": [
-        "Preheat oven to 200°F.",
+        "Preheat oven to 200°F (95°C).",
         "Combine the egg, hot sauce, and cream in a pie plate. Dip cut sides of buns into egg mixture. Move to a cooling rack and let sit 10 minutes.",
         "Heat a medium nonstick skillet over medium heat. Grease with cooking spray.",
         "Add buns, one at a time, and cook until browned on cut side. Move to a clean plate and repeat until all buns have been cooked. Keep warm in the oven.",
         "Form beef into 4 equal patties. Brush both sides with olive oil and sprinkle both sides liberally with salt and freshly ground black pepper.",
-        "Heat about 28 charcoal briquets in a large chimney starter. Once hot, disperse evenly around the bottom of a grill and reapply grate. Add patties and cook, turning often, until internal temperature reaches 145°F for medium rare, 160°F for medium, and 170°F for toast.",
+        "Heat about 28 charcoal briquets in a large chimney starter. Once hot, disperse evenly around the bottom of a grill and reapply grate. Add patties and cook, turning often, until internal temperature reaches 145°F (63°C) for medium rare, 160°F (71°C) for medium, and 170°F (77°C) for toast.",
         "Remove to a plate, top with cheese, and cover with aluminum foil. Let rest 3 minutes.",
         "Place a patty on the bottom half of each bun. Top with upper half and serve warm."
       ],
@@ -499,9 +532,12 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
-        "moderate",
-        "other"
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "splurge",
+        "latin_american"
       ],
       "ingredients": [
         {
@@ -563,11 +599,15 @@
       "steps": [
         "Wash beans and let hydrate overnight by covering with twice its volume of water.",
         "The next day, remove any floating beans.",
-        "Heat the oil in a pressure cooker. Add scallions and let fry until they start to brown. Add tomato, cumin, broth cube, and allspice. This is called \"hogao\", a basic sauce for many Colombian dishes.",
-        "Add 6 cups water, the beans, and plantain. Bring to a boil over medium heat.",
+        "Heat the oil in a pressure cooker.",
+        "Add scallions and let fry until they start to brown.",
+        "Add tomato, cumin, broth cube, and allspice. This is called \"hogao\", a basic sauce for many Colombian dishes.",
+        "Add 6 cups water, the beans, and plantain.",
+        "Bring to a boil over medium heat.",
         "Cover the pressure cooker, and let cook for 30 minutes.",
         "Let cool, then open the pressure cooker.",
-        "Check water level, add the meat if using, and cover again. Cook for another 30 minutes.",
+        "Check water level, add the meat if using, and cover again.",
+        "Cook for another 30 minutes.",
         "Taste for salt. If you want a thicker mixture, you can cook uncovered over low heat."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Frijoles_Antioque%C3%B1os_(Colombian_Bean_Stew)",
@@ -583,7 +623,8 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
+        "high-protein",
+        "medium",
         "moderate",
         "british"
       ],
@@ -591,7 +632,7 @@
         {
           "qty": 500.0,
           "unit": "g",
-          "item": "minced (ground) beef (1.1 lb)"
+          "item": "minced (ground) beef"
         },
         {
           "qty": null,
@@ -635,11 +676,13 @@
         }
       ],
       "steps": [
-        "Remove the ground beef from the package and shape by hand into burgers. You should get 4–6 burgers from the listed quantity of beef.",
-        "If adding optional ingredients, either season the outside or mix into the beef before forming the patties. Overworking the beef will result in mushy meat that won't stick together, so only mix the minimum necessary and do so by hand.",
+        "Remove the ground beef from the package and shape by hand into burgers. This makes 4–6 burgers from the listed quantity of beef.",
+        "If adding optional ingredients, either season the outside or mix into the beef before forming the patties.",
+        "Overworking the beef will result in mushy meat that won't stick together, so only mix the minimum necessary and do so by hand.",
         "Fry or grill the burgers for about 4–5 minutes on each side for burgers that aren't too thick.",
         "Let the burger rest for several minutes before serving to let the juices cool down and not burst out at first bite.",
-        "Ensure your burgers are fully cooked through before serving. If your burgers are quite thick or if you are unsure, you can cut one open to ensure the insides are browned. If the insides are red, there is a chance that the meat is not fully cooked. Alternately, you can insert a meat thermometer into the center of the burger, if the temperature reads less than 71°C (160°F), your burger is undercooked.",
+        "Ensure the burgers are fully cooked through before serving. If the burgers are quite thick or if you are unsure, you can cut one open to ensure the insides are browned. If the insides are red, there is a chance that the meat is not fully cooked.",
+        "Alternately, you can insert a meat thermometer into the center of the burger, if the temperature reads less than 71°C (160°F (71°C)), the burger is undercooked.",
         "Serve each burger on a bun (sesame seed usually), optionally with relish, sliced pickles, ketchup, mayonnaise, mustard, ranch dressing, cheese, lettuce, tomatoes and/or onions."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Double_Hamburgers",
@@ -655,8 +698,9 @@
       "tags": [
         "lunch",
         "main-meal",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -688,7 +732,7 @@
         {
           "qty": 4.0,
           "unit": "oz",
-          "item": "shredded cheddar cheese (1 cup)"
+          "item": "shredded cheddar cheese"
         },
         {
           "qty": 0.25,
@@ -710,7 +754,7 @@
         "Mix beef, garlic salt, onion, and pepper thoroughly in a bowl.",
         "Shape hamburger mixture into 6 patties, about ¾-inch thick.",
         "Mix bacon, cheese, mayonnaise, and mushrooms together and store in the refrigerator or cooler.",
-        "Cook burgers on the grill, covered, for 5 or 7 minutes on each side.",
+        "Cook burgers on the grill, covered, for 5 or 7 minutes on each side. Ground meat is done at 160°F (71°C) inside.",
         "During the last 3 minutes, put ¼ cup cheese mixture on top of each burger."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Deluxe_Burgers",
@@ -726,8 +770,12 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "budget",
         "african"
       ],
       "ingredients": [
@@ -783,13 +831,16 @@
         }
       ],
       "steps": [
-        "Rinse the dried fava beans under cold water and remove any impurities or debris. Place the beans in a saucepan and cover them with water.",
-        "Bring the water to a boil over medium-high heat, then reduce the heat to low and let the beans simmer for about 1–1.5 hours, or until they are tender. Check the beans periodically and add more water if needed.",
+        "Rinse the dried fava beans under cold water and remove any impurities or debris.",
+        "Place the beans in a saucepan and cover them with water.",
+        "Bring the water to a boil over medium-high heat, then reduce the heat to low and let the beans simmer for about 1–1.5 hours, or until they are tender.",
+        "Check the beans periodically and add more water if needed.",
         "Once the beans are tender, drain them in a colander and return them to the saucepan.",
-        "Add the minced garlic, olive oil, lemon juice, ground cumin, salt, and black pepper to the saucepan with the cooked beans. Stir well to combine the ingredients and allow the flavors to meld together over low heat for a few minutes.",
+        "Add the minced garlic, olive oil, lemon juice, ground cumin, salt, and black pepper to the saucepan with the cooked beans.",
+        "Stir well to combine the ingredients and allow the flavors to meld together over low heat for a few minutes.",
         "Remove the ful medames from the heat and transfer it to a serving dish.",
         "Garnish the dish with freshly chopped parsley or cilantro.",
-        "Serve the ful medames warm with fresh pita bread or other bread of your choice."
+        "Serve the ful medames warm with fresh pita bread or other bread of the choice."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ful_Medames_(Egyptian_Fava_Beans)",
       "sourceName": "Wikibooks Cookbook",
@@ -804,8 +855,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -831,14 +884,16 @@
         }
       ],
       "steps": [
-        "Preheat oven to 450 °F.",
+        "Preheat oven to 450°F (230°C).",
         "Rinse and wipe duckling, removing giblets.",
         "Set bird aside in an airy place to allow the skin to dry.",
         "Rub inside cavity with salt and pepper.",
         "Insert vertical oven roaster (used for \"beer can chicken\") into bird, and prop it upright.",
         "Coat bird on all sides with butter-flavored spray and sprinkle salt and pepper lightly over the skin.",
         "Place bird and vertical roaster into a large roasting pan (use a wire rack insert if you have one) and add ½ cup water to the bottom of the pan.",
-        "Leave bird in oven for 30 minutes, then reduce heat to 325 °F until done. No need to prick skin or baste bird, as the fat slowly renders off leaving a wonderful crispy skin. Keep the bottom of the roasting pan covered with water to prevent smoking.",
+        "Leave bird in oven for 30 minutes, then reduce heat to 325°F (165°C) until done.",
+        "No need to prick skin or baste bird, as the fat slowly renders off leaving a wonderful crispy skin.",
+        "Keep the bottom of the roasting pan covered with water to prevent smoking.",
         "Pour off fat and save, reserving drippings and liquid from the roasting pan."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Long_Island_Roast_Duckling",
@@ -854,7 +909,10 @@
       "tags": [
         "lunch",
         "main-meal",
-        "medium",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "african"
       ],
@@ -932,12 +990,16 @@
       ],
       "steps": [
         "Heat the vegetable oil in a large pot over medium heat.",
-        "Add the finely chopped onion and minced garlic to the pot. Sauté until the onion becomes translucent and the garlic is fragrant.",
+        "Add the finely chopped onion and minced garlic to the pot.",
+        "Sauté until the onion becomes translucent and the garlic is fragrant.",
         "Add the beef or chicken pieces to the pot and cook until they are browned on all sides.",
-        "Stir in the sliced carrots, cubed potatoes, sliced celery, chopped bell pepper, and diced tomatoes. Cook for a few minutes to allow the vegetables to soften slightly.",
+        "Stir in the sliced carrots, cubed potatoes, sliced celery, chopped bell pepper, and diced tomatoes.",
+        "Cook for a few minutes to allow the vegetables to soften slightly.",
         "Pour in the beef or chicken broth, ensuring that the ingredients are fully covered.",
-        "Add the ground cumin, dried oregano, salt, and pepper to the pot. Stir well to incorporate the spices.",
-        "Bring the soup to a boil, then reduce the heat to low. Cover the pot and let it simmer for about 1–1.5 hours, or until the meat is tender and the flavors have melded together.",
+        "Add the ground cumin, dried oregano, salt, and pepper to the pot.",
+        "Stir well to incorporate the spices.",
+        "Bring the soup to a boil, then reduce the heat to low.",
+        "Cover the pot and let it simmer for about 1–1.5 hours, or until the meat is tender and the flavors have melded together. The meat is done at 165°F (74°C) inside.",
         "Taste the soup and adjust the seasoning if needed.",
         "Remove the pot from heat and ladle the caldo into serving bowls.",
         "Garnish each bowl with freshly chopped cilantro or parsley. Serve hot."
@@ -955,8 +1017,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "budget",
         "african"
       ],
       "ingredients": [
@@ -1022,13 +1087,16 @@
         }
       ],
       "steps": [
-        "In a mixing bowl, combine the thinly sliced onions, minced garlic, grated ginger, lemon juice, olive oil, Dijon mustard, black pepper, and a pinch of salt. Mix well to create a marinade.",
-        "Add the chicken pieces to the marinade, ensuring they are evenly coated. Cover the bowl and let the chicken marinate in the refrigerator for at least 2 hours, but preferably overnight, to allow the flavors to meld.",
-        "Heat the vegetable oil in a large skillet or frying pan over medium-high heat.",
+        "In a mixing bowl, combine the thinly sliced onions, minced garlic, grated ginger, lemon juice, olive oil, Dijon mustard, black pepper, and a pinch of salt.",
+        "Mix well to create a marinade.",
+        "Add the chicken pieces to the marinade, ensuring they are evenly coated.",
+        "Cover the bowl and let the chicken marinate in the refrigerator for at least 2 hours, but preferably overnight, to allow the flavors to meld.",
+        "Heat the vegetable oil in a large skillet or frying pan over medium-high heat. The meat is done at 165°F (74°C) inside.",
         "Remove the chicken pieces from the marinade, reserving the marinade for later use.",
         "Place the chicken in the skillet and cook until browned on all sides, about 5–7 minutes per side.",
         "Once the chicken is browned, reduce the heat to medium and add the reserved marinade to the skillet.",
-        "Cover the skillet and let the chicken simmer in the marinade for about 20–25 minutes, or until the chicken is cooked through and tender. Occasionally, turn the chicken pieces and stir the onions to prevent burning and ensure even cooking.",
+        "Cover the skillet and let the chicken simmer in the marinade for about 20–25 minutes, or until the chicken is cooked through and tender.",
+        "Occasionally, turn the chicken pieces and stir the onions to prevent burning and ensure even cooking.",
         "Once the chicken is cooked, transfer it to a serving dish and garnish with freshly chopped parsley or cilantro.",
         "Serve the yassa poulet hot with steamed rice or couscous."
       ],
@@ -1045,8 +1113,11 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1105,10 +1176,11 @@
         "Combine paprika, salt, pepper, granulated garlic, ginger, and cayenne.",
         "Moisten chicken with lemon juice and coat with seasoning mixture.",
         "Dredge chicken in cornmeal and let rest 2–3 minutes only.",
-        "Melt shortening in a large cast iron skillet; heat to 350°F, watching carefully to prevent burning.",
+        "Melt shortening in a large cast iron skillet; heat to 350°F (175°C), watching carefully to prevent burning.",
         "Place legs and breasts around the edges, then place thighs in the center.",
-        "Fry for 12 minutes, then flip to the other side and fry another 12 minutes.",
-        "Drain on a cooling or oven rack. Please don't use paper towels, which will make your chicken greasy.",
+        "Fry for 12 minutes, then flip to the other side and fry another 12 minutes. The chicken is done at 165°F (74°C) inside.",
+        "Drain on a cooling or oven rack.",
+        "Please don't use paper towels, which will make the chicken greasy.",
         "Sprinkle with black pepper; serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tangy_Lemon_Battered_Fried_Chicken",
@@ -1124,7 +1196,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
         "moderate",
         "american"
       ],
@@ -1151,9 +1226,12 @@
         }
       ],
       "steps": [
-        "Brush pork chops with cider vinegar. Season each pork chop with the chop rub, pressing lightly.",
-        "Heat oil in a very large oven-proof cast iron or stainless steel skillet over medium high heat. Add pork chops and sear for 3 minutes per side.",
-        "Insert an oven-safe probe thermometer into one pork chop and place pan in a 350°F oven. Bake until internal temperature reaches 145°F.",
+        "Brush pork chops with cider vinegar.",
+        "Season each pork chop with the chop rub, pressing lightly.",
+        "Heat oil in a very large oven-proof cast iron or stainless steel skillet over medium high heat.",
+        "Add pork chops and sear for 3 minutes per side.",
+        "Insert an oven-safe probe thermometer into one pork chop and place pan in a 350°F (175°C) oven.",
+        "Bake until internal temperature reaches 145°F (63°C).",
         "Remove and let rest for 5 minutes; serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pan-Seared_Pork_Chops",
@@ -1169,10 +1247,11 @@
       "tags": [
         "lunch",
         "main-meal",
-        "vegan",
         "vegetarian",
-        "easy",
-        "moderate",
+        "vegan",
+        "dairy-free",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1224,9 +1303,13 @@
       ],
       "steps": [
         "Bring 4 quarts of water to a boil, add salt to taste, and add the macaroni.",
-        "Melt the margarine over low heat. Beat in flour with a wire whisk. Continue to beat over medium heat until mixture is smooth and bubbly.",
-        "Whisk in the 3 ½ cups water. Then, add salt, garlic powder, soy sauce, and turmeric to the liquid.",
-        "The sauce should cook until it thickens and bubbles. When that happens, beat in nutritional yeast flakes; if the sauce is too thick, add more water.",
+        "Melt the margarine over low heat.",
+        "Beat in flour with a wire whisk.",
+        "Continue to beat over medium heat until mixture is smooth and bubbly.",
+        "Whisk in the 3 ½ cups water.",
+        "Add salt, garlic powder, soy sauce, and turmeric to the liquid.",
+        "The sauce should cook until it thickens and bubbles.",
+        "When that happens, beat in nutritional yeast flakes; if the sauce is too thick, add more water.",
         "When the macaroni is cooked, drain and add the sauce. Serve immediately."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_and_Cheese_(Vegan)",
@@ -1242,8 +1325,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "splurge",
         "middle_eastern"
       ],
       "ingredients": [
@@ -1285,7 +1371,7 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "fried ghormeh sabzi herbs (about 400 g)"
+          "item": "fried ghormeh sabzi herbs"
         },
         {
           "qty": 8.0,
@@ -1352,9 +1438,12 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
         "moderate",
-        "other"
+        "european"
       ],
       "ingredients": [
         {
@@ -1370,7 +1459,7 @@
         {
           "qty": 1.5,
           "unit": "lb",
-          "item": "stew beef, cubed (750 g)"
+          "item": "stew beef, cubed"
         },
         {
           "qty": 2.0,
@@ -1415,9 +1504,13 @@
       ],
       "steps": [
         "Fry half of the onions in a pot with olive oil.",
-        "Put a layer of meat over the fried onions, then a layer of raw onions, peppers, tomato, whole garlic cloves, spices, and salt. Add another meat layer; continue until you have used all the ingredients except the potato.",
-        "Cover the meat with water. Put on a lid, and simmer on low heat. Add water only if there is not enough while cooking. It requires almost no stirring.",
-        "When the meat is cooked and tender, add potatoes. Add additional water to cover it if needed, and cook for further 15 minutes until the potatoes are tender."
+        "Put a layer of meat over the fried onions, then a layer of raw onions, peppers, tomato, whole garlic cloves, spices, and salt.",
+        "Add another meat layer; continue until you have used all the ingredients except the potato.",
+        "Cover the meat with water.",
+        "Put on a lid, and simmer on low heat.",
+        "Add water only if there is not enough while cooking. It requires almost no stirring.",
+        "When the meat is cooked and tender, add potatoes.",
+        "Add additional water to cover it if needed, and cook for further 15 minutes until the potatoes are tender."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Goulash",
       "sourceName": "Wikibooks Cookbook",
@@ -1432,7 +1525,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -1480,12 +1575,16 @@
       ],
       "steps": [
         "Brush chops with olive oil and season liberally with chop rub. Set aside.",
-        "Heat a large stainless steel or cast iron skillet over high heat. Add pork chops and cook until browned and slightly charred on both sides.",
+        "Heat a large stainless steel or cast iron skillet over high heat.",
+        "Add pork chops and cook until browned and slightly charred on both sides.",
         "Remove and set aside.",
-        "Place pan back on heat and deglaze with white wine. Pour out wine and reserve.",
-        "Place apples in the bottom of a crockpot. Place pork chops on top and drizzle with remaining ingredients.",
+        "Place pan back on heat and deglaze with white wine.",
+        "Pour out wine and reserve.",
+        "Place apples in the bottom of a crockpot.",
+        "Place pork chops on top and drizzle with remaining ingredients.",
         "Cook on low 7–8 hours.",
-        "Drain apples and pork into a large saucepan. Bring liquid to a boil over high heat until reduced by half.",
+        "Drain apples and pork into a large saucepan.",
+        "Bring liquid to a boil over high heat until reduced by half.",
         "Pour liquid back over pork chops and serve warm."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Slow_Cooker_Pork_Chops",
@@ -1501,7 +1600,10 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
         "moderate",
         "american"
       ],
@@ -1559,10 +1661,16 @@
       ],
       "steps": [
         "Sear beef in a little cooking oil (not lard) until lightly browned.",
-        "Add the seared beef, suet, and chile pods to a large iron skillet or pot (at least four quarts), and enough water (the reserved \"pepper water\" if you prepared the pods yourself) to keep the meat from burning. Bring to a boil, then lower heat, cover, and simmer about 30 minutes.",
-        "Take pot off the stove and add spices and garlic. Put back on the stove, bring to a boil again, lower heat, and simmer another hour, keeping the lid on as much as possible. Stir when necessary, but remember that too much stirring will tear the meat. Add a little more water if anything seems seriously in danger of burning (but as little water as possible).",
+        "Add the seared beef, suet, and chile pods to a large iron skillet or pot (at least four quarts), and enough water (the reserved \"pepper water\" if you prepared the pods yourself) to keep the meat from burning.",
+        "Bring to a boil, then lower heat, cover, and simmer about 30 minutes.",
+        "Take pot off the stove and add spices and garlic.",
+        "Put back on the stove, bring to a boil again, lower heat, and simmer another hour, keeping the lid on as much as possible.",
+        "Stir when necessary, but remember that too much stirring will tear the meat.",
+        "Add a little more water if anything seems seriously in danger of burning (but as little water as possible).",
         "Take pot off the stove and skim off all or most of the grease.",
-        "Mix in masa harina, which \"tightens\" or thickens the chili con carne and adds a subtle tamale-like flavor. Simmer about 30 minutes more, until meat is done. Do a lot of tasting during this time, (1) to adjust the seasoning, and (2) just because a chili cook should do a lot of tasting."
+        "Mix in masa harina, which \"tightens\" or thickens the chili con carne and adds a subtle tamale-like flavor.",
+        "Simmer about 30 minutes more, until meat is done.",
+        "Do a lot of tasting during this time, (1) to adjust the seasoning, and (2) just because a chili cook should do a lot of tasting."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Original_Texas-Style_Chili",
       "sourceName": "Wikibooks Cookbook",
@@ -1577,6 +1685,8 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "high-protein",
         "medium",
         "moderate",
         "american"
@@ -1609,11 +1719,15 @@
         }
       ],
       "steps": [
-        "Brush pork chops generously with cider vinegar. Season pork with chop rub, patting down slightly.",
-        "Bring wine to a boil over high heat in a large saucepan, and ignite it. Cook until reduced by half.",
+        "Brush pork chops generously with cider vinegar.",
+        "Season pork with chop rub, patting down slightly.",
+        "Bring wine to a boil over high heat in a large saucepan, and ignite it.",
+        "Cook until reduced by half.",
         "Add butter, 1 tbsp at a time while whisking, until all butter has melted.",
-        "Grill pork chops over high heat 2 minutes, brushing with wine mixture, then rotate 90° and cook for 2 minutes, brushing. Flip to the other side and repeat 1 more time.",
-        "Remove and let rest 5 minutes. Serve with remaining wine mixture."
+        "Grill pork chops over high heat 2 minutes, brushing with wine mixture, then rotate 90° and cook for 2 minutes, brushing.",
+        "Flip to the other side and repeat 1 more time.",
+        "Remove and let rest 5 minutes.",
+        "Serve with remaining wine mixture."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Wine_Glazed_Pork_Chops",
       "sourceName": "Wikibooks Cookbook",
@@ -1628,45 +1742,46 @@
       "tags": [
         "lunch",
         "main-meal",
+        "vegetarian",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "elbow macaroni (227 g)"
+          "item": "elbow macaroni"
         },
         {
           "qty": 6.0,
           "unit": "oz",
-          "item": "heavy cream (170 g)"
+          "item": "heavy cream"
         },
         {
           "qty": 0.5,
           "unit": "tsp",
-          "item": "kosher salt, plus more for the water (2.5 ml)"
+          "item": "kosher salt, plus more for the water"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "grated Fontina (60 g / 2.1 oz)"
+          "item": "grated Fontina"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "grated Gruyere (60 g / 2.1 oz)"
+          "item": "grated Gruyere"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "mascarpone cheese (150 g / 5.3 oz)"
+          "item": "mascarpone cheese"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "cream cheese (150 g / 5.3 oz)"
+          "item": "cream cheese"
         },
         {
           "qty": 4.0,
@@ -1676,23 +1791,27 @@
         {
           "qty": 1.25,
           "unit": "stick",
-          "item": "unsalted butter, divided (150 g / 5.3 oz)"
+          "item": "unsalted butter, divided"
         },
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "all-purpose flour (30 ml)"
+          "item": "all-purpose flour"
         },
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "tabasco sauce (5 ml)"
+          "item": "tabasco sauce"
         }
       ],
       "steps": [
-        "In a gallon (~3.8 L) of salted boiling water, cook macaroni to al dente. Strain into a colander and rinse with cold water.",
-        "While pasta is cooking, in a heavy saucepan, melt 2 tbsp butter over medium heat. Once bubbling ceases, whisk in flour and cook, whisking continuously, until blonde.",
-        "Add remaining ingredients except butter. Once cheese is melted and sauce is smooth, add 1 tbsp butter, whisking continuously until melted. Repeat until all butter has been used.",
+        "In a gallon (~3.8 L) of salted boiling water, cook macaroni to al dente.",
+        "Strain into a colander and rinse with cold water.",
+        "While pasta is cooking, in a heavy saucepan, melt 2 tbsp butter over medium heat.",
+        "Once bubbling ceases, whisk in flour and cook, whisking continuously, until blonde.",
+        "Add remaining ingredients except butter.",
+        "Once cheese is melted and sauce is smooth, add 1 tbsp butter, whisking continuously until melted.",
+        "Repeat until all butter has been used.",
         "Gently fold in macaroni and serve warm."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Adult_Macaroni_and_Cheese",
@@ -1708,7 +1827,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "dairy-free",
+        "high-protein",
+        "medium",
         "moderate",
         "african"
       ],
@@ -1801,13 +1922,16 @@
       ],
       "steps": [
         "In a large pot, heat the olive oil over medium heat.",
-        "Add the chopped onion and minced garlic. Sauté until the onion becomes translucent and fragrant.",
-        "Add the chicken pieces to the pot and brown them on all sides.",
-        "Stir in the diced tomatoes, tomato paste, harissa paste, cumin, paprika, cayenne pepper, coriander, caraway seeds, salt, and pepper. Mix well to coat the chicken with the spices.",
+        "Add the chopped onion and minced garlic.",
+        "Sauté until the onion becomes translucent and fragrant.",
+        "Add the chicken pieces to the pot and brown them on all sides. The chicken is done at 165°F (74°C) inside.",
+        "Stir in the diced tomatoes, tomato paste, harissa paste, cumin, paprika, cayenne pepper, coriander, caraway seeds, salt, and pepper.",
+        "Mix well to coat the chicken with the spices.",
         "Pour in the water or chicken broth and bring the mixture to a boil.",
         "Reduce the heat to low, cover the pot with a lid, and let simmer for about 1 hour, or until the chicken is tender and cooked through.",
         "Taste and adjust the seasoning if needed.",
-        "Serve the hot, garnished with freshly chopped parsley. Accompany with bread or couscous to soak up the flavorful sauce."
+        "Serve the hot, garnished with freshly chopped parsley.",
+        "Accompany with bread or couscous to soak up the flavorful sauce."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Harissa_bil_Djaj_(Libyan_Chicken_Harissa)",
       "sourceName": "Wikibooks Cookbook",
@@ -1822,8 +1946,10 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1889,8 +2015,10 @@
       "tags": [
         "dinner",
         "main-meal",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -1907,7 +2035,7 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "diced tomatoes with green chiles (12 ounces)"
+          "item": "diced tomatoes with green chiles"
         },
         {
           "qty": 1.0,
@@ -1926,9 +2054,13 @@
         }
       ],
       "steps": [
-        "Spray skillet with cooking spray, and sprinkle in garlic powder and other seasonings. Add turkey, and crumble it as it cooks. Add tomatoes, and mix with turkey until turkey is cooked.",
-        "Add cooking oil to a wok or deep skillet. Add 1 teaspoon allspice and/or other seasonings.",
-        "As pan heats slowly add cooked rice (watch for splattering of hot oil). When rice is heated evenly add teriyaki sauce, and mix it evenly.",
+        "Spray skillet with cooking spray, and sprinkle in garlic powder and other seasonings.",
+        "Add turkey, and crumble it as it cooks. The turkey is done at 165°F (74°C) inside.",
+        "Add tomatoes, and mix with turkey until turkey is cooked.",
+        "Add cooking oil to a wok or deep skillet.",
+        "Add 1 teaspoon allspice and/or other seasonings.",
+        "As pan heats slowly add cooked rice (watch for splattering of hot oil).",
+        "When rice is heated evenly add teriyaki sauce, and mix it evenly.",
         "When ground turkey is done cooking add it to rice in wok, mix it thoroughly, and serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Brown_Rice_with_Ground_Turkey",
@@ -1944,7 +2076,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -1986,11 +2120,21 @@
         }
       ],
       "steps": [
-        "Combine lemon juice, honey, and salt in a gallon-size zip-top bag. Add pork chops, take as much air out as possible, and seal bag. Refrigerate 24 hours.",
-        "Take pork out of marinade. Using a narrow boning knife, make an incision in the side of the chop until you hit bone. Sweep the knife up and make the hole slightly larger. Repeat with remaining pork chops. Using a bagel slicer helps to stabilize the chops while cutting.",
-        "Place the apple stuffing inside a gallon size zip top plastic bag. Snip a small hole in the corner. Place snipped corner inside incision in one of the pork chops. Squeeze to dispense. Dispense about 2 tbsp into each pork chop.",
+        "Combine lemon juice, honey, and salt in a gallon-size zip-top bag.",
+        "Add pork chops, take as much air out as possible, and seal bag. Refrigerate 24 hours.",
+        "Take pork out of marinade.",
+        "Using a narrow boning knife, make an incision in the side of the chop until you hit bone.",
+        "Sweep the knife up and make the hole slightly larger.",
+        "Repeat with remaining pork chops.",
+        "Using a bagel slicer helps to stabilize the chops while cutting.",
+        "Place the apple stuffing inside a gallon size zip top plastic bag.",
+        "Snip a small hole in the corner.",
+        "Place snipped corner inside incision in one of the pork chops. Squeeze to dispense.",
+        "Dispense about 2 tbsp into each pork chop.",
         "Once all pork has been stuffed, massage the chop rub into both sides of each chop. Set aside.",
-        "Quickly lube grill with the oiled towel. Grill pork over high heat 2 minutes, then rotate 90° and cook for another 2 minutes to get good grill marks. Flip and repeat 1 more time.",
+        "Quickly lube grill with the oiled towel.",
+        "Grill pork over high heat 2 minutes, then rotate 90° and cook for another 2 minutes to get good grill marks.",
+        "Flip and repeat 1 more time.",
         "Remove from grill and let rest for 7 minutes. Serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Stuffed_Pork_Chops",
@@ -2006,7 +2150,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -2068,13 +2215,18 @@
         }
       ],
       "steps": [
-        "Combine salt, honey, and vinegar in a gallon-size zip-top bag. Add ice and shake until ice is mostly melted and mixture has cooled.",
+        "Combine salt, honey, and vinegar in a gallon-size zip-top bag.",
+        "Add ice and shake until ice is mostly melted and mixture has cooled.",
         "Insert pork chops and brine in the refrigerator for 1–2 hours.",
         "Drain pork and pat dry with paper towels. Discard remaining brine.",
         "Combine remaining seasonings and rub on both sides of each pork chop.",
-        "Get your smoker ready. Place chunks in the firebox and keep the smoker at around 250°F.",
-        "Brush with olive oil and grill on high just until marked. Flip and repeat 1 more time.",
-        "Move to smoker and insert a probe thermometer into one of the chopes. Cover and cook until internal temperature reaches 140°F for medium rare, 155°F for medium, and 165°F for toast. Carry-over will take it the last 5 degrees. Keep checking the temperature and microwave if needed to get above 145°F.",
+        "Get the smoker ready. Place chunks in the firebox and keep the smoker at around 250°F (120°C).",
+        "Brush with olive oil and grill on high just until marked.",
+        "Flip and repeat 1 more time.",
+        "Move to smoker and insert a probe thermometer into one of the chopes.",
+        "Cover and cook until internal temperature reaches 140°F (60°C) for medium rare, 155°F (68°C) for medium, and 165°F (74°C) for toast.",
+        "Carry-over will take it the last 5 degrees.",
+        "Keep checking the temperature and microwave if needed to get above 145°F (63°C).",
         "Move to a plate and let rest 5 minutes. Serve warm."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Hickory_Smoked_Pork_Chops",
@@ -2090,11 +2242,12 @@
       "tags": [
         "breakfast",
         "main-meal",
+        "vegetarian",
         "vegan",
         "gluten-free",
-        "vegetarian",
-        "medium",
-        "moderate",
+        "dairy-free",
+        "hard",
+        "budget",
         "indian"
       ],
       "ingredients": [
@@ -2131,10 +2284,13 @@
       ],
       "steps": [
         "Wash rice and urad dal thoroughly.",
-        "Soak the rice and urad dal in separate bowls for no more than 2 hours. Soak methi seeds along with the urad dal. You will need about twice as much water in the bowl as urad dal, as it expands as it soaks up water.",
+        "Soak the rice and urad dal in separate bowls for no more than 2 hours.",
+        "Soak methi seeds along with the urad dal.",
+        "You will need about twice as much water in the bowl as urad dal, as it expands as it soaks up water.",
         "Drain the rice and urad dal. Do not discard the dal soaking water, but do discard the rice soaking water.",
         "Grind the urad dal to a fine paste in a blender. If needed, add some of the reserved soaking water.",
-        "Grind the rice to a paste with about 1 cup of chlorine-free water (less if you can). Grind coarsely if the batter will only be used for idli, but grind finely if it will later be used for dosa.",
+        "Grind the rice to a paste with about 1 cup of chlorine-free water (less if you can).",
+        "Grind coarsely if the batter will only be used for idli, but grind finely if it will later be used for dosa.",
         "Mix the rice and urad dal pastes together well, and season with salt.",
         "If desired, stir in the fermentation starter and mix well (see note).",
         "Set aside somewhere warm like to ferment for 8 hours (see note).",
@@ -2157,15 +2313,17 @@
         "dinner",
         "main-meal",
         "gluten-free",
-        "medium",
-        "moderate",
-        "other"
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "budget",
+        "american"
       ],
       "ingredients": [
         {
           "qty": 500.0,
           "unit": "g",
-          "item": "minced or ground turkey (1 lb)"
+          "item": "minced or ground turkey"
         },
         {
           "qty": 1.0,
@@ -2230,11 +2388,18 @@
       ],
       "steps": [
         "Soak the dried beans overnight, or at least 6 hours.",
-        "Drain the soaked beans, discarding the water. Cover the beans with water in a small pot, bring to a boil, then reduce to a simmer. Stir periodically, and start testing for tenderness after 10 minutes. Alternatively, cook in a pressure cooker at 15 PSI for 3 minutes, and set aside to depressurise.",
-        "While the beans are cooking, add olive oil to a large pan and heat. When hot, add the onion and celery, and sauté until translucent.",
-        "Add the cumin, coriander, chili, and pepper to the pan and stir in. Allow to sauté for another couple of minutes.",
-        "Add the turkey mince to the pan, and turn up the heat. Stir while browning the mince, breaking up large pieces. Ensure that all the mince is browned.",
-        "Tip the beans, with their cooking water, into the pan and stir in the salt and sage. Simmer for 15 minutes (e.g. while cooking some rice!)",
+        "Drain the soaked beans, discarding the water.",
+        "Cover the beans with water in a small pot, bring to a boil, then reduce to a simmer. The meat is done at 165°F (74°C) inside.",
+        "Stir periodically, and start testing for tenderness after 10 minutes.",
+        "While the beans are cooking, add olive oil to a large pan and heat.",
+        "When hot, add the onion and celery, and sauté until translucent.",
+        "Add the cumin, coriander, chili, and pepper to the pan and stir in.",
+        "Allow to sauté for another couple of minutes.",
+        "Add the turkey mince to the pan, and turn up the heat.",
+        "Stir while browning the mince, breaking up large pieces.",
+        "Ensure that all the mince is browned.",
+        "Tip the beans, with their cooking water, into the pan and stir in the salt and sage.",
+        "Simmer for 15 minutes (e.g. while cooking some rice!).",
         "Serve over steamed rice (it goes especially nicely with arborio rice)!"
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Turkey_and_Lima_Beans",
@@ -2250,9 +2415,12 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
-        "moderate",
-        "other"
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "splurge",
+        "southeast_asian"
       ],
       "ingredients": [
         {
@@ -2323,7 +2491,8 @@
       ],
       "steps": [
         "Boil the oxtail in water until tender.",
-        "Soak annatto seeds in ½ cup water, set aside. Rub the seeds if necessary to bring out color.",
+        "Soak annatto seeds in ½ cup water, set aside.",
+        "Rub the seeds if necessary to bring out color.",
         "Cut string beans in 3-inch lengths.",
         "Cut eggplants diagonally, ½-inch thick.",
         "Cut banana blossoms diagonally, ½-inch thick.",
@@ -2332,7 +2501,8 @@
         "Take out the annatto seeds, add the water, and boil for 5 minutes.",
         "Stir in ground peanuts and ground rice.",
         "Bring to a boil, then add the oxtail and vegetables.",
-        "Add more water if needed to have enough sauce; it should be thick and not watery. Add fish sauce to taste.",
+        "Add more water if needed to have enough sauce; it should be thick and not watery.",
+        "Add fish sauce to taste.",
         "Serve with steamed rice and shrimp paste (bagoong) on the side."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kare-Kare_(Oxtail_and_Vegetables_in_Peanut_Sauce)",
@@ -2348,7 +2518,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -2405,11 +2578,18 @@
         }
       ],
       "steps": [
-        "Place pork chops in a large zip-top bag. Combine liquid ingredients and pour into bag. Marinate in the fridge for at least 30 minutes.",
-        "Take pork out of marinade. Combine dry seasonings and rub on pork. Heat your grill as high as it will go.",
+        "Place pork chops in a large zip-top bag.",
+        "Combine liquid ingredients and pour into bag.",
+        "Marinate in the fridge for at least 30 minutes.",
+        "Take pork out of marinade.",
+        "Combine dry seasonings and rub on pork.",
+        "Heat the grill as high as it will go.",
         "Boil marinade for 10 minutes.",
-        "Place pork on grill and cook 2 minutes, brushing with marinade, before rotating 90 degrees to get nice grill marks. Cook another 2 minutes, brushing.",
-        "Flip to the other side and repeat. Remove from grill and let rest for 10 minutes. Serve with additional marinade."
+        "Place pork on grill and cook 2 minutes, brushing with marinade, before rotating 90 degrees to get nice grill marks.",
+        "Cook another 2 minutes, brushing.",
+        "Flip to the other side and repeat.",
+        "Remove from grill and let rest for 10 minutes.",
+        "Serve with additional marinade."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Molasses-Glazed_Pork_Chops",
       "sourceName": "Wikibooks Cookbook",
@@ -2424,6 +2604,8 @@
       "tags": [
         "dinner",
         "main-meal",
+        "dairy-free",
+        "high-protein",
         "medium",
         "moderate",
         "american"
@@ -2481,11 +2663,16 @@
         }
       ],
       "steps": [
-        "Bring the chicken broth to a boil in a small saucepan. Add the dried mushrooms, and simmer over low heat for about 10 minutes.",
+        "Bring the chicken broth to a boil in a small saucepan.",
+        "Add the dried mushrooms, and simmer over low heat for about 10 minutes.",
         "In a small bowl, stir together the vinegar, soy sauce, honey, and red pepper flakes. Set aside.",
-        "Heat the sesame oil in a large non-stick skillet over medium heat. Add the pork chops, and brown for about 2 minutes on each side. Add the garlic and ginger; cook and stir until fragrant.",
-        "Stir in the soy sauce mixture, and bring to a boil. Reduce the heat to low, and simmer for 5 minutes, uncovered.",
-        "Remove the mushrooms from the pan using a slotted spoon, and slice into thin strips. Stir the mushrooms and chicken broth into the pan with the pork chops, and simmer uncovered over low heat until the sauce has reduced by about ⅓, and the pork chops are cooked through.",
+        "Heat the sesame oil in a large non-stick skillet over medium heat.",
+        "Add the pork chops, and brown for about 2 minutes on each side. The pork is done at 145°F (63°C) inside; rest 3 minutes.",
+        "Add the garlic and ginger; cook and stir until fragrant.",
+        "Stir in the soy sauce mixture, and bring to a boil.",
+        "Reduce the heat to low, and simmer for 5 minutes, uncovered.",
+        "Remove the mushrooms from the pan using a slotted spoon, and slice into thin strips.",
+        "Stir the mushrooms and chicken broth into the pan with the pork chops, and simmer uncovered over low heat until the sauce has reduced by about ⅓, and the pork chops are cooked through.",
         "To serve, place pork chops onto serving plates, and spoon mushroom sauce over them."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Garlic_Pork_Chops_with_Black_Mushrooms",
@@ -2501,7 +2688,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -2558,14 +2747,21 @@
         }
       ],
       "steps": [
-        "Combine salt, honey, vinegar, peppercorns, thyme, and ice. Pour into a gallon-size zip-top bag and add roast. Refrigerate 3–3½ hours.",
-        "Drain roast and pat dry with paper towels. Coat roast liberally with olive oil.",
-        "Place on a roasting rack set in a large roasting pan. Insert a probe thermometer and bake in the center of a 425°F oven until internal temperature reaches 140°F.",
-        "Pour drippings from pan and reserve. Keep roast warm at 200°F.",
-        "Skim fat from drippings and pour 2 tablespoons into a large saucepan. Heat over medium high heat. Add flour and cook, whisking continuously, until mixture turns blond in color.",
-        "Add skimmed drippings and chicken broth and bring to a boil. Cook until slightly thickened.",
+        "Combine salt, honey, vinegar, peppercorns, thyme, and ice.",
+        "Pour into a gallon-size zip-top bag and add roast. Refrigerate 3–3½ hours. The pork is done at 145°F (63°C) inside; rest 3 minutes.",
+        "Drain roast and pat dry with paper towels.",
+        "Coat roast liberally with olive oil.",
+        "Place on a roasting rack set in a large roasting pan.",
+        "Insert a probe thermometer and bake in the center of a 425°F (220°C) oven until internal temperature reaches 140°F (60°C).",
+        "Pour drippings from pan and reserve.",
+        "Keep roast warm at 200°F (95°C).",
+        "Skim fat from drippings and pour 2 tablespoons into a large saucepan.",
+        "Heat over medium high heat.",
+        "Add flour and cook, whisking continuously, until mixture turns blond in color.",
+        "Add skimmed drippings and chicken broth and bring to a boil.",
+        "Cook until slightly thickened.",
         "Reduce heat to low and cook until slightly thinner than desired consistency. If the gravy gets too thick, add some more chicken broth.",
-        "Slice pork as thick or as thin as you like, and drizzle with gravy."
+        "Slice pork as thick or as thin as desired, and drizzle with gravy."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roast_Pork_Loin_with_Gravy",
       "sourceName": "Wikibooks Cookbook",
@@ -2580,8 +2776,10 @@
       "tags": [
         "breakfast",
         "main-meal",
+        "vegetarian",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "british"
       ],
       "ingredients": [
@@ -2593,17 +2791,17 @@
         {
           "qty": 4.0,
           "unit": "oz",
-          "item": "butter plus butter for greasing a baking dish (125 g / 1 stick)"
+          "item": "butter plus butter for greasing a baking dish"
         },
         {
           "qty": 2.0,
           "unit": "oz",
-          "item": "white sugar (50 g / 4 tablespoons)"
+          "item": "white sugar"
         },
         {
           "qty": 1.0,
           "unit": "oz",
-          "item": "white sugar for decoration (25 g / 1 rounded tablespoon)"
+          "item": "white sugar for decoration"
         },
         {
           "qty": 2.0,
@@ -2613,12 +2811,12 @@
         {
           "qty": 4.0,
           "unit": "oz",
-          "item": "breadcrumbs (125 g / 1 cup)"
+          "item": "breadcrumbs"
         },
         {
           "qty": 0.25,
           "unit": "pint",
-          "item": "water (150 ml)"
+          "item": "water"
         },
         {
           "qty": null,
@@ -2629,10 +2827,11 @@
       "steps": [
         "Peel and core the apples, slice them, and place in a saucepan with the water.",
         "Cook until soft (similar to applesauce), then remove from heat and add butter, sugar and lemon juice; mix well.",
-        "While this is cooling, beat the eggs very well. When the apple mixture is cool, mix in the eggs as well.",
+        "While this is cooling, beat the eggs very well.",
+        "When the apple mixture is cool, mix in the eggs as well.",
         "Butter a deep baking dish and spread the breadcrumbs around it so that they stick to the bottom and the sides, keeping a good amount for the top.",
         "Pour the apple and egg mixture into the dish and cover with a thick layer of breadcrumbs.",
-        "Bake in a moderate oven (350°F / 180°C / Gas Mark 4) for about half an hour.",
+        "Bake in a 350°F (175°C) oven (350°F (175°C) / 180°C / Gas Mark 4) for about half an hour.",
         "Turn out onto a flat dish and sprinkle with sugar before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Friar's_Omelette",
@@ -2648,8 +2847,12 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "african"
       ],
       "ingredients": [
@@ -2671,7 +2874,7 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "chopped tomatoes (400 grams)"
+          "item": "chopped tomatoes"
         },
         {
           "qty": 3.0,
@@ -2749,8 +2952,11 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "hard",
-        "moderate",
+        "vegetarian",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
         "middle_eastern"
       ],
       "ingredients": [
@@ -2845,6 +3051,7 @@
       "tags": [
         "dinner",
         "main-meal",
+        "high-protein",
         "medium",
         "moderate",
         "american"
@@ -2907,7 +3114,7 @@
         "In another pie plate, place some all-purpose flour. Dredge battered steaks with flour.",
         "Move to a cooling rack and let rest 10–15 minutes. Wash this once you start frying, or get a clean one.",
         "Heat a 12 inch cast-iron skillet over medium high heat. Once hot, pour in 2 tbsp drippings. Add steaks in a triangle formation around the edges of the pan. Fry for 4 minutes per side.",
-        "Remove steaks from pan and drain on a cooling rack above a sheet pan. Keep steaks warm in a 250°F oven.",
+        "Remove steaks from pan and drain on a cooling rack above a sheet pan. Keep steaks warm in a 250°F (120°C) oven.",
         "Add remaining drippings and 3 tbsp flour. Whisk continuously until blonde color is achieved.",
         "Add chicken broth and deglaze pan. Bring to a boil over medium heat until reduced by ¾.",
         "Add milk mixture and remaining black pepper. Keep over medium heat until gravy coats back of spoon.",
@@ -2926,7 +3133,9 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "british"
       ],
@@ -2997,9 +3206,11 @@
         "Bring almost to the boil.",
         "Switch off the heat and let it sit for 15 minutes.",
         "Heat again or serve as it is.",
-        "Put all the ingredients except the corned beef into the pressure cooker. You do not need much water—perhaps 1–2 cm.",
+        "Put all the ingredients except the corned beef into the pressure cooker.",
+        "You do not need much water—perhaps 1–2 cm.",
         "Bring the pressure cooker up to pressure and cook for about 4 minutes.",
-        "Meanwhile, chop up the corned beef. When the other ingredients are cooked, open the pressure cooker and mix in the corned beef.",
+        "Meanwhile, chop up the corned beef.",
+        "When the other ingredients are cooked, open the pressure cooker and mix in the corned beef.",
         "Serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lancashire_Corned_Beef_Hash",
@@ -3015,15 +3226,18 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
         "british"
       ],
       "ingredients": [
         {
           "qty": 2.0,
           "unit": "lb",
-          "item": "neck of lamb or mutton (900 g)"
+          "item": "neck of lamb or mutton"
         },
         {
           "qty": 2.0,
@@ -3047,11 +3261,15 @@
         }
       ],
       "steps": [
-        "Dice the lamb and set aside. Preheat oven to 325°F / 170°C / Gas mark 3.",
-        "Add a layer of the potatoes to the bottom of a casserole dish, and cover with a handful of the diced onion. Layer the diced lamb on top of this, sprinkling with the herbs.",
-        "Repeat these layers until the dish is full. Top with a final layer of the potatoes.",
+        "Preheat oven to 325°F (165°C) / 170°C / Gas mark 3.",
+        "Dice the lamb and set aside.",
+        "Add a layer of the potatoes to the bottom of a casserole dish, and cover with a handful of the diced onion.",
+        "Layer the diced lamb on top of this, sprinkling with the herbs.",
+        "Repeat these layers until the dish is full.",
+        "Top with a final layer of the potatoes.",
         "Pour boiling water into the dish until filled—if more water is needed, continue to add until topped.",
-        "Bake for at least 1 hour, though traditionally the dish was left baking all day. Mutton will require a longer cooking time."
+        "Bake for at least 1 hour, though traditionally the dish was left baking all day.",
+        "Mutton will require a longer cooking time."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lancashire_Hotpot",
       "sourceName": "Wikibooks Cookbook",
@@ -3066,8 +3284,10 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -3124,16 +3344,18 @@
         {
           "qty": 15.0,
           "unit": "oz",
-          "item": "sweet corn (425 g)"
+          "item": "sweet corn"
         }
       ],
       "steps": [
         "Melt butter in a medium frying pan over medium heat.",
         "Add the chopped onions, and fry until they start to brown.",
         "Add ham and sweet corn, and let fry for 5 minutes.",
-        "Add tomato, salt, and pepper. Though not traditional, you can also add one drop of Tabasco per egg.",
-        "Beat the eggs with ketchup, and add to frying pan. Immediately add mozzarella cheese.",
-        "Let cook to your desired egg texture."
+        "Add tomato, salt, and pepper.",
+        "Though not traditional, you can also add one drop of Tabasco per egg.",
+        "Beat the eggs with ketchup, and add to frying pan.",
+        "Immediately add mozzarella cheese.",
+        "Let cook to the desired egg texture."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Latino_Scramble",
       "sourceName": "Wikibooks Cookbook",
@@ -3148,9 +3370,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "vegetarian",
-        "medium",
-        "moderate",
+        "high-protein",
+        "hard",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -3233,10 +3455,15 @@
         "Just before the carrot and celery are done, add the dried onion and parsley.",
         "Place the drained and cooled lentils in a large bowl, add the carrot mixture, and mash everything with a potato masher. Don't over-mash; it is fine to leave some of the lentils whole.",
         "Taste and adjust seasoning if necessary.",
-        "Add the eggs and about ¼ cup bread crumbs, and stir to combine all the ingredients. Continue to add bread crumbs until you have a slightly moist but not wet mixture.",
-        "Form mixture into patties. Place the formed patties onto a plate and layer with waxed paper in between. Cover and refrigerate for at least 1 hour.",
-        "To cook, it is best to use either a large sauté pan or a griddle on the grill—these burgers don't do well on grill grates. Cook over medium to medium-high heat until warmed through and a nice crust has formed on the outside. Depending on the thickness of the burgers, this will take anywhere from 3–7 minutes per side.",
-        "To serve, you can place on a bun with the usual accoutrements or go crazy with whatever you think will go (garlic aioli, roasted peppers, etc). You could also serve without the bun with grilled pineapple, barbecue sauce, etc—the choices are endless."
+        "Add the eggs and about ¼ cup bread crumbs, and stir to combine all the ingredients.",
+        "Continue to add bread crumbs until you have a slightly moist but not wet mixture.",
+        "Form mixture into patties. Place the formed patties onto a plate and layer with waxed paper in between.",
+        "Cover and refrigerate for at least 1 hour.",
+        "To cook, it is best to use either a large sauté pan or a griddle on the grill—these burgers don't do well on grill grates.",
+        "Cook over medium to medium-high heat until warmed through and a nice crust has formed on the outside.",
+        "Depending on the thickness of the burgers, this will take anywhere from 3–7 minutes per side.",
+        "To serve, you can place on a bun with the usual accoutrements or go crazy with whatever you think will go (garlic aioli, roasted peppers, etc).",
+        "You could also serve without the bun with grilled pineapple, barbecue sauce, etc—the choices are endless."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lentil_Burgers",
       "sourceName": "Wikibooks Cookbook",
@@ -3251,9 +3478,11 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
+        "gluten-free",
+        "high-protein",
+        "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -3333,9 +3562,13 @@
         }
       ],
       "steps": [
-        "Heat oil in a large pot over medium low heat. Add garlic, onion, celery, carrot, and a pinch of salt, and cook until onion is translucent. Avoid browning if you wish to keep the soup lighter in color.",
-        "Add remaining ingredients and bring to a boil over medium high heat. Reduce heat to a simmer, cover, and cook 30 minutes.",
-        "Remove herbs (if you wish) and check for taste. Season with salt and pepper to taste before serving."
+        "Heat oil in a large pot over medium low heat.",
+        "Add garlic, onion, celery, carrot, and a pinch of salt, and cook until onion is translucent.",
+        "Avoid browning if desired to keep the soup lighter in color.",
+        "Add remaining ingredients and bring to a boil over medium high heat.",
+        "Reduce heat to a simmer, cover, and cook 30 minutes.",
+        "Remove herbs (if desired) and check for taste.",
+        "Season with salt and pepper to taste before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Soup_with_Cream_and_Lemon",
       "sourceName": "Wikibooks Cookbook",
@@ -3350,8 +3583,8 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
-        "moderate",
+        "hard",
+        "budget",
         "mediterranean"
       ],
       "ingredients": [
@@ -3393,17 +3626,17 @@
         {
           "qty": 1.5,
           "unit": "cup",
-          "item": "tomato sauce (360 ml)"
+          "item": "tomato sauce"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "chopped fresh basil (120 ml)"
+          "item": "chopped fresh basil"
         },
         {
           "qty": 0.25,
           "unit": "cup",
-          "item": "white wine (60 ml)"
+          "item": "white wine"
         },
         {
           "qty": 1.0,
@@ -3413,27 +3646,36 @@
         {
           "qty": 0.75,
           "unit": "lb",
-          "item": "dried penne or other pasta (330 g)"
+          "item": "dried penne or other pasta"
         },
         {
           "qty": 0.3333,
           "unit": "cup",
-          "item": "grated Parmesan cheese (80 ml)"
+          "item": "grated Parmesan cheese"
         },
         {
           "qty": 3.0,
           "unit": "oz",
-          "item": "mozzarella or goat cheese (optional) (85 g)"
+          "item": "mozzarella or goat cheese (optional)"
         }
       ],
       "steps": [
         "Preheat oven to 425°F (220°C).",
-        "Put leeks, onion, and red bell pepper in a shallow roasting pan, tossing them with a tablespoon of olive oil to coat them. Add thyme and roast in the preheated oven until they are cooked and start to brown (about 30–45 minutes). Check early to make sure they're not burning, and add a little water or vegetable stock if the juices are evaporating.",
-        "While vegetables are roasting, sauté the garlic in a tablespoon of olive oil until it begins to colour. Add the tomato sauce and simmer 1 minute. Then, turn off heat and add the basil. Stir the roasted vegetables into the sauce. Gorgeous!",
-        "Turn oven down to 375°F (190°C). Add wine to roasting pan and stir, scraping up bits of vegetables that are stuck to pan, and add these deglazed juices to the sauce.",
-        "Boil a large pot of water, and add the salt and pasta. Cook the pasta for about 6–8 minutes until al dente.",
-        "Drain pasta, and add it to the sauce and vegetables. Add the cheese and mix it all.",
-        "Grease a 2–2 ½ quart casserole dish, and pour it all in. Top with the optional mozzarella or goat cheese if you like, then bake it all for another 15 minutes in the 375°F (190°C) oven."
+        "Put leeks, onion, and red bell pepper in a shallow roasting pan, tossing them with a tablespoon of olive oil to coat them.",
+        "Add thyme and roast in the preheated oven until they are cooked and start to brown (about 30–45 minutes).",
+        "Check early to make sure they're not burning, and add a little water or vegetable stock if the juices are evaporating.",
+        "While vegetables are roasting, sauté the garlic in a tablespoon of olive oil until it begins to colour.",
+        "Add the tomato sauce and simmer 1 minute.",
+        "Turn off heat and add the basil.",
+        "Stir the roasted vegetables into the sauce. Gorgeous!",
+        "Turn oven down to 375°F (190°C).",
+        "Add wine to roasting pan and stir, scraping up bits of vegetables that are stuck to pan, and add these deglazed juices to the sauce.",
+        "Boil a large pot of water, and add the salt and pasta.",
+        "Cook the pasta for about 6–8 minutes until al dente.",
+        "Drain pasta, and add it to the sauce and vegetables.",
+        "Add the cheese and mix it all.",
+        "Grease a 2–2 ½ quart casserole dish, and pour it all in.",
+        "Top with the optional mozzarella or goat cheese if desired, then bake it all for another 15 minutes in the 375°F (190°C) oven."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Roasted_Vegetable_Pasta",
       "sourceName": "Wikibooks Cookbook",
@@ -3448,15 +3690,17 @@
       "tags": [
         "dinner",
         "main-meal",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
-        "other"
+        "splurge",
+        "latin_american"
       ],
       "ingredients": [
         {
           "qty": 3.0,
           "unit": "lb",
-          "item": "beef tenderloin or other tender steak (900 g)"
+          "item": "beef tenderloin or other tender steak"
         },
         {
           "qty": 0.25,
@@ -3527,9 +3771,11 @@
       "steps": [
         "Cut the meat into thin strips and marinate them in the wine for 1 hour.",
         "Use a wok to cook garlic in oil over medium heat and add the meat. Reserve the juice.",
-        "Add the tomato purée, salt and pepper. Cook for a few minutes.",
+        "Add the tomato purée, salt and pepper.",
+        "Cook for a few minutes.",
         "Add the soy sauce while stirring the meat in the wok.",
-        "Add the onions, aji strips, cilantro and vinegar. Combine the juice from the meat.",
+        "Add the onions, aji strips, cilantro and vinegar.",
+        "Combine the juice from the meat.",
         "Fry the potatoes in a separate pan and add to the other ingredients.",
         "Serve the dish with white rice."
       ],
@@ -3546,7 +3792,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "easy",
         "moderate",
         "american"
       ],
@@ -3578,9 +3826,11 @@
         }
       ],
       "steps": [
-        "Make a slit in the top center of the roast about 1¼ inch deep. Fill with Apple Stuffing. Brush opening with Dijon mustard, and press closed.",
-        "Brush roast with olive oil and liberally shake on grill seasoning. Set aside until needed.",
-        "Grill on a preheated charcoal grill, turning often, until internal temperature reaches 140°F.",
+        "Make a slit in the top center of the roast about 1¼ inch deep. The pork is done at 145°F (63°C) inside; rest 3 minutes.",
+        "Fill with Apple Stuffing. Brush opening with Dijon mustard, and press closed.",
+        "Brush roast with olive oil and liberally shake on grill seasoning.",
+        "Set aside until needed.",
+        "Grill on a preheated charcoal grill, turning often, until internal temperature reaches 140°F (60°C).",
         "Remove and let rest 7 minutes. Serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Stuffed_Pork_Loin",
@@ -3596,8 +3846,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "budget",
         "african"
       ],
       "ingredients": [
@@ -3689,11 +3942,15 @@
       ],
       "steps": [
         "In a large pot, heat the oil over medium heat.",
-        "Add the onions, garlic, grated ginger. Cook, stirring, for about 5 minutes until the onions become translucent.",
-        "Add the tomato paste, bouillon cubes, and 6 cups (about 1.5 litres) hot water. Simmer over low heat for 10 minutes.",
-        "Stir in the peanut butter until fully incorporated. Add the eggplant, sweet potatoes, green cabbage, carrots, turnips, and habanero, then stir carefully to avoid fully crushing the habanero.",
+        "Add the onions, garlic, grated ginger.",
+        "Cook, stirring, for about 5 minutes until the onions become translucent.",
+        "Add the tomato paste, bouillon cubes, and 6 cups (about 1.5 litres) hot water.",
+        "Simmer over low heat for 10 minutes.",
+        "Stir in the peanut butter until fully incorporated.",
+        "Add the eggplant, sweet potatoes, green cabbage, carrots, turnips, and habanero, then stir carefully to avoid fully crushing the habanero.",
         "Cover and cook for about an hour over low heat until thickened.",
-        "Stir in the okra, then season with salt and black pepper to your desired taste. Cook for about 30 minutes until the vegetables become soft.",
+        "Stir in the okra, then season with salt and black pepper to the desired taste.",
+        "Cook for about 30 minutes until the vegetables become soft.",
         "Remove the chilli pepper and sprinkle it with peanut butter if you will like and if not leave it like that.",
         "Serve hot."
       ],
@@ -3710,8 +3967,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
-        "moderate",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "hard",
+        "budget",
         "african"
       ],
       "ingredients": [
@@ -3777,14 +4037,16 @@
         }
       ],
       "steps": [
-        "Prepare the vegetables for stuffing by carefully cutting off the tops and scooping out the seeds and flesh, creating hollow shells. Set aside the scooped-out vegetable flesh for later use.",
-        "In a mixing bowl, combine the medium-grain rice, tomato paste, olive oil, finely chopped parsley, finely chopped mint leaves, minced garlic, ground cumin, ground coriander, salt, and black pepper. Mix well until all the ingredients are thoroughly combined.",
+        "Preheat the oven to 180°C (350°F (175°C)) and bake the mahshi for about 60–75 minutes, or until the vegetables are tender and the rice filling is cooked through.",
+        "Prepare the vegetables for stuffing by carefully cutting off the tops and scooping out the seeds and flesh, creating hollow shells.",
+        "Set aside the scooped-out vegetable flesh for later use.",
+        "In a mixing bowl, combine the medium-grain rice, tomato paste, olive oil, finely chopped parsley, finely chopped mint leaves, minced garlic, ground cumin, ground coriander, salt, and black pepper.",
+        "Mix well until all the ingredients are thoroughly combined.",
         "Fill each hollowed vegetable with the rice and herb mixture, packing it firmly and leaving some space at the top for the rice to expand while cooking.",
         "Arrange the stuffed vegetables in a baking dish or casserole dish, placing them closely together to support each other.",
         "Use the reserved vegetable flesh to fill any empty spaces between the stuffed vegetables. This helps to prevent them from shifting during cooking.",
         "Pour enough water into the baking dish to partially cover the stuffed vegetables. This will help create a moist cooking environment.",
         "Cover the baking dish with aluminum foil, ensuring it is tightly sealed to retain moisture.",
-        "Preheat the oven to 180°C (350°F) and bake the mahshi for about 60–75 minutes, or until the vegetables are tender and the rice filling is cooked through.",
         "Remove the foil and continue baking for an additional 10–15 minutes to allow the tops of the stuffed vegetables to slightly brown.",
         "Once cooked, remove the mahshi from the oven and let it cool slightly before serving."
       ],
@@ -3801,15 +4063,16 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "splurge",
         "american"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "package",
-          "item": "macaroni (8 ounces)"
+          "item": "macaroni"
         },
         {
           "qty": 0.5,
@@ -3834,7 +4097,7 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "cream of celery soup (10¾ ounces)"
+          "item": "cream of celery soup"
         },
         {
           "qty": 1.0,
@@ -3844,12 +4107,12 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "salmon (14¾ ounces)"
+          "item": "salmon"
         },
         {
           "qty": 1.0,
           "unit": "bag",
-          "item": "frozen peas (8 ounces)"
+          "item": "frozen peas"
         },
         {
           "qty": 1.0,
@@ -3884,8 +4147,12 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "medium",
+        "budget",
         "african"
       ],
       "ingredients": [
@@ -3914,8 +4181,11 @@
         "Soak split pigeon peas in 1.5 L of warm water for 1 hour. The peas should be plumped up and soft, and the skins that were on some of them should be coming off.",
         "Sieve the water into a saucepan (all the flavor is in there), and put the water on the stove to start boiling.",
         "Wash the peas, and remove all the skins—they will float easily because of the earlier soaking.",
-        "Put the peas in to the water you placed on the stove, then add salt and rock salt. Let it boil until the peas are mushy. There will be a froth foaming at the top while it boils—remove it with a ladle.",
-        "When the peas are mushy, add peanut butter and mix. There is a special contraption called ugwech that you can use, but you can also use a hand blender as it is easier on the muscles and quicker. The peanut butter will make the soup thick, so please add it according to taste and your desired texture.",
+        "Put the peas in to the water you placed on the stove, then add salt and rock salt.",
+        "Let it boil until the peas are mushy.",
+        "There will be a froth foaming at the top while it boils—remove it with a ladle.",
+        "When the peas are mushy, add peanut butter and mix.",
+        "There is a special contraption called ugwech that you can use, but you can also use a hand blender as it is easier on the muscles and quicker. The peanut butter will make the soup thick, so please add it according to taste and the desired texture.",
         "If it becomes too thick you can add hot water to loosen the mixture.",
         "Serve."
       ],
@@ -3932,15 +4202,16 @@
       "tags": [
         "dinner",
         "main-meal",
+        "high-protein",
         "medium",
-        "budget",
+        "moderate",
         "american"
       ],
       "ingredients": [
         {
           "qty": 1.0,
           "unit": "",
-          "item": "pack (800 g) spaghetti noodles"
+          "item": "pack spaghetti noodles"
         },
         {
           "qty": 1.0,
@@ -3999,9 +4270,12 @@
         }
       ],
       "steps": [
-        "Bring the water to a boil in a pot. Add the spaghetti and 2 tbsp oil. Boil for 10 minutes, then drain the spaghetti, reserving some cooking water.",
-        "Boil the chicken in salted water until the color changes. Drain the chicken.",
-        "Heat the remaining oil in a non-stick skillet. Add and fry the garlic, capsicum, and onion.",
+        "Bring the water to a boil in a pot.",
+        "Add the spaghetti and 2 tbsp oil.",
+        "Boil for 10 minutes, then drain the spaghetti, reserving some cooking water.",
+        "Boil the chicken in salted water until the color changes. Drain the chicken. The chicken is done at 165°F (74°C) inside.",
+        "Heat the remaining oil in a non-stick skillet.",
+        "Add and fry the garlic, capsicum, and onion.",
         "Add the drained chicken, cream, black pepper, salt, and parsley. Stir until well-combined.",
         "Add the spaghetti, and toss together until well-mixed.",
         "Serve hot."
@@ -4019,7 +4293,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
         "moderate",
         "french"
       ],
@@ -4052,7 +4329,7 @@
       ],
       "steps": [
         "Stuff the chicken with the quartered lemon, garlic and rosemary.",
-        "Bind the chicken ready for roasting.",
+        "Bind the chicken ready for roasting. The chicken is done at 165°F (74°C) inside.",
         "Fill a baking tray with the salt and place the chicken on top.",
         "Roast for 90 minutes at 190°C. The flesh should be moist and the skin crisp."
       ],
@@ -4070,8 +4347,10 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -4115,9 +4394,10 @@
         "Crack eggs into a measuring cup.",
         "Add the milk (if desired) and salt.",
         "Using a whisk or fork, beat the mixture until foamy.",
-        "Melt butter in a frying pan on medium heat",
+        "Melt butter in a frying pan on medium heat.",
         "Pour eggs into frying pan.",
-        "Stir mixture to break up the egg as it cooks and allow more liquid to touch the hot pan. Stirring rapidly will create small curds, while slower stirring will create larger curds.",
+        "Stir mixture to break up the egg as it cooks and allow more liquid to touch the hot pan.",
+        "Stirring rapidly will create small curds, while slower stirring will create larger curds.",
         "Cook until just before you feel that they are done, since the eggs will continue to cook after being removed from the pan. The eggs are done when the sheen disappears; stop cooking just before this happens.",
         "Transfer to a plate. Season with black pepper (black pepper will burn and become bitter if seasoned before cooking).",
         "Eat as is or with ketchup (tomato sauce), salsa, and/or butter on toast."
@@ -4135,8 +4415,12 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "medium",
-        "moderate",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "hard",
+        "budget",
         "african"
       ],
       "ingredients": [
@@ -4174,12 +4458,16 @@
       "steps": [
         "Soak the rice in water for at least 8 hours, and up to overnight. Drain the rice.",
         "Take a few tablespoons of the soaked rice, and boil it until tender.",
-        "Combine the cooked rice and uncooked rice. Blend until smooth, adding only as much water as you need to get a paste—don’t let it become watery.",
-        "Mix yeast and sugar with a small amount of warm water in a small bowl. Leave for a few minutes to foam.",
-        "In a large bowl, mix the blended rice with the yeast mixture and baking powder. Cover, and let rest for 6–8 hours.",
+        "Combine the cooked rice and uncooked rice.",
+        "Blend until smooth, adding only as much water as you need to get a paste—don’t let it become watery.",
+        "Mix yeast and sugar with a small amount of warm water in a small bowl.",
+        "Leave for a few minutes to foam.",
+        "In a large bowl, mix the blended rice with the yeast mixture and baking powder.",
+        "Cover, and let rest for 6–8 hours.",
         "Season the batter with salt and sugar to taste.",
-        "Heat a small amount of oil in a non-stick pan. Pour small dollops of batter into the pan, and fry like pancakes. They should come out fluffy and light.",
-        "Serve with hot sauce, and enjoy."
+        "Heat a small amount of oil in a non-stick pan.",
+        "Pour small dollops of batter into the pan, and fry like pancakes. They should come out fluffy and light.",
+        "Serve with hot sauce."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Masa_(Hausa_Rice_Pancake)",
       "sourceName": "Wikibooks Cookbook",
@@ -4195,7 +4483,9 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "easy",
+        "dairy-free",
+        "high-protein",
+        "medium",
         "budget",
         "american"
       ],
@@ -4208,7 +4498,7 @@
         {
           "qty": 1.0,
           "unit": "package",
-          "item": "yves \"Veggie Ground Round\" ground beef substitute (340 g)"
+          "item": "yves \"Veggie Ground Round\" ground beef substitute"
         },
         {
           "qty": 3.0,
@@ -4237,13 +4527,14 @@
         }
       ],
       "steps": [
-        "Preheat oven to 350°F.",
+        "Preheat oven to 350°F (175°C).",
         "Sauté onion; pour off oil and set aside.",
-        "In a large bowl, beat eggs. Add the ground beef substitute, and break up well with fork.",
+        "In a large bowl, beat eggs.",
+        "Add the ground beef substitute, and break up well with fork.",
         "Add all remaining ingredients and mix well.",
         "Grease a large 12 x 18-inch (31 x 45 cm) baking tray.",
-        "Drop mixture onto the tray in tablespoonfuls. You should get 30–40 meatballs. Don't worry if the mixture falls apart a little on tray.",
-        "Bake at 350°F for 22 minutes.",
+        "Drop mixture onto the tray in tablespoonfuls. This makes 30–40 meatballs. Don't worry if the mixture falls apart a little on tray.",
+        "Bake at 350°F (175°C) for 22 minutes.",
         "Flip meatballs over.",
         "Bake for an additional 9 minutes."
       ],
@@ -4260,8 +4551,10 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -4278,7 +4571,7 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "tomato paste (6 ounces)"
+          "item": "tomato paste"
         },
         {
           "qty": 2.0,
@@ -4358,7 +4651,8 @@
       ],
       "steps": [
         "Crumble the raw ground beef into the cold water.",
-        "Add remaining ingredients and spices. Stir well, breaking the meat up before cooking.",
+        "Add remaining ingredients and spices.",
+        "Stir well, breaking the meat up before cooking. Ground meat is done at 160°F (71°C) inside.",
         "Cover and simmer over low heat for two hours, stirring occasionally.",
         "Cool, then refrigerate and remove solidified grease.",
         "Reheat and serve as desired."
@@ -4376,8 +4670,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -4458,8 +4753,11 @@
       "tags": [
         "lunch",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
         "medium",
-        "moderate",
+        "splurge",
         "african"
       ],
       "ingredients": [
@@ -4543,8 +4841,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "budget",
+        "high-protein",
+        "medium",
+        "moderate",
         "american"
       ],
       "ingredients": [
@@ -4619,8 +4918,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "medium",
-        "moderate",
+        "vegetarian",
+        "hard",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -4632,7 +4932,7 @@
         {
           "qty": 0.6667,
           "unit": "cup",
-          "item": "warm water (110°F/45°C)"
+          "item": "warm water"
         },
         {
           "qty": 2.0,
@@ -4652,7 +4952,7 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "tomato sauce (10 ounces)"
+          "item": "tomato sauce"
         },
         {
           "qty": 1.0,
@@ -4681,14 +4981,18 @@
         }
       ],
       "steps": [
-        "Sprinkle the yeast over the surface of the warm water in a large bowl. Let stand for 1 minute, then stir to dissolve.",
+        "Preheat the oven to 550°F (290°C) or as hot as the oven will go.",
+        "Sprinkle the yeast over the surface of the warm water in a large bowl.",
+        "Let stand for 1 minute, then stir to dissolve.",
         "Mix in the flour, salt, and olive oil.",
-        "When the dough is too thick to stir, turn out onto a floured surface, and knead for 5 minutes. Knead in a little more flour if the dough is too sticky.",
+        "When the dough is too thick to stir, turn out onto a floured surface, and knead for 5 minutes.",
+        "Knead in a little more flour if the dough is too sticky.",
         "Place into an oiled bowl, cover, and set aside in a warm place to rise until doubled in bulk.",
-        "Preheat the oven to 550°F or as hot as your oven will go. Authentic New York pizzerias bake pizzas in ovens from 700–1,000°F. If using a pizza stone, preheat it in the oven as well, setting it on the lowest shelf.",
+        "Authentic New York pizzerias bake pizzas in ovens from 700–1,0°F (-18°C). If using a pizza stone, preheat it in the oven as well, setting it on the lowest shelf.",
         "When the dough has risen, flatten it out on a lightly floured surface.",
         "Roll or stretch out into a 12-inch circle, and place on a baking sheet. If you are using a pizza stone, you may place the pizza on a piece of parchment while preheating the stone in the oven.",
-        "Spread the tomato sauce evenly over the dough. Sprinkle with oregano, mozzarella cheese, basil, Romano cheese, and red pepper flakes.",
+        "Spread the tomato sauce evenly over the dough.",
+        "Sprinkle with oregano, mozzarella cheese, basil, Romano cheese, and red pepper flakes.",
         "Bake for 12–15 minutes in the preheated oven, until the bottom of the crust is browned when you lift up the edge a little, and cheese is melted and bubbly.",
         "Cool for about 5 minutes before slicing and serving."
       ],
@@ -4705,8 +5009,9 @@
       "tags": [
         "breakfast",
         "main-meal",
+        "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -4772,11 +5077,17 @@
         }
       ],
       "steps": [
-        "Separate eggs. Mix whites with milk and parsley, then add salt and pepper. Beat with a fork until slightly bubbly. Set aside.",
-        "Cook bacon on medium-high heat in a large, nonstick skillet and set on paper towels or napkins to drain. Pour off all but 1-2 tablespoons fat. Turn heat down to medium-low and add egg whites.",
-        "As the egg whites cook, mix egg yolks with water in double boiler on medium to medium-high heat. The water in the double boiler should simmer, not boil. Stir constantly with a fork until yolks increase in size and thickness and turn a pale, opaque yellow.",
-        "Remove from heat and slowly stir in melted butter. Then add lemon juice and salt and cayenne pepper to taste.",
-        "Place cooked egg whites on a plate, top with bacon, then cover with Hollandaise sauce. Serve with warm crusty bread for dipping in the sauce."
+        "Separate eggs. Mix whites with milk and parsley, then add salt and pepper.",
+        "Beat with a fork until slightly bubbly. Set aside.",
+        "Cook bacon on medium-high heat in a large, nonstick skillet and set on paper towels or napkins to drain.",
+        "Pour off all but 1-2 tablespoons fat.",
+        "Turn heat down to medium-low and add egg whites.",
+        "As the egg whites cook, mix egg yolks with water in double boiler on medium to medium-high heat. The water in the double boiler should simmer, not boil.",
+        "Stir constantly with a fork until yolks increase in size and thickness and turn a pale, opaque yellow.",
+        "Remove from heat and slowly stir in melted butter.",
+        "Add lemon juice and salt and cayenne pepper to taste.",
+        "Place cooked egg whites on a plate, top with bacon, then cover with Hollandaise sauce.",
+        "Serve with warm crusty bread for dipping in the sauce."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Not_Quite_Eggs_Benedict",
       "sourceName": "Wikibooks Cookbook",
@@ -4791,8 +5102,10 @@
       "tags": [
         "lunch",
         "main-meal",
+        "gluten-free",
+        "high-protein",
         "easy",
-        "moderate",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -4823,9 +5136,10 @@
         }
       ],
       "steps": [
-        "Combine all ingredients in a pot. Cook on medium heat for 15 minutes.",
+        "Combine all ingredients in a pot.",
+        "Cook on medium heat for 15 minutes.",
         "Taste kidney beans for flavor to determine when done.",
-        "Serve with crackers, shredded cheese, and your favorite spices."
+        "Serve with crackers, shredded cheese, and the favorite spices."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Easy_Chili",
       "sourceName": "Wikibooks Cookbook",
@@ -4840,8 +5154,11 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
         "american"
       ],
       "ingredients": [
@@ -4877,8 +5194,13 @@
         }
       ],
       "steps": [
-        "Sear beef in a little cooking oil (not lard) until lightly browned. Drop the seared beef and chili peppers in a large stock pot, and add enough water to keep the meat from burning. Bring to a boil, then lower heat, cover, and simmer about 30 minutes.",
-        "Take pot off the stove and add spices and garlic. Put back on the stove, bring to a boil again, lower heat, and simmer another 90 minutes, keeping the lid on as much as possible. Stir when necessary, but remember that too much stirring will tear the meat. Add a little more water if anything seems seriously in danger of burning (but as little water as possible).",
+        "Sear beef in a little cooking oil (not lard) until lightly browned. Ground meat is done at 160°F (71°C) inside.",
+        "Drop the seared beef and chili peppers in a large stock pot, and add enough water to keep the meat from burning.",
+        "Bring to a boil, then lower heat, cover, and simmer about 30 minutes.",
+        "Take pot off the stove and add spices and garlic.",
+        "Put back on the stove, bring to a boil again, lower heat, and simmer another 90 minutes, keeping the lid on as much as possible.",
+        "Stir when necessary, but remember that too much stirring will tear the meat.",
+        "Add a little more water if anything seems seriously in danger of burning (but as little water as possible).",
         "Take pot off the stove and skim off all or most of the grease. Serve hot."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Jailhouse_Chili",
@@ -4894,8 +5216,10 @@
       "tags": [
         "dinner",
         "main-meal",
+        "gluten-free",
+        "dairy-free",
         "medium",
-        "splurge",
+        "moderate",
         "american"
       ],
       "ingredients": [
@@ -4922,9 +5246,10 @@
       ],
       "steps": [
         "Coat roast with oil. Shake on seasoning and massage into meat.",
-        "Place dry mesquite chunks into firebox of a 250°F smoker.",
-        "Insert a probe thermometer into center of roast and set for 118°F.",
-        "Place roast into smoker and lower heat to 200°F. Cook until internal temperature is achieved, changing mesquite as needed.",
+        "Place dry mesquite chunks into firebox of a 250°F (120°C) smoker.",
+        "Insert a probe thermometer into center of roast and set for 118°F (48°C).",
+        "Place roast into smoker and lower heat to 200°F (95°C).",
+        "Cook until internal temperature is achieved, changing mesquite as needed.",
         "Remove and grill on high heat for 7 minutes or until desired crust is achieved.",
         "Remove and let rest 10 minutes. Serve."
       ],
@@ -4941,8 +5266,9 @@
       "tags": [
         "lunch",
         "main-meal",
+        "vegetarian",
         "easy",
-        "moderate",
+        "splurge",
         "american"
       ],
       "ingredients": [
@@ -4983,9 +5309,12 @@
         }
       ],
       "steps": [
-        "Drizzle filet with olive oil and season with salt and black pepper. Sear in a cast-iron skillet over medium heat for 6 minutes per side. Remove and let rest 7 minutes before slicing into bite-size pieces. Keep warm.",
+        "Drizzle filet with olive oil and season with salt and black pepper.",
+        "Sear in a cast-iron skillet over medium heat for 6 minutes per side.",
+        "Remove and let rest 7 minutes before slicing into bite-size pieces. Keep warm.",
         "Toss onion with a little olive oil and sauté in same pan until lightly browned around edges.",
-        "To serve, place a big scoop of steak into a hoagie roll. Top with onion and torn cheese. Serve."
+        "To serve, place a big scoop of steak into a hoagie roll.",
+        "Top with onion and torn cheese. Serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Philly_Cheesesteak",
       "sourceName": "Wikibooks Cookbook",
@@ -5000,7 +5329,10 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -5027,11 +5359,13 @@
         }
       ],
       "steps": [
-        "Season ribs with the barbecue rub. Refrigerate for at least 1 hour.",
-        "Place chunks into the firebox of a 250°F smoker or the coal area of a 250°F charcoal grill set for indirect heat.",
+        "Season ribs with the barbecue rub.",
+        "Refrigerate for at least 1 hour.",
+        "Place chunks into the firebox of a 250°F (120°C) smoker or the coal area of a 250°F (120°C) charcoal grill set for indirect heat.",
         "Place ribs into food box or on top of the grate of the charcoal grill, cover, and cook, basting often with sauce, for 5–6 hours.",
         "Brush sauce generously on top and bottom of ribs then place on a medium high grill, continually brushing with sauce until well browned, then flip and repeat 1 more time.",
-        "Place remaining sauce into a squirt bottle. Meanwhile, remove ribs and let rest for 10 minutes.",
+        "Place remaining sauce into a squirt bottle.",
+        "Meanwhile, remove ribs and let rest for 10 minutes.",
         "Serve with sauce in a squirt bottle."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Southern_Barbecue_Ribs",
@@ -5047,8 +5381,11 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
-        "moderate",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "splurge",
         "american"
       ],
       "ingredients": [
@@ -5060,27 +5397,27 @@
         {
           "qty": 4.0,
           "unit": "tbsp",
-          "item": "fresh lemon juice, divided (60 ml)"
+          "item": "fresh lemon juice, divided"
         },
         {
           "qty": 2.0,
           "unit": "tsp",
-          "item": "pure maple syrup (10 ml)"
+          "item": "pure maple syrup"
         },
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "grapeseed oil (or other neutral oil) (30 ml)"
+          "item": "grapeseed oil (or other neutral oil)"
         },
         {
           "qty": 1.5,
           "unit": "tsp",
-          "item": "chipotle powder (chipotle barbecue sauce may be substituted for this) (7 g)"
+          "item": "chipotle powder (chipotle barbecue sauce may be substituted for this)"
         },
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "crushed dried rosemary (5 g)"
+          "item": "crushed dried rosemary"
         },
         {
           "qty": 2.0,
@@ -5096,12 +5433,17 @@
       "steps": [
         "Completely immerse cedar planks in water for several hours or overnight.",
         "Heat grill to medium-high.",
-        "Mix 2 tablespoons (30 ml) lemon juice, the oil, rosemary, maple syrup, and half of the chipotle powder in a small bowl. Coat the salmon with the mixture and let rest at room temperature for 20 minutes.",
+        "Mix 2 tablespoons (30 ml) lemon juice, the oil, rosemary, maple syrup, and half of the chipotle powder in a small bowl.",
+        "Coat the salmon with the mixture and let rest at room temperature for 20 minutes.",
         "Mix the remaining lemon juice with the remaining chipotle powder with a fork and set aside as a garnish.",
-        "Place plank(s) on grill and close lid. Allow plank to heat for a couple minutes.",
+        "Place plank(s) on grill and close lid.",
+        "Allow plank to heat for a couple minutes.",
         "Lightly sprinkle salt on plank(s).",
-        "Put salmon on plank, keeping fish at least an inch from the edge of the plank (in the case of fillets, place skin-side down). Reduce heat to low and close lid.",
-        "Grill for roughly 15 minutes without turning or moving salmon until desired \"doneness\" is reached. Generally, salmon should be cooked until the flesh loses its transparency and the meat can easily be broken with a fork. Spray with water to douse any flames that light on the sides of the plank.",
+        "Put salmon on plank, keeping fish at least an inch from the edge of the plank (in the case of fillets, place skin-side down).",
+        "Reduce heat to low and close lid.",
+        "Grill for roughly 15 minutes without turning or moving salmon until desired \"doneness\" is reached.",
+        "Generally, salmon should be cooked until the flesh loses its transparency and the meat can easily be broken with a fork.",
+        "Spray with water to douse any flames that light on the sides of the plank.",
         "When cooked, place the salmon on a serving platter and sprinkle with the scallions.",
         "Immerse the cedar plank in water as a safety precaution.",
         "Serve the salmon with the optional lemon juice/chipotle sauce."
@@ -5119,7 +5461,9 @@
       "tags": [
         "lunch",
         "main-meal",
-        "medium",
+        "dairy-free",
+        "high-protein",
+        "hard",
         "moderate",
         "american"
       ],
@@ -5186,11 +5530,15 @@
         }
       ],
       "steps": [
-        "Combine water, salt, and honey in a 6-quart cooler. Add pork and refrigerate or place a large bag of ice on top for 8–12 hours.",
-        "Remove pork from brine and pat dry with paper towels. Combine remaining seasonings and rub on pork.",
-        "Light a few chunks of apple wood and place in the firebox of a smoker. Keep temperature in smoker around 210°F.",
+        "Combine water, salt, and honey in a 6-quart cooler.",
+        "Add pork and refrigerate or place a large bag of ice on top for 8–12 hours.",
+        "Remove pork from brine and pat dry with paper towels.",
+        "Combine remaining seasonings and rub on pork.",
+        "Light a few chunks of apple wood and place in the firebox of a smoker.",
+        "Keep temperature in smoker around 210°F (100°C).",
         "Place in a smoker and cook for 8–12 hours, changing wood as needed. The meat should be tender at this point—if not, continue smoking.",
-        "Let rest 1 hour, then shred with two forks. Serve on hamburger buns."
+        "Let rest 1 hour, then shred with two forks.",
+        "Serve on hamburger buns."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pulled_Pork_Sandwiches",
       "sourceName": "Wikibooks Cookbook",

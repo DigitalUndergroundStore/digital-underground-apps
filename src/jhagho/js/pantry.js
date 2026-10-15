@@ -1,4 +1,4 @@
-/* Pantry Week v3.13.0 — data, shopping list, migration. No network. */
+/* Pantry Week v3.14.0 — data, shopping list, migration. No network. */
 "use strict";
 
 (function () {
@@ -20,7 +20,7 @@
   var KEY = "pantry_week_v2";
   var KEY_V1 = "pantry_week_v1";
   /* Bump when bundled starter catalog changes (tags, content). Triggers localStorage refresh. */
-  var BUNDLED_CATALOG_VERSION = "library-v3-2026-10";
+  var BUNDLED_CATALOG_VERSION = "library-v3-2026-10b";
 
   var UNIT_MAP = {
     cup: "cup", cups: "cup",
@@ -1227,7 +1227,8 @@
   var PLAN_CUISINE_TAGS = [
     "canadian", "american", "italian", "mexican", "chinese", "indian",
     "british", "french", "mediterranean", "japanese", "thai", "korean",
-    "greek", "middle_eastern", "caribbean", "african", "other"
+    "greek", "middle_eastern", "caribbean", "african", "latin_american",
+    "european", "southeast_asian", "other"
   ];
   var PLAN_CUISINE_KEY = "pantry_week_plan_cuisines_v1";
 
@@ -1615,6 +1616,9 @@
     if (tag === "middle_eastern") return "Middle Eastern";
     if (tag === "caribbean") return "Caribbean";
     if (tag === "african") return "African";
+    if (tag === "latin_american") return "Latin American";
+    if (tag === "european") return "European";
+    if (tag === "southeast_asian") return "Southeast Asian";
     if (tag === "other") return "Other";
     if (tag === "my-creation") return "My creation";
     if (tag === "budget") return "Budget";
@@ -1630,7 +1634,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.13.0",
+    VERSION: "3.14.0",
     shopItem: shopItem,
     BUNDLED_CATALOG_VERSION: BUNDLED_CATALOG_VERSION,
     KEY: KEY,

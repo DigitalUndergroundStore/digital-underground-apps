@@ -1,4 +1,4 @@
-/* Pantry Week v3.13.0 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.14.0 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -34,6 +34,9 @@
     ["middle_eastern", "Middle Eastern"],
     ["caribbean", "Caribbean"],
     ["african", "African"],
+    ["latin_american", "Latin American"],
+    ["european", "European"],
+    ["southeast_asian", "Southeast Asian"],
     ["other", "Other"]
   ];
   let planCuisineFilters = PW.loadPlanCuisineFilters();

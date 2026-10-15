@@ -10,7 +10,7 @@ const LISTING_PREFIX = "community:item:";
 const INDEX_KEY = "community:index";
 const SOURCE = "developer-marketplace";
 const NOTIFY_TO = "digitalunderground.store@proton.me";
-const NOTIFY_FROM = "Digital Underground Backup <onboarding@resend.dev>";
+const NOTIFY_FROM = "Digital Underground <hello@digitalundergroundstore.com>";
 
 function todayUTC(d = new Date()) {
   return d.toISOString().slice(0, 10);

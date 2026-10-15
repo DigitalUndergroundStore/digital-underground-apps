@@ -285,7 +285,7 @@
       }
       if (auth) { auth = ""; history.replaceState(null, "", "/community/dashboard/"); }
       if (!d.listings) { gate(false); alertMsg($("login-msg"), d.error || "Could not load your dashboard. Try again.", false); return; }
-      data = d; showView("app"); render();
+      data = d; showView("app"); render(); if (window.duNavRecheck) duNavRecheck();
       if (d.account && !d.account.hasPassword) {
         $("claim").hidden = false;
         try { var em = localStorage.getItem("du_creator_email"); if (em) $("claim-form").email.value = em; } catch (_) {}

@@ -287,3 +287,29 @@ button.linkish { background: none; border: 0; color: var(--cyan); text-decoratio
 .pw-eye:hover, .pw-eye[aria-pressed="true"] { color: var(--cyan); }
 .pw-eye:focus-visible { outline: 2px solid var(--cyan); outline-offset: -2px; }
 form .pw-mismatch, .pw-mismatch { color: #fca5a5; margin-top: -8px; }
+
+/* Share pill (marketplace header) */
+.title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.title-row h1 { min-width: 0; }
+.share-pill {
+  flex: none; display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px; padding: 0 18px 0 14px; border-radius: 999px; cursor: pointer;
+  font: 700 15px/1 inherit; font-family: inherit; color: #fff;
+  background: linear-gradient(110deg, #7c3aed, #2563eb);
+  border: 1px solid rgba(255, 255, 255, .22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 8px 20px rgba(76, 29, 149, .4);
+  transition: transform .15s ease, filter .15s ease; -webkit-tap-highlight-color: transparent;
+}
+.share-pill svg { width: 18px; height: 18px; }
+.share-pill:hover { filter: brightness(1.08); }
+.share-pill:active { transform: scale(.96); }
+.share-pill:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+.toast {
+  position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 50;
+  transform: translate(-50%, 20px); opacity: 0; pointer-events: none;
+  padding: 12px 18px; border-radius: 999px; font-weight: 650; font-size: 14px; color: #fff;
+  background: rgba(16, 12, 28, .96); border: 1px solid rgba(191, 232, 255, .35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .45); transition: opacity .2s, transform .2s;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+@media (prefers-reduced-motion: reduce) { .toast, .share-pill { transition: none; } }

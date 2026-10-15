@@ -18,7 +18,7 @@
 <meta name="twitter:description" content="Indie apps, AI tools, books, and templates from makers. List your products for free; checkout stays on the maker's site.">
 <meta name="twitter:image" content="https://digitalundergroundstore.com/community/og.jpg">
 <meta name="theme-color" content="#05040c">
-<link rel="stylesheet" href="community.css">
+<link rel="stylesheet" href="community.css?v=2">
 <script src="/community/nav.js?v=1" defer></script>
 </head>
 <body>
@@ -39,7 +39,13 @@
     </nav>
   </div>
   <header class="page-head">
-    <h1>Developer Marketplace</h1>
+    <div class="title-row">
+      <h1>Developer Marketplace</h1>
+      <button type="button" class="share-pill" id="share-market" aria-label="Share the Developer Marketplace">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12.5V19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Share</span>
+      </button>
+    </div>
     <p>Apps, AI tools, books, and templates from independent makers. Free to list — checkout and delivery stay on the maker's own site (Gumroad, Stripe, App Store, or their website).</p>
   </header>
   <div class="search-row">
@@ -178,6 +184,30 @@
   if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   var io = new IntersectionObserver(function (es) { es.forEach(function (e) { var v = e.target; if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else v.pause(); }); }, { threshold: 0.4 });
   new MutationObserver(function () { document.querySelectorAll("video.card-vid:not([data-io])").forEach(function (v) { v.setAttribute("data-io", "1"); v.muted = true; io.observe(v); }); }).observe(document.body, { childList: true, subtree: true });
+})();
+</script>
+<div class="toast" id="share-toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var b = document.getElementById("share-market"), t = document.getElementById("share-toast"), tm;
+  var data = { title: "Developer Marketplace | Digital Underground", text: "List your products for free on the Developer Marketplace", url: "https://digitalundergroundstore.com/community/" };
+  function toast(msg) { t.textContent = msg; t.classList.add("show"); clearTimeout(tm); tm = setTimeout(function () { t.classList.remove("show"); }, 2200); }
+  function copy() {
+    var done = function () { toast("Link copied"); };
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(data.url).then(done, legacy);
+    legacy();
+    function legacy() {
+      var i = document.createElement("textarea"); i.value = data.url; i.setAttribute("readonly", ""); i.style.position = "fixed"; i.style.opacity = "0";
+      document.body.appendChild(i); i.select();
+      try { document.execCommand("copy") ? done() : toast(data.url); } catch (_) { toast(data.url); }
+      i.remove();
+    }
+  }
+  b.addEventListener("click", function () {
+    if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
+      navigator.share(data).catch(function (e) { if (!e || e.name !== "AbortError") copy(); });
+    } else copy();
+  });
 })();
 </script>
 </body>

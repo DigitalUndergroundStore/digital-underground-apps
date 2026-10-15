@@ -13,8 +13,11 @@ import {
   attachListing,
   authCreator,
   dashboardUrl,
+  creatorIdsForEmail,
+  getAccount,
   issueAccountToken,
   linkContactToCreator,
+  sessionCookie,
 } from "../../_lib/creator.js";
 import { screenListing } from "../../_lib/community-screening.js";
 
@@ -78,11 +81,22 @@ export async function onRequest(context) {
     };
   }
 
-  // Existing creator (submitting from the dashboard) or a brand-new account.
+  // 1) Signed-in creator (cookie or link) -> their account.
+  // 2) Email already linked to a creator account -> attach there, but do NOT sign this
+  //    browser in (anyone can type an email); they sign in with email code or their link.
+  // 3) Otherwise -> new account, private link + session cookie for this device.
   let acct = null;
   let newToken = null;
+  let attachedByEmail = false;
   try {
     acct = await authCreator(request, env, kv);
+    if (!acct) {
+      const ids = await creatorIdsForEmail(kv, listing.email);
+      for (const cid of [...ids].reverse()) {
+        acct = await getAccount(kv, cid);
+        if (acct) { attachedByEmail = true; break; }
+      }
+    }
     if (!acct) {
       const issued = await issueAccountToken(kv, null);
       acct = issued.acct;
@@ -135,6 +149,11 @@ export async function onRequest(context) {
       "Thanks — your project is in the review queue. We will email you when it is live.",
   };
 
+  const headers = {};
+  if (acct && !attachedByEmail) {
+    const c = await sessionCookie(env, acct.id);
+    if (c) headers["Set-Cookie"] = c;
+  }
   return json({
     ok: true,
     id: listing.id,
@@ -143,5 +162,6 @@ export async function onRequest(context) {
     notify,
     ...(newToken ? { dashboardUrl: dashboardUrl(env, request, newToken) } : {}),
     existingAccount: !!acct && !newToken,
-  });
+    signedIn: !!acct && !attachedByEmail,
+  }, 200, headers);
 }

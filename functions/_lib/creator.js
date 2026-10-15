@@ -9,8 +9,9 @@
  * Manage token format: "{acctId}.{secret}". Only SHA-256(secret) is stored; the
  * presented secret's hash is compared in constant time.
  *
- * Email magic-link login is built but OFF: set COMMUNITY_MAGIC_LINK=1 (after a sending
- * domain is verified in Resend) to enable POST /api/community/creator-login.
+ * Sessions: signed HttpOnly cookie du_creator (180 days), set after submit, link visit or email code.
+ * Email code login is built but OFF: set COMMUNITY_EMAIL_LOGIN=1 (after a sending domain is
+ * verified in Resend) to enable POST /api/community/creator-login.
  */
 import {
   hmacHex,
@@ -24,7 +25,6 @@ import { runBlocklist } from "./community-screening.js";
 
 const ACCT_PREFIX = "creator:";
 const STATS_PREFIX = "stats:";
-const MAGIC_TTL_MS = 30 * 60 * 1000;
 export const SUPPORT_PER_DAY = 5;
 export const EDITS_PER_DAY = 20;
 
@@ -71,29 +71,73 @@ export function dashboardUrl(env, request, token) {
   return `${communitySiteOrigin(env, request)}/community/dashboard/?k=${encodeURIComponent(token)}`;
 }
 
-/** Resolve the creator from Authorization: Creator <token> | Magic <signed>. Generic failure. */
-export async function authCreator(request, env, kv) {
+export const SESSION_COOKIE = "du_creator";
+const SESSION_DAYS = 180;
+
+export async function signSession(env, acctId) {
+  const secret = env?.COMMUNITY_ADMIN_TOKEN;
+  if (!secret || !acctId) return null;
+  const exp = String(Date.now() + SESSION_DAYS * 86400000);
+  const sig = await hmacHex(secret, `sess:${acctId}:${exp}`);
+  return `${acctId}.${exp}.${sig}`;
+}
+
+async function verifySession(env, value) {
+  const secret = env?.COMMUNITY_ADMIN_TOKEN;
+  const [acctId, exp, sig] = String(value || "").split(".");
+  if (!secret || !acctId || !exp || !sig || !(Number(exp) > Date.now())) return null;
+  const expected = await hmacHex(secret, `sess:${acctId}:${exp}`);
+  return timingSafeEqualStr(expected, sig) ? acctId : null;
+}
+
+export async function sessionCookie(env, acctId) {
+  const v = await signSession(env, acctId);
+  if (!v) return null;
+  return `${SESSION_COOKIE}=${v}; Max-Age=${SESSION_DAYS * 86400}; Path=/; HttpOnly; Secure; SameSite=Lax`;
+}
+
+export function clearSessionCookie() {
+  return `${SESSION_COOKIE}=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=Lax`;
+}
+
+function readCookie(request, name) {
+  const raw = request.headers.get("Cookie") || "";
+  for (const part of raw.split(";")) {
+    const i = part.indexOf("=");
+    if (i > 0 && part.slice(0, i).trim() === name) return part.slice(i + 1).trim();
+  }
+  return "";
+}
+
+/**
+ * Resolve the creator from Authorization: Creator <manage token> (private link),
+ * or the signed session cookie. Returns { acct, via } or null. Generic failure.
+ */
+export async function authCreatorEx(request, env, kv) {
   const auth = request.headers.get("Authorization") || "";
-  let acctId = "";
-  let ok = false;
-  let acct = null;
   if (auth.startsWith("Creator ")) {
     const tok = auth.slice(8).trim();
     const dot = tok.indexOf(".");
-    acctId = dot > 0 ? tok.slice(0, dot) : "";
+    const acctId = dot > 0 ? tok.slice(0, dot) : "";
     const secret = dot > 0 ? tok.slice(dot + 1) : "";
-    acct = acctId ? await getAccount(kv, acctId) : null;
+    const acct = acctId ? await getAccount(kv, acctId) : null;
     const presented = await sha256Hex(secret || "x");
     // Always compare (dummy hash when no account) so timing does not reveal existence.
-    ok = timingSafeEqualStr(presented, acct?.tokenHash || "0".repeat(64)) && !!acct && secret.length >= 32;
-  } else if (auth.startsWith("Magic ") && env?.COMMUNITY_MAGIC_LINK === "1") {
-    const v = await verifyMagic(env, auth.slice(6).trim());
-    if (v) {
-      acct = await getAccount(kv, v);
-      ok = !!acct;
-    }
+    const ok = timingSafeEqualStr(presented, acct?.tokenHash || "0".repeat(64)) && !!acct && secret.length >= 32;
+    if (ok) return { acct, via: "link" };
   }
-  return ok ? acct : null;
+  const sess = readCookie(request, SESSION_COOKIE);
+  if (sess) {
+    const acctId = await verifySession(env, sess);
+    const acct = acctId ? await getAccount(kv, acctId) : null;
+    if (acct) return { acct, via: "cookie" };
+  }
+  return null;
+}
+
+export async function authCreator(request, env, kv) {
+  const r = await authCreatorEx(request, env, kv);
+  return r ? r.acct : null;
 }
 
 export async function attachListing(kv, acct, listingId) {
@@ -252,23 +296,48 @@ export async function sendSupportEmail(env, { acct, replyTo, subject, message, l
   });
 }
 
-// ---------- Magic link (disabled unless COMMUNITY_MAGIC_LINK=1) ----------
+// ---------- Email one-time code login (off unless COMMUNITY_EMAIL_LOGIN=1) ----------
 
-export async function signMagic(env, acctId) {
-  const secret = env?.COMMUNITY_ADMIN_TOKEN;
-  if (!secret) return null;
-  const exp = String(Date.now() + MAGIC_TTL_MS);
-  const sig = await hmacHex(secret, `magic:${acctId}:${exp}`);
-  return `${acctId}.${exp}.${sig}`;
+const OTP_TTL_S = 600;
+const OTP_MAX_TRIES = 5;
+
+export function emailLoginEnabled(env) {
+  return env?.COMMUNITY_EMAIL_LOGIN === "1";
 }
 
-export async function verifyMagic(env, token) {
-  const secret = env?.COMMUNITY_ADMIN_TOKEN;
-  const [acctId, exp, sig] = String(token || "").split(".");
-  if (!secret || !acctId || !exp || !sig) return null;
-  if (!(Number(exp) > Date.now())) return null;
-  const expected = await hmacHex(secret, `magic:${acctId}:${exp}`);
-  return timingSafeEqualStr(expected, sig) ? acctId : null;
+async function otpKey(email) {
+  return "otp:" + (await sha256Hex("otp|" + email));
+}
+
+/** Create a 6-digit code for an email. Returns the code, or null if one was sent < 60s ago. */
+export async function createOtp(env, kv, email, acctId) {
+  const key = await otpKey(email);
+  const prev = await kv.get(key, "json");
+  if (prev && Date.now() - prev.sentAt < 60_000) return null;
+  const n = crypto.getRandomValues(new Uint32Array(1))[0] % 1_000_000;
+  const code = String(n).padStart(6, "0");
+  const codeHash = await hmacHex(env.COMMUNITY_ADMIN_TOKEN, `otp:${email}:${code}`);
+  await kv.put(key, JSON.stringify({ codeHash, acctId, tries: 0, sentAt: Date.now(), exp: Date.now() + OTP_TTL_S * 1000 }), {
+    expirationTtl: OTP_TTL_S,
+  });
+  return code;
+}
+
+/** Verify a code. Returns acctId or null. Burns the code after success or 5 wrong tries. */
+export async function verifyOtp(env, kv, email, code) {
+  const key = await otpKey(email);
+  const row = await kv.get(key, "json");
+  const presented = await hmacHex(env.COMMUNITY_ADMIN_TOKEN, `otp:${email}:${String(code || "").trim()}`);
+  const match = timingSafeEqualStr(presented, row?.codeHash || "0".repeat(64));
+  if (!row || row.exp < Date.now()) return null;
+  if (match && row.tries < OTP_MAX_TRIES) {
+    await kv.delete(key);
+    return row.acctId;
+  }
+  row.tries += 1;
+  if (row.tries >= OTP_MAX_TRIES) await kv.delete(key);
+  else await kv.put(key, JSON.stringify(row), { expirationTtl: Math.max(60, Math.ceil((row.exp - Date.now()) / 1000)) });
+  return null;
 }
 
 /** Look up creator ids for an email via the contacts store (contact.creatorIds). */

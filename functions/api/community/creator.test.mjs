@@ -10,7 +10,7 @@ check("token not stored", ![...store.values()].some((v) => v.includes(token.spli
 check("auth ok", (await authCreator(req("Creator " + token), {}, kv))?.id === acct.id);
 check("auth bad secret", !(await authCreator(req("Creator " + acct.id + "." + "A".repeat(43)), {}, kv)));
 check("auth missing", !(await authCreator(req(), {}, kv)));
-check("magic off", !(await authCreator(req("Magic x.y.z"), {}, kv)));
+check("no cookie", !(await authCreator(req(), {}, kv)));
 check("tse", timingSafeEqualStr("abc", "abc") && !timingSafeEqualStr("abc", "abd") && !timingSafeEqualStr("ab", "abc"));
 await recordEvents(kv, ["cm_a"], { i: ["cm_a", "cm_b"], v: ["cm_a"], c: ["cm_a"] }, "1");
 await recordEvents(kv, ["cm_a"], { c: ["cm_a"] }, "2");

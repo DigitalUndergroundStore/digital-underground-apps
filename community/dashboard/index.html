@@ -29,14 +29,19 @@
   </header>
 
   <div id="gate" class="dash-panel" hidden>
-    <h2>Open your private link</h2>
-    <p class="muted">Your dashboard opens from the private link shown when you submitted a listing. There are no passwords.</p>
-    <p class="muted">Lost your link? Email <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you listed with.</p>
-    <form id="magic" class="stack" hidden>
-      <label>Or get a sign-in link by email<input name="email" type="email" required autocomplete="email"></label>
-      <button type="submit">Email me a link</button>
-      <div class="form-msg" id="magic-msg" hidden></div>
+    <h2>Sign in</h2>
+    <form id="login" class="stack" hidden>
+      <label>Enter your email<input name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"></label>
+      <button type="submit">Email me a sign-in code</button>
     </form>
+    <form id="code" class="stack" hidden>
+      <label>6-digit code<input name="code" required inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="123456"></label>
+      <button type="submit">Sign in</button>
+      <button type="button" class="linkish" id="code-back">Use a different email</button>
+    </form>
+    <div class="form-msg" id="login-msg" hidden role="status"></div>
+    <p class="muted" id="link-note">Open the private dashboard link you saved when you submitted. After that, this device stays signed in.</p>
+    <p class="muted">Lost access? Email support at <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you listed with.</p>
   </div>
 
   <div id="app" hidden>
@@ -49,7 +54,7 @@
       <div id="chart" class="chart" role="img" aria-label="30-day views and clicks chart"></div>
       <p class="legend"><span class="sw sw-v"></span>Views <span class="sw sw-c"></span>Clicks <span class="muted">· UTC days · views = card impressions (once per visitor session) + detail page views</span></p>
     </section>
-    <div class="dash-head"><h2>Your listings</h2><a class="cta small" href="/community/submit/?as=creator">+ Submit a new listing</a></div>
+    <div class="dash-head"><h2>Your listings</h2><span class="admin-actions"><a class="cta small" href="/community/submit/">+ Submit a new listing</a><button type="button" class="signout" id="signout">Sign out</button></span></div>
     <div id="msg" class="form-msg" hidden role="status"></div>
     <div id="list" class="dash-list"></div>
 
@@ -106,10 +111,7 @@
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
-  var hash = new URLSearchParams(location.hash.slice(1));
-  var auth = "";
-  if (params.get("k")) auth = "Creator " + params.get("k");
-  else if (hash.get("m")) auth = "Magic " + hash.get("m");
+  var auth = params.get("k") ? "Creator " + params.get("k") : "";
   var data = null;
 
   function $(id) { return document.getElementById(id); }
@@ -117,7 +119,8 @@
   function api(method, body) {
     return fetch("/api/community/creator", {
       method: method,
-      headers: Object.assign({ Authorization: auth }, body ? { "Content-Type": "application/json" } : {}),
+      credentials: "same-origin",
+      headers: Object.assign(auth ? { Authorization: auth } : {}, body ? { "Content-Type": "application/json" } : {}),
       body: body ? JSON.stringify(body) : undefined
     }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { d._status = r.status; return d; }); });
   }
@@ -125,10 +128,22 @@
   function ctr(t) { return t.i ? ((t.c / t.i) * 100).toFixed(1) + "%" : "—"; }
   var LABEL = { approved: "Live", pending: "Pending review", rejected: "Rejected", unpublished: "Unpublished" };
 
-  function gate() {
+  function gate(linkFailed) {
+    $("app").hidden = true;
     $("gate").hidden = false;
+    if (linkFailed) show($("login-msg"), "That private link is not valid anymore. Sign in with your email or contact support.", false);
     fetch("/api/community/creator-login", { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" })
-      .then(function (r) { return r.json(); }).then(function (d) { if (d.enabled) $("magic").hidden = false; }).catch(function () {});
+      .then(function (r) { return r.json(); }).then(function (d) {
+        if (d.enabled) {
+          $("login").hidden = false;
+          $("link-note").textContent = "Or open the private dashboard link you saved when you submitted.";
+          try { var em = localStorage.getItem("du_creator_email"); if (em) $("login").email.value = em; } catch (_) {}
+        }
+      }).catch(function () {});
+  }
+  function login(body) {
+    return fetch("/api/community/creator-login", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })
+      .then(function (r) { return r.json().catch(function () { return {}; }); });
   }
 
   function chart(days) {
@@ -186,7 +201,7 @@
 
     var list = $("list");
     list.innerHTML = "";
-    if (!data.listings.length) list.innerHTML = '<p class="empty">No listings yet. <a href="/community/submit/?as=creator">Submit one</a>.</p>';
+    if (!data.listings.length) list.innerHTML = '<p class="empty">No listings yet. <a href="/community/submit/">Submit one</a>.</p>';
     data.listings.forEach(function (l) {
       var node = $("tpl").content.firstElementChild.cloneNode(true);
       var t = (data.stats[l.id] || { totals: { i: 0, v: 0, c: 0 } }).totals;
@@ -235,10 +250,43 @@
 
   function load() {
     return api("GET").then(function (d) {
-      if (d._status === 401) { $("app").hidden = true; gate(); return; }
-      data = d; $("app").hidden = false; render();
+      if (d._status === 401) {
+        var hadLink = !!auth;
+        auth = "";
+        if (hadLink) { history.replaceState(null, "", "/community/dashboard/"); return load().then(function () { if ($("app").hidden) gate(true); }); }
+        gate(false); return;
+      }
+      // The link has set a session cookie; drop the secret from the address bar.
+      if (auth) { auth = ""; history.replaceState(null, "", "/community/dashboard/"); }
+      data = d; $("gate").hidden = true; $("app").hidden = false; render();
     });
   }
+
+  $("login").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = e.target, btn = f.querySelector("button"); btn.disabled = true;
+    login({ email: f.email.value }).then(function (d) {
+      btn.disabled = false;
+      if (d.ok) { show($("login-msg"), d.message, true); f.hidden = true; $("code").hidden = false; $("code").code.focus(); }
+      else show($("login-msg"), d.error || "Could not send a code.", false);
+      try { localStorage.setItem("du_creator_email", f.email.value.trim()); } catch (_) {}
+    }).catch(function () { btn.disabled = false; show($("login-msg"), "Network error.", false); });
+  });
+  $("code").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = e.target, btn = f.querySelector("button"); btn.disabled = true;
+    login({ email: $("login").email.value, code: f.code.value }).then(function (d) {
+      btn.disabled = false;
+      if (d.ok) { $("login-msg").hidden = true; f.reset(); load(); }
+      else show($("login-msg"), d.error || "That code did not work.", false);
+    }).catch(function () { btn.disabled = false; show($("login-msg"), "Network error.", false); });
+  });
+  $("code-back").addEventListener("click", function () { $("code").hidden = true; $("login").hidden = false; $("login-msg").hidden = true; });
+  $("signout").addEventListener("click", function () {
+    fetch("/api/community/creator?action=signout", { method: "POST", credentials: "same-origin" }).then(function () {
+      data = null; $("login").hidden = true; $("code").hidden = true; $("login-msg").hidden = true; gate(false);
+    });
+  });
 
   $("chart-pick").addEventListener("change", drawChart);
   $("support-form").addEventListener("submit", function (e) {
@@ -257,10 +305,7 @@
       .then(function (r) { return r.json(); }).then(function (d) { show($("magic-msg"), d.message, true); });
   });
 
-  // Remember the link in this browser so "Submit a new listing" stays on the same account.
-  if (auth) { try { sessionStorage.setItem("du_creator_auth", auth); } catch (_) {} }
-  if (!auth) { try { auth = sessionStorage.getItem("du_creator_auth") || ""; } catch (_) {} }
-  if (!auth) gate(); else load();
+  load();
 })();
 </script>
 </body>

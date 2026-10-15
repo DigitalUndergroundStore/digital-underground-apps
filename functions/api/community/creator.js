@@ -12,7 +12,9 @@ import {
 } from "../../_lib/community.js";
 import { screenListing } from "../../_lib/community-screening.js";
 import {
-  authCreator,
+  authCreatorEx,
+  clearSessionCookie,
+  sessionCookie,
   creatorListing,
   ownedListing,
   purgeStats,
@@ -54,8 +56,12 @@ export async function onRequest(context) {
   const { request, env } = context;
   const kv = getKv(env);
   if (!kv) return json({ error: "Storage not configured." }, 503);
-  const acct = await authCreator(request, env, kv);
-  if (!acct) return UNAUTH();
+  if (request.method === "POST" && new URL(request.url).searchParams.get("action") === "signout") {
+    return json({ ok: true }, 200, { "Set-Cookie": clearSessionCookie() });
+  }
+  const who = await authCreatorEx(request, env, kv);
+  if (!who) return UNAUTH();
+  const acct = who.acct;
 
   if (request.method === "GET") {
     const rows = [];
@@ -65,11 +71,18 @@ export async function onRequest(context) {
     }
     rows.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
     const stats = await readStats(kv, rows.map((r) => r.id));
+    // Visiting a private link signs this device in, so the link is a one-time step.
+    const extra = {};
+    if (who.via === "link") {
+      const c = await sessionCookie(env, acct.id);
+      if (c) extra["Set-Cookie"] = c;
+    }
     return json({
+      signedInVia: who.via,
       listings: rows.map(creatorListing),
       stats,
       supportLeftToday: Math.max(0, 5 - (acct.support?.day === new Date().toISOString().slice(0, 10).replace(/-/g, "") ? acct.support.n : 0)),
-    });
+    }, 200, extra);
   }
   if (request.method !== "POST") return json({ error: "Use GET or POST." }, 405);
   if (!ipAllowed(clientIp(request))) return json({ error: "Too many changes. Try again later." }, 429);

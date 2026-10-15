@@ -95,22 +95,14 @@
   var msg = document.getElementById("msg");
   var fileInput = form.querySelector('[name="imageFile"]');
   var urlInput = form.querySelector('[name="imageUrl"]');
-  var creatorAuth = "";
-  if (/[?&]as=creator\b/.test(location.search)) {
-    try { creatorAuth = sessionStorage.getItem("du_creator_auth") || ""; } catch (_) {}
-  }
-  if (creatorAuth) {
-    var note = document.createElement("p");
-    note.className = "form-msg ok";
-    note.innerHTML = 'Submitting under your creator account. <a href="/community/dashboard/">Back to dashboard</a>';
-    form.parentNode.insertBefore(note, form);
-  }
+  var emailInput = form.querySelector('[name="email"]');
+  try { var savedEmail = localStorage.getItem("du_creator_email"); if (savedEmail && !emailInput.value) emailInput.value = savedEmail; } catch (_) {}
 
   function showSaveLink(url) {
     var box = document.createElement("div");
     box.className = "save-link";
-    box.innerHTML = '<strong>Save this link — it is the only way to manage your listing.</strong>' +
-      '<p class="muted small">This private link opens your Creator dashboard (edit, unpublish, analytics). Anyone with it can manage your listing, so keep it private. Bookmark it or store it in your password manager. Lost it? Email digitalunderground.store@proton.me.</p>' +
+    box.innerHTML = '<strong>You are signed in on this device. Save this link for other devices.</strong>' +
+      '<p class="muted small">This private link opens your Creator dashboard (edit, unpublish, analytics) on any device. Anyone with it can manage your listing, so keep it private. Lost access? Email support at digitalunderground.store@proton.me.</p>' +
       '<div class="row"><input readonly aria-label="Your private dashboard link"><button type="button">Copy link</button><a>Open dashboard</a></div>';
     var input = box.querySelector("input"); input.value = url;
     box.querySelector("a").href = url;
@@ -119,7 +111,6 @@
       (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { b.textContent = "Copied ✓"; }, function () { input.select(); document.execCommand("copy"); b.textContent = "Copied ✓"; });
     });
     msg.appendChild(box);
-    try { sessionStorage.setItem("du_creator_auth", "Creator " + new URL(url).searchParams.get("k")); } catch (_) {}
   }
 
   function show(text, ok) {
@@ -187,7 +178,8 @@
     run.then(function () {
       return fetch("/api/community/submit", {
         method: "POST",
-        headers: creatorAuth ? { "Content-Type": "application/json", Authorization: creatorAuth } : { "Content-Type": "application/json" },
+        credentials: "same-origin",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
       });
     }).then(function (res) {
@@ -198,8 +190,11 @@
       if (out.res.ok && out.data.ok) {
         show(out.data.message || "Submitted — thank you!", true);
         if (out.data.dashboardUrl) showSaveLink(out.data.dashboardUrl);
-        else if (out.data.existingAccount) msg.insertAdjacentHTML("beforeend", ' <a href="/community/dashboard/">Back to your dashboard</a>');
+        else if (out.data.signedIn) msg.insertAdjacentHTML("beforeend", ' Added to your creator account. <a href="/community/dashboard/">Open your dashboard</a>');
+        else if (out.data.existingAccount) msg.insertAdjacentHTML("beforeend", ' This email already has a creator account, so we added it there. <a href="/community/dashboard/">Sign in to your dashboard</a> to manage it.');
+        try { localStorage.setItem("du_creator_email", payload.email); } catch (_) {}
         form.reset();
+        try { emailInput.value = payload.email; } catch (_) {}
         msg.scrollIntoView({ behavior: "smooth", block: "start" });
         if (window.__duTurnstileReset) window.__duTurnstileReset();
         return;

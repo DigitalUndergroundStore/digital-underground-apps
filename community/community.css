@@ -270,3 +270,8 @@ form button[type="submit"] {
 .detail img { width: 100%; border-radius: 20px; aspect-ratio: 16/10; object-fit: cover; background: #120c22; }
 .detail .desc { white-space: pre-wrap; color: var(--muted); }
 [hidden] { display: none !important; }
+button.signout, button.linkish {
+  min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line);
+  background: rgba(255,255,255,.06); color: var(--text); cursor: pointer; font: inherit; font-weight: 600;
+}
+button.linkish { background: none; border: 0; color: var(--cyan); text-decoration: underline; }

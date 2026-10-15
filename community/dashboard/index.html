@@ -8,9 +8,10 @@
 <title>Creator dashboard — Developer Marketplace — Digital Underground</title>
 <meta name="theme-color" content="#07060f">
 <link rel="stylesheet" href="../community.css">
-<link rel="stylesheet" href="dashboard.css?v=2">
+<link rel="stylesheet" href="dashboard.css?v=4">
 <script src="/community/pw.js" defer></script>
-<script src="dashboard.js?v=2" defer></script>
+<script src="/community/upload.js?v=1" defer></script>
+<script src="dashboard.js?v=3" defer></script>
 </head>
 <body class="dash">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -32,6 +33,8 @@
   <symbol id="i-ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
   <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></symbol>
   <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3Z"/></symbol>
   <symbol id="i-redo" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></symbol>
 </svg>
 
@@ -162,7 +165,7 @@
 <template id="tpl">
   <article class="li">
     <div class="li-top">
-      <img class="li-thumb" alt="" width="64" height="64" loading="lazy" decoding="async">
+      <span class="li-thumb-wrap"><img class="li-thumb" alt="" width="64" height="64" loading="lazy" decoding="async"><span class="ph" hidden aria-hidden="true"></span></span>
       <div class="li-main">
         <h3 class="li-title"></h3>
         <div class="li-sub"><span class="pill"></span><span class="li-date"></span></div>
@@ -198,9 +201,37 @@
       <div class="fld"><label for="ed-long">Long description <span class="cc" data-cc-for="ed-long"></span></label><textarea id="ed-long" name="descriptionLong" required maxlength="4000" rows="7"></textarea></div>
     </fieldset>
     <fieldset class="fgroup"><legend>Media &amp; tags</legend>
-      <div class="img-prev"><img id="ed-prev" alt="Current image" width="72" height="72"><p>Image shown on your listing card. Use an https link to change it.</p></div>
-      <div class="fld"><label for="ed-img">Image URL</label><input id="ed-img" name="imageUrl" type="url" inputmode="url" placeholder="https://"></div>
-      <div class="fld"><label for="ed-video">Demo video <span class="cc">optional</span></label><input id="ed-video" name="videoUrl" type="url" inputmode="url" maxlength="500" placeholder="https://youtu.be/…"><p class="field-hint">YouTube, Vimeo, or a direct .mp4/.webm link (max 50 MB). New videos get a quick human review first.</p></div>
+      <div class="media-row">
+        <span class="mp-thumb" id="ed-prev-wrap"><img id="ed-prev" alt="Current image" width="72" height="72"><span class="ph" id="ed-ph" hidden aria-hidden="true"></span></span>
+        <div class="mp-body">
+          <b>Listing image</b>
+          <p id="ed-img-note">Square logo or 16:9 screenshot. JPEG, PNG or WebP.</p>
+          <div class="mp-actions">
+            <label class="btn btn-sm" for="ed-img-file"><svg class="ico"><use href="#i-upload"/></svg>Upload image</label>
+            <input type="file" id="ed-img-file" accept="image/jpeg,image/png,image/webp,image/gif" class="sr-only">
+            <button type="button" class="btn btn-sm btn-quiet-danger" id="ed-img-remove"><svg class="ico"><use href="#i-trash"/></svg>Remove</button>
+          </div>
+        </div>
+      </div>
+      <details class="fallback" id="ed-img-more"><summary>Or paste an image link</summary>
+        <div class="fld"><label for="ed-img" class="sr-only">Image URL</label><input id="ed-img" name="imageUrl" type="url" inputmode="url" placeholder="https://…/cover.png"></div>
+      </details>
+      <div class="media-row">
+        <span class="mp-thumb mp-vid" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span>
+        <div class="mp-body">
+          <b>Demo video <span class="cc">optional</span></b>
+          <p id="ed-vid-note">MP4 or WebM, up to 50 MB. New videos get a quick human review before they go live.</p>
+          <div class="progress" id="ed-vid-prog" hidden><div class="bar"><i id="ed-vid-bar"></i></div><span id="ed-vid-pct">0%</span><button type="button" class="linkbtn" id="ed-vid-cancel">Cancel</button></div>
+          <div class="mp-actions" id="ed-vid-actions">
+            <label class="btn btn-sm" for="ed-vid-file"><svg class="ico"><use href="#i-upload"/></svg><span id="ed-vid-up-label">Upload video</span></label>
+            <input type="file" id="ed-vid-file" accept="video/mp4,video/webm" class="sr-only">
+            <button type="button" class="btn btn-sm btn-quiet-danger" id="ed-vid-remove"><svg class="ico"><use href="#i-trash"/></svg>Remove video</button>
+          </div>
+        </div>
+      </div>
+      <details class="fallback" id="ed-vid-more"><summary>Or paste a YouTube, Vimeo or video link</summary>
+        <div class="fld"><label for="ed-video" class="sr-only">Video link</label><input id="ed-video" name="videoUrl" type="url" inputmode="url" maxlength="500" placeholder="https://youtu.be/…"></div>
+      </details>
       <div class="fld"><label for="ed-tags">Tags <span class="cc" data-cc-for="ed-tags"></span></label><input id="ed-tags" name="tags" maxlength="160" placeholder="e.g. productivity, ios"><p class="field-hint">Comma-separated, up to 6.</p></div>
     </fieldset>
     <p class="field-hint">Clean edits stay live; edge cases go back to review.</p>

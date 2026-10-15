@@ -8,6 +8,7 @@ import {
   kvGetListing,
   normalizeTags,
   normalizeVideoUrl,
+  parseImageField,
   sanitizeText,
   saveListing,
 } from "../../_lib/community.js";
@@ -29,6 +30,7 @@ import {
   takeEditBudget,
   takeSupportBudget,
 } from "../../_lib/creator.js";
+import { deleteVideo, uploadVid } from "../../_lib/video.js";
 import { storeSupportMessage } from "../../_lib/owner.js";
 
 /** Per-IP burst limit for creator write actions (per isolate). */
@@ -202,13 +204,23 @@ export async function onRequest(context) {
     row.descriptionLong = descriptionLong;
     row.projectUrl = projectUrl;
     row.visitUrl = appendRefParam(projectUrl);
-    if (imageUrl && imageUrl !== "(uploaded image)") row.imageUrl = imageUrl;
-    if (!row.imageUrl) return json({ error: "Add an image URL." }, 400);
+    if (f.removeImage === true) row.imageUrl = "";
+    else if (typeof f.imageData === "string" && f.imageData) {
+      const img = parseImageField({ imageData: f.imageData });
+      if (img.error) return json({ error: img.error }, 400);
+      row.imageUrl = img.imageUrl;
+    } else if (imageUrl && imageUrl !== "(uploaded image)") row.imageUrl = imageUrl;
     row.tags = normalizeTags(f.tags);
-    if (f.videoUrl !== undefined) {
-      const vid = normalizeVideoUrl(f.videoUrl);
+    let dropVid = null;
+    if (f.videoUrl !== undefined && f.videoUrl !== row.videoUrl) {
+      const v = typeof f.videoUrl === "string" ? f.videoUrl.trim() : "";
+      if (v.startsWith("upload:")) return json({ error: "Upload a video with the Upload video button." }, 400);
+      const vid = normalizeVideoUrl(v);
       if (vid.error) return json({ error: vid.error }, 400);
+      dropVid = uploadVid(row.videoUrl);
       row.videoUrl = vid.videoUrl;
+      if (!row.videoUrl || !dropVid) delete row.videoFile;
+      if (dropVid) delete row.videoFile;
     }
     const decision = await rescreen(env, row);
     // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
@@ -216,6 +228,7 @@ export async function onRequest(context) {
     row.updatedAt = Date.now();
     row.editedByCreatorAt = row.updatedAt;
     await saveListing(kv, row);
+    if (dropVid) context.waitUntil(deleteVideo(kv, dropVid).catch(() => {}));
     return json({ ok: true, listing: creatorListing(row) });
   }
 

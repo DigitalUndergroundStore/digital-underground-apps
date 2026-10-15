@@ -7,7 +7,7 @@
 <meta name="description" content="An indie project on the Digital Underground Developer Marketplace.">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="../community.css">
-<link rel="stylesheet" href="detail.css?v=3">
+<link rel="stylesheet" href="detail.css?v=4">
 <script src="/community/track.js"></script>
 </head>
 <body class="dt">
@@ -46,6 +46,7 @@
     var v = l.video;
     if (v && v.kind === "youtube" || v && v.kind === "vimeo") return '<div class="media"><iframe src="' + esc(v.src) + '" title="' + esc(l.name) + ' video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>';
     if (v && v.kind === "file") return '<div class="media"><video controls playsinline preload="metadata" poster="' + esc(l.imageUrl) + '"><source src="' + esc(v.src) + '" type="' + esc(v.type) + '"></video></div>';
+    if (!l.imageUrl) return "";
     return '<div class="media"><img class="bg" src="' + esc(l.imageUrl) + '" alt="" aria-hidden="true"><img class="fg" src="' + esc(l.imageUrl) + '" alt="' + esc(l.name) + ' preview"></div>';
   }
   fetch("/api/community/listing?id=" + encodeURIComponent(id)).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (d) {
@@ -59,7 +60,7 @@
     var tags = (l.tags || []).map(function (t) { return '<span class="chip2">#' + esc(t) + "</span>"; }).join("");
     out.innerHTML =
       '<div class="dt-grid"><div>' +
-        '<header class="dt-head"><img class="dt-logo" src="' + esc(l.imageUrl) + '" alt="" width="72" height="72"><div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + esc(l.makerName) + x + "</p></div></header>" +
+        '<header class="dt-head">' + (l.imageUrl ? '<img class="dt-logo" src="' + esc(l.imageUrl) + '" alt="" width="72" height="72">' : '<span class="dt-logo dt-ph" aria-hidden="true">' + esc((l.name || "?").charAt(0).toUpperCase()) + "</span>") + '<div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + esc(l.makerName) + x + "</p></div></header>" +
         '<p class="dt-pitch">' + esc(l.pitchShort) + "</p>" +
         '<div class="chips2"><span class="chip2 price">' + price + "</span>" + (l.category ? '<span class="chip2 cat">' + esc(CATS[l.category] || l.category) + "</span>" : "") + tags + "</div>" +
         '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button></div>" +
@@ -83,7 +84,7 @@
       if (navigator.share) { navigator.share({ title: l.name, text: l.pitchShort, url: u }).catch(function () {}); return; }
       (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(function () { var t = document.createElement("div"); t.className = "toast2"; t.setAttribute("role", "status"); t.textContent = "Link copied"; document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2200); }).catch(function () {});
     });
-    document.querySelectorAll(".dt-logo, .media img").forEach(function (im) { im.onerror = function () { im.onerror = null; im.src = "/community/og.jpg"; }; });
+    document.querySelectorAll("img.dt-logo, .media img").forEach(function (im) { im.onerror = function () { im.onerror = null; im.src = "/community/og.jpg"; }; });
     if (window.duTrack) duTrack.view(l.id);
   });
 })();

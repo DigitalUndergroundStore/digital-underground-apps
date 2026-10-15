@@ -219,7 +219,7 @@ export async function screenListing(env, listing) {
     ? { decision: "approved", reasons: [], skipped: true }
     : await runTextGuard(ai, text);
   const imageGuard =
-    block.decision === "rejected"
+    block.decision === "rejected" || !listing.imageUrl
       ? { decision: "approved", reasons: [], skipped: true }
       : await runImageGuard(ai, listing.imageUrl);
 
@@ -311,7 +311,7 @@ export async function checkVideo(listing) {
   const url = listing && listing.videoUrl;
   if (!url) return { decision: "approved", reasons: [] };
   const reasons = [];
-  if (/\.(mp4|webm)(\?|#|$)/i.test(new URL(url).pathname)) {
+  if (url.startsWith("https://") && /\.(mp4|webm)(\?|#|$)/i.test(new URL(url).pathname)) {
     try {
       const res = await fetch(url, { method: "HEAD", redirect: "follow", cf: { cacheTtl: 0 } });
       const type = res.headers.get("content-type") || "";

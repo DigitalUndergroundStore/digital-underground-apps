@@ -68,3 +68,4 @@ body.dt { -webkit-text-size-adjust: 100%; }
 .crumb { white-space: nowrap; overflow: hidden; }
 .crumb a { flex: none; }
 #crumb-name { overflow: hidden; text-overflow: ellipsis; min-width: 0; color: #a79fbd; }
+.dt-ph { display: inline-flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 800; color: #fff; background: radial-gradient(120% 90% at 20% 10%, #7c3aed, transparent 60%), linear-gradient(145deg, #3b1a6e, #13204a); }

@@ -189,6 +189,7 @@ export function creatorListing(row) {
     descriptionLong: row.descriptionLong,
     imageUrl: row.imageUrl && row.imageUrl.startsWith("https://") ? row.imageUrl : row.imageUrl ? "(uploaded image)" : "",
     videoUrl: row.videoUrl || "",
+    videoFile: row.videoFile || null,
     imagePreview: row.imageUrl || "",
     tags: Array.isArray(row.tags) ? row.tags : [],
     category: row.category,

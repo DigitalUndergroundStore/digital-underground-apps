@@ -250,7 +250,9 @@ export function publicListing(row) {
 
 /** Public detail view (adds long description). Never includes email or creator ids. */
 export function publicListingDetail(row) {
-  const video = row.videoUrl ? videoEmbed(row.videoUrl) : null;
+  const up = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(row.videoUrl || "");
+  const video = up ? { kind: "file", src: `/api/community/video?v=${up[1]}`, type: row.videoFile?.type || "video/mp4" }
+    : row.videoUrl ? videoEmbed(row.videoUrl) : null;
   return { ...publicListing(row), descriptionLong: row.descriptionLong || "", video };
 }
 
@@ -408,6 +410,12 @@ export async function setListingStatus(kv, id, status) {
 }
 
 export async function deleteListing(kv, id) {
+  const row = await kvGetListing(kv, id);
+  const up = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(row?.videoUrl || "");
+  if (up) {
+    const { deleteVideo } = await import("./video.js");
+    await deleteVideo(kv, up[1]).catch(() => {});
+  }
   const index = await kvGetIndex(kv);
   index.pending = index.pending.filter((x) => x !== id);
   index.approved = index.approved.filter((x) => x !== id);

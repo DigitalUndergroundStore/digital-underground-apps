@@ -111,6 +111,9 @@
           ? '<img class="thumb" src="' + esc(row.imageUrl) + '" alt="" loading="lazy">'
           : "";
         var reasons = (row.screening && row.screening.reasons) || [];
+        var vm = /^upload:(v_[A-Za-z0-9_-]+)$/.exec(row.videoUrl || "");
+        var vidHref = vm ? "/api/community/video?v=" + vm[1] : row.videoUrl && /^https:\/\//.test(row.videoUrl) ? row.videoUrl : "";
+        var videoHtml = vidHref ? '<p class="small">Video' + (row.videoUrl === row.videoApprovedUrl ? " (approved)" : " (needs review)") + ': <a href="' + esc(vidHref) + '" target="_blank" rel="noopener">watch</a></p>' : "";
         var reasonHtml = reasons.length
           ? '<p class="small">Why it’s here: ' + esc(reasons.join("; ")) + "</p>"
           : "";
@@ -135,7 +138,7 @@
           (row.projectUrl
             ? '<p><a href="' + esc(row.projectUrl) + '" target="_blank" rel="noopener">Open project ↗</a></p>'
             : "") +
-          reasonHtml +
+          reasonHtml + videoHtml +
           actions +
           "</article>"
         );

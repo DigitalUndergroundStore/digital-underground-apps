@@ -6,7 +6,7 @@
 <title>Owner Dashboard — Digital Underground</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#05040c">
-<link rel="stylesheet" href="/owner/owner.css">
+<link rel="stylesheet" href="/owner/owner.css?v=2">
 </head>
 <body>
 <div class="wrap">
@@ -67,10 +67,22 @@
 
   <section id="view-analytics" class="panel">
     <button type="button" class="back" data-go="home">← Home</button>
-    <h1>Analytics</h1>
-    <p class="muted">Last 30 days — views & clicks</p>
-    <div class="chart" id="chart" aria-hidden="true"></div>
-    <div id="analytics-list" class="list"></div>
+    <div class="an-head">
+      <h1>Stats</h1>
+      <div class="seg2" role="tablist" aria-label="Stats source">
+        <button type="button" role="tab" id="an-tab-store" data-an="store" aria-selected="true">Main store</button>
+        <button type="button" role="tab" id="an-tab-market" data-an="market" aria-selected="false">Marketplace</button>
+      </div>
+    </div>
+    <p class="muted an-sub" id="an-sub">Last 30 days</p>
+    <div class="kpi-grid" id="an-kpis"></div>
+    <div class="an-card">
+      <div class="an-legend" id="an-legend"></div>
+      <div class="an-chart" id="an-chart" role="img"></div>
+      <div class="an-axis" id="an-axis"></div>
+    </div>
+    <div id="an-lists"></div>
+    <p class="muted small" id="an-note"></p>
   </section>
 
   <section id="view-backups" class="panel">
@@ -101,6 +113,6 @@
     </div>
   </section>
 </div>
-<script src="/owner/owner.js"></script>
+<script src="/owner/owner.js?v=2"></script>
 </body>
 </html>

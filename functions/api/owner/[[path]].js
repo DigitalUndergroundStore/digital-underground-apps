@@ -214,7 +214,7 @@ export async function onRequest(context) {
     // Aggregate 30-day chart
     const chart = [];
     for (let i = 0; i < 30; i++) {
-      chart.push({ d: "", v: 0, c: 0 });
+      chart.push({ d: "", i: 0, v: 0, c: 0 });
     }
     if (listings[0]?.days?.length) {
       for (let i = 0; i < listings[0].days.length; i++) {
@@ -222,6 +222,7 @@ export async function onRequest(context) {
         for (const L of listings) {
           const day = L.days[i];
           if (day) {
+            chart[i].i += day.i || 0;
             chart[i].v += day.v || 0;
             chart[i].c += day.c || 0;
           }
@@ -229,6 +230,11 @@ export async function onRequest(context) {
       }
     }
     return json({ listings, chart });
+  }
+
+  if (head === "storestats" && request.method === "GET") {
+    const { readStoreStats } = await import("../../_lib/storestats.js");
+    return json(await readStoreStats(kv, 30));
   }
 
   if (head === "backups" && request.method === "GET") {

@@ -195,31 +195,88 @@
     });
   }
 
-  function loadAnalytics() {
-    api("analytics").then(function (out) {
-      if (!out.r.ok) { go("login"); return; }
-      var chart = out.d.chart || [];
-      var max = 1;
-      chart.forEach(function (d) { if ((d.v || 0) > max) max = d.v; });
-      $("chart").innerHTML = chart
-        .map(function (d) {
-          var h = Math.max(2, Math.round(((d.v || 0) / max) * 100));
-          return "<i style=\"height:" + h + '%" title="' + esc(d.d) + ": " + (d.v || 0) + ' views"></i>';
-        })
-        .join("");
-      var rows = out.d.listings || [];
-      $("analytics-list").innerHTML = rows.length
-        ? rows.map(function (L) {
-            return (
-              '<div class="item"><strong>' + esc(L.name) + "</strong>" +
-              '<div class="stat-row"><span>Views</span><span>' + L.views + "</span></div>" +
-              '<div class="stat-row"><span>Clicks</span><span>' + L.clicks + "</span></div>" +
-              '<div class="stat-row"><span>CTR</span><span>' + L.ctr + "%</span></div></div>"
-            );
-          }).join("")
-        : '<p class="muted">No listing traffic yet.</p>';
-    });
+  var AN_KEY = "du_owner_stats_view";
+  var anView = (function () { try { return localStorage.getItem(AN_KEY) === "market" ? "market" : "store"; } catch (_) { return "store"; } })();
+  var anSeq = 0;
+  function fmt(n) { n = n || 0; return n >= 10000 ? (Math.round(n / 100) / 10) + "k" : String(n); }
+  function sum(arr, k, from) { var t = 0; for (var i = from || 0; i < arr.length; i++) t += arr[i][k] || 0; return t; }
+  function delta(chart, k) {
+    var n = chart.length, a = 0, b = 0;
+    for (var i = 0; i < n; i++) { if (i >= n - 7) a += chart[i][k] || 0; else if (i >= n - 14) b += chart[i][k] || 0; }
+    if (!b) return a ? '<span class="d up">new</span>' : '<span class="d">–</span>';
+    var p = Math.round(((a - b) / b) * 100);
+    return '<span class="d ' + (p >= 0 ? "up" : "down") + '">' + (p >= 0 ? "▲" : "▼") + Math.abs(p) + "%</span>";
   }
+  function kpi(label, val, d) { return '<div class="kpi"><span class="kl">' + esc(label) + '</span><strong>' + esc(val) + "</strong>" + (d || "") + "</div>"; }
+  function drawChart(chart, series) {
+    var max = 1;
+    chart.forEach(function (d) { series.forEach(function (s) { if ((d[s.k] || 0) > max) max = d[s.k]; }); });
+    $("an-legend").innerHTML = series.map(function (s) { return '<span><i class="sw ' + s.cls + '"></i>' + esc(s.label) + "</span>"; }).join("");
+    $("an-chart").innerHTML = chart.map(function (d) {
+      return '<div class="col" title="' + esc(d.d) + ": " + series.map(function (s) { return (d[s.k] || 0) + " " + s.label.toLowerCase(); }).join(", ") + '">' +
+        series.map(function (s) { return '<i class="' + s.cls + '" style="height:' + Math.max(d[s.k] ? 3 : 1, Math.round(((d[s.k] || 0) / max) * 100)) + '%"></i>'; }).join("") + "</div>";
+    }).join("");
+    $("an-chart").setAttribute("aria-label", "Daily " + series.map(function (s) { return s.label; }).join(" and ") + ", last 30 days");
+    function lab(d) { return d && d.d && d.d.length === 8 ? d.d.slice(4, 6) + "/" + d.d.slice(6) : ""; }
+    $("an-axis").innerHTML = "<span>" + lab(chart[0]) + "</span><span>" + lab(chart[Math.floor(chart.length / 2)]) + "</span><span>Today</span>";
+  }
+  function listCard(title, rows, unit, empty) {
+    var max = rows.length ? rows[0].v : 1;
+    return '<div class="an-card"><h2>' + esc(title) + "</h2>" + (rows.length ? rows.map(function (r) {
+      return '<div class="bar-row"><div class="bar-top"><span class="bk">' + esc(r.k) + '</span><span class="bv">' + fmt(r.v) + (unit ? " " + unit : "") + '</span></div><div class="bar"><i style="width:' + Math.max(2, Math.round((r.v / max) * 100)) + '%"></i></div></div>';
+    }).join("") : '<p class="muted small">' + esc(empty) + "</p>") + "</div>";
+  }
+  function setAnTabs() {
+    document.querySelectorAll("[data-an]").forEach(function (b) { b.setAttribute("aria-selected", b.getAttribute("data-an") === anView ? "true" : "false"); });
+  }
+  function loadAnalytics() {
+    setAnTabs();
+    var seq = ++anSeq;
+    $("an-kpis").innerHTML = '<div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div>';
+    $("an-lists").innerHTML = ""; $("an-note").textContent = "";
+    if (anView === "store") {
+      api("storestats").then(function (out) {
+        if (seq !== anSeq) return;
+        if (!out.r.ok) { if (out.r.status === 401) go("login"); return; }
+        var d = out.d, c = d.chart || [], pv = sum(c, "pv"), ss = sum(c, "s"), cl = sum(c, "c");
+        $("an-sub").textContent = "digitalundergroundstore.com · last 30 days";
+        $("an-kpis").innerHTML = kpi("Page views", fmt(pv), delta(c, "pv")) + kpi("Visits", fmt(ss), delta(c, "s")) +
+          kpi("Product clicks", fmt(cl), delta(c, "c")) + kpi("Click rate", (ss ? Math.round((cl / ss) * 1000) / 10 : 0) + "%", '<span class="d">per visit</span>');
+        drawChart(c, [{ k: "pv", label: "Views", cls: "s1" }, { k: "c", label: "Clicks", cls: "s2" }]);
+        var dv = d.dev || {}, dt = (dv.m || 0) + (dv.d || 0);
+        $("an-lists").innerHTML = listCard("Top products clicked", d.clicks || [], "", "No product clicks yet.") +
+          listCard("Referrers", d.refs || [], "", "No visits yet.") +
+          listCard("Devices", dt ? [{ k: "Phone", v: dv.m || 0 }, { k: "Desktop / tablet", v: dv.d || 0 }].sort(function (a, b) { return b.v - a.v; }) : [], "", "No visits yet.") +
+          listCard("Pages", d.pages || [], "", "No visits yet.");
+        $("an-note").textContent = "First-party, cookie-free counts. Tracking started when this was deployed; bots excluded.";
+      });
+    } else {
+      api("analytics").then(function (out) {
+        if (seq !== anSeq) return;
+        if (!out.r.ok) { if (out.r.status === 401) go("login"); return; }
+        var c = out.d.chart || [], rows = (out.d.listings || []).slice();
+        var im = 0, v = 0, cl = 0; rows.forEach(function (L) { im += L.impressions || 0; v += L.views || 0; cl += L.clicks || 0; });
+        $("an-sub").textContent = rows.length + " listings · last 30 days";
+        $("an-kpis").innerHTML = kpi("Impressions", fmt(im), delta(c, "i")) + kpi("Views", fmt(v), delta(c, "v")) +
+          kpi("Clicks", fmt(cl), delta(c, "c")) + kpi("CTR", (v ? Math.round((cl / v) * 1000) / 10 : 0) + "%", '<span class="d">clicks / views</span>');
+        drawChart(c, [{ k: "v", label: "Views", cls: "s1" }, { k: "c", label: "Clicks", cls: "s2" }]);
+        rows.sort(function (a, b) { return (b.views + b.impressions) - (a.views + a.impressions); });
+        $("an-lists").innerHTML = '<div class="an-card"><h2>Per listing</h2>' + (rows.length ? rows.map(function (L) {
+          return '<div class="lrow"><div class="lname"><strong>' + esc(L.name) + "</strong>" + (L.status !== "approved" ? '<span class="pill">' + esc(L.status) + "</span>" : "") + '</div><div class="lnums">' +
+            "<span><b>" + fmt(L.impressions) + "</b>impr.</span><span><b>" + fmt(L.views) + "</b>views</span><span><b>" + fmt(L.clicks) + "</b>clicks</span><span><b>" + L.ctr + "%</b>CTR</span></div></div>";
+        }).join("") : '<p class="muted small">No listings yet.</p>') + "</div>";
+      });
+    }
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-an]");
+    if (!b) return;
+    var v = b.getAttribute("data-an");
+    if (v === anView) return;
+    anView = v;
+    try { localStorage.setItem(AN_KEY, v); } catch (_) {}
+    loadAnalytics();
+  });
 
   function loadBackups() {
     api("backups").then(function (out) {

@@ -13,7 +13,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "easy",
         "budget",
         "american"
@@ -109,7 +108,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "small green bell pepper (optional), chopped"
+          "item": "small green bell pepper, optional, chopped"
         },
         {
           "qty": 1.0,
@@ -168,7 +167,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -234,7 +233,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -452,7 +450,6 @@
         "lunch",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -515,7 +512,7 @@
         "Heat a medium nonstick skillet over medium heat. Grease with cooking spray.",
         "Add buns, one at a time, and cook until browned on cut side. Move to a clean plate and repeat until all buns have been cooked. Keep warm in the oven.",
         "Form beef into 4 equal patties. Brush both sides with olive oil and sprinkle both sides liberally with salt and freshly ground black pepper.",
-        "Heat about 28 charcoal briquets in a large chimney starter. Once hot, disperse evenly around the bottom of a grill and reapply grate. Add patties and cook, turning often, until internal temperature reaches 145°F (63°C) for medium rare, 160°F (71°C) for medium, and 170°F (77°C) for toast.",
+        "Heat about 28 charcoal briquets in a large chimney starter. Once hot, disperse evenly around the bottom of a grill and reapply grate. Add patties and cook, turning often, until internal temperature reaches 145°F (63°C) for medium rare, 160°F (71°C) for medium, and 170°F (77°C) for well done.",
         "Remove to a plate, top with cheese, and cover with aluminum foil. Let rest 3 minutes.",
         "Place a patty on the bottom half of each bun. Top with upper half and serve warm."
       ],
@@ -535,7 +532,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "latin_american"
       ],
@@ -588,7 +585,7 @@
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "flank steak, pork legs, or pork rinds (optional)"
+          "item": "flank steak, pork legs, or pork rinds, optional"
         },
         {
           "qty": null,
@@ -682,7 +679,7 @@
         "Fry or grill the burgers for about 4–5 minutes on each side for burgers that aren't too thick.",
         "Let the burger rest for several minutes before serving to let the juices cool down and not burst out at first bite.",
         "Ensure the burgers are fully cooked through before serving. If the burgers are quite thick or if you are unsure, you can cut one open to ensure the insides are browned. If the insides are red, there is a chance that the meat is not fully cooked.",
-        "Alternately, you can insert a meat thermometer into the center of the burger, if the temperature reads less than 71°C (160°F (71°C)), the burger is undercooked.",
+        "Alternately, you can insert a meat thermometer into the center of the burger, if the temperature reads less than 71°C (160°F), the burger is undercooked.",
         "Serve each burger on a bun (sesame seed usually), optionally with relish, sliced pickles, ketchup, mayonnaise, mustard, ranch dressing, cheese, lettuce, tomatoes and/or onions."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Double_Hamburgers",
@@ -774,7 +771,7 @@
         "vegan",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -912,7 +909,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -1000,7 +997,6 @@
         "Stir well to incorporate the spices.",
         "Bring the soup to a boil, then reduce the heat to low.",
         "Cover the pot and let it simmer for about 1–1.5 hours, or until the meat is tender and the flavors have melded together. The meat is done at 165°F (74°C) inside.",
-        "Taste the soup and adjust the seasoning if needed.",
         "Remove the pot from heat and ladle the caldo into serving bowls.",
         "Garnish each bowl with freshly chopped cilantro or parsley. Serve hot."
       ],
@@ -1020,7 +1016,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -1406,7 +1402,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "sugar (optional)"
+          "item": "sugar, optional"
         }
       ],
       "steps": [
@@ -1527,7 +1523,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -1669,8 +1665,7 @@
         "Add a little more water if anything seems seriously in danger of burning (but as little water as possible).",
         "Take pot off the stove and skim off all or most of the grease.",
         "Mix in masa harina, which \"tightens\" or thickens the chili con carne and adds a subtle tamale-like flavor.",
-        "Simmer about 30 minutes more, until meat is done.",
-        "Do a lot of tasting during this time, (1) to adjust the seasoning, and (2) just because a chili cook should do a lot of tasting."
+        "Simmer about 30 minutes more, until meat is done."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Original_Texas-Style_Chili",
       "sourceName": "Wikibooks Cookbook",
@@ -1929,7 +1924,6 @@
         "Mix well to coat the chicken with the spices.",
         "Pour in the water or chicken broth and bring the mixture to a boil.",
         "Reduce the heat to low, cover the pot with a lid, and let simmer for about 1 hour, or until the chicken is tender and cooked through.",
-        "Taste and adjust the seasoning if needed.",
         "Serve the hot, garnished with freshly chopped parsley.",
         "Accompany with bread or couscous to soak up the flavorful sauce."
       ],
@@ -1948,7 +1942,7 @@
         "main-meal",
         "vegetarian",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -2224,7 +2218,7 @@
         "Brush with olive oil and grill on high just until marked.",
         "Flip and repeat 1 more time.",
         "Move to smoker and insert a probe thermometer into one of the chopes.",
-        "Cover and cook until internal temperature reaches 140°F (60°C) for medium rare, 155°F (68°C) for medium, and 165°F (74°C) for toast.",
+        "Cover and cook until internal temperature reaches 140°F (60°C) for medium rare, 155°F (68°C) for medium, and 165°F (74°C) for well done.",
         "Carry-over will take it the last 5 degrees.",
         "Keep checking the temperature and microwave if needed to get above 145°F (63°C).",
         "Move to a plate and let rest 5 minutes. Serve warm."
@@ -2521,7 +2515,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -2777,7 +2771,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "british"
@@ -3158,7 +3151,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "carrot (optional), chopped"
+          "item": "carrot, optional, chopped"
         },
         {
           "qty": null,
@@ -3178,22 +3171,22 @@
         {
           "qty": 1.0,
           "unit": "pinch",
-          "item": "tarragon (optional)"
+          "item": "tarragon, optional"
         },
         {
           "qty": 1.0,
           "unit": "pinch",
-          "item": "oregano (optional)"
+          "item": "oregano, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "worcestershire sauce (optional)"
+          "item": "worcestershire sauce, optional"
         },
         {
           "qty": 1.0,
           "unit": "",
-          "item": "small bay leaf (optional)"
+          "item": "small bay leaf, optional"
         }
       ],
       "steps": [
@@ -3454,7 +3447,6 @@
         "Sauté the carrot and celery in the butter and oil over medium heat until softened (about 10 minutes).",
         "Just before the carrot and celery are done, add the dried onion and parsley.",
         "Place the drained and cooled lentils in a large bowl, add the carrot mixture, and mash everything with a potato masher. Don't over-mash; it is fine to leave some of the lentils whole.",
-        "Taste and adjust seasoning if necessary.",
         "Add the eggs and about ¼ cup bread crumbs, and stir to combine all the ingredients.",
         "Continue to add bread crumbs until you have a slightly moist but not wet mixture.",
         "Form mixture into patties. Place the formed patties onto a plate and layer with waxed paper in between.",
@@ -3482,7 +3474,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "american"
+        "mediterranean"
       ],
       "ingredients": [
         {
@@ -3656,7 +3648,7 @@
         {
           "qty": 3.0,
           "unit": "oz",
-          "item": "mozzarella or goat cheese (optional)"
+          "item": "mozzarella or goat cheese, optional"
         }
       ],
       "steps": [
@@ -3667,7 +3659,7 @@
         "While vegetables are roasting, sauté the garlic in a tablespoon of olive oil until it begins to colour.",
         "Add the tomato sauce and simmer 1 minute.",
         "Turn off heat and add the basil.",
-        "Stir the roasted vegetables into the sauce. Gorgeous!",
+        "Stir the roasted vegetables into the sauce.",
         "Turn oven down to 375°F (190°C).",
         "Add wine to roasting pan and stir, scraping up bits of vegetables that are stuck to pan, and add these deglazed juices to the sauce.",
         "Boil a large pot of water, and add the salt and pasta.",
@@ -3794,7 +3786,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "easy",
+        "medium",
         "moderate",
         "american"
       ],
@@ -3849,7 +3841,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -3937,7 +3929,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "chopped peanuts (optional)"
+          "item": "chopped peanuts, optional"
         }
       ],
       "steps": [
@@ -3970,7 +3962,7 @@
         "vegetarian",
         "vegan",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -4037,7 +4029,7 @@
         }
       ],
       "steps": [
-        "Preheat the oven to 180°C (350°F (175°C)) and bake the mahshi for about 60–75 minutes, or until the vegetables are tender and the rice filling is cooked through.",
+        "Preheat the oven to 180°C (350°F) and bake the mahshi for about 60–75 minutes, or until the vegetables are tender and the rice filling is cooked through.",
         "Prepare the vegetables for stuffing by carefully cutting off the tops and scooping out the seeds and flesh, creating hollow shells.",
         "Set aside the scooped-out vegetable flesh for later use.",
         "In a mixing bowl, combine the medium-grain rice, tomato paste, olive oil, finely chopped parsley, finely chopped mint leaves, minced garlic, ground cumin, ground coriander, salt, and black pepper.",
@@ -4185,7 +4177,7 @@
         "Let it boil until the peas are mushy.",
         "There will be a froth foaming at the top while it boils—remove it with a ladle.",
         "When the peas are mushy, add peanut butter and mix.",
-        "There is a special contraption called ugwech that you can use, but you can also use a hand blender as it is easier on the muscles and quicker. The peanut butter will make the soup thick, so please add it according to taste and the desired texture.",
+        "There is a special contraption called ugwech that you can use, but you can also use a hand blender as it is easier on the muscles and quicker.",
         "If it becomes too thick you can add hot water to loosen the mixture.",
         "Serve."
       ],
@@ -4296,7 +4288,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "french"
       ],
@@ -4362,7 +4354,7 @@
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "milk (optional) (2–3 tbsp)"
+          "item": "milk, optional (2–3 tbsp)"
         },
         {
           "qty": 2.0,
@@ -4419,7 +4411,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -4447,7 +4439,7 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "baking powder (optional)"
+          "item": "baking powder, optional"
         },
         {
           "qty": null,
@@ -4484,7 +4476,6 @@
         "main-meal",
         "vegetarian",
         "dairy-free",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -4503,7 +4494,7 @@
         {
           "qty": 3.0,
           "unit": "tbsp",
-          "item": "hickory smoked barbecue sauce (recommended) OR barbecue sauce OR tomato sauce OR ketchup"
+          "item": "hickory smoked barbecue sauce or barbecue sauce or tomato sauce or ketchup"
         },
         {
           "qty": 2.0,
@@ -4523,7 +4514,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "low-sodium soy sauce to taste (optional)"
+          "item": "low-sodium soy sauce to taste, optional"
         }
       ],
       "steps": [
@@ -4553,7 +4544,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -4671,7 +4662,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -4784,7 +4775,7 @@
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "stockfish (optional)"
+          "item": "stockfish, optional"
         },
         {
           "qty": 2.0,
@@ -5009,7 +5000,6 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -5073,7 +5063,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "maple syrup (optional)"
+          "item": "maple syrup, optional"
         }
       ],
       "steps": [
@@ -5332,7 +5322,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -5386,7 +5376,7 @@
         "high-protein",
         "hard",
         "splurge",
-        "american"
+        "canadian"
       ],
       "ingredients": [
         {
@@ -5463,7 +5453,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],

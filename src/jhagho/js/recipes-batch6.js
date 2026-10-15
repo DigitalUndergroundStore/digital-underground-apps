@@ -37,7 +37,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "thick stalks lemongrass, fat ends bashed with a rolling pin (optional) (1–2)"
+          "item": "thick stalks lemongrass, fat ends bashed with a rolling pin, optional (1–2)"
         },
         {
           "qty": 750.0,
@@ -209,6 +209,8 @@
         "breakfast",
         "main-meal",
         "vegetarian",
+        "vegan",
+        "dairy-free",
         "high-protein",
         "medium",
         "budget",
@@ -273,7 +275,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "flour tortillas, or vegan bread (optional) (1–3)"
+          "item": "flour tortillas, or vegan bread, optional (1–3)"
         }
       ],
       "steps": [
@@ -299,7 +301,7 @@
         "breakfast",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -450,7 +452,7 @@
         {
           "qty": 10.0,
           "unit": "oz",
-          "item": "okra (optional)"
+          "item": "okra, optional"
         },
         {
           "qty": 2.0,
@@ -480,7 +482,7 @@
         {
           "qty": 8.0,
           "unit": "oz",
-          "item": "clam juice (optional)"
+          "item": "clam juice, optional"
         },
         {
           "qty": 0.5,
@@ -535,7 +537,7 @@
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "crawfish (optional)"
+          "item": "crawfish, optional"
         },
         {
           "qty": 4.0,
@@ -572,7 +574,7 @@
         "high-protein",
         "medium",
         "budget",
-        "canadian"
+        "european"
       ],
       "ingredients": [
         {
@@ -653,7 +655,7 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "maple syrup or brown sugar (optional)"
+          "item": "maple syrup or brown sugar, optional"
         }
       ],
       "steps": [
@@ -663,7 +665,7 @@
         "Spread a cabbage leaf out flat on a work surface. Place 2–3 tablespoons of filling near the base of each cabbage leaf. Fold in the sides and roll up tightly to enclose the filling. Repeat with the remaining filling and cabbage leaves.",
         "Prepare the sauce by mixing the crushed tomatoes, tomato paste, canola oil, paprika, and apple cider vinegar in a bowl or large measuring cup. Add a the sugar or maple syrup if you like your sauces a bit sweeter.",
         "Spread a few spoonfuls of the sauce on the bottom of a large baking dish or pot. Arrange the cabbage rolls over the tomatoes, seam-side down. Pour the rest of the sauce over top of the rolls Sprinkle with extra dill if desired.",
-        "For the oven method, cover with foil and bake at 175°C (350°F (175°C)) for 1 hour. For the stovetop method, simmer gently, covered, on low heat for 1 hour."
+        "For the oven method, cover with foil and bake at 175°C (350°F) for 1 hour. For the stovetop method, simmer gently, covered, on low heat for 1 hour."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Turkey_%26_Barley_Cabbage_Rolls_with_Fresh_Dill",
       "sourceName": "Wikibooks Cookbook",
@@ -740,8 +742,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -796,7 +797,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -909,7 +910,7 @@
         "high-protein",
         "hard",
         "moderate",
-        "canadian"
+        "european"
       ],
       "ingredients": [
         {
@@ -1183,7 +1184,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "white sesame seeds for garnishing (optional)"
+          "item": "white sesame seeds for garnishing, optional"
         }
       ],
       "steps": [
@@ -1210,8 +1211,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -1229,7 +1229,7 @@
         {
           "qty": 3.0,
           "unit": "",
-          "item": "standard eggs"
+          "item": "eggs"
         },
         {
           "qty": 375.0,
@@ -1594,7 +1594,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "italian"
       ],
@@ -1747,7 +1747,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "european"
       ],
@@ -1770,7 +1770,7 @@
         {
           "qty": 0.5,
           "unit": "",
-          "item": "celery root (optional)"
+          "item": "celery root, optional"
         },
         {
           "qty": 1.0,
@@ -1834,8 +1834,7 @@
         "Sauté for 2 minutes, and add the flour and constantly stir it over low heat.",
         "Add ½–⅓ cups (120-80 ml) of water to the sauté pan and continue stirring.",
         "When the potatoes are cooked, add the prepared sour cucumber preparation to the stock pot and mix them well.",
-        "Boil for 3–5 minutes and season the soup to taste. If desired, mix some soup with cream or sour cream in a small cup and add it to the pan, or a smaller amount to each individual serving.",
-        "Smacznego!"
+        "Boil for 3–5 minutes and season the soup to taste. If desired, mix some soup with cream or sour cream in a small cup and add it to the pan, or a smaller amount to each individual serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Zupa_Og%C3%B3rkowa_(Polish_Cucumber_Soup)",
       "sourceName": "Wikibooks Cookbook",
@@ -1851,7 +1850,6 @@
         "dinner",
         "main-meal",
         "gluten-free",
-        "high-protein",
         "medium",
         "budget",
         "italian"
@@ -2184,7 +2182,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -2404,7 +2402,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -2517,7 +2515,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "easy",
+        "medium",
         "moderate",
         "american"
       ],
@@ -2653,7 +2651,7 @@
         "main-meal",
         "vegetarian",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "italian"
       ],
@@ -2903,7 +2901,7 @@
         }
       ],
       "steps": [
-        "Preheat the oven to 180°C (350°F (175°C)).",
+        "Preheat the oven to 180°C (350°F).",
         "Spread the groundnuts evenly on a baking sheet. Roast the groundnuts in the preheated oven for about 10–15 minutes, or until they are golden brown and fragrant.",
         "Remove the roasted groundnuts from the oven and allow them to cool.",
         "Once cooled, transfer the roasted groundnuts to a food processor or blender and grind them into a smooth paste. Set aside.",
@@ -2992,7 +2990,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "lettuce, tomato, and onion (optional)"
+          "item": "lettuce, tomato, and onion, optional"
         }
       ],
       "steps": [
@@ -3197,7 +3195,7 @@
         "breakfast",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -3230,7 +3228,7 @@
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "chopped green onions (optional)"
+          "item": "chopped green onions, optional"
         },
         {
           "qty": 0.5,
@@ -3272,7 +3270,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -3361,7 +3359,7 @@
         "main-meal",
         "vegetarian",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -3447,7 +3445,7 @@
         "main-meal",
         "vegetarian",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -3480,7 +3478,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "sour cream (optional)"
+          "item": "sour cream, optional"
         }
       ],
       "steps": [
@@ -3691,7 +3689,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -3953,7 +3951,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "american"
       ],
@@ -4044,7 +4042,7 @@
         "vegetarian",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -4157,7 +4155,7 @@
         "breakfast",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -4170,7 +4168,7 @@
         {
           "qty": 4.0,
           "unit": "",
-          "item": "standard eggs, beaten"
+          "item": "eggs, beaten"
         },
         {
           "qty": 0.5,
@@ -4291,7 +4289,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -4418,12 +4416,12 @@
         {
           "qty": 0.25,
           "unit": "cup",
-          "item": "chopped onion (optional)"
+          "item": "chopped onion, optional"
         },
         {
           "qty": 0.25,
           "unit": "cup",
-          "item": "chopped green bell pepper (optional)"
+          "item": "chopped green bell pepper, optional"
         },
         {
           "qty": null,
@@ -4487,7 +4485,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "italian seasoning or oregano and pepper (optional)"
+          "item": "italian seasoning or oregano and pepper, optional"
         }
       ],
       "steps": [
@@ -4513,7 +4511,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "french"
       ],
@@ -4702,7 +4700,7 @@
         "vegetarian",
         "gluten-free",
         "high-protein",
-        "medium",
+        "hard",
         "budget",
         "american"
       ],
@@ -4853,7 +4851,7 @@
         "vegetarian",
         "medium",
         "budget",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -4920,8 +4918,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -5104,7 +5101,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -5132,7 +5129,7 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "fresh minced ginger (optional)"
+          "item": "fresh minced ginger, optional"
         },
         {
           "qty": 2.0,
@@ -5142,7 +5139,7 @@
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "tomato paste (optional)"
+          "item": "tomato paste, optional"
         },
         {
           "qty": 1.0,
@@ -5215,7 +5212,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "american"
       ],
@@ -5360,6 +5357,88 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
+      "id": "r998",
+      "name": "Chicken-fried Steak",
+      "minutes": 20,
+      "servings": 2,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "hard",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "white flour as needed plus 3 tbsp"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "freshly-ground black pepper"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "kosher salt"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs, beaten"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "whole milk, combined with ¼ cup heavy cream"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "beef steaks, ½ inch thick"
+        },
+        {
+          "qty": 3.0,
+          "unit": "tbsp",
+          "item": "bacon drippings, divided"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "smoked paprika"
+        },
+        {
+          "qty": 0.3333,
+          "unit": "cup",
+          "item": "chicken broth"
+        }
+      ],
+      "steps": [
+        "Pour 2 tbsp drippings into a 12-inch cast-iron skillet.",
+        "Preheat the pan over medium high heat.",
+        "Wet hand, drip 1 drop of water in pan to test the heat. If it sizzles, it's hot enough.",
+        "Trim each steak.",
+        "Beat eggs with seasonings, then dip steaks into eggs.",
+        "Thoroughly dredge steak in flour on both sides.",
+        "When the pan is hot enough, put steaks in pan in a triangle formation.",
+        "Fry until golden brown, about 4 minutes per side.",
+        "Remove steak(s) from pan and place in a 200°F (95°C) oven.",
+        "Pour remaining drippings into pan and lower heat to medium.",
+        "Add flour and cook, whisking, until light blonde color is achieved.",
+        "Add chicken broth to pan, and whisk to deglaze pan.",
+        "Add cream mixture and bring to a boil.",
+        "Reduce heat to low and cook until gravy coats back of spoon. Don't let the gravy get too thick.",
+        "Drizzle gravy over steaks and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken-fried_Steak",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
       "id": "r999",
       "name": "Chicken Alfredo",
       "minutes": 50,
@@ -5371,7 +5450,7 @@
         "high-protein",
         "hard",
         "moderate",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -5479,7 +5558,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -5559,6 +5638,93 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
+      "id": "r1004",
+      "name": "Chicken Parmesan",
+      "minutes": 40,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "hard",
+        "moderate",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 6.0,
+          "unit": "",
+          "item": "chicken breast halves, flattened to ½-inch thickness"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "all purpose flour"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "italian seasoned bread crumbs"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "grated Parmesan cheese, divided"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper, freshly-ground if possible"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "olive oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "jar",
+          "item": "spaghetti sauce (or make it fresh)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "package",
+          "item": "sliced mozzarella cheese"
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 350°F (175°C).",
+        "Mix the breadcrumbs, salt, black pepper, and half the Parmesan cheese in a mixing bowl.",
+        "Beat the eggs in a small bowl.",
+        "On the stove, heat olive oil in a large frying pan over medium-high heat.",
+        "Take each chicken breast and dip it into the flour, then into the eggs, then into the breadcrumb mixture. Make sure to coat it thoroughly.",
+        "Pan fry the chicken breasts lightly in the olive oil until brown on both sides. The chicken is done at 165°F (74°C) inside.",
+        "You do not need to cook them through, just brown them.",
+        "Once brown, the breadcrumbs should stick to the outside.",
+        "Pour half a jar of pasta sauce into a shallow baking dish, then lay the chicken out in the pan.",
+        "Pour the rest of the sauce on top.",
+        "Sprinkle the remaining grated Parmesan cheese over the chicken.",
+        "Place the dish in the oven and bake for 30 minutes at 350°F (175°C).",
+        "Remove and add a slice of mozzarella cheese to each chicken breast.",
+        "Return to the oven for 10 more minutes to melt the mozzarella.",
+        "Serve with pasta."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Parmesan",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
       "id": "r1005",
       "name": "Chicken Quesadilla",
       "minutes": 60,
@@ -5568,9 +5734,9 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -5744,7 +5910,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "easy",
+        "hard",
         "moderate",
         "american"
       ],
@@ -5837,7 +6003,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "mexican"
@@ -5886,7 +6051,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "standard egg"
+          "item": "egg"
         },
         {
           "qty": 0.25,
@@ -5999,7 +6164,7 @@
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "finely-chopped parsley or cilantro sprig (optional)"
+          "item": "finely-chopped parsley or cilantro sprig, optional"
         }
       ],
       "steps": [
@@ -6036,7 +6201,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -6126,8 +6291,7 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -6262,7 +6426,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -6314,8 +6478,7 @@
       "tags": [
         "lunch",
         "main-meal",
-        "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -6543,7 +6706,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -6646,7 +6808,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -6803,7 +6964,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2003",
+      "id": "r2004",
       "name": "Abula (Nigerian Three Stews)",
       "minutes": 20,
       "servings": 2,
@@ -6814,7 +6975,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -6909,7 +7070,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2004",
+      "id": "r2005",
       "name": "Achi Jollof",
       "minutes": 60,
       "servings": 4,
@@ -6958,7 +7119,7 @@
         {
           "qty": 2.0,
           "unit": "cup",
-          "item": "leafy vegetables (optional)"
+          "item": "leafy vegetables, optional"
         },
         {
           "qty": 2.0,
@@ -6978,7 +7139,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "stockfish or dry fish (optional)"
+          "item": "stockfish or dry fish, optional"
         }
       ],
       "steps": [
@@ -6988,7 +7149,6 @@
         "Add the achi paste Gradually pour in the achi mixture while stirring continuously.",
         "Cook until thickened Allow it to cook and thicken into a smooth consistency.",
         "Add vegetables (optional) Stir in leafy vegetables if using.",
-        "Adjust seasoning Taste and add salt or seasoning if needed.",
         "Simmer briefly Let it cook for a few more minutes so the flavors combine well.",
         "Serve hot Serve as a hearty traditional meal."
       ],
@@ -6997,7 +7157,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2006",
+      "id": "r2007",
       "name": "African Cabbage Stew",
       "minutes": 30,
       "servings": 4,
@@ -7007,7 +7167,6 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
         "medium",
         "budget",
         "african"
@@ -7094,7 +7253,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2008",
+      "id": "r2009",
       "name": "Akabenz (Rwandan Fried Chicken)",
       "minutes": 15,
       "servings": 4,
@@ -7177,6 +7336,263 @@
     },
     {
       "id": "r2010",
+      "name": "Albanian Fried Meatballs",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "easy",
+        "budget",
+        "european"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "slice",
+          "item": "stale bread"
+        },
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "ground meat"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "small onion, finely-grated"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "chopped feta cheese"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "bread crumbs"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "oil or melted butter"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "chopped parsley"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "mint"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oregano"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "flour"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "oil (olive oil recommended)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "boiled potatoes, to serve"
+        }
+      ],
+      "steps": [
+        "Soak bread in water and squeeze hard to drain.",
+        "Combine soaked bread, ground meat, bread crumbs, oil or melted butter, onion, cheese, parsley, salt, pepper, and mint, and mix thoroughly.",
+        "Form mixture into 1 inch-thick patties, then sprinkle with salt, pepper, and oregano.",
+        "Roll in flour and fry in hot oil. Ground meat is done at 160°F (71°C) inside.",
+        "Serve hot with French fries or mashed potatoes."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Albanian_Fried_Meatballs",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2011",
+      "name": "Albanian Meat with Walnuts",
+      "minutes": 40,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "medium",
+        "splurge",
+        "european"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "flour"
+        },
+        {
+          "qty": 15.0,
+          "unit": "",
+          "item": "shelled walnuts, finely crushed"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "egg yolks, beaten"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "garlic clove, minced"
+        },
+        {
+          "qty": 0.25,
+          "unit": "lb",
+          "item": "butter"
+        },
+        {
+          "qty": 2.0,
+          "unit": "lb",
+          "item": "veal or chicken meat, cut into 1-inch cubes (2–3 lb)"
+        }
+      ],
+      "steps": [
+        "Place the meat or chicken in a saucepan, and cook over medium heat until tender. The meat is done at 165°F (74°C) inside.",
+        "Remove the meat, and set it aside in a dish while leaving the remaining juices in the saucepan.",
+        "In another saucepan, add the flour and stir over heat until it becomes light brown in color—do not overcook!",
+        "Add half the butter.",
+        "Add the walnuts, garlic, and egg yolks, stirring constantly.",
+        "Add the meat juices from the other saucepan, and stir until all the ingredients thicken.",
+        "Immediately remove from the heat to avoid solidifying the egg yolks.",
+        "Fold in the meat.",
+        "Pan fry the remaining half stick of butter until brown, and pour over the dish before serving."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Albanian_Meat_with_Walnuts",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2012",
+      "name": "Algerian Chakhchoukha (Vegetable and Flatbread Stew)",
+      "minutes": 60,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "olive oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, chopped"
+        },
+        {
+          "qty": 3.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "black pepper to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "paprika"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "tomatoes, grated"
+        },
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "dried chickpeas, soaked and drained"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "chile pepper, optional"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "meat (e.g. lamb, beef, chicken), cubed"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "water"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "rougag"
+        }
+      ],
+      "steps": [
+        "Heat some olive oil in a saucepan over medium heat.",
+        "Add the onion, garlic, salt, pepper, paprika, and tomato paste, and cook for 5 minutes.",
+        "Add the tomato, chickpeas, and chili pepper, and cook for 10–15 minutes.",
+        "Add the meat and enough boiling water to slightly cover everything. The meat is done at 165°F (74°C) inside.",
+        "Let the mixture cook for approximately 45 minutes, or until the meat and chickpeas are cooked and the sauce is thick.",
+        "Rip the sheets of rougag with the hands into tiny pieces.",
+        "Place them in the top of a steamer and steam for 5 minutes, then remove and set aside.",
+        "Place the meat and vegetables over the rougag in a dish, and pour the sauce on top.",
+        "Serve hot."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Algerian_Chakhchoukha_(Vegetable_and_Flatbread_Stew)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2013",
       "name": "Alicha Wot (Mild Ethiopian Stew)",
       "minutes": 60,
       "servings": 4,
@@ -7279,7 +7695,6 @@
         "Bring the mixture to a boil.",
         "Reduce the heat to low, cover the pot, and simmer for about 1 hour, or until the beef is tender and the flavors have melded together.",
         "Stir occasionally and add more liquid if needed to maintain the desired consistency.",
-        "Taste the stew and adjust the seasoning with salt and pepper if needed.",
         "Remove the pot from the heat and let rest for a few minutes before serving.",
         "Garnish with fresh chopped cilantro or parsley.",
         "Serve hot with injera or bread the mild yet flavorful experience of this Ethiopian stew."
@@ -7289,7 +7704,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2011",
+      "id": "r2014",
       "name": "Almond Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -7298,8 +7713,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -7380,7 +7794,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2012",
+      "id": "r2016",
       "name": "Alsatian Chicken Fricassée",
       "minutes": 55,
       "servings": 4,
@@ -7461,7 +7875,7 @@
         }
       ],
       "steps": [
-        "Preheat oven to 180°C (350°F (175°C)).",
+        "Preheat oven to 180°C (350°F).",
         "Remove the skin from the chicken.",
         "Season all the pieces.",
         "Pour the oil into a heat-proof casserole.",
@@ -7477,7 +7891,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2013",
+      "id": "r2018",
       "name": "Appam (Fermented Rice Pancake)",
       "minutes": 5,
       "servings": 12,
@@ -7525,7 +7939,7 @@
         {
           "qty": 0.5,
           "unit": "tsp",
-          "item": "yeast or kefir, to start the ferment (optional)"
+          "item": "yeast or kefir, to start the ferment, optional"
         },
         {
           "qty": null,
@@ -7549,7 +7963,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2014",
+      "id": "r2019",
       "name": "Apple Crusted Ham",
       "minutes": 80,
       "servings": 4,
@@ -7599,7 +8013,83 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2016",
+      "id": "r2020",
+      "name": "Apple Parsnip Soup",
+      "minutes": 40,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "easy",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "apples"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "carrot"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "parsnip"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "lemon, juiced"
+        },
+        {
+          "qty": 4.0,
+          "unit": "cup",
+          "item": "water"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "nutmeg"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "soup mix, optional"
+        }
+      ],
+      "steps": [
+        "Chop up the onions, and sauté them in a pot with the olive oil until the onions are golden.",
+        "Chop up the apples, the carrot, and the parsnip, and put them into the pot.",
+        "Put the water, the nutmeg, the soup mix (if you are using the soup mix), lemon juice into the pot.",
+        "Cook for one hour, or until the carrots are soft.",
+        "Put the soup into a blender, and blend it up until it is smooth; there should not be any lumps in it.",
+        "Serve cold or hot!"
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Apple_Parsnip_Soup",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2022",
       "name": "Apricot Chicken Salad",
       "minutes": 15,
       "servings": 1,
@@ -7647,7 +8137,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "hot paprika (optional)"
+          "item": "hot paprika, optional"
         }
       ],
       "steps": [
@@ -7660,7 +8150,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2017",
+      "id": "r2023",
       "name": "Asaro",
       "minutes": 60,
       "servings": 3,
@@ -7714,7 +8204,7 @@
         {
           "qty": 200.0,
           "unit": "g",
-          "item": "protein, such as fresh fish, meat, or smoked fish (optional)"
+          "item": "protein, such as fresh fish, meat, or smoked fish, optional"
         },
         {
           "qty": 4.0,
@@ -7729,7 +8219,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "leafy vegetables such as spinach or ugu (optional)"
+          "item": "leafy vegetables such as spinach or ugu, optional"
         }
       ],
       "steps": [
@@ -7740,15 +8230,14 @@
         "Stir in the water and bring to a boil.",
         "Gently stir in the cubed yam.",
         "Cover and simmer, stirring occasionally, until the yam becomes soft and some of it has broken down to thicken the dish.",
-        "Add leafy vegetables if desired and cook for an additional 3–5 minutes.",
-        "Adjust seasoning and remove from heat."
+        "Add leafy vegetables if desired and cook for an additional 3–5 minutes."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Asaro",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2018",
+      "id": "r2024",
       "name": "Asian Barbecue Ribs",
       "minutes": 375,
       "servings": 4,
@@ -7758,7 +8247,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "chinese"
       ],
@@ -7819,7 +8308,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2019",
+      "id": "r2025",
       "name": "Asian-Inspired Chicken Salad",
       "minutes": 15,
       "servings": 4,
@@ -7831,7 +8320,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "chinese"
+        "american"
       ],
       "ingredients": [
         {
@@ -7872,12 +8361,12 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "mango, peeled, seeded, and thinly sliced (optional)"
+          "item": "mango, peeled, seeded, and thinly sliced, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "sesame crackers (optional)"
+          "item": "sesame crackers, optional"
         }
       ],
       "steps": [
@@ -7895,7 +8384,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2020",
+      "id": "r2026",
       "name": "Atkilt Wat (Ethiopian Cabbage and Potato Stew)",
       "minutes": 30,
       "servings": 4,
@@ -7996,7 +8485,6 @@
         "Add the finely shredded cabbage to the pot.",
         "Mix everything together and cover the pot.",
         "Cook for another 15–20 minutes, or until the cabbage is tender, stirring occasionally.",
-        "Taste and season with salt according to the preference.",
         "Remove the pot from the heat and let the stew rest for a few minutes.",
         "Garnish with freshly chopped cilantro before serving."
       ],
@@ -8005,7 +8493,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2021",
+      "id": "r2027",
       "name": "Awaze Tibs (Spicy Ethiopian Meat Stir-Fry)",
       "minutes": 15,
       "servings": 4,
@@ -8015,7 +8503,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "african"
       ],
@@ -8098,7 +8586,6 @@
         "Add the awaze sauce, soy sauce, vinegar, and salt to the skillet.",
         "Stir everything together to combine the flavors and coat the meat evenly.",
         "Continue to stir-fry for another 2–3 minutes until the sauce thickens and coats the meat.",
-        "Taste the dish and adjust the seasoning with salt or additional spices according to the preference.",
         "Remove the skillet from the heat and garnish the with freshly chopped cilantro."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Awaze_Tibs_(Spicy_Ethiopian_Meat_Stir-Fry)",
@@ -8106,7 +8593,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2022",
+      "id": "r2028",
       "name": "Ayamase Jollof Rice",
       "minutes": 25,
       "servings": 4,
@@ -8116,7 +8603,8 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "high-protein",
+        "medium",
         "budget",
         "african"
       ],
@@ -8212,7 +8700,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2023",
+      "id": "r2029",
       "name": "Baby Back Ribs",
       "minutes": 600,
       "servings": 4,
@@ -8310,7 +8798,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2024",
+      "id": "r2030",
       "name": "Bachelor Fish Stew",
       "minutes": 20,
       "servings": 1,
@@ -8372,7 +8860,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2026",
+      "id": "r2032",
       "name": "Baked Lemon Thyme Halibut",
       "minutes": 25,
       "servings": 12,
@@ -8385,7 +8873,7 @@
         "high-protein",
         "easy",
         "splurge",
-        "mediterranean"
+        "american"
       ],
       "ingredients": [
         {
@@ -8431,8 +8919,8 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2027",
-      "name": "Baked Tilapia in White Wine",
+      "id": "r2033",
+      "name": "Baked Tilapia with White Wine",
       "minutes": 40,
       "servings": 2,
       "meal": "dinner",
@@ -8512,7 +9000,86 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2028",
+      "id": "r2034",
+      "name": "Banana Curry",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "easy",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 750.0,
+          "unit": "g",
+          "item": "banana (slightly unripe)"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "cumin seeds"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "turmeric powder"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "garam masala or good curry powder"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "lemon juice"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "glass of milk"
+        },
+        {
+          "qty": 4.0,
+          "unit": "tbsp",
+          "item": "double cream"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "chile pepper powder"
+        },
+        {
+          "qty": 30.0,
+          "unit": "g",
+          "item": "butter"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "some salt"
+        }
+      ],
+      "steps": [
+        "Cut banana in 2 cm slices.",
+        "Add milk, cream, garam masala (or curry) powder, chili, and lemon (add some salt) to the bananas.",
+        "Melt butter, add cumin seeds and turmeric, and cook at medium low for a couple of minutes until a fragrant smell develops.",
+        "Add bananas and their sauce.",
+        "Cook on a gentle heat until ready (depends on banana's ripeness)—do not overcook."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Curry",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2035",
       "name": "Banana Nutmeg Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -8521,7 +9088,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -8615,74 +9181,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2029",
-      "name": "Basic Lasagna",
-      "minutes": 60,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "vegetarian",
-        "high-protein",
-        "medium",
-        "budget",
-        "italian"
-      ],
-      "ingredients": [
-        {
-          "qty": 6.0,
-          "unit": "",
-          "item": "eggs, separated"
-        },
-        {
-          "qty": 2.0,
-          "unit": "cup",
-          "item": "ricotta cheese OR shredded mozzarella cheese OR shredded cheddar cheese"
-        },
-        {
-          "qty": 1.0,
-          "unit": "pinch",
-          "item": "salt"
-        },
-        {
-          "qty": 0.25,
-          "unit": "tsp",
-          "item": "freshly-ground white pepper"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "heavy cream"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "~1000 g cooked lasagne noodles"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "italian Tomato Sauce"
-        }
-      ],
-      "steps": [
-        "In a large spotlessly clean stainless steel bowl, whip egg whites to stiff peaks and set aside.",
-        "Combine egg yolks, cheese, salt, pepper, and heavy cream.",
-        "Gently fold egg whites into cheese mixture.",
-        "Lay half the cooked noodles in the bottom of a roasting pan.",
-        "Add a layer of tomato sauce on top, then a layer of the cheese mixture.",
-        "Repeat this step for a second layer of noodles/tomato/cheese. The last layer should be cheese.",
-        "Cover with aluminum foil and bake at 375°F (190°C) for 15 minutes.",
-        "Remove foil and bake for another 20 minutes.",
-        "Remove from oven, and let rest for 10 minutes. Serve."
-      ],
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Basic_Lasagna",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceLicense": "CC BY-SA 4.0"
-    },
-    {
-      "id": "r2030",
+      "id": "r2038",
       "name": "Bassi-Salté (Senegalese Couscous with Meat and Vegetables)",
       "minutes": 60,
       "servings": 5,
@@ -8694,7 +9193,7 @@
         "vegan",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -8794,7 +9293,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2031",
+      "id": "r2039",
       "name": "Bazeen bil Lahm (Libyan Meat Bazeen)",
       "minutes": 310,
       "servings": 4,
@@ -8915,7 +9414,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2033",
+      "id": "r2041",
       "name": "Bean Jahni Soup",
       "minutes": 190,
       "servings": 4,
@@ -8928,7 +9427,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "budget",
         "indian"
       ],
@@ -8992,7 +9491,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2034",
+      "id": "r2043",
       "name": "Beef Gravy Soup",
       "minutes": 35,
       "servings": 6,
@@ -9003,7 +9502,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -9051,7 +9550,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2035",
+      "id": "r2044",
       "name": "Beef Muchomo (Ugandan Beef Skewers)",
       "minutes": 595,
       "servings": 4,
@@ -9062,7 +9561,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -9128,7 +9627,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2036",
+      "id": "r2045",
       "name": "Beef Pasties",
       "minutes": 60,
       "servings": 4,
@@ -9137,7 +9636,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "medium",
+        "hard",
         "moderate",
         "british"
       ],
@@ -9211,7 +9710,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2037",
+      "id": "r2047",
       "name": "Beef Tenderloin Steak",
       "minutes": 20,
       "servings": 4,
@@ -9285,7 +9784,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2038",
+      "id": "r2048",
       "name": "Beef Tongue with Chiles, Corn and Tomato (Lengua de Res)",
       "minutes": 70,
       "servings": 10,
@@ -9363,7 +9862,128 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2039",
+      "id": "r2049",
+      "name": "Benachin (Gambian Rice with Meat and Vegetables)",
+      "minutes": 60,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "moderate",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large onion, finely chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 500.0,
+          "unit": "g",
+          "item": "chicken, beef, or fish, cut into pieces"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "paprika"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "thyme"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "curry powder"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "red bell pepper, diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "green bell pepper, diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "carrot, peeled and diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "chopped vegetables (such as green beans, peas, or corn)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "long-grain rice"
+        },
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "chicken or vegetable broth"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper to taste"
+        }
+      ],
+      "steps": [
+        "Heat the vegetable oil in a large pot or saucepan over medium heat.",
+        "Add the chopped onions and minced garlic.",
+        "Sauté until they become translucent and fragrant.",
+        "Add the chicken, beef, or fish to the pot and cook until browned on all sides.",
+        "Stir occasionally to ensure even cooking.",
+        "Stir in the tomato paste, paprika, thyme, and curry powder.",
+        "Cook for a few minutes to enhance the flavors.",
+        "Add the diced bell peppers, carrot, and other chopped vegetables of the choice.",
+        "Stir well to combine.",
+        "Rinse the rice under cold water until the water runs clear.",
+        "Drain the excess water.",
+        "Add the rice to the pot and stir until it is well-coated with the vegetable and meat mixture.",
+        "Pour in the chicken or vegetable broth and bring the mixture to a boil.",
+        "Avoid stirring the rice during this time to prevent it from becoming mushy.",
+        "Once the rice is cooked, gently fluff it with a fork.",
+        "Serve hot as a main course or as a side dish alongside grilled meat or fish. The meat is done at 165°F (74°C) inside."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Benachin_(Gambian_Rice_with_Meat_and_Vegetables)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2050",
       "name": "Benechin Kunkujang (Gambian Seasoned Rice and Lamb)",
       "minutes": 35,
       "servings": 4,
@@ -9487,7 +10107,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2040",
+      "id": "r2051",
       "name": "Bigos (Polish Cabbage Meat Stew)",
       "minutes": 310,
       "servings": 4,
@@ -9498,7 +10118,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "splurge",
         "european"
       ],
@@ -9562,7 +10182,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2041",
+      "id": "r2052",
       "name": "Black Bean Soup and Salsa Verde",
       "minutes": 30,
       "servings": 4,
@@ -9594,7 +10214,7 @@
         {
           "qty": 0.25,
           "unit": "cup",
-          "item": "packed cilantro leaves, plus extra sprigs for garnish (optional)"
+          "item": "packed cilantro leaves, plus extra sprigs for garnish, optional"
         },
         {
           "qty": 1.0,
@@ -9623,7 +10243,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2042",
+      "id": "r2053",
       "name": "Black Pepper Beef with Green Beans",
       "minutes": 30,
       "servings": 6,
@@ -9713,7 +10333,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2043",
+      "id": "r2054",
       "name": "Blackened Sirloin",
       "minutes": 55,
       "servings": 4,
@@ -9724,7 +10344,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "splurge",
         "american"
       ],
@@ -9771,7 +10391,55 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2044",
+      "id": "r2055",
+      "name": "Bouballe (Sweetened Matzo Meal Omelette)",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "dairy-free",
+        "easy",
+        "budget",
+        "middle_eastern"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "matzo meal"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "cornstarch"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "sugar"
+        }
+      ],
+      "steps": [
+        "Whip the egg whites.",
+        "Add the yolks, then the matzo meal and cornstarch. Mix everything together.",
+        "Cook the mixture like an omelette.",
+        "When cooked, sprinkle with sugar and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bouballe_(Sweetened_Matzo_Meal_Omelette)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2056",
       "name": "Boule-Di (Senegalese Fish and Rice)",
       "minutes": 30,
       "servings": 4,
@@ -9901,7 +10569,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2045",
+      "id": "r2057",
       "name": "Braai (Zambian Barbecue)",
       "minutes": 110,
       "servings": 4,
@@ -9984,7 +10652,122 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2046",
+      "id": "r2058",
+      "name": "Braised Shortribs",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.5,
+          "unit": "lb",
+          "item": "english cut beef shortribs"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "freshly-ground black pepper"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "bacon fat"
+        },
+        {
+          "qty": 6.0,
+          "unit": "cup",
+          "item": "beef broth"
+        },
+        {
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "red wine"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "dried rosemary"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "dried thyme"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "finely-chopped rosemary"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large onion, diced"
+        },
+        {
+          "qty": 3.0,
+          "unit": "tbsp",
+          "item": "minced garlic"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "carrots, peeled and cut into 1-inch (2.5 cm) slices"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "red-skinned potatoes, cut into 2-inch (5 cm) cubes"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "flour"
+        }
+      ],
+      "steps": [
+        "Heat bacon fat in a 6-quart (6-liter) cast iron Dutch oven over medium-high heat.",
+        "Season shortribs with salt, freshly ground black pepper, then dredge in flour.",
+        "Place 1 or 2 in the pot at one time, and cook until browned on all sides.",
+        "Repeat until all shortribs have been browned. Keep warm.",
+        "If there is not enough fat in the pan to coat the bottom, add olive oil.",
+        "Add ¼ of the vegetables at a time and sauté until browned around the edges.",
+        "Repeat until all vegetables have been sautéed.",
+        "Add remaining ingredients and browned shortribs.",
+        "Place into a cold oven and then set for 250°F (120°C).",
+        "Cook 5 ½ hours.",
+        "Move to serving bowls and sprinkle each serving with finely chopped rosemary. Serve warm."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Braised_Shortribs",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2059",
       "name": "Brazilian Black Bean Soup",
       "minutes": 310,
       "servings": 4,
@@ -9997,7 +10780,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "latin_american"
       ],
@@ -10073,7 +10856,73 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2047",
+      "id": "r2060",
+      "name": "Bread with Tomato Sauce (Pappa al Pomodoro)",
+      "minutes": 40,
+      "servings": 2,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "easy",
+        "budget",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "loaf dry bread"
+        },
+        {
+          "qty": 750.0,
+          "unit": "ml",
+          "item": "puréed tomato"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "garlic cloves, crushed and finely chopped (1–2)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "handful",
+          "item": "well-ripped basil leaves"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper to taste"
+        }
+      ],
+      "steps": [
+        "Dip the bread in water for a short time, so that you can crush it with the hands. It should not be soaked.",
+        "Fry the garlic in a large frying pan with oil until it begins to change color.",
+        "Add the tomato purée and salt, and cook over medium heat until it comes to a boil.",
+        "Add pieces of bread in, none smaller than a walnut, after wringing and continue to mix it with the tomato, until it has become completely red.",
+        "At this point the tomato should still have a fresh aroma.",
+        "Remove from heat and serve hot in a bowl, seasoned with a drizzle of olive oil, pepper and a basil leaf."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Bread_with_Tomato_Sauce_(Pappa_al_Pomodoro)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2061",
       "name": "Breaded Chicken Livers",
       "minutes": 15,
       "servings": 4,
@@ -10121,7 +10970,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2048",
+      "id": "r2062",
       "name": "Breaded Fried Oysters",
       "minutes": 15,
       "servings": 4,
@@ -10129,7 +10978,6 @@
       "tags": [
         "dinner",
         "main-meal",
-        "high-protein",
         "medium",
         "splurge",
         "american"
@@ -10193,7 +11041,72 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2051",
+      "id": "r2064",
+      "name": "Breakfast Waffles",
+      "minutes": 45,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "medium",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "eggs, separated"
+        },
+        {
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "milk"
+        },
+        {
+          "qty": 0.5,
+          "unit": "lb",
+          "item": "flour"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "baking powder"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "sugar"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "vegetable oil"
+        }
+      ],
+      "steps": [
+        "Mix egg yolks and milk.",
+        "Add flour, baking powder, sugar, salt and mix well.",
+        "Add the oil.",
+        "Whip the egg whites until stiff and then fold into the batter.",
+        "Preheat a waffle iron.",
+        "Ladle a scoop of batter into the waffle iron, and cook until browned and cooked through.",
+        "Remove waffle and repeat cooking process with remaining batter."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Breakfast_Waffles",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2067",
       "name": "Broiled Sirloin Steak",
       "minutes": 15,
       "servings": 4,
@@ -10238,7 +11151,7 @@
         "Season both sides liberally with salt and freshly ground black pepper.",
         "Place the steak on the upper rack.",
         "Insert a probe thermometer into the thickest part of the steak.",
-        "Keep the oven door slightly open with a tube of foil and cook until internal temperature reaches 140°F (60°C) for medium rare, 155°F (68°C) for medium, and 165°F (74°C) for toast.",
+        "Keep the oven door slightly open with a tube of foil and cook until internal temperature reaches 140°F (60°C) for medium rare, 155°F (68°C) for medium, and 165°F (74°C) for well done.",
         "Remove to a plate and cover with aluminum foil.",
         "Let rest 7 minutes before slicing on the bias across the grain. Serve warm."
       ],
@@ -10247,7 +11160,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2052",
+      "id": "r2069",
       "name": "Bulgogi",
       "minutes": 40,
       "servings": 6,
@@ -10257,7 +11170,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "korean"
       ],
@@ -10275,12 +11188,12 @@
         {
           "qty": 4.0,
           "unit": "",
-          "item": "button mushrooms (optional), sliced"
+          "item": "button mushrooms, optional, sliced"
         },
         {
           "qty": 0.5,
           "unit": "",
-          "item": "onion (optional), thinly sliced"
+          "item": "onion, optional, thinly sliced"
         },
         {
           "qty": 0.75,
@@ -10310,7 +11223,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "mirin (optional)"
+          "item": "mirin, optional"
         },
         {
           "qty": null,
@@ -10329,7 +11242,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2054",
+      "id": "r2073",
       "name": "Bánh Chưng",
       "minutes": 600,
       "servings": 10,
@@ -10340,7 +11253,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "southeast_asian"
       ],
@@ -10415,7 +11328,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2055",
+      "id": "r2075",
       "name": "Cachapa (Venezuelan Corn Pancakes)",
       "minutes": 15,
       "servings": 4,
@@ -10424,7 +11337,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "easy",
         "budget",
         "latin_american"
@@ -10482,7 +11394,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2056",
+      "id": "r2076",
       "name": "Cachupa (Cape Verdean Corn Stew)",
       "minutes": 210,
       "servings": 4,
@@ -10493,7 +11405,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -10619,7 +11531,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2057",
+      "id": "r2077",
       "name": "California Curry Chicken",
       "minutes": 45,
       "servings": 4,
@@ -10766,7 +11678,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2058",
+      "id": "r2078",
       "name": "Callaloo (Caribbean Stewed Greens)",
       "minutes": 60,
       "servings": 8,
@@ -10789,7 +11701,7 @@
         {
           "qty": 0.25,
           "unit": "lb",
-          "item": "salted beef or salted pork (optional)"
+          "item": "salted beef or salted pork, optional"
         },
         {
           "qty": 8.0,
@@ -10858,7 +11770,88 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2060",
+      "id": "r2079",
+      "name": "Cameroon Koki Corn",
+      "minutes": 40,
+      "servings": 1,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "hard",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.3333,
+          "unit": "cup",
+          "item": "palm oil"
+        },
+        {
+          "qty": 4.0,
+          "unit": "cup",
+          "item": "fresh corn"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "onion"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "yellow corn meal"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "stock cube"
+        },
+        {
+          "qty": 5.0,
+          "unit": "",
+          "item": "banana leaves"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "black pepper, to taste"
+        }
+      ],
+      "steps": [
+        "Warm the palm oil in a skillet for 2–3 minutes without bleaching it.",
+        "Place the corn, onion, and hot pepper in a blender or food processor.",
+        "Add ¼ cup water, then blend until you achieve a coarsely ground paste.",
+        "Avoid blending it into a fine paste; small bits and pieces of corn should still be visible.",
+        "Transfer the blended mixture to a bowl and add the cornmeal.",
+        "Pour in the heated oil and mix thoroughly.",
+        "Add salt and stock cube, then continue mixing.",
+        "Incorporate the chopped leaves into the mixture and mix until well combined.",
+        "Prepare a pot by lining the bottom with stripped corn cobs. This creates an elevated base that prevents water from seeping into the koki corn.",
+        "Pour approximately ½ cup water into the pot and bring it to a gentle boil while you proceed with wrapping the koki corn.",
+        "Wrap the corn mixture in banana leaves to make little bundles.",
+        "Place them in the pot, then cover them with torn or unused banana leaves (or aluminum foil). This helps retain the steam during cooking.",
+        "Place the lid on the pot and steam for about 30 minutes.",
+        "Every 5–10 minutes, open the pot and add ½ cup water to prevent it from drying out.",
+        "After cooking, allow it to rest for approximately 10 minutes.",
+        "Unwrap the bundles and serve the koki corn warm."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cameroon_Koki_Corn",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2080",
       "name": "Campfire Trout",
       "minutes": 15,
       "servings": 2,
@@ -10867,6 +11860,7 @@
         "dinner",
         "main-meal",
         "gluten-free",
+        "high-protein",
         "medium",
         "budget",
         "american"
@@ -10923,7 +11917,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2062",
+      "id": "r2082",
       "name": "Canjeero (Somali Pancake)",
       "minutes": 130,
       "servings": 4,
@@ -11004,7 +11998,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2063",
+      "id": "r2083",
       "name": "Carrot and Coriander Soup",
       "minutes": 25,
       "servings": 4,
@@ -11078,8 +12072,8 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2064",
-      "name": "Chadian Grilled Fish",
+      "id": "r2085",
+      "name": "Chadian Gilled Fish",
       "minutes": 45,
       "servings": 4,
       "meal": "dinner",
@@ -11089,7 +12083,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -11170,7 +12164,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2067",
+      "id": "r2088",
       "name": "Chapati Za Maji (Tanzanian Pancakes)",
       "minutes": 30,
       "servings": 4,
@@ -11179,8 +12173,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -11241,7 +12234,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2068",
+      "id": "r2089",
       "name": "Char-Broiled Sirloin Steak with Cabernet Butter Sauce",
       "minutes": 20,
       "servings": 4,
@@ -11303,7 +12296,7 @@
         "Place a sheet of aluminum foil that has been crimped around the edges on the lower rack.",
         "Place the steak on the upper rack.",
         "Insert a probe thermometer into the center of the steak and keep the oven door open with a tube of aluminum foil.",
-        "Cook until internal temperature reaches 140°F (60°C) for medium rare, 155°F (68°C) for medium, and 165°F (74°C) for toast (carry-over will take it 5 degrees).",
+        "Cook until internal temperature reaches 140°F (60°C) for medium rare, 155°F (68°C) for medium, and 165°F (74°C) for well done (carry-over will take it 5 degrees).",
         "Remove to a plate, dab butter slices evenly on top, and cover with aluminum foil.",
         "Let rest 10 minutes before slicing thinly across the grain on a 45 degree angle.",
         "Combine wine and shallot in a medium skillet over medium high heat.",
@@ -11315,7 +12308,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2070",
+      "id": "r2093",
       "name": "Cheesy Chicken Pasta",
       "minutes": 15,
       "servings": 2,
@@ -11379,7 +12372,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2071",
+      "id": "r2094",
       "name": "Chicken Alfredo Pizza",
       "minutes": 30,
       "servings": 4,
@@ -11390,7 +12383,7 @@
         "high-protein",
         "easy",
         "moderate",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -11431,7 +12424,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2072",
+      "id": "r2095",
       "name": "Chicken Bacon Broccoli Alfredo Spaghetti",
       "minutes": 20,
       "servings": 4,
@@ -11498,7 +12491,7 @@
         {
           "qty": 4.0,
           "unit": "",
-          "item": "strips of streaky bacon"
+          "item": "strips of streaky bacon, cooked and crumbled"
         }
       ],
       "steps": [
@@ -11516,7 +12509,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2073",
+      "id": "r2096",
       "name": "Chicken Cacciatore",
       "minutes": 550,
       "servings": 4,
@@ -11527,7 +12520,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "italian"
       ],
@@ -11604,10 +12597,10 @@
         }
       ],
       "steps": [
-        "Place onion and chicken in 3 ½ quart (3.5 L) slow cooker. The chicken is done at 165°F (74°C) inside.",
+        "Place onion and chicken in 3 ½ quart (3.5 L) slow cooker.",
         "Combine remaining ingredients in a bowl. Stir.",
         "Pour over chicken and cover the chicken.",
-        "Cook on low for 6–8 hours or on high for 3–4 hours.",
+        "Cook on low for 6–8 hours or on high for 3–4 hours. The chicken is done at 165°F (74°C) inside.",
         "Discard bay leaf and serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Cacciatore",
@@ -11615,7 +12608,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2074",
+      "id": "r2097",
       "name": "Chicken Cockaigne",
       "minutes": 40,
       "servings": 4,
@@ -11625,7 +12618,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "hard",
         "moderate",
         "american"
       ],
@@ -11669,7 +12662,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2075",
+      "id": "r2098",
       "name": "Chicken Curry (Mediterranean-inspired)",
       "minutes": 70,
       "servings": 4,
@@ -11679,7 +12672,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "indian"
       ],
@@ -11741,7 +12734,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2076",
+      "id": "r2099",
       "name": "Chicken Karahi (Pakistani Chicken with Tomato and Peppers)",
       "minutes": 25,
       "servings": 4,
@@ -11813,7 +12806,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2077",
+      "id": "r2100",
       "name": "Chicken Parmigiana",
       "minutes": 30,
       "servings": 2,
@@ -11822,9 +12815,9 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -11908,7 +12901,94 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2078",
+      "id": "r2101",
+      "name": "Chicken Riggies",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "easy",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "stick",
+          "item": "margarine (not butter), melted"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, minced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "clove",
+          "item": "garlic, minced (2–5 clove)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "jar",
+          "item": "sweet peppers, sliced and seeded"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "sliced hot cherry peppers (jarred ones with oil)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "grated Parmesan cheese"
+        },
+        {
+          "qty": 2.0,
+          "unit": "lb",
+          "item": "boneless chicken breast, cubed"
+        },
+        {
+          "qty": 1.0,
+          "unit": "can",
+          "item": "chicken broth"
+        },
+        {
+          "qty": 1.0,
+          "unit": "can",
+          "item": "tomato sauce"
+        },
+        {
+          "qty": 0.5,
+          "unit": "pint",
+          "item": "cream"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "small can sliced black olives"
+        },
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "rigatoni pasta, cooked (1–1½ lb)"
+        }
+      ],
+      "steps": [
+        "Sauté onion, peppers, and garlic in the margarine slowly over low/medium heat until the onions are clear. The chicken is done at 165°F (74°C) inside.",
+        "Add the Parmesan, chicken breast, chicken stock, tomato sauce, cream, and olives.",
+        "Simmer for about an hour.",
+        "Serve over the cooked pasta."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Riggies",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2102",
       "name": "Chicken Soup with Rice and Potatoes",
       "minutes": 110,
       "servings": 4,
@@ -11919,7 +12999,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -11992,7 +13072,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2079",
+      "id": "r2103",
       "name": "Chicken Tetrazzini",
       "minutes": 50,
       "servings": 8,
@@ -12001,7 +13081,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -12097,7 +13177,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2080",
+      "id": "r2104",
       "name": "Chicken and Broccoli Casserole",
       "minutes": 40,
       "servings": 4,
@@ -12106,7 +13186,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -12158,7 +13238,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2081",
+      "id": "r2105",
       "name": "Chickpea Moi Moi",
       "minutes": 230,
       "servings": 4,
@@ -12169,7 +13249,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "budget",
         "african"
       ],
@@ -12212,7 +13292,7 @@
         {
           "qty": 2.0,
           "unit": "tsp",
-          "item": "ground nutmeg (optional)"
+          "item": "ground nutmeg, optional"
         }
       ],
       "steps": [
@@ -12228,7 +13308,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2082",
+      "id": "r2106",
       "name": "Chikwanda (Zambian Sweet Potato Stew)",
       "minutes": 30,
       "servings": 4,
@@ -12240,7 +13320,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -12318,7 +13398,6 @@
         "Pour in the vegetable broth or water, ensuring that the sweet potatoes and carrots are mostly submerged.",
         "Bring the mixture to a gentle simmer and cover the pot with a lid.",
         "Let the stew cook for about 20–25 minutes, stirring occasionally, until the sweet potatoes and carrots are tender and cooked through.",
-        "Season the stew with salt to taste, adjusting the seasoning according to the preference.",
         "Remove the pot from the heat and let the stew rest for a few minutes before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chikwanda_(Zambian_Sweet_Potato_Stew)",
@@ -12326,7 +13405,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2083",
+      "id": "r2107",
       "name": "Chiles en Nogada (Stuffed Chile Peppers with Almonds)",
       "minutes": 15,
       "servings": 4,
@@ -12403,7 +13482,7 @@
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "rum (optional)"
+          "item": "rum, optional"
         },
         {
           "qty": 5.0,
@@ -12444,7 +13523,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2085",
+      "id": "r2109",
       "name": "Chipotle BBQ Chicken Nuggets",
       "minutes": 15,
       "servings": 4,
@@ -12505,7 +13584,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2086",
+      "id": "r2110",
       "name": "Chipotle Lime Grilled Chicken",
       "minutes": 60,
       "servings": 4,
@@ -12565,7 +13644,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2087",
+      "id": "r2111",
       "name": "Chipotle Sliders",
       "minutes": 15,
       "servings": 4,
@@ -12574,7 +13653,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -12645,7 +13724,69 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2088",
+      "id": "r2112",
+      "name": "Chipped Beef on Toast",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "high-protein",
+        "easy",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "fat (butter preferred)"
+        },
+        {
+          "qty": 1.25,
+          "unit": "lb",
+          "item": "flour"
+        },
+        {
+          "qty": 2.0,
+          "unit": "can",
+          "item": "evaporated milk"
+        },
+        {
+          "qty": 6.0,
+          "unit": "quart",
+          "item": "beef stock"
+        },
+        {
+          "qty": 15.0,
+          "unit": "lb",
+          "item": "chipped beef"
+        },
+        {
+          "qty": 1.0,
+          "unit": "bunch",
+          "item": "parsley"
+        },
+        {
+          "qty": 0.25,
+          "unit": "oz",
+          "item": "pepper"
+        }
+      ],
+      "steps": [
+        "Brown the flour in the melted fat.",
+        "Dissolve the milk in the beef stock, and then add that to the pot.",
+        "Stir this together slowly to prevent lumping, and then add the beef.",
+        "Cook for a few minutes, add the parsley and pepper, and serve over toast."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Chipped_Beef_on_Toast",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2113",
       "name": "Chocolate Chip Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -12654,7 +13795,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -12698,7 +13838,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "standard egg"
+          "item": "egg"
         },
         {
           "qty": 2.0,
@@ -12742,7 +13882,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2090",
+      "id": "r2115",
       "name": "Chola and Roti",
       "minutes": 15,
       "servings": 4,
@@ -12826,7 +13966,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2091",
+      "id": "r2116",
       "name": "Chorba Frik (Freekeh Soup)",
       "minutes": 100,
       "servings": 4,
@@ -12836,9 +13976,9 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
-        "african"
+        "middle_eastern"
       ],
       "ingredients": [
         {
@@ -12899,7 +14039,7 @@
         {
           "qty": 100.0,
           "unit": "g",
-          "item": "soaked chickpeas (optional)"
+          "item": "soaked chickpeas, optional"
         }
       ],
       "steps": [
@@ -12913,7 +14053,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2092",
+      "id": "r2117",
       "name": "Choripán (Argentine Chorizo Sandwich)",
       "minutes": 40,
       "servings": 1,
@@ -12940,12 +14080,12 @@
         {
           "qty": null,
           "unit": "",
-          "item": "sliced tomato (optional)"
+          "item": "sliced tomato, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "lettuce (optional)"
+          "item": "lettuce, optional"
         },
         {
           "qty": null,
@@ -12973,7 +14113,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2093",
+      "id": "r2118",
       "name": "Chraime (Sephardic Fish and Vegetable Casserole)",
       "minutes": 55,
       "servings": 4,
@@ -13067,7 +14207,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2095",
+      "id": "r2120",
       "name": "Chuu Chee Fish",
       "minutes": 60,
       "servings": 4,
@@ -13146,7 +14286,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2096",
+      "id": "r2121",
       "name": "Cinnamon Chicken",
       "minutes": 55,
       "servings": 4,
@@ -13193,7 +14333,7 @@
         {
           "qty": 0.25,
           "unit": "",
-          "item": "peach, chopped finely OR 1–2 tablespoons honey (0.25–½)"
+          "item": "peach, chopped finely or 1–2 tablespoons honey (0.25–½)"
         },
         {
           "qty": 1.0,
@@ -13243,7 +14383,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2099",
+      "id": "r2124",
       "name": "Cochinita Pibil (Mexican Braised Pork)",
       "minutes": 600,
       "servings": 12,
@@ -13253,7 +14393,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "mexican"
       ],
@@ -13354,7 +14494,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2100",
+      "id": "r2126",
       "name": "Coconut Rum-Battered Shrimp",
       "minutes": 525,
       "servings": 4,
@@ -13365,9 +14505,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
-        "caribbean"
+        "american"
       ],
       "ingredients": [
         {
@@ -13429,7 +14569,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2101",
+      "id": "r2127",
       "name": "Coddle",
       "minutes": 75,
       "servings": 4,
@@ -13439,8 +14579,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "british"
       ],
@@ -13492,7 +14631,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2103",
+      "id": "r2130",
       "name": "Colonial Goose",
       "minutes": 600,
       "servings": 4,
@@ -13500,8 +14639,7 @@
       "tags": [
         "dinner",
         "main-meal",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "british"
       ],
@@ -13597,7 +14735,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2104",
+      "id": "r2131",
       "name": "Com Chien (Vietnamese Fried Rice)",
       "minutes": 30,
       "servings": 5,
@@ -13690,7 +14828,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2105",
+      "id": "r2132",
       "name": "Corn Soup",
       "minutes": 20,
       "servings": 4,
@@ -13699,7 +14837,6 @@
         "lunch",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -13756,7 +14893,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2106",
+      "id": "r2133",
       "name": "Cottage Cheese Pancakes",
       "minutes": 15,
       "servings": 4,
@@ -13817,7 +14954,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2107",
+      "id": "r2134",
       "name": "Couscous bil Khodra (Libyan Vegetable Couscous)",
       "minutes": 25,
       "servings": 4,
@@ -13829,7 +14966,7 @@
         "vegan",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "budget",
         "african"
       ],
@@ -13926,13 +15063,21 @@
         }
       ],
       "steps": [
-        "In a large pot, heat olive oil over medium heat. Add the chopped onion and minced garlic. Sauté until the onion becomes translucent.",
-        "Add the diced carrot, zucchini, bell pepper, and green beans to the pot. Stir and cook the vegetables for a few minutes until they start to soften.",
-        "Add the diced tomatoes, chickpeas, cumin, coriander, turmeric, paprika, salt, and pepper to the pot. Stir well to coat the vegetables with the spices.",
-        "Pour the vegetable broth into the pot. Bring the mixture to a boil, then reduce the heat to low. Cover the pot and let the vegetables simmer for about 15–20 minutes, or until they are tender.",
-        "Meanwhile, prepare the couscous according to the package instructions. Typically, couscous is steamed or soaked in hot water until it becomes fluffy and tender. Fluff the cooked couscous with a fork.",
-        "Once the vegetables are cooked, remove the pot from the heat. Gently stir in the cooked couscous, ensuring that it is well-incorporated with the vegetables.",
-        "Taste and adjust the seasoning if needed. You can add more salt, pepper, or spices according to your preference.",
+        "In a large pot, heat olive oil over medium heat.",
+        "Add the chopped onion and minced garlic.",
+        "Sauté until the onion becomes translucent.",
+        "Add the diced carrot, zucchini, bell pepper, and green beans to the pot.",
+        "Stir and cook the vegetables for a few minutes until they start to soften.",
+        "Add the diced tomatoes, chickpeas, cumin, coriander, turmeric, paprika, salt, and pepper to the pot.",
+        "Stir well to coat the vegetables with the spices.",
+        "Pour the vegetable broth into the pot.",
+        "Bring the mixture to a boil, then reduce the heat to low.",
+        "Cover the pot and let the vegetables simmer for about 15–20 minutes, or until they are tender.",
+        "Meanwhile, prepare the couscous according to the package instructions.",
+        "Typically, couscous is steamed or soaked in hot water until it becomes fluffy and tender.",
+        "Fluff the cooked couscous with a fork.",
+        "Once the vegetables are cooked, remove the pot from the heat.",
+        "Gently stir in the cooked couscous, ensuring that it is well-incorporated with the vegetables.",
         "Serve hot, garnished with freshly chopped parsley or cilantro."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Couscous_bil_Khodra_(Libyan_Vegetable_Couscous)",
@@ -13940,93 +15085,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2108",
-      "name": "Crab Fried Rice",
-      "minutes": 20,
-      "servings": 5,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "chinese"
-      ],
-      "ingredients": [
-        {
-          "qty": 5.0,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 2.0,
-          "unit": "clove",
-          "item": "garlic, minced"
-        },
-        {
-          "qty": 2.0,
-          "unit": "clove",
-          "item": "red onion, sliced"
-        },
-        {
-          "qty": 150.0,
-          "unit": "g",
-          "item": "bean sprouts, soaked in hot water"
-        },
-        {
-          "qty": 2.0,
-          "unit": "",
-          "item": "big red chilli, cut into small pieces"
-        },
-        {
-          "qty": 2.0,
-          "unit": "can",
-          "item": "crab, drained"
-        },
-        {
-          "qty": 3.0,
-          "unit": "",
-          "item": "scallion, cut into 1 cm pieces"
-        },
-        {
-          "qty": 1.0,
-          "unit": "",
-          "item": "plate cooked rice"
-        },
-        {
-          "qty": 2.0,
-          "unit": "tbsp",
-          "item": "fish sauce"
-        },
-        {
-          "qty": 1.0,
-          "unit": "tbsp",
-          "item": "salt"
-        },
-        {
-          "qty": 1.0,
-          "unit": "tbsp",
-          "item": "black pepper"
-        }
-      ],
-      "steps": [
-        "Stir-fry the crab in the 5 tbsp oil for 1 minute.",
-        "Remove from the heat, and reserve.",
-        "Heat the remaining oil, and use to stir-fry the garlic, red onion, scallion, and red chillies for 1 minute until fragrant.",
-        "Add the fried crab and bean sprouts.",
-        "Stir until the crab changes color.",
-        "Add the rice, fish sauce, salt, and black pepper. Stir until well-mixed.",
-        "Serve hot."
-      ],
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Crab_Fried_Rice",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceLicense": "CC BY-SA 4.0"
-    },
-    {
-      "id": "r2109",
+      "id": "r2136",
       "name": "Crab Quesadillas with Mango Salsa",
       "minutes": 145,
       "servings": 4,
@@ -14139,7 +15198,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2110",
+      "id": "r2137",
       "name": "Crab and Corn Salad",
       "minutes": 10,
       "servings": 4,
@@ -14148,6 +15207,7 @@
         "lunch",
         "main-meal",
         "gluten-free",
+        "high-protein",
         "easy",
         "splurge",
         "american"
@@ -14176,7 +15236,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "shredded cheese (optional)"
+          "item": "shredded cheese, optional"
         }
       ],
       "steps": [
@@ -14190,7 +15250,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2111",
+      "id": "r2138",
       "name": "Cream Cheese-Stuffed Bell Peppers",
       "minutes": 45,
       "servings": 4,
@@ -14199,7 +15259,7 @@
         "dinner",
         "main-meal",
         "gluten-free",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -14252,7 +15312,71 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2112",
+      "id": "r2139",
+      "name": "Cream of Duck and Mushroom Soup",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "easy",
+        "splurge",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "cup",
+          "item": "duck stock"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "duck egg yolks (chicken egg yolks will work too)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "milk or half and half"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "chopped duck meat"
+        },
+        {
+          "qty": 8.0,
+          "unit": "oz",
+          "item": "sliced mushrooms"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "thyme"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "nutmeg to taste, optional"
+        }
+      ],
+      "steps": [
+        "Heat duck stock in a heavy, covered saucepan over medium heat.",
+        "Add thyme, chopped duck meat, and mushrooms, and cook until mushrooms are tender. The duck is done at 165°F (74°C) inside.",
+        "In a mixing bowl, whisk egg yolks and milk until well-blended, then slowly add to soup.",
+        "Stir continually until soup mixture begins to thicken.",
+        "Sprinkle in nutmeg and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Cream_of_Duck_and_Mushroom_Soup",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2140",
       "name": "Creamy Tomato and Bean Soup",
       "minutes": 45,
       "servings": 8,
@@ -14352,7 +15476,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2113",
+      "id": "r2141",
       "name": "Crock Pot Potato Soup",
       "minutes": 600,
       "servings": 8,
@@ -14361,8 +15485,7 @@
         "lunch",
         "main-meal",
         "gluten-free",
-        "high-protein",
-        "hard",
+        "easy",
         "budget",
         "american"
       ],
@@ -14430,7 +15553,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2114",
+      "id": "r2142",
       "name": "Crown Roast of Lamb",
       "minutes": 50,
       "servings": 4,
@@ -14443,7 +15566,7 @@
         "high-protein",
         "medium",
         "splurge",
-        "french"
+        "american"
       ],
       "ingredients": [
         {
@@ -14500,7 +15623,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2115",
+      "id": "r2143",
       "name": "Crunchy Baked Chicken",
       "minutes": 45,
       "servings": 4,
@@ -14549,7 +15672,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2116",
+      "id": "r2144",
       "name": "Cucumber and Buttermilk Soup",
       "minutes": 30,
       "servings": 4,
@@ -14561,7 +15684,7 @@
         "gluten-free",
         "easy",
         "budget",
-        "european"
+        "american"
       ],
       "ingredients": [
         {
@@ -14621,7 +15744,126 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2120",
+      "id": "r2147",
+      "name": "Curry Chicken",
+      "minutes": 600,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "whole chicken"
+        },
+        {
+          "qty": 4.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "red chile powder"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "garam masala"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "red pepper powder"
+        },
+        {
+          "qty": 150.0,
+          "unit": "ml",
+          "item": "yoghurt"
+        },
+        {
+          "qty": 20.0,
+          "unit": "",
+          "item": "coriander leaves"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground black pepper"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "onions, sliced into rings"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "green chiles (2–3)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "tomato, finely chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "olive oil or sunflower oil"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "cashews, ground"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "curry powder (or to taste)"
+        },
+        {
+          "qty": 100.0,
+          "unit": "ml",
+          "item": "coconut milk or cream, optional"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cooked rice, to serve"
+        }
+      ],
+      "steps": [
+        "Cut the chicken into 5–7 cm pieces and slice them at edges with a knife.",
+        "Combine garlic, 1 tsp salt, 1 tsp red chili powder, 1 tsp garam masala, red pepper powder, yoghurt, coriander leaves, and ground black pepper in a large bowl.",
+        "Add the chicken pieces, and marinate for 8 hours in refrigerator.",
+        "In a large pot, fry onion rings, green chilies, and tomato in olive or sunflower oil over low heat until onions are light yellow.",
+        "Stir in remaining 1 tsp garam masala, 1 tsp red chili powder, and ground cashews.",
+        "Add chicken pieces, and fry them for about 5 minutes while gently stirring. The chicken is done at 165°F (74°C) inside.",
+        "Add the marinade and water until all chicken pieces are submerged.",
+        "Add coconut milk if desired.",
+        "Allow the dish to cook over low to medium heat for 30–45 minutes.",
+        "Remove from heat and wait for a few minutes until the chicken pieces are tender and have absorbed the sauce.",
+        "Serve with rice (Basmati variety works well)."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Curry_Chicken_I",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2148",
       "name": "Curry Fried Rice",
       "minutes": 40,
       "servings": 5,
@@ -14631,7 +15873,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "indian"
       ],
@@ -14715,7 +15957,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2121",
+      "id": "r2149",
       "name": "Curry and Honey Chicken",
       "minutes": 15,
       "servings": 4,
@@ -14726,7 +15968,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "moderate",
         "indian"
       ],
@@ -14754,7 +15996,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "chopped parsley or celery leaves (optional)"
+          "item": "chopped parsley or celery leaves, optional"
         },
         {
           "qty": 4.0,
@@ -14804,7 +16046,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "cherry tomatoes (optional)"
+          "item": "cherry tomatoes, optional"
         },
         {
           "qty": null,
@@ -14830,7 +16072,88 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2126",
+      "id": "r2156",
+      "name": "Denver Omelet",
+      "minutes": 40,
+      "servings": 2,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "large eggs"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "chopped onion"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "chopped red bell peppers"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "chopped green bell peppers"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "diced cooked ham"
+        },
+        {
+          "qty": 8.0,
+          "unit": "slice",
+          "item": "cooked bacon, drained and crumbled"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "a couple drops of your favorite hot sauce, optional"
+        }
+      ],
+      "steps": [
+        "Melt butter in a large skillet or on a griddle.",
+        "Sauté onion, bell pepper, ham and bacon in the butter until the onion starts to become translucent.",
+        "In a small bowl, whip the eggs lightly.",
+        "Add salt, pepper, and hot sauce if desired.",
+        "Slowly stir the eggs into the mixture in the skillet.",
+        "Lightly brown on one side.",
+        "Flip over and lightly brown other side."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Denver_Omelet",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2158",
       "name": "Diri na Njar (Chadian Spiced Rice with Vegetables)",
       "minutes": 30,
       "servings": 4,
@@ -14840,8 +16163,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
-        "medium",
+        "hard",
         "budget",
         "african"
       ],
@@ -14914,20 +16236,25 @@
         {
           "qty": null,
           "unit": "",
-          "item": "fresh cilantro or parsley, for garnish (optional)"
+          "item": "fresh cilantro or parsley, for garnish, optional"
         }
       ],
       "steps": [
         "Rinse the rice under cold water until the water runs clear. This helps remove excess starch and prevents the rice from becoming sticky.",
-        "Heat the vegetable oil in a large saucepan over medium heat. Add the chopped onion and sauté until it becomes translucent and slightly golden, stirring occasionally.",
+        "Heat the vegetable oil in a large saucepan over medium heat.",
+        "Add the chopped onion and sauté until it becomes translucent and slightly golden, stirring occasionally.",
         "Add the minced garlic to the saucepan and cook for another minute until fragrant.",
-        "Stir in the chopped tomatoes and tomato paste, combining them with the onions and garlic. Cook for a few minutes until the tomatoes start to soften and release their juices.",
-        "Add the ground paprika, ginger, cumin, coriander, salt, and black pepper to the saucepan. Stir well to coat the tomatoes and onions with the spices.",
+        "Stir in the chopped tomatoes and tomato paste, combining them with the onions and garlic.",
+        "Cook for a few minutes until the tomatoes start to soften and release their juices.",
+        "Add the ground paprika, ginger, cumin, coriander, salt, and black pepper to the saucepan.",
+        "Stir well to coat the tomatoes and onions with the spices.",
         "Add the rinsed rice to the saucepan and stir gently to combine it with the tomato mixture, ensuring that each grain of rice is coated with the flavors.",
         "Pour in the water or chicken broth, ensuring that the liquid covers the rice by about an inch.",
-        "Bring the mixture to a boil, then reduce the heat to low. Cover the saucepan with a tight-fitting lid and let it simmer for about 15–20 minutes, or until the rice is cooked and the liquid has been absorbed. Avoid lifting the lid during cooking to maintain steam and ensure even cooking.",
+        "Bring the mixture to a boil, then reduce the heat to low.",
+        "Cover the saucepan with a tight-fitting lid and let it simmer for about 15–20 minutes, or until the rice is cooked and the liquid has been absorbed.",
+        "Avoid lifting the lid during cooking to maintain steam and ensure even cooking.",
         "Once the rice is done, remove the saucepan from the heat and let it sit, covered, for an additional 5 minutes. This allows the rice to steam and fluff up.",
-        "Fluff the rice gently with a fork to separate the grains. Taste and adjust the seasoning if needed.",
+        "Fluff the rice gently with a fork to separate the grains.",
         "Serve hot, garnished with fresh cilantro or parsley if desired."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Diri_Na_Njar_(Chadian_Spiced_Rice_with_Vegetables)",
@@ -14935,7 +16262,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2128",
+      "id": "r2161",
       "name": "Domoda (Gambian Peanut Stew)",
       "minutes": 55,
       "servings": 4,
@@ -15042,7 +16369,6 @@
         "Stir occasionally and add more water or broth if needed to maintain the desired consistency.",
         "Add the sliced carrots, cubed potatoes, and chopped cabbage to the pot.",
         "Continue to simmer the stew for an additional 15–20 minutes, or until the vegetables are cooked to the liking.",
-        "Taste the stew and season with salt and pepper according to the preference.",
         "Serve the domoda hot with steamed rice or couscous."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Domoda_(Gambian_Peanut_Stew)",
@@ -15050,7 +16376,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2129",
+      "id": "r2162",
       "name": "Doro Fitfit (Ethiopian Chicken Salad)",
       "minutes": 20,
       "servings": 4,
@@ -15060,7 +16386,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "african"
       ],
@@ -15132,7 +16458,6 @@
         "Pour the dressing over the salad ingredients in the mixing bowl.",
         "Gently toss the salad until all the ingredients are well coated with the dressing.",
         "Let sit for about 10–15 minutes to allow the flavors to meld together.",
-        "Taste the salad and adjust the seasoning with salt and additional spices, if desired.",
         "Garnish with freshly chopped cilantro or parsley before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Doro_Fitfit_(Ethiopian_Chicken_Salad)",
@@ -15140,7 +16465,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2130",
+      "id": "r2163",
       "name": "Doro Tibs (Ethiopian Sauteed Chicken)",
       "minutes": 40,
       "servings": 4,
@@ -15150,7 +16475,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -15240,7 +16565,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2131",
+      "id": "r2164",
       "name": "Dublin Lamb Stew",
       "minutes": 340,
       "servings": 4,
@@ -15250,7 +16575,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "british"
       ],
@@ -15335,7 +16660,100 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2136",
+      "id": "r2165",
+      "name": "Dum Ka Qimah (Spiced Minced Meat)",
+      "minutes": 235,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "hard",
+        "splurge",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "oil"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "medium onions, peeled and thinly sliced"
+        },
+        {
+          "qty": 7.0,
+          "unit": "",
+          "item": "whole red chillis (7–8)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "kg",
+          "item": "lean minced meat (beef or lamb)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "ginger paste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "garam masala"
+        },
+        {
+          "qty": 1.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "yogurt"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "ground unripe green papaya"
+        },
+        {
+          "qty": 1.0,
+          "unit": "piece",
+          "item": "coal"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "freshly-chopped green coriander (cilantro)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "finely-chopped green chillies"
+        }
+      ],
+      "steps": [
+        "Heat oil in a heavy-based saucepan. Add onions and, stirring frequently, fry for 8–10 minutes to a light golden color.",
+        "Remove onions from oil and fry the whole chillies just for a moment, otherwise they will burn.",
+        "Reserve the oil, put the onions and whole chillies in a chopper or food processor, and blend to a smooth paste without using water.",
+        "Thoroughly wash the minced meat, and squeeze out any water.",
+        "Put the minced meat in a bowl. Add onion paste, ginger paste, salt, garam masala and yogurt. Knead the mixture really well for a few minutes with your hands until it is smooth.",
+        "Cover and leave to marinate at room temperature for about 3–4 hours or overnight in the refrigerator. One hour before cooking, mix in the ground papaya.",
+        "Put the charcoal over medium flame, and wait until the coal is fully red and is covered by white ash.",
+        "Meanwhile place the meat mixture in a metal pan. Make a well in the center. Put a small piece of aluminum foil in it. Place the burned coal over it and put 2–3 drops of oil on it. Cover it at once with a tight fitting lid and put aside for 20–25 minutes.",
+        "Take out ½ cup of oil from the reserved oil. Reheat the oil in a heavy based pan. Discard the charcoal, and fry the mince over low heat for 4-5 minutes. Cover with a tight fitting lid and cook for 15–20 minutes or until all excess moisture has been absorbed.",
+        "Transfer to a serving dish and decorate with onion ring, green chilli, and coriander leaves."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Dum_ka_Qimah_(Spiced_Minced_Meat)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2169",
       "name": "Easy Wedding Soup",
       "minutes": 15,
       "servings": 8,
@@ -15388,7 +16806,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2137",
+      "id": "r2172",
       "name": "Egg Roast",
       "minutes": 15,
       "servings": 4,
@@ -15491,7 +16909,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2138",
+      "id": "r2174",
       "name": "Egg with Cabbage and Turkish Sausage",
       "minutes": 25,
       "servings": 2,
@@ -15545,12 +16963,12 @@
         {
           "qty": null,
           "unit": "",
-          "item": "tabasco (optional)"
+          "item": "tabasco, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "finely-chopped parsley or cilantro (optional)"
+          "item": "finely-chopped parsley or cilantro, optional"
         },
         {
           "qty": null,
@@ -15573,7 +16991,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2139",
+      "id": "r2175",
       "name": "Eggplant and Chickpea Skillet",
       "minutes": 35,
       "servings": 4,
@@ -15666,7 +17084,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2140",
+      "id": "r2176",
       "name": "Egyptian Fish Tagine (Samak Tajine)",
       "minutes": 35,
       "servings": 4,
@@ -15790,7 +17208,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2142",
+      "id": "r2178",
       "name": "Egyptian Stuffed Eggplant (Mahshi Betinjan)",
       "minutes": 65,
       "servings": 4,
@@ -15887,7 +17305,7 @@
         }
       ],
       "steps": [
-        "Preheat the oven to 180°C (350°F (175°C)).",
+        "Preheat the oven to 180°C (350°F).",
         "Wash the eggplants and cut off the stem end.",
         "Slice each eggplant in half lengthwise.",
         "Use a spoon to carefully hollow out the eggplant halves, leaving about a ½-inch thick shell.",
@@ -15907,7 +17325,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2145",
+      "id": "r2181",
       "name": "Ensalada de Pallares (Peruvian Lima Bean Salad)",
       "minutes": 430,
       "servings": 4,
@@ -15997,7 +17415,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2146",
+      "id": "r2182",
       "name": "Fasolia (Ethiopian Green Bean Stew)",
       "minutes": 30,
       "servings": 4,
@@ -16009,8 +17427,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -16096,7 +17513,6 @@
         "Add the trimmed and cut green beans to the skillet and stir to combine them with the spice mixture.",
         "Reduce the heat to low, cover the skillet with a lid, and simmer for about 20–25 minutes, or until the green beans are tender but still slightly crisp.",
         "Stir occasionally to ensure even cooking.",
-        "Taste and adjust the seasoning with salt or additional spices if desired.",
         "Remove from heat and let the stew rest for a few minutes to allow the flavors to meld together.",
         "Garnish with freshly chopped cilantro or parsley.",
         "Serve as a main course, accompanied by injera or rice."
@@ -16106,7 +17522,106 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2147",
+      "id": "r2185",
+      "name": "Firfir (Ethiopian Spicy Scrambled Eggs with Injera)",
+      "minutes": 60,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "medium onion, finely chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "tomatoes, chopped (2–3)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "green chiles, finely chopped (1–2)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "berbere spice blend"
+        },
+        {
+          "qty": 4.0,
+          "unit": "piece",
+          "item": "leftover injera, torn into small pieces (4–6 piece)"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "large eggs"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "paprika"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "turmeric"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "salt, or to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "fresh cilantro, chopped, for garnish"
+        }
+      ],
+      "steps": [
+        "Heat the olive oil in a large skillet or frying pan over medium heat.",
+        "Add the chopped onions to the pan and sauté until they become translucent and slightly browned.",
+        "Stir in the minced garlic and chopped green chilies, and sauté for an additional minute until fragrant.",
+        "Add the chopped tomatoes to the pan and cook until they begin to soften.",
+        "In a mixing bowl, beat the eggs and add the berbere spice blend, paprika, turmeric, and salt.",
+        "Mix well to combine.",
+        "Push the sautéed vegetables to one side of the pan, creating a space for the eggs.",
+        "Pour the beaten eggs into the empty space in the pan and scramble them with a wooden spoon or spatula until they are fully cooked.",
+        "Mix the scrambled eggs with the sautéed vegetables in the pan.",
+        "Tear the pieces of injera into small bite-sized pieces and add them to the pan.",
+        "Stir well to combine all the ingredients.",
+        "Cook for a few more minutes, allowing the injera to absorb the flavors and soften slightly.",
+        "Remove the pan from heat and garnish with freshly chopped cilantro.",
+        "Serve hot the spicy and savory flavors of this traditional Ethiopian dish."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Firfir_(Ethiopian_Spicy_Scrambled_Eggs_with_Injera)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2186",
       "name": "Fish Sticks",
       "minutes": 15,
       "servings": 4,
@@ -16176,7 +17691,320 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2150",
+      "id": "r2187",
+      "name": "Fit-fit (Ethiopian Bread Salad)",
+      "minutes": 55,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "medium",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "niter kibbeh (Ethiopian spiced clarified butter) or regular butter"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "medium onion, finely chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "tomatoes, diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "jalapeño pepper, seeded and finely chopped (optional for spice)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "berbere spice blend, or to taste"
+        },
+        {
+          "qty": 4.0,
+          "unit": "piece",
+          "item": "leftover injera, torn into bite-sized pieces (4–6 piece)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "fresh cilantro or parsley, chopped, for garnish"
+        }
+      ],
+      "steps": [
+        "Heat the niter kibbeh or regular butter in a large skillet or frying pan over medium heat.",
+        "Add the finely chopped onion to the pan and sauté until translucent and slightly browned.",
+        "Stir in the diced tomatoes and jalapeño pepper (if using) and cook for a few minutes until the tomatoes start to soften.",
+        "Sprinkle the berbere spice blend over the mixture and mix well to coat the onions and tomatoes.",
+        "Adjust the amount of berbere according to the preferred level of spiciness.",
+        "Add the torn pieces of injera to the pan and gently toss them with the onion and tomato mixture.",
+        "Sauté the mixture for a few minutes, stirring occasionally, until the injera is heated through and slightly crispy.",
+        "Season with salt to taste.",
+        "Keep in mind that injera can be slightly sour, so adjust the salt accordingly.",
+        "Remove from heat and transfer to a serving dish.",
+        "Garnish with freshly chopped cilantro or parsley.",
+        "Serve warm as a delicious and satisfying breakfast or brunch option."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fit-fit_(Ethiopian_Bread_Salad)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2189",
+      "name": "French Omelette",
+      "minutes": 10,
+      "servings": 1,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "high-protein",
+        "hard",
+        "budget",
+        "french"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil and butter"
+        }
+      ],
+      "steps": [
+        "Loosely beat the eggs. Season the mixture with some salt and pepper.",
+        "Heat a frying pan. Add oil and a small amount of butter when the pan starts to get hot.",
+        "Enough to coat the pan entirely, but no more.",
+        "Remove any excess oil.",
+        "Let the pan get as hot as you can, without burning the butter, and keep the heat high.",
+        "Pour the egg mixture into the pan and quickly tilt the pan to let it spread around the bottom.",
+        "With a spoon or spatula, pull the solidified edges towards the center and tilt the pan to let the egg mixture fill the gap again.",
+        "Keep repeating this (quickly) until there's not enough liquid egg left to fill the gap. The top of the omelette should still be liquid.",
+        "Turn the heat down a little lower to fold the egg.",
+        "Use a spatula to pry the edges loose from the pan.",
+        "When the omelette is completely loose from the pan.",
+        "Fold one part over the other.",
+        "You can fold half of the omelette over the other half, or fold one third of the omelette inwards and then fold the remaining flap over that, to create a thicker, less wide omelette.",
+        "Slide the omelette onto the plate."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:French_Omelette",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2190",
+      "name": "Fresh Pasta with Mozzarella, Tomato and Basil",
+      "minutes": 40,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "high-protein",
+        "medium",
+        "budget",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 250.0,
+          "unit": "g",
+          "item": "fresh egg pasta"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "mozzarella balls (cow or buffalo)"
+        },
+        {
+          "qty": 10.0,
+          "unit": "",
+          "item": "small tomatoes or 4–5 larger tomatoes (you need about the same amount as the mozzarella) (10–15)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "A good handful (about 15–20) of basil leaves"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "extra-virgin olive oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "black pepper"
+        }
+      ],
+      "steps": [
+        "Chop the mozzarella and the tomatoes roughly, and put them in a large dish.",
+        "You're looking to create small cube shapes between 1 cm and 1 inch.",
+        "Tear up the basil, and sprinkle it over the mozzarella and tomatoes.",
+        "Drizzle on lots of olive oil (at least 3 tablespoons).",
+        "Add a good amount of salt and just a little black pepper. The salt will start to leech moisture out from the other ingredients and create a sauce.",
+        "When you're ready, boil the egg pasta until al dente.",
+        "Drain the pasta and then pour, still hot, over the other ingredients.",
+        "Stir the pasta up, coating everything really well, and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fresh_Pasta_with_Mozzarella,_Tomato_and_Basil",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2191",
+      "name": "Fried Eggs (Olive Oil-basted)",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "easy",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "extra-virgin olive oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "egg"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper"
+        }
+      ],
+      "steps": [
+        "Heat olive oil in a frying pan over a low-medium heat (you will break the olive oil if you heat it too much).",
+        "Crack open one egg into the pan.",
+        "Let fry while basting the yolk with hot oil in order to cook the top. If the egg begins to bubble, lower the heat.",
+        "Serve, adding salt and pepper to taste."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Eggs_(Olive_Oil-basted)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2192",
+      "name": "Fried Fish",
+      "minutes": 50,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil with a high smoke point"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "thin fish fillets (e.g. catfish, tilapia, or the less-durable flounder)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "egg white"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "flour"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "beer or 1 cup cold water plus ½ teaspoon baking powder"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "extra flour to dust the fish"
+        }
+      ],
+      "steps": [
+        "Start heating the oil in a skillet.",
+        "Microwave the fish to ensure that the inside is hot.",
+        "Flip the fish as you microwave it. When done, the fish should be hot and should look half-cooked.",
+        "Mix the flour, egg white, and beer to make a batter.",
+        "Pat the fish dry with a paper towel, then lightly dust it with flour to ensure that it is really dry.",
+        "Dip the fish into the batter, and coat them well. The batter will help protect the hand from splatter.",
+        "Hold the fish right above the oil, then gently slide the fish into the oil.",
+        "With tongs, nudge the fish as needed to keep it from sticking to the bottom.",
+        "Turn the fish over as it cooks.",
+        "Remove the fish when it looks good, then serve it immediately."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fried_Fish",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2193",
       "name": "Fried Rice (Vegetarian)",
       "minutes": 60,
       "servings": 5,
@@ -16184,10 +18012,11 @@
       "tags": [
         "lunch",
         "main-meal",
+        "vegetarian",
+        "vegan",
         "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
+        "easy",
+        "budget",
         "chinese"
       ],
       "ingredients": [
@@ -16273,7 +18102,151 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2152",
+      "id": "r2196",
+      "name": "Frito Pie (No-bake)",
+      "minutes": 25,
+      "servings": 8,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "easy",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "recipe of home-made Frito Pie Chili, hot"
+        },
+        {
+          "qty": 1.0,
+          "unit": "bag",
+          "item": "fritos corn chips"
+        },
+        {
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "grated Monterrey Jack cheese"
+        },
+        {
+          "qty": 6.0,
+          "unit": "tbsp",
+          "item": "sour cream"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "small jar of jalapeños"
+        }
+      ],
+      "steps": [
+        "Place a handful of the chips in each of 8 shallow bowls.",
+        "Spoon the Frito Pie Chili over the chips.",
+        "Garnish with the grated cheese, sour cream, and jalapeños."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Frito_Pie_(No-bake)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2198",
+      "name": "Fuk-Thong Pad Khai (Thai Stir-Fried Pumpkin)",
+      "minutes": 55,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "thai"
+      ],
+      "ingredients": [
+        {
+          "qty": 400.0,
+          "unit": "g",
+          "item": "japanese pumpkin (kabocha)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "clove",
+          "item": "garlic, minced (1–2 clove)"
+        },
+        {
+          "qty": 150.0,
+          "unit": "g",
+          "item": "minced pork or chicken"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "fish sauce"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "sugar"
+        },
+        {
+          "qty": 1.0,
+          "unit": "pinch",
+          "item": "pepper"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "chopped spring onions (1–2 tbsp)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "oyster sauce"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cooked rice, to serve"
+        }
+      ],
+      "steps": [
+        "To prepare the pumpkin, remove seeds and cut off the outside skin of the pumpkin.",
+        "Cut the pumpkin into 1-inch cubes and wash well with water.",
+        "Place pumpkin in a saucepan, and cover with water.",
+        "Bring to the boil and cook until tender. The meat is done at 165°F (74°C) inside.",
+        "When it is soft, drain the water.",
+        "Heat the oil in a pan, and fry the garlic until it becomes lightly browned and fragrant.",
+        "Add the minced pork to the pan, and let cook until the pork is nearly cooked through.",
+        "Add the cooked squash to the pork.",
+        "Crack the eggs into the pan.",
+        "Once the eggs are cooked, stir with pumpkin and minced pork.",
+        "Stir in the fish sauce, sugar, pepper, spring onion, and oyster sauce.",
+        "Serve with warm rice."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Fuk-Thong_Pad_Khai_(Thai_Stir-Fried_Pumpkin)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2199",
       "name": "Fårikål (Norwegian Lamb and Cabbage Stew)",
       "minutes": 240,
       "servings": 4,
@@ -16284,7 +18257,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "european"
       ],
@@ -16342,7 +18315,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2153",
+      "id": "r2200",
       "name": "Galician Garbanzo Soup",
       "minutes": 60,
       "servings": 6,
@@ -16355,7 +18328,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "american"
       ],
@@ -16423,7 +18396,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "threads saffron (optional) (1–2)"
+          "item": "threads saffron, optional (1–2)"
         },
         {
           "qty": 0.5,
@@ -16471,7 +18444,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2154",
+      "id": "r2201",
       "name": "Gambian Chicken with Lemon and Mustard (Yassa)",
       "minutes": 145,
       "servings": 4,
@@ -16481,7 +18454,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -16559,7 +18532,6 @@
         "Return the cooked chicken or fish to the skillet with the sautéed onions.",
         "Pour the reserved marinade over the meat and onions.",
         "Reduce the heat to low and let the mixture simmer for about 15–20 minutes, allowing the flavors to meld together.",
-        "Taste and adjust the seasoning with salt and pepper if needed.",
         "Serve hot with steamed rice, couscous, or bread."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gambian_Chicken_with_Lemon_and_Mustard_(Yassa)",
@@ -16567,7 +18539,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2155",
+      "id": "r2202",
       "name": "Gambian Mbamba Soup",
       "minutes": 80,
       "servings": 4,
@@ -16578,7 +18550,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "moderate",
         "african"
       ],
@@ -16665,15 +18637,21 @@
         }
       ],
       "steps": [
-        "Soak the dried fish in water for at least 30 minutes to rehydrate it. Once rehydrated, remove the bones and break the fish into smaller pieces. Set aside.",
-        "In a large pot, heat the palm oil or vegetable oil over medium heat. Add the chopped onions and minced garlic. Sauté until they become soft and translucent.",
-        "Add the diced tomatoes, tomato paste, ground ginger, ground paprika, and ground cayenne pepper to the pot. Stir well to combine.",
-        "Mix in the diced pumpkin or squash, sliced okra, and diced eggplant. Ensure that the vegetables are evenly coated with the spice mixture.",
+        "Soak the dried fish in water for at least 30 minutes to rehydrate it.",
+        "Once rehydrated, remove the bones and break the fish into smaller pieces. Set aside.",
+        "In a large pot, heat the palm oil or vegetable oil over medium heat.",
+        "Add the chopped onions and minced garlic.",
+        "Sauté until they become soft and translucent.",
+        "Add the diced tomatoes, tomato paste, ground ginger, ground paprika, and ground cayenne pepper to the pot.",
+        "Stir well to combine.",
+        "Mix in the diced pumpkin or squash, sliced okra, and diced eggplant.",
+        "Ensure that the vegetables are evenly coated with the spice mixture.",
         "Add enough water or broth to the pot to cover the vegetables and create a soupy consistency.",
-        "Bring the mixture to a boil, then reduce the heat to low and cover the pot with a lid. Allow the soup to simmer for about 30–40 minutes, or until the vegetables are tender and the flavors have melded together. Stir occasionally to prevent sticking.",
+        "Bring the mixture to a boil, then reduce the heat to low and cover the pot with a lid.",
+        "Allow the soup to simmer for about 30–40 minutes, or until the vegetables are tender and the flavors have melded together.",
+        "Stir occasionally to prevent sticking.",
         "Gently add the deboned and rehydrated dried fish pieces to the soup. Be careful not to break them apart.",
         "Continue simmering the soup for an additional 10–15 minutes, or until the fish is heated through.",
-        "Taste the soup and adjust the seasoning with salt, pepper, and additional spices if desired.",
         "Serve hot with rice or as a side dish to accompany other main dishes."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Gambian_Mbamba_Soup",
@@ -16681,7 +18659,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2156",
+      "id": "r2203",
       "name": "Gambian Superkanja Soup",
       "minutes": 45,
       "servings": 4,
@@ -16804,7 +18782,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2157",
+      "id": "r2204",
       "name": "Garbanzo Bean Stew",
       "minutes": 90,
       "servings": 4,
@@ -16913,7 +18891,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2158",
+      "id": "r2205",
       "name": "Garden Egg Stew",
       "minutes": 40,
       "servings": 4,
@@ -16967,17 +18945,17 @@
         {
           "qty": null,
           "unit": "",
-          "item": "ground crayfish (optional)"
+          "item": "ground crayfish, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "dried shrimp (optional)"
+          "item": "dried shrimp, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "dried chilli pepper (optional)"
+          "item": "dried chilli pepper, optional"
         },
         {
           "qty": 6.0,
@@ -17008,7 +18986,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2160",
+      "id": "r2207",
       "name": "Garlic Parmesan Pasta",
       "minutes": 20,
       "servings": 4,
@@ -17019,7 +18997,7 @@
         "vegetarian",
         "easy",
         "budget",
-        "italian"
+        "american"
       ],
       "ingredients": [
         {
@@ -17080,7 +19058,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2161",
+      "id": "r2208",
       "name": "Garlic Shrimp Scampi Pasta",
       "minutes": 15,
       "servings": 4,
@@ -17091,7 +19069,7 @@
         "high-protein",
         "medium",
         "splurge",
-        "italian"
+        "american"
       ],
       "ingredients": [
         {
@@ -17154,7 +19132,85 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2162",
+      "id": "r2209",
+      "name": "Garlic Shrimp with Lemon Butter Sauce",
+      "minutes": 40,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 36.0,
+          "unit": "",
+          "item": "jumbo shrimp, peeled and deveined"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "kosher salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "freshly-ground black pepper"
+        },
+        {
+          "qty": 1.25,
+          "unit": "cup",
+          "item": "unsalted butter, divided"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "minced garlic"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "shallot, finely minced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "lemons, juiced"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "splash of heavy cream"
+        }
+      ],
+      "steps": [
+        "Season shrimp liberally with kosher salt and freshly ground black pepper. Set aside.",
+        "Melt 2 tbsp butter with olive oil in a large sauté pan over medium high heat.",
+        "Add garlic and cook, stirring, until garlic is golden.",
+        "Add shrimp and cook, tossing occasionally, until shrimp turns pink and opaque. Keep warm.",
+        "In a large saucepan, melt 2 tbsp butter over medium heat.",
+        "Add shallot and cook for 30 seconds.",
+        "Add lemon juice, heavy cream, and remaining butter.",
+        "Cook until heated through and butter has melted.",
+        "Spoon sauce over shrimp and serve warm."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Garlic_Shrimp_with_Lemon_Butter_Sauce",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2210",
       "name": "Gazpacho",
       "minutes": 40,
       "servings": 4,
@@ -17213,12 +19269,12 @@
         {
           "qty": 0.25,
           "unit": "",
-          "item": "chile pepper, seeds removed (optional)"
+          "item": "chile pepper, seeds removed, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "cilantro (optional)"
+          "item": "cilantro, optional"
         },
         {
           "qty": 0.3333,
@@ -17276,7 +19332,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2163",
+      "id": "r2211",
       "name": "Gboma Dessi and Akoume (Togolese Spinach Stew with Corn Swallow)",
       "minutes": 125,
       "servings": 4,
@@ -17285,7 +19341,6 @@
         "dinner",
         "main-meal",
         "dairy-free",
-        "high-protein",
         "hard",
         "budget",
         "african"
@@ -17309,7 +19364,7 @@
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "ginger powder (optional)"
+          "item": "ginger powder, optional"
         },
         {
           "qty": 3.0,
@@ -17388,7 +19443,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2164",
+      "id": "r2212",
       "name": "General Tso's Chicken",
       "minutes": 30,
       "servings": 4,
@@ -17506,7 +19561,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2165",
+      "id": "r2213",
       "name": "Genfo (Ethiopian Porridge)",
       "minutes": 20,
       "servings": 4,
@@ -17564,7 +19619,6 @@
         "Stir in the niter kibbeh, and mix well.",
         "Taste and adjust the salt if needed.",
         "Serve the genfo hot in bowls.",
-        "Drizzle honey or sprinkle sugar over the porridge to sweeten it according to the taste.",
         "Optionally, sprinkle mitmita or berbere spice over the genfo for added heat and flavor.",
         "Garnish with nigella seeds or a sprinkle of cinnamon."
       ],
@@ -17573,7 +19627,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2166",
+      "id": "r2214",
       "name": "German Meatballs",
       "minutes": 20,
       "servings": 4,
@@ -17583,7 +19637,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "european"
       ],
@@ -17694,7 +19748,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2168",
+      "id": "r2218",
       "name": "Ginger Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -17703,7 +19757,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -17797,7 +19850,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2169",
+      "id": "r2219",
       "name": "Gingerbread Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -17806,7 +19859,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -17904,7 +19956,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2171",
+      "id": "r2221",
       "name": "Gobi Bhagi (Spiced Cauliflower Stew)",
       "minutes": 20,
       "servings": 4,
@@ -17992,7 +20044,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2173",
+      "id": "r2223",
       "name": "Goulash Soup",
       "minutes": 45,
       "servings": 4,
@@ -18100,7 +20152,65 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2176",
+      "id": "r2225",
+      "name": "Greek Chicken Wrap",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "high-protein",
+        "easy",
+        "moderate",
+        "greek"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "shredded cooked chicken"
+        },
+        {
+          "qty": 2.5,
+          "unit": "cup",
+          "item": "crumbled feta cheese"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "greek Yogurt Sauce"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "fresh oregano, finely chopped"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "flour tortillas"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "olive oil"
+        }
+      ],
+      "steps": [
+        "Combine feta, chicken, yogurt sauce, and oregano. Set aside.",
+        "Brush one side of each tortilla with olive oil.",
+        "Add ¼ of chicken mixture and roll the longer side up.",
+        "Repeat until all tortillas have been rolled.",
+        "Sprinkle with additional chopped oregano, and serve cold as a snack."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Greek_Chicken_Wrap",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2227",
       "name": "Grilled Chicken and Arugula Salad",
       "minutes": 20,
       "servings": 4,
@@ -18173,7 +20283,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2177",
+      "id": "r2228",
       "name": "Grilled Cornish Hens",
       "minutes": 80,
       "servings": 4,
@@ -18249,7 +20359,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2178",
+      "id": "r2229",
       "name": "Grilled Filet Mignon with a Cognac Reduction",
       "minutes": 15,
       "servings": 4,
@@ -18261,7 +20371,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "easy",
+        "medium",
         "splurge",
         "american"
       ],
@@ -18305,7 +20415,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2179",
+      "id": "r2230",
       "name": "Grilled Lamb Chops",
       "minutes": 75,
       "servings": 4,
@@ -18318,7 +20428,7 @@
         "high-protein",
         "medium",
         "splurge",
-        "mediterranean"
+        "american"
       ],
       "ingredients": [
         {
@@ -18382,7 +20492,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2180",
+      "id": "r2231",
       "name": "Grilled Pork Loin",
       "minutes": 20,
       "servings": 4,
@@ -18393,7 +20503,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "easy",
+        "medium",
         "moderate",
         "american"
       ],
@@ -18430,7 +20540,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2181",
+      "id": "r2233",
       "name": "Grilled Sirloin Steak",
       "minutes": 20,
       "servings": 4,
@@ -18487,7 +20597,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2182",
+      "id": "r2234",
       "name": "Grilled Sliders",
       "minutes": 15,
       "servings": 8,
@@ -18564,7 +20674,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2183",
+      "id": "r2235",
       "name": "Grilled Steak",
       "minutes": 25,
       "servings": 4,
@@ -18575,7 +20685,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "easy",
+        "medium",
         "splurge",
         "american"
       ],
@@ -18634,7 +20744,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2184",
+      "id": "r2236",
       "name": "Ground Beef and Potato Taquitos",
       "minutes": 50,
       "servings": 6,
@@ -18647,7 +20757,7 @@
         "high-protein",
         "medium",
         "budget",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -18736,7 +20846,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2185",
+      "id": "r2238",
       "name": "Groundnut Soup",
       "minutes": 40,
       "servings": 2,
@@ -18765,7 +20875,7 @@
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "dryfish (optional)"
+          "item": "dryfish, optional"
         },
         {
           "qty": 1.0,
@@ -18815,7 +20925,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "leafy vegetables like spinach, ugu (fluted pumpkin leaves), or bitterleaf (optional)"
+          "item": "leafy vegetables like spinach, ugu (fluted pumpkin leaves), or bitterleaf, optional"
         },
         {
           "qty": null,
@@ -18841,7 +20951,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2186",
+      "id": "r2239",
       "name": "Gudeg (Green Jackfruit Stew)",
       "minutes": 15,
       "servings": 4,
@@ -18939,7 +21049,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2188",
+      "id": "r2241",
       "name": "Hachee (Dutch Beef Stew)",
       "minutes": 190,
       "servings": 4,
@@ -18948,7 +21058,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "european"
       ],
@@ -19036,7 +21146,89 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2189",
+      "id": "r2242",
+      "name": "Halibut Cheek Stir-Fry",
+      "minutes": 45,
+      "servings": 5,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "chinese"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "peanut oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "halibut cheeks"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "chopped carrots"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "chopped celery"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "chopped fresh ginger"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "chopped garlic"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "chopped green onions"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "reduced sodium soy sauce"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "fish stock"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "black pepper"
+        }
+      ],
+      "steps": [
+        "Add oil to wok or frying pan over medium-high heat.",
+        "Add halibut cheeks, moving around in oil until they start to brown.",
+        "Add carrots and celery, stirring them around in the wok.",
+        "Add ginger and garlic, while continuing to stir.",
+        "Add soy sauce and fish stock.",
+        "Stir and bring to simmer.",
+        "Garnish with green onions.",
+        "Serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Halibut_Cheek_Stir-Fry",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2243",
       "name": "Hamburger Skillet Dinner",
       "minutes": 40,
       "servings": 4,
@@ -19046,7 +21238,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -19088,7 +21280,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2190",
+      "id": "r2244",
       "name": "Hamli (Ethiopian Spinach Stew)",
       "minutes": 25,
       "servings": 4,
@@ -19100,7 +21292,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -19180,7 +21372,6 @@
         "Cover the saucepan and let the spinach cook for about 10–15 minutes, or until it wilts down and becomes tender.",
         "Stir occasionally to ensure even cooking.",
         "Pour in the vegetable broth or water, and continue cooking the stew for another 5–10 minutes to allow the flavors to meld together.",
-        "Adjust the seasoning with salt if needed.",
         "Remove from heat and let rest for a few minutes to allow the flavors to develop.",
         "Garnish with freshly chopped cilantro or parsley.",
         "Serve hot as a side dish, accompanied by injera or rice."
@@ -19190,9 +21381,9 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2191",
+      "id": "r2245",
       "name": "Hawawshi (Egyptian Meat Pies)",
-      "minutes": 20,
+      "minutes": 40,
       "servings": 4,
       "meal": "dinner",
       "tags": [
@@ -19267,7 +21458,7 @@
         }
       ],
       "steps": [
-        "Preheat the oven to 180°C (350°F (175°C)) or preheat a grill.",
+        "Preheat the oven to 180°C (350°F) or preheat a grill.",
         "In a skillet or frying pan, heat the olive oil over medium heat.",
         "Add the finely chopped onions and minced garlic.",
         "Sauté until the onions become translucent and the garlic becomes fragrant.",
@@ -19288,7 +21479,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2192",
+      "id": "r2246",
       "name": "Hearty Beef Vegetable Soup",
       "minutes": 100,
       "servings": 10,
@@ -19373,7 +21564,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2193",
+      "id": "r2247",
       "name": "Herbed Tomato Soup",
       "minutes": 30,
       "servings": 4,
@@ -19432,12 +21623,12 @@
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "balsamic vinegar (optional)"
+          "item": "balsamic vinegar, optional"
         },
         {
           "qty": 4.0,
           "unit": "",
-          "item": "fresh basil leaves (optional), sliced thinly into strips (4–6)"
+          "item": "fresh basil leaves, optional, sliced thinly into strips (4–6)"
         }
       ],
       "steps": [
@@ -19453,7 +21644,56 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2194",
+      "id": "r2248",
+      "name": "Herring Soup",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "easy",
+        "budget",
+        "european"
+      ],
+      "ingredients": [
+        {
+          "qty": 8.0,
+          "unit": "",
+          "item": "gallons water"
+        },
+        {
+          "qty": 5.0,
+          "unit": "lb",
+          "item": "barley meal"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "herrings, meat pounded"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, pepper, vinegar, and herbs, to taste"
+        }
+      ],
+      "steps": [
+        "Combine water and barley meal.",
+        "Boil it to the consistency of a thick jelly.",
+        "Season it with salt, pepper, vinegar, sweet herbs.",
+        "Add the herring meat."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Herring_Soup",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2249",
       "name": "Hickory Smoked Chicken Breasts",
       "minutes": 75,
       "servings": 4,
@@ -19464,7 +21704,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "moderate",
         "american"
       ],
@@ -19552,7 +21792,57 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2196",
+      "id": "r2253",
+      "name": "Honey Garlic Chicken",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "chicken breasts"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "olive oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "honey"
+        },
+        {
+          "qty": 0.25,
+          "unit": "clove",
+          "item": "garlic, minced (0.25–½ clove)"
+        }
+      ],
+      "steps": [
+        "Chop chicken into small pieces.",
+        "Coat frying pan with a thin layer of olive oil.",
+        "Add chicken pieces to frying pan. The chicken is done at 165°F (74°C) inside.",
+        "Cover the chicken with honey and add garlic.",
+        "Cook over medium heat until the mixture thickens and darkens and the chicken is cooked. Don't let it go on too long or the sauce can burn."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Honey_Garlic_Chicken",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2254",
       "name": "Honey Teriyaki Spareribs",
       "minutes": 375,
       "servings": 4,
@@ -19562,7 +21852,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "japanese"
       ],
@@ -19621,7 +21911,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2197",
+      "id": "r2255",
       "name": "Hongshao Rou (Red Braised Pork Belly)",
       "minutes": 75,
       "servings": 4,
@@ -19697,7 +21987,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2198",
+      "id": "r2256",
       "name": "Hopping John with Pinto or Great Northern Beans",
       "minutes": 20,
       "servings": 4,
@@ -19763,7 +22053,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2199",
+      "id": "r2258",
       "name": "Hot and Sour Soup",
       "minutes": 15,
       "servings": 4,
@@ -19866,7 +22156,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2200",
+      "id": "r2259",
       "name": "Ibihaza (Rwandan Beans)",
       "minutes": 495,
       "servings": 4,
@@ -19961,7 +22251,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2201",
+      "id": "r2260",
       "name": "Ibihaza N'Ubwoko (Rwandan Beans with Mushroom)",
       "minutes": 90,
       "servings": 4,
@@ -20053,7 +22343,6 @@
         "Return the cooked beans to the pot and season with salt and pepper to taste.",
         "Stir again to ensure all the ingredients are well incorporated.",
         "Reduce the heat to low, cover the pot, and let the beans and mushrooms simmer together for about 15–20 minutes, allowing the flavors to meld.",
-        "Taste and adjust the seasoning if needed, adding more salt, pepper, or spices according to the preference.",
         "Remove the pot from the heat and let the ibihaza n'ubwoko rest for a few minutes before serving.",
         "Serve the dish hot, garnished with fresh cilantro or parsley."
       ],
@@ -20062,7 +22351,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2202",
+      "id": "r2261",
       "name": "Ibijumba N'Ubwoko (Rwandan Sweet Potato and Mushroom Dish)",
       "minutes": 25,
       "servings": 4,
@@ -20074,7 +22363,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -20146,7 +22435,6 @@
         "Stir well to coat the mushrooms with the spices.",
         "Add the cooked sweet potatoes to the pan and gently stir to combine all the ingredients.",
         "Cook for another 2–3 minutes to allow the flavors to meld together.",
-        "Taste and adjust the seasoning if needed.",
         "Remove from heat and transfer to a serving dish.",
         "Garnish with fresh chopped cilantro or parsley.",
         "Serve hot as a main dish or as a side with the favorite Rwandan accompaniments."
@@ -20156,7 +22444,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2203",
+      "id": "r2262",
       "name": "Ibirayi N'Ibinyomoro (Rwandan Bean Soup with Smoked Beef)",
       "minutes": 330,
       "servings": 4,
@@ -20167,7 +22455,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -20225,7 +22513,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "fresh parsley or cilantro leaves, for garnish (optional)"
+          "item": "fresh parsley or cilantro leaves, for garnish, optional"
         }
       ],
       "steps": [
@@ -20238,7 +22526,6 @@
         "Bring the mixture to a boil, then reduce the heat to low and let it simmer for about 1–1.5 hours, or until the beans are tender.",
         "Stir occasionally during cooking and skim off any foam that forms on the surface.",
         "Season the soup with thyme, paprika, salt, and black pepper.",
-        "Adjust the seasoning according to the preference.",
         "Continue to simmer the soup for another 15–20 minutes to allow the flavors to meld together.",
         "Remove from heat and transfer to serving bowls.",
         "Garnish with fresh parsley or cilantro leaves, if desired, before serving."
@@ -20248,7 +22535,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2204",
+      "id": "r2263",
       "name": "Ibirayi N'Ibishyimbo (Rwandan Bean Soup with Fish)",
       "minutes": 95,
       "servings": 4,
@@ -20322,7 +22609,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "fish stock cube (optional)"
+          "item": "fish stock cube, optional"
         },
         {
           "qty": 1.0,
@@ -20361,7 +22648,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2205",
+      "id": "r2264",
       "name": "Ibisuba (Rwandan Bean Salad)",
       "minutes": 40,
       "servings": 4,
@@ -20447,7 +22734,6 @@
         "In a mixing bowl, combine the cooked beans, chopped onion, diced tomato, diced cucumber, diced green bell pepper, grated carrot, and chopped parsley or cilantro.",
         "In a separate small bowl, whisk together the lemon juice, olive oil, salt, and black pepper to create the dressing.",
         "Pour the dressing over the bean and vegetable mixture, and gently toss to combine, ensuring all the ingredients are evenly coated.",
-        "Adjust the seasoning with additional salt and black pepper, if needed.",
         "Let the salad marinate in the refrigerator for at least 30 minutes to allow the flavors to meld together.",
         "Before serving, give the salad a final toss and transfer it to a serving dish.",
         "Garnish with additional chopped parsley or cilantro, if desired.",
@@ -20458,7 +22744,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2206",
+      "id": "r2265",
       "name": "Ifisashi N'Ubwoko (Rwandan Peanut Spinach Stew with Mushroom)",
       "minutes": 25,
       "servings": 4,
@@ -20470,7 +22756,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -20537,7 +22823,6 @@
         "Season with salt and black pepper to taste.",
         "Stir well to incorporate the seasoning.",
         "Reduce the heat to low and let the stew simmer for about 15–20 minutes, allowing the flavors to meld together and the spinach to wilt.",
-        "Taste and adjust the seasoning if needed.",
         "Remove from heat and transfer to a serving dish.",
         "Serve hot with steamed rice or ugali."
       ],
@@ -20546,7 +22831,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2207",
+      "id": "r2266",
       "name": "Ikijumba (Rwandan Sweet Potato Stew)",
       "minutes": 30,
       "servings": 4,
@@ -20558,7 +22843,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -20641,7 +22926,6 @@
         "Stir occasionally during cooking to prevent sticking and to ensure even cooking of the vegetables.",
         "Once the sweet potatoes are cooked, add the diced tomatoes to the stew.",
         "Stir well and let it simmer for an additional 5 minutes to allow the flavors to meld together.",
-        "Taste and adjust the seasoning as needed, adding more salt or spices according to the preference.",
         "Remove the pot from the heat, and let the ikijumba rest for a few minutes before serving.",
         "Garnish with chopped fresh parsley or cilantro before serving."
       ],
@@ -20650,7 +22934,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2208",
+      "id": "r2267",
       "name": "Ikijumba N'Umutsima (Rwandan Sweet Potato Stew with Corn and Bean Dish)",
       "minutes": 30,
       "servings": 4,
@@ -20663,7 +22947,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -20711,7 +22995,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "fresh cilantro leaves, for garnish (optional)"
+          "item": "fresh cilantro leaves, for garnish, optional"
         }
       ],
       "steps": [
@@ -20724,7 +23008,6 @@
         "Add the cooked corn and beans to the pot.",
         "Stir gently to incorporate them into the stew.",
         "Season with salt and black pepper to taste.",
-        "Adjust the seasoning according to the preference.",
         "Continue to simmer the stew for another 5–10 minutes to allow the flavors to meld together.",
         "Remove from heat and transfer to a serving dish.",
         "Garnish with fresh cilantro leaves, if desired, before serving."
@@ -20734,7 +23017,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2209",
+      "id": "r2268",
       "name": "Ikinyomoro N'Ibishyimbo (Rwandan Smoked Fish with Beans)",
       "minutes": 20,
       "servings": 4,
@@ -20793,7 +23076,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "fresh cilantro leaves, for garnish (optional)"
+          "item": "fresh cilantro leaves, for garnish, optional"
         }
       ],
       "steps": [
@@ -20809,7 +23092,6 @@
         "Using a wooden spoon, gently stir the beans to incorporate the flavors.",
         "Flake the smoked fish into smaller pieces and return them to the pot.",
         "Stir gently to distribute the fish throughout the beans.",
-        "Taste and adjust the seasoning if needed.",
         "Remove from heat and transfer to a serving dish.",
         "Garnish with fresh cilantro leaves, if desired, before serving."
       ],
@@ -20818,7 +23100,89 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2210",
+      "id": "r2269",
+      "name": "Indian Omelet",
+      "minutes": 35,
+      "servings": 2,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "large eggs"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "finely-chopped onion"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "chopped tomatoes"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "pepper"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "cumin seeds"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "finely-chopped coriander leaves, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "finely-chopped hot green chiles, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "red chile powder, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil"
+        }
+      ],
+      "steps": [
+        "In a small bowl, whisk the eggs lightly.",
+        "Add in all the other ingredients and mix properly.",
+        "Set a skillet on stove, and smear its surface with a thin coat of oil.",
+        "Pour the contents of the bowl into the skillet.",
+        "Lightly brown on one side.",
+        "Turn over and lightly brown other side."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Indian_Omelet",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2270",
       "name": "Indonesian-style Fried Rice",
       "minutes": 15,
       "servings": 4,
@@ -20937,7 +23301,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2211",
+      "id": "r2271",
       "name": "Inguday Tibs (Ethiopian Mushroom Stir-Fry)",
       "minutes": 15,
       "servings": 4,
@@ -21043,7 +23407,6 @@
         "Add the sliced mushrooms to the skillet and toss to combine them with the spice mixture.",
         "Cook for about 5–7 minutes, or until the mushrooms are tender and slightly browned.",
         "Drizzle the soy sauce and lemon juice over the mushrooms, and stir to evenly coat the mushrooms with the flavors.",
-        "Taste and adjust the seasoning with salt and pepper if needed.",
         "Remove from heat and garnish with freshly chopped parsley or cilantro.",
         "Serve hot as a main course or a side dish, accompanied by injera or rice."
       ],
@@ -21052,7 +23415,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2213",
+      "id": "r2273",
       "name": "Inyama Y'Isugi (Rwandan Grilled Pork)",
       "minutes": 15,
       "servings": 4,
@@ -21121,7 +23484,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "fresh lemon juice, for garnish (optional)"
+          "item": "fresh lemon juice, for garnish, optional"
         }
       ],
       "steps": [
@@ -21139,7 +23502,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2214",
+      "id": "r2274",
       "name": "Iresi Eyin (Yoruba Palm Oil Native Rice)",
       "minutes": 45,
       "servings": 4,
@@ -21149,7 +23512,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "african"
       ],
@@ -21223,7 +23586,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2216",
+      "id": "r2276",
       "name": "Isombe (Rwandan Cassava Leaves with Eggplant)",
       "minutes": 75,
       "servings": 4,
@@ -21235,7 +23598,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -21293,7 +23656,6 @@
         "Stir again to ensure even distribution of the ingredients.",
         "Reduce the heat to low, cover the pot, and let the mixture simmer for about 1 hour, or until the cassava leaves are tender and cooked through.",
         "Stir occasionally during cooking, and add more water if necessary to prevent sticking and to achieve the desired consistency.",
-        "Taste and adjust the seasoning if needed, adding more salt or other spices according to the preference.",
         "Remove the pot from the heat and let the isombe rest for a few minutes before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Isombe_(Rwandan_Cassava_Leaves_with_Eggplant)",
@@ -21301,7 +23663,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2217",
+      "id": "r2277",
       "name": "Isombe na Kariyo (Cassava Leaves with Pumpkin)",
       "minutes": 45,
       "servings": 4,
@@ -21313,7 +23675,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -21375,7 +23737,6 @@
         "Stir again to distribute the ingredients evenly.",
         "Cover the pot and let the mixture simmer for about 30–40 minutes, or until the cassava leaves are tender.",
         "Stir occasionally during cooking, and add more water if needed to prevent sticking and to achieve the desired consistency.",
-        "Taste and adjust the seasoning if needed.",
         "Remove from heat and transfer to a serving dish.",
         "Serve hot as a main course or as a side dish with Rwandan staples like ugali or steamed rice."
       ],
@@ -21384,7 +23745,97 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2218",
+      "id": "r2279",
+      "name": "Italian Braised Shortribs",
+      "minutes": 40,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "medium",
+        "moderate",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 3.0,
+          "unit": "lb",
+          "item": "english-cut short-ribs"
+        },
+        {
+          "qty": 1.0,
+          "unit": "quart",
+          "item": "red wine, preferably Chianti"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 0.5,
+          "unit": "quart",
+          "item": "beef broth"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 10.0,
+          "unit": "",
+          "item": "whole sprigs thyme"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "whole sprigs rosemary"
+        },
+        {
+          "qty": 3.0,
+          "unit": "tbsp",
+          "item": "finely-chopped oregano"
+        },
+        {
+          "qty": 18.0,
+          "unit": "",
+          "item": "basil leaves"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "freshly-ground black pepper"
+        }
+      ],
+      "steps": [
+        "Whisk together tomato paste and wine. Set aside.",
+        "Season shortribs with salt and black pepper.",
+        "Heat a 6-quart cast-iron or enamel Dutch oven over medium high heat.",
+        "Pour in oil and add shortribs, one at a time, until browned on all sides.",
+        "Remove and keep warm.",
+        "Add wine mixture to Dutch oven and whisk continuously to dissolve browned bits.",
+        "Add remaining ingredients and place in a cold oven.",
+        "Set oven to 250°F (120°C) and cook for 5 ½ hours.",
+        "Remove shortribs and strain sauce back into Dutch oven.",
+        "Discard herb pieces and shred short ribs. Discard bones.",
+        "Add shortribs back into sauce and heat over low heat just until heated through. Serve warm."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Italian_Braised_Shortribs",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2280",
       "name": "Italian Marinated Chicken",
       "minutes": 105,
       "servings": 2,
@@ -21394,9 +23845,9 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -21443,7 +23894,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2219",
+      "id": "r2281",
       "name": "Italian Meatballs",
       "minutes": 40,
       "servings": 6,
@@ -21509,7 +23960,7 @@
         }
       ],
       "steps": [
-        "Preheat oven to 175°C (350°F (175°C)) in the meantime.",
+        "Preheat oven to 175°C (350°F) in the meantime.",
         "Mix all ingredients together in a large bowl.",
         "Using the hands, squeeze all ingredients.",
         "Heat a large skillet over medium heat and drizzle on a little olive oil.",
@@ -21522,7 +23973,71 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2220",
+      "id": "r2282",
+      "name": "Italian Soup with Poultry Quenelles",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "easy",
+        "budget",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "poultry breast"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground rice"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "egg yolk"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper"
+        },
+        {
+          "qty": 1.0,
+          "unit": "pinch",
+          "item": "nutmeg"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "stock"
+        }
+      ],
+      "steps": [
+        "Pound the poultry breast. Mix in ground rice, egg yolk, salt, pepper, and nutmeg.",
+        "Pass the mixture through a sieve.",
+        "Form the mixture into quenelles.",
+        "Simmer the quenelles in the stock to make a soup. The poultry is done at 165°F (74°C) inside."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Italian_Soup_with_Poultry_Quenelles",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2283",
       "name": "Ivorian Grilled Chicken",
       "minutes": 30,
       "servings": 4,
@@ -21586,7 +24101,98 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2222",
+      "id": "r2284",
+      "name": "Jamaican Jerk Chicken",
+      "minutes": 80,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "caribbean"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground allspice"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "cayenne pepper"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground ginger"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground cinnamon"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "freshly-grated nutmeg"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tbsp",
+          "item": "dried thyme"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "dehydrated lemon peel"
+        },
+        {
+          "qty": 3.0,
+          "unit": "tbsp",
+          "item": "dark rum"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "boneless skinless chicken breasts"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "brown mustard"
+        }
+      ],
+      "steps": [
+        "Combine rum and mustard, and rub all over chicken.",
+        "Combine remaining ingredients and rub all over chicken.",
+        "Refrigerate for at least 1 hour, but it is better to marinate overnight.",
+        "Place chicken on a greased, preheated charcoal grill.",
+        "Cook, turning constantly until internal temperature reaches 165°F (74°C).",
+        "Remove and let rest for 10 minutes.",
+        "Serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Jamaican_Jerk_Chicken",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2285",
       "name": "Jerk Lobster",
       "minutes": 20,
       "servings": 4,
@@ -21594,6 +24200,7 @@
       "tags": [
         "dinner",
         "main-meal",
+        "high-protein",
         "hard",
         "splurge",
         "caribbean"
@@ -21627,7 +24234,7 @@
         {
           "qty": 0.5,
           "unit": "tsp",
-          "item": "jamaican pickapeppa sauce or 3 drops of Jamaican hot pepper sauce (optional)"
+          "item": "jamaican pickapeppa sauce or 3 drops of Jamaican hot pepper sauce, optional"
         },
         {
           "qty": null,
@@ -21657,7 +24264,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2223",
+      "id": "r2286",
       "name": "Kabab Barg (Persian Grilled Meat)",
       "minutes": 15,
       "servings": 4,
@@ -21722,7 +24329,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2224",
+      "id": "r2287",
       "name": "Kabalagala (Ugandan Pancakes)",
       "minutes": 15,
       "servings": 4,
@@ -21780,14 +24387,14 @@
         "Each pancake should be about 3–4 inches in diameter.",
         "Fry the pancakes until they turn golden brown and become crispy on both sides. This usually takes about 2–3 minutes per side.",
         "Use a slotted spoon or spider strainer to remove the fried kabalagala from the oil and transfer them onto a plate lined with paper towels to drain excess oil.",
-        "Serve the kabalagala while still warm. They can be enjoyed on their own as a tasty snack or paired with a cup of tea or coffee."
+        "Serve the kabalagala while still warm."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kabalagala_(Ugandan_Pancakes)",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2227",
+      "id": "r2290",
       "name": "Kale and Garlic Pasta",
       "minutes": 60,
       "servings": 4,
@@ -21863,7 +24470,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2228",
+      "id": "r2291",
       "name": "Kanda (Peanut Stew)",
       "minutes": 310,
       "servings": 4,
@@ -21952,7 +24559,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "fresh parsley or cilantro for garnish (optional)"
+          "item": "fresh parsley or cilantro for garnish, optional"
         },
         {
           "qty": null,
@@ -21961,23 +24568,29 @@
         }
       ],
       "steps": [
-        "If using peanuts with skins, start by removing the skins. You can do this by roasting the peanuts in the oven for a few minutes until the skins loosen. Rub the peanuts between your hands or use a clean kitchen towel to remove the skins.",
+        "If using peanuts with skins, start by removing the skins.",
+        "You can do this by roasting the peanuts in the oven for a few minutes until the skins loosen.",
+        "Rub the peanuts between the hands or use a clean kitchen towel to remove the skins.",
         "In a blender or food processor, grind the peanuts until they form a fine powder. Set aside.",
-        "Heat oil in a large cooking pot over medium heat. Add the chopped onions and sauté until they become translucent.",
+        "Heat oil in a large cooking pot over medium heat.",
+        "Add the chopped onions and sauté until they become translucent.",
         "Add the chicken or beef pieces to the pot and cook until they are browned on all sides. If using chicken with bones, this step helps enhance the flavor of the stew.",
-        "Stir in the minced garlic, diced tomatoes, and bell peppers. Cook for a few minutes until the vegetables start to soften.",
-        "Add the tomato paste, peanut butter, ground peanuts, paprika, thyme, salt, and pepper to the pot. Mix well to combine all the ingredients.",
-        "Pour in the chicken or beef broth and stir to incorporate everything. Bring the mixture to a boil.",
-        "Once it boils, reduce the heat to low and cover the pot with a lid. Allow the stew to simmer for about 1–1.5 hours, or until the meat is tender and the flavors have melded together. The meat is done at 165°F (74°C) inside.",
-        "Taste the stew and adjust the seasoning if needed, adding more salt, pepper, or spices according to your preference.",
-        "Serve the kanda hot, garnished with fresh parsley or cilantro if desired. It is commonly served over cooked rice or with fufu."
+        "Stir in the minced garlic, diced tomatoes, and bell peppers.",
+        "Cook for a few minutes until the vegetables start to soften.",
+        "Add the tomato paste, peanut butter, ground peanuts, paprika, thyme, salt, and pepper to the pot.",
+        "Mix well to combine all the ingredients.",
+        "Pour in the chicken or beef broth and stir to incorporate everything.",
+        "Bring the mixture to a boil.",
+        "Once it boils, reduce the heat to low and cover the pot with a lid.",
+        "Allow the stew to simmer for about 1–1.5 hours, or until the meat is tender and the flavors have melded together. The meat is done at 165°F (74°C) inside.",
+        "Serve the kanda hot, garnished with fresh parsley or cilantro if desired."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Kanda_(Peanut_Stew)",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2229",
+      "id": "r2293",
       "name": "Karnataka-Style Rasam (Tamarind and Tomato Soup)",
       "minutes": 15,
       "servings": 4,
@@ -22002,7 +24615,7 @@
         {
           "qty": 4.0,
           "unit": "",
-          "item": "large (16 oz can) tomatoes OR 2 tbsp tamarind (concentrate extract) paste"
+          "item": "large (16 oz can) tomatoes or 2 tbsp tamarind (concentrate extract) paste"
         },
         {
           "qty": 0.25,
@@ -22078,7 +24691,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2230",
+      "id": "r2294",
       "name": "Katogo (Ugandan Mixed Breakfast Vegetables)",
       "minutes": 35,
       "servings": 4,
@@ -22170,7 +24783,98 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2231",
+      "id": "r2295",
+      "name": "Keralan Prawns",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "splurge",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.5,
+          "unit": "kg",
+          "item": "whole prawns"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tbsp",
+          "item": "red chile powder"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "turmeric powder"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "coriander powder"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tbsp",
+          "item": "minced ginger"
+        },
+        {
+          "qty": 3.0,
+          "unit": "tbsp",
+          "item": "oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "kudampuli (Malabar tamarind) to your preferred sourness (can be substituted with lime juice)"
+        },
+        {
+          "qty": 15.0,
+          "unit": "",
+          "item": "curry leaves"
+        },
+        {
+          "qty": 20.0,
+          "unit": "piece",
+          "item": "chipped coconut kernel (thin slices approximately 2 cm long each)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "big green chile"
+        },
+        {
+          "qty": 0.25,
+          "unit": "",
+          "item": "big onion (not sweet)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        }
+      ],
+      "steps": [
+        "Remove the prawn tails and heads.",
+        "Cook the prawns in water with ginger, salt, curry leaves, green chillies, kudampuli and coconut.",
+        "Leave a little water in the vessel at the end of cooking.",
+        "Heat the oil in a pan and fry the turmeric, chili powder and coriander powder in it until they turn brown.",
+        "Add the onion and sauté until wilted.",
+        "Add the cooked shrimp and simmer, stirring, until it reaches a semi-dry consistency."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Keralan_Prawns",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2296",
       "name": "Key Wat (Ethiopian Red Stew)",
       "minutes": 60,
       "servings": 4,
@@ -22275,7 +24979,6 @@
         "Add the beef cubes to the pot and cook, stirring occasionally, until they are browned on all sides.",
         "Pour the beef or vegetable broth into the pot, ensuring that the beef is fully submerged.",
         "Reduce the heat to low, cover the pot, and simmer for about 1.5–2 hours or until the beef is tender and the flavors have melded together.",
-        "Adjust the seasoning with salt and additional spices if desired.",
         "Serve hot, garnished with freshly chopped cilantro or parsley."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Key_Wat_(Ethiopian_Red_Stew)",
@@ -22283,7 +24986,87 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2232",
+      "id": "r2297",
+      "name": "Khao Pad (Thai Fried Rice)",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "splurge",
+        "thai"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "minced garlic"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "cooked rice, cooled"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "fish sauce"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "soy sauce"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "cooked meat (e.g. shrimp, pork, chicken, etc.)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "sugar"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground black pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "spring onion as desired, sliced"
+        }
+      ],
+      "steps": [
+        "Heat up a frying pan or wok and add the oil, then the minced garlic. Stir-fry until fragrant.",
+        "Add the eggs, and stir-fry the eggs until cooked.",
+        "Add the rice and stir-fry.",
+        "Season with fish sauce, soy sauce, and sugar, then continue frying until the rice is crumbly.",
+        "Add meat, pepper, and spring onions.",
+        "Stir again until heated through, then transfer to a serving dish."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Khao_Pad_(Thai_Fried_Rice)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2298",
       "name": "Khatti Dal (Spiced Tamarind Pigeon Peas)",
       "minutes": 35,
       "servings": 4,
@@ -22397,7 +25180,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2233",
+      "id": "r2299",
       "name": "Kibbeh",
       "minutes": 70,
       "servings": 4,
@@ -22407,8 +25190,7 @@
         "main-meal",
         "vegetarian",
         "dairy-free",
-        "high-protein",
-        "medium",
+        "hard",
         "splurge",
         "middle_eastern"
       ],
@@ -22431,17 +25213,17 @@
         {
           "qty": null,
           "unit": "",
-          "item": "raisins (optional)"
+          "item": "raisins, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "pine nuts (optional)"
+          "item": "pine nuts, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "spicy paprika or chile powder (optional)"
+          "item": "spicy paprika or chile powder, optional"
         },
         {
           "qty": 0.5,
@@ -22496,7 +25278,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2234",
+      "id": "r2300",
       "name": "Kid-Friendly Pizza",
       "minutes": 20,
       "servings": 4,
@@ -22507,7 +25289,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "italian"
+        "american"
       ],
       "ingredients": [
         {
@@ -22528,7 +25310,7 @@
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "cubed cooked chicken breast (optional)"
+          "item": "cubed cooked chicken breast, optional"
         },
         {
           "qty": 1.0,
@@ -22550,7 +25332,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2235",
+      "id": "r2302",
       "name": "Kik Alicha (Yellow Split Pea Stew)",
       "minutes": 45,
       "servings": 4,
@@ -22560,6 +25342,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
+        "high-protein",
         "medium",
         "budget",
         "african"
@@ -22629,7 +25412,6 @@
         "Bring the pot to a boil over medium-high heat.",
         "Reduce the heat to low, cover with a lid, and simmer for about 35–40 minutes, or until the split peas are tender and cooked through.",
         "Stir occasionally to prevent sticking. If needed, add additional water during cooking to maintain the desired consistency.",
-        "Taste the stew and adjust the seasoning with salt, if necessary.",
         "Remove from heat and let the stew rest for a few minutes to allow the flavors to meld together.",
         "Garnish with freshly chopped cilantro or parsley.",
         "Serve hot as a main course or as part of a traditional Ethiopian meal, accompanied by injera (Ethiopian flatbread) or rice."
@@ -22639,7 +25421,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2237",
+      "id": "r2305",
       "name": "Korean Shortribs",
       "minutes": 310,
       "servings": 4,
@@ -22649,7 +25431,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "korean"
       ],
@@ -22708,7 +25490,103 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2238",
+      "id": "r2306",
+      "name": "Koshary (Egyptian Pasta Salad with Rice and Lentils)",
+      "minutes": 60,
+      "servings": 7,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "budget",
+        "middle_eastern"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "basmati rice"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "brown lentils"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "elbow macaroni"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "chickpeas"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "onion, diced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 6.0,
+          "unit": "oz",
+          "item": "canned tomato paste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "water"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "cumin"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground black pepper, more to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "white wine vinegar, more to taste"
+        }
+      ],
+      "steps": [
+        "If using dried chickpeas and lentils, soak them in water overnight.",
+        "Boil the rice, chickpeas, and lentils until tender.",
+        "Cook the macaroni until al dente. Drain all.",
+        "In a sealable container (e.g. a tupperware), layer the rice, the lentils, and the macaroni, and then the chickpeas. This is the koshari base.",
+        "Sauté the diced onions in olive oil until crisp.",
+        "Drain off the excess oil if desired, and reserve for garnish.",
+        "Mix the tomato paste and water in a saucepan.",
+        "Put on medium high heat, and stir in the cumin, black pepper and vinegar.",
+        "Heat the sauce until most of the liquid evaporates.",
+        "Add warm or hot water, and simmer it on low heat.",
+        "Using a hand blender to increase consistency is optional.",
+        "Scoop 1½ cups of the koshari base into an individual bowl.",
+        "Pour some sauce over the serving.",
+        "Garnish with 1 tablespoon of the onions.",
+        "Add vinegar and black pepper to taste, and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Koshary_(Egyptian_Pasta_Salad_with_Rice_and_Lentils)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2307",
       "name": "Kunun Tamba (Finger Millet Porridge)",
       "minutes": 40,
       "servings": 2,
@@ -22718,7 +25596,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "medium",
+        "easy",
         "budget",
         "african"
       ],
@@ -22761,7 +25639,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2239",
+      "id": "r2309",
       "name": "Kwacoco (Cameroonian Steamed Taro Bundles)",
       "minutes": 15,
       "servings": 4,
@@ -22844,7 +25722,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2240",
+      "id": "r2311",
       "name": "Lamb Kofta",
       "minutes": 45,
       "servings": 12,
@@ -22857,7 +25735,7 @@
         "high-protein",
         "medium",
         "splurge",
-        "middle_eastern"
+        "indian"
       ],
       "ingredients": [
         {
@@ -22868,7 +25746,7 @@
         {
           "qty": 3.0,
           "unit": "oz",
-          "item": "lamb or other solid and flavorful fat (optional), chopped"
+          "item": "lamb or other solid and flavorful fat, optional, chopped"
         },
         {
           "qty": 1.0,
@@ -22937,7 +25815,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2241",
+      "id": "r2312",
       "name": "Lamb Sausages and Grilled Potatoes",
       "minutes": 40,
       "servings": 6,
@@ -22947,7 +25825,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "american"
       ],
@@ -22994,7 +25872,7 @@
         }
       ],
       "steps": [
-        "Preheat oven to 200°C (392°F (200°C)).",
+        "Preheat oven to 200°C (392°F).",
         "Rinse the potatoes, and cut into slices 0.5 cm thick using a knife, grater, or mandoline.",
         "Put the potatoes in the cake tin, and spread them out.",
         "Add the 30 ml of olive oil to cover the entire tin and the potatoes.",
@@ -23012,7 +25890,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2242",
+      "id": "r2313",
       "name": "Lamb Shawarma",
       "minutes": 130,
       "servings": 4,
@@ -23022,7 +25900,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
         "middle_eastern"
       ],
@@ -23106,85 +25984,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2243",
-      "name": "Lamb and Okra Stew (Khoresht Bamiye)",
-      "minutes": 70,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "middle_eastern"
-      ],
-      "ingredients": [
-        {
-          "qty": 3.0,
-          "unit": "",
-          "item": "onions, peeled and thinly sliced (3–4)"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "cooking oil"
-        },
-        {
-          "qty": 500.0,
-          "unit": "g",
-          "item": "stewing lamb or beef, cut into small pieces"
-        },
-        {
-          "qty": 750.0,
-          "unit": "g",
-          "item": "okra, washed with stems trimmed"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "black pepper"
-        },
-        {
-          "qty": 3.0,
-          "unit": "",
-          "item": "spoons tomato paste (3–4)"
-        },
-        {
-          "qty": 2.0,
-          "unit": "",
-          "item": "spoons fresh lime juice (2–3)"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "cooked rice, to serve"
-        }
-      ],
-      "steps": [
-        "Fry the sliced onion in oil until slightly golden.",
-        "Add the meat and fry with the onions until the color changes.",
-        "Add 3 glasses of hot water and bring to boil.",
-        "Turn heat down and let boil slowly for about 45 minutes, adding more hot water during cooking if needed.",
-        "Add okra, salt, pepper, and tomato paste to the meat.",
-        "Cook for another 10–15 minutes. Take care not to overcook the okras so that they do not become slippery.",
-        "Add lime juice and adjust seasoning.",
-        "Cook for another 3–4 minutes.",
-        "Serve with white rice."
-      ],
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lamb_and_Okra_Stew_(Khoresht_Bamiye)",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceLicense": "CC BY-SA 4.0"
-    },
-    {
-      "id": "r2244",
+      "id": "r2315",
       "name": "Langar Dal",
       "minutes": 60,
       "servings": 4,
@@ -23246,7 +26046,150 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2246",
+      "id": "r2316",
+      "name": "Latkes",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "medium",
+        "budget",
+        "european"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "large potatoes, peeled"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "medium onion, peeled"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "egg, beaten"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "matzo meal, cornmeal, or flour"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "applesauce, sour cream, and/or sugar for serving"
+        }
+      ],
+      "steps": [
+        "Grate the potatoes and onions.",
+        "Place grated potatoes and onions in cheesecloth or a fine sieve.",
+        "Squeeze mixture well to drain excess moisture, which will ensure proper frying.",
+        "Mix drained potato and onion mixture with egg, matzo meal, and salt.",
+        "Heat oil in a 10-inch (25 cm) pan over medium heat until it is quite hot.",
+        "Drop 1–2 tablespoons of the potato mixture per pancake into the pan.",
+        "Flip partway through the cooking to allow both sides to fry.",
+        "Serve with applesauce, sour cream, and/or sugar as a topping."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Latkes",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2317",
+      "name": "Leaf Masala Curry",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 200.0,
+          "unit": "g",
+          "item": "onions, chopped"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil"
+        },
+        {
+          "qty": 20.0,
+          "unit": "g",
+          "item": "tomatoes, chopped"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "minced garlic"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "minced ginger"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "meat (chicken or beef), cut into pieces"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "vegetables"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "leaf masala"
+        },
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "warm water (2–3 cup)"
+        }
+      ],
+      "steps": [
+        "Fry onions in a dash of oil until golden brown. The meat is done at 165°F (74°C) inside.",
+        "Add the tomatoes, and cook.",
+        "Stir in garlic, ginger, meat, and vegetables.",
+        "Cook until nearly done.",
+        "Stir in leaf masala and warm water.",
+        "Bring to a boil, then simmer until done.",
+        "Serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Leaf_Masala_Curry",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2319",
       "name": "Lemon Blueberry Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -23255,7 +26198,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -23349,7 +26291,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2247",
+      "id": "r2320",
       "name": "Lemon Poppy Seed Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -23358,7 +26300,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -23451,7 +26392,192 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2249",
+      "id": "r2321",
+      "name": "Lentil and Sausage Stew",
+      "minutes": 60,
+      "servings": 2,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "high-protein",
+        "medium",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 250.0,
+          "unit": "g",
+          "item": "dry brown lentils"
+        },
+        {
+          "qty": 1.0,
+          "unit": "l",
+          "item": "water for the lentils (needed for the sauce; don't use more)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "carrot, diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "potatoes, peeled (2–3)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "clove",
+          "item": "garlic"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "pairs of scalded sausage, whole or in pieces"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large piece of smoked pork belly"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": ">1 bay leaf"
+        },
+        {
+          "qty": 40.0,
+          "unit": "g",
+          "item": "butter"
+        },
+        {
+          "qty": 40.0,
+          "unit": "g",
+          "item": "flour"
+        },
+        {
+          "qty": 0.5,
+          "unit": "l",
+          "item": "water"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "red wine vinegar"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "honey"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper"
+        }
+      ],
+      "steps": [
+        "Wash the lentils in sieve and cook them over low heat in the 1 litre of water for 40–50 minutes.",
+        "About 20 minutes before the end of the cooking, add the carrot, onion, potatoes, garlic, sausages, bay leaf, and pork belly.",
+        "After cooking, put the pot on the side and keep it warm.",
+        "Melt the butter in the little pot, add the flour, and cook carefully until brown, stirring the whole time.",
+        "Slowly and gradually add the ⅓ litre water, and bring to a boil.",
+        "Add the tomato paste, vinegar, and honey.",
+        "Season with salt and pepper to the liking.",
+        "Stir the sauce into the lentils, mix well, and keep warm."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lentil_and_Sausage_Stew",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2322",
+      "name": "Lentil, Barley, and Tomato Soup",
+      "minutes": 45,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "high-protein",
+        "easy",
+        "budget",
+        "british"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "lentils"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "heaped tablespoons barley"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, diced"
+        },
+        {
+          "qty": 3.0,
+          "unit": "cup",
+          "item": "water"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "tomatoes, peeled, seeded, and diced"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper, to taste"
+        }
+      ],
+      "steps": [
+        "Soak the lentils and barley together overnight, then drain.",
+        "Fry the onion in the butter until soft.",
+        "Add the lentils, barley, and water.",
+        "Cook until the lentils are tender—this will take longer if grains are not soaked.",
+        "Add the tomatoes when the soup is almost ready.",
+        "Purée with a food mill, blender, or food processor."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lentil,_Barley,_and_Tomato_Soup",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2323",
       "name": "Lentil, Potato, and Tomato Curry",
       "minutes": 15,
       "servings": 4,
@@ -23541,7 +26667,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2250",
+      "id": "r2324",
       "name": "Lentils and Rice (Mjeddrah)",
       "minutes": 110,
       "servings": 4,
@@ -23572,7 +26698,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "A little chopped carrot, celery, etc. (optional)"
+          "item": "A little chopped carrot, celery, etc., optional"
         },
         {
           "qty": 2.0,
@@ -23597,22 +26723,22 @@
         {
           "qty": null,
           "unit": "",
-          "item": "minced garlic (optional)"
+          "item": "minced garlic, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "dried chile pepper (optional)"
+          "item": "dried chile pepper, optional"
         },
         {
           "qty": 0.5,
           "unit": "",
-          "item": "cinnamon stick (optional)"
+          "item": "cinnamon stick, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "A few cardamom pods (optional)"
+          "item": "A few cardamom pods, optional"
         },
         {
           "qty": null,
@@ -23639,7 +26765,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2251",
+      "id": "r2325",
       "name": "Liberian Cassava Leaf Soup",
       "minutes": 145,
       "servings": 4,
@@ -23650,7 +26776,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -23729,7 +26855,6 @@
         "Let the soup simmer for another 10–15 minutes, or until the vegetables are cooked through.",
         "Stir in the cassava leaves and let the soup simmer for an additional 45 minutes to 1 hour, stirring occasionally to prevent sticking.",
         "Season the soup with salt and ground black pepper to taste.",
-        "Adjust the seasoning according to the preference.",
         "Remove the pot from the heat and let the soup rest for a few minutes before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Liberian_Cassava_Leaf_Soup",
@@ -23737,7 +26862,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2252",
+      "id": "r2326",
       "name": "Liberian Collard Greens Stew",
       "minutes": 40,
       "servings": 4,
@@ -23748,7 +26873,7 @@
         "vegetarian",
         "vegan",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -23830,7 +26955,6 @@
         "Stir to coat the collard greens and vegetables with the spices.",
         "Pour in the vegetable broth (or water) to the pot, ensuring that the collard greens are well covered.",
         "Cover the pot and let the stew simmer on low heat for about 30–40 minutes, or until the collard greens are tender and flavorful.",
-        "Taste and adjust the seasoning if needed, adding more salt or spices according to the preference.",
         "Serve as a main dish with rice or bread."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Liberian_Collard_Greens_Stew",
@@ -23838,7 +26962,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2253",
+      "id": "r2327",
       "name": "Liberian Eggplant Stew",
       "minutes": 30,
       "servings": 4,
@@ -23849,7 +26973,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -23920,7 +27044,6 @@
         "Stir well to combine with the other ingredients.",
         "Gently add the diced eggplant to the pot and stir to incorporate with the other ingredients.",
         "Season the stew with ground pepper and salt to taste.",
-        "Adjust the seasoning according to the preference.",
         "Let the stew simmer for about 20–25 minutes or until the eggplant is tender and cooked through.",
         "Stir occasionally during cooking to prevent sticking and to ensure even cooking.",
         "Remove the pot from the heat and let the stew rest for a few minutes before serving."
@@ -23930,7 +27053,84 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2255",
+      "id": "r2328",
+      "name": "Liberian Fried Plantains with Beans",
+      "minutes": 50,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "ripe plantains"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "vegetable oil, for frying"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, finely chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "cooked beans (black-eyed peas or kidney beans)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground paprika"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground black pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, to taste"
+        }
+      ],
+      "steps": [
+        "Peel the ripe plantains and cut them into diagonal slices, about ½ inch thick.",
+        "In a large frying pan, heat vegetable oil over medium-high heat.",
+        "Fry the plantain slices in batches until they are golden brown and crispy on both sides.",
+        "Use a slotted spoon to transfer the fried plantains to a plate lined with paper towels to drain any excess oil.",
+        "In the same frying pan, sauté the chopped onion and minced garlic until they become translucent and fragrant.",
+        "Add the cooked beans to the pan and mix well with the onions and garlic.",
+        "Season the beans with ground paprika, ground black pepper, and salt to taste.",
+        "Stir to coat the beans evenly with the spices.",
+        "Cook the bean mixture for a few minutes until it is heated through.",
+        "Serve the fried plantains alongside the seasoned beans this delightful and flavorful Liberian dish."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Liberian_Fried_Plantains_with_Beans",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2330",
       "name": "Liberian Jollof Rice",
       "minutes": 65,
       "servings": 4,
@@ -23994,7 +27194,7 @@
         {
           "qty": 3.0,
           "unit": "lb",
-          "item": "steamed shrimp (optional)"
+          "item": "steamed shrimp, optional"
         },
         {
           "qty": 2.0,
@@ -24024,7 +27224,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2256",
+      "id": "r2331",
       "name": "Liberian Pepper Soup",
       "minutes": 40,
       "servings": 4,
@@ -24035,7 +27235,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -24119,7 +27319,6 @@
         "Stir in the sliced plantain and carrot.",
         "Let the soup simmer for another 5–7 minutes, or until the vegetables are tender.",
         "Season the soup with salt and ground black pepper to taste.",
-        "Adjust the seasoning according to the preference and desired level of spiciness.",
         "Remove the pot from the heat and let the soup rest for a few minutes before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Liberian_Pepper_Soup",
@@ -24127,7 +27326,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2257",
+      "id": "r2332",
       "name": "Liberian Potato Greens",
       "minutes": 25,
       "servings": 4,
@@ -24137,7 +27336,6 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
         "medium",
         "budget",
         "african"
@@ -24201,7 +27399,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2258",
+      "id": "r2333",
       "name": "Light Fluffy Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -24210,8 +27408,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -24292,7 +27489,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2259",
+      "id": "r2334",
       "name": "Linguine Primavera Mediterranean",
       "minutes": 30,
       "servings": 2,
@@ -24300,7 +27497,6 @@
       "tags": [
         "dinner",
         "main-meal",
-        "high-protein",
         "medium",
         "moderate",
         "italian"
@@ -24407,7 +27603,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2260",
+      "id": "r2335",
       "name": "Liver Kebabs",
       "minutes": 40,
       "servings": 4,
@@ -24417,7 +27613,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "medium",
+        "easy",
         "moderate",
         "african"
       ],
@@ -24450,7 +27646,7 @@
         {
           "qty": 2.0,
           "unit": "clove",
-          "item": "garlic, minced (optional) (2–3 clove)"
+          "item": "garlic, minced, optional (2–3 clove)"
         },
         {
           "qty": 1.0,
@@ -24469,7 +27665,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2261",
+      "id": "r2336",
       "name": "Lobster Thermidor",
       "minutes": 15,
       "servings": 4,
@@ -24547,7 +27743,56 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2262",
+      "id": "r2337",
+      "name": "Loco Moco (Rice with Egg and Hamburger)",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "easy",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "hamburger patty"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "uncooked rice (per preference) (0.5–1 cup)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "gravy"
+        }
+      ],
+      "steps": [
+        "Cook the eggs sunny side up.",
+        "Cook the hamburger to the preference. Ground meat is done at 160°F (71°C) inside.",
+        "Steam the rice, and heat up the gravy.",
+        "Assemble the components in the following order: Rice on bottom; Hamburger on top of rice; Eggs; Gravy."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Loco_Moco_(Rice_with_Egg_and_Hamburger)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2338",
       "name": "Lumanda (Zambian Okra Stew)",
       "minutes": 25,
       "servings": 4,
@@ -24559,7 +27804,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -24629,7 +27874,6 @@
         "Add the sliced okra and diced tomato to the pot.",
         "Stir well to combine the vegetables with the spice mixture.",
         "Season the stew with salt to taste.",
-        "Adjust the seasoning according to the preference.",
         "Reduce the heat to low, cover the pot, and let simmer for about 15–20 minutes, or until the okra is tender and cooked through.",
         "Stir occasionally during cooking to prevent sticking and to ensure even cooking of the okra and tomatoes.",
         "Once the stew is ready, remove the pot from the heat and let rest for a few minutes before serving."
@@ -24639,7 +27883,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2263",
+      "id": "r2339",
       "name": "Luwombo (Ugandan Steamed Meat and Vegetables)",
       "minutes": 130,
       "servings": 4,
@@ -24763,7 +28007,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2264",
+      "id": "r2340",
       "name": "MPT (Mozzarella Pasta with Tomato and Basil)",
       "minutes": 40,
       "servings": 4,
@@ -24829,7 +28073,69 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2265",
+      "id": "r2341",
+      "name": "Macaroni and Cheese",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "easy",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "butter"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "flour"
+        },
+        {
+          "qty": 4.0,
+          "unit": "cup",
+          "item": "milk, heated"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "cheddar cheese"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "parmesan or Monterey Jack cheese"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "cayenne pepper, or to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "macaroni noodles, boiled and drained"
+        }
+      ],
+      "steps": [
+        "Make a roux using the butter and flour.",
+        "Add the heated milk, and whisk until smooth to complete the white sauce.",
+        "Mix in the cheese and cayenne pepper.",
+        "Mix the cheese sauce into the cooked macaroni noodles until well-coated."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_and_Cheese_I",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2342",
       "name": "Mafrum bil Lahm (Libyan Baked Meat and Potatoes)",
       "minutes": 60,
       "servings": 4,
@@ -24840,7 +28146,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "african"
       ],
@@ -24907,7 +28213,7 @@
         }
       ],
       "steps": [
-        "Preheat the oven to 180°C (350°F (175°C)).",
+        "Preheat the oven to 180°C (350°F).",
         "In a large pot, bring water to a boil and add the potato slices. Boil them for about 5 minutes, or until slightly tender. Drain and set aside.",
         "In a skillet, heat the olive oil over medium heat. Add the chopped onion and minced garlic, and sauté until they become translucent and fragrant.",
         "Add the ground beef or lamb to the skillet and cook until browned. Break up the meat with a wooden spoon or spatula as it cooks. Ground meat is done at 160°F (71°C) inside.",
@@ -24925,7 +28231,102 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2267",
+      "id": "r2343",
+      "name": "Maharashtrian Baingan Bartha (South Indian Eggplant with Chili)",
+      "minutes": 15,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "hard",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large eggplants (1–2)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "handful",
+          "item": "plus some more finely chopped green onion, both white and green parts"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "finely-chopped green garlic, optional (2–3 tsp)"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "fresh peas"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cumin seeds"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "rai (mustard seed)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "green chiles broken into 2–3 pieces each (1–2)"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "turmeric, optional"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "red chile powder, optional"
+        }
+      ],
+      "steps": [
+        "Wash, then wipe dry eggplant. Apply some oil on the surface of each one of them.",
+        "Blacken eggplants over direct heat. Alternatively, char-roast in an oven or over a fire to infuse smoke.",
+        "Once the skin is blackened and comes away on touch, let them cool a bit and then peel the burnt skin. Reserve the drippings.",
+        "Mash the eggplant flesh by hand until smooth. Transfer flesh to a large bowl.",
+        "Mix in the green onion, green garlic (if using), peas, and salt to taste.",
+        "Heat some oil in a pan. Once heated sufficiently add rai, then cumin seeds, then green chilies. Let the chilies fry for 10–12 seconds.",
+        "Pour this spice mix onto the eggplant mixture in the bowl. Mix well and serve with bhakri and thecha/kharda below.",
+        "Follow steps 1 through 5 as directed above.",
+        "In the step 6 above add turmeric after chilies. Add the eggplant mixture to the pan of tadka. Sauté for about 1–2 minutes. If required add some of the reserved eggplant drippings to moisten the bharta.",
+        "Serve hot.",
+        "Wash and dry about 10–15 green chilies and half handful of fresh coriander. Peel 5–7 cloves of garlic; break the chilies in to 2–3 pieces each.",
+        "Heat about 1–1½ tbsp of oil on the griddle (tava).",
+        "Once heated sufficiently add chilies and garlic (make sure you have exhaust turned on and working).",
+        "Fry them for 30–40 seconds over low heat. Turn the heat off. Now add salt to taste. Put this mix in a blender along with chopped coriander and blend it roughly.",
+        "Thecha is ready to serve. While serving put some raw groundnut oil on each serving. This is very very hot dish depending the chilies used. Eat and handle carefully!"
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Maharashtrian_Baingan_Bartha_(South_Indian_Eggplant_with_Chili)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2345",
       "name": "Maklubi (Rice with Meat and Vegetables)",
       "minutes": 25,
       "servings": 4,
@@ -25000,7 +28401,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2268",
+      "id": "r2346",
       "name": "Maltese Rabbit Stew (Stuffat Tal-Fenek)",
       "minutes": 240,
       "servings": 4,
@@ -25008,7 +28409,7 @@
       "tags": [
         "dinner",
         "main-meal",
-        "hard",
+        "medium",
         "budget",
         "mediterranean"
       ],
@@ -25113,7 +28514,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2269",
+      "id": "r2347",
       "name": "Mango and Yellow Split Pea Curry",
       "minutes": 25,
       "servings": 2,
@@ -25215,7 +28616,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2271",
+      "id": "r2349",
       "name": "Mapo Tofu",
       "minutes": 30,
       "servings": 2,
@@ -25303,7 +28704,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2272",
+      "id": "r2352",
       "name": "Mascarpone Mac 'n Cheese",
       "minutes": 35,
       "servings": 4,
@@ -25372,7 +28773,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2273",
+      "id": "r2353",
       "name": "Matzah Lasagne",
       "minutes": 50,
       "servings": 4,
@@ -25381,9 +28782,10 @@
         "dinner",
         "main-meal",
         "vegetarian",
+        "high-protein",
         "medium",
         "budget",
-        "middle_eastern"
+        "italian"
       ],
       "ingredients": [
         {
@@ -25409,7 +28811,7 @@
         {
           "qty": 0.5,
           "unit": "tsp",
-          "item": "black pepper (optional)"
+          "item": "black pepper, optional"
         },
         {
           "qty": 30.0,
@@ -25434,7 +28836,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2274",
+      "id": "r2354",
       "name": "Mbahal (Gambian Fish and Okra)",
       "minutes": 25,
       "servings": 4,
@@ -25445,7 +28847,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -25539,7 +28941,6 @@
         "Reduce the heat to low and cover the pot.",
         "Allow the mixture to simmer for about 15–20 minutes, or until the okra is cooked and the flavors have melded together.",
         "Add the flaked smoked fish to the pot and gently stir it into the stew. Be careful not to break up the fish too much.",
-        "Taste the mbahal and adjust the seasoning with salt and pepper according to the preference.",
         "Serve hot with a side of steamed rice or couscous."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mbahal_(Gambian_Fish_and_Okra)",
@@ -25547,7 +28948,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2275",
+      "id": "r2355",
       "name": "Mbahal Kebb (Gambian Chicken Skewers)",
       "minutes": 180,
       "servings": 4,
@@ -25558,7 +28959,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -25642,7 +29043,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2276",
+      "id": "r2356",
       "name": "Mbong Tchobi (Cameroonian Spicy Black Stew)",
       "minutes": 40,
       "servings": 4,
@@ -25735,7 +29136,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2277",
+      "id": "r2357",
       "name": "Mbulawu (Malawian Fermented Millet Porridge)",
       "minutes": 500,
       "servings": 4,
@@ -25789,7 +29190,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2278",
+      "id": "r2358",
       "name": "Meat and Rice-Stuffed Bell Peppers",
       "minutes": 50,
       "servings": 4,
@@ -25800,7 +29201,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -25855,7 +29256,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2279",
+      "id": "r2359",
       "name": "Meatballs with Honey Lime Sauce",
       "minutes": 70,
       "servings": 4,
@@ -25948,7 +29349,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2280",
+      "id": "r2360",
       "name": "Mediterranean Green Chicken",
       "minutes": 120,
       "servings": 4,
@@ -26029,7 +29430,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2281",
+      "id": "r2361",
       "name": "Menemen (Eggs with Onion, Green Pepper, and Tomato)",
       "minutes": 25,
       "servings": 2,
@@ -26078,12 +29479,12 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "dried oregano (optional) (1–2 tsp)"
+          "item": "dried oregano, optional (1–2 tsp)"
         },
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "sweet paprika (optional) (1–2 tsp)"
+          "item": "sweet paprika, optional (1–2 tsp)"
         },
         {
           "qty": null,
@@ -26116,7 +29517,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2282",
+      "id": "r2362",
       "name": "Mesir Wat (Spicy Ethiopian Lentil Stew)",
       "minutes": 45,
       "servings": 4,
@@ -26213,7 +29614,6 @@
         "Add the cooked lentils to the pot, including any remaining cooking liquid.",
         "Stir well to incorporate the lentils with the spices.",
         "Bring the mixture to a simmer and cook for an additional 20 minutes, stirring occasionally, to allow the flavors to meld together.",
-        "Taste the stew and adjust the seasoning with salt and pepper if needed.",
         "Remove the pot from the heat and let rest for a few minutes before serving.",
         "Garnish with fresh chopped parsley or cilantro."
       ],
@@ -26222,7 +29622,92 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2283",
+      "id": "r2363",
+      "name": "Mesquite BBQ Burger",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "medium",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "ground chuck"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "mesquite smoke powder"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tbsp",
+          "item": "apple cider vinegar"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "freshly-ground black pepper"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "light molasses"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "garlic powder"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "yellow mustard"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cheese, to serve"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "hamburger buns"
+        }
+      ],
+      "steps": [
+        "Preheat grill to 500–575°F (300°C).",
+        "Combine garlic, smoke powder, and 4 heavy pinches each of salt and freshly ground black pepper. Set aside.",
+        "Combine remaining ingredients in a mixing bowl.",
+        "Form into ¾ inch-thick patties and make an indentation in the center of each patty with the thumb.",
+        "Sprinkle patties on both sides with seasoning mixture.",
+        "Place on grill and cook, turning often, until desired \"doneness\" is achieved.",
+        "Serve on buns with cook's choice of cheese and desired toppings."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mesquite_BBQ_Burger",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2364",
       "name": "Mesquite Beef Tenderloin",
       "minutes": 50,
       "servings": 4,
@@ -26233,7 +29718,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "splurge",
         "american"
       ],
@@ -26290,7 +29775,7 @@
         "Place mesquite chips in the hot coal area of a charcoal grill.",
         "Combine paprika, coriander, salt, pepper, rosemary, and lemon peel.",
         "Rub this mixture all over beef and bring to room temperature.",
-        "Place beef in center of grill, cover, and cook, turning often until internal temperature reaches 135°F (57°C) for medium rare, 150°F (66°C) for medium, or 160°F (71°C) for toast.",
+        "Place beef in center of grill, cover, and cook, turning often until internal temperature reaches 135°F (57°C) for medium rare, 150°F (66°C) for medium, or 160°F (71°C) for well done.",
         "Remove, let rest for 10 minutes, and serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Mesquite_Beef_Tenderloin",
@@ -26298,7 +29783,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2284",
+      "id": "r2365",
       "name": "Mesquite Chicken Sandwich",
       "minutes": 15,
       "servings": 4,
@@ -26362,7 +29847,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2285",
+      "id": "r2366",
       "name": "Mesquite Chicken Wraps",
       "minutes": 15,
       "servings": 4,
@@ -26426,7 +29911,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2286",
+      "id": "r2367",
       "name": "Mexican Ribs",
       "minutes": 490,
       "servings": 4,
@@ -26437,9 +29922,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -26521,7 +30006,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2288",
+      "id": "r2369",
       "name": "Microwave Risotto",
       "minutes": 40,
       "servings": 3,
@@ -26530,7 +30015,6 @@
         "dinner",
         "main-meal",
         "gluten-free",
-        "high-protein",
         "medium",
         "budget",
         "italian"
@@ -26586,7 +30070,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2289",
+      "id": "r2370",
       "name": "Microwave Salmon in a Parchment Envelope",
       "minutes": 15,
       "servings": 4,
@@ -26596,7 +30080,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "american"
       ],
@@ -26681,7 +30165,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2291",
+      "id": "r2372",
       "name": "Middle Eastern Lamb Kabobs",
       "minutes": 35,
       "servings": 4,
@@ -26758,7 +30242,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2292",
+      "id": "r2373",
       "name": "Middle Eastern Meatballs",
       "minutes": 60,
       "servings": 6,
@@ -26861,7 +30345,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2293",
+      "id": "r2374",
       "name": "Mishkaki (East African Meat Skewers)",
       "minutes": 45,
       "servings": 4,
@@ -26872,7 +30356,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "splurge",
         "african"
       ],
@@ -26974,7 +30458,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2294",
+      "id": "r2375",
       "name": "Miyan Karkashi (Nigerian Sesame Leaf Soup)",
       "minutes": 10,
       "servings": 2,
@@ -27041,7 +30525,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2295",
+      "id": "r2376",
       "name": "Mofletta (Maghrebi Pancake)",
       "minutes": 20,
       "servings": 4,
@@ -27116,7 +30600,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2296",
+      "id": "r2377",
       "name": "Mohingha (Burmese Fish Noodle Soup)",
       "minutes": 20,
       "servings": 4,
@@ -27186,7 +30670,68 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2298",
+      "id": "r2378",
+      "name": "Monterey Jack Chicken Breasts",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "boneless skinless chicken breasts"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "olive oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "freshly-ground black pepper"
+        },
+        {
+          "qty": 4.0,
+          "unit": "pinch",
+          "item": "freshly-ground cumin"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "shredded Monterrey Jack cheese"
+        }
+      ],
+      "steps": [
+        "Brush both sides of chicken with olive oil.",
+        "Sprinkle liberally with salt, freshly ground black pepper, and 1 pinch of cumin.",
+        "Place in a large roasting pan and insert a probe thermometer into one of the breasts.",
+        "Bake in the center of a 400°F (205°C) oven until internal temperature reaches 165°F (74°C).",
+        "Remove and sprinkle with cheese.",
+        "Place back in oven until cheese is melted.",
+        "Serve warm."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Monterey_Jack_Chicken_Breasts",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2380",
       "name": "Moussaka (Bulgarian)",
       "minutes": 70,
       "servings": 4,
@@ -27270,7 +30815,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2299",
+      "id": "r2381",
       "name": "Muboora (Zimbabwean Pumpkin Leaves Stew)",
       "minutes": 30,
       "servings": 4,
@@ -27320,7 +30865,7 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "curry powder (optional)"
+          "item": "curry powder, optional"
         },
         {
           "qty": null,
@@ -27353,7 +30898,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2300",
+      "id": "r2382",
       "name": "Muceere (Ugandan Pumpkin Stew)",
       "minutes": 25,
       "servings": 4,
@@ -27472,7 +31017,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2301",
+      "id": "r2383",
       "name": "Mushroom Barley Bean Soup",
       "minutes": 20,
       "servings": 10,
@@ -27551,7 +31096,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2302",
+      "id": "r2384",
       "name": "Mushroom Tofu Soup",
       "minutes": 25,
       "servings": 4,
@@ -27565,7 +31110,7 @@
         "high-protein",
         "medium",
         "budget",
-        "japanese"
+        "chinese"
       ],
       "ingredients": [
         {
@@ -27623,7 +31168,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2304",
+      "id": "r2386",
       "name": "Mussels with Potatoes",
       "minutes": 15,
       "servings": 4,
@@ -27635,7 +31180,7 @@
         "dairy-free",
         "medium",
         "splurge",
-        "french"
+        "american"
       ],
       "ingredients": [
         {
@@ -27693,7 +31238,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2305",
+      "id": "r2388",
       "name": "Ndizi na Nyama (Tanzanian Green Bananas with Beef)",
       "minutes": 55,
       "servings": 4,
@@ -27776,7 +31321,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2306",
+      "id": "r2390",
       "name": "Nigerian Egg Pepper Soup",
       "minutes": 75,
       "servings": 2,
@@ -27787,7 +31332,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -27855,7 +31400,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "fresh cilantro or parsley, for garnish (optional)"
+          "item": "fresh cilantro or parsley, for garnish, optional"
         }
       ],
       "steps": [
@@ -27870,8 +31415,6 @@
         "Bring the mixture to a gentle simmer.",
         "Slowly pour the beaten eggs into the simmering soup, stirring gently with a wooden spoon or spatula in one direction. This will create thin strands of cooked egg throughout the soup.",
         "Continue cooking the soup for about 3–4 minutes, allowing the egg to cook and thicken the soup slightly.",
-        "Taste the soup and adjust the seasoning if needed.",
-        "Add more salt or spices according to the preference.",
         "Once the soup is ready, remove it from the heat.",
         "Serve hot, garnished with fresh cilantro or parsley if desired."
       ],
@@ -27880,9 +31423,9 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2307",
+      "id": "r2391",
       "name": "Nigerian Egg Stew",
-      "minutes": 7,
+      "minutes": 10,
       "servings": 1,
       "meal": "breakfast",
       "tags": [
@@ -27947,7 +31490,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2308",
+      "id": "r2393",
       "name": "Nigerian Rice and Beans Jollof",
       "minutes": 40,
       "servings": 3,
@@ -28023,7 +31566,73 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2310",
+      "id": "r2394",
+      "name": "Nigerian Tomato Omelette",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "dairy-free",
+        "medium",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "tomatoes, diced"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cooked rice, to serve"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "crusty bread, to serve"
+        }
+      ],
+      "steps": [
+        "Heat some oil in a pan over high heat.",
+        "Add the tomatoes, and fry until well-heated.",
+        "Beat the eggs, and stir in the cooked tomato.",
+        "Return the mixture to the pan over medium-low heat, making sure it is evenly spread across the pan.",
+        "Cook until the egg is sturdy enough to flip.",
+        "Flip the omelette to the other side, and cook until the bottom is golden.",
+        "Serve hot with bread or jollof rice."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Tomato_Omelette",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2396",
       "name": "Nune Soup",
       "minutes": 30,
       "servings": 2,
@@ -28072,7 +31681,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2311",
+      "id": "r2397",
       "name": "Nyama Choma (Tanzanian Barbecue)",
       "minutes": 250,
       "servings": 4,
@@ -28082,7 +31691,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "african"
       ],
@@ -28178,7 +31787,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2313",
+      "id": "r2399",
       "name": "Oatmeal Banana Waffle",
       "minutes": 30,
       "servings": 4,
@@ -28237,7 +31846,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2314",
+      "id": "r2401",
       "name": "Ofe Owerri",
       "minutes": 10,
       "servings": 6,
@@ -28318,14 +31927,14 @@
         "Simmer for 5–10 minutes.",
         "Add okazi leaves, and simmer for 3 minutes.",
         "Stir in ugu leaves, and simmer for 2–3 minutes.",
-        "Taste and adjust seasoning. Serve hot with pounded yam or fufu."
+        "Serve hot with pounded yam or fufu."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ofe_Owerri",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2315",
+      "id": "r2404",
       "name": "Okra Plantain Porridge",
       "minutes": 10,
       "servings": 2,
@@ -28335,6 +31944,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
+        "high-protein",
         "easy",
         "moderate",
         "african"
@@ -28403,7 +32013,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2317",
+      "id": "r2406",
       "name": "Orange Cardamom Pancakes",
       "minutes": 15,
       "servings": 8,
@@ -28412,7 +32022,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -28505,7 +32114,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2318",
+      "id": "r2407",
       "name": "Orzo Salad",
       "minutes": 45,
       "servings": 4,
@@ -28516,7 +32125,7 @@
         "vegetarian",
         "medium",
         "budget",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -28596,7 +32205,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2319",
+      "id": "r2408",
       "name": "Otong Soup",
       "minutes": 25,
       "servings": 2,
@@ -28672,7 +32281,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2320",
+      "id": "r2410",
       "name": "Oven Pancakes",
       "minutes": 30,
       "servings": 4,
@@ -28733,81 +32342,18 @@
         }
       ],
       "steps": [
-        "Preheat oven to 232°C (450°F (230°C)), and oil an 8-inch oven-safe skillet.",
+        "Preheat oven to 232°C (450°F), and oil an 8-inch oven-safe skillet.",
         "Combine flour, baking powder, baking soda, salt, and sugar.",
         "Add the milk, oil, and vanilla; stir well.",
         "Stir in the apple cider vinegar, mix well, and pour immediately into the skillet.",
-        "Bake at 232°C (450°F (230°C)) for 18 to 20 minutes, and serve."
+        "Bake at 232°C (450°F) for 18 to 20 minutes, and serve."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Oven_Pancakes",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2321",
-      "name": "Pabellón Criollo (Venezuelan Rice and Beans with Steak)",
-      "minutes": 40,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 3.0,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 1.0,
-          "unit": "",
-          "item": "large onion, chopped"
-        },
-        {
-          "qty": 1.0,
-          "unit": "tsp",
-          "item": "finely chopped garlic"
-        },
-        {
-          "qty": 400.0,
-          "unit": "g",
-          "item": "tinned chopped tomatoes"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "ground cumin"
-        },
-        {
-          "qty": 1.0,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 900.0,
-          "unit": "g",
-          "item": "lean steak, (sirloin or rump), about 12 mm (½ inch) thick"
-        }
-      ],
-      "steps": [
-        "Heat the oil in a large saucepan, add the onions and garlic and cook over a medium heat for about 5 minutes until the onions are soft and transparent.",
-        "Add the tomatoes, cumin and salt, mix well, reduce the heat to low and cook uncovered, for about 30 minutes, stirring often, until the tomato juices evaporate and the sauce becomes thick.",
-        "15 minutes before the end of the cooking time, preheat the grill to hot, place the steak on the grill pan and cook under the grill for 5 minute on each side.",
-        "Remove from the grill and cut into pieces about 12mm/ ½-inch long and 6mm/ ¼-inch wide then add the strips of beef to the sauce, mixing well."
-      ],
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pabell%C3%B3n_Criollo_(Venezuelan_Rice_and_Beans_with_Steak)",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceLicense": "CC BY-SA 4.0"
-    },
-    {
-      "id": "r2322",
+      "id": "r2412",
       "name": "Pad Kra Pao Gai (Thai Basil Chicken Stir Fry)",
       "minutes": 15,
       "servings": 4,
@@ -28895,7 +32441,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2323",
+      "id": "r2413",
       "name": "Pan-Seared Chicken Breast",
       "minutes": 60,
       "servings": 4,
@@ -28906,7 +32452,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -28956,7 +32502,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2324",
+      "id": "r2414",
       "name": "Pan-Seared Duck Breast with Cabernet Reduction",
       "minutes": 35,
       "servings": 4,
@@ -28966,9 +32512,10 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "high-protein",
+        "medium",
         "splurge",
-        "french"
+        "american"
       ],
       "ingredients": [
         {
@@ -29021,7 +32568,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2325",
+      "id": "r2416",
       "name": "Pan-fried Beef Steak",
       "minutes": 20,
       "servings": 4,
@@ -29100,7 +32647,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2326",
+      "id": "r2417",
       "name": "Pan-fried Ravioli",
       "minutes": 15,
       "servings": 12,
@@ -29109,7 +32656,6 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "italian"
@@ -29133,7 +32679,7 @@
         {
           "qty": 0.5,
           "unit": "tsp",
-          "item": "salt (optional)"
+          "item": "salt, optional"
         },
         {
           "qty": 0.5,
@@ -29173,7 +32719,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2327",
+      "id": "r2418",
       "name": "Parmesan Encrusted Tilapia",
       "minutes": 25,
       "servings": 4,
@@ -29243,7 +32789,58 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2328",
+      "id": "r2419",
+      "name": "Pasta Marinata",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "easy",
+        "budget",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "oz",
+          "item": "semolina flour"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs, separated"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": 2.0,
+          "unit": "oz",
+          "item": "melted butter (or olive oil)"
+        },
+        {
+          "qty": 8.0,
+          "unit": "oz",
+          "item": "water"
+        }
+      ],
+      "steps": [
+        "Mix the semolina flour, egg yolks, a little salt, and melted butter.",
+        "Add the water so as to form a liquid substance.",
+        "Whip the egg whites to soft peaks, and fold into the batter."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pasta_Marinata",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2420",
       "name": "Pasta Soup for Kids",
       "minutes": 20,
       "servings": 6,
@@ -29315,7 +32912,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2329",
+      "id": "r2421",
       "name": "Pasta alla Gricia (Pasta with Guanciale)",
       "minutes": 15,
       "servings": 4,
@@ -29367,7 +32964,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2330",
+      "id": "r2422",
       "name": "Pasta and Bean Soup",
       "minutes": 135,
       "servings": 4,
@@ -29419,7 +33016,7 @@
         {
           "qty": 1.0,
           "unit": "handful",
-          "item": "fresh, chopped spinach (optional)"
+          "item": "fresh, chopped spinach, optional"
         },
         {
           "qty": 1.0,
@@ -29464,7 +33061,7 @@
         {
           "qty": 100.0,
           "unit": "ml",
-          "item": "single fresh cream (optional)"
+          "item": "single fresh cream, optional"
         }
       ],
       "steps": [
@@ -29481,7 +33078,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2331",
+      "id": "r2423",
       "name": "Pasta with Hot Dogs",
       "minutes": 35,
       "servings": 4,
@@ -29490,7 +33087,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "italian"
       ],
@@ -29518,7 +33115,7 @@
         {
           "qty": 350.0,
           "unit": "g",
-          "item": "maize corn (optional)"
+          "item": "maize corn, optional"
         },
         {
           "qty": 4.0,
@@ -29552,7 +33149,86 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2332",
+      "id": "r2424",
+      "name": "Pasta with Red Pepper and Goat Cheese",
+      "minutes": 45,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "medium",
+        "budget",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "large red bell peppers"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "red wine"
+        },
+        {
+          "qty": 1.0,
+          "unit": "clove",
+          "item": "garlic (1–2 clove)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "basil to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oregano to taste"
+        },
+        {
+          "qty": 4.0,
+          "unit": "oz",
+          "item": "goat cheese (e.g. bouchon, crottin, or generic chevre)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "pasta"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "tabasco sauce, to taste"
+        }
+      ],
+      "steps": [
+        "Skin and finely chop or process the red peppers.",
+        "Place chopped peppers in saucepan, and cover with water.",
+        "Crush and add garlic.",
+        "Cover the pot and bring to a simmer.",
+        "Stir in wine and olive oil.",
+        "Add basil, oregano, and Tabasco, stirring occasionally at simmer; allow sauce to begin cooking down.",
+        "While you're doing this, start boiling the pasta in salted water.",
+        "Remember that the sauce just needs to take its sweet time to cook down.",
+        "Cut the rind from the goat cheese; you only want the inner part for this.",
+        "As soon as the pasta and sauce are ready, toss them and the goat cheese together in the serving dish.",
+        "You have to do this fast, so the goat cheese will melt through the sauce and over the pasta.",
+        "Stirring the goat cheese into the sauce could result in burned sauce."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pasta_with_Red_Pepper_and_Goat_Cheese",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2425",
       "name": "Pasta with Sausage",
       "minutes": 20,
       "servings": 2,
@@ -29604,7 +33280,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2333",
+      "id": "r2426",
       "name": "Pasta with Vegetables",
       "minutes": 20,
       "servings": 2,
@@ -29668,7 +33344,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2334",
+      "id": "r2427",
       "name": "Pasta, Meat and Cheese Casserole (Mostaccioli)",
       "minutes": 55,
       "servings": 4,
@@ -29796,7 +33472,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2336",
+      "id": "r2429",
       "name": "Peach and Tomato Gazpacho",
       "minutes": 20,
       "servings": 4,
@@ -29876,7 +33552,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2337",
+      "id": "r2430",
       "name": "Peanut Butter Banana Oatmeal",
       "minutes": 15,
       "servings": 1,
@@ -29928,7 +33604,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2338",
+      "id": "r2431",
       "name": "Pecan Spinach Pasta",
       "minutes": 15,
       "servings": 4,
@@ -29937,6 +33613,8 @@
         "dinner",
         "main-meal",
         "vegetarian",
+        "vegan",
+        "dairy-free",
         "medium",
         "budget",
         "italian"
@@ -29985,7 +33663,7 @@
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "feta cheese or feta substitute (optional)"
+          "item": "feta cheese or feta substitute, optional"
         }
       ],
       "steps": [
@@ -30006,7 +33684,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2339",
+      "id": "r2432",
       "name": "Pepper-Crusted Chicken",
       "minutes": 15,
       "servings": 4,
@@ -30017,7 +33695,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -30067,7 +33745,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2340",
+      "id": "r2433",
       "name": "Peri-Peri Chicken",
       "minutes": 135,
       "servings": 4,
@@ -30164,7 +33842,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2341",
+      "id": "r2434",
       "name": "Peruvian Molded Rice (Arroz Tapado)",
       "minutes": 45,
       "servings": 6,
@@ -30266,7 +33944,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2342",
+      "id": "r2435",
       "name": "Picadillo (Beef with Potatoes and Tomatoes)",
       "minutes": 15,
       "servings": 6,
@@ -30278,7 +33956,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "american"
+        "latin_american"
       ],
       "ingredients": [
         {
@@ -30361,7 +34039,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2345",
+      "id": "r2438",
       "name": "Pig's Trotters and Ginger Vinegar Stew",
       "minutes": 35,
       "servings": 4,
@@ -30431,7 +34109,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2346",
+      "id": "r2439",
       "name": "Pikelet (Australian Mini Pancakes)",
       "minutes": 130,
       "servings": 12,
@@ -30497,7 +34175,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2347",
+      "id": "r2441",
       "name": "Pineapple Curry",
       "minutes": 15,
       "servings": 4,
@@ -30561,7 +34239,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2348",
+      "id": "r2442",
       "name": "Pineapple Fried Rice",
       "minutes": 25,
       "servings": 8,
@@ -30572,10 +34250,9 @@
         "vegetarian",
         "gluten-free",
         "dairy-free",
-        "high-protein",
         "easy",
         "budget",
-        "thai"
+        "chinese"
       ],
       "ingredients": [
         {
@@ -30641,7 +34318,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2349",
+      "id": "r2443",
       "name": "Pineapple Teriyaki",
       "minutes": 30,
       "servings": 2,
@@ -30653,7 +34330,7 @@
         "high-protein",
         "medium",
         "budget",
-        "american"
+        "japanese"
       ],
       "ingredients": [
         {
@@ -30704,7 +34381,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "cornstarch (optional)"
+          "item": "cornstarch, optional"
         },
         {
           "qty": 0.25,
@@ -30714,12 +34391,12 @@
         {
           "qty": null,
           "unit": "",
-          "item": "some sliced mushrooms (optional)"
+          "item": "some sliced mushrooms, optional"
         },
         {
           "qty": 1.0,
           "unit": "clove",
-          "item": "garlic (optional), minced, depending upon your teriyaki sauce (1–2 clove)"
+          "item": "garlic, optional, minced, depending upon your teriyaki sauce (1–2 clove)"
         }
       ],
       "steps": [
@@ -30739,7 +34416,59 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2351",
+      "id": "r2445",
+      "name": "Pizza Hot Dogs",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "easy",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "hot dog buns"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "hot dogs"
+        },
+        {
+          "qty": 12.0,
+          "unit": "slice",
+          "item": "mozzarella cheese"
+        },
+        {
+          "qty": 1.0,
+          "unit": "jar",
+          "item": "pizza sauce"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "grated Parmesan cheese"
+        }
+      ],
+      "steps": [
+        "Split hot dogs and hot dog buns lengthwise.",
+        "Place buns on a cookie sheet.",
+        "Sprinkle mozzarella cheese over buns.",
+        "Place split hot dog on each bun.",
+        "Spread pizza sauce over the hotdogs, sprinkle with Parmesan cheese, and broil until cheese bubbles and the hot dogs are hot."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pizza_Hot_Dogs",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2446",
       "name": "Pizza-Flavored Omelet",
       "minutes": 15,
       "servings": 1,
@@ -30750,9 +34479,9 @@
         "vegetarian",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
-        "italian"
+        "american"
       ],
       "ingredients": [
         {
@@ -30810,7 +34539,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2353",
+      "id": "r2449",
       "name": "Plank-Grilled Salmon",
       "minutes": 25,
       "servings": 1,
@@ -30867,7 +34596,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2354",
+      "id": "r2450",
       "name": "Poached Salmon with Wild Huckleberries",
       "minutes": 25,
       "servings": 5,
@@ -30937,7 +34666,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2356",
+      "id": "r2452",
       "name": "Poppyseed Chicken",
       "minutes": 45,
       "servings": 4,
@@ -30946,7 +34675,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -31000,7 +34729,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2357",
+      "id": "r2453",
       "name": "Pork Roast with Cayenne Apple Glaze",
       "minutes": 20,
       "servings": 4,
@@ -31010,7 +34739,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "moderate",
         "american"
       ],
@@ -31082,7 +34811,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2358",
+      "id": "r2454",
       "name": "Portobello Eggs",
       "minutes": 20,
       "servings": 4,
@@ -31092,7 +34821,6 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "high-protein",
         "easy",
         "budget",
         "american"
@@ -31142,7 +34870,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2359",
+      "id": "r2455",
       "name": "Portuguese Feijoada",
       "minutes": 120,
       "servings": 10,
@@ -31250,7 +34978,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2360",
+      "id": "r2456",
       "name": "Potage Parmentier",
       "minutes": 120,
       "servings": 8,
@@ -31298,12 +35026,12 @@
         {
           "qty": 1.0,
           "unit": "cup",
-          "item": "vegetables (optional), thinly sliced"
+          "item": "vegetables, optional, thinly sliced"
         },
         {
           "qty": 1.0,
           "unit": "",
-          "item": "handfuls flat-leaf parsley or watercress (optional), rough chopped (1–2)"
+          "item": "handfuls flat-leaf parsley or watercress, optional, rough chopped (1–2)"
         }
       ],
       "steps": [
@@ -31322,7 +35050,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2361",
+      "id": "r2457",
       "name": "Potato Gnocchi with Basil and Sun-dried Tomatoes",
       "minutes": 15,
       "servings": 4,
@@ -31382,7 +35110,71 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2363",
+      "id": "r2459",
+      "name": "Potato Pancakes",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "easy",
+        "budget",
+        "european"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "large potatoes"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "medium onion"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "egg, beaten"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "matzo meal, corn meal, or flour"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "applesauce and/or sour cream"
+        }
+      ],
+      "steps": [
+        "Peel and grate potatoes and onion.",
+        "Mix potato and onion with egg, matzo meal, and salt.",
+        "Heat oil in a 10-inch pan over medium heat until it is quite hot.",
+        "Drop 1–2 tablespoons of the potato mixture onto the pan per pancake.",
+        "Turn once to allow both sides to fry.",
+        "Serve with applesauce and/or sour cream as a topping."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Potato_Pancakes",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2460",
       "name": "Potato and Cabbage Soup",
       "minutes": 30,
       "servings": 4,
@@ -31393,7 +35185,7 @@
         "vegetarian",
         "medium",
         "budget",
-        "american"
+        "european"
       ],
       "ingredients": [
         {
@@ -31482,7 +35274,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2364",
+      "id": "r2461",
       "name": "Potato and Leek Soup",
       "minutes": 120,
       "servings": 12,
@@ -31542,7 +35334,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "A few sprigs each of parsley and thyme (optional), tied together"
+          "item": "A few sprigs each of parsley and thyme, optional, tied together"
         },
         {
           "qty": null,
@@ -31578,7 +35370,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2365",
+      "id": "r2463",
       "name": "Pouch-Roasted Snapper",
       "minutes": 50,
       "servings": 4,
@@ -31588,7 +35380,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "french"
+        "american"
       ],
       "ingredients": [
         {
@@ -31660,7 +35452,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2366",
+      "id": "r2464",
       "name": "Prawn Curry",
       "minutes": 40,
       "servings": 6,
@@ -31671,7 +35463,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "indian"
       ],
@@ -31729,7 +35521,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "ginger paste (optional)"
+          "item": "ginger paste, optional"
         },
         {
           "qty": 1.0,
@@ -31796,7 +35588,80 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2368",
+      "id": "r2465",
+      "name": "Pudina Hilsa (Bengali Fish with Mint)",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "easy",
+        "moderate",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "kg",
+          "item": "hilsa fish (kelee shad), cut into 10 pieces"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "pudina leaves (mint)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ginger paste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "nutmeg"
+        },
+        {
+          "qty": 50.0,
+          "unit": "g",
+          "item": "butter, chopped"
+        },
+        {
+          "qty": 3.0,
+          "unit": "tbsp",
+          "item": "capsicum"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt according to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "pinch",
+          "item": "sugar"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "green chili paste"
+        }
+      ],
+      "steps": [
+        "Wash the fish thoroughly in water.",
+        "Put the salt, sugar, 25 g of butter and all the other ingredients into a baking dish.",
+        "Add the fish pieces and sprinkle the rest of the butter on the top.",
+        "Bake at 200°C until the fish turns golden in color or otherwise appears to be done."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pudina_Hilsa_(Bengali_Fish_with_Mint)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2468",
       "name": "Puttu (Steamed Rice Flour and Coconut)",
       "minutes": 15,
       "servings": 4,
@@ -31807,7 +35672,7 @@
         "vegetarian",
         "vegan",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "indian"
       ],
@@ -31853,7 +35718,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2370",
+      "id": "r2470",
       "name": "Queens Soup",
       "minutes": 20,
       "servings": 4,
@@ -31901,7 +35766,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2372",
+      "id": "r2472",
       "name": "Quiche Lorraine",
       "minutes": 140,
       "servings": 9,
@@ -31910,7 +35775,7 @@
         "breakfast",
         "main-meal",
         "high-protein",
-        "medium",
+        "hard",
         "moderate",
         "french"
       ],
@@ -31974,7 +35839,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2373",
+      "id": "r2473",
       "name": "Quick Baked Beef-Pasta Dish",
       "minutes": 60,
       "servings": 8,
@@ -32041,7 +35906,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2374",
+      "id": "r2474",
       "name": "Quick Tomato Noodle Soup",
       "minutes": 15,
       "servings": 2,
@@ -32088,7 +35953,71 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2376",
+      "id": "r2475",
+      "name": "Quick and Easy Beef Stroganoff",
+      "minutes": 45,
+      "servings": 6,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "medium",
+        "moderate",
+        "european"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "package",
+          "item": "bite-size beef"
+        },
+        {
+          "qty": 1.0,
+          "unit": "can",
+          "item": "cream of mushroom soup"
+        },
+        {
+          "qty": 0.5,
+          "unit": "can",
+          "item": "beef broth"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "tub sour cream"
+        },
+        {
+          "qty": 1.0,
+          "unit": "bag",
+          "item": "egg noodles"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper to taste"
+        }
+      ],
+      "steps": [
+        "Cook egg noodles in a large pot according to directions.",
+        "While egg noodles cook, season the beef with salt and pepper and brown the meat in a skillet unless it is already cooked.",
+        "Low and slow makes a tender product. If meat is already cooked, heat the meat in the microwave or in a skillet.",
+        "Drain egg noodles.",
+        "Mix cream of mushroom soup, beef broth, and sour cream in the pot used for the egg noodles.",
+        "Season the sauce with salt and pepper keeping in mind that many of the ingredients contain plenty of salt.",
+        "Add noodle mixture with beef and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Quick_and_Easy_Beef_Stroganoff",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2477",
       "name": "Quorn Pitta",
       "minutes": 10,
       "servings": 1,
@@ -32167,7 +36096,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2377",
+      "id": "r2478",
       "name": "Racuszki (Polish Pancakes)",
       "minutes": 15,
       "servings": 3,
@@ -32176,7 +36105,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "easy",
         "budget",
         "european"
@@ -32210,17 +36138,17 @@
         {
           "qty": 1.0,
           "unit": "kg",
-          "item": "apples (optional), sliced"
+          "item": "apples, optional, sliced"
         },
         {
           "qty": 0.5,
           "unit": "tsp",
-          "item": "ground cinnamon (optional)"
+          "item": "ground cinnamon, optional"
         },
         {
           "qty": 0.5,
           "unit": "cup",
-          "item": "raisins (optional)"
+          "item": "raisins, optional"
         }
       ],
       "steps": [
@@ -32235,7 +36163,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2378",
+      "id": "r2479",
       "name": "Radish Stew",
       "minutes": 60,
       "servings": 3,
@@ -32244,7 +36172,6 @@
         "dinner",
         "main-meal",
         "dairy-free",
-        "high-protein",
         "medium",
         "moderate",
         "american"
@@ -32303,7 +36230,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "sweet ground paprika (optional)"
+          "item": "sweet ground paprika, optional"
         }
       ],
       "steps": [
@@ -32324,58 +36251,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2379",
-      "name": "Ragi Dosa (South Indian Millet and Rice Pancake)",
-      "minutes": 600,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "vegan",
-        "gluten-free",
-        "dairy-free",
-        "hard",
-        "budget",
-        "indian"
-      ],
-      "ingredients": [
-        {
-          "qty": 2.0,
-          "unit": "cup",
-          "item": "ragi (finger millet)"
-        },
-        {
-          "qty": 2.0,
-          "unit": "cup",
-          "item": "rice"
-        },
-        {
-          "qty": 1.0,
-          "unit": "cup",
-          "item": "urad dal"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt, to taste"
-        }
-      ],
-      "steps": [
-        "Soak ragi, rice and urad dal separately in water for 5 hours.",
-        "Grind the soaked rice with water first and next with urad dal and ragi (both) with water.",
-        "Mix up all the ground batter.",
-        "Leave it for about 10 hours to ferment.",
-        "After 10 hours put some salt as per the taste to the batter and water if needed.",
-        "Take a cup of batter and spread it onto a hot tava."
-      ],
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ragi_Dosa_(South_Indian_Millet_and_Rice_Pancake)",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceLicense": "CC BY-SA 4.0"
-    },
-    {
-      "id": "r2380",
+      "id": "r2481",
       "name": "Rajma (Sindhi Kidney Bean Curry)",
       "minutes": 45,
       "servings": 4,
@@ -32466,7 +36342,147 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2381",
+      "id": "r2482",
+      "name": "Rasam (Tamarind and Tomato Soup)",
+      "minutes": 60,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "hard",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "oil or ghee"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "coriander seeds"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "dried red chillies (3–4)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "cumin seeds"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "small pinch asafoetida"
+        },
+        {
+          "qty": 14.0,
+          "unit": "g",
+          "item": "toovar dhal (also called red gram dhal)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "turmeric"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "cooking oil"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "tomatoes"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "tamarind paste (1–2 tsp)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "sugar (jaggery or palm sugar is good too)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "water—the amount depends on the amount of rasam required as it is meant to be very watery"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "ghee (or butter and oil)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "black mustard seeds"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "urad dhal or cumin seeds"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "dried red chillies"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "curry leaves"
+        },
+        {
+          "qty": 1.0,
+          "unit": "handful",
+          "item": "chopped coriander leaves (cilantro)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cooked rice, to serve"
+        }
+      ],
+      "steps": [
+        "Fry the all the ingredients together, adding asafoetida last, in a skillet with oil or ghee.",
+        "Toast until the spices start to brown slightly.",
+        "Grind everything to a powder.",
+        "Note that coriander seed is very difficult to powder.",
+        "Wash the toovar dhal thoroughly until the water runs clear.",
+        "Cover with double the quantity of water, turmeric powder and teaspoon of oil.",
+        "Cook in a microwave for half an hour, a pressure cooker, or slowly on a stove, covered. The dhal should develop a mushy consistency.",
+        "Cut the tomatoes into 4 pieces, put them in a saucepan full of water, and bring to the boil.",
+        "Add tamarind, salt and teaspoon of sugar. The tamarind is usually very bitter, so add only a little at a time.",
+        "Tamarind can be added later to adjust the flavour.",
+        "When the tomatoes are half cooked add the cooked dal.",
+        "Add enough rasam powder to give the desired taste, usually 4–5 teaspoons. It should be reasonably spicy, and neither the tamarind or sugar should dominate.",
+        "Stir and keep simmering.",
+        "In a small pan, heat the ghee for the mustard seed seasoning and add the mustard seeds, urad dhal, chillies and curry leaves. The dhal should start to go brown and the mustard seeds will start spitting. Don't burn any of the spices—it's easy to do.",
+        "Once cooked, pour the seasoning into the rest of the rasam straight away and stir it through.",
+        "Add chopped coriander leaves. Serve with hot and soft plain boiled rice."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Rasam_(Tamarind_and_Tomato_Soup)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2483",
       "name": "Rava Dosa (Indian Semolina Pancake)",
       "minutes": 15,
       "servings": 4,
@@ -32475,7 +36491,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "easy",
+        "medium",
         "budget",
         "indian"
       ],
@@ -32543,7 +36559,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2384",
+      "id": "r2486",
       "name": "Rice Tamale (Pastel de Arroz)",
       "minutes": 60,
       "servings": 6,
@@ -32554,9 +36570,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
-        "latin_american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -32675,7 +36691,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2387",
+      "id": "r2489",
       "name": "Rice and Beef Soup",
       "minutes": 70,
       "servings": 4,
@@ -32686,7 +36702,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -32749,7 +36765,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2388",
+      "id": "r2490",
       "name": "Rigatoni Pasta with Ricotta in Tomato Cream Sauce",
       "minutes": 45,
       "servings": 6,
@@ -32758,7 +36774,7 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "hard",
+        "medium",
         "budget",
         "italian"
       ],
@@ -32864,7 +36880,61 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2389",
+      "id": "r2491",
+      "name": "Rissoles",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "moderate",
+        "british"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "kg",
+          "item": "regular grade beef mince (ground beef)"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "breadcrumbs"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "gravy powder or flour"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "various herbs"
+        }
+      ],
+      "steps": [
+        "Place beef mince in mixing bowl with eggs, breadcrumbs and the favourite meat herbs and seasonings.",
+        "Mix thoroughly. When fully mixed, remove one handful and mould into a the shape of a very thick hamburger patty.",
+        "Roll the rissole in either flour or gravy powder (depending on the preferences).",
+        "Cook in the oven, on a grill, or in a frying pan on a medium level of heat until cooked through and outer layer is crunchy. Ground meat is done at 160°F (71°C) inside.",
+        "Serve with vegetables, hot chips, salad or by themselves on bread or toast to make rissole burgers."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Rissoles",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2492",
       "name": "Roast Pork Loin with Cranberry Stuffing",
       "minutes": 230,
       "servings": 4,
@@ -32874,7 +36944,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -32978,7 +37048,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2390",
+      "id": "r2494",
       "name": "Roasted Meatballs (Kyufteta)",
       "minutes": 30,
       "servings": 4,
@@ -32988,7 +37058,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "easy",
+        "medium",
         "moderate",
         "european"
       ],
@@ -33057,7 +37127,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2391",
+      "id": "r2495",
       "name": "Rolex (Ugandan Flatbread-Rolled Omelet)",
       "minutes": 15,
       "servings": 4,
@@ -33067,7 +37137,6 @@
         "main-meal",
         "vegetarian",
         "dairy-free",
-        "high-protein",
         "medium",
         "budget",
         "african"
@@ -33076,7 +37145,7 @@
         {
           "qty": 2.0,
           "unit": "",
-          "item": "standard eggs"
+          "item": "eggs"
         },
         {
           "qty": 1.0,
@@ -33137,7 +37206,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2392",
+      "id": "r2496",
       "name": "Rosemary Garlic Strip Steak",
       "minutes": 20,
       "servings": 4,
@@ -33149,7 +37218,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "easy",
+        "hard",
         "budget",
         "american"
       ],
@@ -33198,7 +37267,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2393",
+      "id": "r2498",
       "name": "Rwandan Goat Brochette",
       "minutes": 145,
       "servings": 4,
@@ -33208,6 +37277,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
+        "high-protein",
         "medium",
         "moderate",
         "african"
@@ -33274,7 +37344,111 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2394",
+      "id": "r2499",
+      "name": "Sabich (Vegetable and Pita Sandwich)",
+      "minutes": 45,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "middle_eastern"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "tomatoes, cored and chopped"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "cucumber, chopped"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, chopped"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "minced parsley"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "lemon juice"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "eggplant, sliced into 1 cm rounds"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "hard-boiled eggs, peeled and sliced"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "vegetable oil, for frying"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "pita breads"
+        },
+        {
+          "qty": 0.75,
+          "unit": "cup",
+          "item": "hummus"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "tahini"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "amba sauce"
+        }
+      ],
+      "steps": [
+        "Put the tomatoes, cucumber, onion, and parsley in a bowl.",
+        "Take another small bowl and mix the lemon juice, oil, and salt.",
+        "Pour the dressing over the vegetables and toss well, leave it to stand for a couple of minutes.",
+        "Meanwhile, heat the oil in a large skillet over medium-high temperature.",
+        "When the oil has become hot enough, fry the eggplant slices until they turn golden brown.",
+        "Place the golden eggplant slices on a paper towel to remove the excess oil.",
+        "Spread the hummus evenly in each pita bread.",
+        "Stuff the pitas with the slices of fried eggplants and the boiled eggs.",
+        "Spoon over some of the Israeli salad, drizzle the tahini and amba over the pitas, and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sabich_(Vegetable_and_Pita_Sandwich)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2500",
       "name": "Sadza (Zimbabwean Corn Porridge)",
       "minutes": 35,
       "servings": 4,
@@ -33285,7 +37459,7 @@
         "vegetarian",
         "vegan",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -33330,7 +37504,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2395",
+      "id": "r2501",
       "name": "Saffron Rice and Beans",
       "minutes": 30,
       "servings": 2,
@@ -33338,11 +37512,12 @@
       "tags": [
         "dinner",
         "main-meal",
+        "vegetarian",
         "gluten-free",
         "high-protein",
         "hard",
         "splurge",
-        "latin_american"
+        "american"
       ],
       "ingredients": [
         {
@@ -33463,7 +37638,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2396",
+      "id": "r2502",
       "name": "Sai Bhaji (Sindhi Vegetable Curry)",
       "minutes": 15,
       "servings": 4,
@@ -33574,7 +37749,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2397",
+      "id": "r2503",
       "name": "Saka-Saka (Cassava Leaf Stew)",
       "minutes": 70,
       "servings": 4,
@@ -33675,7 +37850,6 @@
         "Pour in enough chicken or vegetable broth to cover the mixture. If you prefer a thicker stew, add less broth.",
         "Reduce the heat to low, cover the pot, and let the stew simmer for about 1–2 hours.",
         "Stir occasionally to prevent sticking and to ensure even cooking.",
-        "After the stew has simmered and the flavors have melded together, taste and adjust the seasoning with salt and pepper as desired.",
         "Serve hot with a side of cooked rice, fufu, or plantains."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Saka-Saka_(Cassava_Leaf_Stew)",
@@ -33683,7 +37857,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2400",
+      "id": "r2506",
       "name": "Salmon Spaghetti",
       "minutes": 15,
       "servings": 2,
@@ -33776,7 +37950,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2401",
+      "id": "r2507",
       "name": "Salt Cod and Potato Casserole (Bacalhau à Gomes de Sá)",
       "minutes": 600,
       "servings": 4,
@@ -33861,7 +38035,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2402",
+      "id": "r2508",
       "name": "Salted Fish Fried Rice",
       "minutes": 15,
       "servings": 5,
@@ -33945,7 +38119,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2403",
+      "id": "r2509",
       "name": "Sambar",
       "minutes": 15,
       "servings": 4,
@@ -33998,7 +38172,7 @@
         {
           "qty": 3.0,
           "unit": "tbsp",
-          "item": "thickish tamarind pulp OR 1 tsp tamarind concentrate"
+          "item": "thickish tamarind pulp or 1 tsp tamarind concentrate"
         },
         {
           "qty": 2.0,
@@ -34041,7 +38215,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2404",
+      "id": "r2510",
       "name": "Sancocho (Dominican Meat and Vegetable Soup)",
       "minutes": 240,
       "servings": 6,
@@ -34052,7 +38226,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "caribbean"
       ],
@@ -34160,7 +38334,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "hot cooked rice (optional)"
+          "item": "hot cooked rice, optional"
         },
         {
           "qty": null,
@@ -34170,7 +38344,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "chopped cilantro (optional)"
+          "item": "chopped cilantro, optional"
         }
       ],
       "steps": [
@@ -34189,7 +38363,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2405",
+      "id": "r2511",
       "name": "Sangah (Cameroonian Corn and Cassava Leaf)",
       "minutes": 30,
       "servings": 4,
@@ -34244,7 +38418,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2406",
+      "id": "r2512",
       "name": "Sauce Feuilles (Greens Stew)",
       "minutes": 30,
       "servings": 4,
@@ -34255,7 +38429,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "splurge",
         "african"
       ],
@@ -34308,12 +38482,12 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "ground crayfish (optional)"
+          "item": "ground crayfish, optional"
         },
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "dried shrimp or prawns (optional)"
+          "item": "dried shrimp or prawns, optional"
         },
         {
           "qty": 1.0,
@@ -34327,24 +38501,29 @@
         }
       ],
       "steps": [
-        "Wash the spinach, kale (or collard greens), and bitterleaf thoroughly to remove any dirt or grit. Remove any tough stems from the greens and chop them into small pieces. Set aside.",
+        "Wash the spinach, kale (or collard greens), and bitterleaf thoroughly to remove any dirt or grit.",
+        "Remove any tough stems from the greens and chop them into small pieces. Set aside.",
         "If using meat, cut it into bite-sized pieces. If using smoked fish, remove any bones and shred into smaller pieces.",
         "Season the meat or fish with salt and any other desired seasonings.",
-        "Heat the palm oil in a large pot over medium heat. If you prefer a milder flavor, you can mix palm oil with vegetable oil. Add the chopped onions and minced garlic to the pot and sauté until they become translucent and fragrant.",
-        "Add the diced tomatoes and scotch bonnet peppers. Cook for a few minutes until the tomatoes soften.",
+        "Heat the palm oil in a large pot over medium heat.",
+        "Add the chopped onions and minced garlic to the pot and sauté until they become translucent and fragrant.",
+        "Add the diced tomatoes and scotch bonnet peppers.",
+        "Cook for a few minutes until the tomatoes soften.",
         "Add the seasoned meat or fish to the pot and cook until it is browned and cooked through. If using smoked fish, add it towards the end to prevent overcooking.",
-        "Add the chopped spinach, kale (or collard greens), and bitterleaf to the pot. Stir well to combine with the meat or fish and aromatics. If the pot is too dry, you can add a little water to prevent sticking. Cover the pot and let the greens cook down for about 10–15 minutes or until they are wilted and tender.",
-        "Add the ground crayfish (if using), dried shrimp or prawns (if using), and bouillon powder or cubes to the pot. Stir well to incorporate the flavors.",
-        "Taste the stew and adjust the seasoning with salt and additional spices if needed.",
+        "Add the chopped spinach, kale (or collard greens), and bitterleaf to the pot.",
+        "Stir well to combine with the meat or fish and aromatics. If the pot is too dry, you can add a little water to prevent sticking.",
+        "Cover the pot and let the greens cook down for about 10–15 minutes or until they are wilted and tender.",
+        "Add the ground crayfish (if using), dried shrimp or prawns (if using), and bouillon powder or cubes to the pot.",
+        "Stir well to incorporate the flavors.",
         "Reduce the heat to low, cover the pot, and simmer for another 10–15 minutes to allow the flavors to meld together.",
-        "Garnish with additional chopped onions or fresh herbs, if desired, and enjoy."
+        "Garnish with additional chopped onions or fresh herbs, if desired."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sauce_Feuilles_(Greens_Stew)",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2407",
+      "id": "r2513",
       "name": "Sauce Gombo (Okra Stew)",
       "minutes": 70,
       "servings": 4,
@@ -34403,7 +38582,7 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "ground crayfish (optional)"
+          "item": "ground crayfish, optional"
         },
         {
           "qty": 1.0,
@@ -34464,8 +38643,8 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2408",
-      "name": "Sausage Meat Pie",
+      "id": "r2514",
+      "name": "Sausagemeat Pie",
       "minutes": 60,
       "servings": 4,
       "meal": "dinner",
@@ -34548,7 +38727,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2410",
+      "id": "r2516",
       "name": "Sayadeya (Egyptian Fish with Rice)",
       "minutes": 45,
       "servings": 4,
@@ -34652,7 +38831,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2411",
+      "id": "r2517",
       "name": "Scottish Porridge",
       "minutes": 445,
       "servings": 1,
@@ -34661,7 +38840,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "hard",
+        "medium",
         "budget",
         "british"
       ],
@@ -34726,7 +38905,60 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2413",
+      "id": "r2518",
+      "name": "Scribbled Eggs",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "medium",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "tomatoes, optional, chopped"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "scallion, optional, sliced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "eggs"
+        }
+      ],
+      "steps": [
+        "Heat a small amount of oil in a skillet over medium heat.",
+        "If using tomatoes, add them to the pan.",
+        "Fry for a minute.",
+        "If using scallion, add to tomatoes.",
+        "Cook for another minute.",
+        "Beat the eggs well, and pour into the pan.",
+        "Start stirring the eggs—Kenyans call this scribbling.",
+        "Cook like this until the egg is done."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Scribbled_Eggs",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2520",
       "name": "Sega Wat (Spicy Ethiopian Beef Stew)",
       "minutes": 310,
       "servings": 4,
@@ -34824,7 +39056,6 @@
         "Bring the mixture to a boil.",
         "Reduce the heat to low, cover the pot, and simmer for about 1.5–2 hours, or until the beef is tender and the flavors have melded together.",
         "Stir occasionally and add more liquid if needed to maintain the desired consistency.",
-        "Taste the stew and adjust the seasoning with salt and pepper if needed.",
         "Remove the pot from the heat and let rest for a few minutes before serving.",
         "Garnish with fresh chopped parsley or cilantro.",
         "Serve hot with injera or bread, and savor the bold and spicy flavors of this traditional Ethiopian beef stew."
@@ -34834,7 +39065,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2414",
+      "id": "r2521",
       "name": "Seitan Bratwurst",
       "minutes": 20,
       "servings": 4,
@@ -34846,7 +39077,7 @@
         "vegan",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "budget",
         "european"
       ],
@@ -34874,7 +39105,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "tofu (optional)"
+          "item": "tofu, optional"
         },
         {
           "qty": null,
@@ -34897,7 +39128,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2416",
+      "id": "r2523",
       "name": "Sese Plaintains (Cameroonian Plantain Stew)",
       "minutes": 35,
       "servings": 4,
@@ -34946,7 +39177,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "powdered cayenne pepper (optional)"
+          "item": "powdered cayenne pepper, optional"
         },
         {
           "qty": 1.0,
@@ -34979,7 +39210,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2417",
+      "id": "r2524",
       "name": "Sharba Libya (Libyan Soup)",
       "minutes": 90,
       "servings": 4,
@@ -35137,7 +39368,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2419",
+      "id": "r2526",
       "name": "Sharmoula bil Lahm (Libyan Marinated Meat Sharmoula)",
       "minutes": 140,
       "servings": 4,
@@ -35150,7 +39381,7 @@
         "high-protein",
         "medium",
         "splurge",
-        "african"
+        "middle_eastern"
       ],
       "ingredients": [
         {
@@ -35227,7 +39458,103 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2421",
+      "id": "r2527",
+      "name": "Shiro (Ethiopian Spiced Chickpea or Lentil Stew)",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large onion, finely chopped"
+        },
+        {
+          "qty": 3.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "shiro powder (chickpea or lentil flour)"
+        },
+        {
+          "qty": 4.0,
+          "unit": "cup",
+          "item": "vegetable broth or water"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "berbere spice blend"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground cumin"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground turmeric"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt, or to taste"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "fresh parsley or cilantro, chopped, for garnish"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "crusty bread, to serve"
+        }
+      ],
+      "steps": [
+        "Heat the olive oil in a large pot over medium heat.",
+        "Add the chopped onion to the pot and sauté until translucent and slightly browned.",
+        "Add the minced garlic to the pot and sauté for an additional minute until fragrant.",
+        "Sprinkle the berbere spice blend, ground cumin, ground turmeric, salt, and black pepper over the onions and garlic.",
+        "Stir well to coat the ingredients with the spices.",
+        "Add the shiro powder to the pot and stir it into the onion and spice mixture.",
+        "Gradually pour in the vegetable broth or water while continuously stirring to prevent any lumps from forming.",
+        "Bring the mixture to a gentle boil, then reduce the heat to low and let it simmer for about 20–25 minutes, stirring occasionally. The stew will thicken and develop a rich flavor.",
+        "Remove the pot from the heat and let the shiro rest for a few minutes before serving.",
+        "Garnish the shiro with fresh chopped parsley or cilantro.",
+        "Serve hot with injera or bread for dipping."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shiro_(Ethiopian_Spiced_Chickpea_or_Lentil_Stew)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2528",
       "name": "Shiro Wat (Ethiopian Pea Stew)",
       "minutes": 25,
       "servings": 4,
@@ -35276,7 +39603,7 @@
         {
           "qty": 2.0,
           "unit": "",
-          "item": "spoons butter (optional)"
+          "item": "spoons butter, optional"
         }
       ],
       "steps": [
@@ -35294,7 +39621,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2422",
+      "id": "r2530",
       "name": "Shorba bil Lahm (Libyan Meat Soup)",
       "minutes": 60,
       "servings": 4,
@@ -35394,7 +39721,6 @@
         "Add the chopped carrots, potatoes, and tomatoes to the pot, and stir well to combine with the meat and spices.",
         "Pour in the vegetable broth or beef broth, and bring the soup to a boil.",
         "Reduce the heat to low, cover the pot, and let the soup simmer for about 1 hour, or until the meat is tender and the flavors have melded together.",
-        "Taste the soup and adjust the seasoning with salt and pepper if needed.",
         "Serve hot, garnished with fresh parsley or cilantro."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shorba_bil_Lahm_(Libyan_Meat_Soup)",
@@ -35402,7 +39728,79 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2423",
+      "id": "r2531",
+      "name": "Shrimp Curry",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "peeled, deveined jumbo shrimp, heads removed"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "onion, finely diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "minced garlic"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "curry powder"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "chicken broth"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "heaping tbsp red curry paste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "ghee"
+        }
+      ],
+      "steps": [
+        "Heat oil in a large stainless steel sauté pan over medium high heat.",
+        "Add shrimp and sauté just until bright pink.",
+        "Remove and keep warm.",
+        "Melt ghee in same pan.",
+        "Add vegetables and sauté until browned around edges.",
+        "Add remaining ingredients and shrimp and toss to coat.",
+        "Reduce heat to medium low and cook until shrimp are heated through.",
+        "Remove and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Shrimp_Curry",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2532",
       "name": "Shrimp Scampi Angel Hair Pasta with Lemon and Pine Nuts",
       "minutes": 20,
       "servings": 4,
@@ -35461,7 +39859,73 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2424",
+      "id": "r2533",
+      "name": "Simmering Tofu Stir-fry",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
+        "chinese"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "block firm tofu"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "mixture of preferred vegetables (suggested combination: onion, green pepper, tomato)"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "apple"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "soy sauce"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "olive oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "preferred seasonings (suggested seasonings: pepper, hot sauce, salt)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cooked rice, to serve"
+        }
+      ],
+      "steps": [
+        "Slice tofu into manageable slices (no more than ¼ inch thick).",
+        "Slice all vegetables and apple.",
+        "Simmer tofu and vegetable in a light mixture of olive oil and soy sauce on medium high heat.",
+        "Cook until tofu is golden brown and vegetables have thoroughly soaked up juices.",
+        "Serve with a side of rice or couscous and season."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Simmering_Tofu_Stir-fry",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2534",
       "name": "Simple Italian Sausage Spaghetti Dinner",
       "minutes": 60,
       "servings": 4,
@@ -35471,7 +39935,7 @@
         "main-meal",
         "medium",
         "budget",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -35547,7 +40011,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2425",
+      "id": "r2536",
       "name": "Simple Tarragon Quiche",
       "minutes": 75,
       "servings": 6,
@@ -35556,8 +40020,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "french"
       ],
@@ -35615,7 +40078,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2426",
+      "id": "r2537",
       "name": "Sinasir (Nigerian Rice Pancake)",
       "minutes": 40,
       "servings": 3,
@@ -35627,9 +40090,9 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "medium",
+        "hard",
         "budget",
-        "african"
+        "southeast_asian"
       ],
       "ingredients": [
         {
@@ -35665,7 +40128,7 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "baking powder (optional)"
+          "item": "baking powder, optional"
         },
         {
           "qty": 2.0,
@@ -35690,7 +40153,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2427",
+      "id": "r2538",
       "name": "Sincronizada (Fried Ham and Cheese Tortilla Sandwich)",
       "minutes": 10,
       "servings": 4,
@@ -35736,7 +40199,94 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2428",
+      "id": "r2540",
+      "name": "Sindhi Pulao",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "easy",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil"
+        },
+        {
+          "qty": 5.0,
+          "unit": "",
+          "item": "medium onions, finely chopped"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "green chiles, finely chopped (3–5)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "curry leaves"
+        },
+        {
+          "qty": 7.0,
+          "unit": "",
+          "item": "cashews (7–10)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "garam masala"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "pepper"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "red chile powder"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "bay leaf"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "uncooked basmati rice"
+        }
+      ],
+      "steps": [
+        "Heat some oil in a pot, and add the onions.",
+        "Fry until dark brown.",
+        "Add the chiles, curry leaves, cashews, garam masala, pepper, chili powder, bay leaf, and salt.",
+        "Add the rice and enough water to cook the rice.",
+        "Simmer uncovered until all the water is absorbed.",
+        "Serve hot."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sindhi_Pulao",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2541",
       "name": "Sindhi Spiced Moong Dal",
       "minutes": 75,
       "servings": 4,
@@ -35808,7 +40358,131 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2429",
+      "id": "r2542",
+      "name": "Sindhi Vegetable Kofta",
+      "minutes": 60,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "hard",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 20.0,
+          "unit": "ml",
+          "item": "water"
+        },
+        {
+          "qty": 4.0,
+          "unit": "tbsp",
+          "item": "cornstarch (4–5 tbsp)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": 75.0,
+          "unit": "g",
+          "item": "finely-chopped carrot"
+        },
+        {
+          "qty": 150.0,
+          "unit": "g",
+          "item": "finely-chopped cauliflower"
+        },
+        {
+          "qty": 100.0,
+          "unit": "g",
+          "item": "boiled potatoes, mashed"
+        },
+        {
+          "qty": 75.0,
+          "unit": "g",
+          "item": "finely-chopped bell pepper"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "chiles, finely-chopped (3–5)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "ground pepper (1–2 tbsp)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "slice",
+          "item": "bread (2–3 slice)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "oil"
+        },
+        {
+          "qty": 150.0,
+          "unit": "g",
+          "item": "finely-chopped onion"
+        },
+        {
+          "qty": 250.0,
+          "unit": "g",
+          "item": "chopped tomatoes"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "red chile powder (1–2 tbsp)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "coriander powder"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "garam masala (1–2 tbsp)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cooked rice, to serve"
+        }
+      ],
+      "steps": [
+        "Combine the water, a pinch of salt, and cornstarch. It should be thick and not watery.",
+        "Combine the carrot, cauliflower, mashed potatoes, bell pepper, chiles, salt to taste, pepper, and garam masala.",
+        "Wet the bread, squeeze it out, and mix it into the vegetables.",
+        "Shape the vegetable mixture into small balls.",
+        "Dip the balls in the cornstarch mixture to coat well.",
+        "Fry balls in a pan of hot oil until golden brown.",
+        "Remove from the oil and place on paper towels.",
+        "Fry the onions in a pan with a little oil until golden brown.",
+        "Add the tomatoes, and fry until the tomatoes and the oil separate.",
+        "Add a little water, along with salt to taste, chili powder, and coriander powder.",
+        "Bring to a boil.",
+        "Add the fried kofta to the sauce, and cook for a while.",
+        "Remove from the heat, and mix in the garam masala and pepper.",
+        "Serve hot with roti, naan, or rice."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sindhi_Vegetable_Kofta",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2543",
       "name": "Sirene Po Shopski (Bulgarian Cheese and Tomatoes)",
       "minutes": 30,
       "servings": 4,
@@ -35817,7 +40491,6 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "easy",
         "budget",
         "european"
@@ -35876,7 +40549,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2430",
+      "id": "r2544",
       "name": "Skillet Lasagna",
       "minutes": 20,
       "servings": 4,
@@ -35948,7 +40621,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2431",
+      "id": "r2545",
       "name": "Slow Cooker Baby Back Ribs",
       "minutes": 490,
       "servings": 4,
@@ -35958,7 +40631,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "american"
       ],
@@ -36010,7 +40683,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2432",
+      "id": "r2546",
       "name": "Slow-Roasted Strip Steak",
       "minutes": 15,
       "servings": 4,
@@ -36020,7 +40693,6 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
         "hard",
         "moderate",
         "american"
@@ -36078,7 +40750,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2433",
+      "id": "r2547",
       "name": "Smoked Garlic Chicken",
       "minutes": 40,
       "servings": 4,
@@ -36160,7 +40832,279 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2435",
+      "id": "r2548",
+      "name": "Smoked Salmon Breakfast Burrito",
+      "minutes": 30,
+      "servings": 5,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "high-protein",
+        "easy",
+        "splurge",
+        "mexican"
+      ],
+      "ingredients": [
+        {
+          "qty": 5.0,
+          "unit": "",
+          "item": "corn/wheat tortillas"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "canola oil"
+        },
+        {
+          "qty": 6.0,
+          "unit": "",
+          "item": "egg whites"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "egg yolks"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "milk"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "lemon juice"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "smoked salmon cream cheese spread"
+        }
+      ],
+      "steps": [
+        "In a small bowl, whisk together eggs, milk, lemon juice, and pepper.",
+        "In sauté pan over medium heat, add oil to coat the pan, add egg mixture to scramble.",
+        "Toast the tortillas in a cast iron skillet over medium heat.",
+        "Spread cream spread in a circle with 2 inches from the edge of tortilla. Add eggs.",
+        "Wrap."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smoked_Salmon_Breakfast_Burrito",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2549",
+      "name": "Smoked Salmon Chowder",
+      "minutes": 40,
+      "servings": 1,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "grape seed/safflower/canola oil"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "onions, chopped"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "celery stalks, chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "carrots, chopped"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "dried tarragon"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "potatoes, boiled and smashed"
+        },
+        {
+          "qty": 8.0,
+          "unit": "oz",
+          "item": "smoked salmon, crumbled"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "gallon salmon/fish stock"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "gallon milk"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "black pepper"
+        }
+      ],
+      "steps": [
+        "Place stock pot over medium heat, add oil.",
+        "Add carrots, onions, celery, stirring until onions turn clear.",
+        "Add tarragon and salmon stock to deglaze bottom of pan.",
+        "Stir in smashed potatoes, smoked salmon.",
+        "Continue to stir and bring to a simmer.",
+        "Add milk and pepper.",
+        "Serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smoked_Salmon_Chowder",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2551",
+      "name": "Smokehouse Burgers",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "medium",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "ground chuck"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "smoked paprika"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "salt"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "freshly ground black pepper"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "granulated garlic"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "hamburger buns, split in half and toasted"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "canola or olive oil"
+        },
+        {
+          "qty": 4.0,
+          "unit": "slice",
+          "item": "pepper jack cheese"
+        }
+      ],
+      "steps": [
+        "Form meat into 4 equal patties, about ¾ inch thick.",
+        "Make a depression in the center with the thumb and set aside.",
+        "Brush patties with oil. Sprinkle on both sides with seasonings.",
+        "Preheat grill. Add patties and cook, turning often, until desired \"doneness\" is achieved.",
+        "Remove to a plate, top each with a slice of cheese, and cover tightly with aluminum foil.",
+        "Let rest until cheese is melted.",
+        "Brush cut sides of bread with oil.",
+        "Add a patty onto the bottom half of a bun, then top with the upper half.",
+        "Repeat with remaining meat and serve immediately."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smokehouse_Burgers",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2552",
+      "name": "Smoky Tuna Melts",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "high-protein",
+        "easy",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "container hickory smoke-flavored albacore tuna"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "melted butter"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "juice of 1 lemon wedge"
+        },
+        {
+          "qty": 4.0,
+          "unit": "slice",
+          "item": "white bread"
+        },
+        {
+          "qty": 2.0,
+          "unit": "slice",
+          "item": "smoked mozzarella cheese"
+        }
+      ],
+      "steps": [
+        "Combine tuna, melted butter, and lemon juice.",
+        "Spread some of the tuna mixture on each slice of bread. Top with cheese.",
+        "Broil until the cheese is melted."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Smoky_Tuna_Melts",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2555",
       "name": "Soto Ayam (Indonesian Chicken Noodle Soup)",
       "minutes": 45,
       "servings": 6,
@@ -36312,7 +41256,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2436",
+      "id": "r2556",
       "name": "Soup du Pecheur (Fisherman Soup)",
       "minutes": 65,
       "servings": 4,
@@ -36435,7 +41379,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2437",
+      "id": "r2557",
       "name": "Southwest Pasta",
       "minutes": 15,
       "servings": 4,
@@ -36528,7 +41472,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2438",
+      "id": "r2558",
       "name": "Southwestern Black Beans and Rice",
       "minutes": 20,
       "servings": 4,
@@ -36577,7 +41521,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2439",
+      "id": "r2559",
       "name": "Southwestern Scramble",
       "minutes": 15,
       "servings": 4,
@@ -36653,7 +41597,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2440",
+      "id": "r2560",
       "name": "Spaghetti a la Monegasque",
       "minutes": 15,
       "servings": 4,
@@ -36663,7 +41607,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "european"
+        "italian"
       ],
       "ingredients": [
         {
@@ -36729,7 +41673,146 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2442",
+      "id": "r2561",
+      "name": "Spaghetti with Meat Sauce (Naporitan)",
+      "minutes": 30,
+      "servings": 2,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "medium",
+        "budget",
+        "japanese"
+      ],
+      "ingredients": [
+        {
+          "qty": 7.0,
+          "unit": "oz",
+          "item": "spaghetti"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "green bell pepper, thinly sliced"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "small onion, thinly sliced"
+        },
+        {
+          "qty": 0.25,
+          "unit": "lb",
+          "item": "sausage or ham, sliced"
+        },
+        {
+          "qty": 0.3333,
+          "unit": "cup",
+          "item": "ketchup"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "butter"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper, to taste"
+        }
+      ],
+      "steps": [
+        "Put about 8 cups of water in a large pot, and add 2 tbsp salt.",
+        "Bring to a boil on high heat and cook spaghetti according to package directions.",
+        "Meanwhile, heat vegetable oil in a large skillet and stir-fry onion, bell pepper, and sausage on medium heat until softened.",
+        "Season with salt and pepper.",
+        "Add drained spaghetti in the skillet and stir-fry with other ingredients.",
+        "Add ketchup and stir-fry the spaghetti.",
+        "Mix in butter and stop the heat."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spaghetti_with_Meat_Sauce_(Naporitan)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2562",
+      "name": "Spanish Potato Omelette",
+      "minutes": 20,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "budget",
+        "mediterranean"
+      ],
+      "ingredients": [
+        {
+          "qty": 8.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 1.0,
+          "unit": "kg",
+          "item": "potatoes"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion"
+        },
+        {
+          "qty": 500.0,
+          "unit": "ml",
+          "item": "olive oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "pinch",
+          "item": "salt"
+        }
+      ],
+      "steps": [
+        "Peel the potatoes, wash them, and dry them with a cloth.",
+        "Cut them into 1 cm cubes or 2 mm slices.",
+        "Wash and dry them again.",
+        "Add some salt to the taste and mix them.",
+        "Heat the oil; when hot, fry the potatoes, but do not let them get brown.",
+        "Once they're done, drain the oil and store the potatoes.",
+        "Dice or slice the onion; fry it until it is translucent.",
+        "Beat the 8 eggs in a bowl with a small amount of salt until the mix is homogenous.",
+        "Mix in the potatoes and the onion.",
+        "Heat 3 tablespoons of olive oil in an empty pan – you can use the previous pan after removing most of the oil.",
+        "Once the pan is hot, add the egg with the onion and the potatoes.",
+        "After 7–8 minutes, the bottom part should be done.",
+        "Put the dish over the pan and carefully turn it around so that the undone part rests on the dish. This is the most difficult step of the recipe.",
+        "Put the pan on the fire again and slowly slide the mix into the pan to cook the other side.",
+        "After a couple of additional minutes, it should be done and ready to serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spanish_Potato_Omelette",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2563",
       "name": "Spice Rubbed Grilled Chicken Breast",
       "minutes": 15,
       "servings": 4,
@@ -36740,7 +41823,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "easy",
+        "medium",
         "moderate",
         "american"
       ],
@@ -36808,7 +41891,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2443",
+      "id": "r2565",
       "name": "Spicy Apple Glazed Ribs",
       "minutes": 385,
       "servings": 4,
@@ -36818,7 +41901,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "american"
       ],
@@ -36872,7 +41955,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2444",
+      "id": "r2566",
       "name": "Spicy Chickpea Soup",
       "minutes": 20,
       "servings": 4,
@@ -36885,7 +41968,7 @@
         "high-protein",
         "easy",
         "budget",
-        "mediterranean"
+        "middle_eastern"
       ],
       "ingredients": [
         {
@@ -36939,7 +42022,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2445",
+      "id": "r2567",
       "name": "Spicy Chilli Chicken",
       "minutes": 75,
       "servings": 4,
@@ -37059,7 +42142,70 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2447",
+      "id": "r2568",
+      "name": "Spicy Crab and Arugula Salad",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "splurge",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "freshly-squeezed lemon juice"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "extra-virgin olive oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "cayenne pepper"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "flat-leaf parsley"
+        },
+        {
+          "qty": 10.0,
+          "unit": "sprig",
+          "item": "fresh dill"
+        },
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "pasteurized lump crab meat"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "arugula"
+        }
+      ],
+      "steps": [
+        "Purée lemon, oil, cayenne, parsley, and dill in a blender or food processor until smooth.",
+        "Add crab and arugula and toss to coat.",
+        "Chill, if desired, before serving."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Spicy_Crab_and_Arugula_Salad",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2570",
       "name": "Spicy Mexican Omelet",
       "minutes": 15,
       "servings": 4,
@@ -37069,7 +42215,6 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "high-protein",
         "medium",
         "budget",
         "mexican"
@@ -37078,7 +42223,7 @@
         {
           "qty": 3.0,
           "unit": "",
-          "item": "eggs, uncracked"
+          "item": "eggs"
         },
         {
           "qty": 2.0,
@@ -37128,7 +42273,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2448",
+      "id": "r2571",
       "name": "Spicy Tomato Soup",
       "minutes": 60,
       "servings": 4,
@@ -37138,7 +42283,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -37190,7 +42335,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2449",
+      "id": "r2572",
       "name": "Spinach Calzones",
       "minutes": 40,
       "servings": 8,
@@ -37199,7 +42344,6 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "italian"
@@ -37264,8 +42408,8 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2450",
-      "name": "Pascualina (Spinach and Egg Torta)",
+      "id": "r2573",
+      "name": "Spinach Pie (Pascualina)",
       "minutes": 50,
       "servings": 6,
       "meal": "dinner",
@@ -37274,9 +42418,9 @@
         "main-meal",
         "vegetarian",
         "high-protein",
-        "medium",
+        "hard",
         "budget",
-        "american"
+        "latin_american"
       ],
       "ingredients": [
         {
@@ -37358,7 +42502,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2452",
+      "id": "r2575",
       "name": "Spinach and Ricotta Gnocchi",
       "minutes": 255,
       "servings": 4,
@@ -37367,7 +42511,6 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "italian"
@@ -37434,7 +42577,84 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2453",
+      "id": "r2578",
+      "name": "Steak and Pepper Stir-Fry",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "chinese"
+      ],
+      "ingredients": [
+        {
+          "qty": 6.0,
+          "unit": "oz",
+          "item": "beef rib-eye steak, sliced thinly across the grain on a bias"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "freshly-ground black pepper"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "soy sauce"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "peanut oil"
+        },
+        {
+          "qty": 0.5,
+          "unit": "",
+          "item": "red and green bell pepper, julienned"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "minced ginger"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "minced garlic"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "thai bird chili, finely minced"
+        }
+      ],
+      "steps": [
+        "Season beef liberally with salt and black pepper. Set aside.",
+        "Preheat a large stainless steel or cast iron skillet, or a wok, over medium high heat.",
+        "Add peanut oil and seasoned beef and cook, tossing often, until meat is browned and slightly charred on both sides.",
+        "Remove and keep warm.",
+        "Toss remaining ingredients together and place into the wok.",
+        "Cook, tossing often, until vegetables are slightly browned around edges.",
+        "Add steak and heat through.",
+        "Serve warm with soy sauce on the side."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Steak_and_Pepper_Stir-Fry",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2579",
       "name": "Steak and Peppers",
       "minutes": 20,
       "servings": 4,
@@ -37507,7 +42727,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2454",
+      "id": "r2580",
       "name": "Steamed Pork with Mustard Greens",
       "minutes": 60,
       "servings": 4,
@@ -37594,7 +42814,526 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2457",
+      "id": "r2581",
+      "name": "Stewed Oysters",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "easy",
+        "splurge",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 24.0,
+          "unit": "",
+          "item": "raw, whole oysters"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "flour"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "cream"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, mace, and pepper, to taste"
+        }
+      ],
+      "steps": [
+        "Shuck the oysters and save the liquid in the shell.",
+        "Beat the butter smooth with the flour.",
+        "Put the oysters in a pan over medium heat.",
+        "When they become hot, stir in the cream, butter, and flour.",
+        "Season to taste with salt, mace, and pepper.",
+        "Serve as soon as they are taken off the fire."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stewed_Oysters_II",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2583",
+      "name": "Stir-Fried Shrimp with Broccoli",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "splurge",
+        "chinese"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "vegetable or peanut oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "minced garlic"
+        },
+        {
+          "qty": 200.0,
+          "unit": "g",
+          "item": "shrimp, peeled"
+        },
+        {
+          "qty": 300.0,
+          "unit": "g",
+          "item": "broccoli, cut into florets and rinsed"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "oyster sauce"
+        }
+      ],
+      "steps": [
+        "Heat a pan, add the oil and garlic, and fry until golden.",
+        "Add the shrimp and broccoli.",
+        "Season with salt and oyster sauce, and add a little water. Stir together.",
+        "Put on a plate and serve."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stir-Fried_Shrimp_with_Broccoli",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2585",
+      "name": "Stovies",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "british"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "kg",
+          "item": "potatoes"
+        },
+        {
+          "qty": 50.0,
+          "unit": "g",
+          "item": "beef drippings or butter"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "medium onions, roughly chopped"
+        },
+        {
+          "qty": 125.0,
+          "unit": "g",
+          "item": "cooked beef or lamb (leftovers from a roast dinner) (125–250 g; 4–8 oz)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "finely chopped parsley, chives, or spring onions (2–3 tbsp)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "seasoning salt, optional"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "freshly ground black pepper, optional"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "allspice or grated nutmeg, optional"
+        }
+      ],
+      "steps": [
+        "Peel potatoes if they are \"main crop\", but leave the skins on new potatoes.",
+        "Slice about 5 mm (¼-inch) thick. Or, slice roughly in different thickness so that the thin make a mush when cooked, while the others stay whole.",
+        "Heat fat in a large heavy-base pot (one with a tight-fitting lid) and add the onions.",
+        "Cook until lightly brown. Add the potatoes and stir well, coating all sides with the fat.",
+        "Put the lid on and cook over a very low heat, shaking the pot once or twice to prevent sticking, until the potatoes are cooked.",
+        "Add the meat, mix through, and turn up the heat to brown a little.",
+        "Serve with brown sauce, parsley, and optional seasonings."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Stovies",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2586",
+      "name": "Sudanese Ful Medames",
+      "minutes": 490,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "high-protein",
+        "medium",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "cup",
+          "item": "dried fava beans"
+        },
+        {
+          "qty": 4.0,
+          "unit": "cup",
+          "item": "water (for soaking)"
+        },
+        {
+          "qty": 4.0,
+          "unit": "cup",
+          "item": "water (for cooking)"
+        },
+        {
+          "qty": 4.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "extra-virgin olive oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "juice of 1 lemon"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground cumin"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground coriander"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "optional toppings: chopped parsley, diced tomatoes, chopped onions, hard-boiled eggs, feta cheese"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "crusty bread, to serve"
+        }
+      ],
+      "steps": [
+        "Rinse the dried fava beans under cold water and then place them in a large pot.",
+        "Add 4 cups of water to the pot and let the beans soak overnight, or for at least 8 hours. This helps soften the beans and reduce the cooking time.",
+        "Drain the soaked fava beans and rinse them under cold water.",
+        "Return the beans to the pot and add 4 cups of fresh water.",
+        "Bring the water to a boil over medium-high heat.",
+        "Once boiling, reduce the heat to low and let the beans simmer for about 1–1½ hours, or until they become tender.",
+        "Stir occasionally and skim off any foam that forms on the surface.",
+        "Once the beans are tender, drain them using a colander or strainer and transfer them to a mixing bowl.",
+        "Add minced garlic, extra-virgin olive oil, lemon juice, ground cumin, ground coriander, and salt to the bowl.",
+        "Mix everything together, ensuring that the beans are coated evenly with the seasoning.",
+        "For a smoother consistency, you can use a fork or a potato masher to lightly mash some of the beans.",
+        "Transfer the seasoned ful medames to a serving dish."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sudanese_Ful_Medames",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2587",
+      "name": "Superkanja (Gambian Okra Stew)",
+      "minutes": 90,
+      "servings": 1,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "lb",
+          "item": "lean beef, cut into chunks"
+        },
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "smoked catfish or any fish of your choice"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "medium onions, chopped"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper"
+        },
+        {
+          "qty": 2.0,
+          "unit": "lb",
+          "item": "okra, diced into small cubes"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "palm oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cooked rice, to serve"
+        }
+      ],
+      "steps": [
+        "Bring a pot of water to a boil and add the meat and fish.",
+        "Let them boil for 15 minutes, then remove the fish from the pot.",
+        "To the pot, add salt, onions, pepper, and diced okra.",
+        "Mix all the ingredients well.",
+        "Cook the mixture over medium heat for 15 minutes, then incorporate the palm oil.",
+        "Reduce the heat to low and let it simmer for 20 minutes, stirring occasionally.",
+        "Afterward, return the fish to the pot and continue simmering for 6–10 minutes on low heat.",
+        "Serve the superkanja stew with white rice or fufu."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Superkanja_(Gambian_Okra_Stew)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2588",
+      "name": "Suqaar (Somali Spiced Meat Stir-fry)",
+      "minutes": 60,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "beef, thinly sliced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, finely chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "tomato, diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "bell pepper, thinly sliced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground cumin"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground coriander"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "ground turmeric"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground cayenne pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "fresh cilantro or parsley, chopped, for garnish"
+        }
+      ],
+      "steps": [
+        "In a large skillet or frying pan, heat the vegetable oil over medium-high heat.",
+        "Add the finely chopped onion to the hot oil and sauté until it becomes soft and translucent.",
+        "Stir in the minced garlic and cook for another minute until fragrant.",
+        "Add the thinly sliced beef to the pan and cook until it browns and develops a nice sear on both sides.",
+        "Toss in the diced tomato and thinly sliced bell pepper.",
+        "Continue to stir-fry until the vegetables soften slightly.",
+        "Sprinkle the ground cumin, coriander, turmeric, and cayenne pepper over the meat and vegetables.",
+        "Mix well to evenly coat everything with the spices.",
+        "Lower the heat to medium-low, cover the skillet, and let the suqaar simmer for a few minutes to allow the flavors to meld and the meat to become tender.",
+        "Once the meat is fully cooked and tender, remove the skillet from the heat.",
+        "Garnish with freshly chopped cilantro or parsley before serving."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Suqaar_(Somali_Spiced_Meat_Stir-fry)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2589",
+      "name": "Svelekake (Norwegian Yogurt Pancakes)",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "high-protein",
+        "medium",
+        "budget",
+        "european"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "white granulated sugar"
+        },
+        {
+          "qty": 2.5,
+          "unit": "cup",
+          "item": "flour"
+        },
+        {
+          "qty": 1.0,
+          "unit": "l",
+          "item": "kefir or yogurt"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "baking powder"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "baking soda"
+        },
+        {
+          "qty": 0.125,
+          "unit": "tsp",
+          "item": "horn salt (ammonium bicarbonate)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "vanilla"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "butter, to serve"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cheese, to serve"
+        }
+      ],
+      "steps": [
+        "Mix all ingredients gently (do not use mixer).",
+        "Let batter stand ½ hour.",
+        "Fry on hot griddle.",
+        "Serve with butter, brunost (brown/goat cheese), or Nugatti Crisp (caramel/hazelnut dessert spread)."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Svelekake_(Norwegian_Yogurt_Pancakes)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2590",
       "name": "Swedish Cabbage Soup (Kålsoppa)",
       "minutes": 45,
       "servings": 4,
@@ -37617,7 +43356,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "yellow onion (optional), chopped"
+          "item": "yellow onion, optional, chopped"
         },
         {
           "qty": 1.0,
@@ -37666,7 +43405,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2458",
+      "id": "r2591",
       "name": "Sweet Italian Sausage Skillet",
       "minutes": 45,
       "servings": 4,
@@ -37735,7 +43474,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2459",
+      "id": "r2592",
       "name": "Sweet and Sour Grilled Tuna",
       "minutes": 30,
       "servings": 4,
@@ -37799,7 +43538,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2460",
+      "id": "r2593",
       "name": "Sweet and Spicy Shrimp",
       "minutes": 15,
       "servings": 4,
@@ -37890,7 +43629,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2461",
+      "id": "r2594",
       "name": "Sylheti Beef Curry",
       "minutes": 120,
       "servings": 4,
@@ -37901,7 +43640,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "indian"
       ],
@@ -38017,7 +43756,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2462",
+      "id": "r2595",
       "name": "Sylheti Doner Kebab",
       "minutes": 120,
       "servings": 4,
@@ -38026,7 +43765,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "indian"
       ],
@@ -38121,73 +43860,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2463",
-      "name": "Sylheti Tangy Curry",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "vegetarian",
-        "vegan",
-        "gluten-free",
-        "dairy-free",
-        "easy",
-        "budget",
-        "indian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.0,
-          "unit": "kg",
-          "item": "organic tomatoes, chopped"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "vegetable oil (e.g. canola, sunflower, or olive oil)"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "organic garlic, minced"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "onion paste"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt, to taste"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "turmeric"
-        },
-        {
-          "qty": 2.0,
-          "unit": "cup",
-          "item": "boiling water"
-        }
-      ],
-      "steps": [
-        "Heat vegetable oil in a large pan.",
-        "Add the garlic, and cook until fragrant.",
-        "Stir in the onion paste and cook until it turns golden brown.",
-        "Add the tomatoes and cook until they become soft and the oil begins to separate.",
-        "Mix in turmeric and salt according to the taste.",
-        "Pour in the boiling water, and let the curry simmer until it reaches the desired consistency."
-      ],
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sylheti_Tangy_Curry",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceLicense": "CC BY-SA 4.0"
-    },
-    {
-      "id": "r2466",
+      "id": "r2599",
       "name": "Tadka Dhal (Spiced Lentil Curry)",
       "minutes": 55,
       "servings": 2,
@@ -38199,7 +43872,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "indian"
       ],
@@ -38257,7 +43930,7 @@
         {
           "qty": 0.25,
           "unit": "tsp",
-          "item": "asafoetida (optional)"
+          "item": "asafoetida, optional"
         },
         {
           "qty": 1.0,
@@ -38309,7 +43982,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2467",
+      "id": "r2600",
       "name": "Tajine bil Samak (Libyan Fish Tajine)",
       "minutes": 20,
       "servings": 4,
@@ -38432,7 +44105,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2468",
+      "id": "r2601",
       "name": "Tangy Fried Shrimp",
       "minutes": 15,
       "servings": 4,
@@ -38495,7 +44168,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2469",
+      "id": "r2603",
       "name": "Tchakpolo (Togolese Meat and Vegetable Stew)",
       "minutes": 325,
       "servings": 4,
@@ -38506,7 +44179,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -38620,7 +44293,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2470",
+      "id": "r2604",
       "name": "Tchari (Jollof Rice)",
       "minutes": 40,
       "servings": 4,
@@ -38630,7 +44303,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -38728,7 +44401,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "butter (optional)"
+          "item": "butter, optional"
         }
       ],
       "steps": [
@@ -38751,7 +44424,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2471",
+      "id": "r2605",
       "name": "Telur Dadar",
       "minutes": 10,
       "servings": 3,
@@ -38799,12 +44472,12 @@
         {
           "qty": 1.0,
           "unit": "stalk",
-          "item": "celery (optional), chopped"
+          "item": "celery, optional, chopped"
         },
         {
           "qty": 1.0,
           "unit": "",
-          "item": "chiles (optional), chopped (1–2)"
+          "item": "chiles, optional, chopped (1–2)"
         },
         {
           "qty": 0.5,
@@ -38814,7 +44487,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "sliced tofu (optional)"
+          "item": "sliced tofu, optional"
         },
         {
           "qty": null,
@@ -38824,12 +44497,12 @@
         {
           "qty": null,
           "unit": "",
-          "item": "soy sauce for serving (optional)"
+          "item": "soy sauce for serving, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "fried shallots (optional)"
+          "item": "fried shallots, optional"
         }
       ],
       "steps": [
@@ -38847,8 +44520,8 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2472",
-      "name": "Tempura Baked Halibut",
+      "id": "r2607",
+      "name": "Tempura Baked Halibut with Cilantro Aioli",
       "minutes": 30,
       "servings": 5,
       "meal": "dinner",
@@ -38928,7 +44601,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2473",
+      "id": "r2608",
       "name": "Tex-Mex Sliders",
       "minutes": 15,
       "servings": 4,
@@ -39006,7 +44679,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2474",
+      "id": "r2610",
       "name": "Thai Grilled Chicken",
       "minutes": 25,
       "servings": 4,
@@ -39069,7 +44742,121 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2475",
+      "id": "r2612",
+      "name": "Thai Shrimp",
+      "minutes": 40,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "thai"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "soy sauce"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "thai chili paste (2–3 tbsp)"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "rice wine vinegar"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "sugar"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "cornstarch"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "sesame oil"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "chicken broth"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "peanut oil"
+        },
+        {
+          "qty": 24.0,
+          "unit": "",
+          "item": "jumbo shrimp, peeled and deveined"
+        },
+        {
+          "qty": 0.25,
+          "unit": "",
+          "item": "red bell pepper, julienned"
+        },
+        {
+          "qty": 0.25,
+          "unit": "",
+          "item": "green bell pepper, julienned"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "minced garlic"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper, to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "toasted sesame seeds"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "hot cooked rice or noodles, optional"
+        }
+      ],
+      "steps": [
+        "Combine soy sauce, chili paste, vinegar, sugar, cornstarch, sesame oil and broth. Set aside.",
+        "Preheat a large sauté pan or wok over high heat.",
+        "Add peanut oil and shrimp and stir-fry until shrimp is pink.",
+        "Remove and keep warm.",
+        "Add bell pepper and garlic and stir-fry until bell pepper has taken on slight browning.",
+        "Remove and keep warm.",
+        "Add liquid mixture to pan and bring to a boil.",
+        "Cook until liquid has reduced to ¼ cup.",
+        "Add shrimp and vegetables back to pan and toss. Heat through.",
+        "Garnish with sesame seeds and serve immediately over rice or noodles."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Thai_Shrimp",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2613",
       "name": "Thin Waffles",
       "minutes": 120,
       "servings": 10,
@@ -39078,7 +44865,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -39121,7 +44907,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2476",
+      "id": "r2614",
       "name": "Three Ginger Soup",
       "minutes": 50,
       "servings": 4,
@@ -39206,15 +44992,14 @@
         "Add the orange and tomato juices, 1 tsp grated ginger root, the ginger powder, parsley, thyme, and bay leaf.",
         "Bring to a boil, then simmer for 40 minutes.",
         "Remove from the heat, and stir in the remaining 1 tsp grated ginger root along with the syruped stem ginger.",
-        "Purée the mixture until smooth using a full-size or immersion blender.",
-        "Season with salt, taste, and adjust the seasoning as needed."
+        "Purée the mixture until smooth using a full-size or immersion blender."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Three_Ginger_Soup",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2477",
+      "id": "r2615",
       "name": "Tibs (Ethiopian Sauteed Meat and Vegetables)",
       "minutes": 15,
       "servings": 4,
@@ -39224,7 +45009,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "african"
       ],
@@ -39320,7 +45105,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2479",
+      "id": "r2618",
       "name": "Tirana Fërgesë with Peppers",
       "minutes": 45,
       "servings": 4,
@@ -39329,6 +45114,7 @@
         "dinner",
         "main-meal",
         "vegetarian",
+        "high-protein",
         "medium",
         "budget",
         "european"
@@ -39396,7 +45182,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2480",
+      "id": "r2619",
       "name": "Tirana Fërgesë with Veal",
       "minutes": 40,
       "servings": 4,
@@ -39404,7 +45190,8 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "high-protein",
+        "easy",
         "splurge",
         "european"
       ],
@@ -39468,8 +45255,8 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2481",
-      "name": "Tofu Tamale Casserole",
+      "id": "r2620",
+      "name": "Tofu Tamale Pie",
       "minutes": 30,
       "servings": 1,
       "meal": "dinner",
@@ -39480,7 +45267,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -39564,7 +45351,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2482",
+      "id": "r2621",
       "name": "Tom Kha Kai",
       "minutes": 15,
       "servings": 5,
@@ -39664,7 +45451,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2483",
+      "id": "r2622",
       "name": "Tom Yum Gai",
       "minutes": 30,
       "servings": 4,
@@ -39747,7 +45534,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2484",
+      "id": "r2623",
       "name": "Tomato Basil Sausage Pasta",
       "minutes": 15,
       "servings": 4,
@@ -39814,15 +45601,89 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2485",
-      "name": "Tomato Pasta with Bacon, Onions, and Cheese",
-      "minutes": 60,
+      "id": "r2624",
+      "name": "Tomato Curry",
+      "minutes": 35,
       "servings": 4,
       "meal": "dinner",
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "vegetarian",
+        "gluten-free",
+        "easy",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "apple, grated"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "tomatoes, sliced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "oz",
+          "item": "butter"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "curry powder"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "milk"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "black pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "boiled rice"
+        }
+      ],
+      "steps": [
+        "Fry apple and onion in the butter until blended.",
+        "Mix curry powder in a little milk, and stir in.",
+        "Season with salt and pepper.",
+        "Fry tomatoes in a separate pan.",
+        "Cover them with the curry mixture, and serve within a wall of boiled rice."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tomato_Curry",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2625",
+      "name": "Tomato Pasta with Bacon, Onions, and Cheese",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "easy",
         "moderate",
         "american"
       ],
@@ -39854,8 +45715,8 @@
         },
         {
           "qty": 0.5,
-          "unit": "",
-          "item": "teaspoon–1 tablespoon crushed red pepper"
+          "unit": "tsp",
+          "item": "crushed red pepper flakes, up to 1 tbsp"
         },
         {
           "qty": 12.0,
@@ -39874,15 +45735,77 @@
         "Add the onion and sauté until soft.",
         "Add crushed red pepper and cook 2–3 minutes more.",
         "Add the tomato sauce and heat through.",
-        "Remove from heat, add Parmesan cheese, and serve immediately over spaghetti.",
-        "You may garnish with additional Parmesan cheese."
+        "Remove from heat, add Parmesan cheese, and serve immediately over spaghetti."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tomato_Pasta_with_Bacon,_Onions,_and_Cheese",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2487",
+      "id": "r2626",
+      "name": "Tomato Paste and Ham Sandwiches (Pan Tomaca)",
+      "minutes": 55,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "dairy-free",
+        "medium",
+        "moderate",
+        "mediterranean"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pa de pagès (Catalan bread) or 1 loaf French bread, sliced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "ripe red tomatoes"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "sea salt"
+        },
+        {
+          "qty": 120.0,
+          "unit": "g",
+          "item": "sliced cured ham"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "garlic, to serve"
+        }
+      ],
+      "steps": [
+        "Toast the slices of pa de pagès. If desired, rub garlic on each slice of bread.",
+        "Cut the tomatoes in half, and rub the tomato flesh over the surface of the bread until most of the pulp is gone.",
+        "Sprinkle with olive oil and a bit of salt, then place a slice of cured ham on top.",
+        "Either top each slice with a second slice of bread to make a sandwich, or leave as an open-faced slice.",
+        "Peel the tomatoes, removing the seeds if desired.",
+        "Use an immersion blender to blend the tomatoes, 1 tbsp olive oil, and salt to taste in an appropriate vessel with an immersion blender.",
+        "If desired, toast the bread slices very lightly.",
+        "Spread the tomato mixture on one slice of bread, drizzle with olive oil, and top with a slice of cured ham.",
+        "Repeat with remaining bread slices.",
+        "Either top each slice with a second slice of bread to make a sandwich, or leave as an open-faced slice."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tomato_Paste_and_Ham_Sandwiches_(Pan_Tomaca)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2628",
       "name": "Tripes à la Mode de Caen (Norman Stewed Tripe)",
       "minutes": 25,
       "servings": 12,
@@ -39892,7 +45815,6 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
         "easy",
         "moderate",
         "french"
@@ -39981,7 +45903,224 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2488",
+      "id": "r2629",
+      "name": "Tuna and Herb Salad",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "high-protein",
+        "easy",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.0,
+          "unit": "can",
+          "item": "water-pack albacore tuna, drained"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "freshly-ground black pepper to taste"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "dijon mustard"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "freshly-squeezed lemon juice"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "grated lemon zest"
+        },
+        {
+          "qty": 6.0,
+          "unit": "tbsp",
+          "item": "extra-virgin olive oil"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "fresh basil"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "fresh rosemary, finely chopped"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "fresh oregano"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "flat-leaf parsley"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "fresh marjoram"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "hot sauce, to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "worcestershire sauce"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "crumbled feta cheese"
+        }
+      ],
+      "steps": [
+        "Combine juice, zest, mustard, hot sauce, and Worcestershire sauce.",
+        "Slowly stream in olive oil while whisking continuously until oil has been integrated.",
+        "Season to taste with salt and freshly ground black pepper.",
+        "Combine remaining ingredients except for cheese.",
+        "Add dressing and toss to coat.",
+        "Sprinkle with feta before serving."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tuna_and_Herb_Salad",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2630",
+      "name": "Tuscan Bean Soup",
+      "minutes": 15,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "high-protein",
+        "hard",
+        "budget",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 3.0,
+          "unit": "cup",
+          "item": "cranberry or pinto beans"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "spelt or wheat berries (available at gourmet-food shops)"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "extra-virgin olive oil, plus more for drizzling"
+        },
+        {
+          "qty": 0.5,
+          "unit": "lb",
+          "item": "sweet Italian sausage, casings removed"
+        },
+        {
+          "qty": 1.0,
+          "unit": "lb",
+          "item": "kale, preferably Tuscan, coarse stems removed, cut into thick ribbons"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "medium-large onion, diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large carrot, peeled and diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large rib celery, trimmed and diced"
+        },
+        {
+          "qty": 3.0,
+          "unit": "clove",
+          "item": "garlic, thinly sliced"
+        },
+        {
+          "qty": 5.0,
+          "unit": "cup",
+          "item": "homemade chicken stock, or canned low-sodium stock, plus more if needed"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "peeled, seeded, and diced tomatoes, or drained canned diced tomatoes"
+        },
+        {
+          "qty": 1.0,
+          "unit": "sprig",
+          "item": "fresh rosemary"
+        },
+        {
+          "qty": 1.0,
+          "unit": "sprig",
+          "item": "fresh sage"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "sea salt and freshly ground pepper"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "freshly grated Parmigiano-Reggiano cheese"
+        }
+      ],
+      "steps": [
+        "Soak beans and spelt overnight in separate bowls of cold water.",
+        "Drain and set aside.",
+        "Heat olive oil in a large pot over medium-high heat.",
+        "Add sausage.",
+        "Cook stirring occasionally, until meat begins to separate and brown (3–5 minutes).",
+        "Stir in kale, onion, carrot, celery, and garlic.",
+        "Cook until softened (about 10 minutes).",
+        "Add beans, spelt, chicken stock, and tomatoes.",
+        "Bring to boil.",
+        "Stir in rosemary and sage.",
+        "Reduce heat.",
+        "Simmer mixture for 60–70 minutes, until beans are tender; if soup is too thick, add chicken stock.",
+        "Season to taste with salt and pepper.",
+        "Ladle soup into bowls.",
+        "Drizzle with olive oil, and sprinkle on cheese.",
+        "Serve immediately."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Tuscan_Bean_Soup",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2631",
       "name": "Tuscan Soup (Meatless)",
       "minutes": 60,
       "servings": 4,
@@ -39991,7 +46130,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "italian"
       ],
@@ -40059,7 +46198,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2489",
+      "id": "r2632",
       "name": "Ugba Stew",
       "minutes": 285,
       "servings": 4,
@@ -40070,7 +46209,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -40149,7 +46288,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2491",
+      "id": "r2634",
       "name": "Upeseru (Indian Lentils with Greens)",
       "minutes": 15,
       "servings": 4,
@@ -40270,7 +46409,147 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2494",
+      "id": "r2635",
+      "name": "Veal with Lima Beans",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "veal shoulder, cut into 1-inch cubes"
+        },
+        {
+          "qty": 1.0,
+          "unit": "oz",
+          "item": "butter"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large onion, grated"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt and pepper, to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "can",
+          "item": "diced tomatoes"
+        },
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "large lima beans"
+        }
+      ],
+      "steps": [
+        "Wash the meat thoroughly with cold water, drain, and place in a pot together with butter and onions.",
+        "Stir-fry over medium-high heat for a few minutes.",
+        "Add enough water to cover the meat.",
+        "Add salt, pepper, and 2–3 tablespoons of the tomatoes.",
+        "Cover the pot and let the meat boil.",
+        "In the meantime, cut the ends off the lima beans and clean them well (you also cut them in half if you desire).",
+        "Add the beans to the meat after it has been boiling for several minutes.",
+        "Also add water until everything in the pot is covered.",
+        "When the beans are done boiling, add the rest of the tomatoes.",
+        "Let the stew boil for a few more minutes so that the liquid can thicken."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Veal_with_Lima_Beans",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2638",
+      "name": "Vegetarian Rassolnik",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "easy",
+        "budget",
+        "european"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "l",
+          "item": "water"
+        },
+        {
+          "qty": 5.0,
+          "unit": "",
+          "item": "potatoes, sliced"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "pickled cucumbers, sliced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "carrot, finely chopped"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "large onion, diced"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "cooked rice"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "bay leaf"
+        },
+        {
+          "qty": 3.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        }
+      ],
+      "steps": [
+        "Bring water to boil. Add the sliced potatoes, cucumbers, carrots, and onions.",
+        "When the vegetables are cooked, add the cooked rice, bay leaf, and oil.",
+        "Bring to a boil.",
+        "Season with salt to taste.",
+        "Serve garnished with chopped herbs."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Vegetarian_Rassolnik",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2639",
       "name": "Veggie Pizza",
       "minutes": 60,
       "servings": 8,
@@ -40280,7 +46559,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "medium",
+        "hard",
         "budget",
         "american"
       ],
@@ -40370,7 +46649,67 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2497",
+      "id": "r2641",
+      "name": "Venetian Soup",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "medium",
+        "budget",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "oz",
+          "item": "butter"
+        },
+        {
+          "qty": 2.0,
+          "unit": "oz",
+          "item": "flour"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "stock, warm"
+        },
+        {
+          "qty": 1.0,
+          "unit": "oz",
+          "item": "grated Parmesan cheese"
+        },
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "egg yolks"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "clear broth"
+        }
+      ],
+      "steps": [
+        "Melt the butter in a saucepan.",
+        "Whisk in the flour, and cook to make a white roux.",
+        "Gradually mix in the warm stock, then the grated cheese to form a paste.",
+        "Remove from the heat, and mix in the egg yolks.",
+        "Shape the mixture into little quenelles.",
+        "Boil the quenelles in a little broth, then drain them.",
+        "Serve the quenelles in additional broth."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Venetian_Soup",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2643",
       "name": "Vitumbua (Coconut Rice Pancakes)",
       "minutes": 295,
       "servings": 4,
@@ -40380,8 +46719,7 @@
         "main-meal",
         "vegetarian",
         "dairy-free",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -40471,7 +46809,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2498",
+      "id": "r2644",
       "name": "Waakye (Ghanian Rice and Beans)",
       "minutes": 50,
       "servings": 3,
@@ -40537,7 +46875,114 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2501",
+      "id": "r2647",
+      "name": "Xató (Catalan Endives and Fish)",
+      "minutes": 45,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "mediterranean"
+      ],
+      "ingredients": [
+        {
+          "qty": 100.0,
+          "unit": "g",
+          "item": "toasted almonds"
+        },
+        {
+          "qty": 60.0,
+          "unit": "g",
+          "item": "toasted hazelnuts"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "cured anchovies, salt removed"
+        },
+        {
+          "qty": 2.0,
+          "unit": "clove",
+          "item": "garlic"
+        },
+        {
+          "qty": 4.0,
+          "unit": "piece",
+          "item": "scalded nyores"
+        },
+        {
+          "qty": 0.5,
+          "unit": "piece",
+          "item": "chile pepper, optional"
+        },
+        {
+          "qty": 2.0,
+          "unit": "slice",
+          "item": "fried or toasted bread (2–3 slice)"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "vinegar"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "olive Oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": 2.0,
+          "unit": "piece",
+          "item": "curly endives"
+        },
+        {
+          "qty": 12.0,
+          "unit": "piece",
+          "item": "anchovies, salt removed"
+        },
+        {
+          "qty": 100.0,
+          "unit": "g",
+          "item": "salty tuna, salt removed"
+        },
+        {
+          "qty": 100.0,
+          "unit": "g",
+          "item": "salty ripped cod, salt removed"
+        },
+        {
+          "qty": 100.0,
+          "unit": "g",
+          "item": "arbequine olives"
+        }
+      ],
+      "steps": [
+        "In a mortar, crush the almonds, hazelnuts, anchovies, garlic cloves, nyores pulp, chili, salt, bread (you can soak them in vinegar or add the vinegar separately), vinegar, and salt.",
+        "Mix in the olive oil.",
+        "Wash and soak the curly endives in water.",
+        "Take the salt off the anchovies, the salty tuna, and the cod—rip the last two out—and mix them with the curly endive in a bowl.",
+        "Add the olives.",
+        "Add the sauce.",
+        "Mix it up well, so all the ingredients are coated with sauce.",
+        "Serve, trying to build up some sort of curly endive castle shape."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Xat%C3%B3_(Catalan_Endives_and_Fish)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2648",
       "name": "Yataklete Kilkil (Ethiopian Vegetable Stew)",
       "minutes": 30,
       "servings": 4,
@@ -40547,8 +46992,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -40659,7 +47103,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2504",
+      "id": "r2652",
       "name": "Yemiser Selatta (Ethiopian Lentil Salad)",
       "minutes": 55,
       "servings": 4,
@@ -40672,7 +47116,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -40757,9 +47201,7 @@
         "In a mixing bowl, combine the cooked lentils, diced tomato, chopped red onion, diced cucumber, chopped parsley, and chopped mint.",
         "In a separate small bowl, whisk together the lemon juice, olive oil, cumin, coriander, salt, and pepper to make the dressing.",
         "Pour the dressing over the lentil mixture and toss gently to combine, ensuring that the lentils and vegetables are evenly coated.",
-        "Taste and adjust the seasoning with salt and pepper if needed.",
         "Refrigerate the salad for at least 30 minutes to allow the flavors to meld together.",
-        "Before serving, give the salad a gentle stir and adjust the seasoning if desired.",
         "Serve chilled as a side dish or a light meal."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Yemiser_Selatta_(Ethiopian_Lentil_Salad)",
@@ -40767,7 +47209,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2505",
+      "id": "r2653",
       "name": "Yetakelt Alicha (Ethiopian Vegetable Stew)",
       "minutes": 30,
       "servings": 4,
@@ -40779,8 +47221,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -40891,7 +47332,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2506",
+      "id": "r2654",
       "name": "Yetakelt Wot (Ethiopian Spiced Vegetable Stew)",
       "minutes": 30,
       "servings": 4,
@@ -40903,8 +47344,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -41025,7 +47465,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2507",
+      "id": "r2655",
       "name": "Yetsom Shiro (Ethiopian Vegan Chickpea Stew)",
       "minutes": 30,
       "servings": 4,
@@ -41038,7 +47478,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -41119,7 +47559,6 @@
         "Add the toasted chickpea flour to the saucepan and stir to combine it with the spice mixture.",
         "Gradually add the vegetable broth or water to the saucepan, stirring continuously to prevent lumps from forming.",
         "Reduce the heat to low and simmer the stew for about 20–25 minutes, stirring occasionally, until the chickpea flour is fully cooked and the stew has thickened to the desired consistency.",
-        "Taste and adjust the seasoning with salt or additional spices if desired.",
         "Remove from heat and let the stew rest for a few minutes to allow the flavors to meld together.",
         "Garnish with freshly chopped cilantro or parsley.",
         "Serve hot as a main course, accompanied by injera or rice."
@@ -41129,7 +47568,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2508",
+      "id": "r2656",
       "name": "Yeung Chow Fried Rice",
       "minutes": 20,
       "servings": 7,
@@ -41203,7 +47642,7 @@
         {
           "qty": 2.0,
           "unit": "tbsp",
-          "item": "jalapeno, diced (optional)"
+          "item": "jalapeno, diced, optional"
         }
       ],
       "steps": [
@@ -41217,7 +47656,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2510",
+      "id": "r2658",
       "name": "Zambian Beans and Rice",
       "minutes": 310,
       "servings": 4,
@@ -41230,7 +47669,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -41300,7 +47739,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2511",
+      "id": "r2659",
       "name": "Zambian Beef Stew",
       "minutes": 310,
       "servings": 4,
@@ -41311,7 +47750,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -41401,7 +47840,6 @@
         "Add the diced carrot, potato, tomato, green bell pepper, and red bell pepper to the pot.",
         "Stir well to combine with the other ingredients.",
         "Season the stew with paprika, cayenne pepper, ground cumin, ground coriander, and salt to taste.",
-        "Adjust the seasoning according to the preference.",
         "Let the stew simmer for about 1–1.5 hours or until the beef is tender and fully cooked.",
         "Stir occasionally during cooking to prevent sticking and to ensure even cooking of the beef and vegetables.",
         "Remove the pot from the heat and let the stew rest for a few minutes before serving."
@@ -41411,7 +47849,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2512",
+      "id": "r2660",
       "name": "Zambian Fish Stew",
       "minutes": 25,
       "servings": 4,
@@ -41422,7 +47860,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -41509,7 +47947,6 @@
         "Season the stew with ground cayenne pepper, ground paprika, ground cumin, ground coriander, and salt.",
         "Stir well to distribute the spices.",
         "Cover the pot and let the stew simmer for about 15–20 minutes, or until the fish is cooked through and flakes easily with a fork.",
-        "Taste the stew and adjust the seasoning if needed, adding more salt or spices according to the preference.",
         "Remove the pot from the heat and let rest for a few minutes before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Zambian_Fish_Stew",
@@ -41517,7 +47954,114 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2513",
+      "id": "r2662",
+      "name": "Zambian Vegetable Stir-Fry",
+      "minutes": 50,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "medium",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "onion, thinly sliced"
+        },
+        {
+          "qty": 2.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "carrot, julienned"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "red bell pepper, thinly sliced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "green bell pepper, thinly sliced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "yellow bell pepper, thinly sliced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "shredded cabbage"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "chibwabwa (pumpkin leaves), chopped (or other indigenous greens)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "masau (African eggplant) slices, optional"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "ground black pepper, to taste"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "soy sauce"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "sesame oil (optional, for added flavor)"
+        }
+      ],
+      "steps": [
+        "Heat the vegetable oil in a wok or large skillet over medium-high heat.",
+        "Add the thinly sliced onion and minced garlic to the hot oil.",
+        "Stir-fry until the onions are translucent and fragrant.",
+        "Toss in the julienned carrot, thinly sliced red bell pepper, green bell pepper, and yellow bell pepper.",
+        "Stir-fry for a few minutes until the vegetables are slightly tender but still retain their crispness.",
+        "Add the shredded cabbage, chibwabwa (or other indigenous greens), and masau (if using) to the wok.",
+        "Continue stir-frying for another few minutes until the vegetables are cooked to the desired level of doneness.",
+        "Season the stir-fry with salt and ground black pepper to taste.",
+        "Be mindful not to over-salt, as the soy sauce will also contribute to the dish's saltiness.",
+        "Drizzle the soy sauce over the stir-fry and toss the vegetables to coat them evenly. If using sesame oil, add it now for an extra layer of flavor.",
+        "Stir-fry for another minute or so to allow the flavors to meld.",
+        "Remove the wok from the heat and serve the Zambian vegetable stir-fry hot as a delightful and nutritious side dish."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Zambian_Vegetable_Stir-Fry",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
+    },
+    {
+      "id": "r2663",
       "name": "Zereshk Palau (Iranian Rice with Barberries)",
       "minutes": 45,
       "servings": 4,
@@ -41596,7 +48140,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2514",
+      "id": "r2664",
       "name": "Zilzil Tibs (Spicy Ethiopian Beef Strips)",
       "minutes": 75,
       "servings": 4,
@@ -41710,7 +48254,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2515",
+      "id": "r2665",
       "name": "Zitumbuwa (Malawian Banana Pancakes)",
       "minutes": 15,
       "servings": 4,
@@ -41719,7 +48263,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "african"
@@ -41792,7 +48335,7 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r2516",
+      "id": "r2666",
       "name": "Zucchini Pasta Bake",
       "minutes": 60,
       "servings": 4,
@@ -41801,7 +48344,6 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "italian"
@@ -41861,11 +48403,88 @@
         "Boil a small amount of water and add the stock, then stir it into the mixture.",
         "Stir in the grated zucchini, then the drained pasta.",
         "Grease a baking or casserole dish, and spread the ingredients from the bowl evenly in it.",
-        "Bake at 200°C (400°F (205°C)) for about 30 minutes, or until the pasta bake is firm all the way through."
+        "Bake at 200°C (400°F) for about 30 minutes, or until the pasta bake is firm all the way through."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Zucchini_Pasta_Bake",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r2667",
+      "name": "Çılbır (Turkish Eggs with Yogurt)",
+      "minutes": 45,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "middle_eastern"
+      ],
+      "ingredients": [
+        {
+          "qty": 4.0,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tbsp",
+          "item": "vinegar"
+        },
+        {
+          "qty": 1.0,
+          "unit": "l",
+          "item": "water"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "hot paprika"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "yogurt"
+        },
+        {
+          "qty": 1.0,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "pepper, to taste"
+        }
+      ],
+      "steps": [
+        "In a small mixing bowl, combine the yogurt, garlic and salt.",
+        "Add the vinegar and some salt to boiling water, and poach the eggs.",
+        "Remove the eggs with a slotted spoon and place an egg in each dish.",
+        "Cover the eggs with plenty of yogurt.",
+        "Melt the butter in a small skillet.",
+        "Stir in the paprika, and pour the hot butter over the eggs.",
+        "Serve immediately."
+      ],
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:%C3%87%C4%B1lb%C4%B1r_(Turkish_Eggs_with_Yogurt)",
+      "sourceName": "Wikibooks Cookbook",
+      "sourceLicense": "CC BY-SA 4.0",
+      "timeEstimated": true
     },
     {
       "id": "r4001",
@@ -42108,7 +48727,7 @@
         {
           "qty": 0.0625,
           "unit": "tsp",
-          "item": "salt (dash) (optional)"
+          "item": "salt (dash), optional"
         },
         {
           "qty": 2.75,
@@ -42161,7 +48780,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -42401,6 +49020,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
+        "high-protein",
         "hard",
         "budget",
         "american"
@@ -42617,9 +49237,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
-        "american"
+        "french"
       ],
       "ingredients": [
         {
@@ -42695,6 +49315,87 @@
       "sourceLicense": "Public domain (US federal work)"
     },
     {
+      "id": "r4014",
+      "name": "Chicken Spanish Rice",
+      "minutes": 40,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "onion, chopped"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "green pepper, chopped"
+        },
+        {
+          "qty": 0.3333,
+          "unit": "cup",
+          "item": "celery, sliced"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "rice, dry"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "vegetable oil (or cooking oil of choice)"
+        },
+        {
+          "qty": 1.0,
+          "unit": "can",
+          "item": "tomatoes, low-sodium"
+        },
+        {
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "canned chicken"
+        },
+        {
+          "qty": 0.75,
+          "unit": "cup",
+          "item": "water"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "chili powder"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "black pepper (optional, to taste)"
+        }
+      ],
+      "steps": [
+        "Cook onion, green pepper, celery, and rice in vegetable oil at medium heat in a large saucepan until soft, about 5 minutes.",
+        "Drain tomatoes and save the liquid.",
+        "Chop tomatoes into small pieces.",
+        "Add tomatoes, liquid, chicken, water, chili powder, and pepper to rice mixture.",
+        "Bring to a boil and stir.",
+        "Cover and cook on low heat.",
+        "Cook until rice is tender (about 25 minutes)."
+      ],
+      "sourceUrl": "https://www.myplate.gov/recipes/chicken-spanish-rice",
+      "sourceName": "USDA MyPlate Kitchen (Healthy Eating in Indian Country: Exercise)",
+      "sourceLicense": "Public domain (US federal work)"
+    },
+    {
       "id": "r4015",
       "name": "Chicken Stew",
       "minutes": 50,
@@ -42706,7 +49407,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -42832,7 +49533,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "ginger, finely chopped (optional)"
+          "item": "ginger, finely chopped, optional"
         },
         {
           "qty": 1.0,
@@ -42994,12 +49695,12 @@
         {
           "qty": 0.25,
           "unit": "cup",
-          "item": "fresh parsley or cilantro, chopped (optional)"
+          "item": "fresh parsley or cilantro, chopped, optional"
         },
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "cayenne or jalapeño chilies, diced (optional)"
+          "item": "cayenne or jalapeño chilies, diced, optional"
         },
         {
           "qty": 3.0,
@@ -43139,7 +49840,6 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
         "american"
@@ -43318,7 +50018,7 @@
         "vegetarian",
         "gluten-free",
         "high-protein",
-        "hard",
+        "easy",
         "budget",
         "american"
       ],
@@ -43407,7 +50107,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -43651,7 +50351,7 @@
         "high-protein",
         "medium",
         "budget",
-        "american"
+        "french"
       ],
       "ingredients": [
         {
@@ -43763,7 +50463,7 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "parsley, chopped (optional)"
+          "item": "parsley, chopped, optional"
         }
       ],
       "steps": [
@@ -43792,7 +50492,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -43847,6 +50547,116 @@
       "sourceLicense": "Public domain (US federal work)"
     },
     {
+      "id": "r4030",
+      "name": "Greek Salad with Chicken",
+      "minutes": 70,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": null,
+          "unit": "",
+          "item": "for the dressing"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "greek yogurt, fat-free"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "lemon juice"
+        },
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "clove",
+          "item": "garlic"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "oregano"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "for the salad"
+        },
+        {
+          "qty": 1.0,
+          "unit": "head",
+          "item": "romaine lettuce"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "cherry tomatoes, cut in half"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "cucumber, diced"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "red onion, sliced"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "black olives, cut in half"
+        },
+        {
+          "qty": 1.0,
+          "unit": "cup",
+          "item": "cooked chicken breast, cubed"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "feta cheese, crumbled"
+        }
+      ],
+      "steps": [
+        "To make the dressing, add Greek yogurt, lemon juice, olive oil, garlic, oregano, salt, and pepper to a small bowl.",
+        "Mix well to combine.",
+        "Cover dressing and refrigerate for at least 1 hour.",
+        "Wash lettuce and tear into bite-sized pieces.",
+        "Place in large salad bowl and add tomatoes, cucumbers, red onion, olives, and chicken.",
+        "Sprinkle with feta cheese.",
+        "Top with yogurt dressing."
+      ],
+      "sourceUrl": "https://www.myplate.gov/recipes/greek-salad-chicken",
+      "sourceName": "USDA MyPlate Kitchen (USDA Center for Nutrition Policy and Promotion)",
+      "sourceLicense": "Public domain (US federal work)"
+    },
+    {
       "id": "r4031",
       "name": "Green Onion Omelet",
       "minutes": 25,
@@ -43856,7 +50666,6 @@
         "breakfast",
         "main-meal",
         "gluten-free",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -44068,7 +50877,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "parsley, chopped (optional)"
+          "item": "parsley, chopped, optional"
         },
         {
           "qty": 0.25,
@@ -44126,7 +50935,7 @@
         "high-protein",
         "hard",
         "budget",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -44259,7 +51068,8 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "hard",
+        "high-protein",
+        "easy",
         "budget",
         "american"
       ],
@@ -44322,7 +51132,7 @@
         "high-protein",
         "hard",
         "budget",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -44471,7 +51281,7 @@
         {
           "qty": 0.5,
           "unit": "tsp",
-          "item": "chopped red pepper flakes (optional)"
+          "item": "chopped red pepper flakes, optional"
         },
         {
           "qty": 0.25,
@@ -44508,7 +51318,7 @@
         "vegetarian",
         "easy",
         "budget",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -44572,7 +51382,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "american"
+        "british"
       ],
       "ingredients": [
         {
@@ -44683,7 +51493,7 @@
         {
           "qty": 0.5,
           "unit": "tsp",
-          "item": "cinnamon (optional)"
+          "item": "cinnamon, optional"
         },
         {
           "qty": 0.25,
@@ -44823,7 +51633,7 @@
         "high-protein",
         "medium",
         "budget",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -44854,7 +51664,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "garlic powder or dry herbs (optional)"
+          "item": "garlic powder or dry herbs, optional"
         },
         {
           "qty": null,
@@ -45054,7 +51864,7 @@
         "high-protein",
         "easy",
         "moderate",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -45135,6 +51945,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
+        "high-protein",
         "medium",
         "moderate",
         "american"
@@ -45225,9 +52036,9 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -45258,7 +52069,7 @@
         {
           "qty": 0.6667,
           "unit": "tbsp",
-          "item": "taco seasoning or chili powder (optional)"
+          "item": "taco seasoning or chili powder, optional"
         },
         {
           "qty": 1.0,
@@ -45293,7 +52104,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "parsley or cilantro, chopped (optional)"
+          "item": "parsley or cilantro, chopped, optional"
         }
       ],
       "steps": [
@@ -45327,7 +52138,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "budget",
         "american"
       ],
@@ -45472,6 +52283,85 @@
       "sourceLicense": "Public domain (US federal work)"
     },
     {
+      "id": "r4054",
+      "name": "Split Pea Soup",
+      "minutes": 140,
+      "servings": 5,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 2.0,
+          "unit": "tsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1.0,
+          "unit": "",
+          "item": "spanish onion, chopped"
+        },
+        {
+          "qty": 3.0,
+          "unit": "",
+          "item": "carrots, chopped"
+        },
+        {
+          "qty": 2.0,
+          "unit": "",
+          "item": "celery stalks, chopped"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "dried thyme"
+        },
+        {
+          "qty": 2.25,
+          "unit": "cup",
+          "item": "split peas, sorted and rinsed"
+        },
+        {
+          "qty": 4.0,
+          "unit": "cup",
+          "item": "low-sodium chicken or vegetable broth"
+        },
+        {
+          "qty": 6.0,
+          "unit": "cup",
+          "item": "water"
+        },
+        {
+          "qty": 0.125,
+          "unit": "cup",
+          "item": "lemon juice"
+        }
+      ],
+      "steps": [
+        "Put soup pot on the stove over medium heat.",
+        "Add oil when the pot is hot.",
+        "Add onion, carrots, celery, and thyme and cook 10 to 15 minutes, until tender.",
+        "Add split peas, stock, and 4 cups water.",
+        "Raise the heat to high and bring to a boil.",
+        "Lower the heat to low and cook about 2 hours, partially covered, until the peas have fallen apart.",
+        "Check the soup during cooking - if more water is needed, add up to 2 cups.",
+        "Skim off any foam that forms.",
+        "Serve right away or refrigerate up to three days.",
+        "Stir in the lemon juice just before serving."
+      ],
+      "sourceUrl": "https://www.myplate.gov/recipes/split-pea-soup-0",
+      "sourceName": "USDA MyPlate Kitchen (USDA Center for Nutrition Policy and Promotion)",
+      "sourceLicense": "Public domain (US federal work)"
+    },
+    {
       "id": "r4055",
       "name": "Stir Fried Beef",
       "minutes": 15,
@@ -45557,8 +52447,7 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -45952,7 +52841,7 @@
         "vegan",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -46037,7 +52926,9 @@
         "lunch",
         "main-meal",
         "vegetarian",
+        "vegan",
         "gluten-free",
+        "dairy-free",
         "medium",
         "budget",
         "american"
@@ -46111,7 +53002,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "hard",
         "budget",
         "american"
       ],
@@ -46166,6 +53057,70 @@
       ],
       "sourceUrl": "https://www.myplate.gov/recipes/turkey-meatloaf",
       "sourceName": "USDA MyPlate Kitchen (Delicious Heart-Healthy Latino Recipes/ Platillos Latinos Sa)",
+      "sourceLicense": "Public domain (US federal work)"
+    },
+    {
+      "id": "r4063",
+      "name": "Two Bean Chili",
+      "minutes": 60,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 0.5,
+          "unit": "lb",
+          "item": "ground beef"
+        },
+        {
+          "qty": 0.5,
+          "unit": "can",
+          "item": "low-sodium kidney beans, drained"
+        },
+        {
+          "qty": 0.5,
+          "unit": "can",
+          "item": "low-sodium vegetarian beans"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "onion, diced"
+        },
+        {
+          "qty": 1.0,
+          "unit": "tsp",
+          "item": "chili powder"
+        },
+        {
+          "qty": 2.5,
+          "unit": "cup",
+          "item": "low-sodium tomato juice"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "pepper"
+        }
+      ],
+      "steps": [
+        "In a medium-sized pot, brown ground beef over medium to high heat for 8 to 10 minutes. Ground meat is done at 160°F (71°C) inside.",
+        "Drain fat.",
+        "Add kidney beans, vegetarian beans, onions, chili powder, tomato juice, and pepper.",
+        "Cook over low heat for about 40 minutes.",
+        "Serve hot."
+      ],
+      "sourceUrl": "https://www.myplate.gov/recipes/two-bean-chili",
+      "sourceName": "USDA MyPlate Kitchen (A Harvest of Recipes with USDA Foods)",
       "sourceLicense": "Public domain (US federal work)"
     },
     {
@@ -46411,7 +53366,7 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "cayenne or jalapeño chilies, seeds removed and finely chopped, (optional)"
+          "item": "cayenne or jalapeño chilies, seeds removed and finely chopped,, optional"
         },
         {
           "qty": null,
@@ -46442,934 +53397,118 @@
       "sourceLicense": "Public domain (US federal work)"
     },
     {
-      "id": "r3001",
-      "name": "Peameal Bacon and Eggs",
-      "minutes": 20,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "peameal bacon"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "whole wheat bread"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Heat a large skillet over medium heat.",
-        "Cook the peameal bacon until golden and hot through, 3–4 minutes per side.",
-        "Transfer to a plate and keep warm.",
-        "Melt the butter in the same skillet.",
-        "Crack in the eggs and cook until the whites are set and the yolks are as firm as desired, 3–4 minutes.",
-        "Season the eggs with salt and black pepper.",
-        "Toast the bread.",
-        "Serve the eggs with the peameal bacon and toast."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3002",
-      "name": "Maple Apple Oatmeal",
-      "minutes": 15,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "easy",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "large-flake rolled oats"
-        },
-        {
-          "qty": 4,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "apples, cored and diced"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "ground cinnamon"
-        },
-        {
-          "qty": 0.25,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "maple syrup"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "chopped walnuts"
-        }
-      ],
-      "steps": [
-        "Combine the milk, salt and cinnamon in a medium saucepan.",
-        "Bring to a gentle simmer over medium heat.",
-        "Stir in the oats and apples.",
-        "Cook, stirring often, until the oats are tender and creamy, 5–7 minutes.",
-        "Stir in the maple syrup.",
-        "Divide among bowls and top with the walnuts."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3003",
-      "name": "Blueberry Buttermilk Pancakes",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "sugar"
-        },
-        {
-          "qty": 2,
-          "unit": "tsp",
-          "item": "baking powder"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "baking soda"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "buttermilk"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "melted butter"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "blueberries"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "maple syrup, to serve"
-        }
-      ],
-      "steps": [
-        "Whisk the flour, sugar, baking powder, baking soda and salt in a large bowl.",
-        "Whisk the buttermilk, eggs and melted butter in a second bowl.",
-        "Pour the wet mixture into the dry mixture and stir until just combined; a few lumps are fine.",
-        "Heat a griddle or large skillet over medium heat and brush with a little of the oil.",
-        "Pour ¼ cup batter per pancake onto the griddle and scatter a few blueberries over each.",
-        "Cook until bubbles form and the edges look dry, 2–3 minutes.",
-        "Flip and cook until golden, 1–2 minutes more.",
-        "Repeat with the remaining batter, adding oil as needed.",
-        "Serve with maple syrup."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3004",
-      "name": "Breakfast Poutine",
+      "id": "r5001",
+      "name": "Calgary Ginger Beef",
       "minutes": 35,
       "servings": 4,
-      "meal": "breakfast",
+      "meal": "dinner",
       "tags": [
-        "breakfast",
+        "dinner",
         "main-meal",
-        "gluten-free",
+        "dairy-free",
         "high-protein",
         "medium",
-        "moderate",
+        "splurge",
         "canadian"
       ],
       "ingredients": [
         {
-          "qty": 1.5,
+          "qty": 1,
           "unit": "lb",
-          "item": "yellow potatoes, cut into 1-inch cubes"
+          "item": "flank steak, cut into thin strips"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "cornstarch"
         },
         {
           "qty": 2,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 6,
-          "unit": "slice",
-          "item": "bacon, chopped"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "cheese curds"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "beef gravy, hot"
-        },
-        {
-          "qty": 4,
           "unit": "",
-          "item": "large eggs"
+          "item": "eggs, beaten"
         },
         {
           "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
+          "unit": "cup",
+          "item": "vegetable oil, for frying"
         },
         {
           "qty": 2,
+          "unit": "tbsp",
+          "item": "fresh ginger, minced"
+        },
+        {
+          "qty": 3,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "carrot, cut into matchsticks"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "red bell pepper, cut into strips"
+        },
+        {
+          "qty": 3,
           "unit": "",
           "item": "green onions, sliced"
         },
         {
+          "qty": 0.33,
+          "unit": "cup",
+          "item": "sugar"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "rice vinegar"
+        },
+        {
+          "qty": 3,
+          "unit": "tbsp",
+          "item": "soy sauce"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "sweet chili sauce"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "red pepper flakes"
+        },
+        {
           "qty": null,
           "unit": "",
-          "item": "salt and black pepper, to taste"
+          "item": "cooked rice, to serve"
         }
       ],
       "steps": [
-        "Preheat the oven to 425°F (220°C).",
-        "Toss the potatoes with the oil, salt and pepper on a baking sheet.",
-        "Roast until crisp and golden, 25–30 minutes, turning once.",
-        "Cook the bacon in a skillet over medium heat until crisp, 6–8 minutes.",
+        "Whisk the sugar, rice vinegar, soy sauce, sweet chili sauce, and red pepper flakes in a small bowl.",
+        "Set the sauce aside.",
+        "Toss the flank steak strips with the beaten eggs, then with the cornstarch until every strip is coated.",
+        "Heat the oil in a wok or deep skillet over medium-high heat to 350°F (175°C).",
+        "Fry the beef in 2 or 3 batches until crisp and deep golden, 3–4 minutes per batch.",
         "Drain on paper towels.",
-        "Melt the butter in the skillet and fry the eggs until the whites are set, 3–4 minutes.",
-        "Divide the potatoes among plates and top with the cheese curds and bacon.",
-        "Pour the hot gravy over the top so the curds soften.",
-        "Top each plate with a fried egg and the green onions."
+        "Pour off all but 1 tbsp of oil.",
+        "Stir-fry the carrot and bell pepper for 2 minutes.",
+        "Add the ginger and garlic and stir-fry until fragrant, 30 seconds.",
+        "Pour in the sauce and boil until glossy and slightly thick, 1–2 minutes.",
+        "Add the beef and green onions and toss to coat.",
+        "Serve right away over rice."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3005",
-      "name": "Ham and Cheddar Breakfast Strata",
-      "minutes": 70,
+      "id": "r5002",
+      "name": "Halifax Donair",
+      "minutes": 75,
       "servings": 6,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 6,
-          "unit": "cup",
-          "item": "day-old bread cubes"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "diced cooked ham"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "shredded old cheddar"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 0.25,
-          "unit": "tsp",
-          "item": "black pepper"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "butter"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 350°F (175°C).",
-        "Butter a 9x13-inch baking dish.",
-        "Spread half the bread cubes in the dish.",
-        "Scatter half the ham and half the cheddar over the bread.",
-        "Repeat with the remaining bread, ham and cheddar.",
-        "Whisk the eggs, milk, mustard, salt and pepper in a bowl.",
-        "Pour the egg mixture evenly over the bread and press down gently.",
-        "Let stand 15 minutes (or refrigerate overnight).",
-        "Bake until puffed and set in the centre, 45–50 minutes, to an internal temperature of 160°F (71°C).",
-        "Rest 5 minutes, then cut into squares and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3006",
-      "name": "Sausage and Pepper Breakfast Hash",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "breakfast sausage, casings removed"
-        },
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "potatoes, cut into ½-inch cubes"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "red bell pepper, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Heat 1 tbsp oil in a large skillet over medium-high heat.",
-        "Cook the sausage, breaking it up, until browned and no longer pink, 6–8 minutes.",
-        "Transfer to a bowl.",
-        "Add the remaining oil and the potatoes to the skillet.",
-        "Cover and cook, stirring occasionally, until tender, 10–12 minutes.",
-        "Add the bell pepper and onion and cook uncovered until the potatoes are crisp, 5 minutes.",
-        "Return the sausage to the skillet and season with salt and pepper.",
-        "Make 4 wells in the hash and crack an egg into each.",
-        "Cover and cook over medium-low heat until the whites are set, 4–5 minutes.",
-        "Serve straight from the skillet."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3007",
-      "name": "Cheddar Chive Scrambled Eggs on Toast",
-      "minutes": 10,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "high-protein",
-        "easy",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "milk"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "shredded old cheddar"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chopped chives"
-        },
-        {
-          "qty": 2,
-          "unit": "slice",
-          "item": "sourdough bread"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Whisk the eggs, milk, salt and pepper in a bowl.",
-        "Toast the bread.",
-        "Melt the butter in a non-stick skillet over medium-low heat.",
-        "Pour in the eggs and stir slowly with a spatula until soft curds form, 2–3 minutes.",
-        "Fold in the cheddar and chives just before the eggs set.",
-        "Spoon the eggs over the toast and serve right away."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3008",
-      "name": "Breakfast Quesadillas",
-      "minutes": 20,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "high-protein",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 6,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large flour tortillas"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "shredded Monterey Jack cheese"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "black beans, rinsed"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "salsa"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Whisk the eggs with salt and pepper.",
-        "Melt half the butter in a large skillet over medium-low heat and scramble the eggs until just set, 2–3 minutes.",
-        "Transfer to a plate.",
-        "Wipe out the skillet.",
-        "Lay a tortilla flat and cover half with cheese, eggs and black beans. Fold it over.",
-        "Repeat with the remaining tortillas.",
-        "Melt the remaining butter in the skillet over medium heat.",
-        "Cook the quesadillas until golden and the cheese melts, 2–3 minutes per side.",
-        "Cut into wedges and serve with the salsa."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3009",
-      "name": "Baked French Toast Casserole",
-      "minutes": 60,
-      "servings": 6,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "high-protein",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "loaf French bread, cut into 1-inch cubes"
-        },
-        {
-          "qty": 6,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "brown sugar"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "vanilla extract"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "ground cinnamon"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "maple syrup, to serve"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 350°F (175°C).",
-        "Butter a 9x13-inch baking dish.",
-        "Spread the bread cubes in the dish.",
-        "Whisk the eggs, milk, brown sugar, vanilla and cinnamon in a bowl.",
-        "Pour the mixture over the bread and press down so every piece soaks.",
-        "Let stand 15 minutes.",
-        "Bake until puffed and golden and a knife in the centre comes out clean, 40–45 minutes.",
-        "Serve warm with maple syrup."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3010",
-      "name": "Bacon and Egg Breakfast Sandwich",
-      "minutes": 15,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "bacon"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "english muffins, split"
-        },
-        {
-          "qty": 2,
-          "unit": "slice",
-          "item": "cheddar cheese"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "butter"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Cook the bacon in a skillet over medium heat until crisp, 6–8 minutes.",
-        "Drain on paper towels.",
-        "Toast the English muffins.",
-        "Melt the butter in the skillet and fry the eggs, breaking the yolks, until set, 3 minutes per side.",
-        "Season with salt and pepper.",
-        "Lay a slice of cheddar on each egg for the last 30 seconds.",
-        "Stack each egg and 2 slices of bacon on a muffin bottom and close with the top."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3011",
-      "name": "Spinach and Feta Mini Frittatas",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "greek"
-      ],
-      "ingredients": [
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "baby spinach, chopped"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "crumbled feta"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "diced red bell pepper"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 350°F (175°C).",
-        "Brush a 12-cup muffin pan with the oil.",
-        "Whisk the eggs, milk, salt and pepper in a large bowl.",
-        "Stir in the spinach, feta and bell pepper.",
-        "Divide the mixture among the cups, filling each about three-quarters full.",
-        "Bake until puffed and set, 18–20 minutes.",
-        "Cool 5 minutes, then loosen with a knife and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3012",
-      "name": "Corned Beef Hash and Eggs",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 12,
-          "unit": "oz",
-          "item": "cooked corned beef, diced"
-        },
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "cooked potatoes, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chopped parsley"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Melt the butter in a large cast-iron skillet over medium heat.",
-        "Cook the onion until soft, 4–5 minutes.",
-        "Add the potatoes and corned beef and press into an even layer.",
-        "Cook without stirring until a brown crust forms, 6–8 minutes.",
-        "Turn the hash in sections and brown the other side, 5 minutes.",
-        "Season with salt and pepper.",
-        "Make 4 wells and crack an egg into each.",
-        "Cover and cook until the whites are set, 4–5 minutes.",
-        "Sprinkle with parsley and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3013",
-      "name": "Western Sandwich",
-      "minutes": 15,
-      "servings": 2,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "diced cooked ham"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "diced green bell pepper"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "diced onion"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "white bread"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Whisk the eggs with the ham, bell pepper, onion, salt and pepper.",
-        "Melt the butter in a skillet over medium heat.",
-        "Pour in the egg mixture and spread it into a square about the size of 2 slices of bread.",
-        "Cook until the bottom is set, 2–3 minutes.",
-        "Flip and cook 1–2 minutes more.",
-        "Toast the bread.",
-        "Cut the omelette in half and sandwich each half between 2 slices of toast."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3015",
-      "name": "Chicken Caesar Wraps",
-      "minutes": 20,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "boneless chicken breasts"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "head romaine lettuce, chopped"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "caesar dressing"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "grated Parmesan"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large flour tortillas"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Season the chicken with salt and pepper.",
-        "Heat the oil in a skillet over medium-high heat.",
-        "Cook the chicken until golden and cooked to 165°F (74°C), 5–6 minutes per side.",
-        "Rest the chicken 5 minutes, then slice thinly.",
-        "Toss the romaine with the Caesar dressing and Parmesan.",
-        "Divide the salad and chicken among the tortillas.",
-        "Fold in the sides and roll up tightly.",
-        "Cut in half to serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3016",
-      "name": "Halifax Donair Wraps",
-      "minutes": 40,
-      "servings": 4,
       "meal": "lunch",
       "tags": [
         "lunch",
@@ -47401,6 +53540,11 @@
           "item": "onion powder"
         },
         {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "paprika"
+        },
+        {
           "qty": 0.5,
           "unit": "tsp",
           "item": "cayenne pepper"
@@ -47412,57 +53556,420 @@
         },
         {
           "qty": 0.5,
-          "unit": "cup",
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 1,
+          "unit": "can",
           "item": "sweetened condensed milk"
         },
         {
-          "qty": 2,
-          "unit": "tbsp",
+          "qty": 0.25,
+          "unit": "cup",
           "item": "white vinegar"
         },
         {
-          "qty": 0.25,
+          "qty": 0.5,
           "unit": "tsp",
           "item": "garlic powder, for the sauce"
         },
         {
-          "qty": 4,
+          "qty": 6,
           "unit": "",
           "item": "pita breads"
         },
         {
-          "qty": 1,
+          "qty": 2,
           "unit": "",
-          "item": "tomato, diced"
+          "item": "tomatoes, diced"
         },
         {
-          "qty": 0.5,
+          "qty": 1,
           "unit": "",
-          "item": "onion, diced"
+          "item": "small onion, diced"
         }
       ],
       "steps": [
         "Preheat the oven to 350°F (175°C).",
-        "Knead the ground beef with the oregano, garlic powder, onion powder, cayenne and salt for 3 minutes, until very smooth and sticky.",
-        "Shape into a tight loaf on a foil-lined baking sheet.",
-        "Bake until cooked to 160°F (71°C), 30–35 minutes.",
-        "Rest 5 minutes, then slice very thinly.",
-        "Whisk the condensed milk and garlic powder for the sauce in a bowl, then slowly whisk in the vinegar until thickened.",
-        "Warm the pitas.",
-        "Top each pita with beef, tomato and onion.",
-        "Drizzle with the sauce and roll up."
+        "Mix the ground beef, oregano, garlic powder, onion powder, paprika, cayenne, salt, and pepper with the hands for 3–4 minutes, until the meat turns smooth and sticky.",
+        "Press the mixture into a tight loaf on a foil-lined baking sheet.",
+        "Bake until the centre reaches 160°F (71°C), about 1 hour.",
+        "Rest 10 minutes, then slice very thinly.",
+        "Meanwhile, whisk the condensed milk with the garlic powder for the sauce.",
+        "Slowly whisk in the vinegar until the sauce thickens. Chill until serving.",
+        "Sear the meat slices in a hot dry skillet over medium-high heat until the edges crisp, 1–2 minutes per side.",
+        "Warm the pitas in the same skillet, 30 seconds per side.",
+        "Fill each pita with meat, tomatoes, and onion.",
+        "Drizzle with the sweet garlic sauce and roll up."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3017",
-      "name": "Maritime Lobster Rolls",
-      "minutes": 15,
+      "id": "r5003",
+      "name": "Newfoundland Fish Cakes",
+      "minutes": 45,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "medium",
+        "budget",
+        "canadian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1,
+          "unit": "lb",
+          "item": "salt cod or fresh cod fillets"
+        },
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "russet potatoes, peeled and quartered"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "onion, finely chopped"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "egg, beaten"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "dried savory"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "all-purpose flour"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt, to taste"
+        }
+      ],
+      "steps": [
+        "If using salt cod, soak it in cold water in the fridge for 24 hours, changing the water 3 times.",
+        "Boil the potatoes in salted water until tender, 15 minutes. Drain and mash.",
+        "Simmer the cod in fresh water until it flakes easily, 8–10 minutes.",
+        "Drain and flake, removing any bones.",
+        "Melt 1 tbsp of the butter in a skillet over medium heat.",
+        "Cook the onion until soft and golden, 6–8 minutes.",
+        "Combine the potatoes, cod, onion, egg, savory, and pepper.",
+        "Taste and add salt if using fresh cod.",
+        "Shape into 8 patties about 1 inch thick and dust both sides with flour.",
+        "Heat the oil and remaining butter in the skillet over medium heat.",
+        "Fry the cakes until golden and crisp, 4–5 minutes per side.",
+        "Serve hot."
+      ],
+      "sourceName": "Pantry Week original"
+    },
+    {
+      "id": "r5004",
+      "name": "Quebec Meatball Stew (Ragoût de Boulettes)",
+      "minutes": 90,
+      "servings": 6,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "medium",
+        "moderate",
+        "canadian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1,
+          "unit": "lb",
+          "item": "ground pork"
+        },
+        {
+          "qty": 0.5,
+          "unit": "lb",
+          "item": "lean ground beef"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "onion, finely chopped"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "ground cinnamon"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "ground cloves"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "ground nutmeg"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "all-purpose flour"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 4,
+          "unit": "cup",
+          "item": "beef broth"
+        },
+        {
+          "qty": 1,
+          "unit": "lb",
+          "item": "small potatoes, halved"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "fresh parsley, chopped, to serve"
+        }
+      ],
+      "steps": [
+        "Mix the pork, beef, onion, cinnamon, cloves, nutmeg, salt, and pepper.",
+        "Shape into 1½-inch balls.",
+        "Toast the flour in a dry Dutch oven over medium heat, stirring constantly, until it is a deep tan colour, 8–10 minutes.",
+        "Transfer to a bowl.",
+        "Melt the butter in the Dutch oven over medium-high heat.",
+        "Brown the meatballs in batches, 5 minutes per batch. Set aside.",
+        "Whisk 1 cup of the broth into the toasted flour until smooth.",
+        "Pour the remaining broth into the pot, scraping up the browned bits.",
+        "Whisk in the flour mixture and bring to a simmer.",
+        "Add the meatballs and potatoes.",
+        "Cover and simmer gently, stirring now and then, until the potatoes are tender and the meatballs reach 160°F (71°C), 40–45 minutes.",
+        "Season to taste and serve sprinkled with parsley."
+      ],
+      "sourceName": "Pantry Week original"
+    },
+    {
+      "id": "r5005",
+      "name": "Acadian Chicken Fricot",
+      "minutes": 75,
+      "servings": 6,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "hard",
+        "budget",
+        "canadian"
+      ],
+      "ingredients": [
+        {
+          "qty": 2,
+          "unit": "lb",
+          "item": "bone-in chicken thighs"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "onion, chopped"
+        },
+        {
+          "qty": 8,
+          "unit": "cup",
+          "item": "water"
+        },
+        {
+          "qty": 2,
+          "unit": "lb",
+          "item": "potatoes, peeled and cubed"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "carrots, sliced"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "dried savory"
+        },
+        {
+          "qty": 1.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "all-purpose flour"
+        },
+        {
+          "qty": 2,
+          "unit": "tsp",
+          "item": "baking powder"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "milk"
+        }
+      ],
+      "steps": [
+        "Melt the butter in a large pot over medium-high heat.",
+        "Brown the chicken, skin side down, 5 minutes. The chicken is done at 165°F (74°C) inside.",
+        "Add the onion and cook until soft, 4 minutes.",
+        "Add the water, savory, salt, and pepper.",
+        "Bring to a boil, then cover and simmer 30 minutes.",
+        "Lift out the chicken. Remove the skin and bones, shred the meat, and return it to the pot.",
+        "Add the potatoes and carrots and simmer until just tender, 15 minutes.",
+        "Stir the flour and baking powder together, then stir in the milk to make a soft dough.",
+        "Drop the dough by tablespoons onto the simmering stew.",
+        "Cover and cook without lifting the lid until the dumplings are puffed and cooked through, 12–15 minutes.",
+        "Ladle into bowls and serve."
+      ],
+      "sourceName": "Pantry Week original"
+    },
+    {
+      "id": "r5006",
+      "name": "Nova Scotia Hodge Podge",
+      "minutes": 40,
       "servings": 4,
       "meal": "lunch",
       "tags": [
         "lunch",
         "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "canadian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1,
+          "unit": "lb",
+          "item": "baby new potatoes"
+        },
+        {
+          "qty": 2,
+          "unit": "cup",
+          "item": "green beans, trimmed"
+        },
+        {
+          "qty": 2,
+          "unit": "cup",
+          "item": "yellow wax beans, trimmed"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "baby carrots"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "fresh or frozen peas"
+        },
+        {
+          "qty": 2,
+          "unit": "cup",
+          "item": "whole milk"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "heavy cream"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "butter"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "broth, to serve"
+        }
+      ],
+      "steps": [
+        "Put the potatoes and carrots in a large pot and cover with salted water.",
+        "Bring to a boil and cook 10 minutes.",
+        "Add the green and yellow beans and cook 5 minutes more.",
+        "Add the peas and cook until all the vegetables are just tender, 2 minutes.",
+        "Drain off all but about 1 cup of the cooking water.",
+        "Add the milk, cream, butter, salt, and pepper.",
+        "Heat gently until steaming; do not boil.",
+        "Serve in bowls with plenty of the creamy broth."
+      ],
+      "sourceName": "Pantry Week original"
+    },
+    {
+      "id": "r5007",
+      "name": "Maritime Lobster Rolls",
+      "minutes": 20,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "high-protein",
         "easy",
         "splurge",
         "canadian"
@@ -47491,12 +53998,17 @@
         {
           "qty": 1,
           "unit": "tbsp",
-          "item": "chopped chives"
+          "item": "fresh chives, chopped"
         },
         {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "butter"
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "black pepper"
         },
         {
           "qty": 4,
@@ -47504,307 +54016,38 @@
           "item": "top-split hot dog buns"
         },
         {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Stir the lobster, mayonnaise, celery, lemon juice and chives together.",
-        "Season with salt and pepper.",
-        "Melt the butter in a skillet over medium heat.",
-        "Toast the outsides of the buns in the butter until golden, 1–2 minutes per side.",
-        "Fill the buns with the lobster mixture and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3018",
-      "name": "Broccoli Cheddar Soup",
-      "minutes": 35,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
+          "qty": 2,
           "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "carrot, grated"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 3,
-          "unit": "cup",
-          "item": "chicken broth"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "milk"
+          "item": "butter, softened"
         },
         {
           "qty": 4,
-          "unit": "cup",
-          "item": "broccoli florets, chopped"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "shredded old cheddar"
-        },
-        {
-          "qty": null,
           "unit": "",
-          "item": "salt and black pepper, to taste"
+          "item": "lettuce leaves"
         }
       ],
       "steps": [
-        "Melt the butter in a large pot over medium heat.",
-        "Cook the onion until soft, 4–5 minutes.",
-        "Stir in the flour and cook 1 minutes.",
-        "Whisk in the broth and milk gradually until smooth.",
-        "Add the broccoli and carrot.",
-        "Simmer until tender, 12–15 minutes.",
-        "Reduce the heat to low and stir in the cheddar a handful at a time until melted. Do not boil.",
-        "Season with salt and pepper and serve."
+        "Stir the mayonnaise, celery, lemon juice, chives, salt, and pepper in a bowl.",
+        "Fold in the lobster meat.",
+        "Chill while you toast the buns.",
+        "Spread the outsides of the buns with the butter.",
+        "Toast the buns in a skillet over medium heat until golden, 1–2 minutes per side.",
+        "Line each bun with a lettuce leaf and fill with the lobster salad. Serve right away."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3019",
-      "name": "Turkey Cranberry Sandwich",
-      "minutes": 10,
-      "servings": 2,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 8,
-          "unit": "oz",
-          "item": "sliced roast turkey"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "multigrain bread"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "cranberry sauce"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "mayonnaise"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "baby spinach"
-        },
-        {
-          "qty": 2,
-          "unit": "slice",
-          "item": "swiss cheese"
-        }
-      ],
-      "steps": [
-        "Spread the mayonnaise on 2 slices of bread and the cranberry sauce on the other 2.",
-        "Layer the turkey, Swiss cheese and spinach on the mayonnaise slices.",
-        "Close the sandwiches with the cranberry slices and cut in half."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3020",
-      "name": "Prairie Hamburger Soup",
+      "id": "r5008",
+      "name": "Maritime Seafood Chowder",
       "minutes": 45,
       "servings": 6,
       "meal": "lunch",
       "tags": [
         "lunch",
         "main-meal",
-        "dairy-free",
         "high-protein",
         "medium",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "lean ground beef"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "carrots, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "celery stalks, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "diced tomatoes"
-        },
-        {
-          "qty": 5,
-          "unit": "cup",
-          "item": "beef broth"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "pearl barley"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "dried thyme"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "bay leaf"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Brown the beef with the onion in a large pot over medium-high heat until no pink remains, 6–8 minutes. Drain any fat. Ground meat is done at 160°F (71°C) inside.",
-        "Add the carrots and celery and cook 3 minutes.",
-        "Add the tomatoes, broth, barley, thyme and bay leaf.",
-        "Bring to a boil, then reduce the heat and simmer, covered, until the barley is tender, 30–35 minutes.",
-        "Remove the bay leaf, season with salt and pepper and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3021",
-      "name": "Classic Chicken Salad Sandwiches",
-      "minutes": 15,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "easy",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
-          "unit": "cup",
-          "item": "chopped cooked chicken"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "mayonnaise"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "celery stalks, finely diced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "finely diced red onion"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "lemon juice"
-        },
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "whole wheat bread"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "lettuce leaves"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Stir the mayonnaise, mustard and lemon juice together in a bowl.",
-        "Fold in the chicken, celery and red onion.",
-        "Season with salt and pepper.",
-        "Lay a lettuce leaf on 4 slices of bread.",
-        "Spread the chicken salad over the lettuce and top with the remaining bread.",
-        "Cut in half and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3022",
-      "name": "Maritime Fish Chowder",
-      "minutes": 40,
-      "servings": 6,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "moderate",
+        "splurge",
         "canadian"
       ],
       "ingredients": [
@@ -47824,9 +54067,9 @@
           "item": "celery stalks, diced"
         },
         {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "potatoes, cut into ½-inch cubes"
+          "qty": 3,
+          "unit": "tbsp",
+          "item": "all-purpose flour"
         },
         {
           "qty": 3,
@@ -47836,12 +54079,27 @@
         {
           "qty": 1.5,
           "unit": "lb",
+          "item": "potatoes, peeled and diced"
+        },
+        {
+          "qty": 1,
+          "unit": "lb",
           "item": "haddock fillets, cut into chunks"
+        },
+        {
+          "qty": 0.5,
+          "unit": "lb",
+          "item": "scallops"
+        },
+        {
+          "qty": 0.5,
+          "unit": "lb",
+          "item": "raw shrimp, peeled"
         },
         {
           "qty": 1.5,
           "unit": "cup",
-          "item": "milk"
+          "item": "whole milk"
         },
         {
           "qty": 0.5,
@@ -47854,254 +54112,32 @@
           "item": "dried thyme"
         },
         {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chopped parsley"
-        },
-        {
           "qty": null,
           "unit": "",
           "item": "salt and black pepper, to taste"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "fresh parsley, chopped"
         }
       ],
       "steps": [
-        "Cook the bacon in a large pot over medium heat until crisp, 6 minutes.",
+        "Cook the bacon in a large pot over medium heat until crisp, 6–8 minutes.",
         "Add the onion and celery and cook until soft, 5 minutes.",
-        "Add the potatoes, stock and thyme.",
-        "Bring to a boil, then simmer until the potatoes are just tender, 12–15 minutes.",
-        "Add the haddock and simmer gently until it flakes easily, 5 minutes.",
-        "Stir in the milk and cream and heat through without boiling.",
-        "Season with salt and pepper and sprinkle with the parsley."
+        "Sprinkle in the flour and stir for 1 minute.",
+        "Slowly whisk in the stock.",
+        "Add the potatoes and thyme.",
+        "Simmer until the potatoes are tender, 12–15 minutes.",
+        "Stir in the milk and cream and bring back to a gentle simmer.",
+        "Add the haddock, scallops, and shrimp.",
+        "Simmer until the fish flakes and the shrimp turn pink, 4–5 minutes; do not boil.",
+        "Season with salt and pepper and serve sprinkled with parsley."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3023",
-      "name": "Bison Burgers",
-      "minutes": 20,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "medium",
-        "splurge",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "ground bison"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "worcestershire sauce"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "garlic clove, minced"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "hamburger buns"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "old cheddar"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "lettuce leaves"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "tomato, sliced"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Mix the bison with the Worcestershire, garlic, salt and pepper.",
-        "Shape into 4 patties about ¾ inch thick.",
-        "Heat a grill or skillet over medium-high heat.",
-        "Cook the patties to 160°F (71°C), 4–5 minutes per side.",
-        "Bison is lean, so avoid pressing them.",
-        "Top with the cheddar for the last minute.",
-        "Toast the buns.",
-        "Build the burgers with lettuce and tomato."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3024",
-      "name": "Calgary Ginger Beef",
-      "minutes": 35,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "flank steak, cut into thin strips"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "cornstarch"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "large eggs, beaten"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "vegetable oil, for frying"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "grated fresh ginger"
-        },
-        {
-          "qty": 3,
-          "unit": "",
-          "item": "garlic cloves, minced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "carrot, cut into matchsticks"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "red bell pepper, sliced"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "sugar"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "rice vinegar"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "soy sauce"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "red pepper flakes"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "cooked rice, to serve"
-        }
-      ],
-      "steps": [
-        "Toss the flank steak strips with the eggs, then coat well in the cornstarch.",
-        "Heat the oil in a wok or deep pan to 350°F (175°C).",
-        "Fry the beef in batches until crisp, 3–4 minutes.",
-        "Drain on paper towels.",
-        "Pour off all but 1 tbsp oil.",
-        "Stir-fry the ginger, garlic, carrot and bell pepper over high heat for 2 minutes.",
-        "Add the sugar, vinegar, soy sauce and red pepper flakes and boil until syrupy, 2–3 minutes.",
-        "Toss the crispy beef in the sauce and serve over rice."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3025",
-      "name": "Newfoundland Cod au Gratin",
-      "minutes": 40,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "cod fillets"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "shredded old cheddar"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "breadcrumbs"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 375°F (190°C) and butter a baking dish with a little of the butter.",
-        "Cut the cod into serving pieces and arrange in the dish.",
-        "Season with salt and pepper.",
-        "Melt the remaining butter in a saucepan over medium heat.",
-        "Whisk in the flour and cook 1 minutes.",
-        "Whisk in the milk and simmer, stirring, until thickened, 4–5 minutes.",
-        "Stir in 1 cup cheddar until melted and pour the sauce over the cod.",
-        "Top with the remaining cheddar and the breadcrumbs.",
-        "Bake until bubbling and the fish flakes easily, 20–25 minutes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3026",
+      "id": "r5009",
       "name": "Jiggs Dinner",
       "minutes": 180,
       "servings": 6,
@@ -48110,9 +54146,8 @@
         "dinner",
         "main-meal",
         "gluten-free",
-        "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "canadian"
       ],
@@ -48120,7 +54155,7 @@
         {
           "qty": 2,
           "unit": "lb",
-          "item": "salt beef, soaked overnight"
+          "item": "salt beef (corned beef brisket)"
         },
         {
           "qty": 6,
@@ -48130,17 +54165,17 @@
         {
           "qty": 4,
           "unit": "",
-          "item": "carrots, cut into chunks"
+          "item": "carrots, peeled and halved"
         },
         {
           "qty": 1,
           "unit": "",
-          "item": "turnip, cut into chunks"
+          "item": "turnip (rutabaga), peeled and cut in wedges"
         },
         {
           "qty": 1,
           "unit": "",
-          "item": "small head cabbage, cut into wedges"
+          "item": "small green cabbage, cut in wedges"
         },
         {
           "qty": 1,
@@ -48148,2760 +54183,42 @@
           "item": "dried yellow split peas"
         },
         {
-          "qty": null,
-          "unit": "",
-          "item": "black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Drain the soaked salt beef and put it in a large pot.",
-        "Cover with fresh water.",
-        "Tie the split peas loosely in a cheesecloth bag and add to the pot.",
-        "Bring to a boil, then simmer, covered, for 2 hours.",
-        "Add the turnip and carrots and simmer 15 minutes.",
-        "Add the potatoes and cabbage and simmer until everything is tender, 25–30 minutes.",
-        "Lift out the pea bag and mash the peas with pepper to make pease pudding.",
-        "Slice the beef and serve with the vegetables and pease pudding."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3027",
-      "name": "Maple Mustard Pork Tenderloin",
-      "minutes": 35,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "pork tenderloin"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "maple syrup"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "garlic cloves, minced"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "fresh thyme leaves"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 400°F (200°C).",
-        "Stir the maple syrup, mustard, garlic and thyme together.",
-        "Season the pork with salt and pepper.",
-        "Heat the oil in an ovenproof skillet over medium-high heat and brown the pork on all sides, 5–6 minutes.",
-        "Brush the pork with the maple mixture.",
-        "Roast until it reaches 145°F (63°C), 15–18 minutes.",
-        "Rest 5 minutes, then slice and spoon the pan juices over."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3028",
-      "name": "Honey Garlic Spareribs",
-      "minutes": 120,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
-          "unit": "lb",
-          "item": "pork side ribs, cut into single ribs"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "honey"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "soy sauce"
-        },
-        {
-          "qty": 6,
-          "unit": "",
-          "item": "garlic cloves, minced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "brown sugar"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "cornstarch"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "water"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 325°F (165°C).",
-        "Arrange the ribs in a single layer in a roasting pan.",
-        "Cover with foil and bake 1 hour.",
-        "Whisk the honey, soy sauce, garlic, brown sugar, cornstarch and water in a saucepan.",
-        "Simmer, stirring, until glossy and thickened, 3–4 minutes.",
-        "Drain the fat from the ribs and pour the sauce over them.",
-        "Bake uncovered, turning twice, until sticky and tender, 45–50 minutes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3029",
-      "name": "Acadian Chicken Fricot",
-      "minutes": 75,
-      "servings": 6,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
-          "unit": "lb",
-          "item": "bone-in chicken pieces"
-        },
-        {
           "qty": 2,
           "unit": "tbsp",
           "item": "butter"
         },
         {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 8,
-          "unit": "cup",
-          "item": "water"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "potatoes, cubed"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "carrots, sliced"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "dried summer savory"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 2,
+          "qty": 0.25,
           "unit": "tsp",
-          "item": "baking powder"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
+          "item": "black pepper"
         }
       ],
       "steps": [
-        "Melt the butter in a large pot over medium-high heat and brown the chicken, 8–10 minutes.",
-        "Add the onion and cook 3 minutes.",
-        "Add the water, savory, salt and pepper.",
-        "Bring to a boil, then simmer, covered, 30 minutes.",
-        "Add the potatoes and carrots and simmer until tender and the chicken reaches 165°F (74°C), 15 minutes.",
-        "Stir the flour, baking powder and a pinch of salt together, then stir in the milk to make a soft dough.",
-        "Drop spoonfuls of dough onto the simmering soup.",
-        "Cover and simmer without lifting the lid until the dumplings are cooked through, 12–15 minutes."
+        "Soak the salt beef in cold water overnight in the fridge. Drain.",
+        "Rinse the split peas and tie them loosely in a cheesecloth bag to make pease pudding.",
+        "Put the beef and the pea bag in a large pot and cover with fresh water.",
+        "Bring to a boil, skim, then simmer covered for 2 hours.",
+        "Add the turnip and carrots and simmer 15 minutes.",
+        "Add the potatoes and cabbage and simmer until all the vegetables are tender, 20–25 minutes.",
+        "Lift out the pea bag.",
+        "Mash the peas with the butter and pepper.",
+        "Slice the beef and serve with the vegetables and pease pudding."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3030",
-      "name": "Fish and Chips",
+      "id": "r5010",
+      "name": "Newfoundland Cod au Gratin",
       "minutes": 45,
       "servings": 4,
       "meal": "dinner",
       "tags": [
         "dinner",
         "main-meal",
-        "dairy-free",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "haddock fillets, cut into 4 pieces"
-        },
-        {
-          "qty": 2,
-          "unit": "lb",
-          "item": "russet potatoes, cut into thick fries"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "baking powder"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "cold sparkling water"
-        },
-        {
-          "qty": 6,
-          "unit": "cup",
-          "item": "vegetable oil, for frying"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "malt vinegar, to serve"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt, to taste"
-        }
-      ],
-      "steps": [
-        "Soak the potatoes in cold water for 15 minutes, then drain and pat very dry.",
-        "Heat the oil in a deep pot to 325°F (165°C).",
-        "Fry the potatoes in batches until soft but pale, 5 minutes. Drain.",
-        "Raise the oil to 375°F (190°C).",
-        "Whisk the flour, baking powder and a pinch of salt, then whisk in the sparkling water to a smooth batter.",
-        "Pat the fish dry, dip in the batter and fry until golden and cooked through, 4–5 minutes. Drain.",
-        "Fry the potatoes again until crisp and golden, 2–3 minutes. Salt them.",
-        "Serve the fish and chips with malt vinegar."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3031",
-      "name": "Turkey Pot Pie",
-      "minutes": 60,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "carrots, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "celery stalks, diced"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "chicken broth"
-        },
-        {
-          "qty": 0.75,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 3,
-          "unit": "cup",
-          "item": "chopped cooked turkey"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "frozen peas"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "dried thyme"
-        },
-        {
-          "qty": 1,
-          "unit": "sheet",
-          "item": "puff pastry, thawed"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "egg, beaten"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 400°F (200°C).",
-        "Melt the butter in a large skillet over medium heat.",
-        "Cook the onion, carrots and celery until soft, 6–8 minutes.",
-        "Stir in the flour and cook 1 minutes.",
-        "Whisk in the broth and milk and simmer until thick, 3–4 minutes.",
-        "Stir in the turkey, peas, thyme, salt and pepper.",
-        "Pour into a deep baking dish.",
-        "Lay the puff pastry over the filling, trim, and cut 3 slits in the top.",
-        "Brush the pastry with the beaten egg.",
-        "Bake until the pastry is deep golden and the filling bubbles, 25–30 minutes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3032",
-      "name": "Huevos Rancheros",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "mexican"
-      ],
-      "ingredients": [
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "corn tortillas"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "refried beans"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "salsa roja"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "crumbled queso fresco"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "avocado, sliced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "chopped cilantro"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Warm the refried beans in a small saucepan over low heat, stirring, 4–5 minutes.",
-        "Heat the salsa in a second small saucepan until simmering.",
-        "Heat 1 tbsp oil in a large skillet over medium-high heat and fry the tortillas until lightly crisp, 30 seconds per side.",
-        "Drain on paper towels.",
-        "Add the remaining oil, reduce the heat to medium and fry the eggs until the whites are set, 3–4 minutes.",
-        "Season with salt and pepper.",
-        "Lay 2 tortillas on each plate and spread with the beans.",
-        "Top each with 2 eggs and spoon the hot salsa around them.",
-        "Finish with the queso fresco, avocado and cilantro."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3033",
-      "name": "Steak and Eggs",
-      "minutes": 20,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "strip steaks, ¾ inch thick (8 oz each)"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Pat the steaks dry and season well with salt and pepper.",
-        "Heat the oil in a cast-iron skillet over high heat until shimmering.",
-        "Sear the steaks 3–4 minutes per side for medium-rare (130°F (54°C) / 54°C) or to 145°F (63°C) for medium.",
-        "Rest the steaks on a board for 5 minutes.",
-        "Reduce the heat to medium, add the butter and fry the eggs until the whites are set, 3–4 minutes.",
-        "Slice the steaks and serve with the eggs."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3034",
-      "name": "Smoked Salmon Scrambled Eggs",
-      "minutes": 10,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "splurge",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 5,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "cream cheese, cut into small pieces"
-        },
-        {
-          "qty": 3,
-          "unit": "oz",
-          "item": "smoked salmon, torn"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chopped dill"
-        },
-        {
-          "qty": 2,
-          "unit": "slice",
-          "item": "rye bread"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Whisk the eggs with a pinch of salt and pepper.",
-        "Toast the rye bread.",
-        "Melt the butter in a non-stick skillet over medium-low heat.",
-        "Add the eggs and stir slowly until soft curds form, 2–3 minutes.",
-        "Fold in the cream cheese and smoked salmon and cook 30 seconds more.",
-        "Sprinkle with the dill and serve on the toast."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3035",
-      "name": "Egg in a Hole",
-      "minutes": 10,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "high-protein",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "slice",
-          "item": "thick white bread"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Cut a 3-inch hole in the centre of each slice of bread with a glass or cookie cutter.",
-        "Melt the butter in a skillet over medium heat.",
-        "Lay the bread and the cut-out rounds in the skillet and toast until golden, 2 minutes.",
-        "Flip the bread and crack an egg into each hole.",
-        "Season with salt and pepper.",
-        "Cover and cook until the whites are set, 3–4 minutes.",
-        "Serve with the toasted rounds for dipping."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3036",
-      "name": "Ham and Swiss Omelette",
-      "minutes": 10,
-      "servings": 1,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "milk"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "diced cooked ham"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "shredded Swiss cheese"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "butter"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "chopped chives"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Whisk the eggs, milk, salt and pepper.",
-        "Melt the butter in an 8-inch non-stick skillet over medium heat.",
-        "Pour in the eggs and stir gently for 20 seconds, then let them set, lifting the edges so raw egg runs underneath, 1–2 minutes.",
-        "Scatter the ham and Swiss over one half when the top is almost set.",
-        "Fold the omelette over and cook 30 seconds until the cheese melts.",
-        "Slide onto a plate and sprinkle with the chives."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3037",
-      "name": "Black Bean Breakfast Tacos",
-      "minutes": 15,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "mexican"
-      ],
-      "ingredients": [
-        {
-          "qty": 6,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "black beans, drained and rinsed"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "ground cumin"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "small corn tortillas"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "shredded cheddar"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "pico de gallo"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Warm the black beans with the cumin in a small saucepan over medium heat, 4 minutes. Mash lightly.",
-        "Whisk the eggs with salt and pepper.",
-        "Melt the butter in a skillet over medium-low heat and scramble the eggs until just set, 2–3 minutes.",
-        "Warm the tortillas in a dry skillet, 30 seconds per side.",
-        "Spread the beans on the tortillas and top with eggs, cheddar and pico de gallo."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3038",
-      "name": "Steel-Cut Oatmeal with Berries",
-      "minutes": 35,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "steel-cut oats"
-        },
-        {
-          "qty": 3,
-          "unit": "cup",
-          "item": "water"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 0.25,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "brown sugar"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "mixed berries"
-        }
-      ],
-      "steps": [
-        "Bring the water, milk and salt to a boil in a saucepan.",
-        "Stir in the oats and reduce the heat to low.",
-        "Simmer, stirring occasionally, until creamy and tender, 25–30 minutes.",
-        "Stir in the brown sugar.",
-        "Spoon into bowls and top with the berries."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3039",
-      "name": "Buckwheat Pancakes",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "buckwheat flour"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "sugar"
-        },
-        {
-          "qty": 2,
-          "unit": "tsp",
-          "item": "baking powder"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "large egg"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "melted butter"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "maple syrup, to serve"
-        }
-      ],
-      "steps": [
-        "Whisk the buckwheat flour, all-purpose flour, sugar, baking powder and salt in a bowl.",
-        "Whisk the milk, egg and melted butter in a second bowl.",
-        "Stir the wet mixture into the dry until just combined. Rest 5 minutes.",
-        "Heat a griddle over medium heat and brush with oil.",
-        "Pour ¼ cup batter per pancake and cook until bubbles form, 2–3 minutes.",
-        "Flip and cook until browned, 1–2 minutes more.",
-        "Serve with maple syrup."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3040",
-      "name": "Breakfast Fried Rice",
-      "minutes": 15,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "chinese"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "cold cooked rice"
-        },
-        {
-          "qty": 3,
-          "unit": "",
-          "item": "large eggs, beaten"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "bacon, chopped"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "green onions, sliced"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "frozen peas"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "soy sauce"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "vegetable oil"
-        }
-      ],
-      "steps": [
-        "Cook the bacon in a large skillet or wok over medium heat until crisp, 5–6 minutes.",
-        "Push the bacon to the side, add the oil and scramble the eggs until just set, 1–2 minutes.",
-        "Add the rice and peas and stir-fry over high heat until hot, 3–4 minutes.",
-        "Stir in the soy sauce and most of the green onions.",
-        "Serve topped with the remaining green onions."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3041",
-      "name": "Chicken Congee",
-      "minutes": 75,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "dairy-free",
         "high-protein",
         "medium",
         "moderate",
-        "chinese"
-      ],
-      "ingredients": [
-        {
-          "qty": 0.75,
-          "unit": "cup",
-          "item": "jasmine rice, rinsed"
-        },
-        {
-          "qty": 8,
-          "unit": "cup",
-          "item": "chicken broth"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "boneless chicken breast"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "grated fresh ginger"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "green onions, sliced"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "soy sauce"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "sesame oil"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt, to taste"
-        }
-      ],
-      "steps": [
-        "Bring the rice, broth, ginger and chicken to a boil in a large pot.",
-        "Reduce the heat to low and simmer, partly covered, stirring occasionally, 20 minutes.",
-        "Lift out the chicken once it reaches 165°F (74°C) and shred it.",
-        "Keep simmering the rice until thick and creamy, 40–50 minutes total.",
-        "Return the chicken to the pot and season with salt.",
-        "Serve topped with the green onions, soy sauce and sesame oil."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3042",
-      "name": "Avocado Egg Toast",
-      "minutes": 10,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "high-protein",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "slice",
-          "item": "whole-grain bread"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "ripe avocado"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "lemon juice"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "butter"
-        },
-        {
-          "qty": 0.25,
-          "unit": "tsp",
-          "item": "red pepper flakes"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Toast the bread.",
-        "Mash the avocado with the lemon juice, salt and pepper.",
-        "Melt the butter in a skillet over medium heat and fry the eggs until the whites are set, 3 minutes.",
-        "Spread the avocado on the toast.",
-        "Top each with an egg and sprinkle with the red pepper flakes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3043",
-      "name": "Kedgeree",
-      "minutes": 40,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "british"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "basmati rice"
-        },
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "smoked haddock"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, finely chopped"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "curry powder"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "chopped parsley"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "lemon, cut into wedges"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Cook the rice according to the package directions.",
-        "Place the haddock in a skillet, cover with the milk and simmer gently until it flakes, 6–8 minutes.",
-        "Lift out and flake, discarding skin and bones.",
-        "Boil the eggs for 8 minutes, cool in cold water, peel and quarter.",
-        "Melt the butter in a large skillet over medium heat and cook the onion until soft, 5 minutes.",
-        "Stir in the curry powder and cook 1 minutes.",
-        "Add the rice and fish and toss gently until hot.",
-        "Season with salt and pepper.",
-        "Top with the eggs and parsley and serve with the lemon wedges."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3044",
-      "name": "Full English Breakfast",
-      "minutes": 30,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "moderate",
-        "british"
-      ],
-      "ingredients": [
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "pork sausages"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "back bacon"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "tomatoes, halved"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "button mushrooms, halved"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "baked beans"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 2,
-          "unit": "slice",
-          "item": "bread"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Heat 1 tbsp oil in a large skillet over medium heat.",
-        "Cook the sausages, turning, until browned and they reach 160°F (71°C), 12–15 minutes.",
-        "Move to a low oven to keep warm.",
-        "Fry the bacon until crisp, 3–4 minutes per side, then keep warm.",
-        "Fry the tomatoes cut-side down and the mushrooms until soft, 4–5 minutes.",
-        "Season with salt and pepper.",
-        "Warm the baked beans in a small saucepan.",
-        "Add the remaining oil and fry the eggs until the whites are set, 3 minutes.",
-        "Toast the bread and serve everything together."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3045",
-      "name": "Croque Madame",
-      "minutes": 25,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "budget",
-        "french"
-      ],
-      "ingredients": [
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "white sandwich bread"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "ham"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "shredded Gruyère"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 0.75,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven broiler.",
-        "Melt the butter in a small saucepan, whisk in the flour and cook 1 minutes.",
-        "Whisk in the milk and simmer until thick, 2–3 minutes.",
-        "Season with salt and pepper.",
-        "Spread the mustard on 2 slices of bread, then add the ham and half the Gruyère.",
-        "Top with the remaining bread.",
-        "Toast the sandwiches in a dry skillet over medium heat until golden, 2–3 minutes per side.",
-        "Spread the sauce on top, sprinkle with the remaining Gruyère and broil until bubbling, 2 minutes.",
-        "Fry the eggs in the skillet and set one on each sandwich."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3046",
-      "name": "Migas",
-      "minutes": 15,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "mexican"
-      ],
-      "ingredients": [
-        {
-          "qty": 6,
-          "unit": "",
-          "item": "corn tortillas, cut into strips"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 0.5,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "jalapeño, seeded and minced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "tomato, diced"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "large eggs, beaten"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "shredded Monterey Jack"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Heat the oil in a large skillet over medium-high heat and fry the tortilla strips until crisp, 3–4 minutes.",
-        "Add the onion and jalapeño and cook until soft, 3 minutes.",
-        "Add the tomato and cook 1 minutes.",
-        "Reduce the heat to medium-low, pour in the eggs and stir gently until just set, 2–3 minutes.",
-        "Season with salt and pepper, sprinkle with the cheese and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3047",
-      "name": "Mushroom and Swiss Breakfast Skillet",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "budget",
         "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "potatoes, diced"
-        },
-        {
-          "qty": 3,
-          "unit": "cup",
-          "item": "sliced mushrooms"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "shredded Swiss cheese"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "fresh thyme leaves"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Heat the oil in a large ovenproof skillet over medium-high heat.",
-        "Cook the potatoes, covered, stirring occasionally, until tender, 10–12 minutes.",
-        "Add the mushrooms, onion and thyme and cook uncovered until browned, 6–8 minutes.",
-        "Season with salt and pepper.",
-        "Preheat the broiler.",
-        "Make 4 wells and crack an egg into each.",
-        "Sprinkle with the Swiss and broil until the whites are set and the cheese melts, 3–4 minutes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3048",
-      "name": "Peanut Butter Banana Toast",
-      "minutes": 5,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "dairy-free",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "slice",
-          "item": "whole-grain bread"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "peanut butter"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "banana, sliced"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "honey"
-        },
-        {
-          "qty": 0.25,
-          "unit": "tsp",
-          "item": "ground cinnamon"
-        }
-      ],
-      "steps": [
-        "Toast the bread.",
-        "Spread the peanut butter over the warm toast.",
-        "Arrange the banana slices on top.",
-        "Drizzle with the honey and dust with the cinnamon."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3049",
-      "name": "Quinoa Breakfast Bowls",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "quinoa, rinsed"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "water"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "avocado, sliced"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "baby spinach"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "cherry tomatoes, halved"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Bring the quinoa and water to a boil, cover and simmer until the water is absorbed, 15 minutes.",
-        "Fluff with a fork.",
-        "Boil the eggs for 7 minutes, cool in cold water and peel.",
-        "Toss the spinach and tomatoes with the oil, salt and pepper.",
-        "Divide the quinoa among bowls.",
-        "Top with the spinach mixture, avocado and a halved egg."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3050",
-      "name": "Bacon and Pea Frittata",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 6,
-          "unit": "slice",
-          "item": "bacon, chopped"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "frozen peas"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "grated Parmesan"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 375°F (190°C).",
-        "Cook the bacon in a 10-inch ovenproof skillet over medium heat until crisp, 6 minutes.",
-        "Pour off all but 1 tbsp fat.",
-        "Whisk the eggs, milk, Parmesan, salt and pepper.",
-        "Add the peas to the skillet, then pour in the egg mixture.",
-        "Cook on the stove until the edges set, 3 minutes.",
-        "Bake until the centre is set, 12–15 minutes. Cut into wedges."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3051",
-      "name": "Breakfast Pizza",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "pizza dough"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "bacon, cooked and crumbled"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "shredded mozzarella"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "green onions, sliced"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 475°F (245°C).",
-        "Stretch the dough into a 12-inch round on an oiled baking sheet and brush with the oil.",
-        "Bake the plain crust 5 minutes.",
-        "Sprinkle with the mozzarella and bacon.",
-        "Crack the eggs onto the pizza, spacing them apart, and season with salt and pepper.",
-        "Bake until the whites are set and the crust is golden, 10–12 minutes.",
-        "Scatter the green onions over and slice."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3052",
-      "name": "Bannock Egg Sandwiches",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "baking powder"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 0.75,
-          "unit": "cup",
-          "item": "water"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "cheddar cheese"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "back bacon"
-        }
-      ],
-      "steps": [
-        "Stir the flour, baking powder and salt together, then stir in the water to make a soft dough.",
-        "Pat the dough into 4 rounds about ½ inch thick.",
-        "Heat 2 tbsp oil in a skillet over medium-low heat and cook the bannock until golden and cooked through, 6–7 minutes per side.",
-        "Fry the back bacon in the skillet until hot, 2 minutes per side.",
-        "Add the remaining oil and fry the eggs until set, 3 minutes.",
-        "Split the bannock and fill with bacon, egg and cheddar."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3053",
-      "name": "Chorizo Potato Breakfast Tacos",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "mexican"
-      ],
-      "ingredients": [
-        {
-          "qty": 8,
-          "unit": "oz",
-          "item": "fresh Mexican chorizo, casings removed"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "potatoes, diced small"
-        },
-        {
-          "qty": 6,
-          "unit": "",
-          "item": "large eggs, beaten"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "small flour tortillas"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "salsa verde"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        }
-      ],
-      "steps": [
-        "Heat the oil in a skillet over medium heat and cook the potatoes, covered, until tender, 8–10 minutes.",
-        "Add the chorizo and cook, breaking it up, until browned and cooked through, 6 minutes.",
-        "Pour in the eggs and stir until just set, 2 minutes.",
-        "Warm the tortillas in a dry skillet.",
-        "Fill the tortillas and top with salsa verde."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3054",
-      "name": "Tofu Breakfast Tacos",
-      "minutes": 20,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "vegan",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "mexican"
-      ],
-      "ingredients": [
-        {
-          "qty": 14,
-          "unit": "oz",
-          "item": "firm tofu, drained"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "ground turmeric"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "ground cumin"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "red bell pepper, diced"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "small corn tortillas"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "avocado, diced"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "salsa"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Crumble the tofu into small pieces.",
-        "Heat the oil in a skillet over medium heat and cook the bell pepper until soft, 4 minutes.",
-        "Add the tofu, turmeric, cumin, salt and pepper and cook, stirring, until hot and lightly golden, 5–6 minutes.",
-        "Warm the tortillas in a dry skillet.",
-        "Fill the tortillas with the tofu and top with avocado and salsa."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3055",
-      "name": "Ham and Egg Cups",
-      "minutes": 25,
-      "servings": 6,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 12,
-          "unit": "slice",
-          "item": "thin deli ham"
-        },
-        {
-          "qty": 12,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "shredded cheddar"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chopped chives"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 375°F (190°C) and brush a 12-cup muffin pan with the oil.",
-        "Press a slice of ham into each cup to form a shell.",
-        "Sprinkle a little cheddar into each.",
-        "Crack an egg into each cup and season with salt and pepper.",
-        "Bake until the whites are set, 15–18 minutes.",
-        "Sprinkle with the chives and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3056",
-      "name": "Cinnamon Cream of Wheat",
-      "minutes": 10,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 2.5,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "cream of wheat (farina)"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "brown sugar"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "ground cinnamon"
-        },
-        {
-          "qty": 0.125,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "banana, sliced"
-        }
-      ],
-      "steps": [
-        "Bring the milk and salt to a gentle boil in a saucepan over medium heat.",
-        "Whisk in the cream of wheat slowly.",
-        "Reduce the heat and simmer, whisking, until thick, 2–3 minutes.",
-        "Stir in the brown sugar and cinnamon.",
-        "Spoon into bowls and top with the banana."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3057",
-      "name": "French Onion Soup",
-      "minutes": 75,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "moderate",
-        "french"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large yellow onions, thinly sliced"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "sugar"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 6,
-          "unit": "cup",
-          "item": "beef broth"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "dry white wine"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "fresh thyme leaves"
-        },
-        {
-          "qty": 4,
-          "unit": "slice",
-          "item": "baguette, toasted"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "shredded Gruyère"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Melt the butter in a large pot over medium heat.",
-        "Add the onions and sugar and cook, stirring often, until deep golden brown, 40–45 minutes.",
-        "Lower the heat if they start to scorch.",
-        "Stir in the flour and cook 1 minutes.",
-        "Add the wine and scrape up the browned bits.",
-        "Add the broth and thyme and simmer 15 minutes.",
-        "Season with salt and pepper.",
-        "Preheat the broiler.",
-        "Ladle the soup into ovenproof bowls, float a baguette toast on each and cover with the Gruyère.",
-        "Broil until the cheese is bubbling and browned, 2–3 minutes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3058",
-      "name": "Chicken Tortilla Soup",
-      "minutes": 40,
-      "servings": 6,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "mexican"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "garlic cloves, minced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "jalapeño, minced"
-        },
-        {
-          "qty": 2,
-          "unit": "tsp",
-          "item": "ground cumin"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "chili powder"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "diced tomatoes"
-        },
-        {
-          "qty": 6,
-          "unit": "cup",
-          "item": "chicken broth"
-        },
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "boneless chicken thighs"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "black beans, drained"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "frozen corn"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "lime juice"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "tortilla chips"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "avocado, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "chopped cilantro"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Heat the oil in a large pot over medium heat and cook the onion, garlic and jalapeño until soft, 5 minutes.",
-        "Stir in the cumin and chili powder and cook 30 seconds.",
-        "Add the tomatoes, broth and chicken.",
-        "Bring to a boil, then simmer until the chicken reaches 165°F (74°C), 20 minutes.",
-        "Lift out the chicken, shred it and return it to the pot.",
-        "Add the black beans and corn and simmer 5 minutes.",
-        "Stir in the lime juice and season with salt and pepper.",
-        "Serve topped with tortilla chips, avocado and cilantro."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3059",
-      "name": "Cobb Salad",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "boneless chicken breasts"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 6,
-          "unit": "slice",
-          "item": "bacon"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "head romaine lettuce, chopped"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "cherry tomatoes, halved"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "avocado, diced"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "crumbled blue cheese"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "red wine vinaigrette"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Boil the eggs for 10 minutes, cool in cold water, peel and chop.",
-        "Cook the bacon in a skillet over medium heat until crisp, 6–8 minutes. Drain and crumble.",
-        "Season the chicken with salt and pepper and cook in the oil over medium-high heat to 165°F (74°C), 5–6 minutes per side.",
-        "Rest 5 minutes and dice.",
-        "Spread the romaine on a platter.",
-        "Arrange the chicken, bacon, eggs, tomatoes, avocado and blue cheese in rows on top.",
-        "Drizzle with the vinaigrette and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3060",
-      "name": "Cuban Sandwiches",
-      "minutes": 20,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "moderate",
-        "caribbean"
-      ],
-      "ingredients": [
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "cuban or soft sub rolls, split"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "yellow mustard"
-        },
-        {
-          "qty": 12,
-          "unit": "oz",
-          "item": "sliced roast pork"
-        },
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "ham"
-        },
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "swiss cheese"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "dill pickle, thinly sliced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "butter, softened"
-        }
-      ],
-      "steps": [
-        "Spread the mustard inside the rolls.",
-        "Layer the roast pork, ham, Swiss and pickles on the bottoms and close the rolls.",
-        "Butter the outsides of the rolls.",
-        "Heat a large skillet over medium heat.",
-        "Cook the sandwiches, pressing with a heavy pan, until golden and the cheese melts, 3–4 minutes per side.",
-        "Cut diagonally and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3061",
-      "name": "Shrimp Po' Boys",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "splurge",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "large shrimp, peeled and deveined"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "buttermilk"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "cornmeal"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 2,
-          "unit": "tsp",
-          "item": "cajun seasoning"
-        },
-        {
-          "qty": 3,
-          "unit": "cup",
-          "item": "vegetable oil, for frying"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "sub rolls, split"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "mayonnaise"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "hot sauce"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "shredded lettuce"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "tomatoes, sliced"
-        }
-      ],
-      "steps": [
-        "Soak the shrimp in the buttermilk for 10 minutes.",
-        "Stir the cornmeal, flour and Cajun seasoning together.",
-        "Heat the oil in a deep skillet to 350°F (175°C).",
-        "Lift the shrimp from the buttermilk, coat in the cornmeal mixture and fry in batches until golden, 2–3 minutes. Drain.",
-        "Stir the mayonnaise and hot sauce together and spread inside the rolls.",
-        "Fill the rolls with lettuce, tomatoes and shrimp."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3062",
-      "name": "Muffuletta",
-      "minutes": 20,
-      "servings": 6,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "gluten-free",
-        "medium",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "round Italian loaf (9 inch)"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "green olives, chopped"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "giardiniera, chopped"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "garlic clove, minced"
-        },
-        {
-          "qty": 4,
-          "unit": "oz",
-          "item": "sliced salami"
-        },
-        {
-          "qty": 4,
-          "unit": "oz",
-          "item": "sliced ham"
-        },
-        {
-          "qty": 4,
-          "unit": "oz",
-          "item": "sliced mortadella"
-        },
-        {
-          "qty": 4,
-          "unit": "oz",
-          "item": "sliced provolone"
-        }
-      ],
-      "steps": [
-        "Stir the olives, giardiniera, olive oil and garlic together for the olive salad.",
-        "Split the loaf horizontally and scoop out a little of the soft centre.",
-        "Spread half the olive salad on the bottom half.",
-        "Layer the salami, ham, mortadella and provolone on top.",
-        "Spread the remaining olive salad on the cut side of the top half and close the sandwich.",
-        "Wrap tightly and press under a heavy pan for 10 minutes.",
-        "Cut into 6 wedges."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3063",
-      "name": "Wonton Soup",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "easy",
-        "moderate",
-        "chinese"
-      ],
-      "ingredients": [
-        {
-          "qty": 6,
-          "unit": "cup",
-          "item": "chicken broth"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "grated fresh ginger"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "soy sauce"
-        },
-        {
-          "qty": 24,
-          "unit": "",
-          "item": "frozen pork wontons"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "baby bok choy, quartered"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "green onions, sliced"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "sesame oil"
-        }
-      ],
-      "steps": [
-        "Bring the broth, ginger and soy sauce to a boil in a large pot.",
-        "Add the wontons and simmer until they float and are hot through, 5–6 minutes.",
-        "Add the bok choy and simmer until just tender, 2 minutes.",
-        "Stir in the sesame oil.",
-        "Ladle into bowls and top with the green onions."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3064",
-      "name": "Navy Bean and Ham Soup",
-      "minutes": 120,
-      "servings": 6,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "dried navy beans, soaked overnight"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "smoked ham hock"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "carrots, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "celery stalks, diced"
-        },
-        {
-          "qty": 8,
-          "unit": "cup",
-          "item": "water"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "bay leaf"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Drain the soaked beans and put them in a large pot with the ham hock, onion, carrots, celery, water and bay leaf.",
-        "Bring to a boil, then reduce the heat and simmer, partly covered, until the beans are very tender, 1½–2 hours.",
-        "Lift out the ham hock, pull the meat from the bone and chop it.",
-        "Mash some of the beans against the side of the pot to thicken the soup.",
-        "Return the ham, remove the bay leaf and season with salt and pepper."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3065",
-      "name": "Chef Salad",
-      "minutes": 20,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "head iceberg lettuce, chopped"
-        },
-        {
-          "qty": 6,
-          "unit": "oz",
-          "item": "sliced ham, cut into strips"
-        },
-        {
-          "qty": 6,
-          "unit": "oz",
-          "item": "sliced turkey, cut into strips"
-        },
-        {
-          "qty": 4,
-          "unit": "oz",
-          "item": "swiss cheese, cut into strips"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "cherry tomatoes, halved"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "cucumber, sliced"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "ranch dressing"
-        }
-      ],
-      "steps": [
-        "Boil the eggs for 10 minutes, cool in cold water, peel and quarter. The turkey is done at 165°F (74°C) inside.",
-        "Divide the lettuce among bowls.",
-        "Arrange the ham, turkey, Swiss, tomatoes, cucumber and eggs on top.",
-        "Serve with the ranch dressing."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3066",
-      "name": "Taco Salad",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "budget",
-        "mexican"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "lean ground beef"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "taco seasoning"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "water"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "head romaine lettuce, chopped"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "black beans, drained"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "cherry tomatoes, halved"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "shredded cheddar"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "tortilla chips"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "salsa"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "sour cream"
-        }
-      ],
-      "steps": [
-        "Brown the beef in a skillet over medium-high heat until no pink remains, 6–8 minutes. Drain the fat. Ground meat is done at 160°F (71°C) inside.",
-        "Stir in the taco seasoning and water and simmer until thick, 3 minutes.",
-        "Divide the romaine among bowls.",
-        "Top with the beef, black beans, tomatoes and cheddar.",
-        "Add the tortilla chips and finish with salsa and sour cream."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3067",
-      "name": "Baja Fish Tacos",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "mexican"
       ],
       "ingredients": [
         {
@@ -50910,79 +54227,74 @@
           "item": "cod fillets"
         },
         {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "chili powder"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "ground cumin"
-        },
-        {
-          "qty": 1,
+          "qty": 3,
           "unit": "tbsp",
-          "item": "vegetable oil"
+          "item": "butter"
         },
         {
-          "qty": 8,
-          "unit": "",
-          "item": "small corn tortillas"
+          "qty": 3,
+          "unit": "tbsp",
+          "item": "all-purpose flour"
         },
         {
           "qty": 2,
           "unit": "cup",
-          "item": "shredded cabbage"
+          "item": "milk"
         },
         {
-          "qty": 0.33,
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 1.5,
           "unit": "cup",
-          "item": "sour cream"
+          "item": "old cheddar cheese, grated"
         },
         {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "lime juice"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "avocado, sliced"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "dry breadcrumbs"
         }
       ],
       "steps": [
-        "Season the cod with the chili powder, cumin, salt and pepper.",
-        "Heat the oil in a skillet over medium-high heat and cook the cod until it flakes easily, 3–4 minutes per side. Break into chunks.",
-        "Stir the sour cream and lime juice together.",
-        "Warm the tortillas in a dry skillet.",
-        "Fill the tortillas with cabbage, fish and avocado and drizzle with the lime cream."
+        "Preheat the oven to 375°F (190°C).",
+        "Butter a shallow baking dish.",
+        "Lay the cod in the dish in a single layer.",
+        "Melt the butter in a saucepan over medium heat.",
+        "Whisk in the flour and cook 1 minute.",
+        "Slowly whisk in the milk and cook, stirring, until thick and smooth, 4–5 minutes.",
+        "Season with the salt and pepper.",
+        "Stir in 1 cup of the cheddar until melted, then pour the sauce over the fish.",
+        "Toss the remaining cheddar with the breadcrumbs and scatter over the top.",
+        "Bake until bubbling and golden and the fish flakes easily, 20–25 minutes."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3068",
-      "name": "Patty Melts",
-      "minutes": 30,
+      "id": "r5011",
+      "name": "Toutons with Molasses",
+      "minutes": 25,
       "servings": 4,
-      "meal": "lunch",
+      "meal": "breakfast",
       "tags": [
-        "lunch",
+        "breakfast",
         "main-meal",
-        "high-protein",
-        "easy",
+        "vegetarian",
+        "medium",
         "budget",
-        "american"
+        "canadian"
       ],
       "ingredients": [
         {
-          "qty": 1.25,
+          "qty": 1,
           "unit": "lb",
-          "item": "ground beef"
+          "item": "white bread dough, thawed if frozen"
         },
         {
           "qty": 2,
@@ -50991,627 +54303,97 @@
         },
         {
           "qty": 1,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "fancy molasses"
+        }
+      ],
+      "steps": [
+        "Divide the dough into 8 pieces.",
+        "Stretch each into a disc about ½ inch thick.",
+        "Heat the butter and oil in a large skillet over medium heat until foaming.",
+        "Fry the toutons in batches until golden and cooked through, 3–4 minutes per side.",
+        "Drain briefly on paper towels.",
+        "Serve hot, drizzled with the molasses."
+      ],
+      "sourceName": "Pantry Week original"
+    },
+    {
+      "id": "r5012",
+      "name": "Western Sandwich",
+      "minutes": 15,
+      "servings": 2,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "high-protein",
+        "medium",
+        "budget",
+        "canadian"
+      ],
+      "ingredients": [
+        {
+          "qty": 4,
           "unit": "",
-          "item": "large onion, thinly sliced"
+          "item": "eggs"
         },
         {
-          "qty": 8,
-          "unit": "slice",
-          "item": "rye bread"
+          "qty": 0.33,
+          "unit": "cup",
+          "item": "cooked ham, diced"
         },
         {
-          "qty": 8,
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "green bell pepper, finely diced"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "onion, finely diced"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 4,
           "unit": "slice",
-          "item": "swiss cheese"
+          "item": "white or whole wheat bread"
         },
         {
           "qty": null,
           "unit": "",
           "item": "salt and black pepper, to taste"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "ketchup, to serve"
         }
       ],
       "steps": [
-        "Melt 1 tbsp butter in a skillet over medium heat and cook the onion until soft and golden, 12–15 minutes. Set aside.",
-        "Shape the beef into 4 thin oval patties and season with salt and pepper.",
-        "Cook the patties in the skillet over medium-high heat to 160°F (71°C), 3–4 minutes per side.",
-        "Layer each patty with 2 slices Swiss and the onions between 2 slices of rye.",
-        "Melt the remaining butter in the skillet over medium heat.",
-        "Toast the sandwiches until golden and the cheese melts, 2–3 minutes per side."
+        "Beat the eggs with a pinch of salt and pepper.",
+        "Melt the butter in a nonstick skillet over medium heat.",
+        "Cook the ham, pepper, and onion until the vegetables soften, 3–4 minutes.",
+        "Pour in the eggs and spread them evenly.",
+        "Cook without stirring until the bottom sets, 2 minutes.",
+        "Flip in halves and cook until set all the way through, 1 minute more.",
+        "Toast the bread.",
+        "Cut the omelette in two, place each half between 2 slices of toast, and serve with ketchup."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3069",
-      "name": "Egg Salad Sandwiches",
+      "id": "r5013",
+      "name": "Peameal Bacon and Eggs",
       "minutes": 20,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "vegetarian",
-        "dairy-free",
-        "high-protein",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "mayonnaise"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "celery stalk, finely diced"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chopped chives"
-        },
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "whole wheat bread"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "lettuce leaves"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Boil the eggs for 10 minutes, cool in cold water and peel.",
-        "Chop the eggs and mix with the mayonnaise, mustard, celery and chives.",
-        "Season with salt and pepper.",
-        "Lay a lettuce leaf on 4 slices of bread.",
-        "Spread the egg salad on top and close with the remaining bread."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3070",
-      "name": "Classic Tuna Salad Sandwiches",
-      "minutes": 10,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "easy",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "can",
-          "item": "tuna, drained (5 oz each)"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "mayonnaise"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "celery stalk, finely diced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "finely diced red onion"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "lemon juice"
-        },
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "whole wheat bread"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "lettuce leaves"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Flake the tuna into a bowl.",
-        "Stir in the mayonnaise, celery, red onion and lemon juice.",
-        "Season with salt and pepper.",
-        "Lay a lettuce leaf on 4 slices of bread.",
-        "Spread the tuna salad on top and close with the remaining bread."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3071",
-      "name": "Grilled Cheese and Tomato Soup",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "garlic cloves, minced"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "whole tomatoes"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "chicken broth"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "heavy cream"
-        },
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "white bread"
-        },
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "old cheddar"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "butter, softened"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Heat the oil in a pot over medium heat and cook the onion and garlic until soft, 5 minutes.",
-        "Add the tomatoes and broth and simmer 15 minutes.",
-        "Blend until smooth, stir in the cream and season with salt and pepper.",
-        "Make 4 sandwiches with the bread and cheddar and butter the outsides.",
-        "Cook the sandwiches in a skillet over medium heat until golden and melted, 3 minutes per side.",
-        "Serve the sandwiches with the soup for dunking."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3072",
-      "name": "Buffalo Chicken Wraps",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "boneless chicken breasts"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "hot sauce"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "melted butter"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "large flour tortillas"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "shredded romaine"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "celery stalks, thinly sliced"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "blue cheese dressing"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Season the chicken with salt and pepper.",
-        "Cook the chicken in the oil over medium-high heat to 165°F (74°C), 5–6 minutes per side.",
-        "Rest 5 minutes and slice.",
-        "Whisk the hot sauce and melted butter and toss with the chicken.",
-        "Fill the tortillas with romaine, celery and chicken.",
-        "Drizzle with the blue cheese dressing and roll up."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3073",
-      "name": "Chicken Shawarma Wraps",
-      "minutes": 40,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "budget",
-        "middle_eastern"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "boneless chicken thighs"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "lemon juice"
-        },
-        {
-          "qty": 2,
-          "unit": "tsp",
-          "item": "ground cumin"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "paprika"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "ground turmeric"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "garlic cloves, minced"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "pita breads"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "plain yogurt"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "cucumber, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "tomato, diced"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Toss the chicken with the oil, lemon juice, cumin, paprika, turmeric, garlic, salt and pepper. Marinate 20 minutes.",
-        "Heat a skillet over medium-high heat.",
-        "Cook the chicken until charred and it reaches 165°F (74°C), 5–6 minutes per side.",
-        "Rest 5 minutes and slice.",
-        "Warm the pitas.",
-        "Spread the yogurt on the pitas and top with chicken, cucumber and tomato. Roll up."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3074",
-      "name": "BBQ Chicken Pizza",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "high-protein",
-        "medium",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "pizza dough"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "barbecue sauce"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "shredded cooked chicken"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "shredded mozzarella"
-        },
-        {
-          "qty": 0.5,
-          "unit": "",
-          "item": "red onion, thinly sliced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "chopped cilantro"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "olive oil"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 475°F (245°C).",
-        "Stretch the dough into a 12-inch round on an oiled baking sheet.",
-        "Toss the chicken with half the barbecue sauce.",
-        "Spread the remaining sauce over the dough.",
-        "Top with the mozzarella, chicken and red onion.",
-        "Bake until the crust is golden and the cheese bubbles, 12–15 minutes.",
-        "Sprinkle with the cilantro and slice."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3075",
-      "name": "Greek Chicken Salad",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "easy",
-        "moderate",
-        "greek"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "boneless chicken breasts"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "lemon juice"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "dried oregano"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "head romaine lettuce, chopped"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "cucumber, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "cherry tomatoes, halved"
-        },
-        {
-          "qty": 0.5,
-          "unit": "",
-          "item": "red onion, thinly sliced"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "kalamata olives"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "crumbled feta"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Season the chicken with half the oregano, salt and pepper.",
-        "Cook in 1 tbsp oil over medium-high heat to 165°F (74°C), 5–6 minutes per side.",
-        "Rest 5 minutes and slice.",
-        "Whisk the remaining oil with the lemon juice and remaining oregano.",
-        "Toss the romaine, cucumber, tomatoes, red onion and olives with the dressing.",
-        "Top with the chicken and feta."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3076",
-      "name": "B.C. Salmon Burgers",
-      "minutes": 25,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "skinless salmon fillet, finely chopped"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "panko breadcrumbs"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "large egg"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "green onions, sliced"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "hamburger buns"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "tartar sauce"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "lettuce leaves"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Mix the salmon, panko, egg, green onions, mustard, salt and pepper.",
-        "Shape into 4 patties.",
-        "Chill the patties 10 minutes so they hold together.",
-        "Heat the oil in a skillet over medium heat.",
-        "Cook the patties until golden and cooked through to 145°F (63°C), 4 minutes per side.",
-        "Toast the buns.",
-        "Build the burgers with lettuce and tartar sauce."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3077",
-      "name": "Lumberjack Breakfast",
-      "minutes": 35,
       "servings": 4,
       "meal": "breakfast",
       "tags": [
@@ -51624,54 +54406,29 @@
       ],
       "ingredients": [
         {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "baking powder"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "sugar"
-        },
-        {
-          "qty": 0.5,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 1.25,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 5,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "melted butter"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "breakfast sausages"
-        },
-        {
           "qty": 8,
           "unit": "slice",
-          "item": "bacon"
+          "item": "peameal (back) bacon, ¼ inch thick"
+        },
+        {
+          "qty": 8,
+          "unit": "",
+          "item": "eggs"
         },
         {
           "qty": 1,
           "unit": "tbsp",
           "item": "butter"
+        },
+        {
+          "qty": 4,
+          "unit": "slice",
+          "item": "bread, toasted"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt and black pepper, to taste"
         },
         {
           "qty": null,
@@ -51680,352 +54437,25 @@
         }
       ],
       "steps": [
-        "Preheat the oven to 200°F (95°C) to keep things warm.",
-        "Whisk the flour, baking powder, sugar and salt.",
-        "Whisk in the milk, 1 egg and the melted butter until just combined.",
-        "Cook the sausages in a large skillet over medium heat, turning, until browned and they reach 160°F (71°C), 12–15 minutes.",
-        "Keep warm in the oven.",
-        "Cook the bacon in the same skillet until crisp, 6–8 minutes. Keep warm.",
-        "Pour ¼ cup batter per pancake onto a buttered griddle over medium heat.",
-        "Cook until bubbles form, 2–3 minutes, then flip and cook 1–2 minutes more.",
-        "Fry the remaining 4 eggs in the butter until the whites are set, 3–4 minutes.",
-        "Serve the pancakes with the eggs, sausages, bacon and maple syrup."
+        "Heat a large skillet over medium heat.",
+        "Cook the peameal bacon until golden and cooked through, 3–4 minutes per side.",
+        "Keep warm on a plate.",
+        "Melt the butter in the same skillet over medium-low heat.",
+        "Crack in the eggs and cook to the liking, 3–4 minutes for set whites and runny yolks.",
+        "Season with salt and pepper.",
+        "Serve the eggs and bacon with the toasted bread and a little maple syrup for the bacon."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3078",
-      "name": "Oka Cheese Omelette",
-      "minutes": 10,
-      "servings": 1,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "milk"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "butter"
-        },
-        {
-          "qty": 1,
-          "unit": "oz",
-          "item": "oka cheese, thinly sliced"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "sliced mushrooms"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "chopped parsley"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Whisk the eggs, milk, salt and pepper.",
-        "Melt the butter in an 8-inch non-stick skillet over medium heat and cook the mushrooms until golden, 3–4 minutes.",
-        "Spread them out evenly.",
-        "Pour in the eggs and let them set, lifting the edges so raw egg runs underneath, 1–2 minutes.",
-        "Lay the Oka over one half when the top is almost set.",
-        "Fold the omelette over and cook 30 seconds until the cheese softens.",
-        "Slide onto a plate and sprinkle with the parsley."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3079",
-      "name": "Smoked Salmon Eggs Benedict",
-      "minutes": 30,
+      "id": "r5014",
+      "name": "Breakfast Poutine",
+      "minutes": 40,
       "servings": 4,
       "meal": "breakfast",
       "tags": [
         "breakfast",
         "main-meal",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 3,
-          "unit": "",
-          "item": "large egg yolks"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "lemon juice"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "butter, melted"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "white vinegar"
-        },
-        {
-          "qty": 8,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "english muffins, split"
-        },
-        {
-          "qty": 6,
-          "unit": "oz",
-          "item": "smoked salmon"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chopped dill"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Whisk the egg yolks and lemon juice in a heatproof bowl set over barely simmering water until thick, 2 minutes.",
-        "Remove from the heat and whisk in the melted butter in a thin stream until thick and glossy.",
-        "Season with salt and keep warm.",
-        "Bring a wide pan of water to a gentle simmer and add the vinegar.",
-        "Crack the eggs into the water one at a time and poach until the whites are set, 3–4 minutes.",
-        "Lift out with a slotted spoon.",
-        "Toast the English muffins.",
-        "Top each muffin half with smoked salmon and a poached egg.",
-        "Spoon the hollandaise over, sprinkle with dill and pepper and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3080",
-      "name": "Apple Cheddar Breakfast Melts",
-      "minutes": 15,
-      "servings": 4,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "gluten-free",
-        "easy",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 4,
-          "unit": "",
-          "item": "english muffins, split"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "apple, thinly sliced"
-        },
-        {
-          "qty": 8,
-          "unit": "slice",
-          "item": "back bacon"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "shredded old cheddar"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "dijon mustard"
-        }
-      ],
-      "steps": [
-        "Preheat the broiler.",
-        "Toast the English muffins and spread lightly with the mustard.",
-        "Fry the back bacon in a skillet over medium heat until hot, 2 minutes per side.",
-        "Top each muffin half with bacon, apple slices and cheddar.",
-        "Broil until the cheese melts and bubbles, 2–3 minutes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3081",
-      "name": "Savory Oatmeal with Fried Egg",
-      "minutes": 15,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "high-protein",
-        "easy",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "rolled oats"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "chicken broth"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "grated Parmesan"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "large eggs"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "olive oil"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "green onion, sliced"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Bring the broth to a boil in a saucepan.",
-        "Stir in the oats and simmer, stirring, until creamy, 5 minutes.",
-        "Stir in the Parmesan and season with salt and pepper.",
-        "Heat the oil in a skillet over medium heat and fry the eggs until the whites are set, 3 minutes.",
-        "Spoon the oatmeal into bowls and top each with an egg and green onion."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3082",
-      "name": "Maple Baked Beans with Sausage",
-      "minutes": 180,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "hard",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "dried navy beans, soaked overnight"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "maple syrup"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "molasses"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "dry mustard"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 6,
-          "unit": "slice",
-          "item": "bacon, chopped"
-        },
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "smoked sausage, sliced"
-        },
-        {
-          "qty": 4,
-          "unit": "cup",
-          "item": "water"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 300°F (150°C).",
-        "Drain the beans, cover with fresh water in a pot and simmer until just tender, 45 minutes. Drain.",
-        "Stir the maple syrup, molasses, mustard and 4 cups water together.",
-        "Layer the beans, onion and bacon in a Dutch oven and pour the maple mixture over.",
-        "Cover and bake 1½ hours, adding water if the beans look dry.",
-        "Stir in the sausage and bake uncovered until thick and glossy, 30 minutes.",
-        "Season with salt and pepper."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3083",
-      "name": "Pork Chops with Apples and Cider",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "gluten-free",
         "high-protein",
         "medium",
         "moderate",
@@ -52033,64 +54463,68 @@
       ],
       "ingredients": [
         {
-          "qty": 4,
-          "unit": "",
-          "item": "bone-in pork chops, 1 inch thick"
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "russet potatoes, cut into ½-inch cubes"
         },
         {
-          "qty": 1,
+          "qty": 2,
           "unit": "tbsp",
           "item": "vegetable oil"
         },
         {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "item": "breakfast sausages, sliced"
+        },
+        {
           "qty": 2,
-          "unit": "",
-          "item": "apples, cored and sliced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, sliced"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "apple cider"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 1,
           "unit": "tbsp",
           "item": "butter"
         },
         {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "fresh thyme leaves"
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "all-purpose flour"
         },
         {
-          "qty": null,
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "beef broth"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "cheese curds"
+        },
+        {
+          "qty": 4,
           "unit": "",
-          "item": "salt and black pepper, to taste"
+          "item": "eggs"
         }
       ],
       "steps": [
-        "Pat the chops dry and season with salt and pepper.",
-        "Heat the oil in a large skillet over medium-high heat and sear the chops until golden, 4 minutes per side.",
-        "Transfer to a plate.",
-        "Reduce the heat to medium and cook the apples and onion in the skillet until softened, 5 minutes.",
-        "Add the cider, mustard and thyme and simmer 3 minutes.",
-        "Return the chops and simmer until they reach 145°F (63°C), 4–5 minutes.",
-        "Stir the butter into the sauce and serve the chops with the apples."
+        "Preheat the oven to 425°F (220°C).",
+        "Toss the potatoes with the oil and salt on a baking sheet.",
+        "Roast, turning once, until crisp and golden, 25–30 minutes.",
+        "Meanwhile, brown the sausage in a skillet over medium heat until cooked through, 6–8 minutes. Set aside.",
+        "Melt the butter in a small saucepan over medium heat.",
+        "Whisk in the flour and cook until light brown, 2 minutes.",
+        "Whisk in the broth and simmer until thick, 3–4 minutes.",
+        "Keep the gravy hot.",
+        "Fry the eggs in the sausage pan until the whites are set, 3 minutes.",
+        "Divide the potatoes among plates.",
+        "Top with sausage and cheese curds, pour over the hot gravy, and finish each with a fried egg."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3084",
+      "id": "r5015",
       "name": "Montreal Steak with Roasted Potatoes",
       "minutes": 45,
       "servings": 4,
@@ -52099,7 +54533,6 @@
         "dinner",
         "main-meal",
         "gluten-free",
-        "dairy-free",
         "high-protein",
         "medium",
         "splurge",
@@ -52109,7 +54542,7 @@
         {
           "qty": 4,
           "unit": "",
-          "item": "sirloin steaks, 1 inch thick"
+          "item": "strip loin steaks, about 1 inch thick"
         },
         {
           "qty": 2,
@@ -52117,7 +54550,7 @@
           "item": "montreal steak spice"
         },
         {
-          "qty": 2,
+          "qty": 1.5,
           "unit": "lb",
           "item": "baby potatoes, halved"
         },
@@ -52127,31 +54560,183 @@
           "item": "olive oil"
         },
         {
-          "qty": 1,
+          "qty": 0.5,
           "unit": "tsp",
-          "item": "dried rosemary"
+          "item": "salt"
         },
         {
-          "qty": null,
-          "unit": "",
-          "item": "salt, to taste"
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 2,
+          "unit": "clove",
+          "item": "garlic, smashed"
         }
       ],
       "steps": [
         "Preheat the oven to 425°F (220°C).",
-        "Toss the potatoes with 2 tbsp oil, the rosemary and salt on a baking sheet.",
-        "Roast until crisp and tender, 30–35 minutes, turning once.",
-        "Rub the steaks with the steak spice.",
-        "Heat the remaining oil in a cast-iron skillet over high heat.",
-        "Sear the steaks 4–5 minutes per side for medium-rare (130°F (54°C) / 54°C).",
-        "Rest 5 minutes, then slice and serve with the potatoes."
+        "Toss the potatoes with 2 tbsp of the oil and the salt.",
+        "Roast until golden and tender, 30–35 minutes.",
+        "Meanwhile, pat the steaks dry and rub all over with the steak spice.",
+        "Let them sit 15 minutes.",
+        "Heat the remaining oil in a cast-iron skillet over high heat until just smoking.",
+        "Sear the steaks 3–4 minutes per side for medium-rare, 130°F (54°C) inside.",
+        "Add the butter and garlic for the last minute and spoon the foaming butter over the steaks.",
+        "Rest the steaks 5 minutes, then serve with the potatoes."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3085",
-      "name": "Perogy Casserole",
-      "minutes": 50,
+      "id": "r5016",
+      "name": "Prairie Bison Burgers",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "high-protein",
+        "medium",
+        "splurge",
+        "canadian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "ground bison"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "worcestershire sauce"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 4,
+          "unit": "slice",
+          "item": "old cheddar cheese"
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "item": "hamburger buns, split"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "tomato, sliced"
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "item": "lettuce leaves"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "mustard and ketchup, to serve"
+        }
+      ],
+      "steps": [
+        "Preheat a grill or grill pan to medium-high.",
+        "Gently mix the bison, Worcestershire, salt, and pepper.",
+        "Shape into 4 patties ¾ inch thick.",
+        "Press a shallow dimple into the centre of each patty so it cooks flat.",
+        "Grill 4–5 minutes per side, until the centre reaches 160°F (71°C).",
+        "Bison is lean, so do not press the patties.",
+        "Top with the cheddar for the last minute to melt.",
+        "Toast the buns on the grill, 30 seconds.",
+        "Build the burgers with lettuce, tomato, mustard, and ketchup."
+      ],
+      "sourceName": "Pantry Week original"
+    },
+    {
+      "id": "r5017",
+      "name": "Shore Lunch Pickerel",
+      "minutes": 25,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "dairy-free",
+        "easy",
+        "budget",
+        "canadian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "pickerel (walleye) fillets"
+        },
+        {
+          "qty": 0.75,
+          "unit": "cup",
+          "item": "all-purpose flour"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "cornmeal"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "paprika"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "eggs, beaten"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "lemon, cut into wedges"
+        }
+      ],
+      "steps": [
+        "Mix the flour, cornmeal, salt, pepper, and paprika in a shallow dish.",
+        "Dip each fillet in the egg, then press into the flour mixture to coat.",
+        "Heat the oil in a large cast-iron skillet over medium-high heat until shimmering.",
+        "Fry the pickerel until golden and it flakes easily, 3–4 minutes per side.",
+        "Drain on paper towels and serve hot with lemon wedges."
+      ],
+      "sourceName": "Pantry Week original"
+    },
+    {
+      "id": "r5018",
+      "name": "Prairie Perogy Casserole",
+      "minutes": 45,
       "servings": 6,
       "meal": "dinner",
       "tags": [
@@ -52169,11 +54754,6 @@
           "item": "frozen potato and cheddar perogies"
         },
         {
-          "qty": 1,
-          "unit": "lb",
-          "item": "smoked sausage, sliced"
-        },
-        {
           "qty": 6,
           "unit": "slice",
           "item": "bacon, chopped"
@@ -52181,7 +54761,7 @@
         {
           "qty": 1,
           "unit": "",
-          "item": "onion, diced"
+          "item": "onion, sliced"
         },
         {
           "qty": 1,
@@ -52189,551 +54769,105 @@
           "item": "sour cream"
         },
         {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
           "qty": 1.5,
           "unit": "cup",
-          "item": "shredded cheddar"
+          "item": "cheddar cheese, grated"
         },
         {
-          "qty": 2,
+          "qty": 3,
           "unit": "",
           "item": "green onions, sliced"
         }
       ],
       "steps": [
         "Preheat the oven to 375°F (190°C).",
-        "Cook the bacon in a skillet over medium heat until crisp, 6 minutes.",
-        "Add the onion and sausage and cook until golden, 5 minutes.",
-        "Whisk the sour cream and milk together.",
-        "Spread the frozen perogies in a 9x13-inch baking dish and scatter the sausage mixture over.",
-        "Pour the sour cream mixture over and top with the cheddar.",
-        "Cover with foil and bake 25 minutes.",
-        "Uncover and bake until bubbling, 10 minutes.",
-        "Sprinkle with the green onions."
+        "Grease a 9x13-inch baking dish.",
+        "Boil the perogies in salted water until they float, 4–5 minutes. Drain.",
+        "Cook the bacon in a skillet over medium heat until crisp, 6–8 minutes.",
+        "Remove with a slotted spoon.",
+        "Cook the onion in the bacon fat until soft and golden, 8–10 minutes.",
+        "Toss the perogies with the onion and sour cream and spread in the baking dish.",
+        "Top with the cheddar and bacon.",
+        "Bake until bubbling and the cheese melts, 15–20 minutes.",
+        "Scatter with green onions and serve."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3086",
-      "name": "Bison Chili",
-      "minutes": 60,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "ground bison"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "green bell pepper, diced"
-        },
-        {
-          "qty": 3,
-          "unit": "",
-          "item": "garlic cloves, minced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "chili powder"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "ground cumin"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "crushed tomatoes"
-        },
-        {
-          "qty": 2,
-          "unit": "can",
-          "item": "kidney beans, drained (14 oz each)"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "beef broth"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Heat the oil in a large pot over medium-high heat and brown the bison until no pink remains, 6–8 minutes.",
-        "Add the onion, bell pepper and garlic and cook until soft, 5 minutes.",
-        "Stir in the chili powder and cumin and cook 1 minutes.",
-        "Add the tomatoes, beans and broth.",
-        "Simmer, partly covered, stirring occasionally, until thick, 40 minutes.",
-        "Season with salt and pepper."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3087",
-      "name": "Pan-Fried Pickerel",
-      "minutes": 20,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "vegetarian",
-        "easy",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "pickerel (walleye) fillets"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "cornmeal"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "paprika"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "lemon, cut into wedges"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Mix the flour, cornmeal, paprika, salt and pepper in a shallow dish.",
-        "Pat the fillets dry and coat in the flour mixture.",
-        "Melt the butter in a large skillet over medium-high heat.",
-        "Fry the fillets until golden and the pickerel flakes easily, 3 minutes per side.",
-        "Serve with the lemon wedges."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3088",
-      "name": "Salisbury Steak",
-      "minutes": 35,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.25,
-          "unit": "lb",
-          "item": "ground beef"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "breadcrumbs"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "large egg"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "worcestershire sauce"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "sliced mushrooms"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, sliced"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "beef broth"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Mix the beef, breadcrumbs, egg, Worcestershire, salt and pepper.",
-        "Shape into 4 oval patties.",
-        "Heat the oil in a large skillet over medium-high heat and brown the patties, 3–4 minutes per side.",
-        "Transfer to a plate.",
-        "Cook the mushrooms and onion in the skillet until browned, 6 minutes.",
-        "Sprinkle in the flour and cook 1 minutes.",
-        "Whisk in the broth and simmer until thickened, 2 minutes.",
-        "Return the patties and simmer, covered, until they reach 160°F (71°C), 8–10 minutes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3089",
-      "name": "Chili Mac",
+      "id": "r5019",
+      "name": "Maple Baked Beans with Toast",
       "minutes": 30,
-      "servings": 6,
-      "meal": "dinner",
+      "servings": 4,
+      "meal": "breakfast",
       "tags": [
-        "dinner",
+        "breakfast",
         "main-meal",
+        "dairy-free",
         "high-protein",
         "easy",
-        "moderate",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "lb",
-          "item": "lean ground beef"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, diced"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chili powder"
-        },
-        {
-          "qty": 1,
-          "unit": "tsp",
-          "item": "ground cumin"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "diced tomatoes"
-        },
-        {
-          "qty": 1,
-          "unit": "can",
-          "item": "kidney beans, drained"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "beef broth"
-        },
-        {
-          "qty": 2,
-          "unit": "cup",
-          "item": "elbow macaroni"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "shredded cheddar"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Brown the beef with the onion in a large pot over medium-high heat until no pink remains, 6–8 minutes. Drain the fat. Ground meat is done at 160°F (71°C) inside.",
-        "Stir in the chili powder and cumin and cook 30 seconds.",
-        "Add the tomatoes, beans, broth and macaroni and bring to a boil.",
-        "Reduce the heat, cover and simmer, stirring occasionally, until the pasta is tender, 10–12 minutes.",
-        "Season with salt and pepper and stir in half the cheddar.",
-        "Sprinkle with the remaining cheddar, cover until melted and serve."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3090",
-      "name": "Scalloped Potatoes and Ham",
-      "minutes": 90,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "medium",
         "budget",
         "canadian"
       ],
       "ingredients": [
         {
-          "qty": 3,
-          "unit": "lb",
-          "item": "russet potatoes, thinly sliced"
-        },
-        {
           "qty": 2,
-          "unit": "cup",
-          "item": "diced cooked ham"
+          "unit": "can",
+          "item": "navy beans (540 ml each), drained and rinsed"
+        },
+        {
+          "qty": 4,
+          "unit": "slice",
+          "item": "bacon, chopped"
         },
         {
           "qty": 1,
           "unit": "",
-          "item": "onion, thinly sliced"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "butter"
-        },
-        {
-          "qty": 3,
-          "unit": "tbsp",
-          "item": "all-purpose flour"
-        },
-        {
-          "qty": 2.5,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "shredded old cheddar"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 350°F (175°C) and butter a 9x13-inch baking dish with a little of the butter.",
-        "Melt the remaining butter in a saucepan, whisk in the flour and cook 1 minutes.",
-        "Whisk in the milk and simmer until thickened, 4–5 minutes.",
-        "Season with salt and pepper.",
-        "Layer a third of the potatoes, half the ham and half the onion in the dish.",
-        "Repeat, then finish with the remaining potatoes.",
-        "Pour the sauce over and top with the cheddar.",
-        "Cover with foil and bake 45 minutes.",
-        "Uncover and bake until the potatoes are tender and golden, 30 minutes."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3091",
-      "name": "Sweet and Sour Meatballs",
-      "minutes": 40,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1.5,
-          "unit": "lb",
-          "item": "lean ground beef"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "breadcrumbs"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "large egg"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "onion, grated"
-        },
-        {
-          "qty": 1,
-          "unit": "cup",
-          "item": "pineapple chunks with juice"
+          "item": "small onion, diced"
         },
         {
           "qty": 0.33,
-          "unit": "cup",
-          "item": "brown sugar"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "rice vinegar"
-        },
-        {
-          "qty": 0.33,
-          "unit": "cup",
-          "item": "ketchup"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "soy sauce"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "cornstarch"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "green bell pepper, diced"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "cooked rice, to serve"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 400°F (200°C).",
-        "Mix the beef, breadcrumbs, egg, onion, salt and pepper and roll into 1-inch balls.",
-        "Bake on a lined baking sheet until they reach 160°F (71°C), 15–18 minutes.",
-        "Whisk the pineapple juice, brown sugar, vinegar, ketchup, soy sauce and cornstarch in a large skillet.",
-        "Simmer over medium heat until thickened, 3 minutes.",
-        "Add the meatballs, pineapple and bell pepper and simmer 5 minutes.",
-        "Serve over rice."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3092",
-      "name": "Maple-Glazed Baked Ham",
-      "minutes": 150,
-      "servings": 10,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "gluten-free",
-        "dairy-free",
-        "medium",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "fully cooked bone-in ham"
-        },
-        {
-          "qty": 0.5,
           "unit": "cup",
           "item": "maple syrup"
         },
         {
           "qty": 2,
           "unit": "tbsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 2,
-          "unit": "tbsp",
-          "item": "brown sugar"
+          "item": "ketchup"
         },
         {
           "qty": 1,
+          "unit": "tbsp",
+          "item": "dijon mustard"
+        },
+        {
+          "qty": 0.5,
           "unit": "cup",
           "item": "water"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "salt and black pepper, to taste"
+        },
+        {
+          "qty": 4,
+          "unit": "slice",
+          "item": "bread, toasted"
         }
       ],
       "steps": [
-        "Preheat the oven to 325°F (165°C).",
-        "Score the ham fat in a diamond pattern and set the ham in a roasting pan.",
-        "Pour the water into the pan.",
-        "Cover loosely with foil and bake 1½ hours.",
-        "Stir the maple syrup, mustard and brown sugar together.",
-        "Uncover the ham, brush with half the glaze and bake 20 minutes.",
-        "Brush with the remaining glaze and bake until glossy and it reaches 140°F (60°C) inside, 15–20 minutes.",
-        "Rest 15 minutes, then slice."
+        "Cook the bacon in a saucepan over medium heat until it starts to crisp, 5 minutes.",
+        "Add the onion and cook until soft, 4 minutes.",
+        "Stir in the maple syrup, ketchup, mustard, and water.",
+        "Add the beans and simmer, stirring now and then, until thick and glossy, 15 minutes.",
+        "Season with salt and pepper and serve over the toasted bread."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     },
     {
-      "id": "r3093",
-      "name": "Pulled Pork Poutine",
-      "minutes": 40,
+      "id": "r5020",
+      "name": "Butter Chicken Poutine",
+      "minutes": 45,
       "servings": 4,
       "meal": "dinner",
       "tags": [
@@ -52742,80 +54876,24 @@
         "gluten-free",
         "high-protein",
         "medium",
-        "moderate",
+        "budget",
         "canadian"
       ],
       "ingredients": [
         {
-          "qty": 2,
+          "qty": 1.5,
           "unit": "lb",
           "item": "frozen thick-cut fries"
         },
         {
-          "qty": 2,
-          "unit": "cup",
-          "item": "pulled pork, warmed"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "cheese curds"
-        },
-        {
-          "qty": 1.5,
-          "unit": "cup",
-          "item": "beef gravy, hot"
-        },
-        {
-          "qty": 0.25,
-          "unit": "cup",
-          "item": "barbecue sauce"
-        },
-        {
-          "qty": 2,
-          "unit": "",
-          "item": "green onions, sliced"
-        }
-      ],
-      "steps": [
-        "Bake the fries according to the package directions until crisp.",
-        "Toss the warm pulled pork with the barbecue sauce.",
-        "Divide the fries among bowls and top with the cheese curds.",
-        "Pour the hot gravy over so the curds start to melt.",
-        "Top with the pulled pork and green onions."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3094",
-      "name": "Ukrainian Holubtsi",
-      "minutes": 120,
-      "servings": 6,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "moderate",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "large head green cabbage"
-        },
-        {
           "qty": 1,
           "unit": "lb",
-          "item": "ground pork"
+          "item": "boneless chicken thighs, cut into bite-size pieces"
         },
         {
-          "qty": 1,
-          "unit": "cup",
-          "item": "long-grain rice, rinsed"
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "butter"
         },
         {
           "qty": 1,
@@ -52824,8 +54902,18 @@
         },
         {
           "qty": 2,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1,
           "unit": "tbsp",
-          "item": "butter"
+          "item": "fresh ginger, grated"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "garam masala"
         },
         {
           "qty": 1,
@@ -52833,94 +54921,38 @@
           "item": "tomato sauce"
         },
         {
-          "qty": 1,
+          "qty": 0.5,
           "unit": "cup",
-          "item": "chicken broth"
+          "item": "heavy cream"
         },
         {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "chopped dill"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
-        }
-      ],
-      "steps": [
-        "Preheat the oven to 350°F (175°C).",
-        "Core the cabbage and simmer it whole in a large pot of water, peeling off the leaves as they soften, 8–10 minutes.",
-        "Drain and trim the thick ribs.",
-        "Melt the butter in a skillet and cook the onion until soft, 5 minutes.",
-        "Mix the pork, uncooked rice, onion, dill, salt and pepper.",
-        "Place 2–3 tbsp filling on each leaf, fold in the sides and roll up.",
-        "Pack the rolls seam-side down in a Dutch oven.",
-        "Pour the tomato sauce and broth over, cover and bake until the rice is tender and the filling reaches 160°F (71°C), 1½ hours."
-      ],
-      "sourceName": "Pantry Week kitchen (original)"
-    },
-    {
-      "id": "r3095",
-      "name": "Cedar Plank Salmon with Maple Glaze",
-      "minutes": 40,
-      "servings": 4,
-      "meal": "dinner",
-      "tags": [
-        "dinner",
-        "main-meal",
-        "dairy-free",
-        "high-protein",
-        "medium",
-        "splurge",
-        "canadian"
-      ],
-      "ingredients": [
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "untreated cedar plank, soaked 1 hour"
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
         },
         {
           "qty": 1.5,
-          "unit": "lb",
-          "item": "salmon fillet"
+          "unit": "cup",
+          "item": "cheese curds"
         },
         {
-          "qty": 3,
+          "qty": 2,
           "unit": "tbsp",
-          "item": "maple syrup"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "soy sauce"
-        },
-        {
-          "qty": 1,
-          "unit": "tbsp",
-          "item": "dijon mustard"
-        },
-        {
-          "qty": 1,
-          "unit": "",
-          "item": "lemon, cut into wedges"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt and black pepper, to taste"
+          "item": "fresh cilantro, chopped"
         }
       ],
       "steps": [
-        "Heat a grill to medium (about 400°F (205°C) / 200°C).",
-        "Whisk the maple syrup, soy sauce and mustard.",
-        "Set the salmon skin-side down on the soaked plank and season with salt and pepper.",
-        "Brush the salmon with half the glaze.",
-        "Grill with the lid closed until the salmon flakes and reaches 145°F (63°C), 15–20 minutes, brushing once more with glaze.",
-        "Serve with the lemon wedges."
+        "Bake the fries according to the package until crisp.",
+        "Melt the butter in a skillet over medium-high heat.",
+        "Brown the chicken, 5 minutes.",
+        "Add the onion and cook until soft, 4 minutes.",
+        "Add the garlic, ginger, and garam masala and stir 1 minute.",
+        "Stir in the tomato sauce and salt and simmer until the chicken reaches 165°F (74°C), 10 minutes.",
+        "Stir in the cream and heat through, 1 minute.",
+        "Pile the fries on plates, scatter with cheese curds, and spoon over the hot butter chicken so the curds soften.",
+        "Garnish with cilantro and serve."
       ],
-      "sourceName": "Pantry Week kitchen (original)"
+      "sourceName": "Pantry Week original"
     }
   ];
   for (var i = 0; i < extra.length; i++) PW_STARTERS.push(extra[i]);

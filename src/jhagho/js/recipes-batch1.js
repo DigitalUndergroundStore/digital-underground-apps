@@ -87,9 +87,9 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
-        "canadian"
+        "british"
       ],
       "ingredients": [
         {
@@ -159,7 +159,7 @@
         "high-protein",
         "medium",
         "budget",
-        "canadian"
+        "indian"
       ],
       "ingredients": [
         {
@@ -344,7 +344,6 @@
         "dinner",
         "main-meal",
         "gluten-free",
-        "high-protein",
         "easy",
         "moderate",
         "canadian"
@@ -401,7 +400,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "canadian"
       ],
@@ -604,10 +603,9 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
-        "hard",
+        "medium",
         "moderate",
-        "canadian"
+        "british"
       ],
       "ingredients": [
         {
@@ -678,9 +676,9 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -755,9 +753,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -825,9 +823,9 @@
         "dinner",
         "main-meal",
         "gluten-free",
-        "medium",
+        "easy",
         "moderate",
-        "canadian"
+        "european"
       ],
       "ingredients": [
         {
@@ -886,9 +884,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
-        "canadian"
+        "european"
       ],
       "ingredients": [
         {
@@ -957,7 +955,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -1029,7 +1027,7 @@
         "vegetarian",
         "easy",
         "budget",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -1090,7 +1088,7 @@
       "tags": [
         "dinner",
         "main-meal",
-        "easy",
+        "medium",
         "moderate",
         "canadian"
       ],
@@ -1152,9 +1150,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -1223,9 +1221,9 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -1285,9 +1283,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -1348,7 +1346,7 @@
         "high-protein",
         "easy",
         "splurge",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -1396,6 +1394,66 @@
       ]
     },
     {
+      "id": "r148",
+      "name": "Weeknight Fish & Chips",
+      "minutes": 35,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "moderate",
+        "british"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "cod fillet"
+        },
+        {
+          "qty": 24,
+          "unit": "oz",
+          "item": "frozen fries"
+        },
+        {
+          "qty": 0.75,
+          "unit": "cup",
+          "item": "flour"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "baking powder"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "cold beer"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 2,
+          "unit": "cup",
+          "item": "vegetable oil"
+        }
+      ],
+      "steps": [
+        "Bake fries at 425°F (220°C) for 20 minutes, flipping once.",
+        "Whisk flour, baking powder, salt, and beer into a batter.",
+        "Heat oil in a deep skillet to 350°F (175°C).",
+        "Dip cod in batter; fry 4 minutes per side until golden and 145°F (63°C) inside.",
+        "Drain on a rack 2 minutes and serve with fries and tartar sauce."
+      ]
+    },
+    {
       "id": "r153",
       "name": "Montreal-Style Bagels with Cream Cheese",
       "minutes": 20,
@@ -1405,7 +1463,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "easy",
+        "medium",
         "budget",
         "canadian"
       ],
@@ -1535,7 +1593,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "collection-comfort",
         "american"
@@ -1601,8 +1659,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "italian"
@@ -1661,7 +1718,7 @@
       "tags": [
         "breakfast",
         "main-meal",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "american"
@@ -1716,7 +1773,7 @@
         "lunch",
         "main-meal",
         "gluten-free",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "american"
@@ -1776,7 +1833,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "american"
@@ -1836,7 +1893,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "collection-comfort",
         "american"
@@ -1896,7 +1953,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "american"
@@ -2098,7 +2155,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-weeknight",
         "american"
@@ -2340,7 +2397,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-crowd",
         "american"
@@ -2455,6 +2512,67 @@
       ]
     },
     {
+      "id": "r171",
+      "name": "Sheet-Pan Fajita Feast",
+      "minutes": 35,
+      "servings": 8,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "moderate",
+        "collection-crowd",
+        "mexican"
+      ],
+      "ingredients": [
+        {
+          "qty": 2,
+          "unit": "lb",
+          "item": "chicken breast"
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "item": "bell pepper"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "yellow onion"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "fajita seasoning"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 16,
+          "unit": "",
+          "item": "flour tortilla"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        }
+      ],
+      "steps": [
+        "Slice chicken, peppers, and onion.",
+        "Toss with oil, seasoning, and salt.",
+        "Roast at 425°F (220°C) 22 minutes, stirring once. The chicken is done at 165°F (74°C) inside.",
+        "Warm tortillas in foil 5 minutes.",
+        "Serve family-style with toppings."
+      ]
+    },
+    {
       "id": "r172",
       "name": "Crowd-Pleasing Meatball Subs",
       "minutes": 45,
@@ -2464,7 +2582,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-crowd",
         "italian"
@@ -2526,7 +2644,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "collection-slow-cooker",
         "mexican"
@@ -2587,7 +2705,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "easy",
         "budget",
         "collection-slow-cooker",
         "indian"
@@ -2636,8 +2754,8 @@
       ],
       "steps": [
         "Dice onion; mince garlic.",
-        "Add chicken, tomatoes, onion, garlic, garam masala, and salt to slow cooker. The chicken is done at 165°F (74°C) inside.",
-        "Cook on low 6 hours.",
+        "Add chicken, tomatoes, onion, garlic, garam masala, and salt to slow cooker.",
+        "Cook on low 6 hours. The chicken is done at 165°F (74°C) inside.",
         "Stir in cream; cook on high 15 minutes.",
         "Serve over rice within 10 minutes."
       ]
@@ -2656,7 +2774,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "budget",
         "collection-slow-cooker",
         "indian"
@@ -2723,7 +2841,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "budget",
         "collection-slow-cooker",
         "american"
@@ -2784,7 +2902,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -2958,7 +3076,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-one-pan",
         "greek"
@@ -3019,7 +3137,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
         "collection-one-pan",
         "american"
@@ -3081,7 +3199,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "collection-one-pan",
         "american"
@@ -3201,7 +3319,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-grill",
         "american"
@@ -3252,7 +3370,7 @@
         "main-meal",
         "vegetarian",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-soup",
         "italian"
@@ -3325,7 +3443,7 @@
         "easy",
         "budget",
         "collection-soup",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -3452,7 +3570,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
         "collection-pub",
         "british"
@@ -3514,7 +3632,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -3581,7 +3699,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-italian",
         "italian"
@@ -3641,7 +3759,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "collection-italian",
         "italian"
@@ -3702,7 +3820,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-texmex",
         "mexican"
@@ -3831,7 +3949,6 @@
         "main-meal",
         "vegetarian",
         "dairy-free",
-        "high-protein",
         "easy",
         "budget",
         "collection-asian",
@@ -3892,11 +4009,10 @@
         "lunch",
         "main-meal",
         "dairy-free",
-        "high-protein",
         "easy",
         "budget",
         "collection-asian",
-        "chinese"
+        "japanese"
       ],
       "ingredients": [
         {
@@ -3941,6 +4057,66 @@
         "Cook noodles 3 minutes; drain.",
         "Divide noodles, broth, spinach, and corn among bowls.",
         "Top with eggs and scallions; serve within 5 minutes."
+      ]
+    },
+    {
+      "id": "r197",
+      "name": "Weekend French Toast Bake",
+      "minutes": 45,
+      "servings": 8,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "easy",
+        "budget",
+        "collection-breakfast",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 12,
+          "unit": "slice",
+          "item": "bread"
+        },
+        {
+          "qty": 6,
+          "unit": "",
+          "item": "egg"
+        },
+        {
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "whole milk"
+        },
+        {
+          "qty": 3,
+          "unit": "tbsp",
+          "item": "maple syrup"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "cinnamon"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "salt"
+        }
+      ],
+      "steps": [
+        "Cube bread and arrange in a buttered dish.",
+        "Whisk eggs, milk, syrup, cinnamon, and salt.",
+        "Pour over bread; soak 10 minutes.",
+        "Bake at 375°F (190°C) 25 minutes until set.",
+        "Rest 5 minutes and serve with extra syrup."
       ]
     },
     {

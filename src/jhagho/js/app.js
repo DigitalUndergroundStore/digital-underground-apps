@@ -1,4 +1,4 @@
-/* Pantry Week v3.14.0 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.14.1 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -1049,7 +1049,7 @@
     if (!recipe) return "";
     if (recipe.sourceUrl) {
       const license = recipe.sourceLicense ? ` (${esc(recipe.sourceLicense)})` : "";
-      return `<p class="source-credit">From <a href="${esc(recipe.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(recipe.sourceName || "source")}</a>${license}</p>`;
+      return `<p class="source-credit">Adapted from <a href="${esc(recipe.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(recipe.sourceName || "source")}</a>${license}</p>`;
     }
     if (recipe.sourceName) return `<p class="source-credit">${esc(recipe.sourceName)}</p>`;
     return "";

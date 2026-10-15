@@ -12,7 +12,7 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "italian"
@@ -157,7 +157,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "american"
@@ -302,7 +302,7 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "american"
@@ -372,7 +372,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-comfort",
         "american"
@@ -444,7 +444,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-one-pan",
         "american"
@@ -581,7 +581,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "easy",
         "budget",
         "collection-slow-cooker",
         "indian"
@@ -641,9 +641,9 @@
       "steps": [
         "Dice onion; mince garlic and ginger.",
         "Stir yogurt with tikka paste and salt.",
-        "Layer onion, chicken, tomatoes, and aromatics in the slow cooker. The chicken is done at 165°F (74°C) inside.",
+        "Layer onion, chicken, tomatoes, and aromatics in the slow cooker.",
         "Spoon yogurt mixture over chicken.",
-        "Cook on low 5 hours; garnish with cilantro and serve with rice."
+        "Cook on low 5 hours; garnish with cilantro and serve with rice. The chicken is done at 165°F (74°C) inside."
       ]
     },
     {
@@ -725,7 +725,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "collection-slow-cooker",
         "american"
@@ -797,7 +797,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-bbq",
         "collection-grill",
@@ -864,7 +864,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "collection-bbq",
         "american"
@@ -993,7 +993,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-bbq",
         "american"
@@ -1118,6 +1118,84 @@
       ]
     },
     {
+      "id": "r219",
+      "name": "Hearty Vegetable Minestrone",
+      "minutes": 45,
+      "servings": 8,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
+        "collection-soup",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "yellow onion"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "carrot"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "celery stalk"
+        },
+        {
+          "qty": 3,
+          "unit": "clove",
+          "item": "garlic"
+        },
+        {
+          "qty": 1,
+          "unit": "can",
+          "item": "cannellini beans"
+        },
+        {
+          "qty": 1,
+          "unit": "can",
+          "item": "diced tomatoes"
+        },
+        {
+          "qty": 6,
+          "unit": "cup",
+          "item": "vegetable broth"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "small pasta"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "italian seasoning"
+        }
+      ],
+      "steps": [
+        "Dice onion, carrot, and celery.",
+        "Sauté vegetables in oil 8 minutes; add garlic 1 minute.",
+        "Pour in broth, tomatoes, beans, and seasoning; simmer 15 minutes.",
+        "Add pasta; cook 9 minutes until tender.",
+        "Adjust salt and serve with olive oil drizzle."
+      ]
+    },
+    {
       "id": "r220",
       "name": "Classic Chicken Noodle Soup",
       "minutes": 40,
@@ -1128,7 +1206,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "collection-soup",
         "american"
@@ -1189,6 +1267,85 @@
       ]
     },
     {
+      "id": "r221",
+      "name": "Spicy Black Bean Soup",
+      "minutes": 35,
+      "servings": 6,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "easy",
+        "budget",
+        "collection-soup",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 2,
+          "unit": "can",
+          "item": "black beans"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "yellow onion"
+        },
+        {
+          "qty": 3,
+          "unit": "clove",
+          "item": "garlic"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "bell pepper"
+        },
+        {
+          "qty": 4,
+          "unit": "cup",
+          "item": "vegetable broth"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "cumin"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "chili powder"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "lime juice"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "olive oil"
+        }
+      ],
+      "steps": [
+        "Dice onion and pepper; mince garlic.",
+        "Sauté aromatics in oil 6 minutes.",
+        "Add beans, broth, cumin, chili, and salt; simmer 12 minutes.",
+        "Blend half the soup smooth; return to pot.",
+        "Finish with lime juice and serve."
+      ]
+    },
+    {
       "id": "r222",
       "name": "Beef and Barley Stew",
       "minutes": 90,
@@ -1199,7 +1356,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "collection-soup",
         "american"
@@ -1269,7 +1426,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "american"
       ],
@@ -1307,12 +1464,12 @@
         {
           "qty": 1.0,
           "unit": "can",
-          "item": "beer (optional)"
+          "item": "beer, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "spices (e.g. salt, pepper) (optional)"
+          "item": "spices (e.g. salt, pepper), optional"
         },
         {
           "qty": 4.0,
@@ -1344,7 +1501,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-soup",
         "italian"
@@ -1415,7 +1572,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-pub",
         "british"
@@ -1471,6 +1628,77 @@
       ]
     },
     {
+      "id": "r226",
+      "name": "Shepherd's Pie Pub Style",
+      "minutes": 55,
+      "servings": 6,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "high-protein",
+        "easy",
+        "splurge",
+        "collection-pub",
+        "british"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "ground lamb"
+        },
+        {
+          "qty": 2,
+          "unit": "lb",
+          "item": "russet potatoes"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "yellow onion"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "frozen peas"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "beef broth"
+        },
+        {
+          "qty": 4,
+          "unit": "tbsp",
+          "item": "butter"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "whole milk"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        }
+      ],
+      "steps": [
+        "Boil potatoes 18 minutes; mash with butter, milk, and half the salt.",
+        "Brown lamb with onion 10 minutes; stir in tomato paste and broth. Ground meat is done at 160°F (71°C) inside.",
+        "Simmer 8 minutes; fold in peas.",
+        "Spread lamb in a baking dish; top with mashed potatoes.",
+        "Bake at 400°F (205°C) 15 minutes until golden."
+      ]
+    },
+    {
       "id": "r227",
       "name": "Bangers and Mash Bowls",
       "minutes": 35,
@@ -1481,7 +1709,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "collection-pub",
         "british"
@@ -1544,7 +1772,7 @@
         "easy",
         "splurge",
         "collection-pub",
-        "british"
+        "american"
       ],
       "ingredients": [
         {
@@ -1607,7 +1835,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-pub",
         "british"
@@ -2046,7 +2274,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-texmex",
         "mexican"
@@ -2349,7 +2577,7 @@
         "splurge",
         "collection-asian",
         "takeout-style",
-        "chinese"
+        "thai"
       ],
       "ingredients": [
         {
@@ -2496,7 +2724,7 @@
         "budget",
         "collection-asian",
         "takeout-style",
-        "chinese"
+        "korean"
       ],
       "ingredients": [
         {
@@ -2565,7 +2793,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
         "collection-asian",
         "takeout-style",
@@ -2636,7 +2864,7 @@
         "breakfast",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "collection-breakfast",
         "american"
@@ -2832,7 +3060,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "easy",
+        "medium",
         "moderate",
         "collection-lunch",
         "greek"
@@ -2904,10 +3132,10 @@
         "vegetarian",
         "vegan",
         "dairy-free",
-        "easy",
+        "medium",
         "budget",
         "collection-lunch",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {

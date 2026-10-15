@@ -13,7 +13,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "latin_american"
       ],
@@ -123,7 +123,7 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -178,7 +178,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -363,12 +363,12 @@
         }
       ],
       "steps": [
-        "Preheat the oven to 180°C (350°F (175°C)).",
+        "Preheat the oven to 180°C (350°F).",
         "Drain the chickpeas or white beans, reserving the liquid.",
         "Mash the peas or beans to a paste.",
         "Combine the mashed peas/beans, the liquid from the can, the meat, milk, salt, pepper, Worcestershire, garlic powder, sage, mustard, and oats in a large bowl and mix thoroughly.",
         "Pour the mixture into an ungreased loaf pan; spread ketchup on top.",
-        "Bake at 180°C (350°F (175°C)) for 1–1¼ hours. Ground meat is done at 160°F (71°C) inside.",
+        "Bake at 180°C (350°F) for 1–1¼ hours. Ground meat is done at 160°F (71°C) inside.",
         "Allow to stand for 15 minutes or so after removing it from the oven before cutting into it."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Meatloaf_V",
@@ -395,7 +395,7 @@
         {
           "qty": 3.0,
           "unit": "",
-          "item": "standard eggs"
+          "item": "eggs"
         },
         {
           "qty": 1.0,
@@ -410,7 +410,7 @@
         {
           "qty": 1.0,
           "unit": "pinch",
-          "item": "ground nutmeg (optional)"
+          "item": "ground nutmeg, optional"
         },
         {
           "qty": 2.0,
@@ -480,7 +480,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -537,7 +537,6 @@
         "lunch",
         "main-meal",
         "gluten-free",
-        "high-protein",
         "medium",
         "budget",
         "french"
@@ -879,7 +878,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "american"
       ],
@@ -940,7 +939,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
         "american"
       ],
@@ -953,27 +952,27 @@
         {
           "qty": null,
           "unit": "",
-          "item": "salt (optional)"
+          "item": "salt, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "ground black pepper (optional)"
+          "item": "ground black pepper, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "cayenne pepper (optional)"
+          "item": "cayenne pepper, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "lemon juice (optional)"
+          "item": "lemon juice, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "olive oil (optional)"
+          "item": "olive oil, optional"
         },
         {
           "qty": 3.0,
@@ -988,12 +987,12 @@
         {
           "qty": null,
           "unit": "",
-          "item": "limes (optional)"
+          "item": "limes, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "shredded cheese (optional)"
+          "item": "shredded cheese, optional"
         }
       ],
       "steps": [
@@ -1019,7 +1018,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "american"
       ],
@@ -1156,9 +1155,9 @@
         "lunch",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
-        "canadian"
+        "american"
       ],
       "ingredients": [
         {
@@ -1258,7 +1257,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -1391,7 +1390,7 @@
         {
           "qty": 2.0,
           "unit": "tsp",
-          "item": "cumin (optional)"
+          "item": "cumin, optional"
         }
       ],
       "steps": [
@@ -1420,7 +1419,6 @@
       "tags": [
         "lunch",
         "main-meal",
-        "high-protein",
         "medium",
         "moderate",
         "italian"
@@ -1508,7 +1506,6 @@
         "vegetarian",
         "gluten-free",
         "dairy-free",
-        "high-protein",
         "medium",
         "budget",
         "african"
@@ -1659,7 +1656,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "indian"
       ],
@@ -1825,7 +1822,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "cheddar cheese, shredded (optional)"
+          "item": "cheddar cheese, shredded, optional"
         }
       ],
       "steps": [
@@ -1855,7 +1852,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
         "southeast_asian"
       ],
@@ -1939,7 +1936,7 @@
         "high-protein",
         "medium",
         "splurge",
-        "american"
+        "greek"
       ],
       "ingredients": [
         {
@@ -2206,7 +2203,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "french"
       ],
@@ -2300,7 +2297,7 @@
         "high-protein",
         "medium",
         "splurge",
-        "caribbean"
+        "latin_american"
       ],
       "ingredients": [
         {
@@ -2470,7 +2467,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
         "middle_eastern"
       ],
@@ -2587,7 +2584,7 @@
       "tags": [
         "dinner",
         "main-meal",
-        "medium",
+        "hard",
         "budget",
         "european"
       ],
@@ -2600,7 +2597,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "salt (optional)"
+          "item": "salt, optional"
         },
         {
           "qty": 250.0,
@@ -2729,7 +2726,6 @@
         "lunch",
         "main-meal",
         "gluten-free",
-        "high-protein",
         "medium",
         "moderate",
         "american"
@@ -2795,8 +2791,7 @@
         "lunch",
         "main-meal",
         "dairy-free",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -2864,7 +2859,7 @@
         "lunch",
         "main-meal",
         "vegetarian",
-        "medium",
+        "hard",
         "budget",
         "italian"
       ],
@@ -2882,7 +2877,7 @@
         {
           "qty": 4.0,
           "unit": "oz",
-          "item": "any topping (optional)"
+          "item": "any topping, optional"
         },
         {
           "qty": 2.0,
@@ -3015,7 +3010,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "easy",
         "moderate",
         "american"
       ],
@@ -3161,7 +3156,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -3228,7 +3222,7 @@
         "high-protein",
         "medium",
         "budget",
-        "american"
+        "indian"
       ],
       "ingredients": [
         {
@@ -3295,7 +3289,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "easy",
         "budget",
         "canadian"
       ],
@@ -3348,7 +3342,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "potato, julienned (optional)"
+          "item": "potato, julienned, optional"
         },
         {
           "qty": 0.5,
@@ -3379,7 +3373,7 @@
         "vegan",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "indian"
       ],
@@ -3412,12 +3406,12 @@
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "cumin seeds (optional)"
+          "item": "cumin seeds, optional"
         },
         {
           "qty": 1.0,
           "unit": "tsp",
-          "item": "nigella seeds (optional)"
+          "item": "nigella seeds, optional"
         },
         {
           "qty": 1.0,
@@ -3551,7 +3545,7 @@
         "high-protein",
         "hard",
         "splurge",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -3678,9 +3672,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
-        "american"
+        "canadian"
       ],
       "ingredients": [
         {
@@ -3741,7 +3735,7 @@
         "vegan",
         "gluten-free",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -3858,7 +3852,7 @@
         }
       ],
       "steps": [
-        "Preheat the oven to 200°C (400°F (205°C), GM 6).",
+        "Preheat the oven to 200°C (400°F, GM 6).",
         "Sift the flour into a bowl.",
         "Rub in the lard and margarine.",
         "Add enough water to bind the mixture into a dough.",
@@ -4237,7 +4231,7 @@
         "main-meal",
         "gluten-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "american"
       ],
@@ -4389,8 +4383,7 @@
         "lunch",
         "main-meal",
         "gluten-free",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -4479,7 +4472,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -4563,7 +4556,6 @@
         "Stir in the sliced okra and diced eggplant.",
         "Let the stew simmer for another 5–7 minutes, or until the vegetables are tender.",
         "Season the stew with salt and ground black pepper to taste.",
-        "Adjust the seasoning according to the preference.",
         "Remove the pot from the heat and let the stew rest for a few minutes before serving."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Liberian_Palm_Oil_Stew",
@@ -4582,7 +4574,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -4659,7 +4651,6 @@
         "Add ground crayfish and ogiri if using.",
         "Add chopped vegetables and stir gently.",
         "Allow to cook for 3–5 minutes (do not overcook the vegetables).",
-        "Adjust seasoning with salt or seasoning cubes.",
         "Remove from heat and serve hot."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Efo_Riro",
@@ -4677,7 +4668,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -4862,9 +4853,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
-        "african"
+        "european"
       ],
       "ingredients": [
         {
@@ -5049,7 +5040,6 @@
         "Using a blender, purée the soup until smooth and creamy. If using a regular blender, allow the soup to cool slightly before blending, and be careful when transferring hot liquids.",
         "Return the soup to the pot and place it back over low heat.",
         "Stir in the lemon juice and season the soup with salt and pepper to taste.",
-        "Adjust the seasoning according to the preference.",
         "Continue to heat the soup for a few more minutes until it is warmed through.",
         "Ladle the soup into bowls and garnish with chopped parsley or cilantro. Serve hot."
       ],
@@ -5141,7 +5131,7 @@
         "Brush the grill or grill pan with olive oil to prevent sticking.",
         "Place the meatball skewers on the grill or grill pan and cook for about 10–12 minutes, turning them occasionally to ensure even cooking. The meatballs should be browned and cooked through. Ground meat is done at 160°F (71°C) inside.",
         "Once cooked, remove the meatball skewers from the grill or grill pan and transfer them to a serving platter.",
-        "Serve the kofta hot, garnished with fresh parsley or cilantro. They can be enjoyed on their own as a main course or used in sandwiches, wraps, or other dishes."
+        "Serve the kofta hot, garnished with fresh parsley or cilantro."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Egyptian_Meatballs_(Kofta)",
       "sourceName": "Wikibooks Cookbook",
@@ -5159,7 +5149,7 @@
         "vegetarian",
         "vegan",
         "dairy-free",
-        "hard",
+        "medium",
         "budget",
         "african"
       ],
@@ -5240,7 +5230,6 @@
         "Add the trimmed and washed okra pods to the saucepan and stir gently to coat them with the tomato sauce.",
         "Reduce the heat to low, cover the saucepan with a lid, and let the stew simmer for about 20–25 minutes, or until the okra pods are tender.",
         "Stir the stew occasionally to prevent sticking and ensure even cooking.",
-        "Once the okra is cooked, taste the stew and adjust the seasoning according to the preference.",
         "Remove the saucepan from the heat and let the stew sit for a few minutes to allow the flavors to develop.",
         "Serve the stew hot as a main course with rice or bread the delicious flavors of the tender okra and aromatic spices."
       ],
@@ -5258,7 +5247,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "easy",
         "budget",
         "american"
@@ -5324,7 +5312,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "african"
       ],
@@ -5402,8 +5390,7 @@
         "Stir again to ensure even distribution of the ingredients.",
         "Bring the mixture to a boil, then reduce the heat to low and let it simmer for about 1 hour, or until the beef is tender.",
         "Add the chopped cocoyam leaves to the pot and stir to incorporate them into the mixture.",
-        "Cover the pot and cook for an additional 15–20 minutes, or until the cocoyam leaves are cooked and tender.",
-        "Taste and adjust the seasoning if needed, adding more salt or spices according to the preference."
+        "Cover the pot and cook for an additional 15–20 minutes, or until the cocoyam leaves are cooked and tender."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ekwang_(Cameroonian_Taro_Leaf_Stew)",
       "sourceName": "Wikibooks Cookbook",
@@ -5419,8 +5406,7 @@
         "lunch",
         "main-meal",
         "gluten-free",
-        "high-protein",
-        "easy",
+        "hard",
         "moderate",
         "indian"
       ],
@@ -5615,7 +5601,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "chile pepper (optional)"
+          "item": "chile pepper, optional"
         },
         {
           "qty": null,

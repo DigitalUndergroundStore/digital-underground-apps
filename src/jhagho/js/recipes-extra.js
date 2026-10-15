@@ -86,7 +86,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "latin_american"
       ],
@@ -538,7 +538,7 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "easy",
+        "medium",
         "budget",
         "greek"
       ],
@@ -819,7 +819,7 @@
         "high-protein",
         "medium",
         "budget",
-        "canadian"
+        "southeast_asian"
       ],
       "ingredients": [
         {
@@ -1035,8 +1035,7 @@
         "Stir in the spinach until it wilts.",
         "Taste and add more salt if needed.",
         "Spoon the rice into bowls and top with the lentils."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r52",
@@ -1140,8 +1139,7 @@
         "Grill or broil 10 to 12 minutes, turning a few times, until charred and 165°F (74°C) inside.",
         "Cut the lime into wedges.",
         "Serve the skewers over the rice with the lime."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r53",
@@ -1227,8 +1225,7 @@
         "Stir the roasted eggplant into the sauce.",
         "Bake in the skillet for 15 minutes, until bubbling.",
         "Top with spoonfuls of yogurt and the parsley. Serve warm."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r54",
@@ -1323,8 +1320,7 @@
         "Stir the cornstarch into the water, pour it in, and simmer 1 minute until the sauce turns glossy.",
         "Sprinkle with the scallions and the rest of the Sichuan pepper.",
         "Serve over the rice."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r56",
@@ -1387,8 +1383,7 @@
         "Smooth the top and cook 30 seconds more, until just set but still moist.",
         "Roll the omelette onto a plate, folding it in thirds.",
         "Sprinkle with the rest of the herbs."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r58",
@@ -1481,8 +1476,7 @@
         "Whisk the remaining 3 tbsp oil, lemon juice, garlic, remaining sumac, and remaining salt.",
         "Toss the vegetables, parsley, and pita chips with the dressing.",
         "Top with the chicken and serve right away."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r60",
@@ -1497,7 +1491,7 @@
         "high-protein",
         "easy",
         "splurge",
-        "canadian"
+        "japanese"
       ],
       "ingredients": [
         {
@@ -1555,6 +1549,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
+        "high-protein",
         "medium",
         "budget",
         "indian"
@@ -1638,8 +1633,7 @@
         "Stir in the spinach purée, salt, and cream. Simmer 5 minutes.",
         "Fold in the paneer and heat through for 2 minutes.",
         "Serve with the rice."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r64",
@@ -1651,7 +1645,6 @@
         "lunch",
         "main-meal",
         "dairy-free",
-        "high-protein",
         "medium",
         "budget",
         "chinese"
@@ -1711,8 +1704,7 @@
         "Stir the soup in one direction and slowly pour in the eggs in a thin stream so they form ribbons.",
         "Turn off the heat. Stir in the sesame oil and white pepper.",
         "Slice the scallions, sprinkle them over, and serve."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r69",
@@ -1911,8 +1903,7 @@
         "Add the peas and simmer 3 minutes.",
         "Stir in the mint, salt, and pepper.",
         "Blend until smooth. Stir in the cream and serve with the bread."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r72",
@@ -2046,9 +2037,9 @@
         "vegetarian",
         "vegan",
         "dairy-free",
-        "easy",
+        "medium",
         "budget",
-        "canadian"
+        "southeast_asian"
       ],
       "ingredients": [
         {
@@ -2112,9 +2103,9 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
-        "caribbean"
+        "latin_american"
       ],
       "ingredients": [
         {
@@ -2191,8 +2182,7 @@
         "Bring the reserved mojo to a boil in a small pan for 1 minute.",
         "Fill bowls with rice, drained beans, and pork.",
         "Spoon over the hot mojo and top with the red onion and sliced avocado."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r77",
@@ -2284,8 +2274,7 @@
         "Stir the onion mixture into the lentils and simmer 5 minutes.",
         "Add a splash of water if it is too thick.",
         "Serve the dal over the rice, topped with the cilantro."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r78",
@@ -2298,7 +2287,6 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "high-protein",
         "medium",
         "budget",
         "mediterranean"
@@ -2362,8 +2350,7 @@
         "Mash or blend the potatoes into the broth until mostly smooth.",
         "Add the kale and sausage and simmer 5 minutes.",
         "Season with the salt and pepper and drizzle each bowl with the remaining oil."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r79",
@@ -2462,8 +2449,7 @@
         "Halve the potatoes and eggs and slice the cucumber.",
         "Arrange the potatoes, green beans, bean sprouts, cucumber, tofu, and eggs on plates.",
         "Spoon the peanut sauce over and serve."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r80",
@@ -2536,8 +2522,7 @@
         "Fry the cutlets 2 to 3 minutes per side, until golden and cooked through. The pork is done at 145°F (63°C) inside; rest 3 minutes.",
         "Drain on paper towels.",
         "Cut the lemon into wedges and serve with the schnitzel and the mustard."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r84",
@@ -2626,8 +2611,7 @@
         "Add the shrimp and simmer 3 to 4 minutes, until pink and cooked through.",
         "Squeeze in the juice of the lime and stir in the basil.",
         "Serve over the rice."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r87",
@@ -2701,8 +2685,7 @@
         "Rest the chops 5 minutes.",
         "Toss the potatoes and beans with the remaining oil and the juice of the lemon.",
         "Serve with the chops."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r88",
@@ -2797,8 +2780,7 @@
         "Spread the corn over the filling and sprinkle with the sugar.",
         "Bake 35 minutes, until the top is golden.",
         "Rest 10 minutes before serving."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r94",
@@ -2923,7 +2905,7 @@
         "high-protein",
         "medium",
         "budget",
-        "canadian"
+        "southeast_asian"
       ],
       "ingredients": [
         {
@@ -3078,8 +3060,7 @@
         "Heat the oil in a large skillet or grill pan over medium-high heat.",
         "Cook the kofta 8 to 10 minutes, turning often, until browned and 160°F (71°C) inside.",
         "Warm the pitas and serve them with the kofta and yogurt sauce."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r103",
@@ -3273,8 +3254,7 @@
         "Stir the cream and spinach into the sauce until the spinach wilts.",
         "Add the tortellini and toss.",
         "Serve topped with the Parmesan."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r107",
@@ -3416,8 +3396,7 @@
         "Chop the tomatoes and cucumber.",
         "Warm the pitas in a dry skillet 1 minute per side.",
         "Fill them with falafel, lettuce, tomato, cucumber, and the yogurt sauce."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r109",
@@ -3498,8 +3477,7 @@
         "Whisk in the butter and thyme.",
         "Return the chops and their juices to the pan and turn to coat.",
         "Serve with the glaze spooned over."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r112",
@@ -3710,8 +3688,7 @@
         "Stir in most of the coconut milk, keeping a few spoonfuls for the top, and blend until smooth.",
         "Squeeze in the lime juice and taste for salt.",
         "Serve with a swirl of the remaining coconut milk and the cilantro."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r118",
@@ -3780,8 +3757,7 @@
         "Cook without stirring for 2 minutes, until the edges begin to set.",
         "Bake 12 to 15 minutes, until the center is set.",
         "Rest 3 minutes, then cut into wedges."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r119",
@@ -3795,6 +3771,7 @@
         "vegetarian",
         "vegan",
         "dairy-free",
+        "high-protein",
         "easy",
         "budget",
         "japanese"
@@ -3863,8 +3840,7 @@
         "Whisk the soy sauce, vinegar, sesame oil, maple syrup, and ginger.",
         "Toss the noodles, edamame, and vegetables with the dressing.",
         "Sprinkle with the sesame seeds and serve cold."
-      ],
-      "rewritten": true
+      ]
     },
     {
       "id": "r122",
@@ -3998,8 +3974,7 @@
         "Stir in the sesame oil and move the rice to bowls.",
         "Fry the eggs in the oil in the same pan until the whites set.",
         "Top each bowl with an egg and the scallions."
-      ],
-      "rewritten": true
+      ]
     }
   ];
   for (var i = 0; i < extra.length; i++) PW_STARTERS.push(extra[i]);

@@ -14,7 +14,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "canadian"
       ],
@@ -100,7 +100,7 @@
         "high-protein",
         "medium",
         "moderate",
-        "american"
+        "canadian"
       ],
       "ingredients": [
         {
@@ -162,84 +162,6 @@
       "sourceLicense": "CC BY-SA 4.0"
     },
     {
-      "id": "r660",
-      "name": "Potato Omelet",
-      "minutes": 20,
-      "servings": 2,
-      "meal": "breakfast",
-      "tags": [
-        "breakfast",
-        "main-meal",
-        "vegetarian",
-        "gluten-free",
-        "high-protein",
-        "medium",
-        "budget",
-        "american"
-      ],
-      "ingredients": [
-        {
-          "qty": 5.0,
-          "unit": "",
-          "item": "eggs"
-        },
-        {
-          "qty": 1.0,
-          "unit": "tsp",
-          "item": "white granulated sugar"
-        },
-        {
-          "qty": 0.25,
-          "unit": "tsp",
-          "item": "salt"
-        },
-        {
-          "qty": 0.25,
-          "unit": "tsp",
-          "item": "pepper"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "milk"
-        },
-        {
-          "qty": 1.0,
-          "unit": "tbsp",
-          "item": "butter or margarine (optional) (1–2 tbsp)"
-        },
-        {
-          "qty": 1.0,
-          "unit": "",
-          "item": "potato, cut into ¼–½-inch (~1 cm) cubes"
-        },
-        {
-          "qty": 1.0,
-          "unit": "",
-          "item": "small onion, minced or chopped"
-        },
-        {
-          "qty": 0.5,
-          "unit": "cup",
-          "item": "shredded cheese"
-        }
-      ],
-      "steps": [
-        "In a bowl beat together eggs, sugar, salt and pepper. Mix in milk.",
-        "Heat up two frying pans to a medium temperature.",
-        "Use butter, margarine, or cooking spray to grease each pan.",
-        "Add chopped potatoes to one pan.",
-        "Cook potatoes until light brown, then add onions.",
-        "Add half of egg mixture to the other pan.",
-        "Cook omelet mixture until it starts to set (about 1 minute).",
-        "Add onions, potatoes, and cheese on top of partially set omelet.",
-        "Fold plain side of omelet over the filling and cook for an additional 30 seconds."
-      ],
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Potato_Omelet",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceLicense": "CC BY-SA 4.0"
-    },
-    {
       "id": "r662",
       "name": "Ossobuco alla Milanese",
       "minutes": 165,
@@ -248,7 +170,8 @@
       "tags": [
         "dinner",
         "main-meal",
-        "hard",
+        "high-protein",
+        "medium",
         "splurge",
         "italian"
       ],
@@ -432,7 +355,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "small can of sliced mushrooms (optional), drained"
+          "item": "small can of sliced mushrooms, optional, drained"
         }
       ],
       "steps": [
@@ -458,10 +381,9 @@
       "tags": [
         "dinner",
         "main-meal",
-        "vegetarian",
-        "vegan",
         "gluten-free",
         "dairy-free",
+        "high-protein",
         "medium",
         "budget",
         "southeast_asian"
@@ -670,7 +592,6 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -704,7 +625,7 @@
         {
           "qty": 2.0,
           "unit": "",
-          "item": "standard eggs"
+          "item": "eggs"
         },
         {
           "qty": 2.0,
@@ -719,7 +640,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "toasted sesame seeds, for garnish (optional)"
+          "item": "toasted sesame seeds, for garnish, optional"
         }
       ],
       "steps": [
@@ -749,7 +670,6 @@
         "vegetarian",
         "gluten-free",
         "dairy-free",
-        "high-protein",
         "medium",
         "budget",
         "chinese"
@@ -812,7 +732,7 @@
         "high-protein",
         "medium",
         "budget",
-        "american"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -876,7 +796,7 @@
         "main-meal",
         "medium",
         "budget",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -933,8 +853,7 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "caribbean"
       ],
@@ -1000,7 +919,7 @@
         "Beat eggs until fluffy.",
         "Combine macaroni, eggs, cheese, milk, onion, carrot, salt, white pepper, mustard, and butter.",
         "Pour into a greased baking dish and sprinkle shredded cheese and bread crumbs evenly on top.",
-        "Bake at 175°C (350°F (175°C)) until firm (about 30 minutes).",
+        "Bake at 175°C (350°F) until firm (about 30 minutes).",
         "A fork or metal skewer should come out dry when you press it all the way through the pie."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Macaroni_Pie",
@@ -1017,10 +936,9 @@
         "dinner",
         "main-meal",
         "vegetarian",
-        "high-protein",
         "hard",
         "budget",
-        "canadian"
+        "european"
       ],
       "ingredients": [
         {
@@ -1193,7 +1111,7 @@
       "tags": [
         "lunch",
         "main-meal",
-        "easy",
+        "hard",
         "moderate",
         "american"
       ],
@@ -1250,7 +1168,7 @@
         "Stretch and roll the pizza dough out to about 8–12 inches (20–30 cm) in diameter, and place in a pizza pan or on a sheet pan.",
         "Top the dough with the tomatoes, then the cooked onion-pepper mixture.",
         "Scatter the cheeses evenly over top, then arrange the 4 reserved pepper rings decoratively on top.",
-        "Bake for 10 minutes at 220°C (430°F (220°C)), then top with the chorizo and bake for another 5 minutes."
+        "Bake for 10 minutes at 220°C (430°F), then top with the chorizo and bake for another 5 minutes."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pizza_with_Peppers",
       "sourceName": "Wikibooks Cookbook",
@@ -1330,7 +1248,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -1473,7 +1391,7 @@
         {
           "qty": 6.0,
           "unit": "",
-          "item": "shallots, finely sliced and fried until golden brown (optional)"
+          "item": "shallots, finely sliced and fried until golden brown, optional"
         },
         {
           "qty": null,
@@ -1534,7 +1452,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "kolbász (Hungarian sausage) or 1 cup diced ham (optional)"
+          "item": "kolbász (Hungarian sausage) or 1 cup diced ham, optional"
         },
         {
           "qty": 4.0,
@@ -1569,7 +1487,6 @@
       "tags": [
         "lunch",
         "main-meal",
-        "high-protein",
         "medium",
         "budget",
         "american"
@@ -1678,7 +1595,7 @@
         {
           "qty": 20.0,
           "unit": "ml",
-          "item": "butter (optional)"
+          "item": "butter, optional"
         },
         {
           "qty": null,
@@ -1724,7 +1641,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "medium",
+        "easy",
         "budget",
         "indian"
       ],
@@ -1855,7 +1772,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "thyme (optional)"
+          "item": "thyme, optional"
         }
       ],
       "steps": [
@@ -1882,7 +1799,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "medium",
+        "hard",
         "budget",
         "canadian"
       ],
@@ -1911,7 +1828,7 @@
       "steps": [
         "Slice potatoes into finger-width fries and rinse them well to remove any dirt.",
         "Begin warming gravy, keep the temperature low enough for a slow heating.",
-        "Heat oil to 185°C (365°F (185°C)).",
+        "Heat oil to 185°C (365°F).",
         "Cook sliced potatoes in the oil for about 5 minutes.",
         "Following a first frying to cook the potatoes, they are often removed and then fried again for about 1 minute to crisp the outside.",
         "Remove the fries from the oil; optionally place them on a paper towel mat to absorb excess oil.",
@@ -2052,7 +1969,7 @@
         "dinner",
         "main-meal",
         "high-protein",
-        "medium",
+        "easy",
         "moderate",
         "european"
       ],
@@ -2070,22 +1987,22 @@
         {
           "qty": null,
           "unit": "",
-          "item": "any kind of cooked chicken, pork, or beef (optional)"
+          "item": "any kind of cooked chicken, pork, or beef, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "any kind of sausage or hot dogs (optional)"
+          "item": "any kind of sausage or hot dogs, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "vegetables (optional), such as tomatoes, peppers, small hot pepper, mushrooms, cooked potatoes"
+          "item": "vegetables, optional, such as tomatoes, peppers, small hot pepper, mushrooms, cooked potatoes"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "fresh greens (optional), such as parsley, dill, celery leaves"
+          "item": "fresh greens, optional, such as parsley, dill, celery leaves"
         },
         {
           "qty": 1.0,
@@ -2102,7 +2019,7 @@
         "Chop or dice everything you want to put in.",
         "Alternate layers of cheese, meat, and vegetables in a baking dish.",
         "Finish with cheese on top.",
-        "Bake in the oven at 200°C (375°F (190°C)) for 20 minutes or until the cheese is melted.",
+        "Bake in the oven at 200°C (375°F) for 20 minutes or until the cheese is melted.",
         "Break the egg on top and put back in the oven for another 5–10 minutes depending on how well-done you like the eggs.",
         "Serve with fresh bread or toast."
       ],
@@ -2122,7 +2039,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -2145,7 +2062,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "chopped vegetables (optional)"
+          "item": "chopped vegetables, optional"
         }
       ],
       "steps": [
@@ -2232,8 +2149,7 @@
         "breakfast",
         "main-meal",
         "vegetarian",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -2349,7 +2265,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "herbes de Provence to taste or 1 small bunch basil (optional), chiffoned"
+          "item": "herbes de Provence to taste or 1 small bunch basil, optional, chiffoned"
         }
       ],
       "steps": [
@@ -2569,7 +2485,7 @@
         {
           "qty": 100.0,
           "unit": "g",
-          "item": "feta cheese (optional)"
+          "item": "feta cheese, optional"
         },
         {
           "qty": null,
@@ -2861,8 +2777,7 @@
         "lunch",
         "main-meal",
         "dairy-free",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "mediterranean"
       ],
@@ -2938,7 +2853,7 @@
         "high-protein",
         "hard",
         "moderate",
-        "american"
+        "italian"
       ],
       "ingredients": [
         {
@@ -3039,7 +2954,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "splurge",
         "african"
       ],
@@ -3139,7 +3054,7 @@
         "main-meal",
         "gluten-free",
         "dairy-free",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -3390,7 +3305,7 @@
         "main-meal",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "american"
       ],
@@ -3602,7 +3517,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "honey, brown sugar, or maple syrup (optional)"
+          "item": "honey, brown sugar, or maple syrup, optional"
         }
       ],
       "steps": [
@@ -3630,7 +3545,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "moderate",
         "southeast_asian"
       ],
@@ -3698,7 +3613,7 @@
         {
           "qty": null,
           "unit": "",
-          "item": "MSG (optional)"
+          "item": "MSG, optional"
         },
         {
           "qty": 3.0,
@@ -3786,7 +3701,7 @@
         {
           "qty": 2.0,
           "unit": "package",
-          "item": "gluten-free baked tofu, teriyaki flavor, diced into ¼-inch squares (optional)"
+          "item": "gluten-free baked tofu, teriyaki flavor, diced into ¼-inch squares, optional"
         },
         {
           "qty": 1.0,
@@ -3897,7 +3812,6 @@
       "tags": [
         "dinner",
         "main-meal",
-        "high-protein",
         "medium",
         "budget",
         "italian"
@@ -4009,7 +3923,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "small dried chile peppers, chopped (optional) (1–3)"
+          "item": "small dried chile peppers, chopped, optional (1–3)"
         },
         {
           "qty": 900.0,
@@ -4095,12 +4009,12 @@
         {
           "qty": 225.0,
           "unit": "g",
-          "item": "canned, shelled clams, thoroughly rinsed (optional)"
+          "item": "canned, shelled clams, thoroughly rinsed, optional"
         },
         {
           "qty": 120.0,
           "unit": "ml",
-          "item": "bottled clam broth (optional)"
+          "item": "bottled clam broth, optional"
         },
         {
           "qty": 1.0,
@@ -4233,7 +4147,7 @@
         }
       ],
       "steps": [
-        "Preheat oven to 180°C (350°F (175°C)).",
+        "Preheat oven to 180°C (350°F).",
         "Wash the spinach, remove large stems, and chop. Place in a steamer over boiling water and steam for 2 minutes, or until wilted and reduced in volume. Drain, pressing out any liquid with the back of a spoon.",
         "Heat the oil in a large skillet. Add onion and cook over medium heat until slightly tender. Add scallions and cook until limp. Remove from heat. Stir in parsley, dill, nutmeg, salt and pepper.",
         "Add the cheeses, spinach, and lemon juice to the skillet. Mix. Add eggs and mix again gently.",
@@ -4260,7 +4174,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "hard",
+        "medium",
         "budget",
         "mediterranean"
       ],
@@ -4273,7 +4187,7 @@
         {
           "qty": 1.0,
           "unit": "",
-          "item": "large white/Spanish onion (optional)"
+          "item": "large white/Spanish onion, optional"
         },
         {
           "qty": 1.0,
@@ -4415,8 +4329,7 @@
       "tags": [
         "lunch",
         "main-meal",
-        "high-protein",
-        "medium",
+        "easy",
         "budget",
         "italian"
       ],
@@ -4449,17 +4362,17 @@
         {
           "qty": null,
           "unit": "",
-          "item": "~½ tsp nutmeg (optional)"
+          "item": "~½ tsp nutmeg, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "semolina (optional)"
+          "item": "semolina, optional"
         },
         {
           "qty": null,
           "unit": "",
-          "item": "red chile flakes, or chile powder (optional)"
+          "item": "red chile flakes, or chile powder, optional"
         }
       ],
       "steps": [
@@ -4485,7 +4398,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "medium",
+        "easy",
         "budget",
         "american"
       ],
@@ -4527,7 +4440,6 @@
         "Reduce heat to low, stirring occasionally until until grits begin to thicken.",
         "Cover and continue to cook on low heat for about 5–6 minutes.",
         "Stir occasionally to avoid sticking. If the grits become too thick, stir in a small amount of water.",
-        "Adjust the seasoning before serving, adding black pepper to taste.",
         "Serve with a pat of margarine, butter, or grated cheese on top."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Grits_with_Cheese",
@@ -4779,7 +4691,7 @@
         {
           "qty": 1.0,
           "unit": "dash",
-          "item": "tobacco (optional)"
+          "item": "tobacco, optional"
         },
         {
           "qty": null,
@@ -4810,64 +4722,6 @@
         "Serve with mashed potatoes and honey carrots."
       ],
       "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sweet_Beef",
-      "sourceName": "Wikibooks Cookbook",
-      "sourceLicense": "CC BY-SA 4.0"
-    },
-    {
-      "id": "r836",
-      "name": "Sylheti Fried Rice",
-      "minutes": 30,
-      "servings": 4,
-      "meal": "lunch",
-      "tags": [
-        "lunch",
-        "main-meal",
-        "vegetarian",
-        "vegan",
-        "gluten-free",
-        "dairy-free",
-        "medium",
-        "budget",
-        "indian"
-      ],
-      "ingredients": [
-        {
-          "qty": 2.0,
-          "unit": "cup",
-          "item": "leftover cooked rice (cooked and cooled at least 12 hours in advance)"
-        },
-        {
-          "qty": 2.0,
-          "unit": "tbsp",
-          "item": "vegetable oil"
-        },
-        {
-          "qty": 1.0,
-          "unit": "",
-          "item": "onion, finely chopped (optional)"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "salt to taste"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "fresh cilantro leaves and spearmint for garnish"
-        }
-      ],
-      "steps": [
-        "Heat vegetable oil in a large pan or wok over medium heat.",
-        "Add the finely chopped onion and sauté until it turns translucent.",
-        "Add the leftover cooked rice to the pan and stir well.",
-        "Season with salt according to the taste.",
-        "Be cautious as the rice might already have some salt from the previous meal.",
-        "Cook for a few minutes, stirring occasionally, until the rice is heated through and starts to turn slightly crispy.",
-        "Once done, remove from heat.",
-        "Garnish with fresh cilantro leaves if desired."
-      ],
-      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Sylheti_Fried_Rice",
       "sourceName": "Wikibooks Cookbook",
       "sourceLicense": "CC BY-SA 4.0"
     },
@@ -4974,7 +4828,7 @@
         "gluten-free",
         "dairy-free",
         "high-protein",
-        "medium",
+        "easy",
         "splurge",
         "american"
       ],
@@ -5091,7 +4945,7 @@
         {
           "qty": 0.25,
           "unit": "tsp",
-          "item": "hot sauce, or to taste (optional) (0.25–½ tsp)"
+          "item": "hot sauce, or to taste, optional (0.25–½ tsp)"
         },
         {
           "qty": null,
@@ -5123,7 +4977,7 @@
         "main-meal",
         "vegetarian",
         "gluten-free",
-        "hard",
+        "medium",
         "budget",
         "french"
       ],

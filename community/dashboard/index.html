@@ -329,7 +329,6 @@
         if (d.ok) { show(m, "Sent, we'll reply by email.", true); f.reset(); } else show(m, d.error || "Could not send.", false);
       }).catch(function () { btn.disabled = false; show(m, "Network error.", false); });
   });
-  });
 
   load();
 })();

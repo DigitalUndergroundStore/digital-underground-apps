@@ -193,6 +193,7 @@ export function creatorListing(row) {
     videoFile: row.videoFile || null,
     video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
     pendingVideo: row.pendingVideo && row.pendingVideo.url ? { url: row.pendingVideo.url, file: row.pendingVideo.file || null, media: mediaFor(row.pendingVideo.url, row.pendingVideo.file), poster: row.pendingVideo.poster || "" } : null,
+    pendingRevision: row.pendingRevision ? { status: "pending owner approval", at: row.pendingRevision.at, fields: { ...row.pendingRevision.fields, imageUrl: row.pendingRevision.fields.imageUrl === undefined ? undefined : row.pendingRevision.fields.imageUrl.startsWith("data:") ? "(uploaded image)" : row.pendingRevision.fields.imageUrl } } : null,
     imagePreview: row.imageUrl || "",
     tags: Array.isArray(row.tags) ? row.tags : [],
     category: row.category,

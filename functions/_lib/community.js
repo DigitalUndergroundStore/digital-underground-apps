@@ -338,7 +338,7 @@ export async function listPending(kv) {
   }
   for (const id of [...(index.approved || []), ...(index.unpublished || [])]) {
     const row = await kvGetListing(kv, id);
-    if (row && row.pendingVideo && row.pendingVideo.url) out.push(row);
+    if (row && ((row.pendingVideo && row.pendingVideo.url) || row.pendingRevision)) out.push(row);
   }
   out.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
   return out;

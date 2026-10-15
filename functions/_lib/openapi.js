@@ -5,7 +5,7 @@ const Listing = {
     id: { type: "string" }, status: { type: "string", enum: ["pending", "approved", "rejected", "unpublished"] },
     name: { type: "string" }, projectUrl: { type: "string" }, pitchShort: { type: "string" }, descriptionLong: { type: "string" },
     imageUrl: { type: "string" }, videoUrl: { type: "string" }, tags: { type: "array", items: { type: "string" } },
-    pendingVideo: { type: "object", nullable: true }, reasons: { type: "array", items: { type: "string" } },
+    pendingVideo: { type: "object", nullable: true }, pendingRevision: { type: "object", nullable: true, description: "An API edit to an approved listing waiting for owner approval (status: \"pending owner approval\"). The approved version stays live until the owner approves it." }, reasons: { type: "array", items: { type: "string" } },
     createdAt: { type: "integer" }, updatedAt: { type: "integer" },
   },
 };
@@ -47,7 +47,7 @@ export const OPENAPI = {
     "/listings/{id}": {
       parameters: [{ name: "id", in: "path", required: true, schema: { type: "string" } }],
       get: { operationId: "getListing", summary: "Get one of your listings and its review status", responses: { 200: { description: "OK", content: { "application/json": { schema: { type: "object", properties: { listing: { $ref: "#/components/schemas/Listing" } } } } } }, 404: err } },
-      patch: { operationId: "updateListing", summary: "Update one of your listings (re-screened)", requestBody: { required: true, content: { "application/json": { schema: { $ref: "#/components/schemas/Update" } } } }, responses: { 200: { description: "OK" }, 400: err, 404: err, 429: err } },
+      patch: { operationId: "updateListing", summary: "Update one of your listings (re-screened)", description: "Edits to a listing that is not yet approved update it in place and it stays in the owner queue. Edits to an approved listing are stored as a pending revision: the approved version stays live unchanged, the response is 202 with status \"pending owner approval\", and the owner approves (applies) or rejects (discards) it. A newer edit replaces an older pending revision. 422 means the edit failed screening.", requestBody: { required: true, content: { "application/json": { schema: { $ref: "#/components/schemas/Update" } } } }, responses: { 200: { description: "Updated (listing was not yet approved; still waiting for owner approval)" }, 202: { description: "Edit to an approved listing saved as a pending revision: pending owner approval" }, 400: err, 404: err, 422: err, 429: err } },
     },
   },
 };

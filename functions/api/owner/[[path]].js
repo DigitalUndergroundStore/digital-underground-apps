@@ -107,6 +107,23 @@ export async function onRequest(context) {
     const action = body.action;
     const id = typeof body.id === "string" ? body.id.trim() : "";
     if (!id) return json({ error: "Missing listing." }, 400);
+    if (action === "approve_revision" || action === "reject_revision") {
+      const row = await kvGetListing(kv, id);
+      if (!row || !row.pendingRevision) return json({ error: "No edit waiting on this listing." }, 404);
+      let drop = null;
+      if (action === "approve_revision") {
+        const f = row.pendingRevision.fields || {};
+        const { uploadVid } = await import("../../_lib/video.js");
+        if (f.videoUrl !== undefined && f.videoUrl !== row.videoUrl) { drop = uploadVid(row.videoUrl); row.videoUrl = f.videoUrl; delete row.videoFile; }
+        for (const k of ["name", "projectUrl", "visitUrl", "pitchShort", "descriptionLong", "tags", "imageUrl"]) if (f[k] !== undefined) row[k] = f[k];
+        row.revisedAt = Date.now();
+      }
+      delete row.pendingRevision;
+      row.updatedAt = Date.now();
+      await kvPutListing(kv, row);
+      if (drop) { const { deleteVideo } = await import("../../_lib/video.js"); await deleteVideo(kv, drop).catch(() => {}); }
+      return json({ ok: true, listing: row });
+    }
     if (action === "approve_video" || action === "reject_video") {
       const row = await kvGetListing(kv, id);
       if (!row || !row.pendingVideo) return json({ error: "No video waiting on this listing." }, 404);

@@ -11,6 +11,6 @@
 - Human docs: https://digitalundergroundstore.com/community/api/
 - Create: `POST /api/v1/listings` with JSON {name, projectUrl, category (apps|ai-tools|books|templates|other), pitchShort (≤280), descriptionLong (≤4000), imageUrl (https) or imageData (data URL ≤750 KB), tags, priceLabel, videoUrl?, terms: true}
 - Status: `GET /api/v1/listings/{id}` (pending → approved/rejected). New listings always wait for owner approval; nothing is auto-published.
-- Update: `PATCH /api/v1/listings/{id}` with only the fields to change.
+- Update: `PATCH /api/v1/listings/{id}` with only the fields to change. Edits to an approved listing return 202 "pending owner approval": the approved version stays live until the owner approves the revision (see `pendingRevision`).
 - Limits: 10 writes/hour and 50 writes/day per key. HTTP 429 includes Retry-After.
 - Only submit real products the creator owns, with accurate claims. Listings are screened automatically and reviewed by a human.

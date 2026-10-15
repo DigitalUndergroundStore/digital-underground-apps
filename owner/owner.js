@@ -121,8 +121,27 @@
         var reasonHtml = reasons.length
           ? '<p class="small">Why it’s here: ' + esc(reasons.join("; ")) + "</p>"
           : "";
+        var rv = row.pendingRevision && row.status !== "pending" ? row.pendingRevision.fields || {} : null;
+        if (rv) {
+          var ch = [];
+          [["name", "Title"], ["pitchShort", "Tagline"], ["descriptionLong", "Description"], ["projectUrl", "URL"], ["tags", "Tags"], ["imageUrl", "Image"], ["videoUrl", "Video"]].forEach(function (p) {
+            if (rv[p[0]] === undefined) return;
+            var nv = Array.isArray(rv[p[0]]) ? rv[p[0]].join(", ") : String(rv[p[0]] || "");
+            var ov = Array.isArray(row[p[0]]) ? row[p[0]].join(", ") : String(row[p[0]] || "");
+            if (nv === ov) return;
+            var show = /^data:/.test(nv) ? "(new uploaded image)" : nv || "(removed)";
+            ch.push('<li><b>' + p[1] + ':</b> ' + esc(show.length > 300 ? show.slice(0, 300) + "…" : show) + "</li>");
+          });
+          reasonHtml += '<div class="small rev"><p><b>API edit waiting</b>: the approved version stays live until you approve.</p><ul>' + (ch.join("") || "<li>No visible changes</li>") + "</ul></div>";
+        }
         var actions =
-          tab === "pending" && pv && row.status !== "pending"
+          tab === "pending" && rv
+            ? '<div class="actions">' +
+              '<button type="button" class="btn ok" data-act="approve_revision" data-id="' + esc(row.id) + '">Approve edit</button>' +
+              '<button type="button" class="btn danger" data-act="reject_revision" data-id="' + esc(row.id) + '">Reject edit</button>' +
+              (pv ? '<button type="button" class="btn ok" data-act="approve_video" data-id="' + esc(row.id) + '">Approve video</button><button type="button" class="btn danger" data-act="reject_video" data-id="' + esc(row.id) + '">Reject video</button>' : "") +
+              "</div>"
+          : tab === "pending" && pv && row.status !== "pending"
             ? '<div class="actions">' +
               '<button type="button" class="btn ok" data-act="approve_video" data-id="' + esc(row.id) + '">Approve video</button>' +
               '<button type="button" class="btn danger" data-act="reject_video" data-id="' + esc(row.id) + '">Reject video</button>' +
@@ -366,6 +385,7 @@
       var action = act.getAttribute("data-act");
       var id = act.getAttribute("data-id");
       var body = { action: action, id: id };
+      if (action === "reject_revision" && !confirm("Discard this API edit? The live listing stays as it is.")) return;
       if (action === "reject_video" && !confirm("Reject this video? The listing stays live with its current media.")) return;
       if (action === "reject") {
         var reason = prompt("Optional reject reason (makers may see this later):", "") || "";

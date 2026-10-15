@@ -72,7 +72,7 @@
 curl -X PATCH https://digitalundergroundstore.com/api/v1/listings/LISTING_ID \
   -H "Authorization: Bearer $DU_KEY" -H "Content-Type: application/json" \
   -d '{"pitchShort": "A sharper tagline."}'</code></pre>
-  <p>Updates are re-screened. An approved listing stays live while a new video waits for review.</p>
+  <p>Updates are re-screened. If the listing is already approved, your edit is saved as a revision <b>pending owner approval</b> (HTTP 202): the approved version stays live unchanged until the owner approves it, or the owner rejects and discards it. Check <code>pendingRevision</code> on <code>GET /api/v1/listings/{id}</code>. A newer edit replaces an older one waiting for review.</p>
 
   <h2>Endpoints</h2>
   <table>

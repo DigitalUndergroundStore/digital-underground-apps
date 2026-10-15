@@ -7,7 +7,7 @@
  *   GET    /api/v1/listings/{id}       status + fields
  *   PATCH  /api/v1/listings/{id}       update own listing (re-screened; approved listings stay live)
  */
-import { getKv, json, saveListing, validateSubmission, notifySubmission } from "../../_lib/community.js";
+import { getKv, json, saveListing, validateSubmission, notifySubmission, kvPutListing, appendRefParam } from "../../_lib/community.js";
 import { attachListing, creatorListing, ownedListing, signSession, SESSION_COOKIE } from "../../_lib/creator.js";
 import { screenListing } from "../../_lib/community-screening.js";
 import { authKey, takeWrite, WRITES_PER_DAY, WRITES_PER_HOUR } from "../../_lib/apikeys.js";
@@ -88,6 +88,7 @@ export async function onRequest(context) {
   // PATCH: reuse the Creator dashboard's edit action (same validation, screening, media rules, edit budget).
   const row = await ownedListing(kv, acct, id);
   if (!row) return out({ error: "Listing not found." }, 404, rlh);
+  if (row.status === "approved") return revise(context, kv, acct, key, row, b, rlh);
   const fields = {
     name: b.name ?? row.name, projectUrl: b.projectUrl ?? row.projectUrl, pitchShort: b.pitchShort ?? row.pitchShort,
     descriptionLong: b.descriptionLong ?? row.descriptionLong, tags: b.tags ?? (row.tags || []).join(", "),
@@ -105,4 +106,45 @@ export async function onRequest(context) {
   const r = await creatorApi({ ...context, request: inner });
   const d = await r.json().catch(() => ({}));
   return out(d.ok ? { ok: true, listing: d.listing } : { error: d.error || "Update failed." }, r.status, rlh);
+}
+
+/**
+ * API edits to an approved listing never go live directly. The approved version stays public unchanged and the
+ * edit is stored as row.pendingRevision for the owner to approve (applies it) or reject (discards it).
+ * A newer API edit replaces an older pending revision.
+ */
+async function revise(context, kv, acct, key, row, b, rlh) {
+  const { env, request } = context;
+  const base = row.pendingRevision ? { ...row, ...row.pendingRevision.fields } : row;
+  const merged = {
+    name: b.name ?? base.name, projectUrl: b.projectUrl ?? base.projectUrl, pitchShort: b.pitchShort ?? base.pitchShort,
+    descriptionLong: b.descriptionLong ?? base.descriptionLong, tags: b.tags ?? base.tags ?? [],
+    category: row.category, priceLabel: row.priceLabel, makerName: row.makerName || "Creator", email: row.email || acct.email || "x@example.com",
+    terms: true, website: "",
+  };
+  const hasImg = (typeof b.imageUrl === "string" && b.imageUrl) || typeof b.imageData === "string";
+  if (!hasImg) merged.imageUrl = "https://digitalundergroundstore.com/store/logo.png"; // placeholder for validation only; existing image is kept
+  if (hasImg) { if (typeof b.imageUrl === "string") merged.imageUrl = b.imageUrl; if (typeof b.imageData === "string") merged.imageData = b.imageData; }
+  if (typeof b.videoUrl === "string" && b.videoUrl) merged.videoUrl = b.videoUrl;
+  const v = validateSubmission(merged);
+  if (v.error) return out({ error: v.error }, v.status || 400, rlh);
+  const L = v.listing;
+  const fields = { name: L.name, projectUrl: L.projectUrl, visitUrl: appendRefParam(L.projectUrl), pitchShort: L.pitchShort, descriptionLong: L.descriptionLong, tags: L.tags };
+  if (hasImg) fields.imageUrl = L.imageUrl;
+  else if (base.imageUrl !== row.imageUrl) fields.imageUrl = base.imageUrl;
+  if (L.pendingVideo && L.pendingVideo.url) fields.videoUrl = L.pendingVideo.url;
+  else if (row.pendingRevision && row.pendingRevision.fields.videoUrl) fields.videoUrl = row.pendingRevision.fields.videoUrl;
+  if (b.removeMedia === true) { fields.imageUrl = ""; fields.videoUrl = ""; }
+  let screening;
+  try {
+    const sc = await screenListing(env, { ...row, ...fields });
+    if (sc.decision === "rejected") return out({ error: "This edit did not pass screening.", reasons: sc.reasons || [] }, 422, rlh);
+    screening = { reasons: ["API edit: waiting for owner approval. The approved version stays live."], detail: sc.detail, screenedAt: Date.now() };
+  } catch {
+    screening = { reasons: ["API edit: automatic screening failed; queued for owner review."], screenedAt: Date.now() };
+  }
+  row.pendingRevision = { fields, at: Date.now(), keyId: key.id, screening };
+  await kvPutListing(kv, row);
+  context.waitUntil(notifySubmission(env, { ...row, ...fields, id: row.id, status: "pending" }, request).catch(() => {}));
+  return out({ ok: true, status: "pending owner approval", message: "Your edit is waiting for owner approval. The approved version stays live until then.", listing: creatorListing(row) }, 202, rlh);
 }

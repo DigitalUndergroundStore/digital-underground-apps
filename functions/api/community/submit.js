@@ -70,6 +70,9 @@ export async function onRequest(context) {
 
   let listing = validated.listing;
   const password = typeof body.password === "string" ? body.password : "";
+  if (body.passwordConfirm != null && body.passwordConfirm !== password) {
+    return json({ error: "Passwords don't match." }, 400);
+  }
 
   // Account resolution (before screening, so a bad password costs nothing):
   // 1) Signed-in creator (cookie or private link) -> that account. If it has no password

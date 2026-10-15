@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="../community.css">
 <script src="/community/turnstile.js" defer></script>
+<script src="/community/pw.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -51,7 +52,10 @@
       <input name="email" type="email" required autocomplete="email" inputmode="email" maxlength="120" placeholder="you@example.com">
     </label>
     <label>Password for your Creator login (min 8 characters)
-      <input name="password" type="password" required minlength="8" maxlength="200" autocomplete="new-password">
+      <input name="password" type="password" required minlength="8" maxlength="200" autocomplete="new-password" data-pw>
+    </label>
+    <label>Confirm password
+      <input name="passwordConfirm" type="password" required minlength="8" maxlength="200" autocomplete="new-password" data-pw data-confirm="password">
     </label>
     <p class="field-hint">Already have a creator account? Enter its password and we'll add this listing to it.</p>
     <p class="field-hint consent-hint">By submitting, you agree we may email you about your listing and Digital Underground updates. Unsubscribe anytime.</p>
@@ -107,7 +111,10 @@
     var pw = form.querySelector('[name="password"]');
     pw.required = false;
     pw.closest("label").hidden = true;
-    pw.closest("label").nextElementSibling.hidden = true;
+    var pc = form.querySelector('[name="passwordConfirm"]');
+    pc.required = false; pc.closest("label").hidden = true;
+    pc.closest("label").nextElementSibling.hidden = true;
+    form.querySelectorAll(".field-hint").forEach(function (h) { if (/Already have a creator account/.test(h.textContent)) h.hidden = true; });
     if (d.account.email) emailInput.value = d.account.email;
     var note = document.createElement("p");
     note.className = "form-msg ok";
@@ -160,6 +167,7 @@
       makerName: fd.get("makerName"),
       email: fd.get("email"),
       password: fd.get("password"),
+      passwordConfirm: fd.get("passwordConfirm"),
       xHandle: fd.get("xHandle"),
       category: fd.get("category"),
       priceLabel: fd.get("priceLabel"),
@@ -193,6 +201,11 @@
       return;
     }
     payload.email = emailVal;
+    if (!creatorSignedIn && payload.password !== payload.passwordConfirm) {
+      show("Passwords don't match.", false);
+      form.querySelector('[name="passwordConfirm"]').focus();
+      return;
+    }
     if (!creatorSignedIn && String(payload.password || "").length < 8) {
       show("Create a password of at least 8 characters for your Creator login.", false);
       form.querySelector('[name="password"]').focus();

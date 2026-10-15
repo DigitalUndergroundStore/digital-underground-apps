@@ -276,3 +276,14 @@ button.signout, button.linkish {
 }
 button.linkish { background: none; border: 0; color: var(--cyan); text-decoration: underline; }
 .site-top nav a.login-btn { border-color: rgba(191, 232, 255, .75); color: var(--cyan); background: rgba(30, 58, 138, .35); }
+.pw-wrap { position: relative; display: block; }
+.pw-wrap input { width: 100%; padding-right: 52px; }
+.pw-eye {
+  position: absolute; top: 50%; right: 2px; transform: translateY(-50%);
+  width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center;
+  border: 0; border-radius: 12px; background: transparent; color: var(--muted); cursor: pointer;
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+}
+.pw-eye:hover, .pw-eye[aria-pressed="true"] { color: var(--cyan); }
+.pw-eye:focus-visible { outline: 2px solid var(--cyan); outline-offset: -2px; }
+form .pw-mismatch, .pw-mismatch { color: #fca5a5; margin-top: -8px; }

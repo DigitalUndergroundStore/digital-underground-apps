@@ -75,6 +75,9 @@ export async function onRequest(context) {
   }
 
   if (body.action === "reset") {
+    if (body.passwordConfirm != null && body.passwordConfirm !== body.password) {
+      return json({ ok: false, error: "Passwords don't match." }, 400);
+    }
     if (!validPassword(body.password)) return json({ ok: false, error: `Password must be at least ${MIN_PASSWORD} characters.` }, 400);
     if (!email || !checkRate("otpv:" + ip)) return json(BAD_CODE, 400);
     const acctId = await verifyOtp(env, kv, email, String(body.code || ""));

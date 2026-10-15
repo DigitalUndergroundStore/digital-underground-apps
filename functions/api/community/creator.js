@@ -100,6 +100,9 @@ export async function onRequest(context) {
   const action = body.action;
 
   if (action === "claim" || action === "set_password") {
+    if (body.passwordConfirm != null && body.passwordConfirm !== body.password) {
+      return json({ error: "Passwords don't match." }, 400);
+    }
     // Claim: an account opened via private link sets its email + password.
     // set_password: change password (requires current password if one exists).
     if (acct.pw && action === "claim") return json({ error: "This account already has a password. Log in with it." }, 400);

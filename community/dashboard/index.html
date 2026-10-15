@@ -8,6 +8,7 @@
 <title>Creator dashboard — Developer Marketplace — Digital Underground</title>
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="../community.css">
+<script src="/community/pw.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -32,14 +33,15 @@
     <h2>Creator login</h2>
     <form id="login" class="stack">
       <label>Email<input name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"></label>
-      <label>Password<input name="password" type="password" required minlength="8" autocomplete="current-password"></label>
+      <label>Password<input name="password" type="password" required minlength="8" autocomplete="current-password" data-pw></label>
       <button type="submit">Log in</button>
       <button type="button" class="linkish" id="forgot-btn">Forgot password?</button>
     </form>
     <form id="reset" class="stack" hidden>
       <p class="muted">We emailed a 6-digit code to that address if it has an account.</p>
       <label>6-digit code<input name="code" required inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6"></label>
-      <label>New password (min 8)<input name="password" type="password" required minlength="8" autocomplete="new-password"></label>
+      <label>New password (min 8)<input name="password" type="password" required minlength="8" autocomplete="new-password" data-pw></label>
+      <label>Confirm new password<input name="passwordConfirm" type="password" required minlength="8" autocomplete="new-password" data-pw data-confirm="password"></label>
       <button type="submit">Set password and log in</button>
       <button type="button" class="linkish" id="reset-back">Back to login</button>
     </form>
@@ -54,7 +56,8 @@
     <p class="muted">Claim your creator account so you can log in with your email from now on. Your listings stay as they are.</p>
     <form id="claim-form" class="stack">
       <label>Email<input name="email" type="email" required autocomplete="email" inputmode="email"></label>
-      <label>Password (min 8)<input name="password" type="password" required minlength="8" autocomplete="new-password"></label>
+      <label>Password (min 8)<input name="password" type="password" required minlength="8" autocomplete="new-password" data-pw></label>
+      <label>Confirm password<input name="passwordConfirm" type="password" required minlength="8" autocomplete="new-password" data-pw data-confirm="password"></label>
       <button type="submit">Save and continue</button>
       <div class="form-msg" id="claim-msg" hidden role="status"></div>
     </form>
@@ -298,7 +301,8 @@
   $("reset").addEventListener("submit", function (e) {
     e.preventDefault();
     var f = e.target;
-    login({ action: "reset", email: $("login").email.value, code: f.code.value, password: f.password.value }).then(function (d) {
+    if (f.password.value !== f.passwordConfirm.value) { show($("login-msg"), "Passwords don't match.", false); return; }
+    login({ action: "reset", email: $("login").email.value, code: f.code.value, password: f.password.value, passwordConfirm: f.passwordConfirm.value }).then(function (d) {
       if (d.ok) { f.reset(); $("reset").hidden = true; $("login").hidden = false; $("login-msg").hidden = true; load(); }
       else show($("login-msg"), d.error || "That did not work.", false);
     });
@@ -307,7 +311,8 @@
   $("claim-form").addEventListener("submit", function (e) {
     e.preventDefault();
     var f = e.target;
-    api("POST", { action: "claim", email: f.email.value, password: f.password.value }).then(function (d) {
+    if (f.password.value !== f.passwordConfirm.value) { show($("claim-msg"), "Passwords don't match.", false); return; }
+    api("POST", { action: "claim", email: f.email.value, password: f.password.value, passwordConfirm: f.passwordConfirm.value }).then(function (d) {
       if (d.ok) { try { localStorage.setItem("du_creator_email", f.email.value.trim()); } catch (_) {} $("claim").hidden = true; show($("msg"), "Saved. From now on, log in with your email and password.", true); }
       else show($("claim-msg"), d.error || "Could not save.", false);
     });

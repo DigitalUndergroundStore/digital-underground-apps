@@ -1,4 +1,4 @@
-/* Pantry Week v3.14.2 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.14.3 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -2205,6 +2205,10 @@
     $("fill").innerHTML = `<div class="modal-card sheet-card" role="document" data-sheet-body="1">
       ${sheetGrab()}
       ${modalChrome("fillTitle", "Fill the week", "Back")}
+      <div class="toolbar sheet-actions sheet-actions--top">
+        <button type="button" class="primary" data-action="fill-run">Fill week</button>
+        <button type="button" data-action="close-fill">Cancel</button>
+      </div>
       <p class="lead">Empty slots are filled with varied meals. Nothing repeats in the same week.</p>
       <p class="meta">${filterNote}</p>
       <p class="field-label">Which meals?</p>
@@ -2214,10 +2218,6 @@
         <input type="checkbox" id="fillReplaceAll"${prefs.replaceAll ? " checked" : ""} />
         <span>Replace meals already on the plan (not just empty slots)</span>
       </label>
-      <div class="toolbar sheet-actions">
-        <button type="button" class="primary" data-action="fill-run">Fill week</button>
-        <button type="button" data-action="close-fill">Cancel</button>
-      </div>
     </div>`;
     $("fill").hidden = false;
     setInert();

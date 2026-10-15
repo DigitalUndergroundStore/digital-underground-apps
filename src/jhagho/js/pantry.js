@@ -1,4 +1,4 @@
-/* Pantry Week v3.14.2 — data, shopping list, migration. No network. */
+/* Pantry Week v3.14.3 — data, shopping list, migration. No network. */
 "use strict";
 
 (function () {
@@ -1634,7 +1634,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.14.2",
+    VERSION: "3.14.3",
     shopItem: shopItem,
     BUNDLED_CATALOG_VERSION: BUNDLED_CATALOG_VERSION,
     KEY: KEY,

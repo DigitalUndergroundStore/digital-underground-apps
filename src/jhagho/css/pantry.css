@@ -70,8 +70,8 @@ body {
 }
 .pw-backdrop--wash {
   background:
-    radial-gradient(ellipse at 50% 28%, rgba(255, 248, 236, 0.78) 0%, rgba(255, 248, 236, 0.32) 38%, rgba(255, 244, 226, 0.1) 68%),
-    linear-gradient(180deg, rgba(255, 248, 236, 0.42) 0%, rgba(246, 232, 210, 0.22) 46%, rgba(255, 244, 226, 0.36) 100%);
+    radial-gradient(ellipse at 50% 28%, rgba(255, 248, 236, 0.8) 0%, rgba(255, 248, 236, 0.44) 38%, rgba(255, 244, 226, 0.24) 68%),
+    linear-gradient(180deg, rgba(255, 248, 236, 0.5) 0%, rgba(246, 232, 210, 0.32) 46%, rgba(255, 244, 226, 0.44) 100%);
 }
 .pw-backdrop--bokeh {
   opacity: 0;
@@ -1656,4 +1656,14 @@ html[data-theme="dark"] .theme-toggle .theme-toggle__moon { display: none; }
   .find-hit, .find-link { min-height: 72px; }
   .photo-add__actions { flex-direction: column; }
   .photo-add__actions .primary, .photo-add__actions button { width: 100%; }
+}
+
+/* 3.14.3: Fill-the-week actions sit at the top of the sheet, sticky while the options scroll. */
+.sheet-actions--top {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin: 0 0 12px;
+  padding: 8px 0;
+  background: inherit;
 }

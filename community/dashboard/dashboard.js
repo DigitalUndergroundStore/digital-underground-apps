@@ -32,6 +32,21 @@
     el.hidden = false; el.className = "alert " + (ok ? "ok" : "err");
     el.innerHTML = ico(ok ? "ok" : "alert") + "<span>" + esc(text) + "</span>";
   }
+  function shareListing(l, btn) {
+    if (btn.getAttribute("aria-disabled") === "true") { toast(btn.title + ".", false); return; }
+    var url = "https://digitalundergroundstore.com/community/p/?id=" + encodeURIComponent(l.id);
+    var title = l.name + " | Developer Marketplace";
+    function copy() {
+      var done = function () { toast("Link copied", true); };
+      if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(url).then(done, fallback);
+      fallback();
+      function fallback() { var ta = document.createElement("textarea"); ta.value = url; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); done(); } catch (e) { toast(url, true); } ta.remove(); }
+    }
+    var phone = matchMedia("(pointer: coarse)").matches;
+    if (navigator.share && phone) navigator.share({ title: title, text: l.pitchShort || l.name, url: url }).catch(function (e) { if (e && e.name !== "AbortError") copy(); });
+    else copy();
+  }
+
   function toast(text, ok) {
     var t = document.createElement("div");
     t.className = "toast " + (ok === false ? "err" : "ok");
@@ -230,11 +245,14 @@
       else view.remove();
       var un = node.querySelector('[data-a="unpublish"]'), re = node.querySelector('[data-a="republish"]');
       if (l.status === "unpublished") un.remove(); else re.remove();
+      var sh = node.querySelector('[data-a="share"]');
+      if (l.status !== "approved") { sh.setAttribute("aria-disabled", "true"); sh.classList.add("is-off"); sh.title = l.status === "unpublished" ? "Republish to share" : "Share once it's live"; sh.setAttribute("aria-label", sh.title); }
       node.querySelectorAll("button[data-a]").forEach(function (b) { b.setAttribute("aria-label", (b.getAttribute("aria-label") || b.textContent.trim()) + " " + l.name); });
       node.addEventListener("click", function (e) {
         var btn = e.target.closest("button[data-a]"); if (!btn) return;
         var a = btn.getAttribute("data-a");
         if (a === "edit") return openEdit(l, btn);
+        if (a === "share") return shareListing(l, btn);
         if (a === "delete") return confirmDlg({ title: "Delete this listing?", text: "\u201C" + l.name + "\u201D will be removed permanently, along with its analytics. This can't be undone.", yes: "Delete", danger: true }, btn).then(function (ok) { if (ok) act({ action: "delete", id: l.id }, btn); });
         if (a === "unpublish") return confirmDlg({ title: "Unpublish listing?", text: "\u201C" + l.name + "\u201D will be hidden from the marketplace. You can republish it any time.", yes: "Unpublish", danger: false }, btn).then(function (ok) { if (ok) act({ action: "unpublish", id: l.id }, btn); });
         act({ action: a, id: l.id }, btn);

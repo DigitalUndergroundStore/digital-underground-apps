@@ -346,3 +346,6 @@ label.btn:focus-within, input.sr-only:focus-visible + .btn { outline: 2px solid 
 .ak-keyrow { display: flex; gap: 8px; align-items: center; }
 .ak-keyrow code { flex: 1; min-width: 0; overflow-wrap: anywhere; font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; padding: 10px; border-radius: 10px; background: rgba(6,4,14,.7); user-select: all; }
 .ak-keyrow .btn { min-height: 44px; flex: none; }
+
+.icon-btn.is-off{opacity:.38;cursor:not-allowed}
+.icon-btn.is-off:hover{background:inherit}

@@ -54953,6 +54953,926 @@
         "Garnish with cilantro and serve."
       ],
       "sourceName": "Pantry Week original"
+    },
+    {
+      "id": "r6001",
+      "name": "Potato Omelette",
+      "minutes": 25,
+      "servings": 2,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 5,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "milk"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "butter, divided"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "medium potato, cut into ½-inch cubes"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "small onion, finely chopped"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "cheddar cheese, shredded"
+        }
+      ],
+      "steps": [
+        "Whisk the eggs, salt, pepper, and milk in a bowl.",
+        "Melt 1 tbsp of the butter in a nonstick skillet over medium heat.",
+        "Cook the potato, stirring now and then, until golden and tender, 10–12 minutes.",
+        "Add the onion and cook until soft, 3 minutes.",
+        "Transfer the filling to a plate.",
+        "Melt half the remaining butter in the skillet over medium heat.",
+        "Pour in half the egg mixture and cook until the edges set, about 1 minute.",
+        "Spoon half the potato filling and half the cheese over one side.",
+        "Fold the omelette over and cook until the eggs are just set, 1 minute more.",
+        "Slide onto a plate. Repeat with the remaining butter, egg mixture, filling, and cheese to make the second omelette."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Potato_Omelet",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6002",
+      "name": "Crab Fried Rice",
+      "minutes": 20,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "medium",
+        "moderate",
+        "southeast_asian"
+      ],
+      "ingredients": [
+        {
+          "qty": 3,
+          "unit": "tbsp",
+          "item": "vegetable oil, divided"
+        },
+        {
+          "qty": 2,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "small red onion, thinly sliced"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "red chili, finely chopped"
+        },
+        {
+          "qty": 3,
+          "unit": "",
+          "item": "green onions, cut into 1 cm pieces"
+        },
+        {
+          "qty": 2,
+          "unit": "can",
+          "item": "crabmeat (120 g each), drained"
+        },
+        {
+          "qty": 150,
+          "unit": "g",
+          "item": "bean sprouts, rinsed"
+        },
+        {
+          "qty": 4,
+          "unit": "cup",
+          "item": "cooked rice, chilled"
+        },
+        {
+          "qty": 1.5,
+          "unit": "tbsp",
+          "item": "fish sauce"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper"
+        }
+      ],
+      "steps": [
+        "Heat 1 tbsp of the oil in a wok or large skillet over high heat.",
+        "Stir-fry the crabmeat for 1 minute.",
+        "Transfer to a plate.",
+        "Heat the remaining 2 tbsp oil in the wok.",
+        "Stir-fry the garlic, red onion, chili, and green onions until fragrant, 1 minute.",
+        "Add the bean sprouts and stir-fry for 1 minute.",
+        "Add the rice and stir-fry, breaking up any clumps, until hot and lightly toasted, 3–4 minutes.",
+        "Return the crab to the wok.",
+        "Add the fish sauce, salt, and pepper and toss until evenly mixed, 1 minute.",
+        "Serve hot."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Crab_Fried_Rice",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6003",
+      "name": "Banana Spirulina Pancakes",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "dairy-free",
+        "medium",
+        "budget",
+        "american"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.75,
+          "unit": "cup",
+          "item": "all-purpose flour"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "sugar"
+        },
+        {
+          "qty": 2,
+          "unit": "tsp",
+          "item": "baking powder"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "spirulina powder"
+        },
+        {
+          "qty": 3,
+          "unit": "tbsp",
+          "item": "vegetable oil, divided"
+        },
+        {
+          "qty": 1.25,
+          "unit": "cup",
+          "item": "rice milk or soy milk"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "ripe banana, thinly sliced"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "maple syrup, to serve"
+        }
+      ],
+      "steps": [
+        "Whisk the flour, sugar, baking powder, salt, and spirulina in a large bowl.",
+        "Whisk 2 tbsp of the oil with the rice milk in a second bowl.",
+        "Pour the wet ingredients into the dry and stir just until combined; a few lumps are fine.",
+        "Fold in the banana slices.",
+        "Heat a nonstick skillet over medium heat and brush lightly with some of the remaining oil.",
+        "Pour in ⅓ cup of batter per pancake.",
+        "Cook until bubbles form on top and the edges look set, 2–3 minutes.",
+        "Flip and cook until golden underneath, 1–2 minutes more.",
+        "Keep warm in a 200°F (93°C) oven while you cook the rest, oiling the pan as needed.",
+        "Serve with maple syrup."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Banana_Spirulina_Pancakes",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6004",
+      "name": "Egg in a Mist",
+      "minutes": 25,
+      "servings": 2,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "gluten-free",
+        "high-protein",
+        "medium",
+        "budget",
+        "british"
+      ],
+      "ingredients": [
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "butter, softened"
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "item": "eggs, separated"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.125,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "milk"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "cheddar cheese, finely grated"
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 350°F (175°C).",
+        "Grease a shallow baking dish with the butter.",
+        "Separate the eggs, putting the whites in a clean bowl and the yolks in the baking dish, keeping the yolks whole.",
+        "Stir 2 tbsp of the cheese with the milk, salt, and pepper and spoon it around the yolks.",
+        "Beat the egg whites with an electric mixer until stiff peaks form, 2–3 minutes.",
+        "Gently fold the remaining cheese into the whites.",
+        "Pile the whites over the yolks, covering them completely.",
+        "Bake until puffed and golden and the whites are set, 15–18 minutes. Serve right away."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Egg_in_a_Mist",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6005",
+      "name": "North Staffordshire Oatcakes",
+      "minutes": 90,
+      "servings": 6,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "medium",
+        "budget",
+        "british"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "fine oatmeal"
+        },
+        {
+          "qty": 1.75,
+          "unit": "cup",
+          "item": "whole wheat flour"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 2.25,
+          "unit": "tsp",
+          "item": "active dry yeast (1 packet)"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "sugar"
+        },
+        {
+          "qty": 3.5,
+          "unit": "cup",
+          "item": "warm milk and water, mixed half and half"
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "item": "vegetable oil, for the griddle"
+        }
+      ],
+      "steps": [
+        "Stir the yeast and sugar into ½ cup of the warm milk and water.",
+        "Let stand until frothy, 10 minutes.",
+        "Whisk the oatmeal, flour, and salt in a large bowl.",
+        "Whisk in the yeast mixture and the remaining warm liquid to make a smooth, pourable batter.",
+        "Cover with a clean cloth and leave in a warm place until bubbly, 1 hour.",
+        "Heat a griddle or large nonstick skillet over medium heat and brush lightly with oil.",
+        "Pour in about ⅔ cup of batter and tilt to spread it into an 8-inch round.",
+        "Cook until the top is covered in holes and looks dry, 2–3 minutes.",
+        "Flip and cook until golden, 2–3 minutes more.",
+        "Repeat with the remaining batter, oiling the griddle as needed. Serve warm."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:North_Staffordshire_Oatcakes",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6006",
+      "name": "Nigerian Palm Oil Yam (Ji Mmanu)",
+      "minutes": 30,
+      "servings": 4,
+      "meal": "lunch",
+      "tags": [
+        "lunch",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "medium",
+        "budget",
+        "african"
+      ],
+      "ingredients": [
+        {
+          "qty": 2,
+          "unit": "lb",
+          "item": "african yam (puna yam), peeled and cut into 1½-inch chunks"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "red palm oil"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "scotch bonnet pepper, blended to a paste"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "small onion, thinly sliced"
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "item": "utazi leaves, finely shredded (or 1 cup baby spinach)"
+        }
+      ],
+      "steps": [
+        "Put the yam in a pot, cover with cold water, and add the salt.",
+        "Bring to a boil over high heat, then simmer until a knife slides in easily, 15–20 minutes. Drain.",
+        "Warm the palm oil in a large skillet over medium-low heat.",
+        "Add the onion and cook until soft, 4 minutes.",
+        "Stir in the pepper paste and cook 1 minute.",
+        "Add the yam and utazi leaves and toss gently until coated and hot, 2 minutes.",
+        "Serve warm."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Nigerian_Palm_Oil_Boiled_Yam_(Ji_Mmanu)",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6007",
+      "name": "Lamb and Okra Stew (Khoresht Bamieh)",
+      "minutes": 80,
+      "servings": 6,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "splurge",
+        "middle_eastern"
+      ],
+      "ingredients": [
+        {
+          "qty": 3,
+          "unit": "",
+          "item": "onions, thinly sliced"
+        },
+        {
+          "qty": 3,
+          "unit": "tbsp",
+          "item": "vegetable oil"
+        },
+        {
+          "qty": 1.1,
+          "unit": "lb",
+          "item": "boneless lamb stew meat, cut into 1-inch pieces"
+        },
+        {
+          "qty": 3,
+          "unit": "cup",
+          "item": "hot water"
+        },
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "okra, stems trimmed"
+        },
+        {
+          "qty": 3,
+          "unit": "tbsp",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 1.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "fresh lime juice"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "cooked basmati rice, to serve"
+        }
+      ],
+      "steps": [
+        "Heat the oil in a large pot over medium heat.",
+        "Cook the onions until golden, 10–12 minutes.",
+        "Add the lamb and cook, stirring, until browned on all sides, 5 minutes.",
+        "Pour in the hot water and bring to a boil.",
+        "Cover and simmer over low heat until the lamb is tender, 45 minutes.",
+        "Add a splash of water if it gets dry.",
+        "Stir in the tomato paste, salt, and pepper, then add the okra.",
+        "Simmer uncovered until the okra is tender but still holds its shape, 10–12 minutes.",
+        "Stir in the lime juice and simmer 3 minutes.",
+        "Serve over rice."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Lamb_and_Okra_Stew_(Khoresht_Bamiye)",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6008",
+      "name": "Ragi Dosa (South Indian Millet and Rice Pancake)",
+      "minutes": 960,
+      "servings": 6,
+      "meal": "breakfast",
+      "tags": [
+        "breakfast",
+        "main-meal",
+        "vegetarian",
+        "vegan",
+        "gluten-free",
+        "dairy-free",
+        "hard",
+        "budget",
+        "indian"
+      ],
+      "ingredients": [
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "whole ragi (finger millet)"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "idli or parboiled rice"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "urad dal"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "vegetable oil, for the pan"
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "item": "coconut chutney, to serve"
+        }
+      ],
+      "steps": [
+        "Rinse the ragi, rice, and urad dal, then soak each separately in plenty of water for 5 hours.",
+        "Drain. Grind the rice with about ½ cup fresh water to a smooth batter.",
+        "Grind the urad dal and ragi together with about ½ cup water until smooth and fluffy.",
+        "Stir both batters together in a large bowl.",
+        "Cover and leave in a warm place to ferment until bubbly and risen, 8–10 hours.",
+        "Stir in the salt and enough water to make a pourable batter, like thick pancake batter.",
+        "Heat a cast-iron tava or nonstick skillet over medium-high heat.",
+        "Brush with a little oil.",
+        "Pour ½ cup batter into the centre and spread it outward in a spiral with the back of the ladle.",
+        "Drizzle a few drops of oil around the edge.",
+        "Cook until the edges lift and the underside is browned, 2–3 minutes.",
+        "Flip and cook 30 seconds.",
+        "Repeat with the remaining batter, oiling the pan between dosas.",
+        "Serve hot with coconut chutney."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Ragi_Dosa_(South_Indian_Millet_and_Rice_Pancake)",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6009",
+      "name": "Traditional Lasagne",
+      "minutes": 110,
+      "servings": 8,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "high-protein",
+        "medium",
+        "budget",
+        "italian"
+      ],
+      "ingredients": [
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "item": "olive oil"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "large onion, finely chopped"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "carrots, finely chopped"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "celery stalks, finely chopped"
+        },
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "lean ground beef"
+        },
+        {
+          "qty": 4,
+          "unit": "clove",
+          "item": "garlic, minced"
+        },
+        {
+          "qty": 1,
+          "unit": "cup",
+          "item": "dry red wine"
+        },
+        {
+          "qty": 1,
+          "unit": "can",
+          "item": "crushed tomatoes"
+        },
+        {
+          "qty": 12,
+          "unit": "",
+          "item": "basil leaves, torn"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "dried oregano"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "salt, divided"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "sugar"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "butter"
+        },
+        {
+          "qty": 0.25,
+          "unit": "cup",
+          "item": "all-purpose flour"
+        },
+        {
+          "qty": 3.5,
+          "unit": "cup",
+          "item": "milk"
+        },
+        {
+          "qty": 12,
+          "unit": "",
+          "item": "oven-ready lasagne sheets"
+        },
+        {
+          "qty": 0.75,
+          "unit": "cup",
+          "item": "parmesan cheese, finely grated"
+        }
+      ],
+      "steps": [
+        "Preheat the oven to 375°F (190°C).",
+        "Heat the oil in a Dutch oven over medium-high heat. Cook the onion, carrots, and celery until soft, 6–8 minutes.",
+        "Add the beef and garlic and cook, breaking up the meat, until the liquid evaporates and the meat sizzles, 10–12 minutes. Ground meat is done at 160°F (71°C) inside.",
+        "Pour in the wine and scrape up the browned bits. Simmer until almost evaporated, 5 minutes.",
+        "Stir in the tomatoes and sugar. Cover and simmer gently for 20 minutes.",
+        "Meanwhile, melt the butter in a saucepan over medium heat. Whisk in the flour and cook 1 minute.",
+        "Gradually whisk in the milk. Cook, whisking, until the béchamel thickens and coats a spoon, 6–8 minutes. Stir in ½ tsp of the salt.",
+        "Stir the basil, oregano, pepper, and remaining ½ tsp salt into the meat sauce.",
+        "Spread a thin layer of meat sauce in a 9x13-inch baking dish. Cover with a layer of lasagne sheets, then a layer of béchamel.",
+        "Repeat the layers until the meat sauce is used up, finishing with lasagne sheets and a generous layer of béchamel.",
+        "Sprinkle the Parmesan over the top.",
+        "Bake on the top rack until golden and bubbling, about 45 minutes. Rest 10 minutes before cutting."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Traditional_Lasagne",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6010",
+      "name": "Pabellón Criollo (Venezuelan Rice and Beans with Steak)",
+      "minutes": 60,
+      "servings": 4,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "hard",
+        "splurge",
+        "latin_american"
+      ],
+      "ingredients": [
+        {
+          "qty": 5,
+          "unit": "tbsp",
+          "item": "olive oil, divided"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "large onion, chopped"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "garlic, finely chopped"
+        },
+        {
+          "qty": 1,
+          "unit": "can",
+          "item": "chopped tomatoes"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "ground cumin, divided"
+        },
+        {
+          "qty": 1.75,
+          "unit": "tsp",
+          "item": "salt, divided"
+        },
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "sirloin steak, about ½ inch thick"
+        },
+        {
+          "qty": 1.5,
+          "unit": "cup",
+          "item": "long-grain white rice"
+        },
+        {
+          "qty": 2.5,
+          "unit": "cup",
+          "item": "water, divided"
+        },
+        {
+          "qty": 2,
+          "unit": "can",
+          "item": "black beans (540 ml each), drained and rinsed"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "ripe (yellow-black) plantains"
+        }
+      ],
+      "steps": [
+        "Heat 2 tbsp of the oil in a large saucepan over medium heat.",
+        "Cook the onion and garlic until soft, 5 minutes.",
+        "Add the tomatoes, ½ tsp of the cumin, and ½ tsp of the salt.",
+        "Simmer uncovered over low heat, stirring often, until thick, 30 minutes.",
+        "Meanwhile, bring the rice, 2¼ cups of the water, and ½ tsp of the salt to a boil in a pot.",
+        "Cover and cook over low heat until tender, 18 minutes.",
+        "Rest 5 minutes off the heat.",
+        "Warm the black beans with the remaining ½ tsp cumin, ¼ tsp salt, and the remaining ¼ cup water in a small pot over medium-low heat, 10 minutes.",
+        "Peel the plantains and cut them diagonally into ½-inch slices.",
+        "Heat 2 tbsp of the oil in a skillet over medium heat.",
+        "Fry the plantains until caramelized, 2–3 minutes per side.",
+        "Drain on paper towels.",
+        "Heat a grill pan or broiler on high.",
+        "Rub the steak with the remaining 1 tbsp oil and sear 4–5 minutes per side, until it reaches 145°F (63°C) inside.",
+        "Slice the steak into thin strips and stir it into the tomato sauce. Simmer 2 minutes.",
+        "Serve the steak, rice, beans, and plantains side by side on each plate."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pabell%C3%B3n_Criollo_(Venezuelan_Rice_and_Beans_with_Steak)",
+      "sourceLicense": "CC BY-SA 4.0"
+    },
+    {
+      "id": "r6011",
+      "name": "Piñón (Puerto Rican Plantain and Chicken Casserole)",
+      "minutes": 90,
+      "servings": 6,
+      "meal": "dinner",
+      "tags": [
+        "dinner",
+        "main-meal",
+        "gluten-free",
+        "dairy-free",
+        "high-protein",
+        "medium",
+        "moderate",
+        "caribbean"
+      ],
+      "ingredients": [
+        {
+          "qty": 1.5,
+          "unit": "lb",
+          "item": "boneless skinless chicken breasts, cut into chunks"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "green bell pepper, cut into chunks"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "fresh cilantro"
+        },
+        {
+          "qty": 5,
+          "unit": "",
+          "item": "culantro leaves (or ¼ cup more cilantro)"
+        },
+        {
+          "qty": 6,
+          "unit": "clove",
+          "item": "garlic"
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "item": "medium onion, coarsely chopped"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "adobo seasoning"
+        },
+        {
+          "qty": 1,
+          "unit": "can",
+          "item": "tomato sauce"
+        },
+        {
+          "qty": 1,
+          "unit": "tsp",
+          "item": "tomato paste"
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "item": "large potatoes"
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "item": "ripe (yellow-black) plantains"
+        },
+        {
+          "qty": 1,
+          "unit": "lb",
+          "item": "green beans, trimmed"
+        },
+        {
+          "qty": 6,
+          "unit": "",
+          "item": "eggs"
+        },
+        {
+          "qty": 0.5,
+          "unit": "tsp",
+          "item": "salt"
+        },
+        {
+          "qty": 0.25,
+          "unit": "tsp",
+          "item": "black pepper"
+        },
+        {
+          "qty": 0.5,
+          "unit": "cup",
+          "item": "canola oil, divided"
+        }
+      ],
+      "steps": [
+        "Pulse the chicken, bell pepper, cilantro, culantro, garlic, onion, and adobo in a food processor until finely ground.",
+        "Peel the potatoes and cut them into ¼-inch sticks. Peel the plantains and cut them lengthwise into ¼-inch strips.",
+        "Beat 3 eggs with a pinch of the salt and pepper in one bowl. Beat the other 3 eggs with the remaining salt and pepper in a second bowl.",
+        "Heat 1 tbsp of the oil in a large nonstick skillet over medium-high heat. Cook the chicken mixture, breaking it up, until browned and cooked through, 8–10 minutes. The chicken is done at 165°F (74°C) inside.",
+        "Stir in the tomato sauce and tomato paste and cook 2 minutes. Transfer to a bowl.",
+        "Boil the green beans in salted water until crisp-tender, 4 minutes. Drain.",
+        "Heat 3 tbsp of the oil in the skillet over medium heat. Fry the plantains until golden on both sides, 3–4 minutes per side. Set aside.",
+        "Add 3 tbsp more oil and fry the potatoes until golden and tender, 10–12 minutes. Set aside.",
+        "Wipe out a 12- to 14-inch lidded nonstick skillet, add the remaining 1 tbsp oil, and heat over medium heat. Pour in the first bowl of eggs and swirl to coat. Cook until just starting to set, 1 minute, then take off the heat.",
+        "Layer half the plantains, half the green beans, and half the potatoes over the eggs. Add all of the chicken, then the rest of the potatoes, green beans, and plantains.",
+        "Pour the second bowl of eggs over the top. Cover and cook over medium-low heat until the top eggs are set, 12–15 minutes.",
+        "Invert onto the lid, slide the piñón back into the pan, and cook covered until firm, 5–8 minutes. Cut into wedges to serve."
+      ],
+      "sourceName": "Wikibooks Cookbook",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Cookbook:Pi%C3%B1on_(Spanish_Stovetop_Pot_Pie)",
+      "sourceLicense": "CC BY-SA 4.0"
     }
   ];
   for (var i = 0; i < extra.length; i++) PW_STARTERS.push(extra[i]);

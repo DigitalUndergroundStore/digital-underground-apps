@@ -1,4 +1,4 @@
-/* Pantry Week v3.14.1 — data, shopping list, migration. No network. */
+/* Pantry Week v3.14.2 — data, shopping list, migration. No network. */
 "use strict";
 
 (function () {
@@ -20,7 +20,7 @@
   var KEY = "pantry_week_v2";
   var KEY_V1 = "pantry_week_v1";
   /* Bump when bundled starter catalog changes (tags, content). Triggers localStorage refresh. */
-  var BUNDLED_CATALOG_VERSION = "library-v4-2026-10";
+  var BUNDLED_CATALOG_VERSION = "library-v4b-2026-10";
 
   var UNIT_MAP = {
     cup: "cup", cups: "cup",
@@ -1634,7 +1634,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.14.1",
+    VERSION: "3.14.2",
     shopItem: shopItem,
     BUNDLED_CATALOG_VERSION: BUNDLED_CATALOG_VERSION,
     KEY: KEY,

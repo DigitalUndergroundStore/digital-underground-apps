@@ -1,4 +1,4 @@
-/* Pantry Week v3.14.1 — original starter recipes. No copied text. */
+/* Pantry Week v3.14.0 — original starter recipes. No copied text. */
 "use strict";
 
 var PW_STARTERS = [

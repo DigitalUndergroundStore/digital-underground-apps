@@ -30,7 +30,7 @@ function start() {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.08;
+  renderer.toneMappingExposure = 1.35;
   renderer.setClearColor(0x000000, 0);
 
   const scene = new THREE.Scene();
@@ -187,14 +187,14 @@ function start() {
         float lit = clamp(dot(Nb, L), 0.0, 1.0);
         // cloud shadow: sample clouds slightly toward the sun
         float cShadow = texture2D(uClouds, vUv + vec2(uCloudOffset, 0.0) - vec2(L.x, L.y) * 0.004).r;
-        vec3 dayCol = day * (0.12 + 0.98 * lit) * (1.0 - 0.35 * cShadow * dayMix);
+        vec3 dayCol = day * (0.18 + 1.0 * lit) * (1.0 - 0.35 * cShadow * dayMix);
 
         // ocean specular (Blinn-Phong)
         vec3 H = normalize(L + V);
         float sp = pow(max(dot(Nb, H), 0.0), 56.0) * spec * 0.85 * smoothstep(0.0, 0.25, ndl);
         dayCol += vec3(1.0, 0.96, 0.88) * sp;
 
-        vec3 city = night * vec3(1.0, 0.725, 0.412) * 1.85 * (1.0 - cloud * 0.85);
+        vec3 city = night * vec3(1.0, 0.725, 0.412) * 2.3 * (1.0 - cloud * 0.85) + day * vec3(0.05, 0.06, 0.11);
         vec3 col = mix(city, dayCol, dayMix);
 
         // twilight purple band around the terminator

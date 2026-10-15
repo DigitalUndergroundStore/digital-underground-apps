@@ -263,7 +263,10 @@ export async function onRequest(context) {
     }
     const decision = await rescreen(env, row);
     // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
+    const prevStatus = row.status;
     row.status = row.status === "unpublished" && decision !== "rejected" ? "unpublished" : decision;
+    // API edits never publish: a listing that wasn't already approved stays in the owner queue.
+    if (request.headers.get("X-DU-Via-Api") === "1" && prevStatus !== "approved" && row.status === "approved") row.status = "pending";
     row.updatedAt = Date.now();
     row.editedByCreatorAt = row.updatedAt;
     await saveListing(kv, row);

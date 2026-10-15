@@ -99,7 +99,7 @@ export async function onRequest(context) {
   const sess = await signSession(env, acct);
   const inner = new Request(new URL("/api/community/creator", url), {
     method: "POST",
-    headers: { "Content-Type": "application/json", Cookie: `${SESSION_COOKIE}=${sess}`, "CF-Connecting-IP": request.headers.get("CF-Connecting-IP") || "" },
+    headers: { "Content-Type": "application/json", "X-DU-Via-Api": "1", Cookie: `${SESSION_COOKIE}=${sess}`, "CF-Connecting-IP": request.headers.get("CF-Connecting-IP") || "" },
     body: JSON.stringify({ action: "edit", id, fields }),
   });
   const r = await creatorApi({ ...context, request: inner });

@@ -329,10 +329,6 @@
         if (d.ok) { show(m, "Sent, we'll reply by email.", true); f.reset(); } else show(m, d.error || "Could not send.", false);
       }).catch(function () { btn.disabled = false; show(m, "Network error.", false); });
   });
-  $("magic").addEventListener("submit", function (e) {
-    e.preventDefault();
-    fetch("/api/community/creator-login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: e.target.email.value }) })
-      .then(function (r) { return r.json(); }).then(function (d) { show($("magic-msg"), d.message, true); });
   });
 
   load();

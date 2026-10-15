@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Digital Underground</title>
@@ -205,6 +206,35 @@
   .hero-cta-secondary:hover { color: var(--cyan); text-decoration-color: rgba(191, 232, 255, .7); }
   .hero-cta:focus-visible,
   .hero-cta-secondary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  /* ---- Interactive globe hero (preview) ---- */
+  .du-globe-bg {
+    position: absolute; inset: 0; z-index: 0; overflow: hidden; touch-action: pan-y;
+    background: radial-gradient(120% 80% at 70% 40%, rgba(76, 29, 149, .45), transparent 60%), #060411;
+  }
+  .du-globe-bg::before {
+    content: ""; position: absolute; inset: 0; opacity: 1; transition: opacity 1.1s ease;
+    background: url("/assets/globe/fallback-mobile.webp?v=2") center / cover no-repeat;
+  }
+  @media (min-width: 800px) { .du-globe-bg::before { background-image: url("/assets/globe/fallback.webp?v=2"); } }
+  .du-globe-bg.is-ready::before { opacity: 0; }
+  .du-globe-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; transition: opacity 1.1s ease; touch-action: pan-y; }
+  .du-globe-bg.is-ready .du-globe-canvas { opacity: 1; }
+  .du-globe-bg.is-fallback .du-globe-canvas { display: none; }
+  .du-globe-vignette {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      linear-gradient(90deg, rgba(6, 4, 17, .82) 0%, rgba(6, 4, 17, .25) 100%),
+      linear-gradient(180deg, rgba(6, 4, 17, .55) 0%, transparent 22%, transparent 74%, rgba(6, 4, 17, .9) 100%);
+  }
+  @media (max-width: 799px) {
+    .du-globe-vignette { background:
+      linear-gradient(90deg, rgba(6, 4, 17, .6) 0%, rgba(6, 4, 17, .2) 100%),
+      linear-gradient(180deg, rgba(6, 4, 17, .55) 0%, transparent 45%, transparent 78%, rgba(6, 4, 17, .9) 100%); }
+  }
+  .hero { touch-action: pan-y; background: #060411; }
+  .hero .aurora { display: none; }
+  .hero-panel { pointer-events: none; }
+  .hero-panel a, .hero-panel button, .hero-panel-fab, .hero-panel input { pointer-events: auto; }
   .market-cta {
     display: flex; align-items: center; gap: 14px;
     width: 100%; max-width: 460px; min-height: 76px; margin-top: 16px; padding: 14px 16px 14px 14px;
@@ -581,23 +611,14 @@
   }
 </style>
 <script src="/community/nav.js?v=1" defer></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js"}}</script>
+<script type="module" src="/assets/globe/globe.js?v=2"></script>
 </head>
 <body>
 <a class="skip" href="#featured">Skip to products</a>
 <div class="wrap">
   <header class="hero">
-    <div class="hero-media" aria-hidden="true">
-      <picture class="hero-poster-frame">
-        <source media="(min-width: 800px)" srcset="media/hero-desktop.jpg?v=20261014orig">
-        <img class="hero-poster" src="media/hero-mobile.jpg?v=20261014orig" width="720" height="1280" alt="">
-      </picture>
-      <video class="hero-film" width="720" height="1280" muted loop playsinline preload="none" data-src-narrow="media/hero-mobile.mp4?v=20261014orig" data-src-wide="media/hero-desktop.mp4?v=20261014orig" aria-hidden="true"></video>
-    </div>
-    <div class="aurora" aria-hidden="true">
-      <span class="orb orb-a"></span>
-      <span class="orb orb-b"></span>
-      <span class="orb orb-c"></span>
-    </div>
+    <div id="du-globe-bg" class="du-globe-bg" aria-hidden="true"><canvas id="du-globe-canvas" class="du-globe-canvas"></canvas><div class="du-globe-vignette"></div></div>
     <button type="button" class="hero-panel-fab" aria-label="Show store info" aria-hidden="true" tabindex="-1">
       <img src="media/hero-chip.svg" srcset="media/hero-chip-156.png 156w, media/hero-chip-168.png 168w" sizes="(min-width: 800px) 56px, 52px" width="128" height="128" alt="" aria-hidden="true">
     </button>
@@ -1291,6 +1312,7 @@
       <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v7M5 7.5 8 10.5 11 7.5M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Instant download</li>
       <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Secure checkout</li>
     </ul>
+    <p class="credits" style="margin:14px 0 0;font-size:12px;color:rgba(200,192,218,.7)">Earth textures © <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener" style="color:inherit">Solar System Scope</a>, CC BY 4.0 (resized). Specular map from the three.js examples (MIT).</p>
   </footer>
 </div>
 <script>

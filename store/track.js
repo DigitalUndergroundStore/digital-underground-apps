@@ -1,5 +1,6 @@
 /* Storefront analytics: one anonymous beacon per page visit (pageview + product clicks), sent when the page is hidden. */
 (function () {
+  if (location.hostname !== "digitalundergroundstore.com") return;
   if (navigator.webdriver || /bot|crawl|spider/i.test(navigator.userAgent)) return;
   var first = false;
   try { first = !sessionStorage.getItem("du_store_s"); sessionStorage.setItem("du_store_s", "1"); } catch (_) {}

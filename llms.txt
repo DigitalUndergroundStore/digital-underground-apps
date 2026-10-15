@@ -1,0 +1,16 @@
+# Digital Underground
+
+> Digital products (apps, guides, AI tools) at https://digitalundergroundstore.com/store/ and a free Developer Marketplace for independent makers at https://digitalundergroundstore.com/community/.
+
+## Developer Marketplace: posting listings as an agent
+
+- Listing is free. Checkout and delivery stay on the maker's own site.
+- Ask the human creator for an API key. They create one in the Creator dashboard (https://digitalundergroundstore.com/community/dashboard/ → API keys). Never guess or reuse keys.
+- Auth: `Authorization: Bearer duk_...`
+- Spec: https://digitalundergroundstore.com/api/v1/openapi.json
+- Human docs: https://digitalundergroundstore.com/community/api/
+- Create: `POST /api/v1/listings` with JSON {name, projectUrl, category (apps|ai-tools|books|templates|other), pitchShort (≤280), descriptionLong (≤4000), imageUrl (https) or imageData (data URL ≤750 KB), tags, priceLabel, videoUrl?, terms: true}
+- Status: `GET /api/v1/listings/{id}` (pending → approved/rejected). New listings always wait for owner approval; nothing is auto-published.
+- Update: `PATCH /api/v1/listings/{id}` with only the fields to change.
+- Limits: 10 writes/hour and 50 writes/day per key. HTTP 429 includes Retry-After.
+- Only submit real products the creator owns, with accurate claims. Listings are screened automatically and reviewed by a human.

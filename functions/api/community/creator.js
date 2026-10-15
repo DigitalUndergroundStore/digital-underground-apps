@@ -123,6 +123,19 @@ export async function onRequest(context) {
     return json({ ok: true, account: accountView(acct) }, 200, c ? { "Set-Cookie": c } : {});
   }
 
+  if (action === "api_keys" || action === "api_key_create" || action === "api_key_revoke") {
+    const { createKey, revokeKey, publicKey } = await import("../../_lib/apikeys.js");
+    if (action === "api_key_create") {
+      const r = await createKey(kv, acct, body.label);
+      if (r.error) return json({ error: r.error }, 400);
+      return json({ ok: true, key: r.key, info: r.info, keys: (acct.apiKeys || []).map(publicKey) });
+    }
+    if (action === "api_key_revoke") {
+      if (!(await revokeKey(kv, acct, String(body.keyId || "")))) return json({ error: "Key not found." }, 404);
+    }
+    return json({ ok: true, keys: (acct.apiKeys || []).map(publicKey) });
+  }
+
   if (action === "support") {
     const subject = sanitizeText(body.subject, 120);
     const message = sanitizeText(body.message, 4000);

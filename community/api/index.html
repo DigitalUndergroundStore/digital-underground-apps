@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creator Listings API | Digital Underground</title>
+<meta name="description" content="Post and manage your Developer Marketplace listings from your own tools or AI agent.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="../community.css?v=3">
+<style>
+  .doc { max-width: 760px; }
+  .doc h2 { font-size: 20px; margin: 28px 0 8px; letter-spacing: -.02em; }
+  .doc p, .doc li { color: var(--muted); line-height: 1.6; }
+  .doc code { font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; color: #e9d5ff; }
+  .doc pre { background: rgba(6,4,14,.75); border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 14px; overflow-x: auto; }
+  .doc pre code { color: #f5f3ff; }
+  .doc table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .doc td, .doc th { text-align: left; padding: 8px 6px; border-bottom: 1px solid rgba(255,255,255,.1); vertical-align: top; }
+  .doc .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: rgba(124,58,237,.25); color: #fff; font: 700 12px/1.6 ui-monospace, monospace; }
+</style>
+</head>
+<body>
+<div class="wrap doc">
+  <div class="site-top">
+    <a class="brand" href="/store/"><img src="/store/logo.png" width="80" height="65" alt=""><strong>Digital Underground</strong></a>
+    <nav aria-label="Site"><a href="/community/">Developer Marketplace</a><a href="/community/dashboard/" class="login-btn">Creator dashboard</a></nav>
+  </div>
+  <header class="page-head">
+    <h1>Creator Listings API</h1>
+    <p>Post and update your Developer Marketplace listings from your own scripts or an AI agent. Same rules as the web form: every new listing is screened and then approved by a human before it goes public.</p>
+  </header>
+
+  <h2>1. Get a key</h2>
+  <p>Open the <a href="/community/dashboard/">Creator dashboard</a> → <b>API keys</b> → <b>Create key</b>. The key (<code>duk_…</code>) is shown once, so copy it somewhere safe. You can revoke it anytime.</p>
+
+  <h2>2. Create a listing</h2>
+<pre><code>curl -X POST https://digitalundergroundstore.com/api/v1/listings \
+  -H "Authorization: Bearer $DU_KEY" -H "Content-Type: application/json" \
+  -d '{
+    "name": "My App",
+    "projectUrl": "https://example.com/my-app",
+    "category": "apps",
+    "pitchShort": "One sentence: what it does and who it is for.",
+    "descriptionLong": "A few short paragraphs about features and how to get it.",
+    "imageUrl": "https://example.com/cover.png",
+    "tags": ["productivity", "mac"],
+    "priceLabel": "$9",
+    "terms": true
+  }'</code></pre>
+  <p>Response <code>201</code> with <code>listing.status</code> = <span class="pill">pending</span> (or <span class="pill">rejected</span> if screening blocks it, with <code>reasons</code>).</p>
+
+  <h2>3. Check status / update</h2>
+<pre><code>curl https://digitalundergroundstore.com/api/v1/listings/LISTING_ID -H "Authorization: Bearer $DU_KEY"
+
+curl -X PATCH https://digitalundergroundstore.com/api/v1/listings/LISTING_ID \
+  -H "Authorization: Bearer $DU_KEY" -H "Content-Type: application/json" \
+  -d '{"pitchShort": "A sharper tagline."}'</code></pre>
+  <p>Updates are re-screened. An approved listing stays live while a new video waits for review.</p>
+
+  <h2>Endpoints</h2>
+  <table>
+    <tr><th>Method</th><th>Path</th><th>What</th></tr>
+    <tr><td><code>GET</code></td><td><code>/api/v1/listings</code></td><td>Your listings</td></tr>
+    <tr><td><code>POST</code></td><td><code>/api/v1/listings</code></td><td>Submit a new listing (review queue)</td></tr>
+    <tr><td><code>GET</code></td><td><code>/api/v1/listings/{id}</code></td><td>One listing + status</td></tr>
+    <tr><td><code>PATCH</code></td><td><code>/api/v1/listings/{id}</code></td><td>Change fields</td></tr>
+  </table>
+  <p>Full spec: <a href="/api/v1/openapi.json">/api/v1/openapi.json</a> · For AI agents: <a href="/llms.txt">/llms.txt</a></p>
+
+  <h2>Rules &amp; limits</h2>
+  <ul>
+    <li>Limits: name 120, tagline 280, description 4000 characters, up to 6 tags. Image: https URL, or a data URL up to about 750 KB.</li>
+    <li>Videos: https YouTube, Vimeo, .mp4 or .webm links. They go live after review. To upload a video file, use the Creator dashboard.</li>
+    <li>Rate limit: 10 writes per hour and 50 per day per key (HTTP <code>429</code> + <code>Retry-After</code>). Reads are not counted.</li>
+    <li>Only list real products you own, with accurate claims. Keys can be revoked by you or by the site owner.</li>
+  </ul>
+</div>
+</body>
+</html>

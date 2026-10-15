@@ -8,10 +8,10 @@
 <title>Creator dashboard — Developer Marketplace — Digital Underground</title>
 <meta name="theme-color" content="#07060f">
 <link rel="stylesheet" href="../community.css">
-<link rel="stylesheet" href="dashboard.css?v=6">
+<link rel="stylesheet" href="dashboard.css?v=7">
 <script src="/community/pw.js" defer></script>
 <script src="/community/upload.js?v=2" defer></script>
-<script src="dashboard.js?v=5" defer></script>
+<script src="dashboard.js?v=6" defer></script>
 <script src="/community/nav.js?v=1" defer></script>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/du-icon-32.png">
@@ -150,6 +150,18 @@
         <div id="list" class="list2"></div>
       </section>
 
+      <section class="card2" id="apikeys" aria-labelledby="apikeys-title" style="margin-top:28px">
+        <div class="card-head"><div><h2 id="apikeys-title">API keys</h2><p>Post and update listings from your own tools or AI agent. <a href="/community/api/">API docs</a></p></div></div>
+        <div id="ak-new" class="ak-new" hidden>
+          <p class="ak-warn">Copy your key now. It won't be shown again.</p>
+          <div class="ak-keyrow"><code id="ak-key"></code><button type="button" class="btn btn-sm btn-primary" id="ak-copy">Copy</button></div>
+        </div>
+        <ul class="ak-list" id="ak-list"></ul>
+        <form id="ak-form" class="ak-form">
+          <input name="label" maxlength="40" placeholder="Key name, e.g. My agent" aria-label="Key name">
+          <button type="submit" class="btn btn-primary" id="ak-create">Create key</button>
+        </form>
+      </section>
       <section class="card2" id="support" aria-labelledby="support-title" style="margin-top:28px">
         <div class="card-head"><div><h2 id="support-title">Support</h2><p>Questions about a listing, review or analytics? We reply by email to the address on your account.</p></div></div>
         <form id="support-form" class="f2">

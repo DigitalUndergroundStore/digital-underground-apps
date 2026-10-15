@@ -330,3 +330,19 @@ label.btn:focus-within, input.sr-only:focus-visible + .btn { outline: 2px solid 
 .cv-btns .btn { min-height: 44px; }
 @media (max-width: 480px) { .cv-btns { width: 100%; } .cv-btns .btn { flex: 1; justify-content: center; } }
 .cover-pick .cv-range { background: transparent !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; }
+
+/* ---- API keys ---- */
+.ak-list { list-style: none; margin: 12px 0; padding: 0; display: grid; gap: 8px; }
+.ak-list li { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border-radius: 14px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); }
+.ak-list li div { display: flex; flex-direction: column; min-width: 0; }
+.ak-list li strong { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ak-list li span { font-size: 12.5px; color: var(--muted, #c8c0da); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.ak-list li.ak-empty { color: var(--muted, #c8c0da); font-size: 14px; justify-content: flex-start; }
+.ak-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.ak-form input { flex: 1 1 180px; min-height: 44px; }
+.ak-form .btn { min-height: 44px; }
+.ak-new { margin-top: 12px; padding: 12px; border-radius: 14px; border: 1px solid rgba(134,239,172,.4); background: rgba(34,197,94,.08); }
+.ak-warn { margin: 0 0 8px; font-size: 13px; font-weight: 650; color: #86efac; }
+.ak-keyrow { display: flex; gap: 8px; align-items: center; }
+.ak-keyrow code { flex: 1; min-width: 0; overflow-wrap: anywhere; font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; padding: 10px; border-radius: 10px; background: rgba(6,4,14,.7); user-select: all; }
+.ak-keyrow .btn { min-height: 44px; flex: none; }

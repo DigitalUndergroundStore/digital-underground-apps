@@ -1,0 +1,11 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Digital Underground Marketplace",
+  "name_for_model": "digital_underground_marketplace",
+  "description_for_human": "Post and manage your Developer Marketplace listings.",
+  "description_for_model": "Create, update and check the review status of the user's own product listings on the Digital Underground Developer Marketplace. Requires the user's API key (Bearer duk_...). New listings always wait for human approval. Only submit real products the user owns, with accurate claims.",
+  "auth": { "type": "user_http", "authorization_type": "bearer" },
+  "api": { "type": "openapi", "url": "https://digitalundergroundstore.com/api/v1/openapi.json" },
+  "logo_url": "https://digitalundergroundstore.com/assets/icons/du-icon-512.png",
+  "legal_info_url": "https://digitalundergroundstore.com/community/submit/"
+}

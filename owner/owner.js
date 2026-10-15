@@ -45,6 +45,7 @@
     if (name === "support") loadSupport("open");
     if (name === "analytics") loadAnalytics();
     if (name === "backups") loadBackups();
+    if (name === "apikeys") loadKeys();
   }
 
   function loadHome() {
@@ -64,6 +65,7 @@
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
         card("analytics", "Analytics", (w.views || 0), (w.clicks || 0) + " clicks · 7 days", "") +
         card("backups", "Backups", backup.lastSnapshot || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
+        card("apikeys", "API keys", "→", "Creator API access", "") +
         card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");
       $("home-today").innerHTML =
         '<div class="item" style="margin-top:14px"><strong>Today</strong>' +
@@ -276,6 +278,26 @@
     anView = v;
     try { localStorage.setItem(AN_KEY, v); } catch (_) {}
     loadAnalytics();
+  });
+
+  function loadKeys() {
+    api("apikeys").then(function (out) {
+      if (!out.r.ok) { if (out.r.status === 401) go("login"); return; }
+      var keys = out.d.keys || [];
+      $("apikeys-list").innerHTML = keys.length ? keys.map(function (k) {
+        return '<div class="item"><strong>' + esc(k.label) + '</strong>' +
+          '<div class="stat-row"><span>Key</span><span>duk_…' + esc(k.last4) + "</span></div>" +
+          '<div class="stat-row"><span>Creator</span><span>' + esc(k.creatorId) + "</span></div>" +
+          '<div class="stat-row"><span>Created</span><span>' + esc(new Date(k.createdAt).toLocaleString()) + "</span></div>" +
+          '<button type="button" class="btn danger" data-revoke-key="' + esc(k.id) + '">Revoke</button></div>';
+      }).join("") : '<p class="muted">No API keys yet.</p>';
+    });
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-revoke-key]");
+    if (!b || !confirm("Revoke this API key? Anything using it stops working.")) return;
+    b.disabled = true;
+    api("apikeys", { method: "POST", body: { keyId: b.getAttribute("data-revoke-key") } }).then(function () { loadKeys(); });
   });
 
   function loadBackups() {

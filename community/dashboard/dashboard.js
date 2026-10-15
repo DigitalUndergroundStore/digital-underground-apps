@@ -276,6 +276,7 @@
   }
 
   function load() {
+    akLoad();
     return api("GET").then(function (d) {
       if (d._status === 401) {
         var hadLink = !!auth;
@@ -570,4 +571,40 @@
 
   showView("loading");
   load();
+
+  /* ---------- API keys ---------- */
+  function akRender(keys) {
+    var ul = $("ak-list"); if (!ul) return;
+    ul.innerHTML = (keys || []).length ? keys.map(function (k) {
+      return '<li><div><strong>' + esc(k.label) + '</strong><span>duk_…' + esc(k.last4) + ' · created ' + esc(new Date(k.createdAt).toLocaleDateString()) + '</span></div><button type="button" class="btn btn-sm btn-quiet-danger" data-ak-revoke="' + esc(k.id) + '">Revoke</button></li>';
+    }).join("") : '<li class="ak-empty">No keys yet.</li>';
+  }
+  function akLoad() { if (!$("ak-list")) return; api("POST", { action: "api_keys" }).then(function (d) { if (d && d.ok) akRender(d.keys); }).catch(function () {}); }
+  if ($("ak-form")) {
+    $("ak-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var b = $("ak-create"); b.disabled = true;
+      api("POST", { action: "api_key_create", label: e.target.label.value }).then(function (d) {
+        b.disabled = false;
+        if (!d || !d.ok) { toast((d && d.error) || "Couldn't create a key.", false); return; }
+        e.target.label.value = ""; $("ak-key").textContent = d.key; $("ak-new").hidden = false; akRender(d.keys);
+        toast("Key created. Copy it now.", true);
+      }, function () { b.disabled = false; toast("Network error.", false); });
+    });
+    $("ak-copy").addEventListener("click", function () {
+      var k = $("ak-key").textContent;
+      (navigator.clipboard ? navigator.clipboard.writeText(k) : Promise.reject()).then(function () { toast("Key copied.", true); }, function () {
+        var r = document.createRange(); r.selectNodeContents($("ak-key")); var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); toast("Select and copy the key.", false);
+      });
+    });
+    $("ak-list").addEventListener("click", function (e) {
+      var b = e.target.closest("[data-ak-revoke]"); if (!b) return;
+      confirmDlg({ title: "Revoke this key?", text: "Anything using it stops working right away.", yes: "Revoke", danger: true }, b).then(function (ok) {
+        if (!ok) return;
+        api("POST", { action: "api_key_revoke", keyId: b.getAttribute("data-ak-revoke") }).then(function (d) {
+          if (d && d.ok) { akRender(d.keys); $("ak-new").hidden = true; toast("Key revoked.", true); } else toast((d && d.error) || "Couldn't revoke.", false);
+        });
+      });
+    });
+  }
 })();

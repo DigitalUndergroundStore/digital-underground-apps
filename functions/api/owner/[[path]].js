@@ -232,6 +232,16 @@ export async function onRequest(context) {
     return json({ listings, chart });
   }
 
+  if (head === "apikeys") {
+    const { listAllKeys, ownerRevoke } = await import("../../_lib/apikeys.js");
+    if (request.method === "POST") {
+      let b = {}; try { b = await request.json(); } catch {}
+      if (!(await ownerRevoke(kv, String(b.keyId || "")))) return json({ error: "Key not found." }, 404);
+      return json({ ok: true });
+    }
+    return json({ keys: await listAllKeys(kv) });
+  }
+
   if (head === "storestats" && request.method === "GET") {
     const { readStoreStats } = await import("../../_lib/storestats.js");
     return json(await readStoreStats(kv, 30));

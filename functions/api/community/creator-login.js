@@ -43,7 +43,7 @@ export async function onRequest(context) {
     if (!loginAllowed(ip, email)) return json({ ok: false, error: "Too many attempts. Try again in 15 minutes." }, 429);
     const acct = await checkPassword(kv, email, body.password);
     if (!acct) return json(BAD_LOGIN, 400);
-    const cookie = await sessionCookie(env, acct.id);
+    const cookie = await sessionCookie(env, acct);
     return json({ ok: true }, 200, cookie ? { "Set-Cookie": cookie } : {});
   }
 
@@ -81,7 +81,7 @@ export async function onRequest(context) {
     const acct = acctId ? await getAccount(kv, acctId) : null;
     if (!acct) return json(BAD_CODE, 400);
     await setCredentials(kv, acct, email, body.password);
-    const cookie = await sessionCookie(env, acct.id);
+    const cookie = await sessionCookie(env, acct);
     return json({ ok: true }, 200, cookie ? { "Set-Cookie": cookie } : {});
   }
 

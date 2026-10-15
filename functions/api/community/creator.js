@@ -77,7 +77,7 @@ export async function onRequest(context) {
     // Visiting a private link signs this device in, so the link is a one-time step.
     const extra = {};
     if (who.via === "link") {
-      const c = await sessionCookie(env, acct.id);
+      const c = await sessionCookie(env, acct);
       if (c) extra["Set-Cookie"] = c;
     }
     return json({
@@ -109,7 +109,7 @@ export async function onRequest(context) {
     }
     const r = await setCredentials(kv, acct, action === "claim" ? body.email : acct.email, body.password);
     if (r.error) return json({ error: r.error }, 400);
-    const c = await sessionCookie(env, acct.id);
+    const c = await sessionCookie(env, acct);
     return json({ ok: true, account: accountView(acct) }, 200, c ? { "Set-Cookie": c } : {});
   }
 

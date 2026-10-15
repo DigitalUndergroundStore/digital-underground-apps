@@ -74,26 +74,46 @@ export function dashboardUrl(env, request, token) {
 export const SESSION_COOKIE = "du_creator";
 const SESSION_DAYS = 180;
 
-export async function signSession(env, acctId) {
+export async function signSession(env, acct) {
   const secret = env?.COMMUNITY_ADMIN_TOKEN;
-  if (!secret || !acctId) return null;
+  if (!secret || !acct?.id) return null;
+  const ver = String(acct.sessVer || 0);
   const exp = String(Date.now() + SESSION_DAYS * 86400000);
-  const sig = await hmacHex(secret, `sess:${acctId}:${exp}`);
-  return `${acctId}.${exp}.${sig}`;
+  const sig = await hmacHex(secret, `sess:${acct.id}:${ver}:${exp}`);
+  return `${acct.id}.${ver}.${exp}.${sig}`;
 }
 
-async function verifySession(env, value) {
+/** Returns the account if the cookie is valid and its session version is current. */
+async function verifySession(env, kv, value) {
   const secret = env?.COMMUNITY_ADMIN_TOKEN;
-  const [acctId, exp, sig] = String(value || "").split(".");
-  if (!secret || !acctId || !exp || !sig || !(Number(exp) > Date.now())) return null;
-  const expected = await hmacHex(secret, `sess:${acctId}:${exp}`);
-  return timingSafeEqualStr(expected, sig) ? acctId : null;
+  const [acctId, ver, exp, sig] = String(value || "").split(".");
+  if (!secret || !acctId || !ver || !exp || !sig || !(Number(exp) > Date.now())) return null;
+  const expected = await hmacHex(secret, `sess:${acctId}:${ver}:${exp}`);
+  if (!timingSafeEqualStr(expected, sig)) return null;
+  const acct = await getAccount(kv, acctId);
+  return acct && String(acct.sessVer || 0) === ver ? acct : null;
 }
 
-export async function sessionCookie(env, acctId) {
-  const v = await signSession(env, acctId);
+export async function sessionCookie(env, acctOrId, kv) {
+  const acct = typeof acctOrId === "string" ? (kv ? await getAccount(kv, acctOrId) : { id: acctOrId }) : acctOrId;
+  const v = await signSession(env, acct);
   if (!v) return null;
   return `${SESSION_COOKIE}=${v}; Max-Age=${SESSION_DAYS * 86400}; Path=/; HttpOnly; Secure; SameSite=Lax`;
+}
+
+/** Admin: wipe email/password, revoke every session, unlink the login email. */
+export async function resetCreatorAuth(kv, acct) {
+  const oldEmail = acct.email || "";
+  if (oldEmail) {
+    const k = await loginKey(oldEmail);
+    if ((await kv.get(k)) === acct.id) await kv.delete(k);
+  }
+  delete acct.email;
+  delete acct.pw;
+  delete acct.pwSetAt;
+  acct.sessVer = (acct.sessVer || 0) + 1;
+  await putAccount(kv, acct);
+  return { oldEmail };
 }
 
 export function clearSessionCookie() {
@@ -128,8 +148,7 @@ export async function authCreatorEx(request, env, kv) {
   }
   const sess = readCookie(request, SESSION_COOKIE);
   if (sess) {
-    const acctId = await verifySession(env, sess);
-    const acct = acctId ? await getAccount(kv, acctId) : null;
+    const acct = await verifySession(env, kv, sess);
     if (acct) return { acct, via: "cookie" };
   }
   return null;

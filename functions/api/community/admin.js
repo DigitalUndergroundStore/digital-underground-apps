@@ -19,6 +19,7 @@ import {
   issueAccountToken,
   linkContactToCreator,
   purgeStats,
+  resetCreatorAuth,
 } from "../../_lib/creator.js";
 
 export async function onRequest(context) {
@@ -91,6 +92,18 @@ export async function onRequest(context) {
       await kv.delete("creator:" + acct.id);
       if (body.email) await unlinkContact(kv, String(body.email), acct.id, body.listingIds || []);
       return json({ ok: true, deleted: acct.id });
+    }
+    if (action === "reset_creator_auth") {
+      // Clear email + password and revoke all sessions. The private link (token) keeps working.
+      const acct = await getAccount(kv, String(body.creatorId || ""));
+      if (!acct) return json({ error: "Creator not found." }, 404);
+      const { oldEmail } = await resetCreatorAuth(kv, acct);
+      let contactUnlinked = false;
+      if (oldEmail) {
+        await unlinkContact(kv, oldEmail, acct.id, []);
+        contactUnlinked = true;
+      }
+      return json({ ok: true, creatorId: acct.id, hadEmail: !!oldEmail, contactUnlinked, listingIds: acct.listingIds || [] });
     }
     if (action === "unlink_contact_listing") {
       await unlinkContact(kv, String(body.email || ""), "", [String(body.id || "")]);

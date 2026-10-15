@@ -178,7 +178,7 @@ export async function onRequest(context) {
 
   const headers = {};
   if (acct && signIn) {
-    const c = await sessionCookie(env, acct.id);
+    const c = await sessionCookie(env, acct);
     if (c) headers["Set-Cookie"] = c;
   }
   return json({

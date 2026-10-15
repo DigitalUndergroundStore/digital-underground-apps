@@ -35,7 +35,7 @@ function start() {
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
-  const ZMIN = 2.35, ZMAX = 3.85;
+  const ZMIN = 1.6, ZMAX = 5.5;
   let zoom = isMobile ? 3.25 : 2.75;
   camera.position.set(0, 0, zoom);
 
@@ -45,33 +45,98 @@ function start() {
   earthGroup.rotation.z = THREE.MathUtils.degToRad(23.4);
   scene.add(earthGroup);
   const spin = new THREE.Group();
-  spin.rotation.set(0.18, 4.15, 0);
+  // Real-time sun: subsolar point from current UTC, expressed in the Earth's fixed (texture) frame.
+  // three.js sphere UVs: lon λ -> phi = (λ+180)/360·2π, local dir = (-cos φ·cos δ, sin δ, sin φ·cos δ).
+  const sunLocal = new THREE.Vector3();
+  function subsolar(date) {
+    const d = date || new Date();
+    const start = Date.UTC(d.getUTCFullYear(), 0, 0);
+    const doy = (d.getTime() - start) / 86400000;
+    const g = (2 * Math.PI / 365.25) * (doy - 1);
+    const decl = 0.006918 - 0.399912 * Math.cos(g) + 0.070257 * Math.sin(g) - 0.006758 * Math.cos(2 * g) + 0.000907 * Math.sin(2 * g);
+    const eqt = 229.18 * (0.000075 + 0.001868 * Math.cos(g) - 0.032077 * Math.sin(g) - 0.014615 * Math.cos(2 * g) - 0.040849 * Math.sin(2 * g)); // minutes
+    const utcMin = d.getUTCHours() * 60 + d.getUTCMinutes() + d.getUTCSeconds() / 60;
+    let lon = -(utcMin + eqt - 720) / 4; // degrees
+    lon = ((lon + 540) % 360) - 180;
+    return { lon, lat: decl * 180 / Math.PI };
+  }
+  function lonLatToLocal(lon, lat, out) {
+    const phi = ((lon + 180) / 360) * Math.PI * 2, la = lat * Math.PI / 180;
+    return out.set(-Math.cos(phi) * Math.cos(la), Math.sin(la), Math.sin(phi) * Math.cos(la));
+  }
+  let sun0 = subsolar();
+  lonLatToLocal(sun0.lon, sun0.lat, sunLocal);
+  setInterval(() => { sun0 = subsolar(); lonLatToLocal(sun0.lon, sun0.lat, sunLocal); }, 60000);
+  // Start facing the evening terminator (~80° east of the subsolar point) for a day/night mix.
+  const startLon = sun0.lon + 80;
+  const startPhi = ((startLon + 180) / 360) * Math.PI * 2;
+  spin.rotation.set(0.18, Math.PI / 2 - startPhi, 0);
   earthGroup.add(spin);
 
-  // ---------- Stars ----------
+  // ---------- Space: nebula haze + starfield ----------
+  const spaceUni = { uTime: { value: 0 }, uPR: { value: renderer.getPixelRatio() } };
+  (function nebula() {
+    const m = new THREE.ShaderMaterial({
+      uniforms: spaceUni, side: THREE.BackSide, depthWrite: false, transparent: true,
+      vertexShader: `varying vec3 vD; void main(){ vD = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }`,
+      fragmentShader: `varying vec3 vD;
+        float h(vec3 p){ return fract(sin(dot(p, vec3(12.9898,78.233,37.719))) * 43758.5453); }
+        float n(vec3 p){ vec3 i=floor(p), f=fract(p); f=f*f*(3.-2.*f);
+          return mix(mix(mix(h(i),h(i+vec3(1,0,0)),f.x),mix(h(i+vec3(0,1,0)),h(i+vec3(1,1,0)),f.x),f.y),
+                     mix(mix(h(i+vec3(0,0,1)),h(i+vec3(1,0,1)),f.x),mix(h(i+vec3(0,1,1)),h(i+vec3(1,1,1)),f.x),f.y),f.z); }
+        float fbm(vec3 p){ float v=0., a=.5; for(int i=0;i<${isMobile ? 3 : 5};i++){ v+=a*n(p); p*=2.03; a*=.5; } return v; }
+        void main(){
+          vec3 d = normalize(vD);
+          // Milky Way band: a tilted great circle
+          vec3 bandN = normalize(vec3(0.35, 1.0, -0.25));
+          float band = exp(-pow(dot(d, bandN) / 0.28, 2.0));
+          float f = fbm(d * 3.2 + 1.7);
+          float g = fbm(d * 7.0 - 3.1);
+          float neb = smoothstep(.35, .9, f) * .7 + band * (.45 + .55 * g);
+          vec3 col = mix(vec3(.16, .10, .42), vec3(.10, .26, .62), smoothstep(.3, .8, g));
+          col = mix(col, vec3(.42, .22, .78), smoothstep(.55, .95, f) * .5);
+          float dust = smoothstep(.55, .75, fbm(d * 11.0)) * band * .5;
+          gl_FragColor = vec4(col * neb * (1. - dust) * .95, 1.);
+        }`,
+    });
+    const neb = new THREE.Mesh(new THREE.SphereGeometry(60, 48, 32), m);
+    neb.renderOrder = -2; neb.frustumCulled = false;
+    scene.add(neb);
+  })();
   (function stars() {
-    const N = isMobile ? 900 : 2000;
-    const pos = new Float32Array(N * 3), col = new Float32Array(N * 3), size = new Float32Array(N);
-    const pal = [new THREE.Color(1, 1, 1), new THREE.Color(0.72, 0.82, 1), new THREE.Color(0.78, 0.66, 1)];
+    const N = isMobile ? 1800 : 4500;
+    const pos = new Float32Array(N * 3), col = new Float32Array(N * 3), size = new Float32Array(N), ph = new Float32Array(N);
+    const pal = [new THREE.Color(1, 1, 1), new THREE.Color(0.75, 0.85, 1), new THREE.Color(0.82, 0.7, 1), new THREE.Color(1, 0.93, 0.82)];
+    const bandN = new THREE.Vector3(0.35, 1, -0.25).normalize(), v = new THREE.Vector3();
     for (let i = 0; i < N; i++) {
-      const r = 18 + Math.random() * 28, u = Math.random() * 2 - 1, t = Math.random() * Math.PI * 2, s = Math.sqrt(1 - u * u);
-      pos.set([r * s * Math.cos(t), r * u, r * s * Math.sin(t)], i * 3);
-      const c = pal[Math.random() < 0.7 ? 0 : Math.random() < 0.5 ? 1 : 2];
+      const r = 18 + Math.random() * 28;
+      // ~35% of stars cluster along the Milky Way band
+      do { const u = Math.random() * 2 - 1, t = Math.random() * Math.PI * 2, q = Math.sqrt(1 - u * u); v.set(q * Math.cos(t), u, q * Math.sin(t)); }
+      while (i % 3 === 0 && Math.abs(v.dot(bandN)) > 0.22);
+      pos.set([v.x * r, v.y * r, v.z * r], i * 3);
+      const c = pal[Math.random() < 0.6 ? 0 : (1 + Math.floor(Math.random() * 3))];
       col.set([c.r, c.g, c.b], i * 3);
-      size[i] = 0.6 + Math.random() * 1.6;
+      const k = Math.random();
+      size[i] = k > 0.985 ? 4.2 + Math.random() * 2 : k > 0.9 ? 2.6 + Math.random() * 1.4 : 1.2 + Math.random() * 1.4;
+      ph[i] = Math.random() < 0.35 ? Math.random() * 6.28 : -1; // -1 = steady
     }
     const g = new THREE.BufferGeometry();
     g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
     g.setAttribute("color", new THREE.BufferAttribute(col, 3));
     g.setAttribute("size", new THREE.BufferAttribute(size, 1));
+    g.setAttribute("phase", new THREE.BufferAttribute(ph, 1));
     const m = new THREE.ShaderMaterial({
-      uniforms: { uPR: { value: renderer.getPixelRatio() } },
-      vertexShader: `attribute float size; varying vec3 vC; uniform float uPR;
-        void main(){ vC=color; vec4 mv=modelViewMatrix*vec4(position,1.); gl_PointSize=size*uPR; gl_Position=projectionMatrix*mv; }`,
-      fragmentShader: `varying vec3 vC; void main(){ vec2 p=gl_PointCoord-.5; float d=length(p); if(d>.5) discard; gl_FragColor=vec4(vC, smoothstep(.5,.0,d)*.9); }`,
-      vertexColors: true, transparent: true, depthWrite: false,
+      uniforms: spaceUni,
+      vertexShader: `attribute float size; attribute float phase; varying vec3 vC; varying float vA; uniform float uPR; uniform float uTime;
+        void main(){ vC=color; float tw = phase < 0. ? 1. : .55 + .45 * sin(uTime * (1.2 + fract(phase) * 2.2) + phase);
+          vA = tw; vec4 mv=modelViewMatrix*vec4(position,1.); gl_PointSize=size*1.35*uPR*(.85+.15*tw); gl_Position=projectionMatrix*mv; }`,
+      fragmentShader: `varying vec3 vC; varying float vA; void main(){ vec2 p=gl_PointCoord-.5; float d=length(p); if(d>.5) discard;
+        float core = smoothstep(.5, .0, d); core = core * core * 1.6 + smoothstep(.18, .0, d);
+        gl_FragColor = vec4(vC * 1.6, clamp(core, 0., 1.) * vA); }`,
+      vertexColors: true, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
     });
-    scene.add(new THREE.Points(g, m));
+    const pts = new THREE.Points(g, m); pts.renderOrder = -1; pts.frustumCulled = false;
+    scene.add(pts);
   })();
 
   // ---------- Earth ----------
@@ -134,7 +199,7 @@ function start() {
 
         // twilight purple band around the terminator
         float tw = smoothstep(-0.22, 0.0, ndl) * (1.0 - smoothstep(0.0, 0.2, ndl));
-        col += vec3(0.42, 0.2, 0.75) * tw * 0.22;
+        col += vec3(0.42, 0.2, 0.75) * tw * 0.09;
 
         // fresnel rim
         float fr = pow(1.0 - max(dot(N, V), 0.0), 3.0);
@@ -169,7 +234,7 @@ function start() {
   spin.add(clouds);
 
   // ---------- Halo ----------
-  const haloMat = new THREE.ShaderMaterial({
+  var haloMat = new THREE.ShaderMaterial({
     uniforms: { uSun: { value: sunDir.clone() } },
     side: THREE.BackSide, blending: THREE.AdditiveBlending, transparent: true, depthWrite: false,
     vertexShader: `varying vec3 vNw; varying vec3 vPw;
@@ -279,9 +344,17 @@ function start() {
   new IntersectionObserver((es) => { onScreen = es[0].isIntersecting; kick(); }, { threshold: 0 }).observe(root);
   function kick() { if (!raf && visible && onScreen) raf = requestAnimationFrame(loop); }
 
+  const now0 = () => performance.now();
   let frames = 0, t0 = performance.now(), cloudOff = 0;
   window.__duGlobeFps = 0;
-  function renderFrame() { renderer.render(scene, camera); }
+  const _q = new THREE.Quaternion();
+  function updateSun() {
+    spin.updateMatrixWorld();
+    spin.getWorldQuaternion(_q);
+    sunDir.copy(sunLocal).applyQuaternion(_q).normalize();
+    uniforms.uSun.value.copy(sunDir); cloudUni.uSun.value.copy(sunDir); haloMat.uniforms.uSun.value.copy(sunDir);
+  }
+  function renderFrame() { updateSun(); renderer.render(scene, camera); }
   function loop() {
     raf = 0;
     if (!visible || !onScreen) return;
@@ -290,11 +363,11 @@ function start() {
       vx *= DAMP; vy *= DAMP;
       if (Math.abs(vx) < 1e-6) vx = 0; if (Math.abs(vy) < 1e-6) vy = 0;
     }
+    spaceUni.uTime.value = now0() / 1000;
     cloudOff = (cloudOff + 0.000012) % 1;
     uniforms.uCloudOffset.value = cloudOff; cloudUni.uOffset.value = cloudOff;
     const dist = zoom / Math.min(1, camera.aspect * 1.25); // portrait screens: keep the globe inside the width
     camera.position.z += (dist - camera.position.z) * 0.12;
-    // sun is fixed in world space; spin group rotation moves the terminator naturally
     renderFrame();
     frames++;
     const now = performance.now();

@@ -205,6 +205,36 @@
   .hero-cta-secondary:hover { color: var(--cyan); text-decoration-color: rgba(191, 232, 255, .7); }
   .hero-cta:focus-visible,
   .hero-cta-secondary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .market-cta {
+    display: flex; align-items: center; gap: 14px;
+    width: 100%; max-width: 460px; min-height: 76px; margin-top: 16px; padding: 14px 16px 14px 14px;
+    border-radius: 18px; text-decoration: none; color: #fff;
+    background: linear-gradient(110deg, #7c3aed 0%, #5b3df0 45%, #2563eb 100%);
+    border: 1px solid rgba(255, 255, 255, .22);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 12px 30px rgba(76, 29, 149, .5), 0 0 0 1px rgba(37, 99, 235, .25);
+    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+    -webkit-tap-highlight-color: transparent; position: relative; z-index: 1;
+  }
+  .market-cta:hover { transform: translateY(-2px); filter: brightness(1.08); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 16px 36px rgba(76, 29, 149, .6); }
+  .market-cta:active { transform: translateY(0) scale(.99); }
+  .market-cta:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .market-ico {
+    flex: none; width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+    background: rgba(255, 255, 255, .16); border: 1px solid rgba(255, 255, 255, .25);
+  }
+  .market-ico svg { width: 26px; height: 26px; }
+  .market-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; text-align: left; }
+  .market-txt strong { font-size: 18px; font-weight: 800; line-height: 1.2; letter-spacing: -.01em; }
+  .market-txt span { font-size: 14px; font-weight: 600; color: rgba(255, 255, 255, .86); line-height: 1.3; }
+  .market-arrow { flex: none; width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; background: rgba(255, 255, 255, .18); }
+  .market-arrow svg { width: 20px; height: 20px; }
+  @media (min-width: 768px) {
+    .market-cta { min-height: 84px; margin-top: 20px; padding: 16px 20px 16px 16px; }
+    .market-txt strong { font-size: 20px; }
+    .market-txt span { font-size: 15px; }
+    .market-ico { width: 52px; height: 52px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .market-cta { transition: none; } }
   .list-cta-wrap {
     display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px;
   }
@@ -589,11 +619,12 @@
       <div class="hero-actions">
         <a class="hero-cta" href="#store-sections">Browse the store</a>
         <a class="hero-cta-secondary" href="#featured">Bestsellers</a>
-        <span class="list-cta-wrap">
-          <a class="hero-cta-secondary" href="/community/submit/">List your project</a>
-          <span class="launch-badge">List your products for free</span>
-        </span>
       </div>
+      <a class="market-cta" href="/community/">
+        <span class="market-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9.5 5.6 4.8A1.2 1.2 0 0 1 6.7 4h10.6a1.2 1.2 0 0 1 1.1.8L20 9.5M4 9.5h16M4 9.5a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0M5.5 12.2V19a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-6.8M9.5 20v-4.2h5V20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="market-txt"><strong>Developer Marketplace</strong></span>
+        <span class="market-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
       </div>
     </div>
     <button type="button" class="hero-sound" aria-label="Sound off" aria-pressed="false" hidden>

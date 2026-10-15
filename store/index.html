@@ -234,6 +234,15 @@
   .hero .aurora { display: none; }
   .hero-panel { pointer-events: none; }
   .hero-panel a, .hero-panel button, .hero-panel-fab, .hero-panel input { pointer-events: auto; }
+  .hero-music { overflow: visible; transition: background .2s, border-color .2s, box-shadow .2s, transform .15s; }
+  .hero-music:hover { border-color: rgba(191, 232, 255, .5); }
+  .hero-music:active { transform: scale(.94); }
+  .hero-music.is-on { background: linear-gradient(135deg, rgba(124, 58, 237, .85), rgba(37, 99, 235, .85)); border-color: rgba(255, 255, 255, .35); box-shadow: 0 8px 24px rgba(76, 29, 149, .5); }
+  .hero-music.is-loading { animation: duPulse 1s ease-in-out infinite; }
+  .hero-music.is-armed::after { content: ""; position: absolute; top: 4px; right: 4px; width: 8px; height: 8px; border-radius: 99px; background: #a78bfa; box-shadow: 0 0 0 2px rgba(6, 4, 14, .8); }
+  .hero-music .eq { display: none; }
+  @keyframes duPulse { 50% { box-shadow: 0 0 0 6px rgba(167, 139, 250, .25); } }
+  @media (prefers-reduced-motion: reduce) { .hero-music.is-loading { animation: none; } }
   .market-cta {
     display: flex; align-items: center; gap: 14px;
     width: 100%; max-width: 460px; min-height: 76px; margin-top: 16px; padding: 14px 16px 14px 14px;
@@ -647,6 +656,11 @@
       </a>
       </div>
     </div>
+    <button type="button" id="hero-music" class="hero-sound hero-music" aria-label="Play background music" aria-pressed="false" title="Play music" hidden>
+      <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M15.5 9.2a3.6 3.6 0 0 1 0 5.6M18 6.8a7 7 0 0 1 0 10.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
     <button type="button" class="hero-sound" aria-label="Sound off" aria-pressed="false" hidden>
       <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
       <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.2a3.6 3.6 0 0 1 0 5.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
@@ -1311,7 +1325,7 @@
       <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v7M5 7.5 8 10.5 11 7.5M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Instant download</li>
       <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Secure checkout</li>
     </ul>
-    <p class="credits" style="margin:14px 0 0;font-size:12px;color:rgba(200,192,218,.7)">Earth textures © <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener" style="color:inherit">Solar System Scope</a>, CC BY 4.0 (resized). Specular map from the three.js examples (MIT).</p>
+    <p class="credits" style="margin:14px 0 0;font-size:12px;color:rgba(200,192,218,.7)">Earth textures © <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener" style="color:inherit">Solar System Scope</a>, CC BY 4.0 (resized). Specular map from the three.js examples (MIT). Music: “Solar Sail” by <a href="https://opengameart.org/content/solar-sail" target="_blank" rel="noopener" style="color:inherit">vitalezzz</a> (CC0).</p>
   </footer>
 </div>
 <script>
@@ -1557,6 +1571,7 @@
     .catch(function () {});
 })();
 </script>
+<script src="/store/hero-music.js?v=1" defer></script>
 <script src="/store/track.js?v=1" defer></script>
 </body>
 </html>

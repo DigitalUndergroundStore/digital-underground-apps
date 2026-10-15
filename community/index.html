@@ -199,14 +199,15 @@
 <script>
 (function () {
   var b = document.getElementById("share-market"), t = document.getElementById("share-toast"), tm;
-  var data = { title: "Developer Marketplace | Digital Underground", text: "List your products for free on the Developer Marketplace", url: "https://digitalundergroundstore.com/community/" };
+  var data = { title: "Developer Marketplace | Digital Underground", text: "List your products for free on the Developer Marketplace https://digitalundergroundstore.com/community/ https://x.com/DigitalUG_Store/status/2110877065847128360/video/1", url: "https://digitalundergroundstore.com/community/" };
+  var full = data.text;
   function toast(msg) { t.textContent = msg; t.classList.add("show"); clearTimeout(tm); tm = setTimeout(function () { t.classList.remove("show"); }, 2200); }
   function copy() {
-    var done = function () { toast("Link copied"); };
-    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(data.url).then(done, legacy);
+    var done = function () { toast("Copied: link + video"); };
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(full).then(done, legacy);
     legacy();
     function legacy() {
-      var i = document.createElement("textarea"); i.value = data.url; i.setAttribute("readonly", ""); i.style.position = "fixed"; i.style.opacity = "0";
+      var i = document.createElement("textarea"); i.value = full; i.setAttribute("readonly", ""); i.style.position = "fixed"; i.style.opacity = "0";
       document.body.appendChild(i); i.select();
       try { document.execCommand("copy") ? done() : toast(data.url); } catch (_) { toast(data.url); }
       i.remove();
@@ -214,7 +215,7 @@
   }
   b.addEventListener("click", function () {
     if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
-      navigator.share(data).catch(function (e) { if (!e || e.name !== "AbortError") copy(); });
+      navigator.share({ title: data.title, text: full }).catch(function (e) { if (!e || e.name !== "AbortError") copy(); });
     } else copy();
   });
 })();

@@ -1,4 +1,4 @@
-/* Pantry Week v3.12.2 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.13.0 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -1019,7 +1019,7 @@
       const badges = recipeBadges(recipe);
       const photo = photoUrl(recipe);
       return `<article class="recipe-card">
-        <div class="card-photo" style="background-image:url('${photo.replace(/'/g, "%27")}')" role="img" aria-label=""></div>
+        <div class="card-photo${photo ? "" : " card-photo--empty"}"${photo ? ` style="background-image:url('${photo.replace(/'/g, "%27")}')"` : ""} role="img" aria-label=""></div>
         <div class="card-bar ${barClass(recipe)}"></div>
         <div class="card-body">
           <div class="card-top">
@@ -1067,7 +1067,7 @@
         <p class="detail-top__title">${esc(recipe.name)}</p>
         <button type="button" class="text-btn" data-action="edit" data-id="${esc(recipe.id)}">Edit</button>
       </div>
-      <div class="detail-hero" style="background-image:url('${hero.replace(/'/g, "%27")}')" role="img" aria-label=""></div>
+      <div class="detail-hero${hero ? "" : " detail-hero--empty"}"${hero ? ` style="background-image:url('${hero.replace(/'/g, "%27")}')"` : ""} role="img" aria-label=""></div>
       <h2>${esc(recipe.name)}</h2>
       <p class="meta">${esc(timeLabel(recipe))} · ${recipe.servings} servings${diet ? " · " + esc(diet) : ""}</p>
       ${sourceCreditHtml(recipe)}
@@ -1290,7 +1290,7 @@
       <article class="recipe-card recipe-card--smart">
         ${smartChefNewIdeaBtn("smart-chef__new-idea--corner")}
         <button type="button" class="plain smart-chef__open" data-action="open-smart-chef-detail">
-          <div class="card-photo" style="background-image:url('${hero.replace(/'/g, "%27")}')" role="img" aria-label=""></div>
+          <div class="card-photo${hero ? "" : " card-photo--empty"}"${hero ? ` style="background-image:url('${hero.replace(/'/g, "%27")}')"` : ""} role="img" aria-label=""></div>
           <div class="card-bar ${barClass(recipe)}"></div>
           <div class="card-body">
             <p class="smart-chef__kicker">${esc([r.templateLabel, r.profileLabel].filter(Boolean).join(" · "))}</p>
@@ -2081,7 +2081,8 @@
       photoKey: ed.photoKey || "",
       sourceUrl: ed.sourceUrl || "",
       sourceName: ed.sourceName || "",
-      sourceLicense: ed.sourceLicense || ""
+      sourceLicense: ed.sourceLicense || "",
+      userEdited: !!ed.id
     });
     if (ui.import && ui.import.editIndex != null) {
       const rowIdx = ui.import.editIndex;

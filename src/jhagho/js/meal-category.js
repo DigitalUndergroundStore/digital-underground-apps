@@ -109,11 +109,37 @@
     return null;
   }
 
+  /* Hard guard (v3.13): sweets, baked treats, drinks, and condiments never enter any plan slot,
+     whatever their tags say. Savory pies/puddings and pancakes/crab cakes are meals. */
+  var HARD_SWEET = /\b(cookies?|brownies?|cupcakes?|cheesecakes?|cakes?|muffins?|scones?|doughnuts?|donuts?|fudge|candy|candies|toffee|brittle|truffles?|icing|frosting|ice cream|nice cream|sorbet|gelato|sherbet|popsicles?|ice pops?|parkin|shortbread|biscotti|macarons?|macaroons?|meringues?|crumble|cobbler|crisp|tarts?|tiramis[uù]|pavlova|trifle|custard|mousse|flan|baklava|strudel|turnovers?|cinnamon rolls?|banana bread|sweet bread|fruit bread|gingerbread|snickerdoodles?|barfi|halwa|kheer|ladoo|jalebi|gulab jamun|mars bar|twinkie|oreo)\b/i;
+  var HARD_DRINK = /\b(smoothie(?! bowl)|lassi|lemonade|cocktail|mocktail|punch|latte|espresso|coffee|tea|milkshake|shake|frappe|eggnog|horchata|juice|mead|wine|beer|liqueur|hot chocolate|cocoa)\b/i;
+  var HARD_CONDIMENT = /\b(sauce|gravy|salsa|dressing|vinaigrette|dip|spread|chutney|relish|ketchup|mayonnaise|aioli|pesto|marinade|rub|seasoning|spice mix|masala powder|jam|jelly|marmalade|syrup|glaze|stock|broth|chili oil|pickles?|kimchi)\b/i;
+  var MEAL_EXCEPTIONS = /\b(pancakes?|crab cakes?|fish ?cakes?|potato cakes?|corn ?cakes?|rice cakes?|griddle ?cakes?|johnny ?cakes?|hoe ?cakes?|pot pie|shepherd'?s pie|cottage pie|meat pie|tourti[eè]re|chicken pie|beef pie|pork pie|steak (and|&) (ale|kidney)|fish pie|frito pie|tamale pie|corned beef pie|stargazy pie|macaroni pie|mushroom stout pie|yorkshire pudding|kidney pudding|black pudding|sausage gravy|biscuits and gravy|with (pan )?gravy|in [a-z ]*sauce|with [a-z ]*sauce|sauce (and|with)|meat sauce|bolognese|enchilada|palaver sauce|yam and egg sauce|soup|stew|chowder|curry|pasta|spaghetti|penne|noodles?|rice|beef|chicken|pork|shrimp|salmon|fish|eggs?|omelett?e|burger|sandwich|tacos?|bowl|casserole|skillet|gnocchi|pizza|flatbread|wraps?|quesadillas?|lasagna|risotto|french toast|oatmeal(?! (raisin|chocolate|stout|cookie|bar))|porridge|grits|waffles?|crêpes? (with|filled)|broth\b.*(chicken|beef|noodle))\b/i;
+  function hardNonMeal(recipe) {
+    var name = String(recipe && recipe.name || "");
+    if (!name) return null;
+    if (HARD_SWEET.test(name)) {
+      if (/\b(pancakes?|crab cakes?|fish ?cakes?|potato cakes?|corn ?cakes?|griddle ?cakes?|johnny ?cakes?|hoe ?cakes?|rice cakes?|pot pie|savory|savoury)\b/i.test(name) && !/\b(cookies?|brownies?|cupcakes?|cheesecakes?|muffins?|fudge|ice cream)\b/i.test(name)) return null;
+      return "dessert";
+    }
+    if (HARD_DRINK.test(name) && !/\b(beer[- ]can chicken|beer[- ]battered|wine[- ](glazed|braised|roasted)|in (red |white )?wine|tea[- ]smoked|coffee[- ]rubbed|ale pie|chicken|beef|pork|lamb|fish|stew|soup|chili)\b/i.test(name)) return "drink";
+    if (HARD_CONDIMENT.test(name) && !MEAL_EXCEPTIONS.test(name)) return "condiment";
+    return null;
+  }
+
   function recipePlanEligible(recipe) {
+    if (hardNonMeal(recipe)) return false;
     return !inferNonMealKind(recipe);
   }
 
   function inferMealCategory(recipe) {
+    /* v3.13: bundled recipes carry an explicit, hand-checked meal; a recipe with exactly one
+       breakfast/lunch/dinner tag (user choice or a normalized save) keeps it. Heuristics only
+       classify untagged imports. */
+    var explicit = recipe && String(recipe.meal || "").toLowerCase();
+    if (explicit && MEALS.indexOf(explicit) !== -1) return explicit;
+    var tagged = existingMeals(recipe && recipe.tags);
+    if (tagged.length === 1) return tagged[0];
     var name = String(recipe && recipe.name || "");
     var tags = recipe && recipe.tags || [];
     var minutes = recipe && recipe.minutes;
@@ -177,6 +203,7 @@
   }
 
   function recipeFitsMealSlot(recipe, slot) {
+    if (!recipe || MEALS.indexOf(slot) === -1) return false;
     if (!recipePlanEligible(recipe)) return false;
     return inferMealCategory(recipe) === slot;
   }
@@ -187,6 +214,7 @@
     inferMealCategory: inferMealCategory,
     inferNonMealKind: inferNonMealKind,
     recipePlanEligible: recipePlanEligible,
+    hardNonMeal: hardNonMeal,
     scrubMealTags: scrubMealTags,
     recipeFitsMealSlot: recipeFitsMealSlot
   };

@@ -1492,7 +1492,7 @@ html[data-theme="dark"] .theme-toggle .theme-toggle__moon { display: none; }
   height: 200px;
   border-radius: 20px;
   margin: 0 0 16px;
-  background: center/cover no-repeat;
+  background: linear-gradient(135deg, var(--accent-soft), var(--bg-4, #fff)) center/cover no-repeat;
   box-shadow: var(--shadow);
 }
 @media (prefers-reduced-motion: reduce) {

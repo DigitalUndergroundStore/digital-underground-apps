@@ -1,4 +1,4 @@
-/* Pantry Week v3.12.3 — data, shopping list, migration. No network. */
+/* Pantry Week v3.13.0 — data, shopping list, migration. No network. */
 "use strict";
 
 (function () {
@@ -20,7 +20,7 @@
   var KEY = "pantry_week_v2";
   var KEY_V1 = "pantry_week_v1";
   /* Bump when bundled starter catalog changes (tags, content). Triggers localStorage refresh. */
-  var BUNDLED_CATALOG_VERSION = "plan-cuisine-v2";
+  var BUNDLED_CATALOG_VERSION = "library-v3-2026-10";
 
   var UNIT_MAP = {
     cup: "cup", cups: "cup",
@@ -356,7 +356,7 @@
     if (servings > 24) servings = 24;
     var name = String(raw.name || "Untitled recipe").trim() || "Untitled recipe";
     if (window.PW_MEAL && typeof window.PW_MEAL.scrubMealTags === "function") {
-      tags = window.PW_MEAL.scrubMealTags(tags, { name: name, tags: tags, minutes: minutes, ingredients: ingredients });
+      tags = window.PW_MEAL.scrubMealTags(tags, { name: name, tags: tags, minutes: minutes, ingredients: ingredients, meal: raw.userEdited ? "" : raw.meal });
     }
     var out = {
       id: String(raw.id || uid("c_")),
@@ -367,6 +367,9 @@
       ingredients: ingredients,
       steps: splitSteps(raw.steps)
     };
+    var meal = String(raw.meal || "").toLowerCase();
+    if (!raw.userEdited && (meal === "breakfast" || meal === "lunch" || meal === "dinner") && tags.indexOf(meal) !== -1) out.meal = meal;
+    if (raw.userEdited) out.userEdited = true;
     if (raw.photoKey) out.photoKey = String(raw.photoKey);
     if (raw.photoUrl && /^https?:\/\//i.test(String(raw.photoUrl))) out.photoUrl = String(raw.photoUrl).trim();
     if (raw.sourceUrl && /^https?:\/\//i.test(String(raw.sourceUrl))) out.sourceUrl = String(raw.sourceUrl).trim();
@@ -518,15 +521,41 @@
     });
   }
 
+  var SHIPPED_FP = null;
+  function recipeFingerprint(r) {
+    var steps = Array.isArray(r.steps) ? r.steps : String(r.steps || "").split(/\n+/);
+    var str = String(r.name || "").trim().toLowerCase() + "|" + steps.map(function (x) { return String(x).trim(); }).filter(Boolean).join("|").toLowerCase();
+    var h = 0x811c9dc5;
+    for (var i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+    return h.toString(36);
+  }
+  /* True when a saved bundled recipe matches some version the app shipped, i.e. the cook never edited it. */
+  function isUntouchedShipped(saved) {
+    if (saved.userEdited) return false;
+    if (SHIPPED_FP === null) {
+      SHIPPED_FP = {};
+      var raw = typeof PW_SHIPPED_FP === "string" ? PW_SHIPPED_FP : "";
+      raw.split(" ").forEach(function (k) { if (k) SHIPPED_FP[k] = 1; });
+    }
+    return !!SHIPPED_FP[recipeFingerprint(saved)];
+  }
+
   function syncBundledRecipes(state) {
     if (!STARTERS.length || !state) return state;
     var catalogVersion = String(state.bundledCatalogVersion || "");
     var needsCatalogRefresh = catalogVersion !== BUNDLED_CATALOG_VERSION;
     var recipes = state.recipes || [];
     var next = [];
+    var dropped = {};
     recipes.forEach(function (saved) {
       var starter = starterById(saved.id);
       if (!starter) {
+        /* v3.13: bundled recipes retired from the library (r-ids) leave saved libraries too,
+           unless the cook edited them. */
+        if (needsCatalogRefresh && /^r\d+$/.test(String(saved.id)) && isUntouchedShipped(saved)) {
+          dropped[saved.id] = 1;
+          return;
+        }
         next.push(saved);
         return;
       }
@@ -534,13 +563,25 @@
         next.push(saved);
         return;
       }
-      var bundledNorm = normalizeRecipe(clone(starter));
-      if (recipeContentSignature(saved) !== recipeContentSignature(bundledNorm)) {
+      if (!isUntouchedShipped(saved) && recipeContentSignature(saved) !== recipeContentSignature(normalizeRecipe(clone(starter)))) {
+        saved.userEdited = true;
         next.push(saved);
         return;
       }
-      next.push(bundledNorm);
+      next.push(normalizeRecipe(clone(starter)));
     });
+    if (needsCatalogRefresh) {
+      ["week", "previousWeek", "repeatWeek"].forEach(function (key) {
+        var wk = state[key];
+        if (!wk || typeof wk !== "object") return;
+        DAYS.forEach(function (day) {
+          SLOTS.forEach(function (m) {
+            var cell = wk[day] && wk[day][m];
+            if (cell && typeof cell === "object" && cell.recipeId && dropped[cell.recipeId]) wk[day][m] = blankSlot();
+          });
+        });
+      });
+    }
     var ids = {};
     next.forEach(function (r) { ids[r.id] = 1; });
     var added = false;
@@ -1573,7 +1614,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.12.3",
+    VERSION: "3.13.0",
     BUNDLED_CATALOG_VERSION: BUNDLED_CATALOG_VERSION,
     KEY: KEY,
     KEY_V1: KEY_V1,

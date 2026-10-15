@@ -1,3 +1,6 @@
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
 /assets/globe/*.jpg
   Cache-Control: public, max-age=31536000, immutable
 /assets/globe/*.webp

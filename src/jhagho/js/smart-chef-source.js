@@ -74,6 +74,7 @@
     (recipes || []).forEach(function (recipe) {
       if (!recipe || !isLibraryId(recipe.id)) return;
       if ((recipe.tags || []).indexOf("smart-chef") !== -1) return;
+      if (PW.recipePlanEligible && !PW.recipePlanEligible(recipe)) return;
       if (seen["lib:" + recipe.id]) return;
       var nk = nameKey(recipe.name);
       if (nk && seen["name:" + nk]) return;

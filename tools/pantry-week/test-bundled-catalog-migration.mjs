@@ -75,7 +75,7 @@ const staleState = PW.normalize({
 
 const staleCounts = cuisineCounts(staleState.recipes);
 const staleEligible = Object.values(staleCounts).reduce((a, b) => a + b, 0);
-if ((staleCounts.canadian || 0) !== 0 || (staleCounts.american || 0) !== 0 || staleCounts.other < 800) {
+if ((staleCounts.canadian || 0) !== 0 || (staleCounts.american || 0) !== 0 || staleCounts.other < PW.STARTERS.length * 0.9) {
   errs.push(
     `stale sim: expected canadian 0 american 0 other dominant got ${JSON.stringify({
       canadian: staleCounts.canadian,
@@ -90,7 +90,7 @@ store[PW.KEY] = JSON.stringify(staleState);
 const loaded = PW.load();
 const freshCounts = cuisineCounts(loaded.recipes);
 
-const expect = { american: 466, canadian: 52, other: 133 };
+const expect = cuisineCounts(PW.STARTERS.map((r) => PW.normalizeRecipe(PW.clone(r))));
 for (const [id, n] of Object.entries(expect)) {
   if (freshCounts[id] !== n) errs.push(`after load ${id}: got ${freshCounts[id]} want ${n}`);
 }

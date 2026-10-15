@@ -203,7 +203,7 @@
         "vegetarian",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -279,7 +279,7 @@
     },
     {
       "id": "r857",
-      "name": "Sausage-Egg Breakfast Dish",
+      "name": "Sausage and Egg Bake",
       "minutes": 180,
       "servings": 6,
       "meal": "breakfast",
@@ -546,7 +546,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "canadian"
       ],
       "ingredients": [
         {
@@ -654,7 +654,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -713,7 +713,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -870,7 +870,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "canadian"
       ],
       "ingredients": [
         {
@@ -1077,7 +1077,7 @@
         "vegetarian",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -1163,7 +1163,7 @@
         "vegetarian",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -1399,7 +1399,7 @@
         "vegetarian",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -1608,7 +1608,7 @@
         "vegetarian",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2090,7 +2090,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2143,7 +2143,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2245,7 +2245,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2301,7 +2301,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2410,7 +2410,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2689,7 +2689,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "african"
       ],
       "ingredients": [
         {
@@ -3047,7 +3047,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -3348,7 +3348,7 @@
         "vegetarian",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -3431,7 +3431,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "indian"
       ],
       "ingredients": [
         {
@@ -3520,7 +3520,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -3962,7 +3962,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -4089,7 +4089,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -4306,7 +4306,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "french"
       ],
       "ingredients": [
         {
@@ -4421,7 +4421,7 @@
         "vegetarian",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -4684,7 +4684,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -4962,7 +4962,7 @@
         "main-meal",
         "easy",
         "budget",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -5190,7 +5190,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -5911,7 +5911,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -6001,7 +6001,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -6256,7 +6256,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "canadian"
       ],
       "ingredients": [
         {
@@ -6312,7 +6312,7 @@
         "main-meal",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -6500,7 +6500,7 @@
         "main-meal",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {

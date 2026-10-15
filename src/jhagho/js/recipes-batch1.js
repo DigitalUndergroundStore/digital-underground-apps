@@ -2127,7 +2127,7 @@
         "high-protein",
         "moderate",
         "easy",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2610,7 +2610,7 @@
         "high-protein",
         "moderate",
         "easy",
-        "other"
+        "mexican"
       ],
       "ingredients": [
         {
@@ -2919,7 +2919,7 @@
         "high-protein",
         "splurge",
         "easy",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -3096,7 +3096,7 @@
         "dairy-free",
         "moderate",
         "medium",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -3219,7 +3219,7 @@
         "high-protein",
         "splurge",
         "medium",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -3396,7 +3396,7 @@
         "vegetarian",
         "moderate",
         "easy",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -4132,7 +4132,7 @@
         "high-protein",
         "moderate",
         "easy",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -4181,7 +4181,7 @@
     },
     {
       "id": "r200",
-      "name": "Mediterranean Grain Lunch Bowls",
+      "name": "Mediterranean Grain Bowls",
       "minutes": 20,
       "servings": 4,
       "meal": "lunch",

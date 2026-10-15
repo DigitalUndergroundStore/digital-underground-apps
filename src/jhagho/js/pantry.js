@@ -919,6 +919,22 @@
     return qty <= storedQty + 0.001;
   }
 
+  /* v3.13: the list buys ingredients, not prep. "1 carrot, grated" and "2 medium onions, finely chopped"
+     shop as carrot / onion so the same item from different recipes combines. Recipes keep the full text. */
+  var PREP_WORD = /^(finely|roughly|coarsely|thinly|freshly|very|well|lightly|chopped|diced|minced|sliced|grated|shredded|crushed|cubed|peeled|seeded|halved|quartered|trimmed|rinsed|drained|melted|softened|beaten|cooked|large|medium|small|whole|ripe|good-quality|good|quality)$/i;
+  function shopItem(item) {
+    var t = cleanItem(item);
+    var full = t;
+    t = t.replace(/\s*\([^)]*\)\s*/g, " ");
+    t = t.split(/,|;| - | – /)[0];
+    t = t.replace(/^(\d+\s+)?(large|medium|small)\s+or\s+\d+\s+(large|medium|small)\s+/i, "");
+    var words = t.trim().split(/\s+/);
+    while (words.length > 1 && (PREP_WORD.test(words[0]) || /^(and|or)$/i.test(words[0]))) words.shift();
+    t = cleanItem(words.join(" "));
+    if (!t || /\b(to serve|for serving|to taste|for garnish)\b/i.test(full) && t.length < 2) return full;
+    return t || full;
+  }
+
   function buildShoppingList(state) {
     var map = {};
     var notes = [];
@@ -937,7 +953,7 @@
           var baseServings = recipe.servings || 4;
           var factor = (slot.servings || baseServings) / baseServings;
           recipe.ingredients.forEach(function (ing) {
-            var row = ensureRow(map, ing.item, ing.unit);
+            var row = ensureRow(map, shopItem(ing.item), ing.unit);
             addQty(row, scaleQty(ing.qty, factor), "recipe");
           });
         } else if (slot.custom) {
@@ -1602,10 +1618,10 @@
     if (tag === "other") return "Other";
     if (tag === "my-creation") return "My creation";
     if (tag === "budget") return "Budget";
-    if (tag === "moderate") return "Moderate";
+    if (tag === "moderate") return "Moderate cost";
     if (tag === "splurge") return "Splurge";
     if (tag === "easy") return "Easy";
-    if (tag === "medium") return "Medium";
+    if (tag === "medium") return "Medium effort";
     if (tag === "hard") return "Hard";
     if (tag === "imported") return "Imported";
     return tag.charAt(0).toUpperCase() + tag.slice(1);
@@ -1615,6 +1631,7 @@
 
   var PW = {
     VERSION: "3.13.0",
+    shopItem: shopItem,
     BUNDLED_CATALOG_VERSION: BUNDLED_CATALOG_VERSION,
     KEY: KEY,
     KEY_V1: KEY_V1,

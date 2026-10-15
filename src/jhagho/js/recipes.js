@@ -15,7 +15,7 @@ var PW_STARTERS = [
         "gluten-free",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -79,7 +79,7 @@ var PW_STARTERS = [
         "vegetarian",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -278,7 +278,7 @@ var PW_STARTERS = [
         "gluten-free",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -337,7 +337,7 @@ var PW_STARTERS = [
         "vegetarian",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -871,7 +871,7 @@ var PW_STARTERS = [
         "gluten-free",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -1002,7 +1002,7 @@ var PW_STARTERS = [
         "gluten-free",
         "easy",
         "moderate",
-        "other"
+        "thai"
       ],
       "ingredients": [
         {
@@ -1262,7 +1262,7 @@ var PW_STARTERS = [
         "gluten-free",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -1513,7 +1513,7 @@ var PW_STARTERS = [
         "gluten-free",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -1898,7 +1898,7 @@ var PW_STARTERS = [
         "gluten-free",
         "medium",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2098,7 +2098,7 @@ var PW_STARTERS = [
         "gluten-free",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2153,7 +2153,7 @@ var PW_STARTERS = [
         "dairy-free",
         "easy",
         "moderate",
-        "other"
+        "chinese"
       ],
       "ingredients": [
         {
@@ -2224,7 +2224,7 @@ var PW_STARTERS = [
         "gluten-free",
         "easy",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {

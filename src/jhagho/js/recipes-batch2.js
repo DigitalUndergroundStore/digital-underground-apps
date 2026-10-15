@@ -445,7 +445,7 @@
         "gluten-free",
         "moderate",
         "easy",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -1188,7 +1188,7 @@
         "high-protein",
         "budget",
         "easy",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -1334,7 +1334,7 @@
         "high-protein",
         "moderate",
         "medium",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -2076,7 +2076,7 @@
         "vegetarian",
         "hard",
         "moderate",
-        "other"
+        "american"
       ],
       "ingredients": [
         {
@@ -3061,7 +3061,7 @@
     },
     {
       "id": "r248",
-      "name": "Peanut Noodle Lunch Jars",
+      "name": "Peanut Noodle Jars",
       "minutes": 20,
       "servings": 4,
       "meal": "lunch",

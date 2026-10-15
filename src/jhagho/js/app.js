@@ -1237,12 +1237,14 @@
   }
 
   function smartChefSectionHtml() {
+    const src = ui.smartChef && ui.smartChef.result && ui.smartChef.result.source;
+    const badge = src === "library" ? "Your library" : src === "original" ? "Template kitchen" : src ? "Cookbook" : "No AI";
     const head = `<div class="smart-chef__head">
         <div>
           <h3 id="smartChefTitle">Smart Chef</h3>
-          <p class="smart-chef__deck">Builds a full recipe from your pantry — offline, no AI.</p>
+          <p class="smart-chef__deck">Finds a recipe for your pantry: your library first, then the Cookbook, then a Smart Chef original. No AI.</p>
         </div>
-        <span class="smart-chef__badge">Template kitchen</span>
+        <span class="smart-chef__badge">${esc(badge)}</span>
       </div>`;
     if (!state.pantry.length) {
       return `<section class="smart-chef smart-chef--idle" aria-labelledby="smartChefTitle">${head}

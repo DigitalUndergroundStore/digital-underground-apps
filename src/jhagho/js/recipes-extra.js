@@ -15,7 +15,7 @@
         "dairy-free",
         "moderate",
         "easy",
-        "other"
+        "chinese"
       ],
       "ingredients": [
         {
@@ -2542,7 +2542,7 @@
         "gluten-free",
         "easy",
         "moderate",
-        "other"
+        "mediterranean"
       ],
       "ingredients": [
         {
@@ -2758,7 +2758,7 @@
         "vegetarian",
         "moderate",
         "easy",
-        "other"
+        "american"
       ],
       "ingredients": [
         {

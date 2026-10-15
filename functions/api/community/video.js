@@ -6,7 +6,6 @@
  *   POST     /api/community/video?action=finish {vid}        attach to listing, re-screen (new video → human review)
  */
 import { getKv, json, kvGetListing, saveListing } from "../../_lib/community.js";
-import { screenListing } from "../../_lib/community-screening.js";
 import { authCreatorEx, creatorListing, ownedListing, putAccount } from "../../_lib/creator.js";
 import {
   UPLOADS_PER_DAY, VIDEO_CHUNK, VIDEO_MAX_BYTES, VIDEO_TYPES,
@@ -28,7 +27,7 @@ export async function onRequest(context) {
     if (!meta || !meta.done) return new Response("Not found", { status: 404 });
     const row = await kvGetListing(kv, meta.listingId);
     // Only the listing's current video plays; replaced or removed uploads 404.
-    if (!row || row.videoUrl !== "upload:" + vid) return new Response("Not found", { status: 404 });
+    if (!row || (row.videoUrl !== "upload:" + vid && !(row.pendingVideo && row.pendingVideo.url === "upload:" + vid))) return new Response("Not found", { status: 404 });
     return serveVideo(kv, request, meta);
   }
 
@@ -74,18 +73,10 @@ export async function onRequest(context) {
     if ((listed.keys || []).length < m.parts) return json({ error: "Upload incomplete. Try again." }, 400);
     const row = await ownedListing(kv, acct, m.listingId);
     if (!row) return json({ error: "Listing not found." }, 404);
-    const old = uploadVid(row.videoUrl);
+    // The listing stays exactly as it is (live stays live); the new video waits for a moderator.
+    const old = uploadVid(row.pendingVideo && row.pendingVideo.url);
     m.done = true; await putVideoMeta(kv, m);
-    row.videoUrl = "upload:" + m.vid;
-    row.videoFile = { type: m.type, size: m.size };
-    try {
-      const s = await screenListing(env, row);
-      row.screening = { reasons: s.reasons, detail: s.detail, screenedAt: Date.now() };
-      row.status = row.status === "unpublished" && s.decision !== "rejected" ? "unpublished" : s.decision;
-    } catch {
-      row.screening = { reasons: ["Automatic screening failed; queued for human review."], screenedAt: Date.now() };
-      if (row.status !== "unpublished") row.status = "pending";
-    }
+    row.pendingVideo = { url: "upload:" + m.vid, file: { type: m.type, size: m.size }, at: Date.now() };
     row.updatedAt = Date.now();
     await saveListing(kv, row);
     if (old && old !== m.vid) context.waitUntil(deleteVideo(kv, old).catch(() => {}));

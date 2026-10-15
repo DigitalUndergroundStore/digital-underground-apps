@@ -20,6 +20,7 @@ import {
   sendCommunityEmail,
   timingSafeEqualStr,
   communitySiteOrigin,
+  mediaFor,
 } from "./community.js";
 import { runBlocklist } from "./community-screening.js";
 
@@ -190,6 +191,8 @@ export function creatorListing(row) {
     imageUrl: row.imageUrl && row.imageUrl.startsWith("https://") ? row.imageUrl : row.imageUrl ? "(uploaded image)" : "",
     videoUrl: row.videoUrl || "",
     videoFile: row.videoFile || null,
+    video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
+    pendingVideo: row.pendingVideo && row.pendingVideo.url ? { url: row.pendingVideo.url, file: row.pendingVideo.file || null, media: mediaFor(row.pendingVideo.url, row.pendingVideo.file) } : null,
     imagePreview: row.imageUrl || "",
     tags: Array.isArray(row.tags) ? row.tags : [],
     category: row.category,

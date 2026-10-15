@@ -209,11 +209,12 @@
     data.listings.forEach(function (l) {
       var node = $("tpl").content.firstElementChild.cloneNode(true);
       var t = (data.stats[l.id] || { totals: { i: 0, v: 0, c: 0 } }).totals;
-      setThumb(node.querySelector(".li-thumb"), node.querySelector(".li-thumb-wrap .ph"), l.imagePreview, l.name);
+      var tw = node.querySelector(".li-thumb-wrap"); tw.className = "li-thumb-wrap mp-thumb"; mediaThumb(tw, l.video, l.imagePreview, l.name);
       node.querySelector(".li-title").textContent = l.name;
       var pill = node.querySelector(".pill"); pill.textContent = LABEL[l.status] || l.status; pill.className = "pill st-" + l.status;
       var when = l.updatedAt || l.createdAt;
       node.querySelector(".li-date").textContent = when ? (l.updatedAt ? "Updated " : "Listed ") + new Date(when).toLocaleDateString("en-US", { month: "short", day: "numeric" }) : "";
+      if (l.pendingVideo) node.querySelector(".li-sub").insertAdjacentHTML("beforeend", '<span class="chip-pending">' + "New video awaiting approval" + "</span>");
       var rs = node.querySelector(".li-reason");
       if ((l.status === "rejected" || l.status === "pending") && l.reasons && l.reasons.length) {
         rs.hidden = false; rs.textContent = (l.status === "rejected" ? "Reason: " : "Under review: ") + l.reasons.join(" ");
@@ -301,55 +302,58 @@
 
   /* ---------- edit sheet ---------- */
   var ed = {}, upState = null;
-  function videoNote() {
-    var note = $("ed-vid-note"), rm = $("ed-vid-remove"), lab = $("ed-vid-up-label"), th = document.querySelector(".mp-vid");
-    var v = ed.videoUrl, typed = $("ed-video").value.trim();
-    rm.hidden = !v && !typed; th.classList.toggle("has", !!(v || typed));
-    lab.textContent = v ? "Replace video" : "Upload video";
-    if (ed.videoRemoved && !v && !typed) { note.textContent = "Video will be removed when you save."; rm.hidden = true; return; }
-    if (v && v.indexOf("upload:") === 0) {
-      var f = editing && editing.videoFile;
-      note.innerHTML = "Uploaded video" + (f ? " · " + esc(duUpload.mb(f.size)) : "") + (editing && editing.status === "pending" ? '<span class="chip-pending">In review</span>' : "");
-      return;
-    }
-    if (v || typed) { var h = ""; try { h = new URL(v || typed).hostname.replace(/^www\./, ""); } catch (_) {} note.textContent = "Linked video" + (h ? " · " + h : ""); return; }
-    note.textContent = "MP4 or WebM, up to 50 MB. New videos get a quick human review before they go live.";
+  var VID_RE = /^https:\/\/(www\.|m\.)?(youtube\.com|youtu\.be|youtube-nocookie\.com|vimeo\.com|player\.vimeo\.com)\/|\.(mp4|webm)(\?|#|$)/i;
+  function mediaThumb(el, m, img, name) {
+    el.innerHTML = ""; el.classList.remove("mp-vid");
+    if (m && m.kind === "file") { var v = document.createElement("video"); v.muted = true; v.loop = true; v.autoplay = true; v.playsInline = true; v.setAttribute("playsinline", ""); v.preload = "metadata"; if (img) v.poster = img; v.src = m.src + "#t=0.1"; el.appendChild(v); return; }
+    var src = (m && m.poster) || img;
+    if (src) { var i = document.createElement("img"); i.alt = ""; i.src = src; el.appendChild(i); if (m) el.insertAdjacentHTML("beforeend", '<span class="play-badge"><svg class="ico"><use href="#i-play"/></svg></span>'); return; }
+    el.innerHTML = '<span class="ph">' + esc((String(name || "?").replace(/^test\s+/i, "").trim().charAt(0) || "?").toUpperCase()) + "</span>";
   }
-  function imageNote() {
-    var has = !ed.removeImage && (ed.imageData || $("ed-img").value.trim() || (editing && editing.imagePreview));
-    $("ed-img-remove").hidden = !has;
-    $("ed-img-note").textContent = ed.removeImage ? "Image will be removed when you save. Your listing shows a clean placeholder." :
-      ed.imageData ? "New image ready. Save to apply it." : "Square logo or 16:9 screenshot. JPEG, PNG or WebP.";
-    var src = ed.removeImage ? "" : ed.imageData || ($("ed-img").value.trim() && /^https:\/\//.test($("ed-img").value.trim()) ? $("ed-img").value.trim() : editing && editing.imagePreview);
-    setThumb($("ed-prev"), $("ed-ph"), src, $("edit-form").name.value);
+  function mediaNote() {
+    var l = editing || {}, note = $("ed-media-note"), link = $("ed-link").value.trim();
+    var pend = !ed.removeMedia && !ed.imageData && l.pendingVideo, live = !ed.removeMedia && !ed.imageData && l.video;
+    var img = ed.removeMedia ? "" : ed.imageData || (link && !VID_RE.test(link) ? link : l.imagePreview);
+    mediaThumb($("ed-media-thumb"), pend ? pend.media : live, img, $("edit-form").name.value);
+    var has = !!(pend || live || img || link);
+    $("ed-media-remove").hidden = !has;
+    $("ed-media-up-label").textContent = has ? "Replace" : "Upload image or video";
+    if (ed.removeMedia) note.textContent = "Media will be removed when you save. Your listing shows a clean placeholder.";
+    else if (ed.imageData) note.textContent = "New image ready. Save to apply it" + (l.video || l.pendingVideo ? " (it replaces the video)." : ".");
+    else if (link) note.textContent = VID_RE.test(link) ? "Video link. Goes live after a quick review; your listing stays live meanwhile." : "Image link. Save to apply it.";
+    else if (pend) note.innerHTML = (l.status === "approved" ? "Live with your current media." : "") + ' <span class="chip-pending">New video awaiting approval</span>';
+    else if (live) note.textContent = "Video" + (l.videoFile ? " · " + duUpload.mb(l.videoFile.size) : "") + " · shown as your display media.";
+    else if (img) note.textContent = "Image · shown on your card and listing page.";
+    else note.textContent = "No media yet. Add an image or a short video.";
   }
-  $("ed-img-file").addEventListener("change", function (e) {
-    var file = e.target.files[0]; e.target.value = ""; if (!file) return;
-    $("ed-img-note").textContent = "Preparing image…";
-    duUpload.image(file).then(function (d) { ed.imageData = d; ed.removeImage = false; $("ed-img").value = ""; imageNote(); })
-      .catch(function (err) { imageNote(); toast(err.message, false); });
+  $("ed-link").addEventListener("input", function () {
+    var v = $("ed-link").value.trim(); ed.removeMedia = false; ed.imageData = null;
+    $("ed-video").value = VID_RE.test(v) ? v : ""; $("ed-img").value = v && !VID_RE.test(v) ? v : ""; mediaNote();
   });
-  $("ed-img-remove").addEventListener("click", function () { ed.removeImage = true; ed.imageData = null; $("ed-img").value = ""; imageNote(); });
-  $("ed-img").addEventListener("input", function () { ed.removeImage = false; ed.imageData = null; imageNote(); });
-  $("ed-video").addEventListener("input", function () { videoNote(); });
-  $("ed-vid-remove").addEventListener("click", function () { ed.videoUrl = ""; ed.videoRemoved = true; $("ed-video").value = ""; videoNote(); });
+  $("ed-media-remove").addEventListener("click", function () { ed.removeMedia = true; ed.imageData = null; $("ed-link").value = ""; $("ed-img").value = ""; $("ed-video").value = ""; mediaNote(); });
   function setUploading(on) {
-    $("ed-vid-prog").hidden = !on; $("ed-vid-actions").hidden = on; $("edit-save").disabled = on;
+    $("ed-vid-prog").hidden = !on; $("ed-media-actions").hidden = on; $("edit-save").disabled = on;
     if (!on) { $("ed-vid-bar").style.width = "0"; $("ed-vid-pct").textContent = "0%"; }
   }
-  $("ed-vid-file").addEventListener("change", function (e) {
+  $("ed-media-file").addEventListener("change", function (e) {
     var file = e.target.files[0]; e.target.value = ""; if (!file || !editing) return;
+    if (/^image\//.test(file.type)) {
+      $("ed-media-note").textContent = "Preparing image…";
+      duUpload.image(file).then(function (d) { ed.imageData = d; ed.removeMedia = false; $("ed-link").value = ""; $("ed-img").value = ""; $("ed-video").value = ""; mediaNote(); })
+        .catch(function (err) { mediaNote(); toast(err.message, false); });
+      return;
+    }
     var l = editing; upState = {};
     setUploading(true);
-    $("ed-vid-note").textContent = "Uploading " + file.name + " · " + duUpload.mb(file.size);
+    $("ed-media-note").textContent = "Uploading " + file.name + " · " + duUpload.mb(file.size);
     duUpload.video(l.id, file, function (p) { var v = Math.round(p * 100); $("ed-vid-bar").style.width = v + "%"; $("ed-vid-pct").textContent = v + "%"; }, upState)
       .then(function (d) {
         setUploading(false);
-        if (editing && editing.id === l.id) { editing = d.listing; ed.videoUrl = d.listing.videoUrl; ed.videoRemoved = false; $("ed-video").value = ""; videoNote(); }
-        toast(d.listing.status === "pending" ? "Video uploaded. It goes live after a quick review." : "Video uploaded.", true);
+        if (editing && editing.id === l.id) { editing = d.listing; ed.removeMedia = false; ed.imageData = null; mediaNote(); }
+        toast(d.listing.status === "approved" ? "Video uploaded. Your listing stays live; the video appears after approval." : "Video uploaded. It appears after approval.", true);
         load();
       })
-      .catch(function (err) { setUploading(false); videoNote(); if (!err.canceled) toast(err.message, false); else toast("Upload canceled.", true); });
+      .catch(function (err) { setUploading(false); mediaNote(); toast(err.canceled ? "Upload canceled." : err.message, !!err.canceled); });
   });
   $("ed-vid-cancel").addEventListener("click", function () { if (upState) duUpload.cancel(upState); });
   function counters(root) {
@@ -381,12 +385,9 @@
     var f = $("edit-form");
     f.name.value = l.name || ""; f.projectUrl.value = l.projectUrl || ""; f.pitchShort.value = l.pitchShort || "";
     f.descriptionLong.value = l.descriptionLong || ""; f.tags.value = (l.tags || []).join(", ");
-    ed = { removeImage: false, imageData: null, videoUrl: l.videoUrl || "", videoRemoved: false };
-    var ext = l.videoUrl && l.videoUrl.indexOf("upload:") !== 0;
-    f.videoUrl.value = ext ? l.videoUrl : ""; $("ed-vid-more").open = !!ext;
-    if (ext) ed.videoUrl = "";
-    f.imageUrl.value = l.imageUrl && l.imageUrl !== "(uploaded image)" ? l.imageUrl : ""; $("ed-img-more").open = false;
-    setUploading(false); imageNote(); videoNote();
+    ed = { removeMedia: false, imageData: null };
+    $("ed-link").value = ""; $("ed-img").value = ""; $("ed-video").value = ""; $("ed-link-more").open = false;
+    setUploading(false); mediaNote();
     alertMsg($("edit-msg"), "");
     counters(f);
     openLayer($("sheet"));
@@ -396,7 +397,6 @@
   function closeEdit() { if ($("sheet").hidden) return; if (upState && !$("ed-vid-prog").hidden) duUpload.cancel(upState); closeLayer($("sheet")); editing = null; if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus({ preventScroll: true }); }
   $("edit-form").addEventListener("input", function (e) {
     counters($("edit-form"));
-    if (e.target.name === "imageUrl" && /^https:\/\/\S+\.\S+/.test(e.target.value)) $("ed-prev").src = e.target.value;
   });
   $("edit-form").addEventListener("submit", function (e) {
     e.preventDefault();
@@ -405,8 +405,8 @@
     act({ action: "edit", id: l.id, fields: {
       name: f.name.value, projectUrl: f.projectUrl.value, pitchShort: f.pitchShort.value,
       descriptionLong: f.descriptionLong.value, imageUrl: f.imageUrl.value, tags: f.tags.value,
-      removeImage: !!ed.removeImage, imageData: ed.imageData || undefined,
-      videoUrl: f.videoUrl.value.trim() || ed.videoUrl || "" } }, $("edit-save"))
+      removeMedia: !!ed.removeMedia, imageData: ed.imageData || undefined,
+      videoUrl: f.videoUrl.value.trim() } }, $("edit-save"))
       .then(function (d) { if (d && d.ok) closeEdit(); else if (d && d.error) alertMsg($("edit-msg"), d.error, false); });
   });
   document.querySelectorAll("[data-close-sheet]").forEach(function (b) { b.addEventListener("click", closeEdit); });

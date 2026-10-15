@@ -133,6 +133,34 @@ export function videoEmbed(url) {
   return null;
 }
 
+/** Embed info for a stored video value (upload:vid or external URL). */
+export function mediaFor(videoUrl, videoFile) {
+  const up = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(videoUrl || "");
+  if (up) return { kind: "file", src: `/api/community/video?v=${up[1]}`, type: videoFile?.type || "video/mp4" };
+  const e = videoUrl ? videoEmbed(videoUrl) : null;
+  if (e && e.kind === "youtube") { const id = /embed\/([\w-]{11})/.exec(e.src); if (id) e.poster = `https://i.ytimg.com/vi/${id[1]}/hqdefault.jpg`; }
+  return e;
+}
+
+/**
+ * One-time repair: an approved listing whose only hold-up was a new video was moved to
+ * "pending" by the old flow. Restore it to approved with the video kept aside as pendingVideo,
+ * but only when every stored automatic check (blocklist, URL, text, image) had passed.
+ */
+export function repairVideoHold(row) {
+  if (!row || row.status !== "pending" || !row.videoUrl || row.videoUrl === row.videoApprovedUrl) return false;
+  const d = row.screening && row.screening.detail;
+  if (!d) return false;
+  const ok = ["blocklist", "url", "textGuard", "imageGuard"].every((k) => !d[k] || d[k].decision === "approved");
+  if (!ok) return false;
+  row.pendingVideo = { url: row.videoUrl, file: row.videoFile || null, at: Date.now() };
+  row.videoUrl = row.videoApprovedUrl || "";
+  if (!row.videoUrl) delete row.videoFile;
+  row.status = "approved";
+  row.screening.reasons = (row.screening.reasons || []).filter((r) => !/video/i.test(r));
+  return true;
+}
+
 export function parseImageField(body) {
   const url = body?.imageUrl;
   if (url && typeof url === "string" && isHttpsUrl(url)) {
@@ -212,7 +240,7 @@ export function validateSubmission(body) {
     pitchShort,
     descriptionLong,
     imageUrl: img.imageUrl,
-    videoUrl: vid.videoUrl,
+    pendingVideo: vid.videoUrl ? { url: vid.videoUrl, at: now } : undefined,
     tags,
     createdAt: now,
     updatedAt: now,
@@ -245,15 +273,13 @@ export function publicListing(row) {
     visitUrl: row.visitUrl || appendRefParam(row.projectUrl),
     projectUrl: row.projectUrl,
     tags: Array.isArray(row.tags) ? row.tags : [],
+    video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
   };
 }
 
 /** Public detail view (adds long description). Never includes email or creator ids. */
 export function publicListingDetail(row) {
-  const up = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(row.videoUrl || "");
-  const video = up ? { kind: "file", src: `/api/community/video?v=${up[1]}`, type: row.videoFile?.type || "video/mp4" }
-    : row.videoUrl ? videoEmbed(row.videoUrl) : null;
-  return { ...publicListing(row), descriptionLong: row.descriptionLong || "", video };
+  return { ...publicListing(row), descriptionLong: row.descriptionLong || "" };
 }
 
 const INDEX_KEY = "community:index";
@@ -309,6 +335,10 @@ export async function listPending(kv) {
   for (const id of index.pending) {
     const row = await kvGetListing(kv, id);
     if (row && row.status === "pending") out.push(row);
+  }
+  for (const id of [...(index.approved || []), ...(index.unpublished || [])]) {
+    const row = await kvGetListing(kv, id);
+    if (row && row.pendingVideo && row.pendingVideo.url) out.push(row);
   }
   out.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
   return out;
@@ -399,7 +429,7 @@ export async function setListingStatus(kv, id, status) {
   listing.status = status;
   listing.updatedAt = Date.now();
   // A human approval also signs off the current video, so later clean edits stay live.
-  if (status === "approved" && listing.videoUrl) listing.videoApprovedUrl = listing.videoUrl;
+  if (status === "approved") promotePendingVideo(listing);
   if (status === "approved") index.approved.push(id);
   else if (status === "pending") index.pending.push(id);
   else if (status === "rejected") index.rejected.push(id);
@@ -409,12 +439,28 @@ export async function setListingStatus(kv, id, status) {
   return listing;
 }
 
+/** Moderator approved: the pending video becomes the live display media. Returns the replaced upload vid, if any. */
+export function promotePendingVideo(listing) {
+  if (listing.pendingVideo && listing.pendingVideo.url) {
+    const old = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(listing.videoUrl || "");
+    listing.videoUrl = listing.pendingVideo.url;
+    if (listing.pendingVideo.file) listing.videoFile = listing.pendingVideo.file; else delete listing.videoFile;
+    delete listing.pendingVideo;
+    listing.videoApprovedUrl = listing.videoUrl;
+    return old && "upload:" + old[1] !== listing.videoUrl ? old[1] : null;
+  }
+  if (listing.videoUrl) listing.videoApprovedUrl = listing.videoUrl;
+  return null;
+}
+
 export async function deleteListing(kv, id) {
   const row = await kvGetListing(kv, id);
-  const up = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(row?.videoUrl || "");
-  if (up) {
-    const { deleteVideo } = await import("./video.js");
-    await deleteVideo(kv, up[1]).catch(() => {});
+  for (const v of [row?.videoUrl, row?.pendingVideo?.url]) {
+    const up = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(v || "");
+    if (up) {
+      const { deleteVideo } = await import("./video.js");
+      await deleteVideo(kv, up[1]).catch(() => {});
+    }
   }
   const index = await kvGetIndex(kv);
   index.pending = index.pending.filter((x) => x !== id);

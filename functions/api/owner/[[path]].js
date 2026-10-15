@@ -17,6 +17,7 @@ import {
   verifyOwnerPasscode,
 } from "../../_lib/owner.js";
 import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
+import { promotePendingVideo as _ppv } from "../../_lib/community.js";
 
 const BACKUP_BASE = "https://du-backup.digitalunderground-store.workers.dev";
 
@@ -106,6 +107,18 @@ export async function onRequest(context) {
     const action = body.action;
     const id = typeof body.id === "string" ? body.id.trim() : "";
     if (!id) return json({ error: "Missing listing." }, 400);
+    if (action === "approve_video" || action === "reject_video") {
+      const row = await kvGetListing(kv, id);
+      if (!row || !row.pendingVideo) return json({ error: "No video waiting on this listing." }, 404);
+      const { deleteVideo, uploadVid } = await import("../../_lib/video.js");
+      let drop = null;
+      if (action === "approve_video") drop = _ppv(row);
+      else { drop = uploadVid(row.pendingVideo.url); delete row.pendingVideo; }
+      row.updatedAt = Date.now();
+      await kvPutListing(kv, row);
+      if (drop) await deleteVideo(kv, drop).catch(() => {});
+      return json({ ok: true, listing: row });
+    }
     if (action === "approve") {
       const row = await setListingStatus(kv, id, "approved");
       return row ? json({ ok: true, listing: row }) : json({ error: "Not found." }, 404);

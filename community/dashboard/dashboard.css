@@ -306,3 +306,8 @@ label.btn:focus-within, input.sr-only:focus-visible + .btn { outline: 2px solid 
 .chip-pending { display: inline-flex; font-size: 12px; font-weight: 700; color: #fde68a; background: rgba(234,179,8,.12); border: 1px solid rgba(234,179,8,.3); border-radius: 999px; padding: 1px 8px; margin-left: 6px; }
 .dash .f2 label.btn, .dash .f2 .btn-sm { display: inline-flex; flex-direction: row; align-items: center; gap: 8px; font-size: 14px; font-weight: 650; min-height: 44px; padding: 0 14px; width: auto; }
 .dash .mp-body > b .cc { font-weight: 600; }
+.mp-thumb video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mp-thumb .play-badge { position: absolute; right: 4px; bottom: 4px; width: 22px; height: 22px; border-radius: 50%; background: rgba(0,0,0,.65); display: inline-flex; align-items: center; justify-content: center; color: #fff; }
+.mp-thumb .play-badge .ico { width: 12px; height: 12px; }
+.li-thumb-wrap.mp-thumb { width: 64px; height: 64px; }
+.chip-pending { margin-left: 0; }

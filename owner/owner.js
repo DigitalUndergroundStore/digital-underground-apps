@@ -111,14 +111,21 @@
           ? '<img class="thumb" src="' + esc(row.imageUrl) + '" alt="" loading="lazy">'
           : "";
         var reasons = (row.screening && row.screening.reasons) || [];
-        var vm = /^upload:(v_[A-Za-z0-9_-]+)$/.exec(row.videoUrl || "");
-        var vidHref = vm ? "/api/community/video?v=" + vm[1] : row.videoUrl && /^https:\/\//.test(row.videoUrl) ? row.videoUrl : "";
-        var videoHtml = vidHref ? '<p class="small">Video' + (row.videoUrl === row.videoApprovedUrl ? " (approved)" : " (needs review)") + ': <a href="' + esc(vidHref) + '" target="_blank" rel="noopener">watch</a></p>' : "";
+        var pv = row.pendingVideo && row.pendingVideo.url;
+        var vm = /^upload:(v_[A-Za-z0-9_-]+)$/.exec(pv || row.videoUrl || "");
+        var vidSrc = pv || row.videoUrl || "";
+        var vidHref = vm ? "/api/community/video?v=" + vm[1] : /^https:\/\//.test(vidSrc) ? vidSrc : "";
+        var videoHtml = vidHref ? '<p class="small">Video' + (pv ? " (new, needs review — listing stays live)" : " (approved)") + ': <a href="' + esc(vidHref) + '" target="_blank" rel="noopener">watch</a></p>' : "";
         var reasonHtml = reasons.length
           ? '<p class="small">Why it’s here: ' + esc(reasons.join("; ")) + "</p>"
           : "";
         var actions =
-          tab === "pending"
+          tab === "pending" && pv && row.status !== "pending"
+            ? '<div class="actions">' +
+              '<button type="button" class="btn ok" data-act="approve_video" data-id="' + esc(row.id) + '">Approve video</button>' +
+              '<button type="button" class="btn danger" data-act="reject_video" data-id="' + esc(row.id) + '">Reject video</button>' +
+              "</div>"
+          : tab === "pending"
             ? '<div class="actions">' +
               '<button type="button" class="btn ok" data-act="approve" data-id="' + esc(row.id) + '">Approve</button>' +
               '<button type="button" class="btn danger" data-act="reject" data-id="' + esc(row.id) + '">Reject</button>' +
@@ -280,6 +287,7 @@
       var action = act.getAttribute("data-act");
       var id = act.getAttribute("data-id");
       var body = { action: action, id: id };
+      if (action === "reject_video" && !confirm("Reject this video? The listing stays live with its current media.")) return;
       if (action === "reject") {
         var reason = prompt("Optional reject reason (makers may see this later):", "") || "";
         body.reason = reason;

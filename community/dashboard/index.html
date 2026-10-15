@@ -8,10 +8,10 @@
 <title>Creator dashboard — Developer Marketplace — Digital Underground</title>
 <meta name="theme-color" content="#07060f">
 <link rel="stylesheet" href="../community.css">
-<link rel="stylesheet" href="dashboard.css?v=4">
+<link rel="stylesheet" href="dashboard.css?v=5">
 <script src="/community/pw.js" defer></script>
 <script src="/community/upload.js?v=1" defer></script>
-<script src="dashboard.js?v=3" defer></script>
+<script src="dashboard.js?v=4" defer></script>
 </head>
 <body class="dash">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -202,35 +202,22 @@
     </fieldset>
     <fieldset class="fgroup"><legend>Media &amp; tags</legend>
       <div class="media-row">
-        <span class="mp-thumb" id="ed-prev-wrap"><img id="ed-prev" alt="Current image" width="72" height="72"><span class="ph" id="ed-ph" hidden aria-hidden="true"></span></span>
+        <span class="mp-thumb" id="ed-media-thumb" aria-hidden="true"></span>
         <div class="mp-body">
-          <b>Listing image</b>
-          <p id="ed-img-note">Square logo or 16:9 screenshot. JPEG, PNG or WebP.</p>
-          <div class="mp-actions">
-            <label class="btn btn-sm" for="ed-img-file"><svg class="ico"><use href="#i-upload"/></svg>Upload image</label>
-            <input type="file" id="ed-img-file" accept="image/jpeg,image/png,image/webp,image/gif" class="sr-only">
-            <button type="button" class="btn btn-sm btn-quiet-danger" id="ed-img-remove"><svg class="ico"><use href="#i-trash"/></svg>Remove</button>
-          </div>
-        </div>
-      </div>
-      <details class="fallback" id="ed-img-more"><summary>Or paste an image link</summary>
-        <div class="fld"><label for="ed-img" class="sr-only">Image URL</label><input id="ed-img" name="imageUrl" type="url" inputmode="url" placeholder="https://…/cover.png"></div>
-      </details>
-      <div class="media-row">
-        <span class="mp-thumb mp-vid" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span>
-        <div class="mp-body">
-          <b>Demo video <span class="cc">optional</span></b>
-          <p id="ed-vid-note">MP4 or WebM, up to 50 MB. New videos get a quick human review before they go live.</p>
+          <b>Media</b>
+          <p id="ed-media-note"></p>
           <div class="progress" id="ed-vid-prog" hidden><div class="bar"><i id="ed-vid-bar"></i></div><span id="ed-vid-pct">0%</span><button type="button" class="linkbtn" id="ed-vid-cancel">Cancel</button></div>
-          <div class="mp-actions" id="ed-vid-actions">
-            <label class="btn btn-sm" for="ed-vid-file"><svg class="ico"><use href="#i-upload"/></svg><span id="ed-vid-up-label">Upload video</span></label>
-            <input type="file" id="ed-vid-file" accept="video/mp4,video/webm" class="sr-only">
-            <button type="button" class="btn btn-sm btn-quiet-danger" id="ed-vid-remove"><svg class="ico"><use href="#i-trash"/></svg>Remove video</button>
+          <div class="mp-actions" id="ed-media-actions">
+            <label class="btn btn-sm" for="ed-media-file"><svg class="ico"><use href="#i-upload"/></svg><span id="ed-media-up-label">Upload image or video</span></label>
+            <input type="file" id="ed-media-file" accept="image/jpeg,image/png,image/webp,image/gif,video/mp4,video/webm" class="sr-only">
+            <button type="button" class="btn btn-sm btn-quiet-danger" id="ed-media-remove"><svg class="ico"><use href="#i-trash"/></svg>Remove</button>
           </div>
         </div>
       </div>
-      <details class="fallback" id="ed-vid-more"><summary>Or paste a YouTube, Vimeo or video link</summary>
-        <div class="fld"><label for="ed-video" class="sr-only">Video link</label><input id="ed-video" name="videoUrl" type="url" inputmode="url" maxlength="500" placeholder="https://youtu.be/…"></div>
+      <p class="field-hint">One image or one video. Images: JPEG, PNG or WebP. Videos: MP4 or WebM up to 50 MB, shown as the listing's display media after a quick review. Your listing stays live meanwhile.</p>
+      <details class="fallback" id="ed-link-more"><summary>Or paste an image or video link</summary>
+        <div class="fld"><label for="ed-link" class="sr-only">Image or video link</label><input id="ed-link" type="url" inputmode="url" maxlength="500" placeholder="https://… (image, YouTube, Vimeo, .mp4)"></div>
+        <input type="hidden" name="imageUrl" id="ed-img"><input type="hidden" name="videoUrl" id="ed-video">
       </details>
       <div class="fld"><label for="ed-tags">Tags <span class="cc" data-cc-for="ed-tags"></span></label><input id="ed-tags" name="tags" maxlength="160" placeholder="e.g. productivity, ios"><p class="field-hint">Comma-separated, up to 6.</p></div>
     </fieldset>

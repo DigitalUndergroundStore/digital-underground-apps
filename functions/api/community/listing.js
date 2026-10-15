@@ -1,4 +1,4 @@
-import { getKv, json, kvGetListing, publicListingDetail } from "../../_lib/community.js";
+import { getKv, json, kvGetListing, publicListingDetail, repairVideoHold, saveListing } from "../../_lib/community.js";
 
 /** GET /api/community/listing?id=… — public detail for an approved listing. */
 export async function onRequest(context) {
@@ -8,6 +8,7 @@ export async function onRequest(context) {
   const kv = getKv(env);
   if (!kv || !/^cm_[a-z0-9_]{4,40}$/.test(id)) return json({ error: "Not found." }, 404);
   const row = await kvGetListing(kv, id);
+  if (row && repairVideoHold(row)) await saveListing(kv, row);
   if (!row || row.status !== "approved") return json({ error: "Not found." }, 404);
   return json({ listing: publicListingDetail(row) }, 200, { "Cache-Control": "public, max-age=60" });
 }

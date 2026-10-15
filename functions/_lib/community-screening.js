@@ -37,6 +37,7 @@ export function submissionTextBundle(listing) {
     listing.priceLabel,
     listing.xHandle,
     listing.videoUrl,
+    listing.pendingVideo && listing.pendingVideo.url,
   ].filter(Boolean);
   const haystack = parts.join("\n");
   return { text: haystack, haystack: haystack.toLowerCase() };
@@ -223,8 +224,8 @@ export async function screenListing(env, listing) {
       ? { decision: "approved", reasons: [], skipped: true }
       : await runImageGuard(ai, listing.imageUrl);
 
-  const videoCheck = await checkVideo(listing);
-  const merged = mergeScreenResults([block, urlCheck, textGuard, imageGuard, videoCheck]);
+  // Videos are reviewed separately (pendingVideo); they never take a live listing down.
+  const merged = mergeScreenResults([block, urlCheck, textGuard, imageGuard]);
   return {
     decision: merged.decision,
     reasons: merged.reasons,
@@ -233,7 +234,6 @@ export async function screenListing(env, listing) {
       url: urlCheck,
       textGuard,
       imageGuard,
-      videoCheck,
       screenedAt: Date.now(),
     },
   };
@@ -308,7 +308,7 @@ function base64ToBytes(b64) {
  * Direct files must be reachable, video/* and at most 50 MB.
  */
 export async function checkVideo(listing) {
-  const url = listing && listing.videoUrl;
+  const url = listing && (listing.pendingVideo ? listing.pendingVideo.url : listing.videoUrl);
   if (!url) return { decision: "approved", reasons: [] };
   const reasons = [];
   if (url.startsWith("https://") && /\.(mp4|webm)(\?|#|$)/i.test(new URL(url).pathname)) {

@@ -124,8 +124,11 @@
     items.forEach(function (row) {
       var art = document.createElement("article");
       art.className = "card";
-      var img = row.imageUrl
-        ? '<img class="shot" src="' + esc(row.imageUrl) + '" alt="" loading="lazy" decoding="async">'
+      var v = row.video, poster = row.imageUrl || (v && v.poster) || "";
+      var img = v && v.kind === "file"
+        ? '<video class="shot card-vid" muted loop playsinline preload="metadata"' + (poster ? ' poster="' + esc(poster) + '"' : "") + ' src="' + esc(v.src) + (poster ? "" : "#t=0.1") + '" aria-hidden="true" style="object-fit:cover;display:block"></video>'
+        : poster
+        ? '<img class="shot" src="' + esc(poster) + '" alt="" loading="lazy" decoding="async">'
         : '<div class="shot" style="background:linear-gradient(145deg,#2a1248,#0c0816)"></div>';
       art.innerHTML =
         img +
@@ -167,6 +170,13 @@
     all.sort(function (a, b) { return (a.name || "").localeCompare(b.name || ""); });
     render();
   });
+})();
+</script>
+<script>
+(function () {
+  if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { var v = e.target; if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else v.pause(); }); }, { threshold: 0.4 });
+  new MutationObserver(function () { document.querySelectorAll("video.card-vid:not([data-io])").forEach(function (v) { v.setAttribute("data-io", "1"); v.muted = true; io.observe(v); }); }).observe(document.body, { childList: true, subtree: true });
 })();
 </script>
 </body>

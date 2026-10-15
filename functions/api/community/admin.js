@@ -12,6 +12,7 @@ import {
   kvGetListing,
   kvPutListing,
 } from "../../_lib/community.js";
+import { promotePendingVideo as _ppv } from "../../_lib/community.js";
 import {
   attachListing,
   dashboardUrl,
@@ -113,6 +114,18 @@ export async function onRequest(context) {
     const id = typeof body.id === "string" ? body.id.trim() : "";
     if (!id) return json({ error: "Missing listing id." }, 400);
 
+    if (action === "approve_video" || action === "reject_video") {
+      const row = await kvGetListing(kv, id);
+      if (!row || !row.pendingVideo) return json({ error: "No video waiting on this listing." }, 404);
+      const { deleteVideo, uploadVid } = await import("../../_lib/video.js");
+      let drop = null;
+      if (action === "approve_video") drop = _ppv(row);
+      else { drop = uploadVid(row.pendingVideo.url); delete row.pendingVideo; }
+      row.updatedAt = Date.now();
+      await kvPutListing(kv, row);
+      if (drop) await deleteVideo(kv, drop).catch(() => {});
+      return json({ ok: true, listing: row });
+    }
     if (action === "approve") {
       const row = await setListingStatus(kv, id, "approved");
       if (!row) return json({ error: "Listing not found." }, 404);

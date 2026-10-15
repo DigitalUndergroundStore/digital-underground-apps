@@ -7,7 +7,7 @@
 <meta name="description" content="An indie project on the Digital Underground Developer Marketplace.">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="../community.css">
-<link rel="stylesheet" href="detail.css?v=4">
+<link rel="stylesheet" href="detail.css?v=5">
 <script src="/community/track.js"></script>
 </head>
 <body class="dt">
@@ -43,9 +43,10 @@
   var out = document.getElementById("out");
   function paras(t) { return String(t || "").split(/\n{2,}/).map(function (p) { return "<p>" + esc(p).replace(/\n/g, "<br>") + "</p>"; }).join(""); }
   function media(l) {
-    var v = l.video;
-    if (v && v.kind === "youtube" || v && v.kind === "vimeo") return '<div class="media"><iframe src="' + esc(v.src) + '" title="' + esc(l.name) + ' video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>';
-    if (v && v.kind === "file") return '<div class="media"><video controls playsinline preload="metadata" poster="' + esc(l.imageUrl) + '"><source src="' + esc(v.src) + '" type="' + esc(v.type) + '"></video></div>';
+    var v = l.video, poster = l.imageUrl || (v && v.poster) || "";
+    if (v && v.kind === "youtube") { var id = (/embed\/([\w-]{11})/.exec(v.src) || [])[1]; return '<div class="media"><iframe src="' + esc(v.src + "&autoplay=1&mute=1&loop=1&playsinline=1&controls=1&playlist=" + id) + '" title="' + esc(l.name) + ' video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>'; }
+    if (v && v.kind === "vimeo") return '<div class="media"><iframe src="' + esc(v.src + "&autoplay=1&muted=1&loop=1&playsinline=1") + '" title="' + esc(l.name) + ' video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>';
+    if (v && v.kind === "file") return '<div class="media"><video autoplay muted loop playsinline controls preload="auto"' + (poster ? ' poster="' + esc(poster) + '"' : "") + ' aria-label="' + esc(l.name) + ' video"><source src="' + esc(v.src) + (poster ? "" : "#t=0.1") + '" type="' + esc(v.type) + '"></video></div>';
     if (!l.imageUrl) return "";
     return '<div class="media"><img class="bg" src="' + esc(l.imageUrl) + '" alt="" aria-hidden="true"><img class="fg" src="' + esc(l.imageUrl) + '" alt="' + esc(l.name) + ' preview"></div>';
   }
@@ -60,7 +61,7 @@
     var tags = (l.tags || []).map(function (t) { return '<span class="chip2">#' + esc(t) + "</span>"; }).join("");
     out.innerHTML =
       '<div class="dt-grid"><div>' +
-        '<header class="dt-head">' + (l.imageUrl ? '<img class="dt-logo" src="' + esc(l.imageUrl) + '" alt="" width="72" height="72">' : '<span class="dt-logo dt-ph" aria-hidden="true">' + esc((l.name || "?").charAt(0).toUpperCase()) + "</span>") + '<div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + esc(l.makerName) + x + "</p></div></header>" +
+        '<header class="dt-head">' + (l.video || l.imageUrl ? "" : '<span class="dt-logo dt-ph" aria-hidden="true">' + esc((l.name || "?").charAt(0).toUpperCase()) + "</span>") + '<div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + esc(l.makerName) + x + "</p></div></header>" +
         '<p class="dt-pitch">' + esc(l.pitchShort) + "</p>" +
         '<div class="chips2"><span class="chip2 price">' + price + "</span>" + (l.category ? '<span class="chip2 cat">' + esc(CATS[l.category] || l.category) + "</span>" : "") + tags + "</div>" +
         '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button></div>" +

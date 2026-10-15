@@ -9,6 +9,7 @@ import {
   normalizeTags,
   normalizeVideoUrl,
   parseImageField,
+  repairVideoHold,
   sanitizeText,
   saveListing,
 } from "../../_lib/community.js";
@@ -73,7 +74,10 @@ export async function onRequest(context) {
     const rows = [];
     for (const id of acct.listingIds || []) {
       const row = await kvGetListing(kv, id);
-      if (row && row.creatorId === acct.id) rows.push(row);
+      if (row && row.creatorId === acct.id) {
+        if (repairVideoHold(row)) await saveListing(kv, row);
+        rows.push(row);
+      }
     }
     rows.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
     const stats = await readStats(kv, rows.map((r) => r.id));
@@ -204,23 +208,32 @@ export async function onRequest(context) {
     row.descriptionLong = descriptionLong;
     row.projectUrl = projectUrl;
     row.visitUrl = appendRefParam(projectUrl);
-    if (f.removeImage === true) row.imageUrl = "";
-    else if (typeof f.imageData === "string" && f.imageData) {
+    // One media slot: a video (when present) is the display media; the image is its poster/fallback.
+    const drop = [];
+    const curVid = uploadVid(row.videoUrl), penVid = uploadVid(row.pendingVideo && row.pendingVideo.url);
+    const clearVideos = () => {
+      if (curVid) drop.push(curVid);
+      if (penVid) drop.push(penVid);
+      delete row.videoUrl; delete row.videoFile; delete row.pendingVideo; delete row.videoApprovedUrl;
+    };
+    if (f.removeMedia === true || f.removeImage === true) {
+      row.imageUrl = "";
+      if (f.removeMedia === true) clearVideos();
+    } else if (typeof f.imageData === "string" && f.imageData) {
       const img = parseImageField({ imageData: f.imageData });
       if (img.error) return json({ error: img.error }, 400);
       row.imageUrl = img.imageUrl;
-    } else if (imageUrl && imageUrl !== "(uploaded image)") row.imageUrl = imageUrl;
-    row.tags = normalizeTags(f.tags);
-    let dropVid = null;
-    if (f.videoUrl !== undefined && f.videoUrl !== row.videoUrl) {
-      const v = typeof f.videoUrl === "string" ? f.videoUrl.trim() : "";
-      if (v.startsWith("upload:")) return json({ error: "Upload a video with the Upload video button." }, 400);
+      if (f.replaceVideo !== false) clearVideos();
+    } else if (imageUrl && imageUrl !== "(uploaded image)") {
+      row.imageUrl = imageUrl;
+    }
+    const v = typeof f.videoUrl === "string" ? f.videoUrl.trim() : "";
+    if (v && !v.startsWith("upload:") && v !== row.videoUrl && v !== (row.pendingVideo && row.pendingVideo.url)) {
       const vid = normalizeVideoUrl(v);
       if (vid.error) return json({ error: vid.error }, 400);
-      dropVid = uploadVid(row.videoUrl);
-      row.videoUrl = vid.videoUrl;
-      if (!row.videoUrl || !dropVid) delete row.videoFile;
-      if (dropVid) delete row.videoFile;
+      if (penVid) drop.push(penVid);
+      row.pendingVideo = { url: vid.videoUrl, at: Date.now() };
+      if (vid.videoUrl === row.videoApprovedUrl) { row.videoUrl = vid.videoUrl; delete row.videoFile; delete row.pendingVideo; }
     }
     const decision = await rescreen(env, row);
     // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
@@ -228,7 +241,7 @@ export async function onRequest(context) {
     row.updatedAt = Date.now();
     row.editedByCreatorAt = row.updatedAt;
     await saveListing(kv, row);
-    if (dropVid) context.waitUntil(deleteVideo(kv, dropVid).catch(() => {}));
+    if (drop.length) context.waitUntil(Promise.all(drop.map((d) => deleteVideo(kv, d).catch(() => {}))));
     return json({ ok: true, listing: creatorListing(row) });
   }
 

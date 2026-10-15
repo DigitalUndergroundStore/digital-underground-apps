@@ -175,6 +175,19 @@ export async function onRequest(context) {
 
   if (!takeEditBudget(row)) return json({ error: "Daily change limit reached for this listing. Try tomorrow." }, 429);
 
+  if (action === "set_cover") {
+    // Cover (poster) frame captured client-side from the creator's own uploaded video.
+    const img = parseImageField({ imageData: typeof body.imageData === "string" ? body.imageData : "" });
+    if (img.error || !img.imageData) return json({ error: img.error || "Cover must be an uploaded image." }, 400);
+    const toPending = body.target === "pending" && row.pendingVideo && row.pendingVideo.url;
+    if (toPending) row.pendingVideo.poster = img.imageData;
+    else if (row.videoUrl) row.imageUrl = img.imageData;
+    else return json({ error: "This listing has no video to set a cover for." }, 400);
+    row.updatedAt = Date.now();
+    await saveListing(kv, row);
+    return json({ ok: true, listing: creatorListing(row) });
+  }
+
   if (action === "unpublish") {
     row.status = "unpublished";
     row.updatedAt = Date.now();

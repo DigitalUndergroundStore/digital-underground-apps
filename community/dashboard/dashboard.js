@@ -314,7 +314,9 @@
     var l = editing || {}, note = $("ed-media-note"), link = $("ed-link").value.trim();
     var pend = !ed.removeMedia && !ed.imageData && l.pendingVideo, live = !ed.removeMedia && !ed.imageData && l.video;
     var img = ed.removeMedia ? "" : ed.imageData || (link && !VID_RE.test(link) ? link : l.imagePreview);
-    mediaThumb($("ed-media-thumb"), pend ? pend.media : live, img, $("edit-form").name.value);
+    mediaThumb($("ed-media-thumb"), pend ? pend.media : live, (pend && pend.poster) || (ed.removeImage ? "" : img), $("edit-form").name.value);
+    var fv = coverTarget();
+    $("ed-cover-btn").hidden = !fv || !$("ed-cover").hidden;
     var has = !!(pend || live || img || link);
     $("ed-media-remove").hidden = !has;
     $("ed-media-up-label").textContent = has ? "Replace" : "Upload image or video";
@@ -326,11 +328,39 @@
     else if (img) note.textContent = "Image · shown on your card and listing page.";
     else note.textContent = "No media yet. Add an image or a short video.";
   }
+  /* ---------- cover frame ---------- */
+  function coverTarget() {
+    var l = editing || {};
+    if (ed.removeMedia || ed.imageData) return null;
+    if (l.pendingVideo && l.pendingVideo.media && l.pendingVideo.media.kind === "file") return { src: l.pendingVideo.media.src, target: "pending" };
+    if (l.video && l.video.kind === "file") return { src: l.video.src, target: "live" };
+    return null;
+  }
+  function saveCover(dataUrl, target, quiet) {
+    var id = editing && editing.id;
+    return api("POST", { action: "set_cover", id: id, imageData: dataUrl, target: target }).then(function (d) {
+      if (!d || !d.ok) { if (!quiet) toast((d && d.error) || "Couldn't save the cover.", false); throw new Error("cover"); }
+      if (editing && editing.id === id) { editing = d.listing; if (target === "live") ed.removeImage = false; }
+      if (!quiet) toast(target === "pending" ? "Cover saved. It shows with your video once approved." : "Cover saved.", true);
+      setTimeout(mediaNote, 0); load();
+      return d;
+    }, function (e) { if (!quiet) toast("Network error. Check your connection.", false); throw e; });
+  }
+  function openCover(opts) {
+    $("ed-cover-btn").hidden = true;
+    duUpload.cover($("ed-cover"), {
+      file: opts.file, src: opts.src, start: 1,
+      onUse: function (d) { return saveCover(d, opts.target); },
+      onCancel: function () { mediaNote(); },
+    }).ready.catch(function (e) { $("ed-cover").hidden = true; $("ed-cover").innerHTML = ""; mediaNote(); toast(e.message, false); });
+  }
+  $("ed-cover-btn").addEventListener("click", function () { var t = coverTarget(); if (t) openCover(t); });
+
   $("ed-link").addEventListener("input", function () {
     var v = $("ed-link").value.trim(); ed.removeMedia = false; ed.imageData = null;
     $("ed-video").value = VID_RE.test(v) ? v : ""; $("ed-img").value = v && !VID_RE.test(v) ? v : ""; mediaNote();
   });
-  $("ed-media-remove").addEventListener("click", function () { ed.removeMedia = true; ed.imageData = null; $("ed-link").value = ""; $("ed-img").value = ""; $("ed-video").value = ""; mediaNote(); });
+  $("ed-media-remove").addEventListener("click", function () { $("ed-cover").hidden = true; $("ed-cover").innerHTML = ""; ed.removeMedia = true; ed.imageData = null; $("ed-link").value = ""; $("ed-img").value = ""; $("ed-video").value = ""; mediaNote(); });
   function setUploading(on) {
     $("ed-vid-prog").hidden = !on; $("ed-media-actions").hidden = on; $("edit-save").disabled = on;
     if (!on) { $("ed-vid-bar").style.width = "0"; $("ed-vid-pct").textContent = "0%"; }
@@ -349,7 +379,15 @@
     duUpload.video(l.id, file, function (p) { var v = Math.round(p * 100); $("ed-vid-bar").style.width = v + "%"; $("ed-vid-pct").textContent = v + "%"; }, upState)
       .then(function (d) {
         setUploading(false);
-        if (editing && editing.id === l.id) { editing = d.listing; ed.removeMedia = false; ed.imageData = null; mediaNote(); }
+        if (editing && editing.id === l.id) {
+          // Removing media then uploading a video: keep the "drop the old image" intent for Save.
+          if (ed.removeMedia) ed.removeImage = true;
+          editing = d.listing; ed.removeMedia = false; ed.imageData = null; mediaNote();
+          var tgt = d.listing.pendingVideo ? "pending" : "live";
+          // Default cover = frame at 1s, saved right away; the scrubber lets them pick another.
+          duUpload.frameAt(file, 1).then(function (img) { return saveCover(img, tgt, true); }).catch(function () {});
+          openCover({ file: file, target: tgt });
+        }
         toast(d.listing.status === "approved" ? "Video uploaded. Your listing stays live; the video appears after approval." : "Video uploaded. It appears after approval.", true);
         load();
       })
@@ -385,7 +423,8 @@
     var f = $("edit-form");
     f.name.value = l.name || ""; f.projectUrl.value = l.projectUrl || ""; f.pitchShort.value = l.pitchShort || "";
     f.descriptionLong.value = l.descriptionLong || ""; f.tags.value = (l.tags || []).join(", ");
-    ed = { removeMedia: false, imageData: null };
+    ed = { removeMedia: false, imageData: null, removeImage: false };
+    $("ed-cover").hidden = true; $("ed-cover").innerHTML = "";
     $("ed-link").value = ""; $("ed-img").value = ""; $("ed-video").value = ""; $("ed-link-more").open = false;
     setUploading(false); mediaNote();
     alertMsg($("edit-msg"), "");
@@ -405,7 +444,7 @@
     act({ action: "edit", id: l.id, fields: {
       name: f.name.value, projectUrl: f.projectUrl.value, pitchShort: f.pitchShort.value,
       descriptionLong: f.descriptionLong.value, imageUrl: f.imageUrl.value, tags: f.tags.value,
-      removeMedia: !!ed.removeMedia, imageData: ed.imageData || undefined,
+      removeMedia: !!ed.removeMedia, removeImage: !!ed.removeImage && !ed.removeMedia && !ed.imageData, imageData: ed.imageData || undefined,
       videoUrl: f.videoUrl.value.trim() } }, $("edit-save"))
       .then(function (d) { if (d && d.ok) closeEdit(); else if (d && d.error) alertMsg($("edit-msg"), d.error, false); });
   });

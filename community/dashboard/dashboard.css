@@ -311,3 +311,22 @@ label.btn:focus-within, input.sr-only:focus-visible + .btn { outline: 2px solid 
 .mp-thumb .play-badge .ico { width: 12px; height: 12px; }
 .li-thumb-wrap.mp-thumb { width: 64px; height: 64px; }
 .chip-pending { margin-left: 0; }
+
+/* ---- Cover frame picker ---- */
+.cover-pick { margin-top: 12px; padding: 12px; border-radius: 16px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); }
+.cover-pick[hidden] { display: none; }
+.cv-stage { position: relative; border-radius: 12px; overflow: hidden; background: #000; aspect-ratio: 16 / 9; }
+.cv-stage video { width: 100%; height: 100%; object-fit: contain; display: block; background: #000; }
+.cv-time { position: absolute; right: 8px; bottom: 8px; padding: 4px 8px; border-radius: 999px; font: 600 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; color: #fff; background: rgba(6,4,14,.72); border: 1px solid rgba(255,255,255,.18); font-variant-numeric: tabular-nums; }
+.cv-range { -webkit-appearance: none; appearance: none; width: 100%; height: 44px; margin: 6px 0 2px; background: transparent; cursor: pointer; touch-action: pan-y; }
+.cv-range::-webkit-slider-runnable-track { height: 6px; border-radius: 99px; background: linear-gradient(90deg, #7c3aed, #2563eb); }
+.cv-range::-moz-range-track { height: 6px; border-radius: 99px; background: linear-gradient(90deg, #7c3aed, #2563eb); }
+.cv-range::-webkit-slider-thumb { -webkit-appearance: none; width: 26px; height: 26px; margin-top: -10px; border-radius: 50%; background: #fff; border: 3px solid #7c3aed; box-shadow: 0 4px 12px rgba(0,0,0,.4); }
+.cv-range::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: #fff; border: 3px solid #7c3aed; }
+.cv-range:focus-visible { outline: 2px solid var(--cyan, #bfe8ff); outline-offset: 2px; border-radius: 8px; }
+.cv-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.cv-hint { font-size: 13px; color: var(--muted, #c8c0da); flex: 1 1 180px; }
+.cv-btns { display: flex; gap: 8px; margin-left: auto; }
+.cv-btns .btn { min-height: 44px; }
+@media (max-width: 480px) { .cv-btns { width: 100%; } .cv-btns .btn { flex: 1; justify-content: center; } }
+.cover-pick .cv-range { background: transparent !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; }

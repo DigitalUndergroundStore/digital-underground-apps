@@ -18,8 +18,13 @@
 <meta name="twitter:description" content="Indie apps, AI tools, books, and templates from makers. List your products for free; checkout stays on the maker's site.">
 <meta name="twitter:image" content="https://digitalundergroundstore.com/community/og.jpg">
 <meta name="theme-color" content="#05040c">
-<link rel="stylesheet" href="community.css?v=2">
+<link rel="stylesheet" href="community.css?v=3">
 <script src="/community/nav.js?v=1" defer></script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/du-icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/du-icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 <div class="wrap">
@@ -28,6 +33,11 @@
       <img src="/store/logo.png" width="80" height="65" alt="">
       <strong>Digital Underground</strong>
     </a>
+    <button type="button" class="share-pill" id="share-market" aria-label="Share the Developer Marketplace">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12.5V19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Share</span>
+    </button>
+
     <nav aria-label="Site">
       <a href="/store/">Store</a>
       <a href="/community/" aria-current="page">Developer Marketplace</a>
@@ -39,13 +49,7 @@
     </nav>
   </div>
   <header class="page-head">
-    <div class="title-row">
-      <h1>Developer Marketplace</h1>
-      <button type="button" class="share-pill" id="share-market" aria-label="Share the Developer Marketplace">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12.5V19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Share</span>
-      </button>
-    </div>
+    <h1>Developer Marketplace</h1>
     <p>Apps, AI tools, books, and templates from independent makers. Free to list — checkout and delivery stay on the maker's own site (Gumroad, Stripe, App Store, or their website).</p>
   </header>
   <div class="search-row">

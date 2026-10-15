@@ -445,6 +445,7 @@ export function promotePendingVideo(listing) {
     const old = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(listing.videoUrl || "");
     listing.videoUrl = listing.pendingVideo.url;
     if (listing.pendingVideo.file) listing.videoFile = listing.pendingVideo.file; else delete listing.videoFile;
+    if (listing.pendingVideo.poster) listing.imageUrl = listing.pendingVideo.poster;
     delete listing.pendingVideo;
     listing.videoApprovedUrl = listing.videoUrl;
     return old && "upload:" + old[1] !== listing.videoUrl ? old[1] : null;

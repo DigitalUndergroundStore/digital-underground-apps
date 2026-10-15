@@ -313,3 +313,12 @@ form .pw-mismatch, .pw-mismatch { color: #fca5a5; margin-top: -8px; }
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 @media (prefers-reduced-motion: reduce) { .toast, .share-pill { transition: none; } }
+/* Share pill lives in the brand row (top right) */
+.site-top .brand { order: 1; }
+.site-top nav { order: 2; margin-left: auto; }
+.site-top .share-pill { order: 3; min-height: 44px; padding: 0 14px 0 12px; font-size: 14px; gap: 6px; }
+.site-top .share-pill svg { width: 17px; height: 17px; }
+@media (max-width: 900px) {
+  .site-top .share-pill { order: 2; margin-left: auto; }
+  .site-top nav { order: 3; flex-basis: 100%; margin-left: 0; }
+}

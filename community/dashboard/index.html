@@ -8,11 +8,18 @@
 <title>Creator dashboard — Developer Marketplace — Digital Underground</title>
 <meta name="theme-color" content="#07060f">
 <link rel="stylesheet" href="../community.css">
-<link rel="stylesheet" href="dashboard.css?v=5">
+<link rel="stylesheet" href="dashboard.css?v=6">
 <script src="/community/pw.js" defer></script>
-<script src="/community/upload.js?v=1" defer></script>
-<script src="dashboard.js?v=4" defer></script>
+<script src="/community/upload.js?v=2" defer></script>
+<script src="dashboard.js?v=5" defer></script>
 <script src="/community/nav.js?v=1" defer></script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/du-icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/du-icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<script src="/community/ai-helper.js?v=1" defer></script>
+<script>addEventListener("DOMContentLoaded",function(){window.duAiHelper&&duAiHelper.mount(document.getElementById("edit-form"));});</script>
 </head>
 <body class="dash">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -35,7 +42,7 @@
   <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></symbol>
   <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></symbol>
   <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></symbol>
-  <symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3Z"/></symbol>
+  <symbol id="i-frame" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 15.5l4.5-4 3.5 3 3-2.5L21 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 2v3M16 2v3M8 19v3M16 19v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3Z"/></symbol>
   <symbol id="i-redo" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></symbol>
 </svg>
 
@@ -208,9 +215,11 @@
           <b>Media</b>
           <p id="ed-media-note"></p>
           <div class="progress" id="ed-vid-prog" hidden><div class="bar"><i id="ed-vid-bar"></i></div><span id="ed-vid-pct">0%</span><button type="button" class="linkbtn" id="ed-vid-cancel">Cancel</button></div>
+          <div class="cover-pick" id="ed-cover" hidden></div>
           <div class="mp-actions" id="ed-media-actions">
             <label class="btn btn-sm" for="ed-media-file"><svg class="ico"><use href="#i-upload"/></svg><span id="ed-media-up-label">Upload image or video</span></label>
             <input type="file" id="ed-media-file" accept="image/jpeg,image/png,image/webp,image/gif,video/mp4,video/webm" class="sr-only">
+            <button type="button" class="btn btn-sm" id="ed-cover-btn" hidden><svg class="ico"><use href="#i-frame"/></svg>Cover frame</button>
             <button type="button" class="btn btn-sm btn-quiet-danger" id="ed-media-remove"><svg class="ico"><use href="#i-trash"/></svg>Remove</button>
           </div>
         </div>

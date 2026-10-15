@@ -192,7 +192,7 @@ export function creatorListing(row) {
     videoUrl: row.videoUrl || "",
     videoFile: row.videoFile || null,
     video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
-    pendingVideo: row.pendingVideo && row.pendingVideo.url ? { url: row.pendingVideo.url, file: row.pendingVideo.file || null, media: mediaFor(row.pendingVideo.url, row.pendingVideo.file) } : null,
+    pendingVideo: row.pendingVideo && row.pendingVideo.url ? { url: row.pendingVideo.url, file: row.pendingVideo.file || null, media: mediaFor(row.pendingVideo.url, row.pendingVideo.file), poster: row.pendingVideo.poster || "" } : null,
     imagePreview: row.imageUrl || "",
     tags: Array.isArray(row.tags) ? row.tags : [],
     category: row.category,

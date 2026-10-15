@@ -12,7 +12,10 @@ import {
 } from "../../_lib/community.js";
 import { screenListing } from "../../_lib/community-screening.js";
 import {
+  accountView,
   authCreatorEx,
+  checkPassword,
+  setCredentials,
   clearSessionCookie,
   sessionCookie,
   creatorListing,
@@ -79,6 +82,7 @@ export async function onRequest(context) {
     }
     return json({
       signedInVia: who.via,
+      account: accountView(acct),
       listings: rows.map(creatorListing),
       stats,
       supportLeftToday: Math.max(0, 5 - (acct.support?.day === new Date().toISOString().slice(0, 10).replace(/-/g, "") ? acct.support.n : 0)),
@@ -95,6 +99,20 @@ export async function onRequest(context) {
   }
   const action = body.action;
 
+  if (action === "claim" || action === "set_password") {
+    // Claim: an account opened via private link sets its email + password.
+    // set_password: change password (requires current password if one exists).
+    if (acct.pw && action === "claim") return json({ error: "This account already has a password. Log in with it." }, 400);
+    if (acct.pw) {
+      const ok = await checkPassword(kv, acct.email, String(body.currentPassword || ""));
+      if (!ok || ok.id !== acct.id) return json({ error: "Current password is incorrect." }, 400);
+    }
+    const r = await setCredentials(kv, acct, action === "claim" ? body.email : acct.email, body.password);
+    if (r.error) return json({ error: r.error }, 400);
+    const c = await sessionCookie(env, acct.id);
+    return json({ ok: true, account: accountView(acct) }, 200, c ? { "Set-Cookie": c } : {});
+  }
+
   if (action === "support") {
     const subject = sanitizeText(body.subject, 120);
     const message = sanitizeText(body.message, 4000);
@@ -109,7 +127,7 @@ export async function onRequest(context) {
     if (!takeSupportBudget(acct)) return json({ error: "Daily message limit reached (5). Email digitalunderground.store@proton.me instead." }, 429);
     await putAccount(kv, acct);
     // Reply-to: the email on the selected listing, else the most recent listing's email.
-    let replyTo = listing?.email || "";
+    let replyTo = acct.email || listing?.email || "";
     if (!replyTo) {
       for (const id of [...(acct.listingIds || [])].reverse()) {
         const r = await kvGetListing(kv, id);

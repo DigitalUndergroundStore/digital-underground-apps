@@ -140,6 +140,11 @@ export async function authCreator(request, env, kv) {
   return r ? r.acct : null;
 }
 
+/** Account summary for the dashboard (no secrets). */
+export function accountView(acct) {
+  return { email: acct.email || "", hasPassword: !!acct.pw };
+}
+
 export async function attachListing(kv, acct, listingId) {
   const ids = Array.isArray(acct.listingIds) ? acct.listingIds : [];
   if (!ids.includes(listingId)) ids.push(listingId);
@@ -359,4 +364,84 @@ export async function linkContactToCreator(kv, email, acctId) {
     row.creatorIds = ids;
     await kv.put("contact:" + e, JSON.stringify(row));
   }
+}
+
+// ---------- Email + password login ----------
+// PBKDF2-SHA256 via WebCrypto with a 16-byte per-user salt. 100,000 iterations is the
+// maximum the Workers runtime allows for PBKDF2.
+
+export const PBKDF2_ITER = 100_000;
+export const MIN_PASSWORD = 8;
+
+function hex(bytes) {
+  return [...new Uint8Array(bytes)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+function unhex(s) {
+  const out = new Uint8Array(s.length / 2);
+  for (let i = 0; i < out.length; i++) out[i] = parseInt(s.substr(i * 2, 2), 16);
+  return out;
+}
+
+export async function hashPassword(password, saltHex, iter = PBKDF2_ITER) {
+  const salt = saltHex ? unhex(saltHex) : crypto.getRandomValues(new Uint8Array(16));
+  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(password), "PBKDF2", false, ["deriveBits"]);
+  const bits = await crypto.subtle.deriveBits({ name: "PBKDF2", hash: "SHA-256", salt, iterations: iter }, key, 256);
+  return { hash: hex(bits), salt: hex(salt), iter };
+}
+
+export function validPassword(pw) {
+  return typeof pw === "string" && pw.length >= MIN_PASSWORD && pw.length <= 200;
+}
+
+async function loginKey(email) {
+  return "login:" + (await sha256Hex("login|" + email));
+}
+
+/** Account id that owns this email login, or null. */
+export async function accountIdForLogin(kv, email) {
+  const e = normalizeEmail(email);
+  if (!e) return null;
+  return (await kv.get(await loginKey(e))) || null;
+}
+
+/** Set email + password on an account. Fails if the email belongs to another account. */
+export async function setCredentials(kv, acct, email, password) {
+  const e = normalizeEmail(email);
+  if (!e) return { error: "Enter a valid email." };
+  if (!validPassword(password)) return { error: `Password must be at least ${MIN_PASSWORD} characters.` };
+  const owner = await accountIdForLogin(kv, e);
+  if (owner && owner !== acct.id) return { error: "That email can't be used for this account. Contact support." };
+  if (acct.email && acct.email !== e) await kv.delete(await loginKey(acct.email));
+  const h = await hashPassword(password);
+  acct.email = e;
+  acct.pw = h;
+  acct.pwSetAt = Date.now();
+  await putAccount(kv, acct);
+  await kv.put(await loginKey(e), acct.id);
+  return { ok: true };
+}
+
+/** Verify email + password. Constant work whether or not the account exists. */
+export async function checkPassword(kv, email, password) {
+  const e = normalizeEmail(email);
+  const id = e ? await accountIdForLogin(kv, e) : null;
+  const acct = id ? await getAccount(kv, id) : null;
+  const stored = acct?.pw;
+  const h = await hashPassword(String(password || ""), stored?.salt || "00".repeat(16), stored?.iter || PBKDF2_ITER);
+  const ok = timingSafeEqualStr(h.hash, stored?.hash || "0".repeat(64)) && !!stored;
+  return ok ? acct : null;
+}
+
+const failHits = new Map();
+/** Per-isolate login throttle: 10 attempts / 15 min per IP and per email. */
+export function loginAllowed(ip, email) {
+  const now = Date.now();
+  for (const k of ["ip:" + ip, "em:" + email]) {
+    let b = failHits.get(k);
+    if (!b || now > b.reset) failHits.set(k, (b = { n: 0, reset: now + 15 * 60_000 }));
+    b.n += 1;
+    if (b.n > 10) return false;
+  }
+  if (failHits.size > 10_000) failHits.clear();
+  return true;
 }

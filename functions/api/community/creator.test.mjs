@@ -1,4 +1,4 @@
-import { issueAccountToken, authCreator, recordEvents, readStats, screenSupportMessage, takeSupportBudget } from "../../_lib/creator.js";
+import { setCredentials, checkPassword, accountIdForLogin, issueAccountToken, authCreator, recordEvents, readStats, screenSupportMessage, takeSupportBudget } from "../../_lib/creator.js";
 import { timingSafeEqualStr } from "../../_lib/community.js";
 const store = new Map();
 const kv = { get: async (k, t) => (store.has(k) ? (t === "json" ? JSON.parse(store.get(k)) : store.get(k)) : null), put: async (k, v) => store.set(k, v), delete: async (k) => store.delete(k) };
@@ -19,4 +19,12 @@ check("stats", s.cm_a.totals.i === 1 && s.cm_a.totals.v === 1 && s.cm_a.totals.c
 check("support screen", screenSupportMessage("hi", "buy cocaine now") && !screenSupportMessage("hi", "help please"));
 const a = { id: "x" }; for (let i = 0; i < 5; i++) takeSupportBudget(a);
 check("support budget", !takeSupportBudget(a));
+const r = await setCredentials(kv, acct, "Maker@Example.com", "hunter2hunter2");
+check("set creds", r.ok && (await accountIdForLogin(kv, "maker@example.com")) === acct.id);
+check("pw ok", (await checkPassword(kv, "maker@example.com", "hunter2hunter2"))?.id === acct.id);
+check("pw bad", !(await checkPassword(kv, "maker@example.com", "wrongpass1")));
+check("pw no acct", !(await checkPassword(kv, "nobody@example.com", "hunter2hunter2")));
+check("pw not plain", ![...store.values()].some((v) => v.includes("hunter2")));
+const other = (await issueAccountToken(kv, null)).acct;
+check("email taken", !!(await setCredentials(kv, other, "maker@example.com", "anotherpass")).error);
 process.exit(failed ? 1 : 0);

@@ -12,9 +12,14 @@ import {
 import {
   attachListing,
   authCreator,
-  dashboardUrl,
+  accountIdForLogin,
+  checkPassword,
   creatorIdsForEmail,
   getAccount,
+  loginAllowed,
+  MIN_PASSWORD,
+  setCredentials,
+  validPassword,
   issueAccountToken,
   linkContactToCreator,
   sessionCookie,
@@ -64,6 +69,54 @@ export async function onRequest(context) {
   }
 
   let listing = validated.listing;
+  const password = typeof body.password === "string" ? body.password : "";
+
+  // Account resolution (before screening, so a bad password costs nothing):
+  // 1) Signed-in creator (cookie or private link) -> that account. If it has no password
+  //    yet, the email + password on this submission claim it.
+  // 2) Email has a login -> password must match; then sign in.
+  // 3) Email linked to an unclaimed legacy account -> attach there, no sign-in.
+  // 4) New creator -> password required; create account and sign in.
+  let acct = null;
+  let signIn = false;
+  let attachedUnclaimed = false;
+  let isNew = false;
+  try {
+    acct = await authCreator(request, env, kv);
+    if (acct) {
+      signIn = true;
+      if (!acct.pw) {
+        if (!validPassword(password)) return json({ error: `Create a password (at least ${MIN_PASSWORD} characters).` }, 400);
+        const r = await setCredentials(kv, acct, listing.email, password);
+        if (r.error) return json({ error: r.error }, 400);
+      }
+    } else if (await accountIdForLogin(kv, listing.email)) {
+      if (!loginAllowed(ip, listing.email)) return json({ error: "Too many attempts. Try again later." }, 429);
+      acct = await checkPassword(kv, listing.email, password);
+      if (!acct) {
+        return json({ error: "This email already has a creator account. Enter its password, or log in on the Creator dashboard first." }, 400);
+      }
+      signIn = true;
+    } else {
+      const ids = await creatorIdsForEmail(kv, listing.email);
+      for (const cid of [...ids].reverse()) {
+        const a = await getAccount(kv, cid);
+        if (a && !a.pw) { acct = a; attachedUnclaimed = true; break; }
+      }
+      if (!acct) {
+        if (!validPassword(password)) return json({ error: `Create a password (at least ${MIN_PASSWORD} characters).` }, 400);
+        acct = (await issueAccountToken(kv, null)).acct;
+        const r = await setCredentials(kv, acct, listing.email, password);
+        if (r.error) return json({ error: r.error }, 400);
+        signIn = true;
+        isNew = true;
+      }
+    }
+    listing.creatorId = acct.id;
+  } catch (e) {
+    console.error("community creator account error", e);
+    return json({ error: "Could not set up your creator account. Try again." }, 500);
+  }
   try {
     const screen = await screenListing(env, listing);
     listing.status = screen.decision;
@@ -79,32 +132,6 @@ export async function onRequest(context) {
       reasons: ["Automatic screening failed; queued for human review."],
       screenedAt: Date.now(),
     };
-  }
-
-  // 1) Signed-in creator (cookie or link) -> their account.
-  // 2) Email already linked to a creator account -> attach there, but do NOT sign this
-  //    browser in (anyone can type an email); they sign in with email code or their link.
-  // 3) Otherwise -> new account, private link + session cookie for this device.
-  let acct = null;
-  let newToken = null;
-  let attachedByEmail = false;
-  try {
-    acct = await authCreator(request, env, kv);
-    if (!acct) {
-      const ids = await creatorIdsForEmail(kv, listing.email);
-      for (const cid of [...ids].reverse()) {
-        acct = await getAccount(kv, cid);
-        if (acct) { attachedByEmail = true; break; }
-      }
-    }
-    if (!acct) {
-      const issued = await issueAccountToken(kv, null);
-      acct = issued.acct;
-      newToken = issued.token;
-    }
-    listing.creatorId = acct.id;
-  } catch (e) {
-    console.error("community creator account error", e);
   }
 
   try {
@@ -150,7 +177,7 @@ export async function onRequest(context) {
   };
 
   const headers = {};
-  if (acct && !attachedByEmail) {
+  if (acct && signIn) {
     const c = await sessionCookie(env, acct.id);
     if (c) headers["Set-Cookie"] = c;
   }
@@ -160,8 +187,8 @@ export async function onRequest(context) {
     status: listing.status,
     message: messages[listing.status] || messages.pending,
     notify,
-    ...(newToken ? { dashboardUrl: dashboardUrl(env, request, newToken) } : {}),
-    existingAccount: !!acct && !newToken,
-    signedIn: !!acct && !attachedByEmail,
+    newAccount: isNew,
+    signedIn: signIn,
+    attachedUnclaimed,
   }, 200, headers);
 }

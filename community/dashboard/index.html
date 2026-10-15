@@ -19,7 +19,7 @@
     <nav aria-label="Site">
       <a href="/store/">Store</a>
       <a href="/community/">Developer Marketplace</a>
-      <a href="/community/dashboard/" aria-current="page">Creator dashboard</a>
+      <a href="/community/dashboard/" aria-current="page" class="login-btn">Creator login</a>
       <span class="cta-wrap"><a class="cta" href="/community/submit/">List your project</a></span>
     </nav>
   </div>
@@ -29,19 +29,35 @@
   </header>
 
   <div id="gate" class="dash-panel" hidden>
-    <h2>Sign in</h2>
-    <form id="login" class="stack" hidden>
-      <label>Enter your email<input name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"></label>
-      <button type="submit">Email me a sign-in code</button>
+    <h2>Creator login</h2>
+    <form id="login" class="stack">
+      <label>Email<input name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"></label>
+      <label>Password<input name="password" type="password" required minlength="8" autocomplete="current-password"></label>
+      <button type="submit">Log in</button>
+      <button type="button" class="linkish" id="forgot-btn">Forgot password?</button>
     </form>
-    <form id="code" class="stack" hidden>
-      <label>6-digit code<input name="code" required inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="123456"></label>
-      <button type="submit">Sign in</button>
-      <button type="button" class="linkish" id="code-back">Use a different email</button>
+    <form id="reset" class="stack" hidden>
+      <p class="muted">We emailed a 6-digit code to that address if it has an account.</p>
+      <label>6-digit code<input name="code" required inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6"></label>
+      <label>New password (min 8)<input name="password" type="password" required minlength="8" autocomplete="new-password"></label>
+      <button type="submit">Set password and log in</button>
+      <button type="button" class="linkish" id="reset-back">Back to login</button>
     </form>
     <div class="form-msg" id="login-msg" hidden role="status"></div>
-    <p class="muted" id="link-note">Open the private dashboard link you saved when you submitted. After that, this device stays signed in.</p>
-    <p class="muted">Lost access? Email support at <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you listed with.</p>
+    <p class="muted small">You stay logged in on this device for 180 days. New here? <a href="/community/submit/">List your project</a> to create your account.</p>
+    <p class="muted small">Have an older private dashboard link? Open it once to set your email and password.</p>
+    <p class="muted small">Lost access? Email support at <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you listed with.</p>
+  </div>
+
+  <div id="claim" class="dash-panel" hidden>
+    <h2>Set your email and password</h2>
+    <p class="muted">Claim your creator account so you can log in with your email from now on. Your listings stay as they are.</p>
+    <form id="claim-form" class="stack">
+      <label>Email<input name="email" type="email" required autocomplete="email" inputmode="email"></label>
+      <label>Password (min 8)<input name="password" type="password" required minlength="8" autocomplete="new-password"></label>
+      <button type="submit">Save and continue</button>
+      <div class="form-msg" id="claim-msg" hidden role="status"></div>
+    </form>
   </div>
 
   <div id="app" hidden>
@@ -128,18 +144,13 @@
   function ctr(t) { return t.i ? ((t.c / t.i) * 100).toFixed(1) + "%" : "—"; }
   var LABEL = { approved: "Live", pending: "Pending review", rejected: "Rejected", unpublished: "Unpublished" };
 
+  var resetByEmail = false;
   function gate(linkFailed) {
-    $("app").hidden = true;
+    $("app").hidden = true; $("claim").hidden = true;
     $("gate").hidden = false;
-    if (linkFailed) show($("login-msg"), "That private link is not valid anymore. Sign in with your email or contact support.", false);
-    fetch("/api/community/creator-login", { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" })
-      .then(function (r) { return r.json(); }).then(function (d) {
-        if (d.enabled) {
-          $("login").hidden = false;
-          $("link-note").textContent = "Or open the private dashboard link you saved when you submitted.";
-          try { var em = localStorage.getItem("du_creator_email"); if (em) $("login").email.value = em; } catch (_) {}
-        }
-      }).catch(function () {});
+    if (linkFailed) show($("login-msg"), "That private link is not valid anymore. Log in with your email and password, or contact support.", false);
+    try { var em = localStorage.getItem("du_creator_email"); if (em && !$("login").email.value) $("login").email.value = em; } catch (_) {}
+    login({}).then(function (d) { resetByEmail = !!d.resetByEmail; }).catch(function () {});
   }
   function login(body) {
     return fetch("/api/community/creator-login", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })
@@ -259,32 +270,51 @@
       // The link has set a session cookie; drop the secret from the address bar.
       if (auth) { auth = ""; history.replaceState(null, "", "/community/dashboard/"); }
       data = d; $("gate").hidden = true; $("app").hidden = false; render();
+      if (d.account && !d.account.hasPassword) {
+        $("claim").hidden = false;
+        try { var em = localStorage.getItem("du_creator_email"); if (em) $("claim-form").email.value = em; } catch (_) {}
+      } else $("claim").hidden = true;
     });
   }
 
   $("login").addEventListener("submit", function (e) {
     e.preventDefault();
-    var f = e.target, btn = f.querySelector("button"); btn.disabled = true;
-    login({ email: f.email.value }).then(function (d) {
+    var f = e.target, btn = f.querySelector("button[type=submit]"); btn.disabled = true;
+    login({ email: f.email.value, password: f.password.value }).then(function (d) {
       btn.disabled = false;
-      if (d.ok) { show($("login-msg"), d.message, true); f.hidden = true; $("code").hidden = false; $("code").code.focus(); }
-      else show($("login-msg"), d.error || "Could not send a code.", false);
-      try { localStorage.setItem("du_creator_email", f.email.value.trim()); } catch (_) {}
+      if (d.ok) { try { localStorage.setItem("du_creator_email", f.email.value.trim()); } catch (_) {} f.password.value = ""; $("login-msg").hidden = true; load(); }
+      else show($("login-msg"), d.error || "Could not log in.", false);
     }).catch(function () { btn.disabled = false; show($("login-msg"), "Network error.", false); });
   });
-  $("code").addEventListener("submit", function (e) {
+  $("forgot-btn").addEventListener("click", function () {
+    var em = $("login").email.value.trim();
+    if (!resetByEmail) { show($("login-msg"), "Password reset by email is coming soon. For now, email support at digitalunderground.store@proton.me from the address on your listing and we will reset it.", false); return; }
+    if (!em) { show($("login-msg"), "Enter your email first, then tap Forgot password.", false); return; }
+    login({ action: "forgot", email: em }).then(function (d) {
+      show($("login-msg"), d.message || d.error, !!d.ok);
+      if (d.ok) { $("login").hidden = true; $("reset").hidden = false; $("reset").code.focus(); }
+    });
+  });
+  $("reset").addEventListener("submit", function (e) {
     e.preventDefault();
-    var f = e.target, btn = f.querySelector("button"); btn.disabled = true;
-    login({ email: $("login").email.value, code: f.code.value }).then(function (d) {
-      btn.disabled = false;
-      if (d.ok) { $("login-msg").hidden = true; f.reset(); load(); }
-      else show($("login-msg"), d.error || "That code did not work.", false);
-    }).catch(function () { btn.disabled = false; show($("login-msg"), "Network error.", false); });
+    var f = e.target;
+    login({ action: "reset", email: $("login").email.value, code: f.code.value, password: f.password.value }).then(function (d) {
+      if (d.ok) { f.reset(); $("reset").hidden = true; $("login").hidden = false; $("login-msg").hidden = true; load(); }
+      else show($("login-msg"), d.error || "That did not work.", false);
+    });
   });
-  $("code-back").addEventListener("click", function () { $("code").hidden = true; $("login").hidden = false; $("login-msg").hidden = true; });
+  $("reset-back").addEventListener("click", function () { $("reset").hidden = true; $("login").hidden = false; $("login-msg").hidden = true; });
+  $("claim-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = e.target;
+    api("POST", { action: "claim", email: f.email.value, password: f.password.value }).then(function (d) {
+      if (d.ok) { try { localStorage.setItem("du_creator_email", f.email.value.trim()); } catch (_) {} $("claim").hidden = true; show($("msg"), "Saved. From now on, log in with your email and password.", true); }
+      else show($("claim-msg"), d.error || "Could not save.", false);
+    });
+  });
   $("signout").addEventListener("click", function () {
     fetch("/api/community/creator?action=signout", { method: "POST", credentials: "same-origin" }).then(function () {
-      data = null; $("login").hidden = true; $("code").hidden = true; $("login-msg").hidden = true; gate(false);
+      data = null; $("login-msg").hidden = true; gate(false);
     });
   });
 

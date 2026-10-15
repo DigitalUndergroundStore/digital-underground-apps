@@ -30,7 +30,7 @@
     <nav aria-label="Site">
       <a href="/store/">Store</a>
       <a href="/community/">Developer Marketplace</a>
-      <a href="/community/dashboard/">Creator dashboard</a>
+      <a href="/community/dashboard/" class="login-btn">Creator login</a>
       <span class="cta-wrap">
         <a class="cta" href="/community/submit/" aria-current="page">List your project</a>
         <span class="launch-badge">List your products for free</span>
@@ -50,6 +50,10 @@
     <label>Your email (we'll contact you about your listing)
       <input name="email" type="email" required autocomplete="email" inputmode="email" maxlength="120" placeholder="you@example.com">
     </label>
+    <label>Password for your Creator login (min 8 characters)
+      <input name="password" type="password" required minlength="8" maxlength="200" autocomplete="new-password">
+    </label>
+    <p class="field-hint">Already have a creator account? Enter its password and we'll add this listing to it.</p>
     <p class="field-hint consent-hint">By submitting, you agree we may email you about your listing and Digital Underground updates. Unsubscribe anytime.</p>
     <label>X handle (optional)<input name="xHandle" maxlength="16" placeholder="handle without @"></label>
     <label>Category
@@ -96,6 +100,20 @@
   var fileInput = form.querySelector('[name="imageFile"]');
   var urlInput = form.querySelector('[name="imageUrl"]');
   var emailInput = form.querySelector('[name="email"]');
+  var creatorSignedIn = false;
+  fetch("/api/community/creator", { credentials: "same-origin" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+    if (!d || !d.account || !d.account.hasPassword) return;
+    creatorSignedIn = true;
+    var pw = form.querySelector('[name="password"]');
+    pw.required = false;
+    pw.closest("label").hidden = true;
+    pw.closest("label").nextElementSibling.hidden = true;
+    if (d.account.email) emailInput.value = d.account.email;
+    var note = document.createElement("p");
+    note.className = "form-msg ok";
+    note.innerHTML = 'You are logged in. This listing will be added to your creator account. <a href="/community/dashboard/">Dashboard</a>';
+    form.parentNode.insertBefore(note, form);
+  }).catch(function () {});
   try { var savedEmail = localStorage.getItem("du_creator_email"); if (savedEmail && !emailInput.value) emailInput.value = savedEmail; } catch (_) {}
 
   function showSaveLink(url) {
@@ -141,6 +159,7 @@
       projectUrl: fd.get("projectUrl"),
       makerName: fd.get("makerName"),
       email: fd.get("email"),
+      password: fd.get("password"),
       xHandle: fd.get("xHandle"),
       category: fd.get("category"),
       priceLabel: fd.get("priceLabel"),
@@ -174,6 +193,11 @@
       return;
     }
     payload.email = emailVal;
+    if (!creatorSignedIn && String(payload.password || "").length < 8) {
+      show("Create a password of at least 8 characters for your Creator login.", false);
+      form.querySelector('[name="password"]').focus();
+      return;
+    }
 
     run.then(function () {
       return fetch("/api/community/submit", {
@@ -189,9 +213,9 @@
     }).then(function (out) {
       if (out.res.ok && out.data.ok) {
         show(out.data.message || "Submitted — thank you!", true);
-        if (out.data.dashboardUrl) showSaveLink(out.data.dashboardUrl);
+        if (out.data.newAccount) msg.insertAdjacentHTML("beforeend", ' <br>Your creator account is ready and you are logged in on this device. <a href="/community/dashboard/">Open your dashboard</a>. Next time, use <strong>Creator login</strong> with your email and password.');
         else if (out.data.signedIn) msg.insertAdjacentHTML("beforeend", ' Added to your creator account. <a href="/community/dashboard/">Open your dashboard</a>');
-        else if (out.data.existingAccount) msg.insertAdjacentHTML("beforeend", ' This email already has a creator account, so we added it there. <a href="/community/dashboard/">Sign in to your dashboard</a> to manage it.');
+        else if (out.data.attachedUnclaimed) msg.insertAdjacentHTML("beforeend", ' We added it to your existing creator account. Open your private dashboard link once to set your password, or email support.');
         try { localStorage.setItem("du_creator_email", payload.email); } catch (_) {}
         form.reset();
         try { emailInput.value = payload.email; } catch (_) {}

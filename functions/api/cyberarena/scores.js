@@ -42,7 +42,7 @@ export async function onRequest({ request, env }) {
 
   if (request.method !== "POST") return json({ error: "Use GET or POST." }, 405);
   const ip = ipOf(request);
-  if (!rateOk("score:" + ip, 8, 10 * 60 * 1000) || !(await kvRateOk(kv, "score:" + (await sha(ip)), 20, 3600))) {
+  if (!rateOk("score:" + ip, 40, 10 * 60 * 1000) || !(await kvRateOk(kv, "score:" + (await sha(ip)), 150, 3600))) {
     return json({ error: "Too many scores submitted. Try again later." }, 429, { "Retry-After": "600" });
   }
   let b;
@@ -65,7 +65,10 @@ export async function onRequest({ request, env }) {
   const serverTime = Math.floor((Date.now() - sess.t) / 1000);
   if (clientTime > serverTime + 5) return json({ error: "Match time doesn't add up." }, 422);
   const time = Math.min(clientTime, serverTime, 4 * 3600);
-  if (time < 15) return json({ error: "Play at least 15 seconds before submitting." }, 422);
+  // A single life ending in death (auto-submit) is a valid run after a few seconds; other runs need 15 s.
+  const isLife = b.life === true && deaths === 1;
+  if (time < (isLife ? 3 : 15)) return json({ error: isLife ? "Life too short to count." : "Play at least 15 seconds before submitting." }, 422);
+  if (b.life === true && deaths !== 1) return json({ error: "A life run has exactly one death." }, 422);
   // Plausibility: bots respawn far away and the fastest weapon needs ~0.6 s per kill, so
   // more than one kill every 2 s is not credible. Respawn takes 3 s.
   if (kills > Math.floor(time / 2) + 1) return json({ error: "Too many kills for the match time." }, 422);
@@ -74,10 +77,13 @@ export async function onRequest({ request, env }) {
   if (kills === 0 && deaths === 0) return json({ error: "Nothing to submit yet. Get a kill first." }, 422);
 
   const entry = { id: randHex(6), name: cs.name, score: computeScore({ kills, deaths, bestStreak: streak }), kills, deaths, streak, time, at: Date.now(), pidh: await sha(pid) };
-  const all = await insert(kv, "all", entry);
-  const weekly = await insert(kv, "weekly", entry);
+  // Zero-point lives are accepted (token consumed) but don't add a row to the board.
+  const counted = entry.score > 0;
+  const all = counted ? await insert(kv, "all", entry) : await readBoard(kv, "all");
+  const weekly = counted ? await insert(kv, "weekly", entry) : await readBoard(kv, "weekly");
   return json({
     ok: true,
+    counted,
     submitted: { name: entry.name, score: entry.score, kills, deaths, streak, time },
     all: { top: all.slice(0, 25).map(publicEntry), you: youOf(all, entry.pidh) },
     weekly: { top: weekly.slice(0, 25).map(publicEntry), you: youOf(weekly, entry.pidh) },

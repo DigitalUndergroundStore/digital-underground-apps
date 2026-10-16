@@ -247,7 +247,8 @@
                     </div>
 
                     <!-- Audio -->
-                    <div class="flex items-center gap-3 text-[11px] text-slate-400">
+                    <div class="flex items-center gap-3 text-[11px] text-slate-400 flex-wrap">
+                        <button id="aim-assist-btn" class="hidden px-2.5 py-1 rounded-lg border border-cyan-500/40 text-cyan-300 bg-slate-950/60" aria-pressed="true"><i class="fas fa-crosshairs mr-1"></i> Aim assist: ON</button>
                         <button id="music-btn" class="px-2.5 py-1 rounded-lg border border-violet-500/40 text-violet-300 bg-slate-950/60"><i class="fas fa-music mr-1"></i> Music: ON</button>
                         <span class="text-violet-300">VOL</span>
                         <input id="vol-slider" type="range" min="0" max="1" step="0.05" value="0.5" class="w-24 accent-cyan-400">
@@ -274,6 +275,10 @@
             <div class="my-6">
                 <div class="text-xs uppercase font-cyber text-slate-400 tracking-widest">Reconstructing In</div>
                 <div id="respawn-timer" class="font-cyber font-black text-5xl text-amber-400 mt-1">3</div>
+            </div>
+            <div id="death-score" class="hidden text-left border-t border-slate-700/70 pt-3">
+                <div class="flex items-baseline justify-between"><span id="ds-status" class="text-[11px] font-mono text-emerald-300">Score submitted</span><span class="font-mono text-sm"><b id="ds-score" class="text-cyan-300">0</b> pts · <b id="ds-rank" class="text-fuchsia-300">#–</b></span></div>
+                <div id="ds-top" class="mt-2 space-y-0.5 text-[11px] font-mono"></div>
             </div>
         </div>
     </div>
@@ -1107,6 +1112,8 @@
         }
 
         function handlePlayerDeath(killerId, killerName) {
+            if (localPlayer.isDead) return;
+            const lifeStreak = localPlayer.streak || 0;
             localPlayer.isDead = true;
             localPlayer.deaths++;
             localPlayer.streak = 0;
@@ -1124,6 +1131,7 @@
             });
 
             addKillFeedMessage(killerName || 'Enemy', localPlayer.name, '#f43f5e');
+            submitLife(lifeStreak);
 
             // Show Respawn Countdown Modal
             const respawnModal = document.getElementById('respawn-modal');
@@ -1158,6 +1166,7 @@
             updateHUDStats();
             pushPlayerStateToCloud(true);
 
+            startLife();
             const respawnModal = document.getElementById('respawn-modal');
             respawnModal.classList.add('hidden');
             respawnModal.classList.remove('flex');
@@ -1278,6 +1287,7 @@
                 lookTouchId = t.identifier;
                 lastLookPos = { x: t.clientX, y: t.clientY };
             }, { passive: false });
+            window.__caLooking = () => lookTouchId !== null;
             const endLook = (e) => {
                 for (let i = 0; i < e.changedTouches.length; i++) if (e.changedTouches[i].identifier === lookTouchId) lookTouchId = null;
             };
@@ -1293,7 +1303,7 @@
                         const dy = t.clientY - lastLookPos.y;
                         lastLookPos = { x: t.clientX, y: t.clientY };
 
-                        const touchSensitivity = 0.006;
+                        const touchSensitivity = 0.006 * (aimAssistTarget() ? 0.5 : 1);
                         localPlayer.yaw -= dx * touchSensitivity;
                         localPlayer.pitch -= dy * touchSensitivity;
                         const maxPitch = Math.PI / 2 - 0.08;
@@ -1785,6 +1795,55 @@
         });
         document.querySelectorAll('#hud-weapons button').forEach(b => b.addEventListener('click', (e) => { e.stopPropagation(); switchWeapon(b.dataset.w); }));
         if (isTouchDevice) { document.body.classList.add('touch'); document.getElementById('weapon-panel').classList.add('hidden'); }
+        // ---- Touch-only aim assist: slower + gentle tracking inside a ~5° cone with line of sight ----
+        let lastInputTouch = isTouchDevice; // never assist mouse input, even on touch laptops
+        window.addEventListener('touchstart', () => { lastInputTouch = true; }, { passive: true, capture: true });
+        window.addEventListener('mousemove', (e) => { if (e.movementX || e.movementY) lastInputTouch = false; });
+        let aimAssistOn = isTouchDevice && localStorage.getItem('ca_aim_assist') !== 'off';
+        const aaBtn = document.getElementById('aim-assist-btn');
+        const paintAA = () => { aaBtn.textContent = `Aim assist: ${aimAssistOn ? 'ON' : 'OFF'}`; aaBtn.setAttribute('aria-pressed', String(aimAssistOn)); };
+        if (isTouchDevice) { aaBtn.classList.remove('hidden'); paintAA(); }
+        aaBtn.addEventListener('click', (e) => { e.stopPropagation(); aimAssistOn = !aimAssistOn; localStorage.setItem('ca_aim_assist', aimAssistOn ? 'on' : 'off'); paintAA(); });
+        const AA_CONE = 5 * Math.PI / 180;
+        const _aaCam = new THREE.Vector3(), _aaDir = new THREE.Vector3(), _aaTo = new THREE.Vector3(), _aaRay = new THREE.Raycaster();
+        let _aaCache = { t: 0, target: null };
+        function aimAssistTarget() {
+            if (!aimAssistOn || !isTouchDevice || !lastInputTouch || !isGameActive || localPlayer.isDead) return null;
+            const nowMs = performance.now();
+            if (nowMs - _aaCache.t < 50) return _aaCache.target;
+            camera.getWorldPosition(_aaCam); camera.getWorldDirection(_aaDir);
+            let best = null, bestAng = Math.PI;
+            const consider = (group) => {
+                _aaTo.copy(group.position); _aaTo.y += 1.2; _aaTo.sub(_aaCam);
+                const dist = _aaTo.length(); if (dist < 0.5 || dist > 80) return;
+                // ~5° cone, widened only up close so the body itself counts (atan(0.45 m / dist))
+                const cone = Math.max(AA_CONE, Math.atan(0.45 / dist));
+                const ang = _aaDir.angleTo(_aaTo);
+                if (ang >= cone || (best && ang >= bestAng)) return;
+                _aaRay.set(_aaCam, _aaTo.clone().normalize()); _aaRay.far = dist - 0.4;
+                if (_aaRay.intersectObjects(obstacleMeshes, false).length) return; // no line of sight
+                bestAng = ang; best = group.position.clone().setY(group.position.y + 1.2);
+            };
+            bots.forEach(b => consider(b.avatar.group));
+            remotePlayers.forEach(rp => { if (!rp.data.isDead && rp.avatar) consider(rp.avatar.group); });
+            _aaCache = { t: nowMs, target: best };
+            return best;
+        }
+        // Called each frame: while dragging or firing, ease the view toward the target (no snapping).
+        function applyAimAssist(dt, dragging) {
+            if (!(dragging || weaponState.isTriggerHeld)) return;
+            const tgt = aimAssistTarget(); if (!tgt) return;
+            camera.getWorldPosition(_aaCam);
+            const dx = tgt.x - _aaCam.x, dy = tgt.y - _aaCam.y, dz = tgt.z - _aaCam.z;
+            const wantYaw = Math.atan2(-dx, -dz), wantPitch = Math.atan2(dy, Math.hypot(dx, dz));
+            let dYaw = wantYaw - localPlayer.yaw; dYaw = Math.atan2(Math.sin(dYaw), Math.cos(dYaw));
+            const k = Math.min(1, dt * 3); // ~3/s ease: gentle pull
+            localPlayer.yaw += dYaw * k;
+            localPlayer.pitch += (wantPitch - localPlayer.pitch) * k * 0.6;
+            yawObject.rotation.y = localPlayer.yaw; pitchObject.rotation.x = localPlayer.pitch;
+        }
+        window.__caAA = () => !!aimAssistTarget();
+        window.__caAAErr = () => { const t = aimAssistTarget(); if (!t) return null; camera.getWorldPosition(_aaCam); camera.getWorldDirection(_aaDir); return +(_aaDir.angleTo(t.clone().sub(_aaCam)) * 180 / Math.PI).toFixed(2); };
         window.__caYaw = () => localPlayer.yaw;
         window.__caFiring = () => !!weaponState.isTriggerHeld;
         window.__caJoy = () => [joystickVector.x, joystickVector.y];
@@ -2195,6 +2254,7 @@
                 yawObject.rotation.y = localPlayer.yaw; pitchObject.rotation.x = localPlayer.pitch;
                 return Math.round(bd);
             };
+            window.__caYawAdd = (deg) => { localPlayer.yaw += deg * Math.PI / 180; yawObject.rotation.y = localPlayer.yaw; };
         }
 
         // ==========================================
@@ -2264,6 +2324,41 @@
             loadLeaderboard();
         }));
 
+        // ---- Auto-submit every life on death (each life = its own signed run) ----
+        let lifeKillBase = 0, lifeSubmitting = false;
+        function startLife() {
+            lifeKillBase = localPlayer.kills;
+            matchToken = null;
+            ensureMatch(); // fresh one-shot token per life
+        }
+        async function submitLife(lifeStreak) {
+            const box = document.getElementById('death-score');
+            box.classList.add('hidden');
+            if (lifeSubmitting) return;
+            const token = matchToken;
+            if (!token) return; // offline / no token: stay quiet
+            matchToken = null; // never reuse: guarantees one submit per life
+            lifeSubmitting = true;
+            const kills = Math.max(0, localPlayer.kills - lifeKillBase);
+            const name = document.getElementById('player-name-input').value.trim() || localPlayer.name;
+            try {
+                const r = await fetch('/api/cyberarena/scores', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ token, pid: playerPid, callsign: name, kills, deaths: 1, bestStreak: Math.min(kills, lifeStreak), matchTime: Math.floor((Date.now() - matchStartMs) / 1000), life: true })
+                });
+                const d = await r.json().catch(() => null);
+                if (!r.ok || !d || !d.ok) return;
+                const you = d.all && d.all.you;
+                document.getElementById('ds-status').textContent = d.counted === false ? 'Score submitted (no points this life)' : 'Score submitted';
+                document.getElementById('ds-score').textContent = d.submitted.score.toLocaleString();
+                document.getElementById('ds-rank').textContent = you ? `#${you.rank}` : 'unranked';
+                document.getElementById('ds-top').innerHTML = (d.all.top || []).slice(0, 5).map(e => `<div class="flex justify-between ${you && you.rank === e.rank ? 'text-fuchsia-200' : 'text-slate-300'}"><span class="truncate pr-2">#${e.rank} ${escHtml(e.name)}</span><span class="text-cyan-300">${e.score.toLocaleString()}</span></div>`).join('');
+                if (localPlayer.isDead) box.classList.remove('hidden');
+                localStorage.setItem('ca_callsign', d.submitted.name);
+            } catch { /* offline: quiet */ } finally { lifeSubmitting = false; }
+        }
+        window.__caLife = () => ({ token: !!matchToken, lifeKills: localPlayer.kills - lifeKillBase });
+
         document.getElementById('submit-score-btn').addEventListener('click', async () => {
             const status = document.getElementById('submit-status');
             const btn = document.getElementById('submit-score-btn');
@@ -2273,7 +2368,7 @@
             try {
                 const r = await fetch('/api/cyberarena/scores', {
                     method: 'POST', headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ token: matchToken, pid: playerPid, callsign: name, kills: localPlayer.kills, deaths: localPlayer.deaths, bestStreak: localPlayer.bestStreak || 0, matchTime: Math.floor((Date.now() - matchStartMs) / 1000) })
+                    body: JSON.stringify({ token: (() => { const t = matchToken; matchToken = null; return t; })(), pid: playerPid, callsign: name, kills: localPlayer.kills - lifeKillBase, deaths: 0, bestStreak: Math.min(localPlayer.kills - lifeKillBase, localPlayer.streak || 0), matchTime: Math.floor((Date.now() - matchStartMs) / 1000) })
                 });
                 const d = await r.json().catch(() => ({}));
                 if (!r.ok) {
@@ -2288,7 +2383,7 @@
                 renderBoard(d[lbBoard]);
                 // End the run: reset stats and fetch a fresh match token on next deploy
                 localPlayer.kills = 0; localPlayer.deaths = 0; localPlayer.streak = 0; localPlayer.bestStreak = 0;
-                matchToken = null;
+                lifeKillBase = 0; matchToken = null;
                 updateHUDStats();
                 setTimeout(() => document.getElementById('run-panel').classList.add('hidden'), 4000);
             } catch {
@@ -2316,7 +2411,7 @@
             updateBots(dt);
 
             // Argon pack: weapons, VFX, sky, HUD
-            if (isGameActive && !localPlayer.isDead) updateWeaponFiring(dt, now);
+            if (isGameActive && !localPlayer.isDead) { applyAimAssist(dt, window.__caLooking && window.__caLooking()); updateWeaponFiring(dt, now); }
             else { gunGroup.userData.flash && (gunGroup.userData.flash.material.opacity = 0); }
             weaponFX.update(dt);
             vfx.update(dt);

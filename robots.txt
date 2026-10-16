@@ -76,3 +76,5 @@ Allow: /community/submit/
 Allow: /llms.txt
 Allow: /openapi.json
 Disallow: /
+
+Sitemap: https://digitalundergroundstore.com/sitemap.xml

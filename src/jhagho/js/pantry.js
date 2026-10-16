@@ -101,7 +101,7 @@
   function pluralWord(word) {
     if (!word || UNCOUNTABLE[word] || /s$/.test(word)) return word;
     if (/[^aeiou]y$/.test(word)) return word.slice(0, -1) + "ies";
-    if (/(ch|sh|x|z|o)$/.test(word)) return word + "es";
+    if (/(ch|sh|x|z)$/.test(word) || /^(potato|tomato|mango|hero|echo)$/.test(word)) return word + "es";
     return word + "s";
   }
 
@@ -1005,6 +1005,20 @@
       });
     });
 
+    /* v3.14.4: one line per ingredient. "4 lettuces" + "2 cups lettuce" shop as "4 lettuces + 2 cups". */
+    var byName = {};
+    items = items.filter(function (it) {
+      var nk = singularKey(it.item) + "|" + it.aisle;
+      var first = byName[nk];
+      if (!first) { byName[nk] = it; return true; }
+      var extra = formatLine(it.qty, it.unit, "").replace(/^\s+|\s+$/g, "") || formatLine(it.qty, it.unit, it.item);
+      first.label = first.label + " + " + extra.toLowerCase();
+      first.alsoKeys = (first.alsoKeys || []).concat([it.key]);
+      first.fromExtra = first.fromExtra || it.fromExtra;
+      first.extraOnly = first.extraOnly && it.extraOnly;
+      return false;
+    });
+
     items.sort(function (a, b) { return a.label.localeCompare(b.label); });
     notes.sort(function (a, b) { return a.label.localeCompare(b.label); });
 
@@ -1634,7 +1648,7 @@
   var STAPLES = ["salt", "black pepper", "olive oil"];
 
   var PW = {
-    VERSION: "3.14.3",
+    VERSION: "3.14.4",
     shopItem: shopItem,
     BUNDLED_CATALOG_VERSION: BUNDLED_CATALOG_VERSION,
     KEY: KEY,

@@ -3,6 +3,22 @@
  */
 
 export const CATEGORIES = ["apps", "ai-tools", "games", "books", "templates", "other"];
+/** Listing stage chosen by the maker. Stored as the display label. Missing = Released. */
+export const STAGES = { concept: "Concept", development: "In development", beta: "Beta / testing", released: "Released", discontinued: "Discontinued" };
+const STAGE_LABELS = Object.values(STAGES);
+const LEGACY_STAGES = ["In testing / development"]; // owner seed listings
+/** Accepts a stage key ("beta") or label ("Beta / testing"); returns the label or "" if invalid. */
+export function normalizeStage(raw) {
+  if (typeof raw !== "string") return "";
+  const v = raw.trim();
+  if (STAGES[v.toLowerCase()]) return STAGES[v.toLowerCase()];
+  const hit = STAGE_LABELS.find((l) => l.toLowerCase() === v.toLowerCase());
+  return hit || "";
+}
+function displayStage(row) {
+  const s = typeof row.stage === "string" ? row.stage : "";
+  return STAGE_LABELS.includes(s) || LEGACY_STAGES.includes(s) ? s : "Released";
+}
 
 const RATE_LIMIT = 8;
 const RATE_WINDOW_MS = 60 * 60 * 1000;
@@ -205,6 +221,7 @@ export function validateSubmission(body) {
   const descriptionLong = sanitizeText(body.descriptionLong ?? body.longDescription, MAX_DESC_LONG);
   const xHandle = normalizeXHandle(body.xHandle ?? body.twitter);
   const tags = normalizeTags(body.tags);
+  const stage = normalizeStage(body.stage);
   const terms = body.terms === true || body.terms === "true" || body.termsAccepted === true;
 
   if (!name) return { error: "Project name is required.", status: 400 };
@@ -216,6 +233,7 @@ export function validateSubmission(body) {
   if (!CATEGORIES.includes(category)) {
     return { error: "Pick a category.", status: 400 };
   }
+  if (!stage) return { error: "Pick a stage: Concept, In development, Beta / testing, Released or Discontinued.", status: 400 };
   if (!pitchShort) return { error: "Short pitch is required.", status: 400 };
   if (!descriptionLong) return { error: "Longer description is required.", status: 400 };
   if (!terms) return { error: "Accept the listing terms to continue.", status: 400 };
@@ -236,6 +254,7 @@ export function validateSubmission(body) {
     email,
     xHandle,
     category,
+    stage,
     priceLabel,
     pitchShort,
     descriptionLong,
@@ -274,7 +293,7 @@ export function publicListing(row) {
     projectUrl: row.projectUrl,
     tags: Array.isArray(row.tags) ? row.tags : [],
     video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
-    stage: typeof row.stage === "string" && row.stage ? row.stage.slice(0, 40) : null,
+    stage: displayStage(row),
   };
 }
 

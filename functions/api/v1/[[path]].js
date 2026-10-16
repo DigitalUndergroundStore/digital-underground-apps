@@ -93,6 +93,7 @@ export async function onRequest(context) {
     name: b.name ?? row.name, projectUrl: b.projectUrl ?? row.projectUrl, pitchShort: b.pitchShort ?? row.pitchShort,
     descriptionLong: b.descriptionLong ?? row.descriptionLong, tags: b.tags ?? (row.tags || []).join(", "),
     imageUrl: typeof b.imageUrl === "string" ? b.imageUrl : "", videoUrl: typeof b.videoUrl === "string" ? b.videoUrl : "",
+    stage: b.stage ?? row.stage ?? "Released",
   };
   if (Array.isArray(fields.tags)) fields.tags = fields.tags.join(", ");
   if (typeof b.imageData === "string") fields.imageData = b.imageData;
@@ -119,7 +120,7 @@ async function revise(context, kv, acct, key, row, b, rlh) {
   const merged = {
     name: b.name ?? base.name, projectUrl: b.projectUrl ?? base.projectUrl, pitchShort: b.pitchShort ?? base.pitchShort,
     descriptionLong: b.descriptionLong ?? base.descriptionLong, tags: b.tags ?? base.tags ?? [],
-    category: row.category, priceLabel: row.priceLabel, makerName: row.makerName || "Creator", email: row.email || acct.email || "x@example.com",
+    category: row.category, priceLabel: row.priceLabel, stage: b.stage ?? base.stage ?? "Released", makerName: row.makerName || "Creator", email: row.email || acct.email || "x@example.com",
     terms: true, website: "",
   };
   const hasImg = (typeof b.imageUrl === "string" && b.imageUrl) || typeof b.imageData === "string";
@@ -129,7 +130,7 @@ async function revise(context, kv, acct, key, row, b, rlh) {
   const v = validateSubmission(merged);
   if (v.error) return out({ error: v.error }, v.status || 400, rlh);
   const L = v.listing;
-  const fields = { name: L.name, projectUrl: L.projectUrl, visitUrl: appendRefParam(L.projectUrl), pitchShort: L.pitchShort, descriptionLong: L.descriptionLong, tags: L.tags };
+  const fields = { name: L.name, projectUrl: L.projectUrl, visitUrl: appendRefParam(L.projectUrl), pitchShort: L.pitchShort, descriptionLong: L.descriptionLong, tags: L.tags, stage: L.stage };
   if (hasImg) fields.imageUrl = L.imageUrl;
   else if (base.imageUrl !== row.imageUrl) fields.imageUrl = base.imageUrl;
   if (L.pendingVideo && L.pendingVideo.url) fields.videoUrl = L.pendingVideo.url;

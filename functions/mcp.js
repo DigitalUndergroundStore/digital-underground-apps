@@ -34,11 +34,12 @@ const TOOLS = [
     name: "submit_listing",
     title: "Submit a listing for review",
     description: "Submit the user's own product to the marketplace. Requires the creator's API key (duk_..., from the Creator dashboard -> API keys; never guess one). Free. Every submission is screened and waits for human owner approval; nothing is published automatically. Only submit real products the user owns, with accurate claims.",
-    inputSchema: { type: "object", required: ["api_key", "name", "projectUrl", "category", "pitchShort", "descriptionLong", "terms"], properties: {
+    inputSchema: { type: "object", required: ["api_key", "name", "projectUrl", "category", "stage", "pitchShort", "descriptionLong", "terms"], properties: {
       api_key: { type: "string", description: "Creator API key, duk_..." },
       name: { type: "string", maxLength: 120 },
       projectUrl: { type: "string", description: "https link to the product" },
       category: { type: "string", enum: CATS },
+      stage: { type: "string", enum: ["concept", "development", "beta", "released", "discontinued"], description: "Listing stage: concept, development, beta (testing), released or discontinued" },
       pitchShort: { type: "string", maxLength: 280 },
       descriptionLong: { type: "string", maxLength: 4000 },
       imageUrl: { type: "string", description: "https cover image URL" },

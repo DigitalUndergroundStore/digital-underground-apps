@@ -441,7 +441,7 @@
     editing = l; lastFocus = btn;
     var f = $("edit-form");
     f.name.value = l.name || ""; f.projectUrl.value = l.projectUrl || ""; f.pitchShort.value = l.pitchShort || "";
-    f.descriptionLong.value = l.descriptionLong || ""; f.tags.value = (l.tags || []).join(", ");
+    f.descriptionLong.value = l.descriptionLong || ""; f.stage.value = ["Concept", "In development", "Beta / testing", "Released", "Discontinued"].indexOf(l.stage) >= 0 ? l.stage : "Released"; f.tags.value = (l.tags || []).join(", ");
     ed = { removeMedia: false, imageData: null, removeImage: false };
     $("ed-cover").hidden = true; $("ed-cover").innerHTML = "";
     $("ed-link").value = ""; $("ed-img").value = ""; $("ed-video").value = ""; $("ed-link-more").open = false;
@@ -461,7 +461,7 @@
     if (!editing) return;
     var f = e.target, l = editing;
     act({ action: "edit", id: l.id, fields: {
-      name: f.name.value, projectUrl: f.projectUrl.value, pitchShort: f.pitchShort.value,
+      name: f.name.value, projectUrl: f.projectUrl.value, pitchShort: f.pitchShort.value, stage: f.stage.value,
       descriptionLong: f.descriptionLong.value, imageUrl: f.imageUrl.value, tags: f.tags.value,
       removeMedia: !!ed.removeMedia, removeImage: !!ed.removeImage && !ed.removeMedia && !ed.imageData, imageData: ed.imageData || undefined,
       videoUrl: f.videoUrl.value.trim() } }, $("edit-save"))

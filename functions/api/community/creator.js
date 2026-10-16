@@ -11,8 +11,7 @@ import {
   parseImageField,
   repairVideoHold,
   sanitizeText,
-  saveListing,
-} from "../../_lib/community.js";
+  saveListing, normalizeStage } from "../../_lib/community.js";
 import { screenListing } from "../../_lib/community-screening.js";
 import {
   accountView,
@@ -224,12 +223,15 @@ export async function onRequest(context) {
     const projectUrl = typeof f.projectUrl === "string" ? f.projectUrl.trim() : "";
     const imageUrl = typeof f.imageUrl === "string" ? f.imageUrl.trim() : "";
     if (!name) return json({ error: "Title is required." }, 400);
+    const stage = f.stage === undefined || f.stage === null || f.stage === "" ? (row.stage || "Released") : normalizeStage(f.stage);
+    if (!stage) return json({ error: "Pick a valid stage." }, 400);
     if (!pitchShort || !descriptionLong) return json({ error: "Both descriptions are required." }, 400);
     if (!isHttpsUrl(projectUrl)) return json({ error: "Link must be a valid https URL." }, 400);
     if (imageUrl && imageUrl !== "(uploaded image)" && !isHttpsUrl(imageUrl)) {
       return json({ error: "Image URL must be https." }, 400);
     }
     row.name = name;
+    row.stage = stage;
     row.pitchShort = pitchShort;
     row.descriptionLong = descriptionLong;
     row.projectUrl = projectUrl;

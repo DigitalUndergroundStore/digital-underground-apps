@@ -3,7 +3,7 @@ const Listing = {
   type: "object",
   properties: {
     id: { type: "string" }, status: { type: "string", enum: ["pending", "approved", "rejected", "unpublished"] },
-    name: { type: "string" }, projectUrl: { type: "string" }, pitchShort: { type: "string" }, descriptionLong: { type: "string" },
+    name: { type: "string" }, stage: { type: "string", description: "Concept, In development, Beta / testing, Released or Discontinued" }, projectUrl: { type: "string" }, pitchShort: { type: "string" }, descriptionLong: { type: "string" },
     imageUrl: { type: "string" }, videoUrl: { type: "string" }, tags: { type: "array", items: { type: "string" } },
     pendingVideo: { type: "object", nullable: true }, pendingRevision: { type: "object", nullable: true, description: "An API edit to an approved listing waiting for owner approval (status: \"pending owner approval\"). The approved version stays live until the owner approves it." }, reasons: { type: "array", items: { type: "string" } },
     createdAt: { type: "integer" }, updatedAt: { type: "integer" },
@@ -11,13 +11,14 @@ const Listing = {
 };
 const Create = {
   type: "object",
-  required: ["name", "projectUrl", "category", "pitchShort", "descriptionLong", "terms"],
+  required: ["name", "projectUrl", "category", "stage", "pitchShort", "descriptionLong", "terms"],
   properties: {
     name: { type: "string", maxLength: 120 },
     projectUrl: { type: "string", format: "uri", description: "https link to the product (checkout stays on your site)" },
     category: { type: "string", enum: ["apps", "ai-tools", "games", "books", "templates", "other"] },
     pitchShort: { type: "string", maxLength: 280, description: "One-sentence tagline" },
     descriptionLong: { type: "string", maxLength: 4000 },
+    stage: { type: "string", enum: ["concept", "development", "beta", "released", "discontinued"], description: "Required. Listing stage: concept, development (In development), beta (Beta / testing), released or discontinued. Labels are also accepted." },
     priceLabel: { type: "string", maxLength: 40, example: "$9" },
     tags: { oneOf: [{ type: "array", items: { type: "string" }, maxItems: 6 }, { type: "string" }] },
     makerName: { type: "string", maxLength: 80, description: "Defaults to your account name" },
@@ -28,7 +29,7 @@ const Create = {
     terms: { type: "boolean", description: "Must be true: you accept the listing terms at /community/submit/" },
   },
 };
-const Update = { type: "object", description: "Send only the fields you want to change.", properties: { name: Create.properties.name, projectUrl: Create.properties.projectUrl, pitchShort: Create.properties.pitchShort, descriptionLong: Create.properties.descriptionLong, tags: Create.properties.tags, imageUrl: Create.properties.imageUrl, imageData: Create.properties.imageData, videoUrl: Create.properties.videoUrl, removeMedia: { type: "boolean" } } };
+const Update = { type: "object", description: "Send only the fields you want to change.", properties: { name: Create.properties.name, projectUrl: Create.properties.projectUrl, pitchShort: Create.properties.pitchShort, descriptionLong: Create.properties.descriptionLong, stage: Create.properties.stage, tags: Create.properties.tags, imageUrl: Create.properties.imageUrl, imageData: Create.properties.imageData, videoUrl: Create.properties.videoUrl, removeMedia: { type: "boolean" } } };
 const err = { description: "Error", content: { "application/json": { schema: { type: "object", properties: { error: { type: "string" } } } } } };
 export const OPENAPI = {
   openapi: "3.0.3",

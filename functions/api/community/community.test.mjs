@@ -27,6 +27,7 @@ const good = validateSubmission({
   makerName: "Maker",
   email: "maker@example.com",
   category: "apps",
+  stage: "beta",
   pitchShort: "Short pitch",
   descriptionLong: "Longer text",
   imageUrl: "https://example.com/cover.png",
@@ -41,6 +42,7 @@ const honeypot = validateSubmission({
   makerName: "m",
   email: "a@b.co",
   category: "apps",
+  stage: "beta",
   pitchShort: "p",
   descriptionLong: "d",
   imageUrl: "https://example.com/i.png",
@@ -54,6 +56,7 @@ const badEmail = validateSubmission({
   makerName: "Maker",
   email: "not-an-email",
   category: "apps",
+  stage: "beta",
   pitchShort: "Short pitch",
   descriptionLong: "Longer text",
   imageUrl: "https://example.com/cover.png",
@@ -70,6 +73,7 @@ const pub = publicListing({
   makerName: "M",
   email: "secret@example.com",
   category: "apps",
+  stage: "beta",
   priceLabel: "Free",
   pitchShort: "p",
   imageUrl: "https://example.com/i.png",
@@ -91,4 +95,14 @@ check("csv row", csv.includes("a@example.com") && csv.includes("cm_1"));
 
 if (failed) {
   process.exit(1);
+}
+
+{
+  const { normalizeStage, publicListing: pl } = await import("../../_lib/community.js");
+  const ok = (n, c) => console.log((c ? "ok " : "FAIL ") + n);
+  ok("stage key", normalizeStage("beta") === "Beta / testing");
+  ok("stage label", normalizeStage("In development") === "In development");
+  ok("stage bad", normalizeStage("alpha") === "");
+  ok("stage default released", pl({ id: "x", stage: undefined }).stage === "Released");
+  ok("stage legacy kept", pl({ id: "x", stage: "In testing / development" }).stage === "In testing / development");
 }

@@ -90,6 +90,16 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
         <option value="other">Other</option>
       </select>
     </label>
+    <label>Stage
+      <select name="stage" required>
+        <option value="">Choose…</option>
+        <option value="concept">Concept</option>
+        <option value="development">In development</option>
+        <option value="beta">Beta / testing</option>
+        <option value="released">Released</option>
+        <option value="discontinued">Discontinued</option>
+      </select>
+    </label>
     <label>Price label<input name="priceLabel" maxlength="40" placeholder="Free, $9, CA$24, etc."></label>
     <label>Short pitch (max 280)<textarea name="pitchShort" required maxlength="280" rows="3"></textarea></label>
     <label>Longer description<textarea name="descriptionLong" required maxlength="4000" rows="6"></textarea></label>
@@ -216,6 +226,7 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
       passwordConfirm: fd.get("passwordConfirm"),
       xHandle: fd.get("xHandle"),
       category: fd.get("category"),
+      stage: fd.get("stage"),
       priceLabel: fd.get("priceLabel"),
       pitchShort: fd.get("pitchShort"),
       descriptionLong: fd.get("descriptionLong"),

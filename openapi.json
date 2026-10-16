@@ -15,7 +15,7 @@
       "bearer": {
         "type": "http",
         "scheme": "bearer",
-        "bearerFormat": "duk_\u2026"
+        "bearerFormat": "duk_…"
       }
     },
     "schemas": {
@@ -36,6 +36,10 @@
           },
           "name": {
             "type": "string"
+          },
+          "stage": {
+            "type": "string",
+            "description": "Concept, In development, Beta / testing, Released or Discontinued"
           },
           "projectUrl": {
             "type": "string"
@@ -87,6 +91,7 @@
           "name",
           "projectUrl",
           "category",
+          "stage",
           "pitchShort",
           "descriptionLong",
           "terms"
@@ -120,6 +125,17 @@
           "descriptionLong": {
             "type": "string",
             "maxLength": 4000
+          },
+          "stage": {
+            "type": "string",
+            "enum": [
+              "concept",
+              "development",
+              "beta",
+              "released",
+              "discontinued"
+            ],
+            "description": "Required. Listing stage: concept, development (In development), beta (Beta / testing), released or discontinued. Labels are also accepted."
           },
           "priceLabel": {
             "type": "string",
@@ -188,6 +204,17 @@
           "descriptionLong": {
             "type": "string",
             "maxLength": 4000
+          },
+          "stage": {
+            "type": "string",
+            "enum": [
+              "concept",
+              "development",
+              "beta",
+              "released",
+              "discontinued"
+            ],
+            "description": "Required. Listing stage: concept, development (In development), beta (Beta / testing), released or discontinued. Labels are also accepted."
           },
           "tags": {
             "oneOf": [

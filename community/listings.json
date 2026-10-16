@@ -36,5 +36,152 @@
       "browser"
     ],
     "priceLabel": "Free / In testing"
+  },
+  {
+    "id": "cm_pick_ollama",
+    "status": "approved",
+    "name": "Ollama",
+    "makerName": "Ollama",
+    "makerUrl": "https://ollama.com",
+    "category": "ai-tools",
+    "stage": "Released",
+    "pitchShort": "Run open large language models such as Llama, Gemma, Qwen and DeepSeek on your own Mac, Windows or Linux machine with one command.",
+    "descriptionLong": "Ollama is a free, open-source (MIT) tool for running large language models locally. Pull a model with one command and chat with it in the terminal, or call it from your own apps through a local REST API that is also compatible with the OpenAI API format.\n\nIt runs on macOS, Windows and Linux, uses your GPU when available, and keeps your prompts on your own machine. A large library of open models is available, and you can build custom models with a Modelfile.\n\nSource code: https://github.com/ollama/ollama",
+    "projectUrl": "https://ollama.com",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/ollama.webp",
+    "tags": [
+      "ai",
+      "llm",
+      "local",
+      "self-hosted"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_open_webui",
+    "status": "approved",
+    "name": "Open WebUI",
+    "makerName": "Open WebUI",
+    "makerUrl": "https://openwebui.com",
+    "category": "ai-tools",
+    "stage": "Released",
+    "pitchShort": "A self-hosted, ChatGPT-style web interface for local and cloud AI models, with chat history, document RAG, users and plugins.",
+    "descriptionLong": "Open WebUI is a feature-rich, self-hosted AI chat interface that works offline. Connect it to Ollama or any OpenAI-compatible API and get a polished web app with conversations, model switching, document upload and retrieval (RAG), web search, multi-user accounts with roles, and an extension system for tools and functions.\n\nIt installs with Docker or pip. The source is on GitHub (https://github.com/open-webui/open-webui) under the Open WebUI License, a BSD-3-based licence that adds a branding-preservation clause for larger deployments; check it if you plan to rebrand.\n\nFree to self-host.",
+    "projectUrl": "https://openwebui.com",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/open-webui.webp",
+    "tags": [
+      "ai",
+      "llm",
+      "chat",
+      "self-hosted"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_excalidraw",
+    "status": "approved",
+    "name": "Excalidraw",
+    "makerName": "Excalidraw",
+    "makerUrl": "https://excalidraw.com",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "A virtual whiteboard for sketching hand-drawn-style diagrams, wireframes and flowcharts, with live collaboration and end-to-end encryption.",
+    "descriptionLong": "Excalidraw is a free, open-source (MIT) virtual whiteboard. It gives diagrams and wireframes a friendly hand-drawn look, works in the browser with no sign-up, and supports real-time collaboration with end-to-end encrypted sharing links.\n\nDrawings can be exported to PNG, SVG or the open .excalidraw format, and developers can embed the editor in their own apps with the @excalidraw/excalidraw React package. A paid Excalidraw+ plan exists for teams, but the editor itself is free and open source.\n\nSource code: https://github.com/excalidraw/excalidraw",
+    "projectUrl": "https://excalidraw.com",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/excalidraw.webp",
+    "tags": [
+      "whiteboard",
+      "diagrams",
+      "design",
+      "collaboration"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_n8n",
+    "status": "approved",
+    "name": "n8n",
+    "makerName": "n8n",
+    "makerUrl": "https://n8n.io",
+    "category": "ai-tools",
+    "stage": "Released",
+    "pitchShort": "A visual workflow automation tool with 400+ integrations and AI agent nodes. Fair-code: free to self-host, source-available under the Sustainable Use License.",
+    "descriptionLong": "n8n lets you build automations by connecting nodes on a canvas: triggers, hundreds of app integrations, code steps in JavaScript or Python, and AI nodes for building LLM agents and RAG pipelines.\n\nAbout the licence, honestly: n8n is fair-code, not OSI open source. The source is public on GitHub (https://github.com/n8n-io/n8n) under the Sustainable Use License, which lets you self-host and use it for free for your own internal business purposes, but restricts reselling it as a hosted service. Some enterprise features use a separate licence, and n8n also sells a paid cloud plan.\n\nThe self-hosted Community Edition is free.",
+    "projectUrl": "https://n8n.io",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/n8n.webp",
+    "tags": [
+      "automation",
+      "workflows",
+      "ai-agents",
+      "self-hosted"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_godot",
+    "status": "approved",
+    "name": "Godot Engine",
+    "makerName": "Godot Foundation",
+    "makerUrl": "https://godotengine.org",
+    "category": "games",
+    "stage": "Released",
+    "pitchShort": "A free, MIT-licensed 2D and 3D game engine with its own editor, GDScript and C# support, and exports to desktop, mobile and the web.",
+    "descriptionLong": "Godot is a complete, cross-platform game engine for 2D and 3D games. It ships as a small download with a full editor, a scene and node system, the Python-like GDScript language plus C# and C++ (GDExtension) support, physics, animation, UI and shader tools.\n\nGames can be exported to Windows, macOS, Linux, Android, iOS and the web. Godot is released under the MIT licence with no royalties or fees, and is developed by a community supported by the non-profit Godot Foundation.\n\nSource code: https://github.com/godotengine/godot",
+    "projectUrl": "https://godotengine.org",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/godot.webp",
+    "tags": [
+      "game-engine",
+      "2d",
+      "3d",
+      "gamedev"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_blender",
+    "status": "approved",
+    "name": "Blender",
+    "makerName": "Blender Foundation",
+    "makerUrl": "https://www.blender.org",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "The free, open-source 3D creation suite: modelling, sculpting, animation, rendering, compositing, video editing and 2D animation in one app.",
+    "descriptionLong": "Blender covers the whole 3D pipeline: modelling, sculpting, UV and texturing, rigging and animation, simulation, the Cycles and EEVEE renderers, compositing, motion tracking, video editing and Grease Pencil 2D animation.\n\nIt runs on Windows, macOS and Linux, is scriptable with Python, and is released under the GNU GPL. Development is led by the Blender Foundation and Blender Institute and funded by the community through the Blender Development Fund.\n\nSource code: https://projects.blender.org/blender/blender",
+    "projectUrl": "https://www.blender.org",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/blender.webp",
+    "tags": [
+      "3d",
+      "animation",
+      "modeling",
+      "rendering"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_coolify",
+    "status": "approved",
+    "name": "Coolify",
+    "makerName": "coollabs (Coolify)",
+    "makerUrl": "https://coolify.io",
+    "category": "other",
+    "stage": "Released",
+    "pitchShort": "An open-source, self-hostable alternative to Heroku, Netlify and Vercel: deploy apps, databases and 280+ one-click services to your own servers.",
+    "descriptionLong": "Coolify turns your own VPS or bare-metal servers into a platform-as-a-service. Connect a Git repository and it builds and deploys your app (Dockerfile, Nixpacks or Docker Compose), with automatic SSL, preview deployments, databases with backups, and a catalogue of one-click services.\n\nCoolify is open source under the Apache 2.0 licence and free to self-host on as many servers as you like, with no vendor lock-in. A paid Coolify Cloud plan is available if you would rather not host the dashboard yourself.\n\nSource code: https://github.com/coollabsio/coolify",
+    "projectUrl": "https://coolify.io",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/coolify.webp",
+    "tags": [
+      "self-hosted",
+      "paas",
+      "deployment",
+      "devops"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
   }
 ]

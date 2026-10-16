@@ -153,6 +153,7 @@
         (row.contactable ? '<a class="cta2 top" style="margin-left:auto;flex-shrink:0" href="/community/p/?id=' + encodeURIComponent(row.id) + '#contact" aria-label="Contact the developer of ' + esc(row.name) + '">Contact</a>' : "") +
         "</div>" +
         '<span class="maker">' + makerLine(row) + "</span>" +
+        (row.curated ? '<span class="pick-badge" style="display:inline-block;margin:4px 6px 2px 0;padding:2px 9px;border-radius:999px;background:linear-gradient(90deg,#a855f7,#00f2fe);color:#05070d;font:800 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.03em;width:max-content">&#9733; Featured pick</span>' + '<span class="pick-note" style="display:block;margin:2px 0 4px;color:#94a3b8;font:500 11.5px/1.4 ui-sans-serif,system-ui,sans-serif">Curated by Digital Underground — not submitted by the maker</span>' : "") +
         (row.stage && row.stage !== 'Released' ? '<span class="stage-badge" style="display:inline-block;margin:4px 0 2px;padding:2px 8px;border-radius:999px;border:1px solid rgba(251,191,36,.55);background:rgba(251,191,36,.12);color:#fcd34d;font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;width:max-content">' + esc(row.stage) + "</span>" : "") +
         '<span class="blurb">' + esc(row.pitchShort) + "</span>" +
         '<div class="buyrow">' +

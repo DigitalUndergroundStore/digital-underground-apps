@@ -294,6 +294,8 @@ export function publicListing(row) {
     tags: Array.isArray(row.tags) ? row.tags : [],
     video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
     stage: displayStage(row),
+    curated: !!row.curated,
+    makerUrl: row.curated ? row.makerUrl || null : null,
   };
 }
 

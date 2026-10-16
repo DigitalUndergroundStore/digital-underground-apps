@@ -1729,6 +1729,12 @@
             if (ch) ch.style.transform = `translate(-50%, -50%) scale(${(1 + Math.min(1.2, (weaponState.currentSpread - WEAPON_STATS[weaponState.currentType].spread) * 25)).toFixed(3)})`;
             // Subtle weapon bobbing & recoil recovery
             gunGroup.position.z = THREE.MathUtils.lerp(gunGroup.position.z, -0.45, dt * 14);
+            { const ts = performance.now() / 1000;   // subtle idle sway + coil pulse
+              const por = camera.aspect < 1;
+              gunGroup.position.x = (por ? 0.15 : 0.28) + Math.sin(ts * 1.3) * 0.006;
+              gunGroup.position.y = (por ? -0.21 : -0.24) + Math.sin(ts * 2.1) * 0.004;
+              gunGroup.rotation.z = Math.sin(ts * 1.1) * 0.012;
+              gunGlowMats.forEach((m, i) => { m.opacity = 0.6 + 0.35 * Math.sin(ts * 4 + i); }); }
             gunGroup.rotation.x = THREE.MathUtils.lerp(gunGroup.rotation.x, 0, dt * 14);
 
             // Sync position if moving
@@ -2013,6 +2019,46 @@
             gunGroup.add(m);
             weaponMeshes[t] = m;
         });
+        // Sci-fi first-person guns: Kenney Blaster Kit (CC0), restyled as gunmetal + neon energy coils
+        const GUN_SKINS = {
+            rifle:   { file: 'blaster-d', len: 0.62, body: 0x8a96aa, glow: 0x00f2fe, coils: 3 },
+            smg:     { file: 'blaster-j', len: 0.44, body: 0x6b7280, glow: 0xfacc15, coils: 2 },
+            shotgun: { file: 'blaster-l', len: 0.56, body: 0x7c5c4a, glow: 0xff6a00, coils: 2 },
+            railgun: { file: 'blaster-f', len: 0.86, body: 0x9aa4c0, glow: 0xb026ff, coils: 5 },
+        };
+        const gunGlowMats = [];
+        if (THREE.GLTFLoader) Object.entries(GUN_SKINS).forEach(([type, sk]) => {
+            new THREE.GLTFLoader().load('vendor/guns/' + sk.file + '.glb', (gltf) => {
+                const holder = weaponMeshes[type]; if (!holder) return;
+                const model = gltf.scene;
+                model.traverse(o => { if (o.isMesh) {
+                    const src = o.material;
+                    o.material = new THREE.MeshStandardMaterial({ map: src.map || null, color: sk.body, metalness: 0.55, roughness: 0.35,
+                        emissive: sk.glow, emissiveMap: src.map || null, emissiveIntensity: 0.4 });
+                    o.renderOrder = 2;
+                } });
+                // fit: longest axis -> z, barrel toward -z, scaled to sk.len
+                let box = new THREE.Box3().setFromObject(model), size = box.getSize(new THREE.Vector3());
+                if (size.x > size.z) { model.rotation.y = Math.PI / 2; box = new THREE.Box3().setFromObject(model); size = box.getSize(new THREE.Vector3()); }
+                const k = sk.len * 0.85 / size.z; model.scale.multiplyScalar(k);
+                box = new THREE.Box3().setFromObject(model); const c = box.getCenter(new THREE.Vector3()); size = box.getSize(new THREE.Vector3());
+                model.position.sub(c);
+                const g = new THREE.Group(); g.add(model);
+                // glowing energy coils around the front half + a power cell strip
+                const glowMat = new THREE.MeshBasicMaterial({ color: sk.glow, transparent: true, opacity: 0.9, blending: THREE.AdditiveBlending, depthWrite: false });
+                gunGlowMats.push(glowMat);
+                const r = Math.min(size.x, size.y) * 0.42;
+                const coilGeo = new THREE.TorusGeometry(r, r * 0.12, 6, 18);
+                for (let i = 0; i < sk.coils; i++) { const t = new THREE.Mesh(coilGeo, glowMat); t.position.set(0, size.y * 0.08, -size.z * (0.12 + i * 0.32 / sk.coils)); g.add(t); }
+                const strip = new THREE.Mesh(new THREE.BoxGeometry(size.x * 1.02, size.y * 0.06, size.z * 0.4), glowMat);
+                strip.position.set(0, size.y * 0.22, size.z * 0.05); g.add(strip);
+                holder.children.forEach(ch => { if (ch !== holder.userData.muzzleFlash) ch.visible = false; });
+                holder.add(g);
+                if (holder.userData.muzzleFlash) holder.userData.muzzleFlash.position.set(0, size.y * 0.08, -size.z / 2 - 0.05);
+                holder.userData.skinned = true;
+            });
+        });
+        window.__caGuns = () => Object.fromEntries(Object.entries(weaponMeshes).map(([t, m]) => [t, !!m.userData.skinned]));
         const weaponFX = new WeaponFXPool(scene);
         const _camQ = new THREE.Quaternion(), _muzzle = new THREE.Vector3(), _right = new THREE.Vector3();
 

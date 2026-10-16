@@ -10,3 +10,8 @@
 ## GLTFLoader.js, SkeletonUtils.js
 - From three.js r128 (examples/js/), MIT License
 - Copyright © 2010-2021 three.js authors, https://github.com/mrdoob/three.js/blob/r128/LICENSE
+
+## First-person guns — Kenney "Blaster Kit" 2.1
+- Files: `vendor/guns/blaster-d.glb` (rifle), `blaster-j.glb` (SMG), `blaster-l.glb` (shotgun), `blaster-f.glb` (railgun)
+- Author: Kenney (www.kenney.nl) — https://kenney.nl/assets/blaster-kit
+- License: CC0 1.0 Universal (public domain). Restyled in code with metallic/emissive materials and neon coils.

@@ -1,16 +1,46 @@
 # Digital Underground
 
-> Digital products (apps, guides, AI tools) at https://digitalundergroundstore.com/store/ and a free Developer Marketplace for independent makers at https://digitalundergroundstore.com/community/.
+> Digital Underground sells digital products (apps, guides, AI tools; pay once) at https://digitalundergroundstore.com/store/ and runs a free Developer Marketplace where independent makers list their apps, AI tools, books and templates at https://digitalundergroundstore.com/community/. Listing is free; checkout and delivery stay on each maker's own site.
 
-## Developer Marketplace: posting listings as an agent
+## For agents: quickest path
 
-- Listing is free. Checkout and delivery stay on the maker's own site.
+- MCP server (Streamable HTTP, no auth for reads): `https://digitalundergroundstore.com/mcp`
+  Tools: `search_listings`, `get_listing`, `submit_listing` (needs creator API key), `get_my_listing_status`.
+- OpenAPI spec: https://digitalundergroundstore.com/openapi.json
+
+## Browse listings (public, no auth)
+
+- All approved listings: `GET https://digitalundergroundstore.com/api/community/listings` → `{listings: [{id, name, makerName, category, priceLabel, pitchShort, tags, visitUrl, imageUrl, ...}]}`
+- One listing with full description: `GET https://digitalundergroundstore.com/api/community/listing?id=cm_...`
+
+```
+curl https://digitalundergroundstore.com/api/community/listings
+```
+
+## Submit a listing (creator API key)
+
 - Ask the human creator for an API key. They create one in the Creator dashboard (https://digitalundergroundstore.com/community/dashboard/ → API keys). Never guess or reuse keys.
 - Auth: `Authorization: Bearer duk_...`
-- Spec: https://digitalundergroundstore.com/api/v1/openapi.json
-- Human docs: https://digitalundergroundstore.com/community/api/
 - Create: `POST /api/v1/listings` with JSON {name, projectUrl, category (apps|ai-tools|books|templates|other), pitchShort (≤280), descriptionLong (≤4000), imageUrl (https) or imageData (data URL ≤750 KB), tags, priceLabel, videoUrl?, terms: true}
+
+```
+curl -X POST https://digitalundergroundstore.com/api/v1/listings \
+  -H "Authorization: Bearer $DU_KEY" -H "Content-Type: application/json" \
+  -d '{"name":"My App","projectUrl":"https://example.com/my-app","category":"apps",
+       "pitchShort":"What it does and who it is for.","descriptionLong":"Features and how to get it.",
+       "imageUrl":"https://example.com/cover.png","tags":["productivity"],"priceLabel":"$9","terms":true}'
+```
+
 - Status: `GET /api/v1/listings/{id}` (pending → approved/rejected). New listings always wait for owner approval; nothing is auto-published.
 - Update: `PATCH /api/v1/listings/{id}` with only the fields to change. Edits to an approved listing return 202 "pending owner approval": the approved version stays live until the owner approves the revision (see `pendingRevision`).
 - Limits: 10 writes/hour and 50 writes/day per key. HTTP 429 includes Retry-After.
 - Only submit real products the creator owns, with accurate claims. Listings are screened automatically and reviewed by a human.
+
+## Links
+
+- Marketplace: https://digitalundergroundstore.com/community/
+- Submit form (humans) and terms: https://digitalundergroundstore.com/community/submit/
+- API docs: https://digitalundergroundstore.com/community/api/
+- OpenAPI: https://digitalundergroundstore.com/openapi.json
+- MCP server: https://digitalundergroundstore.com/mcp (manifest: https://digitalundergroundstore.com/server.json)
+- Store: https://digitalundergroundstore.com/store/

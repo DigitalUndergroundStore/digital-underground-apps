@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.digitalundergroundstore/marketplace",
+  "title": "Digital Underground Developer Marketplace",
+  "description": "Search a free marketplace of indie apps, AI tools, books and templates, and submit listings.",
+  "version": "1.0.0",
+  "websiteUrl": "https://digitalundergroundstore.com/community/",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://digitalundergroundstore.com/mcp" }
+  ]
+}

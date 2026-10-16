@@ -47,8 +47,15 @@ export async function onRequest(context) {
   for (const row of listings) {
     if (row?.id) byId.set(row.id, row);
   }
+  let pinned = [];
+  try {
+    const pr = await fetch(`${new URL(request.url).origin}/community/pinned.json`);
+    if (pr.ok) pinned = await pr.json();
+  } catch {}
+  if (!Array.isArray(pinned)) pinned = [];
+  const rank = (id) => { const i = pinned.indexOf(id); return i < 0 ? 1e9 : i; };
   const merged = [...byId.values()].sort((a, b) =>
-    (a.name || "").localeCompare(b.name || "")
+    rank(a.id) - rank(b.id) || (a.name || "").localeCompare(b.name || "")
   );
 
   return json(

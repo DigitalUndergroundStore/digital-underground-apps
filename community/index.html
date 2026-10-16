@@ -174,8 +174,10 @@
 
   Promise.all([
     fetch("/community/listings.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }),
-    fetch("/api/community/listings").then(function (r) { return r.ok ? r.json() : { listings: [] }; }).catch(function () { return { listings: [] }; })
+    fetch("/api/community/listings").then(function (r) { return r.ok ? r.json() : { listings: [] }; }).catch(function () { return { listings: [] }; }),
+    fetch("/community/pinned.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; })
   ]).then(function (parts) {
+    var pinned = Array.isArray(parts[2]) ? parts[2] : []; // listing ids sorted first (edit community/pinned.json)
     var staticList = Array.isArray(parts[0]) ? parts[0] : [];
     var apiList = parts[1] && Array.isArray(parts[1].listings) ? parts[1].listings : [];
     var byId = {};
@@ -183,7 +185,11 @@
       if (row && row.id) byId[row.id] = row;
     });
     all = Object.keys(byId).map(function (k) { return byId[k]; });
-    all.sort(function (a, b) { return (a.name || "").localeCompare(b.name || ""); });
+    all.sort(function (a, b) {
+      var pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
+      if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);
+      return (a.name || "").localeCompare(b.name || "");
+    });
     render();
   });
 })();

@@ -6,9 +6,18 @@ export async function onRequest(context) {
   if (request.method !== "GET") return json({ error: "Use GET." }, 405);
   const id = new URL(request.url).searchParams.get("id") || "";
   const kv = getKv(env);
-  if (!kv || !/^cm_[a-z0-9_]{4,40}$/.test(id)) return json({ error: "Not found." }, 404);
-  const row = await kvGetListing(kv, id);
-  if (row && repairVideoHold(row)) await saveListing(kv, row);
-  if (!row || row.status !== "approved") return json({ error: "Not found." }, 404);
+  if (!/^cm_[a-z0-9_]{4,40}$/.test(id)) return json({ error: "Not found." }, 404);
+  const row = kv ? await kvGetListing(kv, id) : null;
+  if (kv && row && repairVideoHold(row)) await saveListing(kv, row);
+  if (!row || row.status !== "approved") {
+    // Fall back to the owner's static seed (community/listings.json), same as the browse endpoint.
+    try {
+      const res = await fetch(new URL("/community/listings.json", request.url), { headers: { Accept: "application/json" } });
+      const data = res.ok ? await res.json() : [];
+      const seed = (Array.isArray(data) ? data : data?.listings || []).find((r) => r && r.id === id);
+      if (seed) return json({ listing: publicListingDetail(seed) }, 200, { "Cache-Control": "public, max-age=60" });
+    } catch {}
+    return json({ error: "Not found." }, 404);
+  }
   return json({ listing: publicListingDetail(row) }, 200, { "Cache-Control": "public, max-age=60" });
 }

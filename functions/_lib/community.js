@@ -274,6 +274,7 @@ export function publicListing(row) {
     projectUrl: row.projectUrl,
     tags: Array.isArray(row.tags) ? row.tags : [],
     video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
+    stage: typeof row.stage === "string" && row.stage ? row.stage.slice(0, 40) : null,
   };
 }
 

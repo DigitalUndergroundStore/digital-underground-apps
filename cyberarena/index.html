@@ -10,6 +10,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- three.js r128 example loaders (MIT, (c) three.js authors), vendored locally -->
+    <script src="vendor/GLTFLoader.js"></script>
+    <script src="vendor/SkeletonUtils.js"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -610,6 +613,129 @@
             return c;
         }
 
+
+        // ---------- Animated combat robots (bots + remote players) ----------
+        // Model: "RobotExpressive" by Tomás Laulhé (Quaternius), CC0 1.0; glTF conversion by Don McCurdy,
+        // distributed in the three.js repo (examples/models/gltf/RobotExpressive). See cyberarena/vendor/LICENSES.md.
+        // ~3.2k triangles per robot; geometry is shared between clones, materials are per robot (for tint + dissolve).
+        const ROBOT_HEIGHT = 2.0;
+        const robotAsset = { ready: false, gltf: null, scale: 1, queue: [] };
+        if (THREE.GLTFLoader && THREE.SkeletonUtils) {
+            new THREE.GLTFLoader().load('vendor/RobotExpressive.glb', (gltf) => {
+                const box = new THREE.Box3().setFromObject(gltf.scene);
+                robotAsset.scale = ROBOT_HEIGHT / Math.max(0.01, box.max.y - box.min.y);
+                robotAsset.gltf = gltf; robotAsset.ready = true;
+                robotAsset.queue.splice(0).forEach(fn => fn());
+            }, undefined, () => { /* keep blocky fallback */ });
+        }
+        const _flashColor = new THREE.Color(0xffffff);
+        function buildRobot(avatar, id, colorStr) {
+            const team = new THREE.Color(colorStr || '#00f2fe');
+            const model = THREE.SkeletonUtils.clone(robotAsset.gltf.scene);
+            model.scale.setScalar(robotAsset.scale);
+            model.rotation.y = Math.PI; // model faces +Z, game forward is -Z
+            // Per-robot material clones keyed by (material name, skinning/morph flags), so skinning stays correct
+            const cache = {}, mats = [];
+            const style = (m, n) => {
+                m.transparent = true;
+                if (n === 'Main') { m.color.setHex(0x8a94ab); m.metalness = 0.55; m.roughness = 0.32; m.userData.role = 0; }
+                else if (n === 'Grey') { m.color.copy(team); m.emissive.copy(team).multiplyScalar(0.55); m.roughness = 0.3; m.userData.role = 1; }
+                else { m.color.setHex(0x05070c); m.emissive.copy(team); m.roughness = 0.2; m.userData.role = 2; }
+            };
+            model.traverse(o => {
+                if (!o.isMesh) return;
+                const src = o.material, n = src.name || '';
+                const key = n + '|' + !!src.skinning + '|' + !!src.morphTargets;
+                if (!cache[key]) { cache[key] = src.clone(); style(cache[key], n); mats.push(cache[key]); }
+                o.material = cache[key];
+                o.castShadow = !isTouchDevice; o.frustumCulled = false;
+                o.raycast = () => {}; // hits use the hitboxes below
+            });
+            const mixer = new THREE.AnimationMixer(model);
+            const actions = {};
+            robotAsset.gltf.animations.forEach(c => { actions[c.name] = mixer.clipAction(c); });
+            if (actions.Death) { actions.Death.setLoop(THREE.LoopOnce); actions.Death.clampWhenFinished = true; }
+            if (actions.Punch) { actions.Punch.setLoop(THREE.LoopOnce); }
+            // Rifle in the right hand
+            const hand = model.getObjectByName('Palm2R') || model.getObjectByName('LowerArmR');
+            const gun = createWeapon('rifle');
+            model.updateMatrixWorld(true);
+            if (hand) {
+                const ws = new THREE.Vector3(); hand.getWorldScale(ws);
+                gun.scale.setScalar(1.15 / ws.x);
+                gun.rotation.set(Math.PI / 2, 0, Math.PI); gun.position.set(0, 0.05 / ws.x, 0);
+                hand.add(gun);
+            }
+            const flash = gun.userData.muzzleFlash || null;
+            if (flash) { flash.material = flash.material.clone(); flash.scale.setScalar(3); }
+            model.userData = { mixer, actions, state: '', mats, team, flash, flashT: 0, hitT: 0, fade: 1, isRobot: true, lodSkip: 0 };
+            playRobot(model, 'Idle', 0);
+            return model;
+        }
+        function playRobot(model, name, fade = 0.2) {
+            const u = model.userData, next = u.actions[name];
+            if (!next || u.state === name) return;
+            const prev = u.actions[u.state];
+            next.reset().setEffectiveWeight(1).fadeIn(fade).play();
+            if (prev) prev.fadeOut(fade);
+            u.state = name;
+        }
+        function robotShoot(model) {
+            const u = model.userData; if (!u || !u.isRobot) return;
+            u.flashT = 0.08;
+        }
+        function robotHit(model) {
+            const u = model.userData; if (!u || !u.isRobot) return;
+            u.hitT = 0.1;
+        }
+        function setRobotFade(model, f) {
+            const u = model.userData; u.fade = f;
+            u.mats.forEach(m => { m.opacity = f; m.depthWrite = f > 0.98; });
+        }
+        function updateRobot(model, state, dt) {
+            const u = model.userData;
+            // light LOD: far robots on phones animate at a lower rate
+            if (isTouchDevice && model.parent) {
+                const d = model.parent.position.distanceTo(yawObject.position);
+                if (d > 30 && (u.lodSkip = (u.lodSkip + 1) % 3) !== 0) { u.lodAcc = (u.lodAcc || 0) + dt; return; }
+                dt += u.lodAcc || 0; u.lodAcc = 0;
+            }
+            if (state === 'dead') playRobot(model, 'Death', 0.15);
+            else playRobot(model, state === 'run' ? 'Running' : 'Idle', 0.25);
+            u.mixer.update(dt);
+            if (u.flashT > 0) { u.flashT -= dt; if (u.flash) u.flash.material.opacity = u.flashT > 0 ? 1 : 0; }
+            const hit = u.hitT > 0; if (hit) u.hitT -= dt;
+            u.mats.forEach((m) => {
+                const r = m.userData.role;
+                if (hit) m.emissive.copy(_flashColor);
+                else if (r === 0) m.emissive.setRGB(0, 0, 0);
+                else if (r === 1) m.emissive.copy(u.team).multiplyScalar(0.55);
+                else m.emissive.copy(u.team);
+            });
+        }
+        function attachRobot(avatar, id, colorStr) {
+            const swap = () => {
+                if (!avatar.group.parent && avatar.removed) return;
+                const robot = buildRobot(avatar, id, colorStr);
+                avatar.group.remove(avatar.soldier);
+                avatar.group.add(robot);
+                avatar.soldier = robot;
+                // Hitboxes sized to the robot (invisible, raycast-only)
+                avatar.hitboxes.length = 0;
+                const hbMat = new THREE.MeshBasicMaterial({ visible: false });
+                const body = new THREE.Mesh(new THREE.BoxGeometry(0.8, 1.25, 0.6), hbMat); body.position.y = 0.72;
+                const head = new THREE.Mesh(new THREE.BoxGeometry(0.75, 0.6, 0.65), hbMat); head.position.y = 1.62;
+                body.userData = { playerId: id, isHitbox: true, part: 'body' };
+                head.userData = { playerId: id, isHitbox: true, part: 'head', isHead: true };
+                avatar.group.add(body, head);
+                avatar.hitboxes.push(body, head);
+                avatar.torso = body; avatar.head = head;
+                avatar.armorMat = robot.userData.mats.find(m => m.userData.role === 1) || robot.userData.mats[0]; avatar.visorMat = robot.userData.mats.find(m => m.userData.role === 2) || avatar.armorMat;
+                avatar.sprite.position.y = 2.45;
+            };
+            if (robotAsset.ready) swap(); else robotAsset.queue.push(swap);
+        }
+
         function createCharacterMesh(id, name, colorStr) {
             const color = new THREE.Color(colorStr || '#00f2fe').getHex();
             const soldier = createCyberSoldier(color);
@@ -634,13 +760,15 @@
             sprite.scale.set(2.4, 0.75, 1);
             group.add(sprite);
 
-            return {
+            const avatarObj = {
                 group, soldier, hitboxes,
                 torso: soldier.userData.bodyHitbox,
                 head: soldier.userData.headHitbox,
                 armorMat: neon, visorMat: neon,
                 sprite, canvasTex
             };
+            attachRobot(avatarObj, id, colorStr);
+            return avatarObj;
         }
 
         function updateAvatarNameplate(avatarObj, name, health, colorStr) {
@@ -963,6 +1091,21 @@
             if (!botsEnabled) return;
 
             bots.forEach(bot => {
+                if (bot.dead) {
+                    // death animation, then dissolve, then respawn
+                    bot.deadT += dt;
+                    updateSoldierAnimation(bot.avatar.soldier, 'dead', dt);
+                    if (bot.avatar.soldier.userData.isRobot && bot.deadT > 1.1) setRobotFade(bot.avatar.soldier, Math.max(0, 1 - (bot.deadT - 1.1) / 0.8));
+                    if (bot.deadT > 2.0) {
+                        bot.dead = false; bot.health = 100;
+                        const sp = pickSpawnPoint(); bot.x = sp.x; bot.z = sp.z;
+                        bot.avatar.group.position.set(bot.x, 0, bot.z);
+                        if (bot.avatar.soldier.userData.isRobot) { setRobotFade(bot.avatar.soldier, 1); bot.avatar.soldier.userData.state = ''; }
+                        bot.avatar.sprite.visible = true;
+                        updateAvatarNameplate(bot.avatar, bot.name, bot.health, bot.color);
+                    }
+                    return;
+                }
                 bot.changeDirTimer -= dt;
                 bot.fireTimer -= dt;
 
@@ -973,7 +1116,7 @@
                     bot.yaw = angleToPlayer + Math.PI + (Math.random() - 0.5) * 1.4;
                 }
 
-                const speed = 7.5;
+                const speed = bot.pinned ? 0 : 7.5;
                 const nx = bot.x - Math.sin(bot.yaw) * speed * dt;
                 const nz = bot.z - Math.cos(bot.yaw) * speed * dt;
 
@@ -988,12 +1131,14 @@
                     }
                 }
 
-                if (!blocked) {
+                if (bot.pinned) { blocked = bot.pinned === 'idle'; }
+                else if (!blocked) {
                     bot.x = nx;
                     bot.z = nz;
                 } else {
                     bot.yaw += Math.PI * 0.6;
                 }
+                if (bot.pinned) bot.yaw = bot.pinYaw;
 
                 bot.avatar.group.position.set(bot.x, 0, bot.z);
                 bot.avatar.group.rotation.y = bot.yaw;
@@ -1005,6 +1150,8 @@
                     const dist = Math.hypot(localPlayer.x - bot.x, localPlayer.z - bot.z);
                     if (dist < 42) {
                         const start = new THREE.Vector3(bot.x, 1.8, bot.z);
+                        const fl = bot.avatar.soldier.userData.flash;
+                        if (fl) { fl.getWorldPosition(start); robotShoot(bot.avatar.soldier); }
                         // Bot accuracy has intentional spread
                         const spreadX = (Math.random() - 0.5) * 3.5;
                         const spreadZ = (Math.random() - 0.5) * 3.5;
@@ -1029,7 +1176,7 @@
         function collectTargets() {
             const targets = [...obstacleMeshes, floorMesh];
             remotePlayers.forEach(rp => { if (!rp.data.isDead) targets.push(...rp.avatar.hitboxes); });
-            bots.forEach(bot => targets.push(...bot.avatar.hitboxes));
+            bots.forEach(bot => { if (!bot.dead) targets.push(...bot.avatar.hitboxes); });
             return targets;
         }
 
@@ -1057,13 +1204,13 @@
             if (bots.has(hitPlayerId)) {
                 const bot = bots.get(hitPlayerId);
                 bot.health -= dmg;
+                robotHit(bot.avatar.soldier);
                 if (bot.health <= 0) {
                     vfx.spawnDisintegration(new THREE.Vector3(bot.x, 1.4, bot.z));
                     bot.deaths++;
-                    bot.health = 100;
-                    const sp = pickSpawnPoint();
-                    bot.x = sp.x;
-                    bot.z = sp.z;
+                    bot.health = 0;
+                    bot.dead = true; bot.deadT = 0; bot.avatar.sprite.visible = false;
+                    if (!bot.avatar.soldier.userData.isRobot) { bot.deadT = 2.0; }
                     registerLocalKill(bot.name);
                 }
                 updateAvatarNameplate(bot.avatar, bot.name, bot.health, bot.color);
@@ -1933,6 +2080,7 @@
         }
 
         function updateSoldierAnimation(soldier, state, dt) {
+            if (soldier.userData && soldier.userData.isRobot) return updateRobot(soldier, state, dt);
             const L = soldier.userData.limbs;
             soldier.userData.animTime += dt;
             const t = soldier.userData.animTime;
@@ -2312,6 +2460,11 @@
                 yawObject.rotation.y = localPlayer.yaw; pitchObject.rotation.x = localPlayer.pitch;
                 return Math.round(bd);
             };
+            // test-only: pin bots in place for screenshots: __caPin([[x,z,yawDeg,'run'|'idle'], ...])
+            window.__caPin = (arr) => { let i = 0; bots.forEach(b => { const a = arr[i++]; if (!a) { b.pinned = null; return; } b.x = a[0]; b.z = a[1]; b.pinYaw = a[2] * Math.PI / 180; b.pinned = a[3] || 'run'; }); };
+            window.__caFlash = () => [...bots.values()].some(b => b.avatar.soldier.userData.flashT > 0);
+            window.__caDbg2 = () => { const b = [...bots.values()][0]; const m = b.avatar.soldier; const sk = []; m.traverse(o => { if (o.isSkinnedMesh) sk.push(o); }); const v = new THREE.Vector3(); const res = {}; sk.slice(0, 1).forEach(s => { s.skeleton.bones.filter(x => /Palm2R|HandR|Head$|LowerArmR/.test(x.name)).forEach(x => { x.getWorldPosition(v); res[x.name + (x === m.getObjectByName(x.name) ? '' : '*')] = v.toArray().map(n => +n.toFixed(2)); }); }); res.n = sk.length; res.bot = [b.x, b.z]; return res; };
+            window.__caDbg = () => { const out = []; bots.forEach(b => { const m = b.avatar.soldier; const h = m.getObjectByName && m.getObjectByName('Palm2R'); if (!h) return; const g = h.children.find(c => c.userData && c.userData.muzzleFlash); const v = new THREE.Vector3(), sc = new THREE.Vector3(); if (g) { g.getWorldPosition(v); g.getWorldScale(sc); } out.push({ hand: !!h, gun: !!g, pos: v.toArray().map(x => +x.toFixed(2)), scale: sc.toArray().map(x => +x.toFixed(3)), bot: [b.x, b.z] }); }); return out; };
             window.__caPose = (x, z, yawDeg, pitchDeg) => { localPlayer.x = x; localPlayer.z = z; localPlayer.yaw = yawDeg * Math.PI / 180; localPlayer.pitch = pitchDeg * Math.PI / 180; yawObject.position.set(x, localPlayer.y, z); yawObject.rotation.y = localPlayer.yaw; pitchObject.rotation.x = localPlayer.pitch; };
             window.__caYawAdd = (deg) => { localPlayer.yaw += deg * Math.PI / 180; yawObject.rotation.y = localPlayer.yaw; };
         }

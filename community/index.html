@@ -148,14 +148,16 @@
       art.innerHTML =
         img +
         '<div class="info">' +
+        '<div class="titlerow">' +
         '<a class="title" href="/community/p/?id=' + encodeURIComponent(row.id) + '"><strong>' + esc(row.name) + "</strong></a>" +
+        (row.contactable ? '<a class="cta2 top" href="/community/p/?id=' + encodeURIComponent(row.id) + '#contact" aria-label="Contact the developer of ' + esc(row.name) + '">Contact</a>' : "") +
+        "</div>" +
         '<span class="maker">' + makerLine(row) + "</span>" +
         (row.stage && row.stage !== 'Released' ? '<span class="stage-badge" style="display:inline-block;margin:4px 0 2px;padding:2px 8px;border-radius:999px;border:1px solid rgba(251,191,36,.55);background:rgba(251,191,36,.12);color:#fcd34d;font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;width:max-content">' + esc(row.stage) + "</span>" : "") +
         '<span class="blurb">' + esc(row.pitchShort) + "</span>" +
         '<div class="buyrow">' +
         '<span class="price">' + esc(row.priceLabel || "See site") + "</span>" +
         '<a class="cta" data-out="' + esc(row.id) + '" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener">Visit</a>' +
-        (row.contactable ? '<a class="cta2" href="/community/p/?id=' + encodeURIComponent(row.id) + '#contact" aria-label="Contact the developer of ' + esc(row.name) + '">Contact</a>' : "") +
         "</div></div>";
       grid.appendChild(art);
       if (window.duTrack) duTrack.observe(art, row.id);

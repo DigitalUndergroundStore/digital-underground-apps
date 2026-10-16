@@ -40,6 +40,32 @@ export function computeScore({ kills, deaths, bestStreak }) {
   return Math.max(0, kills * 100 + bestStreak * 50 - deaths * 25);
 }
 
+// Wave scoring (v2). The client mirrors this formula for display only; the server always recomputes.
+export const WAVE_KILLS = 8, WAVE_SECONDS = 60, MAX_WAVES = 40;
+export const killPoints = (wave) => Math.round(100 * (1 + 0.25 * (wave - 1)));
+export function computeWaveScore({ waveKills, headshots, bestStreak, deaths }) {
+  const kills = waveKills.reduce((a, b) => a + b, 0);
+  const killPts = waveKills.reduce((a, k, i) => a + k * killPoints(i + 1), 0);
+  let waveBonus = 0; for (let w = 1; w < waveKills.length; w++) waveBonus += 150 * w;
+  const s = bestStreak;
+  const streakBonus = Math.round(50 * s * (1 + 0.1 * Math.min(s, 10)));
+  const headshotBonus = 50 * headshots;
+  const total = Math.max(0, killPts + waveBonus + streakBonus + headshotBonus - 25 * deaths);
+  return { total, kills, killPts, waveBonus, streakBonus, headshotBonus, wave: waveKills.length };
+}
+// Plausibility for a wave run: waves advance at WAVE_KILLS kills or WAVE_SECONDS seconds.
+export function checkWaveRun({ waveKills, headshots, bestStreak, time }) {
+  if (!Array.isArray(waveKills) || waveKills.length < 1 || waveKills.length > MAX_WAVES) return "Invalid waves.";
+  if (waveKills.some((k) => !Number.isInteger(k) || k < 0 || k > WAVE_KILLS)) return "Invalid wave kills.";
+  const kills = waveKills.reduce((a, b) => a + b, 0);
+  const timedWaves = waveKills.slice(0, -1).filter((k) => k < WAVE_KILLS).length;
+  if (timedWaves * WAVE_SECONDS > time + 5) return "Waves don't add up for the time played.";
+  if (kills > Math.floor(time / 1.5) + 2) return "Too many kills for the time played.";
+  if (!Number.isInteger(headshots) || headshots < 0 || headshots > kills) return "Invalid headshots.";
+  if (bestStreak > kills) return "Best streak can't exceed kills.";
+  return null;
+}
+
 export function isoWeek(d = new Date()) {
   const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
   const day = t.getUTCDay() || 7;
@@ -60,7 +86,7 @@ export async function readBoard(kv, which) {
   const b = await kv.get(boardKey(which), "json");
   return Array.isArray(b) ? b : [];
 }
-export const publicEntry = (e, i) => ({ rank: i + 1, name: e.name, score: e.score, kills: e.kills, deaths: e.deaths, streak: e.streak, time: e.time, at: e.at });
+export const publicEntry = (e, i) => ({ rank: i + 1, name: e.name, score: e.score, kills: e.kills, deaths: e.deaths, streak: e.streak, wave: e.wave || null, time: e.time, at: e.at });
 export function youOf(board, pidh) {
   const i = pidh ? board.findIndex((e) => e.pidh === pidh) : -1;
   return i < 0 ? null : publicEntry(board[i], i);

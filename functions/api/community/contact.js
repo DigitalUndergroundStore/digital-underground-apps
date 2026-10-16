@@ -1,4 +1,4 @@
-import { getKv, json, kvGetListing, listingContactAddress, sendCommunityEmail } from "../../_lib/community.js";
+import { getKv, json, kvGetListing, listingContactAddress, ownerAlertEmail, sendCommunityEmail } from "../../_lib/community.js";
 
 /**
  * POST /api/community/contact — private "Contact the developer" form.
@@ -37,7 +37,8 @@ export async function onRequest({ request, env }) {
   try { b = await request.json(); } catch { return json({ ok: false, error: "Bad request." }, 400); }
   if (b.website) return json({ ok: true }); // honeypot: pretend success
   const id = String(b.id || "");
-  if (!/^cm_[a-z0-9_]{4,40}$/.test(id)) return json({ ok: false, error: "Listing not found." }, 404);
+  const isAds = id === "cyberarena-ads";
+  if (!isAds && !/^cm_[a-z0-9_]{4,40}$/.test(id)) return json({ ok: false, error: "Listing not found." }, 404);
   const name = clip(b.name, 100), email = clip(b.email, 200).toLowerCase();
   const message = String(b.message || "").replace(/\r/g, "").trim().slice(0, 5000);
   if (!name) return json({ ok: false, error: "Please add your name." }, 400);
@@ -46,6 +47,13 @@ export async function onRequest({ request, env }) {
   const kv = getKv(env);
   const ip = request.headers.get("CF-Connecting-IP") || "unknown";
   if (await limited(kv, ip)) return json({ ok: false, error: "Too many messages. Please try again later." }, 429);
+  if (isAds) {
+    const to = ownerAlertEmail(env);
+    const text = ["New CyberArena billboard enquiry from digitalundergroundstore.com/advertise.", "", `From: ${name} <${email}>`, `Company / brand: ${clip(b.company, 120) || "-"}`, "", message, "", "Reply to this email to answer them directly."].join("\n");
+    let r = { sent: false };
+    try { r = await sendCommunityEmail(env, { to, subject: `CyberArena ad space - ${name}`, text, replyTo: email }); } catch {}
+    return r && r.sent ? json({ ok: true }) : json({ ok: false, error: "Couldn't send right now. Please try again." }, 502);
+  }
   const row = await findListing(request, kv, id);
   const to = listingContactAddress(env, row);
   if (!row || !to) return json({ ok: false, error: "This developer can't be contacted here." }, 404);

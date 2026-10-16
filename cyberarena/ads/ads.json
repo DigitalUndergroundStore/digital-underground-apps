@@ -1,0 +1,10 @@
+{
+  "_help": "One entry per billboard slot (5 slots). image = URL of a 2:1 picture (1024x512 webp recommended); link = optional URL opened when a player clicks the board.",
+  "slots": [
+    { "image": "/cyberarena/ads/store.webp",   "link": "https://digitalundergroundstore.com/" },
+    { "image": "/cyberarena/ads/pantry.webp",  "link": "https://digitalundergroundstore.com/community/" },
+    { "image": "/cyberarena/ads/tracker.webp", "link": "https://digitalundergroundstore.com/community/" },
+    { "image": "/cyberarena/ads/market.webp",  "link": "https://digitalundergroundstore.com/community/" },
+    { "image": "/cyberarena/ads/adhere.webp",  "link": "https://digitalundergroundstore.com/advertise/" }
+  ]
+}

@@ -1,4 +1,4 @@
-import { json, kvOf, ipOf, rateOk, kvRateOk, cleanCallsign, computeScore, readBoard, boardKey, publicEntry, youOf, sha, randHex } from "../../_lib/cyberarena.js";
+import { json, kvOf, ipOf, rateOk, kvRateOk, cleanCallsign, computeScore, computeWaveScore, checkWaveRun, readBoard, boardKey, publicEntry, youOf, sha, randHex } from "../../_lib/cyberarena.js";
 
 const KEEP = 100;
 const int = (v) => (Number.isFinite(+v) ? Math.floor(+v) : NaN);
@@ -71,12 +71,21 @@ export async function onRequest({ request, env }) {
   if (b.life === true && deaths !== 1) return json({ error: "A life run has exactly one death." }, 422);
   // Plausibility: bots respawn far away and the fastest weapon needs ~0.6 s per kill, so
   // more than one kill every 2 s is not credible. Respawn takes 3 s.
-  if (kills > Math.floor(time / 2) + 1) return json({ error: "Too many kills for the match time." }, 422);
+  const waveRun = Array.isArray(b.waveKills);
+  let breakdown = null;
+  if (waveRun) {
+    const wk = b.waveKills.map(int), hs = int(b.headshots || 0);
+    const err = checkWaveRun({ waveKills: wk, headshots: hs, bestStreak: streak, time });
+    if (err) return json({ error: err }, 422);
+    if (wk.reduce((x, y) => x + y, 0) !== kills) return json({ error: "Kills don't match the waves." }, 422);
+    breakdown = computeWaveScore({ waveKills: wk, headshots: hs, bestStreak: streak, deaths });
+    breakdown.headshots = hs;
+  } else if (kills > Math.floor(time / 2) + 1) return json({ error: "Too many kills for the match time." }, 422);
   if (deaths > Math.floor(time / 3) + 1) return json({ error: "Too many deaths for the match time." }, 422);
   if (streak > kills) return json({ error: "Best streak can't exceed kills." }, 422);
-  if (kills === 0 && deaths === 0) return json({ error: "Nothing to submit yet. Get a kill first." }, 422);
+  if (!waveRun && kills === 0 && deaths === 0) return json({ error: "Nothing to submit yet. Get a kill first." }, 422);
 
-  const entry = { id: randHex(6), name: cs.name, score: computeScore({ kills, deaths, bestStreak: streak }), kills, deaths, streak, time, at: Date.now(), pidh: await sha(pid) };
+  const entry = { id: randHex(6), name: cs.name, score: breakdown ? breakdown.total : computeScore({ kills, deaths, bestStreak: streak }), kills, deaths, streak, wave: breakdown ? breakdown.wave : null, time, at: Date.now(), pidh: await sha(pid) };
   // Zero-point lives are accepted (token consumed) but don't add a row to the board.
   const counted = entry.score > 0;
   const all = counted ? await insert(kv, "all", entry) : await readBoard(kv, "all");
@@ -84,7 +93,7 @@ export async function onRequest({ request, env }) {
   return json({
     ok: true,
     counted,
-    submitted: { name: entry.name, score: entry.score, kills, deaths, streak, time },
+    submitted: { name: entry.name, score: entry.score, kills, deaths, streak, time, wave: entry.wave, breakdown },
     all: { top: all.slice(0, 25).map(publicEntry), you: youOf(all, entry.pidh) },
     weekly: { top: weekly.slice(0, 25).map(publicEntry), you: youOf(weekly, entry.pidh) },
   });

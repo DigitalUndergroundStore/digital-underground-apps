@@ -87,6 +87,8 @@
     <!-- HUD Overlay (minimal: health, ammo, K/D/streak, crosshair) -->
     <div id="hud" class="fixed inset-0 pointer-events-none z-20 hidden flex-col justify-between">
         <div id="hud-dmg-ring" class="absolute top-1/2 left-1/2 w-40 h-40 rounded-full border-t-4 border-[#ff2a5f] opacity-0 transition-opacity duration-150 pointer-events-none" style="transform: translate(-50%, -50%);"></div>
+        <div id="wave-banner" class="absolute top-[28%] left-1/2 -translate-x-1/2 font-cyber font-black text-3xl sm:text-5xl tracking-[0.3em] text-fuchsia-300 [text-shadow:0_0_18px_#d946ef,0_0_4px_#fff] opacity-0 transition-opacity duration-500 pointer-events-none whitespace-nowrap">WAVE 1</div>
+        <div id="pts-pop" class="absolute top-[42%] left-1/2 -translate-x-1/2 font-mono font-bold text-lg text-amber-300 [text-shadow:0_0_8px_#f59e0b] opacity-0 pointer-events-none whitespace-nowrap"></div>
         <div id="hud-streak" class="absolute top-16 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-[#070b14]/70 border border-[#ff2a5f]/70 text-[#ff2a5f] text-xs sm:text-sm font-bold font-mono tracking-widest uppercase opacity-0 transition-opacity duration-300 whitespace-nowrap pointer-events-none">ELIMINATED</div>
 
         <!-- Top-left: health + small counter -->
@@ -100,6 +102,9 @@
                 <span title="Kills">K <b id="stat-kills" class="text-white">0</b></span>
                 <span title="Deaths">D <b id="stat-deaths" class="text-white">0</b></span>
                 <span title="Streak">&#9650; <b id="stat-streak" class="text-amber-400">0</b></span>
+                <span title="Wave" class="ml-auto">W <b id="stat-wave" class="text-fuchsia-300">1</b></span>
+            </div>
+            <div class="mt-0.5 text-[11px] text-slate-400 flex justify-between"><span>SCORE</span><b id="stat-score" class="text-cyan-300">0</b>
             </div>
         </div>
         <!-- Minimap: desktop only -->
@@ -163,8 +168,8 @@
             <div id="joystick-knob" class="w-10 h-10 rounded-full bg-cyan-400/40 pointer-events-none"></div>
         </div>
         <div id="mobile-ammo" class="absolute bottom-[11.5rem] right-4 font-mono text-[#00f2fe]/90 text-xs bg-[#070b14]/45 px-1.5 py-0.5 rounded pointer-events-none">RIFLE 30/30</div>
-        <button id="mobile-weapon-btn" aria-label="Switch weapon" class="mbtn absolute bottom-[7.25rem] right-[7.5rem] w-10 h-10 text-violet-300"><i class="fas fa-rotate text-sm"></i></button>
-        <button id="mobile-reload-btn" aria-label="Reload" class="mbtn absolute bottom-5 right-[8.25rem] w-10 h-10 text-amber-300 font-mono font-bold text-xs">R</button>
+        <button id="mobile-weapon-btn" aria-label="Switch weapon" class="mbtn absolute bottom-5 right-[8.25rem] w-10 h-10 text-violet-300"><i class="fas fa-rotate text-sm"></i></button>
+        <button id="mobile-reload-btn" aria-label="Reload" class="mbtn absolute bottom-[7.25rem] right-[7.5rem] w-10 h-10 text-amber-300 font-mono font-bold text-xs">R</button>
         <button id="mobile-jump-btn" aria-label="Jump" class="mbtn absolute bottom-[8rem] right-4 w-11 h-11 text-cyan-300"><i class="fas fa-arrow-up"></i></button>
         <button id="mobile-fire-btn" aria-label="Fire (drag to aim)" class="mbtn absolute bottom-5 right-4 w-[6.3rem] h-[6.3rem] !bg-rose-600/45 !border-rose-400/60 text-white"><i class="fas fa-crosshairs text-2xl"></i></button>
     </div>
@@ -267,21 +272,38 @@
     </div>
 
     <!-- Respawn Screen Overlay -->
-    <div id="respawn-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-rose-950/80 backdrop-blur-md p-4">
-        <div class="bg-slate-900 border-2 border-rose-500/60 rounded-2xl max-w-sm w-full p-6 text-center shadow-[0_0_50px_rgba(244,63,94,0.3)]">
-            <div class="w-14 h-14 rounded-full bg-rose-500/20 border border-rose-500/40 flex items-center justify-center mx-auto mb-3 text-rose-400">
-                <i class="fas fa-skull-crossbones text-2xl"></i>
+    <div id="respawn-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#070b14]/55 backdrop-blur-[3px] p-3 sm:p-6 overflow-y-auto">
+        <div class="relative w-full max-w-md landscape:max-w-2xl my-auto bg-[#070b14]/85 border border-[#ff2a5f]/70 rounded-2xl p-4 sm:p-6 shadow-[0_0_40px_rgba(255,42,95,0.35),inset_0_0_30px_rgba(0,242,254,0.06)]">
+            <div class="text-center">
+                <h2 class="font-cyber font-black text-3xl sm:text-4xl tracking-[0.2em] text-[#ff2a5f] [text-shadow:0_0_14px_#ff2a5f]">GAME OVER</h2>
+                <p id="eliminated-by-text" class="text-rose-200/80 text-xs sm:text-sm mt-1 font-mono">Eliminated by Enemy Operative</p>
+                <p class="mt-1 font-cyber text-sm tracking-widest text-fuchsia-300">REACHED WAVE <span id="go-wave">1</span></p>
+                <span id="respawn-timer" class="hidden"></span>
             </div>
-            <h2 class="font-cyber font-black text-2xl text-white tracking-wider">SYSTEM OFFLINE</h2>
-            <p id="eliminated-by-text" class="text-rose-300 text-sm mt-1">Eliminated by Enemy Operative</p>
-            
-            <div class="my-6">
-                <div class="text-xs uppercase font-cyber text-slate-400 tracking-widest">Reconstructing In</div>
-                <div id="respawn-timer" class="font-cyber font-black text-5xl text-amber-400 mt-1">3</div>
-            </div>
-            <div id="death-score" class="hidden text-left border-t border-slate-700/70 pt-3">
-                <div class="flex items-baseline justify-between"><span id="ds-status" class="text-[11px] font-mono text-emerald-300">Score submitted</span><span class="font-mono text-sm"><b id="ds-score" class="text-cyan-300">0</b> pts · <b id="ds-rank" class="text-fuchsia-300">#–</b></span></div>
-                <div id="ds-top" class="mt-2 space-y-0.5 text-[11px] font-mono"></div>
+            <div class="landscape:grid landscape:grid-cols-2 landscape:gap-4 mt-3">
+                <div>
+                    <div class="grid grid-cols-2 gap-2 font-mono text-center">
+                        <div class="rounded-lg border border-cyan-400/30 bg-cyan-500/5 py-2"><div class="text-[10px] text-slate-400 tracking-widest">KILLS</div><div id="go-kills" class="text-2xl font-bold text-cyan-300">0</div></div>
+                        <div class="rounded-lg border border-amber-400/30 bg-amber-500/5 py-2"><div class="text-[10px] text-slate-400 tracking-widest">BEST STREAK</div><div id="go-streak" class="text-2xl font-bold text-amber-300">0</div></div>
+                    </div>
+                    <div id="go-breakdown" class="mt-2 grid grid-cols-2 gap-x-3 text-[11px] font-mono text-slate-300">
+                        <span>Kills</span><span id="gb-kills" class="text-right text-cyan-300">0</span>
+                        <span>Wave bonus</span><span id="gb-wave" class="text-right text-fuchsia-300">0</span>
+                        <span>Streak bonus</span><span id="gb-streak" class="text-right text-amber-300">0</span>
+                        <span>Headshots (<span id="gb-hsn">0</span>)</span><span id="gb-hs" class="text-right text-emerald-300">0</span>
+                        <span>Death</span><span class="text-right text-rose-300">−25</span>
+                        <span class="font-bold text-white border-t border-slate-700/70 pt-0.5">Total</span><span id="gb-total" class="text-right font-bold text-white border-t border-slate-700/70 pt-0.5">0</span>
+                    </div>
+                    <div id="death-score" class="hidden mt-3 border-t border-slate-700/70 pt-2.5">
+                        <div class="flex items-baseline justify-between"><span id="ds-status" class="text-[11px] font-mono text-emerald-300">Score submitted</span><span class="font-mono text-sm"><b id="ds-score" class="text-cyan-300">0</b> pts · <b id="ds-rank" class="text-fuchsia-300">#–</b></span></div>
+                        <div id="ds-top" class="mt-1.5 space-y-0.5 text-[11px] font-mono"></div>
+                    </div>
+                </div>
+                <div class="mt-4 landscape:mt-0 flex flex-col gap-2.5">
+                    <button id="go-play" class="w-full min-h-[56px] rounded-xl font-cyber font-bold tracking-widest text-base bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 shadow-[0_0_22px_rgba(6,182,212,0.45)] active:scale-[0.98]"><i class="fas fa-rotate-right mr-2"></i>PLAY AGAIN</button>
+                    <button id="go-board" class="w-full min-h-[52px] rounded-xl font-cyber font-bold tracking-widest text-sm border border-fuchsia-400/60 text-fuchsia-200 bg-fuchsia-500/10 active:scale-[0.98]"><i class="fas fa-trophy mr-2"></i>LEADERBOARD</button>
+                    <button id="go-menu" class="w-full min-h-[52px] rounded-xl font-cyber font-bold tracking-widest text-sm border border-slate-500/60 text-slate-200 bg-slate-800/40 active:scale-[0.98]"><i class="fas fa-bars mr-2"></i>MAIN MENU</button>
+                </div>
             </div>
         </div>
     </div>
@@ -1033,11 +1055,31 @@
         // ==========================================
         // 7. AI PRACTICE BOTS (Instant Action)
         // ==========================================
+        const WAVE_KILLS = 8, WAVE_SECONDS = 60;
+        const killPoints = (w) => Math.round(100 * (1 + 0.25 * (w - 1)));
+        const life = { wave: 1, waveStart: performance.now(), waveKills: [0], headshots: 0, points: 0 };
         const botConfigs = [
             { id: 'bot-alpha', name: 'CYBER-BOT-01', color: '#ff2a5f' },
             { id: 'bot-beta',  name: 'VORTEX-AI-02', color: '#f59e0b' },
             { id: 'bot-gamma', name: 'PHANTOM-03',   color: '#a855f7' }
         ];
+        // Extra bots join in later waves (max 6 total)
+        const extraBotConfigs = [
+            { id: 'bot-delta', name: 'NOVA-04',  color: '#22c55e' },
+            { id: 'bot-eps',   name: 'HEX-05',   color: '#38bdf8' },
+            { id: 'bot-zeta',  name: 'RAZOR-06', color: '#f97316' }
+        ];
+        function spawnBot(cfg) {
+            if (bots.has(cfg.id)) return;
+            const sp = pickSpawnPoint();
+            const avatar = createCharacterMesh(cfg.id, cfg.name, cfg.color);
+            avatar.group.position.set(sp.x, 0, sp.z);
+            scene.add(avatar.group);
+            const d = waveDifficulty(life.wave);
+            bots.set(cfg.id, { id: cfg.id, name: cfg.name, color: cfg.color, x: sp.x, y: PLAYER_HEIGHT, z: sp.z, yaw: Math.random() * Math.PI * 2, health: d.health, maxHealth: d.health, kills: 0, deaths: 0, avatar, changeDirTimer: 0, fireTimer: 1.5 + Math.random() * 2, tier: 0 });
+            applyBotTier(bots.get(cfg.id));
+        }
+        function removeBot(id) { const b = bots.get(id); if (!b) return; scene.remove(b.avatar.group); bots.delete(id); }
 
         function enablePracticeBots(enable) {
             botsEnabled = enable;
@@ -1046,29 +1088,8 @@
             const bb = document.getElementById('toggle-bots-btn'); bb.setAttribute('aria-pressed', String(botsEnabled)); bb.title = btnText.textContent;
 
             if (botsEnabled) {
-                botConfigs.forEach(cfg => {
-                    if (!bots.has(cfg.id)) {
-                        const sp = pickSpawnPoint();
-                        const avatar = createCharacterMesh(cfg.id, cfg.name, cfg.color);
-                        avatar.group.position.set(sp.x, 0, sp.z);
-                        scene.add(avatar.group);
-                        bots.set(cfg.id, {
-                            id: cfg.id,
-                            name: cfg.name,
-                            color: cfg.color,
-                            x: sp.x,
-                            y: PLAYER_HEIGHT,
-                            z: sp.z,
-                            yaw: Math.random() * Math.PI * 2,
-                            health: 100,
-                            kills: 0,
-                            deaths: 0,
-                            avatar,
-                            changeDirTimer: 0,
-                            fireTimer: 1.5 + Math.random() * 2
-                        });
-                    }
-                });
+                botConfigs.forEach(spawnBot);
+                syncBotCount();
             } else {
                 bots.forEach(bot => scene.remove(bot.avatar.group));
                 bots.clear();
@@ -1097,12 +1118,13 @@
                     updateSoldierAnimation(bot.avatar.soldier, 'dead', dt);
                     if (bot.avatar.soldier.userData.isRobot && bot.deadT > 1.1) setRobotFade(bot.avatar.soldier, Math.max(0, 1 - (bot.deadT - 1.1) / 0.8));
                     if (bot.deadT > 2.0) {
-                        bot.dead = false; bot.health = 100;
+                        { const d = waveDifficulty(life.wave); bot.maxHealth = d.health; bot.health = d.health; applyBotTier(bot); }
+                        bot.dead = false;
                         const sp = pickSpawnPoint(); bot.x = sp.x; bot.z = sp.z;
                         bot.avatar.group.position.set(bot.x, 0, bot.z);
                         if (bot.avatar.soldier.userData.isRobot) { setRobotFade(bot.avatar.soldier, 1); bot.avatar.soldier.userData.state = ''; }
                         bot.avatar.sprite.visible = true;
-                        updateAvatarNameplate(bot.avatar, bot.name, bot.health, bot.color);
+                        updateAvatarNameplate(bot.avatar, bot.name, 100, bot.color);
                     }
                     return;
                 }
@@ -1116,7 +1138,8 @@
                     bot.yaw = angleToPlayer + Math.PI + (Math.random() - 0.5) * 1.4;
                 }
 
-                const speed = bot.pinned ? 0 : 7.5;
+                const diff = waveDifficulty(life.wave);
+                const speed = (bot.pinned || localPlayer.isDead) ? 0 : diff.speed;
                 const nx = bot.x - Math.sin(bot.yaw) * speed * dt;
                 const nz = bot.z - Math.cos(bot.yaw) * speed * dt;
 
@@ -1131,7 +1154,8 @@
                     }
                 }
 
-                if (bot.pinned) { blocked = bot.pinned === 'idle'; }
+                if (localPlayer.isDead) { blocked = true; }
+                else if (bot.pinned) { blocked = bot.pinned === 'idle'; }
                 else if (!blocked) {
                     bot.x = nx;
                     bot.z = nz;
@@ -1146,15 +1170,15 @@
 
                 // Bot occasionally fires a warning/suppressing laser
                 if (bot.fireTimer <= 0 && !localPlayer.isDead && isGameActive) {
-                    bot.fireTimer = 2.4 + Math.random() * 2.0;
+                    bot.fireTimer = (2.4 + Math.random() * 2.0) * diff.fireMul;
                     const dist = Math.hypot(localPlayer.x - bot.x, localPlayer.z - bot.z);
                     if (dist < 42) {
                         const start = new THREE.Vector3(bot.x, 1.8, bot.z);
                         const fl = bot.avatar.soldier.userData.flash;
                         if (fl) { fl.getWorldPosition(start); robotShoot(bot.avatar.soldier); }
                         // Bot accuracy has intentional spread
-                        const spreadX = (Math.random() - 0.5) * 3.5;
-                        const spreadZ = (Math.random() - 0.5) * 3.5;
+                        const spreadX = (Math.random() - 0.5) * diff.spread;
+                        const spreadZ = (Math.random() - 0.5) * diff.spread;
                         const end = new THREE.Vector3(localPlayer.x + spreadX, localPlayer.y - 0.5, localPlayer.z + spreadZ);
                         spawnLaserBeam(start, end, bot.color);
 
@@ -1211,9 +1235,9 @@
                     bot.health = 0;
                     bot.dead = true; bot.deadT = 0; bot.avatar.sprite.visible = false;
                     if (!bot.avatar.soldier.userData.isRobot) { bot.deadT = 2.0; }
-                    registerLocalKill(bot.name);
+                    registerLocalKill(bot.name, isHeadshot);
                 }
-                updateAvatarNameplate(bot.avatar, bot.name, bot.health, bot.color);
+                updateAvatarNameplate(bot.avatar, bot.name, 100 * bot.health / (bot.maxHealth || 100), bot.color);
             } else if (remotePlayers.has(hitPlayerId)) {
                 emitCombatEvent({ type: 'hit', targetId: hitPlayerId, attackerId: localPlayer.id, attackerName: localPlayer.name, damage: dmg });
             }
@@ -1221,7 +1245,95 @@
             return hitPoint;
         }
 
-        function registerLocalKill(victimName) {
+        // ---------- Waves + wave scoring (mirrors functions/_lib/cyberarena.js) ----------
+        function waveDifficulty(w) {
+            const k = Math.min(w, 9) - 1; // wave 1 = original values; effects cap at wave 9
+            return {
+                spread: Math.max(1.7, 3.5 - 0.23 * k),        // smaller = more accurate (hit if within ±0.85)
+                fireMul: Math.max(0.55, 1 - 0.06 * k),        // shorter delay between shots
+                health: 100 + 15 * k,
+                speed: Math.min(10.5, 7.5 + 0.38 * k),
+                bots: Math.min(6, 3 + Math.floor((w - 1) / 2))
+            };
+        }
+        const tierOf = (w) => w <= 2 ? 1 : w <= 4 ? 2 : w <= 6 ? 3 : 4;
+        function applyBotTier(bot) {
+            const isBoss = life.wave >= 7 && bot.id === 'bot-alpha';
+            const tier = isBoss ? 4 : Math.min(3, tierOf(life.wave));
+            if (bot.tier === tier) return;
+            bot.tier = tier;
+            const scale = [1, 1, 1.08, 1.15, 1.45][tier];
+            bot.avatar.group.scale.setScalar(scale);
+            const u = bot.avatar.soldier.userData;
+            if (!u || !u.isRobot) return;
+            const red = new THREE.Color(0xff1a3c);
+            u.team = tier >= 3 ? red : new THREE.Color(bot.color);
+            u.mats.forEach(m => {
+                const r = m.userData.role;
+                if (r === 0) { m.color.setHex([0, 0x8a94ab, 0x4b5568, 0x1b1f2a, 0x121014][tier]); m.metalness = [0, 0.55, 0.85, 0.9, 0.95][tier]; m.roughness = [0, 0.32, 0.25, 0.22, 0.2][tier]; }
+                if (r === 1) m.color.copy(tier >= 3 ? new THREE.Color(0x3a0610) : new THREE.Color(bot.color));
+            });
+        }
+        function syncBotCount() {
+            if (!botsEnabled) return;
+            const want = waveDifficulty(life.wave).bots;
+            extraBotConfigs.forEach((cfg, i) => { if (3 + i < want) spawnBot(cfg); else removeBot(cfg.id); });
+            bots.forEach(b => applyBotTier(b));
+            refreshScoreboardUI();
+        }
+        function showWaveBanner() {
+            const el = document.getElementById('wave-banner');
+            el.textContent = `WAVE ${life.wave}`; el.style.opacity = '1';
+            clearTimeout(showWaveBanner.t); showWaveBanner.t = setTimeout(() => { el.style.opacity = '0'; }, 1800);
+        }
+        function popPoints(text) {
+            const el = document.getElementById('pts-pop');
+            el.textContent = text; el.style.transition = 'none'; el.style.opacity = '1'; el.style.transform = 'translate(-50%, 0)';
+            requestAnimationFrame(() => { el.style.transition = 'opacity .9s ease, transform .9s ease'; el.style.opacity = '0'; el.style.transform = 'translate(-50%, -28px)'; });
+        }
+        function refreshScoreHUD() {
+            document.getElementById('stat-wave').textContent = life.wave;
+            document.getElementById('stat-score').textContent = life.points.toLocaleString();
+        }
+        function advanceWave() {
+            life.points += 150 * life.wave; // wave-clear bonus
+            life.wave++; life.waveKills.push(0); life.waveStart = performance.now();
+            const d = waveDifficulty(life.wave);
+            bots.forEach(b => { if (!b.dead) { b.health = Math.round(d.health * (b.health / (b.maxHealth || 100))); b.maxHealth = d.health; } });
+            syncBotCount(); showWaveBanner(); refreshScoreHUD();
+            popPoints(`WAVE CLEAR +${150 * (life.wave - 1)}`);
+        }
+        function onWaveKill(isHead) {
+            const w = life.wave;
+            life.waveKills[w - 1]++;
+            if (isHead) life.headshots++;
+            const pts = killPoints(w) + (isHead ? 50 : 0);
+            life.points += pts; refreshScoreHUD();
+            popPoints(`+${pts}${isHead ? ' HEADSHOT' : ''}`);
+            if (life.waveKills[w - 1] >= WAVE_KILLS) advanceWave();
+        }
+        function resetWaves() {
+            life.wave = 1; life.waveStart = performance.now(); life.waveKills = [0]; life.headshots = 0; life.points = 0;
+            syncBotCount(); refreshScoreHUD();
+        }
+        function tickWaves() {
+            const now = performance.now();
+            if (!isGameActive || localPlayer.isDead) { life.waveStart += now - (tickWaves.last || now); tickWaves.last = now; return; }
+            tickWaves.last = now;
+            if (performance.now() - life.waveStart > WAVE_SECONDS * 1000) advanceWave();
+        }
+        function scoreBreakdown(bestStreak) {
+            const killPts = life.waveKills.reduce((a, k, i) => a + k * killPoints(i + 1), 0);
+            let waveBonus = 0; for (let w = 1; w < life.waveKills.length; w++) waveBonus += 150 * w;
+            const s = bestStreak, streakBonus = Math.round(50 * s * (1 + 0.1 * Math.min(s, 10)));
+            const hs = 50 * life.headshots;
+            return { killPts, waveBonus, streakBonus, hs, total: Math.max(0, killPts + waveBonus + streakBonus + hs - 25) };
+        }
+        window.__caWave = () => ({ wave: life.wave, waveKills: life.waveKills.slice(), points: life.points, bots: bots.size });
+        window.__caNextWave = () => { if (location.hash === '#ca-test') advanceWave(); };
+
+        function registerLocalKill(victimName, isHead) {
+            onWaveKill(!!isHead);
             localPlayer.kills++;
             localPlayer.streak++;
             localPlayer.bestStreak = Math.max(localPlayer.bestStreak || 0, localPlayer.streak);
@@ -1288,17 +1400,22 @@
             respawnModal.classList.remove('hidden');
             respawnModal.classList.add('flex');
 
-            let count = 3;
-            timerEl.textContent = count;
-            const interval = setInterval(() => {
-                count--;
-                if (count > 0) {
-                    timerEl.textContent = count;
-                } else {
-                    clearInterval(interval);
-                    respawnLocalPlayer();
-                }
-            }, 1000);
+            // No auto-respawn: show the Game Over menu
+            const lifeKills = Math.max(0, localPlayer.kills - (typeof lifeKillBase === 'number' ? lifeKillBase : 0));
+            document.getElementById('go-kills').textContent = lifeKills;
+            document.getElementById('go-streak').textContent = Math.min(lifeKills, lifeStreak);
+            document.getElementById('go-wave').textContent = life.wave;
+            { const bd = scoreBreakdown(Math.min(lifeKills, lifeStreak));
+              document.getElementById('gb-kills').textContent = bd.killPts.toLocaleString();
+              document.getElementById('gb-wave').textContent = bd.waveBonus.toLocaleString();
+              document.getElementById('gb-streak').textContent = bd.streakBonus.toLocaleString();
+              document.getElementById('gb-hsn').textContent = life.headshots;
+              document.getElementById('gb-hs').textContent = (50 * life.headshots).toLocaleString();
+              document.getElementById('gb-total').textContent = bd.total.toLocaleString(); }
+            weaponState.isTriggerHeld = false;
+            if (document.pointerLockElement) document.exitPointerLock?.();
+            document.getElementById('mobile-controls').classList.add('hidden');
+            setTimeout(() => document.getElementById('go-play').focus({ preventScroll: true }), 50);
         }
 
         function respawnLocalPlayer() {
@@ -2179,23 +2296,44 @@
             // Holo signs on the perimeter walls
             const signs = [];
             // Wide dedicated canvas so CYBER and ARENA get a real gap (no overlap).
-            const sc = document.createElement('canvas'); sc.width = 1024; sc.height = 256;
-            {
-                const ctx = sc.getContext('2d');
-                ctx.fillStyle = '#070b14'; ctx.fillRect(0, 0, 1024, 256);
-                ctx.strokeStyle = '#ff2a5f'; ctx.lineWidth = 8; ctx.shadowColor = '#ff2a5f'; ctx.shadowBlur = 16; ctx.strokeRect(12, 12, 1000, 232);
-                ctx.font = 'bold 120px Orbitron, sans-serif'; ctx.textBaseline = 'middle';
-                const gap = 56, w1 = ctx.measureText('CYBER').width, w2 = ctx.measureText('ARENA').width;
-                const scale = Math.min(1, 880 / (w1 + gap + w2));
-                ctx.save(); ctx.translate(512, 132); ctx.scale(scale, scale);
-                const x0 = -(w1 + gap + w2) / 2;
-                ctx.textAlign = 'left';
-                ctx.fillStyle = '#00f2fe'; ctx.shadowColor = '#00f2fe'; ctx.shadowBlur = 24; ctx.fillText('CYBER', x0, 0);
-                ctx.fillStyle = '#ff2a5f'; ctx.shadowColor = '#ff2a5f'; ctx.fillText('ARENA', x0 + w1 + gap, 0);
+            const sc = document.createElement('canvas'); sc.width = 2048; sc.height = 512;   // HD sign texture
+            const drawSign = (ctx, glowOnly) => {
+                ctx.clearRect(0, 0, 2048, 512);
+                if (!glowOnly) { ctx.fillStyle = '#070b14'; ctx.fillRect(0, 0, 2048, 512);
+                    ctx.fillStyle = 'rgba(255,255,255,0.035)'; for (let y = 0; y < 512; y += 6) ctx.fillRect(0, y, 2048, 2); }
+                ctx.strokeStyle = '#ff2a5f'; ctx.lineWidth = 14; ctx.shadowColor = '#ff2a5f'; ctx.shadowBlur = glowOnly ? 60 : 28; ctx.strokeRect(24, 24, 2000, 464);
+                ctx.font = '900 240px Orbitron, sans-serif'; ctx.textBaseline = 'middle';
+                const gap = 112, w1 = ctx.measureText('CYBER').width, w2 = ctx.measureText('ARENA').width;
+                const scale = Math.min(1, 1760 / (w1 + gap + w2));
+                ctx.save(); ctx.translate(1024, 264); ctx.scale(scale, scale);
+                const x0 = -(w1 + gap + w2) / 2; ctx.textAlign = 'left';
+                for (let pass = 0; pass < (glowOnly ? 2 : 1); pass++) {
+                    ctx.shadowBlur = glowOnly ? 90 : 36;
+                    ctx.fillStyle = '#00f2fe'; ctx.shadowColor = '#00f2fe'; ctx.fillText('CYBER', x0, 0);
+                    ctx.fillStyle = '#ff2a5f'; ctx.shadowColor = '#ff2a5f'; ctx.fillText('ARENA', x0 + w1 + gap, 0);
+                }
+                if (!glowOnly) { ctx.shadowBlur = 0; ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(255,255,255,0.75)';
+                    ctx.strokeText('CYBER', x0, 0); ctx.strokeText('ARENA', x0 + w1 + gap, 0); }
                 ctx.restore();
-            }
+            };
+            const gc = document.createElement('canvas'); gc.width = 1024; gc.height = 256;
+            const redrawSign = () => { drawSign(sc.getContext('2d'), false);
+                const g2 = gc.getContext('2d'); g2.save(); g2.scale(0.5, 0.5); drawSign(g2, true); g2.restore();
+                try { signTex.needsUpdate = true; glowTex.needsUpdate = true; } catch (e) {} };
+            redrawSign();
+            if (document.fonts && document.fonts.load) document.fonts.load('900 64px Orbitron').then(redrawSign).catch(() => {});
             const signTex = new THREE.CanvasTexture(sc);
-            signTex.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
+            signTex.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+            const glowTex = new THREE.CanvasTexture(gc);
+            const glowMat = new THREE.MeshBasicMaterial({ map: glowTex, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, opacity: 0.8 });
+            // shimmer sweep: a soft diagonal light band scrolled across the face
+            const shc = document.createElement('canvas'); shc.width = 256; shc.height = 16;
+            { const c = shc.getContext('2d'); const gr = c.createLinearGradient(0, 0, 256, 0);
+              gr.addColorStop(0, 'rgba(255,255,255,0)'); gr.addColorStop(0.47, 'rgba(255,255,255,0)'); gr.addColorStop(0.5, 'rgba(255,255,255,0.55)');
+              gr.addColorStop(0.53, 'rgba(255,255,255,0)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); c.fillStyle = gr; c.fillRect(0, 0, 256, 16); }
+            const shimTex = new THREE.CanvasTexture(shc); shimTex.wrapS = THREE.RepeatWrapping; shimTex.repeat.set(0.5, 1);
+            const shimMat = new THREE.MeshBasicMaterial({ map: shimTex, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, opacity: 0.5 });
+            const signLights = [];
             const signMat = new THREE.MeshBasicMaterial({ map: signTex, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
             const backMat = new THREE.MeshStandardMaterial({ color: 0x05080f, roughness: 0.6, metalness: 0.3 });
             const frameMat = new THREE.MeshBasicMaterial({ color: 0xff2a5f });
@@ -2208,9 +2346,45 @@
                 frame.position.z = 0.1; g.add(frame);                   // thin neon rim peeking around the backing
                 const face = new THREE.Mesh(new THREE.PlaneGeometry(11.8, 11.8 / 4), signMat);
                 face.position.z = 0.33; g.add(face);                    // 3 cm in front of the backing: no z-fighting
+                const shim = new THREE.Mesh(face.geometry, shimMat); shim.position.z = 0.35; g.add(shim);
+                const halo = new THREE.Mesh(face.geometry, glowMat); halo.position.z = 0.37; g.add(halo);
+                if (signLights.length < 2) { const L = new THREE.PointLight(0x00f2fe, 1.2, 16); L.position.set(0, 0, 2.5); g.add(L); signLights.push(L); }
                 g.position.set(sx * wallFace, 5, sz * wallFace); g.rotation.y = ry;
                 scene.add(g); signs.push(g);
             });
+
+            // In-game billboard ads (data-driven: /cyberarena/ads/ads.json)
+            const billboards = [];
+            {
+                const texLoader = new THREE.TextureLoader();
+                const bbFrame = new THREE.MeshBasicMaterial({ color: 0x00f2fe });
+                const bbBack = new THREE.MeshStandardMaterial({ color: 0x05080f, roughness: 0.7, metalness: 0.3 });
+                const spots = [[-22, -1], [22, -1], [-22, 1], [22, 1], [1, 22]]; // [x|side, z|side]
+                spots.forEach(([a, b], i) => {
+                    const g = new THREE.Group();
+                    let x, z, ry;
+                    if (i < 4) { x = a; z = b * wallFace; ry = b < 0 ? 0 : Math.PI; } else { x = a * wallFace; z = b; ry = -Math.PI / 2; }
+                    const back = new THREE.Mesh(new THREE.BoxGeometry(8.4, 4.4, 0.3), bbBack); back.position.z = 0.15; g.add(back);
+                    const frame = new THREE.Mesh(new THREE.BoxGeometry(8.7, 4.7, 0.2), bbFrame.clone()); frame.position.z = 0.1; g.add(frame);
+                    const mat = new THREE.MeshBasicMaterial({ color: 0x223344 });
+                    const face = new THREE.Mesh(new THREE.PlaneGeometry(8, 4), mat); face.position.z = 0.33; g.add(face);
+                    const sh = new THREE.Mesh(face.geometry, shimMat); sh.position.z = 0.35; g.add(sh);
+                    g.position.set(x, 4.2, z); g.rotation.y = ry; scene.add(g);
+                    billboards.push({ g, mat, frame, link: null });
+                });
+                fetch('/cyberarena/ads/ads.json', { cache: 'no-cache' }).then(r => r.json()).then(cfg => {
+                    (cfg.slots || []).slice(0, billboards.length).forEach((sl, i) => {
+                        if (!sl || !sl.image) return;
+                        texLoader.load(sl.image, t => {
+                            t.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+                            if (THREE.sRGBEncoding && renderer.outputEncoding === THREE.sRGBEncoding) t.encoding = THREE.sRGBEncoding;
+                            billboards[i].mat.map = t; billboards[i].mat.color.set(0xffffff); billboards[i].mat.needsUpdate = true;
+                        });
+                        billboards[i].link = sl.link || null;
+                    });
+                }).catch(() => {});
+            }
+            window.__caBillboards = billboards;
 
             // Neon city skybox (procedural shader)
             const skyMat = new THREE.ShaderMaterial({
@@ -2245,6 +2419,16 @@
                     skyMat.uniforms.uTime.value += dt;
                     const tt = skyMat.uniforms.uTime.value;
                     signs.forEach((s, i) => { s.position.y = 5 + Math.sin(tt * 1.5 + i) * 0.08; });
+                    // neon flicker + pulsing border + shimmer sweep + colour-cycling glow light
+                    const flick = (Math.sin(tt * 37) > 0.97 || Math.sin(tt * 23.3 + 1) > 0.985) ? 0.55 : 1;
+                    const sv = (0.85 + 0.15 * Math.sin(tt * 2.2)) * flick;
+                    signMat.color.setScalar(sv);
+                    glowMat.opacity = (0.55 + 0.35 * Math.sin(tt * 2.2)) * flick;
+                    frameMat.color.setHSL(0.96, 1, 0.45 + 0.15 * Math.sin(tt * 3));
+                    shimTex.offset.x = -((tt * 0.22) % 1.4) + 0.2;
+                    const hue = 0.5 + 0.21 * (0.5 + 0.5 * Math.sin(tt * 0.5));
+                    signLights.forEach(L => { L.color.setHSL(hue % 1, 1, 0.55); L.intensity = 1.1 * flick; });
+                    billboards.forEach((b, i) => b.frame.material.color.setHSL((0.5 + i * 0.13 + tt * 0.03) % 1, 1, 0.45 + 0.12 * Math.sin(tt * 2 + i)));
                     pads.forEach(p => { p.ring.scale.setScalar(1 + Math.sin(tt * 4) * 0.08); });
                     pickups.forEach(p => {
                         if (p.respawn > 0) { p.respawn -= dt; if (p.respawn <= 0) p.mesh.visible = true; return; }
@@ -2514,13 +2698,13 @@
                     return `<div class="flex items-center justify-between px-2.5 py-1.5 rounded-lg ${mine ? 'bg-fuchsia-500/20 border border-fuchsia-400/60 shadow-[0_0_12px_rgba(217,70,239,0.35)]' : 'bg-slate-800/50'}">
                         <div class="flex items-center gap-2 truncate pr-2"><span class="font-mono text-[10px] w-5 ${medal}">#${e.rank}</span>
                         <span class="font-semibold truncate ${mine ? 'text-fuchsia-100' : 'text-slate-200'}">${escHtml(e.name)}${mine ? ' (YOU)' : ''}</span></div>
-                        <div class="flex items-center gap-2 font-mono text-[11px] flex-shrink-0"><span class="text-slate-500">${e.kills}K/${e.deaths}D</span><span class="text-cyan-300 font-bold">${e.score.toLocaleString()}</span></div>
+                        <div class="flex items-center gap-2 font-mono text-[11px] flex-shrink-0"><span class="text-fuchsia-300/80">${e.wave ? 'W' + e.wave : ''}</span><span class="text-slate-500">${e.kills}K/${e.deaths}D</span><span class="text-cyan-300 font-bold">${e.score.toLocaleString()}</span></div>
                     </div>`;
                 }).join('');
             }
             document.getElementById('lb-you').innerHTML = you
                 ? `Your best: <span class="text-fuchsia-300 font-bold">#${you.rank}</span> · <span class="text-cyan-300 font-bold">${you.score.toLocaleString()}</span> pts`
-                : 'Score = 100 per kill + 50 per best streak − 25 per death.';
+                : 'Score: kills worth more each wave, + wave-clear, streak and headshot bonuses.';
         }
 
         function loadLeaderboard() {
@@ -2536,9 +2720,29 @@
             loadLeaderboard();
         }));
 
+        // ---- Game Over menu buttons ----
+        function leaveGameOver() {
+            const m = document.getElementById('respawn-modal'); m.classList.add('hidden'); m.classList.remove('flex');
+        }
+        document.getElementById('go-play').addEventListener('click', (e) => {
+            e.stopPropagation();
+            respawnLocalPlayer(); // fresh life token via startLife()
+            if (isTouchDevice) document.getElementById('mobile-controls').classList.remove('hidden');
+            else canvas.requestPointerLock?.();
+        });
+        const toMenu = (scrollBoard) => {
+            respawnLocalPlayer();
+            leaveGameOver();
+            showMenuModal(true);
+            if (scrollBoard) setTimeout(() => { const p = document.getElementById('lb-panel'); p.scrollIntoView({ block: 'center', behavior: 'smooth' }); p.classList.add('ring-2', 'ring-fuchsia-400/70'); setTimeout(() => p.classList.remove('ring-2', 'ring-fuchsia-400/70'), 1600); }, 60);
+        };
+        document.getElementById('go-board').addEventListener('click', (e) => { e.stopPropagation(); toMenu(true); });
+        document.getElementById('go-menu').addEventListener('click', (e) => { e.stopPropagation(); toMenu(false); });
+
         // ---- Auto-submit every life on death (each life = its own signed run) ----
         let lifeKillBase = 0, lifeSubmitting = false;
         function startLife() {
+            resetWaves();
             lifeKillBase = localPlayer.kills;
             matchToken = null;
             ensureMatch(); // fresh one-shot token per life
@@ -2556,7 +2760,7 @@
             try {
                 const r = await fetch('/api/cyberarena/scores', {
                     method: 'POST', headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ token, pid: playerPid, callsign: name, kills, deaths: 1, bestStreak: Math.min(kills, lifeStreak), matchTime: Math.floor((Date.now() - matchStartMs) / 1000), life: true })
+                    body: JSON.stringify({ token, pid: playerPid, callsign: name, kills, deaths: 1, bestStreak: Math.min(kills, lifeStreak), matchTime: Math.floor((Date.now() - matchStartMs) / 1000), life: true, waveKills: life.waveKills.slice(), headshots: life.headshots, wave: life.wave })
                 });
                 const d = await r.json().catch(() => null);
                 if (!r.ok || !d || !d.ok) return;
@@ -2564,7 +2768,7 @@
                 document.getElementById('ds-status').textContent = d.counted === false ? 'Score submitted (no points this life)' : 'Score submitted';
                 document.getElementById('ds-score').textContent = d.submitted.score.toLocaleString();
                 document.getElementById('ds-rank').textContent = you ? `#${you.rank}` : 'unranked';
-                document.getElementById('ds-top').innerHTML = (d.all.top || []).slice(0, 5).map(e => `<div class="flex justify-between ${you && you.rank === e.rank ? 'text-fuchsia-200' : 'text-slate-300'}"><span class="truncate pr-2">#${e.rank} ${escHtml(e.name)}</span><span class="text-cyan-300">${e.score.toLocaleString()}</span></div>`).join('');
+                document.getElementById('ds-top').innerHTML = (d.all.top || []).slice(0, 5).map(e => `<div class="flex justify-between ${you && you.rank === e.rank ? 'text-fuchsia-200' : 'text-slate-300'}"><span class="truncate pr-2">#${e.rank} ${escHtml(e.name)}</span><span><span class="text-fuchsia-300/80 mr-2">${e.wave ? 'W' + e.wave : ''}</span><span class="text-cyan-300">${e.score.toLocaleString()}</span></span></div>`).join('');
                 if (localPlayer.isDead) box.classList.remove('hidden');
                 localStorage.setItem('ca_callsign', d.submitted.name);
             } catch { /* offline: quiet */ } finally { lifeSubmitting = false; }
@@ -2623,6 +2827,7 @@
             updateBots(dt);
 
             // Argon pack: weapons, VFX, sky, HUD
+            tickWaves();
             if (isGameActive && !localPlayer.isDead) { applyAimAssist(dt, window.__caLooking && window.__caLooking()); updateWeaponFiring(dt, now); }
             else { gunGroup.userData.flash && (gunGroup.userData.flash.material.opacity = 0); }
             weaponFX.update(dt);

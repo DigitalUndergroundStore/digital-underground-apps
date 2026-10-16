@@ -159,11 +159,11 @@
         <div id="joystick-zone" class="absolute bottom-5 left-5 w-28 h-28 rounded-full bg-slate-900/25 border border-cyan-400/25 pointer-events-auto flex items-center justify-center touch-none">
             <div id="joystick-knob" class="w-10 h-10 rounded-full bg-cyan-400/40 pointer-events-none"></div>
         </div>
-        <div id="mobile-ammo" class="absolute bottom-[9.75rem] right-4 font-mono text-[#00f2fe]/90 text-xs bg-[#070b14]/45 px-1.5 py-0.5 rounded pointer-events-none">RIFLE 30/30</div>
-        <button id="mobile-weapon-btn" aria-label="Switch weapon" class="mbtn absolute bottom-[5.5rem] right-[5.75rem] w-10 h-10 text-violet-300"><i class="fas fa-rotate text-sm"></i></button>
-        <button id="mobile-reload-btn" aria-label="Reload" class="mbtn absolute bottom-5 right-[6.5rem] w-10 h-10 text-amber-300 font-mono font-bold text-xs">R</button>
-        <button id="mobile-jump-btn" aria-label="Jump" class="mbtn absolute bottom-[6.25rem] right-4 w-11 h-11 text-cyan-300"><i class="fas fa-arrow-up"></i></button>
-        <button id="mobile-fire-btn" aria-label="Fire" class="mbtn absolute bottom-5 right-4 w-[4.5rem] h-[4.5rem] !bg-rose-600/45 !border-rose-400/60 text-white"><i class="fas fa-crosshairs text-xl"></i></button>
+        <div id="mobile-ammo" class="absolute bottom-[11.5rem] right-4 font-mono text-[#00f2fe]/90 text-xs bg-[#070b14]/45 px-1.5 py-0.5 rounded pointer-events-none">RIFLE 30/30</div>
+        <button id="mobile-weapon-btn" aria-label="Switch weapon" class="mbtn absolute bottom-[7.25rem] right-[7.5rem] w-10 h-10 text-violet-300"><i class="fas fa-rotate text-sm"></i></button>
+        <button id="mobile-reload-btn" aria-label="Reload" class="mbtn absolute bottom-5 right-[8.25rem] w-10 h-10 text-amber-300 font-mono font-bold text-xs">R</button>
+        <button id="mobile-jump-btn" aria-label="Jump" class="mbtn absolute bottom-[8rem] right-4 w-11 h-11 text-cyan-300"><i class="fas fa-arrow-up"></i></button>
+        <button id="mobile-fire-btn" aria-label="Fire (drag to aim)" class="mbtn absolute bottom-5 right-4 w-[6.3rem] h-[6.3rem] !bg-rose-600/45 !border-rose-400/60 text-white"><i class="fas fa-crosshairs text-2xl"></i></button>
     </div>
 
     <!-- Start / Pause Menu Modal -->
@@ -1270,6 +1270,16 @@
             joyZone.addEventListener('touchend', resetJoystick);
             joyZone.addEventListener('touchcancel', resetJoystick);
 
+            // Shared touch-look (look surface and fire-button drag use the same sensitivity + aim assist)
+            function applyTouchLook(dx, dy) {
+                const touchSensitivity = 0.006 * (aimAssistTarget() ? 0.5 : 1);
+                localPlayer.yaw -= dx * touchSensitivity;
+                localPlayer.pitch -= dy * touchSensitivity;
+                const maxPitch = Math.PI / 2 - 0.08;
+                localPlayer.pitch = Math.max(-maxPitch, Math.min(maxPitch, localPlayer.pitch));
+                yawObject.rotation.y = localPlayer.yaw;
+                pitchObject.rotation.x = localPlayer.pitch;
+            }
             // Touch Look Area
             let lookTouchId = null;
             let lastLookPos = { x: 0, y: 0 };
@@ -1304,20 +1314,35 @@
                         const dy = t.clientY - lastLookPos.y;
                         lastLookPos = { x: t.clientX, y: t.clientY };
 
-                        const touchSensitivity = 0.006 * (aimAssistTarget() ? 0.5 : 1);
-                        localPlayer.yaw -= dx * touchSensitivity;
-                        localPlayer.pitch -= dy * touchSensitivity;
-                        const maxPitch = Math.PI / 2 - 0.08;
-                        localPlayer.pitch = Math.max(-maxPitch, Math.min(maxPitch, localPlayer.pitch));
-
-                        yawObject.rotation.y = localPlayer.yaw;
-                        pitchObject.rotation.x = localPlayer.pitch;
+                        applyTouchLook(dx, dy);
                     }
                 }
             }, { passive: false });
 
-            fireBtn.addEventListener('touchstart', (e) => { e.preventDefault(); weaponState.isTriggerHeld = true; }, { passive: false });
-            const releaseFire = (e) => { e.preventDefault(); weaponState.isTriggerHeld = false; weaponState.canSemiFire = true; };
+            // Fire button doubles as an aim stick: hold to fire, drag the same finger to aim.
+            let fireTouchId = null, lastFirePos = { x: 0, y: 0 };
+            fireBtn.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                const t = e.changedTouches[0];
+                fireTouchId = t.identifier; lastFirePos = { x: t.clientX, y: t.clientY };
+                weaponState.isTriggerHeld = true;
+            }, { passive: false });
+            fireBtn.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                for (let i = 0; i < e.changedTouches.length; i++) {
+                    const t = e.changedTouches[i];
+                    if (t.identifier !== fireTouchId) continue;
+                    applyTouchLook(t.clientX - lastFirePos.x, t.clientY - lastFirePos.y);
+                    lastFirePos = { x: t.clientX, y: t.clientY };
+                }
+            }, { passive: false });
+            const releaseFire = (e) => {
+                e.preventDefault();
+                let mine = false;
+                for (let i = 0; i < e.changedTouches.length; i++) if (e.changedTouches[i].identifier === fireTouchId) mine = true;
+                if (!mine) return;
+                fireTouchId = null; weaponState.isTriggerHeld = false; weaponState.canSemiFire = true;
+            };
             fireBtn.addEventListener('touchend', releaseFire, { passive: false });
             fireBtn.addEventListener('touchcancel', releaseFire, { passive: false });
             document.getElementById('mobile-weapon-btn').addEventListener('touchstart', (e) => {
@@ -1430,6 +1455,14 @@
 
             yawObject.position.set(localPlayer.x, localPlayer.y, localPlayer.z);
 
+            // Recoil recovery: camera kick and shake decay to zero, so aim returns exactly where it was
+            const rk = Math.exp(-dt * 14);
+            recoilFx.kick *= rk; recoilFx.shake *= Math.exp(-dt * 18);
+            camera.rotation.x = recoilFx.kick;
+            camera.position.x = (Math.random() - 0.5) * recoilFx.shake;
+            camera.position.y = (Math.random() - 0.5) * recoilFx.shake;
+            const ch = document.getElementById('crosshair');
+            if (ch) ch.style.transform = `translate(-50%, -50%) scale(${(1 + Math.min(1.2, (weaponState.currentSpread - WEAPON_STATS[weaponState.currentType].spread) * 25)).toFixed(3)})`;
             // Subtle weapon bobbing & recoil recovery
             gunGroup.position.z = THREE.MathUtils.lerp(gunGroup.position.z, -0.45, dt * 14);
             gunGroup.rotation.x = THREE.MathUtils.lerp(gunGroup.rotation.x, 0, dt * 14);
@@ -1761,13 +1794,16 @@
                 weaponFX.spawnTracer(_muzzle, hitPoint, stats.color);
             }
             weaponState.currentSpread = Math.min(stats.maxSpread, weaponState.currentSpread + stats.spreadBloom);
-            // Recoil climb on the player's pitch (camera sits under pitchObject in this rig)
-            const maxPitch = Math.PI / 2 - 0.08;
-            localPlayer.pitch = Math.min(maxPitch, localPlayer.pitch + stats.recoilClimb);
-            pitchObject.rotation.x = localPlayer.pitch;
+            // Recoil never changes the player's aim (localPlayer.pitch).
+            // Touch: visual only (gun kick + small screen shake + crosshair bloom).
+            // Desktop: a tiny camera kick that springs back to the original aim.
+            gunGroup.position.z += 0.06; gunGroup.rotation.x += stats.recoilClimb * 4;
+            recoilFx.shake = Math.min(0.03, recoilFx.shake + stats.recoilClimb * 0.35);
+            if (!isTouchDevice) recoilFx.kick = Math.min(0.03, recoilFx.kick + stats.recoilClimb * 0.3);
             pushPlayerStateToCloud(false);
         }
 
+        const recoilFx = { kick: 0, shake: 0 };
         function startReload(nowMs = performance.now()) {
             const stats = WEAPON_STATS[weaponState.currentType];
             if (weaponState.isReloading || weaponState.ammo[weaponState.currentType] === stats.magSize) return;
@@ -1846,6 +1882,7 @@
         window.__caAA = () => !!aimAssistTarget();
         window.__caAAErr = () => { const t = aimAssistTarget(); if (!t) return null; camera.getWorldPosition(_aaCam); camera.getWorldDirection(_aaDir); return +(_aaDir.angleTo(t.clone().sub(_aaCam)) * 180 / Math.PI).toFixed(2); };
         window.__caYaw = () => localPlayer.yaw;
+        window.__caPitch = () => [+localPlayer.pitch.toFixed(4), +camera.rotation.x.toFixed(4)];
         window.__caFiring = () => !!weaponState.isTriggerHeld;
         window.__caJoy = () => [joystickVector.x, joystickVector.y];
 

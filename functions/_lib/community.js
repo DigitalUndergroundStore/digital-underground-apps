@@ -582,7 +582,8 @@ export async function notifySubmission(env, listing, request) {
   } else if (approveLink && rejectLink) {
     lines.push("Override (7-day links):", `Approve: ${approveLink}`, `Reject: ${rejectLink}`, "");
   }
-  lines.push("Admin UI: https://digitalundergroundstore.com/owner/");
+  lines.unshift("Open your owner dashboard: https://digitalundergroundstore.com/owner/", "");
+  lines.push("Owner dashboard: https://digitalundergroundstore.com/owner/");
 
   const subject = `[Community] ${statusLabel(status)}: ${listing.name}`;
   const text = lines.join("\n");

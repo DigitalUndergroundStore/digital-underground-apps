@@ -28,7 +28,7 @@
     "pitchShort": "A neon first-person arena shooter that runs in your browser. Pick a callsign and armor colour, then fight AI practice bots with a live scoreboard and kill feed. Free, no install.",
     "descriptionLong": "CyberArena 3D is a free first-person shooter built with Three.js that runs right in the browser, with no download or account.\n\nChoose a callsign and an armor colour, deploy into a neon cyber arena and fight three AI practice bots. Move with W, A, S, D, aim with the mouse, click to fire your laser rifle and press Space to jump. On phones and tablets there is an on-screen joystick, a look area, and fire and jump buttons.\n\nThe HUD shows your health, kills, deaths and streak, plus a live scoreboard and kill feed. When you are eliminated you respawn after a short countdown.\n\nCyberArena is in testing / development. Right now it runs in single-player Local Arena mode against bots; online multiplayer is planned but not switched on yet.",
     "projectUrl": "https://digitalundergroundstore.com/cyberarena/",
-    "imageUrl": "https://digitalundergroundstore.com/community/media/cyberarena-cover.png",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/cyberarena-cover.png?v=20261016b",
     "tags": [
       "game",
       "fps",

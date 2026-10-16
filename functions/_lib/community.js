@@ -297,9 +297,26 @@ export function publicListing(row) {
   };
 }
 
-/** Public detail view (adds long description). Never includes email or creator ids. */
-export function publicListingDetail(row) {
-  return { ...publicListing(row), descriptionLong: row.descriptionLong || "" };
+/** Server-side only: Donald's private alert address (existing config). Never send to a client. */
+export function ownerAlertEmail(env) {
+  return env?.COMMUNITY_OWNER_ALERT_EMAIL || "kerzydon@gmail.com";
+}
+
+/** Owner seed listings (Kerzy Labs) have no stored maker email; their contact goes to the owner alert address. */
+export function isOwnerSeed(row) {
+  return !!row && typeof row.id === "string" && row.id.startsWith("cm_kerzy_");
+}
+/** Server-side only: where "Contact the developer" messages for a listing go. Never return this to a client. */
+export function listingContactAddress(env, row) {
+  if (!row) return "";
+  if (isOwnerSeed(row)) return env?.SUPPORT_EMAIL || ownerAlertEmail(env);
+  const e = normalizeEmail(row.email);
+  return e || "";
+}
+
+/** Public detail view (adds long description). Never includes email or creator ids; `contactable` is only a boolean. */
+export function publicListingDetail(row, env) {
+  return { ...publicListing(row), descriptionLong: row.descriptionLong || "", contactable: !!listingContactAddress(env, row) };
 }
 
 const INDEX_KEY = "community:index";
@@ -609,7 +626,7 @@ export async function notifySubmission(env, listing, request) {
   const text = lines.join("\n");
   const out = await sendCommunityEmail(env, { to, subject, text });
   // Private owner alert (server-side only; never sent to the browser).
-  const owner = env?.COMMUNITY_OWNER_ALERT_EMAIL || "kerzydon@gmail.com";
+  const owner = ownerAlertEmail(env);
   if (owner && owner !== to) {
     try { out.owner = (await sendCommunityEmail(env, { to: owner, subject: `New Marketplace listing: ${listing.name}`, text })).sent; } catch (_) { out.owner = false; }
   }

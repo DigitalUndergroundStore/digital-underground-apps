@@ -15,9 +15,9 @@ export async function onRequest(context) {
       const res = await fetch(new URL("/community/listings.json", request.url), { headers: { Accept: "application/json" } });
       const data = res.ok ? await res.json() : [];
       const seed = (Array.isArray(data) ? data : data?.listings || []).find((r) => r && r.id === id);
-      if (seed) return json({ listing: publicListingDetail(seed) }, 200, { "Cache-Control": "public, max-age=60" });
+      if (seed) return json({ listing: publicListingDetail(seed, env) }, 200, { "Cache-Control": "public, max-age=60" });
     } catch {}
     return json({ error: "Not found." }, 404);
   }
-  return json({ listing: publicListingDetail(row) }, 200, { "Cache-Control": "public, max-age=60" });
+  return json({ listing: publicListingDetail(row, env) }, 200, { "Cache-Control": "public, max-age=60" });
 }

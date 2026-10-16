@@ -68,7 +68,13 @@
         (l.stage && l.stage !== 'Released' ? '<p style="margin:6px 0 0"><span class="stage-badge" style="display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid rgba(251,191,36,.55);background:rgba(251,191,36,.12);color:#fcd34d;font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;width:max-content">' + esc(l.stage) + "</span></p>" : "") +
         '<p class="dt-pitch">' + esc(l.pitchShort) + "</p>" +
         '<div class="chips2"><span class="chip2 price">' + price + "</span>" + (l.category ? '<span class="chip2 cat">' + esc(CATS[l.category] || l.category) + "</span>" : "") + tags + "</div>" +
-        '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button></div>" +
+        '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button>" + (l.contactable ? '<button type="button" class="btn2" id="contact-btn" aria-expanded="false" aria-controls="contact-panel">Contact the developer</button>' : "") + "</div>" +
+        (l.contactable ? '<section class="panel" id="contact-panel" hidden><h2>Contact the developer</h2><p class="muted small" style="margin:0 0 10px">Your message goes privately to ' + esc(l.makerName) + '. They can reply to your email.</p><form id="contact-form" novalidate style="display:grid;gap:10px">' +
+          '<label class="small">Name<input name="name" required maxlength="100" autocomplete="name" style="display:block;width:100%;margin-top:4px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"></label>' +
+          '<label class="small">Email<input name="email" type="email" required maxlength="200" autocomplete="email" style="display:block;width:100%;margin-top:4px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"></label>' +
+          '<label class="small">Message<textarea name="message" required minlength="10" maxlength="5000" rows="5" style="display:block;width:100%;margin-top:4px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"></textarea></label>' +
+          '<div style="position:absolute;left:-9999px" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>' +
+          '<button type="submit" class="btn2 primary" style="flex:none">Send message</button><p id="contact-msg" class="small" role="status" style="margin:0"></p></form></section>' : "") +
         media(l) +
         '<section class="panel"><h2>About</h2><div class="prose">' + paras(l.descriptionLong || l.pitchShort) + "</div></section>" +
       '</div><aside class="side">' +
@@ -90,6 +96,22 @@
       (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(function () { var t = document.createElement("div"); t.className = "toast2"; t.setAttribute("role", "status"); t.textContent = "Link copied"; document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2200); }).catch(function () {});
     });
     document.querySelectorAll("img.dt-logo, .media img").forEach(function (im) { im.onerror = function () { im.onerror = null; im.src = "/community/og.jpg"; }; });
+    var cb = document.getElementById("contact-btn");
+    if (cb) {
+      var cp = document.getElementById("contact-panel"), cf = document.getElementById("contact-form"), cm = document.getElementById("contact-msg");
+      cb.addEventListener("click", function () { cp.hidden = !cp.hidden; cb.setAttribute("aria-expanded", String(!cp.hidden)); if (!cp.hidden) { cp.scrollIntoView({ behavior: "smooth", block: "start" }); cf.name.focus({ preventScroll: true }); } });
+      cf.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var btn = cf.querySelector("button[type=submit]");
+        if (!cf.name.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(cf.email.value.trim()) || cf.message.value.trim().length < 10) { cm.textContent = "Please add your name, a valid email and a message (10+ characters)."; return; }
+        btn.disabled = true; cm.textContent = "Sending…";
+        fetch("/api/community/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: l.id, name: cf.name.value, email: cf.email.value, message: cf.message.value, website: cf.website.value }) })
+          .then(function (r) { return r.json().catch(function () { return {}; }); })
+          .then(function (d) { if (d && d.ok) { cf.reset(); cm.textContent = "Message sent. The developer will reply to your email."; } else { cm.textContent = (d && d.error) || "Couldn't send right now. Please try again."; } })
+          .catch(function () { cm.textContent = "Couldn't send right now. Please try again."; })
+          .then(function () { btn.disabled = false; });
+      });
+    }
     if (window.duTrack) duTrack.view(l.id);
   });
 })();

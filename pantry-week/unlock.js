@@ -9,8 +9,31 @@
   function unb64(s) { var b = atob(s), u = new Uint8Array(b.length); for (var i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; }
   function b64(u) { var s = ""; for (var i = 0; i < u.length; i++) s += String.fromCharCode(u[i]); return btoa(s); }
   function norm(c) { return String(c || "").toUpperCase().replace(/[^A-Z0-9]/g, ""); }
-  function store(k, v) { try { if (v === null) { localStorage.removeItem(LS); sessionStorage.removeItem(LS); } else { try { localStorage.setItem(LS, v); } catch (e) { sessionStorage.setItem(LS, v); } } } catch (e) {} }
-  function stored() { try { return localStorage.getItem(LS) || sessionStorage.getItem(LS); } catch (e) { return null; } }
+  var CK = "dupw";
+  function setCookie(v) { try { document.cookie = CK + "=" + (v === null ? "" : encodeURIComponent(v)) + "; path=/pantry-week/; max-age=" + (v === null ? 0 : 315360000) + "; SameSite=Lax; Secure"; } catch (e) {} }
+  function getCookie() { try { var m = document.cookie.match(/(?:^|; )dupw=([^;]+)/); return m ? decodeURIComponent(m[1]) : null; } catch (e) { return null; } }
+  function idb(mode, v) {
+    return new Promise(function (res) {
+      try {
+        var r = indexedDB.open("du_pantry_week", 1);
+        r.onupgradeneeded = function () { r.result.createObjectStore("k"); };
+        r.onsuccess = function () {
+          try {
+            var tx = r.result.transaction("k", mode === "get" ? "readonly" : "readwrite"), os = tx.objectStore("k");
+            if (mode === "get") { var g = os.get(LS); g.onsuccess = function () { res(g.result || null); }; g.onerror = function () { res(null); }; }
+            else { if (v === null) os.delete(LS); else os.put(v, LS); tx.oncomplete = function () { res(true); }; tx.onerror = function () { res(false); }; }
+          } catch (e) { res(null); }
+        };
+        r.onerror = function () { res(null); };
+      } catch (e) { res(null); }
+    });
+  }
+  function store(k, v) {
+    try { if (v === null) { localStorage.removeItem(LS); sessionStorage.removeItem(LS); } else { try { localStorage.setItem(LS, v); } catch (e) { sessionStorage.setItem(LS, v); } } } catch (e) {}
+    setCookie(v); idb("set", v);
+    if (v !== null) { try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {} }
+  }
+  function storedSync() { try { return localStorage.getItem(LS) || sessionStorage.getItem(LS) || getCookie(); } catch (e) { return getCookie(); } }
   function status(t) { $("du-status").textContent = t; }
   function showForm(msg, bad) { status("Enter your buyer code to open your copy."); $("du-form").className = "on"; var m = $("du-msg"); m.textContent = msg || ""; m.className = bad ? "bad" : ""; }
   if (!window.crypto || !crypto.subtle) { status("This browser can't open Pantry Week. Please use Safari (iPhone/iPad) or Chrome (Android), and make sure the address starts with https://."); return; }
@@ -70,13 +93,17 @@
     ev.preventDefault(); var c = $("du-code").value; if (norm(c).length < 8) { showForm("Type the full code, e.g. PW-XXXX-XXXX-XXXX.", true); return; }
     $("du-go").disabled = true; tryCode(c, false).then(function () { var g = $("du-go"); if (g) g.disabled = false; });
   });
-  var saved = stored();
-  if (hash) tryCode(hash, true);
-  else if (saved) {
-    open(unb64(saved)).then(render).catch(function (e) {
+  function openSaved(saved) {
+    open(unb64(saved)).then(function (b) { store(LS, saved); render(b); }).catch(function (e) {
       if (/net/.test(String(e && e.message))) { netFail(); return; }
-      store(LS, null); showForm("Please enter your buyer code again.");
+      store(LS, null); showForm("Open your Pantry Week link from your Gumroad receipt to unlock again.");
     });
-  } else { getBin().catch(function () {}); showForm(""); }
+  }
+  if (hash) tryCode(hash, true);
+  else {
+    var saved = storedSync();
+    if (saved) openSaved(saved);
+    else idb("get").then(function (v) { if (v) openSaved(v); else { getBin().catch(function () {}); showForm(""); } });
+  }
   window.addEventListener("hashchange", function () { if (/code=/.test(location.hash)) location.reload(); });
 })();

@@ -7,7 +7,7 @@ var PREFIX = "pantry-week-";
 var FILES = [
  "index.html",
  "print/week.html",
- "unlock.js?v=202610151830-pw3143",
+ "unlock.js?v=202610160100-pw3143u",
  "app.bin?v=202610151830-pw3143",
  "manifest.webmanifest",
  "icons/icon-180.png",

@@ -585,7 +585,14 @@ export async function notifySubmission(env, listing, request) {
   lines.push("Admin UI: https://digitalundergroundstore.com/owner/");
 
   const subject = `[Community] ${statusLabel(status)}: ${listing.name}`;
-  return sendCommunityEmail(env, { to, subject, text: lines.join("\n") });
+  const text = lines.join("\n");
+  const out = await sendCommunityEmail(env, { to, subject, text });
+  // Private owner alert (server-side only; never sent to the browser).
+  const owner = env?.COMMUNITY_OWNER_ALERT_EMAIL || "kerzydon@gmail.com";
+  if (owner && owner !== to) {
+    try { out.owner = (await sendCommunityEmail(env, { to: owner, subject: `New Marketplace listing: ${listing.name}`, text })).sent; } catch (_) { out.owner = false; }
+  }
+  return out;
 }
 
 

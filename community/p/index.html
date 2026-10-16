@@ -65,10 +65,11 @@
     out.innerHTML =
       '<div class="dt-grid"><div>' +
         '<header class="dt-head">' + (l.video || l.imageUrl ? "" : '<span class="dt-logo dt-ph" aria-hidden="true">' + esc((l.name || "?").charAt(0).toUpperCase()) + "</span>") + '<div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + esc(l.makerName) + x + "</p></div></header>" +
+        (l.contactable ? '<button type="button" class="btn2" id="contact-btn" aria-expanded="false" aria-controls="contact-panel" style="flex:none;margin:10px 0 2px;border:1px solid rgba(34,211,238,.55);color:#a5f3fc">&#9993;&nbsp; Contact the developer</button>' : "") +
         (l.stage && l.stage !== 'Released' ? '<p style="margin:6px 0 0"><span class="stage-badge" style="display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid rgba(251,191,36,.55);background:rgba(251,191,36,.12);color:#fcd34d;font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;width:max-content">' + esc(l.stage) + "</span></p>" : "") +
         '<p class="dt-pitch">' + esc(l.pitchShort) + "</p>" +
         '<div class="chips2"><span class="chip2 price">' + price + "</span>" + (l.category ? '<span class="chip2 cat">' + esc(CATS[l.category] || l.category) + "</span>" : "") + tags + "</div>" +
-        '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button>" + (l.contactable ? '<button type="button" class="btn2" id="contact-btn" aria-expanded="false" aria-controls="contact-panel">Contact the developer</button>' : "") + "</div>" +
+        '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button>" + "</div>" +
         (l.contactable ? '<section class="panel" id="contact-panel" hidden><h2>Contact the developer</h2><p class="muted small" style="margin:0 0 10px">Your message goes privately to ' + esc(l.makerName) + '. They can reply to your email.</p><form id="contact-form" novalidate style="display:grid;gap:10px">' +
           '<label class="small">Name<input name="name" required maxlength="100" autocomplete="name" style="display:block;width:100%;margin-top:4px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"></label>' +
           '<label class="small">Email<input name="email" type="email" required maxlength="200" autocomplete="email" style="display:block;width:100%;margin-top:4px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"></label>' +
@@ -111,6 +112,7 @@
           .catch(function () { cm.textContent = "Couldn't send right now. Please try again."; })
           .then(function () { btn.disabled = false; });
       });
+      if (location.hash === "#contact") setTimeout(function () { cb.click(); }, 50);
     }
     if (window.duTrack) duTrack.view(l.id);
   });

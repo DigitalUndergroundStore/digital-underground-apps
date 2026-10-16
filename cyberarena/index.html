@@ -62,6 +62,12 @@
             0%, 100% { opacity: 0.7; }
             50% { opacity: 0.2; }
         }
+        .hud-ico { width: 30px; height: 30px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; color: #a5f3fc; background: rgba(7,11,20,.5); border: 1px solid rgba(34,211,238,.25); }
+        .hud-ico[aria-pressed="true"], .hud-ico[aria-expanded="true"] { color: #070b14; background: rgba(34,211,238,.8); }
+        .mbtn { position: absolute; pointer-events: auto; border-radius: 9999px; display: flex; align-items: center; justify-content: center; background: rgba(15,23,42,.35); border: 1px solid rgba(148,163,184,.35); touch-action: none; -webkit-user-select: none; user-select: none; }
+        .mbtn:active { transform: scale(.92); background: rgba(15,23,42,.6); }
+        body.touch #hud-minimap-wrap, body.touch #weapon-panel { display: none !important; }
+        .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
         .damage-flash {
             animation: pulse-fast 0.3s ease-out;
         }
@@ -75,136 +81,89 @@
     <!-- Damage Vignette Overlay -->
     <div id="damage-overlay" class="fixed inset-0 pointer-events-none border-[16px] border-red-600/0 transition-all duration-150 z-10"></div>
 
-    <!-- HUD Overlay -->
-    <div id="hud" class="fixed inset-0 pointer-events-none z-20 hidden flex-col justify-between p-4 sm:p-6">
-        <div id="hud-dmg-ring" class="absolute top-1/2 left-1/2 w-48 h-48 rounded-full border-t-4 border-[#ff2a5f] opacity-0 transition-opacity duration-150 pointer-events-none" style="transform: translate(-50%, -50%);"></div>
-        <div id="hud-streak" class="absolute top-24 sm:top-14 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-[#070b14]/90 border border-[#ff2a5f] text-[#ff2a5f] text-sm sm:text-xl font-bold font-mono tracking-widest uppercase shadow-[0_0_20px_#ff2a5f] opacity-0 transition-opacity duration-300 whitespace-nowrap pointer-events-none">ELIMINATED</div>
-        <div class="absolute left-4 sm:left-6 top-40 sm:top-44 p-1 bg-[#070b14]/85 border border-[#00f2fe]/60 rounded pointer-events-none">
-            <canvas id="hud-minimap" width="130" height="130" class="block w-[96px] h-[96px] sm:w-[130px] sm:h-[130px]"></canvas>
-        </div>
-        
-        <!-- Top Row: Player Info & Scoreboard -->
-        <div class="flex justify-between items-start gap-4 w-full">
-            
-            <!-- Top Left: Player Identity & Status -->
-            <div class="bg-slate-900/80 backdrop-blur-md border border-cyan-500/30 rounded-xl p-3 sm:p-4 shadow-lg pointer-events-auto max-w-xs sm:max-w-sm">
-                <div class="flex items-center gap-2.5">
-                    <span id="player-color-dot" class="w-3.5 h-3.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]"></span>
-                    <span id="hud-player-name" class="font-cyber font-bold text-sm sm:text-base tracking-wider text-cyan-50 truncate">OPERATIVE</span>
-                    <span id="connection-badge" class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold">LIVE</span>
-                </div>
-                <div class="mt-1.5 text-[10px] sm:text-xs text-slate-400 font-mono break-all select-text">
-                    ID: <span id="hud-user-id" class="text-slate-300">Connecting...</span>
-                </div>
-                <div class="mt-2 flex items-center gap-2">
-                    <button id="toggle-bots-btn" class="text-xs bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-cyan-500/30 rounded-lg px-2.5 py-1 transition flex items-center gap-1.5 shadow">
-                        <i class="fas fa-robot"></i> <span id="bot-btn-text">Practice Bots: OFF</span>
-                    </button>
-                    <button id="pause-btn" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-600/40 rounded-lg px-2.5 py-1 transition sm:hidden">
-                        <i class="fas fa-pause"></i> Menu
-                    </button>
-                </div>
+    <!-- HUD Overlay (minimal: health, ammo, K/D/streak, crosshair) -->
+    <div id="hud" class="fixed inset-0 pointer-events-none z-20 hidden flex-col justify-between">
+        <div id="hud-dmg-ring" class="absolute top-1/2 left-1/2 w-40 h-40 rounded-full border-t-4 border-[#ff2a5f] opacity-0 transition-opacity duration-150 pointer-events-none" style="transform: translate(-50%, -50%);"></div>
+        <div id="hud-streak" class="absolute top-16 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-[#070b14]/70 border border-[#ff2a5f]/70 text-[#ff2a5f] text-xs sm:text-sm font-bold font-mono tracking-widest uppercase opacity-0 transition-opacity duration-300 whitespace-nowrap pointer-events-none">ELIMINATED</div>
+
+        <!-- Top-left: health + small counter -->
+        <div class="hud-tl absolute top-2 left-2 sm:top-4 sm:left-4 w-36 sm:w-48 px-2 py-1.5 rounded-lg bg-[#070b14]/55 border border-cyan-500/20 font-mono">
+            <div class="flex items-center gap-1.5">
+                <span id="player-color-dot" class="w-2 h-2 rounded-full bg-cyan-400 shrink-0"></span>
+                <div class="flex-1 h-1.5 bg-slate-800/80 rounded-full overflow-hidden"><div id="health-bar" class="h-full bg-gradient-to-r from-emerald-500 to-cyan-400 rounded-full transition-all duration-200" style="width: 100%;"></div></div>
+                <span id="health-text" class="text-xs font-bold text-emerald-400 w-9 text-right">100%</span>
             </div>
-
-            <!-- Center Top: Kill Feed -->
-            <div id="kill-feed" class="hidden md:flex flex-col items-center gap-1.5 max-w-md w-full pointer-events-none"></div>
-
-            <!-- Top Right: Live Scoreboard -->
-            <div class="bg-slate-900/80 backdrop-blur-md border border-cyan-500/30 rounded-xl p-3 sm:p-4 shadow-lg w-56 sm:w-72 pointer-events-auto">
-                <div class="flex items-center justify-between border-b border-slate-700/80 pb-2 mb-2">
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-trophy text-amber-400 text-xs sm:text-sm"></i>
-                        <h3 class="font-cyber font-bold text-xs sm:text-sm tracking-wider text-slate-100">SCOREBOARD</h3>
-                    </div>
-                    <span id="online-count" class="text-[11px] bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded-md font-mono">1 Online</span>
-                </div>
-                <div id="scoreboard-list" class="space-y-1.5 max-h-40 sm:max-h-52 overflow-y-auto pr-1 text-xs">
-                    <!-- Populated dynamically -->
-                </div>
+            <div class="mt-1 flex gap-2.5 text-[10px] text-slate-400">
+                <span title="Kills">K <b id="stat-kills" class="text-white">0</b></span>
+                <span title="Deaths">D <b id="stat-deaths" class="text-white">0</b></span>
+                <span title="Streak">&#9650; <b id="stat-streak" class="text-amber-400">0</b></span>
             </div>
         </div>
+        <!-- Minimap: desktop only -->
+        <div id="hud-minimap-wrap" class="absolute left-4 top-[4.75rem] p-0.5 bg-[#070b14]/60 border border-[#00f2fe]/30 rounded pointer-events-none">
+            <canvas id="hud-minimap" width="130" height="130" class="block w-[96px] h-[96px] opacity-80"></canvas>
+        </div>
 
-        <!-- Center Crosshair -->
-        <div id="crosshair" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 pointer-events-none flex items-center justify-center">
-            <div class="crosshair-line w-3 h-0.5 -translate-x-2.5"></div>
-            <div class="crosshair-line w-3 h-0.5 translate-x-2.5"></div>
-            <div class="crosshair-line h-3 w-0.5 -translate-y-2.5"></div>
-            <div class="crosshair-line h-3 w-0.5 translate-y-2.5"></div>
-            <div class="w-1 h-1 rounded-full bg-cyan-300"></div>
-            <!-- Hitmarker X -->
+        <!-- Top-center: short-lived kill feed -->
+        <div id="kill-feed" class="absolute top-2 sm:top-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 pointer-events-none max-w-[45vw]"></div>
+
+        <!-- Top-right: small icon buttons -->
+        <div class="hud-tr absolute top-2 right-2 sm:top-4 sm:right-4 flex gap-1.5 pointer-events-auto">
+            <button id="sb-toggle" aria-label="Scoreboard" aria-expanded="false" class="hud-ico"><i class="fas fa-trophy"></i></button>
+            <button id="toggle-bots-btn" aria-label="Toggle practice bots" class="hud-ico"><i class="fas fa-robot"></i><span id="bot-btn-text" class="sr-only">Practice Bots: OFF</span></button>
+            <button id="pause-btn" aria-label="Menu" class="hud-ico"><i class="fas fa-pause"></i></button>
+        </div>
+        <!-- Collapsible scoreboard -->
+        <div id="sb-panel" class="hidden absolute top-12 right-2 sm:top-14 sm:right-4 w-[min(16rem,calc(100vw-1rem))] bg-[#070b14]/85 border border-cyan-500/25 rounded-lg p-2 pointer-events-auto">
+            <div class="flex items-center justify-between pb-1 mb-1 border-b border-slate-700/60 text-[11px] font-mono text-slate-300">
+                <span>SCOREBOARD</span><span id="online-count" class="text-cyan-300">1 Online</span>
+            </div>
+            <div id="scoreboard-list" class="space-y-1 max-h-48 overflow-y-auto text-xs"></div>
+            <div class="mt-1 text-[10px] text-slate-500 font-mono truncate">ID <span id="hud-user-id">Connecting...</span></div>
+        </div>
+        <span id="hud-player-name" class="hidden">OPERATIVE</span><span id="connection-badge" class="hidden">LIVE</span>
+
+        <!-- Center Crosshair (minimal) -->
+        <div id="crosshair" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 pointer-events-none flex items-center justify-center">
+            <div class="crosshair-line w-2 h-0.5 -translate-x-2"></div>
+            <div class="crosshair-line w-2 h-0.5 translate-x-2"></div>
+            <div class="crosshair-line h-2 w-0.5 -translate-y-2"></div>
+            <div class="crosshair-line h-2 w-0.5 translate-y-2"></div>
             <div id="hitmarker" class="hidden absolute inset-0 flex items-center justify-center">
-                <div class="w-5 h-0.5 bg-rose-500 rotate-45 absolute shadow-[0_0_6px_#f43f5e]"></div>
-                <div class="w-5 h-0.5 bg-rose-500 -rotate-45 absolute shadow-[0_0_6px_#f43f5e]"></div>
+                <div class="w-4 h-0.5 bg-rose-500 rotate-45 absolute"></div>
+                <div class="w-4 h-0.5 bg-rose-500 -rotate-45 absolute"></div>
             </div>
         </div>
 
-        <!-- Bottom Row: Health, Ammo & Controls -->
-        <div class="flex justify-between items-end w-full gap-4">
-            <!-- Health Bar & Stats -->
-            <div class="bg-slate-900/85 backdrop-blur-md border border-cyan-500/30 rounded-xl p-3 sm:p-4 shadow-lg w-60 sm:w-80">
-                <div class="flex justify-between items-baseline mb-1.5">
-                    <span class="font-cyber text-xs text-slate-400 tracking-wider flex items-center gap-1.5">
-                        <i class="fas fa-heart-pulse text-emerald-400"></i> INTEGRITY
-                    </span>
-                    <span id="health-text" class="font-cyber font-black text-xl sm:text-2xl text-emerald-400">100%</span>
-                </div>
-                <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden p-0.5 border border-slate-700">
-                    <div id="health-bar" class="h-full bg-gradient-to-r from-emerald-500 to-cyan-400 rounded-full transition-all duration-200" style="width: 100%;"></div>
-                </div>
-                <div class="mt-2.5 flex justify-between text-xs text-slate-400 font-mono">
-                    <div>KILLS: <span id="stat-kills" class="text-white font-bold">0</span></div>
-                    <div>DEATHS: <span id="stat-deaths" class="text-white font-bold">0</span></div>
-                    <div>STREAK: <span id="stat-streak" class="text-amber-400 font-bold">0</span></div>
-                </div>
+        <!-- Bottom-right: weapon / ammo (desktop) -->
+        <div id="weapon-panel" class="absolute bottom-4 right-4 flex flex-col items-end gap-1.5">
+            <div id="hud-weapons" class="pointer-events-auto flex gap-1 text-[10px] font-mono">
+                <button data-w="rifle"   class="px-2 py-0.5 bg-[#00f2fe]/20 border border-[#00f2fe] text-[#00f2fe]">1 RIFLE</button>
+                <button data-w="smg"     class="px-2 py-0.5 bg-[#070b14]/70 border border-[#a855f7]/40 text-[#a855f7]">2 SMG</button>
+                <button data-w="shotgun" class="px-2 py-0.5 bg-[#070b14]/70 border border-[#a855f7]/40 text-[#a855f7]">3 SHOTGUN</button>
+                <button data-w="railgun" class="px-2 py-0.5 bg-[#070b14]/70 border border-[#a855f7]/40 text-[#a855f7]">4 RAIL</button>
             </div>
-
-            <!-- Weapon / Ammo Status (Argon HUD) -->
-            <div id="weapon-panel" class="flex flex-col items-end gap-2">
-                <div id="hud-weapons" class="pointer-events-auto flex gap-1.5 text-[10px] sm:text-xs font-mono">
-                    <button data-w="rifle"   class="px-2.5 py-1 bg-[#00f2fe]/20 border border-[#00f2fe] text-[#00f2fe]">[1] RIFLE</button>
-                    <button data-w="smg"     class="px-2.5 py-1 bg-[#070b14]/90 border border-[#a855f7]/40 text-[#a855f7]">[2] SMG</button>
-                    <button data-w="shotgun" class="px-2.5 py-1 bg-[#070b14]/90 border border-[#a855f7]/40 text-[#a855f7]">[3] SHOTGUN</button>
-                    <button data-w="railgun" class="px-2.5 py-1 bg-[#070b14]/90 border border-[#a855f7]/40 text-[#a855f7]">[4] RAILGUN</button>
+            <div class="w-44 bg-[#070b14]/60 border border-[#00f2fe]/40 px-2.5 py-1.5 font-mono text-[#00f2fe]">
+                <div class="flex justify-between items-baseline">
+                    <span id="hud-wname" class="text-[11px] text-[#a855f7]">PULSE RIFLE</span>
+                    <span id="hud-ammo" class="text-2xl font-extrabold">30<span class="text-sm text-[#00f2fe]/60">/30</span></span>
                 </div>
-                <div class="w-56 bg-[#070b14]/90 border border-[#00f2fe] p-3 shadow-[0_0_15px_rgba(0,242,254,0.2)] font-mono text-[#00f2fe]">
-                    <div class="flex justify-between items-baseline">
-                        <span id="hud-wname" class="text-xs text-[#a855f7]">PULSE RIFLE</span>
-                        <span id="hud-ammo" class="text-3xl font-extrabold">30<span class="text-sm text-[#00f2fe]/60">/30</span></span>
-                    </div>
-                    <div class="w-full h-1.5 bg-[#111827] mt-2 overflow-hidden"><div id="hud-reload-bar" class="h-full bg-[#ff2a5f] w-0"></div></div>
-                    <div class="text-[10px] text-slate-400 mt-1.5">[HOLD CLICK] Fire • [R] Reload • [ESC] Menu</div>
-                </div>
+                <div class="w-full h-1 bg-[#111827] mt-1 overflow-hidden"><div id="hud-reload-bar" class="h-full bg-[#ff2a5f] w-0"></div></div>
             </div>
-        </div>
         </div>
     </div>
 
-    <!-- Mobile Touch Controls Overlay -->
-    <div id="mobile-controls" class="fixed inset-0 pointer-events-none z-30 hidden">
-        <!-- Left Virtual Joystick Area -->
-        <div id="joystick-zone" class="absolute bottom-6 left-6 w-32 h-32 rounded-full bg-slate-900/50 border-2 border-cyan-400/40 backdrop-blur-sm pointer-events-auto flex items-center justify-center touch-none">
-            <div id="joystick-knob" class="w-12 h-12 rounded-full bg-cyan-400/80 shadow-[0_0_15px_#22d3ee] pointer-events-none transition-transform duration-75"></div>
+    <!-- Mobile Touch Controls: full-screen look surface underneath, joystick + buttons on top -->
+    <div id="mobile-controls" class="fixed inset-0 pointer-events-none z-[15] hidden">
+        <div id="touch-look-zone" class="absolute inset-0 pointer-events-auto touch-none"></div>
+        <div id="joystick-zone" class="absolute bottom-5 left-5 w-28 h-28 rounded-full bg-slate-900/25 border border-cyan-400/25 pointer-events-auto flex items-center justify-center touch-none">
+            <div id="joystick-knob" class="w-10 h-10 rounded-full bg-cyan-400/40 pointer-events-none"></div>
         </div>
-
-        <!-- Right Touch Look Area -->
-        <div id="touch-look-zone" class="
-            absolute top-20 right-0 bottom-0 w-1/2 pointer-events-auto touch-none
-        "></div>
-
-        <!-- Mobile Fire & Jump Buttons -->
-        <div class="absolute bottom-8 right-6 flex flex-col items-end gap-3 pointer-events-auto">
-            <div id="mobile-ammo" class="font-mono text-[#00f2fe] text-sm bg-[#070b14]/85 border border-[#00f2fe]/50 px-2 py-0.5 rounded">RIFLE 30/30</div>
-            <div class="flex gap-2">
-                <button id="mobile-weapon-btn" class="w-12 h-12 rounded-full bg-slate-800/80 border border-violet-400/60 text-violet-300 flex items-center justify-center active:scale-95 touch-none"><i class="fas fa-rotate"></i></button>
-                <button id="mobile-reload-btn" class="w-12 h-12 rounded-full bg-slate-800/80 border border-amber-400/60 text-amber-300 font-mono font-bold text-sm flex items-center justify-center active:scale-95 touch-none">R</button>
-            </div>
-            <button id="mobile-jump-btn" class="w-14 h-14 rounded-full bg-slate-800/80 border border-cyan-400/50 text-cyan-300 shadow-lg flex items-center justify-center active:scale-95 touch-none">
-                <i class="fas fa-arrow-up text-lg"></i>
-            </button>
-            <button id="mobile-fire-btn" class="w-20 h-20 rounded-full bg-rose-600/85 border-2 border-rose-400 text-white shadow-[0_0_20px_rgba(244,63,94,0.6)] flex items-center justify-center active:scale-90 touch-none">
-                <i class="fas fa-crosshairs text-2xl"></i>
-            </button>
-        </div>
+        <div id="mobile-ammo" class="absolute bottom-[9.75rem] right-4 font-mono text-[#00f2fe]/90 text-xs bg-[#070b14]/45 px-1.5 py-0.5 rounded pointer-events-none">RIFLE 30/30</div>
+        <button id="mobile-weapon-btn" aria-label="Switch weapon" class="mbtn absolute bottom-[5.5rem] right-[5.75rem] w-10 h-10 text-violet-300"><i class="fas fa-rotate text-sm"></i></button>
+        <button id="mobile-reload-btn" aria-label="Reload" class="mbtn absolute bottom-5 right-[6.5rem] w-10 h-10 text-amber-300 font-mono font-bold text-xs">R</button>
+        <button id="mobile-jump-btn" aria-label="Jump" class="mbtn absolute bottom-[6.25rem] right-4 w-11 h-11 text-cyan-300"><i class="fas fa-arrow-up"></i></button>
+        <button id="mobile-fire-btn" aria-label="Fire" class="mbtn absolute bottom-5 right-4 w-[4.5rem] h-[4.5rem] !bg-rose-600/45 !border-rose-400/60 text-white"><i class="fas fa-crosshairs text-xl"></i></button>
     </div>
 
     <!-- Start / Pause Menu Modal -->
@@ -950,6 +909,7 @@
             botsEnabled = enable;
             const btnText = document.getElementById('bot-btn-text');
             btnText.textContent = `Practice Bots: ${botsEnabled ? 'ON' : 'OFF'}`;
+            const bb = document.getElementById('toggle-bots-btn'); bb.setAttribute('aria-pressed', String(botsEnabled)); bb.title = btnText.textContent;
 
             if (botsEnabled) {
                 botConfigs.forEach(cfg => {
@@ -982,6 +942,12 @@
             refreshScoreboardUI();
         }
 
+        document.getElementById('sb-toggle').addEventListener('click', (e) => {
+            e.stopPropagation();
+            const panel = document.getElementById('sb-panel');
+            const open = panel.classList.toggle('hidden') === false;
+            e.currentTarget.setAttribute('aria-expanded', String(open));
+        });
         document.getElementById('toggle-bots-btn').addEventListener('click', (e) => {
             e.stopPropagation();
             enablePracticeBots(!botsEnabled);
@@ -1298,12 +1264,25 @@
             let lookTouchId = null;
             let lastLookPos = { x: 0, y: 0 };
 
+            // The look surface covers the whole screen under the joystick and buttons, so any
+            // touch that doesn't start on a control drags to aim. Multi-touch: move + aim + fire.
             lookZone.addEventListener('touchstart', (e) => {
                 e.preventDefault();
+                if (lookTouchId !== null) {
+                    // keep the existing aim finger unless it's gone
+                    let alive = false;
+                    for (let i = 0; i < e.touches.length; i++) if (e.touches[i].identifier === lookTouchId) alive = true;
+                    if (alive) return;
+                }
                 const t = e.changedTouches[0];
                 lookTouchId = t.identifier;
                 lastLookPos = { x: t.clientX, y: t.clientY };
             }, { passive: false });
+            const endLook = (e) => {
+                for (let i = 0; i < e.changedTouches.length; i++) if (e.changedTouches[i].identifier === lookTouchId) lookTouchId = null;
+            };
+            lookZone.addEventListener('touchend', endLook);
+            lookZone.addEventListener('touchcancel', endLook);
 
             lookZone.addEventListener('touchmove', (e) => {
                 e.preventDefault();
@@ -1314,7 +1293,7 @@
                         const dy = t.clientY - lastLookPos.y;
                         lastLookPos = { x: t.clientX, y: t.clientY };
 
-                        const touchSensitivity = 0.0045;
+                        const touchSensitivity = 0.006;
                         localPlayer.yaw -= dx * touchSensitivity;
                         localPlayer.pitch -= dy * touchSensitivity;
                         const maxPitch = Math.PI / 2 - 0.08;
@@ -1462,11 +1441,11 @@
             hpBar.style.width = `${hp}%`;
 
             if (hp > 50) {
-                hpText.className = 'font-cyber font-black text-xl sm:text-2xl text-emerald-400';
+                hpText.className = 'text-xs font-bold w-9 text-right text-emerald-400';
             } else if (hp > 25) {
-                hpText.className = 'font-cyber font-black text-xl sm:text-2xl text-amber-400';
+                hpText.className = 'text-xs font-bold w-9 text-right text-amber-400';
             } else {
-                hpText.className = 'font-cyber font-black text-xl sm:text-2xl text-rose-500';
+                hpText.className = 'text-xs font-bold w-9 text-right text-rose-500';
             }
 
             document.getElementById('stat-kills').textContent = localPlayer.kills;
@@ -1539,16 +1518,16 @@
         function addKillFeedMessage(killer, victim, color) {
             const feed = document.getElementById('kill-feed');
             const item = document.createElement('div');
-            item.className = 'bg-slate-900/85 border border-slate-700/80 px-3 py-1 rounded-full text-xs shadow-md flex items-center gap-2 animate-fade-in';
+            item.className = 'bg-[#070b14]/55 px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-mono flex items-center gap-1.5 whitespace-nowrap transition-opacity duration-500';
+            while (feed.children.length >= 3) feed.firstElementChild.remove();
             item.innerHTML = `
                 <span class="font-bold" style="color:${color || '#22d3ee'}">${killer}</span>
-                <i class="fas fa-bolt text-amber-400 text-[10px]"></i>
+                <i class="fas fa-bolt text-amber-400 text-[8px]"></i>
                 <span class="text-slate-300 font-semibold">${victim}</span>
             `;
             feed.appendChild(item);
-            setTimeout(() => {
-                item.remove();
-            }, 4500);
+            setTimeout(() => { item.style.opacity = '0'; }, 2200);
+            setTimeout(() => { item.remove(); }, 2700);
         }
 
         function showMenuModal(isPaused) {
@@ -1805,7 +1784,10 @@
             else if (map[e.code]) switchWeapon(map[e.code]);
         });
         document.querySelectorAll('#hud-weapons button').forEach(b => b.addEventListener('click', (e) => { e.stopPropagation(); switchWeapon(b.dataset.w); }));
-        if (isTouchDevice) { document.getElementById('weapon-panel').classList.add('hidden'); document.getElementById('pause-btn').classList.remove('sm:hidden'); }
+        if (isTouchDevice) { document.body.classList.add('touch'); document.getElementById('weapon-panel').classList.add('hidden'); }
+        window.__caYaw = () => localPlayer.yaw;
+        window.__caFiring = () => !!weaponState.isTriggerHeld;
+        window.__caJoy = () => [joystickVector.x, joystickVector.y];
 
         // ---------- Procedural cyber-soldier ----------
         function createCyberSoldier(teamColor = 0x00f2fe) {

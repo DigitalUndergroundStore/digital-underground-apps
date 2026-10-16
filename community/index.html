@@ -155,6 +155,7 @@
         '<div class="buyrow">' +
         '<span class="price">' + esc(row.priceLabel || "See site") + "</span>" +
         '<a class="cta" data-out="' + esc(row.id) + '" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener">Visit</a>' +
+        (row.contactable ? '<a class="cta2" href="/community/p/?id=' + encodeURIComponent(row.id) + '#contact" aria-label="Contact the developer of ' + esc(row.name) + '">Contact</a>' : "") +
         "</div></div>";
       grid.appendChild(art);
       if (window.duTrack) duTrack.observe(art, row.id);

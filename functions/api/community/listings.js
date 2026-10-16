@@ -3,6 +3,7 @@ import {
   json,
   listApproved,
   publicListing,
+  listingContactAddress,
 } from "../../_lib/community.js";
 
 export async function onRequest(context) {
@@ -18,7 +19,7 @@ export async function onRequest(context) {
   let listings = [];
   if (kv) {
     try {
-      listings = await listApproved(kv);
+      listings = await listApproved(kv, env);
     } catch (e) {
       console.error("community listings kv error", e);
       return json({ error: "Could not load listings." }, 500);
@@ -33,8 +34,8 @@ export async function onRequest(context) {
     });
     if (res.ok) {
       const data = await res.json();
-      if (Array.isArray(data)) staticListings = data.map(publicListing);
-      else if (Array.isArray(data?.listings)) staticListings = data.listings.map(publicListing);
+      if (Array.isArray(data)) staticListings = data.map((r) => ({ ...publicListing(r), contactable: !!listingContactAddress(env, r) }));
+      else if (Array.isArray(data?.listings)) staticListings = data.listings.map((r) => ({ ...publicListing(r), contactable: !!listingContactAddress(env, r) }));
     }
   } catch {
     /* static seed optional */

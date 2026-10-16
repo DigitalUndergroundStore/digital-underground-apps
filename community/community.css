@@ -136,6 +136,13 @@ a { color: inherit; -webkit-tap-highlight-color: transparent; }
   background: linear-gradient(105deg, #6d28d9, #1e3a8a);
   color: #fff; font-weight: 700; font-size: 14px; text-decoration: none;
 }
+.card .buyrow .price { margin-right: auto; }
+.card .cta2 {
+  min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
+  padding: 0 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,.22);
+  background: rgba(255,255,255,.04); color: #e2e8f0; font-weight: 600; font-size: 13px; text-decoration: none;
+}
+.card .cta2:hover { border-color: rgba(34,211,238,.6); color: #fff; }
 .empty {
   padding: 32px 20px; border-radius: 20px;
   border: 1px dashed rgba(255, 255, 255, .18);

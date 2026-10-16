@@ -355,12 +355,12 @@ export async function kvDeleteListing(kv, id) {
   await kv.delete(`community:item:${id}`);
 }
 
-export async function listApproved(kv) {
+export async function listApproved(kv, env) {
   const index = await kvGetIndex(kv);
   const out = [];
   for (const id of index.approved) {
     const row = await kvGetListing(kv, id);
-    if (row && row.status === "approved") out.push(publicListing(row));
+    if (row && row.status === "approved") out.push(env ? { ...publicListing(row), contactable: !!listingContactAddress(env, row) } : publicListing(row));
   }
   out.sort((a, b) => (a.name || "").localeCompare(b.name || ""));
   return out;

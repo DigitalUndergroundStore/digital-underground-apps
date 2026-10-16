@@ -56,7 +56,7 @@ export async function onRequest(context) {
   if (!Array.isArray(pinned)) pinned = [];
   const rank = (id) => { const i = pinned.indexOf(id); return i < 0 ? 1e9 : i; };
   const merged = [...byId.values()].sort((a, b) =>
-    rank(a.id) - rank(b.id) || (a.name || "").localeCompare(b.name || "")
+    rank(a.id) - rank(b.id) || (a.curated ? 1 : 0) - (b.curated ? 1 : 0) || (a.name || "").localeCompare(b.name || "")
   );
 
   return json(

@@ -192,6 +192,7 @@
     all.sort(function (a, b) {
       var pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
       if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);
+      if (!!a.curated !== !!b.curated) return a.curated ? 1 : -1;
       return (a.name || "").localeCompare(b.name || "");
     });
     render();

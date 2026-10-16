@@ -41,7 +41,7 @@
   function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   var EXT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>';
   var SHARE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v14"/></svg>';
-  var CATS = { apps: "App", "ai-tools": "AI tool", books: "Book", templates: "Template", other: "Other" };
+  var CATS = { apps: "App", "ai-tools": "AI tool", games: "Game", books: "Book", templates: "Template", other: "Other" };
   var id = new URLSearchParams(location.search).get("id") || "";
   var out = document.getElementById("out");
   function paras(t) { return String(t || "").split(/\n{2,}/).map(function (p) { return "<p>" + esc(p).replace(/\n/g, "<br>") + "</p>"; }).join(""); }

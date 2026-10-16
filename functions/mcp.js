@@ -9,7 +9,7 @@ const CORS = {
   "Access-Control-Allow-Headers": "Content-Type, Accept, Authorization, Mcp-Session-Id, Mcp-Protocol-Version, Last-Event-ID",
   "Access-Control-Expose-Headers": "Mcp-Session-Id, Mcp-Protocol-Version",
 };
-const CATS = ["apps", "ai-tools", "books", "templates", "other"];
+const CATS = ["apps", "ai-tools", "games", "books", "templates", "other"];
 const TOOLS = [
   {
     name: "search_listings",

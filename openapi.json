@@ -15,7 +15,7 @@
       "bearer": {
         "type": "http",
         "scheme": "bearer",
-        "bearerFormat": "duk_…"
+        "bearerFormat": "duk_\u2026"
       }
     },
     "schemas": {
@@ -106,6 +106,7 @@
             "enum": [
               "apps",
               "ai-tools",
+              "games",
               "books",
               "templates",
               "other"

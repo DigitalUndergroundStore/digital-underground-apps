@@ -2,7 +2,7 @@
  * Community marketplace helpers (link-out listings, moderation queue).
  */
 
-export const CATEGORIES = ["apps", "ai-tools", "books", "templates", "other"];
+export const CATEGORIES = ["apps", "ai-tools", "games", "books", "templates", "other"];
 
 const RATE_LIMIT = 8;
 const RATE_WINDOW_MS = 60 * 60 * 1000;

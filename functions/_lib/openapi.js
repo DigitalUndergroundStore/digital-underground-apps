@@ -15,7 +15,7 @@ const Create = {
   properties: {
     name: { type: "string", maxLength: 120 },
     projectUrl: { type: "string", format: "uri", description: "https link to the product (checkout stays on your site)" },
-    category: { type: "string", enum: ["apps", "ai-tools", "books", "templates", "other"] },
+    category: { type: "string", enum: ["apps", "ai-tools", "games", "books", "templates", "other"] },
     pitchShort: { type: "string", maxLength: 280, description: "One-sentence tagline" },
     descriptionLong: { type: "string", maxLength: 4000 },
     priceLabel: { type: "string", maxLength: 40, example: "$9" },

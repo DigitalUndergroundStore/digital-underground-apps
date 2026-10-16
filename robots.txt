@@ -68,6 +68,9 @@ Allow: /store/
 Allow: /p/
 Allow: /get/
 Allow: /community/$
+Allow: /community/p/
+Allow: /advertise
+Allow: /downloads/
 Allow: /community/api/
 Allow: /community/submit/
 Allow: /llms.txt

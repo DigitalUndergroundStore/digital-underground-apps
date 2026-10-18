@@ -11,7 +11,7 @@ const origin = (process.argv[2] || "http://127.0.0.1:8788").replace(/\/$/, "");
 const secretPath =
   process.argv[3] ||
   process.env.PW_SECRET ||
-  "/cursor/stores/bc-db16adba-726f-5f19-a0ab-fa82d552ca1d/internal/secrets/SECRET-pantry-week-buyer-code.txt";
+  "/home/box/.secrets/pantry-week/SECRET-pantry-week-buyer-code.txt";
 
 function readCode() {
   const text = fs.readFileSync(secretPath, "utf8");

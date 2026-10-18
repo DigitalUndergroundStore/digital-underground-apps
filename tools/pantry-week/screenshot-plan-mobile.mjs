@@ -8,7 +8,7 @@ const origin = process.argv[2] || "https://digitalundergroundstore.com";
 const outDir = process.argv[3] || "/tmp/plan-shots";
 const secretPath =
   process.env.PW_SECRET ||
-  "/cursor/stores/bc-db16adba-726f-5f19-a0ab-fa82d552ca1d/internal/secrets/SECRET-pantry-week-buyer-code.txt";
+  "/home/box/.secrets/pantry-week/SECRET-pantry-week-buyer-code.txt";
 
 function loadCode() {
   const raw = readFileSync(secretPath, "utf8");

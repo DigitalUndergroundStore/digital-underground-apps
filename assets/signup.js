@@ -19,7 +19,7 @@
       '<small>Sent by Digital Underground, Ontario, Canada. Every email has an unsubscribe link. <a href="/privacy/">Privacy</a></small>' +
       '</div></div>';
     var f = host.querySelector("form"), m = host.querySelector(".m");
-    var SH_URL = "https://digitalundergroundstore.com/free-book/", SH_TXT = "Get Humanity X: Off the Ground free, a sci-fi novel by Donald Stelling.";
+    var SH_URL = "https://digitalundergroundstore.com/free-book/", SH_TXT = "Get Humanity X: Off the Ground free, a sci-fi novel from Digital Underground.";
     var shb = host.querySelector(".du-sh-b"), alt = host.querySelector(".du-sh .alt");
     shb.addEventListener("click", function () {
       if (navigator.share) { navigator.share({ title: "Humanity X: Off the Ground (free)", text: SH_TXT, url: SH_URL }).catch(function () {}); return; }

@@ -36,7 +36,7 @@ export async function onRequest(context) {
   }
 
   const ip = clientIp(request);
-  if (!(await checkRate(ip))) {
+  if (!(await checkRate(env, ip))) {
     return json({ error: "Too many submissions. Try again later." }, 429);
   }
 
@@ -94,7 +94,7 @@ export async function onRequest(context) {
         if (r.error) return json({ error: r.error }, 400);
       }
     } else if (await accountIdForLogin(kv, listing.email)) {
-      if (!(await loginAllowed(ip, listing.email))) return json({ error: "Too many attempts. Try again later." }, 429);
+      if (!(await loginAllowed(env, ip, listing.email))) return json({ error: "Too many attempts. Try again later." }, 429);
       acct = await checkPassword(kv, listing.email, password);
       if (!acct) {
         return json({ error: "This email already has a creator account. Enter its password, or log in on the Creator dashboard first." }, 400);

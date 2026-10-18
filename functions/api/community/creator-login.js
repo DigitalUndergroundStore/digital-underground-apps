@@ -1,4 +1,4 @@
-import { checkRate, clientIp, getKv, json, normalizeEmail, sendCommunityEmail } from "../../_lib/community.js";
+import { checkRate, checkKeyRate, clientIp, getKv, json, normalizeEmail, sendCommunityEmail } from "../../_lib/community.js";
 import {
   accountIdForLogin,
   checkPassword,
@@ -40,7 +40,7 @@ export async function onRequest(context) {
 
   if (!body.action) {
     if (!email || typeof body.password !== "string") return json(BAD_LOGIN, 400);
-    if (!(await loginAllowed(ip, email))) return json({ ok: false, error: "Too many attempts. Try again in 15 minutes." }, 429);
+    if (!(await loginAllowed(env, ip, email))) return json({ ok: false, error: "Too many attempts. Try again in 15 minutes." }, 429);
     const acct = await checkPassword(kv, email, body.password);
     if (!acct) return json(BAD_LOGIN, 400);
     const cookie = await sessionCookie(env, acct);
@@ -53,7 +53,7 @@ export async function onRequest(context) {
 
   if (body.action === "forgot") {
     if (!email) return json({ ok: false, error: "Enter a valid email." }, 400);
-    if (!(await checkRate("otps:" + ip)) || !(await checkRate("otpe:" + email))) return json(SENT);
+    if (!(await checkRate(env, ip, ":otps")) || !(await checkKeyRate(env, "otpe:" + email))) return json(SENT);
     try {
       const id = await accountIdForLogin(kv, email);
       if (id) {
@@ -79,7 +79,7 @@ export async function onRequest(context) {
       return json({ ok: false, error: "Passwords don't match." }, 400);
     }
     if (!validPassword(body.password)) return json({ ok: false, error: `Password must be at least ${MIN_PASSWORD} characters.` }, 400);
-    if (!email || !(await checkRate("otpv:" + ip))) return json(BAD_CODE, 400);
+    if (!email || !(await checkRate(env, ip, ":otpv"))) return json(BAD_CODE, 400);
     const acctId = await verifyOtp(env, kv, email, String(body.code || ""));
     const acct = acctId ? await getAccount(kv, acctId) : null;
     if (!acct) return json(BAD_CODE, 400);

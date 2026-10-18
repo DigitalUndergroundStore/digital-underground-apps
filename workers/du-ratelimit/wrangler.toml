@@ -1,0 +1,16 @@
+name = "du-ratelimit"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+workers_dev = false
+# Custom Domain: Pages Functions on the same account can fetch() a Custom Domain (workers.dev returns error 1042).
+routes = [{ pattern = "rl.digitalundergroundstore.com", custom_domain = true }]
+
+# Shared fixed-window rate limiter for the digital-underground Pages Functions
+# (called over HTTPS with the RL_TOKEN secret). One object per limit key.
+[[durable_objects.bindings]]
+name = "RL"
+class_name = "RateLimiter"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RateLimiter"]

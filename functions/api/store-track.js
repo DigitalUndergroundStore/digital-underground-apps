@@ -1,6 +1,6 @@
 /** POST /api/store-track — storefront beacon (one per page visit). No cookies, no personal data. */
 import { getKv, clientIp } from "../_lib/community.js";
-import { rateAll } from "../_lib/ratelimit.js";
+import { rateAll, ipRules } from "../_lib/ratelimit.js";
 import { recordStoreBeacon } from "../_lib/storestats.js";
 
 const BOT = /bot|crawl|spider|slurp|preview|headless|lighthouse|facebookexternalhit/i;
@@ -11,7 +11,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
   if (!kv || BOT.test(request.headers.get("User-Agent") || "")) return ok;
   // Per-IP throttle protects the shared KV write quota (free tier: 1,000 writes/day).
   const ip = clientIp(request);
-  if (!(await rateAll([["strk:" + ip, 30, 600], ["strkh:" + ip, 100, 3600]])).ok) return new Response(null, { status: 429, headers: { "Cache-Control": "no-store" } });
+  if (!(await rateAll(env, ipRules("strk", ip, 30, 600, 5))).ok) return new Response(null, { status: 429, headers: { "Cache-Control": "no-store" } });
   let b;
   try { b = JSON.parse((await request.text()).slice(0, 4000)); } catch { return ok; }
   if (!b || typeof b !== "object") return ok;

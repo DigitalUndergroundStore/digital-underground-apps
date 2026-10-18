@@ -23,7 +23,7 @@ import {
   mediaFor,
 } from "./community.js";
 import { runBlocklist } from "./community-screening.js";
-import { rateAll } from "./ratelimit.js";
+import { rateAll, ipRules } from "./ratelimit.js";
 
 const ACCT_PREFIX = "creator:";
 const STATS_PREFIX = "stats:";
@@ -490,7 +490,7 @@ export async function checkPassword(kv, email, password) {
 }
 
 /** Shared login throttle: 10 attempts / 15 min per IP and per email (per data centre + isolate). Async. */
-export async function loginAllowed(ip, email) {
-  const r = await rateAll([["login:ip:" + ip, 10, 900], ["login:em:" + email, 10, 900]]);
+export async function loginAllowed(env, ip, email) {
+  const r = await rateAll(env, [...ipRules("login:ip", ip, 10, 900), ["login:em:" + email, 10, 900]]);
   return r.ok;
 }

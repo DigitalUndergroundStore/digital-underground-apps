@@ -1,40 +1,71 @@
 /**
- * Shared rate limiter: in-isolate Map + Cloudflare Cache API counter (per data centre, free,
- * no KV writes). An attacker hitting one data centre shares one counter across all isolates.
+ * Shared rate limiter backed by a Durable Object in the "du-ratelimit" worker (workers/du-ratelimit),
+ * called over HTTPS with the RL_TOKEN secret: one global counter per key across every Cloudflare server.
+ * Falls back to an in-isolate Map when RL_TOKEN is missing (local dev) or the call fails
+ * (fail open for users, still bounded per isolate).
  * Fixed windows; returns { ok, count, limit, retryAfter }.
  */
 const mem = new Map();
-const HOST = "https://rl.digitalundergroundstore.com/";
+const RL_URL = "https://rl.digitalundergroundstore.com/hit"; // Custom Domain: same-account workers.dev fetches fail (1042)
 
-export async function rateHit(key, limit, windowS) {
+function memHit(key, limit, windowS) {
   const now = Date.now();
   const win = Math.floor(now / (windowS * 1000));
   const k = `${key}|${windowS}|${win}`;
-  const n1 = (mem.get(k) || 0) + 1;
-  mem.set(k, n1);
+  const n = (mem.get(k) || 0) + 1;
+  mem.set(k, n);
   if (mem.size > 20000) mem.clear();
-  let n2 = 0;
-  try {
-    const cache = caches.default;
-    const req = new Request(HOST + encodeURIComponent(k));
-    const hit = await cache.match(req);
-    n2 = (hit ? parseInt(await hit.text(), 10) || 0 : 0) + 1;
-    const ttl = Math.max(1, Math.ceil(((win + 1) * windowS * 1000 - now) / 1000));
-    await cache.put(req, new Response(String(n2), { headers: { "Cache-Control": `max-age=${ttl}` } }));
-  } catch {
-    /* Cache API unavailable (local dev): in-memory only. */
-  }
-  const count = Math.max(n1, n2);
-  const retryAfter = Math.max(1, Math.ceil(((win + 1) * windowS * 1000 - now) / 1000));
-  return { ok: count <= limit, count, limit, retryAfter };
+  return { ok: n <= limit, count: n, limit, retryAfter: Math.max(1, Math.ceil(((win + 1) * windowS * 1000 - now) / 1000)) };
 }
 
-/** All limits must pass. rules: [[key, limit, windowS], ...] */
-export async function rateAll(rules) {
-  let worst = null;
-  for (const [key, limit, windowS] of rules) {
-    const r = await rateHit(key, limit, windowS);
-    if (!r.ok && (!worst || r.retryAfter > worst.retryAfter)) worst = r;
+export async function rateHit(env, key, limit, windowS) {
+  const local = memHit(key, limit, windowS);
+  if (!local.ok) return local;
+  const token = env && env.RL_TOKEN;
+  if (!token) return local;
+  try {
+    const res = await fetch(RL_URL, {
+      method: "POST",
+      headers: { Authorization: "Bearer " + token, "Content-Type": "application/json" },
+      body: JSON.stringify({ key, limit, window: windowS }),
+    });
+    if (!res.ok) throw new Error("rl http " + res.status);
+    const d = await res.json();
+    return { ok: !!d.ok, count: d.count, limit, retryAfter: d.retryAfter || local.retryAfter };
+  } catch (e) {
+    console.error("ratelimit DO error", e && e.message);
+    return local;
   }
-  return worst ? worst : { ok: true };
+}
+
+/** All limits must pass. rules: [[key, limit, windowS], ...]. Stops at the first limit hit. */
+export async function rateAll(env, rules) {
+  for (const [key, limit, windowS] of rules) {
+    const r = await rateHit(env, key, limit, windowS);
+    if (!r.ok) return r;
+  }
+  return { ok: true };
+}
+
+function expandV6(ip) {
+  let [head, tail] = ip.split("::");
+  const h = head ? head.split(":") : [];
+  const t = tail !== undefined ? (tail ? tail.split(":") : []) : [];
+  const fill = tail !== undefined ? new Array(Math.max(0, 8 - h.length - t.length)).fill("0") : [];
+  return [...h, ...fill, ...t].map((x) => x.toLowerCase().padStart(4, "0"));
+}
+/**
+ * IPv6 clients can rotate addresses inside their /64 (and providers hand out whole /48s),
+ * so limits apply per /64 and, more loosely, per /48. IPv4 is per address.
+ * Returns rules for rateAll: [[prefix:addr, limit], [prefix:/48, limit * wideFactor]] with the window.
+ */
+export function ipRules(prefix, ip, limit, windowS, wideFactor = 4) {
+  if (ip && ip.includes(":")) {
+    const g = expandV6(ip);
+    return [
+      [`${prefix}:${g.slice(0, 4).join(":")}::/64`, limit, windowS],
+      [`${prefix}:${g.slice(0, 3).join(":")}::/48`, limit * wideFactor, windowS],
+    ];
+  }
+  return [[`${prefix}:${ip}`, limit, windowS]];
 }

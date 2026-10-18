@@ -1,7 +1,7 @@
 /**
  * Community marketplace helpers (link-out listings, moderation queue).
  */
-import { rateAll } from "./ratelimit.js";
+import { rateAll, ipRules } from "./ratelimit.js";
 
 export const CATEGORIES = ["apps", "ai-tools", "games", "books", "templates", "other"];
 /** Listing stage chosen by the maker. Stored as the display label. Missing = Released. */
@@ -48,8 +48,13 @@ export function clientIp(request) {
 }
 
 /** Shared per-IP limit (8/hour and 20/day per data centre + isolate). Async. */
-export async function checkRate(ip) {
-  const r = await rateAll([["rate:" + ip, RATE_LIMIT, RATE_WINDOW_MS / 1000], ["rated:" + ip, RATE_LIMIT * 3, 86400]]);
+export async function checkRate(env, ip, scope = "") {
+  const r = await rateAll(env, [...ipRules("rate" + scope, ip, RATE_LIMIT, RATE_WINDOW_MS / 1000), ...ipRules("rated" + scope, ip, RATE_LIMIT * 3, 86400)]);
+  return r.ok;
+}
+/** Same limits keyed on an arbitrary string (e.g. an email address). */
+export async function checkKeyRate(env, key) {
+  const r = await rateAll(env, [["rk:" + key, RATE_LIMIT, RATE_WINDOW_MS / 1000]]);
   return r.ok;
 }
 

@@ -1,6 +1,6 @@
 import { clientIp, getKv, json, kvGetIndex } from "../../_lib/community.js";
 import { recordEvents } from "../../_lib/creator.js";
-import { rateAll } from "../../_lib/ratelimit.js";
+import { rateAll, ipRules } from "../../_lib/ratelimit.js";
 
 /**
  * POST /api/community/track  body: { i: [ids], v: [ids], c: [ids] }
@@ -13,7 +13,7 @@ export async function onRequest(context) {
   const kv = getKv(env);
   if (!kv) return new Response(null, { status: 204 });
   // Per-IP throttle (a real visitor sends a handful of beacons per page view).
-  const rl = await rateAll([["trk:" + clientIp(request), 60, 600], ["trkh:" + clientIp(request), 200, 3600]]);
+  const rl = await rateAll(env, ipRules("trk", clientIp(request), 60, 600, 5));
   if (!rl.ok) return new Response(null, { status: 429, headers: { "Retry-After": String(rl.retryAfter), "Cache-Control": "no-store" } });
   let body;
   try {

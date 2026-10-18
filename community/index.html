@@ -50,6 +50,7 @@
       </span>
     </nav>
   </div>
+  <main>
   <header class="page-head">
     <h1>Developer Marketplace</h1>
     <p>Apps, AI tools, books, and templates from independent makers. Free to list — checkout and delivery stay on the maker's own site (Gumroad, Stripe, App Store, or their website).</p>
@@ -57,14 +58,14 @@
   <div class="search-row">
     <input type="search" id="q" placeholder="Search projects…" autocomplete="off" aria-label="Search projects">
   </div>
-  <div class="chips" id="cats" role="tablist" aria-label="Categories">
-    <button type="button" class="is-on" data-cat="all">All</button>
-    <button type="button" data-cat="apps">Apps</button>
-    <button type="button" data-cat="ai-tools">AI tools</button>
-    <button type="button" data-cat="games">Games</button>
-    <button type="button" data-cat="books">Books</button>
-    <button type="button" data-cat="templates">Templates</button>
-    <button type="button" data-cat="other">Other</button>
+  <div class="chips" id="cats" role="group" aria-label="Categories">
+    <button type="button" class="is-on" aria-pressed="true" data-cat="all">All</button>
+    <button type="button" aria-pressed="false" data-cat="apps">Apps</button>
+    <button type="button" aria-pressed="false" data-cat="ai-tools">AI tools</button>
+    <button type="button" aria-pressed="false" data-cat="games">Games</button>
+    <button type="button" aria-pressed="false" data-cat="books">Books</button>
+    <button type="button" aria-pressed="false" data-cat="templates">Templates</button>
+    <button type="button" aria-pressed="false" data-cat="other">Other</button>
   </div>
   <div class="grid" id="grid" aria-live="polite"></div>
   <p class="empty" id="empty" hidden>No listings match yet. <a href="/community/submit/">List your project</a> — we review every submission.</p>
@@ -91,6 +92,7 @@
       <p>Lost your link? Email <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you used on your listing.</p>
     </details>
   </section>
+  </main>
   <footer class="foot">
     <p><a href="/store/">← Back to the DU store</a> · <a href="/community/submit/">List your project</a> · <a href="/support/" style="display:inline-block;padding:6px 13px;border:1px solid rgba(185,168,255,.5);border-radius:999px;text-decoration:none">💬 Support</a></p>
   </footer>
@@ -171,6 +173,7 @@
     cat = btn.getAttribute("data-cat");
     document.querySelectorAll("#cats button").forEach(function (b) {
       b.classList.toggle("is-on", b === btn);
+      b.setAttribute("aria-pressed", b === btn ? "true" : "false");
     });
     render();
   });

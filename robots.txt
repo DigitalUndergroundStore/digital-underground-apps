@@ -61,6 +61,7 @@ Allow: /offline-habit-tracker-focus-timer/
 Allow: /free-study-planner-for-students/
 Allow: /list-your-indie-app-free/
 Allow: /privacy/
+Allow: /free-book/
 Allow: /assets/og/
 Allow: /llms.txt
 Allow: /openapi.json
@@ -88,6 +89,7 @@ Allow: /offline-habit-tracker-focus-timer/
 Allow: /free-study-planner-for-students/
 Allow: /list-your-indie-app-free/
 Allow: /privacy/
+Allow: /free-book/
 Allow: /assets/og/
 Allow: /advertise
 Allow: /downloads/

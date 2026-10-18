@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>Quad Pong: 4-player neon free-for-all Pong</title>
+<meta name="description" content="4-player neon free-for-all Pong. Quick Match online, invite friends with a link, or play solo against 3 bots. Last wall standing wins. Free in your browser.">
+<meta property="og:title" content="Quad Pong"><meta property="og:description" content="4-player neon free-for-all Pong. Last wall standing.">
+<meta property="og:image" content="https://digitalundergroundstore.com/games/quad-pong/cover.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#050b12">
+<link rel="icon" href="icon.png" type="image/png">
+<style>
+:root{--bg:#050b12;--line:#1d3a4a;--cy:#5ef2e0;--cy2:#38bdf8;--tx:#dff6ff;--mut:#7fa3b5}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:radial-gradient(1100px 700px at 50% -10%,#0d2533,var(--bg));color:var(--tx);font:15px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow:hidden;touch-action:none;user-select:none}
+button,select{font:inherit;color:inherit;cursor:pointer}
+.screen{position:fixed;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 14px max(12px,env(safe-area-inset-bottom))}
+.screen.on{display:flex}#menu{overflow:auto;touch-action:pan-y}
+.brand{letter-spacing:.3em;font-size:11px;color:var(--cy);font-weight:700}
+h1{margin:6px 0 2px;font-size:clamp(30px,9vw,46px);letter-spacing:.1em;text-shadow:0 0 18px rgba(94,242,224,.55)}
+.tag{color:var(--cy2);font-weight:700;letter-spacing:.12em;font-size:12px;margin-bottom:16px;text-transform:uppercase}
+.card{width:min(420px,100%);background:rgba(11,22,34,.85);border:1px solid var(--line);border-radius:16px;padding:16px}
+.name{display:flex;gap:8px;align-items:center;margin-bottom:12px}.name label{font-size:11px;letter-spacing:.2em;color:var(--mut)}
+.name input{flex:1;min-width:0;background:#06111a;border:1px solid var(--line);border-radius:10px;color:var(--tx);padding:10px 12px;font-size:16px;font-weight:700;text-transform:uppercase}
+.big{display:block;width:100%;padding:16px;border-radius:14px;border:1px solid var(--cy);background:linear-gradient(180deg,rgba(94,242,224,.25),rgba(94,242,224,.08));font-weight:800;letter-spacing:.12em;font-size:17px;box-shadow:0 0 22px rgba(94,242,224,.25);margin-bottom:10px}
+.big small{display:block;font-weight:600;letter-spacing:.06em;font-size:11px;color:var(--mut);margin-top:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{padding:13px 10px;border-radius:12px;border:1px solid var(--line);background:#0a1a26;font-weight:700;letter-spacing:.06em}
+.join{display:flex;gap:8px;margin-top:10px}.join input{flex:1;min-width:0;text-align:center;letter-spacing:.4em;font-weight:800;font-size:18px;background:#06111a;border:1px solid var(--line);border-radius:10px;color:var(--tx);padding:10px;text-transform:uppercase}
+.mini{font-size:12px;color:var(--mut);text-align:center;margin-top:12px}.mini a{color:var(--cy)}
+.code{font-size:48px;font-weight:900;letter-spacing:.3em;color:var(--cy);text-shadow:0 0 20px rgba(94,242,224,.6);margin:8px 0}
+.seats{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:min(380px,100%);margin:10px 0}.seats div{padding:10px;border-radius:10px;border:1px solid var(--line);background:#0a1a26;font-weight:700;font-size:13px;text-align:center}
+#game{padding:6px}
+.hud{position:fixed;top:max(8px,env(safe-area-inset-top));left:8px;right:8px;display:flex;justify-content:space-between;align-items:center;font-size:12px;z-index:2;pointer-events:none}
+.hud button{pointer-events:auto;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#0a1a26}
+canvas#c{display:block;touch-action:none;border-radius:12px;box-shadow:0 0 0 1px var(--line),0 0 40px rgba(56,189,248,.15)}
+.hint{position:fixed;bottom:max(10px,env(safe-area-inset-bottom));left:0;right:0;text-align:center;font-size:12px;color:var(--mut);pointer-events:none}
+.over{position:fixed;inset:0;background:rgba(3,8,13,.82);display:none;align-items:center;justify-content:center;z-index:5}.over.on{display:flex}.over .card{text-align:center}.over h2{font-size:32px;margin:4px 0 6px;letter-spacing:.1em}
+.toast{position:fixed;left:50%;top:50px;transform:translateX(-50%);background:#0b1622;border:1px solid var(--cy);padding:8px 14px;border-radius:10px;font-size:13px;display:none;z-index:9}
+.lb{margin-top:12px;font-size:13px}.lb h3{margin:0 0 6px;font-size:11px;letter-spacing:.2em;color:var(--mut)}.lb ol{margin:0;padding-left:22px;max-height:110px;overflow:auto}
+</style></head>
+<body>
+<section id="menu" class="screen on">
+  <div class="brand">DIGITAL UNDERGROUND</div><h1>QUAD PONG</h1><div class="tag">Last wall standing</div>
+  <div class="card">
+    <div class="name"><label for="nm">NAME</label><input id="nm" maxlength="12" autocomplete="off" spellcheck="false"></div>
+    <button class="big" id="bQuick">QUICK MATCH<small>Online · up to 4 players · bots fill empty walls</small></button>
+    <div class="row"><button class="btn" id="bSolo">SOLO VS 3 BOTS</button><button class="btn" id="bHost">PLAY FRIENDS</button></div>
+    <div class="row" style="margin-top:10px"><select class="btn" id="diff" aria-label="Bot difficulty"><option value="0">Bots: Easy</option><option value="1" selected>Bots: Normal</option><option value="2">Bots: Hard</option></select><select class="btn" id="lives" aria-label="Lives"><option value="3">3 lives</option><option value="5" selected>5 lives</option><option value="8">8 lives</option></select></div>
+    <div class="join"><input id="code" maxlength="4" placeholder="CODE" autocomplete="off" aria-label="Room code"><button class="btn" id="bJoin">JOIN</button></div>
+    <div class="lb"><h3>SOLO WINS · GLOBAL TOP</h3><ol id="lbList"><li>Loading…</li></ol></div>
+    <div class="mini">You always defend the bottom wall. Drag, use the mouse, or ← → / A D.<br><a href="https://digitalundergroundstore.com/games/" target="_blank" rel="noopener">More free games</a></div>
+  </div>
+</section>
+<section id="lobby" class="screen">
+  <div class="brand">DIGITAL UNDERGROUND</div><h2 id="lobT" style="margin:10px 0 0">Room</h2><div class="code" id="lobCode">····</div>
+  <div class="seats" id="seats"></div><p id="lobMsg" class="mini" style="font-size:14px"></p>
+  <div class="row" style="width:min(380px,100%)"><button class="btn" id="bShare">SHARE LINK</button><button class="btn" id="bStart">START NOW</button></div>
+  <button class="btn" id="bLobBack" style="margin-top:10px;width:min(380px,100%)">BACK</button>
+</section>
+<section id="game" class="screen">
+  <div class="hud"><button id="bQuit">✕</button><span id="hudMode"></span><button id="bSnd">♪</button></div>
+  <canvas id="c"></canvas><div class="hint" id="hint">Drag anywhere to move your paddle</div>
+</section>
+<div class="over" id="over"><div class="card"><div class="brand" id="ovSub">MATCH OVER</div><h2 id="ovT">YOU WIN</h2><p id="ovMsg" class="mini" style="font-size:14px"></p><div class="row"><button class="btn" id="bAgain">PLAY AGAIN</button><button class="btn" id="bMenu">MENU</button></div></div></div>
+<div class="toast" id="toast"></div>
+<script>
+/* DU realtime relay client (du-games worker). Seats assigned by server; host = lowest seat. */
+const DUNet = (() => {
+  const API = "https://du-games.digitalunderground-store.workers.dev";
+  async function get(path) { const r = await fetch(API + path, { cache: "no-store" }); if (!r.ok) throw new Error("server " + r.status); return r.json(); }
+  function connect(game, room, name, h) {
+    const ws = new WebSocket(API.replace(/^http/, "ws") + "/ws?game=" + game + "&room=" + encodeURIComponent(room) + "&name=" + encodeURIComponent(name || ""));
+    const c = { room, seat: -1, host: -1, seats: [], open: false, closed: false,
+      send(d, to) { if (ws.readyState === 1) ws.send(JSON.stringify(to == null ? { d } : { d, to })); },
+      close() { c.closed = true; try { ws.close(); } catch (e) {} },
+      get isHost() { return c.seat >= 0 && c.seat === c.host; } };
+    let pingT = null;
+    ws.onopen = () => { c.open = true; pingT = setInterval(() => { if (ws.readyState === 1) ws.send(JSON.stringify({ t: "ping", at: Date.now() })); }, 20000); };
+    ws.onmessage = (e) => { let m; try { m = JSON.parse(e.data); } catch (_) { return; }
+      if (m.t === "hello") { c.seat = m.seat; c.cap = m.cap; h.hello && h.hello(c); }
+      else if (m.t === "roster") { c.seats = m.seats; c.host = m.host; h.roster && h.roster(c); }
+      else if (m.t === "m") h.msg && h.msg(m.from, m.d, c);
+      else if (m.t === "full") h.error && h.error("That room is full.");
+    };
+    ws.onclose = () => { clearInterval(pingT); if (!c.closed) h.closed && h.closed(c); };
+    ws.onerror = () => { h.error && h.error("Could not reach the game server."); };
+    return c;
+  }
+  return {
+    quick: (game) => get("/quick?game=" + game).then((r) => r.room),
+    newRoom: (game) => get("/new?game=" + game).then((r) => r.room),
+    connect,
+    scores: (game, board) => get("/scores?game=" + game + "&board=" + board).catch(() => ({ top: [] })),
+    submit: (game, board, name, score) => fetch(API + "/scores?game=" + game + "&board=" + board, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name, score }) }).then((r) => r.json()).catch(() => null),
+    roomFromUrl() { try { const r = (new URLSearchParams(location.search).get("room") || "").toUpperCase(); return /^[A-Z0-9]{4}$/.test(r) ? r : ""; } catch (e) { return ""; } },
+    shareUrl(room, publicUrl) { const onItch = /(^|\.)itch\.(io|zone)$/i.test(location.hostname); const base = onItch || location.protocol === "file:" ? publicUrl : location.href.split("?")[0].split("#")[0]; return base + "?room=" + room; },
+  };
+})();
+
+(() => {
+"use strict";
+const $ = (id) => document.getElementById(id);
+const PUBLIC_URL = "https://digitalundergroundstore.com/games/quad-pong/";
+const COL = ["#5ef2e0", "#e15bff", "#ffd84d", "#5dff8a"];
+const SIDE = ["bottom", "left", "top", "right"]; // seat i defends SIDE[i]; seat 0 is drawn at the bottom from its own view
+const PW = 0.22, PAD = 0.035, BR = 0.014;
+const S = { mode: null, running: false, net: null, players: [], balls: [], t: 0, mySeat: 0, countdown: 0, lastSend: 0, view: null, input: 0.5, keys: 0, names: [], sound: true, wins: +localStorage.getItem("qp_wins") || 0 };
+const nm = $("nm"); nm.value = (localStorage.getItem("qp_name") || "PLAYER" + ((Math.random() * 90 + 10) | 0)).toUpperCase();
+nm.addEventListener("change", () => { nm.value = nm.value.replace(/[^A-Z0-9 _-]/gi, "").toUpperCase().slice(0, 12) || "PLAYER"; localStorage.setItem("qp_name", nm.value); });
+const show = (id) => { for (const s of document.querySelectorAll(".screen")) s.classList.toggle("on", s.id === id); };
+const toast = (t, ms = 2000) => { const e = $("toast"); e.textContent = t; e.style.display = "block"; clearTimeout(toast.t); toast.t = setTimeout(() => (e.style.display = "none"), ms); };
+let actx = null; function beep(f, d = 0.05, v = 0.05) { if (!S.sound) return; try { actx = actx || new (window.AudioContext || window.webkitAudioContext)(); const o = actx.createOscillator(), g = actx.createGain(); o.frequency.value = f; o.type = "square"; g.gain.value = v; o.connect(g); g.connect(actx.destination); o.start(); g.gain.exponentialRampToValueAtTime(0.0001, actx.currentTime + d); o.stop(actx.currentTime + d); } catch (e) {} }
+
+/* --- simulation (authoritative on solo / host). World is the unit square; seat 0 bottom (y=1), 1 left (x=0), 2 top (y=0), 3 right (x=1). --- */
+function newMatch(humans, lives, diff) { S.players = [0, 1, 2, 3].map((i) => ({ pos: 0.5, lives, alive: true, human: humans.includes(i), bot: !humans.includes(i), diff, name: S.names[i] || (humans.includes(i) ? "PLAYER " + (i + 1) : "BOT " + (i + 1)), tgt: 0.5 }));
+  S.balls = []; S.t = 0; S.countdown = 2.2; S.speedUp = 0; addBall(); }
+function addBall() { const a = Math.random() * Math.PI * 2; S.balls.push({ x: 0.5, y: 0.5, vx: Math.cos(a) * 0.38, vy: Math.sin(a) * 0.38, last: -1 }); }
+function paddleSpan(p) { return [p.pos - PW / 2, p.pos + PW / 2]; }
+function step(dt) { if (S.countdown > 0) { S.countdown -= dt; return; } S.t += dt; S.speedUp += dt;
+  const P = S.players; for (let i = 0; i < 4; i++) { const p = P[i]; if (!p.alive) continue;
+    if (p.bot) botMove(i, dt); p.pos = Math.max(PW / 2, Math.min(1 - PW / 2, p.pos)); }
+  if (S.t > 20 && S.balls.length < 2) addBall(); if (S.t > 50 && S.balls.length < 3) addBall();
+  const mult = 1 + Math.min(0.9, S.speedUp / 90);
+  for (const b of S.balls) { b.x += b.vx * mult * dt; b.y += b.vy * mult * dt;
+    for (let i = 0; i < 4; i++) { const p = P[i]; const along = i % 2 === 0 ? b.x : b.y; let dist, inward;
+      if (i === 0) { dist = 1 - b.y; inward = b.vy > 0; } else if (i === 1) { dist = b.x; inward = b.vx < 0; } else if (i === 2) { dist = b.y; inward = b.vy < 0; } else { dist = 1 - b.x; inward = b.vx > 0; }
+      if (!inward) continue;
+      if (!p.alive) { if (dist <= BR) bounce(b, i, 0); continue; }
+      if (dist <= PAD + BR && dist > PAD - 0.02) { const [a0, a1] = paddleSpan(p); if (along >= a0 - BR && along <= a1 + BR) { bounce(b, i, (along - p.pos) / (PW / 2)); b.last = i; beep(520 + i * 80); } }
+      if (dist <= BR * 0.5) { p.lives--; beep(140, 0.15, 0.08); flash(i); if (p.lives <= 0) { p.alive = false; p.lives = 0; toast((i === S.mySeat ? "Your wall fell" : p.name + " is out"), 1500); }
+        b.x = 0.5; b.y = 0.5; const a = Math.random() * Math.PI * 2; b.vx = Math.cos(a) * 0.38; b.vy = Math.sin(a) * 0.38; }
+    } }
+  const alive = P.filter((p) => p.alive); if (alive.length <= 1 || !P.some((p) => p.alive && p.human)) endMatch(); }
+function bounce(b, side, off) { const sp = Math.min(1.1, Math.hypot(b.vx, b.vy) * 1.04); off = Math.max(-1, Math.min(1, off)); const ang = off * 1.0;
+  if (side === 0) { b.vx = Math.sin(ang) * sp; b.vy = -Math.cos(ang) * sp; b.y = Math.min(b.y, 1 - PAD - BR); }
+  else if (side === 2) { b.vx = Math.sin(ang) * sp; b.vy = Math.cos(ang) * sp; b.y = Math.max(b.y, PAD + BR); }
+  else if (side === 1) { b.vy = Math.sin(ang) * sp; b.vx = Math.cos(ang) * sp; b.x = Math.max(b.x, PAD + BR); }
+  else { b.vy = Math.sin(ang) * sp; b.vx = -Math.cos(ang) * sp; b.x = Math.min(b.x, 1 - PAD - BR); }
+  if (off === 0) { if (side % 2 === 0) b.vx += (Math.random() - 0.5) * 0.08; else b.vy += (Math.random() - 0.5) * 0.08; } }
+function botMove(i, dt) { const p = S.players[i]; const spd = [0.55, 0.85, 1.25][p.diff]; let best = null, bt = 1e9;
+  for (const b of S.balls) { let t; if (i === 0) t = b.vy > 0 ? (1 - PAD - b.y) / b.vy : 1e9; else if (i === 2) t = b.vy < 0 ? (b.y - PAD) / -b.vy : 1e9; else if (i === 1) t = b.vx < 0 ? (b.x - PAD) / -b.vx : 1e9; else t = b.vx > 0 ? (1 - PAD - b.x) / b.vx : 1e9; if (t < bt) { bt = t; best = b; } }
+  let target = 0.5; if (best && bt < 3) { let a = i % 2 === 0 ? best.x + best.vx * bt : best.y + best.vy * bt; for (let k = 0; k < 4; k++) { if (a < 0) a = -a; if (a > 1) a = 2 - a; } target = a; }
+  if (p.diff === 0) target += Math.sin(S.t * 1.7 + i) * 0.08; const d = target - p.pos; p.pos += Math.sign(d) * Math.min(Math.abs(d), spd * dt); }
+const flashes = [0, 0, 0, 0]; function flash(i) { flashes[i] = 0.35; }
+
+/* --- rendering (rotated so my wall is at the bottom) --- */
+const cv = $("c"), ctx = cv.getContext("2d"); let SZ = 300;
+function size() { SZ = Math.floor(Math.min(innerWidth - 12, innerHeight - 70)); const dpr = Math.min(2, devicePixelRatio || 1); cv.width = SZ * dpr; cv.height = SZ * dpr; cv.style.width = cv.style.height = SZ + "px"; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+addEventListener("resize", size);
+function toView(x, y) { const r = ((S.mySeat % 4) + 4) % 4; let u = x, v = y; for (let k = 0; k < r; k++) { const nu = v, nv = 1 - u; u = nu; v = nv; } return [u * SZ, v * SZ]; }
+function draw(dt) { ctx.clearRect(0, 0, SZ, SZ); ctx.fillStyle = "#03080d"; ctx.fillRect(0, 0, SZ, SZ);
+  ctx.strokeStyle = "rgba(94,242,224,.07)"; for (let k = 1; k < 8; k++) { ctx.beginPath(); ctx.moveTo(k * SZ / 8, 0); ctx.lineTo(k * SZ / 8, SZ); ctx.moveTo(0, k * SZ / 8); ctx.lineTo(SZ, k * SZ / 8); ctx.stroke(); }
+  const P = S.players; if (!P.length) return;
+  for (let i = 0; i < 4; i++) { const p = P[i]; const ends = [[0, 1, 1, 1], [0, 0, 0, 1], [0, 0, 1, 0], [1, 0, 1, 1]][i]; const [ax, ay] = toView(ends[0], ends[1]), [bx, by] = toView(ends[2], ends[3]);
+    flashes[i] = Math.max(0, flashes[i] - dt); ctx.lineWidth = p.alive ? 3 : 6; ctx.strokeStyle = p.alive ? (flashes[i] > 0 ? "#ff5d7a" : COL[i] + "55") : "#2a4656"; ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(bx, by); ctx.stroke();
+    if (p.alive) { const [a0, a1] = paddleSpan(p); const pts = i === 0 ? [[a0, 1 - PAD], [a1, 1 - PAD]] : i === 2 ? [[a0, PAD], [a1, PAD]] : i === 1 ? [[PAD, a0], [PAD, a1]] : [[1 - PAD, a0], [1 - PAD, a1]];
+      const [x0, y0] = toView(...pts[0]), [x1, y1] = toView(...pts[1]); ctx.lineCap = "round"; ctx.lineWidth = Math.max(6, SZ * 0.018); ctx.strokeStyle = COL[i]; ctx.shadowColor = COL[i]; ctx.shadowBlur = 14; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke(); ctx.shadowBlur = 0; }
+    // label
+    const mid = toView(i === 1 ? 0.09 : i === 3 ? 0.91 : 0.5, i === 0 ? 0.9 : i === 2 ? 0.1 : 0.5); ctx.fillStyle = p.alive ? COL[i] : "#4b6574"; ctx.font = "700 " + Math.max(10, SZ * 0.03) + "px system-ui"; let lx = mid[0]; if (lx < SZ * 0.3) { ctx.textAlign = "left"; lx = SZ * 0.035; } else if (lx > SZ * 0.7) { ctx.textAlign = "right"; lx = SZ * 0.965; } else ctx.textAlign = "center";
+    ctx.fillText((i === S.mySeat ? "YOU" : p.name.slice(0, 9)) + " " + (p.alive ? "♥".repeat(Math.min(p.lives, 6)) : "OUT"), lx, mid[1] + (lx === mid[0] ? 0 : SZ * 0.06)); }
+  for (const b of S.balls) { const [x, y] = toView(b.x, b.y); ctx.fillStyle = "#fff"; ctx.shadowColor = "#5ef2e0"; ctx.shadowBlur = 16; ctx.beginPath(); ctx.arc(x, y, BR * SZ, 0, 7); ctx.fill(); ctx.shadowBlur = 0; }
+  if (S.countdown > 0) { ctx.fillStyle = "#fff"; ctx.font = "900 " + SZ * 0.16 + "px system-ui"; ctx.textAlign = "center"; ctx.fillText(String(Math.ceil(S.countdown)), SZ / 2, SZ / 2 + SZ * 0.06); } }
+
+/* --- input: my paddle position along my wall, in my view's x (0..1 left→right) --- */
+function myWorldPos(viewX) { const s = S.mySeat; return s === 0 || s === 1 ? viewX : 1 - viewX; }
+function setFromPointer(e) { const r = cv.getBoundingClientRect(); const vx = (e.clientX - r.left) / r.width; S.input = Math.max(0, Math.min(1, vx)); S.pointer = true; }
+cv.addEventListener("pointerdown", (e) => { cv.setPointerCapture(e.pointerId); setFromPointer(e); }); cv.addEventListener("pointermove", (e) => { if (e.pointerType === "mouse" || e.buttons || e.pressure > 0) setFromPointer(e); });
+document.addEventListener("pointermove", (e) => { if (S.running && e.target !== cv && e.pointerType !== "mouse" && e.buttons) setFromPointer(e); });
+addEventListener("keydown", (e) => { if (e.target.tagName === "INPUT") return; if (["ArrowLeft", "KeyA"].includes(e.code)) S.keys = -1; if (["ArrowRight", "KeyD"].includes(e.code)) S.keys = 1; });
+addEventListener("keyup", (e) => { if (["ArrowLeft", "KeyA", "ArrowRight", "KeyD"].includes(e.code)) S.keys = 0; });
+function applyInput(dt) { if (S.keys) { S.input = Math.max(0, Math.min(1, S.input + S.keys * 1.3 * dt)); S.pointer = false; } return myWorldPos(S.input); }
+
+/* --- loop --- */
+let last = performance.now();
+function loop(t) { requestAnimationFrame(loop); const dt = Math.min(0.05, (t - last) / 1000); last = t; if (!S.running) return;
+  const me = S.players[S.mySeat]; const want = applyInput(dt);
+  if (S.mode === "solo" || (S.mode === "online" && S.net && S.net.isHost)) { if (me && me.alive) me.pos += (want - me.pos) * Math.min(1, dt * 25);
+    for (let sub = 0; sub < 3; sub++) step(dt / 3);
+    if (S.mode === "online" && t - S.lastSend > 45) { S.lastSend = t; S.net.send({ st: pack() }); } }
+  else if (S.mode === "online") { if (me && me.alive) me.pos += (want - me.pos) * Math.min(1, dt * 25); if (t - S.lastSend > 45) { S.lastSend = t; S.net.send({ in: +me.pos.toFixed(4) }); }
+    for (const b of S.balls) { b.x += b.vx * dt; b.y += b.vy * dt; } if (S.countdown > 0) S.countdown -= dt; }
+  draw(dt); }
+requestAnimationFrame(loop);
+function pack() { return { p: S.players.map((p) => [+p.pos.toFixed(4), p.lives, p.alive ? 1 : 0, p.bot ? 1 : 0]), b: S.balls.map((b) => [+b.x.toFixed(4), +b.y.toFixed(4), +b.vx.toFixed(4), +b.vy.toFixed(4)]), c: +S.countdown.toFixed(2), n: S.names }; }
+function unpack(st) { st.p.forEach((a, i) => { const p = S.players[i] || (S.players[i] = {}); if (i !== S.mySeat || !p.alive) p.pos = a[0]; if (p.lives > a[1] && p.lives != null) flash(i); p.lives = a[1]; const was = p.alive; p.alive = !!a[2]; p.bot = !!a[3]; p.name = (st.n && st.n[i]) || (p.bot ? "BOT " + (i + 1) : "PLAYER " + (i + 1)); if (was && !p.alive) toast(i === S.mySeat ? "Your wall fell" : p.name + " is out", 1500); });
+  S.balls = st.b.map((a) => ({ x: a[0], y: a[1], vx: a[2], vy: a[3] })); S.countdown = st.c; }
+
+function startSolo() { leaveNet(); S.mode = "solo"; S.mySeat = 0; S.names = [nm.value, "BOT 2", "BOT 3", "BOT 4"]; newMatch([0], +$("lives").value, +$("diff").value); go(); }
+function go() { $("over").classList.remove("on"); show("game"); size(); S.running = true; S.input = 0.5; $("hudMode").textContent = S.mode === "solo" ? "SOLO" : "ONLINE · " + S.net.room; $("hint").style.display = ""; setTimeout(() => ($("hint").style.display = "none"), 4000); }
+function endMatch(result) { if (!S.running) return; S.running = false; const P = S.players; const winner = result != null ? result : P.findIndex((p) => p.alive);
+  if (S.mode === "online" && S.net && S.net.isHost) S.net.send({ end: winner, st: pack() });
+  const won = winner === S.mySeat; $("over").classList.add("on"); $("ovSub").textContent = S.mode === "solo" ? "SOLO MATCH" : "ONLINE MATCH"; $("ovT").textContent = won ? "YOU WIN" : "YOU LOSE"; $("ovT").style.color = won ? "var(--cy)" : "#ff5d7a";
+  $("ovMsg").textContent = winner >= 0 ? (won ? "Last wall standing." : (P[winner] ? P[winner].name : "Someone") + " was the last wall standing.") : "Draw.";
+  if (S.mode === "solo" && won) { S.wins++; localStorage.setItem("qp_wins", S.wins); $("ovMsg").textContent += " Solo wins: " + S.wins + "."; DUNet.submit("qp", "solo-wins", nm.value, S.wins).then(loadLb); }
+  $("bAgain").textContent = S.mode === "online" ? (S.net && S.net.isHost ? "REMATCH" : "WAIT FOR HOST") : "PLAY AGAIN"; }
+
+/* --- online --- */
+function renderSeats(c) { const box = $("seats"); box.innerHTML = ""; for (let i = 0; i < 4; i++) { const s = c.seats.find((x) => x.seat === i); const d = document.createElement("div"); d.style.color = COL[i]; d.textContent = s ? (s.name || "PLAYER " + (i + 1)) + (i === c.seat ? " (you)" : "") + (i === c.host ? " ★" : "") : "Bot (open)"; box.appendChild(d); } }
+let autoT = null;
+async function goOnline(kind, code) { leaveNet(); let room = code; show("lobby"); $("lobT").textContent = kind === "quick" ? "Quick Match" : "Friends room"; $("lobCode").textContent = code || "····"; $("lobMsg").textContent = "Connecting…"; $("seats").innerHTML = "";
+  try { if (!room) room = kind === "quick" ? await DUNet.quick("qp") : await DUNet.newRoom("qp"); } catch (e) { toast("Game server unreachable. Try solo.", 3000); show("menu"); return; }
+  $("lobCode").textContent = room; history.replaceState(null, "", location.pathname + "?room=" + room); S.kind = kind;
+  S.net = DUNet.connect("qp", room, nm.value, {
+    roster(c) { renderSeats(c); S.names = [0, 1, 2, 3].map((i) => { const s = c.seats.find((x) => x.seat === i); return s ? s.name || "PLAYER " + (i + 1) : "BOT " + (i + 1); });
+      $("bStart").style.display = c.isHost ? "" : "none"; const n = c.seats.length;
+      if (S.running && c.isHost) { S.players.forEach((p, i) => { const here = c.seats.some((x) => x.seat === i); if (p.human && !here) { p.human = false; p.bot = true; p.name = "BOT " + (i + 1); } }); }
+      if (!S.running) { $("lobMsg").textContent = c.isHost ? (n > 1 ? n + " players here. Start now, or it starts when the room fills." : "Waiting for players… share the link. Start any time; bots fill empty walls.") : "Waiting for the host to start…";
+        clearTimeout(autoT); if (c.isHost && kind === "quick" && n > 1) autoT = setTimeout(hostStart, n >= 4 ? 1500 : 12000); if (c.isHost && n >= 4) autoT = setTimeout(hostStart, 1500); } },
+    msg(from, d, c) { if (d.go && !c.isHost) { S.mode = "online"; S.mySeat = c.seat; S.players = []; unpack(d.go); go(); }
+      if (d.st && !c.isHost && S.running) unpack(d.st);
+      if (d.in != null && c.isHost && S.players[from] && S.players[from].alive) S.players[from].pos = Math.max(PW / 2, Math.min(1 - PW / 2, +d.in));
+      if (d.end != null && !c.isHost) { if (d.st) unpack(d.st); endMatch(d.end); } },
+    error(t) { toast(t, 3000); }, closed() { toast("Disconnected.", 2500); if (S.running) { S.running = false; show("menu"); } },
+  }); }
+function hostStart() { const c = S.net; if (!c || !c.isHost || S.running) return; clearTimeout(autoT); S.mode = "online"; S.mySeat = c.seat; newMatch(c.seats.map((s) => s.seat), +$("lives").value, +$("diff").value); c.send({ go: pack() }); go(); }
+function leaveNet() { clearTimeout(autoT); if (S.net) { S.net.close(); S.net = null; } if (location.search) history.replaceState(null, "", location.pathname); }
+$("bSolo").onclick = startSolo; $("bQuick").onclick = () => goOnline("quick"); $("bHost").onclick = () => goOnline("host"); $("bStart").onclick = hostStart;
+$("bJoin").onclick = () => { const c = $("code").value.toUpperCase().replace(/[^A-Z0-9]/g, ""); if (c.length !== 4) { toast("Enter the 4-character room code."); return; } goOnline("join", c); };
+$("bLobBack").onclick = () => { leaveNet(); show("menu"); };
+$("bShare").onclick = async () => { if (!S.net) return; const url = DUNet.shareUrl(S.net.room, PUBLIC_URL); const text = "Join my Quad Pong room " + S.net.room;
+  try { if (navigator.share) { await navigator.share({ title: "Quad Pong", text, url }); return; } } catch (e) { return; }
+  try { await navigator.clipboard.writeText(url); toast("Link copied", 2000); } catch (e) { prompt("Copy this link", url); } };
+$("bQuit").onclick = () => { S.running = false; leaveNet(); show("menu"); loadLb(); };
+$("bMenu").onclick = () => { $("over").classList.remove("on"); leaveNet(); show("menu"); loadLb(); };
+$("bAgain").onclick = () => { if (S.mode === "solo") startSolo(); else if (S.net && S.net.isHost) { $("over").classList.remove("on"); hostStart(); } else if (!S.net) goOnline("quick"); };
+$("bSnd").onclick = () => { S.sound = !S.sound; $("bSnd").style.opacity = S.sound ? 1 : 0.4; };
+function loadLb() { DUNet.scores("qp", "solo-wins").then((d) => { const l = $("lbList"); const top = (d.top || []).slice(0, 10); l.innerHTML = top.length ? "" : "<li>No wins yet. Be the first.</li>"; for (const r of top) { const li = document.createElement("li"); li.textContent = r.name + " · " + r.score + " wins"; l.appendChild(li); } }); }
+loadLb(); const incoming = DUNet.roomFromUrl(); if (incoming) goOnline("join", incoming);
+window.__qp = S;
+})();
+</script>
+</body></html>

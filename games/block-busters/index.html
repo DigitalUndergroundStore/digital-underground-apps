@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>Block Busters PvP: 1v1 neon falling-block combat</title>
+<meta name="description" content="1v1 neon falling-block combat. Break their well. Guard yours. Quick Match online, play the bot, or go endless. Free in your browser.">
+<meta property="og:title" content="Block Busters PvP">
+<meta property="og:description" content="1v1 neon falling-block combat. Break their well. Guard yours.">
+<meta property="og:image" content="https://digitalundergroundstore.com/games/block-busters/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#050b12">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png" type="image/png"><link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root{--bg:#050b12;--panel:#0b1622;--line:#1d3a4a;--cy:#5ef2e0;--cy2:#38bdf8;--mg:#e15bff;--tx:#dff6ff;--mut:#7fa3b5}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:radial-gradient(1200px 700px at 50% -10%,#0d2533,var(--bg));color:var(--tx);font:15px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow:hidden;touch-action:none;user-select:none}
+button{font:inherit;color:inherit;cursor:pointer}
+.screen{position:fixed;inset:0;display:none;flex-direction:column;align-items:center;padding:max(12px,env(safe-area-inset-top)) 14px max(12px,env(safe-area-inset-bottom))}
+.screen.on{display:flex}
+#menu{justify-content:center;overflow:auto;touch-action:pan-y}
+.brand{letter-spacing:.3em;font-size:11px;color:var(--cy);font-weight:700}
+h1{margin:6px 0 2px;font-size:clamp(28px,8vw,44px);letter-spacing:.08em;text-shadow:0 0 18px rgba(94,242,224,.55)}
+.tag{color:var(--cy2);font-weight:700;letter-spacing:.12em;font-size:12px;margin-bottom:18px;text-transform:uppercase}
+.card{width:min(420px,100%);background:rgba(11,22,34,.85);border:1px solid var(--line);border-radius:16px;padding:16px}
+.name{display:flex;gap:8px;align-items:center;margin-bottom:12px}.name label{font-size:11px;letter-spacing:.2em;color:var(--mut)}
+.name input{flex:1;min-width:0;background:#06111a;border:1px solid var(--line);border-radius:10px;color:var(--tx);padding:10px 12px;font-size:16px;font-weight:700;text-transform:uppercase}
+.big{display:block;width:100%;padding:16px;border-radius:14px;border:1px solid var(--cy);background:linear-gradient(180deg,rgba(94,242,224,.25),rgba(94,242,224,.08));font-weight:800;letter-spacing:.12em;font-size:17px;box-shadow:0 0 22px rgba(94,242,224,.25);margin-bottom:10px}
+.big small{display:block;font-weight:600;letter-spacing:.06em;font-size:11px;color:var(--mut);margin-top:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{padding:13px 10px;border-radius:12px;border:1px solid var(--line);background:#0a1a26;font-weight:700;letter-spacing:.06em}
+.btn:active,.big:active{transform:scale(.98)}
+.join{display:flex;gap:8px;margin-top:10px}.join input{flex:1;min-width:0;text-align:center;letter-spacing:.4em;font-weight:800;font-size:18px;background:#06111a;border:1px solid var(--line);border-radius:10px;color:var(--tx);padding:10px;text-transform:uppercase}
+.mini{font-size:12px;color:var(--mut);text-align:center;margin-top:12px}
+.mini a{color:var(--cy)}
+.lb{margin-top:12px;font-size:13px}.lb h3{margin:0 0 6px;font-size:11px;letter-spacing:.2em;color:var(--mut)}.lb ol{margin:0;padding-left:22px;max-height:120px;overflow:auto}
+/* lobby */
+#lobby{justify-content:center;text-align:center}
+.code{font-size:48px;font-weight:900;letter-spacing:.3em;color:var(--cy);text-shadow:0 0 20px rgba(94,242,224,.6);margin:8px 0}
+.spin{width:38px;height:38px;border:3px solid var(--line);border-top-color:var(--cy);border-radius:50%;animation:sp 1s linear infinite;margin:14px auto}@keyframes sp{to{transform:rotate(360deg)}}
+/* game */
+#game{padding-left:8px;padding-right:8px}
+.hud{width:100%;max-width:760px;display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px}
+.hud b{color:var(--cy)}.hud .x{padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#0a1a26}
+.arena{flex:1;width:100%;max-width:760px;display:flex;gap:10px;align-items:center;justify-content:center;min-height:0;margin:6px 0}
+.side{display:flex;flex-direction:column;gap:8px;align-items:center;font-size:10px;letter-spacing:.15em;color:var(--mut)}
+canvas{display:block;border-radius:10px;background:#03080d;box-shadow:0 0 0 1px var(--line),0 0 30px rgba(56,189,248,.12)}
+#rival{opacity:.95}
+.who{font-size:11px;letter-spacing:.12em;color:var(--mut);text-align:center;margin-top:4px;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pad{width:100%;max-width:520px;display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.pad button{height:58px;border-radius:12px;border:1px solid var(--line);background:#0a1a26;font-size:20px;font-weight:800;touch-action:none}
+.pad button.hi{border-color:var(--cy);color:var(--cy)}
+.pad button:active,.pad button.dn{background:#12344a}
+@media (hover:hover) and (pointer:fine){.pad{display:none}}
+.over{position:fixed;inset:0;background:rgba(3,8,13,.82);display:none;align-items:center;justify-content:center;z-index:5}
+.over.on{display:flex}.over .card{text-align:center}.over h2{font-size:34px;margin:4px 0 6px;letter-spacing:.1em}
+.toast{position:fixed;left:50%;top:14px;transform:translateX(-50%);background:#0b1622;border:1px solid var(--cy);padding:8px 14px;border-radius:10px;font-size:13px;display:none;z-index:9}
+.keys{font-size:11px;color:var(--mut);text-align:center}
+@media (max-width:560px){.hide-sm{display:none}}
+</style></head>
+<body>
+<section id="menu" class="screen on">
+  <div class="brand">DIGITAL UNDERGROUND</div>
+  <h1>BLOCK BUSTERS</h1>
+  <div class="tag">Break their well. Guard yours.</div>
+  <div class="card">
+    <div class="name"><label for="nm">CALLSIGN</label><input id="nm" maxlength="12" autocomplete="off" spellcheck="false"></div>
+    <button class="big" id="bQuick">QUICK MATCH<small>Online 1v1 · auto-matched in seconds</small></button>
+    <div class="row">
+      <button class="btn" id="bBot">VS BOT</button>
+      <button class="btn" id="bEndless">ENDLESS</button>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <button class="btn" id="bHost">PLAY A FRIEND</button>
+      <select class="btn" id="diff" aria-label="Bot difficulty"><option value="0">Bot: Easy</option><option value="1" selected>Bot: Normal</option><option value="2">Bot: Hard</option></select>
+    </div>
+    <div class="join"><input id="code" maxlength="4" placeholder="CODE" autocomplete="off" aria-label="Room code"><button class="btn" id="bJoin">JOIN</button></div>
+    <div class="lb" id="lb"><h3>ENDLESS · GLOBAL TOP</h3><ol id="lbList"><li>Loading…</li></ol></div>
+    <div class="mini">Clear 2+ lines to send garbage. Top out and you lose.<br><a href="https://digitalundergroundstore.com/games/" target="_blank" rel="noopener">More free games</a></div>
+  </div>
+</section>
+<section id="lobby" class="screen">
+  <div class="brand">DIGITAL UNDERGROUND</div>
+  <h2 id="lobT" style="margin:10px 0 0">Finding a rival…</h2>
+  <div class="code" id="lobCode">····</div>
+  <div class="spin"></div>
+  <p id="lobMsg" class="mini" style="font-size:14px">Share the code or link with a friend.</p>
+  <div class="row" style="width:min(380px,100%)"><button class="btn" id="bShare">SHARE LINK</button><button class="btn" id="bLobBot">PLAY BOT INSTEAD</button></div>
+  <button class="btn" id="bLobBack" style="margin-top:10px;width:min(380px,100%)">BACK</button>
+</section>
+<section id="game" class="screen">
+  <div class="hud"><button class="x" id="bQuit">✕</button><div>SCORE <b id="sc">0</b></div><div>LINES <b id="ln">0</b></div><div>LV <b id="lv">1</b></div><div class="hide-sm" id="gmode"></div></div>
+  <div class="arena">
+    <div class="side"><div>HOLD</div><canvas id="hold" width="64" height="64"></canvas><div style="margin-top:6px">NEXT</div><canvas id="next" width="64" height="150"></canvas></div>
+    <div><canvas id="me"></canvas><div class="who" id="meName">YOU</div></div>
+    <div id="rivalWrap"><canvas id="rival"></canvas><div class="who" id="rvName">RIVAL</div><div class="who" id="rvInfo"></div></div>
+  </div>
+  <div class="pad" id="pad">
+    <button data-k="L">◀</button><button data-k="R">▶</button><button data-k="D">▼</button><button data-k="CW" class="hi">⟳</button><button data-k="HOLD" style="font-size:12px">HOLD</button><button data-k="DROP" class="hi">⤓</button>
+  </div>
+  <div class="keys hide-sm">← → move · ↓ soft drop · ↑/X rotate · Z rotate back · Space hard drop · C hold · P pause</div>
+</section>
+<div class="over" id="over"><div class="card"><div class="brand" id="ovSub">GAME OVER</div><h2 id="ovT">YOU WIN</h2><p id="ovMsg" class="mini" style="font-size:14px"></p><div class="row"><button class="btn" id="bAgain">PLAY AGAIN</button><button class="btn" id="bMenu">MENU</button></div></div></div>
+<div class="toast" id="toast"></div>
+<script>
+/* DU realtime relay client (du-games worker). Seats assigned by server; host = lowest seat. */
+const DUNet = (() => {
+  const API = "https://du-games.digitalunderground-store.workers.dev";
+  async function get(path) { const r = await fetch(API + path, { cache: "no-store" }); if (!r.ok) throw new Error("server " + r.status); return r.json(); }
+  function connect(game, room, name, h) {
+    const ws = new WebSocket(API.replace(/^http/, "ws") + "/ws?game=" + game + "&room=" + encodeURIComponent(room) + "&name=" + encodeURIComponent(name || ""));
+    const c = { room, seat: -1, host: -1, seats: [], open: false, closed: false,
+      send(d, to) { if (ws.readyState === 1) ws.send(JSON.stringify(to == null ? { d } : { d, to })); },
+      close() { c.closed = true; try { ws.close(); } catch (e) {} },
+      get isHost() { return c.seat >= 0 && c.seat === c.host; } };
+    let pingT = null;
+    ws.onopen = () => { c.open = true; pingT = setInterval(() => { if (ws.readyState === 1) ws.send(JSON.stringify({ t: "ping", at: Date.now() })); }, 20000); };
+    ws.onmessage = (e) => { let m; try { m = JSON.parse(e.data); } catch (_) { return; }
+      if (m.t === "hello") { c.seat = m.seat; c.cap = m.cap; h.hello && h.hello(c); }
+      else if (m.t === "roster") { c.seats = m.seats; c.host = m.host; h.roster && h.roster(c); }
+      else if (m.t === "m") h.msg && h.msg(m.from, m.d, c);
+      else if (m.t === "full") h.error && h.error("That room is full.");
+    };
+    ws.onclose = () => { clearInterval(pingT); if (!c.closed) h.closed && h.closed(c); };
+    ws.onerror = () => { h.error && h.error("Could not reach the game server."); };
+    return c;
+  }
+  return {
+    quick: (game) => get("/quick?game=" + game).then((r) => r.room),
+    newRoom: (game) => get("/new?game=" + game).then((r) => r.room),
+    connect,
+    scores: (game, board) => get("/scores?game=" + game + "&board=" + board).catch(() => ({ top: [] })),
+    submit: (game, board, name, score) => fetch(API + "/scores?game=" + game + "&board=" + board, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ name, score }) }).then((r) => r.json()).catch(() => null),
+    roomFromUrl() { try { const r = (new URLSearchParams(location.search).get("room") || "").toUpperCase(); return /^[A-Z0-9]{4}$/.test(r) ? r : ""; } catch (e) { return ""; } },
+    shareUrl(room, publicUrl) { const onItch = /(^|\.)itch\.(io|zone)$/i.test(location.hostname); const base = onItch || location.protocol === "file:" ? publicUrl : location.href.split("?")[0].split("#")[0]; return base + "?room=" + room; },
+  };
+})();
+
+(() => {
+"use strict";
+const $ = (id) => document.getElementById(id);
+const PUBLIC_URL = "https://digitalundergroundstore.com/games/block-busters/";
+const W = 10, H = 20;
+const COLORS = { I: "#5ef2e0", O: "#ffd84d", T: "#e15bff", S: "#5dff8a", Z: "#ff5d7a", J: "#4d8bff", L: "#ff9d3d", G: "#3a5566" };
+const SHAPES = { I: [[0,1],[1,1],[2,1],[3,1]], O: [[1,0],[2,0],[1,1],[2,1]], T: [[1,0],[0,1],[1,1],[2,1]], S: [[1,0],[2,0],[0,1],[1,1]], Z: [[0,0],[1,0],[1,1],[2,1]], J: [[0,0],[0,1],[1,1],[2,1]], L: [[2,0],[0,1],[1,1],[2,1]] };
+const KICKS = [[0,0],[-1,0],[1,0],[0,-1],[-2,0],[2,0]];
+const GARB = [0, 0, 1, 2, 4];
+function rng(seed) { let s = seed >>> 0 || 1; return () => { s ^= s << 13; s ^= s >>> 17; s ^= s << 5; return (s >>> 0) / 4294967296; }; }
+function rotate(cells, k, type) { if (type === "O") return cells; const n = type === "I" ? 4 : 3; let c = cells; for (let i = 0; i < ((k % 4) + 4) % 4; i++) c = c.map(([x, y]) => [n - 1 - y, x]); return c; }
+
+class Board {
+  constructor(seed) { this.g = Array.from({ length: H }, () => Array(W).fill(0)); this.rand = rng(seed); this.bag = []; this.queue = []; this.hold = null; this.canHold = true;
+    this.score = 0; this.lines = 0; this.level = 1; this.combo = -1; this.pendingGarbage = 0; this.dead = false; this.fill(); this.spawn(); }
+  fill() { while (this.queue.length < 6) { if (!this.bag.length) { this.bag = "IOTSZJL".split(""); for (let i = 6; i > 0; i--) { const j = (this.rand() * (i + 1)) | 0; [this.bag[i], this.bag[j]] = [this.bag[j], this.bag[i]]; } } this.queue.push(this.bag.pop()); } }
+  spawn(type) { const t = type || this.queue.shift(); this.fill(); this.p = { t, r: 0, x: 3, y: t === "I" ? -1 : 0 }; if (this.collide(this.p)) { this.dead = true; } }
+  cells(p) { return rotate(SHAPES[p.t], p.r, p.t).map(([x, y]) => [x + p.x, y + p.y]); }
+  collide(p) { return this.cells(p).some(([x, y]) => x < 0 || x >= W || y >= H || (y >= 0 && this.g[y][x])); }
+  move(dx, dy) { const q = { ...this.p, x: this.p.x + dx, y: this.p.y + dy }; if (this.collide(q)) return false; this.p = q; return true; }
+  rot(d) { for (const [kx, ky] of KICKS) { const q = { ...this.p, r: this.p.r + d, x: this.p.x + kx, y: this.p.y + ky }; if (!this.collide(q)) { this.p = q; return true; } } return false; }
+  ghostY() { let q = { ...this.p }; while (!this.collide({ ...q, y: q.y + 1 })) q.y++; return q.y; }
+  hardDrop() { const d = this.ghostY() - this.p.y; this.p.y += d; this.score += d * 2; return this.lock(); }
+  doHold() { if (!this.canHold) return; const t = this.p.t; if (this.hold) { this.spawn(this.hold); } else this.spawn(); this.hold = t; this.canHold = false; }
+  lock() {
+    let top = false; for (const [x, y] of this.cells(this.p)) { if (y < 0) top = true; else this.g[y][x] = this.p.t; }
+    let cleared = 0; for (let y = H - 1; y >= 0; y--) { if (this.g[y].every((c) => c)) { this.g.splice(y, 1); this.g.unshift(Array(W).fill(0)); cleared++; y++; } }
+    let send = 0;
+    if (cleared) { this.combo++; this.lines += cleared; this.score += [0, 100, 300, 500, 800][cleared] * this.level + Math.max(0, this.combo) * 50; this.level = 1 + Math.floor(this.lines / 10);
+      send = GARB[cleared] + (this.combo >= 2 ? 1 : 0);
+      const cancel = Math.min(send, this.pendingGarbage); this.pendingGarbage -= cancel; send -= cancel;
+    } else { this.combo = -1; if (this.pendingGarbage) { this.addGarbage(this.pendingGarbage); this.pendingGarbage = 0; } }
+    this.canHold = true; if (top) { this.dead = true; return { cleared, send }; }
+    this.spawn(); return { cleared, send };
+  }
+  addGarbage(n) { n = Math.min(n, 8); const hole = (Math.random() * W) | 0; for (let i = 0; i < n; i++) { if (this.g[0].some((c) => c)) this.dead = true; this.g.shift(); const row = Array(W).fill("G"); row[hole] = 0; this.g.push(row); } while (this.p && this.collide(this.p) && this.p.y > -3) this.p.y--; }
+  snapshot() { return this.g.map((r) => r.map((c) => c || ".").join("")).join(""); }
+}
+
+/* ---------- bot ---------- */
+function evalGrid(g) { let holes = 0, agg = 0, bump = 0, prev = -1, lines = 0, maxH = 0; for (let y = 0; y < H; y++) if (g[y].every((c) => c)) lines++;
+  for (let x = 0; x < W; x++) { let h = 0, seen = false; for (let y = 0; y < H; y++) { if (g[y][x]) { if (!seen) { h = H - y; seen = true; } } else if (seen) holes++; } agg += h; maxH = Math.max(maxH, h); if (prev >= 0) bump += Math.abs(h - prev); prev = h; }
+  return -0.51 * agg + 0.76 * lines - 0.36 * holes * 2 - 0.18 * bump - (maxH > 14 ? 3 : 0); }
+function botPlan(b) { let best = null; const types = [b.p.t]; if (b.canHold) types.push(b.hold || b.queue[0]);
+  for (const t of types) for (let r = 0; r < 4; r++) for (let x = -2; x < W; x++) { const p = { t, r, x, y: t === "I" ? -1 : 0 }; if (b.collide(p)) continue; while (!b.collide({ ...p, y: p.y + 1 })) p.y++;
+    const g = b.g.map((row) => row.slice()); let ok = true; for (const [cx, cy] of b.cells(p)) { if (cy < 0) ok = false; else g[cy][cx] = t; } if (!ok) continue;
+    const s = evalGrid(g); if (!best || s > best.s) best = { s, t, r, x, hold: t !== b.p.t }; } return best; }
+
+/* ---------- rendering ---------- */
+function drawBoard(cv, b, opt = {}) { const ctx = cv.getContext("2d"), cs = cv.width / W; ctx.clearRect(0, 0, cv.width, cv.height);
+  ctx.strokeStyle = "rgba(94,242,224,.06)"; ctx.lineWidth = 1; for (let x = 1; x < W; x++) { ctx.beginPath(); ctx.moveTo(x * cs, 0); ctx.lineTo(x * cs, cv.height); ctx.stroke(); }
+  const cell = (x, y, c, a = 1) => { if (y < 0) return; ctx.globalAlpha = a; ctx.fillStyle = c; ctx.fillRect(x * cs + 1, y * cs + 1, cs - 2, cs - 2); ctx.globalAlpha = a * .35; ctx.fillStyle = "#fff"; ctx.fillRect(x * cs + 2, y * cs + 2, cs - 4, Math.max(2, cs * .18)); ctx.globalAlpha = 1; };
+  const isSnap = typeof opt.snap === "string"; const grid = isSnap ? null : b.g;
+  if (isSnap) { for (let i = 0; i < W * H; i++) { const ch = opt.snap[i]; if (ch && ch !== ".") cell(i % W, (i / W) | 0, COLORS[ch] || COLORS.G); } }
+  else { for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if (grid[y][x]) cell(x, y, COLORS[grid[y][x]]);
+    if (b.p && !b.dead) { const gy = b.ghostY(); for (const [x, y] of b.cells({ ...b.p, y: gy })) { ctx.strokeStyle = COLORS[b.p.t]; ctx.globalAlpha = .45; ctx.strokeRect(x * cs + 2, y * cs + 2, cs - 4, cs - 4); ctx.globalAlpha = 1; } for (const [x, y] of b.cells(b.p)) cell(x, y, COLORS[b.p.t]); } }
+  const pg = isSnap ? opt.pending || 0 : b.pendingGarbage; if (pg) { ctx.fillStyle = "#ff5d7a"; ctx.fillRect(0, cv.height - Math.min(H, pg) * cs, 3, Math.min(H, pg) * cs); }
+  if (opt.dead) { ctx.fillStyle = "rgba(3,8,13,.6)"; ctx.fillRect(0, 0, cv.width, cv.height); } }
+function drawPiece(cv, t, stack) { const ctx = cv.getContext("2d"); ctx.clearRect(0, 0, cv.width, cv.height); const list = stack || (t ? [t] : []); const cs = 14;
+  list.forEach((tt, i) => { const cells = SHAPES[tt]; const w = Math.max(...cells.map((c) => c[0])) + 1, hh = Math.max(...cells.map((c) => c[1])) + 1; const ox = (cv.width - w * cs) / 2, oy = (stack ? i * 50 + 8 : (cv.height - hh * cs) / 2);
+    ctx.fillStyle = COLORS[tt]; for (const [x, y] of cells) ctx.fillRect(ox + x * cs + 1, oy + y * cs + 1, cs - 2, cs - 2); }); }
+
+/* ---------- app state ---------- */
+const S = { mode: null, me: null, bot: null, net: null, rivalSnap: null, rivalDead: false, rivalName: "RIVAL", running: false, paused: false, seed: 1, drop: 0, lockT: 0, botT: 0, botPlan: null, lastSnap: 0, matchStarted: false };
+const nm = $("nm"); nm.value = (localStorage.getItem("bb_name") || "PLAYER" + ((Math.random() * 90 + 10) | 0)).toUpperCase();
+nm.addEventListener("change", () => { nm.value = nm.value.replace(/[^A-Z0-9 _-]/gi, "").toUpperCase().slice(0, 12) || "PLAYER"; localStorage.setItem("bb_name", nm.value); });
+const show = (id) => { for (const s of document.querySelectorAll(".screen")) s.classList.toggle("on", s.id === id); };
+const toast = (t, ms = 2200) => { const e = $("toast"); e.textContent = t; e.style.display = "block"; clearTimeout(toast.t); toast.t = setTimeout(() => (e.style.display = "none"), ms); };
+function layout() { const solo = S.mode === "endless"; $("rivalWrap").style.display = solo ? "none" : "";
+  const vw = Math.min(innerWidth, 760) - 16, vh = innerHeight - (matchMedia("(hover:hover) and (pointer:fine)").matches ? 110 : 180);
+  const sideW = 70, rivalFrac = solo ? 0 : 0.45; const availW = vw - sideW - (solo ? 10 : 20);
+  let cs = Math.floor(Math.min(vh / H, availW / (W * (1 + rivalFrac)))); cs = Math.max(10, Math.min(cs, 34));
+  const me = $("me"); me.width = cs * W; me.height = cs * H; const rc = Math.max(6, Math.floor(cs * (solo ? 0 : 0.45) || 6)); const rv = $("rival"); rv.width = rc * W; rv.height = rc * H; }
+addEventListener("resize", () => { if (S.running) { layout(); render(); } });
+
+function start(mode, opts = {}) { S.mode = mode; S.seed = opts.seed || ((Math.random() * 1e9) | 0); S.me = new Board(S.seed); S.bot = mode === "bot" ? new Board(S.seed) : null; S.botDiff = +$("diff").value;
+  S.rivalSnap = null; S.rivalDead = false; S.running = true; S.paused = false; S.drop = 0; S.lockT = 0; S.botT = 0; S.botPlan = null;
+  $("over").classList.remove("on"); $("meName").textContent = nm.value; $("rvName").textContent = mode === "bot" ? "BOT · " + ["EASY", "NORMAL", "HARD"][S.botDiff] : S.rivalName; $("rvInfo").textContent = "";
+  $("gmode").textContent = { bot: "VS BOT", online: "ONLINE " + (S.net ? S.net.room : ""), endless: "ENDLESS" }[mode]; show("game"); layout(); last = performance.now(); }
+function gravity(b) { return Math.max(60, 800 * Math.pow(0.86, b.level - 1)); }
+function afterLock(res) { if (!res) return; if (res.send > 0) { if (S.mode === "bot") S.bot.pendingGarbage += res.send; else if (S.mode === "online" && S.net) S.net.send({ g: res.send }); if (S.mode !== "endless") toast("Sent " + res.send + " garbage", 900); }
+  if (S.mode === "online" && S.net) S.net.send({ s: S.me.snapshot(), sc: S.me.score, pg: S.me.pendingGarbage, d: S.me.dead ? 1 : 0 }); if (S.me.dead) finish(false); }
+function act(k) { const b = S.me; if (!S.running || S.paused || !b || b.dead) return; let moved = false;
+  if (k === "L") moved = b.move(-1, 0); else if (k === "R") moved = b.move(1, 0); else if (k === "D") { if (b.move(0, 1)) { b.score += 1; S.drop = 0; } else { afterLock(b.lock()); } }
+  else if (k === "CW") moved = b.rot(1); else if (k === "CCW") moved = b.rot(-1); else if (k === "DROP") { afterLock(b.hardDrop()); S.drop = 0; } else if (k === "HOLD") b.doHold();
+  if (moved) S.lockT = 0; render(); }
+function finish(won, why) { if (!S.running) return; S.running = false; const ov = $("over"); ov.classList.add("on");
+  if (S.mode === "endless") { $("ovSub").textContent = "ENDLESS · GAME OVER"; $("ovT").textContent = S.me.score.toLocaleString(); const best = Math.max(+localStorage.getItem("bb_best") || 0, S.me.score); localStorage.setItem("bb_best", best);
+    $("ovMsg").textContent = S.me.lines + " lines · personal best " + best.toLocaleString(); if (S.me.score > 0) DUNet.submit("bb", "endless", nm.value, S.me.score).then((r) => { if (r && r.rank) $("ovMsg").textContent += " · global #" + r.rank; loadLb(); }); }
+  else { $("ovSub").textContent = S.mode === "online" ? "ONLINE 1V1" : "VS BOT"; $("ovT").textContent = won ? "YOU WIN" : "YOU LOSE"; $("ovT").style.color = won ? "var(--cy)" : "#ff5d7a"; $("ovMsg").textContent = why || (won ? "You broke their well." : "Your well overflowed."); }
+  $("bAgain").textContent = S.mode === "online" ? (S.net && !S.net.closed ? "REMATCH" : "QUICK MATCH") : "PLAY AGAIN"; }
+
+let last = 0;
+function loop(t) { requestAnimationFrame(loop); const dt = Math.min(100, t - last); last = t; if (!S.running || S.paused) return; const b = S.me;
+  S.drop += dt; const gv = gravity(b);
+  if (S.drop >= gv) { S.drop = 0; if (!b.move(0, 1)) { S.lockT += gv; } else S.lockT = 0; }
+  if (b.collide({ ...b.p, y: b.p.y + 1 })) { S.lockT += dt; if (S.lockT > 500) { S.lockT = 0; afterLock(b.lock()); } }
+  if (S.mode === "bot") botStep(dt);
+  if (S.mode === "online" && S.net && t - S.lastSnap > 250) { S.lastSnap = t; S.net.send({ s: b.snapshot(), sc: b.score, pg: b.pendingGarbage, d: b.dead ? 1 : 0 }); }
+  render(); }
+function botStep(dt) { const bb = S.bot; if (bb.dead) return; const speed = [520, 260, 120][S.botDiff]; S.botT += dt; if (S.botT < speed) return; S.botT = 0;
+  if (!S.botPlan) { S.botPlan = botPlan(bb); if (S.botDiff === 0 && Math.random() < .25 && S.botPlan) S.botPlan.x += Math.random() < .5 ? -1 : 1; }
+  const pl = S.botPlan; if (!pl) { const r = bb.hardDrop(); botLocked(r); return; }
+  if (pl.hold && bb.canHold && bb.p.t !== pl.t) { bb.doHold(); return; }
+  if (((bb.p.r % 4) + 4) % 4 !== pl.r % 4) { if (!bb.rot(1)) pl.r = bb.p.r; return; }
+  if (bb.p.x < pl.x) { if (!bb.move(1, 0)) pl.x = bb.p.x; return; } if (bb.p.x > pl.x) { if (!bb.move(-1, 0)) pl.x = bb.p.x; return; }
+  botLocked(bb.hardDrop()); }
+function botLocked(r) { S.botPlan = null; if (r && r.send) S.me.pendingGarbage += r.send; if (S.bot.dead) finish(true, "The bot's well overflowed."); else { /* bot gravity is implicit via hard drops */ } }
+function render() { if (!S.me) return; drawBoard($("me"), S.me, { dead: S.me.dead }); drawPiece($("hold"), S.me.hold); drawPiece($("next"), null, S.me.queue.slice(0, 3));
+  $("sc").textContent = S.me.score.toLocaleString(); $("ln").textContent = S.me.lines; $("lv").textContent = S.me.level;
+  if (S.mode === "bot") drawBoard($("rival"), S.bot, { dead: S.bot.dead });
+  else if (S.mode === "online") drawBoard($("rival"), null, { snap: S.rivalSnap || "", pending: S.rivalPending, dead: S.rivalDead }); }
+requestAnimationFrame(loop);
+
+/* ---------- input ---------- */
+const KEYMAP = { ArrowLeft: "L", KeyA: "L", ArrowRight: "R", KeyD: "R", ArrowDown: "D", KeyS: "D", ArrowUp: "CW", KeyX: "CW", KeyW: "CW", KeyZ: "CCW", ControlLeft: "CCW", Space: "DROP", KeyC: "HOLD", ShiftLeft: "HOLD" };
+const das = {}; addEventListener("keydown", (e) => { if (e.target.tagName === "INPUT") return; if (e.code === "KeyP" || e.code === "Escape") { if (S.running) { S.paused = !S.paused; toast(S.paused ? "Paused" : "Go", 800); } return; }
+  const k = KEYMAP[e.code]; if (!k) return; e.preventDefault(); if (e.repeat) return; act(k); if (k === "L" || k === "R" || k === "D") { clearInterval(das[k]); das[k] = setTimeout(() => { das[k] = setInterval(() => act(k), k === "D" ? 40 : 55); }, 150); } });
+addEventListener("keyup", (e) => { const k = KEYMAP[e.code]; if (k) { clearTimeout(das[k]); clearInterval(das[k]); } });
+for (const btn of document.querySelectorAll("#pad button")) { const k = btn.dataset.k; let t1, t2;
+  const down = (e) => { e.preventDefault(); btn.classList.add("dn"); if (navigator.vibrate) navigator.vibrate(8); act(k); if (k === "L" || k === "R" || k === "D") t1 = setTimeout(() => { t2 = setInterval(() => act(k), k === "D" ? 45 : 70); }, 170); };
+  const up = () => { btn.classList.remove("dn"); clearTimeout(t1); clearInterval(t2); };
+  btn.addEventListener("pointerdown", down); btn.addEventListener("pointerup", up); btn.addEventListener("pointercancel", up); btn.addEventListener("pointerleave", up); }
+// swipe / tap gestures on your well
+(() => { const cv = $("me"); let sx, sy, st, moved, accX; cv.addEventListener("pointerdown", (e) => { sx = e.clientX; sy = e.clientY; st = performance.now(); moved = false; accX = 0; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener("pointermove", (e) => { if (sx == null) return; const cs = cv.width / W; const dx = e.clientX - sx - accX; if (Math.abs(dx) > cs * .9) { act(dx > 0 ? "R" : "L"); accX += Math.sign(dx) * cs * .9; moved = true; } });
+  cv.addEventListener("pointerup", (e) => { if (sx == null) return; const dy = e.clientY - sy, dt = performance.now() - st; if (!moved) { if (dy > 60 && dt < 350) act("DROP"); else if (dy < -60) act("HOLD"); else if (Math.abs(dy) < 12) act("CW"); } sx = null; }); })();
+
+/* ---------- online ---------- */
+function setLobby(title, code, msg) { $("lobT").textContent = title; $("lobCode").textContent = code || "····"; $("lobMsg").textContent = msg; show("lobby"); }
+async function goOnline(kind, code) {
+  leaveNet(); S.rivalName = "RIVAL"; let room = code;
+  try { setLobby(kind === "quick" ? "Finding a rival…" : "Connecting…", code, kind === "quick" ? "Matching you with the next player. Takes a few seconds when someone is online." : "Share the code or link with a friend.");
+    if (!room) room = kind === "quick" ? await DUNet.quick("bb") : await DUNet.newRoom("bb"); } catch (e) { toast("Game server unreachable. Try the bot.", 3000); show("menu"); return; }
+  $("lobCode").textContent = room; S.kind = kind; history.replaceState(null, "", location.pathname + "?room=" + room);
+  S.net = DUNet.connect("bb", room, nm.value, {
+    roster(c) { const others = c.seats.filter((s) => s.seat !== c.seat); if (others.length) { S.rivalName = (others[0].name || "RIVAL").toUpperCase(); if (!S.matchStarted && c.isHost) { const seed = (Math.random() * 1e9) | 0; c.send({ start: seed }); beginMatch(seed); } }
+      else if (S.running && S.mode === "online") finish(true, "Your rival left the match."); else if (!S.running) $("lobMsg").textContent = kind === "quick" ? "Waiting for a rival… share the link to bring a friend." : "Waiting for your friend to join with code " + c.room + "."; },
+    msg(from, d) { if (d.start) beginMatch(d.start); if (d.again && !S.running) { beginMatch(d.again); }
+      if (d.s) { S.rivalSnap = d.s; S.rivalPending = d.pg || 0; $("rvInfo").textContent = (d.sc || 0).toLocaleString(); }
+      if (d.g && S.running) { S.me.pendingGarbage += d.g; toast("Incoming " + d.g + "!", 900); }
+      if (d.d && S.running) { S.rivalDead = true; finish(true); } },
+    error(t) { toast(t, 3000); }, closed() { if (S.running && S.mode === "online") finish(true, "Connection lost."); else if (!S.running) { toast("Disconnected from the room.", 2500); } },
+  });
+}
+function beginMatch(seed) { S.matchStarted = true; let n = 3; setLobby("Rival found: " + S.rivalName, S.net ? S.net.room : "", "Starting in 3…");
+  const iv = setInterval(() => { n--; if (n > 0) $("lobMsg").textContent = "Starting in " + n + "…"; else { clearInterval(iv); start("online", { seed }); } }, 700); }
+function leaveNet() { if (S.net) { S.net.close(); S.net = null; } S.matchStarted = false; if (location.search) history.replaceState(null, "", location.pathname); }
+$("bQuick").onclick = () => goOnline("quick"); $("bHost").onclick = () => goOnline("host");
+$("bJoin").onclick = () => { const c = $("code").value.toUpperCase().replace(/[^A-Z0-9]/g, ""); if (c.length !== 4) { toast("Enter the 4-letter room code."); return; } goOnline("join", c); };
+$("bBot").onclick = () => { leaveNet(); start("bot"); }; $("bEndless").onclick = () => { leaveNet(); start("endless"); };
+$("bLobBot").onclick = () => { leaveNet(); start("bot"); }; $("bLobBack").onclick = () => { leaveNet(); show("menu"); };
+$("bShare").onclick = async () => { if (!S.net) return; const url = DUNet.shareUrl(S.net.room, PUBLIC_URL); const text = "1v1 me in Block Busters. Room " + S.net.room;
+  try { if (navigator.share) { await navigator.share({ title: "Block Busters PvP", text, url }); return; } } catch (e) { return; }
+  try { await navigator.clipboard.writeText(url); toast("Link copied: " + url, 2600); } catch (e) { prompt("Copy this link", url); } };
+$("bQuit").onclick = () => { if (S.running && S.mode === "online" && S.net) S.net.send({ d: 1 }); S.running = false; leaveNet(); show("menu"); loadLb(); };
+$("bMenu").onclick = () => { $("over").classList.remove("on"); leaveNet(); show("menu"); loadLb(); };
+$("bAgain").onclick = () => { $("over").classList.remove("on"); if (S.mode === "online") { if (S.net && !S.net.closed && S.net.seats.length > 1) { const seed = (Math.random() * 1e9) | 0; S.net.send({ again: seed }); beginMatch(seed); } else goOnline("quick"); } else start(S.mode); };
+function loadLb() { DUNet.scores("bb", "endless").then((d) => { const l = $("lbList"); const top = (d.top || []).slice(0, 10); l.innerHTML = top.length ? "" : "<li>No scores yet. Be the first.</li>"; for (const r of top) { const li = document.createElement("li"); li.textContent = r.name + " · " + r.score.toLocaleString(); l.appendChild(li); } }); }
+loadLb();
+const incoming = DUNet.roomFromUrl(); if (incoming) goOnline("join", incoming);
+if ("serviceWorker" in navigator && location.protocol === "https:" && !/itch\.(io|zone)$/.test(location.hostname)) navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister())).catch(() => {});
+window.__bb = S;
+})();
+</script>
+</body></html>

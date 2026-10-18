@@ -17,3 +17,5 @@
   X-Robots-Tag: noindex
 /assets/signup.js
   Cache-Control: public, max-age=0, must-revalidate
+/p/airhand/*
+  X-Robots-Tag: noindex

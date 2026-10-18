@@ -49,7 +49,7 @@ PRODUCTS = [
     {"slug": "packlane", "code": "lchlou", "name": "Packlane", "price": "CA$7", "pitch": ["Packing lists for the trip you are taking."], "cover": "covers/lchlou.webp"},
     {"slug": "grok-prompt-pack", "code": "jsdrug", "name": "Grok Prompt Pack", "price": "CA$29", "pitch": ["Prompts for writing, planning, and shipping work."], "cover": "covers/jsdrug.webp"},
     {"slug": "ai-audience-growth-toolkit", "code": "pgkgdc", "name": "AI Audience Growth Toolkit", "price": "CA$29", "pitch": ["A playbook, a workbook, and a prompt pack."], "cover": "covers/pgkgdc.webp"},
-    {"slug": "airhand", "code": "fifcuh", "name": "Airhand (Early Access)", "price": "CA$15", "pitch": ["Live radio, your music, and a timer, controlled from the camera."], "cover": "covers/fifcuh.webp"},
+    {"slug": "airhand", "hidden": True, "code": "fifcuh", "name": "Airhand (Early Access)", "price": "CA$15", "pitch": ["Live radio, your music, and a timer, controlled from the camera."], "cover": "covers/fifcuh.webp"},
     {"slug": "cork", "code": "fjmmi", "name": "Cork — Offline Darts Scoreboard", "price": "CA$25", "pitch": ["Score for two sides.", "Pay once. No subscription."], "cover": "covers/fjmmi.webp"},
     {"slug": "focus-habits-pack", "code": "wgjffu", "name": "Focus & Habits Pack", "price": "CA$19", "pitch": ["Habit tracker, focus gate, and an offline block puzzle.", "Three products, one price."], "cover": "covers/wgjffu.webp"},
     {"slug": "ai-creator-bundle", "code": "lgvubv", "name": "AI Creator Bundle", "price": "CA$79", "pitch": ["Prompt packs, a companion, and an audience growth toolkit."], "cover": "covers/lgvubv.webp"},
@@ -248,6 +248,8 @@ def main() -> None:
     OG_DIR.mkdir(parents=True, exist_ok=True)
     index: dict[str, dict] = {}
     for p in PRODUCTS:
+        if p.get("hidden"):
+            continue  # off the store; existing page is kept (noindex + redirect)
         code = p["code"]
         slug = p["slug"]
         checkout = checkout_url(code)

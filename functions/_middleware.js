@@ -3,8 +3,12 @@ const HSTS = "max-age=31536000; includeSubDomains";
 export async function onRequest({ request, next }) {
   const url = new URL(request.url);
   const proto = request.headers.get("X-Forwarded-Proto") || url.protocol.replace(":", "");
-  if (proto === "http" && url.hostname !== "localhost" && url.hostname !== "127.0.0.1") {
+  const www = url.hostname === "www.digitalundergroundstore.com";
+  if (www || (proto === "http" && url.hostname !== "localhost" && url.hostname !== "127.0.0.1")) {
+    // One canonical origin: https://digitalundergroundstore.com (path + query preserved).
     url.protocol = "https:";
+    if (www) url.hostname = "digitalundergroundstore.com";
+    url.port = "";
     return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
   }
   // Repo-only paths (unencrypted app source, build tools, internal docs, logs) must never be served.

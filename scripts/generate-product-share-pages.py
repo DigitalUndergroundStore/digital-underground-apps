@@ -268,6 +268,9 @@ def main() -> None:
         }
     (OUT / "index.json").write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
     print(f"Generated {len(PRODUCTS)} share pages under {OUT}")
+    # Product / Organization / Book JSON-LD (reads the pages just written).
+    import subprocess, sys
+    subprocess.run([sys.executable, str(Path(__file__).with_name("add-jsonld.py"))], check=True)
 
 
 if __name__ == "__main__":

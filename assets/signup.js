@@ -9,7 +9,7 @@
     host.innerHTML = '<div class="du-su-row">' +
       '<div class="du-su-cover"><img src="/assets/gift/humanity-x-off-the-ground-cover.webp" width="225" height="360" alt="Humanity X: Off the Ground cover" loading="lazy" decoding="async"></div>' +
       '<div class="du-su-body">' +
-      '<h2>Get my sci-fi novel free</h2><p>Join the Digital Underground list and download <em>Humanity X: Off the Ground</em>, Book 1 of the Humanity X Trilogy by Donald Stelling (PDF, EPUB and Word), right away. New apps and offers, a few emails a month at most.</p>' +
+      '<h2>Get my sci-fi novel free</h2><p>Join the Digital Underground list and download <em>Humanity X: Off the Ground</em>, Book 1 of the Humanity X Trilogy from Digital Underground (PDF, EPUB and Word), right away. New apps and offers, a few emails a month at most.</p>' +
       '<form novalidate><label class="hp" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label>' +
       '<input type="email" name="email" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">' +
       '<button type="submit">Get the free book</button>' +

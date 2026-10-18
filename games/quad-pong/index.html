@@ -5,7 +5,7 @@
 <title>Quad Pong: 4-player neon free-for-all Pong</title>
 <meta name="description" content="4-player neon free-for-all Pong. Quick Match online, invite friends with a link, or play solo against 3 bots. Last wall standing wins. Free in your browser.">
 <meta property="og:title" content="Quad Pong"><meta property="og:description" content="4-player neon free-for-all Pong. Last wall standing.">
-<meta property="og:image" content="https://digitalundergroundstore.com/games/quad-pong/cover.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="cover.png"><meta name="author" content="Kerzy Labs"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#050b12">
 <link rel="icon" href="icon.png" type="image/png">
 <style>
@@ -40,7 +40,7 @@ canvas#c{display:block;touch-action:none;border-radius:12px;box-shadow:0 0 0 1px
 </style></head>
 <body>
 <section id="menu" class="screen on">
-  <div class="brand">DIGITAL UNDERGROUND</div><h1>QUAD PONG</h1><div class="tag">Last wall standing</div>
+  <div class="brand">KERZY LABS</div><h1>QUAD PONG</h1><div class="tag">Last wall standing</div>
   <div class="card">
     <div class="name"><label for="nm">NAME</label><input id="nm" maxlength="12" autocomplete="off" spellcheck="false"></div>
     <button class="big" id="bQuick">QUICK MATCH<small>Online · up to 4 players · bots fill empty walls</small></button>
@@ -48,11 +48,11 @@ canvas#c{display:block;touch-action:none;border-radius:12px;box-shadow:0 0 0 1px
     <div class="row" style="margin-top:10px"><select class="btn" id="diff" aria-label="Bot difficulty"><option value="0">Bots: Easy</option><option value="1" selected>Bots: Normal</option><option value="2">Bots: Hard</option></select><select class="btn" id="lives" aria-label="Lives"><option value="3">3 lives</option><option value="5" selected>5 lives</option><option value="8">8 lives</option></select></div>
     <div class="join"><input id="code" maxlength="4" placeholder="CODE" autocomplete="off" aria-label="Room code"><button class="btn" id="bJoin">JOIN</button></div>
     <div class="lb"><h3>SOLO WINS · GLOBAL TOP</h3><ol id="lbList"><li>Loading…</li></ol></div>
-    <div class="mini">You always defend the bottom wall. Drag, use the mouse, or ← → / A D.<br><a href="https://digitalundergroundstore.com/games/" target="_blank" rel="noopener">More free games</a></div>
+    <div class="mini">You always defend the bottom wall. Drag, use the mouse, or ← → / A D.<br>© 2026 Kerzy Labs</div>
   </div>
 </section>
 <section id="lobby" class="screen">
-  <div class="brand">DIGITAL UNDERGROUND</div><h2 id="lobT" style="margin:10px 0 0">Room</h2><div class="code" id="lobCode">····</div>
+  <div class="brand">KERZY LABS</div><h2 id="lobT" style="margin:10px 0 0">Room</h2><div class="code" id="lobCode">····</div>
   <div class="seats" id="seats"></div><p id="lobMsg" class="mini" style="font-size:14px"></p>
   <div class="row" style="width:min(380px,100%)"><button class="btn" id="bShare">SHARE LINK</button><button class="btn" id="bStart">START NOW</button></div>
   <button class="btn" id="bLobBack" style="margin-top:10px;width:min(380px,100%)">BACK</button>
@@ -64,8 +64,8 @@ canvas#c{display:block;touch-action:none;border-radius:12px;box-shadow:0 0 0 1px
 <div class="over" id="over"><div class="card"><div class="brand" id="ovSub">MATCH OVER</div><h2 id="ovT">YOU WIN</h2><p id="ovMsg" class="mini" style="font-size:14px"></p><div class="row"><button class="btn" id="bAgain">PLAY AGAIN</button><button class="btn" id="bMenu">MENU</button></div></div></div>
 <div class="toast" id="toast"></div>
 <script>
-/* DU realtime relay client (du-games worker). Seats assigned by server; host = lowest seat. */
-const DUNet = (() => {
+/* Kerzy Labs realtime relay client. Seats assigned by server; host = lowest seat. */
+const KLNet = (() => {
   const API = "https://du-games.digitalunderground-store.workers.dev";
   async function get(path) { const r = await fetch(API + path, { cache: "no-store" }); if (!r.ok) throw new Error("server " + r.status); return r.json(); }
   function connect(game, room, name, h) {
@@ -100,7 +100,7 @@ const DUNet = (() => {
 (() => {
 "use strict";
 const $ = (id) => document.getElementById(id);
-const PUBLIC_URL = "https://digitalundergroundstore.com/games/quad-pong/";
+const PUBLIC_URL = "https://digitalunderground.itch.io/quad-pong";
 const COL = ["#5ef2e0", "#e15bff", "#ffd84d", "#5dff8a"];
 const SIDE = ["bottom", "left", "top", "right"]; // seat i defends SIDE[i]; seat 0 is drawn at the bottom from its own view
 const PW = 0.22, PAD = 0.035, BR = 0.014;
@@ -191,16 +191,16 @@ function endMatch(result) { if (!S.running) return; S.running = false; const P =
   if (S.mode === "online" && S.net && S.net.isHost) S.net.send({ end: winner, st: pack() });
   const won = winner === S.mySeat; $("over").classList.add("on"); $("ovSub").textContent = S.mode === "solo" ? "SOLO MATCH" : "ONLINE MATCH"; $("ovT").textContent = won ? "YOU WIN" : "YOU LOSE"; $("ovT").style.color = won ? "var(--cy)" : "#ff5d7a";
   $("ovMsg").textContent = winner >= 0 ? (won ? "Last wall standing." : (P[winner] ? P[winner].name : "Someone") + " was the last wall standing.") : "Draw.";
-  if (S.mode === "solo" && won) { S.wins++; localStorage.setItem("qp_wins", S.wins); $("ovMsg").textContent += " Solo wins: " + S.wins + "."; DUNet.submit("qp", "solo-wins", nm.value, S.wins).then(loadLb); }
+  if (S.mode === "solo" && won) { S.wins++; localStorage.setItem("qp_wins", S.wins); $("ovMsg").textContent += " Solo wins: " + S.wins + "."; KLNet.submit("qp", "solo-wins", nm.value, S.wins).then(loadLb); }
   $("bAgain").textContent = S.mode === "online" ? (S.net && S.net.isHost ? "REMATCH" : "WAIT FOR HOST") : "PLAY AGAIN"; }
 
 /* --- online --- */
 function renderSeats(c) { const box = $("seats"); box.innerHTML = ""; for (let i = 0; i < 4; i++) { const s = c.seats.find((x) => x.seat === i); const d = document.createElement("div"); d.style.color = COL[i]; d.textContent = s ? (s.name || "PLAYER " + (i + 1)) + (i === c.seat ? " (you)" : "") + (i === c.host ? " ★" : "") : "Bot (open)"; box.appendChild(d); } }
 let autoT = null;
 async function goOnline(kind, code) { leaveNet(); let room = code; show("lobby"); $("lobT").textContent = kind === "quick" ? "Quick Match" : "Friends room"; $("lobCode").textContent = code || "····"; $("lobMsg").textContent = "Connecting…"; $("seats").innerHTML = "";
-  try { if (!room) room = kind === "quick" ? await DUNet.quick("qp") : await DUNet.newRoom("qp"); } catch (e) { toast("Game server unreachable. Try solo.", 3000); show("menu"); return; }
+  try { if (!room) room = kind === "quick" ? await KLNet.quick("qp") : await KLNet.newRoom("qp"); } catch (e) { toast("Game server unreachable. Try solo.", 3000); show("menu"); return; }
   $("lobCode").textContent = room; history.replaceState(null, "", location.pathname + "?room=" + room); S.kind = kind;
-  S.net = DUNet.connect("qp", room, nm.value, {
+  S.net = KLNet.connect("qp", room, nm.value, {
     roster(c) { renderSeats(c); S.names = [0, 1, 2, 3].map((i) => { const s = c.seats.find((x) => x.seat === i); return s ? s.name || "PLAYER " + (i + 1) : "BOT " + (i + 1); });
       $("bStart").style.display = c.isHost ? "" : "none"; const n = c.seats.length;
       if (S.running && c.isHost) { S.players.forEach((p, i) => { const here = c.seats.some((x) => x.seat === i); if (p.human && !here) { p.human = false; p.bot = true; p.name = "BOT " + (i + 1); } }); }
@@ -217,15 +217,15 @@ function leaveNet() { clearTimeout(autoT); if (S.net) { S.net.close(); S.net = n
 $("bSolo").onclick = startSolo; $("bQuick").onclick = () => goOnline("quick"); $("bHost").onclick = () => goOnline("host"); $("bStart").onclick = hostStart;
 $("bJoin").onclick = () => { const c = $("code").value.toUpperCase().replace(/[^A-Z0-9]/g, ""); if (c.length !== 4) { toast("Enter the 4-character room code."); return; } goOnline("join", c); };
 $("bLobBack").onclick = () => { leaveNet(); show("menu"); };
-$("bShare").onclick = async () => { if (!S.net) return; const url = DUNet.shareUrl(S.net.room, PUBLIC_URL); const text = "Join my Quad Pong room " + S.net.room;
+$("bShare").onclick = async () => { if (!S.net) return; const url = KLNet.shareUrl(S.net.room, PUBLIC_URL); const text = "Join my Quad Pong room " + S.net.room;
   try { if (navigator.share) { await navigator.share({ title: "Quad Pong", text, url }); return; } } catch (e) { return; }
   try { await navigator.clipboard.writeText(url); toast("Link copied", 2000); } catch (e) { prompt("Copy this link", url); } };
 $("bQuit").onclick = () => { S.running = false; leaveNet(); show("menu"); loadLb(); };
 $("bMenu").onclick = () => { $("over").classList.remove("on"); leaveNet(); show("menu"); loadLb(); };
 $("bAgain").onclick = () => { if (S.mode === "solo") startSolo(); else if (S.net && S.net.isHost) { $("over").classList.remove("on"); hostStart(); } else if (!S.net) goOnline("quick"); };
 $("bSnd").onclick = () => { S.sound = !S.sound; $("bSnd").style.opacity = S.sound ? 1 : 0.4; };
-function loadLb() { DUNet.scores("qp", "solo-wins").then((d) => { const l = $("lbList"); const top = (d.top || []).slice(0, 10); l.innerHTML = top.length ? "" : "<li>No wins yet. Be the first.</li>"; for (const r of top) { const li = document.createElement("li"); li.textContent = r.name + " · " + r.score + " wins"; l.appendChild(li); } }); }
-loadLb(); const incoming = DUNet.roomFromUrl(); if (incoming) goOnline("join", incoming);
+function loadLb() { KLNet.scores("qp", "solo-wins").then((d) => { const l = $("lbList"); const top = (d.top || []).slice(0, 10); l.innerHTML = top.length ? "" : "<li>No wins yet. Be the first.</li>"; for (const r of top) { const li = document.createElement("li"); li.textContent = r.name + " · " + r.score + " wins"; l.appendChild(li); } }); }
+loadLb(); const incoming = KLNet.roomFromUrl(); if (incoming) goOnline("join", incoming);
 window.__qp = S;
 })();
 </script>

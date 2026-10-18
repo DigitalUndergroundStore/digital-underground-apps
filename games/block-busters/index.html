@@ -6,8 +6,8 @@
 <meta name="description" content="1v1 neon falling-block combat. Break their well. Guard yours. Quick Match online, play the bot, or go endless. Free in your browser.">
 <meta property="og:title" content="Block Busters PvP">
 <meta property="og:description" content="1v1 neon falling-block combat. Break their well. Guard yours.">
-<meta property="og:image" content="https://digitalundergroundstore.com/games/block-busters/cover.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="cover.png">
+<meta name="author" content="Kerzy Labs"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#050b12">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png" type="image/png"><link rel="apple-touch-icon" href="icon-192.png">
@@ -60,7 +60,7 @@ canvas{display:block;border-radius:10px;background:#03080d;box-shadow:0 0 0 1px 
 </style></head>
 <body>
 <section id="menu" class="screen on">
-  <div class="brand">DIGITAL UNDERGROUND</div>
+  <div class="brand">KERZY LABS</div>
   <h1>BLOCK BUSTERS</h1>
   <div class="tag">Break their well. Guard yours.</div>
   <div class="card">
@@ -76,11 +76,11 @@ canvas{display:block;border-radius:10px;background:#03080d;box-shadow:0 0 0 1px 
     </div>
     <div class="join"><input id="code" maxlength="4" placeholder="CODE" autocomplete="off" aria-label="Room code"><button class="btn" id="bJoin">JOIN</button></div>
     <div class="lb" id="lb"><h3>ENDLESS · GLOBAL TOP</h3><ol id="lbList"><li>Loading…</li></ol></div>
-    <div class="mini">Clear 2+ lines to send garbage. Top out and you lose.<br><a href="https://digitalundergroundstore.com/games/" target="_blank" rel="noopener">More free games</a></div>
+    <div class="mini">Clear 2+ lines to send garbage. Top out and you lose.<br>© 2026 Kerzy Labs</div>
   </div>
 </section>
 <section id="lobby" class="screen">
-  <div class="brand">DIGITAL UNDERGROUND</div>
+  <div class="brand">KERZY LABS</div>
   <h2 id="lobT" style="margin:10px 0 0">Finding a rival…</h2>
   <div class="code" id="lobCode">····</div>
   <div class="spin"></div>
@@ -103,8 +103,8 @@ canvas{display:block;border-radius:10px;background:#03080d;box-shadow:0 0 0 1px 
 <div class="over" id="over"><div class="card"><div class="brand" id="ovSub">GAME OVER</div><h2 id="ovT">YOU WIN</h2><p id="ovMsg" class="mini" style="font-size:14px"></p><div class="row"><button class="btn" id="bAgain">PLAY AGAIN</button><button class="btn" id="bMenu">MENU</button></div></div></div>
 <div class="toast" id="toast"></div>
 <script>
-/* DU realtime relay client (du-games worker). Seats assigned by server; host = lowest seat. */
-const DUNet = (() => {
+/* Kerzy Labs realtime relay client. Seats assigned by server; host = lowest seat. */
+const KLNet = (() => {
   const API = "https://du-games.digitalunderground-store.workers.dev";
   async function get(path) { const r = await fetch(API + path, { cache: "no-store" }); if (!r.ok) throw new Error("server " + r.status); return r.json(); }
   function connect(game, room, name, h) {
@@ -139,7 +139,7 @@ const DUNet = (() => {
 (() => {
 "use strict";
 const $ = (id) => document.getElementById(id);
-const PUBLIC_URL = "https://digitalundergroundstore.com/games/block-busters/";
+const PUBLIC_URL = "https://digitalunderground.itch.io/block-busters-pvp";
 const W = 10, H = 20;
 const COLORS = { I: "#5ef2e0", O: "#ffd84d", T: "#e15bff", S: "#5dff8a", Z: "#ff5d7a", J: "#4d8bff", L: "#ff9d3d", G: "#3a5566" };
 const SHAPES = { I: [[0,1],[1,1],[2,1],[3,1]], O: [[1,0],[2,0],[1,1],[2,1]], T: [[1,0],[0,1],[1,1],[2,1]], S: [[1,0],[2,0],[0,1],[1,1]], Z: [[0,0],[1,0],[1,1],[2,1]], J: [[0,0],[0,1],[1,1],[2,1]], L: [[2,0],[0,1],[1,1],[2,1]] };
@@ -224,7 +224,7 @@ function act(k) { const b = S.me; if (!S.running || S.paused || !b || b.dead) re
   if (moved) S.lockT = 0; render(); }
 function finish(won, why) { if (!S.running) return; S.running = false; const ov = $("over"); ov.classList.add("on");
   if (S.mode === "endless") { $("ovSub").textContent = "ENDLESS · GAME OVER"; $("ovT").textContent = S.me.score.toLocaleString(); const best = Math.max(+localStorage.getItem("bb_best") || 0, S.me.score); localStorage.setItem("bb_best", best);
-    $("ovMsg").textContent = S.me.lines + " lines · personal best " + best.toLocaleString(); if (S.me.score > 0) DUNet.submit("bb", "endless", nm.value, S.me.score).then((r) => { if (r && r.rank) $("ovMsg").textContent += " · global #" + r.rank; loadLb(); }); }
+    $("ovMsg").textContent = S.me.lines + " lines · personal best " + best.toLocaleString(); if (S.me.score > 0) KLNet.submit("bb", "endless", nm.value, S.me.score).then((r) => { if (r && r.rank) $("ovMsg").textContent += " · global #" + r.rank; loadLb(); }); }
   else { $("ovSub").textContent = S.mode === "online" ? "ONLINE 1V1" : "VS BOT"; $("ovT").textContent = won ? "YOU WIN" : "YOU LOSE"; $("ovT").style.color = won ? "var(--cy)" : "#ff5d7a"; $("ovMsg").textContent = why || (won ? "You broke their well." : "Your well overflowed."); }
   $("bAgain").textContent = S.mode === "online" ? (S.net && !S.net.closed ? "REMATCH" : "QUICK MATCH") : "PLAY AGAIN"; }
 
@@ -269,9 +269,9 @@ function setLobby(title, code, msg) { $("lobT").textContent = title; $("lobCode"
 async function goOnline(kind, code) {
   leaveNet(); S.rivalName = "RIVAL"; let room = code;
   try { setLobby(kind === "quick" ? "Finding a rival…" : "Connecting…", code, kind === "quick" ? "Matching you with the next player. Takes a few seconds when someone is online." : "Share the code or link with a friend.");
-    if (!room) room = kind === "quick" ? await DUNet.quick("bb") : await DUNet.newRoom("bb"); } catch (e) { toast("Game server unreachable. Try the bot.", 3000); show("menu"); return; }
+    if (!room) room = kind === "quick" ? await KLNet.quick("bb") : await KLNet.newRoom("bb"); } catch (e) { toast("Game server unreachable. Try the bot.", 3000); show("menu"); return; }
   $("lobCode").textContent = room; S.kind = kind; history.replaceState(null, "", location.pathname + "?room=" + room);
-  S.net = DUNet.connect("bb", room, nm.value, {
+  S.net = KLNet.connect("bb", room, nm.value, {
     roster(c) { const others = c.seats.filter((s) => s.seat !== c.seat); if (others.length) { S.rivalName = (others[0].name || "RIVAL").toUpperCase(); if (!S.matchStarted && c.isHost) { const seed = (Math.random() * 1e9) | 0; c.send({ start: seed }); beginMatch(seed); } }
       else if (S.running && S.mode === "online") finish(true, "Your rival left the match."); else if (!S.running) $("lobMsg").textContent = kind === "quick" ? "Waiting for a rival… share the link to bring a friend." : "Waiting for your friend to join with code " + c.room + "."; },
     msg(from, d) { if (d.start) beginMatch(d.start); if (d.again && !S.running) { beginMatch(d.again); }
@@ -288,15 +288,15 @@ $("bQuick").onclick = () => goOnline("quick"); $("bHost").onclick = () => goOnli
 $("bJoin").onclick = () => { const c = $("code").value.toUpperCase().replace(/[^A-Z0-9]/g, ""); if (c.length !== 4) { toast("Enter the 4-letter room code."); return; } goOnline("join", c); };
 $("bBot").onclick = () => { leaveNet(); start("bot"); }; $("bEndless").onclick = () => { leaveNet(); start("endless"); };
 $("bLobBot").onclick = () => { leaveNet(); start("bot"); }; $("bLobBack").onclick = () => { leaveNet(); show("menu"); };
-$("bShare").onclick = async () => { if (!S.net) return; const url = DUNet.shareUrl(S.net.room, PUBLIC_URL); const text = "1v1 me in Block Busters. Room " + S.net.room;
+$("bShare").onclick = async () => { if (!S.net) return; const url = KLNet.shareUrl(S.net.room, PUBLIC_URL); const text = "1v1 me in Block Busters. Room " + S.net.room;
   try { if (navigator.share) { await navigator.share({ title: "Block Busters PvP", text, url }); return; } } catch (e) { return; }
   try { await navigator.clipboard.writeText(url); toast("Link copied: " + url, 2600); } catch (e) { prompt("Copy this link", url); } };
 $("bQuit").onclick = () => { if (S.running && S.mode === "online" && S.net) S.net.send({ d: 1 }); S.running = false; leaveNet(); show("menu"); loadLb(); };
 $("bMenu").onclick = () => { $("over").classList.remove("on"); leaveNet(); show("menu"); loadLb(); };
 $("bAgain").onclick = () => { $("over").classList.remove("on"); if (S.mode === "online") { if (S.net && !S.net.closed && S.net.seats.length > 1) { const seed = (Math.random() * 1e9) | 0; S.net.send({ again: seed }); beginMatch(seed); } else goOnline("quick"); } else start(S.mode); };
-function loadLb() { DUNet.scores("bb", "endless").then((d) => { const l = $("lbList"); const top = (d.top || []).slice(0, 10); l.innerHTML = top.length ? "" : "<li>No scores yet. Be the first.</li>"; for (const r of top) { const li = document.createElement("li"); li.textContent = r.name + " · " + r.score.toLocaleString(); l.appendChild(li); } }); }
+function loadLb() { KLNet.scores("bb", "endless").then((d) => { const l = $("lbList"); const top = (d.top || []).slice(0, 10); l.innerHTML = top.length ? "" : "<li>No scores yet. Be the first.</li>"; for (const r of top) { const li = document.createElement("li"); li.textContent = r.name + " · " + r.score.toLocaleString(); l.appendChild(li); } }); }
 loadLb();
-const incoming = DUNet.roomFromUrl(); if (incoming) goOnline("join", incoming);
+const incoming = KLNet.roomFromUrl(); if (incoming) goOnline("join", incoming);
 if ("serviceWorker" in navigator && location.protocol === "https:" && !/itch\.(io|zone)$/.test(location.hostname)) navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister())).catch(() => {});
 window.__bb = S;
 })();

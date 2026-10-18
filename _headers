@@ -12,3 +12,6 @@
 
 /downloads/parts/*
   X-Robots-Tag: noindex
+
+/games/*
+  X-Robots-Tag: noindex

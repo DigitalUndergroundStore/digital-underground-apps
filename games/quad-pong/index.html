@@ -5,7 +5,7 @@
 <title>Quad Pong: 4-player neon free-for-all Pong</title>
 <meta name="description" content="4-player neon free-for-all Pong. Quick Match online, invite friends with a link, or play solo against 3 bots. Last wall standing wins. Free in your browser.">
 <meta property="og:title" content="Quad Pong"><meta property="og:description" content="4-player neon free-for-all Pong. Last wall standing.">
-<meta property="og:image" content="cover.png"><meta name="author" content="Kerzy Labs"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://digitalundergroundstore.com/games/quad-pong/cover.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:image" content="https://digitalundergroundstore.com/games/quad-pong/cover.png"><meta name="author" content="Kerzy Labs"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#050b12">
 <link rel="icon" href="icon.png" type="image/png">
 <style>
@@ -266,23 +266,42 @@ const BASE_V = 0.38, MIN_V = 0.27;
 function addBall() { const n = S.balls.length;
   // each extra ball slows every ball already in play to ~85% (with a floor) and eases the global speed-up, so 3-4 balls stay playable
   if (n) { for (const b of S.balls) { const v = Math.hypot(b.vx, b.vy), nv = Math.max(MIN_V, v * 0.85); b.vx *= nv / v; b.vy *= nv / v; } S.speedUp *= 0.85; }
-  const sp = Math.max(MIN_V, BASE_V * Math.pow(0.88, n)), a = Math.random() * Math.PI * 2; S.balls.push({ x: 0.5, y: 0.5, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, last: -1 }); }
+  const sp = Math.max(MIN_V, BASE_V * Math.pow(0.88, n)), a = Math.random() * Math.PI * 2; S.balls.push({ x: 0.5, y: 0.5, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, last: -1, idle: 0 }); }
 function paddleSpan(p) { return [p.pos - PW / 2, p.pos + PW / 2]; }
 function step(dt) { if (S.countdown > 0) { S.countdown -= dt; return; } S.t += dt; S.speedUp += dt;
   const P = S.players; for (let i = 0; i < 4; i++) { const p = P[i]; if (!p.alive) continue;
     if (p.bot) botMove(i, dt); p.pos = Math.max(PW / 2, Math.min(1 - PW / 2, p.pos)); }
   if (S.t > 18 && S.balls.length < 2) addBall(); if (S.t > 45 && S.balls.length < 3) addBall(); if (S.t > 80 && S.balls.length < 4) addBall();
   const mult = 1 + Math.min(0.9, S.speedUp / 90);
-  for (const b of S.balls) { b.x += b.vx * mult * dt; b.y += b.vy * mult * dt;
+  for (const b of S.balls) { b.x += b.vx * mult * dt; b.y += b.vy * mult * dt; b.idle = (b.idle || 0) + dt; if (b.idle > STUCK_T) unstick(b);
     for (let i = 0; i < 4; i++) { const p = P[i]; const along = i % 2 === 0 ? b.x : b.y; let dist, inward;
       if (i === 0) { dist = 1 - b.y; inward = b.vy > 0; } else if (i === 1) { dist = b.x; inward = b.vx < 0; } else if (i === 2) { dist = b.y; inward = b.vy < 0; } else { dist = 1 - b.x; inward = b.vx > 0; }
       if (!inward) continue;
-      if (!p.alive) { if (dist <= BR) bounce(b, i, 0); continue; }
-      if (dist <= PAD + BR && dist > PAD - 0.02) { const [a0, a1] = paddleSpan(p); if (along >= a0 - BR && along <= a1 + BR) { bounce(b, i, (along - p.pos) / (PW / 2)); b.last = i; beep(520 + i * 80); } }
+      if (!p.alive) { if (dist <= BR) wallBounce(b, i); continue; }
+      if (dist <= PAD + BR && dist > PAD - 0.02) { const [a0, a1] = paddleSpan(p); if (along >= a0 - BR && along <= a1 + BR) { bounce(b, i, (along - p.pos) / (PW / 2)); b.last = i; b.idle = 0; beep(520 + i * 80); } }
       if (dist <= BR * 0.5) { p.lives--; beep(140, 0.15, 0.08); flash(i); if (p.lives <= 0) { p.alive = false; p.lives = 0; }
-        b.x = 0.5; b.y = 0.5; const a = Math.random() * Math.PI * 2, rs = Math.max(MIN_V, BASE_V * Math.pow(0.9, S.balls.length - 1)); b.vx = Math.cos(a) * rs; b.vy = Math.sin(a) * rs; }
+        b.x = 0.5; b.y = 0.5; const a = Math.random() * Math.PI * 2, rs = Math.max(MIN_V, BASE_V * Math.pow(0.9, S.balls.length - 1)); b.vx = Math.cos(a) * rs; b.vy = Math.sin(a) * rs; b.idle = 0; }
     } }
   const alive = P.filter((p) => p.alive); if (alive.length <= 1 || !P.some((p) => p.alive && p.human)) endMatch(); }
+/* --- anti-stall: eliminated sides are solid walls. Stop balls from ping-ponging between dead walls forever. --- */
+const STUCK_T = 6, MIN_CROSS = 0.38, NUDGE = 0.12;
+function liveSides() { return S.players.map((p, i) => (p && p.alive ? i : -1)).filter((i) => i >= 0); }
+function wallBounce(b, side) { bounce(b, side, 0);
+  const sp = Math.hypot(b.vx, b.vy), live = liveSides(); if (!live.length || !sp) return;
+  // cross axis = the axis along this wall; live paddles on that axis are the "toward-live-player" direction
+  const horizWall = side % 2 === 0; // top/bottom wall: normal is y, cross component is vx (toward sides 1/3)
+  const lo = horizWall ? 1 : 2, hi = horizWall ? 3 : 0; // lo side sits at coord 0, hi side at coord 1
+  const loA = live.includes(lo), hiA = live.includes(hi); let c = horizWall ? b.vx : b.vy, n = horizWall ? b.vy : b.vx;
+  if (loA || hiA) { let sign = Math.sign(c) || (Math.random() < 0.5 ? -1 : 1);
+    if (loA && !hiA) sign = -1; else if (hiA && !loA) sign = 1;
+    const ang = Math.max(Math.abs(Math.asin(Math.min(1, Math.abs(c) / sp))), Math.asin(MIN_CROSS)) + (Math.random() - 0.5) * 2 * NUDGE;
+    const a = Math.max(Math.asin(MIN_CROSS) * 0.85, Math.min(1.15, ang)); c = sign * Math.sin(a) * sp; n = Math.sign(n || 1) * Math.cos(a) * sp; }
+  else { // no live paddle on the cross axis: the opposite wall (normal axis) must be live, just nudge the angle so paths don't repeat
+    const a = Math.atan2(c, n) + (Math.random() - 0.5) * 2 * NUDGE; c = Math.sin(a) * sp; n = Math.cos(a) * sp; }
+  if (horizWall) { b.vx = c; b.vy = n; } else { b.vy = c; b.vx = n; } }
+function unstick(b) { const live = liveSides(); b.idle = 0; if (!live.length) return; const t = live[Math.floor(Math.random() * live.length)];
+  const tx = t === 1 ? 0 : t === 3 ? 1 : 0.3 + Math.random() * 0.4, ty = t === 0 ? 1 : t === 2 ? 0 : 0.3 + Math.random() * 0.4;
+  const sp = Math.max(MIN_V, Math.hypot(b.vx, b.vy)), dx = tx - b.x, dy = ty - b.y, d = Math.hypot(dx, dy) || 1; b.vx = dx / d * sp; b.vy = dy / d * sp; }
 function bounce(b, side, off) { const sp = Math.min(1.1, Math.hypot(b.vx, b.vy) * 1.04); off = Math.max(-1, Math.min(1, off)); const ang = off * 1.0;
   if (side === 0) { b.vx = Math.sin(ang) * sp; b.vy = -Math.cos(ang) * sp; b.y = Math.min(b.y, 1 - PAD - BR); }
   else if (side === 2) { b.vx = Math.sin(ang) * sp; b.vy = Math.cos(ang) * sp; b.y = Math.max(b.y, PAD + BR); }

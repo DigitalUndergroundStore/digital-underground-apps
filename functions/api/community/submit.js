@@ -36,7 +36,7 @@ export async function onRequest(context) {
   }
 
   const ip = clientIp(request);
-  if (!checkRate(ip)) {
+  if (!(await checkRate(ip))) {
     return json({ error: "Too many submissions. Try again later." }, 429);
   }
 
@@ -94,7 +94,7 @@ export async function onRequest(context) {
         if (r.error) return json({ error: r.error }, 400);
       }
     } else if (await accountIdForLogin(kv, listing.email)) {
-      if (!loginAllowed(ip, listing.email)) return json({ error: "Too many attempts. Try again later." }, 429);
+      if (!(await loginAllowed(ip, listing.email))) return json({ error: "Too many attempts. Try again later." }, 429);
       acct = await checkPassword(kv, listing.email, password);
       if (!acct) {
         return json({ error: "This email already has a creator account. Enter its password, or log in on the Creator dashboard first." }, 400);
@@ -122,9 +122,10 @@ export async function onRequest(context) {
   }
   try {
     const screen = await screenListing(env, listing);
-    listing.status = screen.decision;
+    // Every new listing waits for owner approval; screening can only reject or flag.
+    listing.status = screen.decision === "rejected" ? "rejected" : "pending";
     listing.screening = {
-      reasons: screen.reasons,
+      reasons: screen.decision === "approved" ? ["Passed automatic checks: waiting for owner approval."] : screen.reasons,
       detail: screen.detail,
       screenedAt: Date.now(),
     };
@@ -162,12 +163,11 @@ export async function onRequest(context) {
     }
   }
 
-  let notify = { sent: false, reason: "not_attempted" };
   try {
-    notify = await notifySubmission(env, listing, request);
+    // Delivery status stays server-side (logs only), never in the client response.
+    await notifySubmission(env, listing, request);
   } catch (e) {
     console.error("community notify error", e);
-    notify = { sent: false, error: "notify_threw" };
   }
 
   const messages = {
@@ -189,7 +189,6 @@ export async function onRequest(context) {
     id: listing.id,
     status: listing.status,
     message: messages[listing.status] || messages.pending,
-    notify,
     newAccount: isNew,
     signedIn: signIn,
     attachedUnclaimed,

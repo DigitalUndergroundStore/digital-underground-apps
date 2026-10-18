@@ -8,7 +8,7 @@
 import { getKv, json, kvGetListing, saveListing } from "../../_lib/community.js";
 import { authCreatorEx, creatorListing, ownedListing, putAccount } from "../../_lib/creator.js";
 import {
-  UPLOADS_PER_DAY, VIDEO_CHUNK, VIDEO_MAX_BYTES, VIDEO_TYPES,
+  UPLOADS_PER_DAY, VIDEO_CHUNK, VIDEO_MAX_BYTES, VIDEO_TYPES, reserveSiteVideoQuota,
   deleteVideo, getVideoMeta, newVid, putVideoMeta, putVideoPart, serveVideo, sniffVideo, uploadVid,
 } from "../../_lib/video.js";
 
@@ -46,6 +46,8 @@ export async function onRequest(context) {
     const day = today();
     const b = acct.videoUploads && acct.videoUploads.day === day ? acct.videoUploads : { day, n: 0 };
     if (b.n >= UPLOADS_PER_DAY) return json({ error: "Daily video upload limit reached. Try again tomorrow." }, 429);
+    const siteErr = await reserveSiteVideoQuota(kv, size);
+    if (siteErr) return json({ error: siteErr }, 429);
     b.n += 1; acct.videoUploads = b; await putAccount(kv, acct);
     const meta = { vid: newVid(), listingId: row.id, creatorId: acct.id, type, size, chunk: VIDEO_CHUNK, parts: Math.ceil(size / VIDEO_CHUNK), done: false, createdAt: Date.now() };
     await putVideoMeta(kv, meta);

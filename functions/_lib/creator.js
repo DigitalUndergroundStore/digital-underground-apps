@@ -23,6 +23,7 @@ import {
   mediaFor,
 } from "./community.js";
 import { runBlocklist } from "./community-screening.js";
+import { rateAll } from "./ratelimit.js";
 
 const ACCT_PREFIX = "creator:";
 const STATS_PREFIX = "stats:";
@@ -240,17 +241,35 @@ export async function recordEvents(kv, approvedIds, events, ip) {
   recentBeacons.set(sig, now);
   if (recentBeacons.size > 5000) recentBeacons.clear();
 
-  const key = STATS_PREFIX + utcDay(now);
-  const day = (await kv.get(key, "json")) || {};
+  const dayKey = STATS_PREFIX + utcDay(now);
+  if (statBuf.key && statBuf.key !== dayKey) await flushStats(kv); // day rolled over
+  statBuf.key = dayKey;
   const bump = (id, f) => {
-    const r = day[id] || (day[id] = { i: 0, v: 0, c: 0 });
+    const r = statBuf.counts[id] || (statBuf.counts[id] = { i: 0, v: 0, c: 0 });
     r[f] += 1;
   };
   i.forEach((id) => bump(id, "i"));
   v.forEach((id) => bump(id, "v"));
   c.forEach((id) => bump(id, "c"));
-  await kv.put(key, JSON.stringify(day), { expirationTtl: 400 * 86400 });
+  if (now - statBuf.flushedAt >= STAT_FLUSH_MS) await flushStats(kv);
   return { counted: i.length + v.length + c.length };
+}
+
+/* Per-isolate buffer: caps KV writes from beacons at ~2/min per isolate (KV free tier: 1,000 writes/day).
+   The first beacon in a fresh isolate flushes immediately, so low-traffic counts are still written. */
+const STAT_FLUSH_MS = 30_000;
+const statBuf = { key: "", counts: {}, flushedAt: 0 };
+async function flushStats(kv) {
+  const key = statBuf.key, counts = statBuf.counts;
+  statBuf.counts = {};
+  statBuf.flushedAt = Date.now();
+  if (!key || !Object.keys(counts).length) return;
+  const day = (await kv.get(key, "json")) || {};
+  for (const [id, r] of Object.entries(counts)) {
+    const d = day[id] || (day[id] = { i: 0, v: 0, c: 0 });
+    d.i += r.i; d.v += r.v; d.c += r.c;
+  }
+  await kv.put(key, JSON.stringify(day), { expirationTtl: 400 * 86400 });
 }
 
 /** 30-day series per listing for the given ids. 30 KV reads, no writes. */
@@ -341,7 +360,15 @@ async function otpKey(email) {
 }
 
 /** Create a 6-digit code for an email. Returns the code, or null if one was sent < 60s ago. */
+const OTP_FAIL_CAP = 20; // wrong codes per email per 24h, across all codes and data centres
+async function otpFailKey(email) { return "otpfail:" + (await sha256Hex("otpfail|" + email)); }
+async function otpLocked(kv, email) {
+  const n = parseInt((await kv.get(await otpFailKey(email))) || "0", 10) || 0;
+  return n >= OTP_FAIL_CAP;
+}
+
 export async function createOtp(env, kv, email, acctId) {
+  if (await otpLocked(kv, email)) return null;
   const key = await otpKey(email);
   const prev = await kv.get(key, "json");
   if (prev && Date.now() - prev.sentAt < 60_000) return null;
@@ -361,11 +388,15 @@ export async function verifyOtp(env, kv, email, code) {
   const presented = await hmacHex(env.COMMUNITY_ADMIN_TOKEN, `otp:${email}:${String(code || "").trim()}`);
   const match = timingSafeEqualStr(presented, row?.codeHash || "0".repeat(64));
   if (!row || row.exp < Date.now()) return null;
+  if (await otpLocked(kv, email)) { await kv.delete(key); return null; }
   if (match && row.tries < OTP_MAX_TRIES) {
     await kv.delete(key);
     return row.acctId;
   }
   row.tries += 1;
+  const fk = await otpFailKey(email);
+  const fails = (parseInt((await kv.get(fk)) || "0", 10) || 0) + 1;
+  await kv.put(fk, String(fails), { expirationTtl: 86400 });
   if (row.tries >= OTP_MAX_TRIES) await kv.delete(key);
   else await kv.put(key, JSON.stringify(row), { expirationTtl: Math.max(60, Math.ceil((row.exp - Date.now()) / 1000)) });
   return null;
@@ -458,16 +489,8 @@ export async function checkPassword(kv, email, password) {
   return ok ? acct : null;
 }
 
-const failHits = new Map();
-/** Per-isolate login throttle: 10 attempts / 15 min per IP and per email. */
-export function loginAllowed(ip, email) {
-  const now = Date.now();
-  for (const k of ["ip:" + ip, "em:" + email]) {
-    let b = failHits.get(k);
-    if (!b || now > b.reset) failHits.set(k, (b = { n: 0, reset: now + 15 * 60_000 }));
-    b.n += 1;
-    if (b.n > 10) return false;
-  }
-  if (failHits.size > 10_000) failHits.clear();
-  return true;
+/** Shared login throttle: 10 attempts / 15 min per IP and per email (per data centre + isolate). Async. */
+export async function loginAllowed(ip, email) {
+  const r = await rateAll([["login:ip:" + ip, 10, 900], ["login:em:" + email, 10, 900]]);
+  return r.ok;
 }

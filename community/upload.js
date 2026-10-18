@@ -1,6 +1,6 @@
 /* Shared upload helpers for the Developer Marketplace (dashboard + submit). */
 (function () {
-  var MAX_VIDEO = 50 * 1024 * 1024, MAX_IMG = 700 * 1024;
+  var MAX_VIDEO = 50 * 1024 * 1024, MAX_IMG = 190 * 1000;
   function jsonReq(method, url, body) {
     return fetch(url, { method: method, credentials: "same-origin", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { if (!r.ok || !d.ok) throw new Error(d.error || "Upload failed."); return d; }); });
@@ -39,7 +39,7 @@
     });
   }
   function cancel(state) { state.canceled = true; if (state.xhr) state.xhr.abort(); }
-  /** Downscale an image file to a data URL under ~700 KB (JPEG/WebP). */
+  /** Downscale an image file to a data URL under ~190 KB (JPEG/WebP). */
   function image(file) {
     if (!/^image\/(jpeg|png|webp|gif)$/i.test(file.type)) return Promise.reject(new Error("Image must be JPEG, PNG, WebP or GIF."));
     if (file.size > 20 * 1024 * 1024) return Promise.reject(new Error("Image is too large (max 20 MB before resizing)."));
@@ -47,7 +47,7 @@
       var url = URL.createObjectURL(file), img = new Image();
       img.onload = function () {
         URL.revokeObjectURL(url);
-        var sizes = [1200, 1000, 800, 640], qs = [0.86, 0.78, 0.7], c = document.createElement("canvas"), ctx = c.getContext("2d");
+        var sizes = [1200, 1000, 800, 640, 480], qs = [0.82, 0.72, 0.62], c = document.createElement("canvas"), ctx = c.getContext("2d");
         var webp = document.createElement("canvas").toDataURL("image/webp").indexOf("data:image/webp") === 0;
         var mime = webp ? "image/webp" : "image/jpeg";
         for (var i = 0; i < sizes.length; i++) {
@@ -67,14 +67,16 @@
   function fmtT(t) { t = Math.max(0, t || 0); var m = Math.floor(t / 60), s = t - m * 60; return m + ":" + (s < 10 ? "0" : "") + s.toFixed(1); }
   function grab(v) {
     var W = v.videoWidth, H = v.videoHeight; if (!W || !H) throw new Error("Video not ready.");
-    var sc = Math.min(1, 1280 / Math.max(W, H)), c = document.createElement("canvas");
-    c.width = Math.round(W * sc); c.height = Math.round(H * sc);
-    c.getContext("2d").drawImage(v, 0, 0, c.width, c.height);
-    var q = [0.82, 0.7, 0.58], d;
-    for (var i = 0; i < q.length; i++) {
-      d = c.toDataURL("image/webp", q[i]);
-      if (d.indexOf("data:image/webp") !== 0) d = c.toDataURL("image/jpeg", q[i]);
-      if (d.length * 0.75 < 700 * 1024) return d;
+    var sizes = [1280, 960, 720, 540], q = [0.8, 0.68, 0.56], d, c = document.createElement("canvas");
+    for (var k = 0; k < sizes.length; k++) {
+      var sc = Math.min(1, sizes[k] / Math.max(W, H));
+      c.width = Math.round(W * sc); c.height = Math.round(H * sc);
+      c.getContext("2d").drawImage(v, 0, 0, c.width, c.height);
+      for (var i = 0; i < q.length; i++) {
+        d = c.toDataURL("image/webp", q[i]);
+        if (d.indexOf("data:image/webp") !== 0) d = c.toDataURL("image/jpeg", q[i]);
+        if (d.length * 0.75 < MAX_IMG) return d;
+      }
     }
     return d;
   }

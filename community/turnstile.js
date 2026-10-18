@@ -1,11 +1,11 @@
 /**
- * Loads Cloudflare Turnstile when /community/turnstile-config.json exposes a site key.
+ * Loads Cloudflare Turnstile when /api/community/turnstile-config returns a site key (TURNSTILE_SITE_KEY env var).
  */
 (function () {
   var slot = document.getElementById("turnstile-slot");
   if (!slot) return;
 
-  fetch("/community/turnstile-config.json", { cache: "no-store" })
+  fetch("/api/community/turnstile-config", { cache: "no-store" })
     .then(function (r) { return r.ok ? r.json() : null; })
     .catch(function () { return null; })
     .then(function (cfg) {

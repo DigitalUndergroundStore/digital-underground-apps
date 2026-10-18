@@ -9,7 +9,43 @@
 export const VIDEO_MAX_BYTES = 50 * 1024 * 1024;
 export const VIDEO_CHUNK = 4 * 1024 * 1024;
 export const VIDEO_TYPES = ["video/mp4", "video/webm"];
-export const UPLOADS_PER_DAY = 6;
+export const UPLOADS_PER_DAY = 3; // per creator account
+export const SITE_UPLOADS_PER_DAY = 12; // whole site
+export const SITE_BYTES_PER_DAY = 250 * 1024 * 1024;
+export const SITE_STORAGE_CAP = 600 * 1024 * 1024; // KV free tier is 1 GB total; keep headroom
+
+const QUOTA = "videoquota:site";
+async function computeStoredBytes(kv) {
+  let total = 0, cursor;
+  do {
+    const page = await kv.list({ prefix: "video:v_", cursor });
+    for (const k of page.keys) {
+      if (k.name.split(":").length !== 2) continue; // meta keys only (parts are video:{vid}:{n})
+      const m = await kv.get(k.name, "json");
+      if (m && m.size > 0) total += m.size;
+    }
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+  return total;
+}
+/** Site-wide upload budget. Returns null when allowed (and records the reservation) or an error message. */
+export async function reserveSiteVideoQuota(kv, size) {
+  const day = new Date().toISOString().slice(0, 10);
+  let q = await kv.get(QUOTA, "json");
+  if (!q || typeof q.total !== "number") q = { total: await computeStoredBytes(kv) };
+  if (q.day !== day) { q.day = day; q.n = 0; q.bytes = 0; }
+  if (q.n >= SITE_UPLOADS_PER_DAY || q.bytes + size > SITE_BYTES_PER_DAY) return "The marketplace has reached today's video upload limit. Try again tomorrow, or use a YouTube/Vimeo link.";
+  if (q.total + size > SITE_STORAGE_CAP) return "Video storage is full right now. Use a YouTube or Vimeo link instead.";
+  q.n += 1; q.bytes += size; q.total += size;
+  await kv.put(QUOTA, JSON.stringify(q));
+  return null;
+}
+async function releaseStoredBytes(kv, size) {
+  const q = await kv.get(QUOTA, "json");
+  if (!q || typeof q.total !== "number") return;
+  q.total = Math.max(0, q.total - (size || 0));
+  await kv.put(QUOTA, JSON.stringify(q));
+}
 
 const META = (vid) => `video:${vid}`;
 const PART = (vid, n) => `video:${vid}:${n}`;
@@ -40,6 +76,7 @@ export async function deleteVideo(kv, vid) {
   const parts = Math.ceil(meta.size / meta.chunk);
   for (let n = 0; n < parts; n++) await kv.delete(PART(vid, n));
   await kv.delete(META(vid));
+  await releaseStoredBytes(kv, meta.size).catch(() => {});
 }
 
 /** Magic-byte check on the first part: MP4 "ftyp" box or WebM/EBML header. */

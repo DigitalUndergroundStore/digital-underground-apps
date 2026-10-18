@@ -1,16 +1,20 @@
 import { clientIp, getKv, json, kvGetIndex } from "../../_lib/community.js";
 import { recordEvents } from "../../_lib/creator.js";
+import { rateAll } from "../../_lib/ratelimit.js";
 
 /**
  * POST /api/community/track  body: { i: [ids], v: [ids], c: [ids] }
  * Client batches: impressions once per session per listing, detail views and clicks exact.
- * One KV read + one KV write per beacon.
+ * Counts are buffered per isolate and flushed to KV at most every 30 s (one read + one write per flush).
  */
 export async function onRequest(context) {
   const { request, env } = context;
   if (request.method !== "POST") return json({ error: "Use POST." }, 405);
   const kv = getKv(env);
   if (!kv) return new Response(null, { status: 204 });
+  // Per-IP throttle (a real visitor sends a handful of beacons per page view).
+  const rl = await rateAll([["trk:" + clientIp(request), 60, 600], ["trkh:" + clientIp(request), 200, 3600]]);
+  if (!rl.ok) return new Response(null, { status: 429, headers: { "Retry-After": String(rl.retryAfter), "Cache-Control": "no-store" } });
   let body;
   try {
     const text = await request.text();

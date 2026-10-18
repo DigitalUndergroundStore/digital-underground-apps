@@ -1,6 +1,7 @@
 /**
  * Community marketplace helpers (link-out listings, moderation queue).
  */
+import { rateAll } from "./ratelimit.js";
 
 export const CATEGORIES = ["apps", "ai-tools", "games", "books", "templates", "other"];
 /** Listing stage chosen by the maker. Stored as the display label. Missing = Released. */
@@ -22,12 +23,10 @@ function displayStage(row) {
 
 const RATE_LIMIT = 8;
 const RATE_WINDOW_MS = 60 * 60 * 1000;
-const MAX_IMAGE_BYTES = 750_000;
+const MAX_IMAGE_BYTES = 200_000; // new uploads only; existing larger images keep working
 const MAX_DESC_LONG = 4000;
 const MAX_DESC_SHORT = 280;
 
-/** @type {Map<string, { count: number; reset: number }>} */
-const rateByIp = new Map();
 
 export function json(data, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(data), {
@@ -35,6 +34,7 @@ export function json(data, status = 200, extraHeaders = {}) {
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff",
       ...extraHeaders,
     },
   });
@@ -42,27 +42,15 @@ export function json(data, status = 200, extraHeaders = {}) {
 
 export function clientIp(request) {
   return (
-    request.headers.get("CF-Connecting-IP") ||
-    request.headers.get("X-Forwarded-For")?.split(",")[0]?.trim() ||
-    "unknown"
+    // Only Cloudflare's own header: X-Forwarded-For is client-controlled and spoofable.
+    request.headers.get("CF-Connecting-IP") || "unknown"
   );
 }
 
-export function checkRate(ip) {
-  const now = Date.now();
-  let bucket = rateByIp.get(ip);
-  if (!bucket || now > bucket.reset) {
-    bucket = { count: 0, reset: now + RATE_WINDOW_MS };
-    rateByIp.set(ip, bucket);
-  }
-  bucket.count += 1;
-  if (bucket.count > RATE_LIMIT) return false;
-  if (rateByIp.size > 10_000) {
-    for (const [key, val] of rateByIp) {
-      if (now > val.reset) rateByIp.delete(key);
-    }
-  }
-  return true;
+/** Shared per-IP limit (8/hour and 20/day per data centre + isolate). Async. */
+export async function checkRate(ip) {
+  const r = await rateAll([["rate:" + ip, RATE_LIMIT, RATE_WINDOW_MS / 1000], ["rated:" + ip, RATE_LIMIT * 3, 86400]]);
+  return r.ok;
 }
 
 export function newListingId() {
@@ -193,7 +181,7 @@ export function parseImageField(body) {
     const b64 = data.slice(comma + 1);
     const approxBytes = (b64.length * 3) / 4;
     if (approxBytes > MAX_IMAGE_BYTES) {
-      return { error: "Image is too large (max about 750 KB). Use an image URL instead." };
+      return { error: "Image is too large (max about 200 KB). Use an image URL instead." };
     }
     return { imageUrl: data, imageData: data };
   }
@@ -279,6 +267,15 @@ export function normalizeTags(raw) {
   return out;
 }
 
+/** Uploaded (data:) images are served by /api/community/img so the listings feed stays small. */
+export function publicImageUrl(row) {
+  const u = row && row.imageUrl;
+  if (typeof u === "string" && u.startsWith("data:") && row.id) {
+    return `/api/community/img?id=${encodeURIComponent(row.id)}&v=${encodeURIComponent(String(row.updatedAt || row.createdAt || 0))}`;
+  }
+  return u;
+}
+
 export function publicListing(row) {
   return {
     id: row.id,
@@ -288,7 +285,7 @@ export function publicListing(row) {
     category: row.category,
     priceLabel: row.priceLabel,
     pitchShort: row.pitchShort,
-    imageUrl: row.imageUrl,
+    imageUrl: publicImageUrl(row),
     visitUrl: row.visitUrl || appendRefParam(row.projectUrl),
     projectUrl: row.projectUrl,
     tags: Array.isArray(row.tags) ? row.tags : [],
@@ -301,7 +298,8 @@ export function publicListing(row) {
 
 /** Server-side only: Donald's private alert address (existing config). Never send to a client. */
 export function ownerAlertEmail(env) {
-  return env?.COMMUNITY_OWNER_ALERT_EMAIL || "kerzydon@gmail.com";
+  // Configured as a Pages secret; no address is hardcoded in the repo.
+  return env?.COMMUNITY_OWNER_ALERT_EMAIL || "";
 }
 
 /** Owner seed listings (Kerzy Labs) have no stored maker email; their contact goes to the owner alert address. */
@@ -469,6 +467,7 @@ export async function setListingStatus(kv, id, status) {
   listing.updatedAt = Date.now();
   // A human approval also signs off the current video, so later clean edits stay live.
   if (status === "approved") promotePendingVideo(listing);
+  if (status === "approved") listing.ownerApprovedAt = Date.now();
   if (status === "approved") index.approved.push(id);
   else if (status === "pending") index.pending.push(id);
   else if (status === "rejected") index.rejected.push(id);
@@ -531,7 +530,11 @@ export function adminAuthorized(request, env) {
 
 export async function verifyTurnstile(env, token, ip) {
   const secret = env?.TURNSTILE_SECRET_KEY;
-  if (!secret) return { ok: true, skipped: true };
+  if (!secret) {
+    // Fail closed once a site key is configured (widget showing) but the secret is missing.
+    if (env?.TURNSTILE_SITE_KEY) return { ok: false, error: "Security check is misconfigured. Try again later." };
+    return { ok: true, skipped: true };
+  }
   if (!token || typeof token !== "string") {
     return { ok: false, error: "Complete the security check." };
   }

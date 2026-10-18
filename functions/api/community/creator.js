@@ -50,6 +50,12 @@ async function rescreen(env, row) {
   try {
     const s = await screenListing(env, row);
     row.screening = { reasons: s.reasons, detail: s.detail, screenedAt: Date.now() };
+    // Only a listing the owner already approved can stay live on a passing re-screen;
+    // anything not yet approved (new, pending, rejected, republished) goes to the owner queue.
+    if (s.decision === "approved" && row.status !== "approved" && !(row.status === "unpublished" && row.ownerApprovedAt)) {
+      row.screening.reasons = ["Passed automatic checks: waiting for owner approval."];
+      return "pending";
+    }
     return s.decision;
   } catch (e) {
     console.error("creator rescreen error", e);

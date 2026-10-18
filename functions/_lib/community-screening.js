@@ -60,6 +60,17 @@ export function runBlocklist(haystack) {
  * @param {string} url
  * @returns {Promise<{ decision: ScreenDecision; reasons: string[] }>}
  */
+/** Reject IP literals, localhost and internal-looking hostnames (screening never fetches those). */
+export function isPublicHost(raw) {
+  let h;
+  try { h = new URL(raw).hostname.toLowerCase(); } catch { return false; }
+  if (!h || h.startsWith("[") || h.includes(":")) return false; // IPv6 literal
+  if (/^\d{1,3}(\.\d{1,3}){3}$/.test(h) || /^\d+$/.test(h) || /^0x[0-9a-f]+$/i.test(h)) return false; // IPv4 / numeric
+  if (!h.includes(".")) return false;
+  if (/(^|\.)(localhost|local|internal|intranet|lan|home|corp|localdomain|arpa)$/.test(h)) return false;
+  return true;
+}
+
 export async function checkProjectUrlReachable(url) {
   if (!url || typeof url !== "string") {
     return { decision: "rejected", reasons: ["Project URL must be https."] };
@@ -73,22 +84,35 @@ export async function checkProjectUrlReachable(url) {
     return { decision: "rejected", reasons: ["Project URL is not valid."] };
   }
 
+  if (!isPublicHost(url.trim())) {
+    return { decision: "pending", reasons: ["Project URL points at an IP address or private host; needs manual review."] };
+  }
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
-    let res = await fetch(url.trim(), {
-      method: "GET",
-      redirect: "follow",
-      signal: controller.signal,
-      headers: { "User-Agent": "DigitalUnderground-CommunityScreen/1.0" },
-    });
-    if (res.status === 405 || res.status === 501) {
-      res = await fetch(url.trim(), {
-        method: "HEAD",
-        redirect: "follow",
-        signal: controller.signal,
-        headers: { "User-Agent": "DigitalUnderground-CommunityScreen/1.0" },
-      });
+    // Follow at most 3 redirects by hand, re-checking each hop's host.
+    const get = async (method) => {
+      let target = url.trim();
+      for (let hop = 0; hop <= 3; hop++) {
+        const r = await fetch(target, {
+          method,
+          redirect: "manual",
+          signal: controller.signal,
+          headers: { "User-Agent": "DigitalUnderground-CommunityScreen/1.0" },
+        });
+        const loc = r.status >= 300 && r.status < 400 ? r.headers.get("Location") : null;
+        if (!loc) return r;
+        let next;
+        try { next = new URL(loc, target); } catch { return r; }
+        if (next.protocol !== "https:" || !isPublicHost(next.href)) return { status: 0, blockedHop: true };
+        target = next.href;
+      }
+      return { status: 0, tooMany: true };
+    };
+    let res = await get("GET");
+    if (res.status === 405 || res.status === 501) res = await get("HEAD");
+    if (res.blockedHop || res.tooMany) {
+      return { decision: "pending", reasons: [res.tooMany ? "Project URL redirects too many times; needs manual review." : "Project URL redirects to a non-https or private host; needs manual review."] };
     }
     if (res.status >= 200 && res.status < 300) {
       return { decision: "approved", reasons: [] };
@@ -275,6 +299,7 @@ async function loadImageBytes(imageUrl) {
     return base64ToBytes(b64);
   }
   if (!imageUrl.startsWith("https://")) throw new Error("image must be https");
+  if (!isPublicHost(imageUrl)) throw new Error("image host not allowed");
 
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
@@ -313,6 +338,7 @@ export async function checkVideo(listing) {
   const reasons = [];
   if (url.startsWith("https://") && /\.(mp4|webm)(\?|#|$)/i.test(new URL(url).pathname)) {
     try {
+      if (!isPublicHost(url)) return { decision: "pending", reasons: ["Video link points at an IP address or private host; needs manual review."] };
       const res = await fetch(url, { method: "HEAD", redirect: "follow", cf: { cacheTtl: 0 } });
       const type = res.headers.get("content-type") || "";
       const len = Number(res.headers.get("content-length") || 0);

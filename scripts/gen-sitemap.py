@@ -2,7 +2,12 @@
 """Regenerate sitemap.xml: public static pages (skips noindex) + live marketplace listings."""
 import os,re,json,urllib.request,datetime
 B="https://digitalundergroundstore.com"; R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-cands=["/","/store/","/community/","/advertise/","/downloads/","/downloads/easy-tracker/"]
+cands=["/","/store/","/community/","/advertise/","/downloads/","/downloads/easy-tracker/","/privacy/"]
+try:
+  import importlib.util as iu; sp=iu.spec_from_file_location("gl",f"{R}/scripts/gen-landing.py")
+  SL=[l.split('slug="')[1].split('"')[0] for l in open(f"{R}/scripts/gen-landing.py") if l.startswith('dict(slug="')]
+  cands+=[f"/{x}/" for x in SL]
+except Exception as ex: print("landing list failed",ex)
 cands+=[f"/p/{d}/" for d in sorted(os.listdir(f"{R}/p")) if os.path.isfile(f"{R}/p/{d}/index.html")]
 cands+=[f"/get/{d}/" for d in sorted(os.listdir(f"{R}/get")) if os.path.isfile(f"{R}/get/{d}/index.html")]
 urls=[]

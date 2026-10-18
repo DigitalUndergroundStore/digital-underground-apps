@@ -16,6 +16,7 @@ import {
   unauthorized,
   verifyOwnerPasscode,
 } from "../../_lib/owner.js";
+import { listSubscribers, subscribersToCsv } from "../../_lib/subscribers.js";
 import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
 import { promotePendingVideo as _ppv } from "../../_lib/community.js";
 
@@ -75,6 +76,14 @@ export async function onRequest(context) {
 
   if ((head === "me" || head === "") && request.method === "GET") {
     return json({ ok: true, role: "owner" });
+  }
+
+  if (head === "subscribers" && request.method === "GET") {
+    const rows = await listSubscribers(kv);
+    if (new URL(request.url).searchParams.get("format") === "csv") {
+      return new Response(subscribersToCsv(rows), { headers: { "Content-Type": "text/csv; charset=utf-8", "Content-Disposition": "attachment; filename=subscribers.csv", "Cache-Control": "no-store" } });
+    }
+    return json({ total: rows.length, active: rows.filter(r => r.status === "subscribed").length, subscribers: rows.map(({ unsub, ...r }) => r) });
   }
 
   if (head === "overview" && request.method === "GET") {

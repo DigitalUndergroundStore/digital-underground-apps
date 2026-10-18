@@ -55,6 +55,11 @@
     </label>
     <p><a class="btn block" id="csv-btn" href="/api/owner/contacts?format=csv">Download CSV</a></p>
     <div id="contact-list" class="list"></div>
+    <h2 style="margin-top:28px">Email subscribers</h2>
+    <p id="sub-count" class="muted">Sign in to see the count.</p>
+    <p><a class="btn block" href="/api/owner/subscribers?format=csv">Download subscribers CSV</a></p>
+    <p class="muted" style="font-size:13px">Every row stores the consent text, time and page (CASL express consent). Only email people whose status is "subscribed", and include the unsubscribe link and sender details in every message.</p>
+    <script>fetch("/api/owner/subscribers",{credentials:"same-origin"}).then(r=>r.ok?r.json():null).then(d=>{if(d)document.getElementById("sub-count").textContent=d.active+" active of "+d.total+" total signups";}).catch(()=>{});</script>
   </section>
 
   <section id="view-support" class="panel">

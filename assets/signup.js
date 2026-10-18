@@ -1,0 +1,44 @@
+/* Digital Underground email signup: free Hook Bank gift. CASL express consent (unticked box). */
+(function () {
+  var CONSENT = "Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.";
+  var css = ".du-su{max-width:640px;margin:32px auto;padding:20px;border:1px solid rgba(157,140,255,.35);border-radius:14px;background:rgba(20,18,32,.85);color:#eee;font:15px/1.5 system-ui,sans-serif;box-sizing:border-box}.du-su h2{margin:0 0 6px;font-size:20px;color:#fff}.du-su p{margin:0 0 12px;color:#cfcbe0}.du-su form{display:flex;flex-wrap:wrap;gap:8px}.du-su input[type=email]{flex:1 1 220px;min-width:0;padding:11px 12px;border-radius:9px;border:1px solid #4a4466;background:#0d0b16;color:#fff;font-size:16px}.du-su button{padding:11px 18px;border:0;border-radius:9px;background:#7c5cff;color:#fff;font-weight:600;cursor:pointer;font-size:15px}.du-su label.c{flex-basis:100%;display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#cfcbe0}.du-su label.c input{margin-top:3px}.du-su .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.du-su .m{flex-basis:100%;font-size:14px;min-height:1.2em}.du-su .m.bad{color:#f0a0a0}.du-su .m.ok{color:#9be3b5}.du-su .m a{color:#c8bcff;font-weight:600}.du-su small{display:block;margin-top:10px;color:#9a95b3;font-size:12px}.du-su small a{color:#c8bcff}";
+  var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
+  function build(host) {
+    var src = location.pathname;
+    host.className = (host.className + " du-su").trim();
+    host.innerHTML = '<h2>Get Hook Bank free</h2><p>Join the Digital Underground list and download Hook Bank (hundreds of offline social media hooks) right away. New apps and offers, a few emails a month at most.</p>' +
+      '<form novalidate><label class="hp" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label>' +
+      '<input type="email" name="email" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">' +
+      '<button type="submit">Get the free download</button>' +
+      '<label class="c"><input type="checkbox" name="consent"> <span>' + CONSENT + '</span></label>' +
+      '<div class="m" role="status" aria-live="polite"></div></form>' +
+      '<small>Sent by Digital Underground, Ontario, Canada. Every email has an unsubscribe link. <a href="/privacy/">Privacy</a></small>';
+    var f = host.querySelector("form"), m = host.querySelector(".m");
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var email = f.email.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(email)) { m.className = "m bad"; m.textContent = "Please enter a valid email address."; return; }
+      if (!f.consent.checked) { m.className = "m bad"; m.textContent = "Please tick the box to agree to receive emails."; return; }
+      var b = f.querySelector("button"); b.disabled = true; m.className = "m"; m.textContent = "Signing you up…";
+      fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email, consent: true, company: f.company.value, source: src }) })
+        .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+        .then(function (x) {
+          b.disabled = false;
+          if (!x.ok || !x.d.ok) { m.className = "m bad"; m.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; return; }
+          m.className = "m ok"; m.innerHTML = 'You are in. <a href="' + x.d.gift + '" download>Download Hook Bank (ZIP)</a>, then open index.html.';
+          f.email.value = ""; f.consent.checked = false;
+        }).catch(function () { b.disabled = false; m.className = "m bad"; m.textContent = "Network error. Please try again."; });
+    });
+  }
+  function init() {
+    var hosts = document.querySelectorAll("[data-du-signup]");
+    if (!hosts.length) {
+      var h = document.createElement("section"); h.setAttribute("data-du-signup", "");
+      var foot = document.querySelector("footer");
+      if (foot && foot.parentNode) foot.parentNode.insertBefore(h, foot); else document.body.appendChild(h);
+      hosts = [h];
+    }
+    Array.prototype.forEach.call(hosts, build);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();

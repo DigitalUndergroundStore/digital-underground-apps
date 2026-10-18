@@ -1,4 +1,4 @@
-/* Digital Underground email signup: free Hook Bank gift. CASL express consent (unticked box). */
+/* Digital Underground email signup: free Humanity X ebook gift. CASL express consent (unticked box). */
 (function () {
   var CONSENT = "Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.";
   var css = ".du-su{max-width:640px;margin:32px auto;padding:20px;border:1px solid rgba(157,140,255,.35);border-radius:14px;background:rgba(20,18,32,.85);color:#eee;font:15px/1.5 system-ui,sans-serif;box-sizing:border-box}.du-su h2{margin:0 0 6px;font-size:20px;color:#fff}.du-su p{margin:0 0 12px;color:#cfcbe0}.du-su form{display:flex;flex-wrap:wrap;gap:8px}.du-su input[type=email]{flex:1 1 220px;min-width:0;padding:11px 12px;border-radius:9px;border:1px solid #4a4466;background:#0d0b16;color:#fff;font-size:16px}.du-su button{padding:11px 18px;border:0;border-radius:9px;background:#7c5cff;color:#fff;font-weight:600;cursor:pointer;font-size:15px}.du-su label.c{flex-basis:100%;display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#cfcbe0}.du-su label.c input{margin-top:3px}.du-su .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.du-su .m{flex-basis:100%;font-size:14px;min-height:1.2em}.du-su .m.bad{color:#f0a0a0}.du-su .m.ok{color:#9be3b5}.du-su .m a{color:#c8bcff;font-weight:600}.du-su small{display:block;margin-top:10px;color:#9a95b3;font-size:12px}.du-su small a{color:#c8bcff}";
@@ -6,10 +6,10 @@
   function build(host) {
     var src = location.pathname;
     host.className = (host.className + " du-su").trim();
-    host.innerHTML = '<h2>Get Hook Bank free</h2><p>Join the Digital Underground list and download Hook Bank (hundreds of offline social media hooks) right away. New apps and offers, a few emails a month at most.</p>' +
+    host.innerHTML = '<h2>Get my sci-fi novel free</h2><p>Join the Digital Underground list and download <em>Humanity X: Off the Ground</em>, Book 1 of the Humanity X Trilogy by Donald Stelling (PDF, EPUB and Word), right away. New apps and offers, a few emails a month at most.</p>' +
       '<form novalidate><label class="hp" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label>' +
       '<input type="email" name="email" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">' +
-      '<button type="submit">Get the free download</button>' +
+      '<button type="submit">Get the free book</button>' +
       '<label class="c"><input type="checkbox" name="consent"> <span>' + CONSENT + '</span></label>' +
       '<div class="m" role="status" aria-live="polite"></div></form>' +
       '<small>Sent by Digital Underground, Ontario, Canada. Every email has an unsubscribe link. <a href="/privacy/">Privacy</a></small>';
@@ -25,7 +25,7 @@
         .then(function (x) {
           b.disabled = false;
           if (!x.ok || !x.d.ok) { m.className = "m bad"; m.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; return; }
-          m.className = "m ok"; m.innerHTML = 'You are in. <a href="' + x.d.gift + '" download>Download Hook Bank (ZIP)</a>, then open index.html.';
+          m.className = "m ok"; m.innerHTML = 'You are in. <a href="' + x.d.gift + '" download>Download Humanity X: Off the Ground (ZIP)</a>. Thanks for joining, and enjoy the book!';
           f.email.value = ""; f.consent.checked = false;
         }).catch(function () { b.disabled = false; m.className = "m bad"; m.textContent = "Network error. Please try again."; });
     });

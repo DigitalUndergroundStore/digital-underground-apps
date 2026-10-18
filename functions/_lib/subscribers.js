@@ -1,6 +1,6 @@
 // Email list stored in COMMUNITY_KV under "sub:<email>". CASL: express consent recorded with text, time, page.
 export const CONSENT_TEXT = "Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.";
-export const GIFT_URL = "/assets/gift/Hook-Bank-v3.1.zip";
+export const GIFT_URL = "/assets/gift/Humanity-X-Off-the-Ground.zip";
 export const SENDER = "Digital Underground, Ontario, Canada · digitalundergroundstore.com/support/";
 const EMAIL_RE = /^[^\s@]{1,64}@[^\s@]{1,190}\.[a-z]{2,24}$/i;
 export function normEmail(e) { return String(e || "").trim().toLowerCase(); }

@@ -11,6 +11,12 @@ export async function onRequest({ request, next }) {
   if (/^\/(src|tools|scripts|docs|workers|node_modules)(\/|$)/i.test(url.pathname) || /^\/(dev\.log|README\.md|package(-lock)?\.json)$/i.test(url.pathname)) {
     return new Response("Not found", { status: 404, headers: { "Content-Type": "text/plain", "Strict-Transport-Security": HSTS, "X-Robots-Tag": "noindex" } });
   }
+  // /apps/<app>/... -> /<app>/... (canonical phone-app URLs live at the site root)
+  const am = url.pathname.match(/^\/apps\/([a-z0-9-]+)(\/.*)?$/);
+  if (am) {
+    url.pathname = "/" + am[1] + (am[2] || "/");
+    return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
+  }
   const res = await next();
   if (res.headers.has("Strict-Transport-Security")) return res;
   const out = new Response(res.body, res);

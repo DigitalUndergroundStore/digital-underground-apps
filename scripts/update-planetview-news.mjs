@@ -34,7 +34,7 @@ export const STALE_FAIL_MS = 6 * 60 * 60 * 1000;
 export const MAX_ARTICLES = 40;
 
 const DEFAULT_OUT = "planetview/news.json";
-const USER_AGENT = "PlanetView-news/2 (+https://gsahavok.github.io/digital-underground-apps/planetview/)";
+const USER_AGENT = "PlanetView-news/2 (+https://digitalundergroundstore.com/planetview/)";
 
 /** Longer names first so "united states" wins over a shorter token. */
 const PLACES = [

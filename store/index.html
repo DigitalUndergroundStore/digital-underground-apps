@@ -31,22 +31,23 @@
   } catch (e) {}
 })();
 </script>
+<link rel="stylesheet" href="/assets/design-tokens.css">
 <style>
   :root {
     color-scheme: dark;
-    --bg: #07060f;
-    --text: #f5f3ff;
-    --muted: #c8c0da;
-    --cyan: #bfe8ff;
-    --line: rgba(255, 255, 255, .1);
-    --card: rgba(16, 12, 28, .92);
+    --bg: var(--du-bg);
+    --text: var(--du-text);
+    --muted: var(--du-muted);
+    --cyan: var(--du-accent);
+    --line: var(--du-border);
+    --card: var(--du-surface);
   }
   * { box-sizing: border-box; }
   html { scroll-padding-top: 84px; scroll-behavior: smooth; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  html, body { margin: 0; background: #07060f; color: var(--text); }
+  html, body { margin: 0; background: var(--du-bg); color: var(--text); }
   body {
-    font: 16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font: 16px/1.5 var(--du-font-body);
     min-height: 100vh;
     background:
       radial-gradient(1100px 560px at 100% -10%, rgba(76, 29, 149, .45), transparent 55%),
@@ -74,15 +75,15 @@
     display: flex;
     align-items: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, .08);
-    background: #07060f;
+    background: var(--du-bg);
   }
-  .hero-media { position: absolute; inset: 0; z-index: 0; background: #07060f; }
+  .hero-media { position: absolute; inset: 0; z-index: 0; background: var(--du-bg); }
   .hero-poster-frame { display: none; position: absolute; inset: 0; }
   .hero-poster, .hero-film {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
     object-fit: cover;
-    background: #07060f;
+    background: var(--du-bg);
   }
   .hero-film { opacity: 0; transition: opacity .35s ease; }
   .hero-film.is-playing { opacity: 1; filter: none; }
@@ -191,14 +192,14 @@
   .hero-cta {
     display: inline-flex; align-items: center; justify-content: center;
     min-height: 52px; padding: 0 28px; border-radius: 999px;
-    background: linear-gradient(105deg, #6d28d9, #1e3a8a);
+    background: var(--du-gradient);
     color: #fff; font-size: 17px; font-weight: 700; text-decoration: none;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 8px 18px rgba(49, 20, 120, .35);
   }
   .hero-cta-secondary {
     min-height: 48px; padding: 0 4px;
     display: inline-flex; align-items: center;
-    font-size: 14px; font-weight: 650; color: rgba(191, 232, 255, .92);
+    font-size: var(--du-fs-sm); font-weight: 650; color: rgba(191, 232, 255, .92);
     text-decoration: underline; text-decoration-color: rgba(191, 232, 255, .35);
     text-underline-offset: 4px;
   }
@@ -263,14 +264,14 @@
   .market-ico svg { width: 18px; height: 18px; }
   .market-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; text-align: left; }
   .market-txt strong { font-size: 15px; font-weight: 700; line-height: 1.2; letter-spacing: -.01em; }
-  .market-txt span { font-size: 14px; font-weight: 600; color: rgba(255, 255, 255, .86); line-height: 1.3; }
+  .market-txt span { font-size: var(--du-fs-sm); font-weight: 600; color: rgba(255, 255, 255, .86); line-height: 1.3; }
   .market-arrow { flex: none; width: 28px; height: 28px; border-radius: 999px; display: grid; place-items: center; background: rgba(255, 255, 255, .18); }
   .market-arrow svg { width: 16px; height: 16px; }
   @media (min-width: 768px) {
     .market-cta { margin-top: 16px; }
   }
   @media (prefers-reduced-motion: reduce) { .market-cta { transition: none; } }
-  .hero-facts { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; font-weight: 600; color: rgba(235, 244, 255, .92); }
+  .hero-facts { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--du-fs-sm); font-weight: 600; color: rgba(235, 244, 255, .92); }
   .hero-facts li { display: inline-flex; align-items: center; gap: 6px; }
   .hero-facts li::before { content: ""; width: 6px; height: 6px; border-radius: 99px; background: #a78bfa; }
   .hero-facts li[hidden] { display: none; }
@@ -344,7 +345,7 @@
   }
   .tagline {
     margin: 10px 0 0; max-width: 34rem;
-    color: rgba(237, 233, 254, .96); font-size: 16px; line-height: 1.4;
+    color: rgba(237, 233, 254, .96); font-size: var(--du-fs-md); line-height: 1.4;
     text-shadow:
       0 1px 2px rgba(0, 0, 0, .85),
       0 2px 16px rgba(0, 0, 0, .65);
@@ -358,7 +359,7 @@
     padding: 0 12px; border-radius: 999px;
     background: rgba(255, 255, 255, .06);
     border: 1px solid rgba(255, 255, 255, .12);
-    font-size: 14px; font-weight: 650;
+    font-size: var(--du-fs-sm); font-weight: 650;
     backdrop-filter: blur(10px);
   }
   .trust svg { width: 16px; height: 16px; color: var(--cyan); flex: 0 0 auto; }
@@ -380,7 +381,7 @@
     border: 1px solid rgba(196, 181, 253, .35);
     background: rgba(255, 255, 255, .04);
     color: var(--text); text-decoration: none;
-    font-size: 14px; font-weight: 650;
+    font-size: var(--du-fs-sm); font-weight: 650;
   }
   .chips a:hover { border-color: rgba(191, 232, 255, .7); color: var(--cyan); }
   .chips a:focus-visible, .card:focus-visible, .trust li:focus-visible {
@@ -455,7 +456,7 @@
   }
   .reel-label {
     margin: 0 0 10px; color: var(--cyan);
-    font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+    font-size: var(--du-fs-xs); font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
   }
   .reels {
     display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
@@ -473,8 +474,8 @@
     display: flex; align-items: baseline; justify-content: space-between; gap: 8px;
     margin-top: 8px; text-decoration: none; color: inherit;
   }
-  .reel-meta strong { font-size: 14px; letter-spacing: -.02em; }
-  .reel-meta .price { min-height: 28px; font-size: 12px; }
+  .reel-meta strong { font-size: var(--du-fs-sm); letter-spacing: -.02em; }
+  .reel-meta .price { min-height: 28px; font-size: var(--du-fs-xs); }
   .plate {
     position: absolute; inset: 0;
     display: flex; flex-direction: column; justify-content: flex-end; gap: 6px;
@@ -511,7 +512,7 @@
     position: absolute; top: 12px; left: 12px; z-index: 1;
     min-height: 26px; display: inline-flex; align-items: center;
     padding: 0 9px; border-radius: 999px;
-    background: linear-gradient(105deg, #6d28d9, #1e3a8a);
+    background: var(--du-gradient);
     color: #fff; font-size: 11px; font-weight: 750; letter-spacing: .08em;
   }
   .badge-ghost {
@@ -520,9 +521,9 @@
     color: #f5f3ff;
   }
   .info { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 16px; flex: 1; }
-  .info strong { font-size: 18px; line-height: 1.25; letter-spacing: -.02em; font-weight: 700; }
+  .info strong { font-size: var(--du-fs-lg); line-height: 1.25; letter-spacing: -.02em; font-weight: 700; }
   .card-feature .info strong { font-size: 20px; }
-  .blurb { color: var(--muted); font-size: 14px; line-height: 1.4; }
+  .blurb { color: var(--muted); font-size: var(--du-fs-sm); line-height: 1.4; }
   .product-share {
     display: inline-flex; align-items: center; gap: 5px;
     margin-top: 6px; font-size: 11px; font-weight: 600;
@@ -547,7 +548,7 @@
   .cta {
     display: inline-flex; align-items: center; justify-content: center;
     min-height: 44px; padding: 0 18px; border-radius: 999px;
-    background: linear-gradient(105deg, #6d28d9, #1e3a8a);
+    background: var(--du-gradient);
     color: #fff; font-size: 15px; font-weight: 700;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 8px 18px rgba(49, 20, 120, .35);
   }
@@ -557,8 +558,8 @@
   }
   .foot { display: flex; align-items: center; gap: 14px; }
   .foot img { width: 48px; height: auto; display: block; }
-  .foot strong { display: block; font-size: 16px; letter-spacing: -.02em; }
-  .foot p { margin: 4px 0 0; color: var(--muted); font-size: 14px; max-width: 36rem; }
+  .foot strong { display: block; font-size: var(--du-fs-md); letter-spacing: -.02em; }
+  .foot p { margin: 4px 0 0; color: var(--muted); font-size: var(--du-fs-sm); max-width: 36rem; }
   @media (min-width: 800px) {
     .wrap { padding: 0 28px 96px; }
     .hero {
@@ -577,17 +578,17 @@
     h1 { font-size: 64px; }
     .hero-copy::before { inset: -18px -28px -18px -20px; border-radius: 22px; }
     .hero-actions { margin-top: 22px; gap: 12px 18px; }
-    .hero-cta { font-size: 18px; padding: 0 32px; min-height: 56px; }
+    .hero-cta { font-size: var(--du-fs-lg); padding: 0 32px; min-height: 56px; }
     .hero-cta-secondary { font-size: 15px; }
     .tagline { font-size: 20px; margin-top: 14px; }
     .hero-lead { margin-bottom: 16px; gap: 8px 6px; }
-    .hero-lead .eyebrow { font-size: 12px; letter-spacing: .16em; line-height: 28px; }
+    .hero-lead .eyebrow { font-size: var(--du-fs-xs); letter-spacing: .16em; line-height: 28px; }
     .hero-lead .trust--hero { gap: 6px; }
-    .hero-lead .trust--hero li { min-height: 0; padding: 5px 10px; font-size: 12px; gap: 5px; }
+    .hero-lead .trust--hero li { min-height: 0; padding: 5px 10px; font-size: var(--du-fs-xs); gap: 5px; }
     .hero-lead .trust--hero svg { width: 13px; height: 13px; }
     .hero-sound { right: 24px; bottom: 24px; }
     .trust { margin-top: 20px; gap: 8px; }
-    .trust li { min-height: 44px; padding: 0 14px; font-size: 14px; }
+    .trust li { min-height: 44px; padding: 0 14px; font-size: var(--du-fs-sm); }
     .section-head { margin: 40px 0 16px; }
     .card-feature .cover { aspect-ratio: 4 / 3; }
     .orb-a { width: 460px; height: 460px; }
@@ -644,8 +645,7 @@
       <div class="hero-copy">
       <div class="hero-lead">
         <p class="eyebrow">The store</p>
-        <ul class="trust--hero" aria-label="Pay once, instant download, secure checkout">
-          <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5 6.2 11.5 13 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pay once</li>
+        <ul class="trust--hero" aria-label="Instant download, secure checkout">
           <li title="Instant download"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v7M5 7.5 8 10.5 11 7.5M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Download</li>
           <li title="Secure checkout"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Secure</li>
         </ul>

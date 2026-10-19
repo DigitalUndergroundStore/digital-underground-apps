@@ -23,6 +23,7 @@
 <meta name="description" content="Browse indie apps, AI tools, books, and templates from makers. List your products for free; checkout stays on the maker's site.">
 <link rel="canonical" href="https://digitalundergroundstore.com/community/">
 <meta name="theme-color" content="#05040c">
+<link rel="stylesheet" href="/assets/design-tokens.css">
 <link rel="stylesheet" href="community.css?v=4">
 <script src="/community/nav.js?v=1" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
@@ -58,14 +59,17 @@
   <div class="search-row">
     <input type="search" id="q" placeholder="Search projects…" autocomplete="off" aria-label="Search projects">
   </div>
-  <div class="chips" id="cats" role="group" aria-label="Categories">
-    <button type="button" class="is-on" aria-pressed="true" data-cat="all">All</button>
-    <button type="button" aria-pressed="false" data-cat="apps">Apps</button>
-    <button type="button" aria-pressed="false" data-cat="ai-tools">AI tools</button>
-    <button type="button" aria-pressed="false" data-cat="games">Games</button>
-    <button type="button" aria-pressed="false" data-cat="books">Books</button>
-    <button type="button" aria-pressed="false" data-cat="templates">Templates</button>
-    <button type="button" aria-pressed="false" data-cat="other">Other</button>
+  <div class="cat-filter">
+    <label for="cats">Category</label>
+    <select id="cats" class="du-select">
+      <option value="all">All</option>
+      <option value="apps">Apps</option>
+      <option value="ai-tools">AI tools</option>
+      <option value="games">Games</option>
+      <option value="books">Books</option>
+      <option value="templates">Templates</option>
+      <option value="other">Other</option>
+    </select>
   </div>
   <div class="grid" id="grid" aria-live="polite"></div>
   <p class="empty" id="empty" hidden>No listings match yet. <a href="/community/submit/">List your project</a> — we review every submission.</p>
@@ -167,14 +171,8 @@
     });
   }
 
-  document.getElementById("cats").addEventListener("click", function (e) {
-    var btn = e.target.closest("button[data-cat]");
-    if (!btn) return;
-    cat = btn.getAttribute("data-cat");
-    document.querySelectorAll("#cats button").forEach(function (b) {
-      b.classList.toggle("is-on", b === btn);
-      b.setAttribute("aria-pressed", b === btn ? "true" : "false");
-    });
+  document.getElementById("cats").addEventListener("change", function (e) {
+    cat = e.target.value || "all";
     render();
   });
   qInput.addEventListener("input", render);

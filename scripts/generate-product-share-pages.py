@@ -218,6 +218,7 @@ def render_page(product: dict) -> str:
 <meta name="twitter:description" content="{esc(desc)}">
 <meta name="twitter:image" content="{og_image}">
 <meta name="theme-color" content="#07060f">
+<link rel="stylesheet" href="/assets/design-tokens.css">
 <link rel="stylesheet" href="/p/share.css">
 </head>
 <body>

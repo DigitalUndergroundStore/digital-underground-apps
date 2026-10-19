@@ -1,16 +1,16 @@
 :root {
   color-scheme: dark;
-  --bg: #07060f;
-  --text: #f5f3ff;
-  --muted: #c8c0da;
-  --cyan: #bfe8ff;
-  --line: rgba(255, 255, 255, .1);
-  --card: rgba(16, 12, 28, .92);
+  --bg: var(--du-bg);
+  --text: var(--du-text);
+  --muted: var(--du-muted);
+  --cyan: var(--du-accent);
+  --line: var(--du-border);
+  --card: var(--du-surface);
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--bg); color: var(--text); }
 body {
-  font: 16px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font: 16px/1.55 var(--du-font-body);
   min-height: 100vh;
   background:
     radial-gradient(1100px 560px at 100% -10%, rgba(76, 29, 149, .45), transparent 55%),

@@ -76,6 +76,25 @@
     "priceLabel": "Free"
   },
   {
+    "id": "cm_kerzy_neonbastion",
+    "status": "approved",
+    "name": "Neon Bastion",
+    "makerName": "Kerzy Labs",
+    "category": "games",
+    "stage": "In testing / development",
+    "pitchShort": "A neon tower defense game in your browser. Pick a class, place towers anywhere off the path, and hold back the waves in Classic, Endless or live PvP. Free, no install.",
+    "descriptionLong": "Neon Bastion is a free tower defense game that runs in your browser, on phones and desktop.\n\nChoose a class and a starter tower, then place towers freely on the grid and upgrade them as the waves grow. Play Classic or Endless and post your score to the global leaderboard, or go head to head in PvP by room code, quick match or against a bot, sending attackers into your rival's lane.\n\nIt's still in testing, so there's a Feedback button in the menu for feature requests and bug reports.\n\n© 2026 Kerzy Labs",
+    "projectUrl": "https://kerzylabs-td.pages.dev/play/",
+    "imageUrl": "https://kerzylabs-td.pages.dev/play/cover.png",
+    "tags": [
+      "game",
+      "tower-defense",
+      "multiplayer",
+      "browser"
+    ],
+    "priceLabel": "Free / In testing"
+  },
+  {
     "id": "cm_pick_ollama",
     "status": "approved",
     "name": "Ollama",
@@ -218,6 +237,237 @@
       "paas",
       "deployment",
       "devops"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_vscodium",
+    "status": "approved",
+    "name": "VSCodium",
+    "makerName": "VSCodium",
+    "makerUrl": "https://vscodium.com",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "Free, community-built binaries of Microsoft's VS Code source, MIT-licensed and without Microsoft's telemetry or branding.",
+    "descriptionLong": "VSCodium builds the open-source VS Code codebase into ready-to-install releases for Windows, macOS and Linux. You get the same editor, minus Microsoft telemetry and proprietary branding. Extensions come from the Open VSX registry.\n\nSource code: https://github.com/VSCodium/vscodium",
+    "projectUrl": "https://vscodium.com",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/vscodium.webp",
+    "tags": [
+      "editor",
+      "ide",
+      "code",
+      "developer-tools"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_supabase",
+    "status": "approved",
+    "name": "Supabase",
+    "makerName": "Supabase",
+    "makerUrl": "https://supabase.com",
+    "category": "other",
+    "stage": "Released",
+    "pitchShort": "An open-source Firebase alternative built on Postgres: database, auth, storage, realtime and edge functions. Self-host it or use the hosted free tier.",
+    "descriptionLong": "Supabase gives every project a full Postgres database plus auth, file storage, realtime subscriptions, edge functions and auto-generated APIs. The whole stack is open source and can be self-hosted with Docker. The hosted service has a free tier.\n\nSource code: https://github.com/supabase/supabase",
+    "projectUrl": "https://supabase.com",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/supabase.webp",
+    "tags": [
+      "backend",
+      "postgres",
+      "auth",
+      "database"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_penpot",
+    "status": "approved",
+    "name": "Penpot",
+    "makerName": "Penpot (Kaleidos)",
+    "makerUrl": "https://penpot.app",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "Open-source design and prototyping tool for designers and developers, built on open web standards (SVG, CSS). Runs in the browser or self-hosted.",
+    "descriptionLong": "Penpot is a browser-based design and prototyping tool, similar in spirit to Figma, that stores designs as open standards like SVG and CSS. It has components, flex and grid layouts, design tokens, code inspect and real-time collaboration. Use the free cloud or self-host it.\n\nSource code: https://github.com/penpot/penpot",
+    "projectUrl": "https://penpot.app",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/penpot.webp",
+    "tags": [
+      "design",
+      "prototyping",
+      "ui",
+      "self-hosted"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_plausible",
+    "status": "approved",
+    "name": "Plausible Analytics",
+    "makerName": "Plausible Analytics",
+    "makerUrl": "https://plausible.io",
+    "category": "other",
+    "stage": "Released",
+    "pitchShort": "Lightweight, cookie-free, privacy-friendly web analytics. The Community Edition is open source and free to self-host.",
+    "descriptionLong": "Plausible is a simple, privacy-focused alternative to Google Analytics. The script is under 1 KB, it uses no cookies and collects no personal data. Plausible Community Edition (AGPL) is free to self-host; the hosted cloud version is paid.\n\nSource code: https://github.com/plausible/analytics",
+    "projectUrl": "https://plausible.io",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/plausible.webp",
+    "tags": [
+      "analytics",
+      "privacy",
+      "self-hosted",
+      "web"
+    ],
+    "priceLabel": "Free to self-host / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_immich",
+    "status": "approved",
+    "name": "Immich",
+    "makerName": "Immich (FUTO)",
+    "makerUrl": "https://immich.app",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "Self-hosted photo and video backup with mobile apps, face recognition, maps and smart search. An open-source Google Photos alternative.",
+    "descriptionLong": "Immich backs up photos and videos from your phone to your own server. It has iOS and Android apps, a web interface, albums and sharing, face recognition, a map view and machine-learning search, all running on hardware you control.\n\nSource code: https://github.com/immich-app/immich",
+    "projectUrl": "https://immich.app",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/immich.webp",
+    "tags": [
+      "photos",
+      "backup",
+      "self-hosted",
+      "media"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_jan",
+    "status": "approved",
+    "name": "Jan",
+    "makerName": "Jan (Menlo Research)",
+    "makerUrl": "https://jan.ai",
+    "category": "ai-tools",
+    "stage": "Released",
+    "pitchShort": "An open-source desktop app for chatting with AI models that run fully offline on your computer, with optional cloud model connections.",
+    "descriptionLong": "Jan is a ChatGPT-style desktop app for Windows, macOS and Linux that downloads and runs open models locally, so your chats stay on your machine. It also exposes a local OpenAI-compatible API server and can connect to cloud providers if you want.\n\nSource code: https://github.com/janhq/jan",
+    "projectUrl": "https://jan.ai",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/jan.webp",
+    "tags": [
+      "ai",
+      "llm",
+      "local",
+      "desktop"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_comfyui",
+    "status": "approved",
+    "name": "ComfyUI",
+    "makerName": "Comfy Org",
+    "makerUrl": "https://www.comfy.org",
+    "category": "ai-tools",
+    "stage": "Released",
+    "pitchShort": "A powerful node-based interface for image, video and audio generation with open models like Stable Diffusion and Flux, run locally on your GPU.",
+    "descriptionLong": "ComfyUI lets you build generative AI pipelines by wiring nodes together in a graph. It supports a wide range of open image, video and audio models, runs on your own hardware, and has a large community library of custom nodes and shareable workflows.\n\nSource code: https://github.com/comfyanonymous/ComfyUI",
+    "projectUrl": "https://www.comfy.org",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/comfyui.webp",
+    "tags": [
+      "ai",
+      "image-generation",
+      "stable-diffusion",
+      "workflows"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_obs_studio",
+    "status": "approved",
+    "name": "OBS Studio",
+    "makerName": "OBS Project",
+    "makerUrl": "https://obsproject.com",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "Free, open-source software for screen recording and live streaming, with scenes, sources, audio mixing and plugins.",
+    "descriptionLong": "OBS Studio records and streams video on Windows, macOS and Linux. Build scenes from screens, windows, webcams and media, mix audio with filters, and stream to Twitch, YouTube and others. Great for devlogs, demos and tutorials.\n\nSource code: https://github.com/obsproject/obs-studio",
+    "projectUrl": "https://obsproject.com",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/obs-studio.webp",
+    "tags": [
+      "video",
+      "streaming",
+      "recording",
+      "screencast"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_audacity",
+    "status": "approved",
+    "name": "Audacity",
+    "makerName": "Audacity Team (Muse Group)",
+    "makerUrl": "https://www.audacityteam.org",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "The free, open-source audio editor and recorder for cleaning up voice-overs, podcasts, sound effects and music.",
+    "descriptionLong": "Audacity is a multi-track audio editor and recorder for Windows, macOS and Linux. Record, cut, mix and apply effects like noise reduction, compression and EQ. Useful for game sound effects, trailers and podcast audio.\n\nSource code: https://github.com/audacity/audacity",
+    "projectUrl": "https://www.audacityteam.org",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/audacity.webp",
+    "tags": [
+      "audio",
+      "editing",
+      "podcast",
+      "sound"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_bruno",
+    "status": "approved",
+    "name": "Bruno",
+    "makerName": "Bruno",
+    "makerUrl": "https://www.usebruno.com",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "An open-source, offline-first API client. Collections are plain-text files you keep in your Git repo, with no cloud account required.",
+    "descriptionLong": "Bruno is a fast desktop API client, an alternative to Postman and Insomnia. It stores collections as plain-text .bru files on your disk, so you can version and review them in Git alongside your code. It works offline with no forced sign-in.\n\nSource code: https://github.com/usebruno/bruno",
+    "projectUrl": "https://www.usebruno.com",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/bruno.webp",
+    "tags": [
+      "api",
+      "http",
+      "testing",
+      "developer-tools"
+    ],
+    "priceLabel": "Free / Open source",
+    "curated": true
+  },
+  {
+    "id": "cm_pick_hoppscotch",
+    "status": "approved",
+    "name": "Hoppscotch",
+    "makerName": "Hoppscotch",
+    "makerUrl": "https://hoppscotch.io",
+    "category": "apps",
+    "stage": "Released",
+    "pitchShort": "A lightweight, open-source API development ecosystem in your browser: REST, GraphQL, WebSocket and more, with a self-hostable server.",
+    "descriptionLong": "Hoppscotch is a fast, browser-based API client for REST, GraphQL, WebSocket, SSE, MQTT and Socket.IO. It has collections, environments and team workspaces, plus desktop apps and a self-hostable Community Edition.\n\nSource code: https://github.com/hoppscotch/hoppscotch",
+    "projectUrl": "https://hoppscotch.io",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/picks/hoppscotch.webp",
+    "tags": [
+      "api",
+      "graphql",
+      "rest",
+      "developer-tools"
     ],
     "priceLabel": "Free / Open source",
     "curated": true

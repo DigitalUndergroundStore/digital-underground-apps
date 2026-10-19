@@ -1,6 +1,7 @@
 // Digital Underground — interactive photoreal Earth hero background.
-// Three.js 0.162.0 via importmap ("three"). Textures: Solar System Scope (CC BY 4.0), three.js examples (MIT).
-import * as THREE from "three";
+// Three.js 0.162.0, self-hosted in /assets/vendor/three (MIT). Merged: real-time day/night globe + touch ripples + pointer parallax.
+// prefers-reduced-motion: one static frame, no animation loop or ripples. Textures: Solar System Scope (CC BY 4.0), three.js examples (MIT).
+import * as THREE from "../vendor/three/three.module.min.js";
 
 const root = document.getElementById("du-globe-bg");
 const canvas = document.getElementById("du-globe-canvas");
@@ -9,7 +10,7 @@ function hasWebGL() {
   try { const c = document.createElement("canvas"); return !!(window.WebGLRenderingContext && (c.getContext("webgl2") || c.getContext("webgl"))); } catch (_) { return false; }
 }
 const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-if (!root || !canvas || reduced || !hasWebGL()) {
+if (!root || !canvas || !hasWebGL()) {
   if (root) root.classList.add("is-fallback");
 } else {
   start();
@@ -27,7 +28,8 @@ function start() {
   try {
     renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
   } catch (_) { root.classList.add("is-fallback"); return; }
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2));
+  renderer.autoClear = false;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.35;
@@ -250,6 +252,42 @@ function start() {
   });
   earthGroup.add(new THREE.Mesh(new THREE.SphereGeometry(1.14, 96, 64), haloMat));
 
+  // ---------- Touch / pointer ripples (screen-space overlay) ----------
+  const NR = 6;
+  const rip = []; for (let i = 0; i < NR; i++) rip.push(new THREE.Vector3(0, 0, -99));
+  const fxUni = { uTime: { value: 0 }, uAspect: { value: 1 }, uR: { value: rip } };
+  const fxScene = new THREE.Scene(), fxCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+  const fxMat = new THREE.ShaderMaterial({
+    uniforms: fxUni, transparent: true, depthTest: false, depthWrite: false, blending: THREE.AdditiveBlending,
+    vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0., 1.); }`,
+    fragmentShader: `uniform float uTime, uAspect; uniform vec3 uR[${NR}]; varying vec2 vUv;
+      void main(){
+        vec2 p = vec2(vUv.x * uAspect, vUv.y); float a = 0.;
+        for (int i = 0; i < ${NR}; i++) {
+          float age = uTime - uR[i].z; if (age < 0. || age > 1.6) continue;
+          float d = distance(p, vec2(uR[i].x * uAspect, uR[i].y));
+          float r = age * .32, w = .006 + age * .012;
+          a += exp(-pow((d - r) / w, 2.)) * pow(1. - age / 1.6, 2.) * .55;
+          a += exp(-pow((d - r * .62) / (w * .7), 2.)) * pow(1. - age / 1.6, 3.) * .25;
+        }
+        gl_FragColor = vec4(vec3(.49, .72, 1.) * a, a);
+      }`,
+  });
+  fxScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), fxMat));
+  let ripI = 0, lastRip = 0;
+  function ripple(x, y) {
+    const r = canvas.getBoundingClientRect(); if (!r.width) return;
+    rip[ripI].set((x - r.left) / r.width, 1 - (y - r.top) / r.height, performance.now() / 1000);
+    ripI = (ripI + 1) % NR; lastRip = performance.now(); kick();
+  }
+  // parallax tilt toward the pointer (mouse hover) and drag direction
+  let px = 0, py = 0, tpx = 0, tpy = 0;
+  addEventListener("pointermove", (e) => {
+    if (e.pointerType !== "mouse") return;
+    tpx = (e.clientX / innerWidth - 0.5) * 2; tpy = (e.clientY / innerHeight - 0.5) * 2;
+    kick();
+  }, { passive: true });
+
   // ---------- Textures (idle) ----------
   const loader = new THREE.TextureLoader();
   const maxAniso = renderer.capabilities.getMaxAnisotropy();
@@ -280,7 +318,7 @@ function start() {
   function resize() {
     const w = root.clientWidth || innerWidth, h = root.clientHeight || innerHeight;
     renderer.setSize(w, h, false);
-    camera.aspect = w / h;
+    camera.aspect = w / h; fxUni.uAspect.value = w / h;
     wide = w >= 960;
     camera.updateProjectionMatrix();
     earthGroup.position.x = wide ? 0.42 : 0;
@@ -301,6 +339,7 @@ function start() {
 
   target.addEventListener("pointerdown", (e) => {
     if (inHeroControls(e)) return;
+    ripple(e.clientX, e.clientY);
     pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
     if (pts.size === 2) { const [a, b] = [...pts.values()]; pinch0 = Math.hypot(a.x - b.x, a.y - b.y); zoom0 = zoom; dragging = false; return; }
     dragging = true; lastX = sx = e.clientX; lastY = sy = e.clientY; vx = vy = 0;
@@ -320,6 +359,7 @@ function start() {
       if (dx < 6 && dy < 6) return;
       lock = dx > dy ? "h" : "v";
     }
+    if (performance.now() - lastRip > 140) ripple(e.clientX, e.clientY);
     if (lock === "v") return; // let the page scroll
     const dx = e.clientX - lastX, dy = e.clientY - lastY;
     lastX = e.clientX; lastY = e.clientY;
@@ -354,10 +394,15 @@ function start() {
     sunDir.copy(sunLocal).applyQuaternion(_q).normalize();
     uniforms.uSun.value.copy(sunDir); cloudUni.uSun.value.copy(sunDir); haloMat.uniforms.uSun.value.copy(sunDir);
   }
-  function renderFrame() { updateSun(); renderer.render(scene, camera); }
+  function renderFrame() {
+    updateSun(); renderer.clear(); renderer.render(scene, camera);
+    if (!reduced) { fxUni.uTime.value = performance.now() / 1000; renderer.render(fxScene, fxCam); }
+  }
   function loop() {
     raf = 0;
-    if (!visible || !onScreen) return;
+    if (!visible || !onScreen || reduced) { if (reduced) renderFrame(); return; }
+    px += (tpx - px) * 0.04; py += (tpy - py) * 0.04;
+    earthGroup.rotation.x = py * 0.06; earthGroup.rotation.y = px * 0.08;
     if (!(dragging && lock === "h")) {
       spin.rotation.y += AUTO + vx; spin.rotation.x = THREE.MathUtils.clamp(spin.rotation.x + vy, -TILT, TILT);
       vx *= DAMP; vy *= DAMP;

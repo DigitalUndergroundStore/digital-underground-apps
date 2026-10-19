@@ -190,13 +190,13 @@
   }
   .hero-cta {
     display: inline-flex; align-items: center; justify-content: center;
-    min-height: 44px; padding: 0 22px; border-radius: 999px;
+    min-height: 52px; padding: 0 28px; border-radius: 999px;
     background: linear-gradient(105deg, #6d28d9, #1e3a8a);
-    color: #fff; font-size: 15px; font-weight: 700; text-decoration: none;
+    color: #fff; font-size: 17px; font-weight: 700; text-decoration: none;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28), 0 8px 18px rgba(49, 20, 120, .35);
   }
   .hero-cta-secondary {
-    min-height: 44px; padding: 0 4px;
+    min-height: 48px; padding: 0 4px;
     display: inline-flex; align-items: center;
     font-size: 14px; font-weight: 650; color: rgba(191, 232, 255, .92);
     text-decoration: underline; text-decoration-color: rgba(191, 232, 255, .35);
@@ -245,34 +245,35 @@
   @media (prefers-reduced-motion: reduce) { .hero-music.is-loading { animation: none; } }
   .market-cta {
     display: flex; align-items: center; gap: 14px;
-    width: 100%; max-width: 460px; min-height: 76px; margin-top: 16px; padding: 14px 16px 14px 14px;
-    border-radius: 18px; text-decoration: none; color: #fff;
-    background: linear-gradient(110deg, #7c3aed 0%, #5b3df0 45%, #2563eb 100%);
-    border: 1px solid rgba(255, 255, 255, .22);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 12px 30px rgba(76, 29, 149, .5), 0 0 0 1px rgba(37, 99, 235, .25);
+    width: auto; max-width: 100%; min-height: 48px; margin-top: 14px; padding: 6px 14px 6px 8px;
+    border-radius: 999px; text-decoration: none; color: #fff;
+    background: rgba(6, 4, 17, .55);
+    border: 1.5px solid rgba(191, 232, 255, .55);
+    box-shadow: none;
     transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
     -webkit-tap-highlight-color: transparent; position: relative; z-index: 1;
   }
-  .market-cta:hover { transform: translateY(-2px); filter: brightness(1.08); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 16px 36px rgba(76, 29, 149, .6); }
+  .market-cta:hover { border-color: var(--cyan); background: rgba(109, 40, 217, .35); }
   .market-cta:active { transform: translateY(0) scale(.99); }
   .market-cta:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
   .market-ico {
-    flex: none; width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+    flex: none; width: 34px; height: 34px; border-radius: 999px; display: grid; place-items: center;
     background: rgba(255, 255, 255, .16); border: 1px solid rgba(255, 255, 255, .25);
   }
-  .market-ico svg { width: 26px; height: 26px; }
+  .market-ico svg { width: 18px; height: 18px; }
   .market-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; text-align: left; }
-  .market-txt strong { font-size: 18px; font-weight: 800; line-height: 1.2; letter-spacing: -.01em; }
+  .market-txt strong { font-size: 15px; font-weight: 700; line-height: 1.2; letter-spacing: -.01em; }
   .market-txt span { font-size: 14px; font-weight: 600; color: rgba(255, 255, 255, .86); line-height: 1.3; }
-  .market-arrow { flex: none; width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; background: rgba(255, 255, 255, .18); }
-  .market-arrow svg { width: 20px; height: 20px; }
+  .market-arrow { flex: none; width: 28px; height: 28px; border-radius: 999px; display: grid; place-items: center; background: rgba(255, 255, 255, .18); }
+  .market-arrow svg { width: 16px; height: 16px; }
   @media (min-width: 768px) {
-    .market-cta { min-height: 84px; margin-top: 20px; padding: 16px 20px 16px 16px; }
-    .market-txt strong { font-size: 20px; }
-    .market-txt span { font-size: 15px; }
-    .market-ico { width: 52px; height: 52px; }
+    .market-cta { margin-top: 16px; }
   }
   @media (prefers-reduced-motion: reduce) { .market-cta { transition: none; } }
+  .hero-facts { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; font-weight: 600; color: rgba(235, 244, 255, .92); }
+  .hero-facts li { display: inline-flex; align-items: center; gap: 6px; }
+  .hero-facts li::before { content: ""; width: 6px; height: 6px; border-radius: 99px; background: #a78bfa; }
+  .hero-facts li[hidden] { display: none; }
   .list-cta-wrap {
     display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px;
   }
@@ -576,7 +577,7 @@
     h1 { font-size: 64px; }
     .hero-copy::before { inset: -18px -28px -18px -20px; border-radius: 22px; }
     .hero-actions { margin-top: 22px; gap: 12px 18px; }
-    .hero-cta { font-size: 16px; padding: 0 26px; }
+    .hero-cta { font-size: 18px; padding: 0 32px; min-height: 56px; }
     .hero-cta-secondary { font-size: 15px; }
     .tagline { font-size: 20px; margin-top: 14px; }
     .hero-lead { margin-bottom: 16px; gap: 8px 6px; }
@@ -655,6 +656,11 @@
         <a class="hero-cta" href="#store-sections">Browse the store</a>
         <a class="hero-cta-secondary" href="#featured">Bestsellers</a>
       </div>
+      <ul class="hero-facts" aria-label="Store facts">
+        <li>Pay once, no subscription</li>
+        <li>Instant download</li>
+        <li id="hero-product-count" hidden></li>
+      </ul>
       <a class="market-cta" href="/community/">
         <span class="market-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9.5 5.6 4.8A1.2 1.2 0 0 1 6.7 4h10.6a1.2 1.2 0 0 1 1.1.8L20 9.5M4 9.5h16M4 9.5a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0M5.5 12.2V19a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-6.8M9.5 20v-4.2h5V20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <span class="market-txt"><strong>Developer Marketplace</strong></span>
@@ -1572,5 +1578,9 @@
 <script src="/store/hero-music.js?v=1" defer></script>
 <script src="/store/track.js?v=2" defer></script>
 <script src="/assets/signup.js?v=20261018a11" defer></script>
+<script>
+/* Honest product count: unique Gumroad product listings in the store's main content. Hidden if none found. */
+(function(){try{var s={},n=0;document.querySelectorAll('main a[href*="gumroad.com/l/"]').forEach(function(a){var m=a.href.match(/gumroad\.com\/l\/([\w-]+)/);if(m&&!s[m[1]]){s[m[1]]=1;n++;}});var el=document.getElementById('hero-product-count');if(el&&n>0){el.textContent=n+(n===1?' product':' products');el.hidden=false;}}catch(e){}})();
+</script>
 </body>
 </html>

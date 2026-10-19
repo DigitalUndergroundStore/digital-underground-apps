@@ -1,3 +1,4 @@
+import { ipHash } from "../../_lib/ratelimit.js";
 import { getKv, json, kvGetListing, listingContactAddress, ownerAlertEmail, sendCommunityEmail } from "../../_lib/community.js";
 
 /**
@@ -14,7 +15,7 @@ async function limited(kv, ip) {
   if (m.length >= 5) return true;
   m.push(now); mem.set(ip, m);
   if (!kv) return false;
-  const key = "contact-rl:" + ip;
+  const key = "contact-rl:" + ipHash(ip);
   const n = parseInt((await kv.get(key)) || "0", 10) || 0;
   if (n >= 5) return true;
   await kv.put(key, String(n + 1), { expirationTtl: 3600 });

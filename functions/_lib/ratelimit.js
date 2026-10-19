@@ -59,13 +59,25 @@ function expandV6(ip) {
  * so limits apply per /64 and, more loosely, per /48. IPv4 is per address.
  * Returns rules for rateAll: [[prefix:addr, limit], [prefix:/48, limit * wideFactor]] with the window.
  */
+/** Short one-way hash so rate-limit keys never contain a raw IP address. */
+export function ipHash(s) {
+  let a = 0x811c9dc5, b = 0x01000193 ^ 0x5bd1e995;
+  const str = "du-rl-v1|" + String(s || "");
+  for (let i = 0; i < str.length; i++) {
+    const c = str.charCodeAt(i);
+    a = Math.imul(a ^ c, 0x01000193) >>> 0;
+    b = Math.imul(b ^ c, 0x5bd1e995) >>> 0;
+  }
+  return a.toString(16).padStart(8, "0") + b.toString(16).padStart(8, "0");
+}
+
 export function ipRules(prefix, ip, limit, windowS, wideFactor = 4) {
   if (ip && ip.includes(":")) {
     const g = expandV6(ip);
     return [
-      [`${prefix}:${g.slice(0, 4).join(":")}::/64`, limit, windowS],
-      [`${prefix}:${g.slice(0, 3).join(":")}::/48`, limit * wideFactor, windowS],
+      [`${prefix}:${ipHash(g.slice(0, 4).join(":") + "::/64")}`, limit, windowS],
+      [`${prefix}:${ipHash(g.slice(0, 3).join(":") + "::/48")}`, limit * wideFactor, windowS],
     ];
   }
-  return [[`${prefix}:${ip}`, limit, windowS]];
+  return [[`${prefix}:${ipHash(ip)}`, limit, windowS]];
 }

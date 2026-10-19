@@ -98,3 +98,5 @@ h1 { margin: 0 0 8px; font-size: clamp(1.35rem, 4vw, 1.75rem); line-height: 1.2;
 .back { margin: 18px 0 0; font-size: .9rem; }
 .back a { color: var(--cyan); text-decoration: none; }
 .back a:hover { text-decoration: underline; }
+.site-foot { max-width: 720px; margin: 0 auto; padding: 0 16px 48px; text-align: center; font-size: var(--du-fs-sm); color: var(--du-muted); }
+.site-foot a { display: inline-block; min-height: 48px; line-height: 48px; color: var(--du-accent); }

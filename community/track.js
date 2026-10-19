@@ -1,10 +1,9 @@
 /* Developer Marketplace analytics: batched, cheap. Impressions once per listing per
-   browser session; detail views and outbound clicks counted exactly. One beacon per flush. */
+   page view (kept in memory only: no cookies or browser storage); detail views and outbound clicks counted exactly. One beacon per flush. */
 (function () {
   var q = { i: [], v: [], c: [] };
   var timer = null;
   var seen = {};
-  try { seen = JSON.parse(sessionStorage.getItem("du_seen") || "{}"); } catch (_) {}
   function flush() {
     timer = null;
     if (!q.i.length && !q.v.length && !q.c.length) return;
@@ -22,7 +21,6 @@
       io.unobserve(en.target);
       if (!id || seen[id]) return;
       seen[id] = 1;
-      try { sessionStorage.setItem("du_seen", JSON.stringify(seen)); } catch (_) {}
       q.i.push(id); later(4000);
     });
   }, { threshold: 0.5 }) : null;

@@ -34,7 +34,7 @@
     <div class="skel" style="height:48px;margin-top:18px"></div>
     <div class="skel" style="aspect-ratio:16/9;margin-top:20px;border-radius:18px"></div>
   </main>
-  <footer class="foot"><p><a href="/community/">← Developer Marketplace</a></p></footer>
+  <footer class="foot"><p><a href="/community/">← Developer Marketplace</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p></footer>
 </div>
 <div class="sticky-cta" id="sticky" aria-hidden="true"></div>
 <script>
@@ -48,8 +48,13 @@
   function paras(t) { return String(t || "").split(/\n{2,}/).map(function (p) { return "<p>" + esc(p).replace(/\n/g, "<br>") + "</p>"; }).join(""); }
   function media(l) {
     var v = l.video, poster = l.imageUrl || (v && v.poster) || "";
-    if (v && v.kind === "youtube") { var id = (/embed\/([\w-]{11})/.exec(v.src) || [])[1]; return '<div class="media"><iframe src="' + esc(v.src + "&autoplay=1&mute=1&loop=1&playsinline=1&controls=1&playlist=" + id) + '" title="' + esc(l.name) + ' video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>'; }
-    if (v && v.kind === "vimeo") return '<div class="media"><iframe src="' + esc(v.src + "&autoplay=1&muted=1&loop=1&playsinline=1") + '" title="' + esc(l.name) + ' video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>';
+    /* Third-party video loads only after a click (no YouTube/Vimeo requests or cookies before that). */
+    if (v && (v.kind === "youtube" || v.kind === "vimeo")) {
+      var src, host;
+      if (v.kind === "youtube") { var id = (/embed\/([\w-]{11})/.exec(v.src) || [])[1]; src = v.src.replace("://www.youtube.com/", "://www.youtube-nocookie.com/").replace("://youtube.com/", "://www.youtube-nocookie.com/") + "&autoplay=1&playsinline=1&controls=1"; host = "YouTube"; }
+      else { src = v.src + "&autoplay=1&playsinline=1&dnt=1"; host = "Vimeo"; }
+      return '<div class="media media-ext" data-src="' + esc(src) + '" data-title="' + esc(l.name) + ' video" data-allow="autoplay; encrypted-media; picture-in-picture; fullscreen"' + (poster ? ' style="background-image:url(\'' + esc(poster) + '\')"' : "") + '><button type="button" class="media-play"><span aria-hidden="true">▶</span> Play video <small>(loads from ' + host + ')</small></button></div>';
+    }
     if (v && v.kind === "file") return '<div class="media"><video autoplay muted loop playsinline controls preload="auto"' + (poster ? ' poster="' + esc(poster) + '"' : "") + ' aria-label="' + esc(l.name) + ' video"><source src="' + esc(v.src) + (poster ? "" : "#t=0.1") + '" type="' + esc(v.type) + '"></video></div>';
     if (!l.imageUrl) return "";
     return '<div class="media"><img class="bg" src="' + esc(l.imageUrl) + '" alt="" aria-hidden="true"><img class="fg" src="' + esc(l.imageUrl) + '" alt="' + esc(l.name) + ' preview"></div>';
@@ -120,5 +125,15 @@
   });
 })();
 </script>
+<script>
+document.addEventListener("click", function (e) {
+  var b = e.target.closest && e.target.closest(".media-ext .media-play"); if (!b) return;
+  var m = b.parentNode, f = document.createElement("iframe");
+  f.src = m.getAttribute("data-src"); f.title = m.getAttribute("data-title"); f.allow = m.getAttribute("data-allow");
+  f.setAttribute("allowfullscreen", ""); f.referrerPolicy = "strict-origin-when-cross-origin";
+  m.style.backgroundImage = ""; m.innerHTML = ""; m.appendChild(f); f.focus();
+});
+</script>
+<style>.media-ext{position:relative;aspect-ratio:16/9;background:var(--du-surface-2,#120e22) center/cover no-repeat;display:grid;place-items:center;border-radius:var(--du-r-lg,20px);overflow:hidden}.media-play{min-height:48px;padding:0 20px;border-radius:999px;border:1.5px solid var(--du-border-strong,rgba(191,232,255,.55));background:rgba(6,4,17,.85);color:#fff;font:700 16px/1.2 var(--du-font-body,system-ui);cursor:pointer}.media-play small{font-weight:600;color:var(--du-muted,#c8c0da)}.media-play:focus-visible{outline:2px solid var(--du-accent,#bfe8ff);outline-offset:3px}</style>
 </body>
 </html>

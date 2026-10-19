@@ -546,7 +546,7 @@ export async function verifyTurnstile(env, token, ip) {
   const form = new FormData();
   form.set("secret", secret);
   form.set("response", token);
-  if (ip) form.set("remoteip", ip);
+  // remoteip deliberately not sent (data minimisation; optional for Turnstile).
   const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
     body: form,

@@ -23,7 +23,7 @@ import {
   mediaFor,
 } from "./community.js";
 import { runBlocklist } from "./community-screening.js";
-import { rateAll, ipRules } from "./ratelimit.js";
+import { ipHash, rateAll, ipRules } from "./ratelimit.js";
 
 const ACCT_PREFIX = "creator:";
 const STATS_PREFIX = "stats:";
@@ -235,7 +235,7 @@ export async function recordEvents(kv, approvedIds, events, ip) {
   const c = pick(events?.c).slice(0, 5);
   if (!i.length && !v.length && !c.length) return { counted: 0 };
 
-  const sig = `${ip}|${i.join()}|${v.join()}|${c.join()}`;
+  const sig = `${ipHash(ip)}|${i.join()}|${v.join()}|${c.join()}`;
   const now = Date.now();
   if (recentBeacons.has(sig) && now - recentBeacons.get(sig) < 10_000) return { counted: 0, deduped: true };
   recentBeacons.set(sig, now);

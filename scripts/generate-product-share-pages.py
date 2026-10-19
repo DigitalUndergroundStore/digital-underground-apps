@@ -239,7 +239,8 @@ def render_page(product: dict) -> str:
       <p class="back"><a href="/store/">See all products</a></p>
     </div>
   </article>
-</main>{promo_script}
+</main>
+<footer class="site-foot"><p><a href="/store/">Digital Underground store</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/support/">Support</a></p></footer>{promo_script}
 </body>
 </html>
 """

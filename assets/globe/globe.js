@@ -38,7 +38,7 @@ function start() {
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
   const ZMIN = 1.6, ZMAX = 5.5;
-  let zoom = isMobile ? 3.25 : 2.75;
+  let zoom = isMobile ? 3.25 : (parseFloat(root.dataset.zoom) || 3.15); // desktop zoomed out a touch so the terminator shows
   camera.position.set(0, 0, zoom);
 
   const sunDir = new THREE.Vector3(2.2, 0.65, 1.45).normalize();
@@ -193,8 +193,8 @@ function start() {
 
         // ocean specular (Blinn-Phong)
         vec3 H = normalize(L + V);
-        float sp = pow(max(dot(Nb, H), 0.0), 56.0) * spec * 0.85 * smoothstep(0.0, 0.25, ndl);
-        dayCol += vec3(1.0, 0.96, 0.88) * sp;
+        float sp = pow(max(dot(Nb, H), 0.0), 90.0) * spec * 0.3 * smoothstep(0.0, 0.25, ndl); // toned-down ocean glare
+        dayCol += vec3(0.78, 0.84, 0.95) * sp;
 
         vec3 city = night * vec3(1.0, 0.725, 0.412) * 2.3 * (1.0 - cloud * 0.85) + day * vec3(0.05, 0.06, 0.11);
         vec3 col = mix(city, dayCol, dayMix);
@@ -335,7 +335,7 @@ function start() {
   const pts = new Map(); let pinch0 = 0, zoom0 = zoom;
   const target = root.parentElement || root;
 
-  function inHeroControls(e) { return e.target.closest && e.target.closest("a,button,input,select,textarea,[role=button]"); }
+  function inHeroControls(e) { return e.target.closest && e.target.closest("a,button,input,select,textarea,summary,[role=button],[data-globe-ignore]"); }
 
   target.addEventListener("pointerdown", (e) => {
     if (inHeroControls(e)) return;

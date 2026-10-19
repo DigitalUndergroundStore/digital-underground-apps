@@ -24,45 +24,74 @@
 <link rel="canonical" href="https://digitalundergroundstore.com/community/">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="community.css?v=4">
+<link rel="stylesheet" href="/community/wolf.css?v=1">
+<link rel="preload" as="image" href="/assets/globe/fallback-mobile.webp?v=2" media="(max-width: 799px)">
 <script src="/community/nav.js?v=1" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <link rel="manifest" href="/site.webmanifest">
-<style>.du-logo{display:inline-flex;align-items:center;line-height:0}.du-logo img{height:36px!important;width:auto!important;max-width:none!important;max-height:none!important;display:block;border-radius:0!important;box-shadow:none!important;filter:none!important}.du-logo-icon{display:none!important}@media (max-width:560px){.du-logo-full{display:none!important}.du-logo-icon{display:block!important}}</style>
 </head>
 <body>
-<div class="wrap">
-  <header class="site-top">
-    <a class="brand" href="/store/"><span class="du-logo"><img class="du-logo-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="200" height="36"><img class="du-logo-icon" src="/assets/logo/du-mark-anim-icon.svg" alt="Digital Underground" width="36" height="36"></span></a>
-    <button type="button" class="share-pill" id="share-market" aria-label="Share the Developer Marketplace">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12.5V19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>Share</span>
-    </button>
+<div id="du-globe-bg" class="du-globe-bg" aria-hidden="true"><canvas id="du-globe-canvas" class="du-globe-canvas"></canvas><div class="du-globe-vignette"></div></div>
+<script>
+/* Globe: full WebGL Earth on desktop only. Phones, Save-Data and no-WebGL get the 35 KB static frame. Reduced motion: globe.js draws one still frame. */
+(function () {
+  var root = document.getElementById("du-globe-bg");
+  var phone = matchMedia("(max-width: 820px)").matches || matchMedia("(hover: none) and (pointer: coarse)").matches;
+  var save = navigator.connection && navigator.connection.saveData;
+  if (phone || save) { root.classList.add("is-lite"); return; }
+  var s = document.createElement("script"); s.type = "module"; s.src = "/assets/globe/globe.js?v=5"; document.head.appendChild(s);
+})();
+</script>
+<div class="orbs" aria-hidden="true"><div class="orb a"></div><div class="orb b"></div></div>
+<div id="spotlight" aria-hidden="true"></div>
 
-    <nav aria-label="Site">
+<nav class="nav" aria-label="Primary">
+  <div class="mx nav-in">
+    <a class="du-logo" href="/store/"><img class="du-logo-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="du-logo-icon" src="/assets/logo/du-mark-anim-icon.svg" alt="Digital Underground" width="34" height="34"></a>
+    <div class="nav-links" role="presentation">
       <a href="/store/">Store</a>
       <a href="/community/" aria-current="page">Developer Marketplace</a>
-      <a href="/community/dashboard/" class="login-btn">Creator dashboard</a>
-      <span class="cta-wrap">
-        <a class="cta" href="/community/submit/">List your project</a>
-        <span class="launch-badge">List your products for free</span>
-      </span>
-    </nav>
-  </header>
-  <main>
-  <header class="page-head">
-    <h1>Developer Marketplace</h1>
-    <p>Apps, AI tools, books, and templates from independent makers. Free to list — checkout and delivery stay on the maker's own site (Gumroad, Stripe, App Store, or their website).</p>
-  </header>
-  <div class="search-row">
-    <input type="search" id="q" placeholder="Search projects…" autocomplete="off" aria-label="Search projects">
+      <a href="/community/dashboard/">Creator dashboard</a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-ctas">
+        <nav aria-label="Site" style="display:contents"><span class="cta-wrap" style="display:contents"></span></nav>
+        <button type="button" class="pill pill-o" id="share-market" aria-label="Share the Developer Marketplace"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12.5V19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Share</button>
+        <a class="pill pill-v" href="/community/submit/">List your project free</a>
+      </div>
+      <button id="menu-btn" class="icon-btn menu-btn" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
   </div>
-  <div class="cat-filter">
-    <label for="cats">Category</label>
-    <select id="cats" class="du-select">
-      <option value="all">All</option>
+</nav>
+<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mm-head"><button id="close-menu" class="icon-btn" aria-label="Close menu"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button></div>
+  <div class="mm-links">
+    <a href="/store/">Store</a>
+    <a href="/community/" aria-current="page">Developer Marketplace</a>
+    <a href="/community/dashboard/">Creator dashboard</a>
+    <hr>
+    <button type="button" class="pill pill-o" id="share-market-m">Share</button>
+    <a class="pill pill-v" href="/community/submit/">List your project free</a>
+  </div>
+</div>
+<div id="overlay" hidden></div>
+
+<header class="mx z hero">
+  <div class="eyebrow"><span class="dot" aria-hidden="true"></span>Indie makers + picks curated by Digital Underground</div>
+  <h1>Developer<br> Marketplace</h1>
+  <p>Apps, AI tools, books, and templates from independent makers. Free to list — checkout and delivery stay on the maker's own site (Gumroad, Stripe, App Store, or their website).</p>
+</header>
+
+<div class="mx z filters">
+  <div class="frow">
+    <div class="sbox">
+      <input id="q" class="search" type="search" placeholder="Search projects…" autocomplete="off" aria-label="Search projects" data-globe-ignore>
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    </div>
+    <select id="cats" class="sel" aria-label="Category">
+      <option value="all">All categories</option>
       <option value="apps">Apps</option>
       <option value="ai-tools">AI tools</option>
       <option value="games">Games</option>
@@ -71,126 +100,137 @@
       <option value="other">Other</option>
     </select>
   </div>
-  <div class="grid" id="grid" aria-live="polite"></div>
-  <p class="empty" id="empty" hidden>No listings match yet. <a href="/community/submit/">List your project</a> — we review every submission.</p>
-  <section class="faq" aria-labelledby="faq-title">
-    <h2 id="faq-title">FAQ</h2>
-    <details>
-      <summary>Is it free to list?</summary>
-      <p>Yes. Listing in the Developer Marketplace is free — list your products for free anytime. We do not take a cut of sales; buyers pay you on your own checkout.</p>
-          </details>
-    <details>
-      <summary>How does review work?</summary>
-      <p>Clean listings can go live after automated checks. Edge cases are held for a quick human review. We filter spam, scams, and malware; typical human review is a few days.</p>
-    </details>
-    <details>
-      <summary>Do you handle payments?</summary>
-      <p>No. This is link-out only. The Visit button sends people to your Gumroad, Stripe, App Store, or site with <code>?ref=digitalunderground</code> when possible. Digital Underground does not process payouts for Developer Marketplace listings.</p>
-    </details>
-    <details>
-      <summary>How do I edit my listing or see analytics?</summary>
-      <p>Open your <a href="/community/dashboard/">Creator dashboard</a> with the private link shown after you submit. You can edit, unpublish, or delete listings and see views, clicks, and click-through rate.</p>
-    </details>
-    <details>
-      <summary>Lost your dashboard link?</summary>
-      <p>Lost your link? Email <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you used on your listing.</p>
-    </details>
-  </section>
-  </main>
-  <footer class="foot">
-    <p><a href="/store/">← Back to the DU store</a> · <a href="/community/submit/">List your project</a> · <a href="/support/" style="display:inline-block;padding:6px 13px;border:1px solid rgba(185,168,255,.5);border-radius:999px;text-decoration:none">💬 Support</a></p>
-    <p><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
-  </footer>
+  <p class="count" id="count" aria-live="polite"></p>
 </div>
+
+<main class="mx z">
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty" hidden>No listings match yet. <a href="/community/submit/">List your project</a> — we review every submission.</p>
+</main>
+
+<section class="z cta-sec">
+  <div class="mx cta-in">
+    <h2>List your project</h2>
+    <p>Join independent makers. Free to list, and we take no cut — buyers pay you on your own checkout. We just help people discover what you built.</p>
+    <a class="pill pill-v" href="/community/submit/">Submit your project →</a>
+    <p class="sub">Already listed? <a href="/community/dashboard/">Open your Creator dashboard</a></p>
+  </div>
+</section>
+
+<section class="mx z faq" aria-labelledby="faq-title">
+  <h2 id="faq-title">FAQ</h2>
+  <div class="faq-list">
+    <details><summary>Is it free to list?<span aria-hidden="true">▼</span></summary><p>Yes. Listing in the Developer Marketplace is free — list your products for free anytime. We do not take a cut of sales; buyers pay you on your own checkout.</p></details>
+    <details><summary>How does review work?<span aria-hidden="true">▼</span></summary><p>Clean listings can go live after automated checks. Edge cases are held for a quick human review. We filter spam, scams, and malware; typical human review is a few days.</p></details>
+    <details><summary>Do you handle payments?<span aria-hidden="true">▼</span></summary><p>No. This is link-out only. The Visit button sends people to your Gumroad, Stripe, App Store, or site with <code>?ref=digitalunderground</code> when possible. Digital Underground does not process payouts for Developer Marketplace listings.</p></details>
+    <details><summary>How do I edit my listing or see analytics?<span aria-hidden="true">▼</span></summary><p>Open your <a href="/community/dashboard/">Creator dashboard</a> with the private link shown after you submit. You can edit, unpublish, or delete listings and see views, clicks, and click-through rate.</p></details>
+    <details><summary>Lost your dashboard link?<span aria-hidden="true">▼</span></summary><p>Lost your link? Email <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a> from the address you used on your listing.</p></details>
+  </div>
+</section>
+
+<footer class="z site-foot">
+  <div class="mx">
+    <p><a href="/store/">← Back to the DU store</a> · <a href="/community/submit/">List your project</a> · <a class="support" href="/support/">💬 Support</a></p>
+    <p><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+    <p class="credits">Background Earth textures © <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener">Solar System Scope</a>, CC BY 4.0 (resized).</p>
+  </div>
+</footer>
+
 <script src="/community/track.js"></script>
 <script>
 (function () {
-  var CAT_LABELS = {
-    apps: "Apps",
-    "ai-tools": "AI tools",
-    games: "Games",
-    books: "Books",
-    templates: "Templates",
-    other: "Other"
-  };
-  var all = [];
-  var cat = "all";
-  var grid = document.getElementById("grid");
-  var empty = document.getElementById("empty");
-  var qInput = document.getElementById("q");
+  var CAT_LABELS = { apps: "Apps", "ai-tools": "AI tools", games: "Games", books: "Books", templates: "Templates", other: "Other" };
+  var GRADS = [["#7c3aed","#4f46e5"],["#2563eb","#06b6d4"],["#059669","#14b8a6"],["#c026d3","#ec4899"],["#f97316","#ef4444"],["#0284c7","#1d4ed8"]];
+  var reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var fine = matchMedia("(hover: hover) and (pointer: fine)").matches;
+  var BLOCK_EMAIL = /[^\s@<>"]+@gmail\.com/gi; // never surface personal addresses on cards
+  var all = [], cat = "all", first = true, swapT;
+  var grid = document.getElementById("grid"), empty = document.getElementById("empty"), qInput = document.getElementById("q"), count = document.getElementById("count");
 
-  function esc(s) {
-    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+  function esc(s) { return String(s == null ? "" : s).replace(BLOCK_EMAIL, "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+  function isKerzy(row) { return /^cm_kerzy_/.test(row.id) || /kerzy/i.test(row.makerName || ""); }
+  function normalize(row) {
+    if (isKerzy(row)) { row.makerName = "Kerzy Labs"; row.curated = false; }
+    if (row.id === "cm_kerzy_neonbastion" || /neon bastion/i.test(row.name || "")) row.stage = "In development / testing";
+    return row;
   }
-
+  function stageLabel(s) { return s && s !== "Released" ? s : ""; }
   function makerLine(row) {
-    var x = row.xHandle ? '<a href="https://x.com/' + esc(row.xHandle) + '" target="_blank" rel="noopener">@' + esc(row.xHandle) + "</a>" : "";
-    if (x) return esc(row.makerName) + " · " + x;
-    return esc(row.makerName);
+    var m = esc(row.makerName);
+    return row.xHandle ? m + ' · <a href="https://x.com/' + esc(row.xHandle) + '" target="_blank" rel="noopener">@' + esc(row.xHandle) + "</a>" : m;
   }
-
-  function render() {
+  function hash(s) { var h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return Math.abs(h); }
+  function media(row) {
+    var v = row.video, poster = row.imageUrl || (v && v.poster) || "";
+    var href = "/community/p/?id=" + encodeURIComponent(row.id);
+    if (v && v.kind === "file" && v.src)
+      return '<a class="media" href="' + href + '" tabindex="-1" aria-hidden="true"><video class="card-vid" muted loop playsinline preload="metadata"' + (poster ? ' poster="' + esc(poster) + '"' : "") + ' src="' + esc(v.src) + (poster ? "" : "#t=0.1") + '"></video></a>';
+    if (poster)
+      return '<a class="media" href="' + href + '" tabindex="-1" aria-hidden="true"><img src="' + esc(poster) + '" alt="" loading="lazy" decoding="async" onerror="this.parentNode.classList.add(\'grad\');this.remove()"></a>';
+    var g = GRADS[hash(row.id || row.name || "") % GRADS.length];
+    return '<a class="media grad" href="' + href + '" tabindex="-1" aria-hidden="true" style="background:linear-gradient(135deg,' + g[0] + "," + g[1] + ')"><span>' + esc((row.name || "?").slice(0, 2)) + "</span></a>";
+  }
+  function card(row, i) {
+    var art = document.createElement("article");
+    art.className = "card" + (reduced ? "" : " reveal");
+    if (!reduced) art.style.animationDelay = Math.min(i, 11) * 0.06 + "s";
+    art.setAttribute("data-globe-ignore", "");
+    var href = "/community/p/?id=" + encodeURIComponent(row.id);
+    var badge = stageLabel(row.stage) ? '<span class="badge stage">' + esc(row.stage) + "</span>" : row.curated ? '<span class="badge" title="Curated by Digital Underground">★ Featured pick</span>' : "";
+    art.innerHTML = '<div class="card-inner">' + media(row) +
+      '<div class="body"><div class="top"><div style="min-width:0"><h3><a href="' + href + '">' + esc(row.name) + '</a></h3><p class="maker">' + makerLine(row) + "</p></div>" + badge + "</div>" +
+      '<p class="desc">' + esc(row.pitchShort) + "</p>" +
+      '<div class="foot-row"><span class="price">' + esc(row.priceLabel || "See site") + '</span><div class="acts">' +
+      (row.contactable ? '<a class="pill pill-o" href="' + href + '#contact" aria-label="Contact the developer of ' + esc(row.name) + '">Contact</a>' : "") +
+      '<a class="pill pill-v" data-out="' + esc(row.id) + '" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener">Visit</a></div></div></div></div>';
+    if (fine && !reduced) {
+      art.addEventListener("mousemove", function (e) {
+        var r = art.getBoundingClientRect(), cx = r.width / 2, cy = r.height / 2;
+        art.style.transform = "perspective(800px) rotateX(" + ((e.clientY - r.top - cy) / cy) * -6 + "deg) rotateY(" + ((e.clientX - r.left - cx) / cx) * 6 + "deg) scale(1.02)";
+      });
+      art.addEventListener("mouseleave", function () { art.style.transform = ""; });
+    }
+    return art;
+  }
+  function filtered() {
     var q = (qInput.value || "").trim().toLowerCase();
-    var items = all.filter(function (row) {
+    return all.filter(function (row) {
       if (cat !== "all" && row.category !== cat) return false;
       if (!q) return true;
-      var hay = [row.name, row.makerName, row.pitchShort, row.category].join(" ").toLowerCase();
-      return hay.indexOf(q) >= 0;
+      return [row.name, row.makerName, row.pitchShort, CAT_LABELS[row.category] || row.category, (row.tags || []).join(" ")].join(" ").toLowerCase().indexOf(q) >= 0;
     });
+  }
+  function paint() {
+    var items = filtered();
     grid.innerHTML = "";
-    if (!items.length) {
-      empty.hidden = false;
-      return;
-    }
-    empty.hidden = true;
-    items.forEach(function (row) {
-      var art = document.createElement("article");
-      art.className = "card";
-      var v = row.video, poster = row.imageUrl || (v && v.poster) || "";
-      var img = v && v.kind === "file"
-        ? '<video class="shot card-vid" muted loop playsinline preload="metadata"' + (poster ? ' poster="' + esc(poster) + '"' : "") + ' src="' + esc(v.src) + (poster ? "" : "#t=0.1") + '" aria-hidden="true" style="object-fit:cover;display:block"></video>'
-        : poster
-        ? '<img class="shot" src="' + esc(poster) + '" alt="" loading="lazy" decoding="async">'
-        : '<div class="shot" style="background:linear-gradient(145deg,#2a1248,#0c0816)"></div>';
-      art.innerHTML =
-        img +
-        '<div class="info">' +
-        '<div class="titlerow" style="display:flex;justify-content:space-between;align-items:center;gap:12px">' +
-        '<a class="title" href="/community/p/?id=' + encodeURIComponent(row.id) + '" style="flex:1 1 auto;min-width:0;margin-right:12px;overflow-wrap:anywhere"><strong>' + esc(row.name) + "</strong></a>" +
-        (row.contactable ? '<a class="cta2 top" style="margin-left:auto;flex-shrink:0" href="/community/p/?id=' + encodeURIComponent(row.id) + '#contact" aria-label="Contact the developer of ' + esc(row.name) + '">Contact</a>' : "") +
-        "</div>" +
-        '<span class="maker">' + makerLine(row) + "</span>" +
-        (row.curated ? '<span class="pick-badge" style="display:inline-block;margin:4px 6px 2px 0;padding:2px 9px;border-radius:999px;background:linear-gradient(90deg,#a855f7,#00f2fe);color:#05070d;font:800 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.03em;width:max-content">&#9733; Featured pick</span>' + '<span class="pick-note" style="display:block;margin:2px 0 4px;color:#94a3b8;font:500 11.5px/1.4 ui-sans-serif,system-ui,sans-serif">Curated by Digital Underground</span>' : "") +
-        (row.stage && row.stage !== 'Released' ? '<span class="stage-badge" style="display:inline-block;margin:4px 0 2px;padding:2px 8px;border-radius:999px;border:1px solid rgba(251,191,36,.55);background:rgba(251,191,36,.12);color:#fcd34d;font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;width:max-content">' + esc(row.stage) + "</span>" : "") +
-        '<span class="blurb">' + esc(row.pitchShort) + "</span>" +
-        '<div class="buyrow">' +
-        '<span class="price">' + esc(row.priceLabel || "See site") + "</span>" +
-        '<a class="cta" data-out="' + esc(row.id) + '" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener">Visit</a>' +
-        "</div></div>";
+    empty.hidden = !!items.length;
+    count.textContent = items.length + (items.length === 1 ? " project" : " projects");
+    items.forEach(function (row, i) {
+      var art = card(row, i);
       grid.appendChild(art);
       if (window.duTrack) duTrack.observe(art, row.id);
     });
   }
-
-  document.getElementById("cats").addEventListener("change", function (e) {
-    cat = e.target.value || "all";
-    render();
-  });
-  qInput.addEventListener("input", render);
+  function render() {
+    if (first || reduced || !grid.children.length) { first = false; return paint(); }
+    clearTimeout(swapT);
+    Array.prototype.forEach.call(grid.children, function (c) { c.style.transform = ""; c.classList.remove("reveal"); c.classList.add("out"); });
+    swapT = setTimeout(paint, 180);
+  }
+  document.getElementById("cats").addEventListener("change", function (e) { cat = e.target.value || "all"; render(); });
+  var qT; qInput.addEventListener("input", function () { clearTimeout(qT); qT = setTimeout(render, 120); });
 
   Promise.all([
     fetch("/community/listings.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }),
     fetch("/api/community/listings").then(function (r) { return r.ok ? r.json() : { listings: [] }; }).catch(function () { return { listings: [] }; }),
     fetch("/community/pinned.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; })
   ]).then(function (parts) {
-    var pinned = Array.isArray(parts[2]) ? parts[2] : []; // listing ids sorted first (edit community/pinned.json)
+    var pinned = Array.isArray(parts[2]) ? parts[2] : [];
     var staticList = Array.isArray(parts[0]) ? parts[0] : [];
     var apiList = parts[1] && Array.isArray(parts[1].listings) ? parts[1].listings : [];
     var byId = {};
-    staticList.concat(apiList).forEach(function (row) {
-      if (row && row.id) byId[row.id] = row;
-    });
-    all = Object.keys(byId).map(function (k) { return byId[k]; });
+    staticList.concat(apiList).forEach(function (row) { if (row && row.id) byId[row.id] = row; });
+    all = Object.keys(byId).map(function (k) { return normalize(byId[k]); });
     all.sort(function (a, b) {
       var pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
       if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);
@@ -199,6 +239,22 @@
     });
     render();
   });
+
+  // Spotlight (desktop pointer only, subtle)
+  if (fine && !reduced) {
+    var sp = document.getElementById("spotlight"), raf = 0, mx = 0, my = 0;
+    document.addEventListener("mousemove", function (e) { mx = e.clientX; my = e.clientY; if (!raf) raf = requestAnimationFrame(function () { raf = 0; sp.style.setProperty("--x", mx + "px"); sp.style.setProperty("--y", my + "px"); }); }, { passive: true });
+  }
+
+  // Mobile menu
+  var menu = document.getElementById("mobile-menu"), overlay = document.getElementById("overlay"), btn = document.getElementById("menu-btn");
+  function openMenu() { menu.classList.add("open"); overlay.hidden = false; document.body.style.overflow = "hidden"; btn.setAttribute("aria-expanded", "true"); document.getElementById("close-menu").focus(); }
+  function closeMenu() { menu.classList.remove("open"); overlay.hidden = true; document.body.style.overflow = ""; btn.setAttribute("aria-expanded", "false"); }
+  btn.addEventListener("click", openMenu);
+  document.getElementById("close-menu").addEventListener("click", closeMenu);
+  overlay.addEventListener("click", closeMenu);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menu.classList.contains("open")) { closeMenu(); btn.focus(); } });
+  document.getElementById("share-market-m").addEventListener("click", function () { closeMenu(); document.getElementById("share-market").click(); });
 })();
 </script>
 <script>

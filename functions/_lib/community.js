@@ -297,7 +297,8 @@ export function publicListing(row) {
     video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
     stage: displayStage(row),
     curated: !!row.curated,
-    makerUrl: row.curated ? row.makerUrl || null : null,
+    // Owner-set only (makers cannot edit it): the maker's own site, https only.
+    makerUrl: typeof row.makerUrl === "string" && /^https:\/\//i.test(row.makerUrl) ? row.makerUrl : null,
   };
 }
 

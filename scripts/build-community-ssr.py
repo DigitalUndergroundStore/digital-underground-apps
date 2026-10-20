@@ -72,8 +72,42 @@ s = re.sub(r"<!--ssr:start-->.*?<!--ssr:end-->", lambda m: "<!--ssr:start-->\n" 
 s = re.sub(r'(<p class="count"[^>]*>).*?(</p>)', lambda m: m.group(1) + f"<!--ssr:count-->{len(out)} projects" + m.group(2), s, flags=re.S)
 p.write_text(s); print(len(out), "cards rendered")
 
-# Homepage = Developer Marketplace (same SSR), canonical "/". /community/ 301s to / via _redirects.
-h = s.replace('href="https://digitalundergroundstore.com/"', 'href="https://digitalundergroundstore.com/"')
-h = h.replace('content="https://digitalundergroundstore.com/"', 'content="https://digitalundergroundstore.com/"')
-h = h.replace('<a href="/" aria-current="page">', '<a href="/" aria-current="page">')
-(R / "index.html").write_text(h); print("index.html (home) written")
+# Homepage = Developer Marketplace v3 (Wolf layout: sidebar filter, animations, photoreal Earth).
+# Template: src/home-v3/index.template.html (not deployed). Cards are server-rendered for crawlers / no-JS,
+# and the same rows are embedded as JSON for the client-side filter; home.js then merges the live API
+# exactly like the old homepage did, so new approved listings appear without a rebuild.
+# canonical "/", /community/ 301s to / via _redirects.
+KEEP = ("id", "name", "makerName", "makerSlug", "xHandle", "category", "priceLabel", "pitchShort", "imageUrl", "visitUrl",
+        "projectUrl", "tags", "stage", "statusLabel", "curated", "contactable", "status")
+data = []
+for r in rows:
+    d = {k: r.get(k) for k in KEEP if r.get(k) is not None}
+    for k in ("name", "makerName", "pitchShort", "priceLabel"):
+        if k in d: d[k] = GM.sub("", str(d[k]))
+    data.append(d)
+if "--dump-rows" in sys.argv:
+    json.dump(data, open(sys.argv[sys.argv.index("--dump-rows") + 1], "w"), ensure_ascii=False)
+def v3card(r):
+    rid = e(r["id"]); n = e(r["name"]); href = "/community/p/?id=" + quote(r["id"])
+    st = r.get("stage") if r.get("stage") and r.get("stage") != "Released" else ""
+    b = [f'<span class="card-badge badge-{"beta" if "beta" in st.lower() else "testing"}">{e(st)}</span>'] if st else (['<span class="card-badge badge-featured">★ Featured pick</span>'] if r.get("curated") else [])
+    if r.get("statusLabel"): b.append(f'<span class="card-badge badge-testing">{e(str(r["statusLabel"])[:24])}</span>')
+    img = r.get("imageUrl")
+    ms = r.get("makerSlug") or ("kerzy-labs" if r["id"].startswith("cm_kerzy_") else "wolfitway" if (r.get("makerName") or "").lower() == "wolfitway" else "")
+    mk = f'<a href="/makers/{e(ms)}/">{e(r.get("makerName"))}</a>' if re.fullmatch(r"[a-z0-9-]{1,48}", ms or "") else e(r.get("makerName"))
+    x = f' · <a href="https://x.com/{e(r["xHandle"])}" target="_blank" rel="noopener">@{e(r["xHandle"])}</a>' if r.get("xHandle") else ""
+    pr = e(r.get("priceLabel") or "See site")
+    return (f'<article class="card" role="listitem" data-id="{rid}"><div class="card-media">'
+            + (f'<div class="card-badges">{"".join(b)}</div>' if b else "")
+            + (f'<img src="{e(img)}" alt="{n} cover image" width="640" height="360" loading="lazy" decoding="async">' if img else "")
+            + f'<div class="card-placeholder" aria-hidden="true">{n[:2]}</div></div><div class="card-body"><div class="card-meta">{mk}{x}</div>'
+            f'<h3 class="card-title"><a href="{href}">{n}</a></h3><p class="card-desc">{e(r.get("pitchShort"))}</p><div class="card-footer">'
+            f'<span class="card-price{" free" if pr.lower().startswith("free") else ""}">{pr}</span><div class="card-actions">'
+            + (f'<a href="{href}#contact" class="btn btn-ghost">Contact</a>' if r.get("contactable") else "")
+            + f'<a href="{e(r.get("visitUrl") or r.get("projectUrl"))}" data-out="{rid}" class="btn btn-primary" target="_blank" rel="noopener">Visit</a></div></div></div></article>')
+tpl = (R / "src/home-v3/index.template.html").read_text()
+js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+h = (tpl.replace("<!--ssr:data-->", js).replace("<!--ssr:cards-->", "\n".join(v3card(r) for r in rows))
+        .replace("<!--ssr:count-->", str(len(rows))))
+assert "<!--ssr:" not in h and not GM.search(h)
+(R / "index.html").write_text(h); print("index.html (home v3) written,", len(rows), "listings")

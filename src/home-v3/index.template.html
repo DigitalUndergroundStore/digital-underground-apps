@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add("js")</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Developer Marketplace — Digital Underground</title>
+<meta property="og:title" content="Developer Marketplace | Digital Underground">
+<meta property="og:description" content="List your products for free on the Developer Marketplace">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digitalundergroundstore.com/">
+<meta property="og:site_name" content="Digital Underground">
+<meta property="og:image" content="https://digitalundergroundstore.com/community/og-dm-v2.jpg">
+<meta property="og:image:secure_url" content="https://digitalundergroundstore.com/community/og-dm-v2.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Developer Marketplace by Digital Underground. List your products for free: apps, guides and AI tools.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Developer Marketplace | Digital Underground">
+<meta name="twitter:description" content="List your products for free on the Developer Marketplace">
+<meta name="twitter:image" content="https://digitalundergroundstore.com/community/og-dm-v2.jpg">
+<meta name="twitter:image:alt" content="Developer Marketplace by Digital Underground. List your products for free: apps, guides and AI tools.">
+<meta name="description" content="Browse indie apps, AI tools, books, and templates from makers. List your products for free; checkout stays on the maker's site.">
+<link rel="canonical" href="https://digitalundergroundstore.com/">
+<meta name="theme-color" content="#05040c">
+<link rel="stylesheet" href="/assets/design-tokens.css">
+<link rel="preload" as="image" href="/assets/globe/fallback-mobile.webp?v=2" media="(max-width: 799px)">
+<link rel="preload" as="image" href="/assets/globe/fallback.webp?v=2" media="(min-width: 800px)">
+<script src="/community/track.js" defer></script>
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/home-v3/home.css?v=1">
+<script src="/assets/home-v3/home.js?v=1" defer></script>
+</head>
+<body>
+  <div class="cosmos" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="stars2" aria-hidden="true"></div>
+    <div class="earth-bg" aria-hidden="true"><div class="earth-img"></div><div class="earth-glow"></div></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/store/" class="logo" aria-label="Digital Underground store home">
+        <span class="logo-mark">DU</span>
+        Digital Underground
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/store/">Store</a></li>
+        <li><a href="/" class="active" aria-current="page">Developer Marketplace</a></li>
+        <li><a href="/makers/">Creators</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/community/dashboard/">Creator dashboard</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-ghost" type="button" aria-label="Share" id="shareBtn">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13"/></svg>
+          Share
+        </button>
+        <a href="/community/submit/" class="btn btn-primary">List your project free</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">Live · <span id="heroCount"><!--ssr:count--></span> listed projects</div>
+    <h1>Developer Marketplace</h1>
+    <p>
+      Apps, AI tools, books & templates from independent makers.
+      Free to list. Zero cut. Your checkout. Your customers. Your empire.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">
+        Explore projects
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#list" class="btn btn-outline">List yours free →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-value">0%</div>
+        <div class="stat-label">Platform fees</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">Yours to keep</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">∞</div>
+        <div class="stat-label">Maker freedom</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY JOIN — EPIC REASONS -->
+  <section class="reveal why-section" id="why">
+    <div class="why-header">
+      <h2>Why the best makers list here</h2>
+      <p>This isn’t another marketplace that eats your margins. This is the anti-platform.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card" data-delay="0">
+        <div class="why-icon">💸</div>
+        <h3>Zero. Fees. Ever.</h3>
+        <p>We take <span class="why-highlight">nothing</span>. No 15%. No 30%. No “processing fee”. Buyers pay you directly on your Gumroad, Stripe, or own site. You keep every single cent.</p>
+      </div>
+
+      <div class="why-card" data-delay="100">
+        <div class="why-icon">🔓</div>
+        <h3>You own the relationship</h3>
+        <p>No black-box algorithm deciding who sees you. No platform locking your customers. When someone buys, <span class="why-highlight">they become yours</span> — forever.</p>
+      </div>
+
+      <div class="why-card" data-delay="200">
+        <div class="why-icon">🚀</div>
+        <h3>Instant discovery, zero friction</h3>
+        <p>List once. Get found by people actively hunting for tools like yours. No ads. No bidding wars. Just pure, organic reach for independent builders.</p>
+      </div>
+
+      <div class="why-card" data-delay="300">
+        <div class="why-icon">🛡</div>
+        <h3>Built by makers, for makers</h3>
+        <p>We don’t extract value. We amplify it. This marketplace exists so independent creators can <span class="why-highlight">win without selling their soul</span> to big platforms.</p>
+      </div>
+
+      <div class="why-card" data-delay="400">
+        <div class="why-icon">⚡</div>
+        <h3>Live in hours, not weeks</h3>
+        <p>Submit → light quality check → live. Every listing gets a light quality check before it goes public. Featured picks get extra spotlight. No endless review queues.</p>
+      </div>
+
+      <div class="why-card" data-delay="500">
+        <div class="why-icon">🌍</div>
+        <h3>Your brand, your rules</h3>
+        <p>Keep your domain, your branding, your pricing, your support flow. We just point hungry buyers in your direction. <span class="why-highlight">You stay sovereign.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marketplace: filter sidebar + grid -->
+  <div class="market reveal" id="projects">
+    <div class="fbackdrop" id="fBackdrop" hidden></div>
+    <aside class="fpanel" id="fPanel" aria-label="Filter projects">
+      <div class="fpanel-head"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5L3 4z"/></svg><span>Filter</span><button type="button" class="fclose" id="fClose" aria-label="Close filters">✕</button></div>
+      <section class="fsec open" data-sec="search">
+        <h3><button type="button" class="fsec-head" aria-expanded="true" aria-controls="fs-search">Search<svg class="chev" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+        <div class="fsec-body" id="fs-search"><div class="fsec-inner">
+          <div class="search-wrap"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="search" class="search-input" id="searchInput" placeholder="Projects, makers, tags…" aria-label="Search projects" autocomplete="off"></div>
+        </div></div>
+      </section>
+      <section class="fsec open" data-sec="price">
+        <h3><button type="button" class="fsec-head" aria-expanded="true" aria-controls="fs-price">Price range<svg class="chev" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+        <div class="fsec-body" id="fs-price"><div class="fsec-inner">
+          <div class="range" id="range">
+            <div class="range-track"><div class="range-fill" id="rangeFill"></div></div>
+            <input type="range" id="rMin" min="0" max="1000" step="1" value="0" aria-label="Minimum price">
+            <input type="range" id="rMax" min="0" max="1000" step="1" value="1000" aria-label="Maximum price">
+          </div>
+          <div class="range-boxes">
+            <label><span>Min</span><input type="number" id="pMin" min="0" inputmode="numeric"></label>
+            <span class="dash">–</span>
+            <label><span>Max</span><input type="number" id="pMax" min="0" inputmode="numeric"></label>
+          </div>
+          <label class="ck"><input type="checkbox" id="incFree" checked><span class="box" aria-hidden="true"></span><span class="ck-l">Include free projects</span><span class="ck-n" id="freeN"></span></label>
+          <p class="hint">Prices use the number in each listing ($ and € mixed). Free counts as 0.</p>
+        </div></div>
+      </section>
+      <section class="fsec open" data-sec="cat">
+        <h3><button type="button" class="fsec-head" aria-expanded="true" aria-controls="fs-cat">Category<svg class="chev" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+        <div class="fsec-body" id="fs-cat"><div class="fsec-inner">
+          <div id="catList"></div>
+        </div></div>
+      </section>
+      <section class="fsec" data-sec="maker">
+        <h3><button type="button" class="fsec-head" aria-expanded="false" aria-controls="fs-maker">Maker<svg class="chev" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+        <div class="fsec-body" id="fs-maker"><div class="fsec-inner">
+          <div class="ck-scroll" id="makerList"></div>
+        </div></div>
+      </section>
+      <section class="fsec open" data-sec="label">
+        <h3><button type="button" class="fsec-head" aria-expanded="true" aria-controls="fs-label">Label<svg class="chev" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+        <div class="fsec-body" id="fs-label"><div class="fsec-inner">
+          <div class="dots" id="labelDots" role="group" aria-label="Label"></div>
+          <p class="dots-cap" id="dotsCap">Any label</p>
+        </div></div>
+      </section>
+      <section class="fsec open" data-sec="sort">
+        <h3><button type="button" class="fsec-head" aria-expanded="true" aria-controls="fs-sort">Sort<svg class="chev" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></h3>
+        <div class="fsec-body" id="fs-sort"><div class="fsec-inner">
+          <label class="ck rd"><input type="radio" name="sort" value="featured" checked><span class="box" aria-hidden="true"></span><span class="ck-l">Featured</span></label>
+          <label class="ck rd"><input type="radio" name="sort" value="newest"><span class="box" aria-hidden="true"></span><span class="ck-l">Newest</span></label>
+          <label class="ck rd"><input type="radio" name="sort" value="name"><span class="box" aria-hidden="true"></span><span class="ck-l">Name (A–Z)</span></label>
+        </div></div>
+      </section>
+      <div class="fpanel-foot">
+        <button type="button" class="btn btn-ghost" id="fReset">Reset</button>
+        <button type="button" class="btn btn-primary" id="fApply"><span>Show <span class="cnt-apply"><!--ssr:count--></span> results</span></button>
+      </div>
+      <button type="button" class="freset-d" id="fResetD">Reset all filters</button>
+    </aside>
+    <div class="results">
+      <div class="results-bar">
+        <button type="button" class="btn btn-outline ftoggle" id="fToggle" aria-expanded="false" aria-controls="fPanel"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5L3 4z"/></svg> Filters <span id="filterBadge" class="filter-badge" hidden></span></button>
+        <p class="project-count" role="status" aria-live="polite"><span id="cntNum"><!--ssr:count--></span> <span id="cntOf">projects</span></p>
+      </div>
+      <div class="grid" id="projectGrid" role="list"><!--ssr:cards--></div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="reveal cta-section" id="list">
+    <div class="cta-card">
+      <h2>Ready to stop leaving money on the table?</h2>
+      <p>
+        Join the independent makers who refuse to pay platform tax.
+        Free to list. Zero cut. Your checkout. Your customers.
+      </p>
+      <div class="cta-features">
+        <div class="cta-feature">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          Zero fees — forever
+        </div>
+        <div class="cta-feature">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          Keep 100% of revenue
+        </div>
+        <div class="cta-feature">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          Own every customer
+        </div>
+      </div>
+      <a href="/community/submit/" class="btn btn-primary" style="padding: 0.8rem 1.9rem; font-size: 1.05rem;">
+        Submit your project free →
+      </a>
+      <p style="margin-top: 1.35rem; font-size: 0.85rem; color: var(--text-dim); position: relative;">
+        Already listed? <a href="/community/dashboard/" style="color: var(--accent-bright); text-decoration: none;">Open your creator dashboard</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="reveal faq-section">
+    <h2>FAQ</h2>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is it free to list?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Completely free. No listing fees, no monthly costs, no hidden charges. We take zero cut of your sales — forever.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How does review work?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>We do a light quality check to keep the marketplace useful. Featured picks are hand-curated.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you handle payments?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>No. Checkout stays on your site (Gumroad, Stripe, App Store, or your own). Buyers go straight to you. We never touch the money.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I edit my listing or see analytics?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Log into the Creator Dashboard. You can update description, images, pricing, and view basic discovery metrics anytime.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Lost your dashboard link?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Use the recovery form or contact support. We’ll resend your secure dashboard link.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="/store/">Back to the DU store</a>
+      <a href="#list">List your project</a>
+      <a href="/blog/">Blog</a>
+      <a href="/support/">Support</a>
+    </div>
+    <p class="footer-copy">
+      <a href="/privacy/" style="color:inherit">Privacy</a> · <a href="/terms/" style="color:inherit">Terms</a><br />
+      Background Earth textures © Solar System Scope, CC BY 4.0 (resized)
+    </p>
+  </footer>
+
+  <script id="du-data" type="application/json"><!--ssr:data--></script>
+</body>
+</html>

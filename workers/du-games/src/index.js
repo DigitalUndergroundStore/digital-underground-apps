@@ -6,7 +6,7 @@ import { DurableObject } from "cloudflare:workers";
 
 const GAMES = { bb: 2, qp: 4 };            // seats per room
 const CODE_CHARS = "ABCDEFGHJKMNPQRSTUVWXYZ23456789";
-const ALLOWED = [/^https:\/\/(www\.)?digitalundergroundstore\.com$/, /^https:\/\/[a-z0-9-]+\.digital-underground\.pages\.dev$/, /^https:\/\/([a-z0-9-]+\.)?kerzylabs-[a-z0-9-]+\.pages\.dev$/,
+const ALLOWED = [/^https:\/\/(www\.)?digitalundergroundstore\.com$/, /^https:\/\/[a-z0-9-]+\.digital-underground\.pages\.dev$/, /^https:\/\/([a-z0-9-]+\.)?kerzylabs-[a-z0-9-]+\.pages\.dev$/, /^https:\/\/([a-z0-9-]+\.)?kerzylabs\.pages\.dev$/,
   /^https:\/\/([a-z0-9-]+\.)?itch\.zone$/, /^https:\/\/([a-z0-9-]+\.)?itch\.io$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/, /^null$/];
 const okOrigin = (o) => !o || ALLOWED.some((r) => r.test(o));
 const cors = (o) => ({ "Access-Control-Allow-Origin": o && okOrigin(o) ? o : "*", "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Access-Control-Allow-Headers": "Content-Type", "Cache-Control": "no-store" });

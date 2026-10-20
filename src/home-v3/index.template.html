@@ -33,8 +33,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <link rel="manifest" href="/site.webmanifest">
 <!-- no web fonts: site CSP is style-src self; uses Inter/system stack like design-tokens.css -->
-<link rel="stylesheet" href="/assets/home-v3/home.css?v=3">
-<script src="/assets/home-v3/home.js?v=3" defer></script>
+<link rel="stylesheet" href="/assets/home-v3/home.css?v=5">
+<script src="/assets/home-v3/home.js?v=5" defer></script>
 </head>
 <body>
   <div class="cosmos" aria-hidden="true"></div>
@@ -47,8 +47,7 @@
   <header class="header" id="header">
     <nav class="nav" aria-label="Main navigation">
       <a href="/store/" class="logo" aria-label="Digital Underground store home">
-        <span class="logo-mark">DU</span>
-        Digital Underground
+        <img class="logo-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="logo-icon" src="/assets/logo/du-mark-anim-icon.svg" alt="Digital Underground" width="34" height="34">
       </a>
 
       <ul class="nav-links" id="navLinks">
@@ -65,7 +64,7 @@
           Share
         </button>
         <a href="/community/submit/" class="btn btn-primary">List your project free</a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </div>
     </nav>
   </header>
@@ -110,37 +109,37 @@
 
     <div class="why-grid">
       <div class="why-card" data-delay="0">
-        <div class="why-icon">💸</div>
+        <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .9-3 2.1 0 2.9 6 1.6 6 4.4 0 1.2-1.3 2-3 2-1.5 0-2.7-.6-3.1-1.6M12 6.5v1.5M12 16.5V18"/></svg></div>
         <h3>Zero. Fees. Ever.</h3>
         <p>We take <span class="why-highlight">nothing</span>. No 15%. No 30%. No “processing fee”. Buyers pay you directly on your Gumroad, Stripe, or own site. You keep every single cent.</p>
       </div>
 
       <div class="why-card" data-delay="100">
-        <div class="why-icon">🔓</div>
+        <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/></svg></div>
         <h3>You own the relationship</h3>
         <p>No black-box algorithm deciding who sees you. No platform locking your customers. When someone buys, <span class="why-highlight">they become yours</span> — forever.</p>
       </div>
 
       <div class="why-card" data-delay="200">
-        <div class="why-icon">🚀</div>
+        <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="M12 15l-3-3a22 22 0 0 1 2-4A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></svg></div>
         <h3>Instant discovery, zero friction</h3>
         <p>List once. Get found by people actively hunting for tools like yours. No ads. No bidding wars. Just pure, organic reach for independent builders.</p>
       </div>
 
       <div class="why-card" data-delay="300">
-        <div class="why-icon">🛡</div>
+        <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3>Built by makers, for makers</h3>
         <p>We don’t extract value. We amplify it. This marketplace exists so independent creators can <span class="why-highlight">win without selling their soul</span> to big platforms.</p>
       </div>
 
       <div class="why-card" data-delay="400">
-        <div class="why-icon">⚡</div>
+        <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
         <h3>Live in hours, not weeks</h3>
         <p>Submit → light quality check → live. Every listing gets a light quality check before it goes public. Featured picks get extra spotlight. No endless review queues.</p>
       </div>
 
       <div class="why-card" data-delay="500">
-        <div class="why-icon">🌍</div>
+        <div class="why-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
         <h3>Your brand, your rules</h3>
         <p>Keep your domain, your branding, your pricing, your support flow. We just point hungry buyers in your direction. <span class="why-highlight">You stay sovereign.</span></p>
       </div>
@@ -151,7 +150,7 @@
   <div class="market" id="projects">
     <div class="fbackdrop" id="fBackdrop" hidden></div>
     <aside class="fpanel" id="fPanel" aria-label="Filter projects">
-      <div class="fpanel-head"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5L3 4z"/></svg><span>Filter</span><button type="button" class="fclose" id="fClose" aria-label="Close filters">✕</button></div>
+      <div class="fpanel-head"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5L3 4z"/></svg><span>Filter</span><button type="button" class="fclose" id="fClose" aria-label="Close filters"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
       <section class="fsec open" data-sec="search">
         <h3><button type="button" class="fsec-head" aria-expanded="true" aria-controls="fs-search">Search<svg class="chev" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button></h3>
         <div class="fsec-body" id="fs-search"><div class="fsec-inner">

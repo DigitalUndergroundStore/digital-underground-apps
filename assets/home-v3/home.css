@@ -911,4 +911,25 @@
     .card { opacity: 1; }
     .stat-label { color: #c4c0d8; text-shadow: 0 1px 8px rgba(5,4,12,.9), 0 0 2px rgba(5,4,12,.8); }
     @media (max-width: 640px) { .hero-stats { position: relative; } .hero-stats::before { content: ''; position: absolute; inset: -.6rem -1rem; z-index: -1; border-radius: 16px; background: rgba(6,4,17,.45); backdrop-filter: blur(6px); } }
+    /* official DU logo (same files as /store/ and /blog/) */
+    .logo { gap: 0; }
+    .logo-mark { display: none; }
+    .logo img { display: block; height: 30px; width: auto; }
+    .logo-icon { display: none !important; }
+    @media (max-width: 420px) { .logo img.logo-full { height: 24px; } }
+    @media (max-width: 340px) { .logo-full { display: none !important; } .logo-icon { display: block !important; height: 32px; } }
+    .why-icon { color: var(--accent-bright); display: flex; align-items: center; justify-content: center; }
+    .why-icon svg { width: 26px; height: 26px; filter: drop-shadow(0 0 8px rgba(139,92,246,.45)); }
+    .menu-toggle { display: none; align-items: center; justify-content: center; line-height: 0; }
+    @media (max-width: 768px) { .menu-toggle { display: inline-flex; } }
+    .fclose { line-height: 0; }
+    .card-badge .star { vertical-align: -1px; margin-right: 2px; }
+    /* dimmed, subtle Earth: listings are the focus */
+    .earth-bg { background: #060411; }
+    .earth-img { opacity: .2; filter: saturate(.35) brightness(.85); inset: 18% -22% -18% 28%; background-size: contain !important; background-position: right bottom !important; }
+    @media (max-width: 799px) { .earth-img { inset: 35% -30% -12% 5%; } }
+    .earth-glow { background: linear-gradient(180deg, rgba(10,6,28,.55), rgba(8,6,24,.35) 50%, rgba(6,4,17,.7)), radial-gradient(ellipse 60% 50% at 80% 80%, rgba(76,29,149,.18), transparent 70%) !important; mix-blend-mode: normal; }
+    .cosmos { opacity: .85; }
+    .earth-img { -webkit-mask-image: radial-gradient(ellipse 55% 55% at 68% 62%, #000 40%, transparent 75%); mask-image: radial-gradient(ellipse 55% 55% at 68% 62%, #000 40%, transparent 75%); }
+    @media (min-width: 421px) { .logo img.logo-full { height: 34px; } }
 

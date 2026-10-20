@@ -119,7 +119,7 @@
     let state = DEF();
 
     function badgeHTML(p) {
-      const one = b => { const cls = /featured/i.test(b) ? 'badge-featured' : /beta/i.test(b) ? 'badge-beta' : 'badge-testing'; return `<span class="card-badge ${cls}">${esc(/featured/i.test(b) ? '★ ' + b : b)}</span>`; };
+      const one = b => { const cls = /featured/i.test(b) ? 'badge-featured' : /beta/i.test(b) ? 'badge-beta' : 'badge-testing'; return `<span class="card-badge ${cls}">${(/featured/i.test(b) ? '<svg class="star" width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg> ' : '') + esc(b)}</span>`; };
       const parts = [p.badge, p.label].filter(Boolean);
       return parts.length ? `<div class="card-badges">${parts.map(one).join('')}</div>` : '';
     }
@@ -272,6 +272,7 @@
     function setProjects(rows, initial) {
       projects = rows.map(toProject);
       els = new Map(projects.map(p => [p.id, els.get(p.id) && initial === 'keep' ? els.get(p.id) : cardEl(p)]));
+      if ($('heroCount')) $('heroCount').textContent = projects.length;
       buildOptions(); state = DEF(); searchInput.value = ''; dotsCaption(); syncRange(false);
       applyFilters(!!initial);
     }
@@ -396,7 +397,7 @@
     menuToggle.addEventListener('click', () => {
       const open = navLinks.classList.toggle('open');
       menuToggle.setAttribute('aria-expanded', open);
-      menuToggle.textContent = open ? '✕' : '☰';
+      menuToggle.innerHTML = open ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>' : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
     });
 
     // ═══════════ FAQ ═══════════
@@ -420,7 +421,7 @@
       if (e.key === 'Escape' && navLinks.classList.contains('open')) {
         navLinks.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.textContent = '☰';
+        menuToggle.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
       }
     });
 })();

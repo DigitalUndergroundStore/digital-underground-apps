@@ -87,10 +87,11 @@ for r in rows:
     data.append(d)
 if "--dump-rows" in sys.argv:
     json.dump(data, open(sys.argv[sys.argv.index("--dump-rows") + 1], "w"), ensure_ascii=False)
+STAR = "<svg class='star' width='11' height='11' viewBox='0 0 24 24' fill='currentColor' aria-hidden='true'><path d='M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z'/></svg>"
 def v3card(r):
     rid = e(r["id"]); n = e(r["name"]); href = "/community/p/?id=" + quote(r["id"])
     st = r.get("stage") if r.get("stage") and r.get("stage") != "Released" else ""
-    b = [f'<span class="card-badge badge-{"beta" if "beta" in st.lower() else "testing"}">{e(st)}</span>'] if st else (['<span class="card-badge badge-featured">★ Featured pick</span>'] if r.get("curated") else [])
+    b = [f'<span class="card-badge badge-{"beta" if "beta" in st.lower() else "testing"}">{e(st)}</span>'] if st else (['<span class="card-badge badge-featured">'+STAR+' Featured pick</span>'] if r.get("curated") else [])
     if r.get("statusLabel"): b.append(f'<span class="card-badge badge-testing">{e(str(r["statusLabel"])[:24])}</span>')
     img = r.get("imageUrl")
     ms = r.get("makerSlug") or ("kerzy-labs" if r["id"].startswith("cm_kerzy_") else "wolfitway" if (r.get("makerName") or "").lower() == "wolfitway" else "")

@@ -2,7 +2,7 @@
 """Regenerate sitemap.xml: public static pages (skips noindex) + live marketplace listings."""
 import os,re,json,urllib.request,datetime
 B="https://digitalundergroundstore.com"; R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-cands=["/","/store/","/community/","/makers/","/makers/wolfitway/","/makers/kerzy-labs/","/advertise/","/downloads/","/downloads/easy-tracker/","/privacy/","/free-book/"]
+cands=["/","/store/","/community/","/makers/","/makers/wolfitway/","/makers/kerzy-labs/","/blog/","/blog/what-is-the-developer-marketplace/","/blog/how-to-list-your-product/","/blog/creator-pages/","/advertise/","/downloads/","/downloads/easy-tracker/","/privacy/","/free-book/"]
 try:
   import importlib.util as iu; sp=iu.spec_from_file_location("gl",f"{R}/scripts/gen-landing.py")
   SL=[l.split('slug="')[1].split('"')[0] for l in open(f"{R}/scripts/gen-landing.py") if l.startswith('dict(slug="')]

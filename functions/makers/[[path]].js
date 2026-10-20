@@ -106,7 +106,7 @@ ${body}
 </main>
 <footer class="z site-foot">
   <div class="mx">
-    <p><a href="/community/"><span aria-hidden="true">←</span> Developer Marketplace</a> · <a href="/makers/">All creators</a> · <a href="/community/submit/">List your project</a></p>
+    <p><a href="/community/"><span aria-hidden="true">←</span> Developer Marketplace</a> · <a href="/makers/">All creators</a> · <a href="/community/submit/">List your project</a> · <a href="/blog/">Blog</a></p>
     <p><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
     <p class="credits">Background Earth textures © <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener">Solar System Scope</a>, CC BY 4.0 (resized).</p>
   </div>

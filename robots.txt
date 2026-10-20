@@ -82,6 +82,7 @@ Allow: /get/
 Allow: /community/$
 Allow: /community/p/
 Allow: /makers/
+Allow: /blog/
 Allow: /weekly-meal-planner-canada/
 Allow: /free-browser-fps-game/
 Allow: /ai-prompt-packs-for-creators/

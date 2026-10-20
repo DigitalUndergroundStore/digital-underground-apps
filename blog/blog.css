@@ -1,0 +1,18 @@
+/* Blog — layered on /community/wolf.css */
+body.blog{background:#05040c}
+.blog main{padding-top:24px;padding-bottom:48px;max-width:46rem}
+.blog .hero{padding-top:32px;padding-bottom:16px}
+.blist{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.bcard{padding:18px;border-radius:16px;background:rgba(12,10,24,.78);border:1px solid rgba(255,255,255,.1)}
+.bcard h2{margin:0 0 6px;font-size:19px;line-height:1.3}.bcard h2 a{text-decoration:none}.bcard h2 a:hover{color:var(--v300)}
+.bcard p{margin:0;color:#d4d4d8;line-height:1.55}
+.meta{font-size:13px;color:#a1a1aa;margin-top:8px}
+.crumbs{font-size:14px;margin:8px 0 12px}.crumbs a{color:#c4b5fd}
+.post h1{font-size:30px;line-height:1.2;margin:0;letter-spacing:-.02em}@media(min-width:640px){.post h1{font-size:38px}}
+.post h2{font-size:21px;margin:28px 0 8px}
+.post p,.post li{font-size:16.5px;line-height:1.7;color:#e4e4e7}
+.post a:not(.pill){color:#c4b5fd;text-underline-offset:2px}
+.post ul,.post ol{padding-left:1.3em}.post li{margin:4px 0}
+.post code{font-size:.9em;background:rgba(255,255,255,.08);padding:1px 6px;border-radius:6px}
+.post .pill{display:inline-flex;align-items:center;min-height:44px;margin:6px 8px 0 0;text-decoration:none}
+.more{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)}.more h2{font-size:17px}.more a{color:#c4b5fd}.more li{margin:6px 0}

@@ -906,4 +906,9 @@
     .card-media img { position: absolute; inset: 0; z-index: 1; }
     .card-placeholder { position: absolute; inset: 0; font-size: 2.2rem; color: #c4b5fd; }
     @media (prefers-reduced-motion: reduce) { .earth-img { animation: none !important; transform: none !important; } }
+    /* never leave listings hidden: cards are always visible unless mid-animation */
+    .market { opacity: 1 !important; transform: none !important; }
+    .card { opacity: 1; }
+    .stat-label { color: #c4c0d8; text-shadow: 0 1px 8px rgba(5,4,12,.9), 0 0 2px rgba(5,4,12,.8); }
+    @media (max-width: 640px) { .hero-stats { position: relative; } .hero-stats::before { content: ''; position: absolute; inset: -.6rem -1rem; z-index: -1; border-radius: 16px; background: rgba(6,4,17,.45); backdrop-filter: blur(6px); } }
 

@@ -320,8 +320,20 @@
     $('fApply').addEventListener('click', () => { drawer(false); $('projects').scrollIntoView({ behavior: RM.matches ? 'auto' : 'smooth' }); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && fPanel.classList.contains('open')) { drawer(false); fToggle.focus(); } });
     // ── Section scroll-reveal ──
-    const revealIO = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); revealIO.unobserve(en.target); } }), { threshold: 0.08 }) : null;
-    document.querySelectorAll('.reveal').forEach(el => (RM.matches || !revealIO) ? el.classList.add('in') : revealIO.observe(el));
+    // threshold 0 (a % threshold never fires on tall sections on phones), reveal on anchor jumps, plus a 1.5s safety net.
+    const revealAll = () => document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in'));
+    const revealNear = () => document.querySelectorAll('.reveal:not(.in)').forEach(el => { if (el.getBoundingClientRect().top < innerHeight * 1.1) el.classList.add('in'); });
+    if (RM.matches || !('IntersectionObserver' in window)) revealAll();
+    else {
+      const revealIO = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); revealIO.unobserve(en.target); } }), { threshold: 0, rootMargin: '0px 0px 10% 0px' });
+      document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
+      revealNear();
+      addEventListener('hashchange', revealNear);
+      addEventListener('scroll', () => requestAnimationFrame(revealNear), { passive: true });
+      document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('a[href^="#"]'); if (a) { const t = document.querySelector(a.getAttribute('href')); if (t) t.classList.add('in'); t && t.querySelectorAll('.reveal').forEach(x => x.classList.add('in')); setTimeout(revealNear, 50); } });
+      setTimeout(revealAll, 1500);
+    }
+
     // ── Share ──
     const shareBtn = $('shareBtn');
     if (shareBtn) shareBtn.addEventListener('click', async () => {

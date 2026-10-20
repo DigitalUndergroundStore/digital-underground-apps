@@ -27,7 +27,7 @@
     "stage": "In testing / development",
     "pitchShort": "A neon first-person arena shooter that runs in your browser. Pick a callsign and armor colour, then fight AI practice bots with a live scoreboard and kill feed. Free, no install.",
     "descriptionLong": "CyberArena 3D is a free first-person shooter built with Three.js that runs right in the browser, with no download or account.\n\nChoose a callsign and an armor colour, deploy into a neon cyber arena and fight three AI practice bots. Move with W, A, S, D, aim with the mouse, click to fire your laser rifle and press Space to jump. On phones and tablets there is an on-screen joystick, a look area, and fire and jump buttons.\n\nThe HUD shows your health, kills, deaths and streak, plus a live scoreboard and kill feed. When you are eliminated you respawn after a short countdown.\n\nCyberArena is in testing / development. Right now it runs in single-player Local Arena mode against bots; online multiplayer is planned but not switched on yet.",
-    "projectUrl": "https://digitalundergroundstore.com/cyberarena/",
+    "projectUrl": "https://kerzylabs.pages.dev/play/cyberarena/",
     "imageUrl": "https://digitalundergroundstore.com/community/media/cyberarena-cover.png?v=20261016b",
     "tags": [
       "game",
@@ -46,7 +46,7 @@
     "stage": "Released",
     "pitchShort": "1v1 neon falling-block combat. Clear lines to send garbage into your rival's well. Quick Match online, vs bot or endless. Free in your browser.",
     "descriptionLong": "Block Busters is a free 1v1 falling-block battle game that runs in your browser on phone or desktop.\n\nClear two or more lines to send garbage into your rival's well, and top out and you lose. Tap Quick Match to be paired online in seconds, or play a friend with a 4-letter room code or share link. You can also take on the bot (Easy, Normal or Hard) or chase a global high score in Endless.\n\nIt has hold, ghost piece, a 7-bag, combos and garbage cancelling. Phones get touch buttons and swipe controls, and desktop uses the keyboard. There's no download or sign-up.\n\n© 2026 Kerzy Labs",
-    "projectUrl": "https://kerzylabs-block-busters.pages.dev/",
+    "projectUrl": "https://kerzylabs.pages.dev/play/block-busters/",
     "imageUrl": "https://digitalundergroundstore.com/community/media/block-busters-cover.png?v=20261019",
     "tags": [
       "game",
@@ -65,7 +65,7 @@
     "stage": "Released",
     "pitchShort": "4-player neon free-for-all Pong. Defend your wall, and the last wall standing wins. Quick Match online or solo against 3 bots.",
     "descriptionLong": "Quad Pong is a free four-player Pong game that runs in your browser.\n\nEach player defends one wall. Miss the ball and you lose a life, and once you're out your wall turns solid. Tap Quick Match to fill a room automatically, with bots taking any empty seats, or host a room and send friends a 4-letter code or link. Solo mode puts you against three bots with a choice of difficulty and lives.\n\nExtra balls and speed-ups keep rounds short. On phones you drag, and on desktop you use the mouse or keys.\n\n© 2026 Kerzy Labs",
-    "projectUrl": "https://digitalunderground.itch.io/quad-pong",
+    "projectUrl": "https://kerzylabs.pages.dev/play/quad-pong/",
     "imageUrl": "https://digitalundergroundstore.com/community/media/quad-pong-cover.png",
     "tags": [
       "game",
@@ -84,7 +84,7 @@
     "stage": "In testing / development",
     "pitchShort": "A neon tower defense game in your browser. Pick a class, place towers anywhere off the path, and hold back the waves in Classic, Endless or live PvP. Free, no install.",
     "descriptionLong": "Neon Bastion is a free tower defense game that runs in your browser, on phones and desktop.\n\nChoose a class and a starter tower, then place towers freely on the grid and upgrade them as the waves grow. Play Classic or Endless and post your score to the global leaderboard, or go head to head in PvP by room code, quick match or against a bot, sending attackers into your rival's lane.\n\nIt's still in testing, so there's a Feedback button in the menu for feature requests and bug reports.\n\n© 2026 Kerzy Labs",
-    "projectUrl": "https://kerzylabs-td.pages.dev/play/",
+    "projectUrl": "https://kerzylabs.pages.dev/play/neon-bastion/",
     "imageUrl": "https://kerzylabs-td.pages.dev/play/cover.png",
     "tags": [
       "game",

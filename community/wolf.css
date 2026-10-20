@@ -58,7 +58,7 @@ a{color:inherit}
 #overlay{position:fixed;inset:0;z-index:55;background:rgba(0,0,0,.6)}#overlay[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){#mobile-menu{transition:none}}
 /* Hero */
-.hero{padding-top:48px;padding-bottom:32px}@media(min-width:640px){.hero{padding-top:72px;padding-bottom:40px}}
+.hero{padding-top:24px;padding-bottom:32px}@media(min-width:640px){.hero{padding-top:44px;padding-bottom:40px}}
 .eyebrow{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--v400);margin-bottom:16px}
 .dot{width:6px;height:6px;border-radius:9999px;background:var(--v400);animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}
 @keyframes pulse{50%{opacity:.5}}

@@ -95,6 +95,14 @@ export async function onRequest(context) {
     }
   }
 
+  if (head === "assign" && request.method === "POST") {
+    let body; try { body = await request.json(); } catch { return json({ error: "Invalid JSON." }, 400); }
+    const { assignListingsToEmail } = await import("../../_lib/creator.js");
+    const ids = Array.isArray(body.listingIds) ? body.listingIds : String(body.listingIds || "").split(/[\s,]+/);
+    const r = await assignListingsToEmail(kv, body.email, ids);
+    return json(r, r.error ? 400 : 200);
+  }
+
   if (head === "makers") {
     const { listPendingProfiles, approveProfile, rejectProfile, validSlug } = await import("../../_lib/makers.js");
     if (request.method === "GET") return json({ pending: await listPendingProfiles(kv) });

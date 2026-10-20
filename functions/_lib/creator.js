@@ -494,3 +494,36 @@ export async function loginAllowed(env, ip, email) {
   const r = await rateAll(env, [...ipRules("login:ip", ip, 10, 900), ["login:em:" + email, 10, 900]]);
   return r.ok;
 }
+
+/**
+ * Owner tool: give listings (posted by the owner for a maker) to a creator account keyed by email.
+ * Reuses the account that already owns that login email, or creates one with no password.
+ * The maker then uses "Forgot password?" on the dashboard: a 6-digit code goes to that email only when they ask.
+ */
+export async function assignListingsToEmail(kv, email, listingIds) {
+  const e = normalizeEmail(email);
+  if (!e) return { error: "Enter a valid email." };
+  const ids = [...new Set((listingIds || []).filter((x) => typeof x === "string" && /^[A-Za-z0-9_-]{3,80}$/.test(x)))].slice(0, 50);
+  if (!ids.length) return { error: "Pick at least one listing." };
+  let acct = null;
+  const existingId = await accountIdForLogin(kv, e);
+  if (existingId) acct = await getAccount(kv, existingId);
+  if (!acct) {
+    acct = { id: "ca_" + b64url(crypto.getRandomValues(new Uint8Array(12))), listingIds: [], createdAt: Date.now(), email: e };
+    await putAccount(kv, acct);
+    await kv.put(await loginKey(e), acct.id);
+  }
+  const done = [], skipped = [];
+  for (const id of ids) {
+    const row = await kvGetListing(kv, id);
+    if (!row) { skipped.push({ id, reason: "not found" }); continue; }
+    if (row.creatorId && row.creatorId !== acct.id) { skipped.push({ id, reason: "owned by another account" }); continue; }
+    row.creatorId = acct.id;
+    await kv.put(`community:item:${id}`, JSON.stringify(row));
+    if (!(acct.listingIds || []).includes(id)) acct.listingIds = [...(acct.listingIds || []), id].slice(-50);
+    done.push(id);
+  }
+  await putAccount(kv, acct);
+  await linkContactToCreator(kv, e, acct.id);
+  return { ok: true, creatorId: acct.id, assigned: done, skipped, hasPassword: !!acct.pw };
+}

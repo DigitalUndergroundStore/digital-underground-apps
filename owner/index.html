@@ -48,6 +48,14 @@
     <h2 style="margin-top:24px">Maker profiles waiting</h2>
     <p class="muted small">Profile edits stay private until you approve them. The live page keeps the last approved version.</p>
     <div id="maker-list" class="list"></div>
+    <h2 style="margin-top:24px">Give listings to a creator</h2>
+    <p class="muted small">For listings you posted for a maker. They sign in at /community/dashboard/ with “Forgot password?” using this email; no email is sent until they ask for a code.</p>
+    <form id="assign-form" class="list" style="display:grid;gap:8px;max-width:560px">
+      <label for="as-email">Creator email</label><input id="as-email" type="email" required autocomplete="off">
+      <label for="as-ids">Listing ids (comma or space separated)</label><textarea id="as-ids" rows="3" required></textarea>
+      <button type="submit" class="btn ok">Assign</button>
+      <p id="as-msg" class="small" role="status" aria-live="polite"></p>
+    </form>
   </section>
 
   <section id="view-contacts" class="panel">
@@ -130,6 +138,6 @@
     </div>
   </section>
 </div>
-<script src="/owner/owner.js?v=5"></script>
+<script src="/owner/owner.js?v=6"></script>
 </body>
 </html>

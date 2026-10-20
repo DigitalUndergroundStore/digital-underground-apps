@@ -94,6 +94,14 @@
     );
   }
 
+  var asf = document.getElementById("assign-form");
+  if (asf) asf.addEventListener("submit", function (e) {
+    e.preventDefault();
+    api("assign", { method: "POST", body: { email: $("as-email").value, listingIds: $("as-ids").value } }).then(function (out) {
+      var d = out.d || {};
+      $("as-msg").textContent = out.r.ok ? "Assigned " + (d.assigned || []).length + " listing(s)" + ((d.skipped || []).length ? ", skipped " + d.skipped.map(function (x) { return x.id + " (" + x.reason + ")"; }).join(", ") : "") + "." : (d.error || "Failed");
+    });
+  });
   function loadMakers() {
     api("makers").then(function (out) {
       var box = $("maker-list"); if (!box) return;

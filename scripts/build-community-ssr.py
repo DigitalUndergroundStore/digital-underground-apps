@@ -24,7 +24,27 @@ for r in rows:
     if r["id"] == "cm_kerzy_neonbastion": r["stage"] = "In development / testing"
     r.setdefault("curated", False)
 rows = [r for r in rows if r.get("status", "approved") in ("approved", "live", "published")]
-rows.sort(key=lambda r: ((r.get("makerName") or "").lower() != "wolfitway", pinned.index(r["id"]) if r["id"] in pinned else 1e9, bool(r.get("curated")), (r.get("name") or "").lower()))
+rows.sort(key=lambda r: (pinned.index(r["id"]) if r["id"] in pinned else 1e9, bool(r.get("curated")), (r.get("name") or "").lower()))
+def arrange(lst):
+    # mirrors arrange() in community/wolf.js
+    isw = lambda r: (r.get("makerName") or "").lower() == "wolfitway"
+    wolf = [r for r in lst if isw(r)]; rest = [r for r in lst if not isw(r)]
+    if not wolf: return lst
+    def pick(rx):
+        for i, r in enumerate(wolf):
+            if re.search(rx, r.get("name") or "", re.I): return wolf.pop(i)
+    first, second = pick("wolf sniff"), pick("wolfscent")
+    rel = next((rest.pop(i) for i, r in enumerate(rest) if (r.get("name") or "").lower() == "releviq"), None)
+    out = [x for x in [first, rel, rest.pop(0) if rest else None, second] if x]
+    n = len(wolf); slots = len(rest) + n
+    pos = [int((slots * k / (n + 1)) + 0.5) - 1 for k in range(1, n + 1)]  # JS Math.round
+    w = t = 0
+    for j in range(slots):
+        if w < n and j == pos[w]: out.append(wolf[w]); w += 1
+        elif t < len(rest): out.append(rest[t]); t += 1
+        else: out.append(wolf[w]); w += 1
+    return out
+rows = arrange(rows)
 out = []
 for i, r in enumerate(rows):
     href = "/community/p/?id=" + quote(r["id"]); n = e(r["name"]); rid = e(r["id"])

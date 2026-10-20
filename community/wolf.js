@@ -55,6 +55,22 @@
     li.innerHTML = cardHTML(row);
     return li;
   }
+  // Default order: Wolf Sniff 1st, Releviq 2nd, Wolfscent Video 4th, other Wolfitway listings spread evenly through the rest.
+  // Mirrored in scripts/build-community-ssr.py (arrange()).
+  function arrange(list) {
+    var isW = function (r) { return /^wolfitway$/i.test(r.makerName || ""); };
+    var wolf = list.filter(isW), rest = list.filter(function (r) { return !isW(r); });
+    if (!wolf.length) return list;
+    var pick = function (re) { for (var i = 0; i < wolf.length; i++) if (re.test(wolf[i].name || "")) return wolf.splice(i, 1)[0]; return null; };
+    var first = pick(/wolf sniff/i), second = pick(/wolfscent/i);
+    var ri = -1; for (var i = 0; i < rest.length; i++) if (/^releviq$/i.test(rest[i].name || "")) { ri = i; break; }
+    var rel = ri >= 0 ? rest.splice(ri, 1)[0] : null;
+    var out = [first, rel, rest.shift(), second].filter(Boolean);
+    var tail = rest.slice(), n = wolf.length, slots = tail.length + n, base = out.length;
+    var pos = []; for (var k = 1; k <= n; k++) pos.push(Math.round(slots * k / (n + 1)) - 1);
+    for (var j = 0, w = 0, t = 0; j < slots; j++) out.push(w < n && j === pos[w] ? wolf[w++] : (t < tail.length ? tail[t++] : wolf[w++]));
+    return out.filter(Boolean);
+  }
   function filtered() {
     var q = (qInput.value || "").trim().toLowerCase();
     return all.filter(function (row) {
@@ -108,13 +124,12 @@
     (Array.isArray(parts[0]) ? parts[0] : []).concat(parts[1] && Array.isArray(parts[1].listings) ? parts[1].listings : []).forEach(function (row) { if (row && row.id) byId[row.id] = row; });
     all = Object.keys(byId).map(function (k) { return normalize(byId[k]); });
     all.sort(function (a, b) {
-      var wa = /^wolfitway$/i.test(a.makerName || ""), wb = /^wolfitway$/i.test(b.makerName || "");
-      if (wa !== wb) return wa ? -1 : 1; // Wolfitway (Wolf) listings lead the default order
       var pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
       if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);
       if (!!a.curated !== !!b.curated) return a.curated ? 1 : -1;
       return (a.name || "").localeCompare(b.name || "");
     });
+    all = arrange(all);
     if (all.length) render();
   });
 

@@ -58,11 +58,11 @@ a{color:inherit}
 #overlay{position:fixed;inset:0;z-index:55;background:rgba(0,0,0,.6)}#overlay[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){#mobile-menu{transition:none}}
 /* Hero */
-.hero{padding-top:24px;padding-bottom:32px}@media(min-width:640px){.hero{padding-top:44px;padding-bottom:40px}}
+.hero{padding-top:10px;padding-bottom:32px}@media(min-width:640px){.hero{padding-top:24px;padding-bottom:40px}}
 .eyebrow{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--v400);margin-bottom:16px}
 .dot{width:6px;height:6px;border-radius:9999px;background:var(--v400);animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}
 @keyframes pulse{50%{opacity:.5}}
-.hero h1{margin:0;font-size:36px;font-weight:700;letter-spacing:-.025em;line-height:1.15;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.hero h1{margin:0!important;font-size:36px;font-weight:700;letter-spacing:-.025em;line-height:1.15;text-shadow:0 2px 24px rgba(0,0,0,.5)}
 @media(min-width:640px){.hero h1{font-size:48px}}@media(min-width:768px){.hero h1{font-size:60px}}
 .hero h1 br{display:inline}@media(min-width:640px){.hero h1 br{display:none}}
 .hero .lede{margin:16px 0 0;max-width:42rem;font-size:16px;color:var(--z400);text-shadow:0 1px 12px rgba(0,0,0,.6)}@media(min-width:640px){.hero .lede{font-size:18px}}

@@ -1,3 +1,7 @@
+# Marketplace is the homepage; old landing URL keeps its links (query string is preserved).
+/community / 301
+/community/ / 301
+/community/index.html / 301
 /p/bored-blocks/ /store/ 301
 /p/bored-blocks /store/ 301
 /games/block-busters https://kerzylabs.pages.dev/play/block-busters/ 301

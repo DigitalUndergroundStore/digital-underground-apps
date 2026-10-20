@@ -21,7 +21,7 @@ function start() {
     matchMedia("(max-width: 820px)").matches ||
     /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) ||
     (navigator.deviceMemory && navigator.deviceMemory <= 4);
-  const RES = isMobile ? "2k" : "4k";
+  const RES = root.dataset.res || (isMobile ? "2k" : "4k"); // pages can pin 2k via data-res
   const BASE = new URL(".", import.meta.url).href;
 
   let renderer;

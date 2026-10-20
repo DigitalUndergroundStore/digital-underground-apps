@@ -40,7 +40,7 @@
     });
     $("logout-btn").hidden = name === "login";
     if (name === "home") loadHome();
-    if (name === "queue") loadQueue("pending");
+    if (name === "queue") { loadQueue("pending"); loadMakers(); }
     if (name === "contacts") loadContacts("");
     if (name === "support") loadSupport("open");
     if (name === "analytics") loadAnalytics();
@@ -93,6 +93,28 @@
       '<span class="sub">' + esc(sub) + "</span></button>"
     );
   }
+
+  function loadMakers() {
+    api("makers").then(function (out) {
+      var box = $("maker-list"); if (!box) return;
+      var rows = (out.d && out.d.pending) || [];
+      if (!rows.length) { box.innerHTML = '<p class="muted">No maker profiles waiting.</p>'; return; }
+      box.innerHTML = rows.map(function (r) {
+        var p = r.pending || {}, img = function (u, w) { return u && /^(data:image\/|\/makers\/media\/)/.test(u) ? '<img src="' + esc(u) + '" alt="" style="max-width:' + w + 'px;border-radius:8px">' : ""; };
+        var links = [p.website].concat(Object.keys(p.socials || {}).map(function (k) { return p.socials[k]; })).filter(Boolean);
+        return '<div class="item"><p><b>' + esc(p.name) + '</b> <span class="small">/makers/' + esc(r.slug) + '/</span></p>' + img(p.logo, 64) + " " + img(p.banner, 240) +
+          '<p class="small" style="white-space:pre-wrap">' + esc(p.bio) + '</p><p class="small">' + links.map(esc).join("<br>") + '</p><p class="small muted">' + esc((p.screening || []).join(" ")) + "</p>" +
+          '<button type="button" class="btn ok" data-mk="approve_profile" data-slug="' + esc(r.slug) + '">Approve profile</button> <button type="button" class="btn danger" data-mk="reject_profile" data-slug="' + esc(r.slug) + '">Reject</button></div>';
+      }).join("");
+    });
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-mk]"); if (!b) return;
+    var body = { action: b.getAttribute("data-mk"), slug: b.getAttribute("data-slug") };
+    if (body.action === "reject_profile") body.reason = prompt("Optional reason shown to the maker:", "") || "";
+    b.disabled = true;
+    api("makers", { method: "POST", body: body }).then(function (out) { if (!out.r.ok) alert((out.d && out.d.error) || "Failed"); loadMakers(); });
+  });
 
   function loadQueue(tab) {
     document.querySelectorAll("#view-queue .tabs button").forEach(function (b) {

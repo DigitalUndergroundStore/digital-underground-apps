@@ -149,6 +149,23 @@
         <div id="list" class="list2"></div>
       </section>
 
+      <section class="card2" id="profile" aria-labelledby="profile-title" style="margin-top:28px" hidden>
+        <div class="card-head"><div><h2 id="profile-title">Your maker page</h2><p>Logo, banner, bio and links shown on your public page. Changes go live after review. <a id="pf-view" href="/makers/">View your page</a></p></div></div>
+        <div class="alert" id="pf-state" hidden role="status"></div>
+        <form id="pf-form" class="f2" novalidate>
+          <div class="fld" id="pf-pick-wrap" hidden><label for="pf-pick">Maker page</label><select id="pf-pick"></select></div>
+          <div class="fld"><label for="pf-name">Display name <span class="cc" data-cc-for="pf-name"></span></label><input id="pf-name" name="name" required maxlength="60" autocomplete="organization"></div>
+          <div class="fld"><label for="pf-bio">Short bio <span class="cc" data-cc-for="pf-bio"></span></label><textarea id="pf-bio" name="bio" maxlength="400" rows="4" aria-describedby="pf-bio-h"></textarea><small id="pf-bio-h" class="hint">Plain text only. No HTML or email addresses.</small></div>
+          <div class="fld"><label for="pf-web">Website</label><input id="pf-web" name="website" type="url" inputmode="url" maxlength="200" placeholder="https://" aria-describedby="pf-url-h"><small id="pf-url-h" class="hint">Links must start with https://</small></div>
+          <fieldset class="pf-soc"><legend>Social links <span class="cc">optional</span></legend><div id="pf-socials" class="pf-grid"></div></fieldset>
+          <div class="pf-grid">
+            <div class="fld"><label for="pf-logo">Logo <span class="cc">square, JPEG/PNG/WebP</span></label><input id="pf-logo" type="file" accept="image/jpeg,image/png,image/webp"><img id="pf-logo-prev" class="pf-prev pf-prev-logo" alt="Current logo" hidden></div>
+            <div class="fld"><label for="pf-banner">Banner <span class="cc">wide, JPEG/PNG/WebP</span></label><input id="pf-banner" type="file" accept="image/jpeg,image/png,image/webp"><img id="pf-banner-prev" class="pf-prev" alt="Current banner" hidden></div>
+          </div>
+          <div class="alert err" id="pf-msg" hidden role="alert"></div>
+          <button type="submit" class="btn btn-primary" id="pf-save">Submit for review</button>
+        </form>
+      </section>
       <section class="card2" id="apikeys" aria-labelledby="apikeys-title" style="margin-top:28px">
         <div class="card-head"><div><h2 id="apikeys-title">API keys</h2><p>Post and update listings from your own tools or AI agent. <a href="/community/api/">API docs</a></p></div></div>
         <div id="ak-new" class="ak-new" hidden>
@@ -264,5 +281,6 @@
 </div>
 
 <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+<script src="/community/dashboard/profile.js?v=2" defer></script>
 </body>
 </html>

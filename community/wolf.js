@@ -25,13 +25,20 @@
     var g = GRADS[hash(row.id || row.name || "") % GRADS.length];
     return '<div class="media grad" style="background:linear-gradient(135deg,' + g[0] + "," + g[1] + ')"><span aria-hidden="true">' + esc((row.name || "?").slice(0, 2)) + "</span></div>";
   }
+  // Maker page slug: API sends makerSlug; static seed rows fall back to the seeded maker pages.
+  function makerSlug(row) {
+    if (row.makerSlug && /^[a-z0-9-]{1,48}$/.test(row.makerSlug)) return row.makerSlug;
+    if (/^cm_kerzy_/.test(row.id || "")) return "kerzy-labs";
+    return /^wolfitway$/i.test(row.makerName || "") ? "wolfitway" : "";
+  }
+  function makerHTML(row) { var s = makerSlug(row); return s ? '<a href="/makers/' + s + '/">' + esc(row.makerName) + "</a>" : esc(row.makerName); }
   function cardHTML(row) {
     var href = "/community/p/?id=" + encodeURIComponent(row.id), name = esc(row.name);
     var stage = row.stage && row.stage !== "Released" ? row.stage : "";
     var badge = stage ? '<span class="badge stage">' + esc(stage) + "</span>" : row.curated ? '<span class="badge" title="Curated by Digital Underground">★ Featured pick</span>' : "";
     var x = row.xHandle ? ' · <a href="https://x.com/' + esc(row.xHandle) + '" target="_blank" rel="noopener" aria-label="@' + esc(row.xHandle) + ' on X (opens in a new tab)">@' + esc(row.xHandle) + "</a>" : "";
     return '<article class="card-inner" aria-labelledby="t-' + esc(row.id) + '">' + media(row) +
-      '<div class="body"><div class="top"><div class="tt"><h3 id="t-' + esc(row.id) + '"><a href="' + href + '">' + name + '</a></h3><p class="maker">' + esc(row.makerName) + x + "</p></div>" + badge + "</div>" +
+      '<div class="body"><div class="top"><div class="tt"><h3 id="t-' + esc(row.id) + '"><a href="' + href + '">' + name + '</a></h3><p class="maker">' + makerHTML(row) + x + "</p></div>" + badge + "</div>" +
       '<p class="desc">' + esc(row.pitchShort) + "</p>" +
       '<div class="foot-row"><span class="price">' + esc(row.priceLabel || "See site") + '</span><div class="acts">' +
       (row.contactable ? '<a class="pill pill-o" href="' + href + '#contact" aria-label="Contact the developer of ' + name + '">Contact</a>' : "") +

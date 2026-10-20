@@ -95,6 +95,20 @@ export async function onRequest(context) {
     }
   }
 
+  if (head === "makers") {
+    const { listPendingProfiles, approveProfile, rejectProfile, validSlug } = await import("../../_lib/makers.js");
+    if (request.method === "GET") return json({ pending: await listPendingProfiles(kv) });
+    if (request.method === "POST") {
+      let body; try { body = await request.json(); } catch { return json({ error: "Invalid JSON." }, 400); }
+      if (!validSlug(body.slug)) return json({ error: "Missing maker." }, 400);
+      const r = body.action === "approve_profile" ? await approveProfile(kv, body.slug)
+        : body.action === "reject_profile" ? await rejectProfile(kv, body.slug, body.reason) : undefined;
+      if (r === undefined) return json({ error: "Unknown action." }, 400);
+      if (!r) return json({ error: "Nothing pending for that maker." }, 404);
+      return json({ ok: true });
+    }
+  }
+
   if (head === "queue" && request.method === "GET") {
     const url = new URL(request.url);
     const tab = url.searchParams.get("tab") || "pending";

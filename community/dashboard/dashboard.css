@@ -349,3 +349,11 @@ label.btn:focus-within, input.sr-only:focus-visible + .btn { outline: 2px solid 
 
 .icon-btn.is-off{opacity:.38;cursor:not-allowed}
 .icon-btn.is-off:hover{background:inherit}
+
+/* Maker page editor */
+.pf-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.pf-soc { border: 0; padding: 0; margin: 0; }
+.pf-soc legend { font-size: 14px; font-weight: 650; margin-bottom: 8px; }
+.pf-prev { max-width: 100%; border-radius: 12px; margin-top: 8px; border: 1px solid rgba(255,255,255,.12); aspect-ratio: 3/1; object-fit: cover; }
+.pf-prev-logo { width: 88px; height: 88px; aspect-ratio: 1; }
+.hint { font-size: 12.5px; color: var(--muted); }

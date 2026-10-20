@@ -1,3 +1,4 @@
+import { makerSlugFor } from "./makers.js";
 /**
  * Community marketplace helpers (link-out listings, moderation queue).
  */
@@ -299,6 +300,8 @@ export function publicListing(row) {
     curated: !!row.curated,
     // Owner-set only (makers cannot edit it): the maker's own site, https only.
     makerUrl: typeof row.makerUrl === "string" && /^https:\/\//i.test(row.makerUrl) ? row.makerUrl : null,
+    // Public maker page (/makers/<slug>/), only for makers with a seeded or owner-approved profile.
+    makerSlug: makerSlugFor(row),
   };
 }
 

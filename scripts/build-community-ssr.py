@@ -54,6 +54,8 @@ for i, r in enumerate(rows):
     load = 'eager" fetchpriority="high' if i == 0 else "lazy"
     med = (f'<div class="media"><img src="{e(img)}" alt="{n} cover image" width="640" height="360" loading="{load}" decoding="async"></div>' if img
            else f'<div class="media grad" style="background:linear-gradient(135deg,#7c3aed,#4f46e5)"><span aria-hidden="true">{n[:2]}</span></div>')
+    ms = r.get("makerSlug") or ("kerzy-labs" if r["id"].startswith("cm_kerzy_") else "wolfitway" if (r.get("makerName") or "").lower() == "wolfitway" else "")
+    mk = f'<a href="/makers/{e(ms)}/">{e(r.get("makerName"))}</a>' if re.fullmatch(r"[a-z0-9-]{1,48}", ms or "") else e(r.get("makerName"))
     x = (f' · <a href="https://x.com/{e(r["xHandle"])}" target="_blank" rel="noopener" aria-label="@{e(r["xHandle"])} on X (opens in a new tab)">@{e(r["xHandle"])}</a>' if r.get("xHandle") else "")
     contact = (f'<a class="pill pill-o" href="{href}#contact" aria-label="Contact the developer of {n}">Contact</a>' if r.get("contactable") else "")
     v = r.get("video") or {}
@@ -61,7 +63,7 @@ for i, r in enumerate(rows):
         med = f'<div class="media"><video class="card-vid" muted loop playsinline preload="none"' + (f' poster="{e(img)}"' if img else "") + f' src="{e(v["src"])}' + ("" if img else "#t=0.1") + f'" aria-label="{n} preview video"></video></div>'
     visit = e(r.get("visitUrl") or r.get("projectUrl"))
     out.append(f'<li class="card reveal" data-id="{rid}" data-globe-ignore style="animation-delay:{i*0.06:.2f}s"><article class="card-inner" aria-labelledby="t-{rid}">{med}'
-               f'<div class="body"><div class="top"><div class="tt"><h3 id="t-{rid}"><a href="{href}">{n}</a></h3><p class="maker">{e(r.get("makerName"))}{x}</p></div>{badge}</div>'
+               f'<div class="body"><div class="top"><div class="tt"><h3 id="t-{rid}"><a href="{href}">{n}</a></h3><p class="maker">{mk}{x}</p></div>{badge}</div>'
                f'<p class="desc">{e(r.get("pitchShort"))}</p><div class="foot-row"><span class="price">{e(r.get("priceLabel") or "See site")}</span><div class="acts">{contact}'
                f'<a class="pill pill-v" data-out="{rid}" href="{visit}" target="_blank" rel="noopener" aria-label="Visit {n} (opens in a new tab)">Visit</a></div></div></div></article></li>')
 p = R / "community/index.html"; s = p.read_text()

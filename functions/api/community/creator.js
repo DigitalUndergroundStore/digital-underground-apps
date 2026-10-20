@@ -32,6 +32,19 @@ import {
 } from "../../_lib/creator.js";
 import { deleteVideo, uploadVid } from "../../_lib/video.js";
 import { storeSupportMessage } from "../../_lib/owner.js";
+import { creatorProfileView, getMaker, makerSlugFor, sanitizeProfile, slugify, submitProfile, validSlug } from "../../_lib/makers.js";
+
+/** Maker pages this account may edit: one per distinct maker name across its own listings. */
+async function ownedMakers(kv, acct) {
+  const out = new Map();
+  for (const id of acct.listingIds || []) {
+    const row = await kvGetListing(kv, id);
+    if (!row || row.creatorId !== acct.id) continue;
+    const slug = makerSlugFor(row) || slugify(row.makerName);
+    if (validSlug(slug) && !out.has(slug)) out.set(slug, row.makerName || slug);
+  }
+  return out;
+}
 
 /** Per-IP burst limit for creator write actions (per isolate). */
 const ipHits = new Map();
@@ -42,6 +55,24 @@ function ipAllowed(ip, limit = 30, windowMs = 60 * 60 * 1000) {
   b.n += 1;
   if (ipHits.size > 5000) ipHits.clear();
   return b.n <= limit;
+}
+
+
+/** Maker page editor: read (GET ?action=profile, not rate-limited) or submit for review (POST action=profile_save). */
+async function profileAction(env, kv, acct, body, save) {
+  const makers = await ownedMakers(kv, acct);
+  if (!makers.size) return json({ error: "Publish a listing first; your maker page is built from your listings." }, 400);
+  const slug = validSlug(body.slug) && makers.has(body.slug) ? body.slug : [...makers.keys()][0];
+  let rec = await getMaker(kv, slug);
+  if (rec && rec.ownerAcct && rec.ownerAcct !== acct.id) return json({ error: "This maker page belongs to another account. Contact support." }, 403);
+  if (save) {
+    const v = sanitizeProfile(body.profile || {}, makers.get(slug));
+    if (v.error) return json({ error: v.error }, 400);
+    const r = await submitProfile(env, kv, acct, slug, v.profile);
+    if (r.error) return json({ error: r.error }, 400);
+    rec = r.rec;
+  }
+  return json({ ok: true, makers: [...makers].map(([s, n]) => ({ slug: s, name: n })), profile: creatorProfileView(rec, slug, makers.get(slug)) });
 }
 
 const UNAUTH = () => json({ error: "This dashboard link is not valid. Lost your link? Email digitalunderground.store@proton.me" }, 401);
@@ -75,6 +106,9 @@ export async function onRequest(context) {
   if (!who) return UNAUTH();
   const acct = who.acct;
 
+  if (request.method === "GET" && new URL(request.url).searchParams.get("action") === "profile") {
+    return profileAction(env, kv, acct, { slug: new URL(request.url).searchParams.get("slug") }, false);
+  }
   if (request.method === "GET") {
     const rows = [];
     for (const id of acct.listingIds || []) {
@@ -140,6 +174,8 @@ export async function onRequest(context) {
     }
     return json({ ok: true, keys: (acct.apiKeys || []).map(publicKey) });
   }
+
+  if (action === "profile_save") return profileAction(env, kv, acct, body, true);
 
   if (action === "support") {
     const subject = sanitizeText(body.subject, 120);

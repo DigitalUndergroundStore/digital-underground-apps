@@ -167,3 +167,5 @@ search{display:block}.eyebrow{margin-top:0}#main:focus{outline:none}
 .orb.b{right:-13rem;background:radial-gradient(closest-side,rgba(79,70,229,.9),rgba(79,70,229,.35) 45%,transparent)!important}
 .orb.c{bottom:-8rem;left:15%;background:radial-gradient(closest-side,rgba(192,38,211,.9),rgba(192,38,211,.35) 45%,transparent)!important}
 @media(max-width:799px){.card,.faq-item,.faq details,.search,.sel,.cta-sec{-webkit-backdrop-filter:none;backdrop-filter:none}.card{background:rgba(20,20,24,.86)}.faq-item{background:rgba(20,20,24,.86)}.search,.sel{background:rgba(20,20,24,.9)}}
+
+.card .maker a{color:inherit;text-decoration:underline;text-underline-offset:2px}

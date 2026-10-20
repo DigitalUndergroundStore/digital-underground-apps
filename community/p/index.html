@@ -67,10 +67,12 @@
     document.getElementById("crumb-name").textContent = l.name;
     var host = ""; try { host = new URL(l.projectUrl).hostname.replace(/^www\./, ""); } catch (_) {}
     var x = l.xHandle ? ' · <a href="https://x.com/' + esc(l.xHandle) + '" target="_blank" rel="noopener">@' + esc(l.xHandle) + "</a>" : "";
+    var ms = l.makerSlug && /^[a-z0-9-]{1,48}$/.test(l.makerSlug) ? l.makerSlug : /^cm_kerzy_/.test(l.id || "") ? "kerzy-labs" : /^wolfitway$/i.test(l.makerName || "") ? "wolfitway" : "";
+    var mk = ms ? '<a href="/makers/' + ms + '/">' + esc(l.makerName) + "</a>" : esc(l.makerName);
     var tags = (l.tags || []).map(function (t) { return '<span class="chip2">#' + esc(t) + "</span>"; }).join("");
     out.innerHTML =
       '<div class="dt-grid"><div>' +
-        '<header class="dt-head">' + (l.video || l.imageUrl ? "" : '<span class="dt-logo dt-ph" aria-hidden="true">' + esc((l.name || "?").charAt(0).toUpperCase()) + "</span>") + '<div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + esc(l.makerName) + x + "</p></div></header>" +
+        '<header class="dt-head">' + (l.video || l.imageUrl ? "" : '<span class="dt-logo dt-ph" aria-hidden="true">' + esc((l.name || "?").charAt(0).toUpperCase()) + "</span>") + '<div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + mk + x + "</p></div></header>" +
         (l.contactable ? '<button type="button" class="btn2" id="contact-btn" aria-expanded="false" aria-controls="contact-panel" style="flex:none;margin:10px 0 2px;border:1px solid rgba(34,211,238,.55);color:#a5f3fc">&#9993;&nbsp; Contact the developer</button>' : "") +
         (l.curated ? '<p style="margin:8px 0 0">' + '<span class="pick-badge" style="display:inline-block;margin:4px 6px 2px 0;padding:2px 9px;border-radius:999px;background:linear-gradient(90deg,#a855f7,#00f2fe);color:#05070d;font:800 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.03em;width:max-content">&#9733; Featured pick</span>' + '<span class="pick-note" style="display:block;margin:2px 0 4px;color:#94a3b8;font:500 11.5px/1.4 ui-sans-serif,system-ui,sans-serif">Curated by Digital Underground</span>' + (l.makerUrl ? '<a href="' + esc(l.makerUrl) + '" target="_blank" rel="noopener" style="font-size:13px">Official site: ' + esc(l.makerUrl.replace(/^https?:\/\//, '')) + ' &#8599;</a>' : '') + '</p>' : (l.makerUrl ? '<p style="margin:6px 0 0"><a href="' + esc(l.makerUrl) + '" target="_blank" rel="noopener" style="font-size:13px">Maker site: ' + esc(l.makerUrl.replace(/^https?:\/\//, '')) + ' &#8599;</a></p>' : "")) +
         (l.stage && l.stage !== 'Released' ? '<p style="margin:6px 0 0"><span class="stage-badge" style="display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid rgba(251,191,36,.55);background:rgba(251,191,36,.12);color:#fcd34d;font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;width:max-content">' + esc(l.stage) + "</span></p>" : "") +
@@ -89,7 +91,7 @@
         '<section class="panel"><h2>Details</h2><dl class="facts">' +
           "<div><dt>Price</dt><dd>" + price + "</dd></div>" +
           (l.category ? "<div><dt>Category</dt><dd>" + esc(CATS[l.category] || l.category) + "</dd></div>" : "") +
-          "<div><dt>Maker</dt><dd>" + esc(l.makerName) + "</dd></div>" +
+          "<div><dt>Maker</dt><dd>" + mk + (ms ? ' · <a href="/makers/' + ms + '/">See all by this maker</a>' : "") + "</dd></div>" +
           (host ? "<div><dt>Website</dt><dd>" + esc(host) + "</dd></div>" : "") +
         '</dl><a class="btn2 primary" style="width:100%;margin-top:14px" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit site' + EXT + "</a></section>" +
         '<p class="muted small" style="margin:12px 4px 0">Listed free on the Digital Underground Developer Marketplace. Purchases happen on the maker\'s site.</p>' +

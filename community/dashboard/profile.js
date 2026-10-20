@@ -2,6 +2,35 @@
 (function () {
   "use strict";
   var LABEL = { x: "X", github: "GitHub", youtube: "YouTube", linkedin: "LinkedIn", instagram: "Instagram", mastodon: "Mastodon", bluesky: "Bluesky", discord: "Discord" };
+  var socials = {};
+  function renderSocials(focusKey) {
+    var list = $("pf-socials"), keys = Object.keys(LABEL).filter(function (k) { return socials[k]; });
+    list.innerHTML = "";
+    keys.forEach(function (k) {
+      var li = document.createElement("li"), b = document.createElement("b"), sp = document.createElement("span"), rm = document.createElement("button");
+      b.textContent = LABEL[k]; sp.textContent = socials[k]; sp.title = socials[k];
+      rm.type = "button"; rm.className = "btn btn-sm btn-ghost"; rm.textContent = "Remove"; rm.setAttribute("aria-label", "Remove " + LABEL[k] + " link");
+      rm.addEventListener("click", function () { delete socials[k]; renderSocials(); say(LABEL[k] + " link removed."); $("pf-add-k").focus(); });
+      li.appendChild(b); li.appendChild(sp); li.appendChild(rm); list.appendChild(li);
+    });
+    list.hidden = !keys.length; $("pf-soc-empty").hidden = !!keys.length;
+    $("pf-soc-n").textContent = keys.length ? keys.length + " added" : "none added";
+    var sel = $("pf-add-k"), first = "";
+    sel.innerHTML = "";
+    Object.keys(LABEL).forEach(function (k) {
+      var o = document.createElement("option"); o.value = k; o.textContent = LABEL[k] + (socials[k] ? " (added)" : "");
+      o.disabled = !!socials[k]; if (!o.disabled && !first) first = k; sel.appendChild(o);
+    });
+    sel.value = first; sel.disabled = !first; $("pf-add-u").disabled = !first; $("pf-add-btn").disabled = !first;
+  }
+  function say(t) { $("pf-add-msg").textContent = t; }
+  function addSocial() {
+    var k = $("pf-add-k").value, u = $("pf-add-u").value.trim();
+    if (!k || socials[k]) return;
+    if (!u || !https(u)) { say("Enter a full link that starts with https://"); $("pf-add-u").focus(); return; }
+    socials[k] = u; $("pf-add-u").value = ""; renderSocials(); say(LABEL[k] + " link added. Submit for review to save.");
+    ($("pf-add-k").disabled ? $("pf-save") : $("pf-add-u")).focus();
+  }
   var cur = null, imgs = { logo: "", banner: "" }, loaded = false;
   function $(id) { return document.getElementById(id); }
   function post(body) {
@@ -43,13 +72,8 @@
     $("pf-pick-wrap").hidden = !(d.makers && d.makers.length > 1);
     pick.innerHTML = ""; (d.makers || []).forEach(function (m) { var o = document.createElement("option"); o.value = m.slug; o.textContent = m.name; o.selected = m.slug === cur.slug; pick.appendChild(o); });
     f.name.value = p.name || cur.defaultName || ""; f.bio.value = p.bio || ""; f.website.value = p.website || "";
-    var box = $("pf-socials"); box.innerHTML = "";
-    (cur.socials || Object.keys(LABEL)).forEach(function (k) {
-      var id = "pf-s-" + k, div = document.createElement("div"); div.className = "fld";
-      div.innerHTML = '<label for="' + id + '"></label><input id="' + id + '" type="url" inputmode="url" maxlength="200" placeholder="https://">';
-      div.querySelector("label").textContent = LABEL[k] || k; div.querySelector("input").value = (p.socials || {})[k] || ""; div.querySelector("input").dataset.k = k;
-      box.appendChild(div);
-    });
+    socials = {}; Object.keys(p.socials || {}).forEach(function (k) { if (LABEL[k]) socials[k] = p.socials[k]; });
+    renderSocials();
     [["logo", "pf-logo-prev"], ["banner", "pf-banner-prev"]].forEach(function (a) { var el = $(a[1]); el.hidden = !p[a[0]]; if (p[a[0]]) el.src = p[a[0]]; });
     var st = $("pf-state");
     if (cur.pending) msg(st, "Your latest changes are waiting for review. Your page shows the last approved version until then.", "ok");
@@ -64,6 +88,8 @@
     var f = $("pf-form"); if (!f) return;
     if ($("app") && !$("app").hidden) window.duProfileLoad(); // dashboard finished loading before this script ran
     $("pf-pick").addEventListener("change", function () { load(this.value); });
+    $("pf-add-btn").addEventListener("click", addSocial);
+    $("pf-add-u").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); addSocial(); } });
     [["pf-logo", "logo", 256, 256, cur ? cur.limits.logoKB : 100, "pf-logo-prev"], ["pf-banner", "banner", 1200, 400, 300, "pf-banner-prev"]].forEach(function (a) {
       $(a[0]).addEventListener("change", function () {
         var file = this.files && this.files[0]; if (!file) return;
@@ -73,8 +99,9 @@
     });
     f.addEventListener("submit", function (e) {
       e.preventDefault();
-      var socials = {}, bad = "";
-      [].forEach.call($("pf-socials").querySelectorAll("input"), function (i) { var v = i.value.trim(); if (v && !https(v)) bad = bad || (LABEL[i.dataset.k] + " link must start with https://"); if (v) socials[i.dataset.k] = v; });
+      var bad = "";
+      if ($("pf-add-u").value.trim()) bad = "You typed a social link but didn't add it. Press Add link or clear the field.";
+      Object.keys(socials).forEach(function (k) { if (!https(socials[k])) bad = bad || (LABEL[k] + " link must start with https://"); });
       var web = f.website.value.trim();
       if (!https(web)) bad = "Website must start with https://";
       if (!f.name.value.trim()) bad = "Add a display name.";

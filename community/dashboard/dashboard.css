@@ -352,8 +352,20 @@ label.btn:focus-within, input.sr-only:focus-visible + .btn { outline: 2px solid 
 
 /* Maker page editor */
 .pf-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-.pf-soc { border: 0; padding: 0; margin: 0; }
-.pf-soc legend { font-size: 14px; font-weight: 650; margin-bottom: 8px; }
+.pf-soc { border: 1px solid var(--line); border-radius: 12px; padding: 0 12px; }
+.pf-soc > summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 650; }
+.pf-soc > summary:focus-visible { outline: 2px solid #c4b5fd; outline-offset: 2px; border-radius: 8px; }
+.pf-soc[open] { padding-bottom: 12px; }
+.pf-soc-list { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 8px; }
+.pf-soc-list li { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; background: var(--surface-2); min-width: 0; }
+.pf-soc-list b { flex: none; font-size: 13px; min-width: 76px; }
+.pf-soc-list span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13.5px; }
+.pf-soc-list .btn { flex: none; min-height: 36px; }
+.pf-add { border: 0; padding: 0; margin: 8px 0 0; }
+.pf-add legend { font-size: 13px; font-weight: 650; margin-bottom: 6px; }
+.pf-add-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; }
+.pf-add-row .fld { flex: 1 1 120px; } .pf-add-row .pf-add-url { flex: 3 1 200px; }
+.pf-add-row .btn { min-height: 44px; }
 .pf-prev { max-width: 100%; border-radius: 12px; margin-top: 8px; border: 1px solid rgba(255,255,255,.12); aspect-ratio: 3/1; object-fit: cover; }
 .pf-prev-logo { width: 88px; height: 88px; aspect-ratio: 1; }
 .hint { font-size: 12.5px; color: var(--muted); }

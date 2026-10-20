@@ -157,7 +157,19 @@
           <div class="fld"><label for="pf-name">Display name <span class="cc" data-cc-for="pf-name"></span></label><input id="pf-name" name="name" required maxlength="60" autocomplete="organization"></div>
           <div class="fld"><label for="pf-bio">Short bio <span class="cc" data-cc-for="pf-bio"></span></label><textarea id="pf-bio" name="bio" maxlength="400" rows="4" aria-describedby="pf-bio-h"></textarea><small id="pf-bio-h" class="hint">Plain text only. No HTML or email addresses.</small></div>
           <div class="fld"><label for="pf-web">Website</label><input id="pf-web" name="website" type="url" inputmode="url" maxlength="200" placeholder="https://" aria-describedby="pf-url-h"><small id="pf-url-h" class="hint">Links must start with https://</small></div>
-          <fieldset class="pf-soc"><legend>Social links <span class="cc">optional</span></legend><div id="pf-socials" class="pf-grid"></div></fieldset>
+          <details class="pf-soc" id="pf-soc">
+            <summary>Social links <span class="cc" id="pf-soc-n">none added</span></summary>
+            <ul id="pf-socials" class="pf-soc-list" aria-label="Added social links"></ul>
+            <p class="hint" id="pf-soc-empty">No social links yet.</p>
+            <fieldset class="pf-add"><legend>Add link</legend>
+              <div class="pf-add-row">
+                <div class="fld"><label for="pf-add-k">Platform</label><select id="pf-add-k"></select></div>
+                <div class="fld pf-add-url"><label for="pf-add-u">URL</label><input id="pf-add-u" type="url" inputmode="url" maxlength="200" placeholder="https://" aria-describedby="pf-add-msg"></div>
+                <button type="button" class="btn btn-sm" id="pf-add-btn">+ Add link</button>
+              </div>
+              <p class="hint" id="pf-add-msg" role="status" aria-live="polite"></p>
+            </fieldset>
+          </details>
           <div class="pf-grid">
             <div class="fld"><label for="pf-logo">Logo <span class="cc">square, JPEG/PNG/WebP</span></label><input id="pf-logo" type="file" accept="image/jpeg,image/png,image/webp"><img id="pf-logo-prev" class="pf-prev pf-prev-logo" alt="Current logo" hidden></div>
             <div class="fld"><label for="pf-banner">Banner <span class="cc">wide, JPEG/PNG/WebP</span></label><input id="pf-banner" type="file" accept="image/jpeg,image/png,image/webp"><img id="pf-banner-prev" class="pf-prev" alt="Current banner" hidden></div>
@@ -281,6 +293,6 @@
 </div>
 
 <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
-<script src="/community/dashboard/profile.js?v=2" defer></script>
+<script src="/community/dashboard/profile.js?v=3" defer></script>
 </body>
 </html>

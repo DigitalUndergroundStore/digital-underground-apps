@@ -1,2 +1,4 @@
 /p/bored-blocks/ /store/ 301
 /p/bored-blocks /store/ 301
+/games/block-busters https://kerzylabs-block-busters.pages.dev/ 301
+/games/block-busters/* https://kerzylabs-block-busters.pages.dev/:splat 301

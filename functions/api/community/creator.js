@@ -11,7 +11,7 @@ import {
   parseImageField,
   repairVideoHold,
   sanitizeText,
-  saveListing, normalizeStage } from "../../_lib/community.js";
+  saveListing, normalizeStage, normalizeStatusLabel } from "../../_lib/community.js";
 import { screenListing } from "../../_lib/community-screening.js";
 import {
   accountView,
@@ -274,6 +274,7 @@ export async function onRequest(context) {
     }
     row.name = name;
     row.stage = stage;
+    if (f.statusLabel !== undefined) { const sl = normalizeStatusLabel(f.statusLabel); if (sl) row.statusLabel = sl; else delete row.statusLabel; }
     row.pitchShort = pitchShort;
     row.descriptionLong = descriptionLong;
     row.projectUrl = projectUrl;

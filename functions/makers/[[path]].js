@@ -30,13 +30,15 @@ export function cardHTML(r, i) {
   const href = "/community/p/?id=" + encodeURIComponent(r.id), n = e(r.name), rid = e(r.id);
   const st = r.stage && r.stage !== "Released" ? r.stage : "";
   const badge = st ? `<span class="badge stage">${e(st)}</span>` : r.curated ? '<span class="badge" title="Curated by Digital Underground">★ Featured pick</span>' : "";
+  const lbl = r.statusLabel ? `<span class="badge label">${e(String(r.statusLabel).slice(0, 24))}</span>` : "";
+  const badges = lbl ? `<span class="badges">${badge}${lbl}</span>` : badge;
   const img = r.imageUrl;
   const med = img ? `<div class="media"><img src="${safeHref(img)}" alt="${n} cover image" width="640" height="360" loading="${i < 2 ? "eager" : "lazy"}" decoding="async"></div>`
     : `<div class="media grad" style="background:linear-gradient(135deg,#7c3aed,#4f46e5)"><span aria-hidden="true">${e((r.name || "?").slice(0, 2))}</span></div>`;
   const maker = r.makerSlug ? `<a href="/makers/${e(r.makerSlug)}/">${e(r.makerName)}</a>` : e(r.makerName);
   const x = r.xHandle ? ` · <a href="https://x.com/${e(r.xHandle)}" target="_blank" rel="noopener" aria-label="@${e(r.xHandle)} on X (opens in a new tab)">@${e(r.xHandle)}</a>` : "";
   const contact = r.contactable ? `<a class="pill pill-o" href="${href}#contact" aria-label="Contact the developer of ${n}">Contact</a>` : "";
-  return `<li class="card" data-id="${rid}" data-globe-ignore><article class="card-inner" aria-labelledby="t-${rid}">${med}<div class="body"><div class="top"><div class="tt"><h3 id="t-${rid}"><a href="${href}">${n}</a></h3><p class="maker">${maker}${x}</p></div>${badge}</div>` +
+  return `<li class="card" data-id="${rid}" data-globe-ignore><article class="card-inner" aria-labelledby="t-${rid}">${med}<div class="body"><div class="top"><div class="tt"><h3 id="t-${rid}"><a href="${href}">${n}</a></h3><p class="maker">${maker}${x}</p></div>${badges}</div>` +
     `<p class="desc">${e(r.pitchShort)}</p><div class="foot-row"><span class="price">${e(r.priceLabel || "See site")}</span><div class="acts">${contact}` +
     `<a class="pill pill-v" data-out="${rid}" href="${safeHref(r.visitUrl || r.projectUrl)}" target="_blank" rel="noopener" aria-label="Visit ${n} (opens in a new tab)">Visit</a></div></div></div></article></li>`;
 }
@@ -63,7 +65,7 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 <meta name="twitter:image" content="${e(image)}">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="/community/wolf.css?v=5">
+<link rel="stylesheet" href="/community/wolf.css?v=6">
 <link rel="stylesheet" href="/makers/makers.css?v=2">
 <link rel="preload" as="image" href="/assets/globe/fallback-mobile.webp?v=2" media="(max-width: 799px)">
 <link rel="preload" as="image" href="/assets/globe/fallback.webp?v=2" media="(min-width: 800px)">

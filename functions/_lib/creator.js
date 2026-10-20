@@ -199,6 +199,7 @@ export function creatorListing(row) {
     tags: Array.isArray(row.tags) ? row.tags : [],
     category: row.category,
     stage: row.stage || "Released",
+    statusLabel: row.statusLabel || "",
     priceLabel: row.priceLabel,
     reasons: row.status === "approved" ? [] : row.screening?.reasons || [],
     createdAt: row.createdAt,

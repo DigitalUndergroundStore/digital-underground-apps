@@ -35,6 +35,7 @@ export function submissionTextBundle(listing) {
     listing.projectUrl,
     listing.makerName,
     listing.priceLabel,
+    listing.statusLabel,
     listing.xHandle,
     listing.videoUrl,
     listing.pendingVideo && listing.pendingVideo.url,

@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="dashboard.css?v=22">
 <script src="/community/pw.js" defer></script>
 <script src="/community/upload.js?v=3" defer></script>
-<script src="dashboard.js?v=22" defer></script>
+<script src="dashboard.js?v=23" defer></script>
 <script src="/community/nav.js?v=1" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
@@ -247,6 +247,7 @@
       <div class="fld"><label for="ed-name">Title <span class="cc" data-cc-for="ed-name"></span></label><input id="ed-name" name="name" required maxlength="120"></div>
       <div class="fld"><label for="ed-url">Link</label><input id="ed-url" name="projectUrl" type="url" required inputmode="url" placeholder="https://"></div>
       <div class="fld"><label for="ed-stage">Stage</label><div class="select"><select id="ed-stage" name="stage" required><option value="Concept">Concept</option><option value="In development">In development</option><option value="Beta / testing">Beta / testing</option><option value="Released">Released</option><option value="Discontinued">Discontinued</option></select></div></div>
+      <div class="fld"><label for="ed-label">Status label <span class="cc" data-cc-for="ed-label"></span></label><input id="ed-label" name="statusLabel" maxlength="24" placeholder="e.g. Needs testers, Beta, v1.5" aria-describedby="ed-label-h"><small id="ed-label-h" class="hint">Optional. Shown as a small badge on your card. Up to 24 characters; reviewed like the rest of your listing.</small></div>
     </fieldset>
     <fieldset class="fgroup"><legend>Description</legend>
       <div class="fld"><label for="ed-short">Short description <span class="cc" data-cc-for="ed-short"></span></label><textarea id="ed-short" name="pitchShort" required maxlength="280" rows="3"></textarea></div>

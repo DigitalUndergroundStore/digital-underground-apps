@@ -83,6 +83,13 @@ export function normalizeXHandle(raw) {
   return s;
 }
 
+/** Optional creator status label ("Needs testers", "Beta", "v1.5"): plain text, max 24 chars. */
+export const MAX_STATUS_LABEL = 24;
+export function normalizeStatusLabel(raw) {
+  if (raw == null) return "";
+  return String(raw).replace(/[\u0000-\u001f\u007f\u202a-\u202e\u2066-\u2069]/g, "").replace(/[<>]/g, "").replace(/\s+/g, " ").trim().slice(0, MAX_STATUS_LABEL).trim();
+}
+
 export function sanitizeText(raw, maxLen) {
   if (raw == null) return "";
   const s = String(raw).replace(/\0/g, "").trim();
@@ -216,6 +223,7 @@ export function validateSubmission(body) {
   const xHandle = normalizeXHandle(body.xHandle ?? body.twitter);
   const tags = normalizeTags(body.tags);
   const stage = normalizeStage(body.stage);
+  const statusLabel = normalizeStatusLabel(body.statusLabel);
   const terms = body.terms === true || body.terms === "true" || body.termsAccepted === true;
 
   if (!name) return { error: "Project name is required.", status: 400 };
@@ -249,6 +257,7 @@ export function validateSubmission(body) {
     xHandle,
     category,
     stage,
+    statusLabel: statusLabel || undefined,
     priceLabel,
     pitchShort,
     descriptionLong,
@@ -297,6 +306,7 @@ export function publicListing(row) {
     tags: Array.isArray(row.tags) ? row.tags : [],
     video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
     stage: displayStage(row),
+    statusLabel: normalizeStatusLabel(row.statusLabel) || null,
     curated: !!row.curated,
     // Owner-set only (makers cannot edit it): the maker's own site, https only.
     makerUrl: typeof row.makerUrl === "string" && /^https:\/\//i.test(row.makerUrl) ? row.makerUrl : null,

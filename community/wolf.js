@@ -36,6 +36,7 @@
     var href = "/community/p/?id=" + encodeURIComponent(row.id), name = esc(row.name);
     var stage = row.stage && row.stage !== "Released" ? row.stage : "";
     var badge = stage ? '<span class="badge stage">' + esc(stage) + "</span>" : row.curated ? '<span class="badge" title="Curated by Digital Underground">★ Featured pick</span>' : "";
+    if (row.statusLabel) badge = '<span class="badges">' + badge + '<span class="badge label">' + esc(String(row.statusLabel).slice(0, 24)) + "</span></span>";
     var x = row.xHandle ? ' · <a href="https://x.com/' + esc(row.xHandle) + '" target="_blank" rel="noopener" aria-label="@' + esc(row.xHandle) + ' on X (opens in a new tab)">@' + esc(row.xHandle) + "</a>" : "";
     return '<article class="card-inner" aria-labelledby="t-' + esc(row.id) + '">' + media(row) +
       '<div class="body"><div class="top"><div class="tt"><h3 id="t-' + esc(row.id) + '"><a href="' + href + '">' + name + '</a></h3><p class="maker">' + makerHTML(row) + x + "</p></div>" + badge + "</div>" +

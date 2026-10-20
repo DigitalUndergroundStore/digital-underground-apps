@@ -50,6 +50,7 @@ for i, r in enumerate(rows):
     href = "/community/p/?id=" + quote(r["id"]); n = e(r["name"]); rid = e(r["id"])
     st = r.get("stage") if r.get("stage") and r.get("stage") != "Released" else ""
     badge = f'<span class="badge stage">{e(st)}</span>' if st else ('<span class="badge" title="Curated by Digital Underground">★ Featured pick</span>' if r.get("curated") else "")
+    if r.get("statusLabel"): badge = f'<span class="badges">{badge}<span class="badge label">{e(str(r["statusLabel"])[:24])}</span></span>'
     img = r.get("imageUrl")
     load = 'eager" fetchpriority="high' if i == 0 else "lazy"
     med = (f'<div class="media"><img src="{e(img)}" alt="{n} cover image" width="640" height="360" loading="{load}" decoding="async"></div>' if img

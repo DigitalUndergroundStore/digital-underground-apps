@@ -101,6 +101,7 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
         <option value="discontinued">Discontinued</option>
       </select>
     </label>
+    <label>Status label <small>(optional, up to 24 characters, e.g. Needs testers, Beta, v1.5)</small><input name="statusLabel" maxlength="24" placeholder="Needs testers"></label>
     <label>Price label<input name="priceLabel" maxlength="40" placeholder="Free, $9, CA$24, etc."></label>
     <label>Short pitch (max 280)<textarea name="pitchShort" required maxlength="280" rows="3"></textarea></label>
     <label>Longer description<textarea name="descriptionLong" required maxlength="4000" rows="6"></textarea></label>
@@ -228,6 +229,7 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
       xHandle: fd.get("xHandle"),
       category: fd.get("category"),
       stage: fd.get("stage"),
+      statusLabel: fd.get("statusLabel"),
       priceLabel: fd.get("priceLabel"),
       pitchShort: fd.get("pitchShort"),
       descriptionLong: fd.get("descriptionLong"),

@@ -24,7 +24,7 @@ for r in rows:
     if r["id"] == "cm_kerzy_neonbastion": r["stage"] = "In development / testing"
     r.setdefault("curated", False)
 rows = [r for r in rows if r.get("status", "approved") in ("approved", "live", "published")]
-rows.sort(key=lambda r: (pinned.index(r["id"]) if r["id"] in pinned else 1e9, bool(r.get("curated")), (r.get("name") or "").lower()))
+rows.sort(key=lambda r: ((r.get("makerName") or "").lower() != "wolfitway", pinned.index(r["id"]) if r["id"] in pinned else 1e9, bool(r.get("curated")), (r.get("name") or "").lower()))
 out = []
 for i, r in enumerate(rows):
     href = "/community/p/?id=" + quote(r["id"]); n = e(r["name"]); rid = e(r["id"])

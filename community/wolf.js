@@ -108,6 +108,8 @@
     (Array.isArray(parts[0]) ? parts[0] : []).concat(parts[1] && Array.isArray(parts[1].listings) ? parts[1].listings : []).forEach(function (row) { if (row && row.id) byId[row.id] = row; });
     all = Object.keys(byId).map(function (k) { return normalize(byId[k]); });
     all.sort(function (a, b) {
+      var wa = /^wolfitway$/i.test(a.makerName || ""), wb = /^wolfitway$/i.test(b.makerName || "");
+      if (wa !== wb) return wa ? -1 : 1; // Wolfitway (Wolf) listings lead the default order
       var pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
       if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);
       if (!!a.curated !== !!b.curated) return a.curated ? 1 : -1;

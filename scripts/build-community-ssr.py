@@ -73,7 +73,7 @@ s = re.sub(r'(<p class="count"[^>]*>).*?(</p>)', lambda m: m.group(1) + f"<!--ss
 p.write_text(s); print(len(out), "cards rendered")
 
 # Homepage = Developer Marketplace (same SSR), canonical "/". /community/ 301s to / via _redirects.
-h = s.replace('href="https://digitalundergroundstore.com/community/"', 'href="https://digitalundergroundstore.com/"')
-h = h.replace('content="https://digitalundergroundstore.com/community/"', 'content="https://digitalundergroundstore.com/"')
-h = h.replace('<a href="/community/" aria-current="page">', '<a href="/" aria-current="page">')
+h = s.replace('href="https://digitalundergroundstore.com/"', 'href="https://digitalundergroundstore.com/"')
+h = h.replace('content="https://digitalundergroundstore.com/"', 'content="https://digitalundergroundstore.com/"')
+h = h.replace('<a href="/" aria-current="page">', '<a href="/" aria-current="page">')
 (R / "index.html").write_text(h); print("index.html (home) written")

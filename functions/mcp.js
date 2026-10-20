@@ -86,7 +86,7 @@ async function callTool(origin, name, a = {}) {
     }
     const limit = Math.min(Math.max(parseInt(a.limit) || 20, 1), 50);
     const listings = rows.slice(0, limit).map((r) => ({ id: r.id, name: r.name, maker: r.makerName, category: r.category, price: r.priceLabel, pitch: r.pitchShort, tags: r.tags, stage: r.stage || undefined, url: r.visitUrl || r.projectUrl, imageUrl: r.imageUrl }));
-    return text({ total: rows.length, returned: listings.length, listings, browse: origin + "/community/" });
+    return text({ total: rows.length, returned: listings.length, listings, browse: origin + "/" });
   }
   if (name === "get_listing") {
     const id = String(a.id || "");

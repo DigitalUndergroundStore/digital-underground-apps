@@ -79,7 +79,6 @@ Allow: /$
 Allow: /store/
 Allow: /p/
 Allow: /get/
-Allow: /community/$
 Allow: /community/p/
 Allow: /makers/
 Allow: /blog/

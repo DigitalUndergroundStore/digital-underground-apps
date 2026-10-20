@@ -23,18 +23,18 @@
     <a class="brand" href="/store/"><span class="du-logo"><img class="du-logo-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="200" height="36"><img class="du-logo-icon" src="/assets/logo/du-mark-anim-icon.svg" alt="Digital Underground" width="36" height="36"></span></a>
     <nav aria-label="Site">
       <a href="/store/">Store</a>
-      <a href="/community/">Developer Marketplace</a>
+      <a href="/">Developer Marketplace</a>
       <a href="/community/dashboard/" class="login-btn">Creator dashboard</a>
       <span class="cta-wrap"><a class="cta" href="/community/submit/">List your project</a></span>
     </nav>
   </div>
-  <nav class="crumb" aria-label="Breadcrumb"><a href="/community/">Developer Marketplace</a><span aria-hidden="true">›</span><span id="crumb-name">Listing</span></nav>
+  <nav class="crumb" aria-label="Breadcrumb"><a href="/">Developer Marketplace</a><span aria-hidden="true">›</span><span id="crumb-name">Listing</span></nav>
   <main id="out" aria-busy="true">
     <div class="dt-head"><div class="skel" style="width:72px;height:72px;flex:none"></div><div style="flex:1"><div class="skel" style="height:26px;width:70%"></div><div class="skel" style="height:15px;width:40%;margin-top:10px"></div></div></div>
     <div class="skel" style="height:48px;margin-top:18px"></div>
     <div class="skel" style="aspect-ratio:16/9;margin-top:20px;border-radius:18px"></div>
   </main>
-  <footer class="foot"><p><a href="/community/">← Developer Marketplace</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p></footer>
+  <footer class="foot"><p><a href="/">← Developer Marketplace</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p></footer>
 </div>
 <div class="sticky-cta" id="sticky" aria-hidden="true"></div>
 <script>
@@ -61,7 +61,7 @@
   }
   fetch("/api/community/listing?id=" + encodeURIComponent(id)).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (d) {
     out.removeAttribute("aria-busy");
-    if (!d || !d.listing) { out.innerHTML = '<div class="notfound"><h1>This listing isn\'t available</h1><p>It may have been unpublished or is still in review.</p><a class="btn2 primary" style="flex:none" href="/community/">Browse the marketplace</a></div>'; return; }
+    if (!d || !d.listing) { out.innerHTML = '<div class="notfound"><h1>This listing isn\'t available</h1><p>It may have been unpublished or is still in review.</p><a class="btn2 primary" style="flex:none" href="/">Browse the marketplace</a></div>'; return; }
     var l = d.listing, href = esc(l.visitUrl || l.projectUrl), price = esc(l.priceLabel || "See site");
     document.title = l.name + " — Developer Marketplace — Digital Underground";
     document.getElementById("crumb-name").textContent = l.name;

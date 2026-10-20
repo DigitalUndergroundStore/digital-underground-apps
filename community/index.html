@@ -181,7 +181,7 @@
   }
   function go() {
     if (!capable()) { root.classList.add("is-lite"); return; }
-    var s = document.createElement("script"); s.type = "module"; s.src = "/assets/globe/globe.js?v=6"; document.head.appendChild(s);
+    var s = document.createElement("script"); s.type = "module"; s.src = "/assets/globe/globe.js?v=7"; document.head.appendChild(s);
   }
   function idle() { (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(go, { timeout: 4000 }); }
   if (document.readyState === "complete") idle(); else addEventListener("load", idle, { once: true });

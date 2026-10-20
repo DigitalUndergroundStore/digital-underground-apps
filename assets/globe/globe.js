@@ -28,6 +28,7 @@ function start() {
   try {
     renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
   } catch (_) { root.classList.add("is-fallback"); return; }
+  canvas.addEventListener("webglcontextlost", (e) => { e.preventDefault(); root.classList.remove("is-ready"); root.classList.add("is-fallback"); }, false);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2));
   renderer.autoClear = false;
   renderer.outputColorSpace = THREE.SRGBColorSpace;

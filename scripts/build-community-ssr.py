@@ -6,6 +6,7 @@ import json, re, html, pathlib, sys, urllib.request
 from urllib.parse import quote
 R = pathlib.Path(__file__).resolve().parent.parent
 rows = json.load(open(R / "community/listings.json"))
+STATIC_IDS = {r["id"] for r in rows}  # hand-seeded listings live in the static file
 # Merge approved live listings (public GET) the same way the page does: static first, API overrides by id.
 # Usage: build-community-ssr.py [--api FILE|URL]; default https://digitalundergroundstore.com/api/community/listings
 src = sys.argv[sys.argv.index("--api") + 1] if "--api" in sys.argv else "https://digitalundergroundstore.com/api/community/listings"
@@ -45,6 +46,10 @@ def arrange(lst):
         else: out.append(wolf[w]); w += 1
     return out
 rows = arrange(rows)
+# Real maker submissions (came in through the submit flow / API) go above everything we seeded ourselves.
+# Seeded = in the static community/listings.json, or a cm_kerzy_ / cm_pick_ id, or listed under the Digital Underground maker name.
+def seeded(r): return r["id"] in STATIC_IDS or r["id"].startswith(("cm_kerzy_", "cm_pick_")) or (r.get("makerName") or "").strip().lower() == "digital underground"
+rows = [r for r in rows if not seeded(r)] + [r for r in rows if seeded(r)]  # stable: keeps arrange() order inside each group
 out = []
 for i, r in enumerate(rows):
     href = "/community/p/?id=" + quote(r["id"]); n = e(r["name"]); rid = e(r["id"])

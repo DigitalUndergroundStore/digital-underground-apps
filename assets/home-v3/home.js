@@ -297,6 +297,10 @@
         return (a.name || '').toLowerCase().localeCompare((b.name || '').toLowerCase());
       });
       all = arrange(all);
+      // Real submissions above seeded listings (mirrors build-community-ssr.py)
+      const staticIds = new Set((Array.isArray(stat) ? stat : []).map(r => r && r.id));
+      const seeded = r => staticIds.has(r.id) || /^cm_(kerzy|pick)_/.test(r.id) || /^digital underground$/i.test((r.makerName || '').trim());
+      all = all.filter(r => !seeded(r)).concat(all.filter(seeded));
       const sig = rs => JSON.stringify(rs.map(r => [r.id, r.name, r.priceLabel, r.stage, r.statusLabel, r.curated, r.imageUrl, r.pitchShort]));
       if (sig(all) === sig(seed)) return;
       const untouched = !state.q && !state.cats.size && !state.makers.size && !state.labels.size && state.free && state.sort === 'featured' && state.lo === 0 && state.hi === PMAX;

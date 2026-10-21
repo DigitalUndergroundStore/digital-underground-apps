@@ -443,6 +443,24 @@
     return PW.metaTags(recipe).map(PW.tagLabel).join(" · ");
   }
 
+  /* Cards show at most two tag chips; diet tags first, then effort/cost. */
+  const CHIP_PRIORITY = ["vegan", "vegetarian", "gluten-free", "dairy-free", "high-protein", "quick", "budget", "easy"];
+  function cardChipsHtml(recipe) {
+    const tags = PW.metaTags(recipe);
+    const picked = CHIP_PRIORITY.filter((t) => tags.indexOf(t) !== -1).slice(0, 2);
+    if (picked.length < 2) tags.forEach((t) => { if (picked.length < 2 && picked.indexOf(t) === -1) picked.push(t); });
+    if (!picked.length) return "";
+    return `<p class="chip-row">${picked.map((t) => `<span class="tag-chip">${esc(PW.tagLabel(t))}</span>`).join("")}</p>`;
+  }
+
+  /* Photo if we have one, otherwise the designed cuisine card (never an empty box). */
+  function photoBox(recipe, cls, variant) {
+    const url = photoUrl(recipe);
+    if (url) return `<div class="${cls}" style="background-image:url('${url.replace(/'/g, "%27")}')" role="img" aria-label=""></div>`;
+    if (window.PW_NOPHOTO) return window.PW_NOPHOTO.html(recipe, cls, variant || "card");
+    return `<div class="${cls} ${cls}--empty" role="img" aria-label=""></div>`;
+  }
+
   function tabIcon(id) {
     if (window.PW_ICONS && typeof window.PW_ICONS.tab === "function") {
       return window.PW_ICONS.tab(id);
@@ -489,7 +507,7 @@
       if (!ui.import) ui.import = { step: "home", drafts: [], error: "", csvText: "", csvMap: {}, linkUrl: "", pasteText: "" };
       return;
     }
-    if (["plan", "recipes", "shop", "pantry", "more"].indexOf(raw) !== -1) {
+    if (["plan", "recipes", "shop", "pantry", "more", "credits"].indexOf(raw) !== -1) {
       ui.view = raw;
       ui.detailId = null;
       if (raw !== "import") ui.import = null;
@@ -570,6 +588,7 @@
     else if (ui.view === "pantry") main.innerHTML = warningHtml() + pantryHtml();
     else if (ui.view === "more") main.innerHTML = warningHtml() + moreHtml();
     else if (ui.view === "import") main.innerHTML = warningHtml() + importHtml();
+    else if (ui.view === "credits") main.innerHTML = creditsHtml();
     else main.innerHTML = warningHtml() + planHtml();
     if (ui.picker) renderPicker();
     else $("picker").hidden = true;
@@ -919,7 +938,7 @@
     return `<div class="slot slot--meal slot--${esc(slot)}${value.leftover ? " leftover-on" : ""}">
       <p class="slot-label"><span class="slot-label__accent" aria-hidden="true"></span>${slotIcon}<span class="slot-label__text">${kicker}</span>${leftoverBadge}</p>
       <button type="button" class="meal-card meal-card--plan plain" ${openAttrs}>
-        <span class="meal-card__hero${thumb ? "" : " meal-card__hero--empty"}"${heroStyle} role="img" aria-label=""></span>
+        ${thumb || !recipe || !window.PW_NOPHOTO ? `<span class="meal-card__hero${thumb ? "" : " meal-card__hero--empty"}"${heroStyle} role="img" aria-label=""></span>` : window.PW_NOPHOTO.html(recipe, "meal-card__hero", "thumb")}
         <span class="meal-card__body">
           <span class="meal-card__name">${esc(name)}</span>
           ${mealMetaHtml(value, recipe)}
@@ -972,9 +991,10 @@
         <span class="find-link__go" aria-hidden="true">↗</span>
       </a>`;
     }).join("");
-    return `<section class="find-more" aria-labelledby="findMoreTitle">
-      <h3 id="findMoreTitle">Find more recipes</h3>
-      <p class="meta">Search the Wikimedia Cookbook, or open a recipe site and paste one link. Your saved recipes stay on this device.</p>
+    const fmOpen = !!(fm.query || fm.linkUrl || results || fm.status);
+    return `<details class="find-more"${fmOpen ? " open" : ""}>
+      <summary class="find-more__summary"><span id="findMoreTitle">Find more recipes</span><span class="find-more__hint">Wikibooks Cookbook or a recipe link</span></summary>
+      <p class="meta">Search the Wikibooks Cookbook, or open a recipe site and paste one link. Your saved recipes stay on this device.</p>
       <form id="findMoreForm" class="search-row" role="search">
         <div style="flex:1">
           <label class="field" for="findMoreQuery">Dish</label>
@@ -990,7 +1010,7 @@
         <input id="findLink" type="url" inputmode="url" placeholder="https://…" value="${esc(fm.linkUrl || "")}" />
         <button type="submit">Fetch recipe</button>
       </form>
-    </section>`;
+    </details>`;
   }
 
   function recipesHtml() {
@@ -1020,16 +1040,15 @@
     }
     return list.map((recipe) => {
       const badges = recipeBadges(recipe);
-      const photo = photoUrl(recipe);
       return `<article class="recipe-card">
-        <div class="card-photo${photo ? "" : " card-photo--empty"}"${photo ? ` style="background-image:url('${photo.replace(/'/g, "%27")}')"` : ""} role="img" aria-label=""></div>
+        ${photoBox(recipe, "card-photo", "card")}
         <div class="card-bar ${barClass(recipe)}"></div>
         <div class="card-body">
           <div class="card-top">
             <button type="button" class="plain card-title" data-action="open-recipe" data-id="${esc(recipe.id)}">${esc(recipe.name)}</button>
           </div>
           <p class="meta">${esc(timeLabel(recipe))} · ${recipe.servings} servings</p>
-          ${badges ? `<p class="diet">${esc(badges)}</p>` : ""}
+          ${cardChipsHtml(recipe)}
           <p class="preview">${esc(preview(recipe))}</p>
           <div class="card-actions">
             <button type="button" class="primary" data-action="tonight" data-id="${esc(recipe.id)}">Tonight</button>
@@ -1070,7 +1089,7 @@
         <p class="detail-top__title">${esc(recipe.name)}</p>
         <button type="button" class="text-btn" data-action="edit" data-id="${esc(recipe.id)}">Edit</button>
       </div>
-      <div class="detail-hero${hero ? "" : " detail-hero--empty"}"${hero ? ` style="background-image:url('${hero.replace(/'/g, "%27")}')"` : ""} role="img" aria-label=""></div>
+      ${photoBox(recipe, "detail-hero", "hero")}
       <h2>${esc(recipe.name)}</h2>
       <p class="meta">${esc(timeLabel(recipe))} · ${recipe.servings} servings${diet ? " · " + esc(diet) : ""}</p>
       ${sourceCreditHtml(recipe)}
@@ -1295,7 +1314,7 @@
       <article class="recipe-card recipe-card--smart">
         ${smartChefNewIdeaBtn("smart-chef__new-idea--corner")}
         <button type="button" class="plain smart-chef__open" data-action="open-smart-chef-detail">
-          <div class="card-photo${hero ? "" : " card-photo--empty"}"${hero ? ` style="background-image:url('${hero.replace(/'/g, "%27")}')"` : ""} role="img" aria-label=""></div>
+          ${photoBox(recipe, "card-photo", "card")}
           <div class="card-bar ${barClass(recipe)}"></div>
           <div class="card-body">
             <p class="smart-chef__kicker">${esc([r.templateLabel, r.profileLabel].filter(Boolean).join(" · "))}</p>
@@ -1496,7 +1515,7 @@
           </label>
           ${dupNote}
           ${sourceCreditHtml(recipe)}
-          <div class="import-preview-thumb" style="background-image:url('${photo.replace(/'/g, "%27")}')"></div>
+          ${photo ? `<div class="import-preview-thumb" style="background-image:url('${photo.replace(/'/g, "%27")}')"></div>` : (window.PW_NOPHOTO ? window.PW_NOPHOTO.html(recipe, "import-preview-thumb", "card") : "")}
           <button type="button" data-action="import-edit" data-index="${index}">Edit before import</button>
         </article>`;
       }).join("");
@@ -1612,8 +1631,72 @@
           <button type="button" data-action="theme-set" data-theme="dark" aria-pressed="${currentTheme() === "dark"}">Dark</button>
         </div>
         <p class="meta du-app-version" data-du-version="${esc(ver)}">Pantry Week v${esc(ver)}</p>
+        <button type="button" class="settings-link" data-action="open-credits">Photo and recipe credits</button>
         <button type="button" class="settings-link" data-action="clear-buyer-code">Remove the buyer code from this device</button>
       </section>
+    </section>`;
+  }
+
+  /* Credits screen: built from photos/CREDITS.json (author, licence, source per photo). */
+  const LICENSE_URLS = {
+    "CC BY 2.0": "https://creativecommons.org/licenses/by/2.0/",
+    "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+    "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
+    "CC BY-SA 2.0": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "CC BY-SA 2.5": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "CC0": "https://creativecommons.org/publicdomain/zero/1.0/"
+  };
+  function loadCredits() {
+    if (ui.credits || ui.creditsLoading) return;
+    ui.creditsLoading = true;
+    const base = (typeof window.PW_PHOTO_BASE === "string" && window.PW_PHOTO_BASE) ? window.PW_PHOTO_BASE.replace(/\/?$/, "/") : "";
+    fetch(base + "photos/CREDITS.json", { cache: "no-cache" })
+      .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then((data) => { ui.credits = data; })
+      .catch(() => { ui.credits = { error: true }; })
+      .then(() => { ui.creditsLoading = false; if (ui.view === "credits") render(); });
+  }
+  function creditsHtml() {
+    const head = `<div class="detail-top detail-top--chrome">
+        ${iconBtn("nav-back", "Back", ICON_BACK)}
+        <p class="detail-top__title">Credits</p><span></span>
+      </div>
+      <h2>Photo and recipe credits</h2>`;
+    const recipesNote = `<section class="credits-block">
+        <h3>Recipes</h3>
+        <p class="meta">Many recipes are adapted from the <a href="https://en.wikibooks.org/wiki/Cookbook:Table_of_Contents" target="_blank" rel="noopener noreferrer">Wikibooks Cookbook</a> under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, and some come from US federal works (public domain). Each recipe page links its source. The rest are Pantry Week originals.</p>
+      </section>`;
+    if (!ui.credits) {
+      loadCredits();
+      return `<section class="credits">${head}${recipesNote}<p class="empty">Loading photo credits…</p></section>`;
+    }
+    if (ui.credits.error) {
+      return `<section class="credits">${head}${recipesNote}<p class="empty">Photo credits need a connection the first time. Try again when you are online.</p></section>`;
+    }
+    const photos = ui.credits.photos || {};
+    const ids = Object.keys(photos).filter((id) => window.PW_PHOTOS && window.PW_PHOTOS.byId[id]);
+    const nameOf = (id) => { const r = PW.recipeById(state, id); return r ? r.name : id; };
+    ids.sort((a, b) => nameOf(a).localeCompare(nameOf(b)));
+    const ai = ids.filter((id) => photos[id].ai);
+    const real = ids.filter((id) => !photos[id].ai);
+    const row = (id) => {
+      const c = photos[id];
+      const lic = c.license || "";
+      const licUrl = c.license_url || LICENSE_URLS[lic] || "";
+      const licHtml = licUrl ? `<a href="${esc(licUrl)}" target="_blank" rel="noopener noreferrer">${esc(lic)}</a>` : esc(lic);
+      const src = c.file ? `<a href="${esc(c.file)}" target="_blank" rel="noopener noreferrer">source</a>` : "";
+      const by = c.ai ? "AI-generated illustrative photo" : `${esc(c.author || "Unknown author")}${c.title ? " · " + esc(c.title) : ""}`;
+      return `<li class="credit-row"><strong>${esc(nameOf(id))}</strong><span class="meta">${by}${lic && !c.ai ? " · " + licHtml : ""}${src ? " · " + src : ""}</span></li>`;
+    };
+    const bd = ui.credits.backdrop;
+    const bdHtml = bd ? `<li class="credit-row"><strong>App background</strong><span class="meta">${esc(bd.author || "")} · ${esc(bd.license || "")}${bd.file ? ` · <a href="${esc(bd.file)}" target="_blank" rel="noopener noreferrer">source</a>` : ""}</span></li>` : "";
+    return `<section class="credits">${head}
+      <p class="lead">${real.length} photos are by photographers who share their work under open licences. Thank you. Photos were resized and cropped. Recipes without a photo use a designed card.</p>
+      ${recipesNote}
+      <section class="credits-block"><h3>Photos</h3><ul class="credit-list">${bdHtml}${real.map(row).join("")}</ul></section>
+      ${ai.length ? `<section class="credits-block"><h3>Illustrative photos</h3><p class="meta">These are AI-generated to show what the dish looks like. Yours may look different.</p><ul class="credit-list">${ai.map(row).join("")}</ul></section>` : ""}
     </section>`;
   }
 
@@ -2413,6 +2496,7 @@
     const slot = btn.getAttribute("data-slot");
     const id = btn.getAttribute("data-id");
     if (action === "nav") go(btn.getAttribute("data-view"));
+    else if (action === "open-credits") go("credits");
     else if (action === "nav-back") navBack();
     else if (action === "open-plan-recipe") {
       const value = state.week[day][slot];

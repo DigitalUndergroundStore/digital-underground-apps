@@ -1,4 +1,4 @@
-/* Find more recipes: Wikimedia Cookbook search (titles and links only) plus browser deep links. */
+/* Find more recipes: Wikibooks Cookbook search (titles and links only) plus browser deep links. */
 "use strict";
 
 (function () {

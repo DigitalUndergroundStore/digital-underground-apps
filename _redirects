@@ -9,4 +9,6 @@
 /games/quad-pong https://kerzylabs.pages.dev/play/quad-pong/ 301
 /games/quad-pong/* https://kerzylabs.pages.dev/play/quad-pong/:splat 301
 /cyberarena https://kerzylabs.pages.dev/play/cyberarena/ 301
-/cyberarena/* https://kerzylabs.pages.dev/play/cyberarena/:splat 301
+/cyberarena/* https://kerzylabs.pages.dev/play/cyberarena/ 301
+/free-browser-fps-game https://kerzylabs.pages.dev/play/cyberarena/ 301
+/free-browser-fps-game/* https://kerzylabs.pages.dev/play/cyberarena/ 301

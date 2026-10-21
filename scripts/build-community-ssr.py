@@ -24,7 +24,8 @@ for r in rows:
     if r["id"].startswith("cm_kerzy_") or "kerzy" in (r.get("makerName") or "").lower(): r["makerName"] = "Kerzy Labs"; r["curated"] = False
     if r["id"] == "cm_kerzy_neonbastion": r["stage"] = "In development / testing"
     r.setdefault("curated", False)
-rows = [r for r in rows if r.get("status", "approved") in ("approved", "live", "published")]
+HIDDEN = {"cm_kerzy_easytracker"}  # pulled from the marketplace for now (data kept)
+rows = [r for r in rows if r.get("status", "approved") in ("approved", "live", "published") and not r.get("hidden") and r["id"] not in HIDDEN]
 rows.sort(key=lambda r: (pinned.index(r["id"]) if r["id"] in pinned else 1e9, bool(r.get("curated")), (r.get("name") or "").lower()))
 def arrange(lst):
     # mirrors arrange() in community/wolf.js

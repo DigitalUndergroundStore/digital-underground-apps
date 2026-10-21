@@ -24,9 +24,9 @@ PRODUCTS = [
     {"slug": "streak-kit", "code": "idasqr", "name": "Streak Kit", "price": "CA$9", "pitch": ["Daily streaks, kept on your phone.", "No account."], "cover": "media/idasqr.jpg"},
     {"slug": "scope-lock", "code": "omzql", "name": "Scope Lock", "price": "CA$12", "pitch": ["A client brief that holds the scope."], "cover": "media/omzql.jpg"},
     {
-        "slug": "pantry-week",
+        "slug": "pantry-week", "og_locked": True,
         "code": "jhagho",
-        "name": "Pantry Week 2.0",
+        "name": "Pantry Week",
         "price": "CA$24",
         "pitch": ["A week of meals, planned in one place."],
         "cover": "media/jhagho.jpg",

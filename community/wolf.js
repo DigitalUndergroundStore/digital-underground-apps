@@ -130,7 +130,7 @@
     var pinned = Array.isArray(parts[2]) ? parts[2] : [];
     var byId = {};
     (Array.isArray(parts[0]) ? parts[0] : []).concat(parts[1] && Array.isArray(parts[1].listings) ? parts[1].listings : []).forEach(function (row) { if (row && row.id) byId[row.id] = row; });
-    all = Object.keys(byId).map(function (k) { return normalize(byId[k]); });
+    all = Object.keys(byId).filter(function (k) { return k !== 'cm_kerzy_easytracker' && !byId[k].hidden; }).map(function (k) { return normalize(byId[k]); });
     all.sort(function (a, b) {
       var pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
       if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);

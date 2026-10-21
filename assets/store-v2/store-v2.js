@@ -46,6 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
     else { bd.classList.remove('show'); setTimeout(function () { if (!side.classList.contains('open')) bd.hidden = true; }, RM ? 0 : 300); }
   }
   tog.addEventListener('click', function () { drawer(true); });
+  // header "Browse products": phones/tablets open the browse + search drawer; desktop jumps to the sidebar search
+  var hb = $('sxBrowse');
+  if (hb) hb.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (matchMedia('(max-width: 1099px)').matches) { drawer(true); tog = hb; }
+    else { side.scrollIntoView({ behavior: RM ? 'auto' : 'smooth', block: 'start' }); setTimeout(function () { q.focus({ preventScroll: true }); }, RM ? 0 : 400); }
+  });
   $('sxClose').addEventListener('click', function () { drawer(false); tog.focus(); });
   bd.addEventListener('click', function () { drawer(false); });
   $('sxApply').addEventListener('click', function () { drawer(false); var f = secs.filter(function (s) { return !s.classList.contains('sx-hidden'); })[0]; if (f) f.scrollIntoView({ behavior: RM ? 'auto' : 'smooth' }); });

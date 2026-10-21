@@ -163,3 +163,11 @@ body.sx-lock { overflow: hidden; }
   /* iOS Safari paints a stray translucent box from the header's backdrop blur over the hero: use a solid header instead */
   .sx-header { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; background: rgba(5,5,16,.94) !important; }
 }
+/* hero v3: tight stack, no browse row in the hero (header button opens browse/search) */
+.sx-hero .sx-tagline { margin-bottom: .5rem; }
+.sx-hero .sx-facts { margin: 0 0 .75rem; }
+.sx-hero .sx-cta { margin-bottom: 0; }
+.sx-hero { padding-bottom: 1.25rem; }
+.sx-bar { display: none !important; }
+main > section:first-child .section-head { margin-bottom: .35rem !important; }
+@media (max-width: 1099px) { .sx-hero { padding-bottom: 1rem; } }

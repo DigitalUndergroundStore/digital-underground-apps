@@ -289,7 +289,7 @@
       pinned = Array.isArray(pinned) ? pinned : [];
       const by = {};
       (Array.isArray(stat) ? stat : []).concat(api.listings).forEach(r => { if (r && r.id) by[r.id] = r; });
-      let all = Object.values(by).map(normalize).filter(r => ['approved', 'live', 'published'].includes(r.status || 'approved'));
+      let all = Object.values(by).map(normalize).filter(r => ['approved', 'live', 'published'].includes(r.status || 'approved') && !r.hidden && r.id !== 'cm_kerzy_easytracker');
       all.sort((a, b) => {
         const pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
         if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);

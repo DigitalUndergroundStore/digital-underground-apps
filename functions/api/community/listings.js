@@ -55,6 +55,8 @@ export async function onRequest(context) {
   } catch {}
   if (!Array.isArray(pinned)) pinned = [];
   const rank = (id) => { const i = pinned.indexOf(id); return i < 0 ? 1e9 : i; };
+  const HIDDEN = new Set(['cm_kerzy_easytracker']); // pulled from the marketplace for now (data kept)
+  for (const [id, row] of byId) if (HIDDEN.has(id) || row?.hidden) byId.delete(id);
   const merged = [...byId.values()].sort((a, b) =>
     rank(a.id) - rank(b.id) || (a.curated ? 1 : 0) - (b.curated ? 1 : 0) || (a.name || "").localeCompare(b.name || "")
   );

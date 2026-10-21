@@ -3,7 +3,7 @@
     "id": "cm_kerzy_easytracker",
     "status": "approved",
     "name": "Easy Tracker",
-    "makerName": "Kerzy Labs",
+    "makerName": "Digital Underground",
     "category": "apps",
     "stage": "In testing / development",
     "pitchShort": "Share your live location with one link. The person you send it to sees you coming on a map, with no app or account. Sharing ends when you tap Stop or after 12 hours.",
@@ -16,7 +16,8 @@
       "privacy",
       "travel"
     ],
-    "priceLabel": "Free / In testing"
+    "priceLabel": "Free / In testing",
+    "hidden": true
   },
   {
     "id": "cm_kerzy_cyberarena",

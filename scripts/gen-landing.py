@@ -7,17 +7,11 @@ R=os.path.dirname(os.path.dirname(os.path.abspath(__file__))); B="https://digita
 G="https://kerzy.gumroad.com/l/"
 PAGES=[
 dict(slug="weekly-meal-planner-canada",title="Weekly Meal Planner for Canadian Families: Pantry Week",desc="Pantry Week is an offline weekly meal planner with 1,000+ recipes. Plan 7 days, get a shopping list by aisle, cook step by step. CA$24 once, no subscription.",
- og="/p/og/pantry-week.jpg",h1="A weekly meal planner that writes your grocery list",
+ og="/p/og/pantry-week.jpg?v=20261020pw",h1="A weekly meal planner that writes your grocery list",
  lead="Pantry Week plans your week of dinners (plus breakfast and lunch if you want them) from 1,000+ hand-checked recipes. It then builds one combined shopping list, sorted by aisle. It is priced in Canadian dollars, works offline on iPhone, Android and computers, and costs CA$24 once.",
  points=["Plan 7 days in minutes: tap a meal, pick a recipe, or fill the week automatically","One shopping list, grouped by aisle, with quantities combined across recipes","Pantry tracking, so you do not buy what you already have","Cook mode shows one step at a time","Works offline and installs to your home screen. No account, no subscription"],
  cta=("Get Pantry Week for CA$24",G+"jhagho"),cta2=("See the product page","/p/pantry-week/"),
  faq=[("Is Pantry Week a subscription?","No. You pay CA$24 once on Gumroad and keep it, including updates."),("Does it work in Canada?","Yes. It is made in Ontario and priced in CA$. Recipes use common grocery-store ingredients, and the list adds grams next to pounds and ounces."),("Does it need internet?","Only to unlock it the first time. After that it works offline on your phone or computer."),("Can I add my own recipes?","Yes. You can add, edit and import your own recipes alongside the built-in ones.")]),
-dict(slug="free-browser-fps-game",title="Free Browser FPS Game, No Download: CyberArena 3D",desc="CyberArena 3D is a free first-person shooter that runs in your browser. Neon arena, waves of enemies, weapon skins and a global leaderboard. No download, no sign-up.",
- og="/assets/og/cyberarena.jpg",h1="CyberArena 3D: a free FPS you can play in your browser",
- lead="Open the page and play. CyberArena 3D is a neon arena shooter built for the web. Survive waves, chain kills for streaks, unlock weapon skins and post your score to the global leaderboard. There is nothing to install and no account to create.",
- points=["Free to play in modern desktop browsers with WebGL","First-person weapons with per-weapon skins","Wave survival with scoring and tier skins","Global leaderboard","No download, no sign-up"],
- cta=("Play CyberArena now","/cyberarena/"),cta2=("Advertise on the in-game billboards","/advertise/"),
- faq=[("Is CyberArena really free?","Yes. It is free to play in your browser, with no purchases needed."),("Do I need to download anything?","No. It runs in a modern desktop browser with WebGL."),("Does it work on phones?","It is designed for keyboard and mouse. A desktop or laptop gives the best experience."),("How does the leaderboard work?","When a run ends, your score, kills and streak can go on the global top list.")]),
 dict(slug="ai-prompt-packs-for-creators",title="AI Prompt Packs for Creators: Grok and ChatGPT Prompts",desc="Two ready-to-use prompt packs: 172 professional Grok prompts (CA$29) and 80 ChatGPT prompts for digital product creators with tips for every prompt (CA$9).",
  og="/p/og/grok-prompt-pack.jpg",h1="Prompt packs that get useful answers, not filler",
  lead="Skip the blank chat box. Each pack is organised by task, uses clear [BRACKETS] for your details, and includes tips on getting a stronger second draft.",

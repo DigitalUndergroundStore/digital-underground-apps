@@ -60,10 +60,10 @@ PRODUCTS = [
     {"slug": "he-came-home-without-her", "code": "ygwhif", "name": "He Came Home Without Her", "price": "CA$4.99", "pitch": ["A domestic thriller."], "cover": "covers/ygwhif.webp"},
     {"slug": "humanity-x-into-the-stars", "code": "sgrnpe", "name": "Humanity X: Into The Stars", "price": "CA$9.99", "pitch": ["A science-fiction story."], "cover": "covers/sgrnpe.webp"},
     {"slug": "humanity-x-off-the-ground", "code": "umndpu", "name": "Humanity X: Off the Ground", "price": "CA$9.99", "pitch": ["A science-fiction story."], "cover": "covers/umndpu.webp"},
-    {"slug": "brave-little-beaver", "code": "bukwxo", "name": "The Brave Little Beaver", "price": "Free", "pitch": ["A short story for children."], "cover": None},
-    {"slug": "ethan-chose-kindness", "code": "efouck", "name": "The Day Ethan Chose Kindness", "price": "Free", "pitch": ["A short story for children."], "cover": None},
-    {"slug": "tillys-big-cleanup", "code": "vlaqmh", "name": "Tilly's Big Cleanup", "price": "Free", "pitch": ["A short story for children."], "cover": None},
-    {"slug": "a-new-friend-brighter-day", "code": "vzfysf", "name": "A New Friend – A Brighter Day", "price": "Free", "pitch": ["A short story for children."], "cover": None},
+    {"slug": "brave-little-beaver", "og_locked": True, "code": "bukwxo", "name": "The Brave Little Beaver", "price": "Free", "pitch": ["A short story for children."], "cover": None},
+    {"slug": "ethan-chose-kindness", "og_locked": True, "code": "efouck", "name": "The Day Ethan Chose Kindness", "price": "Free", "pitch": ["A short story for children."], "cover": None},
+    {"slug": "tillys-big-cleanup", "og_locked": True, "code": "vlaqmh", "name": "Tilly's Big Cleanup", "price": "Free", "pitch": ["A short story for children."], "cover": None},
+    {"slug": "a-new-friend-brighter-day", "og_locked": True, "code": "vzfysf", "name": "A New Friend – A Brighter Day", "price": "Free", "pitch": ["A short story for children."], "cover": None},
     {"slug": "due-desk", "code": "gfbgve", "name": "Due Desk", "price": "Free", "pitch": ["An assignment tracker for what is due."], "cover": "covers/gfbgve.webp"},
     {"slug": "exam-desk", "code": "zpqpto", "name": "Exam Desk", "price": "Free", "pitch": ["A toolkit for finals week."], "cover": "covers/zpqpto.webp"},
     {"slug": "hook-bank", "code": "vusus", "name": "Hook Bank", "price": "Free", "pitch": ["Hooks for posts, ready to adapt."], "cover": "covers/vusus.webp"},
@@ -257,7 +257,8 @@ def main() -> None:
         slug = p["slug"]
         checkout = checkout_url(code)
         og_path = OG_DIR / f"{slug}.jpg"
-        make_og_image(p, og_path)
+        if not (p.get("og_locked") and og_path.exists()):
+            make_og_image(p, og_path)  # og_locked: hand-made art in p/og, never regenerate
         page_dir = OUT / slug
         page_dir.mkdir(parents=True, exist_ok=True)
         (page_dir / "index.html").write_text(_site_nav.apply(render_page(p)), encoding="utf-8")

@@ -51,14 +51,15 @@ export async function tally(kv, week) {
   return counts;
 }
 
-/** Kerzy Labs (the owner's own studio) stays on the marketplace but is not in the League. */
+/** Kerzy Labs and Digital Underground (the owner's own products) stay on the marketplace but are not in the League. */
 export function isKerzy(l) { return /^cm_kerzy_/.test(l.id) || /kerzy/i.test(l.makerName || "") || l.makerSlug === "kerzy-labs"; }
+export function isOwnDU(l) { return /^digital\s*underground$/i.test((l.makerName || "").trim()) || l.makerSlug === "digital-underground"; }
 /** Live, maker-made listings (excludes DU-curated third-party picks and Kerzy Labs). Same source as the marketplace. */
 export async function eligible(origin) {
   try {
     const r = await fetch(`${origin}/api/community/listings`, { headers: { accept: "application/json" } });
     const d = await r.json();
-    return (d.listings || []).filter((l) => l && l.id && !l.hidden && !l.curated && l.name && !isKerzy(l));
+    return (d.listings || []).filter((l) => l && l.id && !l.hidden && !l.curated && l.name && !isKerzy(l) && !isOwnDU(l));
   } catch { return []; }
 }
 

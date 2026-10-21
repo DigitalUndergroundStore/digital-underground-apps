@@ -14,7 +14,7 @@ function memKv() {
 }
 const LISTINGS = [
   { id: "cm_a", name: "Alpha", makerName: "Ann" }, { id: "cm_b", name: "Beta", makerName: "Bob" },
-  { id: "cm_kerzy_x", name: "Kerzy Game", makerName: "Kerzy Labs" }, { id: "cm_pick_y", name: "Pick", makerName: "X", curated: true },
+  { id: "cm_kerzy_x", name: "Kerzy Game", makerName: "Kerzy Labs" }, { id: "cm_pick_y", name: "Pick", makerName: "X", curated: true }, { id: "cm_du_pw", name: "Pantry Week", makerName: "Digital Underground" },
 ];
 globalThis.fetch = async () => new Response(JSON.stringify({ listings: LISTINGS }));
 const UA = "Mozilla/5.0 (iPhone) AppleWebKit/605.1.15 Safari/604.1";

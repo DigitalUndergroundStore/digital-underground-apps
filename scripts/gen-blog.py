@@ -115,7 +115,7 @@ def shell(title, desc, canonical, body, jsonld, ogtype="article"):
 {body}
 </main>
 <footer class="z site-foot"><div class="mx">
-<p><a href="/store/">DU store</a> · <a href="/">Developer Marketplace</a> · <a href="/makers/">Creators</a> · <a href="/blog/">Blog</a></p>
+<p><a href="/store/">DU store</a> · <a href="/">Developer Marketplace</a> · <a href="/makers/">Creators</a> · <a href="/league/">League</a> · <a href="/blog/">Blog</a></p>
 <p><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
 </div></footer>
 </body>

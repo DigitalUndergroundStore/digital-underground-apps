@@ -4,6 +4,11 @@ import html, json, pathlib
 R = pathlib.Path(__file__).resolve().parent.parent
 O = "https://digitalundergroundstore.com"
 IMG = O + "/community/og-dm-v3.jpg"
+import re
+hero = lambda p: f"/blog/media/{p['slug']}.webp"
+mins = lambda p: max(1, round(len(re.sub(r"<[^>]+>", " ", p["body"]).split()) / 220))
+DATE = lambda p: "October 20, 2026"
+AUTH = "Digital Underground"
 e = lambda s: html.escape(s, quote=True)
 
 POSTS = [
@@ -18,7 +23,7 @@ dict(slug="what-is-the-developer-marketplace", date="2026-10-20",
 <p>Anything a maker built and can link to over https: released products, betas, and projects still in development. Each listing shows a stage (Concept, In development, Beta / testing, Released or Discontinued) so visitors know what they are getting. Makers can also add a short status label such as "Needs testers".</p>
 <p>Alongside maker submissions we include a small set of curated open-source picks, clearly marked "Featured pick", so the marketplace is useful from day one.</p>
 <h2>How listings are reviewed</h2>
-<p>Every new listing goes through automatic checks for spam, scams and unsafe content. A maker's first listing then gets a human review, usually within a few hours; later listings from approved makers go live automatically once they pass the checks. Visitors can report a listing, and reported listings are hidden until we look at them. Edits to a live listing are screened again. The goal is a marketplace people can trust when they click through.</p>
+<p>Every new listing goes through automatic checks for spam, scams and unsafe content, and goes live as soon as it passes. Anything the checks flag waits for a short human review. Visitors can report a listing, and reported listings are hidden until we look at them. Edits to a live listing are screened again. The goal is a marketplace people can trust when they click through.</p>
 <h2>Creator pages</h2>
 <p>Each maker gets a public page at <code>/makers/&lt;name&gt;/</code> with their logo, a short bio, links and all their listings in one grid. Browse them on the <a href="/makers/">Creators</a> page.</p>
 <h2>Who it's for</h2>
@@ -34,7 +39,7 @@ dict(slug="how-to-list-your-product", date="2026-10-20",
 <ul><li>A public <strong>https</strong> link to your product (your site, Gumroad, an app store page, itch.io, GitHub releases).</li><li>A cover image (JPEG, PNG, WebP or GIF). Uploads must be under about 200 KB; a 16:9 image looks best on the cards. You can also paste an https image link instead.</li><li>Optional: a short video (YouTube, Vimeo, or an uploaded clip).</li></ul>
 <h2>Step by step</h2>
 <ol>
-<li>Open the <a href="/community/submit/">submission form</a>.</li>
+<li>Open the <a href="/community/submit/">submission form</a> and paste your project link into the box at the top: the name, short pitch, image and link fill in for you, and you can edit all of them.</li>
 <li>Enter the project name, link, your maker or studio name and your email. Choose a password: this becomes your login for the creator dashboard.</li>
 <li>Pick a category and a stage. Be honest about the stage; "Beta / testing" is fine and helps you find early users.</li>
 <li>Optionally add a status label (up to 24 characters), for example "Needs testers" or "v1.5".</li>
@@ -44,7 +49,7 @@ dict(slug="how-to-list-your-product", date="2026-10-20",
 <h2>Write a pitch that earns the click</h2>
 <ul><li>Lead with what it does for the person, not the tech stack: "Plan a week of meals in five minutes" beats "React meal planner".</li><li>Say who it's for and what it costs ("Free", "Pay once €19", "Free plan, Pro €9/mo").</li><li>Keep the price label short and true. Visitors see it on the card.</li></ul>
 <h2>Review</h2>
-<p>New listings are checked automatically and then approved by a person before they appear. If something needs fixing, you'll see the reason in your dashboard.</p>
+<p>New listings are checked automatically and go live as soon as they pass, usually within minutes. If the checks flag something, it waits for a short human review and you'll see the reason in your dashboard.</p>
 <h2>After you're live</h2>
 <p>Sign in to the <a href="/community/dashboard/">creator dashboard</a> to edit your listing, unpublish or delete it, and see the last 30 days of views, clicks and click-through rate. You can also fill in your public creator page (logo, banner, bio and links). Changes to it are reviewed before they go live.</p>
 <p><a class="pill pill-v" href="/community/submit/">List your project free</a></p>
@@ -65,7 +70,7 @@ dict(slug="creator-pages", date="2026-10-20",
 """),
 ]
 
-def shell(title, desc, canonical, body, jsonld, ogtype="article"):
+def shell(title, desc, canonical, body, jsonld, ogtype="article", img=None):
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,22 +84,23 @@ def shell(title, desc, canonical, body, jsonld, ogtype="article"):
 <meta property="og:type" content="{ogtype}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:site_name" content="Digital Underground">
-<meta property="og:image" content="{IMG}">
+<meta property="og:image" content="{img or IMG}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
-<meta name="twitter:image" content="{IMG}">
+<meta name="twitter:image" content="{img or IMG}">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="/assets/design-tokens.css">
 <link rel="stylesheet" href="/community/wolf.css?v=6">
 <link rel="stylesheet" href="/blog/blog.css?v=2">
+<link rel="stylesheet" href="/blog/blog-v2.css?v=1">
 <script src="/community/nav.js?v=1" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <script type="application/ld+json">{json.dumps(jsonld).replace("</", "<\\/")}</script>
 </head>
-<body class="blog">
+<body class="blog b2">
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <div class="mx nav-in">
@@ -122,21 +128,33 @@ def shell(title, desc, canonical, body, jsonld, ogtype="article"):
 </html>
 """
 
+def card(q, kind):
+    cls = {"feat": "b2-card b2-feat", "sm": "b2-card b2-sm", "": "b2-card"}[kind]
+    return (f'<li class="{cls}"><a class="b2-img" href="/blog/{q["slug"]}/" tabindex="-1" aria-hidden="true"><img src="{hero(q)}" alt="" width="1600" height="900" loading="{"eager" if kind == "feat" else "lazy"}"></a>'
+            f'<div class="b2-txt">{"<p class=b2-kicker>Featured</p>" if kind == "feat" else ""}<h2><a href="/blog/{q["slug"]}/">{e(q["title"])}</a></h2>'
+            + ("" if kind == "sm" else f'<p class="b2-ex">{e(q["desc"])}</p>')
+            + f'<p class="b2-meta"><span>{AUTH}</span><span><time datetime="{q["date"]}">{DATE(q)}</time></span><span>{mins(q)} min read</span></p></div></li>')
+
 PUB = {"@type": "Organization", "name": "Digital Underground", "url": O + "/", "logo": {"@type": "ImageObject", "url": O + "/assets/logo/favicon-180.png"}}
 (R / "blog").mkdir(exist_ok=True)
 for p in POSTS:
     url = f"{O}/blog/{p['slug']}/"
-    ld = {"@context": "https://schema.org", "@type": "Article", "headline": p["title"], "description": p["desc"], "image": IMG,
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": p["title"], "description": p["desc"], "image": O + hero(p),
           "datePublished": p["date"], "dateModified": p["date"], "author": PUB, "publisher": PUB, "mainEntityOfPage": url}
+    meta = f'<p class="b2-meta"><span class="b2-by"><img src="/assets/logo/favicon-180.png" alt="" width="28" height="28">{AUTH}</span><span><time datetime="{p["date"]}">{DATE(p)}</time></span><span>{mins(p)} min read</span></p>'
+    rel = "".join(card(q, "sm") for q in POSTS if q is not p)
     body = (f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span></nav>'
-            f'<article class="post"><h1>{e(p["title"])}</h1><p class="meta"><time datetime="{p["date"]}">October 20, 2026</time> · Digital Underground</p>{p["body"]}</article>'
-            '<aside class="more" aria-labelledby="more-t"><h2 id="more-t">More from the blog</h2><ul>'
-            + "".join(f'<li><a href="/blog/{q["slug"]}/">{e(q["title"])}</a></li>' for q in POSTS if q is not p) + "</ul></aside>")
+            f'<article class="post b2-post"><header class="b2-head"><h1>{e(p["title"])}</h1>{meta}</header>'
+            f'<figure class="b2-hero"><img src="{hero(p)}" alt="" width="1600" height="900" fetchpriority="high"></figure>'
+            f'<div class="b2-body">{p["body"]}</div></article>'
+            '<section class="b2-cta"><div><h2>List your project free</h2><p>Paste your link, check the details we fill in, and go live after a quick automatic check. No fees, no cut of sales.</p></div><a class="pill pill-v" href="/community/submit/">List your project free</a></section>'
+            f'<aside class="b2-related" aria-labelledby="more-t"><h2 id="more-t">More from the blog</h2><ul class="b2-grid">{rel}</ul></aside>')
     d = R / "blog" / p["slug"]; d.mkdir(exist_ok=True)
-    (d / "index.html").write_text(shell(p["title"] + " | Digital Underground", p["desc"], url, body, ld))
-items = "".join(f'<li class="bcard"><h2><a href="/blog/{p["slug"]}/">{e(p["title"])}</a></h2><p>{e(p["desc"])}</p><p class="meta"><time datetime="{p["date"]}">October 20, 2026</time></p></li>' for p in POSTS)
+    (d / "index.html").write_text(shell(p["title"] + " | Digital Underground", p["desc"], url, body, ld, img=O + hero(p)))
+feat = POSTS[0]
+items = card(feat, "feat") + "".join(card(q, "") for q in POSTS[1:])
 ld = {"@context": "https://schema.org", "@type": "Blog", "name": "Digital Underground Blog", "url": O + "/blog/", "publisher": PUB,
       "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": f"{O}/blog/{p['slug']}/", "datePublished": p["date"]} for p in POSTS]}
 (R / "blog/index.html").write_text(shell("Blog | Digital Underground", "Guides for makers and buyers: how the Developer Marketplace works, how to list your product, and how to get the most from your creator page.",
-    O + "/blog/", '<div class="hero"><h1>Blog</h1><p class="lede">Guides for makers listing on the Developer Marketplace, and for anyone browsing it.</p></div><ul class="blist">' + items + "</ul>", ld, "website"))
+    O + "/blog/", '<div class="hero b2-top"><p class="b2-kicker">Digital Underground Blog</p><h1>Guides for indie makers</h1><p class="lede">How the Developer Marketplace works, how to list your project, and how to get found.</p></div><ul class="b2-grid b2-index">' + items + "</ul>", ld, "website"))
 print(len(POSTS), "posts")

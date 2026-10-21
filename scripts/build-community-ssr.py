@@ -94,17 +94,19 @@ for r in rows:
 if "--dump-rows" in sys.argv:
     json.dump(data, open(sys.argv[sys.argv.index("--dump-rows") + 1], "w"), ensure_ascii=False)
 STAR = "<svg class='star' width='11' height='11' viewBox='0 0 24 24' fill='currentColor' aria-hidden='true'><path d='M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z'/></svg>"
+NO_BADGE = {"cm_mv822ro8_6d5c4cb4"}  # Releviq stays badge-free in 2nd place
 def v3card(r):
     rid = e(r["id"]); n = e(r["name"]); href = "/community/p/?id=" + quote(r["id"])
     st = r.get("stage") if r.get("stage") and r.get("stage") != "Released" else ""
     b = [f'<span class="card-badge badge-{"beta" if "beta" in st.lower() else "testing"}">{e(st)}</span>'] if st else (['<span class="card-badge badge-featured">'+STAR+' Featured pick</span>'] if r.get("curated") else [])
+    if re.fullmatch(r"(?i)\s*free\s*", r.get("priceLabel") or "") and r["id"] not in NO_BADGE: b.insert(0, '<span class="card-badge badge-free">Free</span>')
     if r.get("statusLabel"): b.append(f'<span class="card-badge badge-testing">{e(str(r["statusLabel"])[:24])}</span>')
     img = r.get("imageUrl")
     ms = r.get("makerSlug") or ("kerzy-labs" if r["id"].startswith("cm_kerzy_") else "wolfitway" if (r.get("makerName") or "").lower() == "wolfitway" else "")
     mk = f'<a href="/makers/{e(ms)}/">{e(r.get("makerName"))}</a>' if re.fullmatch(r"[a-z0-9-]{1,48}", ms or "") else e(r.get("makerName"))
     x = f' · <a href="https://x.com/{e(r["xHandle"])}" target="_blank" rel="noopener">@{e(r["xHandle"])}</a>' if r.get("xHandle") else ""
     pr = e(r.get("priceLabel") or "See site")
-    return (f'<article class="card" role="listitem" data-id="{rid}"><div class="card-media">'
+    return (f'<article class="card" data-id="{rid}"><div class="card-media">'
             + (f'<div class="card-badges">{"".join(b)}</div>' if b else "")
             + (f'<img src="{e(img)}" alt="{n} cover image" width="640" height="360" loading="lazy" decoding="async">' if img else "")
             + f'<div class="card-placeholder" aria-hidden="true">{n[:2]}</div></div><div class="card-body"><div class="card-meta">{mk}{x}</div>'
@@ -113,6 +115,22 @@ def v3card(r):
             + (f'<a href="{href}#contact" class="btn btn-ghost">Contact</a>' if r.get("contactable") else "")
             + f'<a href="{e(r.get("visitUrl") or r.get("projectUrl"))}" data-out="{rid}" class="btn btn-primary" target="_blank" rel="noopener">Visit</a></div></div></div></article>')
 tpl = (R / "src/home-v3/index.template.html").read_text()
+# JSON-LD (homepage). Listings are third-party products: no publisher/author is attached to them.
+SITE = "https://digitalundergroundstore.com/"
+def txt(t): return html.unescape(re.sub(r"<[^>]+>", "", t)).strip()
+faq = [{"@type": "Question", "name": txt(q), "acceptedAnswer": {"@type": "Answer", "text": txt(a)}}
+       for q, a in re.findall(r'<button class="faq-question"[^>]*>(.*?)</button>\s*<div class="faq-answer">\s*(.*?)\s*</div>', tpl, re.S)]
+items = [{"@type": "ListItem", "position": i + 1, "name": GM.sub("", str(r.get("name") or "")),
+          "url": SITE + "community/p/?id=" + quote(r["id"])} for i, r in enumerate(rows[:20])]
+ld = {"@context": "https://schema.org", "@graph": [
+    {"@type": "Organization", "@id": SITE + "#org", "name": "Digital Underground", "url": SITE,
+     "logo": SITE + "assets/logo/du-horizontal.svg", "sameAs": ["https://x.com/DigitalUG_Store"]},
+    {"@type": "WebSite", "@id": SITE + "#website", "url": SITE, "name": "Digital Underground", "publisher": {"@id": SITE + "#org"}},
+    {"@type": "CollectionPage", "@id": SITE + "#page", "url": SITE, "name": "Developer Marketplace",
+     "isPartOf": {"@id": SITE + "#website"}, "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items}},
+    {"@type": "FAQPage", "@id": SITE + "#faq", "mainEntity": faq}]}
+assert len(faq) >= 9
+tpl = tpl.replace("<!--ssr:jsonld-->", '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
 js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 h = (tpl.replace("<!--ssr:data-->", js).replace("<!--ssr:cards-->", "\n".join(v3card(r) for r in rows))
         .replace("<!--ssr:count-->", str(len(rows))))

@@ -118,10 +118,12 @@
     const DEF = () => ({ q: '', lo: 0, hi: PMAX, free: true, cats: new Set(), makers: new Set(), labels: new Set(), sort: 'featured' });
     let state = DEF();
 
+    const NO_BADGE = new Set(['cm_mv822ro8_6d5c4cb4']); // Releviq: stays badge-free in 2nd place
     function badgeHTML(p) {
       const one = b => { const cls = /featured/i.test(b) ? 'badge-featured' : /beta/i.test(b) ? 'badge-beta' : 'badge-testing'; return `<span class="card-badge ${cls}">${(/featured/i.test(b) ? '<svg class="star" width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg> ' : '') + esc(b)}</span>`; };
       const parts = [p.badge, p.label].filter(Boolean);
-      return parts.length ? `<div class="card-badges">${parts.map(one).join('')}</div>` : '';
+      const free = /^free$/i.test(String(p.price || '').trim()) && !NO_BADGE.has(p.id) ? '<span class="card-badge badge-free">Free</span>' : '';
+      return parts.length || free ? `<div class="card-badges">${free}${parts.map(one).join('')}</div>` : '';
     }
     function makerHTML(p) {
       const name = p.makerSlug ? `<a href="${SITE}/makers/${encodeURIComponent(p.makerSlug)}/">${esc(p.maker)}</a>` : esc(p.maker);
@@ -129,7 +131,7 @@
     }
     function cardEl(p) {
       const a = document.createElement('article');
-      a.className = 'card'; a.setAttribute('role', 'listitem'); a.dataset.id = p.id;
+      a.className = 'card'; a.dataset.id = p.id;
       a.innerHTML = `
           <div class="card-media">
             ${badgeHTML(p)}

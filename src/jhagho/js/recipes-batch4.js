@@ -1612,7 +1612,7 @@
         {
           "qty": 2.0,
           "unit": "oz",
-          "item": "beef kidney suet (55 )"
+          "item": "beef kidney suet"
         },
         {
           "qty": 4.0,
@@ -5155,22 +5155,22 @@
         {
           "qty": 25.0,
           "unit": "lb",
-          "item": "coarse-ground beef (11 )"
+          "item": "coarse-ground beef"
         },
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "cumin (225 )"
+          "item": "cumin"
         },
         {
           "qty": 0.25,
           "unit": "lb",
-          "item": "chili powder (110 )"
+          "item": "chili powder"
         },
         {
           "qty": 0.125,
           "unit": "lb",
-          "item": "paprika (55 )"
+          "item": "paprika"
         },
         {
           "qty": 2.0,
@@ -5180,7 +5180,7 @@
         {
           "qty": 0.5,
           "unit": "lb",
-          "item": "finely-chopped garlic (225 )"
+          "item": "garlic, finely chopped"
         }
       ],
       "steps": [

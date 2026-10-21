@@ -4468,9 +4468,9 @@
           "item": "A few basil leaves"
         },
         {
-          "qty": 0.75,
+          "qty": null,
           "unit": "",
-          "item": "the weight of Mozzarella cheese as the tomato, sliced"
+          "item": "mozzarella cheese, sliced (same weight as the tomatoes)"
         },
         {
           "qty": null,
@@ -14230,8 +14230,8 @@
         },
         {
           "qty": 1.0,
-          "unit": "",
-          "item": "metric cup vegetable oil (reserve 1 tablespoon for stir-frying curry paste)"
+          "unit": "cup",
+          "item": "vegetable oil (keep 1 tbsp for the curry paste)"
         },
         {
           "qty": 1.0,
@@ -20803,7 +20803,7 @@
         {
           "qty": 1.0,
           "unit": "tbsp",
-          "item": "plus 2 cups vegetable oil, divided"
+          "item": "vegetable oil, divided (plus 2 cups for frying)"
         },
         {
           "qty": 1.0,
@@ -21722,7 +21722,7 @@
         {
           "qty": 0.75,
           "unit": "cup",
-          "item": "plus 2 tbsp honey"
+          "item": "honey (plus 2 tbsp)"
         },
         {
           "qty": 2.0,
@@ -28261,7 +28261,7 @@
         {
           "qty": 1.0,
           "unit": "handful",
-          "item": "plus some more finely chopped green onion, both white and green parts"
+          "item": "green onion, finely chopped (plus more to garnish)"
         },
         {
           "qty": 2.0,
@@ -50563,11 +50563,6 @@
       ],
       "ingredients": [
         {
-          "qty": null,
-          "unit": "",
-          "item": "for the dressing"
-        },
-        {
           "qty": 0.5,
           "unit": "cup",
           "item": "greek yogurt, fat-free"
@@ -50601,11 +50596,6 @@
           "qty": 0.25,
           "unit": "tsp",
           "item": "pepper"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "for the salad"
         },
         {
           "qty": 1.0,
@@ -51952,11 +51942,6 @@
       ],
       "ingredients": [
         {
-          "qty": null,
-          "unit": "",
-          "item": "for the cornmeal rub"
-        },
-        {
           "qty": 0.125,
           "unit": "cup",
           "item": "cornmeal"
@@ -51990,11 +51975,6 @@
           "qty": 0.5,
           "unit": "tsp",
           "item": "black pepper"
-        },
-        {
-          "qty": null,
-          "unit": "",
-          "item": "for the catfish"
         },
         {
           "qty": 4.0,

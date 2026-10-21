@@ -434,8 +434,14 @@
     return text ? cap(text) : "";
   }
 
+  function userPhotoUrl(recipe) {
+    return recipe && recipe.id && window.PW_USER_PHOTOS ? window.PW_USER_PHOTOS.urlFor(recipe.id) : "";
+  }
   function photoUrl(recipe) {
-    if (!recipe || !window.PW_PHOTOS) return "";
+    if (!recipe) return "";
+    const mine = userPhotoUrl(recipe);
+    if (mine) return mine;
+    if (!window.PW_PHOTOS) return "";
     return window.PW_PHOTOS.urlFor(recipe);
   }
 
@@ -453,11 +459,49 @@
     return `<p class="chip-row">${picked.map((t) => `<span class="tag-chip">${esc(PW.tagLabel(t))}</span>`).join("")}</p>`;
   }
 
+  function photoToolsHtml(recipe) {
+    if (!recipe || !recipe.id || !window.PW_USER_PHOTOS) return "";
+    const id = esc(recipe.id);
+    if (userPhotoUrl(recipe)) {
+      return `<div class="photo-tools"><button type="button" data-action="add-photo" data-id="${id}">Replace photo</button><button type="button" class="danger" data-action="remove-photo" data-id="${id}">Remove photo</button></div>`;
+    }
+    if (window.PW_PHOTOS && window.PW_PHOTOS.urlFor(recipe)) {
+      return `<div class="photo-tools"><button type="button" data-action="add-photo" data-id="${id}">Use my photo</button></div>`;
+    }
+    return "";
+  }
+
+  /* Your own photo: picked or taken on this device, resized, kept in IndexedDB. */
+  function pickPhoto(id) {
+    if (!window.PW_USER_PHOTOS) return;
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = "image/*";
+    input.setAttribute("capture", "environment");
+    input.className = "pw-photo-input";
+    input.addEventListener("change", () => {
+      const file = input.files && input.files[0];
+      input.remove();
+      if (!file) return;
+      window.PW_USER_PHOTOS.save(id, file)
+        .then(() => { render(); toast("Photo saved on this device."); })
+        .catch((err) => toast(err && err.message ? err.message : "That photo could not be saved."));
+    });
+    document.body.appendChild(input);
+    input.click();
+  }
+  function removePhoto(id) {
+    if (!window.PW_USER_PHOTOS) return;
+    if (!confirm("Remove your photo from this recipe?")) return;
+    window.PW_USER_PHOTOS.remove(id).then(() => { render(); toast("Photo removed."); });
+  }
+
   /* Photo if we have one, otherwise the designed cuisine card (never an empty box). */
-  function photoBox(recipe, cls, variant) {
+  function photoBox(recipe, cls, variant, opts) {
     const url = photoUrl(recipe);
-    if (url) return `<div class="${cls}" style="background-image:url('${url.replace(/'/g, "%27")}')" role="img" aria-label=""></div>`;
-    if (window.PW_NOPHOTO) return window.PW_NOPHOTO.html(recipe, cls, variant || "card");
+    const mine = !!userPhotoUrl(recipe);
+    if (url) return `<div class="${cls}" style="background-image:url('${url.replace(/'/g, "%27")}')" role="img" aria-label="${mine ? "Your photo" : ""}">${mine && variant === "hero" ? '<span class="user-photo-badge">Your photo</span>' : ""}</div>`;
+    if (window.PW_NOPHOTO) return window.PW_NOPHOTO.html(recipe, cls, variant || "card", { add: !(opts && opts.noAdd) && recipe && !!recipe.id });
     return `<div class="${cls} ${cls}--empty" role="img" aria-label=""></div>`;
   }
 
@@ -1090,6 +1134,7 @@
         <button type="button" class="text-btn" data-action="edit" data-id="${esc(recipe.id)}">Edit</button>
       </div>
       ${photoBox(recipe, "detail-hero", "hero")}
+      ${photoToolsHtml(recipe)}
       <h2>${esc(recipe.name)}</h2>
       <p class="meta">${esc(timeLabel(recipe))} · ${recipe.servings} servings${diet ? " · " + esc(diet) : ""}</p>
       ${sourceCreditHtml(recipe)}
@@ -1314,7 +1359,7 @@
       <article class="recipe-card recipe-card--smart">
         ${smartChefNewIdeaBtn("smart-chef__new-idea--corner")}
         <button type="button" class="plain smart-chef__open" data-action="open-smart-chef-detail">
-          ${photoBox(recipe, "card-photo", "card")}
+          ${photoBox(recipe, "card-photo", "card", { noAdd: true })}
           <div class="card-bar ${barClass(recipe)}"></div>
           <div class="card-body">
             <p class="smart-chef__kicker">${esc([r.templateLabel, r.profileLabel].filter(Boolean).join(" · "))}</p>
@@ -1515,7 +1560,7 @@
           </label>
           ${dupNote}
           ${sourceCreditHtml(recipe)}
-          ${photo ? `<div class="import-preview-thumb" style="background-image:url('${photo.replace(/'/g, "%27")}')"></div>` : (window.PW_NOPHOTO ? window.PW_NOPHOTO.html(recipe, "import-preview-thumb", "card") : "")}
+          ${photo ? `<div class="import-preview-thumb" style="background-image:url('${photo.replace(/'/g, "%27")}')"></div>` : (window.PW_NOPHOTO ? window.PW_NOPHOTO.html(recipe, "import-preview-thumb", "card", { add: false }) : "")}
           <button type="button" data-action="import-edit" data-index="${index}">Edit before import</button>
         </article>`;
       }).join("");
@@ -1679,7 +1724,6 @@
     const ids = Object.keys(photos).filter((id) => window.PW_PHOTOS && window.PW_PHOTOS.byId[id]);
     const nameOf = (id) => { const r = PW.recipeById(state, id); return r ? r.name : id; };
     ids.sort((a, b) => nameOf(a).localeCompare(nameOf(b)));
-    const ai = ids.filter((id) => photos[id].ai);
     const real = ids.filter((id) => !photos[id].ai);
     const row = (id) => {
       const c = photos[id];
@@ -1687,16 +1731,15 @@
       const licUrl = c.license_url || LICENSE_URLS[lic] || "";
       const licHtml = licUrl ? `<a href="${esc(licUrl)}" target="_blank" rel="noopener noreferrer">${esc(lic)}</a>` : esc(lic);
       const src = c.file ? `<a href="${esc(c.file)}" target="_blank" rel="noopener noreferrer">source</a>` : "";
-      const by = c.ai ? "AI-generated illustrative photo" : `${esc(c.author || "Unknown author")}${c.title ? " · " + esc(c.title) : ""}`;
-      return `<li class="credit-row"><strong>${esc(nameOf(id))}</strong><span class="meta">${by}${lic && !c.ai ? " · " + licHtml : ""}${src ? " · " + src : ""}</span></li>`;
+      const by = `${esc(c.author || "Unknown author")}${c.title ? " · " + esc(c.title) : ""}`;
+      return `<li class="credit-row"><strong>${esc(nameOf(id))}</strong><span class="meta">${by}${lic ? " · " + licHtml : ""}${src ? " · " + src : ""}</span></li>`;
     };
     const bd = ui.credits.backdrop;
     const bdHtml = bd ? `<li class="credit-row"><strong>App background</strong><span class="meta">${esc(bd.author || "")} · ${esc(bd.license || "")}${bd.file ? ` · <a href="${esc(bd.file)}" target="_blank" rel="noopener noreferrer">source</a>` : ""}</span></li>` : "";
     return `<section class="credits">${head}
-      <p class="lead">${real.length} photos are by photographers who share their work under open licences. Thank you. Photos were resized and cropped. Recipes without a photo use a designed card.</p>
+      <p class="lead">${real.length} photos are by photographers who share their work under open licences. Thank you. Photos were resized and cropped. Recipes without a photo use a designed card, and you can add your own photo to any recipe (it stays on this device).</p>
       ${recipesNote}
       <section class="credits-block"><h3>Photos</h3><ul class="credit-list">${bdHtml}${real.map(row).join("")}</ul></section>
-      ${ai.length ? `<section class="credits-block"><h3>Illustrative photos</h3><p class="meta">These are AI-generated to show what the dish looks like. Yours may look different.</p><ul class="credit-list">${ai.map(row).join("")}</ul></section>` : ""}
     </section>`;
   }
 
@@ -2421,8 +2464,13 @@
     toast("Leftovers are set for " + PW.DAY_LABEL[next] + ". They are not added to the list again.");
   }
 
-  function downloadBackup() {
-    const blob = new Blob([JSON.stringify(PW.exportPayload(state), null, 2)], { type: "application/json" });
+  async function downloadBackup() {
+    const payload = PW.exportPayload(state);
+    if (window.PW_USER_PHOTOS) {
+      const photos = await window.PW_USER_PHOTOS.exportAll();
+      if (Object.keys(photos).length) payload.userPhotos = photos;
+    }
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
@@ -2444,6 +2492,10 @@
     }
     if (!confirm("Replace this device's plan and recipes with the backup (" + next.recipes.length + " recipes)?")) return;
     state = next;
+    try {
+      const raw = JSON.parse(text);
+      if (raw && raw.userPhotos && window.PW_USER_PHOTOS) window.PW_USER_PHOTOS.importAll(raw.userPhotos).then(() => render());
+    } catch (e) { /* backup without photos */ }
     ui.importError = "";
     ui.detailId = null;
     ui.view = "plan";
@@ -2497,6 +2549,8 @@
     const id = btn.getAttribute("data-id");
     if (action === "nav") go(btn.getAttribute("data-view"));
     else if (action === "open-credits") go("credits");
+    else if (action === "add-photo") { event.preventDefault(); event.stopPropagation(); pickPhoto(id); }
+    else if (action === "remove-photo") removePhoto(id);
     else if (action === "nav-back") navBack();
     else if (action === "open-plan-recipe") {
       const value = state.week[day][slot];
@@ -3137,6 +3191,7 @@
   readHash();
   syncHistory(true);
   render();
+  if (window.PW_USER_PHOTOS) window.PW_USER_PHOTOS.ready.then((n) => { if (n) render(); });
   if (!state.tipSeen) {
     $("tipBody").textContent = PW.lastMigrated
       ? "Your meals and recipes from the previous version are still on this device. Tap a meal to pick a recipe. The shopping list groups itself by aisle, and Cook walks you through one step at a time."

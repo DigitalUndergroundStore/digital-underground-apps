@@ -3,7 +3,7 @@
 import html, json, pathlib
 R = pathlib.Path(__file__).resolve().parent.parent
 O = "https://digitalundergroundstore.com"
-IMG = O + "/community/og-dm-v2.jpg"
+IMG = O + "/community/og-dm-v3.jpg"
 e = lambda s: html.escape(s, quote=True)
 
 POSTS = [

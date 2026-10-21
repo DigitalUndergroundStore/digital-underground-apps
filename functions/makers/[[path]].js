@@ -29,7 +29,7 @@ async function allListings(context, kv) {
 export function cardHTML(r, i) {
   const href = "/community/p/?id=" + encodeURIComponent(r.id), n = e(r.name), rid = e(r.id);
   const st = r.stage && r.stage !== "Released" ? r.stage : "";
-  const badge = st ? `<span class="badge stage">${e(st)}</span>` : r.curated ? '<span class="badge" title="Curated by Digital Underground">★ Featured pick</span>' : "";
+  const badge = st ? `<span class="badge stage">${e(st)}</span>` : r.curated ? '<span class="badge" title="Curated by Digital Underground"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-1px"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg> Featured pick</span>' : "";
   const lbl = r.statusLabel ? `<span class="badge label">${e(String(r.statusLabel).slice(0, 24))}</span>` : "";
   const badges = lbl ? `<span class="badges">${badge}${lbl}</span>` : badge;
   const img = r.imageUrl;
@@ -159,7 +159,7 @@ function makerPage(p, rows) {
   const jsonld = { "@context": "https://schema.org", "@type": "ProfilePage", url: canonical, name: `${p.name} | Creators`,
     mainEntity: { "@type": "Organization", name: p.name, url: p.website || canonical, ...(p.logo ? { logo: abs(p.logo) } : {}), ...(p.bio ? { description: p.bio } : {}), sameAs: [p.website, ...Object.values(p.socials || {})].filter(Boolean) },
     hasPart: { "@type": "ItemList", numberOfItems: rows.length, itemListElement: rows.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.name, url: `${ORIGIN}/community/p/?id=${encodeURIComponent(r.id)}` })) } };
-  return shell({ title: `${p.name}: apps and tools by this creator | Digital Underground`, desc, canonical, image: abs(p.banner || p.logo || "/community/og-dm-v2.jpg"), imageAlt: `${p.name} banner`, jsonld, body, current: "maker" });
+  return shell({ title: `${p.name}: apps and tools by this creator | Digital Underground`, desc, canonical, image: abs(p.banner || p.logo || "/community/og-dm-v3.jpg"), imageAlt: `${p.name} banner`, jsonld, body, current: "maker" });
 }
 
 function directoryPage(makers) {
@@ -190,7 +190,7 @@ function directoryPage(makers) {
   const jsonld = { "@context": "https://schema.org", "@type": "CollectionPage", url: canonical, name: "Creators | Developer Marketplace",
     mainEntity: { "@type": "ItemList", numberOfItems: makers.length, itemListElement: makers.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.name, url: `${ORIGIN}/makers/${m.slug}/` })) } };
   return shell({ title: "Creators | Developer Marketplace | Digital Underground", desc: "Browse the independent makers on the Digital Underground Developer Marketplace and see every app, tool and game each one lists.",
-    canonical, image: `${ORIGIN}/community/og-dm-v2.jpg`, imageAlt: "Developer Marketplace by Digital Underground", jsonld, body, current: "dir" });
+    canonical, image: `${ORIGIN}/community/og-dm-v3.jpg`, imageAlt: "Developer Marketplace by Digital Underground", jsonld, body, current: "dir" });
 }
 
 const html = (s, status = 200) => new Response(s, { status, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=60, s-maxage=300", "X-Content-Type-Options": "nosniff" } });

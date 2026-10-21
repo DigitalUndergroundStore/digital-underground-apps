@@ -2,6 +2,8 @@
 """Generate /p/<slug>/ share pages, OG images, and index.json from store catalog."""
 from __future__ import annotations
 
+import importlib.util as _ilu, sys as _sys
+_spec=_ilu.spec_from_file_location("site_nav", __import__("pathlib").Path(__file__).with_name("site-nav.py")); _site_nav=_ilu.module_from_spec(_spec); _spec.loader.exec_module(_site_nav)
 import html
 import io
 import json
@@ -258,7 +260,7 @@ def main() -> None:
         make_og_image(p, og_path)
         page_dir = OUT / slug
         page_dir.mkdir(parents=True, exist_ok=True)
-        (page_dir / "index.html").write_text(render_page(p), encoding="utf-8")
+        (page_dir / "index.html").write_text(_site_nav.apply(render_page(p)), encoding="utf-8")
         index[slug] = {
             "name": p["name"],
             "price": p["price"],

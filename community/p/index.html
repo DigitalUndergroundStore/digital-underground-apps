@@ -106,7 +106,7 @@
       if (navigator.share) { navigator.share({ title: l.name, text: l.pitchShort, url: u }).catch(function () {}); return; }
       (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(function () { var t = document.createElement("div"); t.className = "toast2"; t.setAttribute("role", "status"); t.textContent = "Link copied"; document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2200); }).catch(function () {});
     });
-    document.querySelectorAll("img.dt-logo, .media img").forEach(function (im) { im.onerror = function () { im.onerror = null; im.src = "/community/og.jpg"; }; });
+    document.querySelectorAll("img.dt-logo, .media img").forEach(function (im) { im.onerror = function () { im.onerror = null; im.src = "/community/og-dm-v3.jpg"; }; });
     var cb = document.getElementById("contact-btn");
     if (cb) {
       var cp = document.getElementById("contact-panel"), cf = document.getElementById("contact-form"), cm = document.getElementById("contact-msg");

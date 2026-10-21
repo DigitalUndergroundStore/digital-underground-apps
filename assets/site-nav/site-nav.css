@@ -1,0 +1,31 @@
+/* Shared Digital Underground site header (matches v3 homepage + store v2). */
+.dun{position:sticky;top:0;z-index:60;background:rgba(7,6,15,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(139,92,246,.18);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0 0 1.25rem}
+.dun *{box-sizing:border-box}
+.dun-in{max-width:1200px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;gap:1.25rem}
+.dun-logo{display:flex;align-items:center;flex-shrink:0;line-height:0}
+.dun-logo img{display:block;height:34px;width:auto}
+.dun-links{display:flex;gap:.25rem;margin-left:1rem}
+.dun-links a{color:#c9c4e0;text-decoration:none;font-size:.9rem;font-weight:500;padding:.45rem .75rem;border-radius:10px;transition:color .2s,background .2s}
+.dun-links a:hover,.dun-links a[aria-current=page]{color:#fff;background:rgba(139,92,246,.14)}
+.dun-right{margin-left:auto;display:flex;align-items:center;gap:.6rem}
+.dun-cta{display:inline-flex;align-items:center;white-space:nowrap;padding:.5rem 1rem;border-radius:11px;font-size:.85rem;font-weight:600;color:#fff;text-decoration:none;background:linear-gradient(135deg,#7c3aed,#4f46e5);box-shadow:0 6px 18px rgba(124,58,237,.35)}
+.dun-cta:hover{filter:brightness(1.1)}
+.dun-menu{display:none;width:38px;height:38px;place-items:center;border:0;background:none;color:#e9e6f5;cursor:pointer;border-radius:10px;padding:0}
+.dun-menu svg{width:22px;height:22px}
+.dun-menu:hover{background:rgba(139,92,246,.14)}
+.dun-drawer{display:none}
+@media (max-width:900px){
+ .dun-links{display:none}.dun-menu{display:grid;margin-right:-.3rem}
+ .dun-in{padding:.6rem 1rem;gap:.6rem}
+ .dun-logo img{height:30px}
+ .dun-drawer.open{display:flex;flex-direction:column;gap:.2rem;padding:.5rem 1rem 1rem;border-top:1px solid rgba(139,92,246,.15)}
+ .dun-drawer a{color:#e9e6f5;text-decoration:none;padding:.7rem .6rem;border-radius:10px;font-weight:500}
+ .dun-drawer a:hover,.dun-drawer a[aria-current=page]{background:rgba(139,92,246,.14)}
+}
+@media (max-width:400px){.dun-cta{padding:.42rem .6rem;font-size:.74rem}.dun-logo img{height:26px}}
+@media (max-width:339px){.dun-cta{display:none}}
+@media (prefers-reduced-motion:reduce){.dun-links a{transition:none}}
+/* guard against page-level button/a/img rules */
+.dun .dun-menu{margin:0 -.3rem 0 0;padding:0;width:38px;height:38px;min-width:0;border:0;border-radius:10px;background:none;box-shadow:none;font:inherit;color:#e9e6f5}
+.dun .dun-logo img{max-width:none;border:0;border-radius:0;margin:0}
+.dun a{text-decoration:none}

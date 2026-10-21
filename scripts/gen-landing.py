@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Generate SEO landing pages (one folder per page) from PAGES below. Re-run after edits, then gen-sitemap.py."""
+import importlib.util as _ilu
+_spec=_ilu.spec_from_file_location("site_nav", __import__("os").path.join(__import__("os").path.dirname(__file__),"site-nav.py")); _site_nav=_ilu.module_from_spec(_spec); _spec.loader.exec_module(_site_nav)
 import os,json,html
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__))); B="https://digitalundergroundstore.com"; e=html.escape
 G="https://kerzy.gumroad.com/l/"
@@ -47,10 +49,10 @@ dict(slug="free-study-planner-for-students",title="Free Offline Study Planner fo
  cta=("Get Exam Desk free",G+"zpqpto"),cta2=("Get Due Desk free",G+"gfbgve"),
  faq=[("Are they really free?","Yes. Both are free on Gumroad."),("Do they need internet?","No. After downloading, they run offline in your browser."),("Can I use them on my phone?","Yes. A phone guide is included.")]),
 dict(slug="list-your-indie-app-free",title="List Your Indie App Free: Developer Marketplace",desc="A free place to list indie apps, games, tools and open-source projects. Submit in minutes, get a shareable listing page and reach buyers and AI agents through our MCP and API.",
- og="/community/og-dm-v2.jpg",h1="A free place to list your indie app or game",
+ og="/community/og-dm-v3.jpg",h1="A free place to list your indie app or game",
  lead="The Digital Underground Developer Marketplace showcases indie and open-source projects. Listing is free. You get a clean listing page with screenshots or video, and your project can be found through our public API and MCP server for AI agents.",
  points=["Free to list, with no commission on your own sales links","A shareable listing page with media","A creator dashboard to edit your listing","Discoverable by AI assistants through the /mcp server and the OpenAPI spec"],
- cta=("Submit your project","/community/submit/"),cta2=("Browse the marketplace","/community/"),
+ cta=("Submit your project","/community/submit/"),cta2=("Browse the marketplace","/"),
  faq=[("Does it cost anything to list?","No. Listing is free."),("What can I list?","Indie apps, games, developer tools, browser projects and open-source software."),("How do AI agents find my listing?","Through our public listings API, openapi.json and the /mcp server, which assistants can query."),("Are listings reviewed?","Yes. New submissions are reviewed before they appear.")]),
 ]
 TPL=open(os.path.join(R,"scripts","landing.tpl.html")).read()
@@ -63,5 +65,5 @@ for p in PAGES:
     .replace("{{FAQJSON}}",json.dumps(faq,ensure_ascii=False).replace("</","<\\/")).replace("{{H1}}",e(p["h1"])).replace("{{LEAD}}",e(p["lead"]))
     .replace("{{POINTS}}","".join(f"<li>{e(x)}</li>" for x in p["points"])).replace("{{CTA}}",a(p["cta"],"cta")+a(p["cta2"],"cta2"))
     .replace("{{FAQ}}","".join(f"<details><summary>{e(q)}</summary><p>{e(a_)}</p></details>" for q,a_ in p["faq"])).replace("{{OTHERS}}",others).replace("{{OGALT}}",e(p["h1"])))
-  os.makedirs(os.path.join(R,p["slug"]),exist_ok=True); open(os.path.join(R,p["slug"],"index.html"),"w").write(out)
+  os.makedirs(os.path.join(R,p["slug"]),exist_ok=True); open(os.path.join(R,p["slug"],"index.html"),"w").write(_site_nav.apply(out))
 print(len(PAGES),"pages")

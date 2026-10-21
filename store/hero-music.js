@@ -1,9 +1,9 @@
-/* Hero background music: "Solar Sail" by vitalezzz (CC0). Web Audio for a gapless loop; file loaded on first tap only. */
+/* Hero background music: "Lost Frontier" Kevin MacLeod (incompetech.com), licensed under CC BY 4.0 http://creativecommons.org/licenses/by/4.0/ (previous track: "Solar Sail" by vitalezzz, CC0, kept at /assets/audio/solar-sail-loop.mp3 for rollback). Web Audio for a gapless loop; file loaded on first tap only. */
 (function () {
   var btn = document.getElementById("hero-music");
   var AC = window.AudioContext || window.webkitAudioContext;
   if (!btn || !AC) return;
-  var KEY = "du_store_music", SRC = "/assets/audio/solar-sail-loop.mp3?v=1", VOL = 0.6, FADE_IN = 1.5, FADE_OUT = 0.6;
+  var KEY = "du_store_music", SRC = "/assets/audio/lost-frontier-loop.mp3?v=1", VOL = 0.6, FADE_IN = 1.5, FADE_OUT = 0.6;
   var ctx = null, gain = null, src = null, buf = null, loading = null, on = false, hiddenPaused = false;
   btn.hidden = false;
 

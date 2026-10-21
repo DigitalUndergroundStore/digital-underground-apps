@@ -41,11 +41,11 @@ export async function sha(s) {
 }
 
 /** Counts per listing for a week (ignored votes excluded). */
-export async function tally(kv, week) {
+export async function tally(kv, week, seen) {
   const counts = new Map(); let cursor;
   do {
     const r = await kv.list({ prefix: `lg:v:${week}:`, cursor, limit: 1000 });
-    for (const k of r.keys) { const m = k.metadata || {}; if (m.l && !m.ign) counts.set(m.l, (counts.get(m.l) || 0) + 1); }
+    for (const k of r.keys) { if (seen) seen.add(k.name); const m = k.metadata || {}; if (m.l && !m.ign) counts.set(m.l, (counts.get(m.l) || 0) + 1); }
     cursor = r.list_complete ? null : r.cursor;
   } while (cursor);
   return counts;

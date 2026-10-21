@@ -17,14 +17,25 @@
     }).join("") || '<li class="lg-empty">' + (data.eligible.length ? "No matching projects." : "No projects in the league yet.") + '</li>';
     if (data.voted && !msg.textContent) say("You've voted this week. Come back Monday to vote again.", "ok");
   }
-  function load() { return fetch("/api/league", { credentials: "same-origin" }).then(function (r) { return r.json(); }).then(function (d) { data = d; render(); }).catch(function () { st.innerHTML = '<li class="lg-empty">Couldn\'t load the league. Try again soon.</li>'; }); }
+  function load() { return fetch("/api/league", { credentials: "same-origin", cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { data = d; render(); }).catch(function () { st.innerHTML = '<li class="lg-empty">Couldn\'t load the league. Try again soon.</li>'; }); }
   pick.addEventListener("click", function (e) {
     var b = e.target.closest("button[data-id]"); if (!b || b.disabled) return;
     [].forEach.call(pick.querySelectorAll("button"), function (x) { x.disabled = true; }); say("Counting your vote…");
     fetch("/api/league", { method: "POST", credentials: "same-origin", headers: { "content-type": "application/json" }, body: JSON.stringify({ id: b.getAttribute("data-id"), hp: document.getElementById("hp").value }) })
       .then(function (r) { return r.json().catch(function () { return {}; }); })
-      .then(function (d) { if (d.ok) say("Thanks! Your vote is in.", "ok"); else say(d.error || "Couldn't record your vote.", "err"); return load(); });
+      .then(function (d) {
+        if (d.ok) { say("Thanks! Your vote is in.", "ok"); optimistic(d.voted); }
+        else say(d.error || "Couldn't record your vote.", "err");
+        return load();
+      });
   });
+  function optimistic(id) {
+    if (!data || !id) return;
+    var s = data.standings.filter(function (x) { return x.id === id; })[0];
+    if (s) s.votes++; else { var l = data.eligible.filter(function (x) { return x.id === id; })[0]; if (l) data.standings.push({ id: l.id, name: l.name, makerName: l.makerName, imageUrl: l.imageUrl, url: "/community/p/?id=" + encodeURIComponent(l.id), votes: 1 }); }
+    data.standings.sort(function (a, b) { return b.votes - a.votes || a.name.localeCompare(b.name); });
+    data.totalVotes++; data.voted = id; render();
+  }
   q.addEventListener("input", function () { if (data) render(); });
   load();
 })();

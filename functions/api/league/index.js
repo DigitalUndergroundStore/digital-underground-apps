@@ -23,10 +23,19 @@ async function voterKeys(request, week, cookie) {
 export async function onRequestGet({ request, env }) {
   const kv = getKv(env); const week = weekOf();
   const list = await eligible(new URL(request.url).origin);
-  const counts = kv ? await tally(kv, week) : new Map();
+  const seen = new Set();
+  const counts = kv ? await tally(kv, week, seen) : new Map();
   let voted = null;
   if (kv) {
     const { ipKeys, ckKey } = await voterKeys(request, week, cookieOf(request));
+    // KV list() is eventually consistent (new keys can take ~60s to appear). Votes from this
+    // visitor's network that a direct read sees but the list doesn't yet are added so a voter
+    // always sees their own vote counted right away.
+    for (const k of ipKeys) {
+      if (seen.has(k)) continue;
+      const { value, metadata } = await kv.getWithMetadata(k);
+      if (value && metadata && !metadata.ign) counts.set(value, (counts.get(value) || 0) + 1);
+    }
     voted = (ckKey && (await kv.get(ckKey))) || null;
     if (!voted && (await Promise.all(ipKeys.map((k) => kv.get(k)))).every(Boolean)) voted = true; // network used all its votes
   }

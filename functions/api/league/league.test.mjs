@@ -9,6 +9,7 @@ function memKv() {
     async get(k, t) { const e = m.get(k); return e ? (t === "json" ? JSON.parse(e.v) : e.v) : null; },
     async put(k, v, o = {}) { m.set(k, { v, metadata: o.metadata }); },
     async delete(k) { m.delete(k); },
+    async getWithMetadata(k) { const e = m.get(k); return { value: e ? e.v : null, metadata: e ? e.metadata : null }; },
     async list({ prefix }) { return { keys: [...m].filter(([k]) => k.startsWith(prefix)).map(([name, e]) => ({ name, metadata: e.metadata })), list_complete: true }; },
   };
 }
@@ -52,4 +53,13 @@ test("3 votes per hashed IP, 1 per cookie, Kerzy rejected, empty start", async (
   assert.equal((await vote(env, "cm_a", "2.2.2.2")).status, 200);
   const g2 = await (await onRequestGet({ env, request: new Request("https://x/api/league", { headers: { "CF-Connecting-IP": "9.9.9.9" } }) })).json();
   assert.equal(g2.totalVotes, 4);
+});
+
+test("own vote counts even when KV list() lags", async () => {
+  const kv = memKv(); const env = { COMMUNITY_KV: kv };
+  assert.equal((await vote(env, "cm_a", "3.3.3.3")).status, 200);
+  const list = kv.list; kv.list = async () => ({ keys: [], list_complete: true }); // simulate stale list
+  const g = await (await onRequestGet({ env, request: new Request("https://x/api/league", { headers: { "CF-Connecting-IP": "3.3.3.3" } }) })).json();
+  assert.equal(g.totalVotes, 1); assert.equal(g.standings[0].id, "cm_a");
+  kv.list = list;
 });

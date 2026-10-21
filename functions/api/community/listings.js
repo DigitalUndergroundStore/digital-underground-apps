@@ -1,10 +1,12 @@
 import {
   getKv,
+  kvGetIndex,
   json,
   listApproved,
   publicListing,
   listingContactAddress,
 } from "../../_lib/community.js";
+import { hiddenByReports } from "../../_lib/reports.js";
 
 export async function onRequest(context) {
   const { request, env } = context;
@@ -56,11 +58,15 @@ export async function onRequest(context) {
   if (!Array.isArray(pinned)) pinned = [];
   const rank = (id) => { const i = pinned.indexOf(id); return i < 0 ? 1e9 : i; };
   const HIDDEN = new Set(['cm_kerzy_easytracker']); // pulled from the marketplace for now (data kept)
-  for (const [id, row] of byId) if (HIDDEN.has(id) || row?.hidden) byId.delete(id);
+  let reported = new Set();
+  if (kv) { try { reported = await hiddenByReports(kv); for (const id of (await kvGetIndex(kv)).flagged) reported.add(id); } catch {} }
+  for (const [id, row] of byId) if (HIDDEN.has(id) || row?.hidden || reported.has(id)) byId.delete(id);
   const merged = [...byId.values()].sort((a, b) =>
     rank(a.id) - rank(b.id) || (a.curated ? 1 : 0) - (b.curated ? 1 : 0) || (a.name || "").localeCompare(b.name || "")
   );
 
+  // Seeded listings hidden after reports: stub tells the browse page (which also loads listings.json) to drop them.
+  for (const id of reported) if (staticListings.some((r) => r.id === id)) merged.push({ id, hidden: true });
   return json(
     { listings: merged, storage: kv ? "kv" : "static_only" },
     200,

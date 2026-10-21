@@ -2,6 +2,8 @@ import {
   checkRate,
   clientIp,
   getKv,
+  isReturningMaker,
+  screenedStatus,
   json,
   notifySubmission,
   saveListing,
@@ -122,10 +124,15 @@ export async function onRequest(context) {
   }
   try {
     const screen = await screenListing(env, listing);
-    // Every new listing waits for owner approval; screening can only reject or flag.
-    listing.status = screen.decision === "rejected" ? "rejected" : "pending";
+    // First-time makers wait for owner approval. A verified returning maker (signed in or password
+    // checked, with an earlier approved listing) goes live once the automatic checks pass.
+    const returning = signIn && !isNew && (await isReturningMaker(kv, acct, listing.id));
+    listing.status = screenedStatus(screen.decision, returning);
+    if (listing.status === "approved") listing.autoApprovedAt = Date.now();
     listing.screening = {
-      reasons: screen.decision === "approved" ? ["Passed automatic checks: waiting for owner approval."] : screen.reasons,
+      reasons: screen.decision === "approved"
+        ? [returning ? "Passed automatic checks: auto-approved (returning maker)." : "Passed automatic checks: waiting for owner approval."]
+        : screen.reasons,
       detail: screen.detail,
       screenedAt: Date.now(),
     };

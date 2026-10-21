@@ -18,7 +18,7 @@ dict(slug="what-is-the-developer-marketplace", date="2026-10-20",
 <p>Anything a maker built and can link to over https: released products, betas, and projects still in development. Each listing shows a stage (Concept, In development, Beta / testing, Released or Discontinued) so visitors know what they are getting. Makers can also add a short status label such as "Needs testers".</p>
 <p>Alongside maker submissions we include a small set of curated open-source picks, clearly marked "Featured pick", so the marketplace is useful from day one.</p>
 <h2>How listings are reviewed</h2>
-<p>Every new listing goes through automatic checks for spam, scams and unsafe content, and then waits for a human approval before it goes live. Edits to a live listing are screened again. The goal is a marketplace people can trust when they click through.</p>
+<p>Every new listing goes through automatic checks for spam, scams and unsafe content. A maker's first listing then gets a human review, usually within a few hours; later listings from approved makers go live automatically once they pass the checks. Visitors can report a listing, and reported listings are hidden until we look at them. Edits to a live listing are screened again. The goal is a marketplace people can trust when they click through.</p>
 <h2>Creator pages</h2>
 <p>Each maker gets a public page at <code>/makers/&lt;name&gt;/</code> with their logo, a short bio, links and all their listings in one grid. Browse them on the <a href="/makers/">Creators</a> page.</p>
 <h2>Who it's for</h2>

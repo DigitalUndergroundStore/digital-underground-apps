@@ -1,3 +1,4 @@
+import { hiddenByReports } from "../../_lib/reports.js";
 import { getKv, json, kvGetListing, publicListingDetail, repairVideoHold, saveListing } from "../../_lib/community.js";
 
 /** GET /api/community/listing?id=… — public detail for an approved listing. */
@@ -9,6 +10,9 @@ export async function onRequest(context) {
   if (!/^cm_[a-z0-9_]{4,40}$/.test(id)) return json({ error: "Not found." }, 404);
   const row = kv ? await kvGetListing(kv, id) : null;
   if (kv && row && repairVideoHold(row)) await saveListing(kv, row);
+  // Hidden after reports: KV listings by status, seeded ones via the reports map.
+  if (row && row.status === "flagged") return json({ error: "Not found." }, 404);
+  if (kv && !row && (await hiddenByReports(kv)).has(id)) return json({ error: "Not found." }, 404);
   if (!row || row.status !== "approved") {
     // Fall back to the owner's static seed (community/listings.json), same as the browse endpoint.
     try {

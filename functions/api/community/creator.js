@@ -11,7 +11,7 @@ import {
   parseImageField,
   repairVideoHold,
   sanitizeText,
-  saveListing, normalizeStage, normalizeStatusLabel } from "../../_lib/community.js";
+  saveListing, normalizeStage, normalizeStatusLabel, isReturningMaker, notifySubmission } from "../../_lib/community.js";
 import { screenListing } from "../../_lib/community-screening.js";
 import {
   accountView,
@@ -77,12 +77,18 @@ async function profileAction(env, kv, acct, body, save) {
 
 const UNAUTH = () => json({ error: "This dashboard link is not valid. Lost your link? Email digitalunderground.store@proton.me" }, 401);
 
-async function rescreen(env, row) {
+async function rescreen(env, row, returning = false) {
   try {
     const s = await screenListing(env, row);
     row.screening = { reasons: s.reasons, detail: s.detail, screenedAt: Date.now() };
-    // Only a listing the owner already approved can stay live on a passing re-screen;
-    // anything not yet approved (new, pending, rejected, republished) goes to the owner queue.
+    // A listing the owner already approved can stay live on a passing re-screen, and so can a
+    // returning maker's (another listing already approved) pending/unpublished one. Rejected
+    // listings and first-time makers' listings go to the owner queue.
+    if (s.decision === "approved" && returning && row.status !== "approved" && row.status !== "rejected") {
+      row.screening.reasons = ["Passed automatic checks: auto-approved (returning maker)."];
+      row.autoApprovedAt = Date.now();
+      return "approved";
+    }
     if (s.decision === "approved" && row.status !== "approved" && !(row.status === "unpublished" && row.ownerApprovedAt)) {
       row.screening.reasons = ["Passed automatic checks: waiting for owner approval."];
       return "pending";
@@ -218,6 +224,9 @@ export async function onRequest(context) {
   const id = typeof body.id === "string" ? body.id.trim() : "";
   const row = await ownedListing(kv, acct, id);
   if (!row) return json({ error: "Listing not found." }, 404);
+  if (row.status === "flagged" && action !== "delete") {
+    return json({ error: "This listing is on hold after visitor reports while we take a look. Contact support if you have questions." }, 409);
+  }
 
   if (action === "delete") {
     await deleteListing(kv, id);
@@ -251,9 +260,10 @@ export async function onRequest(context) {
 
   if (action === "republish") {
     if (row.status !== "unpublished") return json({ error: "Listing is not unpublished." }, 400);
-    row.status = await rescreen(env, row);
+    row.status = await rescreen(env, row, await isReturningMaker(kv, acct, row.id));
     row.updatedAt = Date.now();
     await saveListing(kv, row);
+    if (row.status === "approved") context.waitUntil(notifySubmission(env, row, request).catch(() => {}));
     return json({ ok: true, listing: creatorListing(row) });
   }
 
@@ -306,7 +316,7 @@ export async function onRequest(context) {
       row.pendingVideo = { url: vid.videoUrl, at: Date.now() };
       if (vid.videoUrl === row.videoApprovedUrl) { row.videoUrl = vid.videoUrl; delete row.videoFile; delete row.pendingVideo; }
     }
-    const decision = await rescreen(env, row);
+    const decision = await rescreen(env, row, await isReturningMaker(kv, acct, row.id));
     // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
     const prevStatus = row.status;
     row.status = row.status === "unpublished" && decision !== "rejected" ? "unpublished" : decision;
@@ -315,6 +325,8 @@ export async function onRequest(context) {
     row.updatedAt = Date.now();
     row.editedByCreatorAt = row.updatedAt;
     await saveListing(kv, row);
+    // Owner gets the usual email when an edit takes a not-yet-live listing live (returning maker).
+    if (prevStatus !== "approved" && row.status === "approved") context.waitUntil(notifySubmission(env, row, request).catch(() => {}));
     if (drop.length) context.waitUntil(Promise.all(drop.map((d) => deleteVideo(kv, d).catch(() => {}))));
     return json({ ok: true, listing: creatorListing(row) });
   }

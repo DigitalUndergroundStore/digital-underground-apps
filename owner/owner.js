@@ -40,7 +40,7 @@
     });
     $("logout-btn").hidden = name === "login";
     if (name === "home") loadHome();
-    if (name === "queue") { loadQueue("pending"); loadMakers(); }
+    if (name === "queue") { loadQueue("pending"); loadMakers(); loadReports(); }
     if (name === "contacts") loadContacts("");
     if (name === "support") loadSupport("open");
     if (name === "analytics") loadAnalytics();
@@ -60,7 +60,7 @@
       $("home-sub").textContent =
         (out.d.listingsLive || 0) + " live listings · " + (out.d.contactsTotal || 0) + " contacts";
       $("home-cards").innerHTML =
-        card("queue", "Review queue", pending, pending ? pending + " waiting" : "All clear", pending ? "badge" : "badge ok") +
+        card("queue", "Review queue", pending + (out.d.flaggedCount || 0), (pending ? pending + " waiting" : "All clear") + (out.d.flaggedCount ? " · " + out.d.flaggedCount + " flagged" : ""), pending || out.d.flaggedCount ? "badge" : "badge ok") +
         card("support", "Support inbox", support, support ? "Needs a reply" : "Inbox zero", support ? "badge" : "badge ok") +
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
         card("analytics", "Analytics", (w.views || 0), (w.clicks || 0) + " clicks · 7 days", "") +
@@ -122,6 +122,33 @@
     if (body.action === "reject_profile") body.reason = prompt("Optional reason shown to the maker:", "") || "";
     b.disabled = true;
     api("makers", { method: "POST", body: body }).then(function (out) { if (!out.r.ok) alert((out.d && out.d.error) || "Failed"); loadMakers(); });
+  });
+
+  function loadReports() {
+    api("reports").then(function (out) {
+      var box = $("report-list"); if (!box || !out.r.ok) return;
+      var rows = (out.d && out.d.reports) || [];
+      box.innerHTML = rows.length ? rows.map(function (r) {
+        var counts = Object.keys(r.counts || {}).map(function (k) { return esc(k) + " ×" + r.counts[k]; }).join(", ");
+        var notes = (r.reports || []).filter(function (x) { return x.note; }).map(function (x) { return "<li>" + esc(x.reason) + ": " + esc(x.note) + "</li>"; }).join("");
+        var label = r.state === "flagged" ? "Hidden (flagged)" : r.state === "open" ? "Live, below threshold" : r.state === "removed" ? "Removed (hidden)" : "Restored";
+        return '<article class="item"><strong>' + esc(r.name || r.id) + "</strong>" +
+          '<div class="small">' + esc(label) + " · " + r.reporters + " reporter(s)" + (r.seed ? " · seeded listing" : "") + "</div>" +
+          '<p class="small">Reasons: ' + (counts || "-") + "</p>" + (notes ? '<ul class="small">' + notes + "</ul>" : "") +
+          '<p><a href="/community/p/?id=' + encodeURIComponent(r.id) + '" target="_blank" rel="noopener">Open listing ↗</a></p>' +
+          '<div class="actions">' +
+          (r.state !== "restored" && r.state !== "open" ? '<button type="button" class="btn ok" data-rep="restore" data-id="' + esc(r.id) + '">Restore</button>' : "") +
+          (r.state !== "removed" ? '<button type="button" class="btn danger" data-rep="remove" data-id="' + esc(r.id) + '">Remove</button>' : "") +
+          '<button type="button" class="btn ghost" data-rep="dismiss" data-id="' + esc(r.id) + '">Clear reports</button></div></article>';
+      }).join("") : '<p class="muted">No reports.</p>';
+    });
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-rep]"); if (!b) return;
+    var act = b.getAttribute("data-rep");
+    if (act === "remove" && !confirm("Remove keeps this listing hidden for good (data is kept, nothing deleted). Continue?")) return;
+    b.disabled = true;
+    api("reports", { method: "POST", body: { action: act, id: b.getAttribute("data-id") } }).then(function (out) { if (!out.r.ok) alert((out.d && out.d.error) || "Failed"); loadReports(); });
   });
 
   function loadQueue(tab) {

@@ -96,6 +96,12 @@
           (host ? "<div><dt>Website</dt><dd>" + esc(host) + "</dd></div>" : "") +
         '</dl><a class="btn2 primary" style="width:100%;margin-top:14px" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit site' + EXT + "</a></section>" +
         '<p class="muted small" style="margin:12px 4px 0">Listed free on the Digital Underground Developer Marketplace. Purchases happen on the maker\'s site.</p>' +
+        '<p style="margin:10px 4px 0"><button type="button" id="report-btn" aria-expanded="false" aria-controls="report-panel" style="background:none;border:0;padding:4px 0;color:#94a3b8;font:500 12px/1.4 ui-sans-serif,system-ui,sans-serif;text-decoration:underline;cursor:pointer">&#9873; Report</button></p>' +
+        '<section class="panel" id="report-panel" hidden style="margin-top:8px"><h2>Report this listing</h2><form id="report-form" novalidate style="display:grid;gap:10px">' +
+          '<label class="small">Reason<select name="reason" required style="display:block;width:100%;margin-top:4px;padding:9px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"><option value="">Choose a reason</option><option>Spam or scam</option><option>Broken link</option><option>Misleading</option><option>Inappropriate</option><option>Other</option></select></label>' +
+          '<label class="small">Note (optional)<textarea name="note" maxlength="500" rows="3" style="display:block;width:100%;margin-top:4px;padding:9px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"></textarea></label>' +
+          '<div style="position:absolute;left:-9999px" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>' +
+          '<button type="submit" class="btn2" style="flex:none">Send report</button><p id="report-msg" class="small" role="status" style="margin:0"></p></form></section>' +
       "</aside></div>";
     var st = document.getElementById("sticky");
     st.innerHTML = '<div class="s-meta"><b>' + esc(l.name) + "</b><span>" + price + '</span></div><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener" tabindex="-1">Visit' + EXT + "</a>";
@@ -123,6 +129,20 @@
           .then(function () { btn.disabled = false; });
       });
       if (location.hash === "#contact") setTimeout(function () { cb.click(); }, 50);
+    }
+    var rb = document.getElementById("report-btn");
+    if (rb) {
+      var rp = document.getElementById("report-panel"), rf = document.getElementById("report-form"), rm = document.getElementById("report-msg");
+      rb.addEventListener("click", function () { rp.hidden = !rp.hidden; rb.setAttribute("aria-expanded", String(!rp.hidden)); if (!rp.hidden) rf.reason.focus(); });
+      rf.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!rf.reason.value) { rm.textContent = "Please choose a reason."; return; }
+        var btn = rf.querySelector("button[type=submit]"); btn.disabled = true; rm.textContent = "Sending…";
+        fetch("/api/community/report", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: l.id, reason: rf.reason.value, note: rf.note.value, website: rf.website.value }) })
+          .then(function (r) { return r.json().catch(function () { return {}; }); })
+          .then(function (d) { if (d && d.ok) { rf.reset(); rm.textContent = "Thanks. We'll take a look."; } else { rm.textContent = (d && d.error) || "Couldn't send right now. Please try again."; btn.disabled = false; } })
+          .catch(function () { rm.textContent = "Couldn't send right now. Please try again."; btn.disabled = false; });
+      });
     }
     if (window.duTrack) duTrack.view(l.id);
   });

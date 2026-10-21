@@ -347,13 +347,14 @@ export function getKv(env) {
 export async function kvGetIndex(kv) {
   const raw = await kv.get(INDEX_KEY, "json");
   if (!raw || typeof raw !== "object") {
-    return { pending: [], approved: [], rejected: [], unpublished: [] };
+    return { pending: [], approved: [], rejected: [], unpublished: [], flagged: [] };
   }
   return {
     pending: Array.isArray(raw.pending) ? raw.pending : [],
     approved: Array.isArray(raw.approved) ? raw.approved : [],
     rejected: Array.isArray(raw.rejected) ? raw.rejected : [],
     unpublished: Array.isArray(raw.unpublished) ? raw.unpublished : [],
+    flagged: Array.isArray(raw.flagged) ? raw.flagged : [],
   };
 }
 
@@ -405,6 +406,28 @@ export async function savePendingListing(kv, listing) {
   return saveListing(kv, row);
 }
 
+/**
+ * Returning maker = the verified creator account already has at least one OTHER listing that the
+ * owner approved before (ownerApprovedAt) or that is live now. Flagged/rejected listings never count.
+ * Such makers' new listings and edits go live straight after the automatic checks.
+ */
+export async function isReturningMaker(kv, acct, excludeId) {
+  if (!kv || !acct || !Array.isArray(acct.listingIds)) return false;
+  for (const id of acct.listingIds) {
+    if (!id || id === excludeId) continue;
+    const row = await kvGetListing(kv, id);
+    if (!row || row.creatorId !== acct.id || row.status === "flagged" || row.status === "rejected") continue;
+    if (row.status === "approved" || row.ownerApprovedAt) return true;
+  }
+  return false;
+}
+
+/** Status after screening: rejected stays rejected; a pass goes live only for returning makers. */
+export function screenedStatus(decision, returning) {
+  if (decision === "rejected") return "rejected";
+  return decision === "approved" && returning ? "approved" : "pending";
+}
+
 /** Save listing and place id in the index bucket matching listing.status. */
 export async function saveListing(kv, listing) {
   const status = listing.status || "pending";
@@ -414,9 +437,11 @@ export async function saveListing(kv, listing) {
   index.approved = index.approved.filter((x) => x !== listing.id);
   index.rejected = index.rejected.filter((x) => x !== listing.id);
   index.unpublished = index.unpublished.filter((x) => x !== listing.id);
+  index.flagged = index.flagged.filter((x) => x !== listing.id);
   if (status === "approved") index.approved.push(listing.id);
   else if (status === "rejected") index.rejected.push(listing.id);
   else if (status === "unpublished") index.unpublished.push(listing.id);
+  else if (status === "flagged") index.flagged.push(listing.id);
   else index.pending.push(listing.id);
   await kvPutListing(kv, listing);
   await kvSaveIndex(kv, index);
@@ -482,6 +507,7 @@ export async function setListingStatus(kv, id, status) {
   index.approved = index.approved.filter((x) => x !== id);
   index.rejected = index.rejected.filter((x) => x !== id);
   index.unpublished = index.unpublished.filter((x) => x !== id);
+  index.flagged = index.flagged.filter((x) => x !== id);
   listing.status = status;
   listing.updatedAt = Date.now();
   // A human approval also signs off the current video, so later clean edits stay live.
@@ -491,6 +517,7 @@ export async function setListingStatus(kv, id, status) {
   else if (status === "pending") index.pending.push(id);
   else if (status === "rejected") index.rejected.push(id);
   else if (status === "unpublished") index.unpublished.push(id);
+  else if (status === "flagged") index.flagged.push(id);
   await kvPutListing(kv, listing);
   await kvSaveIndex(kv, index);
   return listing;
@@ -525,6 +552,7 @@ export async function deleteListing(kv, id) {
   index.approved = index.approved.filter((x) => x !== id);
   index.rejected = index.rejected.filter((x) => x !== id);
   index.unpublished = index.unpublished.filter((x) => x !== id);
+  index.flagged = index.flagged.filter((x) => x !== id);
   await kvDeleteListing(kv, id);
   await kvSaveIndex(kv, index);
 }
@@ -573,6 +601,7 @@ export async function verifyTurnstile(env, token, ip) {
 function statusLabel(status) {
   if (status === "approved") return "Approved (live)";
   if (status === "rejected") return "Rejected";
+  if (status === "flagged") return "Flagged (hidden after reports)";
   return "Pending review";
 }
 
@@ -731,7 +760,7 @@ export async function listContacts(kv) {
 export async function backfillContactsFromListings(kv) {
   if (!kv) return { upserted: 0 };
   const index = await kvGetIndex(kv);
-  const ids = [...new Set([...(index.pending || []), ...(index.approved || []), ...(index.rejected || []), ...(index.unpublished || [])])];
+  const ids = [...new Set([...(index.pending || []), ...(index.approved || []), ...(index.rejected || []), ...(index.unpublished || []), ...(index.flagged || [])])];
   let upserted = 0;
   for (const id of ids) {
     const row = await kvGetListing(kv, id);

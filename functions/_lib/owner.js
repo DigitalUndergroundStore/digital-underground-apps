@@ -273,6 +273,7 @@ export async function buildOverview(kv, env) {
     supportOpen: supportOpen.length,
     contactsTotal: contacts.length,
     listingsLive: (index.approved || []).length,
+    flaggedCount: Object.values((await kv.get("community:reports", "json")) || {}).filter((e) => e && e.state === "flagged").length,
     backup,
   };
 }
@@ -302,6 +303,7 @@ export async function listAllListings(kv) {
     ["approved", index.approved],
     ["rejected", index.rejected],
     ["unpublished", index.unpublished],
+    ["flagged", index.flagged],
   ];
   const out = [];
   const seen = new Set();

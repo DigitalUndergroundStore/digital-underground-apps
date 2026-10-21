@@ -19,6 +19,7 @@ import {
 import { listSubscribers, subscribersToCsv } from "../../_lib/subscribers.js";
 import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
 import { promotePendingVideo as _ppv } from "../../_lib/community.js";
+import { getReports, ownerReportView, resolveReport } from "../../_lib/reports.js";
 
 const BACKUP_BASE = "https://du-backup.digitalunderground-store.workers.dev";
 
@@ -115,6 +116,22 @@ export async function onRequest(context) {
       if (!r) return json({ error: "Nothing pending for that maker." }, 404);
       return json({ ok: true });
     }
+  }
+
+  // Reported listings: flagged (auto-hidden) first, then open reports below the threshold.
+  if (head === "reports" && request.method === "GET") {
+    const m = await getReports(kv);
+    const order = { flagged: 0, open: 1, removed: 2, restored: 3 };
+    const reports = Object.values(m).map(ownerReportView).sort((a, b) => (order[a.state] ?? 9) - (order[b.state] ?? 9) || (b.flaggedAt || 0) - (a.flaggedAt || 0));
+    return json({ reports });
+  }
+  if (head === "reports" && request.method === "POST") {
+    let body;
+    try { body = await request.json(); } catch { return json({ error: "Invalid JSON." }, 400); }
+    const id = typeof body.id === "string" ? body.id.trim() : "";
+    if (!id || !["restore", "remove", "dismiss"].includes(body.action)) return json({ error: "Use restore, remove or dismiss with an id." }, 400);
+    const r = await resolveReport(kv, id, body.action);
+    return r ? json({ ok: true, report: r }) : json({ error: "No reports for this listing." }, 404);
   }
 
   if (head === "queue" && request.method === "GET") {

@@ -1,0 +1,55 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { weekOf, weekEndsAt, prevWeek, isKerzy, rank } from "../../_lib/league.js";
+import { onRequestPost, onRequestGet } from "./index.js";
+
+function memKv() {
+  const m = new Map();
+  return {
+    async get(k, t) { const e = m.get(k); return e ? (t === "json" ? JSON.parse(e.v) : e.v) : null; },
+    async put(k, v, o = {}) { m.set(k, { v, metadata: o.metadata }); },
+    async delete(k) { m.delete(k); },
+    async list({ prefix }) { return { keys: [...m].filter(([k]) => k.startsWith(prefix)).map(([name, e]) => ({ name, metadata: e.metadata })), list_complete: true }; },
+  };
+}
+const LISTINGS = [
+  { id: "cm_a", name: "Alpha", makerName: "Ann" }, { id: "cm_b", name: "Beta", makerName: "Bob" },
+  { id: "cm_kerzy_x", name: "Kerzy Game", makerName: "Kerzy Labs" }, { id: "cm_pick_y", name: "Pick", makerName: "X", curated: true },
+];
+globalThis.fetch = async () => new Response(JSON.stringify({ listings: LISTINGS }));
+const UA = "Mozilla/5.0 (iPhone) AppleWebKit/605.1.15 Safari/604.1";
+const vote = (env, id, ip, cookie) => onRequestPost({ env, request: new Request("https://x/api/league", { method: "POST",
+  headers: { "content-type": "application/json", "CF-Connecting-IP": ip, "user-agent": UA, ...(cookie ? { cookie: "du_lv=" + cookie } : {}) }, body: JSON.stringify({ id }) }) });
+
+test("week starts Monday 00:00 ET, across DST", () => {
+  assert.equal(weekOf(Date.parse("2026-10-26T03:59:00Z")), "2026-10-19");
+  assert.equal(weekOf(Date.parse("2026-10-26T04:00:00Z")), "2026-10-26");
+  assert.equal(new Date(weekEndsAt("2026-10-26")).toISOString(), "2026-11-02T05:00:00.000Z");
+  assert.equal(prevWeek("2026-10-26"), "2026-10-19");
+});
+
+test("Kerzy Labs listings are not eligible", () => {
+  assert.ok(isKerzy(LISTINGS[2])); assert.ok(!isKerzy(LISTINGS[0]));
+});
+
+test("rank: only real votes, most first", () => {
+  assert.deepEqual(rank(LISTINGS, new Map()), []);
+  assert.deepEqual(rank(LISTINGS, new Map([["cm_a", 1], ["cm_b", 2]])).map((r) => r.id), ["cm_b", "cm_a"]);
+});
+
+test("3 votes per hashed IP, 1 per cookie, Kerzy rejected, empty start", async () => {
+  const env = { COMMUNITY_KV: memKv() };
+  const g = await (await onRequestGet({ env, request: new Request("https://x/api/league") })).json();
+  assert.equal(g.totalVotes, 0); assert.deepEqual(g.standings, []);
+  assert.deepEqual(g.eligible.map((l) => l.id), ["cm_a", "cm_b"]);
+  assert.equal((await vote(env, "cm_kerzy_x", "1.1.1.1")).status, 400);
+  const r1 = await vote(env, "cm_a", "1.1.1.1"); assert.equal(r1.status, 200);
+  const ck = r1.headers.get("set-cookie").match(/du_lv=(\w+)/)[1];
+  assert.equal((await vote(env, "cm_b", "1.1.1.1", ck)).status, 409, "same cookie blocked");
+  assert.equal((await vote(env, "cm_b", "1.1.1.1")).status, 200);
+  assert.equal((await vote(env, "cm_b", "1.1.1.1")).status, 200);
+  assert.equal((await vote(env, "cm_b", "1.1.1.1")).status, 409, "4th from same IP blocked");
+  assert.equal((await vote(env, "cm_a", "2.2.2.2")).status, 200);
+  const g2 = await (await onRequestGet({ env, request: new Request("https://x/api/league", { headers: { "CF-Connecting-IP": "9.9.9.9" } }) })).json();
+  assert.equal(g2.totalVotes, 4);
+});

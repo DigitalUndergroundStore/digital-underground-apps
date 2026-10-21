@@ -14,7 +14,7 @@
     pick.innerHTML = data.eligible.filter(function (l) { return !f || (l.name + " " + l.makerName).toLowerCase().indexOf(f) >= 0; }).map(function (l) {
       var mine = data.voted === l.id;
       return '<li class="' + (mine ? "is-mine" : "") + '">' + img(l.imageUrl) + '<span class="t"><b>' + esc(l.name) + "</b><small>by " + esc(l.makerName) + '</small></span><button type="button" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted ✓" : "Vote") + "</button></li>";
-    }).join("") || '<li class="lg-empty">No matching projects.</li>';
+    }).join("") || '<li class="lg-empty">' + (data.eligible.length ? "No matching projects." : "No projects in the league yet.") + '</li>';
     if (data.voted && !msg.textContent) say("You've voted this week. Come back Monday to vote again.", "ok");
   }
   function load() { return fetch("/api/league", { credentials: "same-origin" }).then(function (r) { return r.json(); }).then(function (d) { data = d; render(); }).catch(function () { st.innerHTML = '<li class="lg-empty">Couldn\'t load the league. Try again soon.</li>'; }); }

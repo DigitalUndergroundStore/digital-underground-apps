@@ -1,7 +1,7 @@
 /**
  * Maker League: free weekly vote. Weeks start Monday 00:00 America/New_York and are computed
  * from the date (no cron). Week id = that Monday as YYYY-MM-DD.
- * KV keys (COMMUNITY_KV): lg:v:<week>:<voterHash> -> listingId (metadata {l, ign}),
+ * KV keys (COMMUNITY_KV): lg:v:<week>:<ipHash>:<slot 0-2> -> listingId (up to IP_VOTES per hashed IP) (metadata {l, ign}),
  * lg:c:<week>:<cookieHash> -> "1", lg:w:<week> -> cached final winner of a finished week.
  */
 const TZ = "America/New_York";
@@ -51,12 +51,14 @@ export async function tally(kv, week) {
   return counts;
 }
 
-/** Live, maker-made listings (excludes DU-curated third-party picks). Same source as the marketplace. */
+/** Kerzy Labs (the owner's own studio) stays on the marketplace but is not in the League. */
+export function isKerzy(l) { return /^cm_kerzy_/.test(l.id) || /kerzy/i.test(l.makerName || "") || l.makerSlug === "kerzy-labs"; }
+/** Live, maker-made listings (excludes DU-curated third-party picks and Kerzy Labs). Same source as the marketplace. */
 export async function eligible(origin) {
   try {
     const r = await fetch(`${origin}/api/community/listings`, { headers: { accept: "application/json" } });
     const d = await r.json();
-    return (d.listings || []).filter((l) => l && l.id && !l.hidden && !l.curated && l.name);
+    return (d.listings || []).filter((l) => l && l.id && !l.hidden && !l.curated && l.name && !isKerzy(l));
   } catch { return []; }
 }
 

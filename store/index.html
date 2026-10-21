@@ -618,7 +618,12 @@
     .grid { grid-template-columns: 1fr 1fr; gap: 18px; }
     .tagline { font-size: 20px; }
   }
+  /* Scrolling rows (mobile/tablet): the next card peeks under a fade so the cut reads as "swipe for more". */
+  .strip, .reels { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); }
   @media (min-width: 1100px) {
+    /* Desktop: whole cards only, no horizontal scroll. */
+    .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; -webkit-mask-image: none; mask-image: none; }
+    .reels { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); overflow: visible; -webkit-mask-image: none; mask-image: none; }
     .strip .card { flex-basis: 38%; }
     .grid { grid-template-columns: 1fr 1fr 1fr; }
   }
@@ -669,7 +674,7 @@
 <header class="sx-header" id="sxHeader">
   <div class="sx-nav">
     <a class="sx-logo" href="/store/" aria-label="Digital Underground store home"><img class="sx-logo-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="sx-logo-icon" src="/assets/logo/du-mark-anim-icon.svg" alt="" width="34" height="34"></a>
-    <nav class="sx-links" id="sxLinks" aria-label="Main"><a href="/store/" aria-current="page" class="active">Store</a><a href="/">Developer Marketplace</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav>
+    <nav class="sx-links" id="sxLinks" aria-label="Main"><a href="/store/" aria-current="page" class="active">Store</a><a href="/">Developer Marketplace</a><a href="/makers/">Creators</a><a href="/league/">League</a><a href="/blog/">Blog</a></nav>
     <div class="sx-actions">
       <a class="sx-btn sx-btn-primary" id="sxBrowse" href="#featured" aria-controls="sxSide">Browse products</a>
       <button type="button" id="hero-music" class="hero-sound hero-music sx-music" aria-label="Play background music" aria-pressed="false" title="Play music" hidden>

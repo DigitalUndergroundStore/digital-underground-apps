@@ -1,6 +1,6 @@
 /**
  * GET  /api/league          -> { week, endsAt, standings[], eligible[], voted }
- * POST /api/league { id, hp } -> one vote per visitor per week (hashed IP + cookie).
+ * POST /api/league { id, hp } -> one vote per visitor (cookie) per week, max 3 per hashed IP.
  * Anti-fraud: honeypot, per-IP rate limit, bot user-agents ignored, per-listing spike cap
  * (votes over the cap are stored as ignored and never counted).
  */
@@ -9,13 +9,15 @@ import { rateAll, rateHit, ipRules } from "../../_lib/ratelimit.js";
 import { weekOf, weekEndsAt, tally, eligible, rank, sha } from "../../_lib/league.js";
 
 const COOKIE = "du_lv";
+export const IP_VOTES = 3; // per hashed IP (/64 for IPv6) per week: shared networks; the cookie still allows one
 const BOT = /bot|crawl|spider|slurp|curl|wget|python|httpclient|headless|phantom|scrapy|go-http|java\//i;
 const cookieOf = (req) => (req.headers.get("cookie") || "").match(/(?:^|;\s*)du_lv=([a-z0-9]{16,40})/)?.[1] || null;
 
 async function voterKeys(request, week, cookie) {
   const ip = clientIp(request);
   const net = ip.includes(":") ? ip.split(":").slice(0, 4).join(":") : ip; // IPv6 per /64
-  return { ipKey: `lg:v:${week}:${await sha("lg|" + week + "|" + net)}`, ckKey: cookie ? `lg:c:${week}:${await sha("lgc|" + week + "|" + cookie)}` : null };
+  const base = `lg:v:${week}:${await sha("lg|" + week + "|" + net)}`;
+  return { ipKeys: Array.from({ length: IP_VOTES }, (_, i) => `${base}:${i}`), ckKey: cookie ? `lg:c:${week}:${await sha("lgc|" + week + "|" + cookie)}` : null };
 }
 
 export async function onRequestGet({ request, env }) {
@@ -24,9 +26,9 @@ export async function onRequestGet({ request, env }) {
   const counts = kv ? await tally(kv, week) : new Map();
   let voted = null;
   if (kv) {
-    const { ipKey, ckKey } = await voterKeys(request, week, cookieOf(request));
-    voted = (await kv.get(ipKey)) || (ckKey && (await kv.get(ckKey))) || null;
-    if (voted === "1") voted = true;
+    const { ipKeys, ckKey } = await voterKeys(request, week, cookieOf(request));
+    voted = (ckKey && (await kv.get(ckKey))) || null;
+    if (!voted && (await Promise.all(ipKeys.map((k) => kv.get(k)))).every(Boolean)) voted = true; // network used all its votes
   }
   return json({ week, endsAt: weekEndsAt(week), standings: rank(list, counts), totalVotes: [...counts.values()].reduce((a, b) => a + b, 0),
     eligible: list.map((l) => ({ id: l.id, name: l.name, makerName: l.makerName, imageUrl: l.imageUrl })), voted }, 200, { "cache-control": "no-store" });
@@ -44,8 +46,10 @@ export async function onRequestPost({ request, env }) {
   if (!(await eligible(new URL(request.url).origin)).some((l) => l.id === id)) return json({ ok: false, error: "That listing isn't in this week's league." }, 400);
   let cookie = cookieOf(request); const fresh = !cookie;
   if (fresh) cookie = [...crypto.getRandomValues(new Uint8Array(12))].map((x) => x.toString(16).padStart(2, "0")).join("");
-  const { ipKey, ckKey } = await voterKeys(request, week, fresh ? null : cookie);
-  if ((await kv.get(ipKey)) || (ckKey && (await kv.get(ckKey)))) return json({ ok: false, already: true, error: "You've already voted this week. Voting reopens Monday 12:00 AM ET." }, 409);
+  const { ipKeys, ckKey } = await voterKeys(request, week, fresh ? null : cookie);
+  const used = await Promise.all(ipKeys.map((k) => kv.get(k)));
+  const ipKey = ipKeys[used.findIndex((v) => !v)];
+  if (!ipKey || (ckKey && (await kv.get(ckKey)))) return json({ ok: false, already: true, error: "You've already voted this week. Voting reopens Monday 12:00 AM ET." }, 409);
   const ua = request.headers.get("user-agent") || "";
   const spike = await rateHit(env, `lg-spike:${week}:${id}`, 40, 600); // >40 votes / 10 min for one listing = spike
   const ign = !ua || BOT.test(ua) || !spike.ok ? 1 : 0;

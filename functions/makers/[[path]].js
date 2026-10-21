@@ -85,6 +85,7 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
       <a href="/store/">Store</a>
       <a href="/">Developer Marketplace</a>
       <a href="/makers/"${current === "dir" ? ' aria-current="page"' : ""}>Creators</a>
+      <a href="/league/">League</a>
       <a href="/community/dashboard/">Creator dashboard</a>
     </nav>
     <div class="nav-right">
@@ -96,7 +97,7 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <div class="mm-head"><button type="button" id="close-menu" class="icon-btn" aria-label="Close menu"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button></div>
   <nav class="mm-links" aria-label="Mobile">
-    <a href="/store/">Store</a><a href="/">Developer Marketplace</a><a href="/makers/">Creators</a><a href="/community/dashboard/">Creator dashboard</a>
+    <a href="/store/">Store</a><a href="/">Developer Marketplace</a><a href="/makers/">Creators</a><a href="/league/">League</a><a href="/community/dashboard/">Creator dashboard</a>
     <hr><a class="pill pill-v" href="/community/submit/">List your project free</a>
   </nav>
 </div>

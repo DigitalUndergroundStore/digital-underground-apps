@@ -171,3 +171,13 @@ body.sx-lock { overflow: hidden; }
 .sx-bar { display: none !important; }
 main > section:first-child .section-head { margin-bottom: .35rem !important; }
 @media (max-width: 1099px) { .sx-hero { padding-bottom: 1rem; } }
+/* hero button: same solid purple as the header "Browse products", full size, shimmer across the letters */
+.sx-hero .sx-hero-btn { border-radius: 11px; border-color: transparent; }
+.sx-shine {
+  background: linear-gradient(100deg, #fff 0%, #fff 38%, #e9d5ff 46%, #c7f0ff 50%, #e9d5ff 54%, #fff 62%, #fff 100%);
+  background-size: 250% 100%; background-position: 100% 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent;
+  animation: sxShine 3s ease-in-out infinite;
+}
+@keyframes sxShine { 0% { background-position: 100% 0; } 60%, 100% { background-position: 0% 0; } }
+@media (prefers-reduced-motion: reduce) { .sx-shine { animation: none; background: none; color: #fff; -webkit-text-fill-color: #fff; } }

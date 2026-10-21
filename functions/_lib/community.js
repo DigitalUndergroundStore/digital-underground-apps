@@ -422,10 +422,10 @@ export async function isReturningMaker(kv, acct, excludeId) {
   return false;
 }
 
-/** Status after screening: rejected stays rejected; a pass goes live only for returning makers. */
-export function screenedStatus(decision, returning) {
+/** Status after screening: rejected stays rejected; any pass goes live (all makers); anything else waits for the owner. */
+export function screenedStatus(decision) {
   if (decision === "rejected") return "rejected";
-  return decision === "approved" && returning ? "approved" : "pending";
+  return decision === "approved" ? "approved" : "pending";
 }
 
 /** Save listing and place id in the index bucket matching listing.status. */

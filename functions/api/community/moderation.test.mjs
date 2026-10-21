@@ -7,9 +7,9 @@ import { addReport, shouldFlag, resolveReport, hiddenByReports, reportThreshold 
 function memKv() { const m = new Map(); return { m, async get(k, t) { const v = m.get(k); return v == null ? null : t === "json" ? JSON.parse(v) : v; }, async put(k, v) { m.set(k, v); }, async delete(k) { m.delete(k); } }; }
 const env = {}; // no mail configured: notify is a no-op
 
-test("screenedStatus: only returning makers auto-approve", () => {
-  assert.equal(screenedStatus("approved", true), "approved");
-  assert.equal(screenedStatus("approved", false), "pending");
+test("screenedStatus: every maker auto-approves on a pass", () => {
+  assert.equal(screenedStatus("approved"), "approved");
+  assert.equal(screenedStatus("approved", false), "approved");
   assert.equal(screenedStatus("pending", true), "pending");
   assert.equal(screenedStatus("rejected", true), "rejected");
 });

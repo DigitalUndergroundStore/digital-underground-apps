@@ -1,6 +1,6 @@
 /**
  * Public Creator Listings API v1 (Bearer API key). Same validation, screening and owner approval queue
- * as the web form. New listings are never auto-published: they always wait for owner approval.
+ * as the web form. New listings go live once screening passes; flagged ones wait for owner approval.
  *   GET    /api/v1/openapi.json
  *   GET    /api/v1/listings            list own listings
  *   POST   /api/v1/listings            create (status: pending)
@@ -72,9 +72,10 @@ export async function onRequest(context) {
     listing.apiKeyId = key.id;
     try {
       const s = await screenListing(env, listing);
-      // API submissions always go to the owner approval queue, even when screening passes.
-      listing.status = s.decision === "rejected" ? "rejected" : "pending";
-      listing.screening = { reasons: s.decision === "approved" ? ["Submitted via API: waiting for owner approval."] : s.reasons, detail: s.detail, screenedAt: Date.now() };
+      // API submissions go live once screening passes; anything else waits for the owner.
+      listing.status = s.decision === "rejected" ? "rejected" : s.decision === "approved" ? "approved" : "pending";
+      if (listing.status === "approved") listing.autoApprovedAt = Date.now();
+      listing.screening = { reasons: s.decision === "approved" ? ["Submitted via API: passed automatic checks, auto-approved."] : s.reasons, detail: s.detail, screenedAt: Date.now() };
     } catch {
       listing.status = "pending";
       listing.screening = { reasons: ["Automatic screening failed; queued for human review."], screenedAt: Date.now() };

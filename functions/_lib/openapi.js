@@ -35,7 +35,7 @@ export const OPENAPI = {
   openapi: "3.0.3",
   info: {
     title: "Digital Underground Creator Listings API", version: "1.0.0",
-    description: "Create and manage your own Developer Marketplace listings. Every new listing is screened automatically and then waits for owner approval before it is public. Updates are re-screened; approved listings stay live while changes are reviewed. Writes are limited to 10 per hour and 50 per day per key. Human docs: " + S + "/community/api/",
+    description: "Create and manage your own Developer Marketplace listings. Every new listing is screened automatically and goes live right after it passes; flagged listings wait for owner approval. Updates are re-screened; approved listings stay live while changes are reviewed. Writes are limited to 10 per hour and 50 per day per key. Human docs: " + S + "/community/api/",
   },
   servers: [{ url: S + "/api/v1" }],
   components: { securitySchemes: { bearer: { type: "http", scheme: "bearer", bearerFormat: "duk_…" } }, schemas: { Listing, Create, Update } },
@@ -48,7 +48,7 @@ export const OPENAPI = {
     "/listings/{id}": {
       parameters: [{ name: "id", in: "path", required: true, schema: { type: "string" } }],
       get: { operationId: "getListing", summary: "Get one of your listings and its review status", responses: { 200: { description: "OK", content: { "application/json": { schema: { type: "object", properties: { listing: { $ref: "#/components/schemas/Listing" } } } } } }, 404: err } },
-      patch: { operationId: "updateListing", summary: "Update one of your listings (re-screened)", description: "Edits to a listing that is not yet approved update it in place and it stays in the owner queue. Edits to an approved listing are stored as a pending revision: the approved version stays live unchanged, the response is 202 with status \"pending owner approval\", and the owner approves (applies) or rejects (discards) it. A newer edit replaces an older pending revision. 422 means the edit failed screening.", requestBody: { required: true, content: { "application/json": { schema: { $ref: "#/components/schemas/Update" } } } }, responses: { 200: { description: "Updated (listing was not yet approved; still waiting for owner approval)" }, 202: { description: "Edit to an approved listing saved as a pending revision: pending owner approval" }, 400: err, 404: err, 422: err, 429: err } },
+      patch: { operationId: "updateListing", summary: "Update one of your listings (re-screened)", description: "Edits to a listing that is not yet approved update it in place and it goes live if it passes screening. Edits to an approved listing are stored as a pending revision: the approved version stays live unchanged, the response is 202 with status \"pending owner approval\", and the owner approves (applies) or rejects (discards) it. A newer edit replaces an older pending revision. 422 means the edit failed screening.", requestBody: { required: true, content: { "application/json": { schema: { $ref: "#/components/schemas/Update" } } } }, responses: { 200: { description: "Updated (listing was not yet approved; re-screened and goes live if it passes)" }, 202: { description: "Edit to an approved listing saved as a pending revision: pending owner approval" }, 400: err, 404: err, 422: err, 429: err } },
     },
   },
 };

@@ -25,6 +25,7 @@
 <style>
 .up-field{display:flex;flex-direction:column;gap:8px}.up-label{font-weight:600;font-size:14px}
 .up-row{display:flex;gap:12px;align-items:flex-start}.up-body{flex:1;min-width:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.up-body .field-hint{flex-basis:100%;margin:0}
+.af{border:1px solid rgba(196,181,253,.3);border-radius:14px;padding:12px;background:rgba(139,92,246,.07)}.af-row{display:flex;gap:8px}.af-row input{flex:1;min-width:0}.af-row button{flex:none;min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--du-gradient);color:#fff;font-weight:700;cursor:pointer}.af-row button:disabled{opacity:.6}.af .field-hint{margin:8px 0 0}.af-ok{color:#86efac}.af-err{color:#fca5a5}
 .up-thumb{width:64px;height:64px;flex:none;border-radius:12px;border:1px dashed rgba(196,181,253,.35);background:rgba(139,92,246,.08);display:inline-flex;align-items:center;justify-content:center;color:#c4b5fd;overflow:hidden}
 .up-thumb svg,.up-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.up-btn svg{width:18px;height:18px}
 .up-thumb img{width:100%;height:100%;object-fit:cover}.up-thumb.has{border-style:solid;color:#86efac}
@@ -54,6 +55,11 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
   <div id="msg" class="form-msg" hidden role="status"></div>
   <form class="stack" id="form" novalidate>
     <label class="hp" aria-hidden="true">Leave blank<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <div class="af" id="af">
+      <label for="afUrl">Paste your project link <small>(we fill in the basics, you can edit everything)</small></label>
+      <div class="af-row"><input id="afUrl" type="url" inputmode="url" placeholder="https://yourapp.com" autocomplete="url"><button type="button" id="afBtn">Autofill</button></div>
+      <p class="field-hint" id="afMsg" role="status" aria-live="polite">Optional. Or fill the form in yourself.</p>
+    </div>
     <label>Project name<input name="name" required maxlength="120" autocomplete="organization"></label>
     <label>Project URL (https)<input name="projectUrl" type="url" required inputmode="url" placeholder="https://…" autocomplete="url"></label>
     <label>Maker / studio name<input name="makerName" required maxlength="80" autocomplete="name"></label>
@@ -131,7 +137,7 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
     </label>
     <div class="up-progress" id="up-progress" hidden role="status"><span id="up-progress-label">Uploading video…</span><div class="bar"><i id="up-bar"></i></div><span id="up-pct">0%</span></div>
     <div id="turnstile-slot" hidden></div>
-    <button type="submit">Submit for review</button>
+    <button type="submit">Submit listing</button>
   </form>
   <section class="faq" aria-labelledby="faq-submit">
     <h2 id="faq-submit">Before you submit</h2>
@@ -331,6 +337,38 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
     videoFileInput.value = ""; document.getElementById("vid-thumb").classList.remove("has");
     document.getElementById("vid-hint").textContent = "MP4 or WebM, up to 50 MB. Uploads after you submit, then gets a quick human review."; this.hidden = true;
   });
+})();
+</script>
+<script>
+(function () {
+  var f = document.getElementById("form"), u = document.getElementById("afUrl"), b = document.getElementById("afBtn"), m = document.getElementById("afMsg");
+  function say(t, c) { m.textContent = t; m.className = "field-hint" + (c ? " " + c : ""); }
+  function set(n, v, force) { var el = f.querySelector('[name="' + n + '"]'); if (!el || !v || (el.value && !force)) return false; el.value = v; el.dispatchEvent(new Event("input", { bubbles: true })); return true; }
+  function go() {
+    var v = u.value.trim(); if (!v) { u.focus(); return; }
+    if (!/^https?:\/\//i.test(v)) v = "https://" + v;
+    b.disabled = true; say("Reading your page…");
+    fetch("/api/community/autofill", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ url: v }) })
+      .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+      .then(function (d) {
+        if (!d || !d.ok) { say((d && d.error ? d.error + " " : "") + "No problem, fill the form in below.", "af-err"); return; }
+        var got = [];
+        if (set("projectUrl", d.projectUrl || (/^https:/i.test(v) ? v : ""), true)) got.push("link");
+        if (set("name", d.name)) got.push("name");
+        if (set("pitchShort", d.pitchShort)) got.push("short pitch");
+        var fi = f.querySelector('[name="imageFile"]'), iu = f.querySelector('[name="imageUrl"]');
+        if (d.imageUrl && !(fi && fi.files && fi.files.length) && !iu.value) {
+          iu.value = d.imageUrl; var det = iu.closest("details"); if (det) det.open = true;
+          var t = document.getElementById("img-thumb"); t.classList.add("has"); t.innerHTML = "";
+          var im = new Image(); im.alt = ""; im.referrerPolicy = "no-referrer"; im.src = d.imageUrl; t.appendChild(im); got.push("image");
+        }
+        say(got.length ? "Filled: " + got.join(", ") + ". Check and edit anything below." : "Nothing new to fill. Your entries were kept.", got.length ? "af-ok" : "");
+      })
+      .catch(function () { say("Couldn't read that page. Fill the form in below.", "af-err"); })
+      .then(function () { b.disabled = false; });
+  }
+  b.addEventListener("click", go);
+  u.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); go(); } });
 })();
 </script>
 </body>

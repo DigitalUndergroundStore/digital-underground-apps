@@ -33,7 +33,7 @@ const TOOLS = [
   {
     name: "submit_listing",
     title: "Submit a listing for review",
-    description: "Submit the user's own product to the marketplace. Requires the creator's API key (duk_..., from the Creator dashboard -> API keys; never guess one). Free. Every submission is screened and waits for human owner approval; nothing is published automatically. Only submit real products the user owns, with accurate claims.",
+    description: "Submit the user's own product to the marketplace. Requires the creator's API key (duk_..., from the Creator dashboard -> API keys; never guess one). Free. Every submission is screened automatically and goes live once it passes; flagged ones wait for owner review. Only submit real products the user owns, with accurate claims.",
     inputSchema: { type: "object", required: ["api_key", "name", "projectUrl", "category", "stage", "pitchShort", "descriptionLong", "terms"], properties: {
       api_key: { type: "string", description: "Creator API key, duk_..." },
       name: { type: "string", maxLength: 120 },

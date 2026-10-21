@@ -3,7 +3,7 @@
   "info": {
     "title": "Digital Underground Developer Marketplace API",
     "version": "1.0.0",
-    "description": "Public read endpoints for browsing approved Developer Marketplace listings (no auth), plus the Creator Listings API for submitting and managing your own listings (Bearer API key). Every new listing is screened and waits for human owner approval. MCP server: https://digitalundergroundstore.com/mcp. Human docs: https://digitalundergroundstore.com/community/api/"
+    "description": "Public read endpoints for browsing approved Developer Marketplace listings (no auth), plus the Creator Listings API for submitting and managing your own listings (Bearer API key). Every new listing is screened automatically and goes live once it passes; flagged listings wait for owner approval. MCP server: https://digitalundergroundstore.com/mcp. Human docs: https://digitalundergroundstore.com/community/api/"
   },
   "servers": [
     {
@@ -563,7 +563,7 @@
       "patch": {
         "operationId": "updateListing",
         "summary": "Update one of your listings (re-screened)",
-        "description": "Edits to a listing that is not yet approved update it in place and it stays in the owner queue. Edits to an approved listing are stored as a pending revision: the approved version stays live unchanged, the response is 202 with status \"pending owner approval\", and the owner approves (applies) or rejects (discards) it. A newer edit replaces an older pending revision. 422 means the edit failed screening.",
+        "description": "Edits to a listing that is not yet approved update it in place and it goes live if it passes screening. Edits to an approved listing are stored as a pending revision: the approved version stays live unchanged, the response is 202 with status \"pending owner approval\", and the owner approves (applies) or rejects (discards) it. A newer edit replaces an older pending revision. 422 means the edit failed screening.",
         "requestBody": {
           "required": true,
           "content": {
@@ -576,7 +576,7 @@
         },
         "responses": {
           "200": {
-            "description": "Updated (listing was not yet approved; still waiting for owner approval)"
+            "description": "Updated (listing was not yet approved; re-screened and goes live if it passes)"
           },
           "202": {
             "description": "Edit to an approved listing saved as a pending revision: pending owner approval"

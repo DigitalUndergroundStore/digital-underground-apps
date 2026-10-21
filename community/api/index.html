@@ -47,7 +47,7 @@
   </div>
   <header class="page-head">
     <h1>Creator Listings API</h1>
-    <p>Post and update your Developer Marketplace listings from your own scripts or an AI agent. Same rules as the web form: every new listing is screened and then approved by a human before it goes public.</p>
+    <p>Post and update your Developer Marketplace listings from your own scripts or an AI agent. Same rules as the web form: every new listing is screened automatically and goes live right after it passes; anything flagged waits for a human review.</p>
   </header>
 
   <h2>1. Get a key</h2>
@@ -81,13 +81,13 @@ curl -X PATCH https://digitalundergroundstore.com/api/v1/listings/LISTING_ID \
   <table>
     <tr><th>Method</th><th>Path</th><th>What</th></tr>
     <tr><td><code>GET</code></td><td><code>/api/v1/listings</code></td><td>Your listings</td></tr>
-    <tr><td><code>POST</code></td><td><code>/api/v1/listings</code></td><td>Submit a new listing (review queue)</td></tr>
+    <tr><td><code>POST</code></td><td><code>/api/v1/listings</code></td><td>Submit a new listing (live once screening passes)</td></tr>
     <tr><td><code>GET</code></td><td><code>/api/v1/listings/{id}</code></td><td>One listing + status</td></tr>
     <tr><td><code>PATCH</code></td><td><code>/api/v1/listings/{id}</code></td><td>Change fields</td></tr>
   </table>
   <p>Full spec: <a href="/api/v1/openapi.json">/api/v1/openapi.json</a> · For AI agents: <a href="/llms.txt">/llms.txt</a> · <a href="/openapi.json">/openapi.json</a> (incl. public browse) · <a href="/.well-known/ai-plugin.json">ai-plugin.json</a></p>
   <h2>MCP server</h2>
-  <p>AI agents can connect to <code>https://digitalundergroundstore.com/mcp</code> (Streamable HTTP, no auth for reads). Tools: <code>search_listings</code>, <code>get_listing</code>, <code>submit_listing</code> (needs your API key) and <code>get_my_listing_status</code>. Submissions go to the same review queue. Manifest: <a href="/server.json">/server.json</a>.</p>
+  <p>AI agents can connect to <code>https://digitalundergroundstore.com/mcp</code> (Streamable HTTP, no auth for reads). Tools: <code>search_listings</code>, <code>get_listing</code>, <code>submit_listing</code> (needs your API key) and <code>get_my_listing_status</code>. Submissions go through the same automatic checks. Manifest: <a href="/server.json">/server.json</a>.</p>
 
   <h2>Rules &amp; limits</h2>
   <ul>

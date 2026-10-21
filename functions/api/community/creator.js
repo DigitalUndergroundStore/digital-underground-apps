@@ -84,8 +84,9 @@ async function rescreen(env, row, returning = false) {
     // A listing the owner already approved can stay live on a passing re-screen, and so can a
     // returning maker's (another listing already approved) pending/unpublished one. Rejected
     // listings and first-time makers' listings go to the owner queue.
-    if (s.decision === "approved" && returning && row.status !== "approved" && row.status !== "rejected") {
-      row.screening.reasons = ["Passed automatic checks: auto-approved (returning maker)."];
+    // Any maker's listing goes live once it passes the automatic checks.
+    if (s.decision === "approved" && row.status !== "approved" && row.status !== "rejected") {
+      row.screening.reasons = ["Passed automatic checks: auto-approved."];
       row.autoApprovedAt = Date.now();
       return "approved";
     }
@@ -321,7 +322,6 @@ export async function onRequest(context) {
     const prevStatus = row.status;
     row.status = row.status === "unpublished" && decision !== "rejected" ? "unpublished" : decision;
     // API edits never publish: a listing that wasn't already approved stays in the owner queue.
-    if (request.headers.get("X-DU-Via-Api") === "1" && prevStatus !== "approved" && row.status === "approved") row.status = "pending";
     row.updatedAt = Date.now();
     row.editedByCreatorAt = row.updatedAt;
     await saveListing(kv, row);

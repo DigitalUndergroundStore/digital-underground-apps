@@ -32,7 +32,7 @@ curl -X POST https://digitalundergroundstore.com/api/v1/listings \
 ```
 
 - Stage: Concept, In development, Beta / testing, Released or Discontinued. Listings without a stage count as Released. Change it later with PATCH {"stage": "released"}.
-- Status: `GET /api/v1/listings/{id}` (pending → approved/rejected). New listings always wait for owner approval; nothing is auto-published.
+- Status: `GET /api/v1/listings/{id}` (pending → approved/rejected). New listings go live once they pass automatic screening; flagged ones wait for owner approval.
 - Update: `PATCH /api/v1/listings/{id}` with only the fields to change. Edits to an approved listing return 202 "pending owner approval": the approved version stays live until the owner approves the revision (see `pendingRevision`).
 - Limits: 10 writes/hour and 50 writes/day per key. HTTP 429 includes Retry-After.
 - Only submit real products the creator owns, with accurate claims. Listings are screened automatically and reviewed by a human.

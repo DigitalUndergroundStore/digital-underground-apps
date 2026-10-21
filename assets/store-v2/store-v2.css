@@ -147,3 +147,7 @@ body.sx-lock { overflow: hidden; }
 @media (min-width: 1025px) { .sx-actions .sx-music { order: -1; } }
 @media (max-width: 400px) { .sx-actions { gap: .4rem; } .sx-actions .sx-btn-primary { padding: .45rem .6rem; font-size: .76rem; } .sx-nav { gap: .5rem; } }
 @media (max-width: 359px) { .sx-actions .sx-btn-primary { display: none; } }
+.sx-actions { margin-left: auto; }
+@media (max-width: 400px) { .sx-nav { padding-left: .75rem !important; padding-right: .6rem !important; gap: .4rem !important; } .sx-actions { gap: .35rem !important; } .sx-actions .sx-btn-primary { padding: .42rem .6rem !important; font-size: .74rem !important; } .sx-logo img, .sx-logo svg { max-width: 118px; height: auto; } }
+@media (max-width: 370px) { .sx-logo img, .sx-logo svg { max-width: 104px; } .sx-actions .sx-btn-primary { padding: .4rem .5rem !important; font-size: .7rem !important; } }
+@media (max-width: 339px) { .sx-actions .sx-btn-primary { display: none !important; } }

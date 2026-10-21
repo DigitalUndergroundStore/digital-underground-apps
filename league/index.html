@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maker League: vote for this week's best indie project | Digital Underground</title>
+<meta name="description" content="A free weekly vote for indie projects on the Digital Underground Developer Marketplace. One vote per visitor per week. Last week's winner is Maker of the Week.">
+<link rel="canonical" href="https://digitalundergroundstore.com/league/">
+<meta property="og:title" content="Maker League | Digital Underground">
+<meta property="og:description" content="Vote for this week's best indie project. Free, one vote per week.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digitalundergroundstore.com/league/">
+<meta property="og:image" content="https://digitalundergroundstore.com/community/og-dm-v3.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#05040c">
+<link rel="stylesheet" href="/assets/design-tokens.css">
+<link rel="stylesheet" href="/community/community.css?v=4">
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=2">
+<link rel="stylesheet" href="/league/league.css?v=1">
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
+</head>
+<body><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/store/" aria-label="Digital Underground store home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"></a><nav class="dun-links" aria-label="Site"><a href="/store/">Store</a><a href="/">Developer Marketplace</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/store/">Store</a><a href="/">Developer Marketplace</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><a href="/community/dashboard/">Creator dashboard</a></nav></header><script src="/assets/site-nav/site-nav.js?v=1" defer></script><!--/du-site-nav-->
+<div class="wrap">
+<main id="main">
+  <header class="page-head">
+    <h1>Maker League</h1>
+    <p>A free weekly vote for indie projects on the Developer Marketplace. Pick your favourite: <strong>one vote per visitor per week</strong>. The week resets every Monday at 12:00 AM ET, and last week's winner becomes <strong>Maker of the Week</strong> on the homepage.</p>
+  </header>
+  <div id="motw-slot"></div>
+  <section class="lg-panel" aria-labelledby="st-h">
+    <div class="lg-head"><h2 id="st-h">This week's standings</h2><span class="lg-meta" id="meta"></span></div>
+    <ol class="lg-list" id="standings" aria-live="polite"><li class="lg-empty">Loading…</li></ol>
+  </section>
+  <section class="lg-panel" aria-labelledby="vote-h">
+    <div class="lg-head"><h2 id="vote-h">Cast your vote</h2></div>
+    <p class="lg-msg" id="msg" role="status"></p>
+    <label class="lg-hp" aria-hidden="true">Leave blank<input id="hp" tabindex="-1" autocomplete="off"></label>
+    <input id="q" type="search" class="lg-q" placeholder="Search projects" aria-label="Search projects">
+    <ul class="lg-grid" id="pick"></ul>
+  </section>
+  <p class="lg-fine">Free to enter: every live maker listing is in automatically. Votes are counted as they come in; obvious bot traffic is not counted. No paid placement.</p>
+</main>
+</div>
+<script src="/assets/site-nav/site-nav.js?v=1" defer></script>
+<script src="/league/spotlight.js?v=1" defer></script>
+<script src="/league/league.js?v=1" defer></script>
+</body>
+</html>

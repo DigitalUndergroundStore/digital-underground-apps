@@ -1,5 +1,5 @@
 {
- "note": "Recipe photos from Wikimedia Commons (3.13.0; 193 added in 3.14.2). Resized to 800px wide or smaller, WebP.",
+ "note": "Recipe photos from Wikimedia Commons (3.13.0; 193 added in 3.14.2). Resized to 800px wide or smaller, WebP. Openverse-recovered credits added in 3.15 preview (perceptual-hash match).",
  "photos": {
   "r6": {
    "file": "https://commons.wikimedia.org/wiki/File:Protein_overnight_oats.jpg",
@@ -1572,6 +1572,285 @@
    "license": "CC BY-SA 2.0",
    "author": "Mack Male",
    "title": "Ginger Beef.jpg"
+  },
+  "r1": {
+   "file": "https://www.flickr.com/photos/72949902@N00/4635069591",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "TheCulinaryGeek",
+   "title": "Roasted Lemon Herb Chicken",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r4": {
+   "file": "https://www.flickr.com/photos/29282750@N00/139125744",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "Kanko*",
+   "title": "pasta",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r9": {
+   "file": "https://www.flickr.com/photos/10559879@N00/2224799659",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "avlxyz",
+   "title": "Tequila Jalapeno Quesadillas with Ocean Trout and Corn - Bluecorn Mexican Restaurant",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r15": {
+   "file": "https://www.flickr.com/photos/97844767@N00/22811271",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "WordRidden",
+   "title": "Salad Nicoise",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r28": {
+   "file": "https://www.flickr.com/photos/10559879@N00/3121715379",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "avlxyz",
+   "title": "Teriyaki Chicken and Scrambled Egg Rice Bowl - Cocoro Cafe, QVM",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r30": {
+   "file": "https://www.flickr.com/photos/21001756@N06/5186176460",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "Stacy Spensley",
+   "title": "loaded pita pockets",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r33": {
+   "file": "https://www.flickr.com/photos/35034361412@N01/292167412",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "rick",
+   "title": "lunching with blackmore 2005",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r36": {
+   "file": "https://www.flickr.com/photos/23119666@N03/28752527442",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "Mark Bonica",
+   "title": "Skillet gnocchi with spinach and white beans",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r37": {
+   "file": "https://www.flickr.com/photos/58819758@N00/4154600013",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "arnold | inuyaki",
+   "title": "Ginger Scallion Noodles",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r40": {
+   "file": "https://www.flickr.com/photos/49506223@N00/7000908544",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Shockingly Tasty",
+   "title": "coconut curry",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r46": {
+   "file": "https://www.flickr.com/photos/58367355@N00/31076207055",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "jules:stonesoup",
+   "title": "Miso & Harissa Roast Cauliflower-2",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r47": {
+   "file": "https://www.flickr.com/photos/85318305@N00/5673635081",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "whatleydude",
+   "title": "BREAKFAST!",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r61": {
+   "file": "https://www.flickr.com/photos/35034346243@N01/2303831254",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "stu_spivack",
+   "title": "saag paneer",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r112": {
+   "file": "https://www.flickr.com/photos/7256454@N05/5959132623",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "JeffChristiansen",
+   "title": "BBQ Chicken Flatbread with Apple-Jicama Slaw @ Jiko - Animal Kingdom Lodge | Disney Food",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r118": {
+   "file": "https://www.flickr.com/photos/7927684@N03/16527400695",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "jeffreyw",
+   "title": "Mmm broccoli and ham",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r119": {
+   "file": "https://www.flickr.com/photos/35034346243@N01/2051855626",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "stu_spivack",
+   "title": "lunch box",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r128": {
+   "file": "https://www.flickr.com/photos/68743941@N00/5396530030",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "vanessayavonne",
+   "title": "shepherd's pie",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r134": {
+   "file": "https://www.flickr.com/photos/54549113@N00/43872530271",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Haydn Blackey",
+   "title": "Honey Maple Glazed Salmon with sweet potato and corn hash Brussels sprouts and corn bread - The Landing, Marblehead",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r147": {
+   "file": "https://www.flickr.com/photos/94643613@N00/24404847904",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "BruceMatsunaga",
+   "title": "Breaking in a new cast iron pan with seared rib eye steak topped with shallots and crimini mushrooms served with garlic roasted cauliflower and sautéd carrots. #valentinesday indeed. #Protein #paleo #instayum #foodphotography #healthy #Note3 #homemade",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r157": {
+   "file": "https://www.flickr.com/photos/201676878@N03/54376296092",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "Piersey",
+   "title": "Vegan Baked Ziti",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r159": {
+   "file": "https://www.flickr.com/photos/13194817@N00/12075509523",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "krossbow",
+   "title": "Baked Potato Soup that wasn't served at my school's yearly Souper Bowl luncheon due to the snow day.",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r173": {
+   "file": "https://www.flickr.com/photos/142840472@N04/32012127471",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "DelishPlan",
+   "title": "Slow Cooker Beef Barbacoa-1",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r179": {
+   "file": "https://www.flickr.com/photos/44124395312@N01/2729024038",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Kelly Sue",
+   "title": "Egg & Sausage Cups",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r187": {
+   "file": "https://www.flickr.com/photos/25977089@N00/5338113272",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "goblinbox_(queen_of_ad_hoc_bento)",
+   "title": "Pub-style fish & chips",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r192": {
+   "file": "https://www.flickr.com/photos/35899785@N00/6153477538",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "ShashiBellamkonda",
+   "title": "Enchilada Mexicana @ Anita's New Mexico Style",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r194": {
+   "file": "https://www.flickr.com/photos/78011127@N00/3168342551",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "ginnerobot",
+   "title": "ginger chicken",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r202": {
+   "file": "https://www.flickr.com/photos/97844767@N00/15893857675",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "WordRidden",
+   "title": "Thanksgiving skillet chicken pot pie.",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r204": {
+   "file": "https://wordpress.org/photos/photo/4026a16b23/",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Midhun P",
+   "title": "A bowl of creamy Alfredo penne pasta garnished with parsley, featuring diced green peppers and chicken, served with a slice of garlic bread.",
+   "via": "openverse/wordpress",
+   "recovered": "openverse-phash"
+  },
+  "r216": {
+   "file": "https://www.flickr.com/photos/89551589@N00/277782049",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "ctaloi",
+   "title": "Tonight's Dinner: Pork Chops",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r230": {
+   "file": "https://www.flickr.com/photos/56846157@N00/6251923537",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "Christine Rondeau",
+   "title": "Mushroom 'Oatmeal Stout' Pie",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
+  },
+  "r231": {
+   "file": "https://www.flickr.com/photos/127294011@N07/14889163690",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "PersonalCreations.com",
+   "title": "Chicken enchilada meat",
+   "via": "openverse/flickr",
+   "recovered": "openverse-phash"
   }
  },
  "backdrop": {

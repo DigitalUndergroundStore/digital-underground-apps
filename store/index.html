@@ -660,7 +660,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <link rel="manifest" href="/site.webmanifest">
 <script type="application/ld+json" id="du-ld">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://digitalundergroundstore.com/#org","name":"Digital Underground","url":"https://digitalundergroundstore.com/","logo":"https://digitalundergroundstore.com/assets/logo/favicon-180.png","sameAs":["https://x.com/DigitalUG_Store"]},{"@type":"WebSite","@id":"https://digitalundergroundstore.com/#website","name":"Digital Underground","url":"https://digitalundergroundstore.com/","publisher":{"@id":"https://digitalundergroundstore.com/#org"}}]}</script>
-<link rel="stylesheet" href="/assets/store-v2/store-v2.css?v=1">
+<link rel="stylesheet" href="/assets/store-v2/store-v2.css?v=2">
 <script src="/assets/store-v2/store-v2.js?v=1" defer></script>
 </head>
 <body>
@@ -672,6 +672,11 @@
     <nav class="sx-links" id="sxLinks" aria-label="Main"><a href="/store/" aria-current="page" class="active">Store</a><a href="/">Developer Marketplace</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav>
     <div class="sx-actions">
       <a class="sx-btn sx-btn-primary" href="#featured">Browse products</a>
+      <button type="button" id="hero-music" class="hero-sound hero-music sx-music" aria-label="Play background music" aria-pressed="false" title="Play music" hidden>
+      <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M15.5 9.2a3.6 3.6 0 0 1 0 5.6M18 6.8a7 7 0 0 1 0 10.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
       <button type="button" class="sx-menu" id="sxMenu" aria-label="Open menu" aria-expanded="false" aria-controls="sxLinks"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
   </div>
@@ -691,11 +696,6 @@
       <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Secure checkout</li>
       <li id="hero-product-count" hidden></li>
     </ul>
-    <button type="button" id="hero-music" class="hero-sound hero-music" aria-label="Play background music" aria-pressed="false" title="Play music" hidden>
-      <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M16 9.5 20.5 14.5M20.5 9.5 16 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-      <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l4 3V7L7 10H4z" fill="currentColor"/><path d="M15.5 9.2a3.6 3.6 0 0 1 0 5.6M18 6.8a7 7 0 0 1 0 10.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
-    </button>
   </section>
   <div class="sx-layout">
     <div class="sx-backdrop" id="sxBackdrop" hidden></div>

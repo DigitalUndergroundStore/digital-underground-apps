@@ -137,3 +137,13 @@ body.sx-lock { overflow: hidden; }
   .card:hover, .card:hover .shot, .sx-btn-primary:hover { transform: none !important; }
   .sx-btn-primary::after { display: none; }
 }
+/* header volume button (moved from hero): logo · Browse · volume · menu (menu far right on mobile; desktop: volume before Browse) */
+.sx-actions .sx-music { position: relative !important; inset: auto !important; right: auto !important; bottom: auto !important; top: auto !important; width: 38px; height: 38px; flex-shrink: 0; border-radius: 11px; border: 1px solid rgba(139,92,246,.35); background: rgba(10,8,24,.5); box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+.sx-actions .sx-music svg { width: 18px; height: 18px; }
+.sx-actions .sx-music:hover { border-color: rgba(167,139,250,.6); background: rgba(139,92,246,.14); }
+.sx-actions .sx-music.is-on { background: linear-gradient(135deg, rgba(124,58,237,.85), rgba(79,70,229,.85)); border-color: rgba(255,255,255,.3); }
+.sx-actions .sx-music .eq { display: none; }
+.sx-menu { order: 3; margin-right: -.3rem; }
+@media (min-width: 1025px) { .sx-actions .sx-music { order: -1; } }
+@media (max-width: 400px) { .sx-actions { gap: .4rem; } .sx-actions .sx-btn-primary { padding: .45rem .6rem; font-size: .76rem; } .sx-nav { gap: .5rem; } }
+@media (max-width: 359px) { .sx-actions .sx-btn-primary { display: none; } }

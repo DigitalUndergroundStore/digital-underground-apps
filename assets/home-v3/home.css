@@ -934,3 +934,9 @@
     @media (min-width: 421px) { .logo img.logo-full { height: 34px; } }
     .ftoggle svg, .btn svg { flex-shrink: 0; width: 18px; min-width: 18px; } .ftoggle { white-space: nowrap; flex-shrink: 0; }
 
+    /* phones: full round Earth, centred and fitted to the width (no clipping) */
+    @media (max-width: 799px) {
+      .earth-img { inset: auto 6vw 6vh 6vw !important; height: 88vw; animation: none; transform: none;
+        background: url("/assets/globe/globe-round.webp?v=1") center / contain no-repeat !important;
+        -webkit-mask-image: none; mask-image: none; opacity: .28; }
+    }

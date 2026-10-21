@@ -151,3 +151,15 @@ body.sx-lock { overflow: hidden; }
 @media (max-width: 400px) { .sx-nav { padding-left: .75rem !important; padding-right: .6rem !important; gap: .4rem !important; } .sx-actions { gap: .35rem !important; } .sx-actions .sx-btn-primary { padding: .42rem .6rem !important; font-size: .74rem !important; } .sx-logo img, .sx-logo svg { max-width: 118px; height: auto; } }
 @media (max-width: 370px) { .sx-logo img, .sx-logo svg { max-width: 104px; } .sx-actions .sx-btn-primary { padding: .4rem .5rem !important; font-size: .7rem !important; } }
 @media (max-width: 339px) { .sx-actions .sx-btn-primary { display: none !important; } }
+/* hero: facts line sits just above the button; no stray backdrop boxes on phones */
+.sx-hero .sx-facts { margin: 0 0 .55rem; }
+.sx-hero .sx-cta { margin-top: 0; }
+@media (max-width: 1099px) {
+  .js .sx-hero > * { animation: none !important; }
+  .sx-hero { background: none !important; box-shadow: none !important; }
+  .sx-side:not(.open) { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; box-shadow: none !important; }
+}
+@media (max-width: 1099px) {
+  /* iOS Safari paints a stray translucent box from the header's backdrop blur over the hero: use a solid header instead */
+  .sx-header { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; background: rgba(5,5,16,.94) !important; }
+}

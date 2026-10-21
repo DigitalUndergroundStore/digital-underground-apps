@@ -660,7 +660,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <link rel="manifest" href="/site.webmanifest">
 <script type="application/ld+json" id="du-ld">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://digitalundergroundstore.com/#org","name":"Digital Underground","url":"https://digitalundergroundstore.com/","logo":"https://digitalundergroundstore.com/assets/logo/favicon-180.png","sameAs":["https://x.com/DigitalUG_Store"]},{"@type":"WebSite","@id":"https://digitalundergroundstore.com/#website","name":"Digital Underground","url":"https://digitalundergroundstore.com/","publisher":{"@id":"https://digitalundergroundstore.com/#org"}}]}</script>
-<link rel="stylesheet" href="/assets/store-v2/store-v2.css?v=3">
+<link rel="stylesheet" href="/assets/store-v2/store-v2.css?v=4">
 <script src="/assets/store-v2/store-v2.js?v=1" defer></script>
 </head>
 <body>
@@ -683,19 +683,12 @@
 </header>
 <div class="wrap">
   <section class="sx-hero" aria-labelledby="sx-title">
-    <p class="sx-eyebrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5L5.6 4.8A1.2 1.2 0 0 1 6.7 4h10.6a1.2 1.2 0 0 1 1.1.8L20 9.5M4 9.5h16M5.5 12.2V20h13v-7.8M9.5 20v-4.2h5V20"/></svg> The store</p>
     <h1 id="sx-title">Digital Underground</h1>
     <p class="sx-tagline">Digital products designed around you: Apps, Guides &amp; AI tools. Pay once.</p>
     <div class="sx-cta">
-      <a class="sx-btn sx-btn-primary sx-btn-lg" href="#featured">Browse the store <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="sx-btn sx-btn-outline sx-btn-lg" href="/">Developer Marketplace</a>
     </div>
-    <ul class="sx-facts" aria-label="Store facts">
-      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Pay once, no subscription</li>
-      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Instant download</li>
-      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Secure checkout</li>
-      <li id="hero-product-count" hidden></li>
-    </ul>
+    <p class="sx-facts">Pay once · Instant download · Secure checkout</p>
   </section>
   <div class="sx-layout">
     <div class="sx-backdrop" id="sxBackdrop" hidden></div>
@@ -1590,7 +1583,7 @@
 <script src="/assets/signup.js?v=20261018a11" defer></script>
 <script>
 /* Honest product count: unique Gumroad product listings in the store's main content. Hidden if none found. */
-(function(){try{var s={},n=0;document.querySelectorAll('main a[href*="gumroad.com/l/"]').forEach(function(a){var m=a.href.match(/gumroad\.com\/l\/([\w-]+)/);if(m&&!s[m[1]]){s[m[1]]=1;n++;}});var el=document.getElementById('hero-product-count');if(el&&n>0){el.textContent=n+(n===1?' product':' products');el.hidden=false;}}catch(e){}})();
+
 </script>
 </body>
 </html>

@@ -33,15 +33,15 @@ body { background: #060411; }
 .sx-btn-lg { padding: .8rem 1.4rem; font-size: 1rem; border-radius: 13px; }
 /* hero */
 .wrap { max-width: 1280px; padding: 0 1.5rem 80px; }
-.sx-hero { padding: 4.5rem 0 3rem; max-width: 640px; position: relative; }
+.sx-hero { padding: 2rem 0 2.5rem; max-width: 640px; position: relative; }
 .sx-eyebrow { display: inline-flex; align-items: center; gap: .45rem; margin: 0 0 1rem; padding: .35rem .85rem; border-radius: 999px; background: rgba(139,92,246,.12); border: 1px solid var(--sx-border); color: #c4b5fd; font-size: .8rem; font-weight: 600; letter-spacing: .02em; }
 .sx-hero h1 { margin: 0 0 .9rem; font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.04; letter-spacing: -.04em; font-weight: 800; background: linear-gradient(135deg, #fff 0%, #e9e4ff 45%, #a78bfa 100%); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: none; }
 .sx-tagline { margin: 0 0 1.75rem; font-size: 1.15rem; color: #c9c6da; max-width: 34em; text-shadow: 0 1px 12px rgba(6,4,17,.8); }
 .sx-cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.75rem; }
-.sx-facts { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; list-style: none; margin: 0; padding: 0; color: #d6d2e6; font-size: .9rem; }
+.sx-facts { margin: 0; padding: 0; color: rgba(214,210,230,.62); font-size: .82rem; letter-spacing: .01em; }
 .sx-facts li { display: inline-flex; align-items: center; gap: .4rem; }
 .sx-facts svg { color: #34d399; }
-.sx-hero .hero-music { position: absolute; right: 0; top: 4.5rem; }
+.sx-hero .hero-music { position: absolute; right: 0; top: 2rem; }
 .js .sx-hero > * { animation: sxUp .7s cubic-bezier(.2,.7,.2,1) both; }
 .js .sx-hero > :nth-child(2) { animation-delay: .08s; } .js .sx-hero > :nth-child(3) { animation-delay: .16s; } .js .sx-hero > :nth-child(4) { animation-delay: .24s; } .js .sx-hero > :nth-child(5) { animation-delay: .32s; }
 @keyframes sxUp { from { opacity: .3; transform: translateY(16px); } to { opacity: 1; transform: none; } }
@@ -118,14 +118,14 @@ footer a[href="/support/"] svg { vertical-align: -2px; margin-right: 2px; }
   .sx-backdrop { display: block; position: fixed; inset: 0; z-index: 190; background: rgba(5,5,16,.6); opacity: 0; transition: opacity .3s; }
   .sx-backdrop.show { opacity: 1; }
   .sx-backdrop[hidden] { display: none; }
-  .sx-hero { padding: 3rem 0 2rem; }
+  .sx-hero { padding: .75rem 0 1.5rem; }
 }
 @media (max-width: 480px) {
   .sx-nav { padding: .6rem 1rem; gap: .6rem; }
   .sx-logo img.sx-logo-full { height: 24px; }
   .sx-actions .sx-btn-primary { padding: .45rem .75rem; font-size: .8rem; }
   .wrap { padding: 0 1rem 64px; }
-  .sx-hero .hero-music { top: 2.6rem; }
+  .sx-hero .hero-music { top: .75rem; }
   .sx-tagline { font-size: 1.02rem; }
 }
 @media (max-width: 340px) { .sx-logo-full { display: none !important; } .sx-logo-icon { display: block !important; height: 30px !important; } }

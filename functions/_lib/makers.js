@@ -28,7 +28,7 @@ export const SEED = {
   },
   "digital-underground": {
     slug: "digital-underground", name: "Digital Underground",
-    bio: "Small, useful apps, tools and books made in Ontario, Canada. Buy once on Gumroad, no subscriptions.",
+    bio: "Small, useful apps, tools and books built around you. Buy once, no subscription.",
     logo: "/makers/media/digital-underground-logo.webp", banner: "/makers/media/digital-underground-banner.webp",
     website: "https://digitalundergroundstore.com/", socials: {},
   },

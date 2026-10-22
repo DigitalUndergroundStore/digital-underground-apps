@@ -304,13 +304,37 @@
       return '<div class="bar-row"><div class="bar-top"><span class="bk">' + esc(r.k) + '</span><span class="bv">' + fmt(r.v) + (unit ? " " + unit : "") + '</span></div><div class="bar"><i style="width:' + Math.max(2, Math.round((r.v / max) * 100)) + '%"></i></div></div>';
     }).join("") : '<p class="muted small">' + esc(empty) + "</p>") + "</div>";
   }
+  function pageName(p) {
+    if (p === "/store/" || p === "/store") return "Store home";
+    var m = /^\/store\/p\/([^/]+)\/?$/.exec(p);
+    if (m) return m[1].replace(/-/g, " ").replace(/\b\w/g, function (x) { return x.toUpperCase(); }) + " (product page)";
+    return p;
+  }
+  function pageLink(p) { return /^\/[\w\-./]*$/.test(p) ? '<a href="' + esc(p) + '" target="_blank" rel="noopener">' + esc(pageName(p)) + "</a>" : esc(pageName(p)); }
+  function leaveCard(rows, bh) {
+    var max = 1; rows.forEach(function (r) { if (r.exits > max) max = r.exits; });
+    return '<div class="an-card"><h2>Where people leave</h2><p class="muted small an-help">The page people were on when they left the site, most exits first. Exit rate is the share of that page\'s views that ended the visit. "Left without clicking" means they left without clicking through to a product.</p>' +
+      (rows.length ? rows.map(function (r) {
+        return '<div class="bar-row"><div class="bar-top"><span class="bk">' + pageLink(r.k) + '</span><span class="bv">' + fmt(r.exits) + " exits · " + r.rate + '%</span></div>' +
+          '<div class="bar"><i style="width:' + Math.max(2, Math.round((r.exits / max) * 100)) + '%"></i></div>' +
+          '<div class="muted small">' + fmt(r.views) + " views · " + fmt(r.quiet) + " left without clicking · " + fmt(r.exits - r.quiet) + " left after clicking a product</div></div>";
+      }).join("") : '<p class="muted small">No exits recorded yet. This fills in as people visit the store.</p>') + "</div>";
+  }
+  function bounceCard(rows) {
+    return '<div class="an-card"><h2>Bounce rate by landing page</h2><p class="muted small an-help">The first page of each visit, and how often people left from it without opening a second page.</p>' +
+      (rows.length ? rows.map(function (r) {
+        return '<div class="bar-row"><div class="bar-top"><span class="bk">' + pageLink(r.k) + '</span><span class="bv">' + r.rate + "% bounce</span></div>" +
+          '<div class="bar"><i style="width:' + Math.max(2, Math.round(r.rate)) + '%"></i></div>' +
+          '<div class="muted small">' + fmt(r.visits) + " visits landed here · " + fmt(r.bounces) + " bounced</div></div>";
+      }).join("") : '<p class="muted small">No visits recorded yet.</p>') + "</div>";
+  }
   function setAnTabs() {
     document.querySelectorAll("[data-an]").forEach(function (b) { b.setAttribute("aria-selected", b.getAttribute("data-an") === anView ? "true" : "false"); });
   }
   function loadAnalytics() {
     setAnTabs();
     var seq = ++anSeq;
-    $("an-kpis").innerHTML = '<div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div>';
+    $("an-kpis").innerHTML = '<div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div>' + (anView === "store" ? '<div class="kpi sk"></div>' : "");
     $("an-lists").innerHTML = ""; $("an-note").textContent = "";
     if (anView === "store") {
       api("storestats").then(function (out) {
@@ -318,15 +342,17 @@
         if (!out.r.ok) { if (out.r.status === 401) go("login"); return; }
         var d = out.d, c = d.chart || [], pv = sum(c, "pv"), ss = sum(c, "s"), cl = sum(c, "c");
         $("an-sub").textContent = "digitalundergroundstore.com · last 30 days";
+        var bh = d.behaviour || {};
         $("an-kpis").innerHTML = kpi("Page views", fmt(pv), delta(c, "pv")) + kpi("Visits", fmt(ss), delta(c, "s")) +
+          kpi("Bounce rate", bh.visits ? bh.bounceRate + "%" : "–", '<span class="d">' + (bh.visits ? fmt(bh.bounces) + " of " + fmt(bh.visits) + " visits left after 1 page" : "collecting data") + "</span>") +
           kpi("Product clicks", fmt(cl), delta(c, "c")) + kpi("Click rate", (ss ? Math.round((cl / ss) * 1000) / 10 : 0) + "%", '<span class="d">per visit</span>');
         drawChart(c, [{ k: "pv", label: "Views", cls: "s1" }, { k: "c", label: "Clicks", cls: "s2" }]);
         var dv = d.dev || {}, dt = (dv.m || 0) + (dv.d || 0);
-        $("an-lists").innerHTML = listCard("Top products clicked", d.clicks || [], "", "No product clicks yet.") +
+        $("an-lists").innerHTML = leaveCard(d.exitPages || [], bh) + bounceCard(d.landPages || []) + listCard("Top products clicked", d.clicks || [], "", "No product clicks yet.") +
           listCard("Referrers", d.refs || [], "", "No visits yet.") +
           listCard("Devices", dt ? [{ k: "Phone", v: dv.m || 0 }, { k: "Desktop / tablet", v: dv.d || 0 }].sort(function (a, b) { return b.v - a.v; }) : [], "", "No visits yet.") +
           listCard("Pages", d.pages || [], "", "No visits yet.");
-        $("an-note").textContent = "First-party, cookie-free counts. Tracking started when this was deployed; bots excluded.";
+        $("an-note").textContent = "First-party, cookie-free counts. Tracking started when this was deployed; bots excluded. Bounce and exit tracking started Oct 22, 2026, so those numbers cover visits since then. A bounce is a visit that left the site from the first page it opened (going back with the browser's Back button can count as leaving).";
       });
     } else {
       api("analytics").then(function (out) {

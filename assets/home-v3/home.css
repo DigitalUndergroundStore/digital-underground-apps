@@ -944,3 +944,10 @@
     .skip-link { position: absolute; left: -9999px; top: 0; z-index: 1000; padding: 8px 16px; background: #0c0c1e; color: var(--text); border: 2px solid var(--accent); border-radius: 8px; }
     .skip-link:focus { left: 1rem; top: 1rem; }
     .badge-free { background: rgba(52,211,153,.16); color: var(--success); border: 1px solid rgba(52,211,153,.4); }
+
+/* Whole card is a link: the title link is stretched over the card; inner links/buttons sit above it. */
+.card{position:relative;cursor:pointer}
+.card-title a::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}
+.card-meta a,.card-actions a,.card-actions button{position:relative;z-index:2}
+.card-title a:focus-visible{outline:none}
+.card:has(.card-title a:focus-visible){outline:2px solid var(--accent-bright,#c4b5fd);outline-offset:3px}

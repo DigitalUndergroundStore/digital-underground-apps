@@ -170,3 +170,11 @@ search{display:block}.eyebrow{margin-top:0}#main:focus{outline:none}
 @media(max-width:799px){.card,.faq-item,.faq details,.search,.sel,.cta-sec{-webkit-backdrop-filter:none;backdrop-filter:none}.card{background:rgba(20,20,24,.86)}.faq-item{background:rgba(20,20,24,.86)}.search,.sel{background:rgba(20,20,24,.9)}}
 
 .card .maker a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+/* Whole card is a link: the title link is stretched over the card; inner links/buttons sit above it. */
+.card{position:relative}
+.card .top h3 a::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}
+.card .maker a,.card .acts a,.card .acts button,.card .badges a{position:relative;z-index:2}
+.card{cursor:pointer}
+.card .top h3 a:focus-visible{outline:none}
+.card:has(.top h3 a:focus-visible){outline:2px solid var(--v300,#c4b5fd);outline-offset:3px}

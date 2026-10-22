@@ -22,15 +22,17 @@ for sec in s.select("section[id]"):
         items.append(dict(name=name, price=p.get_text(strip=True), blurb=b.get_text(strip=True) if b else "", href=a["href"], cover="/store/" + cover))
     if items: secs.append((sec["id"], items))
 E = html.escape
+def slug(name): return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+for _, its in secs:
+    for d in its: d["slug"] = slug(d["name"])
 def card(d, feat=False):
-    return (f'<a class="pc{" pc-f" if feat else ""} rv" href="{E(d["href"])}" target="_blank" rel="noopener">'
+    # Whole card links to the preview detail page (stretched title link); the Buy pill goes straight to Gumroad.
+    return (f'<div class="pc{" pc-f" if feat else ""} rv">'
       f'<span class="pc-cv"><img src="{E(d["cover"])}" alt="{E(d["name"])} cover" loading="lazy" decoding="async"></span>'
-      f'<span class="pc-b"><strong>{E(d["name"])}</strong><span class="pc-d">{E(d["blurb"])}</span>'
-      f'<span class="pc-r"><span class="pc-p">{E(d["price"])}</span><span class="pc-c">{"Get it free" if d["price"]=="Free" else "Buy"} <i>→</i></span></span></span></a>')
+      f'<span class="pc-b"><strong><a class="pc-a" href="/store-preview-r8m2/p/{d["slug"]}/">{E(d["name"])}</a></strong><span class="pc-d">{E(d["blurb"])}</span>'
+      f'<span class="pc-r"><span class="pc-p">{E(d["price"])}</span><a class="pc-c" href="{E(d["href"])}" target="_blank" rel="noopener" aria-label="{"Get" if d["price"]=="Free" else "Buy"} {E(d["name"])} on Gumroad (opens in a new tab)">{"Get it free" if d["price"]=="Free" else "Buy"} <i>→</i></a></span></span></div>')
 HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow"><title>{t}</title><link rel="icon" href="/assets/logo/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#05040c;--v1:#7c5cff;--v2:#b9a8ff;--cy:#22d3ee;--tx:#ece9f7;--mu:#a49fbd;--ln:rgba(185,168,255,.14);--card:rgba(255,255,255,.035)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -65,6 +67,7 @@ section.s{padding:56px 0 8px;scroll-margin-top:60px}.sh{display:flex;align-items
 .pc-p{font-weight:700;font-size:16px}.pc-c{font-size:13px;font-weight:600;color:var(--cy);padding:6px 12px;border-radius:99px;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.25);transition:.2s}
 .pc-c i{font-style:normal;display:inline-block;transition:transform .2s}.pc:hover .pc-c{background:rgba(34,211,238,.16)}.pc:hover .pc-c i{transform:translateX(3px)}
 .pc-f .pc-b strong{font-size:20px}
+.pc{cursor:pointer}.pc-a::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}.pc-c{position:relative;z-index:2}.pc-a:focus-visible{outline:none}.pc:has(.pc-a:focus-visible){outline:2px solid var(--cy);outline-offset:3px}
 .rv{opacity:0;transform:translateY(18px)}.rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .trust{margin:64px 0 72px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.trust div{padding:22px;border:1px solid var(--ln);border-radius:16px;background:var(--card)}.trust b{display:block;margin-bottom:4px}.trust span{color:var(--mu);font-size:14px}
 .pv{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:50;font-size:12px;padding:6px 12px;border-radius:99px;background:rgba(5,4,12,.9);border:1px solid var(--ln);color:var(--mu)}
@@ -116,4 +119,21 @@ pg = [HEAD.replace("{t}","Pantry Week — Digital Underground (Preview)").replac
  '</div></div><section class="s"><div class="sh"><h2>More from Featured</h2></div><div class="g">' + "".join(card(d) for d in secs[0][1] if d is not pw) + '</div></section><div style="height:60px"></div></main>',
  f'<div class="sticky-buy"><div><strong>Pantry Week</strong><div style="color:var(--mu);font-size:14px">{E(pw["price"])}</div></div><a class="btn btn-p" href="{E(pw["href"])}" target="_blank" rel="noopener">Buy now</a></div>', JS]
 open(f"{out}/product.html", "w", encoding="utf8").write(sn.apply("".join(pg)))
-print("ok", paid)
+def detail(d, sec):
+    if d is pw: return "".join(pg)
+    more = [x for x in dict(secs)[sec] if x is not d][:8]
+    return "".join([HEAD.replace("{t}", f'{E(d["name"])} — Digital Underground (Preview)').replace("{bc}",' class="has-sb"'), '<main class="w">',
+     f'<div class="dt"><div class="dt-m rv"><img src="{E(d["cover"])}" alt="{E(d["name"])}"></div><div class="rv">',
+     f'<div class="crumb"><a href="/store-preview-r8m2/">Store</a> / {E(LABEL[sec])}</div><span class="eyb"><b></b>{E(LABEL[sec])}</span>',
+     f'<h1>{E(d["name"])}</h1><p class="lead">{E(d["blurb"])}</p><div class="price">{E(d["price"])}</div>',
+     f'<a class="btn btn-p buy" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it free" if d["price"]=="Free" else "Buy on Gumroad"} →</a><p class="note">Secure checkout via Gumroad · instant download</p>',
+     '</div></div>' + (f'<section class="s"><div class="sh"><h2>More from {E(LABEL[sec])}</h2></div><div class="g">' + "".join(card(x) for x in more) + '</div></section>' if more else '') + '<div style="height:60px"></div></main>',
+     f'<div class="sticky-buy"><div><strong>{E(d["name"])}</strong><div style="color:var(--mu);font-size:14px">{E(d["price"])}</div></div><a class="btn btn-p" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it" if d["price"]=="Free" else "Buy now"}</a></div>', JS])
+import shutil; shutil.rmtree(f"{out}/p", ignore_errors=True)
+n = 0
+for sid, its in secs:
+    for d in its:
+        dd = f"{out}/p/{d['slug']}"
+        if os.path.exists(f"{dd}/index.html"): continue  # first section wins for items listed twice
+        os.makedirs(dd, exist_ok=True); open(f"{dd}/index.html", "w", encoding="utf8").write(sn.apply(detail(d, sid))); n += 1
+print("ok", paid, "detail pages", n)

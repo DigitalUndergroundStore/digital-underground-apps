@@ -66,6 +66,17 @@ const dec = (s) => String(s || "").replace(/&(#x[0-9a-f]+|#\d+|\w+);/gi, (m, k) 
   .replace(/\s+/g, " ").trim();
 const attr = (tag, name) => { const m = tag.match(new RegExp(`\\b${name}\\s*=\\s*("([^"]*)"|'([^']*)'|([^\\s>]+))`, "i")); return m ? (m[2] ?? m[3] ?? m[4]) : ""; };
 
+// "GitHub - owner/repo: long description" -> "owner/repo"; "Long title | Site" -> "Long title".
+function cleanName(t, site) {
+  t = String(t || "").trim(); site = String(site || "").trim();
+  if (site && t.toLowerCase() !== site.toLowerCase()) {
+    const q = site.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    t = t.replace(new RegExp(`^${q}\\s*[-–—|·:]\\s*`, "i"), "").replace(new RegExp(`\\s*[-–—|·]\\s*${q}$`, "i"), "").trim() || t;
+  }
+  if (t.length > 60) { const seg = t.split(/\s[-–—|·]\s|:\s/)[0].trim(); if (seg.length >= 2) t = seg; }
+  return t || site;
+}
+
 function parse(html, base) {
   const head = html.slice(0, 300000), meta = {};
   for (const t of head.match(/<meta\b[^>]*>/gi) || []) {
@@ -80,7 +91,7 @@ function parse(html, base) {
   }
   const abs = (s) => { try { const u = new URL(dec(s), base); return /^https?:$/.test(u.protocol) ? u.href : ""; } catch { return ""; } };
   let canon = ""; const cl = head.match(/<link\b[^>]*rel=["']?canonical[^>]*>/i); if (cl) canon = abs(attr(cl[0], "href"));
-  const name = (meta["og:site_name"] && meta["og:title"] && meta["og:title"].length > 60 ? meta["og:site_name"] : "") || meta["og:title"] || meta["twitter:title"] || title;
+  const name = cleanName(meta["og:title"] || meta["twitter:title"] || title, meta["og:site_name"]);
   const desc = meta["og:description"] || meta["twitter:description"] || meta["description"] || "";
   const img = abs(meta["og:image:secure_url"] || meta["og:image"] || meta["og:image:url"] || meta["twitter:image"] || meta["twitter:image:src"] || "");
   const cut = (s, n) => (s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…" : s);
@@ -89,7 +100,7 @@ function parse(html, base) {
 
 export async function onRequestPost({ request, env }) {
   const ip = request.headers.get("CF-Connecting-IP") || "unknown";
-  const rl = await rateAll(env, [...ipRules("autofill-m", ip, 6, 60), ...ipRules("autofill-h", ip, 40, 3600)]);
+  const rl = await rateAll(env, [...ipRules("autofill-m", ip, 10, 60), ...ipRules("autofill-h", ip, 40, 3600)]);
   if (!rl.ok) return json({ ok: false, error: "Too many lookups. Fill the form in manually or try again shortly." }, 429, { "retry-after": String(rl.retryAfter || 60) });
   let body; try { body = await request.json(); } catch { return json({ ok: false, error: "Bad request." }, 400); }
   let u = await checkUrl(body && body.url);
@@ -105,7 +116,7 @@ export async function onRequestPost({ request, env }) {
       u = await checkUrl(new URL(loc, u).href);
       if (!u) return json({ ok: false, error: "That link redirects somewhere we can't read." }, 422);
     }
-    if (!res.ok) return json({ ok: false, error: `The page answered ${res.status}.` }, 422);
+    if (!res.ok) return json({ ok: false, error: res.status === 404 || res.status === 410 ? "That page wasn't found. Check the link." : res.status === 401 || res.status === 403 ? "That page is private or blocks previews." : res.status >= 500 ? "That site isn't responding right now." : "We couldn't read that page." }, 422);
     if (!/html|xml/i.test(res.headers.get("content-type") || "")) return json({ ok: false, error: "That link isn't a web page." }, 422);
     const meta = parse(await readCapped(res), u.href);
     if (!meta.name && !meta.pitchShort) return json({ ok: false, error: "No details found on that page." }, 422);

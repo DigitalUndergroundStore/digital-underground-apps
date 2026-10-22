@@ -1,6 +1,6 @@
 // Server-rendered creator pages: /makers/ (directory) and /makers/<slug>/ (profile + all marketplace listings).
 // Fully public. Full HTML for crawlers; a tiny inline script adds search. Edge-cached 5 min to keep KV reads low.
-import { getKv, listApproved, listingContactAddress } from "../_lib/community.js";
+import { getKv, listApproved, listingContactAddress, isRetired } from "../_lib/community.js";
 import { allLiveProfiles, liveProfile, makerSlugFor, socialLabel, validSlug } from "../_lib/makers.js";
 
 const ORIGIN = "https://digitalundergroundstore.com";
@@ -16,8 +16,8 @@ async function allListings(context, kv) {
     if (r.ok) for (const x of await r.json()) if ((x.status || "approved") === "approved") by[x.id] = x;
   } catch {}
   if (kv) for (const x of await listApproved(kv, context.env)) by[x.id] = x;
-  return Object.values(by).map((r) => {
-    if (r.id.startsWith("cm_kerzy_") || /kerzy/i.test(r.makerName || "")) { r.makerName = "Kerzy Labs"; r.curated = false; }
+  return Object.values(by).filter((r) => !isRetired(r)).map((r) => {
+    if (/kerzy/i.test(r.makerName || "") || (r.id.startsWith("cm_kerzy_") && r.makerName !== "Digital Underground")) { r.makerName = "Kerzy Labs"; r.curated = false; }
     if (r.id === "cm_kerzy_neonbastion") r.stage = "In development / testing";
     if (r.contactable === undefined) r.contactable = !!listingContactAddress(context.env, r);
     r.makerSlug = makerSlugFor(r);
@@ -74,34 +74,12 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=4">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div id="du-globe-bg" class="du-globe-bg" aria-hidden="true" data-res="2k"><canvas id="du-globe-canvas" class="du-globe-canvas" aria-hidden="true" tabindex="-1"></canvas><div class="du-globe-vignette"></div></div>
-<header class="nav">
-  <div class="mx nav-in">
-    <a class="du-logo" href="/store/" aria-label="Digital Underground store home"><img class="du-logo-full" src="/assets/logo/du-horizontal.svg" alt="" width="189" height="34"><img class="du-logo-icon" src="/assets/logo/du-mark-anim-icon.svg" alt="" width="34" height="34"></a>
-    <nav class="nav-links" aria-label="Site">
-      <a href="/store/">Store</a>
-      <a href="/">Developer Marketplace</a>
-      <a href="/makers/"${current === "dir" ? ' aria-current="page"' : ""}>Creators</a>
-      <a href="/league/">League</a>
-      <a href="/community/dashboard/">Creator dashboard</a>
-    </nav>
-    <div class="nav-right">
-      <div class="nav-ctas"><a class="pill pill-v" href="/community/submit/">List your project free</a></div>
-      <button type="button" id="menu-btn" class="icon-btn menu-btn" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    </div>
-  </div>
-</header>
-<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
-  <div class="mm-head"><button type="button" id="close-menu" class="icon-btn" aria-label="Close menu"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button></div>
-  <nav class="mm-links" aria-label="Mobile">
-    <a href="/store/">Store</a><a href="/">Developer Marketplace</a><a href="/makers/">Creators</a><a href="/league/">League</a><a href="/community/dashboard/">Creator dashboard</a>
-    <hr><a class="pill pill-v" href="/community/submit/">List your project free</a>
-  </nav>
-</div>
-<div id="overlay" hidden></div>
+<!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/store/" aria-label="Digital Underground store home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/blog/">Blog</a><hr><a href="/store/">Store</a><a href="/makers/">Creators</a><a href="/community/dashboard/">Creator dashboard</a><button type="button" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=3" defer></script><!--/du-site-nav-->
 <main id="main" tabindex="-1">
 ${body}
 </main>
@@ -165,9 +143,9 @@ function makerPage(p, rows) {
 
 function directoryPage(makers) {
   const canonical = `${ORIGIN}/makers/`;
-  const items = makers.map((m) => `<li class="mk-card" data-q="${e((m.name + " " + m.bio).toLowerCase())}"><a class="mk-card-a" href="/makers/${e(m.slug)}/">` +
+  const items = makers.map((m) => `<li class="mk-card" data-q="${e((m.name + " " + m.bio).toLowerCase())}"><a class="mk-card-a" href="${m.auto ? e(m.href) : `/makers/${e(m.slug)}/`}">` +
     (m.logo ? `<img class="mk-card-logo" src="${safeHref(m.logo)}" alt="" width="64" height="64" loading="lazy" decoding="async">` : `<span class="mk-card-logo mk-ph" aria-hidden="true">${e(m.name.charAt(0))}</span>`) +
-    `<span class="mk-card-body"><span class="mk-card-name">${e(m.name)}</span><span class="mk-card-bio">${e(m.bio)}</span><span class="mk-card-n">${m.count} ${m.count === 1 ? "listing" : "listings"}</span></span></a></li>`).join("\n");
+    `<span class="mk-card-body"><span class="mk-card-name">${e(m.name)}</span><span class="mk-card-bio">${e(m.bio || (m.auto ? "Maker on the Developer Marketplace" : ""))}</span><span class="mk-card-n">${m.count} ${m.count === 1 ? "listing" : "listings"}</span></span></a></li>`).join("\n");
   const body = `<div class="mx z hero mk-dir-hero">
   <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Independent makers</p>
   <h1>Creators</h1>
@@ -189,7 +167,7 @@ function directoryPage(makers) {
 })();
 </script>`;
   const jsonld = { "@context": "https://schema.org", "@type": "CollectionPage", url: canonical, name: "Creators | Developer Marketplace",
-    mainEntity: { "@type": "ItemList", numberOfItems: makers.length, itemListElement: makers.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.name, url: `${ORIGIN}/makers/${m.slug}/` })) } };
+    mainEntity: { "@type": "ItemList", numberOfItems: makers.length, itemListElement: makers.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.name, url: m.auto ? ORIGIN + m.href : `${ORIGIN}/makers/${m.slug}/` })) } };
   return shell({ title: "Creators | Developer Marketplace | Digital Underground", desc: "Browse the independent makers on the Digital Underground Developer Marketplace and see every app, tool and game each one lists.",
     canonical, image: `${ORIGIN}/community/og-dm-v3.jpg`, imageAlt: "Developer Marketplace by Digital Underground", jsonld, body, current: "dir" });
 }
@@ -212,7 +190,16 @@ export async function onRequestGet(context) {
   let res;
   if (!parts.length) {
     const profiles = await allLiveProfiles(kv);
-    const makers = profiles.map((p) => ({ ...p, count: rows.filter((r) => r.makerSlug === p.slug).length })).filter((m) => m.count > 0)
+    const withProfile = profiles.map((p) => ({ ...p, count: rows.filter((r) => r.makerSlug === p.slug).length })).filter((m) => m.count > 0);
+    // Makers with live listings but no creator profile yet get a basic card (name, count, first listing image).
+    const auto = new Map();
+    for (const r of rows) {
+      if (r.makerSlug || r.curated || !r.makerName) continue;
+      const k = r.makerName.trim().toLowerCase();
+      const a = auto.get(k) || { name: r.makerName.trim(), bio: "", count: 0, logo: r.imageUrl || "", href: `/community/p/?id=${encodeURIComponent(r.id)}`, auto: true };
+      a.count++; auto.set(k, a);
+    }
+    const makers = [...withProfile, ...auto.values()]
       .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || a.name.localeCompare(b.name));
     res = html(directoryPage(makers));
   } else {

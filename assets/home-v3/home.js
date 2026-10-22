@@ -393,14 +393,14 @@
 
     // ═══════════ HEADER SCROLL ═══════════
     const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
+    if (header) window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 24);
     }, { passive: true });
 
     // ═══════════ MOBILE MENU ═══════════
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
-    menuToggle.addEventListener('click', () => {
+    if (menuToggle && navLinks) menuToggle.addEventListener('click', () => {
       const open = navLinks.classList.toggle('open');
       menuToggle.setAttribute('aria-expanded', open);
       menuToggle.innerHTML = open ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>' : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
@@ -424,7 +424,7 @@
 
     // Escape closes mobile menu
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+      if (e.key === 'Escape' && navLinks && navLinks.classList.contains('open')) {
         navLinks.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
         menuToggle.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';

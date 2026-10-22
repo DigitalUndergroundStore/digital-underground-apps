@@ -37,7 +37,7 @@ export const SEED = {
 export function makerSlugFor(row) {
   if (!row) return null;
   if (validSlug(row.makerSlug)) return row.makerSlug;
-  if (typeof row.id === "string" && row.id.startsWith("cm_kerzy_")) return "kerzy-labs";
+  if (typeof row.id === "string" && row.id.startsWith("cm_kerzy_") && row.id !== "cm_kerzy_easytracker") return "kerzy-labs";
   const s = slugify(row.makerName);
   return SEED[s] ? s : null;
 }

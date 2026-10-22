@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   var $ = function (id) { return document.getElementById(id); };
   var header = $('sxHeader');
-  addEventListener('scroll', function () { header.classList.toggle('scrolled', scrollY > 20); }, { passive: true });
+  if (header) addEventListener('scroll', function () { header.classList.toggle('scrolled', scrollY > 20); }, { passive: true });
   var menu = $('sxMenu'), links = $('sxLinks');
-  menu.addEventListener('click', function () { var o = links.classList.toggle('open'); menu.setAttribute('aria-expanded', o); });
+  if (menu && links) menu.addEventListener('click', function () { var o = links.classList.toggle('open'); menu.setAttribute('aria-expanded', o); }); // legacy header; shared DU nav handles the menu now
   // sections + counts (unique products per section; reels repeat featured items so they are not counted)
   var secs = [].slice.call(document.querySelectorAll('main > section[id]'));
   function items(sec) { return [].slice.call(sec.querySelectorAll('.card, .reel')).filter(function (el) { return !el.parentElement.closest('.card, .reel'); }); }

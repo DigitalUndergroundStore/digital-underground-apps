@@ -205,6 +205,12 @@ export function parseImageField(body) {
  * @param {Record<string, unknown>} body
  * @returns {{ listing?: object; error?: string; status?: number }}
  */
+/** Products retired from the Developer Marketplace (their own pages stay up). Easy Tracker is a DU product, not a listing. */
+export const RETIRED_IDS = new Set(["cm_kerzy_easytracker"]);
+export function isRetired(row) {
+  return !!row && (RETIRED_IDS.has(row.id) || /^https:\/\/(www\.)?digitalundergroundstore\.com\/downloads\/easy-tracker/i.test(String(row.projectUrl || "")));
+}
+
 export function validateSubmission(body) {
   if (!body || typeof body !== "object") {
     return { error: "Invalid submission.", status: 400 };
@@ -228,6 +234,7 @@ export function validateSubmission(body) {
 
   if (!name) return { error: "Project name is required.", status: 400 };
   if (!isHttpsUrl(projectUrl)) return { error: "Project URL must be a valid https link.", status: 400 };
+  if (isRetired({ projectUrl })) return { error: "This product can't be listed on the marketplace.", status: 400 };
   if (!makerName) return { error: "Maker name is required.", status: 400 };
   if (!email) {
     return { error: "A valid email is required.", status: 400 };
@@ -380,7 +387,7 @@ export async function listApproved(kv, env) {
   const out = [];
   for (const id of index.approved) {
     const row = await kvGetListing(kv, id);
-    if (row && row.status === "approved") out.push(env ? { ...publicListing(row), contactable: !!listingContactAddress(env, row) } : publicListing(row));
+    if (row && row.status === "approved" && !isRetired(row)) out.push(env ? { ...publicListing(row), contactable: !!listingContactAddress(env, row) } : publicListing(row));
   }
   out.sort((a, b) => (a.name || "").localeCompare(b.name || ""));
   return out;

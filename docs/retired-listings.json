@@ -1,0 +1,22 @@
+[
+  {
+    "id": "cm_kerzy_easytracker",
+    "status": "approved",
+    "name": "Easy Tracker",
+    "makerName": "Digital Underground",
+    "category": "apps",
+    "stage": "In testing / development",
+    "pitchShort": "Share your live location with one link. The person you send it to sees you coming on a map, with no app or account. Sharing ends when you tap Stop or after 12 hours.",
+    "descriptionLong": "Easy Tracker is an Android app for the trip over. Open it and your live location link is already on the screen: copy it and send it to whoever is waiting for you.\n\nThey open the link in their phone's browser and see where you are on a live map. They don't need the app or an account, and the map can estimate distance and a rough arrival time on their own phone.\n\nPrivacy is built in: only your latest point is shared, no location history is kept, and nothing is sold. Sharing stops when you tap Stop, or automatically after 12 hours, and the old link stops working. On Android a notification stays visible while sharing is on.\n\nEasy Tracker is in testing / development and is not in the app stores yet. You can download the free Android test build (APK) from the download page, which has install steps.",
+    "projectUrl": "https://digitalundergroundstore.com/downloads/easy-tracker/",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/easy-tracker-cover.png",
+    "tags": [
+      "android",
+      "location",
+      "privacy",
+      "travel"
+    ],
+    "priceLabel": "Free / In testing",
+    "hidden": true
+  }
+]

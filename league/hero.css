@@ -95,3 +95,4 @@
 .lgh .lgh-media.lgh-vid video.lgh-v{left:0;top:0;width:100%;height:100%;aspect-ratio:auto;transform:none;object-fit:cover;object-position:50% 50%;box-shadow:none}
 .lgh-snd{right:12px;bottom:12px;width:34px;height:34px;font-size:15px}
 .lgh-snd{top:10px;bottom:auto;right:10px}
+.lgh .lgh-media.lgh-vid{aspect-ratio:1/1}

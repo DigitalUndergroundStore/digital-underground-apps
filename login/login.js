@@ -45,14 +45,18 @@
   });
   var noMail = false, NO_MAIL = "Password reset by email is coming soon. Contact digitalunderground.store@proton.me for help.";
   function showNoMail() { say(NO_MAIL, false); $("fem").disabled = true; $("fgo").hidden = true; }
-  function only(id, title, sub) { ["f-auth", "f-mfa", "f-forgot", "f-reset"].forEach(function (f) { $(f).hidden = f !== id; });
+  function only(id, title, sub) { ["f-auth", "f-mfa", "f-forgot", "f-reset", "f-sent"].forEach(function (f) { $(f).hidden = f !== id; });
     [".au-oauth", ".au-or", ".au-tabs"].forEach(function (q) { document.querySelector(q).hidden = true; });
+    $("au-fine").hidden = true; $("au-back").hidden = false; $("au-ico").hidden = false; document.querySelector(".au-card").classList.add("au-step");
     $("au-title").textContent = title; $("au-sub").textContent = sub; }
+  $("au-back").href = "/login/" + (qs.get("next") ? "?next=" + encodeURIComponent(next) : "");
   $("f-forgot").addEventListener("submit", function (e) {
     e.preventDefault(); var em = $("fem").value.trim();
     if (!/^\S+@\S+\.\S+$/.test(em)) return say("Enter a valid email.");
     $("fgo").disabled = true;
-    post("forgot", { email: em }).then(function (d) { if (d.unavailable) return showNoMail(); say(d.message || d.error, !!d.ok); }).catch(function () { say("Network error. Try again."); }).then(function () { $("fgo").disabled = false; });
+    post("forgot", { email: em }).then(function (d) { if (d.unavailable) return showNoMail();
+      if (d.ok) { $("sent-to").textContent = em; only("f-sent", "Check your email", "Your reset link is on its way."); say(""); return; }
+      say(d.error || "Something went wrong. Try again."); }).catch(function () { say("Network error. Try again."); }).then(function () { $("fgo").disabled = false; });
   });
   var resetTok = qs.get("reset");
   $("f-reset").addEventListener("submit", function (e) {
@@ -65,9 +69,10 @@
       if (d.ok) { history.replaceState(null, "", "/login/"); setTimeout(function () { location.href = "/login/"; }, 1800); }
     }).catch(function () { say("Network error. Try again."); }).then(function () { $("rgo").disabled = false; });
   });
-  function showForgot() { only("f-forgot", "Reset your password", "Enter your account email and we'll send you a reset link that works for 1 hour."); say(""); if (noMail) showNoMail();
+  function showForgot() { document.querySelector(".au-card").classList.remove("au-sent"); only("f-forgot", "Reset your password", "Enter your account email and we'll send you a reset link that works for 1 hour."); say(""); if (noMail) showNoMail();
     var pre = qs.get("email") || $("em").value.trim(); if (pre && !$("fem").value) $("fem").value = pre; $("fem").focus(); }
   $("forgot").addEventListener("click", function (e) { e.preventDefault(); history.pushState(null, "", "/login/?forgot=1" + (qs.get("next") ? "&next=" + encodeURIComponent(next) : "")); showForgot(); });
+  $("resend").addEventListener("click", function () { showForgot(); $("fem").select(); });
   window.addEventListener("popstate", function () { location.reload(); });
   if (resetTok) { history.replaceState(null, "", "/login/?reset=1"); if (resetTok === "1") resetTok = ""; only("f-reset", "Choose a new password", "Pick something you don't use anywhere else."); }
   else if (qs.get("forgot")) showForgot();

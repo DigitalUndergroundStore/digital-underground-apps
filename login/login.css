@@ -19,7 +19,7 @@ a{color:var(--du-accent,#bfe8ff)}
 .au-card{width:100%;max-width:400px}
 .au-m-logo{display:none}
 .au-tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(196,181,253,.16);margin-bottom:24px}
-.au-tabs button{min-height:40px;border:0;border-radius:8px;background:transparent;color:var(--du-muted,#c8c0da);font:600 14px inherit;font-family:inherit;cursor:pointer}
+.au-tabs button{min-height:40px;border:0;border-radius:8px;background:transparent;color:var(--du-muted,#c8c0da);font-weight:600;font-size:14px;font-family:inherit;cursor:pointer}
 .au-tabs button[aria-selected=true]{background:rgba(139,92,246,.28);color:#fff}
 .au-card h2{font-size:26px;margin:0 0 4px;letter-spacing:-.01em}
 .au-sub{margin:0 0 20px;color:var(--du-muted,#c8c0da)}
@@ -38,9 +38,9 @@ label{font-size:13px;font-weight:600;color:#ddd6fe}
 input{width:100%;min-height:48px;padding:0 14px;border-radius:12px;border:1px solid rgba(196,181,253,.28);background:rgba(255,255,255,.04);color:#fff;font:inherit}
 input:focus{outline:2px solid #a78bfa;outline-offset:1px;border-color:transparent}
 .au-pw{position:relative}.au-pw input{padding-right:72px}
-.au-eye{position:absolute;right:8px;top:8px;height:32px;padding:0 10px;border-radius:8px;border:0;background:rgba(255,255,255,.08);color:#ddd6fe;font:600 12px inherit;font-family:inherit;cursor:pointer}
+.au-eye{position:absolute;right:8px;top:8px;height:32px;padding:0 10px;border-radius:8px;border:0;background:rgba(255,255,255,.08);color:#ddd6fe;font-weight:600;font-size:12px;font-family:inherit;cursor:pointer}
 .au-hint{margin:0;font-size:12px;color:var(--du-muted,#c8c0da)}
-.au-submit{margin-top:12px;min-height:48px;border:0;border-radius:12px;background:linear-gradient(90deg,#7c3aed,#4f46e5);color:#fff;font:700 15px inherit;font-family:inherit;cursor:pointer}
+.au-submit{margin-top:12px;min-height:48px;border:0;border-radius:12px;background:linear-gradient(90deg,#7c3aed,#4f46e5);color:#fff;font-weight:700;font-size:15px;font-family:inherit;cursor:pointer}
 .au-submit:disabled{opacity:.6}
 .au-alert{margin:0 0 12px;padding:10px 14px;border-radius:12px;font-size:14px;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.4);color:#fecaca}
 .au-alert.ok{background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.4);color:#bbf7d0}
@@ -55,3 +55,15 @@ input:focus{outline:2px solid #a78bfa;outline-offset:1px;border-color:transparen
   .au-mark{width:160px;height:160px;right:-30px;bottom:-30px}
   .au-panel{padding:24px 20px 40px;align-items:flex-start}
 }
+.au-back{display:inline-flex;align-items:center;gap:6px;margin:0 0 20px;padding:8px 14px 8px 10px;border-radius:999px;border:1px solid rgba(196,181,253,.16);background:rgba(255,255,255,.05);color:#ddd6fe;font-size:13px;font-weight:600;text-decoration:none}
+.au-back:hover{background:rgba(139,92,246,.2);color:#fff}
+.au-ico{display:flex;align-items:center;justify-content:center;width:48px;height:48px;margin:0 0 16px;border-radius:14px;background:linear-gradient(135deg,rgba(124,58,237,.35),rgba(79,70,229,.35));border:1px solid rgba(196,181,253,.28);color:#fff}
+.au-step .au-sub{margin-bottom:24px}
+.au-alt{margin:16px 0 0;text-align:center;font-size:13px;color:var(--du-muted,#c8c0da)}
+.au-alt .au-link{font-weight:600}
+.au-done{display:grid;gap:8px}
+.au-done p:first-child{margin:0 0 4px;padding:14px 16px;border-radius:12px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.35);color:#d9f99d;font-size:14px}
+.au-done b{color:#fff;word-break:break-all}
+.au-as-btn{display:flex;align-items:center;justify-content:center;text-decoration:none}
+.au-linkbtn{padding:0;border:0;background:none;color:var(--du-accent,#bfe8ff);font-weight:600;font-size:13px;font-family:inherit;text-decoration:underline;cursor:pointer}
+input::placeholder{color:rgba(200,192,218,.5)}

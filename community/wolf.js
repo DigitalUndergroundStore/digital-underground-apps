@@ -44,7 +44,7 @@
       '<p class="desc">' + esc(row.pitchShort) + "</p>" +
       '<div class="foot-row"><span class="price">' + esc(row.priceLabel || "See site") + '</span><div class="acts">' +
       (row.contactable ? '<a class="pill pill-o" href="' + href + '#contact" aria-label="Contact the developer of ' + name + '">Contact</a>' : "") +
-      '(row.buyUrl ? '<a class="pill pill-v" data-out="' + esc(row.id) + '" href="' + esc(row.buyUrl) + '" target="_blank" rel="noopener" aria-label="Buy ' + name + ' on Gumroad (opens in a new tab)">Buy</a>' : "") +
+      (row.comingSoon ? '<span class="pill pill-o" aria-disabled="true">Coming soon</span>' : row.buyUrl ? '<a class="pill pill-v" data-out="' + esc(row.id) + '" href="' + esc(row.buyUrl) + '" target="_blank" rel="noopener" aria-label="Buy ' + name + ' on Gumroad (opens in a new tab)">Buy</a>' : "") +
       '<a class="pill ' + (row.buyUrl ? "pill-o" : "pill-v") + '" data-out="' + esc(row.id) + '" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener" aria-label="Visit ' + name + ' (opens in a new tab)">Visit</a></div></div></div></article>';
   }
   function tilt(li) {

@@ -181,3 +181,7 @@ main > section:first-child .section-head { margin-bottom: .35rem !important; }
 }
 @keyframes sxShine { 0% { background-position: 100% 0; } 60%, 100% { background-position: 0% 0; } }
 @media (prefers-reduced-motion: reduce) { .sx-shine { animation: none; background: none; color: #fff; -webkit-text-fill-color: #fff; } }
+/* Dimmed, subtle Earth (same treatment as the marketplace homepage): listings are the focus. */
+body { background: #060411; }
+.globe-layer { opacity: .22; filter: saturate(.35) brightness(.85); }
+.globe-layer::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,6,28,.55), rgba(8,6,24,.35) 50%, rgba(6,4,17,.7)), radial-gradient(ellipse 60% 50% at 80% 80%, rgba(76,29,149,.18), transparent 70%); }

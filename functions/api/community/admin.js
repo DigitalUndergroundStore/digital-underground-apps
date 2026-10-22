@@ -18,6 +18,7 @@ import {
   dashboardUrl,
   getAccount,
   issueAccountToken,
+  accountForEmail,
   linkContactToCreator,
   purgeStats,
   resetCreatorAuth,
@@ -140,9 +141,10 @@ export async function onRequest(context) {
       // Create (or rotate) the manage link for a listing's creator. Returned once; not stored.
       const row = await kvGetListing(kv, id);
       if (!row) return json({ error: "Listing not found." }, 404);
-      const existing = row.creatorId ? await getAccount(kv, row.creatorId) : null;
+      // One email = one account: reuse the account that owns the listing email, or make one tied to it.
+      const existing = (row.creatorId ? await getAccount(kv, row.creatorId) : null) || (row.email ? await accountForEmail(kv, row.email) : null);
       const { acct, token } = await issueAccountToken(kv, existing);
-      if (!existing) {
+      if (row.creatorId !== acct.id) {
         row.creatorId = acct.id;
         await kvPutListing(kv, row);
       }

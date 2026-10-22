@@ -9,10 +9,13 @@
  *   provider login whose email the provider has VERIFIED links to the account that owns that
  *   email; otherwise a new account is created. Unverified emails never link.
  * - Optional TOTP 2FA (RFC 6238, SHA-1, 30 s, 6 digits). Secret stored AES-GCM encrypted.
+ * - Accounts without an email (X sign-in) can add one on Security; the confirm link sets it, or merges
+ *   into the account that already owns that email, so every sign-in method opens one account.
  * - No magic links.
  */
 import { hmacHex, normalizeEmail, timingSafeEqualStr } from "./community.js";
-import { accountIdForLogin, getAccount, putAccount, sha256Hex } from "./creator.js";
+import { accountIdForLogin, getAccount, putAccount, sha256Hex, syncListingEmails, linkContactToCreator } from "./creator.js";
+import { kvGetListing, kvPutListing } from "./community.js";
 import { rateAll, ipRules } from "./ratelimit.js";
 
 export const enc = new TextEncoder();
@@ -25,6 +28,7 @@ export const limits = {
   signup: (env, ip, email) => rateAll(env, [...ipRules("signup:ip", ip, 5, 3600), ["signup:em:" + email, 3, 3600]]),
   totp: (env, ip, acctId) => rateAll(env, [...ipRules("totp:ip", ip, 10, 900), ["totp:acct:" + acctId, 6, 900]]),
   oauth: (env, ip) => rateAll(env, ipRules("oauth:ip", ip, 20, 600)),
+  addEmail: (env, ip, acctId) => rateAll(env, [...ipRules("addem:ip", ip, 5, 3600), ["addem:acct:" + acctId, 3, 3600]]),
   forgot: (env, ip, email) => rateAll(env, [...ipRules("forgot:ip", ip, 5, 3600), ["forgot:em:" + email, 3, 3600]]),
   reset: (env, ip) => rateAll(env, ipRules("reset:ip", ip, 10, 900)),
 };
@@ -63,11 +67,11 @@ export const PROVIDERS = {
 export const redirectUri = (origin, p) => `${origin}/api/auth/${p}/callback`;
 export const configured = (env, p) => !!(env?.[PROVIDERS[p].id] && env?.[PROVIDERS[p].secret]);
 
-export async function startOAuth(env, kv, origin, p, next) {
+export async function startOAuth(env, kv, origin, p, next, linkAcctId) {
   const cfg = PROVIDERS[p];
   const state = b64url(rnd(24)), verifier = b64url(rnd(48));
   const challenge = b64url(new Uint8Array(await crypto.subtle.digest("SHA-256", enc.encode(verifier))));
-  await kv.put("oauthst:" + state, JSON.stringify({ p, verifier, next }), { expirationTtl: 600 });
+  await kv.put("oauthst:" + state, JSON.stringify({ p, verifier, next, link: linkAcctId || "" }), { expirationTtl: 600 });
   const q = new URLSearchParams({ response_type: "code", client_id: env[cfg.id], redirect_uri: redirectUri(origin, p), scope: cfg.scope,
     state, code_challenge: challenge, code_challenge_method: "S256", ...(cfg.extra || {}) });
   return { url: `${cfg.authorize}?${q}`, cookie: `du_oauth=${state}; Max-Age=600; Path=/api/auth/; HttpOnly; Secure; SameSite=Lax` };
@@ -90,18 +94,105 @@ export async function finishOAuth(env, kv, origin, p, url, cookieState) {
   const tok = await r.json();
   const prof = await cfg.profile(tok.access_token);
   if (!prof.sub) return { error: "profile" };
-  return { prof, next: st.next };
+  return { prof, next: st.next, link: st.link || "" };
 }
 
-const loginKey = async (e) => "login:" + (await sha256Hex("login|" + e));
+export const loginKey = async (e) => "login:" + (await sha256Hex("login|" + e));
 const identKey = (p, sub) => `oauth:${p}:${sub}`;
+
+/**
+ * Link a provider identity to the signed-in account ("Link X / Google" on Security).
+ * If the identity already belongs to another account, that account is merged in only when it
+ * has no email of its own (an orphan X-only account); otherwise it is refused.
+ */
+export async function linkIdentity(kv, acct, p, prof) {
+  const k = identKey(p, prof.sub);
+  const otherId = await kv.get(k);
+  if (otherId && otherId !== acct.id) {
+    const other = await getAccount(kv, otherId);
+    if (other && !other.mergedInto) {
+      if (other.email) return { error: "linked-elsewhere" };
+      await mergeAccounts(kv, other, acct);
+    }
+  }
+  acct.identities = { ...(acct.identities || {}), [p]: { sub: prof.sub, linkedAt: acct.identities?.[p]?.linkedAt || Date.now() } };
+  if (!acct.displayName && prof.name) acct.displayName = String(prof.name).slice(0, 80);
+  await putAccount(kv, acct);
+  await kv.put(k, acct.id);
+  return { ok: true };
+}
+
+/** Move identities and listings from `from` into `to`; `from` becomes a pointer (mergedInto) and its sessions end. */
+export async function mergeAccounts(kv, from, to) {
+  if (!from || !to || from.id === to.id) return;
+  for (const [p, v] of Object.entries(from.identities || {})) {
+    if (!v?.sub) continue;
+    if (!to.identities?.[p]) to.identities = { ...(to.identities || {}), [p]: v };
+    await kv.put(identKey(p, v.sub), to.id);
+  }
+  const ids = Array.isArray(to.listingIds) ? to.listingIds : [];
+  for (const id of from.listingIds || []) {
+    const row = await kvGetListing(kv, id);
+    if (row && row.creatorId === from.id) { row.creatorId = to.id; await kvPutListing(kv, row); }
+    if (!ids.includes(id)) ids.push(id);
+  }
+  to.listingIds = ids.slice(-50);
+  if (!to.displayName && from.displayName) to.displayName = from.displayName;
+  for (const f of ["logo", "banner", "bio", "makerName"]) if (from[f] && !to[f]) to[f] = from[f];
+  from.mergedInto = to.id; from.mergedAt = Date.now(); from.identities = {}; from.listingIds = [];
+  from.sessVer = (from.sessVer || 0) + 1;
+  await putAccount(kv, from);
+  await putAccount(kv, to);
+  if (to.email) await syncListingEmails(kv, to);
+}
+
+// ---------- Add / confirm an email on an account that has none (e.g. X sign-in) ----------
+export const EMAIL_TTL = 3600;
+export async function createEmailToken(kv, acctId, email) {
+  const tok = b64url(rnd(32));
+  await kv.put("emailver:" + (await sha256Hex("emailver|" + tok)), JSON.stringify({ acctId, email }), { expirationTtl: EMAIL_TTL });
+  return tok;
+}
+export async function takeEmailToken(kv, tok, acctId) {
+  if (typeof tok !== "string" || tok.length < 40 || tok.length > 64) return null;
+  const k = "emailver:" + (await sha256Hex("emailver|" + tok));
+  const v = await kv.get(k, "json");
+  if (!v || v.acctId !== acctId) return null;
+  await kv.delete(k);
+  return v && v.acctId && v.email ? v : null;
+}
+/**
+ * Confirm the email: set it on the account, or, when another account already owns that email,
+ * merge this account into it so every sign-in (email, Google, X) opens the same account.
+ * Returns the account the user should now be signed in as.
+ */
+export async function confirmEmail(kv, acctId, email) {
+  let acct = await getAccount(kv, acctId);
+  if (acct?.mergedInto) acct = await getAccount(kv, acct.mergedInto);
+  if (!acct) return { error: "gone" };
+  const ownerId = await accountIdForLogin(kv, email);
+  if (ownerId && ownerId !== acct.id) {
+    const owner = await getAccount(kv, ownerId);
+    if (owner) { await mergeAccounts(kv, acct, owner); await linkContactToCreator(kv, email, owner.id); return { acct: owner, merged: true }; }
+  }
+  if (acct.email && acct.email !== email) return { error: "has-email" };
+  acct.email = email; acct.emailVerifiedAt = Date.now();
+  await putAccount(kv, acct);
+  await kv.put(await loginKey(email), acct.id);
+  await syncListingEmails(kv, acct);
+  await linkContactToCreator(kv, email, acct.id);
+  return { acct, merged: false };
+}
 
 /** Find or create the account for a provider identity, linking by verified email. */
 export async function accountForIdentity(kv, p, prof) {
   const k = identKey(p, prof.sub);
   let id = await kv.get(k);
   let acct = id ? await getAccount(kv, id) : null;
+  if (acct?.mergedInto) acct = await getAccount(kv, acct.mergedInto);
   if (!acct && prof.email) { id = await accountIdForLogin(kv, prof.email); acct = id ? await getAccount(kv, id) : null; }
+  // A verified provider email links to the account that owns it, and fills in the email on accounts that have none.
+  if (acct && prof.email && !acct.email && !(await accountIdForLogin(kv, prof.email))) { acct.email = prof.email; await kv.put(await loginKey(prof.email), acct.id); }
   let created = false;
   if (!acct) {
     acct = { id: "ca_" + b64url(rnd(12)), listingIds: [], createdAt: Date.now(), ...(prof.email ? { email: prof.email } : {}) };
@@ -112,7 +203,7 @@ export async function accountForIdentity(kv, p, prof) {
   if (!acct.displayName && prof.name) acct.displayName = String(prof.name).slice(0, 80);
   await putAccount(kv, acct);
   await kv.put(k, acct.id);
-  return { acct, created };
+  return { acct, created, needsEmail: !acct.email };
 }
 
 // ---------- 2FA ticket (password ok / OAuth ok, TOTP pending) ----------

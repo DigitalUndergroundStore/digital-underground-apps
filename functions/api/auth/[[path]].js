@@ -11,11 +11,14 @@
  *   POST /api/auth/totp/setup | enable {code} | disable {code}   (signed-in creator; enable returns 10 backup codes once)
  *   POST /api/auth/backup/regenerate { code }        -> { codes } (signed-in, 2FA on; old codes stop working)
  *   POST /api/auth/forgot  { email }                 -> always { ok } (emails a 1 h single-use reset link if the account exists)
+ *   GET  /api/auth/{google|x}/start?link=1      -> (signed-in) links that sign-in to the current account
+ *   POST /api/auth/email/add    { email }         -> (signed-in, account has no email) emails a 1 h confirm link
+ *   POST /api/auth/email/verify { token }         -> sets the email, or merges into the account that owns it
  *   POST /api/auth/reset   { token, password }       -> { ok } (sets password, signs out every session)
  */
 import { clientIp, getKv, json, normalizeEmail, sendCommunityEmail } from "../../_lib/community.js";
 import { accountIdForLogin, authCreator, checkPassword, getAccount, loginAllowed, MIN_PASSWORD, putAccount, sessionCookie, setCredentials, validPassword } from "../../_lib/creator.js";
-import { accountForIdentity, checkTotp, configured, finishOAuth, limits, mfaTicket, newTotpSecret, openSecret, otpauthUri, PROVIDERS, readMfaTicket, sealSecret, startOAuth, newBackupCodes, useBackupCode, looksLikeBackup, createResetToken, takeResetToken, RESET_TTL } from "../../_lib/auth.js";
+import { accountForIdentity, checkTotp, configured, finishOAuth, limits, mfaTicket, newTotpSecret, openSecret, otpauthUri, PROVIDERS, readMfaTicket, sealSecret, startOAuth, newBackupCodes, useBackupCode, looksLikeBackup, createResetToken, takeResetToken, RESET_TTL, linkIdentity, createEmailToken, takeEmailToken, confirmEmail, EMAIL_TTL } from "../../_lib/auth.js";
 
 const safeNext = (n) => (typeof n === "string" && /^\/(?!\/)[\w\-./?=&%#]*$/.test(n) ? n : "/community/dashboard/");
 const cookieOf = (req, name) => { for (const p of (req.headers.get("Cookie") || "").split(";")) { const i = p.indexOf("="); if (i > 0 && p.slice(0, i).trim() === name) return p.slice(i + 1).trim(); } return ""; };
@@ -48,7 +51,13 @@ export async function onRequest({ request, env, params }) {
     if (PROVIDERS[p] && step === "start") {
       if (!configured(env, p)) return redirect(`/login/?err=${p}-unavailable`);
       if (!(await limits.oauth(env, ip)).ok) return redirect("/login/?err=rate");
-      const { url: to, cookie } = await startOAuth(env, kv, origin, p, safeNext(url.searchParams.get("next")));
+      let linkId = "";
+      if (url.searchParams.get("link") === "1") {
+        const me = await authCreator(request, env, kv);
+        if (!me) return redirect("/login/?next=" + encodeURIComponent("/login/security/"));
+        linkId = me.id;
+      }
+      const { url: to, cookie } = await startOAuth(env, kv, origin, p, safeNext(url.searchParams.get("next")), linkId);
       return redirect(to, [cookie]);
     }
     if (PROVIDERS[p] && step === "callback") {
@@ -57,10 +66,18 @@ export async function onRequest({ request, env, params }) {
       let r;
       try { r = await finishOAuth(env, kv, origin, p, url, cookieOf(request, "du_oauth")); } catch (e) { r = { error: "provider" }; }
       if (r.error) return redirect(`/login/?err=${r.error}`, [clear]);
-      const { acct } = await accountForIdentity(kv, p, r.prof);
-      if (acct.totp?.enabled) return redirect(`/login/?mfa=${encodeURIComponent(await mfaTicket(env, acct))}&next=${encodeURIComponent(r.next)}`, [clear]);
+      if (r.link) {
+        // Link mode: only for the account that started it, and only while still signed in as it.
+        const me = await authCreator(request, env, kv);
+        if (!me || me.id !== r.link) return redirect("/login/?next=" + encodeURIComponent("/login/security/"), [clear]);
+        const l = await linkIdentity(kv, me, p, r.prof);
+        return redirect(`/login/security/?${l.error ? "err=" + l.error : "linked=" + p}`, [clear]);
+      }
+      const { acct, needsEmail } = await accountForIdentity(kv, p, r.prof);
+      const next = needsEmail ? "/login/security/?addemail=1" : r.next;
+      if (acct.totp?.enabled) return redirect(`/login/?mfa=${encodeURIComponent(await mfaTicket(env, acct))}&next=${encodeURIComponent(next)}`, [clear]);
       const c = await sessionCookie(env, acct);
-      return redirect(r.next, [clear, ...(c ? [c] : [])]);
+      return redirect(next, [clear, ...(c ? [c] : [])]);
     }
     return json({ error: "Not found." }, 404);
   }
@@ -158,6 +175,36 @@ export async function onRequest({ request, env, params }) {
       text: `Someone (hopefully you) asked to reset the password for your Digital Underground creator account.\n\nReset it here (works once, for ${RESET_TTL / 60} minutes):\n${link}\n\nIf you didn't ask for this, ignore this email. Your password stays the same.\n\nDigital Underground\nhttps://digitalundergroundstore.com/` });
     if (!r.sent) console.log("pw reset mail not sent", r.reason || r.status); // never log the link/token
     return generic;
+  }
+
+  if (path === "email/add") {
+    const acct = await authCreator(request, env, kv);
+    if (!acct) return json({ ok: false, error: "Log in first." }, 401);
+    if (acct.email) return json({ ok: false, error: "Your account already has an email." }, 400);
+    if (!mailReady(env)) return json({ ok: false, error: NO_MAIL_MSG }, 503);
+    if (!email) return json({ ok: false, error: "Enter a valid email." }, 400);
+    if (!(await limits.addEmail(env, ip, acct.id)).ok) return TOO_MANY(60);
+    const tok = await createEmailToken(kv, acct.id, email);
+    const link = `${origin}/login/security/?verify=${encodeURIComponent(tok)}`;
+    const r = await sendCommunityEmail(env, { to: email, subject: "Confirm your email for Digital Underground",
+      text: `Confirm this email for your Digital Underground creator account (works once, for ${EMAIL_TTL / 60} minutes; open it in the browser where you're logged in):\n${link}\n\nOnce it's confirmed, logging in with this email, Google or X all open the same account. If you already have an account with this email, the two are joined into one, with all your listings.\n\nIf you didn't ask for this, ignore this email.\n\nDigital Underground\nhttps://digitalundergroundstore.com/` });
+    if (!r.sent) { console.log("email confirm not sent", r.reason || r.status); return json({ ok: false, error: "We couldn't send the email right now. Try again in a few minutes." }, 502); }
+    return json({ ok: true, message: "Check your inbox for a confirm link. It works for 1 hour." });
+  }
+
+  if (path === "email/verify") {
+    if (!(await limits.reset(env, ip)).ok) return TOO_MANY();
+    // Must be opened while signed in to the account that asked, so a forwarded link can't join someone else's X to your account.
+    const me = await authCreator(request, env, kv);
+    if (!me) return json({ ok: false, needLogin: true, error: "Log in with the account that asked (for example with X), then open the link again." }, 401);
+    const t = await takeEmailToken(kv, body.token, me.id);
+    if (!t) return json({ ok: false, error: "That confirm link is invalid or expired. Ask for a new one." }, 400);
+    const r = await confirmEmail(kv, t.acctId, normalizeEmail(t.email));
+    if (r.error) return json({ ok: false, error: "That confirm link no longer applies. Log in and try again." }, 400);
+    const msg = r.merged ? "Email confirmed. Your accounts are now one: email, Google and X all open it, with all your listings." : "Email confirmed. Logging in with this email, Google or X now opens this same account.";
+    if (r.acct.totp?.enabled) return json({ ok: true, merged: r.merged, login: true, message: msg + " Log in to continue." }, 200, { "Set-Cookie": "du_creator=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=Lax" });
+    const c = await sessionCookie(env, r.acct);
+    return json({ ok: true, merged: r.merged, email: r.acct.email, message: msg }, 200, c ? { "Set-Cookie": c } : {});
   }
 
   if (path === "reset") {

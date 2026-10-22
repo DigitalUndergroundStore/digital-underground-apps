@@ -20,6 +20,7 @@ import {
   loginAllowed,
   MIN_PASSWORD,
   setCredentials,
+  setLoginEmail,
   validPassword,
   issueAccountToken,
   linkContactToCreator,
@@ -89,6 +90,8 @@ export async function onRequest(context) {
     acct = await authCreator(request, env, kv);
     if (acct) {
       signIn = true;
+      // One email = one account: a signed-in creator's listings always use the account email.
+      if (acct.email) listing.email = acct.email;
       if (!acct.pw) {
         if (!validPassword(password)) return json({ error: `Create a password (at least ${MIN_PASSWORD} characters).` }, 400);
         const r = await setCredentials(kv, acct, listing.email, password);
@@ -98,15 +101,17 @@ export async function onRequest(context) {
       if (!(await loginAllowed(env, ip, listing.email))) return json({ error: "Too many attempts. Try again later." }, 429);
       acct = await checkPassword(kv, listing.email, password);
       if (!acct) {
-        return json({ error: "This email already has a creator account. Enter its password, or log in on the Creator dashboard first." }, 400);
+        return json({ error: "You already have an account with this email. Enter its password, or log in first (Forgot password works too)." }, 400);
       }
       signIn = true;
     } else {
       const ids = await creatorIdsForEmail(kv, listing.email);
       for (const cid of [...ids].reverse()) {
         const a = await getAccount(kv, cid);
-        if (a && !a.pw) { acct = a; attachedUnclaimed = true; break; }
+        if (a && !a.pw && !a.mergedInto) { acct = a; attachedUnclaimed = true; break; }
       }
+      // Tie that older account to this email so Forgot password can find it.
+      if (acct && !acct.email) await setLoginEmail(kv, acct, listing.email);
       if (!acct) {
         if (!validPassword(password)) return json({ error: `Create a password (at least ${MIN_PASSWORD} characters).` }, 400);
         acct = (await issueAccountToken(kv, null)).acct;

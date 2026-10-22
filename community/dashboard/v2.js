@@ -100,7 +100,7 @@
   var prof = null;
   function loadProfile() {
     var el = $("#profile");
-    var acct = '<div class="card"><h2>Account</h2><p class="muted" style="font-size:.92rem">Signed in as <strong>' + esc(data.account && data.account.email || "private link") + "</strong>" + (data.master ? ' <span class="pill owner">Owner</span>' : "") + '</p><p style="margin-top:12px" class="select-row"><a class="btn sm" href="/community/dashboard/classic/">Password, API keys &amp; support (classic dashboard)</a><button class="btn sm ghost" id="so">Sign out</button></p></div>';
+    var acct = '<div class="card"><h2>Account</h2><p class="muted" style="font-size:.92rem">Signed in as <strong>' + esc(data.account && data.account.email || (data.account && data.account.identities && data.account.identities.length ? "X or Google (no email yet)" : "private link")) + "</strong>" + (data.master ? ' <span class="pill owner">Owner</span>' : "") + '</p>' + (data.account && !data.account.email ? '<div class="banner warn" style="margin-top:10px">Add your email so logging in with email, Google or X always opens this same account. <a href="/login/security/?addemail=1">Add email</a></div>' : "") + '<p style="margin-top:12px" class="select-row"><a class="btn sm" href="/login/security/">Sign-in methods &amp; 2FA</a><a class="btn sm" href="/community/dashboard/classic/">Password, API keys &amp; support (classic dashboard)</a><button class="btn sm ghost" id="so">Sign out</button></p></div>';
     if (prof) return;
     prof = true;
     el.innerHTML = acct + '<div class="card" id="mk"><div class="skel"></div></div>';

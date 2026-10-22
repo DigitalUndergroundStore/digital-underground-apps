@@ -16,6 +16,7 @@
 import {
   hmacHex,
   kvGetListing,
+  kvPutListing,
   normalizeEmail,
   sendCommunityEmail,
   timingSafeEqualStr,
@@ -146,6 +147,7 @@ export async function authCreatorEx(request, env, kv) {
     const presented = await sha256Hex(secret || "x");
     // Always compare (dummy hash when no account) so timing does not reveal existence.
     const ok = timingSafeEqualStr(presented, acct?.tokenHash || "0".repeat(64)) && !!acct && secret.length >= 32;
+    if (ok && acct.mergedInto) { const to = await getAccount(kv, acct.mergedInto); if (to) return { acct: to, via: "link" }; }
     if (ok) return { acct, via: "link" };
   }
   const sess = readCookie(request, SESSION_COOKIE);
@@ -163,7 +165,7 @@ export async function authCreator(request, env, kv) {
 
 /** Account summary for the dashboard (no secrets). */
 export function accountView(acct) {
-  return { email: acct.email || "", hasPassword: !!acct.pw };
+  return { email: acct.email || "", hasPassword: !!acct.pw, identities: Object.keys(acct.identities || {}) };
 }
 
 export async function attachListing(kv, acct, listingId) {
@@ -468,7 +470,7 @@ export async function setCredentials(kv, acct, email, password) {
   if (!e) return { error: "Enter a valid email." };
   if (!validPassword(password)) return { error: `Password must be at least ${MIN_PASSWORD} characters.` };
   const owner = await accountIdForLogin(kv, e);
-  if (owner && owner !== acct.id) return { error: "That email can't be used for this account. Contact support." };
+  if (owner && owner !== acct.id) return { exists: true, error: "You already have an account with this email. Log in with it, or reset your password." };
   if (acct.email && acct.email !== e) await kv.delete(await loginKey(acct.email));
   const h = await hashPassword(password);
   acct.email = e;
@@ -476,7 +478,35 @@ export async function setCredentials(kv, acct, email, password) {
   acct.pwSetAt = Date.now();
   await putAccount(kv, acct);
   await kv.put(await loginKey(e), acct.id);
+  await syncListingEmails(kv, acct);
   return { ok: true };
+}
+
+/** Listings use the account login email as their contact email (old value kept as emailPrev). */
+export async function syncListingEmails(kv, acct) {
+  const e = normalizeEmail(acct?.email || "");
+  if (!e) return 0;
+  let n = 0;
+  for (const id of acct.listingIds || []) {
+    const row = await kvGetListing(kv, id);
+    if (!row || row.creatorId !== acct.id || normalizeEmail(row.email || "") === e) continue;
+    if (row.email) row.emailPrev = row.email;
+    row.email = e;
+    await kvPutListing(kv, row);
+    n++;
+  }
+  return n;
+}
+
+/** Tie an email (no password) to an account that has none, if no other account owns it. */
+export async function setLoginEmail(kv, acct, email) {
+  const e = normalizeEmail(email);
+  if (!e || acct.email) return false;
+  if (await accountIdForLogin(kv, e)) return false;
+  acct.email = e;
+  await putAccount(kv, acct);
+  await kv.put(await loginKey(e), acct.id);
+  return true;
 }
 
 /** Verify email + password. Constant work whether or not the account exists. */
@@ -496,6 +526,19 @@ export async function loginAllowed(env, ip, email) {
   return r.ok;
 }
 
+/** The one account for an email: the existing one, or a new one with no password (set later via Forgot password). */
+export async function accountForEmail(kv, email) {
+  const e = normalizeEmail(email);
+  if (!e) return null;
+  const existingId = await accountIdForLogin(kv, e);
+  const existing = existingId ? await getAccount(kv, existingId) : null;
+  if (existing) return existing;
+  const acct = { id: "ca_" + b64url(crypto.getRandomValues(new Uint8Array(12))), listingIds: [], createdAt: Date.now(), email: e };
+  await putAccount(kv, acct);
+  await kv.put(await loginKey(e), acct.id);
+  return acct;
+}
+
 /**
  * Owner tool: give listings (posted by the owner for a maker) to a creator account keyed by email.
  * Reuses the account that already owns that login email, or creates one with no password.
@@ -506,14 +549,7 @@ export async function assignListingsToEmail(kv, email, listingIds) {
   if (!e) return { error: "Enter a valid email." };
   const ids = [...new Set((listingIds || []).filter((x) => typeof x === "string" && /^[A-Za-z0-9_-]{3,80}$/.test(x)))].slice(0, 50);
   if (!ids.length) return { error: "Pick at least one listing." };
-  let acct = null;
-  const existingId = await accountIdForLogin(kv, e);
-  if (existingId) acct = await getAccount(kv, existingId);
-  if (!acct) {
-    acct = { id: "ca_" + b64url(crypto.getRandomValues(new Uint8Array(12))), listingIds: [], createdAt: Date.now(), email: e };
-    await putAccount(kv, acct);
-    await kv.put(await loginKey(e), acct.id);
-  }
+  const acct = await accountForEmail(kv, e);
   const done = [], skipped = [];
   for (const id of ids) {
     const row = await kvGetListing(kv, id);

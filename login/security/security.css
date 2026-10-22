@@ -17,3 +17,11 @@ body.sec{margin:0;background:var(--du-bg,#0b0d10);color:var(--du-text,#e8eaed);f
 .sec-warn{color:#fcd34d;font-weight:600}
 .sec-ghost,.sec-danger{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.25);background:transparent;color:inherit;font-size:15px;cursor:pointer;text-decoration:none}
 .sec-danger{border-color:#f87171;color:#fecaca}
+
+.sec-methods{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
+.sec-methods li{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.08)}
+.sec-mi{width:36px;height:36px;flex:0 0 36px;border-radius:10px;display:grid;place-items:center;background:rgba(139,92,246,.16);color:#c4b5fd}.sec-mi svg{width:18px;height:18px}
+.sec-mt{flex:1;min-width:0;display:flex;flex-direction:column}.sec-mt small{opacity:.7;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sec-ms .sec-pill{font-size:12px}.sec-ms a.sec-ghost{margin:0;padding:7px 12px;font-size:14px}
+.sec-note{font-size:13px;opacity:.7;margin:10px 0 0}
+#f-email input{letter-spacing:normal}

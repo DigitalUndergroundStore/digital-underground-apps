@@ -201,7 +201,7 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
     pc.required = false; pc.closest("label").hidden = true;
     pc.closest("label").nextElementSibling.hidden = true;
     form.querySelectorAll(".field-hint").forEach(function (h) { if (/Already have a creator account/.test(h.textContent)) h.hidden = true; });
-    if (d.account.email) emailInput.value = d.account.email;
+    if (d.account.email) { emailInput.value = d.account.email; emailInput.readOnly = true; emailInput.title = "Your listings use the email your account is tied to."; }
   }).catch(function () {});
   try { var savedEmail = localStorage.getItem("du_creator_email"); if (savedEmail && !emailInput.value) emailInput.value = savedEmail; } catch (_) {}
 

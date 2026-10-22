@@ -1,4 +1,4 @@
-/* PREVIEW ONLY (do not deploy) — 2FA + backup codes settings */
+/* Security settings: sign-in methods (email, Google, X on one account), 2FA + backup codes */
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   function say(t, ok) { var m = $("msg"); m.hidden = !t; m.textContent = t || ""; m.className = "au-alert" + (ok ? " ok" : ""); }
@@ -11,12 +11,36 @@
     $("pill").textContent = st.totp ? "On" : "Off"; $("pill").className = "sec-pill" + (st.totp ? " on" : "");
     $("bc-left").textContent = st.backupLeft + " of 10 left";
   }
+  var qs = new URLSearchParams(location.search);
+  function pill(t, on) { return '<span class="sec-pill' + (on ? ' on' : '') + '">' + t + '</span>'; }
+  function methods(d) {
+    var ids = d.identities || [];
+    $("m-email").textContent = d.email || "Not added";
+    $("s-email").innerHTML = d.email ? pill("Added", true) : "";
+    $("f-email").hidden = !!d.email;
+    ["google", "x"].forEach(function (p) {
+      var on = ids.indexOf(p) >= 0;
+      $("m-" + p).textContent = on ? "Linked" : "Not linked";
+      $("s-" + p).innerHTML = on ? pill("Linked", true) : '<a class="sec-ghost" href="/api/auth/' + p + '/start?link=1&next=%2Flogin%2Fsecurity%2F">Link</a>';
+    });
+    var n = (d.email ? 1 : 0) + ids.length;
+    $("si-pill").textContent = n + (n === 1 ? " way" : " ways") + " to sign in";
+  }
   function load() {
     return api("security").then(function (d) {
-      if (!d.ok) { location.href = "/login/?next=" + encodeURIComponent("/login/security/"); return; }
-      $("who").textContent = d.email ? "Signed in as " + d.email : "Signed in"; view(d);
+      if (!d.ok) { location.href = "/login/?next=" + encodeURIComponent(location.pathname + location.search); return; }
+      $("who").textContent = d.email ? "Signed in as " + d.email : "Signed in"; view(d); methods(d);
+      if (qs.get("addemail") && !d.email) { say("Add your email below so logging in with your email, Google or X always opens this same account."); $("e-add").focus(); }
+      if (qs.get("linked")) say((qs.get("linked") === "x" ? "X" : "Google") + " is now linked to this account.", true);
+      if (qs.get("err") === "linked-elsewhere") say("That sign-in already belongs to another account with its own email. Log in with it and add this account's email there instead.");
     });
   }
+  $("f-email").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var em = $("e-add").value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) return say("Enter a valid email.");
+    api("email/add", { email: em }).then(function (d) { say(d.ok ? d.message : d.error, d.ok); });
+  });
   var lastCodes = [];
   function showCodes(codes) {
     lastCodes = codes; $("codes").innerHTML = "";
@@ -61,5 +85,13 @@
     a.href = URL.createObjectURL(new Blob(["Digital Underground backup codes (each works once)\n\n" + lastCodes.join("\n") + "\n"], { type: "text/plain" }));
     a.download = "digital-underground-backup-codes.txt"; a.click();
   });
-  load();
+  if (qs.get("verify")) {
+    var tok = qs.get("verify");
+    api("email/verify", { token: tok }).then(function (d) {
+      if (d.needLogin) { location.href = "/login/?next=" + encodeURIComponent("/login/security/?verify=" + tok); return; }
+      history.replaceState(null, "", "/login/security/");
+      if (d.ok && d.login) { location.href = "/login/?next=" + encodeURIComponent("/login/security/"); return; }
+      load().then(function () { say(d.ok ? d.message : d.error, d.ok); });
+    });
+  } else load();
 })();

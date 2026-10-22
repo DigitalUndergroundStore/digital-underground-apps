@@ -23,7 +23,7 @@ th,td{text-align:left;vertical-align:top;padding:var(--du-sp-2);border-bottom:1p
 </head><body><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=8" defer></script><!--/du-site-nav--><main>
 <p><a class="back" href="/store/">← Digital Underground store</a></p>
 <h1>Privacy policy</h1>
-<p class="updated">Last updated October 18, 2026.</p>
+<p class="updated">Last updated October 22, 2026.</p>
 <p><strong>Short version:</strong> we don't use advertising trackers, tracking pixels or analytics cookies. Our visitor statistics are anonymous totals. We only keep personal data you give us yourself (like your email address), and we never sell it.</p>
 
 <h2>Who we are</h2>
@@ -36,16 +36,20 @@ th,td{text-align:left;vertical-align:top;padding:var(--du-sp-2);border-bottom:1p
 <tr><td><strong>Marketplace listing statistics</strong>: daily counts of how often each listing was shown, opened or clicked.</td><td>So makers can see how their listing is doing. Counts only, nothing about who viewed.</td><td>About 13 months, or until the listing is deleted</td></tr>
 <tr><td><strong>Email list</strong>: your email address, the date and time you agreed, the page you signed up on, the consent wording, your country (from your connection, not your IP address), and an unsubscribe code.</td><td>To send you Digital Underground emails you asked for, and to prove your consent (required by Canada's anti-spam law, CASL).</td><td>Until you unsubscribe. After that the record is marked "unsubscribed" so we never email you again by mistake; ask us and we will delete it completely.</td></tr>
 <tr><td><strong>Support messages</strong>: your name (optional), email, topic and message.</td><td>To answer you. They are emailed to us and are not stored on the website.</td><td>In our mailbox as long as needed to help you</td></tr>
-<tr><td><strong>Developer Marketplace accounts</strong>: your email, your listings, and a sign-in cookie. Login codes are stored only as a scrambled (hashed) value and expire after 10 minutes.</td><td>To let you list projects and manage them.</td><td>Until you ask us to delete your account. The sign-in cookie lasts up to 180 days or until you sign out.</td></tr>
+<tr><td><strong>Developer Marketplace accounts</strong>: your email, your listings, and a sign-in cookie. If you sign in with Google or X, we get your account ID, name and verified email from them. Login codes are stored only as a scrambled (hashed) value and expire after 10 minutes. Passwords are stored only as a scrambled (hashed) value, and two-step sign-in secrets are stored encrypted.</td><td>To let you list projects and manage them.</td><td>Until you ask us to delete your account. The sign-in cookie lasts up to 180 days or until you sign out.</td></tr>
+<tr><td><strong>Maker League votes</strong>: which project you voted for, a random voter ID in a cookie, and a one-way scrambled value made from your IP address.</td><td>To allow a fair number of votes per person each week and stop vote stuffing. The scrambled value can't be turned back into your IP address.</td><td>Vote records about 3 weeks. The voter cookie lasts up to a year.</td></tr>
 <tr><td><strong>Purchases</strong></td><td>Handled entirely by Gumroad. We receive the order details Gumroad gives sellers (such as your email and what you bought) so we can deliver and support it.</td><td>As required for tax and accounting</td></tr>
 </table></div>
 <p>Our stored data is backed up daily inside Cloudflare, and backups are kept for 60 days, so deleted data disappears from backups within 60 days. A weekly copy of the email list and marketplace listings is also emailed to our own store mailbox for safekeeping.</p>
 <p>Your IP address is seen briefly by our servers, as with any website, to stop spam and abuse (rate limits). We don't store it: rate-limit counters use a one-way scrambled value that expires within a day.</p>
 
 <h2>Cookies and browser storage</h2>
-<p>We use <strong>no advertising or analytics cookies</strong>, so there is no cookie banner. We only use storage that is needed for something you asked for:</p>
+<p>We use <strong>no advertising or analytics cookies</strong>, so there is no cookie banner. Every cookie below is needed for something you asked for (signing in, voting, or a security check), which is why none of them needs a consent pop-up:</p>
 <ul>
 <li><strong>du_creator</strong> cookie: keeps you signed in to your Developer Marketplace dashboard.</li>
+<li><strong>du_oauth</strong> cookie: a short-lived security check (10 minutes) while you sign in with Google or X.</li>
+<li><strong>du_lv</strong> cookie: a random voter ID so each visitor gets a fair number of Maker League votes per week. It is not used for tracking or ads.</li>
+<li>A sign-in cookie for the site owner's admin area, used only by the site owner.</li>
 <li>Remembering a <strong>licence key</strong> you entered in one of our apps, your app settings (like dark mode, mute, or whether you minimised the store info panel), game high scores, and the email you used to sign in to the marketplace. These stay on your device.</li>
 <li>A security check (Cloudflare Turnstile) on the marketplace submit form, to block bots.</li>
 </ul>
@@ -56,6 +60,7 @@ th,td{text-align:left;vertical-align:top;padding:var(--du-sp-2);border-bottom:1p
 <li><strong>Gumroad</strong> handles checkout, payments, refunds and delivery. See <a href="https://gumroad.com/privacy" rel="noopener">Gumroad's privacy policy</a>.</li>
 <li><strong>Our email delivery provider</strong> (Resend or MailChannels) sends our emails, sign-in codes and support messages.</li>
 <li><strong>Proton Mail</strong> hosts our support mailbox.</li>
+<li><strong>Google</strong> and <strong>X</strong>, only if you choose to sign in with them. See <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a> and <a href="https://x.com/en/privacy" rel="noopener">X's privacy policy</a>.</li>
 <li>If a marketplace listing has a YouTube or Vimeo video, nothing loads from those sites until you press "Play video".</li>
 </ul>
 <p>Some of these companies process data outside Canada, including in the United States and the EU. Where personal data is transferred from the EU or UK to a country without an adequacy decision, we rely on our providers' safeguards such as the EU Standard Contractual Clauses or the EU-US Data Privacy Framework. We never sell, rent or share your data for advertising.</p>

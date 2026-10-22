@@ -1,3 +1,4 @@
+import { isOwnerEmail } from "../../_lib/account-profile.js";
 import {
   appendRefParam,
   clientIp,
@@ -6,6 +7,7 @@ import {
   isHttpsUrl,
   json,
   kvGetListing,
+  kvGetIndex,
   normalizeTags,
   normalizeVideoUrl,
   parseImageField,
@@ -102,6 +104,8 @@ async function rescreen(env, row, returning = false) {
   }
 }
 
+const OWNER_MAKERS = new Set(["digital underground", "kerzy labs"]);
+
 export async function onRequest(context) {
   const { request, env } = context;
   const kv = getKv(env);
@@ -125,6 +129,18 @@ export async function onRequest(context) {
         rows.push(row);
       }
     }
+    // Owner master view (server-side check only): also every Digital Underground + Kerzy Labs listing, read-only
+    // unless the owner account already owns it. No KV ownership changes.
+    let master = false;
+    if (who.via === "cookie" && (await isOwnerEmail(env, acct.email))) {
+      master = true;
+      const have = new Set(rows.map((r) => r.id)), idx = await kvGetIndex(kv);
+      for (const id of [...idx.approved, ...idx.pending, ...idx.unpublished, ...idx.flagged]) {
+        if (have.has(id)) continue;
+        const row = await kvGetListing(kv, id);
+        if (row && OWNER_MAKERS.has(String(row.makerName || "").trim().toLowerCase())) { rows.push({ ...row, _viewOnly: true }); have.add(id); }
+      }
+    }
     rows.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
     const stats = await readStats(kv, rows.map((r) => r.id));
     // Visiting a private link signs this device in, so the link is a one-time step.
@@ -136,7 +152,8 @@ export async function onRequest(context) {
     return json({
       signedInVia: who.via,
       account: accountView(acct),
-      listings: rows.map(creatorListing),
+      listings: rows.map((r) => ({ ...creatorListing(r), makerName: String(r.makerName || "").slice(0, 80), ...(r._viewOnly ? { viewOnly: true } : {}) })),
+      ...(master ? { master: true } : {}),
       stats,
       supportLeftToday: Math.max(0, 5 - (acct.support?.day === new Date().toISOString().slice(0, 10).replace(/-/g, "") ? acct.support.n : 0)),
     }, 200, extra);

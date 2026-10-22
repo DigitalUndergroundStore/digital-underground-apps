@@ -243,7 +243,13 @@
       var view = node.querySelector(".view");
       if (l.status === "approved") { view.href = "/community/p/?id=" + encodeURIComponent(l.id); view.setAttribute("aria-label", "View " + l.name + " (opens in new tab)"); }
       else view.remove();
+      if (data.master && l.makerName) node.querySelector(".li-sub").insertAdjacentHTML("afterbegin", '<span class="chip-maker">' + esc(l.makerName) + "</span>");
+      if (l.viewOnly) {
+        node.querySelectorAll('[data-a="edit"],[data-a="delete"],[data-a="unpublish"],[data-a="republish"]').forEach(function (b) { b.remove(); });
+        node.querySelector(".li-sub").insertAdjacentHTML("beforeend", '<a class="chip-pending" href="/owner/">Stats only · manage in Owner dashboard</a>');
+      }
       var un = node.querySelector('[data-a="unpublish"]'), re = node.querySelector('[data-a="republish"]');
+      if (!un) un = document.createElement("i"); if (!re) re = document.createElement("i");
       if (l.status === "unpublished") un.remove(); else re.remove();
       var sh = node.querySelector('[data-a="share"]');
       if (l.status !== "approved") { sh.setAttribute("aria-disabled", "true"); sh.classList.add("is-off"); sh.title = l.status === "unpublished" ? "Republish to share" : "Share once it's live"; sh.setAttribute("aria-label", sh.title); }
@@ -264,7 +270,13 @@
   function render() {
     renderKpis();
     var pick = $("chart-pick"), cur = pick.value || "all";
-    pick.innerHTML = '<option value="all">All listings</option>' + data.listings.map(function (l) { return '<option value="' + esc(l.id) + '">' + esc(l.name) + "</option>"; }).join("");
+    var opt = function (l) { return '<option value="' + esc(l.id) + '">' + esc(l.name) + "</option>"; };
+    if (data.master) {
+      var groups = {}, order = [];
+      data.listings.forEach(function (l) { var g = l.makerName || "Other"; if (!groups[g]) { groups[g] = []; order.push(g); } groups[g].push(l); });
+      order.sort(function (a, b) { return a.localeCompare(b); });
+      pick.innerHTML = '<option value="all">All listings (' + data.listings.length + ")</option>" + order.map(function (g) { return '<optgroup label="' + esc(g) + '">' + groups[g].map(opt).join("") + "</optgroup>"; }).join("");
+    } else pick.innerHTML = '<option value="all">All listings</option>' + data.listings.map(opt).join("");
     pick.value = cur; if (!pick.value) pick.value = "all";
     drawChart();
     var sel = $("support-form").listingId, sv = sel.value;

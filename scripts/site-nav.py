@@ -15,7 +15,7 @@ LINKS = [("/", "Marketplace"), ("/league/", "League"), ("/makers/", "Creators"),
 MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'
 _L = "".join(f'<a href="{h}">{t}</a>' for h, t in LINKS)
 NAV = ('<!--du-site-nav--><header class="dun"><div class="dun-in">'
-  '<a class="dun-logo" href="/store/" aria-label="Digital Underground store home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a>'
+  '<a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a>'
   f'<nav class="dun-links" aria-label="Primary">{_L}</nav>'
   '<div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a>'
   '<div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div>'

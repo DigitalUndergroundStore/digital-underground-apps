@@ -100,7 +100,7 @@
   var prof = null;
   function loadProfile() {
     var el = $("#profile");
-    var acct = '<div class="card"><h2>Account</h2><p class="muted" style="font-size:.92rem">Signed in as <strong>' + esc(data.account && data.account.email || "private link") + "</strong>" + (data.master ? ' <span class="pill owner">Owner</span>' : "") + '</p><p style="margin-top:12px" class="select-row"><a class="btn sm" href="/community/dashboard/classic/">Video uploads, password, API keys &amp; support (classic dashboard)</a><button class="btn sm ghost" id="so">Sign out</button></p></div>';
+    var acct = '<div class="card"><h2>Account</h2><p class="muted" style="font-size:.92rem">Signed in as <strong>' + esc(data.account && data.account.email || "private link") + "</strong>" + (data.master ? ' <span class="pill owner">Owner</span>' : "") + '</p><p style="margin-top:12px" class="select-row"><a class="btn sm" href="/community/dashboard/classic/">Password, API keys &amp; support (classic dashboard)</a><button class="btn sm ghost" id="so">Sign out</button></p></div>';
     if (prof) return;
     prof = true;
     el.innerHTML = acct + '<div class="card" id="mk"><div class="skel"></div></div>';

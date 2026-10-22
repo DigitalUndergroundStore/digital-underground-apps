@@ -368,7 +368,7 @@
       '<input type="file" id="file" accept="image/jpeg,image/png,image/webp" multiple hidden>' +
       '<ul class="uploads" id="uploads" aria-live="polite"></ul><ul class="thumbs" id="thumbs" aria-label="Gallery images"></ul>' +
       '<div class="legacy" id="legacy" hidden><img src="' + esc(L.legacyImage) + '" alt=""><span>Current card image (single media slot). It stays as your cover until you add gallery images.</span></div></div>' +
-      '<div class="card"><h2>Video (optional)</h2>' + fld("videoUrl", "YouTube or Vimeo link", '<input class="ctl" id="f-videoUrl" name="videoUrl" type="url" placeholder="https://youtube.com/watch?v=…" value="' + esc(v.videoUrl) + '">', (L.pendingVideo ? "Your new video is waiting for review. " : "") + "Uploaded videos and cover frames: use the current dashboard for now.") + "</div>" +
+      '<div class="card"><h2>Video (optional)</h2>' + fld("videoUrl", "YouTube or Vimeo link", '<input class="ctl" id="f-videoUrl" name="videoUrl" type="url" placeholder="https://youtube.com/watch?v=…" value="' + esc(v.videoUrl) + '">', (L.pendingVideo ? "Your new video is waiting for review." : "")) + "</div>" +
       '<p class="err" id="formerr" role="alert"></p>' +
       '<div class="savebar-mobile"><span data-savepill class="pill"></span><span class="select-row"><button type="button" class="btn pv-toggle">Preview</button><button type="button" class="btn primary" data-save>Save</button></span></div>' +
       "</form>" +

@@ -274,6 +274,12 @@
     var em = (data.account && data.account.email) || "";
     $("menu-email").textContent = em;
     $("avatar").textContent = (em.charAt(0) || "C").toUpperCase();
+    fetch("/api/account/profile", { credentials: "same-origin", cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (p) {
+      if (!p || !p.avatar || !/^\/(?!\/)/.test(p.avatar)) return;
+      var a = $("avatar"), im = new Image(); im.src = p.avatar; im.alt = "";
+      im.style.cssText = "width:100%;height:100%;border-radius:50%;display:block;object-fit:" + (/\.svg$/.test(p.avatar) ? "contain;background:#0b0d10" : "cover");
+      a.textContent = ""; a.appendChild(im); a.style.overflow = "hidden"; a.style.padding = "0";
+    }).catch(function () {});
     var h = new Date().getHours();
     $("greet").textContent = (h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening");
     var live = data.listings.filter(function (l) { return l.status === "approved"; }).length;

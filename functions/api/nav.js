@@ -4,16 +4,10 @@
  * (fallback: a SHA-256 of the owner email, so the address is not in the source). The email is never
  * returned. This only controls the link; /owner/ and /api/owner/* are protected by the owner passcode session.
  */
-import { getKv, json, kvGetListing, normalizeEmail } from "../_lib/community.js";
-import { authCreatorEx, sha256Hex } from "../_lib/creator.js";
+import { getKv, json, kvGetListing } from "../_lib/community.js";
+import { authCreatorEx } from "../_lib/creator.js";
+import { isOwnerEmail, shownAvatar } from "../_lib/account-profile.js";
 
-const OWNER_EMAIL_HASH = "468ac153ac2d92cc5593af403ae7024ccb4c3ccf7ca6bd4f18eb0b2be00d85ac"; // sha256("owner|" + owner email)
-async function isOwnerEmail(env, email) {
-  const e = normalizeEmail(email || "");
-  if (!e) return false;
-  if (env.OWNER_EMAIL) return e === normalizeEmail(env.OWNER_EMAIL);
-  return (await sha256Hex("owner|" + e)) === OWNER_EMAIL_HASH;
-}
 const H = { "Cache-Control": "private, no-store", Vary: "Cookie" };
 
 export async function onRequestGet({ request, env }) {
@@ -24,12 +18,12 @@ export async function onRequestGet({ request, env }) {
     if (/du_creator=/.test(req.headers.get("Cookie"))) {
       const kv = getKv(env);
       const who = kv ? await authCreatorEx(req, env, kv) : null;
-      if (who) {
-        let name = "";
-        for (const id of (who.acct.listingIds || []).slice(0, 3)) { const r = await kvGetListing(kv, id); if (r && r.makerName) { name = r.makerName; break; } }
-        creator = { name: String(name || "My account").slice(0, 40) };
-      }
       if (who && who.via === "cookie") owner = await isOwnerEmail(env, who.acct.email);
+      if (who) {
+        let name = String(who.acct.displayName || "").trim();
+        if (!name) for (const id of (who.acct.listingIds || []).slice(0, 3)) { const r = await kvGetListing(kv, id); if (r && r.makerName) { name = r.makerName; break; } }
+        creator = { name: String(name || "My account").slice(0, 40), avatar: await shownAvatar(env, who.acct, owner) };
+      }
     }
   } catch {
     owner = false;

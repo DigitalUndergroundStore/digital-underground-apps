@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Edit profile | Digital Underground</title>
+<link rel="stylesheet" href="/assets/design-tokens.css">
+<link rel="stylesheet" href="/login/login.css?v=1">
+<link rel="stylesheet" href="/login/security/security.css?v=1">
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
+<style>
+.pf-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.pf-av{width:96px;height:96px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#7c3aed,#0891b2);color:#fff;font:700 40px/1 system-ui;overflow:hidden;flex:none}
+.pf-av img{width:100%;height:100%;object-fit:cover;display:block}
+.pf-av.mark{background:#0b0d10}.pf-av.mark img{object-fit:contain;padding:10px;box-sizing:border-box}
+</style>
+</head>
+<body class="sec">
+<header class="sec-top">
+  <a href="/store/" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal-static.svg" alt="Digital Underground" width="200" height="36"></a>
+  <a class="au-link" href="/community/dashboard/">Back to dashboard</a>
+</header>
+<main class="sec-main">
+  <h1>Edit profile</h1>
+  <p class="sec-sub">Your picture and name show in the account menu across the site.</p>
+  <div class="au-alert" id="msg" role="alert" hidden></div>
+  <section class="sec-card" aria-labelledby="h-pic">
+    <h2 id="h-pic">Profile picture</h2>
+    <div class="pf-row">
+      <div class="pf-av" id="av" aria-hidden="true">?</div>
+      <div>
+        <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
+        <button class="sec-ghost" type="button" id="b-up">Upload picture</button>
+        <button class="sec-ghost" type="button" id="b-rm" hidden>Remove</button>
+        <p class="au-hint">PNG, JPG or WEBP, up to 2 MB. We crop it to a square.</p>
+      </div>
+    </div>
+  </section>
+  <section class="sec-card" aria-labelledby="h-name">
+    <h2 id="h-name">Display name</h2>
+    <form id="f-name" novalidate>
+      <label for="nm">Name</label>
+      <input id="nm" maxlength="40" autocomplete="nickname" required>
+      <button class="au-submit" type="submit">Save name</button>
+    </form>
+  </section>
+</main>
+<script src="/community/profile/profile.js?v=1" defer></script>
+</body>
+</html>

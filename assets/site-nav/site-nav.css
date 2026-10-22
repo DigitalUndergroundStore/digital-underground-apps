@@ -79,3 +79,5 @@
 .duf .duf-ck{display:flex;flex-direction:row;font-weight:400;margin-bottom:0}.duf .duf-ck input{width:auto;height:auto;flex:none;margin:4px 0 0}.duf .duf-row button{border-radius:12px;font-size:14.5px;padding:0 20px;background:linear-gradient(135deg,#7c3aed,#0891b2)}.duf .duf-nl.done .duf-ck{display:none}
 .duf .duf-ck{align-items:flex-start}
 .dun-drawer .dun-share-btn{margin-top:8px;text-align:center;color:#fff;font-weight:600;background:linear-gradient(135deg,#7c3aed,#0891b2);box-shadow:0 6px 20px rgba(124,58,237,.35)}.dun-drawer .dun-share-btn:hover{background:linear-gradient(135deg,#8b5cf6,#06b6d4)}
+
+.dun-user .av.has-img{overflow:hidden;background:#0b0d10}.dun-user .av.has-img img{width:100%;height:100%;object-fit:cover;display:block}.dun-user .av.mark img{object-fit:contain;padding:2px;box-sizing:border-box}

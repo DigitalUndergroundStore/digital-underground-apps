@@ -115,7 +115,7 @@
         '<form id="pf" novalidate><div class="fld"><label for="pf-n">Display name</label><input class="ctl" id="pf-n" maxlength="' + p.limits.name + '" value="' + esc(cur.name) + '"></div>' +
         '<div class="fld"><label for="pf-b">Bio <span class="count" id="pf-bc"></span></label><textarea class="ctl" id="pf-b" maxlength="' + p.limits.bio + '">' + esc(cur.bio) + "</textarea></div>" +
         '<div class="fld"><label for="pf-w">Website</label><input class="ctl" id="pf-w" type="url" placeholder="https://" value="' + esc(cur.website) + '"><p class="err" id="pf-we"></p></div>' +
-        '<p class="hint" style="margin-bottom:12px">Logo, banner and social links: edit them on the <a href="/community/dashboard/classic/#profile">classic dashboard</a> for now. Changes are reviewed before they appear.</p>' +
+        '<p class="hint" style="margin-bottom:12px">Logo, banner and social links: edit them on the <a href="/community/dashboard/classic/#profile">classic dashboard</a> for now. Changes that pass automatic checks go live right away.</p>' +
         '<p class="err" id="pf-err" role="alert"></p><button class="btn primary" type="submit">Submit for review</button> <span class="muted" id="pf-ok" style="font-size:.85rem"></span></form>';
       var b = $("#pf-b"), bc = $("#pf-bc"); var upd = function () { bc.textContent = b.value.length + "/" + p.limits.bio; }; b.oninput = upd; upd();
       if ($("#pf-s")) $("#pf-s").onchange = function () { prof = null; D.api("GET", null, "?action=profile&slug=" + encodeURIComponent(this.value)).then(function () { loadProfile(); }); };

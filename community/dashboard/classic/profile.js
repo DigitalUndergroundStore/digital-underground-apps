@@ -28,7 +28,7 @@
     var k = $("pf-add-k").value, u = $("pf-add-u").value.trim();
     if (!k || socials[k]) return;
     if (!u || !https(u)) { say("Enter a full link that starts with https://"); $("pf-add-u").focus(); return; }
-    socials[k] = u; $("pf-add-u").value = ""; renderSocials(); say(LABEL[k] + " link added. Submit for review to save.");
+    socials[k] = u; $("pf-add-u").value = ""; renderSocials(); say(LABEL[k] + " link added. Save changes to publish.");
     ($("pf-add-k").disabled ? $("pf-save") : $("pf-add-u")).focus();
   }
   var cur = null, imgs = { logo: "", banner: "" }, loaded = false;
@@ -76,9 +76,9 @@
     renderSocials();
     [["logo", "pf-logo-prev"], ["banner", "pf-banner-prev"]].forEach(function (a) { var el = $(a[1]); el.hidden = !p[a[0]]; if (p[a[0]]) el.src = p[a[0]]; });
     var st = $("pf-state");
-    if (cur.pending) msg(st, "Your latest changes are waiting for review. Your page shows the last approved version until then.", "ok");
+    if (cur.pending) msg(st, "Your latest changes were held for a quick manual check. Your page shows the current version until then.", "ok");
     else if (cur.lastRejected) msg(st, "Your last profile change wasn't approved" + (cur.lastRejected.reason ? ": " + cur.lastRejected.reason : ".") + " You can edit and resubmit.", "err");
-    else msg(st, cur.live ? "" : "Your page isn't live yet. Fill it in and submit it for review.", "ok");
+    else msg(st, cur.live ? "" : "Your page goes live automatically when your first listing is live.", "ok");
   }
   function load(slug) {
     return post({ action: "profile_get", slug: slug }).then(function (d) { if (d._ok && d.profile) fill(d); });
@@ -108,11 +108,11 @@
       if (bad) { msg($("pf-msg"), bad); return; }
       var btn = $("pf-save"); btn.disabled = true; btn.textContent = "Submitting…";
       post({ action: "profile_save", slug: cur && cur.slug, profile: { name: f.name.value, bio: f.bio.value, website: web, socials: socials, logo: imgs.logo, banner: imgs.banner } }).then(function (d) {
-        btn.disabled = false; btn.textContent = "Submit for review";
+        btn.disabled = false; btn.textContent = "Save changes";
         if (!d._ok) { msg($("pf-msg"), d.error || "Could not save. Try again."); return; }
-        msg($("pf-msg"), ""); fill(d);
+        msg($("pf-msg"), ""); fill(d); if (!cur.pending) msg($("pf-state"), "Saved. Your page is updated.", "ok");
         $("pf-state").focus && $("pf-state").setAttribute("tabindex", "-1"); $("pf-state").focus();
-      }).catch(function () { btn.disabled = false; btn.textContent = "Submit for review"; msg($("pf-msg"), "Network error. Try again."); });
+      }).catch(function () { btn.disabled = false; btn.textContent = "Save changes"; msg($("pf-msg"), "Network error. Try again."); });
     });
   });
 })();

@@ -37,6 +37,7 @@
     var href = "/community/p/?id=" + encodeURIComponent(row.id), name = esc(row.name);
     var stage = row.stage && row.stage !== "Released" ? row.stage : "";
     var badge = stage ? '<span class="badge stage">' + esc(stage) + "</span>" : row.curated ? '<span class="badge" title="Curated by Digital Underground">★ Featured pick</span>' : "";
+    if (row.isNew) badge = '<span class="badge new" style="background:#16a34a;color:#fff">New</span>' + badge;
     if (row.statusLabel) badge = '<span class="badges">' + badge + '<span class="badge label">' + esc(String(row.statusLabel).slice(0, 24)) + "</span></span>";
     var x = row.xHandle ? ' · <a href="https://x.com/' + esc(row.xHandle) + '" target="_blank" rel="noopener" aria-label="@' + esc(row.xHandle) + ' on X (opens in a new tab)">@' + esc(row.xHandle) + "</a>" : "";
     return '<article class="card-inner" aria-labelledby="t-' + esc(row.id) + '">' + media(row) +
@@ -133,13 +134,15 @@
     var byId = {};
     (Array.isArray(parts[0]) ? parts[0] : []).concat(parts[1] && Array.isArray(parts[1].listings) ? parts[1].listings : []).forEach(function (row) { if (row && row.id) byId[row.id] = row; });
     all = Object.keys(byId).filter(function (k) { return k !== 'cm_kerzy_easytracker' && !byId[k].hidden; }).map(function (k) { return normalize(byId[k]); });
-    all.sort(function (a, b) {
+    var api = parts[1] || {};
+    if (api.ordered) { var pos = {}; api.listings.forEach(function (r, i) { if (r && r.id) pos[r.id] = i; }); all.sort(function (a, b) { return (a.id in pos ? pos[a.id] : 1e9) - (b.id in pos ? pos[b.id] : 1e9); }); }
+    else all.sort(function (a, b) {
       var pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
       if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);
       if (!!a.curated !== !!b.curated) return a.curated ? 1 : -1;
       return (a.name || "").localeCompare(b.name || "");
     });
-    all = arrange(all);
+    if (!api.ordered) all = arrange(all);
     if (all.length) render();
   });
 

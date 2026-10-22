@@ -63,7 +63,7 @@ function ipAllowed(ip, limit = 30, windowMs = 60 * 60 * 1000) {
 /** Maker page editor: read (GET ?action=profile, not rate-limited) or submit for review (POST action=profile_save). */
 async function profileAction(env, kv, acct, body, save) {
   const makers = await ownedMakers(kv, acct);
-  if (!makers.size) return json({ error: "Publish a listing first; your maker page is built from your listings." }, 400);
+  if (!makers.size) return json({ error: "Your maker page is created automatically as soon as your first listing goes live. Check back once it's approved." }, 400);
   const slug = validSlug(body.slug) && makers.has(body.slug) ? body.slug : [...makers.keys()][0];
   let rec = await getMaker(kv, slug);
   if (rec && rec.ownerAcct && rec.ownerAcct !== acct.id) return json({ error: "This maker page belongs to another account. Contact support." }, 403);

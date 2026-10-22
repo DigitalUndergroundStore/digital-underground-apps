@@ -107,7 +107,7 @@
         category: r.category || 'other', price: r.priceLabel || 'See site', desc: r.pitchShort || '',
         badge: stage || (r.curated ? 'Featured pick' : null), label: r.statusLabel ? String(r.statusLabel).slice(0, 24) : null,
         url: r.buyUrl || r.visitUrl || r.projectUrl || '', buy: !!r.buyUrl, page: SITE + '/community/p/?id=' + encodeURIComponent(r.id), img: r.imageUrl || '',
-        tags: r.tags || [], contactable: r.contactable !== false, pv: nums.length ? Math.max(...nums) : 0
+        tags: r.tags || [], isNew: !!r.isNew, contactable: r.contactable !== false, pv: nums.length ? Math.max(...nums) : 0
       };
     }
     const isFree = p => /^free/i.test(p.price.trim());
@@ -122,8 +122,9 @@
     function badgeHTML(p) {
       const one = b => { const cls = /featured/i.test(b) ? 'badge-featured' : /beta/i.test(b) ? 'badge-beta' : 'badge-testing'; return `<span class="card-badge ${cls}">${(/featured/i.test(b) ? '<svg class="star" width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg> ' : '') + esc(b)}</span>`; };
       const parts = [p.badge, p.label].filter(Boolean);
+      const nw = p.isNew ? '<span class="card-badge badge-new" style="background:#16a34a;color:#fff">New</span>' : '';
       const free = /^free$/i.test(String(p.price || '').trim()) && !NO_BADGE.has(p.id) ? '<span class="card-badge badge-free">Free</span>' : '';
-      return parts.length || free ? `<div class="card-badges">${free}${parts.map(one).join('')}</div>` : '';
+      return parts.length || free || nw ? `<div class="card-badges">${nw}${free}${parts.map(one).join('')}</div>` : '';
     }
     function makerHTML(p) {
       const name = p.makerSlug ? `<a href="${SITE}/makers/${encodeURIComponent(p.makerSlug)}/">${esc(p.maker)}</a>` : esc(p.maker);
@@ -292,18 +293,20 @@
       const by = {};
       (Array.isArray(stat) ? stat : []).concat(api.listings).forEach(r => { if (r && r.id) by[r.id] = r; });
       let all = Object.values(by).map(normalize).filter(r => ['approved', 'live', 'published'].includes(r.status || 'approved') && !r.hidden && r.id !== 'cm_kerzy_easytracker');
-      all.sort((a, b) => {
+      // Server order: New (live < 48h, newest first), pinned, then a 48h rotation shared by every visitor.
+      if (api.ordered) { const pos = {}; api.listings.forEach((r, i) => { if (r && r.id) pos[r.id] = i; }); all.sort((a, b) => (pos[a.id] ?? 1e9) - (pos[b.id] ?? 1e9)); }
+      else all.sort((a, b) => {
         const pa = pinned.indexOf(a.id), pb = pinned.indexOf(b.id);
         if (pa !== pb) return (pa < 0 ? 1e9 : pa) - (pb < 0 ? 1e9 : pb);
         if (!!a.curated !== !!b.curated) return a.curated ? 1 : -1;
         return (a.name || '').toLowerCase().localeCompare((b.name || '').toLowerCase());
       });
-      all = arrange(all);
+      if (!api.ordered) all = arrange(all);
       // Real submissions above seeded listings (mirrors build-community-ssr.py)
       const staticIds = new Set((Array.isArray(stat) ? stat : []).map(r => r && r.id));
       const seeded = r => staticIds.has(r.id) || /^cm_(kerzy|pick)_/.test(r.id) || /^digital underground$/i.test((r.makerName || '').trim());
-      all = all.filter(r => !seeded(r)).concat(all.filter(seeded));
-      const sig = rs => JSON.stringify(rs.map(r => [r.id, r.name, r.priceLabel, r.stage, r.statusLabel, r.curated, r.imageUrl, r.pitchShort]));
+      if (!api.ordered) all = all.filter(r => !seeded(r)).concat(all.filter(seeded));
+      const sig = rs => JSON.stringify(rs.map(r => [r.id, r.name, r.priceLabel, r.stage, r.statusLabel, r.curated, r.imageUrl, r.pitchShort, !!r.isNew]));
       if (sig(all) === sig(seed)) return;
       const untouched = !state.q && !state.cats.size && !state.makers.size && !state.labels.size && state.free && state.sort === 'featured' && state.lo === 0 && state.hi === PMAX;
       if (untouched) setProjects(all, 'keep');

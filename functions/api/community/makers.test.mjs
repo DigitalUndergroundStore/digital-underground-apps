@@ -34,3 +34,32 @@ const live = await liveProfile(kv, "wolfitway");
 assert.equal(live.bio, "New"); assert.equal(live.logo, "/makers/media/wolfitway-logo.webp");
 assert.equal((await listPendingProfiles(kv)).length, 0);
 console.log("moderation flow ok");
+// auto maker pages + auto-live screening
+import { ensureMakerForListing, allLiveProfiles, getMaker } from "../../_lib/makers.js";
+import { saveListing, setListingStatus, publicListing } from "../../_lib/community.js";
+{
+  const m2 = new Map();
+  const kv2 = { get: async (k, t) => (m2.has(k) ? (t === "json" ? JSON.parse(m2.get(k)) : m2.get(k)) : null), put: async (k, v) => void m2.set(k, v), delete: async (k) => void m2.delete(k) };
+  const row = { id: "cm_t1", status: "pending", makerName: "Acme Tools", creatorId: "ca_aaaaaaaaaaaa", projectUrl: "https://acme.example.com/", imageUrl: "https://acme.example.com/cover.png" };
+  await saveListing(kv2, row);
+  assert.equal(await getMaker(kv2, "acme-tools"), null); // pending: no page yet
+  const live1 = await setListingStatus(kv2, "cm_t1", "approved");
+  assert.equal(live1.makerSlug, "acme-tools");
+  assert.equal(publicListing(live1).makerSlug, "acme-tools");
+  const rec = await getMaker(kv2, "acme-tools");
+  assert.equal(rec.ownerAcct, "ca_aaaaaaaaaaaa"); assert.equal(rec.live.logo, "https://acme.example.com/cover.png");
+  assert.equal(rec.live.website, "https://acme.example.com/"); assert.match(rec.live.bio, /Acme Tools on the Digital Underground marketplace/);
+  assert.ok((await allLiveProfiles(kv2)).some((p) => p.slug === "acme-tools"));
+  // auto-live via saveListing (screening passed) for a different account with the same name: not hijacked
+  const other = { id: "cm_t2", status: "approved", makerName: "Acme Tools", creatorId: "ca_bbbbbbbbbbbb", projectUrl: "https://x.example.com/" };
+  await saveListing(kv2, other);
+  assert.equal(other.makerSlug, undefined); assert.equal((await getMaker(kv2, "acme-tools")).ownerAcct, "ca_aaaaaaaaaaaa");
+  // seed makers keep seed pages, no KV record
+  const kz = { id: "cm_x", status: "approved", makerName: "Kerzy Labs Games", creatorId: "ca_k", projectUrl: "https://k.example.com/" };
+  await saveListing(kv2, kz);
+  assert.equal(kz.makerSlug, "kerzy-labs"); assert.equal(await getMaker(kv2, "kerzy-labs"), null);
+  // edits passing screening go live immediately; failing screening is held
+  const ed = await submitProfile({ AI: null }, kv2, { id: "ca_aaaaaaaaaaaa" }, "acme-tools", sanitizeProfile({ name: "Acme Tools", bio: "Held" }).profile);
+  assert.equal(ed.live, false); assert.notEqual((await liveProfile(kv2, "acme-tools")).bio, "Held");
+  console.log("auto maker pages ok");
+}

@@ -1,7 +1,8 @@
 // Creator (maker) profiles: /makers/ directory and /makers/<slug>/ pages.
 // KV layout: "maker:<slug>" = { slug, ownerAcct, live, pending, updatedAt }, "maker:index" = { approved:[], pending:[] }.
-// Profiles never publish without owner approval (same queue rules as new listings).
-import { isHttpsUrl, normalizeEmail } from "./community.js";
+// A maker page is created automatically when the maker's first listing goes live (ensureMakerForListing).
+// Later profile edits go live right away when they pass automatic screening; only flagged ones wait for the owner.
+import { isHttpsUrl, normalizeEmail, publicListing } from "./community.js";
 import { runBlocklist, runTextGuard, runImageGuard, isPublicHost } from "./community-screening.js";
 
 export const MAX_LOGO_BYTES = 100 * 1024;
@@ -46,6 +47,54 @@ export function makerSlugFor(row) {
   if (typeof row.id === "string" && row.id.startsWith("cm_kerzy_") && row.id !== "cm_kerzy_easytracker") return "kerzy-labs";
   const s = slugify(row.makerName);
   return SEED[s] ? s : null;
+}
+
+/** Slug a maker name maps to for auto pages (seed rules first). */
+export function autoSlugFor(row) {
+  const seeded = makerSlugFor(row);
+  if (seeded) return seeded;
+  if (/kerzy/i.test(row?.makerName || "")) return "kerzy-labs";
+  const s = slugify(row?.makerName);
+  return validSlug(s) ? s : null;
+}
+
+/** Default public profile built from a live listing. */
+export function profileFromListing(row) {
+  const name = cleanText(row.makerName, LIMITS.name);
+  const pick = (v) => (typeof v === "string" && (/^https:\/\//i.test(v) || /^\/(?!\/)/.test(v)) ? v : "");
+  let cover = "";
+  try { cover = pick(publicListing(row).imageUrl); } catch {}
+  const logo = pick(row.makerLogo) || pick(row.makerAvatar) || pick(row.avatarUrl) || pick(row.iconUrl) || cover;
+  const website = cleanUrl(row.makerUrl) || cleanUrl(row.projectUrl) || "";
+  return { name, bio: `${name} on the Digital Underground marketplace`, website, socials: {}, logo, banner: "" };
+}
+
+/**
+ * Called whenever a listing is (or becomes) live. Creates maker:<slug> if missing and not owned by
+ * another account, sets row.makerSlug (caller persists the row). Seed makers keep their seed pages.
+ * Returns the slug linked, or null.
+ */
+export async function ensureMakerForListing(kv, row) {
+  if (!kv || !row || row.status !== "approved" || !row.makerName) return null;
+  const slug = autoSlugFor(row);
+  if (!slug) return null;
+  if (SEED[slug]) { if (slug !== makerSlugFor(row)) row.makerSlug = slug; return slug; }
+  const acctId = row.creatorId || null;
+  let rec = await getMaker(kv, slug);
+  if (rec && rec.ownerAcct && acctId && rec.ownerAcct !== acctId) return null; // someone else's page
+  if (rec && rec.ownerAcct && !acctId) { if (!rec.live) return null; } // unowned listing can't claim
+  if (!rec) rec = { slug, ownerAcct: acctId, live: null, pending: null };
+  if (!rec.ownerAcct && acctId) rec.ownerAcct = acctId;
+  let changed = false;
+  if (!rec.live) {
+    const p = profileFromListing(row);
+    if (!p.name) return null;
+    rec.live = { ...p, approvedAt: Date.now(), auto: true, fromListing: row.id };
+    changed = true;
+  }
+  if (changed || !(await getIndex(kv)).approved.includes(slug)) await putMaker(kv, rec);
+  row.makerSlug = slug;
+  return slug;
 }
 
 const EMAIL_RX = /[^\s@<>"]+@[^\s@<>"]+\.[a-z]{2,}/gi;
@@ -117,7 +166,7 @@ async function putMaker(kv, rec) {
   await kv.put("maker:index", JSON.stringify(ix));
 }
 
-/** Screen text + images. Result is advisory: every profile change still waits for owner approval. */
+/** Screen text + images. "approved" = passed every automatic check (goes live); "pending" = held for the owner. */
 export async function screenProfile(env, p) {
   const text = [p.name, p.bio, p.website, ...Object.values(p.socials || {})].join("\n");
   const reasons = [];
@@ -133,10 +182,11 @@ export async function screenProfile(env, p) {
       }
     }
   } catch { reasons.push("Automatic screening failed; queued for human review."); }
-  return { decision: "pending", reasons: reasons.length ? reasons : ["Passed automatic checks: waiting for owner approval."] };
+  if (!env || !env.AI) reasons.push("Automatic screening unavailable; queued for human review.");
+  return reasons.length ? { decision: "pending", reasons } : { decision: "approved", reasons: ["Passed automatic checks."] };
 }
 
-/** Creator submits a profile change: stored as pending; the live version (if any) stays up. */
+/** Creator submits a profile change: live immediately if screening passes, else held (live version stays up). */
 export async function submitProfile(env, kv, acct, slug, profile) {
   const rec = (await getMaker(kv, slug)) || { slug, ownerAcct: acct.id, live: null, pending: null };
   if (rec.ownerAcct && rec.ownerAcct !== acct.id) return { error: "This maker page belongs to another account. Contact support." };
@@ -146,9 +196,15 @@ export async function submitProfile(env, kv, acct, slug, profile) {
   const p = { ...profile, logo: profile.logo || base.logo || "", banner: profile.banner || base.banner || "" };
   const s = await screenProfile(env, p);
   if (s.decision === "rejected") return { error: "Your profile was flagged by our filters. Edit it or contact support." };
+  if (s.decision === "approved") {
+    rec.live = { ...p, approvedAt: Date.now(), autoScreened: true };
+    rec.pending = null;
+    await putMaker(kv, rec);
+    return { ok: true, rec, live: true };
+  }
   rec.pending = { ...p, at: Date.now(), screening: s.reasons };
   await putMaker(kv, rec);
-  return { ok: true, rec };
+  return { ok: true, rec, live: false };
 }
 
 export async function approveProfile(kv, slug) {

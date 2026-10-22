@@ -1,5 +1,5 @@
 import { galleryList, publicImages } from "./gallery.js";
-import { makerSlugFor } from "./makers.js";
+import { makerSlugFor, ensureMakerForListing } from "./makers.js";
 /**
  * Community marketplace helpers (link-out listings, moderation queue).
  */
@@ -324,6 +324,8 @@ export function publicListing(row) {
     makerUrl: typeof row.makerUrl === "string" && /^https:\/\//i.test(row.makerUrl) ? row.makerUrl : null,
     // Public maker page (/makers/<slug>/), only for makers with a seeded or owner-approved profile.
     makerSlug: makerSlugFor(row),
+    // When it went live (approval or auto-live). Drives "New" (48h) in marketplace ordering.
+    liveAt: Number(row.liveAt || row.ownerApprovedAt) || null,
   };
 }
 
@@ -444,6 +446,7 @@ export function screenedStatus(decision) {
 export async function saveListing(kv, listing) {
   const status = listing.status || "pending";
   listing.status = status;
+  if (status === "approved" && !listing.liveAt) listing.liveAt = Date.now();
   const index = await kvGetIndex(kv);
   index.pending = index.pending.filter((x) => x !== listing.id);
   index.approved = index.approved.filter((x) => x !== listing.id);
@@ -455,6 +458,7 @@ export async function saveListing(kv, listing) {
   else if (status === "unpublished") index.unpublished.push(listing.id);
   else if (status === "flagged") index.flagged.push(listing.id);
   else index.pending.push(listing.id);
+  if (status === "approved") await ensureMakerForListing(kv, listing).catch(() => null);
   await kvPutListing(kv, listing);
   await kvSaveIndex(kv, index);
   return listing;
@@ -525,11 +529,13 @@ export async function setListingStatus(kv, id, status) {
   // A human approval also signs off the current video, so later clean edits stay live.
   if (status === "approved") promotePendingVideo(listing);
   if (status === "approved") listing.ownerApprovedAt = Date.now();
+  if (status === "approved" && !listing.liveAt) listing.liveAt = listing.ownerApprovedAt;
   if (status === "approved") index.approved.push(id);
   else if (status === "pending") index.pending.push(id);
   else if (status === "rejected") index.rejected.push(id);
   else if (status === "unpublished") index.unpublished.push(id);
   else if (status === "flagged") index.flagged.push(id);
+  if (status === "approved") await ensureMakerForListing(kv, listing).catch(() => null);
   await kvPutListing(kv, listing);
   await kvSaveIndex(kv, index);
   return listing;

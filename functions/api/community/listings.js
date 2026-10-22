@@ -1,3 +1,4 @@
+import { orderListings, ROTATE_MS } from "../../_lib/order.js";
 import {
   getKv,
   kvGetIndex,
@@ -61,14 +62,12 @@ export async function onRequest(context) {
   let reported = new Set();
   if (kv) { try { reported = await hiddenByReports(kv); for (const id of (await kvGetIndex(kv)).flagged) reported.add(id); } catch {} }
   for (const [id, row] of byId) if (HIDDEN.has(id) || row?.hidden || reported.has(id)) byId.delete(id);
-  const merged = [...byId.values()].sort((a, b) =>
-    rank(a.id) - rank(b.id) || (a.curated ? 1 : 0) - (b.curated ? 1 : 0) || (a.name || "").localeCompare(b.name || "")
-  );
+  const merged = orderListings([...byId.values()], { pinned, now: Date.now() });
 
   // Seeded listings hidden after reports: stub tells the browse page (which also loads listings.json) to drop them.
   for (const id of reported) if (staticListings.some((r) => r.id === id)) merged.push({ id, hidden: true });
   return json(
-    { listings: merged, storage: kv ? "kv" : "static_only" },
+    { listings: merged, ordered: true, rotationWindow: Math.floor(Date.now() / ROTATE_MS), storage: kv ? "kv" : "static_only" },
     200,
     { "Cache-Control": "public, max-age=60" }
   );

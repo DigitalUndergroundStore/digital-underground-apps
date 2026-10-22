@@ -64,7 +64,7 @@
         card("queue", "Review queue", pending + (out.d.flaggedCount || 0), (pending ? pending + " waiting" : "All clear") + (out.d.flaggedCount ? " · " + out.d.flaggedCount + " flagged" : ""), pending || out.d.flaggedCount ? "badge" : "badge ok") +
         card("support", "Support inbox", support, support ? "Needs a reply" : "Inbox zero", support ? "badge" : "badge ok") +
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
-        card("analytics", "Analytics", (w.views || 0), (w.clicks || 0) + " clicks · 7 days", "") +
+        card("analytics", "Analytics", (w.views || 0), "views, " + (w.clicks || 0) + " clicks · 7 days", "") +
         card("backups", "Backups", shortDate(backup.lastSnapshot) || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
         card("apikeys", "API keys", "→", "Creator API access", "") +
         card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");

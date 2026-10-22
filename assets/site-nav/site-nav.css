@@ -40,4 +40,4 @@
 /* Store music toggle inside the shared header */
 .dun .sx-music{position:relative!important;inset:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:38px;height:38px;flex:none;box-shadow:none;border:1px solid rgba(196,181,253,.25);background:rgba(255,255,255,.04)}
 .dun .sx-music svg{width:18px;height:18px}.dun .sx-music.is-on{background:linear-gradient(135deg,rgba(124,58,237,.85),rgba(79,70,229,.85))}
-@media (max-width:400px){.dun .sx-music{width:34px;height:34px}.dun .dun-signin{display:none}}
+@media (max-width:400px){.dun .sx-music{width:34px;height:34px}.dun-right:has(.sx-music) .dun-signin{display:none}}

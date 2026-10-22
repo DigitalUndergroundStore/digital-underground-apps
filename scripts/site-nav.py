@@ -13,7 +13,7 @@ def apply(h, path=""):
     h = re.sub(r'<!--du-site-nav-->.*?<!--/du-site-nav-->', '', h, flags=re.S)
     h = re.sub(r'<link rel="stylesheet" href="/assets/site-nav/site-nav\.css[^"]*">\n?', '', h)
     h = re.sub(r'\s*<header class="top">\s*<a class="brand" href="/store/">Digital Underground</a>\s*</header>', '', h)  # old text-only brand on /p/*
-    h = h.replace('<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=5">
+    h = h.replace('<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=6">
 </head>', CSS + '\n</head>', 1)
     h = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + header(path), h, count=1)
     return h

@@ -23,12 +23,15 @@
         '<div class="lgh-btns"><a class="lgh-btn gold" href="' + esc(w.url) + '">Visit</a><a class="lgh-btn ghost" href="/league/">Vote this week</a><button type="button" class="lgh-btn ghost" data-lg-share>Share</button></div>' +
         '<p class="lgh-meta"><span>' + (w.week ? "Week of " + new Date(w.week + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" }) : "Last week") + " winner</span><span>" + esc(reset) + "</span></p></div></div>";
     } else {
-      html = '<div class="lgh-in"><div class="lgh-media"><img src="/league/media/league-hero-bg.webp" alt="" width="1600" height="900"><picture><source type="image/webp" srcset="/league/media/trophy-hd.webp?v=2 400w, /league/media/trophy-hd@2x.webp?v=2 800w, /league/media/trophy-hd@3x.webp?v=2 1200w" sizes="(max-width:700px) 160px, 360px"><img class="lgh-trophy" src="/league/media/trophy-hd.png?v=2" alt="Gold Maker of the Week trophy" width="400" height="520" decoding="async"></picture></div>' +
+      html = '<div class="lgh-in"><div class="lgh-media lgh-vid"><img src="/league/media/league-hero-bg.webp" alt="" width="1600" height="900"><video class="lgh-v" src="/assets/promo/maker-league-promo-square.mp4" poster="/assets/promo/maker-league-square-poster.jpg" width="1080" height="1080" muted autoplay loop playsinline preload="metadata" aria-label="Maker League promo video"></video><button type="button" class="lgh-snd" aria-label="Unmute promo video" aria-pressed="false">🔇</button></div>' +
         '<div class="lgh-body"><span class="lgh-badge">★ Maker of the Week</span><h2>Week ' + wk + ' — competition under way</h2>' +
         '<p class="lgh-sub">Vote for your favourite indie project. The top pick becomes Maker of the Week, right here at the top of the page.</p>' +
         '<div class="lgh-btns"><a class="lgh-btn pri" href="/league/">Vote now</a><button type="button" class="lgh-btn ghost" data-lg-share>Share</button></div>' +
         '<p class="lgh-meta"><span>' + esc(reset) + "</span>" + (votes ? "<span>" + esc(votes) + "</span>" : "") + "<span>Free · 1 vote per week</span></p></div></div>";
     }
     slot.innerHTML = html; slot.hidden = false;
+    var v = slot.querySelector(".lgh-v"), b = slot.querySelector(".lgh-snd");
+    if (v) { v.muted = true; var p = v.play && v.play(); if (p && p.catch) p.catch(function () {}); }
+    if (v && b) b.addEventListener("click", function (e) { e.preventDefault(); v.muted = !v.muted; if (!v.muted) { var q = v.play(); if (q && q.catch) q.catch(function () {}); } b.textContent = v.muted ? "\uD83D\uDD07" : "\uD83D\uDD0A"; b.setAttribute("aria-pressed", String(!v.muted)); b.setAttribute("aria-label", v.muted ? "Unmute promo video" : "Mute promo video"); });
   });
 })();

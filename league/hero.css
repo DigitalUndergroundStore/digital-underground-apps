@@ -85,3 +85,9 @@
 .lgh .lgh-meta{gap:2px 16px}
 .lgh .lgh-btns{gap:8px;flex-wrap:nowrap}.lgh .lgh-btn{padding:0 16px}.lgh .lgh-btn.pri{padding:0 20px}
 .sx-cta:has(.lgp-slot) .sx-hero-btn{display:inline-flex;align-items:center;height:48px;padding-top:0!important;padding-bottom:0!important;box-sizing:border-box;line-height:1.2}@media (max-width:420px){.sx-cta:has(.lgp-slot) .sx-hero-btn{height:40px}}
+
+/* Promo video inside the competition card (pillarboxed square video over the hero bg; box keeps its 16:10 size). */
+.lgh .lgh-media.lgh-vid video.lgh-v{position:absolute;left:50%;top:0;height:100%;width:auto;aspect-ratio:1/1;transform:translateX(-50%);object-fit:cover;display:block;background:#0b0918;box-shadow:0 0 40px rgba(0,0,0,.6)}
+.lgh-snd{position:absolute;right:10px;bottom:10px;z-index:2;width:36px;height:36px;border-radius:50%;border:1px solid rgba(196,181,253,.5);background:rgba(12,10,28,.7);color:#fff;font-size:16px;line-height:1;cursor:pointer;display:grid;place-items:center;padding:0}
+.lgh-snd:hover{filter:brightness(1.15)}
+.lgh .lgh-media.lgh-vid{background:radial-gradient(circle at 50% 50%,#1a1240,#07060f 75%)}.lgh .lgh-media.lgh-vid>img{display:none}

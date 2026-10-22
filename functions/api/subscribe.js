@@ -1,3 +1,4 @@
+import { rateAll, ipRules } from "../_lib/ratelimit.js";
 import { CONSENT_TEXT, GIFT_URL, normEmail, validEmail, token } from "../_lib/subscribers.js";
 const J = (o, s = 200) => new Response(JSON.stringify(o), { status: s, headers: { "Content-Type": "application/json", "Cache-Control": "no-store" } });
 const hits = new Map();
@@ -9,6 +10,7 @@ export async function onRequestPost({ request, env }) {
   const now = Date.now(), h = (hits.get(ip) || []).filter(t => now - t < 600000);
   if (h.length >= 5) return J({ error: "Too many attempts. Try again in a few minutes." }, 429);
   hits.set(ip, h.concat(now));
+  try { const rl = await rateAll(env, ipRules("subscribe", ip, 8, 3600)); if (rl && rl.ok === false) return J({ error: "Too many attempts. Try again later." }, 429); } catch {}
   const email = normEmail(b.email);
   if (!validEmail(email)) return J({ error: "Please enter a valid email address." }, 400);
   if (b.consent !== true) return J({ error: "Please tick the box to agree to receive emails." }, 400);

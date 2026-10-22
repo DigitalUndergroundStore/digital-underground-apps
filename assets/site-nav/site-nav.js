@@ -31,16 +31,39 @@
       if (navigator.clipboard) navigator.clipboard.writeText(u).then(function () { var x = document.createElement("div"); x.className = "dun-x"; x.setAttribute("role", "status"); x.textContent = "Link copied"; document.body.appendChild(x); setTimeout(function () { x.remove(); }, 1800); });
     }
     document.querySelectorAll("[data-dun-share]").forEach(function (x) { x.addEventListener("click", share); });
-    // Standard footer links on every page.
-    var want = [["/store/", "Store"], ["/", "Marketplace"], ["/makers/", "Creators"], ["/league/", "League"], ["/blog/", "Blog"]];
-    var foot = document.querySelector("footer:not(.dun)") ;
-    var row = document.createElement("p"); row.className = "dun-foot-links";
-    var have = foot ? [].map.call(foot.querySelectorAll("a[href]"), function (a) { return a.getAttribute("href"); }) : [];
-    var missing = want.filter(function (w) { return have.indexOf(w[0]) < 0; });
-    function add(el, items) { items.forEach(function (w, i) { if (el.childNodes.length) el.appendChild(document.createTextNode(" · ")); var a = document.createElement("a"); a.href = w[0]; a.textContent = w[1]; el.appendChild(a); });
-      el.appendChild(document.createTextNode(" · ")); var s = document.createElement("button"); s.type = "button"; s.textContent = "Share"; s.addEventListener("click", share); el.appendChild(s); }
-    if (!foot) { var f = document.createElement("footer"); f.className = "dun-foot"; add(row, want); f.appendChild(row); document.body.appendChild(f); }
-    else { row.style.cssText = "margin:.5rem 0 0;white-space:normal"; row.className += " dun-foot"; row.style.padding = "0"; add(row, missing); foot.appendChild(row); }
+    // One shared site footer on every page (replaces the page's own footer).
+    var X = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg>';
+    var col = function (h, items) { return '<div class="duf-col"><h3>' + h + "</h3><ul>" + items.map(function (i) { return "<li>" + (i[0] === "share" ? '<button type="button" data-duf-share>Share this page</button>' : '<a href="' + i[0] + '">' + i[1] + "</a>") + "</li>"; }).join("") + "</ul></div>"; };
+    var fhtml = '<div class="duf-in"><div class="duf-brand"><a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47"></a>' +
+      '<p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p>' +
+      '<form class="duf-nl" novalidate><label for="dufEmail">Get new projects and updates by email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Subscribe</button></div>' +
+      '<input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true">' +
+      '<label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label>' +
+      '<p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form>' +
+      '<div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X">' + X + "</a></div></div>" +
+      '<div class="duf-cols">' + col("Marketplace", [["/#projects", "Browse"], ["/league/", "League"], ["/community/submit/", "List your project"], ["/makers/", "Creators"]]) +
+      col("Resources", [["/blog/", "Blog"], ["/#faq", "FAQ"], ["/community/api/", "Developer API"], ["share"]]) +
+      col("Company", [["/store/", "Store"], ["/privacy/", "Privacy"], ["/terms/", "Terms"], ["mailto:digitalunderground.store@proton.me", "Contact"]]) + "</div></div>" +
+      '<div class="duf-bar"><p>© ' + new Date().getFullYear() + ' Digital Underground · Ontario, Canada</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div>';
+    var old = [].filter.call(document.querySelectorAll("footer"), function (f) { return !f.closest(".dun") && !f.closest("article") && !f.closest(".duf"); });
+    var foot = document.createElement("footer"); foot.className = "duf"; foot.innerHTML = fhtml;
+    var keep = [];
+    old.forEach(function (f) { [].forEach.call(f.querySelectorAll("p,small,div"), function (el) { if (!el.querySelector("p,div") && /\bCC[ -]|licen|credit|courtesy/i.test(el.textContent)) keep.push(el.innerHTML); }); });
+    if (keep.length) { var cr = document.createElement("p"); cr.className = "duf-credit"; cr.innerHTML = keep.join(" · "); foot.querySelector(".duf-bar").appendChild(cr); }
+    if (old.length) { old[old.length - 1].replaceWith(foot); old.slice(0, -1).forEach(function (f) { f.remove(); }); }
+    else document.body.appendChild(foot);
+    foot.querySelector("[data-duf-share]").addEventListener("click", share);
+    var nl = foot.querySelector(".duf-nl"), msg = nl.querySelector(".duf-msg");
+    nl.addEventListener("submit", function (e) {
+      e.preventDefault(); var em = nl.email.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(em)) { msg.textContent = "Please enter a valid email address."; return; }
+      if (!nl.consent.checked) { msg.textContent = "Please tick the box to agree to receive emails."; return; }
+      var btn = nl.querySelector("button"); btn.disabled = true; msg.textContent = "Subscribing…";
+      fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: em, consent: true, website: nl.website.value, source: "footer:" + location.pathname }) })
+        .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+        .then(function (x) { if (x.ok) { nl.classList.add("done"); msg.textContent = "You're subscribed. Thanks! You can unsubscribe any time from any email."; } else { msg.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; btn.disabled = false; } })
+        .catch(function () { msg.textContent = "Network error. Please try again."; btn.disabled = false; });
+    });
     // Account: Sign in, or the signed-in maker's name with a dropdown.
     var acct = document.getElementById("dunAcct");
     if (acct) fetch("/api/nav", { credentials: "same-origin", cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (n) {

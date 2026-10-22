@@ -12,8 +12,8 @@ NAV = ('<!--du-site-nav--><header class="dun"><div class="dun-in">'
   '<div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div>'
   f'<button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false">{MENU}</button></div></div>'
   '<nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a></nav>'
-  '</header><script src="/assets/site-nav/site-nav.js?v=4" defer></script><!--/du-site-nav-->')
-CSS = '<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=7">'
+  '</header><script src="/assets/site-nav/site-nav.js?v=5" defer></script><!--/du-site-nav-->')
+CSS = '<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=8">'
 MARK = re.compile(r"<!--du-site-nav-->.*?<!--/du-site-nav-->", re.S)
 JS = re.compile(r'\s*<script src="/assets/site-nav/site-nav\.js\?v=\d+" defer></script>')
 CSSRE = re.compile(r'<link rel="stylesheet" href="/assets/site-nav/site-nav\.css\?v=\d+">')

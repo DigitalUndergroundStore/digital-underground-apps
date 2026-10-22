@@ -72,8 +72,9 @@
     <h2 style="margin-top:28px">Email subscribers</h2>
     <p id="sub-count" class="muted">Sign in to see the count.</p>
     <p><a class="btn block" href="/api/owner/subscribers?format=csv">Download subscribers CSV</a></p>
+    <div style="overflow-x:auto"><table style="width:100%;font-size:13px;border-collapse:collapse"><thead><tr><th align=left>Email</th><th align=left>Status</th><th align=left>Signed up (ET)</th><th align=left>Source</th></tr></thead><tbody id="sub-list"></tbody></table></div>
     <p class="muted" style="font-size:13px">Every row stores the consent text, time and page (CASL express consent). Only email people whose status is "subscribed", and include the unsubscribe link and sender details in every message.</p>
-    <script>fetch("/api/owner/subscribers",{credentials:"same-origin"}).then(r=>r.ok?r.json():null).then(d=>{if(d)document.getElementById("sub-count").textContent=d.active+" active of "+d.total+" total signups";}).catch(()=>{});</script>
+    <script>fetch("/api/owner/subscribers",{credentials:"same-origin"}).then(r=>r.ok?r.json():null).then(d=>{if(d)document.getElementById("sub-count").textContent=d.active+" active of "+d.total+" total signups";var t=document.getElementById("sub-list");if(d&&t){t.innerHTML=d.subscribers.slice(0,100).map(function(r){var e=function(x){return String(x||"").replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]})};return "<tr><td>"+e(r.email)+"</td><td>"+e(r.status)+"</td><td>"+new Date(r.at).toLocaleString("en-CA",{timeZone:"America/Toronto"})+"</td><td>"+e(r.source)+"</td></tr>"}).join("")||"<tr><td colspan=4>No signups yet.</td></tr>"}}).catch(()=>{});</script>
   </section>
 
   <section id="view-support" class="panel">

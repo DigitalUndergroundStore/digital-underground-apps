@@ -26,3 +26,6 @@
 .motw-badge button{border:0;background:none;color:#fde047;text-decoration:underline;font:inherit;font-weight:600;cursor:pointer;padding:0}
 
 .lg-share{display:inline-flex;align-items:center;gap:8px;margin-top:8px;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(196,181,253,.45);background:rgba(255,255,255,.04);color:#fff;font:600 14px Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap}.lg-share:hover{background:rgba(139,92,246,.15);border-color:#a78bfa}
+
+.motw img.motw-official{width:auto;height:40px;border-radius:0;object-fit:contain;display:block;margin:0 0 6px}
+.motw-badge img{height:48px;width:auto}

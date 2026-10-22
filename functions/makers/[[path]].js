@@ -116,7 +116,12 @@ function sortForMaker(rows) {
   return rows.sort((a, b) => rank(a) - rank(b) || (a.name || "").localeCompare(b.name || ""));
 }
 
+const DU_MARK = "/assets/logo/du-mark.svg";
+const isDU = (n) => /^digital\s*underground$/i.test(String(n || "").trim());
+const withDULogo = (m) => (!m.logo && isDU(m.name) ? { ...m, logo: DU_MARK } : m);
+
 function makerPage(p, rows) {
+  p = withDULogo(p);
   const canonical = `${ORIGIN}/makers/${p.slug}/`;
   const links = [];
   if (p.website) links.push(`<a class="pill pill-v" href="${safeHref(p.website)}" target="_blank" rel="noopener me">Website: ${e(p.website.replace(/^https:\/\//, "").replace(/\/$/, ""))}<span class="sr-only"> (opens in a new tab)</span></a>`);
@@ -143,7 +148,7 @@ function makerPage(p, rows) {
 
 function directoryPage(makers) {
   const canonical = `${ORIGIN}/makers/`;
-  const items = makers.map((m) => `<li class="mk-card" data-q="${e((m.name + " " + m.bio).toLowerCase())}"><a class="mk-card-a" href="${m.auto ? e(m.href) : `/makers/${e(m.slug)}/`}">` +
+  const items = makers.map(withDULogo).map((m) => `<li class="mk-card" data-q="${e((m.name + " " + m.bio).toLowerCase())}"><a class="mk-card-a" href="${m.auto ? e(m.href) : `/makers/${e(m.slug)}/`}">` +
     (m.logo ? `<img class="mk-card-logo" src="${safeHref(m.logo)}" alt="" width="64" height="64" loading="lazy" decoding="async">` : `<span class="mk-card-logo mk-ph" aria-hidden="true">${e(m.name.charAt(0))}</span>`) +
     `<span class="mk-card-body"><span class="mk-card-name">${e(m.name)}</span><span class="mk-card-bio">${e(m.bio || (m.auto ? "Maker on the Developer Marketplace" : ""))}</span><span class="mk-card-n">${m.count} ${m.count === 1 ? "listing" : "listings"}</span></span></a></li>`).join("\n");
   const body = `<div class="mx z hero mk-dir-hero">

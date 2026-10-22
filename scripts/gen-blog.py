@@ -99,7 +99,7 @@ def shell(title, desc, canonical, body, jsonld, ogtype="article", img=None):
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <script type="application/ld+json">{json.dumps(jsonld).replace("</", "<\\/")}</script>
-<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=4">
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=5">
 </head>
 <body class="blog b2">
 <a class="skip" href="#main">Skip to content</a>

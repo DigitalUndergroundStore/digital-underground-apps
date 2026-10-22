@@ -145,8 +145,7 @@ BADGE = '<span class="bw-brand"><img src="/assets/logo/du-mark.svg" alt="" width
 def wmeta(q):
     return f'<p class="bw-meta">{AUTH} · <time datetime="{q["date"]}">{DATE(q)}</time> · {mins(q)} min read</p>'
 def wimg(q):
-    f = R / "blog/media/wolf" / (q["slug"] + ".jpg")
-    return f"/blog/media/wolf/{q['slug']}.jpg" if f.exists() else hero(q)
+    return hero(q)  # Wolf asked to use Donald's original cover photos
 def wfeat(q):
     short = q["title"].split(" (")[0]
     return (f'<a class="bw-feat" href="/blog/{q["slug"]}/"><div class="bw-fv"><img src="{wimg(q)}" alt="" width="1600" height="900" loading="eager" fetchpriority="high">'

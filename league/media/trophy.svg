@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" role="img" aria-label="Gold Maker of the Week trophy">
+<style>
+.tw{transform-box:fill-box;transform-origin:center;animation:tw 2.8s ease-in-out infinite}
+.tw.b{animation-delay:.9s}.tw.c{animation-delay:1.8s}
+.ray{transform-origin:200px 190px;animation:rot 40s linear infinite}
+@keyframes tw{0%,100%{opacity:.2;transform:scale(.5)}50%{opacity:1;transform:scale(1.1)}}
+@keyframes rot{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.tw,.ray{animation:none}.tw{opacity:.8}}
+</style>
+<defs>
+<radialGradient id="glow" cx="50%" cy="38%" r="50%"><stop offset="0" stop-color="#fde68a" stop-opacity=".55"/><stop offset=".45" stop-color="#f59e0b" stop-opacity=".18"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+<linearGradient id="ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff7d6" stop-opacity=".35"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#5c3a06"/><stop offset=".12" stop-color="#a16207"/><stop offset=".3" stop-color="#fde68a"/><stop offset=".38" stop-color="#fffbeb"/><stop offset=".46" stop-color="#facc15"/><stop offset=".66" stop-color="#ca8a04"/><stop offset=".82" stop-color="#854d0e"/><stop offset=".92" stop-color="#d97706"/><stop offset="1" stop-color="#422006"/></linearGradient>
+<linearGradient id="goldV" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffbeb" stop-opacity=".0"/><stop offset=".75" stop-color="#422006" stop-opacity="0"/><stop offset="1" stop-color="#422006" stop-opacity=".55"/></linearGradient>
+<linearGradient id="rim" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#78350f"/><stop offset=".35" stop-color="#fef3c7"/><stop offset=".55" stop-color="#eab308"/><stop offset="1" stop-color="#713f12"/></linearGradient>
+<linearGradient id="inner" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b2205"/><stop offset="1" stop-color="#a16207"/></linearGradient>
+<linearGradient id="obs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a3550"/><stop offset=".35" stop-color="#14111f"/><stop offset=".6" stop-color="#211c33"/><stop offset="1" stop-color="#07060c"/></linearGradient>
+<linearGradient id="obsTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b1729"/><stop offset=".4" stop-color="#5b5578"/><stop offset="1" stop-color="#15121f"/></linearGradient>
+<linearGradient id="vein" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa" stop-opacity="0"/><stop offset=".5" stop-color="#c4b5fd" stop-opacity=".35"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></linearGradient>
+<linearGradient id="spec" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="rm"><rect x="0" y="403" width="400" height="117" fill="url(#fade)"/></mask>
+<filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="blur2"><feGaussianBlur stdDeviation="1.6"/></filter>
+<path id="spark" d="M0-12C1 -3 3-1 12 0 3 1 1 3 0 12-1 3-3 1-12 0-3-1-1-3 0-12Z" fill="#fff7d6"/>
+<g id="trophy">
+ <!-- handles -->
+ <path d="M112 92C52 92 44 170 92 196c14 8 30 12 46 14l2-20c-14-2-26-5-36-11-30-18-24-67 10-67z" fill="url(#gold)"/>
+ <path d="M288 92c60 0 68 78 20 104-14 8-30 12-46 14l-2-20c14-2 26-5 36-11 30-18 24-67-10-67z" fill="url(#gold)"/>
+ <!-- bowl -->
+ <path d="M104 72h192c0 0 4 92-30 134-22 27-46 36-66 38-20-2-44-11-66-38C100 164 104 72 104 72z" fill="url(#gold)"/>
+ <path d="M104 72h192c0 0 4 92-30 134-22 27-46 36-66 38-20-2-44-11-66-38C100 164 104 72 104 72z" fill="url(#goldV)"/>
+ <!-- rim -->
+ <ellipse cx="200" cy="72" rx="98" ry="14" fill="url(#rim)"/>
+ <ellipse cx="200" cy="73" rx="86" ry="9" fill="url(#inner)"/>
+ <!-- star emboss -->
+ <path d="M200 110l11 23 25 3-18 17 5 25-23-12-23 12 5-25-18-17 25-3z" fill="#854d0e" opacity=".55" transform="translate(1.5 2)"/>
+ <path d="M200 110l11 23 25 3-18 17 5 25-23-12-23 12 5-25-18-17 25-3z" fill="url(#rim)"/>
+ <!-- specular streaks -->
+ <path d="M140 88c-2 40 6 80 26 108" stroke="url(#spec)" stroke-width="9" stroke-linecap="round" fill="none" opacity=".75" filter="url(#blur2)"/>
+ <path d="M160 86c0 22 3 44 9 60" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"/>
+ <!-- stem -->
+ <path d="M186 242h28c-2 18 2 34 10 48h-48c8-14 12-30 10-48z" fill="url(#gold)"/>
+ <ellipse cx="200" cy="246" rx="22" ry="6" fill="url(#rim)"/>
+ <path d="M168 290h64l6 14h-76z" fill="url(#gold)"/>
+ <ellipse cx="200" cy="290" rx="32" ry="5" fill="url(#rim)"/>
+ <!-- obsidian base: two tiers -->
+ <path d="M146 304h108l8 40H138z" fill="url(#obs)"/>
+ <path d="M146 304h108l-4 6H150z" fill="url(#obsTop)"/>
+ <path d="M112 344h176l10 56H102z" fill="url(#obs)"/>
+ <path d="M112 344h176l-5 7H117z" fill="url(#obsTop)"/>
+ <path d="M110 372c40-10 80 14 120-2s50 4 66 2" stroke="url(#vein)" stroke-width="1.5" fill="none"/>
+ <path d="M140 320c20 6 50-8 80 2" stroke="url(#vein)" stroke-width="1.2" fill="none"/>
+ <rect x="102" y="398" width="196" height="5" fill="#000" opacity=".5"/>
+ <!-- plaque -->
+ <rect x="150" y="358" width="100" height="30" rx="3" fill="url(#gold)"/>
+ <rect x="154" y="362" width="92" height="22" rx="2" fill="none" stroke="#713f12" stroke-opacity=".6"/>
+ <text x="200" y="377.5" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" font-weight="800" letter-spacing="1.2" fill="#422006">MAKER OF THE WEEK</text>
+</g>
+</defs>
+<!-- glow + ray burst -->
+<circle cx="200" cy="190" r="200" fill="url(#glow)"/>
+<g class="ray" opacity=".9">
+ <g id="rays"><path d="M200 190L188 -20h24z" fill="url(#ray)"/><path d="M200 190L193 -20h14z" fill="url(#ray)" transform="rotate(30 200 190)"/></g>
+ <use href="#rays" transform="rotate(60 200 190)"/><use href="#rays" transform="rotate(120 200 190)"/><use href="#rays" transform="rotate(180 200 190)"/><use href="#rays" transform="rotate(240 200 190)"/><use href="#rays" transform="rotate(300 200 190)"/>
+</g>
+<!-- floor shadow -->
+<ellipse cx="200" cy="404" rx="130" ry="12" fill="#000" opacity=".55" filter="url(#blur8)"/>
+<use href="#trophy"/>
+<!-- floor reflection -->
+<g mask="url(#rm)"><use href="#trophy" transform="translate(0 806) scale(1 -1)" opacity=".5"/></g>
+<!-- glint -->
+<g transform="translate(286 70)"><use href="#spark" class="tw" transform="scale(1.3)"/></g>
+<g transform="translate(60 120)"><use href="#spark" class="tw b" transform="scale(.8)"/></g>
+<g transform="translate(345 250)"><use href="#spark" class="tw c" transform="scale(.9)"/></g>
+<g transform="translate(150 30)"><use href="#spark" class="tw b" transform="scale(.6)"/></g>
+</svg>

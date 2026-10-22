@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- PREVIEW ONLY (do not deploy) -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -8,90 +7,79 @@
 <meta name="referrer" content="no-referrer">
 <title>Log in or sign up | Digital Underground</title>
 <link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="/login/login.css?v=2">
+<link rel="stylesheet" href="/login/login.css?v=3">
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=14">
 </head>
 <body>
 <!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=8" defer></script><!--/du-site-nav-->
 <main class="au">
-  <section class="au-brand" aria-label="About Digital Underground">
-    <a href="/store/" class="au-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal-static.svg" alt="Digital Underground" width="220" height="40"></a>
-    <div class="au-pitch">
-      <h1>List what you build.<br><span>Reach people who'll use it.</span></h1>
-      <p>A free developer marketplace for independent makers. Zero cut, your checkout.</p>
-      <ul class="au-vals">
-        <li><b>Free listings</b> for apps, games, guides and tools</li>
-        <li><b>Weekly Maker League</b>, where the winner gets the homepage spotlight</li>
-        <li><b>Your own creator page</b> with stats for every listing</li>
-      </ul>
+  <div class="au-card" id="au-card" data-step="auth">
+    <a href="/" class="au-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal-static.svg" alt="Digital Underground" width="167" height="30"></a>
+    <a class="au-back" id="au-back" href="/login/" hidden><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to log in</a>
+    <div class="au-ico" id="au-ico" hidden aria-hidden="true">
+      <svg class="i-lock" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14.5v2.5"/></svg>
+      <svg class="i-mail" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      <svg class="i-key" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L21 2M16 7l3 3M18.5 4.5l2 2"/></svg>
+      <svg class="i-shield" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
     </div>
-    <img class="au-mark" src="/assets/logo/du-mark.svg" alt="" width="220" height="220" aria-hidden="true">
-  </section>
-
-  <section class="au-panel">
-    <div class="au-card">
-      <img class="au-m-logo" src="/assets/logo/du-mark.svg" alt="" width="44" height="44">
-      <a class="au-back" id="au-back" href="/login/" hidden><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Back to log in</a>
-      <div class="au-ico" id="au-ico" hidden aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
-      <div class="au-tabs" role="tablist" aria-label="Account">
-        <button role="tab" id="t-login" aria-selected="true" aria-controls="f-auth" data-mode="login">Log in</button>
-        <button role="tab" id="t-signup" aria-selected="false" aria-controls="f-auth" data-mode="signup">Sign up</button>
-      </div>
-      <h2 id="au-title">Welcome back</h2>
-      <p class="au-sub" id="au-sub">Log in to manage your listings.</p>
-
-      <div class="au-oauth">
-        <a class="au-btn au-g" href="/api/auth/google/start" data-p="google"><svg viewBox="0 0 48 48" width="18" height="18" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>Continue with Google</a>
-        <a class="au-btn au-x" href="/api/auth/x/start" data-p="x"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.2 2.3h3.4l-7.4 8.4 8.7 11.5h-6.8l-5.3-7-6.1 7H1.3l7.9-9L.9 2.3h7l4.8 6.4 5.5-6.4zm-1.2 17.9h1.9L7.1 4.2h-2l11.9 16z"/></svg>Continue with X</a>
-      </div>
-      <div class="au-or"><span>or with email</span></div>
-
-      <div class="au-alert" id="au-msg" role="alert" hidden></div>
-      <form id="f-auth" novalidate>
-        <label for="em">Email</label>
-        <input id="em" name="email" type="email" autocomplete="email" required>
-        <div class="au-row"><label for="pw">Password</label><a class="au-link" id="forgot" href="/login/?forgot=1">Forgot password?</a></div>
-        <div class="au-pw"><input id="pw" name="password" type="password" autocomplete="current-password" minlength="8" required>
-          <button type="button" class="au-eye" id="eye" aria-label="Show password" aria-pressed="false">Show</button></div>
-        <p class="au-hint" id="pw-hint" hidden>At least 8 characters.</p>
-        <button class="au-submit" type="submit" id="go">Log in</button>
-      </form>
-
-      <form id="f-mfa" hidden novalidate>
-        <label for="code">6-digit code from your authenticator app, or a backup code</label>
-        <input id="code" name="code" autocomplete="one-time-code" maxlength="11" required>
-        <button class="au-submit" type="submit">Verify and log in</button>
-      </form>
-
-      <form id="f-forgot" hidden novalidate>
-        <label for="fem">Email</label>
-        <input id="fem" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-        <button class="au-submit" type="submit" id="fgo">Email me a reset link</button>
-        <p class="au-alt">Remembered it? <a class="au-link" href="/login/">Log in</a></p>
-      </form>
-
-      <div class="au-done" id="f-sent" hidden>
-        <p>We sent a reset link to <b id="sent-to"></b> if it matches an account. Check your inbox and spam folder. The link works for 1 hour.</p>
-        <a class="au-submit au-as-btn" href="/login/">Back to log in</a>
-        <p class="au-alt">No email? <button type="button" class="au-linkbtn" id="resend">Try a different email</button></p>
-      </div>
-
-      <form id="f-reset" hidden novalidate>
-        <label for="npw">New password</label>
-        <input id="npw" name="password" type="password" autocomplete="new-password" minlength="8" required>
-        <label for="npw2">Confirm new password</label>
-        <input id="npw2" type="password" autocomplete="new-password" minlength="8" required>
-        <p class="au-hint">At least 8 characters. This signs you out on every device.</p>
-        <button class="au-submit" type="submit" id="rgo">Set new password</button>
-        <p class="au-alt">Link expired? <a class="au-link" href="/login/?forgot=1">Get a new one</a></p>
-      </form>
-
-      <p class="au-fine" id="au-fine">Signing in with Google uses the same account as your email when Google has verified it. X sign-in gets its own account unless you link it while signed in. By continuing you agree to the <a href="/terms/">Terms</a> and <a href="/privacy/">Privacy Policy</a>.</p>
+    <div class="au-tabs" role="tablist" aria-label="Account">
+      <button type="button" role="tab" id="t-login" aria-selected="true" aria-controls="f-auth" data-mode="login">Log in</button>
+      <button type="button" role="tab" id="t-signup" aria-selected="false" aria-controls="f-auth" data-mode="signup">Sign up</button>
     </div>
-  </section>
+    <h1 id="au-title">Welcome back</h1>
+    <p class="au-sub" id="au-sub">Log in to manage your listings.</p>
+
+    <div class="au-oauth">
+      <a class="au-btn au-g" href="/api/auth/google/start" data-p="google"><svg viewBox="0 0 48 48" width="18" height="18" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>Continue with Google</a>
+      <a class="au-btn au-x" href="/api/auth/x/start" data-p="x"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg>Continue with X</a>
+    </div>
+    <div class="au-or"><span>or with email</span></div>
+
+    <div class="au-alert" id="au-msg" role="alert" hidden></div>
+    <form id="f-auth" novalidate>
+      <label for="em">Email</label>
+      <input id="em" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+      <div class="au-row"><label for="pw">Password</label><a class="au-link" id="forgot" href="/login/?forgot=1">Forgot password?</a></div>
+      <div class="au-pw"><input id="pw" name="password" type="password" autocomplete="current-password" placeholder="Your password" minlength="8" required>
+        <button type="button" class="au-eye" id="eye" aria-label="Show password" aria-pressed="false"><svg class="i-eye" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><svg class="i-eyeoff" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 5.1A10.4 10.4 0 0 1 12 5c6.4 0 10 7 10 7a17.6 17.6 0 0 1-3.2 4.1M6.6 6.6C3.9 8.4 2 12 2 12s3.6 7 10 7c1.9 0 3.6-.6 5-1.5"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></button></div>
+      <p class="au-hint" id="pw-hint" hidden>At least 8 characters.</p>
+      <button class="au-submit" type="submit" id="go">Log in</button>
+    </form>
+
+    <form id="f-mfa" hidden novalidate>
+      <label for="code">6-digit code from your authenticator app, or a backup code</label>
+      <input id="code" name="code" autocomplete="one-time-code" maxlength="11" required>
+      <button class="au-submit" type="submit">Verify and log in</button>
+    </form>
+
+    <form id="f-forgot" hidden novalidate>
+      <label for="fem">Email</label>
+      <input id="fem" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+      <button class="au-submit" type="submit" id="fgo">Email me a reset link</button>
+      <p class="au-alt">Remembered it? <a class="au-link" id="remembered" href="/login/">Log in</a></p>
+    </form>
+
+    <div class="au-done" id="f-sent" hidden>
+      <p class="au-sent-note">We sent a reset link to <b id="sent-to"></b> if it matches an account. Check your inbox and spam folder. The link works for 1 hour.</p>
+      <a class="au-submit au-as-btn" id="sent-back" href="/login/">Back to log in</a>
+      <p class="au-alt">No email? <button type="button" class="au-linkbtn" id="resend">Try a different email</button></p>
+    </div>
+
+    <form id="f-reset" hidden novalidate>
+      <label for="npw">New password</label>
+      <input id="npw" name="password" type="password" autocomplete="new-password" minlength="8" required>
+      <label for="npw2">Confirm new password</label>
+      <input id="npw2" type="password" autocomplete="new-password" minlength="8" required>
+      <p class="au-hint">At least 8 characters. This signs you out on every device.</p>
+      <button class="au-submit" type="submit" id="rgo">Set new password</button>
+      <p class="au-alt">Link expired? <a class="au-link" href="/login/?forgot=1">Get a new one</a></p>
+    </form>
+
+    <p class="au-fine" id="au-fine">By continuing you agree to the <a href="/terms/">Terms</a> and <a href="/privacy/">Privacy&nbsp;Policy</a>.<span class="au-fine-x"> X sign-in gets its own account unless you link it while signed in.</span></p>
+  </div>
 </main>
-<script src="/login/login.js?v=5" defer></script>
+<script src="/login/login.js?v=6" defer></script>
 <!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="duf-brand"><a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47" loading="lazy"></a><p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p><form class="duf-nl" novalidate><div class="duf-book"><a href="/free-book/"><img src="/assets/gift/humanity-x-off-the-ground-cover.webp" alt="Humanity X: Off the Ground cover" width="56" height="90" loading="lazy" decoding="async"></a><div><h3 class="duf-bk-h">Get the free book</h3><p class="duf-bk-t"><a href="/free-book/">Humanity X: Off the Ground</a></p><p class="duf-bk-s">Book 1 of the Humanity X Trilogy. Join the email list and download the full novel right away in PDF, EPUB and Word.</p></div></div><label for="dufEmail">Your email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Get the book</button></div><input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true"><label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label><p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form><div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg></a></div></div><div class="duf-cols"><div class="duf-col"><h3>Marketplace</h3><ul><li><a href="/#projects">Browse projects</a></li><li><a href="/league/">Maker League</a></li><li><a href="/makers/">Creators</a></li><li><a href="/community/submit/">List your project free</a></li><li><a href="/community/dashboard/">Creator dashboard</a></li></ul></div><div class="duf-col"><h3>Resources</h3><ul><li><a href="/blog/">Blog</a></li><li><a href="/community/api/">Developer API</a></li><li><a href="/support/">Support</a></li><li><button type="button" data-duf-share>Share this page</button></li></ul></div><div class="duf-col"><h3>Company</h3><ul><li><a href="/store/">Digital Underground store</a></li><li><a href="mailto:digitalunderground.store@proton.me">Contact us</a></li><li><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank">Follow @DigitalUG_Store</a></li></ul></div></div></div><div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground · Ontario, Canada</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div></footer><!--/du-site-foot-->
 </body>
 </html>

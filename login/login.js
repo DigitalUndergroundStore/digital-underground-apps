@@ -42,6 +42,28 @@
     e.preventDefault();
     post("2fa", { ticket: ticket, code: $("code").value.trim() }).then(function (d) { if (d.ok) location.href = next; else say(d.error); });
   });
+  function only(id, title, sub) { ["f-auth", "f-mfa", "f-forgot", "f-reset"].forEach(function (f) { $(f).hidden = f !== id; });
+    [".au-oauth", ".au-or", ".au-tabs"].forEach(function (q) { document.querySelector(q).hidden = true; });
+    $("au-title").textContent = title; $("au-sub").textContent = sub; }
+  $("f-forgot").addEventListener("submit", function (e) {
+    e.preventDefault(); var em = $("fem").value.trim();
+    if (!/^\S+@\S+\.\S+$/.test(em)) return say("Enter a valid email.");
+    $("fgo").disabled = true;
+    post("forgot", { email: em }).then(function (d) { say(d.message || d.error, !!d.ok); }).catch(function () { say("Network error. Try again."); }).then(function () { $("fgo").disabled = false; });
+  });
+  var resetTok = qs.get("reset");
+  $("f-reset").addEventListener("submit", function (e) {
+    e.preventDefault(); var a = $("npw").value;
+    if (a.length < 8) return say("Password must be at least 8 characters.");
+    if (a !== $("npw2").value) return say("The passwords don't match.");
+    $("rgo").disabled = true;
+    post("reset", { token: resetTok, password: a }).then(function (d) {
+      say(d.message || d.error, !!d.ok);
+      if (d.ok) { history.replaceState(null, "", "/login/"); setTimeout(function () { location.href = "/login/"; }, 1800); }
+    }).catch(function () { say("Network error. Try again."); }).then(function () { $("rgo").disabled = false; });
+  });
+  if (resetTok) { history.replaceState(null, "", "/login/?reset=1"); if (resetTok === "1") resetTok = ""; only("f-reset", "Choose a new password", "Pick something you don't use anywhere else."); }
+  else if (qs.get("forgot")) only("f-forgot", "Reset your password", "We'll email you a link that works for 1 hour.");
   if (qs.get("mfa")) showMfa(qs.get("mfa"));
   if (qs.get("err")) say(ERR[qs.get("err")] || "Sign-in failed. Try again.");
 })();

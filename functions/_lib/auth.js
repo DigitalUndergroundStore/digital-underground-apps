@@ -25,6 +25,8 @@ export const limits = {
   signup: (env, ip, email) => rateAll(env, [...ipRules("signup:ip", ip, 5, 3600), ["signup:em:" + email, 3, 3600]]),
   totp: (env, ip, acctId) => rateAll(env, [...ipRules("totp:ip", ip, 10, 900), ["totp:acct:" + acctId, 6, 900]]),
   oauth: (env, ip) => rateAll(env, ipRules("oauth:ip", ip, 20, 600)),
+  forgot: (env, ip, email) => rateAll(env, [...ipRules("forgot:ip", ip, 5, 3600), ["forgot:em:" + email, 3, 3600]]),
+  reset: (env, ip) => rateAll(env, ipRules("reset:ip", ip, 10, 900)),
 };
 
 // ---------- OAuth providers ----------
@@ -46,10 +48,10 @@ export const PROVIDERS = {
     id: "X_CLIENT_ID", secret: "X_CLIENT_SECRET",
     authorize: "https://x.com/i/oauth2/authorize",
     token: "https://api.x.com/2/oauth2/token",
-    scope: "users.read tweet.read users.email",
+    scope: "users.read tweet.read", // spec: Read scope only. confirmed_email is not requested, so X logins never auto-link by email.
     basicAuth: true,
     async profile(at) {
-      const r = await fetch("https://api.x.com/2/users/me?user.fields=confirmed_email,name,username", { headers: { Authorization: "Bearer " + at } });
+      const r = await fetch("https://api.x.com/2/users/me?user.fields=name,username", { headers: { Authorization: "Bearer " + at } });
       if (!r.ok) throw new Error("x users/me " + r.status);
       const d = (await r.json()).data || {};
       // X only returns confirmed_email when the app has "Request email" enabled; it is verified by X.
@@ -78,10 +80,11 @@ export async function finishOAuth(env, kv, origin, p, url, cookieState) {
   await kv.delete("oauthst:" + state);
   if (!st || st.p !== p) return { error: "state" };
   const cfg = PROVIDERS[p];
-  const body = new URLSearchParams({ grant_type: "authorization_code", code, redirect_uri: redirectUri(origin, p), code_verifier: st.verifier, client_id: env[cfg.id] });
+  const body = new URLSearchParams({ grant_type: "authorization_code", code, redirect_uri: redirectUri(origin, p), code_verifier: st.verifier });
+  // Confidential clients: X wants HTTP Basic (client_id:client_secret); Google takes client_id/secret in the body.
   const headers = { "Content-Type": "application/x-www-form-urlencoded", Accept: "application/json" };
-  if (cfg.basicAuth) headers.Authorization = "Basic " + btoa(`${env[cfg.id]}:${env[cfg.secret]}`);
-  else body.set("client_secret", env[cfg.secret]);
+  if (cfg.basicAuth) headers.Authorization = "Basic " + btoa(`${encodeURIComponent(env[cfg.id])}:${encodeURIComponent(env[cfg.secret])}`);
+  else { body.set("client_id", env[cfg.id]); body.set("client_secret", env[cfg.secret]); }
   const r = await fetch(cfg.token, { method: "POST", headers, body });
   if (!r.ok) return { error: "token" };
   const tok = await r.json();
@@ -159,3 +162,42 @@ export function otpauthUri(secret, label) {
   return `otpauth://totp/${encodeURIComponent("Digital Underground:" + label)}?secret=${secret}&issuer=${encodeURIComponent("Digital Underground")}&algorithm=SHA1&digits=6&period=30`;
 }
 export const newTotpSecret = () => b32encode(rnd(20));
+
+// ---------- Backup codes (10 one-time codes, stored as HMAC-SHA256 hashes) ----------
+const BC_ALPHA = "abcdefghjkmnpqrstuvwxyz23456789";
+const normCode = (c) => String(c || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+const hashBackup = (env, c) => hmacHex(env.COMMUNITY_ADMIN_TOKEN, "bc|" + normCode(c));
+export const looksLikeBackup = (c) => normCode(c).length === 10;
+/** Returns plaintext codes (show once) and stores only hashes on acct.backup. Caller saves acct. */
+export async function newBackupCodes(env, acct) {
+  const codes = [];
+  for (let i = 0; i < 10; i++) { const b = rnd(10); let c = ""; for (const x of b) c += BC_ALPHA[x % BC_ALPHA.length]; codes.push(c.slice(0, 5) + "-" + c.slice(5)); }
+  acct.backup = { hashes: await Promise.all(codes.map((c) => hashBackup(env, c))), createdAt: Date.now() };
+  return codes;
+}
+/** Consumes a backup code. Returns true when it matched (and removes it). Caller saves acct. */
+export async function useBackupCode(env, acct, code) {
+  const list = acct.backup?.hashes || [];
+  if (!looksLikeBackup(code) || !list.length) return false;
+  const h = await hashBackup(env, code);
+  let hit = -1;
+  list.forEach((x, i) => { if (timingSafeEqualStr(x, h)) hit = i; });
+  if (hit < 0) return false;
+  list.splice(hit, 1); acct.backup.hashes = list; acct.backup.usedAt = Date.now();
+  return true;
+}
+
+// ---------- Password reset tokens (KV, 1 h TTL, single use; only the SHA-256 of the token is stored) ----------
+export const RESET_TTL = 3600;
+export async function createResetToken(kv, acctId) {
+  const tok = b64url(rnd(32));
+  await kv.put("pwreset:" + (await sha256Hex("pwreset|" + tok)), acctId, { expirationTtl: RESET_TTL });
+  return tok;
+}
+export async function takeResetToken(kv, tok, consume = true) {
+  if (typeof tok !== "string" || tok.length < 40 || tok.length > 64) return null;
+  const k = "pwreset:" + (await sha256Hex("pwreset|" + tok));
+  const id = await kv.get(k);
+  if (id && consume) await kv.delete(k);
+  return id || null;
+}

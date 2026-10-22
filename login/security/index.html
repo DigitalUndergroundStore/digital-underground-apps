@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- PREVIEW ONLY (do not deploy) -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Security settings | Digital Underground</title>
+<link rel="stylesheet" href="/assets/design-tokens.css">
+<link rel="stylesheet" href="/login/login.css?v=1">
+<link rel="stylesheet" href="/login/security/security.css?v=1">
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
+</head>
+<body class="sec">
+<header class="sec-top">
+  <a href="/store/" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal-static.svg" alt="Digital Underground" width="200" height="36"></a>
+  <a class="au-link" href="/community/dashboard/">Back to dashboard</a>
+</header>
+<main class="sec-main">
+  <h1>Security</h1>
+  <p class="sec-sub" id="who">Loading…</p>
+  <div class="au-alert" id="msg" role="alert" hidden></div>
+
+  <section class="sec-card" aria-labelledby="h-2fa">
+    <div class="sec-head"><h2 id="h-2fa">Two-factor authentication</h2><span class="sec-pill" id="pill">Off</span></div>
+    <p>Ask for a 6-digit code from an authenticator app (Google Authenticator, 1Password, Authy…) every time you log in.</p>
+
+    <div id="v-off" hidden><button class="au-submit" id="b-setup" type="button">Set up 2FA</button></div>
+
+    <div id="v-enroll" hidden>
+      <ol class="sec-steps">
+        <li>Scan this QR code with your authenticator app.</li>
+        <li>Can't scan? Enter this key: <code id="key"></code></li>
+        <li>Type the 6-digit code it shows.</li>
+      </ol>
+      <div class="sec-qr" id="qr" role="img" aria-label="QR code for your authenticator app"></div>
+      <form id="f-enable" novalidate>
+        <label for="c-enable">6-digit code</label>
+        <input id="c-enable" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required>
+        <button class="au-submit" type="submit">Verify and turn on</button>
+      </form>
+    </div>
+
+    <div id="v-on" hidden>
+      <form id="f-disable" novalidate>
+        <label for="c-disable">To turn 2FA off, enter a code from your app (or a backup code)</label>
+        <input id="c-disable" autocomplete="one-time-code" maxlength="11" required>
+        <button class="sec-danger" type="submit">Turn off 2FA</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec-card" id="s-backup" aria-labelledby="h-bc" hidden>
+    <div class="sec-head"><h2 id="h-bc">Backup codes</h2><span class="sec-pill" id="bc-left"></span></div>
+    <p>Each code works once if you lose your phone. Making new codes cancels the old ones.</p>
+    <div id="codes-box" hidden>
+      <p class="sec-warn">Save these now. You won't see them again.</p>
+      <ul class="sec-codes" id="codes"></ul>
+      <button class="sec-ghost" type="button" id="b-copy">Copy</button>
+      <button class="sec-ghost" type="button" id="b-dl">Download .txt</button>
+    </div>
+    <form id="f-regen" novalidate>
+      <label for="c-regen">Code from your authenticator app</label>
+      <input id="c-regen" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required>
+      <button class="sec-ghost" type="submit">Make 10 new codes</button>
+    </form>
+  </section>
+
+  <section class="sec-card" aria-labelledby="h-pw">
+    <h2 id="h-pw">Password</h2>
+    <p>Forgot it or want a new one? We'll email you a reset link.</p>
+    <a class="sec-ghost" href="/login/?forgot=1">Reset password</a>
+  </section>
+</main>
+<script src="/login/vendor/qrcode.js" defer></script>
+<script src="/login/security/security.js?v=1" defer></script>
+</body>
+</html>

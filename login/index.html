@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
 <title>Log in or sign up | Digital Underground</title>
 <link rel="stylesheet" href="/assets/design-tokens.css">
 <link rel="stylesheet" href="/login/login.css?v=1">
@@ -46,7 +47,7 @@
       <form id="f-auth" novalidate>
         <label for="em">Email</label>
         <input id="em" name="email" type="email" autocomplete="email" required>
-        <div class="au-row"><label for="pw">Password</label><a class="au-link" id="forgot" href="/community/dashboard/#forgot">Forgot password?</a></div>
+        <div class="au-row"><label for="pw">Password</label><a class="au-link" id="forgot" href="/login/?forgot=1">Forgot password?</a></div>
         <div class="au-pw"><input id="pw" name="password" type="password" autocomplete="current-password" minlength="8" required>
           <button type="button" class="au-eye" id="eye" aria-label="Show password" aria-pressed="false">Show</button></div>
         <p class="au-hint" id="pw-hint" hidden>At least 8 characters.</p>
@@ -54,15 +55,31 @@
       </form>
 
       <form id="f-mfa" hidden novalidate>
-        <label for="code">6-digit code from your authenticator app</label>
-        <input id="code" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="\d{6}" maxlength="6" required>
+        <label for="code">6-digit code from your authenticator app, or a backup code</label>
+        <input id="code" name="code" autocomplete="one-time-code" maxlength="11" required>
         <button class="au-submit" type="submit">Verify and log in</button>
       </form>
 
-      <p class="au-fine">Signing in with Google or X uses the same account as your email if the provider has verified it. By continuing you agree to the <a href="/terms/">Terms</a> and <a href="/privacy/">Privacy Policy</a>.</p>
+      <form id="f-forgot" hidden novalidate>
+        <label for="fem">Email</label>
+        <input id="fem" name="email" type="email" autocomplete="email" required>
+        <button class="au-submit" type="submit" id="fgo">Email me a reset link</button>
+        <p class="au-hint"><a class="au-link" href="/login/">Back to log in</a></p>
+      </form>
+
+      <form id="f-reset" hidden novalidate>
+        <label for="npw">New password</label>
+        <input id="npw" name="password" type="password" autocomplete="new-password" minlength="8" required>
+        <label for="npw2">Confirm new password</label>
+        <input id="npw2" type="password" autocomplete="new-password" minlength="8" required>
+        <p class="au-hint">At least 8 characters. This signs you out on every device.</p>
+        <button class="au-submit" type="submit" id="rgo">Set new password</button>
+      </form>
+
+      <p class="au-fine">Signing in with Google uses the same account as your email when Google has verified it. X sign-in gets its own account unless you link it while signed in. By continuing you agree to the <a href="/terms/">Terms</a> and <a href="/privacy/">Privacy Policy</a>.</p>
     </div>
   </section>
 </main>
-<script src="/login/login.js?v=1" defer></script>
+<script src="/login/login.js?v=2" defer></script>
 </body>
 </html>

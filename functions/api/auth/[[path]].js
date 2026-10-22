@@ -6,11 +6,16 @@
  *   POST /api/auth/login   { email, password }        -> { ok } | { mfa: true, ticket }
  *   POST /api/auth/signup  { email, password }        -> { ok }
  *   POST /api/auth/2fa     { ticket, code }           -> { ok } (finishes a 2FA login)
- *   POST /api/auth/totp/setup | enable {code} | disable {code}   (signed-in creator)
+ *   POST /api/auth/2fa     { ticket, code }           -> code may be a 6-digit TOTP or a one-time backup code
+ *   GET  /api/auth/security                          -> { email, totp, backupLeft, identities } (signed-in)
+ *   POST /api/auth/totp/setup | enable {code} | disable {code}   (signed-in creator; enable returns 10 backup codes once)
+ *   POST /api/auth/backup/regenerate { code }        -> { codes } (signed-in, 2FA on; old codes stop working)
+ *   POST /api/auth/forgot  { email }                 -> always { ok } (emails a 1 h single-use reset link if the account exists)
+ *   POST /api/auth/reset   { token, password }       -> { ok } (sets password, signs out every session)
  */
-import { clientIp, getKv, json, normalizeEmail } from "../../_lib/community.js";
+import { clientIp, getKv, json, normalizeEmail, sendCommunityEmail } from "../../_lib/community.js";
 import { accountIdForLogin, authCreator, checkPassword, getAccount, loginAllowed, MIN_PASSWORD, putAccount, sessionCookie, setCredentials, validPassword } from "../../_lib/creator.js";
-import { accountForIdentity, checkTotp, configured, finishOAuth, limits, mfaTicket, newTotpSecret, openSecret, otpauthUri, PROVIDERS, readMfaTicket, sealSecret, startOAuth } from "../../_lib/auth.js";
+import { accountForIdentity, checkTotp, configured, finishOAuth, limits, mfaTicket, newTotpSecret, openSecret, otpauthUri, PROVIDERS, readMfaTicket, sealSecret, startOAuth, newBackupCodes, useBackupCode, looksLikeBackup, createResetToken, takeResetToken, RESET_TTL } from "../../_lib/auth.js";
 
 const safeNext = (n) => (typeof n === "string" && /^\/(?!\/)[\w\-./?=&%#]*$/.test(n) ? n : "/community/dashboard/");
 const cookieOf = (req, name) => { for (const p of (req.headers.get("Cookie") || "").split(";")) { const i = p.indexOf("="); if (i > 0 && p.slice(0, i).trim() === name) return p.slice(i + 1).trim(); } return ""; };
@@ -32,6 +37,12 @@ export async function onRequest({ request, env, params }) {
 
   if (request.method === "GET") {
     if (path === "providers") return json({ google: configured(env, "google"), x: configured(env, "x") });
+    if (path === "security") {
+      const acct = await authCreator(request, env, kv);
+      if (!acct) return json({ ok: false, error: "Log in first." }, 401);
+      return json({ ok: true, email: acct.email || "", hasPassword: !!acct.pw, totp: !!acct.totp?.enabled,
+        backupLeft: acct.backup?.hashes?.length || 0, identities: Object.keys(acct.identities || {}) }, 200, { "Cache-Control": "no-store" });
+    }
     if (PROVIDERS[p] && step === "start") {
       if (!configured(env, p)) return redirect(`/login/?err=${p}-unavailable`);
       if (!(await limits.oauth(env, ip)).ok) return redirect("/login/?err=rate");
@@ -81,11 +92,16 @@ export async function onRequest({ request, env, params }) {
     const acct = await readMfaTicket(env, kv, body.ticket);
     if (!acct || !acct.totp?.enabled) return json({ ok: false, error: "That sign-in expired. Start again." }, 400);
     if (!(await limits.totp(env, ip, acct.id)).ok) return TOO_MANY();
-    const s = await checkTotp(await openSecret(env, acct.totp.secret), body.code, acct.totp.lastStep ?? -1);
-    if (s < 0) return json({ ok: false, error: "That code isn't right. Check your authenticator app." }, 400);
-    acct.totp.lastStep = s; await putAccount(kv, acct);
+    let usedBackup = false;
+    if (looksLikeBackup(body.code)) usedBackup = await useBackupCode(env, acct, body.code);
+    if (!usedBackup) {
+      const s = await checkTotp(await openSecret(env, acct.totp.secret), body.code, acct.totp.lastStep ?? -1);
+      if (s < 0) return json({ ok: false, error: "That code isn't right. Use your authenticator app or a backup code." }, 400);
+      acct.totp.lastStep = s;
+    }
+    await putAccount(kv, acct);
     const c = await sessionCookie(env, acct);
-    return json({ ok: true }, 200, c ? { "Set-Cookie": c } : {});
+    return json({ ok: true, ...(usedBackup ? { backupLeft: acct.backup.hashes.length } : {}) }, 200, c ? { "Set-Cookie": c } : {});
   }
 
   if (path.startsWith("totp/")) {
@@ -99,13 +115,57 @@ export async function onRequest({ request, env, params }) {
       return json({ ok: true, secret, otpauth: otpauthUri(secret, acct.email || acct.id) });
     }
     if (!acct.totp?.secret) return json({ ok: false, error: "Start 2FA setup first." }, 400);
-    const s = await checkTotp(await openSecret(env, acct.totp.secret), body.code, acct.totp.lastStep ?? -1);
+    if (step === "enable" && acct.totp.enabled) return json({ ok: false, error: "2FA is already on." }, 400);
+    // Disabling also accepts a backup code (lost phone).
+    const viaBackup = step === "disable" && acct.totp.enabled && looksLikeBackup(body.code) && (await useBackupCode(env, acct, body.code));
+    const s = viaBackup ? 0 : await checkTotp(await openSecret(env, acct.totp.secret), body.code, acct.totp.lastStep ?? -1);
     if (s < 0) return json({ ok: false, error: "That code isn't right." }, 400);
-    if (step === "enable") { acct.totp = { ...acct.totp, enabled: true, lastStep: s, enabledAt: Date.now() }; }
-    else if (step === "disable") { delete acct.totp; }
+    let codes;
+    if (step === "enable") { acct.totp = { ...acct.totp, enabled: true, lastStep: s, enabledAt: Date.now() }; codes = await newBackupCodes(env, acct); }
+    else if (step === "disable") { delete acct.totp; delete acct.backup; }
     else return json({ error: "Not found." }, 404);
     await putAccount(kv, acct);
-    return json({ ok: true, enabled: step === "enable" });
+    return json({ ok: true, enabled: step === "enable", ...(codes ? { codes } : {}) });
+  }
+
+  if (path === "backup/regenerate") {
+    const acct = await authCreator(request, env, kv);
+    if (!acct) return json({ ok: false, error: "Log in first." }, 401);
+    if (!acct.totp?.enabled) return json({ ok: false, error: "Turn on 2FA first." }, 400);
+    if (!(await limits.totp(env, ip, acct.id)).ok) return TOO_MANY();
+    const s = await checkTotp(await openSecret(env, acct.totp.secret), body.code, acct.totp.lastStep ?? -1);
+    if (s < 0) return json({ ok: false, error: "Enter a current code from your authenticator app." }, 400);
+    acct.totp.lastStep = s;
+    const codes = await newBackupCodes(env, acct);
+    await putAccount(kv, acct);
+    return json({ ok: true, codes });
+  }
+
+  if (path === "forgot") {
+    const generic = json({ ok: true, message: "If that email has an account, a reset link is on its way. It works for 1 hour." });
+    if (!email) return json({ ok: false, error: "Enter a valid email." }, 400);
+    if (!(await limits.forgot(env, ip, email)).ok) return TOO_MANY(60);
+    const id = await accountIdForLogin(kv, email);
+    const acct = id ? await getAccount(kv, id) : null;
+    if (!acct || acct.email !== email) return generic; // no account enumeration
+    const tok = await createResetToken(kv, acct.id);
+    const link = `${origin}/login/?reset=${encodeURIComponent(tok)}`;
+    const r = await sendCommunityEmail(env, { to: email, subject: "Reset your Digital Underground password",
+      text: `Someone (hopefully you) asked to reset the password for your Digital Underground creator account.\n\nReset it here (works once, for ${RESET_TTL / 60} minutes):\n${link}\n\nIf you didn't ask for this, ignore this email. Your password stays the same.\n\nDigital Underground\nhttps://digitalundergroundstore.com/` });
+    if (!r.sent) console.log("pw reset mail not sent", r.reason || r.status); // never log the link/token
+    return generic;
+  }
+
+  if (path === "reset") {
+    if (!(await limits.reset(env, ip)).ok) return TOO_MANY();
+    if (!validPassword(body.password)) return json({ ok: false, error: `Password must be at least ${MIN_PASSWORD} characters.` }, 400);
+    const id = await takeResetToken(kv, body.token);
+    const acct = id ? await getAccount(kv, id) : null;
+    if (!acct || !acct.email) return json({ ok: false, error: "That reset link is invalid or expired. Ask for a new one." }, 400);
+    acct.sessVer = (acct.sessVer || 0) + 1; // sign out everywhere
+    const r = await setCredentials(kv, acct, acct.email, body.password);
+    if (r.error) return json({ ok: false, error: r.error }, 400);
+    return json({ ok: true, message: "Password updated. Log in with your new password." });
   }
   return json({ error: "Not found." }, 404);
 }

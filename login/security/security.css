@@ -1,0 +1,19 @@
+/* PREVIEW ONLY */
+body.sec{margin:0;background:var(--du-bg,#0b0d10);color:var(--du-text,#e8eaed);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.sec-top{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border-bottom:1px solid rgba(255,255,255,.08)}
+.sec-main{max-width:640px;margin:0 auto;padding:28px 20px 60px}
+.sec-main h1{margin:0 0 4px;font-size:28px}.sec-sub{margin:0 0 20px;opacity:.75}
+.sec-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:20px;margin:0 0 18px}
+.sec-card h2{margin:0;font-size:19px}.sec-card p{opacity:.85}
+.sec-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.sec-pill{font-size:13px;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.1)}.sec-pill.on{background:#14532d;color:#bbf7d0}
+.sec-card label{display:block;margin:12px 0 6px;font-weight:600;font-size:14px}
+.sec-card input{width:100%;box-sizing:border-box;padding:11px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.25);color:inherit;font-size:16px;letter-spacing:.08em}
+.sec-card .au-submit{margin-top:12px}
+.sec-qr{background:#fff;padding:12px;border-radius:12px;width:max-content;margin:8px 0}.sec-qr img,.sec-qr svg{display:block;width:200px;height:200px}
+.sec-steps{padding-left:20px}.sec-steps code{word-break:break-all;font-size:14px;background:rgba(255,255,255,.08);padding:2px 6px;border-radius:6px}
+.sec-codes{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;font:15px/1.4 ui-monospace,Menlo,monospace}
+.sec-codes li{background:rgba(0,0,0,.3);padding:8px 10px;border-radius:8px;text-align:center}
+.sec-warn{color:#fcd34d;font-weight:600}
+.sec-ghost,.sec-danger{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.25);background:transparent;color:inherit;font-size:15px;cursor:pointer;text-decoration:none}
+.sec-danger{border-color:#f87171;color:#fecaca}

@@ -10,7 +10,7 @@ and sets the versioned CSS/JS includes. Used by gen-landing.py, generate-product
 apply-site-nav.py (which stamps every existing page + generator template). Bump CSS_V / JS_V on edits."""
 import re
 
-CSS_V, JS_V = "13", "8"
+CSS_V, JS_V = "14", "8"
 LINKS = [("/", "Marketplace"), ("/league/", "League"), ("/makers/", "Creators"), ("/blog/", "Blog")]
 MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'
 _L = "".join(f'<a href="{h}">{t}</a>' for h, t in LINKS)
@@ -29,7 +29,6 @@ COLS = [
   ("Marketplace", [("/#projects", "Browse projects"), ("/league/", "Maker League"), ("/makers/", "Creators"), ("/community/submit/", "List your project free"), ("/community/dashboard/", "Creator dashboard")]),
   ("Resources", [("/blog/", "Blog"), ("/community/api/", "Developer API"), ("/support/", "Support"), ("share", "")]),
   ("Company", [("/store/", "Digital Underground store"), (CONTACT, "Contact us"), ("https://x.com/DigitalUG_Store", "Follow @DigitalUG_Store")]),
-  ("Guides", [("/list-your-indie-app-free/", "List your indie app free"), ("/weekly-meal-planner-canada/", "Weekly meal planner"), ("/ai-prompt-packs-for-creators/", "AI prompt packs"), ("/offline-invoice-generator/", "Offline invoice generator"), ("/offline-habit-tracker-focus-timer/", "Habit tracker &amp; focus timer"), ("/free-study-planner-for-students/", "Free study planner")]),
 ]
 def _li(h, t):
     if h == "share": return '<li><button type="button" data-duf-share>Share this page</button></li>'

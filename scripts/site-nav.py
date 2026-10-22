@@ -44,7 +44,7 @@ FOOT = ('<!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="
   '<p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form>'
   f'<div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X">{XSVG}</a></div></div>'
   f'<div class="duf-cols">{_C}</div></div>'
-  f'<div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground · Ontario, Canada</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="{CONTACT}">Contact</a></p></div>'
+  f'<div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="{CONTACT}">Contact</a></p></div>'
   '</footer><!--/du-site-foot-->')
 
 CSS = f'<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v={CSS_V}">'

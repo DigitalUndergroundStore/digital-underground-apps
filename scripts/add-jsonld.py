@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BASE = "https://digitalundergroundstore.com"
 ORG = {"@type": "Organization", "@id": f"{BASE}/#org", "name": "Digital Underground", "url": f"{BASE}/",
-       "logo": f"{BASE}/assets/logo/favicon-180.png", "sameAs": ["https://x.com/DigitalUG_Store"]}
+       "logo": {"@type": "ImageObject", "url": f"{BASE}/assets/logo/du-mark.png", "width": 1024, "height": 1024}, "sameAs": ["https://x.com/DigitalUG_Store"]}
 BLOCK_RE = re.compile(r'\n?<script type="application/ld\+json" id="du-ld">.*?</script>', re.S)
 
 

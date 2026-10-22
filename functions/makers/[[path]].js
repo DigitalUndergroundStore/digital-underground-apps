@@ -167,6 +167,7 @@ function directoryPage(makers) {
 })();
 </script>`;
   const jsonld = { "@context": "https://schema.org", "@type": "CollectionPage", url: canonical, name: "Creators | Developer Marketplace",
+    publisher: { "@type": "Organization", "@id": `${ORIGIN}/#org`, name: "Digital Underground", url: `${ORIGIN}/`, logo: { "@type": "ImageObject", url: `${ORIGIN}/assets/logo/du-mark.png`, width: 1024, height: 1024 } },
     mainEntity: { "@type": "ItemList", numberOfItems: makers.length, itemListElement: makers.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.name, url: m.auto ? ORIGIN + m.href : `${ORIGIN}/makers/${m.slug}/` })) } };
   return shell({ title: "Creators | Developer Marketplace | Digital Underground", desc: "Browse the independent makers on the Digital Underground Developer Marketplace and see every app, tool and game each one lists.",
     canonical, image: `${ORIGIN}/community/og-dm-v3.jpg`, imageAlt: "Developer Marketplace by Digital Underground", jsonld, body, current: "dir" });

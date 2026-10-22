@@ -61,3 +61,4 @@ for p in PAGES:
     .replace("{{FAQ}}","".join(f"<details><summary>{e(q)}</summary><p>{e(a_)}</p></details>" for q,a_ in p["faq"])).replace("{{OTHERS}}",others).replace("{{OGALT}}",e(p["h1"])))
   os.makedirs(os.path.join(R,p["slug"]),exist_ok=True); open(os.path.join(R,p["slug"],"index.html"),"w").write(_site_nav.apply(out))
 print(len(PAGES),"pages")
+import subprocess,sys; subprocess.run([sys.executable,os.path.join(R,"scripts","seo-meta.py")],check=True)

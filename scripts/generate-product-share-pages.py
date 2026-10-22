@@ -275,6 +275,9 @@ def main() -> None:
     # Product / Organization / Book JSON-LD (reads the pages just written).
     import subprocess, sys
     subprocess.run([sys.executable, str(Path(__file__).with_name("add-jsonld.py"))], check=True)
+    # Product hero layout + Organization/publisher, canonical and OG/Twitter fill-in.
+    subprocess.run([sys.executable, str(Path(__file__).with_name("p-hero.py"))], check=True)
+    subprocess.run([sys.executable, str(Path(__file__).with_name("seo-meta.py"))], check=True)
 
 
 if __name__ == "__main__":

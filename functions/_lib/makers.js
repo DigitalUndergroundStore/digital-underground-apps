@@ -28,7 +28,7 @@ export const SEED = {
   },
   "digital-underground": {
     slug: "digital-underground", name: "Digital Underground",
-    bio: "Digital products built around you. Small, useful apps, tools and books you buy once, with no subscriptions.",
+    bio: "Digital products built around you. Thoughtfully crafted apps, tools and books. Buy once, own it forever, no subscriptions.",
     logo: "/makers/media/digital-underground-logo.webp", banner: "/makers/media/digital-underground-banner.webp",
     website: "https://digitalundergroundstore.com/", socials: {},
   },

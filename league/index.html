@@ -14,39 +14,358 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="/community/community.css?v=4">
 <link rel="stylesheet" href="/league/league.css?v=3">
-<link rel="stylesheet" href="/league/league-v2.css?v=3">
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
+<link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter-latin-400-normal.woff2) format("woff2")}@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/inter-latin-500-normal.woff2) format("woff2")}@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/inter-latin-600-normal.woff2) format("woff2")}@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/inter-latin-700-normal.woff2) format("woff2")}
+  :root {
+    --bg: #07070d;
+    --bg-elevated: #0e0e16;
+    --bg-card: #111119;
+    --border: rgba(255,255,255,0.08);
+    --border-hover: rgba(139,92,246,0.45);
+    --text: #f1f5f9;
+    --text-muted: #b0bcc9;
+    --text-dim: #7d8a9a;
+    --accent: #8b5cf6;
+    --accent-soft: rgba(139,92,246,0.15);
+    --success: #34d399;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 40% at 15% 0%, rgba(139,92,246,0.1), transparent);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+
+  .hero { padding: 48px 0 24px; }
+  h1 { font-size: clamp(2.2rem, 5vw, 2.8rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 12px; }
+  .lead { color: var(--text-muted); font-size: 1rem; max-width: 540px; margin-bottom: 20px; }
+  .lead strong { color: var(--text); font-weight: 600; }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .share-btn:hover { border-color: var(--border-hover); background: var(--accent-soft); }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: rgba(139,92,246,0.2); }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card-header h2 { font-size: 1.05rem; font-weight: 600; }
+  .card-meta { font-size: 0.8rem; color: var(--text-dim); }
+
+  .standings-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: linear-gradient(135deg, rgba(139,92,246,0.08), rgba(255,255,255,0.02));
+    border-radius: 12px;
+    border: 1px solid rgba(139,92,246,0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  .standings-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(139,92,246,0.1), transparent);
+    animation: shimmer 3s infinite;
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .rank {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #fbbf24;
+    min-width: 24px;
+    text-shadow: 0 0 12px rgba(251,191,36,0.5);
+  }
+  .project-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: linear-gradient(135deg, #1e1b4b, #312e81);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: 0 0 0 2px rgba(139,92,246,0.3);
+    transition: transform 0.2s;
+  }
+  .standings-item:hover .project-icon { transform: scale(1.08) rotate(-3deg); }
+  .votes {
+    font-weight: 700;
+    color: #c4b5fd;
+    background: var(--accent-soft);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(139,92,246,0.3);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(139,92,246,0.12);
+    color: #ddd6fe;
+    border: 1px solid rgba(139,92,246,0.4);
+    transition: all 0.2s;
+  }
+  .badge.earned {
+    background: var(--accent);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 0 0 2px rgba(139,92,246,0.3);
+  }
+  .user-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .vote-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  .vote-card:hover {
+    border-color: var(--border-hover);
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139,92,246,0.12);
+  }
+  .vote-card.voted {
+    border-color: var(--success);
+    background: rgba(52,211,153,0.08);
+    animation: votePulse 0.5s ease;
+  }
+  @keyframes votePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+  .vote-btn {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .vote-btn:hover { background: #7c3aed; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(139,92,246,0.4); }
+  .vote-btn.voted {
+    background: var(--accent);
+    box-shadow: 0 0 0 3px rgba(139,92,246,0.25);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: #c4b5fd;
+    border: 1px solid rgba(139,92,246,0.3);
+  }
+  .badge.earned { background: rgba(139,92,246,0.25); color: #e9d5ff; }
+  .user-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 12px 0 16px;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--bg-card);
+    border: 1px solid var(--accent);
+    color: var(--text);
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  .search {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search:focus { border-color: var(--accent); }
+
+  .vote-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .vote-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.2s;
+  }
+  .vote-card:hover { border-color: var(--border-hover); background: var(--accent-soft); }
+  .vote-card .info { flex: 1; min-width: 0; }
+  .vote-card strong { display: block; font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .vote-card span { font-size: 0.75rem; color: var(--text-dim); }
+  .vote-btn {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    flex-shrink: 0;
+  }
+  .vote-btn:hover { background: #7c3aed; transform: translateY(-1px); }
+  .vote-btn.voted { background: var(--accent); box-shadow: 0 0 0 3px rgba(139,92,246,0.25); }
+
+  .note {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin-top: 16px;
+    line-height: 1.5;
+  }
+
+
+  @media (max-width: 640px) {
+    .vote-grid { grid-template-columns: 1fr; }
+  }
+
+  /* real-data wiring: images in his icon slots, multiple standings rows, mobile fit */
+  .lg-standings { display: grid; gap: 8px; list-style: none; }
+  .project-icon { flex-shrink: 0; overflow: hidden; }
+  .project-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .project-info { flex: 1; min-width: 0; }
+  .project-info strong, .project-info span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .project-info a { color: inherit; text-decoration: none; }
+  .project-info span { font-size: 0.8rem; color: var(--text-dim); }
+  .votes { flex-shrink: 0; margin-left: auto; position: relative; }
+  .vote-btn:disabled { cursor: default; opacity: .55; }
+  .vote-btn.voted:disabled { opacity: 1; }
+  .vote-grid { grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); }
+  .vote-card, .standings-item { min-width: 0; max-width: 100%; }
+  .lg-empty { color: var(--text-dim); text-align: center; padding: 16px; font-size: .9rem; list-style: none; }
+  .lg-msg { min-height: 1em; margin: 0 0 12px; font-size: .9rem; color: var(--text-muted); }
+  .lg-msg.ok { color: #86efac; } .lg-msg.err { color: #fca5a5; }
+  .lg-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  #motw-slot .motw { margin: 0 0 16px; }
+  .duf, .dun { font-family: inherit; }
+</style>
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=13">
 </head>
-<body class="lg-v2"><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/store/" aria-label="Digital Underground store home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=8" defer></script><!--/du-site-nav-->
-<div class="wrap">
-<main id="main">
-  <header class="page-head">
+<body><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/store/" aria-label="Digital Underground store home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=8" defer></script><!--/du-site-nav-->
+<main id="main" class="container">
+  <section class="hero">
     <h1>Maker League</h1>
-    <p>A free weekly vote for indie projects on the Developer Marketplace. Pick your favourite: <strong>one vote per visitor per week</strong>. The week resets every Monday at 12:00 AM ET, and last week's winner becomes <strong>Maker of the Week</strong> on the homepage.</p>
-    <button type="button" class="lg-share" data-lg-share><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8h16v-8M12 3v13M7 8l5-5 5 5"/></svg>Share the League</button>
-  </header>
-  <div id="motw-slot"></div><script src="/league/share.js?v=3" defer></script>
-  <section class="lg-panel" aria-labelledby="st-h">
-    <div class="lg-head"><h2 id="st-h">This week's standings</h2><span class="lg-meta" id="meta"></span></div>
-    <ol class="lg-list" id="standings" aria-live="polite"><li class="lg-empty">Loading…</li></ol>
+    <p class="lead">A free weekly vote for indie projects on the Developer Marketplace. Pick your favourite: <strong>one vote per visitor per week</strong>. The week resets every Monday at 12:00 AM ET, and last week’s winner becomes Maker of the Week on the homepage.</p>
+    <button type="button" class="share-btn" data-lg-share>↑ Share the League</button>
   </section>
-  <section class="lg-panel" aria-labelledby="vote-h">
-    <div class="lg-head"><h2 id="vote-h">Cast your vote</h2></div>
+
+  <div id="motw-slot"></div>
+
+  <section class="card" aria-labelledby="st-h">
+    <div class="card-header">
+      <h2 id="st-h">This week’s standings</h2>
+      <span class="card-meta" id="meta"></span>
+    </div>
+    <ol class="lg-standings" id="standings" aria-live="polite"><li class="lg-empty">Loading…</li></ol>
+  </section>
+
+  <section class="card" aria-labelledby="vote-h">
+    <div class="card-header">
+      <h2 id="vote-h">Cast your vote</h2>
+    </div>
     <p class="lg-msg" id="msg" role="status"></p>
     <label class="lg-hp" aria-hidden="true">Leave blank<input id="hp" tabindex="-1" autocomplete="off"></label>
-    <input id="q" type="search" class="lg-q" placeholder="Search projects" aria-label="Search projects">
-    <ul class="lg-grid" id="pick"></ul>
+    <input type="search" class="search" placeholder="Search projects" id="search" aria-label="Search projects">
+    <div class="vote-grid" id="voteGrid"></div>
+    <p class="note">Free to enter: outside makers’ live listings are entered automatically (Digital Underground’s and Kerzy Labs’ own products are not in the League). Votes are counted as they come in; obvious bot traffic is not counted. No paid placement.</p>
   </section>
-  <p class="lg-fine">Free to enter: outside makers' live listings are entered automatically (Digital Underground's and Kerzy Labs' own products are not in the League). Votes are counted as they come in; obvious bot traffic is not counted. No paid placement.</p>
 </main>
-</div>
+<script src="/league/share.js?v=3" defer></script>
 <script src="/league/spotlight.js?v=1" defer></script>
-<script src="/league/league.js?v=2" defer></script>
+<script src="/league/league.js?v=3" defer></script>
 <!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="duf-brand"><a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47" loading="lazy"></a><p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p><form class="duf-nl" novalidate><div class="duf-book"><a href="/free-book/"><img src="/assets/gift/humanity-x-off-the-ground-cover.webp" alt="Humanity X: Off the Ground cover" width="56" height="90" loading="lazy" decoding="async"></a><div><h3 class="duf-bk-h">Get the free book</h3><p class="duf-bk-t"><a href="/free-book/">Humanity X: Off the Ground</a></p><p class="duf-bk-s">Book 1 of the Humanity X Trilogy. Join the email list and download the full novel right away in PDF, EPUB and Word.</p></div></div><label for="dufEmail">Your email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Get the book</button></div><input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true"><label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label><p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form><div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg></a></div></div><div class="duf-cols"><div class="duf-col"><h3>Marketplace</h3><ul><li><a href="/#projects">Browse projects</a></li><li><a href="/league/">Maker League</a></li><li><a href="/makers/">Creators</a></li><li><a href="/community/submit/">List your project free</a></li><li><a href="/community/dashboard/">Creator dashboard</a></li></ul></div><div class="duf-col"><h3>Resources</h3><ul><li><a href="/blog/">Blog</a></li><li><a href="/community/api/">Developer API</a></li><li><a href="/support/">Support</a></li><li><button type="button" data-duf-share>Share this page</button></li></ul></div><div class="duf-col"><h3>Company</h3><ul><li><a href="/store/">Digital Underground store</a></li><li><a href="mailto:digitalunderground.store@proton.me">Contact us</a></li><li><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank">Follow @DigitalUG_Store</a></li></ul></div><div class="duf-col"><h3>Guides</h3><ul><li><a href="/list-your-indie-app-free/">List your indie app free</a></li><li><a href="/weekly-meal-planner-canada/">Weekly meal planner</a></li><li><a href="/ai-prompt-packs-for-creators/">AI prompt packs</a></li><li><a href="/offline-invoice-generator/">Offline invoice generator</a></li><li><a href="/offline-habit-tracker-focus-timer/">Habit tracker &amp; focus timer</a></li><li><a href="/free-study-planner-for-students/">Free study planner</a></li></ul></div></div></div><div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground · Ontario, Canada</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div></footer><!--/du-site-foot-->
 </body>
 </html>

@@ -597,6 +597,9 @@
 
   /* safety net: never leave content invisible */
   .listing.is-visible > main > *, .listing.is-visible > .sidebar { opacity: 1; }
+  /* final CTA slide as an image card (real Wolf Sniff banner under his gradient) */
+  .gallery-cta { position: relative; overflow: hidden; background: linear-gradient(135deg, rgba(20,12,40,.72), rgba(10,8,20,.86)), url(/assets/community/wolfitway/wolf-sniff-banner.webp) center/cover no-repeat; cursor: pointer; text-decoration: none; }
+  .gallery-cta:hover .cta-title { text-decoration: underline; }
 </style>
 <noscript><style>.listing > main > *, .sidebar { animation: none !important; opacity: 1 !important; transform: none !important; }</style></noscript>
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=13">

@@ -91,6 +91,9 @@ export async function ensureMakerForListing(kv, row) {
     if (!p.name) return null;
     rec.live = { ...p, approvedAt: Date.now(), auto: true, fromListing: row.id };
     changed = true;
+  } else if (!rec.live.logo) {
+    const logo = profileFromListing(row).logo; // every maker page shows a logo
+    if (logo) { rec.live = { ...rec.live, logo }; changed = true; }
   }
   if (changed || !(await getIndex(kv)).approved.includes(slug)) await putMaker(kv, rec);
   row.makerSlug = slug;

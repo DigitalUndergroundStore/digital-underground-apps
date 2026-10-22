@@ -32,13 +32,14 @@
 
   function go(name) {
     view = name;
-    ["login", "home", "queue", "contacts", "support", "analytics", "backups", "links"].forEach(function (v) {
+    ["login", "home", "queue", "contacts", "support", "analytics", "apikeys", "backups", "links"].forEach(function (v) {
       var el = $("view-" + v);
       if (!el) return;
       if (v === "login") el.classList.toggle("hidden", name !== "login");
       else el.classList.toggle("is-on", name === v);
     });
     $("logout-btn").hidden = name === "login";
+    document.body.setAttribute("data-view", name);
     if (name === "home") loadHome();
     if (name === "queue") { loadQueue("pending"); loadMakers(); loadReports(); }
     if (name === "contacts") loadContacts("");
@@ -64,33 +65,42 @@
         card("support", "Support inbox", support, support ? "Needs a reply" : "Inbox zero", support ? "badge" : "badge ok") +
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
         card("analytics", "Analytics", (w.views || 0), (w.clicks || 0) + " clicks · 7 days", "") +
-        card("backups", "Backups", backup.lastSnapshot || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
+        card("backups", "Backups", shortDate(backup.lastSnapshot) || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
         card("apikeys", "API keys", "→", "Creator API access", "") +
         card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");
       $("home-today").innerHTML =
-        '<div class="item" style="margin-top:14px"><strong>Today</strong>' +
-        '<div class="stat-row"><span>Views</span><span>' + (t.views || 0) + "</span></div>" +
-        '<div class="stat-row"><span>Clicks</span><span>' + (t.clicks || 0) + "</span></div>" +
-        '<div class="stat-row"><span>New submissions</span><span>' + (t.submissions || 0) + "</span></div>" +
-        '<div class="stat-row"><span>New contacts</span><span>' + (t.contacts || 0) + "</span></div>" +
-        '<div class="stat-row"><span>Support messages</span><span>' + (t.support || 0) + "</span></div>" +
-        '<p class="small" style="margin:10px 0 0">Last 7 days: ' +
+        '<div class="oh-today"><h2>Today</h2>' +
+        '<div class="oh-row"><span>Views</span><span>' + (t.views || 0) + "</span></div>" +
+        '<div class="oh-row"><span>Clicks</span><span>' + (t.clicks || 0) + "</span></div>" +
+        '<div class="oh-row"><span>New submissions</span><span>' + (t.submissions || 0) + "</span></div>" +
+        '<div class="oh-row"><span>New contacts</span><span>' + (t.contacts || 0) + "</span></div>" +
+        '<div class="oh-row"><span>Support messages</span><span>' + (t.support || 0) + "</span></div>" +
+        '<div class="oh-note">Last 7 days: ' +
         (w.views || 0) + " views · " + (w.clicks || 0) + " clicks · " +
-        (w.submissions || 0) + " submissions · " + (w.contacts || 0) + " contacts</p></div>";
+        (w.submissions || 0) + " submissions · " + (w.contacts || 0) + " contacts</div></div>";
     });
+  }
+
+  function shortDate(v) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(v || ""));
+    if (!m) return v;
+    return ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][+m[2] - 1] + " " + (+m[3]);
   }
 
   function card(goTo, title, count, sub, badgeClass) {
     var badge = "";
-    if (badgeClass === "badge" && count) badge = '<span class="badge">' + esc(count) + " need you</span>";
-    if (badgeClass === "badge ok") badge = '<span class="badge ok">OK</span>';
-    if (badgeClass === "badge warn") badge = '<span class="badge warn">Check</span>';
+    if (badgeClass === "badge" && count) badge = '<div class="oh-badge need">' + esc(count) + " need you</div>";
+    if (badgeClass === "badge ok") badge = '<div class="oh-badge ok">OK</div>';
+    if (badgeClass === "badge warn") badge = '<div class="oh-badge warn">Check</div>';
+    var val = count === "→"
+      ? '<div class="oh-arrow" aria-hidden="true">→</div>'
+      : '<div class="oh-value">' + esc(count) + "</div>";
     return (
-      '<button type="button" class="nav-card" data-go="' + goTo + '">' +
+      '<button type="button" class="oh-card" data-go="' + goTo + '">' +
       badge +
-      "<strong>" + esc(title) + "</strong>" +
-      '<span class="count">' + esc(count) + "</span>" +
-      '<span class="sub">' + esc(sub) + "</span></button>"
+      '<div class="oh-label">' + esc(title) + "</div>" +
+      val +
+      '<div class="oh-meta">' + esc(sub) + "</div></button>"
     );
   }
 

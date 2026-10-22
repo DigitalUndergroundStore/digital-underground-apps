@@ -465,7 +465,6 @@
     "pitchShort": "Control live radio, your own music and a timer with hand gestures in front of your camera. Pinch to play, circle to change station, swipe for volume. Early Access.",
     "descriptionLong": "Airhand turns the camera on your phone, tablet or computer into a hands-free remote.\n\nRadio: draw a slow circle with one finger to change the station, pinch your thumb and index finger to play or pause, hold up an open palm to stop, and swipe up or down to change the volume. Live stations from Canada and 20 other countries. If a station can't play, Airhand offers the next one.\n\nMy Music: add songs from your device and control them with the same gestures. Your songs stay on your device.\n\nTimer: a countdown and a stopwatch. Pinch to start or pause, swipe to add or remove a minute, and show an open palm to reset.\n\nNew in v1.1: a gesture settings panel (swipe sensitivity and the pause after a swipe), a short practice checklist the first time you use the camera, a status dot that shows when Airhand is ready, and a fix so moving your hand back after a swipe no longer counts as a second swipe.\n\nHand tracking runs on your device. The camera picture is never recorded or uploaded. Every gesture also has a tap button.\n\nAirhand is in testing (Early Access), so expect some rough edges. It needs a license key from Gumroad; future updates are included.",
     "projectUrl": "https://airhand.pages.dev/",
-    "buyUrl": "https://kerzy.gumroad.com/l/fifcuh",
     "imageUrl": "https://digitalundergroundstore.com/community/media/airhand-cover.jpg?v=20261022",
     "tags": [
       "hand-gestures",
@@ -475,6 +474,7 @@
       "camera",
       "pwa"
     ],
-    "priceLabel": "CA$6.99"
+    "priceLabel": "CA$6.99",
+    "comingSoon": true
   }
 ]

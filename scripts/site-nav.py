@@ -73,14 +73,15 @@ def apply(s, header=True):
         else: s = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + "\n" + NAV, s, count=1)
     s = JSRE.sub("", s)                       # site-nav.js only inside the header block
     s = NAVRE.sub(lambda m: NAV, s, count=1)
-    if CSSRE.search(s): s = CSSRE.sub(CSS + "\n", s, count=1); s = s[:s.find(CSS) + len(CSS)] + CSSRE.sub("", s[s.find(CSS) + len(CSS):])
-    else: s = s.replace("</head>", CSS + "\n</head>", 1)
+    s = CSSRE.sub("", s); s = s.replace("</head>", CSS + "\n</head>", 1)
+    s = re.sub(r'\s*<header class="top">\s*<a class="brand" href="/store/">Digital Underground</a>\s*</header>', '', s)  # old text-only brand on /p/*
     s = FOOTRE.sub("", s)
     def conv(m):
         k = _notes(m.group(1))
         return ('<div class="duf-notes">' + "".join(k) + "</div>") if k else ""
     s = OLDFOOT.sub(conv, s)
-    i = s.rfind("</body>")
+    j = s.find("<!--/du-site-nav-->")  # the </body> of the page that holds the header (templates may hold other docs)
+    i = s.find("</body>", j) if j >= 0 else s.rfind("</body>")
     s = (s[:i].rstrip("\n") + "\n" + FOOT + "\n" + s[i:]) if i >= 0 else s + FOOT
     return s
 

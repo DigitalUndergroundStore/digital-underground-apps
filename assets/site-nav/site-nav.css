@@ -1,5 +1,5 @@
 :root{--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px;--control-h:40px;--control-h-lg:48px}
-/* Shared Digital Underground site header v3: logo · Marketplace · League · List your project free · account · menu (all sizes). */
+/* Shared Digital Underground site header v4: logo · Marketplace · League · Creators · Blog · List your project free · account. Under 960px the links move into the menu drawer. */
 .dun{position:sticky;top:0;z-index:60;background:rgba(7,6,15,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(139,92,246,.18);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0 0 20px}
 .dun *{box-sizing:border-box}
 .dun a,.dun button{white-space:nowrap}
@@ -25,26 +25,25 @@
 .dun-menu svg{width:22px;height:24px}.dun .dun-menu:hover{background:rgba(139,92,246,.14)}
 .dun-drawer{display:none}
 .dun-drawer.open{display:flex;flex-direction:column;gap:4px;padding:8px 16px 16px;border-top:1px solid rgba(139,92,246,.15)}
-@media (min-width:768px){.dun .dun-menu,.dun-drawer,.dun-drawer.open{display:none}}
+@media (min-width:960px){.dun .dun-menu,.dun-drawer,.dun-drawer.open{display:none}}
 .dun-drawer a,.dun-drawer button{display:block;text-align:left;color:#e9e6f5;padding:12px 12px;border-radius:12px;font:500 .95rem/1.2 Inter,system-ui,sans-serif;background:none;border:0;cursor:pointer;width:100%}
 .dun-drawer a:hover,.dun-drawer button:hover,.dun-drawer a[aria-current=page]{background:rgba(139,92,246,.14)}
 .dun-drawer hr{border:0;border-top:1px solid rgba(139,92,246,.18);margin:4px 0}
 .dun-x{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:80;padding:12px 16px;border-radius:999px;background:#1c1530;border:1px solid rgba(191,232,255,.4);color:#fff;font:500 14px Inter,system-ui,sans-serif}
-@media (max-width:767px){.dun-links{display:none}}
+@media (max-width:959px){.dun-links{display:none}}
+@media (min-width:960px) and (max-width:1099px){.dun-links{margin-left:4px}.dun-user .nm{display:none}.dun .dun-user{padding:4px}}
 @media (max-width:900px){.dun-in{padding:8px 16px;gap:8px}.dun-logo img{height:32px}}
 @media (max-width:480px){.dun-cta{padding:8px 8px;font-size:.74rem}.dun-logo .dun-full{display:none}.dun-logo .dun-mark{display:block}.dun-user .nm{display:none}.dun .dun-user{padding:4px}.dun-signin{font-size:.78rem;padding:8px 4px}}
 @media (max-width:359px){.dun-cta{display:none}}
 @media (prefers-reduced-motion:reduce){.dun-links a{transition:none}}
 .dun .dun-logo img{max-width:none;border:0;border-radius:0;margin:0}
 .dun a{text-decoration:none}
-.dun-foot{margin:32px auto 0;padding:20px 16px 32px;text-align:center;font:400 .9rem/1.8 Inter,system-ui,sans-serif;color:#a3a3bd}
-.dun-foot a,.dun-foot button{color:#c9c4e0;white-space:nowrap;text-decoration:none;background:none;border:0;padding:0;font:inherit;cursor:pointer}.dun-foot a:hover,.dun-foot button:hover{color:#fff}
 /* Store music toggle inside the shared header */
 .dun .sx-music{position:relative!important;inset:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:38px;height:40px;flex:none;box-shadow:none;border:1px solid rgba(196,181,253,.25);background:rgba(255,255,255,.04)}
 .dun .sx-music svg{width:18px;height:20px}.dun .sx-music.is-on{background:linear-gradient(135deg,rgba(124,58,237,.85),rgba(79,70,229,.85))}
 @media (max-width:400px){.dun .sx-music{width:34px;height:32px}.dun-right:has(.sx-music) .dun-signin{display:none}}
-/* Shared site footer */
-.duf{margin-top:64px;border-top:1px solid rgba(139,92,246,.18);background:radial-gradient(900px 300px at 10% 0,rgba(124,58,237,.14),transparent 70%),radial-gradient(700px 260px at 100% 100%,rgba(34,211,238,.08),transparent 70%),#0a0815;color:#c8c8d8;font:400 14.5px/1.55 Inter,system-ui,sans-serif;text-align:left}
+/* Shared site footer (static <!--du-site-foot--> block from scripts/site-nav.py) */
+.duf{position:relative;z-index:1;display:block;width:auto;max-width:none;padding:0;box-shadow:none;border-left:0;border-right:0;border-bottom:0;margin:64px 0 0;border-top:1px solid rgba(139,92,246,.18);background:radial-gradient(900px 300px at 10% 0,rgba(124,58,237,.14),transparent 70%),radial-gradient(700px 260px at 100% 100%,rgba(34,211,238,.08),transparent 70%),#0a0815;color:#c8c8d8;font:400 14.5px/1.55 Inter,system-ui,sans-serif;text-align:left}
 .duf-in{max-width:1200px;margin:0 auto;padding:48px 24px 32px;display:grid;gap:40px;grid-template-columns:minmax(0,1fr)}
 @media (min-width:900px){.duf-in{grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr);gap:64px}}
 .duf-logo{display:inline-flex;align-items:center;gap:16px;text-decoration:none}
@@ -68,7 +67,7 @@
 .duf-social a{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;border:1px solid rgba(196,181,253,.25);background:rgba(255,255,255,.03)}
 .duf-social a:hover{border-color:#a78bfa;background:rgba(139,92,246,.15)}
 .duf-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
-@media (min-width:600px){.duf-cols{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:760px){.duf-cols{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}}
 .duf-col h3{margin:0 0 12px;color:#fff;font:700 13px/1.2 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase}
 .duf-col ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .duf-col a,.duf-col button{white-space:normal;text-align:left;font:inherit;color:#c8c8d8;background:none;border:0;padding:0;cursor:pointer}
@@ -81,3 +80,12 @@
 .dun-drawer .dun-share-btn{margin-top:8px;text-align:center;color:#fff;font-weight:600;background:linear-gradient(135deg,#7c3aed,#0891b2);box-shadow:0 6px 20px rgba(124,58,237,.35)}.dun-drawer .dun-share-btn:hover{background:linear-gradient(135deg,#8b5cf6,#06b6d4)}
 
 .dun-user .av.has-img{overflow:hidden;background:#0b0d10}.dun-user .av.has-img img{width:100%;height:100%;object-fit:cover;display:block}.dun-user .av.mark img{object-fit:contain;padding:2px;box-sizing:border-box}
+/* Shared footer: neutralise page-level element styles (form/button/input/label rules on individual pages) */
+.duf form{display:block;max-width:none;margin:0;padding:0;background:none;border:0;gap:0}
+.duf button{box-shadow:none;text-transform:none;letter-spacing:normal;min-height:0}.duf .duf-row button{min-height:48px}
+.duf .duf-ck input{padding:0;border:0;background:none}
+.duf h3{text-shadow:none}.duf p{max-width:none}.duf ul{margin:0}.duf li{margin:0;color:inherit}
+/* Page-specific credits / badges kept just above the shared footer */
+.duf-notes{position:relative;z-index:1;max-width:1200px;margin:48px auto 0;padding:0 24px;text-align:center;font:400 12px/1.6 Inter,system-ui,sans-serif;color:#8b8aa3}
+.duf-notes p{margin:8px 0}.duf-notes a{color:#a3a3bd}.duf-notes+.duf{margin-top:24px}
+.duf{padding:0!important;border-radius:0;backdrop-filter:none;-webkit-backdrop-filter:none}

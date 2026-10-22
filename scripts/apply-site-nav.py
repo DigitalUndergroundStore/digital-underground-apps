@@ -1,54 +1,35 @@
 #!/usr/bin/env python3
-"""Write the one shared DU header (between <!--du-site-nav--> markers) into every page and generator.
-Pages with their own legacy headers (homepage, store, blog, creator pages) are converted to it.
-Run after editing NAV below. Behaviour lives in /assets/site-nav/site-nav.js, styles in site-nav.css."""
-import pathlib, re, sys
+"""Stamp the ONE shared DU header + footer (defined in scripts/site-nav.py) into every site page and generator template.
+Header: <!--du-site-nav-->...<!--/du-site-nav-->, footer: <!--du-site-foot-->...<!--/du-site-foot-->.
+Run after editing NAV/FOOT in site-nav.py. Standalone apps (pantry-week/, get/, games/, ...) are never touched."""
+import importlib.util, pathlib, re
 R = pathlib.Path(__file__).resolve().parent.parent
-MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'
-NAV = ('<!--du-site-nav--><header class="dun"><div class="dun-in">'
-  '<a class="dun-logo" href="/store/" aria-label="Digital Underground store home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a>'
-  '<nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a></nav>'
-  '<div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a>'
-  '<div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div>'
-  f'<button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false">{MENU}</button></div></div>'
-  '<nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav>'
-  '</header><script src="/assets/site-nav/site-nav.js?v=6" defer></script><!--/du-site-nav-->')
-CSS = '<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=11">'
-MARK = re.compile(r"<!--du-site-nav-->.*?<!--/du-site-nav-->", re.S)
-JS = re.compile(r'\s*<script src="/assets/site-nav/site-nav\.js\?v=\d+" defer></script>')
-CSSRE = re.compile(r'<link rel="stylesheet" href="/assets/site-nav/site-nav\.css\?v=\d+">')
+_spec = importlib.util.spec_from_file_location("site_nav", R / "scripts/site-nav.py"); sn = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(sn)
 
-def fix(s, legacy=None):
-    if legacy and "<!--du-site-nav-->" not in s:
-        s, n = re.subn(legacy, "<!--du-site-nav--><!--/du-site-nav-->", s, count=1, flags=re.S)
-        if not n: return None
-    if "<!--du-site-nav-->" not in s: return None
-    s = JS.sub("", s)  # one include only (double includes cancelled each other's toggle)
-    s = MARK.sub(lambda m: NAV, s, count=1)
-    if CSSRE.search(s): s = CSSRE.sub(CSS, s)
-    else: s = s.replace("</head>", CSS + "\n</head>", 1)
-    return s
-
-LEGACY = {
-  "index.html": r'<!-- Header -->\s*<header class="header" id="header">.*?</header>',
-  "src/home-v3/index.template.html": r'<!-- Header -->\s*<header class="header" id="header">.*?</header>',
-  "store/index.html": r'<header class="sx-header" id="sxHeader">.*?</header>',
-  "scripts/gen-blog.py": r'<header class="nav">.*?<div id="overlay" hidden></div>',
-  "blog/index.html": r'<header class="nav">.*?<div id="overlay" hidden></div>',
-  "functions/makers/[[path]].js": r'<header class="nav">.*?<div id="overlay" hidden></div>',
+# Self-contained apps and Kerzy Labs games: never add DU site chrome.
+SKIP_DIRS = {"node_modules", "dist", ".git", ".wrangler", "games", "get", "downloads", "pantry-week", "box-and-go", "cork", "due-desk", "exam-desk",
+  "focus-gate", "hook-bank", "invoice-desk", "launch-ledger", "offer-desk", "packlane", "planetview", "promo-lane", "rate-wire", "reply-forge",
+  "scope-lock", "session-forge", "streak-kit", "grokmate", "promo", "owner"}
+SKIP_FILES = {"scripts/apply-site-nav.py", "scripts/site-nav.py", "community/admin.html", "community/index.html", "google3b2bd1b363483359.html"}
+# Site pages that had their own header: page-specific clean-up before the shared header is added at the top of <body>.
+PRE = {
+  "community/dashboard/index.html": [],  # app topbar stays as the dashboard's sub-bar (see dashboard.css)
+  "login/index.html": [],
 }
-files = [p for p in R.rglob("*") if p.suffix in (".html", ".py", ".js") and p.is_file() and not any(x in p.parts for x in ("node_modules", "dist", ".git", ".wrangler"))]
+GEN = {"scripts/gen-blog.py", "functions/makers/[[path]].js", "src/home-v3/index.template.html"}  # templates holding the markers
+
 changed = []
-for p in files:
+for p in sorted(R.rglob("*")):
+    if p.suffix not in (".html", ".py", ".js") or not p.is_file(): continue
     rel = str(p.relative_to(R))
-    if rel in ("scripts/apply-site-nav.py", "scripts/site-nav.py"): continue  # site-nav.py builds its own header; rewriting it broke its </head> literal
+    if rel in SKIP_FILES or (len(p.relative_to(R).parts) > 1 and p.relative_to(R).parts[0] in SKIP_DIRS) or any(x in ("node_modules", ".git", ".wrangler", "dist") for x in p.relative_to(R).parts): continue
+    if p.suffix != ".html" and rel not in GEN: continue
     s = p.read_text(errors="ignore")
-    leg = LEGACY.get(rel) or (LEGACY["blog/index.html"] if rel.startswith("blog/") and rel.endswith(".html") else None)
-    if "<!--du-site-nav-->" not in s and not leg: continue
-    out = fix(s, leg)
-    if out is None: print("SKIP (pattern not found):", rel); continue
+    if "<!--du-site-nav-->" not in s and rel not in PRE: continue
+    for a, b in PRE.get(rel, []): s = re.sub(a, b, s, count=1, flags=re.S)
+    out = sn.apply(s)
     if rel == "store/index.html":  # keep the store's music toggle in the shared header
         mus = (R / "scripts/store-music-button.html").read_text().strip()
         if 'id="hero-music"' not in out.split("<!--/du-site-nav-->")[0]: out = out.replace('<div class="dun-right">', '<div class="dun-right">' + mus, 1)
-    if out != s: p.write_text(out); changed.append(rel)
+    if out != p.read_text(errors="ignore"): p.write_text(out); changed.append(rel)
 print(len(changed), "files updated"); print("\n".join(changed))

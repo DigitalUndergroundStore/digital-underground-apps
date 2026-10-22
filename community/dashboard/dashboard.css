@@ -371,3 +371,9 @@ label.btn:focus-within, input.sr-only:focus-visible + .btn { outline: 2px solid 
 .hint { font-size: 12.5px; color: var(--muted); }
 
 .chip-maker{display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.08);margin-right:6px}
+
+/* Shared DU site header (site-nav) sits above the dashboard's own bar: the app bar keeps the sticky slot and the account menu. */
+.dash .dun { position: relative; margin: 0; }
+.dash .dun-acct { display: none; }
+.dash .tb-brand .du-logo { display: none; }
+.dash .tb-brand .du-logo-sub { font-size: 15px; font-weight: 600; color: var(--text, #fff); }

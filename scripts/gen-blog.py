@@ -97,9 +97,10 @@ def shell(title, desc, canonical, body, jsonld, ogtype="article", img=None):
 <meta name="twitter:image" content="{img or IMG}">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="/community/wolf.css?v=6">
+<link rel="stylesheet" href="/community/wolf.css?v=7">
 <link rel="stylesheet" href="/blog/blog.css?v=2">
 <link rel="stylesheet" href="/blog/blog-v2.css?v=2">
+<link rel="stylesheet" href="/blog/blog-v3.css?v=1">
 <script src="/community/nav.js?v=1" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
@@ -140,10 +141,24 @@ for p in POSTS:
             f'<aside class="b2-related" aria-labelledby="more-t"><h2 id="more-t">More from the blog</h2><ul class="b2-grid">{rel}</ul></aside>')
     d = R / "blog" / p["slug"]; d.mkdir(exist_ok=True)
     (d / "index.html").write_text(shell(p["title"] + " | Digital Underground", p["desc"], url, body, ld, img=O + hero(p)))
+BADGE = '<span class="bw-brand"><img src="/assets/logo/du-mark.svg" alt="" width="18" height="18">Digital Underground</span>'
+def wmeta(q):
+    return f'<p class="bw-meta">{AUTH} · <time datetime="{q["date"]}">{DATE(q)}</time> · {mins(q)} min read</p>'
+def wimg(q):
+    f = R / "blog/media/wolf" / (q["slug"] + ".jpg")
+    return f"/blog/media/wolf/{q['slug']}.jpg" if f.exists() else hero(q)
+def wfeat(q):
+    short = q["title"].split(" (")[0]
+    return (f'<a class="bw-feat" href="/blog/{q["slug"]}/"><div class="bw-fv"><img src="{wimg(q)}" alt="" width="1600" height="900" loading="eager" fetchpriority="high">'
+            f'<span class="bw-ov" aria-hidden="true"></span>{BADGE}{f'<p class="bw-ft" aria-hidden="true">{e(short)}</p>' if wimg(q) != hero(q) else ""}</div>'
+            f'<div class="bw-fc"><p class="bw-fl">Featured</p><h2>{e(q["title"])}</h2><p class="bw-ex">{e(q["desc"])}</p>{wmeta(q)}</div></a>')
+def wcard(q):
+    return (f'<li><a class="bw-card" href="/blog/{q["slug"]}/"><div class="bw-cv"><img src="{wimg(q)}" alt="" width="1600" height="900" loading="lazy">{BADGE}</div>'
+            f'<div class="bw-cb"><h3>{e(q["title"])}</h3><p class="bw-ex">{e(q["desc"])}</p>{wmeta(q)}</div></a></li>')
 feat = POSTS[0]
-items = card(feat, "feat") + "".join(card(q, "") for q in POSTS[1:])
+items = wfeat(feat) + '<ul class="bw-grid">' + "".join(wcard(q) for q in POSTS[1:]) + "</ul>"
 ld = {"@context": "https://schema.org", "@type": "Blog", "name": "Digital Underground Blog", "url": O + "/blog/", "publisher": PUB,
       "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": f"{O}/blog/{p['slug']}/", "datePublished": p["date"]} for p in POSTS]}
 (R / "blog/index.html").write_text(shell("Blog | Digital Underground", "Guides for makers and buyers: how the Developer Marketplace works, how to list your product, and how to get the most from your creator page.",
-    O + "/blog/", '<div class="hero b2-top"><p class="b2-kicker">Digital Underground Blog</p><h1>Guides for indie makers</h1><p class="lede">How the Developer Marketplace works, how to list your project, and how to get found.</p></div><ul class="b2-grid b2-index">' + items + "</ul>", ld, "website"))
+    O + "/blog/", '<div class="bw"><p class="bw-eye">Digital Underground Blog</p><h1>Guides for indie makers</h1><p class="bw-lead">How the Developer Marketplace works, how to list your project, and how to get found.</p>' + items + "</div>", ld, "website"))
 print(len(POSTS), "posts")

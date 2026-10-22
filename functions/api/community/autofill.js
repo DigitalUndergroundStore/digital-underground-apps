@@ -69,7 +69,7 @@ const attr = (tag, name) => { const m = tag.match(new RegExp(`\\b${name}\\s*=\\s
 // "GitHub - owner/repo: long description" -> "owner/repo"; "Long title | Site" -> "Long title".
 function cleanName(t, site) {
   t = String(t || "").trim(); site = String(site || "").trim();
-  if (site && t.toLowerCase() !== site.toLowerCase()) {
+  if (site && t.length > 60 && t.toLowerCase() !== site.toLowerCase()) {
     const q = site.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     t = t.replace(new RegExp(`^${q}\\s*[-–—|·:]\\s*`, "i"), "").replace(new RegExp(`\\s*[-–—|·]\\s*${q}$`, "i"), "").trim() || t;
   }

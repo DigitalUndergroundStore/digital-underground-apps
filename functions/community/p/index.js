@@ -43,6 +43,7 @@ export async function onRequestGet(context) {
     let img = publicImageUrl(row) || "";
     if (img.startsWith("/")) img = SITE + img;
     if (!/^https:\/\//i.test(img)) img = "";
+    if (!img && !isKerzy(row, id)) img = `${SITE}/community/og-dm-v3.jpg`; // marketplace card as the share image fallback
     const url = `${SITE}/community/p/?id=${encodeURIComponent(id)}`;
     const title = `${row.name} — Developer Marketplace — Digital Underground`;
     const desc = String(row.pitchShort || "").replace(/[^\s@<>"]+@gmail\.com/gi, "").slice(0, 300);

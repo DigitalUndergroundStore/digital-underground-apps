@@ -1,13 +1,19 @@
 /**
- * GET /api/nav → { owner: boolean, creator: { name } | null }. Owner Dashboard link + the signed-in maker's menu.
- * Owner = valid owner-dashboard session cookie, or a creator session cookie for the account that
- * owns Pantry Week (Donald). Never returns secrets; always 200 so normal visitors see no errors.
+ * GET /api/nav → { owner, isOwner: boolean, creator: { name } | null }. Owner link + the signed-in maker's menu.
+ * isOwner = a real creator session cookie (not a manage link) whose account email matches env.OWNER_EMAIL
+ * (fallback: a SHA-256 of the owner email, so the address is not in the source). The email is never
+ * returned. This only controls the link; /owner/ and /api/owner/* are protected by the owner passcode session.
  */
-import { getKv, json, kvGetListing } from "../_lib/community.js";
-import { ownerAuthorized } from "../_lib/owner.js";
-import { authCreatorEx } from "../_lib/creator.js";
+import { getKv, json, kvGetListing, normalizeEmail } from "../_lib/community.js";
+import { authCreatorEx, sha256Hex } from "../_lib/creator.js";
 
-const OWNER_LISTING = "cm_mv8qdn7s_d433793b";
+const OWNER_EMAIL_HASH = "468ac153ac2d92cc5593af403ae7024ccb4c3ccf7ca6bd4f18eb0b2be00d85ac"; // sha256("owner|" + owner email)
+async function isOwnerEmail(env, email) {
+  const e = normalizeEmail(email || "");
+  if (!e) return false;
+  if (env.OWNER_EMAIL) return e === normalizeEmail(env.OWNER_EMAIL);
+  return (await sha256Hex("owner|" + e)) === OWNER_EMAIL_HASH;
+}
 const H = { "Cache-Control": "private, no-store", Vary: "Cookie" };
 
 export async function onRequestGet({ request, env }) {
@@ -15,7 +21,6 @@ export async function onRequestGet({ request, env }) {
   try {
     // Cookie-only: ignore any Authorization header so the link can't be unlocked by a pasted token.
     const req = new Request(request.url, { headers: { Cookie: request.headers.get("Cookie") || "" } });
-    if (await ownerAuthorized(req, env)) owner = true;
     if (/du_creator=/.test(req.headers.get("Cookie"))) {
       const kv = getKv(env);
       const who = kv ? await authCreatorEx(req, env, kv) : null;
@@ -24,13 +29,10 @@ export async function onRequestGet({ request, env }) {
         for (const id of (who.acct.listingIds || []).slice(0, 3)) { const r = await kvGetListing(kv, id); if (r && r.makerName) { name = r.makerName; break; } }
         creator = { name: String(name || "My account").slice(0, 40) };
       }
-      if (!owner && who && who.via !== "link") {
-        const row = await kvGetListing(kv, OWNER_LISTING);
-        owner = !!row && row.creatorId === who.acct.id;
-      }
+      if (who && who.via === "cookie") owner = await isOwnerEmail(env, who.acct.email);
     }
   } catch {
     owner = false;
   }
-  return json({ owner, creator }, 200, H);
+  return json({ owner, isOwner: owner, creator }, 200, H);
 }

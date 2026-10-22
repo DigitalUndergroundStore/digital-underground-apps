@@ -67,12 +67,12 @@
     // Account: Sign in, or the signed-in maker's name with a dropdown.
     var acct = document.getElementById("dunAcct");
     if (acct) fetch("/api/nav", { credentials: "same-origin", cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (n) {
-      if (!n || !n.creator) { if (n && n.owner) acct.insertAdjacentHTML("afterbegin", '<a class="dun-signin" href="/owner/" data-owner-link>Owner</a>'); return; }
+      if (!n || !n.creator) { if (n && n.isOwner) acct.insertAdjacentHTML("afterbegin", '<a class="dun-signin" href="/owner/" data-owner-link>Owner</a>'); return; }
       var nm = n.creator.name || "My account";
       acct.innerHTML = '<button type="button" class="dun-user" aria-haspopup="true" aria-expanded="false" aria-controls="dunPop"><span class="av" aria-hidden="true"></span><span class="nm"></span></button><div class="dun-pop" id="dunPop" role="menu"></div>';
       ub = acct.querySelector(".dun-user"); pop = acct.querySelector(".dun-pop");
       ub.querySelector(".av").textContent = nm.charAt(0).toUpperCase(); ub.querySelector(".nm").textContent = nm; ub.setAttribute("aria-label", "Account menu for " + nm);
-      pop.innerHTML = '<a role="menuitem" href="/community/dashboard/">Dashboard</a><button type="button" role="menuitem" data-signout>Log out</button>';
+      pop.innerHTML = (n.isOwner ? '<a role="menuitem" href="/owner/" data-owner-link>Owner</a>' : '') + '<a role="menuitem" href="/community/dashboard/">Dashboard</a><button type="button" role="menuitem" data-signout>Log out</button>';
       ub.addEventListener("click", function (e) { e.stopPropagation(); var o = pop.classList.toggle("open"); ub.setAttribute("aria-expanded", o ? "true" : "false"); if (d) close(d, b); });
       pop.querySelector("[data-signout]").addEventListener("click", function () { fetch("/api/community/creator?action=signout", { method: "POST", credentials: "same-origin" }).finally(function () { location.reload(); }); });
     });

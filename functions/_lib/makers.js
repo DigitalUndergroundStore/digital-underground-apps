@@ -25,6 +25,12 @@ export const SEED = {
     logo: "/makers/media/wolfitway-logo.webp", banner: "/makers/media/wolfitway-banner.webp",
     website: "https://wolfitway.com", socials: { x: "https://x.com/Wolfitway" }, featured: true,
   },
+  "digital-underground": {
+    slug: "digital-underground", name: "Digital Underground",
+    bio: "Small, useful apps, tools and books made in Ontario, Canada. Buy once on Gumroad, no subscriptions.",
+    logo: "/makers/media/digital-underground-logo.webp", banner: "/makers/media/digital-underground-banner.webp",
+    website: "https://digitalundergroundstore.com/", socials: {},
+  },
   "kerzy-labs": {
     slug: "kerzy-labs", name: "Kerzy Labs",
     bio: "Neon arcade games you play right in your browser. No download, no sign-up.",

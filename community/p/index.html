@@ -83,7 +83,7 @@
     document.getElementById("crumb-name").textContent = l.name;
     var host = ""; try { host = new URL(l.projectUrl).hostname.replace(/^www\./, ""); } catch (_) {}
     var x = l.xHandle ? ' · <a href="https://x.com/' + esc(l.xHandle) + '" target="_blank" rel="noopener">@' + esc(l.xHandle) + "</a>" : "";
-    var ms = l.makerSlug && /^[a-z0-9-]{1,48}$/.test(l.makerSlug) ? l.makerSlug : /^cm_kerzy_/.test(l.id || "") ? "kerzy-labs" : /^wolfitway$/i.test(l.makerName || "") ? "wolfitway" : "";
+    var ms = l.makerSlug && /^[a-z0-9-]{1,48}$/.test(l.makerSlug) ? l.makerSlug : /^cm_kerzy_/.test(l.id || "") ? "kerzy-labs" : /^wolfitway$/i.test(l.makerName || "") ? "wolfitway" : /^digital\s*underground$/i.test(l.makerName || "") ? "digital-underground" : "";
     var mk = ms ? '<a href="/makers/' + ms + '/">' + esc(l.makerName) + "</a>" : esc(l.makerName);
     var tags = (l.tags || []).map(function (t) { return '<span class="chip2">#' + esc(t) + "</span>"; }).join("");
     out.innerHTML =
@@ -95,7 +95,7 @@
         (l.stage && l.stage !== 'Released' ? '<p style="margin:6px 0 0"><span class="stage-badge" style="display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid rgba(251,191,36,.55);background:rgba(251,191,36,.12);color:#fcd34d;font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;width:max-content">' + esc(l.stage) + "</span></p>" : "") +
         '<p class="dt-pitch">' + esc(l.pitchShort) + "</p>" +
         '<div class="chips2"><span class="chip2 price">' + price + "</span>" + (l.category ? '<span class="chip2 cat">' + esc(CATS[l.category] || l.category) + "</span>" : "") + tags + "</div>" +
-        '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button>" + "</div>" +
+        '<div class="dt-cta" id="cta">' + (l.buyUrl ? '<a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + esc(l.buyUrl) + '" target="_blank" rel="noopener">Buy on Gumroad · ' + price + EXT + '</a><a class="btn2" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Open the app' + EXT + '</a>' : '<a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a>') + '<button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button>" + "</div>" +
         (l.contactable ? '<section class="panel" id="contact-panel" hidden><h2>Contact the developer</h2><p class="muted small" style="margin:0 0 10px">Your message goes privately to ' + esc(l.makerName) + '. They can reply to your email.</p><form id="contact-form" novalidate style="display:grid;gap:10px">' +
           '<label class="small">Name<input name="name" required maxlength="100" autocomplete="name" style="display:block;width:100%;margin-top:4px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"></label>' +
           '<label class="small">Email<input name="email" type="email" required maxlength="200" autocomplete="email" style="display:block;width:100%;margin-top:4px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.25);color:inherit;font:inherit"></label>' +
@@ -110,7 +110,7 @@
           (l.category ? "<div><dt>Category</dt><dd>" + esc(CATS[l.category] || l.category) + "</dd></div>" : "") +
           "<div><dt>Maker</dt><dd>" + mk + (ms ? ' · <a href="/makers/' + ms + '/">See all by this maker</a>' : "") + "</dd></div>" +
           (host ? "<div><dt>Website</dt><dd>" + esc(host) + "</dd></div>" : "") +
-        '</dl><a class="btn2 primary" style="width:100%;margin-top:14px" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit site' + EXT + "</a></section>" +
+        '</dl><a class="btn2 primary" style="width:100%;margin-top:14px" data-out="' + esc(l.id) + '" href="' + (l.buyUrl ? esc(l.buyUrl) : href) + '" target="_blank" rel="noopener">' + (l.buyUrl ? "Buy on Gumroad" : "Visit site") + EXT + "</a></section>" +
         '<p class="muted small" style="margin:12px 4px 0">Listed free on the Digital Underground Developer Marketplace. Purchases happen on the maker\'s site.</p>' +
         '<p style="margin:10px 4px 0"><button type="button" id="report-btn" aria-expanded="false" aria-controls="report-panel" style="background:none;border:0;padding:4px 0;color:#94a3b8;font:500 12px/1.4 ui-sans-serif,system-ui,sans-serif;text-decoration:underline;cursor:pointer">&#9873; Report</button></p>' +
         '<section class="panel" id="report-panel" hidden style="margin-top:8px"><h2>Report this listing</h2><form id="report-form" novalidate style="display:grid;gap:10px">' +
@@ -121,7 +121,7 @@
       "</aside></div>";
     initGallery(l);
     var st = document.getElementById("sticky");
-    st.innerHTML = '<div class="s-meta"><b>' + esc(l.name) + "</b><span>" + price + '</span></div><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener" tabindex="-1">Visit' + EXT + "</a>";
+    st.innerHTML = '<div class="s-meta"><b>' + esc(l.name) + "</b><span>" + price + '</span></div><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + (l.buyUrl ? esc(l.buyUrl) : href) + '" target="_blank" rel="noopener" tabindex="-1">' + (l.buyUrl ? "Buy" : "Visit") + EXT + "</a>";
     var cta = document.getElementById("cta");
     if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { var show = !e[0].isIntersecting && e[0].boundingClientRect.top < 0; st.classList.toggle("show", show); st.setAttribute("aria-hidden", String(!show)); }).observe(cta);
     document.getElementById("share").addEventListener("click", function () {

@@ -29,6 +29,7 @@
   function makerSlug(row) {
     if (row.makerSlug && /^[a-z0-9-]{1,48}$/.test(row.makerSlug)) return row.makerSlug;
     if (/^cm_kerzy_/.test(row.id || "")) return "kerzy-labs";
+    if (/^digital\s*underground$/i.test(row.makerName || "")) return "digital-underground";
     return /^wolfitway$/i.test(row.makerName || "") ? "wolfitway" : "";
   }
   function makerHTML(row) { var s = makerSlug(row); return s ? '<a href="/makers/' + s + '/">' + esc(row.makerName) + "</a>" : esc(row.makerName); }
@@ -43,7 +44,8 @@
       '<p class="desc">' + esc(row.pitchShort) + "</p>" +
       '<div class="foot-row"><span class="price">' + esc(row.priceLabel || "See site") + '</span><div class="acts">' +
       (row.contactable ? '<a class="pill pill-o" href="' + href + '#contact" aria-label="Contact the developer of ' + name + '">Contact</a>' : "") +
-      '<a class="pill pill-v" data-out="' + esc(row.id) + '" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener" aria-label="Visit ' + name + ' (opens in a new tab)">Visit</a></div></div></div></article>';
+      '(row.buyUrl ? '<a class="pill pill-v" data-out="' + esc(row.id) + '" href="' + esc(row.buyUrl) + '" target="_blank" rel="noopener" aria-label="Buy ' + name + ' on Gumroad (opens in a new tab)">Buy</a>' : "") +
+      '<a class="pill ' + (row.buyUrl ? "pill-o" : "pill-v") + '" data-out="' + esc(row.id) + '" href="' + esc(row.visitUrl || row.projectUrl) + '" target="_blank" rel="noopener" aria-label="Visit ' + name + ' (opens in a new tab)">Visit</a></div></div></div></article>';
   }
   function tilt(li) {
     if (li._tilt) return; li._tilt = 1;

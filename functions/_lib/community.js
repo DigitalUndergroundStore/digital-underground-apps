@@ -9,7 +9,7 @@ export const CATEGORIES = ["apps", "ai-tools", "games", "books", "templates", "o
 /** Listing stage chosen by the maker. Stored as the display label. Missing = Released. */
 export const STAGES = { concept: "Concept", development: "In development", beta: "Beta / testing", released: "Released", discontinued: "Discontinued" };
 const STAGE_LABELS = Object.values(STAGES);
-const LEGACY_STAGES = ["In testing / development"]; // owner seed listings
+const LEGACY_STAGES = ["In testing / development", "In testing"]; // owner seed listings
 /** Accepts a stage key ("beta") or label ("Beta / testing"); returns the label or "" if invalid. */
 export function normalizeStage(raw) {
   if (typeof raw !== "string") return "";
@@ -313,6 +313,8 @@ export function publicListing(row) {
     images: publicImages(row),
     visitUrl: row.visitUrl || appendRefParam(row.projectUrl),
     projectUrl: row.projectUrl,
+    // Owner-set only: a Gumroad buy link shown as its own button (https://*.gumroad.com only).
+    buyUrl: typeof row.buyUrl === "string" && /^https:\/\/([a-z0-9-]+\.)?gumroad\.com\//i.test(row.buyUrl) ? row.buyUrl : null,
     tags: Array.isArray(row.tags) ? row.tags : [],
     video: row.videoUrl ? mediaFor(row.videoUrl, row.videoFile) : null,
     stage: displayStage(row),

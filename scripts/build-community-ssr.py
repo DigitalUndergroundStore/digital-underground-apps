@@ -69,10 +69,11 @@ for i, r in enumerate(rows):
     if v.get("kind") == "file" and v.get("src"):
         med = f'<div class="media"><video class="card-vid" muted loop playsinline preload="none"' + (f' poster="{e(img)}"' if img else "") + f' src="{e(v["src"])}' + ("" if img else "#t=0.1") + f'" aria-label="{n} preview video"></video></div>'
     visit = e(r.get("visitUrl") or r.get("projectUrl"))
+    buy = (f'<a class="pill pill-v" data-out="{rid}" href="{e(r["buyUrl"])}" target="_blank" rel="noopener" aria-label="Buy {n} on Gumroad (opens in a new tab)">Buy</a>' if r.get("buyUrl") else "")
     out.append(f'<li class="card reveal" data-id="{rid}" data-globe-ignore style="animation-delay:{i*0.06:.2f}s"><article class="card-inner" aria-labelledby="t-{rid}">{med}'
                f'<div class="body"><div class="top"><div class="tt"><h3 id="t-{rid}"><a href="{href}">{n}</a></h3><p class="maker">{mk}{x}</p></div>{badge}</div>'
-               f'<p class="desc">{e(r.get("pitchShort"))}</p><div class="foot-row"><span class="price">{e(r.get("priceLabel") or "See site")}</span><div class="acts">{contact}'
-               f'<a class="pill pill-v" data-out="{rid}" href="{visit}" target="_blank" rel="noopener" aria-label="Visit {n} (opens in a new tab)">Visit</a></div></div></div></article></li>')
+               f'<p class="desc">{e(r.get("pitchShort"))}</p><div class="foot-row"><span class="price">{e(r.get("priceLabel") or "See site")}</span><div class="acts">{contact}{buy}'
+               f'<a class="pill {"pill-o" if buy else "pill-v"}" data-out="{rid}" href="{visit}" target="_blank" rel="noopener" aria-label="Visit {n} (opens in a new tab)">Visit</a></div></div></div></article></li>')
 p = R / "community/index.html"; s = p.read_text()
 s = re.sub(r"<!--ssr:start-->.*?<!--ssr:end-->", lambda m: "<!--ssr:start-->\n" + "\n".join(out) + "\n<!--ssr:end-->", s, flags=re.S)
 s = re.sub(r'(<p class="count"[^>]*>).*?(</p>)', lambda m: m.group(1) + f"<!--ssr:count-->{len(out)} projects" + m.group(2), s, flags=re.S)

@@ -106,7 +106,7 @@
         id: r.id, order: i, title: r.name || '', maker: r.makerName || '', makerSlug: makerSlug(r), x: r.xHandle || '',
         category: r.category || 'other', price: r.priceLabel || 'See site', desc: r.pitchShort || '',
         badge: stage || (r.curated ? 'Featured pick' : null), label: r.statusLabel ? String(r.statusLabel).slice(0, 24) : null,
-        url: r.visitUrl || r.projectUrl || '', page: SITE + '/community/p/?id=' + encodeURIComponent(r.id), img: r.imageUrl || '',
+        url: r.buyUrl || r.visitUrl || r.projectUrl || '', buy: !!r.buyUrl, page: SITE + '/community/p/?id=' + encodeURIComponent(r.id), img: r.imageUrl || '',
         tags: r.tags || [], contactable: r.contactable !== false, pv: nums.length ? Math.max(...nums) : 0
       };
     }
@@ -146,7 +146,7 @@
               <span class="card-price ${isFree(p) ? 'free' : ''}">${esc(p.price)}</span>
               <div class="card-actions">
                 ${p.contactable ? `<a href="${esc(p.page)}#contact" class="btn btn-ghost" aria-label="Contact the developer of ${esc(p.title)}">Contact</a>` : ''}
-                <a href="${esc(p.url)}" data-out="${esc(p.id)}" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Visit ${esc(p.title)} (opens in a new tab)">Visit</a>
+                <a href="${esc(p.url)}" data-out="${esc(p.id)}" class="btn btn-primary" target="_blank" rel="noopener" aria-label="${p.buy ? 'Buy' : 'Visit'} ${esc(p.title)}${p.buy ? ' on Gumroad' : ''} (opens in a new tab)">${p.buy ? 'Buy' : 'Visit'}</a>
               </div>
             </div>
           </div>`;

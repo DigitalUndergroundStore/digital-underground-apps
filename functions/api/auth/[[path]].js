@@ -20,6 +20,8 @@ import { accountForIdentity, checkTotp, configured, finishOAuth, limits, mfaTick
 const safeNext = (n) => (typeof n === "string" && /^\/(?!\/)[\w\-./?=&%#]*$/.test(n) ? n : "/community/dashboard/");
 const cookieOf = (req, name) => { for (const p of (req.headers.get("Cookie") || "").split(";")) { const i = p.indexOf("="); if (i > 0 && p.slice(0, i).trim() === name) return p.slice(i + 1).trim(); } return ""; };
 const redirect = (to, cookies = []) => { const h = new Headers({ Location: to, "Cache-Control": "no-store" }); for (const c of cookies) h.append("Set-Cookie", c); return new Response(null, { status: 302, headers: h }); };
+const mailReady = (env) => !!(env.RESEND_API_KEY || env.COMMUNITY_MAILCHANNELS === "1");
+const NO_MAIL_MSG = "Password reset by email is coming soon. Contact digitalunderground.store@proton.me for help.";
 const TOO_MANY = (m = 15) => json({ ok: false, error: `Too many attempts. Try again in ${m} minutes.` }, 429);
 
 async function signedIn(env, acct, extra = {}) {
@@ -36,7 +38,7 @@ export async function onRequest({ request, env, params }) {
   const [p, step] = path.split("/");
 
   if (request.method === "GET") {
-    if (path === "providers") return json({ google: configured(env, "google"), x: configured(env, "x") });
+    if (path === "providers") return json({ google: configured(env, "google"), x: configured(env, "x"), resetEmail: mailReady(env) });
     if (path === "security") {
       const acct = await authCreator(request, env, kv);
       if (!acct) return json({ ok: false, error: "Log in first." }, 401);
@@ -143,6 +145,8 @@ export async function onRequest({ request, env, params }) {
 
   if (path === "forgot") {
     const generic = json({ ok: true, message: "If that email has an account, a reset link is on its way. It works for 1 hour." });
+    // No mail provider: same answer for every email, and never claim a message was sent.
+    if (!mailReady(env)) return json({ ok: false, unavailable: true, message: NO_MAIL_MSG });
     if (!email) return json({ ok: false, error: "Enter a valid email." }, 400);
     if (!(await limits.forgot(env, ip, email)).ok) return TOO_MANY(60);
     const id = await accountIdForLogin(kv, email);

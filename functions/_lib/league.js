@@ -59,7 +59,7 @@ export async function eligible(origin) {
   try {
     const r = await fetch(`${origin}/api/community/listings`, { headers: { accept: "application/json" } });
     const d = await r.json();
-    return (d.listings || []).filter((l) => l && l.id && !l.hidden && !l.curated && l.name && !isKerzy(l) && !isOwnDU(l));
+    return (d.listings || []).filter((l) => l && l.id && !l.hidden && !l.curated && l.name && !isKerzy(l));
   } catch { return []; }
 }
 

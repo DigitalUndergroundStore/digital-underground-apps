@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('main .card, main .reel').forEach(function (c) { if (c.getBoundingClientRect().top > innerHeight) rev.observe(c); });
   }
-  // owner-only dashboard link (server-side cookie check, same as before); public visitors see nothing
+  // owner-only dashboard link (server-side session email check via /api/nav isOwner); public visitors see nothing
   fetch('/api/nav', { credentials: 'same-origin', cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
-    if (!d || d.owner !== true) return;
+    if (!d || d.isOwner !== true) return;
     var a = document.createElement('a'); a.href = '/owner/'; a.className = 'sx-owner'; a.textContent = 'Owner';
     var slot = $('sxOwner'); if (slot) { slot.appendChild(document.createTextNode(' · ')); slot.appendChild(a); }
   }).catch(function () {});

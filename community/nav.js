@@ -1,7 +1,7 @@
-/* Shows the Owner Dashboard link only when /api/nav confirms the owner (server-side cookie check). */
+/* Shows the Owner Dashboard link only when /api/nav says isOwner (server-side: signed-in creator session email == owner email; email never sent). */
 (function () {
   function add(d) {
-    if (!d || d.owner !== true || document.querySelector("[data-owner-link]")) return;
+    if (!d || d.isOwner !== true || document.querySelector("[data-owner-link]")) return;
     var site = document.querySelector('nav[aria-label="Site"]');
     if (site) {
       var a = document.createElement("a"); a.href = "/owner/"; a.textContent = "Owner Dashboard"; a.setAttribute("data-owner-link", "");

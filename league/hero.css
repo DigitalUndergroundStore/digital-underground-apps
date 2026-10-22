@@ -1,0 +1,31 @@
+/* Maker League hero highlight (marketplace root + store). */
+.lgh{position:relative;max-width:1100px;margin:28px auto 8px;border-radius:24px;padding:2px;background:linear-gradient(135deg,#facc15,#a78bfa 35%,#22d3ee 70%,#facc15);box-shadow:0 0 0 1px rgba(250,204,21,.25),0 24px 70px rgba(124,58,237,.35),0 0 60px rgba(34,211,238,.15);text-align:left;container-type:inline-size;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.lgh-in{position:relative;overflow:hidden;border-radius:22px;background:#0c0a1c;display:grid;grid-template-columns:1fr;min-height:0}
+.lgh-in::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.10) 50%,transparent 65%);transform:translateX(-100%);animation:lgh-shine 5.5s ease-in-out infinite;pointer-events:none}
+@keyframes lgh-shine{0%,55%{transform:translateX(-100%)}85%,100%{transform:translateX(100%)}}
+.lgh-media{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0b0918}
+.lgh-media img{width:100%;height:100%;object-fit:cover;display:block}
+.lgh-body{position:relative;z-index:1;padding:20px 20px 22px;display:flex;flex-direction:column;gap:10px}
+.lgh-badge{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,#fde047,#f59e0b);color:#1c1300;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;box-shadow:0 6px 20px rgba(250,204,21,.35)}
+.lgh h2{margin:0;color:#fff;font-size:clamp(24px,4.4vw,40px);line-height:1.1;letter-spacing:-.02em;font-weight:800}
+.lgh-sub{margin:0;color:#c8c8d8;font-size:15.5px;line-height:1.5}
+.lgh-by{margin:0;color:#e9e6f5;font-weight:600}
+.lgh-votes{display:inline-flex;align-items:center;gap:6px;color:#fde68a;font-weight:700;white-space:nowrap}
+.lgh-meta{margin:0;display:flex;flex-wrap:wrap;gap:6px 16px;color:#a5f3fc;font-size:13.5px;font-weight:600}
+.lgh-meta span{white-space:nowrap}
+.lgh-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.lgh-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap;transition:transform .2s,filter .2s}
+.lgh-btn:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.lgh-btn.pri{background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;box-shadow:0 8px 24px rgba(124,58,237,.45)}
+.lgh-btn.gold{background:linear-gradient(135deg,#fde047,#f59e0b);color:#1c1300}
+.lgh-btn.ghost{border:1px solid rgba(196,181,253,.45);color:#fff;background:rgba(255,255,255,.04)}
+.lgh-week{position:absolute;left:20px;bottom:16px;z-index:1;color:#fff;font-weight:800;font-size:clamp(22px,3.6vw,44px);letter-spacing:-.02em;line-height:1.05;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+.lgh-week small{display:block;font-size:.5em;font-weight:700;color:#a5f3fc;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+@container (min-width:760px){
+  .lgh-in{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:stretch}
+  .lgh-in{align-items:center}.lgh-media{align-self:center;min-width:0}.lgh-media img{height:auto;aspect-ratio:16/9}
+  .lgh-body{padding:32px 34px;justify-content:center}
+  .lgh-week{left:34px;bottom:28px}
+}
+@media (prefers-reduced-motion:reduce){.lgh-in::after{animation:none;display:none}.lgh-btn{transition:none}}
+.lgh p,.lgh h2{margin:0;max-width:none}.lgh .lgh-btns{margin-top:6px}

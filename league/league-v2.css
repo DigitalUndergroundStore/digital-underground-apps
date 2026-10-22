@@ -32,3 +32,13 @@
 .lg-v2 .lg-fine{font-size:.75rem;color:#7d8a9a;line-height:1.5;margin:16px 0 40px}
 @media (prefers-reduced-motion:reduce){.lg-v2 *{animation:none!important;transition:none!important}}
 @media (max-width:640px){.lg-v2 .lg-grid{grid-template-columns:1fr}}
+/* mobile fit fix */
+.lg-v2,.lg-v2 html{overflow-x:hidden}
+.lg-v2 .wrap,.lg-v2 main,.lg-v2 .lg-panel{min-width:0;max-width:100%}
+.lg-v2 .lg-panel{overflow:hidden}
+.lg-v2 .lg-grid{grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr))}
+.lg-v2 .lg-grid li,.lg-v2 .lg-list li{min-width:0;max-width:100%}
+.lg-v2 .lg-grid .t,.lg-v2 .lg-list li>span:not(.n):not(.v){flex:1 1 auto;min-width:0;overflow:hidden}
+.lg-v2 .lg-list li>span:not(.n):not(.v) a,.lg-v2 .lg-list small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lg-v2 .lg-grid button,.lg-v2 .lg-list .v,.lg-v2 .lg-list .n,.lg-v2 .lg-list img,.lg-v2 .lg-grid img{flex-shrink:0}
+@media (max-width:640px){.lg-v2 .wrap{padding:0 14px}.lg-v2 .lg-panel{padding:14px}.lg-v2 .lg-grid li:hover{transform:none}}

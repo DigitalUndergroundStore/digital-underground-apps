@@ -7,7 +7,8 @@ IMG = O + "/community/og-dm-v3.jpg"
 import re
 hero = lambda p: f"/blog/media/{p['slug']}.webp"
 mins = lambda p: max(1, round(len(re.sub(r"<[^>]+>", " ", p["body"]).split()) / 220))
-DATE = lambda p: "October 20, 2026"
+import datetime
+DATE = lambda p: datetime.date.fromisoformat(p["date"]).strftime("%B %-d, %Y")
 AUTH = "Digital Underground"
 e = lambda s: html.escape(s, quote=True)
 
@@ -70,6 +71,10 @@ dict(slug="creator-pages", date="2026-10-20",
 """),
 ]
 
+import sys; sys.path.insert(0, str(R / "scripts"))
+from blog_posts_oct22 import NEW_POSTS
+POSTS = NEW_POSTS + POSTS
+
 def shell(title, desc, canonical, body, jsonld, ogtype="article", img=None):
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -126,7 +131,7 @@ for p in POSTS:
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": p["title"], "description": p["desc"], "image": O + hero(p),
           "datePublished": p["date"], "dateModified": p["date"], "author": PUB, "publisher": PUB, "mainEntityOfPage": url}
     meta = f'<p class="b2-meta"><span class="b2-by"><img src="/assets/logo/favicon-180.png" alt="" width="28" height="28">{AUTH}</span><span><time datetime="{p["date"]}">{DATE(p)}</time> · {mins(p)} min read</span></p>'
-    rel = "".join(card(q, "sm") for q in POSTS if q is not p)
+    rel = "".join(card(q, "sm") for q in [q for q in POSTS if q is not p][:3])
     body = (f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/blog/">Blog</a> <span aria-hidden="true">/</span></nav>'
             f'<article class="post b2-post"><header class="b2-head"><h1>{e(p["title"])}</h1>{meta}</header>'
             f'<figure class="b2-hero"><img src="{hero(p)}" alt="" width="1600" height="900" fetchpriority="high"></figure>'

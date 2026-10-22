@@ -91,3 +91,7 @@
 .lgh-snd{position:absolute;right:10px;bottom:10px;z-index:2;width:36px;height:36px;border-radius:50%;border:1px solid rgba(196,181,253,.5);background:rgba(12,10,28,.7);color:#fff;font-size:16px;line-height:1;cursor:pointer;display:grid;place-items:center;padding:0}
 .lgh-snd:hover{filter:brightness(1.15)}
 .lgh .lgh-media.lgh-vid{background:radial-gradient(circle at 50% 50%,#1a1240,#07060f 75%)}.lgh .lgh-media.lgh-vid>img{display:none}
+/* Card video fill (16:10 crop of the promo): covers the media area edge to edge. */
+.lgh .lgh-media.lgh-vid video.lgh-v{left:0;top:0;width:100%;height:100%;aspect-ratio:auto;transform:none;object-fit:cover;object-position:50% 50%;box-shadow:none}
+.lgh-snd{right:12px;bottom:12px;width:34px;height:34px;font-size:15px}
+.lgh-snd{top:10px;bottom:auto;right:10px}

@@ -45,12 +45,36 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
 <script>addEventListener("DOMContentLoaded",function(){window.duAiHelper&&duAiHelper.mount(document.getElementById("form"));});</script>
 <style>.du-logo{display:inline-flex;align-items:center;line-height:0}.du-logo img{height:36px!important;width:auto!important;max-width:none!important;max-height:none!important;display:block;border-radius:0!important;box-shadow:none!important;filter:none!important}.du-logo-icon{display:none!important}@media (max-width:560px){.du-logo-full{display:none!important}.du-logo-icon{display:block!important}}</style>
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=11">
+<style>
+.page-head{margin:8px 0 18px}.page-head h1{font-size:clamp(28px,7.4vw,44px);line-height:1.08;margin:6px 0 8px;letter-spacing:-.02em}
+.sb-eyebrow{margin:0;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#c4b5fd}
+.sb-lead{margin:0;color:rgba(255,255,255,.78);font-size:16px;line-height:1.45;max-width:34rem}
+.sb-steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0 0;padding:0;max-width:36rem;counter-reset:s}
+.sb-steps li{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 6px;border-radius:14px;background:rgba(139,92,246,.08);border:1px solid rgba(196,181,253,.18);font-size:13px;text-align:center;position:relative}
+.sb-steps li+li::before{content:"";position:absolute;left:-7px;top:50%;width:6px;height:2px;background:rgba(196,181,253,.4)}
+.sb-ic{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--du-gradient,linear-gradient(135deg,#7c3aed,#2563eb));color:#fff}
+.sb-ic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.af{padding:14px;border-color:rgba(196,181,253,.4);background:linear-gradient(160deg,rgba(124,58,237,.16),rgba(37,99,235,.08))}
+.sb-sec{border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px 14px 16px;margin:0;display:flex;flex-direction:column;gap:14px;background:rgba(255,255,255,.02);min-width:0}
+.sb-sec legend{display:flex;align-items:center;gap:8px;padding:0 6px;font-weight:700;font-size:15px}
+.sb-sec legend span{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;background:rgba(139,92,246,.25);color:#ddd6fe}
+.sb-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.sb-2 label{min-width:0}
+.sb-sec .field-hint{margin:-6px 0 0}
+#form button[type=submit]{min-height:52px;font-size:16px}
+@media (max-width:360px){.sb-2{grid-template-columns:1fr}}
+</style>
 </head>
 <body><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/store/" aria-label="Digital Underground store home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=6" defer></script><!--/du-site-nav-->
 <div class="wrap">
   <header class="page-head">
-    <h1>List your project</h1>
-    <p>Tell us about your app or digital product. <strong>List your products for free</strong>. Clean submissions go <strong>live automatically</strong> after automated checks; edge cases wait for a quick human review. Checkout stays on your site — we only link out.</p>
+    <p class="sb-eyebrow">Free · No fees · Your checkout</p>
+    <h1>List your products for free</h1>
+    <p class="sb-lead">Paste a link and we fill in the basics. Clean listings go live automatically.</p>
+    <ol class="sb-steps" aria-label="How it works">
+      <li><span class="sb-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span><b>Paste link</b></li>
+      <li><span class="sb-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9Z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8Z"/></svg></span><b>Autofill</b></li>
+      <li><span class="sb-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><b>Go live</b></li>
+    </ol>
   </header>
   <div id="msg" class="form-msg" hidden role="status"></div>
   <form class="stack" id="form" novalidate>
@@ -60,21 +84,11 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
       <div class="af-row"><input id="afUrl" type="url" inputmode="url" placeholder="https://yourapp.com" autocomplete="url"><button type="button" id="afBtn">Autofill</button></div>
       <p class="field-hint" id="afMsg" role="status" aria-live="polite">Optional. Or fill the form in yourself.</p>
     </div>
+    <fieldset class="sb-sec"><legend><span>1</span>Your project</legend>
     <label>Project name<input name="name" required maxlength="120" autocomplete="organization"></label>
     <label>Project URL (https)<input name="projectUrl" type="url" required inputmode="url" placeholder="https://…" autocomplete="url"></label>
     <label>Maker / studio name<input name="makerName" required maxlength="80" autocomplete="name"></label>
-    <label>Your email (we'll contact you about your listing)
-      <input name="email" type="email" required autocomplete="email" inputmode="email" maxlength="120" placeholder="you@example.com">
-    </label>
-    <label>Password for your Creator login (min 8 characters)
-      <input name="password" type="password" required minlength="8" maxlength="200" autocomplete="new-password" data-pw>
-    </label>
-    <label>Confirm password
-      <input name="passwordConfirm" type="password" required minlength="8" maxlength="200" autocomplete="new-password" data-pw data-confirm="password">
-    </label>
-    <p class="field-hint">Already have a creator account? Enter its password and we'll add this listing to it.</p>
-    <p class="field-hint consent-hint">By submitting, you agree we may email you about your listing and Digital Underground updates. Unsubscribe anytime.</p>
-    <label>X handle (optional)<input name="xHandle" maxlength="16" placeholder="handle without @"></label>
+    <div class="sb-2">
     <label>Category
       <select name="category" required>
         <option value="">Choose…</option>
@@ -96,11 +110,17 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
         <option value="discontinued">Discontinued</option>
       </select>
     </label>
+    </div>
     <label>Status label <small>(optional, up to 24 characters, e.g. Needs testers, Beta, v1.5)</small><input name="statusLabel" maxlength="24" placeholder="Needs testers"></label>
     <label>Price label<input name="priceLabel" maxlength="40" placeholder="Free, $9, CA$24, etc."></label>
+    <label>X handle (optional)<input name="xHandle" maxlength="16" placeholder="handle without @"></label>
+    </fieldset>
+    <fieldset class="sb-sec"><legend><span>2</span>Describe it</legend>
     <label>Short pitch (max 280)<textarea name="pitchShort" required maxlength="280" rows="3"></textarea></label>
     <label>Longer description<textarea name="descriptionLong" required maxlength="4000" rows="6"></textarea></label>
     <label>Tags (optional, comma-separated, up to 6)<input name="tags" maxlength="160" placeholder="productivity, mac, ai"></label>
+    </fieldset>
+    <fieldset class="sb-sec"><legend><span>3</span>Image and video</legend>
     <div class="up-field">
       <span class="up-label">Logo or cover image</span>
       <div class="up-row">
@@ -131,6 +151,20 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
         <label class="sr-only" for="videoUrl">Video link</label><input id="videoUrl" name="videoUrl" type="url" inputmode="url" maxlength="500" placeholder="https://youtu.be/…">
       </details>
     </div>
+    </fieldset>
+    <fieldset class="sb-sec" id="sb-acct"><legend><span>4</span>Your creator account</legend>
+    <label>Your email (we'll contact you about your listing)
+      <input name="email" type="email" required autocomplete="email" inputmode="email" maxlength="120" placeholder="you@example.com">
+    </label>
+    <label>Password for your Creator login (min 8 characters)
+      <input name="password" type="password" required minlength="8" maxlength="200" autocomplete="new-password" data-pw>
+    </label>
+    <label>Confirm password
+      <input name="passwordConfirm" type="password" required minlength="8" maxlength="200" autocomplete="new-password" data-pw data-confirm="password">
+    </label>
+    <p class="field-hint">Already have a creator account? Enter its password and we'll add this listing to it.</p>
+    <p class="field-hint consent-hint">By submitting, you agree we may email you about your listing and Digital Underground updates. Unsubscribe anytime.</p>
+    </fieldset>
     <label class="check">
       <input type="checkbox" name="terms" required value="1">
       <span>I own or represent this project, the link is safe, and I agree this is a free listing with link-out only (no payments through Digital Underground).</span>
@@ -169,10 +203,6 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
     pc.closest("label").nextElementSibling.hidden = true;
     form.querySelectorAll(".field-hint").forEach(function (h) { if (/Already have a creator account/.test(h.textContent)) h.hidden = true; });
     if (d.account.email) emailInput.value = d.account.email;
-    var note = document.createElement("p");
-    note.className = "form-msg ok";
-    note.innerHTML = 'You are logged in. This listing will be added to your creator account. <a href="/community/dashboard/">Dashboard</a>';
-    form.parentNode.insertBefore(note, form);
   }).catch(function () {});
   try { var savedEmail = localStorage.getItem("du_creator_email"); if (savedEmail && !emailInput.value) emailInput.value = savedEmail; } catch (_) {}
 

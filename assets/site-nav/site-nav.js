@@ -44,7 +44,7 @@
       var btn = nl.querySelector("button"); btn.disabled = true; msg.textContent = "Subscribing…";
       fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: em, consent: true, website: nl.website.value, source: "footer:" + location.pathname }) })
         .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
-        .then(function (x) { if (x.ok) { nl.classList.add("done"); msg.textContent = "You're subscribed. Thanks! You can unsubscribe any time from any email."; } else { msg.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; btn.disabled = false; } })
+        .then(function (x) { if (x.ok) { nl.classList.add("done"); msg.textContent = "You're subscribed. Thanks! "; if (x.d && typeof x.d.gift === "string" && /^\/(?!\/)/.test(x.d.gift)) { var dl = document.createElement("a"); dl.href = x.d.gift; dl.setAttribute("download", ""); dl.textContent = "Download Humanity X: Off the Ground (ZIP)"; msg.appendChild(dl); msg.appendChild(document.createTextNode(". Enjoy the book! You can unsubscribe any time from any email.")); } } else { msg.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; btn.disabled = false; } })
         .catch(function () { msg.textContent = "Network error. Please try again."; btn.disabled = false; });
     });
     }

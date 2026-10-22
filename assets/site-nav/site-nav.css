@@ -89,3 +89,5 @@
 .duf-notes{position:relative;z-index:1;max-width:1200px;margin:48px auto 0;padding:0 24px;text-align:center;font:400 12px/1.6 Inter,system-ui,sans-serif;color:#8b8aa3}
 .duf-notes p{margin:8px 0}.duf-notes a{color:#a3a3bd}.duf-notes+.duf{margin-top:24px}
 .duf{padding:0!important;border-radius:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+
+.duf-book{display:flex;gap:12px;align-items:flex-start;margin:0 0 12px;max-width:440px}.duf-book img{width:56px;height:auto;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.45);display:block;flex:none}.duf-book>div{min-width:0}.duf .duf-bk-h{margin:0 0 2px;color:#fff;font-size:16px;font-weight:700;text-transform:none;letter-spacing:normal}.duf-bk-t{margin:0 0 4px;font-weight:600}.duf-bk-t a{color:#c4b5fd;text-decoration:none}.duf-bk-s{margin:0;color:#a8a2bd;font-size:13px;line-height:1.45}.duf-msg a{color:#86efac;font-weight:600}

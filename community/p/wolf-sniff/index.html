@@ -756,7 +756,7 @@
 </div>
 
 <script>
-(function () {
+function duWolfGallery() {
   var lb = document.getElementById('lightbox'), img = document.getElementById('lightboxImg'), cap = document.getElementById('lightboxCaption');
   var bClose = document.getElementById('lightboxClose'), bPrev = document.getElementById('lightboxPrev'), bNext = document.getElementById('lightboxNext');
   var track = document.getElementById('galleryTrack'), gPrev = document.getElementById('galleryPrev'), gNext = document.getElementById('galleryNext');
@@ -814,6 +814,24 @@
   track.addEventListener('scroll', function () { requestAnimationFrame(sync); }, { passive: true });
   addEventListener('resize', sync); sync();
   window.duGallery = { open: open, close: close, go: go, get index() { return cur; }, count: items.length };
+}
+/* Gallery images managed in the creator dashboard (images[]) replace the static screenshot; otherwise the designed page is unchanged. */
+(function () {
+  var done = false; function go() { if (!done) { done = true; duWolfGallery(); } }
+  var t = setTimeout(go, 2500);
+  fetch('/api/community/listing?id=cm_mvfalhx5_0ef98909').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+    var ims = d && d.listing && d.listing.images;
+    if (!done && ims && ims.length) {
+      var track = document.getElementById('galleryTrack'), cta = track.querySelector('.gallery-cta');
+      Array.prototype.forEach.call(track.querySelectorAll('.gallery-item[data-src]'), function (n) { n.remove(); });
+      ims.forEach(function (im, i) {
+        var el = document.createElement('div'); el.className = 'gallery-item'; el.dataset.src = im.src;
+        var img = document.createElement('img'); img.src = im.src; img.alt = im.alt || 'Wolf Sniff screenshot ' + (i + 1); img.width = 640; img.height = 360; if (i) img.loading = 'lazy';
+        var c = document.createElement('div'); c.className = 'gallery-caption'; c.textContent = im.alt || 'Wolf Sniff';
+        el.appendChild(img); el.appendChild(c); track.insertBefore(el, cta);
+      });
+    }
+  }).catch(function () {}).then(function () { clearTimeout(t); go(); });
 })();
 </script>
 <script>(function(){var L=document.querySelector(".listing");if(!L)return;function show(){L.classList.add("is-visible")}

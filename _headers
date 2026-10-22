@@ -19,6 +19,9 @@
 
 /games/*
   X-Robots-Tag: noindex
+/community/dashboard-v2/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-cache
 /assets/signup.js
   Cache-Control: public, max-age=0, must-revalidate
 /p/airhand/*

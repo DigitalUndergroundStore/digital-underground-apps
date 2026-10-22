@@ -79,7 +79,7 @@ async function profileAction(env, kv, acct, body, save) {
 
 const UNAUTH = () => json({ error: "This dashboard link is not valid. Lost your link? Email digitalunderground.store@proton.me" }, 401);
 
-async function rescreen(env, row, returning = false) {
+export async function rescreen(env, row, returning = false) {
   try {
     const s = await screenListing(env, row);
     row.screening = { reasons: s.reasons, detail: s.detail, screenedAt: Date.now() };
@@ -104,7 +104,72 @@ async function rescreen(env, row, returning = false) {
   }
 }
 
-const OWNER_MAKERS = new Set(["digital underground", "kerzy labs"]);
+export const OWNER_MAKERS = new Set(["digital underground", "kerzy labs"]);
+
+/** Shared edit logic (current dashboard "edit" and dashboard v2 "save"). Caller has already checked write access. */
+export async function applyEdit(context, kv, acct, row, f) {
+  const { request, env } = context;
+  const name = sanitizeText(f.name, 120);
+  const pitchShort = sanitizeText(f.pitchShort, 280);
+  const descriptionLong = sanitizeText(f.descriptionLong, 4000);
+  const projectUrl = typeof f.projectUrl === "string" ? f.projectUrl.trim() : "";
+  const imageUrl = typeof f.imageUrl === "string" ? f.imageUrl.trim() : "";
+  if (!name) return json({ error: "Title is required." }, 400);
+  const stage = f.stage === undefined || f.stage === null || f.stage === "" ? (row.stage || "Released") : normalizeStage(f.stage);
+  if (!stage) return json({ error: "Pick a valid stage." }, 400);
+  if (!pitchShort || !descriptionLong) return json({ error: "Both descriptions are required." }, 400);
+  if (!isHttpsUrl(projectUrl)) return json({ error: "Link must be a valid https URL." }, 400);
+  if (imageUrl && imageUrl !== "(uploaded image)" && !isHttpsUrl(imageUrl)) {
+    return json({ error: "Image URL must be https." }, 400);
+  }
+  row.name = name;
+  row.stage = stage;
+  if (f.statusLabel !== undefined) { const sl = normalizeStatusLabel(f.statusLabel); if (sl) row.statusLabel = sl; else delete row.statusLabel; }
+  row.pitchShort = pitchShort;
+  row.descriptionLong = descriptionLong;
+  row.projectUrl = projectUrl;
+  row.visitUrl = appendRefParam(projectUrl);
+  // One media slot: a video (when present) is the display media; the image is its poster/fallback.
+  const drop = [];
+  const curVid = uploadVid(row.videoUrl), penVid = uploadVid(row.pendingVideo && row.pendingVideo.url);
+  const clearVideos = () => {
+    if (curVid) drop.push(curVid);
+    if (penVid) drop.push(penVid);
+    delete row.videoUrl; delete row.videoFile; delete row.pendingVideo; delete row.videoApprovedUrl;
+  };
+  if (f.removeMedia === true || f.removeImage === true) {
+    row.imageUrl = "";
+    if (f.removeMedia === true) clearVideos();
+  } else if (typeof f.imageData === "string" && f.imageData) {
+    const img = parseImageField({ imageData: f.imageData });
+    if (img.error) return json({ error: img.error }, 400);
+    row.imageUrl = img.imageUrl;
+    if (f.replaceVideo !== false) clearVideos();
+  } else if (imageUrl && imageUrl !== "(uploaded image)") {
+    row.imageUrl = imageUrl;
+  }
+  const v = typeof f.videoUrl === "string" ? f.videoUrl.trim() : "";
+  if (v && !v.startsWith("upload:") && v !== row.videoUrl && v !== (row.pendingVideo && row.pendingVideo.url)) {
+    const vid = normalizeVideoUrl(v);
+    if (vid.error) return json({ error: vid.error }, 400);
+    if (penVid) drop.push(penVid);
+    row.pendingVideo = { url: vid.videoUrl, at: Date.now() };
+    if (vid.videoUrl === row.videoApprovedUrl) { row.videoUrl = vid.videoUrl; delete row.videoFile; delete row.pendingVideo; }
+  }
+  const decision = await rescreen(env, row, await isReturningMaker(kv, acct, row.id));
+  // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
+  const prevStatus = row.status;
+  row.status = row.status === "unpublished" && decision !== "rejected" ? "unpublished" : decision;
+  // API edits never publish: a listing that wasn't already approved stays in the owner queue.
+  row.version = (row.version || 0) + 1; // optimistic-concurrency counter shared with dashboard v2
+  row.updatedAt = Date.now();
+  row.editedByCreatorAt = row.updatedAt;
+  await saveListing(kv, row);
+  // Owner gets the usual email when an edit takes a not-yet-live listing live (returning maker).
+  if (prevStatus !== "approved" && row.status === "approved") context.waitUntil(notifySubmission(env, row, request).catch(() => {}));
+  if (drop.length) context.waitUntil(Promise.all(drop.map((d) => deleteVideo(kv, d).catch(() => {}))));
+  return json({ ok: true, listing: creatorListing(row) });
+}
 
 export async function onRequest(context) {
   const { request, env } = context;
@@ -285,68 +350,7 @@ export async function onRequest(context) {
     return json({ ok: true, listing: creatorListing(row) });
   }
 
-  if (action === "edit") {
-    const f = body.fields || {};
-    const name = sanitizeText(f.name, 120);
-    const pitchShort = sanitizeText(f.pitchShort, 280);
-    const descriptionLong = sanitizeText(f.descriptionLong, 4000);
-    const projectUrl = typeof f.projectUrl === "string" ? f.projectUrl.trim() : "";
-    const imageUrl = typeof f.imageUrl === "string" ? f.imageUrl.trim() : "";
-    if (!name) return json({ error: "Title is required." }, 400);
-    const stage = f.stage === undefined || f.stage === null || f.stage === "" ? (row.stage || "Released") : normalizeStage(f.stage);
-    if (!stage) return json({ error: "Pick a valid stage." }, 400);
-    if (!pitchShort || !descriptionLong) return json({ error: "Both descriptions are required." }, 400);
-    if (!isHttpsUrl(projectUrl)) return json({ error: "Link must be a valid https URL." }, 400);
-    if (imageUrl && imageUrl !== "(uploaded image)" && !isHttpsUrl(imageUrl)) {
-      return json({ error: "Image URL must be https." }, 400);
-    }
-    row.name = name;
-    row.stage = stage;
-    if (f.statusLabel !== undefined) { const sl = normalizeStatusLabel(f.statusLabel); if (sl) row.statusLabel = sl; else delete row.statusLabel; }
-    row.pitchShort = pitchShort;
-    row.descriptionLong = descriptionLong;
-    row.projectUrl = projectUrl;
-    row.visitUrl = appendRefParam(projectUrl);
-    // One media slot: a video (when present) is the display media; the image is its poster/fallback.
-    const drop = [];
-    const curVid = uploadVid(row.videoUrl), penVid = uploadVid(row.pendingVideo && row.pendingVideo.url);
-    const clearVideos = () => {
-      if (curVid) drop.push(curVid);
-      if (penVid) drop.push(penVid);
-      delete row.videoUrl; delete row.videoFile; delete row.pendingVideo; delete row.videoApprovedUrl;
-    };
-    if (f.removeMedia === true || f.removeImage === true) {
-      row.imageUrl = "";
-      if (f.removeMedia === true) clearVideos();
-    } else if (typeof f.imageData === "string" && f.imageData) {
-      const img = parseImageField({ imageData: f.imageData });
-      if (img.error) return json({ error: img.error }, 400);
-      row.imageUrl = img.imageUrl;
-      if (f.replaceVideo !== false) clearVideos();
-    } else if (imageUrl && imageUrl !== "(uploaded image)") {
-      row.imageUrl = imageUrl;
-    }
-    const v = typeof f.videoUrl === "string" ? f.videoUrl.trim() : "";
-    if (v && !v.startsWith("upload:") && v !== row.videoUrl && v !== (row.pendingVideo && row.pendingVideo.url)) {
-      const vid = normalizeVideoUrl(v);
-      if (vid.error) return json({ error: vid.error }, 400);
-      if (penVid) drop.push(penVid);
-      row.pendingVideo = { url: vid.videoUrl, at: Date.now() };
-      if (vid.videoUrl === row.videoApprovedUrl) { row.videoUrl = vid.videoUrl; delete row.videoFile; delete row.pendingVideo; }
-    }
-    const decision = await rescreen(env, row, await isReturningMaker(kv, acct, row.id));
-    // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
-    const prevStatus = row.status;
-    row.status = row.status === "unpublished" && decision !== "rejected" ? "unpublished" : decision;
-    // API edits never publish: a listing that wasn't already approved stays in the owner queue.
-    row.updatedAt = Date.now();
-    row.editedByCreatorAt = row.updatedAt;
-    await saveListing(kv, row);
-    // Owner gets the usual email when an edit takes a not-yet-live listing live (returning maker).
-    if (prevStatus !== "approved" && row.status === "approved") context.waitUntil(notifySubmission(env, row, request).catch(() => {}));
-    if (drop.length) context.waitUntil(Promise.all(drop.map((d) => deleteVideo(kv, d).catch(() => {}))));
-    return json({ ok: true, listing: creatorListing(row) });
-  }
+  if (action === "edit") return applyEdit(context, kv, acct, row, body.fields || {});
 
   return json({ error: "Unknown action." }, 400);
 }

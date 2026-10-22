@@ -1,3 +1,4 @@
+import { galleryList, publicImages } from "./gallery.js";
 import { makerSlugFor } from "./makers.js";
 /**
  * Community marketplace helpers (link-out listings, moderation queue).
@@ -307,7 +308,9 @@ export function publicListing(row) {
     category: row.category,
     priceLabel: row.priceLabel,
     pitchShort: row.pitchShort,
-    imageUrl: publicImageUrl(row),
+    imageUrl: galleryList(row).length ? publicImages(row)[0].src : publicImageUrl(row),
+    // Multi-image gallery (cover first); empty for listings that only have the single legacy media.
+    images: publicImages(row),
     visitUrl: row.visitUrl || appendRefParam(row.projectUrl),
     projectUrl: row.projectUrl,
     tags: Array.isArray(row.tags) ? row.tags : [],
@@ -553,6 +556,10 @@ export async function deleteListing(kv, id) {
       const { deleteVideo } = await import("./video.js");
       await deleteVideo(kv, up[1]).catch(() => {});
     }
+  }
+  if (row && galleryList(row).length) {
+    const { deleteGalleryImage } = await import("./gallery.js");
+    for (const img of galleryList(row)) await deleteGalleryImage(kv, img.id).catch(() => {});
   }
   const index = await kvGetIndex(kv);
   index.pending = index.pending.filter((x) => x !== id);

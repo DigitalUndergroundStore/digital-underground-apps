@@ -1,6 +1,6 @@
 /* Share the Maker League: text + URL only (no file). The link preview (og:video / poster) carries the promo. */
 (function () {
-  var URL_ = "https://digitalundergroundstore.com/";
+  var URL_ = "https://digitalundergroundstore.com/join/";
   var TITLE = "Maker League | Digital Underground";
   var CAPTION = "Builders, this one's for you. The Maker League is a weekly competition for indie builders on Digital Underground: list your project free, get your followers to vote, and the winner takes the homepage spotlight as Maker of the Week. Vote or enter on the marketplace:";
   function toast(msg, ms) { var x = document.createElement("div"); x.className = "dun-x"; x.setAttribute("role", "status"); x.textContent = msg; document.body.appendChild(x); setTimeout(function () { x.remove(); }, ms || 1800); }

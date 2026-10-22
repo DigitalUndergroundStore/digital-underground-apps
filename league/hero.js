@@ -20,13 +20,13 @@
       html = '<div class="lgh-in"><div class="lgh-media">' + (w.imageUrl ? '<img src="' + esc(w.imageUrl) + '" alt="' + esc(w.name) + '" loading="lazy">' : '<img src="/league/media/league-hero-bg.webp" alt="">') + '</div>' +
         '<div class="lgh-body"><span class="lgh-badge">★ Maker of the Week</span><h2>' + esc(w.name) + '</h2><p class="lgh-by">by ' + esc(w.makerName) + ' · <span class="lgh-votes">' + w.votes + (w.votes === 1 ? " vote" : " votes") + "</span></p>" +
         (w.pitchShort ? '<p class="lgh-sub">' + esc(w.pitchShort) + "</p>" : "") +
-        '<div class="lgh-btns"><a class="lgh-btn gold" href="' + esc(w.url) + '">Visit</a><a class="lgh-btn ghost" href="/league/">Vote this week</a></div>' +
+        '<div class="lgh-btns"><a class="lgh-btn gold" href="' + esc(w.url) + '">Visit</a><a class="lgh-btn ghost" href="/league/">Vote this week</a><button type="button" class="lgh-btn ghost" data-lg-share>Share</button></div>' +
         '<p class="lgh-meta"><span>' + (w.week ? "Week of " + new Date(w.week + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" }) : "Last week") + " winner</span><span>" + esc(reset) + "</span></p></div></div>";
     } else {
       html = '<div class="lgh-in"><div class="lgh-media"><img src="/league/media/league-hero-bg.webp" alt="" width="1600" height="900"><img class="lgh-trophy" src="/league/media/trophy.svg?v=1" alt="Gold Maker of the Week trophy"></div>' +
         '<div class="lgh-body"><span class="lgh-badge">★ Maker of the Week</span><h2>Week ' + wk + ' — competition under way</h2>' +
         '<p class="lgh-sub">Vote for your favourite indie project. The top pick becomes Maker of the Week, right here at the top of the page.</p>' +
-        '<div class="lgh-btns"><a class="lgh-btn pri" href="/league/">Vote now</a></div>' +
+        '<div class="lgh-btns"><a class="lgh-btn pri" href="/league/">Vote now</a><button type="button" class="lgh-btn ghost" data-lg-share>Share</button></div>' +
         '<p class="lgh-meta"><span>' + esc(reset) + "</span>" + (votes ? "<span>" + esc(votes) + "</span>" : "") + "<span>Free · 1 vote per week</span></p></div></div>";
     }
     slot.innerHTML = html; slot.hidden = false;

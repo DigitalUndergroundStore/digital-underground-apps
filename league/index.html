@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/assets/design-tokens.css">
 <link rel="stylesheet" href="/community/community.css?v=4">
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=9">
-<link rel="stylesheet" href="/league/league.css?v=1">
+<link rel="stylesheet" href="/league/league.css?v=2">
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
@@ -27,8 +27,9 @@
   <header class="page-head">
     <h1>Maker League</h1>
     <p>A free weekly vote for indie projects on the Developer Marketplace. Pick your favourite: <strong>one vote per visitor per week</strong>. The week resets every Monday at 12:00 AM ET, and last week's winner becomes <strong>Maker of the Week</strong> on the homepage.</p>
+    <button type="button" class="lg-share" data-lg-share><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8h16v-8M12 3v13M7 8l5-5 5 5"/></svg>Share the League</button>
   </header>
-  <div id="motw-slot"></div>
+  <div id="motw-slot"></div><script src="/league/share.js?v=1" defer></script>
   <section class="lg-panel" aria-labelledby="st-h">
     <div class="lg-head"><h2 id="st-h">This week's standings</h2><span class="lg-meta" id="meta"></span></div>
     <ol class="lg-list" id="standings" aria-live="polite"><li class="lg-empty">Loading…</li></ol>

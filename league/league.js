@@ -3,7 +3,7 @@
   var st = document.getElementById("standings"), grid = document.getElementById("voteGrid"), msg = document.getElementById("msg"), meta = document.getElementById("meta"), q = document.getElementById("search");
   var data = null;
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
-  function icon(u) { return '<div class="project-icon">' + (u ? '<img src="' + esc(u) + '" alt="" loading="lazy" width="44" height="44">' : "") + "</div>"; }
+  function icon(u, id, name) { var inner = u ? '<img src="' + esc(u) + '" alt="" loading="lazy" width="44" height="44">' : ""; return id ? '<a class="project-icon" style="display:block" href="/community/p/?id=' + encodeURIComponent(id) + '" aria-label="Open ' + esc(name || "product") + ' page">' + inner + "</a>" : '<div class="project-icon">' + inner + "</div>"; }
   function say(t, c) { msg.textContent = t; msg.className = "lg-msg" + (c ? " " + c : ""); }
   function showToast(m) {
     var t = document.querySelector(".toast");
@@ -14,12 +14,12 @@
     var ends = new Date(data.endsAt);
     meta.textContent = data.totalVotes + (data.totalVotes === 1 ? " vote" : " votes") + " · resets " + ends.toLocaleString(undefined, { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }) + " ET";
     st.innerHTML = data.standings.length ? data.standings.map(function (s, i) {
-      return '<li class="standings-item"><span class="rank">' + (i + 1) + "</span>" + icon(s.imageUrl) + '<div class="project-info"><strong><a href="' + esc(s.url) + '">' + esc(s.name) + "</a></strong><span>by " + esc(s.makerName) + '</span></div><span class="votes">' + s.votes + (s.votes === 1 ? " vote" : " votes") + "</span></li>";
+      return '<li class="standings-item"><span class="rank">' + (i + 1) + "</span>" + icon(s.imageUrl, s.id, s.name) + '<div class="project-info"><strong><a href="' + esc(s.url) + '">' + esc(s.name) + "</a></strong><span>by " + esc(s.makerName) + '</span></div><span class="votes">' + s.votes + (s.votes === 1 ? " vote" : " votes") + "</span></li>";
     }).join("") : '<li class="lg-empty">No votes yet this week. Be the first to vote below.</li>';
     var f = (q.value || "").trim().toLowerCase();
     grid.innerHTML = data.eligible.filter(function (l) { return !f || (l.name + " " + l.makerName).toLowerCase().indexOf(f) >= 0; }).map(function (l) {
       var mine = data.voted === l.id;
-      return '<div class="vote-card' + (mine ? " voted" : "") + '">' + icon(l.imageUrl) + '<div class="info"><strong>' + esc(l.name) + "</strong><span>by " + esc(l.makerName) + '</span></div><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted" : "Vote") + "</button></div>";
+      return '<div class="vote-card' + (mine ? " voted" : "") + '">' + icon(l.imageUrl, l.id, l.name) + '<div class="info"><strong>' + esc(l.name) + "</strong><span>by " + esc(l.makerName) + '</span></div><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted" : "Vote") + "</button></div>";
     }).join("") || '<p class="lg-empty">' + (data.eligible.length ? "No matching projects." : "No projects in the league yet.") + "</p>";
     if (data.voted && !msg.textContent) say("You've voted this week. Come back Monday to vote again.", "ok");
   }

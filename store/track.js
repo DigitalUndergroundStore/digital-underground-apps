@@ -24,7 +24,7 @@
     if (!a) return;
     var u; try { u = new URL(a.href); } catch (_) { return; }
     if (u.host === location.host) return;
-    var card = a.closest(".card"), name = card && card.querySelector("strong");
+    var card = a.closest(".card, .pc, .sticky-buy"), dt = !card && a.closest(".dt"), name = card ? card.querySelector("strong") : dt ? dt.querySelector("h1") : null;
     var label = (name ? name.textContent : a.textContent || u.hostname).replace(/\s+/g, " ").trim().slice(0, 50);
     data.clicks.push(label + " · " + u.hostname.replace(/^www\./, ""));
     if (data.clicks.length >= 10) send();

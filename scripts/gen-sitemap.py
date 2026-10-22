@@ -8,6 +8,7 @@ try:
   SL=[l.split('slug="')[1].split('"')[0] for l in open(f"{R}/scripts/gen-landing.py") if l.startswith('dict(slug="')]
   cands+=[f"/{x}/" for x in SL]
 except Exception as ex: print("landing list failed",ex)
+cands+=[f"/store/p/{d}/" for d in sorted(os.listdir(f"{R}/store/p")) if os.path.isfile(f"{R}/store/p/{d}/index.html")]
 cands+=[f"/p/{d}/" for d in sorted(os.listdir(f"{R}/p")) if os.path.isfile(f"{R}/p/{d}/index.html")]
 cands+=[f"/get/{d}/" for d in sorted(os.listdir(f"{R}/get")) if os.path.isfile(f"{R}/get/{d}/index.html")]
 urls=[]

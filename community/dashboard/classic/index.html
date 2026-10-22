@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>Classic creator dashboard (video uploads, API keys) — Digital Underground</title>
+<meta name="theme-color" content="#07060f">
+<link rel="stylesheet" href="/assets/design-tokens.css">
+<link rel="stylesheet" href="/community/community.css?v=4">
+<link rel="stylesheet" href="dashboard.css?v=24">
+<script src="/community/pw.js" defer></script>
+<script src="/community/upload.js?v=4" defer></script>
+<script src="dashboard.js?v=25" defer></script>
+<script src="/community/nav.js?v=1" defer></script>
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<script src="/community/ai-helper.js?v=1" defer></script>
+<script>addEventListener("DOMContentLoaded",function(){window.duAiHelper&&duAiHelper.mount(document.getElementById("edit-form"));});</script>
+<style>.du-logo{display:inline-flex;align-items:center;line-height:0}.du-logo img{height:36px!important;width:auto!important;max-width:none!important;max-height:none!important;display:block;border-radius:0!important;box-shadow:none!important;filter:none!important}.du-logo-icon{display:none!important}@media (max-width:560px){.du-logo-full{display:none!important}.du-logo-icon{display:block!important}}.classic-note{margin:14px 0 0;padding:10px 14px;border:1px solid rgba(157,140,255,.3);border-radius:10px;background:rgba(124,92,255,.08);font-size:.9rem}.classic-note a{color:#b9a8ff;font-weight:600}</style>
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=14">
+</head>
+<body class="dash">
+<!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=8" defer></script><!--/du-site-nav-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-eyeoff" viewBox="0 0 24 24"><path d="M9.9 4.24A9.7 9.7 0 0 1 12 4c7 0 11 8 11 8a19.9 19.9 0 0 1-3.17 4.19M6.06 6.06A19.8 19.8 0 0 0 1 12s4 7 11 7a10.5 10.5 0 0 0 5.94-1.06"/><path d="M1 1l22 22"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></symbol>
+  <symbol id="i-imp" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></symbol>
+  <symbol id="i-click" viewBox="0 0 24 24"><path d="m9 9 5 12 1.8-5.2L21 14Z"/><path d="M7.2 2.2 8 5.1M5.1 8l-2.9-.8M14 4.1 12 6.2M6.2 12l-2.1 2"/></symbol>
+  <symbol id="i-pct" viewBox="0 0 24 24"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></symbol>
+  <symbol id="i-frame" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 15.5l4.5-4 3.5 3 3-2.5L21 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 2v3M16 2v3M8 19v3M16 19v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3Z"/></symbol>
+  <symbol id="i-redo" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="tb-brand" href="/"><span class="du-logo"><img class="du-logo-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="200" height="36"><img class="du-logo-icon" src="/assets/logo/du-mark-anim-icon.svg" alt="Digital Underground" width="36" height="36"></span><small class="du-logo-sub">Creator dashboard</small></a>
+    <span class="tb-spacer"></span>
+    <a class="tb-link" href="/">Marketplace</a>
+    <a class="tb-link" href="#support" id="tb-support" hidden>Support</a>
+    <button type="button" class="avatar-btn" id="avatar-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="menu" aria-label="Account menu" hidden><span class="avatar" id="avatar" aria-hidden="true">D</span></button>
+  </div>
+  <div class="menu" id="menu" role="menu" hidden>
+    <div class="menu-head"><b>Signed in</b><span id="menu-email"></span></div>
+    <a role="menuitem" href="/community/submit/"><svg class="ico"><use href="#i-plus"/></svg>New listing</a>
+    <a role="menuitem" href="/"><svg class="ico"><use href="#i-store"/></svg>Developer Marketplace</a>
+    <a role="menuitem" href="/community/profile/"><svg class="ico"><use href="#i-edit"/></svg>Edit profile</a>
+    <a role="menuitem" href="/login/security/"><svg class="ico"><use href="#i-lock"/></svg>Security &amp; 2FA</a>
+    <a role="menuitem" href="#support" data-close><svg class="ico"><use href="#i-help"/></svg>Support</a>
+    <button type="button" role="menuitem" class="menu-danger" id="signout"><svg class="ico"><use href="#i-out"/></svg>Sign out</button>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <p class="classic-note">Classic dashboard: video uploads, API keys, logo, banner and support. <a href="/community/dashboard/">Back to the new dashboard</a></p>
+
+  <!-- Login / reset -->
+  <section id="gate" class="auth" hidden aria-labelledby="gate-title">
+    <div class="auth-card">
+      <img class="auth-logo" src="/assets/logo/du-mark.svg" width="56" height="56" alt="Digital Underground">
+      <h1 id="gate-title">Creator login</h1>
+      <p class="lead" id="gate-lead">Manage your listings and see how they perform.</p>
+      <div class="alert err" id="login-msg" hidden role="alert"></div>
+      <form id="login" class="f2">
+        <div class="fld"><label for="lg-email">Email</label><input id="lg-email" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"></div>
+        <div class="fld"><label for="lg-pw">Password</label><input id="lg-pw" name="password" type="password" required minlength="8" autocomplete="current-password" data-pw></div>
+        <div class="auth-row"><span></span><button type="button" class="linkbtn" id="forgot-btn">Forgot password?</button></div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Log in</button>
+      </form>
+      <form id="reset" class="f2" hidden>
+        <p class="field-hint">We emailed a 6-digit code to that address if it has an account.</p>
+        <div class="fld"><label for="rs-code">6-digit code</label><input id="rs-code" name="code" required inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="123456"></div>
+        <div class="fld"><label for="rs-pw">New password <span class="cc">min 8 characters</span></label><input id="rs-pw" name="password" type="password" required minlength="8" autocomplete="new-password" data-pw></div>
+        <div class="fld"><label for="rs-pw2">Confirm new password</label><input id="rs-pw2" name="passwordConfirm" type="password" required minlength="8" autocomplete="new-password" data-pw data-confirm="password"></div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Set password and log in</button>
+        <button type="button" class="btn btn-ghost btn-block" id="reset-back">Back to login</button>
+      </form>
+      <div class="auth-foot">
+        <p>New here? <a class="inl" href="/community/submit/">List your project</a> to create your account.</p>
+        <p>Have an older private dashboard link? Open it once to set your email and password.</p>
+        <p>Lost access? Email <a class="inl" href="mailto:digitalunderground.store@proton.me">support</a> from the address you listed with.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loading skeleton -->
+  <section id="loading" aria-busy="true" aria-label="Loading dashboard">
+    <div class="hello"><div><div class="skel" style="width:200px;height:28px"></div><div class="skel" style="width:260px;height:16px;margin-top:10px"></div></div></div>
+    <div class="kpis2"><div class="kpi2"><div class="skel" style="height:72px"></div></div><div class="kpi2"><div class="skel" style="height:72px"></div></div><div class="kpi2"><div class="skel" style="height:72px"></div></div><div class="kpi2"><div class="skel" style="height:72px"></div></div></div>
+    <div class="card2 section"><div class="skel" style="width:140px;height:20px;margin-bottom:16px"></div><div class="skel" style="height:200px"></div></div>
+    <div class="card2 section"><div style="display:flex;gap:12px"><div class="skel" style="width:64px;height:64px;flex:none"></div><div style="flex:1"><div class="skel" style="height:18px;width:70%"></div><div class="skel" style="height:14px;width:40%;margin-top:10px"></div></div></div></div>
+  </section>
+
+  <div id="app" hidden>
+    <div class="hello">
+      <div>
+        <h1 id="greet">Welcome back</h1>
+        <p id="greet-sub">Here's how your listings are doing.</p>
+      </div>
+      <a class="btn btn-primary" href="/community/submit/"><svg class="ico"><use href="#i-plus"/></svg>New listing</a>
+    </div>
+
+    <!-- Claim (older private-link accounts) -->
+    <section id="claim" class="card2 banner section" hidden aria-labelledby="claim-title">
+      <div class="card-head"><div><h2 id="claim-title">Set your email and password</h2><p>Claim your creator account so you can log in with your email from now on. Your listings stay as they are.</p></div></div>
+      <form id="claim-form" class="f2">
+        <div class="fld"><label for="cl-email">Email</label><input id="cl-email" name="email" type="email" required autocomplete="email" inputmode="email"></div>
+        <div class="fld"><label for="cl-pw">Password <span class="cc">min 8 characters</span></label><input id="cl-pw" name="password" type="password" required minlength="8" autocomplete="new-password" data-pw></div>
+        <div class="fld"><label for="cl-pw2">Confirm password</label><input id="cl-pw2" name="passwordConfirm" type="password" required minlength="8" autocomplete="new-password" data-pw data-confirm="password"></div>
+        <div class="alert err" id="claim-msg" hidden role="alert"></div>
+        <button type="submit" class="btn btn-primary btn-lg">Save and continue</button>
+      </form>
+    </section>
+
+    <section class="kpis2" id="summary" aria-label="Last 30 days totals"></section>
+
+    <section class="card2 section" aria-labelledby="perf-title">
+      <div class="card-head">
+        <div><h2 id="perf-title">Performance</h2><p id="perf-sub">Last 30 days</p></div>
+        <div class="controls">
+          <div class="seg" role="group" aria-label="Date range">
+            <button type="button" data-range="7" aria-pressed="false">7D</button>
+            <button type="button" data-range="30" aria-pressed="true">30D</button>
+          </div>
+          <div class="select"><label class="sr-only" for="chart-pick">Listing</label><select id="chart-pick"></select><svg class="ico"><use href="#i-down"/></svg></div>
+        </div>
+      </div>
+      <div class="legend2" id="legend"></div>
+      <div id="chart" class="chart2"></div>
+      <p class="field-hint" style="margin:10px 0 0;font-size:12px;color:#a79fbd">Impressions count once per visitor session. Views are listing page opens. Days are in UTC.</p>
+    </section>
+
+    <div class="grid-2">
+      <section aria-labelledby="list-title">
+        <div class="section-title"><h2 id="list-title">Your listings<span class="count" id="list-count">0</span></h2></div>
+        <div id="list" class="list2"></div>
+      </section>
+
+      <section class="card2" id="profile" aria-labelledby="profile-title" style="margin-top:28px" hidden>
+        <div class="card-head"><div><h2 id="profile-title">Your maker page</h2><p>Logo, banner, bio and links shown on your public page. Changes go live after review. <a id="pf-view" href="/makers/">View your page</a></p></div></div>
+        <div class="alert" id="pf-state" hidden role="status"></div>
+        <form id="pf-form" class="f2" novalidate>
+          <div class="fld" id="pf-pick-wrap" hidden><label for="pf-pick">Maker page</label><select id="pf-pick"></select></div>
+          <div class="fld"><label for="pf-name">Display name <span class="cc" data-cc-for="pf-name"></span></label><input id="pf-name" name="name" required maxlength="60" autocomplete="organization"></div>
+          <div class="fld"><label for="pf-bio">Short bio <span class="cc" data-cc-for="pf-bio"></span></label><textarea id="pf-bio" name="bio" maxlength="400" rows="4" aria-describedby="pf-bio-h"></textarea><small id="pf-bio-h" class="hint">Plain text only. No HTML or email addresses.</small></div>
+          <div class="fld"><label for="pf-web">Website</label><input id="pf-web" name="website" type="url" inputmode="url" maxlength="200" placeholder="https://" aria-describedby="pf-url-h"><small id="pf-url-h" class="hint">Links must start with https://</small></div>
+          <details class="pf-soc" id="pf-soc">
+            <summary>Social links <span class="cc" id="pf-soc-n">none added</span></summary>
+            <ul id="pf-socials" class="pf-soc-list" aria-label="Added social links"></ul>
+            <p class="hint" id="pf-soc-empty">No social links yet.</p>
+            <fieldset class="pf-add"><legend>Add link</legend>
+              <div class="pf-add-row">
+                <div class="fld"><label for="pf-add-k">Platform</label><select id="pf-add-k"></select></div>
+                <div class="fld pf-add-url"><label for="pf-add-u">URL</label><input id="pf-add-u" type="url" inputmode="url" maxlength="200" placeholder="https://" aria-describedby="pf-add-msg"></div>
+                <button type="button" class="btn btn-sm" id="pf-add-btn">+ Add link</button>
+              </div>
+              <p class="hint" id="pf-add-msg" role="status" aria-live="polite"></p>
+            </fieldset>
+          </details>
+          <div class="pf-grid">
+            <div class="fld"><label for="pf-logo">Logo <span class="cc">square, JPEG/PNG/WebP</span></label><input id="pf-logo" type="file" accept="image/jpeg,image/png,image/webp"><img id="pf-logo-prev" class="pf-prev pf-prev-logo" alt="Current logo" hidden></div>
+            <div class="fld"><label for="pf-banner">Banner <span class="cc">wide, JPEG/PNG/WebP</span></label><input id="pf-banner" type="file" accept="image/jpeg,image/png,image/webp"><img id="pf-banner-prev" class="pf-prev" alt="Current banner" hidden></div>
+          </div>
+          <div class="alert err" id="pf-msg" hidden role="alert"></div>
+          <button type="submit" class="btn btn-primary" id="pf-save">Submit for review</button>
+        </form>
+      </section>
+      <section class="card2" id="apikeys" aria-labelledby="apikeys-title" style="margin-top:28px">
+        <div class="card-head"><div><h2 id="apikeys-title">API keys</h2><p>Post and update listings from your own tools or AI agent. <a href="/community/api/">API docs</a></p></div></div>
+        <div id="ak-new" class="ak-new" hidden>
+          <p class="ak-warn">Copy your key now. It won't be shown again. It starts working within about a minute.</p>
+          <div class="ak-keyrow"><code id="ak-key"></code><button type="button" class="btn btn-sm btn-primary" id="ak-copy">Copy</button></div>
+        </div>
+        <ul class="ak-list" id="ak-list"></ul>
+        <form id="ak-form" class="ak-form">
+          <input name="label" maxlength="40" placeholder="Key name, e.g. My agent" aria-label="Key name">
+          <button type="submit" class="btn btn-primary" id="ak-create">Create key</button>
+        </form>
+      </section>
+      <section class="card2" id="support" aria-labelledby="support-title" style="margin-top:28px">
+        <div class="card-head"><div><h2 id="support-title">Support</h2><p>Questions about a listing, review or analytics? We reply by email to the address on your account.</p></div></div>
+        <form id="support-form" class="f2">
+          <div class="fld"><label for="sp-l">Listing <span class="cc">optional</span></label><select id="sp-l" name="listingId"><option value="">None</option></select></div>
+          <div class="fld"><label for="sp-s">Subject <span class="cc" data-cc-for="sp-s"></span></label><input id="sp-s" name="subject" required maxlength="120" placeholder="What can we help with?"></div>
+          <div class="fld"><label for="sp-m">Message <span class="cc" data-cc-for="sp-m"></span></label><textarea id="sp-m" name="message" required maxlength="4000" rows="5" placeholder="Share as much detail as you can."></textarea></div>
+          <div class="alert err" id="support-msg" hidden role="alert"></div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Send to support</button>
+          <p class="field-hint" style="text-align:center">Or email <a class="inl" href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a></p>
+        </form>
+      </section>
+    </div>
+  </div>
+
+
+</main>
+
+<template id="tpl">
+  <article class="li">
+    <div class="li-top">
+      <span class="li-thumb-wrap"><img class="li-thumb" alt="" width="64" height="64" loading="lazy" decoding="async"><span class="ph" hidden aria-hidden="true"></span></span>
+      <div class="li-main">
+        <h3 class="li-title"></h3>
+        <div class="li-sub"><span class="pill"></span><span class="li-date"></span></div>
+      </div>
+    </div>
+    <p class="li-reason" hidden></p>
+    <div class="li-stats" role="list"></div>
+    <div class="li-actions">
+      <button type="button" class="btn" data-a="edit"><svg class="ico"><use href="#i-edit"/></svg>Edit</button>
+      <a class="icon-btn view" target="_blank" rel="noopener" aria-label="View live listing" title="View"><svg class="ico"><use href="#i-ext"/></svg></a>
+      <button type="button" class="icon-btn" data-a="share" aria-label="Share" title="Share"><svg class="ico"><use href="#i-share"/></svg></button>
+      <button type="button" class="icon-btn" data-a="unpublish" aria-label="Unpublish" title="Unpublish"><svg class="ico"><use href="#i-eyeoff"/></svg></button>
+      <button type="button" class="icon-btn" data-a="republish" aria-label="Republish" title="Republish"><svg class="ico"><use href="#i-redo"/></svg></button>
+      <button type="button" class="icon-btn danger" data-a="delete" aria-label="Delete" title="Delete"><svg class="ico"><use href="#i-trash"/></svg></button>
+    </div>
+  </article>
+</template>
+
+<!-- Edit sheet -->
+<div class="scrim" id="scrim" hidden></div>
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+  <div class="sheet-grab" aria-hidden="true"></div>
+  <div class="sheet-head">
+    <div><h2 id="sheet-title">Edit listing</h2><p>Edits are re-screened automatically.</p></div>
+    <button type="button" class="icon-btn" data-close-sheet aria-label="Close"><svg class="ico"><use href="#i-x"/></svg></button>
+  </div>
+  <form id="edit-form" class="sheet-body f2">
+    <fieldset class="fgroup"><legend>Basics</legend>
+      <div class="fld"><label for="ed-name">Title <span class="cc" data-cc-for="ed-name"></span></label><input id="ed-name" name="name" required maxlength="120"></div>
+      <div class="fld"><label for="ed-url">Link</label><input id="ed-url" name="projectUrl" type="url" required inputmode="url" placeholder="https://"></div>
+      <div class="fld"><label for="ed-stage">Stage</label><div class="select"><select id="ed-stage" name="stage" required><option value="Concept">Concept</option><option value="In development">In development</option><option value="Beta / testing">Beta / testing</option><option value="Released">Released</option><option value="Discontinued">Discontinued</option></select></div></div>
+      <div class="fld"><label for="ed-label">Status label <span class="cc" data-cc-for="ed-label"></span></label><input id="ed-label" name="statusLabel" maxlength="24" placeholder="e.g. Needs testers, Beta, v1.5" aria-describedby="ed-label-h"><small id="ed-label-h" class="hint">Optional. Shown as a small badge on your card. Up to 24 characters; reviewed like the rest of your listing.</small></div>
+    </fieldset>
+    <fieldset class="fgroup"><legend>Description</legend>
+      <div class="fld"><label for="ed-short">Short description <span class="cc" data-cc-for="ed-short"></span></label><textarea id="ed-short" name="pitchShort" required maxlength="280" rows="3"></textarea></div>
+      <div class="fld"><label for="ed-long">Long description <span class="cc" data-cc-for="ed-long"></span></label><textarea id="ed-long" name="descriptionLong" required maxlength="4000" rows="7"></textarea></div>
+    </fieldset>
+    <fieldset class="fgroup"><legend>Media &amp; tags</legend>
+      <div class="media-row">
+        <span class="mp-thumb" id="ed-media-thumb" aria-hidden="true"></span>
+        <div class="mp-body">
+          <b>Media</b>
+          <p id="ed-media-note"></p>
+          <div class="progress" id="ed-vid-prog" hidden><div class="bar"><i id="ed-vid-bar"></i></div><span id="ed-vid-pct">0%</span><button type="button" class="linkbtn" id="ed-vid-cancel">Cancel</button></div>
+          <div class="cover-pick" id="ed-cover" hidden></div>
+          <div class="mp-actions" id="ed-media-actions">
+            <label class="btn btn-sm" for="ed-media-file"><svg class="ico"><use href="#i-upload"/></svg><span id="ed-media-up-label">Upload image or video</span></label>
+            <input type="file" id="ed-media-file" accept="image/jpeg,image/png,image/webp,image/gif,video/mp4,video/webm" class="sr-only">
+            <button type="button" class="btn btn-sm" id="ed-cover-btn" hidden><svg class="ico"><use href="#i-frame"/></svg>Cover frame</button>
+            <button type="button" class="btn btn-sm btn-quiet-danger" id="ed-media-remove"><svg class="ico"><use href="#i-trash"/></svg>Remove</button>
+          </div>
+        </div>
+      </div>
+      <p class="field-hint">One image or one video. Images: JPEG, PNG or WebP. Videos: MP4 or WebM up to 50 MB, shown as the listing's display media after a quick review. Your listing stays live meanwhile.</p>
+      <details class="fallback" id="ed-link-more"><summary>Or paste an image or video link</summary>
+        <div class="fld"><label for="ed-link" class="sr-only">Image or video link</label><input id="ed-link" type="url" inputmode="url" maxlength="500" placeholder="https://… (image, YouTube, Vimeo, .mp4)"></div>
+        <input type="hidden" name="imageUrl" id="ed-img"><input type="hidden" name="videoUrl" id="ed-video">
+      </details>
+      <div class="fld"><label for="ed-tags">Tags <span class="cc" data-cc-for="ed-tags"></span></label><input id="ed-tags" name="tags" maxlength="160" placeholder="e.g. productivity, ios"><p class="field-hint">Comma-separated, up to 6.</p></div>
+    </fieldset>
+    <p class="field-hint">Clean edits stay live; edge cases go back to review.</p>
+    <div class="alert err" id="edit-msg" hidden role="alert"></div>
+  </form>
+  <div class="sheet-foot">
+    <button type="button" class="btn" data-close-sheet>Cancel</button>
+    <button type="submit" form="edit-form" class="btn btn-primary" id="edit-save">Save changes</button>
+  </div>
+</section>
+
+<!-- Confirm dialog -->
+<div class="dialog" id="dialog" role="alertdialog" aria-modal="true" aria-labelledby="dlg-title" aria-describedby="dlg-text" hidden>
+  <span class="d-ico" id="dlg-ico"><svg class="ico"><use href="#i-trash"/></svg></span>
+  <h2 id="dlg-title"></h2>
+  <p id="dlg-text"></p>
+  <div class="d-actions"><button type="button" class="btn" id="dlg-no">Cancel</button><button type="button" class="btn btn-danger" id="dlg-yes">Delete</button></div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+<script src="/community/dashboard/classic/profile.js?v=3" defer></script>
+<!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="duf-brand"><a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47" loading="lazy"></a><p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p><form class="duf-nl" novalidate><div class="duf-book"><a href="/free-book/"><img src="/assets/gift/humanity-x-off-the-ground-cover.webp" alt="Humanity X: Off the Ground cover" width="56" height="90" loading="lazy" decoding="async"></a><div><h3 class="duf-bk-h">Get the free book</h3><p class="duf-bk-t"><a href="/free-book/">Humanity X: Off the Ground</a></p><p class="duf-bk-s">Book 1 of the Humanity X Trilogy. Join the email list and download the full novel right away in PDF, EPUB and Word.</p></div></div><label for="dufEmail">Your email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Get the book</button></div><input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true"><label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label><p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form><div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg></a></div></div><div class="duf-cols"><div class="duf-col"><h3>Marketplace</h3><ul><li><a href="/#projects">Browse projects</a></li><li><a href="/league/">Maker League</a></li><li><a href="/makers/">Creators</a></li><li><a href="/community/submit/">List your project free</a></li><li><a href="/community/dashboard/">Creator dashboard</a></li></ul></div><div class="duf-col"><h3>Resources</h3><ul><li><a href="/blog/">Blog</a></li><li><a href="/community/api/">Developer API</a></li><li><a href="/support/">Support</a></li><li><button type="button" data-duf-share>Share this page</button></li></ul></div><div class="duf-col"><h3>Company</h3><ul><li><a href="/store/">Digital Underground store</a></li><li><a href="mailto:digitalunderground.store@proton.me">Contact us</a></li><li><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank">Follow @DigitalUG_Store</a></li></ul></div></div></div><div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground · Ontario, Canada</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div></footer><!--/du-site-foot-->
+</body>
+</html>

@@ -19,7 +19,7 @@
 
 /games/*
   X-Robots-Tag: noindex
-/community/dashboard-v2/*
+/community/dashboard/*
   X-Robots-Tag: noindex, nofollow
   Cache-Control: no-cache
 /assets/signup.js

@@ -17,7 +17,7 @@ ORG = {"@type": "Organization", "@id": f"{BASE}/#org", "name": "Digital Undergro
 BLOCK_RE = re.compile(r'\n?<script type="application/ld\+json" id="du-org-ld">.*?</script>', re.S)
 SKIP_DIRS = {"node_modules", "dist", "src", "scripts", "tools", "docs", "workers", "functions", ".git",
              "screening-room-7k3q", "store-preview-r8m2", "owner"}
-SKIP_PATHS = {"/community/dashboard-v2/"}  # another worker's page
+SKIP_PATHS = {"/community/dashboard/", "/community/dashboard/edit/"}  # dashboard v2 has its own app header
 
 
 def has_meta(head, attr, key):

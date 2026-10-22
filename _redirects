@@ -12,3 +12,11 @@
 /cyberarena/* https://kerzylabs.pages.dev/play/cyberarena/ 301
 /free-browser-fps-game https://kerzylabs.pages.dev/play/cyberarena/ 301
 /free-browser-fps-game/* https://kerzylabs.pages.dev/play/cyberarena/ 301
+# Store redesign went live at /store/ on Oct 22, 2026: old preview URLs point at the live pages.
+/store-preview-r8m2/p/* /store/p/:splat 301
+/store-preview-r8m2/product.html /store/p/pantry-week/ 301
+/store-preview-r8m2/* /store/ 301
+/store-preview-r8m2 /store/ 301
+# Dashboard v2 went live at /community/dashboard/ on Oct 22, 2026 (classic one with video uploads: /community/dashboard/classic/).
+/community/dashboard-v2/* /community/dashboard/:splat 301
+/community/dashboard-v2 /community/dashboard/ 301

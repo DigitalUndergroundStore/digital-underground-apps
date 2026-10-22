@@ -29,9 +29,10 @@
     root.innerHTML =
       '<div class="card signin"><h2>Sign in</h2><p class="muted" style="margin-bottom:14px;font-size:.9rem">Log in with your creator email and password.</p>' +
       '<form id="si"><div class="fld"><label for="si-e">Email</label><input class="ctl" id="si-e" type="email" autocomplete="email" required></div>' +
-      '<div class="fld"><label for="si-p">Password</label><input class="ctl" id="si-p" type="password" autocomplete="current-password" required></div>' +
+      '<div class="fld"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><label for="si-p" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:6px">Password</label><a id="si-forgot" href="/login/?forgot=1&amp;next=%2Fcommunity%2Fdashboard%2F" style="font-size:.85rem;color:#c4b5fd">Forgot password?</a></div><input class="ctl" id="si-p" type="password" autocomplete="current-password" required></div>' +
       '<p class="err" id="si-err" role="alert"></p><button class="btn primary" type="submit">Sign in</button> ' +
-      '<a class="btn ghost" href="/login/?next=%2Fcommunity%2Fdashboard%2F">Google, X or forgot password</a></form></div>';
+      '<a class="btn ghost" href="/login/?next=%2Fcommunity%2Fdashboard%2F">Continue with Google or X</a></form></div>';
+    root.querySelector("#si-forgot").addEventListener("click", function () { var v = root.querySelector("#si-e").value.trim(); if (v) this.href = "/login/?forgot=1&email=" + encodeURIComponent(v) + "&next=%2Fcommunity%2Fdashboard%2F"; });
     root.querySelector("#si").addEventListener("submit", function (e) {
       e.preventDefault();
       var err = root.querySelector("#si-err"); err.textContent = "";

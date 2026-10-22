@@ -65,8 +65,13 @@
       if (d.ok) { history.replaceState(null, "", "/login/"); setTimeout(function () { location.href = "/login/"; }, 1800); }
     }).catch(function () { say("Network error. Try again."); }).then(function () { $("rgo").disabled = false; });
   });
+  function showForgot() { only("f-forgot", "Reset your password", "Enter your account email and we'll send you a reset link that works for 1 hour."); say(""); if (noMail) showNoMail();
+    var pre = qs.get("email") || $("em").value.trim(); if (pre && !$("fem").value) $("fem").value = pre; $("fem").focus(); }
+  $("forgot").addEventListener("click", function (e) { e.preventDefault(); history.pushState(null, "", "/login/?forgot=1" + (qs.get("next") ? "&next=" + encodeURIComponent(next) : "")); showForgot(); });
+  window.addEventListener("popstate", function () { location.reload(); });
   if (resetTok) { history.replaceState(null, "", "/login/?reset=1"); if (resetTok === "1") resetTok = ""; only("f-reset", "Choose a new password", "Pick something you don't use anywhere else."); }
-  else if (qs.get("forgot")) { only("f-forgot", "Reset your password", "We'll email you a link that works for 1 hour."); if (noMail) showNoMail(); }
+  else if (qs.get("forgot")) showForgot();
+
   if (qs.get("mfa")) showMfa(qs.get("mfa"));
   if (qs.get("err")) say(ERR[qs.get("err")] || "Sign-in failed. Try again.");
 })();

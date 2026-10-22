@@ -83,7 +83,7 @@ h2 { margin: 0 0 12px; font-size: 20px; }
 .item .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .item .actions .btn { flex: 1 1 120px; }
 .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; font-weight: 600; font-size: 14px; }
-.field input, .field textarea, .field select {
+.field input, .field textarea, .field select, #assign-form input, #assign-form textarea {
   min-height: 48px; padding: 10px 14px; border-radius: 14px;
   border: 1px solid var(--line); background: rgba(8,6,16,.85); color: var(--text); font: inherit;
 }

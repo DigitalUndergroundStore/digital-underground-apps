@@ -6,7 +6,7 @@
   var root = $("#root"), L = null, saved = null, saveState = "saved", pendingRemovals = {};
   var STAGES = ["Concept", "In development", "Beta / testing", "Released", "Discontinued"];
   var LIM = { name: 120, pitchShort: 280, descriptionLong: 4000, statusLabel: 24 };
-  var DKEY = "du2-draft:" + id, MAX_IMAGES = 8, MAX_SIDE = 1600;
+  var DKEY = "du2-draft:" + id, MAX_IMAGES = 8, MAX_SIDE = 1600, MAX_TAGS = 6, tags = [];
 
   /* ---------- toast with optional undo ---------- */
   var toastT;
@@ -20,9 +20,9 @@
   /* ---------- form values / dirty state ---------- */
   function vals() {
     var f = $("#ef"); if (!f) return null;
-    return { name: f.name.value, pitchShort: f.pitchShort.value, descriptionLong: f.descriptionLong.value, projectUrl: f.projectUrl.value.trim(), stage: f.stage.value, statusLabel: f.statusLabel.value, videoUrl: f.videoUrl.value.trim() };
+    return { name: f.name.value, pitchShort: f.pitchShort.value, descriptionLong: f.descriptionLong.value, projectUrl: f.projectUrl.value.trim(), stage: f.stage.value, statusLabel: f.statusLabel.value, videoUrl: f.videoUrl.value.trim(), tags: tags.slice() };
   }
-  function fromListing(l) { return { name: l.name || "", pitchShort: l.pitchShort || "", descriptionLong: l.descriptionLong || "", projectUrl: l.projectUrl || "", stage: l.stage || "Released", statusLabel: l.statusLabel || "", videoUrl: (l.pendingVideo && l.pendingVideo.url) || l.videoUrl || "" }; }
+  function fromListing(l) { return { name: l.name || "", pitchShort: l.pitchShort || "", descriptionLong: l.descriptionLong || "", projectUrl: l.projectUrl || "", stage: l.stage || "Released", statusLabel: l.statusLabel || "", videoUrl: (l.pendingVideo && l.pendingVideo.url) || l.videoUrl || "", tags: (l.tags || []).slice() }; }
   function same(a, b) { return JSON.stringify(a) === JSON.stringify(b); }
   function dirty() { var v = vals(); return !!v && !same(v, saved); }
   function setState(s) {
@@ -75,7 +75,7 @@
     var v = vals(), errs = validate(v), first = Object.keys(errs)[0];
     if (first) { var el = $("#ef")[first]; if (el) el.focus(); showForm(); $("#formerr").textContent = "Fix the highlighted fields first."; return; }
     $("#formerr").textContent = ""; setState("saving");
-    var fields = { name: v.name, pitchShort: v.pitchShort, descriptionLong: v.descriptionLong, projectUrl: v.projectUrl, stage: v.stage, statusLabel: v.statusLabel };
+    var fields = { name: v.name, pitchShort: v.pitchShort, descriptionLong: v.descriptionLong, projectUrl: v.projectUrl, stage: v.stage, statusLabel: v.statusLabel, tags: v.tags };
     if (v.videoUrl !== saved.videoUrl && v.videoUrl) fields.videoUrl = v.videoUrl;
     D.api("POST", { action: "save", id: id, version: L.version, fields: fields }).then(function (d) {
       if (d.ok) {
@@ -98,7 +98,7 @@
   function images() { return (L.images || []).filter(function (im) { return !pendingRemovals[im.id]; }); }
   function preview() {
     var v = vals() || saved, ims = images(), cov = ims[0] ? ims[0].src : (L.legacyImage || "");
-    var ch = [L.priceLabel ? '<span class="chip cy">' + esc(L.priceLabel) + "</span>" : "", v.statusLabel ? '<span class="chip">' + esc(v.statusLabel) + "</span>" : '<span class="chip">' + esc(v.stage) + "</span>"].concat((L.tags || []).slice(0, 3).map(function (t) { return '<span class="chip">#' + esc(t) + "</span>"; })).join("");
+    var ch = [L.priceLabel ? '<span class="chip cy">' + esc(L.priceLabel) + "</span>" : "", v.statusLabel ? '<span class="chip">' + esc(v.statusLabel) + "</span>" : '<span class="chip">' + esc(v.stage) + "</span>"].concat((v.tags || []).slice(0, 3).map(function (t) { return '<span class="chip">#' + esc(t) + "</span>"; })).join("");
     $("#pv-card").innerHTML = '<div class="pv-media">' + (cov ? '<img src="' + esc(cov) + '" alt="">' : esc((v.name || "?").charAt(0).toUpperCase())) + '</div><div class="pv-body"><strong>' + esc(v.name || "Untitled") + '</strong><span class="by">by ' + esc(L.makerName || "you") + "</span><p>" + esc(v.pitchShort || "Your short pitch appears here.") + '</p><div class="chips">' + ch + "</div></div>";
     if (pvIdx >= ims.length) pvIdx = 0;
     var gal = ims.length ? '<div class="pv-hero"><img src="' + esc(ims[pvIdx].src) + '" alt="' + esc(ims[pvIdx].alt) + '"></div>' + (ims.length > 1 ? '<div class="pv-strip">' + ims.map(function (im, i) { return '<img data-i="' + i + '" class="' + (i === pvIdx ? "on" : "") + '" src="' + esc(im.src) + '" alt="' + esc(im.alt || "Image " + (i + 1)) + '">'; }).join("") + "</div>" : "") : cov ? '<div class="pv-hero"><img src="' + esc(cov) + '" alt=""></div>' : "";
@@ -294,6 +294,53 @@
     window.addEventListener("dragover", function (e) { e.preventDefault(); }); window.addEventListener("drop", function (e) { e.preventDefault(); });
   }
 
+  /* ---------- tags: pill input (comma, Enter or paste adds; x or Backspace removes) ---------- */
+  function cleanTag(t) { return String(t || "").toLowerCase().replace(/[^a-z0-9 +#.-]/g, "").replace(/\s+/g, " ").trim().slice(0, 24); }
+  function addTags(raw) {
+    var added = false, full = false;
+    String(raw || "").split(/[,\n]/).forEach(function (t) {
+      var c = cleanTag(t); if (!c || tags.indexOf(c) >= 0) return;
+      if (tags.length >= MAX_TAGS) { full = true; return; }
+      tags.push(c); added = true;
+    });
+    $("#e-tags").textContent = full ? "Up to " + MAX_TAGS + " tags." : "";
+    if (added) { renderTags(); onInput(); }
+    return added;
+  }
+  function removeTag(i) { tags.splice(i, 1); $("#e-tags").textContent = ""; renderTags(); onInput(); }
+  function renderTags() {
+    var box = $("#tagbox"); if (!box) return;
+    box.querySelectorAll(".tag").forEach(function (n) { n.remove(); });
+    var inp = $("#f-tagin");
+    tags.forEach(function (t, i) {
+      var sp = document.createElement("span"); sp.className = "tag"; sp.style.animationDelay = "0s";
+      sp.innerHTML = "<span>#" + esc(t) + '</span><button type="button" aria-label="Remove tag ' + esc(t) + '">×</button>';
+      sp.querySelector("button").onclick = function () { removeTag(i); inp.focus(); };
+      box.insertBefore(sp, inp);
+    });
+    $("#c-tags").textContent = tags.length + "/" + MAX_TAGS;
+    inp.placeholder = tags.length ? (tags.length >= MAX_TAGS ? "" : "Add another…") : "e.g. productivity, ios";
+  }
+  function setTags(list) { tags = (list || []).map(cleanTag).filter(Boolean).slice(0, MAX_TAGS); renderTags(); }
+  function bindTags() {
+    var inp = $("#f-tagin"), box = $("#tagbox");
+    box.addEventListener("click", function (e) { if (e.target === box) inp.focus(); });
+    inp.addEventListener("input", function (e) {
+      e.stopPropagation();
+      if (inp.value.indexOf(",") >= 0) { var parts = inp.value.split(","), rest = parts.pop(); addTags(parts.join(",")); inp.value = rest.replace(/^\s+/, ""); }
+    });
+    inp.addEventListener("change", function (e) { e.stopPropagation(); });
+    inp.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === "Tab" && inp.value.trim()) { if (inp.value.trim()) { e.preventDefault(); addTags(inp.value); inp.value = ""; } else if (e.key === "Enter") e.preventDefault(); }
+      else if (e.key === "Backspace" && !inp.value && tags.length) { e.preventDefault(); removeTag(tags.length - 1); }
+    });
+    inp.addEventListener("paste", function (e) {
+      var t = (e.clipboardData || window.clipboardData).getData("text");
+      if (t && /[,\n]/.test(t)) { e.preventDefault(); addTags(inp.value + t); inp.value = ""; }
+    });
+    inp.addEventListener("blur", function () { if (inp.value.trim()) { addTags(inp.value); inp.value = ""; } });
+  }
+
   /* ---------- page ---------- */
   function fld(name, label, html, hint) { return '<div class="fld"><label for="f-' + name + '">' + label + (LIM[name] ? ' <span class="count" id="c-' + name + '"></span>' : "") + "</label>" + html + (hint ? '<p class="hint">' + hint + "</p>" : "") + '<p class="err" id="e-' + name + '" role="alert"></p></div>'; }
   function render() {
@@ -313,7 +360,8 @@
       fld("projectUrl", "Project link", '<input class="ctl" id="f-projectUrl" name="projectUrl" type="url" inputmode="url" placeholder="https://" value="' + esc(v.projectUrl) + '">') +
       '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
       fld("stage", "Stage", '<select class="ctl" id="f-stage" name="stage">' + STAGES.map(function (s) { return "<option" + (s === v.stage ? " selected" : "") + ">" + s + "</option>"; }).join("") + "</select>") +
-      fld("statusLabel", "Status label", '<input class="ctl" id="f-statusLabel" name="statusLabel" maxlength="30" placeholder="e.g. Coming soon" value="' + esc(v.statusLabel) + '">') + "</div></div>" +
+      fld("statusLabel", "Status label", '<input class="ctl" id="f-statusLabel" name="statusLabel" maxlength="30" placeholder="e.g. Coming soon" value="' + esc(v.statusLabel) + '">') + "</div>" +
+      '<div class="fld"><label for="f-tagin">Tags <span class="count" id="c-tags"></span></label><div class="ctl tagbox" id="tagbox"><input id="f-tagin" autocomplete="off" aria-describedby="h-tags"></div><p class="hint" id="h-tags">Type a tag and press comma or Enter, or paste a comma-separated list. Up to ' + MAX_TAGS + ' tags. Click × to remove one.</p><p class="err" id="e-tags" role="alert"></p></div></div>' +
       '<div class="card"><div class="card-head"><h2>Gallery <span class="muted" style="font-weight:400;font-size:.85rem" id="gcount"></span></h2></div>' +
       '<p class="hint" style="margin:-6px 0 12px">The first image is the cover on your marketplace card. Drag to reorder (long-press on phones), or use the arrow buttons. Images are resized in your browser and checked before they show.</p>' +
       '<div class="drop" id="drop" role="button" tabindex="0" aria-describedby="drop-h"><strong>Drop images here</strong> or click to choose<div class="hint" id="drop-h">JPEG, PNG or WebP · up to ' + MAX_IMAGES + " images</div></div>" +
@@ -328,6 +376,7 @@
       '<div class="savebar-mobile"><span data-savepill class="pill"></span><span class="select-row"><button type="button" class="btn pv-toggle">Back to form</button><button type="button" class="btn primary" data-save>Save</button></span></div></aside></div>';
 
     var f = $("#ef");
+    tags = []; setTags(saved.tags); bindTags();
     f.addEventListener("input", onInput); f.addEventListener("change", onInput);
     f.addEventListener("submit", function (e) { e.preventDefault(); save(); });
     ["name", "pitchShort", "descriptionLong", "projectUrl", "videoUrl"].forEach(function (k) { f[k].addEventListener("blur", function () { var e = validate(vals()); Object.keys(LIM).concat(["projectUrl", "videoUrl"]).forEach(function (kk) { if (kk !== k && !$("#e-" + kk).textContent) fieldErr(kk, ""); }); fieldErr(k, e[k]); }); });
@@ -341,10 +390,10 @@
     try {
       var dr = JSON.parse(localStorage.getItem(DKEY) || "null");
       if (dr && dr.v && !same(dr.v, saved)) {
-        Object.keys(dr.v).forEach(function (k) { if (f[k]) f[k].value = dr.v[k]; });
+        Object.keys(dr.v).forEach(function (k) { if (k !== "tags" && f[k]) f[k].value = dr.v[k]; }); if (dr.v.tags) setTags(dr.v.tags);
         var ban = $("#draftban"); ban.hidden = false;
         ban.innerHTML = "<span>Restored your unsaved draft from " + new Date(dr.at).toLocaleString() + "." + (dr.base !== L.version ? " The listing changed since then, so check before saving." : "") + '</span><button type="button" class="btn sm" id="discard">Discard draft</button>';
-        $("#discard").onclick = function () { localStorage.removeItem(DKEY); Object.keys(saved).forEach(function (k) { if (f[k]) f[k].value = saved[k]; }); ban.hidden = true; onInput(); };
+        $("#discard").onclick = function () { localStorage.removeItem(DKEY); Object.keys(saved).forEach(function (k) { if (k !== "tags" && f[k]) f[k].value = saved[k]; }); setTags(saved.tags); ban.hidden = true; onInput(); };
       }
     } catch (_) {}
     counters(); renderThumbs(); setState(dirty() ? "unsaved" : "saved");

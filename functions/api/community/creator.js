@@ -125,6 +125,7 @@ export async function applyEdit(context, kv, acct, row, f) {
   row.name = name;
   row.stage = stage;
   if (f.statusLabel !== undefined) { const sl = normalizeStatusLabel(f.statusLabel); if (sl) row.statusLabel = sl; else delete row.statusLabel; }
+  if (f.tags !== undefined) row.tags = normalizeTags(f.tags);
   row.pitchShort = pitchShort;
   row.descriptionLong = descriptionLong;
   row.projectUrl = projectUrl;

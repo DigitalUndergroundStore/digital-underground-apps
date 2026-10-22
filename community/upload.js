@@ -35,7 +35,44 @@
         return putPart("/api/community/video?v=" + encodeURIComponent(init.vid) + "&n=" + n, part, function (l) { onProgress && onProgress((done + l) / file.size); }, state)
           .then(function () { done += part.size; n++; onProgress && onProgress(done / file.size); return next(); });
       }
-      return Promise.resolve(next()).then(function () { return jsonReq("POST", "/api/community/video?action=finish", { vid: init.vid }); });
+      var framesP = grabFrames(file).catch(function () { return null; });
+      return Promise.resolve(next()).then(function () { return framesP; }).then(function (frames) {
+        var body = { vid: init.vid }; if (frames) body.frames = frames;
+        return jsonReq("POST", "/api/community/video?action=finish", body).then(function (d) {
+          // Screening hit a temporary error: retry once after a short wait (the hourly sweep is the backstop).
+          if (d.screen && d.screen.retry) return new Promise(function (r) { setTimeout(r, 20000); }).then(function () {
+            return jsonReq("POST", "/api/community/video?action=screen", { vid: init.vid }).then(function (d2) { return d2.listing ? d2 : d; }, function () { return d; });
+          });
+          return d;
+        });
+      });
+    });
+  }
+  /* ---- Auto-screen frames: 5 JPEGs spread over the video (10%..90%), max 512px wide, original aspect ---- */
+  function grabFrames(file) {
+    return new Promise(function (res, rej) {
+      var v = document.createElement("video"), url = URL.createObjectURL(file), out = [], ts = [];
+      v.muted = true; v.playsInline = true; v.preload = "auto"; v.src = url;
+      var to = setTimeout(function () { done(new Error("timeout")); }, 45000);
+      function done(err) { clearTimeout(to); URL.revokeObjectURL(url); if (err) rej(err); else res(out); }
+      v.addEventListener("error", function () { done(new Error("load")); }, { once: true });
+      v.addEventListener("loadedmetadata", function () {
+        var d = v.duration; if (!(d > 0) || !isFinite(d)) return done(new Error("duration"));
+        ts = [0.1, 0.3, 0.5, 0.7, 0.9].map(function (f) { return Math.round(d * f * 100) / 100; });
+        step();
+      }, { once: true });
+      function step() {
+        if (out.length === ts.length) return done();
+        v.addEventListener("seeked", function () {
+          try {
+            var W = v.videoWidth, H = v.videoHeight, s = Math.min(1, 512 / W), c = document.createElement("canvas");
+            c.width = Math.round(W * s); c.height = Math.round(H * s);
+            c.getContext("2d").drawImage(v, 0, 0, c.width, c.height);
+            out.push({ t: ts[out.length], data: c.toDataURL("image/jpeg", 0.8) }); step();
+          } catch (e) { done(e); }
+        }, { once: true });
+        v.currentTime = ts[out.length];
+      }
     });
   }
   function cancel(state) { state.canceled = true; if (state.xhr) state.xhr.abort(); }

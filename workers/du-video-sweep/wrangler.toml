@@ -1,0 +1,17 @@
+name = "du-video-sweep"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+workers_dev = false
+
+# Fallback only: videos are screened instantly at upload. This hourly cron retries uploads whose
+# instant screening hit a temporary error (Workers AI down, request cut off). Free plan: cron
+# triggers are included; at most a few KV reads/writes and AI calls per run.
+[triggers]
+crons = ["17 * * * *"]
+
+[[kv_namespaces]]
+binding = "COMMUNITY_KV"
+id = "5e086a24647c419f8ac5577b85a0c651"
+
+[ai]
+binding = "AI"

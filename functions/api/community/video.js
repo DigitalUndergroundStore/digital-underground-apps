@@ -3,13 +3,15 @@
  *   GET/HEAD /api/community/video?v={vid}                    play (Range supported)
  *   POST     /api/community/video?action=init   {id,size,type}   creator owns listing → { vid, chunk, parts }
  *   PUT      /api/community/video?v={vid}&n={part}  raw bytes
- *   POST     /api/community/video?action=finish {vid}        attach to listing, re-screen (new video → human review)
+ *   POST     /api/community/video?action=finish {vid,frames?}  attach to listing; with frames → instant auto-screen
+ *   POST     /api/community/video?action=screen {vid}         creator retry after a screening error
  */
-import { getKv, json, kvGetListing, saveListing } from "../../_lib/community.js";
+import { getKv, json, kvGetListing, promotePendingVideo, saveListing } from "../../_lib/community.js";
+import { FRAME_COUNT, FRAME_MAX_BYTES, FRAMES_KEY, autoScreenPendingVideo } from "../../_lib/video-screening.js";
 import { authCreatorEx, creatorListing, ownedListing, putAccount } from "../../_lib/creator.js";
 import {
   UPLOADS_PER_DAY, VIDEO_CHUNK, VIDEO_MAX_BYTES, VIDEO_TYPES, reserveSiteVideoQuota,
-  deleteVideo, getVideoMeta, newVid, putVideoMeta, putVideoPart, serveVideo, sniffVideo, uploadVid,
+  deleteVideo, getVideoMeta, getVideoPart, newVid, putVideoMeta, putVideoPart, serveVideo, sniffVideo, uploadVid,
 } from "../../_lib/video.js";
 
 function today() { return new Date().toISOString().slice(0, 10).replace(/-/g, ""); }
@@ -82,8 +84,34 @@ export async function onRequest(context) {
     row.updatedAt = Date.now();
     await saveListing(kv, row);
     if (old && old !== m.vid) context.waitUntil(deleteVideo(kv, old).catch(() => {}));
+    // Auto-screen: frames grabbed by the browser + server-parsed container metadata (see _lib/video-screening.js).
+    const frames = Array.isArray(body.frames) ? body.frames.slice(0, FRAME_COUNT + 1) : null;
+    if (frames && frames.every((f) => f && typeof f.data === "string" && f.data.length < FRAME_MAX_BYTES * 1.4)) {
+      await kv.put(FRAMES_KEY(m.vid), JSON.stringify({ frames: frames.map((f) => ({ t: Number(f.t), data: f.data })), tries: 0, at: Date.now() }), { expirationTtl: 7 * 86400 });
+      const screen = await runScreen(env, kv, m.vid);
+      const fresh = await kvGetListing(kv, m.listingId);
+      return json({ ok: true, screen, listing: creatorListing(fresh || row) });
+    }
     return json({ ok: true, listing: creatorListing(row) });
   }
 
+  if (request.method === "POST" && action === "screen") {
+    let body; try { body = await request.json(); } catch { body = {}; }
+    const m = await getVideoMeta(kv, String(body.vid || ""));
+    if (!m || m.creatorId !== acct.id) return json({ error: "Upload not found." }, 404);
+    const screen = await runScreen(env, kv, m.vid);
+    const fresh = await kvGetListing(kv, m.listingId);
+    return json({ ok: true, screen, listing: fresh ? creatorListing(fresh) : null });
+  }
+
   return json({ error: "Unknown action." }, 400);
+}
+
+async function runScreen(env, kv, vid) {
+  try {
+    return await autoScreenPendingVideo(env, kv, vid, { getVideoMeta, getVideoPart, deleteVideo, kvGetListing, saveListing, promotePendingVideo });
+  } catch (e) {
+    console.error("video auto-screen error", e);
+    return { decision: "pending", reasons: ["Automatic video check failed; it will be retried."], retry: true };
+  }
 }

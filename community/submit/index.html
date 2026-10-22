@@ -42,7 +42,7 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <link rel="manifest" href="/site.webmanifest">
 <script src="/community/ai-helper.js?v=1" defer></script>
-<script>addEventListener("DOMContentLoaded",function(){window.duAiHelper&&duAiHelper.mount(document.getElementById("form"));});</script>
+<script>addEventListener("DOMContentLoaded",function(){window.duAiHelper&&duAiHelper.mount(document.getElementById("form"),document.querySelector("#form > .sb-sec"));});</script>
 <style>.du-logo{display:inline-flex;align-items:center;line-height:0}.du-logo img{height:36px!important;width:auto!important;max-width:none!important;max-height:none!important;display:block;border-radius:0!important;box-shadow:none!important;filter:none!important}.du-logo-icon{display:none!important}@media (max-width:560px){.du-logo-full{display:none!important}.du-logo-icon{display:block!important}}</style>
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=11">
 <style>
@@ -60,6 +60,7 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
 .sb-sec legend span{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;background:rgba(139,92,246,.25);color:#ddd6fe}
 .sb-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.sb-2 label{min-width:0}
 .sb-sec .field-hint{margin:-6px 0 0}
+#form>.aih{margin:0}
 #form button[type=submit]{min-height:52px;font-size:16px}
 @media (max-width:360px){.sb-2{grid-template-columns:1fr}}
 </style>

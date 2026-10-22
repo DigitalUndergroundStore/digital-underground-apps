@@ -27,10 +27,11 @@
 .lg-v2 .lg-grid img,.lg-v2 .lg-grid .lg-ph{width:44px;height:44px;border-radius:10px;box-shadow:0 0 0 2px rgba(139,92,246,.3)}
 .lg-v2 .lg-grid button{min-height:32px;padding:0 14px;background:#8b5cf6;font-size:.75rem;font-weight:600;transition:all .2s}
 .lg-v2 .lg-grid button:not(:disabled):hover{background:#7c3aed;transform:translateY(-1px);box-shadow:0 4px 12px rgba(139,92,246,.4)}
-.lg-v2 .lg-grid li.is-mine{border-color:#34d399;background:rgba(52,211,153,.08)}
+.lg-v2 .lg-grid li.is-mine{border-color:#34d399;background:rgba(52,211,153,.08);animation:votePulse .5s ease}
+@keyframes votePulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+.lg-v2 .lg-share{transition:all .2s}.lg-v2 .lg-grid button{transition:all .2s}
 .lg-v2 .lg-grid li.is-mine button{background:#8b5cf6;box-shadow:0 0 0 3px rgba(139,92,246,.25)}
 .lg-v2 .lg-fine{font-size:.75rem;color:#7d8a9a;line-height:1.5;margin:16px 0 40px}
-@media (prefers-reduced-motion:reduce){.lg-v2 *{animation:none!important;transition:none!important}}
 @media (max-width:640px){.lg-v2 .lg-grid{grid-template-columns:1fr}}
 /* mobile fit fix */
 .lg-v2,.lg-v2 html{overflow-x:hidden}
@@ -41,4 +42,4 @@
 .lg-v2 .lg-grid .t,.lg-v2 .lg-list li>span:not(.n):not(.v){flex:1 1 auto;min-width:0;overflow:hidden}
 .lg-v2 .lg-list li>span:not(.n):not(.v) a,.lg-v2 .lg-list small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .lg-v2 .lg-grid button,.lg-v2 .lg-list .v,.lg-v2 .lg-list .n,.lg-v2 .lg-list img,.lg-v2 .lg-grid img{flex-shrink:0}
-@media (max-width:640px){.lg-v2 .wrap{padding:0 14px}.lg-v2 .lg-panel{padding:14px}.lg-v2 .lg-grid li:hover{transform:none}}
+@media (max-width:640px){.lg-v2 .wrap{padding:0 14px}.lg-v2 .lg-panel{padding:14px}}

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wolf Sniff by Wolfitway — Developer Marketplace — Digital Underground</title>
+<meta name="description" content="Wolf Sniff by Wolfitway: a Chrome/Firefox extension that shows what any site is built with, with proof for each detection and a 0–100 fix-difficulty score. Free · Lifetime €49.">
+<link rel="canonical" href="https://digitalundergroundstore.com/community/p/wolf-sniff/">
+<meta property="og:title" content="Wolf Sniff by Wolfitway | Digital Underground">
+<meta property="og:description" content="Wolf Sniff by Wolfitway: a Chrome/Firefox extension that shows what any site is built with, with proof for each detection and a 0–100 fix-difficulty score. Free · Lifetime €49.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digitalundergroundstore.com/community/p/wolf-sniff/">
+<meta property="og:image" content="https://digitalundergroundstore.com/assets/community/wolfitway/wolf-sniff-banner.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#05040c">
+<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Wolf Sniff","applicationCategory":"BrowserApplication","operatingSystem":"Chrome, Firefox","url":"https://digitalundergroundstore.com/community/p/wolf-sniff/","image":"https://digitalundergroundstore.com/assets/community/wolfitway/wolf-sniff-banner.webp","author":{"@type":"Organization","name":"Wolfitway","url":"https://wolfitway.com"},"offers":[{"@type":"Offer","price":"0","priceCurrency":"EUR"},{"@type":"Offer","price":"49","priceCurrency":"EUR","name":"Lifetime"}]}</script>
+<script src="/community/track.js"></script>
+<script src="/league/spotlight.js?v=1" defer></script>
+<style>
+  :root {
+    --bg: #07070d;
+    --bg-elevated: #0e0e16;
+    --bg-card: #111119;
+    --border: rgba(255,255,255,0.08);
+    --border-hover: rgba(139,92,246,0.45);
+    --text: #f1f5f9;
+    --text-muted: #b0bcc9;
+    --text-dim: #7d8a9a;
+    --accent: #8b5cf6;
+    --accent-soft: rgba(139,92,246,0.15);
+    --cyan: #22d3ee;
+    --success: #34d399;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 40% at 15% 0%, rgba(139,92,246,0.1), transparent);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+
+  /* Breadcrumb */
+  .breadcrumb {
+    padding: 16px 0 8px;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+  .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--text); }
+
+  /* Layout */
+  .listing {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 28px;
+    padding-bottom: 60px;
+  }
+
+  /* Entrance animations — reusable on any detail page */
+  @keyframes fadeUp {
+    from { transform: translateY(12px); }
+    to { transform: translateY(0); }
+  }
+  .listing > main > * {
+    animation: fadeUp 0.5s ease backwards;
+  }
+  .listing > main > *:nth-child(1) { animation-delay: 0.05s; }
+  .listing > main > *:nth-child(2) { animation-delay: 0.1s; }
+  .listing > main > *:nth-child(3) { animation-delay: 0.15s; }
+  .listing > main > *:nth-child(4) { animation-delay: 0.2s; }
+  .listing > main > *:nth-child(5) { animation-delay: 0.25s; }
+  .listing > main > *:nth-child(6) { animation-delay: 0.3s; }
+  .listing > main > *:nth-child(7) { animation-delay: 0.35s; }
+
+  /* Sidebar sticky + soft entrance */
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    align-self: start;
+    animation: fadeUp 0.6s ease 0.2s backwards;
+  }
+
+  /* Main */
+  .listing h1 { font-size: 2.25rem; font-weight: 700; letter-spacing: -0.025em; margin: 4px 0 6px; }
+  .byline { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 6px; }
+  .trust-line { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 16px; }
+  .byline a { color: var(--text-muted); text-decoration: none; }
+  .byline a:hover { color: var(--text); }
+
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn:hover {
+    border-color: var(--border-hover);
+    background: var(--accent-soft);
+    transform: translateY(-1px);
+  }
+  .btn-primary {
+    background: var(--accent);
+    border-color: transparent;
+    color: white;
+  }
+  .btn-primary:hover {
+    background: #7c3aed;
+    box-shadow: 0 4px 16px rgba(139,92,246,0.35);
+    transform: translateY(-1px);
+  }
+  .btn:focus-visible,
+  .nav-btn:focus-visible,
+  .gallery-nav:focus-visible,
+  .lightbox-nav:focus-visible,
+  .lightbox-close:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+  .tag {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: rgba(255,255,255,0.04);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tag:hover {
+    border-color: var(--border-hover);
+    color: var(--text);
+    background: var(--accent-soft);
+    transform: translateY(-1px);
+  }
+  .tag.price { color: var(--success); border-color: rgba(52,211,153,0.3); background: rgba(52,211,153,0.08); }
+
+  .desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px; max-width: 640px; }
+
+  /* Visual */
+  .visual {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 28px;
+    transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .visual:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 0 0 1px rgba(139,92,246,0.12), 0 12px 40px rgba(139,92,246,0.1);
+    transform: translateY(-2px);
+  }
+  .visual-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: rgba(0,0,0,0.3);
+    border-bottom: 1px solid var(--border);
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .dot-r { background: #ff5f57; }
+  .dot-y { background: #febc2e; }
+  .dot-g { background: #28c840; }
+  .visual-url {
+    flex: 1;
+    font-family: ui-monospace, SFMono-Regular, monospace;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    background: var(--bg);
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+  .stack-list { padding: 12px; }
+  .stack-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+  }
+  .stack-row:nth-child(odd) { background: rgba(255,255,255,0.02); }
+  .stack-row strong { font-weight: 600; }
+  .stack-row .meta { color: var(--text-dim); font-size: 0.78rem; }
+  .score-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(52,211,153,0.12);
+    color: var(--success);
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+
+  /* About card */
+  .about-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    transition: border-color 0.2s;
+  }
+  .about-card:hover {
+    border-color: rgba(139,92,246,0.25);
+  }
+  .about-card h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); margin-bottom: 12px; }
+  .about-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; }
+  .about-card p:last-child { margin-bottom: 0; }
+  .about-card strong { color: var(--text); font-weight: 600; }
+
+  /* Sidebar */
+  .sidebar { display: flex; flex-direction: column; gap: 14px; }
+  .details {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .details:hover {
+    border-color: rgba(139,92,246,0.3);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .details h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); margin-bottom: 14px; }
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.875rem;
+  }
+  .detail-row:last-child { border-bottom: none; }
+  .detail-row .label { color: var(--text-dim); }
+  .detail-row .value { text-align: right; font-weight: 500; }
+  .detail-row .value a { color: var(--text); text-decoration: none; }
+  .detail-row .value a:hover { color: var(--accent); }
+  .sidebar .btn { width: 100%; justify-content: center; margin-top: 4px; }
+  .note {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .note a { color: var(--text-muted); }
+
+  /* Gallery — swipeable carousel */
+  .gallery {
+    margin: 28px 0;
+    position: relative;
+  }
+  .gallery h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .gallery-track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 0 12px;
+    scrollbar-width: none;
+  }
+  .gallery-track::-webkit-scrollbar { display: none; }
+  .gallery-item {
+    position: relative;
+    flex: 0 0 78%;
+    max-width: 340px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    aspect-ratio: 4 / 3;
+    cursor: pointer;
+    scroll-snap-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s, box-shadow 0.25s;
+  }
+  .gallery-item:hover {
+    transform: scale(1.02);
+    border-color: var(--border-hover);
+    box-shadow: 0 8px 24px rgba(139,92,246,0.15);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .gallery-item:hover img { transform: scale(1.04); }
+  .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 10px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    font-size: 0.72rem;
+    color: white;
+  }
+  .gallery-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(139,92,246,0.05));
+    border-color: var(--accent);
+  }
+  .cta-content { text-align: center; padding: 12px; }
+  .cta-label { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+  .cta-title { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+  .cta-sub { font-size: 0.75rem; color: var(--accent); }
+
+  .gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid var(--border);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  .gallery-nav:hover { background: rgba(0,0,0,0.85); }
+  .gallery-nav.prev { left: -8px; }
+  .gallery-nav.next { right: -8px; }
+  @media (max-width: 600px) {
+    .gallery-nav { display: none; }
+  }
+  @media (min-width: 800px) {
+    .gallery-item { flex: 0 0 280px; }
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .lightbox.active {
+    display: flex;
+    opacity: 1;
+  }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    user-select: none;
+    transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1), transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateX(40px) scale(0.98);
+  }
+  .lightbox.active img {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  .lightbox img.slide-left {
+    opacity: 0;
+    transform: translateX(-40px) scale(0.98);
+  }
+  .lightbox img.slide-right {
+    opacity: 0;
+    transform: translateX(40px) scale(0.98);
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  .lightbox-close:hover { background: rgba(255,255,255,0.2); }
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  .lightbox-nav:hover { background: rgba(255,255,255,0.22); }
+  .lightbox-nav.prev { left: 16px; }
+  .lightbox-nav.next { right: 16px; }
+
+  /* Video section */
+  .video-section {
+    margin: 40px 0;
+  }
+  .video-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: #000;
+  }
+  .video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: #000;
+  }
+  .video-poster {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: filter 0.3s ease;
+  }
+  .video-poster:hover img { filter: brightness(0.6); }
+  .play-btn {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.95);
+    border: none;
+    color: #111;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
+  }
+  .play-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  }
+  .play-btn:active { transform: scale(1.02); }
+
+  .lightbox-caption {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.85rem;
+    background: rgba(0,0,0,0.5);
+    padding: 6px 14px;
+    border-radius: 999px;
+  }
+  .gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .gallery-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+  }
+  .gallery-dots span.active { background: var(--accent); }
+
+  .mobile-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(7,7,13,0.95);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+    padding: 12px 16px;
+    z-index: 30;
+  }
+  .mobile-cta .btn { width: 100%; justify-content: center; }
+  @media (max-width: 860px) {
+    .mobile-cta { display: block; }
+    body { padding-bottom: 70px; }
+  }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  @media (max-width: 860px) {
+    .listing { grid-template-columns: 1fr; }
+    .sidebar {
+      order: -1;
+      position: static;
+      animation: none;
+    }
+    .listing > main > * { animation-delay: 0s !important; }
+  }
+  @media (max-width: 520px) {
+    .listing h1 { font-size: 1.75rem; }
+    .demo-input { flex-direction: column; }
+    .actions { flex-direction: column; }
+    .actions .btn { width: 100%; justify-content: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) { .listing > main > *, .sidebar { animation: none !important; } }
+  .site-main{padding-top:4px}
+</style>
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=12">
+</head>
+<body><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/store/" aria-label="Digital Underground store home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=7" defer></script><!--/du-site-nav-->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Developer Marketplace</a> › Wolf Sniff
+  </nav>
+
+  <div class="listing">
+    <div class="site-main" id="main">
+      <h1>Wolf Sniff</h1>
+      <div class="byline">by <a href="/makers/wolfitway/">Wolfitway</a> · <a href="https://x.com/Wolfitway" target="_blank" rel="noopener">@Wolfitway</a></div>
+      <div class="trust-line">Built by Dan · 15+ years · Ships in public</div>
+
+      <div class="actions">
+        <a href="/community/p/?id=cm_mvfalhx5_0ef98909#contact" class="btn btn-primary">Contact the developer</a>
+        <a href="https://wolfitway.com" class="btn" target="_blank" rel="noopener">Maker site</a>
+      </div>
+
+      <div class="tags">
+        <span class="tag price">Free · Lifetime €49</span>
+        <span class="tag">App</span>
+        <span class="tag">#browser extension</span>
+        <span class="tag">#wordpress</span>
+        <span class="tag">#web dev</span>
+        <span class="tag">#agencies</span>
+      </div>
+
+      <p class="desc">Chrome/Firefox extension that shows what any site is built with (CMS, page builder, WordPress theme and plugins, hosting, analytics), each with the code that proves it, plus a 0–100 fix-difficulty score for quoting jobs.</p>
+
+      <div class="visual">
+        <div class="visual-bar">
+          <span class="dot dot-r"></span>
+          <span class="dot dot-y"></span>
+          <span class="dot dot-g"></span>
+          <div class="visual-url">shop.example.com</div>
+        </div>
+        <div class="stack-list">
+          <div class="stack-row">
+            <strong>WordPress</strong>
+            <span class="meta">v6.4.2 · meta generator</span>
+          </div>
+          <div class="stack-row">
+            <strong>Elementor</strong>
+            <span class="meta">3.18 · /plugins/elementor</span>
+          </div>
+          <div class="stack-row">
+            <strong>WooCommerce</strong>
+            <span class="meta">8.5 · body class</span>
+          </div>
+          <div class="stack-row">
+            <strong>SiteGround</strong>
+            <span class="meta">hosting · server header</span>
+          </div>
+          <div class="stack-row">
+            <strong>Cloudflare</strong>
+            <span class="meta">CDN · cf-ray</span>
+          </div>
+          <div class="stack-row">
+            <div>
+              <strong>Fix-difficulty</strong>
+              <span class="score-badge">68 / 100</span>
+            </div>
+            <span class="meta">moderate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <h2>In action</h2>
+        <button class="gallery-nav prev" id="galleryPrev" aria-label="Previous">‹</button>
+        <div class="gallery-track" id="galleryTrack">
+          <div class="gallery-item" data-src="/assets/community/wolfitway/wolf-sniff-banner.webp">
+            <img src="/assets/community/wolfitway/wolf-sniff-banner.webp" alt="Wolf Sniff preview" width="640" height="360" fetchpriority="high">
+            <div class="gallery-caption">Wolf Sniff</div>
+          </div>
+          <a data-out="cm_mvfalhx5_0ef98909" href="https://wolfitway.com/tools/wolf-sniff?ref=digitalunderground" rel="noopener" class="gallery-item gallery-cta" target="_blank">
+            <div class="cta-content">
+              <div class="cta-label">Ready to use it?</div>
+              <div class="cta-title">Get Wolf Sniff</div>
+              <div class="cta-sub">Free or €49 lifetime</div>
+            </div>
+          </a>
+        </div>
+        <button class="gallery-nav next" id="galleryNext" aria-label="Next">›</button>
+        <div class="gallery-dots">
+          <span class="active"></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <h2>About</h2>
+        <p>Wolf Sniff is a browser extension for freelancers and agencies who quote website fixes.</p>
+        <p>One click on any site shows the CMS and version, page builder, WordPress theme (including child themes) and plugins, hosting, CDN and analytics. Every detection comes with the script, header or tag that gave it away, so you can check it yourself. A fix-difficulty score (0–100, with reasons) helps you price a job or walk away.</p>
+        <p><strong>Free tier:</strong> platform and version, top 5 technologies with proof, and the WordPress fix-difficulty score; it runs in your browser.</p>
+        <p><strong>Lifetime (€49 once, limited number of licences, then a yearly plan):</strong> every technology found (120+ known), full plugin list with versions, score breakdown, text/CSV export, local scan history, up to 3 browsers. 14-day refund by email.</p>
+        <p>Store listings are marked as coming soon on the maker’s site.</p>
+      </div>
+
+      <div class="example-note">
+        <p style="font-size:0.85rem; color:var(--text-dim); margin-top:16px;">The stack view above is an example of what Wolf Sniff shows. Detection runs entirely in your browser once the extension is installed.</p>
+        <div style="margin-top:12px;">
+          <a data-out="cm_mvfalhx5_0ef98909" href="https://wolfitway.com/tools/wolf-sniff?ref=digitalunderground" rel="noopener" class="btn btn-primary" target="_blank">Get the extension</a>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="details">
+        <h3>Details</h3>
+        <div class="detail-row">
+          <span class="label">Price</span>
+          <span class="value">Free · Lifetime €49</span>
+        </div>
+        <div class="detail-row">
+          <span class="label">Category</span>
+          <span class="value">App</span>
+        </div>
+        <div class="detail-row">
+          <span class="label">Maker</span>
+          <span class="value"><a href="/makers/wolfitway/">Wolfitway</a></span>
+        </div>
+        <div class="detail-row">
+          <span class="label">Website</span>
+          <span class="value"><a href="https://wolfitway.com" target="_blank" rel="noopener">wolfitway.com</a></span>
+        </div>
+        <a data-out="cm_mvfalhx5_0ef98909" href="https://wolfitway.com/tools/wolf-sniff?ref=digitalunderground" rel="noopener" class="btn btn-primary" target="_blank">Visit site</a>
+      </div>
+      <p class="note">Listed free on the Digital Underground Developer Marketplace. Purchases happen on the maker’s site. <a href="/community/p/?id=cm_mvfalhx5_0ef98909#report">Report</a></p>
+    </aside>
+  </div>
+</div>
+
+
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <img id="lightboxImg" alt="">
+  <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">›</button>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<div class="mobile-cta">
+  <a data-out="cm_mvfalhx5_0ef98909" href="https://wolfitway.com/tools/wolf-sniff?ref=digitalunderground" rel="noopener" class="btn btn-primary" target="_blank">Get Wolf Sniff · €49</a>
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+
+  const galleryItems = Array.from(document.querySelectorAll('.gallery-item:not(.gallery-cta)'));
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const src = galleryItems[index].dataset.src;
+    const caption = galleryItems[index].querySelector('.gallery-caption');
+    if (src) {
+      lightboxImg.src = src;
+      document.getElementById('lightboxCaption').textContent = caption ? caption.textContent : '';
+      lightbox.classList.add('active');
+    }
+  }
+
+  function showImage(index, direction) {
+    if (index < 0) index = galleryItems.length - 1;
+    if (index >= galleryItems.length) index = 0;
+    if (index === currentIndex) return;
+
+    const goingNext = direction === 'next' || (direction === undefined && index > currentIndex);
+    currentIndex = index;
+
+    lightboxImg.classList.add(goingNext ? 'slide-right' : 'slide-left');
+
+    const onTransitionEnd = () => {
+      lightboxImg.removeEventListener('transitionend', onTransitionEnd);
+      lightboxImg.src = galleryItems[currentIndex].dataset.src;
+      const caption = galleryItems[currentIndex].querySelector('.gallery-caption');
+      document.getElementById('lightboxCaption').textContent = caption ? caption.textContent : '';
+      requestAnimationFrame(() => {
+        lightboxImg.classList.remove('slide-right', 'slide-left');
+      });
+    };
+
+    lightboxImg.addEventListener('transitionend', onTransitionEnd);
+
+    setTimeout(() => {
+      if (lightboxImg.classList.contains('slide-right') || lightboxImg.classList.contains('slide-left')) {
+        lightboxImg.removeEventListener('transitionend', onTransitionEnd);
+        lightboxImg.src = galleryItems[currentIndex].dataset.src;
+        lightboxImg.classList.remove('slide-right', 'slide-left');
+      }
+    }, 460);
+  }
+
+  galleryItems.forEach((item, i) => {
+    item.addEventListener('click', () => openLightbox(i));
+  });
+
+  lightboxClose.addEventListener('click', () => lightbox.classList.remove('active'));
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) lightbox.classList.remove('active');
+  });
+
+  lightboxPrev.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showImage(currentIndex - 1, 'prev');
+  });
+  lightboxNext.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showImage(currentIndex + 1, 'next');
+  });
+
+  // Keyboard
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') lightbox.classList.remove('active');
+    if (e.key === 'ArrowLeft') showImage(currentIndex - 1, 'prev');
+    if (e.key === 'ArrowRight') showImage(currentIndex + 1, 'next');
+  });
+
+  // Touch swipe on lightbox
+  let touchStartX = 0;
+  lightboxImg.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  lightboxImg.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) showImage(currentIndex + 1, 'next');
+      else showImage(currentIndex - 1, 'prev');
+    }
+  }, { passive: true });
+
+  // Gallery arrows
+  const track = document.getElementById('galleryTrack');
+  const prevBtn = document.getElementById('galleryPrev');
+  const nextBtn = document.getElementById('galleryNext');
+
+  function scrollGallery(dir) {
+    const item = track.querySelector('.gallery-item');
+    if (!item) return;
+    const amount = item.offsetWidth + 12;
+    track.scrollBy({ left: dir * amount, behavior: 'smooth' });
+  }
+
+  prevBtn.addEventListener('click', () => scrollGallery(-1));
+  nextBtn.addEventListener('click', () => scrollGallery(1));
+
+</script>
+<script>if (window.duTrack) duTrack.view("cm_mvfalhx5_0ef98909");</script>
+<!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="duf-brand"><a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47" loading="lazy"></a><p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p><form class="duf-nl" novalidate><label for="dufEmail">Get new projects and updates by email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Subscribe</button></div><input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true"><label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label><p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form><div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg></a></div></div><div class="duf-cols"><div class="duf-col"><h3>Marketplace</h3><ul><li><a href="/#projects">Browse projects</a></li><li><a href="/league/">Maker League</a></li><li><a href="/makers/">Creators</a></li><li><a href="/community/submit/">List your project free</a></li><li><a href="/community/dashboard/">Creator dashboard</a></li></ul></div><div class="duf-col"><h3>Resources</h3><ul><li><a href="/blog/">Blog</a></li><li><a href="/community/api/">Developer API</a></li><li><a href="/support/">Support</a></li><li><button type="button" data-duf-share>Share this page</button></li></ul></div><div class="duf-col"><h3>Company</h3><ul><li><a href="/store/">Digital Underground store</a></li><li><a href="mailto:digitalunderground.store@proton.me">Contact us</a></li><li><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank">Follow @DigitalUG_Store</a></li></ul></div><div class="duf-col"><h3>Guides</h3><ul><li><a href="/list-your-indie-app-free/">List your indie app free</a></li><li><a href="/weekly-meal-planner-canada/">Weekly meal planner</a></li><li><a href="/ai-prompt-packs-for-creators/">AI prompt packs</a></li><li><a href="/offline-invoice-generator/">Offline invoice generator</a></li><li><a href="/offline-habit-tracker-focus-timer/">Habit tracker &amp; focus timer</a></li><li><a href="/free-study-planner-for-students/">Free study planner</a></li></ul></div></div></div><div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground · Ontario, Canada</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div></footer><!--/du-site-foot-->
+</body>
+</html>

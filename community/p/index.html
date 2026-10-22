@@ -36,6 +36,8 @@
   var SHARE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v14"/></svg>';
   var CATS = { apps: "App", "ai-tools": "AI tool", games: "Game", books: "Book", templates: "Template", other: "Other" };
   var id = new URLSearchParams(location.search).get("id") || "";
+  /* Wolf Sniff has its own designed page; #contact / #report stay here for the live forms. */
+  if (id === "cm_mvfalhx5_0ef98909" && !location.hash) { location.replace("/community/p/wolf-sniff/"); return; }
   var out = document.getElementById("out");
   function paras(t) { return String(t || "").split(/\n{2,}/).map(function (p) { return "<p>" + esc(p).replace(/\n/g, "<br>") + "</p>"; }).join(""); }
   function media(l) {
@@ -126,6 +128,7 @@
     if (rb) {
       var rp = document.getElementById("report-panel"), rf = document.getElementById("report-form"), rm = document.getElementById("report-msg");
       rb.addEventListener("click", function () { rp.hidden = !rp.hidden; rb.setAttribute("aria-expanded", String(!rp.hidden)); if (!rp.hidden) rf.reason.focus(); });
+      if (location.hash === "#report") setTimeout(function () { rb.click(); rp.scrollIntoView({ block: "start" }); }, 50);
       rf.addEventListener("submit", function (e) {
         e.preventDefault();
         if (!rf.reason.value) { rm.textContent = "Please choose a reason."; return; }

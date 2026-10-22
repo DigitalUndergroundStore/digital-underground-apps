@@ -69,3 +69,4 @@ body.dt { -webkit-text-size-adjust: 100%; }
 .crumb a { flex: none; }
 #crumb-name { overflow: hidden; text-overflow: ellipsis; min-width: 0; color: #a79fbd; }
 .dt-ph { display: inline-flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 800; color: #fff; background: radial-gradient(120% 90% at 20% 10%, #7c3aed, transparent 60%), linear-gradient(145deg, #3b1a6e, #13204a); }
+img.dt-logo{background:radial-gradient(circle at 50% 40%,#ffffff,#e9e7f5 70%);border:1px solid rgba(255,255,255,.35);padding:5px;object-fit:contain;box-sizing:border-box}

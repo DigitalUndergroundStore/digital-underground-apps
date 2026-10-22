@@ -66,7 +66,7 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="/assets/design-tokens.css">
 <link rel="stylesheet" href="/community/wolf.css?v=6">
-<link rel="stylesheet" href="/makers/makers.css?v=2">
+<link rel="stylesheet" href="/makers/makers.css?v=3">
 <link rel="preload" as="image" href="/assets/globe/fallback-mobile.webp?v=2" media="(max-width: 799px)">
 <link rel="preload" as="image" href="/assets/globe/fallback.webp?v=2" media="(min-width: 800px)">
 <script src="/community/nav.js?v=1" defer></script>

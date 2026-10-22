@@ -27,3 +27,6 @@
 .mk-card-bio{font-size:14px;line-height:1.5;color:#d4d4d8;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .mk-card-n{font-size:13px;color:#c4b5fd;font-weight:600}
 @media(prefers-reduced-motion:reduce){.mk-card-a{transition:none}.mk-card-a:hover{transform:none}}
+/* light backing so dark and light logos both read on dark cards */
+img.mk-logo,img.mk-card-logo{background:radial-gradient(circle at 50% 40%,#ffffff,#e9e7f5 70%);border:1px solid rgba(255,255,255,.35);padding:5px;object-fit:contain;box-sizing:border-box}
+img.mk-logo{border:3px solid #05040c;outline:1px solid rgba(255,255,255,.3)}

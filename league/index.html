@@ -315,7 +315,8 @@
   /* real-data wiring: images in his icon slots, multiple standings rows, mobile fit */
   .lg-standings { display: grid; gap: 8px; list-style: none; }
   .project-icon { flex-shrink: 0; overflow: hidden; }
-  .project-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .project-icon img { width: 100%; height: 100%; object-fit: cover; display: block; background: radial-gradient(circle at 50% 40%, #ffffff, #e9e7f5 70%); border-radius: inherit; }
+  .project-icon:has(img) { box-shadow: 0 0 0 2px rgba(139,92,246,0.3), 0 0 0 1px rgba(255,255,255,.35) inset; }
   .project-info { flex: 1; min-width: 0; }
   .project-info strong, .project-info span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .project-info a { color: inherit; text-decoration: none; }

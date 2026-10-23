@@ -19,7 +19,7 @@
     var f = (q.value || "").trim().toLowerCase();
     grid.innerHTML = data.eligible.filter(function (l) { return !f || (l.name + " " + l.makerName).toLowerCase().indexOf(f) >= 0; }).map(function (l) {
       var mine = data.voted === l.id;
-      return '<div class="vote-card' + (mine ? " voted" : "") + '">' + icon(l.imageUrl, l.id, l.name) + '<div class="info"><strong>' + esc(l.name) + "</strong><span>by " + esc(l.makerName) + '</span></div><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted" : "Vote") + '</button><button type="button" class="share-btn" data-share="' + esc(l.id) + '" data-name="' + esc(l.name) + '" aria-label="Share ' + esc(l.name) + '" >Share</button></div>';
+      return '<div class="vote-card lg2' + (mine ? " voted" : "") + '"><div class="lg2-maker">' + esc(l.makerName) + '</div><a class="lg2-img" href="/community/p/?id=' + encodeURIComponent(l.id) + '" aria-label="Open ' + esc(l.name) + ' page">' + (l.imageUrl ? '<img src="' + esc(l.imageUrl) + '" alt="" loading="lazy">' : "") + '</a><strong class="lg2-name">' + esc(l.name) + '</strong><div class="lg2-actions"><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted" : "Vote") + '</button><button type="button" class="share-btn" data-share="' + esc(l.id) + '" data-name="' + esc(l.name) + '" aria-label="Share ' + esc(l.name) + '">Share</button></div></div>';
     }).join("") || '<p class="lg-empty">' + (data.eligible.length ? "No matching projects." : "No projects in the league yet.") + "</p>";
     if (data.voted && !msg.textContent) say("You've voted this week. Come back Monday to vote again.", "ok");
   }
@@ -34,7 +34,7 @@
       return;
     }
     var b = e.target.closest("button[data-id]"); if (!b || b.disabled) return;
-    var name = b.closest(".vote-card").querySelector("strong").textContent;
+    var name = b.closest(".vote-card").querySelector(".lg2-name").textContent;
     [].forEach.call(grid.querySelectorAll("button"), function (x) { x.disabled = true; }); say("Counting your vote…");
     fetch("/api/league", { method: "POST", credentials: "same-origin", headers: { "content-type": "application/json" }, body: JSON.stringify({ id: b.getAttribute("data-id"), hp: document.getElementById("hp").value }) })
       .then(function (r) { return r.json().catch(function () { return {}; }); })

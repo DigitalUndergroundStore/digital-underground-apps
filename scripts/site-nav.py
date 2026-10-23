@@ -10,7 +10,8 @@ and sets the versioned CSS/JS includes. Used by gen-landing.py, generate-product
 apply-site-nav.py (which stamps every existing page + generator template). Bump CSS_V / JS_V on edits."""
 import re
 
-CSS_V, JS_V = "14", "8"
+CSS_V, JS_V = "16", "8"
+THEME_V = "2"  # /assets/theme-clean.css: clean theme (Oct 23 2026), always the last stylesheet
 LINKS = [("/", "Marketplace"), ("/league/", "League"), ("/makers/", "Creators"), ("/blog/", "Blog")]
 MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'
 _L = "".join(f'<a href="{h}">{t}</a>' for h, t in LINKS)
@@ -47,11 +48,12 @@ FOOT = ('<!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="
   f'<div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="{CONTACT}">Contact</a></p></div>'
   '</footer><!--/du-site-foot-->')
 
-CSS = f'<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v={CSS_V}">'
+CSS = (f'<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v={CSS_V}">\n'
+       f'<link rel="stylesheet" href="/assets/theme-clean.css?v={THEME_V}">')
 NAVRE = re.compile(r"<!--du-site-nav-->.*?<!--/du-site-nav-->", re.S)
 FOOTRE = re.compile(r"\s*<!--du-site-foot-->.*?<!--/du-site-foot-->", re.S)
 JSRE = re.compile(r'\s*<script src="/assets/site-nav/site-nav\.js(\?v=\d+)?" defer></script>')
-CSSRE = re.compile(r'<link rel="stylesheet" href="/assets/site-nav/site-nav\.css(\?v=\d+)?">\n?')
+CSSRE = re.compile(r'<link rel="stylesheet" href="/assets/(?:site-nav/site-nav|theme-clean)\.css(\?v=\d+)?">\n?')
 OLDFOOT = re.compile(r'[ \t]*<footer\b(?![^>]*class="duf")[^>]*>(.*?)</footer>[ \t]*', re.S)
 KEEP = [re.compile(p, re.S) for p in (
   r'<p class="(?:credits|music-credit)"[^>]*>.*?</p>',

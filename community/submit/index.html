@@ -16,25 +16,25 @@
 <meta name="twitter:description" content="List your products for free on Digital Underground. Checkout stays on your site.">
 <meta name="twitter:image" content="https://digitalundergroundstore.com/community/og-dm-v3.jpg">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="theme-color" content="#05040c">
-<link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="../community.css?v=4">
+<meta name="theme-color" content="#11141a">
+<link rel="stylesheet" href="/assets/design-tokens.css?v=3">
+<link rel="stylesheet" href="../community.css?v=5">
 <script src="/community/turnstile.js?v=2" defer></script>
 <script src="/community/pw.js" defer></script>
 <script src="/community/upload.js?v=4" defer></script>
 <style>
 .up-field{display:flex;flex-direction:column;gap:8px}.up-label{font-weight:600;font-size:14px}
 .up-row{display:flex;gap:12px;align-items:flex-start}.up-body{flex:1;min-width:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}.up-body .field-hint{flex-basis:100%;margin:0}
-.af{border:1px solid rgba(196,181,253,.3);border-radius:14px;padding:12px;background:rgba(139,92,246,.07)}.af-row{display:flex;gap:8px}.af-row input{flex:1;min-width:0}.af-row button{flex:none;min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--du-gradient);color:#fff;font-weight:700;cursor:pointer}.af-row button:disabled{opacity:.6}.af .field-hint{margin:8px 0 0}.af-ok{color:#86efac}.af-err{color:#fca5a5}
-.up-thumb{width:64px;height:64px;flex:none;border-radius:12px;border:1px dashed rgba(196,181,253,.35);background:rgba(139,92,246,.08);display:inline-flex;align-items:center;justify-content:center;color:#c4b5fd;overflow:hidden}
+.af{border:1px solid rgba(230,232,236,0.21);border-radius:14px;padding:12px;background:rgba(79,70,229,0.07)}.af-row{display:flex;gap:8px}.af-row input{flex:1;min-width:0}.af-row button{flex:none;min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--du-gradient);color:#e6e8ec;font-weight:700;cursor:pointer}.af-row button:disabled{opacity:.6}.af .field-hint{margin:8px 0 0}.af-ok{color:#9a97e8}.af-err{color:#f08080}
+.up-thumb{width:64px;height:64px;flex:none;border-radius:12px;border:1px dashed rgba(230,232,236,0.22);background:rgba(79,70,229,0.08);display:inline-flex;align-items:center;justify-content:center;color:#9a97e8;overflow:hidden}
 .up-thumb svg,.up-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.up-btn svg{width:18px;height:18px}
-.up-thumb img{width:100%;height:100%;object-fit:cover}.up-thumb.has{border-style:solid;color:#86efac}
-form .up-btn{display:inline-flex;flex-direction:row;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid rgba(196,181,253,.3);background:rgba(255,255,255,.05);color:var(--text);font:inherit;font-size:14px;font-weight:650;cursor:pointer;width:auto}
-form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rgba(239,68,68,.06)}
+.up-thumb img{width:100%;height:100%;object-fit:cover}.up-thumb.has{border-style:solid;color:#9a97e8}
+form .up-btn{display:inline-flex;flex-direction:row;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid rgba(230,232,236,0.21);background:rgba(230,232,236,0.05);color:var(--text);font:inherit;font-size:14px;font-weight:650;cursor:pointer;width:auto}
+form .up-btn.up-rm{color:#f08080;border-color:rgba(240,128,128,0.3);background:rgba(240,128,128,0.06)}
 .up-input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}.up-input:focus-visible+.up-btn,label.up-btn:focus-within{outline:2px solid var(--cyan);outline-offset:2px}
-.up-more summary{cursor:pointer;color:#c4b5fd;font-size:14px;font-weight:600;min-height:44px;display:flex;align-items:center}.up-more input{margin-top:4px;width:100%}
+.up-more summary{cursor:pointer;color:#9a97e8;font-size:14px;font-weight:600;min-height:44px;display:flex;align-items:center}.up-more input{margin-top:4px;width:100%}
 .sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.up-progress{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:12px 14px;border:1px solid rgba(196,181,253,.25);border-radius:14px;background:rgba(18,14,32,.9);font-size:14px}.up-progress .bar{flex:1 1 140px;height:8px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}.up-progress .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#8b5cf6,#67e8f9);transition:width .2s}.up-progress #up-pct{font-weight:700;font-variant-numeric:tabular-nums}
+.up-progress{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:12px 14px;border:1px solid rgba(230,232,236,0.2);border-radius:14px;background:#1a1e26;font-size:14px}.up-progress .bar{flex:1 1 140px;height:8px;border-radius:999px;background:rgba(230,232,236,0.08);overflow:hidden}.up-progress .bar i{display:block;height:100%;width:0;background:#4f46e5;transition:width .2s}.up-progress #up-pct{font-weight:700;font-variant-numeric:tabular-nums}
 </style>
 <script src="/community/nav.js?v=1" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
@@ -43,27 +43,28 @@ form .up-btn.up-rm{color:#fca5a5;border-color:rgba(248,113,113,.3);background:rg
 <link rel="manifest" href="/site.webmanifest">
 <script src="/community/ai-helper.js?v=1" defer></script>
 <script>addEventListener("DOMContentLoaded",function(){window.duAiHelper&&duAiHelper.mount(document.getElementById("form"),document.querySelector("#form > .sb-sec"));});</script>
-<style>.du-logo{display:inline-flex;align-items:center;line-height:0}.du-logo img{height:36px!important;width:auto!important;max-width:none!important;max-height:none!important;display:block;border-radius:0!important;box-shadow:none!important;filter:none!important}.du-logo-icon{display:none!important}@media (max-width:560px){.du-logo-full{display:none!important}.du-logo-icon{display:block!important}}</style>
+<style>.du-logo{display:inline-flex;align-items:center;line-height:0}.du-logo img{height:36px!important;width:auto!important;max-width:none!important;max-height:none!important;display:block;border-radius:0 !important;box-shadow: none !important;filter:none!important}.du-logo-icon{display:none!important}@media (max-width:560px){.du-logo-full{display:none!important}.du-logo-icon{display:block!important}}</style>
 <style>
 .page-head{margin:8px 0 18px}.page-head h1{font-size:clamp(28px,7.4vw,44px);line-height:1.08;margin:6px 0 8px;letter-spacing:-.02em}
-.sb-eyebrow{margin:0;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#c4b5fd}
-.sb-lead{margin:0;color:rgba(255,255,255,.78);font-size:16px;line-height:1.45;max-width:34rem}
+.sb-eyebrow{margin:0;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9a97e8}
+.sb-lead{margin:0;color:#a8acb5;font-size:16px;line-height:1.45;max-width:34rem}
 .sb-steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0 0;padding:0;max-width:36rem;counter-reset:s}
-.sb-steps li{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 6px;border-radius:14px;background:rgba(139,92,246,.08);border:1px solid rgba(196,181,253,.18);font-size:13px;text-align:center;position:relative}
-.sb-steps li+li::before{content:"";position:absolute;left:-7px;top:50%;width:6px;height:2px;background:rgba(196,181,253,.4)}
-.sb-ic{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--du-gradient,linear-gradient(135deg,#7c3aed,#2563eb));color:#fff}
+.sb-steps li{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 6px;border-radius:14px;background:rgba(79,70,229,0.08);border:1px solid rgba(230,232,236,0.17);font-size:13px;text-align:center;position:relative}
+.sb-steps li+li::before{content:"";position:absolute;left:-7px;top:50%;width:6px;height:2px;background:rgba(79,70,229,0.4)}
+.sb-ic{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#4f46e5;color:#e6e8ec}
 .sb-ic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.af{padding:14px;border-color:rgba(196,181,253,.4);background:linear-gradient(160deg,rgba(124,58,237,.16),rgba(37,99,235,.08))}
-.sb-sec{border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px 14px 16px;margin:0;display:flex;flex-direction:column;gap:14px;background:rgba(255,255,255,.02);min-width:0}
+.af{padding:14px;border-color:rgba(230,232,236,0.24);background:transparent}
+.sb-sec{border:1px solid rgba(230,232,236,0.08);border-radius:16px;padding:14px 14px 16px;margin:0;display:flex;flex-direction:column;gap:14px;background:rgba(230,232,236,0.02);min-width:0}
 .sb-sec legend{display:flex;align-items:center;gap:8px;padding:0 6px;font-weight:700;font-size:15px}
-.sb-sec legend span{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;background:rgba(139,92,246,.25);color:#ddd6fe}
+.sb-sec legend span{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;background:rgba(79,70,229,0.25);color:#e6e8ec}
 .sb-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.sb-2 label{min-width:0}
 .sb-sec .field-hint{margin:-6px 0 0}
 #form>.aih{margin:0}
 #form button[type=submit]{min-height:52px;font-size:16px}
 @media (max-width:360px){.sb-2{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=14">
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=16">
+<link rel="stylesheet" href="/assets/theme-clean.css?v=2">
 </head>
 <body><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=8" defer></script><!--/du-site-nav-->
 <div class="wrap">

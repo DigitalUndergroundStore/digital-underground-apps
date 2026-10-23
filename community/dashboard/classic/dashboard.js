@@ -182,14 +182,14 @@
     el.setAttribute("role", "img");
     el.setAttribute("aria-label", "Chart of the last " + range + " days: " + t.v + " views, " + t.c + " clicks, " + t.i + " impressions.");
     el.innerHTML = '<svg viewBox="0 0 ' + W + " " + H + '" width="' + W + '" height="' + H + '" aria-hidden="true">' +
-      '<defs><linearGradient id="gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".45"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient></defs>' +
+      '<defs><linearGradient id="gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f46e5" stop-opacity=".16"/><stop offset="1" stop-color="#4f46e5" stop-opacity=".16"/></linearGradient></defs>' +
       '<g class="grid">' + g + "</g>" +
       '<path class="l-i" d="' + smooth(pi) + '"/>' +
       '<path d="' + area + '" fill="url(#gv)"/>' +
       '<path class="l-v" d="' + smooth(pv) + '"/>' +
       '<path class="l-c" d="' + smooth(pc) + '"/>' +
       '<g class="xax">' + xa + "</g>" +
-      '<g id="hover" style="display:none"><line class="guide" y1="' + T + '" y2="' + base + '"/><circle class="pt" r="5" fill="#a78bfa" data-k="v"/><circle class="pt" r="5" fill="#67e8f9" data-k="c"/></g>' +
+      '<g id="hover" style="display:none"><line class="guide" y1="' + T + '" y2="' + base + '"/><circle class="pt" r="5" fill="#9a97e8" data-k="v"/><circle class="pt" r="5" fill="#e6e8ec" data-k="c"/></g>' +
       '</svg><div class="tip" id="tip" hidden></div>';
     chartState = { days: days, x: x, y: y, n: n, L: L, iw: iw, W: W };
   }
@@ -289,7 +289,7 @@
     fetch("/api/account/profile", { credentials: "same-origin", cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (p) {
       if (!p || !p.avatar || !/^\/(?!\/)/.test(p.avatar)) return;
       var a = $("avatar"), im = new Image(); im.src = p.avatar; im.alt = "";
-      im.style.cssText = "width:100%;height:100%;border-radius:50%;display:block;object-fit:" + (/\.svg$/.test(p.avatar) ? "contain;background:#0b0d10" : "cover");
+      im.style.cssText = "width:100%;height:100%;border-radius:50%;display:block;object-fit:" + (/\.svg$/.test(p.avatar) ? "contain;background:#11141a" : "cover");
       a.textContent = ""; a.appendChild(im); a.style.overflow = "hidden"; a.style.padding = "0";
     }).catch(function () {});
     var h = new Date().getHours();

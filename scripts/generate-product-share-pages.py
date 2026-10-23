@@ -218,9 +218,9 @@ def render_page(product: dict) -> str:
 <meta name="twitter:title" content="{esc(name)}">
 <meta name="twitter:description" content="{esc(desc)}">
 <meta name="twitter:image" content="{og_image}">
-<meta name="theme-color" content="#07060f">
-<link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="/p/share.css">
+<meta name="theme-color" content="#11141a">
+<link rel="stylesheet" href="/assets/design-tokens.css?v=3">
+<link rel="stylesheet" href="/p/share.css?v=3">
 </head>
 <body>
 <main class="page">

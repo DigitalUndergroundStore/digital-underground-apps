@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://digitalundergroundstore.com/community/p/wolf-sniff/">
 <meta property="og:image" content="https://digitalundergroundstore.com/assets/community/wolfitway/wolf-sniff-banner.webp">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#05040c">
+<meta name="theme-color" content="#11141a">
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
@@ -24,18 +24,18 @@
 <script src="/league/spotlight.js?v=2" defer></script>
 <style>
   :root {
-    --bg: #07070d;
-    --bg-elevated: #0e0e16;
-    --bg-card: #111119;
-    --border: rgba(255,255,255,0.08);
-    --border-hover: rgba(139,92,246,0.45);
-    --text: #f1f5f9;
-    --text-muted: #b0bcc9;
-    --text-dim: #7d8a9a;
-    --accent: #8b5cf6;
-    --accent-soft: rgba(139,92,246,0.15);
-    --cyan: #22d3ee;
-    --success: #34d399;
+    --bg: #11141a;
+    --bg-elevated: #161a21;
+    --bg-card: #161a21;
+    --border: rgba(230,232,236,0.08);
+    --border-hover: rgba(230,232,236,0.26);
+    --text: #e6e8ec;
+    --text-muted: #a8acb5;
+    --text-dim: #8f949e;
+    --accent: #9a97e8;
+    --accent-soft: rgba(79,70,229,0.15);
+    --cyan: #9a97e8;
+    --success: #9a97e8;
     --radius: 12px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -51,7 +51,7 @@
     content: '';
     position: fixed;
     inset: 0;
-    background: radial-gradient(ellipse 70% 40% at 15% 0%, rgba(139,92,246,0.1), transparent);
+    background: transparent;
     pointer-events: none;
     z-index: -1;
   }
@@ -128,13 +128,13 @@
     transform: translateY(-1px);
   }
   .btn-primary {
-    background: var(--accent);
+    background: var(--du-accent-fill,#4f46e5);
     border-color: transparent;
-    color: white;
+    color: #e6e8ec;
   }
   .btn-primary:hover {
-    background: #7c3aed;
-    box-shadow: 0 4px 16px rgba(139,92,246,0.35);
+    background: #4f46e5;
+    box-shadow: none;
     transform: translateY(-1px);
   }
   .btn:focus-visible,
@@ -152,7 +152,7 @@
     border-radius: 999px;
     font-size: 0.75rem;
     font-weight: 500;
-    background: rgba(255,255,255,0.04);
+    background: rgba(230,232,236,0.04);
     color: var(--text-muted);
     border: 1px solid var(--border);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -163,7 +163,7 @@
     background: var(--accent-soft);
     transform: translateY(-1px);
   }
-  .tag.price { color: var(--success); border-color: rgba(52,211,153,0.3); background: rgba(52,211,153,0.08); }
+  .tag.price { color: var(--success); border-color: rgba(230,232,236,0.21); background: rgba(79,70,229,0.08); }
 
   .desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px; max-width: 640px; }
 
@@ -178,7 +178,7 @@
   }
   .visual:hover {
     border-color: var(--border-hover);
-    box-shadow: 0 0 0 1px rgba(139,92,246,0.12), 0 12px 40px rgba(139,92,246,0.1);
+    box-shadow: 0 0 0 1px rgba(79,70,229,0.12);
     transform: translateY(-2px);
   }
   .visual-bar {
@@ -190,9 +190,9 @@
     border-bottom: 1px solid var(--border);
   }
   .dot { width: 8px; height: 8px; border-radius: 50%; }
-  .dot-r { background: #ff5f57; }
-  .dot-y { background: #febc2e; }
-  .dot-g { background: #28c840; }
+  .dot-r { background: rgba(240,128,128,0.9); }
+  .dot-y { background: #4f46e5; }
+  .dot-g { background: #4f46e5; }
   .visual-url {
     flex: 1;
     font-family: ui-monospace, SFMono-Regular, monospace;
@@ -211,14 +211,14 @@
     border-radius: 8px;
     font-size: 0.85rem;
   }
-  .stack-row:nth-child(odd) { background: rgba(255,255,255,0.02); }
+  .stack-row:nth-child(odd) { background: rgba(230,232,236,0.02); }
   .stack-row strong { font-weight: 600; }
   .stack-row .meta { color: var(--text-dim); font-size: 0.78rem; }
   .score-badge {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: rgba(52,211,153,0.12);
+    background: rgba(79,70,229,0.12);
     color: var(--success);
     padding: 3px 8px;
     border-radius: 999px;
@@ -235,7 +235,7 @@
     transition: border-color 0.2s;
   }
   .about-card:hover {
-    border-color: rgba(139,92,246,0.25);
+    border-color: rgba(230,232,236,0.2);
   }
   .about-card h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); margin-bottom: 12px; }
   .about-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; }
@@ -252,7 +252,7 @@
     transition: border-color 0.2s, box-shadow 0.2s;
   }
   .details:hover {
-    border-color: rgba(139,92,246,0.3);
+    border-color: rgba(230,232,236,0.21);
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
   }
   .details h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); margin-bottom: 14px; }
@@ -316,7 +316,7 @@
   .gallery-item:hover {
     transform: scale(1.02);
     border-color: var(--border-hover);
-    box-shadow: 0 8px 24px rgba(139,92,246,0.15);
+    box-shadow: none;
   }
   .gallery-item img {
     width: 100%;
@@ -335,16 +335,16 @@
     left: 0;
     right: 0;
     padding: 8px 10px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    background: linear-gradient(transparent, rgba(17,20,26,0.75));
     font-size: 0.72rem;
-    color: white;
+    color: #e6e8ec;
   }
   .gallery-cta {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(139,92,246,0.05));
-    border-color: var(--accent);
+    background: transparent;
+    border-color: var(--du-accent-fill,#4f46e5);
   }
   .cta-content { text-align: center; padding: 12px; }
   .cta-label { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
@@ -358,9 +358,9 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(17,20,26,0.6);
     border: 1px solid var(--border);
-    color: white;
+    color: #e6e8ec;
     font-size: 1.2rem;
     cursor: pointer;
     display: flex;
@@ -368,7 +368,7 @@
     justify-content: center;
     z-index: 2;
   }
-  .gallery-nav:hover { background: rgba(0,0,0,0.85); }
+  .gallery-nav:hover { background: rgba(17,20,26,0.85); }
   .gallery-nav.prev { left: -8px; }
   .gallery-nav.next { right: -8px; }
   @media (max-width: 600px) {
@@ -382,7 +382,7 @@
   .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.92);
+    background: #11141a;
     display: none;
     align-items: center;
     justify-content: center;
@@ -399,7 +399,7 @@
     max-width: 90vw;
     max-height: 85vh;
     border-radius: 12px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 60px rgba(17,20,26,0.5);
     user-select: none;
     transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1), transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
@@ -424,9 +424,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.1);
+    background: rgba(230,232,236,0.1);
     border: none;
-    color: white;
+    color: #e6e8ec;
     font-size: 1.4rem;
     cursor: pointer;
     display: flex;
@@ -434,7 +434,7 @@
     justify-content: center;
     z-index: 2;
   }
-  .lightbox-close:hover { background: rgba(255,255,255,0.2); }
+  .lightbox-close:hover { background: rgba(230,232,236,0.2); }
   .lightbox-nav {
     position: absolute;
     top: 50%;
@@ -442,9 +442,9 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.12);
+    background: rgba(230,232,236,0.12);
     border: none;
-    color: white;
+    color: #e6e8ec;
     font-size: 1.6rem;
     cursor: pointer;
     display: flex;
@@ -452,7 +452,7 @@
     justify-content: center;
     z-index: 2;
   }
-  .lightbox-nav:hover { background: rgba(255,255,255,0.22); }
+  .lightbox-nav:hover { background: rgba(230,232,236,0.22); }
   .lightbox-nav.prev { left: 16px; }
   .lightbox-nav.next { right: 16px; }
 
@@ -472,7 +472,7 @@
     overflow: hidden;
     border-radius: 16px;
     border: 1px solid var(--border);
-    background: #000;
+    background: #11141a;
   }
   .video-wrap iframe {
     position: absolute;
@@ -511,9 +511,9 @@
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.95);
+    background: rgba(230,232,236,0.95);
     border: none;
-    color: #111;
+    color: #11141a;
     font-size: 1.5rem;
     cursor: pointer;
     display: flex;
@@ -524,7 +524,7 @@
   }
   .play-btn:hover {
     transform: scale(1.08);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 12px 40px rgba(17,20,26,0.5);
   }
   .play-btn:active { transform: scale(1.02); }
 
@@ -533,9 +533,9 @@
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: #e6e8ec;
     font-size: 0.85rem;
-    background: rgba(0,0,0,0.5);
+    background: rgba(17,20,26,0.5);
     padding: 6px 14px;
     border-radius: 999px;
   }
@@ -549,9 +549,9 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.25);
+    background: rgba(230,232,236,0.25);
   }
-  .gallery-dots span.active { background: var(--accent); }
+  .gallery-dots span.active { background: var(--du-accent-fill,#4f46e5); }
 
   .mobile-cta {
     display: none;
@@ -559,7 +559,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(7,7,13,0.95);
+    background: #11141a;
     backdrop-filter: blur(12px);
     border-top: 1px solid var(--border);
     padding: 12px 16px;
@@ -598,7 +598,7 @@
   /* safety net: never leave content invisible */
   .listing.is-visible > main > *, .listing.is-visible > .sidebar { opacity: 1; }
   /* final CTA slide as an image card (real Wolf Sniff banner under his gradient) */
-  .gallery-cta { position: relative; overflow: hidden; background: linear-gradient(135deg, rgba(20,12,40,.72), rgba(10,8,20,.86)), url(/assets/community/wolfitway/wolf-sniff-banner.webp) center/cover no-repeat; cursor: pointer; text-decoration: none; }
+  .gallery-cta { position: relative; overflow: hidden; background: linear-gradient(135deg, rgba(26,30,38,0.72), rgba(22,26,33,0.86)), url(/assets/community/wolfitway/wolf-sniff-banner.webp) center/cover no-repeat; cursor: pointer; text-decoration: none; }
   .gallery-cta:hover .cta-title { text-decoration: underline; }
   .listing > main, .listing > .sidebar { min-width: 0; }
   .lightbox [hidden], .gallery [hidden] { display: none !important; }
@@ -607,7 +607,8 @@
   .lightbox-close, .lightbox-nav { z-index: 3; }
 </style>
 <noscript><style>.listing > main > *, .sidebar { animation: none !important; opacity: 1 !important; transform: none !important; }</style></noscript>
-<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=14">
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=16">
+<link rel="stylesheet" href="/assets/theme-clean.css?v=2">
 </head>
 <body><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=8" defer></script><!--/du-site-nav-->
 <div class="container">

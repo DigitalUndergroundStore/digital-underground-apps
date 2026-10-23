@@ -79,11 +79,14 @@ s = re.sub(r"<!--ssr:start-->.*?<!--ssr:end-->", lambda m: "<!--ssr:start-->\n" 
 s = re.sub(r'(<p class="count"[^>]*>).*?(</p>)', lambda m: m.group(1) + f"<!--ssr:count-->{len(out)} projects" + m.group(2), s, flags=re.S)
 p.write_text(s); print(len(out), "cards rendered")
 
-# Homepage = Developer Marketplace v3 (Wolf layout: sidebar filter, animations, photoreal Earth).
+# Homepage = Developer Marketplace, clean layout (live Oct 23 2026: paste-your-link hero, how-to video, simple filter bar).
 # Template: src/home-v3/index.template.html (not deployed). Cards are server-rendered for crawlers / no-JS,
 # and the same rows are embedded as JSON for the client-side filter; home.js then merges the live API
 # exactly like the old homepage did, so new approved listings appear without a rebuild.
 # canonical "/", /community/ 301s to / via _redirects.
+# Oct 23 2026 (Wolf, clean home): the homepage is creators-only, so curated open-source picks are left out
+# (assets/home-v3/clean-pre.js drops them from the live API merge the same way).
+rows = [r for r in rows if not (r["id"].startswith("cm_pick_") or r.get("curated") is True)]
 KEEP = ("id", "name", "makerName", "makerSlug", "xHandle", "category", "priceLabel", "pitchShort", "imageUrl", "visitUrl",
         "projectUrl", "tags", "stage", "statusLabel", "curated", "contactable", "status")
 data = []
@@ -130,7 +133,7 @@ ld = {"@context": "https://schema.org", "@graph": [
     {"@type": "CollectionPage", "@id": SITE + "#page", "url": SITE, "name": "Developer Marketplace",
      "isPartOf": {"@id": SITE + "#website"}, "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items}},
     {"@type": "FAQPage", "@id": SITE + "#faq", "mainEntity": faq}]}
-assert len(faq) >= 9
+assert len(faq) >= 8
 tpl = tpl.replace("<!--ssr:jsonld-->", '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
 js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 h = (tpl.replace("<!--ssr:data-->", js).replace("<!--ssr:cards-->", "\n".join(v3card(r) for r in rows))

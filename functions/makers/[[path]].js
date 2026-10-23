@@ -34,7 +34,7 @@ export function cardHTML(r, i) {
   const badges = lbl ? `<span class="badges">${badge}${lbl}</span>` : badge;
   const img = r.imageUrl;
   const med = img ? `<div class="media"><img src="${safeHref(img)}" alt="${n} cover image" width="640" height="360" loading="${i < 2 ? "eager" : "lazy"}" decoding="async"></div>`
-    : `<div class="media grad" style="background:linear-gradient(135deg,#7c3aed,#4f46e5)"><span aria-hidden="true">${e((r.name || "?").slice(0, 2))}</span></div>`;
+    : `<div class="media grad" style="background:#4f46e5"><span aria-hidden="true">${e((r.name || "?").slice(0, 2))}</span></div>`;
   const maker = r.makerSlug ? `<a href="/makers/${e(r.makerSlug)}/">${e(r.makerName)}</a>` : e(r.makerName);
   const x = r.xHandle ? ` · <a href="https://x.com/${e(r.xHandle)}" target="_blank" rel="noopener" aria-label="@${e(r.xHandle)} on X (opens in a new tab)">@${e(r.xHandle)}</a>` : "";
   const contact = r.contactable ? `<a class="pill pill-o" href="${href}#contact" aria-label="Contact the developer of ${n}">Contact</a>` : "";
@@ -63,44 +63,24 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 <meta name="twitter:title" content="${e(title)}">
 <meta name="twitter:description" content="${e(desc)}">
 <meta name="twitter:image" content="${e(image)}">
-<meta name="theme-color" content="#05040c">
-<link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="/community/wolf.css?v=7">
-<link rel="stylesheet" href="/makers/makers.css?v=3">
-<link rel="preload" as="image" href="/assets/globe/fallback-mobile.webp?v=2" media="(max-width: 799px)">
-<link rel="preload" as="image" href="/assets/globe/fallback.webp?v=2" media="(min-width: 800px)">
+<meta name="theme-color" content="#11141a">
+<link rel="stylesheet" href="/assets/design-tokens.css?v=3">
+<link rel="stylesheet" href="/community/wolf.css?v=8">
+<link rel="stylesheet" href="/makers/makers.css?v=4">
 <script src="/community/nav.js?v=1" defer></script>
 <script src="/community/track.js" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>
-<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=14">
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=16">
+<link rel="stylesheet" href="/assets/theme-clean.css?v=2">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div id="du-globe-bg" class="du-globe-bg" aria-hidden="true" data-res="2k"><canvas id="du-globe-canvas" class="du-globe-canvas" aria-hidden="true" tabindex="-1"></canvas><div class="du-globe-vignette"></div></div>
 <!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=8" defer></script><!--/du-site-nav-->
 <main id="main" tabindex="-1">
 ${body}
 </main>
-<div class="duf-notes"><p class="credits">Background Earth textures © <a href="https://www.solarsystemscope.com/textures/" target="_blank" rel="noopener">Solar System Scope</a>, CC BY 4.0 (resized).</p></div>
-<script>
-(function () {
-  var root = document.getElementById("du-globe-bg");
-  function capable() {
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
-    if (matchMedia("(max-width: 820px)").matches || matchMedia("(hover: none) and (pointer: coarse)").matches) return false;
-    var c = navigator.connection; if (c && (c.saveData || /2g/.test(c.effectiveType || ""))) return false;
-    if (navigator.deviceMemory && navigator.deviceMemory < 4) return false;
-    if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) return false;
-    try { var t = document.createElement("canvas"); if (!(t.getContext("webgl2") || t.getContext("webgl"))) return false; } catch (_) { return false; }
-    return true;
-  }
-  function go() { if (!capable()) { root.classList.add("is-lite"); return; } var s = document.createElement("script"); s.type = "module"; s.src = "/assets/globe/globe.js?v=7"; document.head.appendChild(s); }
-  function idle() { (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(go, { timeout: 4000 }); }
-  if (document.readyState === "complete") idle(); else addEventListener("load", idle, { once: true });
-})();
-</script>
 <!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="duf-brand"><a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47" loading="lazy"></a><p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p><form class="duf-nl" novalidate><div class="duf-book"><a href="/free-book/"><img src="/assets/gift/humanity-x-off-the-ground-cover.webp" alt="Humanity X: Off the Ground cover" width="56" height="90" loading="lazy" decoding="async"></a><div><h3 class="duf-bk-h">Get the free book</h3><p class="duf-bk-t"><a href="/free-book/">Humanity X: Off the Ground</a></p><p class="duf-bk-s">Book 1 of the Humanity X Trilogy. Join the email list and download the full novel right away in PDF, EPUB and Word.</p></div></div><label for="dufEmail">Your email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Get the book</button></div><input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true"><label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label><p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form><div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg></a></div></div><div class="duf-cols"><div class="duf-col"><h3>Marketplace</h3><ul><li><a href="/#projects">Browse projects</a></li><li><a href="/league/">Maker League</a></li><li><a href="/makers/">Creators</a></li><li><a href="/community/submit/">List your project free</a></li><li><a href="/community/dashboard/">Creator dashboard</a></li></ul></div><div class="duf-col"><h3>Resources</h3><ul><li><a href="/blog/">Blog</a></li><li><a href="/community/api/">Developer API</a></li><li><a href="/support/">Support</a></li><li><button type="button" data-duf-share>Share this page</button></li></ul></div><div class="duf-col"><h3>Company</h3><ul><li><a href="/store/">Digital Underground store</a></li><li><a href="mailto:digitalunderground.store@proton.me">Contact us</a></li><li><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank">Follow @DigitalUG_Store</a></li></ul></div></div></div><div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div></footer><!--/du-site-foot-->
 </body>
 </html>`;
@@ -206,7 +186,7 @@ export async function onRequestGet(context) {
   } else {
     const slug = parts[0].toLowerCase();
     const p = validSlug(slug) ? await liveProfile(kv, slug) : null;
-    if (!p) return new Response(`<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Creator not found | Digital Underground</title></head><body style="font-family:system-ui;background:#07060f;color:#f5f3ff;padding:2rem"><main><h1>Creator not found</h1><p><a style="color:#c4b5fd" href="/makers/">See all creators</a></p></main></body></html>`, { status: 404, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=60" } });
+    if (!p) return new Response(`<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Creator not found | Digital Underground</title></head><body style="font-family:system-ui;background:#11141a;color:#e6e8ec;padding:2rem"><main><h1>Creator not found</h1><p><a style="color:#9a97e8" href="/makers/">See all creators</a></p></main></body></html>`, { status: 404, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=60" } });
     res = html(makerPage(p, sortForMaker(rows.filter((r) => r.makerSlug === slug))));
   }
   context.waitUntil(cache.put(key, res.clone()).catch(() => {}));

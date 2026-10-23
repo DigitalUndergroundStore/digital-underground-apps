@@ -95,17 +95,18 @@ def shell(title, desc, canonical, body, jsonld, ogtype="article", img=None):
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
 <meta name="twitter:image" content="{img or IMG}">
-<meta name="theme-color" content="#05040c">
-<link rel="stylesheet" href="/assets/design-tokens.css">
-<link rel="stylesheet" href="/community/wolf.css?v=7">
-<link rel="stylesheet" href="/blog/blog.css?v=2">
-<link rel="stylesheet" href="/blog/blog-v2.css?v=2">
-<link rel="stylesheet" href="/blog/blog-v3.css?v=1">
+<meta name="theme-color" content="#11141a">
+<link rel="stylesheet" href="/assets/design-tokens.css?v=3">
+<link rel="stylesheet" href="/community/wolf.css?v=8">
+<link rel="stylesheet" href="/blog/blog.css?v=3">
+<link rel="stylesheet" href="/blog/blog-v2.css?v=3">
+<link rel="stylesheet" href="/blog/blog-v3.css?v=2">
 <script src="/community/nav.js?v=1" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <script type="application/ld+json">{json.dumps(jsonld).replace("</", "<\\/")}</script>
-<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=14">
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=16">
+<link rel="stylesheet" href="/assets/theme-clean.css?v=2">
 </head>
 <body class="blog b2">
 <a class="skip" href="#main">Skip to content</a>

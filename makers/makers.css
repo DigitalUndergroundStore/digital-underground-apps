@@ -1,32 +1,32 @@
 /* Creator pages (/makers/) — layered on /community/wolf.css */
 .mk-hero{padding-top:24px;padding-bottom:8px}
-.mk-banner{aspect-ratio:1200/400;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#1e1b4b,#0b1020);border:1px solid rgba(255,255,255,.08)}
+.mk-banner{aspect-ratio:1200/400;border-radius:20px;overflow:hidden;background:#282d37;border:1px solid rgba(230,232,236,0.08)}
 .mk-banner img{width:100%;height:100%;object-fit:cover;display:block}
 .mk-id{display:flex;align-items:flex-start;gap:14px;margin-top:-36px;padding:0 12px}
-.mk-logo{flex:none;width:76px;height:76px;border-radius:22px;border:3px solid #05040c;background:#111827;object-fit:cover;box-shadow:0 8px 30px rgba(0,0,0,.5)}
-.mk-ph{display:grid;place-items:center;font:800 36px/1 ui-sans-serif,system-ui,sans-serif;color:#e9d5ff;background:linear-gradient(135deg,#7c3aed,#4f46e5)}
+.mk-logo{flex:none;width:76px;height:76px;border-radius:22px;border:3px solid #11141a;background:#1a1e26;object-fit:cover;box-shadow: 0 8px 30px rgba(17,20,26,0.5)}
+.mk-ph{display:grid;place-items:center;font:800 36px/1 ui-sans-serif,system-ui,sans-serif;color:#9a97e8;background:#4f46e5}
 .mk-tt{min-width:0;padding-top:42px}.mk-tt .eyebrow{margin:0 0 4px;font-size:13px}
-.mk-tt h1{margin:0;font-size:28px;line-height:1.15;font-weight:700;letter-spacing:-.02em;text-shadow:0 2px 24px rgba(0,0,0,.5);overflow-wrap:anywhere}
-.mk-bio{margin:16px 0 0;max-width:46rem;font-size:16px;line-height:1.6;color:#d4d4d8;white-space:pre-line;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+.mk-tt h1{margin:0;font-size:28px;line-height:1.15;font-weight:700;letter-spacing:-.02em;text-shadow: none;overflow-wrap:anywhere}
+.mk-bio{margin:16px 0 0;max-width:46rem;font-size:16px;line-height:1.6;color:#e6e8ec;white-space:pre-line;text-shadow: none}
 .mk-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .mk-links .pill{min-height:44px;display:inline-flex;align-items:center}
 .mk-h2{margin:28px 0 16px;font-size:20px;font-weight:700;display:flex;align-items:center;gap:10px}
-.mk-count{font-size:13px;font-weight:700;padding:2px 10px;border-radius:999px;background:rgba(167,139,250,.18);color:#e9d5ff}
+.mk-count{font-size:13px;font-weight:700;padding:2px 10px;border-radius:999px;background:rgba(79,70,229,0.18);color:#9a97e8}
 .card .maker a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 @media(min-width:640px){.mk-logo{width:112px;height:112px;border-radius:26px}.mk-id{margin-top:-52px;padding:0 24px;gap:18px}.mk-tt{padding-top:58px}.mk-tt h1{font-size:40px}.mk-bio{font-size:18px}}
 /* Directory */
 .mk-grid{list-style:none;margin:0 0 48px;padding:0;display:grid;gap:16px;grid-template-columns:1fr}
 @media(min-width:700px){.mk-grid{grid-template-columns:repeat(2,1fr)}}@media(min-width:1100px){.mk-grid{grid-template-columns:repeat(3,1fr)}}
-.mk-card-a{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:18px;text-decoration:none;color:inherit;background:rgba(12,10,24,.78);border:1px solid rgba(255,255,255,.1);min-height:44px;transition:border-color .2s,transform .2s}
-.mk-card-a:hover,.mk-card-a:focus-visible{border-color:rgba(167,139,250,.6);transform:translateY(-2px)}
-.mk-card-a:focus-visible{outline:2px solid #c4b5fd;outline-offset:2px}
-.mk-card-logo{flex:none;width:64px;height:64px;border-radius:16px;object-fit:cover;background:#111827}
+.mk-card-a{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:18px;text-decoration:none;color:inherit;background:rgba(22,26,33,0.78);border:1px solid rgba(230,232,236,0.1);min-height:44px;transition:border-color .2s,transform .2s}
+.mk-card-a:hover,.mk-card-a:focus-visible{border-color:rgba(79,70,229,0.6);transform:translateY(-2px)}
+.mk-card-a:focus-visible{outline:2px solid #9a97e8;outline-offset:2px}
+.mk-card-logo{flex:none;width:64px;height:64px;border-radius:16px;object-fit:cover;background:#1a1e26}
 .mk-card-logo.mk-ph{font-size:26px}
 .mk-card-body{display:flex;flex-direction:column;gap:4px;min-width:0}
 .mk-card-name{font-weight:700;font-size:17px}
-.mk-card-bio{font-size:14px;line-height:1.5;color:#d4d4d8;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.mk-card-n{font-size:13px;color:#c4b5fd;font-weight:600}
+.mk-card-bio{font-size:14px;line-height:1.5;color:#e6e8ec;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.mk-card-n{font-size:13px;color:#9a97e8;font-weight:600}
 @media(prefers-reduced-motion:reduce){.mk-card-a{transition:none}.mk-card-a:hover{transform:none}}
 /* light backing so dark and light logos both read on dark cards */
-img.mk-logo,img.mk-card-logo{background:radial-gradient(circle at 50% 40%,#ffffff,#e9e7f5 70%);border:1px solid rgba(255,255,255,.35);padding:5px;object-fit:contain;box-sizing:border-box}
-img.mk-logo{border:3px solid #05040c;outline:1px solid rgba(255,255,255,.3)}
+img.mk-logo,img.mk-card-logo{background:transparent;border:1px solid rgba(230,232,236,0.35);padding:5px;object-fit:contain;box-sizing:border-box}
+img.mk-logo{border:3px solid #11141a;outline:1px solid #8f949e}

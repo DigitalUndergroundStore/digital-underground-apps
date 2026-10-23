@@ -7,7 +7,7 @@ import {
 
 function htmlPage(title, body) {
   return new Response(
-    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:2rem auto;padding:0 1rem;line-height:1.5} a{color:#6cf}</style></head><body>${body}<p><a href="/owner/">Open Owner Dashboard</a> · <a href="/">Community</a></p></body></html>`,
+    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><style>html{background:#11141a}body{font-family:Inter,system-ui,sans-serif;max-width:40rem;margin:2rem auto;padding:0 1rem;line-height:1.5;background:#11141a;color:#e6e8ec} a{color:#9a97e8}</style></head><body>${body}<p><a href="/owner/">Open Owner Dashboard</a> · <a href="/">Community</a></p></body></html>`,
     { status: 200, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } }
   );
 }

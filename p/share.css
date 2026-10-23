@@ -13,8 +13,6 @@ body {
   font: 16px/1.55 var(--du-font-body);
   min-height: 100vh;
   background:
-    radial-gradient(1100px 560px at 100% -10%, rgba(76, 29, 149, .45), transparent 55%),
-    radial-gradient(900px 520px at -15% 8%, rgba(30, 58, 138, .4), transparent 52%),
     var(--bg);
 }
 a { color: inherit; }
@@ -28,23 +26,23 @@ a { color: inherit; }
   border-radius: 20px; overflow: hidden;
   border: 1px solid var(--line);
   background: var(--card);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, .45);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.45);
 }
-.cover-wrap { aspect-ratio: 1200 / 630; background: #0c0a14; }
+.cover-wrap { aspect-ratio: 1200 / 630; background: #161a21; }
 .cover { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cover-wrap--promo {
   position: relative;
   aspect-ratio: 9 / 16;
   max-height: min(72vh, 640px);
   margin: 0 auto;
-  background: #0c0a14;
+  background: #161a21;
 }
 .share-promo {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  background: #0c0a14;
+  background: #161a21;
 }
 .share-promo--sq { display: none; }
 @media (min-width: 720px) {
@@ -67,11 +65,11 @@ a { color: inherit; }
   display: grid;
   place-items: center;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, .28);
-  background: rgba(6, 4, 14, .72);
-  color: #fff;
+  border: 1px solid rgba(230,232,236,0.28);
+  background: rgba(17,20,26,0.72);
+  color: #e6e8ec;
   cursor: pointer;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, .4);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.4);
 }
 .share-promo-sound svg { width: 20px; height: 20px; display: block; }
 .share-promo-sound .icon-on { display: none; }
@@ -84,15 +82,15 @@ a { color: inherit; }
   letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
 }
 h1 { margin: 0 0 8px; font-size: clamp(1.35rem, 4vw, 1.75rem); line-height: 1.2; letter-spacing: -.02em; }
-.price { margin: 0 0 14px; font-size: 1.25rem; font-weight: 700; color: #c4b5fd; }
+.price { margin: 0 0 14px; font-size: 1.25rem; font-weight: 700; color: #9a97e8; }
 .pitch { margin-bottom: 22px; }
 .pitch-line { margin: 0 0 8px; color: var(--muted); font-size: 1.02rem; line-height: 1.5; }
 .cta {
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 48px; padding: 0 22px; border-radius: 999px;
-  background: linear-gradient(135deg, #6d28d9, #2563eb);
-  color: #fff; font-weight: 700; text-decoration: none;
-  box-shadow: 0 10px 28px rgba(37, 99, 235, .35);
+  background: #4f46e5;
+  color: #e6e8ec; font-weight: 700; text-decoration: none;
+  box-shadow: none;
 }
 .cta:hover { filter: brightness(1.08); }
 .back { margin: 18px 0 0; font-size: .9rem; }
@@ -104,19 +102,19 @@ h1 { margin: 0 0 8px; font-size: clamp(1.35rem, 4vw, 1.75rem); line-height: 1.2;
 /* Product hero (scripts/p-hero.py): cover + headline + value line + primary CTA above the fold. */
 .card.hero { display: grid; grid-template-columns: minmax(0, 1fr); }
 .hero .cover-wrap { overflow: hidden; }
-.hero .cover-wrap { aspect-ratio: 16 / 9; display: grid; place-items: center; background: radial-gradient(120% 90% at 50% 0%, rgba(124, 92, 255, .28), transparent 60%), #05040c; }
+.hero .cover-wrap { aspect-ratio: 16 / 9; display: grid; place-items: center; background: #11141a; }
 .hero .cover { width: 100%; height: 100%; object-fit: contain; }
-.hero .eyebrow { color: #cfc6e6; }
-.hero .eyebrow a { color: #b9a8ff; text-decoration: none; }
+.hero .eyebrow { color: #e6e8ec; }
+.hero .eyebrow a { color: #9a97e8; text-decoration: none; }
 .hero .eyebrow a:hover { text-decoration: underline; }
 .hero h1 { font-size: clamp(1.7rem, 6vw, 2.6rem); line-height: 1.08; margin: 4px 0 10px; }
 .hero .lede { margin: 0 0 10px; font-size: 1.12rem; line-height: 1.45; color: var(--du-text); }
 .hero .pitch-line { margin: 0 0 10px; }
 .hero .buy { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin: 18px 0 8px; }
-.hero .buy .price { margin: 0; color: #b9a8ff; }
+.hero .buy .price { margin: 0; color: #9a97e8; }
 .hero .cta { min-height: 52px; padding: 0 26px; font-size: 1.05rem; }
-.hero .cta:focus-visible, .hero a:focus-visible { outline: 2px solid #22d3ee; outline-offset: 3px; }
-.hero .assure { margin: 0; font-size: .9rem; color: #cfc6e6; }
+.hero .cta:focus-visible, .hero a:focus-visible { outline: 2px solid #9a97e8; outline-offset: 3px; }
+.hero .assure { margin: 0; font-size: .9rem; color: #e6e8ec; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 @media (max-width: 719px) {
   .hero--promo .cover-wrap--promo { height: 46vh; max-height: 46vh; width: auto; aspect-ratio: 9 / 16; justify-self: center; }

@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="/owner/owner.css?v=6">
-<link rel="stylesheet" href="/owner/crm.css?v=1">
+<link rel="stylesheet" href="/owner/crm.css?v=2">
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
@@ -82,30 +82,40 @@
     <button type="button" class="back" data-go="home">← Home</button>
     <h1>CRM contacts</h1>
     <p class="muted small">Your outreach pipeline: leads, makers, partners, press and buyers. Only you can see this.</p>
-    <div class="crm-pipe" id="crm-pipe"></div>
-    <div class="crm-pipe crm-pipe-lt" id="crm-pipe-lt"></div>
-    <div class="crm-bar">
-      <input id="crm-q" type="search" placeholder="Search name, email, handle, notes" autocomplete="off" aria-label="Search contacts">
-      <select id="crm-f-status" aria-label="Filter by status"><option value="">All statuses</option></select>
-      <select id="crm-f-category" aria-label="Filter by category"><option value="">All categories</option></select>
-      <select id="crm-f-lead" aria-label="Filter by lead type"><option value="">All lead types</option></select>
-      <select id="crm-f-source" aria-label="Filter by source"><option value="">All sources</option></select>
-      <select id="crm-sort" aria-label="Sort">
-        <option value="updatedAt:desc">Recently updated</option>
-        <option value="name:asc">Name A–Z</option>
-        <option value="nextFollowUp:asc">Next follow-up (soonest)</option>
-        <option value="lastContact:desc">Last contact (newest)</option>
-        <option value="status:asc">Status</option>
-        <option value="leadType:desc">Lead type (VIP first)</option>
-        <option value="category:asc">Category</option>
-      </select>
+    <div class="crm-tabs" id="crm-tabs" role="tablist"></div>
+    <div class="crm-top">
+      <input id="crm-q" type="search" placeholder="Search contacts" autocomplete="off" aria-label="Search contacts">
+      <button type="button" class="btn ok crm-sm" id="crm-add">+ Add</button>
+      <button type="button" class="btn ghost crm-sm" id="crm-more-btn" aria-expanded="false" aria-controls="crm-more">Filters ▾</button>
     </div>
-    <div class="crm-actions">
-      <button type="button" class="btn ok" id="crm-add">+ Add contact</button>
-      <a class="btn ghost" id="crm-csv" href="/api/owner/crm?format=csv">Export CSV</a>
-      <span class="muted small" id="crm-count"></span>
+    <div id="crm-more" class="crm-more" hidden>
+      <div class="crm-pipe" id="crm-pipe"></div>
+      <div class="crm-pipe crm-pipe-lt" id="crm-pipe-lt"></div>
+      <div class="crm-bar">
+        <select id="crm-f-status" aria-label="Filter by status"><option value="">All statuses</option></select>
+        <select id="crm-f-category" aria-label="Filter by category"><option value="">All categories</option></select>
+        <select id="crm-f-lead" aria-label="Filter by lead type"><option value="">All lead types</option></select>
+        <select id="crm-f-source" aria-label="Filter by source"><option value="">All sources</option></select>
+        <select id="crm-sort" aria-label="Sort">
+          <option value="updatedAt:desc">Recently updated</option>
+          <option value="name:asc">Name A–Z</option>
+          <option value="nextFollowUp:asc">Next follow-up (soonest)</option>
+          <option value="lastContact:desc">Last contact (newest)</option>
+          <option value="status:asc">Status</option>
+          <option value="leadType:desc">Lead type (VIP first)</option>
+          <option value="category:asc">Category</option>
+        </select>
+        <a class="btn ghost crm-sm" id="crm-csv" href="/api/owner/crm?format=csv">Export CSV</a>
+      </div>
     </div>
-    <div id="crm-list" class="list"></div>
+    <p class="muted small" id="crm-count"></p>
+    <div id="crm-list"></div>
+    <div id="crm-insp-bg" class="crm-insp-bg" hidden></div>
+    <aside id="crm-insp" class="crm-insp" hidden aria-label="Contact details">
+      <div class="crm-insp-h"><h2 id="crm-insp-title">Contact</h2><button type="button" class="btn ghost crm-sm" id="crm-insp-x" aria-label="Close">✕</button></div>
+      <dl id="crm-insp-body"></dl>
+      <div class="crm-actions"><button type="button" class="btn ok crm-sm" id="crm-insp-edit">Edit</button></div>
+    </aside>
     <dialog id="crm-dlg" class="crm-dlg">
       <form id="crm-form" method="dialog">
         <h2 id="crm-dlg-title">Contact</h2>
@@ -199,6 +209,6 @@
   </section>
 </div>
 <script src="/owner/owner.js?v=10"></script>
-<script src="/owner/crm.js?v=1"></script>
+<script src="/owner/crm.js?v=2"></script>
 </body>
 </html>

@@ -31,3 +31,52 @@
 .crm-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 600; }
 .crm-wide { grid-column: 1 / -1; }
 @media (max-width: 520px) { .crm-grid { grid-template-columns: 1fr; } }
+/* v2: simplified table layout */
+.crm-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+.crm-tabs button { font: inherit; font-size: 14px; font-weight: 600; padding: 7px 12px; border-radius: 999px; cursor: pointer; color: var(--text); background: rgba(255,255,255,.05); border: 1px solid var(--line); }
+.crm-tabs button span { color: var(--muted); font-weight: 700; margin-left: 2px; }
+.crm-tabs button.is-on { background: linear-gradient(105deg, #6d28d9, #1e3a8a); border-color: transparent; }
+.crm-tabs button.is-on span { color: #e9e5ff; }
+.crm-top { display: flex; gap: 8px; align-items: center; }
+.crm-top input { flex: 1; min-width: 0; min-height: 44px; padding: 8px 12px; border-radius: 12px; font: inherit; font-size: 15px; background: rgba(255,255,255,.05); color: var(--text); border: 1px solid var(--line); }
+.btn.crm-sm { min-height: 36px; padding: 0 12px; font-size: 13px; white-space: nowrap; }
+.crm-more { margin-top: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.02); }
+.crm-more .crm-pipe { margin-top: 0; }
+.crm-more .crm-bar input { grid-column: auto; }
+#crm-count { margin: 10px 0 6px; }
+.wrap:has(#view-crm.is-on) { max-width: 1100px; }
+.crm-table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+.crm-table th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; padding: 8px; border-bottom: 1px solid var(--line); }
+.crm-table td { padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; overflow: hidden; text-overflow: ellipsis; }
+.crm-table th:nth-child(1) { width: 25%; } .crm-table th:nth-child(2) { width: 18%; } .crm-table th:nth-child(3) { width: 9%; }
+.crm-table th:nth-child(4) { width: 12%; } .crm-table th:nth-child(5) { width: 16%; } .crm-table th:nth-child(6) { width: 20%; }
+.c-contact, .c-name, .c-offer { white-space: nowrap; }
+.c-contact { word-break: break-all; }
+.c-sub { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; }
+.c-offer { color: var(--muted); font-size: 13px; }
+.crm-acts { display: flex; gap: 4px; flex-wrap: wrap; }
+.crm-acts .btn.crm-sm { min-height: 30px; padding: 0 9px; font-size: 12px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.crm-insp-bg { position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 40; }
+.crm-insp { position: fixed; top: 0; right: 0; bottom: 0; width: min(440px, 100vw); overflow-y: auto; z-index: 41; background: #0d0a1a; border-left: 1px solid var(--line); padding: 18px; box-shadow: -12px 0 40px rgba(0,0,0,.5); }
+.crm-insp-h { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.crm-insp-h h2 { margin: 0; word-break: break-word; }
+.crm-insp dl { display: grid; grid-template-columns: 110px 1fr; gap: 8px 12px; font-size: 14px; margin: 16px 0; }
+.crm-insp dt { color: var(--muted); }
+.crm-insp dd { margin: 0; word-break: break-word; }
+.crm-insp dd.notes { white-space: pre-wrap; }
+@media (max-width: 639px) {
+  .crm-table thead { display: none; }
+  .crm-table, .crm-table tbody, .crm-table tr, .crm-table td { display: block; width: 100%; }
+  .crm-table tr { display: grid; grid-template-columns: 1fr auto; gap: 4px 8px; padding: 12px; margin-bottom: 10px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+  .crm-table td { border: 0; padding: 0; }
+  .crm-table .c-name { grid-column: 1; grid-row: 1; font-weight: 700; white-space: normal; }
+  .crm-table .c-lt { grid-column: 2; grid-row: 1; text-align: right; width: auto; }
+  .crm-table .c-contact { grid-column: 1; grid-row: 2; font-size: 13px; color: var(--muted); white-space: normal; }
+  .crm-table .c-st { grid-column: 2; grid-row: 2; text-align: right; width: auto; }
+  .crm-table .c-offer { display: none; }
+  .crm-table .c-act { grid-column: 1 / -1; grid-row: 3; margin-top: 6px; }
+  .crm-acts .btn.crm-sm { flex: 1; min-height: 36px; }
+  .crm-insp dl { grid-template-columns: 1fr; gap: 2px; }
+  .crm-insp dd { margin-bottom: 8px; }
+}

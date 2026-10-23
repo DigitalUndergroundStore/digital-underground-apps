@@ -3,7 +3,7 @@
   var STATUSES = ["new", "contacted", "replied", "interested", "won", "not interested"];
   var CATS = ["lead", "maker", "partner", "press", "buyer", "other"];
   var LTS = ["cold", "warm", "hot", "vip"];
-  var rows = [], editing = null, pipeStatus = "", pipeLead = "";
+  var rows = [], editing = null, pipeStatus = "", pipeLead = "", tab = "all", inspecting = null;
   function $(id) { return document.getElementById(id); }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function opts(sel, list, keep) { sel.innerHTML = (keep || "") + list.map(function (v) { return '<option value="' + esc(v) + '">' + esc(v === "vip" ? "VIP" : v) + "</option>"; }).join(""); }
@@ -32,12 +32,21 @@
     $("crm-pipe").innerHTML = STATUSES.map(function (s) { return '<button type="button" data-ps="' + esc(s) + '" class="' + (pipeStatus === s ? "is-on" : "") + '"><b>' + (c[s] || 0) + "</b><span>" + esc(s) + "</span></button>"; }).join("");
     $("crm-pipe-lt").innerHTML = LTS.map(function (s) { return '<button type="button" data-pl="' + s + '" class="' + (pipeLead === s ? "is-on" : "") + '"><b>' + (l[s] || 0) + '</b><span class="crm-b lt-' + s + '">' + (s === "vip" ? "VIP" : s) + "</span></button>"; }).join("");
   }
+  function isDue(r, t) { return !!r.nextFollowUp && r.nextFollowUp <= t && r.status !== "won" && r.status !== "not interested"; }
+  var TABS = [["all", "All"], ["hot", "Hot leads"], ["vip", "VIP"], ["warm", "Warm"], ["due", "Follow-up due"]];
+  function tabs(t) {
+    $("crm-tabs").innerHTML = TABS.map(function (x) {
+      var n = rows.filter(function (r) { return x[0] === "all" || (x[0] === "due" ? isDue(r, t) : r.leadType === x[0]); }).length;
+      return '<button type="button" role="tab" data-tab="' + x[0] + '" aria-selected="' + (tab === x[0]) + '" class="' + (tab === x[0] ? "is-on" : "") + '">' + x[1] + " <span>" + n + "</span></button>";
+    }).join("");
+  }
   function render() {
-    pipe();
+    pipe(); var t0 = today(); tabs(t0);
     var q = $("crm-q").value.toLowerCase().trim();
     var fs = $("crm-f-status").value || pipeStatus, fc = $("crm-f-category").value, fl = $("crm-f-lead").value || pipeLead, fsrc = $("crm-f-source").value;
     var sp = $("crm-sort").value.split(":"), sk = sp[0], dir = sp[1] === "desc" ? -1 : 1;
     var list = rows.filter(function (r) {
+      if (tab === "due" ? !isDue(r, t0) : (tab !== "all" && r.leadType !== tab)) return false;
       if (fs && r.status !== fs) return false;
       if (fc && r.category !== fc) return false;
       if (fl && r.leadType !== fl) return false;
@@ -54,17 +63,29 @@
       return x < y ? -dir : x > y ? dir : 0;
     });
     $("crm-count").textContent = list.length + " of " + rows.length + " contacts";
-    var t = today();
-    $("crm-list").innerHTML = list.length ? list.map(function (r) {
-      var due = r.nextFollowUp && r.nextFollowUp <= t && r.status !== "won" && r.status !== "not interested";
-      return '<div class="crm-row" data-id="' + esc(r.id) + '" tabindex="0" role="button"><div class="t">' + esc(r.name || r.email || r.handle) +
-        ' <span class="crm-b lt-' + esc(r.leadType) + '">' + esc(r.leadType === "vip" ? "VIP" : r.leadType) + '</span><span class="crm-b st">' + esc(r.status) + '</span><span class="crm-b cat">' + esc(r.category) + "</span>" +
-        (due ? '<span class="crm-b due">follow up ' + esc(r.nextFollowUp) + "</span>" : "") + "</div>" +
-        '<div class="m">' + [r.handle, r.email, r.website].filter(Boolean).map(esc).join(" · ") + "</div>" +
-        '<div class="m">' + [r.offer ? "Offer: " + esc(r.offer) : "", r.lastContact ? "Last: " + esc(r.lastContact) : "", r.nextFollowUp && !due ? "Next: " + esc(r.nextFollowUp) : "", r.source ? "Source: " + esc(srcKey(r.source)) + (String(r.source).indexOf(";") > 0 ? " +" : "") : ""].filter(Boolean).join(" · ") + "</div>" +
-        (r.notes ? '<div class="n">' + esc(r.notes) + "</div>" : "") + "</div>";
-    }).join("") : '<p class="muted">No contacts match.</p>';
+    var lt = function (r) { return '<span class="crm-b lt-' + esc(r.leadType) + '">' + esc(r.leadType === "vip" ? "VIP" : r.leadType) + "</span>"; };
+    var acts = function (r) { var i = esc(r.id); return '<div class="crm-acts"><button type="button" class="btn ghost crm-sm" data-act="edit" data-id="' + i + '">Edit</button><button type="button" class="btn danger crm-sm" data-act="del" data-id="' + i + '">Delete</button><button type="button" class="btn ghost crm-sm" data-act="insp" data-id="' + i + '">Inspect</button></div>'; };
+    $("crm-list").innerHTML = list.length ? '<table class="crm-table"><thead><tr><th>Contact</th><th>Name</th><th>Lead</th><th>Status</th><th>Offer</th><th><span class="sr">Actions</span></th></tr></thead><tbody>' + list.map(function (r) {
+      var due = isDue(r, t0);
+      return '<tr><td class="c-contact">' + esc(r.email || r.handle || "—") + (r.email && r.handle ? '<div class="c-sub">' + esc(r.handle) + "</div>" : "") + '</td><td class="c-name">' + esc(r.name || "—") + '</td><td class="c-lt">' + lt(r) + (due ? ' <span class="crm-b due">due</span>' : "") + '</td><td class="c-st"><span class="crm-b st">' + esc(r.status) + '</span></td><td class="c-offer" title="' + esc(r.offer) + '">' + esc(r.offer || "") + '</td><td class="c-act">' + acts(r) + "</td></tr>";
+    }).join("") + "</tbody></table>" : '<p class="muted">No contacts match.</p>';
   }
+  var LABELS = [["name", "Name"], ["handle", "Handle"], ["email", "Email"], ["website", "Website"], ["category", "Category"], ["status", "Status"], ["leadType", "Lead type"], ["offer", "Offer"], ["source", "Source"], ["lastContact", "Last contact"], ["nextFollowUp", "Next follow-up"], ["notes", "Notes"], ["createdAt", "Added"], ["updatedAt", "Updated"]];
+  function inspect(r) {
+    inspecting = r;
+    $("crm-insp-title").textContent = r.name || r.email || r.handle;
+    $("crm-insp-body").innerHTML = LABELS.map(function (l) {
+      var v = r[l[0]];
+      if (l[0] === "createdAt" || l[0] === "updatedAt") v = v ? new Date(v).toLocaleString("en-CA", { timeZone: "America/Toronto" }) + " ET" : "";
+      if (l[0] === "website" && v && /^https?:\/\//.test(v)) v = '<a href="' + esc(v) + '" target="_blank" rel="noopener noreferrer">' + esc(v) + "</a>";
+      else if (l[0] === "email" && v) v = '<a href="mailto:' + esc(v) + '">' + esc(v) + "</a>";
+      else v = esc(v || "—");
+      return "<dt>" + l[1] + '</dt><dd class="' + (l[0] === "notes" ? "notes" : "") + '">' + v + "</dd>";
+    }).join("");
+    $("crm-insp").hidden = false; $("crm-insp-bg").hidden = false;
+  }
+  function closeInsp() { $("crm-insp").hidden = true; $("crm-insp-bg").hidden = true; }
+  function byId(id) { return rows.filter(function (r) { return r.id === id; })[0]; }
   function open(r) {
     editing = r || null;
     var f = $("crm-form");
@@ -88,11 +109,12 @@
       $("crm-dlg").close(); load();
     });
   }
-  function del() {
+  function del(r) {
+    if (r && r.id) editing = r;
     if (!editing || !confirm('Delete "' + (editing.name || editing.email) + '"? This cannot be undone.')) return;
     api("/" + encodeURIComponent(editing.id), "DELETE").then(function (o) {
       if (!o.r.ok) { $("crm-msg").textContent = o.d.error || "Could not delete."; return; }
-      $("crm-dlg").close(); load();
+      if ($("crm-dlg").open) $("crm-dlg").close(); load();
     });
   }
   function init() {
@@ -104,12 +126,22 @@
     ["crm-q", "crm-f-status", "crm-f-category", "crm-f-lead", "crm-f-source", "crm-sort"].forEach(function (id) { $(id).addEventListener(id === "crm-q" ? "input" : "change", render); });
     $("crm-add").addEventListener("click", function () { open(null); });
     $("crm-cancel").addEventListener("click", function () { $("crm-dlg").close(); });
-    $("crm-del").addEventListener("click", del);
+    $("crm-del").addEventListener("click", function () { del(); });
+    $("crm-tabs").addEventListener("click", function (e) { var b = e.target.closest("[data-tab]"); if (!b) return; tab = b.getAttribute("data-tab"); render(); });
+    $("crm-more-btn").addEventListener("click", function () { var m = $("crm-more"), open = m.hidden; m.hidden = !open; this.setAttribute("aria-expanded", String(open)); this.textContent = open ? "Filters ▴" : "Filters ▾"; });
+    $("crm-insp-x").addEventListener("click", closeInsp);
+    $("crm-insp-bg").addEventListener("click", closeInsp);
+    $("crm-insp-edit").addEventListener("click", function () { var r = inspecting; closeInsp(); open(r); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("crm-insp").hidden) closeInsp(); });
     f.addEventListener("submit", save);
     $("crm-pipe").addEventListener("click", function (e) { var b = e.target.closest("[data-ps]"); if (!b) return; var s = b.getAttribute("data-ps"); pipeStatus = pipeStatus === s ? "" : s; $("crm-f-status").value = ""; render(); });
     $("crm-pipe-lt").addEventListener("click", function (e) { var b = e.target.closest("[data-pl]"); if (!b) return; var s = b.getAttribute("data-pl"); pipeLead = pipeLead === s ? "" : s; $("crm-f-lead").value = ""; render(); });
-    $("crm-list").addEventListener("click", function (e) { var el = e.target.closest(".crm-row"); if (!el) return; var id = el.getAttribute("data-id"); open(rows.filter(function (r) { return r.id === id; })[0]); });
-    $("crm-list").addEventListener("keydown", function (e) { if (e.key === "Enter" && e.target.classList.contains("crm-row")) e.target.click(); });
+    $("crm-list").addEventListener("click", function (e) {
+      var b = e.target.closest("[data-act]"); if (!b) return;
+      var r = byId(b.getAttribute("data-id")); if (!r) return;
+      var a = b.getAttribute("data-act");
+      if (a === "edit") open(r); else if (a === "del") del(r); else inspect(r);
+    });
   }
   window.duCrmLoad = load;
   init();

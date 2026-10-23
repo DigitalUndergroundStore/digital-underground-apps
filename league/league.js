@@ -19,12 +19,20 @@
     var f = (q.value || "").trim().toLowerCase();
     grid.innerHTML = data.eligible.filter(function (l) { return !f || (l.name + " " + l.makerName).toLowerCase().indexOf(f) >= 0; }).map(function (l) {
       var mine = data.voted === l.id;
-      return '<div class="vote-card' + (mine ? " voted" : "") + '">' + icon(l.imageUrl, l.id, l.name) + '<div class="info"><strong>' + esc(l.name) + "</strong><span>by " + esc(l.makerName) + '</span></div><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted" : "Vote") + "</button></div>";
+      return '<div class="vote-card' + (mine ? " voted" : "") + '">' + icon(l.imageUrl, l.id, l.name) + '<div class="info"><strong>' + esc(l.name) + "</strong><span>by " + esc(l.makerName) + '</span></div><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted" : "Vote") + '</button><button type="button" class="share-btn" data-share="' + esc(l.id) + '" data-name="' + esc(l.name) + '" aria-label="Share ' + esc(l.name) + '" title="Share"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg></button></div>';
     }).join("") || '<p class="lg-empty">' + (data.eligible.length ? "No matching projects." : "No projects in the league yet.") + "</p>";
     if (data.voted && !msg.textContent) say("You've voted this week. Come back Monday to vote again.", "ok");
   }
-  function load() { return fetch("/api/league", { credentials: "same-origin", cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { data = d; render(); }).catch(function () { st.innerHTML = '<li class="lg-empty">Couldn\'t load the league. Try again soon.</li>'; }); }
+  function load() { return fetch("/api/league", { credentials: "same-origin", cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { data = d; render(); focusWanted(); }).catch(function () { st.innerHTML = '<li class="lg-empty">Couldn\'t load the league. Try again soon.</li>'; }); }
   grid.addEventListener("click", function (e) {
+    var sh = e.target.closest("button[data-share]");
+    if (sh) {
+      var nm = sh.getAttribute("data-name"), url = location.origin + "/league/?vote=" + encodeURIComponent(sh.getAttribute("data-share"));
+      var text = "Come vote for " + nm + " in Digital Underground's Maker League! 🗳️ One free vote a week, and the winner becomes Maker of the Week.";
+      if (navigator.share) { navigator.share({ title: nm + " · Maker League", text: text, url: url }).catch(function () {}); }
+      else { var w = window.open("https://x.com/intent/post?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(url), "_blank", "noopener"); if (!w && navigator.clipboard) navigator.clipboard.writeText(text + " " + url).then(function () { showToast("Link copied!"); }); }
+      return;
+    }
     var b = e.target.closest("button[data-id]"); if (!b || b.disabled) return;
     var name = b.closest(".vote-card").querySelector("strong").textContent;
     [].forEach.call(grid.querySelectorAll("button"), function (x) { x.disabled = true; }); say("Counting your vote…");
@@ -43,6 +51,8 @@
     data.standings.sort(function (a, b) { return b.votes - a.votes || a.name.localeCompare(b.name); });
     data.totalVotes++; data.voted = id; render();
   }
+  var want = new URLSearchParams(location.search).get("vote");
+  function focusWanted() { if (!want) return; var b = grid.querySelector('button[data-id="' + want.replace(/["\\]/g, "") + '"]'); if (b) { var c = b.closest(".vote-card"); c.classList.add("shared-pick"); c.scrollIntoView({ block: "center" }); want = null; } }
   q.addEventListener("input", function () { if (data) render(); });
   load();
 })();

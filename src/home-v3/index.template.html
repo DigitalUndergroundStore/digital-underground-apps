@@ -35,7 +35,7 @@
 <script src="/assets/home-v3/clean-pre.js?v=1"></script>
 <script src="/assets/home-v3/home.js?v=14" defer></script>
 <!--ssr:jsonld-->
-<link rel="stylesheet" href="/assets/home-v3/clean.css?v=6">
+<link rel="stylesheet" href="/assets/home-v3/clean.css?v=7">
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=16">
 <link rel="stylesheet" href="/assets/theme-clean.css?v=2">
 </head>
@@ -45,20 +45,14 @@
   <!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=9" defer></script><!--/du-site-nav-->
 
   <main id="main" tabindex="-1">
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hc-hero-grid"><div class="hc-hero-copy"><div class="hero-badge">Free for indie builders<span class="hc-count"> · <span id="heroCount"><!--ssr:count--></span> creator projects</span></div>
-    <h1>Paste your link.<br>Get listed fast and free.</h1>
-    <p class="hc-tagline">Drop your app, tool or book link. We fill in the details, you check them, and you're live in minutes.</p>
-    <form class="hc-paste" action="/community/submit/" method="get" role="search" aria-label="List your project">
-      <label class="sr-only" for="hcUrl">Your project link</label>
-      <input id="hcUrl" name="url" type="url" inputmode="url" placeholder="https://yourapp.com" autocomplete="url" required>
-      <button type="submit" class="btn btn-primary">Get listed free <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+  <!-- Top bar: listings first, slim paste-your-link (Wolf, Oct 23 2026) -->
+  <section class="hc-top" aria-label="List your project">
+    <h1 class="hc-top-h">Real projects from independent makers</h1>
+    <form class="hc-paste hc-slim" action="/community/submit/" method="get" aria-label="List your project">
+      <label class="hc-slim-l" for="hcUrl"><strong>Built something?</strong> Paste your link and we autofill the rest. Free.</label>
+      <div class="hc-slim-row"><input id="hcUrl" name="url" type="url" inputmode="url" placeholder="https://yourapp.com" autocomplete="url" required>
+      <button type="submit" class="btn btn-primary">Get listed free <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button></div>
     </form>
-    <p class="hc-fine">No fees, no cut of your sales. Buyers pay you directly on your own Stripe, Gumroad or site. <a href="#projects">Browse projects</a></p>
-    <p class="hc-league">This week: <a href="/league/">Maker League is under way. Vote for the Maker of the Week →</a></p>
-  </div>
-    <figure class="hc-vid hc-herovid"><video src="/assets/home-v3/how-to-list.mp4" poster="/assets/home-v3/how-to-list-poster.jpg" autoplay muted loop playsinline preload="metadata" width="640" height="640" aria-label="Screen recording: pasting a link into the submit form and Autofill filling in the name, link and pitch"></video><figcaption>How listing works: paste a link, press Autofill, check the details, go live.</figcaption></figure></div>
   </section>
 
   <!-- Marketplace: filter sidebar + grid -->
@@ -124,8 +118,7 @@
       <button type="button" class="freset-d" id="fResetD">Reset all filters</button>
     </aside>
     <div class="results">
-      <div class="hc-mhead"><h2>Real projects from independent makers</h2></div>
-      <div class="hc-fbar" id="hcFbar"><div class="hc-fsearch" id="hcSearchSlot"></div><div class="hc-chips" id="hcChips" role="group" aria-label="Category"></div><label class="sr-only" for="hcSort">Sort</label><select id="hcSort" class="hc-sort"><option value="featured">Featured</option><option value="newest">Newest</option><option value="name">Name (A–Z)</option></select></div>
+            <div class="hc-fbar" id="hcFbar"><div class="hc-fsearch" id="hcSearchSlot"></div><div class="hc-chips" id="hcChips" role="group" aria-label="Category"></div><label class="sr-only" for="hcSort">Sort</label><select id="hcSort" class="hc-sort"><option value="featured">Featured</option><option value="newest">Newest</option><option value="name">Name (A–Z)</option></select></div>
       <div class="results-bar">
         <button type="button" class="btn btn-outline ftoggle" id="fToggle" aria-expanded="false" aria-controls="fPanel"><svg focusable="false" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5L3 4z"/></svg> <span class="hc-flabel">More filters</span> <span id="filterBadge" class="filter-badge" hidden></span></button>
         <p class="project-count" role="status" aria-live="polite"><span id="cntNum"><!--ssr:count--></span> <span id="cntOf">projects</span></p>

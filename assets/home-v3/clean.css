@@ -187,3 +187,12 @@ body.hc{color:#e6e8ec}
 .hc .dot,.hc button.dot{color:#9a97e8 !important;background-color:#9a97e8 !important;border-color:#9a97e8 !important}
 .hc .card-badge.badge-new{background:#4f46e5 !important;color:#e6e8ec !important;border-color:#4f46e5 !important}
 .hc .duf-msg{color:#9a97e8 !important}
+/* Oct 23 2026 (Wolf): hero removed, listings first; slim paste-your-link bar above the grid */
+.hc-top{max-width:1200px;margin:0 auto;padding:28px 24px 14px}
+.hc-top-h{font-size:clamp(1.4rem,2.6vw,1.8rem);font-weight:700;line-height:1.2;margin:0 0 14px;color:#e6e8ec}
+.hc .hc-paste.hc-slim{max-width:none;margin:0;display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:8px 8px 8px 16px}
+.hc-slim-l{flex:1 1 260px;color:#b9bcc4;font-size:.95rem;line-height:1.35}
+.hc-slim-l strong{color:#e6e8ec}
+.hc-slim-row{display:flex;gap:8px;flex:2 1 380px;min-width:0}
+.hc-slim-row input{flex:1;min-width:0;background:#11141a!important;border:1px solid var(--border)!important;border-radius:10px;padding:10px 12px}
+@media (max-width:520px){.hc-top{padding:18px 24px 8px}.hc-top-h{font-size:1.3rem;margin-bottom:10px}.hc-slim-l{font-size:.88rem}.hc .hc-paste.hc-slim{flex-direction:column;align-items:stretch;padding:12px}.hc-slim-l{flex:none}.hc-slim-row{flex-direction:column;flex:none}.hc-slim-row .btn{width:100%;justify-content:center}}

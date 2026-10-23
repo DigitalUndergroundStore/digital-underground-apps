@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img" aria-label="Quiver">
+  <rect width="16" height="16" rx="3.5" fill="#0c0d0f"/>
+  <path fill="#eceae6" d="M3.2 8.4h9.6l-1.05 5.15c-.1.45-.5.75-.95.75H5.2c-.45 0-.85-.3-.95-.75z"/>
+  <rect x="4.7" y="4.2" width="1.35" height="4.6" rx="0.2" fill="#eceae6"/>
+  <rect x="7.32" y="2.15" width="1.36" height="6.7" rx="0.2" fill="#d7dce3"/>
+  <rect x="9.95" y="4.7" width="1.35" height="4.1" rx="0.2" fill="#eceae6"/>
+  <path fill="#d7dce3" d="M8 1.15 6.55 3.15h2.9z"/>
+</svg>

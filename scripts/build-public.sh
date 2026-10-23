@@ -9,6 +9,8 @@ args=(); for e in "${EXCLUDES[@]}"; do args+=(--exclude="./$e"); done
 tar -cf - --anchored "${args[@]}" --no-anchored \
   --exclude='*SECRET*' --exclude='*.keystore' --exclude='*.jks' --exclude='*.pem' --exclude='.env*' \
   --exclude='*.bak*' --exclude='*.log' --exclude='*.test.*' . | tar -xf - -C dist
+# tools/ holds build scripts (excluded above); publish only the static Field Studio app from it.
+mkdir -p dist/tools && cp -r tools/field-studio dist/tools/field-studio
 # safety: fail if anything sensitive slipped in
 if find dist \( -iname '*secret*' -o -iname '*.keystore' -o -iname '.env*' -o -path 'dist/src/*' \) | grep -q .; then echo "sensitive file in dist/" >&2; exit 1; fi
 echo "dist/: $(find dist -type f | wc -l) files, $(du -sh dist | cut -f1)"

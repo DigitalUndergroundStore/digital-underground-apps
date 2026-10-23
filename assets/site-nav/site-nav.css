@@ -91,3 +91,8 @@
 .duf{padding:0!important;border-radius:0;backdrop-filter:none;-webkit-backdrop-filter:none}
 
 .duf-book{display:flex;gap:12px;align-items:flex-start;margin:0 0 12px;max-width:440px}.duf-book img{width:56px;height:auto;border-radius:6px;box-shadow: 0 6px 18px rgba(0,0,0,0.45);display:block;flex:none}.duf-book>div{min-width:0}.duf .duf-bk-h{margin:0 0 2px;color:#e6e8ec;font-size:16px;font-weight:700;text-transform:none;letter-spacing:normal}.duf-bk-t{margin:0 0 4px;font-weight:600}.duf-bk-t a{color:#9a97e8;text-decoration:none}.duf-bk-s{margin:0;color:#a8acb5;font-size:13px;line-height:1.45}.duf-msg a{color:#9a97e8;font-weight:600}
+
+/* Mobile-first footer (Wolf, Oct 23 2026): 2 columns on phones, long handles wrap instead of pushing the page sideways */
+.duf-col a,.duf-col button,.duf-bar,.duf-legal a{overflow-wrap:anywhere}
+.duf-col{min-width:0}
+@media (max-width:520px){.duf-cols{grid-template-columns:repeat(2,minmax(0,1fr))}.duf-in{padding:40px 16px 28px}.duf-bar{padding:20px 16px 24px}.duf-legal{flex-wrap:wrap;gap:8px 16px}}

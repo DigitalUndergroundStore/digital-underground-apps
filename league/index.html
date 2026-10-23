@@ -655,9 +655,15 @@
 
     @media (max-width: 680px) {
       .vote-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
       }
     }
+    /* mobile-first guard (Wolf, Oct 23 2026): cards never push past the screen */
+    .vote-card, .vote-card > * { min-width: 0; }
+    .lg2-name, .lg2-maker { overflow-wrap: anywhere; }
+    .lg2-actions { flex-wrap: wrap; }
+    .lg2-actions > * { min-width: 0; }
+    .lg2-img img { max-width: 100%; height: auto; }
 
     .vote-card {
       background: rgba(255, 255, 255, 0.025);

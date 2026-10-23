@@ -1,15 +1,15 @@
 /* Maker League hero: last week's Maker of the Week, or (no winner yet) the "competition under way" banner.
-   Switches by itself after each Monday 00:00 ET reset; data from /api/league/winner and /api/league. */
+   Switches by itself after each week ends (Thursday 11:59 PM ET); data from /api/league/winner and /api/league. */
 (function () {
   var slot = document.getElementById("lg-hero"); if (!slot) return;
-  var LAUNCH = Date.parse("2026-10-19T12:00:00Z"); // League week 1 (Monday, ET)
+  var LAUNCH = Date.parse("2026-10-23T12:00:00Z"); // week numbering anchor (weeks now start Friday; launch week id 2026-10-19 = week 1)
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function j(u) { return fetch(u, { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); }
   function resets(ms) { return new Date(ms).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "America/New_York" }).replace(",", ""); }
   Promise.all([j("/api/league/winner"), j("/api/league")]).then(function (r) {
     var w = r[0] && r[0].winner, lg = r[1] || {};
     var wk = lg.week ? Math.max(1, Math.round((Date.parse(lg.week + "T12:00:00Z") - LAUNCH) / 6048e5) + 1) : 1;
-    var reset = lg.endsAt ? "Resets " + resets(lg.endsAt) + ", 12:00 AM ET" : "Resets Monday 12:00 AM ET";
+    var reset = lg.endsAt ? "Ends " + resets(lg.endsAt - 60000) + ", 11:59 PM ET" : "Ends Thursday 11:59 PM ET";
     var votes = typeof lg.totalVotes === "number" ? lg.totalVotes + (lg.totalVotes === 1 ? " vote" : " votes") + " so far" : "";
     var html;
     if (slot.getAttribute("data-mode") === "badge") {

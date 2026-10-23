@@ -1,5 +1,5 @@
 /* Maker of the Week spotlight: renders last week's winner into #motw-slot (homepage, /league/) and a
-   shareable badge on that winner's listing page. Data: /api/league/winner (changes every Monday 00:00 ET). */
+   shareable badge on that winner's listing page. Data: /api/league/winner (changes when each week ends, Thursday 11:59 PM ET). */
 (function () {
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function css() { if (!document.querySelector('link[href^="/league/league.css"]')) { var l = document.createElement("link"); l.rel = "stylesheet"; l.href = "/league/league.css?v=4"; document.head.appendChild(l); } }

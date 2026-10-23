@@ -15,3 +15,37 @@
   }
   tag(); new MutationObserver(tag).observe(document.body,{childList:true,subtree:true});
 })();
+
+// v3 (Oct 23): simple filter bar. Search, category chips and sort sit above the grid; "More filters" opens the full popup.
+(function(){
+  function $(i){return document.getElementById(i);}
+  function init(){
+    var slot=$('hcSearchSlot'), sw=document.querySelector('#fs-search .search-wrap');
+    if(slot&&sw&&!slot.firstChild){ slot.appendChild(sw); var sec=document.querySelector('.fsec[data-sec=search]'); if(sec) sec.style.display='none'; }
+    var sort=$('hcSort');
+    if(sort&&!sort._b){ sort._b=1; sort.addEventListener('change',function(){ var r=document.querySelector('input[name=sort][value="'+sort.value+'"]'); if(r){ r.checked=true; r.dispatchEvent(new Event('change',{bubbles:true})); } }); }
+    chips();
+  }
+  function chips(){
+    var box=$('hcChips'); if(!box) return;
+    var cks=[].slice.call(document.querySelectorAll('input[name=cat]'));
+    var html='<button type="button" class="hc-chip" data-c="">All</button>'+cks.map(function(c){ var l=c.parentNode.querySelector('.ck-l'); return '<button type="button" class="hc-chip" data-c="'+c.value.replace(/"/g,'&quot;')+'">'+(l?l.textContent:c.value)+'</button>'; }).join('');
+    if(box._h!==html){ box._h=html; box.innerHTML=html; }
+    sync();
+  }
+  function sync(){
+    var box=$('hcChips'); if(!box) return; var any=false;
+    box.querySelectorAll('.hc-chip').forEach(function(b){ var c=b.getAttribute('data-c'); if(!c) return; var ck=document.querySelector('input[name=cat][value="'+c+'"]'); var on=!!(ck&&ck.checked); if(on) any=true; b.setAttribute('aria-pressed',on); });
+    var all=box.querySelector('[data-c=""]'); if(all) all.setAttribute('aria-pressed',!any);
+    var r=document.querySelector('input[name=sort]:checked'), s=$('hcSort'); if(r&&s) s.value=r.value;
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.hc-chip'); if(!b) return;
+    var c=b.getAttribute('data-c');
+    document.querySelectorAll('input[name=cat]').forEach(function(ck){ var want=!!c&&ck.value===c; if(ck.checked!==want){ ck.checked=want; ck.dispatchEvent(new Event('change',{bubbles:true})); } });
+    sync();
+  });
+  document.addEventListener('change',function(e){ if(e.target&&(e.target.name==='cat'||e.target.name==='sort')) setTimeout(sync,0); });
+  function go(){ init(); var cl=$('catList'); if(cl) new MutationObserver(chips).observe(cl,{childList:true}); var fr=$('fReset'); if(fr) fr.addEventListener('click',function(){setTimeout(sync,0);}); }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',go); else go();
+})();

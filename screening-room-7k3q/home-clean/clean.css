@@ -136,3 +136,21 @@ body.hc{background:#0f1115 linear-gradient(180deg,#141821 0,#0f1115 620px) no-re
 .hc .fbackdrop{z-index:299}
 body.hc.drawer-open{overflow:hidden}
 @media (prefers-reduced-motion:reduce){.hc .fpanel{transition:none!important}}
+
+/* v3 (Oct 23): video in the hero, projects first, simple filter bar */
+.hc-herovid{max-width:440px;justify-self:center;width:100%}
+.hc-herovid video{box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.hc .market{max-width:1200px;margin-left:auto;margin-right:auto}
+.hc-mhead h2{font-size:1.6rem;margin:0 0 16px}
+.hc-fbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:14px}
+.hc-fsearch{flex:1 1 240px;min-width:200px}
+.hc-fsearch .search-wrap{margin:0}
+.hc-fsearch .search-input{width:100%;background:#161a20!important;border:1px solid var(--border)!important;border-radius:10px!important}
+.hc-chips{display:flex;flex-wrap:wrap;gap:8px}
+.hc-chip{font:500 .9rem var(--font);color:var(--text-muted);background:transparent;border:1px solid var(--border);border-radius:999px;padding:7px 14px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.hc-chip:hover{color:var(--text);border-color:var(--border-hover)}
+.hc-chip[aria-pressed=true]{background:#e6e8ec;color:#0f1115;border-color:#e6e8ec}
+.hc-sort{font:500 .9rem var(--font);color:var(--text);background:#161a20;border:1px solid var(--border);border-radius:10px;padding:8px 12px}
+.hc .results-bar .ftoggle{font-size:.88rem;padding:7px 12px}
+.hc-how{padding-top:56px}
+@media (max-width:640px){.hc-chips{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px}.hc-chip{flex:0 0 auto}.hc-fsearch{flex-basis:100%}}

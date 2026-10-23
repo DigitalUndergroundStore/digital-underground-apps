@@ -4,6 +4,12 @@
   var data = null;
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function icon(u, id, name) { var inner = u ? '<img src="' + esc(u) + '" alt="" loading="lazy" width="44" height="44">' : ""; return id ? '<a class="project-icon" style="display:block" href="/community/p/?id=' + encodeURIComponent(id) + '" aria-label="Open ' + esc(name || "product") + ' page">' + inner + "</a>" : '<div class="project-icon">' + inner + "</div>"; }
+  function media(l) {
+    var v = l.video, href = '/community/p/?id=' + encodeURIComponent(l.id);
+    if (v && v.kind === "file" && /^\/api\/community\/video\?v=/.test(v.src)) return '<div class="lg2-img"><video src="' + esc(v.src) + '" muted loop playsinline autoplay preload="metadata"' + (l.imageUrl ? ' poster="' + esc(l.imageUrl) + '"' : "") + ' aria-label="' + esc(l.name) + ' video"></video></div>';
+    if (v && (v.kind === "youtube" || v.kind === "vimeo") && /^https:\/\/(www\.youtube-nocookie\.com|player\.vimeo\.com)\//.test(v.src)) return '<div class="lg2-img"><iframe src="' + esc(v.src) + '" title="' + esc(l.name) + ' video" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>';
+    return '<a class="lg2-img" href="' + href + '" aria-label="Open ' + esc(l.name) + ' page">' + (l.imageUrl ? '<img src="' + esc(l.imageUrl) + '" alt="" loading="lazy">' : "") + '</a>';
+  }
   function say(t, c) { msg.textContent = t; msg.className = "lg-msg" + (c ? " " + c : ""); }
   function showToast(m) {
     var t = document.querySelector(".toast");
@@ -19,7 +25,7 @@
     var f = (q.value || "").trim().toLowerCase();
     grid.innerHTML = data.eligible.filter(function (l) { return !f || (l.name + " " + l.makerName).toLowerCase().indexOf(f) >= 0; }).map(function (l) {
       var mine = data.voted === l.id;
-      return '<div class="vote-card lg2' + (mine ? " voted" : "") + '"><div class="lg2-maker">' + esc(l.makerName) + '</div><a class="lg2-img" href="/community/p/?id=' + encodeURIComponent(l.id) + '" aria-label="Open ' + esc(l.name) + ' page">' + (l.imageUrl ? '<img src="' + esc(l.imageUrl) + '" alt="" loading="lazy">' : "") + '</a><strong class="lg2-name">' + esc(l.name) + '</strong><div class="lg2-actions"><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted" : "Vote") + '</button><button type="button" class="share-btn" data-share="' + esc(l.id) + '" data-name="' + esc(l.name) + '" aria-label="Share ' + esc(l.name) + '">Share</button></div></div>';
+      return '<div class="vote-card lg2' + (mine ? " voted" : "") + '"><div class="lg2-maker">' + esc(l.makerName) + '</div>' + media(l) + '<strong class="lg2-name"><a href="/community/p/?id=' + encodeURIComponent(l.id) + '">' + esc(l.name) + '</a></strong><div class="lg2-actions"><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "Voted" : "Vote") + '</button><button type="button" class="share-btn" data-share="' + esc(l.id) + '" data-name="' + esc(l.name) + '" aria-label="Share ' + esc(l.name) + '">Share</button></div></div>';
     }).join("") || '<p class="lg-empty">' + (data.eligible.length ? "No matching projects." : "No projects in the league yet.") + "</p>";
     if (data.voted && !msg.textContent) say("You've voted this week. Come back Monday to vote again.", "ok");
   }

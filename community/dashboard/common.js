@@ -25,21 +25,13 @@
     var c = cover(l);
     return '<div class="listing-icon">' + (c ? '<img src="' + esc(c) + '" alt="" loading="lazy">' : esc((l.name || "?").charAt(0).toUpperCase())) + "</div>";
   }
-  function signIn(root, then) {
-    root.innerHTML =
-      '<div class="card signin"><h2>Sign in</h2><p class="muted" style="margin-bottom:14px;font-size:.9rem">Log in with your creator email and password.</p>' +
-      '<form id="si"><div class="fld"><label for="si-e">Email</label><input class="ctl" id="si-e" type="email" autocomplete="email" required></div>' +
-      '<div class="fld"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><label for="si-p" style="display:block;font-weight:600;font-size:.92rem;margin-bottom:6px">Password</label><a id="si-forgot" href="/login/?forgot=1&amp;next=%2Fcommunity%2Fdashboard%2F" style="font-size:.85rem;color:#c4b5fd">Forgot password?</a></div><input class="ctl" id="si-p" type="password" autocomplete="current-password" required></div>' +
-      '<p class="err" id="si-err" role="alert"></p><button class="btn primary" type="submit">Sign in</button> ' +
-      '<a class="btn ghost" href="/login/?next=%2Fcommunity%2Fdashboard%2F">Continue with Google or X</a></form></div>';
-    root.querySelector("#si-forgot").addEventListener("click", function () { var v = root.querySelector("#si-e").value.trim(); if (v) this.href = "/login/?forgot=1&email=" + encodeURIComponent(v) + "&next=%2Fcommunity%2Fdashboard%2F"; });
-    root.querySelector("#si").addEventListener("submit", function (e) {
-      e.preventDefault();
-      var err = root.querySelector("#si-err"); err.textContent = "";
-      fetch("/api/community/creator-login", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: root.querySelector("#si-e").value, password: root.querySelector("#si-p").value }) })
-        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { if (r.ok && d.ok !== false) then(); else err.textContent = d.error || "Sign-in failed."; }); })
-        .catch(function () { err.textContent = "Network error. Try again."; });
-    });
+  /* Logged out: send people to the one standard auth screen (Log in / Register / Forgot password) and come back here after.
+     Nothing from the dashboard (tabs, profile or maker page editor) is shown until they are signed in. */
+  function signIn(root) {
+    var back = location.pathname + location.search + location.hash;
+    if (root) root.innerHTML = '<div class="card signin"><h2>Log in to continue</h2><p class="muted" style="margin:8px 0 14px;font-size:.92rem">Taking you to the log in page…</p>' +
+      '<p class="select-row"><a class="btn primary" href="/login/?next=' + encodeURIComponent(back) + '">Log in</a><a class="btn" href="/login/?mode=signup&amp;next=' + encodeURIComponent(back) + '">Register</a><a class="btn ghost" href="/login/?forgot=1&amp;next=' + encodeURIComponent(back) + '">Forgot password?</a></p></div>';
+    location.replace("/login/?next=" + encodeURIComponent(back));
   }
   /* Private dashboard links (?k=) work here too: exchange once for the session cookie, then drop it from the URL. */
   function linkAuth() {

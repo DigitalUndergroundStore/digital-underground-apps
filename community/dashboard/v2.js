@@ -132,9 +132,9 @@
 
   function load() {
     D.api("GET").then(function (d) {
-      if (d._status === 401) { $("#sub").textContent = "Sign in to manage your listings."; document.querySelector(".tabs").hidden = true; D.signIn($("#root"), function () { location.reload(); }); return; }
+      if (d._status === 401) { $("#sub").textContent = "Log in to manage your listings."; D.signIn($("#root")); return; }
       if (!d.listings) { $("#listings").innerHTML = '<div class="banner bad">' + esc(d.error || "Could not load the dashboard.") + "</div>"; return; }
-      data = d;
+      data = d; document.querySelector(".tabs").hidden = false;
       var live = d.listings.filter(function (l) { return l.status === "approved"; }).length;
       $("#sub").textContent = (d.account && d.account.email ? d.account.email + " · " : "") + live + " live listing" + (live === 1 ? "" : "s") + (d.master ? " · owner master view" : "");
       renderListings();

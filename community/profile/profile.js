@@ -3,6 +3,7 @@
   var $ = function (id) { return document.getElementById(id); };
   function say(t, ok) { var m = $("msg"); m.hidden = !t; m.textContent = t || ""; m.className = "au-alert" + (ok ? " ok" : ""); }
   function render(d) {
+    $("pf-main").hidden = false; /* only shown once we know they are logged in */
     var av = $("av"); av.innerHTML = ""; av.className = "pf-av";
     if (d.avatar) { var i = new Image(); i.alt = ""; i.src = d.avatar; av.appendChild(i); if (/\.svg$/.test(d.avatar)) av.className = "pf-av mark"; }
     else av.textContent = (d.name || "C").charAt(0).toUpperCase();
@@ -44,5 +45,5 @@
     e.preventDefault();
     api("POST", JSON.stringify({ name: $("nm").value }), "application/json").then(function (d) { if (!d.ok) return say(d.error); render(d); say("Name saved.", true); }).catch(function () {});
   });
-  api("GET").then(render).catch(function () {});
+  api("GET").then(render).catch(function (e) { if (e !== 0) { $("pf-main").hidden = false; say("Couldn't load your profile. Refresh to try again."); } });
 })();

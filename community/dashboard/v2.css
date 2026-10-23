@@ -132,7 +132,7 @@ textarea.ctl { resize: vertical; min-height: 120px; }
 .banner { border: 1px solid rgba(230,232,236,0.22); background: rgba(79,70,229,0.06); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; font-size: .9rem; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; justify-content: space-between; }
 .banner.warn { border-color: rgba(230,232,236,0.24); background: rgba(79,70,229,0.07); }
 .banner.bad { border-color: rgba(240,128,128,0.45); background: rgba(240,128,128,0.07); }
-.banner[hidden] { display: none; }
+.banner[hidden], .tabs[hidden] { display: none; }
 .skel { height: 56px; border-radius: 10px; background: transparent; background-size: 200% 100%; animation: sk 1.2s infinite; margin: 8px 0; }
 @keyframes sk { to { background-position: -200% 0; } }
 

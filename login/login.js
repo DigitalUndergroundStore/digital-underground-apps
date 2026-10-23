@@ -1,10 +1,10 @@
-/* Log in / Sign up / Forgot password (v6: Wolf mock layout) */
+/* Log in / Register / Forgot password (v7: Wolf Oct 23 — plain Log in / Register / Forgot password) */
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var mode = "login", ticket = "", qs = new URLSearchParams(location.search), next = qs.get("next") || "/community/dashboard/";
   if (!/^\/(?!\/)/.test(next)) next = "/community/dashboard/";
   var COPY = { login: ["Welcome back", "Log in to manage your listings.", "Log in", "current-password", "Your password"],
-               signup: ["Create your account", "List what you build. Reach people who'll use it.", "Create account", "new-password", "Create a password"] };
+               signup: ["Create your account", "Register to list what you build. Your profile comes next, after you're in.", "Register", "new-password", "Create a password"] };
   var ERR = { cancelled: "Sign-in was cancelled.", state: "That sign-in expired. Try again.", token: "The provider didn't confirm the sign-in. Try again.",
               provider: "Couldn't reach the provider. Try again.", profile: "The provider didn't share an account id.", rate: "Too many attempts. Try again in a few minutes.",
               "google-unavailable": "Google sign-in isn't set up yet. Use email for now.", "x-unavailable": "X sign-in isn't set up yet. Use email for now." };
@@ -14,7 +14,9 @@
     $("t-login").setAttribute("aria-selected", m === "login"); $("t-signup").setAttribute("aria-selected", m === "signup");
     $("au-title").textContent = c[0]; $("au-sub").textContent = c[1]; $("go").textContent = c[2];
     $("pw").setAttribute("autocomplete", c[3]); $("pw").placeholder = c[4]; $("forgot").hidden = m !== "login"; $("pw-hint").hidden = m !== "signup"; say("");
-    document.title = (m === "signup" ? "Sign up" : "Log in") + " | Digital Underground";
+    document.title = (m === "signup" ? "Register" : "Log in") + " | Digital Underground";
+    $("swap-q").textContent = m === "signup" ? "Already have an account?" : "New here?"; $("swap-a").textContent = m === "signup" ? "Log in" : "Register";
+    $("swap-a").href = tabUrl(m === "signup" ? "login" : "signup"); $("swap-a").dataset.mode = m === "signup" ? "login" : "signup";
   }
   function tabUrl(m) { var u = new URLSearchParams(); if (m === "signup") u.set("mode", "signup"); if (qs.get("next")) u.set("next", next); var q = u.toString(); return "/login/" + (q ? "?" + q : ""); }
   document.querySelectorAll(".au-tabs [data-mode]").forEach(function (b) { b.addEventListener("click", function () { setMode(b.dataset.mode); if (!qs.get("forgot") && !qs.get("reset") && !qs.get("mfa")) history.replaceState(null, "", tabUrl(b.dataset.mode)); }); });
@@ -75,6 +77,8 @@
   function showForgot() { only("f-forgot", "Reset your password", "Enter your account email and we'll send you a reset link that works for 1 hour."); say(""); if (noMail) showNoMail();
     var pre = qs.get("email") || $("em").value.trim(); if (pre && !$("fem").value) $("fem").value = pre; $("fem").focus(); }
   $("forgot").addEventListener("click", function (e) { e.preventDefault(); history.pushState(null, "", "/login/?forgot=1" + (qs.get("next") ? "&next=" + encodeURIComponent(next) : "")); showForgot(); });
+  $("swap-a").addEventListener("click", function (e) { e.preventDefault(); var m = this.dataset.mode || "signup"; setMode(m); history.replaceState(null, "", tabUrl(m)); });
+  $("forgot2").addEventListener("click", function (e) { e.preventDefault(); $("forgot").click(); });
   $("resend").addEventListener("click", function () { showForgot(); $("fem").select(); });
   window.addEventListener("popstate", function () { location.reload(); });
   if (resetTok) { history.replaceState(null, "", "/login/?reset=1"); if (resetTok === "1") resetTok = ""; only("f-reset", "Choose a new password", "Pick something you don't use anywhere else."); }

@@ -372,14 +372,24 @@
   .lg-standings, .card-meta, #meta { font-family: 'JetBrains Mono', ui-monospace, monospace; }
   .lg-promo { margin: 22px 0 6px; max-width: 420px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(139,92,246,0.45); box-shadow: 0 0 40px rgba(139,92,246,0.18); background: var(--bg-surface); }
   .lg-promo video { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; }
+  .lg-hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; align-items: center; }
+  .lg-hero .lead { margin-bottom: 20px; }
+  .lg-hero .lg-promo { margin: 0; max-width: none; width: 100%; }
+  @media (max-width: 760px) {
+    .lg-hero { grid-template-columns: 1fr; gap: 22px; padding-top: 32px; }
+    .lg-hero .lg-promo { max-width: 460px; justify-self: center; }
+    .lg-hero .lead { max-width: none; }
+  }
 </style>
 </head>
 <body><!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=9" defer></script><!--/du-site-nav-->
 <main id="main" class="container">
-  <section class="hero">
+  <section class="hero lg-hero">
+    <div class="lg-hero-text">
     <h1>Maker League</h1>
     <p class="lead">A free weekly vote for indie projects on the Developer Marketplace. Pick your favourite: <strong>one vote per visitor per week</strong>. Each week runs Thursday to Thursday and ends Thursday at 11:59 PM ET, and last week’s winner becomes Maker of the Week on the homepage.</p>
     <button type="button" class="share-btn" data-lg-share>↑ Share the League</button>
+    </div>
     <figure class="lg-promo"><video src="/assets/promo/maker-league-promo-square.mp4" poster="/assets/promo/maker-league-square-poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Maker League promo video"></video></figure>
   </section>
 

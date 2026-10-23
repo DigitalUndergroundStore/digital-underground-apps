@@ -29,11 +29,3 @@
 
 .motw img.motw-official{width:auto;height:40px;border-radius:0;object-fit:contain;display:block;margin:0 0 6px}
 .motw-badge img{height:48px;width:auto}
-
-/* Maker League keeps its original neon-violet look (restored Oct 23 2026 at Donald's request via Wolf).
-   Page-scoped token overrides so the shared clean-theme tokens don't flatten it. */
-:root{
-  --du-bg:#07060f;--du-surface:rgba(16,12,28,.92);--du-surface-2:#120e22;--du-text:#f5f3ff;--du-muted:#c8c0da;
-  --du-accent:#bfe8ff;--du-accent-violet:#a78bfa;--du-brand-1:#6d28d9;--du-brand-2:#1e3a8a;
-  --du-gradient:linear-gradient(105deg,#6d28d9,#1e3a8a);--du-border:rgba(255,255,255,.12);--du-border-strong:rgba(191,232,255,.55);--du-success:#6ee7b7;
-}

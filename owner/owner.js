@@ -32,7 +32,7 @@
 
   function go(name) {
     view = name;
-    ["login", "home", "queue", "contacts", "support", "analytics", "apikeys", "backups", "links"].forEach(function (v) {
+    ["login", "home", "queue", "contacts", "crm", "support", "analytics", "apikeys", "backups", "links"].forEach(function (v) {
       var el = $("view-" + v);
       if (!el) return;
       if (v === "login") el.classList.toggle("hidden", name !== "login");
@@ -43,6 +43,7 @@
     if (name === "home") loadHome();
     if (name === "queue") { loadQueue("pending"); loadMakers(); loadReports(); }
     if (name === "contacts") loadContacts("");
+    if (name === "crm" && window.duCrmLoad) window.duCrmLoad();
     if (name === "support") loadSupport("open");
     if (name === "analytics") loadAnalytics();
     if (name === "backups") loadBackups();
@@ -64,6 +65,7 @@
         card("queue", "Review queue", pending + (out.d.flaggedCount || 0), (pending ? pending + " waiting" : "All clear") + (out.d.flaggedCount ? " · " + out.d.flaggedCount + " flagged" : ""), pending || out.d.flaggedCount ? "badge" : "badge ok") +
         card("support", "Support inbox", support, support ? "Needs a reply" : "Inbox zero", support ? "badge" : "badge ok") +
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
+        card("crm", "CRM pipeline", "→", "Leads, makers, press, follow-ups", "") +
         card("analytics", "Analytics", (w.views || 0), "views, " + (w.clicks || 0) + " clicks · 7 days", "") +
         card("backups", "Backups", shortDate(backup.lastSnapshot) || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
         card("apikeys", "API keys", "→", "Creator API access", "") +

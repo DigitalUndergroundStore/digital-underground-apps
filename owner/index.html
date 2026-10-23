@@ -7,6 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#05040c">
 <link rel="stylesheet" href="/owner/owner.css?v=6">
+<link rel="stylesheet" href="/owner/crm.css?v=1">
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
@@ -77,6 +78,61 @@
     <script>fetch("/api/owner/subscribers",{credentials:"same-origin"}).then(r=>r.ok?r.json():null).then(d=>{if(d)document.getElementById("sub-count").textContent=d.active+" active of "+d.total+" total signups";var t=document.getElementById("sub-list");if(d&&t){t.innerHTML=d.subscribers.slice(0,100).map(function(r){var e=function(x){return String(x||"").replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]})};return "<tr><td>"+e(r.email)+"</td><td>"+e(r.status)+"</td><td>"+new Date(r.at).toLocaleString("en-CA",{timeZone:"America/Toronto"})+"</td><td>"+e(r.source)+"</td></tr>"}).join("")||"<tr><td colspan=4>No signups yet.</td></tr>"}}).catch(()=>{});</script>
   </section>
 
+  <section id="view-crm" class="panel">
+    <button type="button" class="back" data-go="home">← Home</button>
+    <h1>CRM contacts</h1>
+    <p class="muted small">Your outreach pipeline: leads, makers, partners, press and buyers. Only you can see this.</p>
+    <div class="crm-pipe" id="crm-pipe"></div>
+    <div class="crm-pipe crm-pipe-lt" id="crm-pipe-lt"></div>
+    <div class="crm-bar">
+      <input id="crm-q" type="search" placeholder="Search name, email, handle, notes" autocomplete="off" aria-label="Search contacts">
+      <select id="crm-f-status" aria-label="Filter by status"><option value="">All statuses</option></select>
+      <select id="crm-f-category" aria-label="Filter by category"><option value="">All categories</option></select>
+      <select id="crm-f-lead" aria-label="Filter by lead type"><option value="">All lead types</option></select>
+      <select id="crm-f-source" aria-label="Filter by source"><option value="">All sources</option></select>
+      <select id="crm-sort" aria-label="Sort">
+        <option value="updatedAt:desc">Recently updated</option>
+        <option value="name:asc">Name A–Z</option>
+        <option value="nextFollowUp:asc">Next follow-up (soonest)</option>
+        <option value="lastContact:desc">Last contact (newest)</option>
+        <option value="status:asc">Status</option>
+        <option value="leadType:desc">Lead type (VIP first)</option>
+        <option value="category:asc">Category</option>
+      </select>
+    </div>
+    <div class="crm-actions">
+      <button type="button" class="btn ok" id="crm-add">+ Add contact</button>
+      <a class="btn ghost" id="crm-csv" href="/api/owner/crm?format=csv">Export CSV</a>
+      <span class="muted small" id="crm-count"></span>
+    </div>
+    <div id="crm-list" class="list"></div>
+    <dialog id="crm-dlg" class="crm-dlg">
+      <form id="crm-form" method="dialog">
+        <h2 id="crm-dlg-title">Contact</h2>
+        <div class="crm-grid">
+          <label>Name<input name="name" maxlength="300"></label>
+          <label>Handle (X etc.)<input name="handle" maxlength="300" placeholder="@handle"></label>
+          <label>Email<input name="email" type="email" maxlength="300"></label>
+          <label>Website<input name="website" maxlength="300" placeholder="https://"></label>
+          <label>Source<input name="source" maxlength="500" placeholder="Where they came from"></label>
+          <label>Category<select name="category"></select></label>
+          <label>Status<select name="status"></select></label>
+          <label>Lead type<select name="leadType"></select></label>
+          <label>Last contact<input name="lastContact" type="date"></label>
+          <label>Next follow-up<input name="nextFollowUp" type="date"></label>
+          <label class="crm-wide">Offer<input name="offer" maxlength="300" placeholder="Free marketplace listing, product code, collab…"></label>
+          <label class="crm-wide">Notes<textarea name="notes" rows="4" maxlength="5000"></textarea></label>
+        </div>
+        <p id="crm-msg" class="small" role="status" aria-live="polite"></p>
+        <div class="crm-actions">
+          <button type="submit" class="btn ok" value="save" id="crm-save">Save</button>
+          <button type="button" class="btn ghost" id="crm-cancel">Cancel</button>
+          <button type="button" class="btn danger" id="crm-del" hidden>Delete</button>
+        </div>
+      </form>
+    </dialog>
+  </section>
+
   <section id="view-support" class="panel">
     <button type="button" class="back" data-go="home">← Home</button>
     <h1>Support inbox</h1>
@@ -142,6 +198,7 @@
     </div>
   </section>
 </div>
-<script src="/owner/owner.js?v=9"></script>
+<script src="/owner/owner.js?v=10"></script>
+<script src="/owner/crm.js?v=1"></script>
 </body>
 </html>

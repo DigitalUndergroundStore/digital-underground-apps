@@ -17,7 +17,7 @@ PRE = {
   "login/index.html": [],
 }
 # Pages that get the shared header but NOT the clean site theme (product app pages keep their own look).
-NO_THEME = {"tools/field-studio/about/index.html", "src/store-legacy/index.html", "advertise/index.html"}  # advertise = CyberArena (Kerzy Labs) ad page
+NO_THEME = {"tools/field-studio/about/index.html", "src/store-legacy/index.html", "advertise/index.html", "league/index.html"}  # advertise = CyberArena (Kerzy Labs) ad page
 NO_STAMP = {"screening-room-7k3q/home-clean/index.html", "src/store-legacy/index.html"}  # frozen preview Wolf approved (Oct 23 2026)
 GEN = {"scripts/gen-blog.py", "functions/makers/[[path]].js", "src/home-v3/index.template.html"}  # templates holding the markers
 

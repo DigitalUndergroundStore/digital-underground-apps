@@ -1,31 +1,39 @@
-.lg-panel{margin:0 0 20px;padding:16px;border:1px solid rgba(230,232,236,0.19);border-radius:20px;background:rgba(230,232,236,0.03)}
+.lg-panel{margin:0 0 20px;padding:16px;border:1px solid rgba(196,181,253,.22);border-radius:20px;background:rgba(255,255,255,.03)}
 .lg-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 12px;margin-bottom:12px}
 .lg-head h2{margin:0;font-size:20px}.lg-meta,.lg-fine{color:var(--muted);font-size:13px}
 .lg-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.lg-list li{display:flex;align-items:center;gap:12px;padding:8px;border-radius:12px;background:rgba(230,232,236,0.03)}
-.lg-list .n{width:28px;text-align:center;font-weight:800;color:#9a97e8}.lg-list img,.lg-ph{width:44px;height:48px;border-radius:12px;object-fit:cover;flex:none;background:rgba(79,70,229,0.15)}
+.lg-list li{display:flex;align-items:center;gap:12px;padding:8px;border-radius:12px;background:rgba(255,255,255,.03)}
+.lg-list .n{width:28px;text-align:center;font-weight:800;color:#c4b5fd}.lg-list img,.lg-ph{width:44px;height:48px;border-radius:12px;object-fit:cover;flex:none;background:rgba(139,92,246,.15)}
 .lg-list a{color:inherit;font-weight:700;text-decoration:none}.lg-list small{display:block;color:var(--muted);font-weight:400}
 .lg-list .v{margin-left:auto;font-weight:800;white-space:nowrap}
 .lg-empty{justify-content:center;color:var(--muted);text-align:center;padding:20px!important}
-.lg-q{width:100%;min-height:48px;margin:0 0 12px;padding:0 16px;border-radius:12px;border:1px solid rgba(230,232,236,0.21);background:rgba(0,0,0,0.25);color:inherit;font:inherit}
+.lg-q{width:100%;min-height:48px;margin:0 0 12px;padding:0 16px;border-radius:12px;border:1px solid rgba(196,181,253,.3);background:rgba(0,0,0,.25);color:inherit;font:inherit}
 .lg-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
-.lg-grid li{display:flex;align-items:center;gap:12px;padding:8px;border:1px solid rgba(230,232,236,0.17);border-radius:16px}
+.lg-grid li{display:flex;align-items:center;gap:12px;padding:8px;border:1px solid rgba(196,181,253,.16);border-radius:16px}
 .lg-grid .t{flex:1;min-width:0}.lg-grid .t b,.lg-grid .t small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lg-grid small{color:var(--muted)}
 .lg-grid img,.lg-grid .lg-ph{width:40px;height:40px;border-radius:12px;object-fit:cover;flex:none}
-.lg-grid button{flex:none;min-height:40px;padding:0 16px;border:0;border-radius:999px;background:var(--du-gradient);color:#e6e8ec;font-weight:700;cursor:pointer}
-.lg-grid button:disabled{opacity:.45;cursor:default}.lg-grid li.is-mine{border-color:#4f46e5}.lg-grid li.is-mine button{background:#4f46e5;opacity:1}
-.lg-msg{margin:0 0 12px;min-height:1em}.lg-msg.ok{color:#9a97e8}.lg-msg.err{color:#f08080}
+.lg-grid button{flex:none;min-height:40px;padding:0 16px;border:0;border-radius:999px;background:var(--du-gradient);color:#fff;font-weight:700;cursor:pointer}
+.lg-grid button:disabled{opacity:.45;cursor:default}.lg-grid li.is-mine{border-color:#86efac}.lg-grid li.is-mine button{background:#166534;opacity:1}
+.lg-msg{margin:0 0 12px;min-height:1em}.lg-msg.ok{color:#86efac}.lg-msg.err{color:#fca5a5}
 .lg-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.motw{display:flex;gap:16px;align-items:center;margin:0 0 20px;padding:16px;border-radius:20px;border:1px solid rgba(230,232,236,0.26);background:transparent;color:inherit;text-decoration:none}
+.motw{display:flex;gap:16px;align-items:center;margin:0 0 20px;padding:16px;border-radius:20px;border:1px solid rgba(250,204,21,.45);background:linear-gradient(135deg,rgba(250,204,21,.12),rgba(139,92,246,.12));color:inherit;text-decoration:none}
 .motw img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:none}
-.motw .k{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#9a97e8}
+.motw .k{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fde047}
 .motw h2{margin:2px 0 4px;font-size:20px}.motw p{margin:0;color:var(--muted);font-size:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .motw-wrap{max-width:1180px;margin:12px auto 0;padding:0 16px}
 @media (max-width:480px){.motw img{width:64px;height:64px}.motw h2{font-size:17px}}
-.motw-badge{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0 0;padding:8px 12px;border-radius:999px;border:1px solid rgba(230,232,236,0.27);background:rgba(79,70,229,0.1);color:#9a97e8;font-weight:700;font-size:14px}
-.motw-badge button{border:0;background:none;color:#9a97e8;text-decoration:underline;font:inherit;font-weight:600;cursor:pointer;padding:0}
+.motw-badge{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0 0;padding:8px 12px;border-radius:999px;border:1px solid rgba(250,204,21,.5);background:rgba(250,204,21,.1);color:#fde047;font-weight:700;font-size:14px}
+.motw-badge button{border:0;background:none;color:#fde047;text-decoration:underline;font:inherit;font-weight:600;cursor:pointer;padding:0}
 
-.lg-share{display:inline-flex;align-items:center;gap:8px;margin-top:8px;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(230,232,236,0.26);background:rgba(230,232,236,0.04);color:#e6e8ec;font:600 14px Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap}.lg-share:hover{background:rgba(79,70,229,0.15);border-color:#4f46e5}
+.lg-share{display:inline-flex;align-items:center;gap:8px;margin-top:8px;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(196,181,253,.45);background:rgba(255,255,255,.04);color:#fff;font:600 14px Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap}.lg-share:hover{background:rgba(139,92,246,.15);border-color:#a78bfa}
 
 .motw img.motw-official{width:auto;height:40px;border-radius:0;object-fit:contain;display:block;margin:0 0 6px}
 .motw-badge img{height:48px;width:auto}
+
+/* Maker League keeps its original neon-violet look (restored Oct 23 2026 at Donald's request via Wolf).
+   Page-scoped token overrides so the shared clean-theme tokens don't flatten it. */
+:root{
+  --du-bg:#07060f;--du-surface:rgba(16,12,28,.92);--du-surface-2:#120e22;--du-text:#f5f3ff;--du-muted:#c8c0da;
+  --du-accent:#bfe8ff;--du-accent-violet:#a78bfa;--du-brand-1:#6d28d9;--du-brand-2:#1e3a8a;
+  --du-gradient:linear-gradient(105deg,#6d28d9,#1e3a8a);--du-border:rgba(255,255,255,.12);--du-border-strong:rgba(191,232,255,.55);--du-success:#6ee7b7;
+}

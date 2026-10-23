@@ -64,7 +64,7 @@
     });
     $("crm-count").textContent = list.length + " of " + rows.length + " contacts";
     var lt = function (r) { return '<span class="crm-b lt-' + esc(r.leadType) + '">' + esc(r.leadType === "vip" ? "VIP" : r.leadType) + "</span>"; };
-    var acts = function (r) { var i = esc(r.id); return '<div class="crm-acts"><button type="button" class="btn ghost crm-sm" data-act="edit" data-id="' + i + '">Edit</button><button type="button" class="btn danger crm-sm" data-act="del" data-id="' + i + '">Delete</button><button type="button" class="btn ghost crm-sm" data-act="insp" data-id="' + i + '">Inspect</button></div>'; };
+    var acts = function (r) { var i = esc(r.id); return '<div class="crm-acts"><button type="button" class="btn ghost crm-sm" data-crm="edit" data-id="' + i + '">Edit</button><button type="button" class="btn danger crm-sm" data-crm="del" data-id="' + i + '">Delete</button><button type="button" class="btn ghost crm-sm" data-crm="insp" data-id="' + i + '">Inspect</button></div>'; };
     $("crm-list").innerHTML = list.length ? '<table class="crm-table"><thead><tr><th>Contact</th><th>Name</th><th>Lead</th><th>Status</th><th>Offer</th><th><span class="sr">Actions</span></th></tr></thead><tbody>' + list.map(function (r) {
       var due = isDue(r, t0);
       return '<tr><td class="c-contact">' + esc(r.email || r.handle || "—") + (r.email && r.handle ? '<div class="c-sub">' + esc(r.handle) + "</div>" : "") + '</td><td class="c-name">' + esc(r.name || "—") + '</td><td class="c-lt">' + lt(r) + (due ? ' <span class="crm-b due">due</span>' : "") + '</td><td class="c-st"><span class="crm-b st">' + esc(r.status) + '</span></td><td class="c-offer" title="' + esc(r.offer) + '">' + esc(r.offer || "") + '</td><td class="c-act">' + acts(r) + "</td></tr>";
@@ -137,9 +137,9 @@
     $("crm-pipe").addEventListener("click", function (e) { var b = e.target.closest("[data-ps]"); if (!b) return; var s = b.getAttribute("data-ps"); pipeStatus = pipeStatus === s ? "" : s; $("crm-f-status").value = ""; render(); });
     $("crm-pipe-lt").addEventListener("click", function (e) { var b = e.target.closest("[data-pl]"); if (!b) return; var s = b.getAttribute("data-pl"); pipeLead = pipeLead === s ? "" : s; $("crm-f-lead").value = ""; render(); });
     $("crm-list").addEventListener("click", function (e) {
-      var b = e.target.closest("[data-act]"); if (!b) return;
+      var b = e.target.closest("[data-crm]"); if (!b) return;
       var r = byId(b.getAttribute("data-id")); if (!r) return;
-      var a = b.getAttribute("data-act");
+      var a = b.getAttribute("data-crm");
       if (a === "edit") open(r); else if (a === "del") del(r); else inspect(r);
     });
   }

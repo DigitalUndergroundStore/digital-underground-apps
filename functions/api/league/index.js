@@ -40,7 +40,7 @@ export async function onRequestGet({ request, env }) {
     if (!voted && (await Promise.all(ipKeys.map((k) => kv.get(k)))).every(Boolean)) voted = true; // network used all its votes
   }
   return json({ week, endsAt: weekEndsAt(week), standings: rank(list, counts), totalVotes: [...counts.values()].reduce((a, b) => a + b, 0),
-    eligible: list.map((l) => ({ id: l.id, name: l.name, makerName: l.makerName, imageUrl: l.imageUrl })), voted }, 200, { "cache-control": "no-store" });
+    eligible: list.map((l) => ({ id: l.id, name: l.name, makerName: l.makerName, imageUrl: l.imageUrl, video: l.video && (l.video.kind === "file" || l.video.kind === "youtube" || l.video.kind === "vimeo") ? l.video : null })), voted }, 200, { "cache-control": "no-store" });
 }
 
 export async function onRequestPost({ request, env }) {

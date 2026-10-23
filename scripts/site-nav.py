@@ -29,7 +29,7 @@ CONTACT = "mailto:digitalunderground.store@proton.me"
 COLS = [
   ("Marketplace", [("/#projects", "Browse projects"), ("/league/", "Maker League"), ("/makers/", "Creators"), ("/community/submit/", "List your project free"), ("/community/dashboard/", "Creator dashboard")]),
   ("Resources", [("/blog/", "Blog"), ("/community/api/", "Developer API"), ("/support/", "Support"), ("share", "")]),
-  ("Company", [("/store/", "Digital Underground store"), (CONTACT, "Contact us"), ("https://x.com/DigitalUG_Store", "Follow @DigitalUG_Store")]),
+  ("Company", [("/about/", "About"), ("/store/", "Digital Underground store"), (CONTACT, "Contact us"), ("https://x.com/DigitalUG_Store", "Follow @DigitalUG_Store")]),
 ]
 def _li(h, t):
     if h == "share": return '<li><button type="button" data-duf-share>Share this page</button></li>'

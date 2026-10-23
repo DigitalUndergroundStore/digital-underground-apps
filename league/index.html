@@ -358,6 +358,9 @@
   #voteGrid .lg2-actions .vote-btn, #voteGrid .lg2-actions .share-btn { flex: 1; margin: 0; padding: 10px 0; font-size: 0.85rem; text-align: center; border-radius: 999px; }
   #voteGrid .vote-btn:disabled:not(.voted) { opacity: .55; cursor: default; }
   @media (max-width: 640px) { #voteGrid.vote-grid { grid-template-columns: 1fr; } }
+  #voteGrid .lg2-actions .share-btn { display: inline-flex !important; align-items: center; justify-content: center; gap: 6px; color: #ede9fe; font-weight: 600; background: rgba(139,92,246,0.14); border: 1px solid rgba(167,139,250,0.6); }
+  #voteGrid .lg2-actions .share-btn::before { content: ""; width: 14px; height: 14px; flex: none; background: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v13M7 8l5-5 5 5M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5'/%3E%3C/svg%3E") center/contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v13M7 8l5-5 5 5M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5'/%3E%3C/svg%3E") center/contain no-repeat; }
+  #voteGrid .lg2-actions .share-btn:hover { background: rgba(139,92,246,0.28); }
 </style>
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=14">
 </head>

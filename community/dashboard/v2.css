@@ -45,7 +45,7 @@ header.top { position: sticky; top: 0; z-index: 40; background: rgba(17,20,26,0.
 .nav-btn.primary { background: var(--accent-grad); color: #e6e8ec; }
 .beta-pill { font-size: 0.7rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--cyan); border: 1px solid rgba(230,232,236,0.24); border-radius: 999px; padding: 2px 8px; line-height: 1.4; }
 
-.page { padding: 32px 0 60px; }
+.page { padding-top: 32px; padding-bottom: 60px; }
 h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 4px; }
 .subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; }
 

@@ -10,7 +10,7 @@ and sets the versioned CSS/JS includes. Used by gen-landing.py, generate-product
 apply-site-nav.py (which stamps every existing page + generator template). Bump CSS_V / JS_V on edits."""
 import re
 
-CSS_V, JS_V = "16", "8"
+CSS_V, JS_V = "16", "9"
 THEME_V = "2"  # /assets/theme-clean.css: clean theme (Oct 23 2026), always the last stylesheet
 LINKS = [("/", "Marketplace"), ("/league/", "League"), ("/makers/", "Creators"), ("/blog/", "Blog")]
 MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'

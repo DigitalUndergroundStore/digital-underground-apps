@@ -58,7 +58,7 @@
       var avEl = ub.querySelector(".av");
       if (n.creator.avatar && /^\/(?!\/)/.test(n.creator.avatar)) { var im = new Image(); im.src = n.creator.avatar; im.alt = ""; avEl.appendChild(im); avEl.classList.add("has-img"); if (/\.svg$/.test(n.creator.avatar)) avEl.classList.add("mark"); }
       else avEl.textContent = nm.charAt(0).toUpperCase(); ub.querySelector(".nm").textContent = nm; ub.setAttribute("aria-label", "Account menu for " + nm);
-      pop.innerHTML = (n.isOwner ? '<a role="menuitem" href="/owner/" data-owner-link>Owner</a>' : '') + '<a role="menuitem" href="/community/dashboard/">Dashboard</a><a role="menuitem" href="/community/profile/">Edit profile</a><button type="button" role="menuitem" data-signout>Log out</button>';
+      pop.innerHTML = (n.isOwner ? '<a role="menuitem" href="/owner/" data-owner-link>Owner</a>' : '') + '<a role="menuitem" href="/community/dashboard/">Dashboard</a><a role="menuitem" href="/community/profile/">Edit profile</a><button type="button" role="menuitem" data-signout>Sign out</button>';
       ub.addEventListener("click", function (e) { e.stopPropagation(); var o = pop.classList.toggle("open"); ub.setAttribute("aria-expanded", o ? "true" : "false"); if (d) close(d, b); });
       pop.querySelector("[data-signout]").addEventListener("click", function () { fetch("/api/community/creator?action=signout", { method: "POST", credentials: "same-origin" }).finally(function () { location.reload(); }); });
     });

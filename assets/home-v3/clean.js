@@ -34,9 +34,9 @@
     sync();
   }
   function sync(){
-    var box=$('hcChips'); if(!box) return; var any=false;
-    box.querySelectorAll('.hc-chip').forEach(function(b){ var c=b.getAttribute('data-c'); if(!c) return; var ck=document.querySelector('input[name=cat][value="'+c+'"]'); var on=!!(ck&&ck.checked); if(on) any=true; b.setAttribute('aria-pressed',on); });
-    var all=box.querySelector('[data-c=""]'); if(all) all.setAttribute('aria-pressed',!any);
+    var box=$('hcChips'), any=false;
+    if(box){ box.querySelectorAll('.hc-chip').forEach(function(b){ var c=b.getAttribute('data-c'); if(!c) return; var ck=document.querySelector('input[name=cat][value="'+c+'"]'); var on=!!(ck&&ck.checked); if(on) any=true; b.setAttribute('aria-pressed',on); });
+    var all=box.querySelector('[data-c=""]'); if(all) all.setAttribute('aria-pressed',!any); }
     var r=document.querySelector('input[name=sort]:checked'), s=$('hcSort'); if(r&&s) s.value=r.value;
   }
   document.addEventListener('click',function(e){

@@ -27,12 +27,25 @@ E = html.escape
 def slug(name): return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 for _, its in secs:
     for d in its: d["slug"] = slug(d["name"])
+# Wave AC: CTA overrides ported from Wave AB static patches. Legacy source keeps Gumroad prices;
+# these products are offered free on-site, so cards must say so and link to the free path.
+CTA = {
+  "Humanity X: Off the Ground": dict(price="Free with signup", href="/free-book/", ext=False, cta="Get free", aria="Get Humanity X: Off the Ground free with email signup"),
+  "Pantry Week": dict(price="Free beta", href=None, ext=True, cta="Get free", aria="Get the Pantry Week free beta on Gumroad (opens in a new tab)"),
+}
+def cta(d):
+    o = CTA.get(d["name"])
+    if o: return dict(price=o["price"], href=o["href"] or d["href"], ext=o["ext"], cta=o["cta"], aria=o["aria"])
+    free = d["price"] == "Free"
+    return dict(price=d["price"], href=d["href"], ext=True, cta="Get it free" if free else "Buy",
+                aria=f'{"Get" if free else "Buy"} {d["name"]} {"on Gumroad" if "gumroad.com" in d["href"] else "(free web app)"} (opens in a new tab)')
 def card(d, feat=False):
-    # Whole card links to the preview detail page (stretched title link); the Buy pill goes straight to Gumroad.
+    # Whole card links to the preview detail page (stretched title link); the pill goes to checkout or the free path (see CTA).
+    c = cta(d); tgt = ' target="_blank" rel="noopener"' if c["ext"] else ""
     return (f'<div class="pc{" pc-f" if feat else ""} rv">'
       f'<span class="pc-cv"><img src="{E(d["cover"])}" alt="{E(d["name"])} cover" loading="lazy" decoding="async"></span>'
       f'<span class="pc-b"><strong><a class="pc-a" href="/store/p/{d["slug"]}/">{E(d["name"])}</a></strong><span class="pc-d">{E(d["blurb"])}</span>'
-      f'<span class="pc-r"><span class="pc-p">{E(d["price"])}</span><a class="pc-c" href="{E(d["href"])}" target="_blank" rel="noopener" aria-label="{"Get" if d["price"]=="Free" else "Buy"} {E(d["name"])} {"on Gumroad" if "gumroad.com" in d["href"] else "(free web app)"} (opens in a new tab)">{"Get it free" if d["price"]=="Free" else "Buy"} <i>→</i></a></span></span></div>')
+      f'<span class="pc-r"><span class="pc-p">{E(c["price"])}</span><a class="pc-c" href="{E(c["href"])}"{tgt} aria-label="{E(c["aria"])}">{E(c["cta"])} <i>→</i></a></span></span></div>')
 HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{t}</title>
 <meta name="description" content="{desc}">
@@ -149,7 +162,13 @@ for sid, items in secs:
     body.append(f'<section class="s" id="{sid}"><div class="sh"><h2>{E(LABEL[sid])}</h2><span>{len(items)} item{"s"*(len(items)!=1)}</span></div><div class="{"gf" if feat else "g"}">' + "".join(card(d, feat) for d in items) + '</div></section>')
 body.append('<div class="trust"><div><b>Secure checkout</b><span>Payments handled by Gumroad.</span></div><div><b>Instant delivery</b><span>Download right after purchase.</span></div><div><b>Yours to keep</b><span>One-time price, no subscription.</span></div></div>')
 body.append('</div></main>' + js('\n<script src="/assets/signup.js?v=20261026au" defer></script>'))
-out = f"{R}/store"
+out = os.environ.get("DU_STORE_OUT", f"{R}/store")
+# Wave AC guard: live store/ HTML has many hand edits (Waves W–AB: series aside, thrillers tab, Books 1+2 pack,
+# richer blurbs, site-nav v10) that src/store-legacy does not hold. Writing to live store/ would regress them.
+# Dry-run: DU_STORE_OUT=/tmp/dry python3 scripts/gen-store.py, then diff -r store /tmp/dry. Use --force-live only after porting.
+import sys
+if os.path.realpath(out) == os.path.realpath(f"{R}/store") and "--force-live" not in sys.argv:
+    sys.exit("gen-store: refusing to overwrite live store/ (hand edits would regress). Set DU_STORE_OUT for a dry run, or pass --force-live.")
 open(f"{out}/index.html", "w", encoding="utf8").write(sn.apply("".join(body)))
 pw = next(d for _, i in secs for d in i if d["name"] == "Pantry Week")
 assert pw["price"] == "CA$24"
@@ -180,11 +199,17 @@ def detail(d, sec):
      f'<a class="btn btn-p buy" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it free" if d["price"]=="Free" else "Buy on Gumroad"} →</a><p class="note">{"Secure checkout via Gumroad · instant download" if "gumroad.com" in d["href"] else "Free web app · runs in your browser, no sign-up"}</p>',
      '</div></div>' + (f'<section class="s"><div class="sh"><h2>More from {E(LABEL[sec])}</h2></div><div class="g">' + "".join(card(x) for x in more) + '</div></section>' if more else '') + '<div style="height:60px"></div></main>',
      f'<div class="sticky-buy"><div><strong>{E(d["name"])}</strong><div style="color:var(--mu);font-size:14px">{E(d["price"])}</div></div><a class="btn btn-p" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it" if d["price"]=="Free" else "Buy now"}</a></div>', js()])
-import shutil; shutil.rmtree(f"{out}/p", ignore_errors=True)
-n = 0; slugs = []
+# Wave AC: these detail pages were hand-edited in Waves Z/AA (free-with-signup / free-beta heroes); never overwrite them.
+HAND = {"humanity-x-off-the-ground", "pantry-week"}
+import shutil
+if os.path.isdir(f"{out}/p"):
+    for x in os.listdir(f"{out}/p"):
+        if x not in HAND: shutil.rmtree(f"{out}/p/{x}", ignore_errors=True)
+n = 0; slugs = []; done = set()
 for sid, its in secs:
     for d in its:
         dd = f"{out}/p/{d['slug']}"
-        if os.path.exists(f"{dd}/index.html"): continue  # first section wins for items listed twice
+        if d["slug"] in done or d["slug"] in HAND: continue  # first section wins for items listed twice; HAND pages kept
+        done.add(d["slug"])
         os.makedirs(dd, exist_ok=True); open(f"{dd}/index.html", "w", encoding="utf8").write(sn.apply(detail(d, sid))); n += 1; slugs.append(d["slug"])
 print("ok", paid, "detail pages", n)

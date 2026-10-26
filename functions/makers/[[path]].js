@@ -125,7 +125,7 @@ function makerPage(p, rows) {
 </div>
 <section class="mx z listings" aria-labelledby="listings-title">
   <h2 id="listings-title" class="mk-h2">Listings by ${e(p.name)} <span class="mk-count">${rows.length}</span></h2>
-  ${rows.length ? `<ul class="grid">${rows.map(cardHTML).join("\n")}</ul>` : '<p class="muted">No live listings yet.</p>'}
+  ${rows.length ? `<ul class="grid">${rows.map(cardHTML).join("\n")}</ul>` : '<p class="muted">No live listings yet. <a href="/community/submit/">List a project free</a> (zero cut, your checkout) or <a href="/store/">browse the store</a>.</p>'}
 </section>`;
   const jsonld = { "@context": "https://schema.org", "@type": "ProfilePage", url: canonical, name: `${p.name} | Creators`,
     mainEntity: { "@type": "Organization", name: p.name, url: p.website || canonical, ...(p.logo ? { logo: abs(p.logo) } : {}), ...(p.bio ? { description: p.bio } : {}), sameAs: [p.website, ...Object.values(p.socials || {})].filter(Boolean) },

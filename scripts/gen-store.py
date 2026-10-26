@@ -155,6 +155,7 @@ body = [head("Digital Underground: Apps, AI Tools, Books &amp; Dev Marketplace",
  '<h1>Tools, apps &amp; stories, <span class="gt">built to own.</span></h1>',
  '<p class="lead">Offline-first software, prompt packs, bundles and books from independent makers. Pay once, keep it forever.</p>',
  '<div class="row"><a class="btn btn-p" href="#featured">Browse the collection</a><a class="btn btn-g" href="#free">Free downloads</a></div>',
+ '<div class="bv" style="margin-top:14px;font-size:14px;color:#a8acb5">Best value to start: <a href="/store/p/complete-freelance-suite/">Complete Freelance Suite, CA$79</a> &middot; <a href="/store/p/humanity-x-books-1-2/">Humanity X Books 1+2 pack, CA$14.99</a> &middot; <a href="/store/p/offer-desk/">Offer Desk, CA$19</a></div>',
  f'<div class="stats"><div><strong>{paid}</strong>products</div><div><strong>{len(secs)}</strong>collections</div><div><strong>One-time</strong>pricing in CAD</div></div>',
  '</div></div><nav class="tabs" aria-label="Collections"><div class="w">' + "".join(f'<a href="#{i}">{E(LABEL[i])}</a>' for i, _ in secs) + '</div></nav><div class="w">']
 for sid, items in secs:

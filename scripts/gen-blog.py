@@ -138,7 +138,7 @@ for p in POSTS:
             f'<article class="post b2-post"><header class="b2-head"><h1>{e(p["title"])}</h1>{meta}</header>'
             f'<figure class="b2-hero"><img src="{hero(p)}" alt="" width="1600" height="900" fetchpriority="high"></figure>'
             f'<div class="b2-body">{p["body"]}</div></article>'
-            '<section class="b2-cta"><div><h2>List your project free</h2><p>Paste your link, check the details we fill in, and go live after a quick automatic check. No fees, no cut of sales.</p></div><a class="pill pill-v" href="/community/submit/">List your project free</a></section>'
+            '<section class="b2-cta"><div><h2>List your project free</h2><p>Paste your link, check the details we fill in, and go live after a quick automatic check. No fees, no cut of sales.</p><p class="b2-shop" style="margin-top:8px;font-size:.95em">Or see what we sell: <a href="/store/">shop tools &amp; books</a> · <a href="/free-book/">get the free sci-fi novel</a></p></div><a class="pill pill-v" href="/community/submit/">List your project free</a></section>'
             f'<aside class="b2-related" aria-labelledby="more-t"><h2 id="more-t">More from the blog</h2><ul class="b2-grid">{rel}</ul></aside>')
     d = R / "blog" / p["slug"]; d.mkdir(exist_ok=True)
     (d / "index.html").write_text(shell(p["title"] + " | Digital Underground", p["desc"], url, body, ld, img=O + hero(p)))

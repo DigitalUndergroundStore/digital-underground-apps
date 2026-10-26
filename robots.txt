@@ -62,6 +62,8 @@ Allow: /list-your-indie-app-free/
 Allow: /privacy/
 Allow: /terms/
 Allow: /free-book/
+Allow: /about/
+Allow: /get/
 Allow: /league/
 Allow: /blog/
 Allow: /league/
@@ -98,6 +100,7 @@ Allow: /list-your-indie-app-free/
 Allow: /privacy/
 Allow: /terms/
 Allow: /free-book/
+Allow: /about/
 Allow: /assets/og/
 Allow: /advertise
 Allow: /downloads/

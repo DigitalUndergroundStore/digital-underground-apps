@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vote button soft cyan preview</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    background: #0b0a12; font-family: Inter, system-ui, sans-serif; color: #e6e8ec;
+  }
+  .card {
+    width: min(420px, 92vw); background: #16141f; border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px; padding: 20px; box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  }
+  .meta { color: #a78bfa; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+  h1 { margin: 0 0 8px; font-size: 1.45rem; color: #c4b5fd; }
+  p { margin: 0 0 16px; color: #9ca3af; font-size: .92rem; line-height: 1.4; }
+  .footer { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .price { color: #a78bfa; font-weight: 700; margin-right: auto; }
+  .btn {
+    appearance: none; font: inherit; font-size: .8rem; font-weight: 600;
+    padding: 8px 12px; border-radius: 8px; text-decoration: none; border: 1px solid transparent;
+  }
+  .btn-ghost { color: #a78bfa; background: transparent; border-color: transparent; }
+  .btn-primary { color: #fff; background: #7c3aed; border-color: #7c3aed; }
+  .btn-vote {
+    position: relative; overflow: hidden; isolation: isolate;
+    color: #a5f3fc; cursor: pointer;
+    background: rgba(34,211,238,.08);
+    border: 1px solid rgba(103,232,249,.4);
+    box-shadow: 0 0 12px rgba(34,211,238,.18), inset 0 1px 0 rgba(255,255,255,.06);
+  }
+  .btn-vote::before {
+    content: ""; position: absolute; inset: -40% -60%;
+    background: linear-gradient(105deg, transparent 38%, rgba(255,255,255,.28) 50%, transparent 62%);
+    transform: translateX(-40%) rotate(8deg);
+    animation: voteShine 3.2s ease-in-out infinite;
+    pointer-events: none; z-index: 0;
+  }
+  .btn-vote > span { position: relative; z-index: 1; }
+  @keyframes voteShine {
+    0%, 30% { transform: translateX(-50%) rotate(8deg); opacity: 0; }
+    45% { opacity: .9; }
+    75%, 100% { transform: translateX(50%) rotate(8deg); opacity: 0; }
+  }
+  .note { margin-top: 18px; text-align: center; color: #6b7280; font-size: .8rem; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="card">
+      <div class="meta">Digital Underground</div>
+      <h1>Pantry Week</h1>
+      <p>Softer cyan glow + light shine — preview only, not live.</p>
+      <div class="footer">
+        <span class="price">$24</span>
+        <a class="btn btn-ghost" href="#">Contact</a>
+        <a class="btn btn-primary" href="#">Visit</a>
+        <button type="button" class="btn btn-vote"><span>Cast Maker League Vote</span></button>
+      </div>
+    </div>
+    <p class="note">Softer cyan · gentler shine · not deployed</p>
+  </div>
+</body>
+</html>

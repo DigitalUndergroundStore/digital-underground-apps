@@ -66,8 +66,6 @@ Allow: /about/
 Allow: /get/
 Allow: /league/
 Allow: /blog/
-Allow: /league/
-Allow: /support/
 Allow: /support/
 Allow: /assets/og/
 Allow: /llms.txt

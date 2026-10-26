@@ -50,6 +50,7 @@
       (own.length ? own.map(row).join("") : '<p class="empty">No listings yet. <a href="/community/submit/">List your project free</a>.</p>') + "</div>";
     if (data.master) h += '<div class="card"><div class="card-head"><h2>Digital Underground &amp; Kerzy Labs</h2><span class="pill owner">Owner master view</span></div>' +
       (master.length ? master.map(row).join("") : '<p class="empty">No other DU or Kerzy Labs listings in storage.</p>') + "</div>";
+    if (live) h += '<div class="card"><div class="card-head"><h2>Get more eyes on it</h2></div><p style="margin:0 0 10px">Your listing is live. Put it in the Maker League or share it.</p><a class="btn sm primary" href="/league/">Enter Maker League \u2192</a> <a class="btn sm" target="_blank" rel="noopener" href="https://x.com/intent/post?text=' + encodeURIComponent("My project is live on Digital Underground, the free indie marketplace") + '&url=' + encodeURIComponent("https://digitalundergroundstore.com/") + '">Share on X</a></div>';
     $("#listings").innerHTML = h;
 
     var ed = ls.filter(function (l) { return l.canEdit; });
@@ -132,7 +133,7 @@
 
   function load() {
     D.api("GET").then(function (d) {
-      if (d._status === 401) { $("#sub").textContent = "Log in to manage your listings."; D.signIn($("#root")); return; }
+      if (d._status === 401) { $("#sub").innerHTML = 'Digital Underground is a free marketplace for indie apps, games, books and tools. You keep 100% of your sales — we just link to your checkout.'; var cta = document.createElement("p"); cta.className = "du-lo-cta"; cta.style.cssText = "display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 22px"; cta.innerHTML = '<a class="btn" href="/community/submit/" style="font-weight:700">List your project free →</a><a class="btn sm" href="/login/">Log in</a>'; $("#sub").after(cta); D.signIn($("#root")); return; }
       if (!d.listings) { $("#listings").innerHTML = '<div class="banner bad">' + esc(d.error || "Could not load the dashboard.") + "</div>"; return; }
       data = d; document.querySelector(".tabs").hidden = false;
       var live = d.listings.filter(function (l) { return l.status === "approved"; }).length;

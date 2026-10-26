@@ -292,6 +292,7 @@ function extractModelText(out) {
 }
 
 async function loadImageBytes(imageUrl) {
+  if (imageUrl instanceof Uint8Array) return imageUrl;
   if (typeof imageUrl !== "string") throw new Error("bad image");
   if (imageUrl.startsWith("data:image/")) {
     const comma = imageUrl.indexOf(",");
@@ -352,4 +353,46 @@ export async function checkVideo(listing) {
   }
   if (url !== listing.videoApprovedUrl) reasons.push("New video: queued for a quick human review.");
   return { decision: reasons.length ? "pending" : "approved", reasons };
+}
+
+/** Pantry Week meal-photo prompt (category) — exported for audit/report. */
+export const MEAL_PHOTO_PROMPT =
+  "Classify this photo with exactly one word. FOOD = the main subject is a real cooked or plated meal or food dish. " +
+  "PERSON = a person's face is the main subject. TEXT = a screenshot, meme, document, ID card or mostly text. " +
+  "UNSAFE = nudity, gore, drugs, weapons or hate symbols. OTHER = anything else. Answer FOOD, PERSON, TEXT, UNSAFE or OTHER.";
+
+/**
+ * Screen a Pantry Week "meal I made" photo. Two vision calls: category + the shared SAFE/UNSAFE guard.
+ * approved only if category FOOD and guard SAFE; rejected on UNSAFE/PERSON/TEXT/OTHER; pending on error/unclear.
+ * @param {unknown} ai @param {Uint8Array|string} bytesOrDataUrl
+ */
+export async function screenMealPhoto(ai, bytesOrDataUrl) {
+  const at = new Date().toISOString();
+  if (!ai) return { decision: "pending", reasons: ["Image screening unavailable."], detail: { at } };
+  let bytes;
+  try { bytes = typeof bytesOrDataUrl === "string" ? await loadImageBytes(bytesOrDataUrl) : bytesOrDataUrl; }
+  catch { return { decision: "pending", reasons: ["Could not read image."], detail: { at } }; }
+  if (!bytes || !bytes.length) return { decision: "pending", reasons: ["Empty image."], detail: { at } };
+  let cat = "", catRaw = "";
+  try {
+    const out = await ai.run(VISION_MODEL, { image: [...bytes], prompt: MEAL_PHOTO_PROMPT, max_tokens: 12 });
+    catRaw = extractModelText(out).trim().slice(0, 80);
+    const up = catRaw.toUpperCase();
+    const hits = ["UNSAFE", "PERSON", "TEXT", "OTHER", "FOOD"].filter((w) => new RegExp("\\b" + w + "\\b").test(up));
+    cat = hits.includes("UNSAFE") ? "UNSAFE" : hits.length === 1 ? hits[0] : hits.length ? "MIXED" : "";
+  } catch (e) {
+    console.error("meal photo category error", e);
+    return { decision: "pending", reasons: ["Image screening error; queued for review."], detail: { at, model: VISION_MODEL } };
+  }
+  const detail = { at, model: VISION_MODEL, category: cat || "unclear", categoryRaw: catRaw };
+  if (cat === "UNSAFE") return { decision: "rejected", reasons: ["Not appropriate for Pantry Week."], detail };
+  if (cat === "PERSON") return { decision: "rejected", reasons: ["Main subject is a person, not a meal."], detail };
+  if (cat === "TEXT") return { decision: "rejected", reasons: ["Screenshot / text image, not a meal."], detail };
+  if (cat === "OTHER") return { decision: "rejected", reasons: ["Doesn't look like a meal."], detail };
+  if (cat !== "FOOD") return { decision: "pending", reasons: ["Screening inconclusive."], detail };
+  const guard = await runImageGuard(ai, bytes);
+  detail.safety = guard.decision;
+  if (guard.decision === "rejected") return { decision: "rejected", reasons: ["Not appropriate for Pantry Week."], detail };
+  if (guard.decision !== "approved") return { decision: "pending", reasons: guard.reasons, detail };
+  return { decision: "approved", reasons: ["Looks like a meal; safety check passed."], detail };
 }

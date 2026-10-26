@@ -22,11 +22,16 @@ const UA = "Mozilla/5.0 (iPhone) AppleWebKit/605.1.15 Safari/604.1";
 const vote = (env, id, ip, cookie) => onRequestPost({ env, request: new Request("https://x/api/league", { method: "POST",
   headers: { "content-type": "application/json", "CF-Connecting-IP": ip, "user-agent": UA, ...(cookie ? { cookie: "du_lv=" + cookie } : {}) }, body: JSON.stringify({ id }) }) });
 
-test("week starts Monday 00:00 ET, across DST", () => {
-  assert.equal(weekOf(Date.parse("2026-10-26T03:59:00Z")), "2026-10-19");
-  assert.equal(weekOf(Date.parse("2026-10-26T04:00:00Z")), "2026-10-26");
-  assert.equal(new Date(weekEndsAt("2026-10-26")).toISOString(), "2026-11-02T05:00:00.000Z");
-  assert.equal(prevWeek("2026-10-26"), "2026-10-19");
+test("weeks run Fri 00:00 to Thu 11:59 PM Toronto; launch week ends Oct 29", () => {
+  assert.equal(weekOf(Date.parse("2026-10-23T04:00:00Z")), "2026-10-19");
+  assert.equal(weekOf(Date.parse("2026-10-26T12:00:00Z")), "2026-10-19");
+  assert.equal(weekOf(Date.parse("2026-10-30T03:59:00Z")), "2026-10-19");
+  assert.equal(new Date(weekEndsAt("2026-10-19")).toISOString(), "2026-10-30T04:00:00.000Z");
+  assert.equal(weekOf(Date.parse("2026-10-30T04:00:00Z")), "2026-10-30");
+  assert.equal(prevWeek("2026-10-30"), "2026-10-19");
+  assert.equal(new Date(weekEndsAt("2026-10-30")).toISOString(), "2026-11-06T05:00:00.000Z");
+  assert.equal(weekOf(Date.parse("2026-11-06T04:59:00Z")), "2026-10-30");
+  assert.equal(prevWeek("2026-11-06"), "2026-10-30");
 });
 
 test("Kerzy Labs listings are not eligible", () => {

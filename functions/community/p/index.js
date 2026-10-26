@@ -35,11 +35,15 @@ export async function onRequestGet(context) {
   const res = await context.next();
   try {
     const id = new URL(context.request.url).searchParams.get("id") || "";
-    if (!/^cm_[a-z0-9_]{1,64}$/i.test(id) || !(res.headers.get("content-type") || "").includes("text/html")) return res;
+    if (!(res.headers.get("content-type") || "").includes("text/html")) return res;
+    // Soft-404 fix (GSC Oct 2026): empty/unknown/unpublished ids keep the client shell but return 404 + noindex.
+    const miss = async () => { const h = new Headers(res.headers); h.delete("content-length"); h.set("X-Robots-Tag", "noindex"); h.set("Cache-Control", "public, max-age=300");
+      return new Response(await res.text(), { status: 404, headers: h }); };
+    if (!/^cm_[a-z0-9_]{1,64}$/i.test(id)) return miss();
     const kv = getKv(context.env);
     let row = kv && (await kvGetListing(kv, id));
     if (!row || row.status !== "approved") row = await seedListing(context, id); // owner's static seed, same as /api/community/listing
-    if (!row || row.status !== "approved" || row.hidden || isRetired(row)) return res;
+    if (!row || row.status !== "approved" || row.hidden || isRetired(row)) return miss();
     let img = publicImageUrl(row) || "";
     if (img.startsWith("/")) img = SITE + img;
     if (!/^https:\/\//i.test(img)) img = "";

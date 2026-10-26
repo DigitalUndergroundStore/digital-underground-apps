@@ -2,7 +2,7 @@
    The tools themselves are only in app.bin (AES-GCM). Without the code that file is unreadable. */
 (function () {
   "use strict";
-  var CFG = { salt: "tVM4bXNZ/OV06edBL2BXEQ==", iter: 250000, build: "202610060733-bf6674bc" };
+  var CFG = { salt: "tVM4bXNZ/OV06edBL2BXEQ==", iter: 250000, build: "202610230745-9dc1d188" };
   var LS = "du_session_forge_key_v1";
   var me = document.currentScript, PAGE = me.getAttribute("data-page"), ROOT = me.getAttribute("data-root") || "";
   var $ = function (id) { return document.getElementById(id); };
@@ -37,7 +37,7 @@
       var t = bundle.assets[p] || "";
       return /\.css$/.test(p) ? "<style>" + t + "</style>" : "<script>" + t + "<\/script>";
     });
-    var duVer = "<script>window.__DU_APP_VERSION__=\"202610060733-bf6674bc\"><\/script><link rel=\"stylesheet\" href=\"/assets/buyer/pwa-update.css\"><script src=\"/assets/buyer/pwa-update.js\" data-sw-url=\"" + ROOT + "sw.js\" data-app-version=\"202610060733-bf6674bc\" data-app-label=\"session-forge\" defer><\/script>";
+    var duVer = "<script>window.__DU_APP_VERSION__=\"202610230745-9dc1d188\"><\/script><link rel=\"stylesheet\" href=\"/assets/buyer/pwa-update.css\"><script src=\"/assets/buyer/pwa-update.js\" data-sw-url=\"" + ROOT + "sw.js\" data-app-version=\"202610230745-9dc1d188\" data-app-label=\"session-forge\" defer><\/script>";
     var pwa = "<link rel=\"stylesheet\" href=\"/assets/buyer/pwa-install.css\"><script src=\"/assets/buyer/pwa-install.js\" data-app-slug=\"session-forge\" data-app-name=\"Session Forge\" defer><\/script>";
     html = html.replace("</body>", pwa + duVer + "<script src=\"/assets/buyer/du-about-version.js\" defer><\/script>" + "\n</body>");
     document.open(); document.write(html); document.close();
@@ -61,7 +61,7 @@
     return derive(decodeURIComponent(code)).then(function (raw) {
       return open(raw).then(function (bundle) { store(LS, b64(raw)); render(bundle); });
     }).catch(function (e) {
-      if (/net/.test(String(e && e.message))) { netFail(); return; }
+      if (!e || e.name !== "OperationError") { netFail(); return; } /* only a failed decrypt means a wrong/stale code; network or aborted loads keep the saved code */
       showForm(fromLink ? "That link's code didn't work. Type the code from your PDF below." : "That code didn't work. Check it against your PDF (letters and numbers; dashes are optional).", true);
     });
   }
@@ -73,7 +73,7 @@
   if (hash) tryCode(hash, true);
   else if (saved) {
     open(unb64(saved)).then(render).catch(function (e) {
-      if (/net/.test(String(e && e.message))) { netFail(); return; }
+      if (!e || e.name !== "OperationError") { netFail(); return; } /* only a failed decrypt means a wrong/stale code; network or aborted loads keep the saved code */
       store(LS, null); showForm("Please enter your buyer code again.");
     });
   } else { getBin().catch(function () {}); showForm(""); }

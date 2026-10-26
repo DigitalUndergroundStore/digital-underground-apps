@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0918"/><stop offset=".55" stop-color="#1a1240"/><stop offset="1" stop-color="#0a0a14"/></linearGradient>
+<radialGradient id="g1" cx=".22" cy=".25" r=".55"><stop offset="0" stop-color="#7c5cff" stop-opacity=".55"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+<radialGradient id="g2" cx=".85" cy=".8" r=".55"><stop offset="0" stop-color="#e14bd8" stop-opacity=".45"/><stop offset="1" stop-color="#e14bd8" stop-opacity="0"/></radialGradient>
+<linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c5cff" stop-opacity="0"/><stop offset=".5" stop-color="#b48cff"/><stop offset="1" stop-color="#ff5fd2" stop-opacity="0"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9d8cff" stroke-opacity=".08" stroke-width="1"/></pattern>
+</defs>
+<rect width="640" height="360" fill="url(#bg)"/>
+<rect width="640" height="360" fill="url(#grid)"/>
+<rect width="640" height="360" fill="url(#g1)"/>
+<rect width="640" height="360" fill="url(#g2)"/>
+<g fill="none" stroke-linejoin="round">
+<polygon points="320,92 398,137 398,227 320,272 242,227 242,137" stroke="#b48cff" stroke-opacity=".55" stroke-width="2"/>
+<polygon points="320,126 368,154 368,210 320,238 272,210 272,154" stroke="#ff5fd2" stroke-opacity=".45" stroke-width="1.5"/>
+<circle cx="320" cy="182" r="14" stroke="#e6defc" stroke-opacity=".6" stroke-width="1.5"/>
+</g>
+<rect x="60" y="300" width="520" height="1.5" fill="url(#ln)" opacity=".7"/>
+<rect x="140" y="62" width="360" height="1" fill="url(#ln)" opacity=".4"/>
+</svg>

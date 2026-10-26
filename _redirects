@@ -1,11 +1,13 @@
 # Marketplace is the homepage; old landing URL keeps its links (query string is preserved).
+/downloads/easy-tracker /share-live-location-link/ 301
+/downloads/easy-tracker/ /share-live-location-link/ 301
 /community / 301
 /community/ / 301
 /community/index.html / 301
 /p/bored-blocks/ /store/ 301
 /p/bored-blocks /store/ 301
-/games/block-busters https://kerzylabs.pages.dev/play/block-busters/ 301
-/games/block-busters/* https://kerzylabs.pages.dev/play/block-busters/:splat 301
+/games/block-busters https://kerzylabs.pages.dev/play/stack-attack-arena/ 301
+/games/block-busters/* https://kerzylabs.pages.dev/play/stack-attack-arena/ 301
 /games/quad-pong https://kerzylabs.pages.dev/play/quad-pong/ 301
 /games/quad-pong/* https://kerzylabs.pages.dev/play/quad-pong/:splat 301
 /cyberarena https://kerzylabs.pages.dev/play/cyberarena/ 301

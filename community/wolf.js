@@ -12,7 +12,7 @@
   function esc(s) { return String(s == null ? "" : s).replace(BLOCK_EMAIL, "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   function normalize(row) {
     if (/^cm_kerzy_/.test(row.id) || /kerzy/i.test(row.makerName || "")) { row.makerName = "Kerzy Labs"; row.curated = false; }
-    if (row.id === "cm_kerzy_neonbastion" || /neon bastion/i.test(row.name || "")) row.stage = "In development / testing";
+    if (row.id === "cm_kerzy_neonbastion" || /neon bastion|rival lanes/i.test(row.name || "")) row.stage = "In development / testing";
     return row;
   }
   function hash(s) { var h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return Math.abs(h); }
@@ -21,9 +21,8 @@
     if (v && v.kind === "file" && v.src)
       return '<div class="media"><video class="card-vid" muted loop playsinline preload="none"' + (poster ? ' poster="' + esc(poster) + '"' : "") + ' src="' + esc(v.src) + (poster ? "" : "#t=0.1") + '" aria-label="' + name + ' preview video"></video></div>';
     if (poster)
-      return '<div class="media"><img src="' + esc(poster) + '" alt="' + name + ' cover image" width="640" height="360" loading="lazy" decoding="async" onerror="this.parentNode.classList.add(\'grad\');this.remove()"></div>';
-    var g = GRADS[hash(row.id || row.name || "") % GRADS.length];
-    return '<div class="media grad" style="background:linear-gradient(135deg,' + g[0] + "," + g[1] + ')"><span aria-hidden="true">' + esc((row.name || "?").slice(0, 2)) + "</span></div>";
+      return '<div class="media"><img src="' + esc(poster) + '" alt="' + name + ' cover image" width="640" height="360" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=\'/assets/covers/default-cover.svg\'"></div>';
+    return '<div class="media"><img src="/assets/covers/default-cover.svg" alt="" width="640" height="360" loading="lazy" decoding="async"></div>';
   }
   // Maker page slug: API sends makerSlug; static seed rows fall back to the seeded maker pages.
   function makerSlug(row) {

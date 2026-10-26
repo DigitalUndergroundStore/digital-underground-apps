@@ -77,7 +77,7 @@
 
     function normalize(r) {
       if (/^cm_kerzy_/.test(r.id) || /kerzy/i.test(r.makerName || '')) { r.makerName = 'Kerzy Labs'; r.curated = false; }
-      if (r.id === 'cm_kerzy_neonbastion' || /neon bastion/i.test(r.name || '')) r.stage = 'In development / testing';
+      if (r.id === 'cm_kerzy_neonbastion' || /neon bastion|rival lanes/i.test(r.name || '')) r.stage = 'In development / testing';
       return r;
     }
     function makerSlug(r) {
@@ -106,7 +106,7 @@
         id: r.id, order: i, title: r.name || '', maker: r.makerName || '', makerSlug: makerSlug(r), x: r.xHandle || '',
         category: r.category || 'other', price: r.priceLabel || 'See site', desc: r.pitchShort || '',
         badge: stage || (r.curated ? 'Featured pick' : null), label: r.statusLabel ? String(r.statusLabel).slice(0, 24) : null,
-        url: r.buyUrl || r.visitUrl || r.projectUrl || '', buy: !!r.buyUrl, page: SITE + '/community/p/?id=' + encodeURIComponent(r.id), img: r.imageUrl || '',
+        url: r.buyUrl || r.visitUrl || r.projectUrl || '', buy: !!r.buyUrl, page: SITE + '/community/p/?id=' + encodeURIComponent(r.id), img: r.imageUrl || '', vid: (r.video && r.video.kind === 'file' && r.video.src) || '',
         tags: r.tags || [], isNew: !!r.isNew, contactable: r.contactable !== false, pv: nums.length ? Math.max(...nums) : 0
       };
     }
@@ -132,12 +132,13 @@
     }
     function cardEl(p) {
       const a = document.createElement('article');
-      a.className = 'card'; a.dataset.id = p.id;
+      a.className = 'card'; a.dataset.id = p.id; a.dataset.sig = p.img + '|' + p.vid;
       a.innerHTML = `
           <div class="card-media">
             ${badgeHTML(p)}
+            ${p.vid ? `<video class="card-vid" muted loop playsinline autoplay controls preload="metadata"${p.img ? ` poster="${esc(abs(p.img))}"` : ''} src="${esc(abs(p.vid))}${p.img ? '' : '#t=0.1'}" aria-label="${esc(p.title)} preview video" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;display:block"></video>` : ''}
             ${p.img ? `<img src="${esc(abs(p.img))}" alt="${esc(p.title)} cover image" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()">` : ''}
-            <div class="card-placeholder" aria-hidden="true">${esc(p.title.slice(0, 2))}</div>
+            <div class="card-placeholder" aria-hidden="true" style="background:url(/assets/covers/default-cover.svg) center/cover no-repeat"></div>
           </div>
           <div class="card-body">
             <div class="card-meta">${makerHTML(p)}</div>
@@ -148,13 +149,18 @@
               <div class="card-actions">
                 ${p.contactable ? `<a href="${esc(p.page)}#contact" class="btn btn-ghost" aria-label="Contact the developer of ${esc(p.title)}">Contact</a>` : ''}
                 <a href="${esc(p.url)}" data-out="${esc(p.id)}" class="btn btn-primary" target="_blank" rel="noopener" aria-label="${p.buy ? 'Buy' : 'Visit'} ${esc(p.title)}${p.buy ? ' on Gumroad' : ''} (opens in a new tab)">${p.buy ? 'Buy' : 'Visit'}</a>
+                <a href="${ONSITE ? '' : 'https://digitalundergroundstore.com'}/league/?vote=${encodeURIComponent(p.id)}" class="btn btn-vote" aria-label="Cast Maker League Vote for ${esc(p.title)} on the League page">Cast Maker League Vote</a>
               </div>
             </div>
           </div>`;
       a.addEventListener('animationend', () => a.classList.remove('enter'));
       if (window.duTrack) duTrack.observe(a, p.id);
+      const v = a.querySelector('video.card-vid');
+      if (v) { v.muted = true; const play = () => { const q = v.play(); if (q && q.catch) q.catch(() => {}); };
+        if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? play() : v.pause()), { threshold: 0.25 }).observe(v); else play(); }
       return a;
     }
+    // Maker League button on cards is a plain link to /league/ (voting happens there).
     const emptyEl = document.createElement('div');
     emptyEl.className = 'empty-state'; emptyEl.setAttribute('role', 'status');
     emptyEl.innerHTML = '<h3>No projects match</h3><p>Try a wider price range, another category, or clear the search.</p><button type="button" class="btn btn-outline">Clear all filters</button>';
@@ -274,7 +280,7 @@
 
     function setProjects(rows, initial) {
       projects = rows.map(toProject);
-      els = new Map(projects.map(p => [p.id, els.get(p.id) && initial === 'keep' ? els.get(p.id) : cardEl(p)]));
+      els = new Map(projects.map(p => [p.id, els.get(p.id) && initial === 'keep' && els.get(p.id).dataset.sig === (p.img + '|' + p.vid) ? els.get(p.id) : cardEl(p)]));
       if ($('heroCount')) $('heroCount').textContent = projects.length;
       buildOptions(); state = DEF(); searchInput.value = ''; dotsCaption(); syncRange(false);
       applyFilters(!!initial);
@@ -306,7 +312,7 @@
       const staticIds = new Set((Array.isArray(stat) ? stat : []).map(r => r && r.id));
       const seeded = r => staticIds.has(r.id) || /^cm_(kerzy|pick)_/.test(r.id) || /^digital underground$/i.test((r.makerName || '').trim());
       if (!api.ordered) all = all.filter(r => !seeded(r)).concat(all.filter(seeded));
-      const sig = rs => JSON.stringify(rs.map(r => [r.id, r.name, r.priceLabel, r.stage, r.statusLabel, r.curated, r.imageUrl, r.pitchShort, !!r.isNew]));
+      const sig = rs => JSON.stringify(rs.map(r => [r.id, r.name, r.priceLabel, r.stage, r.statusLabel, r.curated, r.imageUrl, r.pitchShort, !!r.isNew, r.video && r.video.src]));
       if (sig(all) === sig(seed)) return;
       const untouched = !state.q && !state.cats.size && !state.makers.size && !state.labels.size && state.free && state.sort === 'featured' && state.lo === 0 && state.hi === PMAX;
       if (untouched) setProjects(all, 'keep');

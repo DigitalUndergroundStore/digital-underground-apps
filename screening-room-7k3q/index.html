@@ -1,7 +1,114 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Videos</title>
-<style>body{margin:0;background:#05040c;color:#eee;font-family:system-ui,sans-serif;padding:16px}h1{font-size:20px}h2{font-size:16px;margin:24px 0 8px}video{width:100%;max-width:480px;border-radius:12px;background:#000;display:block}a{color:#22d3ee;font-size:14px}</style></head><body>
-<h1>Video review (unlisted)</h1>
-<h2>Maker League promo, vertical (Oct 22)</h2><video controls playsinline preload="metadata" src="/assets/promo/maker-league-promo.mp4?v=2"></video><a href="/assets/promo/maker-league-promo.mp4?v=2" download>Download</a>
-<h2>Maker League promo, X size</h2><video controls playsinline preload="metadata" src="/assets/promo/maker-league-promo-X.mp4?v=2"></video><a href="/assets/promo/maker-league-promo-X.mp4?v=2" download>Download</a>
-<h2>Maker League promo, square</h2><video controls playsinline preload="metadata" src="/assets/promo/maker-league-promo-square.mp4?v=2"></video><a href="/assets/promo/maker-league-promo-square.mp4?v=2" download>Download</a>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Screening room (unlisted)</title>
+<style>
+  body{margin:0;background:#05040c;color:#eee;font-family:system-ui,sans-serif;padding:16px;max-width:720px}
+  h1{font-size:20px;margin:0 0 8px}
+  h2{font-size:16px;margin:28px 0 8px}
+  p.note{color:#9ca3af;font-size:13px;margin:0 0 16px}
+  video,audio{width:100%;max-width:480px;border-radius:12px;background:#000;display:block}
+  a{color:#22d3ee;font-size:14px}
+  .chapters{display:flex;flex-direction:column;gap:8px;margin:12px 0 8px}
+  .ch{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 12px;border:1px solid #1f2937;border-radius:10px;background:#0b0a14}
+  .ch button{appearance:none;border:0;border-radius:999px;padding:8px 14px;background:#22d3ee;color:#041016;font-weight:700;cursor:pointer;font-size:13px}
+  .ch button:hover{filter:brightness(1.08)}
+  .ch button.playing{background:#a7f3d0}
+  .ch span{font-size:14px;flex:1;min-width:120px}
+  .now{margin:8px 0 4px;font-size:13px;color:#9ca3af}
+  #player{max-width:100%;margin-top:8px}
+</style>
+</head>
+<body>
+<h1>Screening room (unlisted)</h1>
+<p class="note">Private review page — not in nav or sitemap.</p>
+
+<h2>55-second preview</h2>
+<p class="note">Chapter 1 teaser — audiogram + audio-only.</p>
+<video controls preload="metadata" playsinline poster="/assets/promo/humanity-x-audiobook/audiogram-poster.jpg" src="/assets/promo/humanity-x-audiobook/audiogram-ch01.mp4?v=1"></video>
+<p><audio controls preload="metadata" src="/assets/promo/humanity-x-audiobook/preview-55s.mp3?v=1"></audio></p>
+<p><a href="/assets/promo/humanity-x-audiobook/preview-55s.mp3" download>Download preview mp3</a> · <a href="/assets/promo/humanity-x-audiobook/audiogram-ch01.mp4" download>Download audiogram mp4</a></p>
+<h2>Humanity X: Off the Ground — full audiobook</h2>
+<p class="note">35 chapters. Hit Play on any chapter; it continues into the next automatically.</p>
+<p class="now" id="nowPlaying">Ready — pick a chapter.</p>
+<audio id="player" controls preload="metadata"></audio>
+<div class="chapters" id="chapters"></div>
+<p><a id="dlCurrent" href="/assets/promo/humanity-x-audiobook/chapter-01.mp3" download="Humanity-X-Off-the-Ground-chapter-01.mp3">Download current chapter</a></p>
+
+<h2>Maker League promo, vertical (Oct 22)</h2>
+<video controls playsinline preload="metadata" src="/assets/promo/maker-league-promo.mp4?v=2"></video>
+<a href="/assets/promo/maker-league-promo.mp4?v=2" download>Download</a>
+
+<h2>Maker League promo, X size</h2>
+<video controls playsinline preload="metadata" src="/assets/promo/maker-league-promo-X.mp4?v=2"></video>
+<a href="/assets/promo/maker-league-promo-X.mp4?v=2" download>Download</a>
+
+<h2>Maker League promo, square</h2>
+<video controls playsinline preload="metadata" src="/assets/promo/maker-league-promo-square.mp4?v=2"></video>
+<a href="/assets/promo/maker-league-promo-square.mp4?v=2" download>Download</a>
+
+<script>
+(function () {
+  var base = "/assets/promo/humanity-x-audiobook/";
+  var n = 35;
+  var player = document.getElementById("player");
+  var now = document.getElementById("nowPlaying");
+  var dl = document.getElementById("dlCurrent");
+  var box = document.getElementById("chapters");
+  var current = 0;
+  var buttons = [];
+
+  function pad(i) { return (i < 10 ? "0" : "") + i; }
+  function srcFor(i) { return base + "chapter-" + pad(i) + ".mp3?v=1"; }
+
+  function setPlaying(i) {
+    current = i;
+    buttons.forEach(function (b, idx) {
+      b.classList.toggle("playing", idx + 1 === i);
+      b.textContent = idx + 1 === i ? "Playing" : "Play";
+    });
+    now.textContent = "Playing chapter " + i + " of " + n;
+    dl.href = base + "chapter-" + pad(i) + ".mp3";
+    dl.setAttribute("download", "Humanity-X-Off-the-Ground-chapter-" + pad(i) + ".mp3");
+  }
+
+  function playChapter(i) {
+    if (i < 1 || i > n) return;
+    setPlaying(i);
+    player.src = srcFor(i);
+    player.play().catch(function () {});
+  }
+
+  for (var i = 1; i <= n; i++) {
+    (function (i) {
+      var row = document.createElement("div");
+      row.className = "ch";
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = "Play";
+      btn.addEventListener("click", function () { playChapter(i); });
+      var label = document.createElement("span");
+      label.textContent = "Chapter " + i;
+      row.appendChild(btn);
+      row.appendChild(label);
+      box.appendChild(row);
+      buttons.push(btn);
+    })(i);
+  }
+
+  player.addEventListener("ended", function () {
+    if (current < n) playChapter(current + 1);
+    else now.textContent = "Finished — all 35 chapters.";
+  });
+
+  // Start ready on chapter 1 metadata so the play bar appears immediately
+  player.src = srcFor(1);
+  dl.href = base + "chapter-01.mp3";
+  dl.setAttribute("download", "Humanity-X-Off-the-Ground-chapter-01.mp3");
+})();
+</script>
+</body>
+</html>

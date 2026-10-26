@@ -1,5 +1,5 @@
 {
- "note": "Recipe photos from Wikimedia Commons (3.13.0; 193 added in 3.14.2). Resized to 800px wide or smaller, WebP. Openverse-recovered credits added in 3.15 preview (perceptual-hash match).",
+ "note": "Recipe photos from Wikimedia Commons (3.13.0; 193 added in 3.14.2). Resized to 800px wide or smaller, WebP. Openverse-recovered credits added in 3.15 preview (perceptual-hash match). 3.6.1: photos added from credited source pages / Wikimedia Commons search (500px WebP, self-hosted); remaining recipes use generated Pantry Week dish illustrations.",
  "photos": {
   "r6": {
    "file": "https://commons.wikimedia.org/wiki/File:Protein_overnight_oats.jpg",
@@ -53,7 +53,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Montr%C3%A9al_bagel_with_lox.jpg",
    "license": "CC BY-SA 4.0",
    "author": "Newmila",
-   "title": "Montréal bagel with lox.jpg"
+   "title": "Montr\u00e9al bagel with lox.jpg"
   },
   "r162": {
    "file": "https://commons.wikimedia.org/wiki/File:Child_Care_Recipes_(Team_Nutiriton)_(20211103-FNS-UNC-8742).jpg",
@@ -70,7 +70,7 @@
   "r205": {
    "file": "https://commons.wikimedia.org/wiki/File:Bake_mac.jpg",
    "license": "CC BY-SA 4.0",
-   "author": "Roderick Suñaz Sumalinog",
+   "author": "Roderick Su\u00f1az Sumalinog",
    "title": "Bake mac.jpg"
   },
   "r208": {
@@ -89,7 +89,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:El_So%C3%B1ador_Mexican_Restaurant_-_October_2023_-_Sarah_Stierch_01.jpg",
    "license": "CC BY 4.0",
    "author": "Missvain",
-   "title": "El Soñador Mexican Restaurant - October 2023 - Sarah Stierch 01.jpg"
+   "title": "El So\u00f1ador Mexican Restaurant - October 2023 - Sarah Stierch 01.jpg"
   },
   "r223": {
    "file": "https://commons.wikimedia.org/wiki/File:A_roast_beef_sandwich_with_au_jus_sauce_for_dipping,_served_with_a_side_of_fries..jpg",
@@ -215,7 +215,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B0%D0%BD%D0%BA%D0%B0%D1%88%D0%B8%D1%80%D1%81%D0%BA%D0%B8_%D1%85%D0%BE%D1%82%D0%BF%D0%BE%D1%82_(01).jpg",
    "license": "CC BY-SA 4.0",
    "author": "Deodora333",
-   "title": "Ланкаширски хотпот (01).jpg"
+   "title": "\u041b\u0430\u043d\u043a\u0430\u0448\u0438\u0440\u0441\u043a\u0438 \u0445\u043e\u0442\u043f\u043e\u0442 (01).jpg"
   },
   "r577": {
    "file": "https://commons.wikimedia.org/wiki/File:Lentil_Burger_at_Splitz_Grill_in_Vancouver_(4239047183).jpg",
@@ -233,7 +233,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:HK_TKL_%E8%AA%BF%E6%99%AF%E5%B6%BA_Tiu_Keng_Leng_%E6%98%8E%E6%84%9B%E5%B0%88%E4%B8%8A%E5%AD%B8%E9%99%A2_CIHE_restaurant_Grove_Cafe_canteen_restaurant_Lunch_food_black_pepper_%E9%9B%9E%E6%89%92_Curry_Chicken_Steak_%E7%A2%9F%E9%A0%AD%E9%A3%AF_rice_July_2019_SSG_01.jpg",
    "license": "CC BY-SA 4.0",
    "author": "Rai 200 Lanbrowz Weilk",
-   "title": "HK TKL 調景嶺 Tiu Keng Leng 明愛專上學院 CIHE restaurant Grove Cafe canteen restaurant Lunch food black pepper 雞扒 Curry Chicken Steak 碟頭飯 rice July 2019 SSG 01.jpg"
+   "title": "HK TKL \u8abf\u666f\u5dba Tiu Keng Leng \u660e\u611b\u5c08\u4e0a\u5b78\u9662 CIHE restaurant Grove Cafe canteen restaurant Lunch food black pepper \u96de\u6252 Curry Chicken Steak \u789f\u982d\u98ef rice July 2019 SSG 01.jpg"
   },
   "r603": {
    "file": "https://commons.wikimedia.org/wiki/File:Scrambled_Eggs_at_Cracker_Barrel.jpg",
@@ -257,7 +257,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:190908_022_Chicago_Botanic_Gdn_-_Visitor_Center,_Garden_View_Caf%C3%A9_Brunch,_mushroom_and_cheddar_omelet,_roasted_baby_red_potatoes,_delicious_food,_great_service_(48861661177).jpg",
    "license": "CC BY 2.0",
    "author": "cultivar413 from Fallbrook, California",
-   "title": "190908 022 Chicago Botanic Gdn - Visitor Center, Garden View Café Brunch, mushroom and cheddar omelet, roasted baby red potatoes, delicious food, great service (48861661177).jpg"
+   "title": "190908 022 Chicago Botanic Gdn - Visitor Center, Garden View Caf\u00e9 Brunch, mushroom and cheddar omelet, roasted baby red potatoes, delicious food, great service (48861661177).jpg"
   },
   "r714": {
    "file": "https://commons.wikimedia.org/wiki/File:Parmesan_potato_soup_topped_with_bacon.jpg",
@@ -269,7 +269,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Eggplant_g%C3%BCve%C3%A7_(with_veal).jpg",
    "license": "CC BY-SA 4.0",
    "author": "E4024",
-   "title": "Eggplant güveç (with veal).jpg"
+   "title": "Eggplant g\u00fcve\u00e7 (with veal).jpg"
   },
   "r729": {
    "file": "https://commons.wikimedia.org/wiki/File:Matxakatuaprestatzen.png",
@@ -311,7 +311,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Shrimp_%26_Grits_-_Saut%C3%A9ed_shrimp_with_mushrooms,_scallions_%26_bacon_served_over_cheese_grits.jpg",
    "license": "CC BY 2.0",
    "author": "City Foodsters",
-   "title": "Shrimp & Grits - Sautéed shrimp with mushrooms, scallions & bacon served over cheese grits.jpg"
+   "title": "Shrimp & Grits - Saut\u00e9ed shrimp with mushrooms, scallions & bacon served over cheese grits.jpg"
   },
   "r864": {
    "file": "https://commons.wikimedia.org/wiki/File:Seafood_Gumbo_(30456750990).jpg",
@@ -340,7 +340,7 @@
   "r926": {
    "file": "https://commons.wikimedia.org/wiki/File:Asparagus_soup_(spargelsuppe).jpg",
    "license": "CC BY-SA 4.0",
-   "author": "Petar Milošević",
+   "author": "Petar Milo\u0161evi\u0107",
    "title": "Asparagus soup (spargelsuppe).jpg"
   },
   "r931": {
@@ -412,7 +412,7 @@
   "r1042": {
    "file": "https://commons.wikimedia.org/wiki/File:More_Yulin_food_-_corn_pancakes_(4588060799).jpg",
    "license": "CC BY-SA 2.0",
-   "author": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
+   "author": "Caitriana Nicholson from \u5317\u4eac ~ Beijing, \u4e2d\u56fd ~ China",
    "title": "More Yulin food - corn pancakes (4588060799).jpg"
   },
   "r20": {
@@ -569,7 +569,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_ch%C6%B0ng_ch%E1%BA%A5m_m%E1%BA%ADt_m%C3%ADa.JPG",
    "license": "CC BY-SA 3.0",
    "author": "Hungda",
-   "title": "Bánh chưng chấm mật mía.JPG"
+   "title": "B\u00e1nh ch\u01b0ng ch\u1ea5m m\u1eadt m\u00eda.JPG"
   },
   "r2075": {
    "file": "https://commons.wikimedia.org/wiki/File:Cachapa_con_queso_rallado.jpg",
@@ -635,18 +635,18 @@
    "file": "https://commons.wikimedia.org/wiki/File:Chorba_frik_de_T%C3%A9bessa.jpg",
    "license": "CC BY-SA 4.0",
    "author": "Waran18",
-   "title": "Chorba frik de Tébessa.jpg"
+   "title": "Chorba frik de T\u00e9bessa.jpg"
   },
   "r2117": {
    "file": "https://commons.wikimedia.org/wiki/File:Chorip%C3%A1n_(argentine_sandwich_with_chorizo_and_Savora).jpg",
    "license": "CC BY-SA 4.0",
    "author": "Horacio Cambeiro",
-   "title": "Choripán (argentine sandwich with chorizo and Savora).jpg"
+   "title": "Chorip\u00e1n (argentine sandwich with chorizo and Savora).jpg"
   },
   "r2118": {
    "file": "https://commons.wikimedia.org/wiki/File:Vegan_Chraime.jpg",
    "license": "CC BY-SA 4.0",
-   "author": "דוג'רית",
+   "author": "\u05d3\u05d5\u05d2'\u05e8\u05d9\u05ea",
    "title": "Vegan Chraime.jpg"
   },
   "r2124": {
@@ -664,8 +664,8 @@
   "r2131": {
    "file": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_chi%C3%AAn_%C4%91em_ph%E1%BA%A7n_2015_(1).jpg",
    "license": "Public domain",
-   "author": "Phương Huy (thảo luận)",
-   "title": "Cơm chiên đem phần 2015 (1).jpg"
+   "author": "Ph\u01b0\u01a1ng Huy (th\u1ea3o lu\u1eadn)",
+   "title": "C\u01a1m chi\u00ean \u0111em ph\u1ea7n 2015 (1).jpg"
   },
   "r2132": {
    "file": "https://commons.wikimedia.org/wiki/File:Corn_soup_in_Tokyo.jpg",
@@ -815,7 +815,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Viande_Hach%C3%A9e_cuit.jpg",
    "license": "CC0",
    "author": "Mainty kely",
-   "title": "Viande Hachée cuit.jpg"
+   "title": "Viande Hach\u00e9e cuit.jpg"
   },
   "r2253": {
    "file": "https://commons.wikimedia.org/wiki/File:Spicy_honey_garlic_chicken_wings.jpg",
@@ -827,7 +827,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Red_braised_pork_belly_%E7%BA%A2%E7%83%A7%E8%82%89_h%C3%B3ngsh%C4%81or%C3%B2u_23_January_2025_Filipinas4.jpg",
    "license": "CC BY-SA 4.0",
    "author": "",
-   "title": "Red braised pork belly 红烧肉 hóngshāoròu 23 January 2025 Filipinas4.jpg"
+   "title": "Red braised pork belly \u7ea2\u70e7\u8089 h\u00f3ngsh\u0101or\u00f2u 23 January 2025 Filipinas4.jpg"
   },
   "r2258": {
    "file": "https://commons.wikimedia.org/wiki/File:Hot-and-Sour-Soup-Bowl.jpg",
@@ -916,7 +916,7 @@
   "r2346": {
    "file": "https://commons.wikimedia.org/wiki/File:Stuffat_tal-fenek_(Las_Siete_Orillas_project).jpg",
    "license": "CC BY-SA 4.0",
-   "author": "El Mono Español",
+   "author": "El Mono Espa\u00f1ol",
    "title": "Stuffat tal-fenek (Las Siete Orillas project).jpg"
   },
   "r2349": {
@@ -965,7 +965,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:HK_WCD_%E7%81%A3%E4%BB%94_Wan_Chai_%E5%90%88%E5%92%8C_Hopewell_Hotel_Lobby_Cafe_and_Bar_buffet_lunch_food_January_2026_N13P_28_pan_fried_beef_steak.jpg",
    "license": "CC0",
    "author": "GAONG WEINHOAM 9122",
-   "title": "HK WCD 灣仔 Wan Chai 合和 Hopewell Hotel Lobby Cafe and Bar buffet lunch food January 2026 N13P 28 pan fried beef steak.jpg"
+   "title": "HK WCD \u7063\u4ed4 Wan Chai \u5408\u548c Hopewell Hotel Lobby Cafe and Bar buffet lunch food January 2026 N13P 28 pan fried beef steak.jpg"
   },
   "r2421": {
    "file": "https://commons.wikimedia.org/wiki/File:Pasta_alla_Gricia.jpg",
@@ -976,7 +976,7 @@
   "r2376": {
    "file": "https://commons.wikimedia.org/wiki/File:Making_Mofletta.jpg",
    "license": "CC BY-SA 3.0",
-   "author": "בר",
+   "author": "\u05d1\u05e8",
    "title": "Making Mofletta.jpg"
   },
   "r2433": {
@@ -995,7 +995,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Pineapple_Curry_-_%E0%B4%AA%E0%B5%88%E0%B4%A8%E0%B4%BE%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%BF%E0%B5%BE_%E0%B4%95%E0%B4%B1%E0%B4%BF.jpg",
    "license": "CC BY-SA 4.0",
    "author": "Shijan Kaakkara",
-   "title": "Pineapple Curry - പൈനാപ്പിൾ കറി.jpg"
+   "title": "Pineapple Curry - \u0d2a\u0d48\u0d28\u0d3e\u0d2a\u0d4d\u0d2a\u0d3f\u0d7e \u0d15\u0d31\u0d3f.jpg"
   },
   "r2442": {
    "file": "https://commons.wikimedia.org/wiki/File:Pineapple_fried_rice_at_Banana_Leaf_in_Milpitas,_California.jpg",
@@ -1073,7 +1073,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Bacalhau_%C3%A0_Gomes_de_S%C3%A1.jpg",
    "license": "CC BY-SA 3.0",
    "author": "Adriao",
-   "title": "Bacalhau à Gomes de Sá.jpg"
+   "title": "Bacalhau \u00e0 Gomes de S\u00e1.jpg"
   },
   "r2510": {
    "file": "https://commons.wikimedia.org/wiki/File:Sancocho_1.jpg",
@@ -1085,7 +1085,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Riz_%C3%A0_la_Sauce_feuilles.JPG",
    "license": "CC BY-SA 4.0",
    "author": "Liliane.logbo",
-   "title": "Riz à la Sauce feuilles.JPG"
+   "title": "Riz \u00e0 la Sauce feuilles.JPG"
   },
   "r2513": {
    "file": "https://commons.wikimedia.org/wiki/File:Sauce_gombo_aux_crabes_avec_poisson.jpg",
@@ -1199,7 +1199,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Tripes_%C3%A0_la_mode_de_Caen.jpg",
    "license": "CC BY-SA 3.0",
    "author": "Manuel.flury",
-   "title": "Tripes à la mode de Caen.jpg"
+   "title": "Tripes \u00e0 la mode de Caen.jpg"
   },
   "r2639": {
    "file": "https://commons.wikimedia.org/wiki/File:Veggie_pizza.jpg",
@@ -1223,7 +1223,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Xat%C3%B3.jpg",
    "license": "CC BY-SA 3.0",
    "author": "Asolepascual",
-   "title": "Xató.jpg"
+   "title": "Xat\u00f3.jpg"
   },
   "r2656": {
    "file": "https://commons.wikimedia.org/wiki/File:Yeung_Chow_Fried_Rice_in_Hong_Kong_Fast_Food_Shop.JPG",
@@ -1235,12 +1235,12 @@
    "file": "https://commons.wikimedia.org/wiki/File:%C3%87%C4%B1lb%C4%B1r_with_duck-fat_saut%C3%A9ed_Ramps_(14826584557).jpg",
    "license": "CC BY-SA 2.0",
    "author": "Premshree Pillai from Brooklyn, NY, US",
-   "title": "Çılbır with duck-fat sautéed Ramps (14826584557).jpg"
+   "title": "\u00c7\u0131lb\u0131r with duck-fat saut\u00e9ed Ramps (14826584557).jpg"
   },
   "r4004": {
    "file": "https://commons.wikimedia.org/wiki/File:Baked_trout.jpg",
    "license": "CC BY-SA 4.0",
-   "author": "Petar Milošević",
+   "author": "Petar Milo\u0161evi\u0107",
    "title": "Baked trout.jpg"
   },
   "r4016": {
@@ -1271,7 +1271,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Huevos_motule%C3%B1os_servidos_en_Tabasco.jpg",
    "license": "CC BY-SA 4.0",
    "author": "ProtoplasmaKid",
-   "title": "Huevos motuleños servidos en Tabasco.jpg"
+   "title": "Huevos motule\u00f1os servidos en Tabasco.jpg"
   },
   "r4038": {
    "file": "https://commons.wikimedia.org/wiki/File:Pasta_Bolognese_(CC)_(10140854694).jpg",
@@ -1361,13 +1361,13 @@
    "file": "https://commons.wikimedia.org/wiki/File:Om%C3%A1%C4%8Dka_na_lasagne_(raj%C4%8Datov%C3%A1_%2B_s%C3%BDr)_I.jpg",
    "license": "CC0",
    "author": "Pohled 111",
-   "title": "Omáčka na lasagne (rajčatová + sýr) I.jpg"
+   "title": "Om\u00e1\u010dka na lasagne (raj\u010datov\u00e1 + s\u00fdr) I.jpg"
   },
   "r6010": {
    "file": "https://commons.wikimedia.org/wiki/File:Pabell%C3%B3n_Criollo.jpg",
    "license": "Public domain",
    "author": "Seamar31 at English Wikipedia",
-   "title": "Pabellón Criollo.jpg"
+   "title": "Pabell\u00f3n Criollo.jpg"
   },
   "r84": {
    "file": "https://commons.wikimedia.org/wiki/File:Making_green_curry_with_shrimp.jpg",
@@ -1523,7 +1523,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:HK_SWH_%E8%A5%BF%E7%81%A3%E6%B2%B3_Sai_Wan_Ho_SKW_%E7%AD%B2%E7%AE%95%E7%81%A3%E9%81%93_33_Shau_Kei_Wan_Road_shop_%E9%BA%97%E7%81%A3%E5%A4%A7%E5%BB%88_Lai_Wan_Building_%E6%B5%B7%E5%AF%B6%E6%BC%81%E6%B8%AF_Ocean_Treasure_Seafood_Restaurant_diner_food_%E8%A5%BF%E8%98%AD%E8%8A%B1%E5%A4%A7%E8%9D%A6%E4%BB%81_Stir-fry_broccoli_with_peeled_shrimp_March_2026_N13P_02.jpg",
    "license": "CC0",
    "author": "TOMW maowu LOU ShaSha",
-   "title": "HK SWH 西灣河 Sai Wan Ho SKW 筲箕灣道 33 Shau Kei Wan Road shop 麗灣大廈 Lai Wan Building 海寶漁港 Ocean Treasure Seafood Restaurant diner food 西蘭花大蝦仁 Stir-fry broccoli with peeled shrimp March 2026 N13P 02.jpg"
+   "title": "HK SWH \u897f\u7063\u6cb3 Sai Wan Ho SKW \u7b72\u7b95\u7063\u9053 33 Shau Kei Wan Road shop \u9e97\u7063\u5927\u5ec8 Lai Wan Building \u6d77\u5bf6\u6f01\u6e2f Ocean Treasure Seafood Restaurant diner food \u897f\u862d\u82b1\u5927\u8766\u4ec1 Stir-fry broccoli with peeled shrimp March 2026 N13P 02.jpg"
   },
   "r2630": {
    "file": "https://commons.wikimedia.org/wiki/File:Tuscan_kale_and_white_bean_soup_in_personalized_bowls_with_spoons_on_a_decorative_tree_cross_cut_(16085794138).jpg",
@@ -1553,7 +1553,7 @@
    "file": "https://commons.wikimedia.org/wiki/File:Arroz_con_Pollo_Pega%C3%ADto_served_at_Chayote_Barrio_Kitchen.jpg",
    "license": "CC BY-SA 4.0",
    "author": "RodzMarCom",
-   "title": "Arroz con Pollo Pegaíto served at Chayote Barrio Kitchen.jpg"
+   "title": "Arroz con Pollo Pega\u00edto served at Chayote Barrio Kitchen.jpg"
   },
   "r4050": {
    "file": "https://commons.wikimedia.org/wiki/File:Chicken_Soft_Tacos_from_Panchero%27s.jpg",
@@ -1740,7 +1740,7 @@
    "license": "CC BY 2.0",
    "license_url": "https://creativecommons.org/licenses/by/2.0/",
    "author": "BruceMatsunaga",
-   "title": "Breaking in a new cast iron pan with seared rib eye steak topped with shallots and crimini mushrooms served with garlic roasted cauliflower and sautéd carrots. #valentinesday indeed. #Protein #paleo #instayum #foodphotography #healthy #Note3 #homemade",
+   "title": "Breaking in a new cast iron pan with seared rib eye steak topped with shallots and crimini mushrooms served with garlic roasted cauliflower and saut\u00e9d carrots. #valentinesday indeed. #Protein #paleo #instayum #foodphotography #healthy #Note3 #homemade",
    "via": "openverse/flickr",
    "recovered": "openverse-phash"
   },
@@ -1851,6 +1851,5438 @@
    "title": "Chicken enchilada meat",
    "via": "openverse/flickr",
    "recovered": "openverse-phash"
+  },
+  "r297": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spare_ribs_with_Chinese_barbecue_sauce_cropped.jpg",
+   "license": "Public domain",
+   "author": "Spare_ribs_with_Chinese_barbecue_sauce.jpg: SpaceMonkey\nderivative work: Adrignola (talk)",
+   "title": "Spare ribs with Chinese barbecue sauce cropped.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Barbecued_Spare_Ribs)"
+  },
+  "r341": {
+   "file": "https://commons.wikimedia.org/wiki/File:CaesarSalad3.jpg",
+   "license": "Public domain",
+   "author": "User Novellina on en.wikipedia",
+   "title": "CaesarSalad3.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Caesar_Salad)"
+  },
+  "r319": {
+   "file": "https://commons.wikimedia.org/wiki/File:Boeuf_bourguignon_servi_avec_des_p%C3%A2tes.jpg",
+   "license": "CC BY 3.0",
+   "author": "DC",
+   "title": "Boeuf bourguignon servi avec des p\u00e2tes.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Boeuf_Bourguignon)"
+  },
+  "r311": {
+   "file": "https://commons.wikimedia.org/wiki/File:4336Cuisine_and_foods_of_Baliuag,_Bulacan_08.jpg",
+   "license": "CC0",
+   "author": "Judgefloro",
+   "title": "4336Cuisine and foods of Baliuag, Bulacan 08.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Binagoongan_(Saut%C3%A9ed_Pork_with_Shrimp_Paste))"
+  },
+  "r373": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chana_masala.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Simon Law (sfllaw) from Montr\u00e9al, QC, Canada",
+   "title": "Chana masala.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Cholley_(Chickpea_Curry))"
+  },
+  "r343": {
+   "file": "https://commons.wikimedia.org/wiki/File:20000227--calzone.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "",
+   "title": "20000227--calzone.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Calzone)"
+  },
+  "r327": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bryndzov%C3%A9_halu%C5%A1ky_so_slaninou.jpg",
+   "license": "CC0",
+   "author": "Gregory finster",
+   "title": "Bryndzov\u00e9 halu\u0161ky so slaninou.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Bryndzov%C3%A9_Halu%C5%A1ky_(Slovak_Dumplings_with_Cheese))"
+  },
+  "r320": {
+   "file": "https://commons.wikimedia.org/wiki/File:Boliche.jpg",
+   "license": "Public domain",
+   "author": "Averette at English Wikipedia",
+   "title": "Boliche.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Boliche_(Cuban_Chorizo-Stuffed_Roast))"
+  },
+  "r294": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ribs_barbecue.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Gyfjonas",
+   "title": "Ribs barbecue.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Barbecue_Ribs)"
+  },
+  "r305": {
+   "file": "https://commons.wikimedia.org/wiki/File:Stir-fried_beef,_Fire_Town,_Montparnasse,_Paris_002.jpg",
+   "license": "CC BY 2.0",
+   "author": "Guilhem Vellut from Paris, France",
+   "title": "Stir-fried beef, Fire Town, Montparnasse, Paris 002.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Beef_Stir-Fry)"
+  },
+  "r254": {
+   "file": "https://commons.wikimedia.org/wiki/File:Aj%C3%AD_de_gallina_(gourmet)-b.jpg",
+   "license": "Public domain",
+   "author": "Dtarazona",
+   "title": "Aj\u00ed de gallina (gourmet)-b.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Aj%C3%AD_de_Gallina_(Peruvian_Chili_Chicken))"
+  },
+  "r307": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chili_con_carne_1.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Mark Pellegrini",
+   "title": "Chili con carne 1.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Bell_Pepper_Chili)"
+  },
+  "r313": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bison_%C3%A0_la_Grecque.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Visitor7",
+   "title": "Bison \u00e0 la Grecque.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Bison_%C3%A0_la_Grecque)"
+  },
+  "r336": {
+   "file": "https://commons.wikimedia.org/wiki/File:Butternut_Squash_Soup.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Visitor7",
+   "title": "Butternut Squash Soup.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Butternut_Squash_Soup)"
+  },
+  "r354": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cheese_egg_toast.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "AnkitaS",
+   "title": "Cheese egg toast.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Cheese_Egg_Toast)"
+  },
+  "r363": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chickpea_Omelette_Batter.jpg",
+   "license": "CC0",
+   "author": "Back ache",
+   "title": "Chickpea Omelette Batter.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Chickpea_Omelette)"
+  },
+  "r306": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bihari_Kabab_in_Serving_plate.JPG",
+   "license": "CC0",
+   "author": "Miansari66",
+   "title": "Bihari Kabab in Serving plate.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Behari_Kabab)"
+  },
+  "r304": {
+   "file": "https://commons.wikimedia.org/wiki/File:Fried_plantain,_potatoes_and_egg.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Bukky658",
+   "title": "Fried plantain, potatoes and egg.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Fried_Plantain_and_Egg)"
+  },
+  "r324": {
+   "file": "https://commons.wikimedia.org/wiki/File:Breakfast_D%C3%BCr%C3%BCm.jpg",
+   "license": "CC0",
+   "author": "Jarrod Baniqued",
+   "title": "Breakfast D\u00fcr\u00fcm.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Breakfast_D%C3%BCr%C3%BCm)"
+  },
+  "r378": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cioppino.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Kelly Sue DeConnick",
+   "title": "Cioppino.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Cioppino_(Italian_Seafood_Stew))"
+  },
+  "r439": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bowl_of_falafel.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "EvanProdromou",
+   "title": "Bowl of falafel.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Falafel)"
+  },
+  "r387": {
+   "file": "https://commons.wikimedia.org/wiki/File:Corned_beef_pie.jpg",
+   "license": "CC BY 2.0",
+   "author": "Ed Bierman",
+   "title": "Corned beef pie.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Corned_Beef_Pie)"
+  },
+  "r390": {
+   "file": "https://commons.wikimedia.org/wiki/File:Creamy_Mushroom_Pasta.jpg",
+   "license": "CC BY 3.0",
+   "author": "Sharon Chen",
+   "title": "Creamy Mushroom Pasta.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Creamy_Mushroom_Pasta)"
+  },
+  "r424": {
+   "file": "https://commons.wikimedia.org/wiki/File:EgFoodLentilSoup.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Roland Unger",
+   "title": "EgFoodLentilSoup.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Egyptian_Lentil_Soup)"
+  },
+  "r427": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bamya_stew_at_Ankara.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "E4024",
+   "title": "Bamya stew at Ankara.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Egyptian_Okra_Stew)"
+  },
+  "r425": {
+   "file": "https://commons.wikimedia.org/wiki/File:Kofta.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Rashmeet Kaur",
+   "title": "Kofta.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Egyptian_Meatballs_(Kofta))"
+  },
+  "r422": {
+   "file": "https://commons.wikimedia.org/wiki/File:Mahshi_koromb.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Lockesdonkey",
+   "title": "Mahshi koromb.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Egyptian_Cabbage_Rolls_(Mahshi_Malfoof))"
+  },
+  "r399": {
+   "file": "https://commons.wikimedia.org/wiki/File:Dajaj_Mashwi.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Ayyappannagamani",
+   "title": "Dajaj Mashwi.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Dajaj_Mashwi_(Libyan_Grilled_Chicken))"
+  },
+  "r432": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ekwang_(Grated_cocoyam).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Aderiqueza",
+   "title": "Ekwang (Grated cocoyam).jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Ekwang_(Cameroonian_Taro_Leaf_Stew))"
+  },
+  "r418": {
+   "file": "https://commons.wikimedia.org/wiki/File:Efo_Riro_-_Veggies.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Tunde Akangbe",
+   "title": "Efo Riro - Veggies.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Efo_Riro)"
+  },
+  "r467": {
+   "file": "https://commons.wikimedia.org/wiki/File:Frijoles_Vanegas.jpg",
+   "license": "Public domain",
+   "author": "Lgvanegas at English Wikibooks",
+   "title": "Frijoles Vanegas.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Frijoles_Antioque%C3%B1os_(Colombian_Bean_Stew))"
+  },
+  "r460": {
+   "file": "https://commons.wikimedia.org/wiki/File:Qurighan.jpg",
+   "license": "Public domain",
+   "author": "w:User:Omegarad",
+   "title": "Qurighan.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Fried_Chicken_and_Fried_Potatoes)"
+  },
+  "r479": {
+   "file": "https://commons.wikimedia.org/wiki/File:Caldo_de_res.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Wotancito",
+   "title": "Caldo de res.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Gambian_Caldo_(Seafood_soup))"
+  },
+  "r480": {
+   "file": "https://commons.wikimedia.org/wiki/File:Poulet_yassa.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "InspiFood",
+   "title": "Poulet yassa.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Gambian_Yassa_Poulet)"
+  },
+  "r472": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ful_medames_(arabic_meal).jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Abdullah Geelah",
+   "title": "Ful medames (arabic meal).jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Ful_Medames_(Egyptian_Fava_Beans))"
+  },
+  "r458": {
+   "file": "https://commons.wikimedia.org/wiki/File:Fribourg_omelet.jpg",
+   "license": "CC0",
+   "author": "Jarrod Baniqued",
+   "title": "Fribourg omelet.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Fribourg_Omelet)"
+  },
+  "r566": {
+   "file": "https://commons.wikimedia.org/wiki/File:Corned_beef_hash_at_the_Creamery_(Nina%27s_breakfast).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Ginny and John Woods",
+   "title": "Corned beef hash at the Creamery (Nina's breakfast).jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Lancashire_Corned_Beef_Hash)"
+  },
+  "r582": {
+   "file": "https://commons.wikimedia.org/wiki/File:Lomo_saltado.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "No machine-readable author provided. Manuel Gonz\u00e1lez Olaechea assumed (based on copyright claims).",
+   "title": "Lomo saltado.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Lomo_Saltado_(Peruvian_Steak_Stir-fry))"
+  },
+  "r524": {
+   "file": "https://commons.wikimedia.org/wiki/File:Idli1.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Nick Gray",
+   "title": "Idli1.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Idli_(Steamed_Rice_and_Black_Gram_Bread))"
+  },
+  "r629": {
+   "file": "https://commons.wikimedia.org/wiki/File:Quail_07_bg_041506.jpg",
+   "license": "Public domain",
+   "author": "Jon SullivanThe original uploader was Y6y6y6 at English Wikipedia.",
+   "title": "Quail 07 bg 041506.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:New_England_Clam_Chowder)"
+  },
+  "r570": {
+   "file": "https://commons.wikimedia.org/wiki/File:Latino_Scramble.jpg",
+   "license": "Public domain",
+   "author": "Lgvanegas at English Wikibooks",
+   "title": "Latino Scramble.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Latino_Scramble)"
+  },
+  "r610": {
+   "file": "https://commons.wikimedia.org/wiki/File:Vegetarian_Meatballs.jpg",
+   "license": "Public domain",
+   "author": "Unforgettableid",
+   "title": "Vegetarian Meatballs.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Meatballs_(Vegetarian))"
+  },
+  "r631": {
+   "file": "https://commons.wikimedia.org/wiki/File:NYC-East_Harlem-Patsy%27s_Pizzeria-03.jpg",
+   "license": "CC BY 2.0",
+   "author": "Patrick Woodward at Flickr from Studio City, USA",
+   "title": "NYC-East Harlem-Patsy's Pizzeria-03.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:New_York_City%E2%80%93Style_Pizza)"
+  },
+  "r539": {
+   "file": "https://commons.wikimedia.org/wiki/File:Mac_MG_5939.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "GwennVienn",
+   "title": "Mac MG 5939.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Kare-Kare_(Oxtail_and_Vegetables_in_Peanut_Sauce))"
+  },
+  "r484": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ghormeh_sabzi.jpg",
+   "license": "CC0",
+   "author": "Ckling",
+   "title": "Ghormeh sabzi.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Ghormeh_Sabzi_(Iranian_Herb_Stew))"
+  },
+  "r604": {
+   "file": "https://commons.wikimedia.org/wiki/File:Masa_(Waina).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Aderiqueza",
+   "title": "Masa (Waina).jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Masa_(Hausa_Rice_Pancake))"
+  },
+  "r554": {
+   "file": "https://commons.wikimedia.org/wiki/File:Egyptian_food_Koshary.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Dina Said",
+   "title": "Egyptian food Koshary.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Koshari_(Egyptian_Rice_with_Pasta_and_Lentils))"
+  },
+  "r591": {
+   "file": "https://commons.wikimedia.org/wiki/File:Mahshi.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Aseel zm",
+   "title": "Mahshi.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Mahshi_(Egyptian_Stuffed_Vegetables))"
+  },
+  "r628": {
+   "file": "https://commons.wikimedia.org/wiki/File:Plat_de_Ndol%C3%A8_avec_Plantains_Tap%C3%A9s_Frits_%2BPoisson_Frit.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Ishtar19",
+   "title": "Plat de Ndol\u00e8 avec Plantains Tap\u00e9s Frits +Poisson Frit.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Ndole_(Cameroonian_Bitter_Leaf_and_Peanut_Soup))"
+  },
+  "r507": {
+   "file": "https://commons.wikimedia.org/wiki/File:Fusion_Cuisine_-_HARISSA_CHICKEN_LAYERED_SOFIYANI_DUM_BIRYANI_-_Bangalore_-_Karnataka_-_IMG_0591.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Lekhashree G",
+   "title": "Fusion Cuisine - HARISSA CHICKEN LAYERED SOFIYANI DUM BIRYANI - Bangalore - Karnataka - IMG 0591.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Harissa_bil_Djaj_(Libyan_Chicken_Harissa))"
+  },
+  "r589": {
+   "file": "https://commons.wikimedia.org/wiki/File:African_Chicken_Peanut_Stew_(37673757141).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "A Healthier Michigan from Detroit, United States",
+   "title": "African Chicken Peanut Stew (37673757141).jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Maff%C3%A9_(West_African_Peanut_Stew)_II)"
+  },
+  "r557": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tortilla_espa%C3%B1ola_kuku_sabzi_hybrid.jpg",
+   "license": "CC0",
+   "author": "Jarrod Baniqued",
+   "title": "Tortilla espa\u00f1ola kuku sabzi hybrid.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Kuku_Sabzi_with_Potato_Slices)"
+  },
+  "r754": {
+   "file": "https://commons.wikimedia.org/wiki/File:Oven_roasted_brine-soaked_turkey.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "TheKohser",
+   "title": "Oven roasted brine-soaked turkey.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Roasted_Brined_Turkey_I)"
+  },
+  "r735": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ratatouille.jpg",
+   "license": "CC BY 2.0",
+   "author": "Marcus Guimar\u00e3es",
+   "title": "Ratatouille.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Ratatouille_I)"
+  },
+  "r710": {
+   "file": "https://commons.wikimedia.org/wiki/File:Rakott_krumpli.jpg",
+   "license": "CC BY 2.0",
+   "author": "zolakoma",
+   "title": "Rakott krumpli.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Potato_Casserole_(Rakott_Krumpli))"
+  },
+  "r737": {
+   "file": "https://commons.wikimedia.org/wiki/File:Lentil_soup_done.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Dmitry Bagrov",
+   "title": "Lentil soup done.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Red_Lentil_Soup)"
+  },
+  "r708": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bah_Kut_Teh.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Fuyong127",
+   "title": "Bah Kut Teh.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Pork_Spare_Rib_Soup_(Bah_Kut_Teh))"
+  },
+  "r668": {
+   "file": "https://commons.wikimedia.org/wiki/File:Jambalaya.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "No machine-readable author provided. Polyparadigm~commonswiki assumed (based on copyright claims).",
+   "title": "Jambalaya.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Jambalaya_I)"
+  },
+  "r674": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pancakes_(Vegan)_(Cropped).jpg",
+   "license": "CC0",
+   "author": "Heliodex",
+   "title": "Pancakes (Vegan) (Cropped).jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Pancakes_(Vegan))"
+  },
+  "r662": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ossobuco.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Mogens Engelund",
+   "title": "Ossobuco.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Ossobuco_Alla_Milanese)"
+  },
+  "r716": {
+   "file": "https://commons.wikimedia.org/wiki/File:Aloo_gobi.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "",
+   "title": "Aloo gobi.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Potato_and_Cauliflower_Curry_(Aloo_Gobi))"
+  },
+  "r695": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ruskie.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Stako",
+   "title": "Ruskie.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Pierogi_I)"
+  },
+  "r790": {
+   "file": "https://commons.wikimedia.org/wiki/File:Sinigang_na_Baboy_DSCF4234.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Joy D. Ganaden",
+   "title": "Sinigang na Baboy DSCF4234.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Sinigang_(Philippine_Sour_Soup))"
+  },
+  "r740": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ruben_sandwich.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "No machine-readable author provided. BenFrantzDale~commonswiki assumed (based on copyright claims).",
+   "title": "Ruben sandwich.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Reuben_Sandwich)"
+  },
+  "r688": {
+   "file": "https://commons.wikimedia.org/wiki/File:Finished_penne_pasta_with_hearty_meat_sauce.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "MarkTraceur",
+   "title": "Finished penne pasta with hearty meat sauce.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Penne_with_Hearty_Meat_Sauce)"
+  },
+  "r717": {
+   "file": "https://commons.wikimedia.org/wiki/File:Papa_Turmada.jpg",
+   "license": "Public domain",
+   "author": "Lgvanegas at English Wikibooks",
+   "title": "Papa Turmada.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Potato_and_Sausage_Casserole_(Papa_Turmada))"
+  },
+  "r699": {
+   "file": "https://commons.wikimedia.org/wiki/File:PeperonniPizza.jpg",
+   "license": "Public domain",
+   "author": "Lgvanegas at English Wikibooks",
+   "title": "PeperonniPizza.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Pizza_Vanegas)"
+  },
+  "r799": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spaghetti_aglio_olio_e_peperoncino_by_matsuyuki_retouched.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "matsuyuki",
+   "title": "Spaghetti aglio olio e peperoncino by matsuyuki retouched.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Spaghetti_Aglio_e_Olio)"
+  },
+  "r792": {
+   "file": "https://commons.wikimedia.org/wiki/File:Smokey_Millet_Super_Grain_Bowl_With_Crispy_Tofu.jpg",
+   "license": "CC BY 3.0",
+   "author": "Simmer + Sauce",
+   "title": "Smokey Millet Super Grain Bowl With Crispy Tofu.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Smokey_Millet_Super_Grain_Bowl_With_Crispy_Tofu)"
+  },
+  "r671": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pan-Fried_Shanghai_Noodles.jpg",
+   "license": "CC BY 3.0",
+   "author": "Sharon Chen",
+   "title": "Pan-Fried Shanghai Noodles.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Pan-Fried_Shanghai_Noodles)"
+  },
+  "r766": {
+   "file": "https://commons.wikimedia.org/wiki/File:Salmorejo_cordouan.JPG",
+   "license": "CC0",
+   "author": "P.Lechien",
+   "title": "Salmorejo cordouan.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Salmorejo_(Spanish_Tomato_Garlic_Pur%C3%A9e))"
+  },
+  "r779": {
+   "file": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Calliopejen1",
+   "title": "Shakshuka by Calliopejen1.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Shakshuka_bil_Lahm_(Libyan_Meat_Shakshuka))"
+  },
+  "r675": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pancake_stack_with_honey.jpg",
+   "license": "CC BY 4.0",
+   "author": "Shisma",
+   "title": "Pancake stack with honey.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Pancakes_with_Honey)"
+  },
+  "r756": {
+   "file": "https://commons.wikimedia.org/wiki/File:Barbecued_chicken_drumsticks-01.jpg",
+   "license": "CC BY 2.0",
+   "author": "Diana from Pennsylvania USA",
+   "title": "Barbecued chicken drumsticks-01.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Roasted_Spiced_Chicken_Drumsticks)"
+  },
+  "r669": {
+   "file": "https://commons.wikimedia.org/wiki/File:JfMalhacan9018MeycauayanCityfvf_06.JPG",
+   "license": "CC BY-SA 4.0",
+   "author": "Judgefloro",
+   "title": "JfMalhacan9018MeycauayanCityfvf 06.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Paksiw_na_Bangus_(Milkfish_Stewed_in_Vinegar))"
+  },
+  "r700": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pizza_aux_poivrons.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "",
+   "title": "Pizza aux poivrons.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Pizza_with_Peppers)"
+  },
+  "r900": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cucumber_soup.jpg",
+   "license": "Public domain",
+   "author": "No machine-readable author provided. Mohylek assumed (based on copyright claims).",
+   "title": "Cucumber soup.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Zupa_Og%C3%B3rkowa_(Polish_Cucumber_Soup))"
+  },
+  "r911": {
+   "file": "https://commons.wikimedia.org/wiki/File:CookbookTurkeyWrap.jpg",
+   "license": "Public domain",
+   "author": "No machine-readable author provided. AlbertCahalan~commonswiki assumed (based on copyright claims).",
+   "title": "CookbookTurkeyWrap.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Turkey_Wrap)"
+  },
+  "r800": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spaghetti_alla_Carbonara_(Madrid).JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "Tamorlan",
+   "title": "Spaghetti alla Carbonara (Madrid).JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Spaghetti_alla_Carbonara)"
+  },
+  "r805": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tortilla_patatas.jpg",
+   "license": "CC BY-SA 2.5",
+   "author": "",
+   "title": "Tortilla patatas.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Spanish_Omelet)"
+  },
+  "r750": {
+   "file": "https://commons.wikimedia.org/wiki/File:Roast_Butternut,_Brown_Rice_and_Biltong_Salad.jpg",
+   "license": "CC BY 2.5",
+   "author": "Cswreeve",
+   "title": "Roast Butternut, Brown Rice and Biltong Salad.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Roast_Butternut,_Biltong_and_Brown_Rice_Salad)"
+  },
+  "r845": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tarbes_salad.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Original uploader was Leland at en.wikibooks",
+   "title": "Tarbes salad.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Tarbes_Salad)"
+  },
+  "r804": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spanokopita_cropped.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Stu Spivack",
+   "title": "Spanokopita cropped.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Spanakopita)"
+  },
+  "r901": {
+   "file": "https://commons.wikimedia.org/wiki/File:A_bowl_of_Zuppa_Toscana_prepared_from_the_Wikibooks_recipe.JPG",
+   "license": "CC BY-SA 4.0",
+   "author": "MarkTraceur",
+   "title": "A bowl of Zuppa Toscana prepared from the Wikibooks recipe.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Zuppa_Toscana)"
+  },
+  "r856": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tofu_Scrambler.jpg",
+   "license": "CC BY 2.0",
+   "author": "Bart Everson",
+   "title": "Tofu Scrambler.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Tofu_Scramble_I)"
+  },
+  "r884": {
+   "file": "https://commons.wikimedia.org/wiki/File:Welsh_Rarebit.jpg",
+   "license": "CC BY 2.0",
+   "author": "stef yau",
+   "title": "Welsh Rarebit.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Welsh_Rarebit)"
+  },
+  "r849": {
+   "file": "https://commons.wikimedia.org/wiki/File:GreenCurry-Ikebukuro-2011.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Nesnad",
+   "title": "GreenCurry-Ikebukuro-2011.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Thai_Green_Curry_with_Chicken)"
+  },
+  "r803": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spaghetti_alle_vongole.jpg",
+   "license": "CC BY 2.0",
+   "author": "Flickr user: [2], retouched by AM",
+   "title": "Spaghetti alle vongole.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Spaghetti_with_Clams)"
+  },
+  "r903": {
+   "file": "https://commons.wikimedia.org/wiki/File:Salade_nicoise.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Canterel",
+   "title": "Salade nicoise.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Ni%C3%A7oise_Salad)"
+  },
+  "r877": {
+   "file": "https://commons.wikimedia.org/wiki/File:Finished_sausage_breakfast_casserole.jpg",
+   "license": "CC BY-SA 1.0",
+   "author": "User:MarkTraceur",
+   "title": "Finished sausage breakfast casserole.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Wakeup_Sausage_Casserole)"
+  },
+  "r872": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bowl_of_Ukrainian_Borscht.jpg",
+   "license": "Public domain",
+   "author": "Borshch at English Wikibooks",
+   "title": "Bowl of Ukrainian Borscht.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Ukrainian_Borscht)"
+  },
+  "r881": {
+   "file": "https://commons.wikimedia.org/wiki/File:Waterzooi_at_De_Vlaamsche_Pot_(2175547879).jpg",
+   "license": "CC BY 2.0",
+   "author": "Martin Bravenboer from Utrecht, The Netherlands",
+   "title": "Waterzooi at De Vlaamsche Pot (2175547879).jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Waterzooi)"
+  },
+  "r801": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spaghettiniphoto.jpg",
+   "license": "CC BY 2.0",
+   "author": "nishidaryuichi",
+   "title": "Spaghettiniphoto.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Spaghetti_alla_Puttanesca)"
+  },
+  "r819": {
+   "file": "https://commons.wikimedia.org/wiki/File:Straciatella_-_bowl.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "Mike.lifeguard",
+   "title": "Straciatella - bowl.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Stracciatella_I)"
+  },
+  "r818": {
+   "file": "https://commons.wikimedia.org/wiki/File:HK_style_pan-fried_noodles_2.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "BrokenSphere",
+   "title": "HK style pan-fried noodles 2.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Stir_Fried_Seafood_with_Noodles)"
+  },
+  "r833": {
+   "file": "https://commons.wikimedia.org/wiki/File:Sweet_beef_01.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "",
+   "title": "Sweet beef 01.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Sweet_Beef)"
+  },
+  "r861": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tortilla_canaria.jpg",
+   "license": "CC BY 2.0",
+   "author": "Secret Tenerife from After 16 years in Tenerife, the Costa del Geriatrico, United Kingdom",
+   "title": "Tortilla canaria.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Tortilla_Canaria)"
+  },
+  "r893": {
+   "file": "https://commons.wikimedia.org/wiki/File:Gujaratikadhi.jpg",
+   "license": "Public domain",
+   "author": "Mowglee",
+   "title": "Gujaratikadhi.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Yogurt_Curry_Soup_(Kadhi))"
+  },
+  "r878": {
+   "file": "https://commons.wikimedia.org/wiki/File:Warm_Black_Bean_Salad_with_Kale_and_Tomatoes.jpg",
+   "license": "CC BY 3.0",
+   "author": "Sharon Chen",
+   "title": "Warm Black Bean Salad with Kale and Tomatoes.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Warm_Black_Bean_Salad_with_Kale_and_Tomatoes)"
+  },
+  "r855": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tofu_saltado.jpg",
+   "license": "Public domain",
+   "author": "Mvolz",
+   "title": "Tofu saltado.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Tofu_Saltado)"
+  },
+  "r865": {
+   "file": "https://commons.wikimedia.org/wiki/File:Turkey_and_Barley_Cabbage_Roll_in_Tomato_Sauce.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Cnrowley",
+   "title": "Turkey and Barley Cabbage Roll in Tomato Sauce.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Turkey_%26_Barley_Cabbage_Rolls_with_Fresh_Dill)"
+  },
+  "r2004": {
+   "file": "https://commons.wikimedia.org/wiki/File:Amala_and_Abula.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Owoeye007",
+   "title": "Amala and Abula.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Abula_(Nigerian_Three_Stews))"
+  },
+  "r2025": {
+   "file": "https://commons.wikimedia.org/wiki/File:Asian_Chicken_Salad_with_Cashews.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Nikchick",
+   "title": "Asian Chicken Salad with Cashews.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Asian-Inspired_Chicken_Salad)"
+  },
+  "r2027": {
+   "file": "https://commons.wikimedia.org/wiki/File:Meat_stir-fry_dish_at_a_Tibetan_restaurant.jpg",
+   "license": "CC BY 2.0",
+   "author": "Mark Lyon from New York, NY, USA",
+   "title": "Meat stir-fry dish at a Tibetan restaurant.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Awaze_Tibs_(Spicy_Ethiopian_Meat_Stir-Fry))"
+  },
+  "r2023": {
+   "file": "https://commons.wikimedia.org/wiki/File:Asaro_(_Yam_Porridge).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Oyebolaesther",
+   "title": "Asaro ( Yam Porridge).jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Asaro)"
+  },
+  "r2394": {
+   "file": "https://commons.wikimedia.org/wiki/File:Omelette_with_butter_and_tomatoes.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Paul Goyette",
+   "title": "Omelette with butter and tomatoes.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Nigerian_Tomato_Omelette)"
+  },
+  "r2393": {
+   "file": "https://commons.wikimedia.org/wiki/File:Red_beans_and_rice.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Paul Goyette",
+   "title": "Red beans and rice.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Nigerian_Rice_and_Beans_Jollof)"
+  },
+  "r2536": {
+   "file": "https://commons.wikimedia.org/wiki/File:Quiche_Lorraine.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "",
+   "title": "Quiche Lorraine.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Simple_Tarragon_Quiche)"
+  },
+  "r2486": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pastel_Arroz.jpg",
+   "license": "Public domain",
+   "author": "Lgvanegas at English Wikibooks",
+   "title": "Pastel Arroz.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Rice_Tamale_(Pastel_de_Arroz))"
+  },
+  "r2477": {
+   "file": "https://commons.wikimedia.org/wiki/File:Quornpitta.JPG",
+   "license": "Public domain",
+   "author": "KVDP",
+   "title": "Quornpitta.JPG",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Quorn_Pitta)"
+  },
+  "r715": {
+   "file": "https://commons.wikimedia.org/wiki/File:Potato_stew.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Aarno at English Wikibooks",
+   "title": "Potato stew.jpg",
+   "via": "source page image (https://en.wikibooks.org/wiki/Cookbook:Potato_Stew)"
+  },
+  "r2": {
+   "file": "https://commons.wikimedia.org/wiki/File:VEGGIE_CHORIZO_EGGS_BENNY_-_17_GRAMS_2025-09-20.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "VEGGIE CHORIZO EGGS BENNY - 17 GRAMS 2025-09-20.jpg",
+   "via": "Wikimedia Commons search: Veggie Scramble Toast"
+  },
+  "r5": {
+   "file": "https://commons.wikimedia.org/wiki/File:Salmon,_tomato,_mashed_potato,_broccoli,_mushrooms,_and_corn_-_Massachusetts.jpg",
+   "license": "CC0",
+   "author": "Daderot",
+   "title": "Salmon, tomato, mashed potato, broccoli, mushrooms, and corn - Massachusetts.jpg",
+   "via": "Wikimedia Commons search: Salmon & Broccoli  "
+  },
+  "r8": {
+   "file": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Chicken_salad_sandwich_with_Israeli_salad.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "HaJunkiyada",
+   "title": "Liat Portal for Foodie Disorder - Chicken salad sandwich with Israeli salad.jpg",
+   "via": "Wikimedia Commons search: Chicken Salad"
+  },
+  "r12": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spinach_Tofu_Soup_-_%E8%8F%A0%E8%8F%9C%E8%B1%86%E8%85%90%E6%B9%AF_(Emerald_%26_White_Jade_Soup_-_%E7%BF%A1%E7%BF%A0%E7%99%BD%E7%8E%89%E6%B9%AF).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "NeoBatfreak",
+   "title": "Spinach Tofu Soup - \u83e0\u83dc\u8c46\u8150\u6e6f (Emerald & White Jade Soup - \u7fe1\u7fe0\u767d\u7389\u6e6f).jpg",
+   "via": "Wikimedia Commons search: Soup Tofu"
+  },
+  "r13": {
+   "file": "https://commons.wikimedia.org/wiki/File:Sandwich_on_a_cutting_board.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Revital Salomon",
+   "title": "Sandwich on a cutting board.jpg",
+   "via": "Wikimedia Commons search: Egg Sandwiches"
+  },
+  "r14": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_fajitas_-_La_Hacienda_-_Sarah_Stierch.jpg",
+   "license": "CC BY 4.0",
+   "author": "Missvain",
+   "title": "Chicken fajitas - La Hacienda - Sarah Stierch.jpg",
+   "via": "Wikimedia Commons search:   Fajitas"
+  },
+  "r16": {
+   "file": "https://commons.wikimedia.org/wiki/File:Teriyaki_sirloin_steak_(3393793247).jpg",
+   "license": "CC BY 2.0",
+   "author": "Geoff Peters from Vancouver, BC, Canada",
+   "title": "Teriyaki sirloin steak (3393793247).jpg",
+   "via": "Wikimedia Commons search: Baked Potato Bar"
+  },
+  "r11": {
+   "file": "https://commons.wikimedia.org/wiki/File:Greek_Yogurt_with_Apricots_-_Zaytinya_-_March_2018_-_Sarah_Stierch_01.jpg",
+   "license": "CC BY 4.0",
+   "author": "Missvain",
+   "title": "Greek Yogurt with Apricots - Zaytinya - March 2018 - Sarah Stierch 01.jpg",
+   "via": "Wikimedia Commons search: Greek Yogurt Parfaits"
+  },
+  "r17": {
+   "file": "https://commons.wikimedia.org/wiki/File:Beef_Balls_Noodle_Soup,_Blanco_Court_Beef_Noodles,_Food_Republic_@_Suntec_City,_2023_(01).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Bahnfrend",
+   "title": "Beef Balls Noodle Soup, Blanco Court Beef Noodles, Food Republic @ Suntec City, 2023 (01).jpg",
+   "via": "Wikimedia Commons search: Noodle Bowls"
+  },
+  "r18": {
+   "file": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Calliopejen1",
+   "title": "Shakshuka by Calliopejen1.jpg",
+   "via": "Wikimedia Commons search: Shakshuka"
+  },
+  "r21": {
+   "file": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Shrimp_Shakshuka.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "HaJunkiyada",
+   "title": "Liat Portal for Foodie Disorder - Shrimp Shakshuka.jpg",
+   "via": "Wikimedia Commons search: Shrimp Skillet"
+  },
+  "r22": {
+   "file": "https://commons.wikimedia.org/wiki/File:Basmati_Fried_Rice-Veggie_cooked_in_Melbourne.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Pradeepraajkumar1981",
+   "title": "Basmati Fried Rice-Veggie cooked in Melbourne.jpg",
+   "via": "Wikimedia Commons search: Veggie Fried Rice"
+  },
+  "r26": {
+   "file": "https://commons.wikimedia.org/wiki/File:Black_Bean_Soup_Cup_Ruby_Slipper_NOLA.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "Infrogmation of New Orleans",
+   "title": "Black Bean Soup Cup Ruby Slipper NOLA.JPG",
+   "via": "Wikimedia Commons search: Black Bean Soup"
+  },
+  "r35": {
+   "file": "https://commons.wikimedia.org/wiki/File:Noodles_with_Onion,_Nuts_and_Tofu_Braised_in_Sesame_oil_with_Honey_Ginger_Sauce_(155698982).jpg",
+   "license": "CC BY 2.0",
+   "author": "Dan Zen from Dundas, Canada",
+   "title": "Noodles with Onion, Nuts and Tofu Braised in Sesame oil with Honey Ginger Sauce (155698982).jpg",
+   "via": "Wikimedia Commons search: Sesame Ginger Noodles"
+  },
+  "r39": {
+   "file": "https://commons.wikimedia.org/wiki/File:Applebee%27s_-_Fiesta_Lime_Chicken.jpg",
+   "license": "CC BY 2.0",
+   "author": "Elsie Hui",
+   "title": "Applebee's - Fiesta Lime Chicken.jpg",
+   "via": "Wikimedia Commons search: Lime Chicken"
+  },
+  "r41": {
+   "file": "https://commons.wikimedia.org/wiki/File:Lettuce_cups_w_scallion_pancakes_(4354349207).jpg",
+   "license": "CC BY 2.0",
+   "author": "Karen and Brad Emerson",
+   "title": "Lettuce cups w scallion pancakes (4354349207).jpg",
+   "via": "Wikimedia Commons search: Lettuce Cups"
+  },
+  "r42": {
+   "file": "https://commons.wikimedia.org/wiki/File:Moroccan_Chickpea_and_Vegetable_Stew_(6750034613).jpg",
+   "license": "CC BY 2.0",
+   "author": "Jennifer from Vancouver, Canada",
+   "title": "Moroccan Chickpea and Vegetable Stew (6750034613).jpg",
+   "via": "Wikimedia Commons search: Moroccan Chickpea Stew"
+  },
+  "r44": {
+   "file": "https://commons.wikimedia.org/wiki/File:Basil-fried_minced_pork_and_rice.jpg",
+   "license": "CC BY 4.0",
+   "author": "Douglas Perkins",
+   "title": "Basil-fried minced pork and rice.jpg",
+   "via": "Wikimedia Commons search: Thai Basil Pork"
+  },
+  "r48": {
+   "file": "https://commons.wikimedia.org/wiki/File:Grilled_cod,_shitake_puree,_seaweed_butter_-_Christchurch,_New_Zealand.jpg",
+   "license": "CC0",
+   "author": "Daderot",
+   "title": "Grilled cod, shitake puree, seaweed butter - Christchurch, New Zealand.jpg",
+   "via": "Wikimedia Commons search: Butter Cod"
+  },
+  "r49": {
+   "file": "https://commons.wikimedia.org/wiki/File:House_Special_Tofu_%26_Mushroom_-_The_Big_Bowl_2023-10-25.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "House Special Tofu & Mushroom - The Big Bowl 2023-10-25.jpg",
+   "via": "Wikimedia Commons search: Vietnamese Lemongrass Tofu"
+  },
+  "r50": {
+   "file": "https://commons.wikimedia.org/wiki/File:Gambas_Al_Ajillo_(Spanish_Garlic_Shrimp).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Banej",
+   "title": "Gambas Al Ajillo (Spanish Garlic Shrimp).jpg",
+   "via": "Wikimedia Commons search: Spanish Garlic Shrimp"
+  },
+  "r51": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bowl_of_lentil_soup_with_green_and_red_lentils.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Whoisjohngalt",
+   "title": "Bowl of lentil soup with green and red lentils.jpg",
+   "via": "Wikimedia Commons search: Lentil Bowls"
+  },
+  "r52": {
+   "file": "https://commons.wikimedia.org/wiki/File:Peanut_butter_chicken_skewers.jpg",
+   "license": "CC BY 4.0",
+   "author": "Punker1999",
+   "title": "Peanut butter chicken skewers.jpg",
+   "via": "Wikimedia Commons search: Chicken Skewers"
+  },
+  "r53": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ground_beef,_baked_tomatoes,_and_tomato_sauce_on_Taiwan_noodles_-_Massachusetts.jpg",
+   "license": "CC0",
+   "author": "Daderot",
+   "title": "Ground beef, baked tomatoes, and tomato sauce on Taiwan noodles - Massachusetts.jpg",
+   "via": "Wikimedia Commons search: Tomato Bake"
+  },
+  "r56": {
+   "file": "https://commons.wikimedia.org/wiki/File:Blond_unbrowned_omelet_with_mushrooms_and_herbs.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Valereee",
+   "title": "Blond unbrowned omelet with mushrooms and herbs.jpg",
+   "via": "Wikimedia Commons search: French Herb Omelette"
+  },
+  "r60": {
+   "file": "https://commons.wikimedia.org/wiki/File:Salmon_Teriyaki_at_restaurant_Same_Same_But_Different.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "JIP",
+   "title": "Salmon Teriyaki at restaurant Same Same But Different.jpg",
+   "via": "Wikimedia Commons search: Japanese Teriyaki Salmon"
+  },
+  "r69": {
+   "file": "https://commons.wikimedia.org/wiki/File:Couscous_take_4.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Karim2k",
+   "title": "Couscous take 4.jpg",
+   "via": "Wikimedia Commons search: Tunisian Couscous Shakshuka"
+  },
+  "r71": {
+   "file": "https://commons.wikimedia.org/wiki/File:Courgette,_Pea_%26_Mint_Soup_-_Brooklands_Cafe_2026-05-15.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Courgette, Pea & Mint Soup - Brooklands Cafe 2026-05-15.jpg",
+   "via": "Wikimedia Commons search: Mint Soup"
+  },
+  "r72": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pastel_de_pollo_listo_para_consumir.jpg",
+   "license": "CC BY 3.0",
+   "author": "Juan Gonzalo Angel Retrepo",
+   "title": "Pastel de pollo listo para consumir.jpg",
+   "via": "Wikimedia Commons search: Estofado de Pollo "
+  },
+  "r73": {
+   "file": "https://commons.wikimedia.org/wiki/File:Noodles_with_Peanut_Butter_Sauce.jpg",
+   "license": "Public domain",
+   "author": "USDA",
+   "title": "Noodles with Peanut Butter Sauce.jpg",
+   "via": "Wikimedia Commons search: Peanut Noodles"
+  },
+  "r76": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pork_rind_and_pork_lard.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Qwertyxp2000",
+   "title": "Pork rind and pork lard.jpg",
+   "via": "Wikimedia Commons search: Pork Bowls"
+  },
+  "r79": {
+   "file": "https://commons.wikimedia.org/wiki/File:Gado_Gado_PTG_Gourmet_IITMandi_Nov17_D72_3256.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Timothy A. Gonsalves",
+   "title": "Gado Gado PTG Gourmet IITMandi Nov17 D72 3256.jpg",
+   "via": "Wikimedia Commons search: Indonesian Gado Gado"
+  },
+  "r78": {
+   "file": "https://commons.wikimedia.org/wiki/File:Korean_soup_Sundae_gukbap_01.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Mar del Este",
+   "title": "Korean soup Sundae gukbap 01.jpg",
+   "via": "Wikimedia Commons search: Sausage Soup"
+  },
+  "r87": {
+   "file": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Lamb_chops_cooking_with_garlic_and_rosemary.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "HaJunkiyada",
+   "title": "Liat Portal for Foodie Disorder - Lamb chops cooking with garlic and rosemary.jpg",
+   "via": "Wikimedia Commons search: Garlic Rosemary Lamb Chops"
+  },
+  "r80": {
+   "file": "https://commons.wikimedia.org/wiki/File:Beef_tongue_toastie_-_Schnitzel_%26_Co._2025-10-29.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Beef tongue toastie - Schnitzel & Co. 2025-10-29.jpg",
+   "via": "Wikimedia Commons search: Schnitzel Mustard"
+  },
+  "r88": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chile_Relleno_casserole.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Mint Corn",
+   "title": "Chile Relleno casserole.jpg",
+   "via": "Wikimedia Commons search: Chilean Corn Casserole"
+  },
+  "r96": {
+   "file": "https://commons.wikimedia.org/wiki/File:SMOKED_SALMON_TOAST_-_17_GRAMS_2025-09-20.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "SMOKED SALMON TOAST - 17 GRAMS 2025-09-20.jpg",
+   "via": "Wikimedia Commons search: Lemon Ricotta Toast"
+  },
+  "r94": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chia_jars_with_bleuberries_(Unsplash).jpg",
+   "license": "CC0",
+   "author": "Brenda Godinez cravethebenefits",
+   "title": "Chia jars with bleuberries (Unsplash).jpg",
+   "via": "Wikimedia Commons search: Chia Parfait"
+  },
+  "r103": {
+   "file": "https://commons.wikimedia.org/wiki/File:Falafel_%26_Hummus_Wrap_-_Lavash_2024-08-19.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Falafel & Hummus Wrap - Lavash 2024-08-19.jpg",
+   "via": "Wikimedia Commons search: Hummus Wraps"
+  },
+  "r104": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chorizo_and_potato_tacos_-_April_2023_-_Sarah_Stierch_02.jpg",
+   "license": "CC BY 4.0",
+   "author": "Missvain",
+   "title": "Chorizo and potato tacos - April 2023 - Sarah Stierch 02.jpg",
+   "via": "Wikimedia Commons search: Potato Tacos"
+  },
+  "r105": {
+   "file": "https://commons.wikimedia.org/wiki/File:Handgemachte_tortellini_erbsen_28.04.2012_13-37-07.jpg",
+   "license": "CC BY 3.0",
+   "author": "Dirk Ingo Franke",
+   "title": "Handgemachte tortellini erbsen 28.04.2012 13-37-07.jpg",
+   "via": "Wikimedia Commons search: Tomato Tortellini"
+  },
+  "r107": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bacon,_Salame,_Fennel_Sausage,_Guanciale,_Tomato_%26_Mozzarella.jpg",
+   "license": "CC BY 2.0",
+   "author": "T.Tseng",
+   "title": "Bacon, Salame, Fennel Sausage, Guanciale, Tomato & Mozzarella.jpg",
+   "via": "Wikimedia Commons search: Sausage Fennel"
+  },
+  "r108": {
+   "file": "https://commons.wikimedia.org/wiki/File:Falafel_in_a_pita.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Israel_photo_gallery",
+   "title": "Falafel in a pita.jpg",
+   "via": "Wikimedia Commons search: Falafel Pitas"
+  },
+  "r117": {
+   "file": "https://commons.wikimedia.org/wiki/File:20240929_Komemade_Thai_Soup_Pumpkin_anagoria.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "anagoria",
+   "title": "20240929 Komemade Thai Soup Pumpkin anagoria.jpg",
+   "via": "Wikimedia Commons search: Pumpkin Coconut Soup"
+  },
+  "r116": {
+   "file": "https://commons.wikimedia.org/wiki/File:Shanghai_lettuce_wraps_from_Auburn_Alehouse.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "Ixfd64",
+   "title": "Shanghai lettuce wraps from Auburn Alehouse.JPG",
+   "via": "Wikimedia Commons search: Lettuce Wraps"
+  },
+  "r109": {
+   "file": "https://commons.wikimedia.org/wiki/File:A_Pork_rib_eye_chops_with_beans_and_corn_with_garlic_sauce_from_Diamond_Restaurant.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Peachyeung316",
+   "title": "A Pork rib eye chops with beans and corn with garlic sauce from Diamond Restaurant.jpg",
+   "via": "Wikimedia Commons search: Pork Chops"
+  },
+  "r124": {
+   "file": "https://commons.wikimedia.org/wiki/File:Kimchi-bokkeum-bap_(Kimchi_fried_rice)_-_Kogi_2023-09-11.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Kimchi-bokkeum-bap (Kimchi fried rice) - Kogi 2023-09-11.jpg",
+   "via": "Wikimedia Commons search: Kimchi Fried Rice"
+  },
+  "r129": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_makhani.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "stu_spivack",
+   "title": "Chicken makhani.jpg",
+   "via": "Wikimedia Commons search: Butter Chicken"
+  },
+  "r130": {
+   "file": "https://commons.wikimedia.org/wiki/File:Smoked_meat_sandwich.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Photo by JamesTeterenko",
+   "title": "Smoked meat sandwich.jpg",
+   "via": "Wikimedia Commons search: Montreal Smoked Meat Sandwich"
+  },
+  "r131": {
+   "file": "https://commons.wikimedia.org/wiki/File:Peameal_bacon_sandwich.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Leventio",
+   "title": "Peameal bacon sandwich.jpg",
+   "via": "Wikimedia Commons search: Toronto Peameal Bacon Sandwich"
+  },
+  "r133": {
+   "file": "https://commons.wikimedia.org/wiki/File:Quebecois_Pea_Soup.png",
+   "license": "CC BY-SA 4.0",
+   "author": "Cnrowley",
+   "title": "Quebecois Pea Soup.png",
+   "via": "Wikimedia Commons search: Canadian Split Pea Soup"
+  },
+  "r135": {
+   "file": "https://commons.wikimedia.org/wiki/File:A_Pork_rib_eye_chops_with_beans_and_corn_with_garlic_sauce_from_Diamond_Restaurant.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Peachyeung316",
+   "title": "A Pork rib eye chops with beans and corn with garlic sauce from Diamond Restaurant.jpg",
+   "via": "Wikimedia Commons search: Pork Chops"
+  },
+  "r136": {
+   "file": "https://commons.wikimedia.org/wiki/File:American_pot_roast.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Mark Miller",
+   "title": "American pot roast.jpg",
+   "via": "Wikimedia Commons search: Dutch-Oven Pot Roast"
+  },
+  "r137": {
+   "file": "https://commons.wikimedia.org/wiki/File:DSCF1009_Hearty_fish_stew_simmering_in_a_rich_orange_broth_studded_with_tender_chunks_of_fish_and_vegetables.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "PattayaPatrol",
+   "title": "DSCF1009 Hearty fish stew simmering in a rich orange broth studded with tender chunks of fish and vegetables.jpg",
+   "via": "Wikimedia Commons search: Hearty Beef Stew"
+  },
+  "r132": {
+   "file": "https://commons.wikimedia.org/wiki/File:Poutine_d%C3%A9jeuner.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Safyrr",
+   "title": "Poutine d\u00e9jeuner.jpg",
+   "via": "Wikimedia Commons search: Poutine"
+  },
+  "r139": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cheesesteak_with_caramelized_onions.jpg",
+   "license": "CC BY 2.0",
+   "author": "jeffreyw",
+   "title": "Cheesesteak with caramelized onions.jpg",
+   "via": "Wikimedia Commons search: Caramelized Onions"
+  },
+  "r140": {
+   "file": "https://commons.wikimedia.org/wiki/File:02022_Hungarian_stuffed_cabbage_rolls_in_pickled_cabbage_leaves_with_veal_and_deer_meat.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Silar",
+   "title": "02022 Hungarian stuffed cabbage rolls in pickled cabbage leaves with veal and deer meat.jpg",
+   "via": "Wikimedia Commons search: Cabbage Rolls"
+  },
+  "r143": {
+   "file": "https://commons.wikimedia.org/wiki/File:Hawaiian_Pizza_(140488076).jpg",
+   "license": "CC BY 2.0",
+   "author": "Dan Zen from Dundas, Canada",
+   "title": "Hawaiian Pizza (140488076).jpg",
+   "via": "Wikimedia Commons search: Canadian Hawaiian Pizza"
+  },
+  "r141": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_pot_pie_-_Cambridge,_MA.jpg",
+   "license": "CC0",
+   "author": "Daderot",
+   "title": "Chicken pot pie - Cambridge, MA.jpg",
+   "via": "Wikimedia Commons search: Chicken Pot Pie"
+  },
+  "r145": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pulled_pork_while_pulling.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "Thogru",
+   "title": "Pulled pork while pulling.JPG",
+   "via": "Wikimedia Commons search: Pulled Pork"
+  },
+  "r146": {
+   "file": "https://commons.wikimedia.org/wiki/File:Baby_Back_Ribs_at_Adventure_Caf%C3%A9,_Balamban_(whologwhy)_-_Flickr.jpg",
+   "license": "CC BY 2.0",
+   "author": "whologwhy",
+   "title": "Baby Back Ribs at Adventure Caf\u00e9, Balamban (whologwhy) - Flickr.jpg",
+   "via": "Wikimedia Commons search: Back Ribs"
+  },
+  "r148": {
+   "file": "https://commons.wikimedia.org/wiki/File:Fish_and_chips_plate_with_peas.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Grendelkhan",
+   "title": "Fish and chips plate with peas.jpg",
+   "via": "Wikimedia Commons search: Fish Chips"
+  },
+  "r158": {
+   "file": "https://commons.wikimedia.org/wiki/File:American_biscuits_and_gravy.jpg",
+   "license": "Public domain",
+   "author": "Adolphus79 (talk)",
+   "title": "American biscuits and gravy.jpg",
+   "via": "Wikimedia Commons search: Country Sausage Gravy & Biscuits"
+  },
+  "r163": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spaghetti_with_shrimp_and_broccoli_in_a_lemon_garlic_sauce_with_lots_of_homegrown_Italian_parsley_%E8%87%AA%E5%AE%B6%E6%A0%BD%E5%9F%B9%E3%81%AE%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E3%83%B3%E3%83%91%E3%82%BB%E3%83%AA%E3%82%92%E3%81%9F%E3%81%A3%E3%81%B7%E3%82%8A%E6%95%A3%E3%82%89%E3%81%97%E3%81%9F%E3%82%A8%E3%83%93%E3%81%A8%E3%83%96%E3%83%AD%E3%83%83%E3%82%B3%E3%83%AA%E3%83%BC%E3%81%AE%E3%82%B9%E3%83%91%E3%82%B2%E3%83%86%E3%82%A3.jpg",
+   "license": "CC BY 2.0",
+   "author": "naotakem",
+   "title": "Spaghetti with shrimp and broccoli in a lemon garlic sauce with lots of homegrown Italian parsley \u81ea\u5bb6\u683d\u57f9\u306e\u30a4\u30bf\u30ea\u30a2\u30f3\u30d1\u30bb\u30ea\u3092\u305f\u3063\u3077\u308a\u6563\u3089\u3057\u305f\u30a8\u30d3\u3068\u30d6\u30ed\u30c3\u30b3\u30ea\u30fc\u306e\u30b9\u30d1\u30b2\u30c6\u30a3.jpg",
+   "via": "Wikimedia Commons search: Garlic Shrimp Spaghetti"
+  },
+  "r161": {
+   "file": "https://commons.wikimedia.org/wiki/File:Baked_risotto_casserole_rice_asparagus_and_peas_(15414849358).jpg",
+   "license": "CC BY 2.0",
+   "author": "Personal Creations",
+   "title": "Baked risotto casserole rice asparagus and peas (15414849358).jpg",
+   "via": "Wikimedia Commons search: Rice Casserole"
+  },
+  "r164": {
+   "file": "https://commons.wikimedia.org/wiki/File:Swedish_meatballs_with_egg_noodles.jpg",
+   "license": "CC0",
+   "author": "RandomKatze",
+   "title": "Swedish meatballs with egg noodles.jpg",
+   "via": "Wikimedia Commons search: Swedish Meatballs"
+  },
+  "r166": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pork_stir-fried_with_black_pepper_(37000148695).jpg",
+   "license": "CC BY 2.0",
+   "author": "NuCastiel from Bangkok, Thailand",
+   "title": "Pork stir-fried with black pepper (37000148695).jpg",
+   "via": "Wikimedia Commons search: Pork Stir-Fry   Peppers"
+  },
+  "r167": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_Cutlet_001.jpg",
+   "license": "CC0",
+   "author": "Ocdp",
+   "title": "Chicken Cutlet 001.jpg",
+   "via": "Wikimedia Commons search: Chicken Cutlets"
+  },
+  "r169": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cheesesteak_with_caramelized_onions.jpg",
+   "license": "CC BY 2.0",
+   "author": "jeffreyw",
+   "title": "Cheesesteak with caramelized onions.jpg",
+   "via": "Wikimedia Commons search: Caramelized Onions"
+  },
+  "r170": {
+   "file": "https://commons.wikimedia.org/wiki/File:Baked_Ziti_(cropped).jpg",
+   "license": "CC BY 2.0",
+   "author": "Lili from NY, United States",
+   "title": "Baked Ziti (cropped).jpg",
+   "via": "Wikimedia Commons search: Baked Macaroni"
+  },
+  "r168": {
+   "file": "https://commons.wikimedia.org/wiki/File:BroccoliPasta.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "AnticoMu90",
+   "title": "BroccoliPasta.jpg",
+   "via": "Wikimedia Commons search: Broccoli Pasta"
+  },
+  "r174": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_Tikka_Masala_KellySue.JPG",
+   "license": "CC BY 2.0",
+   "author": "Kelly Sue",
+   "title": "Chicken Tikka Masala KellySue.JPG",
+   "via": "Wikimedia Commons search: Tikka Masala"
+  },
+  "r172": {
+   "file": "https://commons.wikimedia.org/wiki/File:Mmm...meatball_sub_(5183008075).jpg",
+   "license": "CC BY 2.0",
+   "author": "jeffreyw",
+   "title": "Mmm...meatball sub (5183008075).jpg",
+   "via": "Wikimedia Commons search: Meatball Subs"
+  },
+  "r175": {
+   "file": "https://commons.wikimedia.org/wiki/File:Red_lentil_curry_soup.jpg",
+   "license": "CC BY 4.0",
+   "author": "\"Chef\" at Cookipedia.co.uk",
+   "title": "Red lentil curry soup.jpg",
+   "via": "Wikimedia Commons search: Lentil Curry"
+  },
+  "r178": {
+   "file": "https://commons.wikimedia.org/wiki/File:Grilled_salmon.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Petar Milo\u0161evi\u0107",
+   "title": "Grilled salmon.jpg",
+   "via": "Wikimedia Commons search: Lemon Garlic Salmon"
+  },
+  "r180": {
+   "file": "https://commons.wikimedia.org/wiki/File:02023_0166_Roasted_Chicken_and_Potatoes_with_fried_Beets.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Silar",
+   "title": "02023 0166 Roasted Chicken and Potatoes with fried Beets.jpg",
+   "via": "Wikimedia Commons search: Chicken Potatoes"
+  },
+  "r183": {
+   "file": "https://commons.wikimedia.org/wiki/File:Grilled_flank_steak.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Wikiuser100",
+   "title": "Grilled flank steak.jpg",
+   "via": "Wikimedia Commons search: Grilled Marinated Flank Steak"
+  },
+  "r184": {
+   "file": "https://commons.wikimedia.org/wiki/File:Honey_BBQ_Drumsticks.jpg",
+   "license": "CC BY 2.0",
+   "author": "TheCulinaryGeek",
+   "title": "Honey BBQ Drumsticks.jpg",
+   "via": "Wikimedia Commons search: BBQ Chicken Drumsticks"
+  },
+  "r185": {
+   "file": "https://commons.wikimedia.org/wiki/File:Minestrone_soup.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Katrin Morenz from Aachen, Deutschland",
+   "title": "Minestrone soup.jpg",
+   "via": "Wikimedia Commons search: Minestrone"
+  },
+  "r190": {
+   "file": "https://commons.wikimedia.org/wiki/File:Spaghetti_and_meatballs_1.jpg",
+   "license": "CC BY 2.0",
+   "author": "jeffreyw",
+   "title": "Spaghetti and meatballs 1.jpg",
+   "via": "Wikimedia Commons search: Spaghetti   Meatballs"
+  },
+  "r196": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ramen%2B-%2BHong%2BKong.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Donatingpictures",
+   "title": "Ramen+-+Hong+Kong.jpg",
+   "via": "Wikimedia Commons search: Miso Ramen Bowls"
+  },
+  "r186": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tortellini_Soup.jpg",
+   "license": "CC BY 2.0",
+   "author": "Thriving Vegetarian",
+   "title": "Tortellini Soup.jpg",
+   "via": "Wikimedia Commons search: Tortellini Soup"
+  },
+  "r197": {
+   "file": "https://commons.wikimedia.org/wiki/File:Beans_on_toast_-_Vios_2024-01-09.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Beans on toast - Vios 2024-01-09.jpg",
+   "via": "Wikimedia Commons search: Toast Bake"
+  },
+  "r198": {
+   "file": "https://commons.wikimedia.org/wiki/File:Bacon_Kale_Breakfast_Burrito_(8429773809).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Cajsa Lilliehook from Portland",
+   "title": "Bacon Kale Breakfast Burrito (8429773809).jpg",
+   "via": "Wikimedia Commons search: Breakfast Burritos"
+  },
+  "r203": {
+   "file": "https://commons.wikimedia.org/wiki/File:Meatloaf_With_Cauliflower_Pumpkin_Mash_And_Avocado_(67915371).jpeg",
+   "license": "CC BY 3.0",
+   "author": "Gary Lum",
+   "title": "Meatloaf With Cauliflower Pumpkin Mash And Avocado (67915371).jpeg",
+   "via": "Wikimedia Commons search: Meatloaf & Mash"
+  },
+  "r206": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tuna_Casserole2.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "B.D.'s world",
+   "title": "Tuna Casserole2.jpg",
+   "via": "Wikimedia Commons search: Tuna Noodle Casserole"
+  },
+  "r207": {
+   "file": "https://commons.wikimedia.org/wiki/File:Roasted_Lemon_Herb_Chicken.jpg",
+   "license": "CC BY 2.0",
+   "author": "TheCulinaryGeek",
+   "title": "Roasted Lemon Herb Chicken.jpg",
+   "via": "Wikimedia Commons search: Lemon Herb Chicken"
+  },
+  "r220": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_Noodle_Soup_US.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Nichijyou123",
+   "title": "Chicken Noodle Soup US.jpg",
+   "via": "Wikimedia Commons search: Chicken Noodle Soup"
+  },
+  "r222": {
+   "file": "https://commons.wikimedia.org/wiki/File:Vegetable_beef_barley_soup.jpg",
+   "license": "Public domain",
+   "author": "Photographer: Peggy Greb, Original uploader: Fredrik",
+   "title": "Vegetable beef barley soup.jpg",
+   "via": "Wikimedia Commons search: Beef   Barley Stew"
+  },
+  "r225": {
+   "file": "https://commons.wikimedia.org/wiki/File:Argentine_Breaded_Hake_Fillets_on_an_Oiled_Baking_Tray.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Horacio Cambeiro",
+   "title": "Argentine Breaded Hake Fillets on an Oiled Baking Tray.jpg",
+   "via": "Wikimedia Commons search: Fish   Chips Tray Bake"
+  },
+  "r224": {
+   "file": "https://commons.wikimedia.org/wiki/File:Homemade_Argentine_red_bean_and_smoked_sausage_stew_served_with_rice.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Horacio Cambeiro",
+   "title": "Homemade Argentine red bean and smoked sausage stew served with rice.jpg",
+   "via": "Wikimedia Commons search: Sausage Stew"
+  },
+  "r218": {
+   "file": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Homemade_Steak_with_Roasted_Vegetables.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "HaJunkiyada",
+   "title": "Liat Portal for Foodie Disorder - Homemade Steak with Roasted Vegetables.jpg",
+   "via": "Wikimedia Commons search: Cauliflower Steaks"
+  },
+  "r235": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cooking-food-stuffed-jalapenos-peppers.jpg",
+   "license": "Public domain",
+   "author": "Jon Sullivan",
+   "title": "Cooking-food-stuffed-jalapenos-peppers.jpg",
+   "via": "Wikimedia Commons search: Tex-Mex Stuffed Peppers"
+  },
+  "r237": {
+   "file": "https://commons.wikimedia.org/wiki/File:Noodles%26prawns_(78933907).jpg",
+   "license": "CC BY 2.0",
+   "author": "Andy / Andrew Fogg from near Cambridge, UK",
+   "title": "Noodles&prawns (78933907).jpg",
+   "via": "Wikimedia Commons search: Sesame Ginger Stir-Fry Noodles"
+  },
+  "r239": {
+   "file": "https://commons.wikimedia.org/wiki/File:Shrimp_Pad_Thai_2026-09-11_classic_02.jpg",
+   "license": "CC BY 4.0",
+   "author": "P1898",
+   "title": "Shrimp Pad Thai 2026-09-11 classic 02.jpg",
+   "via": "Wikimedia Commons search: Pad Thai   Shrimp"
+  },
+  "r238": {
+   "file": "https://commons.wikimedia.org/wiki/File:%22Marry_Me%22_Chicken_-_PizzaExpress,_Stanford_Cottage,_Worthing_2026-06-16.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "\"Marry Me\" Chicken - PizzaExpress, Stanford Cottage, Worthing 2026-06-16.jpg",
+   "via": "Wikimedia Commons search: Chicken Skillet"
+  },
+  "r242": {
+   "file": "https://commons.wikimedia.org/wiki/File:Sweet_sour_pork.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "BorgQueen",
+   "title": "Sweet sour pork.jpg",
+   "via": "Wikimedia Commons search: Sweet & Sour Pork"
+  },
+  "r243": {
+   "file": "https://commons.wikimedia.org/wiki/File:Sausage_Breakfast_Casserole.jpg",
+   "license": "CC BY-SA 1.0",
+   "author": "User:MarkTraceur",
+   "title": "Sausage Breakfast Casserole.jpg",
+   "via": "Wikimedia Commons search: Breakfast Casserole"
+  },
+  "r244": {
+   "file": "https://commons.wikimedia.org/wiki/File:All_Day_Breakfast_Wrap_-_M%26S_cafe_2023-08-08.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "All Day Breakfast Wrap - M&S cafe 2023-08-08.jpg",
+   "via": "Wikimedia Commons search: Breakfast Wraps"
+  },
+  "r246": {
+   "file": "https://commons.wikimedia.org/wiki/File:Salad_and_pita_bread_at_Kampin_Pippuri_in_October_2023.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "JIP",
+   "title": "Salad and pita bread at Kampin Pippuri in October 2023.jpg",
+   "via": "Wikimedia Commons search: Salad Pitas"
+  },
+  "r268": {
+   "file": "https://commons.wikimedia.org/wiki/File:Baked_Pork_Chop_Rice_in_Tomato_Sauce_with_Cheese.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Ceeseven",
+   "title": "Baked Pork Chop Rice in Tomato Sauce with Cheese.jpg",
+   "via": "Wikimedia Commons search: Baked Pork Chops"
+  },
+  "r248": {
+   "file": "https://commons.wikimedia.org/wiki/File:Khao_Sok,_Asian_noodle_soup,_Surat_Thani,_Thailand.jpg",
+   "license": "CC BY 4.0",
+   "author": "Vyacheslav Argenberg",
+   "title": "Khao Sok, Asian noodle soup, Surat Thani, Thailand.jpg",
+   "via": "Wikimedia Commons search: Noodle Jars"
+  },
+  "r279": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_and_olive_casserole_(3424171901).jpg",
+   "license": "CC BY 2.0",
+   "author": "Karen and Brad Emerson",
+   "title": "Chicken and olive casserole (3424171901).jpg",
+   "via": "Wikimedia Commons search: Chicken Casserole"
+  },
+  "r274": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tuna_melt_-_Massachusetts.jpg",
+   "license": "CC0",
+   "author": "Daderot",
+   "title": "Tuna melt - Massachusetts.jpg",
+   "via": "Wikimedia Commons search: Tuna Melts"
+  },
+  "r283": {
+   "file": "https://commons.wikimedia.org/wiki/File:Steak_at_hotel.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Arisepeter",
+   "title": "Steak at hotel.jpg",
+   "via": "Wikimedia Commons search: Steak"
+  },
+  "r291": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chinesechickensalad.jpg",
+   "license": "CC BY 2.0",
+   "author": "phototram",
+   "title": "Chinesechickensalad.jpg",
+   "via": "Wikimedia Commons search: Chicken Rice Salad"
+  },
+  "r289": {
+   "file": "https://commons.wikimedia.org/wiki/File:Memphis_Minnie%27s_St_Louis_Smoked_Pork_Ribs_%26_sauces_(19416525465).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Willis Lam",
+   "title": "Memphis Minnie's St Louis Smoked Pork Ribs & sauces (19416525465).jpg",
+   "via": "Wikimedia Commons search: Carolina Ribs"
+  },
+  "r323": {
+   "file": "https://commons.wikimedia.org/wiki/File:A_Pork_rib_eye_chops_with_beans_and_corn_with_garlic_sauce_from_Diamond_Restaurant.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Peachyeung316",
+   "title": "A Pork rib eye chops with beans and corn with garlic sauce from Diamond Restaurant.jpg",
+   "via": "Wikimedia Commons search: Pork Chops"
+  },
+  "r335": {
+   "file": "https://commons.wikimedia.org/wiki/File:King_Ranch_chicken_casserole.jpg",
+   "license": "CC BY 2.0",
+   "author": "Michael Cot\u00e9",
+   "title": "King Ranch chicken casserole.jpg",
+   "via": "Wikimedia Commons search: Cornbread   Chicken Casserole"
+  },
+  "r353": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pieology_Hickory_BBQ_Chicken_Pizza_(31965598124).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Willis Lam",
+   "title": "Pieology Hickory BBQ Chicken Pizza (31965598124).jpg",
+   "via": "Wikimedia Commons search: Hickory BBQ Chicken"
+  },
+  "r364": {
+   "file": "https://commons.wikimedia.org/wiki/File:Borscht,_Rostov-on-Don,_Russia.jpg",
+   "license": "CC BY 4.0",
+   "author": "Vyacheslav Argenberg",
+   "title": "Borscht, Rostov-on-Don, Russia.jpg",
+   "via": "Wikimedia Commons search: Russian Borscht"
+  },
+  "r385": {
+   "file": "https://commons.wikimedia.org/wiki/File:Asparagus_soup_(spargelsuppe).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Petar Milo\u0161evi\u0107",
+   "title": "Asparagus soup (spargelsuppe).jpg",
+   "via": "Wikimedia Commons search: Soup"
+  },
+  "r416": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ofada_Stew_(Ayamase_stew).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Aderiqueza",
+   "title": "Ofada Stew (Ayamase stew).jpg",
+   "via": "Wikimedia Commons search: Palm Stew"
+  },
+  "r456": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ham_and_brie_stuffed_French_toast_(3055537571).jpg",
+   "license": "CC BY 2.0",
+   "author": "Ruth Hartnup from Vancouver, Canada",
+   "title": "Ham and brie stuffed French toast (3055537571).jpg",
+   "via": "Wikimedia Commons search: Stuffed French Toast"
+  },
+  "r455": {
+   "file": "https://commons.wikimedia.org/wiki/File:Baby_Back_Ribs_glazed_with_@ssgastrogrub%27s_sweet_and_spicy_rum_BBQ_sauce,_mac_and_cheese,_and_smoked_tomatoes_with_garlic_confit_oil_and_tomato_confit_oil._(14715920733).jpg",
+   "license": "CC BY 2.0",
+   "author": "Arnold Gatilao from Oakland, CA, USA",
+   "title": "Baby Back Ribs glazed with @ssgastrogrub's sweet and spicy rum BBQ sauce, mac and cheese, and smoked tomatoes with garlic confit oil and tomato confit oil. (14715920733).jpg",
+   "via": "Wikimedia Commons search: Glazed Ribs"
+  },
+  "r468": {
+   "file": "https://commons.wikimedia.org/wiki/File:Burger_King_Buck_Double.jpg",
+   "license": "Public domain",
+   "author": "TheDapperDan",
+   "title": "Burger King Buck Double.jpg",
+   "via": "Wikimedia Commons search: Double Hamburgers"
+  },
+  "r473": {
+   "file": "https://commons.wikimedia.org/wiki/File:Roasted_Duckling_-_Fedeles_(60238457).jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Alpha from Melbourne, Australia",
+   "title": "Roasted Duckling - Fedeles (60238457).jpg",
+   "via": "Wikimedia Commons search: Roast Duckling"
+  },
+  "r482": {
+   "file": "https://commons.wikimedia.org/wiki/File:Pork_sirloin_chop_with_cider_pan_sauce.jpg",
+   "license": "CC BY-SA 2.0",
+   "author": "Laurel F",
+   "title": "Pork sirloin chop with cider pan sauce.jpg",
+   "via": "Wikimedia Commons search: Pan-Seared Pork Chops"
+  },
+  "r481": {
+   "file": "https://commons.wikimedia.org/wiki/File:Fried-Chicken-Set.jpg",
+   "license": "CC0",
+   "author": "Evan-Amos",
+   "title": "Fried-Chicken-Set.jpg",
+   "via": "Wikimedia Commons search: Fried Chicken"
+  },
+  "r514": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ground_turkey_(4515834437).jpg",
+   "license": "CC BY 2.0",
+   "author": "Michael Cot\u00e9 from Austin, Texas, Texas",
+   "title": "Ground turkey (4515834437).jpg",
+   "via": "Wikimedia Commons search: Ground Turkey"
+  },
+  "r544": {
+   "file": "https://commons.wikimedia.org/wiki/File:Wood_mushrooms_on_black_background.jpg",
+   "license": "CC BY 4.0",
+   "author": "Vadim51",
+   "title": "Wood mushrooms on black background.jpg",
+   "via": "Wikimedia Commons search: Black Mushrooms"
+  },
+  "r553": {
+   "file": "https://commons.wikimedia.org/wiki/File:Medall%C3%B3n_de_carne_Friar_Finitas_con_papas_fritas_y_omelete.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Horacio Cambeiro",
+   "title": "Medall\u00f3n de carne Friar Finitas con papas fritas y omelete.jpg",
+   "via": "Wikimedia Commons search: Friar's Omelette"
+  },
+  "r551": {
+   "file": "https://commons.wikimedia.org/wiki/File:Milano%27s_Caf%C3%A9_pork_loin_and_veg_Russell_Street_Stroud_Gloucestershire_England_02.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Acabashi",
+   "title": "Milano's Caf\u00e9 pork loin and veg Russell Street Stroud Gloucestershire England 02.jpg",
+   "via": "Wikimedia Commons search: Loin Gravy"
+  },
+  "r601": {
+   "file": "https://commons.wikimedia.org/wiki/File:Roasted_chicken_with_chilli_salt_(2).jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Baoothersks",
+   "title": "Roasted chicken with chilli salt (2).jpg",
+   "via": "Wikimedia Commons search: Roast Chicken on Salt"
+  },
+  "r627": {
+   "file": "https://commons.wikimedia.org/wiki/File:Fishcake_on_salad.jpg",
+   "license": "CC BY 2.0",
+   "author": "phototram",
+   "title": "Fishcake on salad.jpg",
+   "via": "Wikimedia Commons search: Fishcakes"
+  },
+  "r579": {
+   "file": "https://commons.wikimedia.org/wiki/File:Amuse_Bouche-_Chicken_Soup,_Truffle_Avocado,_Cream_Cheese,_Lemon_(11397873303).jpg",
+   "license": "CC BY 2.0",
+   "author": "City Foodsters",
+   "title": "Amuse Bouche- Chicken Soup, Truffle Avocado, Cream Cheese, Lemon (11397873303).jpg",
+   "via": "Wikimedia Commons search: Chicken Soup   Cream   Lemon"
+  },
+  "r633": {
+   "file": "https://commons.wikimedia.org/wiki/File:Eggs_Benedict2.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Xetrin",
+   "title": "Eggs Benedict2.jpg",
+   "via": "Wikimedia Commons search: Eggs Benedict"
+  },
+  "r642": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cheesesteak_(19386149993).jpg",
+   "license": "CC BY 2.0",
+   "author": "jeffreyw",
+   "title": "Cheesesteak (19386149993).jpg",
+   "via": "Wikimedia Commons search: Philly Cheesesteak"
+  },
+  "r643": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ribs_in_a_barbecue_%22pit%22.jpg",
+   "license": "CC BY 2.0",
+   "author": "Southern Foodways Alliance",
+   "title": "Ribs in a barbecue \"pit\".jpg",
+   "via": "Wikimedia Commons search: Southern Barbecue Ribs"
+  },
+  "r644": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cedar-Planked_Salmon_with_couscous,_spinach,_tomatoes_and_olives.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "ZhengZhou",
+   "title": "Cedar-Planked Salmon with couscous, spinach, tomatoes and olives.jpg",
+   "via": "Wikimedia Commons search: Planked Salmon"
+  },
+  "r685": {
+   "file": "https://commons.wikimedia.org/wiki/File:Hunan_cuisine,_stir-fried_tomato_with_eggs.jpg",
+   "license": "CC BY 3.0",
+   "author": "Huangdan2060",
+   "title": "Hunan cuisine, stir-fried tomato with eggs.jpg",
+   "via": "Wikimedia Commons search: Stir-fried Tomato   Scrambled Eggs"
+  },
+  "r702": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ploye.jpg",
+   "license": "CC BY 2.0",
+   "author": "Dan4th Nicholas",
+   "title": "Ploye.jpg",
+   "via": "Wikimedia Commons search: Ployes"
+  },
+  "r706": {
+   "file": "https://commons.wikimedia.org/wiki/File:Baked_Spaghetti_with_mushrooms.JPG",
+   "license": "CC BY-SA 4.0",
+   "author": "Robert Loescher",
+   "title": "Baked Spaghetti with mushrooms.JPG",
+   "via": "Wikimedia Commons search: Spaghetti Bake"
+  },
+  "r718": {
+   "file": "https://commons.wikimedia.org/wiki/File:Poutine_d%C3%A9jeuner.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Safyrr",
+   "title": "Poutine d\u00e9jeuner.jpg",
+   "via": "Wikimedia Commons search: Poutine"
+  },
+  "r719": {
+   "file": "https://commons.wikimedia.org/wiki/File:Scrambled_eggs_with_basil.jpg",
+   "license": "CC BY 4.0",
+   "author": "OmegaFallon",
+   "title": "Scrambled eggs with basil.jpg",
+   "via": "Wikimedia Commons search: Scrambled Eggs"
+  },
+  "r722": {
+   "file": "https://commons.wikimedia.org/wiki/File:Scrambled_eggs_with_cucumbers.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Zhou Yuji1028",
+   "title": "Scrambled eggs with cucumbers.jpg",
+   "via": "Wikimedia Commons search: Scrambled Eggs   Vegetables"
+  },
+  "r728": {
+   "file": "https://commons.wikimedia.org/wiki/File:Scrambled_eggs_with_sausage_in_Brisbane,_2024.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Kgbo",
+   "title": "Scrambled eggs with sausage in Brisbane, 2024.jpg",
+   "via": "Wikimedia Commons search: Scrambled Eggs   Sausage"
+  },
+  "r752": {
+   "file": "https://commons.wikimedia.org/wiki/File:Ous_al_niu_(eggs_inside_fried_bread)_-_2.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "El Mono Espa\u00f1ol",
+   "title": "Ous al niu (eggs inside fried bread) - 2.jpg",
+   "via": "Wikimedia Commons search: Bread Eggs"
+  },
+  "r781": {
+   "file": "https://commons.wikimedia.org/wiki/File:Hoppin-john-bowl.JPG",
+   "license": "CC BY-SA 3.0",
+   "author": "Srjenkins",
+   "title": "Hoppin-john-bowl.JPG",
+   "via": "Wikimedia Commons search: Hoppin John"
+  },
+  "r826": {
+   "file": "https://commons.wikimedia.org/wiki/File:Rice_with_stir-fried_squid,_garlic,_pepper_and_fried_duck_egg.jpg",
+   "license": "CC BY 4.0",
+   "author": "Vee Satayamas",
+   "title": "Rice with stir-fried squid, garlic, pepper and fried duck egg.jpg",
+   "via": "Wikimedia Commons search: Duck Fried Rice"
+  },
+  "r830": {
+   "file": "https://commons.wikimedia.org/wiki/File:Tomates_farcies_maison_de_Mina_Biennier.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Mina Biennier",
+   "title": "Tomates farcies maison de Mina Biennier.jpg",
+   "via": "Wikimedia Commons search: Stuffed Tomatoes"
+  },
+  "r839": {
+   "file": "https://commons.wikimedia.org/wiki/File:020230805_125640_goulash_with_spaetzle.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Silar",
+   "title": "020230805 125640 goulash with spaetzle.jpg",
+   "via": "Wikimedia Commons search: Goulash"
+  },
+  "r841": {
+   "file": "https://commons.wikimedia.org/wiki/File:Stuffed_red_peppers,_dark_rye_bread,_Rostov-on-Don,_Russia.jpg",
+   "license": "CC BY 4.0",
+   "author": "Vyacheslav Argenberg",
+   "title": "Stuffed red peppers, dark rye bread, Rostov-on-Don, Russia.jpg",
+   "via": "Wikimedia Commons search: Stuffed Peppers"
+  },
+  "r857": {
+   "file": "https://commons.wikimedia.org/wiki/File:Scotch_Egg_at_Sausage_Emporium_-_December_2022_-_Sarah_Stierch_01.jpg",
+   "license": "CC BY 4.0",
+   "author": "Missvain",
+   "title": "Scotch Egg at Sausage Emporium - December 2022 - Sarah Stierch 01.jpg",
+   "via": "Wikimedia Commons search: Sausage   Egg Bake"
+  },
+  "r866": {
+   "file": "https://commons.wikimedia.org/wiki/File:This_Reuben_sandwich_was_not_fucking_around._(9790118084).jpg",
+   "license": "CC BY 2.0",
+   "author": "Neil Conway from Oakland, USA",
+   "title": "This Reuben sandwich was not fucking around. (9790118084).jpg",
+   "via": "Wikimedia Commons search: Reuben Sandwich"
+  },
+  "r869": {
+   "file": "https://commons.wikimedia.org/wiki/File:Frito_Pie_as_Seen_Today.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Solsticed",
+   "title": "Frito Pie as Seen Today.jpg",
+   "via": "Wikimedia Commons search: Frito Pie Chili"
+  },
+  "r892": {
+   "file": "https://commons.wikimedia.org/wiki/File:A_fresh_sandwich_filled_with_grilled_vegetables.jpg",
+   "license": "CC BY 2.0",
+   "author": "Shixart1985",
+   "title": "A fresh sandwich filled with grilled vegetables.jpg",
+   "via": "Wikimedia Commons search: Grilled Vegetable Sandwich"
+  },
+  "r898": {
+   "file": "https://commons.wikimedia.org/wiki/File:Grilled_four-cheese_on_Jesus_bread_sandwich_with_garlic-tomato_soup.jpg",
+   "license": "CC BY 2.0",
+   "author": "goblinbox_(queen_of_ad_hoc_bento) from Minneapolis, MN, US",
+   "title": "Grilled four-cheese on Jesus bread sandwich with garlic-tomato soup.jpg",
+   "via": "Wikimedia Commons search: Garlic, Tomato   Cheddar Sandwich"
+  },
+  "r904": {
+   "file": "https://commons.wikimedia.org/wiki/File:Manhattan_Clam_Chowder_1.jpg",
+   "license": "CC BY 2.0",
+   "author": "Alexa",
+   "title": "Manhattan Clam Chowder 1.jpg",
+   "via": "Wikimedia Commons search: Clam Chowder"
+  },
+  "r928": {
+   "file": "https://commons.wikimedia.org/wiki/File:020230311_baked_chicken_breast.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Silar",
+   "title": "020230311 baked chicken breast.jpg",
+   "via": "Wikimedia Commons search: Baked Chicken Breasts"
+  },
+  "r929": {
+   "file": "https://commons.wikimedia.org/wiki/File:Beef_stew_2.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "3steph14",
+   "title": "Beef stew 2.jpg",
+   "via": "Wikimedia Commons search: Beef Stew"
+  },
+  "r932": {
+   "file": "https://commons.wikimedia.org/wiki/File:Salmon_burgers.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "ZZArch",
+   "title": "Salmon burgers.jpg",
+   "via": "Wikimedia Commons search: Salmon Burgers"
+  },
+  "r939": {
+   "file": "https://commons.wikimedia.org/wiki/File:Stuffed_burger_-_jucy_lucy_variation.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Jonathunder",
+   "title": "Stuffed burger - jucy lucy variation.jpg",
+   "via": "Wikimedia Commons search: Stuffed Burgers"
+  },
+  "r940": {
+   "file": "https://commons.wikimedia.org/wiki/File:Banga_rice.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Atimukoh",
+   "title": "Banga rice.jpg",
+   "via": "Wikimedia Commons search: Banga Rice"
+  },
+  "r941": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cracker_Barrel_interior,_Valdosta,_Breakfast_Benny,_Hashbrown_Casserole,_Fried_Apples.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Michael Rivera",
+   "title": "Cracker Barrel interior, Valdosta, Breakfast Benny, Hashbrown Casserole, Fried Apples.jpg",
+   "via": "Wikimedia Commons search: Hashbrown Casserole"
+  },
+  "r946": {
+   "file": "https://commons.wikimedia.org/wiki/File:Rice_and_beans.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Mohammad Ali Huzam",
+   "title": "Rice and beans.jpg",
+   "via": "Wikimedia Commons search: Bean   Rice Bake"
+  },
+  "r949": {
+   "file": "https://commons.wikimedia.org/wiki/File:Beef_curry_rice_003.jpg",
+   "license": "CC0",
+   "author": "Ocdp",
+   "title": "Beef curry rice 003.jpg",
+   "via": "Wikimedia Commons search: Beef Curry"
+  },
+  "r957": {
+   "file": "https://commons.wikimedia.org/wiki/File:Vegetable_soup_9.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Gannu03",
+   "title": "Vegetable soup 9.jpg",
+   "via": "Wikimedia Commons search: Vegetable Soup"
+  },
+  "r962": {
+   "file": "https://commons.wikimedia.org/wiki/File:Black_bean_chili_(3263369585).jpg",
+   "license": "CC BY 2.0",
+   "author": "Karen and Brad Emerson",
+   "title": "Black bean chili (3263369585).jpg",
+   "via": "Wikimedia Commons search: Black Bean Chili"
+  },
+  "r968": {
+   "file": "https://commons.wikimedia.org/wiki/File:Sausage_Breakfast_Casserole.jpg",
+   "license": "CC BY-SA 1.0",
+   "author": "User:MarkTraceur",
+   "title": "Sausage Breakfast Casserole.jpg",
+   "via": "Wikimedia Commons search: Breakfast Casserole"
+  },
+  "r971": {
+   "file": "https://commons.wikimedia.org/wiki/File:Eggs_Benedict2.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Xetrin",
+   "title": "Eggs Benedict2.jpg",
+   "via": "Wikimedia Commons search: Eggs Benedict"
+  },
+  "r973": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chinesechickensalad.jpg",
+   "license": "CC BY 2.0",
+   "author": "phototram",
+   "title": "Chinesechickensalad.jpg",
+   "via": "Wikimedia Commons search: Chicken Cabbage Salad"
+  },
+  "r988": {
+   "file": "https://commons.wikimedia.org/wiki/File:Charsiu.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Simon Shek",
+   "title": "Charsiu.jpg",
+   "via": "Wikimedia Commons search: Char Siu"
+  },
+  "r991": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cheese_enchilada_platter.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "StellarD",
+   "title": "Cheese enchilada platter.jpg",
+   "via": "Wikimedia Commons search: Cheese Enchilada"
+  },
+  "r992": {
+   "file": "https://commons.wikimedia.org/wiki/File:Cheese_%26_Mushroom_Omelette_-_The_Bystander_Cafe_2023-08-07.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Cheese & Mushroom Omelette - The Bystander Cafe 2023-08-07.jpg",
+   "via": "Wikimedia Commons search: Cheese Omelette"
+  },
+  "r999": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_fettuccine_alfredo.JPG",
+   "license": "CC BY-SA 4.0",
+   "author": "Dllu",
+   "title": "Chicken fettuccine alfredo.JPG",
+   "via": "Wikimedia Commons search: Chicken Alfredo"
+  },
+  "r1006": {
+   "file": "https://commons.wikimedia.org/wiki/File:Fried-Chicken-Set.jpg",
+   "license": "CC0",
+   "author": "Evan-Amos",
+   "title": "Fried-Chicken-Set.jpg",
+   "via": "Wikimedia Commons search: Fried Chicken"
+  },
+  "r1010": {
+   "file": "https://commons.wikimedia.org/wiki/File:ChickenDumplings.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Jonathunder",
+   "title": "ChickenDumplings.jpg",
+   "via": "Wikimedia Commons search: Chicken   Dumplings"
+  },
+  "r1012": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chilaquiles_at_the_Grand_Cantina,_Windsor,_Ontario,_2025-09-01_04.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Chris Woodrich",
+   "title": "Chilaquiles at the Grand Cantina, Windsor, Ontario, 2025-09-01 04.jpg",
+   "via": "Wikimedia Commons search: Chilaquiles"
+  },
+  "r1034": {
+   "file": "https://commons.wikimedia.org/wiki/File:Sesame_Soy_Glazed_Skuna_Bay_Salmon_-_3.jpg",
+   "license": "CC BY 2.0",
+   "author": "HarshLight",
+   "title": "Sesame Soy Glazed Skuna Bay Salmon - 3.jpg",
+   "via": "Wikimedia Commons search: Salmon Glaze"
+  },
+  "r1044": {
+   "file": "https://commons.wikimedia.org/wiki/File:Wheat_dosa.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Rupamdas75",
+   "title": "Wheat dosa.jpg",
+   "via": "Wikimedia Commons search: Whole Wheat Pancakes"
+  },
+  "r2001": {
+   "file": "https://commons.wikimedia.org/wiki/File:Beef_stroganoff_with_pasta.jpg",
+   "license": "CC BY 2.0",
+   "author": "benketaro",
+   "title": "Beef stroganoff with pasta.jpg",
+   "via": "Wikimedia Commons search: Beef Stroganoff"
+  },
+  "r2005": {
+   "file": "https://commons.wikimedia.org/wiki/File:Jollof_rice_with_vegetable.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Segun Famisa",
+   "title": "Jollof rice with vegetable.jpg",
+   "via": "Wikimedia Commons search: Jollof"
+  },
+  "r2007": {
+   "file": "https://commons.wikimedia.org/wiki/File:White_rice_and_stew_with_cabbage.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Halima Waziri",
+   "title": "White rice and stew with cabbage.jpg",
+   "via": "Wikimedia Commons search: African Cabbage Stew"
+  },
+  "r2010": {
+   "file": "https://commons.wikimedia.org/wiki/File:Meatball_with_Fried_Rice.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Ralff Nestor Nacor",
+   "title": "Meatball with Fried Rice.jpg",
+   "via": "Wikimedia Commons search: Fried Meatballs"
+  },
+  "r2011": {
+   "file": "https://commons.wikimedia.org/wiki/File:Meat_and_three_at_Walnut_Hills_restaurant.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Kenneth C. Zirkel",
+   "title": "Meat and three at Walnut Hills restaurant.jpg",
+   "via": "Wikimedia Commons search: Meat Walnuts"
+  },
+  "r2014": {
+   "file": "https://commons.wikimedia.org/wiki/File:Blueberry_Pancakes_-_Nowhere_Man_2023-09-21.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Blueberry Pancakes - Nowhere Man 2023-09-21.jpg",
+   "via": "Wikimedia Commons search: Almond Pancakes"
+  },
+  "r2016": {
+   "file": "https://commons.wikimedia.org/wiki/File:Fricass%C3%A9e_chicken.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "CNEcija12345",
+   "title": "Fricass\u00e9e chicken.jpg",
+   "via": "Wikimedia Commons search: Chicken Fricass\u00e9e"
+  },
+  "r2013": {
+   "file": "https://commons.wikimedia.org/wiki/File:Alicha_1.jpg",
+   "license": "CC BY-SA 2.0 fr",
+   "author": "Rama",
+   "title": "Alicha 1.jpg",
+   "via": "Wikimedia Commons search: Alicha"
+  },
+  "r2022": {
+   "file": "https://commons.wikimedia.org/wiki/File:Chicken_salad_with_eggs.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "T. Bjornstad",
+   "title": "Chicken salad with eggs.jpg",
+   "via": "Wikimedia Commons search: Chicken Salad"
+  },
+  "r2030": {
+   "file": "https://commons.wikimedia.org/wiki/File:Amalfitana_Fish_Stew_-_Tavola_Di_Famiglia_2026-02-27.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Amalfitana Fish Stew - Tavola Di Famiglia 2026-02-27.jpg",
+   "via": "Wikimedia Commons search: Fish Stew"
+  },
+  "r2035": {
+   "file": "https://commons.wikimedia.org/wiki/File:Stewed_apple_%26_ginger_crumb_pancake_-_Green_Kitchen_2024-03-11.jpg",
+   "license": "CC0",
+   "author": "Andy Li",
+   "title": "Stewed apple & ginger crumb pancake - Green Kitchen 2024-03-11.jpg",
+   "via": "Wikimedia Commons search: Nutmeg Pancakes"
+  },
+  "r3": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r7": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r10": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r23": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r24": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r25": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r29": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r32": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r43": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r45": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r54": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r58": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r70": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r101": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r102": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r122": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r127": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r138": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r155": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r156": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r160": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r165": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r171": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r176": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r181": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r182": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r189": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r191": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r195": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r199": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r200": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r201": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r213": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r215": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r217": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r229": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r232": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r233": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r234": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r236": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r240": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r245": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r257": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r273": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r277": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r299": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r314": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r315": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r347": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r401": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r420": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r450": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r453": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r462": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r483": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r499": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r504": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r515": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r516": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r533": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r540": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r587": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r592": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r598": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r636": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r638": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r640": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r655": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r656": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r687": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r761": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r786": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r848": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r868": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r916": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r924": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r936": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r938": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r942": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r945": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r953": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r982": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r984": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r986": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r993": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r994": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r1003": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r1004": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r1005": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r1014": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r1021": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r1027": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r1029": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r1039": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2009": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2019": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2026": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2028": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2032": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2033": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2034": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2038": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2039": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2041": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2043": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2044": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2045": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2049": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2050": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2052": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2053": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2054": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2055": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2056": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2058": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2061": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2062": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2067": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2076": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2077": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2080": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2082": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2083": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2085": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2088": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2089": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2095": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2097": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2098": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2102": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2103": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2104": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2105": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2106": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2109": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2110": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2111": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2112": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2113": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2115": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2120": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2121": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2126": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2130": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2134": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2136": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2137": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2138": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2139": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2140": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2142": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2143": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2144": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2149": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2156": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2158": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2162": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2163": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2165": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2174": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2175": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2176": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2178": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2181": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2182": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2185": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2189": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2190": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2193": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2198": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2199": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2200": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2202": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2203": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2204": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2207": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2208": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2211": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2213": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2214": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2219": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2221": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2225": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2227": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2228": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2229": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2231": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2234": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2236": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2242": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2243": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2244": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2246": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2247": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2248": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2249": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2254": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2256": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2259": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2260": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2261": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2262": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2263": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2264": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2265": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2266": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2267": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2268": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2269": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2270": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2271": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2273": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2274": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2276": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2277": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2279": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2280": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2282": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2283": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2285": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2286": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2287": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2290": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2291": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2293": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2294": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2295": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2296": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2300": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2307": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2309": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2312": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2313": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2315": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2317": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2319": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2321": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2322": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2323": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2324": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2325": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2326": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2327": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2328": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2330": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2331": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2332": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2333": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2334": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2335": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2338": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2340": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2342": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2343": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2345": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2347": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2352": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2353": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2354": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2355": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2356": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2357": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2358": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2359": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2360": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2362": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2363": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2364": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2365": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2366": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2367": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2369": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2370": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2372": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2373": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2375": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2377": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2378": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2381": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2382": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2383": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2386": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2388": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2390": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2396": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2397": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2399": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2401": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2404": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2406": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2410": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2413": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2414": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2417": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2418": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2419": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2420": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2422": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2423": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2424": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2425": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2426": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2427": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2429": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2430": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2431": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2432": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2435": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2439": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2443": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2445": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2446": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2450": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2452": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2453": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2454": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2455": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2456": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2457": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2460": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2463": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2464": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2465": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2470": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2474": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2478": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2479": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2489": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2490": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2492": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2494": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2495": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2496": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2498": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2501": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2503": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2509": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2511": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2514": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2516": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2517": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2518": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2520": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2521": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2523": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2526": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2527": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2528": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2532": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2533": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2534": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2538": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2541": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2542": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2543": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2547": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2548": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2549": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2551": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2552": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2556": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2557": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2558": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2559": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2560": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2563": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2565": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2566": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2568": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2572": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2575": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2578": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2580": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2581": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2585": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2586": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2587": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2588": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2589": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2590": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2591": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2592": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2593": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2594": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2595": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2599": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2600": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2601": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2603": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2607": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2608": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2612": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2613": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2614": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2615": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2618": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2619": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2620": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2623": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2625": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2626": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2629": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2631": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2632": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2634": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2635": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2638": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2641": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2648": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2652": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2653": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2654": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2655": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2658": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2659": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2660": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2662": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2663": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2664": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2665": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r2666": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4002": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4005": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4006": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4008": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4009": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4010": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4011": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4012": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4013": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4014": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4015": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4018": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4019": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4022": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4023": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4025": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4026": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4027": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4028": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4029": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4030": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4031": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4032": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4036": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4037": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4039": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4040": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4041": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4045": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4047": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4049": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4052": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4053": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4056": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4057": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4058": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4059": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4064": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r4065": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5002": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5003": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5004": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5005": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5006": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5007": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5008": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5010": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5011": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5012": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5013": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5015": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5016": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5017": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5018": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5019": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r5020": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r6003": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r6004": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r6005": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r6006": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r6007": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
+  },
+  "r6011": {
+   "file": "",
+   "license": "Original illustration (Digital Underground)",
+   "author": "Pantry Week",
+   "title": "Generated dish illustration",
+   "via": "generated"
   }
  },
  "backdrop": {

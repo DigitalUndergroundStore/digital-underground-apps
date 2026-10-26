@@ -14,12 +14,12 @@
     var v = l.video;
     if (v && v.kind === "file" && /^\/api\/community\/video\?v=/.test(v.src)) return '<div class="lg2-img"><video src="' + esc(v.src) + '" muted loop playsinline autoplay preload="metadata"' + (l.imageUrl ? ' poster="' + esc(l.imageUrl) + '"' : "") + ' aria-label="' + esc(l.name) + ' video"></video></div>';
     if (v && (v.kind === "youtube" || v.kind === "vimeo") && /^https:\/\/(www\.youtube-nocookie\.com|player\.vimeo\.com)\//.test(v.src)) return '<div class="lg2-img"><iframe src="' + esc(v.src) + '" title="' + esc(l.name) + ' video" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>';
-    return '<a class="lg2-img" href="' + pid(l.id) + '" aria-label="Open ' + esc(l.name) + ' page">' + (l.imageUrl ? '<img src="' + esc(l.imageUrl) + '" alt="" loading="lazy">' : "") + "</a>";
+    return '<a class="lg2-img" href="' + pid(l.id) + '" aria-label="Open ' + esc(l.name) + ' page">' + '<img src="' + esc(l.imageUrl || "/assets/covers/default-cover.svg") + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'/assets/covers/default-cover.svg\'">' + "</a>";
   }
   function render() {
     meta.textContent = plural(data.totalVotes) + " · ends " + new Date(data.endsAt - 60000).toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }) + " ET";
     st.innerHTML = data.standings.length ? data.standings.map(function (s, i) {
-      return '<li class="standings-item"><span class="rank">#' + (i + 1) + '</span><div class="project-icon"><a href="' + esc(s.url) + '" aria-label="Open ' + esc(s.name) + ' page">' + (s.imageUrl ? '<img src="' + esc(s.imageUrl) + '" alt="" loading="lazy" width="48" height="48">' : "") + '</a></div><div class="project-info"><strong><a href="' + esc(s.url) + '">' + esc(s.name) + "</a></strong><span>by " + esc(s.makerName) + '</span></div><span class="votes">' + plural(s.votes) + "</span></li>";
+      return '<li class="standings-item"><span class="rank">#' + (i + 1) + '</span><div class="project-icon"><a href="' + esc(s.url) + '" aria-label="Open ' + esc(s.name) + ' page">' + '<img src="' + esc(s.imageUrl || "/assets/covers/default-cover.svg") + '" alt="" loading="lazy" width="48" height="48" onerror="this.onerror=null;this.src=\'/assets/covers/default-cover.svg\'">' + '</a></div><div class="project-info"><strong><a href="' + esc(s.url) + '">' + esc(s.name) + "</a></strong><span>by " + esc(s.makerName) + '</span></div><span class="votes">' + plural(s.votes) + "</span></li>";
     }).join("") : '<li class="lg-empty">No votes yet this week. Be the first to vote below.</li>';
     var f = (q.value || "").trim().toLowerCase();
     grid.innerHTML = data.eligible.filter(function (l) { return !f || (l.name + " " + l.makerName).toLowerCase().indexOf(f) >= 0; }).map(function (l) {
@@ -35,7 +35,7 @@
   }
   fetch("/api/league/winner", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (d) {
     var w = d && d.winner; if (!w || !motw) return;
-    motw.innerHTML = '<a class="motw-card" href="' + esc(w.url) + '">' + (w.imageUrl ? '<img class="motw-img" src="' + esc(w.imageUrl) + '" alt="" loading="lazy">' : "") +
+    motw.innerHTML = '<a class="motw-card" href="' + esc(w.url) + '">' + '<img class="motw-img" src="' + esc(w.imageUrl || "/assets/covers/default-cover.svg") + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'/assets/covers/default-cover.svg\'">' +
       '<div class="motw-content"><img class="motw-official" src="/assets/badges/maker-of-the-week.svg?v=1" alt="Maker of the Week" width="131" height="40"><h3 class="motw-name">' + esc(w.name) + '</h3><p class="motw-pitch">by <strong>' + esc(w.makerName) + "</strong>" + (w.week ? " · week of " + esc(w.week) : "") + (w.pitchShort ? " · " + esc(w.pitchShort) : "") + "</p></div></a>";
   });
   grid.addEventListener("click", function (e) {

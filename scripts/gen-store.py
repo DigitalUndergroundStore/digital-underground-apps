@@ -19,7 +19,7 @@ for sec in s.select("section[id]"):
         img, v = c.select_one("img"), c.select_one("video")
         if not (a and n and p): continue
         name = n.get_text(strip=True)
-        if EXCLUDE.search(name) or "gumroad.com" not in a["href"]: continue
+        if EXCLUDE.search(name) or not ("gumroad.com" in a["href"] or a["href"].startswith("https://digitalundergroundstore.com/tools/")): continue  # Gumroad products + DU-hosted free web tools
         cover = img["src"] if img else v["poster"]
         items.append(dict(name=name, price=p.get_text(strip=True), blurb=b.get_text(strip=True) if b else "", href=a["href"], cover="/store/" + cover))
     if items: secs.append((sec["id"], items))
@@ -32,7 +32,7 @@ def card(d, feat=False):
     return (f'<div class="pc{" pc-f" if feat else ""} rv">'
       f'<span class="pc-cv"><img src="{E(d["cover"])}" alt="{E(d["name"])} cover" loading="lazy" decoding="async"></span>'
       f'<span class="pc-b"><strong><a class="pc-a" href="/store/p/{d["slug"]}/">{E(d["name"])}</a></strong><span class="pc-d">{E(d["blurb"])}</span>'
-      f'<span class="pc-r"><span class="pc-p">{E(d["price"])}</span><a class="pc-c" href="{E(d["href"])}" target="_blank" rel="noopener" aria-label="{"Get" if d["price"]=="Free" else "Buy"} {E(d["name"])} on Gumroad (opens in a new tab)">{"Get it free" if d["price"]=="Free" else "Buy"} <i>→</i></a></span></span></div>')
+      f'<span class="pc-r"><span class="pc-p">{E(d["price"])}</span><a class="pc-c" href="{E(d["href"])}" target="_blank" rel="noopener" aria-label="{"Get" if d["price"]=="Free" else "Buy"} {E(d["name"])} {"on Gumroad" if "gumroad.com" in d["href"] else "(free web app)"} (opens in a new tab)">{"Get it free" if d["price"]=="Free" else "Buy"} <i>→</i></a></span></span></div>')
 HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{t}</title>
 <meta name="description" content="{desc}">
@@ -148,7 +148,7 @@ for sid, items in secs:
     feat = sid == "featured"
     body.append(f'<section class="s" id="{sid}"><div class="sh"><h2>{E(LABEL[sid])}</h2><span>{len(items)} item{"s"*(len(items)!=1)}</span></div><div class="{"gf" if feat else "g"}">' + "".join(card(d, feat) for d in items) + '</div></section>')
 body.append('<div class="trust"><div><b>Secure checkout</b><span>Payments handled by Gumroad.</span></div><div><b>Instant delivery</b><span>Download right after purchase.</span></div><div><b>Yours to keep</b><span>One-time price, no subscription.</span></div></div>')
-body.append('</div></main>' + js('\n<script src="/assets/signup.js?v=20261018a11" defer></script>'))
+body.append('</div></main>' + js('\n<script src="/assets/signup.js?v=20261026au" defer></script>'))
 out = f"{R}/store"
 open(f"{out}/index.html", "w", encoding="utf8").write(sn.apply("".join(body)))
 pw = next(d for _, i in secs for d in i if d["name"] == "Pantry Week")
@@ -177,7 +177,7 @@ def detail(d, sec):
      f'<div class="dt"><div class="dt-m rv"><img src="{E(d["cover"])}" alt="{E(d["name"])}"></div><div class="rv">',
      f'<div class="crumb"><a href="/store/">Store</a> / {E(LABEL[sec])}</div><span class="eyb"><b></b>{E(LABEL[sec])}</span>',
      f'<h1>{E(d["name"])}</h1><p class="lead">{E(d["blurb"])}</p><div class="price">{E(d["price"])}</div>',
-     f'<a class="btn btn-p buy" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it free" if d["price"]=="Free" else "Buy on Gumroad"} →</a><p class="note">Secure checkout via Gumroad · instant download</p>',
+     f'<a class="btn btn-p buy" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it free" if d["price"]=="Free" else "Buy on Gumroad"} →</a><p class="note">{"Secure checkout via Gumroad · instant download" if "gumroad.com" in d["href"] else "Free web app · runs in your browser, no sign-up"}</p>',
      '</div></div>' + (f'<section class="s"><div class="sh"><h2>More from {E(LABEL[sec])}</h2></div><div class="g">' + "".join(card(x) for x in more) + '</div></section>' if more else '') + '<div style="height:60px"></div></main>',
      f'<div class="sticky-buy"><div><strong>{E(d["name"])}</strong><div style="color:var(--mu);font-size:14px">{E(d["price"])}</div></div><a class="btn btn-p" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it" if d["price"]=="Free" else "Buy now"}</a></div>', js()])
 import shutil; shutil.rmtree(f"{out}/p", ignore_errors=True)

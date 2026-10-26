@@ -307,6 +307,24 @@ export async function onRequest(context) {
     return json({ keys: await listAllKeys(kv) });
   }
 
+  if (head === "presence" && request.method === "GET") {
+    const now = Date.now(), sessions = [];
+    let cursor;
+    do {
+      const r = await kv.list({ prefix: "presence:", cursor, limit: 1000 });
+      for (const k of r.keys) {
+        const m = k.metadata || {};
+        if (!m.a || now - (m.w || 0) > 180000) continue;
+        sessions.push({ id: k.name.slice(9, 17), appId: m.a, path: m.p || "/", lastSeen: m.w, agoS: Math.round((now - m.w) / 1000), ua: m.u || "" });
+      }
+      cursor = r.list_complete ? null : r.cursor;
+    } while (cursor);
+    const apps = {};
+    for (const s of sessions) (apps[s.appId] = apps[s.appId] || []).push(s);
+    const grouped = Object.keys(apps).map((a) => ({ appId: a, count: apps[a].length, sessions: apps[a].sort((x, y) => x.agoS - y.agoS) })).sort((x, y) => y.count - x.count);
+    return json({ online: sessions.length, apps: grouped, generatedAt: now, windowS: 180 });
+  }
+
   if (head === "health" && request.method === "GET") {
     const H = await import("../../_lib/health.js");
     const { utcDay } = await import("../../_lib/creator.js");

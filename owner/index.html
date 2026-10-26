@@ -55,6 +55,7 @@
     <div id="maker-list" class="list"></div>
     <h2 style="margin-top:24px">Give listings to a creator</h2>
     <p class="muted small">For listings you posted for a maker. They sign in at /community/dashboard/ with “Forgot password?” using this email; no email is sent until they ask for a code.</p>
+    <p class="muted small">Send the maker this reset link: <a href="https://digitalundergroundstore.com/login/?forgot=1">digitalundergroundstore.com/login/?forgot=1</a> (they enter the same email there). If you know their email, send <code>https://digitalundergroundstore.com/login/?forgot=1&amp;email=THEIR_EMAIL</code> (URL-encode it, e.g. <code>name%40example.com</code>) and the reset form opens with it prefilled.</p>
     <form id="assign-form" class="list" style="display:grid;gap:8px;max-width:560px">
       <label for="as-email">Creator email</label><input id="as-email" type="email" required autocomplete="off">
       <label for="as-ids">Listing ids (comma or space separated)</label><textarea id="as-ids" rows="3" required></textarea>
@@ -163,6 +164,7 @@
         <button type="button" role="tab" id="an-tab-store" data-an="store" aria-selected="true">Main store</button>
         <button type="button" role="tab" id="an-tab-market" data-an="market" aria-selected="false">Marketplace</button>
         <button type="button" role="tab" id="an-tab-health" data-an="health" aria-selected="false">Health</button>
+        <button type="button" role="tab" id="an-tab-live" data-an="live" aria-selected="false">Live</button>
       </div>
     </div>
     <p class="muted an-sub" id="an-sub">Last 30 days</p>
@@ -211,7 +213,7 @@
     </div>
   </section>
 </div>
-<script src="/owner/owner.js?v=11"></script>
+<script src="/owner/owner.js?v=12"></script>
 <script src="/owner/crm.js?v=3"></script>
 </body>
 </html>

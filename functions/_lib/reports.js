@@ -6,7 +6,7 @@
  * or after a single "Spam or scam" report. Nothing is ever deleted automatically.
  * KV listings move to status "flagged"; seeded (static) listings are hidden via this map.
  */
-import { kvGetListing, ownerAlertEmail, saveListing, sendCommunityEmail } from "./community.js";
+import { kvGetListing, ownerAlertEmail, ownerNotifyEmail, saveListing, sendCommunityEmail } from "./community.js";
 
 // Status changes go through saveListing (not setListingStatus) so a restore never auto-approves a pending video.
 async function setStatus(kv, row, status) { row.status = status; row.updatedAt = Date.now(); await saveListing(kv, row); }
@@ -99,7 +99,7 @@ export function ownerReportView(e) {
 }
 
 async function notifyFlagged(env, e) {
-  const to = env?.COMMUNITY_NOTIFY_EMAIL || "digitalunderground.store@proton.me";
+  const to = ownerNotifyEmail(env);
   const page = `https://digitalundergroundstore.com/community/p/?id=${encodeURIComponent(e.id)}`;
   const text = [
     "Open your owner dashboard: https://digitalundergroundstore.com/owner/", "",

@@ -35,7 +35,7 @@ export const SEED = {
   "kerzy-labs": {
     slug: "kerzy-labs", name: "Kerzy Labs",
     bio: "Neon arcade games you play right in your browser. No download, no sign-up.",
-    logo: "/makers/media/kerzy-labs-logo.webp", banner: "/makers/media/kerzy-labs-banner.webp",
+    logo: "/makers/media/kerzy-labs-logo-v2.webp", banner: "/makers/media/kerzy-labs-banner-v2.webp",
     website: "https://kerzylabs.pages.dev/", socials: {},
   },
 };

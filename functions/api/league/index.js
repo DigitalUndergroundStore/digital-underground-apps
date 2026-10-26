@@ -58,7 +58,7 @@ export async function onRequestPost({ request, env }) {
   const { ipKeys, ckKey } = await voterKeys(request, week, fresh ? null : cookie);
   const used = await Promise.all(ipKeys.map((k) => kv.get(k)));
   const ipKey = ipKeys[used.findIndex((v) => !v)];
-  if (!ipKey || (ckKey && (await kv.get(ckKey)))) return json({ ok: false, already: true, error: "You've already voted this week. Voting reopens Monday 12:00 AM ET." }, 409);
+  if (!ipKey || (ckKey && (await kv.get(ckKey)))) return json({ ok: false, already: true, error: "You've already voted this week. Voting reopens Friday 12:00 AM ET (after Thursday 11:59 PM)." }, 409);
   const ua = request.headers.get("user-agent") || "";
   const spike = await rateHit(env, `lg-spike:${week}:${id}`, 40, 600); // >40 votes / 10 min for one listing = spike
   const ign = !ua || BOT.test(ua) || !spike.ok ? 1 : 0;

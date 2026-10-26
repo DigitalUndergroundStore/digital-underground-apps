@@ -1,4 +1,4 @@
-/* Pantry Week v3.15.0 — interface. Runs from file:// with no build. */
+/* Pantry Week v3.16.1 — interface. Runs from file:// with no build. */
 "use strict";
 
 (function () {
@@ -496,11 +496,44 @@
     window.PW_USER_PHOTOS.remove(id).then(() => { render(); toast("Photo removed."); });
   }
 
+  /* v3.6.1: if a hosted photo fails to load, swap in the designed card so no card is ever blank. */
+  let photoSeq = 0;
+  let photoReg = {};
+  let photoCheckQueued = false;
+  function queuePhotoCheck() {
+    if (photoCheckQueued) return;
+    photoCheckQueued = true;
+    setTimeout(() => {
+      photoCheckQueued = false;
+      document.querySelectorAll("[data-pw-photo]:not([data-pw-checked])").forEach((el) => {
+        el.setAttribute("data-pw-checked", "1");
+        const img = new Image();
+        img.onerror = () => {
+          const reg = photoReg[el.getAttribute("data-pw-photo")];
+          if (!el.isConnected) return;
+          if (reg && window.PW_NOPHOTO) {
+            const tmp = document.createElement("div");
+            tmp.innerHTML = window.PW_NOPHOTO.html(reg.recipe, reg.cls, reg.variant, { add: false });
+            if (tmp.firstElementChild) { el.replaceWith(tmp.firstElementChild); return; }
+          }
+          el.classList.add("pw-photo--failed");
+        };
+        img.src = el.getAttribute("data-src");
+      });
+      if (photoSeq > 4000) { photoReg = {}; photoSeq = 0; }
+    }, 0);
+  }
+
   /* Photo if we have one, otherwise the designed cuisine card (never an empty box). */
   function photoBox(recipe, cls, variant, opts) {
     const url = photoUrl(recipe);
     const mine = !!userPhotoUrl(recipe);
-    if (url) return `<div class="${cls}" style="background-image:url('${url.replace(/'/g, "%27")}')" role="img" aria-label="${mine ? "Your photo" : ""}">${mine && variant === "hero" ? '<span class="user-photo-badge">Your photo</span>' : ""}</div>`;
+    if (url) {
+      const key = "p" + (++photoSeq);
+      photoReg[key] = { recipe: recipe, cls: cls, variant: variant || "card", opts: opts };
+      queuePhotoCheck();
+      return `<div class="${cls} pw-photo" data-pw-photo="${key}" data-src="${esc(url)}" style="background-image:url('${url.replace(/'/g, "%27")}'),var(--pw-photo-fallback)" role="img" aria-label="${mine ? "Your photo" : ""}">${mine && variant === "hero" ? '<span class="user-photo-badge">Your photo</span>' : ""}</div>`;
+    }
     if (window.PW_NOPHOTO) return window.PW_NOPHOTO.html(recipe, cls, variant || "card", { add: !(opts && opts.noAdd) && recipe && !!recipe.id });
     return `<div class="${cls} ${cls}--empty" role="img" aria-label=""></div>`;
   }
@@ -1141,6 +1174,7 @@
       <div class="toolbar">
         <button type="button" class="primary" data-action="cook" data-id="${esc(recipe.id)}">Cook</button>
         <button type="button" data-action="tonight" data-id="${esc(recipe.id)}">Add to tonight</button>
+        ${window.PW_MEAL_SHARE ? `<button type="button" data-action="share-meal" data-id="${esc(recipe.id)}">📷 Share my meal photo</button>` : ""}
         <button type="button" data-action="choose-slot" data-id="${esc(recipe.id)}">Choose a slot</button>
         <button type="button" class="danger" data-action="delete" data-id="${esc(recipe.id)}">Remove</button>
       </div>
@@ -1973,7 +2007,8 @@
       <div class="cook-bar">
         <button type="button" data-action="cook-prev"${cook.step === 0 ? " disabled" : ""}>Back</button>
         <button type="button" class="primary" data-action="cook-next">${last ? "Done" : "Next"}</button>
-      </div>`;
+      </div>
+      ${last && window.PW_MEAL_SHARE ? `<div class="cook-share"><button type="button" data-action="share-meal" data-id="${esc(recipe.id)}">📷 Made it? Share a photo of your meal</button></div>` : ""}`;
     $("cook").hidden = false;
     setInert();
     requestWakeLock();
@@ -2551,6 +2586,7 @@
     else if (action === "open-credits") go("credits");
     else if (action === "add-photo") { event.preventDefault(); event.stopPropagation(); pickPhoto(id); }
     else if (action === "remove-photo") removePhoto(id);
+    else if (action === "share-meal") { event.preventDefault(); if (window.PW_MEAL_SHARE) window.PW_MEAL_SHARE.open(PW.recipeById(state, id)); }
     else if (action === "nav-back") navBack();
     else if (action === "open-plan-recipe") {
       const value = state.week[day][slot];

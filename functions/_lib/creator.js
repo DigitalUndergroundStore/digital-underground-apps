@@ -14,6 +14,7 @@
  * verified in Resend) to enable POST /api/community/creator-login.
  */
 import {
+  ownerNotifyEmail,
   hmacHex,
   kvGetListing,
   kvPutListing,
@@ -332,7 +333,7 @@ export function takeSupportBudget(acct) {
 }
 
 export async function sendSupportEmail(env, { acct, replyTo, subject, message, listing }) {
-  const to = env?.COMMUNITY_NOTIFY_EMAIL || "digitalunderground.store@proton.me";
+  const to = ownerNotifyEmail(env);
   const lines = [
     "Creator support message (Developer Marketplace dashboard)",
     `Creator account: ${acct.id}`,
@@ -556,6 +557,7 @@ export async function assignListingsToEmail(kv, email, listingIds) {
     if (!row) { skipped.push({ id, reason: "not found" }); continue; }
     if (row.creatorId && row.creatorId !== acct.id) { skipped.push({ id, reason: "owned by another account" }); continue; }
     row.creatorId = acct.id;
+    row.email = e;
     await kv.put(`community:item:${id}`, JSON.stringify(row));
     if (!(acct.listingIds || []).includes(id)) acct.listingIds = [...(acct.listingIds || []), id].slice(-50);
     done.push(id);

@@ -68,6 +68,7 @@
         card("crm", "CRM pipeline", "→", "Leads, makers, press, follow-ups", "") +
         card("analytics", "Stats", (w.views || 0), "marketplace views, " + (w.clicks || 0) + " clicks · 7 days", "") +
         card("backups", "Backups", shortDate(backup.lastSnapshot) || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
+        '<button type="button" class="oh-card" data-go="analytics" data-an-go="live" id="home-live"><div class="oh-label">Online now</div><div class="oh-value">…</div><div class="oh-meta">DU + Kerzy Labs</div></button>' +
         '<button type="button" class="oh-card" data-go="analytics" data-an-go="health" id="home-health"><div class="oh-label">Health</div><div class="oh-value">…</div><div class="oh-meta">Checking site…</div></button>' +
         card("apikeys", "API keys", "→", "Creator API access", "") +
         card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");
@@ -86,6 +87,12 @@
   }
 
   function homeHealth() {
+    api("presence").then(function (out) {
+      var el = $("home-live"); if (!el || !out.r.ok) return;
+      var dn = 0, kn = 0; (out.d.apps || []).forEach(function (a) { if (a.appId.indexOf("kz-") === 0) kn += a.count; else dn += a.count; });
+      el.querySelector(".oh-value").textContent = out.d.online;
+      el.querySelector(".oh-meta").textContent = "DU " + dn + " · Kerzy Labs " + kn;
+    });
     api("health").then(function (out) {
       var el = $("home-health"); if (!el || !out.r.ok) return;
       var v = healthVerdict(out.d);
@@ -351,7 +358,7 @@
   }
 
   var AN_KEY = "du_owner_stats_view";
-  var anView = (function () { try { return (function (v) { return v === "market" || v === "health" ? v : "store"; })(localStorage.getItem(AN_KEY)); } catch (_) { return "store"; } })();
+  var anView = (function () { try { return (function (v) { return v === "market" || v === "health" || v === "live" ? v : "store"; })(localStorage.getItem(AN_KEY)); } catch (_) { return "store"; } })();
   var anSeq = 0;
   function fmt(n) { n = n || 0; return n >= 10000 ? (Math.round(n / 100) / 10) + "k" : String(n); }
   function sum(arr, k, from) { var t = 0; for (var i = from || 0; i < arr.length; i++) t += arr[i][k] || 0; return t; }
@@ -408,13 +415,47 @@
   function setAnTabs() {
     document.querySelectorAll("[data-an]").forEach(function (b) { b.setAttribute("aria-selected", b.getAttribute("data-an") === anView ? "true" : "false"); });
   }
+
+  var liveTimer = null, liveOpen = {};
+  var KZ_NAMES = { hub: "Kerzy Labs hub", "stack-attack-arena": "Stack Attack Arena", "quad-pong": "Quad Pong", cyberarena: "CyberArena 3D", "rival-lanes": "Rival Lanes", "neon-bastion": "Rival Lanes" };
+  function appLabel(id) {
+    if (id.indexOf("kz-") === 0) { var k = id.slice(3); return KZ_NAMES[k] || k; }
+    return id === "home" ? "Homepage" : id.replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+  }
+  function liveSection(title, apps, empty) {
+    var n = 0; apps.forEach(function (a) { n += a.count; });
+    return '<div class="an-card"><h2>' + esc(title) + ' <span class="pill">' + n + ' online</span></h2>' + (apps.length ? apps.map(function (a) {
+      var open = liveOpen[a.appId];
+      return '<div class="lrow" data-live-app="' + esc(a.appId) + '" style="cursor:pointer;display:block"><div style="display:flex;justify-content:space-between"><strong>' + (open ? "▾ " : "▸ ") + esc(appLabel(a.appId)) + '</strong><span><b>' + a.count + '</b> online</span></div>' +
+        (open ? a.sessions.map(function (s) { return '<div class="muted small" style="padding-left:16px">#' + esc(s.id) + " · " + esc(s.path) + " · " + s.agoS + "s ago" + (s.ua ? " · ua " + esc(s.ua) : "") + "</div>"; }).join("") : "") + "</div>";
+    }).join("") : '<p class="muted small">' + empty + "</p>") + "</div>";
+  }
+  function loadLive(seq) {
+    api("presence").then(function (out) {
+      if (seq !== anSeq) return;
+      if (!out.r.ok) { if (out.r.status === 401) go("login"); return; }
+      var d = out.d, apps = d.apps || [];
+      var du = apps.filter(function (a) { return a.appId.indexOf("kz-") !== 0; }), kz = apps.filter(function (a) { return a.appId.indexOf("kz-") === 0; });
+      var dn = 0, kn = 0; du.forEach(function (a) { dn += a.count; }); kz.forEach(function (a) { kn += a.count; });
+      $("an-sub").textContent = "Online now · updated " + new Date(d.generatedAt).toLocaleTimeString() + " · refreshes every 20s";
+      $("an-kpis").innerHTML = kpi("Online now", fmt(d.online), '<span class="d">active in last 3 min</span>') + kpi("Digital Underground", fmt(dn), '<span class="d">' + du.length + " apps</span>") + kpi("Kerzy Labs", fmt(kn), '<span class="d">' + kz.length + " games</span>");
+      $("an-lists").innerHTML = liveSection("Digital Underground", du, "Nobody on Digital Underground right now.") + liveSection("Kerzy Labs", kz, "Nobody playing Kerzy Labs games right now.");
+      $("an-note").textContent = "Anonymous random session ids (no names, emails, IPs or cookies). A session counts as online for 3 minutes after its last heartbeat; tap an app to see sessions.";
+    });
+  }
+  document.addEventListener("click", function (e) {
+    var r = e.target.closest && e.target.closest("[data-live-app]");
+    if (!r) return; var id = r.getAttribute("data-live-app"); liveOpen[id] = !liveOpen[id]; loadLive(anSeq);
+  });
   function loadAnalytics() {
     setAnTabs();
     var seq = ++anSeq;
     $("an-kpis").innerHTML = '<div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div>' + (anView === "store" ? '<div class="kpi sk"></div>' : "");
     $("an-lists").innerHTML = ""; $("an-note").textContent = "";
-    $("an-chart").parentNode.hidden = anView === "health";
+    $("an-chart").parentNode.hidden = anView === "health" || anView === "live";
+    if (liveTimer) { clearInterval(liveTimer); liveTimer = null; }
     if (anView === "health") { loadHealth(seq); return; }
+    if (anView === "live") { loadLive(seq); liveTimer = setInterval(function () { if (anView !== "live" || $("view-analytics").offsetParent === null) { clearInterval(liveTimer); liveTimer = null; return; } if (document.visibilityState === "visible") loadLive(anSeq); }, 20000); return; }
     if (anView === "store") {
       api("storestats").then(function (out) {
         if (seq !== anSeq) return;

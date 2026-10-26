@@ -2,7 +2,7 @@
    The tool itself is only in app.bin (AES-GCM). Without the code that file is unreadable. */
 (function () {
   "use strict";
-  var CFG = { salt: "Ty1H5kMWo1b0pfQScZKZSQ==", iter: 250000, build: "202610202325-pw3150" };
+  var CFG = { salt: "Ty1H5kMWo1b0pfQScZKZSQ==", iter: 250000, build: "202610251635-pw3165beta" };
   var LS = "du_pantry_week_key_v1";
   var me = document.currentScript, PAGE = me.getAttribute("data-page"), ROOT = me.getAttribute("data-root") || "";
   var $ = function (id) { return document.getElementById(id); };
@@ -44,7 +44,7 @@
   }
   var binP = null;
   function getBin() {
-    if (!binP) binP = fetch(ROOT + "app.bin?v=" + CFG.build).then(function (r) { if (!r.ok) throw new Error("net " + r.status); return r.arrayBuffer(); }).then(function (b) { return new Uint8Array(b); });
+    if (!binP) binP = fetch(ROOT + "app.bin?v=" + CFG.build, { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error("net " + r.status); return r.arrayBuffer(); }).then(function (b) { return new Uint8Array(b); });
     return binP;
   }
   function open(raw) {

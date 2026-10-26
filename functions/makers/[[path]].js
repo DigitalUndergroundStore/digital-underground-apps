@@ -7,6 +7,15 @@ const ORIGIN = "https://digitalundergroundstore.com";
 const GM = /[^\s@<>"]+@[^\s@<>"]+\.[a-z]{2,}/gi; // never print any email address
 const e = (s) => String(s == null ? "" : s).replace(GM, "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const safeHref = (u) => (typeof u === "string" && (/^https:\/\//i.test(u) || /^\/(?!\/)/.test(u)) ? e(u) : "#");
+// Per-maker link-preview overrides (og/twitter title, description, 1200x630 image).
+const MAKER_OG = {
+  "kerzy-labs": {
+    title: "Kerzy Labs — Indie Browser Games | Play Free",
+    desc: "Rival Lanes, CyberArena 3D, Stack Attack Arena & Quad Pong. Fast, fun games you play right in your browser. No downloads.",
+    image: "https://digitalundergroundstore.com/assets/og/kerzy-labs-og.jpg?v=20261023b",
+    imageAlt: "Kerzy Labs — indie browser games: Rival Lanes, CyberArena 3D, Stack Attack Arena, Quad Pong",
+  },
+};
 const abs = (u) => (u && u.startsWith("/") ? ORIGIN + u : u);
 
 async function allListings(context, kv) {
@@ -34,7 +43,7 @@ export function cardHTML(r, i) {
   const badges = lbl ? `<span class="badges">${badge}${lbl}</span>` : badge;
   const img = r.imageUrl;
   const med = img ? `<div class="media"><img src="${safeHref(img)}" alt="${n} cover image" width="640" height="360" loading="${i < 2 ? "eager" : "lazy"}" decoding="async"></div>`
-    : `<div class="media grad" style="background:#4f46e5"><span aria-hidden="true">${e((r.name || "?").slice(0, 2))}</span></div>`;
+    : `<div class="media"><img src="/assets/covers/default-cover.svg" alt="" width="640" height="360" loading="lazy" decoding="async"></div>`;
   const maker = r.makerSlug ? `<a href="/makers/${e(r.makerSlug)}/">${e(r.makerName)}</a>` : e(r.makerName);
   const x = r.xHandle ? ` · <a href="https://x.com/${e(r.xHandle)}" target="_blank" rel="noopener" aria-label="@${e(r.xHandle)} on X (opens in a new tab)">@${e(r.xHandle)}</a>` : "";
   const contact = r.contactable ? `<a class="pill pill-o" href="${href}#contact" aria-label="Contact the developer of ${n}">Contact</a>` : "";
@@ -58,6 +67,8 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 <meta property="og:url" content="${e(canonical)}">
 <meta property="og:site_name" content="Digital Underground">
 <meta property="og:image" content="${e(image)}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="${e(imageAlt)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${e(title)}">
@@ -77,7 +88,7 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=9" defer></script><!--/du-site-nav-->
+<!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=10" defer></script><!--/du-site-nav-->
 <main id="main" tabindex="-1">
 ${body}
 </main>
@@ -99,7 +110,8 @@ function makerPage(p, rows) {
   p = withDULogo(p);
   const canonical = `${ORIGIN}/makers/${p.slug}/`;
   const links = [];
-  if (p.website) links.push(`<a class="pill pill-v" href="${safeHref(p.website)}" target="_blank" rel="noopener me">Website: ${e(p.website.replace(/^https:\/\//, "").replace(/\/$/, ""))}<span class="sr-only"> (opens in a new tab)</span></a>`);
+  const siteLabel = (u) => { try { return new URL(/^https?:\/\//i.test(u) ? u : "https://" + u).hostname.replace(/^www\./, "") || "Website"; } catch { return "Website"; } };
+  if (p.website) links.push(`<a class="pill pill-v" href="${safeHref(p.website)}" target="_blank" rel="noopener me">${e(siteLabel(p.website))}<span class="sr-only"> (opens in a new tab)</span></a>`);
   for (const [k, u] of Object.entries(p.socials || {})) links.push(`<a class="pill pill-o" href="${safeHref(u)}" target="_blank" rel="noopener me">${e(socialLabel(k))}<span class="sr-only"> (opens in a new tab)</span></a>`);
   const desc = (p.bio || `${p.name} on the Developer Marketplace.`).slice(0, 155);
   const body = `<div class="mx z mk-hero">
@@ -118,7 +130,8 @@ function makerPage(p, rows) {
   const jsonld = { "@context": "https://schema.org", "@type": "ProfilePage", url: canonical, name: `${p.name} | Creators`,
     mainEntity: { "@type": "Organization", name: p.name, url: p.website || canonical, ...(p.logo ? { logo: abs(p.logo) } : {}), ...(p.bio ? { description: p.bio } : {}), sameAs: [p.website, ...Object.values(p.socials || {})].filter(Boolean) },
     hasPart: { "@type": "ItemList", numberOfItems: rows.length, itemListElement: rows.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.name, url: `${ORIGIN}/community/p/?id=${encodeURIComponent(r.id)}` })) } };
-  return shell({ title: `${p.name}: apps and tools by this creator | Digital Underground`, desc, canonical, image: abs(p.banner || p.logo || "/community/og-dm-v3.jpg"), imageAlt: `${p.name} banner`, jsonld, body, current: "maker" });
+  const ov = MAKER_OG[p.slug] || {};
+  return shell({ title: ov.title || `${p.name}: apps and tools by this creator | Digital Underground`, desc: ov.desc || desc, canonical, image: ov.image || abs(p.banner || p.logo || "/community/og-dm-v3.jpg"), imageAlt: ov.imageAlt || `${p.name} banner`, jsonld, body, current: "maker" });
 }
 
 function directoryPage(makers) {

@@ -335,6 +335,11 @@ export function ownerAlertEmail(env) {
   return env?.COMMUNITY_OWNER_ALERT_EMAIL || "";
 }
 
+/** Recipient for owner notify emails (listings, creator support, reports). */
+export function ownerNotifyEmail(env) {
+  return env?.COMMUNITY_OWNER_ALERT_EMAIL || env?.COMMUNITY_NOTIFY_EMAIL || "digitalunderground.store@proton.me";
+}
+
 /** Owner seed listings (Kerzy Labs) have no stored maker email; their contact goes to the owner alert address. */
 export function isOwnerSeed(row) {
   return !!row && typeof row.id === "string" && row.id.startsWith("cm_kerzy_");
@@ -669,7 +674,7 @@ export async function sendCommunityEmail(env, { to, subject, text, replyTo }) {
 }
 
 export async function notifySubmission(env, listing, request) {
-  const to = env?.COMMUNITY_NOTIFY_EMAIL || "digitalunderground.store@proton.me";
+  const to = ownerNotifyEmail(env);
   const status = listing.status || "pending";
   const reasons = Array.isArray(listing.screening?.reasons) ? listing.screening.reasons : [];
   const approveLink = await signEmailModerationLink(env, request, listing.id, "approve");

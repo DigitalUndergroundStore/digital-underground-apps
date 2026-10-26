@@ -117,7 +117,8 @@ def v3card(r):
             f'<h3 class="card-title"><a href="{href}">{n}</a></h3><p class="card-desc">{e(r.get("pitchShort"))}</p><div class="card-footer">'
             f'<span class="card-price{" free" if pr.lower().startswith("free") else ""}">{pr}</span><div class="card-actions">'
             + (f'<a href="{href}#contact" class="btn btn-ghost">Contact</a>' if r.get("contactable") else "")
-            + f'<a href="{e(r.get("visitUrl") or r.get("projectUrl"))}" data-out="{rid}" class="btn btn-primary" target="_blank" rel="noopener">Visit</a></div></div></div></article>')
+            + f'<a href="{e(r.get("visitUrl") or r.get("projectUrl"))}" data-out="{rid}" class="btn btn-primary" target="_blank" rel="noopener">Visit</a>'
+            f'<a href="/league/?vote={rid}" class="btn btn-vote">Cast Maker League Vote</a></div></div></div></article>')
 tpl = (R / "src/home-v3/index.template.html").read_text()
 # JSON-LD (homepage). Listings are third-party products: no publisher/author is attached to them.
 SITE = "https://digitalundergroundstore.com/"

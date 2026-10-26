@@ -1,11 +1,14 @@
 /**
- * Maker League: free weekly vote. Weeks start Monday 00:00 America/New_York and are computed
- * from the date (no cron). Week id = that Monday as YYYY-MM-DD.
+ * Maker League: free weekly vote. Weeks run Friday 00:00 to Thursday 11:59 PM America/Toronto
+ * (i.e. they end at the Friday 00:00 instant) and are computed from the date (no cron).
+ * Week id = the Friday the week starts, as YYYY-MM-DD. Transition: the launch week keeps id
+ * 2026-10-19 (its votes are already keyed that way) and runs until Fri 2026-10-30 00:00 (Thu Oct 29 11:59 PM).
  * KV keys (COMMUNITY_KV): lg:v:<week>:<ipHash>:<slot 0-2> -> listingId (up to IP_VOTES per hashed IP) (metadata {l, ign}),
  * lg:c:<week>:<cookieHash> -> "1", lg:w:<week> -> cached final winner of a finished week.
  */
-const TZ = "America/New_York";
+const TZ = "America/Toronto";
 const DAY = 86400000;
+const LAUNCH_WEEK = "2026-10-19", FIRST_FRI = "2026-10-30";
 
 function etParts(t) {
   const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit", weekday: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23" })
@@ -13,20 +16,19 @@ function etParts(t) {
   return p;
 }
 const ymd = (p) => `${p.year}-${p.month}-${p.day}`;
-const DOW = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 };
+const DOW = { Fri: 0, Sat: 1, Sun: 2, Mon: 3, Tue: 4, Wed: 5, Thu: 6 };
+const addDays = (d, n) => new Date(Date.parse(d + "T12:00:00Z") + n * DAY).toISOString().slice(0, 10);
 
-/** Week id (ET Monday date) for a timestamp. */
+/** Week id (Toronto Friday start date) for a timestamp. */
 export function weekOf(t = Date.now()) {
   const p = etParts(t);
-  // Walk back by whole days to Monday in ET (noon anchor avoids DST edge issues).
-  const noon = Date.UTC(+p.year, +p.month - 1, +p.day, 12);
-  const mon = new Date(noon - DOW[p.weekday] * DAY);
-  return mon.toISOString().slice(0, 10);
+  const fri = addDays(ymd(p), -DOW[p.weekday]);
+  return fri < FIRST_FRI && fri >= "2026-10-16" && ymd(p) >= LAUNCH_WEEK ? LAUNCH_WEEK : fri;
 }
-export function prevWeek(week) { return new Date(Date.parse(week + "T12:00:00Z") - 7 * DAY).toISOString().slice(0, 10); }
-/** Exact UTC instant of the next Monday 00:00 ET after this week. */
+export function prevWeek(week) { return week === FIRST_FRI ? LAUNCH_WEEK : addDays(week, -7); }
+/** Exact UTC instant the week ends: the next Friday 00:00 Toronto (= Thursday 11:59:59 PM). */
 export function weekEndsAt(week) {
-  const next = new Date(Date.parse(week + "T12:00:00Z") + 7 * DAY).toISOString().slice(0, 10);
+  const next = week === LAUNCH_WEEK ? FIRST_FRI : addDays(week, 7);
   for (const off of [4, 5]) { // EDT = UTC-4, EST = UTC-5
     const t = Date.parse(next + "T00:00:00Z") + off * 3600000;
     const p = etParts(t);

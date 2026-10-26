@@ -27,7 +27,7 @@ Optional static seed: `community/listings.json` (approved listings only; merged 
 5. **Environment variables** (encrypted):
    - `COMMUNITY_ADMIN_TOKEN` — long random string for moderation API and signed email links
    - Optional: `TURNSTILE_SECRET_KEY` + set `siteKey` in `community/turnstile-config.json` (never commit the secret)
-   - Optional: `RESEND_API_KEY`, `COMMUNITY_NOTIFY_FROM`, `COMMUNITY_NOTIFY_EMAIL` (defaults to digitalunderground.store@proton.me)
+   - Optional: `RESEND_API_KEY`, `COMMUNITY_NOTIFY_FROM`, `COMMUNITY_OWNER_ALERT_EMAIL` (preferred) or `COMMUNITY_NOTIFY_EMAIL` — owner alert recipient (falls back to digitalunderground.store@proton.me only if both unset)
    - Optional: `COMMUNITY_MAILCHANNELS=1` and `COMMUNITY_MAIL_FROM` (MailChannels; requires DNS on your domain)
    - Optional: `COMMUNITY_SITE_URL` (origin for email moderation links)
 

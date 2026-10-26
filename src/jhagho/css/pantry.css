@@ -1799,3 +1799,24 @@ html[data-theme="dark"] .pw-backdrop__img { opacity: 0.3; }
 @media (min-width: 900px) { .credit-list { grid-template-columns: 1fr 1fr; gap: 6px; } }
 @media (max-width: 600px) { .find-more__hint { display: none; } }
 .credits a { color: var(--accent); font-weight: 600; }
+
+/* v3.6.1 photo fallback: gradient + dish mark under every photo; JS swaps in the designed card on error. */
+.pw-photo { --pw-photo-fallback: linear-gradient(135deg, #f3e3c8, #e7c9a0); background-color: #efdcbc; background-size: cover; background-position: center; }
+.pw-photo--failed { background-image: var(--pw-photo-fallback) !important; }
+.pw-photo--failed::after { content: "\1F37D\FE0F"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; opacity: .75; }
+
+/* v3.16.0 Share a photo of a meal I made (uploads, with consent) */
+.meal-share__note { background: var(--bg-3); border-radius: 12px; padding: 10px 12px; }
+.meal-share__pick { display: grid; gap: 8px; margin: 12px 0; }
+.meal-share__preview { width: 100%; max-height: 300px; object-fit: cover; border-radius: 12px; }
+.meal-share .field { display: grid; gap: 4px; margin: 8px 0; font-weight: 700; }
+.meal-share .field input { min-height: 44px; font: inherit; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line, #ccc); background: var(--bg); color: var(--ink); }
+.meal-share__consent { display: flex; gap: 10px; align-items: flex-start; margin: 12px 0; font-size: .95rem; line-height: 1.4; }
+.meal-share__consent input { width: 22px; height: 22px; flex: none; margin-top: 2px; }
+.meal-share__msg { font-weight: 700; }
+.meal-share__list { list-style: none; padding: 0; display: grid; gap: 8px; }
+.meal-share__list li { display: flex; gap: 10px; align-items: center; }
+.meal-share__list img { width: 56px; height: 56px; object-fit: cover; border-radius: 8px; }
+.meal-share__fine { font-size: .85rem; opacity: .8; }
+.cook-share { display: flex; justify-content: center; padding: 12px 16px; }
+#mealShare { z-index: 60; }

@@ -62,6 +62,11 @@ Allow: /list-your-indie-app-free/
 Allow: /privacy/
 Allow: /terms/
 Allow: /free-book/
+Allow: /league/
+Allow: /blog/
+Allow: /league/
+Allow: /support/
+Allow: /support/
 Allow: /assets/og/
 Allow: /llms.txt
 Allow: /openapi.json
@@ -81,6 +86,8 @@ Allow: /get/
 Allow: /community/p/
 Allow: /makers/
 Allow: /blog/
+Allow: /league/
+Allow: /support/
 Allow: /weekly-meal-planner-canada/
 Allow: /ai-prompt-packs-for-creators/
 Allow: /share-live-location-link/

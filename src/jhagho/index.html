@@ -22,6 +22,75 @@
   <!--SF_ASSET:js/icons.js-->
 </head>
 <body>
+<div id="pw-info">
+<style>
+#pw-info-btn{position:fixed;z-index:9998;width:42px;height:42px;border-radius:50%;border:2px solid rgba(255,255,255,.85);background:#43b083;color:#fff;font:700 21px/1 Georgia,"Times New Roman",serif;font-style:normal;text-transform:none;box-shadow:0 3px 10px rgba(28,25,23,.22),0 1px 3px rgba(28,25,23,.18);cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;display:flex;align-items:center;justify-content:center;padding:0;right:14px;top:58%}
+#pw-info-btn:active{cursor:grabbing}
+#pw-info-ov{position:fixed;inset:0;z-index:9999;background:rgba(28,25,23,.38);display:none;align-items:flex-end;justify-content:center;padding:16px}
+#pw-info-ov.open{display:flex}
+@media(min-width:600px){#pw-info-ov{align-items:center}}
+#pw-info-card{position:relative;width:100%;max-width:440px;max-height:88vh;overflow:auto;background:var(--bg,#f6f3ee);color:var(--ink,#1c1917);border-radius:22px;box-shadow:0 18px 50px rgba(28,25,23,.28);padding:22px 20px 18px;font:15px/1.5 "DM Sans",system-ui,sans-serif}
+#pw-info-card .t{display:inline-block;background:var(--accent,#2d9f6f);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px}
+#pw-info-card h2{font:600 26px/1.15 Fraunces,Georgia,serif;margin:10px 0 6px}
+#pw-info-card p{margin:0 0 10px}
+#pw-info-card .box{background:var(--accent-soft,#e8f6ef);border:1px solid rgba(45,159,111,.25);border-radius:16px;padding:14px;margin:12px 0}
+#pw-info-card .box h3{margin:0 0 4px;font-size:16px}
+#pw-info-card form{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+#pw-info-card input[type=email]{flex:1;min-width:170px;padding:10px 12px;border:1px solid rgba(28,25,23,.18);border-radius:12px;font:inherit;background:#fff;color:#1c1917}
+#pw-info-card .go{background:var(--accent,#2d9f6f);color:#fff;border:0;border-radius:12px;padding:10px 16px;font:inherit;font-weight:700;cursor:pointer}
+#pw-info-card label.c{flex-basis:100%;font-size:12.5px;color:#57534e;display:flex;gap:8px;align-items:flex-start}
+#pw-info-card .msg{flex-basis:100%;font-size:13.5px;font-weight:600;color:var(--accent,#2d9f6f)}
+#pw-info-card .fb{display:block;text-align:center;border:1px solid rgba(45,159,111,.45);color:var(--accent,#2d9f6f);border-radius:12px;padding:10px;font-weight:700;text-decoration:none;margin-top:4px}
+#pw-info-card .x{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(28,25,23,.06);color:#57534e;font-size:17px;cursor:pointer}
+#pw-info-card .small{font-size:12.5px;color:#78716c;margin-top:10px}
+@media (prefers-color-scheme:dark){#pw-info-card{background:#1c1a17;color:#f5f2ed}#pw-info-card .box{background:#1a3d2e}#pw-info-card label.c,#pw-info-card .small{color:#d6d3d1}#pw-info-btn{background:#3a9d74;color:#fff}}
+</style>
+<button type="button" id="pw-info-btn" aria-label="About the Pantry Week beta" aria-haspopup="dialog">i</button>
+<div id="pw-info-ov" role="dialog" aria-modal="true" aria-labelledby="pw-info-h">
+ <div id="pw-info-card">
+  <button type="button" class="x" aria-label="Close">✕</button>
+  <span class="t">Free beta · in development</span>
+  <h2 id="pw-info-h">Thanks for testing Pantry Week 🌿</h2>
+  <p>Pantry Week is free while we build it. You're getting 1,000+ meals from around the world, weekly planning and an aisle-sorted shopping list — with new updates arriving automatically.</p>
+  <div class="box">
+   <h3>⭐ Early users stay free for life</h3>
+   <p style="margin:0">Sign up with your email now and Pantry Week stays free for you, even after the beta ends.</p>
+   <form id="pw-info-form" novalidate>
+    <input type="email" name="email" placeholder="you@example.com" autocomplete="email" aria-label="Email">
+    <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
+    <button class="go" type="submit">Claim lifetime free</button>
+    <label class="c"><input type="checkbox" name="consent"> Email me Pantry Week beta updates from Digital Underground. Unsubscribe anytime.</label>
+    <div class="msg" role="status" aria-live="polite"></div>
+   </form>
+  </div>
+  <p><b>Found a bug or want a feature?</b> Tell us — every message is read. Photos of meals you cook are very welcome too.</p>
+  <a class="fb" href="mailto:digitalunderground.store@proton.me?subject=Pantry%20Week%20beta%20feedback&amp;body=Bug%20or%20feature%20request%3A%0A%0ADevice%2Fbrowser%3A%0A%0A(Feel%20free%20to%20attach%20photos%20of%20meals%20you%20cooked!)">Report bug / request feature</a>
+  <p class="small">Tip: drag the <b>i</b> button anywhere on screen.</p>
+ </div>
+</div>
+<script>(function(){var b=document.getElementById('pw-info-btn'),ov=document.getElementById('pw-info-ov'),PK='pw_info_pos_v1',JK='pw_beta_bar_v2',SK='pw_info_seen_v1';
+function ls(k,v){try{return v===undefined?localStorage.getItem(k):localStorage.setItem(k,v)}catch(e){}}
+function clamp(x,y){var W=innerWidth,H=innerHeight,s=42;return[Math.max(6,Math.min(W-s-6,x)),Math.max(6,Math.min(H-s-76,y))]}
+function place(x,y){var c=clamp(x,y);b.style.left=c[0]+'px';b.style.top=c[1]+'px';b.style.right='auto';return c}
+var p=null;try{p=JSON.parse(ls(PK)||'null')}catch(e){}
+if(p)place(p.x*innerWidth,p.y*innerHeight);
+if(ls(SK))b.classList.add('seen');
+var d=null,moved=false;
+b.addEventListener('pointerdown',function(e){var r=b.getBoundingClientRect();d={dx:e.clientX-r.left,dy:e.clientY-r.top,sx:e.clientX,sy:e.clientY};moved=false;b.setPointerCapture(e.pointerId)});
+b.addEventListener('pointermove',function(e){if(!d)return;if(Math.abs(e.clientX-d.sx)+Math.abs(e.clientY-d.sy)>6)moved=true;if(moved)place(e.clientX-d.dx,e.clientY-d.dy)});
+b.addEventListener('pointerup',function(e){if(!d)return;d=null;if(moved){var r=b.getBoundingClientRect();ls(PK,JSON.stringify({x:r.left/innerWidth,y:r.top/innerHeight}))}else open()});
+addEventListener('resize',function(){var r=b.getBoundingClientRect();if(b.style.left)place(r.left,r.top)});
+function open(){ov.classList.add('open');b.classList.add('seen');ls(SK,'1')}
+function close(){ov.classList.remove('open');b.focus()}
+b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+ov.querySelector('.x').onclick=close;ov.addEventListener('click',function(e){if(e.target===ov)close()});
+addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('open'))close()});
+var f=document.getElementById('pw-info-form'),m=f.querySelector('.msg');
+function joined(){f.querySelector('.go').textContent='✓ Lifetime free claimed';f.querySelector('.go').disabled=true;f.email.style.display='none';f.querySelector('label.c').style.display='none'}
+if(ls(JK)==='joined')joined();
+f.onsubmit=function(e){e.preventDefault();if(!/^\S+@\S+\.\S+$/.test(f.email.value)){m.textContent='Please enter a valid email.';return}if(!f.consent.checked){m.textContent='Please tick the box so we can email you.';return}m.textContent='Saving…';
+fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:f.email.value,consent:true,website:f.website.value,source:'pantry-week-beta-lifetime-free'})}).then(function(r){return r.json()}).then(function(j){if(j.ok){m.textContent='You’re in! Pantry Week stays free for you, for life. 🎉';ls(JK,'joined');joined()}else m.textContent=j.error||'Something went wrong. Try again.'}).catch(function(){m.textContent='You seem to be offline. Try again when connected.'})};})();</script>
+</div>
   <a class="skip" href="#main">Skip to content</a>
   <div class="pw-scene" aria-hidden="true">
     <div class="pw-backdrop pw-backdrop--photo">
@@ -129,6 +198,7 @@
   <!--SF_ASSET:js/find-recipes.js-->
   <!--SF_ASSET:js/smart-chef-source.js-->
   <!--SF_ASSET:js/photo-recipe.js-->
+  <!--SF_ASSET:js/meal-share.js-->
   <!--SF_ASSET:js/app.js-->
   <script>
     (function () {

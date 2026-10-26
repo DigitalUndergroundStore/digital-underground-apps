@@ -39,7 +39,7 @@
         .then(function (x) {
           b.disabled = false;
           if (!x.ok || !x.d.ok) { m.className = "m bad"; m.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; return; }
-          m.className = "m ok"; m.innerHTML = 'You are in. <a href="' + x.d.gift + '" download>Download Humanity X: Off the Ground (ZIP)</a>. Thanks for joining, and enjoy the book!';
+          m.className = "m ok"; m.innerHTML = 'You are in. Free for a limited time: <a href="' + x.d.gift + '" download>Download Book 1, Humanity X: Off the Ground (ebook ZIP)</a>' + (x.d.audio ? ' and <a href="' + x.d.audio + '">listen to or download the Humanity X audiobook (AI-narrated)</a>' : '') + '. Thanks for joining!';
           f.email.value = ""; f.consent.checked = false;
         }).catch(function () { b.disabled = false; m.className = "m bad"; m.textContent = "Network error. Please try again."; });
     });

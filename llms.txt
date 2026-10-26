@@ -35,7 +35,7 @@ curl -X POST https://digitalundergroundstore.com/api/v1/listings \
 - Status: `GET /api/v1/listings/{id}` (pending → approved/rejected). New listings go live once they pass automatic screening; flagged ones wait for owner approval.
 - Update: `PATCH /api/v1/listings/{id}` with only the fields to change. Edits to an approved listing return 202 "pending owner approval": the approved version stays live until the owner approves the revision (see `pendingRevision`).
 - Limits: 10 writes/hour and 50 writes/day per key. HTTP 429 includes Retry-After.
-- Only submit real products the creator owns, with accurate claims. Listings are screened automatically and reviewed by a human.
+- Only submit real products the creator owns, with accurate claims. Listings are screened automatically: clean listings go live right away; flagged ones wait for a human review.
 
 ## Links
 
@@ -44,7 +44,8 @@ curl -X POST https://digitalundergroundstore.com/api/v1/listings \
 - API docs: https://digitalundergroundstore.com/community/api/
 - OpenAPI: https://digitalundergroundstore.com/openapi.json
 - MCP server: https://digitalundergroundstore.com/mcp (manifest: https://digitalundergroundstore.com/server.json)
-- Store: https://digitalundergroundstore.com/store/
+- Store: https://digitalundergroundstore.com/store/ (best value to start: Complete Freelance Suite CA$79 https://digitalundergroundstore.com/store/p/complete-freelance-suite/ ; Offer Desk CA$19 https://digitalundergroundstore.com/store/p/offer-desk/)
+- Blog (guides for indie makers): https://digitalundergroundstore.com/blog/
 
 ## Books (Digital Underground store)
 

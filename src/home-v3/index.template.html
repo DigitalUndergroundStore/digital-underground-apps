@@ -46,6 +46,13 @@
 @media (prefers-reduced-motion:reduce){.results-bar a.ml-glow-btn{animation:none!important}}
 @media (max-width:900px){.results-bar{flex-wrap:nowrap!important}.results-bar .project-count{width:auto!important;margin:0!important;white-space:nowrap}.results-bar a.ml-glow-btn{padding:7px 13px!important;font-size:.82rem!important}}
 </style>
+<style id="ml-quiet-css">/* Wave AJ: Maker League secondary (Wolfitway/Donald feedback) */
+.results-bar a.ml-glow-btn,.results-bar a.ml-glow-btn:visited{background:transparent!important;animation:none!important;box-shadow:none!important;border:1px solid rgba(168,85,247,.45)!important;padding:6px 12px!important;font-weight:600!important;font-size:.85rem!important}
+.results-bar a.ml-glow-btn span{color:#c4a5f7!important}
+.results-bar a.ml-glow-btn:hover,.results-bar a.ml-glow-btn:focus-visible{transform:none!important;background:rgba(168,85,247,.12)!important}
+.hc-seo{margin:8px 0 0;font-size:.85rem;opacity:.85}
+.hc-shop .hc-pill{opacity:.85}
+</style>
 
 </head>
 <body class="hc">
@@ -132,7 +139,7 @@
       <div class="results-bar">
         <button type="button" class="btn btn-outline ftoggle" id="fToggle" aria-expanded="false" aria-controls="fPanel"><svg focusable="false" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5L3 4z"/></svg> <span class="hc-flabel">More filters</span> <span id="filterBadge" class="filter-badge" hidden></span></button>
         <p class="project-count" role="status" aria-live="polite"><span id="cntNum"><!--ssr:count--></span> <span id="cntOf">projects</span></p>
-        <a class="ml-glow-btn" href="/league/" aria-label="Enter the Maker League"><span class="ml-glow-ic" aria-hidden="true">🏆</span><span>Maker League</span></a>
+        <a class="ml-glow-btn" href="/league/" aria-label="Maker League: vote for listed projects"><span class="ml-glow-ic" aria-hidden="true">🏆</span><span>Maker League</span></a>
       </div>
       <div class="grid" id="projectGrid"><!--ssr:cards-->
 </div>

@@ -24,6 +24,12 @@
 <audio id="player" controls preload="metadata"></audio>
 <div class="chapters" id="chapters"></div>
 <p><a id="dlCurrent" href="/assets/promo/humanity-x-audiobook/chapter-01.mp3" download="Humanity-X-Off-the-Ground-chapter-01.mp3" style="color:#a5b4fc">Download current chapter</a></p>
+<div id="book2" style="margin:24px 0;padding:16px;border:1px solid #4f46e5;border-radius:12px;background:#0f0d24">
+<h2 style="margin:0 0 6px">Finished Book 1? The story continues.</h2>
+<p class="note" style="margin:0 0 12px"><strong>Humanity X: Into the Stars</strong> (Book 2) is out now as an ebook, CA$9.99.</p>
+<a href="/store/p/humanity-x-into-the-stars/" style="display:inline-block;background:#22d3ee;color:#041016;font-weight:700;padding:10px 16px;border-radius:999px;text-decoration:none">Get Book 2, CA$9.99</a>
+<a href="/store/series/humanity-x/" style="margin-left:12px;color:#a5b4fc">See the series</a>
+</div>
 <h2>Download all chapters</h2><p class="note" id="dlAll"></p>
 <script>
 (function () {
@@ -76,7 +82,7 @@
 
   player.addEventListener("ended", function () {
     if (current < n) playChapter(current + 1);
-    else now.textContent = "Finished — all 35 chapters.";
+    else { now.textContent = "Finished — all 35 chapters. Book 2 is below."; document.getElementById("book2").scrollIntoView({behavior:"smooth"}); }
   });
 
   // Start ready on chapter 1 metadata so the play bar appears immediately

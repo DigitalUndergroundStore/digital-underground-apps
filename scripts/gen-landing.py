@@ -47,7 +47,7 @@ dict(slug="list-your-indie-app-free",title="List Your Indie App Free: Developer 
  lead="The Digital Underground Developer Marketplace showcases indie and open-source projects. Listing is free. You get a clean listing page with screenshots or video, and your project can be found through our public API and MCP server for AI agents.",
  points=["Free to list, with no commission on your own sales links","A shareable listing page with media","A creator dashboard to edit your listing","Discoverable by AI assistants through the /mcp server and the OpenAPI spec"],
  cta=("Submit your project","/community/submit/"),cta2=("Browse the marketplace","/"),
- faq=[("Does it cost anything to list?","No. Listing is free."),("What can I list?","Indie apps, games, developer tools, browser projects and open-source software."),("How do AI agents find my listing?","Through our public listings API, openapi.json and the /mcp server, which assistants can query."),("Are listings reviewed?","Yes. New submissions are reviewed before they appear.")]),
+ faq=[("Does it cost anything to list?","No. Listing is free."),("What can I list?","Indie apps, games, developer tools, browser projects and open-source software."),("How do AI agents find my listing?","Through our public listings API, openapi.json and the /mcp server, which assistants can query."),("Does a listing help my SEO?","Yes. Every listing gets its own indexed page in our sitemap with a followed link back to your site."),("Are listings reviewed?","Yes. Every submission is screened automatically. Clean listings go live right away; anything flagged waits for a manual review.")]),
 ]
 TPL=open(os.path.join(R,"scripts","landing.tpl.html")).read()
 for p in PAGES:

@@ -322,7 +322,7 @@ form .up-btn.up-rm{color:#f08080;border-color:rgba(240,128,128,0.3);background:r
     }).then(function (out) {
       if (out.res.ok && out.data.ok) {
         show(out.data.message || "Submitted — thank you!", true);
-        (function () { var nx = document.createElement("div"); nx.className = "save-link du-next"; nx.innerHTML = '<strong>Next: get your first visitors</strong><p class="muted small">Share your listing link where your users already hang out, then climb the board.</p><div class="row"><a class="btn" href="/community/dashboard/">Creator dashboard</a><a class="btn" href="/league/">Maker League</a><a class="btn" href="/#projects">Browse the marketplace</a></div>'; msg.appendChild(nx); })();
+        (function () { var nx = document.createElement("div"); nx.className = "save-link du-next"; nx.innerHTML = '<strong>Next: get your first visitors</strong><p class="muted small">Share your listing link where your users already hang out, then climb the board.</p><div class="row"><a class="btn" href="/community/dashboard/">Creator dashboard</a><a class="btn" href="/league/">Maker League</a><a class="btn" href="/#projects">Browse the marketplace</a></div><p class="muted small" style="margin-top:10px">Launch kit: free <a href="/store/p/promo-lane/">Promo Lane</a> + <a href="/store/p/hook-bank/">Hook Bank</a> for launch posts, or <a href="/store/p/launch-ledger/">Launch Ledger</a> to plan and track the launch.</p>'; msg.appendChild(nx); })();
         var vf = videoFileInput.files && videoFileInput.files[0];
         if (vf && (out.data.newAccount || out.data.signedIn) && window.duUpload) {
           var pg = document.getElementById("up-progress"); pg.hidden = false;

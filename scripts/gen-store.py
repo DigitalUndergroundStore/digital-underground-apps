@@ -163,12 +163,13 @@ for sid, items in secs:
 body.append('<div class="trust"><div><b>Secure checkout</b><span>Payments handled by Gumroad.</span></div><div><b>Instant delivery</b><span>Download right after purchase.</span></div><div><b>Yours to keep</b><span>One-time price, no subscription.</span></div></div>')
 body.append('</div></main>' + js('\n<script src="/assets/signup.js?v=20261026au" defer></script>'))
 out = os.environ.get("DU_STORE_OUT", f"{R}/store")
-# Wave AC guard: live store/ HTML has many hand edits (Waves W–AB: series aside, thrillers tab, Books 1+2 pack,
+# Wave AC guard (kept in Wave AD as belt-and-braces; regen is now byte-identical thanks to src/store-overrides/):
 # richer blurbs, site-nav v10) that src/store-legacy does not hold. Writing to live store/ would regress them.
 # Dry-run: DU_STORE_OUT=/tmp/dry python3 scripts/gen-store.py, then diff -r store /tmp/dry. Use --force-live only after porting.
 import sys
 if os.path.realpath(out) == os.path.realpath(f"{R}/store") and "--force-live" not in sys.argv:
     sys.exit("gen-store: refusing to overwrite live store/ (hand edits would regress). Set DU_STORE_OUT for a dry run, or pass --force-live.")
+os.makedirs(out, exist_ok=True)
 open(f"{out}/index.html", "w", encoding="utf8").write(sn.apply("".join(body)))
 pw = next(d for _, i in secs for d in i if d["name"] == "Pantry Week")
 assert pw["price"] == "CA$24"
@@ -213,3 +214,11 @@ for sid, its in secs:
         done.add(d["slug"])
         os.makedirs(dd, exist_ok=True); open(f"{dd}/index.html", "w", encoding="utf8").write(sn.apply(detail(d, sid))); n += 1; slugs.append(d["slug"])
 print("ok", paid, "detail pages", n)
+# Wave AD: live store HTML diverged from these templates on every page (Waves W–AB). src/store-overrides/ holds the
+# authoritative live HTML (index + p/<slug>/); it is overlaid last so a regen preserves it byte-for-byte.
+# Edit a page's override to change it; products with no override fall back to the template above.
+OV = f"{R}/src/store-overrides"
+for root, _, files in os.walk(OV):
+    for f in files:
+        rel = os.path.relpath(os.path.join(root, f), OV); dst = os.path.join(out, rel)
+        os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copyfile(os.path.join(root, f), dst)

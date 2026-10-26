@@ -45,3 +45,8 @@ curl -X POST https://digitalundergroundstore.com/api/v1/listings \
 - OpenAPI: https://digitalundergroundstore.com/openapi.json
 - MCP server: https://digitalundergroundstore.com/mcp (manifest: https://digitalundergroundstore.com/server.json)
 - Store: https://digitalundergroundstore.com/store/
+
+## Books (Digital Underground store)
+
+- Humanity X series (sci-fi): https://digitalundergroundstore.com/store/series/humanity-x/ (Book 1 Off the Ground free with email signup at /free-book/; Book 2 Into the Stars CA$9.99; audiobook free for a limited time with email signup)
+- Thrillers: https://digitalundergroundstore.com/store/thrillers/ (He Came Home Without Her, a domestic thriller, CA$4.99; Null Harbor, a near-future thriller, CA$4.99)

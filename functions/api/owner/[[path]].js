@@ -307,6 +307,34 @@ export async function onRequest(context) {
     return json({ keys: await listAllKeys(kv) });
   }
 
+  if (head === "health" && request.method === "GET") {
+    const H = await import("../../_lib/health.js");
+    const { utcDay } = await import("../../_lib/creator.js");
+    const origin = new URL(request.url).origin;
+    const t0 = Date.now();
+    const [probes, errors, subs, supAll, backup, idx, todayStats, reports] = await Promise.all([
+      H.runProbes(origin),
+      H.readErrors(kv, 14),
+      listSubscribers(kv),
+      listSupportMessages(kv, { status: "all" }),
+      fetchBackupMeta(env),
+      kvGetIndex(kv),
+      kv.get("storestats:" + utcDay(), "json"),
+      kv.get("community:reports", "json"),
+    ]);
+    const writes = (todayStats && todayStats.n) || 0;
+    const backupAgeDays = backup.lastSnapshot ? Math.floor((Date.now() - Date.parse(backup.lastSnapshot + "T00:00:00Z")) / 864e5) : null;
+    return json({
+      at: Date.now(), elapsedMs: Date.now() - t0,
+      probes, errors,
+      subscribers: H.subscriberSummary(subs),
+      feedback: H.feedbackSummary(supAll),
+      sampling: { writesToday: writes, softCap: H.SOFT_CAP, sample: H.SAMPLE, active: writes >= H.SOFT_CAP },
+      backup: { ...backup, ageDays: backupAgeDays },
+      queue: { pending: (idx.pending || []).length, flagged: Object.values(reports || {}).filter((e) => e && e.state === "flagged").length },
+    });
+  }
+
   if (head === "storestats" && request.method === "GET") {
     const { readStoreStats } = await import("../../_lib/storestats.js");
     return json(await readStoreStats(kv, 30));

@@ -63,13 +63,15 @@
         (out.d.listingsLive || 0) + " live listings · " + (out.d.contactsTotal || 0) + " contacts";
       $("home-cards").innerHTML =
         card("queue", "Review queue", pending + (out.d.flaggedCount || 0), (pending ? pending + " waiting" : "All clear") + (out.d.flaggedCount ? " · " + out.d.flaggedCount + " flagged" : ""), pending || out.d.flaggedCount ? "badge" : "badge ok") +
-        card("support", "Support inbox", support, support ? "Needs a reply" : "Inbox zero", support ? "badge" : "badge ok") +
+        card("support", "Feedback & support", support, support ? "Needs a reply" : "Inbox zero", support ? "badge" : "badge ok") +
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
         card("crm", "CRM pipeline", "→", "Leads, makers, press, follow-ups", "") +
-        card("analytics", "Analytics", (w.views || 0), "views, " + (w.clicks || 0) + " clicks · 7 days", "") +
+        card("analytics", "Stats", (w.views || 0), "marketplace views, " + (w.clicks || 0) + " clicks · 7 days", "") +
         card("backups", "Backups", shortDate(backup.lastSnapshot) || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
+        '<button type="button" class="oh-card" data-go="analytics" data-an-go="health" id="home-health"><div class="oh-label">Health</div><div class="oh-value">…</div><div class="oh-meta">Checking site…</div></button>' +
         card("apikeys", "API keys", "→", "Creator API access", "") +
         card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");
+      homeHealth();
       $("home-today").innerHTML =
         '<div class="oh-today"><h2>Today</h2>' +
         '<div class="oh-row"><span>Views</span><span>' + (t.views || 0) + "</span></div>" +
@@ -83,6 +85,68 @@
     });
   }
 
+  function homeHealth() {
+    api("health").then(function (out) {
+      var el = $("home-health"); if (!el || !out.r.ok) return;
+      var v = healthVerdict(out.d);
+      el.innerHTML = '<div class="oh-badge ' + (v.level === "ok" ? "ok\">OK" : v.level === "warn" ? "need\">Check" : "warn\">Broken") + '</div><div class="oh-label">Health</div><div class="oh-value">' + v.okCount + "/" + v.total + '</div><div class="oh-meta">' + esc(v.issues.length ? v.issues[0] + (v.issues.length > 1 ? " +" + (v.issues.length - 1) + " more" : "") : "All pages up · no server errors") + "</div>";
+    });
+  }
+  function healthVerdict(d) {
+    var issues = [], bad = 0, warn = 0, probes = d.probes || [];
+    probes.forEach(function (p) { if (p.state === "fail") { bad++; issues.push(p.name + " down (" + (p.status || p.error) + ")"); } else if (p.state === "slow") { warn++; issues.push(p.name + " slow (" + p.ms + " ms)"); } });
+    var e = d.errors || {}; if (e.today) { warn++; issues.push(e.today + " server error" + (e.today > 1 ? "s" : "") + " today"); }
+    var b = d.backup || {}; if (!b.ok) { warn++; issues.push("Backup check failed"); } else if (b.ageDays != null && b.ageDays > 2) { warn++; issues.push("Last backup " + b.ageDays + " days ago"); }
+    var f = d.feedback || {}; if (f.open && f.oldestOpenDays > 3) { warn++; issues.push(f.open + " open feedback, oldest " + f.oldestOpenDays + "d"); }
+    var q = d.queue || {}; if (q.pending > 5) { warn++; issues.push(q.pending + " listings waiting review"); }
+    if (d.sampling && d.sampling.active) { warn++; issues.push("Store stats sampling (1 in " + d.sampling.sample + ")"); }
+    return { level: bad ? "bad" : warn ? "warn" : "ok", issues: issues, okCount: probes.filter(function (p) { return p.state === "ok"; }).length, total: probes.length };
+  }
+  function ago(ts) { if (!ts) return "never"; var m = Math.round((Date.now() - ts) / 60000); return m < 60 ? m + " min ago" : m < 2880 ? Math.round(m / 60) + " h ago" : Math.round(m / 1440) + " days ago"; }
+  function miniChart(chart, title, unit) {
+    var max = 1; chart.forEach(function (d) { if (d.n > max) max = d.n; });
+    return '<div class="an-card"><h2>' + esc(title) + '</h2><div class="an-chart an-mini" role="img" aria-label="' + esc(title) + '">' + chart.map(function (d) {
+      return '<div class="col" title="' + esc(d.d) + ": " + d.n + " " + unit + '"><i class="s1" style="height:' + Math.max(d.n ? 4 : 1, Math.round((d.n / max) * 100)) + '%"></i></div>';
+    }).join("") + '</div></div>';
+  }
+  function loadHealth(seq) {
+    $("an-sub").textContent = "Checking live pages from Cloudflare…";
+    api("health").then(function (out) {
+      if (seq !== anSeq) return;
+      if (!out.r.ok) { if (out.r.status === 401) go("login"); else $("an-sub").textContent = "Health check failed (" + out.r.status + ")"; return; }
+      var d = out.d, v = healthVerdict(d), s = d.subscribers || {}, f = d.feedback || {}, e = d.errors || {}, b = d.backup || {}, sm = d.sampling || {}, q = d.queue || {};
+      $("an-sub").textContent = (v.level === "ok" ? "✅ Everything looks smooth" : v.level === "warn" ? "⚠️ Running, with things to check" : "❌ Something is broken") + " · checked " + new Date(d.at).toLocaleTimeString();
+      $("an-kpis").innerHTML =
+        kpi("Pages up", v.okCount + "/" + v.total, '<span class="d ' + (v.level === "bad" ? "down" : "up") + '">' + (v.issues.length ? v.issues.length + " issue(s)" : "all OK") + "</span>") +
+        kpi("Server errors", fmt(e.today), '<span class="d ' + (e.last7 ? "down" : "") + '">' + fmt(e.last7) + " in 7 days</span>") +
+        kpi("Subscribers", fmt(s.active), '<span class="d ' + (s.last7 ? "up" : "") + '">+' + fmt(s.last7) + " 7d · +" + fmt(s.last30) + " 30d</span>") +
+        kpi("Open feedback", fmt(f.open), '<span class="d">' + fmt(f.last7) + " new 7d · " + fmt(f.done) + " done</span>") +
+        kpi("Last backup", shortDate(b.lastSnapshot) || "—", '<span class="d ' + (!b.ok || b.ageDays > 2 ? "down" : "") + '">' + (b.ok ? (b.ageDays === 0 ? "today" : b.ageDays + "d ago") : "check failed") + "</span>");
+      var probes = (d.probes || []).map(function (p) {
+        var cls = p.state === "ok" ? "ok" : p.state === "slow" ? "need" : "warn";
+        return '<div class="bar-row"><div class="bar-top"><span class="bk"><span class="oh-badge hp ' + cls + '">' + (p.state === "ok" ? "OK" : p.state === "slow" ? "Slow" : "Fail") + "</span> " + '<a href="' + esc(p.path) + '" target="_blank" rel="noopener">' + esc(p.name) + "</a>" + '</span><span class="bv">' + (p.status || p.error) + " · " + p.ms + " ms</span></div></div>";
+      }).join("");
+      var errList = (e.paths || []).length ? (e.paths || []).map(function (r) { return '<div class="bar-row"><div class="bar-top"><span class="bk">' + esc(r.k) + '</span><span class="bv">' + r.v + "</span></div></div>"; }).join("") + '<p class="muted small">Last: ' + esc(e.last ? e.last.path + " (" + e.last.status + ") " + ago(e.last.at) : "") + "</p>" : '<p class="muted small">No 5xx responses or crashes logged on /api/ in the last 14 days.</p>';
+      $("an-lists").innerHTML =
+        '<div class="an-card"><h2>Is everything running smooth?</h2>' + (v.issues.length ? "<ul class=\"hl-issues\">" + v.issues.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : '<p class="muted small">No issues found.</p>') + "</div>" +
+        '<div class="an-card"><h2>Uptime check (live, from Cloudflare)</h2><p class="muted small an-help">Each page is fetched right now from the server. Slow = over 1.5 s.</p>' + probes + "</div>" +
+        '<div class="an-card"><h2>Server errors (API 5xx, 14 days)</h2>' + errList + "</div>" +
+        miniChart(s.chart || [], "Email signups per day (30 days)", "signups") +
+        listCard("Signup sources (30 days)", s.sources || [], "", "No signups in the last 30 days.") +
+        miniChart(f.chart || [], "Feedback & support per day (30 days)", "messages") +
+        listCard("Feedback by product (30 days)", f.products || [], "", "No feedback in the last 30 days.") +
+        listCard("Feedback by source (30 days)", f.sources || [], "", "No feedback in the last 30 days.") +
+        '<div class="an-card"><h2>Housekeeping</h2>' +
+        '<div class="oh-row"><span>Subscribers active / total</span><span>' + fmt(s.active) + " / " + fmt(s.total) + "</span></div>" +
+        '<div class="oh-row"><span>Unsubscribes (30 days)</span><span>' + fmt(s.unsub30) + "</span></div>" +
+        '<div class="oh-row"><span>Last signup</span><span>' + ago(s.lastAt) + "</span></div>" +
+        '<div class="oh-row"><span>Oldest open feedback</span><span>' + (f.open ? f.oldestOpenDays + " days" : "—") + "</span></div>" +
+        '<div class="oh-row"><span>Listings waiting review / flagged</span><span>' + fmt(q.pending) + " / " + fmt(q.flagged) + "</span></div>" +
+        '<div class="oh-row"><span>Store stat writes today</span><span>' + fmt(sm.writesToday) + " / " + sm.softCap + (sm.active ? " (sampling 1 in " + sm.sample + ")" : "") + "</span></div>" +
+        '<div class="oh-row"><span>Backups stored</span><span>' + (b.count != null ? b.count : "—") + "</span></div></div>";
+      $("an-note").textContent = "All first-party. Server errors are counted from now on (Oct 26, 2026) for /api/ requests that return 5xx or crash; there is no request total, so this is a count, not a percentage. Page-level 4xx/5xx and traffic-wide error rates would need a Cloudflare API token (Analytics read), which isn't configured.";
+    });
+  }
   function shortDate(v) {
     var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(v || ""));
     if (!m) return v;
@@ -270,8 +334,9 @@
         ? rows.map(function (m) {
             return (
               '<article class="item">' +
+              (m.product ? '<span class="badge">' + esc(m.product) + "</span> " : "") +
               "<strong>" + esc(m.subject) + "</strong>" +
-              '<div class="small">' + esc(m.listingName || "No listing") +
+              '<div class="small">' + esc(m.source || "marketplace") + (m.kind ? " · " + esc(m.kind) : "") + " · " + esc(new Date(m.createdAt || 0).toLocaleString()) +
               (m.replyTo ? " · " + esc(m.replyTo) : "") +
               "</div>" +
               "<p>" + esc(m.message) + "</p>" +
@@ -286,7 +351,7 @@
   }
 
   var AN_KEY = "du_owner_stats_view";
-  var anView = (function () { try { return localStorage.getItem(AN_KEY) === "market" ? "market" : "store"; } catch (_) { return "store"; } })();
+  var anView = (function () { try { return (function (v) { return v === "market" || v === "health" ? v : "store"; })(localStorage.getItem(AN_KEY)); } catch (_) { return "store"; } })();
   var anSeq = 0;
   function fmt(n) { n = n || 0; return n >= 10000 ? (Math.round(n / 100) / 10) + "k" : String(n); }
   function sum(arr, k, from) { var t = 0; for (var i = from || 0; i < arr.length; i++) t += arr[i][k] || 0; return t; }
@@ -348,6 +413,8 @@
     var seq = ++anSeq;
     $("an-kpis").innerHTML = '<div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div><div class="kpi sk"></div>' + (anView === "store" ? '<div class="kpi sk"></div>' : "");
     $("an-lists").innerHTML = ""; $("an-note").textContent = "";
+    $("an-chart").parentNode.hidden = anView === "health";
+    if (anView === "health") { loadHealth(seq); return; }
     if (anView === "store") {
       api("storestats").then(function (out) {
         if (seq !== anSeq) return;
@@ -393,6 +460,11 @@
     try { localStorage.setItem(AN_KEY, v); } catch (_) {}
     loadAnalytics();
   });
+
+  document.addEventListener("click", function (e) {
+    var hg = e.target.closest && e.target.closest("[data-an-go]");
+    if (hg) { anView = hg.getAttribute("data-an-go"); try { localStorage.setItem(AN_KEY, anView); } catch (_) {} }
+  }, true);
 
   function loadKeys() {
     api("apikeys").then(function (out) {

@@ -1,6 +1,7 @@
+import { recordServerError } from "./_lib/health.js";
 // Force HTTPS: any plain-http request gets a permanent redirect; responses carry HSTS.
 const HSTS = "max-age=31536000; includeSubDomains";
-export async function onRequest({ request, next }) {
+export async function onRequest({ request, next, env, waitUntil }) {
   const url = new URL(request.url);
   const proto = request.headers.get("X-Forwarded-Proto") || url.protocol.replace(":", "");
   const www = url.hostname === "www.digitalundergroundstore.com";
@@ -21,7 +22,15 @@ export async function onRequest({ request, next }) {
     url.pathname = "/" + am[1] + (am[2] || "/");
     return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
   }
-  const res = await next();
+  const isApi = url.pathname.startsWith("/api/");
+  let res;
+  try {
+    res = await next();
+  } catch (e) {
+    if (isApi && env && env.COMMUNITY_KV) waitUntil(recordServerError(env.COMMUNITY_KV, url.pathname, "throw"));
+    throw e;
+  }
+  if (isApi && res.status >= 500 && env && env.COMMUNITY_KV) waitUntil(recordServerError(env.COMMUNITY_KV, url.pathname, res.status));
   if (res.headers.has("Strict-Transport-Security")) return res;
   const out = new Response(res.body, res);
   out.headers.set("Strict-Transport-Security", HSTS);

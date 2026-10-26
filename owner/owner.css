@@ -321,3 +321,9 @@ code { background: rgba(79,70,229,0.12); border: 1px solid var(--oh-border); bor
 .login-box h1 { font-size: 1.75rem; }
 @media (max-width: 520px) { .links { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .item, .links a, .kpi, .panel .btn { transition: none; } .item:hover, .links a:hover, .kpi:hover, .panel .btn:hover { transform: none; } }
+
+/* Health tab */
+.an-mini { height: 70px; }
+.oh-badge.hp { position: static; display: inline-block; margin-right: 6px; font-size: 11px; padding: 2px 7px; vertical-align: middle; }
+.hl-issues { margin: 6px 0 0; padding-left: 18px; line-height: 1.6; }
+#view-analytics .oh-row { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 14px; }

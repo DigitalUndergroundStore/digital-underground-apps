@@ -162,7 +162,7 @@ for sid, items in secs:
     feat = sid == "featured"
     body.append(f'<section class="s" id="{sid}"><div class="sh"><h2>{E(LABEL[sid])}</h2><span>{len(items)} item{"s"*(len(items)!=1)}</span></div><div class="{"gf" if feat else "g"}">' + "".join(card(d, feat) for d in items) + '</div></section>')
 body.append('<div class="trust"><div><b>Secure checkout</b><span>Payments handled by Gumroad.</span></div><div><b>Instant delivery</b><span>Download right after purchase.</span></div><div><b>Yours to keep</b><span>One-time price, no subscription.</span></div></div>')
-body.append('</div></main>' + js('\n<script src="/assets/signup.js?v=20261026au" defer></script>'))
+body.append('</div></main>' + js('\n<script src="/assets/signup.js?v=20261026bg" defer></script>'))
 out = os.environ.get("DU_STORE_OUT", f"{R}/store")
 # Wave AC guard (kept in Wave AD as belt-and-braces; regen is now byte-identical thanks to src/store-overrides/):
 # richer blurbs, site-nav v10) that src/store-legacy does not hold. Writing to live store/ would regress them.

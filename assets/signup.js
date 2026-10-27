@@ -39,7 +39,7 @@
         .then(function (x) {
           b.disabled = false;
           if (!x.ok || !x.d.ok) { m.className = "m bad"; m.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; return; }
-          m.className = "m ok"; m.innerHTML = 'You are in. Free for a limited time: <a href="' + (x.d.audio || x.d.gift) + '">listen to or download the Humanity X: Off the Ground audiobook (AI-narrated)</a>. Want the ebook too? <a href="/store/p/humanity-x-off-the-ground/">Get it in the store</a>. Thanks for joining!';
+          m.className = "m ok"; m.innerHTML = 'You are in. Free for a limited time: <a href="' + (x.d.audio || x.d.gift) + '">listen to or download the Humanity X: Off the Ground audiobook (AI-narrated)</a>. Want the ebook too? <a href="/store/p/humanity-x-off-the-ground/">Book 1 ebook, CA$9.99</a>. Hooked already? <a href="/store/p/humanity-x-into-the-stars/">Book 2, Into the Stars (CA$9.99)</a> or <a href="/store/p/humanity-x-books-1-2/">both ebooks in the Books 1 &amp; 2 pack (CA$14.99)</a>. Thanks for joining!';
           f.email.value = ""; f.consent.checked = false;
         }).catch(function () { b.disabled = false; m.className = "m bad"; m.textContent = "Network error. Please try again."; });
     });

@@ -61,6 +61,28 @@ curl -X POST https://digitalundergroundstore.com/api/community/admin \
 
 List pending: `GET /api/community/admin` with the same Bearer token.
 
+### Operator create (`create_listing`)
+
+For a maker who already said yes, create the listing without the public Turnstile form. Same required fields as submit (name, https project URL, maker name, email, category, short pitch, longer description, https logo/screenshot or uploaded image, `terms: true`). The action is admin-token only. `POST /api/community/submit` is unchanged.
+
+```bash
+curl -X POST https://digitalundergroundstore.com/api/community/admin \
+  -H "Authorization: Bearer $COMMUNITY_ADMIN_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"action":"create_listing","name":"Project","projectUrl":"https://example.com","makerName":"Maker","email":"maker@example.com","category":"apps","pitchShort":"One line","descriptionLong":"Longer description.","imageUrl":"https://example.com/logo.png","terms":true}'
+```
+
+`action` may be `create_listing` or `create`. Incomplete bodies are rejected with the same errors as submit.
+
+The listing is saved **approved** (product page `/community/p/?id=…` is `productUrl`) and linked to that email’s creator account: the login account if one exists, otherwise the contact-linked account, otherwise a new passwordless account. No maker email is sent.
+
+Dashboard access:
+
+- **New account:** `tokenIssued` is true and `dashboardUrl` is `/community/dashboard/?k=…` (same link `issue_creator_token` returns; the secret is not stored).
+- **Existing account, or the same email + project URL again:** the existing listing is returned (`existing: true`, `created: false`) and the manage link is not rotated. `dashboardUrl` is null. `dashboardAccess` tells you to call `issue_creator_token` with the returned `id`, or to repeat `create_listing` with `"issueToken": true` (that rotates the previous link).
+
+Same email and a different project URL adds another listing on the same creator account.
+
 ## Spam controls
 
 - Honeypot field `website` on submit form
@@ -74,7 +96,7 @@ If `RESEND_API_KEY` is not set, submissions are stored only (no email).
 ## Creator dashboard (`/community/dashboard/`)
 
 - **Access:** on submit, a per-creator manage token (`ca_….<secret>`) is generated; only SHA-256(secret) is stored at `creator:{id}`. The confirmation screen shows the private link `/community/dashboard/?k=…` with a copy button. API auth: `Authorization: Creator <token>` (constant-time compare, generic 401).
-- **Admin backfill / lost link:** `POST /api/community/admin {"action":"issue_creator_token","id":"cm_…"}` creates or rotates the link (old link stops working) and returns it once.
+- **Admin backfill / lost link:** `POST /api/community/admin {"action":"issue_creator_token","id":"cm_…"}` creates or rotates the link (old link stops working) and returns it once. Operator-created listings (`create_listing`) return that same `dashboardUrl` when the creator account is new.
 - **Session:** signed HttpOnly/Secure/SameSite=Lax cookie `du_creator` (180 days, HMAC with COMMUNITY_ADMIN_TOKEN). Set after a submit that creates/uses the signed-in account, after visiting a private link, or after an email code. `POST /api/community/creator?action=signout` clears it. Same email submitting again attaches to the same account but does not sign that browser in.
 - **Email + password:** new submissions require a password (min 8). PBKDF2-SHA256, 100,000 iterations (Workers maximum), 16-byte per-user salt, stored on `creator:{id}`; `login:{sha256(email)}` → account id. Login: `POST /api/community/creator-login {email,password}` (10 tries/15 min per IP and email, generic error). Same email + correct password on submit attaches to the same account. Legacy accounts (private link, no password) see "Set your email and password" on the dashboard (`action: "claim"`).
 - **Forgot password (off):** email code reset, `POST /api/community/creator-login {email}` then `{email, code}`; 6 digits, 10 min, 5 tries, 1 send/min/email, 8/hour/IP. Enable with Pages env `COMMUNITY_EMAIL_LOGIN=1` only after a sending domain is verified in Resend and `COMMUNITY_NOTIFY_FROM` uses it. Responses are identical whether or not the email exists.

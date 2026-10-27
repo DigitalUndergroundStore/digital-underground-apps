@@ -1,19 +1,28 @@
 import {
   adminAuthorized,
   backfillContactsFromListings,
+  canonicalProjectUrl,
+  communitySiteOrigin,
   contactsToCsv,
   deleteContact,
   deleteListing,
   getKv,
   json,
+  kvGetIndex,
   listContacts,
   listPending,
+  normalizeEmail,
+  saveListing,
   setListingStatus,
+  upsertContact,
+  validateSubmission,
   kvGetListing,
   kvPutListing,
 } from "../../_lib/community.js";
 import {
+  accountIdForLogin,
   attachListing,
+  creatorIdsForEmail,
   dashboardUrl,
   getAccount,
   issueAccountToken,
@@ -110,6 +119,38 @@ export async function onRequest(context) {
       return json({ ok: true });
     }
 
+    // Operator create for a yes-reply maker. Public POST /api/community/submit stays Turnstile-gated.
+    // curl -X POST "$ORIGIN/api/community/admin" \
+    //   -H "Authorization: Bearer $COMMUNITY_ADMIN_TOKEN" -H "Content-Type: application/json" \
+    //   -d '{"action":"create_listing","name":"Project","projectUrl":"https://example.com","makerName":"Maker","email":"maker@example.com","category":"apps","pitchShort":"One line","descriptionLong":"Longer description.","imageUrl":"https://example.com/logo.png","terms":true}'
+    // A new creator account includes dashboardUrl (same link as issue_creator_token). The same email + project URL
+    // returns the existing listing and does not rotate that link. Mint/rotate later with issue_creator_token, or
+    // send issueToken:true on create_listing. See docs/community-marketplace.md.
+    if (action === "create" || action === "create_listing") {
+      const validated = validateSubmission(body);
+      if (validated.error) return json({ error: validated.error }, validated.status || 400);
+      const listing = validated.listing;
+      const issueToken = body.issueToken === true || body.issueToken === "true";
+      const existing = await findListingByEmailAndProject(kv, listing.email, listing.projectUrl);
+      const { acct, token, created } = await ensureCreatorAccount(kv, listing.email, existing, issueToken);
+      if (existing) {
+        await linkListingToCreator(kv, existing, acct);
+        return json(createListingResponse(env, request, existing, acct, { token, created, existing: true }));
+      }
+      listing.creatorId = acct.id;
+      listing.status = "approved";
+      listing.source = "admin";
+      listing.screening = {
+        reasons: [],
+        detail: "Operator create_listing. Public Turnstile submit was not used.",
+        screenedAt: Date.now(),
+      };
+      if (listing.videoUrl) listing.videoApprovedUrl = listing.videoUrl;
+      await saveListing(kv, listing);
+      await linkListingToCreator(kv, listing, acct);
+      return json(createListingResponse(env, request, listing, acct, { token, created, existing: false }));
+    }
+
     const id = typeof body.id === "string" ? body.id.trim() : "";
     if (!id) return json({ error: "Missing listing id." }, 400);
 
@@ -143,13 +184,116 @@ export async function onRequest(context) {
       return json({ ok: true, deleted: id });
     }
     return json(
-      { error: "Unknown action. Use approve, reject, delete, issue_creator_token, delete_creator, unlink_contact_listing, backfill_contacts, or delete_contact." },
+      { error: "Unknown action. Use approve, reject, delete, create_listing, issue_creator_token, delete_creator, unlink_contact_listing, backfill_contacts, or delete_contact." },
       400
     );
   } catch (e) {
     console.error("community admin action error", e);
     return json({ error: "Action failed." }, 500);
   }
+}
+
+const LISTING_RANK = { approved: 4, pending: 3, unpublished: 2, rejected: 1 };
+
+async function findListingByEmailAndProject(kv, email, projectUrl) {
+  const wantEmail = normalizeEmail(email);
+  const wantUrl = canonicalProjectUrl(projectUrl);
+  if (!wantEmail || !wantUrl) return null;
+  const index = await kvGetIndex(kv);
+  const ids = [
+    ...(index.approved || []),
+    ...(index.pending || []),
+    ...(index.unpublished || []),
+    ...(index.rejected || []),
+  ];
+  const seen = new Set();
+  let best = null;
+  for (const id of ids) {
+    if (seen.has(id)) continue;
+    seen.add(id);
+    const row = await kvGetListing(kv, id);
+    if (!row || normalizeEmail(row.email) !== wantEmail) continue;
+    if (canonicalProjectUrl(row.projectUrl) !== wantUrl) continue;
+    if (!best) {
+      best = row;
+      continue;
+    }
+    const ra = LISTING_RANK[row.status] || 0;
+    const rb = LISTING_RANK[best.status] || 0;
+    const newer = (row.updatedAt || row.createdAt || 0) >= (best.updatedAt || best.createdAt || 0);
+    if (ra > rb || (ra === rb && newer)) best = row;
+  }
+  return best;
+}
+
+/**
+ * Attach this email to the account that already owns the listing, else the login
+ * or contact-linked creator, else a new passwordless account (manage link).
+ * issueAccountToken rotates the manage link; only call it for a new account or
+ * when the operator passes issueToken.
+ */
+async function ensureCreatorAccount(kv, email, existingListing, issueToken) {
+  let acct = null;
+  if (existingListing?.creatorId) acct = await getAccount(kv, existingListing.creatorId);
+  if (!acct) {
+    const loginId = await accountIdForLogin(kv, email);
+    if (loginId) acct = await getAccount(kv, loginId);
+  }
+  if (!acct) {
+    const ids = await creatorIdsForEmail(kv, email);
+    const found = [];
+    for (const cid of [...ids].reverse()) {
+      const row = await getAccount(kv, cid);
+      if (row) found.push(row);
+    }
+    acct = found.find((row) => !row.pw) || found[0] || null;
+  }
+  let token = null;
+  let created = false;
+  if (!acct) {
+    const issued = await issueAccountToken(kv, null);
+    acct = issued.acct;
+    token = issued.token;
+    created = true;
+  } else if (issueToken) {
+    const issued = await issueAccountToken(kv, acct);
+    acct = issued.acct;
+    token = issued.token;
+  }
+  return { acct, token, created };
+}
+
+async function linkListingToCreator(kv, listing, acct) {
+  if (listing.creatorId !== acct.id) {
+    listing.creatorId = acct.id;
+    listing.updatedAt = Date.now();
+    await kvPutListing(kv, listing);
+  }
+  await attachListing(kv, acct, listing.id);
+  await upsertContact(kv, { email: listing.email, name: listing.makerName, listingId: listing.id });
+  await linkContactToCreator(kv, listing.email, acct.id);
+}
+
+function createListingResponse(env, request, listing, acct, { token, created, existing }) {
+  const origin = communitySiteOrigin(env, request);
+  const body = {
+    ok: true,
+    created: !existing,
+    existing: !!existing,
+    id: listing.id,
+    status: listing.status,
+    creatorId: acct.id,
+    newAccount: !!created,
+    tokenIssued: !!token,
+    dashboardUrl: token ? dashboardUrl(env, request, token) : null,
+    productUrl: `${origin}/community/p/?id=${encodeURIComponent(listing.id)}`,
+    productPageLive: listing.status === "approved",
+  };
+  if (!token) {
+    body.dashboardAccess =
+      `Manage link was not minted on this call. POST {"action":"issue_creator_token","id":"${listing.id}"} returns dashboardUrl once and rotates any previous link. Or repeat create_listing with "issueToken":true.`;
+  }
+  return body;
 }
 
 async function unlinkContact(kv, email, creatorId, listingIds) {

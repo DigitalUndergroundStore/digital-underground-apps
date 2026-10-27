@@ -1,5 +1,6 @@
 import {
   appendRefParam,
+  canonicalProjectUrl,
   contactsToCsv,
   isValidEmail,
   normalizeXHandle,
@@ -17,6 +18,12 @@ function check(name, cond) {
 
 check("ref param", appendRefParam("https://example.com/path").includes("ref=digitalunderground"));
 check("ref param keeps query", appendRefParam("https://example.com/?x=1").includes("x=1"));
+check(
+  "canonical project url",
+  canonicalProjectUrl("https://Example.com/app/?ref=digitalunderground") === "https://example.com/app" &&
+    canonicalProjectUrl("https://example.com/app/") === "https://example.com/app" &&
+    canonicalProjectUrl("http://example.com/app") === ""
+);
 
 check("x handle", normalizeXHandle("@Maker_Name") === "Maker_Name");
 check("x handle reject", normalizeXHandle("bad!handle") === "");

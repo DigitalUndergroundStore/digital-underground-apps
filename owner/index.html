@@ -36,6 +36,15 @@
   </section>
 
   <section id="view-queue" class="panel">
+    <!--
+      Yes-reply makers (no public Turnstile form). Admin Bearer token required.
+      curl -X POST https://digitalundergroundstore.com/api/community/admin \
+        -H "Authorization: Bearer $COMMUNITY_ADMIN_TOKEN" -H "Content-Type: application/json" \
+        -d '{"action":"create_listing","name":"Project","projectUrl":"https://example.com","makerName":"Maker","email":"maker@example.com","category":"apps","pitchShort":"One line","descriptionLong":"Longer description.","imageUrl":"https://example.com/logo.png","terms":true}'
+      New creator: response.dashboardUrl is the dashboard link (/community/dashboard/?k=…).
+      Same email + project URL returns the existing listing and does not rotate that link.
+      Rotate later: {"action":"issue_creator_token","id":"cm_…"} or create_listing with "issueToken":true.
+    -->
     <button type="button" class="back" data-go="home">← Home</button>
     <h1>Review queue</h1>
     <div class="tabs">

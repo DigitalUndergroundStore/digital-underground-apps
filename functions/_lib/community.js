@@ -65,6 +65,27 @@ export function appendRefParam(url) {
   }
 }
 
+/**
+ * Identity key for a product URL. Host is lowercased, hash and trailing slash
+ * are dropped, and the marketplace `ref` param is ignored. https only.
+ */
+export function canonicalProjectUrl(raw) {
+  try {
+    const u = new URL(String(raw || "").trim());
+    if (u.protocol !== "https:") return "";
+    u.hash = "";
+    u.hostname = u.hostname.toLowerCase();
+    if (u.pathname.length > 1) u.pathname = u.pathname.replace(/\/+$/, "");
+    const entries = [...u.searchParams.entries()].filter(([k]) => k !== "ref");
+    entries.sort((a, b) => (a[0] === b[0] ? (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0) : a[0] < b[0] ? -1 : 1));
+    u.search = "";
+    for (const [k, v] of entries) u.searchParams.append(k, v);
+    return u.toString();
+  } catch {
+    return "";
+  }
+}
+
 export function normalizeXHandle(raw) {
   if (!raw || typeof raw !== "string") return "";
   const s = raw.trim().replace(/^@+/, "").replace(/\s+/g, "");

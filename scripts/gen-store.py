@@ -30,7 +30,7 @@ for _, its in secs:
 # Wave AC: CTA overrides ported from Wave AB static patches. Legacy source keeps Gumroad prices;
 # these products are offered free on-site, so cards must say so and link to the free path.
 CTA = {
-  "Humanity X: Off the Ground": dict(price="Free with signup", href="/free-book/", ext=False, cta="Get free", aria="Get Humanity X: Off the Ground free with email signup"),
+  # Oct 26 2026 rule: free signup = audiobook only; Book 1 ebook sells at CA$9.99 (legacy Gumroad price).
   "Pantry Week": dict(price="Free beta", href=None, ext=True, cta="Get free", aria="Get the Pantry Week free beta on Gumroad (opens in a new tab)"),
 }
 def cta(d):

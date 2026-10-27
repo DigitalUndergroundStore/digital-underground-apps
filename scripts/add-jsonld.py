@@ -61,7 +61,7 @@ def main() -> None:
     put(fb, {"@context": "https://schema.org", "@graph": [ORG, {
         "@type": "Book", "name": "Humanity X: Off the Ground", "url": f"{BASE}/free-book/",
         "description": meta(s, "name", "description"), "image": meta(s, "property", "og:image"),
-        "bookFormat": "https://schema.org/EBook", "genre": "Science fiction", "inLanguage": "en",
+        "bookFormat": "https://schema.org/AudiobookFormat", "genre": "Science fiction", "inLanguage": "en",
         "isPartOf": {"@type": "BookSeries", "name": "Humanity X Trilogy"}, "publisher": {"@id": f"{BASE}/#org"},
         "isAccessibleForFree": True,
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CAD", "url": f"{BASE}/free-book/",

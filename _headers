@@ -1,0 +1,20 @@
+# Owner dashboard shell — do not index. Basic Auth is enforced in functions/_middleware.js.
+/owner
+  X-Robots-Tag: noindex, nofollow
+
+/owner/*
+  X-Robots-Tag: noindex, nofollow
+
+# Unlisted review page. No password; obscurity plus noindex only.
+/screening-room-7k3q
+  X-Robots-Tag: noindex, nofollow
+
+/screening-room-7k3q/*
+  X-Robots-Tag: noindex, nofollow
+
+# Wolf's private page. Intentionally no password. Keep it out of search indexes.
+/wolf-updates-x4p9
+  X-Robots-Tag: noindex, nofollow
+
+/wolf-updates-x4p9/*
+  X-Robots-Tag: noindex, nofollow

@@ -6,7 +6,9 @@ Link-out listings at `/community/` and submissions at `/community/submit/`. No p
 
 - Browse: https://digitalundergroundstore.com/community/
 - Submit: https://digitalundergroundstore.com/community/submit/
-- Moderation UI: https://digitalundergroundstore.com/community/admin.html
+- Creator dashboard (makers): https://digitalundergroundstore.com/community/dashboard/
+- Owner dashboard: https://digitalundergroundstore.com/owner/ (Basic Auth, then passcode — not a public URL)
+- `/community/admin` and `/community/admin.html` return **404**. Do not send makers or anyone else there.
 - APIs: `/api/community/listings`, `/api/community/submit`, `/api/community/admin`
 
 ## Storage
@@ -45,10 +47,11 @@ Donald gets one email per submission (when mail is configured) with the result a
 
 ## Moderation
 
-1. Open `/community/admin.html`, paste `COMMUNITY_ADMIN_TOKEN`, click **Load pending**.
-2. **Approve** — listing appears on `/community/` via API.
-3. **Reject** — stays out of the public grid.
-4. **Delete** — removes record and index entry (use for spam or test data).
+The old page at `/community/admin.html` is gone (404). Review listings in the Owner Dashboard (`/owner/`, see below) or call the API.
+
+1. **Approve** — listing appears on `/community/` via API.
+2. **Reject** — stays out of the public grid.
+3. **Delete** — removes record and index entry (use for spam or test data).
 
 Agents may also approve by calling:
 
@@ -123,9 +126,29 @@ Contacts CSV export (live admin): `GET /api/community/admin?action=contacts` wit
 
 ## Owner Dashboard
 
-Mobile-first control panel at **https://digitalundergroundstore.com/owner/** (replaces `/community/admin.html`).
+Mobile-first control panel at **https://digitalundergroundstore.com/owner/**. Two gates, in order:
 
-- **Login:** owner passcode (4 words). Hash is Pages secret `OWNER_PASS_HASH`; session cookie lasts 30 days (`OWNER_SESSION_SECRET`).
-- **Also:** Bearer `COMMUNITY_ADMIN_TOKEN` still works on `/api/community/admin` and `/api/owner/*` for Gerold/tools.
+1. **Edge Basic Auth** (`functions/_middleware.js`) on `/owner` and `/owner/*` only. Browsers and crawlers get **401** and `WWW-Authenticate: Basic` until this succeeds. The HTML and JS are not in the response. `/api/*` is not challenged here.
+2. **Passcode session** (unchanged) after the shell loads. Hash is Pages secret `OWNER_PASS_HASH`; session cookie lasts 30 days (`OWNER_SESSION_SECRET`).
+
+### Pages secrets Donald must set
+
+On the Cloudflare Pages project (production; encrypt them), set either:
+
+- `OWNER_BASIC_USER` and `OWNER_BASIC_PASS`, or
+- one `OWNER_BASIC_AUTH` value `user:pass` (the password may contain colons; the split is the first colon).
+
+If both forms are set, the `OWNER_BASIC_USER` / `OWNER_BASIC_PASS` pair is used. Then deploy so the middleware is what Pages runs:
+
+```bash
+cd /workspace/du-dash && ./scripts/build-public.sh --deploy
+```
+
+Until those secrets exist, production and `*.pages.dev` **fail closed**: `/owner` returns 401 for everyone, including a browser that knows the passcode. Loopback only (`localhost`, `127.0.0.1`, `::1`) serves the shell without the secrets so `wrangler pages dev` still works. To practice the prompt locally, put the same vars in `.dev.vars` (gitignored).
+
+- **API auth is unchanged:** Bearer `COMMUNITY_ADMIN_TOKEN` still works on `/api/community/admin` and `/api/owner/*` for Gerold/tools. A Bearer token does not skip Basic Auth on the `/owner/` shell.
+- **Not gated:** creator dashboard `/community/dashboard/` (makers need it), the public marketplace, and `/wolf-updates-x4p9/` (unguessable URL, no password; `noindex` only).
+- **Retired alias:** `/community/admin` and `/community/admin.html` are 404 even if a static file is deployed again.
+- **Crawlers:** `_headers` sends `X-Robots-Tag: noindex, nofollow` for `/owner/*`, and keeps it on `/screening-room-7k3q/*` and `/wolf-updates-x4p9/*`. Neither obscure path is linked from the public nav or a sitemap in this repo.
 - **Sections:** Home overview, Review queue, Contacts CSV, Support inbox, Analytics (30-day), Backups (trigger + download), Quick links.
-- Plain passcode (agents only): `/home/box/.secrets/owner-dashboard-passcode.txt` (chmod 600) — never commit or print.
+- Plain passcode (agents only): `/home/box/.secrets/owner-dashboard-passcode.txt` (chmod 600) — never commit or print. Do not commit the Basic Auth password either.

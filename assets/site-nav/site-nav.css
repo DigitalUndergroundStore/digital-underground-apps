@@ -1,0 +1,158 @@
+:root{--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px;--control-h:40px;--control-h-lg:48px}
+/* Shared Digital Underground site header v4: logo · League · Creators · Blog · List your project free · account. Under 960px the links move into the menu drawer. */
+.dun{position:sticky;top:0;z-index:60;background:rgba(17,20,26,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(230,232,236,0.17);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0 0 20px}
+.dun *{box-sizing:border-box}
+.dun a,.dun button{white-space:nowrap}
+.dun-in{max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:16px}
+.dun-logo{display:flex;align-items:center;flex-shrink:0;line-height:0}
+.dun-logo img{display:block;height:32px;width:auto}.dun-logo .dun-mark{display:none;height:32px}
+.dun-links{display:flex;gap:4px;margin-left:12px}
+.dun-links a{color:#e6e8ec;font-size:.92rem;font-weight:500;padding:8px 12px;border-radius:12px;transition:color .2s,background .2s}
+.dun-links a:hover,.dun-links a[aria-current=page]{color:#e6e8ec;background:rgba(79,70,229,0.14)}
+.dun-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.dun-cta{display:inline-flex;align-items:center;padding:8px 16px;border-radius:12px;font-size:.85rem;font-weight:600;color:#e6e8ec;background:#4f46e5;box-shadow: none}
+.dun-cta:hover{filter:brightness(1.1)}
+.dun-signin{color:#e6e8ec;font-size:.85rem;font-weight:500;padding:8px 8px;border-radius:12px}.dun-signin:hover{color:#e6e8ec;background:rgba(79,70,229,0.14)}
+.dun-acct{position:relative}
+.dun .dun-user{display:inline-flex;align-items:center;gap:8px;max-width:180px;padding:4px 8px 4px 4px;border:1px solid rgba(230,232,236,0.2);border-radius:999px;background:rgba(230,232,236,0.04);color:#e6e8ec;font:500 .85rem/1 Inter,system-ui,sans-serif;cursor:pointer}
+.dun-user .av{width:26px;height:24px;border-radius:50%;display:grid;place-items:center;background:#4f46e5;color:#e6e8ec;font-weight:700;font-size:.8rem;flex:none}
+.dun-user .nm{overflow:hidden;text-overflow:ellipsis}
+.dun-pop{position:absolute;right:0;top:calc(100% + 8px);min-width:200px;display:none;flex-direction:column;padding:8px;border-radius:16px;background:#1a1e26;border:1px solid rgba(230,232,236,0.2);box-shadow: 0 18px 40px rgba(0,0,0,0.45)}
+.dun-pop.open{display:flex}
+.dun-pop a,.dun-pop button{display:block;text-align:left;width:100%;padding:8px 12px;border-radius:8px;color:#e6e8ec;font:500 .9rem/1.2 Inter,system-ui,sans-serif;background:none;border:0;cursor:pointer}
+.dun-pop a:hover,.dun-pop button:hover{background:rgba(79,70,229,0.16)}
+.dun .dun-menu{display:grid;place-items:center;margin:0 -4px 0 0;padding:0;width:38px;height:40px;min-width:0;border:0;border-radius:12px;background:none;box-shadow: none;font:inherit;color:#e6e8ec;cursor:pointer}
+.dun-menu svg{width:22px;height:24px}.dun .dun-menu:hover{background:rgba(79,70,229,0.14)}
+.dun-drawer{display:none}
+.dun-drawer.open{display:flex;flex-direction:column;gap:4px;padding:8px 16px 16px;border-top:1px solid rgba(230,232,236,0.16)}
+@media (min-width:960px){.dun .dun-menu,.dun-drawer,.dun-drawer.open{display:none}}
+.dun-drawer a,.dun-drawer button{display:block;text-align:left;color:#e6e8ec;padding:12px 12px;border-radius:12px;font:500 .95rem/1.2 Inter,system-ui,sans-serif;background:none;border:0;cursor:pointer;width:100%}
+.dun-drawer a:hover,.dun-drawer button:hover,.dun-drawer a[aria-current=page]{background:rgba(79,70,229,0.14)}
+.dun-drawer hr{border:0;border-top:1px solid rgba(230,232,236,0.17);margin:4px 0}
+.dun-x{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:80;padding:12px 16px;border-radius:999px;background:#20242d;border:1px solid rgba(230,232,236,0.24);color:#e6e8ec;font:500 14px Inter,system-ui,sans-serif}
+@media (max-width:959px){.dun-links{display:none}}
+@media (min-width:960px) and (max-width:1099px){.dun-links{margin-left:4px}.dun-user .nm{display:none}.dun .dun-user{padding:4px}}
+@media (max-width:900px){.dun-in{padding:8px 16px;gap:8px}.dun-logo img{height:32px}}
+@media (max-width:480px){.dun-cta{padding:8px 8px;font-size:.74rem}.dun-logo .dun-full{display:none}.dun-logo .dun-mark{display:block}.dun-user .nm{display:none}.dun .dun-user{padding:4px}.dun-signin{font-size:.78rem;padding:8px 4px}}
+@media (max-width:359px){.dun-cta{display:none}}
+@media (prefers-reduced-motion:reduce){.dun-links a{transition:none}}
+.dun .dun-logo img{max-width:none;border:0;border-radius:0;margin:0}
+.dun a{text-decoration:none}
+/* Store music toggle inside the shared header */
+.dun .sx-music{position:relative!important;inset:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:38px;height:40px;flex:none;box-shadow: none;border:1px solid rgba(230,232,236,0.2);background:rgba(230,232,236,0.04)}
+.dun .sx-music svg{width:18px;height:20px}.dun .sx-music.is-on{background:#4f46e5}
+@media (max-width:400px){.dun .sx-music{width:34px;height:32px}.dun-right:has(.sx-music) .dun-signin{display:none}}
+/* Shared site footer (static <!--du-site-foot--> block from scripts/site-nav.py) */
+.duf{position:relative;z-index:1;display:block;width:auto;max-width:none;padding:0;box-shadow: none;border-left:0;border-right:0;border-bottom:0;margin:64px 0 0;border-top:1px solid rgba(230,232,236,0.17);background:#161a21;color:#e6e8ec;font:400 14.5px/1.55 Inter,system-ui,sans-serif;text-align:left}
+.duf-in{max-width:1200px;margin:0 auto;padding:48px 24px 32px;display:grid;gap:40px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.duf-in{grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr);gap:64px}}
+.duf-logo{display:inline-flex;align-items:center;gap:16px;text-decoration:none}
+.duf-logo img{width:260px;height:auto;max-width:100%;filter: none}
+.duf-tag{margin:16px 0 24px;max-width:420px;color:#a8acb5}
+.duf-nl label[for]{display:block;color:#e6e8ec;font-weight:600;margin-bottom:8px}
+.duf-row{display:flex;gap:8px;max-width:440px}
+.duf-row input{flex:1;min-width:0;height:48px;padding:0 16px;border-radius:12px;border:1px solid rgba(230,232,236,0.2);background:#1a1e26;color:#e6e8ec;font:inherit}
+.duf-row input:focus{outline:2px solid #9a97e8;outline-offset:1px}
+.duf-row button{height:48px;padding:0 20px;border:0;border-radius:12px;background:#4f46e5;color:#e6e8ec;font:600 14.5px Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+.duf-row button:disabled{opacity:.6}
+.duf-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.duf-ck{display:flex;gap:8px;align-items:flex-start;max-width:440px;margin-top:12px;font-size:12.5px;color:#a8acb5}
+.duf-ck input{margin-top:4px;accent-color:#9a97e8}
+.duf-msg{min-height:1.2em;margin:8px 0 0;font-size:13px;color:#9a97e8}
+.duf-nl.done .duf-row,.duf-nl.done .duf-ck{display:none}
+.duf-priv{margin:8px 0 0;max-width:440px;font-size:12px;color:#a8acb5}
+.duf a{color:#e6e8ec;text-decoration:none}.duf a:hover{color:#e6e8ec}
+.duf-priv a{text-decoration:underline}
+.duf-social{display:flex;gap:12px;margin-top:24px}
+.duf-social a{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;border:1px solid rgba(230,232,236,0.2);background:rgba(230,232,236,0.03)}
+.duf-social a:hover{border-color:#4f46e5;background:rgba(79,70,229,0.15)}
+.duf-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 16px}
+@media (min-width:760px){.duf-cols{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}}
+.duf-col h3{margin:0 0 12px;color:#e6e8ec;font:700 13px/1.2 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.duf-col ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.duf-col a,.duf-col button{white-space:normal;text-align:left;font:inherit;color:#e6e8ec;background:none;border:0;padding:0;cursor:pointer}
+.duf-col button:hover{color:#e6e8ec}
+.duf-bar{max-width:1200px;margin:0 auto;padding:20px 24px 24px;border-top:1px solid rgba(230,232,236,0.16);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:13px;color:#a8acb5}
+.duf-bar p{margin:0}.duf-legal{display:flex;gap:20px}
+.duf-credit{flex-basis:100%;font-size:11.5px;color:#a8acb5}.duf-credit a{color:#a8acb5}
+.duf .duf-ck{display:flex;flex-direction:row;font-weight:400;margin-bottom:0}.duf .duf-ck input{width:auto;height:auto;flex:none;margin:4px 0 0}.duf .duf-row button{border-radius:12px;font-size:14.5px;padding:0 20px;background:#4f46e5}.duf .duf-nl.done .duf-ck{display:none}
+.duf .duf-ck{align-items:flex-start}
+.dun-drawer .dun-share-btn{margin-top:8px;text-align:center;color:#e6e8ec;font-weight:600;background:#4f46e5;box-shadow: none}.dun-drawer .dun-share-btn:hover{background:#4f46e5}
+
+.dun-user .av.has-img{overflow:hidden;background:#161a21}.dun-user .av.has-img img{width:100%;height:100%;object-fit:cover;display:block}.dun-user .av.mark img{object-fit:contain;padding:2px;box-sizing:border-box}
+/* Shared footer: neutralise page-level element styles (form/button/input/label rules on individual pages) */
+.duf form{display:block;max-width:none;margin:0;padding:0;background:none;border:0;gap:0}
+.duf button{box-shadow: none;text-transform:none;letter-spacing:normal;min-height:0}.duf .duf-row button{min-height:48px}
+.duf .duf-ck input{padding:0;border:0;background:none}
+.duf h3{text-shadow: none}.duf p{max-width:none}.duf ul{margin:0}.duf li{margin:0;color:inherit}
+/* Page-specific credits / badges kept just above the shared footer */
+.duf-notes{position:relative;z-index:1;max-width:1200px;margin:48px auto 0;padding:0 24px;text-align:center;font:400 12px/1.6 Inter,system-ui,sans-serif;color:#a8acb5}
+.duf-notes p{margin:8px 0}.duf-notes a{color:#a8acb5}.duf-notes+.duf{margin-top:24px}
+.duf{padding:0!important;border-radius:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+
+.duf-book{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin:0 0 14px;max-width:560px}.duf-book img{width:220px;max-width:100%;height:auto;border-radius:10px;border-radius:6px;box-shadow: 0 6px 18px rgba(0,0,0,0.45);display:block;flex:none}.duf-book>div{min-width:0;flex:1 1 220px}.duf .duf-bk-h{margin:0 0 2px;color:#e6e8ec;font-size:16px;font-weight:700;text-transform:none;letter-spacing:normal}.duf-bk-t{margin:0 0 4px;font-weight:600}.duf-bk-t a{color:#9a97e8;text-decoration:none}.duf-bk-s{margin:0;color:#a8acb5;font-size:13px;line-height:1.45}.duf-msg a{color:#9a97e8;font-weight:600}
+
+/* Mobile-first footer (Wolf, Oct 23 2026): 2 columns on phones, long handles wrap instead of pushing the page sideways */
+.duf-col a,.duf-col button,.duf-bar,.duf-legal a{overflow-wrap:anywhere}
+.duf-col{min-width:0}
+@media (max-width:520px){.duf-cols{grid-template-columns:repeat(2,minmax(0,1fr))}.duf-in{padding:40px 16px 28px}.duf-bar{padding:20px 16px 24px}.duf-legal{flex-wrap:wrap;gap:8px 16px}}
+.dun-shop{display:inline-flex;align-items:center;gap:.25rem;padding:.22rem .55rem;margin-right:8px;border-radius:999px;font-size:.72rem;font-weight:600;line-height:1.1;color:#e6e8ec;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);white-space:nowrap;text-decoration:none;opacity:.9}
+.dun-shop:hover{opacity:1;background:rgba(255,255,255,.1)}
+@media (max-width:480px){.dun-shop{padding:.2rem .4rem;font-size:.68rem;margin-right:4px}}
+.dun-shop-s{display:none}@media (max-width:640px){.dun-shop{flex-shrink:0}.dun-shop-l{display:none}.dun-shop-s{display:inline}}@media (max-width:360px){.dun-shop{padding:.18rem .32rem;margin-right:3px}}
+/* v19: larger shop pill + soft purple glow */
+@keyframes dunShopGlow{0%,100%{box-shadow:0 0 0 0 rgba(167,139,250,0),0 0 6px rgba(167,139,250,.18)}50%{box-shadow:0 0 0 1px rgba(167,139,250,.25),0 0 12px rgba(167,139,250,.38)}}
+header.dun .dun-shop{padding:.27rem .68rem;font-size:.85rem;gap:.3rem;border-color:rgba(196,181,253,.38);background:rgba(139,92,246,.1);opacity:1;animation:dunShopGlow 3.2s ease-in-out infinite}
+header.dun .dun-shop:hover{background:rgba(139,92,246,.18)}
+@media (max-width:640px){header.dun .dun-shop{padding:.26rem .56rem;font-size:.82rem;margin-right:6px}}
+@media (max-width:360px){header.dun .dun-shop{padding:.22rem .44rem;font-size:.78rem;margin-right:4px}}
+@media (prefers-reduced-motion:reduce){header.dun .dun-shop{animation:none;box-shadow:0 0 8px rgba(167,139,250,.28)}}
+/* v20: shop pill ~12% larger */
+header.dun .dun-shop{padding:.3rem .76rem;font-size:.95rem;gap:.34rem}
+@media (max-width:640px){header.dun .dun-shop{padding:.29rem .63rem;font-size:.92rem;margin-right:6px}}
+@media (max-width:360px){header.dun .dun-shop{padding:.25rem .5rem;font-size:.86rem;margin-right:4px}}
+/* v21: Shop pill sits right next to the logo */
+header.dun .dun-logo + .dun-shop{margin-left:-4px;margin-right:0;flex-shrink:0}
+@media (max-width:900px){header.dun .dun-logo + .dun-shop{margin-left:0}}
+/* v22: Shop pill - exactly one label at every width (long >640px, "Shop" <=640px) */
+header.dun .dun-shop{display:inline-flex;align-items:center;gap:.34rem;flex-shrink:0;line-height:1.1;white-space:nowrap;text-decoration:none;align-self:center}
+header.dun .dun-shop .dun-shop-l{display:inline!important}
+header.dun .dun-shop .dun-shop-s{display:none!important}
+@media (max-width:640px){header.dun .dun-shop .dun-shop-l{display:none!important}header.dun .dun-shop .dun-shop-s{display:inline!important}header.dun .dun-shop{gap:.28rem}}
+@media (max-width:360px){header.dun .dun-shop>span[aria-hidden]{display:none}}
+/* ===== Premium header v24 (Oct 27 2026): Z-pattern grid, container-aligned, clear current page ===== */
+header.dun{margin:0 0 20px;background:rgba(13,15,21,.78)!important;backdrop-filter:saturate(160%) blur(18px);-webkit-backdrop-filter:saturate(160%) blur(18px);border-bottom:1px solid rgba(255,255,255,.07)!important;box-shadow:0 1px 0 rgba(255,255,255,.02),0 8px 24px -12px rgba(0,0,0,.6)!important}
+header.dun::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,rgba(139,92,246,.45) 30%,rgba(99,102,241,.45) 70%,transparent);pointer-events:none}
+header.dun .dun-in{max-width:1200px;height:64px;padding:0 24px;gap:12px}
+header.dun .dun-logo{margin-right:6px}
+header.dun .dun-logo img{height:30px;transition:opacity .2s}header.dun .dun-logo:hover img{opacity:.85}
+header.dun .dun-links{gap:6px;margin:0;align-self:stretch;align-items:center}
+header.dun .dun-links a{position:relative;display:inline-flex;align-items:center;height:38px;padding:0 14px;border-radius:10px;font-size:.9rem;font-weight:500;letter-spacing:.005em;color:#a3a8b5;background:none;transition:color .18s,background .18s}
+header.dun .dun-links a:hover{color:#f3f4f7;background:rgba(255,255,255,.05)}
+header.dun .dun-links a[aria-current=page]{color:#fff;font-weight:600;background:rgba(139,92,246,.12)}
+header.dun .dun-links a::after{content:"";position:absolute;left:14px;right:14px;bottom:-13px;height:2px;border-radius:2px;background:linear-gradient(90deg,#a78bfa,#6366f1);box-shadow:0 0 10px rgba(139,92,246,.7);opacity:0;transform:scaleX(.4);transition:opacity .2s,transform .25s}
+header.dun .dun-links a:hover::after{opacity:.35;transform:scaleX(.7)}
+header.dun .dun-links a[aria-current=page]::after{opacity:1;transform:none}
+header.dun .dun-shop[aria-current=page]{background:rgba(139,92,246,.24);border-color:rgba(196,181,253,.7);color:#fff}
+header.dun .dun-right{gap:10px}
+header.dun .dun-signin{display:inline-flex;align-items:center;height:38px;padding:0 14px;border-radius:10px;font-size:.88rem;font-weight:500;color:#d5d8e0;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.02);transition:color .18s,background .18s,border-color .18s}
+header.dun .dun-signin:hover{color:#fff;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22)}
+header.dun .dun-signin[aria-current=page]{color:#fff;border-color:rgba(167,139,250,.6)}
+header.dun .dun-cta{height:38px;padding:0 18px;border-radius:10px;font-size:.88rem;font-weight:600;letter-spacing:.005em;color:#fff!important;background:linear-gradient(180deg,#6d64f5,#4f46e5)!important;border:1px solid rgba(255,255,255,.14)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 6px 18px -6px rgba(79,70,229,.7)!important;transition:transform .15s,box-shadow .2s,filter .2s}
+header.dun .dun-cta:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 10px 24px -8px rgba(79,70,229,.85)!important}
+header.dun .dun-cta[aria-current=page]{outline:2px solid rgba(167,139,250,.5);outline-offset:2px}
+header.dun a:focus-visible,header.dun button:focus-visible{outline:2px solid #a78bfa;outline-offset:2px}
+header.dun .dun-drawer a[aria-current=page]{color:#fff;font-weight:600;background:rgba(139,92,246,.14);box-shadow:inset 3px 0 0 #a78bfa}
+@media (min-width:960px){
+ header.dun .dun-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+ header.dun .dun-in>.dun-logo{grid-column:1;grid-row:1;justify-self:start}
+ header.dun .dun-in>.dun-shop{grid-column:1;grid-row:1;justify-self:start;margin-left:calc(189px * 30 / 34 + 18px)!important}
+ header.dun .dun-links{grid-column:2;grid-row:1;height:64px}
+ header.dun .dun-right{grid-column:3;grid-row:1;justify-self:end;margin:0}
+}
+@media (max-width:959px){header.dun .dun-in{height:58px;padding:0 16px}}
+@media (max-width:480px){header.dun .dun-cta{padding:0 10px;font-size:.76rem;height:34px}header.dun .dun-signin{border:0;padding:0 4px;font-size:.8rem;height:34px}}
+@media (prefers-reduced-motion:reduce){header.dun .dun-links a::after,header.dun .dun-cta{transition:none}}
+/* home hero card spans the same 1200px container as the header and project grid */
+.hc-top.hcx .hcx-card{max-width:none}
+@media (max-width:640px){header.dun .dun-in{padding:0 12px;gap:8px}header.dun .dun-right{gap:4px;min-width:0}header.dun .dun-logo{margin-right:0}}

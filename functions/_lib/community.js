@@ -263,16 +263,26 @@ export function getKv(env) {
 }
 
 export async function kvGetIndex(kv) {
+  const { index } = await readIndex(kv);
+  return index;
+}
+
+async function readIndex(kv) {
   const raw = await kv.get(INDEX_KEY, "json");
-  if (!raw || typeof raw !== "object") {
-    return { pending: [], approved: [], rejected: [], unpublished: [] };
-  }
+  const base = raw && typeof raw === "object" ? raw : {};
   return {
-    pending: Array.isArray(raw.pending) ? raw.pending : [],
-    approved: Array.isArray(raw.approved) ? raw.approved : [],
-    rejected: Array.isArray(raw.rejected) ? raw.rejected : [],
-    unpublished: Array.isArray(raw.unpublished) ? raw.unpublished : [],
+    raw: base,
+    index: {
+      pending: Array.isArray(base.pending) ? base.pending : [],
+      approved: Array.isArray(base.approved) ? base.approved : [],
+      rejected: Array.isArray(base.rejected) ? base.rejected : [],
+      unpublished: Array.isArray(base.unpublished) ? base.unpublished : [],
+    },
   };
+}
+
+async function writeIndex(kv, raw, index) {
+  await kv.put(INDEX_KEY, JSON.stringify({ ...(raw || {}), ...index }));
 }
 
 export async function kvSaveIndex(kv, index) {
@@ -292,7 +302,153 @@ export async function kvDeleteListing(kv, id) {
   await kv.delete(`community:item:${id}`);
 }
 
+const INDEX_BUCKETS = ["pending", "approved", "rejected", "unpublished"];
+const ITEM_PREFIX = "community:item:";
+
+function bucketFor(status) {
+  if (status === "approved" || status === "rejected" || status === "unpublished") return status;
+  return "pending";
+}
+
+function pushShelfLog(listing, entry) {
+  const prev = Array.isArray(listing.shelfLog) ? listing.shelfLog : [];
+  listing.shelfLog = prev.slice(-7).concat([{ at: Date.now(), ...entry }]);
+}
+
+/**
+ * A new video on a live listing waits in pendingVideo. The public videoUrl
+ * stays the one already on the shelf until a human approval promotes it.
+ */
+function holdNewVideo(existing, listing) {
+  const next = typeof listing.videoUrl === "string" ? listing.videoUrl : "";
+  const prev = typeof existing.videoUrl === "string" ? existing.videoUrl : "";
+  const signed = typeof existing.videoApprovedUrl === "string" ? existing.videoApprovedUrl : "";
+  if (!next || next === prev || next === signed) return;
+  listing.pendingVideo = { url: next, file: listing.videoFile || null, at: Date.now() };
+  listing.videoUrl = prev;
+  if (existing.videoFile) listing.videoFile = existing.videoFile;
+  else delete listing.videoFile;
+}
+
+function promotePendingVideo(listing) {
+  const pending = listing.pendingVideo;
+  if (!pending || !pending.url) return;
+  listing.videoUrl = pending.url;
+  if (pending.file) listing.videoFile = pending.file;
+  else delete listing.videoFile;
+  delete listing.pendingVideo;
+}
+
+/** Put id in exactly one index bucket (or none when bucket is null). Retries this id only. */
+async function moveIndexId(kv, id, bucket) {
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const { raw, index } = await readIndex(kv);
+    for (const name of INDEX_BUCKETS) {
+      index[name] = (index[name] || []).filter((x) => x !== id);
+    }
+    if (bucket) index[bucket].push(id);
+    await writeIndex(kv, raw, index);
+    const check = await kvGetIndex(kv);
+    const placed = !bucket || (check[bucket] || []).includes(id);
+    const elsewhere = INDEX_BUCKETS.some((name) => name !== bucket && (check[name] || []).includes(id));
+    if (placed && !elsewhere) return;
+  }
+  console.log("community index move uncertain", id, bucket || "removed");
+}
+
+async function scanItemIds(kv) {
+  const ids = [];
+  let cursor;
+  for (let pageN = 0; pageN < 20; pageN++) {
+    const page = await kv.list({ prefix: ITEM_PREFIX, cursor, limit: 1000 });
+    for (const key of page?.keys || []) {
+      const name = key && key.name ? key.name : String(key || "");
+      if (name.startsWith(ITEM_PREFIX)) ids.push(name.slice(ITEM_PREFIX.length));
+    }
+    if (!page || page.list_complete !== false || !page.cursor) break;
+    cursor = page.cursor;
+  }
+  return ids;
+}
+
+/**
+ * Make index.approved match items whose status is approved.
+ * Orphans (approved item, missing from the bucket) are added back.
+ * Stale approved-bucket ids whose item is not approved are removed.
+ * Does not change listing.status.
+ */
+export async function reconcileShelf(kv) {
+  const approvedIds = [];
+  for (const id of await scanItemIds(kv)) {
+    const row = await kvGetListing(kv, id);
+    if (row && row.status === "approved" && row.id) approvedIds.push(row.id);
+  }
+  let added = [];
+  let removed = [];
+  let changed = false;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const { raw, index } = await readIndex(kv);
+    const set = new Set(approvedIds);
+    for (const id of index.approved || []) {
+      if (set.has(id)) continue;
+      const row = await kvGetListing(kv, id);
+      if (row?.status === "approved") set.add(row.id || id);
+    }
+    const confirmed = [];
+    for (const id of set) {
+      const row = await kvGetListing(kv, id);
+      if (row?.status === "approved") confirmed.push(row.id || id);
+    }
+    const confirmedSet = new Set(confirmed);
+    const nextApproved = [];
+    for (const id of index.approved || []) {
+      if (confirmedSet.has(id) && !nextApproved.includes(id)) nextApproved.push(id);
+    }
+    for (const id of confirmed) {
+      if (!nextApproved.includes(id)) nextApproved.push(id);
+    }
+    const next = {
+      pending: (index.pending || []).filter((id) => !confirmedSet.has(id)),
+      approved: nextApproved,
+      rejected: (index.rejected || []).filter((id) => !confirmedSet.has(id)),
+      unpublished: (index.unpublished || []).filter((id) => !confirmedSet.has(id)),
+    };
+    // Keep a non-approved item addressable if we just took it out of the approved bucket.
+    for (const id of index.approved || []) {
+      if (confirmedSet.has(id)) continue;
+      const row = await kvGetListing(kv, id);
+      if (!row) continue;
+      const bucket = bucketFor(row.status);
+      if (bucket === "approved") continue;
+      if (!next[bucket].includes(id)) next[bucket].push(id);
+    }
+    const before = {
+      pending: index.pending || [],
+      approved: index.approved || [],
+      rejected: index.rejected || [],
+      unpublished: index.unpublished || [],
+    };
+    changed = JSON.stringify(next) !== JSON.stringify(before);
+    added = nextApproved.filter((id) => !(index.approved || []).includes(id));
+    removed = (index.approved || []).filter((id) => !nextApproved.includes(id));
+    if (!changed) break;
+    await writeIndex(kv, raw, next);
+    const check = await kvGetIndex(kv);
+    const missing = nextApproved.filter((id) => !(check.approved || []).includes(id));
+    if (!missing.length) break;
+  }
+  if (added.length || removed.length) {
+    console.log("community shelf reconcile", JSON.stringify({ added, removed }));
+  }
+  return { changed, approved: (await kvGetIndex(kv)).approved.length, added, removed };
+}
+
 export async function listApproved(kv) {
+  try {
+    await reconcileShelf(kv);
+  } catch (e) {
+    console.error("community shelf reconcile", e);
+  }
   const index = await kvGetIndex(kv);
   const out = [];
   for (const id of index.approved) {
@@ -319,21 +475,31 @@ export async function savePendingListing(kv, listing) {
   return saveListing(kv, row);
 }
 
-/** Save listing and place id in the index bucket matching listing.status. */
-export async function saveListing(kv, listing) {
-  const status = listing.status || "pending";
-  listing.status = status;
-  const index = await kvGetIndex(kv);
-  index.pending = index.pending.filter((x) => x !== listing.id);
-  index.approved = index.approved.filter((x) => x !== listing.id);
-  index.rejected = index.rejected.filter((x) => x !== listing.id);
-  index.unpublished = index.unpublished.filter((x) => x !== listing.id);
-  if (status === "approved") index.approved.push(listing.id);
-  else if (status === "rejected") index.rejected.push(listing.id);
-  else if (status === "unpublished") index.unpublished.push(listing.id);
-  else index.pending.push(listing.id);
+/**
+ * Save listing and place id in the index bucket matching listing.status.
+ * An approved listing stays approved unless opts.demote is set (creator
+ * unpublish, or setListingStatus for admin/owner/email reject and unpublish).
+ * @param {{ demote?: boolean, reason?: string }} [opts]
+ */
+export async function saveListing(kv, listing, opts = {}) {
+  const requested = listing.status || "pending";
+  listing.status = requested;
+  const existing = listing?.id ? await kvGetListing(kv, listing.id) : null;
+  if (existing?.status === "approved" && !opts.demote) {
+    if (requested !== "approved") {
+      const entry = { action: "kept_approved", blocked: requested, reason: opts.reason || "non_explicit" };
+      pushShelfLog(listing, entry);
+      listing.shelfGuard = entry;
+      console.log("community shelf guard", listing.id, "kept approved, blocked", requested, entry.reason);
+    }
+    holdNewVideo(existing, listing);
+    listing.status = "approved";
+  } else if (opts.demote && existing?.status === "approved" && requested !== "approved") {
+    pushShelfLog(listing, { action: "demote", from: "approved", to: requested, reason: opts.reason || "demote" });
+    console.log("community shelf demote", listing.id, requested, opts.reason || "demote");
+  }
   await kvPutListing(kv, listing);
-  await kvSaveIndex(kv, index);
+  await moveIndexId(kv, listing.id, bucketFor(listing.status));
   return listing;
 }
 
@@ -388,41 +554,39 @@ export async function verifyEmailModerationToken(env, { id, action, exp, sig }) 
   return { ok: true };
 }
 
-export async function setListingStatus(kv, id, status) {
+export async function setListingStatus(kv, id, status, opts = {}) {
   const listing = await kvGetListing(kv, id);
   if (!listing) return null;
-  const index = await kvGetIndex(kv);
-  index.pending = index.pending.filter((x) => x !== id);
-  index.approved = index.approved.filter((x) => x !== id);
-  index.rejected = index.rejected.filter((x) => x !== id);
-  index.unpublished = index.unpublished.filter((x) => x !== id);
+  const prev = listing.status;
   listing.status = status;
   listing.updatedAt = Date.now();
-  // A human approval also signs off the current video, so later clean edits stay live.
-  if (status === "approved" && listing.videoUrl) listing.videoApprovedUrl = listing.videoUrl;
-  if (status === "approved") index.approved.push(id);
-  else if (status === "pending") index.pending.push(id);
-  else if (status === "rejected") index.rejected.push(id);
-  else if (status === "unpublished") index.unpublished.push(id);
+  if (prev === "approved" && status !== "approved") {
+    pushShelfLog(listing, { action: "demote", from: prev, to: status, reason: opts.reason || "setListingStatus" });
+    console.log("community shelf demote", id, status, opts.reason || "setListingStatus");
+  }
+  // Human approval publishes a held video and signs off whatever is then public.
+  if (status === "approved") {
+    promotePendingVideo(listing);
+    if (listing.videoUrl) listing.videoApprovedUrl = listing.videoUrl;
+    delete listing.shelfGuard;
+  }
   await kvPutListing(kv, listing);
-  await kvSaveIndex(kv, index);
+  await moveIndexId(kv, id, bucketFor(status));
   return listing;
 }
 
 export async function deleteListing(kv, id) {
   const row = await kvGetListing(kv, id);
   const up = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(row?.videoUrl || "");
-  if (up) {
+  const pend = /^upload:(v_[A-Za-z0-9_-]{16,40})$/.exec(row?.pendingVideo?.url || "");
+  if (up || pend) {
     const { deleteVideo } = await import("./video.js");
-    await deleteVideo(kv, up[1]).catch(() => {});
+    if (up) await deleteVideo(kv, up[1]).catch(() => {});
+    if (pend && pend[1] !== up?.[1]) await deleteVideo(kv, pend[1]).catch(() => {});
   }
-  const index = await kvGetIndex(kv);
-  index.pending = index.pending.filter((x) => x !== id);
-  index.approved = index.approved.filter((x) => x !== id);
-  index.rejected = index.rejected.filter((x) => x !== id);
-  index.unpublished = index.unpublished.filter((x) => x !== id);
+  console.log("community shelf delete", id);
   await kvDeleteListing(kv, id);
-  await kvSaveIndex(kv, index);
+  await moveIndexId(kv, id, null);
 }
 
 export function timingSafeEqualStr(a, b) {

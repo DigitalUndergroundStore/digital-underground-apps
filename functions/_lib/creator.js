@@ -195,6 +195,7 @@ export function creatorListing(row) {
     category: row.category,
     priceLabel: row.priceLabel,
     reasons: row.status === "approved" ? [] : row.screening?.reasons || [],
+    pendingVideo: row.pendingVideo && row.pendingVideo.url ? { url: row.pendingVideo.url } : null,
     createdAt: row.createdAt,
     updatedAt: row.updatedAt,
   };

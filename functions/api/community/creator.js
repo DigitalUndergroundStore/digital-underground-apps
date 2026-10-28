@@ -174,7 +174,7 @@ export async function onRequest(context) {
   if (action === "unpublish") {
     row.status = "unpublished";
     row.updatedAt = Date.now();
-    await saveListing(kv, row);
+    await saveListing(kv, row, { demote: true, reason: "creator_unpublish" });
     return json({ ok: true, listing: creatorListing(row) });
   }
 
@@ -223,12 +223,15 @@ export async function onRequest(context) {
       if (dropVid) delete row.videoFile;
     }
     const decision = await rescreen(env, row);
-    // Same rules as new submissions; an unpublished listing stays hidden unless screening rejects it.
+    // Unpublished stays hidden unless screening rejects it. An approved listing
+    // is kept on the shelf by saveListing unless this call passes demote.
     row.status = row.status === "unpublished" && decision !== "rejected" ? "unpublished" : decision;
     row.updatedAt = Date.now();
     row.editedByCreatorAt = row.updatedAt;
-    await saveListing(kv, row);
-    if (dropVid) context.waitUntil(deleteVideo(kv, dropVid).catch(() => {}));
+    await saveListing(kv, row, { reason: "creator_edit" });
+    const liveVid = uploadVid(row.videoUrl);
+    const pendVid = uploadVid(row.pendingVideo && row.pendingVideo.url);
+    if (dropVid && dropVid !== liveVid && dropVid !== pendVid) context.waitUntil(deleteVideo(kv, dropVid).catch(() => {}));
     return json({ ok: true, listing: creatorListing(row) });
   }
 

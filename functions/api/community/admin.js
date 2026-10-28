@@ -8,9 +8,10 @@ import {
   json,
   listContacts,
   listPending,
+  reconcileShelf,
+  saveListing,
   setListingStatus,
   kvGetListing,
-  kvPutListing,
 } from "../../_lib/community.js";
 import {
   attachListing,
@@ -109,17 +110,21 @@ export async function onRequest(context) {
       await unlinkContact(kv, String(body.email || ""), "", [String(body.id || "")]);
       return json({ ok: true });
     }
+    if (action === "reconcile_shelf") {
+      const result = await reconcileShelf(kv);
+      return json({ ok: true, ...result });
+    }
 
     const id = typeof body.id === "string" ? body.id.trim() : "";
     if (!id) return json({ error: "Missing listing id." }, 400);
 
     if (action === "approve") {
-      const row = await setListingStatus(kv, id, "approved");
+      const row = await setListingStatus(kv, id, "approved", { reason: "admin_approve" });
       if (!row) return json({ error: "Listing not found." }, 404);
       return json({ ok: true, listing: row });
     }
     if (action === "reject") {
-      const row = await setListingStatus(kv, id, "rejected");
+      const row = await setListingStatus(kv, id, "rejected", { reason: "admin_reject" });
       if (!row) return json({ error: "Listing not found." }, 404);
       return json({ ok: true, listing: row });
     }
@@ -131,7 +136,7 @@ export async function onRequest(context) {
       const { acct, token } = await issueAccountToken(kv, existing);
       if (!existing) {
         row.creatorId = acct.id;
-        await kvPutListing(kv, row);
+        await saveListing(kv, row, { reason: "issue_creator_token" });
       }
       await attachListing(kv, acct, row.id);
       await linkContactToCreator(kv, row.email, acct.id);
@@ -143,7 +148,7 @@ export async function onRequest(context) {
       return json({ ok: true, deleted: id });
     }
     return json(
-      { error: "Unknown action. Use approve, reject, delete, issue_creator_token, delete_creator, unlink_contact_listing, backfill_contacts, or delete_contact." },
+      { error: "Unknown action. Use approve, reject, delete, reconcile_shelf, issue_creator_token, delete_creator, unlink_contact_listing, backfill_contacts, or delete_contact." },
       400
     );
   } catch (e) {

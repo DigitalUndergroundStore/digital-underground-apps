@@ -40,7 +40,7 @@ export async function onRequest(context) {
   }
 
   try {
-    const row = await setListingStatus(kv, id, status);
+    const row = await setListingStatus(kv, id, status, { reason: status === "approved" ? "email_approve" : "email_reject" });
     if (!row) {
       return htmlPage("Not found", `<h1>Listing not found</h1><p>ID: ${id}</p>`);
     }

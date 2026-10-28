@@ -16,7 +16,7 @@ import {
   unauthorized,
   verifyOwnerPasscode,
 } from "../../_lib/owner.js";
-import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
+import { clientIp, deleteListing, kvGetIndex, listPending, reconcileShelf, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
 
 const BACKUP_BASE = "https://du-backup.digitalunderground-store.workers.dev";
 
@@ -104,14 +104,18 @@ export async function onRequest(context) {
       return json({ error: "Invalid JSON." }, 400);
     }
     const action = body.action;
+    if (action === "reconcile_shelf") {
+      const result = await reconcileShelf(kv);
+      return json({ ok: true, ...result });
+    }
     const id = typeof body.id === "string" ? body.id.trim() : "";
     if (!id) return json({ error: "Missing listing." }, 400);
     if (action === "approve") {
-      const row = await setListingStatus(kv, id, "approved");
+      const row = await setListingStatus(kv, id, "approved", { reason: "owner_approve" });
       return row ? json({ ok: true, listing: row }) : json({ error: "Not found." }, 404);
     }
     if (action === "reject") {
-      const row = await setListingStatus(kv, id, "rejected");
+      const row = await setListingStatus(kv, id, "rejected", { reason: "owner_reject" });
       if (!row) return json({ error: "Not found." }, 404);
       if (typeof body.reason === "string" && body.reason.trim()) {
         row.rejectReason = body.reason.trim().slice(0, 500);
@@ -121,7 +125,7 @@ export async function onRequest(context) {
       return json({ ok: true, listing: row });
     }
     if (action === "unpublish") {
-      const row = await setListingStatus(kv, id, "unpublished");
+      const row = await setListingStatus(kv, id, "unpublished", { reason: "owner_unpublish" });
       return row ? json({ ok: true, listing: row }) : json({ error: "Not found." }, 404);
     }
     if (action === "delete") {

@@ -75,20 +75,25 @@ export async function onRequest(context) {
     const row = await ownedListing(kv, acct, m.listingId);
     if (!row) return json({ error: "Listing not found." }, 404);
     const old = uploadVid(row.videoUrl);
+    const previousPending = uploadVid(row.pendingVideo && row.pendingVideo.url);
     m.done = true; await putVideoMeta(kv, m);
     row.videoUrl = "upload:" + m.vid;
     row.videoFile = { type: m.type, size: m.size };
     try {
       const s = await screenListing(env, row);
       row.screening = { reasons: s.reasons, detail: s.detail, screenedAt: Date.now() };
+      // Approved listings stay on the shelf; saveListing holds the new video for review.
       row.status = row.status === "unpublished" && s.decision !== "rejected" ? "unpublished" : s.decision;
     } catch {
       row.screening = { reasons: ["Automatic screening failed; queued for human review."], screenedAt: Date.now() };
       if (row.status !== "unpublished") row.status = "pending";
     }
     row.updatedAt = Date.now();
-    await saveListing(kv, row);
-    if (old && old !== m.vid) context.waitUntil(deleteVideo(kv, old).catch(() => {}));
+    await saveListing(kv, row, { reason: "creator_video" });
+    const liveVid = uploadVid(row.videoUrl);
+    const pendVid = uploadVid(row.pendingVideo && row.pendingVideo.url);
+    const drop = [old, previousPending].filter((vid) => vid && vid !== liveVid && vid !== pendVid && vid !== m.vid);
+    if (drop.length) context.waitUntil(Promise.all(drop.map((vid) => deleteVideo(kv, vid).catch(() => {}))));
     return json({ ok: true, listing: creatorListing(row) });
   }
 

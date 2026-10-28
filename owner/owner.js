@@ -111,9 +111,11 @@
           ? '<img class="thumb" src="' + esc(row.imageUrl) + '" alt="" loading="lazy">'
           : "";
         var reasons = (row.screening && row.screening.reasons) || [];
-        var vm = /^upload:(v_[A-Za-z0-9_-]+)$/.exec(row.videoUrl || "");
-        var vidHref = vm ? "/api/community/video?v=" + vm[1] : row.videoUrl && /^https:\/\//.test(row.videoUrl) ? row.videoUrl : "";
-        var videoHtml = vidHref ? '<p class="small">Video' + (row.videoUrl === row.videoApprovedUrl ? " (approved)" : " (needs review)") + ': <a href="' + esc(vidHref) + '" target="_blank" rel="noopener">watch</a></p>' : "";
+        var pend = row.pendingVideo && row.pendingVideo.url;
+        var vm = /^upload:(v_[A-Za-z0-9_-]+)$/.exec(pend || row.videoUrl || "");
+        var vidSrc = pend || row.videoUrl || "";
+        var vidHref = vm ? "/api/community/video?v=" + vm[1] : /^https:\/\//.test(vidSrc) ? vidSrc : "";
+        var videoHtml = vidHref ? '<p class="small">Video' + (pend ? " (new, needs review — listing stays live)" : (row.videoUrl === row.videoApprovedUrl ? " (approved)" : " (needs review)")) + ': <a href="' + esc(vidHref) + '" target="_blank" rel="noopener">watch</a></p>' : "";
         var reasonHtml = reasons.length
           ? '<p class="small">Why it’s here: ' + esc(reasons.join("; ")) + "</p>"
           : "";
@@ -124,6 +126,9 @@
               '<button type="button" class="btn danger" data-act="reject" data-id="' + esc(row.id) + '">Reject</button>' +
               "</div>"
             : '<div class="actions">' +
+              (row.pendingVideo && row.pendingVideo.url
+                ? '<button type="button" class="btn ok" data-act="approve" data-id="' + esc(row.id) + '">Approve video</button>'
+                : "") +
               (row.status === "approved"
                 ? '<button type="button" class="btn ghost" data-act="unpublish" data-id="' + esc(row.id) + '">Unpublish</button>'
                 : "") +
@@ -260,6 +265,18 @@
     var goBtn = e.target.closest("[data-go]");
     if (goBtn && goBtn.getAttribute("data-go")) {
       go(goBtn.getAttribute("data-go"));
+      return;
+    }
+    var repair = e.target.closest("#reconcile-shelf");
+    if (repair) {
+      repair.disabled = true;
+      api("queue", { method: "POST", body: { action: "reconcile_shelf" } }).then(function (out) {
+        repair.disabled = false;
+        if (!out.r.ok) { alert((out.d && out.d.error) || "Failed"); return; }
+        var d = out.d || {};
+        var restored = d.added && d.added.length ? " Restored: " + d.added.join(", ") + "." : "";
+        alert("Public shelf checked. Live listings: " + (d.approved || 0) + "." + restored);
+      });
       return;
     }
     var tab = e.target.closest("#view-queue [data-tab]");

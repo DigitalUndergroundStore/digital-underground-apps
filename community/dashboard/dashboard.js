@@ -346,7 +346,7 @@
       .then(function (d) {
         setUploading(false);
         if (editing && editing.id === l.id) { editing = d.listing; ed.videoUrl = d.listing.videoUrl; ed.videoRemoved = false; $("ed-video").value = ""; videoNote(); }
-        toast(d.listing.status === "pending" ? "Video uploaded. It goes live after a quick review." : "Video uploaded.", true);
+        toast(d.listing.pendingVideo && d.listing.status === "approved" ? "Video uploaded. Your listing stays live; the new video appears after approval." : d.listing.status === "pending" ? "Video uploaded. It goes live after a quick review." : "Video uploaded.", true);
         load();
       })
       .catch(function (err) { setUploading(false); videoNote(); if (!err.canceled) toast(err.message, false); else toast("Upload canceled.", true); });

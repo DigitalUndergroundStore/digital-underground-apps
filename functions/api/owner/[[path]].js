@@ -1,3 +1,4 @@
+import { runProbes } from "../../_lib/health.js";
 import {
   buildOverview,
   checkLoginRate,
@@ -68,6 +69,16 @@ export async function onRequest(context) {
   }
 
   if (!(await ownerAuthorized(request, env))) return unauthorized();
+
+  if (head === "health" && request.method === "GET") {
+    try {
+      const probes = await runProbes(new URL(request.url).origin);
+      return json({ ok: true, probes });
+    } catch (e) {
+      console.error("owner health", e);
+      return json({ error: "Could not run health checks." }, 500);
+    }
+  }
 
   const kv = getKv(env);
   if (!kv) return json({ error: "Storage not ready." }, 503);

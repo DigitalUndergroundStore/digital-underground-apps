@@ -32,7 +32,7 @@
 
   function go(name) {
     view = name;
-    ["login", "home", "queue", "contacts", "support", "analytics", "backups", "links"].forEach(function (v) {
+    ["login", "home", "queue", "contacts", "support", "analytics", "backups", "health", "links"].forEach(function (v) {
       var el = $("view-" + v);
       if (!el) return;
       if (v === "login") el.classList.toggle("hidden", name !== "login");
@@ -45,6 +45,41 @@
     if (name === "support") loadSupport("open");
     if (name === "analytics") loadAnalytics();
     if (name === "backups") loadBackups();
+    if (name === "health") loadHealth();
+  }
+
+  // Owner login is Basic-Auth gated: 401/403 means the gate answered, not that the page is down.
+  function healthVerdict(row) {
+    var name = row.name || "Check";
+    var status = row.status || 0;
+    var path = row.path || "";
+    var owner = name === "Owner login" || path === "/owner" || path === "/owner/";
+    var up = (status >= 200 && status < 300) || (owner && (status === 401 || status === 403));
+    var state = !up ? "fail" : (row.ms > 1500 ? "slow" : "ok");
+    if (state === "fail") return { state: state, label: name + " down" + (status ? " (" + status + ")" : "") };
+    if (state === "slow") return { state: state, label: name + " slow" };
+    return { state: state, label: name + " ok" };
+  }
+
+  function loadHealth() {
+    var box = $("health-list");
+    box.innerHTML = '<p class="muted">Checking…</p>';
+    api("health").then(function (out) {
+      if (!out.r.ok) { go("login"); return; }
+      var rows = out.d.probes || [];
+      if (!rows.length) {
+        box.innerHTML = '<p class="muted">No checks.</p>';
+        return;
+      }
+      box.innerHTML = rows.map(function (row) {
+        var v = healthVerdict(row);
+        var cls = v.state === "ok" ? "badge ok" : v.state === "slow" ? "badge warn" : "badge";
+        var word = v.state === "ok" ? "OK" : v.state === "slow" ? "Slow" : "Down";
+        return '<div class="item"><span class="' + cls + '">' + word + "</span> <strong>" + esc(v.label) + "</strong></div>";
+      }).join("");
+    }).catch(function () {
+      box.innerHTML = '<p class="muted">Couldn’t run health checks.</p>';
+    });
   }
 
   function loadHome() {
@@ -64,6 +99,7 @@
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
         card("analytics", "Analytics", (w.views || 0), (w.clicks || 0) + " clicks · 7 days", "") +
         card("backups", "Backups", backup.lastSnapshot || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
+        card("health", "Health", "→", "Pages and APIs", "") +
         card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");
       $("home-today").innerHTML =
         '<div class="item" style="margin-top:14px"><strong>Today</strong>' +

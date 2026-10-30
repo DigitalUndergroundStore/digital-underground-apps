@@ -1,6 +1,174 @@
 {
-  "updated": "2026-10-30T18:47:49.387Z",
+  "updated": "2026-10-30T22:55:18.744Z",
   "articles": [
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/30/javits-frimpong-fatal-shooting-bronx-new-york",
+      "title": "Teen boy from Ghana chased and fatally shot on way to school in New York City",
+      "seendate": "20261030T224348Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/30/alaska-democrat-senate-mary-peltola-dan-sullivan",
+      "title": "Alaska prosecutor investigates alleged Democratic plot to confuse voters with second Dan Sullivan",
+      "seendate": "20261030T223508Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+      "title": "US approves sale of 500 Patriot missiles to Ukraine",
+      "seendate": "20261030T222052Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
+      "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
+      "seendate": "20261030T221152Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "seendate": "20261030T211314Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/swiss-supreme-court-upholds-liberian-ex-rebel-commanders-20-year-sentence?traffic_source=rss",
+      "title": "Swiss supreme court upholds Liberian ex-rebel commander’s 20-year sentence",
+      "seendate": "20261030T210051Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+      "seendate": "20261030T205518Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss",
+      "title": "Police deployed during stand-off over control of top Poland court",
+      "seendate": "20261030T205201Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Poland"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss",
+      "title": "They strangled us, says founder of Russian newspaper shut under pressure from authorities",
+      "seendate": "20261030T204151Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/us-appeals-court-again-rejects-trump-bid-to-set-aside-california-ballots?traffic_source=rss",
+      "title": "US appeals court again rejects Trump bid to set aside California ballots",
+      "seendate": "20261030T203950Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/g20-drops-group-photo-as-europeans-refuse-to-stand-with-lavrov?traffic_source=rss",
+      "title": "G20 drops group photo as Europeans refuse to stand with Lavrov",
+      "seendate": "20261030T203720Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
+      "seendate": "20261030T203446Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/aje-onl-nf_rubio-hosts-g20-talks-as-russias-lavrov-present-301026?traffic_source=rss",
+      "title": "Rubio hosts G20 talks as Russia’s Lavrov presence sparks tensions",
+      "seendate": "20261030T201336Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/port-sudan-families-can-barely-afford-water-as-shortages-persist?traffic_source=rss",
+      "title": "Port Sudan families can barely afford water as shortages persist",
+      "seendate": "20261030T201022Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/eu-and-canada-seek-deeper-ties-amid-worsening-global-uncertainty?traffic_source=rss",
+      "title": "EU and Canada seek deeper ties amid worsening global uncertainty",
+      "seendate": "20261030T200010Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
+      "title": "Canada and EU announce new alliance open to like-minded countries",
+      "seendate": "20261030T194215Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Canada"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/how-20-year-old-kimi-antonelli-is-making-f1-history?traffic_source=rss",
+      "title": "How 20-year-old Kimi Antonelli is making F1 history",
+      "seendate": "20261030T193903Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/what-to-know-about-the-midterm-elections-in-california?traffic_source=rss",
+      "title": "What to know about California’s midterm elections",
+      "seendate": "20261030T193849Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/30/why-is-netanyahu-accusing-palestinian-israeli-parties-of-fraud?traffic_source=rss",
+      "title": "Why is Netanyahu accusing Palestinian Israeli parties of fraud?",
+      "seendate": "20261030T193436Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/texas-grand-jury-indicts-ice-officer-accused-of-running-over-man-in-houston?traffic_source=rss",
+      "title": "Texas grand jury indicts ICE officer accused of running over man in Houston",
+      "seendate": "20261030T191630Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/pakistan-army-cautiously-optimistic-about-us-iran-mediation-efforts?traffic_source=rss",
+      "title": "Pakistan army ‘cautiously optimistic’ about US-Iran mediation efforts",
+      "seendate": "20261030T185536Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Pakistan"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/30/rick-ross-felony-charge-dropped-domestic-violence",
+      "title": "Florida prosecutors drop felony charge against Rick Ross in domestic violence case",
+      "seendate": "20261030T183911Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/israel-demolishes-homes-of-palestinians-blamed-for-attack-on-soldiers?traffic_source=rss",
+      "title": "Israel demolishes homes of Palestinians blamed for attack on soldiers",
+      "seendate": "20261030T183544Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz?traffic_source=rss",
+      "title": "Oman rescues 25 from burning oil tanker in Strait of Hormuz",
+      "seendate": "20261030T183329Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
     {
       "url": "https://www.theguardian.com/technology/2026/oct/30/tech-stocks-drop-earnings-report",
       "title": "Tech sell-off drives US markets down by nearly $1tn after subpar earnings reports",
@@ -14,13 +182,6 @@
       "seendate": "20261030T182713Z",
       "domain": "theguardian.com",
       "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
-      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
-      "seendate": "20261030T181727Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.theguardian.com/uk-news/2026/oct/30/men-accused-of-sexually-assaulting-woman-drugged-by-husband-describe-being-invited-to-couples-home",
@@ -58,25 +219,11 @@
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
-      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
-      "seendate": "20261030T174701Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
       "url": "https://www.aljazeera.com/news/longform/2026/10/30/how-cuts-under-colombias-de-la-espriella-threaten-a-key-human-rights-court?traffic_source=rss",
       "title": "How cuts under Colombia’s de la Espriella threaten a key human rights court",
       "seendate": "20261030T174321Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Colombia"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-      "seendate": "20261030T173943Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.theguardian.com/world/2026/oct/30/how-crypto-hacking-funds-isolated-north-korea-nuclear-programme",
@@ -91,20 +238,6 @@
       "seendate": "20261030T173427Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/30/ohio-festival-shooting-charges-dropped",
-      "title": "Charges dropped against man arrested in mass shooting at Ohio festival that wounded 12",
-      "seendate": "20261030T173100Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
-      "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
-      "seendate": "20261030T172520Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United States"
     },
     {
       "url": "https://www.theguardian.com/world/2026/oct/30/evacuation-besieged-ukrainian-city-oleshky",
@@ -147,139 +280,6 @@
       "seendate": "20261030T164900Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/29/binance-crypto-exchange-hack",
-      "title": "North Korea is likely culprit behind $6.3bn crypto hack, ‘largest heist in history’",
-      "seendate": "20261030T163544Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/police-in-scotland-launch-andrew-and-epstein-royal-castle-investigation?traffic_source=rss",
-      "title": "Police in Scotland launch Andrew and Epstein royal castle investigation",
-      "seendate": "20261030T162739Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
-      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
-      "seendate": "20261030T162611Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/30/arsenal-boss-arteta-fires-disneyland-warning-at-dowman-after-red-card?traffic_source=rss",
-      "title": "Arsenal boss Arteta fires ‘Disneyland’ warning at Dowman after red card",
-      "seendate": "20261030T162312Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/30/fda-remove-warnings-menopause-treatments",
-      "title": "FDA again bypasses advisers to remove black-box warnings from menopause treatments",
-      "seendate": "20261030T161507Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/30/novaya-gazeta-russia-independent-newspaper-to-close",
-      "title": "Russian society being ‘systematically crushed’ says Novaya Gazeta as newspaper announces closure",
-      "seendate": "20261030T155251Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/jerusalem-daily-israels-siege-on-hebron-displaces-thousands?traffic_source=rss",
-      "title": "Jerusalem Daily: Israel’s siege on Hebron displaces thousands",
-      "seendate": "20261030T155023Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/world/live/2026/oct/30/spain-investigates-toledo-crash-pedro-sanchez-france-italy-protests-latest-news-updates",
-      "title": "People of 27 nationalities may be among those killed or injured in Spain train crash, Sánchez says – as it happened",
-      "seendate": "20261030T154805Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/swiss-foreign-minister-talks-political-ties-on-rare-visit-to-north-korea?traffic_source=rss",
-      "title": "Swiss foreign minister talks political ties on rare visit to North Korea",
-      "seendate": "20261030T153703Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Switzerland"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/trump-reverses-course-reinstates-cancelled-campaign-rallies?traffic_source=rss",
-      "title": "Trump reverses course, reinstates cancelled campaign rallies",
-      "seendate": "20261030T153539Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/need-a-plan-b-yemenis-in-aden-prepare-for-another-war-as-missiles-fall?traffic_source=rss",
-      "title": "‘Need a Plan B’: Yemenis in Aden prepare for another war as missiles fall",
-      "seendate": "20261030T152600Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c63r529wn2vzo?at_medium=RSS&at_campaign=rss",
-      "title": "Democratic senator blames Egypt press crackdown on US military aid decision",
-      "seendate": "20261030T151711Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Egypt"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
-      "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
-      "seendate": "20261030T150929Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/science/2026/oct/30/perfume-bottle-child-necklace-pompeii-wardrobe",
-      "title": "Perfume bottle and child’s necklace among treasures found in Pompeii wardrobe",
-      "seendate": "20261030T150639Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cr93zxyn9eqeo?at_medium=RSS&at_campaign=rss",
-      "title": "Six dead after helicopter crashes in northern Indian state",
-      "seendate": "20261030T150605Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/israeli-forces-blow-up-homes-of-palestinians-accused-of-killing-soldiers?traffic_source=rss",
-      "title": "Israeli forces blow up homes of Palestinians accused of killing soldiers",
-      "seendate": "20261030T150600Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss",
-      "title": "Spain transport minister says he won't resign over high-speed rail disaster",
-      "seendate": "20261030T150339Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&at_campaign=rss",
-      "title": "Pope Leo XIV becomes first pontiff to vote in a US election",
-      "seendate": "20261030T144822Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/30/cost-of-living-protests-to-spread-to-germany-and-reignite-in-france-on-halloween",
-      "title": "Cost of living protests to spread to Germany and reignite in France on Halloween",
-      "seendate": "20261030T144246Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
     }
   ]
 }

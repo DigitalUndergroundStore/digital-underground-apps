@@ -1,6 +1,8 @@
 import {
   getKv,
   json,
+  kvGetListing,
+  notifyMakerApproved,
   setListingStatus,
   verifyEmailModerationToken,
 } from "../../_lib/community.js";
@@ -40,9 +42,13 @@ export async function onRequest(context) {
   }
 
   try {
+    const before = await kvGetListing(kv, id);
     const row = await setListingStatus(kv, id, status);
     if (!row) {
       return htmlPage("Not found", `<h1>Listing not found</h1><p>ID: ${id}</p>`);
+    }
+    if (status === "approved") {
+      await notifyMakerApproved(env, kv, row, request, before?.status || "");
     }
     const label = status === "approved" ? "approved" : "rejected";
     return htmlPage(

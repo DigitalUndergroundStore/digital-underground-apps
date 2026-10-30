@@ -16,7 +16,7 @@ import {
   unauthorized,
   verifyOwnerPasscode,
 } from "../../_lib/owner.js";
-import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
+import { clientIp, deleteListing, kvGetIndex, listPending, notifyMakerApproved, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
 
 const BACKUP_BASE = "https://du-backup.digitalunderground-store.workers.dev";
 
@@ -107,8 +107,11 @@ export async function onRequest(context) {
     const id = typeof body.id === "string" ? body.id.trim() : "";
     if (!id) return json({ error: "Missing listing." }, 400);
     if (action === "approve") {
+      const before = await kvGetListing(kv, id);
       const row = await setListingStatus(kv, id, "approved");
-      return row ? json({ ok: true, listing: row }) : json({ error: "Not found." }, 404);
+      if (!row) return json({ error: "Not found." }, 404);
+      const makerEmail = await notifyMakerApproved(env, kv, row, request, before?.status || "");
+      return json({ ok: true, listing: row, makerEmail });
     }
     if (action === "reject") {
       const row = await setListingStatus(kv, id, "rejected");

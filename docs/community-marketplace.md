@@ -41,7 +41,7 @@ On `POST /api/community/submit`, Pages Functions run:
 2. **Workers AI** — `@cf/meta/llama-guard-3-8b` on listing text; `@cf/llava-hf/llava-1.5-7b-hf` on logo/cover image.
 3. **Outcome** — clean → `approved` (live); clear violations → `rejected` with reasons; uncertain or AI errors → `pending`.
 
-Donald gets one email per submission (when mail is configured) with the result and 7-day signed **Approve** / **Reject** links (`GET /api/community/moderate-link`).
+Donald gets one email per submission (when mail is configured) with the result and 7-day signed **Approve** / **Reject** links (`GET /api/community/moderate-link`). The maker also gets a welcome email (pending or already live). A later pending → approved decision sends a short "you're live" email.
 
 ## Moderation
 
@@ -69,7 +69,14 @@ List pending: `GET /api/community/admin` with the same Bearer token.
 
 ## Mail
 
-If `RESEND_API_KEY` is not set, submissions are stored only (no email).
+Maker mail uses the same `sendCommunityEmail` path as owner alerts (Resend when `RESEND_API_KEY` is set, otherwise Mailchannels when `COMMUNITY_MAILCHANNELS=1`).
+
+- **Welcome** — after a listing is saved with status `pending` or `approved` and a valid `listing.email`. Auto-approve includes the live product URL in this message and does not send a second email. Rejected submissions are not welcomed.
+- **You're live** — when status changes from `pending` to `approved` via the owner queue (`POST /api/owner/queue`), community admin approve, or the one-tap moderation link.
+- **Idempotency** — `welcomeEmailSentAt` and `liveEmailSentAt` on the listing. A failed send clears the flag it just claimed and does not fail the API.
+- **Owner notify** — unchanged. One email per submission to `COMMUNITY_NOTIFY_EMAIL`.
+
+If neither Resend nor Mailchannels is configured, submissions are stored only (no email). Smoke test: submit a pending listing and confirm the maker inbox, then approve it once and confirm a single live email. Approve again and confirm no duplicate. A clean auto-approve should produce only the welcome, with both timestamps set.
 
 ## Creator dashboard (`/community/dashboard/`)
 

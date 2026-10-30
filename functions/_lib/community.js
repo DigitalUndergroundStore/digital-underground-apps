@@ -541,6 +541,217 @@ export async function notifySubmission(env, listing, request) {
   return sendCommunityEmail(env, { to, subject, text: lines.join("\n") });
 }
 
+const MAKER_SUPPORT_EMAIL = "digitalunderground.store@proton.me";
+
+function emailSafeLine(raw, max, fallback) {
+  const s = sanitizeText(raw, max).replace(/[\r\n\t]+/g, " ").replace(/\s+/g, " ").trim();
+  return s || fallback;
+}
+
+function makerSiteLinks(env, request) {
+  const origin = communitySiteOrigin(env, request);
+  return {
+    dashboard: `${origin}/community/dashboard/`,
+    profile: `${origin}/community/dashboard/#profile`,
+    league: `${origin}/league/`,
+    how: `${origin}/how-it-works/`,
+  };
+}
+
+/** Public product page. Same path the marketplace and creator dashboard use. */
+export function listingPublicUrl(id, env, request) {
+  const origin = communitySiteOrigin(env, request);
+  return `${origin}/community/p/?id=${encodeURIComponent(id || "")}`;
+}
+
+/**
+ * Welcome copy for a new listing. Approved listings get the live link here
+ * so submit does not also send the shorter "you're live" note.
+ */
+export function makerWelcomeEmail(listing, env, request) {
+  const project = emailSafeLine(listing?.name, 120, "your project");
+  const who = emailSafeLine(listing?.makerName, 80, "");
+  const links = makerSiteLinks(env, request);
+  const live = listing?.status === "approved";
+  const statusLine = live
+    ? `Your listing is live.\n${listingPublicUrl(listing?.id, env, request)}`
+    : "Your listing is in review. We'll email you when it's live.";
+  const shareStep = live
+    ? "3. Share your listing link where your users already hang out (X, Discord, newsletter). New listings float near the top of the projects list for 24 hours."
+    : "3. When it's live, share your listing link where your users already hang out (X, Discord, newsletter). New listings float near the top of the projects list for 24 hours.";
+  const text = [
+    who ? `Hi ${who},` : "Hi,",
+    "",
+    `Thanks for listing ${project} on Digital Underground — the free developer marketplace (zero cut; you keep your own checkout).`,
+    "",
+    statusLine,
+    "",
+    "What to do next:",
+    "",
+    `1. Open your Creator dashboard: ${links.dashboard} — edit your listing, see views and clicks, and manage your listings.`,
+    "",
+    `2. Customize your public maker page (logo, banner, bio, links): ${links.profile}`,
+    "",
+    shareStep,
+    "",
+    `4. Join Maker League for weekly visibility: ${links.league}`,
+    "",
+    `5. Skim How it works: ${links.how}`,
+    "",
+    "Tip: Maker Guide help chat is bottom-right on the site if you get stuck.",
+    "",
+    `Support: ${MAKER_SUPPORT_EMAIL}`,
+    "",
+    "— Digital Underground team",
+    "",
+    "You're getting this because you listed a project on digitalundergroundstore.com.",
+  ].join("\n");
+  return {
+    subject: `Welcome to Digital Underground — next steps for ${project}`,
+    text,
+  };
+}
+
+/** Short note when a pending listing is approved. Does not repeat the welcome. */
+export function makerLiveEmail(listing, env, request) {
+  const project = emailSafeLine(listing?.name, 120, "Your project");
+  const who = emailSafeLine(listing?.makerName, 80, "");
+  const links = makerSiteLinks(env, request);
+  const productUrl = listingPublicUrl(listing?.id, env, request);
+  const text = [
+    who ? `Hi ${who},` : "Hi,",
+    "",
+    `${project} is live on Digital Underground.`,
+    "",
+    productUrl,
+    "",
+    "Open your Creator dashboard to edit the listing and see views and clicks:",
+    links.dashboard,
+    "",
+    "Share that link where your users already hang out (X, Discord, newsletter). New listings float near the top of the projects list for 24 hours.",
+    "",
+    `Maker League is there for weekly visibility: ${links.league}`,
+    "",
+    `Questions: ${MAKER_SUPPORT_EMAIL}`,
+    "",
+    "— Digital Underground team",
+    "",
+    "You're getting this because you listed a project on digitalundergroundstore.com.",
+  ].join("\n");
+  return {
+    subject: `${project} is live on Digital Underground`,
+    text,
+  };
+}
+
+/**
+ * Stamp email flags before the send so a double approve does not mail twice.
+ * Rolls the stamp back when delivery does not succeed. flags[0] is the idempotency key.
+ */
+async function claimEmailFlags(kv, listing, flags) {
+  if (!kv || !listing?.id) return { claimed: true, at: null };
+  const fresh = (await kvGetListing(kv, listing.id)) || { ...listing };
+  if (fresh[flags[0]]) {
+    for (const flag of flags) {
+      if (fresh[flag]) listing[flag] = fresh[flag];
+    }
+    return { claimed: false, reason: "already_sent" };
+  }
+  const at = Date.now();
+  for (const flag of flags) {
+    if (!fresh[flag]) fresh[flag] = at;
+    listing[flag] = fresh[flag];
+  }
+  await kvPutListing(kv, fresh);
+  return { claimed: true, at };
+}
+
+async function releaseEmailFlags(kv, listing, flags, claimedAt) {
+  if (!kv || !listing?.id || claimedAt == null) return;
+  const fresh = await kvGetListing(kv, listing.id);
+  if (!fresh) return;
+  for (const flag of flags) {
+    if (fresh[flag] === claimedAt) delete fresh[flag];
+    if (listing[flag] === claimedAt) delete listing[flag];
+  }
+  await kvPutListing(kv, fresh);
+}
+
+async function deliverMakerEmail(env, kv, listing, flags, claim, payload) {
+  let out;
+  try {
+    out = await sendCommunityEmail(env, payload);
+  } catch (e) {
+    await releaseEmailFlags(kv, listing, flags, claim.at);
+    throw e;
+  }
+  if (!out.sent) await releaseEmailFlags(kv, listing, flags, claim.at);
+  return out;
+}
+
+/** Welcome the maker after a successful submit. Pending or approved only. Best-effort. */
+export async function sendMakerWelcome(env, kv, listing, request) {
+  const to = normalizeEmail(listing?.email);
+  if (!to) return { sent: false, reason: "no_email" };
+  const status = listing?.status || "pending";
+  if (status !== "pending" && status !== "approved") {
+    return { sent: false, reason: "not_welcome_status" };
+  }
+  if (listing.welcomeEmailSentAt) return { sent: false, reason: "already_sent" };
+
+  const flags = status === "approved"
+    ? ["welcomeEmailSentAt", "liveEmailSentAt"]
+    : ["welcomeEmailSentAt"];
+  const claim = await claimEmailFlags(kv, listing, flags);
+  if (!claim.claimed) return { sent: false, reason: claim.reason || "already_sent" };
+
+  const mail = makerWelcomeEmail(listing, env, request);
+  const out = await deliverMakerEmail(env, kv, listing, flags, claim, {
+    to,
+    subject: mail.subject,
+    text: mail.text,
+    replyTo: MAKER_SUPPORT_EMAIL,
+  });
+  console.log("community maker welcome", out.sent, out.status || out.reason || "");
+  return out;
+}
+
+/**
+ * Email the maker when a listing moves pending → approved.
+ * No-op if the welcome already covered a same-request auto-approve (liveEmailSentAt set).
+ */
+export async function sendMakerLiveEmail(env, kv, listing, request, previousStatus) {
+  const to = normalizeEmail(listing?.email);
+  if (!to) return { sent: false, reason: "no_email" };
+  if (previousStatus !== "pending") return { sent: false, reason: "not_pending_transition" };
+  if ((listing?.status || "") !== "approved") return { sent: false, reason: "not_approved" };
+  if (listing.liveEmailSentAt) return { sent: false, reason: "already_sent" };
+
+  const flags = ["liveEmailSentAt"];
+  const claim = await claimEmailFlags(kv, listing, flags);
+  if (!claim.claimed) return { sent: false, reason: claim.reason || "already_sent" };
+
+  const mail = makerLiveEmail(listing, env, request);
+  const out = await deliverMakerEmail(env, kv, listing, flags, claim, {
+    to,
+    subject: mail.subject,
+    text: mail.text,
+    replyTo: MAKER_SUPPORT_EMAIL,
+  });
+  console.log("community maker live", out.sent, out.status || out.reason || "");
+  return out;
+}
+
+/** Approve-path wrapper. Mail failures are logged and never fail the moderation request. */
+export async function notifyMakerApproved(env, kv, listing, request, previousStatus) {
+  try {
+    return await sendMakerLiveEmail(env, kv, listing, request, previousStatus);
+  } catch (e) {
+    console.error("community maker live email error", e);
+    return { sent: false, error: "live_email_threw" };
+  }
+}
+
 
 const CONTACT_PREFIX = "contact:";
 const CONTACT_SOURCE = "developer-marketplace";

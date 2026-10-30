@@ -68,7 +68,13 @@
   <section id="view-analytics" class="panel">
     <button type="button" class="back" data-go="home">← Home</button>
     <h1>Analytics</h1>
-    <p class="muted">Last 30 days — views & clicks</p>
+    <h2>Live</h2>
+    <p class="muted" id="live-sub">Online now</p>
+    <div id="live-kpis" class="card-grid"></div>
+    <div id="live-list" class="list" style="margin-top:12px"></div>
+    <p class="small" id="live-note"></p>
+    <h2 style="margin-top:22px">Last 30 days</h2>
+    <p class="muted">Views and clicks</p>
     <div class="chart" id="chart" aria-hidden="true"></div>
     <div id="analytics-list" class="list"></div>
   </section>

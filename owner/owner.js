@@ -1,6 +1,11 @@
 (function () {
   var view = "login";
   var overview = null;
+  var liveTimer = null;
+  var liveSeq = 0;
+  var liveData = null;
+  var liveOpen = {};
+  var liveVisitorOpen = {};
 
   function $(id) { return document.getElementById(id); }
   function esc(s) {
@@ -39,6 +44,11 @@
       else el.classList.toggle("is-on", name === v);
     });
     $("logout-btn").hidden = name === "login";
+    if (name !== "analytics" && liveTimer) {
+      clearInterval(liveTimer);
+      liveTimer = null;
+      liveSeq++;
+    }
     if (name === "home") loadHome();
     if (name === "queue") loadQueue("pending");
     if (name === "contacts") loadContacts("");
@@ -188,7 +198,113 @@
     });
   }
 
+  function appLabel(id) {
+    if (String(id).indexOf("kz-") === 0) return String(id).slice(3).replace(/-/g, " ");
+    return id === "home" ? "Homepage" : String(id).replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+  }
+  function uniqVisitors(apps) {
+    var seen = Object.create(null), n = 0;
+    (apps || []).forEach(function (a) {
+      var list = a.visitors || [];
+      if (!list.length) { n += a.count || 0; return; }
+      list.forEach(function (v, i) {
+        var k = v.visitorKey || ("tab:" + ((v.sessions && v.sessions[0] && v.sessions[0].id) || i));
+        if (!seen[k]) { seen[k] = 1; n++; }
+      });
+    });
+    return n;
+  }
+  function fmtWhen(ts) {
+    if (!ts) return "—";
+    try { return new Date(ts).toLocaleString(); } catch (e) { return "—"; }
+  }
+  function peopleOf(a) {
+    if (a.visitors && a.visitors.length) return a.visitors;
+    return (a.sessions || []).map(function (s) {
+      return { visitorKey: "", label: "Visitor", agoS: s.agoS, currentPath: s.path, sessions: [s], pages: [s.path] };
+    });
+  }
+  function visitorCard(appId, v) {
+    var key = appId + ":" + (v.visitorKey || (v.sessions && v.sessions[0] && v.sessions[0].id) || "x");
+    var open = !!liveVisitorOpen[key];
+    var status = v.status === "returning" ? "Returning" : v.status === "new" ? "New today" : "";
+    var tabs = (v.sessions || []).length;
+    var summary = esc(v.currentPath || (v.sessions && v.sessions[0] && v.sessions[0].path) || "/");
+    if (status) summary += " · " + esc(status);
+    if (tabs > 1) summary += " · " + tabs + " tabs";
+    if (v.ipShort) summary += " · IP " + esc(v.ipShort);
+    var head =
+      '<div data-live-visitor="' + esc(key) + '" style="cursor:pointer;padding-top:8px">' +
+      '<div style="display:flex;justify-content:space-between;gap:8px"><strong>' + (open ? "▾ " : "▸ ") + esc(v.label || "Visitor") + "</strong>" +
+      '<span class="small">' + (v.agoS != null ? v.agoS + "s ago" : "") + "</span></div>" +
+      '<div class="small">' + summary + "</div></div>";
+    if (!open) return head;
+    var geo = [v.country, v.region, v.city].filter(Boolean).map(esc).join(" · ");
+    var device = [v.device, v.os, v.browser].filter(Boolean).map(esc).join(" · ");
+    var net = (v.asn ? "AS" + esc(v.asn) : "") + (v.org ? (v.asn ? " · " : "") + esc(v.org) : "");
+    var pages = (v.pages || []).map(esc).join(" · ");
+    var sessions = (v.sessions || []).map(function (s) {
+      return '<div class="small">Tab ' + esc(s.id) + " · " + esc(s.path) + " · " + s.agoS + "s ago</div>";
+    }).join("");
+    return head + '<div class="small" style="padding:4px 0 8px 16px">' +
+      (geo ? "<div>" + geo + "</div>" : "") +
+      (device ? "<div>" + device + "</div>" : "") +
+      (net ? "<div>" + net + "</div>" : "") +
+      "<div>First seen " + esc(fmtWhen(v.firstSeen)) + " · last seen " + esc(fmtWhen(v.lastSeen)) + "</div>" +
+      (v.referrer ? "<div>Referrer " + esc(v.referrer) + "</div>" : "") +
+      (pages ? "<div>Pages " + pages + "</div>" : "") +
+      (v.visitorKey ? "<div>Visitor key " + esc(v.visitorKey) + "</div>" : "<div>No stable network key on this session</div>") +
+      (v.ip ? "<div>Owner-private IP " + esc(v.ip) + "</div>" : "") +
+      sessions + "</div>";
+  }
+  function renderLive(d) {
+    var apps = d.apps || [];
+    var du = apps.filter(function (a) { return String(a.appId).indexOf("kz-") !== 0; });
+    var kz = apps.filter(function (a) { return String(a.appId).indexOf("kz-") === 0; });
+    var dn = uniqVisitors(du), kn = uniqVisitors(kz);
+    $("live-sub").textContent = "Online now · " + (d.online || 0) + " unique visitors · " + (d.sessionCount || d.online || 0) + " tabs · updated " + new Date(d.generatedAt || Date.now()).toLocaleTimeString();
+    $("live-kpis").innerHTML =
+      '<div class="item"><div class="stat-row"><span>Online now</span><span><b>' + esc(d.online || 0) + '</b></span></div><div class="small">Unique visitors · last 3 min</div></div>' +
+      '<div class="item"><div class="stat-row"><span>Digital Underground</span><span><b>' + esc(dn) + '</b></span></div><div class="small">' + du.length + " apps</div></div>" +
+      '<div class="item"><div class="stat-row"><span>Kerzy Labs</span><span><b>' + esc(kn) + '</b></span></div><div class="small">' + kz.length + " games</div></div>";
+    function section(title, rows, empty) {
+      var n = uniqVisitors(rows);
+      var body = rows.length ? rows.map(function (a) {
+        var open = !!liveOpen[a.appId];
+        return '<div class="item"><div data-live-app="' + esc(a.appId) + '" style="cursor:pointer;display:flex;justify-content:space-between;gap:8px"><strong>' +
+          (open ? "▾ " : "▸ ") + esc(appLabel(a.appId)) + '</strong><span><b>' + esc(a.count) + '</b> online</span></div>' +
+          (open ? peopleOf(a).map(function (v) { return visitorCard(a.appId, v); }).join("") : "") + "</div>";
+      }).join("") : '<p class="muted">' + empty + "</p>";
+      return '<h2 style="margin:16px 0 8px">' + esc(title) + " · " + n + " online</h2>" + body;
+    }
+    $("live-list").innerHTML = section("Digital Underground", du, "Nobody on Digital Underground right now.") + section("Kerzy Labs", kz, "Nobody playing Kerzy Labs games right now.");
+    $("live-note").textContent = d.privacyNote || "Owner-only. Hashed IP visitor key, geo, and parsed device. No emails.";
+  }
+  function loadLive() {
+    var seq = liveSeq;
+    api("presence").then(function (out) {
+      if (seq !== liveSeq || view !== "analytics") return;
+      if (!out.r.ok) {
+        if (out.r.status === 401) go("login");
+        else if ($("live-sub")) $("live-sub").textContent = "Live visitors could not be loaded.";
+        return;
+      }
+      liveData = out.d;
+      renderLive(liveData);
+    }).catch(function () {
+      if ($("live-sub")) $("live-sub").textContent = "Live visitors could not be loaded.";
+    });
+  }
+  function ensureLiveTimer() {
+    if (liveTimer) return;
+    liveTimer = setInterval(function () {
+      if (view === "analytics") loadLive();
+    }, 20000);
+  }
+
   function loadAnalytics() {
+    loadLive();
+    ensureLiveTimer();
     api("analytics").then(function (out) {
       if (!out.r.ok) { go("login"); return; }
       var chart = out.d.chart || [];
@@ -257,6 +373,20 @@
   });
 
   document.body.addEventListener("click", function (e) {
+    var visitorHit = e.target.closest && e.target.closest("[data-live-visitor]");
+    if (visitorHit) {
+      var vk = visitorHit.getAttribute("data-live-visitor");
+      liveVisitorOpen[vk] = !liveVisitorOpen[vk];
+      if (liveData) renderLive(liveData);
+      return;
+    }
+    var appHit = e.target.closest && e.target.closest("[data-live-app]");
+    if (appHit) {
+      var appId = appHit.getAttribute("data-live-app");
+      liveOpen[appId] = !liveOpen[appId];
+      if (liveData) renderLive(liveData);
+      return;
+    }
     var goBtn = e.target.closest("[data-go]");
     if (goBtn && goBtn.getAttribute("data-go")) {
       go(goBtn.getAttribute("data-go"));

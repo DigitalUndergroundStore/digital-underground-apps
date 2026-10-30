@@ -176,6 +176,16 @@ export async function onRequest(context) {
     return json({ error: "Unknown action." }, 400);
   }
 
+  if (head === "presence" && request.method === "GET") {
+    try {
+      const { ownerPresence } = await import("../../_lib/presence.js");
+      return json(await ownerPresence(kv));
+    } catch (e) {
+      console.error("owner presence", e);
+      return json({ error: "Could not load live presence." }, 500);
+    }
+  }
+
   if (head === "analytics" && request.method === "GET") {
     const index = await kvGetIndex(kv);
     const ids = [...new Set([...(index.approved || []), ...(index.unpublished || [])])].slice(0, 80);

@@ -5,6 +5,7 @@ import {
   json,
   notifySubmission,
   saveListing,
+  sendMakerWelcome,
   upsertContact,
   validateSubmission,
   verifyTurnstile,
@@ -170,6 +171,14 @@ export async function onRequest(context) {
     notify = { sent: false, error: "notify_threw" };
   }
 
+  let makerEmail = { sent: false, reason: "not_attempted" };
+  try {
+    makerEmail = await sendMakerWelcome(env, kv, listing, request);
+  } catch (e) {
+    console.error("community maker welcome error", e);
+    makerEmail = { sent: false, error: "welcome_threw" };
+  }
+
   const messages = {
     approved:
       "Thanks — your project passed review and is live on the community marketplace.",
@@ -190,6 +199,7 @@ export async function onRequest(context) {
     status: listing.status,
     message: messages[listing.status] || messages.pending,
     notify,
+    makerEmail,
     newAccount: isNew,
     signedIn: signIn,
     attachedUnclaimed,

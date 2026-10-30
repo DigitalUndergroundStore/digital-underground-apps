@@ -18,6 +18,7 @@ import {
   validateSubmission,
   kvGetListing,
   kvPutListing,
+  notifyMakerApproved,
 } from "../../_lib/community.js";
 import {
   accountIdForLogin,
@@ -155,9 +156,11 @@ export async function onRequest(context) {
     if (!id) return json({ error: "Missing listing id." }, 400);
 
     if (action === "approve") {
+      const before = await kvGetListing(kv, id);
       const row = await setListingStatus(kv, id, "approved");
       if (!row) return json({ error: "Listing not found." }, 404);
-      return json({ ok: true, listing: row });
+      const makerEmail = await notifyMakerApproved(env, kv, row, request, before?.status || "");
+      return json({ ok: true, listing: row, makerEmail });
     }
     if (action === "reject") {
       const row = await setListingStatus(kv, id, "rejected");

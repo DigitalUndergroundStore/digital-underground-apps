@@ -1,225 +1,500 @@
 #!/usr/bin/env python3
-"""LIVE /store/ (redesign, went live Oct 22 2026) -> store/index.html + store/p/<slug>/index.html.
-Product data is parsed from src/store-legacy/index.html (snapshot of the old live store; edit products there, then re-run).
-Keeps store/covers, store/media, track.js, og images. Run apply-site-nav.py / seo-meta.py are not needed: chrome + SEO are stamped here."""
-import json, re, html, os, importlib.util
-from bs4 import BeautifulSoup
-R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-spec = importlib.util.spec_from_file_location("sn", f"{R}/scripts/site-nav.py"); sn = importlib.util.module_from_spec(spec); spec.loader.exec_module(sn)
-s = BeautifulSoup(open(f"{R}/src/store-legacy/index.html", encoding="utf8").read(), "html.parser")
-EXCLUDE = re.compile(r"easy tracker", re.I)
-LABEL = {"featured":"Featured","freelance":"Freelance","focus":"Focus & life","ai":"AI tools","apps":"Apps","bundles":"Bundles","books":"Books & stories","free":"Free downloads"}
-secs, seen = [], set()
-for sec in s.select("section[id]"):
-    if sec["id"] not in LABEL: continue
+"""Generate /store/index.html from scripts/store/catalog.json.
+
+The storefront HTML is generated. Edit this script, store/store.css, store/store.js,
+or the catalog — then re-run. Do not hand-edit store/index.html.
+
+PlanetView Live is CA$24 on Gumroad (product oxnfvy, code DUFREEPV). The storefront
+always shows "Free with signup" and links to /free-planetview/. That override runs
+on every generate, including --force-live / --from-html, which refresh list prices
+from the current public store page.
+
+  python3 scripts/gen-store.py
+  python3 scripts/gen-store.py --from-html /path/to/store.html
+  python3 scripts/gen-store.py --force-live
+"""
+from __future__ import annotations
+
+import argparse
+import html
+import json
+import re
+import urllib.request
+from collections import OrderedDict
+from html import unescape
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+CATALOG_PATH = ROOT / "scripts" / "store" / "catalog.json"
+NAV_PATH = ROOT / "scripts" / "store" / "partials" / "site-nav.html"
+FOOT_PATH = ROOT / "scripts" / "store" / "partials" / "site-foot.html"
+OUT = ROOT / "store" / "index.html"
+LIVE_URL = "https://digitalundergroundstore.com/store/"
+
+CATS = [
+    ("all", "All"),
+    ("featured", "Featured"),
+    ("freelance", "Freelance"),
+    ("focus", "Focus & life"),
+    ("ai", "AI tools"),
+    ("apps", "Apps"),
+    ("bundles", "Bundles"),
+    ("books", "Books"),
+    ("free", "Free"),
+]
+# Collections counted in the hero. "all" is not a collection. Thrillers is a separate page.
+COLLECTION_IDS = [cid for cid, _ in CATS if cid != "all"]
+
+
+def is_planetview(product: dict) -> bool:
+    page = (product.get("page") or "").rstrip("/")
+    return (
+        page.endswith("/planetview-live")
+        or product.get("gumroad") == "oxnfvy"
+        or product.get("name") == "PlanetView Live"
+    )
+
+
+def apply_storefront(product: dict) -> dict:
+    """Copy a catalog row and apply storefront-only price rules."""
+    item = dict(product)
+    item["sections"] = list(product.get("sections") or [])
+    if is_planetview(item):
+        item["gumroad"] = "oxnfvy"
+        item["list_price"] = "CA$24"
+        item["coupon"] = "DUFREEPV"
+        item["price_label"] = "Free with signup"
+        item["cta_href"] = "/free-planetview/"
+        item["cta"] = "Get it free"
+        item["cta_external"] = False
+        item["coming_soon"] = False
+        item["tag"] = "Live"
+        if "featured" not in item["sections"]:
+            item["sections"].insert(0, "featured")
+    label = (item.get("price_label") or "").strip().lower()
+    item["free"] = label.startswith("free")
+    return item
+
+
+def stamp_planetview_meta(product: dict) -> dict:
+    if is_planetview(product):
+        product["gumroad"] = "oxnfvy"
+        product["list_price"] = "CA$24"
+        product["coupon"] = "DUFREEPV"
+    return product
+
+
+def _section_at(sections: list[tuple[int, str]], pos: int) -> str:
+    current = "featured"
+    for start, sid in sections:
+        if start <= pos:
+            current = sid
+        else:
+            break
+    return current
+
+
+def parse_live_store(page_html: str) -> dict:
+    """Pull product cards out of a generated /store/ page (live or previous)."""
+    main_m = re.search(r'<main id="main">([\s\S]*?)<!--du-site-foot-->', page_html)
+    if not main_m:
+        main_m = re.search(r'<main class="main" id="catalog">([\s\S]*?)</main>', page_html)
+    if not main_m:
+        raise SystemExit("Could not find the store <main> in the HTML.")
+    main = main_m.group(1)
+    sections = [(m.start(), m.group(1)) for m in re.finditer(r'<section class="s" id="([^"]+)">', main)]
+    # Redesigned pages keep data-cats on articles. Prefer that when the old section markup is gone.
+    if not sections and 'class="card"' in main:
+        return _parse_redesign(page_html)
+
+    notes: dict[str, str] = {}
+    for m in re.finditer(r'<p class="(?:du-freestrip|au-bridge|filter-note)"[\s\S]*?</p>', main):
+        sid = _section_at(sections, m.start()) if sections else ""
+        note_attr = re.search(r'data-note="([^"]+)"', m.group(0))
+        key = note_attr.group(1) if note_attr else sid
+        if key:
+            notes[key] = re.sub(r'\sstyle="[^"]*"', "", m.group(0))
+
+    merged: OrderedDict[str, dict] = OrderedDict()
+    for part in re.split(r'(?=<div class="pc )', main)[1:]:
+        name_a = re.search(r'<a class="pc-a" href="([^"]+)">([\s\S]*?)</a>', part)
+        if not name_a:
+            continue
+        img = re.search(r'<img src="([^"]+)"', part)
+        desc = re.search(r'<span class="pc-d">([\s\S]*?)</span>', part)
+        price = re.search(r'<span class="pc-p">([\s\S]*?)</span>', part)
+        cta = re.search(r'<a class="pc-c" href="([^"]+)"([^>]*)>([\s\S]*?)</a>', part)
+        pos = main.find(part[:120])
+        name = unescape(re.sub(r"<[^>]+>", "", name_a.group(2))).strip()
+        cta_text = unescape(re.sub(r"<[^>]+>", "", cta.group(3))).replace("→", "").strip() if cta else ""
+        href = cta.group(1) if cta else ""
+        gum = re.search(r"gumroad\.com/l/([A-Za-z0-9]+)", href)
+        page = name_a.group(1)
+        row = {
+            "name": name,
+            "page": page,
+            "desc": unescape(re.sub(r"<[^>]+>", "", desc.group(1))).strip() if desc else "",
+            "img": img.group(1) if img else "",
+            "price_label": unescape(re.sub(r"<[^>]+>", "", price.group(1))).strip() if price else "",
+            "cta_href": href,
+            "cta": cta_text,
+            "cta_external": bool(cta and 'target="_blank"' in cta.group(2)),
+            "coming_soon": cta_text.lower().startswith("coming soon"),
+            "sections": [_section_at(sections, pos if pos >= 0 else 0)],
+            "gumroad": gum.group(1) if gum else None,
+        }
+        stamp_planetview_meta(row)
+        prev = merged.get(page)
+        if prev is None:
+            merged[page] = row
+        else:
+            for sid in row["sections"]:
+                if sid not in prev["sections"]:
+                    prev["sections"].append(sid)
+    if len(merged) < 40:
+        raise SystemExit(f"Parsed only {len(merged)} products; refusing to overwrite the catalog.")
+    return {"notes": notes, "products": list(merged.values())}
+
+
+def _parse_redesign(page_html: str) -> dict:
+    """Fallback parser for this generator's own HTML, used by --from-html on a redesign."""
+    raise SystemExit("Refusing to rebuild the catalog from redesigned HTML. Pass the pre-redesign store page or edit catalog.json.")
+
+
+def load_catalog() -> dict:
+    data = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+    if "products" not in data:
+        raise SystemExit(f"{CATALOG_PATH} has no products list.")
+    return data
+
+
+def save_catalog(data: dict) -> None:
+    CATALOG_PATH.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def esc(value: str) -> str:
+    return html.escape(value or "", quote=True)
+
+
+def cta_label(product: dict) -> str:
+    if product.get("coming_soon"):
+        return "Preview"
+    if product.get("free"):
+        return "Get free"
+    return "Buy"
+
+
+def card_html(product: dict, index: int) -> str:
+    cats = " ".join(product["sections"])
+    search = f"{product['name']} {product['desc']}".lower()
+    free = "1" if product["free"] else "0"
+    external = ' target="_blank" rel="noopener"' if product.get("cta_external") else ""
+    price_class = "card-price free" if product["free"] else "card-price"
+    tag = ""
+    if product.get("tag"):
+        tag_class = "card-tag live" if str(product["tag"]).lower() == "live" else "card-tag"
+        tag = f'<span class="{tag_class}">{esc(product["tag"])}</span>'
+    label = cta_label(product)
+    aria = product["cta"] if product.get("coming_soon") else f'{label} — {product["name"]}'
+    if is_planetview(product):
+        aria = "Get PlanetView Live free with email signup"
+    return f"""<article class="card" data-page="{esc(product['page'])}" data-cats="{esc(cats)}" data-free="{free}" data-search="{esc(search)}">
+            {tag}
+            <a class="card-media" href="{esc(product['page'])}">
+              <img src="{esc(product['img'])}" alt="{esc(product['name'] + ' cover')}" width="640" height="360" loading="{'eager' if index < 6 else 'lazy'}" decoding="async"{' fetchpriority="high"' if index == 0 else ''}>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title"><strong><a href="{esc(product['page'])}">{esc(product['name'])}</a></strong></h3>
+              <p class="card-desc">{esc(product['desc'])}</p>
+              <div class="card-footer">
+                <span class="{price_class}">{esc(product['price_label'])}</span>
+                <a class="card-cta" href="{esc(product['cta_href'])}"{external} aria-label="{esc(aria)}">{esc(label)} <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>"""
+
+
+def promo_html(products: list[dict]) -> str:
+    wanted = [
+        ("/store/p/he-came-home-without-her/", None),
+        ("/store/p/planetview-live/", "/free-planetview/"),
+    ]
+    by_page = {p["page"].rstrip("/"): p for p in products}
+    links = []
+    for page, href_override in wanted:
+        product = by_page.get(page.rstrip("/"))
+        if not product:
+            continue
+        href = href_override or product["page"]
+        links.append(
+            f'<a href="{esc(href)}"><span class="promo-title">{esc(product["name"])}</span>'
+            f'<span class="promo-meta">{esc(product["price_label"])}</span></a>'
+        )
+    if not links:
+        return ""
+    return (
+        '<div class="promo-strip" role="note"><span class="label">🎃 This weekend</span>'
+        f'<div class="promo-links">{"".join(links)}</div></div>'
+    )
+
+
+def notes_html(notes: dict) -> str:
+    chunks = []
+    for key in ("freelance", "focus", "free"):
+        raw = notes.get(key)
+        if not raw:
+            continue
+        raw = re.sub(r'\sstyle="[^"]*"', "", raw)
+        raw = re.sub(r'class="[^"]*"', 'class="filter-note"', raw, count=1)
+        if "data-note=" not in raw:
+            raw = raw.replace("<p ", f'<p data-note="{esc(key)}" hidden ', 1)
+        chunks.append(raw)
+    return "\n".join(chunks)
+
+
+def ld_json(products: list[dict]) -> str:
     items = []
-    for c in sec.select(".card"):
-        a = c if c.name == "a" else (c.select_one("a.info") or c.select_one("a"))
-        n, p, b = c.select_one("strong"), c.select_one(".price"), c.select_one(".blurb")
-        img, v = c.select_one("img"), c.select_one("video")
-        if not (a and n and p): continue
-        name = n.get_text(strip=True)
-        if EXCLUDE.search(name) or not ("gumroad.com" in a["href"] or a["href"].startswith("https://digitalundergroundstore.com/tools/")): continue  # Gumroad products + DU-hosted free web tools
-        cover = img["src"] if img else v["poster"]
-        items.append(dict(name=name, price=p.get_text(strip=True), blurb=b.get_text(strip=True) if b else "", href=a["href"], cover="/store/" + cover))
-    if items: secs.append((sec["id"], items))
-E = html.escape
-def slug(name): return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
-for _, its in secs:
-    for d in its: d["slug"] = slug(d["name"])
-# Wave AC: CTA overrides ported from Wave AB static patches. Legacy source keeps Gumroad prices;
-# these products are offered free on-site, so cards must say so and link to the free path.
-CTA = {
-  # Oct 26 2026 rule: free signup = audiobook only; Book 1 ebook sells at CA$9.99 (legacy Gumroad price).
-  "Pantry Week": dict(price="Free beta", href=None, ext=True, cta="Get free", aria="Get the Pantry Week free beta on Gumroad (opens in a new tab)"),
-}
-def cta(d):
-    o = CTA.get(d["name"])
-    if o: return dict(price=o["price"], href=o["href"] or d["href"], ext=o["ext"], cta=o["cta"], aria=o["aria"])
-    free = d["price"] == "Free"
-    return dict(price=d["price"], href=d["href"], ext=True, cta="Get it free" if free else "Buy",
-                aria=f'{"Get" if free else "Buy"} {d["name"]} {"on Gumroad" if "gumroad.com" in d["href"] else "(free web app)"} (opens in a new tab)')
-def card(d, feat=False):
-    # Whole card links to the preview detail page (stretched title link); the pill goes to checkout or the free path (see CTA).
-    c = cta(d); tgt = ' target="_blank" rel="noopener"' if c["ext"] else ""
-    return (f'<div class="pc{" pc-f" if feat else ""} rv">'
-      f'<span class="pc-cv"><img src="{E(d["cover"])}" alt="{E(d["name"])} cover" loading="lazy" decoding="async"></span>'
-      f'<span class="pc-b"><strong><a class="pc-a" href="/store/p/{d["slug"]}/">{E(d["name"])}</a></strong><span class="pc-d">{E(d["blurb"])}</span>'
-      f'<span class="pc-r"><span class="pc-p">{E(c["price"])}</span><a class="pc-c" href="{E(c["href"])}"{tgt} aria-label="{E(c["aria"])}">{E(c["cta"])} <i>→</i></a></span></span></div>')
-HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{t}</title>
-<meta name="description" content="{desc}">
-<link rel="canonical" href="{url}">
+    for index, product in enumerate(products, start=1):
+        items.append({
+            "@type": "ListItem",
+            "position": index,
+            "url": "https://digitalundergroundstore.com" + product["page"],
+            "name": product["name"],
+        })
+    graph = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://digitalundergroundstore.com/#org",
+                "name": "Digital Underground",
+                "url": "https://digitalundergroundstore.com/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://digitalundergroundstore.com/assets/logo/du-mark.png",
+                    "width": 1024,
+                    "height": 1024,
+                },
+                "sameAs": ["https://x.com/DigitalUG_Store"],
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://digitalundergroundstore.com/#website",
+                "name": "Digital Underground",
+                "url": "https://digitalundergroundstore.com/",
+                "publisher": {"@id": "https://digitalundergroundstore.com/#org"},
+            },
+            {
+                "@type": "CollectionPage",
+                "@id": "https://digitalundergroundstore.com/store/#page",
+                "url": "https://digitalundergroundstore.com/store/",
+                "name": "Digital Underground store",
+                "description": "Digital products designed around you: Apps, Guides & AI tools. Pay once.",
+                "isPartOf": {"@id": "https://digitalundergroundstore.com/#website"},
+                "publisher": {"@id": "https://digitalundergroundstore.com/#org"},
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "numberOfItems": len(items),
+                    "itemListElement": items,
+                },
+            },
+        ],
+    }
+    return json.dumps(graph, ensure_ascii=False, separators=(",", ":"))
+
+
+def site_nav() -> str:
+    raw = NAV_PATH.read_text(encoding="utf-8")
+    raw = raw.replace(
+        '<a class="dun-shop" href="/store/">',
+        '<a class="dun-shop" href="/store/" aria-current="page">',
+        1,
+    )
+    return raw
+
+
+def render(catalog: dict) -> str:
+    products = [apply_storefront(p) for p in catalog["products"]]
+    count = len(products)
+    collections = len(COLLECTION_IDS)
+    cat_buttons = []
+    for cid, label in CATS:
+        current = "true" if cid == "all" else "false"
+        active = " active" if cid == "all" else ""
+        cat_buttons.append(
+            f'<button class="cat-btn{active}" type="button" data-cat="{cid}" role="tab" aria-selected="{current}">{esc(label)}</button>'
+        )
+    cat_buttons.append('<a class="cat-btn" href="/store/thrillers/">Thrillers</a>')
+    cards = "\n".join(card_html(p, i) for i, p in enumerate(products))
+    nav = site_nav()
+    foot = FOOT_PATH.read_text(encoding="utf-8")
+    sub = (
+        f"{count} tools, apps, prompt packs and books from independent makers. "
+        "No subscriptions. No lock-in. Download and keep."
+    )
+    return f"""<!DOCTYPE html>
+<!-- Generated by scripts/gen-store.py. Edit the generator, scripts/store/catalog.json, store/store.css, or store/store.js. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Underground: Apps, AI Tools, Books &amp; Dev Marketplace</title>
+<meta name="description" content="Digital products designed around you: Apps, Guides &amp; AI tools. Pay once.">
+<link rel="canonical" href="https://digitalundergroundstore.com/store/">
 <meta property="og:site_name" content="Digital Underground">
-<meta property="og:title" content="{ogt}">
-<meta property="og:description" content="{desc}">
-<meta property="og:type" content="{ogtype}">
-<meta property="og:url" content="{url}">
-<meta property="og:image" content="{img}">
-<meta property="og:image:secure_url" content="{img}">
-<meta property="og:image:alt" content="{imgalt}">
+<meta property="og:title" content="Digital Underground">
+<meta property="og:description" content="Digital products designed around you: Apps, Guides &amp; AI tools. Pay once.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://digitalundergroundstore.com/store/">
+<meta property="og:image" content="https://digitalundergroundstore.com/store/og-v2.jpg">
+<meta property="og:image:secure_url" content="https://digitalundergroundstore.com/store/og-v2.jpg">
+<meta property="og:image:alt" content="Digital Underground. Digital products designed around you: Apps, Guides and AI tools. Pay once.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{ogt}">
-<meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="{img}">
-<meta name="twitter:image:alt" content="{imgalt}">
-<meta name="theme-color" content="#11141a">
+<meta name="twitter:title" content="Digital Underground">
+<meta name="twitter:description" content="Digital products designed around you: Apps, Guides &amp; AI tools. Pay once.">
+<meta name="twitter:image" content="https://digitalundergroundstore.com/store/og-v2.jpg">
+<meta name="twitter:image:alt" content="Digital Underground. Digital products designed around you: Apps, Guides and AI tools. Pay once.">
+<meta name="theme-color" content="#07070b">
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <link rel="manifest" href="/site.webmanifest">
-{ld}
-<style>
-:root{--bg:#11141a;--v1:#9a97e8;--v2:#9a97e8;--cy:#9a97e8;--tx:#e6e8ec;--mu:#a8acb5;--ln:rgba(79,70,229,0.14);--card:rgba(230,232,236,0.04)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
-.w{max-width:1200px;margin:0 auto;padding:0 20px}
-.gt{background:none;-webkit-background-clip: border-box;background-clip: border-box;color:#e6e8ec}
-.glow{position:absolute;inset:-20% -10% auto;height:620px;pointer-events:none;background:transparent;filter:blur(10px);animation:drift 16s ease-in-out infinite alternate;z-index:0}
-@keyframes drift{to{transform:translate3d(0,30px,0) scale(1.05)}}
-.hero{position:relative;padding:84px 0 40px;overflow:hidden}.hero .w{position:relative;z-index:1}
-.eyb{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--v2);padding:6px 12px;border:1px solid var(--ln);border-radius:99px;background:rgba(79,70,229,0.08)}
-.eyb b{width:6px;height:6px;border-radius:50%;background:var(--du-accent-fill,#4f46e5);box-shadow: 0 0 10px var(--cy)}
-h1{font-size:clamp(38px,6.4vw,72px);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:20px 0 16px;max-width:14ch}
-.lead{font-size:clamp(16px,2vw,19px);color:var(--mu);max-width:56ch;margin:0 0 28px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s,background .2s}
-.btn-p{background:var(--du-accent-fill,#4f46e5);color:#e6e8ec;box-shadow: none}.btn-p:hover{transform:translateY(-2px);box-shadow: none}
-.btn-g{border:1px solid var(--ln);background:rgba(230,232,236,0.03)}.btn-g:hover{border-color:rgba(230,232,236,0.27)}
-.row{display:flex;gap:12px;flex-wrap:wrap}
-.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px;color:var(--mu);font-size:14px}.stats strong{display:block;color:var(--tx);font-size:22px;font-weight:700}
-.tabs{position:sticky;top:0;z-index:20;background:rgba(17,20,26,0.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--ln)}
-.tabs .w{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}.tabs a{white-space:nowrap;font-size:14px;font-weight:500;color:var(--mu);padding:7px 14px;border-radius:99px;border:1px solid transparent;transition:.2s}
-.tabs a:hover,.tabs a.on{color:var(--tx);border-color:var(--ln);background:rgba(79,70,229,0.12)}
-section.s{padding:56px 0 8px;scroll-margin-top:60px}.sh{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:22px}
-.sh h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;margin:0;font-weight:700}.sh span{color:var(--mu);font-size:14px}
-.g{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
-.gf{display:grid;gap:18px;grid-template-columns:repeat(6,1fr)}.gf .pc{grid-column:span 2}.gf .pc:nth-child(-n+2){grid-column:span 3}
-.pc{position:relative;display:flex;flex-direction:column;border-radius:18px;background:var(--card);border:1px solid var(--ln);overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .35s}
-.pc::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:transparent;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;pointer-events:none}
-.pc:hover{transform:translateY(-5px);box-shadow: none}.pc:hover::before{opacity:1}
-.pc-cv{aspect-ratio:16/10;overflow:hidden;background:#1a1e26}.pc-cv img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}.pc:hover .pc-cv img{transform:scale(1.05)}
-.pc-b{display:flex;flex-direction:column;gap:6px;padding:16px 18px 18px;flex:1}.pc-b strong{font-size:17px;font-weight:650;letter-spacing:-.01em}
-.pc-d{color:var(--mu);font-size:14px;line-height:1.5;flex:1}.pc-r{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
-.pc-p{font-weight:700;font-size:16px}.pc-c{font-size:13px;font-weight:600;color:var(--cy);padding:6px 12px;border-radius:99px;background:rgba(79,70,229,0.08);border:1px solid rgba(230,232,236,0.2);transition:.2s}
-.pc-c i{font-style:normal;display:inline-block;transition:transform .2s}.pc:hover .pc-c{background:rgba(79,70,229,0.16)}.pc:hover .pc-c i{transform:translateX(3px)}
-.pc-f .pc-b strong{font-size:20px}
-.pc{cursor:pointer}.pc-a::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}.pc-c{position:relative;z-index:2}.pc-a:focus-visible{outline:none}.pc:has(.pc-a:focus-visible){outline:2px solid var(--cy);outline-offset:3px}
-.rv{opacity:0;transform:translateY(18px)}.rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
-.trust{margin:64px 0 72px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.trust div{padding:22px;border:1px solid var(--ln);border-radius:16px;background:var(--card)}.trust b{display:block;margin-bottom:4px}.trust span{color:var(--mu);font-size:14px}
-/* detail */
-.dt{display:grid;gap:40px;grid-template-columns:1.15fr 1fr;align-items:start;padding:40px 0 30px}
-.dt-m{border-radius:22px;overflow:hidden;border:1px solid var(--ln);background:#161a21;box-shadow: none}.dt-m img{width:100%}
-.crumb{font-size:13px;color:var(--mu);margin-bottom:14px}.crumb a:hover{color:var(--tx)}
-.dt h1{font-size:clamp(34px,5vw,54px);margin:10px 0 12px}.price{font-size:34px;font-weight:800;margin:6px 0 20px}
-.buy{position:relative;width:100%;justify-content:center;font-size:17px;padding:16px}
-.feat{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:10px}.feat li{display:flex;gap:10px;color:var(--mu);font-size:15px}.feat li::before{content:"";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;background:transparent}
-.note{font-size:13px;color:var(--mu);margin-top:12px;text-align:center}
-.sticky-buy{display:none}
-@media(max-width:860px){.gf{grid-template-columns:1fr 1fr}.gf .pc,.gf .pc:nth-child(-n+2){grid-column:span 1}.gf .pc:first-child{grid-column:span 2}.dt{grid-template-columns:1fr;gap:24px;padding-top:20px}
-.sticky-buy{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:#11141a;backdrop-filter:blur(12px);border-top:1px solid var(--ln);align-items:center;justify-content:space-between;gap:12px}.sticky-buy .btn{padding:11px 20px}.has-sb .duf{padding-bottom:84px}}
-@media(max-width:520px){.hero{padding:56px 0 24px}.g{grid-template-columns:1fr 1fr;gap:12px}.gf{gap:12px}.pc-b{padding:12px}.pc-b strong{font-size:15px}.pc-d{display:none}.pc-f .pc-d{display:block}.pc-r{flex-direction:column;align-items:flex-start;gap:8px}.pc-c{padding:5px 10px}.stats{gap:20px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
-</style></head><body{bc}>
-'''
-JS = '''<script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -6% 0px'});
-document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
-const tabs=[...document.querySelectorAll('.tabs a')];if(tabs.length){const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)tabs.forEach(t=>t.classList.toggle('on',t.hash==='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});document.querySelectorAll('section.s').forEach(s=>so.observe(s))}</script>
-<script src="/store/track.js?v=3" defer></script>{extra}
-</body></html>'''
-paid = sum(len(i) for _, i in secs)
-B = "https://digitalundergroundstore.com"
-ORG = {"@type":"Organization","@id":f"{B}/#org","name":"Digital Underground","url":f"{B}/","logo":{"@type":"ImageObject","url":f"{B}/assets/logo/du-mark.png","width":1024,"height":1024},"sameAs":["https://x.com/DigitalUG_Store"]}
-SITE = {"@type":"WebSite","@id":f"{B}/#website","name":"Digital Underground","url":f"{B}/","publisher":{"@id":f"{B}/#org"}}
-def ld(graph): return '<script type="application/ld+json" id="du-ld">' + json.dumps({"@context":"https://schema.org","@graph":graph}, ensure_ascii=False).replace("</", "<\\/") + '</script>'
-def head(t, desc, url, img, imgalt, ogt, ogtype, graph, bc=""):
-    h = HEAD
-    for k, v in (("{t}", t), ("{desc}", E(desc)), ("{url}", url), ("{img}", img), ("{imgalt}", E(imgalt)), ("{ogt}", E(ogt)), ("{ogtype}", ogtype), ("{bc}", bc)):
-        h = h.replace(k, v)
-    return h.replace("{ld}", ld(graph))
-def js(extra=""): return JS.replace("{extra}", extra)
-def price_num(pr):
-    if pr == "Free": return "0"
-    m = re.search(r"[\d.]+", pr); return m.group(0) if m else None
-STORE_URL = f"{B}/store/"
-SD = "Digital products designed around you: Apps, Guides & AI tools. Pay once."
-items_ld = []; seen_ld = set()
-for _, its in secs:
-    for d in its:
-        if d["slug"] in seen_ld: continue
-        seen_ld.add(d["slug"]); items_ld.append({"@type":"ListItem","position":len(items_ld)+1,"url":f"{B}/store/p/{d['slug']}/","name":d["name"]})
-body = [head("Digital Underground: Apps, AI Tools, Books &amp; Dev Marketplace", SD, STORE_URL, f"{B}/store/og-v2.jpg",
-             "Digital Underground. Digital products designed around you: Apps, Guides and AI tools. Pay once.", "Digital Underground", "website",
-             [ORG, SITE, {"@type":"CollectionPage","@id":f"{STORE_URL}#page","url":STORE_URL,"name":"Digital Underground store","description":SD,"isPartOf":{"@id":f"{B}/#website"},"publisher":{"@id":f"{B}/#org"},"mainEntity":{"@type":"ItemList","numberOfItems":len(items_ld),"itemListElement":items_ld}}]),
- '<main id="main"><div class="hero"><div class="glow"></div><div class="w">',
- '<span class="eyb"><b></b>Digital Underground store</span>',
- '<h1>Tools, apps &amp; stories, <span class="gt">built to own.</span></h1>',
- '<p class="lead">Offline-first software, prompt packs, bundles and books from independent makers. Pay once, keep it forever.</p>',
- '<div class="row"><a class="btn btn-p" href="#featured">Browse the collection</a><a class="btn btn-g" href="#free">Free downloads</a></div>',
- '<div class="bv" style="margin-top:14px;font-size:14px;color:#a8acb5">Best value to start: <a href="/store/p/complete-freelance-suite/">Complete Freelance Suite, CA$79</a> &middot; <a href="/store/p/humanity-x-books-1-2/">Humanity X Books 1+2 pack, CA$14.99</a> &middot; <a href="/store/p/offer-desk/">Offer Desk, CA$19</a></div>',
- f'<div class="stats"><div><strong>{paid}</strong>products</div><div><strong>{len(secs)}</strong>collections</div><div><strong>One-time</strong>pricing in CAD</div></div>',
- '</div></div><nav class="tabs" aria-label="Collections"><div class="w">' + "".join(f'<a href="#{i}">{E(LABEL[i])}</a>' for i, _ in secs) + '</div></nav><div class="w">']
-for sid, items in secs:
-    feat = sid == "featured"
-    body.append(f'<section class="s" id="{sid}"><div class="sh"><h2>{E(LABEL[sid])}</h2><span>{len(items)} item{"s"*(len(items)!=1)}</span></div><div class="{"gf" if feat else "g"}">' + "".join(card(d, feat) for d in items) + '</div></section>')
-body.append('<div class="trust"><div><b>Secure checkout</b><span>Payments handled by Gumroad.</span></div><div><b>Instant delivery</b><span>Download right after purchase.</span></div><div><b>Yours to keep</b><span>One-time price, no subscription.</span></div></div>')
-body.append('</div></main>' + js('\n<script src="/assets/signup.js?v=20261026bg" defer></script>'))
-out = os.environ.get("DU_STORE_OUT", f"{R}/store")
-# Wave AC guard (kept in Wave AD as belt-and-braces; regen is now byte-identical thanks to src/store-overrides/):
-# richer blurbs, site-nav v10) that src/store-legacy does not hold. Writing to live store/ would regress them.
-# Dry-run: DU_STORE_OUT=/tmp/dry python3 scripts/gen-store.py, then diff -r store /tmp/dry. Use --force-live only after porting.
-import sys
-if os.path.realpath(out) == os.path.realpath(f"{R}/store") and "--force-live" not in sys.argv:
-    sys.exit("gen-store: refusing to overwrite live store/ (hand edits would regress). Set DU_STORE_OUT for a dry run, or pass --force-live.")
-os.makedirs(out, exist_ok=True)
-open(f"{out}/index.html", "w", encoding="utf8").write(sn.apply("".join(body)))
-pw = next(d for _, i in secs for d in i if d["name"] == "Pantry Week")
-assert pw["price"] == "CA$24"
-def page_head(d, sec):
-    url = f"{B}/store/p/{d['slug']}/"
-    img = B + d["cover"].split("?")[0]
-    desc = (d["blurb"] + " " if d["blurb"] else "") + ("Free download" if d["price"] == "Free" else f"{d['price']} one-time") + " from the Digital Underground store."
-    prod = {"@type":"Product","name":d["name"],"image":img,"description":d["blurb"] or d["name"],"url":url,"brand":{"@type":"Brand","name":"Digital Underground"}}
-    pn = price_num(d["price"])
-    if pn is not None: prod["offers"] = {"@type":"Offer","price":pn,"priceCurrency":"CAD","url":d["href"],"availability":"https://schema.org/InStock"}
-    crumbs = {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Store","item":STORE_URL},{"@type":"ListItem","position":2,"name":LABEL[sec],"item":f"{STORE_URL}#{sec}"},{"@type":"ListItem","position":3,"name":d["name"],"item":url}]}
-    return head(f'{E(d["name"])} — Digital Underground Store', desc, url, img, f'{d["name"]} cover', f'{d["name"]} — Digital Underground', "product", [ORG, SITE, prod, crumbs], ' class="has-sb"')
-def detail(d, sec):
-    if d is pw:
-        return "".join([page_head(d, sec), '<main class="w" id="main">',
-         f'<div class="dt"><div class="dt-m rv"><img src="/store/media/jhagho.jpg?v=20261012pw3101" alt="Pantry Week"></div><div class="rv">',
-         f'<div class="crumb"><a href="/store/">Store</a> / {E(LABEL[sec])}</div><span class="eyb"><b></b>Offline app</span>',
-         f'<h1>{E(pw["name"])}</h1><p class="lead">{E(pw["blurb"])}</p><div class="price">{E(pw["price"])}</div>',
-         f'<a class="btn btn-p buy" href="{E(pw["href"])}" target="_blank" rel="noopener">Buy on Gumroad →</a><p class="note">Secure checkout via Gumroad · instant download</p>',
-         '<ul class="feat"><li>1,000+ hand-checked recipes that work offline</li><li>Plan your week in minutes</li><li>Shopping list sorted by aisle</li><li>Step-by-step cooking mode</li></ul>',
-         '</div></div><section class="s"><div class="sh"><h2>More from Featured</h2></div><div class="g">' + "".join(card(x) for x in secs[0][1] if x is not pw) + '</div></section><div style="height:60px"></div></main>',
-         f'<div class="sticky-buy"><div><strong>Pantry Week</strong><div style="color:var(--mu);font-size:14px">{E(pw["price"])}</div></div><a class="btn btn-p" href="{E(pw["href"])}" target="_blank" rel="noopener">Buy now</a></div>', js()])
-    more = [x for x in dict(secs)[sec] if x is not d][:8]
-    return "".join([page_head(d, sec), '<main class="w" id="main">',
-     f'<div class="dt"><div class="dt-m rv"><img src="{E(d["cover"])}" alt="{E(d["name"])}"></div><div class="rv">',
-     f'<div class="crumb"><a href="/store/">Store</a> / {E(LABEL[sec])}</div><span class="eyb"><b></b>{E(LABEL[sec])}</span>',
-     f'<h1>{E(d["name"])}</h1><p class="lead">{E(d["blurb"])}</p><div class="price">{E(d["price"])}</div>',
-     f'<a class="btn btn-p buy" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it free" if d["price"]=="Free" else "Buy on Gumroad"} →</a><p class="note">{"Secure checkout via Gumroad · instant download" if "gumroad.com" in d["href"] else "Free web app · runs in your browser, no sign-up"}</p>',
-     '</div></div>' + (f'<section class="s"><div class="sh"><h2>More from {E(LABEL[sec])}</h2></div><div class="g">' + "".join(card(x) for x in more) + '</div></section>' if more else '') + '<div style="height:60px"></div></main>',
-     f'<div class="sticky-buy"><div><strong>{E(d["name"])}</strong><div style="color:var(--mu);font-size:14px">{E(d["price"])}</div></div><a class="btn btn-p" href="{E(d["href"])}" target="_blank" rel="noopener">{"Get it" if d["price"]=="Free" else "Buy now"}</a></div>', js()])
-# Wave AC: these detail pages were hand-edited in Waves Z/AA (free-with-signup / free-beta heroes); never overwrite them.
-HAND = {"humanity-x-off-the-ground", "pantry-week"}
-import shutil
-if os.path.isdir(f"{out}/p"):
-    for x in os.listdir(f"{out}/p"):
-        if x not in HAND: shutil.rmtree(f"{out}/p/{x}", ignore_errors=True)
-n = 0; slugs = []; done = set()
-for sid, its in secs:
-    for d in its:
-        dd = f"{out}/p/{d['slug']}"
-        if d["slug"] in done or d["slug"] in HAND: continue  # first section wins for items listed twice; HAND pages kept
-        done.add(d["slug"])
-        os.makedirs(dd, exist_ok=True); open(f"{dd}/index.html", "w", encoding="utf8").write(sn.apply(detail(d, sid))); n += 1; slugs.append(d["slug"])
-print("ok", paid, "detail pages", n)
-# Wave AD: live store HTML diverged from these templates on every page (Waves W–AB). src/store-overrides/ holds the
-# authoritative live HTML (index + p/<slug>/); it is overlaid last so a regen preserves it byte-for-byte.
-# Edit a page's override to change it; products with no override fall back to the template above.
-OV = f"{R}/src/store-overrides"
-for root, _, files in os.walk(OV):
-    for f in files:
-        rel = os.path.relpath(os.path.join(root, f), OV); dst = os.path.join(out, rel)
-        os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copyfile(os.path.join(root, f), dst)
+<script type="application/ld+json" id="du-ld">{ld_json(products)}</script>
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=25">
+<link rel="stylesheet" href="/assets/theme-clean.css?v=2">
+<link rel="stylesheet" href="/store/store.css?v=20261028wolf2">
+</head>
+<body class="du-store">
+<a class="skip" href="#catalog">Skip to products</a>
+{nav}
+<header class="hero">
+  <div class="badge"><span class="badge-dot" aria-hidden="true"></span> Indie marketplace</div>
+  <h1>Pay once.<br>Own it forever.</h1>
+  <p class="hero-sub">{esc(sub)}</p>
+  <div class="hero-cta-wrap">
+    <a href="#catalog" class="btn btn-primary">Browse the collection</a>
+    <div class="trust-line">
+      <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Secure checkout</span>
+      <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Instant download</span>
+      <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> One-time price</span>
+    </div>
+  </div>
+  {promo_html(products)}
+  <div class="stats" role="list">
+    <div class="stat" role="listitem"><div class="stat-value">{count}</div><div class="stat-label">products</div></div>
+    <div class="stat" role="listitem"><div class="stat-value">{collections}</div><div class="stat-label">collections</div></div>
+    <div class="stat" role="listitem"><div class="stat-value">CAD</div><div class="stat-label">one-time pricing</div></div>
+  </div>
+</header>
+<div class="cat-bar">
+  <div class="cat-scroll" id="cat-nav" role="tablist" aria-label="Product categories">
+    {''.join(cat_buttons)}
+  </div>
+</div>
+<main class="main" id="catalog">
+  <div class="value-bar">
+    <div class="value-item"><div class="value-icon" aria-hidden="true">🔓</div><div><h2>Own it outright</h2><p>Pay once. Download. Use offline. No monthly fees.</p></div></div>
+    <div class="value-item"><div class="value-icon" aria-hidden="true">🛠️</div><div><h2>Built by makers</h2><p>Every product comes from an independent creator.</p></div></div>
+    <div class="value-item"><div class="value-icon" aria-hidden="true">⚡</div><div><h2>Start in minutes</h2><p>Instant access after purchase. No waiting, no setup hell.</p></div></div>
+  </div>
+  <p class="series-note"><strong>New: the Humanity X series.</strong> <a href="/store/p/humanity-x-off-the-ground/">Off the Ground</a> and <a href="/store/p/humanity-x-into-the-stars/">Into the Stars</a>, or the <a href="/store/p/humanity-x-books-1-2/">Books 1 + 2 pack</a>. <a href="/store/series/humanity-x/">See the series</a>.</p>
+  <div class="toolbar">
+    <div class="search-box">
+      <svg class="search-icon" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5"/><path d="M10.5 10.5L14 14"/></svg>
+      <input type="search" id="search" placeholder="Search tools, books, packs…" autocomplete="off" aria-label="Search products">
+    </div>
+    <div class="filter-row">
+      <button class="pill active" type="button" data-price="all">All</button>
+      <button class="pill" type="button" data-price="free">Free</button>
+      <button class="pill" type="button" data-price="paid">Paid</button>
+      <span class="results-count" id="results-count" aria-live="polite"></span>
+    </div>
+  </div>
+  {notes_html(catalog.get("notes") or {})}
+  <section class="section" aria-label="Products">
+    <div class="section-header">
+      <h2 class="section-title" id="section-title">All products</h2>
+      <span class="section-meta" id="section-meta"></span>
+    </div>
+    <div class="grid is-pending" id="product-grid">
+{cards}
+    </div>
+    <div class="empty" id="empty-state" hidden>
+      <strong>No matches</strong>
+      <p>Try a different search or clear the filters.</p>
+    </div>
+    <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+  </section>
+</main>
+{foot}
+<div class="mobile-bar">
+  <a href="#catalog" class="btn btn-primary btn-full">Browse products</a>
+</div>
+<script src="/store/store.js?v=20261028wolf2" defer></script>
+<script src="/store/track.js?v=3" defer></script>
+<script src="/assets/signup.js?v=20261027pv" defer></script>
+<script src="/assets/presence.js?v=1" defer></script>
+</body>
+</html>
+"""
+
+
+def assert_storefront(page: str) -> None:
+    header = page.split("<!--/du-site-nav-->", 1)[0]
+    if "Developer Marketplace" in header:
+        raise SystemExit("Header still contains Developer Marketplace.")
+    if "Kerzy Labs" in page:
+        raise SystemExit("Kerzy Labs branding leaked into the store page.")
+    if 'href="/store/" aria-current="page"' not in page and 'aria-current="page"' not in header:
+        raise SystemExit("Shop link is missing aria-current on the store page.")
+    if "/store/track.js" not in page:
+        raise SystemExit("Store tracking script missing.")
+    card_m = re.search(
+        r'<article class="card"[^>]*data-page="/store/p/planetview-live/"[\s\S]*?</article>',
+        page,
+    )
+    if not card_m:
+        raise SystemExit("PlanetView card missing.")
+    card = card_m.group(0)
+    if "Free with signup" not in card:
+        raise SystemExit("PlanetView card is not labeled Free with signup.")
+    if "CA$" in card or "gumroad.com/l/oxnfvy" in card:
+        raise SystemExit("PlanetView card is showing a catalog price or Gumroad checkout.")
+    if 'href="/free-planetview/"' not in card:
+        raise SystemExit("PlanetView card does not link to /free-planetview/.")
+    cards = page.count('<article class="card"')
+    if cards < 140:
+        raise SystemExit(f"Expected the live catalog, found {cards} cards.")
+    if 'href="/store/p/' not in page:
+        raise SystemExit("Product page links missing.")
+
+
+def fetch_live() -> str:
+    req = urllib.request.Request(LIVE_URL, headers={"User-Agent": "du-gen-store"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return resp.read().decode("utf-8", "replace")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Generate the Digital Underground store page.")
+    parser.add_argument("--force-live", action="store_true", help="Refresh catalog.json from the live /store/ page, then regenerate. PlanetView stays free with signup.")
+    parser.add_argument("--from-html", type=Path, help="Refresh catalog.json from a saved store HTML file, then regenerate.")
+    args = parser.parse_args()
+    if args.force_live or args.from_html:
+        raw = args.from_html.read_text(encoding="utf-8") if args.from_html else fetch_live()
+        catalog = parse_live_store(raw)
+        for product in catalog["products"]:
+            stamp_planetview_meta(product)
+        save_catalog(catalog)
+        print(f"Updated catalog ({len(catalog['products'])} products)")
+    catalog = load_catalog()
+    page = render(catalog)
+    assert_storefront(page)
+    OUT.write_text(page, encoding="utf-8")
+    shown = apply_storefront(next(p for p in catalog["products"] if is_planetview(p)))
+    print(f"Wrote {OUT} ({page.count('<article class=\"card\"')} products)")
+    print(f"PlanetView storefront: {shown['price_label']} -> {shown['cta_href']} (Gumroad {shown['gumroad']} list {shown['list_price']} code {shown['coupon']})")
+
+
+if __name__ == "__main__":
+    main()

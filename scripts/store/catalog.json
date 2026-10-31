@@ -1,0 +1,2279 @@
+{
+  "notes": {
+    "freelance": "<p class=\"du-freestrip\" style=\"margin:0 0 16px;padding:12px 16px;border:1px solid rgba(255,255,255,.15);border-radius:12px;font-size:15px\"><strong>Free for makers — no account, opens in your browser:</strong> <a href=\"/tools/listing-copy-builder/\">Listing Copy Builder</a> · <a href=\"/tools/launch-post-builder/\">Launch Post Builder</a> · <a href=\"/tools/maker-outreach-builder/\">Maker Outreach Builder</a> · <a href=\"/tools/product-photo-shot-list/\">Product Photo Shot List</a></p>",
+    "focus": "<p class=\"du-freestrip\" style=\"margin:0 0 16px;padding:12px 16px;border:1px solid rgba(255,255,255,.15);border-radius:12px;font-size:15px\"><strong>Free for home &amp; life — no account, opens in your browser:</strong> <a href=\"/tools/morning-routine-checklist/\">Morning Routine Checklist</a> · <a href=\"/tools/cleaning-schedule/\">Cleaning Schedule</a> · <a href=\"/tools/plant-watering-schedule/\">Plant Watering Schedule</a></p>",
+    "free": "<p class=\"au-bridge\" style=\"margin:0 0 16px;padding:12px 16px;border:1px solid rgba(255,255,255,.15);border-radius:12px;font-size:15px\">Liked a free tool? Next steps: <a href=\"/store/p/exam-desk/\">Exam Desk</a> pairs with <a href=\"/store/p/focus-gate/\">Focus Gate</a>; <a href=\"/store/p/hook-bank/\">Hook Bank</a> + <a href=\"/store/p/promo-lane/\">Promo Lane</a> pair with the <a href=\"/store/p/ai-creator-bundle/\">AI Creator Bundle</a>. Building something? <a href=\"/community/submit/\">List your project free</a>.</p>"
+  },
+  "products": [
+    {
+      "name": "PlanetView Live",
+      "page": "/store/p/planetview-live/",
+      "desc": "Live beta / in testing. Photoreal Earth and solar system simulation in real time — news, weather, and Newtonian flight in the browser.",
+      "img": "/store/covers/oxnfvy.webp?v=hd1",
+      "price_label": "CA$24",
+      "cta_href": "https://kerzy.gumroad.com/l/oxnfvy",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "featured"
+      ],
+      "gumroad": "oxnfvy",
+      "list_price": "CA$24",
+      "coupon": "DUFREEPV"
+    },
+    {
+      "name": "Pantry Week",
+      "page": "/store/p/pantry-week/",
+      "desc": "1,000+ curated recipes — plan the week, shop by aisle, cook step by step.",
+      "img": "/store/media/jhagho.jpg?v=20261012pw3101",
+      "price_label": "Free beta",
+      "cta_href": "https://kerzy.gumroad.com/l/jhagho",
+      "cta": "Get free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "featured"
+      ],
+      "gumroad": "jhagho"
+    },
+    {
+      "name": "Session Forge",
+      "page": "/store/p/session-forge/",
+      "desc": "A toolkit for running game sessions.",
+      "img": "/store/covers/wcvgxo.webp",
+      "price_label": "CA$14.99+",
+      "cta_href": "https://kerzy.gumroad.com/l/wcvgxo",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "featured"
+      ],
+      "gumroad": "wcvgxo"
+    },
+    {
+      "name": "PlainHelp Ai",
+      "page": "/store/p/plainhelp/",
+      "desc": "Phone app for seniors — one link after purchase, no ZIP files.",
+      "img": "/store/covers/ozzrh.webp",
+      "price_label": "CA$39",
+      "cta_href": "https://kerzy.gumroad.com/l/ozzrh",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "featured"
+      ],
+      "gumroad": "ozzrh"
+    },
+    {
+      "name": "Winston — Hands-Free Kitchen Voice Assistant",
+      "page": "/store/p/winston-hands-free-kitchen-voice-assistant/",
+      "desc": "A kitchen voice that reads the steps while your hands are busy.",
+      "img": "/store/media/jkpty.jpg",
+      "price_label": "CA$19",
+      "cta_href": "https://kerzy.gumroad.com/l/jkpty",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "featured"
+      ],
+      "gumroad": "jkpty"
+    },
+    {
+      "name": "Offer Desk",
+      "page": "/store/p/offer-desk/",
+      "desc": "A one-page offer you can send to a client.",
+      "img": "/store/covers/bhrrtz.webp",
+      "price_label": "CA$19",
+      "cta_href": "https://kerzy.gumroad.com/l/bhrrtz",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "featured",
+        "freelance"
+      ],
+      "gumroad": "bhrrtz"
+    },
+    {
+      "name": "Complete Freelance Suite",
+      "page": "/store/p/complete-freelance-suite/",
+      "desc": "Proposals, pricing, scope, invoicing, and client tools in one package.",
+      "img": "/store/covers/vvtib.webp",
+      "price_label": "CA$79",
+      "cta_href": "https://kerzy.gumroad.com/l/vvtib",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "featured",
+        "bundles"
+      ],
+      "gumroad": "vvtib"
+    },
+    {
+      "name": "Humanity X: Books 1 & 2 (Ebook Pack)",
+      "page": "/store/p/humanity-x-books-1-2/",
+      "desc": "Off the Ground + Into the Stars in one download (EPUB + PDF). CA$19.98 separately, save CA$4.99.",
+      "img": "/store/covers/hxpack3.webp",
+      "price_label": "CA$14.99",
+      "cta_href": "https://kerzy.gumroad.com/l/egrywe",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "featured",
+        "bundles"
+      ],
+      "gumroad": "egrywe"
+    },
+    {
+      "name": "Cork — Darts Scoreboard",
+      "page": "/store/p/cork-offline-darts-scoreboard/",
+      "desc": "Score for two sides. Pay once. No subscription.",
+      "img": "/store/covers/fjmmi.webp",
+      "price_label": "CA$25",
+      "cta_href": "https://kerzy.gumroad.com/l/fjmmi",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "apps"
+      ],
+      "gumroad": "fjmmi"
+    },
+    {
+      "name": "Focus & Habits Pack",
+      "page": "/store/p/focus-habits-pack/",
+      "desc": "Habit tracker, focus gate, and more. Three products, one price.",
+      "img": "/store/covers/wgjffu.webp",
+      "price_label": "CA$19",
+      "cta_href": "https://kerzy.gumroad.com/l/wgjffu",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "bundles"
+      ],
+      "gumroad": "wgjffu"
+    },
+    {
+      "name": "AI Creator Bundle",
+      "page": "/store/p/ai-creator-bundle/",
+      "desc": "Prompt packs, a companion, and an audience growth toolkit.",
+      "img": "/store/covers/lgvubv.webp",
+      "price_label": "CA$79",
+      "cta_href": "https://kerzy.gumroad.com/l/lgvubv",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "bundles"
+      ],
+      "gumroad": "lgvubv"
+    },
+    {
+      "name": "Freelance Admin Stack",
+      "page": "/store/p/freelance-admin-stack/",
+      "desc": "Invoicing, replies, scope protection, and rate confidence.",
+      "img": "/store/covers/lggigy.webp",
+      "price_label": "CA$35",
+      "cta_href": "https://kerzy.gumroad.com/l/lggigy",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "bundles"
+      ],
+      "gumroad": "lggigy"
+    },
+    {
+      "name": "Null Harbor",
+      "page": "/store/p/null-harbor/",
+      "desc": "A near-future thriller.",
+      "img": "/store/covers/jcazp.webp?v=20261020t",
+      "price_label": "CA$4.99",
+      "cta_href": "https://kerzy.gumroad.com/l/jcazp",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "books"
+      ],
+      "gumroad": "jcazp"
+    },
+    {
+      "name": "He Came Home Without Her",
+      "page": "/store/p/he-came-home-without-her/",
+      "desc": "A domestic thriller.",
+      "img": "/store/covers/ygwhif.webp",
+      "price_label": "CA$4.99",
+      "cta_href": "https://kerzy.gumroad.com/l/ygwhif",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "books"
+      ],
+      "gumroad": "ygwhif"
+    },
+    {
+      "name": "Humanity X: Into The Stars",
+      "page": "/store/p/humanity-x-into-the-stars/",
+      "desc": "Book 2 of the Humanity X Trilogy. Six years after the lunar wars, humanity can fold space and is still learning not to fold people: hard-edged, character-driven space opera about work, complicity and first contact.",
+      "img": "/store/covers/sgrnpe2.webp",
+      "price_label": "CA$9.99",
+      "cta_href": "https://kerzy.gumroad.com/l/sgrnpe",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "books"
+      ],
+      "gumroad": "sgrnpe"
+    },
+    {
+      "name": "Humanity X: Off the Ground",
+      "page": "/store/p/humanity-x-off-the-ground/",
+      "desc": "Book 1 of the Humanity X Trilogy. Crossing space was the easy part: Adam Voss signs on to build an unfinished lunar city, befriends the man who will lead Mars to war with Earth, and is aboard a warship when the fighting reaches orbit.",
+      "img": "/store/covers/umndpu.webp",
+      "price_label": "CA$9.99",
+      "cta_href": "https://kerzy.gumroad.com/l/umndpu",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "books"
+      ],
+      "gumroad": "umndpu"
+    },
+    {
+      "name": "The Brave Little Beaver",
+      "page": "/store/p/the-brave-little-beaver/",
+      "desc": "A short story for children.",
+      "img": "/store/covers/story-bukwxo.webp",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/bukwxo",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "books"
+      ],
+      "gumroad": "bukwxo"
+    },
+    {
+      "name": "The Day Ethan Chose Kindness",
+      "page": "/store/p/the-day-ethan-chose-kindness/",
+      "desc": "A short story for children.",
+      "img": "/store/covers/story-efouck.webp",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/efouck",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "books"
+      ],
+      "gumroad": "efouck"
+    },
+    {
+      "name": "Tilly's Big Cleanup",
+      "page": "/store/p/tilly-s-big-cleanup/",
+      "desc": "A short story for children.",
+      "img": "/store/covers/story-vlaqmh.webp",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/vlaqmh",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "books"
+      ],
+      "gumroad": "vlaqmh"
+    },
+    {
+      "name": "A New Friend – A Brighter Day",
+      "page": "/store/p/a-new-friend-a-brighter-day/",
+      "desc": "A short story for children.",
+      "img": "/store/covers/story-vzfysf.webp",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/vzfysf",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "books"
+      ],
+      "gumroad": "vzfysf"
+    },
+    {
+      "name": "Grok Prompt Pack",
+      "page": "/store/p/grok-prompt-pack/",
+      "desc": "Prompts for writing, planning, and shipping work.",
+      "img": "/store/covers/jsdrug.webp?v=20261020t2",
+      "price_label": "CA$29",
+      "cta_href": "https://kerzy.gumroad.com/l/jsdrug",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "ai"
+      ],
+      "gumroad": "jsdrug"
+    },
+    {
+      "name": "AI Audience Growth Toolkit",
+      "page": "/store/p/ai-audience-growth-toolkit/",
+      "desc": "A playbook, a workbook, and a prompt pack.",
+      "img": "/store/covers/pgkgdc.webp",
+      "price_label": "CA$29",
+      "cta_href": "https://kerzy.gumroad.com/l/pgkgdc",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "ai"
+      ],
+      "gumroad": "pgkgdc"
+    },
+    {
+      "name": "Invoice Desk",
+      "page": "/store/p/invoice-desk/",
+      "desc": "Clean invoices for freelancers.",
+      "img": "/store/media/nvmvyx.jpg?v=20261020nc3",
+      "price_label": "CA$19",
+      "cta_href": "https://kerzy.gumroad.com/l/nvmvyx",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": "nvmvyx"
+    },
+    {
+      "name": "Scope Lock",
+      "page": "/store/p/scope-lock/",
+      "desc": "A client brief that holds the scope.",
+      "img": "/store/media/omzql.jpg",
+      "price_label": "CA$12",
+      "cta_href": "https://kerzy.gumroad.com/l/omzql",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": "omzql"
+    },
+    {
+      "name": "Reply Forge",
+      "page": "/store/p/reply-forge/",
+      "desc": "Ready-to-send customer replies.",
+      "img": "/store/covers/nlwvb.webp",
+      "price_label": "CA$9",
+      "cta_href": "https://kerzy.gumroad.com/l/nlwvb",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": "nlwvb"
+    },
+    {
+      "name": "ChatGPT Prompt Pack",
+      "page": "/store/p/chatgpt-prompt-pack/",
+      "desc": "30 prompts to create and sell digital products.",
+      "img": "/store/covers/lqynfs.webp",
+      "price_label": "CA$9",
+      "cta_href": "https://kerzy.gumroad.com/l/lqynfs",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": "lqynfs"
+    },
+    {
+      "name": "Rate Wire",
+      "page": "/store/p/rate-wire/",
+      "desc": "Hourly and day rates, figured before you quote.",
+      "img": "/store/covers/ppnorh.webp",
+      "price_label": "CA$9",
+      "cta_href": "https://kerzy.gumroad.com/l/ppnorh",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": "ppnorh"
+    },
+    {
+      "name": "Launch Ledger",
+      "page": "/store/p/launch-ledger/",
+      "desc": "Income, kept in one ledger.",
+      "img": "/store/covers/iacbv.webp",
+      "price_label": "CA$29",
+      "cta_href": "https://kerzy.gumroad.com/l/iacbv",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": "iacbv"
+    },
+    {
+      "name": "3D Print Cost Calculator",
+      "page": "/store/p/3d-print-cost-calculator/",
+      "desc": "Price 3D prints properly.",
+      "img": "/store/covers/3d-print-cost-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$8",
+      "cta_href": "/store/p/3d-print-cost-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Subscription Box Profit Planner",
+      "page": "/store/p/subscription-box-planner/",
+      "desc": "Plan a monthly box that stays profitable.",
+      "img": "/store/covers/subscription-box-planner-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/subscription-box-planner/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Maker Hourly Rate Calculator",
+      "page": "/store/p/maker-hourly-rate-calculator/",
+      "desc": "Work out what to pay yourself.",
+      "img": "/store/covers/maker-hourly-rate-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$8",
+      "cta_href": "/store/p/maker-hourly-rate-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Maker Cash Flow Forecast",
+      "page": "/store/p/maker-cash-flow-forecast/",
+      "desc": "See if your shop can cover the next 6 months.",
+      "img": "/store/covers/maker-cash-flow-forecast-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/maker-cash-flow-forecast/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Product Bundle Pricing Calculator",
+      "page": "/store/p/product-bundle-pricing-calculator/",
+      "desc": "Build bundles that still make money.",
+      "img": "/store/covers/product-bundle-pricing-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/product-bundle-pricing-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Wholesale Line Sheet Builder",
+      "page": "/store/p/wholesale-line-sheet-builder/",
+      "desc": "Build a clean wholesale line sheet for boutiques.",
+      "img": "/store/covers/wholesale-line-sheet-builder-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/wholesale-line-sheet-builder/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Maker Newsletter Content Calendar",
+      "page": "/store/p/maker-newsletter-content-calendar/",
+      "desc": "Plan a year of shop newsletters in one place.",
+      "img": "/store/covers/maker-newsletter-content-calendar-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/maker-newsletter-content-calendar/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Craft Fair Booth Fee Break-Even Calculator",
+      "page": "/store/p/craft-fair-breakeven-calculator/",
+      "desc": "Know if a craft fair is worth it before you pay.",
+      "img": "/store/covers/craft-fair-breakeven-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/craft-fair-breakeven-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Etsy Fee Reverse Price Calculator",
+      "page": "/store/p/etsy-fee-reverse-calculator/",
+      "desc": "Start from the profit you want and get the listing price.",
+      "img": "/store/covers/etsy-fee-reverse-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$10",
+      "cta_href": "/store/p/etsy-fee-reverse-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Print-on-Demand Profit Sheet",
+      "page": "/store/p/print-on-demand-cost-sheet/",
+      "desc": "Know your real margin on shirts, mugs and posters.",
+      "img": "/store/covers/print-on-demand-cost-sheet-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/print-on-demand-cost-sheet/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Wholesale & Retail Price Calculator",
+      "page": "/store/p/wholesale-price-calculator/",
+      "desc": "Get ready for shops: enter materials, labour hours and rate, and overhead.",
+      "img": "/store/covers/wholesale-price-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/wholesale-price-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Maker Monthly Sales Goal Tracker",
+      "page": "/store/p/maker-sales-goal-tracker/",
+      "desc": "Set a monthly sales goal for your shop and log each sale.",
+      "img": "/store/covers/maker-sales-goal-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/maker-sales-goal-tracker/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Custom Order Deposit Log",
+      "page": "/store/p/custom-order-deposit-log/",
+      "desc": "Track custom and commission orders from deposit to final payment: customer, quote, deposit paid, balance owing and due date.",
+      "img": "/store/covers/custom-order-deposit-log-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/custom-order-deposit-log/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Package Shipping Log",
+      "page": "/store/p/package-shipping-log/",
+      "desc": "Track every package you send: customer, carrier, tracking number, postage paid and delivered or not.",
+      "img": "/store/covers/package-shipping-log-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/package-shipping-log/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Wholesale Order Sheet",
+      "page": "/store/p/wholesale-order-sheet/",
+      "desc": "A clean wholesale order form for shops that stock your work: store details, line items at wholesale price, minimum order check and payment terms.",
+      "img": "/store/covers/wholesale-order-sheet-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/wholesale-order-sheet/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Market Booth Sales Log",
+      "page": "/store/p/market-booth-sales-log/",
+      "desc": "Log every sale at a craft fair or market: item, price and cash or card.",
+      "img": "/store/covers/market-booth-sales-log-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/market-booth-sales-log/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Maker Weekly Planner",
+      "page": "/store/p/maker-weekly-planner/",
+      "desc": "A simple weekly plan for small makers: make, sell and admin tasks to tick off, plus your top three goals and a notes box.",
+      "img": "/store/covers/maker-weekly-planner-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/maker-weekly-planner/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Inventory & Restock Tracker",
+      "page": "/store/p/inventory-restock-tracker/",
+      "desc": "List your stock, set a reorder point for each item, and see at a glance what is running low and needs making or reordering next.",
+      "img": "/store/covers/inventory-restock-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/inventory-restock-tracker/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Custom Commission Request Form",
+      "page": "/store/p/commission-request-form/",
+      "desc": "A fill-in intake sheet for custom orders: what the customer wants, size and colours, budget, deadline, deposit and approval notes — so nothing gets missed.",
+      "img": "/store/covers/commission-request-form-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/commission-request-form/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Maker Order Tracker",
+      "page": "/store/p/maker-order-tracker/",
+      "desc": "Track custom and handmade orders from request to shipped: customer, item, due date, paid and shipped.",
+      "img": "/store/covers/maker-order-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/maker-order-tracker/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Product Photo Shot List",
+      "page": "/store/p/product-photo-shot-list/",
+      "desc": "A tick-off shot list for product photos that sell: setup, the must-have angles, digital product screenshots and quick editing steps — all with just a phone.",
+      "img": "/store/covers/product-photo-shot-list-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/product-photo-shot-list/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Craft Fair & Market Checklist",
+      "page": "/store/p/craft-fair-checklist/",
+      "desc": "Everything to prep, pack and track for a craft fair or market table: a two-week plan, a packing list, and a simple sales tally that adds up as you go.",
+      "img": "/store/covers/craft-fair-checklist-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/craft-fair-checklist/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Maker Price Calculator",
+      "page": "/store/p/maker-price-calculator/",
+      "desc": "Work out a fair price for a handmade or digital product: materials, your time, platform fees and the profit you want.",
+      "img": "/store/covers/maker-price-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/maker-price-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Launch Post Builder",
+      "page": "/store/p/launch-post-builder/",
+      "desc": "Answer five quick questions and get launch posts ready to paste: a long post, a short post for X or Threads, a community post and a friendly email to your list.",
+      "img": "/store/covers/launch-post-builder-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/launch-post-builder/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "14-Day Launch Countdown Planner",
+      "page": "/store/p/launch-countdown-planner/",
+      "desc": "A day-by-day checklist from 14 days out to one week after launch, for indie makers launching a product, app or digital download.",
+      "img": "/store/covers/launch-countdown-planner-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/launch-countdown-planner/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Maker Outreach Message Builder",
+      "page": "/store/p/maker-outreach-builder/",
+      "desc": "Write short, polite outreach to bloggers, podcasters, newsletter editors and reviewers.",
+      "img": "/store/covers/maker-outreach-builder-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/maker-outreach-builder/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Listing Copy Builder",
+      "page": "/store/p/listing-copy-builder/",
+      "desc": "Fill in a few plain answers and get a ready-to-paste product listing: title options, short blurb, benefit bullets, FAQ and a call to action.",
+      "img": "/store/covers/listing-copy-builder-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/listing-copy-builder/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Indie Pricing Playbook",
+      "page": "/store/p/indie-pricing-playbook/",
+      "desc": "Price with confidence: value worksheet, model comparison, tier builder, pricing-page copy, a 4-week price test and discount rules.",
+      "img": "/store/covers/indie-pricing-playbook-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/indie-pricing-playbook/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Indie SaaS Ops Pack",
+      "page": "/store/p/indie-saas-ops-pack/",
+      "desc": "Run a product solo: 10 support macros, incident comms, policy outlines, weekly metrics review, ops calendar, onboarding and dunning emails, security checklist.",
+      "img": "/store/covers/indie-saas-ops-pack-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$19",
+      "cta_href": "/store/p/indie-saas-ops-pack/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Freelance Tax Year Checklist (Canada)",
+      "page": "/store/p/freelance-tax-year-canada/",
+      "desc": "Key CRA dates, GST/HST threshold, monthly and quarterly routines, T2125-style expense categories, year-end and filing packet.",
+      "img": "/store/covers/freelance-tax-year-canada-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/freelance-tax-year-canada/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Alternatives & Comparison Page Kit",
+      "page": "/store/p/alternatives-page-kit/",
+      "desc": "Templates for \"X alternatives\", \"X vs Y\" and \"best X for Y\" pages: keyword builder, page outlines, tables, FAQ bank and honesty rules.",
+      "img": "/store/covers/alternatives-page-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/alternatives-page-kit/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Dunning & Churn Email Pack",
+      "page": "/store/p/dunning-email-pack/",
+      "desc": "Failed-payment sequence, card-expiring email, in-app banners, cancel survey and save offers, pause flow, win-backs and a recovery tracker.",
+      "img": "/store/covers/dunning-email-pack-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/dunning-email-pack/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Launch-Week Email Sequence",
+      "page": "/store/p/launch-week-email-sequence/",
+      "desc": "Seven ready-to-edit launch emails from teaser to last call, with subject lines, timing and a results tracker.",
+      "img": "/store/covers/launch-week-email-sequence-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/launch-week-email-sequence/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Freelance Client Onboarding Kit",
+      "page": "/store/p/client-onboarding-kit/",
+      "desc": "Welcome email, intake questionnaire, kickoff agenda, access checklist, communication rules, change requests and offboarding.",
+      "img": "/store/covers/client-onboarding-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/client-onboarding-kit/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Cold Outreach Pack for Makers",
+      "page": "/store/p/cold-outreach-pack/",
+      "desc": "The 4-line rule, templates for newsletters, podcasts, affiliates and first customers, follow-ups and a daily tracker.",
+      "img": "/store/covers/cold-outreach-pack-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/cold-outreach-pack/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "App Store Copy Pack",
+      "page": "/store/p/app-store-copy-pack/",
+      "desc": "Listing copy for the App Store and Google Play: limits, name and subtitle formulas, keywords, captions, description and release notes.",
+      "img": "/store/covers/app-store-copy-pack-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/app-store-copy-pack/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Landing-Page Copy Pack",
+      "page": "/store/p/landing-page-copy-pack/",
+      "desc": "Fill-in copy for every landing-page section: headline formulas, problem, how-it-works, benefits, pricing, FAQ and a pre-launch review.",
+      "img": "/store/covers/landing-page-copy-pack-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$15",
+      "cta_href": "/store/p/landing-page-copy-pack/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Course Outline Pack",
+      "page": "/store/p/course-outline-pack/",
+      "desc": "Transformation statement, validation, module map, lesson template, formats and pricing, completion boosters and launch checklist.",
+      "img": "/store/covers/course-outline-pack-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$15",
+      "cta_href": "/store/p/course-outline-pack/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "freelance"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Streak Kit",
+      "page": "/store/p/streak-kit/",
+      "desc": "Daily streaks, kept on your phone. No account.",
+      "img": "/store/media/idasqr.jpg",
+      "price_label": "CA$9",
+      "cta_href": "https://kerzy.gumroad.com/l/idasqr",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": "idasqr"
+    },
+    {
+      "name": "Focus Gate",
+      "page": "/store/p/focus-gate/",
+      "desc": "A deep-work timer for one session at a time.",
+      "img": "/store/covers/tckoc.webp",
+      "price_label": "CA$7",
+      "cta_href": "https://kerzy.gumroad.com/l/tckoc",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": "tckoc"
+    },
+    {
+      "name": "Box & Go",
+      "page": "/store/p/box-go/",
+      "desc": "A moving planner for the boxes and the list.",
+      "img": "/store/covers/hfyam.webp",
+      "price_label": "CA$12",
+      "cta_href": "https://kerzy.gumroad.com/l/hfyam",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": "hfyam"
+    },
+    {
+      "name": "Packlane",
+      "page": "/store/p/packlane/",
+      "desc": "Packing lists for the trip you are taking.",
+      "img": "/store/covers/lchlou.webp",
+      "price_label": "CA$7",
+      "cta_href": "https://kerzy.gumroad.com/l/lchlou",
+      "cta": "Buy",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": "lchlou"
+    },
+    {
+      "name": "EV Charging Cost Calculator",
+      "page": "/store/p/ev-charging-cost-calculator/",
+      "desc": "See what your electric car really costs to charge.",
+      "img": "/store/covers/ev-charging-cost-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/ev-charging-cost-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Rent vs Buy Calculator",
+      "page": "/store/p/rent-vs-buy-calculator/",
+      "desc": "Compare renting and buying over the years you plan to stay.",
+      "img": "/store/covers/rent-vs-buy-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$8",
+      "cta_href": "/store/p/rent-vs-buy-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Home Solar Payback Calculator",
+      "page": "/store/p/home-solar-payback-calculator/",
+      "desc": "See if rooftop solar pays off for you.",
+      "img": "/store/covers/home-solar-payback-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$8",
+      "cta_href": "/store/p/home-solar-payback-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Recipe Cups to Grams Converter",
+      "page": "/store/p/recipe-unit-converter/",
+      "desc": "Convert any recipe between cups, spoons, grams and millilitres.",
+      "img": "/store/covers/recipe-unit-converter-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/recipe-unit-converter/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Exam Countdown Study Planner",
+      "page": "/store/p/exam-study-planner/",
+      "desc": "Spread studying over the days you actually have.",
+      "img": "/store/covers/exam-study-planner-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/exam-study-planner/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Party Food Quantity Calculator",
+      "page": "/store/p/party-food-quantity-calculator/",
+      "desc": "Stop over- or under-buying for parties.",
+      "img": "/store/covers/party-food-quantity-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/party-food-quantity-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Fuel Economy Log",
+      "page": "/store/p/fuel-economy-log/",
+      "desc": "Track what your car really uses.",
+      "img": "/store/covers/fuel-economy-log-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/fuel-economy-log/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Baby Feeding & Sleep Log",
+      "page": "/store/p/baby-feeding-sleep-log/",
+      "desc": "Answer the pediatrician with confidence.",
+      "img": "/store/covers/baby-feeding-sleep-log-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/baby-feeding-sleep-log/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Flooring & Tile Calculator",
+      "page": "/store/p/flooring-tile-calculator/",
+      "desc": "Order the right amount of flooring or tile.",
+      "img": "/store/covers/flooring-tile-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/flooring-tile-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Room Paint Calculator",
+      "page": "/store/p/room-paint-calculator/",
+      "desc": "Buy the right amount of paint the first time.",
+      "img": "/store/covers/room-paint-calculator-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/room-paint-calculator/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Moving Box Inventory",
+      "page": "/store/p/moving-box-inventory/",
+      "desc": "Know what is in every box.",
+      "img": "/store/covers/moving-box-inventory-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$8",
+      "cta_href": "/store/p/moving-box-inventory/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Shared Chore Board for Roommates & Couples",
+      "page": "/store/p/shared-chore-board/",
+      "desc": "Split housework fairly.",
+      "img": "/store/covers/shared-chore-board-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$8",
+      "cta_href": "/store/p/shared-chore-board/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Kids Allowance Tracker",
+      "page": "/store/p/kids-allowance-tracker/",
+      "desc": "Track pocket money for each child: what they earned, spent and saved.",
+      "img": "/store/covers/kids-allowance-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/kids-allowance-tracker/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Library Book Tracker",
+      "page": "/store/p/library-book-tracker/",
+      "desc": "List the library books your family has out and their due dates.",
+      "img": "/store/covers/library-book-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/library-book-tracker/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Home Repair Log",
+      "page": "/store/p/home-repair-log/",
+      "desc": "Keep a record of every repair in your home: what broke, who fixed it, what it cost and the date.",
+      "img": "/store/covers/home-repair-log-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/home-repair-log/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Utility Bill Tracker",
+      "page": "/store/p/utility-bill-tracker/",
+      "desc": "Log your hydro, gas, water and internet bills month by month.",
+      "img": "/store/covers/utility-bill-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/utility-bill-tracker/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Pantry & Freezer Inventory",
+      "page": "/store/p/pantry-inventory-list/",
+      "desc": "Write down what is in your pantry, fridge and freezer with best-before dates.",
+      "img": "/store/covers/pantry-inventory-list-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/pantry-inventory-list/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Contractor Quote Comparison",
+      "page": "/store/p/contractor-quote-compare/",
+      "desc": "Compare up to four contractor quotes side by side: price, start date, warranty, insurance and references.",
+      "img": "/store/covers/contractor-quote-compare-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/contractor-quote-compare/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Plant Watering Schedule",
+      "page": "/store/p/plant-watering-schedule/",
+      "desc": "List your house plants, how often each needs water, and tick when you water.",
+      "img": "/store/covers/plant-watering-schedule-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/plant-watering-schedule/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Morning Routine Checklist",
+      "page": "/store/p/morning-routine-checklist/",
+      "desc": "A calm, large-print morning checklist for adults or kids.",
+      "img": "/store/covers/morning-routine-checklist-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/morning-routine-checklist/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Warranty & Receipt Log",
+      "page": "/store/p/warranty-receipt-log/",
+      "desc": "One list for big purchases: where you bought it, the date, price, warranty length and where the receipt is kept — so returns and repairs are easy.",
+      "img": "/store/covers/warranty-receipt-log-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/warranty-receipt-log/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Savings Goal Tracker",
+      "page": "/store/p/savings-goal-tracker/",
+      "desc": "Set a savings goal and a date, log each deposit, and see how much is left and how much to put away each week or month to get there.",
+      "img": "/store/covers/savings-goal-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/savings-goal-tracker/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Weekly Cleaning Schedule",
+      "page": "/store/p/cleaning-schedule/",
+      "desc": "A simple daily, weekly and monthly cleaning checklist that keeps the home tidy in about 20 minutes a day.",
+      "img": "/store/covers/cleaning-schedule-sq-20261027b.jpg?v=20261027b",
+      "price_label": "Free",
+      "cta_href": "/tools/cleaning-schedule/",
+      "cta": "Get it free",
+      "cta_external": false,
+      "coming_soon": false,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Emergency Contact Sheet",
+      "page": "/store/p/emergency-contact-sheet/",
+      "desc": "One large-print page with everything needed in an emergency: contacts, doctors, allergies, medicines, insurance and home details.",
+      "img": "/store/covers/emergency-contact-sheet-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/emergency-contact-sheet/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Subscription Tracker",
+      "page": "/store/p/subscription-tracker/",
+      "desc": "Find out what all your subscriptions really cost.",
+      "img": "/store/covers/subscription-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/subscription-tracker/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Bill Due Date Tracker",
+      "page": "/store/p/bill-due-date-tracker/",
+      "desc": "List every monthly bill with its due day and amount, tick it off when paid, and see the monthly total at a glance.",
+      "img": "/store/covers/bill-due-date-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/bill-due-date-tracker/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Daily Medication Schedule",
+      "page": "/store/p/medication-schedule/",
+      "desc": "A clear, large-print daily medication chart for yourself or someone you care for: what, how much, when, and a tick box for each dose.",
+      "img": "/store/covers/medication-schedule-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/medication-schedule/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Grocery Budget Tracker",
+      "page": "/store/p/grocery-budget-tracker/",
+      "desc": "Set a monthly grocery budget, log each shop in seconds and see what is left for the month.",
+      "img": "/store/covers/grocery-budget-tracker-sq-20261027b.jpg?v=20261027b",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/grocery-budget-tracker/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Holiday Hosting Pack",
+      "page": "/store/p/holiday-hosting-pack/",
+      "desc": "Three ready menus for 8, a 7-day prep timeline with oven schedule, shopping lists, guest sheet, delegation script and cleanup plan.",
+      "img": "/store/covers/holiday-hosting-pack-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/holiday-hosting-pack/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Wedding Guest & Budget Planner",
+      "page": "/store/p/wedding-planner/",
+      "desc": "Budget split, 12-month timeline, guest and RSVP tracker, vendor sheet, sample day-of timeline, emergency kit and thank-you template.",
+      "img": "/store/covers/wedding-planner-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$14",
+      "cta_href": "/store/p/wedding-planner/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Debt Payoff Planner",
+      "page": "/store/p/debt-payoff-planner/",
+      "desc": "Debt inventory, avalanche vs. snowball, payoff order with rollover, 12-month tracker, spreadsheet formulas and milestones.",
+      "img": "/store/covers/debt-payoff-planner-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/debt-payoff-planner/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "New Year Reset Planner",
+      "page": "/store/p/new-year-reset-planner/",
+      "desc": "A one-afternoon year review, life wheel, three themes, tiny habits, quarter plan, money reset and a monthly check-in tracker.",
+      "img": "/store/covers/new-year-reset-planner-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/new-year-reset-planner/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Sinking Funds Planner",
+      "page": "/store/p/sinking-funds-planner/",
+      "desc": "Plan for irregular expenses: fund list, monthly calculator with formulas, 12-month tracker and a year-end review.",
+      "img": "/store/covers/sinking-funds-planner-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/sinking-funds-planner/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Small-Landlord Rent Ledger",
+      "page": "/store/p/rent-ledger/",
+      "desc": "For 1–5 units: unit sheet, monthly rent ledger with formulas, expense and repair logs, late-rent reminder and year-end summary.",
+      "img": "/store/covers/rent-ledger-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$14",
+      "cta_href": "/store/p/rent-ledger/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Side-Hustle Income & Tax Tracker",
+      "page": "/store/p/side-hustle-tax-tracker/",
+      "desc": "Income and expense logs with formulas, a monthly tax set-aside, Canada/US thresholds, mileage log and year-end checklist.",
+      "img": "/store/covers/side-hustle-tax-tracker-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$9",
+      "cta_href": "/store/p/side-hustle-tax-tracker/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Roommate Bill Splitter",
+      "page": "/store/p/roommate-bill-splitter/",
+      "desc": "House rules, rent split by room size, a monthly bills tracker, a settle-up sheet with formulas and scripts for awkward talks.",
+      "img": "/store/covers/roommate-bill-splitter-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$7",
+      "cta_href": "/store/p/roommate-bill-splitter/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Estate Admin Checklist",
+      "page": "/store/p/estate-admin-checklist/",
+      "desc": "Executor guide: first 48 hours, documents, who to notify, assets and debts, digital accounts and settling the estate.",
+      "img": "/store/covers/estate-admin-checklist-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$15",
+      "cta_href": "/store/p/estate-admin-checklist/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Elder-Care Coordination Sheet",
+      "page": "/store/p/elder-care-coordination/",
+      "desc": "Care profile, medications, contacts, weekly schedule, task owners, appointment log, family update template and support checklist.",
+      "img": "/store/covers/elder-care-coordination-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/elder-care-coordination/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Kitchen Renovation Planner",
+      "page": "/store/p/kitchen-renovation-planner/",
+      "desc": "Wishlist, budget split, layout decisions, contractor quotes, selections tracker, timeline, change orders and punch list.",
+      "img": "/store/covers/kitchen-renovation-planner-sq-20261027.jpg?v=20261027",
+      "price_label": "CA$12",
+      "cta_href": "/store/p/kitchen-renovation-planner/",
+      "cta": "Coming soon · preview",
+      "cta_external": false,
+      "coming_soon": true,
+      "sections": [
+        "focus"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Due Desk",
+      "page": "/store/p/due-desk/",
+      "desc": "An assignment tracker for what is due.",
+      "img": "/store/covers/gfbgve.webp",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/gfbgve",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "gfbgve"
+    },
+    {
+      "name": "Exam Desk",
+      "page": "/store/p/exam-desk/",
+      "desc": "A toolkit for finals week.",
+      "img": "/store/covers/zpqpto.webp",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/zpqpto",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "zpqpto"
+    },
+    {
+      "name": "Hook Bank",
+      "page": "/store/p/hook-bank/",
+      "desc": "Hooks for posts, ready to adapt.",
+      "img": "/store/covers/vusus.webp",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/vusus",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "vusus"
+    },
+    {
+      "name": "Promo Lane",
+      "page": "/store/p/promo-lane/",
+      "desc": "A promo kit for a launch.",
+      "img": "/store/covers/mlrnfq.webp",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/mlrnfq",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "mlrnfq"
+    },
+    {
+      "name": "Field Studio",
+      "page": "/store/p/field-studio/",
+      "desc": "Type two equations and watch a vector field come alive. A free, in-browser visualizer for students, teachers and creative coders.",
+      "img": "/store/covers/field-studio.jpg",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/field-studio/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Launch Day Kit",
+      "page": "/store/p/launch-day-kit/",
+      "desc": "A 40-point indie launch checklist plus ready-to-edit launch-day posts for X and LinkedIn. Free for builders.",
+      "img": "/store/covers/launch-day-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/dvzvtb",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "dvzvtb"
+    },
+    {
+      "name": "Listing Kit",
+      "page": "/store/p/listing-kit/",
+      "desc": "Get your app listed well: title formulas, blurb templates, screenshot checklist and tag guide for DU Get listed free and other marketplaces.",
+      "img": "/store/covers/listing-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/rmczwy",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "rmczwy"
+    },
+    {
+      "name": "Changelog Kit",
+      "page": "/store/p/changelog-kit/",
+      "desc": "Announce every version like a pro: changelog entry format, release-note templates, and update posts for X, LinkedIn and email.",
+      "img": "/store/covers/changelog-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/wvinsa",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "wvinsa"
+    },
+    {
+      "name": "Pricing Page Kit",
+      "page": "/store/p/pricing-page-kit/",
+      "desc": "Price your indie app with confidence: tier formulas, a pricing-page checklist, and copy templates that convert.",
+      "img": "/store/covers/pricing-page-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/goxgg",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "goxgg"
+    },
+    {
+      "name": "Cold DM Kit",
+      "page": "/store/p/cold-dm-kit/",
+      "desc": "Reach early users without being spammy: 12 DM and email templates, a follow-up schedule, and a tracking sheet.",
+      "img": "/store/covers/cold-dm-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/qscmoo",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "qscmoo"
+    },
+    {
+      "name": "Testimonial Kit",
+      "page": "/store/p/testimonial-kit/",
+      "desc": "Collect real testimonials and feedback: ask templates, a 5-question survey, and display layouts for your landing page.",
+      "img": "/store/covers/testimonial-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/nmpiw",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "nmpiw"
+    },
+    {
+      "name": "Onboarding Email Kit",
+      "page": "/store/p/onboarding-email-kit/",
+      "desc": "A 5-email welcome sequence for indie apps, with subject lines, timing, and plain-text templates.",
+      "img": "/store/covers/onboarding-email-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/fixdjo",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "fixdjo"
+    },
+    {
+      "name": "Weekly Budget Kit",
+      "page": "/store/p/weekly-budget-kit/",
+      "desc": "A simple printable weekly budget for households: zero-based worksheet, bill calendar, and a 4-week spending tracker.",
+      "img": "/store/covers/weekly-budget-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://kerzy.gumroad.com/l/fvrnct",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": "fvrnct"
+    },
+    {
+      "name": "Moving Day Checklist",
+      "page": "/store/p/move-checklist-kit/",
+      "desc": "An 8-week moving checklist for Canadian households: address changes, packing plan, utilities, and a box labelling system.",
+      "img": "/store/covers/move-checklist-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/move-checklist-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Waitlist & Pre-Launch Kit",
+      "page": "/store/p/waitlist-kit/",
+      "desc": "Landing-page copy formulas, four waitlist emails and a 14-day pre-launch calendar to build demand before you ship.",
+      "img": "/store/covers/waitlist-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/waitlist-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Indie SEO Starter Kit",
+      "page": "/store/p/indie-seo-kit/",
+      "desc": "Title and meta formulas, a 25-point on-page checklist and a 30-minute keyword method for indie products.",
+      "img": "/store/covers/indie-seo-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/indie-seo-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Build-in-Public 30-Day Post Pack",
+      "page": "/store/p/build-in-public-pack/",
+      "desc": "30 daily post prompts, 10 thread skeletons and hook starters for building in public on X.",
+      "img": "/store/covers/build-in-public-pack-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/build-in-public-pack/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "User Feedback Kit",
+      "page": "/store/p/feedback-kit/",
+      "desc": "Onboarding and churn surveys, a PMF test, a 20-minute interview script, NPS follow-ups and a tagging sheet.",
+      "img": "/store/covers/feedback-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/feedback-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Holiday Gift & Budget Planner",
+      "page": "/store/p/holiday-gift-planner/",
+      "desc": "A printable gift list, budget split, key-date tracker and gift ideas by person so the holidays stay on budget.",
+      "img": "/store/covers/holiday-gift-planner-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/holiday-gift-planner/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Home Maintenance Calendar",
+      "page": "/store/p/home-maintenance-calendar/",
+      "desc": "A season-by-season home checklist written for Canadian winters, plus monthly quick checks and a home record.",
+      "img": "/store/covers/home-maintenance-calendar-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/home-maintenance-calendar/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Job Hunt Kit",
+      "page": "/store/p/job-hunt-kit/",
+      "desc": "Application tracker, resume bullet formula, cover-letter template, STAR interview prep and an offer checklist.",
+      "img": "/store/covers/job-hunt-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/job-hunt-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Press Kit Builder",
+      "page": "/store/p/press-kit/",
+      "desc": "Everything a journalist needs to cover your product: description formulas, founder bio, fact sheet, pitch email and a /press page layout.",
+      "img": "/store/covers/press-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/press-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Competitor Teardown Worksheet",
+      "page": "/store/p/competitor-teardown-kit/",
+      "desc": "A 90-minute method to tear down three competitors, mine their reviews and write the positioning line you can own.",
+      "img": "/store/covers/competitor-teardown-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/competitor-teardown-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Product Hunt Day-Of Playbook",
+      "page": "/store/p/product-hunt-kit/",
+      "desc": "Two-week prep list, maker first comment, hour-by-hour launch-day schedule in Eastern time, message templates and a post-mortem.",
+      "img": "/store/covers/product-hunt-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/product-hunt-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Apartment Hunt Kit (Canada)",
+      "page": "/store/p/apartment-hunt-kit/",
+      "desc": "Rental budget, viewing checklist, comparison sheet, application packet, scam red flags and a before-you-sign list.",
+      "img": "/store/covers/apartment-hunt-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/apartment-hunt-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "New Parent Checklist",
+      "page": "/store/p/new-parent-checklist/",
+      "desc": "Third-trimester to-dos, hospital bag, nursery basics, Canadian after-birth paperwork and a first-two-weeks feeding tracker.",
+      "img": "/store/covers/new-parent-checklist-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/new-parent-checklist/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Road Trip Kit",
+      "page": "/store/p/road-trip-kit/",
+      "desc": "Car prep, a four-season trunk kit, packing list, kids and pets add-on, daily route plan, budget and car games.",
+      "img": "/store/covers/road-trip-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/road-trip-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "30-Day Declutter Challenge",
+      "page": "/store/p/declutter-challenge/",
+      "desc": "One small area a day, 15–30 minutes each: a 30-day checklist, the four-box rule, where things go and how to keep it clear.",
+      "img": "/store/covers/declutter-challenge-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/declutter-challenge/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Student Semester Starter",
+      "page": "/store/p/student-semester-starter/",
+      "desc": "Syllabus setup, course tracker, weekly study grid, assignment countdown, exam prep, semester budget and residence packing list.",
+      "img": "/store/covers/student-semester-starter-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/student-semester-starter/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "First Apartment Essentials",
+      "page": "/store/p/first-apartment-essentials/",
+      "desc": "Before-move-in tasks, night-one box, kitchen, bath, bedroom, cleaning, tools and safety lists, plus a budget sheet.",
+      "img": "/store/covers/first-apartment-essentials-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/first-apartment-essentials/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Refund & Returns Policy Kit",
+      "page": "/store/p/refund-policy-kit/",
+      "desc": "Policy templates for digital, SaaS and physical goods, where to show them, and refund reply templates.",
+      "img": "/store/covers/refund-policy-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/refund-policy-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Home Emergency Prep Kit",
+      "page": "/store/p/emergency-prep-kit/",
+      "desc": "72-hour kit checklist, family plan, contact sheet, power-outage tips and a twice-a-year check.",
+      "img": "/store/covers/emergency-prep-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/emergency-prep-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Product Listing Optimizer",
+      "page": "/store/p/product-listing-optimizer/",
+      "desc": "Title formula, a 10-point listing scorecard, description skeleton and before/after examples for any store listing.",
+      "img": "/store/covers/product-listing-optimizer-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/product-listing-optimizer/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Kids' Birthday Party Planner",
+      "page": "/store/p/kids-birthday-party-planner/",
+      "desc": "4-week plan, RSVP tracker with allergies, budget, a 2-hour party timeline and activity ideas by age.",
+      "img": "/store/covers/kids-birthday-party-planner-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/kids-birthday-party-planner/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Car Maintenance Log",
+      "page": "/store/p/car-maintenance-log/",
+      "desc": "Vehicle sheet, service intervals, service and fuel logs, and fall, spring and road-trip checks.",
+      "img": "/store/covers/car-maintenance-log-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/car-maintenance-log/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Affiliate Program Starter Kit",
+      "page": "/store/p/affiliate-program-kit/",
+      "desc": "Commission and payout choices, margin math, simple terms, recruiting templates, a swipe file and a tracker.",
+      "img": "/store/covers/affiliate-program-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/affiliate-program-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Price Increase Kit",
+      "page": "/store/p/price-increase-kit/",
+      "desc": "Decide when and how much, grandfather fairly, a 14-day timeline and announcement templates.",
+      "img": "/store/covers/price-increase-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/price-increase-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Home Inventory for Insurance",
+      "page": "/store/p/home-inventory-kit/",
+      "desc": "A one-afternoon method, room-by-room inventory table, commonly missed items, a policy check and a yearly update.",
+      "img": "/store/covers/home-inventory-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/home-inventory-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Black Friday Sale Kit for Makers",
+      "page": "/store/p/black-friday-sale-kit/",
+      "desc": "Offer options, a Thursday-to-Tuesday timeline, launch/reminder/last-call emails, social posts and a results tracker.",
+      "img": "/store/covers/black-friday-sale-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/black-friday-sale-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "User Interview Script Kit",
+      "page": "/store/p/user-interview-kit/",
+      "desc": "Recruiting message, interview rules, a 30-minute script, churned-user questions, notes template and synthesis method.",
+      "img": "/store/covers/user-interview-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/user-interview-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Packing Lists by Trip Type",
+      "page": "/store/p/packing-list-kit/",
+      "desc": "A base list plus tick-off lists for weekends, beach weeks, city breaks, camping, business trips and travel with kids.",
+      "img": "/store/covers/packing-list-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/packing-list-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    },
+    {
+      "name": "Crowdfunding Launch Kit",
+      "page": "/store/p/crowdfunding-launch-kit/",
+      "desc": "Goal math, pre-launch plan, reward tiers, page outline, a 30-day timeline and backer update templates.",
+      "img": "/store/covers/crowdfunding-launch-kit-sq-20261027.jpg?v=20261027",
+      "price_label": "Free",
+      "cta_href": "https://digitalundergroundstore.com/tools/crowdfunding-launch-kit/",
+      "cta": "Get it free",
+      "cta_external": true,
+      "coming_soon": false,
+      "sections": [
+        "free"
+      ],
+      "gumroad": null
+    }
+  ]
+}

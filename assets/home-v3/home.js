@@ -326,13 +326,17 @@
     let seed = [];
     try { seed = JSON.parse($('du-data').textContent) || []; } catch (e) { seed = []; }
     setProjects(seed, true);
+    // DU loader: keep the server-rendered seed hidden until live data is painted.
+    const duDone = () => { const l = $('duLoader'); document.documentElement.classList.remove('du-loading'); if (l) l.remove(); };
+    const duFail = () => { const l = $('duLoader'); if (!l) return duDone(); l.classList.add('err'); l.querySelector('p').textContent = "Couldn't load the live marketplace"; };
+    if (!ONSITE) duDone();
     // Live merge (same sources/order as the server render): static seed + live API + pinned order.
     if (ONSITE) Promise.all([
       fetch('/community/listings.json').then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('/api/community/listings').then(r => r.ok ? r.json() : { listings: [] }).catch(() => ({ listings: [] })),
       fetch('/community/pinned.json').then(r => r.ok ? r.json() : []).catch(() => [])
     ]).then(([stat, api, pinned]) => {
-      if (!Array.isArray(api && api.listings) || !api.listings.length) return;
+      if (!Array.isArray(api && api.listings) || !api.listings.length) return duFail();
       pinned = Array.isArray(pinned) ? pinned : [];
       const by = {};
       (Array.isArray(stat) ? stat : []).concat(api.listings).forEach(r => { if (r && r.id) by[r.id] = r; });
@@ -351,10 +355,11 @@
       const seeded = r => staticIds.has(r.id) || /^cm_(kerzy|pick)_/.test(r.id) || /^digital underground$/i.test((r.makerName || '').trim());
       if (!api.ordered) all = all.filter(r => !seeded(r)).concat(all.filter(seeded));
       const sig = rs => JSON.stringify(rs.map(r => [r.id, r.name, r.priceLabel, r.stage, r.statusLabel, r.curated, r.imageUrl, r.pitchShort, !!r.isNew, r.video && r.video.src]));
-      if (sig(all) === sig(seed)) return;
+      if (sig(all) === sig(seed)) return duDone();
       const untouched = !state.q && !state.cats.size && !state.makers.size && !state.labels.size && state.free && state.sort === 'featured' && state.lo === 0 && state.hi === PMAX;
-      if (untouched) setProjects(all, 'keep');
-    });
+      setProjects(all, untouched ? 'keep' : true);
+      requestAnimationFrame(duDone);
+    }).catch(duFail);
 
     // ── Collapsible sections ──
     document.querySelectorAll('.fsec-head').forEach(b => b.addEventListener('click', () => {

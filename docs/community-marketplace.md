@@ -27,7 +27,7 @@ Optional static seed: `community/listings.json` (approved listings only; merged 
 5. **Environment variables** (encrypted):
    - `COMMUNITY_ADMIN_TOKEN` — long random string for moderation API and signed email links
    - Optional: `TURNSTILE_SECRET_KEY` + set `siteKey` in `community/turnstile-config.json` (never commit the secret)
-   - Optional: `RESEND_API_KEY`, `COMMUNITY_NOTIFY_FROM`, `COMMUNITY_OWNER_ALERT_EMAIL` (preferred) or `COMMUNITY_NOTIFY_EMAIL` — owner alert recipient (falls back to digitalunderground.store@proton.me only if both unset)
+   - Optional: `RESEND_API_KEY`, `COMMUNITY_NOTIFY_FROM`, `COMMUNITY_NOTIFY_EMAIL` (defaults to digitalunderground.store@proton.me)
    - Optional: `COMMUNITY_MAILCHANNELS=1` and `COMMUNITY_MAIL_FROM` (MailChannels; requires DNS on your domain)
    - Optional: `COMMUNITY_SITE_URL` (origin for email moderation links)
 
@@ -129,3 +129,10 @@ Mobile-first control panel at **https://digitalundergroundstore.com/owner/** (re
 - **Also:** Bearer `COMMUNITY_ADMIN_TOKEN` still works on `/api/community/admin` and `/api/owner/*` for Gerold/tools.
 - **Sections:** Home overview, Review queue, Contacts CSV, Support inbox, Analytics (30-day), Backups (trigger + download), Quick links.
 - Plain passcode (agents only): `/home/box/.secrets/owner-dashboard-passcode.txt` (chmod 600) — never commit or print.
+
+## Mail: maker welcome and "you're live"
+
+- **Welcome** (`sendMakerWelcome`, called from `submit.js` after `notifySubmission`): sent to the maker on every new pending or auto-approved listing. Auto-approved welcomes include the live link and also stamp `liveEmailSentAt`, so the maker gets one email, not two. Submit returns `makerEmail: { sent, reason }`.
+- **You're live** (`notifyMakerApproved` → `sendMakerLiveEmail`): sent only on a pending → approved move (admin API, emailed moderate link, owner dashboard). Mail errors are logged and never fail the approval.
+- **Idempotency flags** on the listing record: `welcomeEmailSentAt`, `liveEmailSentAt`. They are claimed in KV before sending and released if delivery fails, so a double approve never mails twice and a failed send can be retried.
+- Reply-To / support: `digitalunderground.store@proton.me`. Uses the same Resend / MailChannels config as owner notify.

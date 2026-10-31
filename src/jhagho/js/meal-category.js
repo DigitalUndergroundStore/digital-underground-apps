@@ -129,13 +129,13 @@
 
   function recipePlanEligible(recipe) {
     if (hardNonMeal(recipe)) return false;
-    // Bundled recipes carry a hand-checked meal; the softer heuristics are for imports.
+    // Bundled recipes carry an explicit meal tag; the softer heuristics are for imports.
     if (recipe && recipe.meal && MEALS.indexOf(String(recipe.meal)) !== -1 && !recipe.userEdited) return true;
     return !inferNonMealKind(recipe);
   }
 
   function inferMealCategory(recipe) {
-    /* v3.13: bundled recipes carry an explicit, hand-checked meal; a recipe with exactly one
+    /* v3.13: bundled recipes carry an explicit meal tag; a recipe with exactly one
        breakfast/lunch/dinner tag (user choice or a normalized save) keeps it. Heuristics only
        classify untagged imports. */
     var explicit = recipe && String(recipe.meal || "").toLowerCase();

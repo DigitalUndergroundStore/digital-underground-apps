@@ -1,3 +1,21 @@
+# HX takedown (Oct 29 2026, temporary while remake): 302 to store
+/store/p/humanity-x-off-the-ground /store/ 302
+/store/p/humanity-x-off-the-ground/ /store/ 302
+/store/p/humanity-x-into-the-stars /store/ 302
+/store/p/humanity-x-into-the-stars/ /store/ 302
+/store/p/humanity-x-books-1-2 /store/ 302
+/store/p/humanity-x-books-1-2/ /store/ 302
+/store/series/humanity-x /store/ 302
+/store/series/humanity-x/ /store/ 302
+/p/humanity-x-off-the-ground /store/ 302
+/p/humanity-x-off-the-ground/ /store/ 302
+/p/humanity-x-into-the-stars /store/ 302
+/p/humanity-x-into-the-stars/ /store/ 302
+/p/humanity-x-books-1-2 /store/ 302
+/p/humanity-x-books-1-2/ /store/ 302
+# Free signup gift moved to PlanetView (Oct 27 2026)
+/free-book /free-planetview/ 302
+/free-book/ /free-planetview/ 302
 # Marketplace is the homepage; old landing URL keeps its links (query string is preserved).
 /downloads/easy-tracker /share-live-location-link/ 301
 /downloads/easy-tracker/ /share-live-location-link/ 301
@@ -56,8 +74,8 @@
 /p/freelance-admin-stack/ /store/p/freelance-admin-stack/ 301
 /p/grok-prompt-pack /store/p/grok-prompt-pack/ 301
 /p/grok-prompt-pack/ /store/p/grok-prompt-pack/ 301
-/p/grokmate /store/p/grokmate/ 301
-/p/grokmate/ /store/p/grokmate/ 301
+/p/grokmate /store/p/plainhelp/ 301
+/p/grokmate/ /store/p/plainhelp/ 301
 /p/he-came-home-without-her /store/p/he-came-home-without-her/ 301
 /p/he-came-home-without-her/ /store/p/he-came-home-without-her/ 301
 /p/hook-bank /store/p/hook-bank/ 301
@@ -96,3 +114,11 @@
 /p/tillys-big-cleanup/ /store/p/tilly-s-big-cleanup/ 301
 /p/winston /store/p/winston-hands-free-kitchen-voice-assistant/ 301
 /p/winston/ /store/p/winston-hands-free-kitchen-voice-assistant/ 301
+/store/p/grokmate /store/p/plainhelp/ 301
+/store/p/grokmate/ /store/p/plainhelp/ 301
+# PlainHelp phone app (canonical). Old GrokMate app URL redirects here.
+/grokmate /plainhelp/ 301
+/grokmate/ /plainhelp/ 301
+/grokmate/* /plainhelp/:splat 301
+/p/plainhelp /store/p/plainhelp/ 301
+/p/plainhelp/ /store/p/plainhelp/ 301

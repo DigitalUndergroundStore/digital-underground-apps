@@ -2,7 +2,7 @@
    shareable badge on that winner's listing page. Data: /api/league/winner (changes when each week ends, Thursday 11:59 PM ET). */
 (function () {
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
-  function css() { if (!document.querySelector('link[href^="/league/league.css"]')) { var l = document.createElement("link"); l.rel = "stylesheet"; l.href = "/league/league.css?v=4"; document.head.appendChild(l); } }
+  function css() { if (!document.querySelector('link[href^="/league/league.css"]')) { var l = document.createElement("link"); l.rel = "stylesheet"; l.href = "/league/league.css?v=5"; document.head.appendChild(l); } }
   fetch("/api/league/winner").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (d) {
     var w = d && d.winner; if (!w) return; css();
     var slot = document.getElementById("motw-slot");

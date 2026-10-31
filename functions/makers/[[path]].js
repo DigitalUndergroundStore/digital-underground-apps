@@ -1,7 +1,7 @@
 // Server-rendered creator pages: /makers/ (directory) and /makers/<slug>/ (profile + all marketplace listings).
 // Fully public. Full HTML for crawlers; a tiny inline script adds search. Edge-cached 5 min to keep KV reads low.
 import { getKv, listApproved, listingContactAddress, isRetired } from "../_lib/community.js";
-import { allLiveProfiles, liveProfile, makerSlugFor, socialLabel, validSlug } from "../_lib/makers.js";
+import { accentHex, allLiveProfiles, liveProfile, makerSlugFor, slugify, socialLabel, validSlug } from "../_lib/makers.js";
 
 const ORIGIN = "https://digitalundergroundstore.com";
 const GM = /[^\s@<>"]+@[^\s@<>"]+\.[a-z]{2,}/gi; // never print any email address
@@ -17,6 +17,15 @@ const MAKER_OG = {
   },
 };
 const abs = (u) => (u && u.startsWith("/") ? ORIGIN + u : u);
+
+/** Permanent Maker League trophies (hall of fame). Never remove a finished week. */
+const LEAGUE_TROPHIES = {
+  "cm_mvfnl9qp_80652919": { week: "2026-10-19", label: "Week 1", title: "Builder Battle Week 1 Winner", makerSlug: "media-renamer-pro" },
+};
+const trophyFor = (id) => LEAGUE_TROPHIES[id] || null;
+const trophyForSlug = (slug) => Object.values(LEAGUE_TROPHIES).find((t) => t.makerSlug === slug) || null;
+const TROPHY_SRC = "/assets/badges/maker-league-week1.png?v=3";
+const TROPHY_SRCSET = "/assets/badges/maker-league-week1.png?v=3 1x, /assets/badges/maker-league-week1@2x.png?v=3 2x, /assets/badges/maker-league-week1@3x.png?v=3 3x";
 
 async function allListings(context, kv) {
   const by = {};
@@ -42,8 +51,10 @@ export function cardHTML(r, i) {
   const lbl = r.statusLabel ? `<span class="badge label">${e(String(r.statusLabel).slice(0, 24))}</span>` : "";
   const badges = lbl ? `<span class="badges">${badge}${lbl}</span>` : badge;
   const img = r.imageUrl;
-  const med = img ? `<div class="media"><img src="${safeHref(img)}" alt="${n} cover image" width="640" height="360" loading="${i < 2 ? "eager" : "lazy"}" decoding="async"></div>`
-    : `<div class="media"><img src="/assets/covers/default-cover.svg" alt="" width="640" height="360" loading="lazy" decoding="async"></div>`;
+  const tr = trophyFor(r.id);
+  const trophy = tr ? `<a class="ml-trophy ml-trophy--corner" href="/league/" title="${e(tr.title)}" aria-label="${e(tr.title)}"><img src="${TROPHY_SRC}" srcset="${TROPHY_SRCSET}" sizes="56px" alt="${e(tr.title)}" width="120" height="120" decoding="async"></a>` : "";
+  const med = img ? `<div class="media">${trophy}<img src="${safeHref(img)}" alt="${n} cover image" width="640" height="360" loading="${i < 2 ? "eager" : "lazy"}" decoding="async"></div>`
+    : `<div class="media">${trophy}<img src="/assets/covers/default-cover.svg" alt="" width="640" height="360" loading="lazy" decoding="async"></div>`;
   const maker = r.makerSlug ? `<a href="/makers/${e(r.makerSlug)}/">${e(r.makerName)}</a>` : e(r.makerName);
   const x = r.xHandle ? ` · <a href="https://x.com/${e(r.xHandle)}" target="_blank" rel="noopener" aria-label="@${e(r.xHandle)} on X (opens in a new tab)">@${e(r.xHandle)}</a>` : "";
   const contact = r.contactable ? `<a class="pill pill-o" href="${href}#contact" aria-label="Contact the developer of ${n}">Contact</a>` : "";
@@ -77,22 +88,23 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 <meta name="theme-color" content="#11141a">
 <link rel="stylesheet" href="/assets/design-tokens.css?v=3">
 <link rel="stylesheet" href="/community/wolf.css?v=8">
-<link rel="stylesheet" href="/makers/makers.css?v=4">
+<link rel="stylesheet" href="/makers/makers.css?v=7"><link rel="stylesheet" href="/assets/league/trophies.css?v=5">
 <script src="/community/nav.js?v=1" defer></script>
 <script src="/community/track.js" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>
-<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=16">
+<link rel="stylesheet" href="/assets/du-featured/du-featured.css?v=4"><script src="/assets/du-featured/du-featured.js?v=4" defer></script>
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=33">
 <link rel="stylesheet" href="/assets/theme-clean.css?v=2">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a><div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div><button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=11" defer></script><!--/du-site-nav-->
+<!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><a class="dun-shop" href="/store/"><span aria-hidden="true">&#128722;</span> <span class="dun-shop-l">Shop</span><span class="dun-shop-s">Shop</span></a><nav class="dun-links" aria-label="Primary"><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><div class="dun-acct" id="dunAcct"><button type="button" class="dun-acct-btn" id="dunAcctBtn" aria-label="Open menu and account" aria-controls="dunDrawer" aria-expanded="false" aria-haspopup="true"><img src="/assets/logo/du-mark.svg" alt="" width="26" height="26"></button></div></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><div class="dun-drawer-acct" id="dunDrawerAcct" role="group" aria-label="Account"><div class="dun-drawer-who"><span class="av mark" aria-hidden="true"><img src="/assets/logo/du-mark.svg" alt="" width="36" height="36"></span><span class="nm">Account</span></div><a href="/community/dashboard/">Sign in</a></div><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><a href="/community/submit/">List your project free</a><a href="/store/p/maker-pro/">Maker Pro</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=35" defer></script><!--/du-site-nav-->
 <main id="main" tabindex="-1">
 ${body}
 </main>
-<!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="duf-brand"><a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47" loading="lazy"></a><p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p><form class="duf-nl" novalidate><div class="duf-book"><a href="/free-book/"><img src="/assets/gift/humanity-x-off-the-ground-cover.webp" alt="Humanity X: Off the Ground cover" width="56" height="90" loading="lazy" decoding="async"></a><div><h3 class="duf-bk-h">Get the free audiobook</h3><p class="duf-bk-t"><a href="/free-book/">Humanity X: Off the Ground</a></p><p class="duf-bk-s">The Book 1 audiobook (AI-narrated), free for a limited time with email signup. The ebook is in the store.</p></div></div><label for="dufEmail">Your email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Get the audiobook</button></div><input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true"><label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label><p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form><div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg></a></div></div><div class="duf-cols"><div class="duf-col"><h3>Marketplace</h3><ul><li><a href="/#projects">Browse projects</a></li><li><a href="/league/">Maker League</a></li><li><a href="/makers/">Creators</a></li><li><a href="/community/submit/">List your project free</a></li><li><a href="/community/dashboard/">Creator dashboard</a></li></ul></div><div class="duf-col"><h3>Resources</h3><ul><li><a href="/blog/">Blog</a></li><li><a href="/community/api/">Developer API</a></li><li><a href="/support/">Support</a></li><li><button type="button" data-duf-share>Share this page</button></li></ul></div><div class="duf-col"><h3>Company</h3><ul><li><a href="/about/">About</a></li><li><a href="/store/">Digital Underground store</a></li><li><a href="mailto:digitalunderground.store@proton.me">Contact us</a></li><li><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank">Follow @DigitalUG_Store</a></li></ul></div></div></div><div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div></footer><!--/du-site-foot-->
+<!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="duf-brand"><a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47" loading="lazy"></a><p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p><form class="duf-nl" novalidate><div class="duf-book"><a href="/free-planetview/"><img src="/assets/gift/planetview-cover.webp?v=hd1" alt="PlanetView Live cover" width="220" height="124" loading="lazy" decoding="async"></a><div><h3 class="duf-bk-h">Get PlanetView Live free</h3><p class="duf-bk-t"><a href="/free-planetview/">PlanetView Live: 3D Earth &amp; flight sim</a> · In live beta (testing)</p><p class="duf-bk-s">Free for a limited time with email signup. Independent project, not affiliated with SpaceX or NASA.</p></div></div><label for="dufEmail">Your email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Get PlanetView free</button></div><input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true"><label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label><p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form><div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg></a></div></div><div class="duf-cols"><div class="duf-col"><h3>Marketplace</h3><ul><li><a href="/#projects">Browse projects</a></li><li><a href="/league/">Maker League</a></li><li><a href="/makers/">Creators</a></li><li><a href="/community/submit/">List your project free</a></li><li><a href="/store/p/maker-pro/">Maker Pro</a></li><li><a href="/community/dashboard/">Creator dashboard</a></li></ul></div><div class="duf-col"><h3>Resources</h3><ul><li><a href="/blog/">Blog</a></li><li><a href="/community/api/">Developer API</a></li><li><a href="/support/">Support</a></li><li><button type="button" data-duf-share>Share this page</button></li></ul></div><div class="duf-col"><h3>Company</h3><ul><li><a href="/about/">About</a></li><li><a href="/store/">Digital Underground store</a></li><li><a href="mailto:digitalunderground.store@proton.me">Contact us</a></li><li><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank">Follow @DigitalUG_Store</a></li></ul></div></div></div><div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div></footer><!--/du-site-foot-->
 </body>
 </html>`;
 }
@@ -114,11 +126,13 @@ function makerPage(p, rows) {
   if (p.website) links.push(`<a class="pill pill-v" href="${safeHref(p.website)}" target="_blank" rel="noopener me">${e(siteLabel(p.website))}<span class="sr-only"> (opens in a new tab)</span></a>`);
   for (const [k, u] of Object.entries(p.socials || {})) links.push(`<a class="pill pill-o" href="${safeHref(u)}" target="_blank" rel="noopener me">${e(socialLabel(k))}<span class="sr-only"> (opens in a new tab)</span></a>`);
   const desc = (p.bio || `${p.name} on the Developer Marketplace.`).slice(0, 155);
-  const body = `<div class="mx z mk-hero">
+  const ac = accentHex(p.accent);
+  const acCss = ac ? `<style>.mk-hero{--mk-ac:${ac}}.mk-hero .mk-banner{border-color:${ac}66${p.banner ? "" : `;background:linear-gradient(135deg,${ac}55,#282d37 70%)`}}.mk-hero .mk-ph{background:${ac};color:#11141a}.mk-hero .eyebrow .dot{background:${ac}}.mk-links .pill-v{background:${ac};border-color:${ac};color:#11141a}.mk-links .pill-o{border-color:${ac}88}#listings-title .mk-count{background:${ac}33}</style>` : "";
+  const body = `${acCss}<div class="mx z mk-hero">
   <div class="mk-banner">${p.banner ? `<img src="${safeHref(p.banner)}" alt="" width="1200" height="630" fetchpriority="high" decoding="async">` : ""}</div>
   <div class="mk-id">
     ${p.logo ? `<img class="mk-logo" src="${safeHref(p.logo)}" alt="${e(p.name)} logo" width="112" height="112" decoding="async">` : `<span class="mk-logo mk-ph" aria-hidden="true">${e(p.name.charAt(0))}</span>`}
-    <div class="mk-tt"><p class="eyebrow"><span class="dot" aria-hidden="true"></span>Creator on the Developer Marketplace</p><h1>${e(p.name)}</h1></div>
+    <div class="mk-tt"><p class="eyebrow"><span class="dot" aria-hidden="true"></span>Creator on the Developer Marketplace</p><h1>${e(p.name)}</h1>${trophyForSlug(p.slug) ? `<a class="ml-trophy-banner" href="/league/" aria-label="${e(trophyForSlug(p.slug).title)}"><img class="ml-trophy-banner__cup" src="${TROPHY_SRC}" srcset="${TROPHY_SRCSET}" sizes="56px" alt="" width="120" height="120" decoding="async"><span class="ml-trophy-banner__text"><span class="ml-trophy-banner__kicker">Builder Battle</span><span class="ml-trophy-banner__title">Week 1 Winner</span></span></a>` : ""}}</div>
   </div>
   ${p.bio ? `<p class="lede mk-bio">${e(p.bio)}</p>` : ""}
   ${links.length ? `<nav class="mk-links" aria-label="${e(p.name)} links">${links.join("")}</nav>` : ""}
@@ -136,14 +150,20 @@ function makerPage(p, rows) {
 
 function directoryPage(makers) {
   const canonical = `${ORIGIN}/makers/`;
-  const items = makers.map(withDULogo).map((m) => `<li class="mk-card" data-q="${e((m.name + " " + m.bio).toLowerCase())}"><a class="mk-card-a" href="${m.auto ? e(m.href) : `/makers/${e(m.slug)}/`}">` +
+  const items = makers.map(withDULogo).map((m) => {
+    const tr = trophyForSlug(m.slug);
+    const trophy = tr ? `<span class="ml-trophy ml-trophy--dir" title="${e(tr.title)}" aria-label="${e(tr.title)}"><img src="${TROPHY_SRC}" srcset="${TROPHY_SRCSET}" sizes="44px" alt="" width="120" height="120" decoding="async"></span>` : "";
+    return `<li class="mk-card" data-q="${e((m.name + " " + m.bio).toLowerCase())}"><a class="mk-card-a" href="${m.auto ? e(m.href) : `/makers/${e(m.slug)}/`}">` +
     (m.logo ? `<img class="mk-card-logo" src="${safeHref(m.logo)}" alt="" width="64" height="64" loading="lazy" decoding="async">` : `<span class="mk-card-logo mk-ph" aria-hidden="true">${e(m.name.charAt(0))}</span>`) +
-    `<span class="mk-card-body"><span class="mk-card-name">${e(m.name)}</span><span class="mk-card-bio">${e(m.bio || (m.auto ? "Maker on the Developer Marketplace" : ""))}</span><span class="mk-card-n">${m.count} ${m.count === 1 ? "listing" : "listings"}</span></span></a></li>`).join("\n");
+    `<span class="mk-card-body"><span class="mk-card-name">${e(m.name)}</span><span class="mk-card-bio">${e(m.bio || (m.auto ? "Maker on the Developer Marketplace" : ""))}</span><span class="mk-card-n">${m.count} ${m.count === 1 ? "listing" : "listings"}</span></span>${trophy}</a></li>`;
+  }).join("\n");
   const body = `<div class="mx z hero mk-dir-hero">
   <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Independent makers</p>
   <h1>Creators</h1>
   <p class="lede">The people and studios behind the Developer Marketplace. Open a creator to see everything they list.</p>
 </div>
+<style>.mp-chip{max-width:880px;margin:14px auto 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;font-size:13.5px;line-height:1.45;color:#c7c5f4;background:rgba(79,70,229,.10);border:1px solid rgba(154,151,232,.22);border-radius:999px;padding:7px 10px 7px 14px;box-sizing:border-box}.mp-chip b{color:#f4f4f5;font-weight:600}.mp-chip code{font:600 12.5px ui-monospace,monospace;color:#f4f4f5;background:rgba(255,255,255,.07);border-radius:6px;padding:1px 6px}.mp-chip a{color:#c7c5f4;text-decoration:underline;text-underline-offset:3px}.mp-chip button{background:none;border:0;color:#a1a1aa;font-size:16px;line-height:1;cursor:pointer;padding:2px 6px;border-radius:6px}.mp-chip button:hover{color:#f4f4f5}@media(max-width:640px){.mp-chip{margin:12px 12px 0;border-radius:14px}}</style>
+<div class="mp-chip" id="mpChip" role="note"><span><b>Founding 25:</b> Maker Pro CA$59/yr with code <code>FOUNDING25</code> (normally CA$79). Listing stays free &mdash; Pro is reach. <a href="/store/p/maker-pro/">See Maker Pro</a></span><button type="button" aria-label="Dismiss" onclick="try{localStorage.setItem('mpChipX','1')}catch(e){}this.parentNode.remove()">&times;</button></div><script>try{if(localStorage.getItem('mpChipX'))document.getElementById('mpChip').remove()}catch(e){}</script>
 <search class="mx z filters" role="search" aria-label="Search creators">
   <div class="frow"><div class="sbox"><label for="mq" class="sr-only">Search creators</label>
     <input id="mq" class="search" type="search" placeholder="Search creators…" autocomplete="off" aria-describedby="mcount">
@@ -177,7 +197,7 @@ export async function onRequestGet(context) {
   if (parts.length > 1) return context.next();
   if (!url.pathname.endsWith("/")) { url.pathname += "/"; return Response.redirect(url.toString(), 301); }
   const cache = caches.default;
-  const key = new Request(url.origin + url.pathname, { method: "GET" });
+  const key = new Request(url.origin + url.pathname + "?v=dir-dedupe-1", { method: "GET" });
   const hit = await cache.match(key).catch(() => null);
   if (hit) return hit;
   const kv = getKv(env);
@@ -185,16 +205,22 @@ export async function onRequestGet(context) {
   let res;
   if (!parts.length) {
     const profiles = await allLiveProfiles(kv);
-    const withProfile = profiles.map((p) => ({ ...p, count: rows.filter((r) => r.makerSlug === p.slug).length })).filter((m) => m.count > 0);
-    // Makers with live listings but no creator profile yet get a basic card (name, count, first listing image).
+    // Count every listing onto its maker page: by makerSlug, or by matching name/slugify when the listing never got a slug.
+    const withProfile = profiles.map((p) => ({ ...p, count: 0 }));
+    const bySlug = new Map(withProfile.map((m) => [m.slug, m]));
+    const byName = new Map(withProfile.map((m) => [m.name.trim().toLowerCase(), m]));
     const auto = new Map();
     for (const r of rows) {
-      if (r.makerSlug || r.curated || !r.makerName) continue;
-      const k = r.makerName.trim().toLowerCase();
-      const a = auto.get(k) || { name: r.makerName.trim(), bio: "", count: 0, logo: r.imageUrl || "", href: `/community/p/?id=${encodeURIComponent(r.id)}`, auto: true };
-      a.count++; auto.set(k, a);
+      if (r.curated || !r.makerName) continue;
+      const nm = r.makerName.trim();
+      const hit = (r.makerSlug && bySlug.get(r.makerSlug)) || bySlug.get(slugify(nm)) || byName.get(nm.toLowerCase());
+      if (hit) { hit.count++; continue; }
+      if (r.makerSlug) continue; // slug points at a missing page — skip orphan auto card
+      const k = nm.toLowerCase();
+      const a = auto.get(k) || { name: nm, bio: "", count: 0, logo: r.imageUrl || "", href: `/community/p/?id=${encodeURIComponent(r.id)}`, auto: true };
+      a.count++; if (!a.logo && r.imageUrl) a.logo = r.imageUrl; auto.set(k, a);
     }
-    const makers = [...withProfile, ...auto.values()]
+    const makers = [...withProfile.filter((m) => m.count > 0), ...auto.values()]
       .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || a.name.localeCompare(b.name));
     res = html(directoryPage(makers));
   } else {

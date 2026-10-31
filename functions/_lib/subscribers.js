@@ -1,8 +1,10 @@
 // Email list stored in COMMUNITY_KV under "sub:<email>". CASL: express consent recorded with text, time, page.
 export const CONSENT_TEXT = "Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.";
-// Free signup gift = Humanity X AUDIOBOOK only (rule Oct 26 2026). Ebook is paid-only in the store.
-export const GIFT_URL = "/listen-hx-r7v2/";
-export const AUDIO_URL = "/listen-hx-r7v2/";
+// Free signup gift = PlanetView Live (Oct 27 2026, limited time). Gumroad 100%-off code DUFREEPV (max 1000 uses) issues the license key.
+// Humanity X ebook + audiobook stay paid in the store.
+export const GIFT_URL = "https://kerzy.gumroad.com/l/oxnfvy?code=DUFREEPV";
+export const AUDIO_URL = "https://kerzy.gumroad.com/l/oxnfvy?code=DUFREEPV";
+export const PLAY_URL = "/planetview/";
 export const SENDER = "Digital Underground, Ontario, Canada · digitalundergroundstore.com/support/";
 const EMAIL_RE = /^[^\s@]{1,64}@[^\s@]{1,190}\.[a-z]{2,24}$/i;
 export function normEmail(e) { return String(e || "").trim().toLowerCase(); }

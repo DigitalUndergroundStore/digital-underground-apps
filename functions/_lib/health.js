@@ -63,7 +63,10 @@ export async function runProbes(origin) {
       await r.arrayBuffer().catch(() => null);
       clearTimeout(tm);
       const ms = Date.now() - t0;
-      return { ...p, status: r.status, ms, state: !r.ok ? "fail" : ms > SLOW_MS ? "slow" : "ok" };
+      // /owner/ is Basic-Auth gated: 401/403 means the gate is up, not that Owner is down.
+      const authChallengeOk = p.path === "/owner/" && (r.status === 401 || r.status === 403);
+      const up = r.ok || authChallengeOk;
+      return { ...p, status: r.status, ms, state: !up ? "fail" : ms > SLOW_MS ? "slow" : "ok" };
     } catch (e) {
       return { ...p, status: 0, ms: Date.now() - t0, state: "fail", error: e && e.name === "AbortError" ? "timeout" : "network" };
     }

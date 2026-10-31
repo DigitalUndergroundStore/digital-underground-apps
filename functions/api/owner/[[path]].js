@@ -17,7 +17,7 @@ import {
   verifyOwnerPasscode,
 } from "../../_lib/owner.js";
 import { listSubscribers, subscribersToCsv } from "../../_lib/subscribers.js";
-import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
+import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing, notifyMakerApproved } from "../../_lib/community.js";
 import { promotePendingVideo as _ppv } from "../../_lib/community.js";
 import { getReports, ownerReportView, resolveReport } from "../../_lib/reports.js";
 
@@ -44,26 +44,10 @@ export async function onRequest(context) {
   const head = parts[0] || "";
 
   // ---- login / logout / me (no auth for login) ----
+  // Passcode login removed: the owner session is minted by _middleware.js after
+  // HTTP Basic Auth on /owner/. Reload /owner/ to get a session.
   if (head === "login" && request.method === "POST") {
-    const ip = clientIp(request);
-    if (!checkLoginRate(ip)) return json({ error: "Too many tries. Wait 15 minutes." }, 429);
-    let body;
-    try {
-      body = await request.json();
-    } catch {
-      return json({ error: "Invalid JSON." }, 400);
-    }
-    const pass = typeof body.passcode === "string" ? body.passcode : "";
-    if (!(await verifyOwnerPasscode(env, pass))) {
-      return json({ error: "That passcode didn't work." }, 401);
-    }
-    const sess = await mintOwnerSession(env);
-    if (!sess) return json({ error: "Owner login is not configured yet." }, 503);
-    return json(
-      { ok: true },
-      200,
-      { "Set-Cookie": ownerSessionCookie(sess) }
-    );
+    return json({ error: "Passcode login removed. Reload /owner/ to sign in." }, 410);
   }
 
   if (head === "logout" && request.method === "POST") {
@@ -185,7 +169,9 @@ export async function onRequest(context) {
       return json({ ok: true, listing: row });
     }
     if (action === "approve") {
+      const before = await kvGetListing(kv, id);
       const row = await setListingStatus(kv, id, "approved");
+      if (row) await notifyMakerApproved(env, kv, row, request, before?.status || "");
       return row ? json({ ok: true, listing: row }) : json({ error: "Not found." }, 404);
     }
     if (action === "reject") {
@@ -305,52 +291,6 @@ export async function onRequest(context) {
       return json({ ok: true });
     }
     return json({ keys: await listAllKeys(kv) });
-  }
-
-  if (head === "presence" && request.method === "GET") {
-    const now = Date.now(), sessions = [];
-    let cursor;
-    do {
-      const r = await kv.list({ prefix: "presence:", cursor, limit: 1000 });
-      for (const k of r.keys) {
-        const m = k.metadata || {};
-        if (!m.a || now - (m.w || 0) > 180000) continue;
-        sessions.push({ id: k.name.slice(9, 17), appId: m.a, path: m.p || "/", lastSeen: m.w, agoS: Math.round((now - m.w) / 1000), ua: m.u || "" });
-      }
-      cursor = r.list_complete ? null : r.cursor;
-    } while (cursor);
-    const apps = {};
-    for (const s of sessions) (apps[s.appId] = apps[s.appId] || []).push(s);
-    const grouped = Object.keys(apps).map((a) => ({ appId: a, count: apps[a].length, sessions: apps[a].sort((x, y) => x.agoS - y.agoS) })).sort((x, y) => y.count - x.count);
-    return json({ online: sessions.length, apps: grouped, generatedAt: now, windowS: 180 });
-  }
-
-  if (head === "health" && request.method === "GET") {
-    const H = await import("../../_lib/health.js");
-    const { utcDay } = await import("../../_lib/creator.js");
-    const origin = new URL(request.url).origin;
-    const t0 = Date.now();
-    const [probes, errors, subs, supAll, backup, idx, todayStats, reports] = await Promise.all([
-      H.runProbes(origin),
-      H.readErrors(kv, 14),
-      listSubscribers(kv),
-      listSupportMessages(kv, { status: "all" }),
-      fetchBackupMeta(env),
-      kvGetIndex(kv),
-      kv.get("storestats:" + utcDay(), "json"),
-      kv.get("community:reports", "json"),
-    ]);
-    const writes = (todayStats && todayStats.n) || 0;
-    const backupAgeDays = backup.lastSnapshot ? Math.floor((Date.now() - Date.parse(backup.lastSnapshot + "T00:00:00Z")) / 864e5) : null;
-    return json({
-      at: Date.now(), elapsedMs: Date.now() - t0,
-      probes, errors,
-      subscribers: H.subscriberSummary(subs),
-      feedback: H.feedbackSummary(supAll),
-      sampling: { writesToday: writes, softCap: H.SOFT_CAP, sample: H.SAMPLE, active: writes >= H.SOFT_CAP },
-      backup: { ...backup, ageDays: backupAgeDays },
-      queue: { pending: (idx.pending || []).length, flagged: Object.values(reports || {}).filter((e) => e && e.state === "flagged").length },
-    });
   }
 
   if (head === "storestats" && request.method === "GET") {

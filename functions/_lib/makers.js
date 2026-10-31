@@ -10,6 +10,9 @@ export const MAX_BANNER_BYTES = 300 * 1024;
 const LIMITS = { name: 60, bio: 400, url: 200 };
 export const SOCIALS = ["x", "github", "youtube", "linkedin", "instagram", "mastodon", "bluesky", "discord"];
 const SOCIAL_LABEL = { x: "X", github: "GitHub", youtube: "YouTube", linkedin: "LinkedIn", instagram: "Instagram", mastodon: "Mastodon", bluesky: "Bluesky", discord: "Discord" };
+/** Preset accent colours a maker can pick for their public page (enum only, never free-form CSS). */
+export const ACCENTS = { violet: "#7c5cff", cyan: "#22d3ee", emerald: "#10b981", amber: "#f59e0b", rose: "#f43f5e", slate: "#94a3b8" };
+export const accentHex = (k) => ACCENTS[k] || "";
 export const socialLabel = (k) => SOCIAL_LABEL[k] || k;
 
 export function slugify(name) {
@@ -146,7 +149,8 @@ export function sanitizeProfile(body, fallbackName) {
   if (logo.error) return logo;
   const banner = cleanImage(body?.banner, MAX_BANNER_BYTES, "Banner");
   if (banner.error) return banner;
-  return { profile: { name, bio, website: website || "", socials, logo: logo.v, banner: banner.v } };
+  const accent = ACCENTS[body?.accent] ? body.accent : "";
+  return { profile: { name, bio, website: website || "", socials, logo: logo.v, banner: banner.v, accent } };
 }
 
 export async function getMaker(kv, slug) {
@@ -190,9 +194,9 @@ export async function screenProfile(env, p) {
 }
 
 /** Creator submits a profile change: live immediately if screening passes, else held (live version stays up). */
-export async function submitProfile(env, kv, acct, slug, profile) {
+export async function submitProfile(env, kv, acct, slug, profile, opts = {}) {
   const rec = (await getMaker(kv, slug)) || { slug, ownerAcct: acct.id, live: null, pending: null };
-  if (rec.ownerAcct && rec.ownerAcct !== acct.id) return { error: "This maker page belongs to another account. Contact support." };
+  if (rec.ownerAcct && rec.ownerAcct !== acct.id && !opts.forceOwner) return { error: "This maker page belongs to another account. Contact support." };
   rec.ownerAcct = acct.id;
   const base = rec.live || SEED[slug] || {};
   // Keep existing images when the creator didn't upload new ones.
@@ -237,7 +241,7 @@ export async function listPendingProfiles(kv) {
 
 const imgUrl = (slug, k, v, src) => (src && src.startsWith("data:") ? `/api/community/maker-img?slug=${slug}&k=${k}&v=${v}` : src || "");
 function publicView(p, slug, v) {
-  return { slug, name: p.name, bio: p.bio || "", website: p.website || "", socials: p.socials || {}, logo: imgUrl(slug, "logo", v, p.logo), banner: imgUrl(slug, "banner", v, p.banner), featured: !!p.featured };
+  return { slug, name: p.name, bio: p.bio || "", website: p.website || "", socials: p.socials || {}, logo: imgUrl(slug, "logo", v, p.logo), banner: imgUrl(slug, "banner", v, p.banner), accent: ACCENTS[p.accent] ? p.accent : "", featured: !!p.featured };
 }
 
 /** Live public profile: approved KV version, else the owner seed. */
@@ -265,8 +269,8 @@ export async function liveImage(kv, slug, k) {
 export function creatorProfileView(rec, slug, fallbackName) {
   const live = rec?.live || SEED[slug] || null;
   const v = rec?.updatedAt || 0;
-  const pv = (p) => p && { name: p.name, bio: p.bio || "", website: p.website || "", socials: p.socials || {}, logo: p.logo ? (p.logo.startsWith("data:") ? p.logo : p.logo) : "", banner: p.banner || "" };
+  const pv = (p) => p && { name: p.name, bio: p.bio || "", website: p.website || "", socials: p.socials || {}, logo: p.logo || "", banner: p.banner || "", accent: ACCENTS[p.accent] ? p.accent : "" };
   return { slug, url: `/makers/${slug}/`, live: pv(live) || null, pending: rec?.pending ? { ...pv(rec.pending), at: rec.pending.at } : null,
-    lastRejected: rec?.lastRejected || null, defaultName: fallbackName, limits: { logoKB: MAX_LOGO_BYTES / 1024, bannerKB: MAX_BANNER_BYTES / 1024, bio: LIMITS.bio, name: LIMITS.name }, socials: SOCIALS };
+    lastRejected: rec?.lastRejected || null, defaultName: fallbackName, limits: { logoKB: MAX_LOGO_BYTES / 1024, bannerKB: MAX_BANNER_BYTES / 1024, bio: LIMITS.bio, name: LIMITS.name }, socials: SOCIALS, accents: ACCENTS };
 }
 export { normalizeEmail };

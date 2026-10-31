@@ -92,3 +92,6 @@ input:disabled{opacity:.55}
   .au-card h1{font-size:21px}
 }
 @media (prefers-reduced-motion:reduce){.au-btn,.au-submit,.au-tabs button{transition:none}.au-btn:hover,.au-submit:hover{transform:none}}
+
+.au-oauth-2{grid-template-columns:1fr 1fr;gap:8px}.au-oauth-2 .au-btn{min-height:38px;font-size:13px;font-weight:500;background:transparent;color:inherit;border-color:rgba(230,232,236,0.14)}.au-oauth-2 .au-g{background:transparent;color:inherit}
+.au-oauth-note{margin:8px 0 0;font-size:12px;color:#a8acb5;text-align:center}

@@ -9,6 +9,7 @@ import {
   listContacts,
   listPending,
   setListingStatus,
+  notifyMakerApproved,
   kvGetListing,
   kvPutListing,
 } from "../../_lib/community.js";
@@ -128,8 +129,10 @@ export async function onRequest(context) {
       return json({ ok: true, listing: row });
     }
     if (action === "approve") {
+      const before = await kvGetListing(kv, id);
       const row = await setListingStatus(kv, id, "approved");
       if (!row) return json({ error: "Listing not found." }, 404);
+      await notifyMakerApproved(env, kv, row, request, before?.status || "");
       return json({ ok: true, listing: row });
     }
     if (action === "reject") {

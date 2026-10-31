@@ -10,24 +10,28 @@ and sets the versioned CSS/JS includes. Used by gen-landing.py, generate-product
 apply-site-nav.py (which stamps every existing page + generator template). Bump CSS_V / JS_V on edits."""
 import re
 
-CSS_V, JS_V = "16", "9"
+CSS_V, JS_V = "33", "35"
 THEME_V = "2"  # /assets/theme-clean.css: clean theme (Oct 23 2026), always the last stylesheet
-LINKS = [("/", "Marketplace"), ("/league/", "League"), ("/makers/", "Creators"), ("/blog/", "Blog")]
+LINKS = [("/league/", "League"), ("/makers/", "Creators"), ("/blog/", "Blog")]
 MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'
 _L = "".join(f'<a href="{h}">{t}</a>' for h, t in LINKS)
 NAV = ('<!--du-site-nav--><header class="dun"><div class="dun-in">'
-  '<a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a>'
+  '<a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><a class="dun-shop" href="/store/"><span aria-hidden="true">&#128722;</span> <span class="dun-shop-l">Shop</span><span class="dun-shop-s">Shop</span></a>'
   f'<nav class="dun-links" aria-label="Primary">{_L}</nav>'
-  '<div class="dun-right"><a class="dun-cta" href="/community/submit/">List your project free</a>'
-  '<div class="dun-acct" id="dunAcct"><a class="dun-signin" href="/community/dashboard/">Sign in</a></div>'
-  f'<button type="button" class="dun-menu" id="dunMenu" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false">{MENU}</button></div></div>'
-  f'<nav class="dun-drawer" id="dunDrawer" aria-label="Site menu">{_L}<button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav>'
+  '<div class="dun-right">'
+  '<div class="dun-acct" id="dunAcct"><button type="button" class="dun-acct-btn" id="dunAcctBtn" aria-label="Open menu and account" aria-controls="dunDrawer" aria-expanded="false" aria-haspopup="true"><img src="/assets/logo/du-mark.svg" alt="" width="26" height="26"></button></div>'
+  '</div></div>'
+  f'<nav class="dun-drawer" id="dunDrawer" aria-label="Site menu">'
+  '<div class="dun-drawer-acct" id="dunDrawerAcct" role="group" aria-label="Account">'
+  '<div class="dun-drawer-who"><span class="av mark" aria-hidden="true"><img src="/assets/logo/du-mark.svg" alt="" width="36" height="36"></span><span class="nm">Account</span></div>'
+  '<a href="/community/dashboard/">Sign in</a></div>'
+  f'{_L}<a href="/community/submit/">List your project free</a><a href="/store/p/maker-pro/">Maker Pro</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav>'
   f'</header><script src="/assets/site-nav/site-nav.js?v={JS_V}" defer></script><!--/du-site-nav-->')
 
 XSVG = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.5 8.6L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8-9.2L1.2 2h7l4.9 6.4zm-1.2 18h1.9L7.4 3.9H5.4z"/></svg>'
 CONTACT = "mailto:digitalunderground.store@proton.me"
 COLS = [
-  ("Marketplace", [("/#projects", "Browse projects"), ("/league/", "Maker League"), ("/makers/", "Creators"), ("/community/submit/", "List your project free"), ("/community/dashboard/", "Creator dashboard")]),
+  ("Marketplace", [("/#projects", "Browse projects"), ("/league/", "Maker League"), ("/makers/", "Creators"), ("/community/submit/", "List your project free"), ("/store/p/maker-pro/", "Maker Pro"), ("/community/dashboard/", "Creator dashboard")]),
   ("Resources", [("/blog/", "Blog"), ("/community/api/", "Developer API"), ("/support/", "Support"), ("share", "")]),
   ("Company", [("/about/", "About"), ("/store/", "Digital Underground store"), (CONTACT, "Contact us"), ("https://x.com/DigitalUG_Store", "Follow @DigitalUG_Store")]),
 ]
@@ -39,7 +43,7 @@ _C = "".join(f'<div class="duf-col"><h3>{h}</h3><ul>{"".join(_li(*i) for i in it
 FOOT = ('<!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="duf-brand">'
   '<a href="/" class="duf-logo" aria-label="Digital Underground home"><img src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="260" height="47" loading="lazy"></a>'
   '<p class="duf-tag">A free developer marketplace and store for independent makers. Zero cut, your checkout.</p>'
-  '<form class="duf-nl" novalidate><div class="duf-book"><a href="/free-book/"><img src="/assets/gift/humanity-x-off-the-ground-cover.webp" alt="Humanity X: Off the Ground cover" width="56" height="90" loading="lazy" decoding="async"></a><div><h3 class="duf-bk-h">Get the free audiobook</h3><p class="duf-bk-t"><a href="/free-book/">Humanity X: Off the Ground</a></p><p class="duf-bk-s">The Book 1 audiobook (AI-narrated), free for a limited time with email signup. The ebook is in the store.</p></div></div><label for="dufEmail">Your email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Get the audiobook</button></div>'
+  '<form class="duf-nl" novalidate><div class="duf-book"><a href="/free-planetview/"><img src="/assets/gift/planetview-cover.webp?v=hd1" alt="PlanetView Live cover" width="220" height="124" loading="lazy" decoding="async"></a><div><h3 class="duf-bk-h">Get PlanetView Live free</h3><p class="duf-bk-t"><a href="/free-planetview/">PlanetView Live: 3D Earth &amp; flight sim</a> · In live beta (testing)</p><p class="duf-bk-s">Free for a limited time with email signup. Independent project, not affiliated with SpaceX or NASA.</p></div></div><label for="dufEmail">Your email</label><div class="duf-row"><input id="dufEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">Get PlanetView free</button></div>'
   '<input type="text" name="website" tabindex="-1" autocomplete="off" class="duf-hp" aria-hidden="true">'
   '<label class="duf-ck"><input type="checkbox" name="consent"> Yes, email me new apps, updates and occasional offers from Digital Underground. I can unsubscribe at any time.</label>'
   '<p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form>'

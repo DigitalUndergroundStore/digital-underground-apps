@@ -63,8 +63,9 @@
     <div class="msg" role="status" aria-live="polite"></div>
    </form>
   </div>
-  <p><b>Found a bug or want a feature?</b> Tell us — every message is read. Photos of meals you cook are very welcome too.</p>
-  <a class="fb" href="mailto:digitalunderground.store@proton.me?subject=Pantry%20Week%20beta%20feedback&amp;body=Bug%20or%20feature%20request%3A%0A%0ADevice%2Fbrowser%3A%0A%0A(Feel%20free%20to%20attach%20photos%20of%20meals%20you%20cooked!)">Report bug / request feature</a>
+  <p><b>Found a bug or want a feature?</b> Tell us — every message is read. Can't describe it? Email a screenshot to digitalunderground.store@proton.me.</p>
+  <form id="pwfb" class="pwfb" style="display:grid;gap:6px;margin-top:6px"><select name="type"><option value="bug">Bug</option><option value="feature">Feature request</option></select><textarea name="message" rows="3" required maxlength="4000" placeholder="What broke? What were you doing?"></textarea><input name="email" type="email" placeholder="Email (optional, for a reply)"><input name="website" tabindex="-1" autocomplete="off" style="display:none"><button class="fb" type="submit">Send bug report</button><small id="pwfb-s" aria-live="polite"></small></form>
+  <script>document.getElementById("pwfb").addEventListener("submit",function(e){e.preventDefault();var f=this,s=document.getElementById("pwfb-s"),b=f.querySelector("button");if(!f.message.value.trim())return;b.disabled=true;s.textContent="Sending…";fetch("/api/feedback",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({product:"Pantry Week",source:"pantry-week-beta",type:f.type.value,message:f.message.value,email:f.email.value,page:location.href,website:f.website.value})}).then(function(r){return r.json().catch(function(){return{}}).then(function(j){if(!r.ok||j.ok===false)throw new Error(j.error||"Send failed.")})}).then(function(){s.textContent="Thanks — sent! We read every report.";f.reset()}).catch(function(x){s.textContent=x.message+" Please try again."}).finally(function(){b.disabled=false})});</script>
   <p class="small">Tip: drag the <b>i</b> button anywhere on screen.</p>
  </div>
 </div>

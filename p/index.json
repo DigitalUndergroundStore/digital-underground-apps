@@ -25,7 +25,7 @@
   },
   "pantry-week": {
     "name": "Pantry Week",
-    "price": "Free (Beta)",
+    "price": "Free beta",
     "checkoutUrl": "https://kerzy.gumroad.com/l/jhagho",
     "gumroadCode": "jhagho",
     "shareUrl": "https://digitalundergroundstore.com/p/pantry-week/",
@@ -55,13 +55,13 @@
     "shareUrl": "https://digitalundergroundstore.com/p/session-forge/",
     "ogImage": "https://digitalundergroundstore.com/p/og/session-forge.jpg"
   },
-  "grokmate": {
-    "name": "GrokMate",
+  "plainhelp": {
+    "name": "PlainHelp",
     "price": "CA$39",
     "checkoutUrl": "https://kerzy.gumroad.com/l/ozzrh",
     "gumroadCode": "ozzrh",
-    "shareUrl": "https://digitalundergroundstore.com/p/grokmate/",
-    "ogImage": "https://digitalundergroundstore.com/p/og/grokmate.jpg"
+    "shareUrl": "https://digitalundergroundstore.com/p/plainhelp/",
+    "ogImage": "https://digitalundergroundstore.com/p/og/plainhelp.jpg"
   },
   "reply-forge": {
     "name": "Reply Forge",
@@ -144,7 +144,7 @@
     "ogImage": "https://digitalundergroundstore.com/p/og/ai-audience-growth-toolkit.jpg"
   },
   "cork": {
-    "name": "Cork \u2014 Offline Darts Scoreboard",
+    "name": "Cork \u2014 Darts Scoreboard",
     "price": "CA$25",
     "checkoutUrl": "https://kerzy.gumroad.com/l/fjmmi",
     "gumroadCode": "fjmmi",

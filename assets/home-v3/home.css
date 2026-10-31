@@ -521,6 +521,20 @@
       font-size: 0.85rem; font-weight: 600; color: var(--accent-bright);
     }
     .card-price.free { color: var(--success); }
+    .card-vote-row {
+      flex: 1 1 100%; width: 100%; display: flex; flex-direction: column; gap: 8px; margin-top: 2px;
+    }
+    .card-footer .share-btn {
+      appearance: none; font: inherit; font-size: .82rem; font-weight: 600;
+      padding: 8px 12px; height: 34px; width: 100%; border-radius: 8px; cursor: pointer;
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      color: #fff; background: rgba(79, 70, 229, 0.12);
+      border: 1px solid rgba(154, 151, 232, 0.35); transition: background .2s, border-color .2s;
+      box-sizing: border-box;
+    }
+    .card-footer .share-btn:hover { background: rgba(79, 70, 229, 0.25); border-color: rgba(196, 181, 253, 0.55); }
+    .card-vote-row .btn-vote { width: 100%; text-align: center; box-sizing: border-box; }
+
 
     .card-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
     .card-footer { flex-wrap: wrap; gap: 10px; }
@@ -945,7 +959,7 @@
 /* Whole card is a link: the title link is stretched over the card; inner links/buttons sit above it. */
 .card{position:relative;cursor:pointer}
 .card-title a::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}
-.card-meta a,.card-actions a,.card-actions button{position:relative;z-index:2}
+.card-meta a,.card-actions a,.card-actions button,.card-vote-row .share-btn{position:relative;z-index:2}
 .card-title a:focus-visible{outline:none}
 .card:has(.card-title a:focus-visible){outline:2px solid var(--accent-bright,#9a97e8);outline-offset:3px}
 /* Maker League glow button */
@@ -962,3 +976,6 @@
 .hc-pill:hover .hc-arr{transform:translateX(2px)}
 .hc-pill-hot{border-color:rgba(0,229,255,.4)}
 @media(max-width:520px){.hc-shop{flex-direction:column;align-items:stretch}.hc-pill{justify-content:center;padding:.6rem .9rem}}
+
+.btn-vote.voted{background:#e7f6ec!important;color:#166534!important;border-color:#86efac!important;box-shadow:none!important;animation:none!important}
+.btn-vote.voted::before,.btn-vote.voted::after{display:none!important}

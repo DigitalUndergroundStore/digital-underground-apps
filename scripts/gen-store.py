@@ -214,6 +214,9 @@ def card_html(product: dict, index: int) -> str:
           </article>"""
 
 
+OD_SPOTLIGHT = '<section class="od-spotlight" aria-label="Featured: Offer Desk" style="max-width:880px;margin:28px auto 8px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;text-align:left;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px">\n    <a href="/store/p/offer-desk/" style="flex:0 0 220px;max-width:100%"><img src="/store/covers/offer-desk-cover-v3.jpg?v=20261029od7" alt="Offer Desk cover" width="440" height="248" style="width:100%;height:auto;border-radius:10px;display:block" loading="eager" decoding="async"></a>\n    <div style="flex:1 1 280px;min-width:0">\n      <div style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.75">Featured tool &middot; New v2.0</div>\n      <h2 style="margin:6px 0 6px;font-size:24px">Offer Desk</h2>\n      <p style="margin:0 0 12px;opacity:.85">Turn a client request into a clean one-page offer: scope, price, timeline and terms, ready to send. One link in your receipt &mdash; unlock and install, no download. Pay once, CA$19.</p>\n      <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary" href="https://kerzy.gumroad.com/l/bhrrtz" target="_blank" rel="noopener">Get Offer Desk &middot; CA$19</a><a class="btn" href="/store/p/offer-desk/" style="border:1px solid rgba(255,255,255,.2)">See details</a></div>\n    </div>\n  </section>\n  '
+
+
 def promo_html(products: list[dict]) -> str:
     wanted = [
         ("/store/p/he-came-home-without-her/", None),
@@ -362,7 +365,7 @@ def render(catalog: dict) -> str:
 <script type="application/ld+json" id="du-ld">{ld_json(products)}</script>
 <link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=25">
 <link rel="stylesheet" href="/assets/theme-clean.css?v=2">
-<link rel="stylesheet" href="/store/store.css?v=20261028wolf2">
+<link rel="stylesheet" href="/store/store.css?v=20261029nobar">
 </head>
 <body class="du-store">
 <a class="skip" href="#catalog">Skip to products</a>
@@ -379,7 +382,7 @@ def render(catalog: dict) -> str:
       <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> One-time price</span>
     </div>
   </div>
-  {promo_html(products)}
+  {OD_SPOTLIGHT}{promo_html(products)}
   <div class="stats" role="list">
     <div class="stat" role="listitem"><div class="stat-value">{count}</div><div class="stat-label">products</div></div>
     <div class="stat" role="listitem"><div class="stat-value">{collections}</div><div class="stat-label">collections</div></div>
@@ -397,7 +400,6 @@ def render(catalog: dict) -> str:
     <div class="value-item"><div class="value-icon" aria-hidden="true">🛠️</div><div><h2>Built by makers</h2><p>Every product comes from an independent creator.</p></div></div>
     <div class="value-item"><div class="value-icon" aria-hidden="true">⚡</div><div><h2>Start in minutes</h2><p>Instant access after purchase. No waiting, no setup hell.</p></div></div>
   </div>
-  <p class="series-note"><strong>New: the Humanity X series.</strong> <a href="/store/p/humanity-x-off-the-ground/">Off the Ground</a> and <a href="/store/p/humanity-x-into-the-stars/">Into the Stars</a>, or the <a href="/store/p/humanity-x-books-1-2/">Books 1 + 2 pack</a>. <a href="/store/series/humanity-x/">See the series</a>.</p>
   <div class="toolbar">
     <div class="search-box">
       <svg class="search-icon" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5"/><path d="M10.5 10.5L14 14"/></svg>
@@ -427,10 +429,7 @@ def render(catalog: dict) -> str:
   </section>
 </main>
 {foot}
-<div class="mobile-bar">
-  <a href="#catalog" class="btn btn-primary btn-full">Browse products</a>
-</div>
-<script src="/store/store.js?v=20261028wolf2" defer></script>
+<script src="/store/store.js?v=20261029nosticky" defer></script>
 <script src="/store/track.js?v=3" defer></script>
 <script src="/assets/signup.js?v=20261027pv" defer></script>
 <script src="/assets/presence.js?v=1" defer></script>

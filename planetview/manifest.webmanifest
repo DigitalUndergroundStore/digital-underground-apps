@@ -1,8 +1,8 @@
 {
   "name": "PlanetView",
   "short_name": "PlanetView",
-  "id": "./",
-  "start_url": "./",
+  "id": "./?v=7",
+  "start_url": "./?v=7",
   "scope": "./",
   "display": "standalone",
   "background_color": "#070b0f",

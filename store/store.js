@@ -165,8 +165,6 @@
     if (!header || !bar) return;
     bar.style.top = Math.round(header.getBoundingClientRect().height) + "px";
   }
-  pinCatBar();
-  window.addEventListener("resize", pinCatBar);
 
   var initial = catFromHash();
   if (initial) setCat(initial, true);

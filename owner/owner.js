@@ -126,7 +126,7 @@
       $("an-kpis").innerHTML =
         kpi("Pages up", v.okCount + "/" + v.total, '<span class="d ' + (v.level === "bad" ? "down" : "up") + '">' + (v.issues.length ? v.issues.length + " issue(s)" : "all OK") + "</span>") +
         kpi("Server errors", fmt(e.today), '<span class="d ' + (e.last7 ? "down" : "") + '">' + fmt(e.last7) + " in 7 days</span>") +
-        kpi("Subscribers", fmt(s.active), '<span class="d ' + (s.last7 ? "up" : "") + '">+' + fmt(s.last7) + " 7d · +" + fmt(s.last30) + " 30d</span>") +
+        kpi("Email list", fmt(s.active), '<span class="d ' + (s.last7 ? "up" : "") + '">footer / PlanetView free · +' + fmt(s.last7) + " 7d · +" + fmt(s.last30) + " 30d</span>") +
         kpi("Open feedback", fmt(f.open), '<span class="d">' + fmt(f.last7) + " new 7d · " + fmt(f.done) + " done</span>") +
         kpi("Last backup", shortDate(b.lastSnapshot) || "—", '<span class="d ' + (!b.ok || b.ageDays > 2 ? "down" : "") + '">' + (b.ok ? (b.ageDays === 0 ? "today" : b.ageDays + "d ago") : "check failed") + "</span>");
       var probes = (d.probes || []).map(function (p) {
@@ -138,13 +138,13 @@
         '<div class="an-card"><h2>Is everything running smooth?</h2>' + (v.issues.length ? "<ul class=\"hl-issues\">" + v.issues.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : '<p class="muted small">No issues found.</p>') + "</div>" +
         '<div class="an-card"><h2>Uptime check (live, from Cloudflare)</h2><p class="muted small an-help">Each page is fetched right now from the server. Slow = over 1.5 s.</p>' + probes + "</div>" +
         '<div class="an-card"><h2>Server errors (API 5xx, 14 days)</h2>' + errList + "</div>" +
-        miniChart(s.chart || [], "Email signups per day (30 days)", "signups") +
+        miniChart(s.chart || [], "Email list signups per day (footer / PlanetView free, 30 days)", "signups") +
         listCard("Signup sources (30 days)", s.sources || [], "", "No signups in the last 30 days.") +
         miniChart(f.chart || [], "Feedback & support per day (30 days)", "messages") +
         listCard("Feedback by product (30 days)", f.products || [], "", "No feedback in the last 30 days.") +
         listCard("Feedback by source (30 days)", f.sources || [], "", "No feedback in the last 30 days.") +
         '<div class="an-card"><h2>Housekeeping</h2>' +
-        '<div class="oh-row"><span>Subscribers active / total</span><span>' + fmt(s.active) + " / " + fmt(s.total) + "</span></div>" +
+        '<div class="oh-row"><span>Email list active / total (footer + PlanetView free)</span><span>' + fmt(s.active) + " / " + fmt(s.total) + "</span></div>" +
         '<div class="oh-row"><span>Unsubscribes (30 days)</span><span>' + fmt(s.unsub30) + "</span></div>" +
         '<div class="oh-row"><span>Last signup</span><span>' + ago(s.lastAt) + "</span></div>" +
         '<div class="oh-row"><span>Oldest open feedback</span><span>' + (f.open ? f.oldestOpenDays + " days" : "—") + "</span></div>" +
@@ -416,37 +416,102 @@
     document.querySelectorAll("[data-an]").forEach(function (b) { b.setAttribute("aria-selected", b.getAttribute("data-an") === anView ? "true" : "false"); });
   }
 
-  var liveTimer = null, liveOpen = {};
+  var liveTimer = null, liveOpen = {}, liveVisitorOpen = {};
   var KZ_NAMES = { hub: "Kerzy Labs hub", "stack-attack-arena": "Stack Attack Arena", "quad-pong": "Quad Pong", cyberarena: "CyberArena 3D", "rival-lanes": "Rival Lanes", "neon-bastion": "Rival Lanes" };
   function appLabel(id) {
     if (id.indexOf("kz-") === 0) { var k = id.slice(3); return KZ_NAMES[k] || k; }
     return id === "home" ? "Homepage" : id.replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); });
   }
+  function uniqVisitors(apps) {
+    var seen = Object.create(null), n = 0;
+    (apps || []).forEach(function (a) {
+      var list = a.visitors || [];
+      if (!list.length) { n += a.count || 0; return; }
+      list.forEach(function (v, i) {
+        var k = v.visitorKey || ("tab:" + ((v.sessions && v.sessions[0] && v.sessions[0].id) || i));
+        if (!seen[k]) { seen[k] = 1; n++; }
+      });
+    });
+    return n;
+  }
+  function peopleOf(a) {
+    if (a.visitors && a.visitors.length) return a.visitors;
+    return (a.sessions || []).map(function (s) {
+      return { visitorKey: "", label: "Visitor", agoS: s.agoS, currentPath: s.path, sessions: [s], pages: [s.path] };
+    });
+  }
+  function fmtWhen(ts) {
+    if (!ts) return "—";
+    try { return new Date(ts).toLocaleString(); } catch (e) { return "—"; }
+  }
+  function visitorCard(appId, v) {
+    var key = appId + ":" + (v.visitorKey || (v.sessions && v.sessions[0] && v.sessions[0].id) || "x");
+    var open = !!liveVisitorOpen[key];
+    var status = v.status === "returning" ? "Returning" : v.status === "new" ? "New today" : "";
+    var tabs = (v.sessions || []).length;
+    var where = v.currentPath || (v.sessions && v.sessions[0] && v.sessions[0].path) || "/";
+    var head = '<div data-live-visitor="' + esc(key) + '" style="cursor:pointer;padding:8px 0 4px 16px">' +
+      '<div style="display:flex;justify-content:space-between;gap:8px"><strong>' + (open ? "▾ " : "▸ ") + esc(v.label || "Visitor") + "</strong>" +
+      '<span class="muted small">' + (v.agoS != null ? v.agoS + "s ago" : "") + "</span></div>" +
+      '<div class="muted small">' + esc(where) +
+      (status ? " · " + esc(status) : "") +
+      (tabs > 1 ? " · " + tabs + " tabs" : "") +
+      (v.ipShort ? " · IP " + esc(v.ipShort) : "") + "</div></div>";
+    if (!open) return head;
+    var geo = [v.country, v.region, v.city].filter(Boolean).join(" · ");
+    var device = [v.device, v.os, v.browser].filter(Boolean).join(" · ");
+    var net = (v.asn ? "AS" + esc(String(v.asn)) : "") + (v.org ? (v.asn ? " · " : "") + esc(v.org) : "");
+    var pages = (v.pages || []).map(function (p) { return esc(p); }).join(" · ");
+    var sessions = (v.sessions || []).map(function (s) {
+      return '<div class="muted small" style="padding-left:32px">Tab ' + esc(s.id) + " · " + esc(s.path) + " · " + s.agoS + "s ago</div>";
+    }).join("");
+    return head + '<div class="muted small" style="padding:0 0 8px 32px">' +
+      (geo ? "<div>" + esc(geo) + "</div>" : "") +
+      (device ? "<div>" + esc(device) + "</div>" : "") +
+      (net ? "<div>" + net + "</div>" : "") +
+      "<div>First seen " + esc(fmtWhen(v.firstSeen)) + " · last seen " + esc(fmtWhen(v.lastSeen)) + "</div>" +
+      (v.referrer ? "<div>Referrer " + esc(v.referrer) + "</div>" : "") +
+      (pages ? "<div>Pages " + pages + "</div>" : "") +
+      (v.visitorKey ? "<div>Visitor key " + esc(v.visitorKey) + "</div>" : "<div>No stable network key on this session</div>") +
+      (v.ip ? "<div>Owner-private IP " + esc(v.ip) + (v.ipShort ? " · shown as " + esc(v.ipShort) : "") + "</div>" : "") +
+      sessions + "</div>";
+  }
   function liveSection(title, apps, empty) {
-    var n = 0; apps.forEach(function (a) { n += a.count; });
-    return '<div class="an-card"><h2>' + esc(title) + ' <span class="pill">' + n + ' online</span></h2>' + (apps.length ? apps.map(function (a) {
+    var n = uniqVisitors(apps);
+    return '<div class="an-card"><h2>' + esc(title) + ' <span class="pill">' + n + " online</span></h2>" + (apps.length ? apps.map(function (a) {
       var open = liveOpen[a.appId];
-      return '<div class="lrow" data-live-app="' + esc(a.appId) + '" style="cursor:pointer;display:block"><div style="display:flex;justify-content:space-between"><strong>' + (open ? "▾ " : "▸ ") + esc(appLabel(a.appId)) + '</strong><span><b>' + a.count + '</b> online</span></div>' +
-        (open ? a.sessions.map(function (s) { return '<div class="muted small" style="padding-left:16px">#' + esc(s.id) + " · " + esc(s.path) + " · " + s.agoS + "s ago" + (s.ua ? " · ua " + esc(s.ua) : "") + "</div>"; }).join("") : "") + "</div>";
+      return '<div class="lrow" style="display:block"><div data-live-app="' + esc(a.appId) + '" style="cursor:pointer;display:flex;justify-content:space-between"><strong>' + (open ? "▾ " : "▸ ") + esc(appLabel(a.appId)) + '</strong><span><b>' + a.count + "</b> online</span></div>" +
+        (open ? peopleOf(a).map(function (v) { return visitorCard(a.appId, v); }).join("") : "") + "</div>";
     }).join("") : '<p class="muted small">' + empty + "</p>") + "</div>";
   }
   function loadLive(seq) {
     api("presence").then(function (out) {
       if (seq !== anSeq) return;
       if (!out.r.ok) { if (out.r.status === 401) go("login"); return; }
-      var d = out.d, apps = d.apps || [];
+      var d = out.d || {}, apps = d.apps || [];
       var du = apps.filter(function (a) { return a.appId.indexOf("kz-") !== 0; }), kz = apps.filter(function (a) { return a.appId.indexOf("kz-") === 0; });
-      var dn = 0, kn = 0; du.forEach(function (a) { dn += a.count; }); kz.forEach(function (a) { kn += a.count; });
-      $("an-sub").textContent = "Online now · updated " + new Date(d.generatedAt).toLocaleTimeString() + " · refreshes every 20s";
-      $("an-kpis").innerHTML = kpi("Online now", fmt(d.online), '<span class="d">active in last 3 min</span>') + kpi("Digital Underground", fmt(dn), '<span class="d">' + du.length + " apps</span>") + kpi("Kerzy Labs", fmt(kn), '<span class="d">' + kz.length + " games</span>");
+      var dn = uniqVisitors(du), kn = uniqVisitors(kz);
+      $("an-sub").textContent = "Online now · " + fmt(d.online || 0) + " unique visitors · " + fmt(d.sessionCount || d.online || 0) + " tabs · updated " + new Date(d.generatedAt || Date.now()).toLocaleTimeString() + " · refreshes every 20s";
+      $("an-kpis").innerHTML = kpi("Online now", fmt(d.online || 0), '<span class="d">unique visitors · last 3 min</span>') + kpi("Digital Underground", fmt(dn), '<span class="d">' + du.length + " apps</span>") + kpi("Kerzy Labs", fmt(kn), '<span class="d">' + kz.length + " games</span>");
       $("an-lists").innerHTML = liveSection("Digital Underground", du, "Nobody on Digital Underground right now.") + liveSection("Kerzy Labs", kz, "Nobody playing Kerzy Labs games right now.");
-      $("an-note").textContent = "Anonymous random session ids (no names, emails, IPs or cookies). A session counts as online for 3 minutes after its last heartbeat; tap an app to see sessions.";
+      $("an-note").textContent = d.privacyNote || "Owner-only. Hashed IP visitor key, geo, and parsed device. No emails. Full IP is owner-private.";
     });
   }
   document.addEventListener("click", function (e) {
+    var v = e.target.closest && e.target.closest("[data-live-visitor]");
+    if (v) {
+      var vk = v.getAttribute("data-live-visitor");
+      liveVisitorOpen[vk] = !liveVisitorOpen[vk];
+      loadLive(anSeq);
+      return;
+    }
     var r = e.target.closest && e.target.closest("[data-live-app]");
-    if (!r) return; var id = r.getAttribute("data-live-app"); liveOpen[id] = !liveOpen[id]; loadLive(anSeq);
+    if (!r) return;
+    var id = r.getAttribute("data-live-app");
+    liveOpen[id] = !liveOpen[id];
+    loadLive(anSeq);
   });
+
   function loadAnalytics() {
     setAnTabs();
     var seq = ++anSeq;
@@ -545,26 +610,8 @@
   }
 
   // Events
-  $("login-btn").addEventListener("click", function () {
-    var pass = $("passcode").value;
-    var btn = $("login-btn");
-    btn.disabled = true;
-    api("login", { method: "POST", body: { passcode: pass } }).then(function (out) {
-      btn.disabled = false;
-      if (!out.r.ok) {
-        showMsg($("login-msg"), (out.d && out.d.error) || "Sign-in failed.", false);
-        return;
-      }
-      $("passcode").value = "";
-      go("home");
-    }).catch(function () {
-      btn.disabled = false;
-      showMsg($("login-msg"), "Network error.", false);
-    });
-  });
-  $("passcode").addEventListener("keydown", function (e) {
-    if (e.key === "Enter") $("login-btn").click();
-  });
+  // Passcode removed: Basic Auth on /owner/ mints the session; reloading re-signs in.
+  $("login-btn").addEventListener("click", function () { location.reload(); });
   $("logout-btn").addEventListener("click", function () {
     api("logout", { method: "POST" }).then(function () { go("login"); });
   });

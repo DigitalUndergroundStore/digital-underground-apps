@@ -1,5 +1,6 @@
 /* Developer Marketplace homepage v3. Rows: #du-data (SSR by scripts/build-community-ssr.py) + live API merge. */
 (function () {
+  var LEAGUE_TROPHY = { 'cm_mvfnl9qp_80652919': { src: '/assets/badges/maker-league-week1.png?v=3', srcset: '/assets/badges/maker-league-week1.png?v=3 1x, /assets/badges/maker-league-week1@2x.png?v=3 2x, /assets/badges/maker-league-week1@3x.png?v=3 3x', title: 'Maker League Week 1 winner' } };
 "use strict";
     // ═══════════ PARTICLE SYSTEM (non-blocking) ═══════════
     try {
@@ -135,6 +136,7 @@
       a.className = 'card'; a.dataset.id = p.id; a.dataset.sig = p.img + '|' + p.vid;
       a.innerHTML = `
           <div class="card-media">
+            ${LEAGUE_TROPHY[p.id] ? `<a class="ml-trophy ml-trophy--corner" href="/league/" title="${esc(LEAGUE_TROPHY[p.id].title)}" aria-label="${esc(LEAGUE_TROPHY[p.id].title)}"><img src="${LEAGUE_TROPHY[p.id].src}" srcset="${LEAGUE_TROPHY[p.id].srcset}" sizes="36px" alt="${esc(LEAGUE_TROPHY[p.id].title)}" width="64" height="64" decoding="async"></a>` : ''}
             ${badgeHTML(p)}
             ${p.vid ? `<video class="card-vid" muted loop playsinline autoplay controls preload="metadata"${p.img ? ` poster="${esc(abs(p.img))}"` : ''} src="${esc(abs(p.vid))}${p.img ? '' : '#t=0.1'}" aria-label="${esc(p.title)} preview video" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;display:block"></video>` : ''}
             ${p.img ? `<img src="${esc(abs(p.img))}" alt="${esc(p.title)} cover image" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()">` : ''}
@@ -149,7 +151,13 @@
               <div class="card-actions">
                 ${p.contactable ? `<a href="${esc(p.page)}#contact" class="btn btn-ghost" aria-label="Contact the developer of ${esc(p.title)}">Contact</a>` : ''}
                 <a href="${esc(p.url)}" data-out="${esc(p.id)}" class="btn btn-primary" target="_blank" rel="noopener" aria-label="${p.buy ? 'Buy' : 'Visit'} ${esc(p.title)}${p.buy ? ' on Gumroad' : ''} (opens in a new tab)">${p.buy ? 'Buy' : 'Visit'}</a>
-                <a href="${ONSITE ? '' : 'https://digitalundergroundstore.com'}/league/?vote=${encodeURIComponent(p.id)}" class="btn btn-vote" aria-label="Cast Maker League Vote for ${esc(p.title)} on the League page">Cast Maker League Vote</a>
+              </div>
+              <div class="card-vote-row">
+                <button type="button" class="share-btn" data-share="${esc(p.id)}" data-name="${esc(p.title)}" aria-label="Share ${esc(p.title)} in Maker League">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                  Share
+                </button>
+                <a href="${ONSITE ? '' : 'https://digitalundergroundstore.com'}/league/?vote=${encodeURIComponent(p.id)}" class="btn btn-vote" data-vote="${esc(p.id)}" aria-label="Cast Maker League Vote for ${esc(p.title)} on the League page">Cast Maker League Vote</a>
               </div>
             </div>
           </div>`;
@@ -161,6 +169,36 @@
       return a;
     }
     // Maker League button on cards is a plain link to /league/ (voting happens there).
+    // Reflect this visitor's vote for the current week (server cookie du_lv, read via GET /api/league).
+    let LG_VOTED = null;
+    function applyVoteState(root) {
+      if (!LG_VOTED) return;
+      (root || document).querySelectorAll('a.btn-vote:not(.voted)').forEach(b => {
+        const mine = LG_VOTED !== true && (b.dataset.vote || (b.closest('[data-id]') || {}).dataset?.id) === LG_VOTED;
+        b.textContent = mine ? '\u2713 Your Maker League vote' : '\u2713 Voted this week';
+        b.classList.add('voted'); if (mine) b.classList.add('voted-mine');
+        b.href = '/league/'; b.setAttribute('aria-label', mine ? 'You voted for this project in the Maker League this week. See standings' : 'You already voted in the Maker League this week. See standings');
+      });
+    }
+    // After the Friday rollover the old week's vote no longer counts as "voted"; say the week closed instead of a bare Cast.
+    let LG_PREV = null, LG_WK = null;
+    const lgNum = (w) => w === '2026-10-19' ? 1 : 2 + Math.round((Date.parse(w) - Date.parse('2026-10-30')) / 6048e5);
+    function applyPrevState(root) {
+      if (!LG_PREV) return;
+      const pn = lgNum(LG_PREV.week), cn = lgNum(LG_WK), win = LG_PREV.winner && LG_PREV.winner.id;
+      (root || document).querySelectorAll('a.btn-vote:not(.voted):not(.lg-prev)').forEach(b => {
+        const id = b.dataset.vote || (b.closest('[data-id]') || {}).dataset?.id;
+        b.classList.add('lg-prev');
+        if (win && id === win) b.textContent = '\u{1F3C6} Week ' + pn + ' winner \u00b7 Vote Week ' + cn;
+        else if (LG_PREV.voted) b.textContent = '\u2713 Voted Week ' + pn + ' \u00b7 Vote Week ' + cn;
+        else b.textContent = 'Week ' + pn + ' closed \u00b7 Vote Week ' + cn;
+        b.setAttribute('aria-label', 'Maker League Week ' + pn + ' is closed' + (LG_PREV.voted ? ' (you voted)' : '') + '. Cast your Week ' + cn + ' vote');
+      });
+    }
+    if (ONSITE) fetch('/api/league', { credentials: 'same-origin', cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+      if (d && d.voted) { LG_VOTED = d.voted; applyVoteState(); new MutationObserver(() => applyVoteState()).observe(document.body, { childList: true, subtree: true }); }
+      else if (d && d.prev && (d.prev.voted || d.prev.winner)) { LG_PREV = d.prev; LG_WK = d.week; applyPrevState(); new MutationObserver(() => applyPrevState()).observe(document.body, { childList: true, subtree: true }); }
+    }).catch(() => {});
     const emptyEl = document.createElement('div');
     emptyEl.className = 'empty-state'; emptyEl.setAttribute('role', 'status');
     emptyEl.innerHTML = '<h3>No projects match</h3><p>Try a wider price range, another category, or clear the search.</p><button type="button" class="btn btn-outline">Clear all filters</button>';
@@ -350,11 +388,50 @@
       setTimeout(revealAll, 1500);
     }
 
-    // ── Share ──
+    // ── Share (same as Maker League share-btn: /league/v/?id=… + vote caption) ──
     const shareBtn = $('shareBtn');
     if (shareBtn) shareBtn.addEventListener('click', async () => {
       const url = 'https://digitalundergroundstore.com/';
       try { if (navigator.share) await navigator.share({ title: 'Developer Marketplace | Digital Underground', url }); else await navigator.clipboard.writeText(url); } catch (e) {}
+    });
+    function leagueShareToast(msg) {
+      let t = document.getElementById('lg-toast');
+      if (!t) {
+        t = document.createElement('div');
+        t.id = 'lg-toast'; t.className = 'lg-toast'; t.setAttribute('role', 'status');
+        document.body.appendChild(t);
+      }
+      t.textContent = msg; t.classList.add('show');
+      clearTimeout(leagueShareToast._tm);
+      leagueShareToast._tm = setTimeout(() => t.classList.remove('show'), 2600);
+    }
+    function copyLeagueShare(text) {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.setAttribute('readonly', '');
+        ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+        document.body.appendChild(ta); ta.select();
+        const ok = document.execCommand('copy'); ta.remove();
+        if (ok) { leagueShareToast('Caption + link copied'); return; }
+      } catch (e) {}
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(() => leagueShareToast('Caption + link copied')).catch(() => {});
+    }
+    grid.addEventListener('click', (e) => {
+      const sh = e.target.closest && e.target.closest('button.share-btn[data-share]');
+      if (!sh) return;
+      e.preventDefault();
+      const nm = sh.getAttribute('data-name') || 'this project';
+      const id = sh.getAttribute('data-share');
+      const origin = ONSITE ? location.origin : 'https://digitalundergroundstore.com';
+      const url = origin + '/league/v/?id=' + encodeURIComponent(id);
+      const text = "Come vote for " + nm + " in Digital Underground's Maker League! 🗳️ One free vote a week, and the winner becomes Maker of the Week.";
+      const data = { title: nm + ' · Maker League', text, url };
+      if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
+        navigator.share(data).catch((err) => { if (!err || err.name !== 'AbortError') copyLeagueShare(text + ' ' + url); });
+        return;
+      }
+      const w = window.open('https://x.com/intent/post?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url), '_blank', 'noopener');
+      if (!w) copyLeagueShare(text + ' ' + url);
     });
 
     // ═══════════ SCROLL REVEAL (must exist before first render) ═══════════

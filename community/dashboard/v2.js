@@ -50,8 +50,10 @@
       (own.length ? own.map(row).join("") : '<p class="empty">No listings yet. Add your app, game, book or tool in a few minutes: free, zero cut, buyers go straight to your checkout.</p><p class="empty" style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn sm primary" href="/community/submit/">List your project free</a><a class="btn sm" href="/#projects">See what others listed</a><a class="btn sm" href="/league/">Maker League</a></p>') + "</div>";
     if (data.master) h += '<div class="card"><div class="card-head"><h2>Digital Underground &amp; Kerzy Labs</h2><span class="pill owner">Owner master view</span></div>' +
       (master.length ? master.map(row).join("") : '<p class="empty">No other DU or Kerzy Labs listings in storage.</p>') + "</div>";
+    if (own.length || data.master) h += '<div class="card" style="border-color:rgba(154,151,232,.45)"><div class="card-head"><h2>Customize your public page</h2><a class="btn sm primary" href="#profile" data-goto="profile">Customize \u2192</a></div><p class="muted" style="margin:0;font-size:.9rem">Your creator page lists everything you publish. Add your logo, banner, bio, links and an accent colour, with a live preview.</p></div>';
     if (live) h += '<div class="card"><div class="card-head"><h2>Get more eyes on it</h2></div><p style="margin:0 0 10px">Your listing is live. Put it in the Maker League or share it.</p><a class="btn sm primary" href="/league/">Enter Maker League \u2192</a> <a class="btn sm" target="_blank" rel="noopener" href="https://x.com/intent/post?text=' + encodeURIComponent("My project is live on Digital Underground, the free indie marketplace") + '&url=' + encodeURIComponent("https://digitalundergroundstore.com/") + '">Share on X</a></div>';
     $("#listings").innerHTML = h;
+    document.querySelectorAll("[data-goto]").forEach(function (a) { a.onclick = function (ev) { ev.preventDefault(); showTab(a.dataset.goto, true); scrollTo(0, 0); }; });
 
     var ed = ls.filter(function (l) { return l.canEdit; });
     $("#edit").innerHTML = '<div class="card"><h2>Pick a listing to edit</h2><p class="muted" style="font-size:.9rem;margin-bottom:6px">Opens the full-size editor with a live preview and the image gallery.</p>' +
@@ -97,36 +99,88 @@
     requestAnimationFrame(function () { requestAnimationFrame(function () { document.querySelectorAll("#analytics .bar").forEach(function (b) { b.style.height = b.dataset.h; }); }); });
   }
 
-  /* ---------- Profile ---------- */
+  /* ---------- Profile: Customize your public page (live preview) ---------- */
   var prof = null;
-  function loadProfile() {
+  var SOC_LABEL = { x: "X", github: "GitHub", youtube: "YouTube", linkedin: "LinkedIn", instagram: "Instagram", mastodon: "Mastodon", bluesky: "Bluesky", discord: "Discord" };
+  var HTTPS = /^https:\/\/[^\s]+\.[^\s]+/;
+  function loadProfile(slug) {
     var el = $("#profile");
     var acct = '<div class="card"><h2>Account</h2><p class="muted" style="font-size:.92rem">Signed in as <strong>' + esc(data.account && data.account.email || (data.account && data.account.identities && data.account.identities.length ? "X or Google (no email yet)" : "private link")) + "</strong>" + (data.master ? ' <span class="pill owner">Owner</span>' : "") + '</p>' + (data.account && !data.account.email ? '<div class="banner warn" style="margin-top:10px">Add your email so logging in with email, Google or X always opens this same account. <a href="/login/security/?addemail=1">Add email</a></div>' : "") + '<p style="margin-top:12px" class="select-row"><a class="btn sm" href="/login/security/">Sign-in methods &amp; 2FA</a><a class="btn sm" href="/community/dashboard/classic/">Password, API keys &amp; support (classic dashboard)</a><button class="btn sm ghost" id="so">Sign out</button></p></div>';
-    if (prof) return;
+    if (prof && !slug) return;
     prof = true;
-    el.innerHTML = acct + '<div class="card" id="mk"><div class="skel"></div></div>';
+    el.innerHTML = '<div class="card" id="mk"><div class="skel"></div></div>' + acct;
     $("#so").onclick = function () { fetch("/api/community/creator?action=signout", { method: "POST", credentials: "same-origin" }).then(function () { location.reload(); }); };
-    D.api("GET", null, "?action=profile").then(function (d) {
+    fetch("/api/community/creator?action=profile" + (slug ? "&slug=" + encodeURIComponent(slug) : ""), { credentials: "same-origin", cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
       var mk = $("#mk");
-      if (!d.ok) { mk.innerHTML = "<h2>Maker page</h2><p class=\"muted\">" + esc(d.error || "Unavailable.") + "</p>"; return; }
-      var p = d.profile, cur = p.pending || p.live || { name: p.defaultName, bio: "", website: "" };
-      mk.innerHTML = '<div class="card-head"><h2>Maker page</h2><a class="btn sm ghost" href="' + esc(p.url) + '" target="_blank" rel="noopener">View page</a></div>' +
-        (p.pending ? '<div class="banner warn">Your last change is waiting for review.</div>' : "") +
-        (d.makers.length > 1 ? '<div class="fld"><label for="pf-s">Maker</label><select class="ctl" id="pf-s">' + d.makers.map(function (m) { return '<option value="' + esc(m.slug) + '"' + (m.slug === p.slug ? " selected" : "") + ">" + esc(m.name) + "</option>"; }).join("") + "</select></div>" : "") +
-        '<form id="pf" novalidate><div class="fld"><label for="pf-n">Display name</label><input class="ctl" id="pf-n" maxlength="' + p.limits.name + '" value="' + esc(cur.name) + '"></div>' +
-        '<div class="fld"><label for="pf-b">Bio <span class="count" id="pf-bc"></span></label><textarea class="ctl" id="pf-b" maxlength="' + p.limits.bio + '">' + esc(cur.bio) + "</textarea></div>" +
-        '<div class="fld"><label for="pf-w">Website</label><input class="ctl" id="pf-w" type="url" placeholder="https://" value="' + esc(cur.website) + '"><p class="err" id="pf-we"></p></div>' +
-        '<p class="hint" style="margin-bottom:12px">Logo, banner and social links: edit them on the <a href="/community/dashboard/classic/#profile">classic dashboard</a> for now. Changes that pass automatic checks go live right away.</p>' +
-        '<p class="err" id="pf-err" role="alert"></p><button class="btn primary" type="submit">Submit for review</button> <span class="muted" id="pf-ok" style="font-size:.85rem"></span></form>';
-      var b = $("#pf-b"), bc = $("#pf-bc"); var upd = function () { bc.textContent = b.value.length + "/" + p.limits.bio; }; b.oninput = upd; upd();
-      if ($("#pf-s")) $("#pf-s").onchange = function () { prof = null; D.api("GET", null, "?action=profile&slug=" + encodeURIComponent(this.value)).then(function () { loadProfile(); }); };
+      if (!d.ok) { mk.innerHTML = '<h2>Customize your public page</h2><p class="muted">' + esc(d.error || "Unavailable.") + "</p>"; return; }
+      var p = d.profile, cur = p.pending || p.live || { name: p.defaultName, bio: "", website: "", socials: {} };
+      var st = { name: cur.name || p.defaultName || "", bio: cur.bio || "", website: cur.website || "", socials: Object.assign({}, cur.socials || {}), logo: cur.logo || "", banner: cur.banner || "", accent: cur.accent || "", newLogo: "", newBanner: "" };
+      if (/ on the Digital Underground marketplace$/.test(st.bio)) st.bio = ""; // bare auto-bio: start fresh
+      var acc = p.accents || {}, full = location.origin + p.url;
+      var socF = (p.socials || []).map(function (k) { return '<div class="fld" style="margin-bottom:10px"><label for="pf-so-' + k + '">' + esc(SOC_LABEL[k] || k) + '</label><input class="ctl" id="pf-so-' + k + '" data-soc="' + k + '" type="url" placeholder="https://" value="' + esc(st.socials[k] || "") + '"></div>'; }).join("");
+      var accF = '<label style="display:inline-flex;gap:6px;align-items:center;margin:0 12px 8px 0"><input type="radio" name="pf-ac" value=""' + (st.accent ? "" : " checked") + "> Default</label>" + Object.keys(acc).map(function (k) { return '<label style="display:inline-flex;gap:6px;align-items:center;margin:0 12px 8px 0"><input type="radio" name="pf-ac" value="' + k + '"' + (st.accent === k ? " checked" : "") + '><span style="width:16px;height:16px;border-radius:50%;background:' + acc[k] + ';display:inline-block"></span>' + k.charAt(0).toUpperCase() + k.slice(1) + "</label>"; }).join("");
+      mk.innerHTML = '<div class="card-head"><h2>Customize your public page</h2><a class="btn sm ghost" href="' + esc(p.url) + '" target="_blank" rel="noopener">Open live page ↗</a></div>' +
+        '<p class="muted" style="font-size:.9rem;margin-bottom:12px">This is the page buyers see at <a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(full) + '</a>. Edit on the left, the preview updates as you type. Changes that pass automatic checks go live right away.</p>' +
+        (p.pending ? '<div class="banner warn">Your last change is waiting for a quick review; your current page stays up meanwhile.</div>' : "") +
+        (p.lastRejected && !p.pending ? '<div class="banner bad">Your last change was not approved' + (p.lastRejected.reason ? ": " + esc(p.lastRejected.reason) : "") + "</div>" : "") +
+        (d.makers.length > 1 ? '<div class="fld"><label for="pf-s">Which page</label><select class="ctl" id="pf-s">' + d.makers.map(function (m) { return '<option value="' + esc(m.slug) + '"' + (m.slug === p.slug ? " selected" : "") + ">" + esc(m.name) + "</option>"; }).join("") + "</select></div>" : "") +
+        '<div class="cz-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;align-items:start">' +
+        '<form id="pf" novalidate>' +
+        '<div class="fld"><label for="pf-n">Company / display name</label><input class="ctl" id="pf-n" maxlength="' + p.limits.name + '" value="' + esc(st.name) + '"><p class="hint">Shown as the page title. Your page address (' + esc(p.url) + ') stays the same.</p></div>' +
+        '<div class="fld"><label for="pf-b">About you <span class="count" id="pf-bc"></span></label><textarea class="ctl" id="pf-b" maxlength="' + p.limits.bio + '" placeholder="Who you are, what you build, and who it is for. 2–3 sentences works best.">' + esc(st.bio) + "</textarea></div>" +
+        '<div class="fld"><label for="pf-w">Website</label><input class="ctl" id="pf-w" type="url" placeholder="https://yoursite.com" value="' + esc(st.website) + '"></div>' +
+        '<div class="fld"><label for="pf-lg">Logo <span class="muted" style="font-weight:400">(square, JPEG/PNG/WebP, max ' + p.limits.logoKB + ' KB)</span></label><input class="ctl" id="pf-lg" type="file" accept="image/jpeg,image/png,image/webp"></div>' +
+        '<div class="fld"><label for="pf-bn">Banner <span class="muted" style="font-weight:400">(wide 1200×400, max ' + p.limits.bannerKB + ' KB)</span></label><input class="ctl" id="pf-bn" type="file" accept="image/jpeg,image/png,image/webp"></div>' +
+        '<div class="fld"><span class="lbl">Accent colour</span><div id="pf-ac">' + accF + "</div></div>" +
+        '<details class="fld"><summary style="cursor:pointer;font-weight:600">Social links (optional)</summary><div style="margin-top:10px">' + socF + "</div></details>" +
+        '<p class="err" id="pf-err" role="alert"></p><button class="btn primary" type="submit" id="pf-go">Save &amp; publish</button> <span id="pf-ok" role="status" style="font-size:.9rem"></span></form>' +
+        '<div><p class="muted" style="font-size:.8rem;margin-bottom:6px">Live preview</p><div id="pf-pv" style="border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#11141a"></div></div></div>';
+      function img(k) { var n = st["new" + k.charAt(0).toUpperCase() + k.slice(1)]; return n || st[k]; }
+      function render() {
+        var a = acc[st.accent] || "#9a97e8", lg = img("logo"), bn = img("banner"), nm = st.name || p.defaultName || "Your name";
+        var links = (st.website ? '<span style="padding:4px 10px;border-radius:999px;font-size:.78rem;background:' + a + ';color:#11141a">' + esc(st.website.replace(/^https:\/\/(www\.)?/, "").split("/")[0]) + "</span>" : "") +
+          Object.keys(st.socials).filter(function (k) { return st.socials[k]; }).map(function (k) { return '<span style="padding:4px 10px;border-radius:999px;font-size:.78rem;border:1px solid ' + a + '">' + esc(SOC_LABEL[k] || k) + "</span>"; }).join("");
+        $("#pf-pv").innerHTML = '<div style="aspect-ratio:3/1;background:' + (bn ? "#282d37" : "linear-gradient(135deg," + a + "55,#282d37 70%)") + '">' + (bn ? '<img src="' + esc(bn) + '" alt="" style="width:100%;height:100%;object-fit:cover;display:block">' : "") + "</div>" +
+          '<div style="padding:0 16px 16px"><div style="display:flex;gap:12px;align-items:flex-end;margin-top:-28px">' +
+          (lg ? '<img src="' + esc(lg) + '" alt="" style="width:64px;height:64px;border-radius:16px;object-fit:contain;background:#1a1e26;border:3px solid #11141a">' : '<span style="width:64px;height:64px;border-radius:16px;display:grid;place-items:center;font:800 28px/1 system-ui;background:' + a + ';color:#11141a;border:3px solid #11141a">' + esc(nm.charAt(0)) + "</span>") +
+          '<div><p style="font-size:.7rem;color:#a8acb5;margin:0"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:' + a + ';margin-right:5px"></span>Creator on the Developer Marketplace</p><strong style="font-size:1.3rem">' + esc(nm) + "</strong></div></div>" +
+          (st.bio ? '<p style="margin:12px 0 0;color:#c9ccd3;font-size:.92rem;white-space:pre-line">' + esc(st.bio) + "</p>" : '<p style="margin:12px 0 0;color:#6b7080;font-size:.88rem;font-style:italic">Add a short bio so buyers know who you are.</p>') +
+          (links ? '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">' + links + "</div>" : "") +
+          '<p style="margin:14px 0 0;font-size:.8rem;color:#a8acb5">+ your live listings appear below</p></div>';
+      }
+      var b = $("#pf-b"), bc = $("#pf-bc"); var upd = function () { bc.textContent = b.value.length + "/" + p.limits.bio; };
+      $("#pf-n").oninput = function () { st.name = this.value; render(); };
+      b.oninput = function () { st.bio = b.value; upd(); render(); };
+      $("#pf-w").oninput = function () { st.website = this.value.trim(); render(); };
+      document.querySelectorAll("[data-soc]").forEach(function (i) { i.oninput = function () { st.socials[i.dataset.soc] = i.value.trim(); render(); }; });
+      document.querySelectorAll('input[name="pf-ac"]').forEach(function (r) { r.onchange = function () { st.accent = r.value; render(); }; });
+      function file(id, key, maxKB) {
+        $(id).onchange = function () {
+          var f = this.files[0]; $("#pf-err").textContent = "";
+          if (!f) return;
+          if (!/^image\/(jpeg|png|webp)$/.test(f.type)) { $("#pf-err").textContent = "Use a JPEG, PNG or WebP image."; this.value = ""; return; }
+          if (f.size > maxKB * 1024) { $("#pf-err").textContent = "That image is " + Math.round(f.size / 1024) + " KB; the limit is " + maxKB + " KB. Try a smaller or compressed version."; this.value = ""; return; }
+          var rd = new FileReader(); rd.onload = function () { st[key] = rd.result; render(); }; rd.readAsDataURL(f);
+        };
+      }
+      file("#pf-lg", "newLogo", p.limits.logoKB); file("#pf-bn", "newBanner", p.limits.bannerKB);
+      upd(); render();
+      if ($("#pf-s")) $("#pf-s").onchange = function () { loadProfile(this.value); };
       $("#pf").onsubmit = function (e) {
         e.preventDefault();
-        var w = $("#pf-w").value.trim(); $("#pf-we").textContent = ""; $("#pf-err").textContent = "";
-        if (w && !/^https:\/\/[^\s]+\.[^\s]+/.test(w)) { $("#pf-we").textContent = "Use a full https:// link."; $("#pf-w").setAttribute("aria-invalid", "true"); return; }
-        $("#pf-w").removeAttribute("aria-invalid");
-        fetch("/api/community/creator", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "profile_save", slug: p.slug, profile: { name: $("#pf-n").value, bio: b.value, website: w, socials: cur.socials || {}, logo: cur.logo || "", banner: cur.banner || "" } }) })
-          .then(function (r) { return r.json(); }).then(function (r) { if (r.ok) $("#pf-ok").textContent = "Submitted for review."; else $("#pf-err").textContent = r.error || "Could not save."; });
+        var err = $("#pf-err"), ok = $("#pf-ok"); err.textContent = ""; ok.textContent = "";
+        if (!st.name.trim()) { err.textContent = "Add a display name."; return; }
+        if (st.website && !HTTPS.test(st.website)) { err.textContent = "Website must be a full https:// link."; return; }
+        for (var k in st.socials) if (st.socials[k] && !HTTPS.test(st.socials[k])) { err.textContent = (SOC_LABEL[k] || k) + " link must be a full https:// link."; return; }
+        var go = $("#pf-go"); go.disabled = true; go.textContent = "Saving…";
+        // Unchanged images are sent empty: the server keeps the current ones.
+        fetch("/api/community/creator", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "profile_save", slug: p.slug, profile: { name: st.name, bio: st.bio, website: st.website, socials: st.socials, logo: st.newLogo, banner: st.newBanner, accent: st.accent } }) })
+          .then(function (r) { return r.json(); }).then(function (r) {
+            go.disabled = false; go.innerHTML = "Save &amp; publish";
+            if (!r.ok) { err.textContent = r.error || "Could not save."; return; }
+            var pend = r.profile && r.profile.pending;
+            ok.innerHTML = pend ? '<span style="color:#f5c26b">Saved. A quick review is needed before it goes live; your current page stays up.</span>' : '<span style="color:#7ee2a8">✓ Saved and live.</span> <a href="' + esc(p.url) + '" target="_blank" rel="noopener">View your page ↗</a>';
+          }).catch(function () { go.disabled = false; go.innerHTML = "Save &amp; publish"; err.textContent = "Network error. Try again."; });
       };
     });
   }

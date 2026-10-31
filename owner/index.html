@@ -23,13 +23,10 @@
   </div>
 
   <section id="view-login" class="login-box">
-    <h1>Owner login</h1>
-    <p class="muted">Enter your passcode. You’ll stay signed in on this phone for 30 days.</p>
+    <h1>Owner session needed</h1>
+    <p class="muted">Your owner session is missing or expired. Reload this page to sign in again (browser username/password prompt).</p>
     <div id="login-msg" class="msg err hidden" role="status"></div>
-    <label class="field">Passcode
-      <input id="passcode" type="password" autocomplete="current-password" placeholder="four words" enterkeyhint="go">
-    </label>
-    <button type="button" class="btn block" id="login-btn">Sign in</button>
+    <button type="button" class="btn block" id="login-btn">Reload</button>
   </section>
 
   <section id="view-home" class="panel">
@@ -40,6 +37,7 @@
   </section>
 
   <section id="view-queue" class="panel">
+    
     <button type="button" class="back" data-go="home">← Home</button>
     <h1>Review queue</h1>
     <div class="tabs">
@@ -213,7 +211,7 @@
     </div>
   </section>
 </div>
-<script src="/owner/owner.js?v=12"></script>
+<script src="/owner/owner.js?v=14"></script>
 <script src="/owner/crm.js?v=3"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 // Marketplace listing order (not the League). Deterministic at request time, no cron:
-//  1. listings live < 48h (liveAt / ownerApprovedAt), newest first, with isNew = true (the "New" pill)
+//  1. listings live < 24h (liveAt / ownerApprovedAt), newest first, with isNew = true (the "New" pill)
 //  2. existing pinned.json order
 //  3. everyone else in a seeded shuffle keyed on floor(now / 48h); curated/featured picks keep going after makers' own listings.
-export const NEW_MS = 48 * 60 * 60 * 1000;
+export const NEW_MS = 24 * 60 * 60 * 1000;
 export const ROTATE_MS = 48 * 60 * 60 * 1000;
 export const liveTime = (r) => Number(r && (r.liveAt || r.ownerApprovedAt)) || 0;
 export const isNewListing = (r, now = Date.now()) => { const t = liveTime(r); return t > 0 && t <= now + 60000 && now - t < NEW_MS; };

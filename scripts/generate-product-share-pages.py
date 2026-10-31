@@ -20,14 +20,14 @@ BASE = "https://digitalundergroundstore.com"
 OG_MAX_BYTES = 1_000_000
 
 PRODUCTS = [
-    {"slug": "invoice-desk", "code": "nvmvyx", "name": "Invoice Desk", "price": "CA$19", "pitch": ["Offline invoices for freelancers."], "cover": "media/nvmvyx.jpg"},
+    {"slug": "invoice-desk", "code": "nvmvyx", "name": "Invoice Desk", "price": "CA$19", "pitch": ["Clean invoices for freelancers."], "cover": "media/nvmvyx.jpg"},
     {"slug": "streak-kit", "code": "idasqr", "name": "Streak Kit", "price": "CA$9", "pitch": ["Daily streaks, kept on your phone.", "No account."], "cover": "media/idasqr.jpg"},
     {"slug": "scope-lock", "code": "omzql", "name": "Scope Lock", "price": "CA$12", "pitch": ["A client brief that holds the scope."], "cover": "media/omzql.jpg"},
     {
         "slug": "pantry-week", "og_locked": True,
         "code": "jhagho",
         "name": "Pantry Week",
-        "price": "CA$24",
+        "price": "Free beta",
         "pitch": ["A week of meals, planned in one place."],
         "cover": "media/jhagho.jpg",
         "shareVideo": {
@@ -38,12 +38,12 @@ PRODUCTS = [
     },
     {"slug": "winston", "code": "jkpty", "name": "Winston — Hands-Free Kitchen Voice Assistant", "price": "CA$19", "pitch": ["A kitchen voice that reads the steps while your hands are busy."], "cover": "media/jkpty.jpg"},
     {"slug": "planetview", "code": "oxnfvy", "name": "PlanetView Live", "price": "CA$24", "pitch": ["Photoreal Earth and a solar system you can fly, in the browser."], "cover": "covers/oxnfvy.webp"},
-    {"slug": "session-forge", "code": "wcvgxo", "name": "Session Forge", "price": "CA$14.99+", "pitch": ["An offline toolkit for running game sessions."], "cover": "covers/wcvgxo.webp"},
-    {"slug": "grokmate", "code": "ozzrh", "name": "GrokMate", "price": "CA$39", "pitch": ["A voice assistant for questions while you work."], "cover": "covers/ozzrh.webp"},
-    {"slug": "reply-forge", "code": "nlwvb", "name": "Reply Forge", "price": "CA$9", "pitch": ["Customer replies you can send offline."], "cover": "covers/nlwvb.webp"},
+    {"slug": "session-forge", "code": "wcvgxo", "name": "Session Forge", "price": "CA$14.99+", "pitch": ["A toolkit for running game sessions."], "cover": "covers/wcvgxo.webp"},
+    {"slug": "plainhelp", "code": "ozzrh", "name": "PlainHelp", "price": "CA$39", "pitch": ["A calm voice helper for people new to AI — timers, notes, questions, and phone or PC help."], "cover": "covers/ozzrh.webp"},
+    {"slug": "reply-forge", "code": "nlwvb", "name": "Reply Forge", "price": "CA$9", "pitch": ["Ready-to-send customer replies."], "cover": "covers/nlwvb.webp"},
     {"slug": "chatgpt-prompt-pack", "code": "lqynfs", "name": "ChatGPT Prompt Pack", "price": "CA$9", "pitch": ["30 prompts to create and sell digital products."], "cover": "covers/lqynfs.webp"},
     {"slug": "rate-wire", "code": "ppnorh", "name": "Rate Wire", "price": "CA$9", "pitch": ["Hourly and day rates, figured before you quote."], "cover": "covers/ppnorh.webp"},
-    {"slug": "offer-desk", "code": "bhrrtz", "name": "Offer Desk", "price": "CA$19", "pitch": ["A one-page offer you can send to a client."], "cover": "covers/bhrrtz.webp"},
+    {"slug": "offer-desk", "code": "bhrrtz", "name": "Offer Desk", "price": "CA$19", "pitch": ["A one-page offer you can send to a client."], "cover": "covers/offer-desk-cover-v3.webp"},
     {"slug": "launch-ledger", "code": "iacbv", "name": "Launch Ledger", "price": "CA$29", "pitch": ["Income, kept in one ledger."], "cover": "covers/iacbv.webp"},
     {"slug": "focus-gate", "code": "tckoc", "name": "Focus Gate", "price": "CA$7", "pitch": ["A deep-work timer for one session at a time."], "cover": "covers/tckoc.webp"},
     {"slug": "box-and-go", "code": "hfyam", "name": "Box & Go", "price": "CA$12", "pitch": ["A moving planner for the boxes and the list."], "cover": "covers/hfyam.webp"},
@@ -51,7 +51,7 @@ PRODUCTS = [
     {"slug": "grok-prompt-pack", "code": "jsdrug", "name": "Grok Prompt Pack", "price": "CA$29", "pitch": ["Prompts for writing, planning, and shipping work."], "cover": "covers/jsdrug.webp"},
     {"slug": "ai-audience-growth-toolkit", "code": "pgkgdc", "name": "AI Audience Growth Toolkit", "price": "CA$29", "pitch": ["A playbook, a workbook, and a prompt pack."], "cover": "covers/pgkgdc.webp"},
     {"slug": "airhand", "hidden": True, "code": "fifcuh", "name": "Airhand (Early Access)", "price": "CA$6.99", "pitch": ["Live radio, your music, and a timer, controlled from the camera."], "cover": "covers/fifcuh.webp"},
-    {"slug": "cork", "code": "fjmmi", "name": "Cork — Offline Darts Scoreboard", "price": "CA$25", "pitch": ["Score for two sides.", "Pay once. No subscription."], "cover": "covers/fjmmi.webp"},
+    {"slug": "cork", "code": "fjmmi", "name": "Cork — Darts Scoreboard", "price": "CA$25", "pitch": ["Score for two sides.", "Pay once. No subscription."], "cover": "covers/fjmmi.webp"},
     {"slug": "focus-habits-pack", "code": "wgjffu", "name": "Focus & Habits Pack", "price": "CA$19", "pitch": ["Habit tracker, focus gate, and more.", "Three products, one price."], "cover": "covers/wgjffu.webp"},
     {"slug": "ai-creator-bundle", "code": "lgvubv", "name": "AI Creator Bundle", "price": "CA$79", "pitch": ["Prompt packs, a companion, and an audience growth toolkit."], "cover": "covers/lgvubv.webp"},
     {"slug": "complete-freelance-suite", "code": "vvtib", "name": "Complete Freelance Suite", "price": "CA$79", "pitch": ["Proposals, pricing, scope, invoicing, and client tools in one package."], "cover": "covers/vvtib.webp"},

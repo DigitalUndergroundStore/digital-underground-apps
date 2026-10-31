@@ -51,3 +51,11 @@
 
 /screening-room-7k3q/*
   X-Robots-Tag: noindex, nofollow
+
+/owner/*
+  X-Robots-Tag: noindex, nofollow
+
+# Unlisted review page. No password; obscurity plus noindex only.
+
+/wolf-updates-x4p9/*
+  X-Robots-Tag: noindex, nofollow

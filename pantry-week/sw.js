@@ -1,14 +1,14 @@
-/* pantry-week offline shell — version 202610251635-pw3165beta. Regenerate: python3 tools/generate-hosted-sw.py */
+/* pantry-week offline shell — version 202610291030-pwfeedback. Regenerate: python3 tools/generate-hosted-sw.py */
 /* Hosted buyer app service worker — generated; do not edit by hand.
    Regenerate with: python3 tools/generate-hosted-sw.py <slug> */
-var VERSION = "202610251635-pw3165beta";
+var VERSION = "202610291030-pwfeedback";
 var CACHE = "pantry-week-" + VERSION;
 var PREFIX = "pantry-week-";
 var FILES = [
  "index.html",
  "print/week.html",
- "unlock.js?v=202610251635-pw3165beta",
- "app.bin?v=202610251635-pw3165beta",
+ "unlock.js?v=202610291030-pwfeedback",
+ "app.bin?v=202610291030-pwfeedback",
  "manifest.webmanifest",
  "icons/icon-180.png",
  "icons/icon-192.png",
@@ -75,7 +75,8 @@ self.addEventListener("fetch", function (event) {
         }
         return res;
       }).catch(function () {
-        return caches.match("index.html");
+        // offline: open the page that was asked for, falling back to the hub
+        return caches.match(req, { ignoreSearch: true }).then(function (hit) { return hit || caches.match("index.html"); });
       })
     );
     return;
@@ -93,7 +94,8 @@ self.addEventListener("fetch", function (event) {
         return res;
       }).catch(function () {
         return caches.open(CACHE).then(function (cache) {
-          return cache.match(req, { ignoreSearch: true });
+          // exact version first, so an offline open never falls back to an older cached app.bin
+          return cache.match(req).then(function (hit) { return hit || cache.match(req, { ignoreSearch: true }); });
         });
       })
     );

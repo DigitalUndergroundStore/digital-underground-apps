@@ -44,6 +44,18 @@ button:disabled{opacity:.6}
       <p><strong>Don't own it yet?</strong> <a href="/store/p/pantry-week/">See what it does and get it &rarr;</a> Your unlock link arrives in the receipt email. Store: <a href="https://digitalundergroundstore.com/store/">digitalundergroundstore.com</a></p>
     </div>
   </form>
+  <details id="du-bug" class="du-help" style="border-top:0;margin-top:6px;font-size:.85rem;opacity:.85">
+    <summary style="cursor:pointer;color:#9bbf7a;min-height:44px;display:flex;align-items:center">Report a bug</summary>
+    <form id="du-bug-form" style="display:grid;gap:8px;margin-top:6px">
+      <select name="type" style="padding:8px"><option value="bug">Bug</option><option value="feature">Feature idea</option></select>
+      <textarea name="message" required rows="4" placeholder="What happened? (device, steps)" style="padding:8px"></textarea>
+      <input name="email" type="email" placeholder="Email (optional)" style="padding:8px" />
+      <input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
+      <button type="submit">Send bug report</button>
+      <div id="du-bug-msg" role="status" aria-live="polite"></div>
+    </form>
+  </details>
+  <script>(function(){var f=document.getElementById("du-bug-form"),m=document.getElementById("du-bug-msg");f.addEventListener("submit",function(e){e.preventDefault();m.textContent="Sending...";fetch("/api/feedback",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({product:"Pantry Week",source:"pantry-week-gate",type:f.type.value,message:f.message.value+"\n\n[UA] "+navigator.userAgent+" | "+innerWidth+"x"+innerHeight,email:f.email.value,page:location.href,version:"202610291030-pwfeedback",website:f.website.value})}).then(function(r){if(!r.ok)throw 0;m.textContent="Thanks! Report sent.";f.reset()}).catch(function(){m.textContent="Could not send. Try again in a moment."})})})();</script>
   <div id="du-install" class="du-install" hidden>
     <button type="button" id="du-install-btn" class="du-install-btn">Install app</button>
     <div id="du-ios-hint" class="du-ios-hint">
@@ -57,10 +69,10 @@ button:disabled{opacity:.6}
   <noscript><p>This app needs JavaScript turned on.</p></noscript>
   <link rel="stylesheet" href="/assets/buyer/pwa-install.css" />
   <script src="/assets/buyer/pwa-install.js" data-app-slug="pantry-week" data-app-name="Pantry Week" defer></script>
-  <script>window.__DU_APP_VERSION__="202610251635-pw3165beta";</script>
-  <link rel="stylesheet" href="/assets/buyer/pwa-update.css" />
-  <script src="/assets/buyer/pwa-update.js" data-sw-url="./sw.js" data-app-version="202610251635-pw3165beta" data-app-label="Pantry Week" defer></script>
+  <script>window.__DU_APP_VERSION__="202610291030-pwfeedback";</script>
+  <link rel="stylesheet" href="/assets/buyer/pwa-update.css?v=autoupdate2" />
+  <script src="/assets/buyer/pwa-update.js?v=autoupdate2" data-sw-url="./sw.js" data-app-version="202610291030-pwfeedback" data-app-label="Pantry Week" defer></script>
 </main>
-<script src="unlock.js?v=202610251635-pw3165beta" data-page="index.html" data-root=""></script>
-<script src="/assets/presence.js?v=1" defer></script></body>
+<script src="unlock.js?v=202610291030-pwfeedback" data-page="index.html" data-root=""></script>
+<script src="/assets/presence.js?v=2" defer></script></body>
 </html>

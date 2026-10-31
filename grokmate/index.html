@@ -5,34 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self' https:; media-src 'self' data: blob:; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
   <meta name="referrer" content="no-referrer">
-  <title>GrokMate</title>
-  <meta name="description" content="GrokMate Mobile: your AI voice assistant on your phone. Chat, timers, notes, reminders and weather.">
+  <title>PlainHelp Ai</title>
+  <meta name="description" content="PlainHelp Ai Mobile: your AI voice assistant on your phone. Chat, timers, notes, reminders and weather.">
   <meta name="theme-color" content="#0b0f14">
   <meta name="color-scheme" content="dark">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="GrokMate">
+  <meta name="apple-mobile-web-app-title" content="PlainHelp Ai">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="/assets/buyer/pwa-update.css?v=autoupdate2"><script src="/assets/buyer/pwa-update.js?v=autoupdate2" data-sw-url="./sw.js" data-app-version="grokmate-mobile-1.0.2" data-app-label="GrokMate" defer></script>
 </head>
 <body>
-  <noscript><p class="noscript">GrokMate needs JavaScript. Open it in Chrome (Android) or Safari (iPhone).</p></noscript>
+  <noscript><p class="noscript">PlainHelp Ai needs JavaScript. Open it in Chrome (Android) or Safari (iPhone).</p></noscript>
 
   <!-- ============================================================ license -->
   <section id="screen-license" class="screen hidden" aria-labelledby="lic-title">
     <div class="hero">
       <img src="icons/icon-192.png" alt="" class="hero-logo" width="96" height="96">
-      <h1 id="lic-title">GrokMate</h1>
+      <h1 id="lic-title">PlainHelp Ai</h1>
       <p class="muted">Your AI assistant on PC and phone</p>
     </div>
     <form id="licForm" class="card" autocomplete="off">
       <label for="licKey" class="label">License key</label>
       <input id="licKey" class="field mono" placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX" autocapitalize="characters" spellcheck="false" inputmode="text">
-      <p class="small muted">Your license key is on your GrokMate download page (Gumroad library or purchase email). It's checked once with Gumroad, then saved on this phone.</p>
-      <button class="btn primary wide" id="licBtn" type="submit">Unlock GrokMate</button>
+      <p class="small muted">Your license key is on your PlainHelp Ai download page (Gumroad library or purchase email). It's checked once with Gumroad, then saved on this phone.</p>
+      <button class="btn primary wide" id="licBtn" type="submit">Unlock PlainHelp Ai</button>
       <p class="msg" id="licMsg" role="status" aria-live="polite"></p>
       <a class="link small" id="libLink" href="https://app.gumroad.com/library" target="_blank" rel="noopener noreferrer">Open my Gumroad library</a>
     </form>
@@ -41,10 +42,10 @@
 
   <!-- ============================================================ AI setup -->
   <section id="screen-setup" class="screen hidden" aria-labelledby="setup-title">
-    <header class="top"><div class="brand"><img src="icons/icon-192.png" alt="" class="logo" width="34" height="34"><span>GrokMate</span></div></header>
+    <header class="top"><div class="brand"><img src="icons/icon-192.png" alt="" class="logo" width="34" height="34"><span>PlainHelp Ai</span></div></header>
     <div class="card">
       <h1 id="setup-title">Connect an AI</h1>
-      <p class="muted small">GrokMate uses your own AI key. It's saved only on this phone and sent only to the provider you pick. Gemini and Groq have free tiers.</p>
+      <p class="muted small">PlainHelp Ai uses your own AI key. It's saved only on this phone and sent only to the provider you pick. Gemini and Groq have free tiers.</p>
       <div id="providerList" class="providers" role="radiogroup" aria-label="AI provider"></div>
       <label for="setupKey" class="label">API key for <span id="setupProvName">xAI Grok</span></label>
       <div class="row-input">
@@ -66,7 +67,7 @@
   <!-- ============================================================ chat -->
   <section id="screen-chat" class="screen hidden">
     <header class="top sticky chat-top">
-      <div class="brand"><img src="icons/icon-192.png" alt="" class="logo" width="34" height="34"><span class="brand-name">GrokMate</span></div>
+      <div class="brand"><img src="icons/icon-192.png" alt="" class="logo" width="34" height="34"><span class="brand-name">PlainHelp Ai</span></div>
       <div class="top-actions">
         <button class="pill" id="modelPill" type="button" data-open="sheet-settings" aria-label="AI settings"><span class="dot"></span><span id="modelName">No AI</span></button>
         <button class="icon-btn" id="newChatBtn" type="button" data-open="sheet-chats" aria-label="New chat" title="New chat">
@@ -82,7 +83,7 @@
     </header>
 
     <div id="installBar" class="install hidden" role="note">
-      <span id="installText">Install GrokMate on your Home Screen for one-tap access.</span>
+      <span id="installText">Install PlainHelp Ai on your Home Screen for one-tap access.</span>
       <button class="btn small primary" id="installBtn" type="button">Install</button>
       <button class="icon-btn small" id="installClose" type="button" aria-label="Hide">✕</button>
     </div>
@@ -90,7 +91,7 @@
     <main id="log" class="log" aria-live="polite" aria-label="Conversation">
       <div id="empty" class="empty">
         <img src="icons/icon-192.png" alt="" width="72" height="72" class="empty-logo">
-        <h2>Hey, I'm GrokMate.</h2>
+        <h2>Hey, I'm PlainHelp Ai.</h2>
         <p class="muted">Tap the mic and talk, or type. Try:</p>
         <div class="chips" id="chips">
           <button class="chip" type="button">Set a timer for 10 minutes</button>
@@ -109,7 +110,7 @@
       <button class="mic" id="micBtn" type="button" aria-label="Hold to talk">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z M5 11a7 7 0 0 0 14 0 M12 18v3"/></svg>
       </button>
-      <textarea id="input" class="field input" rows="1" placeholder="Message GrokMate" aria-label="Message" enterkeyhint="send"></textarea>
+      <textarea id="input" class="field input" rows="1" placeholder="Message PlainHelp Ai" aria-label="Message" enterkeyhint="send"></textarea>
       <button class="send" id="sendBtn" type="submit" aria-label="Send">
         <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-send"><path d="M4 12l16-8-6 16-2-6z"/></svg>
         <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-stop"><path d="M7 7h10v10H7z"/></svg>
@@ -189,14 +190,14 @@
 
       <h3>Install</h3>
       <p class="small muted" id="installHelp"></p>
-      <button class="btn small primary hidden" id="installBtn2" type="button">Install GrokMate</button>
+      <button class="btn small primary hidden" id="installBtn2" type="button">Install PlainHelp Ai</button>
 
       <h3>License</h3>
       <p class="small muted" id="licStatus"></p>
       <button class="btn small" id="licRemove" type="button">Remove license from this phone</button>
 
       <h3>About</h3>
-      <button class="btn small" type="button" data-open="sheet-about">About GrokMate Mobile</button>
+      <button class="btn small" type="button" data-open="sheet-about">About PlainHelp Ai Mobile</button>
     </div>
   </div>
 
@@ -241,7 +242,7 @@
           <li>Open <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">aistudio.google.com/apikey</a> and sign in with a Google account.</li>
           <li>Tap <b>Create API key</b> (accept the terms if asked).</li>
           <li>Tap <b>Copy</b> next to the new key.</li>
-          <li>In GrokMate: Settings → Provider <b>Google Gemini</b> → paste the key → <b>Save &amp; test</b>.</li>
+          <li>In PlainHelp Ai: Settings → Provider <b>Google Gemini</b> → paste the key → <b>Save &amp; test</b>.</li>
         </ol>
         <p class="small muted">Google may use free-tier prompts to improve its products. Don't share private details on the free tier.</p>
       </div>
@@ -249,14 +250,14 @@
         <h3>Groq (free tier)</h3>
         <ol>
           <li>Open <a href="https://console.groq.com/keys" target="_blank" rel="noopener noreferrer">console.groq.com/keys</a> and sign up (email or Google).</li>
-          <li>Tap <b>Create API Key</b>, give it a name like "GrokMate", and submit.</li>
+          <li>Tap <b>Create API Key</b>, give it a name like "PlainHelp Ai", and submit.</li>
           <li>Copy the key right away (it's shown only once).</li>
-          <li>In GrokMate: Settings → Provider <b>Groq</b> → paste the key → <b>Save &amp; test</b>.</li>
+          <li>In PlainHelp Ai: Settings → Provider <b>Groq</b> → paste the key → <b>Save &amp; test</b>.</li>
         </ol>
       </div>
       <div class="card">
         <h3>Want Grok itself?</h3>
-        <p class="small">Create a key at <a href="https://console.x.ai/" target="_blank" rel="noopener noreferrer">console.x.ai</a>. xAI bills you directly for what you use (pay as you go). GrokMate never charges for AI.</p>
+        <p class="small">Create a key at <a href="https://console.x.ai/" target="_blank" rel="noopener noreferrer">console.x.ai</a>. xAI bills you directly for what you use (pay as you go). PlainHelp Ai never charges for AI.</p>
       </div>
       <p class="small muted">Keep your key private. It's stored only on this phone; to remove it, clear it in Settings.</p>
     </div>
@@ -265,24 +266,24 @@
   <!-- ============================================================ about -->
   <div id="sheet-about" class="sheet hidden" role="dialog" aria-modal="true" aria-labelledby="about-title">
     <div class="sheet-body">
-      <div class="sheet-head"><h2 id="about-title">About GrokMate Mobile</h2><button class="icon-btn" type="button" data-close aria-label="Close">✕</button></div>
-      <p><b>GrokMate Mobile</b> <span id="aboutVersion"></span></p>
+      <div class="sheet-head"><h2 id="about-title">About PlainHelp Ai Mobile</h2><button class="icon-btn" type="button" data-close aria-label="Close">✕</button></div>
+      <p><b>PlainHelp Ai Mobile</b> <span id="aboutVersion"></span></p>
       <p class="strong">Independent project. Not affiliated with xAI.</p>
       <h3>What it can do</h3>
       <ul class="small">
         <li>Chat by voice or text with your own AI key (xAI Grok, Gemini, Groq, OpenRouter or OpenAI).</li>
-        <li>Timers that ring with sound and vibration <b>while GrokMate is open</b>.</li>
+        <li>Timers that ring with sound and vibration <b>while PlainHelp Ai is open</b>.</li>
         <li>Notes saved on this phone (search, delete, export).</li>
-        <li>Reminders as calendar events: tap "Add to calendar" and your phone's calendar alerts you, even when GrokMate is closed.</li>
+        <li>Reminders as calendar events: tap "Add to calendar" and your phone's calendar alerts you, even when PlainHelp Ai is closed.</li>
         <li>Buttons to call, text, email, open maps or search. Nothing happens until you tap.</li>
         <li>Weather (Open-Meteo), copy &amp; share, date, time and maths.</li>
       </ul>
       <h3>What it can't do</h3>
-      <p class="small">It can't control other apps, set system alarms, read your contacts or messages, or listen in the background (no wake word). It doesn't control your PC; for that, use the phone remote in GrokMate for Windows ("pair a phone").</p>
+      <p class="small">It can't control other apps, set system alarms, read your contacts or messages, or listen in the background (no wake word). It doesn't control your PC; for that, use the phone remote in PlainHelp Ai for Windows ("pair a phone").</p>
       <h3>Privacy</h3>
       <ul class="small">
         <li>Your chats, notes, timers, settings and API key are stored only on this phone.</li>
-        <li>Your messages go straight from this phone to the AI provider you chose, under that provider's terms. There's no GrokMate server.</li>
+        <li>Your messages go straight from this phone to the AI provider you chose, under that provider's terms. There's no PlainHelp Ai server.</li>
         <li>Your license key is checked with Gumroad. Weather lookups go to Open-Meteo (your location only if you ask for local weather).</li>
         <li>Voice input uses your browser's speech service (Chrome sends audio to Google; Safari uses Apple). Spoken replies use your phone's voices.</li>
       </ul>
@@ -302,6 +303,6 @@
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
   <script type="module" src="js/app.js"></script>
-<p style="position:fixed;left:0;right:0;bottom:0;margin:0;padding:6px 10px;background:#111;color:#ddd;font:13px system-ui;text-align:center;z-index:9999">Don't own GrokMate yet? <a style="color:#7fd1ff" href="/store/p/grokmate/">Get it — CA$39 one-time &rarr;</a></p>
+<p style="position:fixed;left:0;right:0;bottom:0;margin:0;padding:6px 10px;background:#111;color:#ddd;font:13px system-ui;text-align:center;z-index:9999">Don't own PlainHelp Ai yet? <a style="color:#7fd1ff" href="/store/p/plainhelp/">Get it — CA$39 one-time &rarr;</a></p>
 </body>
 </html>

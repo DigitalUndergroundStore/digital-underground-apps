@@ -57,8 +57,13 @@ export async function onRequest({ request, env, params }) {
         if (!me) return redirect("/login/?next=" + encodeURIComponent("/login/security/"));
         linkId = me.id;
       }
-      const { url: to, cookie } = await startOAuth(env, kv, origin, p, safeNext(url.searchParams.get("next")), linkId);
-      return redirect(to, [cookie]);
+      try {
+        const { url: to, cookie } = await startOAuth(env, kv, origin, p, safeNext(url.searchParams.get("next")), linkId);
+        return redirect(to, [cookie]);
+      } catch (e) {
+        console.error("oauth start failed", p, e && e.message);
+        return redirect(`/login/?err=${p}-unavailable`);
+      }
     }
     if (PROVIDERS[p] && step === "callback") {
       const clear = "du_oauth=; Max-Age=0; Path=/api/auth/; HttpOnly; Secure; SameSite=Lax";

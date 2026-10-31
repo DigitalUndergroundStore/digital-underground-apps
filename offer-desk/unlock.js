@@ -2,7 +2,7 @@
    The tool itself is only in app.bin (AES-GCM). Without the code that file is unreadable. */
 (function () {
   "use strict";
-  var CFG = { salt: "UPFutUKFKDXKRmcLmztbrA==", iter: 250000, build: "202610072058-bd37123e" };
+  var CFG = { salt: "UPFutUKFKDXKRmcLmztbrA==", iter: 250000, build: "202610292038-867a4f70" };
   var LS = "du_offer_desk_key_v1";
   var me = document.currentScript, PAGE = me.getAttribute("data-page"), ROOT = me.getAttribute("data-root") || "";
   var $ = function (id) { return document.getElementById(id); };
@@ -37,25 +37,13 @@
       var t = bundle.assets[p] || "";
       return /\.css$/.test(p) ? "<style>" + t + "</style>" : "<script>" + t + "<\/script>";
     });
-    var duVer = "<script>window.__DU_APP_VERSION__=\"202610072058-bd37123e\"><\/script><link rel=\"stylesheet\" href=\"/assets/buyer/pwa-update.css\"><script src=\"/assets/buyer/pwa-update.js\" data-sw-url=\"" + ROOT + "sw.js\" data-app-version=\"202610072058-bd37123e\" data-app-label=\"offer-desk\" defer><\/script>";
-    var pwa = "<link rel=\"stylesheet\" href=\"/assets/buyer/pwa-install.css\"><script src=\"/assets/buyer/pwa-install.js\" data-app-slug=\"offer-desk\" data-app-name=\"Offer Desk\" defer><\/script>";
-    html = html.replace("</body>", pwa + duVer + "<script src=\"/assets/buyer/du-about-version.js\" defer><\/script>" + "\n</body>");
+    var sw = "<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('" + ROOT + "sw.js').catch(function(){});}<\/script>";
+    html = html.replace("</body>", sw + "\n</body>");
     document.open(); document.write(html); document.close();
   }
   function netFail() { status("Couldn't load Offer Desk. Connect to the internet once to open it; after that it also works offline."); }
-  function takeCodeFromUrl() {
-    var fromHash = (location.hash.match(/(?:^#|[?&])code=([^&]+)/) || [])[1];
-    var fromSearch = null;
-    try { fromSearch = new URLSearchParams(location.search).get("code"); } catch (e) {}
-    if (fromHash || fromSearch) {
-      try {
-        var clean = location.pathname;
-        history.replaceState(null, "", clean);
-      } catch (e) {}
-    }
-    return fromHash || fromSearch;
-  }
-  var hash = takeCodeFromUrl();
+  var hash = (location.hash.match(/(?:^#|&)code=([^&]+)/) || [])[1];
+  if (hash) { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} }
   function tryCode(code, fromLink) {
     status("Unlocking…");
     return derive(decodeURIComponent(code)).then(function (raw) {

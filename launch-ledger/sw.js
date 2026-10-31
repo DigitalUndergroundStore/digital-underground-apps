@@ -79,7 +79,8 @@ self.addEventListener("fetch", function (event) {
         }
         return res;
       }).catch(function () {
-        return caches.match("index.html");
+        // offline: open the page that was asked for, falling back to the hub
+        return caches.match(req, { ignoreSearch: true }).then(function (hit) { return hit || caches.match("index.html"); });
       })
     );
     return;
@@ -97,7 +98,8 @@ self.addEventListener("fetch", function (event) {
         return res;
       }).catch(function () {
         return caches.open(CACHE).then(function (cache) {
-          return cache.match(req, { ignoreSearch: true });
+          // exact version first, so an offline open never falls back to an older cached app.bin
+          return cache.match(req).then(function (hit) { return hit || cache.match(req, { ignoreSearch: true }); });
         });
       })
     );

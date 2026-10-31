@@ -117,7 +117,9 @@ def v3card(r):
             f'<h3 class="card-title"><a href="{href}">{n}</a></h3><p class="card-desc">{e(r.get("pitchShort"))}</p><div class="card-footer">'
             f'<span class="card-price{" free" if pr.lower().startswith("free") else ""}">{pr}</span><div class="card-actions">'
             + (f'<a href="{href}#contact" class="btn btn-ghost">Contact</a>' if r.get("contactable") else "")
-            + f'<a href="{e(r.get("visitUrl") or r.get("projectUrl"))}" data-out="{rid}" class="btn btn-primary" target="_blank" rel="noopener">Visit</a>'
+            + f'<a href="{e(r.get("visitUrl") or r.get("projectUrl"))}" data-out="{rid}" class="btn btn-primary" target="_blank" rel="noopener">Visit</a></div>'
+            f'<div class="card-vote-row"><button type="button" class="share-btn" data-share="{rid}" data-name="{n}" aria-label="Share {n} in Maker League">'
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Share</button>'
             f'<a href="/league/?vote={rid}" class="btn btn-vote">Cast Maker League Vote</a></div></div></div></article>')
 tpl = (R / "src/home-v3/index.template.html").read_text()
 # JSON-LD (homepage). Listings are third-party products: no publisher/author is attached to them.

@@ -205,13 +205,15 @@ body.du-store .duf {
   flex-direction: column;
   align-items: stretch;
   gap: 10px;
+  box-sizing: border-box;
   padding: 14px 16px;
   background: rgba(245, 158, 11, 0.06);
   border: 1px solid rgba(245, 158, 11, 0.18);
   border-radius: var(--radius);
   margin: 0 auto 32px;
   max-width: 440px;
-  width: 100%;
+  width: min(100%, 440px);
+  overflow: hidden;
   text-align: left;
 }
 .promo-strip .label {
@@ -228,6 +230,9 @@ body.du-store .duf {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.25);
@@ -237,7 +242,13 @@ body.du-store .duf {
   text-decoration: none;
 }
 .promo-strip a:hover { color: var(--text); background: rgba(0, 0, 0, 0.4); }
-.promo-strip .promo-title { flex: 1; min-width: 0; }
+.promo-strip .promo-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .promo-strip .promo-meta {
   flex-shrink: 0;
   font-size: 12px;
@@ -263,42 +274,50 @@ body.du-store .duf {
 .stat-label { font-size: 12px; color: var(--text-muted); margin-top: 1px; }
 
 .cat-bar {
-  position: sticky;
-  top: 59px;
-  z-index: 40;
-  background: rgba(7, 7, 11, 0.88);
+  position: relative;
+  background: rgba(7, 7, 11, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
-@media (min-width: 901px) { .cat-bar { top: 65px; } }
 .cat-scroll {
+  box-sizing: border-box;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 12px 16px;
   display: flex;
-  gap: 2px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  overflow: visible;
 }
-.cat-scroll::-webkit-scrollbar { display: none; }
 .cat-btn {
-  flex-shrink: 0;
-  padding: 13px 12px;
-  font-size: 13.5px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  max-width: 100%;
+  padding: 8px 14px;
+  font-size: 13px;
   font-weight: 500;
   font-family: inherit;
+  line-height: 1.2;
   color: var(--text-muted);
-  background: none;
-  border: none;
-  border-bottom: 2px solid transparent;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 999px;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
 }
 a.cat-btn { display: inline-flex; align-items: center; }
-.cat-btn:hover { color: var(--text-secondary); }
-.cat-btn.active { color: var(--text); border-bottom-color: var(--primary); }
+.cat-btn:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+.cat-btn.active {
+  color: #fff;
+  background: var(--primary);
+  border-color: transparent;
+}
 
 .main {
   max-width: 1120px;
@@ -606,7 +625,7 @@ a.cat-btn { display: inline-flex; align-items: center; }
 }
 @media (max-width: 639px) {
   .mobile-bar { display: block; }
-  .main { padding-bottom: 96px; }
+  .main { padding-bottom: 72px; }
 }
 .btn-full { width: 100%; padding: 12px 16px; font-size: 15px; }
 
@@ -619,3 +638,10 @@ body.du-store :focus-visible {
   .card, .btn-primary { transition: none; }
   .card:hover { transform: none; }
 }
+
+/* Maker Guide mascot */
+.mg-hero{display:flex;align-items:center;gap:12px;justify-content:center;margin:18px auto 0;max-width:460px;text-align:left}
+.mg-hero img{width:62px;height:auto;flex:none}
+.mg-hero p{margin:0;font-size:14px;color:var(--text-muted);background:rgba(154,151,232,.08);border:1px solid rgba(154,151,232,.22);border-radius:12px;padding:10px 14px}
+.mg-hero strong{color:var(--text)}
+.mg-empty{display:block;width:72px;height:auto;margin:0 auto 12px}

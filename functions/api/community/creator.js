@@ -36,14 +36,20 @@ import { deleteVideo, uploadVid } from "../../_lib/video.js";
 import { storeSupportMessage } from "../../_lib/owner.js";
 import { creatorProfileView, getMaker, makerSlugFor, sanitizeProfile, slugify, submitProfile, validSlug } from "../../_lib/makers.js";
 
-/** Maker pages this account may edit: one per distinct maker name across its own listings. */
-async function ownedMakers(kv, acct) {
+/** Maker pages this account may edit: one per distinct maker name across its own listings.
+ *  Owner also gets the Digital Underground + Kerzy Labs brand pages (same customize UI as every other maker). */
+async function ownedMakers(kv, acct, env) {
   const out = new Map();
   for (const id of acct.listingIds || []) {
     const row = await kvGetListing(kv, id);
     if (!row || row.creatorId !== acct.id) continue;
     const slug = makerSlugFor(row) || slugify(row.makerName);
     if (validSlug(slug) && !out.has(slug)) out.set(slug, row.makerName || slug);
+  }
+  if (env && acct?.email && (await isOwnerEmail(env, acct.email))) {
+    for (const [slug, name] of [["digital-underground", "Digital Underground"], ["kerzy-labs", "Kerzy Labs"]]) {
+      if (!out.has(slug)) out.set(slug, name);
+    }
   }
   return out;
 }
@@ -62,15 +68,17 @@ function ipAllowed(ip, limit = 30, windowMs = 60 * 60 * 1000) {
 
 /** Maker page editor: read (GET ?action=profile, not rate-limited) or submit for review (POST action=profile_save). */
 async function profileAction(env, kv, acct, body, save) {
-  const makers = await ownedMakers(kv, acct);
+  const makers = await ownedMakers(kv, acct, env);
   if (!makers.size) return json({ error: "Your maker page is created automatically as soon as your first listing goes live. Check back once it's approved." }, 400);
   const slug = validSlug(body.slug) && makers.has(body.slug) ? body.slug : [...makers.keys()][0];
   let rec = await getMaker(kv, slug);
-  if (rec && rec.ownerAcct && rec.ownerAcct !== acct.id) return json({ error: "This maker page belongs to another account. Contact support." }, 403);
+  const brand = slug === "digital-underground" || slug === "kerzy-labs";
+  const owner = !!(acct?.email && (await isOwnerEmail(env, acct.email)));
+  if (rec && rec.ownerAcct && rec.ownerAcct !== acct.id && !(owner && brand)) return json({ error: "This maker page belongs to another account. Contact support." }, 403);
   if (save) {
     const v = sanitizeProfile(body.profile || {}, makers.get(slug));
     if (v.error) return json({ error: v.error }, 400);
-    const r = await submitProfile(env, kv, acct, slug, v.profile);
+    const r = await submitProfile(env, kv, acct, slug, v.profile, { forceOwner: !!(owner && brand) });
     if (r.error) return json({ error: r.error }, 400);
     rec = r.rec;
   }

@@ -55,6 +55,6 @@ code{font-size:.9em;background:rgba(255,255,255,.08);padding:2px 6px;border-radi
 })();
 </script>
 <script src="/assets/buyer/pwa-install.js" data-app-slug="planetview" data-app-name="PlanetView Live" defer></script>
-<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/planetview/sw.js").catch(function(){});</script>
+<script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/planetview/sw.js",{updateViaCache:"none"}).catch(function(){});</script>
 </body>
 </html>

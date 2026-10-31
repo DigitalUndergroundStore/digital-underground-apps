@@ -49,6 +49,4 @@ curl -X POST https://digitalundergroundstore.com/api/v1/listings \
 
 ## Books (Digital Underground store)
 
-- Humanity X series (sci-fi): https://digitalundergroundstore.com/store/series/humanity-x/ (Book 1 Off the Ground free with email signup at /free-book/; Book 2 Into the Stars CA$9.99; audiobook free for a limited time with email signup)
-- Humanity X: Books 1 & 2 (Ebook Pack), both novels in one download, CA$14.99 (CA$19.98 separately): https://digitalundergroundstore.com/store/p/humanity-x-books-1-2/ (buy: https://kerzy.gumroad.com/l/egrywe)
 - Thrillers: https://digitalundergroundstore.com/store/thrillers/ (He Came Home Without Her, a domestic thriller, CA$4.99; Null Harbor, a near-future thriller, CA$4.99)

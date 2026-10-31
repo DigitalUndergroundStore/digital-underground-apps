@@ -6,7 +6,7 @@
  */
 import { getKv, json, clientIp } from "../../_lib/community.js";
 import { rateAll, rateHit, ipRules } from "../../_lib/ratelimit.js";
-import { weekOf, weekEndsAt, tally, eligible, rank, sha } from "../../_lib/league.js";
+import { weekOf, weekEndsAt, tally, eligible, rank, sha, prevWeek, lastWinner } from "../../_lib/league.js";
 
 const COOKIE = "du_lv";
 export const IP_VOTES = 3; // per hashed IP (/64 for IPv6) per week: shared networks; the cookie still allows one
@@ -25,7 +25,7 @@ export async function onRequestGet({ request, env }) {
   const list = await eligible(new URL(request.url).origin);
   const seen = new Set();
   const counts = kv ? await tally(kv, week, seen) : new Map();
-  let voted = null;
+  let voted = null, prev = null;
   if (kv) {
     const { ipKeys, ckKey } = await voterKeys(request, week, cookieOf(request));
     // KV list() is eventually consistent (new keys can take ~60s to appear). Votes from this
@@ -38,9 +38,17 @@ export async function onRequestGet({ request, env }) {
     }
     voted = (ckKey && (await kv.get(ckKey))) || null;
     if (!voted && (await Promise.all(ipKeys.map((k) => kv.get(k)))).every(Boolean)) voted = true; // network used all its votes
+    if (!voted) { // previous (closed) week: lets cards say "Week N closed" instead of a bare Cast after the Friday rollover
+      try {
+        const pw = prevWeek(week); const ck = cookieOf(request);
+        const mine = ck ? await kv.get(`lg:c:${pw}:${await sha("lgc|" + pw + "|" + ck)}`) : null;
+        let w = null; try { w = await lastWinner(kv, new URL(request.url).origin); } catch (e) {}
+        prev = { week: pw, voted: mine || null, winner: w ? { id: w.id, name: w.name || w.title || null } : null };
+      } catch (e) {}
+    }
   }
   return json({ week, endsAt: weekEndsAt(week), standings: rank(list, counts), totalVotes: [...counts.values()].reduce((a, b) => a + b, 0),
-    eligible: list.map((l) => ({ id: l.id, name: l.name, makerName: l.makerName, imageUrl: l.imageUrl, video: l.video && (l.video.kind === "file" || l.video.kind === "youtube" || l.video.kind === "vimeo") ? l.video : null })), voted }, 200, { "cache-control": "no-store" });
+    eligible: list.map((l) => ({ id: l.id, name: l.name, makerName: l.makerName, imageUrl: l.imageUrl, video: l.video && (l.video.kind === "file" || l.video.kind === "youtube" || l.video.kind === "vimeo") ? l.video : null })), voted, prev }, 200, { "cache-control": "no-store" });
 }
 
 export async function onRequestPost({ request, env }) {

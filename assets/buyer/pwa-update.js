@@ -1,104 +1,79 @@
+/* Digital Underground shared PWA auto-update.
+   Installed apps pick up new builds silently: no reinstall, no hard refresh.
+   - registers the app's sw.js (updateViaCache: none)
+   - checks version.json (no-store) on load, focus, visibility, online, and every 2 min
+   - on a new version: reg.update(), tells a waiting worker to SKIP_WAITING,
+     and reloads once on controllerchange (loop-guarded per version). URL + #hash preserved. */
 (function () {
   "use strict";
-  var script = document.currentScript;
-  var version = (script && script.getAttribute("data-app-version")) || "";
-  var label = (script && script.getAttribute("data-app-label")) || "App";
-
   if (!("serviceWorker" in navigator)) return;
+  var script = document.currentScript;
+  var attr = function (n) { return (script && script.getAttribute(n)) || ""; };
+  var local = attr("data-app-version") || String(window.__DU_APP_VERSION__ || "");
+  var swUrl = attr("data-sw-url") || "./sw.js";
+  var versionUrl;
+  try { versionUrl = new URL("version.json", new URL(swUrl, location.href)).href; } catch (e) { versionUrl = "version.json"; }
+  var GUARD = "du.swReload:" + versionUrl;
 
-  var toast = document.createElement("div");
-  toast.className = "du-update-toast";
-  toast.setAttribute("role", "status");
-  toast.innerHTML =
-    "<strong>Update available</strong><span>Tap to refresh " +
-    label +
-    (version ? " (" + version + ")" : "") +
-    "</span>";
-  document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-      document.body.appendChild(toast);
-    },
-    { once: true }
-  );
-  if (document.body) document.body.appendChild(toast);
-
+  function safeToReload() {
+    var a = document.activeElement;
+    return !(a && (a.tagName === "INPUT" || a.tagName === "TEXTAREA") && a.value);
+  }
   var refreshing = false;
-  navigator.serviceWorker.addEventListener("controllerchange", function () {
+  function reloadOnce(tag) {
     if (refreshing) return;
+    try {
+      if (sessionStorage.getItem(GUARD) === tag) return; // already reloaded for this build
+      sessionStorage.setItem(GUARD, tag);
+    } catch (e) {}
     refreshing = true;
-    window.location.reload();
+    location.reload();
+  }
+  var hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener("controllerchange", function () {
+    if (!hadController) { hadController = true; return; } // first install: nothing old to replace
+    reloadOnce("cc:" + (window.__DU_LIVE_VERSION__ || Date.now()));
   });
 
-  function showToast(reg) {
-    toast.classList.add("on");
-    toast.onclick = function () {
-      if (reg.waiting) reg.waiting.postMessage({ type: "SKIP_WAITING" });
-      else reg.update().then(function () {
-        if (reg.waiting) reg.waiting.postMessage({ type: "SKIP_WAITING" });
-      });
-    };
-  }
-
-  var swUrl = script.getAttribute("data-sw-url") || "./sw.js";
-  var versionUrl = (function () {
-    try {
-      var base = new URL(swUrl, window.location.href);
-      base.search = "";
-      base.hash = "";
-      if (!/\/$/.test(base.pathname)) {
-        base.pathname = base.pathname.replace(/[^/]+$/, "");
-      }
-      return new URL("version.json", base).href;
-    } catch (e) {
-      return "version.json";
-    }
-  })();
-
-  function applyWaitingWorker(reg) {
+  function activate(reg) {
     if (reg.waiting) reg.waiting.postMessage({ type: "SKIP_WAITING" });
   }
 
-  function checkDeployedVersion(reg) {
-    fetch(versionUrl, { cache: "no-store" })
-      .then(function (r) {
-        if (!r.ok) return null;
-        return r.json();
-      })
-      .then(function (payload) {
-        if (!payload || !payload.version) return;
-        var live = String(payload.version);
-        var local = String(version || window.__DU_APP_VERSION__ || "");
-        if (!local || live === local) return;
-        reg.update().catch(function () {});
-        if (reg.waiting && navigator.serviceWorker.controller) {
-          showToast(reg);
-          applyWaitingWorker(reg);
-        } else if (!navigator.serviceWorker.controller) {
-          window.location.reload();
-        }
-      })
-      .catch(function () {});
-  }
-
-  navigator.serviceWorker.register(swUrl).then(function (reg) {
-    if (reg.waiting && navigator.serviceWorker.controller) showToast(reg);
+  navigator.serviceWorker.register(swUrl, { updateViaCache: "none" }).then(function (reg) {
+    activate(reg);
     reg.addEventListener("updatefound", function () {
-      var worker = reg.installing;
-      if (!worker) return;
-      worker.addEventListener("statechange", function () {
-        if (worker.state === "installed" && navigator.serviceWorker.controller) {
-          showToast(reg);
-        }
+      var w = reg.installing;
+      if (!w) return;
+      w.addEventListener("statechange", function () {
+        if (w.state === "installed" && navigator.serviceWorker.controller) activate(reg);
       });
     });
-    checkDeployedVersion(reg);
-    setInterval(function () {
-      reg.update().catch(function () {});
-      checkDeployedVersion(reg);
-    }, 60 * 60 * 1000);
-    setInterval(function () {
-      checkDeployedVersion(reg);
-    }, 5 * 60 * 1000);
+    var last = 0;
+    function check() {
+      var now = Date.now();
+      if (now - last < 15000) return;
+      last = now;
+      reg.update().then(function () { try { if (reg.active) reg.active.postMessage({ type: "CLEAR_CACHES" }); } catch (e) {} activate(reg); }).catch(function () {});
+      fetch(versionUrl, { cache: "no-store" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (p) {
+          if (!p || !p.version) return;
+          var live = String(p.version);
+          window.__DU_LIVE_VERSION__ = live;
+          if (!local || live === local) return;
+          // New build is live. Activate any new worker; if none shows up (same sw.js), reload anyway.
+          reg.update().then(function () {
+            activate(reg);
+            setTimeout(function () { if (safeToReload()) reloadOnce("v:" + live); }, 800);
+          }).catch(function () {});
+        })
+        .catch(function () {});
+    }
+    check();
+    window.addEventListener("focus", check);
+    window.addEventListener("online", check);
+    window.addEventListener("pageshow", check);
+    document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") check(); });
+    setInterval(check, 2 * 60 * 1000);
   }).catch(function () {});
 })();

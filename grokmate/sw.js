@@ -1,6 +1,6 @@
 /* GrokMate Mobile service worker: keeps the app shell available offline.
    It never touches requests to other sites (AI providers, Gumroad, weather). */
-const VERSION = "grokmate-mobile-1.0.1";
+const VERSION = "grokmate-mobile-1.0.2";
 const SHELL = [
   "./", "index.html", "app.css", "manifest.webmanifest",
   "js/app.js", "js/config.js", "js/store.js", "js/license.js", "js/llm.js", "js/tools.js", "js/mathx.js", "js/ics.js", "js/voice.js", "js/placeholders.js",
@@ -22,7 +22,8 @@ self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
-  if (url.origin !== self.location.origin) return; // API calls go straight to the network
+  if (url.origin !== self.location.origin) return;
+  if (url.pathname.endsWith("/version.json")) return; // always network, never cached // API calls go straight to the network
   if (req.mode === "navigate") {
     // Network first for the page (fresh after updates), cached copy when offline.
     e.respondWith(fetch(req).then((r) => {
@@ -41,3 +42,5 @@ self.addEventListener("fetch", (e) => {
     return hit || net;
   }));
 });
+
+self.addEventListener("message", (e) => { if (e.data && e.data.type === "SKIP_WAITING") self.skipWaiting(); });

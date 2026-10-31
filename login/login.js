@@ -7,7 +7,7 @@
                signup: ["Create your account", "Register to list what you build. Your profile comes next, after you're in.", "Register", "new-password", "Create a password"] };
   var ERR = { cancelled: "Sign-in was cancelled.", state: "That sign-in expired. Try again.", token: "The provider didn't confirm the sign-in. Try again.",
               provider: "Couldn't reach the provider. Try again.", profile: "The provider didn't share an account id.", rate: "Too many attempts. Try again in a few minutes.",
-              "google-unavailable": "Google sign-in isn't set up yet. Use email for now.", "x-unavailable": "X sign-in isn't set up yet. Use email for now." };
+              "google-unavailable": "Google sign-in is temporarily unavailable. Please log in with your email and password below. Forgot it? Use \u201cForgot password?\u201d to set one.", "x-unavailable": "X sign-in is temporarily unavailable. Please log in with your email and password below. Forgot it? Use \u201cForgot password?\u201d to set one." };
   function say(t, ok) { var m = $("au-msg"); m.hidden = !t; m.textContent = t || ""; m.className = "au-alert" + (ok ? " ok" : ""); }
   function setMode(m) {
     mode = m; var c = COPY[m];
@@ -27,7 +27,7 @@
     ["google", "x"].forEach(function (p) { if (d && d[p] === false) { var a = document.querySelector('[data-p="' + p + '"]'); a.setAttribute("aria-disabled", "true"); a.title = "Not set up yet"; } });
   }).catch(function () {});
   $("eye").addEventListener("click", function () { var s = $("pw").type === "password"; $("pw").type = s ? "text" : "password"; this.setAttribute("aria-label", s ? "Hide password" : "Show password"); this.setAttribute("aria-pressed", s); });
-  function showMfa(t) { ticket = t; $("f-auth").hidden = true; document.querySelector(".au-oauth").hidden = true; document.querySelector(".au-or").hidden = true; document.querySelector(".au-tabs").hidden = true;
+  function showMfa(t) { ticket = t; $("f-auth").hidden = true; document.querySelector(".au-oauth").hidden = true; document.querySelector(".au-or").hidden = true; $("au-oauth-note").hidden = true; document.querySelector(".au-tabs").hidden = true;
     $("au-card").dataset.step = "mfa"; $("au-ico").hidden = false; $("au-fine").hidden = true;
     $("f-mfa").hidden = false; $("au-title").textContent = "Two-factor check"; $("au-sub").textContent = "Open your authenticator app."; $("code").focus(); }
   function post(path, body) { return fetch("/api/auth/" + path, { method: "POST", headers: { "content-type": "application/json" }, credentials: "same-origin", body: JSON.stringify(body) })
@@ -51,7 +51,7 @@
   var noMail = false, NO_MAIL = "Password reset by email is coming soon. Contact digitalunderground.store@proton.me for help.";
   function showNoMail() { say(NO_MAIL, false); $("fem").disabled = true; $("fgo").hidden = true; }
   function only(id, title, sub) { ["f-auth", "f-mfa", "f-forgot", "f-reset", "f-sent"].forEach(function (f) { $(f).hidden = f !== id; });
-    [".au-oauth", ".au-or", ".au-tabs"].forEach(function (q) { document.querySelector(q).hidden = true; });
+    [".au-oauth", ".au-or", ".au-tabs", "#au-oauth-note"].forEach(function (q) { document.querySelector(q).hidden = true; });
     $("au-fine").hidden = true; $("au-back").hidden = false; $("au-ico").hidden = false; $("au-card").dataset.step = { "f-forgot": "forgot", "f-sent": "sent", "f-reset": "reset" }[id] || "auth";
     $("au-title").textContent = title; $("au-sub").textContent = sub; }
   ["au-back", "remembered", "sent-back"].forEach(function (id) { $(id).href = "/login/" + (qs.get("next") ? "?next=" + encodeURIComponent(next) : ""); });
@@ -85,5 +85,5 @@
   else if (qs.get("forgot")) showForgot();
 
   if (qs.get("mfa")) showMfa(qs.get("mfa"));
-  if (qs.get("err")) say(ERR[qs.get("err")] || "Sign-in failed. Try again.");
+  if (qs.get("err")) { say(ERR[qs.get("err")] || "Sign-in failed. Try again."); if (/-unavailable$/.test(qs.get("err"))) { try { $("em").focus(); } catch (e) {} } }
 })();

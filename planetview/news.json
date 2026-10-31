@@ -1,26 +1,187 @@
 {
-  "updated": "2026-10-30T22:55:18.744Z",
+  "updated": "2026-10-31T02:14:55.378Z",
   "articles": [
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cked3p81303yo?at_medium=RSS&at_campaign=rss",
+      "title": "Three dead after two helicopters collide midair near Oregon airport",
+      "seendate": "20261031T020947Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crm941n0413o?at_medium=RSS&at_campaign=rss",
+      "title": "The Indian chef who brought curry to America - then vanished",
+      "seendate": "20261031T020216Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/ckreypn92w49o?at_medium=RSS&at_campaign=rss",
+      "title": "Responsible or panicked? Meet the people around the world already preparing for crisis",
+      "seendate": "20261031T013233Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Japan"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/31/pope-leo-becomes-first-pontiff-to-vote-in-us-general-election?traffic_source=rss",
+      "title": "Pope Leo becomes first pontiff to vote in US general election",
+      "seendate": "20261031T013144Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cw1l32qyj8pqo?at_medium=RSS&at_campaign=rss",
+      "title": "Global nature talks reach deal but money remains an issue",
+      "seendate": "20261031T012705Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news-analysis/2026/10/31/fake-polls-expose-vulnerabilities-in-us-elections-ahead-of-midterms?traffic_source=rss",
+      "title": "Fake polls expose vulnerabilities in US elections ahead of midterms",
+      "seendate": "20261031T012634Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/dog-walker-threatened-with-gun-during-ice-arrest-in-north-hollywood?traffic_source=rss",
+      "title": "Dog walker threatened with gun during ICE arrest in North Hollywood",
+      "seendate": "20261031T012359Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss",
+      "title": "Police deployed during stand-off over control of top Poland court",
+      "seendate": "20261031T011143Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Poland"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+      "title": "US approves sale of 500 Patriot missiles to Ukraine",
+      "seendate": "20261031T004043Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
+      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+      "seendate": "20261031T002958Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/oct/31/us-cancels-g20-family-photo-after-australia-uk-and-others-refuse-to-appear-with-russia",
+      "title": "US cancels G20 ‘family photo’ after Australia, UK and others refuse to appear with Russia",
+      "seendate": "20261031T002928Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/31/germany-and-france-brace-for-protests-on-halloween-weekend?traffic_source=rss",
+      "title": "Germany and France brace for protests on Halloween weekend",
+      "seendate": "20261031T001735Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/ckq6nz4286r4o?at_medium=RSS&at_campaign=rss",
+      "title": "'The necktie is dead': How US midterm candidates are dressing for votes",
+      "seendate": "20261031T001603Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/oct/31/timor-leste-australia-bugging-rex-patrick-ntwnfb",
+      "title": "A top-secret spy mission, a decades-old scandal – and the Austin Powers-esque saga to lift the lid",
+      "seendate": "20261031T000451Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/31/brazil-summons-argentinian-diplomat-over-bolsonaros-flight-to-us?traffic_source=rss",
+      "title": "Brazil summons Argentinian diplomat over Bolsonaro’s flight to US",
+      "seendate": "20261031T000206Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Brazil"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss",
+      "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
+      "seendate": "20261031T000000Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/fans-voice-support-on-final-night-of-macklemores-free-palestine-tour?traffic_source=rss",
+      "title": "Fans voice support on final night of Macklemore’s ‘Free Palestine’ tour",
+      "seendate": "20261030T233919Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmjwepvd0qq9o?at_medium=RSS&at_campaign=rss",
+      "title": "He questioned Thailand's monarchy dressed as Harry Potter. Now he's in jail for 34 years",
+      "seendate": "20261030T232616Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Thailand"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/polish-police-deployed-to-top-court-after-head-judge-suspended?traffic_source=rss",
+      "title": "Polish police deployed to top court after head judge suspended",
+      "seendate": "20261030T231942Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Poland"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/30/retired-michigan-teacher-released-russian-prison",
+      "title": "Retired Michigan teacher released from Russian prison believed he would never be freed",
+      "seendate": "20261030T231941Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cmp3gp2vg078o?at_medium=RSS&at_campaign=rss",
+      "title": "How has the ceasefire in Russian-occupied Oleshky been unfolding?",
+      "seendate": "20261030T231917Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/why-ai-could-threaten-much-of-the-worlds-digital-infrastructure?traffic_source=rss",
+      "title": "Why AI could threaten much of the world’s digital infrastructure",
+      "seendate": "20261030T231351Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/30/alaska-democrat-senate-mary-peltola-dan-sullivan",
+      "title": "Alaska prosecutor investigates alleged Democratic plot to confuse voters with second Dan Sullivan",
+      "seendate": "20261030T231317Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/oct/30/democrats-miscarriages-ice-detainees",
+      "title": "Democratic lawmakers demand ICE data on detainee miscarriages",
+      "seendate": "20261030T230131Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/30/us-judge-orders-ethics-inquiry-into-trump-lawyers-over-golf-course-case?traffic_source=rss",
+      "title": "US judge orders ethics inquiry into Trump lawyers over golf course case",
+      "seendate": "20261030T225838Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
     {
       "url": "https://www.theguardian.com/us-news/2026/oct/30/javits-frimpong-fatal-shooting-bronx-new-york",
       "title": "Teen boy from Ghana chased and fatally shot on way to school in New York City",
       "seendate": "20261030T224348Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/30/alaska-democrat-senate-mary-peltola-dan-sullivan",
-      "title": "Alaska prosecutor investigates alleged Democratic plot to confuse voters with second Dan Sullivan",
-      "seendate": "20261030T223508Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-      "title": "US approves sale of 500 Patriot missiles to Ukraine",
-      "seendate": "20261030T222052Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&at_campaign=rss",
@@ -42,20 +203,6 @@
       "seendate": "20261030T210051Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&at_campaign=rss",
-      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
-      "seendate": "20261030T205518Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss",
-      "title": "Police deployed during stand-off over control of top Poland court",
-      "seendate": "20261030T205201Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Poland"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss",
@@ -133,153 +280,6 @@
       "seendate": "20261030T193436Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/texas-grand-jury-indicts-ice-officer-accused-of-running-over-man-in-houston?traffic_source=rss",
-      "title": "Texas grand jury indicts ICE officer accused of running over man in Houston",
-      "seendate": "20261030T191630Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/pakistan-army-cautiously-optimistic-about-us-iran-mediation-efforts?traffic_source=rss",
-      "title": "Pakistan army ‘cautiously optimistic’ about US-Iran mediation efforts",
-      "seendate": "20261030T185536Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Pakistan"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/30/rick-ross-felony-charge-dropped-domestic-violence",
-      "title": "Florida prosecutors drop felony charge against Rick Ross in domestic violence case",
-      "seendate": "20261030T183911Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/israel-demolishes-homes-of-palestinians-blamed-for-attack-on-soldiers?traffic_source=rss",
-      "title": "Israel demolishes homes of Palestinians blamed for attack on soldiers",
-      "seendate": "20261030T183544Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz?traffic_source=rss",
-      "title": "Oman rescues 25 from burning oil tanker in Strait of Hormuz",
-      "seendate": "20261030T183329Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/oct/30/tech-stocks-drop-earnings-report",
-      "title": "Tech sell-off drives US markets down by nearly $1tn after subpar earnings reports",
-      "seendate": "20261030T182751Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/30/texas-ice-agent-suv-charged",
-      "title": "ICE agent charged after ramming unmarked SUV into man in Texas",
-      "seendate": "20261030T182713Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/30/men-accused-of-sexually-assaulting-woman-drugged-by-husband-describe-being-invited-to-couples-home",
-      "title": "Man accused of sexually assaulting woman drugged by husband says he thought it was ‘their kink’",
-      "seendate": "20261030T180632Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/30/russell-brand-trial-accusers-nothing-to-gain-media-court-told",
-      "title": "Russell Brand trial: accusers have ‘nothing to gain’ and were not led by media, court told",
-      "seendate": "20261030T180424Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/aje-onl-nf_north-korea-seeks-absolute-superiority-in-drone-301026?traffic_source=rss",
-      "title": "Kim Jong Un calls for North Korea’s drone technology superiority",
-      "seendate": "20261030T180345Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/30/local-devolution-decisions-scotland-wales-first-ministers-tell-burnham",
-      "title": "Local devolution decisions rest solely with Scotland and Wales, first ministers tell Burnham",
-      "seendate": "20261030T175351Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/30/iopc-watchdog-investigate-met-police-meghan-warning-letter",
-      "title": "Police watchdog to investigate Met’s handling of Meghan warning letter",
-      "seendate": "20261030T175132Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/longform/2026/10/30/how-cuts-under-colombias-de-la-espriella-threaten-a-key-human-rights-court?traffic_source=rss",
-      "title": "How cuts under Colombia’s de la Espriella threaten a key human rights court",
-      "seendate": "20261030T174321Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Colombia"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/30/how-crypto-hacking-funds-isolated-north-korea-nuclear-programme",
-      "title": "How crypto hacking funds isolated North Korea’s nuclear programme",
-      "seendate": "20261030T173746Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/30/report-reveals-campaign-promoting-racist-islamophobic-anti-qatar-views?traffic_source=rss",
-      "title": "Report reveals campaign promoting racist, Islamophobic, anti-Qatar views",
-      "seendate": "20261030T173427Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/oct/30/evacuation-besieged-ukrainian-city-oleshky",
-      "title": "Evacuation of civilians begins in besieged Ukrainian city of Oleshky",
-      "seendate": "20261030T171348Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/30/barcelonas-flick-praises-yamal-mentality-in-missing-out-on-ballon-dor?traffic_source=rss",
-      "title": "Barcelona’s Flick praises Yamal’s ‘mentality’ after missing out on Ballon d’Or",
-      "seendate": "20261030T171332Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss",
-      "title": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
-      "seendate": "20261030T170719Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwdd8q8e9e9yo?at_medium=RSS&at_campaign=rss",
-      "title": "Canada stops using 'avalanche dogs' for rescues in Rocky Mountains, stirring outrage",
-      "seendate": "20261030T170032Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Canada"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/30/chelsea-vs-manchester-united-premier-league-teams-prediction-lineups?traffic_source=rss",
-      "title": "Chelsea vs Manchester United: Premier League – teams, prediction, lineups",
-      "seendate": "20261030T165504Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/oct/30/bp-profits-jump-as-middle-east-conflict-drives-up-oil-refining-margins",
-      "title": "BP profits hit ‘obscene’ 18-year high as Iran war drives up oil refining margins",
-      "seendate": "20261030T164900Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
     }
   ]
 }

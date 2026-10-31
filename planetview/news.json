@@ -1,9 +1,107 @@
 {
-  "updated": "2026-10-31T19:30:14.162Z",
+  "updated": "2026-10-31T22:46:58.607Z",
   "articles": [
     {
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+      "seendate": "20261031T221145Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/aje-onl-nf_palestine-action-supporters-arrested-in-london-311026?traffic_source=rss",
+      "title": "Palestine Action supporters arrested outside US embassy in London",
+      "seendate": "20261031T221053Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/31/legal-filing-questions-trumps-claims-of-non-citizen-voting-in-california?traffic_source=rss",
+      "title": "Legal filing questions Trump’s claims of non-citizen voting in California",
+      "seendate": "20261031T213854Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o?at_medium=RSS&at_campaign=rss",
+      "title": "Thousands demonstrate in Paris as protests spread across Europe",
+      "seendate": "20261031T212901Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/fiery-confrontations-between-protestors-and-police-in-albania?traffic_source=rss",
+      "title": "Fiery confrontations between protestors and police in Albania",
+      "seendate": "20261031T211246Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/31/health-authorities-probe-two-suspected-ebola-cases-in-northeast-nigeria?traffic_source=rss",
+      "title": "Health authorities probe two suspected Ebola cases in northeast Nigeria",
+      "seendate": "20261031T210119Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Nigeria"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/31/district-of-columbia-and-virginia-sue-to-block-trumps-triumphal-arch-plans?traffic_source=rss",
+      "title": "District of Columbia and Virginia sue to block Trump’s triumphal arch plans",
+      "seendate": "20261031T203035Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/israels-allegations-of-qatari-election-interference-rejected?traffic_source=rss",
+      "title": "Israel’s allegations of Qatari election interference rejected",
+      "seendate": "20261031T202458Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/oct/31/man-belfast-charged-possessing-explosives-firearms",
+      "title": "Man in Belfast charged with possessing explosives and firearms",
+      "seendate": "20261031T202108Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/31/what-is-ranked-choice-voting-and-how-does-it-work-in-us-elections?traffic_source=rss",
+      "title": "What is ranked-choice voting and how does it work in US elections?",
+      "seendate": "20261031T201137Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/10/31/turkiyes-erdogan-urges-russia-and-ukraine-to-stop-black-sea-attacks?traffic_source=rss",
+      "title": "Turkiye’s Erdogan urges Russia and Ukraine to stop Black Sea attacks",
+      "seendate": "20261031T200918Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Turkey"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
+      "title": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+      "seendate": "20261031T192226Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/31/how-vulnerable-are-cryptocurrency-platforms?traffic_source=rss",
+      "title": "How vulnerable are cryptocurrency platforms?",
+      "seendate": "20261031T191929Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/palestinians-stealing-their-own?traffic_source=rss",
+      "title": "Palestinians ‘Stealing their own olives’",
+      "seendate": "20261031T191832Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
       "url": "https://www.theguardian.com/world/2026/oct/31/oleshky-evacuees-reunite-with-families-after-truce-allows-crossing-into-ukraine",
-      "title": "Oleshky evacuees reunite with families after truce allows crossing into Ukraine",
+      "title": "Oleshky evacuees reunite with families after truce allows crossing back into Ukraine",
       "seendate": "20261031T191722Z",
       "domain": "theguardian.com",
       "sourcecountry": "Ukraine"
@@ -24,7 +122,7 @@
     },
     {
       "url": "https://www.aljazeera.com/news/2026/10/31/london-police-arrest-48-as-hundreds-protest-palestine-action-ban?traffic_source=rss",
-      "title": "London police arrest 48 as hundreds protest Palestine Action ban",
+      "title": "London police arrest 139 as hundreds protest Palestine Action ban",
       "seendate": "20261031T184829Z",
       "domain": "aljazeera.com",
       "sourcecountry": "United Kingdom"
@@ -38,7 +136,7 @@
     },
     {
       "url": "https://www.theguardian.com/world/live/2026/oct/31/france-germany-protests-paris-europe-latest-news-updates",
-      "title": "Protests under way in Germany and France as minister warns against use of Halloween masks – Europe live",
+      "title": "Protests under way in Germany and France as minister warns against use of Halloween masks – as it happened",
       "seendate": "20261031T183138Z",
       "domain": "theguardian.com",
       "sourcecountry": "France"
@@ -142,15 +240,15 @@
       "sourcecountry": "Brazil"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-      "seendate": "20261031T163208Z",
+      "url": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&at_campaign=rss",
+      "title": "Emotional reunions with loved ones for Oleshky evacuees",
+      "seendate": "20261031T165547Z",
       "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
+      "sourcecountry": "Ukraine"
     },
     {
       "url": "https://www.aljazeera.com/news/2026/10/31/thousands-rally-in-berlin-as-gen-z-plans-protests-in-30-german-cities?traffic_source=rss",
-      "title": "Thousands rally in Berlin as Gen Z plans protests in 30 German cities",
+      "title": "Thousands rally in Berlin as Gen Z protests in more than 30 German cities",
       "seendate": "20261031T162804Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Germany"
@@ -182,104 +280,6 @@
       "seendate": "20261031T151052Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/31/chelsea-beat-man-united-as-martinez-sees-red-for-crazy-moment-in-thriller?traffic_source=rss",
-      "title": "Chelsea beat Man United as Martinez sent off to pile pressure on Carrick",
-      "seendate": "20261031T150959Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/31/spending-plan-long-term-focus-uk-government",
-      "title": "A world-first focus on long-term outcomes could transform UK government – or create new spending fights",
-      "seendate": "20261031T150046Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/31/political-ads-midterms-epstein-republican-candidate",
-      "title": "Ads accusing Republican candidates of protecting Epstein fill airwaves in final midterm push",
-      "seendate": "20261031T150045Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/oct/31/maurene-comey-firing-ruling-legal-implications",
-      "title": "Maurene Comey ruling offers hope of check on Trump’s assault on rule of law",
-      "seendate": "20261031T150045Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks?traffic_source=rss",
-      "title": "Iran FM says US outreach a ‘positive step’ as delegation in Qatar for talks",
-      "seendate": "20261031T143137Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmwyv2y7g9l8o?at_medium=RSS&at_campaign=rss",
-      "title": "Ethiopian PM puts ministers through military training",
-      "seendate": "20261031T142815Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/31/syria-considering-entry-into-mecca-defence-pact-says-foreign-minister?traffic_source=rss",
-      "title": "Syria considering entry into Mecca defence pact, says foreign minister",
-      "seendate": "20261031T142023Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/31/israel-voted-for-israel-why-gaza-wasnt-on-the-ballot?traffic_source=rss",
-      "title": "Israel voted for Israel: Why Gaza wasn’t on the ballot",
-      "seendate": "20261031T133551Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/oct/31/keir-starmer-uk-europe-us-relationship-trump",
-      "title": "Starmer says UK must get closer to Europe as US relationship changes",
-      "seendate": "20261031T133225Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/oct/31/uk-police-should-not-have-let-us-force-take-over-airbase-trial-mod-documents-show",
-      "title": "UK police should not have let US force take over airbase trial, MoD documents show",
-      "seendate": "20261031T133043Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/10/31/burnham-opens-door-to-formal-apology-for-britains-slave-trade?traffic_source=rss",
-      "title": "Burnham opens door to formal apology for Britain’s slave trade",
-      "seendate": "20261031T131923Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/features/longform/2026/10/31/on-the-norway-russia-border-the-sami-people-face-a-growing-divide?traffic_source=rss",
-      "title": "On the Norway-Russia border, the Sámi people face a growing divide",
-      "seendate": "20261031T125828Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/10/31/west-indies-bangladesh-first-test-eight-wickets-mirpur-series-lead?traffic_source=rss",
-      "title": "West Indies thrash Bangladesh by eight wickets in first Test in Mirpur",
-      "seendate": "20261031T125500Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Bangladesh"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/cmze42el49d9o?at_medium=RSS&at_campaign=rss",
-      "title": "Watch: Blood donors get a Halloween fright in Thailand",
-      "seendate": "20261031T125045Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Thailand"
     }
   ]
 }

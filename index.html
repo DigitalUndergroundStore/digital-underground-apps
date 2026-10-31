@@ -91,6 +91,15 @@
     .hcx .hcx-cta1:hover{background:#4338ca}
     .hcx-cta2{color:#d6d4ff;border:1px solid rgba(154,151,232,.4);padding:12px 20px;border-radius:12px;font-weight:600;text-decoration:none}
     .hcx-cta2:hover{border-color:#9a97e8;color:#fff}
+
+    .hcx-cta-mp{position:relative;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto auto;gap:2px 14px;align-items:center;max-width:420px;padding:14px 16px;border-radius:14px;text-decoration:none;color:#eef0ff;background:linear-gradient(135deg,rgba(79,70,229,.45),rgba(17,20,26,.95) 55%,rgba(99,102,241,.22));border:1px solid rgba(167,139,250,.45);box-shadow:0 8px 28px rgba(79,70,229,.25),inset 0 1px 0 rgba(255,255,255,.08);transition:border-color .2s,box-shadow .2s,transform .15s}
+    .hcx-cta-mp:hover{border-color:#c4b5fd;box-shadow:0 10px 32px rgba(99,102,241,.35),inset 0 1px 0 rgba(255,255,255,.1);transform:translateY(-1px);color:#fff}
+    .hcx-mp-kicker{grid-column:1;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#c7d2fe;font-weight:600}
+    .hcx-mp-title{grid-column:1;font-size:1.15rem;font-weight:700;letter-spacing:-.01em;color:#fff}
+    .hcx-mp-sub{grid-column:1;font-size:.82rem;color:#b8bdd0;line-height:1.35}
+    .hcx-mp-go{grid-column:2;grid-row:1/4;width:36px;height:36px;border-radius:999px;display:grid;place-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);font-size:1.1rem;color:#e0e7ff}
+    @media(max-width:520px){.hcx-cta-mp{max-width:none}}
+
     .hcx-stats[hidden],.ftr[hidden]{display:none}.hcx-stats{display:flex;flex-wrap:wrap;gap:22px;margin:0 0 20px;padding:12px 0 0;border-top:1px solid rgba(255,255,255,.07)}
     .hcx-stats div{display:flex;flex-direction:column}.hcx-stats dt{order:2;font-size:.74rem;color:#8f949e;text-transform:uppercase;letter-spacing:.06em}.hcx-stats dd{margin:0;font-size:1.35rem;font-weight:700;color:#f1f2f5}
     .ftr{max-width:1100px;margin:6px auto 0;padding:0 24px}
@@ -119,7 +128,14 @@
         <button type="submit" class="btn btn-primary" style="background:#4f46e5;border-color:#4f46e5;color:#fff">List free <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button></div>
       </form>
       <p class="hcx-full"><span>New Builder?</span> <a href="/community/submit/"><span class="hcx-fi" aria-hidden="true">&#9998;</span>Start your journey <span aria-hidden="true">&rarr;</span></a></p>
-      <div class="hcx-ctas" style="margin-top:4px"><a class="hcx-cta2" href="/store/p/maker-pro/">Maker Pro — subscription for reach <span aria-hidden="true">&rarr;</span></a></div>
+      <div class="hcx-ctas hcx-mp" style="margin-top:10px">
+        <a class="hcx-cta-mp" href="/store/p/maker-pro/">
+          <span class="hcx-mp-kicker">Optional · reach tools</span>
+          <span class="hcx-mp-title">Maker Pro</span>
+          <span class="hcx-mp-sub">Featured slots · X promo · intros · from CA$9/mo</span>
+          <span class="hcx-mp-go" aria-hidden="true">→</span>
+        </a>
+      </div>
       <dl class="hcx-stats" id="hcxStats" hidden></dl>
       <ul class="hcx-grid" aria-label="Why list here">
         <li><span class="hcx-ic" aria-hidden="true">&#9783;</span><span><b>Indexed project page</b>Listed in our sitemap for search engines</span></li>

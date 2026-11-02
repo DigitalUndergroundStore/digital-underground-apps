@@ -26,11 +26,17 @@
     min-height: 100dvh;
     overflow: hidden;
     background:
-      radial-gradient(ellipse 80% 60% at 50% 40%, rgba(30, 90, 180, 0.22), transparent 60%),
-      radial-gradient(circle at 50% 50%, rgba(10, 30, 60, 0.9), #02050a 75%),
-      repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(40,120,200,0.05) 28px),
-      repeating-linear-gradient(90deg, transparent, transparent 27px, rgba(40,120,200,0.05) 28px);
+      radial-gradient(ellipse 70% 55% at 50% 42%, rgba(70, 40, 180, 0.28), transparent 55%),
+      radial-gradient(ellipse 50% 40% at 50% 48%, rgba(40, 140, 255, 0.18), transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(6, 14, 32, 0.95), #02040a 78%),
+      repeating-linear-gradient(60deg, transparent 0 22px, rgba(90,160,255,0.045) 22px 23px),
+      repeating-linear-gradient(-60deg, transparent 0 22px, rgba(120,80,255,0.04) 22px 23px);
   }
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background: radial-gradient(circle at 50% 45%, transparent 18%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.75) 100%);
+  }
+  .shell { position: relative; z-index: 1; min-height: 100dvh; }
   body.focus .side { opacity: 0.28; filter: saturate(0.6); pointer-events: none; }
   body.focus #btn-focus { background: rgba(61,184,255,0.25); border-color: var(--accent); color: #fff; }
   .topbar {
@@ -54,10 +60,12 @@
   .orb-wrap { position: relative; width: min(280px, 55vw); aspect-ratio: 1; display: grid; place-items: center; }
   .orb {
     width: 58%; height: 58%; border-radius: 50%;
-    background: radial-gradient(circle at 35% 30%, #9ad8ff, #2a7dff 45%, #0a1a40 75%);
-    box-shadow: 0 0 40px rgba(61,184,255,0.55), 0 0 120px rgba(61,184,255,0.25), inset 0 0 30px rgba(255,255,255,0.25);
+    display: grid; place-items: center;
+    background: radial-gradient(circle at 35% 30%, #c5e7ff, #4b7cff 40%, #5b2dff 70%, #0a1030 100%);
+    box-shadow: 0 0 50px rgba(90,120,255,0.65), 0 0 140px rgba(90,40,255,0.35), inset 0 0 40px rgba(255,255,255,0.28);
     animation: pulse 3.2s ease-in-out infinite;
   }
+  .orb img { width: 42%; height: auto; filter: drop-shadow(0 0 12px rgba(255,255,255,0.45)); opacity: 0.95; }
   .ring {
     position: absolute; inset: 8%; border-radius: 50%;
     border: 1px solid rgba(100,190,255,0.35);
@@ -147,7 +155,7 @@
 </div>
 <div class="shell">
   <div class="topbar">
-    <div class="brand">DU COMMAND <span>v0.1 · private</span></div>
+    <div class="brand">DU COMMAND <span>HUD · private</span></div>
     <div class="top-actions">
       <button type="button" class="chip on" id="btn-voice" aria-pressed="true">Voice: on</button>
       <a class="chip" href="/owner/">← Owner home</a>
@@ -169,14 +177,14 @@
       <div class="ring"></div>
       <div class="ring"></div>
       <div class="ring"></div>
-      <div class="orb"></div>
+      <div class="orb"><img src="/assets/logo/du-mark.svg" alt="" width="72" height="72"></div>
     </div>
     <p class="subtitle" id="line" role="status">Initializing…</p>
   </div>
 
   <div class="dock">
     <div class="ask">
-      <input id="ask" type="text" placeholder="Ask Command…" autocomplete="off" enterkeyhint="send">
+      <input id="ask" type="text" placeholder="Ask Jarvis…" autocomplete="off" enterkeyhint="send">
       <button type="button" class="btn" id="btn-ask">Send</button>
     </div>
     <div class="pills">
@@ -265,7 +273,7 @@
     } else if (low.indexOf("focus") >= 0) {
       document.body.classList.add("focus"); say("Focus mode on. Panels dimmed.");
     } else {
-      say("Got it — for real actions, ping Gerold or Jarvis in Grok Bot. Command v0.1 is the HUD shell.");
+      say("Heard. Full talk goes through Jarvis · Chief of Staff in the Grok Bot app until the HUD mic is wired to CoS.");
     }
   }
   $("btn-ask").addEventListener("click", function () { handleAsk($("ask").value); $("ask").value = ""; });
@@ -282,7 +290,7 @@
     return r.json();
   }).then(function (d) {
     $("gate").classList.add("hidden");
-    say("Systems online. Good evening, Donald.");
+    say("Systems online. Jarvis is on the bridge next — talk in Grok Bot until the HUD mic is live.");
     var live = (d.listingsLive || 0) + " live · " + (d.pendingCount || 0) + " in review · " + (d.supportOpen || 0) + " support open";
     renderSys([{ name: "Marketplace", status: (d.pendingCount ? "warn" : "ok"), detail: live }]);
   }).catch(function () {

@@ -1,12 +1,159 @@
 {
-  "updated": "2026-11-01T20:46:44.667Z",
+  "updated": "2026-11-02T00:34:20.632Z",
   "articles": [
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/01/trump-iowa-rally",
+      "title": "Trump launches racist diatribe against Abdul El-Sayed at Iowa rally",
+      "seendate": "20261102T001625Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
     {
       "url": "https://www.theguardian.com/us-news/2026/nov/01/abdul-el-sayed-haley-stevens-michigan-senate",
       "title": "Democrat Haley Stevens endorses Abdul El-Sayed’s Republican rival Mike Rogers",
-      "seendate": "20261101T203130Z",
+      "seendate": "20261102T001217Z",
       "domain": "theguardian.com",
       "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
+      "title": "Democrat endorses Republican candidate in key Michigan Senate race as party spat erupts",
+      "seendate": "20261102T000215Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon?traffic_source=rss",
+      "title": "Iran war live: Tankers hit in Hormuz; Trump again says conflict to end soon",
+      "seendate": "20261102T000000Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/nine-people-dead-after-learjet-crashes-in-florida?traffic_source=rss",
+      "title": "Nine people dead after Learjet crashes in Florida",
+      "seendate": "20261101T232948Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/1/why-governors-races-are-important-in-the-2026-us-midterms?traffic_source=rss",
+      "title": "Why governors’ races are important in the 2026 US midterms",
+      "seendate": "20261101T232456Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/1/un-warns-of-security-risks-in-western-sahara-as-peacekeeping-mission-ends?traffic_source=rss",
+      "title": "UN warns of security risks in Western Sahara as peacekeeping mission ends",
+      "seendate": "20261101T231951Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/02/nationals-leader-matt-canavan-one-nation-james-ashby-capricornia-election-ntwnfb",
+      "title": "Nationals leader Matt Canavan to run for lower house seat in possible showdown with One Nation’s James Ashby",
+      "seendate": "20261101T230505Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c51kdy1ew7zvo?at_medium=RSS&at_campaign=rss",
+      "title": "Ukraine air raid app apparently hacked as users receive false radiation threat, Air Force says",
+      "seendate": "20261101T223824Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/01/chatgpt-woman-seizure-lawsuit-openai",
+      "title": "Parents of woman who died of seizure after ChatGPT misguidance sue OpenAI",
+      "seendate": "20261101T223736Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/1/high-ranking-us-democratic-senator-suffers-stroke?traffic_source=rss",
+      "title": "High-ranking US Democratic senator suffers stroke",
+      "seendate": "20261101T223254Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/01/uk-was-vehement-slavery-reparations-should-not-be-on-commonwealth-summit-agenda",
+      "title": "UK was ‘vehement’ slavery reparations should not be on Commonwealth summit agenda",
+      "seendate": "20261101T222611Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/1/ukraine-evacuates-civilians-in-kherson-region-as-localised-ceasefire-ends?traffic_source=rss",
+      "title": "Kherson braces for return of war as localised Russia-Ukraine truce ends",
+      "seendate": "20261101T221514Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
+      "title": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire ends",
+      "seendate": "20261101T215501Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/democrat-haley-stevens-heckled-as-she-backs-el-sayed-rival?traffic_source=rss",
+      "title": "Democrat Haley Stevens heckled as she backs El-Sayed rival",
+      "seendate": "20261101T212943Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/thousands-displaced-from-hebron-as-israel-carries-on-siege?traffic_source=rss",
+      "title": "Thousands displaced from Hebron as Israel carries on siege",
+      "seendate": "20261101T212847Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/01/business-jet-crash-florida",
+      "title": "All nine people aboard business jet that crashed in Florida have died",
+      "seendate": "20261101T211323Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/1/carney-signals-progress-on-canada-us-trade-deal-talks-as-midterms-loom?traffic_source=rss",
+      "title": "Carney signals progress on Canada-US trade deal talks as midterms loom",
+      "seendate": "20261101T210133Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Canada"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/1/why-did-democrat-haley-stevens-just-endorse-a-republican-for-us-senate?traffic_source=rss",
+      "title": "Why did Democrat Haley Stevens just endorse a Republican for US Senate?",
+      "seendate": "20261101T210052Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/music/2026/nov/01/bbc-young-musician-teenage-violinist-sofia-demetriades",
+      "title": "Teenage violinist wins BBC Young Musician 2026, after first all-female final",
+      "seendate": "20261101T210021Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/al-jazeera-director-general-hails-30-years-of-groundbreaking-news?traffic_source=rss",
+      "title": "Al Jazeera Director General hails 30 years of groundbreaking news",
+      "seendate": "20261101T204800Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show?traffic_source=rss",
+      "title": "Initial results indicate victory for Iotova in Bulgarian presidential vote",
+      "seendate": "20261101T204333Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
     },
     {
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/police-clash-with-housing-crisis-protesters-in-portugal?traffic_source=rss",
@@ -21,13 +168,6 @@
       "seendate": "20261101T202105Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
-      "title": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
-      "seendate": "20261101T201126Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.theguardian.com/us-news/2026/nov/01/alaska-senate-race-republican-dan-sullivan",
@@ -51,20 +191,6 @@
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/01/uk-was-vehement-slavery-reparations-should-not-be-on-commonwealth-summit-agenda",
-      "title": "UK was ‘vehement’ slavery reparations should not be on Commonwealth summit agenda",
-      "seendate": "20261101T195039Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&at_campaign=rss",
-      "title": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire to end",
-      "seendate": "20261101T194817Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
-    },
-    {
       "url": "https://www.theguardian.com/politics/2026/nov/01/home-secretary-shabana-mahmood-immigration-leave-to-remain-windrush",
       "title": "Home secretary to make some migrants wait 10 years or more for right to settle in UK",
       "seendate": "20261101T194735Z",
@@ -77,13 +203,6 @@
       "seendate": "20261101T193646Z",
       "domain": "theguardian.com",
       "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/01/chris-murphy-stroke-hospitalized",
-      "title": "Connecticut senator Chris Murphy hospitalized after stroke",
-      "seendate": "20261101T192744Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.aljazeera.com/sports/2026/11/1/arsenal-go-top-after-narrow-win-at-liverpool?traffic_source=rss",
@@ -135,25 +254,11 @@
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/music/2026/nov/01/juan-atkins-pioneer-of-detroit-techno-sound-dies-aged-64",
-      "title": "Juan Atkins, pioneer of Detroit techno sound, dies aged 64",
-      "seendate": "20261101T183122Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Mexico"
-    },
-    {
       "url": "https://www.aljazeera.com/news/2026/11/1/israels-first-ambassador-to-somaliland-presents-credentials-in-hargeisa?traffic_source=rss",
       "title": "Israel’s first ambassador to Somaliland presents credentials in Hargeisa",
       "seendate": "20261101T182357Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/01/key-takeaways-midterm-elections-early-voting",
-      "title": "Three key takeaways from early voting in midterm elections",
-      "seendate": "20261101T181954Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/c9kgj7k7ry0ro?at_medium=RSS&at_campaign=rss",
@@ -171,113 +276,8 @@
     },
     {
       "url": "https://www.theguardian.com/politics/2026/nov/01/how-reeves-has-mapped-out-the-agenda-for-burnhams-government",
-      "title": "How Rachel Reeves has mapped out economic agenda for Andy Burnham’s government",
+      "title": "How Rachel Reeves has mapped out the economic agenda for Andy Burnham’s government",
       "seendate": "20261101T174742Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/1/hebron-siege-continues-for-10th-day-as-israel-threatens-wider-offensive?traffic_source=rss",
-      "title": "Hebron siege continues for 10th day as Israel threatens wider offensive",
-      "seendate": "20261101T173045Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/01/police-detain-325-people-at-pro-palestine-action-protest-at-us-embassy-in-london",
-      "title": "Police detain 325 people at pro-Palestine Action protest at US embassy in London",
-      "seendate": "20261101T172920Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ck3r5z3pw928o?at_medium=RSS&at_campaign=rss",
-      "title": "Lindsay Clancy is back in court - where will her case go next?",
-      "seendate": "20261101T172908Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/01/ukraine-defies-trump-resumes-attacks-russian-oil",
-      "title": "Ukraine defies Trump to resume attacks on Russian oil refineries",
-      "seendate": "20261101T172018Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
-      "title": "Israeli strikes in Gaza kill eight including child, hospitals say",
-      "seendate": "20261101T170632Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq5ynzvkn1d8o?at_medium=RSS&at_campaign=rss",
-      "title": "University of Cambridge scientist among those who died in Spanish train crash",
-      "seendate": "20261101T170518Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/nov/01/uk-willing-to-spend-450m-a-year-on-eu-students-if-it-can-join-made-in-europe-scheme",
-      "title": "UK willing to spend £450m a year on EU students if it can join Made in Europe scheme",
-      "seendate": "20261101T170016Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Belgium"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-celebrates-30-years-of-transforming-news-in-region-and-beyond?traffic_source=rss",
-      "title": "Al Jazeera marks 30 years of transforming news in Middle East and beyond",
-      "seendate": "20261101T165941Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/bangladesh-workers-clash-with-police-in-protests-over-low-pay?traffic_source=rss",
-      "title": "Bangladesh workers clash with police in protests over low pay",
-      "seendate": "20261101T165242Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Bangladesh"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/india-protesters-march-with-1km-banner-of-deleted-voters-names?traffic_source=rss",
-      "title": "India protesters march with 1km banner of deleted voters’ names",
-      "seendate": "20261101T164218Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/01/petrol-bomb-thrown-at-french-riot-police",
-      "title": "Attempted murder probe after petrol bomb thrown at French riot police",
-      "seendate": "20261101T162438Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss",
-      "title": "Russia detains minor over alleged Moscow attack plot after US warning",
-      "seendate": "20261101T162416Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/1/trump-rallies-in-iowa-kansas-to-maintain-republican-control-of-us-senate?traffic_source=rss",
-      "title": "Trump rallies in Iowa, Kansas to maintain Republican control of US Senate",
-      "seendate": "20261101T161957Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-balkans-relaunches-in-new-digital-first-format?traffic_source=rss",
-      "title": "Al Jazeera Balkans relaunches in new digital-first format",
-      "seendate": "20261101T161737Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/01/teenagers-stabbing-halloween-party-hampshire",
-      "title": "Five teenagers hurt in stabbing at Halloween party in Hampshire",
-      "seendate": "20261101T161456Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     }

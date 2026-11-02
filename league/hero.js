@@ -25,7 +25,7 @@
     } else {
       html = '<div class="lgh-in"><div class="lgh-media lgh-vid"><img src="/league/media/league-hero-bg.webp" alt="" width="1600" height="900"><video class="lgh-v" src="/assets/promo/league-card-square.mp4?v=1" poster="/assets/promo/league-card-poster-square.jpg?v=1" width="720" height="720" muted autoplay loop playsinline preload="metadata" aria-label="Maker League promo video"></video><button type="button" class="lgh-snd" aria-label="Unmute promo video" aria-pressed="false">🔇</button></div>' +
         '<div class="lgh-body"><span class="lgh-badge">★ Maker of the Week</span><h2>Week ' + wk + ' — competition under way</h2>' +
-        '<p class="lgh-sub">Vote for your favourite indie project. The top pick becomes Maker of the Week, right here at the top of the page.</p>' +
+        '<p class="lgh-sub">The best product with the most votes becomes Maker of the Week — right here at the top of the page.</p>' +
         '<div class="lgh-btns"><a class="lgh-btn pri" href="/league/">Vote now</a><button type="button" class="lgh-btn ghost" data-lg-share>Share</button><a class="lgh-motw" href="/league/" aria-label="Maker of the Week: official Digital Underground winner badge. Open the Maker League"><img src="/assets/badges/maker-of-the-week.svg?v=1" alt="Maker of the Week" width="131" height="40" decoding="async"></a></div>' +
         '<p class="lgh-meta"><span>' + esc(reset) + "</span>" + (votes ? "<span>" + esc(votes) + "</span>" : "") + "<span>Free · 1 vote per week</span></p></div></div>";
     }

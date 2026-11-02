@@ -42,7 +42,7 @@
     var sh = e.target.closest("button[data-share]");
     if (sh) {
       var nm = sh.getAttribute("data-name"), url = location.origin + "/league/v/?id=" + encodeURIComponent(sh.getAttribute("data-share"));
-      var text = "Come vote for " + nm + " in Digital Underground's Maker League! 🗳️ One free vote a week, and the winner becomes Maker of the Week.";
+      var text = "Vote for " + nm + " in Maker League — best product with the most votes becomes Maker of the Week.";
       if (navigator.share) navigator.share({ title: nm + " · Maker League", text: text, url: url }).catch(function () {});
       else { var w = window.open("https://x.com/intent/post?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(url), "_blank", "noopener"); if (!w && navigator.clipboard) navigator.clipboard.writeText(text + " " + url).then(function () { toast("Link copied!"); }); }
       return;

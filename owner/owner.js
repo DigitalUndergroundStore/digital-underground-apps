@@ -71,7 +71,8 @@
         '<button type="button" class="oh-card" data-go="analytics" data-an-go="live" id="home-live"><div class="oh-label">Online now</div><div class="oh-value">…</div><div class="oh-meta">DU + Kerzy Labs</div></button>' +
         '<button type="button" class="oh-card" data-go="analytics" data-an-go="health" id="home-health"><div class="oh-label">Health</div><div class="oh-value">…</div><div class="oh-meta">Checking site…</div></button>' +
         card("apikeys", "API keys", "→", "Creator API access", "") +
-        card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");
+        card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "") +
+        '<a class="oh-card" href="/owner/hud/" id="home-hud"><div class="oh-label">DU Command</div><div class="oh-value">HUD</div><div class="oh-meta">Private ops desk · systems + decisions</div></a>';
       homeHealth();
       $("home-today").innerHTML =
         '<div class="oh-today"><h2>Today</h2>' +

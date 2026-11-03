@@ -1,0 +1,192 @@
+.lg-panel{margin:0 0 20px;padding:16px;border:1px solid rgba(196,181,253,.22);border-radius:20px;background:rgba(255,255,255,.03)}
+.lg-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 12px;margin-bottom:12px}
+.lg-head h2{margin:0;font-size:20px}.lg-meta,.lg-fine{color:var(--muted);font-size:13px}
+.lg-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.lg-list li{display:flex;align-items:center;gap:12px;padding:8px;border-radius:12px;background:rgba(255,255,255,.03)}
+.lg-list .n{width:28px;text-align:center;font-weight:800;color:#c4b5fd}.lg-list img,.lg-ph{width:44px;height:48px;border-radius:12px;object-fit:cover;flex:none;background:rgba(139,92,246,.15)}
+.lg-list a{color:inherit;font-weight:700;text-decoration:none}.lg-list small{display:block;color:var(--muted);font-weight:400}
+.lg-list .v{margin-left:auto;font-weight:800;white-space:nowrap}
+.lg-empty{justify-content:center;color:var(--muted);text-align:center;padding:20px!important}
+.lg-q{width:100%;min-height:48px;margin:0 0 12px;padding:0 16px;border-radius:12px;border:1px solid rgba(196,181,253,.3);background:rgba(0,0,0,.25);color:inherit;font:inherit}
+.lg-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.lg-grid li{display:flex;align-items:center;gap:12px;padding:8px;border:1px solid rgba(196,181,253,.16);border-radius:16px}
+.lg-grid .t{flex:1;min-width:0}.lg-grid .t b,.lg-grid .t small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lg-grid small{color:var(--muted)}
+.lg-grid img,.lg-grid .lg-ph{width:40px;height:40px;border-radius:12px;object-fit:cover;flex:none}
+.lg-grid button{flex:none;min-height:40px;padding:0 16px;border:0;border-radius:999px;background:var(--du-gradient);color:#fff;font-weight:700;cursor:pointer}
+.lg-grid button:disabled{opacity:.45;cursor:default}.lg-grid li.is-mine{border-color:#86efac}.lg-grid li.is-mine button{background:#166534;opacity:1}
+.lg-msg{margin:0 0 12px;min-height:1em}.lg-msg.ok{color:#86efac}.lg-msg.err{color:#fca5a5}
+.lg-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.motw{display:flex;gap:16px;align-items:center;margin:0 0 20px;padding:16px;border-radius:20px;border:1px solid rgba(139,108,255,.45);background:linear-gradient(135deg,rgba(139,108,255,.12),rgba(139,92,246,.12));color:inherit;text-decoration:none}
+.motw img{width:96px;height:96px;border-radius:16px;object-fit:cover;flex:none}
+.motw .k{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#4fd8ff}
+.motw h2{margin:2px 0 4px;font-size:20px}.motw p{margin:0;color:var(--muted);font-size:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.motw-wrap{max-width:1180px;margin:12px auto 0;padding:0 16px}
+#motw-slot{max-width:1100px;margin:12px auto 0;padding:0 24px;box-sizing:border-box}
+#motw-slot .motw{max-width:100%;box-sizing:border-box}
+@media(max-width:520px){#motw-slot{padding:0 14px}}
+@media (max-width:480px){.motw img{width:64px;height:64px}.motw h2{font-size:17px}}
+.motw-badge{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0 0;padding:8px 12px;border-radius:999px;border:1px solid rgba(139,108,255,.5);background:rgba(139,108,255,.1);color:#4fd8ff;font-weight:700;font-size:14px}
+.motw-badge button{border:0;background:none;color:#4fd8ff;text-decoration:underline;font:inherit;font-weight:600;cursor:pointer;padding:0}
+
+.lg-share{display:inline-flex;align-items:center;gap:8px;margin-top:8px;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(196,181,253,.45);background:rgba(255,255,255,.04);color:#fff;font:600 14px Inter,system-ui,sans-serif;cursor:pointer;white-space:nowrap}.lg-share:hover{background:rgba(139,92,246,.15);border-color:#a78bfa}
+
+.motw img.motw-official{width:auto;height:40px;border-radius:0;object-fit:contain;display:block;margin:0 0 6px}
+.motw-badge img{height:48px;width:auto}
+
+/* v6: CTA hidden by default (league page); premium home hero via .motw-home */
+.motw .motw-cta{display:none}
+.motw-home{max-width:1100px;margin:18px auto 0;padding:0 24px;box-sizing:border-box}
+.motw-home .motw{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:0;align-items:stretch;margin:0;padding:0;border-radius:20px;overflow:hidden;border:1px solid rgba(139,108,255,.6);background:linear-gradient(160deg,#120f22 0%,#0f1018 55%,#0c0e14 100%);box-shadow:0 0 0 1px rgba(79,216,255,.10) inset,0 18px 48px rgba(0,0,0,.45),0 0 36px rgba(139,108,255,.22);transition:transform .15s,box-shadow .2s,border-color .2s}
+.motw-home .motw:hover{transform:translateY(-1px);border-color:rgba(79,216,255,.8);box-shadow:0 0 0 1px rgba(79,216,255,.16) inset,0 22px 56px rgba(0,0,0,.5),0 0 48px rgba(79,216,255,.25)}
+.motw-home .motw>img{width:100%;height:100%;min-height:260px;max-height:340px;aspect-ratio:16/10;border-radius:0;object-fit:cover;object-position:center;background:#0c0e14}
+.motw-home .motw>span{display:flex;flex-direction:column;justify-content:center;padding:28px 30px;min-width:0}
+.motw-home .motw img.motw-official{height:46px;margin:0 0 14px}
+.motw-home .motw h2{font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.15;color:#fff;margin:0 0 8px;letter-spacing:-.01em}
+.motw-home .motw p{color:#c9cbd3;font-size:.95rem;line-height:1.5;-webkit-line-clamp:3;margin:0 0 20px}
+.motw-home .motw .motw-cta{display:inline-flex;align-self:flex-start;align-items:center;gap:6px;padding:11px 20px;border-radius:999px;background:linear-gradient(135deg,#8b6cff,#4fd8ff);color:#fff;font-weight:700;font-size:.9rem;box-shadow:0 6px 18px rgba(139,108,255,.35);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.motw-home .motw:hover .motw-cta{background:linear-gradient(135deg,#a48bff,#7ae3ff)}
+@media(max-width:760px){.motw-home .motw{grid-template-columns:1fr}.motw-home .motw>img{min-height:0;max-height:none;aspect-ratio:16/9;height:auto}.motw-home .motw>span{padding:20px 18px 22px}}
+@media(max-width:520px){.motw-home{padding:0 14px}.motw-home .motw .motw-cta{align-self:stretch;justify-content:center}}
+
+/* MOTW premium neon (purple/cyan) */
+.motw-home .motw{border:1px solid transparent;background:linear-gradient(160deg,rgba(24,18,48,.92),rgba(12,14,26,.94)) padding-box,linear-gradient(135deg,#8b6cff,#4fd8ff 55%,#8b6cff) border-box;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:24px;box-shadow:0 0 0 1px rgba(255,255,255,.04) inset,0 20px 50px rgba(0,0,0,.5),0 0 40px rgba(139,108,255,.28),0 0 80px rgba(79,216,255,.12)}
+.motw-home .motw::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:radial-gradient(60% 80% at 100% 0%,rgba(79,216,255,.18),transparent 60%),radial-gradient(50% 70% at 55% 100%,rgba(139,108,255,.22),transparent 65%),repeating-conic-gradient(from 200deg at 100% 0%,rgba(139,108,255,.07) 0 4deg,transparent 4deg 12deg)}
+.motw-home .motw>*{position:relative;z-index:1}
+.motw-home .motw:hover{border-color:transparent;box-shadow:0 0 0 1px rgba(255,255,255,.06) inset,0 24px 60px rgba(0,0,0,.55),0 0 56px rgba(139,108,255,.4),0 0 100px rgba(79,216,255,.2)}
+.motw-home .motw>img{-webkit-mask-image:linear-gradient(90deg,#000 80%,transparent);mask-image:linear-gradient(90deg,#000 80%,transparent)}
+.motw-home .motw img.motw-official{filter:drop-shadow(0 0 10px rgba(139,108,255,.65)) drop-shadow(0 0 18px rgba(79,216,255,.3))}
+.motw-home .motw .motw-cta{padding:12px 22px;border:1px solid rgba(255,255,255,.18);letter-spacing:.01em;box-shadow:0 0 0 1px rgba(79,216,255,.25),0 8px 24px rgba(139,108,255,.4),0 0 22px rgba(79,216,255,.25);transition:transform .15s,box-shadow .2s}
+.motw-home .motw:hover .motw-cta{transform:translateY(-1px);box-shadow:0 0 0 1px rgba(79,216,255,.4),0 10px 28px rgba(139,108,255,.5),0 0 30px rgba(79,216,255,.4)}
+@media(max-width:760px){.motw-home .motw>img{-webkit-mask-image:linear-gradient(180deg,#000 78%,transparent);mask-image:linear-gradient(180deg,#000 78%,transparent)}.motw-home .motw img.motw-official{height:40px;margin:-34px 0 12px}}
+
+/* MOTW media: cover + crown on the right */
+.motw-home .motw>.motw-media{position:relative;display:block;padding:0;min-width:0;overflow:hidden;background:#0c0e14}
+.motw-home .motw .motw-cover{display:block;width:100%;height:100%;min-height:260px;max-height:340px;aspect-ratio:16/10;object-fit:cover;object-position:left center;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+.motw-home .motw .motw-crown{position:absolute;top:50%;left:72%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:10px;width:40%;text-align:center;pointer-events:none}
+.motw-home .motw .motw-crown img{width:100%;max-width:210px;height:auto;filter:drop-shadow(0 0 12px rgba(139,108,255,.75)) drop-shadow(0 0 28px rgba(79,216,255,.4))}
+.motw-home .motw .motw-crown b{font-weight:800;font-size:clamp(1rem,2.3vw,1.55rem);line-height:1.12;letter-spacing:.09em;white-space:nowrap;text-transform:uppercase;background:linear-gradient(180deg,#fff,#c9d8ff 40%,#4fd8ff);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 6px rgba(139,108,255,.6))}
+@media(max-width:760px){.motw-home .motw .motw-cover{min-height:0;max-height:none;aspect-ratio:16/9;height:auto;-webkit-mask-image:linear-gradient(180deg,#000 85%,transparent);mask-image:linear-gradient(180deg,#000 85%,transparent)}.motw-home .motw .motw-crown{width:42%;left:73%;gap:7px}.motw-home .motw .motw-crown img{max-width:132px}.motw-home .motw .motw-crown b{font-size:clamp(.88rem,4.2vw,1.15rem)}}
+
+/* League page featured card (#motwSlot). Homepage spotlight uses #motw-slot / .motw-home and is unchanged.
+   These selectors override the older inline .motw-card rules on the live league page. */
+#motwSlot .motw-card {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  column-gap: 14px;
+  row-gap: 10px;
+  align-items: center;
+  margin: 0;
+  padding: 14px 14px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(139, 108, 255, 0.55);
+  background: linear-gradient(165deg, rgba(28, 22, 58, 0.96) 0%, rgba(12, 14, 24, 0.94) 100%);
+  box-shadow:
+    0 0 0 1px rgba(79, 216, 255, 0.12) inset,
+    0 14px 36px rgba(0, 0, 0, 0.35),
+    0 0 28px rgba(139, 108, 255, 0.16);
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+#motwSlot .motw-card::after {
+  content: none;
+  animation: none;
+}
+#motwSlot .motw-official {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  height: 30px;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  display: block;
+  object-fit: contain;
+  object-position: left center;
+  justify-self: start;
+  border-radius: 0;
+  box-shadow: none;
+}
+#motwSlot .motw-img {
+  grid-column: 1;
+  grid-row: 2;
+  width: 76px;
+  height: 76px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+  background: #0c0e14;
+  border: 1px solid rgba(79, 216, 255, 0.45);
+  box-shadow: 0 0 0 1px rgba(139, 108, 255, 0.28), 0 0 16px rgba(79, 216, 255, 0.16);
+  align-self: center;
+}
+#motwSlot .motw-img.is-mark-left {
+  object-position: left center;
+}
+#motwSlot .motw-content {
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+  align-self: center;
+}
+#motwSlot .motw-name {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#motwSlot .motw-by,
+#motwSlot .motw-week,
+#motwSlot .motw-pitch {
+  margin: 0;
+  color: var(--text-muted, #a8acb5);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+#motwSlot .motw-by { margin-top: 4px; }
+#motwSlot .motw-by strong { font-weight: 600; color: #e6e8ec; }
+#motwSlot .motw-week { margin-top: 1px; color: #b7c4d6; }
+#motwSlot .motw-pitch {
+  margin-top: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#motwSlot .motw-card:focus-visible {
+  outline: 2px solid #4fd8ff;
+  outline-offset: 3px;
+}
+@media (hover: hover) {
+  #motwSlot .motw-card:hover {
+    transform: translateY(-1px);
+    border-color: rgba(79, 216, 255, 0.85);
+    box-shadow:
+      0 0 0 1px rgba(79, 216, 255, 0.2) inset,
+      0 16px 40px rgba(0, 0, 0, 0.42),
+      0 0 36px rgba(79, 216, 255, 0.18);
+  }
+}
+@media (min-width: 720px) {
+  #motwSlot .motw-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    column-gap: 18px;
+    row-gap: 12px;
+    padding: 16px 20px 18px;
+  }
+  #motwSlot .motw-img { width: 88px; height: 88px; border-radius: 18px; }
+  #motwSlot .motw-official { height: 34px; }
+  #motwSlot .motw-name { font-size: 1.35rem; }
+  #motwSlot .motw-by,
+  #motwSlot .motw-week,
+  #motwSlot .motw-pitch { font-size: 0.9rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #motwSlot .motw-card { transition: none; }
+}

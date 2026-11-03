@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-03T06:31:59.463Z",
+  "updated": "2026-11-03T14:36:48.819Z",
   "articles": [
     {
-      "url": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
-      "title": "North Korea denies being behind record $6.3bn Binance hack",
-      "seendate": "20261103T062229Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/live/2026/nov/03/rba-interest-rates-meeting-today-latest-news-australia-reserve-bank-cash-rate-announcement-decision-live-updates",
-      "title": "RBA interest rates live updates: Reserve Bank of Australia announces cash rate hike to 4.85% after meeting today – latest news",
-      "seendate": "20261103T062107Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/03/rba-interest-rates-decision-cash-rate-november-reserve-bank-australia",
-      "title": "RBA interest rates: Bullock says ‘some pain now’ will prevent worse pain later as Reserve Bank hikes rates for fifth time",
-      "seendate": "20261103T061408Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/03/kate-mcclymont-evidence-alan-jones-trial-ntwnfb",
-      "title": "Judge pauses Alan Jones indecent assault trial so former broadcaster can watch Melbourne Cup",
-      "seendate": "20261103T060500Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/03/a-serious-failure-cps-prosecutor-cites-imaginary-case-to-high-court-after-ai-search",
-      "title": "‘A serious failure’: CPS prosecutor cites imaginary case to high court after AI search",
-      "seendate": "20261103T060040Z",
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/03/midterm-elections-live-updates-voting",
+      "title": "US midterm elections 2026 live: Americans go to the polls in referendum on Trump’s agenda",
+      "seendate": "20261103T142409Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/03/denmark-pushes-for-eu-ban-on-turbo-chickens-as-secret-footage-causes-outrage",
-      "title": "Denmark pushes for EU ban on ‘turbo chickens’ as secret footage causes outrage",
-      "seendate": "20261103T060039Z",
+      "url": "https://www.theguardian.com/world/2026/nov/03/four-planes-flying-across-europe-targeted-by-bomb-threats",
+      "title": "Four planes flying across Europe targeted by bomb threats",
+      "seendate": "20261103T142124Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Poland"
+    },
+    {
+      "url": "https://www.theguardian.com/politics/live/2026/nov/03/shabana-mahmood-migration-brexit-eu-labour-andy-burnham-kemi-badenoch-king-charles-commonwealth-uk-politics-latest-news",
+      "title": "King gives speech to Commonwealth leaders as Burnham opens slavery apology talks – UK politics live",
+      "seendate": "20261103T142043Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/03/lgbtq-catholic-public-preschool-supreme-court",
+      "title": "US supreme court to hear arguments in Catholic preschools’ LGBTQ+ exclusion case",
+      "seendate": "20261103T141752Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/environment/2026/nov/03/uk-ministers-anant-ambani-indian-zoo-vantara-freedom-information-endangered-animals-cites",
-      "title": "UK ministers told not to engage formally with Indian mega-zoo after lobbying",
-      "seendate": "20261103T060039Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Switzerland"
-    },
-    {
-      "url": "https://www.aljazeera.com/features/2026/11/3/how-a-harvard-dream-ended-in-tragedy-for-a-pakistani-family?traffic_source=rss",
-      "title": "How a Harvard dream ended in tragedy for a Pakistani family",
-      "seendate": "20261103T055129Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Pakistan"
-    },
-    {
-      "url": "https://www.theguardian.com/society/2026/nov/03/new-york-child-measles-death-first-in-30-years",
-      "title": "New York child dies from measles in state’s first fatal case in 30 years",
-      "seendate": "20261103T054826Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/nov/03/hex-the-peacock-found-in-brisbane-bathroom",
-      "title": "Peacock found in couple’s Brisbane bathroom leads to creative bid to reunite bird with tattoo artist",
-      "seendate": "20261103T053230Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/3/going-hungry-garment-workers-in-bangladesh-say-wages-barely-cover-needs?traffic_source=rss",
-      "title": "‘Going hungry’: Garment workers in Bangladesh say wages barely cover needs",
-      "seendate": "20261103T052756Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Bangladesh"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/3/californias-bay-area-debates-data-centres-ahead-of-us-midterm-elections?traffic_source=rss",
-      "title": "California’s Bay Area debates data centres ahead of US midterm elections",
-      "seendate": "20261103T051342Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/texas-senate-candidates-paxton-and-talarico-make-final-appeals?traffic_source=rss",
-      "title": "Texas Senate candidates Paxton and Talarico make final appeals",
-      "seendate": "20261103T051240Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/3/israeli-forces-kill-four-in-gaza-as-fifth-palestinian-dies-of-wounds?traffic_source=rss",
-      "title": "Israeli forces kill four in Gaza as fifth Palestinian dies of wounds",
-      "seendate": "20261103T050234Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/3/what-time-do-polls-open-and-close-in-the-us-midterm-elections-2026?traffic_source=rss",
-      "title": "What time do polls open and close in the US midterm elections 2026?",
-      "seendate": "20261103T045208Z",
+      "url": "https://www.aljazeera.com/news/2026/11/3/very-cold-war-whos-attacking-europes-supermarket-freezers?traffic_source=rss",
+      "title": "Very cold war: Who’s attacking Europe’s supermarket freezers?",
+      "seendate": "20261103T141729Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/3/uk-to-double-wait-for-permanent-residency-with-exemptions-for-care-workers?traffic_source=rss",
-      "title": "UK to double wait for permanent residency, with exemptions for care workers",
-      "seendate": "20261103T044845Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/3/us-midterms-present-a-test-for-republican-redistricting-in-texas-and-beyond?traffic_source=rss",
-      "title": "US midterms present a test for Republican redistricting in Texas and beyond",
-      "seendate": "20261103T043959Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/03/powerful-political-lobbyists-access-to-parliament-australia",
-      "title": "MPs granting powerful political lobbyists unfettered access to Australia’s parliament, data reveals",
-      "seendate": "20261103T043741Z",
+      "url": "https://www.theguardian.com/world/live/2026/nov/03/zelenskyy-berlin-merz-europe-sweden-spain-france-belgium-poland-latest-news",
+      "title": "Four separate flights from London, Copenhagen, Manchester and Israel affected by bomb threats – Europe live",
+      "seendate": "20261103T141225Z",
       "domain": "theguardian.com",
-      "sourcecountry": "Australia"
+      "sourcecountry": "Poland"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/3/israeli-forces-arrest-al-jazeera-journalist-in-raid-on-his-west-bank-home?traffic_source=rss",
-      "title": "Israeli forces arrest Al Jazeera journalist in occupied West Bank raid",
-      "seendate": "20261103T042516Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/3/el-sayed-rogers-hold-dueling-rallies-as-bitter-campaign-comes-to-a-close?traffic_source=rss",
-      "title": "El-Sayed, Rogers hold dueling rallies as bitter campaign comes to a close",
-      "seendate": "20261103T041508Z",
+      "url": "https://www.aljazeera.com/sports/2026/11/3/who-is-goalkeeper-jesus-owono-and-will-he-be-punished-after-miguels-death?traffic_source=rss",
+      "title": "Who is goalkeeper Jesus Owono and will he be punished after Miguel’s death?",
+      "seendate": "20261103T140200Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/israeli-soldiers-arrest-al-jazeera-journalist-in-hebron-raids?traffic_source=rss",
-      "title": "Israeli soldiers arrest Al Jazeera journalist in Hebron raids",
-      "seendate": "20261103T035309Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
-      "title": "US strikes Iran ahead of midterm elections",
-      "seendate": "20261103T033908Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm5ynekkn5qko?at_medium=RSS&at_campaign=rss",
-      "title": "Supreme Court rejects Trump's request to stop California counting disputed votes",
-      "seendate": "20261103T033236Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwly3jd27m9xo?at_medium=RSS&at_campaign=rss",
-      "title": "Man and boy arrested after allegedly attacking One Nation volunteer with bat",
-      "seendate": "20261103T033016Z",
-      "domain": "bbc.co.uk",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/04/cpsu-public-servants-union-refuses-to-back-labor-at-victorian-election",
+      "title": "Public service union refuses to back Labor at Victorian election, condemning job cuts and $1.2bn consultant spend",
+      "seendate": "20261103T140046Z",
+      "domain": "theguardian.com",
       "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/02/democrats-haley-stevens-mike-rogers-abdul-el-sayed-michigan-midterms-trump-rallies-latest-news-updates",
-      "title": "Trump loses supreme court bid to set aside 20,000 California ballots as justices refuse to take up emergency request – as it happened",
-      "seendate": "20261103T032451Z",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/04/snowy-hydro-20-executives-awarded-bonuses-totalling-751925-despite-cost-blowout",
+      "title": "Snowy Hydro 2.0 executives awarded bonuses totalling $751,925 despite cost blowout",
+      "seendate": "20261103T140044Z",
       "domain": "theguardian.com",
-      "sourcecountry": "United States"
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwy8lm1m59mvo?at_medium=RSS&at_campaign=rss",
+      "title": "Europe on alert after supermarket freezers hit by cyber-attacks in 10 countries",
+      "seendate": "20261103T135547Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Italy"
     },
     {
       "url": "https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island",
-      "title": "US reportedly strikes Iran’s Qeshm Island as Vance voices optimism about a deal",
-      "seendate": "20261103T031836Z",
+      "title": "US strikes Iran’s Qeshm Island as Vance voices optimism about a deal",
+      "seendate": "20261103T135234Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/02/tennessee-shooting-tyrin-johnson-video",
-      "title": "Tennessee national guard trained guns on dying man after guard member shot him, video shows",
-      "seendate": "20261103T031306Z",
+      "url": "https://www.bbc.co.uk/news/articles/cm9wz01dx8xro?at_medium=RSS&at_campaign=rss",
+      "title": "Jet may have broken apart before Florida crash, officials say, as family named among victims",
+      "seendate": "20261103T134444Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/education/2026/nov/03/harvard-trump-lawsuit-dismissed-admissions-data",
+      "title": "Federal judge dismisses Trump lawsuit seeking Harvard admissions data",
+      "seendate": "20261103T134208Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/3/trump-announces-that-us-will-stop-paying-israel-after-year-end?traffic_source=rss",
+      "title": "Trump says that US will stop paying Israel aid after year-end",
+      "seendate": "20261103T134205Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/03/car-finance-barclays-bank-offer-payouts-loans",
+      "title": "Car finance: Barclays becomes first big lender to offer payouts for mis-selling of loans",
+      "seendate": "20261103T133410Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
       "title": "Trump to remove Rwanda and South Africa from US trade deal",
-      "seendate": "20261103T030036Z",
+      "seendate": "20261103T132830Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "South Africa"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/3/us-urges-venezuela-to-follow-phased-plan-for-democratic-transition?traffic_source=rss",
-      "title": "US urges Venezuela to follow phased plan for democratic transition",
-      "seendate": "20261103T022751Z",
+      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+      "title": "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
+      "seendate": "20261103T132619Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/3/iran-commander-sets-out-five-conditions-for-regional-security?traffic_source=rss",
+      "title": "Iran commander sets out five conditions for regional security",
+      "seendate": "20261103T132157Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz?traffic_source=rss",
-      "title": "Explosions hit Iran’s Qeshm Island as US media report US strikes in Hormuz",
-      "seendate": "20261103T022502Z",
+      "url": "https://www.aljazeera.com/sports/2026/11/3/saudi-pro-league-postpones-matches-after-asian-cup-rescheduling?traffic_source=rss",
+      "title": "Saudi Pro League postpones matches after Asian Cup rescheduling",
+      "seendate": "20261103T131452Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/thousands-displaced-as-homes-are-bulldozed-in-indias-assam-state?traffic_source=rss",
-      "title": "Thousands displaced as homes are bulldozed in India’s Assam state",
-      "seendate": "20261103T021539Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "India"
+      "url": "https://www.theguardian.com/us-news/2026/nov/03/iowa-satanic-temple-holiday-event-judge",
+      "title": "Judge orders Iowa to permit Satanic Temple holiday event at state capitol",
+      "seendate": "20261103T131446Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/3/us-lawmakers-ask-trump-administration-to-stop-deportation-of-afghans?traffic_source=rss",
-      "title": "US lawmakers ask Trump administration to stop deportation of Afghans",
-      "seendate": "20261103T021233Z",
+      "url": "https://www.theguardian.com/world/2026/nov/03/trump-iran-middle-east-china-gulf-hormuz-xi-jinping",
+      "title": "Trump’s troubles with Iran could open the door to China",
+      "seendate": "20261103T131350Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/new-bodycam-video-shows-aftermath-of-fatal-national-guard-shooting?traffic_source=rss",
+      "title": "New bodycam video shows aftermath of fatal National Guard shooting",
+      "seendate": "20261103T131338Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/qatar-remains-hopeful-the-us-and-iran-can-reach-a-deal?traffic_source=rss",
+      "title": "Qatar remains hopeful the US and Iran can reach a deal",
+      "seendate": "20261103T130539Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/nov/03/garden-climate-assessment-tool-drought-gardening",
+      "title": "New tool will help gardeners move away from thirsty English classics to drought-resistant plants",
+      "seendate": "20261103T130528Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/3/how-florida-governor-ron-desantis-will-shape-his-states-2026-midterm-race?traffic_source=rss",
+      "title": "How Florida Governor Ron DeSantis will shape his state’s 2026 midterm race",
+      "seendate": "20261103T130503Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+      "title": "Brazil publishes first global ‘roadmap’ for phasing out fossil fuels",
+      "seendate": "20261103T130007Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Brazil"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/03/medical-debt-healthcare",
+      "title": "Millions of Americans crippled by medical debt despite relief efforts",
+      "seendate": "20261103T130007Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/nov/03/big-rent-rises-passing-in-england-despite-renters-reform-act",
+      "title": "Rent rises of up to 88% still passing in England despite Renters’ Reform Act",
+      "seendate": "20261103T125944Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/film/2026/nov/03/andrew-scott-elsinore-shakespeare-bifas-british-independent-film-award-nominations",
+      "title": "Andrew Scott drama Elsinore leads British independent film award nominations",
+      "seendate": "20261103T124940Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/cyberattack-disrupts-supermarkets-across-europe?traffic_source=rss",
+      "title": "Cyberattack disrupts supermarkets across Europe",
+      "seendate": "20261103T123821Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/3/two-police-officers-protecting-polio-workers-in-pakistan-shot-dead?traffic_source=rss",
+      "title": "Two police officers protecting polio workers in Pakistan shot dead",
+      "seendate": "20261103T123303Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Pakistan"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
-      "title": "Russian bombing kills 26 people at Ukraine aid centre, Kyiv says",
-      "seendate": "20261103T015627Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/multiple-russian-strikes-kill-at-least-26-at-ukraine-aid-centre?traffic_source=rss",
-      "title": "Multiple Russian strikes kill at least 26 at Ukraine aid centre",
-      "seendate": "20261103T011757Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
       "url": "https://www.theguardian.com/world/2026/nov/03/russia-bombs-ukrainian-aid-centre-komyshuvakha",
-      "title": "Russian bombing of Ukrainian aid centre kills at least 26, Kyiv says",
-      "seendate": "20261103T011352Z",
+      "title": "Russia bombs humanitarian hub in Ukraine, killing at least 31 people",
+      "seendate": "20261103T122507Z",
       "domain": "theguardian.com",
       "sourcecountry": "Ukraine"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/trump-makes-final-midterms-pitch-at-lincoln-memorial-reflecting-pool?traffic_source=rss",
-      "title": "Trump makes final midterms pitch at Lincoln Memorial Reflecting Pool",
-      "seendate": "20261103T010116Z",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/al-jazeera-journalist-recounts-arrest-during-israeli-raid-on-his-home?traffic_source=rss",
+      "title": "Al Jazeera journalist recounts arrest during Israeli raid on his home",
+      "seendate": "20261103T121419Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
+      "sourcecountry": "Israel"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/3/ebola-outbreak-kills-more-than-5300-people-in-dr-congo?traffic_source=rss",
-      "title": "Ebola outbreak kills more than 5,300 people in DR Congo",
-      "seendate": "20261103T005038Z",
+      "url": "https://www.aljazeera.com/news/2026/11/3/disruptions-of-black-sea-grain-exports-spike-global-prices?traffic_source=rss",
+      "title": "Grain under fire: Russian, Ukrainian Black Sea attacks threaten food supply",
+      "seendate": "20261103T121047Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "Kenya"
+      "sourcecountry": "Ukraine"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/02/supreme-court-trump-california-ballots",
-      "title": "Supreme court rules against Trump over bid to force California to set aside ballots",
-      "seendate": "20261103T005037Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
+      "url": "https://www.bbc.co.uk/news/articles/cxg5jln586pno?at_medium=RSS&at_campaign=rss",
+      "title": "US urges Venezuela to release remaining political prisoners",
+      "seendate": "20261103T120920Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.bbc.co.uk/news/videos/cmvg9w5w2p1no?at_medium=RSS&at_campaign=rss",
-      "title": "Bollywood film star Ranbir Kapoor on AI, movies and fatherhood",
-      "seendate": "20261103T000913Z",
+      "url": "https://www.bbc.co.uk/news/articles/cmqlnx7z1549o?at_medium=RSS&at_campaign=rss",
+      "title": "Indian tourist killed after two helicopters collide near Everest base camp",
+      "seendate": "20261103T115108Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "India"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&at_campaign=rss",
-      "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
-      "seendate": "20261103T000814Z",
+      "url": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
+      "title": "US strikes Iranian island ahead of midterm elections",
+      "seendate": "20261103T113333Z",
       "domain": "bbc.co.uk",
-      "sourcecountry": "United States"
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/3/how-india-pulled-500-million-people-out-of-poverty-as-inequality-deepens?traffic_source=rss",
+      "title": "How India pulled 500 million people out of poverty as inequality deepens",
+      "seendate": "20261103T113034Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/3/polls-open-in-closely-contested-us-midterm-elections-2026?traffic_source=rss",
+      "title": "Polls open in closely contested US midterm elections 2026",
+      "seendate": "20261103T112714Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/alaska-senate-candidates-trade-accusations-ahead-of-election?traffic_source=rss",
+      "title": "Alaska Senate candidates trade accusations ahead of election",
+      "seendate": "20261103T110127Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
     }
   ]
 }

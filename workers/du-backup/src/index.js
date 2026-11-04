@@ -55,14 +55,27 @@ async function listAllKeys(kv, prefix) {
 }
 
 async function dumpCommunityKv(kv) {
-  const keys = await listAllKeys(kv, "");
+  // Binary media blobs (gimg:, video:) are too large to snapshot (blew past
+  // V8 string limits); record them as skipped instead of copying values.
+  const SKIP_PREFIXES = ["gimg:", "video:"];
+  const MAX_VALUE = 2_000_000;
+  const all = await listAllKeys(kv, "");
+  const keys = all.filter((n) => !SKIP_PREFIXES.some((p) => n.startsWith(p)));
+  const skipped = all.filter((n) => !keys.includes(n));
   const entries = {};
-  for (const name of keys) {
+  // Fetch in parallel batches; ~950 sequential gets exceeded request time.
+  const BATCH = 50;
+  for (let i = 0; i < keys.length; i += BATCH) {
+    const slice = keys.slice(i, i + BATCH);
     // Prefer text so we can re-put faithfully; JSON values stay as strings.
-    const raw = await kv.get(name, "text");
-    entries[name] = raw;
+    const vals = await Promise.all(slice.map((name) => kv.get(name, "text")));
+    slice.forEach((name, j) => {
+      const v = vals[j];
+      if (v && v.length > MAX_VALUE) skipped.push(name);
+      else entries[name] = v;
+    });
   }
-  return { keys: entries, keyCount: keys.length };
+  return { keys: entries, keyCount: Object.keys(entries).length, skipped };
 }
 
 async function gzipBase64(text) {
@@ -214,6 +227,7 @@ async function runBackup(env, { forceEmail = false } = {}) {
     source: "COMMUNITY_KV",
     keyCount: dump.keyCount,
     keys: dump.keys,
+    skippedKeys: dump.skipped,
   };
   const snapshot = await writeSnapshot(env.COMMUNITY_BACKUP_KV, payload);
   const prune = await pruneSnapshots(env.COMMUNITY_BACKUP_KV);

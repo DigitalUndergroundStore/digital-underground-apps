@@ -3,3 +3,12 @@ secrets/
 .dev.vars
 .wrangler/
 dist/
+
+# Audit 2026-11-04
+dev.log
+*.log
+backups/
+.env
+.env.*
+.dev.vars*
+node_modules/

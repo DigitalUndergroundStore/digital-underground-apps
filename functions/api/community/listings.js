@@ -1,4 +1,5 @@
 import { orderListings, ROTATE_MS } from "../../_lib/order.js";
+import { edgeCached } from "../../_lib/edgecache.js";
 import {
   getKv,
   kvGetIndex,
@@ -10,6 +11,14 @@ import {
 import { hiddenByReports } from "../../_lib/reports.js";
 
 export async function onRequest(context) {
+  if (context.request.method === "GET") {
+    const origin = new URL(context.request.url).origin;
+    return edgeCached(context, origin + "/__du_cache/listings-v1", 60, 300, () => listingsUncached(context));
+  }
+  return listingsUncached(context);
+}
+
+async function listingsUncached(context) {
   const { request, env } = context;
   if (request.method === "OPTIONS") {
     return new Response(null, { status: 204 });

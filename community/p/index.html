@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../community.css">
 <link rel="stylesheet" href="detail.css?v=4">
 <script src="/community/track.js"></script>
+<script src="/community/share-track.js"></script>
 </head>
 <body class="dt">
 <div class="wrap">
@@ -53,6 +54,7 @@
     out.removeAttribute("aria-busy");
     if (!d || !d.listing) { out.innerHTML = '<div class="notfound"><h1>This listing isn\'t available</h1><p>It may have been unpublished or is still in review.</p><a class="btn2 primary" style="flex:none" href="/community/">Browse the marketplace</a></div>'; return; }
     var l = d.listing, href = esc(l.visitUrl || l.projectUrl), price = esc(l.priceLabel || "See site");
+    window.__DU_LID = l.id;
     document.title = l.name + " — Developer Marketplace — Digital Underground";
     document.getElementById("crumb-name").textContent = l.name;
     var host = ""; try { host = new URL(l.projectUrl).hostname.replace(/^www\./, ""); } catch (_) {}
@@ -63,7 +65,7 @@
         '<header class="dt-head">' + (l.imageUrl ? '<img class="dt-logo" src="' + esc(l.imageUrl) + '" alt="" width="72" height="72">' : '<span class="dt-logo dt-ph" aria-hidden="true">' + esc((l.name || "?").charAt(0).toUpperCase()) + "</span>") + '<div style="min-width:0"><h1>' + esc(l.name) + '</h1><p class="dt-maker">by ' + esc(l.makerName) + x + "</p></div></header>" +
         '<p class="dt-pitch">' + esc(l.pitchShort) + "</p>" +
         '<div class="chips2"><span class="chip2 price">' + price + "</span>" + (l.category ? '<span class="chip2 cat">' + esc(CATS[l.category] || l.category) + "</span>" : "") + tags + "</div>" +
-        '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" aria-label="Share this listing">' + SHARE + "</button></div>" +
+        '<div class="dt-cta" id="cta"><a class="btn2 primary" data-out="' + esc(l.id) + '" href="' + href + '" target="_blank" rel="noopener">Visit website' + EXT + '</a><button type="button" class="btn2" id="share" data-du-share="listing" data-share="' + esc(l.id) + '" data-name="' + esc(l.name) + '" aria-label="Share this listing">' + SHARE + "</button></div>" +
         media(l) +
         '<section class="panel"><h2>About</h2><div class="prose">' + paras(l.descriptionLong || l.pitchShort) + "</div></section>" +
       '</div><aside class="side">' +

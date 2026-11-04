@@ -11,6 +11,7 @@ import {
   contactsToCsv,
 } from "./community.js";
 import { readStats, utcDay } from "./creator.js";
+import { readShareStats } from "./share-track.js";
 
 export const OWNER_COOKIE = "du_owner_sess";
 export const SESSION_DAYS = 30;
@@ -252,6 +253,13 @@ export async function buildOverview(kv, env) {
   }
 
   const backup = await fetchBackupMeta(env);
+  let shares;
+  try {
+    shares = await readShareStats(kv, 8);
+  } catch (e) {
+    console.error("share stats", e);
+    shares = await readShareStats(null, 8);
+  }
 
   return {
     pendingCount: pending.length,
@@ -269,7 +277,9 @@ export async function buildOverview(kv, env) {
       submissions: submissions7,
       contacts: contacts7,
       support: support7,
+      shares: shares.last7.total,
     },
+    shares,
     supportOpen: supportOpen.length,
     contactsTotal: contacts.length,
     listingsLive: (index.approved || []).length,

@@ -38,3 +38,16 @@
   document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") flush(); });
   window.addEventListener("pagehide", flush);
 })();
+/* Listing pages already load this file in production. Pull in share-click
+   tracking when the page did not get the script another way. */
+(function () {
+  function boot() {
+    if (window.__duShareWatch) return;
+    if (document.querySelector('script[src="/community/share-track.js"]')) return;
+    var s = document.createElement("script");
+    s.src = "/community/share-track.js";
+    document.head.appendChild(s);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+  else boot();
+})();

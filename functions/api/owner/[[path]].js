@@ -17,6 +17,7 @@ import {
   verifyOwnerPasscode,
 } from "../../_lib/owner.js";
 import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing } from "../../_lib/community.js";
+import { readShareStats } from "../../_lib/share-track.js";
 
 const BACKUP_BASE = "https://du-backup.digitalunderground-store.workers.dev";
 
@@ -215,7 +216,13 @@ export async function onRequest(context) {
         }
       }
     }
-    return json({ listings, chart });
+    let shares = null;
+    try {
+      shares = await readShareStats(kv, 40);
+    } catch (e) {
+      console.error("share stats", e);
+    }
+    return json({ listings, chart, shares });
   }
 
   if (head === "backups" && request.method === "GET") {

@@ -56,6 +56,7 @@
       var pending = out.d.pendingCount || 0;
       var support = out.d.supportOpen || 0;
       var backup = out.d.backup || {};
+      var sh = out.d.shares || {};
       $("home-sub").textContent =
         (out.d.listingsLive || 0) + " live listings · " + (out.d.contactsTotal || 0) + " contacts";
       $("home-cards").innerHTML =
@@ -63,6 +64,7 @@
         card("support", "Support inbox", support, support ? "Needs a reply" : "Inbox zero", support ? "badge" : "badge ok") +
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
         card("analytics", "Analytics", (w.views || 0), (w.clicks || 0) + " clicks · 7 days", "") +
+        card("analytics", "Shares", sh.total || 0, (sh.today || 0) + " today · " + ((sh.last7 && sh.last7.total) || w.shares || 0) + " in 7 days", "") +
         card("backups", "Backups", backup.lastSnapshot || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
         card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");
       $("home-today").innerHTML =
@@ -72,10 +74,55 @@
         '<div class="stat-row"><span>New submissions</span><span>' + (t.submissions || 0) + "</span></div>" +
         '<div class="stat-row"><span>New contacts</span><span>' + (t.contacts || 0) + "</span></div>" +
         '<div class="stat-row"><span>Support messages</span><span>' + (t.support || 0) + "</span></div>" +
+        '<div class="stat-row"><span>Shares</span><span>' + (sh.today || 0) + "</span></div>" +
+        shareBreakdown(sh) +
         '<p class="small" style="margin:10px 0 0">Last 7 days: ' +
         (w.views || 0) + " views · " + (w.clicks || 0) + " clicks · " +
-        (w.submissions || 0) + " submissions · " + (w.contacts || 0) + " contacts</p></div>";
+        (w.shares || 0) + " shares · " +
+        (w.submissions || 0) + " submissions · " + (w.contacts || 0) + " contacts</p></div>" +
+        shareRecent(sh.recent);
     });
+  }
+
+  function shareLabel(surface) {
+    if (surface === "listing") return "Listing";
+    if (surface === "league") return "League";
+    if (surface === "featured") return "Featured";
+    if (surface === "nav") return "Nav";
+    return "Other";
+  }
+
+  function shareBreakdown(sh) {
+    var by = (sh && sh.bySurface) || {};
+    return (
+      '<p class="small" style="margin:8px 0 0">All-time shares by surface: listing ' + (by.listing || 0) +
+      " · league " + (by.league || 0) +
+      " · featured " + (by.featured || 0) +
+      " · nav " + (by.nav || 0) +
+      " · other " + (by.other || 0) + "</p>"
+    );
+  }
+
+  function whenShare(t) {
+    try { return new Date(t).toLocaleString(); } catch (e) { return ""; }
+  }
+
+  function shareRecent(rows) {
+    rows = rows || [];
+    if (!rows.length) return '<p class="muted" style="margin-top:12px">No share clicks yet.</p>';
+    return (
+      '<h2 style="margin-top:18px">Recent shares</h2>' +
+      rows.map(function (ev) {
+        var what = ev.title || ev.path || "";
+        return (
+          '<div class="item"><strong>' + esc(shareLabel(ev.surface)) + "</strong>" +
+          '<div class="small">' + esc(whenShare(ev.t)) + "</div>" +
+          '<div class="small">' + esc(what) + (ev.id ? " · " + esc(ev.id) : "") + "</div>" +
+          (ev.title && ev.path ? '<div class="small">' + esc(ev.path) + "</div>" : "") +
+          "</div>"
+        );
+      }).join("")
+    );
   }
 
   function card(goTo, title, count, sub, badgeClass) {
@@ -191,6 +238,17 @@
   function loadAnalytics() {
     api("analytics").then(function (out) {
       if (!out.r.ok) { go("login"); return; }
+      var sh = out.d.shares || {};
+      var shareBox = $("share-block");
+      if (shareBox) {
+        shareBox.innerHTML =
+          '<div class="item"><strong>Share clicks</strong>' +
+          '<div class="stat-row"><span>All time</span><span>' + (sh.total || 0) + "</span></div>" +
+          '<div class="stat-row"><span>Today</span><span>' + (sh.today || 0) + "</span></div>" +
+          '<div class="stat-row"><span>Last 7 days</span><span>' + ((sh.last7 && sh.last7.total) || 0) + "</span></div>" +
+          shareBreakdown(sh) + "</div>" +
+          shareRecent(sh.recent);
+      }
       var chart = out.d.chart || [];
       var max = 1;
       chart.forEach(function (d) { if ((d.v || 0) > max) max = d.v; });

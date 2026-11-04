@@ -19,6 +19,7 @@ import {
   kvGetListing,
   kvPutListing,
   notifyMakerApproved,
+  sendMakerWelcome,
 } from "../../_lib/community.js";
 import {
   accountIdForLogin,
@@ -149,7 +150,19 @@ export async function onRequest(context) {
       if (listing.videoUrl) listing.videoApprovedUrl = listing.videoUrl;
       await saveListing(kv, listing);
       await linkListingToCreator(kv, listing, acct);
-      return json(createListingResponse(env, request, listing, acct, { token, created, existing: false }));
+      // Same welcome as public submit. Mail failure must not fail the create.
+      // existing:true returns above and does not send.
+      let makerEmail = { sent: false, reason: "not_attempted" };
+      try {
+        makerEmail = await sendMakerWelcome(env, kv, listing, request);
+      } catch (e) {
+        console.error("community maker welcome error", e);
+        makerEmail = { sent: false, error: "welcome_threw" };
+      }
+      return json({
+        ...createListingResponse(env, request, listing, acct, { token, created, existing: false }),
+        makerEmail,
+      });
     }
 
     const id = typeof body.id === "string" ? body.id.trim() : "";

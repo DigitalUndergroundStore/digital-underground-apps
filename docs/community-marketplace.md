@@ -74,7 +74,7 @@ curl -X POST https://digitalundergroundstore.com/api/community/admin \
 
 `action` may be `create_listing` or `create`. Incomplete bodies are rejected with the same errors as submit.
 
-The listing is saved **approved** (product page `/community/p/?id=…` is `productUrl`) and linked to that email’s creator account: the login account if one exists, otherwise the contact-linked account, otherwise a new passwordless account. No maker email is sent.
+The listing is saved **approved** (product page `/community/p/?id=…` is `productUrl`) and linked to that email’s creator account: the login account if one exists, otherwise the contact-linked account, otherwise a new passwordless account. A new listing sends the same maker welcome as public submit (`makerEmail` on the JSON response). Repeating the same email and project URL (`existing: true`) does not send again. A mail failure does not fail the create.
 
 Dashboard access:
 
@@ -93,7 +93,7 @@ Same email and a different project URL adds another listing on the same creator 
 
 Maker mail uses the same `sendCommunityEmail` path as owner alerts (Resend when `RESEND_API_KEY` is set, otherwise Mailchannels when `COMMUNITY_MAILCHANNELS=1`).
 
-- **Welcome** — after a listing is saved with status `pending` or `approved` and a valid `listing.email`. Auto-approve includes the live product URL in this message and does not send a second email. Rejected submissions are not welcomed.
+- **Welcome** — after a public submit or a new operator `create_listing` is saved with status `pending` or `approved` and a valid `listing.email`. Auto-approve includes the live product URL in this message and does not send a second email. Rejected submissions are not welcomed. An `existing: true` create does not send.
 - **You're live** — when status changes from `pending` to `approved` via the owner queue (`POST /api/owner/queue`), community admin approve, or the one-tap moderation link.
 - **Idempotency** — `welcomeEmailSentAt` and `liveEmailSentAt` on the listing. A failed send clears the flag it just claimed and does not fail the API.
 - **Owner notify** — unchanged. One email per submission to `COMMUNITY_NOTIFY_EMAIL`.

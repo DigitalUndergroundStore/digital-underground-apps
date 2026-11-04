@@ -184,4 +184,80 @@ const submitRes = await submit({
 const submitData = await submitRes.json();
 check("public submit still requires turnstile", submitRes.status === 400 && /security check/i.test(submitData.error || ""));
 
+env.RESEND_API_KEY = "test-key";
+const mailed = [];
+globalThis.fetch = async (url, init) => {
+  mailed.push({ url: String(url), body: JSON.parse(init.body) });
+  return { ok: true, status: 200, text: async () => "" };
+};
+const welcomed = await call({
+  action: "create_listing",
+  ...listingBody,
+  name: "Welcome App",
+  projectUrl: "https://example.com/welcome-app",
+  makerName: "Nia",
+  email: "nia@example.com",
+});
+check(
+  "new create sends welcome",
+  welcomed.res.status === 200 &&
+    welcomed.data.created === true &&
+    welcomed.data.existing === false &&
+    welcomed.data.makerEmail?.sent === true &&
+    mailed.length === 1
+);
+check(
+  "welcome uses community from",
+  mailed[0].body.to[0] === "nia@example.com" &&
+    mailed[0].body.from === "Digital Underground <notify@digitalundergroundstore.com>" &&
+    mailed[0].url === "https://api.resend.com/emails" &&
+    mailed[0].body.subject.startsWith("Welcome to Digital Underground")
+);
+const welcomedRow = await kvGetListing(kv, welcomed.data.id);
+check("welcome stamped on new listing", welcomedRow.welcomeEmailSentAt && welcomedRow.liveEmailSentAt);
+
+const welcomedAgain = await call({
+  action: "create_listing",
+  ...listingBody,
+  name: "Welcome App",
+  projectUrl: "https://example.com/welcome-app/",
+  makerName: "Nia",
+  email: "Nia@Example.com",
+});
+check(
+  "existing create does not email",
+  welcomedAgain.res.status === 200 &&
+    welcomedAgain.data.existing === true &&
+    welcomedAgain.data.created === false &&
+    welcomedAgain.data.id === welcomed.data.id &&
+    welcomedAgain.data.makerEmail == null &&
+    mailed.length === 1
+);
+
+globalThis.fetch = async () => {
+  throw new Error("resend down");
+};
+const broken = await call({
+  action: "create_listing",
+  ...listingBody,
+  name: "Broken Mail",
+  projectUrl: "https://example.com/broken-mail",
+  makerName: "Nia",
+  email: "nia@example.com",
+});
+const brokenRow = await kvGetListing(kv, broken.data.id);
+check(
+  "welcome failure still creates",
+  broken.res.status === 200 &&
+    broken.data.ok === true &&
+    broken.data.created === true &&
+    broken.data.makerEmail?.sent === false &&
+    broken.data.makerEmail?.error === "welcome_threw" &&
+    brokenRow &&
+    !brokenRow.welcomeEmailSentAt
+);
+
+globalThis.fetch = origFetch;
+delete env.RESEND_API_KEY;
+
 if (failed) process.exit(1);

@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-05T09:47:30.609Z",
+  "updated": "2026-11-05T17:57:15.593Z",
   "articles": [
     {
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/4/us-midterm-election-results-live-trump-reacts-as-more-results-awaited?update=5123773",
-      "title": "US midterm election results live : Trump blames Iran war after losses | US Midterm Elections 2026 News",
-      "seendate": "20261105T071500Z",
+      "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss",
+      "title": "Paraguay President Santiago Peña resigns after bank collapse",
+      "seendate": "20261105T174040Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Chile"
+    },
+    {
+      "url": "https://www.theguardian.com/world/live/2026/nov/05/aer-lingus-plane-bomb-threat-europe-latest-news-updates",
+      "title": "Multiple planes diverted as bomb threats to commercial flights reported across Europe – live",
+      "seendate": "20261105T173736Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Poland"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/05/meghan-sussex-thomas-markle-jr-philippines-child-sexual-abuse-inquiry",
+      "title": "Duchess of Sussex’s estranged half-brother ‘person of interest’ in child sexual abuse inquiry",
+      "seendate": "20261105T173727Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Philippines"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/05/bomb-threats-disrupt-flights-across-europe-and-renew-hybrid-warfare-fears",
+      "title": "Bomb threats disrupt at least 22 flights across Europe, raising hybrid war fears",
+      "seendate": "20261105T173256Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/05/nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses",
+      "title": "Nasdaq heading for worst day in 18 months as Wall Street sustains widespread losses",
+      "seendate": "20261105T173104Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/law/2026/nov/05/henry-nowak-killer-vickrum-digwa-should-have-had-longer-sentence-court-of-appeal-hears",
+      "title": "Henry Nowak’s killer has sentence extended by court of appeal",
+      "seendate": "20261105T172925Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/05/harmeet-dhillon-doj-resignation",
+      "title": "Harmeet Dhillon, controversial head of DoJ’s civil rights division, reportedly steps down",
+      "seendate": "20261105T172842Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race",
+      "title": "US elections 2026 live: Republicans blast their party’s midterms collapse, blaming Iran war and affordability crisis",
+      "seendate": "20261105T172336Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/04/uk-government-considers-smart-glasses-ban-over-secret-filming-concerns",
+      "title": "UK government considers smart glasses ban over secret filming concerns",
+      "seendate": "20261105T172151Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/05/protesters-france-march-strikes-education-cost-of-living",
+      "title": "Protesters join street demonstrations across France on day of strike action",
+      "seendate": "20261105T172145Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/nov/05/beware-cosmetic-surgery-tourism-packages-experts-advise",
+      "title": "Beware ‘sun, sea and surgery’ cosmetic tourism packages, experts advise",
+      "seendate": "20261105T171700Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Turkey"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jordanian-officer-killed-in-stabbing-attack-in-amman?traffic_source=rss",
+      "title": "Jordanian officer killed in stabbing attack in Amman",
+      "seendate": "20261105T170845Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/music/2026/nov/05/k-pop-group-newjeans-contract",
+      "title": "K-pop group NewJeans’s contract omitted rights to ‘sleep and free choice’ – report",
+      "seendate": "20261105T170829Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/economy/2026/11/5/paraguay-president-pena-resigns-in-wake-of-bank-collapse?traffic_source=rss",
+      "title": "Paraguay President Pena resigns in wake of bank collapse",
+      "seendate": "20261105T170819Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/culture/2026/nov/05/russell-brand-found-guilty-rape-sexual-assault",
+      "title": "Russell Brand found guilty of rape and sexual assault",
+      "seendate": "20261105T170315Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/05/washington-ballot-measure-trans-athlete-ban",
+      "title": "Washington state passes ballot measure banning trans girls from school sports",
+      "seendate": "20261105T170202Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/politics/live/2026/nov/05/uk-politics-latest-news-updates-andy-burnham-eu-brexit-labour",
+      "title": "Burnham says long-awaited 10-year plan may be delayed until January – as it happened",
+      "seendate": "20261105T170046Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/05/eu-seeks-firmer-pledge-from-uk-discounted-university-tuition-fees",
+      "title": "EU presses UK to guarantee discounted university tuition fees for European students",
+      "seendate": "20261105T165854Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/aje-onl-nf_us-election-deals-a-blow-to-warmongers-051126?traffic_source=rss",
+      "title": "Bishara: US election deals a blow to warmongers",
+      "seendate": "20261105T164853Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/gaza-holds-final-of-tournament-honouring-more-than-1000-slain-athletes?traffic_source=rss",
+      "title": "Gaza holds final of tournament honouring more than 1,000 slain athletes",
+      "seendate": "20261105T164634Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/05/leon-black-sues-congressman-robert-garcia-epstein",
+      "title": "Leon Black sues US congressman Robert Garcia for $7.5m over Epstein comments",
+      "seendate": "20261105T164408Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/politics/2026/nov/05/andy-burnham-recast-chagos-islands-deal-us-resistance",
+      "title": "Burnham wants to ‘recast’ Chagos Islands deal after US resistance",
+      "seendate": "20261105T161748Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/gallery/2026/11/5/photos-spain-mourns-jesus-de-miguel-who-died-after-on-pitch-collision?traffic_source=rss",
+      "title": "Photos: Spain mourns Jesus de Miguel, who died after on-pitch collision",
+      "seendate": "20261105T161237Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Spain"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/5/vance-eyes-2028-reset-as-republicans-mull-pivot-after-us-midterms-drubbing?traffic_source=rss",
+      "title": "Vance eyes 2028 reset, as Republicans mull pivot after US midterms drubbing",
+      "seendate": "20261105T161235Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/gallery/2026/11/5/photos-thousands-rally-in-france-over-rising-costs-and-economic-struggles?traffic_source=rss",
+      "title": "Photos: Thousands rally in France over rising costs and economic struggles",
+      "seendate": "20261105T160756Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/5/top-japan-fa-official-to-stand-against-infantino-for-fifa-presidency?traffic_source=rss",
+      "title": "Top Japan FA official to stand against Infantino for FIFA presidency",
+      "seendate": "20261105T155215Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Japan"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6vgx8q09gg4o?at_medium=RSS&at_campaign=rss",
+      "title": "Russell Brand is being investigated over two new rape complaints, police say",
+      "seendate": "20261105T154449Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&at_campaign=rss",
+      "title": "France holds new strikes and protests as unions demand immediate answers",
+      "seendate": "20261105T154315Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/5/why-has-cristiano-ronaldo-retired-from-international-football?traffic_source=rss",
+      "title": "Why has Cristiano Ronaldo retired from international football?",
+      "seendate": "20261105T151405Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jerusalem-daily-settler-pogroms-in-hebron?traffic_source=rss",
+      "title": "Jerusalem Daily: Settler pogroms in Hebron",
+      "seendate": "20261105T151042Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/5/ronaldo-in-records-international-milestones-from-the-football-icon?traffic_source=rss",
+      "title": "Ronaldo in records: International milestones from the football icon",
+      "seendate": "20261105T150931Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/5/why-guinea-bissau-halted-a-controversial-hepatitis-vaccine-trial-for-babies?traffic_source=rss",
+      "title": "Why Guinea-Bissau halted a controversial hepatitis vaccine trial for babies",
+      "seendate": "20261105T150135Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/opinions/2026/11/5/can-irans-new-supreme-leader-make-peace-from-behind-the-scenes?traffic_source=rss",
+      "title": "Can Iran’s new supreme leader make peace from behind the scenes?",
+      "seendate": "20261105T144546Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/5/russell-brand-found-guilty-of-rape-and-sexual-assault-by-uk-court?traffic_source=rss",
+      "title": "Russell Brand found guilty of rape and sexual assault by UK court",
+      "seendate": "20261105T144309Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/5/healthcare-not-bombs-how-gaza-shaped-adam-hamawys-path-to-us-congress?traffic_source=rss",
+      "title": "‘Healthcare not bombs’: How Gaza shaped Adam Hamawy’s path to US Congress",
+      "seendate": "20261105T143037Z",
       "domain": "aljazeera.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "http://www.asiabulletin.com/news/279412106/best-used-cars-in-delhi-for-daily-commuting",
-      "title": "Best Used Cars in Delhi for Daily Commuting",
-      "seendate": "20261105T071500Z",
-      "domain": "asiabulletin.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.fool.com/investing/2026/11/05/amazon-trades-at-a-fraction-of-costcos-valuation-i/",
-      "title": "Amazon Trades at a Fraction of Costco Valuation . Is the Discount Deserved ?",
-      "seendate": "20261105T071500Z",
-      "domain": "fool.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://thesun.ng/2027-oyinlola-declares-support-for-makinde-urges-tinubu-atiku-to-step-aside/",
-      "title": "2027 : Oyinlola declares support for Makinde , urges Tinubu , Atiku to step aside",
-      "seendate": "20261105T071500Z",
-      "domain": "thesun.ng",
-      "sourcecountry": ""
-    },
-    {
-      "url": "https://www.fox10phoenix.com/news/jetblue-sends-baggage-fees-soaring-2nd-hike-year",
-      "title": "JetBlue sends baggage fees soaring with 2nd hike of the year",
-      "seendate": "20261105T071500Z",
-      "domain": "fox10phoenix.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.mynbc5.com/article/2028-presidential-election-season-underway/74339778",
-      "title": "2028 election season begins as parties navigate midterm fallout",
-      "seendate": "20261105T071500Z",
-      "domain": "mynbc5.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.fox10phoenix.com/news/credit-card-delinquencies-rising-fastest-states-what-do-about-debt",
-      "title": "Credit card delinquencies are rising fastest in these states ; what to do about the debt",
-      "seendate": "20261105T071500Z",
-      "domain": "fox10phoenix.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://fox23.com/news/nation-world/trump-is-considering-firing-hegseth-after-devastating-gop-midterm-loss-report-ron-desantis-democrats-kentucky-florida",
-      "title": "Trump is considering firing Hegseth after devastating GOP midterm loss : report",
-      "seendate": "20261105T071500Z",
-      "domain": "fox23.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.wvik.org/npr-top-stories/2026-11-04/how-well-did-polls-predict-the-blue-wave",
-      "title": "How well did polls predict the blue wave ?",
-      "seendate": "20261105T071500Z",
-      "domain": "wvik.org",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.livemint.com/companies/news/google-cloud-ai-demand-short-term-deals-enterprises-11793847822510.html",
-      "title": "Client demand for shorter AI deals reshapes Google cloud market battle",
-      "seendate": "20261105T071500Z",
-      "domain": "livemint.com",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.dailygazette.com/leader_herald/ap/business/asian-shares-mostly-advance-following-us-midterms-though-kospi-falls-on-selling-of-chipmakers/article_49fd62b6-abc8-54bf-aee9-951a9fa82235.html",
-      "title": "Asian shares mostly advance following US midterms , though Kospi falls on selling of chipmakers",
-      "seendate": "20261105T071500Z",
-      "domain": "dailygazette.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.wapt.com/article/contractor-admits-passing-secret-information-ethiopia/74340372",
-      "title": "US contractor admits passing top - secret information to Ethiopia",
-      "seendate": "20261105T071500Z",
-      "domain": "wapt.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "http://www.bignewsnetwork.com/news/279412153/uttarakhand-cm-dhami-expresses-grief-over-uttarkashi-car-accident-prays-for-injured-person-recovery",
-      "title": "Uttarakhand CM Dhami expresses grief over Uttarkashi car accident , prays for injured person recovery",
-      "seendate": "20261105T071500Z",
-      "domain": "bignewsnetwork.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://nypost.com/2026/11/05/us-news/ted-cruz-calls-midterm-election-results-a-watergate-level-repudiation-of-the-gop-warns-americans-will-be-hurt-by-radical-dems/",
-      "title": "Ted Cruz calls midterm election results a  Watergate - level repudiation  of the GOP , warns  Americans will be hurt  by radical Dems",
-      "seendate": "20261105T071500Z",
-      "domain": "nypost.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.whiznews.com/a-dance-fitness-course-helps-raise-funds-for-a-cancer-survivor-program/",
-      "title": "A dance fitness course helps raise funds for a cancer survivor program - WHIZ",
-      "seendate": "20261104T013000Z",
-      "domain": "whiznews.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.northcoastjournal.com/news-2/news-blog/beware-the-red-mirage-if-california-republicans-have-an-election-night-lead/",
-      "title": "Beware the  Red Mirage  if California Republicans Have an Election Night Lead",
-      "seendate": "20261104T013000Z",
-      "domain": "northcoastjournal.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.whio.com/news/local/miami-county-voters-decide-tax-levy/LD7SSAN4SZACLB2F54WYLPDOQE/",
-      "title": "ELECTION 2026 : Miami County sees large voter turnout",
-      "seendate": "20261104T013000Z",
-      "domain": "whio.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://keyt.com/lifestyle/entertainment/cnn-style/2026/11/03/zohran-mamdani-has-the-most-famous-mustache-in-politics-for-now/",
-      "title": "Zohran Mamdani has the most famous mustache in politics for now",
-      "seendate": "20261104T013000Z",
-      "domain": "keyt.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.kber.com/2026/11/03/stuff-the-truck/",
-      "title": "Stuff The Truck",
-      "seendate": "20261104T013000Z",
-      "domain": "kber.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.wfsb.com/2026/11/03/technical-discussion-near-record-warmth-plus-an-end-dry-stretch/",
-      "title": "Technical Discussion : Record warmth , plus an end to the long dry stretch",
-      "seendate": "20261104T013000Z",
-      "domain": "wfsb.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.yardbarker.com/mlb/articles/brewers_pat_murphy_apologizes_for_viral_comment_about_yankees_after_winning_world_series/s1_13132_44512970",
-      "title": "Murphy apologizes for comment about Yankees after winning World Series",
-      "seendate": "20261104T013000Z",
-      "domain": "yardbarker.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.nytimes.com/live/2026/11/03/us/midterms-2026-election-day-trump/were-watching-several-areas-in-texas-as-polls-close-there",
-      "title": "Midterm Elections Live Updates : Ossoff Retains Georgia Senate Seat , as Polls Close in More Battlegrounds",
-      "seendate": "20261104T013000Z",
-      "domain": "nytimes.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.nbcnewyork.com/elections/georgia-senate-race-2026/6567183/",
-      "title": "Democratic Sen . Jon Ossoff cruises to re - election in Georgia",
-      "seendate": "20261104T013000Z",
-      "domain": "nbcnewyork.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.dailymail.com/news/article-16239907/Kate-Winslet-plans-rotting-Grade-II-listed-home.html",
-      "title": "Kate Winslet lodges plans for an upgrade at her £3 . 25million Grade II - listed waterfront home",
-      "seendate": "20261104T013000Z",
-      "domain": "dailymail.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.newscientist.com/article/2597125-feet-stiffening-socks-could-help-you-run-further-for-longer/",
-      "title": "Feet - stiffening socks could help you run further for longer",
-      "seendate": "20261104T013000Z",
-      "domain": "newscientist.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.dw.com/en/us-midterm-election-results-how-americans-voted-and-what-the-data-tells-us/a-79841886",
-      "title": "US midterms in charts : What the data tells us",
-      "seendate": "20261104T013000Z",
-      "domain": "dw.com",
-      "sourcecountry": "Germany"
-    },
-    {
-      "url": "https://www.thecorsaironline.com/corsair/2026/11/3/n7derynvpqjj9rmimfe11upp0h600b",
-      "title": "I was swallowed by a whale . The",
-      "seendate": "20261104T013000Z",
-      "domain": "thecorsaironline.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.wthitv.com:443/2026/11/03/cost-living-economy-unhappiness-with-trumps-job-performance-among-early-voting-takeaways/",
-      "title": "Cost of living , economy and unhappiness with Trump job performance among early voting takeaways",
-      "seendate": "20261104T013000Z",
-      "domain": "wthitv.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.dw.com/en/us-to-cut-nearly-4-billion-in-israel-military-aid-trump-says/a-79848860",
-      "title": "US to cut Israel military aid by end of year , Trump says",
-      "seendate": "20261104T013000Z",
-      "domain": "dw.com",
-      "sourcecountry": "Germany"
-    },
-    {
-      "url": "https://www.wxxinews.org/npr-news/2026-11-03/election-day-2026-photos-from-around-the-country",
-      "title": "Election Day 2026 : Photos from around the country",
-      "seendate": "20261104T013000Z",
-      "domain": "wxxinews.org",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://pqbnews.com/2026/11/03/union-of-b-c-municipalities-appoints-new-president-after-incumbent-loses-mayoral-race/",
-      "title": "Union of B . C . Municipalities appoints new president after incumbent loses mayoral race",
-      "seendate": "20261104T013000Z",
-      "domain": "pqbnews.com",
-      "sourcecountry": "Canada"
-    },
-    {
-      "url": "https://coastalcourier.com/news/baker-takes-commanding-lead-in-early-voting-for-1st-district-seat/",
-      "title": "Baker takes commanding lead in early voting for 1st District seat",
-      "seendate": "20261104T013000Z",
-      "domain": "coastalcourier.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.fool.com/earnings/takeaways/2026/11/03/hartford-insurance-group-3-key-takeaways-for-long-term-investors/?source=iedfolrf0000001",
-      "title": "Hartford Insurance Group : 3 Key Takeaways for Long - Term Investors",
-      "seendate": "20261104T013000Z",
-      "domain": "fool.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.irishnews.com/news/northern-ireland/almost-200000-people-in-northern-ireland-at-risk-of-needing-to-use-food-banks-charity-says-GDWYYG47M5CNVA5PLVRUSVOZTY/",
-      "title": "Almost 200 , 000 people in Northern Ireland at risk of needing to use food banks , charity says",
-      "seendate": "20261104T013000Z",
-      "domain": "irishnews.com",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckn9rwr2zzpvo?at_medium=RSS&at_campaign=rss",
+      "title": "A bitter end for Ronaldo - the icon who transformed Portugal",
+      "seendate": "20261105T142940Z",
+      "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.impartialreporter.com/news/national/26696552.swinney-backs-rules-people-limited-leave-remain-standing-election/",
-      "title": "Swinney backs rules on people with limited leave to remain standing for election",
-      "seendate": "20261104T013000Z",
-      "domain": "impartialreporter.com",
+      "url": "https://www.bbc.co.uk/news/videos/c9dr8713zjgyo?at_medium=RSS&at_campaign=rss",
+      "title": "Watch: How rapist Brand was never far from controversy",
+      "seendate": "20261105T142821Z",
+      "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.bostonherald.com/2026/11/03/obit-shaker-sister/",
-      "title": "Sister June Carpenter , one of the few remaining Shakers , dies in Maine . She was 88",
-      "seendate": "20261104T013000Z",
-      "domain": "bostonherald.com",
+      "url": "https://www.aljazeera.com/news/2026/11/5/could-the-us-midterms-further-isolate-israel-in-washington?traffic_source=rss",
+      "title": "Could the US midterms further isolate Israel in Washington?",
+      "seendate": "20261105T141925Z",
+      "domain": "aljazeera.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.bostonherald.com/2026/11/03/battenfeld-election-credibility-on-the-line-from-maine-to-alaska/",
-      "title": "Election credibility at stake , from Maine to Alaska",
-      "seendate": "20261104T013000Z",
-      "domain": "bostonherald.com",
-      "sourcecountry": "United States"
+      "url": "https://www.aljazeera.com/features/2026/11/5/burning-rubbish-chokes-besieged-yemeni-city-of-taiz?traffic_source=rss",
+      "title": "Burning rubbish chokes besieged Yemeni city of Taiz",
+      "seendate": "20261105T141734Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
     },
     {
-      "url": "http://europe.chinadaily.com.cn/a/202611/03/WS6ae9fd4ee4b06d4aa0566dae.html",
-      "title": "Li calls for open , inclusive , dynamic digital innovation",
-      "seendate": "20261104T013000Z",
-      "domain": "europe.chinadaily.com.cn",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.suncommercial.com/brazil_times/news/national/article_b0568233-6c47-5536-add2-cb46e860a7e7.html",
-      "title": "DOJ sends letters in Alaska spoiler candidate probe",
-      "seendate": "20261104T013000Z",
-      "domain": "suncommercial.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://cheknews.ca/possible-cougar-sighting-prompts-warning-in-central-saanich-1358701/",
-      "title": "Possible cougar sighting prompts warning in Central Saanich",
-      "seendate": "20261104T013000Z",
-      "domain": "cheknews.ca",
-      "sourcecountry": "Canada"
+      "url": "https://www.aljazeera.com/news/2026/11/5/joint-list-says-it-will-back-eisenkot-to-form-israels-next-government?traffic_source=rss",
+      "title": "Joint List says it will back Eisenkot to form Israel’s next government",
+      "seendate": "20261105T141552Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
     }
   ]
 }

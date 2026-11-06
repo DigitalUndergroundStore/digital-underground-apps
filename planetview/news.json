@@ -1,19 +1,215 @@
 {
-  "updated": "2026-11-06T19:16:20.303Z",
+  "updated": "2026-11-06T23:47:55.364Z",
   "articles": [
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump",
-      "title": "Stephen Miller to become Trump’s new White House chief of staff",
-      "seendate": "20261106T190558Z",
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/06/us-midterm-elections-2026-democrats-blue-wave-congress-latest-news-updates",
+      "title": "Democrats blast Trump’s decision to appoint Stephen Miller as chief of staff in wake of Republican midterm rout – live",
+      "seendate": "20261106T231452Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/the-listening-post/2026/11/6/how-trumps-unconvincing-narrative-on-iran-lost-him-the-us-midterms?traffic_source=rss",
+      "title": "How Trump’s unconvincing narrative on Iran lost him the US midterms",
+      "seendate": "20261106T230722Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/07/when-a-single-vowel-stands-in-the-path-to-victory-the-stakes-could-not-be-higher-for-these-spelling-bee-champions",
+      "title": "When a single vowel stands in the path to victory, the stakes could not be higher for these spelling bee champions",
+      "seendate": "20261106T230610Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/economy/2026/11/6/us-urges-china-to-honour-busan-trade-deal-commitments?traffic_source=rss",
+      "title": "US urges China to honour Busan trade deal commitments",
+      "seendate": "20261106T230037Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/06/susie-wiles-white-house-resignation",
+      "title": "Susie Wiles exits White House as Trump ousts another woman from key role",
+      "seendate": "20261106T223509Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/06/us-midterm-elections-2026-democrats-blue-wave-congress-latest-news-updates",
-      "title": "Trump promotes fierce ally Stephen Miller to White House chief of staff – live",
-      "seendate": "20261106T190506Z",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/06/thomas-markle-arrested",
+      "title": "Thomas Markle, Meghan’s father, charged in Florida in connection to child sexual abuse material",
+      "seendate": "20261106T220901Z",
       "domain": "theguardian.com",
       "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&at_campaign=rss",
+      "title": "Elon Musk appears to signal the end of the road for Cybertruck",
+      "seendate": "20261106T214950Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/06/cornell-faculty-declares-no-confidence-school-leaders",
+      "title": "Cornell faculty declares ‘no confidence’ in school leaders in fallout from alleged gang-rape",
+      "seendate": "20261106T214637Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/palestinian-couples-tie-the-knot-in-mass-wedding-in-gaza?traffic_source=rss",
+      "title": "Palestinian couples tie the knot in mass wedding in Gaza",
+      "seendate": "20261106T213730Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+      "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
+      "seendate": "20261106T212354Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/who-is-stephen-miller-trumps-new-white-house-chief-of-staff?traffic_source=rss",
+      "title": "Who is Stephen Miller, Trump’s new White House chief of staff?",
+      "seendate": "20261106T212257Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/06/ai-ceo-impersonation-theft",
+      "title": "Three men charged in US with using AI to impersonate CEOs and steal millions",
+      "seendate": "20261106T212049Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/06/democrats-renew-calls-for-datacenter-pauses",
+      "title": "Several Democrats renew calls for datacenter pauses after blue wave",
+      "seendate": "20261106T211446Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+      "title": "AI stocks climb after trillions wiped from market values",
+      "seendate": "20261106T210625Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/protesters-break-into-microsoft-data-centre-site-in-amsterdam?traffic_source=rss",
+      "title": "Protesters break into Microsoft data centre site in Amsterdam",
+      "seendate": "20261106T210440Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Netherlands"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/trump-promotes-stephen-miller-to-chief-of-staff-to-run-things?traffic_source=rss",
+      "title": "Trump promotes Stephen Miller to Chief of Staff ‘to run things well’",
+      "seendate": "20261106T204825Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/meghan-markles-father-arrested-in-us-over-alleged-child-sex-abuse-photos?traffic_source=rss",
+      "title": "Meghan Markle’s father arrested in US over alleged child sex abuse photos",
+      "seendate": "20261106T202807Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/6-11-sv-canaryislandsmigrantarrivalssurge-es?traffic_source=rss",
+      "title": "Migrants arrive in Spain’s Canary Islands after being rescued at sea",
+      "seendate": "20261106T202709Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Spain"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/pope-leo-arrives-in-uruguay-starting-12-day-latin-america-tour?traffic_source=rss",
+      "title": "Pope Leo arrives in Uruguay starting 12-day Latin America tour",
+      "seendate": "20261106T202222Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/how-street-medics-protect-french-protesters?traffic_source=rss",
+      "title": "How ‘Street Medics’ protect French protesters",
+      "seendate": "20261106T201732Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/06/stephen-miller-chief-of-staff-trump",
+      "title": "Stephen Miller, architect of Trump’s immigration crackdown, to become White House chief of staff",
+      "seendate": "20261106T200611Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/culture/2026/nov/06/russell-brand-barrister-ian-winter-reports-himself-bar-watchdog-confronting-sunday-times-journalist",
+      "title": "Russell Brand barrister reports himself to watchdog over clash with journalist",
+      "seendate": "20261106T195923Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/tanzanian-opposition-leader-jailed-in-politically-motivated-case?traffic_source=rss",
+      "title": "Tanzanian opposition leader jailed in ‘politically motivated’ case",
+      "seendate": "20261106T194246Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/why-is-britain-refusing-to-pay-slavery-reparations?traffic_source=rss",
+      "title": "Why is Britain refusing to pay slavery reparations?",
+      "seendate": "20261106T193433Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/film/2026/nov/06/sebastian-lelio-chilean-director-dies",
+      "title": "Sebastián Lelio, director of A Fantastic Woman and Gloria, dies aged 52",
+      "seendate": "20261106T192324Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Chile"
+    },
+    {
+      "url": "https://www.theguardian.com/culture/2026/nov/06/russell-brand-trial-other-women",
+      "title": "Russell Brand suspected to have attacked at least 10 other women",
+      "seendate": "20261106T192324Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/us-congress-flipped-061126?traffic_source=rss",
+      "title": "Could Trump’s veto stop the Democratic majority?",
+      "seendate": "20261106T191833Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/israel-closes-hebrons-ibrahimi-mosque-to-palestinians-for-jewish-holiday?traffic_source=rss",
+      "title": "Israel closes Hebron’s Ibrahimi Mosque to Palestinians for Jewish holiday",
+      "seendate": "20261106T191607Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/trump-says-making-adviser-stephen-miller-white-house-chief-of-staff?traffic_source=rss",
+      "title": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles",
+      "seendate": "20261106T190831Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/6/armed-men-kill-at-least-33-in-village-in-ebola-hit-eastern-drc?traffic_source=rss",
+      "title": "Armed men kill at least 33 in village in Ebola-hit eastern DRC",
+      "seendate": "20261106T190706Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
     },
     {
       "url": "https://www.theguardian.com/science/2026/nov/06/better-conversation-study-pink-noise",
@@ -23,18 +219,11 @@
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/06/prince-harry-others-appeal-daily-mail-phone-hacking-claim",
-      "title": "Prince Harry and others launch appeal after losing Daily Mail phone-hacking claim",
-      "seendate": "20261106T185904Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/06/mississippi-senate-race-vote-counting-lawyers",
-      "title": "Lawyers descend on Mississippi as vote counting continues in razor-thin Senate race",
-      "seendate": "20261106T185152Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/6/why-is-paraguay-facing-a-banking-and-political-crisis?traffic_source=rss",
+      "title": "Why is Paraguay facing a banking and political crisis?",
+      "seendate": "20261106T185408Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
     },
     {
       "url": "https://www.theguardian.com/world/2026/nov/06/activists-break-into-building-site-of-microsoft-datacentre-in-amsterdam",
@@ -79,20 +268,6 @@
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/culture/2026/nov/06/russell-brand-barrister-ian-winter-reports-himself-bar-watchdog-confronting-sunday-times-journalist",
-      "title": "Russell Brand barrister reports himself to watchdog over confrontation with journalist",
-      "seendate": "20261106T180414Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/fashion/2026/nov/06/prince-pope-autumn-2026-purple-hot-this-season",
-      "title": "Prince, the pope, and autumn 2026: purple is hot this season",
-      "seendate": "20261106T175137Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
       "url": "https://www.aljazeera.com/sports/2026/11/6/valencia-vs-real-madrid-la-liga-preview-team-news?traffic_source=rss",
       "title": "Valencia vs Real Madrid: La Liga – preview, team news, predictions",
       "seendate": "20261106T175013Z",
@@ -100,186 +275,11 @@
       "sourcecountry": "Spain"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/6/how-paraguays-ueno-collapse-is-only-its-latest-banking-crisis?traffic_source=rss",
-      "title": "How Paraguay’s Ueno collapse is only its latest banking crisis",
-      "seendate": "20261106T174222Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Chile"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/06/thomas-markle-arrested",
-      "title": "Thomas Markle, Meghan’s father, arrested in Florida on charges related to child sexual abuse material",
-      "seendate": "20261106T174151Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/06/trump-rightwing-supreme-court-justice",
-      "title": "Trump will be blocked from putting ‘rightwinger’ on supreme court, Schumer says",
-      "seendate": "20261106T174023Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/us-city-votes-to-divest-from-israel?traffic_source=rss",
-      "title": "US city votes to divest from Israel",
-      "seendate": "20261106T174013Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cw8rzzx46jd5o?at_medium=RSS&at_campaign=rss",
-      "title": "Nigerian court rules opposition candidate cannot stand in elections",
-      "seendate": "20261106T173555Z",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&at_campaign=rss",
+      "title": "Spain's rail authorities face European fraud probe after Urda rail disaster",
+      "seendate": "20261106T174402Z",
       "domain": "bbc.co.uk",
-      "sourcecountry": "Nigeria"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/06/further-bomb-threats-disrupt-flights-across-europe",
-      "title": "Further bomb threats disrupt at least another 18 flights across Europe",
-      "seendate": "20261106T171431Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
-      "title": "AI stocks climb after trillions wiped from market values",
-      "seendate": "20261106T170302Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/6/us-prosecutor-who-led-trump-backed-election-probe-exits-justice-department?traffic_source=rss",
-      "title": "US prosecutor who led Trump-backed election probe exits Justice Department",
-      "seendate": "20261106T170219Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/6/paraguay-resumes-pena-impeachment-proceedings-as-financial-crisis-deepens?traffic_source=rss",
-      "title": "Paraguay resumes Pena impeachment proceedings as financial crisis deepens",
-      "seendate": "20261106T165856Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cx8dzzy8n713o?at_medium=RSS&at_campaign=rss",
-      "title": "Dozens of Democrats eyeing 2028 presidential run, says former Obama aide",
-      "seendate": "20261106T165101Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/6/taiwan-to-close-representative-office-in-papua-new-guinea-blames-china?traffic_source=rss",
-      "title": "Taiwan to close representative office in Papua New Guinea, blames China",
-      "seendate": "20261106T164039Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.theguardian.com/world/live/2026/nov/06/high-alert-hoax-bomb-threats-france-air-lingus-belgium-pope-leo-europe-live",
-      "title": "Bomb threats against European flights ‘likely a coordinated campaign of disruption’, Ireland says – as it happened",
-      "seendate": "20261106T162617Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/jerusalem-daily-arab-parties-back-eisenkot-against-netanyahu?traffic_source=rss",
-      "title": "Jerusalem Daily: Arab parties back Eisenkot against Netanyahu",
-      "seendate": "20261106T162157Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo?at_medium=RSS&at_campaign=rss",
-      "title": "Four midterms takeaways for 2028 White House race",
-      "seendate": "20261106T161222Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/6/millions-fleeing-sudans-war-risk-losing-shelter-as-funds-run-low-un-warns?traffic_source=rss",
-      "title": "Millions fleeing Sudan’s war risk losing shelter as funds run low, UN warns",
-      "seendate": "20261106T161051Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/france-ukraine-postwar-military-drills?traffic_source=rss",
-      "title": "European troops prepare for possible post-ceasefire deployment to Ukraine",
-      "seendate": "20261106T160419Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
-      "title": "Global stocks fall amid ‘big worries over AI’ after Democrats’ midterms triumph",
-      "seendate": "20261106T154836Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/protesters-break-into-microsoft-ai-data-centre-site-in-amsterdam?traffic_source=rss",
-      "title": "Protesters break into Microsoft AI data centre site in Amsterdam",
-      "seendate": "20261106T154810Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Netherlands"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/11/6/clicky-ponting-handed-two-year-suspension-over-cricket-cheating-scandal?traffic_source=rss",
-      "title": "‘Clicky Ponting’ handed two-year suspension over cricket cheating scandal",
-      "seendate": "20261106T154448Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/6/why-is-denmark-separating-western-and-non-western-citizens?traffic_source=rss",
-      "title": "Why is Denmark separating ‘Western’ and ‘non-Western’ citizens?",
-      "seendate": "20261106T154243Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/republicans-redrew-this-texas-district-to-win-it-narrowly-worked?traffic_source=rss",
-      "title": "Republicans redrew this Texas district to win – it narrowly worked",
-      "seendate": "20261106T154217Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/6/musk-says-tesla-to-wind-down-polarising-cybertruck-production-as-sales-lag?traffic_source=rss",
-      "title": "Musk says Tesla to wind down polarising Cybertruck production as sales lag",
-      "seendate": "20261106T153557Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss",
-      "title": "Two dead after bus crashes in France, officials say",
-      "seendate": "20261106T153352Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss",
-      "title": "Judge blocks construction of Trump's massive arch after federal agency approval",
-      "seendate": "20261106T153042Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq62yy064vjpo?at_medium=RSS&at_campaign=rss",
-      "title": "New wave of bomb threats hit European airlines",
-      "seendate": "20261106T152535Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/6/new-bomb-threats-target-european-broadcasters-air-traffic?traffic_source=rss",
-      "title": "New bomb threats target European broadcasters, air traffic",
-      "seendate": "20261106T152454Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
+      "sourcecountry": "Spain"
     }
   ]
 }

@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-07T17:59:36.345Z",
+  "updated": "2026-11-07T21:43:43.539Z",
   "articles": [
     {
-      "url": "https://www.theguardian.com/world/live/2026/nov/07/krakow-shooting-poland-latest-news-updates",
-      "title": "Kraków shooting latest updates: six killed and more than a dozen injured, police say",
-      "seendate": "20261107T174145Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss",
-      "title": "Houthis report 25 killed in Yemen strikes",
-      "seendate": "20261107T173923Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
-      "title": "Six dead after gunman opens fire ‘at random’ in Kraków market square",
-      "seendate": "20261107T171723Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/lebanese-footballer-refuses-to-give-up-after-injuries-from-israeli-strike?traffic_source=rss",
-      "title": "Lebanese footballer refuses to give up after injuries from Israeli strike",
-      "seendate": "20261107T171650Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/jerusalem-daily-heavy-rains-flood-gaza?traffic_source=rss",
-      "title": "Jerusalem Daily: Heavy rains flood Gaza",
-      "seendate": "20261107T171129Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/society/2026/nov/07/nhs-birth-centre-maternity-unit-closures-england-womens-rights",
-      "title": "Rise in NHS birth centre closures ‘shocking’ denial of women’s rights, experts say",
-      "seendate": "20261107T170016Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/7/valencia-vs-real-madrid-live-la-liga?traffic_source=rss",
-      "title": "Valencia vs Real Madrid LIVE: La Liga",
-      "seendate": "20261107T170012Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cr20wvge32j3o?at_medium=RSS&at_campaign=rss",
-      "title": "Italian foreign minister says hackers leaked his personal data",
-      "seendate": "20261107T165006Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/07/sword-attack-gloucester-school-men-arrested-boy-injured",
-      "title": "Three teenagers arrested after 17-year-old injured in Gloucester sword attack",
-      "seendate": "20261107T164107Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/israel-builds-90km-network-of-military-roads-across-southern-lebanon?traffic_source=rss",
-      "title": "Israel builds 90km network of military roads across southern Lebanon",
-      "seendate": "20261107T163033Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/7/guatemalan-lawmaker-and-three-police-officers-killed-in-armed-attack?traffic_source=rss",
-      "title": "Guatemalan lawmaker and three police officers killed in armed attack",
-      "seendate": "20261107T161518Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/hundreds-march-in-pau-france-against-high-living-costs?traffic_source=rss",
-      "title": "Hundreds march in Pau, France against high living costs",
-      "seendate": "20261107T160911Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-clip-poland-krakow-shooting?traffic_source=rss",
-      "title": "Five killed and at least 10 injured in Krakow shooting",
-      "seendate": "20261107T160658Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
-      "title": "No clear winner after tight New Zealand general election",
-      "seendate": "20261107T155628Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "New Zealand"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage?traffic_source=rss",
-      "title": "Iran’s IRGC says building underground sites for weapons production, storage",
-      "seendate": "20261107T153458Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-sv-trump-stephen-miller-loyalty-pledge?traffic_source=rss",
-      "title": "Trump’s new chief of staff Stephen Miller says he ‘saved America’",
-      "seendate": "20261107T152911Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow?traffic_source=rss",
-      "title": "At least five people killed in shooting in Poland’s Krakow",
-      "seendate": "20261107T152255Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c9kgjj206nzpo?at_medium=RSS&at_campaign=rss",
-      "title": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC",
-      "seendate": "20261107T151935Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/07/stephen-miller-trump-loyalty",
-      "title": "Stephen Miller, Trump’s incoming chief of staff, pledges ‘total devotion’ to the president",
-      "seendate": "20261107T151511Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/07/national-trust-agm-barclays-environment-policies",
-      "title": "National Trust votes to seek banking partner more in tune with its environmental policies",
-      "seendate": "20261107T150659Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/nov/07/reform-nigel-farage-vetting-candidates-struggle",
-      "title": "Vetting candidates is a tricky process but Reform can’t seem to get it right",
-      "seendate": "20261107T150014Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/07/los-angeles-mayor-nithya-raman-progressives-dsa",
-      "title": "LA’s newer, bluer wave: Nithya Raman leads way as city’s progressives make their mark",
-      "seendate": "20261107T150014Z",
-      "domain": "theguardian.com",
+      "url": "https://www.breitbart.com/politics/2026/11/07/midterms-14-million-in-four-of-americas-largest-cities-will-now-live-under-socialist-mayoral-rule/",
+      "title": "Midterms : 14 Million in Four of America Largest Cities Will Now Live Under Socialist Mayoral Rule",
+      "seendate": "20261107T190000Z",
+      "domain": "breitbart.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/07/life-changing-parents-welcome-10m-uk-play-centre-for-disabled-children",
-      "title": "‘Life-changing’: parents welcome £10m UK play centre for disabled children",
-      "seendate": "20261107T150013Z",
-      "domain": "theguardian.com",
+      "url": "https://www.ilfordrecorder.co.uk/news/national/26708803.six-killed-least-15-injured-krakow-shooting/",
+      "title": "Six killed and at least 15 injured in Krakow shooting",
+      "seendate": "20261107T190000Z",
+      "domain": "ilfordrecorder.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/video/witness/2026/11/7/the-lions-by-the-river-tigris-restoring-mosuls-artefacts?traffic_source=rss",
-      "title": "The Lions by the River Tigris: Restoring Mosul’s artefacts",
-      "seendate": "20261107T143000Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/7/iraqs-fm-says-external-parties-using-iraqi-soil-to-attack-neighbours?traffic_source=rss",
-      "title": "Iraq’s FM says external parties using Iraqi soil to attack neighbours",
-      "seendate": "20261107T142448Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/new-zealands-prime-minister-says-election-is-too-close-to?traffic_source=rss",
-      "title": "New Zealand’s prime minister says election is ‘too close to call’",
-      "seendate": "20261107T140306Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "New Zealand"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/7/who-is-hakeem-jeffries-the-democrat-poised-to-become-house-speaker?traffic_source=rss",
-      "title": "Who is Hakeem Jeffries, the Democrat poised to become House speaker?",
-      "seendate": "20261107T135015Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/07/new-zealand-election-too-close-to-call-vote-count",
-      "title": "New Zealand faces weeks of uncertainty with election ‘too close to call’",
-      "seendate": "20261107T134818Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "New Zealand"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/7/radical-or-hero-france-debates-leftist-candidate-jean-luc-melenchon?traffic_source=rss",
-      "title": "‘Radical’ or ‘hero’?: France debates leftist candidate Jean-Luc Melenchon",
-      "seendate": "20261107T133546Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/7/they-started-bombing-us-with-drones-russian-attacks-unnerve-zaporizhzhia?traffic_source=rss",
-      "title": "‘They started bombing us with drones’: Russian attacks unnerve Zaporizhzhia",
-      "seendate": "20261107T132441Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/gaza-displacement-camps-collapse-under-rainwater?traffic_source=rss",
-      "title": "Gaza displacement camps collapse under rainwater",
-      "seendate": "20261107T131453Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/live/2026/nov/07/nz-general-election-2026-live-updates-results-new-zealand-polls",
-      "title": "New Zealand election coalition talks will likely take weeks – as it happened",
-      "seendate": "20261107T131222Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "New Zealand"
-    },
-    {
-      "url": "https://www.aljazeera.com/features/2026/11/7/buildings-damaged-in-israel-bombing-at-risk-of-collapse-as-rain-floods-gaza?traffic_source=rss",
-      "title": "Buildings damaged in Israeli bombings risk collapse as rain inundates Gaza",
-      "seendate": "20261107T130723Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/al-jazeera-tries-out-martial-art-wushu-at-youth-olympics?traffic_source=rss",
-      "title": "Al Jazeera tries out martial art wushu at Youth Olympics",
-      "seendate": "20261107T130650Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/heavy-rains-flood-displacement-camps-across-gaza?traffic_source=rss",
-      "title": "Heavy rains flood displacement camps across Gaza",
-      "seendate": "20261107T130451Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/07/blackout-water-shortage-kyiv-russia-strike-ukraine-energy-grid",
-      "title": "Blackouts and water shortages in Kyiv after Russia strikes Ukraine’s energy grid",
-      "seendate": "20261107T130303Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/07/trump-stephen-miller-midterms",
-      "title": "Trump’s elevation of Stephen Miller a middle finger to millions of voters",
-      "seendate": "20261107T130012Z",
-      "domain": "theguardian.com",
+      "url": "https://www.hometownsource.com/morrison_county_record/a-life-spent-serving-others/article_dc8457d3-5ae2-4f24-94f6-827531b8afe1.html",
+      "title": "A life spent serving others",
+      "seendate": "20261107T190000Z",
+      "domain": "hometownsource.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.theguardian.com/law/2026/nov/07/court-of-appeal-rules-kidnap-for-ransom-libya-exploitation-trafficking-victims-asylum-seeker-home-office",
-      "title": "Court rules against Home Office in asylum seeker kidnapping case",
-      "seendate": "20261107T130011Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "url": "https://www.dailymail.com/news/article-16274541/Trump-DOJ-extortionist-Democrats.html",
+      "title": "Trump demands probe into  extortionist  Democrats",
+      "seendate": "20261107T190000Z",
+      "domain": "dailymail.com",
+      "sourcecountry": "United States"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss",
-      "title": "Russian strikes wound nine and damage Ukraine's power network ahead of talks",
-      "seendate": "20261107T124936Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Arab Emirates"
+      "url": "https://www.breitbart.com/national-security/2026/11/06/turkish-parliament-approves-defense-pact-with-saudi-arabia-and-pakistan/",
+      "title": "Turkish Parliament Approves Defense Pact with Saudi Arabia and Pakistan",
+      "seendate": "20261107T190000Z",
+      "domain": "breitbart.com",
+      "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/7/pro-russian-hackers-leak-italian-foreign-ministers-data-on-dark-web?traffic_source=rss",
-      "title": "Pro-Russian hackers leak Italian foreign minister’s data on dark web",
-      "seendate": "20261107T122948Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Russia"
+      "url": "https://www.breitbart.com/politics/2026/11/07/poll-emmanuel-macron-the-least-popular-president-in-modern-french-history-at-just-13-per-cent-support/",
+      "title": "Poll : Macron the Least Popular President in Modern French History",
+      "seendate": "20261107T190000Z",
+      "domain": "breitbart.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/07/phibro-animal-pahc-q1-2027-earnings-call-transcript/?source=iedfolrf0000001",
+      "title": "Phibro Animal ( PAHC ) Q1 2027 Earnings Call Transcript",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/11/07/ai-stocks-are-falling-bitcoin-is-holding-ground/",
+      "title": "AI Stocks Are Falling ; Bitcoin Is Holding Ground . Here What Could Come Next .",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.ijpr.org/npr-news/2026-11-06/no-one-knows-how-many-ballots-are-outstanding-in-mississippis-senate-race",
+      "title": "No one knows how many ballots are outstanding in Mississippi Senate race",
+      "seendate": "20261107T190000Z",
+      "domain": "ijpr.org",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.wbko.com/2026/11/07/155-children-receive-free-dental-care-rupp-arena/",
+      "title": "155 children receive free dental care at Rupp Arena",
+      "seendate": "20261107T190000Z",
+      "domain": "wbko.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/07/lifetime-brands-lcut-q3-2026-earnings-call-transcript/?source=iedfolrf0000001",
+      "title": "Lifetime Brands ( LCUT ) Q3 2026 Earnings Call Transcript",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/07/healthcare-reit-ahr-q3-2026-earnings-call-transcript/?source=iedfolrf0000001",
+      "title": "Healthcare REIT ( AHR ) Q3 2026 Earnings Call Transcript",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/11/07/the-artificial-intelligence-ai-boom-is-far-from-over-here-are-4-potential-long-term-winners/",
+      "title": "The Artificial Intelligence ( AI ) Boom Is Far From Over . Here Are 4 Potential Long - Term Winners",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://wset.com/news/nation-world/6-killed-11-hurt-as-24-year-old-gunman-opens-fire-in-polish-city-of-krakow-police-poland-main-square-tourist-destination-shooting-shot-killed-murdered-murder-homicide-death-investigation-true-crime",
+      "title": "6 killed , 11 hurt as 24 - year - old gunman opens fire in Polish city of Krakow : police",
+      "seendate": "20261107T190000Z",
+      "domain": "wset.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/11/07/heres-how-many-shares-of-pepsico-youd-need-for-500/?source=iedfolrf0000001",
+      "title": "Here How Many Shares of PepsiCo Youd Need for $500 in Yearly Dividends",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://crooksandliars.com/2026/11/stephen-miller-credits-trump-americas-very",
+      "title": "Stephen Miller Credits Trump With America Very Existence",
+      "seendate": "20261107T190000Z",
+      "domain": "crooksandliars.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/11/07/micron-and-sandisk-lead-the-memory-market-1-stock/",
+      "title": "Micron and Sandisk Lead the Memory Market . 1 Stock Has Far Greater Upside .",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "http://www.coloradostar.com/news/279418523/tata-steel-reports-rs-5055-crore-net-profit-in-india-business-for-q2fy27",
+      "title": "Tata Steel reports Rs 5 , 055 crore net profit in India business for Q2FY27",
+      "seendate": "20261107T190000Z",
+      "domain": "coloradostar.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.mcall.com/2026/11/07/best-used-electric-suvs-edmunds/",
+      "title": "The four best used electric SUVs for under $25 , 000 , per Edmunds",
+      "seendate": "20261107T190000Z",
+      "domain": "mcall.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.montanaoutdoor.com/2026/11/what-montana-hunters-need-to-know-about-baiting-crackdowns-this-fall/",
+      "title": "What Montana Hunters Need to Know About Baiting Crackdowns This Fall",
+      "seendate": "20261107T190000Z",
+      "domain": "montanaoutdoor.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://eurweb.com/lil-jon-divorce-nicole-smith/",
+      "title": "Lil Jon Reveals Why He Divorced Nicole Smith",
+      "seendate": "20261107T190000Z",
+      "domain": "eurweb.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://home.nzcity.co.nz/news/article.aspx?id=457528",
+      "title": "The midterms were fantasy politics for Democrats . What now for Trump ? - 08 - Nov - 2026",
+      "seendate": "20261107T190000Z",
+      "domain": "home.nzcity.co.nz",
+      "sourcecountry": "New Zealand"
+    },
+    {
+      "url": "https://www.canberratimes.com.au/story/9387113/should-untrained-dogs-be-let-inside-shops-and-cafes/",
+      "title": "Should untrained dogs be let inside shops and cafes ?",
+      "seendate": "20261107T190000Z",
+      "domain": "canberratimes.com.au",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://english.aawsat.com/sports/5338701-formula-one-extends-sao-paulo-contract-2035",
+      "title": "Formula One Extends Sao Paulo Contract to 2035",
+      "seendate": "20261107T190000Z",
+      "domain": "english.aawsat.com",
+      "sourcecountry": "Syria"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/11/07/these-5-consumer-stocks-raised-their-dividends-in/",
+      "title": "These 5 Consumer Stocks Raised Their Dividends in 2026 . Here What $10 , 000 in Each Pays in 2027 .",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/07/orion-energy-oesx-q2-2027-earnings-call-transcript/?source=iedfolrf0000001",
+      "title": "Orion Energy ( OESX ) Q2 2027 Earnings Call Transcript",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/11/07/eli-lilly-just-raised-its-2026-revenue-forecast-by/?source=iedfolrf0000001",
+      "title": "Eli Lilly Just Raised Its 2026 Revenue Forecast by $5 . 5 Billion . Is the Stock Still a Buy ?",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "http://www.zimbabwestar.com/news/279415265/ai-sell-off-wipes-out-wall-street-post-election-rally-major-asian-markets-also-plunge-up-to-8",
+      "title": "AI sell - off wipes out Wall Street post - election rally ; major Asian markets also plunge up to 8 %",
+      "seendate": "20261107T190000Z",
+      "domain": "zimbabwestar.com",
+      "sourcecountry": "Zimbabwe"
+    },
+    {
+      "url": "https://www.makeuseof.com/why-microsoft-launches-october/",
+      "title": "Something big always happens to Microsoft in October , and there a reason why",
+      "seendate": "20261107T190000Z",
+      "domain": "makeuseof.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fox5dc.com/news/stephen-miller-gop-reaction-chief-staff",
+      "title": "House GOP erupts at Stephen Miller after his promotion :  Megalomaniac",
+      "seendate": "20261107T190000Z",
+      "domain": "fox5dc.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.ketv.com/article/ketv-2026-winter-guide/74349331",
+      "title": "KETV 2026 guide to winter festivities in Nebraska",
+      "seendate": "20261107T190000Z",
+      "domain": "ketv.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aol.com/articles/heres-maximum-social-security-benefit-180500000.html",
+      "title": "Here the Maximum Social Security Benefit for 2027 and How to Get It",
+      "seendate": "20261107T190000Z",
+      "domain": "aol.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.wbaltv.com/article/officials-condemn-planned-philadelphia-boycott-jewish-owned-businesses/74365124",
+      "title": "Officials condemn planned boycott of Jewish - owned businesses",
+      "seendate": "20261107T190000Z",
+      "domain": "wbaltv.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.yourtango.com/self/hobbies-fatigued-people-enjoy-when-cant-sit-still",
+      "title": "People Who Suffer From Mental Fatigue But Cant Sit Still Usually Fall In Love With 8 Hobbies",
+      "seendate": "20261107T190000Z",
+      "domain": "yourtango.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://isp.netscape.com:443/news/story/0001/20261107/ff7dc05482094fdd539d4d15b71fc4ae",
+      "title": "Nithya Raman to take charge in LA amid homeless crisis and political division",
+      "seendate": "20261107T190000Z",
+      "domain": "isp.netscape.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.fool.com/investing/2026/11/07/micron-and-sandisk-lead-the-memory-market-1-stock/?source=iedfolrf0000001",
+      "title": "Micron and Sandisk Lead the Memory Market . 1 Stock Has Far Greater Upside .",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.thezimbabwean.co/2026/11/mnangagwa-regime-should-learn-from-smith-what-nyika-inovakwa-nevene-vayo-really-means/",
+      "title": "Mnangagwa regime should learn from Smith what  nyika inovakwa nevene vayo  really means !",
+      "seendate": "20261107T190000Z",
+      "domain": "thezimbabwean.co",
+      "sourcecountry": "Zimbabwe"
+    },
+    {
+      "url": "https://www.fool.com/earnings/takeaways/2026/11/07/commvault-3-key-takeaways-for-long-term-investors/?source=iedfolrf0000001",
+      "title": "Commvault : 3 Key Takeaways for Long - Term Investors",
+      "seendate": "20261107T190000Z",
+      "domain": "fool.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://forcechange.com/680641/dont-appoint-alleged-war-crimes-financier-to-lead-united-nations/",
+      "title": "Dont Appoint Alleged War Crimes Financier to Lead United Nations",
+      "seendate": "20261107T190000Z",
+      "domain": "forcechange.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.yourtango.com/self/common-phrases-people-mastered-setting-boundaries-avoid-saying",
+      "title": "7 Common Phrases People Who Have Mastered Setting Boundaries Avoid Saying",
+      "seendate": "20261107T190000Z",
+      "domain": "yourtango.com",
+      "sourcecountry": "United States"
     }
   ]
 }

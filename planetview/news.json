@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-08T07:54:35.387Z",
+  "updated": "2026-11-08T15:00:12.209Z",
   "articles": [
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/08/scillonian-iii-ship-final-voyage-isles-of-scilly-penzance-cornwall",
+      "title": "‘The end of an era’: Scillonian III sets sail on final voyage from Isles of Scilly",
+      "seendate": "20261108T145659Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/08/two-police-officers-heroes-confronting-krakow-gunman-poland",
+      "title": "Two police officers hailed as heroes for confronting Kraków gunman",
+      "seendate": "20261108T144916Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Poland"
+    },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
       "title": "What we know so far after Krakow gun attack",
-      "seendate": "20261108T075233Z",
+      "seendate": "20261108T143252Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province?traffic_source=rss",
-      "title": "Saudi Arabia intercepts Houthi missiles targeting Riyadh, Eastern province",
-      "seendate": "20261108T074007Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/08/banana-producers-in-latin-america-want-better-pay-to-cope-with-effects-of-climate-crisis",
-      "title": "Banana producers in Latin America want better pay to cope with effects of climate crisis",
-      "seendate": "20261108T070034Z",
+      "url": "https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government",
+      "title": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
+      "seendate": "20261108T142614Z",
       "domain": "theguardian.com",
-      "sourcecountry": "Colombia"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/nov/08/trump-midterms-voters-mirror-world",
-      "title": "Trump’s shattered ‘mirror world’: American voters roundly reject president’s alternate reality",
-      "seendate": "20261108T070034Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/nov/08/turkish-nationals-uk-indefinite-leave-to-remain-home-office-windrush",
-      "title": "‘Windrush’ accusations over sharp rise in Turkish nationals facing removal from UK",
-      "seendate": "20261108T070033Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss",
-      "title": "Photos: Heavy rains leave tens of thousands without shelter in Gaza",
-      "seendate": "20261108T065524Z",
-      "domain": "aljazeera.com",
       "sourcecountry": "Israel"
     },
     {
-      "url": "https://www.aljazeera.com/opinions/2026/11/8/is-unconditional-support-for-israel-becoming-a-liability-for-republicans?traffic_source=rss",
-      "title": "Is unconditional support for Israel becoming a liability for Republicans?",
-      "seendate": "20261108T065214Z",
+      "url": "https://www.aljazeera.com/sports/2026/11/8/tearful-alex-eala-loses-hong-kong-open-final-to-claire-liu-in-straight-sets?traffic_source=rss",
+      "title": "Tearful Alex Eala loses Hong Kong Open final to Claire Liu in straight sets",
+      "seendate": "20261108T141917Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/opinions/2026/11/8/there-is-reason-to-hope-that-the-democrats-might-deliver-this-time?traffic_source=rss",
-      "title": "There is reason to hope that the Democrats might deliver this time",
-      "seendate": "20261108T063933Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
-      "title": "Six dead after gunman opens fire in Kraków market square, with three more victims found at suspect’s home",
-      "seendate": "20261108T060646Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.theguardian.com/news/ng-interactive/2026/nov/08/hot-fridges-a-fake-nuclear-alert-and-a-6bn-heist-are-we-in-the-foothills-of-a-hacking-epidemic",
-      "title": "Hot fridges, a fake nuclear alert and a $6bn heist: are we in the foothills of a hacking epidemic?",
-      "seendate": "20261108T060033Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/nov/08/earthshot-prize-venue-criticism-fossil-fuel-firm-reliance-industries-india-mumbai",
-      "title": "Environmentalists criticise choice of Earthshot prize venue owned by fossil fuel firm",
-      "seendate": "20261108T060033Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/nov/08/andy-burnham-social-media-traditional-media-scrutiny-at-risk",
-      "title": "Does Andy Burnham’s pivot from press to social media put scrutiny at risk?",
-      "seendate": "20261108T060032Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/haitians-cheer-el-salvadors-bukele-amid-gang-war?traffic_source=rss",
-      "title": "Haitians cheer El Salvador’s Bukele amid gang war",
-      "seendate": "20261108T050939Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/aje-onl-nf_plane-clips-truck-during-emergency-landing-florida-071126?traffic_source=rss",
-      "title": "Plane clips truck during emergency landing on busy Florida road",
-      "seendate": "20261108T045902Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/8/drone-attack-on-colombian-army-base-kills-three-soldiers-and-wounds-16?traffic_source=rss",
-      "title": "Drone attack on Colombian army base kills three soldiers and wounds 16",
-      "seendate": "20261108T045637Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss",
-      "title": "Earthquake hits central Japan, injuring more than 20 people",
-      "seendate": "20261108T042057Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Japan"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-      "title": "Houthis say at least 33 killed in Saudi air strike",
-      "seendate": "20261108T040312Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/8/trump-asks-ufc-chief-dana-white-to-be-white-house-press-secretary?traffic_source=rss",
-      "title": "Trump asks UFC chief Dana White to be White House press secretary",
-      "seendate": "20261108T031244Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/aje-onl-nf_egypt-sacks-winning-football-coach-after-scandal-071126?traffic_source=rss",
-      "title": "Egypt sacks winning football coach after wives’ scandal",
-      "seendate": "20261108T030428Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Egypt"
-    },
-    {
-      "url": "https://www.theguardian.com/global-development/2026/nov/08/uyghurs-thailand-china-forced-deportation",
-      "title": "Uyghurs facing deportation by Thailand say they will be ‘like slaves’ in China",
-      "seendate": "20261108T030028Z",
-      "domain": "theguardian.com",
       "sourcecountry": "China"
     },
     {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/08/australia-weather-cold-blast-springtime-snow-thredbo-perisher-hotham-victoria-tasmania-el-nino",
-      "title": "Cold blast brings springtime snow to alpine regions as temperatures plummet across Australia’s south-east",
-      "seendate": "20261108T023419Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "New Zealand"
+      "url": "https://www.aljazeera.com/news/2026/11/8/us-task-force-to-cut-off-irans-transport-of-advanced-weapons-what-we-know?traffic_source=rss",
+      "title": "US task force to cut off Iran’s transport of advanced weapons: What we know",
+      "seendate": "20261108T140619Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes?traffic_source=rss",
-      "title": "US launches task force to disrupt Iran’s land-based supply routes",
-      "seendate": "20261108T023404Z",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/spain-win-padel-world-cup-in-qatar-as-sports-popularity-soars-2?traffic_source=rss",
+      "title": "Spain win Padel World Cup in Qatar as sport’s popularity soars",
+      "seendate": "20261108T140235Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/8/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee-influx?traffic_source=rss",
-      "title": "Canary Islands’ El Hierro declares emergency amid migrant, refugee influx",
-      "seendate": "20261108T013755Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/07/new-zealand-election-too-close-to-call-vote-count",
-      "title": "NZ election 2026: New Zealand faces weeks of uncertainty with results ‘too close to call’",
-      "seendate": "20261108T010048Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "New Zealand"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/polish-pm-calls-deadly-krakow-shooting-an-act-of?traffic_source=rss",
-      "title": "Polish PM calls deadly Krakow shooting an act of ‘terrorism’",
-      "seendate": "20261108T005028Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Poland"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/08/victoria-barracks-sydney-and-melbourne-remain-in-public-hands-backtrack-defence-property-sale-albanese-marles",
-      "title": "Victoria Barracks in Sydney and Melbourne to remain in public hands after partial backtrack on defence property selloff",
-      "seendate": "20261108T001728Z",
+      "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+      "title": "Weakening AI copyright law will spell ‘disaster for creativity’, global music body warns Albanese",
+      "seendate": "20261108T140043Z",
       "domain": "theguardian.com",
       "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
-      "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
-      "seendate": "20261108T000056Z",
+      "url": "https://www.theguardian.com/politics/2026/nov/08/uk-zombie-brexit-border-inspection-posts-check-goods",
+      "title": "UK spent £100m on zombie Brexit border inspection posts",
+      "seendate": "20261108T133258Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/8/at-least-21-dead-as-small-boat-sinks-off-senegal?traffic_source=rss",
+      "title": "At least 21 dead as small boat sinks off Senegal",
+      "seendate": "20261108T133217Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.yorkpress.co.uk/news/national/26709150.pm-pays-tribute-shooting-krakow-british-citizen-died/",
-      "title": "PM pays tribute after shooting in Krakow in which British citizen died",
-      "seendate": "20261108T000000Z",
-      "domain": "yorkpress.co.uk",
+      "url": "https://www.aljazeera.com/news/2026/11/8/egypts-reopening-of-its-embassy-in-tripoli-signals-regional-shift-on-libya?traffic_source=rss",
+      "title": "Egypt’s reopening of its embassy in Tripoli signals regional shift on Libya",
+      "seendate": "20261108T132757Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Egypt"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/nov/08/cop31-climate-summit-deliver-progress-real-host-says",
+      "title": "Cop31 must deliver climate progress that people can see is real, host says",
+      "seendate": "20261108T132400Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Turkey"
+    },
+    {
+      "url": "https://www.theguardian.com/media/2026/nov/08/women-abuse-media-industry-lisa-nandy-russell-brand",
+      "title": "Women in media alleging abuse too often not protected, Lisa Nandy says",
+      "seendate": "20261108T131850Z",
+      "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://newsroomamerica.com/?before=120465",
-      "title": "newsroomamerica . com",
-      "seendate": "20261108T000000Z",
-      "domain": "newsroomamerica.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.kiro7.com/news/local/mukilteo-school-district-athletics-director-charged-with-rape-molestation-child-2013/IEZMGUEQSRDTXPIW4UXE7F2AMQ/",
-      "title": "Mukilteo athletics director charged with felony sexual abuse",
-      "seendate": "20261108T000000Z",
-      "domain": "kiro7.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://cbs2iowa.com/news/nation-world/2026-11-06-sc-congressional-race-2-state-house-races-headed-to-recounts-after-close-election-results-us-rep-joe-wilson-democrat-zyon-khalifa-politics-voting",
-      "title": "SC congressional race , 2 State House races headed to recounts after close election results",
-      "seendate": "20261108T000000Z",
-      "domain": "cbs2iowa.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://english.news.cn/asiapacific/20261108/e4cd62c3d75d40fab75c0a38c3977453/c.html",
-      "title": "5 . 7 - magnitude earthquake hits Japan Shizuoka Prefecture : JMA - Xinhua",
-      "seendate": "20261108T000000Z",
-      "domain": "english.news.cn",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/cctv-captures-streets-shaking-as-5-7-magnitude-earthquake-hits-japan?traffic_source=rss",
+      "title": "CCTV captures streets shaking as 5.7-magnitude earthquake hits Japan",
+      "seendate": "20261108T131141Z",
+      "domain": "aljazeera.com",
       "sourcecountry": "Japan"
     },
     {
-      "url": "https://english.news.cn/20261108/0095f6f938404c91acdf6b7cb92ef830/c.html",
-      "title": "World Insights : Europe faces growing backlash against data centers amid resource concerns - Xinhua",
-      "seendate": "20261108T000000Z",
-      "domain": "english.news.cn",
-      "sourcecountry": ""
+      "url": "https://www.aljazeera.com/news/2026/11/8/could-iraqs-kurdish-region-return-to-two-separate-administrations?traffic_source=rss",
+      "title": "Could Iraq’s Kurdish region return to two separate administrations?",
+      "seendate": "20261108T130628Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.gdnonline.com:443/Details/1412154/Heavy-rains-flood-70,000-Gaza-tents-housing-displaced-people-",
-      "title": "World News : Heavy rains flood 70 , 000 Gaza tents housing displaced people",
-      "seendate": "20261108T000000Z",
-      "domain": "gdnonline.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "http://www.theusnews.com/news/279411615/oil-tumbles-as-us-midterm-results-raise-hopes-of-iran-peace-deal",
-      "title": "Oil tumbles as US midterm results raise hopes of Iran peace deal",
-      "seendate": "20261108T000000Z",
-      "domain": "theusnews.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.rustourismnews.com/2026/11/07/brazil-issues-red-storm-warning-as-winds-over-100-km-h-threaten-southern-states/",
-      "title": "Brazil Issues Red Storm Warning as Winds Over 100 Km / h Threaten Southern States",
-      "seendate": "20261108T000000Z",
-      "domain": "rustourismnews.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.kezi.com/weather/forecast/rounds-of-rain-wind-ahead/article_50db145a-4f95-5e67-a3e6-f8d44f092f14.html",
-      "title": "Rounds of rain , wind ahead",
-      "seendate": "20261108T000000Z",
-      "domain": "kezi.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.techradar.com/pro/raspberry-pi-5-price-hike-means-the-16gb-model-now-costs-three-times-what-it-did-at-launch-and-of-course-the-global-ram-shortage-is-to-blame",
-      "title": "Raspberry Pi 5 price hike means the 16GB model now costs three times what it did at launch and of course , the global RAM shortage is to blame",
-      "seendate": "20261108T000000Z",
-      "domain": "techradar.com",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/08/second-world-war-veterans-outnumber-former-pms-for-possible-last-time-on-remembrance-sunday",
+      "title": "WW2 veterans outnumber former PMs for possible last time at Remembrance Sunday service",
+      "seendate": "20261108T130513Z",
+      "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.themarketsdaily.com/2026/11/07/oklo-nyseoklo-announces-earnings-results-beats-estimates-by-0-05-eps.html",
-      "title": "Oklo ( NYSE : OKLO ) Announces Earnings Results , Beats Estimates By $0 . 05 EPS",
-      "seendate": "20261108T000000Z",
-      "domain": "themarketsdaily.com",
+      "url": "https://www.theguardian.com/us-news/2026/nov/08/jeffrey-epstein-survivors-exhibition",
+      "title": "‘We feel the love’: Epstein survivors overwhelmed by messages of support at pop-up art exhibition",
+      "seendate": "20261108T130041Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/08/datacenters-fossil-fuel-pipelines-regulations",
+      "title": "US datacenter demand spurs increased fossil fuel pipeline projects as rules are discarded",
+      "seendate": "20261108T130040Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/8/poland-mourns-six-killed-in-attack-as-authorities-launch-terrorism-probe?traffic_source=rss",
+      "title": "Poland mourns six killed in attack as authorities launch ‘terrorism’ probe",
+      "seendate": "20261108T124012Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Poland"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/8/russian-strikes-on-ukraine-leave-hundreds-of-thousands-without-electricity?traffic_source=rss",
+      "title": "Russian strikes on Ukraine leave hundreds of thousands without electricity",
+      "seendate": "20261108T122017Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/8/south-africas-anc-suffers-setback-in-local-elections?traffic_source=rss",
+      "title": "South Africa’s ANC suffers setback in local elections",
+      "seendate": "20261108T121914Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "South Africa"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/08/democrats-congress-trump-midterms",
+      "title": "Healthcare, tariffs – but not Trump impeachment: Democrats chart next two years of power",
+      "seendate": "20261108T120040Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/08/stimulant-overdoses-rise",
+      "title": "Stimulant overdoses on the rise as opioid deaths decline, but treatment is complex",
+      "seendate": "20261108T120040Z",
+      "domain": "theguardian.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://newsroomamerica.com/tag/health_care_facilities",
-      "title": "Tag : health _ care _ facilities",
-      "seendate": "20261108T000000Z",
-      "domain": "newsroomamerica.com",
-      "sourcecountry": "United States"
+      "url": "https://www.theguardian.com/news/2026/nov/08/african-philosophies-see-my-world-film-festival-manchester",
+      "title": "How African philosophies inspired a new approach to staging film festivals in Manchester",
+      "seendate": "20261108T120039Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss",
+      "title": "Could UFC boss Dana White be next White House press secretary?",
+      "seendate": "20261108T115705Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/08/krakow-shooting-poland-terrorism-investigation",
+      "title": "Polish prosecutors open terrorism investigation into Kraków shooting",
+      "seendate": "20261108T115015Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Poland"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks",
+      "title": "Who’s who at Cop31: key players at the climate talks",
+      "seendate": "20261108T114856Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss",
+      "title": "Will Eisenkot be able to form Israel’s next gov’t amid divided opposition?",
+      "seendate": "20261108T113458Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/nov/08/cop31-what-is-at-stake-at-the-un-climate-summit-and-what-can-it-achieve",
+      "title": "Cop31: what is at stake at the UN climate summit and what can it achieve?",
+      "seendate": "20261108T110038Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Turkey"
+    },
+    {
+      "url": "https://www.theguardian.com/books/2026/nov/08/louise-cansot-paris-model-prix-goncourt-phillipe-jaenada-luc-corlouer",
+      "title": "How the story of ‘the girl of 100 portraits’ inspired two books",
+      "seendate": "20261108T110038Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/08/simon-parkes-navy-sailor-mother-allan-grimson-suspected-killer",
+      "title": "Mother of Royal Navy sailor missing for 40 years calls for suspected killer to confess",
+      "seendate": "20261108T110037Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/8/messi-becomes-first-player-to-win-back-to-back-mls-golden-boot-awards?traffic_source=rss",
+      "title": "Messi becomes first player to win back-to-back MLS Golden Boot awards",
+      "seendate": "20261108T105012Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/project-force-2/2026/11/8/after-rebel-offensive-efforts-to-push-them-back-appear-to-have-stalled?traffic_source=rss",
+      "title": "After rebel offensive, efforts to push them back appear to have stalled",
+      "seendate": "20261108T102808Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/8/tennis-world-number-one-rybakina-withdraws-from-wta-finals-due-to-virus?traffic_source=rss",
+      "title": "Tennis world number one Rybakina withdraws from WTA Finals due to virus",
+      "seendate": "20261108T100321Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
+      "title": "Briton among six dead after gunman opens fire in Kraków market square",
+      "seendate": "20261108T093022Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Poland"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/8/democrats-congressional-win-could-strengthen-ukraines-hand-against-russia?traffic_source=rss",
+      "title": "Democrats’ congressional win could strengthen Ukraine’s hand against Russia",
+      "seendate": "20261108T093017Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cq74p2zpwyjmo?at_medium=RSS&at_campaign=rss",
+      "title": "How the deadly shooting in Krakow unfolded",
+      "seendate": "20261108T092924Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
+      "title": "Floods in Gaza leave tens of thousands without shelter",
+      "seendate": "20261108T092852Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/features/2026/11/8/former-palestinian-detainees-at-mercy-of-israel-amid-perpetual-detention?traffic_source=rss",
+      "title": "Former Palestinian detainees at mercy of Israel amid perpetual detention",
+      "seendate": "20261108T090959Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/08/popes-visit-to-argentina-sets-up-showdown-with-hyper-capitalist-milei",
+      "title": "Pope’s visit to Argentina sets up showdown with ‘hyper-capitalist’ Milei",
+      "seendate": "20261108T090035Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Argentina"
     }
   ]
 }

@@ -12,3 +12,25 @@ backups/
 .env.*
 .dev.vars*
 node_modules/
+
+# Backup 2026-11-11 — box-only / sensitive / proprietary (public GitHub repo)
+.du-releases/
+**/.secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+__pycache__/
+*.pyc
+*.bak-pre-merge
+
+# Paid product deliverable files and raw API dumps (repo is public)
+# Already-tracked zips in history are left as-is; do not add new ones.
+tools/**/*.zip
+**/gumroad-raw.json
+_backup/**/files/
+_backup/**/files-to-upload/
+_backup/**/fixtures/
+_backup/**/.secrets/
+_backup/**/stripe-promo.txt
+_backup/**/__pycache__/

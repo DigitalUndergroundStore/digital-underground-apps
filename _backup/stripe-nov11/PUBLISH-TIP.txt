@@ -1,0 +1,27 @@
+PUBLISHED tip-only footer release
+verified_at 2026-11-11 8:23 AM EST (America/Toronto)
+pages_id fe1d99c4
+digest 719af41c0ce9c37cf649af20d423d3bec8fcc6ffa7545b6197b01c7ba3e5a6be
+source_manifest 89b05e66f3d58fa195a008d7119279f3555f66e0224c2a557670ed29edab9f6f
+functions_digest 0f10d415ad917db63d4316d9f216f1bc754fdb74e63620432db35085e2115618
+worker_sha a417dff4b353ef78ff8cf7b7c6a817d15480400fe6030c98a146bb741e16342a
+deployed_at 2026-11-11T13:23:07Z (8:23 AM EST, America/Toronto)
+via scripts/release.sh stage, execute, layout, attest, deploy
+reviewer DU Alpha
+class production
+publishable 1
+rollback_pages_id a743bc4c
+rollback_digest 18ad6844ec7628c22ad978a73e495422f8bfacda227eed27a707c2cdf1de7c95
+lock restored 433fea1d4727151c276e1c2f8ab3ed26f165c96e17be9b997a9174de31e4420f
+allowlist index.html and -.du-prod-ok only
+deploy_attempts 2 (first refused: staged RELEASE.txt missing class production, known post-execute append; second rc 0)
+no email sent; no KV writes during execute (kv_writes 0)
+functions unchanged; store/ unchanged; dirty site-nav.css not staged
+
+Live verification (8:23 AM EST, America/Toronto):
+- https://digitalundergroundstore.com/?tipverify=... first http=200 x-du-cache=MISS, tip + four badges present
+- second http=200 ttfb=0.162s x-du-cache=HIT, tip + four badges present
+- https://digitalundergroundstore.com/ http=200 HIT, tip + four badges present
+- https://fe1d99c4.digital-underground.pages.dev/ http=200 MISS, tip + four badges present
+- /api/community/listings http=200
+- local 390/412/1280: no horizontal overflow; Tip us ☕ in legal bar; all four Featured-on badges

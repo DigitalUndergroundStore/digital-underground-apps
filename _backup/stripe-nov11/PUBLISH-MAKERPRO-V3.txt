@@ -1,0 +1,33 @@
+PUBLISHED Maker Pro copy + plan-card cleanup (third gated release)
+verified_at 2026-11-11 8:47 AM EST (America/Toronto)
+pages_id b8f05bfb
+digest 1403306969f0ffba84c9bf16a0e0245fbdde0d45977e0b8121da5e5244075cdd
+source_manifest 79267ab05cd7f001737b6e9bf4ba0758b181df8bbb4e7a9eff105c3a01fc904f
+functions_digest 0f10d415ad917db63d4316d9f216f1bc754fdb74e63620432db35085e2115618
+worker_sha a417dff4b353ef78ff8cf7b7c6a817d15480400fe6030c98a146bb741e16342a
+deployed_at 2026-11-11T13:47:50Z (8:47 AM EST, America/Toronto)
+via scripts/release.sh stage, execute, layout, attest, deploy (one pass)
+reviewer DU Alpha
+class production
+publishable 1
+rollback_pages_id c552bb5a
+rollback_digest edfd732f266ab28ee702e393b5e7464e89acd6e69ce22619c7887f8fd6ae07d5
+lock restored 433fea1d4727151c276e1c2f8ab3ed26f165c96e17be9b997a9174de31e4420f
+allowlist store/p/maker-pro/index.html and -.du-prod-ok only
+deploy_attempts 1 rc 0
+temporary one-file exception in release.sh reverted immediately after deploy
+release.sh sha256 restored to cf317e372c2f816dfb32cfaa0f26fff9764a50f8b193617e081ea225742e5761
+no email sent; no KV writes (kv_writes 0); homepage untouched; dirty site-nav.css not staged
+
+Also: Stripe product prod_VbowHWZE0iNkAr description updated (live mode) to
+"Draft/Live toggle, Featured slots, and promotion from Digital Underground on its X channels."
+No other Stripe object changes. Key not printed.
+
+Live verification (8:47 AM EST, America/Toronto):
+- https://digitalundergroundstore.com/store/p/maker-pro/ http=200
+- https://b8f05bfb.digital-underground.pages.dev/store/p/maker-pro/ http=200
+- No intro claims, no FOUNDING25, no sticky bar, no Gumroad
+- Three USD plan cards (Monthly $9/mo, Yearly $79/yr Save 27%, Founding $59/yr First 25 makers)
+- Billing is by Stripe + Billed in USD via Stripe; data-no-fx prevents CAD conversion
+- Homepage tip + four Featured-on badges still present; listings http=200
+- local 390/412/1280: no horizontal overflow; cards stacked on mobile, three-up on desktop

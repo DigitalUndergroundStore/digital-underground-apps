@@ -1,0 +1,62 @@
+# Post-deploy verification
+verified_at 2026-11-11 9:18-9:20 AM EST (America/Toronto)
+pages_id adbefe95
+digest f9107879ef2d52051735af34db2de1866e8eb7a7831aa7f630f3e948aa9e43dd
+alias https://adbefe95.digital-underground.pages.dev
+production https://digitalundergroundstore.com
+rollback_pages_id b8f05bfb
+rollback_digest 1403306969f0ffba84c9bf16a0e0245fbdde0d45977e0b8121da5e5244075cdd
+deployed_at 2026-11-11T14:18:12Z (9:18 AM EST, America/Toronto)
+lock restored 433fea1d4727151c276e1c2f8ab3ed26f165c96e17be9b997a9174de31e4420f
+release.sh reverted to cf317e372c2f816dfb32cfaa0f26fff9764a50f8b193617e081ea225742e5761
+functions_digest 1dca933c854baf5870f6fcb278a17b26f5c1b0888a680aaa7c61be293667873c
+source_manifest 545717c3a22849583e9721750a684cb4afac4a85c305adc5fa19d4e0e7f40beb
+
+## Junk URLs (10/10) — 301 Location: /store/
+Production and adbefe95 alias both:
+- /store/p/mead-batch-calculator/ 301 /store/
+- /tools/mead-batch-calculator/ 301 /store/
+- /store/p/chili-batch-calculator/ 301 /store/
+- /tools/chili-batch-calculator/ 301 /store/
+- /store/p/wedding-rsvp-tracker/ 301 /store/
+- /tools/wedding-rsvp-tracker/ 301 /store/
+- /store/p/baby-shower-gift-tracker/ 301 /store/
+- /tools/indie-faq-kit/ 301 /store/
+- /store/p/podcast-pitch-kit (no trailing slash) 301 /store/
+- /tools/college-application-tracker/ 301 /store/
+
+## Real product pages (15/15) — 200
+- /store/p/null-harbor/
+- /store/p/maker-pro/
+- /store/p/networking-distribution/
+- /store/p/planetview-live/
+- /store/p/pantry-week/
+- /store/p/due-desk/
+- /store/p/exam-desk/
+- /store/p/hook-bank/
+- /store/p/press-kit/
+- /store/p/changelog-kit/
+- /store/p/new-parent-checklist/
+- /store/p/plainhelp/
+- /store/p/grok-prompt-pack/
+- /tools/field-studio/
+- /store/p/wedding-planner/
+
+## Humanity X (pre-existing, not a cleanup regression)
+The three Humanity X product URLs and /store/series/humanity-x/ return 302 to /store/ on both live adbefe95 and rollback b8f05bfb. That is from existing _redirects rules (18 humanity lines), unchanged by this release. The HTML trees were kept in the staged snapshot and were not deleted. /store/thrillers/ remains 200 on both.
+
+## Homepage, store, tools, sitemap, listings
+- / 200. Four Featured-on badges present: Startup Fame, PeerPush, MemeLaunch, Twelve Tools (aria-label="Featured on"). Tip link present: Tip us -> https://donate.stripe.com/bJe5kFdy42WJdkOgd40ZW00. Markers motw-home and id="featured" present; no hc-shop.
+- /store/ 200
+- /tools/ 404 — same as rollback b8f05bfb (no /tools/ index; pre-existing)
+- /sitemap.xml 200; no junk slugs listed; null-harbor and planetview-live present
+- /api/community/listings 200, body identical to rollback b8f05bfb
+
+## Marketplace untouched
+- /makers/ 200 live, rollback, and new alias
+- /league/ 200 live, rollback, and new alias
+- /community/ 301 to / on all three (pre-existing)
+- /marketplace/ 404 on all three (pre-existing; listings live under the community API and /makers/)
+- Listings JSON identical to rollback
+
+No Stripe changes, no KV writes, no email.

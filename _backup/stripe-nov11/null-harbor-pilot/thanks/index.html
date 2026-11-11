@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Thank you — Digital Underground</title>
+  <style>
+    :root { --bg:#0f1217; --card:#171b22; --tx:#eef0f4; --mu:#9aa3b2; --ln:#2a3140; --v1:#9a97e8; }
+    * { box-sizing: border-box; }
+    body { margin:0; font: 16px/1.55 system-ui, sans-serif; background:var(--bg); color:var(--tx); }
+    .w { max-width: 640px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: 2rem; letter-spacing: -0.03em; margin: 0 0 12px; }
+    p { color: var(--mu); }
+    a { color: var(--v1); }
+    .card { background: var(--card); border: 1px solid var(--ln); border-radius: 16px; padding: 20px 22px; margin-top: 24px; }
+    .card h2 { margin: 0 0 10px; font-size: 1.05rem; }
+    .links { list-style: none; padding: 0; margin: 12px 0 0; }
+    .links li { margin: 0 0 8px; }
+    .links a { display: inline-block; padding: 10px 14px; border-radius: 10px; background: rgba(154,151,232,.14); text-decoration: none; font-weight: 650; }
+    .err { color: #f0b4b4; }
+    .ok { color: #b6e3c6; }
+  </style>
+</head>
+<body>
+  <main class="w">
+    <p><a href="/">Digital Underground</a></p>
+    <h1>Thank you</h1>
+    <p id="lead">If your payment went through, your files are on the way to the email you used at checkout. You can also download them from this page.</p>
+    <div class="card" id="box">
+      <h2>Your download</h2>
+      <p id="status">Confirming your payment…</p>
+      <ul class="links" id="links" hidden></ul>
+    </div>
+    <p style="margin-top:28px">Lost the email later? Come back to this thank-you page with the same checkout, or write us at <a href="mailto:digitalunderground.store@proton.me">digitalunderground.store@proton.me</a>.</p>
+  </main>
+  <script>
+    (function () {
+      const params = new URLSearchParams(location.search);
+      const sessionId = params.get("session_id") || "";
+      const sku = params.get("sku") || "";
+      const status = document.getElementById("status");
+      const list = document.getElementById("links");
+      if (!sessionId) {
+        status.innerHTML = "Add your checkout to this page to re-download. Check the email we sent after you paid, or contact support if you need a new link.";
+        status.className = "";
+        return;
+      }
+      fetch("/api/store/session-download?session_id=" + encodeURIComponent(sessionId), { headers: { "Accept": "application/json" } })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (!res.ok || !res.j.ok || !res.j.links || !res.j.links.length) {
+            status.textContent = "We could not confirm that payment yet. Check the email from notify@digitalundergroundstore.com, or write support if you were charged.";
+            status.className = "err";
+            return;
+          }
+          status.textContent = "Payment confirmed. Download " + (res.j.title || sku) + ":";
+          status.className = "ok";
+          list.hidden = false;
+          res.j.links.forEach(function (link) {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = link.url;
+            a.textContent = "Download " + link.filename;
+            li.appendChild(a);
+            list.appendChild(li);
+          });
+        })
+        .catch(function () {
+          status.textContent = "Something went wrong checking your payment. Use the link in your email, or contact support.";
+          status.className = "err";
+        });
+    })();
+  </script>
+</body>
+</html>

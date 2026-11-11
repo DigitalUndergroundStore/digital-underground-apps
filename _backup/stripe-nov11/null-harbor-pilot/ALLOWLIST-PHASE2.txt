@@ -1,0 +1,11 @@
+# Null Harbor Phase 2 publish: functions + thanks only. No store page swap.
+functions/_lib/crypto-util.js
+functions/_lib/store-skus.js
+functions/_lib/stripe-signature.js
+functions/_lib/download-token.js
+functions/_lib/fulfillment.js
+functions/api/stripe/webhook.js
+functions/api/store/download.js
+functions/api/store/session-download.js
+thanks/index.html
+-.du-prod-ok

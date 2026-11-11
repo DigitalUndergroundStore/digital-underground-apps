@@ -1,0 +1,44 @@
+{
+  "packlane": {
+    "name": "Packlane",
+    "sku": "packlane",
+    "product": "prod_VbsJo9FvzGZwIH",
+    "price": "price_1UaeYuRAOyy6tigLwNf7NFqJ",
+    "unit_amount": 700,
+    "currency": "usd",
+    "tax_code": "txcd_10201000",
+    "payment_link": "plink_1UaeYwRAOyy6tigLr15De5bC",
+    "url": "https://buy.stripe.com/fZucN7gKggNz6Wq6Cu0ZW0c",
+    "allow_promotion_codes": true,
+    "restrictions": null,
+    "redirect": "https://digitalundergroundstore.com/thanks/?sku=packlane&session_id={CHECKOUT_SESSION_ID}"
+  },
+  "streak-kit": {
+    "name": "Streak Kit",
+    "sku": "streak-kit",
+    "product": "prod_VbsJTYCRPFaPmX",
+    "price": "price_1UaeYyRAOyy6tigLl3LH4f9a",
+    "unit_amount": 900,
+    "currency": "usd",
+    "tax_code": "txcd_10201000",
+    "payment_link": "plink_1UaeYzRAOyy6tigL1LLbjyQr",
+    "url": "https://buy.stripe.com/fZueVfbpW68V6Wqe4W0ZW0d",
+    "allow_promotion_codes": true,
+    "restrictions": null,
+    "redirect": "https://digitalundergroundstore.com/thanks/?sku=streak-kit&session_id={CHECKOUT_SESSION_ID}"
+  },
+  "launch-ledger": {
+    "name": "Launch Ledger",
+    "sku": "launch-ledger",
+    "product": "prod_VbsJuO8AXeqORo",
+    "price": "price_1UaeZ1RAOyy6tigLc8QXnpxi",
+    "unit_amount": 2900,
+    "currency": "usd",
+    "tax_code": "txcd_10201000",
+    "payment_link": "plink_1UaeZ2RAOyy6tigLJyKKxxMa",
+    "url": "https://buy.stripe.com/fZueVf2Tq2WJ94y8KC0ZW0e",
+    "allow_promotion_codes": true,
+    "restrictions": null,
+    "redirect": "https://digitalundergroundstore.com/thanks/?sku=launch-ledger&session_id={CHECKOUT_SESSION_ID}"
+  }
+}

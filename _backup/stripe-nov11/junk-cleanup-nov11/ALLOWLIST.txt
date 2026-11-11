@@ -1,0 +1,8 @@
+# Store-only junk cleanup, 2026-11-11. Reviewed.
+# Deletes exactly the 1,153 mass-batch leftover slugs from staged store/p and tools.
+# Does not copy any store/* files. Does not touch marketplace, makers, league, KV,
+# index.html, store/index.html, or assets/site-nav/site-nav.css.
+@junk-cleanup:scripts/store/junk-cleanup-slugs-2026-11-11.txt
+functions/_lib/junk-store-slugs.js
+functions/_middleware.js
+-.du-prod-ok

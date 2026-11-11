@@ -1,0 +1,4 @@
+93cce89d44ec73d15a4e16228be580605d0a7ff04ab081cbc726670fb905d56e  scope-lock/Scope-Lock-v1.1.zip  53460
+1251f9ab6f6476f56807be845efd667e8d9b89df23cd96e6d8c4b6f4e24d2139  scope-lock/Scope-Lock-On-Your-Phone.pdf  50103
+668a3409367c2a8921c1c785a5f71ae92a9b9f79b1ec6b8aba2a078b33d1e3cc  rate-wire/Rate-Wire-v1.1.zip  55433
+72ca554597dca0afeecfad94c33a9eaa0d96fbe9fbeb8c5811eb42b0dc204731  rate-wire/Rate-Wire-On-Your-Phone.pdf  52761

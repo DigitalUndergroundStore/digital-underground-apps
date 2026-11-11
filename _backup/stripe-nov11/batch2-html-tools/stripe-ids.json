@@ -1,0 +1,44 @@
+{
+  "invoice-desk": {
+    "name": "Invoice Desk",
+    "sku": "invoice-desk",
+    "product": "prod_VbsEXBZkpkEWeH",
+    "price": "price_1UaeTwRAOyy6tigLzscc4DQo",
+    "unit_amount": 1900,
+    "currency": "usd",
+    "tax_code": "txcd_10201000",
+    "payment_link": "plink_1UaeTyRAOyy6tigLHCphVvSw",
+    "url": "https://buy.stripe.com/bJeaEZ3XudBn3Kee4W0ZW09",
+    "allow_promotion_codes": true,
+    "restrictions": null,
+    "redirect": "https://digitalundergroundstore.com/thanks/?sku=invoice-desk&session_id={CHECKOUT_SESSION_ID}"
+  },
+  "focus-gate": {
+    "name": "Focus Gate",
+    "sku": "focus-gate",
+    "product": "prod_VbsEKSW9lht0D6",
+    "price": "price_1UaeU0RAOyy6tigLmvq0h67c",
+    "unit_amount": 700,
+    "currency": "usd",
+    "tax_code": "txcd_10201000",
+    "payment_link": "plink_1UaeU1RAOyy6tigLtRnJuDhz",
+    "url": "https://buy.stripe.com/28E6oJcu068V1C6gd40ZW0a",
+    "allow_promotion_codes": true,
+    "restrictions": null,
+    "redirect": "https://digitalundergroundstore.com/thanks/?sku=focus-gate&session_id={CHECKOUT_SESSION_ID}"
+  },
+  "box-go": {
+    "name": "Box & Go",
+    "sku": "box-go",
+    "product": "prod_VbsEmzGLkYm5Pf",
+    "price": "price_1UaeU3RAOyy6tigLURq9sUhY",
+    "unit_amount": 1200,
+    "currency": "usd",
+    "tax_code": "txcd_10201000",
+    "payment_link": "plink_1UaeU4RAOyy6tigLoMFtpdtA",
+    "url": "https://buy.stripe.com/9B6bJ3alScxjeoS3qi0ZW0b",
+    "allow_promotion_codes": true,
+    "restrictions": null,
+    "redirect": "https://digitalundergroundstore.com/thanks/?sku=box-go&session_id={CHECKOUT_SESSION_ID}"
+  }
+}

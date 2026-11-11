@@ -1,0 +1,8 @@
+id=we_1Uad7vRAOyy6tigLTbfz5MPL
+url=https://digitalundergroundstore.com/api/stripe/webhook
+status=enabled
+livemode=True
+api_version=None
+events=checkout.session.completed
+secret_stored=1
+secret_len=38

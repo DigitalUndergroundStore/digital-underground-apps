@@ -1,0 +1,6 @@
+launch-ledger/app/checklist.html
+launch-ledger/app/tracker.html
+launch-ledger/app/pricing.html
+launch-ledger/app/invoice.html
+launch-ledger/templates/index.html
+launch-ledger/playbook/index.html

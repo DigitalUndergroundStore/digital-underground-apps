@@ -1,0 +1,6 @@
+495dd018cfd8b1df6c6ceafee54b5392e195364ca5f1b177b3ae61925a4d55dc  invoice-desk/Invoice-Desk-v1.1.zip  54652
+18d10ff066840386d2b5cd91605bdf06683f6d0e126a151607f54362e32dae57  invoice-desk/Invoice-Desk-On-Your-Phone.pdf  49976
+1b2c2a94fec04486f24b08f0549e00d14a671e8bd81364b5685b4f69a7d7041d  focus-gate/Focus-Gate-v1.1.zip  53951
+451ff807af15804687a0d5a397922e2c82caadfaa01b0d297eb15f67b3155bdf  focus-gate/Focus-Gate-On-Your-Phone.pdf  51087
+bbe8256ae1529dda39e4fff1eeb533206b19cdb000a96785fd89ad9bb02ee3c5  box-go/Box-and-Go-v1.1.zip  59877
+9fd93ed73ea68c741e9354c9b8d025fb6941f68893e62f55daea0251d9957ae8  box-go/Box-and-Go-On-Your-Phone.pdf  52887

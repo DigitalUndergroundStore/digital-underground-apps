@@ -1,0 +1,12 @@
+*** Begin Patch
+*** Update File: index.html
+@@
+-<div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a></p></div>
++<div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:digitalunderground.store@proton.me">Contact</a><a href="https://donate.stripe.com/bJe5kFdy42WJdkOgd40ZW00" target="_blank" rel="noopener">Tip us ☕</a></p></div>
+*** End Patch
+
+Same one-line insertion belongs in scripts/site-nav.py (FOOT, the duf-legal
+paragraph) and scripts/store/partials/site-foot.html, for later stamps only.
+Do not run apply-site-nav.py as part of this release.
+The four Featured-on badges stay untouched, in order:
+Startup Fame, PeerPush, LaunchMe/MemeLaunch, Twelve Tools.

@@ -1,0 +1,25 @@
+# Batch 1: Reply Forge page swap + Scope Lock + Rate Wire backends and page swaps,
+# plus straightforward store-index / share / related Buy links for converted SKUs.
+functions/_lib/store-skus.js
+store/p/reply-forge/index.html
+store/p/scope-lock/index.html
+store/p/rate-wire/index.html
+store/index.html
+store/p/a-new-friend-a-brighter-day/index.html
+p/null-harbor/index.html
+p/scope-lock/index.html
+store/p/invoice-desk/index.html
+store/p/launch-ledger/index.html
+store/p/chatgpt-prompt-pack/index.html
+p/he-came-home-without-her/index.html
+store/p/the-day-ethan-chose-kindness/index.html
+p/rate-wire/index.html
+store/p/tilly-s-big-cleanup/index.html
+store/p/offer-desk/index.html
+store/thrillers/index.html
+p/reply-forge/index.html
+store/p/the-brave-little-beaver/index.html
+store/p/null-harbor/index.html
+store/p/he-came-home-without-her/index.html
+p/index.json
+-.du-prod-ok

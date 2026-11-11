@@ -1,0 +1,50 @@
+NOT DEPLOYED — stopped before any release.sh stage/execute/attest/deploy.
+
+Reason: scripts/release.sh cannot publish the Maker Pro page. Both `stage` and
+`commission` refuse store/ edits:
+
+- forbidden_path treats `store` and `store/*` as unallowlisted
+  (die: "allowlist path not permitted: store/p/maker-pro/index.html")
+- assert_store_unchanged compares the candidate store/ tree to
+  .du-releases/baseline/tree/store and dies:
+  "store/ differs from the known-good baseline. Store edits are not part of a homepage release."
+- release-gate.test.sh explicitly expects "allowlist store edit" to be refused
+
+The brief asked for ONE production release with both (1) the homepage/marketplace
+"Tip us" footer link and (2) live Stripe buttons on /store/p/maker-pro/. Shipping
+only the tip link would be a partial release. Circumventing the store freeze
+(Functions HTML injection, a redirect off /store/p/maker-pro/, or editing
+release.sh) was not done — that would be risky and against the gated path.
+
+No worktree files in /workspace/du-good were modified. The lock is still in
+place. Nothing was published.
+
+Current live (unchanged; this remains the rollback target if a later release ships):
+  pages_id    a743bc4c
+  digest      18ad6844ec7628c22ad978a73e495422f8bfacda227eed27a707c2cdf1de7c95
+  deployed_at 2026-11-11T10:46:08Z (5:46 AM EST, America/Toronto)
+  source_manifest b2ec40987f40c9637f9e5ab369675b49b8e76b368df2532e912c97866cf28be8
+  functions_digest 0f10d415ad917db63d4316d9f216f1bc754fdb74e63620432db35085e2115618
+  worker_sha  a417dff4b353ef78ff8cf7b7c6a817d15480400fe6030c98a146bb741e16342a
+  lock        /workspace/du-good/.du-deploy-blocked
+              sha256 433fea1d4727151c276e1c2f8ab3ed26f165c96e17be9b997a9174de31e4420f
+
+Patches prepared (not applied) in this directory:
+  tip-footer.patch      — add "Tip us ☕" to the shared footer legal bar
+  maker-pro-stripe.patch — replace the Gumroad CTA with three Stripe buttons
+  APPLY.txt             — how to apply once store/ can be published
+
+To ship later, release.sh needs a reviewed one-file exception for
+store/p/maker-pro/index.html (or a reviewed store-release path). Then stage
+index.html, store/p/maker-pro/index.html, and -.du-prod-ok only. Do not include
+the dirty worktree assets/site-nav/site-nav.css (it is older than known-good and
+would hide the desktop hamburger). Update scripts/site-nav.py and
+scripts/store/partials/site-foot.html for future stamps, but do not run
+apply-site-nav.py across the tree (that would change store/ and many other pages).
+
+Homepage and marketplace share index.html, so the tip link is one staged file
+(same pattern as the Nov 11 Featured-on badges release). Other pages keep their
+existing footers until a later stamp.
+
+Lock was never removed. No wrangler pages deploy, no build-public.sh --deploy,
+no Stripe objects created, no keys printed, no email sent.

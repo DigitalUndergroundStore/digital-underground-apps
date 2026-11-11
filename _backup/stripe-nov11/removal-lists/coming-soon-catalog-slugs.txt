@@ -1,0 +1,15 @@
+3D Print Cost Calculator	3d-print-cost-calculator	$8	/store/p/3d-print-cost-calculator/
+Subscription Box Profit Planner	subscription-box-planner	$9	/store/p/subscription-box-planner/
+Maker Hourly Rate Calculator	maker-hourly-rate-calculator	$8	/store/p/maker-hourly-rate-calculator/
+Maker Cash Flow Forecast	maker-cash-flow-forecast	$9	/store/p/maker-cash-flow-forecast/
+Product Bundle Pricing Calculator	product-bundle-pricing-calculator	$9	/store/p/product-bundle-pricing-calculator/
+EV Charging Cost Calculator	ev-charging-cost-calculator	$7	/store/p/ev-charging-cost-calculator/
+Rent vs Buy Calculator	rent-vs-buy-calculator	$8	/store/p/rent-vs-buy-calculator/
+Home Solar Payback Calculator	home-solar-payback-calculator	$8	/store/p/home-solar-payback-calculator/
+Recipe Cups to Grams Converter	recipe-unit-converter	$7	/store/p/recipe-unit-converter/
+Exam Countdown Study Planner	exam-study-planner	$7	/store/p/exam-study-planner/
+Party Food Quantity Calculator	party-food-quantity-calculator	$7	/store/p/party-food-quantity-calculator/
+Fuel Economy Log	fuel-economy-log	$7	/store/p/fuel-economy-log/
+Baby Feeding & Sleep Log	baby-feeding-sleep-log	$7	/store/p/baby-feeding-sleep-log/
+Flooring & Tile Calculator	flooring-tile-calculator	$7	/store/p/flooring-tile-calculator/
+Room Paint Calculator	room-paint-calculator	$7	/store/p/room-paint-calculator/

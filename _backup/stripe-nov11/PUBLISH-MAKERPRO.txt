@@ -1,0 +1,29 @@
+PUBLISHED Maker Pro Stripe buttons (second, separate release)
+verified_at 2026-11-11 8:25 AM EST (America/Toronto)
+pages_id c552bb5a
+digest edfd732f266ab28ee702e393b5e7464e89acd6e69ce22619c7887f8fd6ae07d5
+source_manifest 99b47bdf1e9305e775b7a07940154c8fd14392b42ee1ac55718efbcdec0dbf5c
+functions_digest 0f10d415ad917db63d4316d9f216f1bc754fdb74e63620432db35085e2115618
+worker_sha a417dff4b353ef78ff8cf7b7c6a817d15480400fe6030c98a146bb741e16342a
+deployed_at 2026-11-11T13:25:45Z (8:25 AM EST, America/Toronto)
+via scripts/release.sh stage, execute, layout, attest, deploy
+reviewer DU Alpha
+class production
+publishable 1
+rollback_pages_id fe1d99c4
+rollback_digest 719af41c0ce9c37cf649af20d423d3bec8fcc6ffa7545b6197b01c7ba3e5a6be
+lock restored 433fea1d4727151c276e1c2f8ab3ed26f165c96e17be9b997a9174de31e4420f
+allowlist store/p/maker-pro/index.html and -.du-prod-ok only
+deploy_attempts 1 rc 0
+temporary one-file exception in release.sh (forbidden_path + assert_store_unchanged for store/p/maker-pro/index.html only) was applied for this release and reverted immediately after deploy
+release.sh sha256 restored to cf317e372c2f816dfb32cfaa0f26fff9764a50f8b193617e081ea225742e5761 (matches pre-exception backup)
+no email sent; no KV writes during execute (kv_writes 0)
+functions unchanged; homepage tip + four badges retained; dirty site-nav.css not staged; other store files not staged
+
+Live verification (8:25 AM EST, America/Toronto):
+- https://digitalundergroundstore.com/store/p/maker-pro/ http=200, three Stripe buttons (Monthly $9, Yearly $79, Founding $59/yr first 25) + "Billing is by Stripe"
+- https://c552bb5a.digital-underground.pages.dev/store/p/maker-pro/ http=200, same
+- homepage still has Tip us ☕ + all four Featured-on badges
+- /api/community/listings http=200
+- local 390/412/1280: no horizontal overflow; currency.js may display CAD on the page (existing)
+- JSON-LD still mentions the old Gumroad offer URLs (intentionally not rewritten)

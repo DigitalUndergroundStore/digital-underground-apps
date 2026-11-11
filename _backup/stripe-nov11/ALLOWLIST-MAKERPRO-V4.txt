@@ -1,0 +1,5 @@
+# Maker Pro v4: Option B2 hero + remove Founding 25. Store path only.
+store/p/maker-pro/index.html
+store/p/maker-pro/maker-pro-b2.webp
+store/p/maker-pro/maker-pro-b2.png
+-.du-prod-ok

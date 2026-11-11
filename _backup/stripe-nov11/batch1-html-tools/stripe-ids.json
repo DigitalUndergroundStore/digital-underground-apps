@@ -1,0 +1,53 @@
+{
+  "scope-lock": {
+    "name": "Scope Lock",
+    "sku": "scope-lock",
+    "product": "prod_VbsAvzzZJMPELU",
+    "price": "price_1UaePzRAOyy6tigLonMRXgZp",
+    "unit_amount": 1200,
+    "currency": "usd",
+    "tax_code": "txcd_10201000",
+    "payment_link": "plink_1UaeQ1RAOyy6tigLQ8Vw2yjf",
+    "url": "https://buy.stripe.com/6oUbJ33XueFrfsW5yq0ZW07",
+    "allow_promotion_codes": true,
+    "restrictions": null,
+    "redirect": "https://digitalundergroundstore.com/thanks/?sku=scope-lock&session_id={CHECKOUT_SESSION_ID}"
+  },
+  "rate-wire": {
+    "name": "Rate Wire",
+    "sku": "rate-wire",
+    "product": "prod_VbsAgbb3GfoBF1",
+    "price": "price_1UaeQ3RAOyy6tigLGLRWeR5s",
+    "unit_amount": 900,
+    "currency": "usd",
+    "tax_code": "txcd_10201000",
+    "payment_link": "plink_1UaeQ5RAOyy6tigLBMNtxLfv",
+    "url": "https://buy.stripe.com/dRm14pbpW7cZ5Sm1ia0ZW08",
+    "allow_promotion_codes": true,
+    "restrictions": null,
+    "redirect": "https://digitalundergroundstore.com/thanks/?sku=rate-wire&session_id={CHECKOUT_SESSION_ID}"
+  },
+  "reply-forge": {
+    "name": "Reply Forge",
+    "sku": "reply-forge",
+    "product": "prod_Vbrxm71SbdMaZ5",
+    "price": "price_1UaeDkRAOyy6tigLuiYDbDq9",
+    "unit_amount": 900,
+    "url": "https://buy.stripe.com/8x228t0Liapb5Sm3qi0ZW06",
+    "gumroad": "nlwvb"
+  },
+  "null-harbor": {
+    "name": "Null Harbor",
+    "sku": "null-harbor",
+    "url": "https://buy.stripe.com/bJe6oJ65CfJveoS2me0ZW04",
+    "gumroad": "jcazp",
+    "unit_amount": 499
+  },
+  "he-came-home-without-her": {
+    "name": "He Came Home Without Her",
+    "sku": "he-came-home-without-her",
+    "url": "https://buy.stripe.com/dRmcN7gKgbtfbcGbWO0ZW05",
+    "gumroad": "ygwhif",
+    "unit_amount": 499
+  }
+}

@@ -1,0 +1,6 @@
+product=prod_VbowHWZE0iNkAr monthly=price_1UabIURAOyy6tigL8vJNtG8E yearly=price_1UabIVRAOyy6tigLas2nKlOp founding=price_1UabIWRAOyy6tigLLeySuUYp
+tipprod=prod_VbowxZA3Stic3r
+tiplink=https://donate.stripe.com/bJe5kFdy42WJdkOgd40ZW00 plink_1UabIuRAOyy6tigL2s2l0MEJ
+https://buy.stripe.com/dRm9AVgKgbtf94y8KC0ZW01
+https://buy.stripe.com/9B6cN7fGc2WJ3Kee4W0ZW02
+https://buy.stripe.com/5kQeVf8dK68V94y6Cu0ZW03

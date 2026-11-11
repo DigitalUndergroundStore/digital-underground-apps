@@ -1,0 +1,16 @@
+{
+  "sku": "he-came-home-without-her",
+  "product": "prod_VbrA41hew0pNFr",
+  "price": "price_1UadRlRAOyy6tigLyIPfSb6Q",
+  "unit_amount": 499,
+  "currency": "usd",
+  "tax_code": "txcd_10302001",
+  "payment_link": "plink_1UadRmRAOyy6tigL3gl4jXyA",
+  "url": "https://buy.stripe.com/dRmcN7gKgbtfbcGbWO0ZW05",
+  "active": true,
+  "allow_promotion_codes": true,
+  "restrictions": null,
+  "redirect": "https://digitalundergroundstore.com/thanks/?sku=he-came-home-without-her&session_id={CHECKOUT_SESSION_ID}",
+  "livemode": true,
+  "note": "Backend-only. Not placed on the live store page. Do not publish the payment link until Donald finishes the $0 test and approves the page swap."
+}

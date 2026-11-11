@@ -1,0 +1,3 @@
+product=prod_VbqVrKv8CckQrC price=price_1UacoZRAOyy6tigLOQZV2We6 tax_code=txcd_10302001
+plink=plink_1UacocRAOyy6tigLzypb4Gme https://buy.stripe.com/bJe6oJ65CfJveoS2me0ZW04
+active=True livemode=true webhook_endpoint_created=false

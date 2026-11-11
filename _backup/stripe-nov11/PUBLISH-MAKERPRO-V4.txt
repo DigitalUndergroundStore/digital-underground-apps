@@ -1,0 +1,41 @@
+PUBLISHED Maker Pro v4 (Option B2 hero + Founding 25 removed)
+verified_at 2026-11-11 9:40 AM EST (America/Toronto)
+pages_id 2aab0561
+digest 805e6400103a56c2dfb73de974558a0f45d887254f960c60b6383a83d93deba4
+source_manifest 39836eb3c2d01c8bd08164039364bed0e18996a8e65ad2fe74c5fe4e562bf4c7
+functions_digest 1dca933c854baf5870f6fcb278a17b26f5c1b0888a680aaa7c61be293667873c
+worker_sha 616b22912dc6378f91b33b3377f1502636d6f939398712a06c1ded752f29d6c3
+deployed_at 2026-11-11T14:40:07Z (9:40 AM EST, America/Toronto)
+via scripts/release.sh stage, execute, layout, attest, deploy (one pass)
+reviewer Donald Stelling
+class production
+publishable 1
+rollback_pages_id adbefe95
+rollback_digest 1403306969f0ffba84c9bf16a0e0245fbdde0d45977e0b8121da5e5244075cdd
+alias https://2aab0561.digital-underground.pages.dev
+lock restored 433fea1d4727151c276e1c2f8ab3ed26f165c96e17be9b997a9174de31e4420f
+allowlist store/p/maker-pro/index.html, store/p/maker-pro/maker-pro-b2.webp, store/p/maker-pro/maker-pro-b2.png, and -.du-prod-ok only
+deploy_attempts 1 rc 0
+temporary store exception in release.sh (forbidden_path + assert vs known-good, limited to store/p/maker-pro/) applied for this release and reverted immediately after deploy
+release.sh sha256 restored to cf317e372c2f816dfb32cfaa0f26fff9764a50f8b193617e081ea225742e5761 (matches pre-exception backup)
+no email sent; no KV writes (execute kv_writes 0); functions unchanged; dirty site-nav.css not staged; other store files not staged
+
+Page changes (store/p/maker-pro/ only):
+- Hero replaced with approved Option B2 graphic: /store/p/maker-pro/maker-pro-b2.webp (28,504 bytes) and PNG fallback /store/p/maker-pro/maker-pro-b2.png (255,135 bytes), 1200x630. og:image / twitter:image / JSON-LD image updated to the PNG (absolute URL, ?v=b2). Alt text describes $9/mo or $79/yr, Save 27%, Featured slots, DU X channels, promotion from DU.
+- Founding 25 plan card, banner, FAQ, JSON-LD offer, $59 / "first 25" / Founding copy, and Stripe link https://buy.stripe.com/5kQeVf8dK68V94y6Cu0ZW03 removed.
+- Monthly $9 (https://buy.stripe.com/dRm9AVgKgbtf94y8KC0ZW01) and Yearly $79 with Save 27% (https://buy.stripe.com/9B6cN7fGc2WJ3Kee4W0ZW02) kept. Plan grid is two balanced columns (max-width 720px).
+- Copy audit: no intro/intros/connect/connected/connections. Draft/Live is no longer listed as a Pro-only feature (compare table: free for all makers; removed from lead, meta, JSON-LD, feature bullets, and the lapse FAQ). Allowed features remain: Featured slots, DU X channels promotion, promotion from DU.
+
+Stripe after live verification:
+- POST /v1/payment_links/plink_1UabJ5RAOyy6tigLPMDcV26c active=false
+- GET confirmed id=plink_1UabJ5RAOyy6tigLPMDcV26c active=false
+- Monthly and Yearly payment links were not changed. Keys not printed.
+
+Live verification (9:40 AM EST, America/Toronto):
+- https://digitalundergroundstore.com/store/p/maker-pro/ http=200; no Founding, $59, first 25, or intro/connect words; Monthly and Yearly Stripe URLs present; Save 27% present
+- https://2aab0561.digital-underground.pages.dev/store/p/maker-pro/ http=200, same
+- Hero images 200: webp 28504 image/webp, png 255135 image/png (live and alias)
+- Homepage 200, four Featured-on badges + tip link still present
+- /store/ and /store/p/null-harbor/ 200
+- Byte-identical to previous deploy adbefe95 on the Pages aliases for /, /store/, /store/p/null-harbor/, /makers/, /league/
+- /api/community/listings http=200

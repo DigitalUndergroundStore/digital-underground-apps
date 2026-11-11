@@ -1,0 +1,43 @@
+Maker Monthly Sales Goal Tracker	/tools/maker-sales-goal-tracker/
+Package Shipping Log	/tools/package-shipping-log/
+Maker Weekly Planner	/tools/maker-weekly-planner/
+Product Photo Shot List	/tools/product-photo-shot-list/
+Launch Post Builder	/tools/launch-post-builder/
+Maker Outreach Message Builder	/tools/maker-outreach-builder/
+Listing Copy Builder	/tools/listing-copy-builder/
+Kids Allowance Tracker	/tools/kids-allowance-tracker/
+Library Book Tracker	/tools/library-book-tracker/
+Pantry & Freezer Inventory	/tools/pantry-inventory-list/
+Plant Watering Schedule	/tools/plant-watering-schedule/
+Morning Routine Checklist	/tools/morning-routine-checklist/
+Weekly Cleaning Schedule	/tools/cleaning-schedule/
+Field Studio	https://digitalundergroundstore.com/tools/field-studio/
+Moving Day Checklist	https://digitalundergroundstore.com/tools/move-checklist-kit/
+Waitlist & Pre-Launch Kit	https://digitalundergroundstore.com/tools/waitlist-kit/
+Indie SEO Starter Kit	https://digitalundergroundstore.com/tools/indie-seo-kit/
+Build-in-Public 30-Day Post Pack	https://digitalundergroundstore.com/tools/build-in-public-pack/
+User Feedback Kit	https://digitalundergroundstore.com/tools/feedback-kit/
+Holiday Gift & Budget Planner	https://digitalundergroundstore.com/tools/holiday-gift-planner/
+Home Maintenance Calendar	https://digitalundergroundstore.com/tools/home-maintenance-calendar/
+Job Hunt Kit	https://digitalundergroundstore.com/tools/job-hunt-kit/
+Press Kit Builder	https://digitalundergroundstore.com/tools/press-kit/
+Competitor Teardown Worksheet	https://digitalundergroundstore.com/tools/competitor-teardown-kit/
+Product Hunt Day-Of Playbook	https://digitalundergroundstore.com/tools/product-hunt-kit/
+Apartment Hunt Kit (Canada)	https://digitalundergroundstore.com/tools/apartment-hunt-kit/
+New Parent Checklist	https://digitalundergroundstore.com/tools/new-parent-checklist/
+Road Trip Kit	https://digitalundergroundstore.com/tools/road-trip-kit/
+30-Day Declutter Challenge	https://digitalundergroundstore.com/tools/declutter-challenge/
+Student Semester Starter	https://digitalundergroundstore.com/tools/student-semester-starter/
+First Apartment Essentials	https://digitalundergroundstore.com/tools/first-apartment-essentials/
+Refund & Returns Policy Kit	https://digitalundergroundstore.com/tools/refund-policy-kit/
+Home Emergency Prep Kit	https://digitalundergroundstore.com/tools/emergency-prep-kit/
+Product Listing Optimizer	https://digitalundergroundstore.com/tools/product-listing-optimizer/
+Kids' Birthday Party Planner	https://digitalundergroundstore.com/tools/kids-birthday-party-planner/
+Car Maintenance Log	https://digitalundergroundstore.com/tools/car-maintenance-log/
+Affiliate Program Starter Kit	https://digitalundergroundstore.com/tools/affiliate-program-kit/
+Price Increase Kit	https://digitalundergroundstore.com/tools/price-increase-kit/
+Home Inventory for Insurance	https://digitalundergroundstore.com/tools/home-inventory-kit/
+Black Friday Sale Kit for Makers	https://digitalundergroundstore.com/tools/black-friday-sale-kit/
+User Interview Script Kit	https://digitalundergroundstore.com/tools/user-interview-kit/
+Packing Lists by Trip Type	https://digitalundergroundstore.com/tools/packing-list-kit/
+Crowdfunding Launch Kit	https://digitalundergroundstore.com/tools/crowdfunding-launch-kit/

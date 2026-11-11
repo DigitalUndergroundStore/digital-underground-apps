@@ -1,0 +1,27 @@
+Do not apply until release.sh can publish store/p/maker-pro/index.html.
+
+1. Work only in /workspace/du-good. Keep the lock in place until after attest.
+2. Patch index.html (tip link in .duf-legal). Also update scripts/site-nav.py
+   FOOT and scripts/store/partials/site-foot.html, but do not stamp all pages.
+3. Patch store/p/maker-pro/index.html as in maker-pro-stripe.patch.
+4. Diff only those intended files. Do not include assets/site-nav/site-nav.css
+   (worktree is older than known-good).
+5. Allowlist:
+     index.html
+     store/p/maker-pro/index.html   # only after a reviewed policy exception
+     -.du-prod-ok
+6. Then the usual gated path, one pass:
+     ./scripts/release.sh stage --allowlist <allowlist>
+     ./scripts/release.sh execute --digest <DIGEST>
+     GUI shots at 390 / 412 / 1280 (homepage footer + /store/p/maker-pro/)
+     ./scripts/release.sh layout --digest <DIGEST>
+     ./scripts/release.sh attest --digest <DIGEST> --reviewer "DU Alpha" \
+       --shot-390 ... --shot-412 ... --shot-1280 ...
+     Remove .du-deploy-blocked only for deploy, then:
+     CLOUDFLARE_ACCOUNT_ID=89c87c2f93e2a2f89147d44259d5d542
+     ./scripts/release.sh deploy --digest <DIGEST>
+     Restore the lock immediately (sha256 433fea1d4727151c276e1c2f8ab3ed26f165c96e17be9b997a9174de31e4420f).
+7. Rollback target until then remains pages_id a743bc4c /
+   digest 18ad6844ec7628c22ad978a73e495422f8bfacda227eed27a707c2cdf1de7c95.
+8. After publish: curl homepage, a marketplace page, and /store/p/maker-pro/
+   and confirm tip + Stripe links and all four Featured-on badges. Health OK.

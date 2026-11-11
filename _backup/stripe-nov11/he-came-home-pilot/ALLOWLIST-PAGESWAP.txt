@@ -1,0 +1,3 @@
+# He Came Home Without Her page swap only. Do not include site-nav.css or other store files.
+store/p/he-came-home-without-her/index.html
+-.du-prod-ok

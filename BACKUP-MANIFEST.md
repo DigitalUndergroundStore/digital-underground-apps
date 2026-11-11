@@ -73,6 +73,7 @@ GitHub is **public**, so secrets and paid product deliverables stay off this bra
 | Paid product files (epub/pdf/zip/docx) under stripe-nov11 `files/`, `files-to-upload/`, `fixtures/` | Proprietary buyer deliverables | Box paths under `/workspace/stripe-nov11/**/files/` and `**/files-to-upload/`; confirmed Oct 7 sources under `/workspace/digital-underground/fixed/_gumroad-backup-oct7/<gid>/delivered/`; live binaries also in Workers KV namespace `du-product-files` (`28ce144531b14fb28d48977050e2a8ec`, binding `DOWNLOADS_KV`). Checksums are in this branch. |
 | Untracked `tools/**/*.zip` kit zips in the du-good worktree | New product-like binaries; repo is public. Already-tracked zips were left in history. | `/workspace/du-good/tools/<kit>/<kit>.zip` on the box |
 | `/workspace/stripe-nov11/null-harbor-pilot/stripe-promo.txt` and `promo_code` / `coupon_id` fields | Live (or leftover) checkout promo codes must not be published | Originals remain on the box under `/workspace/stripe-nov11/` only |
+| `/workspace/stripe-nov11/stripe/account.json` | Stripe account dump with personal contact fields; not for a public repo | `/workspace/stripe-nov11/stripe/account.json` on the box only |
 | `/workspace/digital-underground` except `brand/` (~4.7 GB: gumroad backup, fixed deliverables, kdp-upload, promo/marketing dumps) | Too large / contains product files | `/workspace/digital-underground/` on the box |
 
 ## Follow-up needed

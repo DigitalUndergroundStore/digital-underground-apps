@@ -1,0 +1,22 @@
+Deleted scheduled follow-train posts (before create of new strategy queue)
+Deleted at: ~2026-11-09 ~12:45 America/Toronto
+Count: 5
+
+6af1c81d9a6192a0dc8e0dc3	2026-11-09 13:20 EST	New here? Say hi and grow with us
+6af1c81ea95224132455366c	2026-11-09 14:20 EST	Afternoon growth train is boarding
+6af1c8209a6192a0dc8e0fa7	2026-11-09 15:20 EST	Let's help each other grow
+6af1c82155ccb8ee465f7563	2026-11-09 16:20 EST	Open follow train, everyone welcome
+6af1c8224ed9d7a0d39731a6	2026-11-09 17:20 EST	End of day follow train
+
+---
+Created replacement posts (all status=scheduled, customScheduled):
+6af2064bc1ebd32415dc5da6	2026-11-09 17:20 EST	spotlight	MacZentra from @MacZentra...	maczentra.com/og-image.jpg
+6af2064dc1ebd32415dc5e13	2026-11-09 20:20 EST	lesson	Listings that get love...	connect-grow-together.jpg
+6af2064ebee14f648c68803a	2026-11-10 09:20 EST	hook	Builders only: Reply with the one feature...	none
+6af20651c1ebd32415dc5f3b	2026-11-10 12:20 EST	spotlight	Media Renamer Pro from @MediaRenamerPro...	media-renamer-pro-cover.webp
+6af206524af3cc032bb4a82e	2026-11-10 17:20 EST	soft-cta	Free marketplace for apps...	follow-train-staircase.jpg
+6af20656c1ebd32415dc6013	2026-11-10 20:20 EST	spotlight	easy-ping from @tsemadre...	easy-pings.com/og.png
+6af20656c1ebd32415dc6038	2026-11-11 09:20 EST	lesson	I was tired of X so I built Y...	none
+6af206587176a1c926fe84a1	2026-11-11 12:20 EST	hook	Drop your stack in one line...	none
+6af2065a5260c1ff2b1565de	2026-11-11 17:20 EST	spotlight	MyWorld from @Jacobmalherbe21...	myworld.fyi/og.jpg
+6af2065bc1ebd32415dc6206	2026-11-11 20:20 EST	short-take	Follower trains inflate the number...	none

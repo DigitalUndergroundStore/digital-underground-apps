@@ -59,6 +59,7 @@ Allow: /offline-invoice-generator/
 Allow: /offline-habit-tracker-focus-timer/
 Allow: /free-study-planner-for-students/
 Allow: /list-your-indie-app-free/
+Allow: /how-it-works/
 Allow: /privacy/
 Allow: /terms/
 Allow: /free-book/
@@ -95,6 +96,7 @@ Allow: /offline-invoice-generator/
 Allow: /offline-habit-tracker-focus-timer/
 Allow: /free-study-planner-for-students/
 Allow: /list-your-indie-app-free/
+Allow: /how-it-works/
 Allow: /privacy/
 Allow: /terms/
 Allow: /free-book/

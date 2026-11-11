@@ -99,7 +99,7 @@
 
 /* Official Maker of the Week badge (inline, beside Share) */
 .lgh-btns{align-items:center}
-.lgh-motw{position:relative;display:inline-block;height:40px;line-height:0;border-radius:20px;flex:none;-webkit-mask:url(/assets/badges/maker-of-the-week.svg?v=1) center/contain no-repeat;mask:url(/assets/badges/maker-of-the-week.svg?v=1) center/contain no-repeat;transition:transform .2s,filter .2s}
+.lgh-motw{position:relative;display:inline-block;height:40px;line-height:0;border-radius:20px;flex:none;-webkit-mask:url(/assets/badges/maker-of-the-week.svg?v=crown1) center/contain no-repeat;mask:url(/assets/badges/maker-of-the-week.svg?v=crown1) center/contain no-repeat;transition:transform .2s,filter .2s}
 .lgh-motw img{height:40px;width:auto;display:block}
 .lgh-motw::after{content:"";position:absolute;inset:0;background:transparent;transform:translateX(-120%);animation:lgh-motw-shine 6s ease-in-out 1.5s infinite;pointer-events:none}
 .lgh-motw:hover{transform:translateY(-1px);filter: brightness(1.08)}

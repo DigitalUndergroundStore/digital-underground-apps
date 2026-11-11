@@ -1,0 +1,61 @@
+/* Permanent Builder Battle / Maker League trophies — HD cup */
+.ml-trophy{position:absolute;z-index:4;pointer-events:none;line-height:0;filter:drop-shadow(0 3px 8px rgba(0,0,0,.55))}
+.ml-trophy img{display:block;width:100%;height:auto}
+.ml-trophy--corner{top:6px;right:6px;width:44px}
+.ml-trophy--inline{position:relative;display:inline-block;width:40px;height:40px;margin:0 0 0 10px;vertical-align:middle;pointer-events:auto;filter:drop-shadow(0 3px 8px rgba(0,0,0,.5))}
+.ml-trophy--inline img{width:40px;height:40px}
+.ml-trophy--dir{position:absolute;top:8px;right:8px;width:36px;height:36px;z-index:2;pointer-events:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.55))}
+.ml-trophy--dir img{width:36px;height:36px;display:block}
+.mk-card{position:relative}
+.mk-card-a{position:relative}
+.card .media,.card-media,.media{position:relative}
+.mk-tt h1{display:inline;vertical-align:middle}
+
+/* Cup + words — compact chip, never full-bleed on desktop */
+.ml-trophy-banner{
+  display:inline-flex;align-items:center;gap:12px;
+  margin:10px 0 2px;padding:8px 14px 8px 8px;
+  width:auto;max-width:100%;box-sizing:border-box;
+  border-radius:14px;text-decoration:none;color:inherit;pointer-events:auto;
+  background:linear-gradient(135deg,rgba(255,214,102,.16),rgba(184,120,16,.1) 50%,rgba(22,26,33,.65));
+  border:1px solid rgba(240,193,74,.38);
+  box-shadow:0 6px 18px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,243,196,.12);
+  transition:border-color .2s, transform .2s, box-shadow .2s;
+}
+.ml-trophy-banner:hover,.ml-trophy-banner:focus-visible{
+  border-color:rgba(255,226,122,.75);
+  transform:translateY(-1px);
+  box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,243,196,.18);
+}
+.ml-trophy-banner:focus-visible{outline:2px solid #f0c14a;outline-offset:2px}
+.ml-trophy-banner__cup{
+  flex:none;width:48px;height:48px;display:block;
+  filter:drop-shadow(0 3px 8px rgba(0,0,0,.55));
+}
+.ml-trophy-banner__text{display:flex;flex-direction:column;gap:1px;min-width:0;padding-right:4px}
+.ml-trophy-banner__kicker{
+  font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:#f0c14a;line-height:1.2;white-space:nowrap;
+}
+.ml-trophy-banner__title{
+  font-size:15px;font-weight:750;letter-spacing:-.02em;line-height:1.2;
+  color:#fff8e6;white-space:nowrap;
+}
+.ml-trophy-banner__sub{display:none}
+
+/* Maker hero: keep banner under the name, left-aligned, not stretched */
+.mk-tt .ml-trophy-banner{display:inline-flex;margin-top:12px}
+.dt-head .ml-trophy-banner{display:inline-flex;margin-top:10px}
+
+@media(min-width:640px){
+  .ml-trophy--corner{width:56px;top:10px;right:10px}
+  .ml-trophy--inline{width:48px;height:48px}.ml-trophy--inline img{width:48px;height:48px}
+  .ml-trophy--dir{width:44px;height:44px;top:10px;right:10px}.ml-trophy--dir img{width:44px;height:44px}
+  .ml-trophy-banner{gap:14px;padding:10px 16px 10px 10px;border-radius:16px}
+  .ml-trophy-banner__cup{width:56px;height:56px}
+  .ml-trophy-banner__kicker{font-size:11px;letter-spacing:.16em}
+  .ml-trophy-banner__title{font-size:17px}
+}
+@media(prefers-reduced-motion:reduce){
+  .ml-trophy-banner{transition:none}.ml-trophy-banner:hover{transform:none}
+}

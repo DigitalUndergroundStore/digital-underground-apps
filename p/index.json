@@ -1,24 +1,24 @@
 {
   "invoice-desk": {
     "name": "Invoice Desk",
-    "price": "CA$19",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/nvmvyx",
+    "price": "$19",
+    "checkoutUrl": "https://buy.stripe.com/bJeaEZ3XudBn3Kee4W0ZW09",
     "gumroadCode": "nvmvyx",
     "shareUrl": "https://digitalundergroundstore.com/p/invoice-desk/",
     "ogImage": "https://digitalundergroundstore.com/p/og/invoice-desk.jpg"
   },
   "streak-kit": {
     "name": "Streak Kit",
-    "price": "CA$9",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/idasqr",
+    "price": "$9",
+    "checkoutUrl": "https://buy.stripe.com/fZueVfbpW68V6Wqe4W0ZW0d",
     "gumroadCode": "idasqr",
     "shareUrl": "https://digitalundergroundstore.com/p/streak-kit/",
     "ogImage": "https://digitalundergroundstore.com/p/og/streak-kit.jpg"
   },
   "scope-lock": {
     "name": "Scope Lock",
-    "price": "CA$12",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/omzql",
+    "price": "$12",
+    "checkoutUrl": "https://buy.stripe.com/6oUbJ33XueFrfsW5yq0ZW07",
     "gumroadCode": "omzql",
     "shareUrl": "https://digitalundergroundstore.com/p/scope-lock/",
     "ogImage": "https://digitalundergroundstore.com/p/og/scope-lock.jpg"
@@ -33,7 +33,7 @@
   },
   "winston": {
     "name": "Winston \u2014 Hands-Free Kitchen Voice Assistant",
-    "price": "CA$19",
+    "price": "$19",
     "checkoutUrl": "https://kerzy.gumroad.com/l/jkpty",
     "gumroadCode": "jkpty",
     "shareUrl": "https://digitalundergroundstore.com/p/winston/",
@@ -41,7 +41,7 @@
   },
   "planetview": {
     "name": "PlanetView Live",
-    "price": "CA$24",
+    "price": "$24",
     "checkoutUrl": "https://kerzy.gumroad.com/l/oxnfvy",
     "gumroadCode": "oxnfvy",
     "shareUrl": "https://digitalundergroundstore.com/p/planetview/",
@@ -49,7 +49,7 @@
   },
   "session-forge": {
     "name": "Session Forge",
-    "price": "CA$14.99+",
+    "price": "$14.99+",
     "checkoutUrl": "https://kerzy.gumroad.com/l/wcvgxo",
     "gumroadCode": "wcvgxo",
     "shareUrl": "https://digitalundergroundstore.com/p/session-forge/",
@@ -57,7 +57,7 @@
   },
   "plainhelp": {
     "name": "PlainHelp",
-    "price": "CA$39",
+    "price": "$39",
     "checkoutUrl": "https://kerzy.gumroad.com/l/ozzrh",
     "gumroadCode": "ozzrh",
     "shareUrl": "https://digitalundergroundstore.com/p/plainhelp/",
@@ -65,15 +65,15 @@
   },
   "reply-forge": {
     "name": "Reply Forge",
-    "price": "CA$9",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/nlwvb",
+    "price": "$9",
+    "checkoutUrl": "https://buy.stripe.com/8x228t0Liapb5Sm3qi0ZW06",
     "gumroadCode": "nlwvb",
     "shareUrl": "https://digitalundergroundstore.com/p/reply-forge/",
     "ogImage": "https://digitalundergroundstore.com/p/og/reply-forge.jpg"
   },
   "chatgpt-prompt-pack": {
     "name": "ChatGPT Prompt Pack",
-    "price": "CA$9",
+    "price": "$9",
     "checkoutUrl": "https://kerzy.gumroad.com/l/lqynfs",
     "gumroadCode": "lqynfs",
     "shareUrl": "https://digitalundergroundstore.com/p/chatgpt-prompt-pack/",
@@ -81,15 +81,15 @@
   },
   "rate-wire": {
     "name": "Rate Wire",
-    "price": "CA$9",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/ppnorh",
+    "price": "$9",
+    "checkoutUrl": "https://buy.stripe.com/dRm14pbpW7cZ5Sm1ia0ZW08",
     "gumroadCode": "ppnorh",
     "shareUrl": "https://digitalundergroundstore.com/p/rate-wire/",
     "ogImage": "https://digitalundergroundstore.com/p/og/rate-wire.jpg"
   },
   "offer-desk": {
     "name": "Offer Desk",
-    "price": "CA$19",
+    "price": "$19",
     "checkoutUrl": "https://kerzy.gumroad.com/l/bhrrtz",
     "gumroadCode": "bhrrtz",
     "shareUrl": "https://digitalundergroundstore.com/p/offer-desk/",
@@ -97,39 +97,39 @@
   },
   "launch-ledger": {
     "name": "Launch Ledger",
-    "price": "CA$29",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/iacbv",
+    "price": "$29",
+    "checkoutUrl": "https://buy.stripe.com/fZueVf2Tq2WJ94y8KC0ZW0e",
     "gumroadCode": "iacbv",
     "shareUrl": "https://digitalundergroundstore.com/p/launch-ledger/",
     "ogImage": "https://digitalundergroundstore.com/p/og/launch-ledger.jpg"
   },
   "focus-gate": {
     "name": "Focus Gate",
-    "price": "CA$7",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/tckoc",
+    "price": "$7",
+    "checkoutUrl": "https://buy.stripe.com/28E6oJcu068V1C6gd40ZW0a",
     "gumroadCode": "tckoc",
     "shareUrl": "https://digitalundergroundstore.com/p/focus-gate/",
     "ogImage": "https://digitalundergroundstore.com/p/og/focus-gate.jpg"
   },
   "box-and-go": {
     "name": "Box & Go",
-    "price": "CA$12",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/hfyam",
+    "price": "$12",
+    "checkoutUrl": "https://buy.stripe.com/9B6bJ3alScxjeoS3qi0ZW0b",
     "gumroadCode": "hfyam",
     "shareUrl": "https://digitalundergroundstore.com/p/box-and-go/",
     "ogImage": "https://digitalundergroundstore.com/p/og/box-and-go.jpg"
   },
   "packlane": {
     "name": "Packlane",
-    "price": "CA$7",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/lchlou",
+    "price": "$7",
+    "checkoutUrl": "https://buy.stripe.com/fZucN7gKggNz6Wq6Cu0ZW0c",
     "gumroadCode": "lchlou",
     "shareUrl": "https://digitalundergroundstore.com/p/packlane/",
     "ogImage": "https://digitalundergroundstore.com/p/og/packlane.jpg"
   },
   "grok-prompt-pack": {
     "name": "Grok Prompt Pack",
-    "price": "CA$29",
+    "price": "$29",
     "checkoutUrl": "https://kerzy.gumroad.com/l/jsdrug",
     "gumroadCode": "jsdrug",
     "shareUrl": "https://digitalundergroundstore.com/p/grok-prompt-pack/",
@@ -137,7 +137,7 @@
   },
   "ai-audience-growth-toolkit": {
     "name": "AI Audience Growth Toolkit",
-    "price": "CA$29",
+    "price": "$29",
     "checkoutUrl": "https://kerzy.gumroad.com/l/pgkgdc",
     "gumroadCode": "pgkgdc",
     "shareUrl": "https://digitalundergroundstore.com/p/ai-audience-growth-toolkit/",
@@ -145,7 +145,7 @@
   },
   "cork": {
     "name": "Cork \u2014 Darts Scoreboard",
-    "price": "CA$25",
+    "price": "$25",
     "checkoutUrl": "https://kerzy.gumroad.com/l/fjmmi",
     "gumroadCode": "fjmmi",
     "shareUrl": "https://digitalundergroundstore.com/p/cork/",
@@ -153,7 +153,7 @@
   },
   "focus-habits-pack": {
     "name": "Focus & Habits Pack",
-    "price": "CA$19",
+    "price": "$19",
     "checkoutUrl": "https://kerzy.gumroad.com/l/wgjffu",
     "gumroadCode": "wgjffu",
     "shareUrl": "https://digitalundergroundstore.com/p/focus-habits-pack/",
@@ -161,7 +161,7 @@
   },
   "ai-creator-bundle": {
     "name": "AI Creator Bundle",
-    "price": "CA$79",
+    "price": "$79",
     "checkoutUrl": "https://kerzy.gumroad.com/l/lgvubv",
     "gumroadCode": "lgvubv",
     "shareUrl": "https://digitalundergroundstore.com/p/ai-creator-bundle/",
@@ -169,7 +169,7 @@
   },
   "complete-freelance-suite": {
     "name": "Complete Freelance Suite",
-    "price": "CA$79",
+    "price": "$79",
     "checkoutUrl": "https://kerzy.gumroad.com/l/vvtib",
     "gumroadCode": "vvtib",
     "shareUrl": "https://digitalundergroundstore.com/p/complete-freelance-suite/",
@@ -177,7 +177,7 @@
   },
   "freelance-admin-stack": {
     "name": "Freelance Admin Stack",
-    "price": "CA$35",
+    "price": "$35",
     "checkoutUrl": "https://kerzy.gumroad.com/l/lggigy",
     "gumroadCode": "lggigy",
     "shareUrl": "https://digitalundergroundstore.com/p/freelance-admin-stack/",
@@ -185,23 +185,23 @@
   },
   "null-harbor": {
     "name": "Null Harbor",
-    "price": "CA$4.99",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/jcazp",
+    "price": "$4.99",
+    "checkoutUrl": "https://buy.stripe.com/bJe6oJ65CfJveoS2me0ZW04",
     "gumroadCode": "jcazp",
     "shareUrl": "https://digitalundergroundstore.com/p/null-harbor/",
     "ogImage": "https://digitalundergroundstore.com/p/og/null-harbor.jpg"
   },
   "he-came-home-without-her": {
     "name": "He Came Home Without Her",
-    "price": "CA$4.99",
-    "checkoutUrl": "https://kerzy.gumroad.com/l/ygwhif",
+    "price": "$4.99",
+    "checkoutUrl": "https://buy.stripe.com/dRmcN7gKgbtfbcGbWO0ZW05",
     "gumroadCode": "ygwhif",
     "shareUrl": "https://digitalundergroundstore.com/p/he-came-home-without-her/",
     "ogImage": "https://digitalundergroundstore.com/p/og/he-came-home-without-her.jpg"
   },
   "humanity-x-into-the-stars": {
     "name": "Humanity X: Into The Stars",
-    "price": "CA$9.99",
+    "price": "$9.99",
     "checkoutUrl": "https://kerzy.gumroad.com/l/sgrnpe",
     "gumroadCode": "sgrnpe",
     "shareUrl": "https://digitalundergroundstore.com/p/humanity-x-into-the-stars/",
@@ -209,7 +209,7 @@
   },
   "humanity-x-off-the-ground": {
     "name": "Humanity X: Off the Ground",
-    "price": "CA$9.99",
+    "price": "$9.99",
     "checkoutUrl": "https://kerzy.gumroad.com/l/umndpu",
     "gumroadCode": "umndpu",
     "shareUrl": "https://digitalundergroundstore.com/p/humanity-x-off-the-ground/",

@@ -21,32 +21,28 @@ async function voterKeys(request, week, cookie) {
 }
 
 export async function onRequestGet({ request, env }) {
-  const kv = getKv(env); const week = weekOf();
-  const list = await eligible(new URL(request.url).origin);
+  const kv = getKv(env); const week = weekOf(); const origin = new URL(request.url).origin;
+  // Everything independent runs in parallel (was sequential: ~1.5s+ on cold KV).
+  const listP = eligible(origin);
   const seen = new Set();
-  const counts = kv ? await tally(kv, week, seen) : new Map();
-  let voted = null, prev = null;
+  let voted = null, prev = null, counts = new Map(), list;
   if (kv) {
-    const { ipKeys, ckKey } = await voterKeys(request, week, cookieOf(request));
-    // KV list() is eventually consistent (new keys can take ~60s to appear). Votes from this
-    // visitor's network that a direct read sees but the list doesn't yet are added so a voter
-    // always sees their own vote counted right away.
-    for (const k of ipKeys) {
-      if (seen.has(k)) continue;
-      const { value, metadata } = await kv.getWithMetadata(k);
-      if (value && metadata && !metadata.ign) counts.set(value, (counts.get(value) || 0) + 1);
-    }
-    voted = (ckKey && (await kv.get(ckKey))) || null;
-    if (!voted && (await Promise.all(ipKeys.map((k) => kv.get(k)))).every(Boolean)) voted = true; // network used all its votes
-    if (!voted) { // previous (closed) week: lets cards say "Week N closed" instead of a bare Cast after the Friday rollover
-      try {
-        const pw = prevWeek(week); const ck = cookieOf(request);
-        const mine = ck ? await kv.get(`lg:c:${pw}:${await sha("lgc|" + pw + "|" + ck)}`) : null;
-        let w = null; try { w = await lastWinner(kv, new URL(request.url).origin); } catch (e) {}
-        prev = { week: pw, voted: mine || null, winner: w ? { id: w.id, name: w.name || w.title || null } : null };
-      } catch (e) {}
-    }
-  }
+    const ck = cookieOf(request); const pw = prevWeek(week);
+    const [l, c, keys] = await Promise.all([listP, tally(kv, week, seen), voterKeys(request, week, ck)]);
+    list = l; counts = c;
+    const { ipKeys, ckKey } = keys;
+    const [ipVals, ckVal, mine, w] = await Promise.all([
+      Promise.all(ipKeys.map((k) => kv.getWithMetadata(k))),
+      ckKey ? kv.get(ckKey) : null,
+      ck ? sha("lgc|" + pw + "|" + ck).then((h) => kv.get(`lg:c:${pw}:${h}`)).catch(() => null) : null,
+      lastWinner(kv, origin, Date.now(), listP).catch(() => null),
+    ]);
+    // KV list() is eventually consistent: add this network's own votes a direct read sees.
+    ipKeys.forEach((k, i) => { const { value, metadata } = ipVals[i] || {}; if (!seen.has(k) && value && metadata && !metadata.ign) counts.set(value, (counts.get(value) || 0) + 1); });
+    voted = ckVal || null;
+    if (!voted && ipVals.every((r) => r && r.value)) voted = true; // network used all its votes
+    if (!voted) prev = { week: pw, voted: mine || null, winner: w ? { id: w.id, name: w.name || w.title || null } : null };
+  } else list = await listP;
   return json({ week, endsAt: weekEndsAt(week), standings: rank(list, counts), totalVotes: [...counts.values()].reduce((a, b) => a + b, 0),
     eligible: list.map((l) => ({ id: l.id, name: l.name, makerName: l.makerName, imageUrl: l.imageUrl, video: l.video && (l.video.kind === "file" || l.video.kind === "youtube" || l.video.kind === "vimeo") ? l.video : null })), voted, prev }, 200, { "cache-control": "no-store" });
 }

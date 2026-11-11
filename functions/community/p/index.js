@@ -2,6 +2,7 @@
 // title + Open Graph / Twitter meta (cover image) for crawlers and link previews.
 import { makerSlugFor } from "../../_lib/makers.js";
 import { getKv, kvGetListing, publicImageUrl, isRetired } from "../../_lib/community.js";
+import { listingPath } from "../../_lib/listing-url.js";
 const SITE = "https://digitalundergroundstore.com";
 const e = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const ORG = { "@type": "Organization", "@id": `${SITE}/#org`, name: "Digital Underground", url: `${SITE}/`,
@@ -44,23 +45,30 @@ export async function onRequestGet(context) {
     let row = kv && (await kvGetListing(kv, id));
     if (!row || row.status !== "approved") row = await seedListing(context, id); // owner's static seed, same as /api/community/listing
     if (!row || row.status !== "approved" || row.hidden || isRetired(row)) return miss();
-    let img = publicImageUrl(row) || "";
-    if (img.startsWith("/")) img = SITE + img;
-    if (!/^https:\/\//i.test(img)) img = "";
-    if (!img && !isKerzy(row, id)) img = `${SITE}/community/og-dm-v3.jpg`; // marketplace card as the share image fallback
-    const url = `${SITE}/community/p/?id=${encodeURIComponent(id)}`;
-    const title = `${row.name} — Developer Marketplace — Digital Underground`;
-    const desc = String(row.pitchShort || "").replace(/[^\s@<>"]+@gmail\.com/gi, "").slice(0, 300);
-    const meta = `<link rel="canonical" href="${e(url)}">\n<meta property="og:type" content="website">\n<meta property="og:site_name" content="Digital Underground">\n` +
-      `<meta property="og:title" content="${e(title)}">\n<meta property="og:description" content="${e(desc)}">\n<meta property="og:url" content="${e(url)}">\n` +
-      (img ? `<meta property="og:image" content="${e(img)}">\n<meta property="og:image:alt" content="${e(row.name)} cover image">\n<meta name="twitter:image" content="${e(img)}">\n` : "") +
-      `<meta name="twitter:card" content="${img ? "summary_large_image" : "summary"}">\n<meta name="twitter:title" content="${e(title)}">\n<meta name="twitter:description" content="${e(desc)}">\n` +
-      `<script type="application/ld+json">${JSON.stringify(listingLd(row, id, url, title, desc, img)).replace(/</g, "\\u003c")}</script>\n`;
-    let html = await res.text();
-    html = html.replace(/<title>[^<]*<\/title>/, `<title>${e(title)}</title>`)
-      .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${e(desc)}">`)
-      .replace("</head>", meta + "</head>");
-    const h = new Headers(res.headers); h.delete("content-length"); h.set("Cache-Control", "public, max-age=300");
-    return new Response(html, { status: res.status, headers: h });
+    // Pretty URLs (Nov 2 2026): old ?id= links 301 to /community/p/<slug>/ (browsers keep #contact/#report).
+    const to = new URL(listingPath(row), context.request.url);
+    return new Response(null, { status: 301, headers: { Location: to.toString(), "Cache-Control": "public, max-age=300" } });
   } catch { return res; }
+}
+
+/** Inject per-listing meta into the detail shell (used by the pretty /community/p/<slug>/ route). */
+export async function renderListing(res, row, id) {
+    let img = publicImageUrl(row) || "";
+  if (img.startsWith("/")) img = SITE + img;
+  if (!/^https:\/\//i.test(img)) img = "";
+  if (!img && !isKerzy(row, id)) img = `${SITE}/community/og-dm-v3.jpg`; // marketplace card as the share image fallback
+  const url = SITE + listingPath(row);
+  const title = `${row.name} — Developer Marketplace — Digital Underground`;
+  const desc = String(row.pitchShort || "").replace(/[^\s@<>"]+@gmail\.com/gi, "").slice(0, 300);
+  const meta = `<link rel="canonical" href="${e(url)}">\n<meta property="og:type" content="website">\n<meta property="og:site_name" content="Digital Underground">\n` +
+    `<meta property="og:title" content="${e(title)}">\n<meta property="og:description" content="${e(desc)}">\n<meta property="og:url" content="${e(url)}">\n` +
+    (img ? `<meta property="og:image" content="${e(img)}">\n<meta property="og:image:alt" content="${e(row.name)} cover image">\n<meta name="twitter:image" content="${e(img)}">\n` : "") +
+    `<meta name="twitter:card" content="${img ? "summary_large_image" : "summary"}">\n<meta name="twitter:title" content="${e(title)}">\n<meta name="twitter:description" content="${e(desc)}">\n` +
+    `<script type="application/ld+json">${JSON.stringify(listingLd(row, id, url, title, desc, img)).replace(/</g, "\\u003c")}</script>\n`;
+  let html = await res.text();
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${e(title)}</title>`)
+    .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${e(desc)}">`)
+    .replace("</head>", meta + "</head>");
+  const h = new Headers(res.headers); h.delete("content-length"); h.set("Cache-Control", "public, max-age=300");
+  return new Response(html, { status: res.status, headers: h });
 }

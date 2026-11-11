@@ -5,6 +5,7 @@
 import { listingPath } from "./_lib/listing-url.js";
 import { onRequest as listingsApi } from "./api/community/listings.js";
 import { edgeCached } from "./_lib/edgecache.js";
+import { coverSrc } from "./_lib/cover-src.js";
 
 const PAGE = 9;
 const GM = /[^\s@<>"]+@gmail\.com/gi;
@@ -40,7 +41,7 @@ function card(r, i) {
   const mk = (ms ? `<a href="/makers/${encodeURIComponent(ms)}/">${esc(r.makerName)}</a>` : esc(r.makerName))
     + (r.xHandle ? ` · <a href="https://x.com/${encodeURIComponent(r.xHandle)}" target="_blank" rel="noopener">@${esc(r.xHandle)}</a>` : "");
   const url = r.buyUrl || r.visitUrl || r.projectUrl || "";
-  const img = r.imageUrl ? `<img src="${esc(r.imageUrl)}" alt="${n} cover image" width="640" height="360" loading="${i < 4 ? "eager" : "lazy"}"${i === 0 ? ' fetchpriority="high"' : ""} decoding="async">` : "";
+  const img = r.imageUrl ? `<img src="${esc(coverSrc(r.imageUrl, { id: r.id, index: i }))}" alt="${n} cover image" width="640" height="360" loading="${i < 4 ? "eager" : "lazy"}"${i === 0 ? ' fetchpriority="high"' : ""} decoding="async">` : "";
   return `<article class="card" data-id="${esc(id)}"><div class="card-media">${badges}${img}<div class="card-placeholder" aria-hidden="true" style="background:url(/assets/covers/default-cover.svg) center/cover no-repeat"></div></div>`
     + `<div class="card-body"><div class="card-meta">${mk}</div><h3 class="card-title"><a href="${page}">${n}</a></h3><p class="card-desc">${esc(r.pitchShort)}</p>`
     + `<div class="card-footer"><span class="card-price${/^free/i.test(price.trim()) ? " free" : ""}">${esc(price)}</span><div class="card-actions">`
@@ -52,7 +53,7 @@ function card(r, i) {
 
 export async function onRequestGet(context) {
   const origin = new URL(context.request.url).origin;
-  return edgeCached(context, origin + "/__du_cache/home-ssr-v1", 120, 600, () => renderHome(context));
+  return edgeCached(context, origin + "/__du_cache/home-ssr-v10", 120, 600, () => renderHome(context));
 }
 
 async function renderHome(context) {

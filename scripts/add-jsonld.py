@@ -29,7 +29,7 @@ def product_ld(s: str, price_label: str, checkout: str):
     url = re.search(r'<link rel="canonical" href="([^"]+)"', s).group(1)
     name = meta(s, "property", "og:title")
     amount = meta(s, "property", "product:price:amount") or "0.00"
-    cur = meta(s, "property", "product:price:currency") or "CAD"
+    cur = meta(s, "property", "product:price:currency") or "USD"
     if price_label.strip().endswith("+"):
         offer = {"@type": "AggregateOffer", "lowPrice": amount, "priceCurrency": cur, "url": checkout or url,
                  "availability": "https://schema.org/InStock"}
@@ -64,7 +64,7 @@ def main() -> None:
         "bookFormat": "https://schema.org/AudiobookFormat", "genre": "Science fiction", "inLanguage": "en",
         "isPartOf": {"@type": "BookSeries", "name": "Humanity X Trilogy"}, "publisher": {"@id": f"{BASE}/#org"},
         "isAccessibleForFree": True,
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CAD", "url": f"{BASE}/free-book/",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "url": f"{BASE}/free-book/",
                    "availability": "https://schema.org/InStock"}}]})
     print(f"product pages: {n}, store + free-book done")
 

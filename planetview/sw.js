@@ -1,4 +1,4 @@
-const CACHE = "planetview-v1-autoupdate7";
+const CACHE = "planetview-v1-autoupdate10";
 const BASE = new URL("./", self.location).pathname;
 
 function under(suffix) {
@@ -19,7 +19,7 @@ self.addEventListener("activate", (event) => {
       .then((clients) => {
         for (const c of clients) {
           try {
-            c.postMessage({ type: "PV_FORCE_RELOAD", v: "autoupdate7" });
+            c.postMessage({ type: "PV_FORCE_RELOAD", v: "autoupdate10" });
           } catch (e) {}
           try {
             if (c.navigate) c.navigate(c.url);

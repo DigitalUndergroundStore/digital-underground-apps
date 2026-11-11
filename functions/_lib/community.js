@@ -24,6 +24,8 @@ function displayStage(row) {
 }
 
 const RATE_LIMIT = 8;
+/** Community submit only: 15/hour, 45/day per IP (counted only after Turnstile + validation pass). */
+export const SUBMIT_RATE_LIMIT = 15;
 const RATE_WINDOW_MS = 60 * 60 * 1000;
 const MAX_IMAGE_BYTES = 200_000; // new uploads only; existing larger images keep working
 const MAX_DESC_LONG = 4000;
@@ -49,9 +51,9 @@ export function clientIp(request) {
   );
 }
 
-/** Shared per-IP limit (8/hour and 20/day per data centre + isolate). Async. */
-export async function checkRate(env, ip, scope = "") {
-  const r = await rateAll(env, [...ipRules("rate" + scope, ip, RATE_LIMIT, RATE_WINDOW_MS / 1000), ...ipRules("rated" + scope, ip, RATE_LIMIT * 3, 86400)]);
+/** Shared per-IP limit: `limit`/hour and `limit`*3/day (default 8/24; submit passes 15 -> 15/45). Async. */
+export async function checkRate(env, ip, scope = "", limit = RATE_LIMIT) {
+  const r = await rateAll(env, [...ipRules("rate" + scope, ip, limit, RATE_WINDOW_MS / 1000), ...ipRules("rated" + scope, ip, limit * 3, 86400)]);
   return r.ok;
 }
 /** Same limits keyed on an arbitrary string (e.g. an email address). */
@@ -64,6 +66,23 @@ export function newListingId() {
   const t = Date.now().toString(36);
   const r = crypto.randomUUID().split("-")[0];
   return `cm_${t}_${r}`;
+}
+
+export function canonicalProjectUrl(raw) {
+  try {
+    const u = new URL(String(raw || "").trim());
+    if (u.protocol !== "https:") return "";
+    u.hash = "";
+    u.hostname = u.hostname.toLowerCase();
+    if (u.pathname.length > 1) u.pathname = u.pathname.replace(/\/+$/, "");
+    const entries = [...u.searchParams.entries()].filter(([k]) => k !== "ref");
+    entries.sort((a, b) => (a[0] === b[0] ? (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0) : a[0] < b[0] ? -1 : 1));
+    u.search = "";
+    for (const [k, v] of entries) u.searchParams.append(k, v);
+    return u.toString();
+  } catch {
+    return "";
+  }
 }
 
 export function appendRefParam(url) {
@@ -394,6 +413,25 @@ export async function kvDeleteListing(kv, id) {
   await kv.delete(`community:item:${id}`);
 }
 
+/** Collapse accidental double-submits (same name + same project URL): keep the newest listing.
+ *  Returns the kept rows; rows.dupOf maps each dropped id to the kept row (for redirects). Nov 2 2026. */
+const idTime = (id) => { const m = /^cm_([a-z0-9]+)_/.exec(String(id || "")); const t = m ? parseInt(m[1], 36) : 0; return Number.isFinite(t) ? t : 0; };
+export function dedupeListings(rows) {
+  const best = new Map(), dupOf = new Map();
+  for (const r of rows) {
+    const u = canonicalProjectUrl(r && r.projectUrl);
+    const k = u ? `${String(r.name || "").trim().toLowerCase()}|${u}` : `id|${r && r.id}`;
+    const cur = best.get(k);
+    if (!cur) { best.set(k, r); continue; }
+    const keep = idTime(r.id) > idTime(cur.id) ? r : cur, drop = keep === r ? cur : r;
+    best.set(k, keep); dupOf.set(drop.id, keep);
+  }
+  for (const [d, k] of dupOf) { const fin = best.get(`${String(k.name || "").trim().toLowerCase()}|${canonicalProjectUrl(k.projectUrl)}`); if (fin) dupOf.set(d, fin); }
+  const out = rows.filter((r) => !dupOf.has(r.id));
+  out.dupOf = dupOf;
+  return out;
+}
+
 export async function listApproved(kv, env) {
   const index = await kvGetIndex(kv);
   const out = [];
@@ -402,7 +440,7 @@ export async function listApproved(kv, env) {
     if (row && row.status === "approved" && !isRetired(row)) out.push(env ? { ...publicListing(row), contactable: !!listingContactAddress(env, row) } : publicListing(row));
   }
   out.sort((a, b) => (a.name || "").localeCompare(b.name || ""));
-  return out;
+  return dedupeListings(out);
 }
 
 export async function listPending(kv) {
@@ -732,6 +770,16 @@ function makerSiteLinks(env, request) {
 }
 
 /** Public product page. Same path the marketplace and creator dashboard use. */
+/** Canonical pretty listing path, matching league and public detail links. */
+export function listingPrettyPath(listing) {
+  const name = String(listing?.name || "").normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "").toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+    .slice(0, 48).replace(/-+$/, "");
+  const tail = String(listing?.id || "").split("_").pop().toLowerCase().replace(/[^a-z0-9]/g, "");
+  return `/community/p/${name && name !== tail ? name + "-" + tail : tail}/`;
+}
+
 export function listingPublicUrl(id, env, request) {
   const origin = communitySiteOrigin(env, request);
   return `${origin}/community/p/?id=${encodeURIComponent(id || "")}`;

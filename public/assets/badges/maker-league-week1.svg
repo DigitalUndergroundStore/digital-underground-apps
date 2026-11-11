@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800" role="img" aria-label="Maker League Week 1 winner">
+<title>Maker League · Week 1 Trophy</title>
+<defs>
+  <linearGradient id="goldV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff8d6"/><stop offset=".18" stop-color="#ffe27a"/>
+    <stop offset=".4" stop-color="#e8b830"/><stop offset=".62" stop-color="#b87810"/>
+    <stop offset=".82" stop-color="#8a5208"/><stop offset="1" stop-color="#5a3404"/>
+  </linearGradient>
+  <linearGradient id="goldH" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#6b3d05"/><stop offset=".22" stop-color="#f0c14a"/>
+    <stop offset=".45" stop-color="#fff3c0"/><stop offset=".55" stop-color="#ffe27a"/>
+    <stop offset=".78" stop-color="#c88814"/><stop offset="1" stop-color="#5a3404"/>
+  </linearGradient>
+  <linearGradient id="darkMetal" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#5a3204"/><stop offset=".5" stop-color="#2a1602"/><stop offset="1" stop-color="#140a01"/>
+  </linearGradient>
+  <linearGradient id="rimShine" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff9e0"/><stop offset=".4" stop-color="#ffd24a"/><stop offset="1" stop-color="#a86a10"/>
+  </linearGradient>
+  <linearGradient id="cupInner" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3a2008"/><stop offset=".35" stop-color="#7a480c"/><stop offset="1" stop-color="#c89020"/>
+  </linearGradient>
+  <linearGradient id="baseTop" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#8a5208"/>
+  </linearGradient>
+  <linearGradient id="plaque" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4a2806"/><stop offset=".5" stop-color="#1a0c02"/><stop offset="1" stop-color="#5a3408"/>
+  </linearGradient>
+  <linearGradient id="letterCut" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff6c8"/><stop offset=".35" stop-color="#ffd24a"/><stop offset="1" stop-color="#c88810"/>
+  </linearGradient>
+  <radialGradient id="bowlSpec" cx=".35" cy=".25" r=".75">
+    <stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset=".4" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#000" stop-opacity=".2"/>
+  </radialGradient>
+  <filter id="drop" x="-20%" y="-10%" width="140%" height="130%">
+    <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity=".55"/>
+  </filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="1.4"/></filter>
+</defs>
+
+<g filter="url(#drop)">
+  <!-- LEFT HANDLE -->
+  <path d="M168,118 C78,128 52,210 78,278 C98,328 148,348 188,330" fill="none" stroke="url(#goldV)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M168,118 C78,128 52,210 78,278 C98,328 148,348 188,330" fill="none" stroke="#fff6c8" stroke-opacity=".35" stroke-width="10" stroke-linecap="round"/>
+  <path d="M168,118 C90,130 68,205 90,268 C108,312 148,328 184,316" fill="none" stroke="#3a1e04" stroke-opacity=".35" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- RIGHT HANDLE -->
+  <path d="M472,118 C562,128 588,210 562,278 C542,328 492,348 452,330" fill="none" stroke="url(#goldV)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M472,118 C562,128 588,210 562,278 C542,328 492,348 452,330" fill="none" stroke="#fff6c8" stroke-opacity=".35" stroke-width="10" stroke-linecap="round"/>
+  <path d="M472,118 C550,130 572,205 550,268 C532,312 492,328 456,316" fill="none" stroke="#3a1e04" stroke-opacity=".35" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- CUP RIM -->
+  <ellipse cx="320" cy="108" rx="168" ry="28" fill="url(#rimShine)"/>
+  <ellipse cx="320" cy="102" rx="158" ry="20" fill="url(#cupInner)"/>
+  <ellipse cx="320" cy="98" rx="150" ry="14" fill="#1a0c04" fill-opacity=".35"/>
+
+  <!-- CUP BODY -->
+  <path d="M152,118
+           C152,118 148,220 170,300
+           C190,360 240,400 320,400
+           C400,400 450,360 470,300
+           C492,220 488,118 488,118
+           Z" fill="url(#goldH)"/>
+  <path d="M152,118
+           C152,118 148,220 170,300
+           C190,360 240,400 320,400
+           C400,400 450,360 470,300
+           C492,220 488,118 488,118
+           Z" fill="url(#bowlSpec)"/>
+  <!-- side bevel lines -->
+  <path d="M188,130 C185,220 205,310 240,360" fill="none" stroke="#fff8d6" stroke-opacity=".28" stroke-width="6" stroke-linecap="round"/>
+  <path d="M452,130 C455,220 435,310 400,360" fill="none" stroke="#3a1e04" stroke-opacity=".28" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- CUP BAND -->
+  <path d="M168,250 Q320,278 472,250" fill="none" stroke="#5a3204" stroke-width="14" stroke-linecap="round"/>
+  <path d="M170,246 Q320,272 470,246" fill="none" stroke="#ffe27a" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- NECK -->
+  <path d="M278,400 L278,470 L362,470 L362,400 Z" fill="url(#goldV)"/>
+  <rect x="268" y="392" width="104" height="18" rx="4" fill="url(#rimShine)"/>
+  <rect x="286" y="455" width="68" height="22" rx="3" fill="url(#darkMetal)"/>
+
+  <!-- STEM KNOB -->
+  <ellipse cx="320" cy="490" rx="48" ry="22" fill="url(#goldV)"/>
+  <ellipse cx="320" cy="486" rx="40" ry="14" fill="#fff3c0" fill-opacity=".35"/>
+
+  <!-- LOWER STEM -->
+  <path d="M300,505 L292,560 L348,560 L340,505 Z" fill="url(#goldV)"/>
+
+  <!-- BASE STEPS -->
+  <ellipse cx="320" cy="575" rx="110" ry="22" fill="url(#baseTop)"/>
+  <rect x="210" y="575" width="220" height="28" fill="url(#goldV)"/>
+  <ellipse cx="320" cy="603" rx="110" ry="18" fill="#8a5208"/>
+
+  <ellipse cx="320" cy="620" rx="150" ry="26" fill="url(#baseTop)"/>
+  <rect x="170" y="620" width="300" height="36" fill="url(#goldV)"/>
+  <ellipse cx="320" cy="656" rx="150" ry="20" fill="#6b3d05"/>
+
+  <ellipse cx="320" cy="668" rx="190" ry="30" fill="url(#rimShine)"/>
+  <rect x="130" y="668" width="380" height="48" fill="url(#goldH)"/>
+  <ellipse cx="320" cy="716" rx="190" ry="24" fill="#5a3404"/>
+
+  <!-- engraved plaque on base (metal inset, not a UI pill) -->
+  <rect x="190" y="678" width="260" height="42" rx="8" fill="url(#plaque)"/>
+  <rect x="194" y="682" width="252" height="34" rx="6" fill="none" stroke="#f0c14a" stroke-opacity=".45" stroke-width="2"/>
+  <!-- WEEK 1 cut into plaque -->
+  <text x="320" y="707" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif" font-size="26" font-weight="800" letter-spacing="0.28em" fill="#1a0a02">WEEK 1</text>
+  <text x="320" y="705" text-anchor="middle" font-family="ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif" font-size="26" font-weight="800" letter-spacing="0.28em" fill="url(#letterCut)">WEEK 1</text>
+</g>
+
+<!-- soft specular on cup -->
+<path d="M210,140 C230,200 250,280 280,340" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="14" stroke-linecap="round" filter="url(#soft)"/>
+</svg>

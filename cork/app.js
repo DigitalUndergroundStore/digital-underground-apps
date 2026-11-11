@@ -203,7 +203,7 @@
       fillVisits($("log" + i), seat.visits);
     }
     $("turnName").textContent = label(state.turn);
-    $("typed").textContent = state.typed || "0";
+    $("typed").textContent = typedText();
     paintHint();
     paintResult();
     paintNet();
@@ -296,8 +296,18 @@
     lockUntil = Date.now() + 350;
   }
 
+  function typedTotal() {
+    var t = state.typed || "0";
+    return t.split("+").reduce(function (a, p) { return a + (parseInt(p || "0", 10) || 0); }, 0);
+  }
+
+  function typedText() {
+    var t = state.typed || "0";
+    return t.indexOf("+") >= 0 ? t + " = " + typedTotal() : t;
+  }
+
   function onDigit(ch) {
-    var next, n;
+    var next, parts, last;
     if (state.over || sheetOpen()) return;
     if (ch === "C") {
       state.typed = "";
@@ -305,12 +315,28 @@
       $("typed").textContent = "0";
       return;
     }
-    next = (state.typed === "0" ? "" : state.typed) + ch;
-    n = parseInt(next, 10);
-    if (n > 180) return;
-    state.typed = String(n);
+    if (ch === "+") {
+      parts = (state.typed || "").split("+");
+      if (!state.typed || parts.length >= 3 || parts[parts.length - 1] === "") return;
+      if (parseInt(parts[0], 10) > 60) return;
+      state.typed = state.typed + "+";
+      save();
+      $("typed").textContent = typedText();
+      return;
+    }
+    if ((state.typed || "").indexOf("+") >= 0) {
+      parts = state.typed.split("+");
+      last = String(parseInt(parts[parts.length - 1] + ch, 10));
+      if (parseInt(last, 10) > 60) return;
+      parts[parts.length - 1] = last;
+      state.typed = parts.join("+");
+    } else {
+      next = (state.typed === "0" ? "" : state.typed) + ch;
+      if (parseInt(next, 10) > 180) return;
+      state.typed = String(parseInt(next, 10));
+    }
     save();
-    $("typed").textContent = state.typed;
+    $("typed").textContent = typedText();
   }
 
   function commitResult(result, said) {
@@ -536,11 +562,20 @@
     }
   }
 
+  function openFeedback() {
+    var kind = window.confirm("OK = report a bug\nCancel = request a change") ? "Bug report" : "Change request";
+    var body = "What happened / what would you like changed?\n\n\n\n---\nCork " + (window.__DU_APP_VERSION__ || "") +
+      "\n" + (navigator.onLine === false ? "Written offline" : "Online") + "\n" + navigator.userAgent;
+    var href = "mailto:kerzydon@gmail.com?subject=" + encodeURIComponent("Cork " + kind) + "&body=" + encodeURIComponent(body);
+    if (navigator.onLine === false) ping("No wifi: your mail app will send it when you're back online");
+    window.location.href = href;
+  }
+
   function bind() {
     each(document.querySelectorAll(".key[data-k]"), function (b) {
       b.addEventListener("click", function () {
         var k = b.getAttribute("data-k");
-        if (k === "GO") onScore(parseInt(state.typed || "0", 10));
+        if (k === "GO") onScore(typedTotal());
         else onDigit(k);
       });
     });
@@ -552,6 +587,7 @@
     $("undoBtn").addEventListener("click", undo);
     $("menuBtn").addEventListener("click", openSheet);
     $("closeSheet").addEventListener("click", closeSheet);
+    $("feedbackBtn").addEventListener("click", openFeedback);
     $("fresh").addEventListener("click", commitMatch);
     $("nextLeg").addEventListener("click", onNextLeg);
     $("resultNew").addEventListener("click", openSheet);
@@ -662,14 +698,15 @@
         e.preventDefault();
         state.typed = state.typed.slice(0, -1);
         save();
-        $("typed").textContent = state.typed || "0";
+        $("typed").textContent = typedText();
         return;
       }
       if (e.key === "Enter") {
         e.preventDefault();
-        onScore(parseInt(state.typed || "0", 10));
+        onScore(typedTotal());
         return;
       }
+      if (e.key === "+") { e.preventDefault(); onDigit("+"); return; }
       if (/^[0-9]$/.test(e.key)) {
         e.preventDefault();
         onDigit(e.key);

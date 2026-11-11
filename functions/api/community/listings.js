@@ -13,7 +13,7 @@ import { hiddenByReports } from "../../_lib/reports.js";
 export async function onRequest(context) {
   if (context.request.method === "GET") {
     const origin = new URL(context.request.url).origin;
-    return edgeCached(context, origin + "/__du_cache/listings-v1", 60, 300, () => listingsUncached(context));
+    return edgeCached(context, origin + "/__du_cache/listings-v1", 120, 600, () => listingsUncached(context));
   }
   return listingsUncached(context);
 }

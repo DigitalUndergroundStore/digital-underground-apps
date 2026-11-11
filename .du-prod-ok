@@ -1,0 +1,3 @@
+Approved production deploy tree for digitalundergroundstore.com.
+Created 2026-11-01 after WIP accidental-live restore.
+build-public.sh --deploy refuses any other directory.

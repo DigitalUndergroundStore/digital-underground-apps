@@ -1,10 +1,37 @@
 #!/usr/bin/env bash
-# Build dist/ with ONLY public site files, then (with --deploy) publish to Cloudflare Pages.
-# Functions stay in ./functions (wrangler picks them up from the working directory).
+# Inspect-only public dist/. Does not publish.
+# --deploy is refused after the du-good / .du-prod-ok / .du-deploy-blocked checks.
+# Production upload is scripts/release.sh. That sealed tree includes functions/.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# HARD GUARD (Nov 1 2026): never publish unpublished WIP to live.
+# Tonight a deploy from du-dash HEAD / WIP (HUD ask+wavy, wrong Maker Pro, etc.) hit production unasked.
+# Live --deploy ONLY from /workspace/du-good with .du-prod-ok present.
+if [[ "${1:-}" == "--deploy" ]]; then
+  _root="$(pwd -P)"
+  _base="$(basename "$_root")"
+  if [[ "$_base" != "du-good" ]]; then
+    echo "REFUSED: production deploy blocked." >&2
+    echo "Only /workspace/du-good may run --deploy (this tree is $_root)." >&2
+    echo "Unpublished WIP in du-dash / other trees must never hit digitalundergroundstore.com." >&2
+    exit 2
+  fi
+  if [[ ! -f .du-prod-ok ]]; then
+    echo "REFUSED: missing .du-prod-ok in $_root — not an approved production tree." >&2
+    exit 2
+  fi
+  if [[ -f .du-deploy-blocked ]]; then
+    echo "REFUSED: .du-deploy-blocked present in $_root." >&2
+    exit 2
+  fi
+  echo "REFUSED: build-public.sh --deploy does not publish this working tree." >&2
+  echo "Production publishes only a sealed release: known-good baseline + explicit allowlist." >&2
+  echo "Run: ./scripts/release.sh stage|attest|deploy   (see DEPLOY.md)" >&2
+  exit 2
+fi
+
 rm -rf dist && mkdir dist
-EXCLUDES=(dist src tools scripts docs workers functions node_modules .git .github .wrangler .dev.vars .gitignore .nojekyll CNAME README.md dev.log wrangler.toml package.json package-lock.json secrets)
+EXCLUDES=(dist src tools scripts docs workers functions node_modules .git .github .wrangler .dev.vars .gitignore .nojekyll CNAME README.md dev.log wrangler.toml package.json package-lock.json secrets .du-releases)
 args=(); for e in "${EXCLUDES[@]}"; do args+=(--exclude="./$e"); done
 tar -cf - --anchored "${args[@]}" --no-anchored \
   --exclude='*SECRET*' --exclude='*.keystore' --exclude='*.jks' --exclude='*.pem' --exclude='.env*' \
@@ -15,6 +42,4 @@ for k in commission-request-form inventory-restock-tracker maker-weekly-planner 
 # safety: fail if anything sensitive slipped in
 if find dist \( -iname '*secret*' -o -iname '*.keystore' -o -iname '.env*' -o -path 'dist/src/*' \) | grep -q .; then echo "sensitive file in dist/" >&2; exit 1; fi
 echo "dist/: $(find dist -type f | wc -l) files, $(du -sh dist | cut -f1)"
-if [[ "${1:-}" == "--deploy" ]]; then
-  npx -y wrangler@3 pages deploy dist --project-name digital-underground --branch main --commit-dirty=true
-fi
+echo "Inspect-only. This dist is NOT a production release."

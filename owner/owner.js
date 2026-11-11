@@ -59,6 +59,7 @@
       var pending = out.d.pendingCount || 0;
       var support = out.d.supportOpen || 0;
       var backup = out.d.backup || {};
+      var sh = out.d.shares || {};
       $("home-sub").textContent =
         (out.d.listingsLive || 0) + " live listings · " + (out.d.contactsTotal || 0) + " contacts";
       $("home-cards").innerHTML =
@@ -66,13 +67,13 @@
         card("support", "Feedback & support", support, support ? "Needs a reply" : "Inbox zero", support ? "badge" : "badge ok") +
         card("contacts", "Contacts", out.d.contactsTotal || 0, "+" + (t.contacts || 0) + " today", "") +
         card("crm", "CRM pipeline", "→", "Leads, makers, press, follow-ups", "") +
+        card("analytics", "Shares", sh.total || 0, (sh.today || 0) + " today · " + ((sh.last7 && sh.last7.total) || w.shares || 0) + " in 7 days", "") +
         card("analytics", "Stats", (w.views || 0), "marketplace views, " + (w.clicks || 0) + " clicks · 7 days", "") +
         card("backups", "Backups", shortDate(backup.lastSnapshot) || "—", backup.ok ? "Latest snapshot" : "Check backup", backup.ok ? "badge ok" : "badge warn") +
         '<button type="button" class="oh-card" data-go="analytics" data-an-go="live" id="home-live"><div class="oh-label">Online now</div><div class="oh-value">…</div><div class="oh-meta">DU + Kerzy Labs</div></button>' +
         '<button type="button" class="oh-card" data-go="analytics" data-an-go="health" id="home-health"><div class="oh-label">Health</div><div class="oh-value">…</div><div class="oh-meta">Checking site…</div></button>' +
         card("apikeys", "API keys", "→", "Creator API access", "") +
-        card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "") +
-        '<a class="oh-card" href="/owner/hud/" id="home-hud"><div class="oh-label">DU Command</div><div class="oh-value">HUD</div><div class="oh-meta">Private ops desk · systems + decisions</div></a>';
+        card("links", "Quick links", "→", "Gumroad, Cloudflare, X…", "");
       homeHealth();
       $("home-today").innerHTML =
         '<div class="oh-today"><h2>Today</h2>' +
@@ -81,11 +82,57 @@
         '<div class="oh-row"><span>New submissions</span><span>' + (t.submissions || 0) + "</span></div>" +
         '<div class="oh-row"><span>New contacts</span><span>' + (t.contacts || 0) + "</span></div>" +
         '<div class="oh-row"><span>Support messages</span><span>' + (t.support || 0) + "</span></div>" +
+        '<div class="oh-row"><span>Shares</span><span>' + (sh.today || 0) + "</span></div>" +
+        shareBreakdown(sh) +
         '<div class="oh-note">Last 7 days: ' +
         (w.views || 0) + " views · " + (w.clicks || 0) + " clicks · " +
-        (w.submissions || 0) + " submissions · " + (w.contacts || 0) + " contacts</div></div>";
+        (w.shares || 0) + " shares · " +
+        (w.submissions || 0) + " submissions · " + (w.contacts || 0) + " contacts</div></div>" +
+        shareRecent(sh.recent);
     });
   }
+
+  function shareLabel(surface) {
+    if (surface === "listing") return "Listing";
+    if (surface === "league") return "League";
+    if (surface === "featured") return "Featured";
+    if (surface === "nav") return "Nav";
+    return "Other";
+  }
+
+  function shareBreakdown(sh) {
+    var by = (sh && sh.bySurface) || {};
+    return (
+      '<p class="small" style="margin:8px 0 0">All-time shares by surface: listing ' + (by.listing || 0) +
+      " · league " + (by.league || 0) +
+      " · featured " + (by.featured || 0) +
+      " · nav " + (by.nav || 0) +
+      " · other " + (by.other || 0) + "</p>"
+    );
+  }
+
+  function whenShare(t) {
+    try { return new Date(t).toLocaleString(); } catch (e) { return ""; }
+  }
+
+  function shareRecent(rows) {
+    rows = rows || [];
+    if (!rows.length) return '<p class="muted" style="margin-top:12px">No share clicks yet.</p>';
+    return (
+      '<h2 style="margin-top:18px">Recent shares</h2>' +
+      rows.map(function (ev) {
+        var what = ev.title || ev.path || "";
+        return (
+          '<div class="item"><strong>' + esc(shareLabel(ev.surface)) + "</strong>" +
+          '<div class="small">' + esc(whenShare(ev.t)) + "</div>" +
+          '<div class="small">' + esc(what) + (ev.id ? " · " + esc(ev.id) : "") + "</div>" +
+          (ev.title && ev.path ? '<div class="small">' + esc(ev.path) + "</div>" : "") +
+          "</div>"
+        );
+      }).join("")
+    );
+  }
+
 
   function homeHealth() {
     api("presence").then(function (out) {
@@ -124,20 +171,18 @@
       if (!out.r.ok) { if (out.r.status === 401) go("login"); else $("an-sub").textContent = "Health check failed (" + out.r.status + ")"; return; }
       var d = out.d, v = healthVerdict(d), s = d.subscribers || {}, f = d.feedback || {}, e = d.errors || {}, b = d.backup || {}, sm = d.sampling || {}, q = d.queue || {};
       $("an-sub").textContent = (v.level === "ok" ? "✅ Everything looks smooth" : v.level === "warn" ? "⚠️ Running, with things to check" : "❌ Something is broken") + " · checked " + new Date(d.at).toLocaleTimeString();
+      if (v.issues.length) { var jb = document.createElement("button"); jb.type = "button"; jb.className = "hx-jump"; jb.textContent = v.issues.length + " thing" + (v.issues.length > 1 ? "s" : "") + " to check ↓"; jb.onclick = function () { var t = $("hx-issues"); if (t) { t.scrollIntoView({ behavior: "smooth", block: "start" }); var f = t.querySelector("details"); if (f) f.open = true; } }; $("an-sub").appendChild(document.createTextNode(" ")); $("an-sub").appendChild(jb); }
       $("an-kpis").innerHTML =
         kpi("Pages up", v.okCount + "/" + v.total, '<span class="d ' + (v.level === "bad" ? "down" : "up") + '">' + (v.issues.length ? v.issues.length + " issue(s)" : "all OK") + "</span>") +
         kpi("Server errors", fmt(e.today), '<span class="d ' + (e.last7 ? "down" : "") + '">' + fmt(e.last7) + " in 7 days</span>") +
         kpi("Email list", fmt(s.active), '<span class="d ' + (s.last7 ? "up" : "") + '">footer / PlanetView free · +' + fmt(s.last7) + " 7d · +" + fmt(s.last30) + " 30d</span>") +
         kpi("Open feedback", fmt(f.open), '<span class="d">' + fmt(f.last7) + " new 7d · " + fmt(f.done) + " done</span>") +
         kpi("Last backup", shortDate(b.lastSnapshot) || "—", '<span class="d ' + (!b.ok || b.ageDays > 2 ? "down" : "") + '">' + (b.ok ? (b.ageDays === 0 ? "today" : b.ageDays + "d ago") : "check failed") + "</span>");
-      var probes = (d.probes || []).map(function (p) {
-        var cls = p.state === "ok" ? "ok" : p.state === "slow" ? "need" : "warn";
-        return '<div class="bar-row"><div class="bar-top"><span class="bk"><span class="oh-badge hp ' + cls + '">' + (p.state === "ok" ? "OK" : p.state === "slow" ? "Slow" : "Fail") + "</span> " + '<a href="' + esc(p.path) + '" target="_blank" rel="noopener">' + esc(p.name) + "</a>" + '</span><span class="bv">' + (p.status || p.error) + " · " + p.ms + " ms</span></div></div>";
-      }).join("");
+      var probes = (d.probes || []).map(function (p) { return hxProbe(p); }).join("");
       var errList = (e.paths || []).length ? (e.paths || []).map(function (r) { return '<div class="bar-row"><div class="bar-top"><span class="bk">' + esc(r.k) + '</span><span class="bv">' + r.v + "</span></div></div>"; }).join("") + '<p class="muted small">Last: ' + esc(e.last ? e.last.path + " (" + e.last.status + ") " + ago(e.last.at) : "") + "</p>" : '<p class="muted small">No 5xx responses or crashes logged on /api/ in the last 14 days.</p>';
       $("an-lists").innerHTML =
-        '<div class="an-card"><h2>Is everything running smooth?</h2>' + (v.issues.length ? "<ul class=\"hl-issues\">" + v.issues.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : '<p class="muted small">No issues found.</p>') + "</div>" +
-        '<div class="an-card"><h2>Uptime check (live, from Cloudflare)</h2><p class="muted small an-help">Each page is fetched right now from the server. Slow = over 1.5 s.</p>' + probes + "</div>" +
+        '<div class="an-card" id="hx-issues"><h2>Is everything running smooth?</h2>' + (v.issues.length ? '<p class="muted small an-help">Tap an item for what it means and what to do.</p>' + hxIssues(d).join("") : '<p class="muted small">No issues found.</p>') + hxInfo(d) + "</div>" +
+        '<div class="an-card"><h2>Uptime check (live, from Cloudflare)</h2><p class="muted small an-help">Each page is fetched right now from the server. Slow = over 1.5 s. Tap a row for details.</p>' + probes + '<div class="hx-actions"><button type="button" class="btn" data-hx="recheck">↻ Recheck all now</button></div></div>' +
         '<div class="an-card"><h2>Server errors (API 5xx, 14 days)</h2>' + errList + "</div>" +
         miniChart(s.chart || [], "Email list signups per day (footer / PlanetView free, 30 days)", "signups") +
         listCard("Signup sources (30 days)", s.sources || [], "", "No signups in the last 30 days.") +
@@ -152,9 +197,80 @@
         '<div class="oh-row"><span>Listings waiting review / flagged</span><span>' + fmt(q.pending) + " / " + fmt(q.flagged) + "</span></div>" +
         '<div class="oh-row"><span>Store stat writes today</span><span>' + fmt(sm.writesToday) + " / " + sm.softCap + (sm.active ? " (sampling 1 in " + sm.sample + ")" : "") + "</span></div>" +
         '<div class="oh-row"><span>Backups stored</span><span>' + (b.count != null ? b.count : "—") + "</span></div></div>";
+      hxWire(d, v);
       $("an-note").textContent = "All first-party. Server errors are counted from now on (Oct 26, 2026) for /api/ requests that return 5xx or crash; there is no request total, so this is a count, not a percentage. Page-level 4xx/5xx and traffic-wide error rates would need a Cloudflare API token (Analytics read), which isn't configured.";
     });
   }
+
+  /* ---- Interactive Health: expand-in-place rows, tappable KPI cards (bottom sheet), actions ---- */
+  function hxRow(k, val) { return '<div class="oh-row"><span>' + esc(k) + "</span><span>" + esc(val == null ? "—" : val) + "</span></div>"; }
+  function hxProbe(p) {
+    var cls = p.state === "ok" ? "ok" : p.state === "slow" ? "need" : "warn";
+    var authOk = p.status === 401 && /owner/i.test(p.path || "");
+    var what = p.state === "ok" ? (authOk ? "Answered 401 = password prompt (Basic Auth). That's expected for the owner panel, so it counts as up." : "Loaded fine.")
+      : p.state === "slow" ? "Loaded, but took longer than 1.5 s. Visitors still get it; it just feels sluggish. Often a cold start — recheck to see if it repeats."
+      : "Did not load (" + (p.status || p.error) + "). Visitors likely see an error. Open it to confirm, then recheck.";
+    return '<details class="hx"><summary class="bar-row"><div class="bar-top"><span class="bk"><span class="oh-badge hp ' + cls + '">' + (p.state === "ok" ? "OK" : p.state === "slow" ? "Slow" : "Fail") + "</span> " + esc(p.name) + '</span><span class="bv">' + esc(p.status || p.error) + " · " + p.ms + ' ms ▾</span></div></summary><div class="hx-body">' +
+      hxRow("Path", p.path) + hxRow("HTTP status", p.status || p.error) + hxRow("Time", p.ms + " ms (slow over 1500)") + hxRow("State", p.state) +
+      '<p class="small">' + esc(what) + '</p><div class="hx-actions"><a class="btn" href="' + esc(p.path) + '" target="_blank" rel="noopener">Open page</a> <button type="button" class="btn" data-hx="recheck">↻ Recheck</button></div></div></details>';
+  }
+  function hxIssue(title, cause, means, actions) {
+    return '<details class="hx"><summary class="hx-sum">⚠️ ' + esc(title) + ' <span class="muted">▾</span></summary><div class="hx-body"><p class="small"><b>Cause:</b> ' + esc(cause) + '</p><p class="small"><b>What it means:</b> ' + esc(means) + '</p><div class="hx-actions">' + (actions || "") + "</div></div></details>";
+  }
+  function hxIssues(d) {
+    var out = [], e = d.errors || {}, b = d.backup || {}, f = d.feedback || {}, q = d.queue || {}, sm = d.sampling || {};
+    (d.probes || []).forEach(function (p) {
+      if (p.state === "slow") out.push(hxIssue(p.name + " slow (" + p.ms + " ms)", p.path + " took " + p.ms + " ms; the limit is 1500 ms.", "The page still works, just slower than we want. One slow reading is often a cold start; if it stays slow on recheck it needs a look.", '<a class="btn" href="' + esc(p.path) + '" target="_blank" rel="noopener">Open ' + esc(p.path) + '</a> <button type="button" class="btn" data-hx="recheck">↻ Recheck probe</button>'));
+      else if (p.state === "fail") out.push(hxIssue(p.name + " down (" + (p.status || p.error) + ")", p.path + " returned " + (p.status || p.error) + ".", "Visitors probably see an error on this page right now.", '<a class="btn" href="' + esc(p.path) + '" target="_blank" rel="noopener">Open page</a> <button type="button" class="btn" data-hx="recheck">↻ Recheck</button>'));
+    });
+    if (e.today) out.push(hxIssue(e.today + " server error(s) today", "Last: " + (e.last ? e.last.path + " (" + e.last.status + ") " + ago(e.last.at) : "?"), "An /api/ request failed on the server today. One-offs are usually a hiccup from an upstream service.", '<button type="button" class="btn" data-hx="errors">See error list ↓</button>'));
+    if (!b.ok) out.push(hxIssue("Backup check failed", "Couldn't read backup status from the backup worker.", "We can't confirm a recent backup exists.", hxBackupBtn()));
+    else if (b.ageDays != null && b.ageDays > 2) out.push(hxIssue("Last backup " + b.ageDays + " days ago", "Newest snapshot is from " + (shortDate(b.lastSnapshot) || "?") + ". Backups should be at most 2 days old.", "If something got deleted or broken now, we could only restore to " + (shortDate(b.lastSnapshot) || "that date") + ". The scheduled backup may have stopped.", hxBackupBtn()));
+    if (f.open && f.oldestOpenDays > 3) out.push(hxIssue(f.open + " open feedback, oldest " + f.oldestOpenDays + "d", "Feedback/support messages not marked done.", "Someone has been waiting " + f.oldestOpenDays + " days for a reply.", '<button type="button" class="btn" data-go="support">Open Support</button>'));
+    if (q.pending > 5) out.push(hxIssue(q.pending + " listings waiting review", "Maker listings are queued.", "Makers are waiting to go live.", '<button type="button" class="btn" data-go="queue">Open Queue</button>'));
+    if (sm.active) out.push(hxIssue("Store stats sampling (1 in " + sm.sample + ")", "Daily stat writes passed the soft cap (" + sm.softCap + ").", "Store numbers today are estimated from a sample; nothing is broken.", ""));
+    return out;
+  }
+  function hxBackupBtn() { return '<button type="button" class="btn ok" data-hx="backup">Run backup now</button> <button type="button" class="btn" data-go="backups">Open Backups</button> <span class="small muted" id="hx-bk-msg"></span>'; }
+  function hxInfo(d) {
+    var e = d.errors || {}, own = (d.probes || []).filter(function (p) { return p.status === 401 && p.state === "ok"; })[0], x = "";
+    if (e.last7 && !e.today) x += '<details class="hx"><summary class="hx-sum">ℹ️ ' + e.last7 + ' server error(s) in 7 days <span class="muted">▾</span></summary><div class="hx-body"><p class="small">Last: ' + esc(e.last ? e.last.path + " (" + e.last.status + ") " + ago(e.last.at) : "?") + ". Informational only — nothing today. A single 502 is usually an upstream service (e.g. the chat provider) timing out once.</p></div></details>";
+    if (own) x += '<details class="hx"><summary class="hx-sum">ℹ️ ' + esc(own.name) + ' shows 401 <span class="muted">▾</span></summary><div class="hx-body"><p class="small">401 means the password prompt appeared. That is expected (Basic Auth), so it is marked OK — not a failure.</p></div></details>';
+    return x;
+  }
+  function hxSheet(title, html) {
+    var sh = $("hx-sheet");
+    if (!sh) { sh = document.createElement("div"); sh.id = "hx-sheet"; sh.className = "hx-sheet"; document.body.appendChild(sh); sh.addEventListener("click", function (ev) { if (ev.target === sh || ev.target.getAttribute("data-hx") === "close" || (ev.target.closest && ev.target.closest("[data-go]"))) sh.hidden = true; }); }
+    sh.innerHTML = '<div class="hx-panel" role="dialog" aria-label="' + esc(title) + '"><div class="hx-head"><h2>' + esc(title) + '</h2><button type="button" class="btn" data-hx="close">Close</button></div>' + html + "</div>";
+    sh.hidden = false;
+  }
+  function hxCardDetail(i, d, v) {
+    var e = d.errors || {}, s = d.subscribers || {}, f = d.feedback || {}, b = d.backup || {};
+    if (i === 0) return ["Pages up", '<p class="small">' + v.okCount + " of " + v.total + " checked pages answered OK. Slow pages count as not OK. " + (v.issues.length ? v.issues.length + " issue(s) overall." : "") + "</p>" + (d.probes || []).map(hxProbe).join("") + '<div class="hx-actions"><button type="button" class="btn" data-hx="recheck">↻ Recheck all</button></div>'];
+    if (i === 1) return ["Server errors", '<p class="small">Counts /api/ requests that returned 5xx or crashed. ' + fmt(e.today) + " today, " + fmt(e.last7) + " in 7 days, " + fmt(e.total) + " in 14 days.</p>" + (e.paths || []).map(function (r) { return hxRow(r.k, r.v); }).join("") + (e.last ? hxRow("Last", e.last.path + " (" + e.last.status + ") " + ago(e.last.at)) : "")];
+    if (i === 2) return ["Email list", '<p class="small">People signed up via footer / PlanetView free.</p>' + hxRow("Active", fmt(s.active)) + hxRow("Total", fmt(s.total)) + hxRow("New 7 days", fmt(s.last7)) + hxRow("New 30 days", fmt(s.last30)) + hxRow("Unsubscribes 30d", fmt(s.unsub30)) + hxRow("Last signup", ago(s.lastAt)) + (s.sources || []).map(function (r) { return hxRow("Source: " + r.k, r.v); }).join("")];
+    if (i === 3) return ["Open feedback", '<p class="small">Feedback & support messages not marked done yet.</p>' + hxRow("Open", fmt(f.open)) + hxRow("Oldest open", f.open ? f.oldestOpenDays + " days" : "—") + hxRow("New 7 days", fmt(f.last7)) + hxRow("Done", fmt(f.done)) + '<div class="hx-actions"><button type="button" class="btn" data-go="support">Open Support</button></div>'];
+    return ["Last backup", '<p class="small">Daily snapshots of site data from the backup worker. Fresh = 2 days or less.</p>' + hxRow("Latest snapshot", shortDate(b.lastSnapshot) || "—") + hxRow("Age", b.ageDays != null ? b.ageDays + " days" : "—") + hxRow("Snapshots stored", b.count) + hxRow("Status check", b.ok ? "OK" : "failed") + '<div class="hx-actions">' + hxBackupBtn() + "</div>"];
+  }
+  function hxWire(d, v) {
+    Array.prototype.forEach.call($("an-kpis").children, function (el, i) {
+      el.classList.add("hx-tap"); el.setAttribute("role", "button"); el.tabIndex = 0;
+      el.onclick = el.onkeydown = function (ev) { if (ev.type === "keydown" && ev.key !== "Enter" && ev.key !== " ") return; var c = hxCardDetail(i, d, v); hxSheet(c[0], c[1]); };
+    });
+  }
+  document.addEventListener("click", function (ev) {
+    var t = ev.target.closest && ev.target.closest("[data-hx]"); if (!t) return;
+    var a = t.getAttribute("data-hx"), sh = $("hx-sheet");
+    if (a === "recheck") { if (sh) sh.hidden = true; t.textContent = "Checking…"; loadHealth(anSeq); }
+    else if (a === "errors") { var c = document.querySelectorAll("#an-lists .an-card")[2]; if (c) c.scrollIntoView({ behavior: "smooth" }); }
+    else if (a === "backup") {
+      t.disabled = true; t.textContent = "Running backup…";
+      api("backups", { method: "POST", body: { email: false } }).then(function (out) {
+        t.textContent = out.r.ok ? "✅ Backup done" : "Backup failed (" + out.r.status + ")";
+        if (out.r.ok) setTimeout(function () { if (sh) sh.hidden = true; loadHealth(anSeq); }, 1200); else t.disabled = false;
+      });
+    }
+  });
   function shortDate(v) {
     var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(v || ""));
     if (!m) return v;
@@ -331,6 +447,12 @@
     });
   }
 
+  function verifyBadge(m) {
+    var email = m.verifiedEmail ? ' · ' + esc(m.verifiedEmail) : "";
+    if (m.verified === "account") return '<span class="badge verify">Verified (account)' + email + "</span> ";
+    if (m.verified === "email") return '<span class="badge verify">Verified (email)' + email + "</span> ";
+    return '<span class="badge unverified">Unverified</span> ';
+  }
   function loadSupport(status) {
     document.querySelectorAll("#view-support .tabs button").forEach(function (b) {
       b.classList.toggle("is-on", b.getAttribute("data-sup") === status);
@@ -343,6 +465,7 @@
             return (
               '<article class="item">' +
               (m.product ? '<span class="badge">' + esc(m.product) + "</span> " : "") +
+              verifyBadge(m) +
               "<strong>" + esc(m.subject) + "</strong>" +
               '<div class="small">' + esc(m.source || "marketplace") + (m.kind ? " · " + esc(m.kind) : "") + " · " + esc(new Date(m.createdAt || 0).toLocaleString()) +
               (m.replyTo ? " · " + esc(m.replyTo) : "") +
@@ -555,6 +678,12 @@
           return '<div class="lrow"><div class="lname"><strong>' + esc(L.name) + "</strong>" + (L.status !== "approved" ? '<span class="pill">' + esc(L.status) + "</span>" : "") + '</div><div class="lnums">' +
             "<span><b>" + fmt(L.impressions) + "</b>impr.</span><span><b>" + fmt(L.views) + "</b>views</span><span><b>" + fmt(L.clicks) + "</b>clicks</span><span><b>" + L.ctr + "%</b>CTR</span></div></div>";
         }).join("") : '<p class="muted small">No listings yet.</p>') + "</div>";
+        var sh = out.d.shares || {};
+        $("an-lists").innerHTML += '<div class="an-card"><h2>Share clicks</h2>' +
+          '<div class="oh-row"><span>All time</span><span>' + (sh.total || 0) + "</span></div>" +
+          '<div class="oh-row"><span>Today</span><span>' + (sh.today || 0) + "</span></div>" +
+          '<div class="oh-row"><span>Last 7 days</span><span>' + ((sh.last7 && sh.last7.total) || 0) + "</span></div>" +
+          shareBreakdown(sh) + shareRecent(sh.recent) + "</div>";
       });
     }
   }

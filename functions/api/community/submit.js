@@ -1,5 +1,9 @@
 import {
   checkRate,
+  SUBMIT_RATE_LIMIT,
+  canonicalProjectUrl,
+  kvGetIndex,
+  kvGetListing,
   clientIp,
   getKv,
   screenedStatus,
@@ -39,9 +43,6 @@ export async function onRequest(context) {
   }
 
   const ip = clientIp(request);
-  if (!(await checkRate(env, ip))) {
-    return json({ error: "Too many submissions. Try again later." }, 429);
-  }
 
   let body;
   try {
@@ -75,6 +76,12 @@ export async function onRequest(context) {
   const password = typeof body.password === "string" ? body.password : "";
   if (body.passwordConfirm != null && body.passwordConfirm !== password) {
     return json({ error: "Passwords don't match." }, 400);
+  }
+
+  // Count against the submit quota only once Turnstile, validation and password match pass,
+  // so a maker fixing form errors isn't locked out by their own retries.
+  if (!(await checkRate(env, ip, "", SUBMIT_RATE_LIMIT))) {
+    return json({ error: "Too many submissions. Try again later." }, 429);
   }
 
   // Account resolution (before screening, so a bad password costs nothing):
@@ -127,6 +134,20 @@ export async function onRequest(context) {
     console.error("community creator account error", e);
     return json({ error: "Could not set up your creator account. Try again." }, 500);
   }
+  // Double-submit guard (Nov 2 2026, CrewCentral posted twice 9s apart): same name + project URL
+  // submitted in the last 30 minutes returns the existing listing instead of creating a second one.
+  try {
+    const u = canonicalProjectUrl(listing.projectUrl), nm = String(listing.name || "").trim().toLowerCase();
+    if (u && nm) {
+      const ix = await kvGetIndex(kv), cutoff = Date.now() - 30 * 60 * 1000;
+      for (const id of [...ix.approved, ...ix.pending].slice(-200)) {
+        const m = /^cm_([a-z0-9]+)_/.exec(id); if (!m || parseInt(m[1], 36) < cutoff) continue;
+        const r = await kvGetListing(kv, id);
+        if (r && String(r.name || "").trim().toLowerCase() === nm && canonicalProjectUrl(r.projectUrl) === u)
+          return json({ ok: true, id: r.id, status: r.status, duplicate: true, message: "This project was already submitted a moment ago, so we kept the first one." }, 200);
+      }
+    }
+  } catch (e) { console.error("dup check", e); }
   try {
     const screen = await screenListing(env, listing);
     // Every maker goes live once the automatic checks pass; flagged or failed listings stay in the owner queue.

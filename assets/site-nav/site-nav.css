@@ -158,13 +158,24 @@ header.dun .dun-drawer a[aria-current=page]{color:#fff;font-weight:600;backgroun
 @media (max-width:640px){header.dun .dun-in{padding:0 12px;gap:8px}header.dun .dun-right{gap:4px;min-width:0}header.dun .dun-logo{margin-right:0}}
 
 .dun-dd{position:relative}.dun-dd>summary{list-style:none;cursor:pointer;gap:6px}.dun-dd>summary::-webkit-details-marker{display:none}.dun-dd-menu{position:absolute;right:0;top:calc(100% + 6px);min-width:190px;background:#14161c;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:6px;box-shadow:0 12px 30px rgba(0,0,0,.45);z-index:1000}.dun-dd-menu a{display:block;padding:10px 12px;border-radius:8px;color:#e6e8ec;text-decoration:none;font-weight:600;font-size:.9rem}.dun-dd-menu a:hover{background:rgba(109,100,245,.18)}
-/* v33: one top-right control. The account icon opens the site menu; the hamburger is gone. */
+/* v40: Shop normal link + Maker Pro gold pill + desktop 4 links (no hamburger). Tablet/phone = hamburger only (never logo avatar). */
 header.dun .dun-menu{display:none !important}
-header.dun .dun-acct-btn{display:grid;place-items:center;width:40px;height:40px;padding:0;margin:0;border-radius:50%;border:1px solid rgba(230,232,236,.28);background:rgba(22,26,33,.92);color:#e6e8ec;cursor:pointer;overflow:hidden;flex:none;box-shadow:none}
-header.dun .dun-acct-btn > img{width:26px;height:26px;object-fit:cover;border-radius:50%;display:block}
-header.dun .dun-user.dun-acct-btn{display:inline-flex;align-items:center;gap:8px;width:auto;height:auto;min-width:40px;min-height:40px;padding:4px 8px 4px 4px;border-radius:999px}
-@media (max-width:480px){header.dun .dun-user.dun-acct-btn{padding:4px}}
-@media (min-width:960px) and (max-width:1099px){header.dun .dun-user.dun-acct-btn{padding:4px}}
+header.dun .dun-acct-btn,
+header.dun .dun-acct-btn.dun-menu-btn{display:grid;place-items:center;width:42px;height:42px;padding:0;margin:0;border-radius:12px;border:1px solid rgba(230,232,236,.35);background:rgba(22,26,33,.95);color:#f3f4f7;cursor:pointer;overflow:visible;flex:none;box-shadow:none}
+header.dun .dun-acct-btn:hover{background:rgba(79,70,229,0.18)}
+header.dun .dun-acct-btn.dun-menu-btn > svg{width:24px;height:24px;display:block;stroke:#f3f4f7}
+header.dun .dun-acct-btn > img{display:none!important}
+header.dun .dun-user.dun-acct-btn{display:grid;place-items:center;width:42px;height:42px;padding:0;border-radius:12px}
+header.dun .dun-user.dun-acct-btn .av,
+header.dun .dun-user.dun-acct-btn .nm{display:none!important}
+@media (min-width:960px){
+  header.dun .dun-acct-btn.dun-menu-btn{display:none!important}
+  header.dun .dun-links{display:flex}
+}
+@media (max-width:959px){
+  header.dun .dun-links{display:none!important}
+  header.dun .dun-acct-btn.dun-menu-btn{display:grid!important}
+}
 header.dun .dun-drawer-acct{display:flex;flex-direction:column;align-items:stretch;gap:2px;margin:0 0 8px;padding:4px 4px 10px;border-bottom:1px solid rgba(230,232,236,.17)}
 header.dun .dun-drawer-who{display:flex;align-items:center;gap:10px;padding:8px 12px 6px;min-width:0}
 header.dun .dun-drawer-who .av{width:36px;height:36px;border-radius:50%;flex:none;display:grid;place-items:center;overflow:hidden;background:#4f46e5;color:#fff;font-weight:700}
@@ -173,3 +184,24 @@ header.dun .dun-drawer-who .av.mark{background:#161a21}
 header.dun .dun-drawer-who .av.mark img{object-fit:contain;padding:3px;box-sizing:border-box}
 header.dun .dun-drawer-who .nm{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:650;color:#f3f4f7}
 header.dun .dun-pop{display:none !important}
+
+/* Maker Pro top-bar pill — dark luxury gold (sample E) */
+header.dun .dun-mp{display:inline-flex;align-items:center;justify-content:center;padding:5px 12px;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.04em;line-height:1.15;color:#ffe9a8;text-decoration:none;white-space:nowrap;flex:none;background:linear-gradient(180deg,rgba(60,45,10,.9),rgba(25,18,5,.95));border:1px solid rgba(245,200,75,.7);box-shadow:0 0 16px rgba(212,160,40,.4),inset 0 1px 0 rgba(255,220,120,.25),inset 0 0 12px rgba(212,160,40,.15)}
+header.dun .dun-mp:hover{color:#fff6d0;border-color:rgba(255,230,150,.95);background:linear-gradient(180deg,rgba(80,60,14,.95),rgba(35,25,8,.98));box-shadow:0 0 22px rgba(245,200,75,.55),inset 0 1px 0 rgba(255,230,150,.35),inset 0 0 14px rgba(212,160,40,.22)}
+@media (max-width:640px){header.dun .dun-mp{padding:4px 9px;font-size:.66rem}}
+@media (max-width:360px){header.dun .dun-mp{padding:4px 8px;font-size:.62rem}}
+
+/* v40: Shop as normal text link (premium quieter header; Wolf) */
+header.dun .dun-shop{
+  padding:0 10px!important;margin:0!important;border:0!important;border-radius:0!important;
+  background:none!important;box-shadow:none!important;animation:none!important;
+  font-size:.9rem!important;font-weight:500!important;letter-spacing:.005em;
+  color:#a3a8b5!important;opacity:1!important;gap:.3rem!important;
+}
+header.dun .dun-shop:hover{color:#f3f4f7!important;background:none!important;opacity:1!important}
+@media (max-width:640px){header.dun .dun-shop{padding:0 6px!important;font-size:.85rem!important}}
+/* full wordmark logo always; no mark tile */
+header.dun .dun-logo .dun-mark{display:none!important}
+header.dun .dun-logo .dun-full{display:block!important;background:none!important}
+@media (max-width:480px){header.dun .dun-logo img.dun-full{height:28px}}
+@media (max-width:374px){header.dun .dun-logo img.dun-full{height:24px}header.dun .dun-in{padding:0 8px;gap:6px}}

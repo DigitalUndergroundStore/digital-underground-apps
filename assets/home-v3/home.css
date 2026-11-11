@@ -1,4 +1,5 @@
 /* Developer Marketplace homepage v3 (Wolf layout). Built from /workspace/wolf-layout-v2 build_v3.py */
+/* cache-bust: /assets/home-v3/home.css?v=21 */
     :root {
       --bg-deep: #11141a;
       --bg-card: rgba(26,30,38,0.72);
@@ -522,18 +523,18 @@
     }
     .card-price.free { color: var(--success); }
     .card-vote-row {
-      flex: 1 1 100%; width: 100%; display: flex; flex-direction: column; gap: 8px; margin-top: 2px;
+      flex: 1 1 100%; width: 100%; min-width: 0; display: flex; flex-direction: row; align-items: stretch; gap: 8px; margin-top: 2px;
     }
     .card-footer .share-btn {
       appearance: none; font: inherit; font-size: .82rem; font-weight: 600;
-      padding: 8px 12px; height: 34px; width: 100%; border-radius: 8px; cursor: pointer;
+      padding: 8px 12px; min-height: 36px; height: auto; width: auto; flex: 0 0 auto; border-radius: 8px; cursor: pointer;
       display: inline-flex; align-items: center; justify-content: center; gap: 6px;
       color: #fff; background: rgba(79, 70, 229, 0.12);
       border: 1px solid rgba(154, 151, 232, 0.35); transition: background .2s, border-color .2s;
       box-sizing: border-box;
     }
     .card-footer .share-btn:hover { background: rgba(79, 70, 229, 0.25); border-color: rgba(196, 181, 253, 0.55); }
-    .card-vote-row .btn-vote { width: 100%; text-align: center; box-sizing: border-box; }
+    .card-vote-row .btn-vote { width: auto; flex: 1 1 auto; min-width: 0; white-space: normal; overflow-wrap: break-word; word-break: normal; text-wrap: balance; text-align: center; box-sizing: border-box; line-height: 1.2; }
 
 
     .card-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
@@ -746,8 +747,8 @@
     /* ═══════════ v2: CARDS ═══════════ */
     .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
     @media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
-    .card { height: 100%; }
+    @media (max-width: 640px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .card { height: 100%; min-width: 0; }
     .card-media { aspect-ratio: 16 / 9; background: #282d37; flex-shrink: 0; }
     .card-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .55s cubic-bezier(.4,0,.2,1); }
     .card:hover .card-media img { transform: scale(1.05); }
@@ -767,7 +768,7 @@
       .filter-panel.open { display: flex; }
       .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
-    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     html, body { overflow-x: clip; }
     .planet { max-width: 100vw; }
     @media (max-width: 480px) {
@@ -874,7 +875,7 @@
       .fbackdrop { display: block; position: fixed; inset: 0; z-index: 190; background: rgba(17,20,26,0.6); backdrop-filter: blur(3px); opacity: 0; transition: opacity .3s; }
       .fbackdrop.show { opacity: 1; }
     }
-    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     body.drawer-open { overflow: hidden; }
     /* ═══════════ v3: ANIMATIONS ═══════════ */
     @keyframes cardIn { from { opacity: 0; transform: translateY(22px) scale(.98); } to { opacity: 1; transform: none; } }
@@ -959,7 +960,7 @@
 /* Whole card is a link: the title link is stretched over the card; inner links/buttons sit above it. */
 .card{position:relative;cursor:pointer}
 .card-title a::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}
-.card-meta a,.card-actions a,.card-actions button,.card-vote-row .share-btn{position:relative;z-index:2}
+.card-meta a,.card-actions a,.card-actions button,.card-vote-row .share-btn,.card-vote-row .btn-vote{position:relative;z-index:2}
 .card-title a:focus-visible{outline:none}
 .card:has(.card-title a:focus-visible){outline:2px solid var(--accent-bright,#9a97e8);outline-offset:3px}
 /* Maker League glow button */
@@ -979,3 +980,109 @@
 
 .btn-vote.voted{background:#e7f6ec!important;color:#166534!important;border-color:#86efac!important;box-shadow:none!important;animation:none!important}
 .btn-vote.voted::before,.btn-vote.voted::after{display:none!important}
+
+/* Load-more cinematic reveal (home.js duRevealIO) */
+#projectGrid .card.du-pre{opacity:0;transform:translateY(36px) scale(.96)}
+#projectGrid .card.du-in{opacity:1;transform:none;transition:opacity .55s ease var(--d,0ms),transform .6s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+@media (prefers-reduced-motion:reduce){#projectGrid .card.du-pre{opacity:1;transform:none}}
+
+/* Phone marketplace cards: two-up denser dual-lane. home.css?v=24
+   League does not load this stylesheet. */
+.card { container-type: inline-size; container-name: ducard; }
+/* Force 2-col on phones + short landscape; beat any earlier .grid / auto-fill minmax(300px) rules. */
+@media (max-width: 760px) {
+  #projectGrid.grid,
+  .results #projectGrid.grid,
+  .market .grid#projectGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px;
+  }
+}
+/* v22: phone two-up cards, tighter type, aligned action rows, badges out of the art. */
+@media (max-width: 640px) {
+  .market { padding-left: 12px; padding-right: 12px; }
+  #projectGrid.grid,
+  .results #projectGrid.grid,
+  .market .grid#projectGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px;
+  }
+  .card { display: flex; flex-direction: column; }
+  .card-media { aspect-ratio: 16 / 10; }
+  /* Badges: small chips pinned to the top-left corner of the art, one line, never covering the middle. */
+  .card-badges { top: 5px; left: 5px; right: auto; max-width: calc(100% - 10px); gap: 3px; flex-wrap: nowrap; overflow: hidden; }
+  .card-badge { font-size: .56rem; padding: 2px 5px; line-height: 1.2; white-space: nowrap; }
+  .card-badge:nth-child(n+3) { display: none; }
+  .card-body { padding: 8px 9px 10px; gap: 3px; display: flex; flex-direction: column; flex: 1; }
+  .card-meta { font-size: .6rem; letter-spacing: .03em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card-title {
+    font-size: .8rem; line-height: 1.22; margin: 0;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+    min-height: 2.44em; overflow-wrap: anywhere;
+  }
+  .card-desc {
+    font-size: .68rem; line-height: 1.32; margin: 0; opacity: .85;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+    height: auto; min-height: 2.64em; max-height: 2.64em;
+  }
+  /* Footer: price on its own line, then Contact | Visit in an equal grid, then Share | Vote. */
+  .card-footer {
+    margin-top: auto; padding-top: 7px; gap: 6px;
+    display: flex; flex-direction: column; align-items: stretch;
+  }
+  .card-price { font-size: .68rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card-actions {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5px;
+    width: 100%; max-width: 100%; margin: 0; min-width: 0;
+  }
+  .card-actions .btn:only-child { grid-column: 1 / -1; }
+  .card-actions .btn { min-height: 34px; height: 34px; padding: 0 6px; font-size: .68rem; }
+  .card-actions .btn,
+  .card-vote-row .btn-vote,
+  .card-footer .share-btn {
+    min-height: 30px; height: 30px; padding: 0 5px; font-size: .62rem; line-height: 1.1;
+    border-radius: 8px; display: inline-flex; align-items: center; justify-content: center;
+    gap: 4px; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; box-sizing: border-box;
+  }
+  .card-vote-row { display: flex; gap: 5px; width: 100%; align-items: stretch; margin: 0; }
+  .card-footer .share-btn { flex: 0 0 auto; }
+  .card-footer .share-btn svg { width: 12px; height: 12px; flex: none; }
+  .card-actions .btn { min-height: 34px; height: 34px; font-size: .68rem; }
+  .card-vote-row .btn-vote { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  .card-vote-row .btn-vote { flex: 1 1 auto; }
+}
+/* Narrow two-up cards: Share goes icon-only so Vote stays readable on one line. */
+@container ducard (max-width: 190px) {
+  .card-footer .share-btn { font-size: 0; gap: 0; padding: 0; width: 30px; min-width: 30px; }
+  .card-footer .share-btn svg { width: 13px; height: 13px; }
+  .card-vote-row .btn-vote { font-size: .6rem; }
+}
+@container ducard (max-width: 150px) {
+  .card-desc { display: none; }
+}
+
+@media (max-width:640px){.ftr-acts .ftr-a.share-btn,.ftr-acts .ftr-a.btn-vote{min-height:30px;height:30px;padding:0 9px;font-size:.7rem;line-height:1;display:inline-flex;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ftr-acts .ftr-a.share-btn svg{width:13px;height:13px}}
+
+/* 2026-11-04: Share + Vote always visible, first action row on every card */
+.card{height:auto;overflow:visible}
+.card-media{border-radius:inherit;border-bottom-left-radius:0;border-bottom-right-radius:0}
+.card-body{overflow:visible;max-height:none}
+.card-footer{display:flex!important;flex-wrap:wrap;overflow:visible;max-height:none}
+.card-footer .card-vote-row{order:-1;display:flex!important;visibility:visible!important;opacity:1!important;flex:1 1 100%;width:100%}
+.card-footer .card-price{order:-2;flex:1 1 100%}
+.card-footer .card-actions{order:1}
+.card-footer .share-btn,.card-vote-row .btn-vote{display:inline-flex!important;visibility:visible!important;opacity:1!important}
+@media (max-width:640px){
+ .card-footer .card-vote-row{gap:6px;margin:4px 0 2px}
+ .card-footer .share-btn{width:auto!important;min-width:36px!important;height:34px!important;min-height:34px!important;padding:0 8px!important;font-size:.66rem!important;gap:4px!important;color:#fff;background:rgba(79,70,229,.35)!important;border:1px solid rgba(196,181,253,.75)!important}
+ .card-footer .share-btn svg{width:14px!important;height:14px!important}
+ .card-vote-row .btn-vote{height:34px!important;min-height:34px!important;font-size:.64rem!important;color:#ecfeff!important;background:rgba(34,211,238,.2)!important;border:1px solid rgba(103,232,249,.75)!important}
+}
+@media (max-width:640px){
+ .card-footer{flex-wrap:nowrap!important;height:auto!important;max-height:none!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:6px!important}
+ .card-footer>*{width:100%!important;max-width:100%!important;margin:0!important;grid-column:auto!important}
+ .card-footer .card-vote-row{display:flex!important;flex-direction:row!important}
+ .card-vote-row .btn-vote{flex:1 1 0!important;min-width:0!important}
+ .card-footer .share-btn{flex:0 0 auto!important}
+ .card-footer .card-actions{display:grid!important;grid-template-columns:1fr 1fr;gap:5px}
+}

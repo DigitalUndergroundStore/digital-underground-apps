@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { weekOf, weekEndsAt, prevWeek, isKerzy, rank } from "../../_lib/league.js";
+import { weekOf, weekEndsAt, prevWeek, isKerzy, isOwnDU, rank } from "../../_lib/league.js";
 import { onRequestPost, onRequestGet } from "./index.js";
 
 function memKv() {
@@ -34,8 +34,16 @@ test("weeks run Fri 00:00 to Thu 11:59 PM Toronto; launch week ends Oct 29", () 
   assert.equal(prevWeek("2026-11-06"), "2026-10-30");
 });
 
-test("Kerzy Labs listings are not eligible", () => {
+test("isKerzy detects Kerzy Labs listings", () => {
   assert.ok(isKerzy(LISTINGS[2])); assert.ok(!isKerzy(LISTINGS[0]));
+});
+
+test("isOwnDU detects Digital Underground products", () => {
+  assert.ok(isOwnDU(LISTINGS[4]));
+  assert.ok(isOwnDU({ id: "cm_x", name: "X", makerName: " Digital Underground " }));
+  assert.ok(isOwnDU({ id: "cm_y", name: "Y", makerSlug: "digital-underground" }));
+  assert.ok(!isOwnDU(LISTINGS[0]));
+  assert.ok(!isOwnDU(LISTINGS[2]));
 });
 
 test("rank: only real votes, most first", () => {
@@ -43,12 +51,12 @@ test("rank: only real votes, most first", () => {
   assert.deepEqual(rank(LISTINGS, new Map([["cm_a", 1], ["cm_b", 2]])).map((r) => r.id), ["cm_b", "cm_a"]);
 });
 
-test("3 votes per hashed IP, 1 per cookie, Kerzy rejected, empty start", async () => {
+test("3 votes per hashed IP, 1 per cookie, Digital Underground rejected, empty start", async () => {
   const env = { COMMUNITY_KV: memKv() };
   const g = await (await onRequestGet({ env, request: new Request("https://x/api/league") })).json();
   assert.equal(g.totalVotes, 0); assert.deepEqual(g.standings, []);
-  assert.deepEqual(g.eligible.map((l) => l.id), ["cm_a", "cm_b"]);
-  assert.equal((await vote(env, "cm_kerzy_x", "1.1.1.1")).status, 400);
+  assert.deepEqual(g.eligible.map((l) => l.id), ["cm_a", "cm_b", "cm_kerzy_x"]);
+  assert.equal((await vote(env, "cm_du_pw", "1.1.1.1")).status, 400);
   const r1 = await vote(env, "cm_a", "1.1.1.1"); assert.equal(r1.status, 200);
   const ck = r1.headers.get("set-cookie").match(/du_lv=(\w+)/)[1];
   assert.equal((await vote(env, "cm_b", "1.1.1.1", ck)).status, 409, "same cookie blocked");
@@ -60,6 +68,13 @@ test("3 votes per hashed IP, 1 per cookie, Kerzy rejected, empty start", async (
   assert.equal(g2.totalVotes, 4);
 });
 
+
+test("Kerzy Labs listings remain eligible", async () => {
+  const env = { COMMUNITY_KV: memKv() };
+  const g = await (await onRequestGet({ env, request: new Request("https://x/api/league") })).json();
+  assert.ok(g.eligible.some((l) => l.id === "cm_kerzy_x"));
+  assert.equal((await vote(env, "cm_kerzy_x", "4.4.4.4")).status, 200);
+});
 test("own vote counts even when KV list() lags", async () => {
   const kv = memKv(); const env = { COMMUNITY_KV: kv };
   assert.equal((await vote(env, "cm_a", "3.3.3.3")).status, 200);

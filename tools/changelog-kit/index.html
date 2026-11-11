@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Changelog Kit — free maker kit · Digital Underground</title><meta name="description" content="Announce every version like a pro: changelog entry format, release-note templates, and update posts for X, LinkedIn and email."><link rel="canonical" href="https://digitalundergroundstore.com/tools/changelog-kit/"><meta property="og:title" content="Changelog Kit"><meta property="og:description" content="Announce every version like a pro: changelog entry format, release-note templates, and update posts for X, LinkedIn and email."><meta property="og:image" content="https://digitalundergroundstore.com/store/covers/changelog-kit.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/assets/logo/favicon.svg">
+<style>body{margin:0;background:#11141a;color:#e6e8ec;font:16px/1.6 Inter,system-ui,sans-serif}.w{max-width:780px;margin:0 auto;padding:32px 20px 80px}a{color:#9a97e8}h1{font-size:34px;margin:.2em 0}h2{margin-top:1.8em;border-top:1px solid rgba(154,151,232,.2);padding-top:1em}li{margin:.25em 0}.bar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.btn{background:#9a97e8;color:#11141a;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font:inherit}.btn.g{background:transparent;color:#e6e8ec;border:1px solid rgba(230,232,236,.3)}.top{font-size:14px;color:#a8acb5}@media print{body{background:#fff;color:#000}.bar,.top{display:none}}</style></head><body><div class="w">
+<div class="top"><a href="/store/">← Digital Underground store</a> · Changelog Kit · free</div>
+<div class="bar"><a class="btn" href="changelog-kit.zip" download>Download pack (.zip)</a><a class="btn g" href="changelog-kit.md" download>Markdown</a><button class="btn g" onclick="navigator.clipboard.writeText(document.getElementById('src').textContent);this.textContent='Copied ✓'">Copy all</button><button class="btn g" onclick="print()">Save as PDF</button></div>
+<h1>Changelog Kit</h1>
+<p>Turn every release into a reason for users to come back.</p>
+<h2>Version naming</h2>
+<ul>
+<li>MAJOR.MINOR.PATCH (2.3.1): major = breaking/big new thing, minor = feature, patch = fixes.</li>
+<li>Or date-based (2026.10.26) for continuously shipped web apps.</li>
+</ul>
+<h2>Changelog entry format</h2>
+<h3>v[1.4.0] — [YYYY-MM-DD]</h3>
+<p><b>New</b></p>
+<ul>
+<li>[Feature] — [why it matters to the user, one line]</li>
+</ul>
+<p><b>Improved</b></p>
+<ul>
+<li>[Thing] is now [faster/simpler] ([number if you have it])</li>
+</ul>
+<p><b>Fixed</b></p>
+<ul>
+<li>[Bug users noticed], thanks @[reporter]</li>
+</ul>
+<p>Rules: write for users, not commits. Lead with the most visible change. Credit reporters.</p>
+<h2>Release note (in-app / site, ~60 words)</h2>
+<p><b>[Product] [version] is here.</b> You can now [headline feature]. We also [improvement] and fixed [notable bug]. Thanks to everyone who sent feedback — keep it coming at [contact].</p>
+<h2>X post (feature)</h2>
+<p>New in [Product]: [feature] ✨</p>
+<p>[1 line on the pain it removes]</p>
+<p>[GIF/screenshot]</p>
+<p>Update now / try it → [link]</p>
+<h2>X post (fix roundup)</h2>
+<p>[Product] [version]: 🛠 [n] fixes, ⚡ [speed gain], 🙏 thanks @[user] for the reports. Full changelog → [link]</p>
+<h2>LinkedIn update</h2>
+<p>We shipped [Product] [version] this week.</p>
+<p>The biggest change: [feature] — because [customer insight].</p>
+<p>Also: [improvement], [fix].</p>
+<p>Small, steady releases &gt; big rare ones. What should we build next?</p>
+<h2>Email to users</h2>
+<p>Subject: [Product] now [does X]</p>
+<p>Hi [first name],</p>
+<p>Quick update: [Product] [version] adds [feature], so you can [outcome].</p>
+<p>Also new: [item], [item].</p>
+<p>Reply to this email with anything that bugs you — I read every one.</p>
+<p>— [Your name]</p>
+<h2>Cadence checklist</h2>
+<ul>
+<li>☐ Changelog page updated the same day</li>
+<li>☐ One post per meaningful release (not per patch)</li>
+<li>☐ Monthly roundup email</li>
+<li>☐ Screenshot/GIF for every &quot;New&quot; item</li>
+</ul>
+<pre id="src" hidden># Changelog Kit
+Turn every release into a reason for users to come back.
+
+## Version naming
+- MAJOR.MINOR.PATCH (2.3.1): major = breaking/big new thing, minor = feature, patch = fixes.
+- Or date-based (2026.10.26) for continuously shipped web apps.
+
+## Changelog entry format
+### v[1.4.0] — [YYYY-MM-DD]
+**New**
+- [Feature] — [why it matters to the user, one line]
+**Improved**
+- [Thing] is now [faster/simpler] ([number if you have it])
+**Fixed**
+- [Bug users noticed], thanks @[reporter]
+
+Rules: write for users, not commits. Lead with the most visible change. Credit reporters.
+
+## Release note (in-app / site, ~60 words)
+**[Product] [version] is here.** You can now [headline feature]. We also [improvement] and fixed [notable bug]. Thanks to everyone who sent feedback — keep it coming at [contact].
+
+## X post (feature)
+New in [Product]: [feature] ✨
+[1 line on the pain it removes]
+[GIF/screenshot]
+Update now / try it → [link]
+
+## X post (fix roundup)
+[Product] [version]: 🛠 [n] fixes, ⚡ [speed gain], 🙏 thanks @[user] for the reports. Full changelog → [link]
+
+## LinkedIn update
+We shipped [Product] [version] this week.
+The biggest change: [feature] — because [customer insight].
+Also: [improvement], [fix].
+Small, steady releases &gt; big rare ones. What should we build next?
+
+## Email to users
+Subject: [Product] now [does X]
+Hi [first name],
+Quick update: [Product] [version] adds [feature], so you can [outcome].
+Also new: [item], [item].
+Reply to this email with anything that bugs you — I read every one.
+— [Your name]
+
+## Cadence checklist
+- [ ] Changelog page updated the same day
+- [ ] One post per meaningful release (not per patch)
+- [ ] Monthly roundup email
+- [ ] Screenshot/GIF for every &quot;New&quot; item
+</pre>
+<p class="top" style="margin-top:40px">More maker tools in the <a href="/store/">store</a> · Have an indie app? <a href="/list-your-indie-app-free/">Get listed free</a>.</p></div></body></html>

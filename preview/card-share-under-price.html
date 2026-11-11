@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Card Share under See site — preview</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: start center;
+    background: #0b0e14; font-family: Inter, system-ui, -apple-system, sans-serif; color: #e6e8ec;
+    padding: 20px 12px 40px;
+  }
+  .wrap { width: min(390px, 100%); }
+  .label { font-size: .78rem; color: #9ca3af; margin: 0 0 10px; letter-spacing: .02em; }
+  .phone {
+    background: #11141a; border-radius: 18px; border: 1px solid rgba(255,255,255,.08);
+    overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.45);
+  }
+  .card { background: #161922; }
+  .media {
+    aspect-ratio: 16/10; background: #fff; color: #111;
+    display: grid; place-items: center; padding: 16px; text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.06); position: relative;
+  }
+  .media strong { display: block; font-size: 1.05rem; margin-top: 6px; }
+  .media span { display: block; font-size: .78rem; color: #555; margin-top: 4px; }
+  .badge {
+    position: absolute; top: 10px; right: 10px; background: #7c3aed; color: #fff;
+    font-size: .68rem; font-weight: 700; padding: 3px 8px; border-radius: 999px;
+  }
+  .body { padding: 14px 14px 16px; }
+  .meta { color: #a78bfa; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  h1 { margin: 0 0 6px; font-size: 1.2rem; color: #c4b5fd; letter-spacing: -.02em; }
+  .desc { margin: 0 0 14px; color: #aeb2bc; font-size: .9rem; line-height: 1.4; }
+  .footer {
+    display: flex; align-items: flex-end; justify-content: space-between; gap: 12px;
+    flex-wrap: wrap; padding-top: 4px;
+  }
+  .price-col { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
+  .price { color: #c4b5fd; font-weight: 600; font-size: .9rem; }
+  .card-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; margin-left: auto; }
+  .btn {
+    appearance: none; font: inherit; font-size: .82rem; font-weight: 600;
+    padding: 8px 12px; border-radius: 8px; text-decoration: none; border: 1px solid transparent;
+    cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    height: 34px; line-height: 1; box-sizing: border-box; color: inherit; background: transparent;
+  }
+  .btn-ghost { color: #c4b5fd; border-color: rgba(167,139,250,.28); background: rgba(167,139,250,.06); }
+  .btn-primary {
+    color: #fff; background: linear-gradient(180deg,#8b5cf6,#7c3aed);
+    border-color: rgba(167,139,250,.5); box-shadow: 0 4px 12px rgba(124,58,237,.25);
+  }
+  .btn-share {
+    color: #ede9fe; background: rgba(139,92,246,.12); border: 1px solid rgba(167,139,250,.4);
+    height: 30px; padding: 6px 10px; font-size: .78rem;
+  }
+  .btn-share:hover { background: rgba(139,92,246,.22); }
+  .btn-vote {
+    width: 100%; margin-top: 10px; height: 36px; font-weight: 700;
+    color: #a5f3fc; background: rgba(34,211,238,.08);
+    border: 1px solid rgba(103,232,249,.4);
+    box-shadow: 0 0 12px rgba(34,211,238,.18), inset 0 1px 0 rgba(255,255,255,.06);
+  }
+  .note { margin: 14px 4px 0; font-size: .8rem; color: #8b919c; line-height: 1.45; }
+  .toast {
+    position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%);
+    background: #1f2430; border: 1px solid rgba(255,255,255,.12); color: #e6e8ec;
+    padding: 10px 14px; border-radius: 999px; font-size: .82rem; opacity: 0;
+    transition: opacity .2s; pointer-events: none; z-index: 9; white-space: nowrap;
+  }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="label">Preview only — Share under “See site” (not live yet)</p>
+    <div class="phone">
+      <article class="card">
+        <div class="media">
+          <span class="badge">New</span>
+          <div>
+            <div style="font-size:1.35rem;font-weight:800;letter-spacing:-.03em">Glance</div>
+            <strong>Create iPhone widgets without building an app</strong>
+            <span>Private, public, or shared — powered by your content and APIs</span>
+          </div>
+        </div>
+        <div class="body">
+          <div class="meta">Tal Kravarusic</div>
+          <h1>Glance</h1>
+          <p class="desc">Create iPhone widgets without building an app.</p>
+          <div class="footer">
+            <div class="price-col">
+              <span class="price">See site</span>
+              <button type="button" class="btn btn-share" id="shareBtn"
+                data-name="Glance"
+                data-url="https://digitalundergroundstore.com/community/p/?id=cm_glance_preview"
+                aria-label="Share Glance">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                Share
+              </button>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="#">Contact</a>
+              <a class="btn btn-primary" href="#">Visit</a>
+            </div>
+            <button type="button" class="btn btn-vote">Cast Maker League Vote</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="note">Share uses the same native share / copy-caption flow as Maker League. Live marketplace cards stay unchanged until you say go.</p>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script>
+  (function () {
+    var btn = document.getElementById("shareBtn");
+    var toast = document.getElementById("toast");
+    function show(msg) {
+      toast.textContent = msg; toast.classList.add("show");
+      clearTimeout(show._t); show._t = setTimeout(function () { toast.classList.remove("show"); }, 2600);
+    }
+    function copy(text) {
+      try {
+        var ta = document.createElement("textarea");
+        ta.value = text; ta.setAttribute("readonly", "");
+        ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+        document.body.appendChild(ta); ta.select();
+        var ok = document.execCommand("copy"); ta.remove();
+        if (ok) { show("Caption + link copied"); return; }
+      } catch (e) {}
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(function () { show("Caption + link copied"); });
+    }
+    btn.addEventListener("click", function () {
+      var name = btn.getAttribute("data-name");
+      var url = btn.getAttribute("data-url");
+      var text = "Check out " + name + " on Digital Underground — free indie marketplace, zero commission.";
+      var data = { title: name + " · Digital Underground", text: text, url: url };
+      if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
+        navigator.share(data).catch(function (e) { if (!e || e.name !== "AbortError") copy(text + " " + url); });
+        return;
+      }
+      copy(text + " " + url);
+    });
+  })();
+  </script>
+</body>
+</html>

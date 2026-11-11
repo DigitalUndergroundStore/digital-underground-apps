@@ -33,3 +33,11 @@
   window.duShareLeague = share;
   document.addEventListener("click", function (e) { var b = e.target.closest && e.target.closest("[data-lg-share]"); if (b) { e.preventDefault(); share(); } });
 })();
+/* Share-click counts for the owner HUD. Does not change the share sheet. */
+(function () {
+  if (window.__duShareWatch || document.querySelector('script[src="/community/share-track.js"]')) return;
+  var s = document.createElement("script");
+  s.src = "/community/share-track.js";
+  s.async = false;
+  document.head.appendChild(s);
+})();

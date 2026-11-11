@@ -6,7 +6,7 @@
       meta = document.getElementById("standingsMeta"), q = document.getElementById("searchProjects"), motw = document.getElementById("motwSlot");
   var data = null;
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
-  function pid(id) { return "/community/p/?id=" + encodeURIComponent(id); }
+  function pid(id, name) { return name ? (function(r){var b=String(r&&r.name||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,48).replace(/-+$/,""),t=String(r&&r.id||"").split("_").pop().toLowerCase().replace(/[^a-z0-9]/g,"");return "/community/p/"+(b&&b!==t?b+"-"+t:t)+"/";})({ id: id, name: name }) : "/community/p/?id=" + encodeURIComponent(id); }
   function say(t, c) { msg.textContent = t; msg.className = "lg-msg" + (c ? " " + c : ""); }
   function toast(m) { var t = document.getElementById("toastNotice"); if (!t) return; t.textContent = m; t.classList.add("show"); setTimeout(function () { t.classList.remove("show"); }, 2600); }
   function plural(n) { return n + (n === 1 ? " vote" : " votes"); }
@@ -14,7 +14,7 @@
     var v = l.video;
     if (v && v.kind === "file" && /^\/api\/community\/video\?v=/.test(v.src)) return '<div class="lg2-img"><video src="' + esc(v.src) + '" muted loop playsinline autoplay preload="metadata"' + (l.imageUrl ? ' poster="' + esc(l.imageUrl) + '"' : "") + ' aria-label="' + esc(l.name) + ' video"></video></div>';
     if (v && (v.kind === "youtube" || v.kind === "vimeo") && /^https:\/\/(www\.youtube-nocookie\.com|player\.vimeo\.com)\//.test(v.src)) return '<div class="lg2-img"><iframe src="' + esc(v.src) + '" title="' + esc(l.name) + ' video" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>';
-    return '<a class="lg2-img" href="' + pid(l.id) + '" aria-label="Open ' + esc(l.name) + ' page">' + '<img src="' + esc(l.imageUrl || "/assets/covers/default-cover.svg") + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'/assets/covers/default-cover.svg\'">' + "</a>";
+    return '<a class="lg2-img" href="' + pid(l.id, l.name) + '" aria-label="Open ' + esc(l.name) + ' page">' + '<img src="' + esc(l.imageUrl || "/assets/covers/default-cover.svg") + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'/assets/covers/default-cover.svg\'">' + "</a>";
   }
   function render() {
     meta.textContent = plural(data.totalVotes) + " · ends " + new Date(data.endsAt - 60000).toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" }) + " ET";
@@ -24,7 +24,7 @@
     var f = (q.value || "").trim().toLowerCase();
     grid.innerHTML = data.eligible.filter(function (l) { return !f || (l.name + " " + l.makerName).toLowerCase().indexOf(f) >= 0; }).map(function (l) {
       var mine = data.voted === l.id;
-      return '<div class="vote-card' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"><div class="lg2-maker">' + esc(l.makerName) + "</div>" + media(l) + '<strong class="lg2-name"><a href="' + pid(l.id) + '">' + esc(l.name) + '</a></strong><div class="lg2-actions"><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-vote="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "✓ Voted" : "Vote") + '</button><button type="button" class="share-btn" data-share="' + esc(l.id) + '" data-name="' + esc(l.name) + '" data-image="' + esc(l.imageUrl || "") + '" aria-label="Share ' + esc(l.name) + '"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Share</button></div></div>';
+      return '<div class="vote-card' + (mine ? " voted" : "") + '" data-id="' + esc(l.id) + '"><div class="lg2-maker">' + esc(l.makerName) + "</div>" + media(l) + '<strong class="lg2-name"><a href="' + pid(l.id, l.name) + '">' + esc(l.name) + '</a></strong><div class="lg2-actions"><button type="button" class="vote-btn' + (mine ? " voted" : "") + '" data-vote="' + esc(l.id) + '"' + (data.voted ? " disabled" : "") + ' aria-label="Vote for ' + esc(l.name) + '">' + (mine ? "✓ Voted" : "Vote") + '</button><button type="button" class="share-btn" data-share="' + esc(l.id) + '" data-name="' + esc(l.name) + '" data-image="' + esc(l.imageUrl || "") + '" aria-label="Share ' + esc(l.name) + '"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Share</button></div></div>';
     }).join("") || '<p class="lg-empty">' + (data.eligible.length ? "No matching projects." : "No projects in the league yet.") + "</p>";
     if (data.voted && !msg.textContent) say("You've voted this week. Voting reopens after the week ends Thursday 11:59 PM ET.", "ok");
   }
@@ -33,10 +33,29 @@
       .then(function (d) { data = d; render(); focusWanted(); })
       .catch(function () { st.innerHTML = '<li class="lg-empty">Couldn\'t load the league. Try again soon.</li>'; meta.textContent = ""; });
   }
+  var MOTW_COVER = { "cm_mvfnl9qp_80652919": "/assets/motw/media-renamer-pro-cover.webp?v=2" };
   fetch("/api/league/winner", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (d) {
     var w = d && d.winner; if (!w || !motw) return;
-    motw.innerHTML = '<a class="motw-card" href="' + esc(w.url) + '">' + '<img class="motw-img" src="' + esc(w.imageUrl || "/assets/covers/default-cover.svg") + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'/assets/covers/default-cover.svg\'">' +
-      '<div class="motw-content"><img class="motw-official" src="/assets/badges/maker-of-the-week.svg?v=1" alt="Maker of the Week" width="131" height="40"><h3 class="motw-name">' + esc(w.name) + '</h3><p class="motw-pitch">by <strong>' + esc(w.makerName) + "</strong>" + (w.week ? " · week of " + esc(w.week) : "") + (w.pitchShort ? " · " + esc(w.pitchShort) : "") + "</p></div></a>";
+    if (MOTW_COVER[w.id]) w.imageUrl = MOTW_COVER[w.id];
+    function paint() {
+      var src = w.imageUrl || "/assets/covers/default-cover.svg";
+      var markLeft = /\/assets\/motw\//.test(src);
+      var week = w.week ? '<p class="motw-week">Week of ' + esc(w.week) + "</p>" : "";
+      var pitch = w.pitchShort ? '<p class="motw-pitch">' + esc(w.pitchShort) + "</p>" : "";
+      motw.innerHTML = '<a class="motw-card" href="' + esc(w.url) + '">' +
+        '<img class="motw-official" src="/assets/badges/maker-of-the-week.svg?v=crown1" alt="Maker of the Week" width="131" height="40">' +
+        '<img class="motw-img' + (markLeft ? " is-mark-left" : "") + '" src="' + esc(src) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'/assets/covers/default-cover.svg\'">' +
+        '<span class="motw-content"><h3 class="motw-name">' + esc(w.name) + "</h3>" +
+        '<p class="motw-by">by <strong>' + esc(w.makerName) + "</strong></p>" + week + pitch + "</span></a>";
+      var img = motw.querySelector(".motw-img");
+      function frame() {
+        var nw = img.naturalWidth, nh = img.naturalHeight;
+        if (nw && nh && nw / nh <= 1.35) img.classList.remove("is-mark-left");
+      }
+      img.addEventListener("load", frame);
+      if (img.complete) frame();
+    }
+    paint();
   });
   grid.addEventListener("click", function (e) {
     var sh = e.target.closest("button[data-share]");

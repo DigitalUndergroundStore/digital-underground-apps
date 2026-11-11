@@ -33,7 +33,7 @@
   }
   function makerHTML(row) { var s = makerSlug(row); return s ? '<a href="/makers/' + s + '/">' + esc(row.makerName) + "</a>" : esc(row.makerName); }
   function cardHTML(row) {
-    var href = "/community/p/?id=" + encodeURIComponent(row.id), name = esc(row.name);
+    var href = (function(r){var b=String(r&&r.name||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,48).replace(/-+$/,""),t=String(r&&r.id||"").split("_").pop().toLowerCase().replace(/[^a-z0-9]/g,"");return "/community/p/"+(b&&b!==t?b+"-"+t:t)+"/";})(row), name = esc(row.name);
     var stage = row.stage && row.stage !== "Released" ? row.stage : "";
     var badge = stage ? '<span class="badge stage">' + esc(stage) + "</span>" : row.curated ? '<span class="badge" title="Curated by Digital Underground">★ Featured pick</span>' : "";
     if (row.isNew) badge = '<span class="badge new" style="background:#16a34a;color:#fff">New</span>' + badge;

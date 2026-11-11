@@ -10,20 +10,20 @@ and sets the versioned CSS/JS includes. Used by gen-landing.py, generate-product
 apply-site-nav.py (which stamps every existing page + generator template). Bump CSS_V / JS_V on edits."""
 import re
 
-CSS_V, JS_V = "33", "35"
+CSS_V, JS_V = "42", "43"
 THEME_V = "2"  # /assets/theme-clean.css: clean theme (Oct 23 2026), always the last stylesheet
-LINKS = [("/league/", "League"), ("/makers/", "Creators"), ("/blog/", "Blog")]
+LINKS = [("/", "Marketplace"), ("/league/", "League"), ("/makers/", "Creators")]
 MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>'
 _L = "".join(f'<a href="{h}">{t}</a>' for h, t in LINKS)
 NAV = ('<!--du-site-nav--><header class="dun"><div class="dun-in">'
-  '<a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><a class="dun-shop" href="/store/"><span aria-hidden="true">&#128722;</span> <span class="dun-shop-l">Shop</span><span class="dun-shop-s">Shop</span></a>'
+  '<a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"></a>'
   f'<nav class="dun-links" aria-label="Primary">{_L}</nav>'
-  '<div class="dun-right">'
-  '<div class="dun-acct" id="dunAcct"><button type="button" class="dun-acct-btn" id="dunAcctBtn" aria-label="Open menu and account" aria-controls="dunDrawer" aria-expanded="false" aria-haspopup="true"><img src="/assets/logo/du-mark.svg" alt="" width="26" height="26"></button></div>'
+  '<div class="dun-right"><a class="dun-mp" href="/store/p/maker-pro/">Maker Pro</a>'
+  '<div class="dun-acct" id="dunAcct"><button type="button" class="dun-acct-btn dun-menu-btn" id="dunAcctBtn" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false" aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>'
   '</div></div>'
   f'<nav class="dun-drawer" id="dunDrawer" aria-label="Site menu">'
   '<div class="dun-drawer-acct" id="dunDrawerAcct" role="group" aria-label="Account">'
-  '<div class="dun-drawer-who"><span class="av mark" aria-hidden="true"><img src="/assets/logo/du-mark.svg" alt="" width="36" height="36"></span><span class="nm">Account</span></div>'
+  '<div class="dun-drawer-who"><span class="av mark" aria-hidden="true"><img src="/assets/logo/du-mark-white.svg" alt="" width="36" height="36"></span><span class="nm">Account</span></div>'
   '<a href="/community/dashboard/">Sign in</a></div>'
   f'{_L}<a href="/community/submit/">List your project free</a><a href="/store/p/maker-pro/">Maker Pro</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav>'
   f'</header><script src="/assets/site-nav/site-nav.js?v={JS_V}" defer></script><!--/du-site-nav-->')
@@ -49,7 +49,8 @@ FOOT = ('<!--du-site-foot--><footer class="duf"><div class="duf-in"><div class="
   '<p class="duf-msg" role="status" aria-live="polite"></p><p class="duf-priv">We only use your email for this list, never sell it, and every email has an unsubscribe link. <a href="/privacy/">Privacy policy</a>.</p></form>'
   f'<div class="duf-social"><a href="https://x.com/DigitalUG_Store" rel="noopener" target="_blank" aria-label="Digital Underground on X">{XSVG}</a></div></div>'
   f'<div class="duf-cols">{_C}</div></div>'
-  f'<div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="{CONTACT}">Contact</a></p></div>'
+  f'<div class="duf-bar"><p>© <span class="duf-year">2026</span> Digital Underground</p><p class="duf-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="{CONTACT}">Contact</a><a href="https://donate.stripe.com/bJe5kFdy42WJdkOgd40ZW00" target="_blank" rel="noopener">Tip us ☕</a></p></div>'
+  '<div class="duf-badges" role="group" aria-label="Featured on"><a href="https://startupfa.me/s/digital-underground?utm_source=digitalundergroundstore.com" target="_blank" rel="noopener"><img src="https://startupfa.me/badge?t=classic&amp;theme=dark" alt="Digital Underground - Featured on Startup Fame" width="171" height="54" loading="lazy" decoding="async"></a><a href="https://peerpush.com/p/digital-underground" target="_blank" rel="noopener"><img src="https://peerpush.com/p/digital-underground/badge.png" alt="Digital Underground on PeerPush" width="230" height="65" loading="lazy" decoding="async"></a><a href="https://www.launchme.me/products/Digital%20Underground" target="_blank" rel="noopener noreferrer"><img src="https://www.launchme.me/api/badge/Digital%20Underground?theme=dark" alt="Featured on MemeLaunch" width="230" height="54" loading="lazy" decoding="async"></a><a href="https://twelve.tools" target="_blank" rel="noopener"><img src="https://twelve.tools/badge2-dark.svg" alt="Featured on Twelve Tools" width="148" height="40" loading="lazy" decoding="async"></a></div><style>.duf-badges{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;margin:0 auto;padding:0 16px 20px;max-width:1200px}.duf-badges a{display:inline-flex;align-items:center;border-radius:10px}.duf-badges a:hover,.duf-badges a:focus-visible{opacity:1}.duf-badges a:focus-visible{outline:2px solid #9a97e8;outline-offset:3px}.duf-badges img{height:36px;width:auto;max-width:100%;display:block}</style>'
   '</footer><!--/du-site-foot-->')
 
 CSS = (f'<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v={CSS_V}">\n'

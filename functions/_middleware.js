@@ -1,5 +1,6 @@
 import { recordServerError } from "./_lib/health.js";
 import { mintOwnerSession, verifyOwnerSession, parseCookies, ownerSessionCookie, OWNER_COOKIE } from "./_lib/owner.js";
+import { isJunkStoreOrToolPath } from "./_lib/junk-store-slugs.js";
 const HSTS = "max-age=31536000; includeSubDomains";
 // Force HTTPS + HSTS. Owner dashboard shell also requires HTTP Basic Auth (OWNER_BASIC_* Pages secrets).
 /**
@@ -201,14 +202,27 @@ export async function onRequest({ request, next, env, waitUntil }) {
   }
   if (isRetiredAdmin(url.pathname)) return notFound();
 
+  // Store-only cleanup: unpublished mass-batch leftover product/tool pages 301 to /store/.
+  if (isJunkStoreOrToolPath(url.pathname)) {
+    return new Response(null, { status: 301, headers: { Location: "/store/", "Strict-Transport-Security": HSTS, "X-Robots-Tag": "noindex" } });
+  }
+
   // Edge-gate /owner shell (APIs under /api/owner stay session/Bearer-only).
   if (isOwnerShell(url.pathname)) {
     const expected = readOwnerBasic(env);
     if (!expected) {
       if (!isLoopback(request)) return unconfigured();
     } else {
+      // A valid signed owner session cookie (minted after one successful Basic
+      // login, 30-day HttpOnly/Secure) also opens the shell. Without this, every
+      // asset/navigation re-required Basic, and browsers that drop cached Basic
+      // creds (iOS Safari, PWA, tab restore) re-prompted in a loop.
       const presented = parseBasic(request.headers.get("Authorization"));
-      if (!basicMatches(presented, expected)) return challenge();
+      if (!basicMatches(presented, expected)) {
+        let sessOk = false;
+        try { sessOk = await verifyOwnerSession(env, parseCookies(request)[OWNER_COOKIE]); } catch { sessOk = false; }
+        if (!sessOk) return challenge();
+      }
     }
     const isApiOwner = false; // shell only
     let resOwner;
@@ -249,14 +263,25 @@ export async function onRequest({ request, next, env, waitUntil }) {
     return new Response(null, { status: 301, headers: { Location: url.toString(), "Strict-Transport-Security": HSTS } });
   }
   const isApi = url.pathname.startsWith("/api/");
+  // This least-privilege export must remain read-only even on backend failures.
+  const isReadOnlyContacts = /^\/api\/internal\/maker-contacts\/?$/.test(url.pathname);
   let res;
   try {
     res = await next();
   } catch (e) {
-    if (isApi && env && env.COMMUNITY_KV) waitUntil(recordServerError(env.COMMUNITY_KV, url.pathname, "throw"));
+    if (isApi && !isReadOnlyContacts && env && env.COMMUNITY_KV) waitUntil(recordServerError(env.COMMUNITY_KV, url.pathname, "throw"));
     throw e;
   }
-  if (isApi && res.status >= 500 && env && env.COMMUNITY_KV) waitUntil(recordServerError(env.COMMUNITY_KV, url.pathname, res.status));
+  if (isApi && !isReadOnlyContacts && res.status >= 500 && env && env.COMMUNITY_KV) waitUntil(recordServerError(env.COMMUNITY_KV, url.pathname, res.status));
+  // Site-wide presence heartbeat: inject /assets/presence.js into public HTML pages missing it.
+  const ct = (res.headers.get("content-type") || "").toLowerCase();
+  if (!isApi && request.method === "GET" && res.status === 200 && ct.includes("text/html") && typeof HTMLRewriter !== "undefined") {
+    let seen = false;
+    res = new HTMLRewriter()
+      .on('script[src*="presence.js"]', { element() { seen = true; } })
+      .on("body", { element(el) { el.onEndTag((end) => { if (!seen) end.before('<script src="/assets/presence.js?v=2" defer></script>', { html: true }); }); } })
+      .transform(res);
+  }
   if (res.headers.has("Strict-Transport-Security")) return res;
   const out = new Response(res.body, res);
   out.headers.set("Strict-Transport-Security", HSTS);

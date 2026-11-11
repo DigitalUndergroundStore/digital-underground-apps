@@ -44,9 +44,9 @@ curl -X POST https://digitalundergroundstore.com/api/v1/listings \
 - API docs: https://digitalundergroundstore.com/community/api/
 - OpenAPI: https://digitalundergroundstore.com/openapi.json
 - MCP server: https://digitalundergroundstore.com/mcp (manifest: https://digitalundergroundstore.com/server.json)
-- Store: https://digitalundergroundstore.com/store/ (best value to start: Complete Freelance Suite CA$79 https://digitalundergroundstore.com/store/p/complete-freelance-suite/ ; Offer Desk CA$19 https://digitalundergroundstore.com/store/p/offer-desk/)
+- Store: https://digitalundergroundstore.com/store/ (best value to start: Complete Freelance Suite $79 https://digitalundergroundstore.com/store/p/complete-freelance-suite/ ; Offer Desk $19 https://digitalundergroundstore.com/store/p/offer-desk/)
 - Blog (guides for indie makers): https://digitalundergroundstore.com/blog/
 
 ## Books (Digital Underground store)
 
-- Thrillers: https://digitalundergroundstore.com/store/thrillers/ (He Came Home Without Her, a domestic thriller, CA$4.99; Null Harbor, a near-future thriller, CA$4.99)
+- Thrillers: https://digitalundergroundstore.com/store/thrillers/ (He Came Home Without Her, a domestic thriller, $4.99; Null Harbor, a near-future thriller, $4.99)

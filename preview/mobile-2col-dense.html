@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>DU marketplace — mobile 2-col fit preview</title>
+<style>
+  :root {
+    --bg:#0b0d12; --card:#141821; --line:rgba(230,232,236,.12);
+    --text:#e6e8ec; --muted:#9aa3b2; --cyan:#22d3ee;
+    --grad:linear-gradient(135deg,#6366f1,#8b5cf6);
+  }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:var(--bg); color:var(--text);
+    font: 13px/1.3 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; }
+  .chrome { padding:8px 10px 0; }
+  .banner {
+    background:linear-gradient(90deg,#1e1b4b,#312e81); border-radius:12px;
+    padding:8px 10px; display:flex; align-items:center; justify-content:space-between;
+    font-size:10px; margin-bottom:8px; border:1px solid rgba(139,92,246,.35); gap:8px;
+  }
+  .banner button {
+    background:var(--grad); border:0; color:#fff; border-radius:999px;
+    padding:5px 8px; font-size:10px; font-weight:700; white-space:nowrap;
+  }
+  .search input {
+    width:100%; background:#0f1218; border:1px solid var(--line); border-radius:10px;
+    color:var(--text); padding:8px 10px; font-size:12px; margin-bottom:6px;
+  }
+  .filters {
+    display:flex; gap:6px; align-items:center; flex-wrap:wrap; margin-bottom:8px;
+    font-size:11px; color:var(--muted);
+  }
+  .pill {
+    background:#0f1218; border:1px solid var(--line); border-radius:999px;
+    padding:5px 8px; color:var(--text);
+  }
+  .league {
+    margin-left:auto; background:rgba(124,92,255,.15); border:1px solid rgba(124,92,255,.4);
+    color:#c4b5fd; border-radius:999px; padding:5px 8px; font-weight:700; font-size:10px;
+  }
+  .grid {
+    display:grid; grid-template-columns:1fr 1fr; gap:8px; padding:0 10px 16px;
+  }
+  .card {
+    display:flex; flex-direction:column; border-radius:14px; overflow:hidden;
+    background:var(--card); border:1px solid var(--line);
+    min-width:0;
+  }
+  .shot-wrap { position:relative; background:#1a1e26; }
+  .shot { width:100%; aspect-ratio:16/10; object-fit:cover; display:block; }
+  .badge {
+    position:absolute; top:6px; right:6px; background:#7c5cff; color:#fff;
+    font-size:9px; font-weight:700; padding:2px 6px; border-radius:999px;
+  }
+  .info { display:flex; flex-direction:column; gap:3px; padding:8px 8px 9px; flex:1; min-width:0; }
+  .maker { color:var(--cyan); font-size:10px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .title {
+    font-size:12px; letter-spacing:-.02em; line-height:1.2;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+    overflow-wrap:anywhere;
+  }
+  .blurb {
+    color:var(--muted); font-size:10px; line-height:1.3; margin:0;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  }
+  .buyrow { display:flex; align-items:center; gap:4px; margin-top:4px; min-width:0; }
+  .price { font-size:10px; font-weight:700; color:var(--cyan); flex:1; min-width:0;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .cta {
+    flex:0 0 auto; min-height:24px; padding:0 8px; border-radius:999px;
+    background:var(--grad); color:#fff; font-weight:700; font-size:10px;
+    display:inline-flex; align-items:center;
+  }
+</style>
+</head>
+<body>
+  <div class="chrome">
+    <div class="banner"><span>LANES: 1v1 neon tower defense</span><button>Visit Rival Lanes</button></div>
+    <div class="search"><input value="Projects, makers, tags..." readonly></div>
+    <div class="filters">
+      <span class="pill">Featured ▾</span>
+      <span class="pill">More filters</span>
+      <span>82 projects</span>
+      <span class="league">🏆 League</span>
+    </div>
+  </div>
+  <div class="grid">
+    
+  <article class="card">
+    <div class="shot-wrap"><span class="badge">New</span><img class="shot" src="https://macless.dev/assets/og-image.jpg" alt="" loading="eager"></div>
+    <div class="info">
+      <div class="maker">Macless</div>
+      <strong class="title">Macless — Build your app and get it on the App Store</strong>
+      <p class="blurb">We offer a Macless ship to iOS service. We also build, fix, and ship m</p>
+      <div class="buyrow">
+        <span class="price">$99</span>
+        <span class="cta">Visit</span>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <div class="shot-wrap"><span class="badge">New</span><img class="shot" src="https://scknahadzvkxdxilgapm.supabase.co/storage/v1/object/public/alpha-public/optimized/38636d61-b9ae-4fbb-a0b4-c19e821f12c8/listing-mockups/961439ec-f88a-49a0-8d43-5e7e4dbeaa5e/31ac3ec8f0b7650983cc0a0d6344fddf6f55c7d16b23db8d00dcbe8afede54e5.webp" alt="" loading="eager"></div>
+    <div class="info">
+      <div class="maker">Clip Drop Store</div>
+      <strong class="title">Lurking Is Love Mug</strong>
+      <p class="blurb">A white 11 oz mug for quiet stream viewers: see everything, say nothin</p>
+      <div class="buyrow">
+        <span class="price">$14 + shipping; US only</span>
+        <span class="cta">Visit</span>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <div class="shot-wrap"><span class="badge">New</span><img class="shot" src="https://wisepim.com/wisepim-og-image.jpg" alt="" loading="eager"></div>
+    <div class="info">
+      <div class="maker">WISEPIM</div>
+      <strong class="title">AI PIM Software for Product Information Management | WISEPIM</strong>
+      <p class="blurb">AI PIM software that analyses, writes and translates your product data</p>
+      <div class="buyrow">
+        <span class="price">Freemium</span>
+        <span class="cta">Visit</span>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <div class="shot-wrap"><span class="badge">New</span><img class="shot" src="https://assets.gumroad.com/images/opengraph_image.png" alt="" loading="eager"></div>
+    <div class="info">
+      <div class="maker">imnobody</div>
+      <strong class="title">Local Service Quote Follow-Up Kit (報價後 7 日跟進)</strong>
+      <p class="blurb">Sheet CRM + 5 follow-up messages + AI reply-temp prompts + optional Ma</p>
+      <div class="buyrow">
+        <span class="price">US$1 one-time</span>
+        <span class="cta">Visit</span>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <div class="shot-wrap"><img class="shot" src="https://digitalundergroundstore.com/api/community/img?id=cm_mv822ro8_6d5c4cb4&amp;v=1791979828511" alt="" loading="eager"></div>
+    <div class="info">
+      <div class="maker">Releviq</div>
+      <strong class="title">Releviq</strong>
+      <p class="blurb">Releviq helps you cut through information overload. Bring together the</p>
+      <div class="buyrow">
+        <span class="price">Free</span>
+        <span class="cta">Visit</span>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <div class="shot-wrap"><img class="shot" src="https://digitalundergroundstore.com/community/media/cyberarena-cover.png?v=20261105a" alt="" loading="eager"></div>
+    <div class="info">
+      <div class="maker">Kerzy Labs</div>
+      <strong class="title">CyberArena 3D</strong>
+      <p class="blurb">A neon first-person arena shooter that runs in your browser. Pick a ca</p>
+      <div class="buyrow">
+        <span class="price">Free / In testing</span>
+        <span class="cta">Visit</span>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <div class="shot-wrap"><img class="shot" src="https://kobra.systems/brand/og.png" alt="" loading="eager"></div>
+    <div class="info">
+      <div class="maker">Harsh Singh</div>
+      <strong class="title">Kobra</strong>
+      <p class="blurb">Polished React + Tailwind components for teams building exceptional pr</p>
+      <div class="buyrow">
+        <span class="price">See site</span>
+        <span class="cta">Visit</span>
+      </div>
+    </div>
+  </article>
+  <article class="card">
+    <div class="shot-wrap"><img class="shot" src="https://ziptooly.com/assets/og-image.png" alt="" loading="eager"></div>
+    <div class="info">
+      <div class="maker">Aakash Attri</div>
+      <strong class="title">ZipTooly</strong>
+      <p class="blurb">59 free online tools and 20 plain-English guides that run right in you</p>
+      <div class="buyrow">
+        <span class="price">Free</span>
+        <span class="cta">Visit</span>
+      </div>
+    </div>
+  </article>
+  </div>
+</body>
+</html>

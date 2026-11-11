@@ -1,3 +1,4 @@
+import { listingPath } from "./listing-url.js";
 /**
  * Maker League: free weekly vote. Weeks run Friday 00:00 to Thursday 11:59 PM America/Toronto
  * (i.e. they end at the Friday 00:00 instant) and are computed from the date (no cron).
@@ -53,19 +54,19 @@ export async function tally(kv, week, seen) {
   return counts;
 }
 
-/** Kerzy Labs and Digital Underground (the owner's own products) stay on the marketplace but are not in the League. */
+/** Digital Underground (the owner's own products) stay on the marketplace but are not in the League. Kerzy Labs games remain eligible. */
 export function isKerzy(l) { return /^cm_kerzy_/.test(l.id) || /kerzy/i.test(l.makerName || "") || l.makerSlug === "kerzy-labs"; }
 export function isOwnDU(l) { return /^digital\s*underground$/i.test((l.makerName || "").trim()) || l.makerSlug === "digital-underground"; }
-/** Live, maker-made listings (excludes DU-curated third-party picks and Kerzy Labs). Same source as the marketplace. */
+/** Live, maker-made listings (excludes DU-curated third-party picks and Digital Underground's own products). Same source as the marketplace. */
 export async function eligible(origin) {
   try {
     const r = await fetch(`${origin}/api/community/listings`, { headers: { accept: "application/json" } });
     const d = await r.json();
-    return (d.listings || []).filter((l) => l && l.id && !l.hidden && !l.curated && l.name);
+    return (d.listings || []).filter((l) => l && l.id && !l.hidden && !l.curated && l.name && !isOwnDU(l));
   } catch { return []; }
 }
 
-const card = (l, votes) => ({ id: l.id, name: l.name, makerName: l.makerName, pitchShort: l.pitchShort, imageUrl: l.imageUrl, url: `/community/p/?id=${encodeURIComponent(l.id)}`, votes });
+const card = (l, votes) => ({ id: l.id, name: l.name, makerName: l.makerName, pitchShort: l.pitchShort, imageUrl: l.imageUrl, url: listingPath(l), votes });
 
 /** Standings: most votes first, ties by name. Only listings with votes are ranked. */
 export function rank(list, counts) {
@@ -74,18 +75,19 @@ export function rank(list, counts) {
 }
 
 /** Winner of the previous (finished) week; cached in KV once computed since a finished week can't change. */
-export async function lastWinner(kv, origin, now = Date.now()) {
+export async function lastWinner(kv, origin, now = Date.now(), listP = null) {
+  const getList = () => listP || (listP = eligible(origin));
   const wk = prevWeek(weekOf(now));
   let w = null;
   const cached = await kv.get(`lg:w:${wk}`, "json");
   if (cached) w = cached;
   else {
     const counts = await tally(kv, wk);
-    const top = rank(await eligible(origin), counts)[0] || null;
+    const top = rank(await getList(), counts)[0] || null;
     w = { week: wk, id: top ? top.id : null, votes: top ? top.votes : 0 };
     await kv.put(`lg:w:${wk}`, JSON.stringify(w));
   }
   if (!w.id) return null;
-  const live = (await eligible(origin)).find((l) => l.id === w.id); // still live? show current listing text/image
+  const live = (await getList()).find((l) => l.id === w.id); // still live? show current listing text/image
   return live ? { week: wk, ...card(live, w.votes) } : null;
 }

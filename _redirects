@@ -122,3 +122,5 @@
 /grokmate/* /plainhelp/:splat 301
 /p/plainhelp /store/p/plainhelp/ 301
 /p/plainhelp/ /store/p/plainhelp/ 301
+/owner/hud/* /owner/ 302
+/owner/hud /owner/ 302

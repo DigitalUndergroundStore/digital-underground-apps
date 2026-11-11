@@ -32,3 +32,12 @@ export async function edgeCached(context, key, ttl, swr, produce) {
   if (res.status === 200) out.headers.set("Cache-Control", `public, max-age=0, s-maxage=${ttl}, stale-while-revalidate=${swr}`);
   return out;
 }
+
+// Session cookies that mean the response must not be stored or served from the public edge cache.
+export const AUTH_COOKIES = ["du_creator", "du_owner_sess"];
+
+export function hasAuthCookie(request) {
+  const c = request && request.headers ? (request.headers.get("Cookie") || request.headers.get("cookie") || "") : "";
+  if (!c) return false;
+  return AUTH_COOKIES.some((name) => new RegExp("(?:^|;\\s*)" + name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "=", "i").test(c));
+}

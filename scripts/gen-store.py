@@ -4,7 +4,7 @@
 The storefront HTML is generated. Edit this script, store/store.css, store/store.js,
 or the catalog — then re-run. Do not hand-edit store/index.html.
 
-PlanetView Live is CA$24 on Gumroad (product oxnfvy, code DUFREEPV). The storefront
+PlanetView Live is $24 on Gumroad (product oxnfvy, code DUFREEPV). The storefront
 always shows "Free with signup" and links to /free-planetview/. That override runs
 on every generate, including --force-live / --from-html, which refresh list prices
 from the current public store page.
@@ -61,7 +61,7 @@ def apply_storefront(product: dict) -> dict:
     item["sections"] = list(product.get("sections") or [])
     if is_planetview(item):
         item["gumroad"] = "oxnfvy"
-        item["list_price"] = "CA$24"
+        item["list_price"] = "$24"
         item["coupon"] = "DUFREEPV"
         item["price_label"] = "Free with signup"
         item["cta_href"] = "/free-planetview/"
@@ -79,7 +79,7 @@ def apply_storefront(product: dict) -> dict:
 def stamp_planetview_meta(product: dict) -> dict:
     if is_planetview(product):
         product["gumroad"] = "oxnfvy"
-        product["list_price"] = "CA$24"
+        product["list_price"] = "$24"
         product["coupon"] = "DUFREEPV"
     return product
 
@@ -214,7 +214,7 @@ def card_html(product: dict, index: int) -> str:
           </article>"""
 
 
-OD_SPOTLIGHT = '<section class="od-spotlight" aria-label="Featured: Offer Desk" style="max-width:880px;margin:28px auto 8px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;text-align:left;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px">\n    <a href="/store/p/offer-desk/" style="flex:0 0 220px;max-width:100%"><img src="/store/covers/offer-desk-cover-v3.jpg?v=20261029od7" alt="Offer Desk cover" width="440" height="248" style="width:100%;height:auto;border-radius:10px;display:block" loading="eager" decoding="async"></a>\n    <div style="flex:1 1 280px;min-width:0">\n      <div style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.75">Featured tool &middot; New v2.0</div>\n      <h2 style="margin:6px 0 6px;font-size:24px">Offer Desk</h2>\n      <p style="margin:0 0 12px;opacity:.85">Turn a client request into a clean one-page offer: scope, price, timeline and terms, ready to send. One link in your receipt &mdash; unlock and install, no download. Pay once, CA$19.</p>\n      <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary" href="https://kerzy.gumroad.com/l/bhrrtz" target="_blank" rel="noopener">Get Offer Desk &middot; CA$19</a><a class="btn" href="/store/p/offer-desk/" style="border:1px solid rgba(255,255,255,.2)">See details</a></div>\n    </div>\n  </section>\n  '
+OD_SPOTLIGHT = '<section class="od-spotlight" aria-label="Featured: Offer Desk" style="max-width:880px;margin:28px auto 8px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;text-align:left;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px">\n    <a href="/store/p/offer-desk/" style="flex:0 0 220px;max-width:100%"><img src="/store/covers/offer-desk-cover-v3.jpg?v=20261029od7" alt="Offer Desk cover" width="440" height="248" style="width:100%;height:auto;border-radius:10px;display:block" loading="eager" decoding="async"></a>\n    <div style="flex:1 1 280px;min-width:0">\n      <div style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.75">Featured tool &middot; New v2.0</div>\n      <h2 style="margin:6px 0 6px;font-size:24px">Offer Desk</h2>\n      <p style="margin:0 0 12px;opacity:.85">Turn a client request into a clean one-page offer: scope, price, timeline and terms, ready to send. One link in your receipt &mdash; unlock and install, no download. Pay once, $19.</p>\n      <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary" href="https://kerzy.gumroad.com/l/bhrrtz" target="_blank" rel="noopener">Get Offer Desk &middot; $19</a><a class="btn" href="/store/p/offer-desk/" style="border:1px solid rgba(255,255,255,.2)">See details</a></div>\n    </div>\n  </section>\n  '
 
 
 def promo_html(products: list[dict]) -> str:
@@ -313,6 +313,9 @@ def site_nav() -> str:
         '<a class="dun-shop" href="/store/" aria-current="page">',
         1,
     )
+    # Never let a footer ride along with the nav partial (Nov 2 2026: it rendered above the hero).
+    raw = re.sub(r"\n?<!--du-site-foot-->[\s\S]*?<!--/du-site-foot-->", "", raw)
+    assert "du-site-foot" not in raw
     return raw
 
 
@@ -382,11 +385,11 @@ def render(catalog: dict) -> str:
       <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> One-time price</span>
     </div>
   </div>
-  {OD_SPOTLIGHT}{promo_html(products)}
+  {OD_SPOTLIGHT}
   <div class="stats" role="list">
     <div class="stat" role="listitem"><div class="stat-value">{count}</div><div class="stat-label">products</div></div>
     <div class="stat" role="listitem"><div class="stat-value">{collections}</div><div class="stat-label">collections</div></div>
-    <div class="stat" role="listitem"><div class="stat-value">CAD</div><div class="stat-label">one-time pricing</div></div>
+    <div class="stat" role="listitem"><div class="stat-value">USD</div><div class="stat-label">one-time pricing</div></div>
   </div>
 </header>
 <div class="cat-bar">
@@ -433,6 +436,7 @@ def render(catalog: dict) -> str:
 <script src="/store/track.js?v=3" defer></script>
 <script src="/assets/signup.js?v=20261027pv" defer></script>
 <script src="/assets/presence.js?v=1" defer></script>
+<link rel="stylesheet" href="/assets/currency/du-currency.css?v=2"><script src="/assets/currency/du-currency.js?v=2" defer></script>
 </body>
 </html>
 """
@@ -457,7 +461,7 @@ def assert_storefront(page: str) -> None:
     card = card_m.group(0)
     if "Free with signup" not in card:
         raise SystemExit("PlanetView card is not labeled Free with signup.")
-    if "CA$" in card or "gumroad.com/l/oxnfvy" in card:
+    if re.search(r"\$\d", card) or "gumroad.com/l/oxnfvy" in card:
         raise SystemExit("PlanetView card is showing a catalog price or Gumroad checkout.")
     if 'href="/free-planetview/"' not in card:
         raise SystemExit("PlanetView card does not link to /free-planetview/.")

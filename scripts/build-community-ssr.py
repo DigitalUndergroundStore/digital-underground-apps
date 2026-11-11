@@ -139,7 +139,7 @@ ld = {"@context": "https://schema.org", "@graph": [
 assert len(faq) >= 8
 tpl = tpl.replace("<!--ssr:jsonld-->", '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
 js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-h = (tpl.replace("<!--ssr:data-->", js).replace("<!--ssr:cards-->", "\n".join(v3card(r) for r in rows))
+h = (tpl.replace("<!--ssr:data-->", js).replace("<!--ssr:cards-->", "\n".join(v3card(r) for r in rows[:9]))  # first batch of 9; home.js loads more on scroll
         .replace("<!--ssr:count-->", str(len(rows))))
 assert "<!--ssr:" not in h and not GM.search(h)
 (R / "index.html").write_text(h); print("index.html (home v3) written,", len(rows), "listings")

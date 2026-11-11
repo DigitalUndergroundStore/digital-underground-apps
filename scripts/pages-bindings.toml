@@ -1,0 +1,22 @@
+# Bindings copied from the current build-docs bundle wrangler.toml.
+# That file's name is digital-underground-apps and is also used for local
+# `wrangler pages dev`. Publish still passes --project-name digital-underground,
+# which wrangler 3.114.17 prefers over this name.
+# pages_build_output_dir is the asset directory only. Functions stay beside it.
+# No secrets. wrangler pages functions build-env prints vars only; it does not
+# list KV or AI. pages deploy, when this file is a Pages config, sends
+# getBindings() inside the Functions bundle metadata.
+name = "digital-underground-apps"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "public"
+
+[[kv_namespaces]]
+binding = "COMMUNITY_KV"
+id = "5e086a24647c419f8ac5577b85a0c651"
+
+[[kv_namespaces]]
+binding = "DOWNLOADS_KV"
+id = "28ce144531b14fb28d48977050e2a8ec"
+
+[ai]
+binding = "AI"

@@ -1,6 +1,6 @@
 /* Developer Marketplace homepage v3. Rows: #du-data (SSR by scripts/build-community-ssr.py) + live API merge. */
 (function () {
-  var LEAGUE_TROPHY = { 'cm_mvfnl9qp_80652919': { src: '/assets/badges/maker-league-week1.png?v=3', srcset: '/assets/badges/maker-league-week1.png?v=3 1x, /assets/badges/maker-league-week1@2x.png?v=3 2x, /assets/badges/maker-league-week1@3x.png?v=3 3x', title: 'Maker League Week 1 winner' } };
+  var LEAGUE_TROPHY = { 'cm_mvfnl9qp_80652919': { src: '/assets/badges/maker-league-week1.png?v=crown1', srcset: '/assets/badges/maker-league-week1.png?v=crown1 1x, /assets/badges/maker-league-week1@2x.png?v=crown1 2x, /assets/badges/maker-league-week1@3x.png?v=crown1 3x', title: 'Maker League Week 1 winner' } };
 "use strict";
     // ═══════════ PARTICLE SYSTEM (non-blocking) ═══════════
     try {
@@ -100,6 +100,19 @@
       for (let j = 0, w = 0, t = 0; j < slots; j++) out.push(w < n && j === pos[w] ? wolf[w++] : (t < tail.length ? tail[t++] : wolf[w++]));
       return out.filter(Boolean);
     }
+    const COVER_REMAP = { "https://food-hunt.org/og-image.png": "/community/media/food-hunt-cover.webp?v=20261107a", "https://digitalundergroundstore.com/community/media/cyberarena-cover.png": "/community/media/cyberarena-cover.webp?v=20261107a" };
+    // Keep in sync with functions/_lib/cover-src.js (first 4 eager third-party covers go through the img proxy).
+    function coverSrc(u, id, i) {
+      if (!u) return u;
+      const k = String(u).split("?")[0];
+      if (COVER_REMAP[k]) return COVER_REMAP[k];
+      if (typeof i === "number" && i >= 4) return u;
+      if (id && /^https:\/\//i.test(u) && !/^https:\/\/(www\.)?digitalundergroundstore\.com\//i.test(u) && !/^\/api\/community\/(img|gimg)\b/i.test(u)) {
+        const v = String(k.length) + "-" + k.slice(-32);
+        return "/api/community/img?id=" + encodeURIComponent(id) + "&v=" + encodeURIComponent(v);
+      }
+      return u;
+    }
     function toProject(r, i) {
       const stage = r.stage && r.stage !== 'Released' ? r.stage : '';
       const nums = (String(r.priceLabel || '').match(/\d[\d,]*(?:\.\d+)?/g) || []).map(s => parseFloat(s.replace(/,/g, '')));
@@ -107,7 +120,7 @@
         id: r.id, order: i, title: r.name || '', maker: r.makerName || '', makerSlug: makerSlug(r), x: r.xHandle || '',
         category: r.category || 'other', price: r.priceLabel || 'See site', desc: r.pitchShort || '',
         badge: stage || (r.curated ? 'Featured pick' : null), label: r.statusLabel ? String(r.statusLabel).slice(0, 24) : null,
-        url: r.buyUrl || r.visitUrl || r.projectUrl || '', buy: !!r.buyUrl, page: SITE + '/community/p/?id=' + encodeURIComponent(r.id), img: r.imageUrl || '', vid: (r.video && r.video.kind === 'file' && r.video.src) || '',
+        url: r.buyUrl || r.visitUrl || r.projectUrl || '', buy: !!r.buyUrl, page: SITE + (function(r){var b=String(r&&r.name||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,48).replace(/-+$/,""),t=String(r&&r.id||"").split("_").pop().toLowerCase().replace(/[^a-z0-9]/g,"");return "/community/p/"+(b&&b!==t?b+"-"+t:t)+"/";})(r), img: coverSrc(r.imageUrl, r.id, i) || '', vid: (r.video && r.video.kind === 'file' && r.video.src) || '',
         tags: r.tags || [], isNew: !!r.isNew, contactable: r.contactable !== false, pv: nums.length ? Math.max(...nums) : 0
       };
     }
@@ -138,7 +151,7 @@
           <div class="card-media">
             ${LEAGUE_TROPHY[p.id] ? `<a class="ml-trophy ml-trophy--corner" href="/league/" title="${esc(LEAGUE_TROPHY[p.id].title)}" aria-label="${esc(LEAGUE_TROPHY[p.id].title)}"><img src="${LEAGUE_TROPHY[p.id].src}" srcset="${LEAGUE_TROPHY[p.id].srcset}" sizes="36px" alt="${esc(LEAGUE_TROPHY[p.id].title)}" width="64" height="64" decoding="async"></a>` : ''}
             ${badgeHTML(p)}
-            ${p.vid ? `<video class="card-vid" muted loop playsinline autoplay controls preload="metadata"${p.img ? ` poster="${esc(abs(p.img))}"` : ''} src="${esc(abs(p.vid))}${p.img ? '' : '#t=0.1'}" aria-label="${esc(p.title)} preview video" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;display:block"></video>` : ''}
+            ${p.vid && !RM.matches ? `<video class="card-vid" muted loop playsinline controls preload="none"${p.img ? ` poster="${esc(abs(p.img))}"` : ''} data-src="${esc(abs(p.vid))}${p.img ? '' : '#t=0.1'}" aria-label="${esc(p.title)} preview video" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;display:block"></video>` : ''}
             ${p.img ? `<img src="${esc(abs(p.img))}" alt="${esc(p.title)} cover image" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()">` : ''}
             <div class="card-placeholder" aria-hidden="true" style="background:url(/assets/covers/default-cover.svg) center/cover no-repeat"></div>
           </div>
@@ -164,8 +177,19 @@
       a.addEventListener('animationend', () => a.classList.remove('enter'));
       if (window.duTrack) duTrack.observe(a, p.id);
       const v = a.querySelector('video.card-vid');
-      if (v) { v.muted = true; const play = () => { const q = v.play(); if (q && q.catch) q.catch(() => {}); };
-        if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? play() : v.pause()), { threshold: 0.25 }).observe(v); else play(); }
+      if (v && !RM.matches) {
+        v.muted = true;
+        const activate = () => {
+          const ds = v.getAttribute('data-src');
+          if (ds) { v.src = ds; v.removeAttribute('data-src'); }
+          if (!v.src) return;
+          const q = v.play(); if (q && q.catch) q.catch(() => {});
+        };
+        const deactivate = () => { v.pause(); };
+        if ('IntersectionObserver' in window) {
+          new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? activate() : deactivate()), { threshold: 0.25, rootMargin: '200px' }).observe(v);
+        } else activate();
+      }
       return a;
     }
     // Maker League button on cards is a plain link to /league/ (voting happens there).
@@ -240,12 +264,47 @@
       const step = t => { const k = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - k, 3); el.textContent = Math.round(from + (to - from) * e); if (k < 1) countRaf = requestAnimationFrame(step); };
       countRaf = requestAnimationFrame(step);
     }
+    const PAGE = 12; let limit = PAGE, curList = [], keepLimit = false;
+    const more = document.createElement('div');
+    more.className = 'du-more'; more.style.cssText = 'grid-column:1/-1;display:flex;justify-content:center;padding:18px 0 6px';
+    more.innerHTML = '<button type="button" class="btn btn-outline" id="duMoreBtn">Load more projects</button>';
+    grid.after(more);
+    function syncMore() { const left = curList.length - limit; more.style.display = left > 0 ? 'flex' : 'none'; if (left > 0) more.firstChild.textContent = `Load more projects (${left} left)`; }
+    function loadMore() {
+      if (limit >= curList.length) return;
+      const next = curList.slice(limit, limit + PAGE); limit += PAGE;
+      next.forEach(p => {
+        const el = els.get(p.id); if (!el) return;
+        el.classList.remove('enter', 'du-in');
+        if (!RM.matches && duRevealIO) { el.style.removeProperty('--d'); el.classList.add('du-pre'); duRevealIO.observe(el); }
+        grid.appendChild(el);
+      });
+      syncMore(); if (typeof observeCards === 'function') observeCards();
+      // IO only fires on change: if the sentinel is still near the viewport after this batch, pull the next one.
+      setTimeout(() => { if (more.style.display !== 'none' && more.getBoundingClientRect().top < innerHeight + 600) loadMore(); }, 450);
+    }
+    // Cinematic reveal: new cards stay hidden (du-pre) until they actually scroll into view, then fade + rise in a 110ms stagger.
+    const duRevealIO = 'IntersectionObserver' in window ? new IntersectionObserver(es => {
+      es.filter(e => e.isIntersecting).map(e => e.target)
+        .sort((a, b) => a.compareDocumentPosition(b) & 4 ? -1 : 1)
+        .forEach((el, k) => {
+          duRevealIO.unobserve(el);
+          el.style.setProperty('--d', (k * 110) + 'ms');
+          requestAnimationFrame(() => requestAnimationFrame(() => { el.classList.add('du-in'); el.classList.remove('du-pre'); }));
+          setTimeout(() => { el.classList.remove('du-in'); el.style.removeProperty('--d'); }, 700 + k * 110);
+        });
+    }, { threshold: 0.12 }) : null;
+    more.firstChild.addEventListener('click', loadMore);
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) loadMore(); }, { rootMargin: '0px 0px 600px 0px' }).observe(more);
     function renderCards(list, initial) {
       const animate = !RM.matches;
       const first = new Map();
       if (animate && !initial) grid.querySelectorAll('.card').forEach(c => first.set(c.dataset.id, c.getBoundingClientRect()));
-      const nodes = list.map(p => els.get(p.id));
+      // Load-more paging: first PAGE cards, then the next PAGE when the sentinel scrolls near (or the button is clicked).
+      curList = list; if (!keepLimit) limit = PAGE; keepLimit = false;
+      const nodes = list.slice(0, limit).map(p => els.get(p.id));
       grid.replaceChildren(...(nodes.length ? nodes : [emptyEl]));
+      syncMore();
       animateCount(list.length);
       if (!animate) return;
       let n = 0;
@@ -318,7 +377,10 @@
 
     function setProjects(rows, initial) {
       projects = rows.map(toProject);
-      els = new Map(projects.map(p => [p.id, els.get(p.id) && initial === 'keep' && els.get(p.id).dataset.sig === (p.img + '|' + p.vid) ? els.get(p.id) : cardEl(p)]));
+      { const prev = els, byId = new Map(projects.map(p => [p.id, p])), made = new Map();
+        // Lazy: build a card's DOM only when a batch actually shows it.
+        els = { get(id) { if (made.has(id)) return made.get(id); const p = byId.get(id); if (!p) return undefined;
+          const o = prev.get && prev.get(id); const el = o && initial === 'keep' && o.dataset.sig === (p.img + '|' + p.vid) ? o : cardEl(p); made.set(id, el); return el; } }; }
       if ($('heroCount')) $('heroCount').textContent = projects.length;
       buildOptions(); state = DEF(); searchInput.value = ''; dotsCaption(); syncRange(false);
       applyFilters(!!initial);
@@ -329,9 +391,11 @@
     // DU loader: keep the server-rendered seed hidden until live data is painted.
     const duDone = () => { const l = $('duLoader'); document.documentElement.classList.remove('du-loading'); if (l) l.remove(); };
     const duFail = () => { const l = $('duLoader'); if (!l) return duDone(); l.classList.add('err'); l.querySelector('p').textContent = "Couldn't load the live marketplace"; };
-    if (!ONSITE) duDone();
+    // Edge SSR (functions/index.js) already rendered the live first page + embedded live data: no refetch, no loader.
+    const SSR_LIVE = document.documentElement.dataset.ssr === 'live';
+    if (!ONSITE || SSR_LIVE) duDone();
     // Live merge (same sources/order as the server render): static seed + live API + pinned order.
-    if (ONSITE) Promise.all([
+    if (ONSITE && !SSR_LIVE) Promise.all([
       fetch('/community/listings.json').then(r => r.ok ? r.json() : []).catch(() => []),
       fetch('/api/community/listings').then(r => r.ok ? r.json() : { listings: [] }).catch(() => ({ listings: [] })),
       fetch('/community/pinned.json').then(r => r.ok ? r.json() : []).catch(() => [])
@@ -357,7 +421,7 @@
       const sig = rs => JSON.stringify(rs.map(r => [r.id, r.name, r.priceLabel, r.stage, r.statusLabel, r.curated, r.imageUrl, r.pitchShort, !!r.isNew, r.video && r.video.src]));
       if (sig(all) === sig(seed)) return duDone();
       const untouched = !state.q && !state.cats.size && !state.makers.size && !state.labels.size && state.free && state.sort === 'featured' && state.lo === 0 && state.hi === PMAX;
-      setProjects(all, untouched ? 'keep' : true);
+      keepLimit = untouched; setProjects(all, untouched ? 'keep' : true);
       requestAnimationFrame(duDone);
     }).catch(duFail);
 
@@ -421,15 +485,7 @@
       } catch (e) {}
       if (navigator.clipboard) navigator.clipboard.writeText(text).then(() => leagueShareToast('Caption + link copied')).catch(() => {});
     }
-    grid.addEventListener('click', (e) => {
-      const sh = e.target.closest && e.target.closest('button.share-btn[data-share]');
-      if (!sh) return;
-      e.preventDefault();
-      const nm = sh.getAttribute('data-name') || 'this project';
-      const id = sh.getAttribute('data-share');
-      const origin = ONSITE ? location.origin : 'https://digitalundergroundstore.com';
-      const url = origin + '/league/v/?id=' + encodeURIComponent(id);
-      const text = "Come vote for " + nm + " in Digital Underground's Maker League! 🗳️ One free vote a week, and the winner becomes Maker of the Week.";
+    async function shareListing(id, nm, url, text) {
       const data = { title: nm + ' · Maker League', text, url };
       if (navigator.share && (!navigator.canShare || navigator.canShare(data))) {
         navigator.share(data).catch((err) => { if (!err || err.name !== 'AbortError') copyLeagueShare(text + ' ' + url); });
@@ -437,6 +493,17 @@
       }
       const w = window.open('https://x.com/intent/post?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url), '_blank', 'noopener');
       if (!w) copyLeagueShare(text + ' ' + url);
+    }
+    grid.addEventListener('click', (e) => {
+      const sh = e.target.closest && e.target.closest('button.share-btn[data-share]');
+      if (!sh) return;
+      e.preventDefault();
+      const nm = sh.getAttribute('data-name') || 'this project';
+      const id = sh.getAttribute('data-share');
+      const origin = ONSITE ? location.origin : 'https://digitalundergroundstore.com';
+      const url = origin + '/league/v/' + String(nm).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+      const text = "Come vote for " + nm + " in Digital Underground's Maker League! 🗳️ One free vote a week, and the winner becomes Maker of the Week.";
+      shareListing(id, nm, url, text);
     });
 
     // ═══════════ SCROLL REVEAL (must exist before first render) ═══════════

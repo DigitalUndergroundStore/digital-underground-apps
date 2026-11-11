@@ -151,6 +151,7 @@
 
   function sanitizeTyped(t) {
     t = String(t == null ? "" : t);
+    if (/^\d{1,2}(\+\d{0,2}){1,2}$/.test(t)) return t;
     if (!/^\d{1,3}$/.test(t)) return "";
     var n = parseInt(t, 10);
     if (n > 180) return "";

@@ -17,6 +17,7 @@ import {
   verifyOwnerPasscode,
 } from "../../_lib/owner.js";
 import { listSubscribers, subscribersToCsv } from "../../_lib/subscribers.js";
+import { readShareStats } from "../../_lib/share-track.js";
 import { clientIp, deleteListing, kvGetIndex, listPending, setListingStatus, kvGetListing, kvPutListing, notifyMakerApproved } from "../../_lib/community.js";
 import { promotePendingVideo as _ppv } from "../../_lib/community.js";
 import { getReports, ownerReportView, resolveReport } from "../../_lib/reports.js";
@@ -280,7 +281,13 @@ export async function onRequest(context) {
         }
       }
     }
-    return json({ listings, chart });
+    let shares = null;
+    try {
+      shares = await readShareStats(kv, 40);
+    } catch (e) {
+      console.error("share stats", e);
+    }
+    return json({ listings, chart, shares });
   }
 
   if (head === "apikeys") {
@@ -291,6 +298,39 @@ export async function onRequest(context) {
       return json({ ok: true });
     }
     return json({ keys: await listAllKeys(kv) });
+  }
+
+  if (head === "presence" && request.method === "GET") {
+    const { ownerPresence } = await import("../../_lib/presence.js");
+    return json(await ownerPresence(kv));
+  }
+
+  if (head === "health" && request.method === "GET") {
+    const H = await import("../../_lib/health.js");
+    const { utcDay } = await import("../../_lib/creator.js");
+    const origin = new URL(request.url).origin;
+    const t0 = Date.now();
+    const [probes, errors, subs, supAll, backup, idx, todayStats, reports] = await Promise.all([
+      H.runProbes(origin),
+      H.readErrors(kv, 14),
+      listSubscribers(kv),
+      listSupportMessages(kv, { status: "all" }),
+      fetchBackupMeta(env),
+      kvGetIndex(kv),
+      kv.get("storestats:" + utcDay(), "json"),
+      kv.get("community:reports", "json"),
+    ]);
+    const writes = (todayStats && todayStats.n) || 0;
+    const backupAgeDays = backup.lastSnapshot ? Math.floor((Date.now() - Date.parse(backup.lastSnapshot + "T00:00:00Z")) / 864e5) : null;
+    return json({
+      at: Date.now(), elapsedMs: Date.now() - t0,
+      probes, errors,
+      subscribers: H.subscriberSummary(subs),
+      feedback: H.feedbackSummary(supAll),
+      sampling: { writesToday: writes, softCap: H.SOFT_CAP, sample: H.SAMPLE, active: writes >= H.SOFT_CAP },
+      backup: { ...backup, ageDays: backupAgeDays },
+      queue: { pending: (idx.pending || []).length, flagged: Object.values(reports || {}).filter((e) => e && e.state === "flagged").length },
+    });
   }
 
   if (head === "storestats" && request.method === "GET") {

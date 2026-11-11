@@ -1,13 +1,15 @@
-/* Shared DU header. One top-right control: the account icon opens the site menu
-   (former hamburger links plus account / sign-in, under that logo).
+/* Shared DU header. Top bar: logo · 4 links (desktop) · Shop · Maker Pro · hamburger.
+   Hamburger always (never the logo/avatar). Drawer has account + mobile links.
    Safe to include more than once: it only initialises once. */
 (function () {
   if (window.__duNav) return; window.__duNav = 1;
   var MARK = "/assets/logo/du-mark.svg";
+  var MENU = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
   function init() {
     var drawer = document.getElementById("dunDrawer");
     var acct = document.getElementById("dunAcct");
     document.querySelectorAll("header.dun .dun-menu").forEach(function (el) { el.remove(); });
+    // Keep desktop .dun-links; CSS hides them under 960px.
     var whoName = "";
     var btn = null;
 
@@ -20,7 +22,7 @@
       });
     }
     function menuLabel(open) {
-      var what = whoName ? "menu and account for " + whoName : "menu and account";
+      var what = whoName ? "menu and account for " + whoName : "menu";
       return (open ? "Close " : "Open ") + what;
     }
     function setOpen(open) {
@@ -48,9 +50,9 @@
       if (existing) return existing;
       var b = document.createElement("button");
       b.type = "button";
-      b.className = "dun-acct-btn";
       b.id = "dunAcctBtn";
-      b.innerHTML = '<img src="' + MARK + '" alt="" width="26" height="26">';
+      b.className = "dun-acct-btn dun-menu-btn";
+      b.innerHTML = MENU;
       acct.querySelectorAll(".dun-signin, [data-owner-link], .dun-pop, .dun-user").forEach(function (n) { n.remove(); });
       acct.appendChild(b);
       return b;
@@ -82,28 +84,8 @@
       var creator = n && n.creator;
       whoName = creator ? (creator.name || "My account") : "";
       if (btn) {
-        btn.textContent = "";
-        if (creator) {
-          btn.className = "dun-user dun-acct-btn";
-          var av = document.createElement("span");
-          av.className = "av";
-          av.setAttribute("aria-hidden", "true");
-          avatarInto(av, creator, whoName);
-          var nm = document.createElement("span");
-          nm.className = "nm";
-          nm.setAttribute("aria-hidden", "true");
-          nm.textContent = whoName;
-          btn.appendChild(av);
-          btn.appendChild(nm);
-        } else {
-          btn.className = "dun-acct-btn";
-          var icon = document.createElement("img");
-          icon.src = MARK;
-          icon.alt = "";
-          icon.width = 26;
-          icon.height = 26;
-          btn.appendChild(icon);
-        }
+        btn.className = "dun-acct-btn dun-menu-btn";
+        btn.innerHTML = MENU;
         btn.setAttribute("aria-label", menuLabel(drawer && drawer.classList.contains("open")));
       }
       if (!slot) return;
@@ -211,7 +193,7 @@
       var sub = nl.querySelector("button"); sub.disabled = true; msg.textContent = "Subscribing…";
       fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: em, consent: true, website: nl.website.value, source: "footer:" + location.pathname }) })
         .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
-        .then(function (x) { if (x.ok) { nl.classList.add("done"); msg.textContent = "You're subscribed. Thanks! "; if (x.d && typeof x.d.gift === "string" && /^https:\/\/kerzy\.gumroad\.com\//.test(x.d.gift)) { var dl = document.createElement("a"); dl.href = x.d.gift; dl.target = "_blank"; dl.rel = "noopener"; dl.textContent = "Claim PlanetView Live free on Gumroad (CA$0 with the code; your license key comes by email)"; msg.appendChild(dl); msg.appendChild(document.createTextNode(", then ")); var pl = document.createElement("a"); pl.href = "/planetview/"; pl.textContent = "open PlanetView and paste the key"; msg.appendChild(pl); msg.appendChild(document.createTextNode(". Free for a limited time. You can unsubscribe any time from any email.")); } } else { msg.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; sub.disabled = false; } })
+        .then(function (x) { if (x.ok) { nl.classList.add("done"); msg.textContent = "You're subscribed. Thanks! "; if (x.d && typeof x.d.gift === "string" && /^https:\/\/kerzy\.gumroad\.com\//.test(x.d.gift)) { var dl = document.createElement("a"); dl.href = x.d.gift; dl.target = "_blank"; dl.rel = "noopener"; dl.textContent = "Claim PlanetView Live free on Gumroad ($0 with the code; your license key comes by email)"; msg.appendChild(dl); msg.appendChild(document.createTextNode(", then ")); var pl = document.createElement("a"); pl.href = "/planetview/"; pl.textContent = "open PlanetView and paste the key"; msg.appendChild(pl); msg.appendChild(document.createTextNode(". Free for a limited time. You can unsubscribe any time from any email.")); } } else { msg.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; sub.disabled = false; } })
         .catch(function () { msg.textContent = "Network error. Please try again."; sub.disabled = false; });
     });
     }
@@ -221,4 +203,4 @@
 /* Maker Guide helper (site-wide) */
 (function(){ if (document.querySelector('script[src^="/assets/maker-guide/"]')) return; var s=document.createElement("script"); s.src="/assets/maker-guide/maker-guide.js?v=20261030nofab"; s.defer=true; document.head.appendChild(s); })();
 /* Permanent Maker League trophies (hall of fame) */
-(function(){ if (document.querySelector('script[src^="/assets/league/trophies"]')) return; var s=document.createElement("script"); s.src="/assets/league/trophies.js?v=5"; s.defer=true; document.head.appendChild(s); })();
+(function(){ if (document.querySelector('script[src^="/assets/league/trophies"]')) return; var s=document.createElement("script"); s.src="/assets/league/trophies.js?v=10"; s.defer=true; document.head.appendChild(s); })();

@@ -1,5 +1,6 @@
 // Server-rendered creator pages: /makers/ (directory) and /makers/<slug>/ (profile + all marketplace listings).
 // Fully public. Full HTML for crawlers; a tiny inline script adds search. Edge-cached 5 min to keep KV reads low.
+import { listingPath } from "../_lib/listing-url.js";
 import { getKv, listApproved, listingContactAddress, isRetired } from "../_lib/community.js";
 import { accentHex, allLiveProfiles, liveProfile, makerSlugFor, slugify, socialLabel, validSlug } from "../_lib/makers.js";
 
@@ -24,16 +25,17 @@ const LEAGUE_TROPHIES = {
 };
 const trophyFor = (id) => LEAGUE_TROPHIES[id] || null;
 const trophyForSlug = (slug) => Object.values(LEAGUE_TROPHIES).find((t) => t.makerSlug === slug) || null;
-const TROPHY_SRC = "/assets/badges/maker-league-week1.png?v=3";
-const TROPHY_SRCSET = "/assets/badges/maker-league-week1.png?v=3 1x, /assets/badges/maker-league-week1@2x.png?v=3 2x, /assets/badges/maker-league-week1@3x.png?v=3 3x";
+const TROPHY_SRC = "/assets/badges/maker-league-week1.png?v=crown1";
+const TROPHY_SRCSET = "/assets/badges/maker-league-week1.png?v=crown1 1x, /assets/badges/maker-league-week1@2x.png?v=crown1 2x, /assets/badges/maker-league-week1@3x.png?v=crown1 3x";
 
 async function allListings(context, kv) {
   const by = {};
-  try {
-    const r = await context.env.ASSETS.fetch(new URL("/community/listings.json", context.request.url));
-    if (r.ok) for (const x of await r.json()) if ((x.status || "approved") === "approved") by[x.id] = x;
-  } catch {}
-  if (kv) for (const x of await listApproved(kv, context.env)) by[x.id] = x;
+  const [stat, live] = await Promise.all([
+    context.env.ASSETS.fetch(new URL("/community/listings.json", context.request.url)).then((r) => (r.ok ? r.json() : [])).catch(() => []),
+    kv ? listApproved(kv, context.env).catch(() => []) : [],
+  ]);
+  for (const x of stat) if ((x.status || "approved") === "approved") by[x.id] = x;
+  for (const x of live) by[x.id] = x;
   return Object.values(by).filter((r) => !isRetired(r)).map((r) => {
     if (/kerzy/i.test(r.makerName || "") || (r.id.startsWith("cm_kerzy_") && r.makerName !== "Digital Underground")) { r.makerName = "Kerzy Labs"; r.curated = false; }
     if (r.id === "cm_kerzy_neonbastion") r.stage = "In development / testing";
@@ -45,7 +47,7 @@ async function allListings(context, kv) {
 
 /** Mirrors cardHTML() in community/wolf.js, plus the maker link. */
 export function cardHTML(r, i) {
-  const href = "/community/p/?id=" + encodeURIComponent(r.id), n = e(r.name), rid = e(r.id);
+  const href = listingPath(r), n = e(r.name), rid = e(r.id);
   const st = r.stage && r.stage !== "Released" ? r.stage : "";
   const badge = st ? `<span class="badge stage">${e(st)}</span>` : r.curated ? '<span class="badge" title="Curated by Digital Underground"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-1px"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg> Featured pick</span>' : "";
   const lbl = r.statusLabel ? `<span class="badge label">${e(String(r.statusLabel).slice(0, 24))}</span>` : "";
@@ -88,19 +90,18 @@ function shell({ title, desc, canonical, image, imageAlt, jsonld, body, current 
 <meta name="theme-color" content="#11141a">
 <link rel="stylesheet" href="/assets/design-tokens.css?v=3">
 <link rel="stylesheet" href="/community/wolf.css?v=8">
-<link rel="stylesheet" href="/makers/makers.css?v=7"><link rel="stylesheet" href="/assets/league/trophies.css?v=5">
+<link rel="stylesheet" href="/makers/makers.css?v=8"><link rel="stylesheet" href="/assets/league/trophies.css?v=9"><style id="ml-pill">html body .ml-trophy-banner{display:inline-flex;align-items:center;gap:10px;margin:12px 0 4px;padding:6px 16px 6px 6px;max-width:100%;box-sizing:border-box;border-radius:999px;text-decoration:none!important;color:#fff;pointer-events:auto;background:linear-gradient(135deg,rgba(124,92,255,.32),rgba(34,211,238,.14) 70%),#14122a;border:1px solid rgba(139,122,255,.7);box-shadow:0 0 0 1px rgba(34,211,238,.15) inset,0 0 18px rgba(124,92,255,.35),0 6px 16px rgba(0,0,0,.35);transition:transform .2s,box-shadow .2s,border-color .2s;}html body .ml-trophy-banner:hover,html body .ml-trophy-banner:focus-visible{border-color:#22d3ee;transform:translateY(-1px);box-shadow:0 0 0 1px rgba(34,211,238,.3) inset,0 0 24px rgba(34,211,238,.4),0 8px 20px rgba(0,0,0,.4);}html body .ml-trophy-banner:focus-visible{outline:2px solid #22d3ee;outline-offset:3px}html body .ml-trophy-banner__cup{flex:none;width:34px;height:34px;display:block;border-radius:50%;background:#0d0b1e;box-shadow:0 0 0 1px rgba(34,211,238,.5),0 0 10px rgba(124,92,255,.6);}html body .ml-trophy-banner__text{display:flex;flex-direction:column;gap:1px;min-width:0;line-height:1.15}html body .ml-trophy-banner__kicker{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#67e8f9;white-space:nowrap;text-decoration:none;}html body .ml-trophy-banner__title{font-size:15px;font-weight:750;letter-spacing:-.01em;color:#fff;white-space:nowrap;text-decoration:none;text-shadow:0 0 10px rgba(124,92,255,.6);}html body .ml-trophy-banner__title::before{content:"\\1F451\\00a0";font-size:13px}html body .ml-trophy-banner__sub{display:none}html body .mk-tt .ml-trophy-banner,html body .dt-head .ml-trophy-banner{display:inline-flex!important}</style>
 <script src="/community/nav.js?v=1" defer></script>
 <script src="/community/track.js" defer></script>
 <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-180.png">
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>
-<link rel="stylesheet" href="/assets/du-featured/du-featured.css?v=4"><script src="/assets/du-featured/du-featured.js?v=4" defer></script>
-<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=33">
+<link rel="stylesheet" href="/assets/site-nav/site-nav.css?v=42">
 <link rel="stylesheet" href="/assets/theme-clean.css?v=2">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"><img class="dun-mark" src="/assets/logo/du-mark.svg" alt="" width="32" height="32"></a><a class="dun-shop" href="/store/"><span aria-hidden="true">&#128722;</span> <span class="dun-shop-l">Shop</span><span class="dun-shop-s">Shop</span></a><nav class="dun-links" aria-label="Primary"><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a></nav><div class="dun-right"><div class="dun-acct" id="dunAcct"><button type="button" class="dun-acct-btn" id="dunAcctBtn" aria-label="Open menu and account" aria-controls="dunDrawer" aria-expanded="false" aria-haspopup="true"><img src="/assets/logo/du-mark.svg" alt="" width="26" height="26"></button></div></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><div class="dun-drawer-acct" id="dunDrawerAcct" role="group" aria-label="Account"><div class="dun-drawer-who"><span class="av mark" aria-hidden="true"><img src="/assets/logo/du-mark.svg" alt="" width="36" height="36"></span><span class="nm">Account</span></div><a href="/community/dashboard/">Sign in</a></div><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/blog/">Blog</a><a href="/community/submit/">List your project free</a><a href="/store/p/maker-pro/">Maker Pro</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=35" defer></script><!--/du-site-nav-->
+<!--du-site-nav--><header class="dun"><div class="dun-in"><a class="dun-logo" href="/" aria-label="Digital Underground home"><img class="dun-full" src="/assets/logo/du-horizontal.svg" alt="Digital Underground" width="189" height="34"></a><nav class="dun-links" aria-label="Primary"><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a></nav><div class="dun-right"><a class="dun-mp" href="/store/p/maker-pro/">Maker Pro</a><div class="dun-acct" id="dunAcct"><button type="button" class="dun-acct-btn dun-menu-btn" id="dunAcctBtn" aria-label="Open menu" aria-controls="dunDrawer" aria-expanded="false" aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><nav class="dun-drawer" id="dunDrawer" aria-label="Site menu"><div class="dun-drawer-acct" id="dunDrawerAcct" role="group" aria-label="Account"><div class="dun-drawer-who"><span class="av mark" aria-hidden="true"><img src="/assets/logo/du-mark-white.svg" alt="" width="36" height="36"></span><span class="nm">Account</span></div><a href="/community/dashboard/">Sign in</a></div><a href="/">Marketplace</a><a href="/league/">League</a><a href="/makers/">Creators</a><a href="/community/submit/">List your project free</a><a href="/store/p/maker-pro/">Maker Pro</a><button type="button" class="dun-share-btn" data-dun-share>Share this page</button></nav></header><script src="/assets/site-nav/site-nav.js?v=43" defer></script><!--/du-site-nav-->
 <main id="main" tabindex="-1">
 ${body}
 </main>
@@ -118,6 +119,11 @@ const DU_MARK = "/assets/logo/du-mark.svg";
 const isDU = (n) => /^digital\s*underground$/i.test(String(n || "").trim());
 const withDULogo = (m) => (!m.logo && isDU(m.name) ? { ...m, logo: DU_MARK } : m);
 
+// Directory-only exclusion: keep the house profile and its marketplace listings live.
+export function showInCreatorDirectory(m) {
+  return m.slug !== "digital-underground" && !isDU(m.name);
+}
+
 function makerPage(p, rows) {
   p = withDULogo(p);
   const canonical = `${ORIGIN}/makers/${p.slug}/`;
@@ -132,7 +138,7 @@ function makerPage(p, rows) {
   <div class="mk-banner">${p.banner ? `<img src="${safeHref(p.banner)}" alt="" width="1200" height="630" fetchpriority="high" decoding="async">` : ""}</div>
   <div class="mk-id">
     ${p.logo ? `<img class="mk-logo" src="${safeHref(p.logo)}" alt="${e(p.name)} logo" width="112" height="112" decoding="async">` : `<span class="mk-logo mk-ph" aria-hidden="true">${e(p.name.charAt(0))}</span>`}
-    <div class="mk-tt"><p class="eyebrow"><span class="dot" aria-hidden="true"></span>Creator on the Developer Marketplace</p><h1>${e(p.name)}</h1>${trophyForSlug(p.slug) ? `<a class="ml-trophy-banner" href="/league/" aria-label="${e(trophyForSlug(p.slug).title)}"><img class="ml-trophy-banner__cup" src="${TROPHY_SRC}" srcset="${TROPHY_SRCSET}" sizes="56px" alt="" width="120" height="120" decoding="async"><span class="ml-trophy-banner__text"><span class="ml-trophy-banner__kicker">Builder Battle</span><span class="ml-trophy-banner__title">Week 1 Winner</span></span></a>` : ""}}</div>
+    <div class="mk-tt"><p class="eyebrow"><span class="dot" aria-hidden="true"></span>Creator on the Developer Marketplace</p><h1>${e(p.name)}</h1>${trophyForSlug(p.slug) ? `<a class="ml-trophy-banner" href="/league/" aria-label="${e(trophyForSlug(p.slug).title)}"><img class="ml-trophy-banner__cup" src="${TROPHY_SRC}" srcset="${TROPHY_SRCSET}" sizes="56px" alt="" width="120" height="120" decoding="async"><span class="ml-trophy-banner__text"><span class="ml-trophy-banner__kicker">Builder Battle</span><span class="ml-trophy-banner__title">Week 1 Winner</span></span></a>` : ""}</div>
   </div>
   ${p.bio ? `<p class="lede mk-bio">${e(p.bio)}</p>` : ""}
   ${links.length ? `<nav class="mk-links" aria-label="${e(p.name)} links">${links.join("")}</nav>` : ""}
@@ -140,10 +146,10 @@ function makerPage(p, rows) {
 <section class="mx z listings" aria-labelledby="listings-title">
   <h2 id="listings-title" class="mk-h2">Listings by ${e(p.name)} <span class="mk-count">${rows.length}</span></h2>
   ${rows.length ? `<ul class="grid">${rows.map(cardHTML).join("\n")}</ul>` : '<p class="muted">No live listings yet. <a href="/community/submit/">List a project free</a> (zero cut, your checkout) or <a href="/store/">browse the store</a>.</p>'}
-</section><aside class="mx z" aria-label="Digital Underground store" style="margin:2rem auto;padding:1rem 1.25rem;border:1px solid rgba(127,127,127,.3);border-radius:12px"><p style="margin:0"><strong>Like what makers are building?</strong> Grab free apps and the free Humanity X audiobook, or pick up a paid pack in the <a href="/store/">Digital Underground store</a>. Creators keep 100%: <a href="/community/submit/">list your project free</a>.</p><p style="margin:.5rem 0 0"><a href="/ai-prompt-packs-for-creators/">AI prompt packs</a> · <a href="/free-book/">Free audiobook</a> · <a href="/store/">All products</a></p></aside>`;
+</section>`;
   const jsonld = { "@context": "https://schema.org", "@type": "ProfilePage", url: canonical, name: `${p.name} | Creators`,
     mainEntity: { "@type": "Organization", name: p.name, url: p.website || canonical, ...(p.logo ? { logo: abs(p.logo) } : {}), ...(p.bio ? { description: p.bio } : {}), sameAs: [p.website, ...Object.values(p.socials || {})].filter(Boolean) },
-    hasPart: { "@type": "ItemList", numberOfItems: rows.length, itemListElement: rows.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.name, url: `${ORIGIN}/community/p/?id=${encodeURIComponent(r.id)}` })) } };
+    hasPart: { "@type": "ItemList", numberOfItems: rows.length, itemListElement: rows.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.name, url: ORIGIN + listingPath(r) })) } };
   const ov = MAKER_OG[p.slug] || {};
   return shell({ title: ov.title || `${p.name}: apps and tools by this creator | Digital Underground`, desc: ov.desc || desc, canonical, image: ov.image || abs(p.banner || p.logo || "/community/og-dm-v3.jpg"), imageAlt: ov.imageAlt || `${p.name} banner`, jsonld, body, current: "maker" });
 }
@@ -162,8 +168,6 @@ function directoryPage(makers) {
   <h1>Creators</h1>
   <p class="lede">The people and studios behind the Developer Marketplace. Open a creator to see everything they list.</p>
 </div>
-<style>.mp-chip{max-width:880px;margin:14px auto 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;font-size:13.5px;line-height:1.45;color:#c7c5f4;background:rgba(79,70,229,.10);border:1px solid rgba(154,151,232,.22);border-radius:999px;padding:7px 10px 7px 14px;box-sizing:border-box}.mp-chip b{color:#f4f4f5;font-weight:600}.mp-chip code{font:600 12.5px ui-monospace,monospace;color:#f4f4f5;background:rgba(255,255,255,.07);border-radius:6px;padding:1px 6px}.mp-chip a{color:#c7c5f4;text-decoration:underline;text-underline-offset:3px}.mp-chip button{background:none;border:0;color:#a1a1aa;font-size:16px;line-height:1;cursor:pointer;padding:2px 6px;border-radius:6px}.mp-chip button:hover{color:#f4f4f5}@media(max-width:640px){.mp-chip{margin:12px 12px 0;border-radius:14px}}</style>
-<div class="mp-chip" id="mpChip" role="note"><span><b>Founding 25:</b> Maker Pro CA$59/yr with code <code>FOUNDING25</code> (normally CA$79). Listing stays free &mdash; Pro is reach. <a href="/store/p/maker-pro/">See Maker Pro</a></span><button type="button" aria-label="Dismiss" onclick="try{localStorage.setItem('mpChipX','1')}catch(e){}this.parentNode.remove()">&times;</button></div><script>try{if(localStorage.getItem('mpChipX'))document.getElementById('mpChip').remove()}catch(e){}</script>
 <search class="mx z filters" role="search" aria-label="Search creators">
   <div class="frow"><div class="sbox"><label for="mq" class="sr-only">Search creators</label>
     <input id="mq" class="search" type="search" placeholder="Search creators…" autocomplete="off" aria-describedby="mcount">
@@ -171,7 +175,7 @@ function directoryPage(makers) {
   <p class="count" id="mcount" role="status" aria-live="polite" aria-atomic="true">${makers.length} creators</p>
 </search>
 <section class="mx z" aria-labelledby="dir-title"><h2 id="dir-title" class="sr-only">All creators</h2><ul class="mk-grid" id="mgrid">${items}</ul></section>
-<aside class="mx z" aria-label="Digital Underground store" style="margin:2rem auto;padding:1rem 1.25rem;border:1px solid rgba(127,127,127,.3);border-radius:12px"><p style="margin:0"><strong>Like what makers are building?</strong> Grab free apps and the free Humanity X audiobook, or pick up a paid pack in the <a href="/store/">Digital Underground store</a>. Creators keep 100%: <a href="/community/submit/">list your project free</a>.</p><p style="margin:.5rem 0 0"><a href="/ai-prompt-packs-for-creators/">AI prompt packs</a> · <a href="/free-book/">Free audiobook</a> · <a href="/store/">All products</a></p></aside>
+
 <script>
 (function () {
   var q = document.getElementById("mq"), c = document.getElementById("mcount"), li = [].slice.call(document.querySelectorAll("#mgrid .mk-card"));
@@ -183,11 +187,11 @@ function directoryPage(makers) {
   const jsonld = { "@context": "https://schema.org", "@type": "CollectionPage", url: canonical, name: "Creators | Developer Marketplace",
     publisher: { "@type": "Organization", "@id": `${ORIGIN}/#org`, name: "Digital Underground", url: `${ORIGIN}/`, logo: { "@type": "ImageObject", url: `${ORIGIN}/assets/logo/du-mark.png`, width: 1024, height: 1024 } },
     mainEntity: { "@type": "ItemList", numberOfItems: makers.length, itemListElement: makers.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.name, url: m.auto ? ORIGIN + m.href : `${ORIGIN}/makers/${m.slug}/` })) } };
-  return shell({ title: "Creators | Developer Marketplace | Digital Underground", desc: "Browse the independent makers on the Digital Underground Developer Marketplace and see every app, tool and game each one lists.",
+  return shell({ title: "Indie Makers & Creators Directory | Digital Underground", desc: "Discover indie makers and solo developers building in public on X. Browse each creator's apps, AI tools and games on a free, 0% commission maker marketplace.",
     canonical, image: `${ORIGIN}/community/og-dm-v3.jpg`, imageAlt: "Developer Marketplace by Digital Underground", jsonld, body, current: "dir" });
 }
 
-const html = (s, status = 200) => new Response(s, { status, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=60, s-maxage=300", "X-Content-Type-Options": "nosniff" } });
+const html = (s, status = 200, xc = "") => new Response(s, { status, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=60, s-maxage=300", "X-Content-Type-Options": "nosniff", ...(xc ? { "X-Makers-Cache": xc } : {}) } });
 
 export async function onRequestGet(context) {
   const { request, env } = context;
@@ -197,14 +201,46 @@ export async function onRequestGet(context) {
   if (parts.length > 1) return context.next();
   if (!url.pathname.endsWith("/")) { url.pathname += "/"; return Response.redirect(url.toString(), 301); }
   const cache = caches.default;
-  const key = new Request(url.origin + url.pathname + "?v=dir-dedupe-1", { method: "GET" });
-  const hit = await cache.match(key).catch(() => null);
-  if (hit) return hit;
+  const key = new Request(url.origin + url.pathname + "?v=dir-swr-8", { method: "GET" });
   const kv = getKv(env);
-  const rows = await allListings(context, kv);
-  let res;
+  const snapKey = "makers:snap:v7:" + url.pathname;
+  const FRESH = 300 * 1000;
+  const fresh = (r) => Date.now() - Number(r.headers.get("X-Built-At") || 0) < FRESH;
+  const refresh = () => build(context, kv, parts).then(async (b) => {
+    if (b.status !== 200) return;
+    const body = await b.text();
+    const stored = new Response(body, { headers: { ...Object.fromEntries(b.headers), "Cache-Control": "public, s-maxage=604800", "X-Built-At": String(Date.now()) } });
+    await cache.put(key, stored);
+    if (kv) await kv.put(snapKey, JSON.stringify({ t: Date.now(), body }), { expirationTtl: 604800 }).catch(() => {});
+  }).catch(() => {});
+  // 1) Edge cache (stale-while-revalidate: serve anything up to 7 days old, rebuild in background after 5 min)
+  const hit = await cache.match(key).catch(() => null);
+  if (hit) {
+    if (!fresh(hit)) context.waitUntil(refresh());
+    return html(await hit.text(), 200, fresh(hit) ? "HIT" : "STALE");
+  }
+  // 2) Global KV snapshot (covers cold colos and post-deploy)
+  if (kv) {
+    const snap = await kv.get(snapKey, "json").catch(() => null);
+    if (snap && snap.body) {
+      context.waitUntil(Date.now() - snap.t < FRESH
+        ? cache.put(key, new Response(snap.body, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, s-maxage=604800", "X-Built-At": String(snap.t) } })).catch(() => {})
+        : refresh());
+      return html(snap.body, 200, "SNAP");
+    }
+  }
+  // 3) Full build
+  const res = await build(context, kv, parts);
+  if (res.status === 200) { const body = await res.clone().text(); context.waitUntil((async () => {
+    await cache.put(key, new Response(body, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, s-maxage=604800", "X-Built-At": String(Date.now()) } })).catch(() => {});
+    if (kv) await kv.put(snapKey, JSON.stringify({ t: Date.now(), body }), { expirationTtl: 604800 }).catch(() => {});
+  })()); }
+  return res;
+}
+
+async function build(context, kv, parts) {
   if (!parts.length) {
-    const profiles = await allLiveProfiles(kv);
+    const [rows, profiles] = await Promise.all([allListings(context, kv), allLiveProfiles(kv)]);
     // Count every listing onto its maker page: by makerSlug, or by matching name/slugify when the listing never got a slug.
     const withProfile = profiles.map((p) => ({ ...p, count: 0 }));
     const bySlug = new Map(withProfile.map((m) => [m.slug, m]));
@@ -217,20 +253,19 @@ export async function onRequestGet(context) {
       if (hit) { hit.count++; continue; }
       if (r.makerSlug) continue; // slug points at a missing page — skip orphan auto card
       const k = nm.toLowerCase();
-      const a = auto.get(k) || { name: nm, bio: "", count: 0, logo: r.imageUrl || "", href: `/community/p/?id=${encodeURIComponent(r.id)}`, auto: true };
+      const a = auto.get(k) || { name: nm, bio: "", count: 0, logo: r.imageUrl || "", href: listingPath(r), auto: true };
       a.count++; if (!a.logo && r.imageUrl) a.logo = r.imageUrl; auto.set(k, a);
     }
     const makers = [...withProfile.filter((m) => m.count > 0), ...auto.values()]
+      .filter(showInCreatorDirectory)
       .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || a.name.localeCompare(b.name));
-    res = html(directoryPage(makers));
+    return html(directoryPage(makers), 200, "MISS");
   } else {
     const slug = parts[0].toLowerCase();
-    const p = validSlug(slug) ? await liveProfile(kv, slug) : null;
+    const [p, rows] = await Promise.all([validSlug(slug) ? liveProfile(kv, slug) : null, allListings(context, kv)]);
     if (!p) return new Response(`<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Creator not found | Digital Underground</title></head><body style="font-family:system-ui;background:#11141a;color:#e6e8ec;padding:2rem"><main><h1>Creator not found</h1><p><a style="color:#9a97e8" href="/makers/">See all creators</a></p></main></body></html>`, { status: 404, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "public, max-age=60" } });
-    res = html(makerPage(p, sortForMaker(rows.filter((r) => r.makerSlug === slug))));
+    return html(makerPage(p, sortForMaker(rows.filter((r) => r.makerSlug === slug))), 200, "MISS");
   }
-  context.waitUntil(cache.put(key, res.clone()).catch(() => {}));
-  return res;
 }
 
 export async function onRequestHead(context) {

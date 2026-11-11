@@ -20,7 +20,7 @@ for u in cands:
   urls.append(u)
 try:
   d=json.load(urllib.request.urlopen(urllib.request.Request(B+"/api/community/listings",headers={"User-Agent":"Mozilla/5.0 du-sitemap"}),timeout=20)); L=d.get("listings",d) if isinstance(d,dict) else d
-  urls+=[f"/community/p/?id={x['id']}" for x in L if x.get("id")]
+  pass  # listings + maker profiles are added live by functions/sitemap.xml.js
 except Exception as e: print("listings fetch failed:",e)
 today=datetime.date.today().isoformat()
 x='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+"".join(f"  <url><loc>{B}{u.replace('&','&amp;')}</loc><lastmod>{today}</lastmod></url>\n" for u in urls)+"</urlset>\n"

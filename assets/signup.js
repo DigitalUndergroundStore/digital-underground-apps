@@ -9,7 +9,7 @@
     host.innerHTML = '<div class="du-su-row">' +
       '<div class="du-su-cover"><img src="/assets/gift/planetview-cover.webp" width="225" height="127" alt="PlanetView Live cover" loading="lazy" decoding="async"></div>' +
       '<div class="du-su-body">' +
-      '<h2>Get PlanetView Live free</h2><p>Join the Digital Underground list and get <em>PlanetView Live</em>, a photoreal 3D Earth, solar system and flight sim in your browser (live beta / in testing), <strong>free for a limited time with email signup</strong> (normally CA$24). Independent project, not affiliated with SpaceX or NASA. New apps and offers, a few emails a month at most.</p>' +
+      '<h2>Get PlanetView Live free</h2><p>Join the Digital Underground list and get <em>PlanetView Live</em>, a photoreal 3D Earth, solar system and flight sim in your browser (live beta / in testing), <strong>free for a limited time with email signup</strong> (normally $24). Independent project, not affiliated with SpaceX or NASA. New apps and offers, a few emails a month at most.</p>' +
       '<form novalidate><label class="hp" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label>' +
       '<input type="email" name="email" required placeholder="you@example.com" aria-label="Email address" autocomplete="email">' +
       '<button type="submit">Get PlanetView free</button>' +
@@ -39,7 +39,7 @@
         .then(function (x) {
           b.disabled = false;
           if (!x.ok || !x.d.ok) { m.className = "m bad"; m.textContent = (x.d && x.d.error) || "Something went wrong. Please try again."; return; }
-          m.className = "m ok"; m.innerHTML = 'You are in. Step 1: <a target="_blank" rel="noopener" href="' + (x.d.gift || "https://kerzy.gumroad.com/l/oxnfvy?code=DUFREEPV") + '">claim PlanetView Live free on Gumroad</a> (the code takes it to CA$0; enter your email and Gumroad emails your license key). Step 2: <a href="' + (x.d.play || "/planetview/") + '">open PlanetView</a> and paste the key. Free for a limited time. Thanks for joining!';
+          m.className = "m ok"; m.innerHTML = 'You are in. Step 1: <a target="_blank" rel="noopener" href="' + (x.d.gift || "https://kerzy.gumroad.com/l/oxnfvy?code=DUFREEPV") + '">claim PlanetView Live free on Gumroad</a> (the code takes it to $0; enter your email and Gumroad emails your license key). Step 2: <a href="' + (x.d.play || "/planetview/") + '">open PlanetView</a> and paste the key. Free for a limited time. Thanks for joining!';
           f.email.value = ""; f.consent.checked = false;
         }).catch(function () { b.disabled = false; m.className = "m bad"; m.textContent = "Network error. Please try again."; });
     });

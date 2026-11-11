@@ -1,0 +1,55 @@
+/* Permanent Builder Battle / Maker League trophies — HD cup */
+.ml-trophy{position:absolute;z-index:4;pointer-events:none;line-height:0;filter:drop-shadow(0 3px 8px rgba(0,0,0,.55))}
+.ml-trophy img{display:block;width:100%;height:auto}
+.ml-trophy--corner{top:6px;right:6px;width:44px}
+.ml-trophy--inline{position:relative;display:inline-block;width:40px;height:40px;margin:0 0 0 10px;vertical-align:middle;pointer-events:auto;filter:drop-shadow(0 3px 8px rgba(0,0,0,.5))}
+.ml-trophy--inline img{width:40px;height:40px}
+.ml-trophy--dir{position:absolute;top:8px;right:8px;width:36px;height:36px;z-index:2;pointer-events:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.55))}
+.ml-trophy--dir img{width:36px;height:36px;display:block}
+.mk-card{position:relative}
+.mk-card-a{position:relative}
+.card .media,.card-media,.media{position:relative}
+.mk-tt h1{display:inline;vertical-align:middle}
+
+/* Builder Battle winner — DU neon pill (purple/cyan, crown accent) */
+.ml-trophy-banner{
+  display:inline-flex;align-items:center;gap:10px;
+  margin:12px 0 4px;padding:6px 16px 6px 6px;
+  max-width:100%;box-sizing:border-box;
+  border-radius:999px;text-decoration:none!important;color:#fff;pointer-events:auto;
+  background:linear-gradient(135deg,rgba(124,92,255,.32),rgba(34,211,238,.14) 70%),#14122a;
+  border:1px solid rgba(139,122,255,.7);
+  box-shadow:0 0 0 1px rgba(34,211,238,.15) inset,0 0 18px rgba(124,92,255,.35),0 6px 16px rgba(0,0,0,.35);
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.ml-trophy-banner:hover,.ml-trophy-banner:focus-visible{
+  border-color:#22d3ee;transform:translateY(-1px);
+  box-shadow:0 0 0 1px rgba(34,211,238,.3) inset,0 0 24px rgba(34,211,238,.4),0 8px 20px rgba(0,0,0,.4);
+}
+.ml-trophy-banner:focus-visible{outline:2px solid #22d3ee;outline-offset:3px}
+.ml-trophy-banner__cup{
+  flex:none;width:34px;height:34px;display:block;border-radius:50%;
+  background:#0d0b1e;box-shadow:0 0 0 1px rgba(34,211,238,.5),0 0 10px rgba(124,92,255,.6);
+}
+.ml-trophy-banner__text{display:flex;flex-direction:column;gap:1px;min-width:0;line-height:1.15}
+.ml-trophy-banner__kicker{
+  font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  color:#67e8f9;white-space:nowrap;text-decoration:none;
+}
+.ml-trophy-banner__title{
+  font-size:15px;font-weight:750;letter-spacing:-.01em;color:#fff;white-space:nowrap;text-decoration:none;
+  text-shadow:0 0 10px rgba(124,92,255,.6);
+}
+.ml-trophy-banner__title::before{content:"\1F451\00a0";font-size:13px}
+.ml-trophy-banner__sub{display:none}
+.mk-tt .ml-trophy-banner,.dt-head .ml-trophy-banner{display:inline-flex}
+
+@media(min-width:640px){
+  .ml-trophy--corner{width:56px;top:10px;right:10px}
+  .ml-trophy--inline{width:48px;height:48px}.ml-trophy--inline img{width:48px;height:48px}
+  .ml-trophy--dir{width:44px;height:44px;top:10px;right:10px}.ml-trophy--dir img{width:44px;height:44px}
+  .ml-trophy-banner{padding:7px 18px 7px 7px;gap:12px}
+  .ml-trophy-banner__cup{width:40px;height:40px}
+  .ml-trophy-banner__title{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){.ml-trophy-banner{transition:none}.ml-trophy-banner:hover{transform:none}}

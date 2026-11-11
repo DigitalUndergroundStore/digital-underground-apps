@@ -120,6 +120,7 @@
     .turn { display: flex; align-items: center; justify-content: space-between; gap: 8px; background: var(--surf); border-radius: 12px; padding: 8px 12px; margin-bottom: 8px; }
     .typedwrap { display: flex; align-items: center; gap: 8px; }
     #typed { font-size: 36px; min-width: 2ch; text-align: right; font-variant-numeric: tabular-nums; }
+    .key.plus { grid-column: 1 / -1; min-height: 44px; font-size: 18px; }
     .keys { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
     .key {
       min-height: 48px;
@@ -352,6 +353,7 @@
           <button class="key bad" type="button" id="bustBtn" aria-label="Bust this visit">Bust</button>
           <button class="key" type="button" data-k="0">0</button>
           <button class="key go" type="button" data-k="GO">Score it</button>
+          <button class="key plus" type="button" data-k="+" aria-label="Add another dart">+ Add dart</button>
         </div>
         <div class="qs">
           <button class="q" type="button" data-q="0">Miss</button>
@@ -437,6 +439,8 @@
       <p class="fine" id="tableNote">Table flip turns the left player around, for a phone or tablet lying between you.</p>
       <p class="fine" id="iosHint" hidden></p>
       <p class="fine" id="licenseLine"></p>
+      <button class="secondary" type="button" id="feedbackBtn">Feedback · report a bug or ask for a change</button>
+      <p class="fine">Opens your mail app to Donald. Play never needs wifi; the email sends once you're online.</p>
       <button class="secondary" type="button" id="closeSheet">Close</button>
     </div>
   </div>
@@ -446,11 +450,12 @@
   <script src="scoring.js"></script>
   <script src="checkouts.js"></script>
   <script src="license.js"></script>
-  <script>window.__DU_APP_VERSION__="cork-shell-v4";</script>
+  <script>window.__DU_APP_VERSION__="cork-shell-v5";</script>
   <link rel="stylesheet" href="/assets/buyer/pwa-update.css?v=autoupdate2" />
-  <script src="/assets/buyer/pwa-update.js?v=autoupdate2" data-sw-url="./sw.js" data-app-version="cork-shell-v4" data-app-label="Cork" defer></script>
+  <script src="/assets/buyer/pwa-update.js?v=autoupdate2" data-sw-url="./sw.js" data-app-version="cork-shell-v5" data-app-label="Cork" defer></script>
   <script src="/assets/buyer/du-about-version.js" defer></script>
   <script src="app.js"></script>
-<p style="position:fixed;left:0;right:0;bottom:0;margin:0;padding:6px 10px;background:#111;color:#ddd;font:13px system-ui;text-align:center;z-index:9999">Don't own Cork yet? <a style="color:#7fd1ff" href="/store/p/cork-offline-darts-scoreboard/">Get it — CA$25 one-time, no subscription &rarr;</a></p>
+<p style="position:fixed;left:0;right:0;bottom:0;margin:0;padding:6px 10px;background:#111;color:#ddd;font:13px system-ui;text-align:center;z-index:9999">Don't own Cork yet? <a style="color:#7fd1ff" href="/store/p/cork-offline-darts-scoreboard/">Get it — $25 one-time, no subscription &rarr;</a></p>
+<link rel="stylesheet" href="/assets/currency/du-currency.css?v=2"><script src="/assets/currency/du-currency.js?v=2" defer></script>
 </body>
 </html>

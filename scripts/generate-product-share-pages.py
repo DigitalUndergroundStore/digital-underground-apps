@@ -20,9 +20,9 @@ BASE = "https://digitalundergroundstore.com"
 OG_MAX_BYTES = 1_000_000
 
 PRODUCTS = [
-    {"slug": "invoice-desk", "code": "nvmvyx", "name": "Invoice Desk", "price": "CA$19", "pitch": ["Clean invoices for freelancers."], "cover": "media/nvmvyx.jpg"},
-    {"slug": "streak-kit", "code": "idasqr", "name": "Streak Kit", "price": "CA$9", "pitch": ["Daily streaks, kept on your phone.", "No account."], "cover": "media/idasqr.jpg"},
-    {"slug": "scope-lock", "code": "omzql", "name": "Scope Lock", "price": "CA$12", "pitch": ["A client brief that holds the scope."], "cover": "media/omzql.jpg"},
+    {"slug": "invoice-desk", "code": "nvmvyx", "name": "Invoice Desk", "price": "$19", "pitch": ["Clean invoices for freelancers."], "cover": "media/nvmvyx.jpg"},
+    {"slug": "streak-kit", "code": "idasqr", "name": "Streak Kit", "price": "$9", "pitch": ["Daily streaks, kept on your phone.", "No account."], "cover": "media/idasqr.jpg"},
+    {"slug": "scope-lock", "code": "omzql", "name": "Scope Lock", "price": "$12", "pitch": ["A client brief that holds the scope."], "cover": "media/omzql.jpg"},
     {
         "slug": "pantry-week", "og_locked": True,
         "code": "jhagho",
@@ -36,30 +36,30 @@ PRODUCTS = [
             "square": "/store/media/pantry-week-square.mp4?v=20261012pw410",
         },
     },
-    {"slug": "winston", "code": "jkpty", "name": "Winston — Hands-Free Kitchen Voice Assistant", "price": "CA$19", "pitch": ["A kitchen voice that reads the steps while your hands are busy."], "cover": "media/jkpty.jpg"},
-    {"slug": "planetview", "code": "oxnfvy", "name": "PlanetView Live", "price": "CA$24", "pitch": ["Photoreal Earth and a solar system you can fly, in the browser."], "cover": "covers/oxnfvy.webp"},
-    {"slug": "session-forge", "code": "wcvgxo", "name": "Session Forge", "price": "CA$14.99+", "pitch": ["A toolkit for running game sessions."], "cover": "covers/wcvgxo.webp"},
-    {"slug": "plainhelp", "code": "ozzrh", "name": "PlainHelp", "price": "CA$39", "pitch": ["A calm voice helper for people new to AI — timers, notes, questions, and phone or PC help."], "cover": "covers/ozzrh.webp"},
-    {"slug": "reply-forge", "code": "nlwvb", "name": "Reply Forge", "price": "CA$9", "pitch": ["Ready-to-send customer replies."], "cover": "covers/nlwvb.webp"},
-    {"slug": "chatgpt-prompt-pack", "code": "lqynfs", "name": "ChatGPT Prompt Pack", "price": "CA$9", "pitch": ["30 prompts to create and sell digital products."], "cover": "covers/lqynfs.webp"},
-    {"slug": "rate-wire", "code": "ppnorh", "name": "Rate Wire", "price": "CA$9", "pitch": ["Hourly and day rates, figured before you quote."], "cover": "covers/ppnorh.webp"},
-    {"slug": "offer-desk", "code": "bhrrtz", "name": "Offer Desk", "price": "CA$19", "pitch": ["A one-page offer you can send to a client."], "cover": "covers/offer-desk-cover-v3.webp"},
-    {"slug": "launch-ledger", "code": "iacbv", "name": "Launch Ledger", "price": "CA$29", "pitch": ["Income, kept in one ledger."], "cover": "covers/iacbv.webp"},
-    {"slug": "focus-gate", "code": "tckoc", "name": "Focus Gate", "price": "CA$7", "pitch": ["A deep-work timer for one session at a time."], "cover": "covers/tckoc.webp"},
-    {"slug": "box-and-go", "code": "hfyam", "name": "Box & Go", "price": "CA$12", "pitch": ["A moving planner for the boxes and the list."], "cover": "covers/hfyam.webp"},
-    {"slug": "packlane", "code": "lchlou", "name": "Packlane", "price": "CA$7", "pitch": ["Packing lists for the trip you are taking."], "cover": "covers/lchlou.webp"},
-    {"slug": "grok-prompt-pack", "code": "jsdrug", "name": "Grok Prompt Pack", "price": "CA$29", "pitch": ["Prompts for writing, planning, and shipping work."], "cover": "covers/jsdrug.webp"},
-    {"slug": "ai-audience-growth-toolkit", "code": "pgkgdc", "name": "AI Audience Growth Toolkit", "price": "CA$29", "pitch": ["A playbook, a workbook, and a prompt pack."], "cover": "covers/pgkgdc.webp"},
-    {"slug": "airhand", "hidden": True, "code": "fifcuh", "name": "Airhand (Early Access)", "price": "CA$6.99", "pitch": ["Live radio, your music, and a timer, controlled from the camera."], "cover": "covers/fifcuh.webp"},
-    {"slug": "cork", "code": "fjmmi", "name": "Cork — Darts Scoreboard", "price": "CA$25", "pitch": ["Score for two sides.", "Pay once. No subscription."], "cover": "covers/fjmmi.webp"},
-    {"slug": "focus-habits-pack", "code": "wgjffu", "name": "Focus & Habits Pack", "price": "CA$19", "pitch": ["Habit tracker, focus gate, and more.", "Three products, one price."], "cover": "covers/wgjffu.webp"},
-    {"slug": "ai-creator-bundle", "code": "lgvubv", "name": "AI Creator Bundle", "price": "CA$79", "pitch": ["Prompt packs, a companion, and an audience growth toolkit."], "cover": "covers/lgvubv.webp"},
-    {"slug": "complete-freelance-suite", "code": "vvtib", "name": "Complete Freelance Suite", "price": "CA$79", "pitch": ["Proposals, pricing, scope, invoicing, and client tools in one package."], "cover": "covers/vvtib.webp"},
-    {"slug": "freelance-admin-stack", "code": "lggigy", "name": "Freelance Admin Stack", "price": "CA$35", "pitch": ["Invoicing, replies, scope protection, and rate confidence."], "cover": "covers/lggigy.webp"},
-    {"slug": "null-harbor", "code": "jcazp", "name": "Null Harbor", "price": "CA$4.99", "pitch": ["A near-future thriller."], "cover": "covers/jcazp.webp"},
-    {"slug": "he-came-home-without-her", "code": "ygwhif", "name": "He Came Home Without Her", "price": "CA$4.99", "pitch": ["A domestic thriller."], "cover": "covers/ygwhif.webp"},
-    {"slug": "humanity-x-into-the-stars", "code": "sgrnpe", "name": "Humanity X: Into The Stars", "price": "CA$9.99", "pitch": ["Book 2 of the Humanity X Trilogy. Six years after the lunar wars, humanity can fold space and is still learning not to fold people: hard-edged, character-driven space opera about work, complicity and first contact."], "cover": "covers/sgrnpe2.webp"},
-    {"slug": "humanity-x-off-the-ground", "code": "umndpu", "name": "Humanity X: Off the Ground", "price": "CA$9.99", "pitch": ["Book 1 of the Humanity X Trilogy. Crossing space was the easy part: Adam Voss signs on to build an unfinished lunar city, befriends the man who will lead Mars to war with Earth, and is aboard a warship when the fighting reaches orbit."], "cover": "covers/umndpu.webp"},
+    {"slug": "winston", "code": "jkpty", "name": "Winston — Hands-Free Kitchen Voice Assistant", "price": "$19", "pitch": ["A kitchen voice that reads the steps while your hands are busy."], "cover": "media/jkpty.jpg"},
+    {"slug": "planetview", "code": "oxnfvy", "name": "PlanetView Live", "price": "$24", "pitch": ["Photoreal Earth and a solar system you can fly, in the browser."], "cover": "covers/oxnfvy.webp"},
+    {"slug": "session-forge", "code": "wcvgxo", "name": "Session Forge", "price": "$14.99+", "pitch": ["A toolkit for running game sessions."], "cover": "covers/wcvgxo.webp"},
+    {"slug": "plainhelp", "code": "ozzrh", "name": "PlainHelp", "price": "$39", "pitch": ["A calm voice helper for people new to AI — timers, notes, questions, and phone or PC help."], "cover": "covers/ozzrh.webp"},
+    {"slug": "reply-forge", "code": "nlwvb", "name": "Reply Forge", "price": "$9", "pitch": ["Ready-to-send customer replies."], "cover": "covers/nlwvb.webp"},
+    {"slug": "chatgpt-prompt-pack", "code": "lqynfs", "name": "ChatGPT Prompt Pack", "price": "$9", "pitch": ["30 prompts to create and sell digital products."], "cover": "covers/lqynfs.webp"},
+    {"slug": "rate-wire", "code": "ppnorh", "name": "Rate Wire", "price": "$9", "pitch": ["Hourly and day rates, figured before you quote."], "cover": "covers/ppnorh.webp"},
+    {"slug": "offer-desk", "code": "bhrrtz", "name": "Offer Desk", "price": "$19", "pitch": ["A one-page offer you can send to a client."], "cover": "covers/offer-desk-cover-v3.webp"},
+    {"slug": "launch-ledger", "code": "iacbv", "name": "Launch Ledger", "price": "$29", "pitch": ["Income, kept in one ledger."], "cover": "covers/iacbv.webp"},
+    {"slug": "focus-gate", "code": "tckoc", "name": "Focus Gate", "price": "$7", "pitch": ["A deep-work timer for one session at a time."], "cover": "covers/tckoc.webp"},
+    {"slug": "box-and-go", "code": "hfyam", "name": "Box & Go", "price": "$12", "pitch": ["A moving planner for the boxes and the list."], "cover": "covers/hfyam.webp"},
+    {"slug": "packlane", "code": "lchlou", "name": "Packlane", "price": "$7", "pitch": ["Packing lists for the trip you are taking."], "cover": "covers/lchlou.webp"},
+    {"slug": "grok-prompt-pack", "code": "jsdrug", "name": "Grok Prompt Pack", "price": "$29", "pitch": ["Prompts for writing, planning, and shipping work."], "cover": "covers/jsdrug.webp"},
+    {"slug": "ai-audience-growth-toolkit", "code": "pgkgdc", "name": "AI Audience Growth Toolkit", "price": "$29", "pitch": ["A playbook, a workbook, and a prompt pack."], "cover": "covers/pgkgdc.webp"},
+    {"slug": "airhand", "hidden": True, "code": "fifcuh", "name": "Airhand (Early Access)", "price": "$6.99", "pitch": ["Live radio, your music, and a timer, controlled from the camera."], "cover": "covers/fifcuh.webp"},
+    {"slug": "cork", "code": "fjmmi", "name": "Cork — Darts Scoreboard", "price": "$25", "pitch": ["Score for two sides.", "Pay once. No subscription."], "cover": "covers/fjmmi.webp"},
+    {"slug": "focus-habits-pack", "code": "wgjffu", "name": "Focus & Habits Pack", "price": "$19", "pitch": ["Habit tracker, focus gate, and more.", "Three products, one price."], "cover": "covers/wgjffu.webp"},
+    {"slug": "ai-creator-bundle", "code": "lgvubv", "name": "AI Creator Bundle", "price": "$79", "pitch": ["Prompt packs, a companion, and an audience growth toolkit."], "cover": "covers/lgvubv.webp"},
+    {"slug": "complete-freelance-suite", "code": "vvtib", "name": "Complete Freelance Suite", "price": "$79", "pitch": ["Proposals, pricing, scope, invoicing, and client tools in one package."], "cover": "covers/vvtib.webp"},
+    {"slug": "freelance-admin-stack", "code": "lggigy", "name": "Freelance Admin Stack", "price": "$35", "pitch": ["Invoicing, replies, scope protection, and rate confidence."], "cover": "covers/lggigy.webp"},
+    {"slug": "null-harbor", "code": "jcazp", "name": "Null Harbor", "price": "$4.99", "pitch": ["A near-future thriller."], "cover": "covers/jcazp.webp"},
+    {"slug": "he-came-home-without-her", "code": "ygwhif", "name": "He Came Home Without Her", "price": "$4.99", "pitch": ["A domestic thriller."], "cover": "covers/ygwhif.webp"},
+    {"slug": "humanity-x-into-the-stars", "code": "sgrnpe", "name": "Humanity X: Into The Stars", "price": "$9.99", "pitch": ["Book 2 of the Humanity X Trilogy. Six years after the lunar wars, humanity can fold space and is still learning not to fold people: hard-edged, character-driven space opera about work, complicity and first contact."], "cover": "covers/sgrnpe2.webp"},
+    {"slug": "humanity-x-off-the-ground", "code": "umndpu", "name": "Humanity X: Off the Ground", "price": "$9.99", "pitch": ["Book 1 of the Humanity X Trilogy. Crossing space was the easy part: Adam Voss signs on to build an unfinished lunar city, befriends the man who will lead Mars to war with Earth, and is aboard a warship when the fighting reaches orbit."], "cover": "covers/umndpu.webp"},
     {"slug": "brave-little-beaver", "og_locked": True, "code": "bukwxo", "name": "The Brave Little Beaver", "price": "Free", "pitch": ["A short story for children."], "cover": None},
     {"slug": "ethan-chose-kindness", "og_locked": True, "code": "efouck", "name": "The Day Ethan Chose Kindness", "price": "Free", "pitch": ["A short story for children."], "cover": None},
     {"slug": "tillys-big-cleanup", "og_locked": True, "code": "vlaqmh", "name": "Tilly's Big Cleanup", "price": "Free", "pitch": ["A short story for children."], "cover": None},
@@ -141,9 +141,9 @@ def make_og_image(product: dict, dest: Path) -> None:
 
 def price_amount_currency(price: str) -> tuple[str, str]:
     if price.strip().lower() == "free":
-        return "0.00", "CAD"
+        return "0.00", "USD"
     m = re.search(r"(\d+(?:\.\d+)?)", price.replace(",", ""))
-    return (m.group(1) if m else "0.00"), "CAD"
+    return (m.group(1) if m else "0.00"), "USD"
 
 
 def cta_label(price: str) -> str:
@@ -242,6 +242,7 @@ def render_page(product: dict) -> str:
   </article>
 </main>
 <footer class="site-foot"><p><a href="/store/">Digital Underground store</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/support/">Support</a></p></footer>{promo_script}
+<link rel="stylesheet" href="/assets/currency/du-currency.css?v=2"><script src="/assets/currency/du-currency.js?v=2" defer></script>
 </body>
 </html>
 """

@@ -87,8 +87,31 @@ export function sniffVideo(bytes) {
   return null;
 }
 
-/** Stream a stored video with HTTP Range support. */
+/** Stream a stored video with HTTP Range support. Edge-cacheable (Cache API + public Cache-Control). */
+export const VIDEO_CACHE_CONTROL = "public, max-age=604800, s-maxage=604800, immutable";
+
+export function videoCacheKey(request) {
+  const range = request.headers.get("Range") || "";
+  const u = new URL(request.url);
+  if (range) u.searchParams.set("__du_range", range);
+  return new Request(u.toString(), { method: "GET" });
+}
+
 export async function serveVideo(kv, request, meta) {
+  const cache = typeof caches !== "undefined" ? caches.default : null;
+  const key = cache ? videoCacheKey(request) : null;
+  if (cache && key) {
+    const hit = await cache.match(key).catch(() => null);
+    if (hit) return hit;
+  }
+  const res = await buildVideoResponse(kv, request, meta);
+  if (cache && key && (res.status === 200 || res.status === 206)) {
+    try { await cache.put(key, res.clone()); } catch { /* ignore */ }
+  }
+  return res;
+}
+
+async function buildVideoResponse(kv, request, meta) {
   const size = meta.size, chunk = meta.chunk;
   let start = 0, end = size - 1, partial = false;
   const range = request.headers.get("Range");
@@ -106,7 +129,7 @@ export async function serveVideo(kv, request, meta) {
     "Content-Type": meta.type,
     "Accept-Ranges": "bytes",
     "Content-Length": String(end - start + 1),
-    "Cache-Control": "public, max-age=86400",
+    "Cache-Control": VIDEO_CACHE_CONTROL,
     "X-Content-Type-Options": "nosniff",
     "Content-Disposition": "inline",
   };

@@ -9,14 +9,16 @@
     "pitchShort": "A neon first-person arena shooter that runs in your browser. Pick a callsign and armor colour, then fight AI practice bots with a live scoreboard and kill feed. Free, no install.",
     "descriptionLong": "CyberArena 3D is a free first-person shooter built with Three.js that runs right in the browser, with no download or account.\n\nChoose a callsign and an armor colour, deploy into a neon cyber arena and fight three AI practice bots. Move with W, A, S, D, aim with the mouse, click to fire your laser rifle and press Space to jump. On phones and tablets there is an on-screen joystick, a look area, and fire and jump buttons.\n\nThe HUD shows your health, kills, deaths and streak, plus a live scoreboard and kill feed. When you are eliminated you respawn after a short countdown.\n\nCyberArena is in testing / development. Right now it runs in single-player Local Arena mode against bots; online multiplayer is planned but not switched on yet.",
     "projectUrl": "https://kerzylabs.pages.dev/play/cyberarena/",
-    "imageUrl": "https://digitalundergroundstore.com/community/media/cyberarena-cover.png?v=20261016b",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/cyberarena-cover.png?v=20261105a",
     "tags": [
       "game",
       "fps",
       "threejs",
       "browser"
     ],
-    "priceLabel": "Free / In testing"
+    "priceLabel": "Free / In testing",
+    "videoUrl": "https://digitalundergroundstore.com/community/media/cyberarena-promo.mp4?v=20261105a",
+    "videoApprovedUrl": "https://digitalundergroundstore.com/community/media/cyberarena-promo.mp4?v=20261105a"
   },
   {
     "id": "cm_kerzy_blockbusters",
@@ -26,7 +28,7 @@
     "category": "games",
     "stage": "Released",
     "pitchShort": "1v1 neon falling-block combat. Clear lines to send garbage into your rival's well. Quick Match online, vs bot or endless. Free in your browser.",
-    "descriptionLong": "Stack Attack Arena is a free 1v1 falling-block battle game that runs in your browser on phone or desktop.\n\nClear two or more lines to send garbage into your rival's well, and top out and you lose. Tap Quick Match to be paired online in seconds, or play a friend with a 4-letter room code or share link. You can also take on the bot (Easy, Normal or Hard) or chase a global high score in Endless.\n\nIt has hold, ghost piece, a 7-bag, combos and garbage cancelling. Phones get touch buttons and swipe controls, and desktop uses the keyboard. There's no download or sign-up.\n\n\u00a9 2026 Kerzy Labs",
+    "descriptionLong": "Stack Attack Arena is a free 1v1 falling-block battle game that runs in your browser on phone or desktop.\n\nClear two or more lines to send garbage into your rival's well, and top out and you lose. Tap Quick Match to be paired online in seconds, or play a friend with a 4-letter room code or share link. You can also take on the bot (Easy, Normal or Hard) or chase a global high score in Endless.\n\nIt has hold, ghost piece, a 7-bag, combos and garbage cancelling. Phones get touch buttons and swipe controls, and desktop uses the keyboard. There's no download or sign-up.\n\n© 2026 Kerzy Labs",
     "projectUrl": "https://kerzylabs.pages.dev/play/stack-attack-arena/",
     "imageUrl": "https://digitalundergroundstore.com/community/media/stack-attack-arena-cover.jpg?v=20261023",
     "tags": [
@@ -47,7 +49,7 @@
     "category": "games",
     "stage": "Released",
     "pitchShort": "4-player neon free-for-all Pong. Defend your wall, and the last wall standing wins. Quick Match online or solo against 3 bots.",
-    "descriptionLong": "Quad Pong is a free four-player Pong game that runs in your browser.\n\nEach player defends one wall. Miss the ball and you lose a life, and once you're out your wall turns solid. Tap Quick Match to fill a room automatically, with bots taking any empty seats, or host a room and send friends a 4-letter code or link. Solo mode puts you against three bots with a choice of difficulty and lives.\n\nExtra balls and speed-ups keep rounds short. On phones you drag, and on desktop you use the mouse or keys.\n\n\u00a9 2026 Kerzy Labs",
+    "descriptionLong": "Quad Pong is a free four-player Pong game that runs in your browser.\n\nEach player defends one wall. Miss the ball and you lose a life, and once you're out your wall turns solid. Tap Quick Match to fill a room automatically, with bots taking any empty seats, or host a room and send friends a 4-letter code or link. Solo mode puts you against three bots with a choice of difficulty and lives.\n\nExtra balls and speed-ups keep rounds short. On phones you drag, and on desktop you use the mouse or keys.\n\n© 2026 Kerzy Labs",
     "projectUrl": "https://kerzylabs.pages.dev/play/quad-pong/",
     "imageUrl": "https://digitalundergroundstore.com/community/media/quad-pong-cover.png",
     "tags": [
@@ -66,16 +68,18 @@
     "category": "games",
     "stage": "In testing / development",
     "pitchShort": "A neon tower defense game in your browser. Pick a class, place towers anywhere off the path, and hold back the waves in Classic, Endless or live PvP. Free, no install.",
-    "descriptionLong": "Rival Lanes is a free tower defense game that runs in your browser, on phones and desktop.\n\nChoose a class and a starter tower, then place towers freely on the grid and upgrade them as the waves grow. Play Classic or Endless and post your score to the global leaderboard, or go head to head in PvP by room code, quick match or against a bot, sending attackers into your rival's lane.\n\nIt's still in testing, so there's a Feedback button in the menu for feature requests and bug reports.\n\n\u00a9 2026 Kerzy Labs",
+    "descriptionLong": "Rival Lanes is a free tower defense game that runs in your browser, on phones and desktop.\n\nChoose a class and a starter tower, then place towers freely on the grid and upgrade them as the waves grow. Play Classic or Endless and post your score to the global leaderboard, or go head to head in PvP by room code, quick match or against a bot, sending attackers into your rival's lane.\n\nIt's still in testing, so there's a Feedback button in the menu for feature requests and bug reports.\n\n© 2026 Kerzy Labs",
     "projectUrl": "https://kerzylabs.pages.dev/play/rival-lanes/",
-    "imageUrl": "https://digitalundergroundstore.com/community/media/rival-lanes-cover.png?v=20261025",
+    "imageUrl": "https://digitalundergroundstore.com/community/media/rival-lanes-cover.png?v=20261104c",
     "tags": [
       "game",
       "tower-defense",
       "multiplayer",
       "browser"
     ],
-    "priceLabel": "Free / In testing"
+    "priceLabel": "Free / In testing",
+    "videoUrl": "https://digitalundergroundstore.com/community/media/rival-lanes-promo.mp4?v=20261104c",
+    "videoApprovedUrl": "https://digitalundergroundstore.com/community/media/rival-lanes-promo.mp4?v=20261104c"
   },
   {
     "id": "cm_pick_ollama",
@@ -465,7 +469,7 @@
     "category": "apps",
     "stage": "In testing",
     "pitchShort": "Control live radio, your own music and a timer with hand gestures in front of your camera. Swipe to change station or song, pinch to play, circle for volume. Early Access, coming soon.",
-    "descriptionLong": "Airhand turns the camera on your phone, tablet or computer into a hands-free remote for live radio, your own music and a timer.\n\nThe gestures (v1.2):\n- Swipe left or right: previous or next station or song.\n- Swipe up or down: move up or down the list. On the timer, add or remove a minute.\n- Pinch your thumb and index finger, or touch your thumb to your middle finger as if to snap: play, pause or start.\n- Draw a circle with one finger: volume. Clockwise is louder, counter-clockwise is quieter. It takes about two thirds of a turn before the first step, so small wobbles don't change it.\n- Optional: hold an open palm to stop (on by default) and hold a fist to mute (off by default, experimental). Both can be switched in Settings.\n\nAfter a swipe, Airhand ignores the hand moving back, both up/down and left/right, and waits until your hand is still or out of view. You can change that pause and how big a swipe must be in Settings. A short practice checklist helps you try each gesture once, and every gesture shows what it did on screen.\n\nRadio has live stations from Canada and 20 other countries; if one can't play, Airhand offers the next. My Music plays songs from your device, and they stay on your device. Timer has a countdown and a stopwatch.\n\nHand tracking runs on your device. The camera picture is never recorded or uploaded. Every gesture also has a tap button and a keyboard key.\n\nHonest notes: Airhand is in testing (Early Access). The gestures are tested with recorded hand paths and need more real-webcam testing, and lighting and camera angle matter. The \"snap\" is read from the camera as the thumb touching the middle finger; there is no sound detection. Airhand is not on sale yet; it is coming soon at CA$6.99, with future updates included.",
+    "descriptionLong": "Airhand turns the camera on your phone, tablet or computer into a hands-free remote for live radio, your own music and a timer.\n\nThe gestures (v1.2):\n- Swipe left or right: previous or next station or song.\n- Swipe up or down: move up or down the list. On the timer, add or remove a minute.\n- Pinch your thumb and index finger, or touch your thumb to your middle finger as if to snap: play, pause or start.\n- Draw a circle with one finger: volume. Clockwise is louder, counter-clockwise is quieter. It takes about two thirds of a turn before the first step, so small wobbles don't change it.\n- Optional: hold an open palm to stop (on by default) and hold a fist to mute (off by default, experimental). Both can be switched in Settings.\n\nAfter a swipe, Airhand ignores the hand moving back, both up/down and left/right, and waits until your hand is still or out of view. You can change that pause and how big a swipe must be in Settings. A short practice checklist helps you try each gesture once, and every gesture shows what it did on screen.\n\nRadio has live stations from Canada and 20 other countries; if one can't play, Airhand offers the next. My Music plays songs from your device, and they stay on your device. Timer has a countdown and a stopwatch.\n\nHand tracking runs on your device. The camera picture is never recorded or uploaded. Every gesture also has a tap button and a keyboard key.\n\nHonest notes: Airhand is in testing (Early Access). The gestures are tested with recorded hand paths and need more real-webcam testing, and lighting and camera angle matter. The \"snap\" is read from the camera as the thumb touching the middle finger; there is no sound detection. Airhand is not on sale yet; it is coming soon at $6.99, with future updates included.",
     "projectUrl": "https://airhand.pages.dev/",
     "imageUrl": "https://digitalundergroundstore.com/community/media/airhand-cover.jpg?v=20261022",
     "tags": [
@@ -476,7 +480,7 @@
       "camera",
       "pwa"
     ],
-    "priceLabel": "CA$6.99",
+    "priceLabel": "$6.99",
     "comingSoon": true
   }
 ]

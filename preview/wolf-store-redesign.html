@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Digital Underground Store — Own Indie Tools, Apps & Stories Forever</title>
+  <meta name="description" content="Pay once. Own forever. 150+ indie tools, apps, prompt packs, freelance kits and books. No subscriptions. Built by makers, for makers." />
+  <meta name="keywords" content="indie tools, digital products, freelance tools, AI prompt packs, one-time purchase software, indie marketplace" />
+  <meta property="og:title" content="Digital Underground Store — Tools, apps & stories you own" />
+  <meta property="og:description" content="Pay once. Keep it forever. 150+ indie digital products. No subscriptions, no lock-in." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#07070b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #07070b;
+      --bg-elevated: #0c0c12;
+      --bg-card: #111118;
+      --bg-card-hover: #17171f;
+      --border: rgba(255,255,255,0.06);
+      --border-strong: rgba(255,255,255,0.1);
+      --text: #f4f4f5;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --primary: #7c6df0;
+      --primary-hover: #9183f5;
+      --primary-soft: rgba(124,109,240,0.14);
+      --primary-glow: rgba(124,109,240,0.4);
+      --success: #34d399;
+      --warning: #f59e0b;
+      --radius: 12px;
+      --radius-lg: 16px;
+      --font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: "Instrument Serif", Georgia, serif;
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100dvh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 9998;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ===== NAV ===== */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(18px) saturate(1.5);
+      -webkit-backdrop-filter: blur(18px) saturate(1.5);
+      background: rgba(7,7,11,0.8);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: 0 16px;
+      height: 56px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    @media (min-width: 640px) {
+      .nav-inner { height: 60px; padding: 0 24px; gap: 20px; }
+    }
+    .logo {
+      display: flex; align-items: center; gap: 8px;
+      font-weight: 600; font-size: 14px;
+      letter-spacing: -0.01em; flex-shrink: 0;
+    }
+    .logo-mark {
+      width: 26px; height: 26px; border-radius: 7px;
+      background: linear-gradient(135deg, #7c6df0, #a78bfa 60%, #c4b5fd);
+      display: grid; place-items: center;
+      font-weight: 700; font-size: 12px; color: #fff;
+      box-shadow: 0 0 16px -2px var(--primary-glow);
+    }
+    .logo span { display: none; }
+    @media (min-width: 480px) { .logo span { display: inline; } }
+
+    .nav-links { display: none; gap: 2px; margin-left: 4px; }
+    @media (min-width: 900px) {
+      .nav-links { display: flex; }
+    }
+    .nav-links a {
+      padding: 6px 11px; border-radius: 8px;
+      font-size: 13.5px; color: var(--text-secondary);
+      transition: color .15s, background .15s;
+    }
+    .nav-links a:hover { color: var(--text); background: rgba(255,255,255,0.04); }
+
+    .nav-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      padding: 8px 14px; border-radius: 999px;
+      font-size: 13.5px; font-weight: 500;
+      transition: all .2s cubic-bezier(.16,1,.3,1);
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--primary); color: #fff;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.08) inset, 0 4px 14px -3px var(--primary-glow);
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset, 0 6px 20px -3px var(--primary-glow);
+    }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-ghost {
+      color: var(--text-secondary);
+      border: 1px solid var(--border-strong);
+    }
+    .btn-ghost:hover {
+      color: var(--text); background: rgba(255,255,255,0.04);
+      border-color: rgba(255,255,255,0.14);
+    }
+    .btn-sm { padding: 6px 12px; font-size: 13px; }
+    .btn-full { width: 100%; }
+
+    .nav-cta-mobile { display: none; }
+    @media (max-width: 639px) {
+      .nav-cta-desktop { display: none; }
+      .nav-cta-mobile { display: inline-flex; }
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative;
+      padding: 48px 16px 36px;
+      max-width: 1120px; margin: 0 auto;
+      text-align: center;
+    }
+    @media (min-width: 640px) {
+      .hero { padding: 72px 24px 48px; }
+    }
+    .hero::before {
+      content: "";
+      position: absolute; top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: min(520px, 90vw); height: 280px;
+      background: radial-gradient(ellipse, var(--primary-glow) 0%, transparent 70%);
+      opacity: 0.35; pointer-events: none; filter: blur(48px);
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 5px 12px; border-radius: 999px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-strong);
+      font-size: 11px; font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.05em; text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .badge-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 8px var(--primary);
+      animation: pulse 2.2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.85); }
+    }
+
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.1rem, 7vw, 3.6rem);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 14px;
+      max-width: 680px;
+      margin-left: auto; margin-right: auto;
+    }
+    .hero-sub {
+      font-size: clamp(15px, 2.5vw, 17px);
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin: 0 auto 24px;
+      line-height: 1.55;
+    }
+
+    /* Single primary CTA + trust line */
+    .hero-cta-wrap {
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
+      margin-bottom: 28px;
+    }
+    .hero-cta-wrap .btn { min-width: 200px; padding: 11px 22px; font-size: 15px; }
+
+    .trust-line {
+      font-size: 13px; color: var(--text-muted);
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px;
+    }
+    .trust-line span { display: inline-flex; align-items: center; gap: 5px; }
+    .trust-line svg { opacity: 0.7; flex-shrink: 0; }
+
+    /* Promo strip — secondary, not competing CTA */
+    .promo-strip {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+      padding: 14px 16px;
+      background: rgba(245,158,11,0.06);
+      border: 1px solid rgba(245,158,11,0.18);
+      border-radius: var(--radius);
+      margin: 0 auto 32px;
+      max-width: 400px;
+      width: 100%;
+      text-align: left;
+    }
+    .promo-strip .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--warning);
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+    }
+    .promo-strip .promo-links {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .promo-strip a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.25);
+      color: var(--text-secondary);
+      font-size: 13px;
+      line-height: 1.35;
+      transition: color .15s, background .15s;
+      text-decoration: none;
+    }
+    .promo-strip a:hover {
+      color: var(--text);
+      background: rgba(0,0,0,0.4);
+    }
+    .promo-strip a .promo-title {
+      flex: 1;
+      min-width: 0;
+    }
+    .promo-strip a .promo-meta {
+      flex-shrink: 0;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    .promo-strip a:hover .promo-meta { color: var(--text-secondary); }
+
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      max-width: 420px; margin: 0 auto;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+    .stat { text-align: center; }
+    .stat-value {
+      font-size: clamp(20px, 4vw, 26px);
+      font-weight: 600; letter-spacing: -0.02em;
+    }
+    .stat-label { font-size: 12px; color: var(--text-muted); margin-top: 1px; }
+
+    /* ===== CATEGORY BAR ===== */
+    .cat-bar {
+      position: sticky; top: 56px; z-index: 90;
+      background: rgba(7,7,11,0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    @media (min-width: 640px) { .cat-bar { top: 60px; } }
+    .cat-scroll {
+      max-width: 1120px; margin: 0 auto;
+      padding: 0 12px;
+      display: flex; gap: 2px;
+      overflow-x: auto;
+      scrollbar-width: none; -ms-overflow-style: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .cat-scroll::-webkit-scrollbar { display: none; }
+    .cat-btn {
+      flex-shrink: 0;
+      padding: 13px 12px;
+      font-size: 13.5px; font-weight: 500;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+      transition: color .15s, border-color .15s;
+    }
+    .cat-btn:hover { color: var(--text-secondary); }
+    .cat-btn.active {
+      color: var(--text);
+      border-bottom-color: var(--primary);
+    }
+
+    /* ===== MAIN ===== */
+    .main {
+      max-width: 1120px; margin: 0 auto;
+      padding: 28px 16px 100px;
+    }
+    @media (min-width: 640px) {
+      .main { padding: 36px 24px 80px; }
+    }
+
+    /* Toolbar */
+    .toolbar {
+      display: flex; flex-direction: column; gap: 12px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 640px) {
+      .toolbar {
+        flex-direction: row; align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .search-box { position: relative; flex: 1; max-width: 320px; }
+    .search-box input {
+      width: 100%;
+      padding: 10px 12px 10px 38px;
+      border-radius: 10px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      color: var(--text); font-size: 14px;
+      outline: none;
+      transition: border-color .15s, box-shadow .15s;
+      -webkit-appearance: none;
+    }
+    .search-box input::placeholder { color: var(--text-muted); }
+    .search-box input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-soft);
+    }
+    .search-icon {
+      position: absolute; left: 12px; top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted); pointer-events: none;
+    }
+    .filter-row {
+      display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+    }
+    .pill {
+      padding: 7px 11px; border-radius: 8px;
+      font-size: 12.5px; font-weight: 500;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      transition: all .15s;
+    }
+    .pill:hover, .pill.active {
+      color: var(--text);
+      background: var(--primary-soft);
+      border-color: rgba(124,109,240,0.3);
+    }
+    .results-count {
+      font-size: 13px; color: var(--text-muted);
+      margin-left: auto;
+    }
+    @media (max-width: 639px) {
+      .results-count { width: 100%; margin-left: 0; margin-top: 4px; }
+    }
+
+    /* Section */
+    .section { margin-bottom: 40px; }
+    .section-header {
+      display: flex; align-items: baseline;
+      justify-content: space-between; gap: 12px;
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 18px; font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    @media (min-width: 640px) { .section-title { font-size: 20px; } }
+    .section-meta { font-size: 13px; color: var(--text-muted); }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 520px) {
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    }
+    @media (min-width: 900px) {
+      .grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    }
+
+    /* Card */
+    .card {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: transform .22s cubic-bezier(.16,1,.3,1),
+                  border-color .22s, background .22s, box-shadow .22s;
+      display: flex; flex-direction: column;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .card:hover, .card:focus-within {
+      background: var(--bg-card-hover);
+      border-color: var(--border-strong);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px var(--border-strong), 0 12px 36px -10px rgba(0,0,0,0.55), 0 0 20px -6px var(--primary-glow);
+    }
+    @media (hover: none) {
+      .card:hover { transform: none; box-shadow: none; }
+      .card:active { background: var(--bg-card-hover); }
+    }
+    .card-media {
+      aspect-ratio: 16/9;
+      background: linear-gradient(145deg, #16161f 0%, #0d0d14 100%);
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .card-media-inner {
+      display: flex; flex-direction: column;
+      align-items: center; gap: 6px;
+      padding: 16px; text-align: center;
+    }
+    .card-icon {
+      width: 44px; height: 44px; border-radius: 11px;
+      background: var(--primary-soft);
+      display: grid; place-items: center;
+      font-size: 20px;
+    }
+    .card-media-label {
+      font-size: 12px; color: var(--text-muted);
+      font-weight: 500;
+    }
+    .card-body {
+      padding: 14px 14px 12px;
+      display: flex; flex-direction: column; flex: 1; gap: 6px;
+    }
+    .card-title {
+      font-size: 14.5px; font-weight: 600;
+      letter-spacing: -0.01em; line-height: 1.3;
+    }
+    .card-desc {
+      font-size: 12.5px; color: var(--text-secondary);
+      line-height: 1.45;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex: 1;
+    }
+    .card-footer {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      margin-top: 6px; padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .card-price {
+      font-size: 13.5px; font-weight: 600;
+    }
+    .card-price.free { color: var(--success); }
+    .card-cta {
+      font-size: 12.5px; font-weight: 500;
+      color: var(--primary);
+      display: flex; align-items: center; gap: 3px;
+      transition: gap .2s;
+    }
+    .card:hover .card-cta { gap: 6px; }
+    .card-tag {
+      position: absolute; top: 10px; left: 10px;
+      padding: 3px 7px; border-radius: 5px;
+      font-size: 10px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.03em;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .card-tag.live {
+      background: rgba(52,211,153,0.12);
+      border-color: rgba(52,211,153,0.28);
+      color: var(--success);
+    }
+
+    /* Pagination */
+    .pagination {
+      display: flex; align-items: center; justify-content: center;
+      gap: 6px; margin-top: 32px; flex-wrap: wrap;
+    }
+    .page-btn {
+      min-width: 36px; height: 36px;
+      padding: 0 10px; border-radius: 9px;
+      font-size: 13.5px; font-weight: 500;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: all .15s;
+    }
+    .page-btn:hover:not(:disabled) {
+      color: var(--text); background: rgba(255,255,255,0.04);
+      border-color: var(--border-strong);
+    }
+    .page-btn.active {
+      background: var(--primary); color: #fff;
+      border-color: transparent;
+      box-shadow: 0 2px 10px -2px var(--primary-glow);
+    }
+    .page-btn:disabled {
+      opacity: 0.35; cursor: not-allowed;
+    }
+    .page-info {
+      font-size: 13px; color: var(--text-muted);
+      width: 100%; text-align: center; margin-bottom: 4px;
+    }
+
+    /* Empty */
+    .empty {
+      text-align: center; padding: 56px 20px;
+      color: var(--text-muted);
+    }
+    .empty p { margin-top: 8px; font-size: 14px; }
+
+    /* Value props bar */
+    .value-bar {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+    @media (min-width: 640px) {
+      .value-bar { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    }
+    .value-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 14px 16px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .value-icon {
+      width: 36px; height: 36px; border-radius: 9px;
+      background: var(--primary-soft);
+      display: grid; place-items: center;
+      flex-shrink: 0; font-size: 16px;
+    }
+    .value-item h3 {
+      font-size: 13.5px; font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .value-item p {
+      font-size: 12.5px; color: var(--text-muted); line-height: 1.4;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 16px calc(32px + var(--safe-bottom));
+      max-width: 1120px; margin: 0 auto;
+    }
+    @media (min-width: 640px) { .footer { padding: 48px 24px 40px; } }
+    .footer-top {
+      display: flex; flex-direction: column; gap: 28px;
+    }
+    @media (min-width: 640px) {
+      .footer-top {
+        flex-direction: row; justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+    .footer-brand { max-width: 260px; }
+    .footer-brand p {
+      font-size: 13px; color: var(--text-muted);
+      margin-top: 10px; line-height: 1.55;
+    }
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    @media (min-width: 480px) {
+      .footer-links { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    }
+    .footer-col h4 {
+      font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--text-muted); margin-bottom: 12px;
+    }
+    .footer-col a {
+      display: block; font-size: 13.5px;
+      color: var(--text-secondary); margin-bottom: 7px;
+      transition: color .15s;
+    }
+    .footer-col a:hover { color: var(--text); }
+    .footer-bottom {
+      margin-top: 32px; padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 12.5px; color: var(--text-muted);
+      display: flex; flex-wrap: wrap;
+      justify-content: space-between; gap: 8px;
+    }
+
+    /* Sticky mobile CTA bar */
+    .mobile-bar {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 80;
+      padding: 10px 16px calc(10px + var(--safe-bottom));
+      background: rgba(7,7,11,0.92);
+      backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 639px) {
+      .mobile-bar { display: block; }
+      .main { padding-bottom: 90px; }
+    }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0; transform: translateY(12px);
+      transition: opacity .45s ease, transform .45s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Focus visible for a11y */
+    :focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+    button:focus:not(:focus-visible),
+    a:focus:not(:focus-visible) { outline: none; }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="Digital Underground home">
+        <div class="logo-mark" aria-hidden="true">D</div>
+        <span>Digital Underground</span>
+      </a>
+      <div class="nav-links">
+        <a href="#catalog">Shop</a>
+        <a href="#">League</a>
+        <a href="#">Creators</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="nav-right">
+        <a href="#catalog" class="btn btn-primary nav-cta-desktop">Browse products</a>
+        <a href="#catalog" class="btn btn-primary btn-sm nav-cta-mobile">Shop</a>
+        <a href="#" class="btn btn-ghost btn-sm">Sign in</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      Indie marketplace
+    </div>
+    <h1>Pay once.<br>Own it forever.</h1>
+    <p class="hero-sub">
+      150+ tools, apps, prompt packs and books from independent makers.
+      No subscriptions. No lock-in. Download and keep.
+    </p>
+
+    <div class="hero-cta-wrap">
+      <a href="#catalog" class="btn btn-primary">Browse the collection</a>
+      <div class="trust-line">
+        <span>
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Secure checkout
+        </span>
+        <span>
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+          Instant download
+        </span>
+        <span>
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          One-time price
+        </span>
+      </div>
+    </div>
+
+    <div class="promo-strip" role="note">
+      <span class="label">🎃 This weekend</span>
+      <div class="promo-links">
+        <a href="#">
+          <span class="promo-title">He Came Home Without Her</span>
+          <span class="promo-meta">$4.99</span>
+        </a>
+        <a href="#">
+          <span class="promo-title">PlanetView Live</span>
+          <span class="promo-meta">Free with signup</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="stats" role="list">
+      <div class="stat" role="listitem">
+        <div class="stat-value">152</div>
+        <div class="stat-label">products</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-value">8</div>
+        <div class="stat-label">collections</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-value">USD</div>
+        <div class="stat-label">one-time pricing</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATEGORIES -->
+  <div class="cat-bar">
+    <div class="cat-scroll" id="cat-nav" role="tablist" aria-label="Product categories">
+      <button class="cat-btn active" data-cat="all" role="tab" aria-selected="true">All</button>
+      <button class="cat-btn" data-cat="featured" role="tab">Featured</button>
+      <button class="cat-btn" data-cat="freelance" role="tab">Freelance</button>
+      <button class="cat-btn" data-cat="ai" role="tab">AI tools</button>
+      <button class="cat-btn" data-cat="apps" role="tab">Apps</button>
+      <button class="cat-btn" data-cat="bundles" role="tab">Bundles</button>
+      <button class="cat-btn" data-cat="books" role="tab">Books</button>
+      <button class="cat-btn" data-cat="free" role="tab">Free</button>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main" id="catalog">
+    <!-- Value props -->
+    <div class="value-bar">
+      <div class="value-item">
+        <div class="value-icon" aria-hidden="true">🔓</div>
+        <div>
+          <h3>Own it outright</h3>
+          <p>Pay once. Download. Use offline. No monthly fees.</p>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-icon" aria-hidden="true">🛠️</div>
+        <div>
+          <h3>Built by makers</h3>
+          <p>Every product comes from an independent creator.</p>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-icon" aria-hidden="true">⚡</div>
+        <div>
+          <h3>Start in minutes</h3>
+          <p>Instant access after purchase. No waiting, no setup hell.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <div class="search-box">
+        <svg class="search-icon" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6.5" cy="6.5" r="5"/><path d="M10.5 10.5L14 14"/></svg>
+        <input type="search" id="search" placeholder="Search tools, books, packs…" autocomplete="off" aria-label="Search products" />
+      </div>
+      <div class="filter-row">
+        <button class="pill active" data-price="all">All</button>
+        <button class="pill" data-price="free">Free</button>
+        <button class="pill" data-price="paid">Paid</button>
+        <span class="results-count" id="results-count" aria-live="polite"></span>
+      </div>
+    </div>
+
+    <!-- Product grid (paginated) -->
+    <section class="section" aria-label="Products">
+      <div class="section-header">
+        <h2 class="section-title" id="section-title">All products</h2>
+        <span class="section-meta" id="section-meta"></span>
+      </div>
+      <div class="grid" id="product-grid" role="list"></div>
+      <div class="empty" id="empty-state" hidden>
+        <div style="font-size:32px;margin-bottom:8px">🔍</div>
+        <strong style="color:var(--text)">No matches</strong>
+        <p>Try a different search or clear the filters.</p>
+      </div>
+      <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-mark" aria-hidden="true">D</div>
+          <span>Digital Underground</span>
+        </a>
+        <p>Indie tools and stories you buy once and keep. Zero platform cut on marketplace listings — makers get paid directly.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="#catalog">All products</a>
+          <a href="#">Bundles</a>
+          <a href="#">Free tools</a>
+          <a href="#">Books & stories</a>
+        </div>
+        <div class="footer-col">
+          <h4>Marketplace</h4>
+          <a href="#">List your project free</a>
+          <a href="#">Maker League</a>
+          <a href="#">Creators</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Digital Underground</span>
+      <span>One-time pricing · CAD</span>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="mobile-bar" aria-hidden="false">
+    <a href="#catalog" class="btn btn-primary btn-full">Browse products</a>
+  </div>
+
+  <script>
+    /* ========== DATA ========== */
+    const products = [
+      { id:1, name:"PlanetView Live", desc:"Photoreal Earth & solar system in your browser. News, weather, Newtonian flight. Live beta.", price:0, cat:"featured", icon:"🌍", tag:"Live" },
+      { id:2, name:"Pantry Week", desc:"1,000+ curated recipes. Plan the week, shop by aisle, cook step by step.", price:0, cat:"featured", icon:"🍳" },
+      { id:3, name:"Session Forge", desc:"Offline toolkit for running tabletop game sessions.", price:14.99, cat:"featured", icon:"🎲" },
+      { id:4, name:"PlainHelp Ai", desc:"Phone app for seniors — one link after purchase, no ZIP files.", price:39, cat:"featured", icon:"📱" },
+      { id:5, name:"Winston Kitchen Voice", desc:"Hands-free kitchen assistant that reads recipe steps while you cook.", price:19, cat:"featured", icon:"🎙️" },
+      { id:6, name:"Offer Desk", desc:"One-page client offer you can send in minutes.", price:19, cat:"featured", icon:"📄" },
+      { id:7, name:"Complete Freelance Suite", desc:"Proposals, pricing, scope, invoicing and client tools in one package.", price:79, cat:"featured", icon:"💼" },
+      { id:8, name:"Humanity X Books 1 & 2", desc:"Off the Ground + Into the Stars. EPUB + PDF. Save $4.99.", price:14.99, cat:"featured", icon:"📚" },
+      { id:9, name:"Cork — Darts Scoreboard", desc:"Score for two sides. Pay once. No subscription.", price:25, cat:"apps", icon:"🎯" },
+      { id:10, name:"Focus & Habits Pack", desc:"Habit tracker, focus gate and more. Three products, one price.", price:19, cat:"bundles", icon:"⚡" },
+      { id:11, name:"AI Creator Bundle", desc:"Prompt packs, companion and audience growth toolkit.", price:79, cat:"bundles", icon:"🤖" },
+      { id:12, name:"Freelance Admin Stack", desc:"Invoicing, replies, scope protection and rate confidence.", price:35, cat:"bundles", icon:"📋" },
+      { id:13, name:"Null Harbor", desc:"A near-future thriller.", price:4.99, cat:"books", icon:"📖" },
+      { id:14, name:"He Came Home Without Her", desc:"A domestic thriller for a long weekend read.", price:4.99, cat:"books", icon:"📖" },
+      { id:15, name:"Humanity X: Into The Stars", desc:"Book 2. Hard-edged space opera about work, complicity and first contact.", price:9.99, cat:"books", icon:"🚀" },
+      { id:16, name:"Humanity X: Off the Ground", desc:"Book 1. Build a lunar city. Watch Earth and Mars go to war.", price:9.99, cat:"books", icon:"🌕" },
+      { id:17, name:"The Brave Little Beaver", desc:"A short story for children.", price:0, cat:"books", icon:"🦫" },
+      { id:18, name:"The Day Ethan Chose Kindness", desc:"A short story for children.", price:0, cat:"books", icon:"🌟" },
+      { id:19, name:"Grok Prompt Pack", desc:"Prompts for writing, planning and shipping work.", price:29, cat:"ai", icon:"✨" },
+      { id:20, name:"AI Audience Growth Toolkit", desc:"Playbook, workbook and prompt pack for growing an audience.", price:29, cat:"ai", icon:"📈" },
+      { id:21, name:"Invoice Desk", desc:"Clean, professional invoices for freelancers.", price:19, cat:"freelance", icon:"🧾" },
+      { id:22, name:"Scope Lock", desc:"Client brief that holds the scope and protects your time.", price:12, cat:"freelance", icon:"🔒" },
+      { id:23, name:"Reply Forge", desc:"Ready-to-send customer reply templates.", price:9, cat:"freelance", icon:"💬" },
+      { id:24, name:"Rate Wire", desc:"Figure hourly and day rates before you quote.", price:9, cat:"freelance", icon:"💰" },
+      { id:25, name:"Launch Ledger", desc:"Keep income in one clear ledger.", price:29, cat:"freelance", icon:"📊" },
+      { id:26, name:"Listing Copy Builder", desc:"Answer a few questions. Get a ready-to-paste product listing.", price:0, cat:"free", icon:"✍️" },
+      { id:27, name:"Launch Post Builder", desc:"Five questions → launch posts for X, Threads, email and community.", price:0, cat:"free", icon:"🚀" },
+      { id:28, name:"Maker Outreach Builder", desc:"Short, polite outreach to bloggers, podcasters and reviewers.", price:0, cat:"free", icon:"📨" },
+      { id:29, name:"Product Photo Shot List", desc:"Tick-off shot list for product photos that sell.", price:0, cat:"free", icon:"📷" },
+      { id:30, name:"Maker Weekly Planner", desc:"Simple weekly plan for small makers: make, sell, admin.", price:0, cat:"free", icon:"📅" },
+      { id:31, name:"Morning Routine Checklist", desc:"A calm start to the day. No account required.", price:0, cat:"free", icon:"☀️" },
+      { id:32, name:"Package Shipping Log", desc:"Track every package: carrier, tracking, postage, delivered.", price:0, cat:"free", icon:"📦" },
+    ];
+
+    const PER_PAGE = 9;
+    let activeCat = "all";
+    let activePrice = "all";
+    let searchQuery = "";
+    let currentPage = 1;
+
+    /* ========== HELPERS ========== */
+    function formatPrice(p) {
+      if (p === 0) return "Free";
+      return "$" + (p % 1 === 0 ? p : p.toFixed(2));
+    }
+
+    function filtered() {
+      return products.filter(p => {
+        const isFree = p.price === 0;
+        const matchCat = activeCat === "all" || p.cat === activeCat;
+        const matchPrice = activePrice === "all" || (activePrice === "free" ? isFree : !isFree);
+        const q = searchQuery;
+        const matchSearch = !q || p.name.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q);
+        return matchCat && matchPrice && matchSearch;
+      });
+    }
+
+    function cardHTML(p) {
+      const isFree = p.price === 0;
+      return `
+        <article class="card reveal" role="listitem" data-id="${p.id}">
+          ${p.tag ? `<span class="card-tag ${p.tag === "Live" ? "live" : ""}">${p.tag}</span>` : ""}
+          <div class="card-media">
+            <div class="card-media-inner">
+              <div class="card-icon">${p.icon}</div>
+              <div class="card-media-label">${isFree ? "Free forever" : "Pay once"}</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">${p.name}</h3>
+            <p class="card-desc">${p.desc}</p>
+            <div class="card-footer">
+              <span class="card-price ${isFree ? "free" : ""}">${formatPrice(p.price)}</span>
+              <span class="card-cta">${isFree ? "Get free" : "View"} <span aria-hidden="true">→</span></span>
+            </div>
+          </div>
+        </article>`;
+    }
+
+    /* ========== RENDER ========== */
+    function render() {
+      const list = filtered();
+      const total = list.length;
+      const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const start = (currentPage - 1) * PER_PAGE;
+      const pageItems = list.slice(start, start + PER_PAGE);
+
+      const grid = document.getElementById("product-grid");
+      const empty = document.getElementById("empty-state");
+      const countEl = document.getElementById("results-count");
+      const titleEl = document.getElementById("section-title");
+      const metaEl = document.getElementById("section-meta");
+
+      const catLabels = {
+        all: "All products", featured: "Featured", freelance: "Freelance",
+        ai: "AI tools", apps: "Apps", bundles: "Bundles", books: "Books & stories", free: "Free downloads"
+      };
+      titleEl.textContent = catLabels[activeCat] || "Products";
+      metaEl.textContent = total === 0 ? "" : `${total} item${total === 1 ? "" : "s"}`;
+
+      countEl.textContent = total === 0 ? "No results" : `Showing ${start + 1}–${Math.min(start + PER_PAGE, total)} of ${total}`;
+
+      if (total === 0) {
+        grid.innerHTML = "";
+        empty.hidden = false;
+      } else {
+        empty.hidden = true;
+        grid.innerHTML = pageItems.map(cardHTML).join("");
+        requestAnimationFrame(() => {
+          grid.querySelectorAll(".reveal").forEach((el, i) => {
+            setTimeout(() => el.classList.add("visible"), i * 40);
+          });
+        });
+      }
+
+      renderPagination(totalPages);
+    }
+
+    function renderPagination(totalPages) {
+      const nav = document.getElementById("pagination");
+      if (totalPages <= 1) {
+        nav.innerHTML = "";
+        return;
+      }
+      let html = `<div class="page-info">Page ${currentPage} of ${totalPages}</div>`;
+      html += `<button class="page-btn" data-page="prev" ${currentPage === 1 ? "disabled" : ""} aria-label="Previous page">←</button>`;
+
+      const window = 2;
+      let pages = [];
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - window && i <= currentPage + window)) {
+          pages.push(i);
+        } else if (pages[pages.length - 1] !== "…") {
+          pages.push("…");
+        }
+      }
+      pages.forEach(p => {
+        if (p === "…") {
+          html += `<span class="page-btn" style="border:none;cursor:default;opacity:0.5">…</span>`;
+        } else {
+          html += `<button class="page-btn ${p === currentPage ? "active" : ""}" data-page="${p}" aria-label="Page ${p}" ${p === currentPage ? 'aria-current="page"' : ""}>${p}</button>`;
+        }
+      });
+      html += `<button class="page-btn" data-page="next" ${currentPage === totalPages ? "disabled" : ""} aria-label="Next page">→</button>`;
+      nav.innerHTML = html;
+
+      nav.querySelectorAll(".page-btn[data-page]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const v = btn.dataset.page;
+          if (v === "prev") currentPage = Math.max(1, currentPage - 1);
+          else if (v === "next") currentPage = Math.min(totalPages, currentPage + 1);
+          else currentPage = parseInt(v, 10);
+          render();
+          document.getElementById("catalog").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    }
+
+    /* ========== EVENTS ========== */
+    document.querySelectorAll(".cat-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".cat-btn").forEach(b => {
+          b.classList.remove("active");
+          b.setAttribute("aria-selected", "false");
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-selected", "true");
+        activeCat = btn.dataset.cat;
+        currentPage = 1;
+        render();
+      });
+    });
+
+    document.querySelectorAll(".pill").forEach(pill => {
+      pill.addEventListener("click", () => {
+        document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
+        pill.classList.add("active");
+        activePrice = pill.dataset.price;
+        currentPage = 1;
+        render();
+      });
+    });
+
+    let searchTimer;
+    document.getElementById("search").addEventListener("input", e => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        currentPage = 1;
+        render();
+      }, 180);
+    });
+
+    /* Hide mobile bar when near footer or already in catalog */
+    const mobileBar = document.querySelector(".mobile-bar");
+    const catalog = document.getElementById("catalog");
+    const io = new IntersectionObserver(([entry]) => {
+      if (window.innerWidth > 639) return;
+      mobileBar.style.display = entry.isIntersecting ? "none" : "block";
+    }, { threshold: 0.15 });
+    io.observe(catalog);
+
+    /* Init */
+    render();
+  </script>
+</body>
+</html>

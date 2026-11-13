@@ -1,6 +1,272 @@
 {
-  "updated": "2026-11-12T18:49:34.190Z",
+  "updated": "2026-11-13T00:08:54.197Z",
   "articles": [
+    {
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/12/mississippi-scott-colom-ukraine-donald-trump",
+      "title": "Hegseth gives medal to guard who reprimanded him at Arlington national cemetery – US politics live",
+      "seendate": "20261112T235448Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/news/2026/nov/12/russell-brand-accused-of-misconduct-by-six-more-women-according-to-report",
+      "title": "Russell Brand accused of misconduct by six more women, according to report",
+      "seendate": "20261112T235104Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/sport/live/2026/nov/13/pat-cummins-press-conference-usman-khawaja-sandpapergate-australia-cricket-captain-statement-ntwnfb",
+      "title": "Pat Cummins press conference live updates: Australian cricket captain speaks about Usman Khawaja’s ‘sandpapergate’ claims",
+      "seendate": "20261112T234458Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/12/dc-shooting-logan-circle",
+      "title": "Police identify suspect and victim in Washington DC gym shooting that also injured four",
+      "seendate": "20261112T234342Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+      "title": "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
+      "seendate": "20261112T233405Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/russian-court-jails-rights-lawyer-for-12-years-on-treason-charge?traffic_source=rss",
+      "title": "Russian court jails rights lawyer for 12 years on treason charge",
+      "seendate": "20261112T231850Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/12/washington-dc-shooting-logan-circle-latest-updates",
+      "title": "Washington DC shooting: police identify victim and suspect – as it happened",
+      "seendate": "20261112T225405Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/12/donald-trump-jr-kalshi",
+      "title": "Donald Trump Jr exits as paid adviser for prediction market Kalshi",
+      "seendate": "20261112T223710Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/12/vladimir-putin-russia-target-foreign-troops-ukraine-elon-musk-starlink",
+      "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
+      "seendate": "20261112T222637Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/13/icac-chris-minns-nsw-undeclared-lobbying-bill-ntwnfb",
+      "title": "Icac’s dirt files expose NSW’s ‘guns for hire’ problem. But neither major party is serious about lobbying reform",
+      "seendate": "20261112T222126Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/12/protesters-arrested-chuck-schumer-office-dc",
+      "title": "Dozens of protesters arrested after staging sit-in at Chuck Schumer’s DC office",
+      "seendate": "20261112T221256Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/12/italy-fight-back-to-beat-france-3-1-and-move-top-of-nations-league-group?traffic_source=rss",
+      "title": "Italy fight back to beat France 3-1 and move top of Nations League group",
+      "seendate": "20261112T221232Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/12/angela-rayner-grants-planning-approval-for-asylum-centre-in-piddington-despite-local-opposition",
+      "title": "Angela Rayner grants planning approval for asylum centre in Piddington despite local opposition",
+      "seendate": "20261112T220920Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/politics/2026/nov/12/win-win-deal-with-eu-could-be-done-andy-burmham-says",
+      "title": "‘Win-win’ deal with EU could be done, Andy Burnham says",
+      "seendate": "20261112T220139Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ireland"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/nov/12/china-rules-out-hosting-cop33-climate-summit-in-2028",
+      "title": "China rules out hosting Cop33 climate summit in 2028",
+      "seendate": "20261112T220015Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+      "title": "Microsoft begins restoring services amid global outage affecting Outlook and Teams",
+      "seendate": "20261112T215147Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmy0enrkwkklo?at_medium=RSS&at_campaign=rss",
+      "title": "Search for British woman missing from Tui cruise in Atlantic called off",
+      "seendate": "20261112T212721Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/deadly-shooting-in-washington-dc?traffic_source=rss",
+      "title": "Deadly shooting in Washington DC",
+      "seendate": "20261112T211824Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/microsoft-outage-hits-tens-of-thousands-of-users?traffic_source=rss",
+      "title": "Microsoft outage hits tens of thousands of users",
+      "seendate": "20261112T210309Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+      "title": "US envoys meet Zelensky in Dublin after talks with Putin in Moscow",
+      "seendate": "20261112T210042Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Russia"
+    },
+    {
+      "url": "https://www.theguardian.com/sport/2026/nov/12/finland-bars-russian-athletes-ukraine",
+      "title": "Norway follows Finland in barring Russian athletes from entering country over Ukraine war",
+      "seendate": "20261112T210012Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/pope-leo-calls-for-church-to-make-amends-to-sex-abuse-victims?traffic_source=rss",
+      "title": "Pope Leo calls for Church to make ‘amends’ to sex abuse victims",
+      "seendate": "20261112T205953Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/12/woman-18-admits-murdering-girl-16-in-leeds",
+      "title": "Leeds woman, 18, admits knife murder of 16-year-old love rival",
+      "seendate": "20261112T205707Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/us-releases-report-on-12bn-from-venezuelan-oil-mineral-resources?traffic_source=rss",
+      "title": "US releases report on $12bn from Venezuelan oil, mineral resources",
+      "seendate": "20261112T204936Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/12/whats-at-stake-in-the-renewed-tensions-over-the-falkland-islands?traffic_source=rss",
+      "title": "What’s at stake in the renewed tensions over the Falkland Islands?",
+      "seendate": "20261112T202521Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Argentina"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/qatar-under-17-world-cup-is-on-despite-us-pull-out?traffic_source=rss",
+      "title": "Qatar Under-17 World Cup is on despite US pull out",
+      "seendate": "20261112T201547Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/regional-security-dominates-european-talks-in-dublin-amid-hybrid-attacks?traffic_source=rss",
+      "title": "Regional security dominates European talks in Dublin amid hybrid attacks",
+      "seendate": "20261112T201221Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Ireland"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/democrats-gather-in-denver-to-debate-partys-future-after-us-midterm-wins?traffic_source=rss",
+      "title": "Democrats gather in Denver to debate party’s future after US midterm wins",
+      "seendate": "20261112T201031Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
+      "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+      "seendate": "20261112T200916Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/palestinian-baby-dies-from-cold-in-gaza-amid-israeli-restrictions-on-aid?traffic_source=rss",
+      "title": "Palestinian baby dies from cold in Gaza amid Israeli restrictions on aid",
+      "seendate": "20261112T195626Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development?traffic_source=rss",
+      "title": "US nonprofits sue tech giants to halt AI development",
+      "seendate": "20261112T195502Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress?traffic_source=rss",
+      "title": "Why did Nvidia CEO Jensen Huang resign, and who is Colette Kress?",
+      "seendate": "20261112T194540Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/iranian-men-guilty-of-spying-on-british-journalists?traffic_source=rss",
+      "title": "Iranian men guilty of spying on British journalists",
+      "seendate": "20261112T193833Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/cmdx1r99kp9wo?at_medium=RSS&at_campaign=rss",
+      "title": "Jensen Huang has resigned, what's next for Nvidia?",
+      "seendate": "20261112T193337Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/12/senegals-wrestlers-turn-tradition-into-gold-at-dakar-youth-olympics?traffic_source=rss",
+      "title": "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics",
+      "seendate": "20261112T193225Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cr894w453e90o?at_medium=RSS&at_campaign=rss",
+      "title": "Suspected bomb hoax threats force fresh evacuations of Italian schools",
+      "seendate": "20261112T192302Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "Italy"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/12/two-men-found-guilty-over-iranian-attempts-to-eliminate-uk-based-journalists",
+      "title": "Two men found guilty of helping Iran try to ‘eliminate’ UK-based journalists",
+      "seendate": "20261112T191530Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/12/uk-mosque-rebukes-comissions-warning-following-palestine-comments?traffic_source=rss",
+      "title": "UK mosque rebukes comission’s ‘warning’ following Palestine comments",
+      "seendate": "20261112T185849Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
     {
       "url": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&at_campaign=rss",
       "title": "Hegseth awards medal to war memorial guard who reprimanded him and group",
@@ -9,277 +275,11 @@
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/12/mississippi-scott-colom-ukraine-donald-trump",
-      "title": "Hegseth gives medal to guard who reprimanded him at Arlington national cemetery – US politics live",
-      "seendate": "20261112T184452Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/tv-and-radio/2026/nov/12/uk-ministers-look-at-quick-ways-to-limit-ndas-after-walliams-allegations",
-      "title": "UK ministers look at quick ways to limit NDAs after Walliams allegations",
-      "seendate": "20261112T183813Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/12/washington-dc-shooting-logan-circle-latest-updates",
-      "title": "Washington DC shooting: suspect confirmed dead after one person is killed and four injured – latest updates",
-      "seendate": "20261112T183145Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest",
-      "title": "Nvidia’s Jensen Huang to testify to US Congress amid scandal, reports say, as CFO Colette Kress replaces him as interim CEO – follow live",
-      "seendate": "20261112T182945Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
-      "title": "US envoys head to meet Zelensky after talks with Putin in Moscow",
-      "seendate": "20261112T182859Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/12/thc-drinks-ban-illinois",
-      "title": "THC drink companies rush to sell inventory as Illinois ban takes effect",
-      "seendate": "20261112T182146Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/12/dc-shooting-logan-circle",
-      "title": "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead",
-      "seendate": "20261112T181256Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/al-jazeera-reports-from-gaza-hospital-attacked-by-israel?traffic_source=rss",
-      "title": "Al Jazeera reports from Gaza hospital attacked by Israel",
-      "seendate": "20261112T180302Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/suspect-turns-gun-on-himself-after-deadly-shooting-in-washington-dc?traffic_source=rss",
-      "title": "Suspect turns gun on himself after deadly shooting in Washington DC",
-      "seendate": "20261112T180232Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/sport/2026/nov/12/lewis-hamilton-gaza-visit-rafah-israel",
-      "title": "Lewis Hamilton says ‘Israel’s genocide in Gaza is appalling’ after Rafah visit",
-      "seendate": "20261112T180050Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/live/2026/nov/12/milburn-review-neets-young-people-welfare-work-latest-news-updates",
-      "title": "Sadiq Khan joins Labour figures urging PM not to water down electric vehicle targets – as it happened",
-      "seendate": "20261112T175842Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/music/2026/nov/12/duran-duran-drummer-roger-taylor-leaves-band-due-to-tinnitus",
-      "title": "Duran Duran drummer Roger Taylor leaves band due to tinnitus",
-      "seendate": "20261112T174444Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/12/vladimir-putin-russia-target-foreign-troops-ukraine-elon-musk-starlink",
-      "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
-      "seendate": "20261112T172651Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-steps-down-more-affair-details-revealed?traffic_source=rss",
-      "title": "Nvidia CEO Jensen Huang steps down, more affair details revealed",
-      "seendate": "20261112T172558Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/sport/2026/nov/12/finland-bars-russian-athletes-ukraine",
-      "title": "Finland bars Russian athletes from entering country over Ukraine war",
-      "seendate": "20261112T172351Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/features/2026/11/12/her-hands-are-as-cold-as-ice-gaza-families-struggle-to-keep-warm?traffic_source=rss",
-      "title": "‘Her hands are as cold as ice’: Gaza families struggle to keep warm",
-      "seendate": "20261112T171813Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/live/2026/nov/12/us-envoys-in-moscow-meeting-putin-abu-dhabi-trilateral-ukraine-ceasefire-talks-latest-news-updates",
-      "title": "New talks with Russia, Ukraine and European countries agreed, US says - as it happened",
-      "seendate": "20261112T171755Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Arab Emirates"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/nov/12/local-fund-pip-personal-independence-payments-young-disabled-people-milburn",
-      "title": "Local funds for some young people losing Pip under Milburn plans",
-      "seendate": "20261112T171434Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-      "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-      "seendate": "20261112T171148Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/jerusalem-daily-gazas-nasser-hospital-hit-by-israeli-air-strike?traffic_source=rss",
-      "title": "Jerusalem Daily: Gaza’s Nasser Hospital hit by Israeli air strike",
-      "seendate": "20261112T165510Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-      "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-      "seendate": "20261112T165412Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/12/italy-vs-france-live-uefa-nations-league?traffic_source=rss",
-      "title": "Italy vs France LIVE: UEFA Nations League",
-      "seendate": "20261112T164500Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/12/chk-prominent-israeli-settler-denied-entry-into-france?traffic_source=rss",
-      "title": "Prominent Israeli settler denied entry into France",
-      "seendate": "20261112T164449Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/nov/12/farage-was-guest-on-brand-podcast-after-sexual-assault-investigation-began",
-      "title": "Farage was guest on Brand podcast after sexual assault investigation began",
-      "seendate": "20261112T164333Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/nov/12/greta-thunberg-cop31-climate-summit",
-      "title": "The planet ‘is being killed’, Greta Thunberg tells Cop31 climate summit",
-      "seendate": "20261112T163947Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Turkey"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/12/uk-car-industry-rules-of-origin-brexit-ev-tariffs-eu",
-      "title": "UK car industry to press EU for two-year delay to Brexit EV tariffs",
-      "seendate": "20261112T163027Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/12/uae-says-14-killed-30-injured-in-fujairah-traffic-accident?traffic_source=rss",
-      "title": "UAE says 14 killed, 30 injured in Fujairah traffic accident",
-      "seendate": "20261112T162329Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/bds-claims-win-as-energy-giants-quit-israeli-gas-project-off-gaza?traffic_source=rss",
-      "title": "BDS claims win as energy giants quit Israeli gas project off Gaza",
-      "seendate": "20261112T160716Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/four-people-shot-in-washington-dc?traffic_source=rss",
-      "title": "Four people shot in Washington DC",
-      "seendate": "20261112T154207Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/manchester-united-sacked-manager-michael-carrick?traffic_source=rss",
-      "title": "Manchester United sacked manager Michael Carrick",
-      "seendate": "20261112T152143Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cx98757ymm6zo?at_medium=RSS&at_campaign=rss",
-      "title": "Millions of Ebola dollars missing with staff unpaid while virus spreads, charity says",
-      "seendate": "20261112T151820Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/12/uk-court-finds-two-iranian-men-guilty-of-spying-for-iran?traffic_source=rss",
-      "title": "UK court finds two Iranian men guilty of spying for Iran",
-      "seendate": "20261112T151548Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/12/spain-approves-housing-reforms-after-nationwide-strike-over-costs?traffic_source=rss",
-      "title": "Spain approves housing reforms after nationwide strike over costs",
-      "seendate": "20261112T150230Z",
+      "url": "https://www.aljazeera.com/news/2026/11/12/james-fergie-chambers-extradition-hearing?traffic_source=rss",
+      "title": "Pro-Palestine philanthropist faces US extradition hearing in Spain",
+      "seendate": "20261112T184140Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/12/trump-heads-to-china-amid-nvidia-scandal-will-he-get-tougher-on-beijing?traffic_source=rss",
-      "title": "Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing?",
-      "seendate": "20261112T144810Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/12/live-jensen-huang-resigns-as-nvidia-ceo-as-affairs-raise-security-concerns?traffic_source=rss",
-      "title": "LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns",
-      "seendate": "20261112T144454Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
-      "title": "Nvidia CEO Jensen Huang resigns",
-      "seendate": "20261112T144020Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/12/migrant-caravan-sets-out-from-southern-mexico-bound-for-us-after-midterms?traffic_source=rss",
-      "title": "Migrant caravan sets out from southern Mexico bound for US after midterms",
-      "seendate": "20261112T143842Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Mexico"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/12/no-war-no-peace-can-iran-break-the-deadlock-with-the-us?traffic_source=rss",
-      "title": "‘No war, no peace’: Can Iran break the deadlock with the US?",
-      "seendate": "20261112T142754Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/global/2026/nov/12/naza-how-to-watch-guardian-acclaimed-gaza-documentary",
-      "title": "NAZA: how and where to watch the Guardian’s acclaimed Gaza documentary",
-      "seendate": "20261112T142350Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Israel"
     }
   ]
 }

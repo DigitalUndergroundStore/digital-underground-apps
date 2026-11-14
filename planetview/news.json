@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-14T02:15:02.903Z",
+  "updated": "2026-11-14T09:20:42.256Z",
   "articles": [
     {
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
-      "title": "US flight outage live updates: FAA lifts nationwide ground stop as Trump officials holds press briefing",
-      "seendate": "20261114T015630Z",
+      "url": "https://www.theguardian.com/artanddesign/2026/nov/14/sir-kyffin-williams-artist-immersive-exhibition-national-library-wales-aberystwyth",
+      "title": "Immersive show brings Kyffin Williams’ rugged Welsh landscapes to life",
+      "seendate": "20261114T090039Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/hungary-seizes-18m-cash-tied-to-ex-orban-era-minister-in-probe?traffic_source=rss",
+      "title": "Hungary seizes $18m cash tied to ex-Orban-era minister in probe",
+      "seendate": "20261114T083907Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/14/warner-cricket-australia-ball-tampering-sandpapergate-khawaja-cummins?traffic_source=rss",
+      "title": "Warner accuses Cricket Australia of ‘cover-up’ in ball-tampering scandal",
+      "seendate": "20261114T081014Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "South Africa"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/14/nba-cup-basketball-pacers-knicks-spurs-warriors?traffic_source=rss",
+      "title": "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
+      "seendate": "20261114T080123Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/science/2026/nov/14/children-iengland-prescribed-weight-loss-jabs",
+      "title": "Hundreds of children in England prescribed weight-loss jabs, figures show",
+      "seendate": "20261114T080039Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/money/2026/nov/14/u2-tickets-stubhub-bot-culture-secretary-resale",
+      "title": "Tout offers £1m of U2 tickets on StubHub, raising questions about ‘bot’ clampdown",
+      "seendate": "20261114T080039Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february?traffic_source=rss",
+      "title": "UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran",
+      "seendate": "20261114T074636Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/missing-australian-teenager-reunites-with-his-mother?traffic_source=rss",
+      "title": "Missing Australian teenager reunites with his mother",
+      "seendate": "20261114T074446Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+      "title": "What we know about the ground stop and what to do if you're affected",
+      "seendate": "20261114T074211Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/14/reijnders-hattrick-netherlands-germany-uefa-nations-league-football?traffic_source=rss",
+      "title": "Reijnders’ hat-trick fires Dutch to 7-0 rout of Greece, Germany beat Serbia",
+      "seendate": "20261114T071920Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Germany"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/protesters-heckle-hakeem-jeffries-at-democratic-conference?traffic_source=rss",
+      "title": "Protesters heckle Hakeem Jeffries at Democratic conference",
+      "seendate": "20261114T071853Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/travel/2026/nov/14/eurotunnel-drive-in-fingerprint-trial-folkestone-calais-border",
+      "title": "UK-EU breakthrough will allow airport-style checks at Eurotunnel to avoid border ‘chaos’",
+      "seendate": "20261114T070038Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/nov/14/bristol-first-uk-wetland-city-flood",
+      "title": "Bristol aims to become UK’s first ‘wetland city’ and reduce flood risk",
+      "seendate": "20261114T070037Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/opinions/2026/11/14/the-ancs-implosion-was-decades-in-the-making?traffic_source=rss",
+      "title": "The ANC’s implosion was decades in the making",
+      "seendate": "20261114T065240Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/economy/2026/11/14/southeast-asian-leaders-to-meet-as-trump-visit-highlights-trade-disruption?traffic_source=rss",
+      "title": "Southeast Asian leaders to meet as Trump visit highlights trade disruption",
+      "seendate": "20261114T064814Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
+      "title": "Microsoft says services fully restored after day-long global outage",
+      "seendate": "20261114T064227Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/opinions/2026/11/14/ukraine-is-running-out-of-options-and-russia-knows-it?traffic_source=rss",
+      "title": "Ukraine is running out of options, and Russia knows it",
+      "seendate": "20261114T063909Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Arab Emirates"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/14/mohamed-salah-egypt-goals-record-africa-cup-of-nations-afcon-2027-qualifiers?traffic_source=rss",
+      "title": "Salah breaks Egypt scoring record, Tunisia lose to Libya in AFCON qualifier",
+      "seendate": "20261114T063357Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Egypt"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/14/philippine-court-orders-arrest-of-jailed-us-wanted-celebrity-preacher?traffic_source=rss",
+      "title": "Philippine court orders arrest of jailed, US-wanted celebrity preacher",
+      "seendate": "20261114T062443Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Philippines"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/14/microsoft-deeply-sorry-for-global-disruption-that-could-have-billion-dollar-impact-on-australia",
+      "title": "Microsoft ‘deeply sorry’ for global outage that could have billion-dollar impact on Australia",
+      "seendate": "20261114T061904Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/14/siege-fuels-disease-fears-in-yemens-besieged-taiz?traffic_source=rss",
+      "title": "Siege fuels disease fears in Yemen’s Taiz",
+      "seendate": "20261114T061727Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/14/could-one-daily-pill-narrow-the-diabetes-treatment-gap-in-the-global-south?traffic_source=rss",
+      "title": "Could one daily pill narrow the diabetes treatment gap in the Global South?",
+      "seendate": "20261114T061409Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/14/uk-tells-blind-nigerian-pensioner-to-go-home-to-india",
+      "title": "UK tells blind Nigerian pensioner to go to India for medical treatment",
+      "seendate": "20261114T060037Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/14/jesus-de-miguel-death-goalkeeper-owono-12-match-ban-collision-tenerife-andorra?traffic_source=rss",
+      "title": "Goalkeeper Owono handed 12-match ban after De Miguel death",
+      "seendate": "20261114T055949Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Spain"
+    },
+    {
+      "url": "https://www.theguardian.com/world/live/2026/nov/13/us-flight-outage-live-updates-faa-lifts-nationwide-ground-stop-as-airport-chaos-continues",
+      "title": "Airport chaos continues after US ground stop lifted – as it happened",
+      "seendate": "20261114T055553Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+      "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+      "seendate": "20261114T055231Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.aljazeera.com/features/2026/11/14/paranoid-or-practical-britains-be-ready-citizen?traffic_source=rss",
+      "title": "Paranoid or practical? Britain’s ‘Be Ready’ citizen campaign",
+      "seendate": "20261114T055142Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-disrupts-nba-nhl-and-college-football-weekend-travel?traffic_source=rss",
+      "title": "US air travel thrown into chaos after nationwide ground stop halts flights",
+      "seendate": "20261114T054241Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/14/university-hungary-orban-soros-ceu",
+      "title": "University hounded out of Hungary by Orbán reaches out to new government",
+      "seendate": "20261114T050035Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
       "url": "https://www.theguardian.com/australia-news/2026/nov/14/us-bound-flights-out-of-australia-grounded-as-telecommunications-outage-affects-american-travel",
-      "title": "US-bound flights out of Australia grounded as telecommunications outage affects American travel",
-      "seendate": "20261114T015425Z",
+      "title": "US-bound flights out of Australia delayed after telecommunications outage grounded American planes",
+      "seendate": "20261114T045606Z",
       "domain": "theguardian.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_tanker-collision-in-new-orleans-131126?traffic_source=rss",
-      "title": "Tanker collision leaves riverboat passengers clinging to railings",
-      "seendate": "20261114T013708Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans",
-      "title": "All passengers and crew accounted for after New Orleans boat crash in ‘miracle on the Mississippi’",
-      "seendate": "20261114T012911Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/former-faa-official-says-nobody-really-knows-what-is-going?traffic_source=rss",
-      "title": "Former FAA official says ‘nobody really knows what is going on’",
-      "seendate": "20261114T012846Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/13/faa-nationwide-ground-stop-flights",
-      "title": "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-      "seendate": "20261114T010112Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/14/one-nation-nsw-candidate-stuart-bonds-ntwnfb",
-      "title": "Stuart Bonds made ‘racist’ and ‘divisive’ comments. But One Nation is showing no sign of dumping the NSW candidate",
-      "seendate": "20261114T010030Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/science/2026/nov/13/spacex-starship-megarocket-blasts-off-earth-orbit",
-      "title": "SpaceX Starship megarocket blasts off before expected return for reuse",
-      "seendate": "20261114T005352Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/14/microsoft-deeply-sorry-for-global-disruption-that-could-have-billion-dollar-impact-on-australia",
-      "title": "Microsoft ‘deeply sorry’ for global disruption that could have billion-dollar impact on Australia",
-      "seendate": "20261114T005248Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/14/uk-police-open-sex-offence-probe-into-comedian-and-author-david-walliams?traffic_source=rss",
-      "title": "UK police open sex offence probe into comedian and author David Walliams",
-      "seendate": "20261114T002207Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/microsoft-services-begin-recovering-after-global-outage?traffic_source=rss",
-      "title": "Microsoft services begin recovering after global outage",
-      "seendate": "20261114T001759Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/features/2026/11/14/wakhan-corridor-afghanistan-china-taliban?traffic_source=rss",
-      "title": "Afghanistan’s new road to China ends at a closed border",
-      "seendate": "20261114T000643Z",
+      "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
+      "title": "Trump, Xi and Putin to hold first three-way summit in China",
+      "seendate": "20261114T045558Z",
       "domain": "aljazeera.com",
       "sourcecountry": "China"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=RSS&at_campaign=rss",
-      "title": "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
-      "seendate": "20261114T000356Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
-      "title": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
-      "seendate": "20261114T000352Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
-      "title": "Setback for SpaceX Starship rocket's double-catch test",
-      "seendate": "20261114T000101Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/14/iran-war-live-fighting-grips-yemen-as-qatar-turkiye-sign-defence-deal?traffic_source=rss",
-      "title": "Iran war live: Fighting grips Yemen as Qatar, Turkiye sign defence deal",
-      "seendate": "20261114T000025Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/13/faa-ground-stop-flights-explained",
-      "title": "What to know about the rare nationwide ground stop issued by the FAA",
-      "seendate": "20261113T235608Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/faa-grounds-all-fights-across-the-us-over-telecommunication?traffic_source=rss",
-      "title": "FAA grounds all fights across the US over ‘telecommunication outage’",
-      "seendate": "20261113T234522Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
-      "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
-      "seendate": "20261113T234045Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=RSS&at_campaign=rss",
-      "title": "After a summer win, India's Gen Z protesters face a winter of uncertainty",
-      "seendate": "20261113T231151Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ck1exevgql4qo?at_medium=RSS&at_campaign=rss",
-      "title": "How the Jensen Huang scandal created a headache for business-friendly Singapore",
-      "seendate": "20261113T230031Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Singapore"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/13/rescue-efforts-under-way-after-tanker-strikes-river-cruise-boat-in-us?traffic_source=rss",
-      "title": "32 passengers taken to hospital after tanker hits river cruise boat in US",
-      "seendate": "20261113T224716Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/13/eisenkot-accuses-netanyahu-of-racist-campaign-against-israels-arab-minority",
-      "title": "Eisenkot accuses Netanyahu of ‘racist’ campaign against Israel’s Arab minority",
-      "seendate": "20261113T223638Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/13/us-air-force-responds-to-suspected-drone-activity-at-raf-lakenheath",
-      "title": "US Air Force responds to suspected drone activity at RAF Lakenheath",
-      "seendate": "20261113T223105Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/13/hungary-seizes-195m-in-cash-found-buried-in-forests-amid-graft-inquiry",
-      "title": "Hungary seizes $19.5m in cash found buried in forests amid graft inquiry",
-      "seendate": "20261113T221254Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/groundling-live?traffic_source=rss",
-      "title": "LIVE: FAA reopens airspace after ground stop blamed on ‘outdated equipment’",
-      "seendate": "20261113T220207Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/society/2026/nov/13/rip-out-clutter-to-retail-revive-high-streets-thinktank",
-      "title": "Rip out ugly clutter to help revive UK high streets, says thinktank",
-      "seendate": "20261113T213443Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
-      "title": "FAA grounds US flights nationwide after ‘communication issue’",
-      "seendate": "20261113T213208Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
-      "title": "Watch: Cruise ship seen sinking after collision with cargo ship in New Orleans",
-      "seendate": "20261113T211524Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
-      "title": "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
-      "seendate": "20261113T211422Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/pope-leo-cheered-on-return-to-peru-city-where-he-served-as-bishop?traffic_source=rss",
-      "title": "Pope Leo cheered on return to Peru city where he served as bishop",
-      "seendate": "20261113T205231Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/society/2026/nov/13/probation-officers-in-england-and-wales-vote-for-strike-action-over-pay-and-workloads",
-      "title": "Probation officers in England and Wales vote to strike over pay and workloads",
-      "seendate": "20261113T205101Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/qatar-and-turkiye-send-message-of-deterrence-with-new-defence-pact?traffic_source=rss",
-      "title": "Qatar and Turkiye send message of deterrence with new defence pact",
-      "seendate": "20261113T204802Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/13/russia-ukraine-talks-kaja-kallas-eu-foreign-policy-dublin-summit",
-      "title": "Russia is ‘setting traps’ in Ukraine talks, EU foreign policy chief warns",
-      "seendate": "20261113T203825Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/australia-captain-cummins-denies-involvement-in?traffic_source=rss",
-      "title": "Australia captain Cummins denies involvement in ‘Sandpapergate’",
-      "seendate": "20261113T203242Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/13/pope-thanks-crowds-on-emotional-return-to-second-home-in-perus-chiclayo?traffic_source=rss",
-      "title": "Pope thanks crowds on emotional return to ‘second home’ in Peru’s Chiclayo",
-      "seendate": "20261113T202820Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/13/paraguays-ex-president-pena-faces-new-charge-over-ueno-bank-collapse?traffic_source=rss",
-      "title": "Paraguay’s ex-president Pena faces new charge over Ueno bank collapse",
-      "seendate": "20261113T201809Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/13/microsoft-says-services-still-returning-amid-widespread-outage?traffic_source=rss",
-      "title": "Microsoft says services still returning amid widespread outage",
-      "seendate": "20261113T201613Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/13/nigeria-ends-21-day-ebola-contact-monitoring-with-no-secondary-transmission?traffic_source=rss",
-      "title": "Nigeria ends 21-day Ebola contact monitoring with no secondary transmission",
-      "seendate": "20261113T201234Z",
+      "url": "https://www.aljazeera.com/news/2026/11/14/lagos-art-week-confronts-history-identity-and-belonging?traffic_source=rss",
+      "title": "Lagos Art Week confronts history, identity and belonging",
+      "seendate": "20261114T044601Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Nigeria"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
-      "seendate": "20261113T195357Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "China"
+      "url": "https://www.aljazeera.com/news/2026/11/14/german-spies-granted-sweeping-new-powers?traffic_source=rss",
+      "title": "German spies granted sweeping new powers",
+      "seendate": "20261114T044111Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Germany"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_un-israeli-policies-worsened-gaza-storms-impact-131126?traffic_source=rss",
+      "title": "UN says Israeli policies worsened deadly impact of Gaza winter storm",
+      "seendate": "20261114T041215Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/14/icc-stops-probe-into-alleged-crimes-by-us-troops-in-afghanistan?traffic_source=rss",
+      "title": "ICC stops probe into alleged crimes by US troops in Afghanistan",
+      "seendate": "20261114T040349Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next?traffic_source=rss",
+      "title": "FAA ground stop lifted: Why were US flights grounded, and what’s next?",
+      "seendate": "20261114T033207Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
+      "title": "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it happened",
+      "seendate": "20261114T031135Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans",
+      "title": "All passengers and crew accounted for after New Orleans boat crash in ‘miracle on the Mississippi’",
+      "seendate": "20261114T031128Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/13/us-airports-flight-stoppage",
+      "title": "‘It’s frustrating’: chaos at US airports as stoppage grinds travel plans to a halt",
+      "seendate": "20261114T024959Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported?traffic_source=rss",
+      "title": "US loses measles-free status as two more deaths reported",
+      "seendate": "20261114T023450Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
     }
   ]
 }

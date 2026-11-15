@@ -1,6 +1,202 @@
 {
-  "updated": "2026-11-15T00:58:04.919Z",
+  "updated": "2026-11-15T07:45:51.668Z",
   "articles": [
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/15/japan-stun-brazil-3-2-in-stoppage-time-as-ancelotti-raphinha-sent-off?traffic_source=rss",
+      "title": "Japan stun Brazil 3-2 in stoppage time as Ancelotti, Raphinha sent off",
+      "seendate": "20261115T073021Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Japan"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/15/asean-summit-whos-attending-and-whats-at-stake?traffic_source=rss",
+      "title": "ASEAN summit: Who’s attending and what’s at stake?",
+      "seendate": "20261115T071124Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+      "title": "Copper wire upgrade behind US flight suspension, transport secretary says",
+      "seendate": "20261115T071031Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/opinions/2026/11/15/israel-making-the-holy-land-burn?traffic_source=rss",
+      "title": "Israel: Making the Holy Land burn",
+      "seendate": "20261115T064914Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/opinions/2026/11/15/the-french-republics-forgotten-promise-of-equality?traffic_source=rss",
+      "title": "The French Republic’s forgotten promise of equality",
+      "seendate": "20261115T064427Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/15/anthony-albanese-welcomes-trump-xi-putin-summit-even-as-european-leaders-express-reservations",
+      "title": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
+      "seendate": "20261115T062232Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/15/secret-votes-and-vetoes-how-will-the-next-un-chief-be-picked?traffic_source=rss",
+      "title": "Secret votes and vetoes: How will the next UN chief be picked?",
+      "seendate": "20261115T061100Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/law/2026/nov/15/gymshark-trademark-battle-the-conditioning-club-gloucestershire",
+      "title": "Gymshark in trademark battle that threatens future of small fitness business",
+      "seendate": "20261115T060007Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/15/myanmar-rohingya-genocide-icj",
+      "title": "World’s top court to rule if Myanmar committed genocide against Rohingya",
+      "seendate": "20261115T060005Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/15/planned-asylum-seeker-detention-centre-next-to-oxfordshire-sewage-works-criticised",
+      "title": "Planned asylum seeker detention centre next to Oxfordshire sewage works criticised",
+      "seendate": "20261115T060005Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/15/francophone-summit-opens-in-cambodia-amid-rwanda-dr-congo-rift?traffic_source=rss",
+      "title": "Francophone summit opens in Cambodia amid Rwanda-DR Congo rift",
+      "seendate": "20261115T050502Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/15/new-york-democratic-socialists-urge-ocasio-cortez-to-run-for-us-president?traffic_source=rss",
+      "title": "New York Democratic Socialists urge Ocasio-Cortez to run for US president",
+      "seendate": "20261115T044457Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/video-shows-moment-of-brooklyn-building-collapse-from-inside?traffic_source=rss",
+      "title": "Video shows moment of Brooklyn building collapse from inside",
+      "seendate": "20261115T043155Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/15/zimbabwes-hiv-gains-face-a-test-among-young-people?traffic_source=rss",
+      "title": "Zimbabwe’s HIV gains face a test among young people",
+      "seendate": "20261115T041300Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean",
+      "title": "World leaders head to Asia for back-to-back diplomatic summits",
+      "seendate": "20261115T040002Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/15/anthony-albanese-apologises-for-hot-mic-gaffe-after-coalition-criticises-locker-room-talk",
+      "title": "Anthony Albanese apologises for hot-mic gaffe after Coalition criticises ‘locker-room talk’",
+      "seendate": "20261115T034921Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/monkey-attacks-woman-inside-residential-complex-in-india?traffic_source=rss",
+      "title": "Monkey attacks woman inside residential complex in India",
+      "seendate": "20261115T033939Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/aje-onl-nf_italian-artist-rips-madonna-painting-to-reveal-gaza-141126?traffic_source=rss",
+      "title": "Italian artist reimagines Madonna paintings to expose Gaza’s pain",
+      "seendate": "20261115T033029Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Italy"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o?at_medium=RSS&at_campaign=rss",
+      "title": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
+      "seendate": "20261115T032104Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/15/saudi-led-coalition-intercepts-two-missiles-two-drones-in-riyadh?traffic_source=rss",
+      "title": "Saudi-led coalition intercepts suspected Houthi missiles and drones",
+      "seendate": "20261115T025906Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss",
+      "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
+      "seendate": "20261115T024945Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/15/katherine-deves-among-four-nsw-upper-house-candidates-revealed-by-one-nation-ntwnfb",
+      "title": "Katherine Deves among four NSW upper house candidates revealed by One Nation",
+      "seendate": "20261115T021320Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/15/iraq-pm-sacks-nine-officials-over-oil-smuggling-in-pro-iran-stronghold?traffic_source=rss",
+      "title": "Iraq PM sacks nine officials over oil smuggling in pro-Iran stronghold",
+      "seendate": "20261115T015455Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/15/australia-weather-east-coast-thunderstorms-giant-hail-and-powerful-winds-ettalong-beach-swimmer-lightning-strike",
+      "title": "Thunderstorms, giant hail and powerful winds forecast for NSW as wild weather hits east coast",
+      "seendate": "20261115T015237Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/netanyahu-sends-plea-to-eisenkot-for-unity-government?traffic_source=rss",
+      "title": "Netanyahu sends plea to Eisenkot for unity government",
+      "seendate": "20261115T013311Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/thailands-elderly-kept-in-cages?traffic_source=rss",
+      "title": "Thailand’s elderly kept in cages",
+      "seendate": "20261115T013208Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Thailand"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/aje-onl-nf_spacexs-starship-nails-a-smooth-return-141126?traffic_source=rss",
+      "title": "SpaceX’s Starship nails a smooth return with historic catch",
+      "seendate": "20261115T012201Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/15/israeli-air-strike-kills-senior-hamas-commander-in-gaza?traffic_source=rss",
+      "title": "Israeli air strike kills senior Hamas commander in Gaza",
+      "seendate": "20261115T010042Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
     {
       "url": "https://www.aljazeera.com/news/2026/11/15/hundreds-of-men-march-in-switzerland-to-protest-violence-against-women?traffic_source=rss",
       "title": "Hundreds of men march in Switzerland to protest violence against women",
@@ -38,10 +234,10 @@
     },
     {
       "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status?traffic_source=rss",
-      "title": "Iran war live: Israel vows Gaza ‘offensive policy’ despite caretaker status",
+      "title": "Iran war live: Saudi-led coalition strikes down 3 drones",
       "seendate": "20261115T000008Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
+      "sourcecountry": "Qatar"
     },
     {
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/portugal-immortalises-ronaldo-with-a-new-number-7?traffic_source=rss",
@@ -84,202 +280,6 @@
       "seendate": "20261114T224312Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-      "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-      "seendate": "20261114T223725Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/science/2026/nov/14/spacex-starship-double-catch",
-      "title": "SpaceX’s Starship returns to launch pad from orbit in victory for company",
-      "seendate": "20261114T223506Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/palestinian-stories-set-for-major-presence-at-2027-oscars?traffic_source=rss",
-      "title": "Palestinian stories set for major presence at 2027 Oscars",
-      "seendate": "20261114T222847Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Switzerland"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=RSS&at_campaign=rss",
-      "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
-      "seendate": "20261114T220940Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/11/14/ronaldo-less-portugal-thrashed-4-1-by-denmark-in-the-nations-league?traffic_source=rss",
-      "title": "Ronaldo-less Portugal thrashed 4-1 by Denmark in the Nations League",
-      "seendate": "20261114T220045Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/us-flights-resume-after-ageing-technology-blamed-for-outage?traffic_source=rss",
-      "title": "US flights resume after ageing technology blamed for outage",
-      "seendate": "20261114T213619Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/14/us-envoy-kushner-says-he-aims-to-broker-europe-russia-talks-on-ukraine?traffic_source=rss",
-      "title": "US envoy Kushner says he aims to broker Europe-Russia talks on Ukraine",
-      "seendate": "20261114T211026Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
-      "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
-      "seendate": "20261114T202306Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/14/peoria-illinois-evacuation-bomb",
-      "title": "Evacuation zone lifted after bomb found at Illinois ethanol plant",
-      "seendate": "20261114T201427Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/14-11-sv-assam-muslim-families-evicted-demolition-drive?traffic_source=rss",
-      "title": "India’s Assam state demolishes homes of 132 Muslim families",
-      "seendate": "20261114T201410Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/adlern-can_non-westren_cost_home_denmark-141126?traffic_source=rss",
-      "title": "Can being ‘non-Western’ cost you your home in Denmark?",
-      "seendate": "20261114T195249Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/deadly-car-bomb-blast-kills-two-near-syrias-capital?traffic_source=rss",
-      "title": "Deadly car bomb blast kills two near Syria’s capital",
-      "seendate": "20261114T194636Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/14/more-than-100000-rally-across-france-in-new-yellow-vest-protests?traffic_source=rss",
-      "title": "More than 100,000 rally across France in new Yellow Vest protests",
-      "seendate": "20261114T194624Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/14/tens-of-thousands-march-in-latest-portugal-housing-protests?traffic_source=rss",
-      "title": "Tens of thousands march in latest Portugal housing protests",
-      "seendate": "20261114T192755Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/14/pope-leo-urges-end-to-violence-in-peru-during-visit-to-remote-andes-town?traffic_source=rss",
-      "title": "Pope Leo urges end to violence in Peru during visit to remote Andes town",
-      "seendate": "20261114T192011Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
-      "title": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
-      "seendate": "20261114T191433Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
-      "title": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
-      "seendate": "20261114T191225Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/tv-and-radio/2026/nov/14/philippines-carmelle-wins-first-eurovision-contest-in-asia",
-      "title": "Philippines’ Carmelle wins first Eurovision contest in Asia",
-      "seendate": "20261114T190132Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Thailand"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/15/victoria-premier-ben-caroll-youth-crime-offenders-plan-ntwnfb",
-      "title": "Even Labor MPs are at a loss over the Victorian premier’s ‘tough love’ plan for youth offenders",
-      "seendate": "20261114T190053Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
-      "title": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
-      "seendate": "20261114T190052Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/us-blames-outdated-technology-for-nationwide-flight-disruption?traffic_source=rss",
-      "title": "US blames outdated technology for nationwide flight disruption",
-      "seendate": "20261114T183240Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
-      "title": "Italy fines Meta €805m over accessing users' photos",
-      "seendate": "20261114T182806Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Italy"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
-      "title": "Philippines wins first Eurovision Song Contest Asia",
-      "seendate": "20261114T181758Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Philippines"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/14/us-blames-system-upgrade-for-longest-nationwide-faa-ground-stop-since-9?traffic_source=rss",
-      "title": "US blames system upgrade for longest nationwide FAA ground stop since 9/11",
-      "seendate": "20261114T180253Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmwy05gg75lvo?at_medium=RSS&at_campaign=rss",
-      "title": "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'",
-      "seendate": "20261114T180010Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/14/family-of-watford-woman-set-alight-desperate-for-answers-after-attack",
-      "title": "Family of Watford woman set alight ‘desperate for answers’ after attack",
-      "seendate": "20261114T175912Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/rising-costs-and-arrests-fuel-protests-in-central-african-republic?traffic_source=rss",
-      "title": "Rising costs and arrests fuel protests in Central African Republic",
-      "seendate": "20261114T175028Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/14/faa-ground-stop-flights-resume-airport-chaos",
-      "title": "US officials say flight stoppage stemmed from ‘routine maintenance’ as travel chaos continues",
-      "seendate": "20261114T171118Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
     }
   ]
 }

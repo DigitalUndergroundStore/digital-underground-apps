@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-16T17:22:32.249Z",
+  "updated": "2026-11-17T01:01:27.554Z",
   "articles": [
-    {
-      "url": "https://www.theguardian.com/politics/live/2026/nov/16/ed-miliband-russell-brand-andy-burnham-brexit-eu-milburn-review-young-people-employment-uk-politics-latest-news",
-      "title": "Brand statement from prison claiming his innocence ‘appalling’ and could breach rules, says No 10 – UK politics live",
-      "seendate": "20261116T171121Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/trump-denies-responsibility-for-faa-nationwide-ground-stop?traffic_source=rss",
-      "title": "Trump denies responsibility for FAA nationwide ground stop",
-      "seendate": "20261116T170810Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
-      "title": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
-      "seendate": "20261116T170755Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/16/lindsay-clancy-retrial-march",
-      "title": "Judge sets Lindsay Clancy retrial for March in killings of her three children",
-      "seendate": "20261116T170754Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
     {
       "url": "https://www.theguardian.com/us-news/live/2026/nov/16/donald-trump-asia-visit-democrats-republicans-elizabeth-warren-faa-air-disruption-latest-news-updates",
       "title": "Trump defends commerce secretary Lutnick for allegedly slow-walking Nvidia chip export restrictions – live",
-      "seendate": "20261116T170430Z",
+      "seendate": "20261117T003815Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/16/iran-braces-for-natural-gas-shortages-during-winter-energy-imbalance?traffic_source=rss",
-      "title": "Iran braces for natural gas shortages during winter energy imbalance",
-      "seendate": "20261116T165846Z",
+      "url": "https://www.aljazeera.com/news/2026/11/17/uk-seeks-closer-ties-with-eu-after-brexit-fail?traffic_source=rss",
+      "title": "UK seeks closer ties with EU after Brexit fail",
+      "seendate": "20261117T003021Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
+      "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/israeli-forces-demolish-the-homes-of-two-palestinian-prisoners?traffic_source=rss",
-      "title": "Israeli forces demolish the homes of two Palestinian prisoners",
-      "seendate": "20261116T165654Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/jerusalem-daily-eisenkot-wants-netanyahu-out?traffic_source=rss",
-      "title": "Jerusalem Daily: Eisenkot wants Netanyahu out",
-      "seendate": "20261116T165646Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.theguardian.com/environment/2026/nov/16/cop31-draft-text-draw-out-parties-find-agreement-president-talks-says",
-      "title": "Cop31 draft text is attempt to ‘draw out parties’ to find agreement, president of talks says",
-      "seendate": "20261116T165442Z",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/17/labor-backpacker-policy-backflip-work-regional-australia-holiday-visas",
+      "title": "Labor policy backflip will allow more backpackers to work in regional Australia",
+      "seendate": "20261117T002729Z",
       "domain": "theguardian.com",
       "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/16/trump-backs-calls-for-reinstatement-of-jensen-huang-as-nvidia-ceo",
-      "title": "Trump backs calls for reinstatement of Jensen Huang as Nvidia CEO",
-      "seendate": "20261116T164847Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election?traffic_source=rss",
-      "title": "UEFA backs France’s Philippe Diallo to challenge Infantino in FIFA election",
-      "seendate": "20261116T164605Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
-      "title": "Five EU countries announce migrant deportation centre in Rwanda",
-      "seendate": "20261116T162724Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Germany"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
-      "title": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
-      "seendate": "20261116T162140Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Germany"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/16/datacenter-emissions-study",
-      "title": "Surge of US datacenters adds equivalent of Denmark’s annual emissions, study finds",
-      "seendate": "20261116T160047Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/oil-tankers-hit-sea-mines-in-the-strait-of-hormuz?traffic_source=rss",
-      "title": "Oil tankers hit sea mines in the Strait of Hormuz",
-      "seendate": "20261116T153749Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/students-protest-as-air-pollution-chokes-new-delhi?traffic_source=rss",
-      "title": "Students protest as air pollution chokes New Delhi",
-      "seendate": "20261116T152707Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "India"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/16/at-least-17-killed-in-two-south-africa-mass-shootings?traffic_source=rss",
-      "title": "At least 17 killed in two South Africa mass shootings",
-      "seendate": "20261116T152639Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "South Africa"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/16/two-charged-man-run-over-by-van-midlands",
-      "title": "Two charged after man run over by van during flags incident in Birmingham",
-      "seendate": "20261116T150135Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/16/why-starshield-limits-are-hurting-ukraine-against-jet-powered-drones?traffic_source=rss",
-      "title": "Why Starshield limits are hurting Ukraine against jet-powered drones",
-      "seendate": "20261116T145830Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o?at_medium=RSS&at_campaign=rss",
-      "title": "Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war",
-      "seendate": "20261116T145812Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/nov/16/nypd-strategic-response-group-mamdani",
-      "title": "Mamdani disbands controversial NYPD unit accused of using excessive force",
-      "seendate": "20261116T145726Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq9vwkggpx73o?at_medium=RSS&at_campaign=rss",
-      "title": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-      "seendate": "20261116T144855Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/11/16/infantino-made-things-worse-at-fifa-than-blatter-says-jurgen-klopp?traffic_source=rss",
-      "title": "Infantino made things worse at FIFA than Blatter, says Jurgen Klopp",
-      "seendate": "20261116T143623Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Germany"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/11/16/belgiums-romelu-lukaku-retires-from-international-football?traffic_source=rss",
-      "title": "Belgium’s Romelu Lukaku retires from international football",
-      "seendate": "20261116T143500Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Belgium"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/16/xi-jinping-donald-trump-vladimir-putin-world-peace-trilateral-says-china",
-      "title": "Xi, Trump and Putin to discuss ‘world peace’ at trilateral, says China",
-      "seendate": "20261116T142955Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/the-listening-post/2026/11/16/russell-brand-and-the-media-that-made-him?traffic_source=rss",
-      "title": "Russell Brand and the media that made him",
-      "seendate": "20261116T142525Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cqp83nk673reo?at_medium=RSS&at_campaign=rss",
-      "title": "Estonia to close Russia border crossings after attempted drone factory arson attack",
-      "seendate": "20261116T142236Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/features/2026/11/16/my-arms-are-empty-gaza-mothers-brace-for-another-winter-of-cold-and-fear?traffic_source=rss",
-      "title": "‘My arms are empty’: Tragedy strikes Gaza family after baby dies from cold",
-      "seendate": "20261116T142043Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
     },
     {
       "url": "https://www.theguardian.com/australia-news/2026/nov/17/proposed-nsw-laws-to-allow-coalmine-to-increase-production-pose-serious-corruption-risk",
       "title": "Proposed NSW laws to allow coalmine to increase production pose ‘serious corruption risk’",
-      "seendate": "20261116T140021Z",
+      "seendate": "20261117T002213Z",
       "domain": "theguardian.com",
       "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/environment/2026/nov/16/mushroom-lovers-uk-told-to-avoid-grow-kits-invasive-species-golden-oyster",
-      "title": "Mushroom lovers in UK told to avoid grow kits owing to invasive species risk",
-      "seendate": "20261116T140019Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/16/houthis-edge-closer-to-aden-as-yemeni-forces-pull-out-of-bab-al-mandeb?traffic_source=rss",
-      "title": "Houthis edge closer to Aden as Yemeni forces pull out of Bab al-Mandeb",
-      "seendate": "20261116T134554Z",
+      "url": "https://www.aljazeera.com/news/2026/11/17/ethiopia-moyale-clashes-disrupt-livelihoods-as-territorial-dispute-deepens?traffic_source=rss",
+      "title": "Ethiopia Moyale clashes disrupt livelihoods as territorial dispute deepens",
+      "seendate": "20261117T002119Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/16/jailed-pakistan-ex-pm-imran-khan-writes-to-judges-seeks-vital-medical-care?traffic_source=rss",
-      "title": "Jailed Pakistan ex-PM Imran Khan writes to judges, seeks vital medical care",
-      "seendate": "20261116T134550Z",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz?traffic_source=rss",
+      "title": "Live: Houthis advance in Yemen as tankers hit sea mines in Strait of Hormuz",
+      "seendate": "20261116T235749Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "Pakistan"
+      "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm20vexye1d0o?at_medium=RSS&at_campaign=rss",
-      "title": "Gérard Depardieu drops appeal against sexual assault conviction",
-      "seendate": "20261116T134056Z",
+      "url": "https://www.aljazeera.com/news/2026/11/16/paraguay-ex-president-moved-to-military-jail-amid-special-treatment-reports?traffic_source=rss",
+      "title": "Paraguay ex-president moved to military jail amid special treatment reports",
+      "seendate": "20261116T234432Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Chile"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/trump-departs-for-asean-on-summit-with-xi-and-putin?traffic_source=rss",
+      "title": "Trump departs for ASEAN on summit with Xi and Putin",
+      "seendate": "20261116T234203Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Philippines"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/united-airlines-system-outage",
+      "title": "United Airlines says ‘widespread’ system outage resolved",
+      "seendate": "20261116T232623Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
+      "title": "Five EU countries announce migrant deportation centre in Rwanda",
+      "seendate": "20261116T232045Z",
       "domain": "bbc.co.uk",
-      "sourcecountry": "France"
+      "sourcecountry": "Germany"
     },
     {
-      "url": "https://www.theguardian.com/lifeandstyle/2026/nov/16/lidos-lifeline-andy-burnham-fund-rebuild-outdoor-pools",
-      "title": "Under-threat lidos get lifeline as Andy Burnham sets up fund to rebuild pools",
-      "seendate": "20261116T133549Z",
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/california-sea-turtle-eggs-hatched",
+      "title": "Band of baby sea turtles released into ocean after historic California nesting",
+      "seendate": "20261116T231911Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/sport/2026/nov/17/makybe-diva-melbourne-cup-trophies-stolen-flemington-raid-mount-waverley-ntwnfb",
+      "title": "Police searching for three stolen Melbourne Cup trophies worth $1m each",
+      "seendate": "20261116T231507Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/cause-of-death-gypsy-rose-blanchard-partner",
+      "title": "Cause of death released for partner of Gypsy Rose Blanchard",
+      "seendate": "20261116T231441Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/big-wave-surfers-san-francisco-el-nino",
+      "title": "Big wave surfers line up to ride ‘raw power of the Pacific’ during Super El-Niño swells",
+      "seendate": "20261116T230128Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/16/eu-agrees-to-resurrect-cooperation-deal-with-syria?traffic_source=rss",
+      "title": "EU agrees to resurrect cooperation deal with Syria",
+      "seendate": "20261116T230036Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/16/us-pentagon-rejects-allegations-linking-deputy-to-a-goldman-sachs-banker?traffic_source=rss",
+      "title": "US Pentagon rejects allegations linking deputy to a Goldman Sachs banker",
+      "seendate": "20261116T224007Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/nov/16/alan-milburn-urges-burnham-spend-billions-new-deal-young-people-youth-jobs-crisis-welfare-employment",
+      "title": "Alan Milburn urges Burnham to spend billions on ‘new deal’ for young people",
+      "seendate": "20261116T223055Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/video/witness/2026/11/16/beyond-the-horizon-searching-for-kenyas-elusive-black-leopard?traffic_source=rss",
-      "title": "Beyond the Horizon: Searching for Kenya’s elusive black leopard",
-      "seendate": "20261116T133000Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Kenya"
+      "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+      "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
+      "seendate": "20261116T222127Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war?traffic_source=rss",
-      "title": "Russian attacks kill three in Ukraine, EU accuses Moscow of prolonging war",
-      "seendate": "20261116T132823Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Russia"
+      "url": "https://www.theguardian.com/australia-news/2026/nov/17/myefo-mid-year-budget-update-australia-treasurer-jim-chalmers",
+      "title": "Mid-year budget update will ‘cut enough, but not too much’, Jim Chalmers says",
+      "seendate": "20261116T222110Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/football/2026/nov/16/david-beckham-fragrance-sale-poundland-bargain-bin-gas-station",
-      "title": "Beckham firm sues after fragrance found for sale in Poundland",
-      "seendate": "20261116T132635Z",
+      "url": "https://www.aljazeera.com/sports/2026/11/16/germany-thrash-netherlands-to-book-quarterfinal-spot?traffic_source=rss",
+      "title": "Germany thrash Netherlands to book quarterfinal spot",
+      "seendate": "20261116T220431Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Germany"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmy97qperq9eo?at_medium=RSS&at_campaign=rss",
+      "title": "Houthi rebel advance in Yemen may further destabilise global economy",
+      "seendate": "20261116T214007Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/16/california-files-lawsuit-against-openai-alleging-lack-of-proper-safeguards?traffic_source=rss",
+      "title": "California files lawsuit against OpenAI alleging lack of proper safeguards",
+      "seendate": "20261116T213551Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/mamdani-to-disband-nypd-unit-deployed-at-columbia-protests?traffic_source=rss",
+      "title": "Mamdani to disband NYPD unit deployed at Columbia protests",
+      "seendate": "20261116T211602Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/16/aircraft-middle-east-trump-military",
+      "title": "Third US aircraft carrier brings thousands more troops to Middle East",
+      "seendate": "20261116T211302Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/sport/2026/nov/16/us-basketball-player-arrested-with-75lb-of-marijuana-at-nigerian-airport-say-authorities",
-      "title": "US basketball player arrested with 75lb of marijuana at Nigerian airport, say authorities",
-      "seendate": "20261116T131636Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Arab Emirates"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/massive-boulder-rolls-down-mountain-and-slams-into-car-in-china?traffic_source=rss",
-      "title": "Massive boulder rolls down mountain and slams into car in China",
-      "seendate": "20261116T125516Z",
+      "url": "https://www.aljazeera.com/news/2026/11/16/sudanese-army-air-attack-kills-13-in-western-sudan-rights-group?traffic_source=rss",
+      "title": "Sudanese army air attack kills 13 in western Sudan: Rights group",
+      "seendate": "20261116T210619Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "China"
+      "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/16/ukraine-drone-kerch-bridge-russia-occupied-crimea",
-      "title": "Ukraine hits Kerch bridge between Russia and occupied Crimea",
-      "seendate": "20261116T124509Z",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/manchester-uniteds-endless-loop?traffic_source=rss",
+      "title": "Manchester United’s Endless Loop",
+      "seendate": "20261116T210022Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/16/albanese-treads-tightrope-in-upcoming-trump-meeting-wanting-indo-pacific-engagement-and-end-to-iran-and-ukraine-wars",
+      "title": "Albanese signs on to Trump’s AI supply chain pact before leaders’ meeting at Quad summit",
+      "seendate": "20261116T210021Z",
       "domain": "theguardian.com",
+      "sourcecountry": "Philippines"
+    },
+    {
+      "url": "https://www.aljazeera.com/gallery/2026/11/16/photos-california-residents-gather-to-watch-massive-el-nino-fuelled-waves?traffic_source=rss",
+      "title": "Photos: California residents gather to watch massive El Nino-fuelled waves",
+      "seendate": "20261116T204218Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/london-palestine-film-festival-returns-for-27th-year?traffic_source=rss",
+      "title": "London Palestine Film Festival returns for 27th year",
+      "seendate": "20261116T203625Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c5n4exg1kkmyo?at_medium=RSS&at_campaign=rss",
+      "title": "Forensic expert says his analysis of autopsy photos suggests Epstein was killed",
+      "seendate": "20261116T203357Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/uefa-backs-diallo-to-challenge-infantino-for-fifa-presidency?traffic_source=rss",
+      "title": "UEFA backs Diallo to challenge Infantino for FIFA presidency",
+      "seendate": "20261116T202002Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/16/what-will-europe-do-next-in-ukraine?traffic_source=rss",
+      "title": "What will Europe do next in Ukraine?",
+      "seendate": "20261116T201221Z",
+      "domain": "aljazeera.com",
       "sourcecountry": "Ukraine"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/16/failed-uk-asylum-seekers-to-lose-five-day-grace-period-and-face-immediate-removal",
+      "title": "Refused UK asylum seekers to lose five-day grace period and face immediate removal",
+      "seendate": "20261116T200624Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/16/nationwide-ground-stop-could-cost-us-airlines-hundreds-of-millions?traffic_source=rss",
+      "title": "Nationwide ground stop could cost US airlines hundreds of millions",
+      "seendate": "20261116T200506Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/16/israeli-opposition-accuses-netanyahu-of-attempted-coup?traffic_source=rss",
+      "title": "Israeli opposition accuses Netanyahu of attempted ‘coup’",
+      "seendate": "20261116T200007Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/nov/16/ministers-to-end-palantir-contract-nhs-england-2029",
+      "title": "Ministers to end Palantir’s contract with NHS in England in 2029",
+      "seendate": "20261116T195931Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/politics/2026/nov/16/people-behind-vote-leave-eu-launch-new-incarnations-brexit",
+      "title": "Leave.EU and Vote Leave veterans launch rival campaigns to defend Brexit",
+      "seendate": "20261116T193845Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cw5y1v8de35go?at_medium=RSS&at_campaign=rss",
+      "title": "Lindsay Clancy to face retrial next year for deaths of her three children",
+      "seendate": "20261116T193030Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/16/five-eu-countries-announce-plan-to-send-rejected-asylum-seekers-to-rwanda?traffic_source=rss",
+      "title": "Five EU countries announce plan to send rejected asylum seekers to Rwanda",
+      "seendate": "20261116T192640Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/16/saudi-arabia-dismisses-commander-of-coalition-forces-fighting-houthis?traffic_source=rss",
+      "title": "Saudi Arabia dismisses commander of coalition forces fighting Houthis",
+      "seendate": "20261116T191921Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Saudi Arabia"
     }
   ]
 }

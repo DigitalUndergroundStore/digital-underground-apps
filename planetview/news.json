@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-22T00:15:21.726Z",
+  "updated": "2026-11-22T07:21:47.952Z",
   "articles": [
     {
-      "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-      "title": "FBI reportedly investigating apparent hack of its criminal database",
-      "seendate": "20261122T001044Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ck4g174n020eo?at_medium=RSS&at_campaign=rss",
-      "title": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
-      "seendate": "20261122T001037Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Nigeria"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmq8lyv8lkjwo?at_medium=RSS&at_campaign=rss",
-      "title": "How a teen gamer and his mother helped rescue a missing girl",
-      "seendate": "20261122T000958Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue?traffic_source=rss",
-      "title": "Iran war live: Iran targets US military in Bahrain; Houthi strikes continue",
-      "seendate": "20261121T235903Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Saudi Arabia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/21/lebanese-president-demands-israel-withdrawal-decries-irans-interference?traffic_source=rss",
-      "title": "Lebanese president demands Israel withdrawal, decries Iran’s interference",
-      "seendate": "20261121T234400Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-      "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-      "seendate": "20261121T233117Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Mexico"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/iran-faces-a-silent-economic-war-says-iranian-president?traffic_source=rss",
-      "title": "Iran faces a ‘silent economic war’, says Iranian president",
-      "seendate": "20261121T231814Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/22/man-found-dead-on-flinders-island-linked-to-shooting-of-police-officer-tasmanian-authorities-say",
-      "title": "Man found dead on Flinders Island linked to shooting of police officer, Tasmanian authorities say",
-      "seendate": "20261121T224136Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Australia"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-      "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-      "seendate": "20261121T221943Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/bahrain-says-iranian-attack-hits-industrial-facility?traffic_source=rss",
-      "title": "Bahrain says Iranian attack hits industrial facility",
-      "seendate": "20261121T220203Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&at_campaign=rss",
-      "title": "Lock of former US President George Washington's hair sells for $4,000",
-      "seendate": "20261121T220119Z",
-      "domain": "bbc.co.uk",
+      "url": "https://www.troyrecord.com/2026/11/20/washington-state-chemical-tank-failure-investigation/",
+      "title": "Officials : Washington pulp mill violated safety standards before ruptured chemical tank killed 11",
+      "seendate": "20261122T053000Z",
+      "domain": "troyrecord.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/21/bahrain-says-iranian-attack-causes-fire-at-industrial-facility?traffic_source=rss",
-      "title": "Bahrain says Iranian attack causes fire at industrial facility",
-      "seendate": "20261121T213103Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/impunity-fuels-surge-in-settler-violence-across-occupied-west-bank?traffic_source=rss",
-      "title": "Impunity fuels surge in settler violence across occupied West Bank",
-      "seendate": "20261121T211154Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/21-11-sv-us-sikh-separatist-pannun-assassination-plot?traffic_source=rss",
-      "title": "Indian man jailed over plot to kill Sikh separatist in US",
-      "seendate": "20261121T210918Z",
-      "domain": "aljazeera.com",
+      "url": "https://www.siasat.com/telangana-sir-over-6l-voter-names-deleted-since-jan-1l-in-a-month-3583677/",
+      "title": "Telangana SIR : Over 6L voter names deleted since Jan , 1L in a month",
+      "seendate": "20261122T053000Z",
+      "domain": "siasat.com",
       "sourcecountry": "India"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/21/brazils-jair-bolsonaro-in-intensive-care-with-bowel-obstruction?traffic_source=rss",
-      "title": "Brazil’s Jair Bolsonaro in intensive care with bowel obstruction",
-      "seendate": "20261121T210218Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Brazil"
+      "url": "https://www.winnipegfreepress.com/world/2026/11/22/in-ukraine-the-fight-to-keep-winter-outside-begins-with-a-broken-window",
+      "title": "In Ukraine , the fight to keep winter outside begins with a broken window – Winnipeg Free Press",
+      "seendate": "20261122T053000Z",
+      "domain": "winnipegfreepress.com",
+      "sourcecountry": "Canada"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/21/iran-says-held-talks-with-qatari-mediators-urges-us-to-accept-conditions?traffic_source=rss",
-      "title": "Iran says held talks with Qatari mediators, urges US to accept conditions",
-      "seendate": "20261121T205635Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/21/thousands-protest-across-europe-over-living-costs-and-housing?traffic_source=rss",
-      "title": "Thousands protest across Europe over living costs and housing",
-      "seendate": "20261121T204750Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/aje-onl-nf_aoc-challenged-over-aipacs-influence-on-democrats-211126?traffic_source=rss",
-      "title": "AOC challenged over AIPAC’s influence on Democratic leadership",
-      "seendate": "20261121T203820Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
-      "title": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
-      "seendate": "20261121T201557Z",
-      "domain": "theguardian.com",
+      "url": "http://www.zerohedge.com/energy/doug-casey-coming-collapse-saudi-arabia-and-what-it-means-petrodollar",
+      "title": "Doug Casey On The Coming Collapse Of Saudi Arabia , And What It Means For The Petrodollar",
+      "seendate": "20261122T053000Z",
+      "domain": "zerohedge.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/21/why-is-the-us-army-detonating-lead-rich-explosives-in-iowa?traffic_source=rss",
-      "title": "Why is the US Army detonating lead-rich explosives in Iowa?",
-      "seendate": "20261121T201513Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
+      "url": "https://www.arabnews.com/world/pakistan-fm-hopeful-for-us-iran-deal-warns-against-prolonged-war-3013478",
+      "title": "Arab News | Pakistan FM hopeful for US - Iran deal , warns against prolonged war",
+      "seendate": "20261122T053000Z",
+      "domain": "arabnews.com",
+      "sourcecountry": "Saudi Arabia"
     },
     {
-      "url": "https://www.aljazeera.com/sports/2026/11/21/noni-madueke-salvages-draw-for-arsenal-at-newcastle-united-as-raya-injured?traffic_source=rss",
-      "title": "Noni Madueke salvages draw for Arsenal at Newcastle United as Raya injured",
-      "seendate": "20261121T195300Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/21/man-charged-with-attempted-after-councillor-stabbed-in-bradford",
-      "title": "Man charged with attempted murder after councillor stabbed in Bradford",
-      "seendate": "20261121T194242Z",
-      "domain": "theguardian.com",
+      "url": "https://www.andoveradvertiser.co.uk/news/26743491.back-pages-battle-andover-faulty-homes/",
+      "title": "Back Through the Pages : The battle over Andover faulty homes",
+      "seendate": "20261122T053000Z",
+      "domain": "andoveradvertiser.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-      "title": "Russia-bound ship attacked in Gulf of Finland",
-      "seendate": "20261121T192022Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/22/queensland-health-ambulance-deaths-lnp-labor-ntwnfb",
-      "title": "‘Six, seven, maybe more preventable deaths’: Queensland’s LNP faces reckoning over broken health system",
-      "seendate": "20261121T190008Z",
-      "domain": "theguardian.com",
+      "url": "https://www.maitlandmercury.com.au/story/9395968/man-of-deep-faith-longest-serving-mp-fred-nile-dies/",
+      "title": "Man of deep faith : longest - serving MP Fred Nile dies",
+      "seendate": "20261122T053000Z",
+      "domain": "maitlandmercury.com.au",
       "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/22/cigarette-platter-bondi-copini-beauty-event-investigation",
-      "title": "Cigarettes on silver platters at Bondi ‘clean’ beauty business lip gloss launch referred for investigation",
-      "seendate": "20261121T190007Z",
-      "domain": "theguardian.com",
+      "url": "https://www.dailygazette.com/hv360/opinion/john-figliozzi-how-does-the-shift-in-national-politics-affect-new-york-s/article_afe42cb6-5bae-46a3-9374-60243bafa4e4.html",
+      "title": "JOHN FIGLIOZZI : How does the shift in national politics affect New York ? | Opinion",
+      "seendate": "20261122T053000Z",
+      "domain": "dailygazette.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.nbcbayarea.com/news/local/san-francisco-residents-prepare-for-storms-king-tides/4179915/",
+      "title": "San Francisco residents prepare for storms , king tides",
+      "seendate": "20261122T053000Z",
+      "domain": "nbcbayarea.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://ianslive.in/pm-modis-advice-against-buying-gold-saved-lakhs-of-traders-investors-from-losses-cti--20261122100742",
+      "title": "PM Modi advice against buying gold saved lakhs of traders , investors from losses : CTI",
+      "seendate": "20261122T053000Z",
+      "domain": "ianslive.in",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.koreaherald.com/article/10945073",
+      "title": "Samsung , LG face risk of higher costs as EU appliance makers seek carbon levies on imports",
+      "seendate": "20261122T053000Z",
+      "domain": "koreaherald.com",
+      "sourcecountry": "South Korea"
+    },
+    {
+      "url": "https://www.sentinelandenterprise.com/2026/11/22/fatv-ltv-pac-weekly-schedule-highlights-153/",
+      "title": "FATV - LTV - PAC WEEKLY SCHEDULE HIGHLIGHTS",
+      "seendate": "20261122T053000Z",
+      "domain": "sentinelandenterprise.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.nbcbayarea.com/news/local/students-problems-san-jose-state-housing/4179917/",
+      "title": "San Jose State students report ongoing problems at off - campus housing – NBC Bay Area",
+      "seendate": "20261122T053000Z",
+      "domain": "nbcbayarea.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.standardmedia.co.ke/columnists/article/2001562766/an-open-letter-to-united-opposition-leaders",
+      "title": "An open letter to united opposition leaders",
+      "seendate": "20261122T053000Z",
+      "domain": "standardmedia.co.ke",
+      "sourcecountry": "Kenya"
+    },
+    {
+      "url": "https://cedarnews.net/newstasks/1177963/cop31-struggles-reach-deal-parties-odds-fossil/",
+      "title": "COP31 struggles to reach deal with parties at odds over fossil fuels",
+      "seendate": "20261122T053000Z",
+      "domain": "cedarnews.net",
+      "sourcecountry": "Lebanon"
+    },
+    {
+      "url": "http://www.southeastasiapost.com/news/279447972/us-financial-watchdog-probing-nvidia-accounting-reuters",
+      "title": "US financial watchdog probing Nvidia accounting",
+      "seendate": "20261122T053000Z",
+      "domain": "southeastasiapost.com",
+      "sourcecountry": "Pakistan"
+    },
+    {
+      "url": "https://www.portstephensexaminer.com.au/story/9395913/really-bad-signs-ahead-of-inflation-data-release/",
+      "title": "Really bad sign ahead of inflation data release",
+      "seendate": "20261122T053000Z",
+      "domain": "portstephensexaminer.com.au",
       "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/australia-news/2026/nov/22/australian-neo-nazis-among-far-right-groups-raising-hundreds-of-thousands-via-global-crowdfunding-platform-ntwnfb",
-      "title": "Australian neo-Nazis among far-right groups raising hundreds of thousands via global crowdfunding platform",
-      "seendate": "20261121T190006Z",
-      "domain": "theguardian.com",
+      "url": "https://www.maitlandmercury.com.au/story/9395927/one-nation-refugee-cut-deemed-a-win-for-traffickers/",
+      "title": "One Nation refugee cut deemed a win for traffickers",
+      "seendate": "20261122T053000Z",
+      "domain": "maitlandmercury.com.au",
       "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/21/louisiana-mississippi-hiking-trail-crossbow-murder-charges",
-      "title": "Louisiana man charged with killing woman on hiking trail and murdering co-worker with crossbow",
-      "seendate": "20261121T185000Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "url": "https://www.clickorlando.com/news/world/2026/11/22/in-ukraine-the-fight-to-keep-winter-outside-begins-with-a-broken-window/",
+      "title": "In Ukraine , the fight to keep winter outside begins with a broken window",
+      "seendate": "20261122T053000Z",
+      "domain": "clickorlando.com",
+      "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/aje-onl-nf_deadly-attack-in-kyiv-as-russia-launches-barrage-211126?traffic_source=rss",
-      "title": "Deadly attack in Kyiv as Russia launches barrage against Ukraine",
-      "seendate": "20261121T184238Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
+      "url": "http://www.srilankasource.com/news/279445744/paypal-overhauls-leadership-team-to-drive-turnaround",
+      "title": "PayPal overhauls leadership team to drive turnaround",
+      "seendate": "20261122T053000Z",
+      "domain": "srilankasource.com",
+      "sourcecountry": "Sri Lanka"
     },
     {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/21/suffolk-village-votes-to-leave-the-uk-over-plans-to-house-asylum-seekers-nearby",
-      "title": "Suffolk village votes to ‘leave the UK’ over plans to house asylum seekers nearby",
-      "seendate": "20261121T182037Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "url": "https://kashmirreader.com/2026/11/22/pm-hm-still-searching-for-supertainted-two-thirds-majority-for-delimitation-bill-congress/",
+      "title": "PM , HM still searching for  supertainted  two - thirds majority for delimitation bill : Congress",
+      "seendate": "20261122T053000Z",
+      "domain": "kashmirreader.com",
+      "sourcecountry": "India"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/21/fbi-national-crime-database-suffers-suspected-breach-reports?traffic_source=rss",
-      "title": "FBI national crime database suffers suspected breach: Reports",
-      "seendate": "20261121T181910Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
+      "url": "https://www.indiatimes.com/game-guides/how-to-summon-and-kill-satan-in-gta-6-satanist-locations-hell-mission-beelzebub-dave-encounter-and-exclusive-shotgun-reward-explained/articleshow/136066345.html",
+      "title": "How to summon and kill Satan in GTA 6 ? Satanist locations , Hell mission , Beelzebub & Dave encounter and exclusive shotgun reward explained",
+      "seendate": "20261122T053000Z",
+      "domain": "indiatimes.com",
+      "sourcecountry": "India"
     },
     {
-      "url": "https://www.aljazeera.com/video/inside-story/2026/11/21/could-brexit-be-reversed?traffic_source=rss",
-      "title": "Could Brexit be reversed?",
-      "seendate": "20261121T181811Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
+      "url": "https://kashmirreader.com/2026/11/22/mirwaiz-seeks-impartial-probe-into-recruitment-irregularities/",
+      "title": "Mirwaiz seeks impartial probe into recruitment irregularities",
+      "seendate": "20261122T053000Z",
+      "domain": "kashmirreader.com",
+      "sourcecountry": "India"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/21/trump-contractors-congress-executive-order",
-      "title": "Trump orders contractors to check with White House over any congressional inquiries",
-      "seendate": "20261121T180830Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "url": "https://www.intelligencer.ca/press-releases/newsfile/frost-sullivan-released-the-2026-global-medical-robots-industry-development-blue-book/",
+      "title": "Frost & Sullivan Released the 2026 Global Medical Robots Industry Development Blue Book",
+      "seendate": "20261122T053000Z",
+      "domain": "intelligencer.ca",
+      "sourcecountry": "Canada"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/21-11-clip-trump-iran-permanent-nuclear-deal?traffic_source=rss",
-      "title": "Trump says he wants ‘permanent’ deal to stop Iran getting nuclear weapons",
-      "seendate": "20261121T180551Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
+      "url": "https://www.wgcu.org/2026-11-21/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
+      "title": "Highlights and challenges from covering an historic month in South America",
+      "seendate": "20261122T053000Z",
+      "domain": "wgcu.org",
+      "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/uk-police-drag-man-from-protest-over-pallet-sign-acton-shirt?traffic_source=rss",
-      "title": "UK police drag man from protest over ‘Pallet Sign Acton’ shirt",
-      "seendate": "20261121T175727Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
+      "url": "https://www.bollywoodhungama.com/news/box-office-special-features/ramayana-worldwide-box-office-ranbir-kapoor-yash-epic-storms-past-rs-1576-crores-india-gross-crosses-rs-1000-cr-while-overseas-breaches-rs-500-cr/",
+      "title": "Ramayana Worldwide Box Office : Ranbir Kapoor - Yash epic storms past Rs . 1576 crores ; India gross crosses Rs . 1000 cr . while overseas breaches Rs . 500 cr .",
+      "seendate": "20261122T053000Z",
+      "domain": "bollywoodhungama.com",
+      "sourcecountry": "India"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/21-11-sv-israel-targets-gaza-food-truck?traffic_source=rss",
-      "title": "Israeli strike hits food aid vehicle in Gaza, killing three",
-      "seendate": "20261121T175419Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
+      "url": "https://www.wsls.com/news/world/2026/11/22/turkeys-final-draft-at-un-climate-talks-doesnt-mention-the-fossil-fuels-that-cause-global-warming/",
+      "title": "Turkey final draft at UN climate talks doesnt mention the fossil fuels that cause global warming",
+      "seendate": "20261122T053000Z",
+      "domain": "wsls.com",
+      "sourcecountry": "United States"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/21/alleged-mexican-drug-cartel-boss-el-chapo-isidro-meza-flores-arrested",
-      "title": "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid",
-      "seendate": "20261121T174655Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Mexico"
+      "url": "https://kashmirreader.com/2026/11/22/winter-break-for-nursery-to-class-5-under-consideration-if-cold-intensifies-edu-min/",
+      "title": "Winter break for nursery to class 5 under consideration if cold intensifies : Edu Min",
+      "seendate": "20261122T053000Z",
+      "domain": "kashmirreader.com",
+      "sourcecountry": "India"
     },
     {
-      "url": "https://www.aljazeera.com/sports/2026/11/21/liverpool-vs-manchester-united-premier-league-teams-prediction-lineups?traffic_source=rss",
-      "title": "Liverpool vs Manchester United: Premier League – teams, prediction, lineups",
-      "seendate": "20261121T172851Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
+      "url": "https://joy.org.au/saturdaymagazine/2026/11/sat-21st-nov-2026-rachel-withers-freelance-writer-crikey-spin-cycle-triple-r-and-aiv-puglielli-mp-greens-nth-eastern-metro/",
+      "title": "Sat , 21st , Nov , 2026 : Rachel Withers , Freelance writer , Crikey , Spin Cycle Triple R and Aiv Puglielli ; MP Greens , Nth Eastern Metro",
+      "seendate": "20261122T053000Z",
+      "domain": "joy.org.au",
+      "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon",
-      "title": "Vance stops short of endorsing Trump’s claim that Iran was close to nuclear weapon",
-      "seendate": "20261121T172451Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "url": "http://www.sanantoniopost.com/news/279445744/paypal-overhauls-leadership-team-to-drive-turnaround",
+      "title": "PayPal overhauls leadership team to drive turnaround",
+      "seendate": "20261122T053000Z",
+      "domain": "sanantoniopost.com",
+      "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/sports/2026/11/21/chelsea-beaten-4-1-by-leeds-united-at-home-in-the-premier-league?traffic_source=rss",
-      "title": "Chelsea beaten 4-1 by Leeds to suffer third loss in four in Premier League",
-      "seendate": "20261121T172137Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
+      "url": "https://www.redlandsdailyfacts.com/2026/11/21/the-festival-of-lights-is-glowing-again-in-downtown-riverside/",
+      "title": "The Festival of Lights is glowing again in downtown Riverside",
+      "seendate": "20261122T053000Z",
+      "domain": "redlandsdailyfacts.com",
+      "sourcecountry": "United States"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/21/russian-strike-kills-two-wounds-60-in-zelenskyys-hometown?traffic_source=rss",
-      "title": "Russian strike kills two, wounds 60, in Zelenskyy’s hometown",
-      "seendate": "20261121T172003Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Poland"
+      "url": "https://www.koreaherald.com/article/10945063",
+      "title": "Luxury for the elite , hardship for the masses : North Korea economic divide",
+      "seendate": "20261122T053000Z",
+      "domain": "koreaherald.com",
+      "sourcecountry": "South Korea"
+    },
+    {
+      "url": "https://www.yakimaherald.com/news/nation_and_world/world/turkeys-final-draft-at-un-climate-talks-doesnt-mention-the-fossil-fuels-that-cause-global/article_98f9e8c1-ea58-5d82-b177-8b69270feb00.html",
+      "title": "Turkey final draft at UN climate talks doesnt mention the fossil fuels that cause global warming",
+      "seendate": "20261122T053000Z",
+      "domain": "yakimaherald.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.siasat.com/hydraa-removes-encroachments-from-sandapalli-lake-in-rangareddy-3583684/",
+      "title": "HYDRAA removes encroachments from Sandapalli Lake in Rangareddy",
+      "seendate": "20261122T053000Z",
+      "domain": "siasat.com",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.portstephensexaminer.com.au/story/9395927/one-nation-refugee-cut-deemed-a-win-for-traffickers/",
+      "title": "One Nation refugee cut deemed a win for traffickers",
+      "seendate": "20261122T053000Z",
+      "domain": "portstephensexaminer.com.au",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.hindustantimes.com/india-news/bjp-rajya-sabha-mp-ramrao-vadkute-dies-at-72-101795321557011.html",
+      "title": "BJP Rajya Sabha MP Ramrao Vadkute dies at 72",
+      "seendate": "20261122T053000Z",
+      "domain": "hindustantimes.com",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.nbcbayarea.com/news/local/marin-county-first-flu-death-season/4179897/",
+      "title": "Marin County reports its first flu death of the season .",
+      "seendate": "20261122T053000Z",
+      "domain": "nbcbayarea.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.newindianexpress.com/thesundaystandard/2026/Nov/22/cash-strapped-djb-plans-to-monetise-land-buildings-for-revenue-generation",
+      "title": "Cash - strapped DJB plans to monetise land , buildings for revenue generation",
+      "seendate": "20261122T053000Z",
+      "domain": "newindianexpress.com",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.dailygazette.com/hv360/ap/national/little-mercury-gets-its-first-visitor-in-years-as-a-pair-of-spacecraft-loop-into/article_eebe6a8d-f741-594c-a06e-b6c998690ed8.html",
+      "title": "Little Mercury gets its first visitor in years as a pair of spacecraft loop into orbit",
+      "seendate": "20261122T053000Z",
+      "domain": "dailygazette.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.clickorlando.com/news/local/2026/11/22/floodwaters-recede-in-volusia-county-leaving-families-to-face-costly-cleanup/",
+      "title": "Floodwaters recede in Volusia County , leaving families to face costly cleanup",
+      "seendate": "20261122T053000Z",
+      "domain": "clickorlando.com",
+      "sourcecountry": "United States"
     }
   ]
 }

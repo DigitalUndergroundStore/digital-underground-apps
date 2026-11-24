@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-23T22:33:18.291Z",
+  "updated": "2026-11-24T06:20:16.082Z",
   "articles": [
     {
-      "url": "https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive",
-      "title": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes",
-      "seendate": "20261123T222340Z",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/meta-launches-muse-uk-ai-agent-do-christmas-shopping",
+      "title": "Meta launches Muse in UK – the AI agent that can do your Christmas shopping",
+      "seendate": "20261124T060007Z",
       "domain": "theguardian.com",
-      "sourcecountry": "China"
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/nov/24/kate-bush-grace-jones-australian-artists-copyright-law-ai",
+      "title": "Kate Bush and Grace Jones urge Australian government not to legalise AI ‘theft’",
+      "seendate": "20261124T055815Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/24/arsenal-borussia-dortmund-champions-league-predictions-lineups-streaming?traffic_source=rss",
+      "title": "Arsenal vs Dortmund: Champions League – Predictions, how to watch, lineups",
+      "seendate": "20261124T055641Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Germany"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/24/malaysia-to-send-thousands-of-migrants-back-to-myanmar",
+      "title": "Malaysia to send thousands of migrants back to Myanmar as PM acknowledges junta’s ‘atrocities’",
+      "seendate": "20261124T055414Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Malaysia"
     },
     {
       "url": "https://www.theguardian.com/australia-news/live/2026/nov/24/labor-penny-wong-us-china-anthony-albanese-final-sitting-week-ntwnfb",
-      "title": "Australian politics live: Labor to ‘save more than we spend’ in budget update, Chalmers says; rental affordability plummets to 14-year low",
-      "seendate": "20261123T222258Z",
+      "title": "Australian politics live: ‘Private tycoons’ shouldn’t have their own AI arsenals, Andrew Hastie says",
+      "seendate": "20261124T055148Z",
       "domain": "theguardian.com",
       "sourcecountry": "China"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court",
-      "title": "Trump defers to appeals court over army plan to detonate bomb-making material in Iowa",
-      "seendate": "20261123T222212Z",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/24/beau-lamarre-condon-trial-barrister-closing-statement-ntwnfb",
+      "title": "Beau Lamarre-Condon could have told crown ‘do your worst’ and not given evidence, defence says",
+      "seendate": "20261124T054934Z",
       "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/23/jimmy-gomez-congress-investigation-sexual-misconduct",
-      "title": "Jimmy Gomez to resign after House ethics panel finds evidence of sexual misconduct",
-      "seendate": "20261123T222145Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United States"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
-      "title": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-      "seendate": "20261123T221526Z",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
+      "title": "India's 'cockroach' party leader says he was stopped from flying to UK",
+      "seendate": "20261124T053307Z",
       "domain": "bbc.co.uk",
-      "sourcecountry": "China"
+      "sourcecountry": "India"
     },
     {
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
-      "title": "Top Democrats raise corruption concerns after Trump involvement in Jensen Huang’s Nvidia reinstatement – live",
-      "seendate": "20261123T221254Z",
+      "url": "https://www.theguardian.com/world/2026/nov/24/ebikes-screens-and-failing-manners-pose-challenge-for-dutch-cycling-culture",
+      "title": "Ebikes, screens and failing manners pose challenge for Dutch cycling culture",
+      "seendate": "20261124T050007Z",
       "domain": "theguardian.com",
-      "sourcecountry": "United States"
+      "sourcecountry": "Netherlands"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/23/us-escalates-sanctions-on-iran-targets-shadow-banking-networks?traffic_source=rss",
-      "title": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
-      "seendate": "20261123T213040Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/israels-southern-syria-incursion-triggers-fear-and-destruction?traffic_source=rss",
-      "title": "Israel’s southern Syria incursion triggers fear and destruction",
-      "seendate": "20261123T211917Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/economy/2026/11/23/us-states-sue-spacex-over-grok-ais-creation-of-child-sexual-abuse-material?traffic_source=rss",
-      "title": "US states sue SpaceX over Grok AI’s creation of child sexual abuse material",
-      "seendate": "20261123T211533Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2026/nov/23/trump-jensen-huang-nvidia-reinstated",
-      "title": "Republican senators criticize Nvidia’s decision to reinstate Jensen Huang",
-      "seendate": "20261123T210910Z",
+      "url": "https://www.theguardian.com/media/2026/nov/24/channel-4-unilever-tv-influencer-marketing",
+      "title": "Channel 4 hit as Unilever switches from TV to influencer marketing",
+      "seendate": "20261124T050007Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/23/us-drug-prices-leave-patients-facing-impossible-choices?traffic_source=rss",
-      "title": "US drug prices leave patients facing impossible choices",
-      "seendate": "20261123T210200Z",
+      "url": "https://www.aljazeera.com/news/2026/11/24/pennsylvania-reports-ninth-measles-death-in-ongoing-state-outbreak?traffic_source=rss",
+      "title": "Pennsylvania reports ninth measles death in ongoing state outbreak",
+      "seendate": "20261124T045913Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab",
-      "title": "Iranian singer and four others receive lashes after performance without hijab",
-      "seendate": "20261123T205617Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss",
-      "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
-      "seendate": "20261123T204835Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/23/iran-flogs-singer-parastoo-ahmadi-for-performing-without-headscarf?traffic_source=rss",
-      "title": "Iran flogs singer Parastoo Ahmadi for performing without headscarf",
-      "seendate": "20261123T204156Z",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/danish-court-backs-ghetto-law-used-to-evict-non-western-residents?traffic_source=rss",
+      "title": "Danish court backs ‘ghetto law’ used to evict ‘non-Western’ residents",
+      "seendate": "20261124T045206Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/23/metropolitan-police-seize-cocaine-hidden-boxes-oranges-new-spitalfields",
-      "title": "Metropolitan police seize 893kg of cocaine hidden in boxes of oranges",
-      "seendate": "20261123T204143Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/inside-story/2026/11/23/iran-hits-us-bases-and-civilian-sites-in-the-gulf-after-a-lull?traffic_source=rss",
-      "title": "Iran hits US bases and civilian sites in the Gulf after a lull",
-      "seendate": "20261123T202640Z",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/car-bomb-strikes-governors-office-in-meta-colombia?traffic_source=rss",
+      "title": "Car bomb strikes governor’s office in Meta, Colombia",
+      "seendate": "20261124T044931Z",
       "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
+      "sourcecountry": "Colombia"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/23/turkish-police-hunting-for-lioness-stalking-istanbul?traffic_source=rss",
-      "title": "Turkish police hunting for lioness stalking Istanbul",
-      "seendate": "20261123T202228Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Turkey"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/jensen-huang-reinstated-as-nvidia-chief-how-did-we-get-here?traffic_source=rss",
-      "title": "Jensen Huang reinstated as Nvidia chief: How did we get here?",
-      "seendate": "20261123T202212Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/23/protesting-bangladesh-garment-workers-reject-pay-offer?traffic_source=rss",
-      "title": "Protesting Bangladesh garment workers reject pay offer",
-      "seendate": "20261123T200348Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Bangladesh"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/23/trump-delays-explosive-detonation-in-us-state-of-iowa-amid-legal-battles?traffic_source=rss",
-      "title": "Trump delays explosive detonation in US state of Iowa amid legal battles",
-      "seendate": "20261123T200141Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/23/student-arrest-racist-campaign-israel-palestine-benjamin-netanyahu",
-      "title": "Israel seeks to jail Palestinian student activist without trial after dorm arrest",
-      "seendate": "20261123T194858Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/23/as-tech-outages-mount-some-new-yorkers-prepare-for-the-worst?traffic_source=rss",
-      "title": "As tech outages mount, some New Yorkers prepare for the worst",
-      "seendate": "20261123T194345Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/ceo-jensen-huang-returns-to-nvidias-office?traffic_source=rss",
-      "title": "CEO Jensen Huang returns to Nvidia’s office",
-      "seendate": "20261123T194041Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/2026/nov/23/andy-burnham-brexit-deal-eu",
-      "title": "Burnham says it would be ‘unthinkable’ to rejoin EU without referendum",
-      "seendate": "20261123T192601Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/23/russia-threatens-hostile-estonia-with-open-war?traffic_source=rss",
-      "title": "Russia threatens ‘hostile’ Estonia with ‘open war’",
-      "seendate": "20261123T192030Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/thousands-flee-manchester-concert-after-unknown-substance-released?traffic_source=rss",
-      "title": "Thousands flee Manchester concert after unknown substance released",
-      "seendate": "20261123T190737Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
-      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
-      "seendate": "20261123T184300Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/live/2026/nov/23/andy-burnham-brexit-europe-eu-uk-summit-deal-commons-cbi-farage-badenoch-haigh-politics-latest-news-updates",
-      "title": "Burnham says it would be ‘unthinkable’ for the UK to rejoin the EU without a referendum – as it happened",
-      "seendate": "20261123T183117Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/what-russian-warship-did-ukraine-just-sink?traffic_source=rss",
-      "title": "What Russian warship did Ukraine just sink?",
-      "seendate": "20261123T182555Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Ukraine"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/23/former-prince-andrew-was-paid-bribe-to-help-turkish-woman-with-passport-high-court-told",
-      "title": "Former prince Andrew was paid £750,000 in hope of helping Turkish woman with passport, high court told",
-      "seendate": "20261123T182003Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/23/india-pledges-1-6bn-in-flood-relief-for-nepal?traffic_source=rss",
-      "title": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi",
-      "seendate": "20261123T181255Z",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/indias-best-known-bottled-water-under-scrutiny?traffic_source=rss",
+      "title": "India’s best known bottled water under scrutiny",
+      "seendate": "20261124T044435Z",
       "domain": "aljazeera.com",
       "sourcecountry": "India"
     },
     {
-      "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france",
-      "title": "Gisèle Pelicot ‘deeply shocked’ after nude images used to promote book",
-      "seendate": "20261123T181248Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.theguardian.com/society/2026/nov/23/only-six-beds-for-trans-victims-of-domestic-abuse-in-uk-report-finds",
-      "title": "Only six beds for trans victims of domestic abuse in UK, report finds",
-      "seendate": "20261123T180704Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss",
-      "title": "Iranian authorities flog singer who performed without hijab, lawyers say",
-      "seendate": "20261123T180420Z",
+      "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+      "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+      "seendate": "20261124T043631Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/23/danish-top-courts-ghetto-law-ruling-supports-hardline-immigration-policy?traffic_source=rss",
-      "title": "Danish top court’s ‘ghetto law’ ruling supports hardline immigration policy",
-      "seendate": "20261123T180023Z",
+      "url": "https://www.aljazeera.com/news/2026/11/24/who-chief-visits-cuba-as-healthcare-system-deteriorates?traffic_source=rss",
+      "title": "WHO chief visits Cuba as healthcare system deteriorates",
+      "seendate": "20261124T043537Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.theguardian.com/politics/2026/nov/23/natural-england-could-be-abolished-quango-cull-louise-haigh",
-      "title": "‘Scapegoating’: green groups condemn plan to axe Environment Agency and Natural England",
-      "seendate": "20261123T174758Z",
+      "url": "https://www.theguardian.com/world/2026/nov/24/south-korea-tells-island-residents-to-take-shelter-after-russian-military-aircraft-approach",
+      "title": "South Korea tells island residents to take shelter after Russian military aircraft approach",
+      "seendate": "20261124T041443Z",
       "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "sourcecountry": "South Korea"
     },
     {
-      "url": "https://www.theguardian.com/politics/audio/2026/nov/23/what-tactics-will-burnham-use-to-sell-his-eu-plans-podcast",
-      "title": "What tactics will Burnham use to sell his EU plans? – podcast",
-      "seendate": "20261123T174213Z",
+      "url": "https://www.theguardian.com/technology/2026/nov/24/social-media-big-tech-fines-global-revenue-australia-digital-duty-care-laws",
+      "title": "Social media companies could be fined 5% of global revenue after Labor and Greens join forces on online safety laws",
+      "seendate": "20261124T040316Z",
       "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "sourcecountry": "China"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/23/tajikistan-moves-to-leave-icc-amid-us-push-against-court?traffic_source=rss",
-      "title": "Tajikistan moves to leave ICC amid US push against court",
-      "seendate": "20261123T173617Z",
+      "url": "https://www.aljazeera.com/news/2026/11/24/mexico-to-try-el-chapo-isidro-despite-us-extradition-request?traffic_source=rss",
+      "title": "Mexico to try ‘El Chapo Isidro’ despite US extradition request",
+      "seendate": "20261124T032055Z",
       "domain": "aljazeera.com",
+      "sourcecountry": "Mexico"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/23/donald-trump-democrats-republicans-presidential-primary-midterms-house-latest-news-updates",
+      "title": "Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – as it happened",
+      "seendate": "20261124T030441Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.theguardian.com/news/audio/2026/nov/24/myanmar-found-guilty-genocide-should-israel-be-worried-podcast",
+      "title": "Myanmar has been found guilty of genocide. Should Israel be worried? – podcast",
+      "seendate": "20261124T030004Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/24/china-official-ma-death-sentence-spying-leaking-national-secrets",
+      "title": "China sentences official to death for spying for foreign country",
+      "seendate": "20261124T023736Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/24-11-sv-sheshnag-lake-excavators-kashmir?traffic_source=rss",
+      "title": "Excavator threatens sacred alpine lake in the Himalayas",
+      "seendate": "20261124T023527Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "India"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/un-chief-calls-for-world-to-agree-on-ai-oversight-within-a-year?traffic_source=rss",
+      "title": "UN chief calls for world to agree on AI oversight within a year",
+      "seendate": "20261124T022719Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court",
+      "title": "Federal court clears way for army to detonate bomb-making chemicals in Iowa",
+      "seendate": "20261124T022549Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+      "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+      "seendate": "20261124T021559Z",
+      "domain": "bbc.co.uk",
       "sourcecountry": "Russia"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&at_campaign=rss",
-      "title": "What failure of COP31 reveals about a divided world",
-      "seendate": "20261123T172425Z",
+      "url": "https://www.theguardian.com/us-news/2026/nov/23/megaspeed-us-trade-blacklist-nvidia",
+      "title": "US adds Megaspeed, AI firm at center of Nvidia scandal, to trade blacklist",
+      "seendate": "20261124T014715Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Singapore"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/qatar-pm-looks-to-revive-us-iran-talks-after-meeting-rubio?traffic_source=rss",
+      "title": "Qatar PM looks to revive US-Iran talks after meeting Rubio",
+      "seendate": "20261124T013212Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/videos/ckedq2edqegzo?at_medium=RSS&at_campaign=rss",
+      "title": "How Nvidia is reacting to Jensen Huang's return as CEO",
+      "seendate": "20261124T012141Z",
       "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/news/audio/2026/nov/23/cop31-collapses-why-did-climate-talks-fall-apart-the-latest",
-      "title": "Cop31 collapses: why did climate talks fall apart? - The Latest",
-      "seendate": "20261123T171955Z",
-      "domain": "theguardian.com",
+      "url": "https://www.aljazeera.com/news/2026/11/24/appeals-court-renews-trump-bid-for-federal-jurisdiction-in-hush-money-case?traffic_source=rss",
+      "title": "Appeals court renews Trump bid for federal jurisdiction in hush-money case",
+      "seendate": "20261124T011748Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/israeli-minister-approves-return-of-flydubai-flights?traffic_source=rss",
+      "title": "Israeli minister approves return of Flydubai flights to Tel Aviv",
+      "seendate": "20261124T010951Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/bukele-shares-details-on-deaths-of-salvadoran-troops-in-haiti-intervention?traffic_source=rss",
+      "title": "Bukele shares details on deaths of El Salvador’s troops in Haiti",
+      "seendate": "20261124T010600Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list?traffic_source=rss",
+      "title": "US adds Megaspeed to trade blacklist as Nvidia’s Huang returns as CEO",
+      "seendate": "20261124T005247Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Singapore"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/what-could-democrats-do-with-their-expanding-congressional-majority?traffic_source=rss",
+      "title": "What could Democrats do with their expanding congressional majority?",
+      "seendate": "20261124T003922Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/turns-out-it-wasnt-a-lion-afterall?traffic_source=rss",
+      "title": "Turns out it wasn’t a lion afterall",
+      "seendate": "20261124T003558Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Turkey"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/c3qj57rkd2k1o?at_medium=RSS&at_campaign=rss",
+      "title": "King Charles and Elton John pay tribute to Australian music legend Molly Meldrum",
+      "seendate": "20261124T002325Z",
+      "domain": "bbc.co.uk",
       "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/trump-calls-to-expedite-us-federal-executions-blasts-gavin-newsom?traffic_source=rss",
+      "title": "Trump calls to ‘expedite’ US federal executions, blasts Gavin Newsom",
+      "seendate": "20261124T000415Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "United States"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/borno-school-enrolment-nearly-doubles-after-years-of-conflict?traffic_source=rss",
+      "title": "Borno school enrolment nearly doubles after years of conflict",
+      "seendate": "20261124T000216Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cqglr0d5jejxo?at_medium=RSS&at_campaign=rss",
+      "title": "Dad who discovered daughter's murder on Facebook feels ignored by South African police",
+      "seendate": "20261124T000215Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/politics/2026/nov/24/zack-polanski-backs-report-endorsing-nato-membership-maintaining-nuclear-weapons",
+      "title": "Zack Polanski backs report endorsing Nato membership and maintaining nuclear weapons",
+      "seendate": "20261124T000101Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "France"
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/nov/24/robert-macfarlane-trust-cop-climate-summit-deliver-change-misplaced",
+      "title": "Robert Macfarlane says trust in Cop to deliver change on climate is ‘misplaced’",
+      "seendate": "20261124T000100Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
     }
   ]
 }

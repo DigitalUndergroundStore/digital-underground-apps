@@ -1,285 +1,285 @@
 {
-  "updated": "2026-11-24T18:12:18.894Z",
+  "updated": "2026-11-25T02:44:14.430Z",
   "articles": [
     {
-      "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
-      "title": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
-      "seendate": "20261124T180746Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "India"
+      "url": "https://www.theguardian.com/australia-news/live/2026/nov/25/treasurer-jim-chalmers-myefo-inflation-figures-coalition-one-nation-ntwnfb",
+      "title": "Politics live: Chalmers says economy faces ‘serious moment’ amid inflation; NSW ‘scaling up’ response after fire ants found in Sydney",
+      "seendate": "20261125T024239Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.aljazeera.com/video/witness/2026/11/24/colombia-at-a-crossroads-searching-for-peace-amid-conflict?traffic_source=rss",
-      "title": "Colombia at a Crossroads: Searching for peace amid conflict",
-      "seendate": "20261124T180000Z",
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates",
+      "title": "Trump reportedly says he is open to pardoning Jensen Huang ahead of CEO’s planned Senate committee testimony – live",
+      "seendate": "20261125T024110Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/24/al-gore-newspaper-tennessee",
+      "title": "Al Gore buys local, family-owned newspaper in central Tennessee",
+      "seendate": "20261125T023142Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/25/who-chief-urges-end-to-us-fuel-blockade-on-cuba?traffic_source=rss",
+      "title": "WHO chief urges end to US fuel blockade on Cuba",
+      "seendate": "20261125T022319Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/24/mississippi-plane-crash",
+      "title": "Rescue crews search for six people after plane crash off Mississippi coast",
+      "seendate": "20261125T021725Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/25/australia-solomon-islands-treaty-blow-to-china-pacific-influence",
+      "title": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
+      "seendate": "20261125T015102Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/nov/25/inflation-rate-australia-october-figures",
+      "title": "Inflation rate jumps to 4.9% as Australia’s cost-of-living crisis intensifies",
+      "seendate": "20261125T014207Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/senegal-fans-celebrate-afcon-legal-victory-over-morocco?traffic_source=rss",
+      "title": "Senegal fans celebrate AFCON legal victory over Morocco",
+      "seendate": "20261125T013953Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/world/2026/nov/25/china-investigates-politburo-chen-jining-xi-jinping-purge",
+      "title": "China investigates politburo star in Xi Jinping’s latest purge",
+      "seendate": "20261125T013146Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/25/israels-eisenkot-secures-first-coalition-partner-in-bid-to-form-government?traffic_source=rss",
+      "title": "Israel’s Eisenkot secures first coalition partner in bid to form government",
+      "seendate": "20261125T013044Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Israel"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/25/beau-lamarre-condon-trial-verdict-former-police-officer-jesse-baird-luke-davies-ntwnfb",
+      "title": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies",
+      "seendate": "20261125T012108Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Australia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/iran-whips-singer-parastoo-ahmadi-74-times-over-youtube-concert?traffic_source=rss",
+      "title": "Iran whips singer Parastoo Ahmadi 74 times over YouTube concert",
+      "seendate": "20261125T012102Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/25/poll-finds-us-voters-want-government-to-end-iran-war-regardless-of-terms?traffic_source=rss",
+      "title": "Poll finds US voters want government to end Iran war regardless of terms",
+      "seendate": "20261125T011422Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+      "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "seendate": "20261125T011157Z",
+      "domain": "bbc.co.uk",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/nov/25/middle-aged-women-quit-smoking-england-study",
+      "title": "Middle-aged women in England least likely to successfully quit smoking, study finds",
+      "seendate": "20261125T010001Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/24/donald-trump-turkey-pardon",
+      "title": "One lame duck and two turkeys as Trump plays the hits at Thanksgiving ceremony",
+      "seendate": "20261125T005648Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Turkey"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/gunmen-hold-dozens-hostage-in-colombia-supermarket?traffic_source=rss",
+      "title": "Gunmen hold dozens hostage in Colombia supermarket",
+      "seendate": "20261125T004935Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Colombia"
     },
     {
-      "url": "https://www.theguardian.com/sport/live/2026/nov/24/chess-world-championship-gukesh-sindarov-game-1-updates",
-      "title": "World Chess Championship 2026 Game 1: Gukesh Dommaraju and Javokhir Sindarov play to 38-move draw – live reaction",
-      "seendate": "20261124T175347Z",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/24/nine-datacentre-projects-awaiting-approval-victoria-election",
+      "title": "What will Victoria’s election result mean for nine datacentre projects awaiting approval?",
+      "seendate": "20261125T004217Z",
       "domain": "theguardian.com",
-      "sourcecountry": "Germany"
+      "sourcecountry": "Australia"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/24/donald-trump-jr-investigations-investments",
-      "title": "Democrats demand records as investigation into Trump Jr’s investment firm widens",
-      "seendate": "20261124T174536Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/doha-debates/2026/11/24/should-freedom-of-movement-be-a-right-or-a-privilege?traffic_source=rss",
-      "title": "Should freedom of movement be a right or a privilege?",
-      "seendate": "20261124T174500Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/politics/live/2026/nov/24/pip-review-stephen-timms-andy-burnham-disability-welfare-brexit-latest-news-updates",
-      "title": "Proposals in Timms review for changes to Pip would lead to higher welfare bill, IFS says – UK politics live",
-      "seendate": "20261124T174147Z",
+      "url": "https://www.theguardian.com/us-news/2026/nov/24/us-army-iowa-detonation",
+      "title": "US army to detonate 68 barrels of toxic lead in Iowa on day before Thanksgiving",
+      "seendate": "20261125T003316Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/24/cameroon-separatist-leader-pleads-not-guilty-in-war-crimes-trial?traffic_source=rss",
-      "title": "Cameroon separatist leader pleads not guilty at war crimes trial in Norway",
-      "seendate": "20261124T173918Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Norway"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/five-tonnes-of-explosives-set-to-blow-up-in-iowa?traffic_source=rss",
-      "title": "Five tonnes of explosives set to blow up in Iowa",
-      "seendate": "20261124T173341Z",
+      "url": "https://www.aljazeera.com/news/2026/11/25/alaska-ends-deal-to-give-voter-records-to-us-justice-department?traffic_source=rss",
+      "title": "Alaska ends deal to give voter records to US Justice Department",
+      "seendate": "20261125T002828Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
     },
     {
-      "url": "https://www.aljazeera.com/news/2026/11/24/us-sanctions-on-lebanons-hezbollah-affiliates-may-have-limited-impact?traffic_source=rss",
-      "title": "US sanctions on Lebanon’s Hezbollah-affiliates may have limited impact",
-      "seendate": "20261124T172557Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/live/2026/nov/24/donald-trump-nvidia-jensen-huang-republicans-democrats-china-latest-news-updates",
-      "title": "Trump’s DoJ ‘looked into’ concerns about Jensen Huang after alleged affair with Chinese spy but no security risk found – live",
-      "seendate": "20261124T172524Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.theguardian.com/media/2026/nov/24/lord-lebedev-cuts-price-london-mansion-cost",
-      "title": "Standard owner Lord Lebedev cuts £5m off price of London mansion",
-      "seendate": "20261124T172123Z",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/25/latest-review-of-met-police-culture-finds-little-has-changed-since-last-one",
+      "title": "Latest review of Met police culture finds little has changed since last one",
+      "seendate": "20261125T000102Z",
       "domain": "theguardian.com",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/weather/2026/nov/24/california-coast-flooding-thanksgiving-travel",
-      "title": "California king tides threaten Thanksgiving travel as coastal flooding looms",
-      "seendate": "20261124T171759Z",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/25/uk-knife-sales-licensing-scheme",
+      "title": "UK to launch world’s first licensing scheme for knife sales",
+      "seendate": "20261125T000101Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/uk-news/2026/nov/25/metropolitan-police-institutionally-racist-misogynist-fairfield-report",
+      "title": "Metropolitan police still institutionally racist and misogynist, says report",
+      "seendate": "20261125T000101Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.theguardian.com/society/2026/nov/25/england-has-largest-frailty-gap-out-of-31-countries-study-finds",
+      "title": "England has largest frailty gap out of 31 countries, study finds",
+      "seendate": "20261125T000101Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "United Kingdom"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/25/iran-war-live-houthis-threaten-saudi-ports-over-coalitions-hodeidah-order?traffic_source=rss",
+      "title": "Iran war live: Houthis threaten Saudi ports over coalition’s Hodeidah order",
+      "seendate": "20261125T000000Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/nov/24/kilmar-abrego-garcia-leaves-us",
+      "title": "Kilmar Ábrego García, man at center of Trump deportation battle, leaving US",
+      "seendate": "20261124T235031Z",
       "domain": "theguardian.com",
       "sourcecountry": "United States"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/24/thanksgiving-travel-storms-weather",
-      "title": "Storms and flooding in US could disrupt Thanksgiving travel for tens of millions",
-      "seendate": "20261124T171131Z",
-      "domain": "theguardian.com",
+      "url": "https://www.aljazeera.com/news/2026/11/24/rebel-group-retreats-in-dr-congo-after-heavy-clashes-with-government-forces?traffic_source=rss",
+      "title": "Rebel group retreats in DR Congo after heavy clashes with government forces",
+      "seendate": "20261124T233913Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/south-africa-convicts-zimbabwean-who-tried-to-fight-ukraine-for-russia?traffic_source=rss",
+      "title": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
+      "seendate": "20261124T232940Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "South Africa"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/24/arsenal-and-dortmund-draw-1-1-as-gyokeres-goes-from-hero-to-villain?traffic_source=rss",
+      "title": "Arsenal and Dortmund draw 1-1 as Gyokeres goes from hero to villain",
+      "seendate": "20261124T225016Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/sports/2026/11/24/bellingham-stunner-mbappe-brace-help-real-madrid-rout-psv?traffic_source=rss",
+      "title": "Bellingham stunner, Mbappe brace help Real Madrid rout PSV",
+      "seendate": "20261124T223720Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Spain"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/todd-blanche-declines-to-confirm-if-nvidias-jensen-huang-was-investigated?traffic_source=rss",
+      "title": "Todd Blanche declines to confirm if Nvidia’s Jensen Huang was investigated",
+      "seendate": "20261124T220126Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/colombian-president-blames-ex-farc-rebels-for-car-bomb-blast?traffic_source=rss",
+      "title": "Colombian president blames ex-FARC rebels for car bomb blast",
+      "seendate": "20261124T214542Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Qatar"
+    },
+    {
+      "url": "https://www.aljazeera.com/economy/2026/11/24/chinese-tech-giant-huawei-found-guilty-of-conspiracy-to-steal-trade-secrets?traffic_source=rss",
+      "title": "China’s Huawei found guilty of trade secrets conspiracy, fraud in US trial",
+      "seendate": "20261124T214334Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "China"
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+      "title": "US attorney general dodges questions about Nvidia investigation",
+      "seendate": "20261124T211942Z",
+      "domain": "bbc.co.uk",
       "sourcecountry": "United Kingdom"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/nov/24/trump-giuliani-presidential-medal-of-freedom",
-      "title": "Trump expected to award Giuliani Presidential Medal of Freedom",
-      "seendate": "20261124T170934Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/aje-onl-nf_russian-jets-spark-air-raid-alert-in-south-korea-241126?traffic_source=rss",
+      "title": "Russian jets spark air raid alert in South Korea",
+      "seendate": "20261124T211457Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "South Korea"
     },
     {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/after-libya-where-will-ukraine-strike-russia-next?traffic_source=rss",
-      "title": "After Libya, where will Ukraine strike Russia next?",
-      "seendate": "20261124T170545Z",
+      "url": "https://www.theguardian.com/world/2026/nov/24/cartagena-colombia-hostages-supermarket",
+      "title": "Armed men hold hostages at supermarket in top Colombian tourist destination",
+      "seendate": "20261124T210637Z",
+      "domain": "theguardian.com",
+      "sourcecountry": "Colombia"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/hostage-situation-reported-in-colombia-as-armed-men-flee-into-supermarket?traffic_source=rss",
+      "title": "Hostage situation reported in Colombia as armed men flee into supermarket",
+      "seendate": "20261124T210446Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Colombia"
+    },
+    {
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/brazil-doctor-uses-surfboard-and-sledgehammer-in-flood-rescue?traffic_source=rss",
+      "title": "Brazil doctor uses surfboard and sledgehammer in flood rescue",
+      "seendate": "20261124T205841Z",
+      "domain": "aljazeera.com",
+      "sourcecountry": "Brazil"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/24/libyas-haftar-visits-turkiye-days-after-ukraine-hits-russian-warship?traffic_source=rss",
+      "title": "Libya’s Haftar visits Turkiye days after Ukraine hits Russian warship",
+      "seendate": "20261124T203503Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Ukraine"
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
-      "title": "Nvidia shares slide as Trump's role in Jensen Huang's comeback questioned by US politicians",
-      "seendate": "20261124T170420Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&at_campaign=rss",
-      "title": "Zimbabwean convicted in South Africa of trying to fight in Ukraine",
-      "seendate": "20261124T170400Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "South Africa"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss",
-      "title": "French ex-President Sarkozy and wife Carla Bruni to face trial",
-      "seendate": "20261124T164907Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "France"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/aje-onl-nf_how-senegal-got-their-afcon-trophy-back-241126?traffic_source=rss",
-      "title": "How Senegal got their AFCON trophy back",
-      "seendate": "20261124T164122Z",
+      "url": "https://www.aljazeera.com/news/2026/11/24/us-army-to-detonate-more-than-4-tonnes-of-lead-azide-in-iowa-on-wednesday?traffic_source=rss",
+      "title": "US Army to detonate more than 4 tonnes of lead azide in Iowa on Wednesday",
+      "seendate": "20261124T202840Z",
       "domain": "aljazeera.com",
       "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/24/southport-attack-survivors-miss-out-on-school-funding",
-      "title": "Southport attack families’ fury after 13 survivors miss out on school funding",
-      "seendate": "20261124T163727Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/unfinished-beginnings-art-installation-for-children-affected-by-war?traffic_source=rss",
-      "title": "‘Unfinished Beginnings’: Art installation for children affected by war",
-      "seendate": "20261124T163303Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/2026/11/24/african-rivals-fret-over-moroccos-growing-football-dominance?traffic_source=rss",
-      "title": "African rivals fret over Morocco’s growing football dominance",
-      "seendate": "20261124T163148Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
-      "title": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
-      "seendate": "20261124T163126Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/world/live/2026/nov/24/russia-ukraine-poland-drone-patriots-latest-news-updates",
-      "title": "Italy expresses concern to Ukraine over Libya ship attacks – as it happened",
-      "seendate": "20261124T162449Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Spain"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/jerusalem-daily-clash-in-israeli-parliament?traffic_source=rss",
-      "title": "Jerusalem Daily: Clash in Israeli parliament",
-      "seendate": "20261124T161811Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/aje-onl-nf_qatar-urges-restraint-amid-us-iran-tensions-241126?traffic_source=rss",
-      "title": "Qatar urges restraint and dialogue amid US-Iran tensions",
-      "seendate": "20261124T161154Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/business/2026/nov/24/uk-eu-made-in-europe-trade-cars-tariffs",
-      "title": "Irish plan offers Burnham breakthrough on Made in Europe",
-      "seendate": "20261124T160912Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/24/arsenal-vs-borussia-dortmund-live-uefa-champions-league?traffic_source=rss",
-      "title": "Arsenal vs Borussia Dortmund LIVE: UEFA Champions League",
-      "seendate": "20261124T160123Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/world/2026/nov/24/russian-fighters-killed-in-mali-africa-leaked-data",
-      "title": "More than 300 Russians killed as Moscow props up Mali’s junta, leaked data reveals",
-      "seendate": "20261124T160050Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "Russia"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/24/palestine-weekly-a-night-of-arson-sees-israel-jewish-terrorism-reckoning?traffic_source=rss",
-      "title": "Palestine Weekly: A night of arson sees Israel ‘Jewish terrorism’ reckoning",
-      "seendate": "20261124T155607Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/24/five-women-killed-every-hour-globally-by-partner-relative-in-2025-un?traffic_source=rss",
-      "title": "Five women killed every hour globally by partner, relative last year: UN",
-      "seendate": "20261124T155536Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/economy/2026/11/24/nvidia-stock-cools-after-huangs-return-driven-surge?traffic_source=rss",
-      "title": "Nvidia stock cools after Huang’s return-driven surge",
-      "seendate": "20261124T154716Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.theguardian.com/uk-news/2026/nov/24/two-arrested-after-suspected-burglary-prince-princess-of-wales-sandringham",
-      "title": "Two arrested after suspected burglary at home of Prince and Princess of Wales",
-      "seendate": "20261124T154325Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.theguardian.com/business/live/2026/nov/24/jensen-huang-nvidia-stock-markets-ai-trade-us-political-backlash-donald-trump-latest-news-updates",
-      "title": "Tech sell-off resumes as Nvidia shares drop 5% and Anthropic tumbles below IPO price – as it happened",
-      "seendate": "20261124T153628Z",
-      "domain": "theguardian.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
-      "title": "Israeli air strike kills Hamas internal security chief in Gaza",
-      "seendate": "20261124T153553Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "Israel"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/24/xis-anti-corruption-campaign-targets-shanghai-party-chief-chen-jining?traffic_source=rss",
-      "title": "China’s probes Shanghai party chief Chen Jining over corruption",
-      "seendate": "20261124T152650Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "China"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/24/police-arrest-two-after-break-in-at-prince-william-and-kates-country-home?traffic_source=rss",
-      "title": "UK police arrest two after break-in at Prince William’s country residence",
-      "seendate": "20261124T151947Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo?at_medium=RSS&at_campaign=rss",
-      "title": "Land mine casualties soar in Syria, two years after war",
-      "seendate": "20261124T151728Z",
-      "domain": "bbc.co.uk",
-      "sourcecountry": "United Kingdom"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/24/how-the-iran-war-is-reshaping-the-us-military-presence-in-the-middle-east?traffic_source=rss",
-      "title": "How the Iran war is reshaping the US military presence in the Middle East",
-      "seendate": "20261124T151029Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Qatar"
-    },
-    {
-      "url": "https://www.aljazeera.com/news/2026/11/24/how-brazils-mosquitoes-are-helping-to-fight?traffic_source=rss",
-      "title": "How Brazil’s mosquitoes are helping to fight dengue",
-      "seendate": "20261124T150900Z",
-      "domain": "aljazeera.com",
-      "sourcecountry": "Brazil"
     }
   ]
 }
